@@ -9,7 +9,7 @@
       "build_output_subfolder": "vcppdocs",
       "locale": "tr-tr",
       "version": 0,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -28,5 +28,7 @@
       "branch": "master",
       "branch_mapping": {}
     }
-  ]
+  ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cpp-docs.tr-tr", 
+ "git_repository_branch_open_to_public_contributors": "live"
 }
