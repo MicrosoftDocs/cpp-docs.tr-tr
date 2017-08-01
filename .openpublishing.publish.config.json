@@ -8,18 +8,21 @@
       "build_source_folder": "docs",
       "build_output_subfolder": "vcppdocs",
       "locale": "tr-tr",
-      "version": 0,
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content"
       },
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cpp-docs.tr-tr",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "dependent_repositories": [
     {
@@ -29,6 +32,5 @@
       "branch_mapping": {}
     }
   ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/cpp-docs.tr-tr", 
- "git_repository_branch_open_to_public_contributors": "live"
+  "need_generate_pdf_url_template": false
 }
