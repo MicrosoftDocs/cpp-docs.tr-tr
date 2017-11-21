@@ -1,0 +1,147 @@
+---
+title: fgets, fgetws | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-standard-libraries
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- fgets
+- fgetws
+apilocation:
+- msvcrt.dll
+- msvcr80.dll
+- msvcr90.dll
+- msvcr100.dll
+- msvcr100_clr0400.dll
+- msvcr110.dll
+- msvcr110_clr0400.dll
+- msvcr120.dll
+- msvcr120_clr0400.dll
+- ucrtbase.dll
+- api-ms-win-crt-stdio-l1-1-0.dll
+apitype: DLLExport
+f1_keywords:
+- _fgetts
+- fgetws
+- fgets
+dev_langs: C++
+helpviewer_keywords:
+- _fgetts function
+- streams, getting strings from
+- streams, reading from
+- fgets function
+- fgetws function
+- fgetts function
+ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
+caps.latest.revision: "15"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: f1427c830ea861f7b3195c745fff6cde68858666
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="fgets-fgetws"></a>fgets, fgetws
+Bir dizeyi bir akıştan alın.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+char *fgets(   
+   char *str,  
+   int n,  
+   FILE *stream   
+);  
+wchar_t *fgetws(   
+   wchar_t *str,  
+   int n,  
+   FILE *stream   
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `str`  
+ Verileri için depolama konumu.  
+  
+ `n`  
+ Okunacak karakter maksimum sayısı.  
+  
+ `stream`  
+ İşaretçi `FILE` yapısı.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Bunların her biri döndürür işlevleri `str`. `NULL`bir hata veya bir dosya sonu koşulunu belirtmek için döndürülür. Kullanım `feof` veya `ferror` bir hata oluşup oluşmadığını belirlemek için. Varsa `str` veya `stream` null işaretçinin veya `n` küçük veya ona eşit açıklandığı gibi bu işlevi sıfır olarak geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`.  
+  
+ Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ `fgets` İşlevi okuyan bir dize girdisinden `stream` bağımsız değişkeni ve depolar `str`. `fgets`Geçerli akışı konumu için ve ilk yeni satır karakteri dahil karakter bitiş akış veya okuma karakter sayısını eşit olana kadar okur `n` - 1, hangisi önce gelirse. Sonuç depolanan `str` bir null karakter ile eklenir. Yeni satır karakteri, okuma, dizesine eklenir.  
+  
+ `fgetws`bir joker karakter sürümü `fgets`.  
+  
+ `fgetws`joker karakter bağımsız değişkeni okur `str` çok baytlı karakter dizesi veya mi göre bir joker karakter dizesi olarak `stream` metin modunda veya ikili modunda sırasıyla açılır. Metin ve ikili modlarda Unicode ve çok baytlı akış-g/Ç kullanma hakkında daha fazla bilgi için bkz: [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [metin ve ikili modlarda Unicode akışı g/ç](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).  
+  
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
+  
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
+|---------------------|------------------------------------|--------------------|-----------------------|  
+|`_fgetts`|`fgets`|`fgets`|`fgetws`|  
+  
+## <a name="requirements"></a>Gereksinimler  
+  
+|İşlev|Gerekli başlık|  
+|--------------|---------------------|  
+|`fgets`|\<stdio.h >|  
+|`fgetws`|\<stdio.h > veya \<wchar.h >|  
+  
+ Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
+  
+## <a name="example"></a>Örnek  
+  
+```  
+// crt_fgets.c  
+// This program uses fgets to display  
+// a line from a file on the screen.  
+//  
+  
+#include <stdio.h>  
+  
+int main( void )  
+{  
+   FILE *stream;  
+   char line[100];  
+  
+   if( fopen_s( &stream, "crt_fgets.txt", "r" ) == 0 )  
+   {  
+      if( fgets( line, 100, stream ) == NULL)  
+         printf( "fgets error\n" );  
+      else  
+         printf( "%s", line);  
+      fclose( stream );  
+   }  
+}  
+```  
+  
+## <a name="input-crtfgetstxt"></a>Giriş: crt_fgets.txt  
+  
+```  
+Line one.  
+Line two.  
+```  
+  
+### <a name="output"></a>Çıkış  
+  
+```  
+Line one.  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
+ [fputs, fputws](../../c-runtime-library/reference/fputs-fputws.md)   
+ [_getws alır](../../c-runtime-library/gets-getws.md)   
+ [koyar, _putws](../../c-runtime-library/reference/puts-putws.md)

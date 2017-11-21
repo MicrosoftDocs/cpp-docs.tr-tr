@@ -1,0 +1,51 @@
+---
+title: ODBC ve MFC | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- ODBC [C++], MFC
+- connections [C++], databases
+- connections [C++], data source
+- databases [C++], connecting to
+- data sources [C++], connecting to
+- MFC [C++], ODBC and
+- database connections [C++], MFC ODBC classes
+ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
+caps.latest.revision: "10"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: f4e90281b3202303fa95e44684f8250259d0d653
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="odbc-and-mfc"></a>ODBC ve MFC
+> [!NOTE]
+>  MFC veritabanı sınıfları kullanmak için veri kaynağınız için uygun ODBC sürücüsünü olması gerekir. SQL Server için en son Microsoft ODBC sürücüsü [SQL Server için Microsoft ODBC sürücüsü 13](https://www.microsoft.com/en-us/download/details.aspx?id=50420). Çoğu veritabanı satıcısı Windows için ODBC sürücüsü sağlayın. 
+  
+ Bu konu Microsoft Foundation sınıfları (MFC) kitaplığının ODBC tabanlı veritabanı sınıflarını ana kavramları tanıtır ve sınıfları birlikte nasıl çalıştığını genel bir bakış sağlar. ODBC ve MFC hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
+  
+-   [Bir veri kaynağına bağlanma](connecting-to-a-data-source.md)  
+  
+-   [Kayıtları seçme ve düzenleme](selecting-and-manipulating-records.md)  
+  
+-   [Formdaki verileri görüntüleme ve düzenleme](displaying-and-manipulating-data-in-a-form.md)  
+  
+-   [Belgeler ve görünümler ile çalışma](working-with-documents-and-views.md)  
+  
+-   [ODBC'ye ve SQL'e erişim](access-to-odbc-and-sql.md)  
+  
+-   [MFC ODBC sınıfları hakkında daha fazla okuma](further-reading-about-the-mfc-odbc-classes.md)  
+  
+ ODBC tabanlı MFC veritabanı sınıfları ODBC sürücüsü kullanılabilir herhangi bir veritabanına erişim sağlamak için tasarlanmıştır. ODBC sınıfları kullanması için uygulamanızın birçok farklı veri biçimleri ve farklı yerel/uzak yapılandırmaları olan verilere erişebilir. Farklı veritabanı yönetim sistemi (DBMS) işlemek için özel durum kod yazmak zorunda değildir. Kullanıcılarınızın erişim sağlamak istediğiniz veriler için uygun bir ODBC sürücüsüne sahip olduğu sürece, depolanan tablolardaki verileri işlemek için programınızı kullanabilirsiniz.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Açık veritabanı bağlantısı (ODBC)](open-database-connectivity-odbc.md)
