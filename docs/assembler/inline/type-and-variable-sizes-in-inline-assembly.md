@@ -1,0 +1,63 @@
+---
+title: "Tür ve değişken boyutları satır içi derlemede | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-tools
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- length
+- Type
+dev_langs: C++
+helpviewer_keywords:
+- variables, length
+- size, getting in inline assembly
+- size
+- LENGTH operator
+- TYPE operator
+- SIZE operator
+- inline assembly, operators
+- variables, type
+- variables, size
+ms.assetid: b62c2f2b-a7ad-4145-bae4-d890db86d348
+caps.latest.revision: "7"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: 1714d660cad6474f0b038a40e2ad1efdf5aa5743
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="type-and-variable-sizes-in-inline-assembly"></a>Satır İçi Derlemede Tür ve Değişken Boyutları
+**Microsoft özel**  
+  
+ **UZUNLUĞU**, **BOYUTU**, ve **türü** işleçleri satır içi derlemede sınırlı bir anlama sahip. İle tüm kullanılamaz `DUP` işleci (MASM yönergeleri veya işleçleri ile tanımlayamazsınız nedeniyle). Ancak C veya C++ değişkenleri veya türleri boyutunu bulmak için kullanabilirsiniz:  
+  
+-   **UZUNLUĞU** işleci bir dizide öğe sayısını dönebilirsiniz. Dizi olmayan değişkenleri için 1 değerini döndürür.  
+  
+-   **BOYUTU** işleci C veya C++ değişkeni boyutunu dönebilirsiniz. Bir değişkenin boyutu ürünüdür kendi **UZUNLUĞU** ve **türü**.  
+  
+-   **Türü** işleci C veya C++ türü veya değişken boyutu dönebilirsiniz. Değişken bir dizi ise **türü** dizinin tek bir öğe boyutunu döndürür.  
+  
+ Örneğin, programınızın 8 öğe varsa `int` diziye  
+  
+```  
+int arr[8];  
+```  
+  
+ Aşağıdaki C ve derleme ifadeler boyutunu verim `arr` ve öğeleri.  
+  
+|__asm|C|Boyut|  
+|-------------|-------|----------|  
+|**Uzunluk** arr|`sizeof`(arr) /`sizeof`(arr[0])|8|  
+|**BOYUTU** arr|`sizeof`(arr)|32|  
+|**TÜR** arr|`sizeof`(arr[0])|4|  
+  
+ **SON Microsoft özel**  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [__Asm bloklarında derleme dili kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
