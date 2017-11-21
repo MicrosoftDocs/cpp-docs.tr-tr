@@ -1,0 +1,53 @@
+---
+title: "Bir görünüm kullanıcı girişini yorumlama | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- interpreting user input through views [MFC]
+- views [MFC], user interface and input
+- input [MFC], view class [MFC]
+- CView class [MFC], interpreting user input
+- user input [MFC], interpreting through view class [MFC]
+ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 88308000e35853a2e2159fa33a0629a3def7a7a6
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="interpreting-user-input-through-a-view"></a>Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama
+Diğer üye işlevleri görünümün işlemek ve tüm kullanıcı girişi yorumlayabilir. Genellikle, işlenecek görünümü sınıfınızda ileti işleyicisi üye işlevleri tanımlayacaksınız:  
+  
+-   Windows [iletileri](../mfc/messages.md) fare ve klavye eylemleri tarafından oluşturulan.  
+  
+-   [Komutları](../mfc/user-interface-objects-and-command-ids.md) menüleri, araç çubuğu düğmeleri ve Hızlandırıcı tuşları.  
+  
+ Bu ileti işleyicisi üye işlevleri veri taşımak ve panodan dahil olmak üzere veri girişi, seçim veya düzenleme, aşağıdaki eylemleri yorumlama:  
+  
+-   Fare hareketleri ve tıklama sürüklediği ve çift tıklamalar  
+  
+-   Tuş vuruşları  
+  
+-   Menü komutları  
+  
+ Hangi Windows iletileri görünüm tanıtıcıları uygulamanızın gereksinimlerine göre değişir.  
+  
+ [İleti işleme ve eşleme konuları](../mfc/message-handling-and-mapping.md) menü öğeleri ve diğer kullanıcı arabirimi nesneleri komutları atama ve nasıl işleyici işlevlerine komutları bağlanacağını açıklar. [İleti işleme ve eşleme konuları](../mfc/message-handling-and-mapping.md) ayrıca nasıl MFC komutları yönlendirir açıklar ve standart Windows iletileri işleyicileri için bunları içeren nesneleri gönderir.  
+  
+ Örneğin, uygulamanızın görünümde çizim yapma doğrudan fare uygulamanız gerekebilir. Karalama örnek nasıl işleneceğini gösterir `WM_LBUTTONDOWN`, `WM_MOUSEMOVE`, ve `WM_LBUTTONUP` sırasıyla başlamak için iletileri devam ve bir çizgi kesimi çizim bitmelidir. Diğer taraftan, bazen bir fare tıklatma seçim olarak görünümünüzde yorumlama gerekebilir. Görünümün `OnLButtonDown` işleyici işlevi kullanıcı çizim veya seçerek olup olmadığını belirlemek. Seçilirken, işleyici tıklatın görünümünde bazı nesnesinin sınırları içinde olup olmadığını belirlemek ve varsa, nesneyi seçili olarak göstermek için ekranı alter.  
+  
+ Görünümünüzü kesme, kopyalama, yapıştırma veya Pano kullanarak seçili veri silmek için Düzen menüsünden olanlar gibi bazı menü komutlarını da işleyebilirsiniz. Bu tür bir işleyici bazı Pano ilgili üye işlevleri sınıfının çağırırdı `CWnd` seçili veri öğesi için veya Pano'dan aktarmak için.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Görünümleri kullanma](../mfc/using-views.md)
+

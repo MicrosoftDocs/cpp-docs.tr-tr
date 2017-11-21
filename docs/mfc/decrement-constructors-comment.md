@@ -1,0 +1,42 @@
+---
+title: "--Oluşturucular yorum | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- constructors comment
+- declarations, constructors
+- MFC source files, Constructors comment
+- declaring constructors, code comments
+- comments, MFC
+- comments, constructors comment
+- constructors [MFC], declaring
+- instance constructors, code comments
+ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 25b6ebff4108b47e70b34aa6d83293bede78ee97
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="-constructors-comment"></a>// Oluşturucu Açıklaması
+`// Constructors` Bölümü bir MFC sınıf bildiriminin bildirir gerçekten nesne kullanmak için gereken tüm başlatma işlevler yanı sıra kurucularda (C++ algılama). Örneğin, `CWnd::Create` önce kullandığınız oluşturucular bölümünde çünkü `CWnd` nesnesi, onu gerekir "tam olarak oluşturulmasını" C++ Oluşturucusu çağrılmadan ve ardından çağırma **oluşturma** işlevi. Genellikle, bu ortak üyeleridir.  
+  
+ Örneğin, sınıf `CStdioFile` biri altında listesinde gösterildiğini üç Oluşturucusu vardır [açıklamalara bir örnek](../mfc/an-example-of-the-comments.md).  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [MFC kaynak dosyalarını kullanma](../mfc/using-the-mfc-source-files.md)   
+ [Uygulama açıklaması](../mfc/decrement-implementation-comment.md)   
+ [Özniteliklerle ilgili açıklama](../mfc/decrement-attributes-comment.md)   
+ [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)   
+ [Geçersiz kılınabilir açıklama](../mfc/decrement-overridables-comment.md)
+

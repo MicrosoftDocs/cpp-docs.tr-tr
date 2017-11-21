@@ -1,0 +1,100 @@
+---
+title: carg, cargf, cargl | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- cpp
+- devlang-cpp
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- carg
+- cargf
+- cargl
+apilocation:
+- msvcrt.dll
+- msvcr80.dll
+- msvcr90.dll
+- msvcr100.dll
+- msvcr100_clr0400.dll
+- msvcr110.dll
+- msvcr110_clr0400.dll
+- msvcr120.dll
+- msvcr120_clr0400.dll
+- ucrtbase.dll
+- api-ms-win-crt-math-l1-1-0.dll
+apitype: DLLExport
+f1_keywords:
+- carg
+- cargf
+- cargl
+- complex/carg
+- complex/cargf
+- complex/cargl
+dev_langs: C++
+helpviewer_keywords:
+- carg function
+- cargf function
+- cargl function
+ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
+caps.latest.revision: "8"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: 86dccd98c5420adadd0f1eb3af947769c59f594c
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="carg-cargf-cargl"></a>carg, cargf, cargl
+Karmaşık sayıyı bağımsız değişkeni negatif gerçek ekseni boyunca kesin bir dal ile alır.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+double carg(   
+   _Dcomplex z   
+);  
+float carg(   
+   _Fcomplex z   
+);  // C++ only  
+long double carg(   
+   _Lcomplex z   
+);  // C++ only  
+float cargf(   
+   _Fcomplex z   
+);  
+long double cargl(   
+   _Lcomplex z   
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `z`  
+ Bir karmaşık sayı.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Bağımsız değişkeni (aşama olarak da bilinir) `z`. Bu aralıkta sonucu olduğundan [-π, + π].  
+  
+## <a name="remarks"></a>Açıklamalar  
+ Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `carg` Süren `_Fcomplex` veya `_Lcomplex` değerleri ve return `float` veya `long double` değerleri. Bir C programı `carg` her zaman alan bir `_Dcomplex` değeri ve döndürür bir `double` değeri.  
+  
+## <a name="requirements"></a>Gereksinimler  
+  
+|Yordam|C üstbilgisi|C++ üstbilgi|  
+|-------------|--------------|------------------|  
+|`carg`,               `cargf`, `cargl`|\<Complex.h >|\<ccomplex >|  
+  
+ Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
+ [Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
+ [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
+ [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
+ [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
+ [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
+ [CAB dosyaları, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)

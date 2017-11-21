@@ -1,0 +1,166 @@
+---
+title: "her biri için de | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords:
+- cliext::foreach
+- for
+- each
+- in
+dev_langs: C++
+helpviewer_keywords: for each keyword [C++]
+ms.assetid: 0c3a364b-2747-43f3-bb8d-b7d3b7023f79
+caps.latest.revision: "24"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: a1d89552bd299edc778b06bd01ee185c275c45db
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="for-each-in"></a>for each, in
+Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem C++/CLI hem de yerel C++ projelerinde kullanılabilir. Ancak, kullanımı önerilmez. Standart bir kullanmayı [aralık tabanlı için deyimi (C++)](../cpp/range-based-for-statement-cpp.md) yerine.  
+  
+## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
+ **Sözdizimi**  
+  
+```  
+  
+      for each (typeidentifierinexpression) {  
+   statements  
+}  
+  
+```  
+  
+ **Parametreleri**  
+  
+ `type`  
+ Türü `identifier`.  
+  
+ `identifier`  
+ Koleksiyon öğesini temsil eden yineleme değişkeni.  Zaman `identifier` olan bir [izleme başvurusu işleci](../windows/tracking-reference-operator-cpp-component-extensions.md), öğe değiştirebilirsiniz.  
+  
+ `expression`  
+ Bir dizi ifadesi veya koleksiyon. Koleksiyon öğesi sağlayacak şekilde derleyici şekilde dönüştürebilirsiniz olmalıdır `identifier` türü.  
+  
+ `statements`  
+ Yürütülecek bir veya daha fazla deyim.  
+  
+ **Açıklamalar**  
+  
+ `for each` Deyimi bir koleksiyonda yinelemek için kullanılır. Bir koleksiyondaki öğeleri değiştirebilirsiniz, ancak öğe ekleyemez veya silemezsiniz.  
+  
+ *Deyimleri* dizisi ya da koleksiyonu her öğe için yürütüldü. Koleksiyondaki tüm öğeler için yineleme tamamladıktan sonra aşağıdaki deyim denetimi aktarılır `for each` bloğu.  
+  
+ `for each`ve `in` olan [bağlama duyarlı anahtar sözcükler](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
+  
+ Daha fazla bilgi için:  
+  
+-   [Foreach kullanarak C++ Standart Kitaplığı koleksiyonu üzerinden yineleme yapma](../dotnet/iterating-over-stl-collection-by-using-for-each.md)  
+  
+-   [Nasıl yapılır: foreach ile diziler üzerinden](../dotnet/how-to-iterate-over-arrays-with-for-each.md)  
+  
+-   [Nasıl yapılır: foreach ile bir genel koleksiyon üzerinden](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
+  
+-   [Nasıl yapılır: foreach ile kullanıcı tanımlı bir koleksiyon üzerinden](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)  
+  
+## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
+  
+### <a name="requirements"></a>Gereksinimler  
+ Derleyici seçeneği: **/ZW**  
+  
+### <a name="example"></a>Örnek  
+ Bu örnek nasıl kullanılacağını gösterir `for each` bir dizeyi yinelemek için.  
+  
+```  
+// for_each_string1.cpp  
+// compile with: /ZW  
+#include <stdio.h>  
+using namespace Platform;  
+  
+ref struct MyClass {  
+   property String^ MyStringProperty;  
+};  
+  
+int main() {  
+   String^ MyString = ref new String("abcd");  
+  
+   for each ( char c in MyString )  
+      wprintf("%c", c);  
+  
+   wprintf("/n");  
+  
+   MyClass^ x = ref new MyClass();  
+   x->MyStringProperty = "Testing";  
+  
+   for each( char c in x->MyStringProperty )  
+      wprintf("%c", c);  
+}  
+```  
+  
+ **Çıktı**  
+  
+```Output  
+abcd  
+  
+Testing  
+```  
+  
+## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
+ **Açıklamalar**  
+  
+ CLR sözdizimi aynıdır **tüm çalışma zamanları** söz dizimi şu şekilde hariç.  
+  
+ *ifade*  
+ Yönetilen dizi ifadesi veya koleksiyon. Koleksiyon öğesi sağlayacak şekilde derleyici ondan dönüştürebilirsiniz olmalıdır <xref:System.Object> için *tanımlayıcısı* türü.  
+  
+ *ifade* uygulayan bir tür değerlendirir <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, ya da tanımlayan türü bir `GetEnumerator` ya da döndüren bir tür yöntemi uygulayan <xref:System.Collections.IEnumerator> veya tüm içindetanımlananyöntemleribildirir`IEnumerator`.  
+  
+### <a name="requirements"></a>Gereksinimler  
+ Derleyici seçeneği:   **/CLR**  
+  
+### <a name="example"></a>Örnek  
+ Bu örnek nasıl kullanılacağını gösterir `for each` bir dizeyi yinelemek için.  
+  
+```  
+// for_each_string2.cpp  
+// compile with: /clr  
+using namespace System;  
+  
+ref struct MyClass {  
+   property String ^ MyStringProperty;  
+};  
+  
+int main() {  
+   String ^ MyString = gcnew String("abcd");  
+  
+   for each ( Char c in MyString )  
+      Console::Write(c);  
+  
+   Console::WriteLine();  
+  
+   MyClass ^ x = gcnew MyClass();  
+   x->MyStringProperty = "Testing";  
+  
+   for each( Char c in x->MyStringProperty )  
+      Console::Write(c);  
+}  
+```  
+  
+ **Çıktı**  
+  
+```Output  
+abcd  
+  
+Testing   
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

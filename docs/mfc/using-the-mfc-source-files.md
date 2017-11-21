@@ -1,0 +1,66 @@
+---
+title: "Kaynak dosyaları MFC kullanma | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- public members
+- source files
+- MFC, source files
+- MFC source files
+- comments, MFC
+- private member access
+- protected member access
+- source files, MFC
+ms.assetid: 3230e8fb-3b69-4ddf-9538-365ac7ea5e72
+caps.latest.revision: "11"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 342c687ad992b6c587ea7518811e43bcca9db6b4
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="using-the-mfc-source-files"></a>MFC Kaynak Dosyalarını Kullanma
+Microsoft Foundation Class (MFC) kitaplığı tam kaynak kodu sağlar. Üstbilgi dosyaları (.h) \atlmfc\include dizinde bulunan; Uygulama dosyaları (.cpp) kaynağı \atlmfc\src\mfc dizinindedir.  
+  
+ Bu makaleler ailesi her sınıf çeşitli kısımlarını, bu açıklamalar anlamı ve her bir bölümünde bulmak beklemelisiniz açıklama eklemek için MFC kullanan kuralları açıklar. Visual C++ sihirbazları için oluşturduğunuz sınıfları için benzer kuralları kullanın ve, büyük olasılıkla bu kuralları için kendi kodunuzu yararlı.  
+  
+ Aşina olabilir **ortak**, `protected`, ve `private` C++ anahtar sözcükleri. MFC üstbilgi dosyalarına bakıldığında, her sınıf birkaç her birinde olabilir bulacaksınız. Örneğin, ortak üye değişkenleri ve işlevleri birden çok altında olması olabilir **ortak** anahtar sözcüğü. MFC üye değişkenleri ve bunların kullanım, izin verilen erişim türüne göre değil dayanarak işlevlerini ayırdığından budur. MFC kullanan `private` tutumlu; uygulama ayrıntılarını genellikle korunur ve birçok kez ortak öğeler bile kabul. Uygulama Ayrıntıları erişimi önerilmez, MFC kararı size bırakır, ancak.  
+  
+ MFC kaynak dosyalarını ve MFC Uygulama Sihirbazı'nı oluşturur dosyaları içinde (genellikle bu sırayla) Bu sınıf bildirimleri içinde gibi yorumlar bulacaksınız:  
+  
+ `// Constructors`  
+  
+ `// Attributes`  
+  
+ `// Operations`  
+  
+ `// Overridables`  
+  
+ `// Implementation`  
+  
+ Bu makaleler ailesinde kapsanan konular şunlardır:  
+  
+-   [Açıklamalara bir örnek](../mfc/an-example-of-the-comments.md)  
+  
+-   [/ / Uygulama açıklaması](../mfc/decrement-implementation-comment.md)  
+  
+-   [/ / Oluşturucu açıklaması](../mfc/decrement-constructors-comment.md)  
+  
+-   [/ / Açıklama öznitelikleri](../mfc/decrement-attributes-comment.md)  
+  
+-   [/ / İşlem açıklaması](../mfc/decrement-operations-comment.md)  
+  
+-   [/ / Geçersiz kılınabilir açıklama](../mfc/decrement-overridables-comment.md)  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Genel MFC konuları](../mfc/general-mfc-topics.md)
+

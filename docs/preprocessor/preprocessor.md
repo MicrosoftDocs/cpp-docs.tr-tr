@@ -1,0 +1,49 @@
+---
+title: "Önişlemci | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-tools
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: preprocessor
+ms.assetid: e120eda3-b413-49f1-a07c-e9fb128cf500
+caps.latest.revision: "6"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: ac8f12739493b07d8dacf782fb6355aa02b64a17
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="preprocessor"></a>Ön işlemci
+Ön İşlemci kaynak dosyası metnin ilk çeviri aşaması bir parçası olarak işleyen bir metin işlemcisi ' dir. Önişlemci kaynak metni ayrıştırma değil, ancak bunu onu makrosu çağrıları bulma amacıyla belirteçler içine bölün. Derleyici normalde ilk seferde önişlemci çağırır rağmen önişlemci ayrıca ayrı ayrı derleme olmadan metin işlemek için çağrılabilir.  
+  
+ Ön İşlemci Başvurusu ortama aşağıdaki bölümleri içerir:  
+  
+-   [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)  
+  
+-   [Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)  
+  
+-   [Önceden tanımlı makrolar](../preprocessor/predefined-macros.md)  
+  
+-   [Pragmaları](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+  
+ **Microsoft özel**  
+  
+ Kullanarak ön işleme sonra kaynak kodunuzu listesini elde edebilirsiniz [/E](../build/reference/e-preprocess-to-stdout.md) veya [/EP](../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md) derleyici seçeneği. Her iki seçenek önişlemci çağırma ve sonuçta elde edilen metin olan, çoğu durumda, konsol standart çıktı aygıtına çıktı. /E içerdiğini farktır iki seçenekten `#line` yönergeleri ve /EP bu yönergeleri çıkışı kaldırır.  
+  
+ **SON Microsoft özel**  
+  
+##  <a name="_predir_special_terminology"></a>Özel terminolojisi  
+ Önişlemci belgelerde "bağımsız değişkeni" terimi bir işleve varlık anlamına gelir. Bazı durumlarda, "gerçek" veya "işlev çağrısında belirtilen bağımsız değişken ifadesi ve sırasıyla işlevi tanımında belirtilen bağımsız değişken bildirimi tanımlayan resmi," değiştirilir.  
+  
+ "Değişken" terimi basit C türü veri nesnesine başvuruyor. "Nesne" terimi, C++ nesneleri ve değişkenleri için anlamına gelir; Bu kapsayıcı bir terimdir.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
+ [Çeviri aşamaları](../preprocessor/phases-of-translation.md)

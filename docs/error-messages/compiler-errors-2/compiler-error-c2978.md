@@ -1,0 +1,48 @@
+---
+title: "Derleyici Hatası C2978 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-tools
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: C2978
+dev_langs: C++
+helpviewer_keywords: C2978
+ms.assetid: 5e7bee82-e266-4ccd-ad2e-ee89606ec5bf
+caps.latest.revision: "6"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: 3d02f0844cf3abe975531ec0560441c8eedd1ba6
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="compiler-error-c2978"></a>Derleyici Hatası C2978
+sözdizimi hatası: beklenen 'keyword1' veya 'keyword2'; bulunan türü 'keyword3'; tür olmayan parametreleri'nda genel türler desteklenmez.  
+  
+ Genel bir sınıf yanlış bildirildi. Bkz: [genel türler](../../windows/generics-cpp-component-extensions.md)daha fazla bilgi için.  
+  
+## <a name="example"></a>Örnek  
+ Aşağıdaki örnek C2978 oluşturur.  
+  
+```  
+// C2978.cpp  
+// compile with: /clr /c  
+generic <ref class T>   // C2978  
+// try the following line instead  
+// generic <typename T>   // OK  
+ref class Utils {  
+   static void sort(T elems, size_t size);  
+};  
+  
+generic <int>  
+// try the following line instead  
+// generic <class T>  
+ref class Utils2 {  
+   static void sort(T elems, size_t size);  
+};  
+```
