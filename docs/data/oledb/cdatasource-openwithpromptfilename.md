@@ -1,0 +1,64 @@
+---
+title: CDataSource::OpenWithPromptFileName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CDataSource.OpenWithPromptFileName
+- OpenWithPromptFileName
+- ATL::CDataSource::OpenWithPromptFileName
+- ATL.CDataSource.OpenWithPromptFileName
+- CDataSource::OpenWithPromptFileName
+dev_langs: C++
+helpviewer_keywords: OpenWithPromptFileName method
+ms.assetid: 89460504-1aaf-4412-aa7b-fa5a4b39ada3
+caps.latest.revision: "10"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 776ad6e52c93947c5b6a5c4a3e2b4d0266d98154
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="cdatasourceopenwithpromptfilename"></a>CDataSource::OpenWithPromptFileName
+Bu yöntem kullanıcıdan bir iletişim kutusu, sonra kullanıcı tarafından belirtilen dosyası kullanarak bir veri kaynağı açar.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+  
+      HRESULT OpenWithPromptFileName(   
+   HWND hWnd = GetActiveWindow(   
+   ),   
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,   
+   LPCOLESTR szInitialDirectory = NULL    
+) throw( );  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `hWnd`  
+ [in] İletişim kutusunun üst olacak penceresine işleyin.  
+  
+ `dwPromptOptions`  
+ [in] Bulucu iletişim kutusunu görüntülemek için stilini belirler. Olası değerler için msdasc.h bakın.  
+  
+ *szInitialDirectory*  
+ [in] Bulucu iletişim kutusunda görüntülenecek başlangıç dizini.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Standart bir `HRESULT`.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ Bu yöntem oledb32.dll içinde hizmet Bileşenleri'ni kullanarak bir veri kaynağı nesnesi açar; Bu DLL kaynak havuzu, otomatik işlem kaydı vb. gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+  
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** atldbcli.h  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [CDataSource sınıfı](../../data/oledb/cdatasource-class.md)

@@ -1,0 +1,409 @@
+---
+title: "&lt;sıra&gt; işleçleri | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- queue/std::operator!=
+- queue/std::operator&gt;
+- queue/std::operator&gt;=
+- queue/std::operator&lt;
+- queue/std::operator&lt;=
+- queue/std::operator==
+dev_langs: C++
+ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
+caps.latest.revision: "13"
+manager: ghogen
+helpviewer_keywords:
+- std::operator!= (queue)
+- std::operator&gt; (queue)
+- std::operator&gt;= (queue)
+- std::operator&lt; (queue)
+- std::operator&lt;= (queue)
+- std::operator== (queue)
+ms.openlocfilehash: c3d30f04ad3b8f330c70b75ca21bdab44913f336
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="ltqueuegt-operators"></a>&lt;sıra&gt; işleçleri
+||||  
+|-|-|-|  
+|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+  
+##  <a name="op_neq"></a>operator! =  
+ Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit değilse, testleri.  
+  
+```  
+bool operator!=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıraları eşit; değilse **false** sıraları eşit olması durumunda.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_ne.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <list>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+  
+   // Declares queues with list base containers  
+   queue <int, list<int> > q1, q2, q3;  
+  
+   // The following line would have caused an error because vector   
+   // does not support pop_front( ) and so cannot be adapted  
+   // by queue as a base container  
+   // queue <int, vector<int> > q1, q2, q3;  
+  
+   q1.push( 1 );  
+   q2.push( 1 );  
+   q2.push( 2 );  
+   q3.push( 1 );  
+  
+   if ( q1 != q2 )  
+      cout << "The queues q1 and q2 are not equal." << endl;  
+   else  
+      cout << "The queues q1 and q2 are equal." << endl;  
+  
+   if ( q1 != q3 )  
+      cout << "The queues q1 and q3 are not equal." << endl;  
+   else  
+      cout << "The queues q1 and q3 are equal." << endl;  
+}  
+```  
+  
+```Output  
+The queues q1 and q2 are not equal.  
+The queues q1 and q3 are equal.  
+```  
+  
+##  <a name="op_lt"></a>işleci&lt;  
+ Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi küçükse testleri.  
+  
+```  
+bool operator<(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıranın işlecinin sol tarafındaki ve değil sıranın işlecinin sağ tarafında eşit; Aksi takdirde düşükse **false**.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçüktür-iki sıra nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_lt.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+  
+   // Declares queues with default deque base container  
+   queue <int> q1, q2, q3;  
+  
+   q1.push( 1 );  
+   q1.push( 2 );  
+   q2.push( 5 );  
+   q2.push( 10 );  
+   q3.push( 1 );  
+   q3.push( 2 );  
+  
+   if ( q1 < q2 )  
+      cout << "The queue q1 is less than the queue q2." << endl;  
+   else  
+      cout << "The queue q1 is not less than the queue q2." << endl;  
+  
+   if ( q1 < q3 )  
+      cout << "The queue q1 is less than the queue q3." << endl;  
+   else  
+      cout << "The queue q1 is not less than the queue q3." << endl;  
+}  
+```  
+  
+```Output  
+The queue q1 is less than the queue q2.  
+The queue q1 is not less than the queue q3.  
+```  
+  
+##  <a name="op_lt_eq"></a>işleci&lt;=  
+ Sıranın işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında sıra nesnesinin eşit veya daha az olur.  
+  
+```  
+bool operator<=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Küçük veya eşittir iki sıra nesneleri arasındaki ilişki için ilk çiftlerini eşit olmayan bir karşılaştırmasını temel alır.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_le.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+   queue <int> q1, q2, q3;  
+  
+   q1.push( 5 );  
+   q1.push( 10 );  
+   q2.push( 1 );  
+   q2.push( 2 );  
+   q3.push( 5 );  
+   q3.push( 10 );  
+  
+   if ( q1 <= q2 )  
+      cout << "The queue q1 is less than or equal to "  
+           << "the queue q2." << endl;  
+   else  
+      cout << "The queue q1 is greater than "  
+           << "the queue q2." << endl;  
+  
+   if ( q1 <= q3 )  
+      cout << "The queue q1 is less than or equal to "  
+           << "the queue q3." << endl;  
+   else  
+      cout << "The queue q1 is greater than "  
+           << "the queue q3." << endl;  
+}  
+```  
+  
+```Output  
+The queue q1 is greater than the queue q2.  
+The queue q1 is less than or equal to the queue q3.  
+```  
+  
+##  <a name="op_eq_eq"></a>operator ==  
+ Sıra nesnesinin sağ taraftaki işlecinin sol tarafındaki sıra nesnesi eşitse testleri.  
+  
+```  
+bool operator==(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıraları eşit; değilse **false** sıraları eşit olması durumunda.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_eq.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <list>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+  
+   // Declares queues with list base containers  
+   queue <int, list<int> > q1, q2, q3;  
+  
+   // The following line would have caused an error because vector   
+   // does not support pop_front( ) and so cannot be adapted  
+   // by queue as a base container  
+   // queue <int, vector<int> > q1, q2, q3;  
+  
+   q1.push( 1 );  
+   q2.push( 2 );  
+   q3.push( 1 );  
+  
+   if ( q1 != q2 )  
+      cout << "The queues q1 and q2 are not equal." << endl;  
+   else  
+      cout << "The queues q1 and q2 are equal." << endl;  
+  
+   if ( q1 != q3 )  
+      cout << "The queues q1 and q3 are not equal." << endl;  
+   else  
+      cout << "The queues q1 and q3 are equal." << endl;  
+}  
+```  
+  
+```Output  
+The queues q1 and q2 are not equal.  
+The queues q1 and q3 are equal.  
+```  
+  
+##  <a name="op_gt"></a>işleci&gt;  
+ Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi büyükse testleri.  
+  
+```  
+bool operator>(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. Büyük-iki sıra nesneleri arasındaki ilişki ilk çiftlerini eşit olmayan bir karşılaştırmasını dayalı daha.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_gt.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+   queue <int> q1, q2, q3;  
+  
+   q1.push( 1 );  
+   q1.push( 2 );  
+   q1.push( 3 );  
+   q2.push( 5 );  
+   q2.push( 10 );  
+   q3.push( 1 );  
+   q3.push( 2 );  
+  
+   if ( q1 > q2 )  
+      cout << "The queue q1 is greater than "  
+           << "the queue q2." << endl;  
+   else  
+      cout << "The queue q1 is not greater than "  
+           << "the queue q2." << endl;  
+  
+   if ( q1> q3 )  
+      cout << "The queue q1 is greater than "  
+           << "the queue q3." << endl;  
+   else  
+      cout << "The queue q1 is not greater than "  
+           << "the queue q3." << endl;  
+}  
+```  
+  
+```Output  
+The queue q1 is not greater than the queue q2.  
+The queue q1 is greater than the queue q3.  
+```  
+  
+##  <a name="op_gt_eq"></a>işleci&gt;=  
+ Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit veya daha büyük ise testleri.  
+  
+```  
+bool operator>=(const queue <Type, Container>& left, const queue <Type, Container>& right,);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `left`  
+ Türünde bir nesne **sıra**.  
+  
+ `right`  
+ Türünde bir nesne **sıra**.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ **doğru** sıranın işlecinin sol tarafındaki sıranın; işlecinin sağ tarafında kesinlikle değerinden ise, aksi takdirde **false**.  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Queue nesneleri arasındaki karşılaştırma öğelerini pairwise karşılaştırması hakkında temel alır. İki sıraları aynı sayıda öğe varsa ve bunların ilgili öğeleri aynı değerlere eşittir. Aksi takdirde, bunlar eşit.  
+  
+### <a name="example"></a>Örnek  
+  
+```cpp  
+// queue_op_ge.cpp  
+// compile with: /EHsc  
+#include <queue>  
+#include <iostream>  
+  
+int main( )  
+{  
+   using namespace std;  
+   queue <int> q1, q2, q3;  
+  
+   q1.push( 1 );  
+   q1.push( 2 );  
+   q2.push( 5 );  
+   q2.push( 10 );  
+   q3.push( 1 );  
+   q3.push( 2 );  
+  
+   if ( q1 >= q2 )  
+      cout << "The queue q1 is greater than or equal to "  
+           << "the queue q2." << endl;  
+   else  
+      cout << "The queue q1 is less than "  
+           << "the queue q2." << endl;  
+  
+   if ( q1>= q3 )  
+      cout << "The queue q1 is greater than or equal to "  
+           << "the queue q3." << endl;  
+   else  
+      cout << "The queue q1 is less than "  
+           << "the queue q3." << endl;  
+}  
+```  
+  
+```Output  
+The queue q1 is less than the queue q2.  
+The queue q1 is greater than or equal to the queue q3.  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [\<sıra >](../standard-library/queue.md)
+

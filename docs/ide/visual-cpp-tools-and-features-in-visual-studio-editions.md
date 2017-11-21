@@ -1,0 +1,188 @@
+---
+title: "Visual C++ Araçları ve özelliklerinin Visual Studio sürümlerinde | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-ide
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- versions [C++]
+- Visual C++, versions
+- editions [C++]
+ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
+caps.latest.revision: "51"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 37f1eed2287c8fe655a124b1f76f48a203ab1607
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual C++ Araçları ve Visual Studio sürümlerinde özellikleri
+Aşağıdaki tablolarda, Visual Studio'da kullanılabilen Visual C++ özellikleri gösterilmektedir. Bir hücrenin X özelliği kullanılabilir olduğunu gösterir; boş bir hücre özellik kullanılamıyor gösterir. Notlar parantez içinde bir özellik kullanılabilir, ancak sınırlı olduğunu gösterir.  
+  
+## <a name="platforms"></a>Platformlar  
+  
+||||||  
+|-|-|-|-|-|  
+|Platform|Windows 10 için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Community/Professional|Visual Studio Enterprise|  
+|Windows Masaüstü||X|X|X|  
+|Evrensel Windows Platformu ((telefon, tablet, bilgisayar, Xbox, IOT ve HoloLens))|X||X|X|  
+|Windows mağazası 8.1|||X|X|  
+|Windows Phone 8.0|||X|X|  
+|Android|||X|X|  
+|iOS|||X|X|  
+  
+## <a name="compilers"></a>Derleyicileri  
+  
+|Derleyici|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|32-bit X86 derleyici|X|X|X|X|  
+|X86_arm çapraz derleyici|X||X|X|  
+|64-bit [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] derleyici|||X|X|  
+|X86_ [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] çapraz derleyici|X|X|X|X|  
+  
+## <a name="libraries-and-headers"></a>Kitaplıklar ve üstbilgileri  
+  
+|Kitaplığı veya üstbilgisi|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|Windows üstbilgiler ve kitaplıkları ve CRT kitaplık|(X)|X|X|X|  
+|C++ Standart Kitaplığı|X|X|X|X|  
+|ATL|||X|X|  
+|MFC|||X|X|  
+|.NET Framework sınıf kitaplığı||X|X|X|  
+|.NET için C++ destek kitaplığı||X|X|X|  
+|OpenMP|X|X|X|X|  
+  
+## <a name="project-templates"></a>Proje şablonları  
+  
+|Şablon|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|--------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|XAML şablonları UWP, Windows 8.1, Windows Phone 8.0|X||X|X|  
+|Direct3D Uygulaması|X||X|X|  
+|DLL (Windows Mağazası uygulamaları)|X||X|X|  
+|Statik Kitaplık (Windows Mağazası uygulamaları)|X||X|X|  
+|Windows Çalışma Zamanı Bileşeni|X||X|X|  
+|Birim Testi Kitaplığı (Windows Mağazası uygulamaları)|X||X|X|  
+|ATL Proje|||X|X|  
+|Sınıf kitaplığı (CLR)||X|X|X|  
+|CLR konsol uygulaması||X|X|X|  
+|CLR boş proje||X|X|X|  
+|Özel Sihirbaz|||X|X|  
+|Boş Proje||X|X|X|  
+|Derleme görevleri dosyası projesi||X|X|X|  
+|MFC ActiveX denetimi|||X|X|  
+|MFC uygulaması|||X|X|  
+|MFC DLL|||X|X|  
+|Test projesi|X|X|X|X|  
+|Win32 konsol uygulaması||X|X|X|  
+|Win32 Proje||X|X|X|  
+  
+## <a name="tools"></a>Araçlar  
+  
+|Aracı|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|----------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|Incremental bağlayıcı (Link.exe)|X|X|X|X|  
+|Program Bakımı yardımcı programı (Nmake.exe)||X|X|X|  
+|LIB Oluşturucu (Lib.exe)|X|X|X|X|  
+|Windows Kaynak derleyicisi (Rc.exe)|X|X|X|X|  
+|Windows kaynak nesnesi dönüştürücü (CvtRes.exe)||X|X|X|  
+|Bilgileri bakım yardımcı programı (BscMake.exe) göz atın|X|X|X|X|  
+|C++ adı Undecorator (Undname.exe)|X|X|X|X|  
+|COFF/PE Dumper (Dumpbin.exe)|X|X|X|X|  
+|COFF/PE Düzenleyicisi'ni (Editbin.exe)|X|X|X|X|  
+|MASM (Ml.exe)|||X|X|  
+|Spy++|||X|X|  
+|ErrLook|||X|X|  
+|AtlTrace|||X|X|  
+|Devenv.com|||X|X|  
+|Çıkarsama Kuralları|||X|X|  
+|MSBuild (VCUpgrade.exe) VCBuild .vcproj projelerini yükseltme|X|X|X|X|  
+|Profil temelli iyileştirmeler|||X|X|  
+  
+## <a name="debugging-features"></a>Hata ayıklama özelliği  
+  
+|Hata ayıklama özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|-----------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|Yerel hata ayıklama|X|X|X|X|  
+|natvis (yerel tür görselleştirme için)|X|X|X|X|  
+|Hata ayıklama grafik|X||X|X|  
+|Yönetilen hata ayıklama||X|X|X|  
+|GPU kullanımı|X||X|X|  
+|Bellek kullanımı|X||X|X|  
+|Uzaktan Hata Ayıklama|X|X|X|X|  
+|SQL hata ayıklama|||X|X|  
+|Statik kod çözümleme|Sınırlı|Sınırlı|X|X|  
+  
+## <a name="designers-and-editors"></a>Tasarımcılar ve düzenleyiciler  
+  
+|Tasarımcı veya Düzenleyicisi|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|XAML Tasarımcısı|X||X|X|  
+|CSS stil Tasarımcısı/Düzenleyicisi|X|X|X|X|  
+|HTML Tasarımcısı/Düzenleyicisi|X|X|X|X|  
+|XML Düzenleyicisi|X|X|X|X|  
+|Kaynak Kod Düzenleyicisi|X|X|X|X|  
+|Verimlilik özellikleri: Yeniden düzenleme, IntelliSense, C++ kod biçimlendirme|X|X|X|X|  
+|Windows Form Tasarımcısı||X|X|X|  
+|Veri Tasarımcısı|||X|X|  
+|Yerel Kaynak Düzenleyici (.rc dosyaları)|||X|X|  
+|Kaynak Düzenleyicileri|X|X|X|X|  
+|Model Düzenleyicisi|X||X|X|  
+|Gölgelendirici Tasarımcısı|X||X|X|  
+  
+## <a name="data-features"></a>Veri özellikleri  
+  
+|Veri özelliği|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Premium|Visual Studio Enterprise|  
+|------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|---------------------------|------------------------------|  
+|Veri Tasarımcısı|||X|X|X|  
+|Veri nesneleri|||X|X|X|  
+|Web Hizmetleri|||X|X|X|  
+|Server Explorer|||X|X|X|  
+  
+## <a name="build-and-project-systems"></a>Derleme ve proje sistemleri  
+  
+|Derleme veya proje özellik|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|------------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|Komut satırı derlemeleri (msbuild.exe)|X|X|X|X|  
+|Yerel çoklu sürüm desteği||X|X|X|  
+|Yönetilen çoklu sürüm desteği||X|X|X|  
+|Paralel derlemeleri|X|X|X|X|  
+|Özelleştirmeleri derleme|X|X|X|X|  
+|Özellik sayfaları genişletilebilirliği|X|X|X|X|  
+  
+## <a name="automation-and-extensibility"></a>Otomasyon ve genişletilebilirlik  
+  
+|Otomasyon ve genişletilebilirlik|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|----------------------------------|---------------------------------------|-----------------------------------------------|---------------------------------------------|------------------------------|  
+|Genişletilebilirlik nesne modelleri|||X|X|  
+|Kod modeli|||X|X|  
+|Proje Modeli|||X|X|  
+|Kaynak Düzenleyici modeli|||X|X|  
+|Sihirbaz modeli|||X|X|  
+|Hata ayıklayıcı nesne modeli|||X|X|  
+  
+## <a name="application-lifecycle-management-tools"></a>Uygulama yaşam döngüsü yönetimi araçları  
+  
+||||||  
+|-|-|-|-|-|  
+|Aracı|Windows için Visual Studio Express|Windows Masaüstü için Visual Studio Express|Visual Studio Professional / Community|Visual Studio Enterprise|  
+|Birim test (yerel framework)|X|X|X|X|  
+|Birim test (yönetilen framework)||X|X|X|  
+|Kod kapsamı||||X|  
+|El ile test etme||||X|  
+|Keşif testi||||X|  
+|Test çalıştırması yönetimi||||X|  
+|Kod Haritası ve bağımlılık grafikleri|||salt okunur|X|  
+|Kod Haritası hata ayıklama||||X|  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Visual Studio yükleme](/visualstudio/install/install-visual-studio)   
+ [Visual Studio'da yenilikler nelerdir?](/visualstudio/ide/whats-new-in-visual-studio)   
+ [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
+ [Sürümleri Visual veritabanı araçları](http://msdn.microsoft.com/en-us/a7689adc-f16b-4cc7-b6fe-39ca0c711161)

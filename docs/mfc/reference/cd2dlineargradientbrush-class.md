@@ -1,0 +1,275 @@
+---
+title: "CD2DLinearGradientBrush sınıfı | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords:
+- CD2DLinearGradientBrush
+- AFXRENDERTARGET/CD2DLinearGradientBrush
+- AFXRENDERTARGET/CD2DLinearGradientBrush::CD2DLinearGradientBrush
+- AFXRENDERTARGET/CD2DLinearGradientBrush::Attach
+- AFXRENDERTARGET/CD2DLinearGradientBrush::Create
+- AFXRENDERTARGET/CD2DLinearGradientBrush::Destroy
+- AFXRENDERTARGET/CD2DLinearGradientBrush::Detach
+- AFXRENDERTARGET/CD2DLinearGradientBrush::Get
+- AFXRENDERTARGET/CD2DLinearGradientBrush::GetEndPoint
+- AFXRENDERTARGET/CD2DLinearGradientBrush::GetStartPoint
+- AFXRENDERTARGET/CD2DLinearGradientBrush::SetEndPoint
+- AFXRENDERTARGET/CD2DLinearGradientBrush::SetStartPoint
+- AFXRENDERTARGET/CD2DLinearGradientBrush::m_LinearGradientBrushProperties
+- AFXRENDERTARGET/CD2DLinearGradientBrush::m_pLinearGradientBrush
+dev_langs: C++
+helpviewer_keywords:
+- CD2DLinearGradientBrush [MFC], CD2DLinearGradientBrush
+- CD2DLinearGradientBrush [MFC], Attach
+- CD2DLinearGradientBrush [MFC], Create
+- CD2DLinearGradientBrush [MFC], Destroy
+- CD2DLinearGradientBrush [MFC], Detach
+- CD2DLinearGradientBrush [MFC], Get
+- CD2DLinearGradientBrush [MFC], GetEndPoint
+- CD2DLinearGradientBrush [MFC], GetStartPoint
+- CD2DLinearGradientBrush [MFC], SetEndPoint
+- CD2DLinearGradientBrush [MFC], SetStartPoint
+- CD2DLinearGradientBrush [MFC], m_LinearGradientBrushProperties
+- CD2DLinearGradientBrush [MFC], m_pLinearGradientBrush
+ms.assetid: d4be9ff9-0ea8-45e6-9b8d-f3bc5673cbac
+caps.latest.revision: "17"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 5f763c2abb919e8f65c7c386ae40a52a54fe0fa0
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="cd2dlineargradientbrush-class"></a>CD2DLinearGradientBrush sınıfı
+ID2D1LinearGradientBrush için sarmalayıcı.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+class CD2DLinearGradientBrush : public CD2DGradientBrush;  
+```  
+  
+## <a name="members"></a>Üyeler  
+  
+### <a name="public-constructors"></a>Ortak Oluşturucular  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[CD2DLinearGradientBrush::CD2DLinearGradientBrush](#cd2dlineargradientbrush)|CD2DLinearGradientBrush nesnesi oluşturur.|  
+|[CD2DLinearGradientBrush:: ~ CD2DLinearGradientBrush](#_dtorcd2dlineargradientbrush)|Yok Edicisi. D2D doğrusal gradyan fırçası nesnesi yok çağrılır.|  
+  
+### <a name="public-methods"></a>Ortak Yöntemler  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[CD2DLinearGradientBrush::Attach](#attach)|Var olan nesne kaynak arabirimine ekler|  
+|[CD2DLinearGradientBrush::Create](#create)|Bir CD2DLinearGradientBrush oluşturur. (Geçersiz kılmaları [CD2DResource::Create](../../mfc/reference/cd2dresource-class.md#create).)|  
+|[CD2DLinearGradientBrush::Destroy](#destroy)|CD2DLinearGradientBrush nesnesini yok eder. (Geçersiz kılmaları [CD2DGradientBrush::Destroy](../../mfc/reference/cd2dgradientbrush-class.md#destroy).)|  
+|[CD2DLinearGradientBrush::detach](#detach)|Kaynak arabirimi nesneden çıkarır|  
+|[CD2DLinearGradientBrush::get](#get)|Döndürür ID2D1LinearGradientBrush arabirimi|  
+|[CD2DLinearGradientBrush::GetEndPoint](#getendpoint)|Doğrusal gradyan bitiş koordinatlarını alır.|  
+|[CD2DLinearGradientBrush::GetStartPoint](#getstartpoint)|Doğrusal gradyan başlangıç koordinatlarını alır.|  
+|[CD2DLinearGradientBrush::SetEndPoint](#setendpoint)|Doğrusal gradyan bitiş koordinatlarını fırça koordinat alanında ayarlar|  
+|[CD2DLinearGradientBrush::SetStartPoint](#setstartpoint)|Doğrusal gradyan başlangıç koordinatlarını fırça koordinat alanında ayarlar|  
+  
+### <a name="public-operators"></a>Ortak İşleçler  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush *](#operator_id2d1lineargradientbrush_star)|Döndürür ID2D1LinearGradientBrush arabirimi|  
+  
+### <a name="protected-data-members"></a>Korumalı veri üyeleri  
+  
+|Ad|Açıklama|  
+|----------|-----------------|  
+|[CD2DLinearGradientBrush::m_LinearGradientBrushProperties](#m_lineargradientbrushproperties)|Başlangıç ve bitiş noktalarını geçişin.|  
+|[CD2DLinearGradientBrush::m_pLinearGradientBrush](#m_plineargradientbrush)|Bir ID2D1LinearGradientBrush gösteren bir işaretçi.|  
+  
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
+ [CObject](../../mfc/reference/cobject-class.md)  
+  
+ [CD2DResource](../../mfc/reference/cd2dresource-class.md)  
+  
+ [CD2DBrush](../../mfc/reference/cd2dbrush-class.md)  
+  
+ [CD2DGradientBrush](../../mfc/reference/cd2dgradientbrush-class.md)  
+  
+ `CD2DLinearGradientBrush`  
+  
+## <a name="requirements"></a>Gereksinimler  
+ **Başlık:** afxrendertarget.h  
+  
+##  <a name="_dtorcd2dlineargradientbrush"></a>CD2DLinearGradientBrush:: ~ CD2DLinearGradientBrush  
+ Yok Edicisi. D2D doğrusal gradyan fırçası nesnesi yok çağrılır.  
+  
+```  
+virtual ~CD2DLinearGradientBrush();
+```  
+  
+##  <a name="attach"></a>CD2DLinearGradientBrush::Attach  
+ Var olan nesne kaynak arabirimine ekler  
+  
+```  
+void Attach(ID2D1LinearGradientBrush* pResource);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `pResource`  
+ Mevcut kaynak arabirimi. NULL olamaz  
+  
+##  <a name="cd2dlineargradientbrush"></a>CD2DLinearGradientBrush::CD2DLinearGradientBrush  
+ CD2DLinearGradientBrush nesnesi oluşturur.  
+  
+```  
+CD2DLinearGradientBrush(
+    CRenderTarget* pParentTarget,  
+    const D2D1_GRADIENT_STOP* gradientStops,  
+    UINT gradientStopsCount,  
+    D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES LinearGradientBrushProperties,  
+    D2D1_GAMMA colorInterpolationGamma = D2D1_GAMMA_2_2,  
+    D2D1_EXTEND_MODE extendMode = D2D1_EXTEND_MODE_CLAMP,  
+    CD2DBrushProperties* pBrushProperties = NULL,  
+    BOOL bAutoDestroy = TRUE);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `pParentTarget`  
+ İşleme hedefi için bir işaretçi.  
+  
+ `gradientStops`  
+ Bir dizi D2D1_GRADIENT_STOP yapıları için bir işaretçi.  
+  
+ `gradientStopsCount`  
+ Gradyan durakları sayısını gradientStops dizisinde belirtir 1'e eşit veya daha büyük değer.  
+  
+ `LinearGradientBrushProperties`  
+ Başlangıç ve bitiş noktalarını geçişin.  
+  
+ `colorInterpolationGamma`  
+ Hangi renkte gradyan durakları arasında ilişkilendirme gerçekleştirilir alanı.  
+  
+ `extendMode`  
+ [0,1] normalleştirilmiş aralığın dışında geçişin davranışı.  
+  
+ `pBrushProperties`  
+ Opaklık ve fırça dönüşümü için bir işaretçi.  
+  
+ `bAutoDestroy`  
+ Nesne sahibi (pParentTarget) tarafından yok edilmesi gerektiğini gösterir.  
+  
+##  <a name="create"></a>CD2DLinearGradientBrush::Create  
+ Bir CD2DLinearGradientBrush oluşturur.  
+  
+```  
+virtual HRESULT Create(CRenderTarget* pRenderTarget);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `pRenderTarget`  
+ İşleme hedefi için bir işaretçi.  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
+  
+##  <a name="destroy"></a>CD2DLinearGradientBrush::Destroy  
+ CD2DLinearGradientBrush nesnesini yok eder.  
+  
+```  
+virtual void Destroy();
+```  
+  
+##  <a name="detach"></a>CD2DLinearGradientBrush::detach  
+ Kaynak arabirimi nesneden çıkarır  
+  
+```  
+ID2D1LinearGradientBrush* Detach();
+```  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Ayrılmış kaynak arabirimi işaretçisi.  
+  
+##  <a name="get"></a>CD2DLinearGradientBrush::get  
+ Döndürür ID2D1LinearGradientBrush arabirimi  
+  
+```  
+ID2D1LinearGradientBrush* Get();
+```  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ İşaretçi bir ID2D1LinearGradientBrush arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
+  
+##  <a name="getendpoint"></a>CD2DLinearGradientBrush::GetEndPoint  
+ Doğrusal gradyan bitiş koordinatlarını alır.  
+  
+```  
+CD2DPointF GetEndPoint() const;  
+```  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Doğrusal geçişin fırça koordinat bitiş iki boyutlu koordinatları  
+  
+##  <a name="getstartpoint"></a>CD2DLinearGradientBrush::GetStartPoint  
+ Doğrusal gradyan başlangıç koordinatlarını alır.  
+  
+```  
+CD2DPointF GetStartPoint() const;  
+```  
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ Doğrusal geçişin fırça koordinat başlangıç iki boyutlu koordinatları  
+  
+##  <a name="m_lineargradientbrushproperties"></a>CD2DLinearGradientBrush::m_LinearGradientBrushProperties  
+ Başlangıç ve bitiş noktalarını geçişin.  
+  
+```  
+D2D1_LINEAR_GRADIENT_BRUSH_PROPERTIES m_LinearGradientBrushProperties;  
+```  
+  
+##  <a name="m_plineargradientbrush"></a>CD2DLinearGradientBrush::m_pLinearGradientBrush  
+ Bir ID2D1LinearGradientBrush gösteren bir işaretçi.  
+  
+```  
+ID2D1LinearGradientBrush* m_pLinearGradientBrush;  
+```  
+  
+##  <a name="operator_id2d1lineargradientbrush_star"></a>CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush *  
+ Döndürür ID2D1LinearGradientBrush arabirimi  
+  
+```  
+operator ID2D1LinearGradientBrush*();
+```   
+  
+### <a name="return-value"></a>Dönüş Değeri  
+ İşaretçi bir ID2D1LinearGradientBrush arabirimi veya nesnesi henüz başlatılmadı yoksa NULL.  
+  
+##  <a name="setendpoint"></a>CD2DLinearGradientBrush::SetEndPoint  
+ Doğrusal gradyan bitiş koordinatlarını fırça koordinat alanında ayarlar  
+  
+```  
+void SetEndPoint(CD2DPointF point);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `point`  
+ Doğrusal geçişin fırça koordinat bitiş iki boyutlu koordinatları  
+  
+##  <a name="setstartpoint"></a>CD2DLinearGradientBrush::SetStartPoint  
+ Doğrusal gradyan başlangıç koordinatlarını fırça koordinat alanında ayarlar  
+  
+```  
+void SetStartPoint(CD2DPointF point);
+```  
+  
+### <a name="parameters"></a>Parametreler  
+ `point`  
+ Doğrusal geçişin fırça koordinat başlangıç iki boyutlu koordinatları  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Sınıfları](../../mfc/reference/mfc-classes.md)

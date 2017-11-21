@@ -1,0 +1,57 @@
+---
+title: Unicode ve MBCS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: _mbcs
+dev_langs: C++
+helpviewer_keywords:
+- MBCS [C++], Unicode
+- MFC [C++], character sets
+- character sets [C++], multibyte
+- run-time libraries [C++], language portability
+- character sets [C++], Unicode
+- Unicode [C++], MFC and C run-time functions
+- multibyte characters [C++]
+- runtime [C++], language portability
+ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
+caps.latest.revision: "9"
+author: ghogen
+ms.author: ghogen
+manager: ghogen
+ms.openlocfilehash: b46158795c91c0c1982e50f56d8961106b952076
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="unicode-and-mbcs"></a>Unicode ve MBCS
+Uluslararası programlama yardımcı olmak için Microsoft Foundation sınıfları (MFC) kitaplığı, Visual c++ C çalışma zamanı kitaplığı ve Visual C++ geliştirme ortamı etkin. Bunlar sağlar:  
+  
+-   Unicode standart Windows 2000 (eski adıyla Windows NT) desteği. Unicode geçerli standarttır ve mümkün olduğunda kullanılmalıdır.  
+  
+     Unicode kodlama, tüm diller için yeterli Kodlamalar sağlayan bir 16 bit karakterdir. Tüm ASCII karakterleri Unicode genişletmiştir karakter olarak dahil edilir.  
+  
+    > [!NOTE]
+    >  Unicode standart Windows 95, Windows 98 veya Windows Millennium Edition üzerinde desteklenmiyor.  
+  
+-   Tüm platformlarda çift bayt karakter kümesi (DBCS) adlı bir form birden çok baytlı karakter kümesi (MBCS) desteği.  
+  
+     DBCS karakterleri 1 veya 2 bayt oluşur. Bazı bayt aralıkları ön bayt olarak kullanılmak üzere ayrılan. Bu ve aşağıdaki sondaki bayt tek bir 2 bayt geniş karakter oluşturan baytı belirtir. Hangi baytların ön bayt olduğunu izlemek gerekir. Baytlar gibi belirli bir çok baytlı karakter kümesinde belirli bir aralığa ön baytlar ayrılır. Bu aralıklar üst üste, verilen baytın baytı veya sondaki bayt olarak çalışıp çalışmadığını belirlemek için bağlamı değerlendirmek gerekli olabilir.  
+  
+-   MBCS programlama için Uluslararası pazarda yazılmış uygulamaların kolaylaştıran Araçlar desteği.  
+  
+     Bir MBCS etkinleştirilmiş Windows işletim sistemi, Visual C++ geliştirme sistemi sürümünde çalıştırdığınızda — tümleşik kaynak kod düzenleyicisinde, hata ayıklayıcı ve komut satırı araçları dahil olmak üzere — tamamen MBCS etkindir. Daha fazla bilgi için bkz: [Visual C++'ta MBCS Desteği](../text/mbcs-support-in-visual-cpp.md).  
+  
+> [!NOTE]
+>  Bu belgede MBCS birden çok baytlı karakterler tüm Unicode olmayan desteği açıklamak için kullanılır. Visual c++'ta MBCS her zaman DBCS anlamına gelir. Karakter 2 bayt desteklenmez uzunluğundan ayarlar.  
+  
+ Tanımı gereği, ASCII karakter kümesi tüm çok baytlı karakter kümeleri bir alt kümesidir. Çok baytlı karakter kümelerinin her karakter aralığı 0x00 - 0x7F aynı değere sahip ASCII karakter kümesinden karakter aynıdır. Örneğin, ASCII ve MBCS karakter dizeleri, 1-bayt olarak **NULL** karakteri ('\0') 0x00 değerine sahiptir ve sonlandırıcı boş karakteri gösterir.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)   
+ [Uluslararası etkinleştirme](../text/international-enabling.md)

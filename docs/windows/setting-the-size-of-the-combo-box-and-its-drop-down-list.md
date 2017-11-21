@@ -1,0 +1,62 @@
+---
+title: "Birleşik giriş kutusu ve aşağı açılan listesinin boyutunu ayarlama | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vc.editors.dialog.combo
+dev_langs: C++
+helpviewer_keywords:
+- combo boxes, sizing
+- controls [C++], sizing
+ms.assetid: 51fb53cf-9ddf-4a20-962e-8553938e55ee
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 9edef494f88bc5a5b4e8efdab94b70d233fcd59f
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="setting-the-size-of-the-combo-box-and-its-drop-down-list"></a>Birleşik Giriş Kutusu ve Aşağı Açılan Listesinin Boyutunu Ayarlama
+İletişim kutusuna eklediğinizde birleşik giriş kutusu boyutlandırabilirsiniz. Ayrıca, aşağı açılan liste kutusu boyutunu belirtebilirsiniz.  
+  
+### <a name="to-size-a-combo-box"></a>Birleşik giriş kutusu boyutuna  
+  
+1.  Birleşik giriş kutusu denetimi, iletişim kutusunda seçin.  
+  
+     Başlangıçta, yalnızca sağ ve sol boyutlandırma etkindir.  
+  
+2.  Birleşik giriş kutusu genişliğini ayarlamak için boyutlandırma kullanın.  
+  
+ Birleşik giriş kutusu açılan kısmı dikey boyutunu de ayarlayabilirsiniz.  
+  
+#### <a name="to-set-the-size-of-the-combo-box-drop-down-list"></a>Aşağı açılan liste kutusunu birleşik boyutunu ayarlamak için  
+  
+1.  Birleşik giriş kutusu sağındaki açılan ok düğmesine tıklayın.  
+  
+     ![Birleşik giriş kutusu MFC projesinde okuna](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")  
+  
+     Genişletilmiş aşağı açılan liste alanı ile birleşik giriş kutusu boyutunu göstermek için Denetim değişikliklerin anahattı.  
+  
+2.  Aşağı açılan liste alanının ilk boyutunu değiştirmek için alt boyutlandırma tutamacını kullanın.  
+  
+     ![Birleşik giriş &#45; kutusunu boyutlandırma MFC projesinde](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")  
+  
+3.  Birleşik giriş kutusu açılan liste kısmı kapatmak için tekrar açılan oku tıklatın.  
+  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+  
+### <a name="requirements"></a>Gereksinimler  
+ Win32  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Birleşik giriş kutusu denetimine değer ekleme](../windows/adding-values-to-a-combo-box-control.md)   
+ [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
+ [Denetimleri](../mfc/controls-mfc.md)
+

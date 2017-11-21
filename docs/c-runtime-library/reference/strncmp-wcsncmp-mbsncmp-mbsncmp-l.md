@@ -1,0 +1,213 @@
+---
+title: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-standard-libraries
+ms.tgt_pltfrm: 
+ms.topic: article
+apiname:
+- strncmp
+- _mbsncmp
+- wcsncmp
+- _mbsncmp_l
+apilocation:
+- msvcrt.dll
+- msvcr80.dll
+- msvcr90.dll
+- msvcr100.dll
+- msvcr100_clr0400.dll
+- msvcr110.dll
+- msvcr110_clr0400.dll
+- msvcr120.dll
+- msvcr120_clr0400.dll
+- ntdll.dll
+- ucrtbase.dll
+- api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-crt-string-l1-1-0.dll
+apitype: DLLExport
+f1_keywords:
+- _ftcsnccmp
+- _ftcsncmp
+- _tcsncmp
+- _tcsnccmp
+- strncmp
+- _mbsncmp
+- wcsncmp
+dev_langs: C++
+helpviewer_keywords:
+- _tcsnccmp function
+- ftcsncmp function
+- wcsncmp function
+- _ftcsncmp function
+- _mbsncmp function
+- tcsncmp function
+- mbsncmp function
+- _mbsncmp_l function
+- mbsncmp_l function
+- strncmp function
+- strings [C++], comparing characters of
+- string comparison [C++], strncmp function
+- _tcsncmp function
+- tcsnccmp function
+- ftcsnccmp function
+- characters [C++], comparing
+- _ftcsnccmp function
+ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
+caps.latest.revision: "28"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: d3baca7feae2b45c7761e46daa4adeb7a0968580
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="strncmp-wcsncmp-mbsncmp-mbsncmpl"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
+Belirtilen iki dize karakterlerini sayısı kadar karşılaştırır.  
+  
+> [!IMPORTANT]
+>  `_mbsncmp`ve `_mbsncmp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+int strncmp(  
+   const char *string1,  
+   const char *string2,  
+   size_t count   
+);  
+int wcsncmp(  
+   const wchar_t *string1,  
+   const wchar_t *string2,  
+   size_t count   
+);  
+int _mbsncmp(  
+   const unsigned char *string1,  
+   const unsigned char *string2,  
+   size_t count   
+);  
+int _mbsncmp_l(  
+   const unsigned char *string1,  
+   const unsigned char *string2,  
+   size_t count,   
+   _locale_t locale  
+);int _mbsnbcmp(  
+   const unsigned char *string1,  
+   const unsigned char *string2,  
+   size_t count   
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ `string1, string2`  
+ Karşılaştırılacak dizeleri.  
+  
+ `count`  
+ Karşılaştırılacak karakter sayısı.  
+  
+ `locale`  
+ Kullanılacak yerel ayar.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Alt dizeler ilişkisi dönüş değerini gösteren `string1` ve `string2` gibi.  
+  
+|Dönüş değeri|Açıklama|  
+|------------------|-----------------|  
+|< 0|`string1`substring değerinden `string2` substring|  
+|0|`string1`substring aynı `string2` substring|  
+|> 0|`string1`substring büyük `string2` substring|  
+  
+ Parametre doğrulama hata `_mbsncmp` ve `_mbsncmp_l` dönmek `_NLSCMPERROR`, içinde tanımlanan \<string.h > ve \<mbstring.h >.  
+  
+## <a name="remarks"></a>Açıklamalar  
+ `strncmp` İşlevi gerçekleştiren bir sıralı karşılaştırma en fazla ilk `count` içinde karakterleri `string1` ve `string2` ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. `strncmp`büyük küçük harfe duyarlı bir sürümü `_strnicmp`. `wcsncmp`ve `_mbsncmp` büyük küçük harfe duyarlı sürümleri `_wcsnicmp` ve `_mbsnicmp`.  
+  
+ `wcsncmp`ve `_mbsncmp` joker karakter ve çok baytlı karakter sürümleri `strncmp`. Bağımsız değişkenleri `wcsncmp` joker karakter olan dizeleri; bu `_mbsncmp` çok baytlı karakter dizeleri belirtilmiştir. `_mbsncmp`çok baytlı karakter sıralarının birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata.  
+  
+ Ayrıca, `_mbsncmp` ve `_mbsncmp_l` parametreleri doğrulayın. Varsa `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsncmp` ve `_mbsncmp_l` dönmek `_NLSCMPERROR` ve `errno` için `EINVAL`. `strncmp`ve `wcsncmp` parametrelerini doğrulamaz. Bu işlevler aynı şekilde aksi davranır.  
+  
+ Karşılaştırma davranışını `_mbsncmp` ve `_mbsncmp_l` ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı. Bu, birden çok baytlı karakterler baştaki ve sondaki bayt algılanması denetler. Daha fazla bilgi için bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `_mbsncmp` İşlevi için bu yerel ayara bağımlı davranış geçerli yerel ayarı kullanır. `_mbsncmp_l` Kullanır ancak bu işlevi aynı `locale` parametresi yerine. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md). Yerel bir tek baytlı yerel ise, bu işlevler davranışını aynıdır `strncmp`.  
+  
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
+  
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
+|---------------------|------------------------------------|--------------------|-----------------------|  
+|`_tcsnccmp`|`strncmp`|`_mbsncmp`|`wcsncmp`|  
+|`_tcsncmp`|`strncmp`|`_mbsnbcmp`|`wcsncmp`|  
+|`_tccmp`|Makro veya satır içi işlev eşlemeleri|`_mbsncmp`|Makro veya satır içi işlev eşlemeleri|  
+|**geçerli değil**|**geçerli değil**|`_mbsncmp_l`|**geçerli değil**|  
+  
+## <a name="requirements"></a>Gereksinimler  
+  
+|Yordam|Gerekli başlık|  
+|-------------|---------------------|  
+|`strncmp`|\<String.h >|  
+|`wcsncmp`|\<String.h > veya \<wchar.h >|  
+|`_mbsncmp`, `_mbsncmp_l`|\<Mbstring.h >|  
+  
+ Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+  
+## <a name="example"></a>Örnek  
+  
+```  
+// crt_strncmp.c  
+#include <string.h>  
+#include <stdio.h>  
+  
+char string1[] = "The quick brown dog jumps over the lazy fox";  
+char string2[] = "The QUICK brown fox jumps over the lazy dog";  
+  
+int main( void )  
+{  
+   char tmp[20];  
+   int result;  
+   printf( "Compare strings:\n      %s\n      %s\n\n",  
+           string1, string2 );  
+   printf( "Function:   strncmp (first 10 characters only)\n" );  
+   result = strncmp( string1, string2 , 10 );  
+   if( result > 0 )  
+      strcpy_s( tmp, sizeof(tmp), "greater than" );  
+   else if( result < 0 )  
+      strcpy_s( tmp, sizeof(tmp), "less than" );  
+   else  
+      strcpy_s( tmp, sizeof(tmp), "equal to" );  
+   printf( "Result:      String 1 is %s string 2\n\n", tmp );  
+   printf( "Function:   strnicmp _strnicmp (first 10 characters only)\n" );  
+   result = _strnicmp( string1, string2, 10 );  
+   if( result > 0 )  
+      strcpy_s( tmp, sizeof(tmp), "greater than" );  
+   else if( result < 0 )  
+      strcpy_s( tmp, sizeof(tmp), "less than" );  
+   else  
+      strcpy_s( tmp, sizeof(tmp), "equal to" );  
+   printf( "Result:      String 1 is %s string 2\n", tmp );  
+}  
+```  
+  
+```Output  
+Compare strings:  
+      The quick brown dog jumps over the lazy fox  
+      The QUICK brown fox jumps over the lazy dog  
+  
+Function:   strncmp (first 10 characters only)  
+Result:      String 1 is greater than string 2  
+  
+Function:   strnicmp _strnicmp (first 10 characters only)  
+Result:      String 1 is equal to string 2  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)   
+ [Yerel ayar](../../c-runtime-library/locale.md)   
+ [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
+ [_mbsnbcmp, _mbsnbcmp_l](../../c-runtime-library/reference/mbsnbcmp-mbsnbcmp-l.md)   
+ [_mbsnbicmp, _mbsnbicmp_l](../../c-runtime-library/reference/mbsnbicmp-mbsnbicmp-l.md)   
+ [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   
+ [strcoll işlevleri](../../c-runtime-library/strcoll-functions.md)   
+ [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)   
+ [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)   
+ [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)   
+ [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)

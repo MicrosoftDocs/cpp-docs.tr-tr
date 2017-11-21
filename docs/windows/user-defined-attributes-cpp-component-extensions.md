@@ -1,0 +1,219 @@
+---
+title: "Kullanıcı tanımlı öznitelikleri (C++ bileşen uzantıları) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs: C++
+helpviewer_keywords:
+- metadata, extending
+- custom attributes, extending metadata
+ms.assetid: 98b29048-a3ea-4698-8441-f149cdaec9fb
+caps.latest.revision: "27"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: b7c96ff7be36ac90560d36c3c0989379eea24777
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="user-defined-attributes--c-component-extensions"></a>Kullanıcı Tanımlı Öznitelikler (C++ Bileşen Uzantıları)
+Özel öznitelikler bir arabirimi, sınıf veya yapı, yöntemi, parametresi veya numaralandırması meta genişletmenizi sağlar.  
+  
+## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
+ Tüm çalışma zamanları özel öznitelikler destekler.  
+  
+## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
+ C + +/ CX öznitelikler yalnızca özellikleri destekler, ancak özniteliği oluşturucular ya da yöntemleri değil.  
+  
+### <a name="remarks"></a>Açıklamalar  
+  
+### <a name="requirements"></a>Gereksinimler  
+ Derleyici seçeneği: **/ZW**  
+  
+## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
+ Özel öznitelikler yönetilen öğesinin meta verisi genişletmenizi sağlar. Daha fazla bilgi için bkz: [öznitelikleri](/dotnet/standard/attributes/index).  
+  
+### <a name="remarks"></a>Açıklamalar  
+ Bu konuda sunulan sözdizimi ve bilgi içinde sunulan bilgiler geçirileceği yöneliktir [özniteliği](../windows/attribute.md).  
+  
+ Özel bir öznitelik türü tanımlama ve yaparak tanımlayabilirsiniz <xref:System.Attribute> bir taban sınıf türü için ve isteğe bağlı olarak uygulama <xref:System.AttributeUsageAttribute> özniteliği.  
+  
+ Örneğin, içinde Microsoft işlem Server (MTS) 1.0, işlemler, eşitleme, göre davranışı Yük Dengeleme ve benzeri ODL özel özniteliğini kullanarak türü kitaplığa eklenen özel GUID'ler aracılığıyla belirtildi. Bu nedenle, bir istemci bir MTS sunucusunun tür kitaplığını okuyarak onun özelliklerini belirlenemedi. .NET Framework'te tür kitaplığı analog meta verileri ve ODL özel öznitelik analog özel öznitelikler. Ayrıca, tür kitaplığı okuma türlerinde yansıma kullanarak benzerdir.  
+  
+ Daha fazla bilgi için bkz:  
+  
+-   [Öznitelik hedefleri](../windows/attribute-targets-cpp-component-extensions.md)  
+  
+-   [Öznitelik parametre türleri](../windows/attribute-parameter-types-cpp-component-extensions.md)  
+  
+ Visual C++'ta imzalama derlemeler hakkında daha fazla bilgi için bkz: [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).  
+  
+### <a name="requirements"></a>Gereksinimler  
+ Derleyici seçeneği:   **/CLR**  
+  
+### <a name="examples"></a>Örnekler  
+ **Örnek**  
+  
+ Aşağıdaki örnek, özel bir öznitelik tanımlamak gösterilmektedir.  
+  
+```cpp  
+// user_defined_attributes.cpp  
+// compile with: /clr /c  
+using namespace System;  
+  
+[AttributeUsage(AttributeTargets::All)]  
+ref struct Attr : public Attribute {  
+   Attr(bool i){}  
+   Attr(){}  
+};  
+  
+[Attr]  
+ref class MyClass {};  
+```  
+  
+ **Örnek**  
+  
+ Aşağıdaki örnek, özel öznitelikler önemli özelliklerinden bazıları gösterilmektedir. Örneğin, bu örnek özel özniteliklerin ortak kullanım gösterir: tam olarak kendisine istemcilere açıklayabilirsiniz bir sunucu örneği.  
+  
+```cpp  
+// extending_metadata_b.cpp  
+// compile with: /clr  
+using namespace System;  
+using namespace System::Reflection;  
+  
+public enum class Access { Read, Write, Execute };  
+  
+// Defining the Job attribute:  
+[AttributeUsage(AttributeTargets::Class, AllowMultiple=true )]  
+public ref class Job : Attribute {  
+public:  
+   property int Priority {  
+      void set( int value ) { m_Priority = value; }  
+      int get() { return m_Priority; }  
+   }  
+  
+   // You can overload constructors to specify Job attribute in different ways  
+   Job() { m_Access = Access::Read; }  
+   Job( Access a ) { m_Access = a; }  
+   Access m_Access;  
+  
+protected:  
+   int m_Priority;  
+};  
+  
+interface struct IService {  
+   void Run();  
+};  
+  
+   // Using the Job attribute:  
+   // Here we specify that QueryService is to be read only with a priority of 2.  
+   // To prevent namespace collisions, all custom attributes implicitly   
+   // end with "Attribute".   
+  
+[Job( Access::Read, Priority=2 )]  
+ref struct QueryService : public IService {  
+   virtual void Run() {}  
+};  
+  
+// Because we said AllowMultiple=true, we can add multiple attributes   
+[Job(Access::Read, Priority=1)]  
+[Job(Access::Write, Priority=3)]  
+ref struct StatsGenerator : public IService {  
+   virtual void Run( ) {}  
+};  
+  
+int main() {  
+   IService ^ pIS;  
+   QueryService ^ pQS = gcnew QueryService;  
+   StatsGenerator ^ pSG = gcnew StatsGenerator;  
+  
+   //  use QueryService  
+   pIS = safe_cast<IService ^>( pQS );  
+  
+   // use StatsGenerator  
+   pIS = safe_cast<IService ^>( pSG );  
+  
+   // Reflection  
+   MemberInfo ^ pMI = pIS->GetType();  
+   array <Object ^ > ^ pObjs = pMI->GetCustomAttributes(false);  
+  
+   // We can now quickly and easily view custom attributes for an   
+   // Object through Reflection */  
+   for( int i = 0; i < pObjs->Length; i++ ) {  
+      Console::Write("Service Priority = ");  
+      Console::WriteLine(static_cast<Job^>(pObjs[i])->Priority);  
+      Console::Write("Service Access = ");  
+      Console::WriteLine(static_cast<Job^>(pObjs[i])->m_Access);  
+   }  
+}  
+```  
+  
+ **Çıktı**  
+  
+```Output  
+Service Priority = 0  
+  
+Service Access = Write  
+  
+Service Priority = 3  
+  
+Service Access = Write  
+  
+Service Priority = 1  
+  
+Service Access = Read  
+```  
+  
+ **Örnek**  
+  
+ Nesne ^ türü variant veri türü yerine geçer. Aşağıdaki örnek, bir dizi nesnesinin alır özel bir öznitelik tanımlar ^ parametre olarak.  
+  
+ Öznitelik bağımsız değişkenleri, derleme zamanı sabitleri olmalıdır; Çoğu durumda, bunlar sabit değişmez değerleri olmalıdır.  
+  
+ Bkz: [TypeID](../windows/typeid-cpp-component-extensions.md) bir özel öznitelik bloğundan System::Type değerini döndürmek hakkında bilgi için.  
+  
+```cpp  
+// extending_metadata_e.cpp  
+// compile with: /clr /c  
+using namespace System;  
+[AttributeUsage(AttributeTargets::Class | AttributeTargets::Method)]  
+public ref class AnotherAttr : public Attribute {  
+public:  
+   AnotherAttr(array<Object^>^) {}  
+   array<Object^>^ var1;  
+};  
+  
+// applying the attribute  
+[ AnotherAttr( gcnew array<Object ^> { 3.14159, "pi" }, var1 = gcnew array<Object ^> { "a", "b" } ) ]  
+public ref class SomeClass {};  
+```  
+  
+ **Örnek**  
+  
+ Çalışma zamanı özel öznitelik sınıfı ortak parçasını seri hale getirilebilir olmasını gerektirir.  Özel öznitelikler yazarken, özel özniteliğinin adlandırılmış bağımsız değişkenler için derleme zamanı sabitleri sınırlıdır.  (Bunu BITS sınıfı düzeninizi meta verilerde eklenen bir dizi olarak düşünün.)  
+  
+```cpp  
+// extending_metadata_f.cpp  
+// compile with: /clr /c  
+using namespace System;  
+ref struct abc {};  
+  
+[AttributeUsage( AttributeTargets::All )]  
+ref struct A : Attribute {  
+   A( Type^ ) {}  
+   A( String ^ ) {}  
+   A( int ) {}  
+};  
+  
+[A( abc::typeid )]  
+ref struct B {};  
+```  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)

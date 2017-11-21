@@ -1,0 +1,99 @@
+---
+title: _mm_cvtsi64x_ss | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-tools
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: _mm_cvtsi64x_ss
+dev_langs: C++
+helpviewer_keywords:
+- cvtsi2ss instruction
+- _mm_cvtsi64x_ss intrinsic
+ms.assetid: 01e5d321-c18a-46fd-a6f6-324364514e1f
+caps.latest.revision: "14"
+author: corob-msft
+ms.author: corob
+manager: ghogen
+ms.openlocfilehash: aecb28648e32e099d2381fa49b1b7f5a42618543
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
+**Microsoft özel**  
+  
+ Oluşturur [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] genişletilmiş sürümü skaler tek duyarlıklı Floating-Point değerine dönüştürmek 64 Bit tamsayı (`cvtsi2ss`) yönerge.  
+  
+## <a name="syntax"></a>Sözdizimi  
+  
+```  
+__m128 _mm_cvtsi64x_ss(   
+   __m128 a,   
+   __int64 b   
+);  
+```  
+  
+#### <a name="parameters"></a>Parametreler  
+ [in]`a`  
+ Bir `__m128` dört tek duyarlıklı kayan nokta değerlerini içeren yapısı.  
+  
+ [in]`b`  
+ Kayan noktalı bir sayıyı dönüştürülecek bir 64-bit tamsayı.  
+  
+## <a name="return-value"></a>Dönüş Değeri  
+ Bir `__m128` yapısı ilk kayan nokta değeri olan dönüştürme işleminin sonucu. Diğer üç değerleri gelen değişmeden kopyalanır `a`.  
+  
+## <a name="requirements"></a>Gereksinimler  
+  
+|İç|Mimari|  
+|---------------|------------------|  
+|`_mm_cvtsi64x_ss`|x64|  
+  
+ **Üstbilgi dosyası** \<intrin.h >  
+  
+## <a name="remarks"></a>Açıklamalar  
+ `__m128` Yapısını temsil eden bir XMM kaydı, bu nedenle bu iç değeri verir `b` bir XMM taşınması için sistem belleğinden kaydedin.  
+  
+ Bu yordam yalnızca bir iç kullanılabilir.  
+  
+## <a name="example"></a>Örnek  
+  
+```  
+// _mm_cvtsi64x_ss.cpp  
+// processor: x64  
+  
+#include <intrin.h>  
+#include <stdio.h>  
+  
+#pragma intrinsic(_mm_cvtsi64x_ss)  
+  
+int main()  
+{  
+    __m128 a;  
+    __int64 b = 54;  
+  
+    a.m128_f32[0] = 0;  
+    a.m128_f32[1] = 0;  
+    a.m128_f32[2] = 0;  
+    a.m128_f32[3] = 0;  
+    a = _mm_cvtsi64x_ss(a, b);  
+  
+    printf_s( "%lf %lf %lf %lf\n",  
+              a.m128_f32[0], a.m128_f32[1],   
+              a.m128_f32[2], a.m128_f32[3] );  
+}  
+```  
+  
+```Output  
+54.000000 0.000000 0.000000 0.000000  
+```  
+  
+**SON Microsoft özel**  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [__m128](../cpp/m128.md)   
+ [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)

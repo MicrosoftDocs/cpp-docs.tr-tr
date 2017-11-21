@@ -1,0 +1,50 @@
+---
+title: "Öznitelikli Program derleme | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords:
+- tlb files
+- MIDL
+- MIDL, linker output
+- IDL files
+- tlb files, building attributed programs
+- .tlb files, building attributed programs
+- IDL files, building
+- attributes [C++], building type libraries and .idl files
+- .tlb files
+- .idl files, building
+- type libraries, linker options for building
+ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
+caps.latest.revision: "6"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: a757cbbb7bb9e080a9492ecabfd0542714cf2c7a
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="building-an-attributed-program"></a>Öznitelikli Program Derleme
+Visual C++ öznitelikleri kaynak kodunuz yerleştirdiğiniz sonra sizin için bir tür kitaplığı ve .idl dosya oluşturmak için Visual C++ Derleyici isteyebilirsiniz. Aşağıdaki bağlayıcı .tlb ve .idl dosyalarını derleme yardım seçenekleri:  
+  
+-   [/ IDLOUT](../build/reference/idlout-name-midl-output-files.md)  
+  
+-   [/ IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)  
+  
+-   [/ MIDL](../build/reference/midl-specify-midl-command-line-options.md)  
+  
+-   [/ TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)  
+  
+ Bazı projeleri birden çok bağımsız .idl dosyalarını içerir. Bunlar, iki veya daha fazla .tlb dosyaları üretmek ve isteğe bağlı olarak bunları kaynak bloğuna bağlamak için kullanılır. Bu senaryo, Visual C++'da şu anda desteklenmiyor.  
+  
+ Ayrıca, Visual C++ bağlayıcı tüm öznitelik IDL ilgili bilgileri tek bir MIDL dosyasına çıkarır. İki tür kitaplıklarının tek bir proje oluşturmak mümkün olacaktır.  
+  
+## <a name="see-also"></a>Ayrıca Bkz.  
+ [Kavramları](../windows/attributed-programming-concepts.md)
