@@ -1,0 +1,69 @@
+---
+title: "OLE DB Şablonları | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: cpp-windows
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vc.templates.ole
+dev_langs: C++
+helpviewer_keywords: OLE DB templates
+ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 2f584b28d24d941a4ad03a31582c661bafa09cc8
+ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.translationtype: MT
+ms.contentlocale: tr-TR
+ms.lasthandoff: 10/24/2017
+---
+# <a name="ole-db-templates"></a>OLE DB Şablonları
+OLE DB Şablonları OLE DB veri erişimi kolaylaştırır. Visual C++ birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan şablon sınıfları sağlar. OLE DB istemci (tüketici) uygulama yazmak için Visual C++ Tüketici Şablonları ve bir sunucu (sağlayıcı) uygulama yazmak için sağlayıcı şablonları kullanabilirsiniz.  
+  
+## <a name="in-this-section"></a>Bu Bölümde  
+ [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-reference.md)  
+ Kullanım listelenen OLE DB tüketici şablonu sınıfları bağlantılar sağlar.  
+  
+ [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-reference.md)  
+ Kullanım listelenen OLE DB sağlayıcı şablonu sınıfları bağlantılar sağlar.  
+  
+## <a name="related-sections"></a>İlgili Bölümler  
+ [OLE DB programlamaya genel bakış](../../data/oledb/ole-db-programming-overview.md)  
+ OLE DB nedir açıklar ve OLE DB evrensel veri erişimi açıklanır.  
+  
+ [OLE DB Programcının Başvurusu](https://msdn.microsoft.com/en-us/library/ms713643.aspx)  
+ OLE DB üzerinde Windows SDK Belgeleri bağlantılar sağlar.  
+  
+ [OLE DB Şablon örnekleri](../../visual-cpp-samples.md)  
+ OLE DB projelerinizde kullanmayı gösteren OLE DB Şablonları örnekleri için bağlantılar sağlar.  
+  
+ [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)  
+ OLE DB Tüketici Şablonları hakkında kavramsal öğeler açıklanır.  
+  
+ [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)  
+ OLE DB sağlayıcı şablonları hakkında kavramsal öğeler açıklanır.  
+  
+ [OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)  
+ OLE DB Şablonları tüketicisi ile veya olmadan ATL OLE DB Tüketici Sihirbazı oluşturma işlemini açıklar.  
+  
+ [Basit salt okunur sağlayıcı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)  
+ Bir çift dizeyi okuyan basit bir salt okunur sağlayıcıyı oluşturma işlemini açıklar.  
+  
+ [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)  
+ Veri deposuna yazabilirsiniz oluşturma sağlayıcılarını açıklar.  
+  
+ [OLE DB tüketici öznitelikleri](../../windows/ole-db-consumer-attributes.md)  
+ OLE DB Tüketici çalışan OLE DB tüketicileri oluşturmak için şablonlar temelinde kod eklemesine basitleştirilmiş bir arabirimini tartışmaktadır.  
+  
+ [Etkin Şablon kitaplığı (ATL) başvurusu](../../atl/atl-com-desktop-components.md)  
+ COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.  
+  
+ [Visual C++ kitaplıkları](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
+ Visual C++ ile ATL, MFC, OLE DB Şablonları, C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı dahil olmak üzere sağlanan çeşitli kitaplıklarına bağlantılar sağlar.  
+  
+ [Hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
+ Uygulama ya da saklı yordamlar mantık hataları düzeltmek için Visual Studio hata ayıklayıcısı kullanma için bağlantılar sağlar.
