@@ -1,3 +1,1 @@
----
----
 Visual C++ bileşen uzantıları
