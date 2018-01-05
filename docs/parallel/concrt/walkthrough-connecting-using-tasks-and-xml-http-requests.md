@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1f309673b5f0362657434bf3160d1062fdefe881
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5fef2e682f8e2036eb2919c20879c60e879ec845
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
 Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) arabirimleri bir web hizmeti için HTTP GET ve POST istekleri göndermek için görevleri ile birlikte bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte, diğer görevlerle oluşturur kod yazabilirsiniz. Örneğin, indirme görevinin görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal ettiğinizde indirme görev ayrıca yanıt verebilir.  
@@ -114,7 +115,7 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.mi
  ![Çalışan Windows mağazası uygulaması](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- [Eşzamanlılık Çalışma zamanı izlenecek yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)  
+ [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
@@ -123,4 +124,4 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.mi
  [Windows mağazası uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
  [Hızlı Başlangıç: XML HTTP istek (Ixmlhttprequest2) kullanarak bağlanma](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
  [task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)   
- [task_completion_event sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)
+ [task_completion_event Sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)

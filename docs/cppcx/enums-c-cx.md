@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d21a887c29b792b2857d0ee546dbc9722b60a264
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9cd7bcade139a07c87983a5687bd57de01f32e58
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enums-ccx"></a>Numaralandırmalar (C + +/ CX)
 C + +/ CX destekleyen `public enum class` standart C++ işlevdedir olan anahtar sözcük `scoped  enum`. Kullanarak bildirilmiş bir numaralandırıcı kullandığınızda `public enum class` anahtar sözcüğü, her bir numaralandırıcı değeri kapsam için numaralandırma tanıtıcısı kullanmalısınız.  

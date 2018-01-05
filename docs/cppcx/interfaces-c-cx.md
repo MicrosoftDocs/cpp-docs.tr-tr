@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 0d986077561357f1a2530f097dc4bfbc78f1413e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d858a940205ab47f1ee07f720a0f8aa1bcaaf42f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
 Ref sınıfı en çok bir somut temel sınıfı devralabilirsiniz karşın, herhangi bir sayıda arabirimi sınıflarını uygulayabilirsiniz. Arabirim sınıfı (veya arabirim yapı) kendisi devralır (gerektiren birden çok veya) arabirim sınıfları, kendi üye işlevleri aşırı yüklenebilir ve türü parametrelerine sahip olabilirsiniz.  

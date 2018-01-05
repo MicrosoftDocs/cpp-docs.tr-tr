@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9e95ae2929800729b4036136bd65254026be697e
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: bdcc02cf7c86b85684df0e8d8b7a1f0049ff7e25
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>İzlenecek yol: Oluşturun ve kendi dinamik bağlantı kitaplığı (C++) kullanın
 
@@ -409,7 +410,7 @@ Uygulamanızı dağıttığınızda, kullandığı DLL'leri dağıtmanız gereki
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)  
+[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)  
 [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)  
-[İzlenecek yol: Programınızı (C++) dağıtma](../ide/walkthrough-deploying-your-program-cpp.md)  
-[Visual Basic uygulamasından DLL işlevi çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)
+[İzlenecek Yol: Programınızı Dağıtma (C++)](../ide/walkthrough-deploying-your-program-cpp.md)  
+[Visual Basic Uygulamalarından DLL İşlevleri Çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)

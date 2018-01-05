@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: e4f3b0186d3a7d1aa30ea71f6d80abd5d614e255
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e122f84bff2b815a00e50950b90230a9d50907a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="partial-classes-ccx"></a>Kısmi sınıflar (C + +/ CX)
 Bir parçalı sınıf içinde değişiklik bir sınıf tanımı ve otomatik kod oluşturma yazılım bir bölümünü senaryoları destekleyen bir yapıdır — Örneğin, XAML Tasarımcısı — aynı sınıf kodunda da değiştiriyor. Kısmi bir sınıf kullanarak kodunuzu üzerine yazılmasını Tasarımcı engelleyebilir. Visual Studio Proje `partial` değiştiricisi oluşturulan dosya otomatik olarak uygulanır.  

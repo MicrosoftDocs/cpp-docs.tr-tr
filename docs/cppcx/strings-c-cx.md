@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 20b2cf3ac565bfd6bbda39825e55e4171781c737
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 66a08038825b2ca76a8d18e5103b5569feb51cb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strings-ccx"></a>Dizeler (C + +/ CX)
 Windows çalışma zamanı metinde temsil edilir C + +/ CX tarafından [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri geri ve İleri Windows çalışma zamanı sınıflarının yöntemleri için geçirdiğiniz veya uygulama ikili arabirimi (ABI) sınırından diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Tam özellikli string sınıfı olacak şekilde tasarlanmamış birkaç ortak dize işlemleri, ancak onun için yöntemleri sağlar. C++ modülünüzün standart C++ dize türleri gibi kullandığınız [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme için [Platform::String ^](../cppcx/platform-string-class.md) ortak bir bilgisayardan veya geçirmeden önce arabirim. Kolay ve verimli arasında dönüştürme yapma `wstring` veya `wchar_t*` ve `Platform::String`.  
@@ -28,7 +29,7 @@ Windows çalışma zamanı metinde temsil edilir C + +/ CX tarafından [Platform
 ## <a name="string-construction"></a>Dize oluşturma  
  Değeri bir `String` nesnesidir bir değişmez (salt okunur) dizisi `char16` (16 bit Unicode) karakter. Çünkü bir `String` nesnesidir değişmez, yeni bir dize sabit değeri için atamasının bir `String` değişkenini gerçekte özgün değiştirir `String` yeni bir nesne `String` nesne. Birleştirme işlemleri içerir özgün yok etme `String` nesne ve yeni bir nesne oluşturma.  
   
- **Değişmez değerler**  
+ **Değişmez Değerler**  
   
  A *karakterinden* tek tırnak işaretleri içine bir karakter ve bir *değişmez değer dize* çift tırnak içine alınmış bir karakter sırasıdır. Bir dize başlatmak için bir hazır değer kullanırsanız ^ değişken, derleyici varsayar değişmez değeri, oluşur `char16` karakter. Diğer bir deyişle, sabit 'L' dizesi değiştirici ile koyun veya sabit listesinde değişmez alın yok bir **_T()** veya **TEXT()** makrosu. Unicode C++ desteği hakkında daha fazla bilgi için bkz: [Unicode Programlama Özeti](../text/unicode-programming-summary.md).  
   
