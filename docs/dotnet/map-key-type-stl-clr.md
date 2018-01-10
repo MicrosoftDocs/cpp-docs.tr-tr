@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c5fc88f4af88e5bd95feb90f09f9538e842c59f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 285950f6d155acabee2c049afa2f8b8d38dcf2b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapkeytype-stlclr"></a>map::key_type (STL/CLR)
 Bir sıralama anahtarının türü.  
@@ -74,4 +77,4 @@ a b c
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)   
  [Map::mapped_type (STL/CLR)](../dotnet/map-mapped-type-stl-clr.md)   
- [Map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)
+ [map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21cb751c4ee4c261db1d6a4d5efda49a1445ade7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 51d501139d0610d670f7d646dc985a694a5b741c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.  
@@ -26,18 +27,18 @@ OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.
   
 |Yönergesi|Açıklama|  
 |---------------|-----------------|  
-|[Atomik](../../../parallel/openmp/reference/atomic.md)|Belirleyen bir bellek konumundan otomatik olarak güncelleştirilir.|  
-|[engelle](../../../parallel/openmp/reference/barrier.md)|Bir takım tüm iş parçacıkları eşitler; tüm iş parçacıklarının engel yürütme kadar tüm iş parçacıklarının engel duraklatın.|  
-|[Kritik](../../../parallel/openmp/reference/critical.md)|Aynı anda bir iş parçacığında, kod yalnızca yürütülür belirtir.|  
+|[atomic](../../../parallel/openmp/reference/atomic.md)|Belirleyen bir bellek konumundan otomatik olarak güncelleştirilir.|  
+|[barrier](../../../parallel/openmp/reference/barrier.md)|Bir takım tüm iş parçacıkları eşitler; tüm iş parçacıklarının engel yürütme kadar tüm iş parçacıklarının engel duraklatın.|  
+|[critical](../../../parallel/openmp/reference/critical.md)|Aynı anda bir iş parçacığında, kod yalnızca yürütülür belirtir.|  
 |[Temizleme](../../../parallel/openmp/reference/flush-openmp.md)|Tüm iş parçacıklarının tüm paylaşılan nesneler için bellek aynı görünümünü olduğunu belirtir.|  
-|[için](../../../parallel/openmp/reference/for-openmp.md)|Çalışmanın neden olan bir iş parçacıkları arasında bölünür için paralel bir bölge içinde döngü için.|  
-|[Ana](../../../parallel/openmp/reference/master.md)|Yalnızca ana threadshould bir bölümünü program yürütme belirtir.|  
+|[for](../../../parallel/openmp/reference/for-openmp.md)|Çalışmanın neden olan bir iş parçacıkları arasında bölünür için paralel bir bölge içinde döngü için.|  
+|[master](../../../parallel/openmp/reference/master.md)|Yalnızca ana threadshould bir bölümünü program yürütme belirtir.|  
 |[sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)|Döngü gibi sıralı bir döngü yürütülmesi için bu kodu bir parallelized altında belirtir.|  
-|[Paralel](../../../parallel/openmp/reference/parallel.md)|Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir paralel bölge tanımlar.|  
+|[parallel](../../../parallel/openmp/reference/parallel.md)|Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir paralel bölge tanımlar.|  
 |[bölümler](../../../parallel/openmp/reference/sections-openmp.md)|Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.|  
-|[tek](../../../parallel/openmp/reference/single.md)|Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde yürütülmesi gereken belirtmenize olanak sağlar.|  
+|[single](../../../parallel/openmp/reference/single.md)|Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde yürütülmesi gereken belirtmenize olanak sağlar.|  
 |[threadprivate](../../../parallel/openmp/reference/threadprivate.md)|Bir değişken için bir iş parçacığı özel olduğunu belirtir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OpenMP](../../../parallel/openmp/openmp-in-visual-cpp.md)   
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

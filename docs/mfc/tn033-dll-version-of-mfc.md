@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fb1fb4094e5a54f82aa6aeebffe576965838cf7e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ba51ca465bec2a6400106071fcba94d36ad100e2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC'nin DLL Sürümü
 Bu Not MFCxx.DLL kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.DLL paylaşılan nasıl açıklanmaktadır. Normal MFC DLL'leri hakkında daha fazla bilgi için bkz: [DLL'in bir parçası olarak MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md).  
@@ -475,5 +476,5 @@ extern "C" extern void WINAPI InitXxxDLL()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

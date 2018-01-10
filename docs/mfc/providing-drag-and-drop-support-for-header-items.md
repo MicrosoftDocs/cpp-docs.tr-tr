@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a6f9d305786fa54231deae3dcd65624ba39875e0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fd1ac2171a13610ee3aeabed12f5348089a57491
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="providing-drag-and-drop-support-for-header-items"></a>Üstbilgi Öğeleri için Sürükle ve Bırak Desteği Sağlama
 Üstbilgi öğeleri için sürükle ve bırak desteği sağlamak üzere belirtin `HDS_DRAGDROP` stili. Üstbilgi öğeleri için sürükle ve bırak desteği kullanıcı üstbilgi denetimi üstbilgi öğeleri yeniden sıralama olanağı sağlar. Üstbilgi öğesi kesilirse varsayılan davranışı sürüklenen üstbilgi öğesi yarı saydam Sürükle görüntüsünü ve yeni konumu görsel bir gösterge sağlar.  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/24/2017
 >  Liste denetimi katıştırılmış üstbilgi denetimindeki için sürükle ve bırak desteği sağlama, genişletilmiş stili bölümüne bakın. [liste denetim stillerini değiştirme](../mfc/changing-list-control-styles.md) konu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)
+ [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
 

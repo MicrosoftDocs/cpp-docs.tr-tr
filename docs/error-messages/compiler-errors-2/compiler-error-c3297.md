@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2190bb4f2fe5c6195221deebe5b24097b614691
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 718a86ec9acf71f66b092060b6032bd4ec94cfa9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3297"></a>Derleyici Hatası C3297
 'constraint_2': 'constraint_1' değer kısıtlaması olduğundan 'constraint_1' kısıtlama olarak kullanılamaz  

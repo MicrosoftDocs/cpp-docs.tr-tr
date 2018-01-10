@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 03c6edd3732caad4285848a1acd0176ae8e343ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 52f4491d26cfa56f48ed479b30daeafe9cc01adf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-3-c4622"></a>Derleyici Uyarısı (Düzey 3) C4622
 Hata ayıklama bilgileri üzerine biçimlendirilmiş nesne dosyası önceden derlenmiş üst bilgi oluşturulması sırasında: 'dosya'  

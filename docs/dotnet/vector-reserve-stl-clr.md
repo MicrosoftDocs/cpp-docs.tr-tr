@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e84ba7b9d59e1c15c2d01ecc7cc73eab9209c34
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2c8c5ac474cc2b94baedab64854fec3ca3e0a78a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorreserve-stlclr"></a>vector::reserve (STL/CLR)
 Kapsayıcı için en düşük büyüme kapasitesi sağlar.  
@@ -85,4 +88,4 @@ capacity() = 9, ok = True
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [Vector::Capacity (STL/CLR)](../dotnet/vector-capacity-stl-clr.md)   
- [Vector::resize (STL/CLR)](../dotnet/vector-resize-stl-clr.md)
+ [vector::resize (STL/CLR)](../dotnet/vector-resize-stl-clr.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 82795e3494267f953875136bb29c701c93dbc934
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f45f8f2f152cdbfee1ee1ca3c3acfdb93a249d7a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 Kullanıcı modu zamanlanabilir (UMS) iş parçacıklarının el için Kaynak Yöneticisi'ni eşzamanlılık çalışma zamanı istediği bir iş Zamanlayıcı bir soyutlamasını bir arabirim. Kaynak Yöneticisi bu arabirimi UMS iş parçacığı zamanlayıcılar ile iletişim kurmak için kullanır. `IUMSScheduler` Arabirimi devraldığı `IScheduler` arabirimi.  
@@ -77,4 +78,4 @@ virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
  [PolicyElementKey](concurrency-namespace-enums.md)   
  [Ischeduler yapısı](ischeduler-structure.md)   
  [Iumscompletionlist yapısı](iumscompletionlist-structure.md)   
- [Iresourcemanager yapısı](iresourcemanager-structure.md)
+ [IResourceManager Yapısı](iresourcemanager-structure.md)

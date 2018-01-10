@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1b8b675f6125ce6449dc1627e8ba1f375f87aade
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 344f413eb2325156996700b6975826600ab997f7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama
 Visual C++ ile yerleşik bir uygulamanın hata ayıklama sürümü test etmek için bir bilgisayarı hazırlamak için uygulamanın bağımlı Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri dağıtmak zorunda. DLL'leri dağıtılacak olan belirlemek için adımları [bir Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Genellikle, Visual C++ Kitaplık DLL'lerde hata ayıklama sürümleri "d"; bitiş adlara sahip Örneğin, msvcr100.dll hata ayıklama sürümü msvcr100d.dll olarak adlandırılır.  

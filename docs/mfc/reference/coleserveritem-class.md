@@ -85,11 +85,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f56f356de8cb85bb919469a189618220c0843f3d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd64d6a2cf4fe36e62f5c6599521780c4ee002ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coleserveritem-class"></a>COleServerItem sınıfı
 OLE öğeleri için sunucu arabirimi sağlar.  
@@ -305,7 +306,7 @@ COleDataSource* GetDataSource();
  Bir işaretçi `COleDataSource` dönüştürme biçimleri depolamak için kullanılan nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Operations veri aktarımı sırasında çeşitli biçimlerde verileri sunmak için sunucu uygulamanızı istiyorsanız, bu biçimleriyle kaydetmek `COleDataSource` bu işlev tarafından döndürülen nesne. Örneğin, sağlamak istiyorsanız, bir **CF_TEXT** OLE öğesi bir gösterimini Pano veya sürükle ve bırak işlemleri için biçimiyle kaydetmeniz `COleDataSource` nesne bu işlevi döndürür ve geçersizkılma** OnRenderXxxData** veri sağlamak için üye işlevi.  
+ Operations veri aktarımı sırasında çeşitli biçimlerde verileri sunmak için sunucu uygulamanızı istiyorsanız, bu biçimleriyle kaydetmek `COleDataSource` bu işlev tarafından döndürülen nesne. Örneğin, sağlamak istiyorsanız, bir **CF_TEXT** OLE öğesi bir gösterimini Pano veya sürükle ve bırak işlemleri için biçimiyle kaydetmeniz `COleDataSource` nesne bu işlevi döndürür ve geçersizkılma **OnRenderXxxData** veri sağlamak için üye işlevi.  
   
 ##  <a name="getdocument"></a>COleServerItem::GetDocument  
  Belgenin öğeyi içeren bir işaretçi almak için bu işlevini çağırın.  
@@ -898,4 +899,4 @@ void SetItemName(LPCTSTR lpszItemName);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleClientItem sınıfı](../../mfc/reference/coleclientitem-class.md)   
  [COleServerDoc sınıfı](../../mfc/reference/coleserverdoc-class.md)   
- [COleTemplateServer sınıfı](../../mfc/reference/coletemplateserver-class.md)
+ [COleTemplateServer Sınıfı](../../mfc/reference/coletemplateserver-class.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3bb16c84a03bddad1eeb7dd5cfc6c652857d83b7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4bbaec27948f061cb21eeb432446517d4f9a6b2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4256"></a>Derleyici Uyarısı (düzey 4) C4256
 'function': sanal tabanları ile sınıf için bir oluşturucuya sahip '...'; çağrıları Visual C++ eski sürümleriyle uyumlu olmayabilir  

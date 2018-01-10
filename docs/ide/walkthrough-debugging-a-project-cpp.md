@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ec7a363d3aa4601e33e44d15fbb3d667c3a87db4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6c9789a7deafacf09ad615f416a446da4eba8150
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>İzlenecek Yol: Proje Hatalarını Ayıklama (C++)
 Bu kılavuzda, projeyi test edildiğinde, keşfedilen sorunu düzeltmek üzere programı değiştirin.  
@@ -65,4 +66,4 @@ Bu kılavuzda, projeyi test edildiğinde, keşfedilen sorunu düzeltmek üzere p
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ programları oluşturma](../build/building-c-cpp-programs.md)
+ [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)

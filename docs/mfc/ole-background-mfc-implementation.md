@@ -25,11 +25,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 40cb73049d7dbb8722b456c3d41ec7538dabdab0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 530cc14135fd38e2177e00dc87974e96ffe24b6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-background-mfc-implementation"></a>OLE Arka Planı: MFC Uygulaması
 Boyutu ve karmaşıklığı ham OLE API nedeniyle, doğrudan OLE uygulamaları yazmak için çağırma çok zaman alabilir. OLE Microsoft Foundation Class Kitaplığı uyarlamasını tam özellikli, OLE özellikli uygulama yazmak için yapmanız gereken iş miktarını azaltmak için hedefidir.  
@@ -58,5 +59,5 @@ Boyutu ve karmaşıklığı ham OLE API nedeniyle, doğrudan OLE uygulamaları y
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE arka planı](../mfc/ole-background.md)   
- [OLE arka planı: Uygulama stratejileri](../mfc/ole-background-implementation-strategies.md)
+ [OLE Arka Planı: Uygulama Stratejileri](../mfc/ole-background-implementation-strategies.md)
 

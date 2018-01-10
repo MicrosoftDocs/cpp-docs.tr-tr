@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a517362ebb4d439394197234eaa51a5aef7f5940
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2531f84974626fcdb364df67b12f27d61e75a62a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
 Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uygulanmış [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetiminiz için yenileme yöntemi destekleyen önceden tanımlanmış üye işlevi içeriyor. Stok bu yöntem için gönderme harita giriş **DISP_STOCKFUNC_REFRESH**.  
@@ -66,5 +67,5 @@ Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uyg
  Bu satırı Refresh yöntemi belirli bir kimlik numarası atar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

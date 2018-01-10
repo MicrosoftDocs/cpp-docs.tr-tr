@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e60083aa67cc640dafb5c096b83d3097df04db1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e60235bb011cb130b06a51a498cd8b5b88a56232
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı programınızın yerel ayarları değiştirmek için destek sağlar. Bu konu, her iki kitaplıkları birden çok iş parçacıklı uygulamada yerel ayar işlevselliğini kullanırken ortaya çıkan sorunları açıklar.  
@@ -448,4 +449,4 @@ unsigned __stdcall RunThreadB(void *params)
  [Yerel ayar](../c-runtime-library/locale.md)   
  [\<clocale >](../standard-library/clocale.md)   
  [\<yerel ayar >](../standard-library/locale.md)   
- [Locale sınıfı](../standard-library/locale-class.md)
+ [locale Sınıfı](../standard-library/locale-class.md)

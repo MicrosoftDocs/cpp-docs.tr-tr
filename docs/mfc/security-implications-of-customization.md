@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 20cdc74d68f927d03df6c2945cfe184c4708bc6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b408b4595e95016323d2b43f1ed51fc6e2e6d244
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="security-implications-of-customization"></a>Özelleştirmenin Güvenlikle İlgili Etkileri
 Bu konu, olası bir güvenlik zayıflık MFC'de açıklar.  
@@ -40,5 +41,5 @@ Bu konu, olası bir güvenlik zayıflık MFC'de açıklar.
 -   Özelleştirmeleri, uygulamanızda da devre dışı bırakabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC için özelleştirme](../mfc/customization-for-mfc.md)
+ [MFC için Özelleştirme](../mfc/customization-for-mfc.md)
 

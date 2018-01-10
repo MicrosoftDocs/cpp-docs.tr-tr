@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ecc0257cf087a28c0186adaffb795f3e33253b2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 25521d75921b377730a7f9afac71f2a60c055216
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="turning-off-the-activate-when-visible-option"></a>Görünürken Etkinleştir Seçeneğini Kapatma
 Bir denetim iki temel durumlara sahiptir: etkin ve etkin değil. Geleneksel olarak, bu durumu denetimi bir pencere kaldı tarafından ayırt. Etkin bir denetim bir pencere vardı; Etkin olmayan denetimi belirtmiyor. Penceresiz etkinleştirme giriş, bu ayrım artık Evrensel değil, ancak birçok denetimleri için hala geçerlidir.  
@@ -34,5 +35,5 @@ Bir denetim iki temel durumlara sahiptir: etkin ve etkin değil. Geleneksel olar
  **OLEMISC_ACTIVATEWHENVISIBLE** bayrağı kapatılırsa otomatik olarak atlanmış **etkinleştirme görünürken** seçeneğini [denetim ayarlarını](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX sayfası Denetim oluşturduğunuzda Denetim Sihirbazı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md)
+ [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

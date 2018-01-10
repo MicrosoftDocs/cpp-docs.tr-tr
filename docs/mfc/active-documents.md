@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c535a6d0ecb2d38445f0c7c0629ea874cdb12e3f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 52f3165f69d47f63fc52ae01bbbd1947e7755a43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-documents"></a>Etkin Belgeler
 Etkin belgeler OLE bileşik belge teknolojisinin genişletir. Bu uzantılar, görünümler, böylece nesneleri kapsayıcılara işlev ve henüz kendi görüntüleme ve yazdırma işlevleri üzerinde denetimi korumak yöneten ek arabirimler biçiminde sağlanır. Bu işlem belgeleri yabancı çerçeveleri (örneğin, Microsoft Internet Explorer veya Microsoft Office Binder) hem de yerel çerçeveler (ürünün kendi görünüm bağlantı noktaları gibi) görüntülemek mümkün kılar.  
@@ -106,5 +107,5 @@ interface IOleDocumentView : IUnknown
  Bir görünüm nesnesi, bir komut hedefi de olabilir. Uygulama tarafından `IOleCommandTarget` bir görünüm kapsayıcının kullanıcı arabiriminde kaynaklanan komutları alabilir (gibi **yeni**, **açık**, **Kaydet**,  **Yazdırma** üzerinde **dosya** menü; ve **kopya**, **Yapıştır**, **geri** üzerinde **Düzenle** menüsü). Daha fazla bilgi için bkz: [ileti işleme ve komut hedefleri](../mfc/message-handling-and-command-targets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsaması](../mfc/active-document-containment.md)
+ [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
 

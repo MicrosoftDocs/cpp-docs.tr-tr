@@ -127,11 +127,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dda4a847f19d756d4d33372d91053a6fa78d9900
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ecde926a27fbf4fa74cabdec6ff4d54f7d89216
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 İşlevleri bir açılır iletişim kutusu bir ileti kutusu gibi ancak kullanıcıya ek bilgileri görüntüleyebilirsiniz. `CTaskDialog` Kullanıcıdan bilgi toplama işlevleri de içerir.  
@@ -1456,7 +1457,7 @@ HRESULT TaskDialogCallback(
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [İzlenecek yol: bir uygulamaya bir CTaskDialog ekleme](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)
+ [İzlenecek yol: Bir Uygulamaya CTaskDialog Ekleme](../../mfc/walkthrough-adding-a-ctaskdialog-to-an-application.md)
 
 
 

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f47be9bad6cf7c8ccafac5dc8ce3786f8ada0dfb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 766e1a6f48ecf3f64110e64d916c50d92c89345d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="global-constants-in-c"></a>C++'da Global Sabitler
 C++'da global sabitler statik bağlantı vardır. Bu C. farklı. Bir genel kullanmaya çalışırsa, birden çok dosyalarında c++ sabit bir çözümlenmemiş dış hata alıyorsunuz. Derleyici global sabitler çıkışı, değişken için ayrılmış alan kalmıyor iyileştirir.  
@@ -53,4 +54,4 @@ void test() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı araçları hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)
+ [Bağlayıcı Araçları Hatası LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md)

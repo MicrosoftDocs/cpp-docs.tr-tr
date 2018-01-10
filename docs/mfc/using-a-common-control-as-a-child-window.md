@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 116b844f9ecc270d31fe3731c38a63e64b2541fe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 475c769bf09c0693c04780712b85884ae7c48862
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-a-common-control-as-a-child-window"></a>Bir Ortak Denetimi Alt Pencere Olarak Kullanma
 Windows ortak denetimleri herhangi bir başka bir pencere alt pencere olarak kullanılabilir. Aşağıdaki yordam, bir ortak denetimi dinamik olarak oluşturabilir ve sonra çalışma açıklar.  
@@ -40,5 +41,5 @@ Windows ortak denetimleri herhangi bir başka bir pencere alt pencere olarak kul
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

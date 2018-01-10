@@ -29,11 +29,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: 2f15319ec5d35ef5bc6ebdf047f1ea0a963510e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c3acad50f9dec8e3384d0b811045f95843f40b92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 Bir sınıf kullanma `condition_variable_any` içeren bir olay için beklemeye `mutex` türü.  
@@ -213,7 +214,7 @@ return true;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [< condition_variable >](../standard-library/condition-variable.md)
+ [<condition_variable>](../standard-library/condition-variable.md)
 
 
 

@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 31dc9159c0f66b5c1482efebd482e049b5ef270a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 41a1bf9e7b162ecfe9724f22996f8883d95cce72
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma
 Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncSocket](../mfc/reference/casyncsocket-class.md). Bu sınıf Windows Sockets API çok düşük düzeyde yalıtır unutmayın. `CAsyncSocket`ayrıntılı ağ iletişimleri bilmeniz ancak ağ olayları bildirim için geri çağırmaları kolaylık istediğiniz programcıları tarafından kullanılır. Bu makalede, bu duymadığını, yalnızca temel yönergeler sağlar. Büyük olasılıkla kullanmayı düşünmelisiniz `CAsyncSocket` bir MFC uygulamasında birden çok ağ protokolleri postalarla Windows Sockets kolaylığı istiyor, ancak esneklik yöneticilerin taviz istiyor musunuz. Daha fazla iletişim kendiniz daha kullanarak doğrudan daha genel alternatif modeli sınıfının programlama tarafından daha iyi verimlilik elde edebilirsiniz ayrıca eşitleyerek `CSocket`.  
@@ -110,11 +111,11 @@ Bu makalede sınıfının nasıl kullanılacağını açıklanmaktadır [CAsyncS
   
  Daha fazla bilgi için bkz.:  
   
--   [Windows Yuvaları: arka plan](../mfc/windows-sockets-background.md)  
+-   [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)  
   
--   [Windows Yuvaları: Akış yuvaları](../mfc/windows-sockets-stream-sockets.md)  
+-   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
   
--   [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
+-   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 395666c2ae0e9f86ba76f88b0fcb245731bd9ab1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d74e8c7e35516468b935542199c8f1b4cbd3d7e1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rank-class"></a>rank Sınıfı
 Dizinin boyut sayısını alır.  
@@ -75,4 +76,4 @@ rank<int[5][10]> == 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [Extent sınıfı](../standard-library/extent-class.md)
+ [extent Sınıfı](../standard-library/extent-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a5d9fb768c4c1030a43094565aae5f88fdabf4eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f56321b71642f9d615c4d85fd66f878b19e44485
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.  
@@ -48,19 +51,19 @@ class FtmBase : public Microsoft::WRL::Implements<
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ftmbase::createglobalınterfacetable yöntemi](../windows/ftmbase-createglobalinterfacetable-method.md)|Genel arabirim tablosu (GIT) oluşturur.|  
-|[FtmBase::DisconnectObject yöntemi](../windows/ftmbase-disconnectobject-method.md)|Zorla nesneye tüm dış bağlantıları serbest bırakır. Nesnenin sunucu nesnenin uyarlamasını kapatmadan önce bu yöntemi çağırır.|  
-|[FtmBase::GetMarshalSizeMax yöntemi](../windows/ftmbase-getmarshalsizemax-method.md)|Belirtilen nesne üzerindeki belirtilen arabirim işaretçisi hazırlamak için gereken bayt sayısı üst sınırı öğrenin.|  
-|[FtmBase::GetUnmarshalClass yöntemi](../windows/ftmbase-getunmarshalclass-method.md)|COM için karşılık gelen proxy kodu içeren DLL bulmak için kullandığı CLSID alır. COM proxy başlatılmamış bir örneğini oluşturmak için bu DLL yükler.|  
-|[Ftmbase::marshalınterface yöntemi](../windows/ftmbase-marshalinterface-method.md)|Bazı istemci işleminde proxy nesneyi başlatmak için gerekli olan veriler bir akışa yazar.|  
-|[FtmBase::ReleaseMarshalData yöntemi](../windows/ftmbase-releasemarshaldata-method.md)|Bir sıralanmış veri paketi yok eder.|  
-|[Ftmbase::unmarshalınterface metodu](../windows/ftmbase-unmarshalinterface-method.md)|Yeni oluşturulan bir proxy başlatır ve proxy için bir arabirim işaretçisi döndürür.|  
+|[FtmBase::CreateGlobalInterfaceTable Metodu](../windows/ftmbase-createglobalinterfacetable-method.md)|Genel arabirim tablosu (GIT) oluşturur.|  
+|[FtmBase::DisconnectObject Metodu](../windows/ftmbase-disconnectobject-method.md)|Zorla nesneye tüm dış bağlantıları serbest bırakır. Nesnenin sunucu nesnenin uyarlamasını kapatmadan önce bu yöntemi çağırır.|  
+|[FtmBase::GetMarshalSizeMax Metodu](../windows/ftmbase-getmarshalsizemax-method.md)|Belirtilen nesne üzerindeki belirtilen arabirim işaretçisi hazırlamak için gereken bayt sayısı üst sınırı öğrenin.|  
+|[FtmBase::GetUnmarshalClass Metodu](../windows/ftmbase-getunmarshalclass-method.md)|COM için karşılık gelen proxy kodu içeren DLL bulmak için kullandığı CLSID alır. COM proxy başlatılmamış bir örneğini oluşturmak için bu DLL yükler.|  
+|[FtmBase::MarshalInterface Metodu](../windows/ftmbase-marshalinterface-method.md)|Bazı istemci işleminde proxy nesneyi başlatmak için gerekli olan veriler bir akışa yazar.|  
+|[FtmBase::ReleaseMarshalData Metodu](../windows/ftmbase-releasemarshaldata-method.md)|Bir sıralanmış veri paketi yok eder.|  
+|[FtmBase::UnmarshalInterface Metodu](../windows/ftmbase-unmarshalinterface-method.md)|Yeni oluşturulan bir proxy başlatır ve proxy için bir arabirim işaretçisi döndürür.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[FtmBase::marshaller_ veri üyesi](../windows/ftmbase-marshaller-data-member.md)|Ücretsiz iş parçacıklı Sıralayıcı başvuru tutar.|  
+|[FtmBase::marshaller_ Veri Üyesi](../windows/ftmbase-marshaller-data-member.md)|Ücretsiz iş parçacıklı Sıralayıcı başvuru tutar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `FtmBase`  
@@ -71,4 +74,4 @@ class FtmBase : public Microsoft::WRL::Implements<
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30023c9e994300b9dcdb09509e7d0c2218aa26f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b83c5e6541cbbdfe64b5f2b7731f7a77832f7293
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schedule"></a>zamanlama
 Uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  
@@ -164,4 +165,4 @@ int main( )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

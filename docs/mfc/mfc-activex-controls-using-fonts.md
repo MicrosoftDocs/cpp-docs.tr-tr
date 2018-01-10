@@ -30,11 +30,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae3c6586153403e3c82078d4f7559ae89767f40a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a788285aed8e8b7483e13c954ee193aca69d1100
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX Denetimleri: Yazı Tiplerini Kullanma
 ActiveX denetimi metin görüntülüyorsa, yazı tipi özelliğini değiştirerek metin görünümünü değiştirmek denetim kullanıcı izin verebilirsiniz. Yazı tipi özelliklerini yazı tipi nesneleri olarak uygulanır ve iki türden biri olabilir: stok veya özel. Stok yazı tipi özellikleri Özellik Ekleme Sihirbazı'nı kullanarak ekleyebilirsiniz preimplemented yazı tipi özelliklerdir. Özel yazı tipi özelliklerini değil preimplemented ve denetim Geliştirici özelliğin davranışı ve kullanım belirler.  
@@ -236,5 +237,5 @@ Birden çok yazı tipi nesnesi arabirimleri uygulama
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX denetimleri: ActiveX denetiminde resim kullanma](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)   
- [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+ [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 

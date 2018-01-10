@@ -43,11 +43,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8dc17ee63caf62ddeea4a134d61f8fbd47e0061c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1b765be1043ac69ed735eb91deaf9419bce7f017
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector Sınıfı
 `concurrent_vector` Sınıftır herhangi bir öğeye rasgele erişim sağlayan bir dizi kapsayıcı. Eşzamanlılık güvenli etkinleştirir ekleme, öğe erişim, yineleyici erişim ve yineleyici geçişi işlemleri.  
@@ -648,7 +649,7 @@ void swap(concurrent_vector& _Vector);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
+ [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 
 

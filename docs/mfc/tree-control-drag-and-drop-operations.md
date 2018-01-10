@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8dcfab9baf3a698da0880d9acd84a84c4580b53e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 978c577a01b2f574009c601ca594a235e0712d71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>Ağaç Denetimi Sürükle ve Bırak İşlemleri
 Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı bir öğeyi sürüklemek başlatıldığında bir bildirim gönderir. Denetim gönderir bir [TVN_BEGINDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773504) kullanıcı sol fare düğmesini bir öğesiyle sürükleyerek başladığında bildirim iletisi ve [TVN_BEGINRDRAG](http://msdn.microsoft.com/library/windows/desktop/bb773509) kullanıcı sürükleme başladığında bildirim iletisi Sağdaki düğme. Ağaç denetimi vererek bu bildirimleri gönderme ağaç denetimi engelleyebilirsiniz **TVS_DISABLEDRAGDROP** stili.  
@@ -36,5 +37,5 @@ Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanıcı b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

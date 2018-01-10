@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac169e7cc01682b8ecd0dc4fb5dd387f3be38504
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1ca427842245701c1d8dfbcef946ef1586acbf0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
 Bir zamanlama grubu için bir Özet temsil eder. Zamanlama grupları bir dizi ilgili iş geçici olarak, başka bir gruba geçmeden önce aynı gruptaki başka bir görev yürütme ya da dağınık şekilde, aynı aynı grubu içindeki birden çok öğe çalıştırarak birbirine yakın zamanlanma gelen o avantajları düzenleyin. NUMA düğümü veya fiziksel yuva.  

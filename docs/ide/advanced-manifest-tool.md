@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83f78603825cc8880063c8cfb4d750f6109c5d6c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c756da4ef7b89113ce26e7218011d708ff4c935c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 Gelişmiş seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
@@ -41,4 +42,4 @@ Gelişmiş seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.ex
  [\<Dosya > öğesi](/visualstudio/deployment/file-element-clickonce-application)   
  [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)   
  [Bildirim aracı özellik sayfaları](../ide/manifest-tool-property-pages.md)   
- [Proje özellikleriyle çalışma](../ide/working-with-project-properties.md)   
+ [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)   

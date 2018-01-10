@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a5cfb92693d0bc5d120e2c1bb46eceb4822fd0ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c6f3cf5f6ca0fc6168c061df2ec276f058abea51
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="istriviallycopyable-class"></a>is_trivially_copyable sınıfı
 Türü trivially copyable türü olup olmadığını sınar.  
@@ -46,7 +47,7 @@ struct is_trivially_copyable;
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 
 
 

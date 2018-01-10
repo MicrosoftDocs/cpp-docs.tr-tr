@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48395276acfac71cd940be307c3b5f0735c356ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01ee396a7866179bd140f203192d1bdcbfb4681e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="printing"></a>Yazdırma
 Microsoft Windows aygıt bağımsız görüntü uygular. MFC içinde aynı çizim çağrıları içinde buna `OnDraw` üye işlevi görünüm sınıfınızın çizim görüntüleme ve yazıcılar gibi diğer cihazları sorumlu. Baskı Önizleme için görüntülenecek benzetimli yazıcı çıktısından hedef aygıttır.  
@@ -65,5 +66,5 @@ Microsoft Windows aygıt bağımsız görüntü uygular. MFC içinde aynı çizi
 -   [Baskı Önizleme](../mfc/print-preview-architecture.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yazdırma ve Baskı Önizleme](../mfc/printing-and-print-preview.md)
+ [{1&gt;Yazdırma ve yazdırma önizleme&lt;1}](../mfc/printing-and-print-preview.md)
 

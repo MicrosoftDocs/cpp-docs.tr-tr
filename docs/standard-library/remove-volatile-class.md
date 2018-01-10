@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 04e4f764becaf897aa963b48ab9efc8487cf464d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f49f3086d310ca8c0a9722e7b8bf8b0434f1905
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="removevolatile-class"></a>remove_volatile Sınıfı
 Türden geçici olmayan tür yapar.  
@@ -72,4 +73,4 @@ remove_volatile_t<volatile int> == int
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [add_volatile sınıfı](../standard-library/add-volatile-class.md)
+ [add_volatile Sınıfı](../standard-library/add-volatile-class.md)

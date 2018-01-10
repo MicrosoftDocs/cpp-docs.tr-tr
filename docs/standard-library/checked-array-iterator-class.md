@@ -24,11 +24,12 @@ caps.latest.revision: "28"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fb39271a7df2471c1373e6b272bbf262f34375ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 97e0a5f9276d6ae9f4c5b4dea289227e59437525
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator Sınıfı
 `checked_array_iterator` Sınıfı bir dizi veya işaretçi denetlenen yineleyici dönüştürmenizi sağlar. Bu sınıf kapsayıcı olarak kullanın (kullanarak [make_checked_array_iterator](../standard-library/iterator-functions.md#make_checked_array_iterator) işlevi) ham işaretçileri veya denetimi sağlamak için ve genel olarak bu uyarılar silencing yerine denetlenmeyen işaretçi Uyarıları yönetmek için hedeflenen bir yöntem olarak diziler için. Gerekirse, bu sınıfın denetlenmeyen sürümü kullanabilirsiniz, [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).  
@@ -163,18 +164,18 @@ int main()
   
 |||  
 |-|-|  
-|[temel](#base)|Temel alınan yineleyici gelen kurtarır kendi `checked_array_iterator`.|  
+|[base](#base)|Temel alınan yineleyici gelen kurtarır kendi `checked_array_iterator`.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
 |[operator ==](#op_eq_eq)|İki testleri `checked_array_iterator`eşitliği s.|  
-|[operator! =](#op_neq)|İki testleri `checked_array_iterator`eşitsizlik açısından s.|  
+|[operator!=](#op_neq)|İki testleri `checked_array_iterator`eşitsizlik açısından s.|  
 |[operator <](#op_lt)|Varsa testleri `checked_array_iterator` işlecinin sol tarafında küçük `checked_array_iterator` sağ tarafında.|  
 |[operator >](#op_gt)|Varsa testleri `checked_array_iterator` işlecinin sol tarafında değerinden daha büyük `checked_array_iterator` sağ tarafında.|  
 |[operator < =](#op_lt_eq)|Varsa testleri `checked_array_iterator` işlecinin sol tarafında küçük veya buna eşit olduğundan `checked_array_iterator` sağ tarafında.|  
-|[operator > =](#op_gt_eq)|Varsa testleri `checked_array_iterator` işlecinin sol tarafında büyüktür veya şuna eşittir: `checked_array_iterator` sağ tarafında.|  
+|[operator>=](#op_gt_eq)|Varsa testleri `checked_array_iterator` işlecinin sol tarafında büyüktür veya şuna eşittir: `checked_array_iterator` sağ tarafında.|  
 |[işleç *](#op_star)|Öğesini döndüren bir `checked_array_iterator` adresleri.|  
 |[-> işleci](#operator-_gt)|Tarafından ele öğesine bir işaretçi döndüren `checked_array_iterator`.|  
 |[operator ++](#op_add_add)|Artışlarla `checked_array_iterator` sonraki öğeye.|  

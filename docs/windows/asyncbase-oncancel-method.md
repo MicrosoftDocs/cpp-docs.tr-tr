@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e46f673329697ef503dafcc6a3b683fa2224525a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 6dd20f90fa1ead9504a223dab2fe38f3bace0c3e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbaseoncancel-method"></a>AsyncBase::OnCancel Yöntemi
 Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem iptal eder.  
@@ -39,4 +42,4 @@ virtual void OnCancel(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [AsyncBase sınıfı](../windows/asyncbase-class.md)   
- [AsyncBase::Cancel yöntemi](../windows/asyncbase-cancel-method.md)
+ [AsyncBase::Cancel Metodu](../windows/asyncbase-cancel-method.md)

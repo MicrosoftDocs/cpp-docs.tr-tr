@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3a1909702f148855b127af937364d815123ac7b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 74b026f273eec0bc689cc6959890b07beb570893
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>Menüleri, Denetim Çubuklarını ve Hızlandırıcıları Yönetme
 Çerçeve penceresi menüleri, araç çubuğu düğmeleri, durum çubuğu ve Hızlandırıcıları dahil olmak üzere, kullanıcı arabirimi nesnelerini güncelleştirme yönetir. MDI uygulamaları menü çubuğunda paylaşımı yönetir.  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/24/2017
  Her çerçeve penceresi Hızlandırıcı çeviri sizin için otomatik olarak klavye bir isteğe bağlı Hızlandırıcı tablosu tutar. Bu mekanizma çağırma menü komutlarını Hızlandırıcı tuşları (kısayol tuşları olarak da bilinir) tanımlamak kolaylaştırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+ [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

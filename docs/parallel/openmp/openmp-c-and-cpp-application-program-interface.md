@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8d807d8e9b3ef7012ac574cf8bcccb152b2c5d26
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f89c2b2b3a71ac37ea7dfeeea777a2b576aaf069
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="openmp-c-and-c-application-program-interface"></a>OpenMP C ve C++ Uygulaması Program Arabirimi
 OpenMP C ve C++ API OpenMP mimarisi gözden geçirme Kurulunun sürüm 2.0 belirtiminden açıklandığı gibi açıklanır.  
@@ -30,4 +31,4 @@ OpenMP C ve C++ API OpenMP mimarisi gözden geçirme Kurulunun sürüm 2.0 belir
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OpenMP](../../parallel/openmp/openmp-in-visual-cpp.md)   
- [İçeriği](../../parallel/openmp/contents.md)
+ [İçindekiler](../../parallel/openmp/contents.md)

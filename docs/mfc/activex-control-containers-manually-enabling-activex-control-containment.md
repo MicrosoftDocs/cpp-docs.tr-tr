@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 625a4445aebcb03cce7068c216782326619e3c6b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bf1ba1273a349f685b70fec6706b566c2b618f23
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activex-control-containers-manually-enabling-activex-control-containment"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimi Kapsamasını El İle Etkinleştirme
 Uygulamanızı oluşturmak için MFC Uygulama Sihirbazı kullanıldığında ActiveX denetimi desteği etkinleştirmediyseniz Bu destek el ile eklemeniz gerekir. Bu makalede, varolan bir OLE kapsayıcı uygulamaya ActiveX denetimi kapsamasını el ile ekleme işlemi açıklanmaktadır. OLE kapsayıcı içinde ActiveX denetimi desteği istediğinizi önceden biliyorsanız makalesine bakın [bir MFC ActiveX denetimi kapsayıcısı oluşturma](../mfc/reference/creating-an-mfc-activex-control-container.md).  
@@ -43,5 +44,5 @@ Uygulamanızı oluşturmak için MFC Uygulama Sihirbazı kullanıldığında Act
  Bu adımları tamamladıktan sonra tıklayarak projenizi yeniden derleyin **yapı** üzerinde **yapı** menüsü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md)
+ [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

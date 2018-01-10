@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71d0060866b6a02de3c58ed40100dee59743749b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 387344160cf2009b19ad8de820eabc6063ae1f7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="drag-and-drop-customizing"></a>Sürükle ve Bırak: Özelleştirme
 Sürükle ve bırak özelliğinin varsayılan uygulama, çoğu uygulama için yeterlidir. Ancak, bazı uygulamalarda bu standart davranış değiştirilmesi gerekebilir. Bu makalede bu varsayılanları değiştirmek için gerekli adımları açıklanmaktadır. Ayrıca, bileşik belgeler açılan kaynakları olarak desteklemeyen uygulamalar oluşturmak için bu tekniği kullanabilirsiniz.  
@@ -43,4 +44,4 @@ Sürükle ve bırak özelliğinin varsayılan uygulama, çoğu uygulama için ye
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md)   
  [COleDropSource sınıfı](../mfc/reference/coledropsource-class.md)   
- [COleDataSource sınıfı](../mfc/reference/coledatasource-class.md)
+ [COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

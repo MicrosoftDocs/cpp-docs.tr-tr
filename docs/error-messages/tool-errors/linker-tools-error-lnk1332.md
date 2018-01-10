@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a1c755dd807d4cee3d3f51e0941690dada6e76e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ea5e817bcaf03f157079e16b544cba343c780f68
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk1332"></a>Bağlayıcı Araçları Hatası LNK1332
 Algılanan\<sayısı > Windows çalışma zamanı türleri içinde bir modülü içeri ve başka bir modülde tanımlanmış  
@@ -32,4 +33,4 @@ Algılanan\<sayısı > Windows çalışma zamanı türleri içinde bir modülü 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı araçları hatası LNK2039](../../error-messages/tool-errors/linker-tools-error-lnk2039.md)   
- [Bağlayıcı araçları hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)
+ [Bağlayıcı Araçları Hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

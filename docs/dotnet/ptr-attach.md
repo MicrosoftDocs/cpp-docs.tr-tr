@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a776a19d3b06fce5c7355ba512693d63e529d3b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d8e3a107bef12ca7f1bcd89098d35ed6a124775f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptrattach"></a>ptr::Attach
 Bir COM nesnesi ekler bir `com::ptr`.  
@@ -131,4 +134,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [PTR üyeleri](../dotnet/ptr-members.md)   
  [PTR::operator =](../dotnet/ptr-operator-assign.md)   
- [PTR::Release](../dotnet/ptr-release.md)
+ [ptr::Release](../dotnet/ptr-release.md)

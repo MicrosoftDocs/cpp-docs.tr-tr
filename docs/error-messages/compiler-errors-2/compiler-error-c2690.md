@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 11199ce6959a029a344fd292abfa8f4c32e5226f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a6425f1ba4e03a27066144ae4d6980dc5145b6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2690"></a>Derleyici Hatası C2690
 'işleci': yönetilen üzerinde aritmetik işaretçi veya WinRT dizi işlemi gerçekleştiremezsiniz.  

@@ -19,11 +19,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8a2820daea9508145a200fc5dfd82098ac2572b1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72cde17c0bcb6a3582305167e6358f761c16f248
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanında Özel Durum İşleme
 Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok türde iletişim kurmak için kullanır. Bu hataların çalışma zamanı, çalışma zamanı hataları gibi bir kaynak edinmeye hatası ve oluşan hataları kullanımı geçersiz iş görevleri ve görev grupları sağlayan işlevler dahil edin. Bir görevi veya görev grubu bir özel durum oluşturduğunda, çalışma zamanı bu özel durum tutar ve görev veya sonlandırmak için görev grubu için bekler bağlamını sıralar. Basit görevler ve aracılar gibi bileşenleri için çalışma zamanı özel durumları, yönetmez. Bu durumda, kendi özel durum işleme mekanizması uygulamalıdır. Bu konuda, çalışma zamanı görevler, görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işler ve nasıl özel durumlar uygulamalarınızda yanıt açıklanmaktadır.  
@@ -53,11 +54,11 @@ Eşzamanlılık Çalışma zamanı C++ özel durum işleme hataları birçok tü
   
 - [Birden çok özel durumlar](#multiple)  
   
-- [İptal etme](#cancellation)  
+- [İptal](#cancellation)  
   
-- [Basit görevler](#lwts)  
+- [Basit Görevler](#lwts)  
   
-- [Zaman uyumsuz aracılar](#agents)  
+- [Zaman Uyumsuz Aracılar](#agents)  
   
 ##  <a name="tasks"></a>Görevler ve devamlılıklar  
  Bu bölümde nasıl Çalışma Zamanı Modülü tarafından oluşturulan özel durumları işler açıklanmaktadır [concurrency::task](../../parallel/concrt/reference/task-class.md) nesneler ve onların devamlılıklar. Görev ve devamlılık modeli hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
@@ -198,5 +199,5 @@ the status of the agent is: done
  [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)   
  [PPL'de iptal](cancellation-in-the-ppl.md)   
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)
+ [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
 

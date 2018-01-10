@@ -17,11 +17,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8521849ab71f05b10dc8d3b861c93ba71b552eb4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 4d5198dcb3581fee460c2005ecc7f544e93a448c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-a-resource-script-file"></a>Nasıl Yapılır: Kaynak Betik Dosyası Oluşturma
 > [!NOTE]
@@ -53,4 +56,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

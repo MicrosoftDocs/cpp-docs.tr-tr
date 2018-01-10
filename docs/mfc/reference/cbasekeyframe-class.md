@@ -33,11 +33,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae23fabc33d744265677e395310ba1f14dcb64ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dba8ba22325d3ea9e68411f0372cfac4d6b0659d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame sınıfı
 Bir ana kare temel işlevlerini uygular.  
@@ -174,4 +175,4 @@ UI_ANIMATION_KEYFRAME m_keyframe;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

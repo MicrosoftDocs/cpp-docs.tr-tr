@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 10254dbfe4f8db61aebfaa934d86adee36b64c83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c485bba4d62d279b0f17b887080284940a8bbdd5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="do-i-have-to-derive-new-classes-from-cobject"></a>CObject'ten Yeni Sınıflar Türetmem Gerekiyor mu?
 Hayır, yok.  
@@ -29,4 +30,4 @@ Hayır, yok.
  Öğesinden bir sınıf türetin [CObject](../mfc/reference/cobject-class.md) sağladığı seri hale getirme veya dinamik creatability gibi özellikleri gerektiğinde. Birçok veri sınıfları genellikle aktarımlar için iyi bir fikir nedenle dosyalara, seri hale gerek `CObject`. Türetilmiş bir sınıf örneği için `CObject`, bkz: [karalama örnek](../visual-cpp-samples.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject sınıfı: Sık sorulan sorular](../mfc/cobject-class-frequently-asked-questions.md)
+ [CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)

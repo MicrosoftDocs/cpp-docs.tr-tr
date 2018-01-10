@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac868b33e8a53778faa3fba9724974e4af6ffb90
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e4f73b3cb418204008fda9962cf67797c8182f4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="2722-firstprivate"></a>2.7.2.2 firstprivate
 **Firstprivate** yan tümcesi tarafından sağlanan işlevleri bir alt kümesi sağlar **özel** yan tümcesi. Söz dizimi **firstprivate** yan tümcesi aşağıdaki gibidir:  

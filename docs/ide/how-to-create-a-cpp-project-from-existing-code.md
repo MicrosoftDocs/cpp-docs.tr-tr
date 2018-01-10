@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae75f8b831af1a2eb58529c09273a6e61cc58223
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d6781709c105c606f6ceb856654525385738c1ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-a-c-project-from-existing-code"></a>Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma
 
@@ -45,4 +46,4 @@ Varolan kod dosyalarınızın bir Visual C++ projeye bağlantı noktası oluştu
 [Proje belirtin konumunu ve kaynak dosyaları, yeni proje varolan kod dosyalarından Oluşturma Sihirbazı](../ide/specify-project-location-and-source-files.md)   
 [Proje ayarlarını belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md)   
 [Yapılandırma ayarlarında hata ayıklamayı belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-debug-configuration-settings.md)   
-[Yayın yapılandırma ayarlarını belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-release-configuration.md)
+[Yayın Yapılandırma Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-release-configuration.md)

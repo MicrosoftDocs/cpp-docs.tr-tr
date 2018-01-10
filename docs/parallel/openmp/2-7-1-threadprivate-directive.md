@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 75214320f40ad60940ff4713dc80b8d3111378c0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 22bb7f477be397f01ee4bd82f472ff26a26ce811
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="271-threadprivate-directive"></a>2.7.1 threadprivate Yönergesi
 `threadprivate` Yönergesi yapar adlandırılmış dosya kapsamı, ad alanı kapsamı veya statik blok kapsamı değişkenleri belirtilen *değişken listesi* özel bir iş parçacığı için. *değişken listesi* tamamlanmamış bir türleri olmadığı değişkenleri virgülle ayrılmış listesi. Söz dizimi `threadprivate` yönergesi aşağıdaki gibidir:  

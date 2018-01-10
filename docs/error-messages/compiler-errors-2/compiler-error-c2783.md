@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1fff9803fa54d1ea18d0ada78c816067731e8c41
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 86f8c8aff0974cc1908c38bd8b44b26af4812278
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2783"></a>Derleyici Hatası C2783
 'bildirimi': 'tanımlayıcısı' için şablon bağımsız değişken türetme değil  

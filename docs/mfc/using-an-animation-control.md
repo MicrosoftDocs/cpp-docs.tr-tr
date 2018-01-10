@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d06770c13a3150bc291baa296aec225b9ab28e5a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 38523c832f4a30f247bd3e1d0b8318f44f5c47b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-an-animation-control"></a>Animasyon Denetimi Kullanma
 Animasyon denetimi tipik kullanımını deseni izler:  
@@ -40,5 +41,5 @@ Animasyon denetimi tipik kullanımını deseni izler:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAnimateCtrl kullanma](../mfc/using-canimatectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

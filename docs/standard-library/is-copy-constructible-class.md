@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6b5e3a6d40ff0f8ac000714606a1fbbd3c7d2a21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7637ee69712e38a762af7c855685a6b07e12798f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iscopyconstructible-class"></a>is_copy_constructible sınıfı
 Kopya Oluşturucu türündeyse testleri.  
@@ -79,5 +80,5 @@ is_copy_constructible<NotCopyable > == false
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e937962fc71b0767dce94614f0505c2d30e915bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 142d88489748f30308395d64f3db78178a9b856f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk1245"></a>Bağlayıcı Araçları Hatası LNK1245
 Geçersiz alt sistemi 'alt sistemi belirtilen;' / SUBSYSTEM WINDOWS, WINDOWSCE veya KONSOL olmalıdır  

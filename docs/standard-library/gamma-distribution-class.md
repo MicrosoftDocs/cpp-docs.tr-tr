@@ -37,11 +37,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8c02ce03349ba24a2550f91d34b05e361d38c0ec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cfbaa595c16f6ac3b58d92ff45b7b0335a985a8b
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="gammadistribution-class"></a>gamma_distribution Sınıfı
 Gama dağıtım oluşturur.  
@@ -101,7 +102,7 @@ Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağ�
   
 Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
   
-Wolfram MathWorld makaleyi gama dağıtımı hakkında ayrıntılı bilgi için bkz [gama dağıtım](http://go.microsoft.com/fwlink/LinkId=401111).  
+Wolfram MathWorld makaleyi gama dağıtımı hakkında ayrıntılı bilgi için bkz [gama dağıtım](http://go.microsoft.com/fwlink/p/?linkid=401111).  
   
 ## <a name="example"></a>Örnek  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e09ebafbeb0d4aa1357ff9dc6e378ff4058d772a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fcfcb2e4fe333db1ed629489b405255d4ab050b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Bir Zengin Düzenleme Denetiminden Bildirim
 Bildirim iletileri bir zengin etkileyen olayları düzenleme denetimi raporu ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). İleti yansıması kullanarak tarafından zengin düzenleme denetiminden kendisini veya üst pencere tarafından işlenebilir. Zengin düzenleme denetimlerinde birkaç ek olanları yanı sıra düzenleme denetimleri ile kullanılan bildirim iletilerinin desteklemez. Bildirim iletileri bir zengin düzenleme denetimine kendi üst penceresi "olay maskesini." ayarlayarak gönderir belirleme  
@@ -41,5 +42,5 @@ Bildirim iletileri bir zengin etkileyen olayları düzenleme denetimi raporu ([C
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

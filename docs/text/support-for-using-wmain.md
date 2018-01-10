@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 1a8956ec3b17892e5507e4c70c602a2a5b430566
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 721915ca5ebbc75b17771dae0804e94aa360177c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="support-for-using-wmain"></a>wmain Kullanma Desteği
 Visual C++ destekler tanımlayan bir **wmain** işlevi ve Unicode uygulamanıza joker karakter bağımsız değişkenleri geçirme. Biçimsel parametresi bildirme **wmain**, benzer bir biçimde kullanarak **ana**. Ardından, joker karakter bağımsız değişkenlerini ve isteğe bağlı olarak bir joker karakter ortamı işaretçisi program geçirebilirsiniz. `argv` Ve `envp` parametreleri **wmain** türü `wchar_t*`. Örneğin:  

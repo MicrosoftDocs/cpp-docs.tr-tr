@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71e912d5043c1b908d875dca50af12e38fd05f64
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3fa6b42dd4e00f3b5314806933d06b3c1534b4d7
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="using-c-amp-in-windows-store-apps"></a>Windows Mağazası Uygulamalarında C++ AMP Kullanma
 C++ AMP (C++ hızlandırılmış yoğun paralellik) kullanabileceğiniz, [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] (grafik işlem birimi) GPU veya diğer hesaplama Hızlandırıcıları hesaplamalar için uygulama. Ancak, C++ AMP API'lerini doğrudan Windows çalışma zamanı türleri ile çalışmak için sağlamaz ve Windows çalışma zamanı C++ AMP için sarmalayıcı sağlamaz. Windows çalışma zamanı türleri kodunuzda kullandığınızda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlerine dönüştürmeniz gerekir.  
@@ -119,8 +120,8 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ kullanarak ilk Windows mağazası uygulamanızı oluşturma](http://go.microsoft.com/fwlink/p/linkid=249073)   
- [C++'ta Windows çalışma zamanı bileşenleri oluşturma](http://go.microsoft.com/fwlink/p/linkid=249076)
+ [C++ kullanarak ilk Windows mağazası uygulamanızı oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249073)   
+ [C++'ta Windows çalışma zamanı bileşenleri oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249076)
 
 
 

@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5f6b0d984559c82fb283bfb563c3309936ede9b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 721cd51a268a487e9fe18f988e98bfcf5e9d714b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackgetcontainer-stlclr"></a>stack::get_container (STL/CLR)
 Temel alınan kapsayıcı erişir.  
@@ -69,4 +72,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [Stack::container_type (STL/CLR)](../dotnet/stack-container-type-stl-clr.md)
+ [stack::container_type (STL/CLR)](../dotnet/stack-container-type-stl-clr.md)

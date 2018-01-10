@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e0a5e8402f396c78ff02cbf5798c638f7b8b7d4f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ca52bcc3846971af1811551411199785c3d4e102
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="-overridables-comment"></a>// Geçersiz Kılınabilen Öğelerle İlgili Açıklama
 `// Overridables` Bir MFC sınıf bildirimi bölümü temel sınıf davranışını değiştirmek gerektiğinde, türetilen bir sınıfta geçersiz kılabilirsiniz sanal işlevler içerir. Kesinlikle gerekli olmasa da bunlar genellikle "ile", başlangıç olarak adlandırılır. Burada işlevleri geçersiz kılınması, genellikle uygulamak veya "geri çağırma" veya "bağlayın." çeşit sağlamak için tasarlanmıştır Genellikle, bu üyeler korunur.  

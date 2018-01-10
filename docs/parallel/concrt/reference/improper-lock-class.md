@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2da7827afe8bed49c514eda10ce16c16b434c9f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 876023cbc559364a51f7c0774b7b5d04a11a65d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="improperlock-class"></a>improper_lock Sınıfı
 Bu sınıf bir kilit yanlış alındığında bir özel durum açıklar.  
@@ -71,4 +72,4 @@ improper_lock() throw();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [critical_section sınıfı](critical-section-class.md)   
- [reader_writer_lock sınıfı](reader-writer-lock-class.md)
+ [reader_writer_lock Sınıfı](reader-writer-lock-class.md)

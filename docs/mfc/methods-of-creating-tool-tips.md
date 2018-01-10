@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aed7972e361ceb4da3db2bf68020e49b78a752e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c2d38bd76ff5c8d06daf474cf1c1dcc0286183bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="methods-of-creating-tool-tips"></a>Araç İpuçları Oluşturma Yöntemleri
 MFC sağlar oluşturmak ve Aracı'nı yönetmek için üç sınıfları ipucu denetimi: [CWnd](../mfc/reference/cwnd-class.md), [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md), [CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md) ve [CMFCToolTipCtrl](../mfc/reference/cmfctooltipctrl-class.md). Araç İpucu üye işlevleri bu sınıfların Windows ortak denetim API'si sarılır. Sınıf `CToolBarCtrl` ve sınıf `CToolTipCtrl` sınıfından türetilen `CWnd`.  
@@ -34,5 +35,5 @@ MFC sağlar oluşturmak ve Aracı'nı yönetmek için üç sınıfları ipucu de
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolTipCtrl kullanma](../mfc/using-ctooltipctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

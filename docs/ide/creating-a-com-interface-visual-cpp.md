@@ -15,26 +15,27 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 260d56fa4a6944c7cf3a9971e3627d8b24936786
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7b5820686c3e6f01c37cbf527d0e631e5bcc25c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM Arabirimi Oluşturma (Visual C++)
 Visual C++ sihirbazları ve şablonları kullanan COM tanımlama arabirimleri ve dispinterfaces COM nesneleri ve Otomasyon sınıfları için proje oluşturmak için sağlar.  
   
  Bu sihirbaz, aşağıdaki üç ortak görevleri gerçekleştirmek için kullanabilirsiniz:  
   
--   [MFC projenize ATL desteği ekleme](../mfc/reference/adding-atl-support-to-your-mfc-project.md)  
+-   [MFC Projenize ATL Desteği Ekleme](../mfc/reference/adding-atl-support-to-your-mfc-project.md)  
   
      Kullanarak bir MFC projesi oluşturduktan sonra MFC Uygulama ATL desteği ekleme [MFC Uygulama Sihirbazı'nı](../mfc/reference/mfc-application-wizard.md) ve daha sonra çalıştırmayı **MFC ATL desteği ekleme** kod Sihirbazı. Bu destek eklenmiş bir MFC yürütülebilir veya DLL projesi yalnızca basit COM nesnelerine uygulanır. Bu ATL nesneleri birden çok arabirimlere sahip olabilir.  
   
--   [MFC ActiveX denetimi oluşturma](../mfc/reference/creating-an-mfc-activex-control.md)  
+-   [MFC ActiveX Denetimi Oluşturma](../mfc/reference/creating-an-mfc-activex-control.md)  
   
      Açık [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md) bir görüntüleme arabirimi ve sırasıyla .idl dosya ve denetim sınıfı içinde tanımlanan bir olay eşlemesi ile bir ActiveX denetimi oluşturulamıyor.  
   
--   [ATL denetim ekleme](../atl/reference/adding-an-atl-control.md)  
+-   [ATL Denetimi Ekleme](../atl/reference/adding-an-atl-control.md)  
   
      Bir birleşimini kullanmak [ATL Proje Sihirbazı](../atl/reference/atl-project-wizard.md) ve [ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md) ATL ActiveX denetimi oluşturulamıyor.  
   
@@ -44,13 +45,13 @@ Visual C++ sihirbazları ve şablonları kullanan COM tanımlama arabirimleri ve
   
  ATL projesinde açın, sonra [sınıfı Ekle](../ide/add-class-dialog-box.md) iletişim kutusunda, ek sihirbazlar ve şablonlar COM arabirimleri projenize eklemek için seçimi verir. Aşağıdaki sihirbazlar için bir veya daha fazla arayüzleri kurmanızı izin ver:  
   
--   [ATL COM + 1.0 Bileşen Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)  
+-   [ATL COM+ 1.0 Bileşeni Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)  
   
 -   [ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)  
   
--   [ATL Active Server sayfası Bileşen Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)  
+-   [ATL Active Server Page Bileşeni Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)  
   
--   [ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md)  
+-   [ATL Denetimi Sihirbazı](../atl/reference/atl-control-wizard.md)  
   
  Ayrıca, nesnenin control sınıfı Sınıf Görünümü'nde sağ tıklatıp, COM denetimi yeni arabirimleri uygulayabileceğiniz [arabirimini uygulayan](../ide/implement-interface-wizard.md).  
   

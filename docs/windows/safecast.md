@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 24b1d0c99ebc4ea543ef9d3fd1bc269d4874f706
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 4c3c9bb208cc2be2f91d8a464787d3299cd0b386
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safecast"></a>SafeCast
 Başka bir tür sayıya bir tür çevirir.  
@@ -60,4 +63,4 @@ inline bool SafeCast (
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SafeInt işlevleri](../windows/safeint-functions.md)   
  [SafeInt Kitaplığı](../windows/safeint-library.md)   
- [SafeInt sınıfı](../windows/safeint-class.md)
+ [SafeInt Sınıfı](../windows/safeint-class.md)

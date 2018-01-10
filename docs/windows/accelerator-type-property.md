@@ -16,11 +16,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ef1788f451597cdc8d3b512f5eede3c3d5abb382
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 214d8ca9c45a3657215833764268794b152bd337
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="accelerator-type-property"></a>Hızlandırıcı Türü Özelliği
 Hızlandırıcı **türü** özelliği Hızlandırıcı Kimliğiyle ilişkilendirilmiş kısayol tuş bileşimini sanal bir tuş bileşimini veya ASCII/ANSI anahtar değeri olup olmadığını belirler:  

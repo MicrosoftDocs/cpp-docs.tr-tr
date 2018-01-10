@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 42912e047279e3da30f84d1ef3560c36143e6964
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b7986da0ae1906293e2d107b382e4ee4e41212ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="containers"></a>Kapsayıcılar
 Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğeleri içeren bir uygulamadır. Bir kapsayıcı uygulama tarafından yönetilen belgeleri depolamak ve OLE bileşik belge bileşenlerini ve bunun yanı sıra uygulama tarafından oluşturulan veri görüntüler kurabilmesi gerekir. Bir kapsayıcı uygulama aynı zamanda yeni öğeler eklemek veya var olan öğeleri düzenlemek kullanıcılara izin vermesi gerekir.  
@@ -43,5 +44,5 @@ Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğ
  [OLE](../mfc/ole-in-mfc.md)   
  [Sunucuları](../mfc/servers.md)   
  [Etkinleştirme](../mfc/activation-cpp.md)   
- [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+ [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
 

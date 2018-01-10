@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 96cbb565ffae20d449b2164280fa461b2acfd4fd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d2fdabb971ab9aad06f5500b98e9d8591266c85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı'nın bu sayfasında, sağlayın veya belge yönetimi ve yerelleştirme yardımcı olması için aşağıdaki seçeneklerden daraltın. Belge şablonu dizeleri içeren uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md). İletişim kutuları için kullanılamaz. Çoğu belge şablonu dizeleri görünür ve uygulamanın kullanıcılar tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiştir **kaynak dili** belirtilen **uygulama türü** Sihirbazı sayfası.  

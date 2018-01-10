@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 47355ea2c7db35b32c69e91bf8445efe7671ccce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8cc676407a88979679a362b3d36f361614524432
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) sınıfları cihaz veya öykünücü C++ AMP kodunuzu çalıştırmak için belirtin. Bir sistem birkaç aygıtları veya bellek, paylaşılan bellek desteğini, hata ayıklama desteği veya çift duyarlıklı destek miktarına göre farklılık Öykünücüler olabilir. C++ hızlandırılmış yoğun paralellik (C++ AMP) kullanılabilir Hızlandırıcıları inceleyin, varsayılan olarak ayarlayın, birden çok çağrılar parallel_for_each için birden çok accelerator_views belirtin ve özel hata ayıklama görevleri gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  
@@ -175,12 +176,12 @@ bool pick_accelerator()
   
 - [Accelerator::direct3d_warp veri üyesi](reference/accelerator-class.md#direct3d_warp): Bu Hızlandırıcı Streaming SIMD Uzantıları (SSE) kullanan çok çekirdekli CPU C++ AMP kod yürütmek için bir geri dönüş çözümü sağlar.  
   
-- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): diziler hazırlama yukarı ayarlamak için bu Hızlandırıcı kullanabilirsiniz. C++ AMP kod yürütülemiyor. Daha fazla bilgi için bkz: [C++ AMP hazırlama dizilerde](http://go.microsoft.com/fwlink/p/LinkId=248485) sonrası paralel programlama yerel kod günlüğündeki.  
+- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): diziler hazırlama yukarı ayarlamak için bu Hızlandırıcı kullanabilirsiniz. C++ AMP kod yürütülemiyor. Daha fazla bilgi için bkz: [C++ AMP hazırlama dizilerde](http://go.microsoft.com/fwlink/p/?linkId=248485) sonrası paralel programlama yerel kod günlüğündeki.  
   
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik  
- C++ AMP çalışma zamanı arasında birlikte çalışabilirlik destekleyen `accelerator_view` sınıfı ve Direct3D [ID3D11Device arabirimi](http://go.microsoft.com/fwlink/p/LinkId=248488). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) metodu bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesnesi. [Get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) metodu bir `accelerator_view` nesne ve döndürür bir `IUknown` arabirimi.  
+ C++ AMP çalışma zamanı arasında birlikte çalışabilirlik destekleyen `accelerator_view` sınıfı ve Direct3D [ID3D11Device arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248488). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) metodu bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesnesi. [Get_device](http://msdn.microsoft.com/en-us/8194125e-8396-4d62-aa8a-65831dea8439) metodu bir `accelerator_view` nesne ve döndürür bir `IUknown` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
  [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code)   
- [accelerator_view sınıfı](../../parallel/amp/reference/accelerator-view-class.md)
+ [accelerator_view Sınıfı](../../parallel/amp/reference/accelerator-view-class.md)

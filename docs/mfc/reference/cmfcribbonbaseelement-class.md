@@ -243,11 +243,12 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9337c6dd384213d086bad2138ba7d426b0b305f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 93db9b8d8c56a23254972af29c7381e368766381
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 `CMFCRibbonBaseElement` Sınıftır ekleyebileceğiniz tüm öğeleri için temel sınıfı bir [Şerit çubuğu](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğeleri örnekler Şerit düğmeleri, Şerit onay kutularını ve Şerit birleşik giriş kutuları.  
@@ -1994,4 +1995,4 @@ virtual BOOL HasFocus() const;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

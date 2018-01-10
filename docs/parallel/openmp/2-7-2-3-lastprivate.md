@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d4b6c904766699c2cccdd129f32461a5d612113d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5caf9d870dce301c6055dcb55418b3dbbc3e741f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="2723-lastprivate"></a>2.7.2.3 lastprivate
 `lastprivate` Yan tümcesi tarafından sağlanan işlevleri bir alt kümesi sağlar `private` yan tümcesi. Söz dizimi `lastprivate` yan tümcesi aşağıdaki gibidir:  

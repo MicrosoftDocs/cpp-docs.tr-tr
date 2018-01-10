@@ -39,11 +39,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e88736c6255118141d49fbd85134fffbeaeba6db
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5f85a1e6992e8d679401f4e0f97080efcf991446
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coledataobject-class"></a>COleDataObject sınıfı
 Veri aktarımları ile sürükle ve bırak, Pano veya katıştırılmış OLE öğeyi çeşitli biçimlerde verileri almak için kullanılır.  
@@ -314,4 +315,4 @@ void Release();
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleDataSource sınıfı](../../mfc/reference/coledatasource-class.md)   
  [COleClientItem sınıfı](../../mfc/reference/coleclientitem-class.md)   
- [COleServerItem sınıfı](../../mfc/reference/coleserveritem-class.md)
+ [COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)

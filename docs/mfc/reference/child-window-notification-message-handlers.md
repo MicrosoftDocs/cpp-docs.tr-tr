@@ -20,22 +20,23 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad91fe5a9f2afc89b642be642bf14eaed13e3009
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f56f02bd845efdeb59a2b68604098c637ccd45c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="child-window-notification-message-handlers"></a>Alt Pencere Bildirim İletisi İşleyicileri
 Alt pencere bildirim iletileri beş kategoriye ayrılır:  
   
 |Kategori|Açıklama|  
 |--------------|-----------------|  
-|[Genel Denetim işleyicisi](../../mfc/reference/generic-control-handler.md)|Genel Denetim bildirim kodları için işleyici.|  
-|[Kullanıcı düğmesi işleyicileri](../../mfc/reference/user-button-handlers.md)|Kullanıcı düğmesi bildirim kodları için işleyiciler.|  
-|[Birleşik giriş kutusu işleyicileri](../../mfc/reference/combo-box-handlers.md)|Birleşik giriş kutusu bildirim kodları için işleyiciler.|  
-|[Denetim işleyicilerini düzenleme](../../mfc/reference/edit-control-handlers.md)|Düzenle denetim bildirim kodları için işleyiciler.|  
-|[Liste kutusu işleyicileri](../../mfc/reference/list-box-handlers.md)|Liste kutusu bildirim kodları için işleyiciler.|  
+|[Genel Denetim İşleyicisi](../../mfc/reference/generic-control-handler.md)|Genel Denetim bildirim kodları için işleyici.|  
+|[Kullanıcı Düğmesi İşleyicileri](../../mfc/reference/user-button-handlers.md)|Kullanıcı düğmesi bildirim kodları için işleyiciler.|  
+|[Birleşik Giriş Kutusu İşleyicileri](../../mfc/reference/combo-box-handlers.md)|Birleşik giriş kutusu bildirim kodları için işleyiciler.|  
+|[Denetim İşleyicilerini Düzenleme](../../mfc/reference/edit-control-handlers.md)|Düzenle denetim bildirim kodları için işleyiciler.|  
+|[Liste Kutusu İşleyicileri](../../mfc/reference/list-box-handlers.md)|Liste kutusu bildirim kodları için işleyiciler.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)

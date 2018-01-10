@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b58901f213d5e69eb50ad449a87266736fba0af7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 150f161b71efc07bc7b5a08d79e17fac0dea7931
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="support-for-unicode"></a>Unicode Desteği
 Unicode temsil edilemeyen yalnızca tek baytlık dahil olmak üzere tüm karakter kümelerini desteklemek için bir özelliğidir. Uluslararası pazar için programlama yapıyorsanız ya da Unicode kullanmanızı öneririz veya [birden çok baytlı karakter kümeleri](../text/support-for-multibyte-character-sets-mbcss.md) (MBCS'ler) veya bir anahtarı değiştirerek ya da oluşturabilirsiniz programınızı etkinleştirin.  
@@ -68,4 +69,4 @@ Unicode temsil edilemeyen yalnızca tek baytlık dahil olmak üzere tüm karakte
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)   
- [Wmain kullanma desteği](../text/support-for-using-wmain.md)
+ [wmain Kullanma Desteği](../text/support-for-using-wmain.md)

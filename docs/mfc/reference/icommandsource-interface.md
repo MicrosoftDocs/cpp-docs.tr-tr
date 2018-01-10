@@ -27,11 +27,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6aea339b4ddb91336405d281d9b902a8f2a86c3c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dc8ad34ccce059caca8e86a014622e29c14022ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandsource-interface"></a>ICommandSource arabirimi
 Bir kullanıcı denetimi için bir komut kaynak nesneden gönderilen komutları yönetir.  
@@ -85,7 +86,7 @@ Komut işleyici yöntemi için bir tanıtıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 Bu yöntem, komut işleyici cmdHandler komut kaynak nesnesi ekler ve cmdID için işleyici eşlemeleri.
-Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](https://msdn.microsoft.com/library/y33d8624.aspx) AddCommandHandler kullanma örneği.
+Bkz: [nasıl yapılır: Windows Forms denetimi için komut yönlendirme eklemek](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler kullanma örneği.
 
 ## <a name="addcommandrangehandler"></a>ICommandSource::AddCommandRangeHandler
 
@@ -218,4 +219,4 @@ Gönderilecek ileti komut kimliği.
 Bu yöntem, zaman uyumlu olarak komutu tarafından belirtilen kimliği eşlenmiş iletisi gönderir. Pencere iletisi sıraya ileti yerleştirmek için CWnd::SendMessage çağırır ve bu pencere yordamı döndürmeden önce iletiyi işleyene kadar bekler.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: komut ekleme yönlendirme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)   
- [ICommandTarget arabirimi](../../mfc/reference/icommandtarget-interface.md)
+ [ICommandTarget Arabirimi](../../mfc/reference/icommandtarget-interface.md)

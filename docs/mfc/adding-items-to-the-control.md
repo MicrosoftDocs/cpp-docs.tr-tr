@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1469209307f5bfc3016a7232095c36f47b38855b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9d117aa06f82da1024d11af38cc4277916c6bca2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
 Liste denetimi öğeler eklemek için ([CListCtrl](../mfc/reference/clistctrl-class.md)), birkaç sürümlerinden birini çağrısı [InsertItem](../mfc/reference/clistctrl-class.md#insertitem) , hangi bilgilere bağlı olarak üye işlevi. Bir sürüm alır bir [LV_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) hazırlamanız yapısı. Çünkü `LV_ITEM` yapısı çok sayıda üye içeren, liste denetim öğesi özniteliklerini daha fazla denetime sahip olursunuz.  
@@ -33,5 +34,5 @@ Liste denetimi öğeler eklemek için ([CListCtrl](../mfc/reference/clistctrl-cl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

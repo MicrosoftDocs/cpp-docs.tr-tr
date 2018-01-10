@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7d2755a8e4220f45ef243153b0d0da7b95ec15b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 22a53aae49f025c8d05beb3b491288e5c82345a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4566"></a>Derleyici Uyarısı (düzey 1) C4566
 evrensel karakter-adı tarafından 'char' temsil karakter geçerli kod sayfasında (sayfa) gösterilemez  

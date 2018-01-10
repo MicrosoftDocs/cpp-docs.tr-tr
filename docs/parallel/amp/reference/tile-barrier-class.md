@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d6dff1e32f513007f9b99ced4000043ad27607f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f6066422056efc17052afb11d01580abc340976
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
 İş parçacığı grubu (döşeme) kullanarak çalışan iş parçacıklarının yürütülmesine eşitler `wait` yöntemleri. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilirsiniz.  
@@ -114,4 +115,4 @@ void wait_with_tile_static_memory_fence() const restrict(amp);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

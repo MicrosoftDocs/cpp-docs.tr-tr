@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 101d34c9ed610cb375c0755e7698f45a1b16e935
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ad6eef0bbaad7860e7f4310ce283efe18c668eb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="where-does-remote-automation-fit-in"></a>Uzaktan Otomasyon Nerelerde Uygundur?
 DCOM 1996 yayımlanmıştır ve yalnızca 32-bit ve 64 bit platformları ile kullanılabilir. Microsoft Visual Basic ekibi bileşenlerinden iletişim kurmasına izin vermek için otomasyonu kullanarak olarak Visual Basic her zaman görülen. Kendi uzaktan iletişim bileşenleri kümesi Otomasyon için oluşturulmasını araştırmak Visual Basic 4.0 Enterprise Edition geliştirme ekibi karar dağıtılmış sürüm eksikliği ciddi bir şekilde yeteneklere kurumsal ortamlarda kullanımını sınırlı, bu nedenle OLE ve COM bölümleri Açıkçası, sonucu ile uyumlu olacaktır ve DCOM tarafından kullanılabilir hale geldi zaman yerini emin olmak için bir ana hedef oluştu. Bunlar ardından uzak Otomasyon (RA) 16 bit ve 32-bit Windows platformları için uygulamak için proceeded.  
@@ -35,4 +36,4 @@ DCOM 1996 yayımlanmıştır ve yalnızca 32-bit ve 64 bit platformları ile kul
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Otomasyon neler sağlar](what-does-remote-automation-provide-q.md)   
- [DCOM geçmişi](../mfc/history-of-dcom.md)
+ [DCOM Geçmişi](../mfc/history-of-dcom.md)

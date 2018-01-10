@@ -109,11 +109,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f22a8ac8c1d20bb6f972b8674c344db7c8a5ce60
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ca9848ba0ad3f5be1584e299a8a2d2b69f472425
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="list-class"></a>list Sınıfı
 C++ Standart Kitaplığı liste öğelerini doğrusal bir düzende korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir konumdaki izin veren dizisi kapsayıcıların bir şablon sınıfı sınıftır. Sıralı her bazı türünün bir üyesi içeren öğe, çift yönlü bağlantılı liste olarak depolanan *türü*.  
@@ -145,7 +146,7 @@ class list
   
 |||  
 |-|-|  
-|[Liste](#list)|Belirli bir boyutta veya belirli bir değere öğelerini veya belirli bir liste oluşturur `allocator` veya bir kopyasını başka bir liste olarak.|  
+|[list](#list)|Belirli bir boyutta veya belirli bir değere öğelerini veya belirli bir liste oluşturur `allocator` veya bir kopyasını başka bir liste olarak.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -192,7 +193,7 @@ class list
 |[push_back](#push_back)|Bir öğe listesinin sonuna ekler.|  
 |[push_front](#push_front)|Bir öğe listesini başlangıcına ekler.|  
 |[rbegin](#rbegin)|Yineleyici ters listesindeki ilk öğeyi adresleme döndürür.|  
-|[Kaldır](#remove)|Belirtilen değerle eşleşen listedeki öğeleri siler.|  
+|[remove](#remove)|Belirtilen değerle eşleşen listedeki öğeleri siler.|  
 |[remove_if](#remove_if)|Öğeleri belirtilen bir koşulu karşılanıp listeden siler.|  
 |[rend](#rend)|Ters listesindeki son öğeyi başarılı konumu adresleri yineleyici döndürür.|  
 |[yeniden boyutlandırma](#resize)|Bir liste için yeni bir boyutunu belirtir.|  

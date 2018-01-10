@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48f3e2a1e0c1461180291342a8cd18682173e8bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 82297507d8725e6292def759272f48d0d63e84b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="global-hot-keys"></a>Genel Sık Kullanılan Tuşlar
 Genel sık kullanılan tuş belirli nonchild penceresiyle ile ilişkilidir. Sistem herhangi bir kısmını penceresinden etkinleştirmek kullanıcının sağlar. Uygulamanın belirli bir pencere için genel bir kısayol tuşu göndererek ayarlar [WM_SETHOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646284) Bu pencere iletisi. Örneği için `m_HotKeyCtrl` olan [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md) nesne ve `pMainWnd` gösteren bir işaretçidir pencereyi sık kullanılan tuş basıldığında etkinleştirilmesi için sık kullanılan tuş denetimi ile belirtilen ilişkilendirmek için aşağıdaki kodu kullanabilirsiniz tarafından için pencereyi işaret `pMainWnd`.  
@@ -33,5 +34,5 @@ Genel sık kullanılan tuş belirli nonchild penceresiyle ile ilişkilidir. Sist
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHotKeyCtrl kullanma](../mfc/using-chotkeyctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

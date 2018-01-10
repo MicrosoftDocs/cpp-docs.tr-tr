@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5078264a615aa3dd998e2e71f366e8062054e6d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5f9346ae786b967ccff4adfe2deddee839c361d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3208"></a>Derleyici Hatası C3208
 'function': sınıf şablon 'sınıfı' şablon parametresi listesi şablonu şablon parametresi 'parametresi' şablon parametresi listesi eşleşmiyor  

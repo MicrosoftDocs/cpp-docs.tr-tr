@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e70f2298ed916db7d9c7b2d059ef7ce69b4060c9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e5901602368e60a3873a1dba2fc681c6ac146f5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="derived-message-maps"></a>Türetilen İleti Eşlemeleri
 İşleme, bir sınıfın kendi ileti denetimi iletisinde harita ileti eşleme öykü sonu değil. Ne olur sınıfı `CMyView` (türetilmiş `CView`) bir ileti için eşleşen bir giriş yok  
@@ -45,5 +46,5 @@ Hiyerarşisini görüntüleme
  İleti eşleme eşleşen hızlandırmak için aynı ileti yeniden alacağını olasılığı son eşleşmeleri ile framework önbelleğe alır. Bunun bir sonucu framework işlemleri iletileri oldukça verimli bir şekilde işlenmemiş ' dir. İleti eşlemeleri de daha alanı-sanal işlevleri kullanan uygulamaları daha verimlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün ileti eşlemelerini araması](../mfc/how-the-framework-searches-message-maps.md)
+ [Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)
 

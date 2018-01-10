@@ -48,11 +48,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3db56509d17b254655ead80f2125895a0eff25a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2ddc99b2aa360e35224f24920d6a8ae3de920c6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wm-messages-s"></a>WM_ İletileri: S
 Aşağıdaki harita girişler işlev prototipleri karşılık gelir.  
@@ -78,5 +79,5 @@ Aşağıdaki harita girişler işlev prototipleri karşılık gelir.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)   
- [WM_ iletileri için işleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
+ [WM_ İletileri için İşleyiciler](../../mfc/reference/handlers-for-wm-messages.md)
 

@@ -25,11 +25,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1105e69599b1741d79c20e4f0ceb362cfc8c15eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc83e5abf09102af8f27b1ee73fc78ed162b9335
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 `CMFCLinkCtrl` Sınıfı düğmesine tıklandığında bağlantının hedef çağırır ve bir düğme köprü olarak görüntüler.  
@@ -152,4 +153,4 @@ virtual CSize SizeToContent(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CLinkCtrl sınıfı](../../mfc/reference/clinkctrl-class.md)   
- [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md)
+ [CMFCButton Sınıfı](../../mfc/reference/cmfcbutton-class.md)

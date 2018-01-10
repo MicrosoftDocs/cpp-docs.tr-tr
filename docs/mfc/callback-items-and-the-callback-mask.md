@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f2d286bcc9e5119e373af6ae2e02d7e39190dc3a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 24d9992b8a9db679b30624d85ede1a35bfd9826d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="callback-items-and-the-callback-mask"></a>Geri Çağrı Öğeleri ve Geri Çağrı Maskesi
 Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket metnini, öğenin simgelerin görüntü listesi dizini depolar ve bit kümesi için öğesi'nin durumu bayrakları. Uygulama zaten bir öğe için bilgilerin bazıları depoluyorsa yararlı geri çağrı öğeleri olarak ayrı öğeleri tanımlayabilirsiniz.  
@@ -45,5 +46,5 @@ Her öğelerinden biri için bir liste görünümü denetimi genellikle etiket m
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

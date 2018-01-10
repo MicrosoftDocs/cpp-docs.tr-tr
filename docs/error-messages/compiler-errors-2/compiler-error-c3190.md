@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 29d85c8a58b20c5a3c4492c56a66591e1509f2c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 09407e49503747d90afc19ad6cd5ef6f1181ab5b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3190"></a>Derleyici Hatası C3190
 sağlanan şablon bağımsız değişkenlerle ' örneklemesi' herhangi 'type' üye işlevinin açık örnekleme değil  

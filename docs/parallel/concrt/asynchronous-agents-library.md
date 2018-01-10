@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77f0008e3bf3956d55dbeb68a24ed54a506e3ff3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: be12f47a6fb33350137a8f9b1c78ff75519c8af7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı
 Zaman uyumsuz aracılar kitaplığı (veya yalnızca *Aracılar Kitaplığı*) eşzamanlılık etkin uygulama geliştirme'ların sağlamlığını artırmak olanak sağlayan bir programlama modelidir. Aktör tabanlı programlama modeli ve görevleri ardışık düzen ve parçalı veri akışı için geçirme işlemi iletisi yükseltir C++ Şablon kitaplığı aracıları kitaplığıdır. Aracılar Kitaplığı zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur.  
@@ -62,36 +63,36 @@ agent1: received '42'.
  Aşağıdaki konularda bu örnekte kullanılan işlevler açıklanmaktadır.  
   
 ## <a name="related-topics"></a>İlgili Konular  
- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)  
+ [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)  
  Daha büyük hesaplama görevleri çözümünde zaman uyumsuz aracılar rolü açıklanmaktadır.  
   
- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+ [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
  Aracılar Kitaplığı tarafından sağlanan çeşitli ileti bloğu türleri açıklanmaktadır.  
   
- [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)  
+ [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
  Aracılar Kitaplığı tarafından sağlanan çeşitli ileti geçirme yordamları açıklar.  
   
- [Nasıl yapılır: çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)  
+ [Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)  
  Uygulamanızda üretici-tüketici düzeni uygulama açıklar.  
   
- [Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)  
+ [Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)  
  İş işlevleri sağlamak için çeşitli yollar gösterilmektedir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.  
   
- [Nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)  
+ [Nasıl yapılır: Veri İşlem Hattında transformer Kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)  
  Nasıl kullanılacağını gösterir [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) veri ardışık düzeninde sınıfı.  
   
- [Nasıl yapılır: Tamamlanan görevler arasında seçim](../../parallel/concrt/how-to-select-among-completed-tasks.md)  
+ [Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma](../../parallel/concrt/how-to-select-among-completed-tasks.md)  
  Nasıl kullanılacağını gösterir [concurrency::choice](../../parallel/concrt/reference/choice-class.md) ve [concurrency::join](../../parallel/concrt/reference/join-class.md) sınıfları arama algoritması tamamlamak için ilk görevi seçin.  
   
- [Nasıl yapılır: düzenli aralıkla ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)  
+ [Nasıl yapılır: Düzenli Aralıkla İleti Gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)  
  Nasıl kullanılacağını gösterir [concurrency::timer](../../parallel/concrt/reference/timer-class.md) düzenli aralıklarla ileti göndermek için sınıf.  
   
- [Nasıl yapılır: ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
+ [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
  Bir filtre kabul edin veya iletileri reddetmek için bir zaman uyumsuz ileti bloğu etkinleştirmek için nasıl kullanılacağını gösterir.  
   
- [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)  
+ [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)  
  Paralel algoritmalar gibi çeşitli paralel desen uygulamalarınızda kullanmayı açıklar.  
   
- [Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)  
+ [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)  
  Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.
 

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 834475840fbe20a0d6938c563f3541c294e09bee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5e86bedbf83cd417cfc41317e5887304cda7ee76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-makefile-project"></a>Derleme Görevleri Dosyası Projesi Oluşturma
 Makefile (derleme görevleri dosyası) ile komut satırından derlediğiniz bir projeniz varsa, Visual Studio geliştirme ortamı bu projenizi tanımaz. Açıp kullanarak projesi oluşturmak için [!INCLUDE[vsUltShort](../ide/includes/vsultshort_md.md)], Visual Studio Professional ya da Visual Studio Express için Windows Masaüstü, önce bir boş proje oluşturma MakeFile proje şablonu seçerek. Daha sonra bu projeyi kullanarak Visual Studio geliştirme ortamından projenizi derleyebilirsiniz.  
@@ -45,4 +46,4 @@ Makefile (derleme görevleri dosyası) ile komut satırından derlediğiniz bir 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme görevleri dosyası projesi Sihirbazı](../ide/makefile-project-wizard.md)   
  [Derleme görevleri dosyasındaki özel karakterler](../build/special-characters-in-a-makefile.md)   
- [Derleme görevleri dosyası içeriği](../build/contents-of-a-makefile.md)
+ [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)

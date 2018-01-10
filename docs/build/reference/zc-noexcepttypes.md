@@ -13,11 +13,12 @@ ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: aa1cf155cd77c69decdff437d67d132a66819c72
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload: cplusplus
+ms.openlocfilehash: e1b0e209462295f907f5e518299d34fb18aade4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ZC:noexceptTypes (c ++ 17 noexcept kurallar)
 

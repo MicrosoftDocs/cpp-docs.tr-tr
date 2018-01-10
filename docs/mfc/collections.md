@@ -28,11 +28,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 88afc0f7ae61dcf822a84c514fbc98da2bf827c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e980f3f8fe86b621cb1494b08aec3fcdcb49f54
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="collections"></a>Koleksiyonlar
 Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için koleksiyon sınıfları sağlar. Bu sınıfların iki türleri şunlardır:  
@@ -102,25 +103,25 @@ Microsoft Foundation Class Kitaplığı nesnelerin grupları yönetmek için kol
   
 #### <a name="general-collection-class-tasks"></a>Genel koleksiyon sınıfı görevleri  
   
--   [Koleksiyon sınıfı seçme önerileri](../mfc/recommendations-for-choosing-a-collection-class.md)  
+-   [Koleksiyon Sınıfı Seçme Önerileri](../mfc/recommendations-for-choosing-a-collection-class.md)  
   
--   [Nasıl yapılır: tür kullanımı uyumlu koleksiyon yapma](../mfc/how-to-make-a-type-safe-collection.md)  
+-   [Nasıl yapılır: Tür Kullanımı Uyumlu Koleksiyon Yapma](../mfc/how-to-make-a-type-safe-collection.md)  
   
--   [Yığın ve kuyruk koleksiyonları oluşturma](../mfc/creating-stack-and-queue-collections.md)  
+-   [Yığın ve Kuyruk Koleksiyonları Oluşturma](../mfc/creating-stack-and-queue-collections.md)  
   
 -   [CArray::Add](../mfc/reference/carray-class.md#add)  
   
 #### <a name="template-based-collection-class-tasks"></a>Şablona dayalı koleksiyon sınıfı görevleri  
   
--   [Şablona dayalı sınıflar](../mfc/template-based-classes.md)  
+-   [Şablona Dayalı Sınıflar](../mfc/template-based-classes.md)  
   
 #### <a name="accessing-the-members-of-a-collection-template-based-or-not"></a>Bir koleksiyonun üyelerine erişme (şablona dayalı veya değil)  
   
--   [Bir koleksiyonun tüm üyelerine erişme](../mfc/accessing-all-members-of-a-collection.md)  
+-   [Bir Koleksiyonun Tüm Üyelerine Erişme](../mfc/accessing-all-members-of-a-collection.md)  
   
--   [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md)  
+-   [CObject Koleksiyonundaki Tüm Nesneleri Silme](../mfc/deleting-all-objects-in-a-cobject-collection.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../mfc/mfc-concepts.md)   
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

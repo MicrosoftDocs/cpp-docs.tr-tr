@@ -15,11 +15,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1a4f931333c4dfe949678cc4bb6bf90b6dec0e85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 11531a07f161722947d03a53392b8315b7593958
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphorelock-method"></a>Semaphore::Lock Yöntemi
 Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili semafor nesne kadar bekler ve iş durumundaki ya da belirtilen zaman aşımı aralığı geçti.  
@@ -53,5 +56,5 @@ static SyncLock Lock(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Semafor sınıfı](../windows/semaphore-class.md)
+[Semafor Sınıfı](../windows/semaphore-class.md)
  

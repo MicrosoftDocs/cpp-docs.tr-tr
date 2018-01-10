@@ -22,11 +22,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ed026ffda8066f027da6f41e2e4accc7766a9a2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ae1cc8525b0c93cff5564c2185d80480a632718b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-an-icon-or-other-image-image-editor-for-icons"></a>Simge veya Başka Görüntü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 Yeni bir görüntü (bit eşlem, simge, imleç veya araç) oluşturmak, sonra görünümünü özelleştirmek için görüntü Düzenleyicisi'ni kullanın. Sonra desenleri yeni bir bit eşlem oluşturabilirsiniz bir [şablon](../windows/how-to-use-resource-templates.md).  
@@ -57,7 +60,7 @@ Yeni bir görüntü (bit eşlem, simge, imleç veya araç) oluşturmak, sonra g�
     > [!NOTE]
     >  Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez. Daha fazla bilgi için bkz: [oluşturma kaynak dosyaları](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) içinde *.NET Framework Geliştirici Kılavuzu*.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
  Gereksinimler  
   
@@ -68,5 +71,5 @@ Yeni bir görüntü (bit eşlem, simge, imleç veya araç) oluşturmak, sonra g�
  [Bit eşlemleri araç çubuklarına dönüştürme](../windows/converting-bitmaps-to-toolbars.md)   
  [Yeni araç çubukları oluşturma](../windows/creating-new-toolbars.md)   
  [Grafik kaynakları düzenleme](../windows/editing-graphical-resources-image-editor-for-icons.md)   
- [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+ [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
 

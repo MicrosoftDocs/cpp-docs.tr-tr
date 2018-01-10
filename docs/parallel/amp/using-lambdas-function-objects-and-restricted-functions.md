@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6507d3b43372f3e68e81ac44f896d7a6e7984a09
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: afec84ba6e3c007e576c37b4a7afc71fe62691ea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-lambdas-function-objects-and-restricted-functions"></a>Lambda'lar, İşlev Nesneleri ve Kısıtlanmış İşlevler Kullanma
 Hızlandırıcı üzerinde çalıştırmak istediğiniz C++ AMP kodu bir bağımsız değişken için bir çağrı olarak belirtilen [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu bağımsız değişken olarak bir lambda ifadesi veya bir işlev nesnesi (functor) sağlayabilir. Ayrıca, lambda ifadesi veya işlev nesnesi C++ AMP kısıtlanmış işlevi çağırabilirsiniz. Bu konu, Lambda'lar, işlev nesneleri ve kısıtlanmış işlevler göstermek için bir dizi ek algoritma kullanır. Aşağıdaki örnek, C++ AMP kodu olmadan algoritmasını gösterir. İki 1 boyutlu diziler eşit uzunlukta oluşturulur. Karşılık gelen tamsayı öğeleri eklendi ve üçüncü 1 boyutlu bir dizi içinde depolanır. C++ AMP kullanılmaz.  
@@ -178,5 +179,5 @@ void AddArraysWithFunction() {
  [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md)   
  [İşlev çağrısı](../../cpp/function-call-cpp.md)   
  [C++ Standart Kitaplığı'nda işlev nesneleri](../../standard-library/function-objects-in-the-stl.md)   
- [(C++ AMP) kısıtla](../../cpp/restrict-cpp-amp.md)
+ [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)
 

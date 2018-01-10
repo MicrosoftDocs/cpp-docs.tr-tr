@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 22ff9531d675c0a26ca9fea42e2ee6f3ad708e89
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4f6ac3a1edcc945392f7f95875b725dd5d544404
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulus-struct"></a>modulus Yapısı
 Modulus bölme işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi ( `operator%`) bağımsız değişkenlerini üzerinde.  

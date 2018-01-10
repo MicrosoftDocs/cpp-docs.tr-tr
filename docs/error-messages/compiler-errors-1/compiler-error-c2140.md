@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cee9861b991ae853443a49e158634c7578dcb913
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad091a889b3284f0197ab5365036c6e31c151134
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2140"></a>Derleyici Hatası C2140
 'type': bir genel tür parametresi bağımlı olan bir türü derleyici geçerli bir tür ayırdedici nitelik 'ayırdedici nitelik' bağımsız değişkeni olarak izin verilmiyor  

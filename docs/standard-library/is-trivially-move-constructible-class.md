@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ba32f03d08032bc47373d2389831e52913298d49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b918809c0fabf7e0d65770dd12149d2f258189e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="istriviallymoveconstructible-class"></a>is_trivially_move_constructible sınıfı
 Önemsiz türündeyse testleri Oluşturucusu taşıyın.  
@@ -62,7 +63,7 @@ struct is_trivially_move_constructible;
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 
 
 

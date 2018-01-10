@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e2b2e9cc116c06cb1f0c91d093566fa8ac77eac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e1ba24b8d41638b07d11ed6126ff9fdc0e7258ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorlt-vector-stlclr"></a>İşleç&lt;= (vektör) (STL/CLR)
 Küçük veya buna eşit vektör karşılaştırma.  
@@ -99,4 +102,4 @@ int main()
  [operator! = (vektör) (STL/CLR)](../dotnet/operator-inequality-vector-stl-clr.md)   
  [İşleç\< (vektör) (STL/CLR)](../dotnet/operator-less-than-vector-stl-clr.md)   
  [operator > = (vektör) (STL/CLR)](../dotnet/operator-greater-or-equal-vector-stl-clr.md)   
- [operator > (vektör) (STL/CLR)](../dotnet/operator-greater-than-vector-stl-clr.md)
+ [operator> (vector) (STL/CLR)](../dotnet/operator-greater-than-vector-stl-clr.md)

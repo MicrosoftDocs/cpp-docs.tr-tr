@@ -18,20 +18,21 @@ caps.latest.revision: "5"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 742d84300a7139e392bda19142643fe469231bdc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e609c16d63974506a06d6ec553cf4be09509acb9
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın kullanıcı hesapları sınırlı ayrıcalıklarına sahip bir özelliktir. Aşağıdaki sitelerde UAC hakkında ayrıntılı bilgi bulabilirsiniz:  
   
--   [Windows Vista kullanıcı hesabı denetimi adım adım kılavuzu](http://go.microsoft.com/fwlink/?linkid=53781)  
+-   [Windows Vista kullanıcı hesabı denetimi adım adım kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=53781)  
   
--   [Geliştirici en iyi yöntemler ve en az ayrıcalıklı ortamındaki uygulamalar için yönergeler](http://go.microsoft.com/fwlink/?linkid=82444)  
+-   [Geliştirici en iyi yöntemler ve en az ayrıcalıklı ortamındaki uygulamalar için yönergeler](http://go.microsoft.com/fwlink/p/?linkid=82444)  
   
--   [Anlama ve Windows Vista'da kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/?LinkId=82445)  
+-   [Anlama ve Windows Vista'da kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/p/?linkid=82445)  
   
 ## <a name="building-projects-after-enabling-uac"></a>UAC etkinleştirdikten sonra proje oluşturma  
  Windows Vista UAC devre dışıyken Visual C++ projesi oluşturun ve daha sonra UAC etkinleştirirseniz, temizleyin ve doğru çalışması için projeyi yeniden derleyin.  

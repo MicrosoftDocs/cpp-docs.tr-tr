@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8f9152384522725dc932d0ce5e1c4cc81827160b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e5c128a2a2e32b5e4854725354ed484a335ab0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>CDocument'ten Belge Sınıfı Türetme
 Belge içerir ve uygulamanızın veri yönetin. MFC Uygulama Sihirbazı tarafından sağlanan belge sınıfını kullanmak için aşağıdakileri yapmanız gerekir:  
@@ -38,5 +39,5 @@ Belge içerir ve uygulamanızın veri yönetin. MFC Uygulama Sihirbazı tarafın
  Diğer geçersiz kılma isteyebilirsiniz **CDocument** üye işlevleri. Özellikle, sık sık geçersiz kılma gerekir [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) ve [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) belgenin veri üyeleri başlatılamadı ve [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) yok etme dinamik olarak ayrılan veriler. Geçersiz kılınabilir üyeleri hakkında daha fazla bilgi için bkz [CDocument](../mfc/reference/cdocument-class.md) içinde *MFC başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Belgeleri kullanma](../mfc/using-documents.md)
+ [Belgeleri Kullanma](../mfc/using-documents.md)
 

@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65160180d97b4db264fc0fa77afa7c6284d2863f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6fc56b6628819f2045998e3d4eebca811201500b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sortheap-stlclr"></a>sort_heap (STL/CLR)
 Bir yığını sıralanmış bir aralığa dönüştürür.  
@@ -42,4 +45,4 @@ template<class _RanIt, class _Pr> inline
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [algoritma (STL/CLR)](../dotnet/algorithm-stl-clr.md)
+ [algorithm (STL/CLR)](../dotnet/algorithm-stl-clr.md)

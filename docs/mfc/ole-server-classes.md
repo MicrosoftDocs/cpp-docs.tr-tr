@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bfac148696a40fcb8b8d054e7ce8d7da7e0daf15
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d23c7cb23d9221f8f2183c666a99c70ef149db3e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-server-classes"></a>OLE Sunucu Sınıfları
 Bu sınıfların sunucu uygulamaları tarafından kullanılır. Sunucu belgeleri türetilir `COleServerDoc` yerine **CDocument**. Çünkü unutmayın `COleServerDoc` türetildiği `COleLinkingDoc`, sunucu belgeleri bağlama desteği kapsayıcıları de olabilir.  

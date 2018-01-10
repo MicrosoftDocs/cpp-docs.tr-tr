@@ -26,11 +26,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 29b161d889aefc55e818a16233212a55bdcb45de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6604ada6dc4d322011a835c03731f6a48be472f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcdynamiclayout-class"></a>CMFCDynamicLayout sınıfı
 Bir pencere denetimlerinde nasıl taşınır ve kullanıcı yeniden boyutlandırır gibi yeniden boyutlandırılan belirtir.  
@@ -463,4 +464,4 @@ static SizeSettings SizeVertical(int nRatio);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

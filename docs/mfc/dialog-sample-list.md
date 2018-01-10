@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e4936a19d45cbaea2fa9f95d63881bec6542e57e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 73b1a75c8b4c903e8d0872b882426918743ea6b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-sample-list"></a>İletişim Kutusu Örnek Listesi
 İletişim kutuları ve özellik sayfaları gösteren aşağıdaki örnek programlar bakın:  
@@ -62,5 +63,5 @@ ms.lasthandoff: 10/24/2017
 -   [DLGTEMPL](../visual-cpp-samples.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutuları](../mfc/dialog-boxes.md)
+ [İletişim Kutuları](../mfc/dialog-boxes.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 353493ddc667d7951ee98752226065a94fdf986a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ae9c29cfe689c710a344fd2defa54227ca6f01c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="customization-for-mfc"></a>MFC için Özelleştirme
 Bu konuda, bir MFC uygulaması özelleştirmek için ipuçları verilmektedir.  
@@ -29,20 +30,20 @@ Bu konuda, bir MFC uygulaması özelleştirmek için ipuçları verilmektedir.
 ## <a name="class-specific-customizations"></a>Sınıf özel özelleştirmeleri  
  Aşağıdaki konularda ek özelleştirme ipuçları bulunabilir:  
   
--   [CBasePane sınıfı](../mfc/reference/cbasepane-class.md)  
+-   [CBasePane Sınıfı](../mfc/reference/cbasepane-class.md)  
   
--   [CDockablePane sınıfı](../mfc/reference/cdockablepane-class.md)  
+-   [CDockablePane Sınıfı](../mfc/reference/cdockablepane-class.md)  
   
--   [CDockingManager sınıfı](../mfc/reference/cdockingmanager-class.md)  
+-   [CDockingManager Sınıfı](../mfc/reference/cdockingmanager-class.md)  
   
--   [CMFCBaseTabCtrl sınıfı](../mfc/reference/cmfcbasetabctrl-class.md)  
+-   [CMFCBaseTabCtrl Sınıfı](../mfc/reference/cmfcbasetabctrl-class.md)  
   
 ## <a name="additional-customization-tips"></a>Ek özelleştirme ipuçları  
- [Klavye ve fare özelleştirmesi](../mfc/keyboard-and-mouse-customization.md)  
+ [Klavye ve Fare Özelleştirmesi](../mfc/keyboard-and-mouse-customization.md)  
   
- [Kullanıcı tanımlı Araçlar](../mfc/user-defined-tools.md)  
+ [Kullanıcı Tanımlı Araçlar](../mfc/user-defined-tools.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)   
- [Özelleştirmenin güvenlikle ilgili etkileri](../mfc/security-implications-of-customization.md)
+ [Özelleştirmenin Güvenlikle İlgili Etkileri](../mfc/security-implications-of-customization.md)
 

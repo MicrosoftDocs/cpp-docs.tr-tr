@@ -26,11 +26,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 15abdc0f35d3f69e301020bb3c9c4f8fb6e9d321
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d6e7dde047c3311c6fd694a91c7a63fcfbcc95d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
 **Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  
@@ -70,4 +71,4 @@ to
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MIDL özellik sayfaları](../ide/midl-property-pages.md)
+ [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)

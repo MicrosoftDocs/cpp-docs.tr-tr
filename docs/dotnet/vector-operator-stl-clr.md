@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73d58a8e1c4a677a248c0a4af90199fd50b36d56
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4fa87557c7df4560abf77999d414d630de7e6da1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectoroperatorstlclr"></a>Vector::operator(stl/CLR)
 Belirtilen konumda bir öğe erişir.  
@@ -78,4 +81,4 @@ a x c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::AT (STL/CLR)](../dotnet/vector-at-stl-clr.md)
+ [vector::at (STL/CLR)](../dotnet/vector-at-stl-clr.md)

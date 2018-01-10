@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 8eb50d8e49b195ffb3322bb30a8f147c2f248273
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 28255b2e47c48b89b0bd6aea044fe0c15c1f2a08
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 Zaman Bildirim sabiti **_MBCS** olan tanımlı, belirli bir genel metin yordamı yordamları şu tür birine eşler:  
@@ -76,4 +77,4 @@ Zaman Bildirim sabiti **_MBCS** olan tanımlı, belirli bir genel metin yordamı
      Bu yaklaşımı seçtiğinizde, dize bağımsız değişkenleri ve dize geri dönüş değerleri için uygun veri türleri kullanımını sağlamak dikkatli olmanız gerekir. Tür atama uygun türüyle eşleşen emin olmak için kullanabileceğiniz veya kullanabilirsiniz **_TXCHAR** genel metin veri türü. **_TXCHAR** yazmak için eşlenir `char` SBCS kod ancak yazmak için eşlenir `unsigned` `char` MBCS kodunda. Genel metin makroları hakkında daha fazla bilgi için bkz: [genel metin eşlemeleri](../c-runtime-library/generic-text-mappings.md) içinde *çalışma zamanı kitaplığı başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)
+ [Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)

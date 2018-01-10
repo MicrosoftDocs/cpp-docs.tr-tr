@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: be26e2139ab0cf0e31e63331a8e87df8769fe715
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf1bd1d80f692695c1cbf4ad535d2c5e759e4ea5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hdrstop"></a>hdrstop
 Ön derleme dosya adları ve derleme durumunun kaydedildiği konum üzerinde ek denetim olanağı verir.  
@@ -89,4 +90,4 @@ __inline Disp( char *szToDisplay )   // Define an inline function
  Bu örnekte, **hdrstop** pragma iki dosyaları dahil edilmiştir ve satır içi işlev tanımlanan sonra görüntülenir. Bu, ilk başta pragmanın tek bir yerleşimi olarak görünebilir. Ancak, bu el ile ön derleme seçenekleri, /Yc ve /Yu, kullanarak düşünün **hdrstop** pragma sizin için tüm kaynak dosyaları derleneceği mümkün kılar — bile satır içi kod. Microsoft derleyicisi, size yalnızca veri bildirimlerini ön derlemek gibi bir sınırlama getirmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

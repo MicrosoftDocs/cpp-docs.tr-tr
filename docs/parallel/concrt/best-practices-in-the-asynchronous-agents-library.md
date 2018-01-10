@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 15e4b6aca6d9f00806a37a04ffb7c93008125b6a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a8d4b52839675334ab343adf48790bdce390dd5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="best-practices-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler
 Bu belge, zaman uyumsuz aracılar kitaplığı etkili kullanımını sağlamak açıklar. Aracılar Kitaplığı aktör tabanlı programlama modeli ve görevleri ardışık düzen ve parçalı veri akışı için geçirme işlemi iletisi yükseltir.  
@@ -125,5 +126,5 @@ Destroying resource 64...
  [İzlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)   
  [İzlenecek yol: bir görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)   
  [Paralel desen Kitaplığı'ndaki en iyi yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)   
- [Eşzamanlılık Çalışma zamanındaki genel en iyi yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
+ [Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
 

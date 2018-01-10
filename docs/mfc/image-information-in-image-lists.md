@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 80e897ec79314abb2e77864e53d470e72f275a94
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33248c1bbc225d8d1ccf55c126d1657d0b0e4cad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="image-information-in-image-lists"></a>Görüntü Listelerindeki Görüntü Bilgileri
 [Cımagelist](../mfc/reference/cimagelist-class.md) görüntü listesinden görüntü bilgilerini almak işlevler içerir. [GetImageInfo](../mfc/reference/cimagelist-class.md#getimageinfo) üye işlevi doldurur bir `IMAGEINFO` görüntü ve maskesi bit eşlemler, Renk düzlemi ve bit / piksel sayısını ve sınırlayıcı dikdörtgenini tanıtıcıları dahil olmak üzere tek bir görüntü hakkındaki bilgilerle yapısı Görüntü bit eşlem içinde görüntüsü. Bit eşlemler görüntüsü için doğrudan yönetmek için bu bilgileri kullanın.  
@@ -31,5 +32,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cımagelist kullanma](../mfc/using-cimagelist.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

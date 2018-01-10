@@ -18,11 +18,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7eb84d1979d3655c49e5fe089fe04d44708d16a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b7d1459da07f7e392a2da1fbf5d6e9d72c8f4653
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="priorityqueue-stlclr"></a>priority_queue (STL/CLR)
 Şablon sınıfı bir değişen Sınırlı erişime öğe dizisi sıralı uzunlukta denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `priority_queue` temel alınan bir kapsayıcı bir öncelik sırası olarak yönetmek için.  
@@ -56,21 +59,21 @@ template<typename Value,
 |[priority_queue::difference_type (STL/CLR)](../dotnet/priority-queue-difference-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[priority_queue::generic_container (STL/CLR)](../dotnet/priority-queue-generic-container-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
 |[priority_queue::generic_value (STL/CLR)](../dotnet/priority-queue-generic-value-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
-|[priority_queue::Reference (STL/CLR)](../dotnet/priority-queue-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[priority_queue::reference (STL/CLR)](../dotnet/priority-queue-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[priority_queue::size_type (STL/CLR)](../dotnet/priority-queue-size-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[priority_queue::value_compare (STL/CLR)](../dotnet/priority-queue-value-compare-stl-clr.md)|İki öğe için sıralama temsilcisi.|  
 |[priority_queue::value_type (STL/CLR)](../dotnet/priority-queue-value-type-stl-clr.md)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[priority_queue::Assign (STL/CLR)](../dotnet/priority-queue-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
-|[priority_queue::Empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[priority_queue::assign (STL/CLR)](../dotnet/priority-queue-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
+|[priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
 |[priority_queue::get_container (STL/CLR)](../dotnet/priority-queue-get-container-stl-clr.md)|Temel alınan kapsayıcı erişir.|  
-|[priority_queue::POP (STL/CLR)](../dotnet/priority-queue-pop-stl-clr.md)|Hghest öncelikli öğeyi kaldırır.|  
+|[priority_queue::pop (STL/CLR)](../dotnet/priority-queue-pop-stl-clr.md)|Hghest öncelikli öğeyi kaldırır.|  
 |[priority_queue::priority_queue (STL/CLR)](../dotnet/priority-queue-priority-queue-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
 |[priority_queue::push (STL/CLR)](../dotnet/priority-queue-push-stl-clr.md)|Yeni bir öğe ekler.|  
 |[priority_queue::size (STL/CLR)](../dotnet/priority-queue-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[priority_queue::Top (STL/CLR)](../dotnet/priority-queue-top-stl-clr.md)|En yüksek öncelikli öğenin erişir.|  
+|[priority_queue::top (STL/CLR)](../dotnet/priority-queue-top-stl-clr.md)|En yüksek öncelikli öğenin erişir.|  
 |[priority_queue::to_array (STL/CLR)](../dotnet/priority-queue-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[priority_queue::value_comp (STL/CLR)](../dotnet/priority-queue-value-comp-stl-clr.md)|İki öğe için sıralama temsilci kopyalar.|  
   
@@ -80,7 +83,7 @@ template<typename Value,
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[priority_queue::operator (STL/CLR) =](../dotnet/priority-queue-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[priority_queue::operator= (STL/CLR)](../dotnet/priority-queue-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

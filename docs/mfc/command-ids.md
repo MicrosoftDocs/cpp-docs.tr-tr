@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95b531d12afc524e27bf36fc5a44d5f555fc9f91
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b651c734fbd7098705801aefcaa490293a4d661d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-ids"></a>Komut Kimlikleri
 Bir komutu tam olarak tek başına komutu Kimliğiyle açıklanan (kodlanmış **WM_COMMAND** ileti). Bu kimliği komutu oluşturan kullanıcı arabirimi nesneye atanmış. Genellikle, kimlikleri atandığı kullanıcı arabirimi nesnesinin işlevselliğini adlandırılır.  
@@ -30,5 +31,5 @@ Bir komutu tam olarak tek başına komutu Kimliğiyle açıklanan (kodlanmış *
  Menü düzenleyicisi Visual C++'da kendi menüleri oluşturduğunuzda, tarafından gösterildiği gibi sınıf kitaplığı izlemek için iyi bir fikir kuralı adlandırma olduğu `ID_FILE_OPEN`. [Standart komutlar](../mfc/standard-commands.md) sınıf kitaplığı tarafından tanımlanan standart komutlarını açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıcı arabirimi nesneleri ve komut kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
+ [Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri](../mfc/user-interface-objects-and-command-ids.md)
 

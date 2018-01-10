@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a7efade7f0bd0a3c35e02439818873b923c1ac1d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f29b4f25d937c2f538373ff85819f7315150e712
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implement-connection-point-wizard"></a>Bağlantı Noktası Uygulama Sihirbazı
 Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası veya herhangi bir giden arabirimi kendi arabirimleri için getirebilir. Visual C++ hem de Windows giden arabirimine sahip türü kitaplıkları sağlar. Her giden arabirimi, bir nesne (diğer bir deyişle, bir havuz) istemci tarafından uygulanabilir.  
@@ -32,7 +33,7 @@ Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabi
  **Konum**  
  Şu anda seçili tür kitaplığı konumunu görüntüler **kullanılabilir tür kitaplıklarının** listesi.  
   
- **Arabirimleri**  
+ **Arabirimler**  
  Tanımları, şu anda seçili tür kitaplığı içerdiği arabirimleri görüntüler **kullanılabilir tür kitaplıklarının** kutusu.  
   
 |Aktarma düğmesi|Açıklama|  

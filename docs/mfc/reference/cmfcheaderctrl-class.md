@@ -41,11 +41,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70395cbbfe4c9eec02b4b04d107e05e4ca1904e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d3b8b95b161704d5d5b2ca56e22cfe818e4785d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl sınıfı
 `CMFCHeaderCtrl` Sınıfı, üstbilgi denetimindeki birden çok sütun sıralama destekler.  
@@ -314,4 +315,4 @@ void SetSortColumn(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md)
+ [CMFCListCtrl Sınıfı](../../mfc/reference/cmfclistctrl-class.md)

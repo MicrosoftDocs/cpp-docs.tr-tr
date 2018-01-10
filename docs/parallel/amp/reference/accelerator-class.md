@@ -50,11 +50,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5bdb3d081e9f7f1c2333d8bc577401b95ab0f858
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ff64eeedb324d3a849029b15744cd630603aef67
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="accelerator-class"></a>accelerator Sınıfı
 Hızlandırıcı veri paralel bilgisayarlar için optimize edilmiştir bir donanım özelliğidir. Hızlandırıcı PCIe veri yoluna (örneğin, bir GPU) bağlı bir cihaz olabilir veya genişletilmiş bir yönerge ana CPU üzerinde ayarlanmış olması olabilir.  
@@ -100,7 +101,7 @@ class accelerator;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator! =](#operator_neq)|Bu karşılaştırır `accelerator` başka bir nesneyle ve döndürür `false` aynı; olmaları durumunda hata verir `true`.|  
+|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator` başka bir nesneyle ve döndürür `false` aynı; olmaları durumunda hata verir `true`.|  
 |[işleç =](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator` bu bir nesne.|  
 |[operator ==](#operator_eq_eq)|Bu karşılaştırır `accelerator` başka bir nesneyle ve döndürür `true` aynı; olmaları durumunda hata verir `false`.|  
   
@@ -779,4 +780,4 @@ void wait();
  Döndürür `void`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

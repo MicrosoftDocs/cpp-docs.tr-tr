@@ -24,11 +24,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e5b749f16b2aa66aba486bd4dd3449f4e485683a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 430981da5ec304bf832e759d40870ee88f3e6557
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 Okuma ve standart akışlara yazma kontrol nesneleri bildirir. Bu genellikle, giriş ve çıkış bir C++ programı gerçekleştirmek için eklemeniz gerekir yalnızca başlığıdır.  
@@ -269,5 +270,5 @@ extern wostream wcout;
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2fe145a2bfac01bd201284bbbaa8250ee20b3612
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb9b0c3e24094deb0d4fd4ac20d673d9ffafca6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-is-a-carchive-object"></a>CArchive Nesnesi Nedir?
 A `CArchive` nesnesi, gelen veya giden serileştirilebilir nesneler okuma veya yazma için bir tür kullanımı uyumlu arabelleğe alma mekanizması sağlar bir `CFile` nesnesi. Genellikle `CFile` nesnesini temsil eden bir disk dosyası; ancak, bu da bellek dosyasını olabilir (`CSharedFile` nesnesi), belki de Pano temsil eden.  
@@ -36,5 +37,5 @@ A `CArchive` nesnesi, gelen veya giden serileştirilebilir nesneler okuma veya y
  Verileri arşive seri olarak arabelleğini dolana kadar arşiv verileri toplanır. Arşiv kendi arabelleğe Yazar sonra `CFile` tarafından için nesne işaret `CArchive` nesnesi. Arşivden verileri okurken benzer şekilde, bu veri arabelleğini dosyasına ve ardından seri durumdan çıkarılmış nesne arabelleğe okur. Bu arabelleğe alma, bir sabit disk fiziksel olarak, bu nedenle, uygulamanızın performansını iyileştirme okunur sayısını azaltır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)
+ [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4d551c3875a2c8aca235437579db2f467f680380
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 010df3546a6ac2b6276281c39efdd76abd5ec222
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="com-interface-entry-points"></a>COM Arabirimi Giriş Noktaları
 COM arabirimi üye işlevleri için kullanmak [METHOD_PROLOGUE](com-interface-entry-points.md#method_prologue) dışarı aktarılan bir arabirim yöntemleri çağrılırken uygun genel durumunu korumak üzere makrosu.  
@@ -52,5 +53,5 @@ COM arabirimi üye işlevleri için kullanmak [METHOD_PROLOGUE](com-interface-en
  Bu ifadede *m_pModuleState* bir üye değişkenine kapsayan nesnenin olduğu varsayılır. Tarafından uygulanan `CCmdTarget` temel sınıfı ve uygun değere tarafından başlatılan `COleObjectFactory`, nesne örneği oluşturulduğunda.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
+ [MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 

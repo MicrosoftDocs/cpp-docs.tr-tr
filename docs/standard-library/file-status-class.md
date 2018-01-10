@@ -23,11 +23,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::operator=
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
-ms.openlocfilehash: 625e6212ca4c5e4d271054e16bb12bd1bb881395
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f76bbbe5c11b5fbd7a7e9cc7ed6a4f9851805f29
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 Saran bir [file_type](../standard-library/filesystem-enumerations.md#file_type) ve dosya [izinleri](../standard-library/filesystem-enumerations.md#perms).  

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 20b7f6a918bc8da215f0de33d0a4989250e28d64
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd2c5bc238c9858e204d0a96729aa722dac18a9a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-line-warning-d9035"></a>Komut Satırı Uyarısı D9035
 ' Option 'seçeneği kullanım dışı bırakıldı ve bir sonraki sürümde kaldırılacak  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  Belirtilen seçenek hala çalışıyor, ancak şimdi yapı yapılandırmanızı güncelleştirmeniz gerekir. Sonuç olarak, projenizin derleyici yükselttiğinizde oluşturmaya devam etmek daha yüksektir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut satırı uyarısı D9036](../../error-messages/tool-errors/command-line-warning-d9036.md)
+ [Komut Satırı Uyarısı D9036](../../error-messages/tool-errors/command-line-warning-d9036.md)

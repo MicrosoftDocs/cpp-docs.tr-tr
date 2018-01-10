@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 348964eb2f9b17a00188dd3a2589ce0711767e64
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 116c36b5c0b990672a455e1419c92d60ec992845
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry Sınıfı
 `network_link_registry` Özet temel sınıf kaynak ve hedef blokları arasındaki bağlantıları yönetir.  
@@ -57,11 +58,11 @@ class network_link_registry;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ekleme](#add)|Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.|  
+|[add](#add)|Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.|  
 |[başlayın](#begin)|Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.|  
 |[içerir](#contains)|Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesnesi.|  
 |[sayısı](#count)|Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.|  
-|[Kaldır](#remove)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.|  
+|[remove](#remove)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `network link registry` Eş zamanlı erişim için güvenli değildir.  
@@ -144,4 +145,4 @@ virtual bool remove(_EType _Link) = 0;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [single_link_registry sınıfı](single-link-registry-class.md)   
- [multi_link_registry sınıfı](multi-link-registry-class.md)
+ [multi_link_registry Sınıfı](multi-link-registry-class.md)

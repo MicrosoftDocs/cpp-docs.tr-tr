@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 78c5cb9bdd1da0876abacda48000a914c884d25a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 48bf640d75a02b9033102b1c8fc7b824dc4a5be0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event Sınıfı
 `task_completion_event` Sınıfı, bir koşul sağlanırsa kadar bir görevi yürütme gecikme veya dış bir olaya yanıt olarak bir görevi başlatmak olanak sağlar.  
@@ -57,7 +58,7 @@ class task_completion_event<void>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ayarlama](#set)|Fazla Yüklendi. Görev tamamlama olayını ayarlar.|  
+|[set](#set)|Fazla Yüklendi. Görev tamamlama olayını ayarlar.|  
 |[set_exception](#set_exception)|Fazla Yüklendi. Bu olayla ilişkili tüm görevler için bir özel durum yayar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -122,4 +123,4 @@ task_completion_event();
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

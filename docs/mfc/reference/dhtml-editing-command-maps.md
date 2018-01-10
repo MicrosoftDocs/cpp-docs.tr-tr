@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0b7420e4fed7abccffaba8539499e56e6248be5e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7eba41005864e2389997a75855eaf955ad18b557
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML Düzenleme Komutu Eşlemeleri
 DHTML düzenleme komutlarda eşlemek için aşağıdaki makroları kullanılabilir [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)-türetilmiş sınıfları. Kullanım örneği için bkz [HTMLEdit örnek](../../visual-cpp-samples.md).  

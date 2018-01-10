@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f30a841462552324bb151e1b2ce61d62924f2eb4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1208b000f57397764277cc0a43e223f7c781a06e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları
 Bu dosyalar önceden derlenmiş üst bilgi dosyasını oluşturmak için kullanılan *Projname*Stdafx.obj dosya .pch ve önceden derlenmiş türleri.  
@@ -38,4 +39,4 @@ Bu dosyalar önceden derlenmiş üst bilgi dosyasını oluşturmak için kullan�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)   
- [Proje özellikleriyle çalışma](../ide/working-with-project-properties.md)
+ [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)

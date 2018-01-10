@@ -26,11 +26,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 648e0cada61e15c29ab908e93cc8e457581f9239
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 14dabd345f47b064f78a4e9a3dede834bddeb9d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="frame-windows"></a>Çerçeve Pencereleri
 Bir uygulamayı Windows altında çalıştığında, kullanıcı çerçeve pencerelerinde görüntülenen belgeleri ile etkileşim kurar. Belge çerçeve penceresi iki önemli bileşeni vardır: çerçeve ve onu çerçeve içeriği. Belge çerçeve penceresi olabilir bir [tek belge arabirimi](../mfc/sdi-and-mdi.md) (SDI) çerçeve penceresi veya [birden çok belge arabirimi](../mfc/sdi-and-mdi.md) (MDI) alt pencere. Windows kullanıcı etkileşimi çerçeve penceresi ile çoğunu yönetir: taşıma pencerede yeniden boyutlandırma, kapatma ve en aza ve onu en üst düzeye çıkarma. Çerçeve içine içeriği yönetin.  
@@ -83,11 +84,11 @@ Bir uygulamayı Windows altında çalıştığında, kullanıcı çerçeve pence
   
  **Diğer pencere cinsleri konularda**  
   
--   [Görünümleri kullanma](../mfc/using-views.md)  
+-   [Görünümleri Kullanma](../mfc/using-views.md)  
   
 -   [İletişim kutuları](../mfc/dialog-boxes.md)  
   
--   [Denetimleri](../mfc/controls-mfc.md)  
+-   [Denetimler](../mfc/controls-mfc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows](../mfc/windows.md)

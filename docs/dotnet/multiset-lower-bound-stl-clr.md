@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e8f5cbbf26d85ebd5199d439cbaf4cc06cd9dcaa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 79d7c0d73d311e6d5f56811655aab04009b1f33f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multisetlowerbound-stlclr"></a>multiset::lower_bound (STL/CLR)
 Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.  

@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 56b05c85212630b8e368817006098aeff2ceb832
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c3de04fbbfa9f2d0b55b7e31ca02faeddfa5c12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX Denetimleri: Otomasyon Sunucusu Oluşturma
 MFC ActiveX denetimi programlı olarak başka bir uygulamada denetleyen katıştırma ve uygulamadan denetiminde yöntemleri çağırma amacıyla Otomasyon sunucusu olarak geliştirebilirsiniz. Böyle bir denetim bir ActiveX denetimi kapsayıcısı barındırılması kullanılabilir olacaktır.  
@@ -57,5 +58,5 @@ MFC ActiveX denetimi programlı olarak başka bir uygulamada denetleyen katışt
  Bir uygulamada kullandıktan sonra ActiveX denetimi yöntemleri eklemek, tür kitaplığı içeri aktardığınızda, oluşturulan dosyaları silerek uygulamada denetimi en son sürümünü kullanmaya başlayabilirsiniz. Ardından tür kitaplığı yeniden içeri aktarın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

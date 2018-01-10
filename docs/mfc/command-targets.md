@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 16a2599b97d88cf4e36b15a70203fc0ca91ca2a2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bb8d2bff69e95a089827c85ade6dc4bcd67eb7ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-targets"></a>Komut Hedefleri
 Şekil [Framework komutlarda](../mfc/user-interface-objects-and-command-ids.md) menü öğesi ve framework çağrılarını nesne tıklatıldığında elde edilen komutu yürütmek için işleyici işlevi gibi bir kullanıcı arabirimi nesnesi arasındaki bağlantıyı gösterir.  
@@ -30,5 +31,5 @@ ms.lasthandoff: 10/24/2017
  Windows komut iletileri doğrudan, ileti işleyicisi sonra adlı bir pencere için olmayan iletiler gönderir. Ancak, framework adayı nesne sayısı için komutları yönlendirir — "komut hedefleri" olarak adlandırılan — biri normalde çağırır komutu için bir işleyici. İşleyici işlevleri komutlar ve standart Windows iletileri için aynı şekilde çalışır, ancak tarafından bunlar denir mekanizmaları açıklandığı gibi farklı [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md)
+ [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

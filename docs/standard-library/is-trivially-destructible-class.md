@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0f2b9f29915fb2b47f84b3192b9bd90a71c92eae
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 47b734f531e0bc958c41afbef5f5023ca01649cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="istriviallydestructible-class"></a>is_trivially_destructible sınıfı
 Türü trivially destructible olup olmadığını sınar.  
@@ -46,7 +47,7 @@ struct is_trivially_destructible;
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 
 
 

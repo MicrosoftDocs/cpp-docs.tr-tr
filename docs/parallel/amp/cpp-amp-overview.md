@@ -19,11 +19,12 @@ caps.latest.revision: "60"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54823d53cfe6e83879db70dac7809a1b40217bd2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96c794ee66f658ca211dfa5d95525e72daf296c8
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 C++ hızlandırılmış yoğun paralellik (C++ AMP), bir grafik işlemci birimi (GPU) gibi veri paralel donanım üzerinde ayrı ekran kartı yararlanarak C++ kod yürütmeyi hızlandırır. C++ AMP kullanarak, böylece heterojen donanımda paralellik kullanarak yürütme hızlandırılabilir çok boyutlu veri algoritmaları kodlayabilirsiniz. Çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve matematiksel işlev kitaplığının C++ AMP programlama modeli içerir. C++ AMP dil uzantıları, böylece performansı artırabilir nasıl veriler CPU'su tarafından GPU ve geri taşınır denetlemek için kullanabilirsiniz.  
@@ -427,7 +428,7 @@ for (int i = 0; i <4; i++) {
 ```  
   
 ## <a name="math-libraries"></a>Matematik kitaplıkları  
- C++ AMP iki matematik kitaplıklarını içerir. Çift duyarlıklı Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevleri için destek sağlar. Çift duyarlıklı destek donanımda hala gerekli olmasına rağmen tek duyarlıklı işlevleri için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](http://go.microsoft.com/fwlink/linkid=225887). Hızlandırıcı tam çift duyarlıklı desteklemesi gerekir. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı math Kitaplığı'ndaki [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), matematik işlevleri başka bir kümesini içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha hızlı yürütme ancak çift duyarlıklı math kitaplığı de olarak kesin değildir. İşlevler bulunan \<amp_math.h > üst bilgi dosyasını ve tüm ile bildirildiğinde `restrict(amp)`. İşlevlerde \<cmath > Üstbilgi dosyası içine aktarılır `fast_math` ve `precise_math` ad alanları. `restrict` Ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ve C++ AMP sürümü. Aşağıdaki kod hızlı yöntemini işlem etki alanındaki her bir değerin 10 tabanında logaritmasını hesaplar.  
+ C++ AMP iki matematik kitaplıklarını içerir. Çift duyarlıklı Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevleri için destek sağlar. Çift duyarlıklı destek donanımda hala gerekli olmasına rağmen tek duyarlıklı işlevleri için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlıklı desteklemesi gerekir. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı math Kitaplığı'ndaki [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), matematik işlevleri başka bir kümesini içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha hızlı yürütme ancak çift duyarlıklı math kitaplığı de olarak kesin değildir. İşlevler bulunan \<amp_math.h > üst bilgi dosyasını ve tüm ile bildirildiğinde `restrict(amp)`. İşlevlerde \<cmath > Üstbilgi dosyası içine aktarılır `fast_math` ve `precise_math` ad alanları. `restrict` Ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ve C++ AMP sürümü. Aşağıdaki kod hızlı yöntemini işlem etki alanındaki her bir değerin 10 tabanında logaritmasını hesaplar.  
 
   
 ```cpp  
@@ -467,32 +468,32 @@ void MathExample() {
 ## <a name="includewin8appnamelongbuildincludeswin8appnamelongmdmd-apps"></a>[!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)]Uygulamaları  
  Diğer C++ kitaplıkları gibi C++ AMP kullanabilirsiniz, [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Bu makaleler C++, C#, Visual Basic veya JavaScript kullanılarak oluşturulan C++ AMP kodunu uygulamalarında nasıl ekleneceğini açıklar:  
   
-- [Windows mağazası uygulamalarında C++ AMP kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
+- [Windows Mağazası Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
-- [İzlenecek yol: C++ ve JavaScript'ten çağırma temel Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/linkid=249077)  
+- [İzlenecek yol: C++ ve JavaScript'ten çağırma temel Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249077)  
   
-- [Bing Haritalar seyahat iyileştirici, bir Windows mağazası uygulaması JavaScript ve C++](http://go.microsoft.com/fwlink/p/linkid=249078)  
+- [Bing Haritalar seyahat iyileştirici, bir Windows mağazası uygulaması JavaScript ve C++](http://go.microsoft.com/fwlink/p/?linkid=249078)  
   
-- [C# Windows çalışma zamanı kullanarak üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/linkid=249080)  
+- [C# Windows çalışma zamanı kullanarak üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249080)  
   
-- [C# üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/linkid=249081)  
+- [C# üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249081)  
   
-- [Yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md)  
+- [Yönetilen Koddan Yerel İşlevleri Çağırma](../../dotnet/calling-native-functions-from-managed-code.md)  
   
 ## <a name="c-amp-and-concurrency-visualizer"></a>C++ AMP ve eşzamanlılık görselleştiricisi  
  Eşzamanlılık görselleştiricisi C++ AMP kodunun performansını çözümlemek için destek içerir. Bu makaleler, bu özellikleri açıklar:  
   
 - [GPU Etkinlik Grafiği](/visualstudio/profiling/gpu-activity-graph)  
   
-- [GPU etkinliği (disk belleği)](/visualstudio/profiling/gpu-activity-paging)  
+- [GPU Etkinliği (Disk Belleği)](/visualstudio/profiling/gpu-activity-paging)  
   
-- [GPU etkinliği (Bu işlem)](/visualstudio/profiling/gpu-activity-this-process)  
+- [GPU Etkinliği (Bu İşlem)](/visualstudio/profiling/gpu-activity-this-process)  
   
-- [GPU etkinliği (diğer işlemler)](/visualstudio/profiling/gpu-activity-other-processes)  
+- [GPU Etkinliği (Diğer İşlemler)](/visualstudio/profiling/gpu-activity-other-processes)  
   
-- [Kanallar (iş parçacıkları görünümü)](/visualstudio/profiling/channels-threads-view)  
+- [Kanallar (İş Parçacıkları Görünümü)](/visualstudio/profiling/channels-threads-view)  
   
-- [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/linkid=253987&clcid=0x409)  
+- [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)  
   
 ## <a name="performance-recommendations"></a>Performans önerileri  
  Modulus ve imzasız tamsayılar bölme mod ve imzalı tamsayılar bölümünün daha önemli ölçüde daha iyi performans sahiptir. Mümkün olduğunda imzasız tamsayılar kullanmanızı öneririz.  
@@ -501,4 +502,4 @@ void MathExample() {
  [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
  [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md)   
  [Başvuru (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)   
- [Yerel kod günlüğündeki paralel programlama](http://go.microsoft.com/fwlink/p/linkid=238472)
+ [Yerel kod günlüğündeki paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=238472)

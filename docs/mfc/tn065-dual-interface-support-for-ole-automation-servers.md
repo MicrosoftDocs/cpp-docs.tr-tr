@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c592af17d4248db2ed94adf53b8eddca4aa4d67
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 959938be27e66a765ee0ae9e5aef9b3c1f1aed6f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn065-dual-interface-support-for-ole-automation-servers"></a>TN065: OLE Otomasyon Sunucuları için Çift Arabirim Desteği
 > [!NOTE]

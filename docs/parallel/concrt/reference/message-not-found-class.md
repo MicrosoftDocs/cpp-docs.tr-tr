@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 435d4e9bf18c70330bfb0f069329551e8145cfd4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 245f62879d1f44c7363b13f369b9f834231f6678
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="messagenotfound-class"></a>message_not_found Sınıfı
 Bu sınıf, bir ileti bloğu istenen ileti bulamıyor olduğunda oluşturulan bir özel açıklar.  
@@ -67,7 +68,7 @@ message_not_found() throw();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md)
+ [Zaman Uyumsuz İleti Blokları](../../../parallel/concrt/asynchronous-message-blocks.md)
 
 
 

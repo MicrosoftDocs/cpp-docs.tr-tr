@@ -36,11 +36,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dfd818a22bb720ef41ab1a1dbacc1cd6ee6676b2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e4ce6602696f733ca3bac03441a58515c57e0dc1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
 Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  
@@ -83,5 +84,5 @@ Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorun
  MFCx0.DLL kaydetmeniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

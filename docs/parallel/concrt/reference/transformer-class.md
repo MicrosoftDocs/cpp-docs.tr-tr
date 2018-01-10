@@ -28,11 +28,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 392b0555bb25b89e024903755db48260745a24fc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 87f4dd90328a647502c50f973d402f7964eaf5f4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="transformer-class"></a>transformer Sınıfı
 A `transformer` ileti bloğu bir tek-hedef, çok kaynaklı, sıralı `propagator_block` bir türden iletileri kabul edebilir ve farklı türde bir ileti sınırsız bir sayısı depolayabilen yeteneğine sahiptir.  
@@ -303,4 +304,4 @@ transformer(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Çağrı sınıfı](call-class.md)
+ [call Sınıfı](call-class.md)

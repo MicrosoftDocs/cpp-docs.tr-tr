@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b862e606b86eca0a7eb7f2ad1e91f2776c8c0b23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d94d3a18c02cfe81f6c3ee96635c9388f54308d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3366"></a>Derleyici Hatası C3366
 'değişkeni': statik veri üyeleri yönetilen veya WinRTtypes sınıf tanımı içinde tanımlanması gerekir  

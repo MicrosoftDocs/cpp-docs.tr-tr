@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7ff071c3bff5c78fc53c8601fae6033b1e24e188
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 966d0b13a4825d60cc34b1bbc758c97cd77650ba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorconstreverseiterator-stlclr"></a>vector::const_reverse_iterator (STL/CLR)
 Denetimli sırası için sabit bir ters yineleyici türü...  
@@ -69,4 +72,4 @@ c b a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::reverse_iterator (STL/CLR)](../dotnet/vector-reverse-iterator-stl-clr.md)
+ [vector::reverse_iterator (STL/CLR)](../dotnet/vector-reverse-iterator-stl-clr.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1b136e2f64296d2ca39fb0778898afcd2c0caaba
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 39a80944a7ebb73a1339e140bf68c91fe17c0951
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3265"></a>Derleyici Hatası C3265
 bir yönetilen 'yönetilen yapı' bir yönetilmeyen 'yönetilmeyen yapısıyla' bildiremezsiniz  

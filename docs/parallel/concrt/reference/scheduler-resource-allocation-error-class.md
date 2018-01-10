@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 334712def2fbd458b648b02cbfab05e202cc0e1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23f7dffed1ba92d83502c27837b33e0b076e7645
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schedulerresourceallocationerror-class"></a>scheduler_resource_allocation_error Sınıfı
 Bu sınıf eşzamanlılık çalışma zamanı kritik kaynak edinmeye bir hatadan dolayı oluşturulan bir özel açıklar.  
@@ -93,4 +94,4 @@ explicit _CRTIMP scheduler_resource_allocation_error(
  `HRESULT` Özel duruma neden hata değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

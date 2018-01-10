@@ -11,11 +11,12 @@ ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e765fedb127d07c08622b784018399f3bdfef45
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5280b4940c2a52fc6e72b397300040ca4c1ac92e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="change-signature"></a>Değişiklik imza
 **Ne:** bir işlevin parametreleri değiştirmenize olanak tanır.
