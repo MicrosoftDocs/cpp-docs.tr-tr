@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e71d92a1d977caa994e16218ef79f1800c00aa34
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de2f2a8c2a68418a9e29c9e1cf9ade371c87e451
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-fatal-error-a1005"></a>ML Önemli Hatası A1005
 **Derleyici sınırı: makrosu parametre adı tablosu tam**  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  Daha kısa tanımlayın veya daha az adlarını veya gereksiz makroları Kaldır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

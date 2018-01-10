@@ -1,3 +1,1 @@
----
----
 Visual Studio 2015'te Visual C++

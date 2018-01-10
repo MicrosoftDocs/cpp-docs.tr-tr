@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8e49dcc0356c563312c0d73041ab412716694c1a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 87ee21022aa379820ced0463892be12ee0676d88
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csimplerowcompare"></a>CSimpleRow::Compare
 Aynı satır örneğine bakın görmek için iki satır karşılaştırır.  
@@ -48,4 +51,4 @@ Aynı satır örneğine bakın görmek için iki satır karşılaştırır.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSimpleRow sınıfı](../../data/oledb/csimplerow-class.md)   
  [CSimpleRow::ReleaseRow](../../data/oledb/csimplerow-releaserow.md)   
- [Irowsetımpl::refrows](../../data/oledb/irowsetimpl-refrows.md)
+ [IRowsetImpl::RefRows](../../data/oledb/irowsetimpl-refrows.md)

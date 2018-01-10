@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6046d19e628e75dee6e3f33b400c48dcbf317735
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bf3e2bc4a29f1f6f2919e19085f73cde566aa5d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="assume"></a>ASSUME
 YAZMAÇ değerlerini denetlenirken hata sağlar.  
@@ -37,4 +38,4 @@ ASSUME [[register:]] NOTHING [[, register:NOTHING]]...
  Sonra bir `ASSUME` derleyici verilen yazmaçlar değerlerine değişiklikleri izleyen yürürlüğe, koymak. **HATA** kayıt kullanılıyorsa bir hata oluşturur. **Hiçbir şey** kaldırır kaydetmek hata denetimi. Farklı türde bir deyiminde varsayımlar birleştirebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

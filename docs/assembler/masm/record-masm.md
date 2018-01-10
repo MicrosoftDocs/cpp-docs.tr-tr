@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 94790e94308127c5e5c0337f5ab5d1fee1a98ec2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ee4ea13565c7837180765852d53a75f2f5bfe12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="record-masm"></a>RECORD (MASM)
 Belirtilen alanları içeren bir kayıt türü bildirir. *FieldName* alan adları *genişliği* bit sayısını belirtir ve *ifade* ilk değerini verir.  
@@ -33,4 +34,4 @@ Belirtilen alanları içeren bir kayıt türü bildirir. *FieldName* alan adlar�
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1bb9bbdd6deb0a8e459f2f2b8d5b6188c7517e6c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5e7f69c2ac2dbd8a0079d9160100077ccd35513e
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM Assembler Komut Satırı Başvurusu
 Bu makalede Microsoft ARM assembler komut satırı bilgilerini sağlar *armasm*, ortak nesne dosyası biçimi (COFF), Microsoft uygulamasına ARMv7 Flash assembly dili derler. Bağlayıcı COFF kodu ARM assembler veya kitaplığı tarafından oluşturulan nesne kitaplıkları ile birlikte C Derleyici tarafından üretilen nesne kodu ile bağlayabilirsiniz.  
@@ -41,7 +42,7 @@ armasm [[options]] -o objectfile sourcefile
  Belirtilen dizin INCLUDE arama yoluna ekleyin.  
   
  -önceden`directive`  
- Bir simge önceden tanımlamayı SETA, SETL veya KÜMELERİ yönergesi belirtin. Örnek: **armasm.exe-"SETA 150 COUNT" source.asm önceden**. Daha fazla bilgi için bkz: [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=246102).  
+ Bir simge önceden tanımlamayı SETA, SETL veya KÜMELERİ yönergesi belirtin. Örnek: **armasm.exe-"SETA 150 COUNT" source.asm önceden**. Daha fazla bilgi için bkz: [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  -nowarn  
  Tüm uyarı iletilerini devre dışı bırakın.  
@@ -93,4 +94,4 @@ armasm [[options]] -o objectfile sourcefile
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM Assembler tanılama iletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)   
- [ARM Assembler yönergeleri](../../assembler/arm/arm-assembler-directives.md)
+ [ARM Assembler Yönergeleri](../../assembler/arm/arm-assembler-directives.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1ea381dca211215d8aa1d2d9e1aa729e58fd2c6a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b941e00da1241db815cea7432257eaed4144a8b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="elseif-masm"></a>ELSEIF (MASM)
 Birleştirir [ELSE](../../assembler/masm/else-masm.md) ve [IF](../../assembler/masm/if-masm.md) tek bir deyimde.  
@@ -36,4 +37,4 @@ ELSEIF
  Bkz: [IF](../../assembler/masm/if-masm.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
