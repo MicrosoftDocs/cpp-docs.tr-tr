@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cdf2a76e75b7ca453b908af586954454f7ce09f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a796626d604417a15d39f90823fc7fc8fca580dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="type-int"></a>Tür int
 İşaretli veya işaretsiz bir `int` öğesinin boyutu, belirli bir makinedeki bir tamsayının standart boyutudur. Örneğin, 16 bit işletim sistemlerinde `int` türü genellikle 16 bit veya 2 bayttır. 32 bit işletim sistemlerinde, `int` türü genellikle 32 bit veya 4 bayttır. Bu nedenle, `int` türüdür ya da eşdeğer `short int` veya **uzun tamsayı** türü ve `unsigned int` türüdür ya da eşdeğer **kısa imzasız** veya `unsigned long` bağlı olarak hedef ortam türü. `int` türlerinin hepsi aksi belirtilmediği sürece işaretli değerleri temsil eder.  
@@ -39,4 +40,4 @@ ms.lasthandoff: 10/24/2017
 >  int ve unsigned int tanımlayıcıları C programlarında sık sık kullanılır, çünkü belirli bir makinenin tam sayı değerlerini o makine için en etkin şekilde işlemesine olanak verirler. Ancak, int ve unsigned int türlerinin boyutu değişebildiği için belirli bir int boyutuna bağlı olan programlar diğer makinelere taşınabilir olmayabilir. Programları daha taşınabilir hale getirmek için ifadeler ile sizeof işleci kullanabilirsiniz (anlatıldığı gibi [sizeof işleci](../c-language/sizeof-operator-c.md)) yerine sabit kodlanmış veri boyutları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel türleri depolama](../c-language/storage-of-basic-types.md)
+ [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

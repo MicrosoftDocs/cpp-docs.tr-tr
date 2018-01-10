@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6dee3978cc910ec1ea086a53c7214b5d155d760d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1b7aec738342cc69c07c9fb8173903560a28301a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csimplerowreleaserow"></a>CSimpleRow::ReleaseRow
 Satır bir iş parçacığı açısından güvenli şekilde serbest bırakır.  
@@ -43,4 +46,4 @@ DWORD ReleaseRow( );
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSimpleRow sınıfı](../../data/oledb/csimplerow-class.md)   
  [CSimpleRow::AddRefRow](../../data/oledb/csimplerow-addrefrow.md)   
- [Irowsetımpl::refrows](../../data/oledb/irowsetimpl-refrows.md)
+ [IRowsetImpl::RefRows](../../data/oledb/irowsetimpl-refrows.md)

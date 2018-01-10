@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3af6c63ab571738f2c963c3e9b90b9aae4b644eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 744f75f86fd7d3e2ca2a2545a7914f923c4454b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch Blokları Nasıl Değerlendirilir (C++)
 Genel olarak std::exception'dan türetilen türler oluşturulması önerilse de, C++ her türden özel durumlar oluşturmanıza olanak tanır. C++ özel durum tarafından yakalanan bir **catch** oluşturulan özel durum olarak ya da herhangi bir özel durum türü yakalayabilir bir işleyici tarafından aynı türde belirtir işleyici.  
@@ -74,4 +75,4 @@ catch( CExcptClass E )
  Bu örnekte, üç nokta **catch** işleyicisidir incelenir yalnızca işleyici.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+ [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

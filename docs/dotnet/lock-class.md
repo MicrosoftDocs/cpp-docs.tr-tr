@@ -18,11 +18,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c9e21612c227081e3558a8f7f3161f922711c20
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c2f2a8e371803d33a2c42508ec595681ada3bab8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lock-class"></a>lock Sınıfı
 Bu sınıf, birden çok iş parçacığı bir nesneye erişimi eşitlemek için bir kilit almayı otomatikleştirir.  Oluşturulan, kilit alır ve sürümler yok kilidi.  
@@ -45,4 +48,4 @@ ref class lock;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [kilitleme](../dotnet/lock.md)   
- [lock üyeleri](../dotnet/lock-members.md)
+ [lock Üyeleri](../dotnet/lock-members.md)

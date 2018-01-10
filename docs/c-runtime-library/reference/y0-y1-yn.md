@@ -37,11 +37,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2268949972273493314e5a6f81da82df3a984f3c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae37d5703406acb363327b07a8c94895dc427976
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="y0-y1-yn"></a>y0, y1, yn
 Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.

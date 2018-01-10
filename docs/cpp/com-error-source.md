@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 01f63158f2406505e833ab58dcb53e099c3348f0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a725ddb3ff72acc749a5dbf09d2ddcc94856590c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comerrorsource"></a>_com_error::Source
 **Microsoft özel**  
@@ -43,4 +44,4 @@ _bstr_t Source() const;
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_error sınıfı](../cpp/com-error-class.md)
+ [_com_error Sınıfı](../cpp/com-error-class.md)

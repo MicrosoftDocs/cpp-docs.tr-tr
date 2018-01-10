@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 55d890fa369bade254d145ca4935911fef367159
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3a0e7cba73d85253db28d719932d02cfb3cdecca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ Dil Başvurusu (C + +/ CX)
 
@@ -35,11 +36,11 @@ Yeni model Windows programlama yerel C++ gelecek nesil temsil eder. Bunu kullana
 |||
 |-|-|
 |[Hızlı Başvuru](../cppcx/quick-reference-c-cx.md)|Tablosu anahtar sözcükleri ve işleçler için C + +/ CX.|
-|[Tür sistemi](../cppcx/type-system-c-cx.md)|Açıklar temel C + +/ CX türleri ve programlama yapıları ve nasıl kullanan C + +/ CX kullanabilir ve Windows çalışma zamanı türleri oluşturmak için.|
+|[Tür Sistemi](../cppcx/type-system-c-cx.md)|Açıklar temel C + +/ CX türleri ve programlama yapıları ve nasıl kullanan C + +/ CX kullanabilir ve Windows çalışma zamanı türleri oluşturmak için.|
 |[Yapı uygulamalar ve kitaplıklar](../cppcx/building-apps-and-libraries-c-cx.md)|IDE uygulamaları ve statik kitaplıklarından aned DLL'leri bağlantı oluşturmak için nasıl kullanılacağını açıklar.|
 |[Diğer dilleri ile birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)|Anlatılmaktadır nasıl C + kullanılarak yazılan bileşenleri +/ CX kullanılabilir JavaScript'te yazılmış bileşenleri ile dil, yönetilen veya [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)].|
 |[İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)|Oluşturduğunuz bileşenlerin iş parçacığı oluşturma ve hazırlama davranışı belirtmek nasıl ele alınmaktadır.|
 |[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)|Varsayılan ad alanı, Platform ad alanı, Platform::Collections ve ilgili ad alanları için başvuru belgeleri.|
-|[Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Windows çalışma zamanı uygulamaları için kullanılabilir olmayan CRT işlevleri listeler.|
+|[Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Windows çalışma zamanı uygulamaları için kullanılabilir olmayan CRT işlevleri listeler.|
 |[Nasıl yapılır kılavuzları Windows 10 uygulamaları için](http://msdn.microsoft.com/library/windows/apps/xaml/mt244352.aspx)|Windows 10 uygulamaları ve daha fazla bilgi için bağlantılar hakkında üst düzey rehberlik sağlar.|
 |[C + +/ CX parçası 0 \[ n \]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C + +/ CX parçası 1 \[ n \]: basit bir sınıf](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C + +/ CX Kısım 2 / \[ n \]: şapkalar takmak türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C + +/ CX parçası 3 \[ n \]: aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C + +/ CX parçası 4 \[ n \]: statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|Bir tanıtım Visual C++ blog seriyi C + +/ CX.|

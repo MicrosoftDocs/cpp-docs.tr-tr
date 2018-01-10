@@ -25,11 +25,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 88af917cb86826cc4615948f7a5d2e53e888bad5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 261fb23c96bee0d646f64d587d9f7afecc59d4d2
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="crtlcmapstringw"></a>__crtLCMapStringW
 Bir karakter dizesi başka belirtilen yerel ayara bağımlı dönüştürme gerçekleştirme eşler. Bu işlev, giriş dizesi için bir sıralama anahtarı oluşturmak için de kullanılabilir.  
@@ -75,7 +76,7 @@ int __crtLCMapStringW(
  Sıfır başarısız olduğunu gösterir. Genişletilmiş hata bilgilerini için arama `GetLastError` işlevi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsa `cchSrc` sıfırdan büyük ve `lpSrcStr` null ile sonlandırılmış bir dize `__crtLCMapStringW` ayarlar `cchSrc` dize uzunluğu. Ardından `__crtLCMapStringW` geniş dize (Unicode) sürümü çağırır `LCMapString` belirtilen parametrelerle işlevi. Bu işlevin dönüş değeri ve parametreleri hakkında daha fazla bilgi için bkz: `LCMapString` adresindeki işlev [MSDN Kitaplığı](http://go.microsoft.com/fwlink/?linkID=150542).  
+ Varsa `cchSrc` sıfırdan büyük ve `lpSrcStr` null ile sonlandırılmış bir dize `__crtLCMapStringW` ayarlar `cchSrc` dize uzunluğu. Ardından `__crtLCMapStringW` geniş dize (Unicode) sürümü çağırır `LCMapString` belirtilen parametrelerle işlevi. Bu işlevin dönüş değeri ve parametreleri hakkında daha fazla bilgi için bkz: `LCMapString` adresindeki işlev [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

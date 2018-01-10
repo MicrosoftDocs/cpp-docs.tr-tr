@@ -14,42 +14,45 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8940a85085d564404a2dd95f8707b9b986047113
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5f43b8fa403aad5b2df6aebf07c1aaf3b0dd191b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC Sınıfları Hakkında Daha Fazla Okuma
 Aşağıdaki konularda daha fazla kavramlar ve teknikler bu konu başlığı altında tanıtılan açıklanır:  
   
--   [Veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)  
+-   [Veritabanı Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)  
   
 -   [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)  
   
--   [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)  
+-   [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)  
   
 -   [Dynaset](../../data/odbc/dynaset.md)  
   
--   [Özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md)  
+-   [Özel durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)  
   
--   [MFC: Belgeler ve görünümler ile veritabanı sınıflarını kullanma](../../data/mfc-using-database-classes-with-documents-and-views.md)  
+-   [MFC: Belgeler ve Görünümler ile Veritabanı Sınıflarını Kullanma](../../data/mfc-using-database-classes-with-documents-and-views.md)  
   
--   [MFC: Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma](../../data/mfc-using-database-classes-without-documents-and-views.md)  
+-   [MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma](../../data/mfc-using-database-classes-without-documents-and-views.md)  
   
 -   [ODBC](../../data/odbc/odbc-basics.md)  
   
 -   [ODBC Yöneticisi](../../data/odbc/odbc-administrator.md)  
   
--   [Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)  
+-   [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)  
   
--   [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)  
+-   [Kayıt Kümesi (ODBC)](../../data/odbc/recordset-odbc.md)  
   
 -   [Kayıt görünümleri](../../data/record-views-mfc-data-access.md)  
   
--   [Seri hale getirme: Seri hale getirme vs. Veritabanı giriş/çıkış](../../mfc/serialization-serialization-vs-database-input-output.md)  
+-   [Seri Hale Getirme: Seri Hale Getirme ile Veritabanı giriş/çıkış](../../mfc/serialization-serialization-vs-database-input-output.md)  
   
--   [Anlık görüntü](../../data/odbc/snapshot.md)  
+-   [Anlık Görüntü](../../data/odbc/snapshot.md)  
   
 -   [SQL](../../data/odbc/sql.md)  
   

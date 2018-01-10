@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 44d262e27b47de0826024cb26e7f19280c6ed54e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a741008b894c5349bd198c2abfd13e11a158c4b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="console-and-port-io"></a>Konsol ve Bağlantı Noktası G/Ç
 Bu yordamlar, okuma ve konsolunuza veya belirtilen bağlantı noktası üzerinde yazma. Konsol g/ç yordamları akış g/ç veya düşük düzey g/ç kitaplık yordamları ile uyumlu değildir. Açılacak veya g/ç gerçekleştirilmeden önce bu kategorideki hiçbir Aç veya kapat yordamları için kapalı konsol veya bağlantı noktası yok. Windows işletim sistemlerinde, bu işlevler çıktısını konsola her zaman yönlendirilir ve yönlendirilemez.  
@@ -52,4 +53,4 @@ Bu yordamlar, okuma ve konsolunuza veya belirtilen bağlantı noktası üzerinde
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Giriş ve çıkış](../c-runtime-library/input-and-output.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

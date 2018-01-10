@@ -40,11 +40,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2f29ce9e4e08ed75ba06e0cb27db0ddac1d923e7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e113c9a1f805fea5d1b5a9a10052f89a2bfa43cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fseeknolock-fseeki64nolock"></a>_fseek_nolock, _fseeki64_nolock
 Dosya işaretçisini belirtilen bir konuma taşır.  
@@ -93,4 +94,4 @@ int _fseeki64_nolock(
  [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
  [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)   
  [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   
- [Geri Sar](../../c-runtime-library/reference/rewind.md)
+ [rewind](../../c-runtime-library/reference/rewind.md)

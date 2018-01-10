@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30b569cd511c9e2585e77d8e6f3485d5892b47f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b64294345398afce97774996a5b68a095070b0f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapvaluecompare-stlclr"></a>map::value_compare (STL/CLR)
 İki öğenin değerleri için sıralama temsilcisi.  
@@ -77,4 +80,4 @@ compare([L'b', 2], [L'a', 1]) = False
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)   
  [Map::value_comp (STL/CLR)](../dotnet/map-value-comp-stl-clr.md)   
- [Map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)
+ [map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4e32ebf60ac77dba6860f3e773c4d6fb122857b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 26a1554fec567762810f6bd48c8674ea048ce117
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-basics"></a>ODBC Temelleri
 Bu konu, açık veritabanı bağlantısı (ODBC) temel bilgileri sağlar:  
@@ -75,4 +78,4 @@ Bu konu, açık veritabanı bağlantısı (ODBC) temel bilgileri sağlar:
  Visual C++'ın bu sürümünde bulunan sürücülerin listesini ve ek sürücüler edinme hakkında bilgi için bkz: [ODBC sürücü listesi](../../data/odbc/odbc-driver-list.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+ [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

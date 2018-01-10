@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: df81013b497c0be939ceb3afd44d8a3e9e28ce18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 76e739ae95788448cc655ca18d32aaf1f8a5c90a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unicode-stream-io-in-text-and-binary-modes"></a>Metin ve İkili Modlarda Unicode Akışı G/Ç
 Ne zaman bir Unicode akışı g/ç yordamı (gibi `fwprintf`, `fwscanf`, `fgetwc`, `fputwc`, `fgetws`, veya `fputws`) metin modunda (varsayılan), iki tür karakter dönüştürme gerçekleşmesi açık olan bir dosya çalıştırır:  
@@ -36,4 +37,4 @@ Ne zaman bir Unicode akışı g/ç yordamı (gibi `fwprintf`, `fwscanf`, `fgetwc
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)   
- [Giriş ve çıkış](../c-runtime-library/input-and-output.md)
+ [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)

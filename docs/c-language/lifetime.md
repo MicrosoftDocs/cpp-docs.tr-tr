@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac1e1904ea5b1d7280f614ec65af2be71f862104
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ce98025001529313260f62e8f45e85add148c77
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lifetime"></a>Ömür
 "Ömrü" olan bir programın yürütülmesini dönemde bulunduğu bir değişken veya işlev içinde. Depolama süresi tanımlayıcının yaşam süresi belirler.  
@@ -52,4 +53,4 @@ ms.lasthandoff: 10/24/2017
  Bellek ayrılan kullanımı ile özel kitaplık yordamları gibi oluşturduysanız (dinamik) gerektiği gibi `malloc`. Dinamik bellek ayırma kitaplık yordamları kullandığından, dil parçası dikkate alınmaz. Bkz: [malloc](../c-runtime-library/reference/malloc.md) işlevi *çalışma zamanı kitaplığı başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+ [Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

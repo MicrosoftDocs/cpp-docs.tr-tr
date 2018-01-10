@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e3e308b7db2b22d76a82a9966e0c259d37df74ec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 83aa4b696ab229dfb7e6940a8c6ce28b390f5b3b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrt-operators"></a>_com_ptr_t İşleçleri
 Hakkında bilgi için `_com_ptr_t` işleçleri bkz [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

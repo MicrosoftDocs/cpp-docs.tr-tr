@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3e8c81bfa9f87d9612d989cef84ddf538ff28d98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 437657857b87f2f7df140576d09467d6276549f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -81,7 +82,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**G**|Kayan nokta|Aynı **g** , dışında biçiminde **E**, yerine **e**, üs (uygun olan yerlerde) sunar.|
 |**bir**|Kayan nokta|Formun [-] sahip onaltılık çift duyarlıklı kayan noktalı değeri imzalı 0 x*h.hhhh*__p±__*GG*, burada *h.hhhh* onaltılık olan Mantis rakamı (büyük küçük harf kullanarak) ve *GG* üs için bir veya daha fazla basamak şunlardır. Duyarlık noktadan sonra basamak sayısını belirtir.|
 |**A**|Kayan nokta|Formun [-] 0 X onaltılık çift duyarlıklı kayan noktalı değeri işaretli*h.hhhh*__P±__*GG*, burada *h.hhhh* onaltılık olan Mantis rakamı (büyük harf kullanarak) ve *GG* üs için bir veya daha fazla basamak şunlardır. Duyarlık noktadan sonra basamak sayısını belirtir.|
-|**n**|Tamsayı işaretçi|Başarıyla kadarki akış veya arabelleğe yazılan karakterlerin sayısı. Bu değer, adresi bağımsız değişken olarak verilen tamsayı depolanır. Bir bağımsız değişkeni boyut belirtimi önekiyle işaret tamsayı boyutunu denetlenebilir. **n**  Belirticisi varsayılan olarak devre dışı; önemli güvenlik notu bilgi için bkz.|
+|**n**|Tamsayı işaretçi|Başarıyla kadarki akış veya arabelleğe yazılan karakterlerin sayısı. Bu değer, adresi bağımsız değişken olarak verilen tamsayı depolanır. Bir bağımsız değişkeni boyut belirtimi önekiyle işaret tamsayı boyutunu denetlenebilir.  **n**  Belirticisi varsayılan olarak devre dışı; önemli güvenlik notu bilgi için bkz.|
 |**p**|İşaretçi türü|Bağımsız değişkeni bir adresi onaltılık basamak olarak görüntüler.|
 |**s**|Dize|İle kullanıldığında `printf` İşlevler, bir tek baytlı ve çok baytlı karakter dizesi; kullanıldığında belirtir `wprintf` İşlevler, bir joker karakter dizesini belirtir. Karakter ilk null karakter kadar veya kadar görüntülenir *duyarlık* değerine ulaşılmadan.|
 |**S**|Dize|İle kullanıldığında `printf` İşlevler, birlikte kullanıldığında bir joker karakter dizesi; belirtir `wprintf` İşlevler, bir tek baytlı ve çok baytlı karakter dizesi belirtir. Karakter ilk null karakter kadar veya kadar görüntülenir *duyarlık* değerine ulaşılmadan.|
@@ -217,6 +218,6 @@ Bir **hc** veya **hC** tür belirteci ile eşanlamlı **c** içinde `printf` iş
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
+[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)  
-[printf_p konumsal Parametreler](../c-runtime-library/printf-p-positional-parameters.md)  
+[printf_p Konumsal Parametreler](../c-runtime-library/printf-p-positional-parameters.md)  

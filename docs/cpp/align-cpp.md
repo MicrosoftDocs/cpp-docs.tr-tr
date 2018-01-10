@@ -17,11 +17,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7872e01516ea7420533cccf0398164d50603dded
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3bc721131e5cb47bf17d7e683f3a6df249f4dd38
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="align-c"></a>align (C++)
 Visual Studio 2015 ve sonraki sürümlerinde, C ++ 11 standardını kullanan `alignas` denetim hizalaması için tanımlayıcısı. Daha fazla bilgi için bkz: [hizalama](../cpp/alignment-cpp-declarations.md).  
@@ -248,4 +249,4 @@ struct S {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   
  [ARM ABI kuralları genel bakış](../build/overview-of-arm-abi-conventions.md)   
- [X64 genel bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md)
+ [x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)

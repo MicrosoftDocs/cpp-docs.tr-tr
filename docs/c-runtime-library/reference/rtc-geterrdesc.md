@@ -33,11 +33,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 792407af9497148bea95333ee18028e0f8c953e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3149c1be671566785f67963368a50cdf2eee3809
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
 Bir çalışma zamanı hata denetimi (RTC) türü kısa bir açıklamasını döndürür.  
@@ -71,4 +72,4 @@ Bir çalışma zamanı hata denetimi (RTC) türü kısa bir açıklamasını dö
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_RTC_NumErrors](../../c-runtime-library/reference/rtc-numerrors.md)   
- [Çalışma zamanı hata denetimi](../../c-runtime-library/run-time-error-checking.md)
+ [Çalışma Zamanı Hata Denetimi](../../c-runtime-library/run-time-error-checking.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 367fcdae26b66cce06fd6086a21d3212c7ac17ae
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4dc08bce80d27493a8a13ac24bce7011282d7cd3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="member-access-operators--and--gt"></a>Üye erişimi işleçleri:. ve -&gt;
 ## <a name="syntax"></a>Sözdizimi  
@@ -46,7 +47,7 @@ postfix-expression -> name
   
 1.  İlk formunda *sonek ifade* yapısı, sınıf veya birleşim türü değerini temsil eder ve *adı* belirtilen yapısı, UNION veya sınıf üyesi adları. İşlemi, değeri *adı* ve bir l-değeri ise *sonek ifade* l-değeri.  
   
-2.  İkinci formunda *sonek ifade* bir işaretçi yapısı, UNION veya sınıfı temsil eder ve *adı* belirtilen yapısı, UNION veya sınıf üyesi adları. Değer budur *adı* ve bir l-değeri. **->**  İşleci dereferences işaretçi. Bu nedenle, ifadeleri *e*  **->**  `member` ve **(\****e***)**.`member` (burada *e* bir işaretçi temsil eder) verim aynı sonuçları (olmadığı dışında işleçleri  **->**  veya  **\***  aşırı yüklenmiş olan iş).  
+2.  İkinci formunda *sonek ifade* bir işaretçi yapısı, UNION veya sınıfı temsil eder ve *adı* belirtilen yapısı, UNION veya sınıf üyesi adları. Değer budur *adı* ve bir l-değeri.  **->**  İşleci dereferences işaretçi. Bu nedenle, ifadeleri *e*  **->**  `member` ve **(\****e***)**.`member` (burada *e* bir işaretçi temsil eder) verim aynı sonuçları (olmadığı dışında işleçleri  **->**  veya  **\***  aşırı yüklenmiş olan iş).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, her iki üye erişimi işleci biçimlerinin gösterir.  
@@ -87,4 +88,4 @@ int main() {
  [Sonek ifadeleri](../cpp/postfix-expressions.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
- [Yapı ve birleşim üyeleri](../c-language/structure-and-union-members.md)
+ [Yapı ve Birleşim Üyeleri](../c-language/structure-and-union-members.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3844dc5b53defcb02f1dab1a97f05760d05d531f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 617236d30f3c4473f6c7785db97789105d6cd565
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-overloading"></a>İşleç Aşırı Yüklemesi
 `operator` Anahtar sözcüğü bildirir ne belirten bir işlev `operator-symbol` bir sınıfın örneklerini uygulandığında anlamına gelir. Bu durum, birden fazla anlamı işleci verir veya "overloads". Bir işlecinin işlenenleri türlerini inceleniyor tarafından farklı anlamları arasındaki derleyici ayırır.  
@@ -100,13 +101,13 @@ type operator operator-symbol ( parameter-list )
   
 -   [Birli işleçleri](../cpp/overloading-unary-operators.md)  
   
--   [İkili işleçler](../cpp/binary-operators.md)  
+-   [İkili İşleçler](../cpp/binary-operators.md)  
   
 -   [Atama](../cpp/assignment.md)  
   
 -   [İşlev çağrısı](../cpp/function-call-cpp.md)  
   
--   [Alt simge oluşturma](../cpp/subscripting.md)  
+-   [Alt Simge Oluşturma](../cpp/subscripting.md)  
   
 -   [Sınıf üye erişimi](../cpp/member-access.md)  
   
@@ -175,20 +176,20 @@ int main() {
   
 ## <a name="in-this-section"></a>Bu bölümde  
   
-1.  [İşleç aşırı yüklemesi genel kuralları](../cpp/general-rules-for-operator-overloading.md)  
+1.  [İşleç Aşırı Yüklemesi Genel Kuralları](../cpp/general-rules-for-operator-overloading.md)  
   
-2.  [Aşırı yükleme birli işleçleri](../cpp/overloading-unary-operators.md)  
+2.  [Aşırı Yükleme Birli İşleçleri](../cpp/overloading-unary-operators.md)  
   
-3.  [İkili işleçler](../cpp/binary-operators.md)  
+3.  [İkili İşleçler](../cpp/binary-operators.md)  
   
 4.  [Atama](../cpp/assignment.md)  
   
 5.  [İşlev çağrısı](../cpp/function-call-cpp.md)  
   
-6.  [Alt simge oluşturma](../cpp/subscripting.md)  
+6.  [Alt Simge Oluşturma](../cpp/subscripting.md)  
   
-7.  [Üye erişimi](../cpp/member-access.md)  
+7.  [Üye Erişimi](../cpp/member-access.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -14,11 +14,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ab7ad407d5a3c2bb207f2dca601cfc583696ec88
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 25a1f041f9f2968fd74749727044573f1d787797
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="design-and-create-an-odbc-database-application"></a>Bir ODBC Veritabanı Uygulaması Tasarlama ve Oluşturma
 Bu konularda tasarım ve ODBC veritabanı uygulamanızı ayarlama yardımcı olur.  
@@ -27,10 +30,10 @@ Bu konularda tasarım ve ODBC veritabanı uygulamanızı ayarlama yardımcı olu
   
 -   [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md)  
   
--   [MFC ODBC kayıt kümelerini kullanma](../../data/odbc/use-mfc-odbc-recordsets.md)  
+-   [MFC ODBC Kayıt Kümelerini Kullanma](../../data/odbc/use-mfc-odbc-recordsets.md)  
   
--   [ODBC temelleri](../../data/odbc/odbc-basics.md)  
+-   [ODBC Temelleri](../../data/odbc/odbc-basics.md)  
   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+ [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9261cf2573a5494a49f2f544772738afcdbbb0c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: db505809c1fbc2c49e116b9c2f850f6e14dfbdf6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="character-sets"></a>Karakter Kümeleri
 C++ programı metnin belirli karakter kodlamasını kullanacak kaynak dosyalarında depolanır. C++ standart, kaynak dosyaları için bir temel kaynak karakter kümesi ve derlenmiş dosyalar için bir temel yürütme karakter kümesi belirtir. Visual C++ derlenmiş dosyalar ve ek bir kaynak dosyalarında kullanılacak yerel ayarlara özgü karakter kümesi sağlar.  

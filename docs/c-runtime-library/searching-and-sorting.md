@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 352930af34a0fc10831e5862a3013b703e56b153
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72dbf8b0f24b07cae12c55e68a7c66e17ae5761c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="searching-and-sorting"></a>Arama ve Sıralama
 Aşağıdaki işlevleri arama ve sıralama için kullanın.  
@@ -42,4 +43,4 @@ Aşağıdaki işlevleri arama ve sıralama için kullanın.
 |[qsort_s](../c-runtime-library/reference/qsort-s.md)|Daha güvenli bir sürümü`qsort`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

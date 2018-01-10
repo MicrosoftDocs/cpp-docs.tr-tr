@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b6c15c3890e5d5aa6e20cd0898f30aa0f56f50cf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1165f53027c5b8a116f97cd2660c7ca12c9e7302
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comerrorguid"></a>_com_error::GUID
 **Microsoft özel**  
@@ -43,4 +44,4 @@ GUID GUID( ) const throw( );
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_error sınıfı](../cpp/com-error-class.md)
+ [_com_error Sınıfı](../cpp/com-error-class.md)

@@ -32,11 +32,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9e06ca944768f8c4af2b207a75b923f5e1278943
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 26e88abf30c0f67fe5b104d560c40dd2adc57752
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (Çağırma Kuralı)
 Bu seçenekler çağıran işlevi veya çağrılan işlev çağrısı sonunu yığında bağımsız değişkenleri kaldırır olup olmadığını hangi işlev bağımsız değişkenleri yığına gönderilen düzenini ve derleyici tanımlamak için kullandığı ad dekorasyon kuralı belirler tekil işlevler.  
@@ -125,4 +126,4 @@ functionname@@number
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

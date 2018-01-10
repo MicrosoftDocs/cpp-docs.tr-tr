@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 128b670302683208680fbf1499c26af474c72c3e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9dd4873d8f9b3a658996bfd057372e8fb29e3478
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="commit-to-disk-constants"></a>Commit-To-Disk Sabitleri
 **Microsoft özel**  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/24/2017
  Belirtilen arabellek unwritten içeriğini diske yazar. Bu yürütme disk işlevi yalnızca açık çağrılar ya da ortaya [fflush](../c-runtime-library/reference/fflush.md) veya [_flushall](../c-runtime-library/reference/flushall.md) işlevi. Bu mod, hassas verilerle ilgilenirken kullanışlıdır. Örneğin, bir çağrı sonra programınızı sona ererse `fflush` veya `_flushall`, verilerinizi işletim sisteminin arabellekleri ulaşıldı emin olabilirsiniz. Ancak, bir dosya ile açılmış sürece **c** , veri hiçbir zaman Yap seçeneği, işletim sistemini de ererse diske.  
   
  **n**  
- Belirtilen arabellek unwritten içeriğini işletim sisteminin arabelleğe yazar. İşletim sistemi veriyi önbelleğe alma ve yazmak için bir en iyi zaman belirlemek için disk. Birçok koşullar altında bu davranış verimli program davranışını yapar. Ancak, veri saklama (banka hareketleri veya uçak bileti bilgi gibi) kritik öneme sahipse kullanmayı **c** seçeneği. **n**  Mod varsayılandır.  
+ Belirtilen arabellek unwritten içeriğini işletim sisteminin arabelleğe yazar. İşletim sistemi veriyi önbelleğe alma ve yazmak için bir en iyi zaman belirlemek için disk. Birçok koşullar altında bu davranış verimli program davranışını yapar. Ancak, veri saklama (banka hareketleri veya uçak bileti bilgi gibi) kritik öneme sahipse kullanmayı **c** seçeneği.  **n**  Mod varsayılandır.  
   
 > [!NOTE]
 >  **c** ve  **n**  seçenekleri için standart ANSI parçası olmayan `fopen`, ancak Microsoft uzantıları ve burada ANSI taşınabilirlik istenen kullanılmamalıdır.  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/24/2017
  [Akış g/ç](../c-runtime-library/stream-i-o.md)   
  [_fdopen, _wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)   
  [fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

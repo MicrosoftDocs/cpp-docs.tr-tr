@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 201d4a6493b71a78f2a438ac43c003a8b7d36ce7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eb9541bfc4a94253ac26e118e22c3abb2663a893
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="safebuffers"></a>safebuffers
 **Microsoft özel**  
@@ -35,7 +36,7 @@ __declspec( safebuffers )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **/GS** derleyici seçeneği yığında güvenlik denetimleri ekleyerek arabellek aşırı çalıştırmaları için test etmek derleyicinin neden olur. Güvenlik denetimleri için uygun veri yapılarını türlerini açıklanan [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md). Arabellek Taşması algılama hakkında daha fazla bilgi için bkz: [içinde derleyici güvenlik derinliği denetler](http://go.microsoft.com/fwlink/?linkid=7260) MSDN Web sitesinde.  
+ **/GS** derleyici seçeneği yığında güvenlik denetimleri ekleyerek arabellek aşırı çalıştırmaları için test etmek derleyicinin neden olur. Güvenlik denetimleri için uygun veri yapılarını türlerini açıklanan [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md). Arabellek Taşması algılama hakkında daha fazla bilgi için bkz: [içinde derleyici güvenlik derinliği denetler](http://go.microsoft.com/fwlink/p/?linkid=7260) MSDN Web sitesinde.  
   
  Uzman düzeyde el ile kod incelemesi veya harici analiz, işlevde arabellek taşması görülmediğini belirleyebilir. Uygulayarak bir işlev için güvenlik denetimleri bu durumda, gizleyebilirsiniz `__declspec(safebuffers)` işlev bildirimi anahtar sözcük.  
   

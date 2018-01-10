@@ -29,11 +29,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a88aab7023791de7f01ea9c3b189528e845bd02
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9b83093496d355fdba8b5d714875d08040ae28ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-source-managing-connections-odbc"></a>Veri Kaynağı: Bağlantıları Yönetme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -142,4 +145,4 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)   
  [Veri kaynağı: (ODBC) veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)   
- [CRecordset sınıfı](../../mfc/reference/crecordset-class.md)
+ [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

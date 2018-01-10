@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6f81732b4fccdac6ae0912b7617c28318da3e55
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1cf9c5675affb6dcaea78e0cabf2a4427ad03938
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="simple-assignment-c"></a>Basit Atama (C)
 Basit atama işlecinin sağ işleneni, sol işleneni atar. Sağ işleneni değerini atama ifadesi türüne dönüştürüldü ve sol işleneni tarafından belirlenen nesnesinde depolanan değerle değiştirir. Atama dönüştürme kurallarını uygulayın (bkz [atama dönüşümleri](../c-language/assignment-conversions.md)).  
@@ -39,4 +40,4 @@ x = y;
  Bu örnekte, değeri `y` türüne dönüştürülüp **çift** ve atanan `x`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C atama işleçleri](../c-language/c-assignment-operators.md)
+ [C Atama İşleçleri](../c-language/c-assignment-operators.md)

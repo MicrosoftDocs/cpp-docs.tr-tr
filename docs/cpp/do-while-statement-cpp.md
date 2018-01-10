@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b9ef52e04bd855824e709c66693cb989a18b1283
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7e03a20ad2b49d5c9337e0c8250e5d7c321ee882
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C++)
 Yürüten bir *deyimi* belirtilen sonlandırma koşulu kadar sürekli olarak ( *ifade*) sıfır olarak değerlendirilir.  
@@ -66,4 +67,4 @@ int main()
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   
  [for deyimi (C++)](../cpp/for-statement-cpp.md)   
- [Range-based for deyimi (C++)](../cpp/range-based-for-statement-cpp.md)
+ [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70525e774ea7c89cbd767b607a142d338b797df3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 374870a385e12d301731c0f9232d09895d8906c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-character-constants"></a>C Karakter Sabitleri
 "Karakter sabiti" gösterilebilir karakter tek tırnak içine kümesindeki tek bir karakter kapsayan tarafından oluşturulmuş (**' '**). Karakter sabitleri karakter belirtmek için kullanılan [yürütme karakter kümesi](../c-language/execution-character-set.md).  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/24/2017
  *onaltılık çıkış dizisi onaltılık basamaklı*  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C sabitleri](../c-language/c-constants.md)
+ [C Sabitleri](../c-language/c-constants.md)

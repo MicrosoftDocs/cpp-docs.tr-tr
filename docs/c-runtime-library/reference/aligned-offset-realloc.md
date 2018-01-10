@@ -33,11 +33,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9b90b8b2ff057e42425825ae7d02b8d0901a5e45
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9108ddc65fb7728bbb78b3002bad21ce9597f7c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignedoffsetrealloc"></a>_aligned_offset_realloc
 İle ayrılmış bir bellek bloğu boyutu değişir [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) veya [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md).  
@@ -88,4 +89,4 @@ void * _aligned_offset_realloc(
  Daha fazla bilgi için bkz: [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri hizalama](../../c-runtime-library/data-alignment.md)
+ [Veri Hizalama](../../c-runtime-library/data-alignment.md)

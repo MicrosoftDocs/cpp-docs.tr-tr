@@ -12,11 +12,12 @@ caps.latest.revision: "28"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 181dcba15098f7cd75eec083ab977969bde622ba
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6c2e05e3570179ac315e16576c72d2a37b580482
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
 Normal C tarzı diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) C + +/ CX programı (rağmen [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde yayımlanır herhangi bir API'yi içinde bir C tarzı dizi dönüştürmeniz gerekir veya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak türü. [Platform::Array](../cppcx/platform-array-class.md) türüdür ne kadar etkili ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kılavuz olarak dizi işlemlerinin çok gerçekleştirir iç kod kullanımını kaçınmalısınız. öğeleri.  

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ee39e85c7b0521171c79a0082bfe76087f403c91
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f264db255dd08c47ba5d4fee13c9180a2c6f2ebb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-string-literals"></a>Dizi Değişmez Değerleri Özeti
 *değişmez dize değeri*:  
@@ -34,4 +35,4 @@ ms.lasthandoff: 10/24/2017
  Kaynak karakteri, herhangi bir üye kümesi çift tırnak işareti dışında ("), eğik çizgi (\\), ya da yeni satır karakteri *kaçış sırası*  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük dilbilgisi](../c-language/lexical-grammar.md)
+ [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

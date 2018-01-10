@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 1984ba2b2291c14403af1237a9c990de2c0e0217
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a41a5a97e94bdf9476d8345a7f9e103b81466f6e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fundamental-types-ccx"></a>Temel türler (C + +/ CX)
 Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ türleri eşlenen temel Windows çalışma zamanı türleri için tür tanımları sağlayarak Windows çalışma zamanı mimarisi tarafından tanımlanan tür sistemi... C + +/ CX Boolean, karakter ve sayısal temel türleri uygular. Bu tür tanımları tanımlanan `default` ad alanı hiçbir zaman açıkça belirtilmesi gerekiyor. Ayrıca, C + +/ CX, sarmalayıcıları ve somut uygulamaları belirli Windows çalışma zamanı türleri ve arabirimleri sağlar.  
@@ -60,4 +61,4 @@ Ek olarak standart C++ yerleşik türleri, C + +/ CX destekleyen standart C++ t�
 |IntPtr|(Yalnızca iç kullanım için.)  İşaretçi olarak kullanılan 64-bit imzalı bir değer.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tür sistemi](../cppcx/type-system-c-cx.md)
+ [Tür Sistemi](../cppcx/type-system-c-cx.md)

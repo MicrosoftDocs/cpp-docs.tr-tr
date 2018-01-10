@@ -31,11 +31,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 941cf63dd7a5eb761881e7068fa141d5e6b87a33
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 635c6eee50f5d1dfb19f0c1b823dab018922c490
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sharing-constants"></a>Paylaşım Sabitleri
 Dosya Paylaşımı için sabitleri modları.  
@@ -64,4 +65,4 @@ Dosya Paylaşımı için sabitleri modları.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
  [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

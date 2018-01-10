@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c57536aed0c53e8f74ac6031632e60a403e5ce30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a58adfefc5e2b3b5085a44c38dd392d3369421c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametreler ve dönüş türü adını belirtir. Bir işlev tanımı ayrıca, yerel değişkenleri ve işlev yaptığı belirlemek deyimleri bildirimleri ile işlev gövdesi içerir.  

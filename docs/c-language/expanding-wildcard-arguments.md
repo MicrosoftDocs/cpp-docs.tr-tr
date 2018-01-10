@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b0c1deca52e74241b56c3c152e66a74d652b4829
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f710cc1695579bf1a6f873229c347966888bc745
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="expanding-wildcard-arguments"></a>Joker Karakter Bağımsız Değişkenlerini Genişletme
 **Microsoft özel**  
@@ -41,4 +42,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlantı seçenekleri](../c-runtime-library/link-options.md)   
- [Main işlevi ve Program yürütme](../c-language/main-function-and-program-execution.md)
+ [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

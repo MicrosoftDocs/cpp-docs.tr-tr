@@ -14,26 +14,27 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1a04bcc938d9708cb7ec8e09d044dfe59b2fe864
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2058738135815cbb259fe534c9d901028379fab5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lexical-grammar"></a>Sözcük Dilbilgisi
 -   [Belirteçleri](../c-language/summary-of-tokens.md)  
   
--   [Anahtar sözcükler](../c-language/summary-of-keywords.md)  
+-   [Anahtar Sözcükler](../c-language/summary-of-keywords.md)  
   
--   [Tanımlayıcıları](../c-language/summary-of-identifiers.md)  
+-   [Tanımlayıcılar](../c-language/summary-of-identifiers.md)  
   
--   [Sabitleri](../c-language/summary-of-constants.md)  
+-   [Sabitler](../c-language/summary-of-constants.md)  
   
 -   [Dize değişmez değerleri](../c-language/summary-of-string-literals.md)  
   
 -   [İşleçler](../c-language/operators-c.md)  
   
--   [Noktalama işaretleri](../c-language/punctuators.md)  
+-   [Noktalama İşaretçileri](../c-language/punctuators.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md)
+ [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)

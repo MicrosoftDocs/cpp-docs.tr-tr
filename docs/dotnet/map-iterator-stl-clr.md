@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b34c5d93fffd236cd16843fd074b5c1b8181c4b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5770c2ae9805cccf6da6cf83c96ed9d3e9860cd7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapiterator-stlclr"></a>map::iterator (STL/CLR)
 Denetlenen dizi için bir yineleyici türü.  
@@ -69,4 +72,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [Map::const_iterator (STL/CLR)](../dotnet/map-const-iterator-stl-clr.md)
+ [map::const_iterator (STL/CLR)](../dotnet/map-const-iterator-stl-clr.md)

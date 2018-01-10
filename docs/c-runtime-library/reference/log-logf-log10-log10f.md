@@ -45,11 +45,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8146d4ebe041fa3419aff3614edcd8fe9fa8b8d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d60347bc47c05a19cb1487e7a6738d328c78f846
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="log-logf-log10-log10f"></a>log, logf, log10, log10f
 Logaritma hesaplar.  
@@ -178,4 +179,4 @@ Log base 2 of 65536.000000 is 16.000000
  [_matherr](../../c-runtime-library/reference/matherr.md)   
  [POW, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)   
  [_Cılog](../../c-runtime-library/cilog.md)   
- [_Cılog10](../../c-runtime-library/cilog10.md)
+ [_CIlog10](../../c-runtime-library/cilog10.md)

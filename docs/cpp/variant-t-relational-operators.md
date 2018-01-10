@@ -26,11 +26,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eacfe9584cedfd45a952dca62dae545f617b1433
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 86ae6c517eaefc45c6fbeb5108efdf7e6b92b769
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="variantt-relational-operators"></a>_variant_t İlişkisel İşleçleri
 **Microsoft özel**  
@@ -71,4 +72,4 @@ bool operator!=(
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_variant_t sınıfı](../cpp/variant-t-class.md)
+ [_variant_t Sınıfı](../cpp/variant-t-class.md)

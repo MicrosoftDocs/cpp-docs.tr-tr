@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bc01437b47683da92420f2375b9ee0d8fb562ca6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e41d8eefe3e8751dc7240ac37b3125acc37d33c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fcloseall"></a>fcloseall
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md) yerine.

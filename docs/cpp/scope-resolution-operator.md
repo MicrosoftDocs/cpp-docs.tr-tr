@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ff57d6012fd4a3a98ec29fe58072711654b3ab23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 69b52b3029271ffae3d4a7b3441c49a01270abb4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scope-resolution-operator-"></a>Kapsam Çözümü İşleci: ::
 Kapsam çözümü işleci `::` tanımlamak ve farklı kapsamlarda kullanılan tanımlayıcıları belirsizliğini ortadan kaldırmak için kullanılır. Kapsam hakkında daha fazla bilgi için bkz: [kapsam](../cpp/scope-visual-cpp.md).  
@@ -179,4 +180,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [Ad alanları](../cpp/namespaces-cpp.md)   
+ [Ad Alanları](../cpp/namespaces-cpp.md)   

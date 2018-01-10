@@ -28,11 +28,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d6fc7dde496560fbb0af97f34d0e49f3e2d369b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1ec285a8346c5f879fc2e82fc88aa2195b9b118
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="umask"></a>umask
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_umask](../../c-runtime-library/reference/umask.md) veya Gelişmiş Güvenlik [_umask_s](../../c-runtime-library/reference/umask-s.md) yerine.

@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 925054c5716c744539c3f68079df34bcff3b3064
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1993fe604ee575da9956bfbfb108dd0355adb08
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformmetadataattribute-attribute"></a>Platform::metadata::attribute özniteliği
 Tüm öznitelikleri için temel sınıfı temsil eder.  
@@ -45,4 +46,4 @@ public ref class Attribute abstract : Object
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::metadata Namespace](../cppcx/platform-metadata-namespace.md)
+ [Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)

@@ -17,25 +17,26 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71e5c715c6065e8c05466bc3f09eba57606b304e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2fd746124cdfc267267bc5d6803700cca507c34d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-keywords"></a>C Anahtar Sözcükleri
 "Anahtar sözcükler" C derleyicisi için özel anlamı olan sözcüklerdir. 7 ve 8. çeviri aşamalarında, tanımlayıcının yazımı ve büyük/küçük harf kullanımı C anahtar sözcüğüyle aynı olamaz. (Bir açıklamasını görmek [çeviri aşamaları](../preprocessor/phases-of-translation.md) içinde *önişlemci başvurusu*; tanımlayıcıları hakkında bilgi için bkz: [tanımlayıcıları](../c-language/c-identifiers.md).) C dili, aşağıdaki anahtar sözcükleri kullanır:  
   
 |||||  
 |-|-|-|-|  
-|**Otomatik**|**çift**|**int**|**yapısı**|  
-|**sonu**|**else**|**uzun**|**geçiş**|  
-|**durumu**|**Enum**|**kaydetme**|**TypeDef**|  
-|**char**|**extern**|**Döndür**|**birleşim**|  
-|**const**|**kayan nokta**|**kısa**|**İmzasız**|  
-|**devam etmek**|**için**|**İmzalı**|**void**|  
-|**Varsayılan**|**Git**|**sizeof**|**volatile**|  
-|**yapın**|**Eğer**|**statik**|**while**|  
+|**Otomatik**|**double**|**int**|**struct**|  
+|**break**|**else**|**long**|**switch**|  
+|**durumu**|**enum**|**kaydetme**|**TypeDef**|  
+|**char**|**extern**|**return**|**birleşim**|  
+|**const**|**float**|**short**|**İmzasız**|  
+|**continue**|**for**|**İmzalı**|**void**|  
+|**default**|**goto**|**sizeof**|**volatile**|  
+|**do**|**Eğer**|**static**|**while**|  
   
  Anahtar sözcükleri yeniden tanımlayamazsınız. Bununla birlikte, anahtar kelimeleri derleme önce C kullanarak atanması metin belirtebilirsiniz [önişlemci yönergeleri](../preprocessor/preprocessor-directives.md).  
   
@@ -64,4 +65,4 @@ ms.lasthandoff: 10/24/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C öğeleri](../c-language/elements-of-c.md)
+ [C Öğeleri](../c-language/elements-of-c.md)

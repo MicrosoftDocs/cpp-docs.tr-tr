@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0da7872ab6a93b737bf402ded085a4fb18551798
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4e2b48630fab9d27bf5db442617a5184bd26de5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>Nesne Yaşam Süresi ve Kaynak Yönetimi (Modern C++)
 Yönetilen dilleri, C++ programı çalışırken, otomatik olarak no-uzun-kullanılan bellek kaynakları serbest bırakır, atık toplama (GC) sahip değil. C++'da, kaynak yönetimi için nesne ömrü doğrudan ilişkilidir. Bu belgede C++ nesne yaşam süresi ve yönetmek nasıl etkileyen faktörler açıklanmaktadır.  
@@ -29,7 +30,7 @@ Yönetilen dilleri, C++ programı çalışırken, otomatik olarak no-uzun-kullan
   
  Başka bir önemli kavram ömrü Yönetimi'nde: Yıkıcılar. Yıkıcılar kaynak sürüm kapsüller.  (Yaygın olarak kullanılan anımsatıcı RRID, kaynak sürüm olan yok etme olur.)  Bir kaynak "", sistemden ve daha sonra geri vermek olan şeydir.  Bellek, en yaygın kaynak olmakla birlikte de vardır dosyaları, yuva, doku ve diğer bellek içi kaynaklar. "Kaynak sahibi olan" ihtiyacınız fakat ile tamamladığınızda serbest bırakmak de olduğunda kullanabileceğiniz anlamına gelir.  Bir nesne kaldırıldığı zaman kendi yıkıcı onu ait kaynakları serbest bırakır.  
   
- DAG (yönlendirilmiş Çevrimsiz grafik) son kavramdır.  Bir programı sahipliği yapısını DAG oluşturur. Hiçbir nesne kendisini sahip olabileceği — olmayan yalnızca imkansız ancak aynı zamanda kendiliğinden anlamsız. Ancak, iki nesne üçüncü bir nesnenin sahipliğini paylaşabilirsiniz.  Bağlantılar çeşitli türlerde DAG şöyle olabilir: A B üyesi olduğu (B sahibi A), C depoları bir `vector<D>` (C sahibi her D öğesi) E depoları bir `shared_ptr<F>` (E paylaşır F, sahipliğini büyük olasılıkla diğer nesnelerle), vb..  Hiçbir döngüleri vardır ve DAG her bir bağlantının bir nesne tarafından temsil edilen sürece yıkıcı (yerine, ham işaretçi, tanıtıcı veya başka bir mekanizma) olan sonra dil bunları engellediğinden kaynak sızıntıları olanaksız. Hemen artık, çalışan bir atık toplayıcı gerekli sonra kaynakları serbest bırakılır. İzleme ömrü yükünü serbest yığını kapsam, tabanları, üyeleri ve ilgili örnekler için ucuz için ise `shared_ptr`.  
+ DAG (yönlendirilmiş Çevrimsiz grafik) son kavramdır.  Bir programı sahipliği yapısını DAG oluşturur. Hiçbir nesne kendisini sahip olabileceği — olmayan yalnızca imkansız ancak aynı zamanda kendiliğinden anlamsız. Ancak, iki nesne üçüncü bir nesnenin sahipliğini paylaşabilirsiniz.  Bağlantılar çeşitli türlerde DAG şöyle olabilir: A B üyesi olduğu (B sahibi A), C depoları bir `vector<D>` (C sahibi her D öğesi) E depoları bir `shared_ptr<F>` (E paylaşır F, sahipliğini büyük olasılıkla diğer nesnelerle), vb.  Hiçbir döngüleri vardır ve DAG her bir bağlantının bir nesne tarafından temsil edilen sürece yıkıcı (yerine, ham işaretçi, tanıtıcı veya başka bir mekanizma) olan sonra dil bunları engellediğinden kaynak sızıntıları olanaksız. Hemen artık, çalışan bir atık toplayıcı gerekli sonra kaynakları serbest bırakılır. İzleme ömrü yükünü serbest yığını kapsam, tabanları, üyeleri ve ilgili örnekler için ucuz için ise `shared_ptr`.  
   
 ### <a name="heap-based-lifetime"></a>Yığın tabanlı yaşam süresi  
  Yığın nesne ömrü için kullanmak [akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md). Kullanım `shared_ptr` ve `make_shared` varsayılan işaretçi ve ayırıcı olarak. Kullanım `weak_ptr` döngüsü sonu, önbelleğe alma yapabilir ve etkilemeden veya yaşam hakkında hiçbir şey varsayılarak olmadan nesneleri inceleyin.  

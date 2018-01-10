@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cee551dfd0dbac11110a945edee21af6636138bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 307cf91bf86f2912ad6cafa7e89f48e614c3865a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="right-shifts"></a>Sağa Kaydırmalar
 Sağa kaydırma negatif değer sonucunu tam sayı türdür  
@@ -29,4 +30,4 @@ Sağa kaydırma negatif değer sonucunu tam sayı türdür
  İşaretsiz tamsayıya sağ geçtiğinde en önemli bit işaretli değildir. Örneğin, 0xF000 imzasız ise sonucu 0x7800 olur. Kaydırma bir `unsigned` ya da pozitif `int` sağ 32 kez 0x00000000 üretir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tamsayılara](../c-language/integers.md)
+ [Tam Sayılar](../c-language/integers.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 46aaf6677a779ada2457814aecba5c84a59e1f1c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1eef6199f67702aeb3d3a886c52e910302a7dcad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 **Microsoft özel**  
@@ -38,7 +39,7 @@ __declspec( thread ) int tls_i = 1;
   
  Bu yönergeler, yerel değişkenleri statik olarak bağlı iş parçacığı bildirme uyulması gerekir:  
   
--   Kullanımını **__declspec(thread)** ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL'SİNİN alır**.**  
+-   Dinamik başlatma sahip iş parçacığı yerel değişkenleri yalnızca DLL'yi yükleme iş parçacığı ve zaten işlemde çalışan iş parçacıklarının başlatılır. Daha fazla bilgi için bkz: [iş parçacığı](../cpp/thread.md).  
   
 -   İş parçacığı özniteliği yalnızca veri bildirimler ve tanımlar uygulayabilirsiniz. İşlev bildirimleri veya tanımlarında kullanılamaz. Örneğin, aşağıdaki kod derleyici hatası oluşturur:  
   
@@ -102,4 +103,4 @@ __declspec( thread ) int tls_i = 1;
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C genişletilmiş depolama sınıfı öznitelikler](../c-language/c-extended-storage-class-attributes.md)
+ [C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)

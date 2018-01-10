@@ -851,11 +851,12 @@ ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f2b3dea72647bc4c4f0d49b0af1de9d6bcb0f116
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: bab5e5e8316ff181ce8b2a190c721336fb5032cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="internal-crt-globals-and-functions"></a>İç CRT Globals ve işlevleri  
   
@@ -900,19 +901,19 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı uygulamak iç
 |_chvalidator_l|  
 |_CIacos|  
 |_CIasin|  
-|[_Cıatan](../c-runtime-library/ciatan.md)|  
-|[_Cıatan2](../c-runtime-library/ciatan2.md)|  
-|[_Cıcos](../c-runtime-library/cicos.md)|  
+|[_CIatan](../c-runtime-library/ciatan.md)|  
+|[_CIatan2](../c-runtime-library/ciatan2.md)|  
+|[_CIcos](../c-runtime-library/cicos.md)|  
 |_CIcosh|  
-|[_Cıexp](../c-runtime-library/ciexp.md)|  
-|[_Cıfmod](../c-runtime-library/cifmod.md)|  
-|[_Cılog](../c-runtime-library/cilog.md)|  
-|[_Cılog10](../c-runtime-library/cilog10.md)|  
-|[_Cıpow](../c-runtime-library/cipow.md)|  
-|[_Cısin](../c-runtime-library/cisin.md)|  
+|[_CIexp](../c-runtime-library/ciexp.md)|  
+|[_CIfmod](../c-runtime-library/cifmod.md)|  
+|[_CIlog](../c-runtime-library/cilog.md)|  
+|[_CIlog10](../c-runtime-library/cilog10.md)|  
+|[_CIpow](../c-runtime-library/cipow.md)|  
+|[_CIsin](../c-runtime-library/cisin.md)|  
 |_CIsinh|  
-|[_Cısqrt](../c-runtime-library/cisqrt.md)|  
-|[_Cıtan](../c-runtime-library/citan.md)|  
+|[_CIsqrt](../c-runtime-library/cisqrt.md)|  
+|[_CItan](../c-runtime-library/citan.md)|  
 |_CItanh|  
 |__clean_type_info_names_internal|  
 |_configure_narrow_argv|  
@@ -1190,4 +1191,4 @@ Bu işlevler ve işlev makroları CRT ve C++ Standart Kitaplığı uygulamak iç
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+[Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

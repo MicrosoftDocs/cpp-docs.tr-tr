@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6494773de5bd64e66c2031a618d7a8d899215c2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 50fc0aea1ef50124cd98b0d0498b767d1f00e5c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="record-field-exchange-rfx"></a>Kayıt Alanı Değişimi (RFX)
 MFC ODBC veritabanı sınıfları veri kaynağı arasında veri taşımayı otomatikleştirmek ve [kayıt kümesi](../../data/odbc/recordset-odbc.md) nesnesi. Öğesinden bir sınıf türetin zaman [CRecordset](../../mfc/reference/crecordset-class.md) ve toplu satır getirme kullanmayın, kayıt alanı değişimi (RFX) mekanizması tarafından aktarılan veriler.  
@@ -47,15 +50,15 @@ MFC ODBC veritabanı sınıfları veri kaynağı arasında veri taşımayı otom
   
  Aşağıdaki konularda, kayıt kümesi nesnelerini kullanarak ayrıntılarını açıklanır:  
   
--   [Kayıt Alanı Değişimi: RFX kullanma](../../data/odbc/record-field-exchange-using-rfx.md)  
+-   [Kayıt Alanı Değişimi: RFX Kullanma](../../data/odbc/record-field-exchange-using-rfx.md)  
   
--   [Kayıt Alanı Değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)  
+-   [Kayıt Alanı Değişimi: RFX İşlevlerini Kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md)  
   
--   [Kayıt Alanı Değişimi: RFX nasıl çalışır?](../../data/odbc/record-field-exchange-how-rfx-works.md)  
+-   [Kayıt Alanı Değişimi: RFX'in Çalışması](../../data/odbc/record-field-exchange-how-rfx-works.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)   
  [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
  [MFC ODBC tüketici](../../mfc/reference/adding-an-mfc-odbc-consumer.md)   
  [Veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)   
- [CRecordset sınıfı](../../mfc/reference/crecordset-class.md)
+ [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

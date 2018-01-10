@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 60a2131b08b9f0ac119bdcd414f2d4d1761a9b6c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 961ede0b381555b3e41d0432f2aa4093ee496ac1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="floating-point-support"></a>Kayan Nokta Desteği
 Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99 tarafından gerekli olanlar da dahil olmak üzere, noktası matematik kitaplık işlevleri kayan. Bu işlevler, performans doğruluk ile dengelemek için uygulanır. Doğru yuvarlatılmış sonuç üretme şekilde basımı karşılamayacak kadar pahalı olabilir çünkü bu işlevler verimli bir şekilde doğru yuvarlatılmış sonucu yaklaşık üretmek için tasarlanmıştır. Olabilir ancak durumlarda çoğu durumda, üretilen içinde doğru yuvarlatılmış sonuç 1 ulp +/-sonucudur büyük yanlış bilgi olduğu.  
@@ -33,19 +34,19 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  CRT bunlar kayan nokta işlevleri destekler:  
   
- [Abs labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
+ [abs, labs, llabs, _abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
- [ACOS, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)  
+ [acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)  
   
- [ACOSH, acoshf, acoshl](../c-runtime-library/reference/acosh-acoshf-acoshl.md)  
+ [acosh, acoshf, acoshl](../c-runtime-library/reference/acosh-acoshf-acoshl.md)  
   
  [asin, asinf, asinl](../c-runtime-library/reference/asin-asinf-asinl.md)  
   
- [ASİNH, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)  
+ [asinh, asinhf, asinhl](../c-runtime-library/reference/asinh-asinhf-asinhl.md)  
   
  [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
   
- [ATANH, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)  
+ [atanh, atanhf, atanhl](../c-runtime-library/reference/atanh-atanhf-atanhl.md)  
   
  [_atodbl, _atodbl_l](../c-runtime-library/reference/atodbl-atodbl-l-atoldbl-atoldbl-l-atoflt-atoflt-l.md)  
   
@@ -129,7 +130,7 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)  
   
- [FMA, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)  
+ [fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)  
   
  [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)  
   
@@ -163,7 +164,7 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [imaxdiv](../c-runtime-library/reference/imaxdiv.md)  
   
- [isNaN, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)  
+ [isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)  
   
  [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
@@ -177,7 +178,7 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [llround, llroundf, llroundl](../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)  
   
- [Günlük, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)  
+ [log, logf, log10, log10f](../c-runtime-library/reference/log-logf-log10-log10f.md)  
   
  [log1p, log1pf, log1pl](../c-runtime-library/reference/log1p-log1pf-log1pl2.md)  
   
@@ -199,7 +200,7 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [modf, modff](../c-runtime-library/reference/modf-modff-modfl.md)  
   
- [NaN, nanf, nanl](../c-runtime-library/reference/nan-nanf-nanl.md)  
+ [nan, nanf, nanl](../c-runtime-library/reference/nan-nanf-nanl.md)  
   
  [nanf](../c-runtime-library/reference/nan-nanf-nanl.md)  
   
@@ -211,13 +212,13 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [Norm, normf, norml](../c-runtime-library/reference/norm-normf-norml1.md)  
   
- [POW, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)  
+ [pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)  
   
- [kalan, remainderf, remainderl](../c-runtime-library/reference/remainder-remainderf-remainderl.md)  
+ [remainder, remainderf, remainderl](../c-runtime-library/reference/remainder-remainderf-remainderl.md)  
   
  [remquo, remquof, remquol](../c-runtime-library/reference/remquo-remquof-remquol.md)  
   
- [Yazdır, rintf, rintl](../c-runtime-library/reference/rint-rintf-rintl.md)  
+ [rint, rintf, rintl](../c-runtime-library/reference/rint-rintf-rintl.md)  
   
  [_rotl, _rotl64, _rotr, _rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)  
   
@@ -235,7 +236,7 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
   
  [SİNH, sinhf, sinhl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)  
   
- [Sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)  
+ [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)  
   
  [_status87, _statusfp, _statusfp2](../c-runtime-library/reference/status87-statusfp-statusfp2.md)  
   
@@ -256,4 +257,4 @@ Microsoft C çalışma zamanı kitaplığı (CRT) birçok sağlayan tüm ISO C99
  [_y0, _y1, _yn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

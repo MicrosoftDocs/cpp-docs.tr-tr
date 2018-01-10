@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f0ac465ec20d0893add63d8b5791b9445b17f8fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aa6285504a194d909dec7a446437ca9f584272a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 "Bildirim" yorumunu ve tanımlayıcıları Kümesi özniteliklerini belirtir. Ayrıca nesne veya tanımlayıcısıyla adlı işlev için ayrılmış depolama neden olan bir bildirimi "tanımı." olarak adlandırılır Değişkenler, İşlevler ve türler için C bildirimleri bu sözdizimine sahip:  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/24/2017
 > [!NOTE]
 >  Bu sözdiziminin `declaration` aşağıdaki bölümlerde yinelenmez. Aşağıdaki bölümlerde sözdizimi genellikle başlıyorsa `declarator` nonterminal.  
   
- Bildirimler *init bildirimcisi listesi* adın geçmesi; tanımlayıcıları içerir *init* Başlatıcısı ifadesinin kısaltmasıdır. *İnit bildirimcisi listesi* her biri olabilir ek tür bilgileri veya bir başlatıcı ya da her ikisini de Bildirimciler, virgülle ayrılmış bir dizisidir.. `declarator` Varsa bildirilen tanımlayıcıları içerir. *Bildirim tanımlayıcıları* nonterminal belirtmek depolama süresi, bağlantı türü ve depolama sınıfı tanımlayıcıları dizisini oluşur ve en az bir parçası Bildirimciler belirtmek varlık türü. Bu nedenle, bildirimleri depolama sınıfı tanımlayıcıları, tür tanımlayıcıları, tür niteleyicileri, bildirimler ve başlatıcılar bazı birleşiminden oluşur.  
+ Bildirimler *init bildirimcisi listesi* adın geçmesi; tanımlayıcıları içerir *init* Başlatıcısı ifadesinin kısaltmasıdır. *İnit bildirimcisi listesi* her biri olabilir ek tür bilgileri veya bir başlatıcı ya da her ikisini de Bildirimciler, virgülle ayrılmış bir dizisidir. `declarator` Varsa bildirilen tanımlayıcıları içerir. *Bildirim tanımlayıcıları* nonterminal belirtmek depolama süresi, bağlantı türü ve depolama sınıfı tanımlayıcıları dizisini oluşur ve en az bir parçası Bildirimciler belirtmek varlık türü. Bu nedenle, bildirimleri depolama sınıfı tanımlayıcıları, tür tanımlayıcıları, tür niteleyicileri, bildirimler ve başlatıcılar bazı birleşiminden oluşur.  
   
  Bildirimleri bir içerebilir veya daha fazla isteğe bağlı öznitelik listelenen *özniteliği seq*; *seq* dizisi ifadesinin kısaltmasıdır. Microsoft'a özgü özniteliklerden çeşitli bu kitap boyunca ayrıntılı ele alınmıştır işlevler gerçekleştirir.  
   
@@ -80,4 +81,4 @@ int const *fp;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md)   
  [Bildirimler ve türler](../c-language/declarations-and-types.md)   
- [Bildirimlerin özeti](../c-language/summary-of-declarations.md)
+ [Bildirimlerin Özeti](../c-language/summary-of-declarations.md)

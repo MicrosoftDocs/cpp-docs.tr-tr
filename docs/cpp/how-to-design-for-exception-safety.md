@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7cc8ffa40b337765a0970e95862947155c7ae6f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7d15df2f810848bb9349bc98c722ac02ff8cda17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-design-for-exception-safety"></a>Nasıl yapılır: Özel Durum Güvenliği Tasarımı
 Özel durum mekanizması avantajlarından biri özel durumla ilgili verileri birlikte bu yürütme, catch, işleme deyimi doğrudan ilk özel durum oluşturur deyimden atlar. İşleyici düzeyleri herhangi bir sayıda çağrı yığınında yukarı olabilir. Try deyimi ve throw deyimine arasında adlı işlevleri oluşturulan özel durumla ilgili herhangi bir şey bilmeniz gerekli değildir.  Ancak, böylece kapsam "beklenmedik bir şekilde dışında" gidebilirsiniz tasarlanmalıdır burada bir özel durum yukarı öğesinden aşağıda yayılması ve böylece kısmen oluşturulmuş nesnelerin arkasında ayrılmadan sızmasını bellek herhangi bir noktasını veya kullanılamaz durumda veri yapılarını sahip oldukları.  
@@ -121,4 +122,4 @@ public:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)   
- [Nasıl yapılır: özel durumlu ve özel durumlu olmayan kod arasındaki arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)
+ [Nasıl yapılır: Özel Durumlu Kod ve Özel Durumlu Olmayan Kod Arasında Arabirim](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

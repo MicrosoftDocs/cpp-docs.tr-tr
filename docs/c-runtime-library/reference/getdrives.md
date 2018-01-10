@@ -34,11 +34,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 21f9c1a5668e15da6ca55fd1d28c038dd7d8c81e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70a3c3e9f7d8aea29e8a90caa0d7cc157a9288c9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="getdrives"></a>_getdrives
 Şu anda kullanılabilir disk sürücüleri temsil eden bir bit maskesi döndürür.  
@@ -110,4 +111,4 @@ E:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizin denetimi](../../c-runtime-library/directory-control.md)
+ [Dizin Denetimi](../../c-runtime-library/directory-control.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3cb38558254ff900af798aebd2960047df0d89df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ef2183390b2aca2fb54e1468bd59e697374a355a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="specifying-an-inline-file"></a>Satır İçi Dosya Belirtme
 İki köşeli belirtin (<<) komutta nerede *filename* görünecektir. Köşeli makrosu genişletme olamaz.  
@@ -36,4 +37,4 @@ ms.lasthandoff: 10/24/2017
  Komutu çalıştırdığınızda, köşeli parantez değiştirilir *filename*, belirtildiği takdirde veya NMAKE oluşturulan benzersiz bir ad. Belirtilmişse, *filename* köşeli bir boşluk veya sekme olmadan izlemeniz gerekir. Bir yola izin verilir. Hiçbir uzantı gerekli veya olduğu varsayılır. Varsa *filename* belirtilirse, dosyanın geçerli oluşturulur veya belirtilen dizin, var olan üzerine dosya bu adı; Aksi takdirde TMP dizininde oluşturulur (veya geçerli dizinin varsa TMP ortam değişkeni tanımlı değil). Bir önceki varsa *filename* olduğundan yeniden, NMAKE önceki dosya ile değiştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyasındaki satır içi dosyalar](../build/inline-files-in-a-makefile.md)
+ [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

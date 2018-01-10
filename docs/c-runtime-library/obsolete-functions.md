@@ -38,11 +38,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8a8811703234f2c4e23dab6ad2b99b1aae316c04
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 195dc17d41c2c089600958976d37dd59f2d60232
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="obsolete-functions"></a>Artık kullanılmayan işlevleri
 Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncelleştirilmiş sürümleri için değiştirme öneririz. Artık kullanılmayan diğer işlevleri CRT kaldırıldı. Bu konu, kullanılmayan olarak kullanım dışı işlevler ve belirli bir Visual Studio sürümünde kaldırılmıştır işlevleri listeler.  
@@ -66,7 +67,7 @@ Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncel
 |Artık kullanılmayan işlevi|Alternatifi|  
 |-----------------------|-----------------|  
 |[_cgets, _cgetws](../c-runtime-library/cgets-cgetws.md)|[_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)|  
-|[_getws alır](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|  
+|[gets, _getws](../c-runtime-library/gets-getws.md)|[gets_s, _getws_s](../c-runtime-library/reference/gets-s-getws-s.md)|  
 |[_get_output_format](../c-runtime-library/get-output-format.md)|Yok.|  
 |[_heapadd](../c-runtime-library/heapadd.md)|Yok.|  
 |[_heapset](../c-runtime-library/heapset.md)|Yok.|  
@@ -77,6 +78,6 @@ Belirli kitaplık işlevleri geçersizdir ve daha yeni eşdeğerleri. Bu güncel
 |[_set_output_format](../c-runtime-library/set-output-format.md)|Yok.|  
   
 ## <a name="removed-from-the-crt-in-earlier-versions-of-visual-studio"></a>Visual Studio'nun önceki sürümlerindeki CRT kaldırıldı  
- [_Lock'ı](../c-runtime-library/lock.md)  
+ [_lock](../c-runtime-library/lock.md)  
   
  [_unlock](../c-runtime-library/unlock.md)

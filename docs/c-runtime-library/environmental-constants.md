@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51028023d222b9b4491c84c3400de91a697e0047
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d2e965795a6fd113369b35d2daba07d1efc77e1e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="environmental-constants"></a>Ortam Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/24/2017
 |`_MAX_ENV`|Bir ortam dize boyutu en çok dize.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

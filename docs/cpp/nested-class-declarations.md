@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c48ee39a9053e098b67367d0c144fbf6e284b9d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 247be4e212efbe2b8061deed200a8350b87fc7a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nested-class-declarations"></a>İç İçe Geçmiş Sınıf Bildirimleri
 Bir sınıf başka bir sınıf kapsamında bildirilebilir. Bu tür bir sınıf bir "sınıfı iç içe." olarak adlandırılır İç içe geçmiş sınıflar kapsayan sınıfı kapsamında olduğu kabul edilir ve bu kapsam içinde kullanılabilir. İç içe bir sınıf hemen kapsayan kapsamı dışında kapsamdan başvurmak için bir tam ad kullanmanız gerekir.  
@@ -213,4 +214,4 @@ int GetExtendedErrorStatus( char *message )
  Önceki arabirimiyle birkaç sınıflarını kopyalanan hata iletisi istedikleri bellek konumuna geçirerek bu işlev hizmetlerini kullanabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)
+ [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

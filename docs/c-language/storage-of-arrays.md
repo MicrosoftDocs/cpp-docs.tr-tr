@@ -18,14 +18,15 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f475e7870c1ae093966a77a57e299dd9c007b8f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1df2be8059f67b94cd7ee068430639a27a69b43c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-of-arrays"></a>Dizileri Depolama
 Bir dizi türü ile ilişkilendirilmiş olan depolama, tüm alt öğeleri için gerekli olan depolamadır. Bir dizinin öğeleri, ilk öğeden son öğeye kadar bitişik ve artan bellek konumlarında depolanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizi bildirimleri](../c-language/array-declarations.md)
+ [Dizi Bildirimleri](../c-language/array-declarations.md)

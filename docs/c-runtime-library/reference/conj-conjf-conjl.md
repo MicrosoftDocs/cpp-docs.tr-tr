@@ -43,11 +43,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 82110e42b8cf28e3e285e0027ea31d61c8cc9370
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ce33f536a97f5f78ae573a757402cc316e85f5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conj-conjf-conjl"></a>conj, conjf, conjl
 Karmaşık bir sayının karmaşık çiftini alır.  
@@ -97,4 +98,4 @@ _Lcomplex conjl(
  [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
  [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
  [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [CAB dosyaları, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+ [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)

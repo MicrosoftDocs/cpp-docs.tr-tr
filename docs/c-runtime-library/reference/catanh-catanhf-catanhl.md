@@ -43,11 +43,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e9d04d9def767e9d674cde5b8e14c5be4fd9dcf5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f670a916af4aa347bcc6249e397cfdf004b54b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 Dal keser gerçek ekseni boyunca [-1; + 1] aralığı dışında ile karmaşık bir sayının ters hiperbolik tanjant alır.  

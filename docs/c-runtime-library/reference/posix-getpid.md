@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3cef7df2213d601dfe4eb8d2b7292e94d34fa7b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 93fdc9a8f270dda3e70e21be04bf6cf3674a9cf3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="getpid"></a>getpid
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_getpid](../../c-runtime-library/reference/getpid.md) yerine.  

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5683cb5b161fd492afc69a93b6779b16c19c4022
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46702f9ea91c9cbba7f7ddbaadc23de88d80fe9c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unicode-the-wide-character-set"></a>Unicode: Joker Karakter Kümesi
 Geniş karakter 2-bayt çok dilli karakter kodudur. Modern dünya çapında teknik simgeleri ve özel yayımlama karakterleri dahil olmak üzere bilgi işlem kullanımda herhangi bir karakter geniş karakter olarak Unicode belirtimine göre temsil edilebilir. Microsoft içeren büyük bir Konsorsiyumu tarafından geliştirilen ve korunan, standart Unicode artık yaygın olarak kabul edilir.  
@@ -32,4 +33,4 @@ Geniş karakter 2-bayt çok dilli karakter kodudur. Modern dünya çapında tekn
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

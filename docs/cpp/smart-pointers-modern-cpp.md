@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb870adea1e13a9e97ac0cf36f6eb4960e87cf30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4e5883cc7f028c2d64c038a2cdbd9b8365b7e61d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 Modern C++ programlama standart kitaplığı içerir *akıllı işaretçiler*, hangi programları sağlamaya yardımcı olmak için kullanılan bellek ücretsiz ve kaynak sızdırıyor ve özel durum güvenlidir.  
@@ -84,37 +85,37 @@ Modern C++ programlama standart kitaplığı içerir *akıllı işaretçiler*, h
  **COM nesneleri (Klasik Windows programlama) için akıllı işaretçiler**  
  COM nesneleriyle çalışırken, arabirim işaretçilerini uygun akıllı işaretçi türüne sarın. Etkin Şablon Kitaplığı (ATL) çeşitli amaçlar için birçok akıllı işaretçi tanımlar. Aynı zamanda `_com_ptr_t` .tlb dosyaları sarmalayıcı sınıflar oluşturduğunda, derleyici kullanan akıllı işaretçi türü. ATL üstbilgi dosyalarını eklemek istemediğinizde en iyi seçenektir.  
   
- [CComPtr sınıfı](../atl/reference/ccomptr-class.md)  
+ [CComPtr Sınıfı](../atl/reference/ccomptr-class.md)  
  ATL kullanabiliyorsanız bunu kullanın. Başvuru kullanarak sayım gerçekleştirir `AddRef` ve `Release` yöntemleri. Daha fazla bilgi için bkz: [nasıl yapılır: oluşturmak ve kullanım CComPtr ve CComQIPtr örnekleri](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).  
   
- [CComQIPtr sınıfı](../atl/reference/ccomqiptr-class.md)  
+ [CComQIPtr Sınıfı](../atl/reference/ccomqiptr-class.md)  
  Benzer `CComPtr` ancak aynı zamanda çağırmak için Basitleştirilmiş söz dizimi sağlar `QueryInterface` COM nesnelerinde. Daha fazla bilgi için bkz: [nasıl yapılır: oluşturmak ve kullanım CComPtr ve CComQIPtr örnekleri](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).  
   
- [CComHeapPtr sınıfı](../atl/reference/ccomheapptr-class.md)  
+ [CComHeapPtr Sınıfı](../atl/reference/ccomheapptr-class.md)  
  Nesnelerin akıllı işaretçi `CoTaskMemFree` belleği boşaltmak için.  
   
- [CComGITPtr sınıfı](../atl/reference/ccomgitptr-class.md)  
+ [CComGITPtr Sınıfı](../atl/reference/ccomgitptr-class.md)  
  Genel arabirim tablosundan (GIT) alınan arabirimler için akıllı işaretçi.  
   
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)  
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)  
  Benzer `CComQIPtr` işlev ATL üstbilgilerinde bağlı değildir ancak.  
   
  **ATL POCO nesneler için akıllı işaretçiler**  
  COM nesneleri için akıllı işaretçilere ek olarak, ATL aynı zamanda düz ve eski C++ nesnelerinde akıllı işaretçileri ve koleksiyonlarını tanımlar. Klasik Windows programlamada bu C++ Standart Kitaplığı koleksiyonları yararlı alternatifleri özellikle kod taşınabilirlik gerekli olmadığında veya programlama modelleri C++ Standart Kitaplığı ve ATL karışık istemediğinizde türleridir  
   
- [CAutoPtr sınıfı](../atl/reference/cautoptr-class.md)  
+ [CAutoPtr Sınıfı](../atl/reference/cautoptr-class.md)  
  Sahipliği bir kopyaya aktararak benzersiz sahipliği zorlayan akıllı işaretçi. Kullanım dışı için karşılaştırılabilir `std::auto_ptr` sınıfı.  
   
- [CHeapPtr sınıfı](../atl/reference/cheapptr-class.md)  
+ [CHeapPtr Sınıfı](../atl/reference/cheapptr-class.md)  
  C kullanarak ayrılmış nesneleri için akıllı işaretçi [malloc](../c-runtime-library/reference/malloc.md) işlevi.  
   
- [CAutoVectorPtr sınıfı](../atl/reference/cautovectorptr-class.md)  
+ [CAutoVectorPtr Sınıfı](../atl/reference/cautovectorptr-class.md)  
  Kullanarak ayrılan diziler için akıllı işaretçi `new[]`.  
   
- [CAutoPtrArray sınıfı](../atl/reference/cautoptrarray-class.md)  
+ [CAutoPtrArray Sınıfı](../atl/reference/cautoptrarray-class.md)  
  Bir dizi yalıtır sınıfı `CAutoPtr` öğeleri.  
   
- [CAutoPtrList sınıfı](../atl/reference/cautoptrlist-class.md)  
+ [CAutoPtrList Sınıfı](../atl/reference/cautoptrlist-class.md)  
  Listesini yönetmek için yöntemler yalıtır sınıfı `CAutoPtr` düğümleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

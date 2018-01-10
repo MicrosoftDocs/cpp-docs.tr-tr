@@ -13,24 +13,25 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d112d7d27d798c410cd6873d5e3433cdf92a31eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d85d59da52089d1cae1bd0d3c62384647f882e5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="types-and-storage"></a>Türler ve Depolama
 Bu bölümde numaralandırması ve depolama için veri türlerinin açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] mimarisi.  
   
--   [Skaler türler](../build/scalar-types.md)  
+-   [Skaler Türler](../build/scalar-types.md)  
   
--   [Toplamlar ve birleşimler](../build/aggregates-and-unions.md)  
+-   [Toplamlar ve Birleşimler](../build/aggregates-and-unions.md)  
   
 -   [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md)  
   
--   [Bit alanları](../build/bitfields.md)  
+-   [Bit Alanları](../build/bitfields.md)  
   
--   [X86 çakışıyor derleyici](../build/conflicts-with-the-x86-compiler.md)  
+-   [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+ [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

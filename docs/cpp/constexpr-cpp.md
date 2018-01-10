@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4ff111b73d81fd3c008e53db0f5e41b82f9e3753
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf1094be23074fe71e65a3077de51263f01a81c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constexpr-c"></a>constexpr (C++)
 Anahtar sözcüğü `constexpr` C ++ 11'de tanıtılan ve C ++ 14'te geliştirildi. Geldiğini *sabit ifade*. Gibi `const`, böylece herhangi bir kod değeri değiştirmeye çalışırsa derleyici hatası gerçekleştirilecektir bu değişkenleri uygulanabilir. Farklı `const`, `constexpr` işlevler de uygulanabilir ve sınıf oluşturucularını. `constexpr`değer veya dönüş değeri, sabittir ve derleme zamanında hesaplanan Mümkünse, gösterir.  A `constexpr` tam sayı değeri const tamsayı, gibi bağımsız şablon ve dizi bildirimleri gerekli olduğunda kullanılabilir. Ve çalışma zamanında yerine derleme zamanında bir değer hesaplanan, daha hızlı çalışır ve daha az bellek kullanır, programınızı yardımcı olabilir.  

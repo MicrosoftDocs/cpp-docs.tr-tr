@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a398d9df981a1ae9fc7cbc6bf73b233f0596fd2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: deac3645e9b53745ccf8e3b68ed47d4c0de86430
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regular-expressions-ccli"></a>Normal İfadeler (C++/CLI)
 .NET Framework normal ifade sınıfları kullanan çeşitli dize işlemlerini gösterir.  
@@ -30,22 +33,22 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Nasıl yapılır: normal ifadeler kullanarak dizeleri ayrıştırma (C + +/ CLI)](../dotnet/how-to-parse-strings-using-regular-expressions-cpp-cli.md)  
+-   [Nasıl yapılır: Normal İfadeler Kullanarak Dizeleri Ayrıştırma (C++/CLI)](../dotnet/how-to-parse-strings-using-regular-expressions-cpp-cli.md)  
   
--   [Nasıl yapılır: Split yöntemini kullanarak dizeleri ayrıştırma (C + +/ CLI)](../dotnet/how-to-parse-strings-using-the-split-method-cpp-cli.md)  
+-   [Nasıl yapılır: Split Yöntemini Kullanarak Dizeleri Ayrıştırma (C++/CLI)](../dotnet/how-to-parse-strings-using-the-split-method-cpp-cli.md)  
   
--   [Nasıl yapılır: Basit Eşleştirme için normal ifadeleri kullanma (C + +/ CLI)](../dotnet/how-to-use-regular-expressions-for-simple-matching-cpp-cli.md)  
+-   [Nasıl yapılır: Basit Eşleştirme için Normal İfadeler Kullanma (C++/CLI)](../dotnet/how-to-use-regular-expressions-for-simple-matching-cpp-cli.md)  
   
--   [Nasıl yapılır: veri alanlarını ayıklamak için normal ifadeleri kullanma (C + +/ CLI)](../dotnet/how-to-use-regular-expressions-to-extract-data-fields-cpp-cli.md)  
+-   [Nasıl yapılır: Veri Alanlarını Ayıklamak için Normal İfadeleri Kullanma (C++/CLI)](../dotnet/how-to-use-regular-expressions-to-extract-data-fields-cpp-cli.md)  
   
--   [Nasıl yapılır: veriyi yeniden düzenlemek için normal ifadeleri kullanma (C + +/ CLI)](../dotnet/how-to-use-regular-expressions-to-rearrange-data-cpp-cli.md)  
+-   [Nasıl yapılır: Veriyi Yeniden Düzenlemek İçin Normal İfadeleri Kullanma (C++/CLI)](../dotnet/how-to-use-regular-expressions-to-rearrange-data-cpp-cli.md)  
   
--   [Nasıl yapılır: arama ve değiştirme için normal ifadeleri kullanma (C + +/ CLI)](../dotnet/how-to-use-regular-expressions-to-search-and-replace-cpp-cli.md)  
+-   [Nasıl yapılır: Arama ve Değiştirme için Normal İfadeleri Kullanma (C++/CLI)](../dotnet/how-to-use-regular-expressions-to-search-and-replace-cpp-cli.md)  
   
--   [Nasıl yapılır: veri biçimlendirmesini doğrulamak için normal ifadeleri kullanma (C + +/ CLI)](../dotnet/how-to-use-regular-expressions-to-validate-data-formatting-cpp-cli.md)  
+-   [Nasıl yapılır: Veri Biçimlendirmesini Doğrulamak için Normal İfadeleri Kullanma (C++/CLI)](../dotnet/how-to-use-regular-expressions-to-validate-data-formatting-cpp-cli.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

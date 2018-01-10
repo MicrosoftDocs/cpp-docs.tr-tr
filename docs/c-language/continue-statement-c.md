@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5d0fc645bdeec7ea9ec6df124279140fcd63f77d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cdf4d877ef1b88826d66e36a7ce24fdcff2cb348
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C)
 `continue` Deyimi en yakın kapsayan, sonraki yinelemeye denetim geçirir `do`, `for`, veya `while` göründüğü, kalan tüm deyimlerinde atlayarak deyimi `do`, `for`, veya `while` deyimi gövdesi.  
@@ -51,4 +52,4 @@ while ( i-- > 0 )
  Bu örnekte, deyimi gövdesi yürütülür sırada `i` 0'dan büyük. İlk `f(i)` atandığı `x`; daha sonra eğer `x` 1'e eşittir `continue` deyimi gerçekleştirilir. Gövde deyimlerinde kalan dikkate alınmaz ve döngü döngünün test değerlendirmesi ile üstündeki yürütme devam eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [continue deyimi](../cpp/continue-statement-cpp.md)
+ [continue Deyimi](../cpp/continue-statement-cpp.md)

@@ -41,11 +41,12 @@ caps.latest.revision: "29"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4b72b82e1b8c7ae2d036d35b00e8a49b7516d64b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 30a48101ea2db80f7c8a37434c1fd73c9c535286
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asctimes-wasctimes"></a>asctime_s, _wasctime_s
 Dönüştürme bir `tm` zaman bir karakter dizesine yapısı. Bu işlevler sürümleridir [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1f7d7e43ab50cc50321aea79aad200231f719c3d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb0e4929b55d6cfc0ef01ee183b74b2439b85d10
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 **Varsa** deyimi denetimleri koşullu dallanma. Gövdesi bir **varsa** deyimi ifade değeri sıfır değilse yürütüldü. Sözdizimi **varsa** deyimi iki tür vardır.  
@@ -80,4 +81,4 @@ else
  İç çevreleyen küme ayraçları **varsa** deyimi Bu örnekte olun **başka** dış yan tümcesi parçası **varsa** deyimi. Varsa `i` 0, küçük veya eşit `i` atandığı `x`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [if-else deyimi (C++)](../cpp/if-else-statement-cpp.md)
+ [if-else Deyimi (C++)](../cpp/if-else-statement-cpp.md)

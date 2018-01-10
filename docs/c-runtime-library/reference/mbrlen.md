@@ -29,11 +29,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d8276f716049915d1cd3b8c98074255d3327144c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58f94a79bb5304ed1ebfe9b7c2241b28497c8c4f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbrlen"></a>mbrlen
 Geçerli yerel birden çok baytlı karakter ortasında yeniden özelliği ile birden çok baytlı karakter tamamlamak için gereken bayt sayısını belirler.  
@@ -158,4 +159,4 @@ Character count: 25
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)
+ [locale](../../c-runtime-library/locale.md)

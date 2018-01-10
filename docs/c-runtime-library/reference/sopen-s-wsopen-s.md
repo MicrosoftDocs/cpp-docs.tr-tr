@@ -42,11 +42,12 @@ caps.latest.revision: "29"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4d9b5557ba6c57410526260af905950f290fb298
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 403fc7f285aeebf5fc7b6d4ebb39d1e922d8edc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sopens-wsopens"></a>_sopen_s, _wsopen_s
 Bir dosya paylaşımı için açılır. Bu sürümleri [_sopen ve _wsopen](../../c-runtime-library/reference/sopen-wsopen.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -228,4 +229,4 @@ errno_t _wsopen_s(
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
  [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
  [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md)   
- [_kurulum Aç, _wopen](../../c-runtime-library/reference/open-wopen.md)
+ [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)

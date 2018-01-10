@@ -45,11 +45,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 363a1b30e410bbb13a9101c268d48a2cb6ff1787
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1ba714f78696cd806cbf1f200e72e09a03168d94
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isxdigit-iswxdigit-isxdigitl-iswxdigitl"></a>isxdigit, iswxdigit, _isxdigit_l, _iswxdigit_l
 Tamsayı onaltılık bir sayıdır bir karakteri temsil edip etmediğini belirler.  
@@ -109,4 +110,4 @@ int _iswxdigit_l(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
  [Yerel ayar](../../c-runtime-library/locale.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)
+ [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)

@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 861eceef234b77b96179c51979cb7d1c0d09eeeb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: aad9f1dbd4542ad763e7303d9a750f1856208025
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="redistributing-odbc-components-to-your-customers"></a>ODBC Bileşenlerini Müşterilerinize Yeniden Dağıtma
 ODBC Yöneticisi programları işlevselliğini uygulamanıza dahil, kullanıcılarınıza bu programları çalıştır dosyaları da dağıtmanız gerekir. Bu ODBC dosyaları Visual C++ CD-ROM \OS\System dizininde bulunur. Redistrb.wri dosyası ve lisans sözleşmesini aynı dizinde yeniden dağıtabilirsiniz ODBC dosyaların bir listesini içerir.  
@@ -35,11 +38,11 @@ ODBC Yöneticisi programları işlevselliğini uygulamanıza dahil, kullanıcıl
   
  Aşağıdaki konular ODBC ile veritabanı sınıflarını kullanma hakkında daha fazla bilgi sağlar:  
   
--   [ODBC: ODBC imleç kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)  
+-   [ODBC: ODBC İmleç Kitaplığı](../../data/odbc/odbc-the-odbc-cursor-library.md)  
   
--   [ODBC: ODBC veri kaynağını yapılandırma](../../data/odbc/odbc-configuring-an-odbc-data-source.md)  
+-   [ODBC: ODBC Veri Kaynağını Yapılandırma](../../data/odbc/odbc-configuring-an-odbc-data-source.md)  
   
--   [ODBC: ODBC API işlevlerini doğrudan çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
+-   [ODBC: ODBC API İşlevlerini Doğrudan Çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ODBC temelleri](../../data/odbc/odbc-basics.md)   

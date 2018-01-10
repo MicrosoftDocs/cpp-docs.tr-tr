@@ -26,11 +26,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25ff07e3f80d51a0bfe06ae3b1c6dc7d5728bcf0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 28d7cf77f9bea05a9220aea3d4006f64899b84ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="relational-operators-lt-gt-lt-and-gt"></a>İlişkisel işleçler: &lt;, &gt;, &lt;= ve&gt;=
 ## <a name="syntax"></a>Sözdizimi  
@@ -102,4 +103,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [C ilişkisel ve eşitlik işleçleri](../c-language/c-relational-and-equality-operators.md)
+ [C İlişkisel ve Eşitlik İşleçleri](../c-language/c-relational-and-equality-operators.md)

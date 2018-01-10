@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: c2a6ee18779bbd1f54cf33a7b13a60725701c34c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70d497275a0af7cfec12123f169240ced47fa958
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformexception-class"></a>Platform::Exception sınıfı
 Uygulama yürütmesi sırasında oluşan hataları temsil eder. Özel durum sınıfları türetilen olamaz `Platform::Exception`. Bir özel durum gerektiriyorsa, kullanabileceğiniz `Platform::COMException` ve uygulamaya özgü HRESULT belirtin.  

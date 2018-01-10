@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 15e1bc61e9b15293290098b9414642d8edf46707
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6c2ecc7c4a0308a1a7d182cc0bdaf04c2ed6b6e9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conversions-from-unsigned-integral-types"></a>İmzasız Tam Sayı Türlerinden Dönüştürmeler
 İşaretsiz tamsayıya yüksek düzey BITS kesilmesiyle tarafından daha kısa bir veya imzalanmış tamsayı veya sıfır genişletme tarafından artık veya imzalanmış tamsayı dönüştürülür (bkz [imzasız tam sayı türlerinden dönüştürmeler](#_clang_table_4..3) tablo).  
@@ -49,28 +50,28 @@ printf_s( "%hd\n", j );   // Prints -3
 |Başlangıç|Bitiş|Yöntem|  
 |----------|--------|------------|  
 |`unsigned char`|`char`|Bit desenini korumak; yüksek sıralı bit bit oturum olur|  
-|`unsigned char`|**kısa**|Sıfır genişletme|  
-|`unsigned char`|**uzun**|Sıfır genişletme|  
+|`unsigned char`|**short**|Sıfır genişletme|  
+|`unsigned char`|**long**|Sıfır genişletme|  
 |`unsigned char`|**İmzasız short**|Sıfır genişletme|  
 |`unsigned char`|`unsigned long`|Sıfır genişletme|  
-|`unsigned char`|**kayan nokta**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
-|`unsigned char`|**çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
+|`unsigned char`|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
+|`unsigned char`|**double**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
 |`unsigned char`|`long double`|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
 |**İmzasız short**|`char`|Düşük düzey baytı korur|  
-|**İmzasız short**|**kısa**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|  
-|**İmzasız short**|**uzun**|Sıfır genişletme|  
+|**İmzasız short**|**short**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|  
+|**İmzasız short**|**long**|Sıfır genişletme|  
 |**İmzasız short**|`unsigned char`|Düşük düzey baytı korur|  
 |**İmzasız short**|`unsigned long`|Sıfır genişletme|  
-|**İmzasız short**|**kayan nokta**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
-|**İmzasız short**|**çift**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
+|**İmzasız short**|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
+|**İmzasız short**|**double**|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
 |**İmzasız short**|`long double`|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
 |`unsigned long`|`char`|Düşük düzey baytı korur|  
-|`unsigned long`|**kısa**|Düşük düzey word koru|  
-|`unsigned long`|**uzun**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|  
+|`unsigned long`|**short**|Düşük düzey word koru|  
+|`unsigned long`|**long**|Bit desenini korumak; yüksek sıralı bit bit oturum olur|  
 |`unsigned long`|`unsigned char`|Düşük düzey baytı korur|  
 |`unsigned long`|**İmzasız short**|Düşük düzey word koru|  
-|`unsigned long`|**kayan nokta**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
-|`unsigned long`|**çift**|Doğrudan Dönüştür **çift**|  
+|`unsigned long`|**float**|Dönüştür **uzun**; Dönüştür **uzun** için **float**|  
+|`unsigned long`|**double**|Doğrudan Dönüştür **çift**|  
 |`unsigned long`|`long double`|Dönüştür **uzun**; Dönüştür **uzun** için **çift**|  
   
  **Microsoft özel**  
@@ -80,4 +81,4 @@ printf_s( "%hd\n", j );   // Prints -3
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Atama dönüşümleri](../c-language/assignment-conversions.md)
+ [Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

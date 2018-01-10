@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c115274d0458379533fa8d909352e1b4b3621fbc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ae85e9ce43a5ce54b043e216ef7ee48d83c0f199
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="maptoarray-stlclr"></a>map::to_array (STL/CLR)
 Denetimli sırası yeni bir diziye kopyalar.  
@@ -76,4 +79,4 @@ int main()
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)
+ [map (STL/CLR)](../dotnet/map-stl-clr.md)

@@ -41,11 +41,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8206f239af5ab8be0f20eed0f73b4ad0f1ba7e2f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d341aa5af2b16d1a29bc4e3dfe2f97a68b73d6ba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="escape-sequences"></a>Çıkış Sıraları
 Karakter bir ters eğik çizgi oluşan birleşimler (**\\**) bir harfle veya bir basamak bileşimiyle "kaçış dizilerine." olarak adlandırılır Yeni satır karakterini, tek tırnak işaretini veya bir karakter sabitindeki diğer belirli karakterleri göstermek için kaçış dizileri kullanmanız gerekir. Kaçış dizisi, tek bir karakter olarak kabul edilir ve bu nedenle karakter sabiti olarak geçerlidir.  
@@ -89,4 +90,4 @@ Karakter bir ters eğik çizgi oluşan birleşimler (**\\**) bir harfle veya bir
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C karakter sabitleri](../c-language/c-character-constants.md)
+ [C Karakter Sabitleri](../c-language/c-character-constants.md)

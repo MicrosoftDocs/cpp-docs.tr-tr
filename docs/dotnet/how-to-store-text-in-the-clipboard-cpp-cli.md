@@ -16,11 +16,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 971d87da7045e079e62d2ab3274ddc35ddbffaea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 05544d3ea65ee68fc6df8731e5de084be6d460ba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-store-text-in-the-clipboard-ccli"></a>Nasıl yapılır: Panoya Metin Depolama (C++/CLI)
 Aşağıdaki kod örneğinde <xref:System.Windows.Forms.Clipboard> tanımlanan nesne <xref:System.Windows.Forms> bir dize depolamak için ad alanı. Bu nesne iki üye işlevleri sağlar: <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> ve <xref:System.Windows.Forms.Clipboard.GetDataObject%2A>. Veri depolanan Pano'da türetilmiş herhangi bir nesne göndererek <xref:System.Object> için <xref:System.Windows.Forms.Clipboard.SetDataObject%2A>.  
@@ -55,4 +58,4 @@ using namespace System::Windows::Forms;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Panodan Metin Alma (C + +/ CLI)](../dotnet/how-to-retrieve-text-from-the-clipboard-cpp-cli.md)   
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

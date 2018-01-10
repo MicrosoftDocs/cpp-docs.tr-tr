@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f62806dd07860a6cf1c4d49f10885c0856d8c11f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 88c341abab34595da58d435be28f50e86cb47403
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="default-arguments"></a>Varsayılan Bağımsız Değişkenler
 Çoğu durumda işlevlerin, varsayılan bir değerin yeterli olmasını sağlayacak kadar sık kullanılan bağımsız değişkenleri vardır. Bunu çözmek için varsayılan bağımsız değişken özelliği, bir işlev için yalnızca belirli bir çağrıda anlamlı olan bağımsız değişkenleri belirtmeye izin verir. Bu kavramı göstermeye içinde sunulan örneği göz önünde bulundurun. [işlev aşırı yüklemesi](../cpp/function-overloading.md).  

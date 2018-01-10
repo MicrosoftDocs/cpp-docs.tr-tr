@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fd9cfcc54e672d16b631662d9d41c02327ac2a57
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1665ff1551ffe94b475c463d8f93eba2184eaa27
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="text-and-binary-streams"></a>Metin ve İkili Akışlar
 Bir metin akış metin odaklı bir görüntüye yazılabilir ve böylece okunabilir hale metnin bir veya daha fazla satırlardan oluşur. Bir metin akışından okuma bulunduğunda program okur bir `NL` (yeni satır) her satırın sonundaki. Bir metin akış yazarken, program Yazar bir `NL` bir satırın sonuna sinyal. Metin dosyalarını olarak temsil etmek için hedef ortamlar arasında farklı kuralları eşleştirmek için kitaplık işlevleri sayısı ve program ve bir metin akış arasında aktarılan karakterlerinin gösterimlerini değiştirebilirsiniz.  
@@ -46,4 +47,4 @@ Bir metin akış metin odaklı bir görüntüye yazılabilir ve böylece okunabi
  Bir bayt akış dosya bir bayt dizisi değerlendirir. Programında, akış aynı yukarıda açıklanan olası değişiklikleri dışında bayt dizisi gibi görünüyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dosyalar ve akışlar](../c-runtime-library/files-and-streams.md)
+ [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)

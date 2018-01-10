@@ -13,20 +13,21 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f2b511a4b7cbaffb80d9f07a2491a38554682c29
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 680d3a97cec7971bf31605997e3ab2afdfae2cdf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lifetime-scope-visibility-and-linkage"></a>Ömür, Kapsam, Görünürlük ve Bağlantı
 Bir C programının nasıl çalıştığını anlamak için, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini belirleyen kuralları anlamanız gerekir. Birkaç kavram bu kuralları anlamak için önemlidir:  
   
--   [Yaşam süresi](../c-language/lifetime.md)  
+-   [Ömür](../c-language/lifetime.md)  
   
 -   [Kapsam ve görünürlük](../c-language/scope-and-visibility.md)  
   
 -   [Bağlantı](../c-language/linkage.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Program yapısı](../c-language/program-structure.md)
+ [Program Yapısı](../c-language/program-structure.md)

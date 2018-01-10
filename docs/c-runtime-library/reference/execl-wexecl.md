@@ -38,11 +38,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c8b35eb95144be2df223c59d2c7fe046932489b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 25537940ef37ca6c0bb9b69aa1a1af3a44183059
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="execl-wexecl"></a>_execl, _wexecl
 Yükler ve yeni alt işlemleri yürütür.  
@@ -112,4 +113,4 @@ intptr_t _wexecl(
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)   
  [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)   
- [Sistem, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+ [system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)

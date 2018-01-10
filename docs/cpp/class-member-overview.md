@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 82daf0ecf506d55a6067b30ee568e11bf3e82364
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2d9a8d274f162e64dc20c5f257d09c84e9871d0b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="class-member-overview"></a>Sınıf Üyelerine Genel bakış
 Sınıfta veya yapı onun üyeleri oluşur. Bir sınıf yaptığı işi kendi üye işlevleri tarafından gerçekleştirilir. Sakladığı durumu veri üyeleri depolanır. Başlatma üyelerinin oluşturucular ve temizleme işini bellek boşaltma gibi yapılır ve kaynakları serbest bırakma Yıkıcılar tarafından yapılır. C ++ 11 ve sonraki sürümlerinde, veri üyeleri noktasında bildirimi başlatılması kullanabilirsiniz ve genellikle gerekir.  
@@ -175,4 +176,4 @@ int CanInit2::j = i;
 >  Tanımlanan `CanInit2` öğesinin `i` sınıfının bir üyesi olduğunu belirtmek için, sınıf adı `i`, `CanInit2` öğesinden önce gelmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)
+ [Sınıflar ve Yapılar](../cpp/classes-and-structs-cpp.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 68846352d3e6b407a4ec7ef6b7993969371a89de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 67a394ce3c3b05e3f5eea49cbd3a234a0dd89df2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmyprovidercommand-myproviderrsh"></a>CMyProviderCommand (MyProviderRS.H)
 `CMyProviderCommand` Sınıfı sağlayıcı komut nesnesinin uygulamasıdır. Uygulamasını sağlar `IAccessor`, `ICommandText`, ve **ICommandProperties** arabirimleri. `IAccessor` Arabirimidir satır kümesindeki bir ile aynı. Komut nesnesi erişimcisi parametreleri için bağlamaları belirlemek için kullanır. Satır kümesi nesnesi bunları çıktı sütun için bağlamaları belirlemek için kullanır. `ICommandText` Bir komut belirtmede yararlı bir şekilde bir arabirimdir. Bu örnekte `ICommandText` özel kod eklediğinde daha sonra arabirim; ayrıca geçersiz kılar `ICommand::Execute` yöntemi. **ICommandProperties** arabirimi tüm özellikler komutu ve satır kümesi nesneleri için işler.  
@@ -48,4 +51,4 @@ class ATL_NO_VTABLE CMyProviderCommand :
  Sağlayıcı ayrıca adlı bir arabirim içerir `IObjectWithSite`. `IObjectWithSite` Arabirimi ATL 2. 0'da uygulanmıştır ve kendi alt kendi hakkında bilgileri geçirmek uygulayan sağlar. Komut nesnesi kullanır `IObjectWithSite` herhangi bildirmek için bilgi oluşturulan oluşturan kişiye hakkında rowset nesneleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sağlayıcı Sihirbazı tarafından oluşturulan dosyalar](../../data/oledb/provider-wizard-generated-files.md)
+ [Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b984448e55380dd3f2223b098a048fec57cb0ba6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1be04ba4c68b2629a5e765788af95a203ae06b34
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-of-bit-fields"></a>Bit Alanları Deposu
 **ANSI 3.5.2.1** int içinde bit alanları ayırma sırasını  
@@ -50,4 +51,4 @@ cccccccb bbbbaaaa
  80x86 işlemcileri tamsayı değerlerinin düşük baytını yüksek bayttan önce depoladığı için yukarıdaki 0x01F2 tamsayısı, fiziksel bellekte arkasından 0x01 gelen 0xF2 olarak depolanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, birleşimler, numaralandırmalar ve Bit alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)
+ [Yapılar, Birleşimler, Numaralandırmalar ve Bit Alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)

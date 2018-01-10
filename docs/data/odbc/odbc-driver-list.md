@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fc65d14e27574fead708ef9e67c543a3b6201643
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 96a67554931ea9231ce3fa920571aed7dc33c790
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-driver-list"></a>ODBC Sürücü Listesi
 Visual C++ aşağıdaki veritabanları için ODBC sürücüleri sağlar:  
@@ -43,4 +46,4 @@ Visual C++ aşağıdaki veritabanları için ODBC sürücüleri sağlar:
  ODBC sürücüleri Microsoft ve ODBC sürücü paketi de dahil olmak üzere, diğer şirketler tarafından sunulan hakkında bilgi için Microsoft Ürün Destek Hizmetleri'ne başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+ [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

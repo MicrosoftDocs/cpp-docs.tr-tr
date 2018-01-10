@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: aef6920b9133280a20cc41344fa707a2cb1cfe97
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: af74c81186591062214e2a8eb1695a2d177cfc04
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="events-ccx"></a>Olaylar (C + +/ CX)
 Bir Windows türü bildirebilirsiniz (Yayımlama) çalışma zamanı olayları ve istemci kodu aynı bileşenin veya diğer bileşenleri abone olabilir, bu olaylarla adlı yöntemler ilişkilendirerek *olay işleyicileri* olay ile. Birden çok olay işleyicileri tek bir olayla ilişkili olabilir. Olay yayımlama nesnesini başlatır, çağrılacak tüm olay işleyicileri neden olur. Bu şekilde, yayımcı olayını ne olursa olsun özel eylem uygun olduğunda abone sınıfı gerçekleştirebilirsiniz. Bir olay olaya abone olmak için tüm olay işleyicileri içermelidir imza belirten bir temsilci türü vardır.  

@@ -26,11 +26,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4225917ffb57c8c3e792a05c81f81dce1b6009cd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 27bb4f7573a92cc705aeae24d5f4275d67130fc2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbookmarkoperator-"></a>CBookmark::operator =
 Atayan bir `CBookmark` başka bir nesne.  
@@ -51,4 +54,4 @@ Atayan bir `CBookmark` başka bir nesne.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CBookmark sınıfı](../../data/oledb/cbookmark-class.md)
+ [CBookmark Sınıfı](../../data/oledb/cbookmark-class.md)

@@ -42,11 +42,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 677e203e552dfa2f057cb0631d73c9f48349c4b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b97fa6d6d2c9b7bb5de45e2f74eef524ec0f2746
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sehfilterdll-sehfilterexe"></a>_seh_filter_dll, _seh_filter_exe
 Özel durum ve gerçekleştirilecek ilgili eylem tanımlar.  
@@ -94,4 +95,4 @@ int __cdecl _seh_filter_exe(
  **Başlık:** corecrt_startup.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+ [Alfabetik İşlev Başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)

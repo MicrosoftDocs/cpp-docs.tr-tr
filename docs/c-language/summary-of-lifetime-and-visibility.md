@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8e8c676a950979906bbc741679735ba452baec18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1ee45ec7a2a842cc45c01c0e6f43ab49ba55aa3a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Ömür ve Görünürlük Özeti
 Aşağıdaki tabloda, çoğu tanımlayıcıları ömür ve görünürlük özelliklerini özetidir. İlk üç sütun ömür ve görünürlük tanımlayan öznitelikleri verin. İlk üç sütun tarafından verilen özniteliklere sahip bir tanımlayıcı ömür ve görünürlük dördüncü ve beşinci sütunlarında gösterilen sahiptir. Ancak, tablonun tüm olası durumların kapsamaz. Başvurmak [depolama sınıfları](../c-language/c-storage-classes.md) daha fazla bilgi için.  
@@ -29,12 +30,12 @@ Aşağıdaki tabloda, çoğu tanımlayıcıları ömür ve görünürlük özell
   
 |Öznitelikleri:<br /><br /> Düzey|Öğe|Depolama sınıfı<br /><br /> Belirleyici|Sonuç:<br /><br /> Ömür|Görünürlük|  
 |---------------------------|----------|----------------------------------|--------------------------|----------------|  
-|Dosya kapsamı|Değişken tanımı|**statik**|Global|Kaynak dosya içinde oluştuğu geri kalanı|  
+|Dosya kapsamı|Değişken tanımı|**static**|Global|Kaynak dosya içinde oluştuğu geri kalanı|  
 ||Değişken bildirimi|`extern`|Global|Kaynak dosya içinde oluştuğu geri kalanı|  
-||İşlev prototipi veya tanımı|**statik**|Global|Tek kaynak dosyası|  
+||İşlev prototipi veya tanımı|**static**|Global|Tek kaynak dosyası|  
 ||İşlev prototipi|`extern`|Global|Kaynak dosyanın kalanını|  
 |Blok kapsamı|Değişken bildirimi|`extern`|Global|Blok|  
-||Değişken tanımı|**statik**|Global|Blok|  
+||Değişken tanımı|**static**|Global|Blok|  
 ||Değişken tanımı|**Otomatik** veya **kaydetme**|Yerel|Blok|  
   
 ## <a name="example"></a>Örnek  
@@ -74,4 +75,4 @@ int main()  // main function defined at external level
  Bu örnekte, görünürlük dört düzeyi vardır: dış düzeyi ve üç blok düzeyi. Değerlerin her deyiminden açıklamalarda belirtildiği gibi ekranına yazdırılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+ [Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

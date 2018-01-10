@@ -14,11 +14,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b5a2d6a1ae0443b7c1ec66f5ca0d0fa057cf9041
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d55adef749f66038b16d0e327e687e64227a5e93
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-events-in-ccli"></a>Nasıl yapılır: C++/CLI Üzerinde Olayları Kullanma
 Bu makalede, bir olay ve bu olay çağırmak için bir işlev bildiren bir arabirim ve arabirimini uygulayan sınıf ve olay işleyicisi nasıl kullanılacağı gösterilmektedir.  
@@ -72,7 +75,7 @@ int main () {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 EventReceiver::Handler  
@@ -162,7 +165,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 In event handler H1  
@@ -220,7 +223,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 17  
@@ -296,7 +299,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Click(x=7,y=3.14159)  
@@ -384,7 +387,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 In event handler H1  
@@ -471,7 +474,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 In handler H1  
@@ -587,7 +590,7 @@ int main () {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 hi  
@@ -640,7 +643,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 hello  
@@ -648,4 +651,4 @@ hello
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Olay](../windows/event-cpp-component-extensions.md)
+ [event](../windows/event-cpp-component-extensions.md)

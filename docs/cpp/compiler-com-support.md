@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 86caaf78ff105f02e2eabe6637e9e80829f53be0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b05fdff690f8693e926011c3bc7d1738ee9be66c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-com-support"></a>Derleyici COM Desteği
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/24/2017
   
  COM desteği genel işlevler ve sınıfları kümesi desteklemek için sağlanan **değişken** ve `BSTR` türleri, akıllı işaretçiler uygulamak ve tarafından oluşturulan hata nesnesi kapsülleyen `_com_raise_error`:  
   
--   [Derleyici Global COM işlevleri](../cpp/compiler-com-global-functions.md)  
+-   [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)  
   
 -   [_bstr_t](../cpp/bstr-t-class.md)  
   
@@ -46,4 +47,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)   
- [Derleyici Global COM işlevleri](../cpp/compiler-com-global-functions.md)
+ [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

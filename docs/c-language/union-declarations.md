@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57e7db99e90e68e71dae4fc00f271b3831a5fc39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4088aea4025e7c51aba75efe28978d05c0e48730
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
 "Birleşim bildirim" bir dizi değişken değerleri ve isteğe bağlı olarak, UNION adlandırma etiket belirtir. Değişken değerleri UNION "üye" olarak adlandırılır ve farklı olabilir. Birleşimler, diğer dillerde "değişken kayıtlar" benzerdir.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/24/2017
  *struct veya union tanımlayıcısı*  
   
  *struct veya union*:  
- **yapısı**  
+ **struct**  
   
  **birleşim**  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/24/2017
   
  Birleşimler üyeleri yazın, tamamlanmamış bir türü olamaz `void`, veya işlev türü. Bu nedenle üyeleri UNION örneği olamaz, ancak bildirilen birleşim türü işaretçileri olabilir.  
   
- Bir birleşim türü bildirimi yalnızca bir şablon.. Değişkeni bildirilmiş kadar bellek ayrılmış değil.  
+ Bir birleşim türü bildirimi yalnızca bir şablon. Değişkeni bildirilmiş kadar bellek ayrılmış değil.  
   
 > [!NOTE]
 >  İki tür birleşimi bildirilmiş ve bir değer depolanır, ancak birleşimi bir türü ile erişilen, sonuçları güvenilir değil. Örneğin, bir birleşimi **float** ve `int` bildirilmedi. A **float** değeri depolanır, ancak programı daha sonra değeri olarak erişen bir `int`. Böyle bir durumda, iç depolaması ve değeri değişir **float** değerleri. Tamsayı değeri güvenilir olmaz.  
@@ -134,4 +135,4 @@ struct x
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
+ [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

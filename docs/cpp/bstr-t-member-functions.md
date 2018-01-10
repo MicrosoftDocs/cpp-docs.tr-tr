@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32b7223ee099784287bd5bd3ccfdb74271c679d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 577162276a451fbd53be7f9a0456d74fd830022d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrt-member-functions"></a>_bstr_t Üye İşlevleri
 Hakkında bilgi için `_bstr_t` üye işlevleri bkz [_bstr_t sınıfı](../cpp/bstr-t-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)
+ [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

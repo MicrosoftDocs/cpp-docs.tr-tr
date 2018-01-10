@@ -44,11 +44,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0326dc826417287a1695904c99f1f3e9733f1b7a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 618ba621f385307d3609667c6df5cf56c91da2f1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isspace-iswspace-isspacel-iswspacel"></a>isspace, iswspace, _isspace_l, _iswspace_l
 Tamsayı bir boşluk karakteri temsil edip etmediğini belirler.  
@@ -106,4 +107,4 @@ int _iswspace_l(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
  [Yerel ayar](../../c-runtime-library/locale.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)
+ [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)

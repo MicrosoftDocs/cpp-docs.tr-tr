@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0d2aa2496683f10b0f603839d27104bd0e28fa50
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e9881d28f0f8f4a32c5bc049d4f9bac805124d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 ## <a name="syntax"></a>Sözdizimi  
@@ -46,4 +47,4 @@ ms.lasthandoff: 10/24/2017
  [_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)   
  [_putch, _putwch](../c-runtime-library/reference/putch-putwch.md)   
  [isascii, __isascii, iswascii](../c-runtime-library/reference/isascii-isascii-iswascii.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

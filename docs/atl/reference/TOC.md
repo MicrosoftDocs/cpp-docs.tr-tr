@@ -243,7 +243,6 @@
 ## [Pencere Sınıfı Makroları](window-class-macros.md)
 ## [Windows İletisi Makroları](windows-messages-macros.md)
 # [ATL Genel Değişkenler](atl-global-variables.md)
-## [_pAtlModule](patlmodule.md)
 # [ATL Sihirbazları ve İletişim Kutuları](atl-wizards-and-dialog-boxes.md)
 ## [Uygulama Ayarları, ATL Proje Sihirbazı](application-settings-atl-project-wizard.md)
 ## [ATL Active Server Page Bileşeni Sihirbazı, ASP](asp-atl-active-server-page-component-wizard.md)
