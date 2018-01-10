@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8a9ce2bba389546967073dd2f3de80ad66616756
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8d258b56a1768499fe1546adeccc590211dc12bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorgt-stack-stlclr"></a>İşleç&gt;= (yığın) (STL/CLR)
 Yığın daha büyük veya eşit karşılaştırma.  
@@ -101,4 +104,4 @@ int main()
  [operator! = (yığın) (STL/CLR)](../dotnet/operator-inequality-stack-stl-clr.md)   
  [İşleç\< (yığın) (STL/CLR)](../dotnet/operator-less-than-stack-stl-clr.md)   
  [operator > (yığın) (STL/CLR)](../dotnet/operator-greater-than-stack-stl-clr.md)   
- [operator < = (yığın) (STL/CLR)](../dotnet/operator-less-or-equal-stack-stl-clr.md)
+ [operator<= (stack) (STL/CLR)](../dotnet/operator-less-or-equal-stack-stl-clr.md)

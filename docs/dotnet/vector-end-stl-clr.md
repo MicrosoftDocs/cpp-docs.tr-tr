@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e78c21dee78b4cd5528d581972bcc690072b591c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 55d4aac9d4607361ff896d8b2e24109719bf68d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorend-stlclr"></a>vector::end (STL/CLR)
 Denetlenen dizinin bitişini belirtir.  
@@ -85,4 +88,4 @@ int main()
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [Vector::Back (STL/CLR)](../dotnet/vector-back-stl-clr.md)   
  [Vector::back_item (STL/CLR)](../dotnet/vector-back-item-stl-clr.md)   
- [Vector::Begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)
+ [vector::begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)

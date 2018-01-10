@@ -14,11 +14,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3515b9da7513080e825457d98aa06bccb63a1029
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 329461338579dc0787c6e3d208abac89ec762004
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="user-defined-conversions-ccli"></a>Kullanıcı Tanımlı Dönüşümler (C++/CLI)
 Bu bölümde, dönüştürme türlerinde biri bir başvuru ya da bir değer veya başvuru türü örneği olduğunda kullanıcı tanımlı Dönüşümler (UDC) açıklanmaktadır.  
@@ -76,7 +79,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in N::N  
@@ -139,7 +142,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in operator  
@@ -173,7 +176,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 10  
@@ -202,7 +205,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 10.3  
@@ -236,7 +239,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 True  
@@ -271,7 +274,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 5  
@@ -314,7 +317,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 13  
@@ -324,4 +327,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+ [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

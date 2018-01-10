@@ -28,11 +28,14 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ec68a6179cd74020638aa895028942bc76e21f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7bcaabb9f0a696a5eb7b01c4bd78757681e4e6a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pure-and-verifiable-code-ccli"></a>Saf ve Doğrulanabilen Kod (C++/CLI)
 .NET programlama için Visual C++ birbirinden farklı üç bileşenleri ve uygulamaları oluşturmayı destekler: karışık, saf ve doğrulanabilen. Üç aracılığıyla kullanılabilir [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) derleyici seçeneği.  
@@ -40,19 +43,19 @@ ms.lasthandoff: 10/24/2017
 ## <a name="remarks"></a>Açıklamalar  
  Doğrulanabilen derlemeler hakkında daha fazla bilgi için bkz:  
   
--   [Karışık, saf ve doğrulanabilen özellik karşılaştırması (C + +/ CLI)](../dotnet/mixed-pure-and-verifiable-feature-comparison-cpp-cli.md)  
+-   [Karışık, Saf ve Doğrulanabilen Özellik Karşılaştırması (C++/CLI)](../dotnet/mixed-pure-and-verifiable-feature-comparison-cpp-cli.md)  
   
 -   [Nasıl yapılır: pure'a Geçiş: Saf (C + +/ CLI)](../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md)  
   
--   [Nasıl yapılır: doğrulanabilir C++ projeleri oluşturma (C + +/ CLI)](../dotnet/how-to-create-verifiable-cpp-projects-cpp-cli.md)  
+-   [Nasıl yapılır: Doğrulanabilir C++ Projeleri Oluşturma (C++/CLI)](../dotnet/how-to-create-verifiable-cpp-projects-cpp-cli.md)  
   
 -   [Nasıl yapılır: safe'e geçiş (C + +/ CLI)](../dotnet/how-to-migrate-to-clr-safe-cpp-cli.md)  
   
--   [SQL Server ile doğrulanabilen derlemeler kullanma (C + +/ CLI)](../dotnet/using-verifiable-assemblies-with-sql-server-cpp-cli.md)  
+-   [SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)](../dotnet/using-verifiable-assemblies-with-sql-server-cpp-cli.md)  
   
 -   [En iyi güvenlik uygulamaları](../security/security-best-practices-for-cpp.md)  
   
--   [Projeleri karışık moddan saf Ara dile dönüştürme](../dotnet/converting-projects-from-mixed-mode-to-pure-intermediate-language.md)  
+-   [Projeleri Karışık Moddan Saf Ara Dile Dönüştürme](../dotnet/converting-projects-from-mixed-mode-to-pure-intermediate-language.md)  
   
 ## <a name="mixed-clr"></a>Karma (/ clr)  
  Karışık derlemeler (ile derlenmiş **/CLR**), hem de yönetilmeyen içerir ve yönetilen bölümleri, bunlar için .NET özellikleri kullanmak olası hale getirerek hala ancak yönetilmeyen kod içerir. Bu, tüm proje yazılması gerekmeden .NET özellikleri kullanmak uygulamaları ve bileşenleri güncelleştirilmesini sağlar. Visual C++ yönetilen ve yönetilmeyen kodu bu şekilde karıştırmak kullanmayı C++ birlikte çalışabilirliği adı verilir. Daha fazla bilgi için bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md).  
@@ -108,4 +111,4 @@ ms.lasthandoff: 10/24/2017
 >  Derleyiciyi geçecek ancak doğrulanamayan bir derlemede sonuçlanacak bir kodlama senaryo vardır: kapsam çözümü işleci kullanarak bir nesne örneği aracılığıyla sanal bir işlevi çağırmak.  Örneğin: `MyObj -> A::VirtualFunction();`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

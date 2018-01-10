@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 56f3e07774c443779a3ba8d1cf8bc284fc742b48
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 58a73316bf6928ca690fdc01b5211fc55d8cca7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackoperator-stlclr"></a>stack::operator= (STL/CLR)
 Denetimli dizisi yerini alır.  
@@ -80,4 +83,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [Stack::Assign (STL/CLR)](../dotnet/stack-assign-stl-clr.md)
+ [stack::assign (STL/CLR)](../dotnet/stack-assign-stl-clr.md)

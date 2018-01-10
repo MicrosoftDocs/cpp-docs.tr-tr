@@ -19,11 +19,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 00a107d0f502d29d37ae085548e66012d4d585d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d764d18f3148dba663e1e6796c44a0add6aa8109
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptrcreateinstance"></a>ptr::CreateInstance
 İçinde bir COM nesnesinin örneği oluşturur bir `com::ptr`.  
@@ -146,4 +149,4 @@ int main() {
  **Namespace** msclr::com  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [PTR üyeleri](../dotnet/ptr-members.md)
+ [ptr Üyeleri](../dotnet/ptr-members.md)

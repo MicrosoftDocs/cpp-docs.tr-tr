@@ -1,7 +1,7 @@
 ---
 title: "C/C++ derleme hataları | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-tools
@@ -311,24 +311,20 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 25ec72c39a01474bc90a1ad20c73b1e3d28c7a6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 80e723e5fc51ee166b61999396ddfe6be7bdd991
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cc-build-errors"></a>C/C++ Derleme Hataları
-Bu bölümdeki makaleleri belgelerin derleme araçları tarafından oluşturulan hata iletileri açıklanmaktadır. [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] Derleyici ve derleme araçları hataları ve Uyarıları çok çeşitli raporlama yapabilir. Derleme araçları varsayımlarda kod amacı hakkında ve bir hatanın ardından devam etmeye veya aynı anda daha fazla sorunlar bildirilebilir. böylece uyarı bulundu. Araçlar yanlış varsayımına yaparsanız, sonraki hatalar veya uyarılar projenize geçerli olmayabilir. Projenizde sorunları düzeltirken her zaman ilk hata veya bildirilen uyarı ile başlamalı ve genellikle derleyin.  
-  
- Belirli bir hata iletisi Visual Studio hakkında Yardım almak için bir hata numarası seçin **çıkış** bu hata için sayfa penceresi ve MSDN açmak için F1 tuşuna basın. MSDN içinde hatalarla ilgili makaleler için arama veya hataların listesini Gezinti bölmesinde kategoriye göre Gözat.  
-  
-> [!NOTE]
->  Her [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] hata veya uyarı MSDN içinde belgelenmiştir. Çoğu durumda, tanılama iletisinin tüm kullanılabilir bilgileri sağlar. Bir hata iletisi düşünüyorsanız, ek açıklama, bize bildirin gerekir. Bilgisayarınıza bu sayfadaki geri bildirim formu kullanın veya Visual Studio menü çubuğunda gidin ve seçebilirsiniz **yardımcı**, **bir hata raporu**, veya üzerinde bir öneri veya hata raporu gönderebilirsiniz [Microsoft Connect](http://connect.microsoft.com/VisualStudio).  
-  
- Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Visual C++ dili](http://go.microsoft.com/fwlink/?LinkId=158195) forumudur sorular ve tartışmaları hakkında [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] dili sözdizimi ve derleyicisi. [Visual C++ genel](http://go.microsoft.com/fwlink/?LinkId=158194) Forumu hakkında sorular için olan [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] , değil tartışılır diğer forumlarda. Üzerinde hataları ve Uyarıları hakkında Yardım bulabilirsiniz [yığın taşması](http://stackoverflow.com/).  
-  
- İlgili ek kaynaklara bağlantılar için [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)], bkz: [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
- [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)
+
+Bu bölümdeki makaleleri belgelerin tanılama hata ve derleme araçları tarafından oluşturulan uyarı iletileri açıklanmaktadır.
+
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
+[Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)

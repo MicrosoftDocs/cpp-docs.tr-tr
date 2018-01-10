@@ -14,11 +14,14 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3133a8329dac0e20eeb5c3b3c8141e15a65aefe8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ee919e1faa37959d25e8e42581c8cde80d640337
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-extend-the-marshaling-library"></a>Nasıl yapılır: Hazırlama Kitaplığını Genişletme
 Bu konuda, veri türleri arasında daha fazla dönüştürme sağlamak için hazırlama kitaplığını genişletme açıklanmaktadır. Kullanıcılar şu anda kitaplığı tarafından desteklenen herhangi bir veri dönüştürmesi için hazırlama kitaplığını genişletme.  
@@ -272,4 +275,4 @@ Native zip code: 98111
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++'da hazırlamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)
+ [Overview of Marshaling in C++](../dotnet/overview-of-marshaling-in-cpp.md)

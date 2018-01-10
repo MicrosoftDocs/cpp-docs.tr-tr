@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b0b28b6fe57be020e6f602a562ffd6df52aa14a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ac6e4e93b4724c5b25d17363f89ccdcb3fd2a549
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapdifferencetype-stlclr"></a>map::difference_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -82,4 +85,4 @@ begin()-end() = -3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [Map::size_type (STL/CLR)](../dotnet/map-size-type-stl-clr.md)
+ [map::size_type (STL/CLR)](../dotnet/map-size-type-stl-clr.md)
