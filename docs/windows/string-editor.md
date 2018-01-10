@@ -22,11 +22,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0a84ee72d44a7c7ba694df023ad50258513b40bf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f0d0f368ec82e46a72977b574b1632bf1d9d6d84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="string-editor"></a>Dize Düzenleyicisi
 Bir dize tablo kimlikleri, değerler ve uygulamanızın tüm dizeleri için resim yazıları listesini içeren bir Windows kaynaktır. Örneğin, durum çubuğu istemleri dize tabloda bulunur.  

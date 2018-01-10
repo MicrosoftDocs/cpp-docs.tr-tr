@@ -24,11 +24,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c265eaf2103f895198d029c231bf29755ea2c17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d30e21724bb7ee0d9d2bf7a6a5a094390fff645a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbookmarksetbookmark"></a>CBookmark::SetBookmark
 Tarafından başvurulan yer işareti değeri kopyalar `pBuffer` için `CBookmark` arabellek ve arabellek boyutu ayarlar `nSize`.  
@@ -60,4 +63,4 @@ Tarafından başvurulan yer işareti değeri kopyalar `pBuffer` için `CBookmark
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CBookmark sınıfı](../../data/oledb/cbookmark-class.md)
+ [CBookmark Sınıfı](../../data/oledb/cbookmark-class.md)

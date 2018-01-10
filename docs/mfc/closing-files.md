@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3833763394eda3ad64f1c72b80bee4d76785d5a7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 27b1c59c952b022c7382db7d6b2dcb660cca2e9a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="closing-files"></a>Dosyaları Kapatma
 Bir dosyayla tamamladıktan sonra her zamanki gibi g/ç işlemlerinde, onu kapatmanız gerekir.  

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 153f7ffce400fd09e46706a361eebc87bbe1e1c3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a67d571c2e5b80eaa1c095cc517872b8e3918fd6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
 **Microsoft özel**  
@@ -54,13 +55,13 @@ HRESULT GetActiveObject(
 ## <a name="remarks"></a>Açıklamalar  
  Bu üye işlevleri OLE ile kaydedilmiş çalışan bir nesnenin işaretçisini almak için `GetActiveObject`'i çağırır ve ardından bu akıllı işaretçinin arabirim türünü sorgular. Elde edilen işaretçi, daha bu `_com_ptr_t` nesnesinin içinde kapsüllenir. **Yayın** önceden kapsüllenmiş işaretçi başvuru sayısı azaltma için çağrılır. Bu yordam, başarıyı veya başarısızlığı göstermek için `HRESULT` döndürür.  
   
--   **GetActiveObject (**`rclsid`**)** varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID**.      
+-   **GetActiveObject (**`rclsid`**)** varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID**.  
   
--   **GetActiveObject (**`clsidString`**)** varolan ya da tutan bir UNICODE dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.      
+-   **GetActiveObject (**`clsidString`**)** varolan ya da tutan bir UNICODE dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.  
   
--   **GetActiveObject (**`clsidStringA`**)** varolan ya da tutan çok baytlı karakter dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{**") veya bir **ProgID**.     Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dize OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
+-   **GetActiveObject (**`clsidStringA`**)** varolan ya da tutan çok baytlı karakter dizesi belirtilen bir nesne örneğine bağlanan bir **CLSID** (başlayarak "**{**") veya bir **ProgID**. Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dize OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
   
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

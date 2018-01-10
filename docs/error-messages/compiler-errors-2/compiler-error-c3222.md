@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: edc882f340e92defeaa2db92d868680f7791e7b9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0028b9540127433bdbd17b01f1a5a3dfd9361558
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3222"></a>Derleyici Hatası C3222
 'parametresi': üye için varsayılan bağımsız değişkenler işlevlerini yönetilen veya WinRT türü veya genel işlevler bildiremezsiniz.  

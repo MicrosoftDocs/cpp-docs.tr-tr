@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 2136f017e177cea80f6832f7c1b9ba4e2d843bcf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a09bfb9b30e279e8d0b7696055c1e54ac56bfae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-mbcs-programming-advice"></a>Genel MBCS Programlama Önerileri
 Aşağıdaki ipuçlarını kullanın:  
@@ -46,4 +47,4 @@ Aşağıdaki ipuçlarını kullanın:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   
- [İşaretçileri Artırma ve azaltma](../text/incrementing-and-decrementing-pointers.md)
+ [İşaretçileri Artırma ve Azaltma](../text/incrementing-and-decrementing-pointers.md)

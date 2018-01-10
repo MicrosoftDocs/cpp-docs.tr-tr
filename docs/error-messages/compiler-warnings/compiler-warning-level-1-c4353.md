@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b64e2a43f6d85499c1884a9cc14e6f615f7bf8b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8dd3ec65dac6720509b9c918f272d2eb6ff2720c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4353"></a>Derleyici Uyarısı (düzey 1) C4353
 kullanılan standart olmayan uzantısı: sabit 0 olarak işlev ifadesi. Bunun yerine '__noop' işlevini iç kullanın  

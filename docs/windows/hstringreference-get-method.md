@@ -14,11 +14,14 @@ caps.latest.revision: "2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bd283e570abe87188fd13bb3ed4aa7e06d4b583c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 6a72b36700cac8f174211c847a6c91fe449ae82b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hstringreferenceget-method"></a>HStringReference::Get Metodu
 Temel alınan HSTRING tanıtıcı değerini alır.  
@@ -38,4 +41,4 @@ HSTRING Get() const throw()
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HStringReference sınıfı](../windows/hstringreference-class.md)
+ [HStringReference Sınıfı](../windows/hstringreference-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 642e5aa236018094eedaf46c3a8d0a6e7578fe95
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: eeafd4d7c6cf0fc6d79d17c462115297ad7cbc71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="maprend-stlclr"></a>map::rend (STL/CLR)
 Ters denetimli dizinin sonuna belirler.  
@@ -82,4 +85,4 @@ int main()
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::Begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)   
  [Map::End (STL/CLR)](../dotnet/map-end-stl-clr.md)   
- [Map::rbegin (STL/CLR)](../dotnet/map-rbegin-stl-clr.md)
+ [map::rbegin (STL/CLR)](../dotnet/map-rbegin-stl-clr.md)

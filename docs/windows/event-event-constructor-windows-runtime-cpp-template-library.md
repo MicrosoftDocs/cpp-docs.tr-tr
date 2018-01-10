@@ -14,11 +14,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 88fafd4bb345d8e70f84aa87c04592e91703b5c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 63ca4f15dbbdd7f2423b34c0b7313a05976bcf77
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventevent-constructor-windows-runtime-c-template-library"></a>Event::Event Yapıcı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
 Olay sınıfının yeni bir örneğini başlatır.  
@@ -44,4 +47,4 @@ WRL_NOTHROW Event(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Olay sınıfı (Windows çalışma zamanı C++ Şablon kitaplığı)](../windows/event-class-windows-runtime-cpp-template-library.md)
+ [Olay Sınıfı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/event-class-windows-runtime-cpp-template-library.md)

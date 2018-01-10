@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d7b2a945fde78845ac9f4472ae76e53ac926610b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b48e9b6576881d6ee480010c0871e6958b4f8c1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltcstringgt"></a>&lt;CString&gt;
 Standart C Kitaplığı üstbilgi içeren \<string.h > ve ilişkili adlarıyla ekler `std` ad alanı.  
@@ -39,7 +40,7 @@ Standart C Kitaplığı üstbilgi içeren \<string.h > ve ilişkili adlarıyla e
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

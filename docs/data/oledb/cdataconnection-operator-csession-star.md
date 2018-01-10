@@ -21,11 +21,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c4ad47ce5163291c45827d94c9e6f8d5904c847
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 53efb82e9f78b4ea5a76b4f200012ed98fb513d5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdataconnectionoperator-csession"></a>CDataConnection::operator CSession*
 İşaretçi içerdiği için döndüren `CSession` nesnesi.  
@@ -49,4 +52,4 @@ operator const CSession*() throw( );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDataConnection sınıfı](../../data/oledb/cdataconnection-class.md)   
- [CDataConnection::operator CSession &](../../data/oledb/cdataconnection-operator-csession-amp.md)
+ [CDataConnection::operator CSession&](../../data/oledb/cdataconnection-operator-csession-amp.md)

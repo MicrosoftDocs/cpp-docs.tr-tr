@@ -55,11 +55,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c0f094272514966655e8ecfe45a3f35e179db333
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a418683e23525d6e3c46853312b217788c0969e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tan-tanf-tanl-tanh-tanhf-tanhl"></a>Tan, tanf, tanl, tanh, tanhf, tanhl
 Tanjantını hesaplar (`tan`, `tanf`, veya `tanl`), ya da hiperbolik tanjantı (`tanh`, `tanhf`, veya `tanhl`).  
@@ -159,4 +160,4 @@ tanh( 1.000000 ) = 0.761594
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
  [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
- [_Cıtan](../../c-runtime-library/citan.md)
+ [_CItan](../../c-runtime-library/citan.md)

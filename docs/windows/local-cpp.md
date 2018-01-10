@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 007d95d5db0785deae08744b46738d7188e4da70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 3543adfe0cb25f7946e6ed6c81c4bd66a7b60324
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="local-c"></a>yerel (C++)
 Arabirim üstbilgisinde kullanıldığında MIDL derleyici üstbilgi Oluşturucu olarak kullanmanıza olanak sağlar. Tek bir işlev kullanıldığında, kendisi için hiçbir saplamalar oluşturulan yerel bir yordam belirler.  
@@ -47,7 +50,7 @@ Arabirim üstbilgisinde kullanıldığında MIDL derleyici üstbilgi Oluşturucu
 |**Uygulandığı öğe:**|`interface`, arabirim yöntemi|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**görüntüleme arabirimi**|  
+|**Geçersiz öznitelikler**|**dispinterface**|  
   
  Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   

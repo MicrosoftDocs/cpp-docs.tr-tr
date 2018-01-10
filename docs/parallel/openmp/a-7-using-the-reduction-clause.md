@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a7d5d4ba613a0343068e31d3cfa1baae13e4da53
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 478bc91126e207b79800db85023925a9430bd0cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a7---using-the-reduction-clause"></a>A.7   reduction Yan Tümcesini Kullanma
 Aşağıdaki örnek, azaltma yan tümcesi gösterir ([bölüm 2.7.2.6](../../parallel/openmp/2-7-2-6-reduction.md) sayfasında 28):  

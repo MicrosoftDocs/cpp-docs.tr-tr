@@ -83,11 +83,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e9720d407fb13b5a87335da08eb40c2886fdcdb3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed981a2f7345a59f3df479bcd82b9326fd84de12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 Windows ortak sekme denetimi işlevselliğini sağlar.  
@@ -825,4 +826,4 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CHeaderCtrl sınıfı](../../mfc/reference/cheaderctrl-class.md)   
- [CListCtrl sınıfı](../../mfc/reference/clistctrl-class.md)
+ [CListCtrl Sınıfı](../../mfc/reference/clistctrl-class.md)

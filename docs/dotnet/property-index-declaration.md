@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c832f14b7a466e84eaabbd1efdadf67d4e0fc9a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: fbd1158dce82b2cc2ae7d15e7b66d6b9058d8c85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="property-index-declaration"></a>Özellik Dizini Bildirimi
 Dizinli bir özelliği bildirme sözdizimi, Visual C++ için C++ için Yönetilen Uzantılar'dan değişmiştir.  
@@ -96,5 +99,5 @@ public:
  Hiçbir Basit Dizin sözdizimi basit özellik sözdizimine benzer olduğunu unutmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfta veya arabirimde üye bildirimleri (C + +/ CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   
+ [Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)   
  

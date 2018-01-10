@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 81cada5fdde3a510bdc26b10d46e48bf017a3a43
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e2715e1b64c1565d122f6eec012a8a33c2525ac9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme
 Bu konudaki yordamları içerir:  
@@ -103,5 +104,5 @@ Bu konudaki yordamları içerir:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   
- [Kalıcı ve kalıcı olmayan iletişim kutuları](../mfc/modal-and-modeless-dialog-boxes.md)
+ [Kalıcı ve Kalıcı Olmayan İletişim Kutuları](../mfc/modal-and-modeless-dialog-boxes.md)
 

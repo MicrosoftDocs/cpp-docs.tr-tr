@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2adfa5ba1c327c36df27adfd966f740307ba8c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a2a2dc7b0cebbfaa6f6fe7dbe7dc69e5d4f80121
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
 Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileştirmek için nasıl alter açıklanır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri denetimleri tek tek zorunluluğunu ortadan kaldırarak çizim iyileştirmek nasıl daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimler çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)  
@@ -112,5 +113,5 @@ Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileşt
      Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Denetimin meta ölçeklendirme nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir anda bu pencereyi kapatabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

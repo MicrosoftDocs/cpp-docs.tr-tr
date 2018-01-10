@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4355e16c099adfcf77d871f29d92274bb738eb52
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc816e84542ac393d47771ba8f529e9c6261ee5b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismemberfunctionpointer-class"></a>is_member_function_pointer Sınıfı
 Üye işlevi için bir işaretçi türü ise testleri.  
@@ -91,4 +92,4 @@ is_member_function_pointer<int (functional::*)()> == true
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_member_pointer sınıfı](../standard-library/is-member-pointer-class.md)
+ [is_member_pointer Sınıfı](../standard-library/is-member-pointer-class.md)

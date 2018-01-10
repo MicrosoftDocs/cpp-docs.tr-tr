@@ -14,11 +14,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4d7850721f5005ac1a1ab47c6557dcd99cede897
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a13acdf07e2f6055326aea2097cb923baa153a0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parallel-patterns-library-ppl"></a>Paralel Desen Kitaplığı (PPL)
 Paralel Desen kitaplığı (PPL), ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modeli sağlar. PPL'de zamanlama ve kaynak yönetimi bileşenlerine eşzamanlılık çalışma zamanı oluşturur. Uygulama kodunuz ve temel iş parçacığı mekanizması arasında Özet düzeyine genel, tür kullanımı uyumlu algoritmaları ve hareket kapsayıcıları verileri paralel sağlayarak başlatır. PPL'de ayrıca paylaşılan durum alternatifleri sağlayarak ölçeklendirme uygulamaları geliştirmenize olanak tanır.  
@@ -61,8 +62,8 @@ fib(42): 267914296
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Görevler ve görev grupları ppl'de rolü açıklanmaktadır.|  
-|[Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Paralel algoritmalar gibi kullanmayı açıklar `parallel_for` ve `parallel_for_each`.|  
-|[Paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md)|Çeşitli paralel kapsayıcılar ve PPL tarafından sağlanan nesneleri açıklar.|  
-|[PPL'de iptal](cancellation-in-the-ppl.md)|Paralel bir algoritma tarafından gerçekleştirilen işi iptal etme açıklanmaktadır.|  
-|[Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)|Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.|
+|[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Paralel algoritmalar gibi kullanmayı açıklar `parallel_for` ve `parallel_for_each`.|  
+|[Paralel Kapsayıcılar ve Nesneler](../../parallel/concrt/parallel-containers-and-objects.md)|Çeşitli paralel kapsayıcılar ve PPL tarafından sağlanan nesneleri açıklar.|  
+|[PPL'de İptal](cancellation-in-the-ppl.md)|Paralel bir algoritma tarafından gerçekleştirilen işi iptal etme açıklanmaktadır.|  
+|[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)|Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.|
 

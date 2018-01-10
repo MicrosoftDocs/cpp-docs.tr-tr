@@ -17,11 +17,14 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 01cd21e00cbf8947f5eb2ff8d2f578ab4912a03a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e59c5ecb6101667c7d8546afcc6cbbfb9e024488
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constraints-on-generic-type-parameters-ccli"></a>Genel Tür Parametrelerindeki Kısıtlamalar (C++/CLI)
 Genel tür veya yöntem bildirimleri, tür parametresi kısıtlamaları olan uygun bulabilirsiniz. Bir kısıtlama tür bağımsız değişkenleri kullanılan türleri getirmelidir bir gereksinimdir. Örneğin, bir kısıtlama tür bağımsız değişkeni bir belirli arabirimini uygulaması gerekir veya belirli bir sınıftan olabilir.  
@@ -203,4 +206,4 @@ ref struct SampleClass {};
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

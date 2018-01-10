@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9a812916c392551c641946b22f96b9bc44c536f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cbd1a75d3f277f500cae05b7806a09230d524131
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="virtual-specifier"></a>virtual Tanımlayıcısı
 [Sanal](../cpp/virtual-cpp.md) anahtar sözcüğü yalnızca statik olmayan sınıf üyesi işlevleri için uygulanabilir. Çağrıların işleve bağlanmasının, çalışma zamanına kadar ertelendiğini belirtir. Daha fazla bilgi için bkz: [sanal işlevler](../cpp/virtual-functions.md).  

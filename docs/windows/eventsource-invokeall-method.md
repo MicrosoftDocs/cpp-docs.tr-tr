@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 279d40bf8da171547e27313c4f1a9a3578d93be2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 45835b6929ae73559c427d374430b64e7ff21a61
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsourceinvokeall-method"></a>EventSource::InvokeAll Yöntemi
 Geçerli ilişkili her olay işleyici çağırması [EventSource](../windows/eventsource-class.md) belirtilen bağımsız değişken türleri ve bağımsız değişkenler kullanarak nesne.  
@@ -247,4 +250,4 @@ void InvokeAll(
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [EventSource sınıfı](../windows/eventsource-class.md)
+ [EventSource Sınıfı](../windows/eventsource-class.md)

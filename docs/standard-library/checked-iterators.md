@@ -20,11 +20,12 @@ caps.latest.revision: "30"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bbd902066e86d2dbe04e4bc709a1042c40dffe8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8997741b4290214aa8f147aa7b841424467e296b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="checked-iterators"></a>Denetlenmiş Yineleyiciler
 İşaretli yineleyiciler, kapsayıcınızın sınırlarının geçersiz kılınmamasını sağlar. İşaretli yineleyiciler yayın derlemeleri hem hata ayıklama derlemeleri için geçerlidir. Hata ayıklama modunda derlerken hata ayıklama yineleyiciler kullanma hakkında daha fazla bilgi için bkz: [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md).  
@@ -227,5 +228,5 @@ a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)   
- [Hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)
+ [Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)
 

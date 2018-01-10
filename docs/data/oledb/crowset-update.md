@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 17541ea324fa7d6c314501f1e09519881a1fff7c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 26cbada107bbefe4c5e32243f2761193b1912a0d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetupdate"></a>CRowset::Update
 Bekleyen tüm geçerli satırda son fetch itibaren yaptığınız değişiklikleri iletir veya **güncelleştirme** üzerinde çağırın.  

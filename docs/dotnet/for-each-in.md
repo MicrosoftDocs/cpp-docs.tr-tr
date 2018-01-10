@@ -19,11 +19,14 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1d89552bd299edc778b06bd01ee185c275c45db
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5dab51168b656422ddcf2c317a7f7fee1faf162e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="for-each-in"></a>for each, in
 Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem C++/CLI hem de yerel C++ projelerinde kullanılabilir. Ancak, kullanımı önerilmez. Standart bir kullanmayı [aralık tabanlı için deyimi (C++)](../cpp/range-based-for-statement-cpp.md) yerine.  
@@ -39,7 +42,7 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `type`  
  Türü `identifier`.  
@@ -63,13 +66,13 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
   
  Daha fazla bilgi için:  
   
--   [Foreach kullanarak C++ Standart Kitaplığı koleksiyonu üzerinden yineleme yapma](../dotnet/iterating-over-stl-collection-by-using-for-each.md)  
+-   [foreach Kullanarak Bir C++ Standart Kitaplığı Koleksiyonu Üzerinden Yineleme Yapma](../dotnet/iterating-over-stl-collection-by-using-for-each.md)  
   
--   [Nasıl yapılır: foreach ile diziler üzerinden](../dotnet/how-to-iterate-over-arrays-with-for-each.md)  
+-   [Nasıl yapılır: foreach ile Diziler Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-arrays-with-for-each.md)  
   
--   [Nasıl yapılır: foreach ile bir genel koleksiyon üzerinden](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
+-   [Nasıl yapılır: foreach ile Bir Genel Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-generic-collection-with-for-each.md)  
   
--   [Nasıl yapılır: foreach ile kullanıcı tanımlı bir koleksiyon üzerinden](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)  
+-   [Nasıl yapılır: foreach ile Kullanıcı Tanımlı Bir Koleksiyon Üzerinden Yineleme Yapma](../dotnet/how-to-iterate-over-a-user-defined-collection-with-for-each.md)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
   
@@ -105,7 +108,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 abcd  
@@ -154,7 +157,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 abcd  
@@ -163,4 +166,4 @@ Testing
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b159e41a27254f44d9a9868012237875cc24d4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5a608d98b43e6daf340ab09c7adb275849f347a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activex-control-containers-programming-activex-controls-in-an-activex-control-container"></a>ActiveX Denetim Kapsayıcıları: Bir ActiveX Denetim Kapsayıcısındaki ActiveX Denetimlerini Programlama
 Bu makalede gösterilen erişmek için işlem [yöntemleri](../mfc/mfc-activex-controls-methods.md) ve [özellikleri](../mfc/mfc-activex-controls-properties.md) katıştırılmış ActiveX denetimlerinin. Temel olarak, şu adımları izler:  
@@ -97,5 +98,5 @@ Bu makalede gösterilen erişmek için işlem [yöntemleri](../mfc/mfc-activex-c
  [!code-cpp[NVC_MFC_AxCont#7](../mfc/codesnippet/cpp/programming-activex-controls-in-a-activex-control-container_7.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md)
+ [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

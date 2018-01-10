@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6f516f52e20acec0feeea434d1812eea217e03c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 654ffc0f3fb4c33f153f3389442486ffa86b74a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="visualization-manager"></a>Seri Hale Getirme Yöneticisi
 Görsel Yöneticisi tüm uygulama görünümünü denetleyen bir nesnedir. Tek bir sınıf olarak burada, uygulamanız için tüm çizim kodu koyabilirsiniz yapar. MFC kitaplığını birkaç visual yöneticileri içerir. Uygulamanız için özel görünüm oluşturmak istiyorsanız visual yöneticiniz de oluşturabilirsiniz. Farklı görsel yöneticileri etkinleştirildiğinde aşağıdaki görüntüleri aynı uygulama göster:  
@@ -83,4 +84,4 @@ break;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [CMFCVisualManager sınıfı](../mfc/reference/cmfcvisualmanager-class.md)
+ [CMFCVisualManager Sınıfı](../mfc/reference/cmfcvisualmanager-class.md)

@@ -16,11 +16,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e7130c37799ad67054fd4c71f8c1eb5a27aadde
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: fbddc8fb0b4e382c954fe4b11f100ecefdff75d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="viewing-a-menu-as-a-pop-up-menu"></a>Menüyü Açılır Menü Olarak Görüntüleme
 Normalde, Menü Düzenleyici'de çalışırken menü kaynağı bir menü çubuğu görüntülenir. Ancak, program çalışırken, uygulamanın menü çubuğu'na eklenmesini menü kaynaklarınız olabilir.  
@@ -42,4 +45,4 @@ Normalde, Menü Düzenleyici'de çalışırken menü kaynağı bir menü çubuğ
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açılır menüler oluşturma](../windows/creating-pop-up-menus.md)   
- [Menü düzenleyicisi](../windows/menu-editor.md)   
+ [Menü Düzenleyicisi](../windows/menu-editor.md)   

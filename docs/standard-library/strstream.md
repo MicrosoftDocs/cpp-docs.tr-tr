@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0487fc2aa09568523c6a7d0bbcf4973beee309ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 91e127c30b8e360295d7451aa4b35ca8bd420e52
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltstrstreamgt"></a>&lt;strstream&gt;
 Ayrılmış bir dizi içinde depolanan sıraları iostreams işlemlerini destekleyen birden fazla sınıf tanımlar `char` nesnesi. Bu tür dizileri kolayca C dizeleri gelen ve giden dönüştürülür.  
@@ -41,17 +42,17 @@ Ayrılmış bir dizi içinde depolanan sıraları iostreams işlemlerini destekl
   
 |||  
 |-|-|  
-|[strstreambuf sınıfı](../standard-library/strstreambuf-class.md)|Öğeleri depolanan öğe dizisi gelen ve giden iletimini denetleyen bir Akış Arabellek sınıf tanımlar bir `char` dizi nesnesi.|  
-|[istrstream sınıfı](../standard-library/istrstream-class.md)|Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden sınıfı açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|  
-|[ostrstream sınıfı](../standard-library/ostrstream-class.md)|Sınıfı ve kodlanmış nesneleri öğelerinin ekleme denetimlerini bir nesne sınıfının bir akışı arabelleğe açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|  
-|[strstream sınıfı](../standard-library/strstream-class.md)|Sınıf ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|  
+|[strstreambuf Sınıfı](../standard-library/strstreambuf-class.md)|Öğeleri depolanan öğe dizisi gelen ve giden iletimini denetleyen bir Akış Arabellek sınıf tanımlar bir `char` dizi nesnesi.|  
+|[istrstream Sınıfı](../standard-library/istrstream-class.md)|Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden sınıfı açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|  
+|[ostrstream Sınıfı](../standard-library/ostrstream-class.md)|Sınıfı ve kodlanmış nesneleri öğelerinin ekleme denetimlerini bir nesne sınıfının bir akışı arabelleğe açıklar [strstreambuf](../standard-library/strstreambuf-class.md).|  
+|[strstream Sınıfı](../standard-library/strstream-class.md)|Sınıf ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri tanımlar [strstreambuf](../standard-library/strstreambuf-class.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<strstream >](../standard-library/strstream.md)   
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 
 

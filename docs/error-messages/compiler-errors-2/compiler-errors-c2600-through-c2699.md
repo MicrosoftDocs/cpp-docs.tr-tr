@@ -1,6 +1,6 @@
 ---
 title: "Derleyici hataları C2600 C2699 aracılığıyla | Microsoft Docs"
-ms.date: 10/25/2017
+ms.date: 11/17/2017
 ms.technology: cpp-tools
 ms.topic: error-reference
 f1_keywords:
@@ -58,20 +58,20 @@ ms.assetid: 73c6319f-cbea-4a2f-913b-90dc1af61f64
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 70ea205ef770fe98cb94cbfc4107fdb4af6560b5
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 7b67597e6b841546b624d235ab017f138b969135
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-errors-c2600-through-c2699"></a>Derleyici hataları C2600 C2699 aracılığıyla
 
-Bu bölümü belgelerin makalelerinde Visual C++ derleyici hataları alt hakkında bilgiler içerir. Burada yer alan bilgiler erişebilir veya **çıkış** penceresi Visual Studio'da bir hata numarası seçin ve ardından F1 tuşuna belirtin.
+Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata iletileri kümesini açıklayın.
 
-> [!NOTE]
-> Her [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] hata MSDN içinde belgelenmiştir. Çoğu durumda, tanılama iletisinin tüm kullanılabilir bilgileri sağlar. Bir hata iletisi düşünüyorsanız, ek açıklama, bize bildirin gerekir. Bilgisayarınıza bu sayfadaki geri bildirim formu kullanın veya Visual Studio menü çubuğunda gidin ve seçebilirsiniz **yardımcı**, **bir hata raporu**, veya üzerinde bir öneri veya hata raporu gönderebilirsiniz [Microsoft Connect](http://connect.microsoft.com/VisualStudio).
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Visual C++ dili](http://go.microsoft.com/fwlink/?LinkId=158195) forumudur sorular ve tartışmaları hakkında [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] dili sözdizimi ve derleyicisi. [Visual C++ genel](http://go.microsoft.com/fwlink/?LinkId=158194) Forumu hakkında sorular için olan [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] , değil tartışılır diğer forumlarda. Üzerinde hataları ve Uyarıları hakkında Yardım bulabilirsiniz [yığın taşması](http://stackoverflow.com/).
+## <a name="error-messages"></a>Hata iletileri
 
 |Hata|İleti|
 |-----------|-------------|

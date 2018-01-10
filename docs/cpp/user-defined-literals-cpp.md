@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6643df5e0d5b49155a07763cca68ffc66cb2d38d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a461f4ca384585008ccf47fa2bfda91d36e724ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="user-defined-literals--c"></a>Kullanıcı tanımlı değişmez değerler (C++)
 Değişmez değerler beş ana kategoriye ayrılır: tamsayı, karakteri, kayan nokta, dize, boolean ve işaretçi.  C++ 11 başlangıç ortak deyimleri için söz dizim kısayollar sağlar ve tür güvenliği artırmak için bu kategorilere göre kendi değişmez değerleri tanımlayabilirsiniz. Örneğin, bir uzaklık sınıf sahip varsayalım. Bir hazır değer kilometre için ve mil için başka bir tanımlayın ve yalnızca yazarak ölçü hakkında açık kullanıcının olmasını öneririz: otomatik d 42.0_km veya otomatik d = 42.0_mi =. Performans avantajı veya kullanıcı tanımlı değişmez değerler dezavantajı yoktur; derleme zamanı tür kesintisi veya kolaylık olması için öncelikle oldukları. Kullanıcı tanımlı değişmez değerler std:string, std::complex ve birimleri standart kitaplığı zamanını ve süresini işlemlerinde sahip \<chrono > Üstbilgi:  

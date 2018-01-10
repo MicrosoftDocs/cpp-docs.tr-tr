@@ -37,11 +37,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f4067e9555200805631fb72fe3e40afa09c168e3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1d0049643ef7a3695eef8c3271e22586b5c7454d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-generic-text-mappings"></a>Genel Metin Eşlemelerini Kullanma
 **Microsoft özel**  
@@ -110,4 +111,4 @@ RetVal = strrev(szString);
  [Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)   
  [Sabit ve Global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)   
  [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)   
- [Örnek genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)
+ [Örnek Genel Metin Programı](../c-runtime-library/a-sample-generic-text-program.md)

@@ -42,11 +42,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 52cfd21df2f0f72da10589745fb3a8be3e0b24e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 028a58c443ba45a4b8167a17f73f6f3fa54e4ca7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="combo-box-styles"></a>Birleşik Giriş Kutusu Stilleri
 Aşağıdaki birleşik giriş kutusu stilleri MFC'de kullanılabilir.  

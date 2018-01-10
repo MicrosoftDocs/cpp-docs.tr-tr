@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a404398b1e5100f94c793c7da242f3c58aa6a391
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: be7021809c5e89a2e76236d6bbee0360fee5f625
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queueconstreference-stlclr"></a>queue::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  
@@ -72,4 +75,4 @@ a b c
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
  [Queue::Reference (STL/CLR)](../dotnet/queue-reference-stl-clr.md)   
- [Queue::value_type (STL/CLR)](../dotnet/queue-value-type-stl-clr.md)
+ [queue::value_type (STL/CLR)](../dotnet/queue-value-type-stl-clr.md)

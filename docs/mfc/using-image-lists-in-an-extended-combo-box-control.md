@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ec0dfb151660ffc0246428adb79ebf649975c90e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ac69e7d0dbe1748a409b107579c747b7f9a4a7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-image-lists-in-an-extended-combo-box-control"></a>Genişletilmiş Birleşik Giriş Kutusu Denetiminde Görüntü Listeleri Kullanma
 Ana Genişletilmiş Birleşik giriş kutusu denetimleri birleşik giriş kutusu denetimi öğeleri ayrı ayrı bir görüntü listesi görüntülerden ilişkilendirmek olanağı özelliğidir. Her üç farklı görüntüleri görüntüleyemeyecek öğesidir: Seçili durumunda, biri kendi nonselected durumu ve üçüncü bir katmana görüntüsü için için bir tane.  
@@ -46,5 +47,5 @@ Ana Genişletilmiş Birleşik giriş kutusu denetimleri birleşik giriş kutusu 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComboBoxEx kullanma](../mfc/using-ccomboboxex.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

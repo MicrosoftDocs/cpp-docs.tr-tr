@@ -54,11 +54,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f30f680449ee0eee1d25f1705d2c98adfe88c312
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1bb52d6a987289ed77d7b63a5497323ddad2b467
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fundamental-types--c"></a>Temel Türler (C++)
 C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. Tam sayı türleri tam sayılar işleyebilir. Kayan nokta türleri kesirli bölümleri olabilir değerleri belirtme özelliğine sahiptir.  
@@ -109,4 +110,4 @@ C++'ta temel türleri üç kategoride bölünen: tamsayı, kayan nokta ve void. 
  Tür dönüşümü hakkında daha fazla bilgi için bkz: [standart dönüşümler](../cpp/standard-conversions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri türü aralıkları](../cpp/data-type-ranges.md)
+ [Veri Türü Aralıkları](../cpp/data-type-ranges.md)

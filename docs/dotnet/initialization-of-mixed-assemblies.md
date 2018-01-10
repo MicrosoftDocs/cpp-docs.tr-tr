@@ -21,14 +21,17 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 843b7a6e10e7814f4f922297b94b3ffe523dc0ad
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e7d192387131ff0eaa04fc366254d7f78a73dd52
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="initialization-of-mixed-assemblies"></a>Karışık Derlemeleri Başlatma
-Visual Studio 2005 önce ile DLL'leri derlenmiş **/CLR** derleyici seçeneği belirleyici olmayan kilitlenme yüklendiğinde; bu sorunu karışık DLL yükleme veya yükleyici kilidi sorunu çağrıldı. Neredeyse tüm gerekircilik karışık DLL yükleme işlemi kaldırılmıştır. Ancak, birkaç vardır hangi yükleyici kilidi oluşabilir (belirleyici biçimde) senaryoları kaldı. Bu sorun hakkında daha fazla bilgi için bkz: "Karışık DLL yükleme sorunu" [MSDN Kitaplığı](http://go.microsoft.com/fwlink/?linkid=556).  
+Visual Studio 2005 önce ile DLL'leri derlenmiş **/CLR** derleyici seçeneği belirleyici olmayan kilitlenme yüklendiğinde; bu sorunu karışık DLL yükleme veya yükleyici kilidi sorunu çağrıldı. Neredeyse tüm gerekircilik karışık DLL yükleme işlemi kaldırılmıştır. Ancak, birkaç vardır hangi yükleyici kilidi oluşabilir (belirleyici biçimde) senaryoları kaldı.
   
  İçindeki kod [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) CLR erişemezler gerekir. Bunun anlamı `DllMain` yönetilen işlevler hiçbir çağrı yapmak, doğrudan veya dolaylı olarak; hiç bir yönetilen kod bildirilen veya uygulanan `DllMain`; ve herhangi bir atık toplama veya otomatik kitaplık yükleme içinde gerçekleşeceğini `DllMain` .  
   
@@ -252,4 +255,4 @@ Test called so linker does not throw away unused object.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)
+ [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

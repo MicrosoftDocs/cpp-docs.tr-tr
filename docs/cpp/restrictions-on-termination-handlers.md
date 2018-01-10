@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 593cb54298682c53f534e92f6553d86d2118d98b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 71486b167f4e9939d4913b3660ed3513dc02b8f5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="restrictions-on-termination-handlers"></a>Sonlandırma İşleyicileri Kısıtlamaları
 Kullanamazsınız bir `goto` içine atlamak için deyimi bir `__try` deyimi blok veya `__finally` deyimi bloğu. Bunun yerine, normal denetim akışıyla deyim bloğunu girmeniz gerekir. (Dışı ancak atlamak bir `__try` deyimi blok.) Ayrıca, bir özel durum işleyici veya sonlandırma işleyicisi içinde iç içe yerleştirilemez bir `__finally` bloğu.  
@@ -32,4 +33,4 @@ Kullanamazsınız bir `goto` içine atlamak için deyimi bir `__try` deyimi blok
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+ [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

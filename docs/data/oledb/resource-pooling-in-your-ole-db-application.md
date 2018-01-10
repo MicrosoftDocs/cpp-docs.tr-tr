@@ -18,11 +18,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a11fe27fad42e7a27e55a8b4f494980aa9f708a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9d094b3545978aa042ba5a6d308a09369b238e4c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-pooling-in-your-ole-db-application"></a>OLE DB Uygulamanızda Kaynak Havuzu
 Uygulamanızda havuzu kullanabilmeniz için OLE DB hizmetleri, veri kaynağınızı elde ederek çağrılır emin olmalısınız **IDataInitialize** veya **IDBPromptInitialize**. Doğrudan kullanırsanız `CoCreateInstance` sağlayıcının CLSID üzerinde dayanarak sağlayıcı çağırmak için OLE DB hizmetleri çağrılır.  
@@ -36,4 +39,4 @@ Uygulamanızda havuzu kullanabilmeniz için OLE DB hizmetleri, veri kaynağını
  Son olarak, ADO otomatik olarak OLE DB kullandığından Hizmetleri bağlantıları kurmak için ADO kullanabilirsiniz ve havuzu ve kaydı otomatik olarak gerçekleşir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB kaynak havuzu ve Hizmetleri](../../data/oledb/ole-db-resource-pooling-and-services.md)
+ [OLE DB Kaynak Havuzu ve Hizmetleri](../../data/oledb/ole-db-resource-pooling-and-services.md)

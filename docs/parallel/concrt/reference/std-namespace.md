@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5e649f5228fdc9ad0faba11403645e426090dc4d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9eaf4aa1b59c1aa0e5735efdae6adae35d7077f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="std-namespace"></a>std Ad Alanı
 ## <a name="syntax"></a>Sözdizimi  
@@ -33,7 +34,7 @@ namespace std;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[make_exception_ptr işlevi](make-exception-ptr-function.md)||  
+|[make_exception_ptr İşlevi](make-exception-ptr-function.md)||  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ppltasks.h  

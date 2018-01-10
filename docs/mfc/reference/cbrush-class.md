@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6c567c720f5dc1febe0626754721c7c6ec9af4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2c60be4501e14c1a3b55789905be1fb6e753731
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) fırça yalıtır.  
@@ -397,4 +398,4 @@ operator HBRUSH() const;
  [CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CBitmap sınıfı](../../mfc/reference/cbitmap-class.md)   
- [CDC sınıfı](../../mfc/reference/cdc-class.md)
+ [CDC Sınıfı](../../mfc/reference/cdc-class.md)

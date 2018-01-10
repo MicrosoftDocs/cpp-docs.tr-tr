@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fe9203a94d698aa21ddd861df75c63a76253ce9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58db951b2c9459eb9511e0a354e1daec4b29b53d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parsing-c-command-line-arguments"></a>C++ Komut Satırı Bağımsız Değişkenlerini Ayrıştırma
 **Microsoft özel**  
@@ -81,4 +82,4 @@ int main( int argc,      // Number of strings in array argv
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main: Program başlatma](../cpp/main-program-startup.md)
+ [main: Program Başlatma](../cpp/main-program-startup.md)

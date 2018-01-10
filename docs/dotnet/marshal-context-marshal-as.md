@@ -19,11 +19,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8cf8d8728a71f268db994efdc60f4be0dc5a65a2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e56e225d136fb02445eeeb398937adc075f2dae7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="marshalcontextmarshalas"></a>marshal_context::marshal_as
 Yönetilen ve yerel veri türü arasında dönüştürme için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.  
@@ -81,4 +84,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++'da hazırlamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)   
  [marshal_as](../dotnet/marshal-as.md)   
- [marshal_context sınıfı](../dotnet/marshal-context-class.md)
+ [marshal_context Class](../dotnet/marshal-context-class.md)

@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b6034dc13c554769ab62b37bd1ca143527b5f82e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e48872907b07b0adf18cf17cca6ec6ecabe9e2de
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="documents-views-and-the-framework"></a>Belgeler, Görünümler ve Çerçeve
 MFC çerçevesi Kalp belge ve görünüm kavramlarını ' dir. Hangi kullanıcı düzenleme oturumunda etkileşimde bulunan bir veri nesnesi bir belgedir. Tarafından oluşturulan `New` veya **açık** komutunu **dosya** menü ve genellikle bir dosyaya kaydedilir. (Standart MFC belgeleri, sınıfından türetilen **CDocument**, etkin belgeler ve OLE bileşik belgeler farklıdır.) Bir görünüm üzerinden kullanıcı bir belge ile etkileşime giren bir pencere nesnesidir.  
@@ -74,4 +75,4 @@ MFC çerçevesi Kalp belge ve görünüm kavramlarını ' dir. Hangi kullanıcı
  Bu ailesi makaleler rest nasıl framework araçları, MFC Uygulama Sihirbazı'nı ve kaynak Düzenleyicileri Bu nesneleri oluşturmak, bunlar birlikte nasıl çalışır ve bunları sizin programlamada kullanma açıklanmaktadır. Belgeler, görünümler ve çerçeve pencereleri daha ayrıntılı olarak açıklanmıştır [pencere nesneleri](../mfc/window-objects.md) ve [belge/görünüm mimarisinin](../mfc/document-view-architecture.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows uygulamaları yazmak için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)
+ [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

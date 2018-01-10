@@ -15,11 +15,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8fda1cfd5b23ae94da6be070e59add2854fb2687
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5fe2d3c5edb4b90676c3880ae422c1fb507cd164
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dbcolumn"></a>db_column
 Belirtilen sütun satır kümesindeki bir değişken bağlar.  
@@ -124,4 +127,4 @@ class CProducts {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
+ [Sınıf Öznitelikleri](../windows/class-attributes.md)   

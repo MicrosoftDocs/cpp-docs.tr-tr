@@ -37,11 +37,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b7561c9765dcbead36335852d457568bd76b46e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd5f13f2ec48f38fde140361d31a5e08ae6228b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 Stok Font özelliği uygular ve bir Windows yazı tipi nesnesi işlevselliği kapsar ve `IFont` arabirimi.  
@@ -247,4 +248,4 @@ void SetFont(LPFONT pNewFont);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CPropExchange sınıfı](../../mfc/reference/cpropexchange-class.md)
+ [CPropExchange Sınıfı](../../mfc/reference/cpropexchange-class.md)

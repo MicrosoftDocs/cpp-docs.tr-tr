@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 05756f23bc41a85a1810aac23fef6ffcd5de29ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae6626b9f93ec77627eac08959e9877315fc9c1b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="serialization-serialization-vs-database-inputoutput"></a>Seri hale getirme: Seri hale getirme vs. Veritabanı giriş/çıkış
 Bu makalede ve ne zaman belge nesneleri seri hale getirme ve diğer g/ç teknikleri uygun ne zaman dosya tabanlı giriş/çıkış (g/ç) için kullanılacağını açıklanmaktadır; çünkü uygulamanın okur ve veritabanı uygulamaları olduğu gibi bir işlem başına temelinde verileri yazar. Serileştirme kullanmıyorsanız, ayrıca olmaz Kaydet, Dosya Aç, gereksinim ve komutlar olarak kaydetme. Kapsanan konular şunlardır:  
@@ -32,5 +33,5 @@ Bu makalede ve ne zaman belge nesneleri seri hale getirme ve diğer g/ç teknikl
 -   [Veritabanı uygulamalarında Dosya menüsü işleme](../mfc/file-menu-in-an-mfc-database-application.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme](../mfc/serialization-in-mfc.md)
+ [Serileştirme](../mfc/serialization-in-mfc.md)
 

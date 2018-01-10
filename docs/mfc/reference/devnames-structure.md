@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 735d47c2ecf172de207de3c551ed9e42319a5ada
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a3627af10dfb6fd18c54f772d26c33123127613a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="devnames-structure"></a>DEVNAMES Yapısı
 `DEVNAMES` Yapısı sürücü, cihaz ve bir yazıcı için çıktı bağlantı noktası adları tanımlayan dizelerin içerir.  

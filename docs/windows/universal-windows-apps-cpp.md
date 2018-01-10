@@ -13,11 +13,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 656c8ac642ae9c8a6a76e1ed52ca014b5515e65f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e9ad7a56663081941f3b3ca18193da55d5df2ab6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 Evrensel Windows Platformu (UWP) uygulamaları, farklı ekran boyutlarına farklı aygıtlar için otomatik olarak ayarlar içerik kalmaz basit kullanıcı arabirimleri vurgulamak tasarım ilkeleri kümesi gerçekleştirir. XAML biçimlendirme ve kod arkasında yerel C++ içinde kullanıcı arabirimini oluşturun. Diğer dillerde yazılmış UWP uygulamaları tarafından kullanılabilecek (dll) bileşenleri de oluşturabilirsiniz. UWP uygulamalar için API yüzeyi çok çeşitli işletim sistemi hizmetleri sağlayan bir iyi faktörlere göre kitaplık Windows Runtime ' dir.  
@@ -31,7 +34,7 @@ Evrensel Windows Platformu (UWP) uygulamaları, farklı ekran boyutlarına farkl
 |||  
 |-|-|  
 |[Visual C++ Dil Başvurusu (C + +/ CX)](../cppcx/visual-c-language-reference-c-cx.md)|Windows çalışma zamanı API'leri C++ tüketimini basitleştirmek ve özel durumlara dayalıdır hata işleme etkinleştiren uzantıları açıklar.|  
-|[Uygulamalar ve kitaplıkları oluşturma (C + +/ CX)](../cppcx/building-apps-and-libraries-c-cx.md)|DLL'ler ve C + erişilebilir statik kitaplıklar oluşturmayı açıklar +/ CX uygulama veya bileşen.|  
+|[Uygulama ve Kitaplık Oluşturma (C++/CX)](../cppcx/building-apps-and-libraries-c-cx.md)|DLL'ler ve C + erişilebilir statik kitaplıklar oluşturmayı açıklar +/ CX uygulama veya bileşen.|  
 |[Öğretici: C++ kullanarak ilk Windows mağazası uygulamanızı oluşturma](https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)|C++ Evrensel Windows Platform uygulaması geliştirme temel kavramlarını tanıtır bir kılavuz. (Henüz Windows 10 UWP geliştirme için güncelleştirilmiştir.)|  
 |[C++'ta Windows çalışma zamanı bileşenleri oluşturma](https://docs.microsoft.com/en-us/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)|Diğer evrensel Windows platformu uygulamaları ve bileşenleri tüketebileceği DLL'leri oluşturmayı açıklar.|  
 |[Oyunlar geliştirme](https://docs.microsoft.com/en-us/windows/uwp/gaming/)|DirectX ve C++ oyun oluşturmak için nasıl kullanılacağını açıklar.|  

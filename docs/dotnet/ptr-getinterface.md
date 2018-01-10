@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a86741e9047694dda61e306afb164dc2cc2bbf98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 286a0dfa19d5d18d76dea1164d9d038667e1ef57
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptrgetinterface"></a>ptr::GetInterface
 Bir işaretçi ait COM nesnesi döndürür.  
@@ -172,4 +175,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [PTR üyeleri](../dotnet/ptr-members.md)   
- [PTR::QueryInterface](../dotnet/ptr-queryinterface.md)
+ [ptr::QueryInterface](../dotnet/ptr-queryinterface.md)

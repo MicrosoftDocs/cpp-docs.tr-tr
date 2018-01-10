@@ -20,11 +20,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7a8dcf4a49813ae108edb23b50676e751db5e2f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fe88a322314ac24fa5799735e84ff100efa2e79
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>Yerel Masaüstü Uygulamaları Dağıtma (Visual C++)
 Dağıtım olarak diğer bilgisayarlara yüklenmesi tamamlanmış uygulamanın veya bileşenin dağıttığınız işlemidir. Bir geliştiricinin bilgisayarında bir uygulama oluşturduğunuzda dağıtım planlama başlatır. Uygulama yüklü ve bir kullanıcının bilgisayarında çalıştırılmaya hazır olduğunda dağıtım sona erer.  
@@ -38,29 +39,29 @@ Dağıtım olarak diğer bilgisayarlara yüklenmesi tamamlanmış uygulamanın v
  Bu bölümdeki makaleleri belgelerin yerel Visual C++ uygulamasını bir yükleme paketi ve önerilen yöntemleri için içermelidir hangi dosyaların bir desteklenen hedef platformu sağlayan herhangi bir bilgisayarda çalıştığından emin olmak nasıl ele almaktadır. uygulamanızın bağımlı bileşenleri yeniden dağıtabilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md)  
+ [Visual C++ üzerinde Dağıtım](../ide/deployment-in-visual-cpp.md)  
   
  [Dağıtım Kavramları](../ide/deployment-concepts.md)  
   
- [Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)  
+ [Visual C++ Uygulaması Bağımlılıklarını Anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)  
   
- [Hangi DLL'lerin yeniden dağıtılacağını belirleme](../ide/determining-which-dlls-to-redistribute.md)  
+ [Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme](../ide/determining-which-dlls-to-redistribute.md)  
   
- [Dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md)  
+ [Dağıtım Yöntemi Seçme](../ide/choosing-a-deployment-method.md)  
   
- [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md)  
+ [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)  
   
- [Dağıtım örnekleri](../ide/deployment-examples.md)  
+ [Dağıtım Örnekleri](../ide/deployment-examples.md)  
   
- [Web istemcisi uygulamalarını yeniden dağıtma](../ide/redistributing-web-client-applications.md)  
+ [Web İstemcisi Uygulamalarını Yeniden Dağıtma](../ide/redistributing-web-client-applications.md)  
   
- [Visual C++ uygulamaları için ClickOnce dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md)  
+ [Visual C++ Uygulamaları için ClickOnce Dağıtımı](../ide/clickonce-deployment-for-visual-cpp-applications.md)  
   
  [Önceki bir çalışma zamanı sürümünde C++/CLR uygulaması çalıştırma](../ide/running-a-cpp-clr-application-on-a-previous-runtime-version.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
+ [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
   
  [Dağıtım](/dotnet/framework/deployment/index)  
   
- [Sorun giderme C/C++ yalıtılmış uygulamaları ve yan yana derlemeleri oluşturma](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+ [C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

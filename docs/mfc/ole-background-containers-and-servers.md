@@ -25,11 +25,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9f8bf50dbae25390de01180f592959a7fb76a04b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3c6f3c15b0ea398ec621ba5f6e34a9fb6e0aae8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-background-containers-and-servers"></a>OLE Arka Planı: Kapsayıcılar ve Sunucular
 Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğeleri içeren bir uygulamadır. Bir kapsayıcı uygulama tarafından yönetilen belgeleri depolamak ve OLE belge bileşenlerini ve bunun yanı sıra uygulama tarafından oluşturulan veri görüntüler kurabilmesi gerekir. Bir kapsayıcı uygulama aynı zamanda yeni öğeler eklemek veya var olan öğeleri sunucu uygulamaları gerektiğinde etkinleştirerek düzenlemek kullanıcılara izin vermesi gerekir. Bir kapsayıcı uygulama kullanıcı arabirimi gereksinimlerini makalesinde listelenen [kapsayıcılar: kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md).  
@@ -48,5 +49,5 @@ Bir kapsayıcı uygulama kendi belgelerine katıştırılmış veya bağlı öğ
  [Kapsayıcıları](../mfc/containers.md)   
  [Sunucuları](../mfc/servers.md)   
  [Kapsayıcılar: İstemci öğeleri](../mfc/containers-client-items.md)   
- [Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)
+ [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
 

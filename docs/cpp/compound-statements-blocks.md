@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c9fc47721ba5cecc8ca9f61f89ecedebaed18ae4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36dc3c25d5f8bbd37ebfaa3458c07f6948492817
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compound-statements-blocks"></a>Bileşik Deyimler (Bloklar)
 Bileşik deyim süslü ayraçlar içindeki sıfır veya daha fazla deyimleri oluşur (**{}**). Bileşik deyim, deyim beklenen herhangi bir yerde kullanılabilir. Bileşik deyimlere genellikle "blok" adı verilir.  
@@ -54,4 +55,4 @@ else
 >  Bir bildirim bir deyim olduğundan, bir bildirimi deyimlerinde biri olabilir *deyimi listesi*. Sonuç olarak, bileşik deyim içinde bildirilen, ancak açıkça statik olarak bildirilmeyen adların yerel kapsamı ve (nesneler için) ömrü vardır. Bkz: [kapsam](../cpp/scope-visual-cpp.md) adları yerel kapsamlı işlenmesi hakkındaki ayrıntılar için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ deyimlerine genel bakış](../cpp/overview-of-cpp-statements.md)
+ [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

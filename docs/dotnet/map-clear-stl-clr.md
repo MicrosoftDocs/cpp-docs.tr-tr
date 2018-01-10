@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfdaf126ee093819df14bae679100d37d5f3ea59
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 0af5d2bc19422c3e28550863d2197ebc5dd5343f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapclear-stlclr"></a>map::clear (STL/CLR)
 Tüm öğeleri kaldırır.  
@@ -85,4 +88,4 @@ size() = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [Map::ERASE (STL/CLR)](../dotnet/map-erase-stl-clr.md)
+ [map::erase (STL/CLR)](../dotnet/map-erase-stl-clr.md)

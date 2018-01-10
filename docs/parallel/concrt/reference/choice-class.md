@@ -30,11 +30,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0466b374869ac34c56f58c94111c1738980286a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec7383340e9502764514bb61ce8e10f6cb64c616
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="choice-class"></a>seçenek Sınıfı
 A `choice` ileti bloğu olan bir kaynak kümesi akış denetimi etkileşim temsil eden birden çok kaynak, tek hedef blok. Seçim bloğu bir iletisi oluşturmak üzere birden çok kaynaktan herhangi biri için bekler ve ileti üretilen kaynak dizini yayılır.  
@@ -82,7 +83,7 @@ class choice: public ISource<size_t>;
 |[ayırma](#reserve)|Daha önce bu tarafından sunulan bir ileti ayırır `choice` ileti bloğu.|  
 |[unlink_target](#unlink_target)|Hedef blok bu bağlantıyı keser `choice` ileti bloğu.|  
 |[unlink_targets](#unlink_targets)|Tüm hedefleri bu bağlantıyı keser `choice` ileti bloğu. (Geçersiz kılmaları [Isource::unlink_targets](isource-class.md#unlink_targets).)|  
-|[değer](#value)|Dizinini tarafından seçildiğinde iletisini alır `choice` ileti bloğu.|  
+|[value](#value)|Dizinini tarafından seçildiğinde iletisini alır `choice` ileti bloğu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Seçim bloğu gelen iletileri yalnızca biri tüketiliyor sağlar.  
@@ -347,4 +348,4 @@ _Payload_type const& value();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [join sınıfı](join-class.md)   
- [single_assignment sınıfı](single-assignment-class.md)
+ [single_assignment Sınıfı](single-assignment-class.md)

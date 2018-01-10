@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cc7999791b52ade2b657c8602fbb9b7693c277de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ddbab63bb587ac726337ee719cfab03a760a305
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-classes-for-creating-internet-client-applications"></a>Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları
 MFC Internet istemci uygulamaları yazmak için aşağıdaki sınıflar ve genel işlevler sağlar. Girinti üstündeki girintisiz sınıfından türetilen bir sınıfı gösterir. `CGopherFile`ve `CHttpFile` öğesinden türetilen `CInternetFile`, örneğin. Bu sınıf ve genel işlevler AFXINET bildirilir. H dışında `CFileFind`, AFX bildirilmedi. H.  
@@ -67,4 +68,4 @@ MFC Internet istemci uygulamaları yazmak için aşağıdaki sınıflar ve genel
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
  [Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)   
- [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+ [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

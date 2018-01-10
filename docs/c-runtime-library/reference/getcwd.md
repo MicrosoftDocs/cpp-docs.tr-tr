@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1dc6bd28105edf5c689176cd48b3cfc08a380ce0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b057550b23a03e1ecbf14845a7d9223d35632a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="getcwd"></a>getcwd
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_getcwd](../../c-runtime-library/reference/getcwd-wgetcwd.md) yerine.  

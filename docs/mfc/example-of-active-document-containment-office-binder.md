@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1305057b6b0f63e513aca88b77a507ed9bbc3493
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 00451b41b047f433929ad58e4b275eb413f4e22e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="example-of-active-document-containment-office-binder"></a>Etkin Belge Kapsama Örneği: Office Binder
 Microsoft Office Binder bir etkin belge kapsayıcısı örneğidir. Kapsayıcıları zamanki gibi Office Binder birincil iki bölme içerir. Sol bölmede cilt içindeki etkin belgeler karşılık simgeleri içerir. Her bir belgenin adlı bir *bölüm* bağlayıcı içinde. Örneğin, bir bağlayıcı Word belgelerini, PowerPoint dosyaları, Excel elektronik tablolar vb. içerebilir.  
@@ -38,5 +39,5 @@ Microsoft Office Binder bir etkin belge kapsayıcısı örneğidir. Kapsayıcıl
  Elbette, bağlayıcıları yanında kapsayıcıların olası diğer tür vardır. Dosya Gezgini, sol bölmede ağaç denetimi sağ bölmede bulunan dosyalara şu anda seçili dizinde gösterirken, bir sürücü veya ağ, dizinleri hiyerarşik bir listesini görüntülemek için kullanma tipik çift bölmeli arabirimini kullanır. Bir Internet tarayıcısı türü çift bölmeli arabirimini kullanarak yerine kapsayıcı (örneğin, Microsoft Internet Explorer) genellikle tek bir çerçeveye sahiptir ve köprüleri kullanarak gezinme sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsaması](../mfc/active-document-containment.md)
+ [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
 

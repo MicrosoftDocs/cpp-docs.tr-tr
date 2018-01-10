@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b6721620490a00da0b9c8fa039be0379f4d7dd1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 1325a089739b3820009aa239f56805264dbb6b83
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="srwlock-class"></a>SRWLock Sınıfı
 Bir ince Okuyucu/Yazıcı kilidi temsil eder.  
@@ -47,22 +50,22 @@ class SRWLock;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[SRWLock::SRWLock Oluşturucusu](../windows/srwlock-srwlock-constructor.md)|SRWLock sınıfı yeni bir örneğini başlatır.|  
-|[SRWLock:: ~ SRWLock yok Edicisi](../windows/srwlock-tilde-srwlock-destructor.md)|SRWLock sınıfı örneği deinitializes.|  
+|[SRWLock::~SRWLock Yıkıcısı](../windows/srwlock-tilde-srwlock-destructor.md)|SRWLock sınıfı örneği deinitializes.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLock::LockExclusive yöntemi](../windows/srwlock-lockexclusive-method.md)|Özel modda SRWLock nesneyi alır.|  
-|[SRWLock::LockShared yöntemi](../windows/srwlock-lockshared-method.md)|Paylaşılan modda SRWLock nesneyi alır.|  
-|[SRWLock::TryLockExclusive yöntemi](../windows/srwlock-trylockexclusive-method.md)|Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır.|  
-|[SRWLock::TryLockShared yöntemi](../windows/srwlock-trylockshared-method.md)|SRWLock nesne geçerli veya belirtilen SRWLock nesnesi paylaşılan modda almaya çalışır.|  
+|[SRWLock::LockExclusive Metodu](../windows/srwlock-lockexclusive-method.md)|Özel modda SRWLock nesneyi alır.|  
+|[SRWLock::LockShared Metodu](../windows/srwlock-lockshared-method.md)|Paylaşılan modda SRWLock nesneyi alır.|  
+|[SRWLock::TryLockExclusive Metodu](../windows/srwlock-trylockexclusive-method.md)|Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır.|  
+|[SRWLock::TryLockShared Metodu](../windows/srwlock-trylockshared-method.md)|SRWLock nesne geçerli veya belirtilen SRWLock nesnesi paylaşılan modda almaya çalışır.|  
   
 ### <a name="protected-data-member"></a>Korumalı veri üyesi  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SRWLock::SRWLock_ veri üyesi](../windows/srwlock-srwlock-data-member.md)|Geçerli SRWLock nesnesi için temel alınan kilidi değişken içeriyor.|  
+|[SRWLock::SRWLock_ Veri Üyesi](../windows/srwlock-srwlock-data-member.md)|Geçerli SRWLock nesnesi için temel alınan kilidi değişken içeriyor.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SRWLock`  
@@ -73,4 +76,4 @@ class SRWLock;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5d2a3f42522ecceb09261de7437446f0d5be2d6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c4b8618e4951ac499d504cc68b0552ea45eed03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="servers-implementing-server-documents"></a>Sunucular: Sunucu Belgeleri Uygulama
 Bu makalede, Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz server Belge başarıyla uygulamak için gerçekleştirmeniz gereken adımlar açıklanmaktadır.  
@@ -47,5 +48,5 @@ Bu makalede, Uygulama Sihirbazı'nda OLE sunucu seçeneği belirtmediyseniz serv
  [Sunucuları](../mfc/servers.md)   
  [Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)   
  [Sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md)   
- [Sunucular: Yerinde çerçeve pencereleri uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
+ [Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)
 

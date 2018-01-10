@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 703035c7a5b2b32df95f83b42327b0965c98b4fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b4dc6ca358959f6842cc16dcd2372094d5d7425b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections::VectorIterator sınıfı
 Windows çalışma zamanı IVector arabiriminden türetilmiş nesneler için bir standart Şablon kitaplığı yineleyici sağlar.  

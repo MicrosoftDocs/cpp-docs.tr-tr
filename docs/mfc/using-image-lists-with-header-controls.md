@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d3346384b6b77b3ef965bb2b58b99c78f315f183
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a7a51aadc10a7722875597813e24ceb5960ab459
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-image-lists-with-header-controls"></a>Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma
 Üstbilgi öğeleri bir görüntüyü üstbilgi öğesi içinde seçeneğine sahipsiniz. Bir ilişkili görüntü listesinde depolanan bu görüntüsü 16 x 16 piksel ve liste görünümü denetimi içinde kullanılan simge görüntüleri aynı özelliklere sahip. Bu davranış başarıyla uygulamak için ilk oluşturun ve resim listesi başlatma listesi üstbilgi denetimiyle ilişkilendirmek ve görüntünün görüntüler üstbilgi öğesi özniteliklerini değiştirme gerekir.  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/24/2017
 >  Birden çok denetim aynı görüntü listesi kullanma olması mümkündür. Örneğin, standart liste görünümü denetimi olabilir hem küçük simge görünümünü liste görünümü denetimi ve liste görünümü denetimi, üstbilgi öğeleri tarafından kullanılan bir görüntü listesi (16 x 16 piksel görüntüleri için).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)
+ [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
 

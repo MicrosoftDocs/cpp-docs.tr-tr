@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 22f6bb428d601be960162ba0a9390d1ba784cdcd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 91f1c80273d0e1ed41ea86774c71fcbe8ad1bbf6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safeintexception-class"></a>SafeIntException Sınıfı
 `SafeInt` Sınıfını kullanan `SafeIntException` matematiksel işlem tamamlanamıyor neden tanımlamak için.  
@@ -33,14 +36,14 @@ class SafeIntException;
 ## <a name="members"></a>Üyeler  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
- [Safeıntexception::safeıntexception](../windows/safeintexception-safeintexception.md)  
+ [SafeIntException::SafeIntException](../windows/safeintexception-safeintexception.md)  
  Oluşturur bir `SafeIntException` nesnesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
  [SafeInt sınıfı](../windows/safeint-class.md) kullanan tek sınıftır `SafeIntException` sınıfı.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [Safeıntexception sınıfı](../windows/safeintexception-class.md)  
+ [SafeIntException Sınıfı](../windows/safeintexception-class.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** safeint.h  
@@ -49,4 +52,4 @@ class SafeIntException;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SafeInt Kitaplığı](../windows/safeint-library.md)   
- [SafeInt sınıfı](../windows/safeint-class.md)
+ [SafeInt Sınıfı](../windows/safeint-class.md)

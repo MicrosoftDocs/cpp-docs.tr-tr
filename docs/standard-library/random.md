@@ -15,11 +15,12 @@ caps.latest.revision: "58"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8e89416c18fce65f19ff63c73ef441ee0bdb6165
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5bef9205fd583dd66a0f3cfe791ff95a861435c0
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ltrandomgt"></a>&lt;rastgele&gt;
 Tesis hep dağıtılmış rastgele sayılar oluşturulmasına izin vererek rastgele sayı oluşturma için tanımlar.  
@@ -54,7 +55,7 @@ Tesis hep dağıtılmış rastgele sayılar oluşturulmasına izin vererek rastg
   
 -   Çoğu uygulama için en kullanışlı eşleştirme olduğu `mt19937` ile altyapısını `uniform_int_distribution`gösterildiği gibi [kod örneğinde](#code) bu makalenin ilerisinde yer.  
   
- De nereden seçmek için pek çok seçenek `<random>` üstbilgi ve bunlardan herhangi birinin eski C çalışma zamanı işlevine tercih `rand()`. Sorun nedir hakkında bilgi için `rand()` ve nasıl `<random>` bu eksik adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/?LinkId=397615).  
+ De nereden seçmek için pek çok seçenek `<random>` üstbilgi ve bunlardan herhangi birinin eski C çalışma zamanı işlevine tercih `rand()`. Sorun nedir hakkında bilgi için `rand()` ve nasıl `<random>` bu eksik adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/p/?linkid=397615).  
   
 ##  <a name="code"></a>Örnekler  
  Aşağıdaki kod örneği, belirleyici olmayan çekirdek ile oluşturulan bir oluşturucuyu kullanarak bunları, bu durumda beş rastgele sayılar oluşturma gösterilmektedir.  
@@ -227,7 +228,7 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[random_device sınıfı](../standard-library/random-device-class.md)|Harici bir cihaz kullanarak belirleyici, şifreleme açısından güvenli rastgele bir sıra oluşturur. Genellikle bir altyapısı oluşturmak için kullanılır. Düşük performans, çok yüksek kaliteli. Daha fazla bilgi için bkz: [açıklamalar](#comments).|  
+|[random_device Sınıfı](../standard-library/random-device-class.md)|Harici bir cihaz kullanarak belirleyici, şifreleme açısından güvenli rastgele bir sıra oluşturur. Genellikle bir altyapısı oluşturmak için kullanılır. Düşük performans, çok yüksek kaliteli. Daha fazla bilgi için bkz: [açıklamalar](#comments).|  
   
 ####  <a name="typedefs"></a>Önceden tanımlanmış parametrelerle altyapısı tür tanımları  
  Örnek oluşturma motorları ve altyapısı bağdaştırıcıları için. Daha fazla bilgi için bkz: [motorları ve dağıtımları](#engdist).  
@@ -267,18 +268,18 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[linear_congruential_engine sınıfı](../standard-library/linear-congruential-engine-class.md)|Doğrusal congruential algoritması kullanılarak rastgele bir sıra oluşturur. En simplistic ve en düşük kalitesi.|  
-|[mersenne_twister_engine sınıfı](../standard-library/mersenne-twister-engine-class.md)|Mersenne twister algoritması kullanılarak rastgele bir sıra oluşturur. En karmaşık ve en yüksek kaliteli random_device sınıfı dışında. Çok hızlı performans sağlar.|  
-|[subtract_with_carry_engine sınıfı](../standard-library/subtract-with-carry-engine-class.md)|Carry ile çıkarma algoritması kullanılarak rastgele bir sıra oluşturur. Üzerinde bir geliştirme `linear_congruential_engine`, ancak daha düşük kalitesini ve performansını daha `mersenne_twister_engine`.|  
+|[linear_congruential_engine Sınıfı](../standard-library/linear-congruential-engine-class.md)|Doğrusal congruential algoritması kullanılarak rastgele bir sıra oluşturur. En simplistic ve en düşük kalitesi.|  
+|[mersenne_twister_engine Sınıfı](../standard-library/mersenne-twister-engine-class.md)|Mersenne twister algoritması kullanılarak rastgele bir sıra oluşturur. En karmaşık ve en yüksek kaliteli random_device sınıfı dışında. Çok hızlı performans sağlar.|  
+|[subtract_with_carry_engine Sınıfı](../standard-library/subtract-with-carry-engine-class.md)|Carry ile çıkarma algoritması kullanılarak rastgele bir sıra oluşturur. Üzerinde bir geliştirme `linear_congruential_engine`, ancak daha düşük kalitesini ve performansını daha `mersenne_twister_engine`.|  
   
 ####  <a name="engadapt"></a>Motoru bağdaştırıcı şablonları  
  Altyapısı bağdaştırıcıları (Temel) diğer motorları uyum şablonlarıdır. Genellikle bu ile örneği bir [altyapısı typedef önceden tanımlanmış](#typedefs) ve geçirilen bir [dağıtım](#distributions). Daha fazla bilgi için bkz: [motorları ve dağıtımları](#engdist) bölümü.  
   
 |||  
 |-|-|  
-|[discard_block_engine sınıfı](../standard-library/discard-block-engine-class.md)|Kendi temel altyapı tarafından döndürülen değer atarak rastgele bir sıra oluşturur.|  
-|[independent_bits_engine sınıfı](../standard-library/independent-bits-engine-class.md)|BITS, temel altyapı tarafından döndürülen değerlerinden repacking tarafından belirtilen bit sayısı ile rastgele bir sıra oluşturur.|  
-|[shuffle_order_engine sınıfı](../standard-library/shuffle-order-engine-class.md)|Kendi temel altyapısı döndürdüğü değer sıralayarak rastgele bir sıra oluşturur.|  
+|[discard_block_engine Sınıfı](../standard-library/discard-block-engine-class.md)|Kendi temel altyapı tarafından döndürülen değer atarak rastgele bir sıra oluşturur.|  
+|[independent_bits_engine Sınıfı](../standard-library/independent-bits-engine-class.md)|BITS, temel altyapı tarafından döndürülen değerlerinden repacking tarafından belirtilen bit sayısı ile rastgele bir sıra oluşturur.|  
+|[shuffle_order_engine Sınıfı](../standard-library/shuffle-order-engine-class.md)|Kendi temel altyapısı döndürdüğü değer sıralayarak rastgele bir sıra oluşturur.|  
   
  [[Altyapısı şablonları](#eng)]  
   
@@ -289,8 +290,8 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[uniform_int_distribution sınıfı](../standard-library/uniform-int-distribution-class.md)|Kapalı aralığı içindeki bir aralık boyunca Tekdüzen tamsayı değeri dağıtım üreten \[a, b] (kapsayıcı-kapsayıcı).|  
-|[uniform_real_distribution sınıfı](../standard-library/uniform-real-distribution-class.md)|Bir Tekdüzen gerçek üretir (kayan nokta) değeri dağıtım yarı açık aralığı içindeki bir aralık boyunca [a, b) (özel dahil).|  
+|[uniform_int_distribution Sınıfı](../standard-library/uniform-int-distribution-class.md)|Kapalı aralığı içindeki bir aralık boyunca Tekdüzen tamsayı değeri dağıtım üreten \[a, b] (kapsayıcı-kapsayıcı).|  
+|[uniform_real_distribution Sınıfı](../standard-library/uniform-real-distribution-class.md)|Bir Tekdüzen gerçek üretir (kayan nokta) değeri dağıtım yarı açık aralığı içindeki bir aralık boyunca [a, b) (özel dahil).|  
 |[generate_canonical](../standard-library/random-functions.md#generate_canonical)|Belirtilen duyarlık arasında (kayan nokta) gerçek değerlerin bile bir dağıtım üreten [0, 1) (özel dahil).|  
   
  [[Rastgele sayı dağıtımları](#distributions)]  
@@ -299,10 +300,10 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[bernoulli_distribution sınıfı](../standard-library/bernoulli-distribution-class.md)|Bernoulli dağıtımını üreten `bool` değerleri.|  
-|[binomial_distribution sınıfı](../standard-library/binomial-distribution-class.md)|Tamsayı değerleri terimli dağıtımını üretir.|  
-|[geometric_distribution sınıfı](../standard-library/geometric-distribution-class.md)|Tamsayı değerleri geometrik dağıtımını üretir.|  
-|[negative_binomial_distribution sınıfı](../standard-library/negative-binomial-distribution-class.md)|Tamsayı değerleri negatif terimli dağıtımını üretir.|  
+|[bernoulli_distribution Sınıfı](../standard-library/bernoulli-distribution-class.md)|Bernoulli dağıtımını üreten `bool` değerleri.|  
+|[binomial_distribution Sınıfı](../standard-library/binomial-distribution-class.md)|Tamsayı değerleri terimli dağıtımını üretir.|  
+|[geometric_distribution Sınıfı](../standard-library/geometric-distribution-class.md)|Tamsayı değerleri geometrik dağıtımını üretir.|  
+|[negative_binomial_distribution Sınıfı](../standard-library/negative-binomial-distribution-class.md)|Tamsayı değerleri negatif terimli dağıtımını üretir.|  
   
  [[Rastgele sayı dağıtımları](#distributions)]  
   
@@ -310,12 +311,12 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[cauchy_distribution sınıfı](../standard-library/cauchy-distribution-class.md)|(Kayan nokta) gerçek değerlerin Cauchy dağıtım üretir.|  
-|[chi_squared_distribution sınıfı](../standard-library/chi-squared-distribution-class.md)|Bir kikare dağılımı (kayan nokta) gerçek değerlerin üretir.|  
-|[fisher_f_distribution sınıfı](../standard-library/fisher-f-distribution-class.md)|Bir F-dağıtım (Snedecor'ın F dağıtım veya Fisher Snedecor dağıtım olarak da bilinir) (kayan nokta) gerçek değerlerin üretir.|  
-|[lognormal_distribution sınıfı](../standard-library/lognormal-distribution-class.md)|Günlük normal dağıtım (kayan nokta) gerçek değerlerin üretir.|  
-|[normal_distribution sınıfı](../standard-library/normal-distribution-class.md)|Normal bir (Gauss) dağıtım (kayan nokta) gerçek değerlerin üretir.|  
-|[student_t_distribution sınıfı](../standard-library/student-t-distribution-class.md)|Öğrencinin üreten *t*-(kayan nokta) gerçek değerlerin dağıtım.|  
+|[cauchy_distribution Sınıfı](../standard-library/cauchy-distribution-class.md)|(Kayan nokta) gerçek değerlerin Cauchy dağıtım üretir.|  
+|[chi_squared_distribution Sınıfı](../standard-library/chi-squared-distribution-class.md)|Bir kikare dağılımı (kayan nokta) gerçek değerlerin üretir.|  
+|[fisher_f_distribution Sınıfı](../standard-library/fisher-f-distribution-class.md)|Bir F-dağıtım (Snedecor'ın F dağıtım veya Fisher Snedecor dağıtım olarak da bilinir) (kayan nokta) gerçek değerlerin üretir.|  
+|[lognormal_distribution Sınıfı](../standard-library/lognormal-distribution-class.md)|Günlük normal dağıtım (kayan nokta) gerçek değerlerin üretir.|  
+|[normal_distribution Sınıfı](../standard-library/normal-distribution-class.md)|Normal bir (Gauss) dağıtım (kayan nokta) gerçek değerlerin üretir.|  
+|[student_t_distribution Sınıfı](../standard-library/student-t-distribution-class.md)|Öğrencinin üreten *t*-(kayan nokta) gerçek değerlerin dağıtım.|  
   
  [[Rastgele sayı dağıtımları](#distributions)]  
   
@@ -323,11 +324,11 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[exponential_distribution sınıfı](../standard-library/exponential-distribution-class.md)|(Kayan nokta) gerçek değerlerin bir üstel dağılımı üretir.|  
-|[extreme_value_distribution sınıfı](../standard-library/extreme-value-distribution-class.md)|Extreme değer dağıtımı (kayan nokta) gerçek değerlerin üretir.|  
-|[gamma_distribution sınıfı](../standard-library/gamma-distribution-class.md)|Gama dağıtım (kayan nokta) gerçek değerlerin üretir.|  
-|[poisson_distribution sınıfı](../standard-library/poisson-distribution-class.md)|Tamsayı değerleri Poisson dağıtımını üretir.|  
-|[weibull_distribution sınıfı](../standard-library/weibull-distribution-class.md)|(Kayan nokta) gerçek değerlerin WEIBULL dağıtım üretir.|  
+|[exponential_distribution Sınıfı](../standard-library/exponential-distribution-class.md)|(Kayan nokta) gerçek değerlerin bir üstel dağılımı üretir.|  
+|[extreme_value_distribution Sınıfı](../standard-library/extreme-value-distribution-class.md)|Extreme değer dağıtımı (kayan nokta) gerçek değerlerin üretir.|  
+|[gamma_distribution Sınıfı](../standard-library/gamma-distribution-class.md)|Gama dağıtım (kayan nokta) gerçek değerlerin üretir.|  
+|[poisson_distribution Sınıfı](../standard-library/poisson-distribution-class.md)|Tamsayı değerleri Poisson dağıtımını üretir.|  
+|[weibull_distribution Sınıfı](../standard-library/weibull-distribution-class.md)|(Kayan nokta) gerçek değerlerin WEIBULL dağıtım üretir.|  
   
  [[Rastgele sayı dağıtımları](#distributions)]  
   
@@ -335,9 +336,9 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[discrete_distribution sınıfı](../standard-library/discrete-distribution-class.md)|Bir ayrık tamsayı dağıtım üretir.|  
-|[piecewise_constant_distribution sınıfı](../standard-library/piecewise-constant-distribution-class.md)|Bir piecewise üretir (kayan nokta) gerçek değerlerin sabit dağıtım.|  
-|[piecewise_linear_distribution sınıfı](../standard-library/piecewise-linear-distribution-class.md)|Bir piecewise üretir (kayan nokta) gerçek değerlerin doğrusal dağıtım.|  
+|[discrete_distribution Sınıfı](../standard-library/discrete-distribution-class.md)|Bir ayrık tamsayı dağıtım üretir.|  
+|[piecewise_constant_distribution Sınıfı](../standard-library/piecewise-constant-distribution-class.md)|Bir piecewise üretir (kayan nokta) gerçek değerlerin sabit dağıtım.|  
+|[piecewise_linear_distribution Sınıfı](../standard-library/piecewise-linear-distribution-class.md)|Bir piecewise üretir (kayan nokta) gerçek değerlerin doğrusal dağıtım.|  
   
  [[Rastgele sayı dağıtımları](#distributions)]  
   
@@ -346,7 +347,7 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
 |||  
 |-|-|  
-|[seed_seq sınıfı](../standard-library/seed-seq-class.md)|Ağırlıklı olmayan karıştırılmış çekirdek dizisi oluşturur. Rastgele variate akışları çoğaltılmasını önlemek için kullanılır. Birçok URNGs motorlarından örneği kullanışlıdır.|  
+|[seed_seq Sınıfı](../standard-library/seed-seq-class.md)|Ağırlıklı olmayan karıştırılmış çekirdek dizisi oluşturur. Rastgele variate akışları çoğaltılmasını önlemek için kullanılır. Birçok URNGs motorlarından örneği kullanışlıdır.|  
   
 ### <a name="operators"></a>İşleçler  
  Bu bölümde sağlanan işleçleri listeler `<random>` üstbilgi.  
@@ -451,7 +452,7 @@ Bu kod, iki farklı randomizations gösterir — tamsayıların vektör rasgele 
   
  <sup>* Bilinen bir çekirdek ile sağlandığında.</sup>  
   
- ISO C++ Standart gerektirmez rağmen `random_device` şifreli olarak güvenli olacak şekilde uygulanan şifreleme açısından olacak şekilde Visual Studio'da güvenli. ("Şifreleme açısından güvenli" terimi garanti anlamına gelmez, ancak en az bir entropi düzeyine başvuruyor — ve bu nedenle, öngörülebilirlik düzeyi — verilen rastgele algoritması sağlar. Daha fazla bilgi için Wikipedia makalesine bakın [şifreleme açısından güvenli geçici rastgele sayı üreticisinin](http://go.microsoft.com/fwlink/LinkId=398017).) ISO C++ Standart bu gerektirmediğinden, diğer platformlar uygulayabilir `random_device` basit sözde rastgele sayı üreticisinin (şifreleme açısından güvenli) ve yalnızca may başka bir oluşturucu için bir çekirdek kaynağı olarak uygun olabilir. Kullanırken bu platformlar için sağlanan belgeleri gözden `random_device` platformlar arası kod.  
+ ISO C++ Standart gerektirmez rağmen `random_device` şifreli olarak güvenli olacak şekilde uygulanan şifreleme açısından olacak şekilde Visual Studio'da güvenli. ("Şifreleme açısından güvenli" terimi garanti anlamına gelmez, ancak en az bir entropi düzeyine başvuruyor — ve bu nedenle, öngörülebilirlik düzeyi — verilen rastgele algoritması sağlar. Daha fazla bilgi için Wikipedia makalesine bakın [şifreleme açısından güvenli geçici rastgele sayı üreticisinin](http://go.microsoft.com/fwlink/p/?linkid=398017).) ISO C++ Standart bu gerektirmediğinden, diğer platformlar uygulayabilir `random_device` basit sözde rastgele sayı üreticisinin (şifreleme açısından güvenli) ve yalnızca may başka bir oluşturucu için bir çekirdek kaynağı olarak uygun olabilir. Kullanırken bu platformlar için sağlanan belgeleri gözden `random_device` platformlar arası kod.  
   
  Tanımı tarafından `random_device` sonuçları tekrarlanabilir değildir ve bir yan etkisi olan diğer URNGs önemli ölçüde yavaş çalışabilir. Şifreleme açısından olması için gerekli olmayan uygulamaların çoğu kullanım güvenli `mt19937` veya benzer bir altyapıya çağrısıyla çekirdek isteyebilirsiniz ancak `random_device`gösterildiği gibi [kod örneğinde](#code).  
   

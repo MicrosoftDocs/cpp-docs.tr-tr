@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a7afdcd43752bf5275ca48218ac8abab98f79177
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 543170c470b0cbaec10b16ecfc7fe4f2b289ee22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackreference-stlclr"></a>stack::reference (STL/CLR)
 Bir öğe için bir başvuru türü.  
@@ -77,4 +80,4 @@ a b x
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
  [Stack::const_reference (STL/CLR)](../dotnet/stack-const-reference-stl-clr.md)   
- [Stack::value_type (STL/CLR)](../dotnet/stack-value-type-stl-clr.md)
+ [stack::value_type (STL/CLR)](../dotnet/stack-value-type-stl-clr.md)

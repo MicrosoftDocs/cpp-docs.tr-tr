@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5623f95a77710e0ffbfa8a444de6f569f24105e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2acbbed1a253a502aea8b19af6fd16ddb343e3ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-controls-to-a-property-sheet"></a>Özellik Sayfasına Denetim Ekleme
 Varsayılan olarak, bir özellik sayfası özellik sayfaları, sekme dizini ve Uygula Tamam ve İptal düğmeleri penceresi alan ayırır. (Kalıcı olmayan özellik sayfası iptal edin ve düğmeleri uygulamak Tamam yok.) Özellik sayfasını, diğer denetimler ekleyebilirsiniz. Örneğin, kullanıcının geçerli ayarlarının dış nesneye uygulanan gibi görünür göstermek için özellik sayfası alanı sağındaki bir önizleme penceresi ekleyebilirsiniz.  
@@ -30,4 +31,4 @@ Varsayılan olarak, bir özellik sayfası özellik sayfaları, sekme dizini ve U
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../mfc/property-sheets-mfc.md)   
  [CPropertyPage sınıfı](../mfc/reference/cpropertypage-class.md)   
- [CPropertySheet sınıfı](../mfc/reference/cpropertysheet-class.md)
+ [CPropertySheet Sınıfı](../mfc/reference/cpropertysheet-class.md)

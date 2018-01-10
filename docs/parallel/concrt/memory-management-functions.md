@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c090041969bae959ecb386486032f3f848a1440b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 309080a807a1325bbf921657a152cff60e87cb95
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memory-management-functions"></a>Bellek Yönetimi İşlevleri
 Bu belgede eşzamanlılık çalışma zamanı ayırın ve eş zamanlı bir biçimde belleği serbest yardımcı olmak için sağladığı bellek yönetimi işlevleri açıklanmaktadır.  
@@ -41,5 +42,5 @@ Bu belgede eşzamanlılık çalışma zamanı ayırın ve eş zamanlı bir biçi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [Nasıl yapılır: ayırma kullanın ve boş bellek performansını artırmak](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
+ [Nasıl yapılır: Bellek Performansını Artırmak için Alloc ve Free Kullanma](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
 

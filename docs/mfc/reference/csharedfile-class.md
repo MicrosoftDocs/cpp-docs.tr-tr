@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e98c4b48580740a6a61d0a2f55a995a967111448
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 27c749f86f9e3fbd310fd03b3a82768d58632087
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 [CMemFile](../../mfc/reference/cmemfile-class.md)-destekleyen türetilmiş bir sınıf paylaşılan bellek dosyaları.  
@@ -129,4 +130,4 @@ void SetHandle(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)
+ [CMemFile Sınıfı](../../mfc/reference/cmemfile-class.md)

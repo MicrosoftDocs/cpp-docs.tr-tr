@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7fbd6f2999adac0c4bb9a8d7af166caa69848efa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2d66689ff8b9cddb1ac2e88cb5e4c01f9f09b4ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="greaterequal-stlclr"></a>greater_equal (STL/CLR)
 Şablon sınıfı bir functor açıklar, çağrıldığında, yalnızca ilk bağımsız değişkeni sıfırdan büyük veya ona eşit olup olmadığını true değerini döndürür. Kullandığınız kendi bağımsız değişken türü bakımından işlevi nesnesi belirtin.  
@@ -126,4 +129,4 @@ int main()
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [daha az (STL/CLR)](../dotnet/less-stl-clr.md)
+ [less (STL/CLR)](../dotnet/less-stl-clr.md)

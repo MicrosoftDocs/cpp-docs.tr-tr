@@ -14,17 +14,18 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4042340eb46214b1f8341660606fec66106198a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ef1a0ea32e893551b7278a424f49520aa0537298
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="microsoft-extensions"></a>Microsoft Uzantıları
 *asm deyimi*:  
- **__asm***derleme yönergesi* **;** İptal Et    
+ **__asm***derleme yönergesi* **;** İptal Et  
   
- **__asm {***derleme yönerge listesi***};** İptal Et      
+ **__asm {***derleme yönerge listesi***};** İptal Et  
   
  *derleme yönerge listesi*:  
  *derleme yönergesi* **;** İptal Et  

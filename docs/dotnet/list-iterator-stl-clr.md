@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58f0283250a4f4c1923c4f569226f8a01a316472
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 31ce5165c9f6168b1dcfa708282babf8e64e3ac2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listiterator-stlclr"></a>list::iterator (STL/CLR)
 Denetlenen dizi için bir yineleyici türü.  
@@ -76,4 +79,4 @@ x b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [List::const_iterator (STL/CLR)](../dotnet/list-const-iterator-stl-clr.md)
+ [list::const_iterator (STL/CLR)](../dotnet/list-const-iterator-stl-clr.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5a397789958e229363f535ed9b39f83ed928cb6a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72c8aca2b90f021771ba9f9fc8a86d784ffe24a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a11---specifying-a-fixed-number-of-threads"></a>A.11   Sabit Sayıda İş Parçacığı Belirtme
 Bazı programlar doğru şekilde yürütmek için iş parçacığı sabit, belirlenmiş sayısına bağlıdır.  İş parçacığı sayısını dinamik düzeltilmesi için varsayılan ayar uygulama tanımlı olduğundan, bu tür programların dinamik iş parçacığı özelliği devre dışı bırakma ve açıkça taşınabilirlik emin olmak için iş parçacığı sayısını ayarlamak seçebilirsiniz. Aşağıdaki örnek kullanarak bunu gösterilmektedir `omp_set_dynamic` ([bölüm 3.1.7](../../parallel/openmp/3-1-7-omp-set-dynamic-function.md) 39 sayfasında), ve `omp_set_num_threads` ([bölüm 3.1.1](../../parallel/openmp/3-1-1-omp-set-num-threads-function.md) sayfasında 36):  

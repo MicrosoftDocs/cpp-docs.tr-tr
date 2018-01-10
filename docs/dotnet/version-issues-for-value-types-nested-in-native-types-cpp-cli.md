@@ -16,11 +16,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a16b6fd7d166b7a997257bfd6cb741b82911c5bd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 29a5eb3a085682f243f1497e56b12a0b7d760edb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="version-issues-for-value-types-nested-in-native-types-ccli"></a>Yerel Türlerin İçinde Bulunan Değer Türleri İçin Sürüm Sorunları (C++/CLI)
 Bir istemci derleme oluşturmak için kullanılan bir imzalı (tanımlayıcı ad) derleme bileşeninin göz önünde bulundurun. Bileşen istemci türü olarak yerel bir UNION, bir sınıf veya bir dizi üyesi için kullanılan bir değer türü içeriyor. Bileşen gelecek bir sürümünde boyutunu veya değer türü düzenini değiştirirse, istemcinin yeniden derlenmesi gerekiyor.  
@@ -84,4 +87,4 @@ S.i = 11
  Ancak, başka bir üyesine eklerseniz `struct S` e içinde (örneğin, `double d;`) ve istemci derlemeden bileşeni yeniden derleyin, işlenmeyen bir özel durum oluşur (türünde <xref:System.IO.FileLoadException?displayProperty=fullName>).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen türler (C + +/ CLI)](../dotnet/managed-types-cpp-cli.md)
+ [Yönetilen Türler (C++/CLI)](../dotnet/managed-types-cpp-cli.md)

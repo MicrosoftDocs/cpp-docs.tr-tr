@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: feec2aa1e3f9d50c8737420d0049d8bcf658eac2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 6e590461d359c2ab2ee750f0393f6c2f9ec7ac95
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-the-provider"></a>Sağlayıcı Oluşturma
 #### <a name="to-create-an-ole-db-provider-with-the-atl-ole-db-provider-wizard"></a>ATL OLE DB Sağlayıcı Sihirbazı ile bir OLE DB sağlayıcısı oluşturmak için  
@@ -42,4 +45,4 @@ ms.lasthandoff: 10/24/2017
 6.  **Son**'a tıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+ [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

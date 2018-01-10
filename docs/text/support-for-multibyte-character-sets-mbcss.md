@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 19bbcd1030bdc89de2d3e05281786c1d0efa5ad6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c6c7bd1477f62e9c78b5e71dfe3723e804283d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 Birden çok baytlı karakter kümeleri (MBCS'ler) gibi Japonca ve tek bir bayt ile temsil edilemez Çince karakter kümelerini desteklemek için gereken eski bir yaklaşım kümesidir. Yeni geliştirme yapıyorsanız, belki de son kullanıcılar tarafından görülmez sistem dizeleri dışındaki tüm metin dizelerini Unicode kullanmanız gerekir. MBCS eski bir teknolojidir ve yeni geliştirme projeleri için önerilmez.  

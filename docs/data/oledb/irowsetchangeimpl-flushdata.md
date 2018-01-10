@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 31555e1f8305a281955902b71fdc71fbcc5405e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 565b971b53ddb0a50b276d76aaaf62e9f7fa39f1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetchangeimplflushdata"></a>IRowsetChangeImpl::FlushData
 Verileri, depolama alanına kaydetmeye sağlayıcısı tarafından Overidden.  
@@ -51,4 +54,4 @@ Verileri, depolama alanına kaydetmeye sağlayıcısı tarafından Overidden.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetChangeImpl sınıfı](../../data/oledb/irowsetchangeimpl-class.md)
+ [IRowsetChangeImpl Sınıfı](../../data/oledb/irowsetchangeimpl-class.md)

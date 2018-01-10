@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 601cf58a8238e34b1186e9d5d022a315342d4e6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c9e1b8c6205560e7ea07b529acff3ccfe9db4ea6
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="graphics-c-amp"></a>Grafikler (C++ AMP)
 C++ AMP içeren birkaç API'leri [Concurrency::graphics](../../parallel/amp/reference/concurrency-graphics-namespace.md) GPU doku desteğini erişmek için kullanabileceği bir ad alanı. Bazı genel senaryolar şunlardır:  
@@ -32,7 +33,7 @@ C++ AMP içeren birkaç API'leri [Concurrency::graphics](../../parallel/amp/refe
  `norm` Ve `unorm` türleridir aralığını sınırla skaler türler `float` değerleri; bu olarak bilinir *clamping*. Bu tür, skaler diğer türlerinden açıkça oluşturulabilir. Atama, değerin ilk için dönüştürüldüğüne `float` ve norm [-1.0, 1.0] veya [0.0, 1.0] unorm tarafından izin verilen ilgili bölgeye clamped. Tür atama sonsuz +/-+/-1 döndürür. NaN gelen atama tanımlanmamıştır. Unorm bir norm örtük olarak oluşturulmuş olabilir ve hiçbir veri kaybı yok. Float için örtük dönüşüm işleci bu türlerinde tanımlanır. İkili işleçler tanımlanmış bu türleri ve diğer yerleşik skaler türler arasında gibi `float` ve `int`: +, -, *, /, ==,! =, >, \<, > =, < =. Bileşik atama işleçleri de desteklenir: +=,-=, \*= / =. Tekli değilleme işleci (-) norm türleri için tanımlanır.  
   
 ## <a name="short-vector-library"></a>Kısa vektör kitaplığı  
- Kısa vektör kitaplığı bazı işlevselliğini sağlar [vektör türü](http://go.microsoft.com/fwlink/p/linkid=248500) HLSL içinde tanımlanmıştır ve genellikle texels tanımlamak için kullanılır. Kısa bir vektör aynı türde birden dörde kadar değerleri içeren bir veri yapısıdır. Desteklenen türler `double`, `float`, `int`, `norm`, `uint`, ve `unorm`. Tür adları aşağıdaki tabloda gösterilmektedir. Her tür için yoktur ayrıca karşılık gelen `typedef` , alt çizgi adına sahip değil. Alt çizgi olan türlerini bulunan [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). Alt çizgi yok türleri bulunan [CONCURRENCY::Graphics:: Direct3D Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) böylece bunlar açıkça benzer adlandırılmış temel türlerinden gibi ayrılmış `__int8` ve `__int16`.  
+ Kısa vektör kitaplığı bazı işlevselliğini sağlar [vektör türü](http://go.microsoft.com/fwlink/p/?linkid=248500) HLSL içinde tanımlanmıştır ve genellikle texels tanımlamak için kullanılır. Kısa bir vektör aynı türde birden dörde kadar değerleri içeren bir veri yapısıdır. Desteklenen türler `double`, `float`, `int`, `norm`, `uint`, ve `unorm`. Tür adları aşağıdaki tabloda gösterilmektedir. Her tür için yoktur ayrıca karşılık gelen `typedef` , alt çizgi adına sahip değil. Alt çizgi olan türlerini bulunan [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md). Alt çizgi yok türleri bulunan [CONCURRENCY::Graphics:: Direct3D Namespace](../../parallel/amp/reference/concurrency-graphics-direct3d-namespace.md) böylece bunlar açıkça benzer adlandırılmış temel türlerinden gibi ayrılmış `__int8` ve `__int16`.  
   
 ||Uzunluğu 2|Uzunluğu 3|Uzunluk 4|  
 |-|--------------|--------------|--------------|  
@@ -71,7 +72,7 @@ C++ AMP içeren birkaç API'leri [Concurrency::graphics](../../parallel/amp/refe
   
 -   İki veya dört bileşenlere sahip kısa vektörü. Tek özel durum `double_4`, izin verilmeyen.  
   
- `texture` Nesnesi, 1, 2 veya 3 derecesini olabilir. `texture` Nesne yakalanıp yalnızca bir çağrı lambda başvuruya göre `parallel_for_each`. Doku GPU üzerinde Direct3D Doku nesneler olarak depolanır. Dokular ve Direct3D texels hakkında daha fazla bilgi için bkz: [Direct3D 11 dokular giriş](http://go.microsoft.com/fwlink/p/linkid=248502).  
+ `texture` Nesnesi, 1, 2 veya 3 derecesini olabilir. `texture` Nesne yakalanıp yalnızca bir çağrı lambda başvuruya göre `parallel_for_each`. Doku GPU üzerinde Direct3D Doku nesneler olarak depolanır. Dokular ve Direct3D texels hakkında daha fazla bilgi için bkz: [Direct3D 11 dokular giriş](http://go.microsoft.com/fwlink/p/?linkid=248502).  
   
  Kullandığınız texel türünün grafik programlamaya kullanılan birçok doku biçimlerden birinde olabilir. Örneğin, bir RGBA biçimi 32 bit, 8 bit her R, G, B ve skaler öğeleri için kullanabilirsiniz. Grafik kartının doku donanım biçimine bağlı ayrı ayrı öğeler erişebilir. Örneğin, doku donanım RGBA biçimi kullanıyorsanız, her 8 bit öğesi 32-bit forma ayıklayabilirsiniz. Bit kaydırma kullanmadan otomatik olarak ayrı ayrı skaler öğeler kodda erişebilmeniz, C++ AMP içinde texel skaler öğesi başına bit ayarlayabilirsiniz.  
   
@@ -429,7 +430,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
   
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik  
 
- C++ AMP çalışma zamanı arasında birlikte çalışabilirlik destekleyen `texture<T,1>` ve [ID3D11Texture1D arabirimi](http://go.microsoft.com/fwlink/p/LinkId=248503), arasında `texture<T,2>` ve [ID3D11Texture2D arabirimi](http://go.microsoft.com/fwlink/p/LinkId=255317), arasında `texture<T,3>`ve [ID3D11Texture3D arabirimi](http://go.microsoft.com/fwlink/p/LinkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) metodu bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) metodu bir `IUnknown` arabirimi ve bir `accelerator_view` nesne ve döndürür bir `texture` nesnesi.  
+ C++ AMP çalışma zamanı arasında birlikte çalışabilirlik destekleyen `texture<T,1>` ve [ID3D11Texture1D arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248503), arasında `texture<T,2>` ve [ID3D11Texture2D arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255317), arasında `texture<T,3>`ve [ID3D11Texture3D arabirimi](http://go.microsoft.com/fwlink/p/?linkId=255377). [Get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) metodu bir `texture` nesne ve döndürür bir `IUnknown` arabirimi. [Make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) metodu bir `IUnknown` arabirimi ve bir `accelerator_view` nesne ve döndürür bir `texture` nesnesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [double_2 sınıfı](../../parallel/amp/reference/double-2-class.md)   
@@ -451,4 +452,4 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
  [uint_4 sınıfı](../../parallel/amp/reference/uint-4-class.md)   
  [unorm_2 sınıfı](../../parallel/amp/reference/unorm-2-class.md)   
  [unorm_3 sınıfı](../../parallel/amp/reference/unorm-3-class.md)   
- [unorm_4 sınıfı](../../parallel/amp/reference/unorm-4-class.md)
+ [unorm_4 Sınıfı](../../parallel/amp/reference/unorm-4-class.md)

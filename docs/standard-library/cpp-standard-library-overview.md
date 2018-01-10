@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9c676f5bb8b667bdc3ef26f823737df5c4f97217
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2285c2237001aa02c77b17241e6de62804d6b700
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-standard-library-overview"></a>C++ Standart Kitaplığına Genel Bakış
 Tüm C++ Kitaplık varlıklar bildirilen veya bir veya daha fazla standart üstbilgilerinde tanımlanmış. Bu uygulama iki ek üstbilgi içeren `<hash_map>` ve `<hash_set>`, C++ Standart tarafından gerekmez. Bu uygulama destekleyen üstbilgileri tam bir listesi için bkz: [üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md).  
@@ -43,27 +44,27 @@ Tüm C++ Kitaplık varlıklar bildirilen veya bir veya daha fazla standart üstb
   
  Bu bölüm aşağıdaki bölümleri içerir:  
   
--   [C++ Kitaplığı üstbilgilerini kullanma](../standard-library/using-cpp-library-headers.md)  
+-   [C++ Kitaplığı Üst Bilgilerini Kullanma](../standard-library/using-cpp-library-headers.md)  
   
--   [C++ Kitaplık kuralları](../standard-library/cpp-library-conventions.md)  
+-   [C++ Kitaplığı Kuralları](../standard-library/cpp-library-conventions.md)  
   
--   [iostreams kuralları](../standard-library/iostreams-conventions.md)  
+-   [iostreams Kuralları](../standard-library/iostreams-conventions.md)  
   
--   [C++ Program başlatma ve sonlandırma](../standard-library/cpp-program-startup-and-termination.md)  
+-   [C++ Program Başlatma ve Sonlandırma](../standard-library/cpp-program-startup-and-termination.md)  
   
--   [Güvenli kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)  
+-   [Güvenli Kitaplıklar: C++ Standart Kitaplık](../standard-library/safe-libraries-cpp-standard-library.md)  
   
--   [İşaretli yineleyiciler](../standard-library/checked-iterators.md)  
+-   [Denetlenmiş Yineleyiciler](../standard-library/checked-iterators.md)  
   
--   [Hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)  
+-   [Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)  
   
 -   [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)  
   
--   [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)  
+-   [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)  
   
--   [stdext Namespace](../standard-library/stdext-namespace.md)  
+-   [stdext Ad Alanı](../standard-library/stdext-namespace.md)  
   
--   [Normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md)  
+-   [Normal İfadeler (C++)](../standard-library/regular-expressions-cpp.md)  
   
  Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).  
   

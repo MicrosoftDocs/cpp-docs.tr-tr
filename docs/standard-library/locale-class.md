@@ -32,11 +32,12 @@ caps.latest.revision: "28"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f53f9a32da84c450825fc61b8316593e1041784c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0227c6bd088337a4ad3024faebed2c72d870d360
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locale-class"></a>locale Sınıfı
 Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.  
@@ -170,13 +171,13 @@ cout.imbue(loc);
 |||  
 |-|-|  
 |[Klasik](#classic)|Statik üye işlevini klasik C yerel ayarını temsil eden yerel bir nesneye döndürür.|  
-|[Genel](#global)|Varsayılan programın yerel ayarını sıfırlar.|  
+|[global](#global)|Varsayılan programın yerel ayarını sıfırlar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[operator! =](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|  
+|[operator!=](#op_neq)|İki yerel ayarın farklı olup olmadığını sınar.|  
 |[işleci)](#op_call)|İki karşılaştırır `basic_string` nesneleri.|  
 |[operator ==](#op_eq_eq)|İki yerel ayarın farksız olup olmadığını sınar.|  
   
@@ -184,8 +185,8 @@ cout.imbue(loc);
   
 |||  
 |-|-|  
-|[modeli](#facet_class)|Tüm yerel ayar modelleri için temel sınıf görevi gören sınıf.|  
-|[Kimliği](#id_class)|Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.|  
+|[facet](#facet_class)|Tüm yerel ayar modelleri için temel sınıf görevi gören sınıf.|  
+|[id](#id_class)|Üye sınıfı özellikleri, bir yerel ayardaki arama modelleri için bir dizin olarak kullanılan benzersiz bir kimlik sağlar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
@@ -717,5 +718,5 @@ locales loc1 (German_Germany.1252)
  [<locale>](../standard-library/locale.md)   
  [Kod sayfaları](../c-runtime-library/code-pages.md)   
  [Yerel ayar adları, diller ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

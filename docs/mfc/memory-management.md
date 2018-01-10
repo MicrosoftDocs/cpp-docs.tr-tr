@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b1350c4f41da4219ae2581f5e93cb95d03a65850
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1a9e31fc1136249f843aa5dc96a4caffcccc7a85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
 Makalelerin bu grup, genel amaçlı Hizmetleri, Microsoft Foundation Class Kitaplığı (bellek yönetimiyle ilgili MFC) yararlanmak açıklar. Bellek ayırma iki ana kategoriye bölünmüş: çerçeve ayırma ve yığın ayırmaları.  
@@ -50,5 +51,5 @@ Makalelerin bu grup, genel amaçlı Hizmetleri, Microsoft Foundation Class Kitap
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../mfc/mfc-concepts.md)   
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

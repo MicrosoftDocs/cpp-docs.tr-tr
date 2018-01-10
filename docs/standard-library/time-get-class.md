@@ -49,11 +49,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6178c35ff5d9ed0fbe53af7d488cc24cbcf81f2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2bc6d855b1ff1776cdbb1777a4250317accac68a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="timeget-class"></a>time_get Sınıfı
 Şablon sınıfı türü sıralarının denetim dönüştürmeleri için yerel ayar modeli olarak hizmet verebilir bir nesneyi tanımlayan `CharType` saat değerleri için.  
@@ -101,7 +102,7 @@ class time_get : public time_base;
 |[do_get_time](#do_get_time)|Bir korumalı bir dize tarafından üretilen tarih olarak ayrıştırılacak adlı sanal üye işlevi `X` tanımlayıcısı için `strftime`.|  
 |[do_get_weekday](#do_get_weekday)|Bir dizeyi haftanın günü adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.|  
 |[do_get_year](#do_get_year)|Bir dizeyi yılın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.|  
-|[Al](#get)|Karakter verilerinin bir kaynağından okur ve bu verileri saat yapı biriminde depolanan bir saate dönüştürür.|  
+|[get](#get)|Karakter verilerinin bir kaynağından okur ve bu verileri saat yapı biriminde depolanan bir saate dönüştürür.|  
 |[get_date](#get_date)|Tarafından üretilen tarih olarak bir dize ayrıştırır `x` tanımlayıcısı için `strftime`.|  
 |[get_monthname](#get_monthname)|Bir dizeyi ayın adı olarak ayrıştırır.|  
 |[get_time](#get_time)|Tarafından üretilen tarih olarak bir dize ayrıştırır `X` tanımlayıcısı için `strftime`.|  
@@ -999,5 +1000,5 @@ explicit time_get(size_t refs = 0);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<yerel ayar >](../standard-library/locale.md)   
  [time_base sınıfı](../standard-library/time-base-class.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c404caf0090381af1697516d25358daa29c70d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e30e9259a5b3e59b9f8c2f3af877bca3a98c84dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
 Yerel C++ olay işlemede kullanarak bir olay kaynağı ve olay alıcıyı ayarlamak [event_source](../windows/event-source.md) ve [event_receiver](../windows/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `native`. Bu öznitelikler bunlar olayları yangın ve yerel, COM olmayan bağlamda olayları işlemek için uygulanır sınıfları sağlar.  
@@ -92,4 +93,4 @@ MyHandler1 was called with value 123.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Olay işleme](../cpp/event-handling.md)
+ [Olay İşleme](../cpp/event-handling.md)

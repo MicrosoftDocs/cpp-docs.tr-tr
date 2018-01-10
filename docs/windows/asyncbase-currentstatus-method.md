@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b70974d4d53c819d1cf614660c53df0a75510482
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: c72e66a179e47e890cbe90da7a3e54afa41ce942
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbasecurrentstatus-method"></a>AsyncBase::CurrentStatus Yöntemi
 Geçerli zaman uyumsuz işlemin durumunu alır.  
@@ -46,4 +49,4 @@ inline void CurrentStatus(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [AsyncBase sınıfı](../windows/asyncbase-class.md)   
- [Asyncstatusınternal numaralandırması](../windows/asyncstatusinternal-enumeration.md)
+ [AsyncStatusInternal Sabit Listesi](../windows/asyncstatusinternal-enumeration.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3df6dab957b886c13dcd2fa8f7f6aa2f9859dc61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 178318ba212665e9157d1c49289d3167056b0e83
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltcomplexgt"></a>&lt;karmaşık&gt;
 Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablonları.  
@@ -106,7 +107,7 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/complex-operators.md#op_neq)|Testleri eşitsizlik açısından iki karmaşık numaralar, biri veya her ikisi de arasındaki bir tür gerçek ve sanal bölümleri için alt ait olabilir.|  
+|[operator!=](../standard-library/complex-operators.md#op_neq)|Testleri eşitsizlik açısından iki karmaşık numaralar, biri veya her ikisi de arasındaki bir tür gerçek ve sanal bölümleri için alt ait olabilir.|  
 |[işleç *](../standard-library/complex-operators.md#op_star)|İki çarpar karmaşık numaralar, biri veya her ikisi de ait alt gerçek ve sanal bölümleri için türü.|  
 |[operator +](../standard-library/complex-operators.md#op_add)|İki karmaşık numaralar, biri veya her ikisi de alt gerçek ve sanal bölümleri için türü ait ekler.|  
 |[operator-](../standard-library/complex-operators.md#operator-)|İki çıkarır karmaşık numaralar, biri veya her ikisi de ait alt gerçek ve sanal bölümleri için türü.|  
@@ -135,7 +136,7 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

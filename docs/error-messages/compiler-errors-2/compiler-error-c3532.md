@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e78db21d00ea93378358a1147163276fb12bdfd5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4b85baf8e2e53885b07758772d3328f70fe93b35
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3532"></a>Derleyici Hatası C3532
 'type': 'auto' yanlış kullanımı  
@@ -60,4 +61,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Auto anahtar sözcüğü](../../cpp/auto-keyword.md)
+ [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e8416e7a176c00e5fb3067d1c1cfa447445dab54
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 691f832717f5a71c461316b725ee9a69d1350124
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetiminde Veri Bağlama İşlemini Kullanma
 ActiveX denetimleri daha güçlü kullanımlarını bir veritabanında belirli bir alanla bağlamak için denetimin özelliğini sağlayan veri bağlama biridir. Bir kullanıcı bu bağlı özellik verilerde değişiklik yaptığında denetim veritabanı ve kayıt alanını güncelleştirilmesi istekleri bildirir. Veritabanı ardından Denetim başarı veya hata isteğin bildirir.  
@@ -138,5 +139,5 @@ Veri bağlama denetimi kavramsal diyagramı
  Şimdi denetimi kaydedeceksiniz proje oluşturabilirsiniz. Bir iletişim kutusu denetimi eklediğinizde **veri alanı** ve **veri kaynağı** özellikler eklendi ve artık bir veri kaynağı ve Denetimde görüntülenecek alan seçebilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)   
 

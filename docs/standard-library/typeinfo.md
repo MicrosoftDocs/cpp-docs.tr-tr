@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5da5c7522ab83800a0190b0a80f95f10b511f078
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc87ba00f28b63fb204358649e8bb791bfb1a4ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lttypeinfogt"></a>&lt;TypeInfo&gt;
 Standart üstbilgisini `<typeinfo>` türü kimliği işleci ile ilişkili birkaç türlerini tanımlamak üzere [typeid işleci](../cpp/typeid-operator.md), statik ve dinamik türleri hakkında bilgi verir.  
@@ -34,8 +35,8 @@ Standart üstbilgisini `<typeinfo>` türü kimliği işleci ile ilişkili birka�
 ## <a name="remarks"></a>Açıklamalar  
  İçinde tanımlanan sınıflar hakkında bilgi için \<TypeInfo >, aşağıdaki konulara bakın:  
   
-- [bad_cast özel durumu](../cpp/bad-cast-exception.md)  
+- [bad_cast Özel Durumu](../cpp/bad-cast-exception.md)  
   
-- [bad_typeid özel durumu](../cpp/bad-typeid-exception.md)  
+- [bad_typeid Özel Durumu](../cpp/bad-typeid-exception.md)  
   
-- [type_info sınıfı](../cpp/type-info-class.md)
+- [type_info Sınıfı](../cpp/type-info-class.md)

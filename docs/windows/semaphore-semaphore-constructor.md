@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eef69b562f01f284a6e87af608b3ef6e90942af2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: c59d9843a727449bef48efac9980e9164225baae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphoresemaphore-constructor"></a>Semaphore::Semaphore Oluşturucusu
 Semafor sınıfı yeni bir örneğini başlatır.  
@@ -46,4 +49,4 @@ WRL_NOTHROW Semaphore(
  **Namespace:** Microsoft::wrl:: Wrappers
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Semafor sınıfı](../windows/semaphore-class.md)
+ [Semafor Sınıfı](../windows/semaphore-class.md)

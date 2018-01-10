@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 76ecf50e5f8e120dd4139d47b28688a79cda3791
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 430e55c1252eb1f1dabbdd39a6a72c76a14459a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocatornewdel-class"></a>allocator_newdel Sınıfı
 Kullanan bir ayırıcı uygulayan `operator delete` bellek ayırması için blok ve `operator new` bir bellek bloğu ayrılamadı.  

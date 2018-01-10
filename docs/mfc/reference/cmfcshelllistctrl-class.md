@@ -53,11 +53,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 455ac8911e99843c14cdab80a6c97e243259c5a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4b5204fe92685431ccdd2c6735553c9b7ce85bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 `CMFCShellListCtrl` Sınıf Windows listesi denetim işlevselliği sunar ve Kabuk öğelerinin bir listesini görüntülemek için özelliği ekleyerek genişletir.  
@@ -412,4 +413,4 @@ void SetItemTypes(SHCONTF nTypes);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCListCtrl sınıfı](../../mfc/reference/cmfclistctrl-class.md)   
- [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md)
+ [CMFCShellTreeCtrl Sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md)

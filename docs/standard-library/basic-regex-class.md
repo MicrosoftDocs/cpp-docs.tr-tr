@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 59ead4cce14828c2b416f3d4770f90db61e7d659
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 27557cdbd251a123f914609ac81c1dc1834e44f5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basicregex-class"></a>basic_regex Sınıfı
 Normal bir ifadeyi sarar.  
@@ -1305,5 +1306,5 @@ getloc == imbued == true
  [regex_replace](../standard-library/regex-functions.md#regex_replace)   
  [Regex](../standard-library/regex-typedefs.md#regex)   
  [wregex](../standard-library/regex-typedefs.md#wregex)   
- [regex_traits sınıfı](../standard-library/regex-traits-class.md)
+ [regex_traits Sınıfı](../standard-library/regex-traits-class.md)
 

@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13cbb778d5001a301c1ab5fd147b2386654ce16e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc05d791ad1d9fc51d11947686e0d6b939ef982f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribboncontextcaption-class"></a>CMFCRibbonContextCaption sınıfı
 Şerit kategori veya bir bağlam kategorisi üst kısmında görünür renkli bir resim yazısı uygular.  
@@ -110,4 +111,4 @@ int GetRightTabX() const;
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)   
  [CMFCRibbonCategory sınıfı](../../mfc/reference/cmfcribboncategory-class.md)   
- [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md)
+ [CMFCRibbonBar Sınıfı](../../mfc/reference/cmfcribbonbar-class.md)

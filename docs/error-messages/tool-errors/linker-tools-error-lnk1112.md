@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8353c8e6baf8072ee45acaa3f4635bc333c03add
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a915768f0668a4ce276962f9eafd1f905980e2be
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk1112"></a>Bağlayıcı Araçları Hatası LNK1112
 Modül makine türü 'type1' hedef makine türü 'type2' çakışıyor  
@@ -35,4 +36,4 @@ Modül makine türü 'type1' hedef makine türü 'type2' çakışıyor
  Değiştirirseniz bu hata ayrıca oluşabilir **etkin çözüm yapılandırması** içinde **Configuration Manager** ve Ara proje dosyalarını silmeden önce projeyi derlemek deneyin. Bu hatayı gidermek için seçin **çözümü yeniden derle** gelen **yapı** menüsü. Öğesini de seçebilirsiniz **temiz çözüm** gelen **yapı** menüsüne ve ardından yapı çözümü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı araçları hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)
+ [Bağlayıcı Araçları Hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)

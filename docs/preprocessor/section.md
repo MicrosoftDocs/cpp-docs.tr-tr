@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bdf0a02155329de5b77ffa67a8bc77ab34cc3e07
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc6035caeb3b2fe466d18ea92300b3135a6189f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="section"></a>section
 Bir bölümün bir .obj dosyasında oluşturur.  
@@ -44,10 +45,10 @@ Bir bölümün bir .obj dosyasında oluşturur.
   
  `attributes`bölümüne atamak istediğiniz bir veya daha fazla virgülle ayrılmış özniteliklerin oluşan isteğe bağlı bir parametre. Olası `attributes` şunlardır:  
   
- **Okuma**  
+ **read**  
  Verileri okuma işlemlerine izin verir.  
   
- **yazma**  
+ **write**  
  Veri yazma işlemlerine izin verir.  
   
  **Yürütme**  
@@ -65,7 +66,7 @@ Bir bölümün bir .obj dosyasında oluşturur.
  **atma**  
  Bölüm discardable olarak işaretler; Win32 aygıt sürücüleri için kullanışlıdır.  
   
- **Kaldır**  
+ **remove**  
  Bölüm değil bellekte olarak işaretler; Sanal cihaz sürücüleri (V*x*D) yalnızca.  
   
  Öznitelikler belirtmezseniz, bölümünü okuyun ve yazma öznitelikleri.  
@@ -85,4 +86,4 @@ int main(){}
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

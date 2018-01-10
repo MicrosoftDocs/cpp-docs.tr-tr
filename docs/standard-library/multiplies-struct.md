@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cd7c57c2ddab11772eec3fd30e24a8a1e6ab30be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 41eab9f2c172df43a15a05e6dc10127714417af5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 Çarpma işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (ikili `operator*`) bağımsız değişkenlerini üzerinde.  

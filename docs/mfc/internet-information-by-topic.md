@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3ac0d6cc103e8a53e605acf3164589e28a55edd0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 40fc0c4371561254d4cc847295fb2f810b659940
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="internet-information-by-topic"></a>Konuya Göre Internet Bilgileri
 Belirli bir Internet teknolojisi ile programlama hakkında daha fazla bilgi için bkz:  
@@ -27,9 +28,9 @@ Belirli bir Internet teknolojisi ile programlama hakkında daha fazla bilgi içi
   
 |||  
 |-|-|  
-|'a Genel Bakış|[WinINet (HTTP, FTP Gopher)](../mfc/win32-internet-extensions-wininet.md)<br /><br /> [WinINet temelleri](../mfc/wininet-basics.md)<br /><br /> [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)<br /><br /> [Nasıl WinINet Internet istemci uygulamaları oluşturmayı kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)<br /><br /> [Nasıl MFC Internet istemci uygulamaları oluşturmayı kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)|  
-|WinINet uygulamaları oluşturma adımları|[Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br /><br /> [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)<br /><br /> [Tipik Internet istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-internet-client-application.md)<br /><br /> [Tipik bir FTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)<br /><br /> [Tipik bir HTTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-http-client-application.md)<br /><br /> [Tipik bir Gopher istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)<br /><br /> [Tipik bir HTTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-http-client-application.md)|  
+|'a Genel Bakış|[WinINet (HTTP, FTP Gopher)](../mfc/win32-internet-extensions-wininet.md)<br /><br /> [WinInet Temelleri](../mfc/wininet-basics.md)<br /><br /> [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br /><br /> [WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)<br /><br /> [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)|  
+|WinINet uygulamaları oluşturma adımları|[Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)<br /><br /> [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)<br /><br /> [Tipik Bir Internet İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-internet-client-application.md)<br /><br /> [Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)<br /><br /> [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)<br /><br /> [Tipik Bir Gopher İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)<br /><br /> [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)
+ [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
 

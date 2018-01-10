@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b92185e8be3e66a89a6278ba7b7b1051b8b409f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e309d8ef023346c0e37babeabe23f7e6e1762939
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dynamic-layout"></a>Dinamik Düzen
 MFC Visual Studio 2015'te kullanıcı genişletebilir iletişim kutuları oluşturma ve düzeni boyutundaki değişikliği ayarlar yolunu kontrol edebilirsiniz. Örneğin, her zaman en altında kalırlar şekilde alt kenarı bir iletişim kutusunun altındaki düğmeleri ekleyebilirsiniz. Ayrıca belirli denetimleri süzer, editboxes ve metin alanları gibi kullanıcı iletişim kutusu genişlediği sürece genişletmek için ayarlayabilirsiniz.  

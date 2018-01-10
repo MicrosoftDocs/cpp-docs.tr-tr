@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d48aac7e14092c8406db28910263e7048c17bee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e9417b3950e4df98ed4e13ea1bb40e76c383868e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
 Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.  
@@ -103,16 +106,16 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Chainınterfaces::cancastto yöntemi](../windows/chaininterfaces-cancastto-method.md)|Belirtilen arabirim kimliği her ChainInterface şablon parametreleri tarafından tanımlanan özelleştirmeleri içerip içermeyeceğini gösterir.|  
-|[Chainınterfaces::casttounknown yöntemi](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan türdeki bıraktığı `I0` şablon parametresi IUnknown işaretçisi olarak.|  
-|[Chainınterfaces::fillarraywithıid yöntemi](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları `I0` belirtilen dizinin içinde belirtilen bir konuma kimlikleri arabiriminin şablon parametresi.|  
-|[Chainınterfaces::Verify yöntemi](../windows/chaininterfaces-verify-method.md)|Her bir arabirime şablon parametreleri tarafından tanımlanan doğrular `I0` aracılığıyla `I9` IUnknown ve/veya Iınspectable ve, devralan `I0` devraldığı `I1` aracılığıyla `I9`.|  
+|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Belirtilen arabirim kimliği her ChainInterface şablon parametreleri tarafından tanımlanan özelleştirmeleri içerip içermeyeceğini gösterir.|  
+|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan türdeki bıraktığı `I0` şablon parametresi IUnknown işaretçisi olarak.|  
+|[ChainInterfaces::FillArrayWithIid Metodu](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları `I0` belirtilen dizinin içinde belirtilen bir konuma kimlikleri arabiriminin şablon parametresi.|  
+|[ChainInterfaces::Verify Metodu](../windows/chaininterfaces-verify-method.md)|Her bir arabirime şablon parametreleri tarafından tanımlanan doğrular `I0` aracılığıyla `I9` IUnknown ve/veya Iınspectable ve, devralan `I0` devraldığı `I1` aracılığıyla `I9`.|  
   
 ### <a name="protected-constants"></a>Korumalı sabitleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Chainınterfaces::ıidcount sabiti](../windows/chaininterfaces-iidcount-constant.md)|Arabirim şablon parametresi tarafından belirtilen arabirimler içinde yer alan kimlikleri toplam sayısı `I0` aracılığıyla `I9`.|  
+|[ChainInterfaces::IidCount Sabiti](../windows/chaininterfaces-iidcount-constant.md)|Arabirim şablon parametresi tarafından belirtilen arabirimler içinde yer alan kimlikleri toplam sayısı `I0` aracılığıyla `I9`.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  
@@ -125,4 +128,4 @@ struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, 
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

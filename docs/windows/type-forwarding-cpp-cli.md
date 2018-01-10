@@ -14,11 +14,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9d2cde10bdfd530429911cbe7f1d85c455488a14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 6898c011a4e2e907cd745ccb206b0e0f0b37e78f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 *Tür iletme* derleme A. kullanan istemcilerin yeniden derleyin gerekli değildir sağlayacak şekilde, bir tür bir derlemeye (a derlemesi) başka bir derlemeye (derleme B) taşımanızı sağlar  

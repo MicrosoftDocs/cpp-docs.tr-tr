@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 51c48e486eb3636d2151fb52ba301b1057d5f3e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36adda235cf71d1a44218c98c109e72847ca9136
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme
 Bu gelişmiş bir konudur.  
@@ -120,5 +121,5 @@ Bu gelişmiş bir konudur.
  Daha fazla bilgi için bkz: [özel durumlar: kullanarak MFC makroları ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

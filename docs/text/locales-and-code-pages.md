@@ -26,11 +26,12 @@ caps.latest.revision: "9"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 1115af5eb7726138a1954f832ec2761a47667e44
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8f1134d106949918c7e8984835b86bbc4c6062f8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locales-and-code-pages"></a>Yerel Ayarlar ve Kod Sayfaları
 Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları yansıtır. Belirli bir dile birden fazla ülke/bölge içinde konuşulan; Örneğin, Portekizce de olduğu gibi Portekiz Brezilya konuşulmaz. Buna karşılık, bir ülke veya bölgeye birden fazla resmi dili olabilir. Örneğin, iki dil Kanada vardır: İngilizce ve Fransızca. Bu nedenle, Kanada iki ayrı yerel ayarı vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.  
@@ -53,4 +54,4 @@ Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)   
- [Avantajları karakter kümesi taşınabilirliğinin](../text/benefits-of-character-set-portability.md)
+ [Karakter Kümesi Taşınabilirliğinin Yararları](../text/benefits-of-character-set-portability.md)

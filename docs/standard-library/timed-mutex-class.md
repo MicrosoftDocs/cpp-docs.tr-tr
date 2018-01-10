@@ -29,11 +29,12 @@ helpviewer_keywords:
 - std::timed_mutex [C++], try_lock_for
 - std::timed_mutex [C++], try_lock_until
 - std::timed_mutex [C++], unlock
-ms.openlocfilehash: bdc08654cef6d5e1c9b174734e43a38a4795ca41
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b8b27489ce275cde4d0493a496980afd844f2378
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="timedmutex-class"></a>timed_mutex Sınıfı
 Temsil eden bir *mutex türü zaman aşımına*. Bu tür nesneler, zaman sınırlı bir program içinden engelleme yoluyla karşılıklı dışlama zorlamak için kullanılır.  
@@ -57,7 +58,7 @@ class timed_mutex;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[kilitleme](#lock)|İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.|  
+|[lock](#lock)|İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.|  
 |[try_lock](#try_lock)|Sahipliğini almayı denediğinde `mutex` engelleme olmadan.|  
 |[try_lock_for](#try_lock_for)|Sahipliğini almayı denediğinde `mutex` belirtilen zaman aralığı.|  
 |[try_lock_until](#try_lock_until)|Sahipliğini almayı denediğinde `mutex` belirtilen süre kadar.|  

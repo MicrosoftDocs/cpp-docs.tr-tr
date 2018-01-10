@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a07e596531957294be304efb6a95cc05ce75aec4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4708d45defe151b85ad132621838f1648aebc457
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alphabetical-listing-of-intrinsic-functions"></a>İç işlevler alfabetik listesi
 Microsoft'a özgü iç işlevler kullanılabilir bazıları veya tümü mimarileri hakkında aşağıdaki bölümlerde açıklanmaktadır. Üstbilgi dosyaları veya kendi Web sitelerinde işlemci üreticileri tarafından desteklenen diğer iç bilgileri belgelenmiştir. Bkz: [ARM iç bilgileri](../intrinsics/arm-intrinsics.md), [x86 iç bilgileri](../intrinsics/x86-intrinsics-list.md), ve [x64 iç bilgileri](../intrinsics/x64-amd64-intrinsics-list.md) bölümleri üretici belgelere bağlantıları için. Bunlar için uygulanan iç bilgileri sahip C çalışma zamanı kitaplığı (CRT) işlevlerini burada belgelenmemiş; Bu işlevler belgelenmiştir [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md).  
@@ -54,7 +55,7 @@ Microsoft'a özgü iç işlevler kullanılabilir bazıları veya tümü mimarile
   
  [__emul, \__emulu](../intrinsics/emul-emulu.md)  
   
- [_tcp](../intrinsics/enable.md)  
+ [_enable](../intrinsics/enable.md)  
   
  [__fastfail](../intrinsics/fastfail.md)  
   
@@ -78,35 +79,35 @@ Microsoft'a özgü iç işlevler kullanılabilir bazıları veya tümü mimarile
   
  [__int2c](../intrinsics/int2c.md)  
   
- [_Interlockedadd iç işlevleri](../intrinsics/interlockedadd-intrinsic-functions.md)  
+ [_InterlockedAdd İç İşlevleri](../intrinsics/interlockedadd-intrinsic-functions.md)  
   
  [_InterlockedAddLargeStatistic](../intrinsics/interlockedaddlargestatistic.md)  
   
- [_InterlockedAnd iç işlevler](../intrinsics/interlockedand-intrinsic-functions.md)  
+ [_InterlockedAnd İç İşlevleri](../intrinsics/interlockedand-intrinsic-functions.md)  
   
- [_interlockedbittestandreset iç işlevler](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)  
+ [_interlockedbittestandreset İç İşlevleri](../intrinsics/interlockedbittestandreset-intrinsic-functions.md)  
   
- [_interlockedbittestandset iç işlevler](../intrinsics/interlockedbittestandset-intrinsic-functions.md)  
+ [_interlockedbittestandset İç İşlevleri](../intrinsics/interlockedbittestandset-intrinsic-functions.md)  
   
- [_InterlockedCompareExchange iç işlevler](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)  
+ [_InterlockedCompareExchange İç İşlevleri](../intrinsics/interlockedcompareexchange-intrinsic-functions.md)  
   
  [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)  
   
- [_InterlockedCompareExchangePointer iç işlevler](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)  
+ [_InterlockedCompareExchangePointer İç İşlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)  
   
- [_InterlockedDecrement iç işlevler](../intrinsics/interlockeddecrement-intrinsic-functions.md)  
+ [_InterlockedDecrement İç İşlevleri](../intrinsics/interlockeddecrement-intrinsic-functions.md)  
   
- [_InterlockedExchange iç işlevler](../intrinsics/interlockedexchange-intrinsic-functions.md)  
+ [_InterlockedExchange İç İşlevleri](../intrinsics/interlockedexchange-intrinsic-functions.md)  
   
- [_Interlockedexchangeadd iç işlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)  
+ [_InterlockedExchangeAdd İç İşlevleri](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)  
   
- [_InterlockedExchangePointer iç işlevler](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)  
+ [_InterlockedExchangePointer İç İşlevleri](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)  
   
- [_InterlockedIncrement iç işlevler](../intrinsics/interlockedincrement-intrinsic-functions.md)  
+ [_InterlockedIncrement İç İşlevleri](../intrinsics/interlockedincrement-intrinsic-functions.md)  
   
- [_InterlockedOr iç işlevler](../intrinsics/interlockedor-intrinsic-functions.md)  
+ [_InterlockedOr İç İşlevleri](../intrinsics/interlockedor-intrinsic-functions.md)  
   
- [_InterlockedXor iç işlevler](../intrinsics/interlockedxor-intrinsic-functions.md)  
+ [_InterlockedXor İç İşlevleri](../intrinsics/interlockedxor-intrinsic-functions.md)  
   
  [__invlpg](../intrinsics/invlpg.md)  
   
@@ -283,4 +284,4 @@ Microsoft'a özgü iç işlevler kullanılabilir bazıları veya tümü mimarile
  [__writemsr](../intrinsics/writemsr.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
+ [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

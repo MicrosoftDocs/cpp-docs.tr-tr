@@ -13,11 +13,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d8aea199ff45da06d434150bb8346f24131136f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 1f5e6f09b371c4d295b4bcdff469396a2671d22a
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>Nasıl yapılır: Windows 10 kullanan Windows masaüstü uygulaması SDK'sına
 Visual Studio 2017 içinde Klasik Windows Masaüstü projesi oluşturduğunuzda, onu varsayılan olarak C++ Masaüstü iş yükü yüklendiğinde veya son güncelleştirme yüklediğiniz Windows 10 SDK sürümünü oluşturmak için ayarlanır. Bu Windows SDK'ın tüm son Windows sürümleriyle uyumlu sürümüdür. SDK'ın önceki bir sürümünü hedeflemek istiyorsanız, proje açabilirsiniz | Özellikleri ve Windows SDK sürümü açılır menüde kullanılabilir diğer bir SDK sürümlerini seçin.  
@@ -26,7 +29,7 @@ Visual Studio 2017 içinde Klasik Windows Masaüstü projesi oluşturduğunuzda,
   
 ### <a name="to-target-the-windows-10-sdk"></a>Hedef Windows 10 SDK'sı  
   
-1.  Windows 10 SDK yüklü olduğundan emin olun. Windows 10 SDK parçası olarak yüklenen [Windows 10 için Araçlar](http://go.microsoft.com/fwlink/?LinkID=617631).  
+1.  Windows 10 SDK yüklü olduğundan emin olun. Windows 10 SDK parçası olarak yüklenen [Windows 10 için Araçlar](http://go.microsoft.com/fwlink/p/?linkid=617631).  
   
 2.  Proje düğümünün kısayol menüsünü açın ve seçin **yeniden hedefleyin SDK sürümü**.  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b96edfdabeaf4ae31f4eaabb334f56bf29c99c70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e68097d234519cdea75875d355ef798672ad4b22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0034"></a>Proje Derleme Hatası PRJ0034
 Proje düzeyi özel 'Ek bağımlılıklar' özelliği, 'out 'macro_expansion' sonucunu veren yer alan adım makrosu' oluşturun.  

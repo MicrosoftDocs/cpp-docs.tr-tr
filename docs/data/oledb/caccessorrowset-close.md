@@ -17,11 +17,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3f4e552a7be1f259cb407cdb81547b7b3f35eac8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 66e8d1fc23c6c669d1521820e456b86f5b76e3e4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="caccessorrowsetclose"></a>CAccessorRowset::Close
 Tüm etkin erişimciler ve satır serbest bırakır.  
@@ -41,4 +44,4 @@ void Close( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CAccessorRowset sınıfı](../../data/oledb/caccessorrowset-class.md)
+ [CAccessorRowset Sınıfı](../../data/oledb/caccessorrowset-class.md)

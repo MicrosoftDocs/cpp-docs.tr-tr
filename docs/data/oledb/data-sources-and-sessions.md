@@ -17,11 +17,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 500ed062dd81681466ada4c749f8a835b9822cb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 2bb675897e29a26446b3070b2192b4f5c3e8fd2e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar
 Aşağıdaki şekilde bağlanmak ve veri kaynağına erişme destekleyen sınıfları gösterir. Her sınıf standart bir OLE DB bileşen uygulamasına dayalıdır.  

@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: aeb679ce2cc8e4e768d5af43ff94c6b2cdb8dea1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 917dfbf870959b6934eaa49cbaab05e27304fb77
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 Şablon sınıfı valarray ve çok sayıda destekleyici şablon sınıfları ve işlevleri tanımlar.  
@@ -60,12 +61,12 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/valarray-operators.md#op_neq)|İki eşit boyutta valarrays karşılık gelen öğelerini eşit olmayan veya olup olmadığını bir valarray tüm öğeleri eşit olup olmadığını sınar valarray's öğe türü belirtilen değeri.|  
+|[operator!=](../standard-library/valarray-operators.md#op_neq)|İki eşit boyutta valarrays karşılık gelen öğelerini eşit olmayan veya olup olmadığını bir valarray tüm öğeleri eşit olup olmadığını sınar valarray's öğe türü belirtilen değeri.|  
 |[operator %](../standard-library/valarray-operators.md#op_mod)|Karşılık gelen öğeleri iki eşit boyutta valarrays veya belirtilen bir değerle valarray's öğesi türünde veya valarray tarafından belirtilen değere bölerek bir valarray ayırma ayırma kalan alır.|  
 |[operator &](../standard-library/valarray-operators.md#op_amp)|Bit düzeyinde edinir **ve** veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
 |[operator & &](../standard-library/valarray-operators.md#op_amp_amp)|Mantıksal edinir **ve** bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.|  
 |[operator >](../standard-library/valarray-operators.md#op_gt)|Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri sıfırdan büyük veya valarray's öğe türünün belirtilen değerden daha az olup öğelerini büyük olup olmadığını sınar.|  
-|[operator > =](../standard-library/valarray-operators.md#op_gt_eq)|Bir valarray öğelerini değerinden büyük veya eşit boyutta bir valarray veya olup bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit öğelerini eşit olup olmadığını sınar.|  
+|[operator>=](../standard-library/valarray-operators.md#op_gt_eq)|Bir valarray öğelerini değerinden büyük veya eşit boyutta bir valarray veya olup bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit öğelerini eşit olup olmadığını sınar.|  
 |[İşleç >>](../standard-library/valarray-operators.md#op_gt_gt)|Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS sağa kaydırır.|  
 |[operator <](../standard-library/valarray-operators.md#op_lt)|Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup öğelerini değerinden olup olmadığını sınar.|  
 |[operator < =](../standard-library/valarray-operators.md#op_lt_eq)|Bir valarray öğelerini küçük veya buna eşit boyutta bir valarray öğelerini eşit olup olmadığına veya bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını sınar.|  
@@ -83,13 +84,13 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[gslice sınıfı](../standard-library/gslice-class.md)|Çok boyutlu bir valarray dilimleri tanımlamak için kullanılan valarray için yardımcı sınıfı.|  
-|[gslice_array sınıfı](../standard-library/gslice-array-class.md)|Bir valarray genel dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak genel dilim nesneleri destekleyen bir yardımcı, iç Şablon sınıfı.|  
-|[indirect_array sınıfı](../standard-library/indirect-array-class.md)|Bir alt kümesini üst valarray dizinlerini belirterek alt diziler arasındaki işlemleri sağlayarak valarrays kümeleridir destekler nesneleri tanımlanmış bir yardımcı, iç Şablon sınıfı.|  
-|[mask_array sınıfı](../standard-library/mask-array-class.md)|Üst valarrays kümeleridir destekler nesneleri alt diziler arasındaki işlemleri sağlayarak bir Boolean ifadesiyle belirtilen bir yardımcı, iç Şablon sınıfı.|  
-|[slice sınıfı](../standard-library/slice-class.md)|Tek boyutlu, vektör benzeri bir valarray kümelerine tanımlamak için kullanılan valarray için yardımcı sınıfı.|  
-|[slice_array sınıfı](../standard-library/slice-array-class.md)|Bir valarray dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak dilim nesneleri destekleyen bir iç, yardımcı şablonu sınıfı.|  
-|[valarray sınıfı](../standard-library/valarray-class.md)|Şablon sınıfı türündeki öğeler bir dizi denetimleri bir nesneyi tanımlayan **türü** , bir dizi olarak saklanır ve hesaplama performans için en iyi duruma getirilmiş hızlı matematik işlemlerini gerçekleştirmek için tasarlanmıştır.|  
+|[gslice Sınıfı](../standard-library/gslice-class.md)|Çok boyutlu bir valarray dilimleri tanımlamak için kullanılan valarray için yardımcı sınıfı.|  
+|[gslice_array Sınıfı](../standard-library/gslice-array-class.md)|Bir valarray genel dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak genel dilim nesneleri destekleyen bir yardımcı, iç Şablon sınıfı.|  
+|[indirect_array Sınıfı](../standard-library/indirect-array-class.md)|Bir alt kümesini üst valarray dizinlerini belirterek alt diziler arasındaki işlemleri sağlayarak valarrays kümeleridir destekler nesneleri tanımlanmış bir yardımcı, iç Şablon sınıfı.|  
+|[mask_array Sınıfı](../standard-library/mask-array-class.md)|Üst valarrays kümeleridir destekler nesneleri alt diziler arasındaki işlemleri sağlayarak bir Boolean ifadesiyle belirtilen bir yardımcı, iç Şablon sınıfı.|  
+|[slice Sınıfı](../standard-library/slice-class.md)|Tek boyutlu, vektör benzeri bir valarray kümelerine tanımlamak için kullanılan valarray için yardımcı sınıfı.|  
+|[slice_array Sınıfı](../standard-library/slice-array-class.md)|Bir valarray dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak dilim nesneleri destekleyen bir iç, yardımcı şablonu sınıfı.|  
+|[valarray Sınıfı](../standard-library/valarray-class.md)|Şablon sınıfı türündeki öğeler bir dizi denetimleri bir nesneyi tanımlayan **türü** , bir dizi olarak saklanır ve hesaplama performans için en iyi duruma getirilmiş hızlı matematik işlemlerini gerçekleştirmek için tasarlanmıştır.|  
   
 ### <a name="specializations"></a>Uzmanlıklar  
   
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0a0b81c90567bb3cebd9a5e128eb6b76d58ee9b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d28b12e19b302f5576d2cd76c931e0036c208185
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="serializing-data-to-and-from-files"></a>Dosyalarda Verileri Seri Hale Getirme
 Kalıcılık temel fikri bir nesneyi kalıcı depolama birimine kendi üye değişkenlerine tarafından gösterilen geçerli durumuna yazabilmesi olacağını değildir. Daha sonra nesneyi okuma ya da "seri durumdan çıkarılırken," nesnenin durumu kalıcı depolama biriminden yeniden oluşturulabilir. Bir anahtar burada nesnenin okuma ve yazma kendi durumuna sorumlu olduğunu noktasıdır. Bu nedenle, kalıcı olması için bir sınıf için temel seri hale getirme işlemlerinin uygulamalıdır.  
@@ -38,7 +39,7 @@ Kalıcılık temel fikri bir nesneyi kalıcı depolama birimine kendi üye deği
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Seri hale getirme](../mfc/serialization-in-mfc.md)  
+-   [Serileştirme](../mfc/serialization-in-mfc.md)  
   
 -   [Belgenin rolünde seri hale getirme](#_core_the_document.92.s_role_in_serialization)  
   
@@ -53,5 +54,5 @@ Kalıcılık temel fikri bir nesneyi kalıcı depolama birimine kendi üye deği
  Genel olarak, sınıf türü veri kendisini seri hale getiremiyor olmalıdır. Diğer bir deyişle, arşive nesneyi geçirdiğinizde, nesnenin kendisini arşive yazma ve kendisini arşivden okuma bilmeniz gerekir. MFC sınıfları bu şekilde serileştirilebilir yapmak için destek sağlar. Bir veri türü tanımlamak için bir sınıf tasarım ve bu tür veriler seri hale getirmek istiyorsanız, seri hale getirme için tasarlayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Belgeleri kullanma](../mfc/using-documents.md)
+ [Belgeleri Kullanma](../mfc/using-documents.md)
 

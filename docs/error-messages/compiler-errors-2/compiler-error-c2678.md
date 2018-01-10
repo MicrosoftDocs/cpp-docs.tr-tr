@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d743ba1fbd9b65a7aa8b0f83634848e16b56c407
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5b28f29f1f0f509200cabe8dad46a9ad7f0b2da1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2678"></a>Derleyici Hatası C2678
 İkili 'işleci': 'type' türündeki sol işleneni aldığı hiçbir işleci tanımlanan (veya kabul edilebilir bir dönüştürme yok)  

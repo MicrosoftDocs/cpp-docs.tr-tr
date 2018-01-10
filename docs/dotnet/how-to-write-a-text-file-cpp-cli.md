@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 080b4fcfb005d0d04c10ad5c0a6f4d1c7a49fe0e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 58b53159bab17ef0fddf5b26606889f89412856e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-write-a-text-file-ccli"></a>Nasıl yapılır: Metin Dosyaları Yazma (C++/CLI)
 Aşağıdaki kod örneği, bir metin dosyası oluşturun ve onu kullanarak metin yazmak gösterilmiştir <xref:System.IO.StreamWriter> tanımlanan sınıfı <xref:System.IO> ad alanı. <xref:System.IO.StreamWriter> Oluşturucusu oluşturulacak dosyanın adını alır. Dosya varsa üzerine yazılır (saniye doğru geçirmezseniz <xref:System.IO.StringWriter> oluşturucu bağımsız değişkeni).  
@@ -55,4 +58,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dosya ve akış t-O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

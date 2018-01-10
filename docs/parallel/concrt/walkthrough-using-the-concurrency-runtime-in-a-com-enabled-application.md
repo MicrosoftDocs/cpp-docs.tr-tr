@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6f92deaad44deea9b3f7cc521a3cf9bc7924a08f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 676601259e7f1a682a57430198d24bdbc744a360
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM Özellikli bir Uygulamada Eşzamanlılık Çalışma Zamanını Kullanma
 Bu belge, Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık çalışma zamanı kullanmak gösterilmiştir.  
@@ -30,11 +31,11 @@ Bu belge, Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık ç
   
 - [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)  
   
-- [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)  
+- [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)  
   
-- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)  
+- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)  
   
-- [Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)  
+- [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)  
   
  COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](http://msdn.microsoft.com/library/windows/desktop/ms680573).  
   

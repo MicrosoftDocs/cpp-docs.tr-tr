@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 03513723d3b083346b6f1817ea433e9563b51b36
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 46e233800f814b39e4e14f0b357c381a3e71311e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdberrorinfogetallerrorinfo"></a>CDBErrorInfo::GetAllErrorInfo
 Bir hata kaydında bulunan hata bilgilerinin tüm türleri döndürür.  
@@ -80,4 +83,4 @@ Bir hata kaydında bulunan hata bilgilerinin tüm türleri döndürür.
 2.  değeri `lcid` olan GetUserDefaultLCID tarafından döndürülen değer eşit değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cdberrorınfo sınıfı](../../data/oledb/cdberrorinfo-class.md)
+ [CDBErrorInfo Sınıfı](../../data/oledb/cdberrorinfo-class.md)

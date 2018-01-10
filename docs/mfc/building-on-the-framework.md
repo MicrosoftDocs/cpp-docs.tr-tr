@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 68ac5503f32d257d27ceb0f3f56fbf6305f42763
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44101d4b0c9ab9bf5766514a75ef510bc5b8d7e7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-on-the-framework"></a>Framework'te Derleme
 MFC çerçevesi ile bir uygulama yapılandırmada, uygulamaya özgü kaynak kodunu sağlayın ve bileşenlerini hangi iletiler ve komutlar yanıt bunlar tanımlayarak bağlanmak için rolüdür. Bu sınıf kitaplığı tarafından sağlanan kendi uygulamaya özgü sınıflar türetmek ve geçersiz kılma ve temel sınıfın davranışı büyütmek için C++ dili ve standart C++ tekniklerini kullanın.  
@@ -31,14 +32,14 @@ MFC çerçevesi ile bir uygulama yapılandırmada, uygulamaya özgü kaynak kodu
   
 -   [Uygulama Çerçevesi ile oluşturma sırası](../mfc/sequence-of-operations-for-building-mfc-applications.md)  
   
--   [OLE uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)  
+-   [OLE Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)  
   
--   [ActiveX denetimleri oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)  
+-   [ActiveX Denetimleri Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)  
   
--   [Veritabanı uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)  
+-   [Veritabanı Uygulamaları Oluşturmak için İşlem Dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)  
   
  Çoğunlukla, bazı adımları alternatif seçenekleri olmasına rağmen bir MFC uygulaması oluşturmaya yönelik adımlar dizisi olarak bu tablolar izleyebilirsiniz. Örneğin, çoğu uygulama türünden birkaç kullanılabilir görünüm sınıfının bir türü kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

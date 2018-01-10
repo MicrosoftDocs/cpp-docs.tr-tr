@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dc4d648a9d698a59ec8d21fb0b0fa819a4afff30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4fbe9cb104d8318f603994b3b2582ed28ac85db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="16-organization"></a>1.6 Organizasyon
 -   Çalışma Zamanı Kitaplığı işlevleri ([bkz: Bölüm 3](../../parallel/openmp/3-run-time-library-functions.md)).  

@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be3af57862b41a2de398869f11d0a9559dbe9c76
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 594ec49242e919f1ea9bd059588b21292af55409
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="transfers-of-control"></a>Denetim Taşıma
 Kullanabileceğiniz `goto` deyimi veya bir **durum** içinde etiket bir `switch` deyimi bir başlatıcı dallandırır bir program belirtin. Başlatıcı içeren bildirimi tarafından bloğunun içine bloğundaki olmadığı sürece bu tür kodu geçersiz atlama deyimi oluştuğu içinde.  

@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27fa09fa79280c6fa9207ddfc4bb1228f7801434
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c11664b5a7089187099898fa375cd612e92a83b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="assignment"></a>Atama
 Atama işleci (**=**) kesinlikle olarak bakıldığında, ikili işleç değil. Bildiriminden herhangi diğer ikili işleç için aşağıdaki istisnalar benzerdir:  
@@ -63,4 +64,4 @@ pt1 = pt2 = pt3;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleç aşırı yüklemesi](../cpp/operator-overloading.md)
+ [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

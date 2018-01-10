@@ -32,11 +32,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 01dc273b4c878db4ba48ce38bf69919eb2bfae3e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8acd8444295175e6aa9fe329e7851456fcd5f7c4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
 `#if` İle yönerge `#elif`, `#else`, ve `#endif` yönergeleri, denetimleri derleme kaynak dosyası kısımlarının. İfade yazma (sonra `#if`) hemen ardından satır grubu sıfır olmayan bir değere sahip `#if` yönergesi çevirisi biriminde tutulur.  
@@ -201,4 +202,4 @@ class Example
 ```
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+ [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

@@ -13,11 +13,14 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6c3da3529d9f2bc0bb45119c6850f14afe794051
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 876cab344f1177000f63740ca6c33bc1db1afefe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enum-class--c-component-extensions"></a>enum sınıfı (C++ Bileşen Uzantıları)
 Numaralandırmalar adlı adlandırılmış sabitler kümesinden oluşan bir kullanıcı tanımlı tür ad alanı kapsamında bir numaralandırma bildirir.  
@@ -39,7 +42,7 @@ Numaralandırmalar adlı adlandırılmış sabitler kümesinden oluşan bir kull
 accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [var];  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *erişim*  
  Olabilir numaralandırması erişilebilirliğini `public` veya `private`.  
@@ -86,7 +89,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 accessenum structname [:type] { enumerator-list } var;  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `access`  
  Enum erişilebilirlik.  Ya da olabilir **ortak** veya `private`.  
@@ -217,7 +220,7 @@ int main()
 }   
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 no automatic conversion to int: b  
@@ -231,4 +234,4 @@ convert to int: 1
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

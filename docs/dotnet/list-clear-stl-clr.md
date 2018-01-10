@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 140ca420bd84dd20a1162c43e078b73c58f6a494
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: aeb17552a3ba8988de67cfe4d3530fd544b953f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listclear-stlclr"></a>list::clear (STL/CLR)
 Tüm öğeleri kaldırır.  
@@ -84,4 +87,4 @@ size() = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [List::ERASE (STL/CLR)](../dotnet/list-erase-stl-clr.md)
+ [list::erase (STL/CLR)](../dotnet/list-erase-stl-clr.md)

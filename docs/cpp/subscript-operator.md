@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e1b40b16c3ee349419259ae1e2240e28e3e7e911
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fbcb3657af276cdfc9aa05d461c090b76f6de0b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="subscript-operator"></a>Alt simge işleci:
 ## <a name="syntax"></a>Sözdizimi  
@@ -116,4 +117,4 @@ int main() {
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Diziler](../cpp/arrays-cpp.md)   
  [Tek boyutlu diziler](../c-language/one-dimensional-arrays.md)   
- [Çok boyutlu diziler](../c-language/multidimensional-arrays-c.md)
+ [Çok Boyutlu Diziler](../c-language/multidimensional-arrays-c.md)

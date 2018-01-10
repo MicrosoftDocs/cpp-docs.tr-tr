@@ -19,20 +19,21 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c25693b31359b70ba36fd43394b7074e464c954
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: adcde434c12c11c1df7fc1367b658114f874b3c1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC Tarafından Kullanılan Geri Çağırma İşlevleri
 Üç geri arama işlevleri Microsoft Foundation Class Kitaplığı'nda görünür. Bu geri çağırma işlevleri geçirilecek [CDC::EnumObjects](../../mfc/reference/cdc-class.md#enumobjects), [CDC::GrayString](../../mfc/reference/cdc-class.md#graystring), ve [CDC::SetAbortProc](../../mfc/reference/cdc-class.md#setabortproc). Tüm geri arama işlevleri MFC Windows için geri çağırma sınırlarında durumlar olamaz bu yana döndürmeden önce yakalamak gerekir olduğunu unutmayın. Özel durumlar hakkında daha fazla bilgi için bkz: [özel durumları](../../mfc/exception-handling-in-mfc.md).  
 
 |Ad||  
 |----------|-----------------|  
-|[CDC::EnumObjects için geri çağırma işlevi](#enum_objects)||  
-|[CDC::GrayString için geri çağırma işlevi](#graystring)||
-|[CDC::SetAbortProc için geri çağırma işlevi](#setabortproc)|| 
+|[CDC::EnumObjects için Geri Çağırma İşlevi](#enum_objects)||  
+|[CDC::GrayString için Geri Çağırma İşlevi](#graystring)||
+|[CDC::SetAbortProc için Geri Çağırma İşlevi](#setabortproc)|| 
 
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h 

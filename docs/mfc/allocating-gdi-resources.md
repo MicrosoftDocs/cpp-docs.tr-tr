@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 976852b11101a608a47f37ec1c796ef1363ec648
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7420dbdc1f7560eae9bc5b1a15954c3d68b59678
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocating-gdi-resources"></a>GDI Kaynaklarını Ayırma
 Bu makalede, ayırmak ve yazdırma için gerekli Windows grafik cihaz arabirimi (GDI) nesneleri serbest bırakma açıklanmaktadır.  
@@ -39,5 +40,5 @@ Bu makalede, ayırmak ve yazdırma için gerekli Windows grafik cihaz arabirimi 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yazdırma](../mfc/printing.md)   
- [Varsayılan yazdırmayı yapma](../mfc/how-default-printing-is-done.md)
+ [Varsayılan Yazdırmayı Yapma](../mfc/how-default-printing-is-done.md)
 

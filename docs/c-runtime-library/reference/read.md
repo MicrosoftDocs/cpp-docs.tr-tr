@@ -35,11 +35,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2473dcac2d737d8419a90f4f8e7a47939065f3be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c55e2607a706648c818fc94e73197756470110c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="read"></a>_read
 
@@ -153,4 +154,4 @@ Read 19 bytes from file
 [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
 [fread](../../c-runtime-library/reference/fread.md)   
 [_kurulum Aç, _wopen](../../c-runtime-library/reference/open-wopen.md)   
-[_Write](../../c-runtime-library/reference/write.md)
+[_write](../../c-runtime-library/reference/write.md)

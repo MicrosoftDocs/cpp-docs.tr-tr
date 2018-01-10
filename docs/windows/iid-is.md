@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c2f4ccdf469ac41c6313626cc80e2256a50e7782
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2caa675f222ad1e2940117c60eb5a83d6a4f976f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iidis"></a>iid_is
 Arabirim işaretçisi tarafından işaret COM arabirimi IID belirtir.  
@@ -73,4 +76,4 @@ __interface IFireTabCtrl : IDispatch
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Parametre öznitelikleri](../windows/parameter-attributes.md)   
+ [Parametre Öznitelikleri](../windows/parameter-attributes.md)   

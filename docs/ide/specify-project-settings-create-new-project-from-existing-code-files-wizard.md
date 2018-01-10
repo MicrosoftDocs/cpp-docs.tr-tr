@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac4e4a0e9454567be98e4534614c725df70368ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2cf1e8eba11063f7f2e46f836cd2ef84cc70dfe8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="specify-project-settings-create-new-project-from-existing-code-files-wizard"></a>Proje Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı
 Oluşturma yeni proje varolan kod dosyaları sihirbazın bu sayfası belirtmek için kullanın:  
@@ -29,7 +30,7 @@ Oluşturma yeni proje varolan kod dosyaları sihirbazın bu sayfası belirtmek i
 -   Yapı oluşturmak için yeni proje belirli bir türdeki eşleştirmek için ayarları  
   
 ## <a name="task-list"></a>Görev Listesi  
- [Nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)  
+ [Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Visual Studio'yu kullanma**  
@@ -73,4 +74,4 @@ Oluşturma yeni proje varolan kod dosyaları sihirbazın bu sayfası belirtmek i
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılandırma ayarlarında hata ayıklamayı belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-debug-configuration-settings.md)   
- [Yayın yapılandırma ayarlarını belirtme, varolan kod dosyaları Sihirbazı'ndan yeni proje oluşturma](../ide/specify-release-configuration.md)
+ [Yayın Yapılandırma Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-release-configuration.md)

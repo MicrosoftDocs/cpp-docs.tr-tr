@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c398d3251c63a763af0fdf965e4c7f2e8c5bb3c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a2bcae07f4e66fec1ed6fb9eb95e87e83557e53
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3201"></a>Derleyici Hatası C3201
 sınıf şablonu 'şablon' için şablon parametre listesi 'şablon' şablon parametresi için şablon parametre listesi eşleşmiyor.  

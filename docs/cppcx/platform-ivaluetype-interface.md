@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 9041dc11d7b0752c84ff5f1cbf7f12e6f6797ded
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bd194be31e9121513e0c2c37d13460e90c3edf1b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformivaluetype-interface"></a>Platform::IValueType arabirimi
 `Platform::IValueType`değer sınıflar ve değer yapılar tarafından uygulanan bir altyapı arabirimdir. Kodunuzda açıkça kullanılacak değil.  

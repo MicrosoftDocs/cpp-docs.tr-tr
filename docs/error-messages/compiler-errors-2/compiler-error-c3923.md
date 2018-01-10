@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 863273ec0e9922a6a0b4e7355fe47178a7dd5bbe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1615f0ad270491fde5e4ec0285006f8f28de94e4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3923"></a>Derleyici Hatası C3923
 'member': yerel sınıf, yapı veya birleşim tanımları WinRT ya da yönetilen sınıf üye işlevi içinde izin verilmez  

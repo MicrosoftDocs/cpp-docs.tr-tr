@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 38d36f63f6116764fe6bc00a9ab172bc46b98f3e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: bf9eec9f8e8905cbc22d670d0ca33b1f89eaa4b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="priorityqueueassign-stlclr"></a>priority_queue::assign (STL/CLR)
 Tüm öğeleri değiştirir.  
@@ -80,4 +83,4 @@ c a b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)   
- [priority_queue::operator (STL/CLR) =](../dotnet/priority-queue-operator-assign-stl-clr.md)
+ [priority_queue::operator= (STL/CLR)](../dotnet/priority-queue-operator-assign-stl-clr.md)

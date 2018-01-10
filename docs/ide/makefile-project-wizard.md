@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a36cfa6c0171f7f05d308aef2cd2c84e62ce296
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33e9245654f0ec2e9af65258eb5be7b4230ad6fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="makefile-project-wizard"></a>Derleme Görevleri Dosyası Projesi Sihirbazı
 Bir komut satırı yürütmek yapı altyapısı oluşturmak için bu sihirbazı kullanın. Proje oluşturduktan sonra görüntüleyebilir ve projenin proje özelliklerini Düzenle [özellik sayfası](../ide/working-with-project-properties.md).  
@@ -35,4 +36,4 @@ Bir komut satırı yürütmek yapı altyapısı oluşturmak için bu sihirbazı 
  [Derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md)   
  [NMAKE başvurusu](../build/nmake-reference.md)   
  [Derleme görevleri dosyasındaki özel karakterler](../build/special-characters-in-a-makefile.md)   
- [Derleme görevleri dosyası içeriği](../build/contents-of-a-makefile.md)
+ [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)

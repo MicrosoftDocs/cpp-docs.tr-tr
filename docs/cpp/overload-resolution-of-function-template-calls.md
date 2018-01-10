@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e32b681edc6c6b4c0187d5d0ec89ff609e52858d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 64bc9371fcddad5f76f1474832a8d69188b60583
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overload-resolution-of-function-template-calls"></a>İşlev Şablonu Çağrılarının Aşırı Yük Çözümü
 İşlev şablonu aynı ada sahip şablon Olmayandan işlevleri aşırı yüklenebilir. Bu senaryoda, ilk işlev çağrılarını çözümlenir benzersiz uzmanlık işlevi şablonla örneği oluşturmak için şablon bağımsız değişken kesintisi kullanma. Şablon bağımsız değişken kesintisi başarısız olursa, diğer bir işlev aşırı yüklemelerinin çağrı çözümlemek için olarak kabul edilir. Aday kümesi olarak da bilinen bu diğer aşırı yüklemeler, şablon Olmayandan işlevler ve diğer başlatılan işlev şablonları içerir. Şablon bağımsız değişken kesintisi başarılı olursa, oluşturulan işlev kuralları aşırı yükleme çözümü için aşağıdaki en iyi eşleşmeyi belirlemek için diğer işlevleri ile karşılaştırılır. Daha fazla bilgi için bkz: [işlev aşırı yüklemesi](function-overloading.md).  
@@ -91,5 +92,5 @@ void f(T1, T2)
 ## <a name="see-also"></a>Ayrıca Bkz.
 
  [Ad çözümlemesi](../cpp/templates-and-name-resolution.md)   
- [TypeName](../cpp/typename.md)   
+ [typename](../cpp/typename.md)   
  

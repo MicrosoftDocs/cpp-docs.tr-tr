@@ -14,11 +14,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4139068c8871fe69f43168fe925011a48411a74b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f9c2daa3f34ba4e73b28e11241d0f64680851fcc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-passing-functions"></a>İleti Geçirme İşlevleri
 Zaman uyumsuz aracılar Kitaplığı bileşenleri arasında ileti geçirmenize olanak tanıyan çeşitli işlevleri sağlar.  
@@ -55,19 +56,19 @@ Zaman uyumsuz aracılar Kitaplığı bileşenleri arasında ileti geçirmenize o
 ##  <a name="examples"></a>Örnekler  
  Kullanma örnekleri için `send` ve `asend`, ve `receive` İşlevler, aşağıdaki konulara bakın:  
   
--   [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+-   [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
--   [Nasıl yapılır: çeşitli üretici-tüketici desenlerini uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)  
+-   [Nasıl yapılır: Çeşitli Üretici-Tüketici Desenlerini Uygulama](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)  
   
--   [Nasıl yapılır: call ve transformer sınıflarına iş işlevleri sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)  
+-   [Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)  
   
--   [Nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)  
+-   [Nasıl yapılır: Veri İşlem Hattında transformer Kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)  
   
--   [Nasıl yapılır: Tamamlanan görevler arasında seçim](../../parallel/concrt/how-to-select-among-completed-tasks.md)  
+-   [Nasıl yapılır: Tamamlanan Görevler Arasında Seçim Yapma](../../parallel/concrt/how-to-select-among-completed-tasks.md)  
   
--   [Nasıl yapılır: düzenli aralıkla ileti gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)  
+-   [Nasıl yapılır: Düzenli Aralıkla İleti Gönderme](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)  
   
--   [Nasıl yapılır: ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
+-   [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
   
  [[Üst](#top)]  
   

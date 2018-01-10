@@ -151,11 +151,12 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c317390f804e90ed2faf4302ab0a46d783dd49ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b557a56b1d525941c96b9a6a96fd367b64afcaf0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages sınıfı
 Araç çubuğundaki görüntüler. `CMFCToolBarImages` Sınıfı yönetir uygulama kaynakları veya dosyalarından yüklenen araç görüntüler.  
@@ -1303,4 +1304,4 @@ BOOL SmoothResize(double dblImageScale);
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)   
- [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)
+ [CMFCToolBarButton Sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)

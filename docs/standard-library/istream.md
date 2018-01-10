@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a1e19ee61fd6a4b19e288c44b2d5c83950ee78e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 570a23dff65c6c4838d85083b25507bbf0f68e44
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltistreamgt"></a>&lt;istream&gt;
 İostreams ayıklamaları aracılık, Şablon sınıfı basic_istream ve eklemeleri ve ayıklamaları aracılık Şablon sınıfı basic_iostream tanımlar. Üstbilgi ayrıca ilgili manipulator tanımlar. Bu üst bilgi dosyası başka bir iostreams üstbilgisi tarafından sizin için genellikle bulunur; nadiren doğrudan eklemek zorunda.  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 
 

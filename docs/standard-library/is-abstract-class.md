@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 08de1cfd876438b46c41aa795ab6cc2b0aab3fb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d5d535a50aaab7445f39a02967964d002fc83d49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isabstract-class"></a>is_abstract Sınıfı
 Tür ise testleri soyut sınıf.  
@@ -81,4 +82,4 @@ is_abstract<abstract> == true
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_polymorphic sınıfı](../standard-library/is-polymorphic-class.md)
+ [is_polymorphic Sınıfı](../standard-library/is-polymorphic-class.md)

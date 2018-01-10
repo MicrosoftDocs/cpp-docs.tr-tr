@@ -34,11 +34,12 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.openlocfilehash: 70f791044d7ebdcb97ee53d4c99bd1db4ed3561b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e2d9d1bd19b34cd4b542d0325b06ad57e1a7c51
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="thread-class"></a>thread Sınıfı
 İnceleyin ve bir uygulama içinde yürütme iş parçacığı yönetmek için kullanılan nesneyi tanımlar.  
@@ -66,7 +67,7 @@ class thread;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[iş parçacığı](#thread)|Oluşturan bir `thread` nesnesi.|  
+|[thread](#thread)|Oluşturan bir `thread` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   

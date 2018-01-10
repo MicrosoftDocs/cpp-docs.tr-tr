@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8085eb8b28ece4f0ca24d00c33b8809aa412da5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 3d6c5393b006602084a50d18c8cfe76d59d2d6ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-richedit-10-control-with-mfc"></a>MFC ile RichEdit 1.0 Denetimini Kullanma
 RichEdit denetimi kullanmak için önce çağırmalısınız [Afxınitrichedit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) RichEdit 2.0 denetimi (RICHED20. yüklemek için DLL) veya arama [Afxınitrichedit](../mfc/reference/application-information-and-management.md#afxinitrichedit) eski RichEdit 1.0 denetimi (RICHED32. yüklemek için DLL).  
@@ -32,5 +35,5 @@ RichEdit denetimi kullanmak için önce çağırmalısınız [Afxınitrichedit2]
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu Düzenleyicisi sorunlarını giderme](../windows/troubleshooting-the-dialog-editor.md)   
- [İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)
+ [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
 

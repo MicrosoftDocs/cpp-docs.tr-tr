@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e04bea5b4a76172e5d9f28358d013ed7cbd3538c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4bf5f696eeff3e4e26a9d77714c0d5a6f093aaa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer sınıfı
 OLE görsel düzenleme sunucuları, otomasyon sunucuları ve bağlantı kapsayıcıları (eklerinin bağlantılarını destekleyen uygulamalar) için kullanılır.  
@@ -169,4 +170,4 @@ void UpdateRegistry(
  [COleObjectFactory sınıfı](../../mfc/reference/coleobjectfactory-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleServerDoc sınıfı](../../mfc/reference/coleserverdoc-class.md)   
- [COleServerItem sınıfı](../../mfc/reference/coleserveritem-class.md)
+ [COleServerItem Sınıfı](../../mfc/reference/coleserveritem-class.md)

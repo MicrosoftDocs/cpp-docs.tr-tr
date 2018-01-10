@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 868e167e68cf2fba6a8252ba390ab73268a78005
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0dc7610b56d55fc5d42a0c4b73a5405be3d4dda9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenekleri için Windows çalışma zamanı uygulamaları oluşturulmasını destekler.  
@@ -24,7 +25,7 @@ Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenek
 ## <a name="library-path"></a>Kitaplık yolu  
  % LIBPATH % ortam değişkeni .winmd dosyalarını aramak için varsayılan yolu belirtir.  
   
-## <a name="compiler-options"></a>Derleyici Seçenekleri  
+## <a name="compiler-options"></a>Derleyici seçenekleri  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b29c6ce5b71b103068f0fe34673dcdcfe6820856
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c520d365a259c36baab8edeb9049aab9ac89925a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 Visual C++ 6.0 sonra dağıtmanız uygulamalarda kullanabileceğiniz ActiveX denetimleri sağlar. Bu denetimler, artık Visual c++'ta dahil edilir. Visual C++ 6.0 için lisans sözleşmelerine göre Visual c++'ta geliştirilen uygulamaları ile bu denetimleri dağıtabilirsiniz.  
@@ -51,4 +52,4 @@ Visual C++ 6.0 sonra dağıtmanız uygulamalarda kullanabileceğiniz ActiveX den
  Bazı yeniden dağıtılabilir ActiveX denetimlerinin ek bağımlılıkları vardır. Her .ocx dosyası için Os\System klasöründe Visual C++ 6.0 ürün CD'sindeki, ayrıca bir.DEP dosyası vardır. Yeniden dağıtmak istediğiniz her .ocx dosyası için ilgili .dep dosyasında bir veya daha fazla kullanır girdilerini arayın. Bir dosya listeleniyorsa, dosyanın hedef bilgisayarda olduğundan emin olmalısınız. Doğrudan destekleyen bir .ocx dosyasının DLL'lerin kayıtlı olması gerekir. (Başarılı olması Regsvr32.exe için hedef bilgisayarı ilk tüm denetim statik olarak yüklediği tüm DLL'leri içermesi gerekir.) Ayrıca, bir bağımlılık olarak listelenen bir DLL de bir.DEP dosyası Visual C++ 6.0 CD'sindeki Os\System klasöründe varsa, bu .dep dosyasında kullanır girişler için de araştırmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md)
+ [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 09d0000dd7ac6fbe7c57d0b903694754e2d390e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03e86a7cbb36a0cfdf0ad2d32d625eae0102b25a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
 Bir ad alanı bir standart C++ ilgili işlevleri türlerini gruplama için ve ad çakışmaları kitaplıklarında engellemek için yapıdır. Windows çalışma zamanı tür sistemi kendi kodunuzu de dahil, tüm genel Windows çalışma zamanı tür ad alanı kapsamında bir ad alanındaki bildirilmelidir gerektirir. Genel kapsamda bildirilen veya başka bir sınıf içinde iç içe geçmiş genel türler, derleme zamanı hataya neden olur.  
@@ -59,4 +60,4 @@ Bir ad alanı bir standart C++ ilgili işlevleri türlerini gruplama için ve ad
 |Platform::details|Derleyici tarafından kullanılır ve ortak tüketim için düşünülmemiştir türlerini içerir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sistem türü (C + +/ CX)](../cppcx/type-system-c-cx.md)
+ [Tür Sistemi (C++/CX)](../cppcx/type-system-c-cx.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 529e881d8872d3ea1d69da14ac393282c4f3efc1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e18e20cb1ffbe6d06060b3001c48f01b8b8b8cbf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3824"></a>Derleyici Hatası C3824
 'member': Bu türü bu bağlamda (işlev parametresi, dönüş türü veya statik bir üyenin) yer alamaz  

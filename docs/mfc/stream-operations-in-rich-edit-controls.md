@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 74dd05bfa1619b9acfe5695fdf0491d4d4b65a78
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c1a73790124adbc1ff8a89290bf4e1d7a4fa6824
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Akış İşlemleri
 İçine veya dışına bir zengin düzenleme denetimine veri aktarmak için akışlarını kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)). Bir akış tarafından tanımlanan bir [EDITSTREAM](http://msdn.microsoft.com/library/windows/desktop/bb787891) yapısı, arabellek ve bir uygulama tanımlı geri çağırma işlevi belirtir.  
@@ -35,5 +36,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

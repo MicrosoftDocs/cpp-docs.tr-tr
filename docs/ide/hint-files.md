@@ -22,11 +22,12 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c82128fb40577544b28eb50dc0a107e14c41cbd0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 432b5fa5041a7997c9df0593dc511c29854387ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hint-files"></a>İpucu Dosyaları
 A *ipucu dosyası* yardımcı olan Visual Studio tümleşik geliştirme ortamı (IDE) yorumlama adlarını, İşlevler ve makrolar gibi Visual C++ tanımlayıcıları. Bir Visual C++ proje, IDE açtığınızda *sistem ayrıştırma* kodunu projeyi her kaynak dosyasında çözümler ve her bir tanımlayıcı hakkında bilgi toplar. IDE gibi özellikleri desteklemek için bu bilgileri kullanıyorsa **sınıf görünümü** tarayıcı ve **gezinti çubuğu**.  
@@ -321,4 +322,4 @@ static const struct ATL::_ATL_CATMAP_ENTRY pMap[] = {
  [SAL ek açıklamaları](../c-runtime-library/sal-annotations.md)   
  [İleti eşlemeleri](../mfc/reference/message-maps-mfc.md)   
  [İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
- [Nesne eşleme makroları](../atl/reference/object-map-macros.md)
+ [Nesne İşleme Makroları](../atl/reference/object-map-macros.md)

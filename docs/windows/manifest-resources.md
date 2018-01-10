@@ -16,11 +16,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2db9cc041ec9a38b9d1e5fa489b1abdf27b73769
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 56a41a7901e41f4c76fbb9fcbf5930ec97c3b866
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="manifest-resources"></a>Bildirim Kaynakları
 Bildirim kaynakları uygulama kullanan bağımlılıkları açıklayan XML dosyalarıdır. Örneğin, Visual Studio'da MFC sihirbaz tarafından oluşturulan bildirim dosyası Windows ortak denetimi uygulama kullanması gereken DLL'leri, sürüm 5.0 veya 6.0 hangisinin tanımlar:  
@@ -55,4 +58,4 @@ Bildirim kaynakları uygulama kullanan bağımlılıkları açıklayan XML dosya
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri](../mfc/controls-mfc.md)   
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)
+ [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)

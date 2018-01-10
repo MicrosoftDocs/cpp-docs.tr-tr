@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b9ae6b2b922a3d3d70cf49ca5ee80283e9fc218
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4412c37ed0544c276a9ff1a16c367de06c7d1e9e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-a-method--visual-c"></a>Yöntem Ekleme (Visual C++)
 Kullanabileceğiniz [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md) projenizdeki bir arabirim için bir yöntem eklemek için. Proje ile ilişkilendirilen bir sınıf içeriyorsa, sihirbazın sınıfı çok değiştirir.  
@@ -44,4 +45,4 @@ Kullanabileceğiniz [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM arabirimi oluşturma](../ide/creating-a-com-interface-visual-cpp.md)   
- [COM arabirimini düzenleme](../ide/editing-a-com-interface.md)
+ [COM Arabirimini Düzenleme](../ide/editing-a-com-interface.md)

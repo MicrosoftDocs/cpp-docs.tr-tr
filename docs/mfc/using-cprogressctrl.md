@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89fc982eba1a4eeeb291a33440cfae71c4b2a745
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 09d7673450834fbe6824e731679c1a6517c247a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cprogressctrl"></a>CProgressCtrl Kullanma
 İlerleme denetimi, uzun bir işlem ilerlemesini belirtmek için kullanabilirsiniz. Sistem vurgulama rengiyle işlem ilerledikçe kademeli olarak doldurulmuş dikdörtgen şeklinde.  
@@ -34,12 +35,12 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [İlerleme denetimi için stiller](../mfc/styles-for-the-progress-control.md)  
+-   [İlerleme Denetimi için Stiller](../mfc/styles-for-the-progress-control.md)  
   
--   [İlerleme denetimi ayarları](../mfc/settings-for-the-progress-control.md)  
+-   [İlerleme Denetimi Ayarları](../mfc/settings-for-the-progress-control.md)  
   
--   [İlerleme durumu denetimini düzenleme](../mfc/manipulating-the-progress-control.md)  
+-   [İlerleme Durumu Denetimini Düzenleme](../mfc/manipulating-the-progress-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

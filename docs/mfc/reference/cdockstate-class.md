@@ -27,11 +27,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c703a1daf3c32229a13f6c47d1a56084b849edbb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6669f5a2b54c376e545b1ba6b9227d6137726256
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdockstate-class"></a>CDockState sınıfı
 Seri hale getirilmiş bir `CObject` yükler, kaldırır ya da bir veya daha fazla yerleştirme denetim durumunu temizler sınıfı çubuklarını kalıcı bellek (dosya).  
@@ -136,5 +137,5 @@ void SaveState(LPCTSTR lpszProfileName);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

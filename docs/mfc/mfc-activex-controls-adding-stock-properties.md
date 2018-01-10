@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6523e5758e96c140b05f8416ba886a1e8636cc7d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed6fec6c878fe505b18a39df1200117f4b426878
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX Denetimleri: Stok Özellikler Ekleme
 Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özelliklerinden farklı `COleControl`. `COleControl`Ortak Özellikler Denetim için destek önceden tanımlanmış üye işlevlerini içerir. Denetimin başlığı ve ön ve arka plan renkleri bazı ortak özellikleri içerir. Diğer stok özellikleri hakkında daha fazla bilgi için bkz: [hisse senedi özellikleri Özellik Ekleme Sihirbazı'nı tarafından desteklenen](#_core_stock_properties_supported_by_classwizard) bu makalenin ilerisinde yer. Stok özellikleri için gönderme eşleme girdilerini her zaman tarafından önek **DISP_STOCKPROP**.  
@@ -108,4 +109,4 @@ Stok özellikleri içeren zaten bir sınıf tarafından uygulanan özel özellik
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX denetimleri: Özellikler](../mfc/mfc-activex-controls-properties.md)   
  [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md)   
- [COleControl sınıfı](../mfc/reference/colecontrol-class.md)
+ [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

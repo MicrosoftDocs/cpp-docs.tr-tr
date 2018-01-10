@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9c99ee29adb900154b3e9943f4f40d6301af5ce5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cd726860e181eb352d7368f31a31d2cbd7489000
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
 Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı adımlar içerir. Mevcut uygulamalarınızı Internet etkinleştir MFC sınıfları kullanma ve etkin belge desteği, varolan bir COM bileşeni eklemek nasıl konuları içerir. En güncel stok teklifler, Pittsburgh'ın futbol puanları, bir belge oluşturmak istiyor musunuz ve en son sıcaklık Antarktika Microsoft teknolojileri Internet üzerinden yapmanıza yardımcı olmak için çeşitli sağlar.  
@@ -41,23 +42,23 @@ Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı ad�
   
  Başlamanıza yardımcı olmak ayrıntılı bilgi için aşağıdaki konulara bakın:  
   
--   [Uygulama tasarımı seçimleri](../mfc/application-design-choices.md)  
+-   [Uygulama Tasarımı Seçimleri](../mfc/application-design-choices.md)  
   
--   [MFC uygulamaları yazma](../mfc/writing-mfc-applications.md)  
+-   [MFC Uygulamaları Yazma](../mfc/writing-mfc-applications.md)  
   
--   [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md)  
+-   [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)  
   
--   [Varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md)  
+-   [Varolan Bir ActiveX Denetimini Güncelleştirme](../mfc/upgrading-an-existing-activex-control.md)  
   
--   [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md)  
+-   [Internet'te Etkin Belgeler](../mfc/active-documents-on-the-internet.md)  
   
--   [Internet'teki zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
+-   [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
   
--   [Internet uygulamalarını test etme](../mfc/testing-internet-applications.md)  
+-   [Internet Uygulamalarını Test Etme](../mfc/testing-internet-applications.md)  
   
 -   [Internet güvenliği](../mfc/internet-security-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [Göreve göre Internet bilgileri](../mfc/internet-information-by-task.md)
+ [Göreve Göre Internet Bilgileri](../mfc/internet-information-by-task.md)
 

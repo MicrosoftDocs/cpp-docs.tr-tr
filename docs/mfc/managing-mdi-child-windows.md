@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1489fa4ec75b94c9daad7216a28599c6ef67e5a5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5ebcd6e484385ada3cd3d5ccfe450e7e25f539eb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="managing-mdi-child-windows"></a>MDI Alt Öğe Pencerelerini Yönetme
 MDI ana çerçeve pencereleri (uygulama başına bir tane) olarak adlandırılan özel alt pencere içeren **MDICLIENT** penceresi. **MDICLIENT** penceresi ana çerçeve penceresi istemci alanını yönetir ve kendi alt öğe pencerelerini var.: türetilmiş belge pencereleri `CMDIChildWnd`. Belge pencereleri çerçeve pencereleri kendilerini (MDI alt pencereleri) olduğundan, ayrıca kendi alt öğelerini olabilir. Bu durumların tümünde, ana pencereyi alt windows yönetir ve bunlara bazı komutlar iletir.  
@@ -45,5 +46,5 @@ MDI çerçeve pencereleri ve alt öğeleri
 -   [Çerçeve pencere stilleri](../mfc/frame-window-styles-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+ [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

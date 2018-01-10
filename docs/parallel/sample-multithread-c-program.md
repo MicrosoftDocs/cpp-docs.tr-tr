@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4e4906924f3a572f2e8a00d226acdb3da7097cdc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 234a24152b0f5ce02caf3948baf7ee3b183622ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sample-multithread-c-program"></a>Örnek Çoklu İş Parçacığı Kullanan C Programı
 Bounce.c olan yeni bir örnek çoklu iş parçacığı programı harfi her iş parçacığı **bir** veya **A** yazılır. Her iş parçacığı Mutlu Yüz ekran çevresinde farklı bir renk, geri dönmeler. En fazla 32 iş parçacığı oluşturulamıyor. Programın normal sonlandırma gerçekleşir zaman `q` veya **Q** yazılır. Derleme ve Bounce.c bağlama hakkında daha fazla bilgi için bkz: [derleme ve bağlama çoklu iş parçacığı kullanan programları](../parallel/compiling-and-linking-multithread-programs.md).  
@@ -219,4 +220,4 @@ q
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-c-and-win32.md)
+ [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

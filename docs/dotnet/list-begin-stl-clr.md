@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7dd316431abf5148a46670b559e73fedc5c99751
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a98c73ae1bd89b4c963b3f65df86c0df5ac4574b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listbegin-stlclr"></a>list::begin (STL/CLR)
 Denetlenen dizinin başlangıcını belirtir.  
@@ -84,4 +87,4 @@ int main()
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::End (STL/CLR)](../dotnet/list-end-stl-clr.md)   
  [List::Front (STL/CLR)](../dotnet/list-front-stl-clr.md)   
- [List::front_item (STL/CLR)](../dotnet/list-front-item-stl-clr.md)
+ [list::front_item (STL/CLR)](../dotnet/list-front-item-stl-clr.md)

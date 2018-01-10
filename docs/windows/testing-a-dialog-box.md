@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ca6e6cd8dd9f7d67ba8a000f33143a12c0978a25
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d81d288453e56acfb02a123075692b907d371578
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="testing-a-dialog-box"></a>İletişim Kutusunu Test Etme
 Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınızı derleme olmadan çalışma zamanı davranışını sınama. Bu modda, şunları yapabilirsiniz:  
@@ -54,5 +57,5 @@ Bir iletişim kutusu tasarlarken benzetimini gerçekleştirmek ve programınız�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
  [İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)   
- [Gösteren veya iletişim kutusu Düzenleyicisi araç çubuğunu gizleme](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)
+ [İletişim Kutusu Araç Çubuğunu Gösterme veya Gizleme](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)
 

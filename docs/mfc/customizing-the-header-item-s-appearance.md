@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 494372aa3e6dcc418a6ffdacbb7b06635a010310
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dacb5cc7aa1c6d7c74a07ee911c5887efe1d877b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi &#39; özelleştirme s görünümü
 Ayarlayarak *dwStyle* üstbilgi denetimi ilk oluşturduğunuzda parametre ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), görünüm tanımlayabilirsiniz ve üstbilgi davranışını öğelerini ya da üstbilgisi denetimi.  
@@ -44,5 +45,5 @@ Ayarlayarak *dwStyle* üstbilgi denetimi ilk oluşturduğunuzda parametre ([CHea
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eb1d43207e7276aadac32e38a43cfa4ae47b9186
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 89167547085682a81cc1d281f4f32ab55022d27c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="23-parallel-construct"></a>2.3 parallel Yapı
 Aşağıdaki komut paralel birden çok iş parçacığı tarafından yürütülür program bölgedir paralel bir bölge tanımlar. Bu paralel yürütme başlayan temel bir yapıdır.  

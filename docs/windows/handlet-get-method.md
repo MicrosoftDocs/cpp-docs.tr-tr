@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1d0f5655292b84c56521b639e8ccfd52a821b549
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 63902b5c911766163163ea3b2f8ee2d53ed77a8b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handletget-method"></a>HandleT::Get Metodu
 Temel alınan tanıtıcı değerini alır.  
@@ -39,4 +42,4 @@ typename HandleTraits::Type Get() const;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT sınıfı](../windows/handlet-class.md)
+ [HandleT Sınıfı](../windows/handlet-class.md)

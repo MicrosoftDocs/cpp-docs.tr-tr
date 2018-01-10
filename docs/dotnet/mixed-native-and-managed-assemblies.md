@@ -23,11 +23,14 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c58f69057a7da709ec79c614fe60beef5a203f0b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: aeb0a4f21487d9d230c72bfbfc6a06928455dfe2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mixed-native-and-managed-assemblies"></a>Karışık (Yerel ve Yönetilen) Derlemeler
 Karışık derlemeler yönetilmeyen makine yönergeleri ve MSIL yönergeleri içeremeyeceğini. Bu arayın ve .NET bileşenleri tarafından tamamen yönetilmeyen bileşenleri ile uyumluluk korurken çağrılması sağlar. Karışık derlemeler kullanarak, geliştiriciler yönetilen ve yönetilmeyen işlevleri karışımını kullanan uygulamalar yazabilirsiniz. Bu karışık derlemeler mevcut Visual C++ uygulamaları geçirme .NET platformu için ideal hale getirir.  
@@ -43,16 +46,16 @@ Karışık derlemeler yönetilmeyen makine yönergeleri ve MSIL yönergeleri iç
  [Nasıl yapılır: / CLR MFC ve ATL kodu kullanarak derleme](../dotnet/how-to-compile-mfc-and-atl-code-by-using-clr.md)  
  Ortak dil çalışma zamanı hedeflemek için varolan MFC ve ATL programlarının nasıl yapılandırılabileceğini açıklar.  
   
- [Karışık derlemeleri başlatma](../dotnet/initialization-of-mixed-assemblies.md)  
+ [Karışık Derlemeleri Başlatma](../dotnet/initialization-of-mixed-assemblies.md)  
  "Yükleyici kilidi" sorun ve çözümler açıklanmaktadır.  
   
- [Karışık derlemeler için kitaplık desteği](../dotnet/library-support-for-mixed-assemblies.md)  
+ [Karışık Derlemeler için Kitaplık Desteği](../dotnet/library-support-for-mixed-assemblies.md)  
  Yerel kitaplıklarında nasıl anlatılmaktadır **/CLR** derlemeleri.  
   
- [Başarım Değerlendirmeleri](../dotnet/performance-considerations-for-interop-cpp.md)  
+ [Performans Konuları](../dotnet/performance-considerations-for-interop-cpp.md)  
  Karışık derlemeler ve verileri hazırlama performans etkilerini açıklar.  
   
- [Uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md)  
+ [Uygulama Etki Alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md)  
  Uygulama etki alanları için Visual C++ desteğini açıklar.  
   
  [Çift dönüştürme](../dotnet/double-thunking-cpp.md)  
@@ -61,10 +64,10 @@ Karışık derlemeler yönetilmeyen makine yönergeleri ve MSIL yönergeleri iç
  [/ CLR ile CLR kapatma sırasında oluşturulan COM nesnelerini tüketirken özel durumları önleme](../dotnet/avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr.md)  
  İle derlenen bir COM nesnesi tüketen yönetilen bir uygulamanın düzgün kapatma emin olmak nasıl ele **/CLR**.  
   
- [Nasıl yapılır: CRT kitaplık DLL'İNDEN bağımlılık kaldırarak kısmen güvenilir uygulama oluşturma](../dotnet/create-a-partially-trusted-application.md)  
+ [Nasıl yapılır: CRT Kitaplık DLL'inden Bağımlılık Kaldırarak Kısmen Güvenilir Uygulama Oluşturma](../dotnet/create-a-partially-trusted-application.md)  
  Visual C++ kullanarak msvcm90.dll bağımlılık kaldırarak kısmen güvenilir bir ortak dil çalışma zamanı uygulamasının nasıl oluşturulacağını açıklar.  
   
  Karışık derlemeler için kodlama yönergeleri hakkında daha fazla bilgi için bkz: "Bir genel bakış, yönetilen/yönetilmeyen kod birlikte çalışabilirliği" MSDN makalesine [http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp](http://msdn.microsoft.com/netframework/default.aspx?pull=/library/dndotnet/html/manunmancode.asp).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel ve.NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+ [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

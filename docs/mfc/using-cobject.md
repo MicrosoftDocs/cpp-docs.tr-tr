@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a892d2831d21c17ceaa21a6403cf325a2b241c9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 17bffb412975cfc6a97eae8b30aff2514a2e1d93
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cobject"></a>CObject Kullanma
 [CObject](../mfc/reference/cobject-class.md) çoğu Microsoft Foundation Class Kitaplığı (MFC) için kök taban sınıfı değil. `CObject` Sınıfı, serileştirme desteği, çalışma zamanı sınıf bilgileri ve nesne tanılama çıktıları dahil olmak üzere kendi program nesneleri içerecek şekilde isteyebileceğiniz birçok yararlı özellik içerir. Sınıfından türetirseniz `CObject`, sınıfınız bu yararlanabilir `CObject` özellikleri.  
@@ -52,5 +53,5 @@ ms.lasthandoff: 10/24/2017
  [Genel MFC konuları](../mfc/general-mfc-topics.md)   
  [CRuntimeClass yapısı](../mfc/reference/cruntimeclass-structure.md)   
  [Dosyaları](../mfc/files-in-mfc.md)   
- [Seri hale getirme](../mfc/serialization-in-mfc.md)
+ [Serileştirme](../mfc/serialization-in-mfc.md)
 

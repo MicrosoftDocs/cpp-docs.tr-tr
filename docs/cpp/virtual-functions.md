@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2061f887c9f0b391e05ed0c3d2cf3e3c2a5434e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5a1a6fd82a042ab29ad9216746dcabce9e9ed15f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="virtual-functions"></a>Sanal İşlevler
 Sanal işlevi türetilmiş sınıflarda yeniden beklediğiniz bir üye işlevdir. Bir işaretçi veya temel sınıf başvurusu kullanarak bir türetilmiş sınıf nesnesi başvurduğunuzda, bu nesne için sanal bir işlevi çağırmak ve işlevi türetilen sınıfın sürümünü çalıştırın.  

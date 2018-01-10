@@ -19,11 +19,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ce4837f4e3820544852f5ca535a24ee4ed46cb0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a91b4f1c5f30711c46550dabb4369e380214fce1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="marshalcontextmarshalcontext"></a>marshal_context::marshal_context
 Oluşturan bir `marshal_context` yönetilen ve yerel veri türleri arasında veri dönüştürme için kullanılacak nesne.  
@@ -48,4 +51,4 @@ marshal_context();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++'da hazırlamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)   
  [marshal_as](../dotnet/marshal-as.md)   
- [marshal_context sınıfı](../dotnet/marshal-context-class.md)
+ [marshal_context Class](../dotnet/marshal-context-class.md)

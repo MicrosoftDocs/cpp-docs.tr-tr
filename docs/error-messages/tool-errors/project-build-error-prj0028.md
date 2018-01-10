@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d52186b3a6e584ddb597ab23cf5a8d44e614ed59
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a9a72142f46f55db5d9b20ea941741c9045cc907
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0028"></a>Proje Derleme Hatası PRJ0028
 Geçici dosya 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği içerir.  

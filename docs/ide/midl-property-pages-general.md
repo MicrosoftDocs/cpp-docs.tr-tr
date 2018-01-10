@@ -25,11 +25,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d18922428ee4fbc6932784201802608ebd2a974
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58b88ec67a265cecac0f5ea2d9facd2170d5da01
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="midl-property-pages-general"></a>MIDL Özellik Sayfaları: Genel
 **Genel** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/24/2017
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MIDL özellik sayfaları](../ide/midl-property-pages.md)
+ [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)

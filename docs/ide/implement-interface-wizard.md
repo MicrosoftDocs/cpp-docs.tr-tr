@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c2179d3745f42164ef8cf70162ed560b331d783
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d224546eb8bb06421c2e84206e1f4d4dc77f9668
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implement-interface-wizard"></a>Arabirim Uygulama Sihirbazı
 Bu sihirbaz bir COM nesnesi için bir arabirimi uygular. Birçok arabirimleri uygulamalarını Visual Studio ve Windows ile kullanılabilir COM kitaplıkları dahil edilmiştir. Söz konusu nesne örneği oluşturulduğunda ve nesne sunar hizmetleri sağlayan bir arabirim uygulamasına sahip bir nesne ilişkilidir.  
@@ -41,7 +42,7 @@ Bu sihirbaz bir COM nesnesi için bir arabirimi uygular. Birçok arabirimleri uy
  **Konum**  
  Şu anda seçili tür kitaplığı konumunu görüntüler **kullanılabilir tür kitaplıklarının** listesi. Seçtiyseniz **dosya** altında **uygulama arabiriminden**, kullanmak için tür kitaplığı içeren bir dosyayı bulmak için üç nokta düğmesini tıklatın.  
   
- **Arabirimleri**  
+ **Arabirimler**  
  Tanımları, şu anda seçili tür kitaplığı içerdiği arabirimleri görüntüler **kullanılabilir tür kitaplıklarının** kutusu.  
   
 > [!NOTE]

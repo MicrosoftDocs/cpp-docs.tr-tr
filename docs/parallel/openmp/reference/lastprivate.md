@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9429a54a21d58be7f2dd1667478ae653da5a8c35
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7ad36a68078856706a4d1d994e72fd001c36dbaf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lastprivate"></a>lastprivate
 Değişkeni kapsayan bağlamın sürümünü son yineleme (döngü için yapı) ya da son Kısım (#pragma bölümleri) hangi iş parçacığı yürütür özel sürümü için eşit olarak ayarlanır belirtir.  
@@ -39,7 +40,7 @@ lastprivate(var)
 ## <a name="remarks"></a>Açıklamalar  
  `lastprivate`Aşağıdaki yönergeleri için geçerlidir:  
   
--   [için](../../../parallel/openmp/reference/for-openmp.md)  
+-   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
 -   [bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
   
@@ -49,4 +50,4 @@ lastprivate(var)
  Bkz: [zamanlama](../../../parallel/openmp/reference/schedule.md) kullanma örneği için `lastprivate` yan tümcesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

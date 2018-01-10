@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 86dc5e8ef939175cdda20c141ad397a26a73f712
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a42ce4f1d8f3a9f61840433ef83470882e42e647
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB Tüketici Öznitelikleri
 OLE DB tüketici öznitelikleri temel kod ekleme [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları yürütülürken ve verilere erişim açılış tabloları gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.  
@@ -39,4 +42,4 @@ OLE DB tüketici öznitelikleri temel kod ekleme [OLE DB Tüketici Şablonları]
 |[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gruplara göre öznitelikler](../windows/attributes-by-group.md)
+ [Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13e9e103167009ae5c1ede792a8b550e07fd4fa0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cd22fdb38b1828e1fa86ca79b9967a546ccb9456
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 Bir donanım iş parçacığı için bir Özet.  
@@ -129,4 +130,4 @@ virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Ivirtualprocessorroot yapısı](ivirtualprocessorroot-structure.md)
+ [IVirtualProcessorRoot Yapısı](ivirtualprocessorroot-structure.md)

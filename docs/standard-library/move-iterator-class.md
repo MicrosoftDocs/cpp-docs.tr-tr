@@ -31,11 +31,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 59ad715516adfa716a307e1a4e0b7e4cf39e154a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54691a7d25e9229143e17476d5e0e09c6732e69e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="moveiterator-class"></a>move_iterator Sınıfı
 Sınıf şablonu `move_iterator` yineleyici için sarmalayıcı değil. Move_iterator yineleyicinin onu sarmaladığıyla (depoladığı) aynı davranışı sağlar, yalnız bu öğe bir kopyayı taşıma durumuna çevirerek depolanan yineleyicinin başvuru kaldırma işlecini bir rvalue başvurusuna çevirir. Rvalues hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
@@ -70,7 +71,7 @@ class move_iterator;
   
 |||  
 |-|-|  
-|[temel](#base)|Üye işlevi bu tarafından Sarmalanan saklı yineleyici döndürür `move_iterator`.|  
+|[base](#base)|Üye işlevi bu tarafından Sarmalanan saklı yineleyici döndürür `move_iterator`.|  
   
 ### <a name="operators"></a>İşleçler  
   

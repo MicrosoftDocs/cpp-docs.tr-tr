@@ -18,11 +18,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97a6def651826ae71cecf33f751f8c0858c691dd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ce2c846d844b79a6ff054bb6c209d1f4653a26d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-a-symbol39s-numeric-value"></a>S sayısal değerini bir simge &#39; değiştirme
 Tek bir kaynakla ilişkili simgelerini kullandığınız [Özellikler penceresini](/visualstudio/ide/reference/properties-window) simge değerini değiştirmek için. Kullanabileceğiniz [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md) bir kaynağa atanmış simge değerini değiştirmek için. Daha fazla bilgi için bkz: [atanmamış sembolleri değiştirme](../windows/changing-unassigned-symbols.md).  
@@ -50,4 +53,4 @@ Tek bir kaynakla ilişkili simgelerini kullandığınız [Özellikler penceresin
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md)   
- [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)
+ [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

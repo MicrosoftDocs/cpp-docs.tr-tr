@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4191adb10693ea224a89fb62c09a2299c3a6bee2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f8bd42a7da91f984c4cedc4deafc0ab9f4417495
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scrolling-and-scaling-views"></a>Görünümleri Kaydırma ve Ölçeklendirme
 MFC kaydırın ve görünümler otomatik olarak bunları görüntüler çerçeve penceresi boyutunu ölçeklenir görünümleri destekler. Sınıf `CScrollView` görünümler her iki tür destekler.  
@@ -55,5 +56,5 @@ MFC kaydırın ve görünümler otomatik olarak bunları görüntüler çerçeve
  Görünümü otomatik olarak kendi çerçeve penceresi sığacak şekilde istediğinizde kullanabilirsiniz `CScrollView` kaydırma yerine ölçekleme için. Mantıksal görünüm uzatılabilir ya da pencerenin istemci alanını tam olarak sığması için küçültülebilir. Kaydırma çubukları ölçeklendirilmiş bir görünüm içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görünümleri kullanma](../mfc/using-views.md)
+ [Görünümleri Kullanma](../mfc/using-views.md)
 

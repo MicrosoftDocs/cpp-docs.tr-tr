@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5811312b90f660e56ff2b81fcbf0e0dfb6a63909
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 63595fe7fda434b7ee16161bd3afdaf8a46fad82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-method-wizard"></a>Yöntem Ekleme Sihirbazı
 Bir yöntem için bir arabirim eklemek için bu sihirbazı kullanın. Proje türü veya yöntem ekleme arabirim türüne bağlı olarak sihirbazın farklı seçenekler görüntüler.  
@@ -96,4 +97,4 @@ Bir yöntem için bir arabirim eklemek için bu sihirbazı kullanın. Proje tür
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)   
- [IDL öznitelikleri, yöntem Ekleme Sihirbazı](../ide/idl-attributes-add-method-wizard.md)
+ [IDL Öznitelikleri, Yöntem Ekleme Sihirbazı](../ide/idl-attributes-add-method-wizard.md)

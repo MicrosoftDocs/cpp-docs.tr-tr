@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e308d95f25b25a99fecde976d8ba6433316f460f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7559bdf725727b79f99ed3bfcd4d6b7301528110
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 Özel durum belirtimleri Programcı hedefi bir işlev tarafından yayılan özel durum türleri hakkında belirten bir C++ dili özelliğidir. Bir işlev olabilir veya bir özel durum tarafından kullanarak sonlandırılabilir değil belirtebilirsiniz bir *özel durum belirtimi*. Beklenmeyen bir özel durum, programı sonlandırmak için işlevi çıkışları ve derleyici işlev çağrıları iyileştirmek için bu bilgileri kullanabilirsiniz. Özel durum belirtimi iki tür vardır. *Noexcept belirtimi* C ++ 11'de yenidir. Escape işlevi olası özel durumları kümesi boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*, veya `throw(optional_type_list)` belirtimi, C ++ 11'de kullanım dışıdır ve yalnızca kısmen Visual Studio tarafından desteklenir. Bu özel durum belirtimi hangi özel durumlar dışında bir işlev atılabilen hakkında özet bilgileri sağlamak için tasarlanmıştır ancak uygulamada sorunlu olarak bulunamadı. Biraz kullanışlı olması için kanıtlamak bir dinamik özel durum belirtimi koşulsuz edildi `throw()` belirtimi. Örneğin, işlev bildirimi:  
@@ -139,4 +140,4 @@ in handler
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [deneyin, throw ve catch deyimleri (C++)](../cpp/try-throw-and-catch-statements-cpp.md)   
- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+ [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

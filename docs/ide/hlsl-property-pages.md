@@ -14,24 +14,25 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33c40b6f240d89c9f38b1fba075679da26b1cb21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 82fdaeb1da213a435718d074b33f385145c211d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hlsl-property-pages"></a>HLSL Özellik Sayfaları
 HLSL derleyici (fxc.exe) özellik sayfaları dosyaları yerleşik tek tek nasıl HLSL gölgelendirici yapılandırmak için kullanabilirsiniz. Özellikler üç kategoriye ayrılır:  
   
--   [HLSL özellik sayfaları: Genel](../ide/hlsl-property-pages-general.md)  
+-   [HLSL Özellik Sayfaları: Genel](../ide/hlsl-property-pages-general.md)  
   
      HLSL derleyici yaygın olarak kullanılan seçeneklerini belirtmek için özellikleri sağlar.  
   
--   [HLSL özellik sayfaları: Gelişmiş](../ide/hlsl-property-pages-advanced.md)  
+-   [HLSL Özellik Sayfaları: Gelişmiş](../ide/hlsl-property-pages-advanced.md)  
   
      HLSL derleyici ek seçeneklerini belirtmek için özellikleri sağlar.  
   
--   [HLSL özellik sayfaları: Çıktı dosyaları](../ide/hlsl-property-pages-output-files.md)  
+-   [HLSL Özellik Sayfaları: Çıktı Dosyaları](../ide/hlsl-property-pages-output-files.md)  
   
      Dosyaları çıktı HLSL derleyici tarafından nasıl belirtmek için özellikleri sağlar.  
   

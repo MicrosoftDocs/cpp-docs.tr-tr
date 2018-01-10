@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1d408e0e6fe021caf7f3722a55528020d94bb83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8946c87c18e1781f95df7a91e8cc4fa0eba02158
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="aliases-and-typedefs-c"></a>Diğer adlar ve tür tanımları (C++)
 Kullanabileceğiniz bir *diğer bildirimi* için önceden tanımlanmış bir türü eşanlamlısı olarak kullanılacak bir ad bildirmek için. (Bu düzenek basit olarak da adlandırılan bir *türü diğer ad*). Oluşturmak için bu düzenek kullanabilirsiniz bir *diğer şablon*, hangi özel allocators için özellikle yararlı olabilir.  

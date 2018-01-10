@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67d377ea23c31b9ba7111f139f4c9d2db3ae7004
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 55bf0dedc286ed5dac8f48c7e8a2d43aa7741eff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="criticalsectiontraitsgetinvalidvalue-method"></a>CriticalSectionTraits::GetInvalidValue Metodu
 Böylece şablon her zaman geçersiz CriticalSection şablon uzmanlaşmış.  
@@ -42,4 +45,4 @@ inline static Type GetInvalidValue();
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CriticalSectionTraits yapısı](../windows/criticalsectiontraits-structure.md)
+ [CriticalSectionTraits Yapısı](../windows/criticalsectiontraits-structure.md)

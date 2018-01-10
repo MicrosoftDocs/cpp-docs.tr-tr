@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a84c316232dfe12f89c6fcbac6a4933654a5072d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 979e0630fde0bddb13d6f658ac6632dd47f4575f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multisetvaluetype-stlclr"></a>multiset::value_type (STL/CLR)
 Öğenin türü.  
@@ -74,4 +77,4 @@ a b c
  [multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)   
  [multiset::const_reference (STL/CLR)](../dotnet/multiset-const-reference-stl-clr.md)   
  [multiset::key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md)   
- [multiset::Reference (STL/CLR)](../dotnet/multiset-reference-stl-clr.md)
+ [multiset::reference (STL/CLR)](../dotnet/multiset-reference-stl-clr.md)

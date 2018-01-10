@@ -10,11 +10,12 @@ ms.assetid: 7e86338a-2d4b-40fe-9dd2-ac6886f3f31a
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d5a6ee17459de6bf311f94028b5afbbdf10e7d2c
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 52663aed470aff254d07cba6a65f484269d8703d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2672"></a>Derleyici Hatası C2672
 

@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b753d1eac4de6b7c6684a33889163344dfefe19f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: c87205d1d52c8273ac7eea55fcc5385810349f1f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulegenericreleasenotifier-class"></a>Module::GenericReleaseNotifier Sınıfı
 Son nesne geçerli modülünde yayımlandığında, bir olay işleyiciyi çağırır. Olay işleyicisi lambda, functor veya işaretçi işlevi belirtilir.  
@@ -43,19 +46,19 @@ class GenericReleaseNotifier : public ReleaseNotifier;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::genericreleasenotifier:: genericreleasenotifier Oluşturucusu](../windows/module-genericreleasenotifier-genericreleasenotifier-constructor.md)|Module::GenericReleaseNotifier sınıfının yeni bir örneğini başlatır.|  
+|[Module::GenericReleaseNotifier::GenericReleaseNotifier Oluşturucusu](../windows/module-genericreleasenotifier-genericreleasenotifier-constructor.md)|Module::GenericReleaseNotifier sınıfının yeni bir örneğini başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::GenericReleaseNotifier:: Invoke yöntemi](../windows/module-genericreleasenotifier-invoke-method.md)|Geçerli Module::GenericReleaseNotifier nesneyle ilişkili olay işleyicisini çağırır.|  
+|[Module::GenericReleaseNotifier::Invoke Metodu](../windows/module-genericreleasenotifier-invoke-method.md)|Geçerli Module::GenericReleaseNotifier nesneyle ilişkili olay işleyicisini çağırır.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::genericreleasenotifier:: callback_ veri üyesi](../windows/module-genericreleasenotifier-callback-data-member.md)|Lambda, functor ya da geçerli Module::GenericReleaseNotifier nesneyle ilişkili işaretçi işlevi olay işleyicisi barındırır.|  
+|[Module::GenericReleaseNotifier::callback_ Veri Üyesi](../windows/module-genericreleasenotifier-callback-data-member.md)|Lambda, functor ya da geçerli Module::GenericReleaseNotifier nesneyle ilişkili işaretçi işlevi olay işleyicisi barındırır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ReleaseNotifier`  
@@ -68,4 +71,4 @@ class GenericReleaseNotifier : public ReleaseNotifier;
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Modül sınıfı](../windows/module-class.md)
+ [Modül Sınıfı](../windows/module-class.md)

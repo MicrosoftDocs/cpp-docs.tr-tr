@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b09fcbc0ee5744f4b52332510d2ddc54e97086d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6fded011fda52dfde46804b03699dc93469e5e32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn023-standard-mfc-resources"></a>TN023: Standart MFC Kaynakları
 Bu not ile sağlanan ve MFC Kitaplığı tarafından gerekli standart kaynaklar açıklanır.  
@@ -107,5 +108,5 @@ Bu not ile sağlanan ve MFC Kitaplığı tarafından gerekli standart kaynaklar 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

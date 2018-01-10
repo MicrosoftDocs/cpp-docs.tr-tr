@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ac117c6c2020607d5b2d15b0229eaa045a22ec99
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c285e8d63787bc69600784aede49fe93f4e4bb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3731"></a>Derleyici Hatası C3731
 uyumsuz olay 'function1' ve işleyici 'function2'; Olay kaynağı ve olay işleyicisi aynı türde olmalıdır  

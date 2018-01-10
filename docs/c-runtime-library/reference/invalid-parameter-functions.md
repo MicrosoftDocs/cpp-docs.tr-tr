@@ -27,11 +27,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 49ae87567cd311e271a0ab50d7112a4a8f0c1b4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4db706387387d00d754f2afe74e34e85aecc5199
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="invalidparameter-invalidparameternoinfo-invalidparameternoinfonoreturn-invokewatson"></a>_invalid_parameter, _invalid_parameter_noinfo, _invalid_parameter_noinfo_noreturn, _invoke_watson
 Bu işlevler tarafından C çalışma zamanı kitaplığı CRT kitaplık, işlevlere geçirilen geçerli olmayan parametreleri işlemek için kullanılır. Kodunuzu varsayılan veya geçerli olmayan parametreler özelleştirilebilir işlenmesini desteklemek için bu işlevler de kullanabilirsiniz.
@@ -100,4 +101,4 @@ Varsayılan işleyici `_invoke_watson` çağrılır, işlemci destekliyorsa, bir
  [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
  [_get_invalid_parameter_handler, _get_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/get-invalid-parameter-handler-get-thread-local-invalid-parameter-handler.md)  
  [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](../../c-runtime-library/reference/set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md)  
- [Parametre doğrulama](../../c-runtime-library/parameter-validation.md)
+ [Parametre Doğrulama](../../c-runtime-library/parameter-validation.md)

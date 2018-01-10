@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4dc84169f037bc5fd6879c8dfd6edef0f167a249
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 1cd1b7dc96e0d2dce90ddfbefd3ba120cfb3ff27
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmapbegin-stlclr"></a>hash_map::begin (STL/CLR)
 Denetlenen dizinin başlangıcını belirtir.  
@@ -78,4 +81,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)   
- [hash_map::End (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)
+ [hash_map::end (STL/CLR)](../dotnet/hash-map-end-stl-clr.md)

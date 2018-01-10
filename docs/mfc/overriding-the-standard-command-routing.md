@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7168236ea315d42961f984a3c4f94845cd8398df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a8f926a2aa9ed48dac24f75850876bbd1e04ef4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overriding-the-standard-command-routing"></a>Standart Komut Yönlendirmeyi Geçersiz Kılma
 Standart framework yönlendirme bazı değişim uyguladığınızda gerekir nadir durumlarda, bunu geçersiz kılabilirsiniz. Geçersiz kılarak bir veya daha fazla sınıflarda yönlendirme değiştirmek için fikirdir `OnCmdMsg` bu sınıfların. Bunu yapın:  
@@ -34,5 +35,5 @@ Standart framework yönlendirme bazı değişim uyguladığınızda gerekir nadi
  Yönlendirme içine yeni bir nesne eklerseniz, kendi sınıfı komutu hedef sınıf olmalıdır. Geçersiz kılma sürümlerinde `OnCmdMsg`, geçersiz kılma sürüm çağırdığınızdan emin olun. Bkz: [OnCmdMsg](../mfc/reference/ccmdtarget-class.md#oncmdmsg) sınıfının üye işlevini `CCmdTarget` içinde *MFC başvurusu* ve bu tür sınıflar sürümlerde `CView` ve **CDocument** içinde Sağlanan kaynak kodu örnekleri için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md)
+ [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

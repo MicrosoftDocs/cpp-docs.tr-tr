@@ -22,11 +22,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 04eae2c263c8b26e44e8c1b05736061ad9291ef0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92ad08738ea2c8c748ac642c5ea15f4b0a257da9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="secure-template-overloads"></a>Güvenli Şablon Aşırı Yüklemeleri
 Microsoft Gelişmiş Güvenlik sürümleri lehinde birçok C çalışma zamanı kitaplığı (CRT) işlevler kullanım dışı. Örneğin, `strcpy_s` daha güvenli yerini alır `strcpy`. Kullanım dışı bırakılan işlevler güvenlik hataların genel kaynakları olduklarından belleğin üzerine operations engellemez. Varsayılan olarak, bu işlevler birini kullandığınızda derleyici kullanımdan kaldırma uyarısı oluşturur. CRT C++ şablon aşırı yüklemeleri kolaylığı yardımcı olması bu işlevler için daha güvenli çeşitleri geçiş sağlar.  
@@ -102,4 +103,4 @@ strcpy_s(szBuf, "test"); // doesn't compile; you have to change it to
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md)   
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: a302aa560e5a51e369b380dc1a853ab9100d8461
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c914241682aa53735d27138da2864b0db124c8d8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerinin işaretçiler edinme (C + +/ CX)
 Windows çalışma zamanı içinde [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) arabirim veri arabelleklerinin erişmek için dilden, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak temel alınan bayt dizisi ham işaretçi alabilirsiniz. Bu yaklaşımı kullanarak verileri gereksiz tüm kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.  

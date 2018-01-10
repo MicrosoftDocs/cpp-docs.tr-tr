@@ -18,11 +18,14 @@ caps.latest.revision: "6"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d9a1e2666aef593cde385f121065397226bad9d5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 85bf6bae5ba07154bdeb807171dd2d3df61d0774
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safeintexceptionsafeintexception"></a>SafeIntException::SafeIntException
 Oluşturur bir `SafeIntException` nesnesi.  
@@ -58,4 +61,4 @@ SafeIntException(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SafeInt Kitaplığı](../windows/safeint-library.md)   
  [Safeıntexception sınıfı](../windows/safeintexception-class.md)   
- [SafeInt sınıfı](../windows/safeint-class.md)
+ [SafeInt Sınıfı](../windows/safeint-class.md)

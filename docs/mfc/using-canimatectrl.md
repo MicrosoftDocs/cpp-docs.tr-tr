@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2054fcd5ca73263f8d26713c4e6c1e9a59323659
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f27fd24c3c4334476c78ba0b59c90cbbb0d51f5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-canimatectrl"></a>CAnimateCtrl Kullanma
 Sınıfı tarafından temsil edilen bir animasyon denetimi [CAnimateCtrl](../mfc/reference/canimatectrl-class.md), bir küçük Ses Video araya eklemeli (AVI) biçiminde görüntüler penceredir — standart Windows video/ses biçimi. Bir AVI klip, film gibi bit eşlem çerçeveler dizisidir.  
@@ -33,10 +34,10 @@ Sınıfı tarafından temsil edilen bir animasyon denetimi [CAnimateCtrl](../mfc
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Animasyon denetimi kullanma](../mfc/using-an-animation-control.md)  
+-   [Animasyon Denetimi Kullanma](../mfc/using-an-animation-control.md)  
   
--   [Animasyon denetimlerinin gönderdiği bildirimler](../mfc/notifications-sent-by-animation-controls.md)  
+-   [Animasyon Denetimlerinin Gönderdiği Bildirimler](../mfc/notifications-sent-by-animation-controls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

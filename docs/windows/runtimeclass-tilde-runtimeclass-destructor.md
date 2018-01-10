@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b597f2991ec86919cd881000cc84ddbdffabc7aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8e492099b2f82273bbe111d1d7e4dfea942bc551
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="runtimeclassruntimeclass-destructor"></a>RuntimeClass::~RuntimeClass Yok Edicisi
 RuntimeClass sınıfı, geçerli örneğini deinitializes.  
@@ -36,4 +39,4 @@ virtual ~RuntimeClass();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [RuntimeClass sınıfı](../windows/runtimeclass-class.md)
+ [RuntimeClass Sınıfı](../windows/runtimeclass-class.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad53fea97c98f496d1140725f4232052e2f53d3b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aef7e219190584ec91b08e9c44b4c921ec91d787
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencygraphics-namespace"></a>Concurrency::graphics Ad Alanı
 Grafik ad alanı, türler ve grafik programlamaya için tasarlanmış işlevler sağlar.  
@@ -35,7 +36,7 @@ namespace graphics;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CONCURRENCY::Graphics:: Direct3D Namespace](concurrency-graphics-direct3d-namespace.md)|İşlevleri için Direct3D birlikte çalışabilirlik sağlar.|  
+|[Concurrency::graphics::direct3d Ad Alanı](concurrency-graphics-direct3d-namespace.md)|İşlevleri için Direct3D birlikte çalışabilirlik sağlar.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -54,30 +55,30 @@ namespace graphics;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[texture sınıfı](texture-class.md)|Bir doku bir uzantı etki alanındaki bir accelerator_view üzerinde birleşik verilerdir. Değişkenleri, bir uzantı etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken (imzasız int, int, float, çift) C++ ilkel türüne karşılık gelen bir değer tutan veya skaler tür norm veya unorm (concurrency::graphics içinde tanımlanmıştır) ya da uygun kısa vektör türleri concurrency::graphics tanımlanmış.|  
-|[writeonly_texture_view sınıfı](writeonly-texture-view-class.md)|Bir writeonly_texture_view doku writeonly erişim sağlar.|  
-|[double_2 sınıfı](double-2-class.md)|Kısa bir vektör 2 değerini temsil eden `double` değerleri.|  
-|[double_3 sınıfı](double-3-class.md)|3 kısa bir vektör temsil eden `double` değerleri.|  
-|[double_4 sınıfı](double-4-class.md)|4 kısa bir vektör temsil eden `double` değerleri.|  
-|[float_2 sınıfı](float-2-class.md)|Kısa bir vektör 2 değerini temsil eden `float` değerleri.|  
-|[float_3 sınıfı](float-3-class.md)|3 kısa bir vektör temsil eden `float` değerleri.|  
-|[float_4 sınıfı](float-4-class.md)|4 kısa bir vektör temsil eden `float` değerleri.|  
-|[int_2 sınıfı](int-2-class.md)|Kısa bir vektör 2 değerini temsil eden `int` değerleri.|  
-|[int_3 sınıfı](int-3-class.md)|3 kısa bir vektör temsil eden `int` değerleri.|  
-|[int_4 sınıfı](int-4-class.md)|4 kısa bir vektör temsil eden `int` değerleri.|  
-|[norm_2 sınıfı](norm-2-class.md)|Kısa bir vektör 2 değerini temsil eden `norm` değerleri.|  
-|[norm_3 sınıfı](norm-3-class.md)|3 kısa bir vektör temsil eden `norm` değerleri.|  
-|[norm_4 sınıfı](norm-4-class.md)|4 kısa bir vektör temsil eden `norm` değerleri.|  
-|[uint_2 sınıfı](uint-2-class.md)|Kısa bir vektör 2 değerini temsil eden `uint` değerleri.|  
-|[uint_3 sınıfı](uint-3-class.md)|3 kısa bir vektör temsil eden `uint` değerleri.|  
-|[uint_4 sınıfı](uint-4-class.md)|4 kısa bir vektör temsil eden `uint` değerleri.|  
-|[unorm_2 sınıfı](unorm-2-class.md)|Kısa bir vektör 2 değerini temsil eden `unorm` değerleri.|  
-|[unorm_3 sınıfı](unorm-3-class.md)|3 kısa bir vektör temsil eden `unorm` değerleri.|  
-|[unorm_4 sınıfı](unorm-4-class.md)|4 kısa bir vektör temsil eden `unorm` değerleri.|  
-|[sampler sınıfı](sampler-class.md)|Doku örnekleme için kullanılan örneği yapılandırmasını temsil eder.|  
-|[short_vector yapısı](short-vector-structure.md)|Kısa bir vektör değerlerin temel bir uygulamasını sağlar.|  
-|[short_vector_traits yapısı](short-vector-traits-structure.md)|İçin kısa bir vektör türünü ve uzunluğu alınmasını sağlar.|  
-|[texture_view sınıfı](texture-view-class.md)|Okuma erişimi ve bir doku yazma erişimi sağlar.|  
+|[texture Sınıfı](texture-class.md)|Bir doku bir uzantı etki alanındaki bir accelerator_view üzerinde birleşik verilerdir. Değişkenleri, bir uzantı etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken (imzasız int, int, float, çift) C++ ilkel türüne karşılık gelen bir değer tutan veya skaler tür norm veya unorm (concurrency::graphics içinde tanımlanmıştır) ya da uygun kısa vektör türleri concurrency::graphics tanımlanmış.|  
+|[writeonly_texture_view Sınıfı](writeonly-texture-view-class.md)|Bir writeonly_texture_view doku writeonly erişim sağlar.|  
+|[double_2 Sınıfı](double-2-class.md)|Kısa bir vektör 2 değerini temsil eden `double` değerleri.|  
+|[double_3 Sınıfı](double-3-class.md)|3 kısa bir vektör temsil eden `double` değerleri.|  
+|[double_4 Sınıfı](double-4-class.md)|4 kısa bir vektör temsil eden `double` değerleri.|  
+|[float_2 Sınıfı](float-2-class.md)|Kısa bir vektör 2 değerini temsil eden `float` değerleri.|  
+|[float_3 Sınıfı](float-3-class.md)|3 kısa bir vektör temsil eden `float` değerleri.|  
+|[float_4 Sınıfı](float-4-class.md)|4 kısa bir vektör temsil eden `float` değerleri.|  
+|[int_2 Sınıfı](int-2-class.md)|Kısa bir vektör 2 değerini temsil eden `int` değerleri.|  
+|[int_3 Sınıfı](int-3-class.md)|3 kısa bir vektör temsil eden `int` değerleri.|  
+|[int_4 Sınıfı](int-4-class.md)|4 kısa bir vektör temsil eden `int` değerleri.|  
+|[norm_2 Sınıfı](norm-2-class.md)|Kısa bir vektör 2 değerini temsil eden `norm` değerleri.|  
+|[norm_3 Sınıfı](norm-3-class.md)|3 kısa bir vektör temsil eden `norm` değerleri.|  
+|[norm_4 Sınıfı](norm-4-class.md)|4 kısa bir vektör temsil eden `norm` değerleri.|  
+|[uint_2 Sınıfı](uint-2-class.md)|Kısa bir vektör 2 değerini temsil eden `uint` değerleri.|  
+|[uint_3 Sınıfı](uint-3-class.md)|3 kısa bir vektör temsil eden `uint` değerleri.|  
+|[uint_4 Sınıfı](uint-4-class.md)|4 kısa bir vektör temsil eden `uint` değerleri.|  
+|[unorm_2 Sınıfı](unorm-2-class.md)|Kısa bir vektör 2 değerini temsil eden `unorm` değerleri.|  
+|[unorm_3 Sınıfı](unorm-3-class.md)|3 kısa bir vektör temsil eden `unorm` değerleri.|  
+|[unorm_4 Sınıfı](unorm-4-class.md)|4 kısa bir vektör temsil eden `unorm` değerleri.|  
+|[sampler Sınıfı](sampler-class.md)|Doku örnekleme için kullanılan örneği yapılandırmasını temsil eder.|  
+|[short_vector Yapısı](short-vector-structure.md)|Kısa bir vektör değerlerin temel bir uygulamasını sağlar.|  
+|[short_vector_traits Yapısı](short-vector-traits-structure.md)|İçin kısa bir vektör türünü ve uzunluğu alınmasını sağlar.|  
+|[texture_view Sınıfı](texture-view-class.md)|Okuma erişimi ve bir doku yazma erişimi sağlar.|  
   
 ### <a name="functions"></a>İşlevler  
   
@@ -92,4 +93,4 @@ namespace graphics;
  **Namespace:** eşzamanlılık  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f81ffa2e6b8f1dc07e409b737f76cb8e6aca5258
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c06ae1c043551bbb4ed6469ab3f87d1ed86fd92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iteration-statements-c"></a>Yineleme Deyimleri (C++)
 Yineleme deyimleri bazı döngü sonlandırma ölçütleri tabi sıfır veya daha fazla kez yürütülecek deyimleri (veya bileşik deyimler) neden. Bu deyimler bileşik deyimler olduğunda ne zaman dışında sırada yürütülür ya da [sonu](../cpp/break-statement-cpp.md) deyimi veya [devam](../cpp/continue-statement-cpp.md) deyimi karşılaştı.  
@@ -32,11 +33,11 @@ Yineleme deyimleri bazı döngü sonlandırma ölçütleri tabi sıfır veya dah
 |Deyim|Konumundaki hesaplanan|Başlatma|Artırma|  
 |---------------|------------------|--------------------|---------------|  
 |`while`|Döngü üstündeki|Hayır|Hayır|  
-|**yapın**|Alt döngüsü|Hayır|Hayır|  
-|**için**|Döngü üstündeki|Evet|Evet|  
+|**do**|Alt döngüsü|Hayır|Hayır|  
+|**for**|Döngü üstündeki|Evet|Evet|  
 |**Aralık tabanlı için**|Döngü üstündeki|Evet|Evet|  
   
  Bir yineleme deyimi deyim bölümü bildirimi olamaz. Ancak, bir bildirimi içeren bileşik bir ifade olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ deyimlerine genel bakış](../cpp/overview-of-cpp-statements.md)
+ [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

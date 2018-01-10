@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 854fda414f7f50860f6458a1ee42911f34d8d53e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7657a342263e12e281702c827d31f9d4860ae4e9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iaccessorimplgetbindings"></a>IAccessorImpl::GetBindings
 Temel sütun bağlamaları erişimci tüketicideki döndürür.  
@@ -48,4 +51,4 @@ Temel sütun bağlamaları erişimci tüketicideki döndürür.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IAccessorImpl sınıfı](../../data/oledb/iaccessorimpl-class.md)
+ [IAccessorImpl Sınıfı](../../data/oledb/iaccessorimpl-class.md)

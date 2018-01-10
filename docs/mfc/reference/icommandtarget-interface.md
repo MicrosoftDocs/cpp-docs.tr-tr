@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a3a36bd4f3774c2dc6eb6cdf411d52049fbc4c61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: be8adb388bed39f91637dd1ef37ee1ee895f291d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandtarget-interface"></a>ICommandTarget arabirimi
 Bir kullanıcı denetimi komutlar bir komut kaynak nesneden almak için bir arabirim sağlar.  
@@ -69,7 +70,7 @@ void Initialize(ICommandSource^ cmdSource);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: komut ekleme yönlendirme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)   
- [ICommandSource arabirimi](../../mfc/reference/icommandsource-interface.md)
+ [ICommandSource Arabirimi](../../mfc/reference/icommandsource-interface.md)
 
 
 

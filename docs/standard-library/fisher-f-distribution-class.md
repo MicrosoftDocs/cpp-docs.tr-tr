@@ -37,11 +37,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 200e50e2a10470e7078d31b35849c82ee9c11fd6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: da8fba1e5be97c692b08b8e89cf36b4ae6f5ddab
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 Fisher F dağıtım oluşturur.  
@@ -100,7 +101,7 @@ Kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri i
   
  Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
   
- F-dağıtım hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [F-dağıtım](http://go.microsoft.com/fwlink/LinkId=400899).  
+ F-dağıtım hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [F-dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400899).  
   
 ## <a name="example"></a>Örnek  
   

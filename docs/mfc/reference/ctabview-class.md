@@ -33,11 +33,12 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5ebbf63d409e54ee3d71c4da43aea8bff12fd51c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: adbb5d92387634356f1185cee73d5969944ac27a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctabview-class"></a>CTabView sınıfı
 `CTabView` Sınıfı basitleştirir sekmesi denetim sınıfı kullanımını ( [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)) MFC'nin belge/görünüm mimarisi kullanan uygulamalarda.  
@@ -218,4 +219,4 @@ BOOL SetActiveView(int iTabNum);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)   
- [CView sınıfı](../../mfc/reference/cview-class.md)
+ [CView Sınıfı](../../mfc/reference/cview-class.md)

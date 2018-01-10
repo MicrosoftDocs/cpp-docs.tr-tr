@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d5c60fd4ff47745e5209023783b74f52a319065d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c648e32865f73bda5f896f26c495184f964c41d6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="serialization-in-mfc"></a>MFC'de Seri Hale Getirme
 Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnelere izin vermek için MFC) sağlanan seri hale getirme mekanizmasını, programı çalıştıran açıklanmaktadır.  
@@ -45,9 +46,9 @@ Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnele
   
  Aşağıdaki makaleler seri hale getirme için gereken iki ana görevleri kapsar:  
   
--   [Seri hale getirme: seri hale getirilebilir bir sınıf yapma](../mfc/serialization-making-a-serializable-class.md)  
+-   [Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma](../mfc/serialization-making-a-serializable-class.md)  
   
--   [Seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)  
+-   [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)  
   
  Makaleyi [seri hale getirme: seri hale getirme vs. Veritabanı giriş/çıkış](../mfc/serialization-serialization-vs-database-input-output.md) serileştirme uygun bir giriş/çıkış teknik veritabanı uygulamalarında olduğunda açıklar.  
   
@@ -57,4 +58,4 @@ Bu makalede, Microsoft Foundation Class Kitaplığı (arasında kalıcı nesnele
  [CArchive sınıfı](../mfc/reference/carchive-class.md)   
  [CObject sınıfı](../mfc/reference/cobject-class.md)   
  [CDocument sınıfı](../mfc/reference/cdocument-class.md)   
- [CFile sınıfı](../mfc/reference/cfile-class.md)
+ [CFile Sınıfı](../mfc/reference/cfile-class.md)

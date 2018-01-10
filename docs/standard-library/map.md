@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7079794aed6140dd4d21a7bf5bc7576363811b5b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6256f5a900872f967c8ea4c069098bd8eeeb733d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltmapgt"></a>&lt;eşleme&gt;
 Kapsayıcı şablon sınıfları harita ve multimap ve bunların destekleyen şablonları tanımlar.  
@@ -54,9 +55,9 @@ Kapsayıcı şablon sınıfları harita ve multimap ve bunların destekleyen şa
   
 |||  
 |-|-|  
-|[value_compare sınıfı](../standard-library/value-compare-class-map.md)|Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.|  
-|[map sınıfı](../standard-library/map-class.md)|Depolama ve alma verilerini öğelerin her biri benzersiz bir anahtar ile veriler otomatik olarak sıralanır sahip bir koleksiyon için kullanılır.|  
-|[multimap sınıfı](../standard-library/multimap-class.md)|Depolama ve alma verilerini öğelerin her biri hangi verileri otomatik olarak sıralanır ve anahtarları, benzersiz değerlere sahip olması gerekmez. bir anahtarı olan bir koleksiyon için kullanılır.|  
+|[value_compare Sınıfı](../standard-library/value-compare-class-map.md)|Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.|  
+|[map Sınıfı](../standard-library/map-class.md)|Depolama ve alma verilerini öğelerin her biri benzersiz bir anahtar ile veriler otomatik olarak sıralanır sahip bir koleksiyon için kullanılır.|  
+|[multimap Sınıfı](../standard-library/multimap-class.md)|Depolama ve alma verilerini öğelerin her biri hangi verileri otomatik olarak sıralanır ve anahtarları, benzersiz değerlere sahip olması gerekmez. bir anahtarı olan bir koleksiyon için kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

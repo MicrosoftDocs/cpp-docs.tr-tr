@@ -27,11 +27,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d6c1c70749a805d94c79fd1b9d2521575cc99022
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d300abc29a88c8beaa5e5992b4bca073732b0233
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basicifstream-class"></a>basic_ifstream Sınıfı
 Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, türündeki öğeler ile `Elem`, karakter nitelikler sınıfı tarafından belirlenir `Tr`.  
@@ -99,9 +100,9 @@ This is the contents of basic_ifstream_class.txt.
   
 |||  
 |-|-|  
-|[Kapat](#close)|Bir dosyayı kapatır.|  
+|[close](#close)|Bir dosyayı kapatır.|  
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|  
-|[açın](#open)|Bir dosyayı açar.|  
+|[open](#open)|Bir dosyayı açar.|  
 |[rdbuf](#rdbuf)|Saklı Akış Arabellek adresini döndürür.|  
 |[değiştirme](#swap)|Bu içeriği alış verişleri `basic_ifstream` sağlanan içeriğinin `basic_ifstream`.|  
   
@@ -291,6 +292,6 @@ void swap(basic_ifstream& right);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 

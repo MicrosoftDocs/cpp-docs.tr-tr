@@ -28,11 +28,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89c8c1d67a8273b542c088783e4b5121038c9fc2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1691d1f90201b25cc53cd07e80626e98c447e66b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-using-database-classes-without-documents-and-views"></a>MFC: Belgeler ve Görünümler Olmadan Veritabanı Sınıflarını Kullanma
 Bazen, veritabanı uygulamalarınızda framework'ün belge/görünüm mimarisi istemeyebilirsiniz. Bu konuda açıklanmaktadır:  
@@ -120,4 +123,4 @@ CYourNameApp theApp;
 -   Bir belge veya Görünüm bağlamı içinde olduğu gibi kayıt kümesi nesnelerini kullanma. Kayıt kümeleri üye işlevleri uygulamanızın veya çerçeve pencere nesneleri oluşturun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC veritabanı sınıfları](../data/mfc-database-classes-odbc-and-dao.md)
+ [MFC Veritabanı Sınıfları](../data/mfc-database-classes-odbc-and-dao.md)

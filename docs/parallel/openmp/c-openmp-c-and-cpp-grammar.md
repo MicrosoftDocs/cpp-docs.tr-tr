@@ -12,14 +12,15 @@ ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d937413bea49128eec940f3c104e18efd8665b47
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 632ff995ba2cf2e98414cddd2eaab8c6d5eb9247
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-openmp-c-and-c-grammar"></a>C. OpenMP C ve C++ dilbilgisi
   
-[C.1 gösterim](../../parallel/openmp/c-1-notation.md)  
-[C.2 kurallar](../../parallel/openmp/c-2-rules.md)
+[C.1 Gösterim](../../parallel/openmp/c-1-notation.md)  
+[C.2 Kurallar](../../parallel/openmp/c-2-rules.md)
 

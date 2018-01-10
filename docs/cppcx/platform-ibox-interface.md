@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: e3cbeed5893e6a757ca5ac3c17e596d3a1526e46
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a86eca75bb5470585ba68fe3b7fcdb55c861434
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformibox-interface"></a>Platform::IBox arabirimi
 [Platform::IBox](../cppcx/platform-ibox-interface.md) arabirimi için C++ adıdır `Windows::Foundation::IReference` arabirimi.  
@@ -44,7 +45,7 @@ interface class IBox
 ### <a name="members"></a>Üyeler  
  `Platform::IBox` Arabirimi devraldığı [Platform::IValueType](../cppcx/platform-ivaluetype-interface.md) arabirimi. `IBox`Bu üyeler vardır:  
   
- **Veri Erişimi**  
+ **Özellikler**  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  

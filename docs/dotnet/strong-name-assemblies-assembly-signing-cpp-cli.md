@@ -20,11 +20,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32a9502bbb1143e23ee542c1d9fff593925c527a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2099389131145838a70b579053c65698dbc3a857
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strong-name-assemblies-assembly-signing-ccli"></a>Tanımlayıcı Ad Derlemeleri (Derleme İmzalama) (C++/CLI)
 Bu konuda, genellikle derlemenizi güçlü bir ad verip olarak adlandırılan derlemenizi ne kaydolabilirsiniz anlatılmaktadır.  
@@ -55,4 +58,4 @@ Bu konuda, genellikle derlemenizi güçlü bir ad verip olarak adlandırılan de
  Tanımlayıcı derlemeler hakkında daha fazla bilgi için bkz: [bkz](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

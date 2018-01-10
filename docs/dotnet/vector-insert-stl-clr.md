@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b72907b7579b6739a2c1873877eeeb3ae536d8fa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b330a9e0b8a11f41ceab4f604b73b93e8f1d735a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorinsert-stlclr"></a>vector::insert (STL/CLR)
 Öğeleri belirtilen bir konumda ekler.  
@@ -135,4 +138,4 @@ insert(begin()+1, L'x') = x
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::Assign (STL/CLR)](../dotnet/vector-assign-stl-clr.md)
+ [vector::assign (STL/CLR)](../dotnet/vector-assign-stl-clr.md)

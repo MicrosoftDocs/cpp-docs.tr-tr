@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5421447cfbe1e1bd8f5d25d80c492d10b1469e0f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 852f4522ecf32643611f6bbd4d86028e883bb6eb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-language-reference"></a>C++ Dil Başvurusu
 Bu başvuru, C++ programlama dilini Microsoft Visual C++ içinde uygulandığı şekliyle açıklar. Kuruluş dayanır *C++ başvuru elle açıklama* Mine Ellis ve çalışan Bjarne Stroustrup tarafından ve ANSI/ISO C++ uluslararası standart (ISO/IEC FDIS 14882). Microsoft'a özgü C++ dili uygulama özellikleri dahildir.  
@@ -37,13 +38,13 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
   
 ## <a name="in-this-section"></a>Bu Bölümde  
 
- [Sözcük kuralları](../cpp/lexical-conventions.md)  
+ [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)  
  Bir C++ programının sözcük temelli öğeleri: belirteçler, açıklamalar, işleçler, anahtar sözcükler, noktalama işaretleri, sabit değerler. Ayrıca dosya çevirisi, işleç önceliği/ilişkilendirilebilirliği.  
   
  [Temel kavramlar](../cpp/basic-concepts-cpp.md)  
  Kapsam, bağlantı, program başlatma ve sonlandırma, depolama sınıfları ve türleri.  
   
- [Standart dönüşümler](../cpp/standard-conversions.md)  
+ [Standart Dönüştürmeler](../cpp/standard-conversions.md)  
  Yerleşik veya "temel" türler arasında tür dönüştürmeleri. Ayrıca, aritmetik dönüştürmeler ve işaretçi, başvuru ve işaretçiden üyeye türleri arasında dönüştürmeler.  
   
  [İşleçler, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
@@ -52,10 +53,10 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [İfadeler](../cpp/expressions-cpp.md)  
  İfadelerin türleri ve ifadelerin semantiği, işleçlerle ilgili başvuru konuları, atama ve atama işleçleri, çalışma zamanı türü bilgileri.  
   
- [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md)  
+ [Lambda İfadeleri](../cpp/lambda-expressions-in-cpp.md)  
  Bir işlev nesnesi sınıfını örtük olarak tanımlayan ve bu sınıf türünün işlev nesnesini oluşturan bir programlama tekniği.  
   
- [Deyimleri](../cpp/statements-cpp.md)  
+ [Deyimler](../cpp/statements-cpp.md)  
  İfade, null, bileşik, seçim, yineleme, atlama ve bildirim deyimleri.  
   
  [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)  
@@ -76,40 +77,40 @@ Modern C++ programlama uygulamalarını genel bakış için bkz: [Hoş Geldiniz 
  [Aşırı yükleme](operator-overloading.md)  
  Aşırı yüklenmiş işleçler, İşleç aşırı yüklemesi kuralları.  
   
- [Özel durum işleme](../cpp/exception-handling-in-visual-cpp.md)  
+ [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)  
  C++ özel durum işleme, yapılandırılmış özel durum işleme (SEH), özel durum işleme deyimleri yazılırken kullanılan anahtar sözcükler.  
   
  [Onaylama ve kullanıcının sağladığı iletiler](../cpp/assertion-and-user-supplied-messages-cpp.md)  
  `#error`yönerge `static_assert` anahtar sözcüğü, `assert` makrosu.  
   
- [Şablonları](../cpp/templates-cpp.md)  
+ [Şablonlar](../cpp/templates-cpp.md)  
  Şablon belirtimleri, işlev şablonları, sınıf şablonları, tür adı anahtar sözcüğü, şablonlara karşı makrolar, şablonlar ve akıllı işaretçiler.  
   
- [Olay işleme](../cpp/event-handling.md)  
+ [Olay İşleme](../cpp/event-handling.md)  
  Olayları ve olay işleyicileri bildirme.  
   
- [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)  
+ [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)  
  Microsoft C++'ya özgü değiştiriciler. Çağırma kuralları, naked işlevleri, genişletilmiş depolama sınıfı öznitelikler (__declspec) adresleme bellek \__w64.  
   
- [Satır içi derleyicisi](../assembler/inline/inline-assembler.md)  
+ [Satır İçi Assembler](../assembler/inline/inline-assembler.md)  
  __asm bloklarında derleme dili ve C++ kullanılıyor.  
   
- [Derleyici COM desteği](../cpp/compiler-com-support.md)  
+ [Derleyici COM Desteği](../cpp/compiler-com-support.md)  
  COM türlerini destekleyen Microsoft'a özgü sınıflar ve genel işlevler için bir başvuru.  
   
- [Microsoft uzantıları](../cpp/microsoft-extensions.md)  
+ [Microsoft Uzantıları](../cpp/microsoft-extensions.md)  
  C++ için Microsoft uzantıları.  
   
- [Standart olmayan davranış](../cpp/nonstandard-behavior.md)  
+ [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)  
  Visual C++ derleyicisi standart olmayan davranış hakkında bilgi.  
 
  [Yeniden Hoş Geldiniz C++](welcome-back-to-cpp-modern-cpp.md) modern C++ programlama genel bir bakış yöntemler güvenli, doğru ve verimli programları yazmak için.
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)  
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)  
  Ortak dil çalışma zamanını hedeflemek için Visual C++ kullanımına ilişkin başvuru malzemeleridir.  
   
- [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md)  
+ [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)  
  Derleyici seçenekleri, bağlayıcı seçenekleri ve diğer yapı araçları.  
   
  [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)  

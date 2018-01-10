@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c61238a809da49686975acbfb8016996cf5d5c1a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a941f052527b3617772bcb18b2092fdc35ea3a22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creatormap-structure"></a>CreatorMap Yapısı
 Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -49,10 +52,10 @@ struct CreatorMap;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Creatormap::activationıd veri üyesi](../windows/creatormap-activationid-data-member.md)|Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tarafından tanımlanan bir nesne kimliği temsil eder.|  
-|[CreatorMap::factoryCache veri üyesi](../windows/creatormap-factorycache-data-member.md)|Fabrika önbellek işaretçisine CreatorMap için depolar.|  
-|[CreatorMap::factoryCreator veri üyesi](../windows/creatormap-factorycreator-data-member.md)|Belirtilen CreatorMap için bir üreteci oluşturur.|  
-|[CreatorMap::serverName veri üyesi](../windows/creatormap-servername-data-member.md)|CreatorMap için sunucu adını depolar.|  
+|[CreatorMap::activationId Veri Üyesi](../windows/creatormap-activationid-data-member.md)|Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tarafından tanımlanan bir nesne kimliği temsil eder.|  
+|[CreatorMap::factoryCache Veri Üyesi](../windows/creatormap-factorycache-data-member.md)|Fabrika önbellek işaretçisine CreatorMap için depolar.|  
+|[CreatorMap::factoryCreator Veri Üyesi](../windows/creatormap-factorycreator-data-member.md)|Belirtilen CreatorMap için bir üreteci oluşturur.|  
+|[CreatorMap::serverName Veri Üyesi](../windows/creatormap-servername-data-member.md)|CreatorMap için sunucu adını depolar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CreatorMap`  
@@ -63,4 +66,4 @@ struct CreatorMap;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

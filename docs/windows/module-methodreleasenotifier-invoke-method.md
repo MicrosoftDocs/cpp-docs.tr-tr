@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 745779ff7e10917371f9beb18eebacd45c56d9cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 141c80bf90be7e9b93d180d429367f18e0edaf33
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulemethodreleasenotifierinvoke-method"></a>Module::MethodReleaseNotifier::Invoke Yöntemi
 Geçerli Module::MethodReleaseNotifier nesneyle ilişkili olay işleyicisini çağırır.  
@@ -36,4 +39,4 @@ void Invoke();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Module::MethodReleaseNotifier sınıfı](../windows/module-methodreleasenotifier-class.md)
+ [Module::MethodReleaseNotifier Sınıfı](../windows/module-methodreleasenotifier-class.md)

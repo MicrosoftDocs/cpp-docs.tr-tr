@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9cde959d2a2b17bf346a23aca7a7724523b69b6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a2f22f24206a125f9575529a203e5433f1b825a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken işlevleri listeler (C++)
 İşlev bildirimleri son üyesini üç nokta (...) can olduğu değişken sayıda bağımsız değişken alın. Bu durumlarda, C++ tür açıkça bildirilen bağımsız değişkenleri yalnızca denetlemesini sağlar. Bir işlev sayısını ve türlerini bağımsız değişkenlerinin bile genel değişebilir şekilde yapmanız gerektiğinde değişken bağımsız değişken listeleri kullanabilirsiniz. Ailesi işlevlerini değişken bağımsız değişken listeleri kullanan işlevler örneğidir. `printf` *bağımsız değişken bildirimi listesi*  

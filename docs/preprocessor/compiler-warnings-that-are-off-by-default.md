@@ -11,11 +11,12 @@ ms.assetid: 69809cfb-a38a-4035-b154-283a61938df8
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1dec9728679629f25ddbea93956fd25d9b29ef59
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 48afd89f4b795a4f582d8b9506c527a602a1d2b4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan Olarak Kapalı Olan Derleyici Uyarıları
 
@@ -89,7 +90,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |C4647 (Düzey 3)|davranış değişikliği: __is_pod (*türü*) önceki sürümlerde farklı bir değere sahip|
 |C4654 (düzey 4)|Kod önce yerleştirilmiş dahil önceden derlenmiş başlık satırı yok sayılacak. Kodu önceden derlenmiş üstbilgi ekleyin.|
 |[C4668](../error-messages/compiler-warnings/compiler-warning-level-4-c4668.md) (düzey 4)|'*simgesi*'için '0' ile değiştirerek bir önişlemci makrosu olarak tanımlanmadığından'*yönergeleri*'|
-|C4682 (düzey 4)|'*sembol*': [in] varsayarak belirtilen yönlü parametre özniteliği yok|
+|[C4682](../error-messages/compiler-warnings/compiler-warning-level-4-c4682.md) (düzey 4)|'*sembol*': [in] varsayarak belirtilen yönlü parametre özniteliği yok|
 |[C4686](../error-messages/compiler-warnings/compiler-warning-level-3-c4686.md) (Düzey 3)|'*kullanıcı tanımlı tür*': olası değişiklik davranış UDT değişikliği iade çağırma|
 |[C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (düzey 1)|'*işlevi*': İmza özel olmayan üye olarak içeren derleme özel yerel tür 'NATIVE_TYPE'|
 |[C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (düzey 4)|'*işlevi*': değil içermesinden işlevi|
@@ -153,4 +154,4 @@ Bu uyarılar Visual Studio 2012 önce derleyici sürümlerinde varsayılan olara
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Uyarı](../preprocessor/warning.md)
+[warning](../preprocessor/warning.md)

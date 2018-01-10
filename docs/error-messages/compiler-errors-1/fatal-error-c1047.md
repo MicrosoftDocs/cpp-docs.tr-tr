@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b848f874f382e3d4f944a7eb372db9dcc5011f59
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6ddc117d1e83c635bfbc644606c6c8c6032ff4f8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fatal-error-c1047"></a>Önemli hata C1047
 Nesne veya kitaplık dosyası 'dosyası' diğer nesneleri daha eski bir derleyicisi ile oluşturulmuş; eski nesneler ve kitaplıkları yeniden derleme  

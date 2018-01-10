@@ -32,11 +32,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 65d5fc64db1e43d9b0914a9d8671e466f4ee87e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bdc00509d8660d8111ff1b966b7a881a153cb6c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
 Bir MBCS etkinleştirilmiş Windows 2000 veya Windows XP işletim sistemi sürümünde çalıştırdığınızda (tümleşik kaynak kod düzenleyicisinde, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS etkinleştirilmiş, bellek penceresi dışında sistemidir.  
@@ -67,4 +68,4 @@ Bir MBCS etkinleştirilmiş Windows 2000 veya Windows XP işletim sistemi sürü
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çok baytlı karakter kümeleri (MBCS'ler) desteği](../text/support-for-multibyte-character-sets-mbcss.md)   
- [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)
+ [MBCS Programlama İpuçları](../text/mbcs-programming-tips.md)

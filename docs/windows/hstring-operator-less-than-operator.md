@@ -14,11 +14,14 @@ caps.latest.revision: "2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84725ca0ceeb4778bec2add60c7e96eff3ab3bfb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 4cbb21e34255d5350702d949792656bdf0a849a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hstringoperatorlt-operator"></a>HString::Operator&lt; işleci
 İkinci parametre ilk parametre olup değerinden gösterir.  
@@ -48,4 +51,4 @@ inline bool operator<(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HString sınıfı](../windows/hstring-class.md)
+ [HString Sınıfı](../windows/hstring-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f0309040b64614280d2314daa83c5919514b3fb6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f5f6f656ff1908dc215efb1fc322b348618a236d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulegenericreleasenotifiergenericreleasenotifier-constructor"></a>Module::GenericReleaseNotifier::GenericReleaseNotifier Oluşturucusu
 Module::GenericReleaseNotifier sınıfının yeni bir örneğini başlatır.  
@@ -47,4 +50,4 @@ Module::GenericReleaseNotifier sınıfının yeni bir örneğini başlatır.
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Module::GenericReleaseNotifier sınıfı](../windows/module-genericreleasenotifier-class.md)
+ [Module::GenericReleaseNotifier Sınıfı](../windows/module-genericreleasenotifier-class.md)

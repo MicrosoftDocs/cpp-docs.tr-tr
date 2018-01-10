@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 942f34f8ef34a14a2e59e5a4a7e7ca9c3356f62b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8017d47f632374d8979d9a0850e1d1bfd8b9df07
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-terminating-threads"></a>Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma
 İki normal durum iş parçacığının sonlandırılmasına neden: denetleyen işlev çıkar veya iş parçacığının tamamlanıncaya kadar çalışabilmesi için izin verilmiyor. Sözcük işlemci arka plan yazdırması için bir iş parçacığı kullandıysanız, denetleme normalde başarıyla tamamlanmış yazdırma sonlandırma işlevi. Ancak, kullanıcı yazdırmayı iptal etmek istiyorsa, erken sona erdirilecek arka plan yazdırma iş parçacığı vardır. Bu konu, her durumun nasıl uygulanacağını ve sonlandırıldıktan sonra bir iş parçacığı çıkış kodunu alma açıklar.  
