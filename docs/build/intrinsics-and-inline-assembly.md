@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c60932b719b25365c7d8f65a4649ef782a4f9888
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 80eb16eb7fde49c499227bb3d60000e2ac6e5143
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="intrinsics-and-inline-assembly"></a>Yapı İçi Değerler ve Satır İçi Derleme
 Kısıtlamalarını birini [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] derleyici hiçbir satır içi derleyici desteğine sahip etmektir. İşlevler, bunun anlamı C veya C++ ya da alt yordamlar veya iç işlevler derleyici tarafından desteklenen olarak yazılması gerekir yazılamaz. Diğerleri değildir bazı önemli performans işlevlerdir. Başarım duyarlı işlevler iç işlev olarak uygulanmalıdır.  
@@ -25,4 +26,4 @@ Kısıtlamalarını birini [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx
  Derleyici tarafından desteklenen iç bilgileri açıklanan [derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+ [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

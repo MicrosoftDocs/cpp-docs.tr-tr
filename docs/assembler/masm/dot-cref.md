@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fda1dc80f5f77e848ba55cbca6fa0e7a07abd146
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7f59b6f652125ae9706da0c533223f415cf02277
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cref"></a>.CREF
 Sembol tablosunu ve tarayıcı dosyası simgesi kısmının simgeleri listesini sağlar.  
@@ -33,4 +34,4 @@ Sembol tablosunu ve tarayıcı dosyası simgesi kısmının simgeleri listesini 
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

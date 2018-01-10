@@ -25,11 +25,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f42c738983cb0d2017614279a35ab79ae677fb1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 45e94997dbeb2c6413ffcdc1272a3a46a7e220ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-extension-dlls"></a>MFC uzantı DLL'leri
 MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sınıflarından türetilmiş yeniden kullanılabilir sınıfları uygulayan bir DLL'dir.  
@@ -134,7 +135,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
 -   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

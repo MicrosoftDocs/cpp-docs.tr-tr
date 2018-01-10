@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ffc5335bb28e619f166a524083937d17a59bb97
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92750e2e309fd0ceaf06e81cc9483c0785795019
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="signed-bitwise-operations"></a>İmzalı Bit Düzeyinde İşlemler
 **ANSI 3.3** imzalı tamsayılar Bitsel işlemlerinin sonuçları  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/24/2017
  Bit düzeyinde AND'in sonucu 96'dır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tamsayılara](../c-language/integers.md)
+ [Tam Sayılar](../c-language/integers.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5fda176229d8f6bea5a586c6f6f538a40d7ed8a7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0042dd5dc6049447868cf5ca5ea1112b3695f3a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-database-ole-and-sockets-mfc-extension-dlls-in-regular-mfc-dlls"></a>Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma
 MFC uzantı DLL içine bağlı değilse, MFC uzantı DLL normal bir MFC DLL dosyasından kullanırken **CDynLinkLibrary** nesne zinciri Normal MFC DLL bir veya daha fazla ilgili sorunların bir dizi çalışabilir. MFC veritabanı, OLE ve yuva hata ayıklama sürümleri desteklemediğinden DLL'leri MFC uzantı DLL'leri uygulanan, açıkça kendi MFC uzantı DLL'leri hiçbirini kullanmadığınız olsa bile bu MFC kullanıyorsanız benzer sorunlar özelliklerini görebilirsiniz. Bazı Belirtiler şunlardır:  
@@ -144,15 +145,15 @@ BOOL CYourRegularDLL::InitInstance()
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [MFC uzantı DLL'leri](../build/extension-dlls.md)  
+-   [MFC uzantısı DLL’leri](../build/extension-dlls.md)  
   
--   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
+-   [Statik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   
--   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
 -   [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
 -   [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC uzantı DLL'leri](../build/extension-dlls.md)
+ [MFC uzantısı DLL’leri](../build/extension-dlls.md)

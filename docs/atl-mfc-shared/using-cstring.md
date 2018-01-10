@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92992278f0f5395c843ef6623a02e6294786ea24
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3844e10dc12207513e074e76e822e4999fadec7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cstring"></a>CString kullanma
 Bu bölümdeki konular, ile programlamayı açıklamaktadır `CString`. Hakkında başvuru belgeleri için `CString` sınıfı, belgelerine bakın [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  
@@ -52,35 +53,35 @@ int main() {
 ```  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Temel CString işlemleri](../atl-mfc-shared/basic-cstring-operations.md)  
+ [Temel CString İşlemleri](../atl-mfc-shared/basic-cstring-operations.md)  
  Temel açıklar `CString` işlemleri, tek tek karakter erişme C değişmez değer dizeleri nesneleri oluşturma dahil olmak üzere bir `CString`, iki nesne birleştirme ve karşılaştırma `CString` nesneleri.  
   
- [Dize veri yönetimi](../atl-mfc-shared/string-data-management.md)  
+ [Dize Veri Yönetimi](../atl-mfc-shared/string-data-management.md)  
  Unicode ve MBCS ile kullanarak ele `CString`.  
   
- [CString semantiği](../atl-mfc-shared/cstring-semantics.md)  
+ [CString Semantiği](../atl-mfc-shared/cstring-semantics.md)  
  Açıklar nasıl `CString` nesnesi kullanılır.  
   
- [C türü dizelere ilgili CString işlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)  
+ [C Stili Dizelerle İlgili CString İşlemleri](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)  
  İçeriğini düzenleme açıklayan bir `CString` nesne C türü null sonlandırılmış bir dize gibi.  
   
- [Ayırma ve için BSTR belleği serbest bırakma](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)  
+ [BSTR için Bellek Ayırma ve Serbest Bırakma](../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)  
  İçin bellek kullanımını açıklar bir `BSTR` ve COM nesneleri.  
   
- [CString özel durum temizleme](../atl-mfc-shared/cstring-exception-cleanup.md)  
+ [CString Özel Durum Temizleme](../atl-mfc-shared/cstring-exception-cleanup.md)  
  Bu açık temizleme MFC 3.0 açıklar ve daha sonra artık gerekli değildir.  
   
- [CString bağımsız değişken geçirme](../atl-mfc-shared/cstring-argument-passing.md)  
+ [CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)  
  İşlevler CString nesneleri geçirmek nasıl ve nasıl döndürüleceğini açıklamaktadır `CString` işlevleri nesneleri.  
   
- [Unicode ve çok baytlı karakter kümesi (MBCS) desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)  
+ [Unicode ve Çok Baytlı Karakter Kümesi (MBCS) Desteği](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)  
  MFC Unicode için etkindir ve MBCS desteği nasıl ele alınmaktadır.  
   
 ## <a name="reference"></a>Başvuru  
  [CStringT](../atl-mfc-shared/reference/cstringt-class.md)  
  Hakkında başvuru bilgileri sağlar `CStringT` sınıfı.  
   
- [CSimpleStringT sınıfı](../atl-mfc-shared/reference/csimplestringt-class.md)  
+ [CSimpleStringT Sınıfı](../atl-mfc-shared/reference/csimplestringt-class.md)  
  Hakkında başvuru bilgileri sağlar `CSimpleStringT` sınıfı.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

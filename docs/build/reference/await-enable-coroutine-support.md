@@ -19,11 +19,12 @@ ms.assetid: 302c8e69-09b6-4c58-bcdd-0a6a8713a8df
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c49c55d8203797dfc8fbee881e5f521883daabb4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 47134532b16d1b5a907e4ed3170a0827316d7c65
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="await-enable-coroutine-support"></a>/ await (coroutine desteğini etkinleştir)  
   
@@ -54,4 +55,4 @@ Kullanım **/ await** eş için derleyici desteği etkinleştirmek için derleyi
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

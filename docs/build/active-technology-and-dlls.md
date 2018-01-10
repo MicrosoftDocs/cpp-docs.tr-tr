@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fb97e43f589718f79f64483593cfea870258d9f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44dcc58aed4025af2e3e2177e978633c13f0ef20
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
 Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanmasına izin verir. Bu tür sunucuya işlemdeki sunucu adı verilir. Çoğunlukla etkin teknoloji kapsayıcının ana ileti döngüye kanca için bir sunucu için bir yol sağlamadığından MFC tamamen işlemdeki sunucuları görsel düzenleme, tüm özellikler için desteklemez. MFC Hızlandırıcı tuşları ve boşta kalma süresi işleme işlemek için kapsayıcı uygulamanın ileti döngüsü erişim gerektirir.  
@@ -32,7 +33,7 @@ Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanmasına izin ve
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [Otomasyon sunucuları](../mfc/automation-servers.md)  
+-   [Otomasyon Sunucuları](../mfc/automation-servers.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51a922e75d0cc7232a7e45472e505440b7b1631c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f5b369d5a708e0ee56df635234c68ee88a31af48
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-browse-information-files-overview"></a>Gözatma Bilgileri Dosyası Derleme: Genel Bakış
 Simgenin tarama için gözatma bilgilerini oluşturmak için derleyici projenizde sonra BSCMAKE her kaynak dosya için .sbr dosyası oluşturur. EXE .sbr dosyaları bir .bsc dosyasına art arda ekler.  
@@ -54,4 +55,4 @@ Simgenin tarama için gözatma bilgilerini oluşturmak için derleyici projenizd
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   
- [BSCMAKE başvurusu](../../build/reference/bscmake-reference.md)
+ [BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)

@@ -51,11 +51,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6ef7f9b1cbeb3aeab28a4c02bce9099aaaf0078d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 05ced49a960aea0b32365b80fe76095893f63d5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="managing-a-library"></a>Kitaplığı Yönetme
 Varsayılan LIB için derleme veya bir kitaplık COFF nesnelerin değiştirmek için moddur. / Extract (bir nesne bir dosyaya kopyalamak için) veya (içeri aktarma kitaplığı oluşturmak için) / def belirtmediğinde LIB bu modda çalışır.  
@@ -109,4 +110,4 @@ LIB [options...] files...
 >  Bir üyeyi silmek hem aynı adımını dosyasında ayıklamak olamaz. Gerekir ilk/extract kullanarak üye nesnesi ayıklayın ve ardından LIB/Remove kullanarak yeniden çalıştırın. Bu davranış, diğer Microsoft ürünleri sağlanan 16 bit LIB (için OMF kitaplıkları) farklıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB başvurusu](../../build/reference/lib-reference.md)
+ [LIB Başvurusu](../../build/reference/lib-reference.md)

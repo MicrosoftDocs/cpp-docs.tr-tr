@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63085c4b0848bdf040fa0a0e2cd1af51a1777d61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 690ff46bf8942bb124f374d02a229ace731476ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="default-signals"></a>Varsayılan Sinyaller
 **ANSI 4.7.1.1** durumunda denk **sinyal (***SIG***, sıg_dfl)** sinyal engelleyen bir sinyal işleyici çağrıdan önce yürütülmedi, gerçekleştirilir  
@@ -28,4 +29,4 @@ ms.lasthandoff: 10/24/2017
  Bir program çalışmaya başladığında, sinyaller varsayılan durumlarına ayarlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

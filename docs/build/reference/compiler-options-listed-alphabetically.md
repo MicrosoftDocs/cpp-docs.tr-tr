@@ -14,11 +14,12 @@ caps.latest.revision: "66"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ab900cf342754aed7d7d9ba7f9a499c537ad8a22
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ee6062b04c1f406fe3286f6035eba1cda65ef1fa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-options-listed-alphabetically"></a>Alfabetik Listelenmiş Derleyici Seçenekleri
 Derleyici Seçenekleri kapsamlı alfabetik bir listesi verilmiştir. Kategorik bir listesi için bkz: [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
@@ -39,7 +40,7 @@ Derleyici Seçenekleri kapsamlı alfabetik bir listesi verilmiştir. Kategorik b
 |[/constexpr](constexpr-control-constexpr-evaluation.md)|Derleme zamanında constexpr değerlendirme denetler.|  
 |[/D](../../build/reference/d-preprocessor-definitions.md)|Sabitler ve makroları tanımlar.|  
 |[/Diagnostics](diagnostics-compiler-diagnostic-options.md)|Tanılama iletileri biçimini denetler.|  
-|[/ doc](../../build/reference/doc-process-documentation-comments-c-cpp.md)|Bir XML dosyasına işlem belgeleri açıklamaları.|  
+|[/doc](../../build/reference/doc-process-documentation-comments-c-cpp.md)|Bir XML dosyasına işlem belgeleri açıklamaları.|  
 |[/E](../../build/reference/e-preprocess-to-stdout.md)|Önişlemci çıktısı için standart çıktı kopyalar.|  
 |[/EH](../../build/reference/eh-exception-handling-model.md)|Özel durum işleme modeli belirtir.|  
 |[/EP](../../build/reference/ep-preprocess-to-stdout-without-hash-line-directives.md)|Önişlemci çıktısı için standart çıktı kopyalar.|  
@@ -91,14 +92,14 @@ Derleyici Seçenekleri kapsamlı alfabetik bir listesi verilmiştir. Kategorik b
 |[/ Kernel](../../build/reference/kernel-create-kernel-mode-binary.md)|Derleyicide ve bağlayıcıda Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.|  
 |[/LD](../../build/reference/md-mt-ld-use-run-time-library.md)|Bir dinamik bağlantı kitaplığı oluşturur.|  
 |[/ LDd](../../build/reference/md-mt-ld-use-run-time-library.md)|Hata ayıklama dinamik bağlantı kitaplığı oluşturur.|  
-|[/ Link](../../build/reference/link-pass-options-to-linker.md)|Belirtilen seçenek bağlantı geçirir.|  
+|[/link](../../build/reference/link-pass-options-to-linker.md)|Belirtilen seçenek bağlantı geçirir.|  
 |[/LN](../../build/reference/ln-create-msil-module.md)|MSIL modülü oluşturur.|  
 |[/MD](../../build/reference/md-mt-ld-use-run-time-library.md)|MSVCRT.lib kullanarak birden çok iş parçacıklı DLL oluşturur.|  
 |[/ MDd](../../build/reference/md-mt-ld-use-run-time-library.md)|Bir hata ayıklama oluşturur MSVCRTD.lib kullanarak birden çok iş parçacıklı DLL.|  
 |[/MP](../../build/reference/mp-build-with-multiple-processes.md)|Birden çok işlemleri kullanarak birden çok kaynak dosyalarını derler.|  
 |[/ MT](../../build/reference/md-mt-ld-use-run-time-library.md)|LIBCMT.lib kullanarak birden çok iş parçacıklı yürütülebilir bir dosya oluşturur.|  
 |[/ MTd](../../build/reference/md-mt-ld-use-run-time-library.md)|LIBCMTD.lib kullanarak hata ayıklama birden çok iş parçacıklı yürütülebilir dosyası oluşturur.|  
-|[/ nologo](../../build/reference/nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlık görüntülenmesini engeller.|  
+|[/nologo](../../build/reference/nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlık görüntülenmesini engeller.|  
 |[/ O1](../../build/reference/o1-o2-minimize-size-maximize-speed.md)|Küçük kod oluşturur.|  
 |[/ O2](../../build/reference/o1-o2-minimize-size-maximize-speed.md)|Hızlı kod oluşturur.|  
 |[/OB](../../build/reference/ob-inline-function-expansion.md)|Satır içi genişletme denetler.|  
@@ -172,4 +173,4 @@ Derleyici Seçenekleri kapsamlı alfabetik bir listesi verilmiştir. Kategorik b
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

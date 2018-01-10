@@ -45,11 +45,12 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fda1737c32bbc63f4ffdd4e1226459a09595f635
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dbe0e831a644dfc09c6b4afb3c54f23b220850d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 Yalıtan `DATE` OLE Otomasyon kullanılan veri türü.  
@@ -96,7 +97,7 @@ class COleDateTime
 
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[COleDateTime::operator ==, COleDateTime::operator < vb..](#coledatetime_relational_operators)|İki karşılaştırmak `COleDateTime` değerleri.|  
+|[COleDateTime::operator ==, COleDateTime::operator < vb.](#coledatetime_relational_operators)|İki karşılaştırmak `COleDateTime` değerleri.|  
 |[COleDateTime::operator +, COleDateTime::operator-](#operator_add_-)|Ekleme ve çıkarma `COleDateTime` değerleri.|  
 |[COleDateTime::operator +=, COleDateTime::operator-=](#operator_add_eq_-_eq)|Ekleme ve bir `COleDateTime` bu değerden `COleDateTime` nesnesi.|  
 |[COleDateTime::operator =](#operator_eq)|Kopya bir `COleDateTime` değeri.|  
@@ -439,7 +440,7 @@ int GetDayOfWeek() const throw();
  Bu değeri tarafından temsil edilen haftanın gününü `COleDateTime` nesne veya `COleDateTime::error` haftanın günü alınamadığından durumunda.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli dönüş değerleri 1 ile 7 arasındaki bir aralıkta 1 burada = Pazar, 2 Pazartesi vb..  
+ Geçerli dönüş değerleri 1 ile 7 arasındaki bir aralıkta 1 burada = Pazar, 2 Pazartesi vb.  
   
  Bu değeri sorgu diğer üye işlevleri hakkında bilgi için `COleDateTime` nesne, aşağıdaki üye işlevleri bakın:  
   
@@ -804,7 +805,7 @@ COleDateTimeSpan operator-(const COleDateTime& date) const throw();
   
  İşlenen birini geçersiz ve diğer null değilse, elde edilen durumunu `COleDateTime` değeri geçersiz.  
   
- **+**  Ve  **-**  işleçleri assert, `COleDateTime` nesne ayarlanmış null. Bkz: [COleDateTime ilişkisel işleçleri](#coledatetime_relational_operators) bir örnek.  
+  **+**  Ve  **-**  işleçleri assert, `COleDateTime` nesne ayarlanmış null. Bkz: [COleDateTime ilişkisel işleçleri](#coledatetime_relational_operators) bir örnek.  
   
  Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
   
@@ -830,7 +831,7 @@ COleDateTime& operator-=(COleDateTimeSpan dateSpan) throw();
   
  Geçerli, geçersiz ve null durum değerleri hakkında daha fazla bilgi için bkz: [m_status](#m_status) üye değişkeni.  
   
- **+=**  Ve  **-=**  işleçleri assert, `COleDateTime` nesne ayarlanmış null. Bkz: [COleDateTime ilişkisel işleçleri](#coledatetime_relational_operators) bir örnek.  
+  **+=**  Ve  **-=**  işleçleri assert, `COleDateTime` nesne ayarlanmış null. Bkz: [COleDateTime ilişkisel işleçleri](#coledatetime_relational_operators) bir örnek.  
   
  Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri, başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   

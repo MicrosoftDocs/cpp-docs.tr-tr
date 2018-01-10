@@ -24,11 +24,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ad61a8fa3672dd6f243c611e8ad363769dc5fa05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 181c8c3e5e762f2f20d99ca2acadaf285e717b6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lib-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Lib Dosyaları
 BAĞLANTI kabul COFF standart kitaplıkları ve COFF içeri aktarma kitaplıkları, her ikisi de genellikle sahip uzantısı. lib. Standart kitaplıkları nesneleri içerir ve LIB aracı tarafından oluşturulur. İçeri aktarma kitaplıkları ya da bağlantı dışarı aktarmaları içeren bir program oluşturduğunda veya LIB aracı tarafından oluşturulan ve diğer programlarda dışarı ilgili bilgiler içerir. Standart oluşturmak veya kitaplıkları içeri aktarma için LIB kullanma hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md). İçeri aktarma kitaplığı oluşturmak için bağlantı kullanma hakkında daha fazla bilgi için bkz [/dll](../../build/reference/dll-build-a-dll.md) seçeneği.  
@@ -76,4 +77,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINK giriş dosyaları](../../build/reference/link-input-files.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

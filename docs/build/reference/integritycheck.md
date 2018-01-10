@@ -1,7 +1,7 @@
 ---
-title: -INTEGRITYCHECK | Microsoft Docs
+title: / INTEGRITYCHECK | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 12/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-tools
@@ -13,27 +13,26 @@ helpviewer_keywords:
 - -INTEGRITYCHECK editbin options
 - /INTEGRITYCHECK editbin options
 - INTEGRITYCHECK editbin options
-ms.assetid: 2a293705-4396-421b-a5a5-693b4b867a85
-caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 20fa72f8cc2d12c719f0e50c250052a191b5ee81
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 99caec18162a7506b8b7a467eb7374b6fe4a38d9
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="integritycheck"></a>/INTEGRITYCHECK
-İkili görüntü dijital imzasını yükleme zamanında denetlenmesi gerektiğini belirtir.  
-  
-```  
-  
-/INTEGRITYCHECK[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- DLL dosyası veya yürütülebilir dosya üstbilgisinde, bu seçenek Windows görüntüsünü yüklemek için bellek yöneticisi tarafından bir dijital imza denetimi gerektirir bir bayrak ayarlar. Windows Vista'dan önceki Windows sürümlerinde bu bayrağı yok sayar. Bu seçenek, çekirdek modu kodu uygulamak ve tüm aygıt sürücülerini önerilen 64-bit DLL'ler için ayarlamanız gerekir. Daha fazla bilgi için bkz: [çekirdek modu kod imzalama izlenecek](http://go.microsoft.com/fwlink/?linkid=237093) MSDN Web sitesinde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+
+İkili görüntü dijital imzasını yükleme zamanında denetlenmesi gerektiğini belirtir.
+
+> **/ INTEGRITYCHECK**[**: HAYIR**]
+
+## <a name="remarks"></a>Açıklamalar
+
+DLL dosyası veya yürütülebilir dosya üstbilgisinde, bu seçenek Windows görüntüsünü yüklemek için bellek yöneticisi tarafından bir dijital imza denetimi gerektirir bir bayrak ayarlar. Windows Vista'dan önceki Windows sürümlerinde bu bayrağı yok sayar. Bu seçenek, çekirdek modu kodu uygulamak ve tüm aygıt sürücülerini önerilen 64-bit DLL'ler için ayarlamanız gerekir. Daha fazla bilgi için bkz: [çekirdek modu kodu imzalama gereksinimleri](/windows-hardware/drivers/install/kernel-mode-code-signing-requirements--windows-vista-and-later-).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)  

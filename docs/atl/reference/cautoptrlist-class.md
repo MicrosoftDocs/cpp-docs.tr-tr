@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 79ca570b8f4534287ae4ec40167de3bc3d947139
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0887b0fdaeeaf498bacdc5eec66981656f34fed8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cautoptrlist-class"></a>CAutoPtrList sınıfı
 Bu sınıf, akıllı işaretçiler listesi oluşturulurken, kullanışlı yöntemler sağlar.  

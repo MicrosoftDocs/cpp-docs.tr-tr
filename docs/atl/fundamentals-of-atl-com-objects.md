@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30527a705d880e96620edfee5f7ad7897f9371a7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a5a43af31a88420c154d7a57d27d2b69787d11d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesneleri temelleri
 Aşağıdaki çizim sınıfları ve ATL COM nesneyi tanımlamak için kullanılan arabirimleri arasındaki ilişkiyi gösterir.  
@@ -55,26 +56,26 @@ Aşağıdaki çizim sınıfları ve ATL COM nesneyi tanımlamak için kullanıla
 -   [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) uygulayan **ISupportErrorInfo** hata bilgilerini sağlar arabirimi yayılan araması zincirinde doğru.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [İn uygulamasına uygulama](../atl/implementing-ccomobjectrootex.md)  
+ [CComObjectRootEx Uygulama](../atl/implementing-ccomobjectrootex.md)  
  Örnek COM eşleme girdilerini uygulamak için show `CComObjectRootEx`.  
   
- [CComObject, CComAggObject ve CComPolyObject uygulama](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)  
+ [CComObject, CComAggObject ve CComPolyObject Uygulama](../atl/implementing-ccomobject-ccomaggobject-and-ccompolyobject.md)  
  Anlatılmaktadır nasıl **DECLARE_\*_AGGREGATABLE** makroları kullanımını etkileyen `CComObject`, `CComAggObject`, ve `CComPolyObject`.  
   
- [IDispatch ve IErrorInfo destekleme](../atl/supporting-idispatch-and-ierrorinfo.md)  
+ [IDispatch ve IErrorInfo Destekleme](../atl/supporting-idispatch-and-ierrorinfo.md)  
  Desteklemek için kullanılacak ATL uygulama sınıfları listeler `IDispatch` ve **IErrorInfo** arabirimleri.  
   
- [IDispEventImpl destekleme](../atl/supporting-idispeventimpl.md)  
+ [IDispEventImpl Destekleme](../atl/supporting-idispeventimpl.md)  
  Bir bağlantı noktası, sınıf için uygulanacak adımlar açıklanmaktadır.  
   
- [Varsayılan üreteci ve toplama modelini değiştirme](../atl/changing-the-default-class-factory-and-aggregation-model.md)  
+ [Varsayılan Sınıf Üreteci ve Toplama Modelini Değiştirme](../atl/changing-the-default-class-factory-and-aggregation-model.md)  
  Varsayılan sınıf Fabrika ve toplama modeli değiştirmek üzere kullanmak için hangi makroları gösterir.  
   
- [Toplanan nesne oluşturma](../atl/creating-an-aggregated-object.md)  
+ [Toplanan Nesne oluşturma](../atl/creating-an-aggregated-object.md)  
  Toplanan nesne oluşturma adımlarını listeler.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [ATL projesi oluşturma](../atl/reference/creating-an-atl-project.md)  
+ [ATL Projesi Oluşturma](../atl/reference/creating-an-atl-project.md)  
  ATL COM Nesne oluşturma hakkında bilgi sağlar.  
   
  [ATL](../atl/active-template-library-atl-concepts.md)  

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 013a5827af630e8190e622940c1fd3872a46a5d6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: faef0ca0c1c9c4c2986a039b8b1a26517641acd0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registry-entries"></a>Kayıt defteri girdileri
 DCOM kavramı, uygulama, kayıt defteri merkezi bir konumda içine bir veya daha fazla DCOM nesneleri için yapılandırma seçenekleri grup kimlikleri (uygulama) kullanıma sunmuştur. Adlı değer nesnesinin CLSID altında AppID değeriyle belirterek bir AppID belirtin.  
@@ -34,5 +35,5 @@ DCOM kavramı, uygulama, kayıt defteri merkezi bir konumda içine bir veya daha
  Herhangi bir DCOM hizmeti de altında başka bir anahtar oluşturmak gereken `HKEY_CLASSES_ROOT\AppID`. Bu anahtar EXE adına eşit olan ve bir çapraz başvuru AppID girişlere işaret eden bir AppID değeri içeriyor gibi davranır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hizmetleri](../atl/atl-services.md)
+ [Hizmetler](../atl/atl-services.md)
 

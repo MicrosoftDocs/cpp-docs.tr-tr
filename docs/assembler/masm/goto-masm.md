@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 896d99b2ed4abe2080e646b6a541eb1e489d2b75
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed7e20bb7f81b74a2f670e604e958ca02f132531
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="goto-masm"></a>GOTO (MASM)
 Derleme işaretlenen satırı aktarır **:***macrolabel*.  
@@ -37,4 +38,4 @@ macrolabel
  **GOTO** içinde yalnızca izin verilen [MAKROSU](../../assembler/masm/macro.md), [için](../../assembler/masm/for-masm.md), [FORC](../../assembler/masm/forc.md), [YİNELEYİN](../../assembler/masm/repeat.md), ve **sırasında**engeller. Etiket satırında yalnızca yönergesi olmalıdır ve başında üste gelmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

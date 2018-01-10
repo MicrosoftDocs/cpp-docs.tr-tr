@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4560fb580d3d1b24feccf84dc07bde7dc38458c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 573710ae62384c8674009770b3c4fb29100db446
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="checking-for-memory-overwrites"></a>Bellek Üzerine Yazmalarını Denetleme
 Öbek işleme işlevi çağrısında bir erişim ihlali alırsanız programınızı yığın bozulmuş mümkündür. Bu durumun yaygın bir belirti olacaktır:  
@@ -37,4 +38,4 @@ if(_heapchk()!=_HEAPOK)
  Bu işlev arızalanırsa, ayırmak, bu noktada yığın bozulmuş gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın derlemesi sorunlarını giderme](../../build/reference/fixing-release-build-problems.md)
+ [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dcd10c25e4512683b840bd2feeee287995ab8776
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 880e9fbba7852a9a7919e73f80b73e34394cd037
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-merge-multiple-pgo-profiles-into-a-single-profile"></a>Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme
 Profil temelli iyileştirme (PGO) profili bir senaryoyu temel en iyi duruma getirilmiş ikili dosyaları oluşturmak için harika bir araçtır. Ancak, bir uygulama yoksa ne birkaç önemli, henüz farklı senaryolar sahip; PGO kullanabilirsiniz tek bir profil birkaç farklı senaryolarından oluşturma? Visual Studio'da PGO Yöneticisi, Pgomgr.exe, bu işlemi sizin için yapar.  
@@ -58,4 +59,4 @@ pgomgr /merge test.pgd
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil temeli iyileştirmeler](../../build/reference/profile-guided-optimizations.md)
+ [Profil Temelli İyileştirmeler](../../build/reference/profile-guided-optimizations.md)

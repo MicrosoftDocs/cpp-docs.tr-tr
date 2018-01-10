@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: de48f28b1a31ebece26d6b39286fb6edb065db0b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07a7e50c040ec52fe79cba25ca4c1e29ac05bd8b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-assembly-language-in-asm-blocks"></a>__asm Bloklarında Derleme Dili Kullanma
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -29,29 +30,29 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [Satır içi derleme için yönerge kümesi](../../assembler/inline/instruction-set-for-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kod için Yönerge Kümesi](../../assembler/inline/instruction-set-for-inline-assembly.md)  
   
--   [Satır içi derlemedeki MASM ifadeleri](../../assembler/inline/masm-expressions-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Koddaki MASM İfadeleri](../../assembler/inline/masm-expressions-in-inline-assembly.md)  
   
--   [Veri yönergeleri ve işleçler satır içi derlemede](../../assembler/inline/data-directives-and-operators-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodda Veri Yönergeleri ve İşleçler](../../assembler/inline/data-directives-and-operators-in-inline-assembly.md)  
   
--   [EVEN ve ALIGN yönergeleri](../../assembler/inline/even-and-align-directives.md)  
+-   [EVEN ve ALIGN Yönergeleri](../../assembler/inline/even-and-align-directives.md)  
   
--   [Satır içi derlemedeki MASM makro yönergeleri](../../assembler/inline/masm-macro-directives-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Koddaki MASM Makro Yönergeleri](../../assembler/inline/masm-macro-directives-in-inline-assembly.md)  
   
--   [Satır içi derlemede Segment başvurusu](../../assembler/inline/segment-references-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodda Segment Başvuruları](../../assembler/inline/segment-references-in-inline-assembly.md)  
   
--   [Tür ve değişken boyutları satır içi derlemede](../../assembler/inline/type-and-variable-sizes-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodda Tür ve Değişken Boyutları](../../assembler/inline/type-and-variable-sizes-in-inline-assembly.md)  
   
--   [Assembly dili açıklamaları](../../assembler/inline/assembly-language-comments.md)  
+-   [Çevirici Dili Açıklamaları](../../assembler/inline/assembly-language-comments.md)  
   
 -   [_Emit sözde yönerge](../../assembler/inline/emit-pseudoinstruction.md)  
   
--   [Hata ayıklama ve satır içi derleme için listeleme](../../assembler/inline/debugging-and-listings-for-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kod için Hata Ayıklama ve Listeleme](../../assembler/inline/debugging-and-listings-for-inline-assembly.md)  
   
--   [Intel'in MMX yönerge kümesi](../../assembler/inline/intel-s-mmx-instruction-set.md)  
+-   [Intel'in MMX Yönerge Kümesi](../../assembler/inline/intel-s-mmx-instruction-set.md)  
   
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır içi derleyicisi](../../assembler/inline/inline-assembler.md)
+ [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)

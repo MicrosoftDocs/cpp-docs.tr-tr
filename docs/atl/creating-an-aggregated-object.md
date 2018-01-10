@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b5446e4eb279e961ba59b5fd0b3713a7f976cef5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b6b66a80c5459157b644ec6b264b707232c83e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-an-aggregated-object"></a>Toplanan nesne oluşturma
 Toplama Temsilciler **IUnknown** çağrıları, dış nesnenin gösteren bir işaretçi sağlama **IUnknown** iç nesne.  
@@ -39,5 +40,5 @@ Toplama Temsilciler **IUnknown** çağrıları, dış nesnenin gösteren bir iş
 >  Kullanın ve yayın sırasında toplanan nesneden bir arabirim `FinalConstruct`, eklemelisiniz [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) sınıfı nesnesinin tanımı makrosuna.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)
+ [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
 

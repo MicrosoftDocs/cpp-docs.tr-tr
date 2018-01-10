@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f956dedb8be270eb9974fa035d38e7fbb6714499
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5fea7a8700eb2f5a5deee7afd05af8b0de0e4e71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lib-input-files"></a>LIB Giriş Dosyaları
 LIB tarafından beklenen giriş dosyaları aşağıdaki tabloda gösterildiği gibi çünkü kullanılıyor, modunu bağlıdır.  
@@ -34,4 +35,4 @@ LIB tarafından beklenen giriş dosyaları aşağıdaki tabloda gösterildiği g
 >  OMF kitaplıkları LIB 16-bit sürümü ile oluşturulmuş LIB 32-bit sürümünü girdi olarak kullanılamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB'e genel bakış](../../build/reference/overview-of-lib.md)
+ [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)

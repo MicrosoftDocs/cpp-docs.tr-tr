@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2546608c3c84a2228fba35bb1470064f64c2212b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c8f34a1957a4af4090d5e73a54f0ef00f8b76088
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-structures"></a>ATL yapıları
 
@@ -54,13 +55,13 @@ Etkin Şablon Kütüphanesi aşağıdaki yapılar içerir.
  [ATL başvurusu](../../atl/atl-com-desktop-components.md)  
  COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.  
   
- [ATL işlevleri](../../atl/reference/atl-functions.md)  
+ [ATL İşlevleri](../../atl/reference/atl-functions.md)  
  Başvuru malzemesinde alfabetik olarak düzenlenmiş genel işlevleri sağlar. İşlevler kategorilere göre düzenlemeye yönelik konuları içerir.  
   
- [ATL genel değişkenler](../../atl/reference/atl-global-variables.md)  
+ [ATL Genel Değişkenler](../../atl/reference/atl-global-variables.md)  
  Alfabetik olarak düzenlenmiş genel değişkenler hakkında başvuru bilgileri sağlar.  
   
- [ATL makroları](../../atl/reference/atl-macros.md)  
+ [ATL Makroları](../../atl/reference/atl-macros.md)  
  Başvuru malzemesinde alfabetik olarak düzenlenmiş makroları sağlar. Makrolar kategorilere göre düzenlemeye yönelik konuları içerir.  
   
  [ATL tür tanımları](../../atl/reference/atl-typedefs.md)  

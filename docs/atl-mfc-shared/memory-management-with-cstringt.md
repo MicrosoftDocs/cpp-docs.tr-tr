@@ -25,20 +25,21 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5f36e27a536ce8983baaca594b5768479b16a74d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bbf623344ec52abce28a08670e7f3cd09140563b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memory-management-with-cstringt"></a>CStringT ile bellek yönetimi
 Sınıf [CStringT](../atl-mfc-shared/reference/cstringt-class.md) değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıftır. Bu dizeler tutmak için bellek tahsis ve her örneği ile ilişkili bir dize Yöneticisi nesnesi aracılığıyla serbest `CStringT`. MFC ve ATL sağlamak varsayılan işlemlerinden `CStringT`adlı `CString`, `CStringA`, ve `CStringW`, farklı karakter türleri dizeleri işlemek. Bu karakter türlerini türlerinin **TCHAR**, `char`, ve `wchar_t`sırasıyla. Bu varsayılan dize türleri işlem yığınında (ATL) veya CRT yığınında (MFC) bellek ayırır bir dize Yöneticisi'ni kullanın. Tipik uygulamalar için bu bellek ayırma şeması yeterli olur. Ancak, yoğun yapmadan kodunu dizeleri (veya birden çok iş parçacıklı kodu) varsayılan bellek yöneticilerini en iyi şekilde çalışmayabilir kullanın. Bu konu, varsayılan bellek yönetimi davranışını geçersiz kılmak açıklar `CStringT`, elinizdeki için iyileştirilmiş allocators özellikle oluşturma.  
   
--   [Uygulama bir özel dize Yöneticisi'nin (temel yöntemi)](../atl-mfc-shared/implementation-of-a-custom-string-manager-basic-method.md)  
+-   [Özel Dize Yöneticisi’ni Uygulama (Temel Yöntem)](../atl-mfc-shared/implementation-of-a-custom-string-manager-basic-method.md)  
   
--   [Yığın Çekişme kaçınma](../atl-mfc-shared/avoidance-of-heap-contention.md)  
+-   [Yığın Çekişmesini Engelleme](../atl-mfc-shared/avoidance-of-heap-contention.md)  
   
--   [Uygulama bir özel dize Yöneticisi'nin (Gelişmiş yöntemi)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md)  
+-   [Özel Dize Yöneticisi’ni Uygulama (Gelişmiş Yöntem)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md)  
   
 -   [CFixedStringT: Örnek bir özel dize Yöneticisi'nin](../atl-mfc-shared/cfixedstringt-example-of-a-custom-string-manager.md)  
   

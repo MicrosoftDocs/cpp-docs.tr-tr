@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 08c3b48ebfc96a93961c6c810312daa6072e8f40
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9166f62c51344cc9c620da34d9c6fcee4665f400
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları
 Bir uygulama olarak kabul edilir bir [yalıtılmış uygulama](http://msdn.microsoft.com/library/aa375190) tüm bileşenleri varsa [yan yana derlemeler](http://msdn.microsoft.com/library/ff951640). Yan yana derleme, birlikte dağıtılan ve bir uygulama tarafından çalışma zamanında kullanılabilir hale getirilen kaynaklar topluluğudur (bir grup DLL dosyası, windows sınıfları, COM sunucuları, tür kitaplıkları veya arabirimler). Genellikle, yan yana derleme, bir ila birden fazla DLL dosyasından oluşur.  
@@ -40,4 +41,4 @@ Bir uygulama olarak kabul edilir bir [yalıtılmış uygulama](http://msdn.micro
  Visual Studio 2005 ve Visual Studio 2008'de; ATL, MFC, CRT, Standart C++, OpenMP ve MSDIA gibi yeniden dağıtılabilir kitaplıklar, yerel derleme önbelleğine paylaşılan yan yana derlemeler olarak dağıtılmıştır. Geçerli sürümde, yeniden dağıtılabilir kitaplıklar merkezi dağıtım kullanmaktadır. Varsayılan olarak, Visual C++ kullanılarak oluşturulan tüm uygulamalar, son ikili dosyada gömülü bildirimle oluşturulur ve bildirim Visual C++ kitaplıklarındaki iki dosyanın bağımlılıklarını açıklar. Visual C++ uygulamaları için bildirim üretme anlamak için bkz: [anlama bildirim oluşturma için C/C++ programları](../build/understanding-manifest-generation-for-c-cpp-programs.md). Bildirim; kullandıkları ya da yerel dağıtım kullanan kitaplıklara statik olarak bağlı uygulamalar için gerekli değildir. Dağıtımı hakkında daha fazla bilgi için bkz: [Visual C++ üzerinde dağıtım](../ide/deployment-in-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+ [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

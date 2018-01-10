@@ -13,22 +13,23 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b489048f168693385edd9090b27f2ffc4923757f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7e96ff2f4b69ee89dc22aaf3be8df19d2ec8f3cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unwind-data-for-exception-handling-debugger-support"></a>Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği
 Bu bölümde, özel durum işleme ve hata ayıklama desteği için gerekli veri yapıları anlatılmaktadır.  
   
--   [RUNTIME_FUNCTION](../build/struct-runtime-function.md)  
+-   [struct RUNTIME_FUNCTION](../build/struct-runtime-function.md)  
   
--   [UNWIND_INFO](../build/struct-unwind-info.md)  
+-   [struct UNWIND_INFO](../build/struct-unwind-info.md)  
   
--   [UNWIND_CODE yapısı](../build/struct-unwind-code.md)  
+-   [struct UNWIND_CODE](../build/struct-unwind-code.md)  
   
--   [Zincirleme Bırakma bilgi yapıları](../build/chained-unwind-info-structures.md)  
+-   [Zincirleme Bırakma Bilgi Yapıları](../build/chained-unwind-info-structures.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum (x64) işleme](../build/exception-handling-x64.md)
+ [Özel Durum İşleme (x64)](../build/exception-handling-x64.md)

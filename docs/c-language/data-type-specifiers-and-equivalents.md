@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fbc76f70eba6fab46e709978bbadcd10312af6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 596e3fcf4dab3f88abc17cac4bc32471e63b4bbd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-type-specifiers-and-equivalents"></a>Veri Türü Tanımlayıcıları ve Eşdeğerleri
 Bu kitap, genellikle uzun biçimler yerine aşağıdaki tabloda listelenen tür tanımlayıcılarının biçimlerini kullanır ve `char` türünün varsayılan olarak işaretli olduğunu varsayar. Bu nedenle, bu kitap boyunca `char` eşdeğerdir **char imzalı**.  
@@ -44,7 +45,7 @@ Bu kitap, genellikle uzun biçimler yerine aşağıdaki tabloda listelenen tür 
 |**İmzasız int**|**İmzasız**|  
 |**İmzasız short int**|**İmzasız short**|  
 |**İmzasız long int**|**İmzasız long**|  
-|**kayan nokta**|—|  
+|**float**|—|  
 |**uzun çift**2|—|  
   
  1 yaptığınızda **char** türü imzasız varsayılan olarak (/J derleyici seçeneği belirterek), kısaltma olamaz **char imzalı** olarak **char**.  
@@ -58,4 +59,4 @@ Bu kitap, genellikle uzun biçimler yerine aşağıdaki tabloda listelenen tür 
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C tür tanımlayıcıları](../c-language/c-type-specifiers.md)
+ [C Tür Tanımlayıcıları](../c-language/c-type-specifiers.md)

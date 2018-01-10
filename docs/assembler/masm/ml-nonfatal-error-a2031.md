@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fa56bcdcf2d806d82a6447eef9f07eb9bcb4c22f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 42d43ac2965e61983bb7aca8bde39d29b16c131e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2031"></a>ML Önemli Olmayan Hatası A2031
 **Dizin veya temel kayıt olması gerekir**  
@@ -34,4 +35,4 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

@@ -30,11 +30,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ddbd18ac39721dd80eb547e53c7708891b94aa9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae81e2b6beac11f94f8d117b004da2f8d0db8724
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 Bu sınıf oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.  
@@ -217,4 +218,4 @@ int MessageBox(
  [CWindowImpl sınıfı](../../atl/reference/cwindowimpl-class.md)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
  [CComControlBase sınıfı](../../atl/reference/ccomcontrolbase-class.md)   
- [CComCompositeControl sınıfı](../../atl/reference/ccomcompositecontrol-class.md)
+ [CComCompositeControl Sınıfı](../../atl/reference/ccomcompositecontrol-class.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 803e4e0556026eaa5a3fb75c8faa7fd87f34052f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fdbb6ea3563fb82e90b2bc4ca19f76c43c703cf3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 Windows ARM üzerinde mekanizması zaman uyumsuz donanım ürettiği özel durumlar ve zaman uyumlu yazılım tarafından oluşturulan özel durumlar için aynı yapılandırılmış özel durum işleme kullanır. Dile özgü özel durum işleyicileri dil yardımcı işlevleri kullanarak Windows yapılandırılmış özel durum işleme üzerinde oluşturulmuştur. Bu belgede, özel durum Windows ARM ve MASM ve Visual C++ derleyicisi tarafından oluşturulan kodu tarafından kullanılan dil Yardımcıları işleme açıklanmaktadır.  
@@ -736,4 +737,4 @@ Function:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM ABI kuralları genel bakış](../build/overview-of-arm-abi-conventions.md)   
- [Genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md)
+ [Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)

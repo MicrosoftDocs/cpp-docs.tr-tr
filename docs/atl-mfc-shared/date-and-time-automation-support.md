@@ -25,11 +25,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63d77d4260c507b71e2269d2f404b8109af16dfd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a40a8fe49d9564714c328b657bc0d85d52ad84b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="date-and-time-automation-support"></a>Tarih ve saat: Otomasyon desteği
 Bu makalede, tarih ve saat yönetimiyle ilgili sınıf kitaplığı Hizmetleri yararlanmak açıklar. Açıklanan yordamları içerir:  
@@ -61,5 +62,5 @@ Bu makalede, tarih ve saat yönetimiyle ilgili sınıf kitaplığı Hizmetleri y
  [!code-cpp[NVC_ATLMFC_Utilities#176](../atl-mfc-shared/codesnippet/cpp/date-and-time-automation-support_1.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve saat](../atl-mfc-shared/date-and-time.md)
+ [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)
 

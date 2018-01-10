@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2bb3fc7d9d1e47546e4475057a11dcf560a84c1a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0a3dbd570a16228c02215560e8133a77b98a2489
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-and-testing-the-atl-project"></a>Derleme ve ATL projeyi test etme
 Bölümünde belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-control.md), yeni bileşik denetim barındıran bir varsayılan HTML sayfasını projesinin ilk bileşenleri biridir. Bileşik Denetim değiştirme işlemini tamamladıktan sonra tıklatın **yapı çözümü** veya **çözümü yeniden derle** gelen **yapı** menüsü. Proje başarıyla oluşturulur sonra Internet Explorer veya başka bir tarayıcı bileşik denetim projenizin kök dizininde bulunan HTML sayfası yük ve denetim işlevselliğini test etmek.  

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ab078acd8aaadef19659ad766233ea191b360e02
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8cbb9a4f8b92a1cd495e1312c1aa8a8f77cefcd3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pgomgr"></a>pgomgr
 Profil verileri bir veya daha fazla .pgc dosyalarından .pgd dosyasına ekler.  
@@ -78,4 +79,4 @@ pgomgr -merge myapp1.pgd
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [El ile profil temelli iyileştirme için araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+ [El ile Profil Temelli İyileştirme Araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)

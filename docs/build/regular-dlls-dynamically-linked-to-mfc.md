@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9c1835ad660c9dbb9f8e4b43dbf697ea960f82ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 930d56f7bc296225e6fefcf92e49087a2aed99cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Dinamik olarak MFC'ye bağlı normal MFC DLL'leri
 MFC DLL dinamik olarak MFC'ye bağlı normal MFC'yi dahili olarak kullanan DLL'dir ve MFC veya MFC dışı çalıştırılabilirler tarafından DLL dışarı aktarılan işlevler çağrılabilir. Adı açıklandığı gibi bu tür DLL MFC (olarak da bilinen MFC paylaşılan sürüm) dinamik bağlantı kitaplığı sürümü kullanılarak oluşturulmuştur. İşlevler, genellikle bir normal standart C arabirimi kullanan MFC DLL dışarı aktarılır.  
@@ -100,9 +101,9 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)  
   
--   [Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 -   [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL türleri](../build/kinds-of-dlls.md)
+ [DLL Türleri](../build/kinds-of-dlls.md)

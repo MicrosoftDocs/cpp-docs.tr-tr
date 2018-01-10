@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 39ed1531be553a66f22ac8b93e898a91cf5006e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 407ed0c63dce8e350c24ac5f260876fb6ab47576
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC uzantı DLL'leri: genel bakış
 MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sınıflarından türetilmiş yeniden kullanılabilir sınıfları uygulayan bir DLL'dir. MFC uzantı DLL'leri MFC'nin (olarak da bilinen MFC paylaşılan sürüm) dinamik bağlantı kitaplığı sürümü kullanılarak oluşturulur. MFC uzantı DLL'si MFC paylaşılan sürümü ile oluşturulan yalnızca MFC yürütülebilir dosyaları (uygulamalar veya Normal MFC DLL'leri) kullanabilirsiniz. MFC DLL uzantısı ile yeni özel sınıflar türetebilir ve ardından bu genişletilmiş sürümüne MFC DLL çağıran uygulamalar sunar.  
@@ -40,11 +41,11 @@ MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sı
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [MFC uzantı DLL'leri](../build/extension-dlls.md)  
+-   [MFC uzantısı DLL’leri](../build/extension-dlls.md)  
   
--   [Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
--   [MFC dışı DLL'ler: genel bakış](../build/non-mfc-dlls-overview.md)  
+-   [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)  
   
 -   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   
@@ -53,4 +54,4 @@ MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sı
 -   [MFC DLL oluşturma](../mfc/reference/mfc-dll-wizard.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL türleri](../build/kinds-of-dlls.md)
+ [DLL Türleri](../build/kinds-of-dlls.md)

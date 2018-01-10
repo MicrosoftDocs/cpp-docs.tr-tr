@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59aaaa19d696099c45d4b25f4c41f1cedf97a255
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e69be3fa7136b0d411b92299d99d877710d5f118
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 Bu sınıf, yöntemleri, statik işlevler ve tür tanımları vektör yeni kullanarak akıllı işaretçiler koleksiyonları oluşturma ve delete işleçleri olduğu durumlarda faydalıdır sağlar.  

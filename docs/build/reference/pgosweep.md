@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c703bc68a36dd21c837e62738d9d2c2631502a0d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 78ae6c36011e3c10359988cf2c501514d1bcf70a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pgosweep"></a>pgosweep
 Profil temelli iyileştirme tüm profil verilerini çalışan bir programı .pgc dosyaya yazmak için kullanılır.  
@@ -61,4 +62,4 @@ pgosweep myapp.exe myapp!1.pgc
  Bu örnekte, `pgosweep` için myapp!1.pgc myapp.exe geçerli profil bilgilerini yazar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [El ile profil temelli iyileştirme için araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+ [El ile Profil Temelli İyileştirme Araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)

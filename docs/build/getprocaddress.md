@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 426a0c5a40f3be3effdf4ba8316f6a72a8295965
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2bc32c5f6b6ae4ee80c69dff028f05d2b334d920
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="getprocaddress"></a>GetProcAddress
 DLL çağrı açıkça bağlama işlemleri [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL dışarı aktarılan bir işlevin adresini elde edin. Döndürülen işlev işaretçisi DLL işlevi çağırmak için kullanın. **GetProcAddress** DLL modül tanıtıcısını parametre alır (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da işlevin adını alır, Arama veya işlevin dışarı aktarma için sıralı istiyorsunuz.  
@@ -73,7 +74,7 @@ if (hDLL != NULL)
   
 -   [FreeLibrary](http://msdn.microsoft.com/library/windows/desktop/ms683152)  
   
--   [DEF dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)  
+-   [DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma](../build/exporting-from-a-dll-using-def-files.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

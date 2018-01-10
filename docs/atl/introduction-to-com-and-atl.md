@@ -17,20 +17,21 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 62266dc46aec68747ba1b5c330f2736b36feb90e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b1fe02283fc1f0723d86d9d18991c3af444f54db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="introduction-to-com-and-atl"></a>COM ve ATL giriş
 Bu bölüm, COM ve ATL kısa bir giriş sağlar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [COM giriş](../atl/introduction-to-com.md)  
+ [COM’a Giriş](../atl/introduction-to-com.md)  
  Bileşen Nesne Modeli (COM) genel bir bakış sağlar, arabirimleri de dahil olmak üzere temel kavramlar **IUnknown**, başvuru sayımı, `QueryInterface`, sıralama ve toplama.  
   
- [ATL giriş](../atl/introduction-to-atl.md)  
+ [ATL’ye Giriş](../atl/introduction-to-atl.md)  
  , Kısaca, ne anlatılmaktadır Etkin Şablon kitaplığı (ATL) şablon kitaplıkları ve ATL sürüm numaraları için tasarlanmıştır. ATL ve MFC arasında seçim önerileri içerir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -40,6 +41,6 @@ Bu bölüm, COM ve ATL kısa bir giriş sağlar.
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Etkin Şablon Kütüphanesi kullanarak programı kavramsal konulara bağlantılar verilmektedir.  
   
- [ATL sınıfına genel bakış](../atl/atl-class-overview.md)  
+ [ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)  
  Başvuru bilgileri ve ATL sınıfları için bağlantılar sağlar.
 

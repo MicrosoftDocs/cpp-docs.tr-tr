@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9658ce73e0a8411b5f7bd62d73a1e0e9da58e8aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e432ac5ba581261710239820d11092777f348e11
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2097"></a>ML Önemli Olmayan Hatası A2097
 **Beklenen segment: tanımlayıcısı**  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  [Grup](../../assembler/masm/group.md) yönergesi tanımlı kesimi değildi bir tanımlayıcı verilen.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

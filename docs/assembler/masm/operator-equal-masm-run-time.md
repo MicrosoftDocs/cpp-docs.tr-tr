@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5494a88c51b1b43691fe00144029b0372b7acd59
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a545ac19fdd8db1a80b6daf0b85846e293b21e6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator--masm-run-time"></a>== işleci (MASM Çalışma Zamanı)
 Eşittir. İçinde yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.  
@@ -34,4 +35,4 @@ expression1 == expression2
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

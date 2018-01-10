@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b018cd586e48f344b93b31571ba60ae9982ad4fe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 761b71f05840c86516563df79d45cc1bb018fbba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pseudotargets"></a>Sözde Hedefler
 Bir pseudotarget bir bağımlılık satırda bir dosya adı yerine kullanılan bir etiketi belirtin. Yok ve bu nedenle güncel olan bir dosya olarak yorumlanır. NMAKE pseudotarget ait zaman damgası tüm bağımlıları en son olduğunu varsayar. Hiçbir bağımlıları varsa, geçerli saati varsayılır. Bir pseudotarget hedef olarak kullanılıyorsa, kendi komutları her zaman yürütülür. Bağımlı kullanılan bir pseudotarget de başka bir bağımlılık olarak hedefi olarak yer almalıdır. Ancak, bu bağımlılık komutları blok olması gerekmez.  
@@ -31,4 +32,4 @@ Bir pseudotarget bir bağımlılık satırda bir dosya adı yerine kullanılan b
  Pseudotarget adları hedefler için dosya adı sözdizimi kurallarına. Ancak, bir uzantı adı yoksa (yani, bir nokta içermeyen), dosya adları için 8 karakterlik sınırı aşabilir ve en fazla 256 karakterden uzun olamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefleri](../build/targets.md)
+ [Hedefler](../build/targets.md)

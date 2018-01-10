@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e42bbe4f724f711f407072c12a61ae9abbaca07d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 043ad96ada12467ce9c2ff39c9e337e0da9d2391
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="masm-macros"></a>MASM Makroları
 Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo-operations.md), normal yordama öğesinin ve sonuçları oluşturmak için kullanılan ksamd64.inc içinde tanımlı makrolar kümesi vardır.  

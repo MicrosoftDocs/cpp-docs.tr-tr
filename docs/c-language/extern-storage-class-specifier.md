@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0f11789f985c67b59b076bed7ec849a864688743
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 448a659afaf7a0251d500da3d9878d30550b9180
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="extern-storage-class-specifier"></a>extern Depolama Sınıfı Tanımlayıcısı
 `extern` depolama sınıfı belirticisiyle bildirilen bir değişken, programın kaynak dosyalarından birinde dış düzeyde tanımlanmış aynı ada sahip bir değişkene yönelik başvurudur. İç `extern` bildirimi, dış düzey değişken tanımını blok içinde görünür hale getirmek için kullanılır. Dış düzeyinde aksi bildirilmediği sürece, `extern` anahtar sözcüğü ile bildirilen bir değişken yalnızca bildirildiği blok içinde görülebilir.  
@@ -83,4 +84,4 @@ void other( void )
  `a` değişkeni 2 arttırılarak 4 sonucunu verir. `other` işlevi aynı programda yeniden çağırılırsa, `a` öğesinin başlangıç değeri 4 olur. İç **statik** değişkenleri tutmak değerlerine program çıkar ve blok reenters zaman içinde bunlar bildirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İç düzey bildirimleri depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+ [İç Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f53eaabb2c58d349273288c670da33445feaaea1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9958b13a6f06b0024ec2d4dd304abfe93b16741e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dot-directives"></a>Nokta Yönergeleri
 Nokta yönergeleri bir satır başına bir açıklama bloğundaki dışında belirtin. Nokta yönergeleri noktayla başlayan (. ) ve sonra iki nokta (:) gelmelidir. Alanları ve sekmeler izin verilir. Nokta yönerge adları büyük/küçük harfe duyarlıdır ve büyük harfle yazılır.  
@@ -47,4 +48,4 @@ Nokta yönergeleri bir satır başına bir açıklama bloğundaki dışında bel
  Burada *suffixlist* ek sonekler, bir veya daha fazla boşluk veya sekmeler ayrılmış bir listesi verilmiştir. Geçerli ayarını görmek için **. SONEKLERİ**, parametresini ile NMAKE çalıştırma  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE başvurusu](../build/nmake-reference.md)
+ [NMAKE Başvurusu](../build/nmake-reference.md)

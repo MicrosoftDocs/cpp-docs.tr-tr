@@ -14,16 +14,17 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5631cdbd742ebabe2246050fe0366129fc8d6e7f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fb8d4474b69d60b9ced342c478ec0f6ba4e1a933
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tools-for-manual-profile-guided-optimization"></a>El ile profil temelli iyileştirme için araçları
 Aşağıdaki araçlar profil temelli iyileştirmeler destekler:  
   
- [Profil temelli iyileştirmeler için ortam değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)  
+ [Profil Temelli İyileştirmeler için Ortam Değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)  
  Senaryolarınızı test çalışma zamanı davranışını belirtin.  
   
  [pgosweep](../../build/reference/pgosweep.md)  
@@ -33,4 +34,4 @@ Aşağıdaki araçlar profil temelli iyileştirmeler destekler:
  Profil verileri bir veya daha fazla .pgc dosyalarından .pgd dosyasına ekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil temeli iyileştirmeler](../../build/reference/profile-guided-optimizations.md)
+ [Profil Temelli İyileştirmeler](../../build/reference/profile-guided-optimizations.md)

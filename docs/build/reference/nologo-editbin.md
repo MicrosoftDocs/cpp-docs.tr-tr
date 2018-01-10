@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f3607ee78ebee6697958d674d90a50fd3fc78d5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 831ec2b675b2abd296aa3c6f3bbf9ee4c53b3439
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nologo-editbin"></a>/NOLOGO (EDITBIN)
 ```  
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/24/2017
  Bu seçenek, sürüm numarasını ve telif hakkı iletisi EDITBIN görüntülenmesini engeller.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

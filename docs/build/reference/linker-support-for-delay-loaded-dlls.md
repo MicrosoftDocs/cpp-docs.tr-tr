@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c44c2ed7962ab3be94af435eda6114688f9260d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 83e75df963889730e4514c38d0551af241a788fa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği
 Visual C++ bağlayıcı artık DLL'leri Gecikmeli yüklenmesini destekler. Bu gereksinim Windows SDK işlevleri kullanmak için hafifletir **LoadLibrary** ve **GetProcAddress** Gecikmeli yüklemesi DLL uygulamak için.  
@@ -39,23 +40,23 @@ Visual C++ bağlayıcı artık DLL'leri Gecikmeli yüklenmesini destekler. Bu ge
   
  Aşağıdaki konularda Gecikmeli yükleme DLL'leri açıklanmaktadır:  
   
--   [Gecikme yükü DLL'lerini belirtme](../../build/reference/specifying-dlls-to-delay-load.md)  
+-   [Gecikme Yükü DLL'lerini Belirtme](../../build/reference/specifying-dlls-to-delay-load.md)  
   
--   [Gecikmeli yüklenen DLL'i açıkça kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)  
+-   [Gecikmeli Yüklenen DLL'i Açıkça Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)  
   
--   [Gecikmeli yüklenen DLL için tüm içe aktarmaları yükleme](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md)  
+-   [Gecikmeli Yüklenen DLL için Tüm İçe Aktarmaları Yükleme](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md)  
   
--   [İçeri Aktarılanları bağlama](../../build/reference/binding-imports.md)  
+-   [İçeri Aktarılanları Bağlama](../../build/reference/binding-imports.md)  
   
--   [Hata işleme ve bildirme](../../build/reference/error-handling-and-notification.md)  
+-   [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)  
   
--   [Gecikmeli yükleme içe aktarmalarını dökme](../../build/reference/dumping-delay-loaded-imports.md)  
+-   [Gecikmeli Yükleme İçe Aktarmalarını Dökme](../../build/reference/dumping-delay-loaded-imports.md)  
   
--   [DLL'leri yüklemede gecikme kısıtlamaları](../../build/reference/constraints-of-delay-loading-dlls.md)  
+-   [DLL'leri Yüklemede Gecikme Kısıtlamaları](../../build/reference/constraints-of-delay-loading-dlls.md)  
   
--   [Yardımcı işlevini anlama](understanding-the-helper-function.md)  
+-   [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)  
   
--   [Kendi yardımcı işlevinizi geliştirme](../../build/reference/developing-your-own-helper-function.md)  
+-   [Kendi Yardımcı İşlevinizi Geliştirme](../../build/reference/developing-your-own-helper-function.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++'ta DLL'leri](../../build/dlls-in-visual-cpp.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0f3d72b72280ecc841cc349f20c68f90a6cbd227
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd662b149f56cf0d6bd5e7a3c912e0ecd14f21b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exporting-string-classes-using-cstringt"></a>CStringT kullanarak dize sınıfları dışarı aktarma
 Geçmişte, MFC geliştiriciler türetilmiş `CString` kendi dize sınıfları özelleştirmek üzere. Microsoft Visual C++ .NET (MFC 8.0) içinde [CString](../atl-mfc-shared/using-cstring.md) sınıfı olarak adlandırılan bir şablon sınıfı tarafından değiştirilen [CStringT](../atl-mfc-shared/reference/cstringt-class.md). Bu, birkaç avantaj sağlanan:  
@@ -58,9 +59,9 @@ Geçmişte, MFC geliştiriciler türetilmiş `CString` kendi dize sınıfları �
 -   `CString`, `CStringA`, ve `CStringW` yalnızca işaretlenmelidir `__declspec(dllexport/dllimport)` paylaşılan DLL ne zaman bir MFC ile oluşturma. Bir MFC statik kitaplığı ile bağlantı varsa, bu sınıfları dışarı olarak işaretlemeniz gerekir değil; Aksi takdirde, iç kullanımını `CString`, `CStringA`, ve `CStringW` kullanıcı DLL'leri içinde işaretler `CString` de dışarı gibi.  
   
 ## <a name="related-topics"></a>İlgili Konular  
- [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)  
+ [CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CStringT kullanma](../atl-mfc-shared/using-cstringt.md)   
- [CString kullanma](../atl-mfc-shared/using-cstring.md)
+ [CString Kullanma](../atl-mfc-shared/using-cstring.md)
 

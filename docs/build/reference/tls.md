@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: da65c67a38d9517ed2671fcea69a583b9ba65d6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5adf246e343a16abebdc584589e9633b195444ea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tls"></a>/TLS
 Yürütülebilir bir dosya IMAGE_TLS_DIRECTORY yapısından görüntüler.  
@@ -34,4 +35,4 @@ Yürütülebilir bir dosya IMAGE_TLS_DIRECTORY yapısından görüntüler.
  IMAGE_TLS_DIRECTORY winnt.h içinde tanımlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)
+ [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

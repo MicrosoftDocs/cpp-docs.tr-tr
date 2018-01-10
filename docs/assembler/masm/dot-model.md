@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6d4ea26a75d37e264344aaacfa660e6d66dc8d5e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5407e201b25fdf9b5344d438a69e2fc3e972327b
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="model"></a>.MODEL
 Program bellek modeli başlatır.  
@@ -56,7 +57,7 @@ Program bellek modeli başlatır.
 |`stackoption`|Kullanılan değil|`NEARSTACK`, `FARSTACK`|  
   
 ## <a name="code"></a>Kod  
- MASM ile ilgili örnekler için derleyici örneklerini indirin [Visual C++ örnekleri ve ilgili belgeler için Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=178749).  
+ MASM ile ilgili örnekler için derleyici örneklerini indirin [Visual C++ örnekleri ve ilgili belgeler için Visual Studio 2010](http://go.microsoft.com/fwlink/p/?linkid=178749).  
   
  Aşağıdaki örnek kullanımını gösteren `.MODEL` yönergesi.  
   
@@ -94,4 +95,4 @@ end
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [Visual C++ örnekleri ve Visual Studio 2010 için ilgili belgeler](http://go.microsoft.com/fwlink/?LinkID=178749)
+ [Visual C++ örnekleri ve Visual Studio 2010 için ilgili belgeler](http://go.microsoft.com/fwlink/p/?linkid=178749)

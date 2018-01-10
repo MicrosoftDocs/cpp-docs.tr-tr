@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 156dd4cec32318be008d7c007d02f03495eeae23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 31490e3bb591af6568ffecddf68219c89a25e055
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
 Yalnızca aşağıdaki eylemleri içindeki Yardımcısı yordamı gerçekleştirmeden önce bildirim kancaları çağrılır:  
@@ -86,4 +87,4 @@ PfnDliHook   __pfnDliFailureHook2;
  Bildirimleri geçirin bir **DelayLoadInfo** bildirim değeri birlikte kanca işlevini yapısına. Bu veriler Gecikmeli Yükleme Yardımcısı yordamı tarafından kullanılan aynıdır. Bildirim değer tanımlanan değerlerden biri olacaktır [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata işleme ve bildirme](../../build/reference/error-handling-and-notification.md)
+ [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)

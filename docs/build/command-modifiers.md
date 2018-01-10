@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c1790a89381219191f273cfacb16e69b1495171a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 610725bf52522cd5041d2f6dcadb422bf942458a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-modifiers"></a>Komut Değiştiriciler
 İsteğe bağlı alanları veya sekmelerle ayrılmış bir komutu, önceki bir veya daha fazla komut değiştiriciler belirtebilirsiniz. Komutlarla olduğu gibi değiştiricileri girintili gerekir.  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
 |**!** *komutu*|Yürütür *komutu* bağımlı her dosya için *komutu* kullanan  **$ \* \***  (tüm bağımlı dosyaları bağımlılık) veya **$?** (tüm bağımlı dosyaları hedef daha sonraki bir zaman damgasına sahip bağımlılık).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası komutları](../build/commands-in-a-makefile.md)
+ [Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)

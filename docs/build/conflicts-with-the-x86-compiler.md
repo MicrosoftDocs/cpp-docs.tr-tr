@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a1a039b086b806c22e9cfe5ceda907916a7cf5de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b2b9c4cf871e8436a8da34a862d205541e7dc5c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conflicts-with-the-x86-compiler"></a>x86 Derleyicisi ile Çakışma
 X86 kullandığınızda 4 bayt yığında otomatik olarak hizalanmaz büyük veri türleri bir uygulama derlemek için derleyicisi. Çünkü derleyici olan bir 4 bayt hizalı yığını, 4 bayttan 64-bit tamsayı, büyük bir şey yapamazsınız otomatik olarak hizalı bir 8 bayt adresine x86 mimarisi.  

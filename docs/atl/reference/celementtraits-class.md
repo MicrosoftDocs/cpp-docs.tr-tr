@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cda18f6148f9a1cbc39a6e7003cce6324e36eeeb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ebe629a08170ce011b22595c8b821b278e16faa7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="celementtraits-class"></a>CElementTraits sınıfı
 Bu sınıf tarafından koleksiyon sınıfları, yöntemleri ve işlevleri taşıma, kopyalama, karşılaştırma ve karma işlemleri için sağlamak için kullanılır.  

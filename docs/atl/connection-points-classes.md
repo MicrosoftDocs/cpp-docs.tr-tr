@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ef188a5fc03a60c3481477d000662d595b7d4dd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e85194547b78e3d3fa3bba868be02c705fcf9a43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="connection-points-classes"></a>Bağlantı noktaları sınıfları
 Aşağıdaki sınıflar bağlantı noktaları için destek sağlar:  
@@ -43,12 +44,12 @@ Aşağıdaki sınıflar bağlantı noktaları için destek sağlar:
 -   [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) olay havuzu ile birlikte çalışır eşleme uygun işleyiciyi işlevi için rota olayları sınıfınızda.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [Bağlantı noktaları](../atl/atl-connection-points.md)  
+ [Bağlantı Noktaları](../atl/atl-connection-points.md)  
   
- [Olay işleme ve ATL](../atl/event-handling-and-atl.md)  
+ [Olay İşleme ve ATL](../atl/event-handling-and-atl.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
  [Bağlantı noktası makroları](../atl/reference/connection-point-macros.md)   
- [Bağlantı noktası genel işlevler](../atl/reference/connection-point-global-functions.md)
+ [Bağlantı Noktası Genel İşlevleri](../atl/reference/connection-point-global-functions.md)
 

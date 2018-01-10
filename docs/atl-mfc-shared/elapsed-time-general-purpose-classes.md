@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 700b5bf66080a23d15e4299d15b12373f5af7dbc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 51eea60669fb7ad35525d65013ffc8420649349b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="elapsed-time-general-purpose-classes"></a>Geçen süre: Genel amaçlı sınıfları
 Aşağıdaki yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu.  
@@ -40,5 +41,5 @@ Aşağıdaki yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime
      Hesaplanan sonra `elapsedTime`, üye işlevlerini kullanabilirsiniz `CTimeSpan` geçen süre değerinin bileşenleri ayıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve saat: genel amaçlı sınıfları](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+ [Tarih ve Saat: Genel Amaçlı Sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
 

@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4738e3f5256fe654dd64541dfd021ba2b4fce090
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 52b74f51733947ca46c0ddb1039f92ce7f69e670
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL Koleksiyonları ve Numaralandırmalar
 A `collection` veri öğelerinin (Ham verileri veya diğer nesnelerin) grubuna erişim sağlayan bir arabirim sağlayan bir COM nesnesidir. Bir grup erişimi sağlama olarak bilinen için standartlarını takip eden bir arabirim bir *koleksiyonu arabirimi*.  
@@ -34,13 +35,13 @@ A `collection` veri öğelerinin (Ham verileri veya diğer nesnelerin) grubuna e
  Okumayı archetypal (ancak tamamen sanal) tarafından Numaralandırıcı arabirimleri hakkında daha fazla bilgiyi [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) arabirimi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [ATL koleksiyon ve Numaralandırıcı sınıfları](../atl/atl-collection-and-enumerator-classes.md)  
+ [ATL Koleksiyonu ve Numaralandırıcısı Sınıfları](../atl/atl-collection-and-enumerator-classes.md)  
  Kısaca açıklayan ve Koleksiyonlar ve numaralandırmalar yardımcı olacak ATL sınıfları bağlantılar uygulamak sağlar.  
   
- [Tasarım ilkeleri toplama ve Numaralandırıcı arabirimleri](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
+ [Koleksiyon ve Numaralandırıcı Arabirimleri için Tasarım İlkeleri](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
  Her tür arabirimi arkasında farklı tasarım ilkeleri açıklanır.  
   
- [C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama](../atl/implementing-an-stl-based-collection.md)  
+ [C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)  
  C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama anlatan genişletilmiş örneği.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

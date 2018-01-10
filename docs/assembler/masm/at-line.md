@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2ef233651467158d44641fcd2be851bf8c0fc3c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70dc6fbb16134eb6c4a2541524d2306e5ce26226
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="line"></a>@Line
 Geçerli dosya kaynak satır numarasını (sayısal eşitlemek).  
@@ -33,4 +34,4 @@ Geçerli dosya kaynak satır numarasını (sayısal eşitlemek).
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller başvurusu](../../assembler/masm/symbols-reference.md)
+ [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

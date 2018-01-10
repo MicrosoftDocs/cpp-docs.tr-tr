@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 05b718b20ad941764158f2de461614885b0627fa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 50bb10acda1175d2cca12e7e4aff6fc9e5bae73a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rebase"></a>/REBASE
 ```  
@@ -44,4 +45,4 @@ ms.lasthandoff: 10/24/2017
 |AŞAĞI|Bitiş adresi temel adresleri aşağı atamak EDITBIN söyler. Dosyaları adres aralığı sonuna aşağıdaki olası en yüksek adresi içinde bulunan ilk dosyasını belirtilen sırada atanır. Dosyaları alma için yeterli adres alanı emin olmak için temel aşağı ile kullanılması gerekir. Belirtilen dosyaları tarafından ihtiyaç duyulan adres alanı belirlemek için EDITBIN ile /REBASE dosyalarda çalıştırmak ve görüntülenen toplam boyutu 64 KB ekleyin.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

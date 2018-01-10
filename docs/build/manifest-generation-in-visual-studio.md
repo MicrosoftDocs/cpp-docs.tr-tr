@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ecd9ce0236a305fd31dec2ccc1ac3197d02908bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d701d73103ee2c5ac72eb36d9919132f0578b1b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="manifest-generation-in-visual-studio"></a>Visual Studio'da Bildirim Oluşturma
 Bildirim dosyası oluşturma belirli bir projenin projede denetlenebilir **özellik sayfaları** iletişim. Üzerinde **yapılandırma özellikleri** sekmesini tıklatın, **bağlayıcı**, ardından **bildirim dosyası**, ardından **oluşturmak bildirim**. Varsayılan olarak, bir bildirim dosyası oluşturmak için yeni projeler proje özelliklerini ayarlanır. Bununla birlikte kullanarak bir proje için bildirim oluşturulmasını devre dışı bırakmak mümkündür **oluşturmak bildirim** projesinin özelliği. Bu özellik ayarlandığında **Evet**, bu proje için bildirim oluşturulur. Aksi takdirde bağlayıcı uygulama kodunun bağımlılıkları çözümlenirken derleme bilgilerini yoksayar ve bildirim oluşturmaz.  
@@ -41,4 +42,4 @@ Bildirim dosyası oluşturma belirli bir projenin projede denetlenebilir **özel
  [Nasıl yapılır: C/C++ uygulamasına bildirim katıştırma](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md)   
  [Özel derlemeler hakkında](http://msdn.microsoft.com/library/ff951638)   
  [Bildirim aracı](http://msdn.microsoft.com/library/aa375649)   
- [C/C++ programları bildirim üretimini anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+ [C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)

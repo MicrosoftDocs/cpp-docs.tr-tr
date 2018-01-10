@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 16848150802ec3fb097f6d19f0b1b4f8b11c8f69
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ab796752cef10c48036966c2947d711a0e385032
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML Denetimleri İçin ATL Desteği
 ATL kullanarak, dinamik HTML (DHTML) özelliğine sahip bir denetim oluşturabilirsiniz. ATL DHTML denetimi için:  
@@ -39,19 +40,19 @@ ATL kullanarak, dinamik HTML (DHTML) özelliğine sahip bir denetim oluşturabil
  ATL DHTML denetimi, bir Web tarayıcısı veya ActiveX denetimi Test kapsayıcısı gibi diğer kapsayıcısındaki görüntüleyebilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [DHTML denetimi proje öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md)  
+ [DHTML Denetim Projesinin Öğelerini Tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md)  
  DHTML denetimi proje öğelerini açıklar.  
   
- [DHTML C++ kodu çağırma](../atl/calling-cpp-code-from-dhtml.md)  
+ [DHTML’den C++ Kodu Çağırma](../atl/calling-cpp-code-from-dhtml.md)  
  DHTML denetiminden C++ kodu çağırma ilişkin bir örnek verilmektedir.  
   
- [ATL DHTML denetimi oluşturma](../atl/creating-an-atl-dhtml-control.md)  
+ [ATL DHTML Denetimi Oluşturma](../atl/creating-an-atl-dhtml-control.md)  
  DHTML denetimi oluşturmak için adımlar listelenmektedir.  
   
- [ATL DHTML denetimi test etme](../atl/testing-the-atl-dhtml-control.md)  
+ [ATL DHTML Denetimini Test Etme](../atl/testing-the-atl-dhtml-control.md)  
  Derleme ve ilk DHTML denetimi proje test gösterilmektedir.  
   
- [ATL DHTML denetimi değiştirme](../atl/modifying-the-atl-dhtml-control.md)  
+ [ATL DHTML Denetimini Değiştirme](../atl/modifying-the-atl-dhtml-control.md)  
  Bazı işlevler denetimine ekleme gösterilmektedir.  
   
  [Değiştirilen ATL DHTML denetimi test etme](../atl/testing-the-modified-atl-dhtml-control.md)  

@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 286d68484709c171ddcca35862c0329ffe555c15
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe45700a941a8a59439b816124728f43e5f54f44
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ipointerinactiveimpl-class"></a>IPointerInactiveImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve [IPointerInactive](http://msdn.microsoft.com/library/windows/desktop/ms693712) arabirim yöntemleri.  

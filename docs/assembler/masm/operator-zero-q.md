@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c882fd2f6dbc94c6cd379ae716314d5af32e6970
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 55b61084b5374838a7e75da8623a859e393aa798
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-zero"></a>ZERO? işleci
 Sıfır bayrağı durumu. İçinde yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.  
@@ -37,4 +38,4 @@ ZERO?
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

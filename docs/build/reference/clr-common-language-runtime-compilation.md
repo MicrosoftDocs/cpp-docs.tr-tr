@@ -24,11 +24,12 @@ caps.latest.revision: "72"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d6c6882732064b002f0c2d4eef03a0fee2f62287
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a867203585a66bd07eb9f95e289557e82e0553a
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 Ortak dil çalışma zamanı (CLR) özellikleri kullanmak için uygulamaları ve bileşenleri sağlar.  
@@ -75,7 +76,7 @@ Ortak dil çalışma zamanı (CLR) özellikleri kullanmak için uygulamaları ve
  Visual C++ 2005 önce **/clr:noAssembly** gerekli **/LD**. **/LD** belirttiğinizde şimdi kapsanan **/clr:noAssembly**.  
   
  **/CLR:initialAppDomain**  
- Sağlayan bir [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] CLR sürüm 1 çalıştırmak için uygulama. Kullanırsanız **initialAppDomain**, bazı ele alınmıştır sorunları görebilirsiniz sonra [hata: Visual C++ bileşenleri için Uzantılar yönetilen kullandığınızda AppDomainUnloaded özel durum](http://go.microsoft.com/fwlink/?LinkID=169465) Microsoft Destek Web sitesi.  
+ Sağlayan bir [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] CLR sürüm 1 çalıştırmak için uygulama. Kullanırsanız **initialAppDomain**, bazı ele alınmıştır sorunları görebilirsiniz sonra [hata: Visual C++ bileşenleri için Uzantılar yönetilen kullandığınızda AppDomainUnloaded özel durum](http://go.microsoft.com/fwlink/p/?linkid=169465) Microsoft Destek Web sitesi.  
   
  Kullanarak derlenmiş bir uygulama **initialAppDomain** CLR 1. sürümü desteklenmediğinden, ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.  
   
@@ -163,4 +164,4 @@ class {} x;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

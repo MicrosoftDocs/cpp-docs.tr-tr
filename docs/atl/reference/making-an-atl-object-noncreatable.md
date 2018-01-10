@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 38aa9f5fae45c9d5fa1e413763bd5fa2e65ab795
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e0e37779b081de457782ee59324a00cca5fedaea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="making-an-atl-object-noncreatable"></a>ATL nesne Noncreatable yapma
 Bir istemci doğrudan nesneyi oluşturamıyor ATL tabanlı COM nesnesinin özniteliklerini değiştirebilirsiniz. Bu durumda, nesne başka bir nesne üzerinde bir yöntem çağrısı ile döndürülen yerine doğrudan oluşturulur.  
@@ -49,5 +50,5 @@ Bir istemci doğrudan nesneyi oluşturamıyor ATL tabanlı COM nesnesinin öznit
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

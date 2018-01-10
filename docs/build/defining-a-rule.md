@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7e720613dd4d918b2b697a6ff21a8950f0c5adc2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0d6ca616e3685db36d6d24b339a860eab4c6150
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="defining-a-rule"></a>Kural Tanımlama
 *Fromext* bağımlı bir dosyanın uzantısını temsil eder ve *toext* bir hedef dosya uzantısını temsil eder.  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/24/2017
  [Yolları kurallarda Ara](../build/search-paths-in-rules.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkarım kuralları](../build/inference-rules.md)
+ [Çıkarım Kuralları](../build/inference-rules.md)
