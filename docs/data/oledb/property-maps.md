@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c51d50cb52562b60c1d9615e0617a02bef0cbcf3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 05bd576e6e55c94306a8dd648c57a4d606bed696
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="property-maps"></a>Özellik Eşlemeleri
 Oturum, satır kümesi ve isteğe bağlı komut nesnesine ek olarak, her sağlayıcısı bir veya daha fazla özelliklerini destekler. Bu özellikler OLE DB Sağlayıcı Sihirbazı tarafından oluşturulan üstbilgi dosyalarında bulunan özellik eşlemeleri tanımlanır. Her üstbilgi dosyası nesne ya da bu dosyasında tanımlanan nesneleri için tanımlanan OLE DB özellik grubunun özellikleri için bir eşleme içerir. Veri kaynağı nesnesi içeren üstbilgi dosyası için özellik eşlemesi de içeren [veri kaynağı özellikleri](https://msdn.microsoft.com/en-us/library/ms724188\(v=vs.140\).aspx). Session.h içeren için özellik eşlemesi [oturum özellikleri](https://msdn.microsoft.com/en-us/library/ms714221.aspx). Satır kümesi ve komut nesneleri olarak adlandırılan bir tek üstbilgi dosyasında bulunan *projectname*RS.h. Bu özellikler, üyesi [satır kümesi özellikleri](https://msdn.microsoft.com/en-us/library/ms711252.aspx) grubu.  

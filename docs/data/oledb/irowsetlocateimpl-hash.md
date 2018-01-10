@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1331c3eb64a684ba322978993592aa2946d1f221
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7c3cb64979b8c1ff7a5b9d2e9441a91da0c77f2b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetlocateimplhash"></a>IRowsetLocateImpl::Hash
 Karma değeri belirtilen yer işaretleri için döndürür.  
@@ -50,4 +53,4 @@ Karma değeri belirtilen yer işaretleri için döndürür.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetLocateImpl sınıfı](../../data/oledb/irowsetlocateimpl-class.md)
+ [IRowsetLocateImpl Sınıfı](../../data/oledb/irowsetlocateimpl-class.md)

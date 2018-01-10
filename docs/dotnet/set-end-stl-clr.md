@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 097ed6eddf3b6099bd0b1fcf53fab449b2806618
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 70611bf9b8e7f99f034709499d82d05b24b817b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="setend-stlclr"></a>set::end (STL/CLR)
 Denetlenen dizinin bitişini belirtir.  
@@ -76,4 +79,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [set (STL/CLR)](../dotnet/set-stl-clr.md)   
- [set::Begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)
+ [set::begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)

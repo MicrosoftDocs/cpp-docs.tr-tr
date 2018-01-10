@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 15543574c29cea7bab8e99cc2e96d891c03c1282
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 3721f967290b540dd03d1cab2d12a4d47f3b3f73
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorpushback-stlclr"></a>vector::push_back (STL/CLR)
 Yeni bir son öğesi ekler.  
@@ -67,4 +70,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::pop_back (STL/CLR)](../dotnet/vector-pop-back-stl-clr.md)
+ [vector::pop_back (STL/CLR)](../dotnet/vector-pop-back-stl-clr.md)

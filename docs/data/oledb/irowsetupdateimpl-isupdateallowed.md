@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: feaa5b397989667da62bbf979603391c08eada2c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 312d0488afc73d38ebd1ceb8a3f4334468607ed9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetupdateimplisupdateallowed"></a>IRowsetUpdateImpl::IsUpdateAllowed
 Güvenlik güncelleştirmeleri ve benzeri önce bütünlüğünü denetlemek için bu yöntemi geçersiz kılın.  
@@ -55,4 +58,4 @@ Güvenlik güncelleştirmeleri ve benzeri önce bütünlüğünü denetlemek iç
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetUpdateImpl sınıfı](../../data/oledb/irowsetupdateimpl-class.md)
+ [IRowsetUpdateImpl Sınıfı](../../data/oledb/irowsetupdateimpl-class.md)

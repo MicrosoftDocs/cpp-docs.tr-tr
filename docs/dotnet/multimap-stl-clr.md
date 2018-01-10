@@ -18,11 +18,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b944be379b851410a7c45af5aa05e72dbf63037c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2c42fc8d71871a70e3a2d3ffa93a78a4e42d2f53
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multimap-stlclr"></a>çoklu eşleme (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multimap` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -77,7 +80,7 @@ template<typename Key,
 |[multimap::key_compare (STL/CLR)](../dotnet/multimap-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
 |[multimap::key_type (STL/CLR)](../dotnet/multimap-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
 |[multimap::mapped_type (STL/CLR)](../dotnet/multimap-mapped-type-stl-clr.md)|Her anahtar ile ilişkili eşlenen değer türü.|  
-|[multimap::Reference (STL/CLR)](../dotnet/multimap-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[multimap::reference (STL/CLR)](../dotnet/multimap-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[multimap::reverse_iterator (STL/CLR)](../dotnet/multimap-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[multimap::size_type (STL/CLR)](../dotnet/multimap-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
 |[multimap::value_compare (STL/CLR)](../dotnet/multimap-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
@@ -85,14 +88,14 @@ template<typename Key,
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[multimap::Begin (STL/CLR)](../dotnet/multimap-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
-|[multimap::Clear (STL/CLR)](../dotnet/multimap-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[multimap::Count (STL/CLR)](../dotnet/multimap-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[multimap::Empty (STL/CLR)](../dotnet/multimap-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[multimap::End (STL/CLR)](../dotnet/multimap-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[multimap::begin (STL/CLR)](../dotnet/multimap-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[multimap::clear (STL/CLR)](../dotnet/multimap-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[multimap::count (STL/CLR)](../dotnet/multimap-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[multimap::empty (STL/CLR)](../dotnet/multimap-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[multimap::end (STL/CLR)](../dotnet/multimap-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
 |[multimap::equal_range (STL/CLR)](../dotnet/multimap-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[multimap::ERASE (STL/CLR)](../dotnet/multimap-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[multimap::Find (STL/CLR)](../dotnet/multimap-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[multimap::erase (STL/CLR)](../dotnet/multimap-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[multimap::find (STL/CLR)](../dotnet/multimap-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[multimap::insert (STL/CLR)](../dotnet/multimap-insert-stl-clr.md)|Öğeleri ekler.|  
 |[multimap::key_comp (STL/CLR)](../dotnet/multimap-key-comp-stl-clr.md)|İki anahtar sıralama temsilcisi kopyalar.|  
 |[multimap::lower_bound (STL/CLR)](../dotnet/multimap-lower-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
@@ -101,20 +104,20 @@ template<typename Key,
 |[multimap::rbegin (STL/CLR)](../dotnet/multimap-rbegin-stl-clr.md)|Ters denetimli dizisi başlangıcını belirtir.|  
 |[multimap::rend (STL/CLR)](../dotnet/multimap-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[multimap::size (STL/CLR)](../dotnet/multimap-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[multimap::Swap (STL/CLR)](../dotnet/multimap-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[multimap::swap (STL/CLR)](../dotnet/multimap-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[multimap::to_array (STL/CLR)](../dotnet/multimap-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[multimap::upper_bound (STL/CLR)](../dotnet/multimap-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
 |[multimap::value_comp (STL/CLR)](../dotnet/multimap-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[multimap::operator (STL/CLR) =](../dotnet/multimap-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator! = (multimap) (STL/CLR)](../dotnet/operator-inequality-multimap-stl-clr.md)|Belirler bir `multimap` nesne diğerine eşit değil `multimap` nesnesi.|  
-|[operator < (multimap) (STL/CLR)](../dotnet/operator-less-than-multimap-stl-clr.md)|Belirler bir `multimap` nesnesi, başka değerinden `multimap` nesnesi.|  
-|[operator < = (multimap) (STL/CLR)](../dotnet/operator-less-or-equal-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir değerinden küçük veya eşit başka `multimap` nesnesi.|  
-|[operator == (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir diğerine eşit `multimap` nesnesi.|  
-|[operator > (multimap) (STL/CLR)](../dotnet/operator-greater-than-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir diğerinden daha büyük `multimap` nesnesi.|  
-|[operator > = (multimap) (STL/CLR)](../dotnet/operator-greater-or-equal-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir büyük veya ona eşit diğerine `multimap` nesnesi.|  
+|[multimap::operator= (STL/CLR)](../dotnet/multimap-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[operator!= (multimap) (STL/CLR)](../dotnet/operator-inequality-multimap-stl-clr.md)|Belirler bir `multimap` nesne diğerine eşit değil `multimap` nesnesi.|  
+|[operator< (multimap) (STL/CLR)](../dotnet/operator-less-than-multimap-stl-clr.md)|Belirler bir `multimap` nesnesi, başka değerinden `multimap` nesnesi.|  
+|[operator<= (multimap) (STL/CLR)](../dotnet/operator-less-or-equal-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir değerinden küçük veya eşit başka `multimap` nesnesi.|  
+|[operator== (multimap) (STL/CLR)](../dotnet/operator-equality-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir diğerine eşit `multimap` nesnesi.|  
+|[operator> (multimap) (STL/CLR)](../dotnet/operator-greater-than-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir diğerinden daha büyük `multimap` nesnesi.|  
+|[operator>= (multimap) (STL/CLR)](../dotnet/operator-greater-or-equal-multimap-stl-clr.md)|Belirler bir `multimap` nesnesidir büyük veya ona eşit diğerine `multimap` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

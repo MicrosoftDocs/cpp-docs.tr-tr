@@ -20,11 +20,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f4e36523d2fffd4f90897daf2fd22c4dba66c8fd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 3b0d46ac3164f7f609e8a8a8099d500d04d91bf1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 OLE DB satır kümesi nesnesi ve birkaç ilgili yalıtır arabirimleri ve satır kümesi veri işleme yöntemlerini sağlar.  
@@ -68,7 +71,7 @@ class CRowset
 |[ReleaseRows](../../data/oledb/crowset-releaserows.md)|Çağrıları [IRowset::ReleaseRows](https://msdn.microsoft.com/en-us/library/ms719771.aspx) geçerli satır tanıtıcısı serbest bırakmak için.|  
 |[SetData](../../data/oledb/crowset-setdata.md)|Veri değerlerini kullanarak bir satır, bir veya daha fazla sütun ayarlar [IRowsetChange:SetData](https://msdn.microsoft.com/en-us/library/ms721232.aspx).|  
 |[Geri alma](../../data/oledb/crowset-undo.md)|Bir satır için son fetch itibaren yapılan tüm değişiklikler geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).|  
-|[Güncelleştirme](../../data/oledb/crowset-update.md)|Bekleyen tüm geçerli satırda son getirme veya güncelleştirme yaptığınız değişiklikleri iletir.|  
+|[Güncelleştir](../../data/oledb/crowset-update.md)|Bekleyen tüm geçerli satırda son getirme veya güncelleştirme yaptığınız değişiklikleri iletir.|  
 |[UpdateAll](../../data/oledb/crowset-updateall.md)|Bekleyen tüm satırları son getirme veya güncelleştirme yapılan değişiklikler iletir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -84,4 +87,4 @@ class CRowset
  [MultiRead örnek](../../visual-cpp-samples.md)   
  [Örnek multiRead öznitelikleri](../../visual-cpp-samples.md)   
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+ [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

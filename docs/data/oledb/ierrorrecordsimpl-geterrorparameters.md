@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4a3ff1f97010f242a5335181c089398eb1f334bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 57d0454cefbf97c8d9b94b92f868b9a83b561038
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ierrorrecordsimplgeterrorparameters"></a>IErrorRecordsImpl::GetErrorParameters
 Hata parametrelerini döndürür.  
@@ -46,4 +49,4 @@ Hata parametrelerini döndürür.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ierrorrecordsımpl sınıfı](../../data/oledb/ierrorrecordsimpl-class.md)
+ [IErrorRecordsImpl Sınıfı](../../data/oledb/ierrorrecordsimpl-class.md)

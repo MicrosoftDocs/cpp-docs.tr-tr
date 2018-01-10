@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27fc4f214a3f96f1821abbac223757f8c7ab5ad5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 78cbdc6c4f043b0ed5cdf30c86d575a01153c80a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmapclear-stlclr"></a>hash_map::clear (STL/CLR)
 Tüm öğeleri kaldırır.  
@@ -85,4 +88,4 @@ size() = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)   
- [hash_map::ERASE (STL/CLR)](../dotnet/hash-map-erase-stl-clr.md)
+ [hash_map::erase (STL/CLR)](../dotnet/hash-map-erase-stl-clr.md)

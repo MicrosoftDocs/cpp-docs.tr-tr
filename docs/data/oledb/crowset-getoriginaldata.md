@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d7a1c5fe26d17ac353138abc21b3ae46d9a72101
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5b1799ce2ead7d3369fa1d4b81a8a6553b37f1ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetgetoriginaldata"></a>CRowset::GetOriginalData
 Çağrıları **IRowsetUpdate::GetOriginalData** en son öğesinden alınan veya veri kaynağına aktarılan verileri almak üzere.  

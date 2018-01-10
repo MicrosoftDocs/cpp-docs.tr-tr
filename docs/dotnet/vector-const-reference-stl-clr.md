@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 26c1e9d2e472cdab389f9b1fc58abdeb2fbabcfd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: be4558111dc41d5a2c6c66463ea2c749e68bb1b2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorconstreference-stlclr"></a>vector::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  
@@ -72,4 +75,4 @@ a b c
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [Vector::Reference (STL/CLR)](../dotnet/vector-reference-stl-clr.md)   
- [Vector::value_type (STL/CLR)](../dotnet/vector-value-type-stl-clr.md)
+ [vector::value_type (STL/CLR)](../dotnet/vector-value-type-stl-clr.md)

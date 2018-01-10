@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 81fdd3069f6e8deeca616c85542a76d89c20202d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 03d64715f3bdfb6028fdb039451d4b4b004a059e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="your-role-in-working-with-a-record-view--mfc-data-access"></a>Kayıt görünümü (MFC veri erişimi) ile çalışırken sizin rolünüz
 Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için ne gerekir ve framework sizin için ne yaptığını gösterir.  
@@ -42,4 +45,4 @@ Aşağıdaki tabloda, genellikle kayıt görünümü ile çalışmak için ne ge
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)
+ [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

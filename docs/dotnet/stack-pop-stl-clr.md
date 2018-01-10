@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e461a312c75cdb6c9d33a1bfd59925372f60d5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 059e65ff61f478a854364c7c128573f2b3486bd1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackpop-stlclr"></a>stack::pop (STL/CLR)
 Son öğeyi kaldırır.  
@@ -75,4 +78,4 @@ a b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [Stack::push (STL/CLR)](../dotnet/stack-push-stl-clr.md)
+ [stack::push (STL/CLR)](../dotnet/stack-push-stl-clr.md)

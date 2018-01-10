@@ -22,11 +22,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c401cebf9fd09686a532031322793fd9bedac50
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 681654f79f0cb3574b0893bb9f726bea78435e74
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
 OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemesinde üzerinde konuları da içerir. [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
@@ -103,7 +106,7 @@ OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemes
  [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md)  
  Sahte bir uygulamasını sağlar `IRowsetNotify`, boş işlevleri için ile `IRowsetNotify` yöntemleri `OnFieldChange`, `OnRowChange`, ve `OnRowsetChange`.  
   
- [Şema satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)  
+ [Şema Satır Kümesi Sınıfları ve Typedef Sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)  
   
  OLE DB Şablonları, OLE DB şema satır kümeleri için karşılık gelen sınıf kümesi sağlar.  
   

@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2cc927d2e06def1eba726f3123e9968003e62d1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 888370cac57025418bc70b322703d8569a4be3d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-access-characters-in-a-systemstring"></a>Nasıl yapılır: Bir System::String'deki Karakterlere Erişme
 Karakter erişmek için bir <xref:System.String> nesne yüksek performanslı çağrılar için yönetilmeyen işlevlere `wchar_t*` dizeleri. İlk karakteri iç işaretçi yöntemi verir <xref:System.String> nesnesi. Bu işaretçinin kullanılabilir doğrudan değiştirilebilir veya sabitlenmiş ve sıradan bekleyen bir işleve geçirilen `wchar_t` dize.  
@@ -105,4 +108,4 @@ void deleteNode( ListNode ^ list, Int32 e ) {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+ [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

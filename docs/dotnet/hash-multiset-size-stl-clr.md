@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fce1f75c546e245c3007fefe1c993d5f9260c43d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 15688ba7ac9a9d08b180a024e1d47405be4464d6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmultisetsize-stlclr"></a>hash_multiset::size (STL/CLR)
 Öğe sayısını sayar.  
@@ -81,4 +84,4 @@ size() = 2 after adding 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)   
- [hash_multiset::Empty (STL/CLR)](../dotnet/hash-multiset-empty-stl-clr.md)
+ [hash_multiset::empty (STL/CLR)](../dotnet/hash-multiset-empty-stl-clr.md)

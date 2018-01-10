@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aad327c26c8684804c294fe5eb6b5bf41507f603
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4d6a7806183766d96c0d106d9d9e890b046f4563
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-verifiable-c-projects-ccli"></a>Nasıl yapılır: Doğrulanabilir C++ Projeleri Oluşturma (C++/CLI)
 Visual C++ Uygulama Sihirbazı doğrulanabilen projeler oluşturmaz, ancak projeleri doğrulanabilir dönüştürülebilir. Bu konu, proje özelliklerini ayarlamak ve doğrulanabilen uygulamaları oluşturmak için Visual C++ projeleri dönüştürmek için proje kaynak dosyaları değiştirmek açıklar.  
@@ -62,4 +65,4 @@ Visual C++ Uygulama Sihirbazı doğrulanabilen projeler oluşturmaz, ancak proje
 3.  Üzerinde **Gelişmiş** altında sayfa **bağlayıcı** düğümü girin `Main` olarak **giriş noktası** özellik değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
+ [Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)

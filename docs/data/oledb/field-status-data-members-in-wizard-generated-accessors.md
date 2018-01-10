@@ -16,11 +16,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e3991e2e5cab8814cba4e92882fbd978bdc051eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5b11350adfa70f38824744054df01d3d657e7474
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
 Bir tüketici oluşturmak için ATL OLE DB Tüketici Sihirbazı'nı kullandığınızda, sihirbaz veri üyesi, sütun eşlemesi belirttiğiniz her bir alan için kullanıcı kayıt sınıfı oluşturur. Her veri üyesi türünde `DWORD` ve ilgili alana karşılık gelen bir durum değeri içerir.  
@@ -84,7 +87,7 @@ END_COLUMN_MAP()
   
  Durum değerleri, belirli bir alan için bir NULL değer ayarlamak için de kullanabilirsiniz. Bunun yapılması, bir alan değeri sıfır yerine NULL olarak ayırt etmek istediğiniz durumlarda yardımcı olur. Bu NULL geçerli bir değer veya özel bir değer olup olmadığına karar vermek ve uygulamanızı bunu nasıl yöneteceğini karar size bağlıdır. OLE DB tanımlar **DBSTATUS_S_ISNULL** olarak genel bir NULL değerini belirtmenin doğru anlamına gelir. Tüketici veri okuyan ve değer null ise, durum alanı kümesine **DBSTATUS_S_ISNULL**. Tüketici NULL değeri ayarlamak istiyorsa tüketici durum değeri ayarlar **DBSTATUS_S_ISNULL** sağlayıcı çağırmadan önce.  
   
- Ardından, biçim açın ve arama **DBSTATUSENUM**. Sıfır olmayan durum karşı sayısal değerini sonra eşleştirebilirsiniz **DBSTATUSENUM** numaralandırma değerleri. Numaralandırma adı neyin yanlış olduğunu söylemek için yeterli değilse, "Bağlama veri değerleri" bölümündeki "Durum" konusuna [OLE DB Programcı Kılavuzu](http://go.microsoft.com/fwlink/?linkid=121548). Bu konu, tabloları veri alırken veya ayarlarken kullanılan durum değerlerini içerir. Uzunluk değerleri hakkında daha fazla bilgi için aynı bölüm "Uzunluğu" konusuna bakın.  
+ Ardından, biçim açın ve arama **DBSTATUSENUM**. Sıfır olmayan durum karşı sayısal değerini sonra eşleştirebilirsiniz **DBSTATUSENUM** numaralandırma değerleri. Numaralandırma adı neyin yanlış olduğunu söylemek için yeterli değilse, "Bağlama veri değerleri" bölümündeki "Durum" konusuna [OLE DB Programcı Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=121548). Bu konu, tabloları veri alırken veya ayarlarken kullanılan durum değerlerini içerir. Uzunluk değerleri hakkında daha fazla bilgi için aynı bölüm "Uzunluğu" konusuna bakın.  
   
 ## <a name="retrieving-the-length-or-status-of-a-column"></a>Uzunluk veya bir sütun durumunu alma  
  Değişken uzunluklu sütun uzunluğu ya da bir sütun durumunu alabilir (denetlemek için **DBSTATUS_S_ISNULL**, örneğin):  

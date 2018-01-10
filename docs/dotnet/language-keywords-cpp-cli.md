@@ -14,11 +14,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3a1d83f94f6c5d03dc396c9d3f6c6fcbcfde5a4d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e1107ad45feaae470ed2a7481f80bb17c389042d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="language-keywords-ccli"></a>Dil Anahtar Sözcükleri (C++/CLI)
 Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen çeşitli dil anahtar sözcükleri.  
@@ -41,4 +44,4 @@ Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilen çeşitli di
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)   
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

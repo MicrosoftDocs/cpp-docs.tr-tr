@@ -14,11 +14,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73a397664d5e5a9074731b6eac879fe965580f05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b02d6806abedb407d1c53ec8022e92983ce21d28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="user-defined-operators-ccli"></a>Kullanıcı Tanımlı İşleçler (C++/CLI)
 Yönetilen türler için kullanıcı tanımlı işleçler statik üyeleri veya örnek üyeleri olarak ya da genel kapsamlı izin verilir. Ancak, yalnızca statik işleçleri meta veriler üzerinden Visual C++ dışındaki bir dilde yazılmış istemcilere erişilebilir.  
@@ -171,4 +174,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+ [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

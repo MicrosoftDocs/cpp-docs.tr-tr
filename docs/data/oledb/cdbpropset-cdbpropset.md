@@ -19,11 +19,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1b583ca5639ad542011fd9d4db0839034a4389e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 239f6c0a03186736d35b8d082913aeb76cac1d14
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdbpropsetcdbpropset"></a>CDBPropSet::CDBPropSet
 Oluşturucu. Başlatır **rgProperties**, **cProperties**, ve **guidPropertySet** alanlarının [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) yapısı.  

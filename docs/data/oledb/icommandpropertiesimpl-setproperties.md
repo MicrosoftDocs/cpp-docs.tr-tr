@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1298fe71b0fc71caa34f7b84d5bc33f1208b0e58
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: eae1f851df920633342ab44a29a4f800d6e7a4e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandpropertiesimplsetproperties"></a>ICommandPropertiesImpl::SetProperties
 Komut nesnesi için özellikleri ayarlar.  
@@ -45,4 +48,4 @@ Komut nesnesi için özellikleri ayarlar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icommandpropertiesımpl sınıfı](../../data/oledb/icommandpropertiesimpl-class.md)   
- [Icommandpropertiesımpl::GetProperties](../../data/oledb/icommandpropertiesimpl-getproperties.md)
+ [ICommandPropertiesImpl::GetProperties](../../data/oledb/icommandpropertiesimpl-getproperties.md)

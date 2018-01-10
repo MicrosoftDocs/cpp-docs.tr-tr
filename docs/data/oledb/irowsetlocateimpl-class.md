@@ -18,11 +18,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ff76d78cd3f624e3bdb0d21af550a340a2aa498e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: da010f02ec29b4882ffeb1bdf1c5fa7fd67c8615
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl Sınıfı
 OLE DB uygulayan [IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx) rasgele satır satır kümesinden getirir arabirimi.  
@@ -103,4 +106,4 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
  [IRowsetLocate:IRowset](https://msdn.microsoft.com/en-us/library/ms721190.aspx)   
  [Yer işaretleri sağlayıcı desteği](../../data/oledb/provider-support-for-bookmarks.md)   
- [Yer işaretleri](https://msdn.microsoft.com/en-us/library/ms709728.aspx)
+ [Yer İşaretleri](https://msdn.microsoft.com/en-us/library/ms709728.aspx)

@@ -16,18 +16,21 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e7938022bfe2ba1a8f97420a217590de659d9e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2ed069e1f9d7effa686cd572bd505a41dcf60c04
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-consume-a-c-indexer-ccli"></a>Nasıl yapılır: C# Dizin Oluşturucusunu Kullanma (C++/CLI)
 Visual C++ oluşturucusu içermez; Özellikler dizine. Bir dizin oluşturulmuş özellik değilmiş gibi bir C# dizin oluşturucusunu kullanma, dizin oluşturucu erişim sağlar.  
   
  Dizin oluşturucular hakkında daha fazla bilgi için bkz:  
   
--   [Dizin oluşturucular](https://msdn.microsoft.com/library/6x16t2tx.aspx)  
+-   [Dizin Oluşturucular](/dotnet/csharp/programming-guide/indexers/index)  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki C# programı bir dizin oluşturucu tanımlar.  
@@ -100,4 +103,4 @@ Element #10 = 0
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Diğer .NET dilleri ile birlikte çalışabilirlik (C + +/ CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
+ [Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)

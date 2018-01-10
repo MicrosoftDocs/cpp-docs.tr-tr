@@ -19,11 +19,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0bc0c0e61b4500bae9589cbf6b536f1a23ae45c8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5148da4421b24a64dca97288975af42b9688e4ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locklock"></a>lock::lock
 Oluşturan bir `lock` nesnesi, isteğe bağlı olarak her zaman, belirtilen bir miktar süre ya da hiç için kilit bekleniyor.  
@@ -165,4 +168,4 @@ All threads completed.
  [lock üyeleri](../dotnet/lock-members.md)   
  [Kilit:: ~ lock](../dotnet/lock-tilde-lock.md)   
  [Lock::Acquire](../dotnet/lock-acquire.md)   
- [Lock::try_acquire](../dotnet/lock-try-acquire.md)
+ [lock::try_acquire](../dotnet/lock-try-acquire.md)

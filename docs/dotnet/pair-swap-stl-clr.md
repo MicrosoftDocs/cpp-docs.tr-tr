@@ -15,11 +15,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 19df7f3a290ffa14e63b557e3cea2d1d8f645a77
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: af5f109fe4e0b132c42054eb37263b82285d8dc3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pairswap-stlclr"></a>pair::swap (STL/CLR)
 İki çift içeriğini değiştirir.  
@@ -95,4 +98,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [çift (STL/CLR)](../dotnet/pair-stl-clr.md)   
- [pair::operator (STL/CLR) =](../dotnet/pair-operator-assign-stl-clr.md)
+ [pair::operator= (STL/CLR)](../dotnet/pair-operator-assign-stl-clr.md)

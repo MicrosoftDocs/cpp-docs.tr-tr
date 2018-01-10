@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8eb218546c299ffa95874bd8a3fcb2b16fa07a2a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: afe16dfefa719760c998c25cc107ba99caacff84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetimplnamefromdbid"></a>CRowsetImpl::NameFromDBID
 Bir dizeden ayıklar bir **DBID** ve kendisine kopyalar `bstr` geçirildi.  
@@ -57,4 +60,4 @@ Bir dizeden ayıklar bir **DBID** ve kendisine kopyalar `bstr` geçirildi.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRowsetImpl sınıfı](../../data/oledb/crowsetimpl-class.md)
+ [CRowsetImpl Sınıfı](../../data/oledb/crowsetimpl-class.md)

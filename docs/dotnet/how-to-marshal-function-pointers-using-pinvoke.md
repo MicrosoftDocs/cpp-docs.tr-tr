@@ -18,18 +18,21 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83899d25712cbf8ebe81be364baa9d67fecc1510
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: cf7f23ea9337b499d4ec80b19e3104074429cc71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama
 Bu konuda nasıl yönetilen temsilciler açıklanmaktadır P/Invoke .NET Framework özelliklerini kullanarak işlevleri ile birlikte yönetilmeyen işlev işaretçileri yerine kullanılabilir. Ancak, P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından Visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir. Aksi takdirde, aşağıdaki konulara bakın:  
   
--   [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
+-   [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
   
--   [Nasıl yapılır: sıralama geri aramalar ve temsilciler C++ birlikte çalışması kullanarak](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)  
   
  Bağımsız değişkenler yerel işlev işaretçisi yerine yönetilen bir temsilci ile yönetilen koddan çağrılabilir gibi işlev işaretçilerini ele yönetilmeyen API'ler. Derleyici otomatik olarak yönetilmeyen işlevlerle temsilci bir işlev işaretçisi olarak sıralar ve gerekli yönetilen ve yönetilmeyen geçiş kodunu ekler.  
   
@@ -97,4 +100,4 @@ int main() {
  DLL hiçbir bölümünün geleneksel kullanarak yönetilen kod açıktır Not #include yönergesi. İle içeri aktarılan işlevlerle sorunlar aslında, DLL yalnızca çalışma zamanında erişilir, böylece <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ (DllImport özniteliği) açık PInvoke kullanma](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+ [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9879169973987be35b46b363cf903d407d4fea17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: f12141a08ffdeeb3ced26d4313a8cfb245d2f3a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multisetclear-stlclr"></a>multiset::clear (STL/CLR)
 Tüm öğeleri kaldırır.  
@@ -85,4 +88,4 @@ size() = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)   
- [multiset::ERASE (STL/CLR)](../dotnet/multiset-erase-stl-clr.md)
+ [multiset::erase (STL/CLR)](../dotnet/multiset-erase-stl-clr.md)

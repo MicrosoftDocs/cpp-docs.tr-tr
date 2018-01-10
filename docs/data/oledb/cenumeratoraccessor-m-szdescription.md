@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2a58ba91f9b75eb2c6476fc61eb962c3b2f05658
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 3c80f31fe439fb6711a1f2e3fd6bb30af0f5cca4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cenumeratoraccessormszdescription"></a>CEnumeratorAccessor::m_szDescription
 Veri kaynağı veya numaralandırıcı açıklaması.  
@@ -43,4 +46,4 @@ WCHAR m_szDescription[129];
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CEnumeratorAccessor sınıfı](../../data/oledb/cenumeratoraccessor-class.md)
+ [CEnumeratorAccessor Sınıfı](../../data/oledb/cenumeratoraccessor-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 388a7ffd665652626dc48d4278a57e38c34e91b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: f4d2118cc8522e004f90fa0af35ac6d0cfb1090d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listempty-stlclr"></a>list::empty (STL/CLR)
 Bir öğe olup olmadığını sınar.  
@@ -78,4 +81,4 @@ empty() = True
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [List::size (STL/CLR)](../dotnet/list-size-stl-clr.md)
+ [list::size (STL/CLR)](../dotnet/list-size-stl-clr.md)

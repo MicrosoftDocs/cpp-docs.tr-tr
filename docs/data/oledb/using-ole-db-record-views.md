@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c4e57f320c8b207e7b1c8721ab25744cd1f128bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 03e88eaafa82e346c720810bf567d867a9cd6096
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-ole-db-record-views"></a>OLE DB Kayıt Görünümlerini Kullanma
 Bir MFC uygulamasında OLE DB satır kümesi veri görüntülemek istiyorsanız, MFC sınıfını kullanmalısınız [COleDBRecordView](../../mfc/reference/coledbrecordview-class.md). Kayıt görünümü nesne oluşturulduğu `COleDBRecordView` MFC denetimleri veritabanı kayıtlarını görüntülemenizi sağlar. Kayıt görünümü oluşturulan bir OLE DB satır kümesi nesnesi doğrudan bağlı bir iletişim formu görünümdür `CRowset` Şablon sınıfı. Satır kümesi nesnesi için bir tanıtıcı edinmek basittir:  
@@ -42,4 +45,4 @@ CRowset<CAccessor<CProductAccessor>> myRowSet = myRecordView.OnGetRowset();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Erişimcileri kullanma](../../data/oledb/using-accessors.md)   
- [COleDBRecordView sınıfı](../../mfc/reference/coledbrecordview-class.md)
+ [COleDBRecordView Sınıfı](../../mfc/reference/coledbrecordview-class.md)

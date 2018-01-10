@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2cf196fe21c70bbceec90acf3242a995548fe845
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 0536366e445995d6c4e77d58eb0a48e08207f263
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-retrieve-file-information-ccli"></a>Nasıl yapılır: Dosya Bilgisi Alma (C++/CLI)
 Aşağıdaki kod örneğinde gösterilmektedir <xref:System.IO.FileInfo> sınıfı. Bir dosya adı varsa, bu sınıfı oluşturma ve son değiştirilme dosya için dosya boyutu, dizin, tam adı ve tarih ve saat gibi ilgili bilgileri almak için kullanabilirsiniz.  
@@ -64,4 +67,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dosya ve akış t-O](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

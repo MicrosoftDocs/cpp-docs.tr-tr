@@ -16,11 +16,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8d959702a7de8df9d90ca6dd855725901543dc92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 05c6c2584e39ed145a30c919ed850aac45905a85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-implement-a-plug-in-component-architecture-using-reflection-ccli"></a>Nasıl yapılır: Yansıma Kullanarak Eklenti Bileşeni Mimarisi Uygulama (C++/CLI)
 Aşağıdaki kod örnekleri, basit bir "eklenti" mimarisi uygulamada yansıma kullanımını gösterir. İlk liste uygulamadır ve ikincisi ise eklentidir. Uygulama kendisini komut satırı bağımsız değişkeni olarak sağlanan eklentisi DLL'sini bulunan herhangi bir form tabanlı sınıflarını kullanarak dolduran bir birden çok belge biçimidir.  
@@ -128,4 +131,4 @@ protected:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yansıma (C + +/ CLI)](../dotnet/reflection-cpp-cli.md)
+ [Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)

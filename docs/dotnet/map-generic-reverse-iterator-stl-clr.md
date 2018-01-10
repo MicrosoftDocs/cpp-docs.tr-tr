@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7fa8295ea5557170fb940b0a9a2e446e9f29a533
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 075d7731dc2dcbb1c75865b518943a50a80be579
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapgenericreverseiterator-stlclr"></a>map::generic_reverse_iterator (STL/CLR)
 Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  
@@ -84,4 +87,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::generic_container (STL/CLR)](../dotnet/map-generic-container-stl-clr.md)   
- [Map::generic_iterator (STL/CLR)](../dotnet/map-generic-iterator-stl-clr.md)
+ [map::generic_iterator (STL/CLR)](../dotnet/map-generic-iterator-stl-clr.md)

@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 38787c8d4034b9c5dfde9f408f57f298b3a6adab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d8e2bc2bb6b17f2f66c6d94bf52ece8cbb6a3008
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetlocateimplmrgbookmarks"></a>IRowsetLocateImpl::m_rgBookmarks
 Yer işaretleri dizisi.  
@@ -41,4 +44,4 @@ CAtlArray<DBROWCOUNT> m_rgBookmarks;
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetLocateImpl sınıfı](../../data/oledb/irowsetlocateimpl-class.md)
+ [IRowsetLocateImpl Sınıfı](../../data/oledb/irowsetlocateimpl-class.md)

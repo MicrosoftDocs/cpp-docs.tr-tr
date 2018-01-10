@@ -17,11 +17,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7957c92ca243a9055bfce62232067e51b3f395d0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a238453c7879cab29f0fa058b654841f0c4786cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="initonly-ccli"></a>initonly (C++/CLI)
 **initonly** olduğundan bu değişken atamayı gösteren bir bağlama duyarlı anahtar sözcüğü yalnızca parçası olarak bildirimi veya aynı sınıftaki statik oluşturucuda meydana gelebilir.  
@@ -45,4 +48,4 @@ ref struct Y1 {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+ [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

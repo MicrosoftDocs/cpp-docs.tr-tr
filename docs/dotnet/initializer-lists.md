@@ -14,11 +14,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 99d62f1aec8cf06fff5de98f4681ddc67c3a9e71
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 1af020bec295f0f949b7ebb6abe88102f3942b1f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="initializer-lists"></a>Başlatıcı Listeleri
 Başlatıcı Listeleri artık önce temel sınıf oluşturucu olarak adlandırılır.  
@@ -27,4 +30,4 @@ Başlatıcı Listeleri artık önce temel sınıf oluşturucu olarak adlandırı
  Visual C++ 2005 önce temel sınıf oluşturucu başlatıcı listesinden önce C++ için Yönetilen Uzantılar ile derleme yapılırken çağrıldı. Şimdi, ile derleme yapılırken **/CLR**, başlatıcı listesi önce çağırılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel dil değişiklikleri (C + +/ CLI)](../dotnet/general-language-changes-cpp-cli.md)
+ [Genel Dil Değişiklikleri (C++/CLI)](../dotnet/general-language-changes-cpp-cli.md)
