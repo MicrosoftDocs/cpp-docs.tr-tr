@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5c71e29fa31c89c030b74843a9d776923fed6789
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 68afd6b2a0a1c17cd032d6cea84aefde8c368204
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handletoperator-operator"></a>HandleT::operator= İşleci
 Belirtilen HandleT nesnenin değerini geçerli HandleT nesneye taşır.  
@@ -48,4 +51,4 @@ HandleT& operator=(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT sınıfı](../windows/handlet-class.md)
+ [HandleT Sınıfı](../windows/handlet-class.md)

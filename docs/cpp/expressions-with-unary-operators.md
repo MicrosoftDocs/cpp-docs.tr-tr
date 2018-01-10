@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48ebd210b67f07847ceccec05625fe01eb15055b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44485f0c5749db36ececd2061955f9956cb49ece
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="expressions-with-unary-operators"></a>Birli İşleçli İfadeler
 Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşağıdaki gibidir:  
@@ -87,4 +88,4 @@ Birli işleçleri deyimde yalnızca bir işlenen hareket. Birli işleçleri aşa
  *Ayırma ifade* başvurduğu `new` işleci. *Ayırmayı kaldırma ifade* başvurduğu `delete` işleci. Daha fazla bilgi için bu konunun önceki kısımlarında bağlantılara bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade türleri](../cpp/types-of-expressions.md)
+ [İfade Türleri](../cpp/types-of-expressions.md)

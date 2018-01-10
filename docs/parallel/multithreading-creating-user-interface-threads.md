@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d9186b7c056321dcb3ef394e44ae93d530e29810
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 105685e0db4689978ef1e6f8615bb5e5f8acdd43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-creating-user-interface-threads"></a>Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma
 Bir kullanıcı arabirimi iş parçacığı kullanıcı girişini işlemek ve diğer uygulama bölümlerini çalışan iş parçacıklarının bağımsız olarak kullanıcı olaylarına tepki vermek için yaygın olarak kullanılır. Ana uygulama iş parçacığı (sağlanan, `CWinApp`-türetilmiş sınıf) daha önce oluşturduğunuz ve sizin için başlatıldı. Bu konu, ek kullanıcı arabirimi iş parçacıkları oluşturmak için gereken adımları açıklar.  
@@ -62,11 +63,11 @@ Bir kullanıcı arabirimi iş parçacığı kullanıcı girişini işlemek ve di
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [Çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma](../parallel/multithreading-terminating-threads.md)  
+-   [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](../parallel/multithreading-terminating-threads.md)  
   
--   [Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](../parallel/multithreading-creating-worker-threads.md)  
+-   [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../parallel/multithreading-creating-worker-threads.md)  
   
 -   [İşlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

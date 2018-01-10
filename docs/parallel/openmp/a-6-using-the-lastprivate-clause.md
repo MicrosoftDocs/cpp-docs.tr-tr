@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e35ad34ce3bd1f97a58273522520d6ab67710505
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1744787e1dfb90fa9af93db5dba4eecd600b4334
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a6---using-the-lastprivate-clause"></a>A.6   lastprivate Yan Tümcesini Kullanma
 Bazen doğru yürütme son yineleme döngüsü bir değişkene atar değere bağlıdır. Programlara tür değişkenlerinin bağımsız değişken olarak listelenmelidir bir `lastprivate` yan tümcesi ([bölüm 2.7.2.3](../../parallel/openmp/2-7-2-3-lastprivate.md) sayfasında 27) böylece değişkenlerin değerleri zaman döngü sırayla yürütülen ile aynı olur.  

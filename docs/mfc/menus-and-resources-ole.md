@@ -29,11 +29,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ec11875a7004f8b833869440e59252325558cada
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: efe0a5f6dae2cece571eddabc4094ebb87df175b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="menus-and-resources-ole"></a>Menüler ve Kaynaklar (OLE)
 Bu grubun makalelerin menüleri ve kaynakları MFC OLE belge uygulamaları kullanımını açıklar.  
@@ -63,11 +64,11 @@ Bu grubun makalelerin menüleri ve kaynakları MFC OLE belge uygulamaları kulla
   
  Aşağıdaki makaleler kapsayıcıları, sunucuları ve yerinde etkinleştirme uygulanması için gerekli birleştirme menüsü ile ilgili konuları ele alınmıştır:  
   
--   [Menüler ve kaynaklar: kapsayıcı ekleme](../mfc/menus-and-resources-container-additions.md)  
+-   [Menüler ve Kaynaklar: Kapsayıcı Ekleme](../mfc/menus-and-resources-container-additions.md)  
   
--   [Menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md)  
+-   [Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)  
   
--   [Menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md)  
+-   [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE](../mfc/ole-in-mfc.md)

@@ -59,11 +59,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3dad9078ba4c683b4d29d366943559ad8228cb31
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 798e39624c617d8178a7598e74451ca2851cfe12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nextafter-nextafterf-nextafterl-nextafter-nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 Sonraki gösterilebilir kayan nokta değeri döndürür.  
@@ -160,4 +161,4 @@ long double nexttowardl(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [isNaN, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)
+ [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)

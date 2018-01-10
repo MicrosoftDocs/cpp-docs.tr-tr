@@ -231,11 +231,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8cf9d7244ce587881062fcd95ce1d3f3414e2ca8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 545cf67ff790edeb2303f95365c34ca71e4dc7f6
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 HTML düzenleme bileşenini temsil eder.  
@@ -1466,7 +1467,7 @@ long QueryStatus(long cmdID) const;
   
 ### <a name="parameters"></a>Parametreler  
  `cmdID`  
- Komut kimliği. Komut tanımlayıcıları gelen alınır `CGID_MSHTML` komut grubu. Bu komutlar Mshtmcid.h içinde tanımlanmıştır. Listenin çevrimiçi bulabileceğiniz [MSHTML komut tanımlayıcıları](http://go.microsoft.com/fwlink/linkid=149220).  
+ Komut kimliği. Komut tanımlayıcıları gelen alınır `CGID_MSHTML` komut grubu. Bu komutlar Mshtmcid.h içinde tanımlanmıştır. Listenin çevrimiçi bulabileceğiniz [MSHTML komut tanımlayıcıları](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) durumunu gösteren `cmdID`, ya da 0 hata durumunda.  

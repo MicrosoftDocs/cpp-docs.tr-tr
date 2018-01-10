@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 467888dc773a8d84e5a1b3fc1fd2c337b06654be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2d72ddda460a88830f7f7692f4c9707fa3101a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="profile-guided-optimizations"></a>Profil Temelli İyileştirmeler
 Profil temelli iyileştirme burada iyileştirici test çalışmalarını .exe veya .dll dosyasının verilerini kullanır bir çıktı dosyası en iyi hale getirmenize olanak tanır. Verileri nasıl program bir üretim ortamında gerçekleştirmek büyük olasılıkla temsil eder.  
@@ -83,9 +84,9 @@ Profil temelli iyileştirme burada iyileştirici test çalışmalarını .exe ve
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Profil temelli iyileştirme eklentisi](../../build/reference/profile-guided-optimization-in-the-performance-and-diagnostics-hub.md)  
   
- [El ile profil temelli iyileştirme için araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)  
+ [El ile Profil Temelli İyileştirme Araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)  
   
- [Nasıl yapılır: birden çok PGO profilini tek profilde birleştirme](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)  
+ [Nasıl Yapılır: Birden Çok PGO Profilini Tek Profilde Birleştirme](../../build/reference/how-to-merge-multiple-pgo-profiles-into-a-single-profile.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)
+ [C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ef4d17e1fe6067c9cce36895c761f46d7d713b23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1501fe4f761b9bc8775018d6566ceff5fb0aa477
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="threading-models-and-critical-sections-classes"></a>İş parçacığı modelleri ve kritik bölümler sınıfları
 Bir iş parçacığı oluşturma aşağıdaki sınıflar tanımlamak modeli ve kritik bölüm:  

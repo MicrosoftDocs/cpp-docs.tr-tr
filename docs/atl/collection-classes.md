@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d2aacc778e6df974f364f2be9da72aa46fed8f4b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a0c710629b69ffe690767d2d2948ce73631344d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 Aşağıdaki sınıflar diziler, listeler, maps ve ayrıca karşılaştırmaları ve öğesi erişim yardımcı olmak için nitelikler yöntemleri için destek sağlar.  
@@ -92,9 +93,9 @@ Aşağıdaki sınıflar diziler, listeler, maps ve ayrıca karşılaştırmalar�
 -   [CStringRefElementTraits](../atl/reference/cstringrefelementtraits-class.md) Bu sınıf, koleksiyon sınıfı nesneleri depolanan dizeleri ilgili statik işlevler sağlar. String nesneleri ile başvuru olarak dağıtılır.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [ATL koleksiyon sınıfları](../atl/atl-collection-classes.md)  
+ [ATL Koleksiyon Sınıfları](../atl/atl-collection-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
- [Koleksiyon sınıfları](../atl/atl-collection-classes.md)
+ [Koleksiyon Sınıfları](../atl/atl-collection-classes.md)
 

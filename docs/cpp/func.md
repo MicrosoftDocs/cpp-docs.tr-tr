@@ -1,5 +1,5 @@
 ---
-title: __func__ | Microsoft Docs
+title: __FUNC__ | Microsoft Docs
 ms.custom: 
 ms.date: 10/19/2017
 ms.reviewer: 
@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89a3f569a54c035ddb3f4a9ccc17ab5dfe919d0d
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: 5ddb92e84545de175734550eca8911590fa1d539
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="func"></a>__FUNC__
 

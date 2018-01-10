@@ -33,11 +33,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 12152137e899fbc5e8d73679bcda57fce5ff5f72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7987686fb0b9faa03cf4d5e4795116e9f0a608bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="seterrormode"></a>_set_error_mode
 Değiştirir `__error_mode` C çalışma zamanı hata iletisi programın sonlandırılması bir hata için nereye yazdığını varsayılan olmayan konumunu belirlemek için.  
@@ -105,4 +106,4 @@ Please contact the application's support team for more information.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Assert makrosu, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)
+ [assert Makrosu, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)

@@ -17,18 +17,19 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7ff8880ea67770a1fb339e6a2af397491e64a42b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bf8ef9c256dbd58b996737077fff139522eaed79
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="based-addressing"></a>Tabanlı Adresleme
 Bu bölüm şu konuları içerir:  
   
--   [__based dilbilgisi](../cpp/based-grammar.md)  
+-   [__based Dilbilgisi](../cpp/based-grammar.md)  
   
 -   [Tabanlı işaretçiler](../cpp/based-pointers-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)
+ [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

@@ -18,11 +18,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 102dee928d1a6b8bbfcde80c46f097d67cf76a42
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 96620f287522168cd7b6b78d43163e8c4bb64217
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cxmlaccessor-class"></a>CXMLAccessor Sınıfı
 Veri deposunun şeması (temel yapısı) olanağıyla olduğunda veri kaynakları dize verilerini erişmenize olanak tanır.  
@@ -64,4 +67,4 @@ class CXMLAccessor : public CDynamicStringAccessorW
  [CDynamicStringAccessor sınıfı](../../data/oledb/cdynamicstringaccessor-class.md)   
  [CDynamicStringAccessorA sınıfı](../../data/oledb/cdynamicstringaccessora-class.md)   
  [CDynamicStringAccessorW sınıfı](../../data/oledb/cdynamicstringaccessorw-class.md)   
- [CManualAccessor sınıfı](../../data/oledb/cmanualaccessor-class.md)
+ [CManualAccessor Sınıfı](../../data/oledb/cmanualaccessor-class.md)

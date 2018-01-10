@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b97573e6d92465eea0f646a3c000f5677b73e486
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 15b7caebc99c4724c0e28b7812da8ef224184385
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fpcsr"></a>FpCsr
 Kayıt durumu da x87 içerir FPU denetim sözcüğü. Çağırma kuralı kalıcı olması için bu kayıt belirler.  
@@ -41,4 +42,4 @@ FPCSR[12]: Infinity control - 0 (not used)
 2.  Kanıtlanabilir olduğunda bu kuralları ihlali davranır/burada bu kurallar, örneğin, tüm program Analizi ile ihlal edilmemesi bir program ile aynı yol bir programlarda sonuçları düzeltin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralı](../build/calling-convention.md)
+ [Çağırma Kuralı](../build/calling-convention.md)

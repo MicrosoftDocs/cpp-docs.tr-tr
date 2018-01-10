@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b6636685e45f4ba65460da5ff0a67f5c023ba1d0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fd47720009449d51abadd1e5f513149a83702ea3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Belge Şablonları ve Belge/Görünüm Oluşturma İşlemi
 Belgeler, ilişkili görünümler ve çerçeve pencereleri oluşturma karmaşık işlemini yönetmek için iki belge şablonu sınıfları framework kullanır: [CSingleDocTemplate](../mfc/reference/csingledoctemplate-class.md) SDI uygulamaları için ve [CMultiDocTemplate ](../mfc/reference/cmultidoctemplate-class.md) MDI uygulamaları için. A `CSingleDocTemplate` oluşturabilir ve aynı anda bir türdeki bir belge depolayabilir. A `CMultiDocTemplate` bir tür birçok açık belgelerin listesini tutar.  
@@ -49,5 +50,5 @@ MDI uygulamayla iki belge türü
  [Belge şablonu oluşturma](../mfc/document-template-creation.md)   
  [Belge/görünüm oluşturma](../mfc/document-view-creation.md)   
  [MFC nesneleri arasındaki ilişki](../mfc/relationships-among-mfc-objects.md)   
- [Yeni belgeler, pencereler ve görünümler oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+ [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
 

@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 957d9679c57cd15162c5820ccd7dc41bdea0fa2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f8e842f4cf0f9c52945c04739879d0132eb34171
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)
 ```  
@@ -64,4 +65,4 @@ ms.lasthandoff: 10/24/2017
  [/ IDLOUT (MIDL çıktı dosyalarını Adlandır)](../../build/reference/idlout-name-midl-output-files.md)   
  [/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
  [/ TLBOUT (adı. TLB dosyası)](../../build/reference/tlbout-name-dot-tlb-file.md)   
- [Öznitelikli Program oluşturma](../../windows/building-an-attributed-program.md)
+ [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)

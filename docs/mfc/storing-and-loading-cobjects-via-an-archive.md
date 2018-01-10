@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 23c403d5e872818345b319ea6786da6b2f42fabc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 987f754ccdf03e5a252feae693a1f7718da1b353
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>Bir Arşiv Kullanarak CObject'leri Depolama ve Yükleme
 Depolama ve yükleme `CObject`s bir arşiv aracılığıyla ek göz önünde bulundurarak gerektirir. Bazı durumlarda, çağırmalısınız `Serialize` nesnesinin işlevi burada `CArchive` nesnesidir bir parametresi `Serialize` kullanarak aksine, çağrısı  **< \<**  veya  **>>**  işleci `CArchive`. Dikkate alınması gereken önemli olgu olan `CArchive`  **>>**  işleci yapıları `CObject` göre bellekte `CRuntimeClass` bilgileri önceden tarafından depolanmasını arşiv dosyasına yazılır.  
@@ -47,5 +48,5 @@ Depolama ve yükleme `CObject`s bir arşiv aracılığıyla ek göz önünde bul
  Seri hale getirilebilir sınıfınız katıştırılmış tanımlıyorsa Özet olarak, **CObjec**t bir üye olarak, şunları yapmalısınız *değil* kullanmak `CArchive`  **< \<**  ve  **>>**  o nesnenin işleç ancak çağırmalıdır `Serialize` yerine işlev. Ayrıca, seri hale getirilebilir bir sınıf için bir işaretçi tanımlıyorsa bir `CObject` (veya bir nesne türetilmiş `CObject`) üyesi, ancak yapıları bu bir kendi Oluşturucusu nesnesinde de çağırmanız gerekir `Serialize`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)
+ [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

@@ -20,11 +20,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 430420a62915d3378dae863c20c00e3b398ecb3c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 287c9831f8c604272b37ac85528d66fe640de557
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="avoiding-exceptions-on-clr-shutdown-when-consuming-com-objects-built-with-clr"></a>CLR Kapatmasında /clr ile Oluşturulan COM Nesnelerini Tüketirken Özel Durumları Önleme
 Ortak dil çalışma zamanı (CLR) kapatma moduna girdikten sonra yerel işlevler CLR hizmetlerine erişiminiz sınırlanır. Yayın çağırmak girişimi sırasında bir COM nesnesi ile derlenmiş **/CLR**, CLR geçişler için yerel kod ve geçişleri geri (yönetilen kodda tanımlanır) IUnknown::Release çağrısını hizmet vermek için yönetilen koda. CLR kapatma modunda olduğundan geri yönetilen koda çağrı engeller.  
@@ -32,4 +35,4 @@ Ortak dil çalışma zamanı (CLR) kapatma moduna girdikten sonra yerel işlevle
  Bu sorunu çözmek için yayın yöntemlerinden çağırılan yıkıcıların yalnızca yerel kodu içeren emin olun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)
+ [Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)

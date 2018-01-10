@@ -20,11 +20,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c63d6a9161eab707b0eab2b831d02210c57a25d8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: da2372f513d9799cfddbebeefa7e9160d1a6b135
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locktryacquire"></a>lock::try_acquire
 Belirtilen bir süre bekleyip ve döndüren bir nesne üzerinde bir kilit alır bir `bool` bir özel durum atma yerine edinme başarısını raporlamak için.  
@@ -146,4 +149,4 @@ All threads completed.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [lock üyeleri](../dotnet/lock-members.md)   
- [Lock::Acquire](../dotnet/lock-acquire.md)
+ [lock::acquire](../dotnet/lock-acquire.md)

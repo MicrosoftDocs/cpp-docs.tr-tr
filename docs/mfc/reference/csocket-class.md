@@ -31,11 +31,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67fa709c0f58becfa18b286ba9c84d01c4c853dc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ae8a30697783b478e9ffdb1c247f52d7b9f2ac2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csocket-class"></a>CSocket sınıfı
 Türetilen `CAsyncSocket`, kendi kapsülleme Windows Sockets API devralır ve daha yüksek bir soyutlama düzeyi daha temsil bir `CAsyncSocket` nesnesi.  
@@ -242,4 +243,4 @@ virtual BOOL OnMessagePending();
  [CAsyncSocket sınıfı](../../mfc/reference/casyncsocket-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CAsyncSocket sınıfı](../../mfc/reference/casyncsocket-class.md)   
- [CSocketFile sınıfı](../../mfc/reference/csocketfile-class.md)
+ [CSocketFile Sınıfı](../../mfc/reference/csocketfile-class.md)

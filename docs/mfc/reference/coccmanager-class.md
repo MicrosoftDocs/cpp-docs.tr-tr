@@ -41,11 +41,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d27b1d018b427360105f1e294f2d0385ce18f5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ffa16b7a210bc53f178e3ec437aefb6cede766a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 Çeşitli özel denetim siteleri yönetir; tarafından uygulanan `COleControlContainer` ve `COleControlSite` nesneleri.  
@@ -368,4 +369,4 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleControlSite sınıfı](../../mfc/reference/colecontrolsite-class.md)   
- [COleControlContainer sınıfı](../../mfc/reference/colecontrolcontainer-class.md)
+ [COleControlContainer Sınıfı](../../mfc/reference/colecontrolcontainer-class.md)

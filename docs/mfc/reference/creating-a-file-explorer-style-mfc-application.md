@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e8e97253f74365ef0b3c3a235257c85ceee37b3f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6098e451b4ebc4caf2bb7fad99ea2e407e4872c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-file-explorer-style-mfc-application"></a>Dosya Gezgini Stilinde MFC Uygulaması Oluşturma
 Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'ni kullanın. Örneğin, dosya Explorer'ı başlattığınızda, uygulama istemci alanını bölme çubuğu Dikey bölme ile bakın. İstemci alanını sol tarafındaki gezinti ve göz atma özellikleri sağlar ve istemci alanını sağ tarafındaki ayrıntıları seçime uygun sol bölmede gösterir. Bir kullanıcı sol bölmesindeki bir öğeyi tıklattığında, uygulamayı sağ bölmede yeniden doldurur. MDI uygulamada üzerinde komutlarını kullanabilirsiniz **Görünüm** sağ bölmede gösterilen ayrıntı miktarını değiştirmek için menüsü. (Bir SDI veya birden çok üst düzey belge uygulama, yalnızca araç çubuğu düğmelerini kullanarak ayrıntı değiştirebilirsiniz.)  
@@ -51,14 +52,14 @@ Birçok Windows sistem uygulama kullanıcı arabirimi (UI) için dosya Gezgini'n
   
  Daha fazla bilgi için bkz.:  
   
--   [Birden çok belge türü, görünümler ve çerçeve pencereleri](../../mfc/multiple-document-types-views-and-frame-windows.md)  
+-   [Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi](../../mfc/multiple-document-types-views-and-frame-windows.md)  
   
 -   [Türetilmiş görünüm sınıfları](../../mfc/derived-view-classes-available-in-mfc.md)  
   
--   [Uygulama tasarımı seçimleri](../../mfc/application-design-choices.md)  
+-   [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)   
  [Bir Web tarayıcısı stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)   
- [Bir form tabanlı MFC uygulaması oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)
+ [Form Tabanlı MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)
 

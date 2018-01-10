@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb7f467d6491f58337177e8f16a580d28cb63e78
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b1bbff1fa040454fc8288053938bb439d505b461
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atlfuncinfo-structure"></a>_ATL_FUNC_INFO yapısı
 Bir yöntemi veya özelliği üzerinde görüntüleme arabirimi tanımlamak için kullanılan tür bilgileri içerir.  

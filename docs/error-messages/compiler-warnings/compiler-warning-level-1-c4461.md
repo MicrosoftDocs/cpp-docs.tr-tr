@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cc417e7044eb3eac12365676c6c1be9abeddfed0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3b3a64ac5d7bcfbc912c63abf57769fe6da2d40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4461"></a>Derleyici Uyarısı (düzey 1) C4461
 'type': Bu sınıf bir Sonlandırıcısı 'Sonlandırıcı' ancak hiçbir yıkıcı 'dtor' sahiptir  

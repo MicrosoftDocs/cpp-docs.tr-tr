@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 81c857a4ce12ec28be49e393886fc52a43d012d6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae1169b438a181e22696502352c19353421469b1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC Uygulamaları Oluşturmak için İşlem Dizisi
 Aşağıdaki tabloda, MFC Uygulama geliştirirken, genellikle uygulayabilir genel sıra açıklanmaktadır.  
@@ -53,5 +54,5 @@ Aşağıdaki tabloda, MFC Uygulama geliştirirken, genellikle uygulayabilir gene
  [OLE uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-ole-applications.md)   
  [ActiveX denetimleri oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-activex-controls.md)   
  [Veritabanı uygulamaları oluşturmak için işlem dizisi](../mfc/sequence-of-operations-for-creating-database-applications.md)   
- [Framework'te derleme](../mfc/building-on-the-framework.md)
+ [Framework'te Derleme](../mfc/building-on-the-framework.md)
 

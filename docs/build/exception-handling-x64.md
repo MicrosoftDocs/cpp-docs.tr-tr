@@ -16,16 +16,17 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7c6f24a6fbb4d1b1cfff871a8568d4e08b1582d7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f104f6772cdd1c778c166e27d697146c1280444a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling-x64"></a>Özel Durum İşleme (x64)
 Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum üzerinde işleme anlatılmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)].  
   
--   [Veri bırakma, özel durum işleme için hata ayıklayıcı desteği](../build/unwind-data-for-exception-handling-debugger-support.md)  
+-   [Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği](../build/unwind-data-for-exception-handling-debugger-support.md)  
   
 -   [Bırakma yordamı](../build/unwind-procedure.md)  
   
@@ -33,9 +34,9 @@ Bu bölümde, yapılandırılmış özel durum işleme ve C++ özel durum üzeri
   
 -   [MASM için Yardımcıları Bırakma](../build/unwind-helpers-for-masm.md)  
   
--   [C'de veri tanımlarını geriye doğru izleme](../build/unwind-data-definitions-in-c.md)  
+-   [C'de Veri Bırakma Tanımları](../build/unwind-data-definitions-in-c.md)  
   
  Daha fazla bilgi için bkz: [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+ [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

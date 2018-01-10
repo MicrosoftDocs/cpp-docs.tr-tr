@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 039117b08a3985e1d29f8be50a8869156699b415
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 48c41df17d118bca0a99cd16bc54d72169157dc5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="other-lib-output"></a>Diğer LIB Çıktısı
 Varsayılan mod, sonuçta elde edilen Kitaplığı hakkındaki bilgileri görüntülemek için/List seçeneğini kullanabilirsiniz. Bu çıktıyı bir dosyaya yönlendirebilirsiniz.  
@@ -31,4 +32,4 @@ Varsayılan mod, sonuçta elde edilen Kitaplığı hakkındaki bilgileri görün
  Hata ve uyarı iletileri LIB tarafından verilen LNK form*nnnn*. BAĞLANTI, DUMPBIN ve EDITBIN araçları Ayrıca hataları bu aralığı kullanın. Hata çıktı penceresinde seçerek ve F1'e basarak Yardım kullanılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB'e genel bakış](../../build/reference/overview-of-lib.md)
+ [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)

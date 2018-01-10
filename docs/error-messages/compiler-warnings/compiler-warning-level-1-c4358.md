@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8f09125123ea075c1d0c9fbce5fdd432dfa64407
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e006bed5e805118c394b9107aa5eb91660aa542
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4358"></a>Derleyici Uyarısı (düzey 1) C4358
 'işleci': dönüş türü, birleştirilmiş temsilcilerin değil 'void'; döndürülen değer tanımlı değil  

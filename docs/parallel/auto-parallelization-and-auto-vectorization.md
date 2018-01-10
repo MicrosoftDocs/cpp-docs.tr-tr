@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7f84f891a12da90efbe68371d077e2d41b111ea0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1b458dbe06bd69817c659c3bfec1d1ab7a216d1f
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 Otomatik paralel hale getirici ve otomatik vektör hale getirici otomatik performans artışı kodunuzda döngüler sağlamak için tasarlanmıştır.  
@@ -117,8 +118,8 @@ for (int i = 0; i < 1000; ++i)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [döngü](../preprocessor/loop.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/?linkid=263662)   
+ [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [/ Qpar (otomatik paralel hale getirici)](../build/reference/qpar-auto-parallelizer.md)   
  [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
  [/ Qvec-(Raporlama düzeyi otomatik vektör hale getirici) raporu](../build/reference/qvec-report-auto-vectorizer-reporting-level.md)   
- [Vektör yapıcı ve paralel hale getirici iletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)
+ [Vektör Yapıcı ve Paralel Hale Getirici İletileri](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)

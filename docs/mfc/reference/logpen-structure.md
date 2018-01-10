@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7baf1079fd98213b7d7c3de625d6b39ab6acbf52
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b7bfa598a59f62c11dbda13356559816b5bd47ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="logpen-structure"></a>LOGPEN Yapısı
 `LOGPEN` Yapısı stili, genişlik ve bir kalemin rengini tanımlar, satırları ve Kenarlıkları çizmek için kullanılan bir çizim nesnesi. [CPen::CreatePenIndirect](../../mfc/reference/cpen-class.md#createpenindirect) işlev kullandığı `LOGPEN` yapısı.  

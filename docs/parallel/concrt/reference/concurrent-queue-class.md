@@ -26,11 +26,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9cb1f1618f140ad9183d50d8aaacc8e9cc59c75d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e2e572574bfd8313106dbdda64b63077d5d2e7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue Sınıfı
 `concurrent_queue` Sınıftır ilk sağlayan dizisi kapsayıcı sınıfı, öğeleri ilk erişim. Eşzamanlılık güvenli işlemler, sınırlı sayıda gibi etkinleştirir `push` ve `try_pop`.  
@@ -78,7 +79,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 |[Temizle](#clear)|Herhangi bir yok etme sıranın eşzamanlı temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[boş](#empty)|Şu anda eş zamanlı sıranın boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eşzamanlı kuyruk oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
-|[anında iletme](#push)|Fazla Yüklendi. Enqueues eşzamanlı sıranın tail sonunda bir öğe. Bu yöntem eşzamanlılık güvenlidir.|  
+|[push](#push)|Fazla Yüklendi. Enqueues eşzamanlı sıranın tail sonunda bir öğe. Bu yöntem eşzamanlılık güvenlidir.|  
 |[try_pop](#try_pop)|Varsa bir öğe sırasından dequeues. Bu yöntem eşzamanlılık güvenlidir.|  
 |[unsafe_begin](#unsafe_begin)|Fazla Yüklendi. Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı sıranın başına. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[unsafe_end](#unsafe_end)|Fazla Yüklendi. Yineleyici türü döndürür `iterator` veya `const_iterator` eşzamanlı sıranın sonuna. Bu yöntem eşzamanlılık uyumlu değil.|  
@@ -268,4 +269,4 @@ size_type unsafe_size() const;
  `unsafe_size`Eşzamanlılık uyumlu değildir ve eşzamanlı olarak yöntemlerine çağrıldıklarında hatalı sonuçlar üretebilir `push`, `try_pop`, ve `empty`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

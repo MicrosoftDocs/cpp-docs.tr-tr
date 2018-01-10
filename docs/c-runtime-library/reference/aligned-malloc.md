@@ -33,11 +33,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e81ecad3276abc34243f18a8df367d82122a1064
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7e16801bed2063d60e9151e2afc22a128aeed97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignedmalloc"></a>_aligned_malloc
 Belirtilen hizalama sınırında bellek ayırır.  
@@ -157,4 +158,4 @@ This pointer, 3280891, is offset by 5 on alignment of 16
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri hizalama](../../c-runtime-library/data-alignment.md)
+ [Veri Hizalama](../../c-runtime-library/data-alignment.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 741c7a62083680c434f7eaa1c415441449525344
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6fa0b0b31d76c55851d69f4c528f11e7d23ff0d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="where-to-find-message-maps"></a>İleti Eşlemelerinin Bulunduğu Yer
 Uygulama Sihirbazı'nı yeni bir iskelet uygulaması oluşturduğunuzda Uygulama Sihirbazı'nı sizin için oluşturduğu her komut hedefi sınıfı için ileti eşlemesi yazar. Bu türetilmiş uygulama, belge, Görünüm ve çerçeve penceresi sınıfları içerir. Bu ileti eşlemeleri bazıları belirli iletiler ve önceden tanımlanmış komutlar için Uygulama Sihirbazı tarafından sağlanan girişleri zaten var ve bazı ekleyeceksiniz işleyicileri yalnızca yer tutucular içerir.  
@@ -39,5 +40,5 @@ Uygulama Sihirbazı'nı yeni bir iskelet uygulaması oluşturduğunuzda Uygulama
  Yeni bir sınıf oluşturmak için sınıfı Ekle Sihirbazı'nı kullandığınızda, ileti eşlemesi için sınıf sağlar. Alternatif olarak, kaynak kodu Düzenleyicisi'ni kullanarak el ile bir ileti eşlemesi oluşturabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'ün ileti eşlemelerini araması](../mfc/how-the-framework-searches-message-maps.md)
+ [Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)
 

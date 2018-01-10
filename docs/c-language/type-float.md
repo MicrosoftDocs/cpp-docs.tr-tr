@@ -25,11 +25,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb53ac2375a5afa9ac3c2f1d2d7b2ba9de1b7141
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0b1362d5cb0451f5190ca63ab0344f557256190
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="type-float"></a>Tür float
 Kayan nokta sayıları IEEE (Institute of Electrical and Electronics Engineers) biçimini kullanın. Tek duyarlıklı kayan noktalı sayı türü değerlerle oturum bit, 8 bit aşırı 127 ikili üs ve 23 bit Mantis oluşan 4 bayt vardır. Mantis 1.0 ve 2.0 arasında bir sayı temsil eder. Mantis yüksek sıra biti 1 her zaman olduğundan sayısında depolanmaz. Bu gösterim yaklaşık 3.4E bir dizi sağlar-3.4E + 38 tür float için 38.  
@@ -90,4 +91,4 @@ f_longer = f_short * f_short;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel türleri depolama](../c-language/storage-of-basic-types.md)
+ [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

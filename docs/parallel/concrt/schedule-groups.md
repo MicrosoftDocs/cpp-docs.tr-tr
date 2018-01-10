@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 234288be0313c8e50fde08a3cb898f498ebe4174
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a61566878adc539af21e1645844eff27c5a8aec0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schedule-groups"></a>Zamanlama Grupları
 Bu belge eşzamanlılık çalışma zamanı, zamanlama grupları rolü açıklanmaktadır. A *zamanlama grup* affinitizes ya da grupları, ilgili görevleri birlikte. Her Zamanlayıcı, bir veya daha fazla zamanlama grupları vardır. İlgili görevleri grubunu zaman yere göre görevleri arasında yüksek derecede Örneğin, gerekirse, kullanım zamanlama grupları aynı işlemci düğümde yürütülen yararlanır. Buna karşılık, bir dizi görevi için ayrılan işlem kaynaklarının miktarını sınırlamak istediğinizde, uygulamanızın belirli kalitesi gereksinimleri, örneğin, sahip olduğunda Zamanlayıcı örnekleri kullanın. Zamanlayıcı örnekleri hakkında daha fazla bilgi için bkz: [Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md).  
@@ -44,5 +45,5 @@ Bu belge eşzamanlılık çalışma zamanı, zamanlama grupları rolü açıklan
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
  [Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md)   
- [Nasıl yapılır: yürütme sırasını etkilemek için zamanlama grupları kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)
+ [Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)
 

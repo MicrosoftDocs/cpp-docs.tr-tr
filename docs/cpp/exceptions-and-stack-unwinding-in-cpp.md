@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eedfb9c453fbd48ef2c5868fb186156397eeb500
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b2b354ebaa72c5257e2752a948ece6320a5d8e70
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-and-stack-unwinding-in-c"></a>C++'da Özel Durumlar ve Yığını Geriye Doğru İzleme
 C++ özel durum mekanizmasında denetim, throw deyiminden throw türünü işleyebilen ilk catch deyimine geçer. Catch deyimi ulaşıldığında, tüm kapsamında arasında throw ve catch deyimleri otomatik değişkenleri olarak bilinen bir işlemle yok *yığın geriye doğru izleme*. Yığın geriye doğru izleme işleminde, yürütme aşağıdaki gibi olur:  

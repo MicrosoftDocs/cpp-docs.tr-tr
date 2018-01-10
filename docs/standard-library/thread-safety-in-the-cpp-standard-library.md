@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a30ad3887ace197276556aab929a7d16ae7922e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fa4c69e79a918d7b8cf77e03f76c81e846d5a5b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="thread-safety-in-the-c-standard-library"></a>C++ Standart Kitaplığında İş Parçacığı Güvenliği
 C++ Standart Kitaplığı'ndaki tüm sınıflar aşağıdaki iş parçacığı güvenliği kurallar geçerlidir — bu içerir `shared_ptr`, aşağıda açıklandığı gibi.  Daha güçlü garanti bazen sağlanan — Örneğin, standart iostream, aşağıda açıklandığı gibi nesneleri, özellikle yönelik türlerini ve çoklu iş parçacığı kullanımı, ister de [ \<atomik >](../standard-library/atomic.md).  
@@ -42,7 +43,7 @@ C++ Standart Kitaplığı'ndaki tüm sınıflar aşağıdaki iş parçacığı g
 >  Bir Akış Arabellek Okuma okuma işlemi olarak kabul değil. Bunun yerine, sınıfının durumu değiştiğinden bir yazma işlemi olarak kabul edilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
 
 
 

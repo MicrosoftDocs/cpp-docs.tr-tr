@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c37027850ff96f99e7034ac127707810a68a28c7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b4ac896fb16aa3c338cadd6273e226eebe986ae7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="afxextensionmodule-structure"></a>AFX_EXTENSION_MODULE Yapısı
 `AFX_EXTENSION_MODULE` MFC uzantı DLL'leri başlatma sırasında MFC uzantı DLL modülü durumunu tutmak için kullanılır.  

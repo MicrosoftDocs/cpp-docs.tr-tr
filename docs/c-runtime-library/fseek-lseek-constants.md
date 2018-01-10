@@ -21,11 +21,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 714a25838c40286fac69fafb88d673e65b1e2f14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ccdee5d17b95772072f95a046e6e3c4d9a30e0e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fseek-lseek-constants"></a>fseek, _lseek Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -48,4 +49,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [fseek, _fseeki64](../c-runtime-library/reference/fseek-fseeki64.md)   
  [_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

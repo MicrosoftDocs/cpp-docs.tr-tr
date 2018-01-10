@@ -14,26 +14,27 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 748b28288df33ab61674dc0cf4044db28c263d7a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d949486867200c0349d52805a94b6cddf48d357f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-concepts"></a>MFC Kavramları
 Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları için Microsoft Foundation Class (MFC) kitaplığı kullanılarak program.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Genel MFC konuları](../mfc/general-mfc-topics.md)  
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)  
  MFC kitaplığının teknik ayrıntılar açıklanmaktadır.  
   
- [CObject kullanma](../mfc/using-cobject.md)  
+ [CObject Kullanma](../mfc/using-cobject.md)  
  Kullanarak için bağlantılar sağlar `CObject`, çoğu MFC sınıfları için temel sınıf.  
   
- [Koleksiyonları](../mfc/collections.md)  
+ [Koleksiyonlar](../mfc/collections.md)  
  Oluşturulan ve C++ şablonlardan oluşturulmamış koleksiyon sınıfları açıklanır.  
   
- [Tarih ve saat](../atl-mfc-shared/date-and-time.md)  
+ [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)  
  Tarih ve saat MFC ile kullanma ele konulara bağlantılar sağlar.  
   
  [Dosyaları](../mfc/files-in-mfc.md)  
@@ -42,10 +43,10 @@ Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları içi
  [Bellek Yönetimi (MFC)](../mfc/memory-management.md)  
  Bellek yönetimiyle ilgili genel amaçlı Hizmetleri yararlanmak açıklar.  
   
- [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)  
+ [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)  
  İletiler ve komutlar MFC çerçevesi tarafından nasıl işleneceğini ve bunların işleyici işlevlerine bağlanma açıklar.  
   
- [Seri hale getirme](../mfc/serialization-in-mfc.md)  
+ [Serileştirme](../mfc/serialization-in-mfc.md)  
  Arasında kalıcı nesnelere izin vermek için sağlanan seri hale getirme mekanizmasını, programı çalıştıran açıklanmaktadır.  
   
  [Unicode](../mfc/unicode-in-mfc.md)  
@@ -55,16 +56,16 @@ Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları içi
  [Özel durum işleme (MFC)](../mfc/exception-handling-in-mfc.md)  
  MFC'de özel durum işleme mekanizmalarını açıklanmaktadır.  
   
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)  
+ [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)  
  Internet programlama desteği MFC sınıfları açıklar.  
   
- [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)  
+ [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)  
  Uygulamalarınız için Internet desteğini ekleme açıklanır.  
   
  [MFC COM](../mfc/mfc-com.md)  
  Bir alt kümesini en etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır karşın, COM, desteklemek için tasarlanmış MFC anlatılmaktadır COM programlama için.  
   
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
  İşlemler ve iş parçacıkları nelerdir ve MFC yaklaşımını anlatılmaktadır için çoklu iş parçacığı kullanımı.  
   
  [MFC'de Windows Yuvaları](../mfc/windows-sockets.md)  

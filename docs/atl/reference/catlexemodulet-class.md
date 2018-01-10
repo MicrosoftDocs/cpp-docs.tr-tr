@@ -32,11 +32,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c256c689a49fe17b59a48a15ef0d797cc7465aff
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c45b1f95aba4f11e6995bf5c4c1cfff00627e4b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 Bu sınıf, bir uygulama için modülü temsil eder.  

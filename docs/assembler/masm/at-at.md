@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f46da8128325cb92b83a1d0c8503b248d38c65aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 14d12c14144887df5bc3be0878e9a848dcb4de9e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name=""></a>@@:
 Yalnızca arasında tanınabilir bir kod etiket tanımlar *label1* ve *label2*, burada *label1* kod başlangıcı ya da önceki `@@:` etiket ve *label2* kod sonuna ya da sonraki `@@:` etiketi. Bkz: [ @B ](../../assembler/masm/at-b.md) ve [ @F ](../../assembler/masm/at-f.md).  
@@ -33,4 +34,4 @@ Yalnızca arasında tanınabilir bir kod etiket tanımlar *label1* ve *label2*, 
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller başvurusu](../../assembler/masm/symbols-reference.md)
+ [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

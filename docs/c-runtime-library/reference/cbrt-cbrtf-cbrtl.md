@@ -38,11 +38,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 578ff897f980a31efead2777835aa3461438d524
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9dd91b5ac59917e7f77cfb38faea96b03068b3e3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbrt-cbrtf-cbrtl"></a>cbrt, cbrtf, cbrtl
 Küp kök hesaplar.  
@@ -117,4 +118,4 @@ The cube root of -64.64 is -4.013289
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [Günlük, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
- [POW, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)
+ [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)

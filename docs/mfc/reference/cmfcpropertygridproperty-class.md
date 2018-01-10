@@ -177,11 +177,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b5f31a6c16e14152f624c3bc6225337621cc887b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b60e2355636ca0cf30ed0a0141ec07f1312f760f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty sınıfı
 A `CMFCPropertyGridProperty` nesnesi özelliği liste denetimi bir liste öğesini temsil eder.  
@@ -333,7 +334,7 @@ BOOL AddOption(
  `TRUE`Listeye eklemek için yalnızca bu zaten mevcut değilse; öğesi Aksi takdirde `FALSE`. Varsayılan değer `TRUE` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`, liste öğesi eklendiğinde anlamına gelir. Aksi takdirde, `FALSE`, liste öğesi olmayan anlamına gelir, çünkü eklenen `bInsertUnique` parametresi `TRUE` ve liste öğesi tarafından belirtilen `lpszOption` parametresi zaten var..  
+ `TRUE`, liste öğesi eklendiğinde anlamına gelir. Aksi takdirde, `FALSE`, liste öğesi olmayan anlamına gelir, çünkü eklenen `bInsertUnique` parametresi `TRUE` ve liste öğesi tarafından belirtilen `lpszOption` parametresi zaten var.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1532,4 +1533,4 @@ void Show(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md)
+ [CMFCPropertyGridCtrl Sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md)

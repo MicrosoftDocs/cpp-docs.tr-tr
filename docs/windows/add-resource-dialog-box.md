@@ -17,11 +17,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d210ea66faa89023dcdcfb914ca423086d6eddb1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: fde90f5d7c7822155e36b77c74cd80cdf56b10d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-resource-dialog-box"></a>Kaynak Ekle İletişim Kutusu
 Kaynaklar için C++ Windows masaüstü uygulaması projesi eklemek için bu iletişim kutusunu kullanın.  
@@ -49,4 +52,4 @@ Kaynaklar için C++ Windows masaüstü uygulaması projesi eklemek için bu ilet
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: kaynak oluşturma](../windows/how-to-create-a-resource.md)
+ [Nasıl yapılır: Kaynak Oluşturma](../windows/how-to-create-a-resource.md)

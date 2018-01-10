@@ -13,22 +13,23 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0d3c0b1a912846da6f36fc0bc05904c61a86183e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5cd7aacecf96b1908c18a23326876dbf71ce4b4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linking"></a>Bağlama
 Bağlayıcı kullanma hakkında daha fazla bilgi için aşağıdaki bölümlere bakın:  
   
--   [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)  
+-   [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
   
--   [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)  
+-   [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  
   
 -   [Modül-tanımlama (.def) dosyaları](../../build/reference/module-definition-dot-def-files.md)  
   
--   [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)  
+-   [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)
+ [C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8712e75aad6eeaa50227989043a2aaad6973193d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9bbc721669d51860c01c760a8d1f9fb899e019e3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stock-properties"></a>Stok Özellikleri
 Bir MFC görüntüleme arabirimi kullanarak bir özelliği ekliyorsanız [Özellik Ekleme Sihirbazı'nı](../ide/idl-attributes-add-property-wizard.md), stok özelliğinden seçebilirsiniz **özellik adı** listesinde [adları](../ide/names-add-property-wizard.md) sayfası Sihirbazı. Bu özellikler aşağıdaki gibidir:  
@@ -40,4 +41,4 @@ Bir MFC görüntüleme arabirimi kullanarak bir özelliği ekliyorsanız [Özell
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik ekleme](../ide/adding-a-property-visual-cpp.md)   
- [IDL öznitelikleri, Özellik Ekleme Sihirbazı](../ide/idl-attributes-add-property-wizard.md)
+ [IDL Öznitelikleri, Özellik Ekleme Sihirbazı](../ide/idl-attributes-add-property-wizard.md)

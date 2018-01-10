@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd6828f5c6b4f89b7d939e4fd909e72e3039b69f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f5a09439cf47c695af0d3b7d6c7724cffcb9ccb4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="messagehandler"></a>MessageHandler
 **MessageHandler** öğesinin ikinci parametresi, tarafından tanımlanan işlevi adı `MESSAGE_HANDLER` makro ileti eşlemesi içinde.  

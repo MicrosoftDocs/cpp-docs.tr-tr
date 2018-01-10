@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1cf088deace9f900007bee500f216fa2fbc8e7b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2431a72a981dd1cb2a9677ef38eb9cbaaaaf1c2a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adjacentfind-stlclr"></a>adjacent_find (STL/CLR)
 Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.  
@@ -42,4 +45,4 @@ template<class _FwdIt, class _Pr> inline
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [algoritma (STL/CLR)](../dotnet/algorithm-stl-clr.md)
+ [algorithm (STL/CLR)](../dotnet/algorithm-stl-clr.md)

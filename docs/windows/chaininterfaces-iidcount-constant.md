@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1a3409452fcae3764519c4beeb3557e5fd877b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 1a1336bb5b8b43e833325c304a4d870220a40b84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chaininterfacesiidcount-constant"></a>ChainInterfaces::IidCount Sabiti
 Arabirim şablon parametresi tarafından belirtilen arabirimler içinde yer alan kimlikleri toplam sayısı `I0` aracılığıyla `I9`.  
@@ -42,4 +45,4 @@ static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + D
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Chainınterfaces yapısı](../windows/chaininterfaces-structure.md)
+ [ChainInterfaces Yapısı](../windows/chaininterfaces-structure.md)

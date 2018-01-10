@@ -51,11 +51,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 50250a1f8716ba4caac7f57b3ae7938286a2aec6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c42a0ba40797312a2108a288fecdea55c6873f3d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 Aksi halde bir sekme iletişim kutusu olarak bilinen bir özellik sayfası, her bir sayfayı temsil eder.  
@@ -532,4 +533,4 @@ void SetModified(BOOL bChanged = TRUE);
  [CDialog sınıfı](../../mfc/reference/cdialog-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)   
- [CDialog sınıfı](../../mfc/reference/cdialog-class.md)
+ [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)

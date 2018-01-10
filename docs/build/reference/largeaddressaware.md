@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e632c4f9dec5e3d7569f10bced2a837657f275df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a0043fe0a2424d9cd54a35be8efdabbb20e1931
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="largeaddressaware"></a>/LARGEADDRESSAWARE
 ```  
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/24/2017
  Bu seçenek, uygulama adresleri 2 gigabayttan büyük işleyebileceğini belirtmek için görüntüsünü düzenler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 792a5ef5576f68925459d8e7a34168afa11871c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eaef650cc747cdb9e628ae3b786bc1c1e21b5bdf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bitwise-inclusive-or-operator-"></a>Bit Düzeyinde Kapsamlı OR İşleci: |
 ## <a name="syntax"></a>Sözdizimi  
@@ -65,5 +66,5 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [C bit düzeyinde işleçler](../c-language/c-bitwise-operators.md)
+ [C Bit Düzeyinde İşleçler](../c-language/c-bitwise-operators.md)
 

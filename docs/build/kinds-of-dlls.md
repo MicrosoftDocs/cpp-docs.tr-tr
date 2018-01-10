@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f1f2bbc257bbed427766f81175b250909ccb7d04
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 47ce4a9264a59f88f22cd40bc3b6d6620c9702c5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="kinds-of-dlls"></a>DLL Türleri
 Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.  
@@ -39,13 +40,13 @@ Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [MFC dışı DLL'ler: genel bakış](../build/non-mfc-dlls-overview.md)  
+-   [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)  
   
 -   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [MFC uzantı DLL'leri: genel bakış](../build/extension-dlls-overview.md)  
+-   [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)  
   
 -   [Hangi tür DLL kullanmak için](#_core_which_kind_of_dll_to_use)  
   
@@ -66,13 +67,13 @@ Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [MFC dışı DLL'ler: genel bakış](../build/non-mfc-dlls-overview.md)  
+-   [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)  
   
 -   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   
 -   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [MFC uzantı DLL'leri: genel bakış](../build/extension-dlls-overview.md)  
+-   [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

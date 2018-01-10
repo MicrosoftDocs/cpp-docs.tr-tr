@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0d3551252d04dc97f6e2b4dd13df61edda576744
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb68e906a06d18b41d97851d8d91717ac3dd78b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwinformsview-class"></a>CWinFormsView sınıfı
 MFC görünümü olarak Windows Forms denetimi barındırma için genel işlevler sağlar.  
@@ -118,4 +119,4 @@ operator System::Windows::Forms::Control^() const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Ddx_managedcontrol sınıfı](../../mfc/reference/cwinformscontrol-class.md)   
  [CWinFormsDialog sınıfı](../../mfc/reference/cwinformsdialog-class.md)   
- [Cformview'yu sınıfı](../../mfc/reference/cformview-class.md)
+ [CFormView Sınıfı](../../mfc/reference/cformview-class.md)

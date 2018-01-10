@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c5685a9fd16aab5b04251358254b9c1b3a7f975c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ae903934d3f4002a416d382537185e9927405ea8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handletraitsgetinvalidvalue-method"></a>HANDLETraits::GetInvalidValue Metodu
 Geçersiz bir tanıtıcı temsil eder.  
@@ -39,4 +42,4 @@ inline static HANDLE GetInvalidValue();
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HANDLETraits yapısı](../windows/handletraits-structure.md)
+ [HANDLETraits Yapısı](../windows/handletraits-structure.md)

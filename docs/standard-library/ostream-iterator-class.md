@@ -23,11 +23,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7a8454182c51120677f968483dc35c7da93c5e64
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 83ec130d9a6273d56e107707b033968d96c0b778
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator Sınıfı
 Şablon sınıfı ostream_iterator ardışık öğelere ayıklama ile çıkış akışı üzerine yazar bir çıktı yineleyici nesneyi tanımlayan **işleci <<**.  

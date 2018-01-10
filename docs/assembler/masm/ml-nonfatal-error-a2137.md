@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f742963afbfbef62fb269422b9756c604e0c081e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 852a2a2e7f38d049f1a97f4d3db2e33c99e3a0f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2137"></a>ML Önemli Olmayan Hatası A2137
 **INVOKE için çok az sayıda bağımsız değişken**  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  Geçirilen bağımsız değişken sayısı kullanarak [INVOKE](../../assembler/masm/invoke.md) yönergesi çağrılan yordamı prototipi belirtilen gerekli parametreleri sayısından az olduğu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

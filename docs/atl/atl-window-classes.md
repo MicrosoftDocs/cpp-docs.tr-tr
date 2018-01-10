@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 18925307a685dc338912a80398154065edfa12dd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4cce6fd98d4ea476900d8b248442fdddbe3c2d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-window-classes"></a>ATL Pencere Sınıfları
 ATL kullanın ve windows uygulamanıza olanak tanıyan çeşitli sınıflar içerir. Diğer ATL sınıfları gibi bu sınıfları, kodunuzun bir iş yükünü getirmez verimli bir uygulama sağlar.  
@@ -33,28 +34,28 @@ ATL kullanın ve windows uygulamanıza olanak tanıyan çeşitli sınıflar içe
  Bu bölümde ATL pencere sınıfları açıklar ve bunların nasıl kullanılacağını açıklar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [ATL pencere sınıfları giriş](../atl/introduction-to-atl-window-classes.md)  
+ [ATL Pencere Sınıflarına Giriş](../atl/introduction-to-atl-window-classes.md)  
  Kısaca her ATL pencere sınıfı açıklar ve bunlar üzerinde başvuru malzemesinde bağlantılar sağlar.  
   
- [Bir penceresini kullanma](../atl/using-a-window.md)  
+ [Pencere Kullanma](../atl/using-a-window.md)  
  Nasıl kullanılacağı açıklanır `CWindow` bir pencere yönlendirebilir.  
   
- [Bir pencere uygulama](../atl/implementing-a-window.md)  
+ [Pencere Uygulama](../atl/implementing-a-window.md)  
  İleti işleyicileri, ileti eşlemeleri ve kullanarak anlatılmaktadır `CWindowImpl`. Üst Sınıflama ve sınıflara hakkında ayrıntılar içerir.  
   
- [Bir iletişim kutusu uygulama](../atl/implementing-a-dialog-box.md)  
+ [İletişim Kutusu Uygulama](../atl/implementing-a-dialog-box.md)  
  Bir iletişim kutusu sınıfı eklemek için iki yöntem açıklanır ve bir kod örneği gösterir.  
   
- [Kapsanan Windows kullanma](../atl/using-contained-windows.md)  
+ [Kapsanan Pencereler Kullanma](../atl/using-contained-windows.md)  
  Bir kapsayıcı nesne kendi sınıfında işleme yerine kendi iletileri temsilci windows olan kapsanan ATL, windows açıklanır.  
   
- [Pencere özellikleri anlama](../atl/understanding-window-traits.md)  
+ [Pencere Özelliklerini Anlama](../atl/understanding-window-traits.md)  
  ATL pencere nitelikler sınıflarda açıklanır Bu sınıfların bir pencere nesnesi oluşturmak için kullanılan stiller Standartlaştırma için basit bir yöntem sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [ATL](../atl/active-template-library-atl-concepts.md)  
  Etkin Şablon Kütüphanesi kullanarak programı kavramsal konulara bağlantılar verilmektedir.  
   
- [Windows Destek sınıfları](../atl/windows-support-classes.md)  
+ [Windows Desteği Sınıfları](../atl/windows-support-classes.md)  
  Windows ve ileti eşlemeleri içinde ATL desteği ek ATL sınıfları listeler
 

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ebc62a975e534d89fd99dbb05a65e8d6cb379bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e1102c43677fd58a254f36c92698b9353c20fe32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
 Bir yapı veya birleşim üyeleri için Bildirimciler yanı sıra yapısı bildirimcisi de bir belirtilen bit sayısı kadar bir "bit alanı." olarak adlandırılan, olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile ayarlanır devre dışı. Bir bit alanı bir tamsayı türü olarak yorumlanır.  
@@ -92,4 +93,4 @@ cccccccb bbbbaaaa
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapı bildirimleri](../c-language/structure-declarations.md)
+ [Yapı Bildirimleri](../c-language/structure-declarations.md)

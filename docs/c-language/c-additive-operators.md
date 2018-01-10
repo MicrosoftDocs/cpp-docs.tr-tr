@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d5d41afccc7514c4e6469038b4f592890f9f355f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 340aac3d3aab6951af43b824f1c8d0dd866f7a39
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-additive-operators"></a>C Ek İşleçleri
 Toplama işleçleri eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).  
@@ -44,4 +45,4 @@ Toplama işleçleri eklenmesini gerçekleştirme (**+**) ve çıkarma (**-**).
  Toplama işleçleri olağan aritmetik dönüştürmeler Entegral ve kayan işlenen üzerinde gerçekleştirin. Sonuç türü dönüştürmeden sonra işlenen türüdür. Toplama işleçleri tarafından gerçekleştirilen dönüşümleri taşması veya yetersiz kalması için koşullar sağlamaz, bu yana dönüştürmeden sonra işlenen türünde bir toplama işleminin sonucu gösterilemezse bilgiler kaybolmuş olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ek işleçler: + ve -](../cpp/additive-operators-plus-and.md)
+ [Ek İşleçler: + and -](../cpp/additive-operators-plus-and.md)

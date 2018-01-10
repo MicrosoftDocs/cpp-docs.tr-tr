@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 86c273cf35d2d8bac2e61d74c1fb63481a186ef3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5df9934da9864ba621b2f78dfd7354c7b7d29e76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0027"></a>Proje Derleme Hatası PRJ0027
 Unicode günlük iletisi 'içeriği' kullanıcının ANSI kod sayfasına çevrilemedi içeriği alır.  

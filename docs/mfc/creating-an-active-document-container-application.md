@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 66618fd86d1ced689cffbaeef3da08cc0c0491a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 077d15837ed857ac983c3c9f9d4e7853b45aeee5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-an-active-document-container-application"></a>Etkin Belge Kapsayıcı Uygulaması Oluşturma
 Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol, MFC Uygulama Sihirbazı'nı kullanarak bir MFC EXE kapsayıcı uygulama oluşturmak için ardından etkin belge kapsaması destekleyecek şekilde değiştirin.  
@@ -71,5 +72,5 @@ Etkin belge kapsayıcı uygulaması oluşturmak için basit ve en önerilen yol,
 11. Herhangi bir uygulaması eklemek ve uygulama oluşturun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsaması](../mfc/active-document-containment.md)
+ [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
 

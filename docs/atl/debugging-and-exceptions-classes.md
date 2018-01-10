@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92ffe32890df1b9ca68f638833c88fb2afe4bf98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d5c9a79a5e23d8295855ed2028c5f1402d3925b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="debugging-and-exceptions-classes"></a>Hata ayıklama ve özel durum sınıfları
 Bu sınıfları için özel durum işleme ve hata ayıklama desteği sağlar.  
@@ -30,5 +31,5 @@ Bu sınıfları için özel durum işleme ve hata ayıklama desteği sağlar.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
  [Hata ayıklama ve hata raporlama genel işlevler](../atl/reference/debugging-and-error-reporting-global-functions.md)   
- [Hata ayıklama ve hata raporlama makroları](../atl/reference/debugging-and-error-reporting-macros.md)
+ [Hata Ayıklama ve Hata Raporlama Makroları](../atl/reference/debugging-and-error-reporting-macros.md)
 

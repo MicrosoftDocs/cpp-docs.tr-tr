@@ -70,11 +70,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0e1262dc92f91541b092e3c5cca38b2fa5cbef5c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b11e91c450e082cbb46e2f17975ff98a95f8d25d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cprocedurecolumns-cprocedurecolumninfo"></a>CProcedureColumns, CProcedureColumnInfo
 Çağrı typedef sınıfı **CProcedureColumns** parametre sınıfı uygulamak için **Cprocedurecolumnınfo**.  
@@ -109,4 +112,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

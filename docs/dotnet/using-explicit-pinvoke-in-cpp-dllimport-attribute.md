@@ -19,11 +19,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5b3b2c69e022de6420223786f0f3b3f266c4f816
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d05c88167629bcb6bf86dc600afde0ea3162064f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-explicit-pinvoke-in-c-dllimport-attribute"></a>C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)
 .NET Framework ile açık Platform Çağırma (veya PInvoke) özellikleri sağlar `Dllimport` DLL'leri içinde paketlenmiş yönetilmeyen işlevleri çağırmak yönetilen uygulamalara izin vermek üzere özniteliği. Açık PInvoke olduğu yönetilmeyen API'ler DLL'ler olarak paketlenir ve kaynak kodu kullanılabilir olmadığı durumlarda gereklidir. Win32 işlevleri çağırma, örneğin, PInvoke gerektirir. Örtük P kullanmayacak {Invoke; bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) daha fazla bilgi için.  
@@ -34,19 +37,19 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Yönetilen koddan yerel işlevleri çağırma](../dotnet/calling-native-functions-from-managed-code.md)  
+-   [Yönetilen Koddan Yerel İşlevleri Çağırma](../dotnet/calling-native-functions-from-managed-code.md)  
   
--   [Nasıl yapılır: Yönetilen Koddan PInvoke kullanarak yerel DLL'leri Çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md)  
+-   [Nasıl yapılır: Yönetilen Koddan PInvoke Kullanarak Yerel DLL'leri Çağırma](../dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke.md)  
   
--   [Nasıl yapılır: PInvoke kullanarak dizeleri sıralama](../dotnet/how-to-marshal-strings-using-pinvoke.md)  
+-   [Nasıl yapılır: PInvoke Kullanarak Dizeleri Sıralama](../dotnet/how-to-marshal-strings-using-pinvoke.md)  
   
--   [Nasıl yapılır: PInvoke kullanarak yapıları sıralama](../dotnet/how-to-marshal-structures-using-pinvoke.md)  
+-   [Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama](../dotnet/how-to-marshal-structures-using-pinvoke.md)  
   
--   [Nasıl yapılır: PInvoke kullanarak dizileri sıralama](../dotnet/how-to-marshal-arrays-using-pinvoke.md)  
+-   [Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama](../dotnet/how-to-marshal-arrays-using-pinvoke.md)  
   
--   [Nasıl yapılır: PInvoke kullanarak işlev işaretçilerini sıralama](../dotnet/how-to-marshal-function-pointers-using-pinvoke.md)  
+-   [Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama](../dotnet/how-to-marshal-function-pointers-using-pinvoke.md)  
   
--   [Nasıl yapılır: PInvoke kullanarak katıştırılmış işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md)  
+-   [Nasıl yapılır: PInvoke Kullanarak Katıştırılmış İşaretçileri Sıralama](../dotnet/how-to-marshal-embedded-pointers-using-pinvoke.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen koddan yerel işlevleri çağırma](../dotnet/calling-native-functions-from-managed-code.md)
+ [Yönetilen Koddan Yerel İşlevleri Çağırma](../dotnet/calling-native-functions-from-managed-code.md)

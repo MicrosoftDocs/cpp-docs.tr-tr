@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8c959926cd1ae15ebc8087a9dc3237fdeeb34fa8
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload: cplusplus
+ms.openlocfilehash: 86b12604a5348c3a1aabb33c7e13a4e7a3c57932
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)
 
@@ -41,6 +42,7 @@ Bunlar `/Zc` derleyici seçenekleri:
 
 |Seçenek|Davranış|
 |---|---|
+|[alignedNew\[-\]](zc-alignednew.md)|C ++ 17 aşırı hizalanmış dinamik ayırma etkinleştir (C ++ 17 varsayılan değer olarak).|
 |[Otomatik\[-\]](zc-auto-deduce-variable-type.md)|Yeni standart C++ anlamı için zorunlu `auto` (üzerinde varsayılan olarak).|
 |[externConstexpr\[-\]](zc-externconstexpr.md)|Dış bağlantı için etkinleştirme `constexpr` değişkenleri (varsayılan olarak kapalıdır).|
 |[forScope\[-\]](zc-forscope-force-conformance-in-for-loop-scope.md)|Standart C++ zorunlu `for` kuralları kapsamı (üzerinde varsayılan olarak).|
@@ -61,4 +63,4 @@ Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Derleyici Seçenekleri](compiler-options.md)  
-[Derleyici seçeneklerini ayarlama](setting-compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](setting-compiler-options.md)

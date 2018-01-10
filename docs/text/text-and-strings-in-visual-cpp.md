@@ -35,11 +35,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 1e302fb7003358a75cb0b3022c4264c1e63518e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a911b3a4547be409047004969043943b54bb2480
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
 Uluslararası pazarda uygulama geliştirmenin önemli bir yönü, yerel karakter kümeleri yeterli gösterimidir. ASCII karakter kümesi 0x00-0x7F aralıktaki karakterleri tanımlar. ASCII karakter kümesi için 0x00-0x7F aralıktaki karakterleri aynı tanımlayan ve ayrıca genişletilmiş bir karakter 0x80 0xFF değerine kümesini tanımlamak öncelikle Avrupa, diğer karakter kümesi vardır. Bu nedenle, bir 8 bit, tek bayt karakter kümesi (SBCS) ASCII karakter kümesi gibi birçok Avrupa dilleri için karakter kümesi temsil etmek yeterli olur. Ancak, Japonca Kanji gibi bazı Avrupa dışı karakter kümesi tek baytlı kodlama düzeni temsil eder ve bu nedenle çok baytlı karakter kümesi (MBCS) kodlaması gerektiren daha çok daha fazla karakter içerir.  
@@ -48,16 +49,16 @@ Uluslararası pazarda uygulama geliştirmenin önemli bir yönü, yerel karakter
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)  
  Unicode ve MBCS programlama için Visual C++ desteğini açıklar.  
   
- [Unicode desteği](../text/support-for-unicode.md)  
+ [Unicode Desteği](../text/support-for-unicode.md)  
  Unicode, tek bir bayt ile temsil edilemez karakter kümeleri dahil olmak üzere tüm karakter kümelerini desteklemek için bir belirtimi açıklar.  
   
  [Çok baytlı karakter kümeleri (MBCS) desteği](../text/support-for-multibyte-character-sets-mbcss.md)  
  MBCS, Unicode karakter kümeleri, Japonca ve tek bir bayt ile temsil edilemez Çince gibi desteklemek için bir alternatif açıklanır.  
   
- [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)  
+ [Tchar.h'de Genel Metin Eşlemeleri](../text/generic-text-mappings-in-tchar-h.md)  
  Microsoft'a özgü genel metin eşlemeleri birçok veri türleri, yordamlar ve diğer nesneleri sağlar.  
   
- [Nasıl yapılır: çeşitli dize türleri arasında dönüştürme](../text/how-to-convert-between-various-string-types.md)  
+ [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)  
  Visual C++ dize çeşitli diğer dizeleri dönüştürülmesi gösterilmektedir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

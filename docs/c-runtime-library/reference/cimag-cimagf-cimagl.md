@@ -43,11 +43,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3e3545cfffa7fd1a25eee280850676565342e917
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b499786cbcb1516fb9746d69c7e124f14d00f011
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cimag-cimagf-cimagl"></a>cimag, cimagf, cimagl
 Bir karmaşık sayının sanal kısmını alır.  
@@ -97,4 +98,4 @@ long double cimagl(
  [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
  [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
  [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [CAB dosyaları, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+ [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)

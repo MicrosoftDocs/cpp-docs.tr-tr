@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ac8f12739493b07d8dacf782fb6355aa02b64a17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 596e17d0574f9f4935cf31ec71eb74cb2587d312
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="preprocessor"></a>Ön işlemci
 Ön İşlemci kaynak dosyası metnin ilk çeviri aşaması bir parçası olarak işleyen bir metin işlemcisi ' dir. Önişlemci kaynak metni ayrıştırma değil, ancak bunu onu makrosu çağrıları bulma amacıyla belirteçler içine bölün. Derleyici normalde ilk seferde önişlemci çağırır rağmen önişlemci ayrıca ayrı ayrı derleme olmadan metin işlemek için çağrılabilir.  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/24/2017
   
 -   [Önceden tanımlı makrolar](../preprocessor/predefined-macros.md)  
   
--   [Pragmaları](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+-   [Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
   
  **Microsoft özel**  
   
@@ -46,4 +47,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
- [Çeviri aşamaları](../preprocessor/phases-of-translation.md)
+ [Çeviri Aşamaları](../preprocessor/phases-of-translation.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8376a65a511f2a59342aa59f86a9cd6ecd9768e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cefb8007fd9b73dda4c0e8a99e9ae9daa1bfcc34
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-working-areas-in-list-controls"></a>Liste Denetimlerinde Çalışma Alanlarını Uygulama
 Varsayılan olarak, bir liste denetimini tüm öğeleri bir standart kılavuz şekilde düzenler. Ancak, çalışma liste öğeleri dikdörtgen gruplar halinde düzenler alanlarını, başka bir yöntem desteklenir. Çalışma alanları uygulayan bir liste denetimi görüntüsü için liste görünümü denetimlerinde kullanarak Windows SDK'sı bakın.  
@@ -47,5 +48,5 @@ Varsayılan olarak, bir liste denetimini tüm öğeleri bir standart kılavuz ş
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

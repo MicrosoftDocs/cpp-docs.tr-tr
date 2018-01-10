@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7e05b4acf06f17813d45b4888a1342b31a424648
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07f59d65b5231e7e102dcf154ef2bc64ed8cbf04
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="divides-struct"></a>divides Yapısı
 Bölme işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator/`) bağımsız değişkenlerini üzerinde.  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 45025d4af6f53fa082c3fe162cd940747b0ee10b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 14f548e52c3771a5927d14253e56c442c39234ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-set-libexe-options-in-the-visual-studio-development-environment"></a>Nasıl Yapılır: Visual Studio Geliştirme Ortamında LIB.EXE Seçeneklerini Ayarlama
 ### <a name="to-set-libexe-options-in-the-visual-studio-development-environment"></a>LIB ayarlamak için. Visual Studio geliştirme ortamında EXE seçenekleri  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
 4.  Özellikleri gerektiği gibi değiştirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB başvurusu](../../build/reference/lib-reference.md)
+ [LIB Başvurusu](../../build/reference/lib-reference.md)

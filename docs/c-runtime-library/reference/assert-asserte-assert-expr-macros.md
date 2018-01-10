@@ -37,11 +37,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 44141622fa2fa760338109820ad185fb4e1e3ecf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07be60643ad77e1138c3c23a1dd358a1d4177f25
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="assert-asserte-assertexpr-macros"></a>_ASSERT, _ASSERTE, _ASSERT_EXPR makroları
 Bir ifade değerlendirme ve sonucu olduğunda hata ayıklama rapor oluşturmak `False` (yalnızca hata ayıklama sürümü).  
@@ -176,4 +177,4 @@ crt_ASSERT_macro.c(59) : Assertion failed: p1 == p2
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)   
  [Assert makrosu, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)   
- [_RPT, _RPTF, _RPTW, _RPTFW makroları](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)
+ [_RPT, _RPTF, _RPTW, _RPTFW Makroları](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)

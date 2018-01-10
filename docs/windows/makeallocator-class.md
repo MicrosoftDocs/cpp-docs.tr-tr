@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0333dec823cb3996a9546bbfa702b3febf711a61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 523bcdb17fc0a1b74fe615e5ff15a6fcef99cc32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="makeallocator-class"></a>MakeAllocator Sınıfı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -66,14 +69,14 @@ class MakeAllocator<T, true>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[MakeAllocator::MakeAllocator Oluşturucusu](../windows/makeallocator-makeallocator-constructor.md)|MakeAllocator sınıfı yeni bir örneğini başlatır.|  
-|[MakeAllocator:: ~ MakeAllocator yok Edicisi](../windows/makeallocator-tilde-makeallocator-destructor.md)|MakeAllocator sınıfı, geçerli örneğini deinitializes.|  
+|[MakeAllocator::~MakeAllocator Yıkıcısı](../windows/makeallocator-tilde-makeallocator-destructor.md)|MakeAllocator sınıfı, geçerli örneğini deinitializes.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[MakeAllocator::Allocate yöntemi](../windows/makeallocator-allocate-method.md)|Bellek ayırır ve geçerli MakeAllocator nesnesi ile ilişkilendirir.|  
-|[MakeAllocator::Detach yöntemi](../windows/makeallocator-detach-method.md)|Tarafından ayrılan bellek keser [ayırma](../windows/makeallocator-allocate-method.md) geçerli MakeAllocator nesnesinden yöntemi.|  
+|[MakeAllocator::Allocate Metodu](../windows/makeallocator-allocate-method.md)|Bellek ayırır ve geçerli MakeAllocator nesnesi ile ilişkilendirir.|  
+|[MakeAllocator::Detach Metodu](../windows/makeallocator-detach-method.md)|Tarafından ayrılan bellek keser [ayırma](../windows/makeallocator-allocate-method.md) geçerli MakeAllocator nesnesinden yöntemi.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `MakeAllocator`  
@@ -84,4 +87,4 @@ class MakeAllocator<T, true>;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

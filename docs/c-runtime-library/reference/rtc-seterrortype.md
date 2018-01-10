@@ -33,11 +33,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f695cb018a09725f23fb0943f9acbef83a338314
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2c89c5adba9224c11f8d5ec77e13b06a8cea4d0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rtcseterrortype"></a>_RTC_SetErrorType
 Bir türüyle çalışma zamanı hata denetimleri (RTCs) tarafından algılanan hata ilişkilendirir. Hata işleyicinizi hataları belirtilen türe ait çıktı nasıl işler.  
@@ -82,4 +83,4 @@ Bir türüyle çalışma zamanı hata denetimleri (RTCs) tarafından algılanan 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_RTC_GetErrDesc](../../c-runtime-library/reference/rtc-geterrdesc.md)   
- [Çalışma zamanı hata denetimi](../../c-runtime-library/run-time-error-checking.md)
+ [Çalışma Zamanı Hata Denetimi](../../c-runtime-library/run-time-error-checking.md)

@@ -14,11 +14,14 @@ caps.latest.revision: "2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8b94db5e54089fa91c3b79c185df8b366de07c38
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5f6330c78a6bbac5f14e94c253f05515e3d29575
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="roinitializewrapper-class"></a>RoInitializeWrapper Sınıfı
 Windows çalışma zamanı başlatır.  
@@ -38,14 +41,14 @@ class RoInitializeWrapper
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Roınitializewrapper::roınitializewrapper Oluşturucusu](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Roınitializewrapper sınıfının yeni bir örneğini başlatır.|  
-|[Roınitializewrapper:: ~ Roınitializewrapper yok Edicisi](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Roınitializewrapper sınıfının geçerli örneği yok eder.|  
+|[RoInitializeWrapper::RoInitializeWrapper Oluşturucusu](../windows/roinitializewrapper-roinitializewrapper-constructor.md)|Roınitializewrapper sınıfının yeni bir örneğini başlatır.|  
+|[RoInitializeWrapper::~RoInitializeWrapper Yıkıcısı](../windows/roinitializewrapper-tilde-roinitializewrapper-destructor.md)|Roınitializewrapper sınıfının geçerli örneği yok eder.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Roınitializewrapper:: HRESULT() işleci](../windows/roinitializewrapper-hresult-parens-operator.md)|Roınitializewrapper oluşturucusu tarafından üretilen HRESULT alır.|  
+|[RoInitializeWrapper::HRESULT() İşleci](../windows/roinitializewrapper-hresult-parens-operator.md)|Roınitializewrapper oluşturucusu tarafından üretilen HRESULT alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `RoInitializeWrapper`  
@@ -56,4 +59,4 @@ class RoInitializeWrapper
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

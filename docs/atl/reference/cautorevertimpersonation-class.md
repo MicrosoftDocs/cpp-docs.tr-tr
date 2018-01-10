@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd1d14e73ecc774a8074f47383345d1accc17dc4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b1982fc3c8b0d46dfd636cab63be82509fa07f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation sınıfı
 Bu sınıf döner [CAccessToken](../../atl/reference/caccesstoken-class.md) kapsam dışına çıktığında nonimpersonating bir duruma nesneleri.  

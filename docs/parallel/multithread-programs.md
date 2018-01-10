@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: effbb235ef678253f5258d3eb01a3a82292385cf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ff73b4d3a1c8ee6971fbd3f88f491c2a5c76311
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programlar
 Bir iş parçacığı bir program aracılığıyla yürütmenin temel bir yoludur. Bu ayrıca en küçük Win32 zamanlar yürütme birimidir. Bir iş parçacığı bir yığın CPU kaydeder ve sistem Zamanlayıcı yürütme listesinde bir girişi durumu oluşur. Her iş parçacığı tüm işlem kaynaklarını paylaşır.  
@@ -30,4 +31,4 @@ Bir iş parçacığı bir program aracılığıyla yürütmenin temel bir yoludu
  Bir işlemdeki her bir iş parçacığı bağımsız olarak çalışır. Birbirlerine görünür yapmanız sürece, iş parçacıklarının ayrı ayrı yürütün ve diğer iş parçacığı bir işlemde farkında değildir. Ortak kaynakları paylaşma iş parçacığı işlemler arası iletişim semaforları veya diğer kullanarak işlerine ancak koordine gerekir. İş parçacıklarını eşitleme hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-c-and-win32.md)
+ [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

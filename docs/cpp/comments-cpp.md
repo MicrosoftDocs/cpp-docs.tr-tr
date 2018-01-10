@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 828d02ddd02c7484e142333bdb87453f8fb922e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 482b9f2f3d9917466becff3f2c9bf9fea6f599f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comments-c"></a>Açıklamaları (C++)
 Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir metindir. Açıklamalar normalde daha sonra başvurmak üzere koda açıklama eklemek için kullanılır. Derleyici bunları boşluk olarak işler. Belirli kod satırlarını devre dışı yapma için sınama sırasında açıklamaları kullanabilirsiniz; Ancak, `#if` / `#endif` önişlemci yönergeleri çalışmak daha iyi bu açıklamaları içeren kodu çevreleyen ancak açıklamaları iç içe yerleştirilemez.  
@@ -36,4 +37,4 @@ Açıklama, derleyicinin yoksaydığı ancak programcılar için yararlı bir me
  Açıklama karakterleri (`/*`, `*/` ve `//`); karakter sabiti, dize sabiti veya açıklama içinde herhangi bir özel anlama sahip değildir. Bundan dolayı, ilk sözdizimini kullanan açıklamalar iç içe yerleştirilemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük kuralları](../cpp/lexical-conventions.md)
+ [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

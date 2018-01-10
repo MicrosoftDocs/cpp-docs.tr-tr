@@ -14,11 +14,12 @@ caps.latest.revision: "64"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 50589e18914ed452381a416cfb0f59d87b4be6a3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec2b8f0f05da535fd6a4f212a08af847c997a860
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-options-listed-by-category"></a>Kategorilere Göre Listelenen Derleyici Seçenekleri
 Bu makalede kategorik derleyici seçenekleri listesini içerir. Alfabetik bir listesi için bkz: [seçenekleri alfabetik listelenmiş derleyici](../../build/reference/compiler-options-listed-alphabetically.md).  
@@ -83,7 +84,7 @@ Bu makalede kategorik derleyici seçenekleri listesini içerir. Alfabetik bir li
   
 |Seçenek|Amaç|  
 |------------|-------------|  
-|[/ doc](../../build/reference/doc-process-documentation-comments-c-cpp.md)|Belge açıklamaları bir XML dosyasına işler.|  
+|[/doc](../../build/reference/doc-process-documentation-comments-c-cpp.md)|Belge açıklamaları bir XML dosyasına işler.|  
 |[/FA](../../build/reference/fa-fa-listing-file.md)|Bir derleme listeleme dosyası yapılandırır.|  
 |[/FA](../../build/reference/fa-fa-listing-file.md)|Bir derleme listeleme dosyası oluşturur.|  
 |[/FD](../../build/reference/fd-program-database-file-name.md)|Program veritabanı dosyayı yeniden adlandırır.|  
@@ -142,14 +143,14 @@ Bu makalede kategorik derleyici seçenekleri listesini içerir. Alfabetik bir li
 |[/F](../../build/reference/f-set-stack-size.md)|Ayarlar boyutu yığın.|  
 |[/LD](../../build/reference/md-mt-ld-use-run-time-library.md)|Bir dinamik bağlantı kitaplığı oluşturur.|  
 |[/ LDd](../../build/reference/md-mt-ld-use-run-time-library.md)|Hata ayıklama dinamik bağlantı kitaplığı oluşturur.|  
-|[/ Link](../../build/reference/link-pass-options-to-linker.md)|Belirtilen seçenek bağlantı geçirir.|  
+|[/link](../../build/reference/link-pass-options-to-linker.md)|Belirtilen seçenek bağlantı geçirir.|  
 |[/LN](../../build/reference/ln-create-msil-module.md)|MSIL modülü oluşturur.|  
 |[/MD](../../build/reference/md-mt-ld-use-run-time-library.md)|Birden çok iş parçacıklı DLL MSVCRT.lib kullanarak oluşturmak için derler.|  
 |[/ MDd](../../build/reference/md-mt-ld-use-run-time-library.md)|Bir hata ayıklama oluşturmak için derlerken MSVCRTD.lib kullanarak birden çok iş parçacıklı DLL.|  
 |[/ MT](../../build/reference/md-mt-ld-use-run-time-library.md)|LIBCMT.lib kullanarak birden çok iş parçacıklı bir yürütülebilir dosya oluşturmak için derler.|  
 |[/ MTd](../../build/reference/md-mt-ld-use-run-time-library.md)|Hata ayıklama birden çok iş parçacıklı yürütülebilir dosyası, LIBCMTD.lib kullanarak oluşturmak için derler.|  
   
-### <a name="miscellaneous"></a>Diğer  
+### <a name="miscellaneous"></a>Çeşitli  
   
 |Seçenek|Amaç|  
 |------------|-------------|  
@@ -167,7 +168,7 @@ Bu makalede kategorik derleyici seçenekleri listesini içerir. Alfabetik bir li
 |[/J](../../build/reference/j-default-char-type-is-unsigned.md)|Varsayılan değişiklikleri `char` türü.|  
 |[/ Kernel](../../build/reference/kernel-create-kernel-mode-binary.md)|Derleyicide ve bağlayıcıda Windows Çekirdeği'nde yürütülebilir bir ikili oluşturur.|  
 |[/MP](../../build/reference/mp-build-with-multiple-processes.md)|Aynı anda birden çok kaynak dosyaları oluşturur.|  
-|[/ nologo](../../build/reference/nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlık görüntülenmesini engeller.|  
+|[/nologo](../../build/reference/nologo-suppress-startup-banner-c-cpp.md)|Oturum açma başlık görüntülenmesini engeller.|  
 |[/ SDL](../../build/reference/sdl-enable-additional-security-checks.md)|Ek güvenlik özellikleri ve uyarılar sağlar.|  
 |[/ showıncludes](../../build/reference/showincludes-list-include-files.md)|Tüm listesini görüntüler derleme sırasında dosyaları içerir.|  
 |[TP](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md)|Bir C kaynak dosyasını belirtir.|  
@@ -222,4 +223,4 @@ Bu makalede kategorik derleyici seçenekleri listesini içerir. Alfabetik bir li
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

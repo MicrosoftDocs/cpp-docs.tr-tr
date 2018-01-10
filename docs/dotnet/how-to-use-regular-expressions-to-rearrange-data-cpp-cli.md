@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 62154cf33ba3705c89a5ad5a520b678e3f516498
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: bf60fff6c15313a6f7df1104f67c1f043f885eac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-regular-expressions-to-rearrange-data-ccli"></a>Nasıl yapılır: Veriyi Yeniden Düzenlemek İçin Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneği, .NET Framework normal ifade destek yeniden düzenleyin veya verileri yeniden biçimlendirmek için nasıl kullanılabileceğini gösterir. Aşağıdaki kod örneğinde <xref:System.Text.RegularExpressions.Regex> ve <xref:System.Text.RegularExpressions.Match> adları ve soyadları çıkartmak ve bu adı öğeleri ters sırada görüntülemek için sınıflar.  
@@ -67,4 +70,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 485d37c06624ae5ee534480b8f16bb94dad6d94f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 12ab065f0635996f495efca4853d829259242170
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="supporting-navigation-in-a-record-view--mfc-data-access"></a>(MFC veri erişimi) kayıt görünümünde gezintiyi destekleme
 Bu konu, taşıma kayıt kaydı da desteklemek üzere açıklanmaktadır, [CRecordView](../mfc/reference/crecordview-class.md) hakkında bilgiler dahil olmak üzere sınıfı:  
@@ -32,4 +35,4 @@ Bu konu, taşıma kayıt kaydı da desteklemek üzere açıklanmaktadır, [CReco
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)
+ [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

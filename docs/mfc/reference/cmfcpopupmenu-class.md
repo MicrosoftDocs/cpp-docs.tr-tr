@@ -171,11 +171,12 @@ caps.latest.revision: "40"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 36057304130150dbd12cf33f708d1d82cd52e0c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e40f7b601eda828784fb8ebdaf010059c4d9933e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 Windows açılır menü işlevlerini uygular ve etiketleri menüleri ve araç ipuçları gibi özellikler ekleyerek genişletir.
@@ -1376,4 +1377,4 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)
+ [CMFCPopupMenuBar Sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)

@@ -41,11 +41,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8220d74a9ca94aaf4c3748a3b760a4d6cd3564ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5abe2f0aa2f62048fefb2f79614e018fbdb51e08
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 Bir iş parçacığını sonlandırır; `_endthread` tarafından oluşturulan bir iş parçacığını sonlandırır `_beginthread` ve `_endthreadex` tarafından oluşturulan bir iş parçacığını sonlandırır `_beginthreadex`.  

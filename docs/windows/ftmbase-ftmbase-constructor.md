@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 07216b1647aafea94773928e9acdb9560d57d238
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2e0764f15c034e69dbbc5f1f669ab7fae327cde1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ftmbaseftmbase-constructor"></a>FtmBase::FtmBase Oluşturucusu
 FtmBase sınıfı yeni bir örneğini başlatır.  
@@ -36,4 +39,4 @@ FtmBase();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase sınıfı](../windows/ftmbase-class.md)
+ [FtmBase Sınıfı](../windows/ftmbase-class.md)

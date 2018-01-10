@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9fb3da38c9a17ae84c42d1a2337059a3932cbf04
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 622e6d04a567668ebfd2c737c5cdde1c2ea09b35
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="debugging-and-exception-classes"></a>Hata Ayıklama ve Özel Durum Sınıfları
 Bu sınıfların dinamik bellek ayırma hata ayıklama ve burada işlev için burada Yakalanan özel durum özel durum bilgilerini işlevinden geçirme için destek sağlar.  

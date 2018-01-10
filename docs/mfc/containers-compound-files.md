@@ -25,11 +25,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e48915641abae2285f00dcc24328efd810ec5e68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 261fcca76b4a5c9a6cb329081028672b2f241576
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="containers-compound-files"></a>Kapsayıcılar: Bileşik Dosyalar
 Bu makalede, bileşenleri ve uygulama bileşik dosyalar ve avantajlarını ve dezavantajlarını OLE uygulamalarınızda bileşik dosyalar açıklanmaktadır.  
@@ -88,4 +89,4 @@ Bu makalede, bileşenleri ve uygulama bileşik dosyalar ve avantajlarını ve de
  [Kapsayıcıları](../mfc/containers.md)   
  [Kapsayıcılar: Kullanıcı arabirimi sorunları](../mfc/containers-user-interface-issues.md)   
  [COleStreamFile sınıfı](../mfc/reference/colestreamfile-class.md)   
- [COleDocument sınıfı](../mfc/reference/coledocument-class.md)
+ [COleDocument Sınıfı](../mfc/reference/coledocument-class.md)

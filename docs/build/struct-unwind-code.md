@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 40b47b2b04d73c30e6c876199dbd98483490f4f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 76059ff24b46fd537db0c2670a30cf3f42ee2166
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="struct-unwindcode"></a>struct UNWIND_CODE
 Geriye doğru izleme kod dizisi RSP ve kalıcı Yazmaçları etkileyen giriş bölümünde işlemleri dizisini kaydetmek için kullanılır. Her kod öğesi aşağıdaki biçime sahiptir:  
@@ -140,4 +141,4 @@ Geriye doğru izleme kod dizisi RSP ve kalıcı Yazmaçları etkileyen giriş b�
 |8-15|R8 R15 kayıtları için|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri bırakma, özel durum işleme için hata ayıklayıcı desteği](../build/unwind-data-for-exception-handling-debugger-support.md)
+ [Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği](../build/unwind-data-for-exception-handling-debugger-support.md)

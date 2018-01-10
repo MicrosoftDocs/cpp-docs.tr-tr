@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c695f50760736b989b355cae7f7708f95dc431db
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bfad78b64f72b9ee9a896832e008039aa241e2ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>İzlenecek yol: MFC Kullanarak Şerit Uygulaması Oluşturma
 Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı** Şerit varsayılan olan bir uygulama oluşturmak için. Sonra ekleyerek Şerit genişletebilirsiniz bir **özel** sahip Şerit kategori bir **Sık Kullanılanlar** Şerit paneli ve bazı sık kullanılan komutlar paneline ekleme.  
@@ -36,21 +37,17 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
   
 3.  İlk sayfasında **MFC Uygulama Sihirbazı'nı**, tıklatın **sonraki**.  
   
-4.  Üzerinde **uygulama türü** sayfasında **görsel stil ve renkleri**seçin **Office 2007 (mavi tema)**. Diğer ayarları olduğu gibi bırakın. 
-              **İleri**'ye tıklayın.  
+4.  Üzerinde **uygulama türü** sayfasında **görsel stil ve renkleri**seçin **Office 2007 (mavi tema)**. Diğer ayarları olduğu gibi bırakın. **İleri**'ye tıklayın.  
   
 5.  Üzerinde **bileşik belge desteği** sayfasında, olduğundan emin olun **hiçbiri** seçilir ve ardından **sonraki**.  
   
-6.  Üzerinde **belge şablonu özellikleri** sayfasında **dosya uzantısı** kutusuna, bu uygulama oluşturur, örneğin, belgeler için bir dosya adı uzantısı yazın `mfcrbnapp`. 
-              **İleri**'ye tıklayın.  
+6.  Üzerinde **belge şablonu özellikleri** sayfasında **dosya uzantısı** kutusuna, bu uygulama oluşturur, örneğin, belgeler için bir dosya adı uzantısı yazın `mfcrbnapp`. **İleri**'ye tıklayın.  
   
 7.  Üzerinde **veritabanı desteği** sayfasında, olduğundan emin olun **hiçbiri** seçilir ve ardından **sonraki**.  
   
-8.  Üzerinde **kullanıcı arabirimi özellikleri** sayfasında, olduğundan emin olun **Şerit kullanmak** seçilir. 
-              **İleri**'ye tıklayın.  
+8.  Üzerinde **kullanıcı arabirimi özellikleri** sayfasında, olduğundan emin olun **Şerit kullanmak** seçilir. **İleri**'ye tıklayın.  
   
-9. Varsayılan olarak, **MFC Uygulama Sihirbazı'nı** birkaç yerleşik bölmeleri için destek ekler. Bu kılavuz sadece şerit hakkında bilgi verdiğinden bu seçenekleri uygulamadan kaldırabilirsiniz. Üzerinde **Gelişmiş Özellikler** sayfasında, tüm seçeneklerini temizleyin. 
-              **İleri**'ye tıklayın.  
+9. Varsayılan olarak, **MFC Uygulama Sihirbazı'nı** birkaç yerleşik bölmeleri için destek ekler. Bu kılavuz sadece şerit hakkında bilgi verdiğinden bu seçenekleri uygulamadan kaldırabilirsiniz. Üzerinde **Gelişmiş Özellikler** sayfasında, tüm seçeneklerini temizleyin. **İleri**'ye tıklayın.  
   
 10. Üzerinde **oluşturulan sınıflar** sayfasında, **son** MFC uygulaması oluşturmak için.  
   
@@ -94,9 +91,9 @@ Bu kılavuzda nasıl kullanılacağını gösterir **MFC Uygulama Sihirbazı'nı
 3.  Düğmelerin şerit paneline eklendiğini doğrulamak için uygulamayı derleyin ve çalıştırın. Uygulama üzerinde oluşturmak için **yapı** menüsünde tıklatın **yapı çözümü**. Uygulama başarıyla oluşturursa tıklayarak uygulamayı çalıştırın **hata ayıklamayı Başlat** üzerinde **hata ayıklama** menüsü. **Yazdırma** düğmesi ve birleşik giriş kutusu üzerinde **Sık Kullanılanlar** üzerinde panel **özel** Şeritteki sekmenin görüntülenmesi.  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
- [Nasıl yapılır: hızlı erişim araç çubuğunu özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)  
+ [Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)  
   
- [Nasıl yapılır: uygulama düğmesini özelleştirme](../mfc/how-to-customize-the-application-button.md)  
+ [Nasıl yapılır: Uygulama Düğmesini Özelleştirme](../mfc/how-to-customize-the-application-button.md)  
   
  Uçtan uca örnekler için bkz: [örnekler (MFC özellik paketi)](../visual-cpp-samples.md).  
   

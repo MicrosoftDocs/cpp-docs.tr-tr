@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 45cb4bb1537f7d897b1dd53ada413e73a54162ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d26cfad945278a45eccad2dc031d90e27da63dc0
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Diğer diller çok çeşitli uygulamaları oluşturmak için kullandığı için dil daha esnektir — eğlenceli ve aygıt sürücüleri, katıştırılmış programları ve Windows istemci uygulamaları için yüksek performanslı bilimsel yazılım heyecan verici oyunlar. 20 yıldan fazla, C++, bunlar ve diğer birçok gibi sorunları çözmek için kullanılmış. Ne değil bilirsiniz C++ programcıları artan sayıda dün dowdy C stili programlama yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -96,19 +97,19 @@ for( auto& s : v ) {
   
 -   [C++ tür sistemi](../cpp/cpp-type-system-modern-cpp.md)  
   
--   [Tek düzen başlatma ve oluşturucuları temsilci olarak görevlendirme](../cpp/uniform-initialization-and-delegating-constructors.md)  
+-   [Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme](../cpp/uniform-initialization-and-delegating-constructors.md)  
   
 -   [Nesne yaşam süresi ve kaynak yönetimi](../cpp/object-lifetime-and-resource-management-modern-cpp.md)  
   
--   [Nesneleri kendi kaynakları (RAII)](../cpp/objects-own-resources-raii.md)  
+-   [Nesnelerin Kaynakları (RAII)](../cpp/objects-own-resources-raii.md)  
   
 -   [Akıllı işaretçiler](../cpp/smart-pointers-modern-cpp.md)  
   
 -   [Derleme zamanı kapsüllemesi için Pimpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)  
   
--   [Kapsayıcıları](../cpp/containers-modern-cpp.md)  
+-   [Kapsayıcılar](../cpp/containers-modern-cpp.md)  
   
--   [Algoritmaları](../cpp/algorithms-modern-cpp.md)  
+-   [Algoritmalar](../cpp/algorithms-modern-cpp.md)  
   
 -   [Dize ve g/ç biçimlendirme (Modern C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)  
   
@@ -116,7 +117,7 @@ for( auto& s : v ) {
   
 -   [ABI sınırlarında taşınabilirlik](../cpp/portability-at-abi-boundaries-modern-cpp.md)  
   
- Daha fazla bilgi için StackOverflow makalesine bakın [hangi C++ deyimleri C ++ 11'de kullanım dışı bırakılmıştır](http://go.microsoft.com/fwlink/?LinkId=402836)  
+ Daha fazla bilgi için StackOverflow makalesine bakın [hangi C++ deyimleri C ++ 11'de kullanım dışı bırakılmıştır](http://go.microsoft.com/fwlink/p/?linkid=402836)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   

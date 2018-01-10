@@ -8,17 +8,18 @@ ms.technology: cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: 'index-page '
 dev_langs: C++
-helpviewer_keywords: ATL_URL_SCHEME
+helpviewer_keywords: ATLUTIL/ATL::ATL_URL_SCHEME
 ms.assetid: f4131046-8ba0-4ec1-8209-84203f05d20e
 caps.latest.revision: "7.2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cca9eaf9da116c241b4e137e8ca204b1a90b4595
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1936492f1b140afb762f7db2ce03abe343f0673d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atlurlscheme"></a>ATL_URL_SCHEME  
 

@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 14576d2adc97389163defee924339513671caff6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f297432293a7b2e8dd0c6d005c718a1edd5e13b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isbaseof-class"></a>is_base_of Sınıfı
 Tür başka bir temel olup olmadığını sınar.  
@@ -85,4 +86,4 @@ is_base_of<derived, base> == false
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_convertible sınıfı](../standard-library/is-convertible-class.md)
+ [is_convertible Sınıfı](../standard-library/is-convertible-class.md)

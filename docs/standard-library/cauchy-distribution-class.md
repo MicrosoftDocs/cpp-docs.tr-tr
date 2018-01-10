@@ -37,11 +37,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4910c1e65ac8e758b1b7790c27b8addf732dc32e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 53ecdd04ebb24c6380e61f8bc5536d24df4dc21b
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="cauchydistribution-class"></a>cauchy_distribution Sınıfı
 Cauchy dağıtım oluşturur.  
@@ -103,7 +104,7 @@ Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağ�
   
 Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
   
-Wolfram MathWorld makaleyi cauchy dağıtımı hakkında ayrıntılı bilgi için bkz [Cauchy dağıtım](http://go.microsoft.com/fwlink/LinkId=400523).  
+Wolfram MathWorld makaleyi cauchy dağıtımı hakkında ayrıntılı bilgi için bkz [Cauchy dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400523).  
   
 ## <a name="example"></a>Örnek  
   

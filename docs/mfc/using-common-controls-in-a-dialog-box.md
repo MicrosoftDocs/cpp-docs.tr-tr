@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e31c979feb82fd72eb739e2bcfb2816159cfe88
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67a9c77e6a8e5721bca6e3741b4b337cfdb42393
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>İletişim Kutusunda Ortak Denetimleri Kullanma
 Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-boxes.md), form görünümleri, kayıt görünümleri ve bir iletişim şablonunu temel alan başka bir pencere. Aşağıdaki yordam, bazı küçük değişikliklerle de formlar için çalışır.  
@@ -68,5 +69,5 @@ Windows ortak denetimleri kullanılabilir [iletişim kutuları](../mfc/dialog-bo
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

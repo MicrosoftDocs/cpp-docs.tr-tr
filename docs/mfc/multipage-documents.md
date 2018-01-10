@@ -36,11 +36,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d54eb376ef7568d390fb97e833cca30ca254ad30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 43bc9bbe4653e34c37ae46439baa1e649d6d8042
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multipage-documents"></a>Birden Fazla Belge
 Bu makalede Windows Yazdırma Protokolü açıklar ve birden fazla sayfa içeren belgeleri yazdırma açıklanmaktadır. Makale aşağıdaki konuları içerir:  
@@ -130,4 +131,4 @@ Yazdırma döngüsü
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yazdırma](../mfc/printing.md)   
  [CView sınıfı](../mfc/reference/cview-class.md)   
- [CDC sınıfı](../mfc/reference/cdc-class.md)
+ [CDC Sınıfı](../mfc/reference/cdc-class.md)

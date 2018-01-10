@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 10de04ebed31835d93daca9cf4caa5d96ed605b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 60373c12220fce57672389b98455a123990f3c93
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphore-class"></a>Semafor Sınıfı
 Kullanıcılar, sınırlı sayıda destekleyebilir paylaşılan bir kaynak denetleyen eşitleme nesnesi temsil eder.  
@@ -49,19 +52,19 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Invokehelper::Invoke yöntemi](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
+|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Semaphore::Lock yöntemi](../windows/semaphore-lock-method.md)|Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili nesne kadar bekler ve iş durumundaki ya da belirtilen zaman aşımı aralığı geçti.|  
+|[Semaphore::Lock Metodu](../windows/semaphore-lock-method.md)|Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili nesne kadar bekler ve iş durumundaki ya da belirtilen zaman aşımı aralığı geçti.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Semaphore::operator = işleci](../windows/semaphore-operator-assign-operator.md)|Belirtilen tanıtıcı geçerli semafor nesnesine bir semafor nesneden taşır.|  
+|[Semaphore::operator= İşleci](../windows/semaphore-operator-assign-operator.md)|Belirtilen tanıtıcı geçerli semafor nesnesine bir semafor nesneden taşır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Semaphore`  
@@ -72,4 +75,4 @@ class Semaphore : public HandleT<HandleTraits::SemaphoreTraits>
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

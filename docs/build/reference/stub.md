@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 27d7ee77d527e8d8715d182609f1cb847b10a3d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58430f8211f8859b65103b53d1f98a173c4635ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stub"></a>STUB
 Bir modül tanım dosyasında sanal aygıt sürücüsü (VxD) derlemeler kullanıldığında (WINNT içinde tanımlanmıştır. IMAGE_DOS_HEADER yapısı içeren bir dosya adı belirtmenize olanak tanır Y) yerine varsayılan başlık sanal aygıt sürücüsü (VxD), kullanılacak.  
@@ -34,4 +35,4 @@ STUB:filename
  SAPLAMA modül tanım dosyasında yalnızca bir VxD oluştururken geçerlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

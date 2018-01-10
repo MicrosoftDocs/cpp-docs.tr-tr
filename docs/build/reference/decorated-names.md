@@ -17,18 +17,19 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1db1d851e72bcce893f5e49b83b95ebf3366f15a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a2ad7fc8e6d9b7fa261d7811086ef02738c77e49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="decorated-names"></a>Düzenlenmiş Adlar
 İşlevler, veri ve nesneleri C ve C++ programlarında dahili olarak düzenlenmiş adlarıyla temsil edilir. A *adı donatılmış* derleyici tarafından oluşturulan bir nesne, veri veya işlev tanımı derleme sırasında kodlanmış bir dize. Çağırma kuralları, türleri, işlev parametrelerini ve diğer bilgi adı ile birlikte kaydeder. Olarak da bilinen bu ad düzenlemesi *ad bozma*nesnelerde yürütülebilir bir dosya bağlarken ve doğru işlevlerin bulunacağı bağlayıcı yardımcı olur.  
   
  Düzenlenmiş adlandırma kuralları çeşitli Visual C++ sürümünde değiştirilmiştir ve ayrıca farklı bir hedef mimarileri üzerinde farklı olabilir. Visual C++, C ve C++ DLL'ler ve kitaplıklar kullanılarak oluşturulan kaynak dosyalarla doğru bağlamak için aynı derleyici araç setini, bayrakları ve hedef mimari kullanarak derlenmesi gerekir.  
   
- **İçeriği**  
+ **İçindekiler**  
   
 -   [Düzenlenmiş adlar](#Using)  
   
@@ -110,4 +111,4 @@ is :- "private: void __thiscall a::func1(int)"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   
- [Bağlantıyı belirtmek için extern kullanma](../../cpp/using-extern-to-specify-linkage.md)
+ [Bağlantıyı Belirtmek için extern Kullanma](../../cpp/using-extern-to-specify-linkage.md)

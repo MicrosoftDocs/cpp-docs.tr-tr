@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cf2dcd59800617639f986a8bb33d962d7819cdfe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a9a37c640f0262e24a66e6880d469331826d559
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>İşlemci Üreticisi Programlama Kılavuzları
 Bu makalede üretilen, satışı, veya Microsoft tarafından desteklenen işlemciler programlama bilgilerini içerebilir Web sitelerine bağlantılar sağlar. Microsoft, kendi veya Web siteleri veya bunları içerik denetlemek.  
@@ -34,4 +35,4 @@ Bu makalede üretilen, satışı, veya Microsoft tarafından desteklenen işlemc
  Ne [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] ya da Microsoft makro derleyici tüm işlemcilerin destekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+ [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33b93084a99154aea671c877aae7d80e48485202
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a3b55cb078dc5db1f0bf727a10f2a77ebfddd260
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="com-10-support-in-atl-projects"></a>COM + 1.0 destek ATL projeleri
 Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/creating-an-atl-project.md) COM + 1.0 bileşenleri için temel desteği olan bir proje oluşturmak için.  
@@ -37,5 +38,5 @@ Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/creating-an-atl-p
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

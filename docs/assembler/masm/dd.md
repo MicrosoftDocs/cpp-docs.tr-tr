@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6d7166c0729abed67328b4d47afba3fea65e273c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 116cbfc7d1d3a97b395ee9197ece78cc11fc12fd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dd"></a>DD
 Ayırır ve isteğe bağlı olarak bir çift sözcük (4 bayt) depolama her biri için başlatır `initializer`. `DD`bir eş anlamlı olduğundan [DWORD](../../assembler/masm/dword.md).  
@@ -34,4 +35,4 @@ Ayırır ve isteğe bağlı olarak bir çift sözcük (4 bayt) depolama her biri
  Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a092c79bcd2f64793d43990cb6ee2900a8c4734a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d707d2b4903394b6b3b70367184767cce28ea1d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Tipik Bir FTP İstemci Uygulamasındaki Adımlar
 Tipik bir FTP istemci uygulaması oluşturur bir [CInternetSession](../mfc/reference/cinternetsession-class.md) ve [CFtpConnection](../mfc/reference/cftpconnection-class.md) nesnesi. Bu MFC WinINet sınıfları gerçekte proxy türü ayarlarını kontrol etmez olduğunu unutmayın; IIS yapar.  
@@ -53,4 +54,4 @@ Tipik bir FTP istemci uygulaması oluşturur bir [CInternetSession](../mfc/refer
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
  [Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)   
- [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+ [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

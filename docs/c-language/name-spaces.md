@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ba0a5fcce92c0d8afe19e3b98d2ba20e1d22d6a4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7833c7c1cfd9e7e2b408203f18cf955f6bafedd8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="name-spaces"></a>Ad Alanları
 "Ad alanları" derleyici ayarlar farklı türde öğe için kullanılan tanımlayıcıları ayırt etmek için. Her ad alanı içinde adları çakışmayı önlemek için benzersiz olmalıdır, ancak aynı adı birden fazla ad alanı görünebilir. Farklı ad alanlarında öğeleri olması koşuluyla iki veya daha fazla farklı öğeler için aynı tanımlayıcısı kullanabileceğiniz anlamına gelir. Derleyici program tanımlayıcıda söz dizimi bağlamında göre başvuruları çözebilirsiniz.  
@@ -63,4 +64,4 @@ struct student {
  Zaman `student` sonra görünen `struct` anahtar sözcüğü, derleyicisi tanır, yapısı etiketi olarak. Zaman `student` üye seçimi işlecinden sonra görüntülenir ( **->**  veya **.**), ad yapısı üyesine başvuruyor. Diğer bağlamlarda `student` yapısı değişkenine başvuruyor. Anlamı gizler beri ancak etiketi ad alanı aşırı önerilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Program yapısı](../c-language/program-structure.md)
+ [Program Yapısı](../c-language/program-structure.md)

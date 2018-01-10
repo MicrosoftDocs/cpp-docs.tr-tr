@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7635595adedf961c014bf8792316ca4943dc84a7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9967481734c49d40d3121f825783b1824ad6f4f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="main-function-and-program-execution"></a>main İşlevi ve Program Yürütme
 Her C programı adlandırılmalıdır birincil bir (ana) işlevi olan **ana**. Unicode programlama modeli kodunuzu aynılarını, joker karakter sürümünü kullanabilirsiniz **ana**, **wmain**. **Ana** programın yürütülmesi için başlangıç noktası işlevi görür. Genellikle çağrıları programdaki diğer işlevlere yönlendirerek program yürütmesini denetler. Bir program genellikle sonunda yürütülmesi durdurulur **ana**, çeşitli nedenlerle için programında diğer noktalarda sonlandırabilir rağmen. Bazen belirli bir hata algılandığında, programı sonlandırılmaya zorlamak isteyebilirsiniz. Bunu yapmak için kullanın **çıkmak** işlevi. Bkz: *çalışma zamanı kitaplığı başvurusu* hakkında bilgi ve bir örnek kullanmak için [çıkmak](../c-runtime-library/reference/exit-exit-exit.md) işlevi.  
@@ -45,4 +46,4 @@ main( int argc, char *argv[ ], char *envp[ ] )
  Bkz: [wmain kullanma](../c-language/using-wmain.md) joker karakter sürümünün açıklaması için **ana**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main: Program başlatma](../cpp/main-program-startup.md)
+ [main: Program Başlatma](../cpp/main-program-startup.md)

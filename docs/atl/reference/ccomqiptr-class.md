@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6240b779977f99d362f7fd37ef5526ce08e89bd0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b63e584b7c4620be0e77da034a2a419b80cf741
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccomqiptr-class"></a>CComQIPtr sınıfı
 COM arabirimi işaretçileri yönetmek için bir akıllı işaretçi sınıfı.  
@@ -115,4 +116,4 @@ T* operator= (IUnknown* lp) throw();
  [CComQIPtr::CComQIPtr](#ccomqiptr)   
  [CComPtrBase sınıfı](../../atl/reference/ccomptrbase-class.md)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [CComQIPtrElementTraits sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)
+ [CComQIPtrElementTraits Sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)

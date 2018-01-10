@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a0f18e4be45d3728e96e8183e82385f555832e17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a7c040188db5caf46c0d58720320088967b59ea6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-an-mfc-dll-project"></a>MFC DLL Projesi Oluşturma
 MFC DLL aynı anda birden çok uygulama tarafından kullanılan işlevlerin paylaşılan bir kitaplık gibi davranan bir ikili dosyadır. MFC DLL projesi oluşturmak için en kolay yolu, MFC DLL Sihirbazı'nı kullanmaktır.  

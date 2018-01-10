@@ -24,11 +24,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c45a2174650c7df3c3685472a36bdf306e8e7321
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 025c9aa66a8647fd5d8ca9803aedb50b27ed3be1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cstringelementtraits-class"></a>CStringElementTraits sınıfı
 Bu sınıf, depolama koleksiyon sınıfları tarafından kullanılan statik işlevler sağlar `CString` nesneleri.  

@@ -26,11 +26,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 499f7d7b1a286f85a13f2b2a8e87a3ee09f44086
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 04be31fa3209aace6fd5446532510e2a27e6bdce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>C türü dizelere ilgili CString işlemleri
 A [CString](../atl-mfc-shared/using-cstring.md) nesnesi karakter dizesi verileri içerir. `CString`kümesini devralır [yöntemleri ve işleçleri](../atl-mfc-shared/reference/cstringt-class.md) Sınıf şablonunda tanımlanan [CStringT](../atl-mfc-shared/reference/cstringt-class.md) dize verilerle çalışmak için. (`CString` olan bir `typedef` , uzmanlaşmış `CStringT` karakter veri türü ile çalışmak için `CString` destekler.)  
@@ -105,5 +106,5 @@ strcpy(myString, (LPCTSTR)aCString);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
- [CString bağımsız değişken geçirme](../atl-mfc-shared/cstring-argument-passing.md)
+ [CString Bağımsız Değişken Geçirme](../atl-mfc-shared/cstring-argument-passing.md)
 

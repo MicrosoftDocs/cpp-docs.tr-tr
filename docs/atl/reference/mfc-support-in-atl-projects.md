@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0217c62ff207ad706dbcb1cd172e878c2b96daee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 399f9fcea216adf5480bf38b8aba051c60eed496
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL projeleri MFC desteği
 Seçerseniz **destek MFC** uygulaması MFC Uygulama nesnesi (sınıfı) olarak projenize ATL Proje Sihirbazı'nda bildirir. Proje MFC kitaplığını başlatır ve bir sınıf oluşturur (sınıfı *ProjName*) öğesinden türetilen [CWinApp](../../mfc/reference/cwinapp-class.md).  
@@ -60,5 +61,5 @@ int CProjNameApp::ExitInstance()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)   
  [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

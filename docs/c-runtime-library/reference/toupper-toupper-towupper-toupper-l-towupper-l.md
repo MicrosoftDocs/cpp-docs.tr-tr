@@ -52,11 +52,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a40472922e61cbcc6c5788d575305613ae300e1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0414cd211cb9b833f24d2aac9ad9a82758c4efcf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toupper-toupper-towupper-toupperl-towupperl"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 Karakter büyük harfe Dönüştür.  
@@ -133,4 +134,4 @@ int _towupper_l(
  [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)   
  [to işlevleri](../../c-runtime-library/to-functions.md)   
  [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+ [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)

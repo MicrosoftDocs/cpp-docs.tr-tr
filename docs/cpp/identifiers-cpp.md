@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a60ce1bd87929853e57796c6ca2727fdb626e96f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c2b2c3899076206d3ce3b0094f3d85426bd321c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 Aşağıdakilerden birini belirtmek için kullanılan bir karakter dizisi tanımlayıcısıdır:  
@@ -107,4 +108,4 @@ int main() {
  İki ardışık kısa çizgi karakteri kullanımını ( **__** ) başlangıcında bir tanımlayıcı ya da bir büyük harf tarafından izlenen tek bir başında alt çizgi, tüm kapsamlar C++ uygulamalarında için ayrılmıştır. Önde gelen alt çizgi bir küçük harf dosya kapsamı içeren adlara yönelik geçerli veya gelecek ayrılmış tanımlayıcılarına sahip olası çakışmaları nedeniyle arkasından kullanarak kaçınmalısınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük kuralları](../cpp/lexical-conventions.md)
+ [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

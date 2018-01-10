@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: edf17c4524fd42fd0db327aca9de85e9d63eb651
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 56b7268083239fbec6b1744e1905e100fc357cc7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inputoutput-alternatives"></a>Giriş/Çıkış Seçenekleri
 Visual C++ g/ç programlama için birçok seçenek sağlar:  
@@ -38,5 +39,5 @@ Visual C++ g/ç programlama için birçok seçenek sağlar:
  Microsoft Windows işletim sistemiyle iostream sınıfları kullanabilirsiniz. Dize hem dosya akışları iş kısıtlamaları, ancak karakter modu akışı nesneleri `cin`, `cout`, `cerr`, ve `clog` Windows grafik kullanıcı arabirimi ile tutarsız. Ayrıca, doğrudan Windows ortamı ile etkileşim özel stream sınıfları türetilemeyeceğini.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ne bir akışı](../standard-library/what-a-stream-is.md)
+ [Akışın Ne Olduğu](../standard-library/what-a-stream-is.md)
 

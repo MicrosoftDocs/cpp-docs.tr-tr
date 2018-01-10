@@ -41,11 +41,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dbccf88ee493b0d9343660bbbcd447049ca8c19c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 38600b2e6eac6ad181baf1263d9e4d10295732b1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 Bir dış uygulama çalıştıran bir menü öğesi bir kullanıcı aracıdır. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları ekleme ve adı, komutu, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.  
@@ -246,4 +247,4 @@ virtual HICON SetToolIcon();
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)   
- [CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md)
+ [CUserToolsManager Sınıfı](../../mfc/reference/cusertoolsmanager-class.md)

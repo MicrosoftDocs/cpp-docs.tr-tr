@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e2b883e5f46e274c19b3e5c4ed3ae2698cef694e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c02d807f6b77ca7aa35ffe91b929122a3743be6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur. Farklı kapsayıcılar, Internet üzerindeki COM kullanan Web tarayıcıları dahil olmak üzere çeşitli kullanılan programlanabilir yazılım bileşenleri geliştirmek için birincil bir mimari denetimleridir. Herhangi bir ActiveX denetimi bir Internet Denetim olması ve işlevselliği için etkin bir belge ekleyebilir veya bir Web sayfası bir parçası olarak. Bir Web sayfasındaki denetimleri birbirleri ile komut dosyası kullanarak iletişim kurabilir.  
@@ -209,5 +210,5 @@ ActiveX denetimleri OLE denetim belirtimi güncelleştirilmiş sürümü bulunur
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)   
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)
+ [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
 

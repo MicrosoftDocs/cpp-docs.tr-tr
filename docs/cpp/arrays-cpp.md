@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d925165e7345d715d74cdd213b01d3108be8e35d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b23727d7f6f5e8adcc220d57907a1d61f430bde3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arrays-c"></a>Diziler (C++)
 Bir dizi nesneleri gibi koleksiyonudur. Basit dizi aşağıdaki sırası tarafından bildirilen bir vektör durumdur:  
@@ -109,15 +110,15 @@ double TransportCosts[][cMarkets] = {
   
  Bu bölümdeki konular:  
   
--   [Dizileri kullanma](../cpp/using-arrays-cpp.md)  
+-   [Dizileri Kullanma](../cpp/using-arrays-cpp.md)  
   
--   [İfadelerdeki diziler](../cpp/arrays-in-expressions.md)  
+-   [İfadelerdeki Diziler](../cpp/arrays-in-expressions.md)  
   
--   [Alt simge işleci yorumu](../cpp/interpretation-of-subscript-operator.md)  
+-   [Alt Simge İşleci Yorumu](../cpp/interpretation-of-subscript-operator.md)  
   
--   [Dizi türleri yöneltmesi](../cpp/indirection-on-array-types.md)  
+-   [Dizi Türleri Yöneltmesi](../cpp/indirection-on-array-types.md)  
   
--   [C++ dizilerini sıralama](../cpp/ordering-of-cpp-arrays.md)  
+-   [C++ Dizilerini Sıralama](../cpp/ordering-of-cpp-arrays.md)  
   
 ## <a name="example"></a>Örnek  
  Çok boyutlu bir diziye ilk boyutu için sınır belirtimi atlama tekniği de işlev bildirimleri gibi kullanılabilir:  

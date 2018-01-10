@@ -37,11 +37,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 603d20c7083a65dac8944c7891d36702043aa6ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e9af23bb74ba8e96f29a5b7cc4139d2932df8c1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 İstek ve bir HTTP sunucusunda dosyaları okumak için işlevsellik sağlar.  
@@ -493,4 +494,4 @@ BOOL SendRequestEx(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CInternetFile sınıfı](../../mfc/reference/cinternetfile-class.md)   
  [CGopherFile sınıfı](../../mfc/reference/cgopherfile-class.md)   
- [CHttpConnection sınıfı](../../mfc/reference/chttpconnection-class.md)
+ [CHttpConnection Sınıfı](../../mfc/reference/chttpconnection-class.md)

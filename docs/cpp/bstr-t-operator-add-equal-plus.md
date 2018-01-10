@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 503f021a9ef0f798af8d82f33dac84d3eb0ccc51
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1ceeec1461b05b25d4bb0b42321cb9b3988ce4b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrtoperator--"></a>_bstr_t::operator +=, +
 **Microsoft özel**  
@@ -63,15 +64,15 @@ friend _bstr_t operator+(
 ## <a name="remarks"></a>Açıklamalar  
  Bu işleçlere dize birleştirme gerçekleştirin:  
   
--   **operator += (***s1***)** kapsüllenmiş karakterleri ekler `BSTR` , *s1* bu nesnenin kapsüllenmiş sonuna`BSTR`.      
+-   **operator += (***s1***)** kapsüllenmiş karakterleri ekler `BSTR` , *s1* bu nesnenin kapsüllenmiş sonuna`BSTR`.  
   
--   **operator + (***s1***)** yeni döndürür `_bstr_t` bu nesnenin birleştirerek biçimlendirilmiş `BSTR` değeriyle *s1*.      
+-   **operator + (***s1***)** yeni döndürür `_bstr_t` bu nesnenin birleştirerek biçimlendirilmiş `BSTR` değeriyle *s1*.  
   
--   **operator + (***s2***&#124;** *s1***)** yeni döndürür `_bstr_t` birden çok baytlı dize birleştirerek biçimlendirilmiş *s2*, Unicode dönüştürülebilir ile `BSTR` içinde kapsüllenmiş *s1*.          
+-   **operator + (***s2***&#124;** *s1***)** yeni döndürür `_bstr_t` birden çok baytlı dize birleştirerek biçimlendirilmiş *s2*, Unicode dönüştürülebilir ile `BSTR` içinde kapsüllenmiş *s1*.  
   
--   **operator + (** `s3` **,***s1***)** yeni döndürür `_bstr_t` bir UNICODE dizesi birleştirerek biçimlendirilmiş `s3` ile `BSTR` içinde kapsüllenmiş *s1*.        
+-   **operator + (** `s3` **,***s1***)** yeni döndürür `_bstr_t` bir UNICODE dizesi birleştirerek biçimlendirilmiş `s3` ile `BSTR` içinde kapsüllenmiş *s1*.  
   
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)
+ [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

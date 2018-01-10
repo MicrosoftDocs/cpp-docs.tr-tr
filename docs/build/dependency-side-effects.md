@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9d19426a34620cfdd14b426b94757715ca2d1cbd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f595099d2a71c948c769adf7f7eafcbc373f3146
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dependency-side-effects"></a>Bağımlılık Yan Etkileri
 Bir hedef farklı konumlarda iki bağımlılık satırlardaki iki nokta (:) ile belirtilirse ve komut satırları yalnızca biri sonra görünüyorsa NMAKE bağımlılıkları bitişik veya birleştirilmiş gibi yorumlar. Çıkarım kuralı, hiçbir komut var, ancak bunun yerine bağımlılıklar için bir açıklama blok ait ve bir bağımlılık içeren belirtilen komutları yürütür varsayar bağımlılığı çağrılmaz. Örneğin, bu kuralları ayarlayın:  
@@ -59,4 +60,4 @@ bounce.exe : up.obj
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefleri](../build/targets.md)
+ [Hedefler](../build/targets.md)

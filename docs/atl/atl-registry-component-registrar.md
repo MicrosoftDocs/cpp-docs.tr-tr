@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f30254c1c18f49bf7e125fc855a32e9e8d2b8154
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 43eff661ff9a72ca72554a87b2177cbe07ad10f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-registry-component-registrar"></a>ATL Kayıt Defteri Bileşeni (Kaydedici)
 ATL Kaydedicisi sistem kayıt defteri özel bir arabirim aracılığıyla en iyi duruma getirilmiş erişim sağlar. Kayıt şirketi ücretsiz iş parçacıklı ve statik kodunu C++ istemciler için bağlama sağlar.  
@@ -34,7 +35,7 @@ ATL Kaydedicisi sistem kayıt defteri özel bir arabirim aracılığıyla en iyi
 >  ATL Kaydedicisi için kaynak kodunu atlmfc\include\atliface.h içinde bulunabilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Kaydedici betikleri oluşturma](../atl/creating-registrar-scripts.md)  
+ [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)  
  Kaydedici betikleri oluşturma için bir kılavuz. BNF sözdizimi, ayrıştırma ağacı değiştirilebilir parametreler kullanarak ve komut dosyaları çağırma örnekler, komut dosyası kayıt defteri hakkında konular içerir.  
   
  [Kaydedici kod (C++ yalnızca) statik bağlantı kurma](../atl/setting-up-a-static-link-to-the-registrar-code-cpp-only.md)  

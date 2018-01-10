@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bc9e78f38f911feac117023fc46b9c15d43e9128
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6426a25746858ed5bd7c0d8ef70575e029453bae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar Denetimleri ve Bantları
 Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları ve benzeri için kapsayıcı olarak hareket edecek bir rebar denetimi ana amacı budur. Bu kapsama bir "bant." kavramı tarafından desteklenir Her rebar bant Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini içerebilir.  
@@ -49,5 +50,5 @@ Alt pencereler, ortak iletişim kutusu denetimleri, menüler, araç çubukları 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

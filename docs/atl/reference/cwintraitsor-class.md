@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 14796948369b92c9137dc7e02a8399910d46997c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ac6cf07fcd6d3703ffb6b483ba19a2d12520cb0a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwintraitsor-class"></a>CWinTraitsOR sınıfı
 Bu sınıf bir pencere nesnesi oluşturulurken kullanılan stiller Standartlaştırma için bir yöntem sağlar.  
@@ -98,5 +99,5 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [Pencere özellikleri anlama](../../atl/understanding-window-traits.md)
+ [Pencere Özelliklerini Anlama](../../atl/understanding-window-traits.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 7c108dd9435d433076ea2f2c9b573f2ebf3685e3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce300956045c0a111deef6d514d1699bea8d794b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformmetadata-namespace"></a>Platform::metadata Namespace
 Bu ad alanı bildirimleri türlerinin değiştirme öznitelikleri içerir.  
@@ -39,7 +40,7 @@ namespace Platform {
 |Ad|Açıklama|  
 |----------|------------|  
 |Öznitelik|Öznitelikleri için temel sınıf.|  
-|[Platform::metadata::DefaultMemberAttribute özniteliği](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Birkaç olası aşırı yüklenmiş işlevlerin çağırmak için tercih edilen işlev gösterir.|  
+|[Platform::Metadata::DefaultMemberAttribute Özniteliği](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Birkaç olası aşırı yüklenmiş işlevlerin çağırmak için tercih edilen işlev gösterir.|  
 |[Platform::metadata::FlagsAttribute özniteliği](../cppcx/platform-metadata-flagsattribute-attribute.md)bayrakları|Sabit bit alanları numaralandırması olarak bildirir.<br /><br /> Aşağıdaki örnekte nasıl uygulanacağını gösterir `Flags` numaralandırma özniteliği.<br /><br /> `[Flags] enum class MyEnumeration { enumA = 1, enumB = 2, enumC = 3}`|  
 |[Platform::metadata::RuntimeClassNameAttribute](../cppcx/platform-metadata-runtimeclassname.md)|Bir özel ref sınıf geçerli çalışma zamanı sınıf adı sahip olmasını sağlar.|  
   

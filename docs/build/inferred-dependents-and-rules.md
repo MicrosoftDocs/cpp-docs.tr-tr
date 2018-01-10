@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 68b61a6aad55ef1f6b8b5807d857a4d7239ebb51
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe7c49607f466d8fd1d333883414b24d7837432b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inferred-dependents-and-rules"></a>Çıkarsanan Bağımlılıklar ve Kurallar
 Geçerli çıkarım kuralı varsa NMAKE bir oluşturulursa bağımlı bir hedef için varsayar. Bir kural geçerlidir:  
@@ -38,4 +39,4 @@ Geçerli çıkarım kuralı varsa NMAKE bir oluşturulursa bağımlı bir hedef 
  Çıkarsanan bağımlılıklar beklenmeyen yan etkileri neden olabilir. Hedefin açıklama blok komutları içeriyorsa, NMAKE kuralında komutları yerine bu komutları yürütür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkarım kuralları](../build/inference-rules.md)
+ [Çıkarım Kuralları](../build/inference-rules.md)

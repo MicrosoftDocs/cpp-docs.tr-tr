@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2cd1fcf502190af1a1293a1ca0eabedd515bb814
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 87ccbce95087daf33aec949a2c9db1e904dc2c61
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2070"></a>ML Önemli Olmayan Hatası A2070
 **Geçersiz bir yönerge işlenenleri**  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  Bir veya daha fazla işlenen ile bunların belirtilmiş yönergesi için geçerli değildi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

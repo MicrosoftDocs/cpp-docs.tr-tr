@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 8c95210d25008b70a190a793c4e8ff69bb309d9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a3e45985694bb74b21d25994a214d7914280e62
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="defaulttypenametostring-method"></a>Varsayılan:: (type_name):: ToString yöntemi
 Geçerli türünü temsil eden bir dize döndürür.  
@@ -43,4 +44,4 @@ String^ ToString()
  **Başlık:** vccorlib.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Varsayılan ad alanı](../cppcx/default-namespace.md)
+ [Varsayılan Ad Alanı](../cppcx/default-namespace.md)

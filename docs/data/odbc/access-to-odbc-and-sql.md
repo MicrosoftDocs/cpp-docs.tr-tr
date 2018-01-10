@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 666c0d0b3d358360426a7cf1184917b524a7030a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 25e9533752e47e5cf3ea50e594a23b99e19355ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC'ye ve SQL'e Erişim
 Microsoft Foundation Class Kitaplığı birçok Windows API çağrıları yalıtır ve hala doğrudan herhangi bir Windows API işlev çağrısı olanak tanır. Veritabanı sınıfları ODBC API ile aynı esneklik sağlar. Veritabanı sınıfları ODBC karmaşıklığını çoğunu sizden korurken, ODBC API işlevlerini doğrudan yerden çağırabilirsiniz programınızdaki.  

@@ -16,21 +16,22 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c29fdaf3d0b0b71afe8d241d4217d695767d7e6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe85ea42673e9d4b2b78edb2b2342153ad701fb1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="debugging-tips"></a>Hata ayıklama ipuçları
 Aşağıdaki konular, hizmet hata ayıklama için yararlı bazı adımları özetlemektedir:  
   
--   [Görev Yöneticisi'ni kullanma](../atl/using-task-manager.md)  
+-   [Görev Yöneticisi’ni Kullanma](../atl/using-task-manager.md)  
   
--   [Onaylar görüntüleme](../atl/displaying-assertions.md)  
+-   [Onaylamaları Görüntüleme](../atl/displaying-assertions.md)  
   
--   [Programı yerel bir sunucusu olarak çalışan](../atl/running-the-program-as-a-local-server.md)  
+-   [Programı Yerel Sunucu Olarak Çalıştırma](../atl/running-the-program-as-a-local-server.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hizmetleri](../atl/atl-services.md)
+ [Hizmetler](../atl/atl-services.md)
 

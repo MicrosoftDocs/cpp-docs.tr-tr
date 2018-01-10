@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 091ad40625c85f465e3989dd2dff790c630f6538
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c8ce648a541f6e0e2d4fac2e6ee19226e41f20ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="understanding-parse-trees"></a>Anlama ayrıştırma ağacı
 Her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt komut dosyanıza, bir veya daha fazla ayrıştırma ağacı tanımlayabilirsiniz:  
@@ -47,7 +48,7 @@ Her ayrıştırma ağacı aşağıdaki biçime sahip olduğu kayıt komut dosyan
 ```  
   
 > [!NOTE]
-> `HKEY_CLASSES_ROOT`ve `HKCR` eşdeğer; `HKEY_CURRENT_USER` ve `HKCU` eşdeğerlidir; ve vb..  
+> `HKEY_CLASSES_ROOT`ve `HKCR` eşdeğer; `HKEY_CURRENT_USER` ve `HKCU` eşdeğerlidir; ve vb.  
   
  Ayrıştırma ağacı birden çok anahtarlar ve alt anahtarlar için ekleyebilirsiniz \<kök anahtarı >. Ayrıştırıcının tüm alt anahtarlarını ayrıştırma tamamlanana kadar bunu yaparken, bir alt anahtarının tanıtıcı açık tutar. Bu yaklaşım, aşağıdaki örnekte görüldüğü gibi bir kerede tek bir anahtar işletim değerinden daha verimli olur:  
   
@@ -67,5 +68,5 @@ HKEY_CLASSES_ROOT
  Burada, kayıt şirketi başlangıçta açar (oluşturur) `HKEY_CLASSES_ROOT\MyVeryOwnKey`. Bunun ardından, görür `MyVeryOwnKey` bir alt anahtarı vardır. Anahtar kapatmak yerine `MyVeryOwnKey`, kayıt şirketi tanıtıcı korur ve açar (oluşturur) `HasASubKey` bu üst tanıtıcısını kullanarak. (Üst tanıtıcı yok açık olduğunda sistem kayıt defteri yavaş olabilir.) Bu nedenle, açma `HKEY_CLASSES_ROOT\MyVeryOwnKey` ve açarak `HasASubKey` ile `MyVeryOwnKey` üst açılış daha hızlıdır gibi `MyVeryOwnKey`, kapatma `MyVeryOwnKey`ve ardından açma `MyVeryOwnKey\HasASubKey`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaydedici betikleri oluşturma](../atl/creating-registrar-scripts.md)
+ [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)
 

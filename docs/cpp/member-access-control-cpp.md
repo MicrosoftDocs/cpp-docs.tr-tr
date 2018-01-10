@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 40c0f03b09a5f056ae260641c588996d3bd2043b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 88fe05ab0c0e6a1c433bf2b6007fb63c18fb5850
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="member-access-control-c"></a>Üye Erişim Denetimi (C++)
 Erişim denetimleri ayırmak etkinleştirme [ortak](../cpp/public-cpp.md) öğesinden bir sınıf arabiriminin [özel](../cpp/private-cpp.md) uygulama ayrıntılarını ve [korumalı](../cpp/protected-cpp.md) yalnızca üyelerin kullanmak tarafından türetilen sınıflar. Erişim belirteci sonraki erişim belirticisi karşılaşılanaa kadar sonra bildirilen tüm üyeleri için geçerlidir.  
@@ -51,9 +52,9 @@ protected:      // Declare protected function for derived classes only.
   
 |Erişim türü|Açıklama|  
 |--------------------|-------------|  
-|[Özel](../cpp/private-cpp.md)|Sınıf üyeleri bildirilen `private` yalnızca üye işlevleri ve arkadaş (sınıfları veya işlevleri) sınıfının tarafından kullanılabilir.|  
-|[korumalı](../cpp/protected-cpp.md)|Sınıf üyeleri bildirilen `protected` üye işlevleri ve arkadaş (sınıfları veya işlevleri) sınıfının tarafından kullanılabilir. Ayrıca, bunlar sınıfından türetilen sınıflar tarafından kullanılabilir.|  
-|[Ortak](../cpp/public-cpp.md)|Sınıf üyeleri bildirilen **ortak** herhangi bir işlev tarafından kullanılabilir.|  
+|[private](../cpp/private-cpp.md)|Sınıf üyeleri bildirilen `private` yalnızca üye işlevleri ve arkadaş (sınıfları veya işlevleri) sınıfının tarafından kullanılabilir.|  
+|[protected](../cpp/protected-cpp.md)|Sınıf üyeleri bildirilen `protected` üye işlevleri ve arkadaş (sınıfları veya işlevleri) sınıfının tarafından kullanılabilir. Ayrıca, bunlar sınıfından türetilen sınıflar tarafından kullanılabilir.|  
+|[public](../cpp/public-cpp.md)|Sınıf üyeleri bildirilen **ortak** herhangi bir işlev tarafından kullanılabilir.|  
   
  Erişim denetimi, bunların amaçla kullanılacağını olmayan yollarla nesneleri kullanarak önlemeye yardımcı olur. Açık tür Dönüşümleri (atamaları) gerçekleştirildiğinde bu koruma kaybolur.  
   

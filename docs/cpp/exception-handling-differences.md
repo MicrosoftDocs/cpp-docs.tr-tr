@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfa736c83dd76ff8b8f677daad54104ff507df03
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 63fff00222aa083bcb392e0d71411bfcf5c0f418
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling-differences"></a>Özel Durum İşleme Farkları
 C++ özel durum türleri modeli anlaşmalar işleme yapılandırılmış özel durum işleme modeli C sırasında özel durumlar dışında bir tür ilgilenir yapılandırılmış özel durum işleme ve C++ özel durum işleme arasındaki en önemli fark olan — özellikle `unsigned int`. Diğer bir deyişle, C++ özel durumlarını veri türüne göre tanımlanır ancak C özel durumlar bir işaretsiz tamsayı değeri tarafından tanımlanır. C'de bir özel durum oluştuğunda, her olası işleyicisi C özel durum bağlamı inceler ve özel durum kabul edin, diğer bazı işleyicisine geçirmek ya da yok sayın belirleyen bir filtre yürütür. C++'da bir özel durum, herhangi bir türde olabilir.  
@@ -151,4 +152,4 @@ nSE = 0xc0000094
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C (yapılandırılmış) ile C++ özel durumlarını karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)
+ [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)

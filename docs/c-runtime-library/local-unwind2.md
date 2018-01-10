@@ -29,11 +29,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8ad37d66e0e73e7ee75e2c44869c59c545025bd6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3b0c027623f5b562219e46c67ef730754538d602
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="localunwind2"></a>_local_unwind2
 İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicileri çalışır.  
@@ -60,4 +61,4 @@ void _local_unwind2(
  Sonlandırma işleyicileri bu yöntem yürütür, geçerli sözcük düzeyinde başlar ve works kendi şekilde düzeyi, ulaşana kadar sözcük düzeylerinde tarafından belirtilir `stop`. Sonlandırma işleyicileri tarafından gösterilen düzeyinde yürütmez `stop`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+ [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

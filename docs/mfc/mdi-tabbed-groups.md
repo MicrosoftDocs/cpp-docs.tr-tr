@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d58c079fc08935a11f65170b804f6a4b2786cbb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9606d28f6e2057072a0c9fc356e3bc7ca7cdc19b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mdi-tabbed-groups"></a>MDI Sekmeli Grupları
 Bir veya daha fazla sekmeli windows görüntülemek birden çok belge arabirimi (MDI) uygulamaları birden çok belge arabirimi (MDI) sekmeli gruplar özelliği sağlar (ya da kullanıcı grupları olarak bilinen sekmeli windows *sekmeli grupları*) MDI istemci alanında. Sekmeli windows dikey veya yatay olarak hizalanabilir. Bir uygulama birden fazla MDI sekmeli Grup barındırıyorsa, grupları ayırıcılar tarafından ayrılır.  
@@ -71,4 +72,4 @@ Bir veya daha fazla sekmeli windows görüntülemek birden çok belge arabirimi 
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
  [CMDIFrameWndEx sınıfı](../mfc/reference/cmdiframewndex-class.md)   
  [CMDIChildWndEx sınıfı](../mfc/reference/cmdichildwndex-class.md)   
- [CMDITabInfo sınıfı](../mfc/reference/cmditabinfo-class.md)
+ [CMDITabInfo Sınıfı](../mfc/reference/cmditabinfo-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b1e28415cf6f0e5f29d50349cd38fe4b18cfe812
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7d1c6f8cf6ac62cca9be3e09d7d2a103d726cf05
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handlenulltraits-structure"></a>HANDLENullTraits Yapısı
 Başlatılmamış bir tanıtıcı genel özelliklerini tanımlar.  
@@ -42,8 +45,8 @@ struct HANDLENullTraits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HANDLENullTraits::Close yöntemi](../windows/handlenulltraits-close-method.md)|Belirtilen tanıtıcı kapatır.|  
-|[Handlenulltraits::getınvalidvalue yöntemi](../windows/handlenulltraits-getinvalidvalue-method.md)|Geçersiz bir tanıtıcı temsil eder.|  
+|[HANDLENullTraits::Close Metodu](../windows/handlenulltraits-close-method.md)|Belirtilen tanıtıcı kapatır.|  
+|[HANDLENullTraits::GetInvalidValue Metodu](../windows/handlenulltraits-getinvalidvalue-method.md)|Geçersiz bir tanıtıcı temsil eder.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HANDLENullTraits`  
@@ -54,4 +57,4 @@ struct HANDLENullTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

@@ -26,11 +26,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a93f0354395dee3110749a942e1800581f146fdf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6bbf62500d3aaca21e9b01401e839d08fa56755c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-adding-custom-events"></a>MFC ActiveX Denetimleri: Özel Olaylar Ekleme
 Özel olaylar, bunlar otomatik olarak bir sınıf tarafından tetiklenen değil, stok olayları farklı `COleControl`. Özel bir olay bir olay olarak denetim geliştirici tarafından belirlenen belirli bir eylemi, tanır. Özel olaylar için olay eşleme girdilerini tarafından temsil edilen `EVENT_CUSTOM` makrosu. Aşağıdaki bölümde ActiveX Denetim Sihirbazı kullanılarak oluşturulmuş bir ActiveX denetimi projesi için özel bir olay uygular.  
@@ -139,4 +140,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md)   
- [COleControl sınıfı](../mfc/reference/colecontrol-class.md)
+ [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

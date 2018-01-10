@@ -24,11 +24,12 @@ ms.assetid: e88c04b7-0c93-4ae8-aeb9-ecd78f87421e
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6f79815d873a7c9f5f8c5f0397248f54776a7c20
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6c0b304b00b5cc5c613ff7e81818d1c637989e5f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iregistrar-interface"></a>IRegistrar arabirimi
 Bu arabirim atliface.h içinde tanımlanır ve CAtlModule üye işlevleri tarafından gibi dahili olarak kullanılır [UpdateRegistryFromResourceD](catlmodule-class.md#updateregistryfromresourced).   
@@ -140,7 +141,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 ```  
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Değiştirilebilir parametreler (kayıt şirketinin önişlemci) kullanma](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)  
+ [Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)  
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
  [Modül sınıfları](../../atl/atl-module-classes.md)   
  [Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)  

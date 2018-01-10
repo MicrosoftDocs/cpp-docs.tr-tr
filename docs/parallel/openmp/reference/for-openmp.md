@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c1e7f5df003796050958f803cc931a49d2d52d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 97c32bd93ca208d76fbcb418c6e851e3c50f49ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="for-openmp"></a>(OpenMP) için
 Çalışmanın neden olan bir iş parçacıkları arasında bölünür için paralel bir bölge içinde döngü için.  
@@ -51,11 +52,11 @@ ms.lasthandoff: 10/24/2017
   
 -   [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)  
   
--   [Özel](../../../parallel/openmp/reference/private-openmp.md)  
+-   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
--   [Azaltma](../../../parallel/openmp/reference/reduction.md)  
+-   [reduction](../../../parallel/openmp/reference/reduction.md)  
   
--   [zamanlama](../../../parallel/openmp/reference/schedule.md)  
+-   [schedule](../../../parallel/openmp/reference/schedule.md)  
   
  Varsa **paralel** de belirtilirse, `clause` herhangi bir koşul tarafından kabul **paralel** veya **için** yönergeleri, dışında **nowait**.  
   
@@ -126,4 +127,4 @@ The sum of 1 through 10 is 55
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeleri](../../../parallel/openmp/reference/openmp-directives.md)
+ [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

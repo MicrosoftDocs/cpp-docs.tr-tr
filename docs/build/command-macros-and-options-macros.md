@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 22afb96f3bc20ab769f3ef18015c721218ea7339
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 06f5d48395c0395a85c90096bf2dbad8627ac41a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-macros-and-options-macros"></a>Komut Makroları ve Seçenek Makroları
 Komut makroları Microsoft ürünleri için önceden tanımlanmıştır. Seçenekler makroları bu ürünler için seçenekleri temsil eder ve varsayılan olarak tanımlanmamış. Her ikisi de önceden tanımlanmış çıkarım kurallarındaki kullanılır ve açıklama blokları veya kullanıcı tanımlı çıkarım kuralları kullanılabilir. Komut makroları kısmını veya tamamını seçenekleri de dahil olmak üzere bir komut satırı temsil etmek için tanımlanabilir. Seçenekler makroları sol tanımsız ise boş bir dize oluşturur.  
@@ -37,4 +38,4 @@ Komut makroları Microsoft ürünleri için önceden tanımlanmıştır. Seçene
 |Kaynak Derleyicisi|**RC**|RC|**RFLAGS**|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel NMAKE makroları](../build/special-nmake-macros.md)
+ [Özel NMAKE Makroları](../build/special-nmake-macros.md)

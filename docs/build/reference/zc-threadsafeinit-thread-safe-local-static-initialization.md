@@ -22,11 +22,12 @@ caps.latest.revision: "1"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3e1476369a798228361b89fdef12c94624ca4a70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a03f3ea67c9ecabd6fa68d653a3e1812fb0266cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ZC:threadSafeInit (iş parçacığı yerel statik başlatma)  
 `/Zc:threadSafeInit` Derleyici seçeneği statik yerel (işlev kapsamı) değişkenleri el ile eşitleme gereksinimini bir iş parçacığı açısından güvenli şekilde başlatmak için derleyici söyler. Yalnızca başlatma iş parçacığı güvenlidir. Kullanım ve statik yerel değişkenler birden çok iş parçacığı tarafından değiştirilmesini hala el ile eşitlenmelidir. Bu seçenek, Visual Studio 2015'ten başlayarak kullanılabilir. Varsayılan olarak, Visual Studio bu seçeneği etkinleştirir.  
@@ -53,5 +54,5 @@ Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart 
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)  
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
 [/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)  

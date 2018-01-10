@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70ed8ecc43f8467ca4e0bdc0856b32f3510d85a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d7730fdd356b8145b771a85b8449974c2c8fa007
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csimpleexception-class"></a>CSimpleException sınıfı
 Bu sınıf, kaynak kritik MFC özel durumlar için temel bir sınıftır.  
@@ -55,11 +56,11 @@ class AFX_NOVTABLE CSimpleException : public CException
   
 |||  
 |-|-|  
-|[CMemoryException sınıfı](../../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz özel durumu|  
-|[CNotSupportedException sınıfı](../../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen bir işlem için istekleri|  
-|[CResourceException sınıfı](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya yok creatable|  
-|[CUserException sınıfı](../../mfc/reference/cuserexception-class.md)|Bir kaynak gösteren özel durumu bulunamadı.|  
-|[CInvalidArgException sınıfı](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken gösteren özel durumu|  
+|[CMemoryException Sınıfı](../../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz özel durumu|  
+|[CNotSupportedException Sınıfı](../../mfc/reference/cnotsupportedexception-class.md)|Desteklenmeyen bir işlem için istekleri|  
+|[CResourceException Sınıfı](../../mfc/reference/cresourceexception-class.md)|Windows kaynak bulunamadı veya yok creatable|  
+|[CUserException Sınıfı](../../mfc/reference/cuserexception-class.md)|Bir kaynak gösteren özel durumu bulunamadı.|  
+|[CInvalidArgException Sınıfı](../../mfc/reference/cinvalidargexception-class.md)|Geçersiz bağımsız değişken gösteren özel durumu|  
   
  Çünkü `CSimpleException` , bildiremezsiniz bir Özet temel sınıf olan bir `CSimpleException` doğrudan nesne. Bunun yerine, önceki tabloda bulunanlar gibi türetilen nesneleri bildirmeniz gerekir. Kendi türetilmiş bir sınıf bildirme, önceki sınıfları model olarak kullanın.  
   
@@ -119,7 +120,7 @@ virtual BOOL GetErrorMessage(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CException sınıfı](../../mfc/reference/cexception-class.md)   
- [Özel durum işleme](../../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../../mfc/exception-handling-in-mfc.md)
 
 
 

@@ -210,11 +210,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 2b70ab848071bb1196ceb57f986a6e74fe43d2de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4f19fcbd350ea13004df5298beb95f10661e1f61
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 ||||  
@@ -237,7 +238,7 @@ ms.lasthandoff: 10/24/2017
 |[none_of](#none_of)|[nth_element](#nth_element)|[partial_sort](#partial_sort)|  
 |[partial_sort_copy](#partial_sort_copy)|[Bölüm](#partition)|[partition_copy](#partition_copy)|  
 |[partition_point](#partition_point)|[pop_heap](#pop_heap)|[prev_permutation](#prev_permutation)|  
-|[push_heap](#push_heap)|[random_shuffle](#random_shuffle)|[Kaldır](#remove)|  
+|[push_heap](#push_heap)|[random_shuffle](#random_shuffle)|[remove](#remove)|  
 |[remove_copy](#remove_copy)|[remove_copy_if](#remove_copy_if)|[remove_if](#remove_if)|  
 |[Değiştir](#replace)|[replace_copy](#replace_copy)|[replace_copy_if](#replace_copy_if)|  
 |[replace_if](#replace_if)|[geriye doğru](#reverse)|[reverse_copy](#reverse_copy)|  
@@ -5403,7 +5404,7 @@ int main( ) {
 ```  
   
 ##  <a name="random_shuffle"></a>random_shuffle  
- Std::random_shuffle() işlevi değiştirilmiştir kullanım dışıdır [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stackoverflow nakil [neden std::random_shuffle yöntemleri kaldırılmış olan C ++ 14'te?](http://go.microsoft.com/fwlink/?LinkId=397954).  
+ Std::random_shuffle() işlevi değiştirilmiştir kullanım dışıdır [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stackoverflow nakil [neden std::random_shuffle yöntemleri kaldırılmış olan C ++ 14'te?](http://go.microsoft.com/fwlink/p/?linkid=397954).  
   
 ##  <a name="remove"></a>Kaldır  
  Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.  

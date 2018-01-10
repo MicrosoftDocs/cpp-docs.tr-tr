@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: aecb28648e32e099d2381fa49b1b7f5a42618543
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a567b33e55092e7e8e0361faa0ce54b2498827a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
 **Microsoft özel**  
@@ -51,7 +52,7 @@ __m128 _mm_cvtsi64x_ss(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_mm_cvtsi64x_ss`|x64|  
+|`_mm_cvtsi64x_ss`|X64|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   
@@ -96,4 +97,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__m128](../cpp/m128.md)   
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
+ [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

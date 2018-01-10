@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c22164fdc2bd8236b6f4819609175c80bd472abf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc923e8c638f51720aaffbb8c26aaa65bb230731
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="low-level-io"></a>Düşük Düzey G/Ç
 Bu işlevler işletim sistemi akış g/ç tarafından sağlanan daha düşük düzeyli işlemi için doğrudan çağırma. Alt düzey giriş ve çıkış çağrı yapmak arabellek veya biçim verileri değil.  
@@ -50,16 +51,16 @@ Bu işlevler işletim sistemi akış g/ç tarafından sağlanan daha düşük d�
 |[_dup2](../c-runtime-library/reference/dup-dup2.md)|Belirtilen ikinci tanımlayıcısı oluşturun dosyası|  
 |[_eof](../c-runtime-library/reference/eof.md)|Dosya sonu için test etme|  
 |[_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)|Yeniden konumlandırma dosya işaretçisini konumu verilen|  
-|[_kurulum Aç, _wopen](../c-runtime-library/reference/open-wopen.md)|dosyasını açın|  
-|[_microsoft](../c-runtime-library/reference/read.md)|Veri dosyasından okuma|  
+|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|dosyasını açın|  
+|[_read](../c-runtime-library/reference/read.md)|Veri dosyasından okuma|  
 |[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md), [_sopen_s, _wsopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md)|Dosya Paylaşımı için Dosya Aç|  
 |[_tell, _telli64](../c-runtime-library/reference/tell-telli64.md)|Geçerli dosya işaretçisini konumu Al|  
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Dosya izni maske ayarlama|  
-|[_Write](../c-runtime-library/reference/write.md)|Veri dosyasına yazma|  
+|[_write](../c-runtime-library/reference/write.md)|Veri dosyasına yazma|  
   
  `_dup`ve `_dup2` genellikle önceden tanımlanmış dosya tanımlayıcıları farklı dosyaları ile ilişkilendirmek için kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Giriş ve çıkış](../c-runtime-library/input-and-output.md)   
  [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)   
- [Sistem çağrıları](../c-runtime-library/system-calls.md)
+ [Sistem Çağrıları](../c-runtime-library/system-calls.md)

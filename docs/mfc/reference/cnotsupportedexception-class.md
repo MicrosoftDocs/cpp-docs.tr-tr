@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55416272671d9c03422fcb74ec03ecc02ed671ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4013b26e3c07d6ec2a729bf9868db48923e35f86
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cnotsupportedexception-class"></a>CNotSupportedException sınıfı
 Desteklenmeyen bir özellik için bir istek sonucu bir özel durumu temsil eder.  
@@ -70,6 +71,6 @@ CNotSupportedException();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CException sınıfı](cexception-class.md)   
- [Hiyerarşi grafiği](../hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../hierarchy-chart.md)
 
 

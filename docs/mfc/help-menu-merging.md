@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 218493b6346858d33df042ec5754775272b1d788
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c4d3ae9509edcbe79417bb37d02f4f585b2da653
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="help-menu-merging"></a>Yardım Menüsü Birleştirme
 Bir nesne bir kapsayıcıda etkin olduğunda, OLE belgelerin Protokolü birleştirme menüsü nesne tam denetim verir **yardımcı** menüsü. Sonuç olarak, kullanıcı nesnesi devre dışı bırakır sürece kapsayıcının Yardım konuları kullanılabilir değildir. Etkin belge kapsama mimarisi kapsayıcı ve menü paylaşmak için etkin bir etkin belgeyi izin vermek için birleştirme yerinde menüsü kurallarında genişletir. Yeni kurallar, hangi bileşen menü hangi kısmının sahip olan ve paylaşılan menü nasıl oluşturulur hakkında yalnızca ek kurallardır.  
@@ -59,5 +60,5 @@ Bir nesne bir kapsayıcıda etkin olduğunda, OLE belgelerin Protokolü birleşt
  Menü Ayır zamanı geldiğinde nesne son olarak, eklenen kaldırır **yardımcı** diğer kaldırma yanı sıra menü menüleri eklenir. Kapsayıcı menülerini kaldırdığında kaldıracak kendi **yardımcı** eklenmiş diğer menüleri yanı sıra menüsü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsayıcıları](../mfc/active-document-containers.md)
+ [Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
 

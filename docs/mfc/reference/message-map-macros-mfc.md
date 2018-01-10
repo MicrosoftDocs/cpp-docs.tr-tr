@@ -39,11 +39,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70f88d493ad557515cfac1f8cffeaa305c849f63
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7bf56b243118ceb7fdd995fc6970f6c49e0a5499
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 İleti eşlemeleri desteklemek için aşağıdaki makroları MFC sağlar:  
@@ -312,7 +313,7 @@ ON_MESSAGE( message, memberFxn )
  Olması gerektiğini tam olarak bir `ON_MESSAGE` bir ileti işleyicisi işleve eşlenmelidir her kullanıcı tarafından tanımlanan ileti, ileti eşlemesi makrosu deyiminde.  
   
 > [!NOTE]
->  Kullanıcı tanımlı iletiler, ek olarak `ON_MESSAGE` daha az yaygın Windows iletilerini işleme. Daha fazla bilgi için bkz. Bilgi Bankası makalesi [99848: bilgi: kullanım ON_MESSAGE() makrosu harita daha az yaygın iletileri](http://go.microsoft.com/fwlink/?linkId=192022).  
+>  Kullanıcı tanımlı iletiler, ek olarak `ON_MESSAGE` daha az yaygın Windows iletilerini işleme. Daha fazla bilgi için bkz. Bilgi Bankası makalesi [99848: bilgi: kullanım ON_MESSAGE() makrosu harita daha az yaygın iletileri](http://go.microsoft.com/fwlink/p/?linkid=192022).  
   
  Daha fazla bilgi ve örnekler için bkz: [ileti işleme ve eşleme konuları](../../mfc/message-handling-and-mapping.md) ve [kullanıcı tanımlı işleyiciler](user-defined-handlers.md)  
   
@@ -506,7 +507,7 @@ END_MESSAGE_MAP()
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
- [Kullanıcı tanımlı işleyiciler](user-defined-handlers.md)
+ [Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>ON_REGISTERED_THREAD_MESSAGE    
 Hangi işlev Windows RegisterWindowMessage işlevi tarafından kaydedilen iletinin işleyecek gösterir.  
@@ -577,7 +578,7 @@ ON_UPDATE_COMMAND_UI( id, memberFxn )
  **Başlık:** afxole.h  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [Ccmduı sınıfı](ccmdui-class.md)
+ [CCmdUI Sınıfı](ccmdui-class.md)
 
 ## <a name="on_command_range"></a>ON_COMMAND_RANGE  
 Komut kimlikleri bitişik bir dizi tek ileti işleyicisi işleve eşlemek için bu makrosu kullanın.  

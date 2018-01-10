@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5921b3091532c63e3ba92d6e6e74f29a85123ac1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c1b2b348277f7d33a32c8d0e6ad1fc80d51ec68d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrtgetaddress"></a>_bstr_t::GetAddress
 **Microsoft özel**  
@@ -46,4 +47,4 @@ BSTR* GetAddress( );
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)
+ [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

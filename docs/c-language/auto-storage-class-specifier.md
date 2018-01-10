@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5e80f6057a26ba7655df0a04d75dcaec2c4856ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce3ac6467ea566ebdd9d21e24843efe72457ba9e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="auto-storage-class-specifier"></a>auto Depolama Sınıfı Tanımlayıcısı
 **Otomatik** depolama sınıfı tanımlayıcısı otomatik bir değişkeni, yerel bir ömre sahip bir değişken bildirir. Bir **otomatik** değişkenidir yalnızca bloğunda görünür, bildirildiği içinde. Bildirimlerini **otomatik** değişkenleri, başlatıcılar, içerebilir, anlatıldığı gibi [başlatma](../c-language/initialization.md). Değişkenlerle itibaren **otomatik** depolama sınıfı başlatılmadı otomatik olarak, bunları bildirme ya da deyimleri bloğu içinde ilk değerleri atamak, ya da açıkça bunları başlatması gerekir. Başlatılmamış değerlerini **otomatik** değişkenlerdir tanımlanmamış. (Bir yerel değişken **otomatik** veya **kaydetmek** depolama sınıfı, her seferinde onu gelirse kapsamında bir başlatıcı verilen başlatılır.)  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Bir iç **statik** değişkeni (yerel statik değişkenle veya blok kapsamı) tüm dış adresiyle başlatılabilir veya **statik** öğesi, başka bir adres birlikte değil **otomatik**  , çünkü madde adresini bir **otomatik** öğe sabit bir değer değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Auto anahtar sözcüğü](../cpp/auto-keyword.md)
+ [auto Anahtar Sözcüğü](../cpp/auto-keyword.md)

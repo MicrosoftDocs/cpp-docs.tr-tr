@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7733398f5a444fa5e7461ea52295624d6d16f9a4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a58d9fd2dbce875c39c4c0e9af7ae85d5b20f43d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inline-assembler-overview"></a>Satır İçi Derleyiciye Genel Bakış
 **Microsoft özel**  
@@ -72,4 +73,4 @@ __asm push ebp   __asm mov  ebp, esp   __asm sub  esp, __LOCAL_SIZE
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır içi derleyicisi](../../assembler/inline/inline-assembler.md)
+ [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)

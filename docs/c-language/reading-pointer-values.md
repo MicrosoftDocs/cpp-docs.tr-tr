@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5454c3104d9957216b5d4a9d19c449a1b1a7864b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 080c9083cd7646638805457a30a3d98c1b747681
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reading-pointer-values"></a>Kayan Nokta Değerlerini Okuma
 **ANSI 4.9.6.2** için giriş **%p** dönüştürmede `fscanf` işlevi  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Zaman **%p** biçimi karakter belirtilirse, `fscanf` işlevi onaltılık ASCII değerleri işaretçileri doğru adresine dönüştürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

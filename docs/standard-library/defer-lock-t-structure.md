@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b74c63d99df30c5a9a58b343b083b9df8d9f669b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fbc4ac61c38f9f201716d75da14df3faaa609b30
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deferlockt-structure"></a>defer_lock_t Yapısı
 Tanımlayan bir türü temsil eden bir [defer_lock](../standard-library/mutex-functions.md#defer_lock) aşırı yüklü oluşturucular birini seçmek için kullanılan nesne [unique_lock](../standard-library/unique-lock-class.md).  

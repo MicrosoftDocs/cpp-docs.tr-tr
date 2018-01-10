@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b3eade9a6e536d08c04d49bf21488f909c08c36e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 648da56ae4ac75181dd93785db0926b3f4236d02
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="persistence-classes"></a>Kalıcılık sınıflar
 Aşağıdaki sınıflar nesne Kalıcılık uygulayın:  
@@ -37,5 +38,5 @@ Aşağıdaki sınıflar nesne Kalıcılık uygulayın:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
- [Özellik eşleme makroları](../atl/reference/property-map-macros.md)
+ [Özellik Eşleme Makroları](../atl/reference/property-map-macros.md)
 

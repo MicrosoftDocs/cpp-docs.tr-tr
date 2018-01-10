@@ -31,13 +31,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e0910ddf8ec43adab68c5354c0aec596616d8d1
-ms.sourcegitcommit: ce115fcfb20b4fbc198f0f7b6d0ca3e94d7ce947
+ms.workload: cplusplus
+ms.openlocfilehash: 2da6815b1620d855c6850c657a85e539c3e4b3c4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="atlmfc-shared-classes"></a>ATL/MFC sınıfları paylaşılan
+# <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
 Bu yardımcı program sınıfları herhangi bir MFC DLL gerek kalmadan tüm yerel C++ projesinde kullanılabilir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
@@ -54,6 +55,6 @@ Bu yardımcı program sınıfları herhangi bir MFC DLL gerek kalmadan tüm yere
  [Visual C++ kitaplıkları](http://msdn.microsoft.com/en-us/fec23c40-10c0-4857-9cdc-33a3b99b30ae)  
  Visual C++ ile ATL, MFC, OLE DB Şablonları, C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı dahil olmak üzere sağlanan çeşitli kitaplıklarına bağlantılar sağlar.  
   
- [Hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
+ [Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
  Uygulama ya da saklı yordamlar mantık hataları düzeltmek için Visual Studio hata ayıklayıcısı kullanma için bağlantılar sağlar.
 

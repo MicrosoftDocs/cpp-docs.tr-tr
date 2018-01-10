@@ -15,11 +15,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7f811197526d2d3da0700af27be84151da79d67f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e55fd4ad47470a86a0a3d61cc847c20fb21768e8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="custom-c"></a>özel (C++)
 Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.  
@@ -38,7 +41,7 @@ Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.
  *UUID*  
  Benzersiz kimliği  
   
- *değer*  
+ *value*  
  Bir değişken koyabilirsiniz bir değer.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -66,4 +69,4 @@ Meta veri nesnesi için Tür Kitaplığı'nda tanımlar.
  [Parametre öznitelikleri](../windows/parameter-attributes.md)   
  [Yöntem öznitelikleri](../windows/method-attributes.md)   
  [Sınıf öznitelikleri](../windows/class-attributes.md)   
- [Arabirim öznitelikleri](../windows/interface-attributes.md)   
+ [Arabirim Öznitelikleri](../windows/interface-attributes.md)   

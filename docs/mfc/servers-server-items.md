@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21d8e601956e0afb943c3739e531b3b677c7454a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2fe196eb561c336e45402de6c390146a0d77bea4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="servers-server-items"></a>Sunucular: Sunucu Öğeleri
 Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenleyebileceğiniz şekilde, bir kapsayıcı bir sunucu başlattığında, sunucu uygulaması bir "sunucu öğesi." oluşturur Türetilen bir sınıfın bir nesnesi sunucusu öğesini `COleServerItem`, sunucu belge kapsayıcı uygulaması arasında bir arabirim sağlar.  
@@ -57,5 +58,5 @@ Bir kullanıcı bir katıştırılmış veya bağlantılı OLE öğesi düzenley
  Daha fazla bilgi için bkz: [CView::OnDraw](../mfc/reference/cview-class.md#ondraw), [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerItem::OnDraw](../mfc/reference/coleserveritem-class.md#ondraw), ve [COleServerDoc::OnGetEmbeddedItem](../mfc/reference/coleserverdoc-class.md#ongetembeddeditem)içinde *sınıf kitaplığı başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sunucuları](../mfc/servers.md)
+ [Sunucular](../mfc/servers.md)
 

@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 295ab7a1cc96f5e961f5c6c375a904d45c4b1345
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5e41b042843b3d2d302e517e9281a1bb28e9afc7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listbackitem-stlclr"></a>list::back_item (STL/CLR)
 Son öğe erişir.  
@@ -80,4 +83,4 @@ back_item = c
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::Back (STL/CLR)](../dotnet/list-back-stl-clr.md)   
  [List::Front (STL/CLR)](../dotnet/list-front-stl-clr.md)   
- [List::front_item (STL/CLR)](../dotnet/list-front-item-stl-clr.md)
+ [list::front_item (STL/CLR)](../dotnet/list-front-item-stl-clr.md)

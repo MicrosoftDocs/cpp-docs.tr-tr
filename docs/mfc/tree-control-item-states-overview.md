@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 16a16a1c400c840d0e8abe2e9c078d295d891dc7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6311169c0c8f9ee59f3582559f07ba85f997beff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-item-states-overview"></a>Ağaç Denetim Öğesi Durumlarına Genel Bakış
 Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) geçerli durumuna sahiptir. Örneğin, bir öğe, devre dışı, genişletilmiş ve vb. seçilebilir. Çoğunlukla, ağaç denetimi otomatik olarak bir öğenin seçimini gibi kullanıcı eylemlerini yansıtacak şekilde öğenin durumunu ayarlar. Ancak, ayrıca bir öğenin durumu kullanarak ayarlayabilirsiniz [SetItemState](../mfc/reference/ctreectrl-class.md#setitemstate) üye işlevini ve alma kullanarak bir öğe geçerli durumunu [GetItemState](../mfc/reference/ctreectrl-class.md#getitemstate) üye işlevi. Öğesi durumları tam bir listesi için bkz: [ağaç görünümü denetim sabitleri](http://msdn.microsoft.com/library/windows/desktop/bb759985) Windows SDK'sındaki.  
@@ -38,5 +39,5 @@ Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ge�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

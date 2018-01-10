@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8fbebed0608ba21973fdc93d2812b497ca3dc83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ba646cbd4443d75eaf8414dbb6ce23797411ade6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-statements"></a>Deyimler Özeti
 *deyimi*:  
@@ -94,4 +95,4 @@ ms.lasthandoff: 10/24/2017
  **__finally***bileşik deyim*   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tümcecik yapısı dil bilgisi](../c-language/phrase-structure-grammar.md)
+ [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)

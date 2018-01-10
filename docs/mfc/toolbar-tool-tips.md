@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f597d0058e008f1adf1cb366f163594ef4b7472a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 248c975c51a2f44f6c9b17094d6b05082a9016a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toolbar-tool-tips"></a>Araç Çubuğu Araç İpuçları
 Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç düğmenin amacı kısa açıklamaları sunan küçük açılır pencereleri ' dir. Uygulama Sihirbazı ile bir araç olan bir uygulama oluşturduğunuzda, sizin için araç ipucu desteği sağlanır. Bu makalede, Uygulama Sihirbazı'nı ve uygulamanız için araç ipucu desteği ekleme tarafından oluşturulan her iki araç ipucu desteği açıklanmaktadır.  
@@ -77,5 +78,5 @@ Araç ipuçları fare bir süre için düğme üzerine getirdiğinizde, araç d�
 -   [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)
+ [MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
 

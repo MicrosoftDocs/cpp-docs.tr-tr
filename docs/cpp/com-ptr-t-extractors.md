@@ -31,11 +31,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73e2dca693939765e700d51b6caab0815c6d5e7e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c006c18b9e00e5c79ff686dfb31fa9ccf56fd4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
 **Microsoft özel**  
@@ -71,4 +72,4 @@ operator bool( ) const throw( );
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

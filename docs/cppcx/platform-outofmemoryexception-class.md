@@ -17,11 +17,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: e4e1a69c9995b4a1546cae93f774020bf4815907
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 84368cd26fd0e3e9bd73b5863a2575d82a75b113
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformoutofmemoryexception-class"></a>Platform::OutOfMemoryException sınıfı
 İşlemi tamamlamak için bellek yetersiz olduğunda oluşturulur.  
@@ -45,4 +46,4 @@ public ref class OutOfMemoryException : COMException,    IException,    IPrintab
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException sınıfı](../cppcx/platform-comexception-class.md)
+ [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

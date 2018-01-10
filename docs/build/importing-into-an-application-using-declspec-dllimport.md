@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4f16c9f5c96712c311928e0389fec0a1ce1f0dca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9766c6088e3f99711b936b10db0443da49b52c6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="importing-into-an-application-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Bir Uygulamaya Aktarma
 DLL tarafından tanımlanan ortak sembolleri kullanan bir program içeri aktarılacak. Oluşturduğunuzda üstbilgi dosyaları, oluşturmak için DLL'leri kullanan uygulamaları kullanmak için **__declspec(dllimport)** genel semboller bildirimlerinde. Anahtar sözcüğü **__declspec(dllimport)** veya .def dosyaları ile dışarı aktarma olup olmadığını çalışır **__declspec(dllexport)** anahtar sözcüğü.  
@@ -63,4 +64,4 @@ class CLASS_DECLSPEC CExampleA : public CObject
 -   [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir uygulamaya aktarma](../build/importing-into-an-application.md)
+ [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

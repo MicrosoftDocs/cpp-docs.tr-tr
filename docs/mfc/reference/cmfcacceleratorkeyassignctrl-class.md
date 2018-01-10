@@ -29,11 +29,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b135937adfe9b1e30747c35883692be54ba77e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1aacd22af0b2e0e14a3c1203a42e067b1f339c71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl sınıfı
 `CMFCAcceleratorKeyAssignCtrl` Sınıfını genişleten [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, Denetim ve kaydırma gibi ek sistem düğmeleri desteklemek için.  
@@ -157,4 +158,4 @@ void ResetKey();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCAcceleratorKey sınıfı](../../mfc/reference/cmfcacceleratorkey-class.md)
+ [CMFCAcceleratorKey Sınıfı](../../mfc/reference/cmfcacceleratorkey-class.md)

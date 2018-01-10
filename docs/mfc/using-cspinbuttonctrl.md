@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fbf2e31e178cc444f3980e9b6a8ebe1b1a374235
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bd1e652edb3501583624b068c604083f0c5d4165
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cspinbuttonctrl"></a>CSpinButtonCtrl Kullanma
 *Değer değiştirme düğmesi* denetimi (olarak da bilinen bir *yukarı-aşağı* denetimi) bir kullanıcının bir değer ayarlamak için tıklatabileceği okları çifti sağlar. Bu değer olarak bilinen *geçerli konumu*. Konumu değer değiştirme düğmesi aralık içinde kalır. Kullanıcı yukarı ok tıkladığında, en doğru konuma taşır; ve kullanıcı aşağı oka tıkladığında, en düşük doğru konuma taşır.  
@@ -39,10 +40,10 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Döndür düğmesi stilleri](../mfc/spin-button-styles.md)  
+-   [Döndür Düğmesi Stilleri](../mfc/spin-button-styles.md)  
   
--   [Döndür düğmesi üye işlevleri](../mfc/spin-button-member-functions.md)  
+-   [Döndür Düğmesi Üye İşlevleri](../mfc/spin-button-member-functions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

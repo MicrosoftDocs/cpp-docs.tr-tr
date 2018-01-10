@@ -41,11 +41,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 43e7443204404f79a797cab09cb56560e719a896
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 11050e3f168f390fa7a80aa6febf08a4be695c3e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remove-wremove"></a>kaldır, _wremove
 Bir dosyayı silin.  
@@ -78,13 +79,13 @@ int _wremove(
   
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
 |---------------------|------------------------------------|--------------------|-----------------------|  
-|`_tremove`|**Kaldır**|**Kaldır**|`_wremove`|  
+|`_tremove`|**remove**|**remove**|`_wremove`|  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|**Kaldır**|\<stdio.h > veya \<io.h >|  
+|**remove**|\<stdio.h > veya \<io.h >|  
 |`_wremove`|\<stdio.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

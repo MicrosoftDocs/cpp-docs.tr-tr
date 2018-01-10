@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 14d81a2039005e3ab301a865d9834de048a74ac5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c8e09c494ee23d227321a807c8c533d16f981a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 Üstbilgisini &lt;filesystem > erişim sınıfları ve işlevleri yönetmek ve yolları, dosyalar ve dizinler hakkında bilgi almak için.  
@@ -102,18 +103,18 @@ using namespace std::experimental::filesystem::v1;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[directory_entry sınıfı](../standard-library/directory-entry-class.md)|Tarafından döndürülen bir nesneyi tanımlayan bir `directory_iterator` veya `recursive_directory_iterator` ve bir yol içeriyor.|  
-|[directory_iterator sınıfı](../standard-library/directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar.|  
-|[filesystem_error sınıfı](../standard-library/filesystem-error-class.md)|Bir alt düzey sistem taşması bildirmek için oluşturulan özel durumlar için temel sınıf.|  
-|[PATH sınıfı](../standard-library/path-class.md)|Şablon türünde bir nesne depolar bir sınıfı tanımlar `String` bir dosya adı olarak kullanmaya uygun olmasıdır.|  
-|[recursive_directory_iterator sınıfı](../standard-library/recursive-directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar. Yineleyici içinde alt dizinler de düzen.|  
-|[file_status sınıfı](../standard-library/file-status-class.md)|Saran bir `file_type`.|  
+|[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|Tarafından döndürülen bir nesneyi tanımlayan bir `directory_iterator` veya `recursive_directory_iterator` ve bir yol içeriyor.|  
+|[directory_iterator Sınıfı](../standard-library/directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar.|  
+|[filesystem_error Sınıfı](../standard-library/filesystem-error-class.md)|Bir alt düzey sistem taşması bildirmek için oluşturulan özel durumlar için temel sınıf.|  
+|[path Sınıfı](../standard-library/path-class.md)|Şablon türünde bir nesne depolar bir sınıfı tanımlar `String` bir dosya adı olarak kullanmaya uygun olmasıdır.|  
+|[recursive_directory_iterator Sınıfı](../standard-library/recursive-directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar. Yineleyici içinde alt dizinler de düzen.|  
+|[file_status Sınıfı](../standard-library/file-status-class.md)|Saran bir `file_type`.|  
   
 ## <a name="structs"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[space_info yapısı](../standard-library/space-info-structure.md)|Bir birim ilgili bilgileri tutar.|  
+|[space_info Yapısı](../standard-library/space-info-structure.md)|Bir birim ilgili bilgileri tutar.|  
   
 ## <a name="functions"></a>İşlevler  
  [\<FileSystem > işlevleri](../standard-library/filesystem-functions.md)  

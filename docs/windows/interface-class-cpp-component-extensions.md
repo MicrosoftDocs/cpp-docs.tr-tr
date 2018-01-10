@@ -17,11 +17,14 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b3c6416ebe8b87295499e2a2ba50519d830b59ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: abe4173dabd20442b96c8e5536b040483df4f150
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interface-class--c-component-extensions"></a>arabirim sınıfı (C++ Bileşen Uzantıları)
 Arabirim bildirir.  Yerel arabirimleri hakkında daha fazla bilgi için bkz: [__interface](../cpp/interface.md).  
@@ -36,7 +39,7 @@ interface class
  name :  inherit_accessbase_interface{};interface_accessinterface structname :  inherit_accessbase_interface{};  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *interface_access*  
  Derleme dışına arabirim erişilebilirlik.  Olası değerler şunlardır: **ortak** ve `private`.  `private`varsayılandır.  İç içe geçmiş arabirimleri olamaz bir *interface_access* tanımlayıcısı.  
@@ -64,7 +67,7 @@ interface class
   
 -   [Arabirim statik Oluşturucusu](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)  
   
--   [Genel arabirimler (Visual C++)](../windows/generic-interfaces-visual-cpp.md)  
+-   [Genel Arabirimler (Visual C++)](../windows/generic-interfaces-visual-cpp.md)  
   
  Diğer CLR türleri hakkında daha fazla bilgi için bkz: [sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md).  
   
@@ -183,7 +186,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in Function_3  
@@ -227,4 +230,4 @@ ref struct R : I, J {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4313aae3af2b269e50953281c655952706b930bd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6366dd10e60d8f2ea60811f74ba2b2e10457dd84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-convert-from-a-net-collection-to-a-stlclr-container"></a>Nasıl yapılır: Bir .NET Koleksiyonundan STL/CLR Kapsayıcısına Dönüştürme
 Bu konu, kendi eşdeğer STL/CLR kapsayıcıları .NET koleksiyonları dönüştürmek gösterilmiştir. Örnek olarak bir .NET dönüştürme gösteriyoruz <xref:System.Collections.Generic.List%601> STL/CLR için [vektör](../dotnet/vector-stl-clr.md) ve bir .NET dönüştürmek nasıl <xref:System.Collections.Generic.Dictionary%602> STL/CLR için [harita](../dotnet/map-stl-clr.md), ancak tüm koleksiyonlar ve kapsayıcıları için benzer bir yordamdır .  
@@ -138,4 +141,4 @@ Key: 74.00 Value: 74
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [STL/CLR Kitaplık Başvurusu](../dotnet/stl-clr-library-reference.md)   
  [Bağdaştırıcı (STL/CLR)](../dotnet/adapter-stl-clr.md)   
- [Nasıl yapılır: bir STL/CLR kapsayıcısından .NET koleksiyonuna dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)
+ [Nasıl yapılır: Bir STL/CLR Kapsayıcısından .NET Koleksiyonuna Dönüştürme](../dotnet/how-to-convert-from-a-stl-clr-container-to-a-dotnet-collection.md)

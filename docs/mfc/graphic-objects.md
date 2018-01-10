@@ -52,11 +52,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 29bc2b807cfbe83772eec1982d6fa391f22ce78b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0fabeeae17b5bc81fdf592ed452a088b75bae544
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar. Çizgiler, dolgu evin içindekiler ve metin çizmek için yazı tiplerini Fırçalar çizmek için Kalem sağlar. MFC Windows çizim araçları eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıfların ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcısı türleri gösterilmektedir.  
@@ -107,12 +108,12 @@ Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar.
   
 -   [Bir ve iki aşamada kalem oluşturma örneği](../mfc/one-stage-and-two-stage-construction-of-objects.md)  
   
--   [Bir cihaz bağlamına grafik nesnesi seçme](../mfc/selecting-a-graphic-object-into-a-device-context.md)  
+-   [Bir Cihaz Bağlamına Grafik Nesnesi Seçme](../mfc/selecting-a-graphic-object-into-a-device-context.md)  
   
 -   [Cihaz bağlamları](../mfc/device-contexts.md)  
   
 -   [Önceki işletim sistemlerinde Cımage sınırlamaları](../mfc/cimage-limitations-with-earlier-operating-systems.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere nesneleri](../mfc/window-objects.md)
+ [Pencere Nesneleri](../mfc/window-objects.md)
 

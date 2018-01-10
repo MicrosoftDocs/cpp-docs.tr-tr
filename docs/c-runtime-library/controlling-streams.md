@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d2211a2a2bb5121921928166626d726db8dea67f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d6b2678add561eda41a7426a840b9c4ad074301
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="controlling-streams"></a>Akışları Denetleme
 [fopen](../c-runtime-library/reference/fopen-wfopen.md) türünde bir nesne adresini döndürür `FILE`. Bu adresi olarak kullanın `stream` açık bir dosyayı çeşitli işlemleri gerçekleştirmek için çeşitli kitaplığı işlevlerinin bağımsız değişkeni. Her karakteri çağırarak salt okunur ise gibi bir bayt akış için tüm giriş gerçekleşir [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), ve her bir karakteri çağırarak gibi yazılmışsa tüm çıktı gerçekleşir [fputc](../c-runtime-library/reference/fputc-fputwc.md). Her karakteri çağırarak salt okunur ise gibi geniş bir akış için tüm giriş gerçekleşir [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), ve her bir karakteri çağırarak gibi yazılmışsa tüm çıktı gerçekleşir [fputwc](../c-runtime-library/reference/fputc-fputwc.md).  
@@ -46,4 +47,4 @@ ms.lasthandoff: 10/24/2017
  Depolanan herhangi bir değer değiştirmeyin bir `FILE` nesne veya o nesne ile kullanmak için belirttiğiniz dosya arabelleği. Kopyalama yapılamıyor bir `FILE` nesne ve temelinizi kopya olarak adresini kullanın bir `stream` kitaplığı işlevi bağımsız değişken.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dosyalar ve akışlar](../c-runtime-library/files-and-streams.md)
+ [Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: efc79bf15b9b238235c9ef64587c8f9a22dccdcc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 488ba883a64683ab8b9428a055cdc1aff5bed6c9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-the-framework-calls-a-handler"></a>Framework'ün İşleyici Çağırması
 Aşağıdaki konularda ilk nasıl framework komutları yönlendirir inceleyin ve sonra diğer iletiler ve denetim bildirimleri için windows nasıl gönderileceğini inceleyin:  
@@ -33,12 +34,12 @@ Aşağıdaki konularda ilk nasıl framework komutları yönlendirir inceleyin ve
   
 -   [Komut yönlendirme](../mfc/command-routing.md)  
   
--   [Komut yönlendirme çizimi](../mfc/command-routing-illustration.md)  
+-   [Komut Yönlendirme Çizimi](../mfc/command-routing-illustration.md)  
   
 -   [OnCmdMsg işleyicisi](../mfc/oncmdmsg-handler.md)  
   
--   [Standart komut yönlendirmeyi geçersiz kılma](../mfc/overriding-the-standard-command-routing.md)  
+-   [Standart Komut Yönlendirmeyi Geçersiz Kılma](../mfc/overriding-the-standard-command-routing.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
+ [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
 

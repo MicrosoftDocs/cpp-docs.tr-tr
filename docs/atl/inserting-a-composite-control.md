@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f58c671860f1e02f28f4b5a406d290df2479e2d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c733c02a3855c02803be242a6bfc8ddd13abd75
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inserting-a-composite-control"></a>Bileşik denetim ekleme
 **Sınıfı Ekle** iletişim kutusu ATL nesneyi bir projeye eklemenize olanak sağlar. Çözüm işaret Gezgini'nde proje adına sağ tıklayarak bu iletişim kutusunu erişim **Ekle**ve ardından **sınıfı Ekle**.  

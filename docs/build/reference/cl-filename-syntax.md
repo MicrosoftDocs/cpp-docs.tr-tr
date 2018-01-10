@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 95cce7367eac5e4637d148b2c54cd5271f4f3026
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fc9ce614cb67bef1904e8dc464402f362b0cbde
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cl-filename-syntax"></a>CL Dosya Adı Sözdizimi
 CL FAT, HPFS veya NTFS adlandırma kurallarına uygun adlara sahip dosyaları kabul eder. Tüm dosya adı bir tam veya kısmi yol içerebilir. Bir tam yol, bir sürücü adı ve bir veya daha fazla dizin adlarını içerir. CL kabul dosya adları ayrılmış ya da ters eğik çizgi (\\) veya eğik (/). Boşluk içeren dosya adları çift tırnak karakteri ile alınmalıdır. Kısmi bir yolun geçerli sürücü olmasını CL varsayar sürücü adı atlar. Bir yol belirtmezseniz, CL dosya geçerli dizinde olduğunu varsayar.  
@@ -33,4 +34,4 @@ CL FAT, HPFS veya NTFS adlandırma kurallarına uygun adlara sahip dosyaları ka
  Dosya adı uzantısı dosyaları nasıl işlendiğini belirler. Uzantı .c, .cxx veya .cpp varsa, C ve C++ dosyaları derlenir. Modül-tanımlama (.def) dosyaları, .obj dosyaları ve kitaplıkları (.lib) dahil, diğer dosyalar için bağlayıcı işlenen olmadan geçirilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici komut satırı sözdizimi](../../build/reference/compiler-command-line-syntax.md)
+ [Derleyici Komut Satırı Sözdizimi](../../build/reference/compiler-command-line-syntax.md)

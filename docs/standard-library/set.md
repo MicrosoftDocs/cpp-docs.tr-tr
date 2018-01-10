@@ -15,13 +15,14 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c56eec9249f073f27b063778df460ef7347a6e7b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 16338888d64155ddeab188159030ac060ebb2b17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="ltsetgt"></a>&lt;ayarlama&gt;
+# <a name="ltsetgt"></a>&lt;set&gt;
 Kapsayıcı şablon sınıfları kümesi ve multiset ve bunların destekleyen şablonları tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -54,8 +55,8 @@ Kapsayıcı şablon sınıfları kümesi ve multiset ve bunların destekleyen ş
   
 |||  
 |-|-|  
-|[set sınıfı](../standard-library/set-class.md)|Depolama ve alma verilerini bulunan öğeleri değerlerini benzersiz ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hizmet veren bir koleksiyon için kullanılır.|  
-|[multiset sınıfı](../standard-library/multiset-class.md)|Hangi bulunan öğeleri değerlerin benzersiz olması gerekmez ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hangi verdikleri koleksiyondan verilerinin alınması ve depolama için kullanılır.|  
+|[set Sınıfı](../standard-library/set-class.md)|Depolama ve alma verilerini bulunan öğeleri değerlerini benzersiz ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hizmet veren bir koleksiyon için kullanılır.|  
+|[multiset Sınıfı](../standard-library/multiset-class.md)|Hangi bulunan öğeleri değerlerin benzersiz olması gerekmez ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hangi verdikleri koleksiyondan verilerinin alınması ve depolama için kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

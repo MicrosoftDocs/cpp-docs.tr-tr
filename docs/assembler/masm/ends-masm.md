@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c44bdc2f30e91d0a023175784996e735dffe77fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed6fb7576d4ede937d432037fc2e3cdf0b65f9e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ends-masm"></a>ENDS (MASM)
 Segment, yapı veya birleşim sonunu işaretler *adı* ile önceden başlamış [SEGMENT](../../assembler/masm/segment.md), [YAPISI](../../assembler/masm/struct-masm.md), [UNION](../../assembler/masm/union.md), ya da Basitleştirilmiş kesimi yönerge.  
@@ -32,4 +33,4 @@ name ENDS
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

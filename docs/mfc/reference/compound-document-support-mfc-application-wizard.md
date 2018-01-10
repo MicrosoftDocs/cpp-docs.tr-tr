@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 952f27b0c6717d23395453e5159e125370a76804
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9390f3849cd7511054f1248205c5d2c408cb7e71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compound-document-support-mfc-application-wizard"></a>Birleşik Belge Desteği, MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı'nı bu sayfada seviyesi için uygulamanızın bileşik ve etkin belge desteği sağlar. gösterir. Uygulamanızı bileşik belgeleri ve belge şablonları desteklemek için belge/görünüm mimarisinin desteklemesi gerekir.  
@@ -28,9 +29,9 @@ MFC Uygulama Sihirbazı'nı bu sayfada seviyesi için uygulamanızın bileşik v
  **Bileşik belge desteği**  
  Uygulamanızı kapsayıcı desteği, sunucu desteği veya her ikisini sağlayıp sağlamadığını belirler. Bu alan hakkında daha fazla bilgi için bkz:  
   
--   [Kapsayıcılar: bir kapsayıcı uygulama](../../mfc/containers-implementing-a-container.md)  
+-   [Kapsayıcılar: Bir Kapsayıcı Uygulama](../../mfc/containers-implementing-a-container.md)  
   
--   [Sunucular: sunucu uygulama](../../mfc/servers-implementing-a-server.md)  
+-   [Sunucular: Sunucu Uygulama](../../mfc/servers-implementing-a-server.md)  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  

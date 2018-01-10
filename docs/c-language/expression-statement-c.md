@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7438899eb9c1c2f17b4e74c859d454e2b69af600
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 75bad42ddff5f20d14d627e3f036659f030bb3f5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="expression-statement-c"></a>İfade Deyimi (C)
 İfade deyimi yürütüldüğünde, ifade özetlenen kurallarına göre değerlendirilir [ifadeler ve atamalar](../c-language/expressions-and-assignments.md).  
@@ -44,4 +45,4 @@ y = z = ( f( x ) + 3 );   /* A function-call expression        */
  Son deyim olan işlev çağrısı ifadesinde, işlev tarafından döndürülen tüm değerleri içeren ifade değeri 3 artırılır ve ardından hem `y` hem de `z` değişkenine atanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimleri](../c-language/statements-c.md)
+ [Deyimler](../c-language/statements-c.md)

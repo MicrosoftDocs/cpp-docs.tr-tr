@@ -29,11 +29,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8a8b0f35874dcf7a51bc2e54045df2c96965b08d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03a8e5f81e55398ffba30479ecfafc42726e9519
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 Çerçevesinde ayırma "olarak ayarlanmış yığın çerçevesi" adı geçen her bir işlev çağrılır. Yığın çerçevesi tutan geçici olarak bağımsız değişkenler tanımlanan değişkenler yanı sıra işlevi işlevi için yerel bellek alanıdır. Derleyici otomatik olarak alanı kendileri için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenleri denir.  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/24/2017
  Çerçevede nesneleri ayırma önemli bir avantajı, bunlar otomatik olarak silinmesini ' dir. Çerçeve nesneleriniz ayırdığınızda, bellek sızıntıları neden Unutulan nesneler hakkında endişelenmenize gerek yoktur. (Bellek sızıntıları hakkında daha fazla bilgi için bkz: [MFC'de bellek sızıntılarını algılama](http://msdn.microsoft.com/en-us/29ee8909-96e9-4246-9332-d3a8aa8d4658).) Çerçeve ayırma dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma karşı çerçeve ayırma seçme başka bir etken büyük yapıları ve nesneler için genellikle yığın alanı genellikle sınırlı olduğu öbek yerine yığın depolama alanını kullanın. daha iyi olmasıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek yönetimi](../mfc/memory-management.md)
+ [Bellek Yönetimi](../mfc/memory-management.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ca0015ede5a202aac4360e5b0604e5d94eba4db5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3cd4174aa01ae531ae5588c329fdff8379aba652
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltscopedallocatorgt"></a>&lt;scoped_allocator&gt;
 Kapsayıcı Şablon sınıfı scoped_allocator tanımlar.  
@@ -34,14 +35,14 @@ Kapsayıcı Şablon sınıfı scoped_allocator tanımlar.
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/scoped-allocator-operators.md#op_neq)|Testleri işlecinin sol tarafındaki scoped_allocator nesne listesi nesnesine sağ tarafında eşit değil.|  
+|[operator!=](../standard-library/scoped-allocator-operators.md#op_neq)|Testleri işlecinin sol tarafındaki scoped_allocator nesne listesi nesnesine sağ tarafında eşit değil.|  
 |[operator ==](../standard-library/scoped-allocator-operators.md#op_eq_eq)|Scoped_allocator nesne işlecinin sol tarafındaki sağ tarafında listesi nesnesine eşitse testleri.|  
   
 ### <a name="classes"></a>Sınıflar  
   
 |||  
 |-|-|  
-|[scoped_allocator_adaptor sınıfı](../standard-library/scoped-allocator-adaptor-class.md)|Bir veya daha fazla allocators, iç içe yalıtan bir şablon sınıfı.|  
+|[scoped_allocator_adaptor Sınıfı](../standard-library/scoped-allocator-adaptor-class.md)|Bir veya daha fazla allocators, iç içe yalıtan bir şablon sınıfı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

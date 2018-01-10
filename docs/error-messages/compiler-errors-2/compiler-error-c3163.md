@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 95fb254036d2883b6efe6b81bda54864d533c2a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4d3cbb5c5c3e8391b3a549fc0c34661dc86b492c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3163"></a>Derleyici Hatası C3163
 'oluşturmak': öznitelikler önceki bildirimiyle tutarsız  
@@ -45,4 +46,4 @@ using namespace System;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SAL ek açıklamaları](../../c-runtime-library/sal-annotations.md)
+ [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)

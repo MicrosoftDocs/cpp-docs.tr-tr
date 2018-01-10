@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5e7eed7dbb4fbd7648e02857897dc4f0c541af7c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b55bf95c7abdffe8dd0a0e0071d86f06baad344e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pointerdefault"></a>pointer_default
 Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındaki tüm işaretçiler varsayılan işaretçi özniteliğini belirtir.  
@@ -34,7 +37,7 @@ Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındak
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *değer*  
+ *value*  
  İşaretçi türünün tanımlayan bir değer: **ptr**, `ref`, veya **benzersiz**.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -58,4 +61,4 @@ Parametre listelerinde görüntülenen en üst düzey işaretçileri dışındak
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Arabirim öznitelikleri](../windows/interface-attributes.md)   
+ [Arabirim Öznitelikleri](../windows/interface-attributes.md)   

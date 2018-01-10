@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3fa97dff482226c7a9e6554a0479eb76b25c47f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f82fe529586579109434da447e26b15dcb9503a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remote-automation-user-components"></a>Uzak Otomasyon Kullanıcı Bileşenleri
 Her bir istemci makine istemci programınız ve herhangi bir destek gerektiriyorsa DLL'leri içerdiğinden emin olmak gerekir. Sunucu uygulaması ve herhangi bir destek gerektiriyorsa DLL'leri server makinesinde mevcut olduğundan emin olmak gerekir. Son olarak, RAC Yöneticisi bağlantıyı yapılandırmak için çalıştırmadan önce sunucu programınızı her istemci makinede kayıtlı olduğundan emin olmak gerekir. (Çoğu olacaktır gibi) programı kendi kendine kayıt, yalnızca sunucu programı kaydetmek için istemci makinede yürütmeyi. Başarısız olan sağlayan bir kayıt dosyası yürütmek ya da el ile kayıt defterini düzenlemeniz gerekebilir.  
@@ -28,5 +29,5 @@ Her bir istemci makine istemci programınız ve herhangi bir destek gerektiriyor
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon Yöneticisi (MFC)](../mfc/automation-manager-mfc.md)   
  [Uzak Otomasyon Bağlantı Yöneticisi](../mfc/remote-automation-connection-manager.md)   
- [Uzak Otomasyon yüklemesi](../mfc/remote-automation-installation.md)
+ [Uzak Otomasyon Yüklemesi](../mfc/remote-automation-installation.md)
 

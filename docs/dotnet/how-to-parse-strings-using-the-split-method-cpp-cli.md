@@ -19,11 +19,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be3443995966c5ce7b9c2fe4a156c8d6c79069d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7494a615d1a253c6617601f38e5d01755c718b80
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-parse-strings-using-the-split-method-ccli"></a>Nasıl yapılır: Split Yöntemini Kullanarak Dizeleri Ayrıştırma (C++/CLI)
 Aşağıdaki kod örneğinde kullanımı gösterilir <xref:System.String.Split%2A?displayProperty=fullName> her sözcüğün çıkartmak yöntemi. Birden çok sözcük ayırıcı türü içeren bir dize oluşturulur ve çağrılarak ayrıştırılır <xref:System.String.Split%2A> ayırıcıların listesiyle. Ardından, her sözcüğün tümcedeki ayrı olarak görüntülenir.  
@@ -55,4 +58,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

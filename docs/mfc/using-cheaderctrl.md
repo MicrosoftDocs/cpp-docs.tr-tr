@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 316066f8476d413f9a92e11cc69f709080829f18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 88b4da42944c3c42e48fae4c0cf503f7f6ace1a0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl Kullanma
 Sınıfı tarafından temsil edilen bir üstbilgi denetimi kullanmak [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md), sütun listesi için sütun üst bilgileri görüntülemek için. Örneğin, bir üstbilgi denetimi elektronik tabloda sütun denetimler uygulamak için yararlı olacaktır.  
@@ -33,30 +34,30 @@ Sınıfı tarafından temsil edilen bir üstbilgi denetimi kullanmak [CHeaderCtr
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Üstbilgi denetimi ve liste denetimi](../mfc/header-control-and-list-control.md)  
+-   [Üstbilgi Denetimi ve Liste Denetimi](../mfc/header-control-and-list-control.md)  
   
--   [Üstbilgi denetimine örnekler](../mfc/header-control-examples.md)  
+-   [Üstbilgi Denetimine Örnekler](../mfc/header-control-examples.md)  
   
--   [Üstbilgi denetimindeki üstbilgi öğeleri](../mfc/header-items-in-a-header-control.md)  
+-   [Üstbilgi Denetimindeki Üstbilgi Öğeleri](../mfc/header-items-in-a-header-control.md)  
   
--   [Üstbilgi öğesinin görünümünü özelleştirme](../mfc/customizing-the-header-item-s-appearance.md)  
+-   [Üstbilgi Öğesinin Görünümünü Özelleştirme](../mfc/customizing-the-header-item-s-appearance.md)  
   
--   [Üstbilgi öğeleri için sürükle ve bırak desteği sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md)  
+-   [Üstbilgi Öğeleri için Sürükle ve Bırak Desteği Sağlama](../mfc/providing-drag-and-drop-support-for-header-items.md)  
   
--   [Üstbilgi denetimleriyle resim listeleri kullanma](../mfc/using-image-lists-with-header-controls.md)  
+-   [Üstbilgi Denetimleriyle Birlikte Görüntü Listeleri Kullanma](../mfc/using-image-lists-with-header-controls.md)  
   
--   [Sahip tarafından çizilmiş üstbilgi denetimleri yapma](../mfc/making-owner-drawn-header-controls.md)  
+-   [Sahip Tarafından Çizilmiş Üstbilgi Denetimleri Yapma](../mfc/making-owner-drawn-header-controls.md)  
   
--   [Üstbilgi denetimiyle çalışma](../mfc/working-with-a-header-control.md)  
+-   [Üstbilgi Denetimiyle Çalışma](../mfc/working-with-a-header-control.md)  
   
--   [Üstbilgi denetimi oluşturma](../mfc/creating-the-header-control.md)  
+-   [Üstbilgi Denetimi Oluşturma](../mfc/creating-the-header-control.md)  
   
--   [Üstbilgi denetimine öğe ekleme](../mfc/adding-items-to-the-header-control.md)  
+-   [Üstbilgi Denetimine Öğe Ekleme](../mfc/adding-items-to-the-header-control.md)  
   
--   [Üstbilgi denetimindeki öğeleri sıralama](../mfc/ordering-items-in-the-header-control.md)  
+-   [Üstbilgi Denetimindeki Öğeleri Sıralama](../mfc/ordering-items-in-the-header-control.md)  
   
--   [Üstbilgi denetimi bildirimlerini işleme](../mfc/processing-header-control-notifications.md)  
+-   [Üstbilgi Denetimi Bildirimlerini İşleme](../mfc/processing-header-control-notifications.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

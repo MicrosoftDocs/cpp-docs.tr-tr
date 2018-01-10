@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 99738f9c5335ede5dafe60e35b3104951f5fb556
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f614ec0eff2b448c8f20c88557f6228f85a770bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chaininterfacescancastto-method"></a>ChainInterfaces::CanCastTo Yöntemi
 Belirtilen arabirim kimliği her varsayılan olmayan şablon parametreleri tarafından tanımlanan özelleştirmeleri içerip içermeyeceğini gösterir.  
@@ -49,4 +52,4 @@ __forceinline bool CanCastTo(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Chainınterfaces yapısı](../windows/chaininterfaces-structure.md)
+ [ChainInterfaces Yapısı](../windows/chaininterfaces-structure.md)

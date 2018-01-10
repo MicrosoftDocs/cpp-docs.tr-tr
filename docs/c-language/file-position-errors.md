@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ebbb6ab903db73fce84059af567dd5e80dfb3afb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc55622f724a903c94fe49a935b906d2826297ea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-position-errors"></a>Dosya Konumu Hataları
 **ANSI 4.9.9.1, 4.9.9.4** olan değer makrosu `errno` tarafından belirlenen `fgetpos` veya `ftell` hatasında işlevi  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  Zaman `fgetpos` veya `ftell` başarısız olursa `errno` Bildirim sabiti ayarlanır `EINVAL` konumu geçersizse veya dosya numarası hatalı ise EBADF. Sabitler ERRNO içinde tanımlanmıştır. H.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

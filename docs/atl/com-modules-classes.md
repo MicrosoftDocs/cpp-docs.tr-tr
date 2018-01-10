@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cee2ebb756ecee09a78207319250832d4dfc14a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0ed40f96d64ebda2f9fc04b64e64d1533fb13d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="com-modules-classes"></a>COM modülleri sınıfları
 Aşağıdaki sınıflar bir COM modülü için destek sağlar:  
@@ -43,7 +44,7 @@ Aşağıdaki sınıflar bir COM modülü için destek sağlar:
 -   [CComAutoThreadModule](../atl/reference/ccomautothreadmodule-class.md) Bu sınıf bir EXE modülüyle birden çok iş parçacığı havuza grupların için destek uygular. ATL 7.0 Kullanımdan kalktı.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [ATL modül sınıfları](../atl/atl-module-classes.md)  
+ [ATL Modül Sınıfları](../atl/atl-module-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   

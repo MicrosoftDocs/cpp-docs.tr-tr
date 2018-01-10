@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f5792191a7dcff961b2b5be39c4c15855ca99348
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc1692805c3e1bced7cb7662f0da8b7a1fea092c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="web-references-property-page"></a>Web Başvuruları Özellik Sayfası
 **Web başvuruları** özellik sayfası belirtir XML Web hizmeti proxy sınıfı nasıl oluşturulur. Projeniz için web başvurusu eklerseniz, bir XML Web hizmeti proxy sınıfı oluşturulur. Bkz: [Web Başvuru Ekle](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5) daha fazla bilgi için.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/24/2017
  Nasıl erişileceği hakkında bilgi için **Web başvuru** özellik sayfası, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)
+ [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

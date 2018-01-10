@@ -30,11 +30,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e38ca3275c290d96fd5cf7910044abc32721eb85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3f1dac5272bbc8cf956bf8bcfdbd31b1f71b4708
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fpclassify"></a>fpclassify
 Kayan nokta sınıflandırmasını bağımsız değişkeni döndürür.  
@@ -88,4 +89,4 @@ int fpclassify(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [isNaN, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)
+ [isnan, _isnan, _isnanf](../../c-runtime-library/reference/isnan-isnan-isnanf.md)

@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 07b57d3175bc584ed2a54e091e76207994accd4f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 74d0dee7acb511add4b695506c0491368413e17b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="singleassignment-class"></a>single_assignment Sınıfı
 A `single_assignment` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` yeteneğine sahip tek bir depolama yazma-sonra `message`.  
@@ -63,7 +64,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[has_value](#has_value)|Denetler olup olmadığını bu `single_assignment` ileti bloğu başlatıldıysa bir değerle henüz.|  
-|[değer](#value)|İçinde depolanan iletinin geçerli yükü bir başvuru edinir `single_assignment` ileti bloğu.|  
+|[value](#value)|İçinde depolanan iletinin geçerli yükü bir başvuru edinir `single_assignment` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   

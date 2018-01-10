@@ -23,11 +23,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ea8ba64c7dbf609eb23fb2d7d0e0b739d06dc0f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 201985a10d0f5a58fc7d617e307d2715bf29be32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-include-resources-at-compile-time"></a>Nasıl Yapılır: Derleme Sırasında Kaynak Ekleme
 Normalde kolay ve tüm kaynakların bir kaynak (.rc) komut dosyasında varsayılan düzenleme çalışmak uygun olur. Ancak, kaynakları diğer dosyalar geçerli projenize derleme zamanında bunları listeleyerek ekleyebileceğiniz **derleme zamanı yönergeleri** kutusunda [kaynağını içeren iletişim kutusunu](../windows/resource-includes-dialog-box.md).  
@@ -64,4 +67,4 @@ Normalde kolay ve tüm kaynakların bir kaynak (.rc) komut dosyasında varsayıl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

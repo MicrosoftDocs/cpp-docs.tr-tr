@@ -39,11 +39,12 @@ caps.latest.revision: "37"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4254f2b5c4b3c2000e0e466dd29d0ad9492acf6b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b670b26855f5edcfb955d3dd0f8150a999f3a8e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmditabinfo-class"></a>CMDITabInfo sınıfı
 `CMDITabInfo` Sınıfı parametrelerini iletmek için kullanılan [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) yöntemi. MDI davranışını denetlemek için küme üyeleri bu sınıf sekmeli grupları.  
@@ -242,4 +243,4 @@ void Serialize(CArchive& ar);
  [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md)   
  [MDI sekmeli grupları](../../mfc/mdi-tabbed-groups.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

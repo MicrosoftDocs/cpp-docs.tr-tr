@@ -15,11 +15,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7a3229b1cc924c0268bf9a79df53bc18ce2684a1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 24619e3a0e707b40590b0ffb37b415629a18b1cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="export"></a>dışarı aktar
 Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.  
@@ -70,4 +73,4 @@ struct MyStruct {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   

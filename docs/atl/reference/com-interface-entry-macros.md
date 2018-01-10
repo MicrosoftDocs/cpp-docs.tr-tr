@@ -28,11 +28,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 281829593087a936f201000faaa42f698344d3b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 76352cf2015661bc970b2987b9794f3bf023cc15
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
  Tarafından erişilebilecek şekilde bu makroları nesnenin arabirimleri, COM eşlemeye girin `QueryInterface`. Bir eşleştirme için sipariş arabirimleri denetlenecektir COM eşlemesi girişlerinde sırasıdır **IID** sırasında `QueryInterface`.  

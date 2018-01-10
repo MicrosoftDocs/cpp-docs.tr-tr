@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83922a2afb78a40c204a8636807032bb3d5e05ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: feb61c6a3a865439fe31f93540cbac934ef5eb1d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-the-properties-of-a-string"></a>Dizenin Özelliklerini Değiştirme
 ### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanıtıcısını değiştirmek için  

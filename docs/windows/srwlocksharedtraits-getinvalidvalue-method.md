@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89219ecf6c29f5897263b0c71f94fa1fa7087217
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 0a3c1df6490f5860c3760b9ce6728fa9e441e554
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="srwlocksharedtraitsgetinvalidvalue-method"></a>SRWLockSharedTraits::GetInvalidValue Metodu
 Her zaman geçersiz SRWLockSharedTraits nesneyi alır.  
@@ -39,4 +42,4 @@ inline static Type GetInvalidValue();
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLockSharedTraits yapısı](../windows/srwlocksharedtraits-structure.md)
+ [SRWLockSharedTraits Yapısı](../windows/srwlocksharedtraits-structure.md)

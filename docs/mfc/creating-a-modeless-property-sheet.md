@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e587c130a06ff30a38138f1e0ecf94e7cdfe1ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4686caf6c414952cd86dfe0c69fcc3be8ee09af9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-modeless-property-sheet"></a>Kalıcı Olmayan Özellik Sayfası Oluşturma
 Normalde, oluşturduğunuz özellik sayfalarını kalıcı olur. Kalıcı özellik sayfası kullanırken, kullanıcının herhangi bir uygulamanın parçası kullanmadan önce özellik sayfasını kapatmalısınız. Bu makalede uygulamanın diğer bölümleri kullanırken özellik sayfası açık tutmak kullanıcıya izin veren bir kalıcı olmayan özellik sayfası oluşturmak için kullanabileceğiniz yöntemleri açıklar.  
@@ -39,5 +40,5 @@ Normalde, oluşturduğunuz özellik sayfalarını kalıcı olur. Kalıcı özell
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../mfc/property-sheets-mfc.md)   
  [Veri Değişimi](../mfc/exchanging-data.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

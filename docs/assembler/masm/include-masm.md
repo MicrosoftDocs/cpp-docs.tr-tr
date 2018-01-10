@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6562e9b8da8f12f94c4d71056c8c364900033436
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c66b8be1e3625a8830cb23c0898bbb0abdaed121
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="include-masm"></a>INCLUDE (MASM)
 Eklemeleri kaynak kodu tarafından verilen kaynak dosyadan *filename* derleme sırasında geçerli kaynak dosyasına.  
@@ -35,4 +36,4 @@ INCLUDE filename
  *Filename* ters eğik çizgi, noktalı virgül, büyük içeriyorsa açılı ayraç gerekir-simgesi, daha az-simge, tek tırnak işareti ya da çift tırnak işareti.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

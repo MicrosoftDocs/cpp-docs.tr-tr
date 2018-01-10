@@ -13,11 +13,14 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a37b20af7ee9ef43c64fc0df24b47a380000eb6b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e742b5509fd9a7889321e5e8c576e4fa3c8401cd
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çalışma zamanı bileşenleri kullanmak için alt düzey bir yol sağlayan bir şablon kitaplıktır.  
@@ -56,19 +59,19 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çal�
  [İzlenecek yol: temel Windows çalışma zamanı bileşeni oluşturma](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)  
  Windows çalışma zamanı C++ Şablon kitaplığı iki sayı ekleyen bir temel Windows çalışma zamanı bileşeni oluşturma için nasıl kullanılacağını gösterir. Ayrıca JavaScript kullanan bir evrensel Windows platformu uygulama bileşeninden olaylarını ve nasıl kullanılacağını gösterir.  
   
- [İzlenecek yol: WRL ve medya altyapısı kullanarak bir Windows mağazası uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
+ [İzlenecek yol: WRL ve Medya Altyapısı kullanarak Windows Mağazası uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
  Kullanan bir evrensel Windows Platform uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  [Nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
  Windows çalışma zamanı C++ Şablon kitaplığı temel bir COM bileşeni ve kaydetme ve COM bileşeninin düzgün bir masaüstü uygulaması'ndan kullanmak için temel bir şekilde oluşturmak için nasıl kullanılacağını gösterir.  
   
- [Nasıl yapılır: doğrudan WRL bileşenlerinin örneğini oluşturma](../windows/how-to-instantiate-wrl-components-directly.md)  
+ [Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](../windows/how-to-instantiate-wrl-components-directly.md)  
  Nasıl kullanacağınızı öğrenin [Microsoft::WRL::Make](../windows/make-function.md) ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) tanımlayan modülden bir bileşen örneği oluşturmak için işlevleri.  
   
- [Nasıl yapılır: winmdidl.exe ve midlrt.exe windows meta verilerinden .h dosyaları oluşturmak için kullanın](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)  
+ [Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](../windows/use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)  
  WRL özel Windows çalışma zamanı bileşenlerini .winmd meta verilerini bir IDL dosya oluşturarak kullanma gösterir.  
   
- [İzlenecek yol: Görevleri ve XML HTTP isteklerini kullanarak bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
+ [İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
  Nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) bir evrensel Windows platformu uygulamasında bir web hizmeti için HTTP GET ve POST istekleri göndermek için görevler birlikte arabirimleri.  
   
  [Bing Haritalar seyahat iyileştirici örneği](http://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)  
@@ -142,5 +145,5 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çal�
 |[Sınıf kitaplığı proje şablonu](../windows/wrl-class-library-project-template.md)|WRL sınıf kitaplığı proje şablonu erişmek açıklar. Bu şablon, Windows çalışma zamanı bileşenleri oluşturmak için Visual Studio kullanarak görevini basitleştirmeye yardımcı olur.|  
 |[Kategoriye göre başlıca API'ler](../windows/key-wrl-apis-by-category.md)|Birincil Windows çalışma zamanı C++ Şablon kitaplığı türleri, İşlevler ve makrolar vurgular.|  
 |[Başvuru](../windows/wrl-reference.md)|Windows çalışma zamanı C++ Şablon kitaplığı için başvuru bilgileri içerir.|  
-|[Hızlı Başvuru (Windows çalışma zamanı ve Visual C++)](http://go.microsoft.com/fwlink/?LinkId=229180)|Kısaca açıklanmaktadır C + +/ Windows çalışma zamanı desteği CX özellikleri.|  
-|[Visual C++'da Windows çalışma zamanı bileşenleri kullanma](http://go.microsoft.com/fwlink/?LinkId=229155)|C + kullanmayı gösterir +/ CX temel Windows çalışma zamanı bileşeni oluşturma.|
+|[Hızlı Başvuru (Windows çalışma zamanı ve Visual C++)](http://go.microsoft.com/fwlink/p/?linkid=229180)|Kısaca açıklanmaktadır C + +/ Windows çalışma zamanı desteği CX özellikleri.|  
+|[Visual C++'da Windows çalışma zamanı bileşenleri kullanma](http://go.microsoft.com/fwlink/p/?linkid=229155)|C + kullanmayı gösterir +/ CX temel Windows çalışma zamanı bileşeni oluşturma.|

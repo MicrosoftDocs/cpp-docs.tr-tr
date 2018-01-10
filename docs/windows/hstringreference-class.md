@@ -14,11 +14,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1d09ba7fff2426f58f72b26a2c7e7681cecde8b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 97900bd44dfdcede187b20b181c64d235eac60fc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hstringreference-class"></a>HStringReference Sınıfı
 Varolan bir dizeden oluşturulmuş bir HSTRING temsil eder.  
@@ -44,16 +47,16 @@ class HStringReference;
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[HStringReference::CopyTo yöntemi](../windows/hstringreference-copyto-method.md)|Kopya geçerli HStringReference HSTRING nesneye nesne.|  
-|[HStringReference::Get yöntemi](../windows/hstringreference-get-method.md)|Temel alınan HSTRING tanıtıcı değerini alır.|  
+|[HStringReference::CopyTo Metodu](../windows/hstringreference-copyto-method.md)|Kopya geçerli HStringReference HSTRING nesneye nesne.|  
+|[HStringReference::Get Metodu](../windows/hstringreference-get-method.md)|Temel alınan HSTRING tanıtıcı değerini alır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HStringReference::Operator = işleci](../windows/hstringreference-operator-assign-operator.md)|Başka bir HStringReference nesnenin değerini geçerli HStringReference nesneye taşır.|  
-|[HStringReference::Operator == işleci](../windows/hstringreference-operator-equality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
-|[HStringReference::Operator! = işleci](../windows/hstringreference-operator-inequality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
+|[HStringReference::Operator= İşleci](../windows/hstringreference-operator-assign-operator.md)|Başka bir HStringReference nesnenin değerini geçerli HStringReference nesneye taşır.|  
+|[HStringReference::Operator== İşleci](../windows/hstringreference-operator-equality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
+|[HStringReference::Operator!= İşleci](../windows/hstringreference-operator-inequality-operator.md)|İki parametre eşit olup olmadığını gösterir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HStringReference`  
@@ -64,4 +67,4 @@ class HStringReference;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

@@ -1,8 +1,8 @@
 ---
-title: "2. adım - derleme ve çalıştırma C++ konsol uygulama projesi | Microsoft Docs"
+title: "C++ konsol uygulaması projesini derlemeyi ve çalıştırmayı | Microsoft Docs"
 description: "Visual C++ için Visual Studio desteğini yükleme"
 ms.custom: mvc
-ms.date: 10/17/2017
+ms.date: 12/12/2017
 ms.topic: get-started-article
 ms.technology: devlang-C++
 ms.devlang: C++
@@ -11,11 +11,12 @@ ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 20a8bafa69631ef8df1fb20f613dfbb81578f94a
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: a5b9c250b102b7d8847e99b87139136bc7df808b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>Derleme ve C++ konsol uygulama projesi çalıştırma
 
@@ -23,9 +24,9 @@ C++ konsol uygulama projesi oluşturduğunuzda ve kodunuzu girilen yapı ve Visu
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Visual Studio masaüstü geliştirme ile yüklenmiş ve bilgisayarınızda çalışan C++ iş yükü var. Henüz yüklü değilse, adımları [adım 0 - Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md).
+- Visual Studio masaüstü geliştirme ile yüklenmiş ve bilgisayarınızda çalışan C++ iş yükü var. Henüz yüklü değilse, adımları [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md).
 
-- Bir "Hello, World!" oluşturun Proje ve kaynak kodu girin. Bunu henüz yapmadıysanız adımları [1. Adım - C++ konsol uygulama projesi oluşturma](../build/vscpp-step-1-create.md).
+- Bir "Hello, World!" oluşturun Proje ve kaynak kodu girin. Bunu henüz yapmadıysanız adımları [C++ konsol uygulama projesi oluşturma](../build/vscpp-step-1-create.md).
 
 Visual Studio gibi görünüyorsa, yapı ve uygulamanızı çalıştırmak hazırsınız:
 
@@ -67,7 +68,7 @@ Tebrikler, yerleşik ve Visual Studio konsol uygulamasını çalıştırın.
 
 ## <a name="next-steps"></a>Sonraki Adımlar
 
-Yerleşik ve bu basit uygulama çalıştırma sonra daha karmaşık projeler için hazırsınız. Quickstarts, öğreticiler ve örnek kod, C++'da Visual Studio kullanarak yapabileceklerinizden örnekleri için bkz.
+Yerleşik ve bu basit uygulama çalıştırma sonra daha karmaşık projeler için hazırsınız. Bkz: [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md) Visual Studio'da Visual C++ özelliklerini keşfedin izlenecek ayrıntılı için.
 
 ## <a name="troubleshooting-guide"></a>Sorun giderme kılavuzu
 

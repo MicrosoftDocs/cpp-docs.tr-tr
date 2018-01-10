@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a0d73d46d17e14d5ce55a171887e693c425765ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc899fc7f1fc8c1805648e72e14ef13853841c90
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-controlled-link-options"></a>Derleyici Denetimindeki LINK Seçenekleri
 /C seçeneği belirtmediğiniz sürece CL derleyici bağlantı otomatik olarak çağırır. CL komut satırı seçenekleri ve bağımsız değişkenleri ile bağlayıcı üzerinde bazı denetim sağlar. CL içinde bağlantılandırmayı etkileyen özellikler aşağıdaki tabloda özetlenmiştir.  
@@ -52,4 +53,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

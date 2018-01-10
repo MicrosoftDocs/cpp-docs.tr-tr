@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1c27e5c78316ec48d114bfd1715eb5874772a732
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 38f45463bb76f858d1b88c059de57a4b8b86227e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="extracting-a-library-member"></a>Kitaplık Üyesini Ayıklama
 LIB var olan bir kitaplık üyesi bir kopyasını içeren bir nesne (.obj) dosyası oluşturmak için kullanabilirsiniz. Üye bir kopyasını ayıklamak için aşağıdaki sözdizimini kullanın:  
@@ -37,4 +38,4 @@ LIB library /EXTRACT:member /OUT:objectfile
  Bu komut adlı bir .obj dosyası oluşturur *objectfile* bir kopyasını içeren bir `member` , bir *Kitaplığı*. `member` Adı büyük küçük harfe duyarlı. Tek bir komut yalnızca bir üye ayıklayabilirsiniz. /OUT seçeneği gereklidir; Varsayılan çıkış adı yok. Bir dosya çağrıldıklarında *objectfile* belirtilen dizinde zaten var. (veya dizin yok ile belirtilmişse, geçerli dizin *objectfile*), ayıklanan *objectfile*varolan dosyanın yerini alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB başvurusu](../../build/reference/lib-reference.md)
+ [LIB Başvurusu](../../build/reference/lib-reference.md)

@@ -45,11 +45,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f298085fab156e8aecd0931dc72e358409a979d7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 32e63292ffcb02fa41ea5b8d9e95f7b4cd3f776b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocator-class"></a>allocator Sınıfı
 Depolama ayırma ve nesne türü diziler için boşaltma yöneten bir nesne şablonu sınıf tanımlar **türü**. Sınıfın bir nesnesi **ayırıcısı** oluşturucuları C++ Standart Kitaplığı'nda birkaç kapsayıcı şablon sınıfları için belirtilen varsayılan ayırıcısı nesnesi.  
@@ -111,7 +112,7 @@ class allocator
 |||  
 |-|-|  
 |[Adres](#address)|Değeri belirtilen bir nesne adresini bulur.|  
-|[ayırma](#allocate)|Bir en az bazı belirtilen sayıda öğeyi depolamak için büyük bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir en az bazı belirtilen sayıda öğeyi depolamak için büyük bellek bloğu ayırır.|  
 |[Yapı](#construct)|Belirli bir nesne belirli bir değerle başlatılır belirtilen adresteki türünü oluşturur.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
 |[yok](#destroy)|Nesneleri yok Edicisi bellek ayırmayı kaldırma olmadan nesne saklandığı çağırır.|  
@@ -1047,5 +1048,5 @@ The modified vector v is:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

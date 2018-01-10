@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 447d6571977d636809212adc616f21d284e7fc16
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 32a7d41c507c2b7b932ba33df911151bfc417091
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog sınıfı
 Kullanılması gereken OLE bağlantıları Düzenle iletişim kutusu için bir özel durum kullanılan, bağlantılı yalnızca var olan güncelleştirme gerektiğinde veya bir belgede katıştırılmış nesneler.  
@@ -123,4 +124,4 @@ virtual INT_PTR DoModal();
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   
  [COleLinksDialog sınıfı](../../mfc/reference/colelinksdialog-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [COleLinksDialog sınıfı](../../mfc/reference/colelinksdialog-class.md)
+ [COleLinksDialog Sınıfı](../../mfc/reference/colelinksdialog-class.md)

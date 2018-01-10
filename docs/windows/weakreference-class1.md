@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb8e05ca3ef52515af58db455ed83da593d6bdfb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8985434365cb8144fc2ee3680ef19c5b8ed99301
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="weakreference-class1"></a>WeakReference Class1
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -46,16 +49,16 @@ class WeakReference;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[WeakReference::WeakReference Oluşturucusu](../windows/weakreference-weakreference-constructor.md)|WeakReference sınıfı yeni bir örneğini başlatır.|  
-|[WeakReference:: ~ WeakReference yok Edicisi](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (bozar) WeakReference sınıfının geçerli örneği.|  
+|[WeakReference::~WeakReference Yıkıcısı](../windows/weakreference-tilde-weakreference-destructor.md)|Deinitializes (bozar) WeakReference sınıfının geçerli örneği.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[WeakReference::DecrementStrongReference yöntemi](../windows/weakreference-decrementstrongreference-method.md)|Güçlü Başvuru azaltır geçerli WeakReference nesne sayısı.|  
-|[Weakreference::ıncrementstrongreference yöntemi](../windows/weakreference-incrementstrongreference-method.md)|Geçerli WeakReference nesnesinin güçlü başvuru sayısını artırır.|  
-|[WeakReference::Resolve yöntemi](../windows/weakreference-resolve-method.md)|Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.|  
-|[WeakReference::SetUnknown yöntemi](../windows/weakreference-setunknown-method.md)|Güçlü Başvuru geçerli WeakReference nesnenin belirtilen arabirimi işaretçisi ayarlar.|  
+|[WeakReference::DecrementStrongReference Metodu](../windows/weakreference-decrementstrongreference-method.md)|Güçlü Başvuru azaltır geçerli WeakReference nesne sayısı.|  
+|[WeakReference::IncrementStrongReference Metodu](../windows/weakreference-incrementstrongreference-method.md)|Geçerli WeakReference nesnesinin güçlü başvuru sayısını artırır.|  
+|[WeakReference::Resolve Metodu](../windows/weakreference-resolve-method.md)|Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.|  
+|[WeakReference::SetUnknown Metodu](../windows/weakreference-setunknown-method.md)|Güçlü Başvuru geçerli WeakReference nesnenin belirtilen arabirimi işaretçisi ayarlar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `WeakReference`  
@@ -66,4 +69,4 @@ class WeakReference;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

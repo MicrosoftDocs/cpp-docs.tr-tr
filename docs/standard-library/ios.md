@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 04992f8324196c5fd762ba01a96fff7cc6ba6539
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23fbac008c6954830fb016099fdf7ebc45ba685f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltiosgt"></a>&lt;iOS&gt;
 İostreams işlemi için çeşitli türleri ve temel işlevleri tanımlar. Bu üst başka bir iostream üstbilgileri tarafından sizin için genellikle bulunur; nadiren doğrudan dahil.  
@@ -64,7 +65,7 @@ istr>> noskipws;
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Bayraklarını yapılandırır bir `ios_base` nesne float değerleri için bir varsayılan görüntü biçimi kullanın.|  
 |[Sabit](../standard-library/ios-functions.md#fixed)|Bir kayan noktalı sayının Sabit ondalık gösterimde görüntüleneceğini belirtir.|  
 |[onaltılık](../standard-library/ios-functions.md#hex)|Tamsayı değişkenleri temel 16 gösterimde görüntüleneceğini belirtir.|  
-|[İç](../standard-library/ios-functions.md#internal)|Sayının işaretini sola hizalı olarak ve sağa hizalı olarak numarası neden olur.|  
+|[internal](../standard-library/ios-functions.md#internal)|Sayının işaretini sola hizalı olarak ve sağa hizalı olarak numarası neden olur.|  
 |[Sol](../standard-library/ios-functions.md#left)|Sol kenar boşluğu ile akış temizleme görünmesi çıkış genişliği kadar geniş değil metin neden olur.|  
 |[noboolalpha](../standard-library/ios-functions.md#noboolalpha)|Belirtir türündeki bu değişkenler [bool](../cpp/bool-cpp.md) 1 veya 0'a akış olarak görünür.|  
 |[noshowbase](../standard-library/ios-functions.md#noshowbase)|Bir sayı görüntülendiği notational temel belirten devre dışı bırakır.|  
@@ -95,7 +96,7 @@ istr>> noskipws;
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 
 

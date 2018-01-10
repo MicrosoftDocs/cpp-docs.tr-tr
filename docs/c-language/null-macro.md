@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1bf63b980f1270417b2882c6f4929d506c520305
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cbedf47842164decfef5ac82def22dbd56d3d232
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="null-macro"></a>NULL Makro
 **ANSI 4.1.5** için NULL makro genişler null işaretçinin sabiti  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  Birkaç içeren dosya, `((void *)0)` olarak NULL makroyu tanımlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

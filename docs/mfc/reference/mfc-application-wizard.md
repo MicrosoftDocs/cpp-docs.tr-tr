@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fac78eddcdf36ecc295841019f9e3f05e537802
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9d4997d2d793102119e5021ba1110db2674e1b42
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-application-wizard"></a>MFC Uygulama Sihirbazı
 MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yürütülebilir dosyanın (.exe) uygulaması, temel özellikleri uygular. MFC başlangıç uygulaması C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları, üstbilgi (.h) dosyaları ve bir proje (.vcxproj) dosyası içerir. Bu Başlatıcı dosyalarda oluşturulan kod MFC temel alır.  
@@ -32,7 +33,7 @@ MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yür
 ## <a name="overview"></a>Genel Bakış  
  Bu sihirbaz sayfası oluşturmakta olduğunuz MFC uygulaması için geçerli uygulama ayarları açıklanır. Varsayılan olarak, sihirbaz aşağıdaki gibi bir proje oluşturur:  
   
--   [Uygulama türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md)  
+-   [Uygulama Türü, MFC Uygulama Sihirbazı](../../mfc/reference/application-type-mfc-application-wizard.md)  
   
     -   Proje sekmeli birden çok belge arabirimi (MDI) desteği ile oluşturulur. Daha fazla bilgi için bkz: [SDI ve MDI](../../mfc/sdi-and-mdi.md).  
   
@@ -44,19 +45,19 @@ MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yür
   
     -   Proje MFC paylaşılan DLL'de kullanır. Daha fazla bilgi için bkz: [DLL'leri Visual C++'ta](../../build/dlls-in-visual-cpp.md).  
   
--   [Belge desteği, MFC Uygulama Sihirbazı bileşik](../../mfc/reference/compound-document-support-mfc-application-wizard.md)  
+-   [Birleşik Belge Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/compound-document-support-mfc-application-wizard.md)  
   
     -   Proje bileşik belgeler için destek sağlar.  
   
--   [Belge şablonu dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md)  
+-   [Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md)  
   
     -   Proje için varsayılan belge şablonu dizeleri proje adı kullanır.  
   
--   [Veritabanı desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)  
+-   [Veritabanı Desteği, MFC Uygulama Sihirbazı](../../mfc/reference/database-support-mfc-application-wizard.md)  
   
     -   Proje veritabanları için destek sağlar.  
   
--   [Kullanıcı arabirimi özellikleri, MFC Uygulama Sihirbazı](../../mfc/reference/user-interface-features-mfc-application-wizard.md)  
+-   [Kullanıcı Arabirimi Özellikleri, MFC Uygulama Sihirbazı](../../mfc/reference/user-interface-features-mfc-application-wizard.md)  
   
     -   Kullanıcı arabirimi özellikleri sistem menüsü, durum çubuğu, en üst düzeye çıkarmak ve kutularında, en aza indirmek gibi standart Windows proje uygulayan bir **hakkında** kutusu, bir standart menü çubuğu ve yerleştirme araç ve alt çerçeve.  
   
@@ -70,7 +71,7 @@ MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yür
   
     -   Proje destekler bir **Explorer** takma bölmesinde, bir **çıkış** takma bölmesinde ve bir **özellikleri** takma bölmesi.  
   
--   [Oluşturulan sınıflar, MFC Uygulama Sihirbazı](../../mfc/reference/generated-classes-mfc-application-wizard.md)  
+-   [Oluşturulan Sınıflar, MFC Uygulama Sihirbazı](../../mfc/reference/generated-classes-mfc-application-wizard.md)  
   
     -   Projenin görünüm sınıfı türetilir [CView sınıfı](../../mfc/reference/cview-class.md).  
   
@@ -89,4 +90,4 @@ MFC Uygulama Sihirbazı bir uygulama oluşturur, derlendiğinde bir Windows yür
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC uygulaması oluşturma](../../mfc/reference/creating-an-mfc-application.md)   
  [MFC Masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md)   
- [Windows uygulamaları yazmak için sınıfları kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)
+ [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)

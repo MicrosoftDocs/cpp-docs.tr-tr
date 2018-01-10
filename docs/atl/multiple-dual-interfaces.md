@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 426109958cf9b34829c23ac0bfd59743f1681e72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6f5677392a090a9c894cf4f848d9f74a1504d69c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multiple-dual-interfaces"></a>Birden çok çift arabirimler
 Çift arabirim (diğer bir deyişle, vtable ve geç bağlama, böylece sınıf kullanılabilir C++ yanı sıra komut dosyası dili yapma esnekliği) avantajları birleştirmek isteyebilirsiniz birden çok devralma teknikleri ile.  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/24/2017
  Bu yaklaşım olası ad çakışmalarının yanı sıra kod karmaşıklığı ve bakımı sorunlarınız. Birden çok çift arabirimler oluşturma önerilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
+ [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
 

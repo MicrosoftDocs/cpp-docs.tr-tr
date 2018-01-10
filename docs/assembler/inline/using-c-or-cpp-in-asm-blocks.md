@@ -25,11 +25,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fbdb081e10ad08d20580aeec7d42028fbc119560
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ab706f682372cb0a76f0d3283157d4da9105ed6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-c-or-c-in-asm-blocks"></a>__asm Bloklarında C veya C++ Kullanma
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -53,15 +54,15 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [__Asm bloklarında işleçler kullanma](../../assembler/inline/using-operators-in-asm-blocks.md)  
+-   [__asm Bloklarında İşleçler Kullanma](../../assembler/inline/using-operators-in-asm-blocks.md)  
   
 -   [__Asm bloklarını C veya C++ Symbols_in kullanarak](../../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md)  
   
--   [C veya C++ verilerine __asm bloklarındaki erişme](../../assembler/inline/accessing-c-or-cpp-data-in-asm-blocks.md)  
+-   [__asm Bloklarında C veya C++ Verilerine Erişme](../../assembler/inline/accessing-c-or-cpp-data-in-asm-blocks.md)  
   
--   [Satır içi derlemeyle işlevler yazma](../../assembler/inline/writing-functions-with-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodla İşlevler Yazma](../../assembler/inline/writing-functions-with-inline-assembly.md)  
   
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır içi derleyicisi](../../assembler/inline/inline-assembler.md)
+ [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)

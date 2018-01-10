@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c591efee96af92aea263dca9c9a95f96932087e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d6fbe71ff23db8dba431b9d46d71fc6c924fbc5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits sınıfı
 Bu sınıf için CRT iş parçacığı oluşturma işlevi sağlar. İş parçacığı CRT işlevleri kullanacaksanız bu sınıfı kullanın.  

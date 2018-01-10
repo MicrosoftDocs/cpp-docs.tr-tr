@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cc91c884bb58ce21e4419a8082f15792a0fc2246
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 95b43856401b5bccfa9a0bef12fdc93ec886cea1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cppquote"></a>cpp_quote
 Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.  
@@ -62,4 +65,4 @@ Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
+ [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)   

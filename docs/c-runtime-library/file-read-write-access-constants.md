@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2d32e9da99776bf5e21805ec239c2731cc3d5f21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 789d0ae6b0b9b38312896adf079e7c10dcde7556
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-readwrite-access-constants"></a>Dosya Okuma/Yazma Erişimi Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -65,4 +66,4 @@ ms.lasthandoff: 10/24/2017
  [freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md)   
  [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)   
  [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

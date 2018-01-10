@@ -61,11 +61,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2252f27dfffd4bbbe7edebacad8af1c445a32e5b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 80f40b7ab03e79d38d36a1b25a4cd973a5077468
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton sınıfı
 Gösterir veya gizler bir düğmeyi bir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) gizlemek için yapılandırılmış.  
@@ -439,4 +440,4 @@ virtual BOOL IsHighlighted() const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCAutoHideBar sınıfı](../../mfc/reference/cmfcautohidebar-class.md)   
- [CAutoHideDockSite sınıfı](../../mfc/reference/cautohidedocksite-class.md)
+ [CAutoHideDockSite Sınıfı](../../mfc/reference/cautohidedocksite-class.md)

@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 479f3464db46fda4c566feeaeec2f7fe5384ee87
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9185f1eb3640a4baeb8f7cc1d7b20169c980a8e1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overriding-provider-service-defaults"></a>Sağlayıcı Hizmet Varsayılanlarını Geçersiz Kılma
 Sağlayıcının kayıt defteri değeri için **OLEDB_SERVICES** için varsayılan değer olarak döndürülür [DBPROP_INIT_OLEDBSERVICES](https://msdn.microsoft.com/en-us/library/ms716898.aspx) başlatma özelliği veri kaynağı nesnesi.  
@@ -41,4 +44,4 @@ Sağlayıcının kayıt defteri değeri için **OLEDB_SERVICES** için varsayıl
  [Kaynak havuzu oluşturma](https://msdn.microsoft.com/en-us/library/ms713655.aspx)   
  [Kaynak havuzu tüketiciler nasıl kullanır](https://msdn.microsoft.com/en-us/library/ms715907.aspx)   
  [Nasıl sağlayıcıları etkili bir şekilde kaynak havuzu ile çalışma](https://msdn.microsoft.com/en-us/library/ms714906.aspx)   
- [OLE DB hizmetleri devre dışı bırakma ve etkinleştirme](../../data/oledb/enabling-and-disabling-ole-db-services.md)
+ [OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma](../../data/oledb/enabling-and-disabling-ole-db-services.md)

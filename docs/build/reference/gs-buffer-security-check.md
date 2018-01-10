@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 21ebf470372c24a4e1ab5922f1d98c1a434691a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e5699830a090f42feb92b24ec43fbae36634c4df
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="gs-buffer-security-check"></a>/GS (Arabellek Güvenlik Denetimi)  
   
@@ -43,7 +44,7 @@ Bir işlevin dönüş adresi, özel durum işleyici adresi ya da belirli türde 
   
 ## <a name="remarks"></a>Açıklamalar  
   
-**/GS** varsayılan olarak açıktır. Uygulamanızı hiçbir güvenlik açıklarını olmasını bekliyorsanız kullanmak **/GS-**. Hakkında daha fazla bilgi için **/GS**, bkz: [içinde derleyici güvenlik derinliği denetler](http://go.microsoft.com/fwlink/?linkid=7260). Arabellek Taşması algılamasını gizleme hakkında daha fazla bilgi için bkz: [safebuffers](../../cpp/safebuffers.md).  
+**/GS** varsayılan olarak açıktır. Uygulamanızı hiçbir güvenlik açıklarını olmasını bekliyorsanız kullanmak **/GS-**. Hakkında daha fazla bilgi için **/GS**, bkz: [içinde derleyici güvenlik derinliği denetler](http://go.microsoft.com/fwlink/p/?linkid=7260). Arabellek Taşması algılamasını gizleme hakkında daha fazla bilgi için bkz: [safebuffers](../../cpp/safebuffers.md).  
   
 ## <a name="security-checks"></a>Güvenlik denetimleri  
   
@@ -168,4 +169,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

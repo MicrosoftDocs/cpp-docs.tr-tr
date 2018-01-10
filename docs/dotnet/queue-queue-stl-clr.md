@@ -15,11 +15,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f2e454f1a8922f5fa4af26c166c4b0b683123871
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d6c4b24ad40bf19b7a20aafcfa2d02fb6490fed1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queuequeue-stlclr"></a>queue::queue (STL/CLR)
 Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.  
@@ -121,4 +124,4 @@ size() = 0
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
  [Queue::Assign (STL/CLR)](../dotnet/queue-assign-stl-clr.md)   
  [Queue::generic_container (STL/CLR)](../dotnet/queue-generic-container-stl-clr.md)   
- [Queue::operator (STL/CLR) =](../dotnet/queue-operator-assign-stl-clr.md)
+ [queue::operator= (STL/CLR)](../dotnet/queue-operator-assign-stl-clr.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c4aec5679ae7a880bd5305037e880de9ff7d93a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb863f334c00569ef849167cc39d365e0588f666
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-event-handling-summary"></a>ATL olay işleme özeti
 Genel olarak, COM olayları işleme bir oldukça basit bir işlemdir. Üç ana adım vardır:  
@@ -55,5 +56,5 @@ Genel olarak, COM olayları işleme bir oldukça basit bir işlemdir. Üç ana a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Olay işleme](../atl/event-handling-and-atl.md)   
- [IDispEventImpl destekleme](../atl/supporting-idispeventimpl.md)
+ [IDispEventImpl Destekleme](../atl/supporting-idispeventimpl.md)
 

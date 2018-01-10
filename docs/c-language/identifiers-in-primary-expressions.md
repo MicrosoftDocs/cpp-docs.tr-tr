@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ce62a6ad0f0cb36678de0756d77155769393f760
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e507c2b7c05f9ea818f55b10d222592fe0172cc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="identifiers-in-primary-expressions"></a>Birincil İfadelerdeki Tanımlayıcılar
 Tanımlayıcıları integral olabilir **float**, `enum`, `struct`, **UNION**, dizi, işaretçi veya işlev türü. (Bu durumda bu, l-değeri'dir) bir nesne belirleme veya bir işlev (Bu durumda bu, bir işlev Belirleyicisi'dir) olarak bildirilmiş bir birincil ifadesi sağlanan bir tanımlayıcıdır. Bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md) l-değeri tanımının için.  
@@ -28,4 +29,4 @@ Tanımlayıcıları integral olabilir **float**, `enum`, `struct`, **UNION**, di
  Bir işlevi olarak bildirilen bir tanımlayıcı değeri işlevi adresidir bir işaretçi temsil eder. Belirtilen türde bir değer döndüren bir işlev işaretçisi giderir. Bu nedenle, işlev tanımlayıcıları l değerleri atama işlemlerinde olamaz. Daha fazla bilgi için bkz: [tanımlayıcıları](../c-language/c-identifiers.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C birincil ifadeler](../c-language/c-primary-expressions.md)
+ [C Birincil İfadeler](../c-language/c-primary-expressions.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 66736e9b131725475d6f10f4a332edaa980a54f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a73da6d96b0dc03fa3f4c4807d6a2dff4fef2879
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="usual-arithmetic-conversions"></a>Olağan Aritmetik Dönüştürmeler
 Çoğu C işleçleri tür dönüştürmeleri için ortak bir türü bir ifadenin işlenenleri getirmek veya makine işlemlerinde kullanılan tamsayı boyutuna kısa değerler genişletmek için gerçekleştirin. C işleçleri tarafından gerçekleştirilen dönüşümleri belirli işleci ve işlenen veya işlenen türü bağlıdır. Ancak, birçok işleçleri kayan ve tam sayı türleri işlenen üzerinde benzer dönüşümleri gerçekleştirir. Bu dönüştürme "aritmetik dönüşümler." bilinen Uyumlu bir türde bir işlenen değer dönüştürülmesi değerine değişikliğe neden olmaz.  
@@ -68,4 +69,4 @@ dVal = ulVal + fVal; /* ulVal converted to float
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C işleçleri](../c-language/c-operators.md)
+ [C İşleçleri](../c-language/c-operators.md)

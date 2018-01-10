@@ -25,11 +25,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6df8123e69a4ecccc9aaa7af7b82678a211cc28e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c1e60c3b175346268b2c6b755786adbd8eb86467
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chtmleditdoc-class"></a>CHtmlEditDoc sınıfı
 İle [CHtmlEditView](../../mfc/reference/chtmleditview-class.md), MFC belge görünüm mimarisi bağlamında WebBrowser düzenleme platform işlevselliğini sağlar.  
@@ -108,5 +109,5 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [HTMLEdit örnek](../../visual-cpp-samples.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

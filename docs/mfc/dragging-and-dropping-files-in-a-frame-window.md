@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 76158677ee1ea31be493722f736c56c82120a3af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 938640ed85e51d2b94b292bfe78a8d912b095188
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dragging-and-dropping-files-in-a-frame-window"></a>Bir Çerçeve Penceresinde Dosyaları Sürükleme ve Bırakma
 Çerçeve penceresi dosya Gezgini veya Dosya Yöneticisi ile bir ilişki yönetir.  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/24/2017
  Tarafından birkaç başlatma ekleme geçersiz kılmada çağırır `CWinApp` üye işlevi `InitInstance`açıklandığı gibi [CWinApp: uygulama sınıfı](../mfc/cwinapp-the-application-class.md), dolaylı olarak dosyasından sürüklenen dosyalarını açmak, çerçeve penceresi olabilir Explorer ya da Dosya Yöneticisi ve çerçeve penceresinde bırakıldı. Bkz: [Dosya Yöneticisi sürükleme ve bırakma](../mfc/special-cwinapp-services.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+ [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

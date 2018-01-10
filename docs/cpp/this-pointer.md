@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4e77139cdf93d385b92eb87483c1b03541b18650
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 814e7518c6ed7052abc93b9e4705be93172b1e7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="this-pointer"></a>this İşaretçisi
 **Bu** işaretçidir yalnızca statik olmayan üye işlevleri içinde erişilebilir bir işaretçi bir **sınıfı**, `struct`, veya **UNION** türü. Üye işlevinin çağrıldığı nesneye işaret eder. Statik üye işlevleri sahip bir **bu** işaretçi.  
@@ -199,5 +200,5 @@ int main()
 >  Olarak Kurucular ve Yıkıcılar bildirilemez **const** veya `volatile`. Ancak, olabilirler üzerinde çağrılan **const** veya `volatile` nesneleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)   
  

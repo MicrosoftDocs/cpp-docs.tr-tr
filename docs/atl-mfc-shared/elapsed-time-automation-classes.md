@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 51479f73112ed80ee981f3919fd3941d1eb0c8f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e4cf7fef17499910d9664ab26fa1b07438e7900
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="elapsed-time-automation-classes"></a>Geçen süre: Otomasyon sınıfları
 Bu yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu.  
@@ -46,5 +47,5 @@ Bu yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneler
      [!code-cpp[NVC_ATLMFC_Utilities#178](../atl-mfc-shared/codesnippet/cpp/elapsed-time-automation-classes_1.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve saat: Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)
+ [Tarih ve Saat: Otomasyon Desteği](../atl-mfc-shared/date-and-time-automation-support.md)
 

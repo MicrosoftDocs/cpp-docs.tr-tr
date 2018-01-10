@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9420a191174d0f2c03d7d3e30f797106784a3dc0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b65f17d1c433879ad7ea4f0a3af53d4ab740b8bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="examples-of-structure-alignment"></a>Yapı Hizalama Örnekleri
 Aşağıdaki dört örnekler her hizalanmış yapı veya birleşim ve karşılık gelen rakamları bu yapı veya birleşim bellek içinde düzenini göstermeye bildirin. Her sütun bir şekilde bir baytlık belleği temsil eder ve o bayt öteleme sütunundaki sayıyı gösterir. Her Şekil ikinci satırında adı bildiriminde değişkeninin adı karşılık gelir. Gölgeli sütun doldurmayı belirtilen hizalama ulaşmak için gerekli olan gösterir.  
@@ -38,4 +39,4 @@ Aşağıdaki dört örnekler her hizalanmış yapı veya birleşim ve karşılı
 Örnek 4  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Türler ve depolama](../build/types-and-storage.md)
+ [Türler ve Depolama](../build/types-and-storage.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d4db358543430b5bba0da93bb3525398b3e675a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9efdcdc0863105f4a07a69c99a30fcd7f7f2ac92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-tokens"></a>C Belirteçleri
 C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir". Belirteç, derleyicinin bileşen öğelerine ayırmadığı bir kaynak programı metnidir.  
@@ -35,7 +36,7 @@ C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir"
   
  *dize değişmez değeri*  
   
- *işleci*  
+ *operator*  
   
  *Noktalama işaretçisi*  
   
@@ -45,4 +46,4 @@ C kaynak programında, derleyici tarafından tanınan temel öğe "belirteçtir"
  Bu bölümde açıklanan anahtar sözcükler, tanımlayıcılar, sabitler, dize sabit değerleri ve işleçler belirteçlerin örnekleridir. Noktalama karakterleri köşeli gibi (**[]**), köşeli parantez (**{}**), parantez ( **()** ) ve virgül (**,**) de belirteçleridir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C öğeleri](../c-language/elements-of-c.md)
+ [C Öğeleri](../c-language/elements-of-c.md)

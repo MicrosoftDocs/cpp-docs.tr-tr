@@ -29,11 +29,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 96d916467c524d54f58a9bdd1095e1d58d7ca0a3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c03d489b3059ddadf5783719f297371433a599e6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cd2dgradientbrush-class"></a>CD2DGradientBrush sınıfı
 CD2DLinearGradientBrush ve CD2DRadialGradientBrush sınıfların temel sınıf.  
@@ -159,4 +160,4 @@ ID2D1GradientStopCollection* m_pGradientStops;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

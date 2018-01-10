@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c38c64692f5c115fe42e71256a22890c9dcb3952
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 16b4cdfe26eb7e5f9d22803f80090c4e7cc6f5c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdberrorinfogeterrorparameters"></a>CDBErrorInfo::GetErrorParameters
 Çağrıları [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/en-us/library/ms715793.aspx) hata parametreleri dönün.  
@@ -49,4 +52,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cdberrorınfo sınıfı](../../data/oledb/cdberrorinfo-class.md)
+ [CDBErrorInfo Sınıfı](../../data/oledb/cdberrorinfo-class.md)

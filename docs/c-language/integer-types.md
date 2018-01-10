@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4b5ce16963e027771bd82a8e2820e0b9ba319806
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e324976d0054cd1b32188b6ebe0f10ab4e1bdd69
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="integer-types"></a>Tam Sayı Türleri
 Her tam sayı sabit değeri ve ifade edilir şekilde dayalı bir tür verilir. Türü için hiçbir tamsayı sabiti zorlayabilirsiniz **uzun** harf ekleyerek **l** veya **L** türü olmasını zorla; sabiti sonuna `unsigned` ekleyerek **u** veya **U** değerine. Küçük harf **l** 1 basamaklı kafası olabilir ve kaçınılmalıdır. Bazı formları **uzun** tamsayı sabitleri izleyin:  
@@ -58,4 +59,4 @@ Her tam sayı sabit değeri ve ifade edilir şekilde dayalı bir tür verilir. T
 -   Sabitler ile atanan türü bir **u** veya **U** ve bir **l** veya **L** sonekidir **imzasız long int**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C tamsayı sabitleri](../c-language/c-integer-constants.md)
+ [C Tamsayı Sabitleri](../c-language/c-integer-constants.md)

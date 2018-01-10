@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 75115f450a7b57d2988bbdd7f697b52b185e35f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8027417493fbf3816921d04c732faf852d06bd5b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-opattr"></a>OPATTR işleci
 Mod ve kapsamını tanımlayan bir sözcük döndürür *ifade*. Düşük bayt tarafından döndürülen bayt ile özdeş olur [. TÜRÜ](../../assembler/masm/operator-dot-type.md). Yüksek bayt ek bilgiler içerir.  
@@ -36,4 +37,4 @@ OPATTR expression
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

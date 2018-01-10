@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1506eb2f2220ebfdf4c116c8e7b4a41ccf0e9085
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dbe0ee3eaa3dd5e53d213496fa2520f4de1e1776
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>Visual C++ 64-bit, x64 için yapılandırma hedefleri
 
@@ -31,13 +32,13 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım ile Visua
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)  
+-   [Nasıl Yapılır: Visual C++ Projelerinin 64 Bit, x64 Platformları Hedeflemesi için Yapılandırma](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)  
   
--   [Nasıl yapılır: bir 64 Bit Visual C++ araç komut satırında etkinleştir](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)  
+-   [Nasıl yapılır: Komut Satırında 64 Bit Visual C++ Araç Takımını Etkinleştirme](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)  
   
--   [Genel Visual C++ 64-bit geçiş sorunları](../build/common-visual-cpp-64-bit-migration-issues.md)  
+-   [Genel Visual C++ 64 Bit Geçiş Sorunları](../build/common-visual-cpp-64-bit-migration-issues.md)  
   
--   [x64 yazılım kuralları](../build/x64-software-conventions.md)  
+-   [x64 Yazılım Kuralları](../build/x64-software-conventions.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
 
@@ -51,10 +52,10 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım ile Visua
   
 [64-bit Windows için Programlama Kılavuzu](http://msdn.microsoft.com/library/windows/desktop/bb427430)  
   
-[MASM x64 (ml64.exe) için](../assembler/masm/masm-for-x64-ml64-exe.md)  
+[x64 (ml64.exe) için MASM](../assembler/masm/masm-for-x64-ml64-exe.md)  
   
-[x64 (amd64) iç bilgi listesi](../intrinsics/x64-amd64-intrinsics-list.md)  
+[x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[C/C++ programları oluşturma](building-c-cpp-programs.md)
+[C/C++ Programları Oluşturma](building-c-cpp-programs.md)

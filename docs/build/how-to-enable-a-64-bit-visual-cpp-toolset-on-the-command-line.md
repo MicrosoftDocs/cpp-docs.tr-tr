@@ -23,11 +23,12 @@ caps.latest.revision: "30"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f776cbaec0b890959db180a373d4cb4152ac5826
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7712bcf73881d02b5d28c8a7645609be1df5e489
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-enable-a-64-bit-x64-hosted-visual-c-toolset-on-the-command-line"></a>Nasıl yapılır: 64 Bit etkinleştirmek için x64 Barındırılan Visual C++ araç takımını komut satırı
 
@@ -50,4 +51,4 @@ Herhangi bir yerel veya vcvarsall.bat çalıştırarak komut satırında derleme
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Visual C++ 64-bit, x64 için yapılandırma hedefleri](../build/configuring-programs-for-64-bit-visual-cpp.md)
+[Visual C++’ı 64 bit, x64 hedefler için yapılandırma](../build/configuring-programs-for-64-bit-visual-cpp.md)

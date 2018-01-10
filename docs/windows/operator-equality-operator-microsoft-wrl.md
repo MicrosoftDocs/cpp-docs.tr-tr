@@ -14,11 +14,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3bf8690e92140b503695de79cc6f6d96d3003a32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 92f87671b5efa9d4013ffd1d5d622ec225d65940
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-operator-microsoftwrl"></a>operator== İşleç (Microsoft::WRL)
 Eşitlik işleci için [ComPtr](../windows/comptr-class.md) ve [ComPtrRef](../windows/comptrref-class.md) nesneleri.  
@@ -76,4 +79,4 @@ WRL_NOTHROW bool operator==(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

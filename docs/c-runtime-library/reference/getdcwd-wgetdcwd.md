@@ -44,11 +44,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7541bf3135dfcc3734a43fe64277e5b8ea141e9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e314db740322fc3d5e7df5aeb6bd7de747e77695
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 Geçerli çalışma dizininin tam yolu belirtilen sürücü üzerindeki alır.  
@@ -94,7 +95,7 @@ wchar_t *_wgetdcwd(
   
  `_wgetdcwd`bir joker karakter sürümü `_getdcwd`ve kendi `buffer` parametre ve dönüş değeri olan joker karakter dizeleri. Aksi takdirde, `_wgetdcwd` ve `_getdcwd` aynı şekilde davranır.  
   
- Bağımlı olsa da bu işlev iş parçacığı **GetFullPathName**, kendisini değil iş parçacığı güvenli olduğu. Ancak, birden çok iş parçacıklı uygulamanız bu iki işlevini çağırırsa iş parçacığı güvenliği ihlal edebilir ve **GetFullPathName**. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/?LinkID=150542) arayın ve sonra **GetFullPathName**.  
+ Bağımlı olsa da bu işlev iş parçacığı **GetFullPathName**, kendisini değil iş parçacığı güvenli olduğu. Ancak, birden çok iş parçacıklı uygulamanız bu iki işlevini çağırırsa iş parçacığı güvenliği ihlal edebilir ve **GetFullPathName**. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) arayın ve sonra **GetFullPathName**.  
   
  Sürümü olan bu işlev, `_nolock` soneki aynı şekilde davrandığını bu işleve iş parçacığı açısından güvenli değildir ve girişime diğer iş parçacıkları tarafından korunmuyor. Daha fazla bilgi için bkz: [_getdcwd_nolock, _wgetdcwd_nolock](../../c-runtime-library/reference/getdcwd-nolock-wgetdcwd-nolock.md).  
   

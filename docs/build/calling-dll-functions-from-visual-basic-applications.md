@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 471f0b2b89d8c44f17567dd9af6add535be7fbcf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed99b0ebe41a8f1bc9684638fa74e18556dd51f5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic Uygulamasından DLL İşlevi Çağırma
 Visual Basic uygulamalarını (veya Pascal ya da Fortran gibi diğer dillerde uygulamalar için) bir C/C++ DLL işlevleri çağırmak, İşlevler derleyici tarafından yapılan herhangi bir ad düzenleme olmadan doğru çağırma kullanarak dışarı aktarılmalıdır.  
@@ -71,7 +72,7 @@ EXPORTS
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)  
+-   [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)  
   
 -   [Kullanarak bir DLL dışarı aktarma. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)  
   
@@ -84,4 +85,4 @@ EXPORTS
 -   [Düzenlenmiş adlar](../build/reference/decorated-names.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

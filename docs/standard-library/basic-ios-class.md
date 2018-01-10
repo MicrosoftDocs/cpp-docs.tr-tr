@@ -66,11 +66,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0558bd962d8f646cc599ba604dbe749f5a02138b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7068c2b94637a859c35c662350c27f157103e37
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 Şablon sınıfı için her iki giriş akışları ortak depolama ve üye işlevleri açıklanmaktadır (şablon sınıfının [basic_istream](../standard-library/basic-istream-class.md)) ve çıkış akışları (şablon sınıfının [basic_ostream](../standard-library/basic-ostream-class.md)), bağlıdır Şablon parametreleri. (Sınıf [ios_base](../standard-library/ios-base-class.md) ortak ve şablon parametreleri bağımlı ne olduğunu açıklar.) Sınıfın bir nesnesi **basic_ios\<Elem sınıfı, nitelikler sınıf >** yardımcı türdeki öğeleri olan bir akış denetim **Elem**, olan karakter nitelikler sınıfı tarafından belirlenir  **Nitelikler**.  
@@ -126,13 +127,13 @@ class basic_ios : public ios_base
 |[hatalı](#bad)|Akışı arabelleğe bütünlüğünü kaybı gösterir.|  
 |[Temizle](#clear)|Tüm hata bayrakları temizler.|  
 |[copyfmt](#copyfmt)|Bayrakları bir akıştan başka bir konuma kopyalar.|  
-|[EOF](#eof)|Bir akışın sonuna ulaşıldı olmadığını gösterir.|  
+|[eof](#eof)|Bir akışın sonuna ulaşıldı olmadığını gösterir.|  
 |[özel durumlar](#exceptions)|Akış tarafından hangi özel durum atılır gösterir.|  
 |[başarısız](#fail)|Geçerli bir alan bir akıştan ayıklamak için başarısız olduğunu gösterir.|  
 |[doldurma](#fill)|Metin akış olarak kadar geniş olmadığında kullanılacak karakter döndürür veya belirtir.|  
 |[iyi](#good)|Akış iyi durumda olduğunu gösterir.|  
 |[imbue](#imbue)|Yerel olarak değiştirir.|  
-|[Init](#init)|Tarafından çağrılır `basic_ios` oluşturucular.|  
+|[init](#init)|Tarafından çağrılır `basic_ios` oluşturucular.|  
 |[taşıma](#move)|Geçerli nesneye parametre akışı arabelleğe işaretçi dışındaki tüm değerleri taşır.|  
 |[daraltma](#narrow)|Eşdeğer char bulur bir verilen `char_type`.|  
 |[rdbuf](#rdbuf)|Belirtilen arabellek yollar akış.|  
@@ -858,7 +859,7 @@ basic_ostream<Elem, Traits>* str);
  `tie`diğer akış işlemleri tamamlandıktan sonra bir akış üzerinde işlemler meydana şekilde eşitlenmesi iki akışlarının neden olur.  
   
 ### <a name="example"></a>Örnek  
-  Bu örnekte, cout, cin bağlamadan tarafından onu, garanti "bir sayı girin:" dizesi gider numarası önce konsola kendisini cin ayıklanır. Bu olasılığını ortadan kaldırır, "bir sayı girin:" numarası okunduğunda dize arabellekte hala durduğunu, böylece biz eminseniz kullanıcı yanıtlamak için bazı komut gerçekte vardır.. Varsayılan olarak, cin ve cout bağlıdır.  
+  Bu örnekte, cout, cin bağlamadan tarafından onu, garanti "bir sayı girin:" dizesi gider numarası önce konsola kendisini cin ayıklanır. Bu olasılığını ortadan kaldırır, "bir sayı girin:" numarası okunduğunda dize arabellekte hala durduğunu, böylece biz eminseniz kullanıcı yanıtlamak için bazı komut gerçekte vardır. Varsayılan olarak, cin ve cout bağlıdır.  
   
 ```  
   
@@ -938,5 +939,5 @@ void swap(basic_ios&& right);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 

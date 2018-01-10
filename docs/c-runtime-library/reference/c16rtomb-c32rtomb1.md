@@ -39,11 +39,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e9e917719c0b980f3ba46e11456e4a47b2a518ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9eb43d6b225bce002eb2ce5293cb048d3062bcd5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c16rtomb-c32rtomb"></a>c16rtomb, c32rtomb
 Geçerli yerel birden çok baytlı karakter UTF-16 veya UTF-32 geniş karakter dönüştürün.  

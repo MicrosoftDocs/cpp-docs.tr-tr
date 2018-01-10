@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e47cdfaadcf164a3298d06901fe4f723b9aa0f25
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4fe9411d306e08f16df138786d6d55e4ea1647c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="complex-class"></a>complex Sınıfı
 Şablon sınıfı türünde iki nesnelerini depolayan bir nesne tanımlar **türü**, bir karmaşık sayı ve bir sanal bölümünü temsil eden gerçek bölümünü temsil eder.  
@@ -768,5 +769,5 @@ of type value_type: c1 = (3,4).
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [karmaşık üyeleri](http://msdn.microsoft.com/en-us/d5c4466c-43a0-4817-aca1-9a5d492dae28)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

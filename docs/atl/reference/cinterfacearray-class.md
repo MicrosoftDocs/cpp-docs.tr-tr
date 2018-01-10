@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5a06fe0f7fab05b6b73856fa3f326f1c54d4f55c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ece9858d0be171febaeb52e820e922665ac2a351
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cinterfacearray-class"></a>CInterfaceArray sınıfı
 Bu sınıf, bir dizi COM arabirim işaretçileri oluşturulurken yararlı yöntemleri sağlar.  

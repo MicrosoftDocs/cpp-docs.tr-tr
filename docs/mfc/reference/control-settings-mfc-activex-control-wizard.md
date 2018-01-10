@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 119c98c8cf5f5a3077afce4e706b177513113d03
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 60828b7f40009a5fd88c7f0a7f820ede3de4aa93
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>Denetim Ayarları, MFC ActiveX Denetim Sihirbazı
 Sihirbazın bu sayfası nasıl hareket etmesi için denetimi istediğinizi belirtmek için kullanın. Örneğin, standart Windows Denetim türleri denetiminde temel kendi davranış ve görünümünü en iyi duruma getirme veya denetimi diğer denetimler için bir kapsayıcı olarak davranamaz gösterir.  
@@ -59,7 +60,7 @@ Sihirbazın bu sayfası nasıl hareket etmesi için denetimi istediğinizi belir
  Denetim standart Windows olduğunu belirtir **hakkında** iletişim kutusu, sürüm numarasını ve telif hakkı bilgileri görüntüler.  
   
 > [!NOTE]
->  Kullanıcı denetimi için Yardım nasıl eriştiğini nasıl Yardım uyguladık ve kapsayıcı yardımıyla denetim Yardım olup tümleşik bağlıdır. Yardım, üzerinde tümleştirme hakkında daha fazla bilgi için [MSDN Kitaplığı](http://go.microsoft.com/fwlink/linkid=150542) Web sitesi, "Ekleme Context-Sensitive yardımcı olmak için bir MFC ActiveX denetimi" arayın.  
+>  Kullanıcı denetimi için Yardım nasıl eriştiğini nasıl Yardım uyguladık ve kapsayıcı yardımıyla denetim Yardım olup tümleşik bağlıdır. Yardım, üzerinde tümleştirme hakkında daha fazla bilgi için [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Ekleme Context-Sensitive yardımcı olmak için bir MFC ActiveX denetimi" arayın.  
   
  Bu seçeneği belirlediğinizde, ekler `AboutBox` kontrol proje denetim sınıftaki yöntemi (C*ProjName*Ctrl.cpp) ve AboutBox proje gönderme Haritası ekler. Varsayılan olarak, bu seçenek seçilidir.  
   
@@ -82,7 +83,7 @@ Sihirbazın bu sayfası nasıl hareket etmesi için denetimi istediğinizi belir
  Denetim etkin olsun veya olmasın işlem fare işaretçisini bildirimleri denetimi sağlar. Bu seçeneği belirlediğinizde `pointerInactive` bayrağı tarafından döndürülen bayrakları biridir [COleControl::GetControlFlags](../../mfc/reference/colecontrol-class.md#getcontrolflags). Bu seçenek kullanma hakkında daha fazla bilgi için bkz: [sağlama fare etkileşimi sırasında etkin olmayan](../../mfc/providing-mouse-interaction-while-inactive.md).  
   
  **Basit çerçeve denetim görevi görür**  
- Ayarlayarak denetimi diğer denetimler için bir kapsayıcı olduğunu belirtir `OLEMISC_SIMPLEFRAME` denetimi için bit. Daha fazla bilgi için üzerinde [MSDN Kitaplığı](http://go.microsoft.com/fwlink/linkid=150542) Web sitesi, "Basit çerçeve Site kapsama" arayın.  
+ Ayarlayarak denetimi diğer denetimler için bir kapsayıcı olduğunu belirtir `OLEMISC_SIMPLEFRAME` denetimi için bit. Daha fazla bilgi için üzerinde [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) Web sitesi, "Basit çerçeve Site kapsama" arayın.  
   
  **Zaman uyumsuz olarak özelliklerini yükler**  
  Önceki herhangi bir zaman uyumsuz veri sıfırlanmasını sağlar ve denetim zaman uyumsuz özelliğinin yeni bir yük başlatır.  
@@ -90,5 +91,5 @@ Sihirbazın bu sayfası nasıl hareket etmesi için denetimi istediğinizi belir
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)   
  [Uygulama ayarları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)   
- [Denetim adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
+ [Denetim Adları, MFC ActiveX Denetim Sihirbazı](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
 

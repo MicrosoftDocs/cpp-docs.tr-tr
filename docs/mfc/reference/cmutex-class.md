@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3c0c01b445ed2beff15c4e4a016044c281bd970b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d87d613356589ee192ef141a3e222fdc4d8f03f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
 "Mutex" temsil eder — bir iş parçacığı birbirini dışlayan bir kaynağa erişim izni veren bir eşitleme nesnesi.  
@@ -90,7 +91,7 @@ CMutex(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSyncObject sınıfı](../../mfc/reference/csyncobject-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

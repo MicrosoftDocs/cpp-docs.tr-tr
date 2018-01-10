@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 809ea614924444b4f753153f821118cee6d29e6a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8979ab026d5bf6aef9d0dd8677bf2ec47a8c6142
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı numaralandırmalar (AMP)
 |||  
@@ -57,4 +58,4 @@ enum queuing_mode;
 |`queuing_mode_automatic`|Komutları karşılık gelen bir komut sırasına sıraya olduğunu belirten bir sıralama modu [accelerator_view](accelerator-view-class.md) nesnesi. Komutları cihaza gönderilen zaman [accelerator_view::flush](accelerator-view-class.md#flush) olarak adlandırılır.|   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

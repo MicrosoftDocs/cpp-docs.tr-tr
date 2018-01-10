@@ -20,15 +20,16 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95e7586dc15c641ff4915b3257f4ed33a552fde2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 394c48644c3b5cdc2514fefef2f4451e4098856f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dynamic-link-library-support"></a>Dinamik Bağlantı Kitaplık Desteği
 NAFXCW.lib ve NAFXCWD.lib kitaplıkları (statik bağlantı kitaplık adlandırma kuralları tabloda listelenen [kitaplık adlandırma kuralları](../mfc/library-naming-conventions.md)) projeniz "Normal MFC DLL" adlı bir dinamik bağlantı kitaplığı olarak oluşturma (önceki adıyla bir "USRDLL") sınıf kitaplığı ile oluşturulmuş olmayan uygulamaları ile kullanılabilir. Bu DLL desteği DLL tüm sınıf kitaplığında içeren MFCx0.DLL ve MFCx0D.DLL (AFXDLL da bilinir), aynı değil. Daha fazla bilgi için bkz: [DLL'leri](../build/dlls-in-visual-cpp.md). DLL adları tablo için bkz: [MFC DLL'leri için adlandırma kurallarını](../build/naming-conventions-for-mfc-dlls.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC kitaplık sürümleri](../mfc/mfc-library-versions.md)
+ [MFC Kitaplık Sürümleri](../mfc/mfc-library-versions.md)
 

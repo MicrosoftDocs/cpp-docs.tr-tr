@@ -17,26 +17,27 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7fc4859d9008135cf1e8ff39b0f00f1a86d35088
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7fdb5ba2c9c2be7693f5c447528f846127cc3ba1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
 Çift arabirim yöntemlerinden görüntüleme arabirimi yöntemleri veya vtable yöntemleri olarak erişilmesini sağlar. Bu bölüm bir ATL açısından çift arabirimler özelliklerden bazıları kapsar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Çift arabirim uygulama](../atl/implementing-a-dual-interface.md)  
+ [Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)  
  Sınıfları ve sihirbazları çift arabirim uygulama söz konusu açıklanmaktadır.  
   
- [Birden çok çift arabirimler](../atl/multiple-dual-interfaces.md)  
+ [Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)  
  Tek bir nesne üzerinde birden çok çift arabirimler kullanıma sunmak nasıl ele alınmaktadır.  
   
  [Nonextensible özniteliği](../atl/nonextensible-attribute.md)  
  Ne zaman kullanılacağı anlatılmaktadır **nonextensible** , arabirim tanımı özniteliği.  
   
- [Çift arabirimler ve olaylar](../atl/dual-interfaces-and-events.md)  
+ [Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)  
  Çift arabirim arabirim bir olay yetişememe tasarım nedenleri açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

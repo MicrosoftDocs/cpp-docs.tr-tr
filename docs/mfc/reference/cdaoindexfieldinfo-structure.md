@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f671694f6539dd254c5c93bf4c605792e6188a69
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b745a6f450bdf96389f49c673dc623b614e04db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>CDaoIndexFieldInfo Yapısı
 `CDaoIndexFieldInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir dizin alan nesne hakkında bilgiler içerir.  

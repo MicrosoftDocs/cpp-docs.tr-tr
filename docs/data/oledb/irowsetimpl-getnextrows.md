@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6876cd59a36177ce89a196d6fe0ae403d16bfa68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7c4bada3de31e6e856f29d5a930bb94ec5d8b038
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetimplgetnextrows"></a>IRowsetImpl::GetNextRows
 Satırları ardışık olarak önceki konumdan hatırlamak getirir.  
@@ -51,4 +54,4 @@ Satırları ardışık olarak önceki konumdan hatırlamak getirir.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Irowsetımpl sınıfı](../../data/oledb/irowsetimpl-class.md)   
  [Irowsetımpl::addrefrows](../../data/oledb/irowsetimpl-addrefrows.md)   
- [Irowsetımpl::releaserows](../../data/oledb/irowsetimpl-releaserows.md)
+ [IRowsetImpl::ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d75a6692eadaa3a080803b9aa69d30e4b384307a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4601a04932f467be3b63527f12c46f797d9e11d6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="derived-window-classes"></a>Türetilen Pencere Sınıfları
 Doğrudan windows oluşturabilirsiniz [CWnd](../mfc/reference/cwnd-class.md), ya da yeni pencere sınıflarından `CWnd`. Özel windows genellikle oluşturma budur. Bununla birlikte, çoğu windows framework programda kullanılan yerine birinden oluşturulan `CWnd`-çerçeve penceresi sınıfları MFC tarafından sağlanan türetilmiş.  
@@ -47,16 +48,16 @@ Doğrudan windows oluşturabilirsiniz [CWnd](../mfc/reference/cwnd-class.md), ya
  *Görünümler*  
  Görünümleri kullanarak oluşturulur `CWnd`-türetilmiş sınıf [CView](../mfc/reference/cview-class.md) (veya türetilmiş sınıflarından biri). Bir görünüm belgeye eklenir ve belge ve kullanıcı arasında bir aracı gibi davranır. Genellikle bir SDI çerçeve penceresi veya bir MDI alt çerçeve penceresi (ya da bir araç ve/veya bir durum çubuğu tarafından kapsanmayan istemci alanını bölümünü) istemci alanını doldurur alt pencere (MDI alt değil) görülmektedir.  
   
- *İletişim kutuları*  
+ *İletişim Kutuları*  
  İletişim kutuları kullanılarak oluşturulan `CWnd`-türetilmiş sınıf [CDialog](../mfc/reference/cdialog-class.md).  
   
  *Formlar*  
  İletişim kutuları gibi iletişim şablonu kaynaklarına göre form görünümleri sınıflarını kullanarak oluşturulan [Cformview'yu](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md), veya [CDaoRecordView](../mfc/reference/cdaorecordview-class.md).  
   
- *Denetimleri*  
+ *Denetimler*  
  Denetimleri düğmeleri, liste kutuları ve birleşik giriş kutuları gibi türetilen diğer sınıfları kullanılarak oluşturulur `CWnd`. Bkz: [denetim konuları](../mfc/controls-mfc.md).  
   
- *Denetim çubukları*  
+ *Denetim Çubukları*  
  Denetimleri içeren alt öğe pencerelerini. Araç çubukları ve durum çubukları örnekleri içerir. Bkz: [denetim çubukları](../mfc/control-bars.md).  
   
 ## <a name="window-class-hierarchy"></a>Pencere sınıfı hiyerarşisi  
@@ -68,5 +69,5 @@ Doğrudan windows oluşturabilirsiniz [CWnd](../mfc/reference/cwnd-class.md), ya
  [Pencereler oluşturma](../mfc/creating-windows.md) pencere nesneleri ve onların yönettiği windows oluşturmayı açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere nesneleri](../mfc/window-objects.md)
+ [Pencere Nesneleri](../mfc/window-objects.md)
 

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8f8ac22790fa6b94dd19ba7d46cf737824e898f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cdd02ab9c30e641ba7389923062f46dbbed534ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="return-values-c"></a>Dönüş Değerleri (C++)
 64 bit sığması skaler bir dönüş değeri RAX üzerinden döndürülür — bu __m64 türleri içerir. Float, double ve vektör türleri gibi dahil olmayan skaler türleri [__m128](../cpp/m128.md), [__m128i](../cpp/m128i.md), [__m128d](../cpp/m128d.md) XMM0'döndürdü. Kullanılmayan BITS RAX veya XMM0 döndürülen değeri durumunu tanımlanmamıştır.  
@@ -66,4 +67,4 @@ Struct2 func4(int a, double b, int c, float d);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralı](../build/calling-convention.md)
+ [Çağırma Kuralı](../build/calling-convention.md)

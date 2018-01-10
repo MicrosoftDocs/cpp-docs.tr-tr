@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d8c6f58e345669cb1898bc2717a7e42ddc8e2539
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 71e0b1d01e291a1fa48740ccb6389a1b064433b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="control-flags"></a>Denetim Bayrakları
 Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümü aşağıdaki bayraklar denetim yığın ayırma ve raporlama işlemi kullanır. Daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).  
@@ -36,4 +37,4 @@ Microsoft C çalışma zamanı kitaplığı hata ayıklama sürümü aşağıdak
  Bu bayrakların veya /D komut satırı seçeneği ile tanımlanan bir `#define` yönergesi. Ne zaman bayrağı ile tanımlanan `#define`, üst bilgi dosyasını dahil etmeden önce deyimi rutin bildirimleri yönergesi görünmesi gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Global değişkenler ve standart türler](../c-runtime-library/global-variables-and-standard-types.md)
+ [Global Değişkenler ve Standart Türler](../c-runtime-library/global-variables-and-standard-types.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8f6b6b39220f49339faccb4ea6608a0df5fdf6ba
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3465202908cb0ca375ab5dcc77a085b208071f3d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="assertion-and-user-supplied-messages-c"></a>Onaylama ve Kullanıcının Sağladığı İletiler (C++)
 Yardımcı C++ dili destekler üç hata işleme mekanizmaları uygulamanızda hata ayıklama: [#error yönergesi](../preprocessor/hash-error-directive-c-cpp.md), [static_assert](../cpp/static-assert.md) anahtar sözcüğü ve [assert makrosu, _assert, _ wassert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu. Hata iletileri üç mekanizma vermek ve ayrıca test iki yazılım onaylar. Bir yazılım onaylama programınızdaki belirli bir noktada doğru olması için beklediğiniz bir koşulu belirtir. Derleme zamanı onaylama başarısız olursa, derleyici bir tanılama iletisi ve derleme hatası verir. Çalışma zamanı onaylama başarısız olursa, işletim sisteminin bir tanılama iletisi yayınlar ve uygulamanızı kapatır.  
@@ -44,4 +45,4 @@ Yardımcı C++ dili destekler üç hata işleme mekanizmaları uygulamanızda ha
  [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)   
  [static_assert](../cpp/static-assert.md)   
  [_Statıc_assert makrosu](../c-runtime-library/reference/static-assert-macro.md)   
- [Şablonları](../cpp/templates-cpp.md)
+ [Şablonlar](../cpp/templates-cpp.md)

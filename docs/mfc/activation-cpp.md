@@ -29,11 +29,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 678d8dbed5d8ba659a6c0a33752f28b3e2d2c61b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70017721fb59fa0c6d18d568546d9618257328b5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activation-c"></a>Etkinleştirme (C++)
 Bu makalede visual OLE öğelerini düzenleme etkinleştirme rol açıklanmaktadır. Bir kullanıcı bir OLE öğesi bir kapsayıcı belgede katıştırılmış içeren sonra kullanılacak gerekebilir. Bunu yapmak için bu öğeyi etkinleştirir öğesi kullanıcı çift tıklamalar. Etkinleştirme için en sık rastlanan etkinlik düzenliyor. Düzenleme için etkinleştirildiğinde birçok geçerli OLE öğeleri, menüleri ve araç çubuklarını öğesini oluşturan sunucu uygulamaya ait olanlar yansıtacak şekilde değiştirmek için geçerli çerçeve penceresi neden. Olarak yerinde etkinleştirme, bilinen bu davranış, kapsayıcı belgenin penceresi ayrılmadan bir bileşik belge katıştırılmış herhangi bir öğeye düzenlemesine olanak tanır.  
@@ -54,5 +55,5 @@ Bu makalede visual OLE öğelerini düzenleme etkinleştirme rol açıklanmaktad
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE](../mfc/ole-in-mfc.md)   
  [Kapsayıcıları](../mfc/containers.md)   
- [Sunucuları](../mfc/servers.md)
+ [Sunucular](../mfc/servers.md)
 

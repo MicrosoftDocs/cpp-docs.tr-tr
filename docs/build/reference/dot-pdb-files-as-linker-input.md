@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a2f99bef901a09298404eabfe36f39bd1dd2b6bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5acdc01a58cf0d501be5947cddf710d1b7c6d18
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pdb-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Pdb Dosyaları
 (.Obj) dosyaları / zi seçeneğini kullanarak derlenmiş program veritabanı (PDB) adını içeren nesne. Bağlayıcı için nesnenin PDB dosya adı belirtmeyin; BAĞLANTI katıştırılmış adı gerekirse PDB bulmak için kullanır. Bu kitaplıkta bulunan debuggable nesneler için de geçerlidir; PDB debuggable kitaplık için kitaplık birlikte bağlayıcı için kullanılabilir olmalıdır.  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [LINK giriş dosyaları](../../build/reference/link-input-files.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

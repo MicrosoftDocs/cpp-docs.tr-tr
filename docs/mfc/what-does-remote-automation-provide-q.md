@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6766b2fcc5d277b86f979252bf22e6ae343e608e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4a82b26a1e6c208a584dfd19ebfd4530b4bdf76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-does-remote-automation-provide"></a>Uzaktan Otomasyon Neler Sağlar?
 Uzak Otomasyon sağlar çağrılacak programları `IDispatch` başka bir makineden uygulamalarında. Otomasyon tarafından özellikle gereken diğer arabirimleri de destekler **IEnumVARIANT** koleksiyonu desteği. Herhangi bir COM arabirimi dağıtma kabiliyeti sağlamaz (dışında **IUnknown**, Elbette) ve isteğe bağlı olarak normal Otomasyon gibi Automation tarafından desteklenen veri türleri için sıralama desteği içerir.  
@@ -29,4 +30,4 @@ Uzak Otomasyon sağlar çağrılacak programları `IDispatch` başka bir makined
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzaktan Otomasyon nerelerde uygundur](where-does-remote-automation-fit-in-q.md)   
- [DCOM geçmişi](../mfc/history-of-dcom.md)
+ [DCOM Geçmişi](../mfc/history-of-dcom.md)

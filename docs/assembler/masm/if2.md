@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d2b843b48d8b2293cd7fbcfb0614b8fa08b3b786
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e07d70385df624c69526ce90a743aa15d30bf5fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="if2"></a>IF2
 **Eğer** blok varsa her derleme geçişi üzerinde hesaplanan **seçeneği: SETIF2** olan **doğru**.  
@@ -37,4 +38,4 @@ expression
  Bkz: [IF](../../assembler/masm/if-masm.md) tam sözdizimi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

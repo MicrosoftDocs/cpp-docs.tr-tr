@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a848e0b995aa138c68344f80123c94a013d82f73
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ffe046a281bbbbefc251b48df55ecd275515e60
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT Yerine VERIFY Kullanma
 Hata ayıklama sürümü, MFC Uygulama çalıştırdığınızda, olduğunu herhangi bir sorun varsayalım. Ancak, aynı uygulama sürümünü kilitlenmeler, hatalı sonuçlar döndürür ve/veya başka bir anormal davranışı sergiler.  
@@ -82,4 +83,4 @@ free( buf );
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın derlemesi sorunlarını giderme](../../build/reference/fixing-release-build-problems.md)
+ [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

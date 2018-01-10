@@ -23,11 +23,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b5abf6726e2ffc5e45d23929dc52b06efcdffc80
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 653ceb32d2f79a420d71d48cd065371a3fd6446a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="carrayrowsetmnrowsread"></a>CArrayRowset::m_nRowsRead
 Zaten okuma satır kümesinde satır sayısını içerir.  
@@ -44,4 +47,4 @@ ULONG m_nRowsRead;
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CArrayRowset sınıfı](../../data/oledb/carrayrowset-class.md)
+ [CArrayRowset Sınıfı](../../data/oledb/carrayrowset-class.md)

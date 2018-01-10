@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 293be59e15ca91254cad520a6d7fbf84410ed8e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 0ff7261735149abb8db607c5fc0cd4aa837fdfd7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handlet-class"></a>HandleT Sınıfı
 Bir tanıtıcı nesneyi temsil eder.  
@@ -50,35 +53,35 @@ class HandleT;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[HandleT::HandleT Oluşturucusu](../windows/handlet-handlet-constructor.md)|HandleT sınıfı yeni bir örneğini başlatır.|  
-|[HandleT:: ~ HandleT yok Edicisi](../windows/handlet-tilde-handlet-destructor.md)|HandleT sınıfı örneği deinitializes.|  
+|[HandleT::~HandleT Yıkıcısı](../windows/handlet-tilde-handlet-destructor.md)|HandleT sınıfı örneği deinitializes.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HandleT::Attach yöntemi](../windows/handlet-attach-method.md)|Belirtilen tanıtıcı geçerli HandleT nesnesi ile ilişkilendirir.|  
-|[HandleT::Close yöntemi](../windows/handlet-close-method.md)|Geçerli HandleT nesnesini kapatır.|  
-|[HandleT::Detach yöntemi](../windows/handlet-detach-method.md)|Temel alınan tutamacını geçerli HandleT nesnesinden keser.|  
-|[HandleT::Get yöntemi](../windows/handlet-get-method.md)|Temel alınan tanıtıcı değerini alır.|  
-|[Handlet::IsValid yöntemi](../windows/handlet-isvalid-method.md)|Geçerli HandleT nesne bir tanıtıcı temsil edip etmediğini gösterir.|  
+|[HandleT::Attach Metodu](../windows/handlet-attach-method.md)|Belirtilen tanıtıcı geçerli HandleT nesnesi ile ilişkilendirir.|  
+|[HandleT::Close Metodu](../windows/handlet-close-method.md)|Geçerli HandleT nesnesini kapatır.|  
+|[HandleT::Detach Metodu](../windows/handlet-detach-method.md)|Temel alınan tutamacını geçerli HandleT nesnesinden keser.|  
+|[HandleT::Get Metodu](../windows/handlet-get-method.md)|Temel alınan tanıtıcı değerini alır.|  
+|[HandleT::IsValid Metodu](../windows/handlet-isvalid-method.md)|Geçerli HandleT nesne bir tanıtıcı temsil edip etmediğini gösterir.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Handlet::ınternalclose yöntemi](../windows/handlet-internalclose-method.md)|Geçerli HandleT nesnesini kapatır.|  
+|[HandleT::InternalClose Metodu](../windows/handlet-internalclose-method.md)|Geçerli HandleT nesnesini kapatır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HandleT::operator = işleci](../windows/handlet-operator-assign-operator.md)|Belirtilen HandleT nesnenin değerini geçerli HandleT nesneye taşır.|  
+|[HandleT::operator= İşleci](../windows/handlet-operator-assign-operator.md)|Belirtilen HandleT nesnenin değerini geçerli HandleT nesneye taşır.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HandleT::handle_ veri üyesi](../windows/handlet-handle-data-member.md)|HandleT nesnesi tarafından temsil edilen tanıtıcıyı içerir.|  
+|[HandleT::handle_ Veri Üyesi](../windows/handlet-handle-data-member.md)|HandleT nesnesi tarafından temsil edilen tanıtıcıyı içerir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HandleT`  
@@ -89,4 +92,4 @@ class HandleT;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

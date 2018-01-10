@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c67ed88a395b6d688fdc753ed45f08fd5b41925c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c4dd1773e74334f342ebb7e3cd64b68e6bab2b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 Sınıfları ve verileri paralel donanımda C++ kod yürütmeyi hızlandırmak işlevleri sağlar. Daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](../cpp-amp-overview.md)  
@@ -36,31 +37,31 @@ namespace Concurrency;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CONCURRENCY::Direct3D Namespace](concurrency-direct3d-namespace.md)|D3D birlikte çalışabilirlik desteği işlevleri sağlar. İşlem AMP kodda D3D kaynaklarının sorunsuz kullanımını ve Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynaklarının kullanımını etkinleştirir. Artımlı olarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanmak için C++ AMP kullanabilirsiniz.|  
-|[CONCURRENCY::fast_math Namespace](concurrency-fast-math-namespace.md)|İşlevlerini `fast_math` ad alanı C99 uyumlu değildir. Yalnızca tek duyarlıklı sürümleri her işlev sağlanır. Bu işlevler karşılık gelen işlevlerde daha hızlıdır DirectX iç işlevleri kullanmak `precise_math` ad alanı ve Hızlandırıcı genişletilmiş çift duyarlıklı desteği gerektirmez, ancak daha az kesin. Her işlev C99 koduyla kaynak düzeyi uyumluluk için iki sürümü vardır; Her iki sürümünü alın ve tek duyarlıklı değerleri döndürür.|  
-|[CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)|Türler ve tasarlanmış işlevler için grafik programlamaya sağlar.|  
-|[CONCURRENCY::precise_math Namespace](concurrency-precise-math-namespace.md)|İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her işlevi tek duyarlıklı ve çift duyarlıklı sürümleri dahil edilir. Bu işlevler — bu tek duyarlıklı işlevler içerir — Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir.|  
+|[Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)|D3D birlikte çalışabilirlik desteği işlevleri sağlar. İşlem AMP kodda D3D kaynaklarının sorunsuz kullanımını ve Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynaklarının kullanımını etkinleştirir. Artımlı olarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanmak için C++ AMP kullanabilirsiniz.|  
+|[Concurrency::fast_math Ad Alanı](concurrency-fast-math-namespace.md)|İşlevlerini `fast_math` ad alanı C99 uyumlu değildir. Yalnızca tek duyarlıklı sürümleri her işlev sağlanır. Bu işlevler karşılık gelen işlevlerde daha hızlıdır DirectX iç işlevleri kullanmak `precise_math` ad alanı ve Hızlandırıcı genişletilmiş çift duyarlıklı desteği gerektirmez, ancak daha az kesin. Her işlev C99 koduyla kaynak düzeyi uyumluluk için iki sürümü vardır; Her iki sürümünü alın ve tek duyarlıklı değerleri döndürür.|  
+|[Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)|Türler ve tasarlanmış işlevler için grafik programlamaya sağlar.|  
+|[Concurrency::precise_math Ad Alanı](concurrency-precise-math-namespace.md)|İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her işlevi tek duyarlıklı ve çift duyarlıklı sürümleri dahil edilir. Bu işlevler — bu tek duyarlıklı işlevler içerir — Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir.|  
   
 ### <a name="classes"></a>Sınıflar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Hızlandırıcı sınıfı](accelerator-class.md)|Bir fiziksel DP iyileştirilmiş işlem düğümünde bir soyutlamasını temsil eder.|  
-|[accelerator_view sınıfı](accelerator-view-class.md)|C++ AMP verileri paralel Hızlandırıcı üzerinde bir sanal cihaz soyutlama temsil eder.|  
-|[accelerator_view_removed sınıfı](accelerator-view-removed-class.md)|Windows zaman aşımı-algılama-ve-kurtarma mekanizması nedeniyle bir temel alınan DirectX araması başarısız olmadığında oluşan özel durum.|  
-|[array sınıfı](array-class.md)|Veri toplama üzerinde bir `accelerator_view` kılavuz etki alanındaki. Değişkenleri, bir kılavuz etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken bazı C++ türüne karşılık gelen bir değer içerir.|  
-|[array_view sınıfı](array-view-class.md)|Bir dizi verileri görünüme temsil eden\<T, N >.|  
-|[completion_future sınıfı](completion-future-class.md)|Karşılık gelen bir gelecekteki bir C++ AMP zaman uyumsuz işlemi temsil eder.|  
-|[Extent sınıfı](extent-class.md)|Vektör 0 olan bir kaynağı olan bir N boyutlu alanı sınırları belirtin N tamsayı değerleri temsil eder. Koordinat vektör değerleri en önemli için en az önemli sıralanır. Örneğin, Kartezyen 3 boyutlu alanında ölçüde vektör (7,5,3) 7, 0'dan y koordinat aralıkları 5, 0'dan z koordinatı aralıkları ve 0 ile 3 x koordinatını değişen bir alanı temsil eder.|  
-|[index sınıfı](index-class.md)|N boyutlu bir dizin noktası tanımlar.|  
-|[invalid_compute_domain sınıfı](invalid-compute-domain-class.md)|Çalışma zamanı sırasında belirtilen işlem etki alanı kullanarak bir çekirdek başlatılamıyor olmadığında oluşan özel durum `parallel_for_each` çağrısı site.|  
-|[out_of_memory sınıfı](out-of-memory-class.md)|Bir yöntem sistem ya da aygıt bellek yetersizliği nedeniyle başarısız olmadığında oluşan özel durum.|  
-|[runtime_exception sınıfı](runtime-exception-class.md)|C++ AMP Kitaplığı'nda özel durumlar için temel türü.|  
-|[tile_barrier sınıfı](tile-barrier-class.md)|Yalnızca sistem tarafından creatable ve geçirilir bir yetenek sınıfı bir döşeli `parallel_for_each` parçası olarak lambda `tiled_index` parametresi. Bir yöntem sağlar `wait()`, amacı olan iş parçacığı grubu (döşeme) çalışan iş parçacıklarının yürütülmesine eşitlenecek.|  
-|[tiled_extent sınıfı](tiled-extent-class.md)|A `tiled_extent` nesne bir `extent` tek boyutlu, iki boyutlu ya da üç boyutlu döşemesine ölçüde alanı subdivides nesne bir ile üç boyut.|  
-|[tiled_index sınıfı](tiled-index-class.md)|Bir dizine sağlayan bir `tiled_grid` nesnesi. Bu sınıf öğesine yerel bölmesi kaynağa göreli ve genel kaynağa göreli erişmek için özellikler vardır.|  
-|[uninitialized_object sınıfı](uninitialized-object-class.md)|Başlatılmamış bir nesneye kullanıldığında oluşan özel durum.|  
-|[unsupported_feature sınıfı](unsupported-feature-class.md)|Desteklenmeyen bir özellik kullanıldığında oluşan özel durum.|  
+|[accelerator Sınıfı](accelerator-class.md)|Bir fiziksel DP iyileştirilmiş işlem düğümünde bir soyutlamasını temsil eder.|  
+|[accelerator_view Sınıfı](accelerator-view-class.md)|C++ AMP verileri paralel Hızlandırıcı üzerinde bir sanal cihaz soyutlama temsil eder.|  
+|[accelerator_view_removed Sınıfı](accelerator-view-removed-class.md)|Windows zaman aşımı-algılama-ve-kurtarma mekanizması nedeniyle bir temel alınan DirectX araması başarısız olmadığında oluşan özel durum.|  
+|[array Sınıfı](array-class.md)|Veri toplama üzerinde bir `accelerator_view` kılavuz etki alanındaki. Değişkenleri, bir kılavuz etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken bazı C++ türüne karşılık gelen bir değer içerir.|  
+|[array_view Sınıfı](array-view-class.md)|Bir dizi verileri görünüme temsil eden\<T, N >.|  
+|[completion_future Sınıfı](completion-future-class.md)|Karşılık gelen bir gelecekteki bir C++ AMP zaman uyumsuz işlemi temsil eder.|  
+|[extent Sınıfı](extent-class.md)|Vektör 0 olan bir kaynağı olan bir N boyutlu alanı sınırları belirtin N tamsayı değerleri temsil eder. Koordinat vektör değerleri en önemli için en az önemli sıralanır. Örneğin, Kartezyen 3 boyutlu alanında ölçüde vektör (7,5,3) 7, 0'dan y koordinat aralıkları 5, 0'dan z koordinatı aralıkları ve 0 ile 3 x koordinatını değişen bir alanı temsil eder.|  
+|[index Sınıfı](index-class.md)|N boyutlu bir dizin noktası tanımlar.|  
+|[invalid_compute_domain Sınıfı](invalid-compute-domain-class.md)|Çalışma zamanı sırasında belirtilen işlem etki alanı kullanarak bir çekirdek başlatılamıyor olmadığında oluşan özel durum `parallel_for_each` çağrısı site.|  
+|[out_of_memory Sınıfı](out-of-memory-class.md)|Bir yöntem sistem ya da aygıt bellek yetersizliği nedeniyle başarısız olmadığında oluşan özel durum.|  
+|[runtime_exception Sınıfı](runtime-exception-class.md)|C++ AMP Kitaplığı'nda özel durumlar için temel türü.|  
+|[tile_barrier Sınıfı](tile-barrier-class.md)|Yalnızca sistem tarafından creatable ve geçirilir bir yetenek sınıfı bir döşeli `parallel_for_each` parçası olarak lambda `tiled_index` parametresi. Bir yöntem sağlar `wait()`, amacı olan iş parçacığı grubu (döşeme) çalışan iş parçacıklarının yürütülmesine eşitlenecek.|  
+|[tiled_extent Sınıfı](tiled-extent-class.md)|A `tiled_extent` nesne bir `extent` tek boyutlu, iki boyutlu ya da üç boyutlu döşemesine ölçüde alanı subdivides nesne bir ile üç boyut.|  
+|[tiled_index Sınıfı](tiled-index-class.md)|Bir dizine sağlayan bir `tiled_grid` nesnesi. Bu sınıf öğesine yerel bölmesi kaynağa göreli ve genel kaynağa göreli erişmek için özellikler vardır.|  
+|[uninitialized_object Sınıfı](uninitialized-object-class.md)|Başlatılmamış bir nesneye kullanıldığında oluşan özel durum.|  
+|[unsupported_feature Sınıfı](unsupported-feature-class.md)|Desteklenmeyen bir özellik kullanıldığında oluşan özel durum.|  
   
 ### <a name="enumerations"></a>Numaralandırmalar  
   

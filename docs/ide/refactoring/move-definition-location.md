@@ -11,11 +11,12 @@ ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb2d07ab7d7434bdf06ddb8f004881289492882a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 838f3d01f5e6d8612948304b80b79cf9c7cb4720
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="move-definition-location"></a>Taşıma tanımı konumu
 **Ne:** hemen bir işlev tanımı ilgili üstbilgi dosyası taşımanıza olanak tanır.

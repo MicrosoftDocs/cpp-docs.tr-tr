@@ -14,14 +14,15 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1ed5731f0b46769ac9f49c34752d8794a0dddc8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0920280f672b1c45d317ade4c592a6b93356fb8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="string-literals-in-primary-expressions"></a>Birincil İfadelerdeki Dize Değişmez Değerleri
 Bir "dize sabit değeri" bir karakter, geniş karakter veya çift tırnak içine alınmış bitişik karakter dizisidir. Dize sabit değerleri veya öğeleri, değişken olmadıkları için atama işleminde bir sol işlenen olamaz. Dize sabit değerinin türü, `char` dizisidir (veya geniş dize sabit değerleri için `wchar_t` dizisidir). İfadelerdeki diziler işaretçilere dönüştürülür. Bkz: [dize değişmez değerleri](../c-language/c-string-literals.md) dizeleri hakkında daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C birincil ifadeler](../c-language/c-primary-expressions.md)
+ [C Birincil İfadeler](../c-language/c-primary-expressions.md)

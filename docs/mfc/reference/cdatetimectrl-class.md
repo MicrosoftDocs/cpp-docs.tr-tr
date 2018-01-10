@@ -51,11 +51,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ced7bfbb2cedd8cad4353cdbb2d5627864de5ad7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3359b506217d2828207e06341fbf1fe53b3c0719
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 Bir tarih ve Saat Seçici denetimini işlevselliği kapsar.  
@@ -535,4 +536,4 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
  [MFC örnek CMNCTRL1](../../visual-cpp-samples.md)   
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CMonthCalCtrl sınıfı](../../mfc/reference/cmonthcalctrl-class.md)
+ [CMonthCalCtrl Sınıfı](../../mfc/reference/cmonthcalctrl-class.md)

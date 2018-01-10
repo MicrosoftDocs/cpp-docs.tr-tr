@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4a17825c9b02d646fc7c73a5809058d39bb2db66
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3a4fc9e9065017e04b6375d1e5a8e336d4366755
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="slider-notification-messages"></a>Kaydırıcı Bildirim İletileri
 Kaydırıcı denetimi kendi üst penceresi kullanıcı eylemlerinin üst göndererek bildirir `WM_HSCROLL` veya `WM_VSCROLL` kaydırıcı denetimi yönünü bağlı olarak iletileri. Bu iletileri işlemek için işleyicileri eklemek `WM_HSCROLL` ve `WM_VSCROLL` üst pencere iletileri. [OnHScroll](../mfc/reference/cwnd-class.md#onhscroll) ve [OnVScroll](../mfc/reference/cwnd-class.md#onvscroll) üye işlevleri, bir bildirim kodu, kaydırıcıyı ve bir işaretçi konumunu geçirilecektir [CSliderCtrl](../mfc/reference/csliderctrl-class.md) nesnesi. İşaretçi türü olduğuna dikkat edin **CScrollBar \***  işaret olsa bile bir `CSliderCtrl` nesnesi. Kaydırıcı denetimi işlemek gerekiyorsa bu işaretçinin typecast gerekebilir.  
@@ -45,5 +46,5 @@ Kaydırıcı denetimi kendi üst penceresi kullanıcı eylemlerinin üst gönder
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSliderCtrl kullanma](../mfc/using-csliderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

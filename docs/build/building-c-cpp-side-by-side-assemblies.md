@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 40b8099a1159514d3ffce8cfeb9b38274c3e68b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c54f0e3b8bceff3daa92ecb3e0ee46d7fbeb666
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ Yan Yana Derlemeleri Oluşturma
 A [yan yana derleme](http://msdn.microsoft.com/library/windows/desktop/ff951640) kaynakları koleksiyonudur — DLL'leri, windows sınıfı, COM sunucuları, tür kitaplıklarının veya arabirimleri grubu — çalışma zamanında kullanılacak bir uygulama için kullanılabilir. DLL'leri derlemelerde yeniden paketleme birincil avantajı, aynı anda birden fazla sürümünü derlemeleri uygulamalar tarafından kullanılabilir ve yüklü hizmet derlemeleri güncelleştirme sürüm durumunda mümkündür olmasıdır.  
@@ -40,4 +41,4 @@ A [yan yana derleme](http://msdn.microsoft.com/library/windows/desktop/ff951640)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dağıtım örnekleri](../ide/deployment-examples.md)   
  [C/C++ yalıtılmış uygulamaları derleme](../build/building-c-cpp-isolated-applications.md)   
- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+ [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

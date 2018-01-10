@@ -40,11 +40,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7e22f2d3c69bf4f0daf38c4f59b416d8d44a431a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ece67a7c2b50423ea9ff4610e638dcdc2b979e14
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 CRT lib dizin, herhangi bir kod değişikliği olmadan belirli CRT özellikleri etkinleştirmek küçük nesne dosyaları sayısını içerir. Bunları kullanmak için bağlayıcı komut satırı eklemek zorunda olduğundan bunlara "bağlantı seçenekleri" denir.  
@@ -69,4 +70,4 @@ CRT lib dizin, herhangi bir kod değişikliği olmadan belirli CRT özellikleri 
 |wsetargv.obj|pwsetargv.obj|Komut satırı bağımsız değişkeni joker karakter genişletmesi sağlar. Bkz: [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

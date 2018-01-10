@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 319a3c3efd838c5741be0c4ecefa8eb4457dd32d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23276e8af752968e9404245b6c27068eeab5be2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="symbols-reference"></a>Semboller Başvurusu
 **Tarih ve saat bilgilerini**  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/24/2017
 |[@CatStr](../../assembler/masm/at-catstr.md)|[@InStr](../../assembler/masm/at-instr.md)|  
 |[@SizeStr](../../assembler/masm/at-sizestr.md)|[@SubStr](../../assembler/masm/at-substr.md)|  
   
-### <a name="miscellaneous"></a>Diğer  
+### <a name="miscellaneous"></a>Çeşitli  
   
 ||||  
 |-|-|-|  
@@ -65,4 +66,4 @@ ms.lasthandoff: 10/24/2017
 |[@WordSize](../../assembler/masm/at-wordsize.md)|||  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+ [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

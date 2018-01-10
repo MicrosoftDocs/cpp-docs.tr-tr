@@ -18,18 +18,19 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25511a531d78e26c752f9694a8f3845d408bdd58
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: d2b4df05d64cb97032477ca50ff4b0ce572829b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="simple-data-type-classes"></a>Basit Veri Türü Sınıfları
 Aşağıdaki sınıflar çizim koordinatları, karakter dizelerini ve saat şifreleyebilir ve uygun tarih bilgilerini C++ söz dizimini kullanın. Bu nesneler, Sınıf Kitaplığı'nda Windows sınıfların üye işlevleri için parametre olarak yaygın olarak kullanılır. Çünkü `CPoint`, `CSize`, ve `CRect` karşılık **noktası**, **BOYUTU**, ve `RECT` yapıları, sırasıyla, Windows SDK'ın bu nesnelerin kullanabilirsiniz Bu C dil yapıları kullanabilirsiniz her yerde C++ sınıfları. Üye işlevlerini yararlı arabirimlerde sınıflar sağlar. `CStringT`çok esnek dinamik karakter dizelerini sağlar. `CTime`, `COleDateTime`, `CTimeSpan`, ve **COleTimeSpan** saat ve tarih değerleri temsil eder. Makaleyi bu sınıfları hakkında daha fazla bilgi için bkz: [tarih ve saat](../atl-mfc-shared/date-and-time.md).  
   
  İle başlayan sınıfları "**COle**" encapsulations OLE tarafından sağlanan veri türleri şunlardır. Bu veri türleri Windows programlarında diğer OLE özellikleri kullanılıp bağımsız olarak kullanılabilir.  
   
- [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)  
+ [CStringT Sınıfı](../atl-mfc-shared/reference/cstringt-class.md)  
  Karakter dizelerini içerir.  
   
  [CTime](../atl-mfc-shared/reference/ctime-class.md)  

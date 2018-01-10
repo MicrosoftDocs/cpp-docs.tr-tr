@@ -33,11 +33,12 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6378b7a170db4c37d38007236188428de904845d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e8cc4e9158ae9ff2ef6fd4d48483aa5a75dd9617
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cautohidedocksite-class"></a>CAutoHideDockSite sınıfı
 `CAutoHideDockSite` Genişletir [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md) otomatik gizleme uygulamak için bölmeleri sabitleyin.  
@@ -239,4 +240,4 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md)
+ [CDockSite Sınıfı](../../mfc/reference/cdocksite-class.md)

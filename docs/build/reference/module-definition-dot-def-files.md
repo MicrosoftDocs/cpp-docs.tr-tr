@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 15dbdfcd1074b32e2a707616571484db3ced9d2a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 49f5eb5b75bad22b59cb4fbb98554bbfd44d13b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="module-definition-def-files"></a>Modül-Tanımlama (.Def) Dosyaları
 Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikler ve diğer bilgileri bağlanması programı hakkında bilgiler sağlar. .Def dosyası DLL oluştururken kullanışlıdır. Olduğundan [bağlayıcı seçenekleri](../../build/reference/linker-options.md) kullanılabilecek modül tanımlama deyimleri yerine .def dosyaları genellikle gerekli değildir. Aynı zamanda [__declspec(dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) belirtmek için bir yol işlevleri verdi.  
@@ -34,13 +35,13 @@ Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikle
   
  Daha fazla bilgi edinmek için aşağıdaki bölümlere bakın:  
   
--   [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)  
+-   [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)  
   
--   [DIŞARI AKTARMA](../../build/reference/exports.md)  
+-   [EXPORTS](../../build/reference/exports.md)  
   
 -   [HEAPSIZE](../../build/reference/heapsize.md)  
   
--   [KİTAPLIĞI](../../build/reference/library.md)  
+-   [LIBRARY](../../build/reference/library.md)  
   
 -   [ADI](../../build/reference/name-c-cpp.md)  
   
@@ -48,7 +49,7 @@ Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikle
   
 -   [STACKSIZE](../../build/reference/stacksize.md)  
   
--   [SAPLAMA](../../build/reference/stub.md)  
+-   [STUB](../../build/reference/stub.md)  
   
 -   [SÜRÜM](../../build/reference/version-c-cpp.md)  
   
@@ -56,4 +57,4 @@ Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikle
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)  
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  

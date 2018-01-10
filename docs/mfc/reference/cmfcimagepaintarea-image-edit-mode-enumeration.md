@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd59e80dfd019627c0ebe88e116e225f92e3a8ec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 22e3b00bed830052c2abbc988152f4a14f1267ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcimagepaintareaimageeditmode-enumeration"></a>CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırması
 Görüntü Düzenleyicisi iletişim kutusunda bir görüntüsünü değiştirmek için kullandığınız bir çizim modunu belirtir.  
@@ -63,4 +64,4 @@ enum IMAGE_EDIT_MODE
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCImagePaintArea sınıfı](../../mfc/reference/cmfcimagepaintarea-class.md)   
- [CMFCImageEditorDialog sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)
+ [CMFCImageEditorDialog Sınıfı](../../mfc/reference/cmfcimageeditordialog-class.md)

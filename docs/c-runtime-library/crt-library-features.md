@@ -28,11 +28,12 @@ caps.latest.revision: "32"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ed41372637e9ee68db087fbe0ad532d9e6bb4935
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 50ca3fd6d60e7fecf84c81d14c859f5b2f51e120
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili derleyici seçenekleri ve önişlemci yönergeleri oluşturan çeşitli .lib dosyaları anlatılmaktadır.  
@@ -44,7 +45,7 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
  Aşağıdaki tabloda UCRT uygulamak kitaplıkları listeler.  
   
-|Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Önişlemci yönergeleri|  
+|Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|--------------------|---------------------|------------|-----------------------------|  
 |libucrt.lib|Yok.|Statik olarak UCRT kodunuza bağlar.|**/ MT**|_MT|  
 |libucrtd.lib|Yok.|Statik bağlama için UCRT sürümü hata ayıklama. Değil yeniden dağıtılabilir.|**/ MTd**|_DEBUG, _MT|  
@@ -55,7 +56,7 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
  Bu tablo vcruntime kitaplığı uygulamak kitaplıkları listeler.  
   
-|Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Önişlemci yönergeleri|  
+|Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|--------------------|---------------------|------------|-----------------------------|  
 |libvcruntime.lib|Yok.|Statik olarak kodunuza bağlı.|**/ MT**|_MT|  
 |libvcruntimed.lib|Yok.|Statik bağlama için sürüm hata ayıklama. Değil yeniden dağıtılabilir.|**/ MTd**|_MT, _DEBUG|  
@@ -66,7 +67,7 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
  Bu tablo CRT başlatma ve sonlandırma uygulamak kitaplıkları listeler.  
   
-|Kitaplığı|Özellikler|Seçenek|Önişlemci yönergeleri|  
+|Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|---------------------|------------|-----------------------------|  
 |Libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/ MT**|_MT|  
 |libcmtd.lib|Statik olarak yerel CRT başlatma hata ayıklama sürümü bağlar. Değil yeniden dağıtılabilir.|**/ MTd**|_DEBUG, _MT|  
@@ -95,7 +96,7 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
 ## <a name="c-standard-library"></a>C++ Standart Kitaplığı  
   
-|C++ Standart Kitaplığı|Özellikler|Seçenek|Önişlemci yönergeleri|  
+|C++ Standart Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |----------------------------|---------------------|------------|-----------------------------|  
 |LIBCPMT. LIB|Birden çok iş parçacıklı, statik bağlantı|**/ MT**|_MT|  
 |MSVCPRT. LIB|Birden çok iş parçacıklı, dinamik bağlantı (kitaplığı içeri aktarmak için MSVCP\<sürüm > .dll)|**/MD**|_MT, _DLL|  
@@ -114,4 +115,4 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
  Programınızı CRT birden fazla sürümünü kullanıyorsanız, bazı dikkatli DLL sınırlarından belirli CRT nesnelerini (örneğin, dosya tanıtıcısı, yerel ve ortam değişkenleri) geçirilirken gereklidir. İlgili sorunlar hakkında daha fazla bilgi ve bunların nasıl çözüleceği için bkz: [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)
+ [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)

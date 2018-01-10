@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bd43a5252481a8b21220dac14248ac5ae9f01d09
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e1d50162989e5148cd0755afb48f4413ce51269
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltseealsogt-visual-c"></a>&lt;SeeAlso&gt; (Visual C++)
 \<Seealso > etiketi bir Ayrıca bkz. bölümünde görünen isteyebilirsiniz metin belirtmenize olanak sağlar. Kullanım [ \<bkz >](../ide/see-visual-cpp.md) metin içindeki bir bağlantıdan belirtmek için.  
@@ -75,4 +76,4 @@ public ref struct B {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

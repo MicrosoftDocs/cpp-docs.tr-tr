@@ -23,11 +23,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e3211368f02ab043340c8c79cff4ed2636595a41
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: beae44941b2982125a8c52b8ebe83d5591afea04
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cstreamrowsetclose"></a>CStreamRowset::Close
 Sürümler [ISequentialStream](https://msdn.microsoft.com/en-us/library/ms718035.aspx) sınıfında arabirim işaretçisi.  
@@ -44,4 +47,4 @@ void Close( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CStreamRowset sınıfı](../../data/oledb/cstreamrowset-class.md)
+ [CStreamRowset Sınıfı](../../data/oledb/cstreamrowset-class.md)

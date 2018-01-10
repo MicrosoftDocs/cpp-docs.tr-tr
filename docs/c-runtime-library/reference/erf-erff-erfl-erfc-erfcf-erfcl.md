@@ -38,11 +38,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: de987b726a4a25fa3bc23bbb569e7c9a9138de2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54256f68263ea966466c9c038f429ab4a73fc868
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="erf-erff-erfl-erfc-erfcf-erfcl"></a>erf, erff, erfl, erfc, erfcf, erfcl
 Hata işlevini veya bir değer Tamamlayıcı hata işlevini hesaplar.  
@@ -107,4 +108,4 @@ long double erfcl(
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)
+ [Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)

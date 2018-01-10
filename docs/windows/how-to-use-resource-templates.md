@@ -21,11 +21,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a072fb02c1821e2174671465d570944078b08f7a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9bace4f6d8835d9aece7679fa1bb89af3d7a20ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
 Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir kaynaktır. Bir kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar veya standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynak grupları geliştirmede zaman kazandırır. Örneğin, bir Yardım düğmesi ve bir şirket logosu, bir simge birkaç iletişim kutularında eklemek isteyebilirsiniz. Böylece hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturun ve logo ve Yardım düğmesini özelleştirme.  
@@ -80,4 +83,4 @@ Kaynak şablon bir .rct dosyası olarak kaydettiğiniz özelleştirilmiş bir ka
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

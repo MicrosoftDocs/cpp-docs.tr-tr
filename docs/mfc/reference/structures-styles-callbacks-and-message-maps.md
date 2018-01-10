@@ -19,30 +19,31 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c3531ab24116cd64778f43604fa6196b9ffd67f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c341f208d9aa54e60568b066f462db65b9172394
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri
 Bu bölümde yapılar, Stiller ve Microsoft Foundation Class Kitaplığı tarafından kullanılan geri çağırma işlevleri belgeler ve MFC ileti eşlemeleri.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [MFC tarafından kullanılan yapılar](../../mfc/reference/structures-used-by-mfc.md)  
+ [MFC Tarafından Kullanılan Yapılar](../../mfc/reference/structures-used-by-mfc.md)  
  Çeşitli üye işlevleri adlı yapıları bağlantılar sağlar.  
   
- [MFC tarafından kullanılan stiller](../../mfc/reference/styles-used-by-mfc.md)  
+ [MFC Tarafından Kullanılan Stiller](../../mfc/reference/styles-used-by-mfc.md)  
  MFC nesneleri oluşturulurken kullanılan stiller bağlantılar sağlar.  
   
- [MFC tarafından kullanılan geri çağırma işlevleri](../../mfc/reference/callback-functions-used-by-mfc.md)  
+ [MFC Tarafından Kullanılan Geri Çağırma İşlevleri](../../mfc/reference/callback-functions-used-by-mfc.md)  
  MFC Kitaplığı'nda görünen geri arama işlevleri bağlantılar sağlar.  
   
  [İleti eşlemeleri](../../mfc/reference/message-maps-mfc.md)  
  İleti eşleme makroları açıklar ve `CWnd` ileti eşleme girdileri.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Sınıf kitaplığına genel bakış](../../mfc/class-library-overview.md)  
+ [Sınıf Kitaplığına Genel Bakış](../../mfc/class-library-overview.md)  
  MFC Kitaplığı kategoriye göre sınıflarda listeler.  
   
  [MFC örnekleri](../../visual-cpp-samples.md)  

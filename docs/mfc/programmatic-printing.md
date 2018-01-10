@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 037e32f5284ab27c072f09c8965009eca1d0e7c7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 927a5d9b4bea41157c8cfac6f3dbfe42fc323bb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="programmatic-printing"></a>Program Aracılığıyla Yazdırma
 OLE sağlanan kalıcı belgeleri benzersiz şekilde tanımlamak için anlamına gelir (**GetClassFile**) ve bunların ilişkili koda yükleyin (`CoCreateInstance`, **QueryInterface(IID_IPersistFile)**, **QueryInterface(IID_IPersistStorage)**, **IPersistFile::Load**, ve **IPersistStorage::Load**). Etkin belge kapsaması (OLE 2.0 ilk olarak gönderilmeyen varolan bir OLE tasarımı kullanarak) daha fazla yazdırma belgeleri etkinleştirmek için bir temel standart yazdırma arabirimi tanıtır `IPrint`, yükleyebilir herhangi bir nesne aracılığıyla genel olarak kullanılabilir kalıcı durum belge türü. Etkin belge her görünümünü isteğe bağlı olarak destekleyebilir **IPrint** bu yetenekleri sağlamak için arabirim.  
@@ -79,5 +80,5 @@ interface IContinueCallback : IUnknown
  **FContinue**, ancak bağlamında kullanılmaz **IPrint::Print**; bunun yerine, kullanan yazdırma **IContinueCallback::FContinuePrint**. Herhangi bir yazdırma nesnesi düzenli aralıklarla çağırmalıdır **FContinuePrinting** yazdırma sayfa sayısı, yazdırılmasını sayfa sayısını ve istemci olabilir yazdırma durumu açıklayan ek bir dize geçirme Kullanıcı (örneğin, "19 sayfa 5") görüntülemek seçin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsayıcıları](../mfc/active-document-containers.md)
+ [Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
 

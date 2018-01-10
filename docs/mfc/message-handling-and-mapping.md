@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 64a99bad7d6bc7fa937100cc5bf864e968572402
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e6c13ed0bb19ef1ed2864378e151c6be8d98887
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-handling-and-mapping"></a>İleti İşleme ve Eşleme
 Bu makale ailesi iletiler ve komutlar MFC çerçevesi tarafından nasıl işleneceğini ve bağlamadan nasıl işleyici işlevlerini açıklar.  
@@ -36,24 +37,24 @@ Bu makale ailesi iletiler ve komutlar MFC çerçevesi tarafından nasıl işlene
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [İletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md)  
+-   [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)  
   
 -   [Bir ileti işleyicisini framework çağırması](../mfc/how-the-framework-calls-a-handler.md)  
   
--   [Framework'ün ileti eşlemelerini araması](../mfc/how-the-framework-searches-message-maps.md)  
+-   [Framework'ün İleti Eşlemelerini Araması](../mfc/how-the-framework-searches-message-maps.md)  
   
--   [İleti işleyici işlevlerini bildirme](../mfc/declaring-message-handler-functions.md)  
+-   [İleti İşleyici İşlevlerini Bildirme](../mfc/declaring-message-handler-functions.md)  
   
--   [İletileri işlevlere eşleme](../mfc/reference/mapping-messages-to-functions.md)  
+-   [İletileri İşlevlere Eşleme](../mfc/reference/mapping-messages-to-functions.md)  
   
 -   [Durum çubuğunda komut bilgilerini görüntüleme](../mfc/how-to-display-command-information-in-the-status-bar.md)  
   
 -   [Dinamik güncelleştirme kullanıcı arabirimi nesneleri](../mfc/how-to-update-user-interface-objects.md)  
   
--   [Nasıl yapılır: bir şablon sınıfı için ileti eşlemesi oluşturma](../mfc/how-to-create-a-message-map-for-a-template-class.md)  
+-   [Nasıl yapılır: Bir Şablon Sınıfı için İleti Eşlemesi Oluşturma](../mfc/how-to-create-a-message-map-for-a-template-class.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../mfc/mfc-concepts.md)   
  [Genel MFC konuları](../mfc/general-mfc-topics.md)   
  [CWnd sınıfı](../mfc/reference/cwnd-class.md)   
- [CCmdTarget sınıfı](../mfc/reference/ccmdtarget-class.md)
+ [CCmdTarget Sınıfı](../mfc/reference/ccmdtarget-class.md)

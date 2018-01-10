@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 147740635500536155b19179d1440b5740a723df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 655051a2f8e0470f999d0793525bba30761663b1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registers-availability-of-registers"></a>Yazmaçlar: Yazmaçların Kullanılabilirliği
 **ANSI 3.5.1** olduğu nesneleri gerçekten yerleştirilebilen yazmaçları tarafından register depolama sınıfı tanımlayıcısı kullanımını kapsamı  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  Derleyici yazmaç değişkenleri için kullanıcı istekleri dikkate almaz. Bunun yerine, bu seçenek iyileştirirken kendi kolaylaştırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)
+ [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

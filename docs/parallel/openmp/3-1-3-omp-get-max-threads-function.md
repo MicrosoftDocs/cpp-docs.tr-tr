@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e021f0873aa94f53a1218a3278a744a0c7740e65
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13aee27dc04afb8414a89bb8f30a98c8e73fb694
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads İşlevi
 **Omp_get_max_threads** işlevi, en az, paralel bir bölge olmadan, ekip oluşturmak için kullanılacak iş parçacığı sayısı kadar büyük olması garanti bir tamsayı döndürür bir **num_threads** yan tümcesi Bu noktada kodda karşılaştı için yoktu. Biçimi aşağıdaki gibidir:  

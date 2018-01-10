@@ -18,11 +18,14 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd7b35758caaf76904eb3144d22d747c22f02804
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b6927b25d627874f5a3d649099a4ed5e099bc6cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmultimap-stlclr"></a>hash_multimap (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `hash_multimap` bir çift yönlü depolama her tablo girişi öğeleri dizisi bir karma tablosu olarak yönetmek için düğümleri ve tek bir öğede depolama her düğüm listesi bağlı. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -78,7 +81,7 @@ template<typename Key,
 |[hash_multimap::key_compare (STL/CLR)](../dotnet/hash-multimap-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
 |[hash_multimap::key_type (STL/CLR)](../dotnet/hash-multimap-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
 |[hash_multimap::mapped_type (STL/CLR)](../dotnet/hash-multimap-mapped-type-stl-clr.md)|Her anahtar ile ilişkili eşlenen değer türü.|  
-|[hash_multimap::Reference (STL/CLR)](../dotnet/hash-multimap-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[hash_multimap::reference (STL/CLR)](../dotnet/hash-multimap-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[hash_multimap::reverse_iterator (STL/CLR)](../dotnet/hash-multimap-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[hash_multimap::size_type (STL/CLR)](../dotnet/hash-multimap-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
 |[hash_multimap::value_compare (STL/CLR)](../dotnet/hash-multimap-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
@@ -86,15 +89,15 @@ template<typename Key,
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[hash_multimap::Begin (STL/CLR)](../dotnet/hash-multimap-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[hash_multimap::begin (STL/CLR)](../dotnet/hash-multimap-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
 |[hash_multimap::bucket_count (STL/CLR)](../dotnet/hash-multimap-bucket-count-stl-clr.md)|Demet sayar.|  
-|[hash_multimap::Clear (STL/CLR)](../dotnet/hash-multimap-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[hash_multimap::Count (STL/CLR)](../dotnet/hash-multimap-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[hash_multimap::Empty (STL/CLR)](../dotnet/hash-multimap-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[hash_multimap::End (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[hash_multimap::clear (STL/CLR)](../dotnet/hash-multimap-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[hash_multimap::count (STL/CLR)](../dotnet/hash-multimap-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[hash_multimap::empty (STL/CLR)](../dotnet/hash-multimap-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[hash_multimap::end (STL/CLR)](../dotnet/hash-multimap-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
 |[hash_multimap::equal_range (STL/CLR)](../dotnet/hash-multimap-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[hash_multimap::ERASE (STL/CLR)](../dotnet/hash-multimap-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[hash_multimap::Find (STL/CLR)](../dotnet/hash-multimap-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[hash_multimap::erase (STL/CLR)](../dotnet/hash-multimap-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[hash_multimap::find (STL/CLR)](../dotnet/hash-multimap-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[hash_multimap::hash_delegate (STL/CLR)](../dotnet/hash-multimap-hash-delegate-stl-clr.md)|Bir anahtar için karma temsilci kopyalar.|  
 |[hash_multimap::hash_multimap (STL/CLR)](../dotnet/hash-multimap-hash-multimap-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
 |[hash_multimap::insert (STL/CLR)](../dotnet/hash-multimap-insert-stl-clr.md)|Öğeleri ekler.|  
@@ -107,14 +110,14 @@ template<typename Key,
 |[hash_multimap::rehash (STL/CLR)](../dotnet/hash-multimap-rehash-stl-clr.md)|Karma tabloyu yeniden oluşturur.|  
 |[hash_multimap::rend (STL/CLR)](../dotnet/hash-multimap-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[hash_multimap::size (STL/CLR)](../dotnet/hash-multimap-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[hash_multimap::Swap (STL/CLR)](../dotnet/hash-multimap-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[hash_multimap::swap (STL/CLR)](../dotnet/hash-multimap-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[hash_multimap::to_array (STL/CLR)](../dotnet/hash-multimap-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[hash_multimap::upper_bound (STL/CLR)](../dotnet/hash-multimap-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
 |[hash_multimap::value_comp (STL/CLR)](../dotnet/hash-multimap-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[hash_multimap::operator (STL/CLR) =](../dotnet/hash-multimap-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[hash_multimap::operator= (STL/CLR)](../dotnet/hash-multimap-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

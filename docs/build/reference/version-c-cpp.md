@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 059f3bda040257ab58412360cdfbac20869e381d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 63ea65a8e3732ee17cc30b3382aa7ebc56e48f59
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="version-cc"></a>VERSION (C/C++)
 DLL veya bir sayı .exe dosyası başlığına yerleştirin Bağla söyler.  
@@ -34,4 +35,4 @@ VERSION major[.minor]
  Sürüm numarasını belirtmek için eşdeğer bir yolu [sürüm bilgilerini](../../build/reference/version-version-information.md) (/ sürüm) seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

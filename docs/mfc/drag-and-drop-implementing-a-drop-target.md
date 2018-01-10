@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f7ddda020ae290ea07c556d57dbba887bcec0083
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9fc73eb6627e63b8013180b7608633a9ee424c92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="drag-and-drop-implementing-a-drop-target"></a>Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama
 Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma hedefi uygulama bir bırakma kaynağı uygulama değerinden biraz daha fazla iş alır ancak hala oldukça basit bir işlemdir. Bu teknikler OLE olmayan uygulamalar için de geçerlidir.  
@@ -54,4 +55,4 @@ Bu makalede bir bırakma hedefi uygulamanızı nasıl özetlenmektedir. Bırakma
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sürükleme ve bırakma (OLE)](../mfc/drag-and-drop-ole.md)   
- [COleDropTarget sınıfı](../mfc/reference/coledroptarget-class.md)
+ [COleDropTarget Sınıfı](../mfc/reference/coledroptarget-class.md)

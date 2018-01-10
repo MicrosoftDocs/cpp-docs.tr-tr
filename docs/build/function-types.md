@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d43daef2095fb63bd79644c940627754e00e199b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54f2b910062038901578389a9c0a7ab8a2647f3c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-types"></a>İşlev Türleri
 Temel işlevler iki tür vardır. Yığın çerçevesi gerektiren bir işlev çerçeve işlevi çağrılır. Yığın çerçevesi gerektirmeyen bir işlev yaprak işlevi çağrılır.  
@@ -29,4 +30,4 @@ Temel işlevler iki tür vardır. Yığın çerçevesi gerektiren bir işlev çe
  Bir yaprak işlevi tablo girişi gerektirmeyen bir işlevdir. Bu, tüm işlevler çağıramaz ya yığın alanı ayırdığınızdan emin anlamına gelir RSP dahil olmak üzere tüm kalıcı Yazmaçları değişiklik yapamazsınız. Yürütürken yığın hizalanmamış bırakın izin verilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yığın kullanımı](../build/stack-usage.md)
+ [Yığın Kullanımı](../build/stack-usage.md)

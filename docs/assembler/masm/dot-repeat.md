@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e60ae387ec619a0109b322902a4ad40c9ad73f1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46d6502b0fe69a81dd092c97c5d651a32a7fca5a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="repeat"></a>.REPEAT
 Bloğunu yürütülmesi yineler kod oluşturur *deyimleri* kadar `condition` true olur. [. UNTILCXZ](../../assembler/masm/dot-untilcxz.md), CX sıfır, hangi true olur yerine kullanılır [. KADAR](../../assembler/masm/dot-until.md). `condition` İle isteğe bağlı olduğu **. UNTILCXZ**.  
@@ -34,4 +35,4 @@ statements
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

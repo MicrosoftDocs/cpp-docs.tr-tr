@@ -9,10 +9,10 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - IView
-- No header/IView
-- No header/IView::OnActivateView
-- No header/IView::OnInitialUpdate
-- No header/IView::OnUpdate
+- AFXWINFORMS/IView
+- AFXWINFORMS/IView::OnActivateView
+- AFXWINFORMS/IView::OnInitialUpdate
+- AFXWINFORMS/IView::OnUpdate
 dev_langs: C++
 helpviewer_keywords:
 - views [MFC]
@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 144cea65ddfa5153fb117c9570b101a1ce99eb32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4266d8f5ec564dac67d7167c6c9bab4768a0276
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iview-interface"></a>IView arabirimi
 Birkaç yöntemlerini uygular, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) için yönetilen bir denetimin görünüm bildirimleri göndermek için kullanır.  
@@ -84,4 +85,4 @@ Bu işlev görünümünü değişiklikleri yansıtacak şekilde güncelleştirme
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md)   
- [CView sınıfı](../../mfc/reference/cview-class.md)
+ [CView Sınıfı](../../mfc/reference/cview-class.md)

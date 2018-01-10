@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 764721114bb87127c892563211f7fcc85171ea68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e5d43412da21edce2633c17b5a38e4b1b787495
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>Form Tabanlı MFC Uygulaması Oluşturma
 Form, bir kullanıcının erişmek ve veri değişikliği olabilir izin denetimleri ile bir iletişim kutusudur. Kullanıcı form seçimden seçer uygulama geliştirme isteyebilirsiniz. Yaygın olarak, forms tabanlı bir uygulama tarafından tıklatın kullanıcı erişimi formları sağlar **yeni** gelen **dosya** menüsü. Hangi kullanıcılara erişim sağlamaz iletişim tabanlı bir uygulama, bir **yeni** seçeneğini **dosya** menüsünde da form tabanlı bir uygulama dikkate alınır.  
@@ -63,11 +64,11 @@ Form, bir kullanıcının erişmek ve veri değişikliği olabilir izin denetiml
   
 -   [Belge/görünüm mimarisinin alternatifleri](../../mfc/alternatives-to-the-document-view-architecture.md)  
   
--   [Uygulama tasarımı seçimleri](../../mfc/application-design-choices.md)  
+-   [Uygulama Tasarımı Seçimleri](../../mfc/application-design-choices.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)   
  [Form görünümleri](../../mfc/form-views-mfc.md)   
  [Dosya Gezgini stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)   
- [Bir Web tarayıcısı stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
+ [Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)
 

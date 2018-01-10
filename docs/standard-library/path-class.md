@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4221702df42bc82d1a0573f9a8b10252017b282a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 05acbc14af8daec265cf705ac4605e9606cb0696
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="path-class"></a>path Sınıfı
 **Yolu** sınıfı dize türünde bir nesne depolar\_exposition, uygun bir yol adı olarak kullanılması amacıyla burada myname adlı türü. dize\_türüdür basic eşanlamlısı\_dize\<value_type >, burada değer\_Windows altında char veya wchar_t POSIX altında eşanlamlısı türüdür.  

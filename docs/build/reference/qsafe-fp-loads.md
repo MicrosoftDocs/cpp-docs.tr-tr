@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f79a73565a78c8972d9d77b809cd77d774b821f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a9e572c8a4d353aaee4e82e8c7bdc3f719475c03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="qsafefploads"></a>/Qsafe_fp_loads
 Kayan nokta değerlerini tamsayı taşıma yönergeleri gerektirir ve belirli kayan nokta yük iyileştirmeleri devre dışı bırakır.  
@@ -54,4 +55,4 @@ Kayan nokta değerlerini tamsayı taşıma yönergeleri gerektirir ve belirli ka
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71913ede29f3a8e02c319b3c713d2c33bbcb5b8e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 173741ef73cd4bf6426787ef56e8334f504d7c0e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg İşleyicisi
 Komut yönlendirme gerçekleştirmek için her komut hedefi çağırır `OnCmdMsg` dizisindeki sonraki komut hedefinin üye işlevi. Komutu kullanım hedefler `OnCmdMsg` bunlar bir komut işlenip işlenmeyeceğini belirler ve yönlendirmek için başka bir komut hedefinin bunlar yürütemiyorsa.  
@@ -34,5 +35,5 @@ Komut yönlendirme gerçekleştirmek için her komut hedefi çağırır `OnCmdMs
  Varsayılan `CCmdTarget` uyarlamasını `OnCmdMsg` aldığı her komut iletisi için bir işleyici işlevi aramak için ileti eşlemesi komutu hedef sınıfın kullanır — aynı şekilde standart iletilerini aranır. Bir eşleşme bulursa işleyiciyi çağırır. İleti eşleme arama açıklanmıştır içinde [nasıl Framework aramaları ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md)
+ [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

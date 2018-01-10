@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c0765dde0ee0e910fe9bc865f68e0d4edeeb67e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 46a9301904d3293c242ca631c161b7e71304f283
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-regular-expressions-for-simple-matching-ccli"></a>Nasıl yapılır: Basit Eşleştirme için Normal İfadeler Kullanma (C++/CLI)
 Aşağıdaki kod örneği için tam altdizgi eşleşme aramak için normal ifadeler kullanır. Arama statik tarafından gerçekleştirilen <xref:System.Text.RegularExpressions.Regex.IsMatch%2A> yöntemi iki dizeyi giriş olarak alır. Aranacak düzeni saniyedir ve ilk aranacak dizedir.  
@@ -64,4 +67,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
