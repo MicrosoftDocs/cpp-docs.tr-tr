@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fd3e89c4d766d4533e1711119cc63bf6e11a578d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: dc6e08e61f12651f966a2f4a6e75ac654ac8ecf8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorlt-map-stlclr"></a>İşleç&lt;= (map) (STL/CLR)
 Küçük veya buna eşit listesinde karşılaştırma.  
@@ -101,4 +104,4 @@ int main()
  [operator! = (map) (STL/CLR)](../dotnet/operator-inequality-map-stl-clr.md)   
  [İşleç\< (map) (STL/CLR)](../dotnet/operator-less-than-map-stl-clr.md)   
  [operator > = (map) (STL/CLR)](../dotnet/operator-greater-or-equal-map-stl-clr.md)   
- [operator > (map) (STL/CLR)](../dotnet/operator-greater-than-map-stl-clr.md)
+ [operator> (map) (STL/CLR)](../dotnet/operator-greater-than-map-stl-clr.md)
