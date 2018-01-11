@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fdbaf9af73940ab342e915edb475f9f35027eaa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7daa7527c8eea2cfca3b8933b9c3e1f042883e2d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="boolstruct-structure"></a>BoolStruct Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -39,7 +42,7 @@ struct BoolStruct;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[BoolStruct::Member veri üyesi](../windows/boolstruct-member-data-member.md)|Belirleyen bir [ComPtr](../windows/comptr-class.md) , veya bir arabirim nesne ömrü yönetme değil,.|  
+|[BoolStruct::Member Veri Üyesi](../windows/boolstruct-member-data-member.md)|Belirleyen bir [ComPtr](../windows/comptr-class.md) , veya bir arabirim nesne ömrü yönetme değil,.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `BoolStruct`  
@@ -51,4 +54,4 @@ struct BoolStruct;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)   
- [ComPtr::operator Microsoft::WRL::Details::BoolType işleci](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)
+ [ComPtr::operator Microsoft::WRL::Details::BoolType İşleci](../windows/comptr-operator-microsoft-wrl-details-booltype-operator.md)

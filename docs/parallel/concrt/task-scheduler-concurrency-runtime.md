@@ -27,11 +27,12 @@ caps.latest.revision: "42"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 692f02f6ad2d7486c8460d3dae42500f165f60b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf8577b9fcb5ac734ee9eb935688002dbfe162da
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 Belgelerin Bu kısımdaki konular eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nın önemli özelliklerini açıklar. Görev Zamanlayıcısı'nı eşzamanlılık çalışma zamanı kullanan mevcut kodunuzu performansını ince ayarını yapmak istediğinizde kullanışlıdır.  
@@ -56,14 +57,14 @@ Belgelerin Bu kısımdaki konular eşzamanlılık çalışma zamanı Görev Zama
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md)|Zamanlayıcı örnekleri ve nasıl kullanılacağını açıklar `concurrency::Scheduler` ve `concurrency::CurrentScheduler` bunları yönetmek için sınıflar. Zamanlayıcı örnekleri açık zamanlama ilkeleri belirli iş yükleri türleri ile ilişkilendirmek istediğiniz kullanın.|  
-|[Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md)|Zamanlayıcı ilkeleri rolü açıklanmaktadır. Zamanlayıcı görevleri yönettiğinde kullanan stratejisi kontrol etmek istediğinizde Zamanlayıcı ilkeleri kullanın.|  
-|[Zamanlama grupları](../../parallel/concrt/schedule-groups.md)|Zamanlama grupları rolü açıklanmaktadır. İlgili görevleri grubunu zaman yere göre görevleri arasında yüksek derecede Örneğin, gerekirse, kullanım zamanlama grupları aynı işlemci düğümde yürütülen yararlanır.|  
-|[Basit görevler](../../parallel/concrt/lightweight-tasks.md)|Basit görevler rolü açıklanmaktadır. Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için var olan kodu uyum olduğunda yararlıdır.|  
-|[Bağlamları](../../parallel/concrt/contexts.md)|Bağlamı, rolü açıklanmaktadır `concurrency::wait` işlevini ve `concurrency::Context` sınıfı. Ne zaman bağlamları engellemek, engellemesini kaldırmak ve verim veya aşırı abonelik uygulamanızda etkinleştirmek istediğiniz zaman denetime ihtiyacınız olduğunda bu işlevi kullanın.|  
-|[Bellek Yönetimi işlevleri](../../parallel/concrt/memory-management-functions.md)|Açıklar `concurrency::Alloc` ve `concurrency::Free` işlevleri. Bu işlevler bellek ayırma ve eş zamanlı bir biçimde bellek boşaltma olarak performansı artırabilir.|  
+|[Zamanlayıcı Örnekleri](../../parallel/concrt/scheduler-instances.md)|Zamanlayıcı örnekleri ve nasıl kullanılacağını açıklar `concurrency::Scheduler` ve `concurrency::CurrentScheduler` bunları yönetmek için sınıflar. Zamanlayıcı örnekleri açık zamanlama ilkeleri belirli iş yükleri türleri ile ilişkilendirmek istediğiniz kullanın.|  
+|[Scheduler İlkeleri](../../parallel/concrt/scheduler-policies.md)|Zamanlayıcı ilkeleri rolü açıklanmaktadır. Zamanlayıcı görevleri yönettiğinde kullanan stratejisi kontrol etmek istediğinizde Zamanlayıcı ilkeleri kullanın.|  
+|[Zamanlama Grupları](../../parallel/concrt/schedule-groups.md)|Zamanlama grupları rolü açıklanmaktadır. İlgili görevleri grubunu zaman yere göre görevleri arasında yüksek derecede Örneğin, gerekirse, kullanım zamanlama grupları aynı işlemci düğümde yürütülen yararlanır.|  
+|[Basit Görevler](../../parallel/concrt/lightweight-tasks.md)|Basit görevler rolü açıklanmaktadır. Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için var olan kodu uyum olduğunda yararlıdır.|  
+|[Bağlamlar](../../parallel/concrt/contexts.md)|Bağlamı, rolü açıklanmaktadır `concurrency::wait` işlevini ve `concurrency::Context` sınıfı. Ne zaman bağlamları engellemek, engellemesini kaldırmak ve verim veya aşırı abonelik uygulamanızda etkinleştirmek istediğiniz zaman denetime ihtiyacınız olduğunda bu işlevi kullanın.|  
+|[Bellek Yönetimi İşlevleri](../../parallel/concrt/memory-management-functions.md)|Açıklar `concurrency::Alloc` ve `concurrency::Free` işlevleri. Bu işlevler bellek ayırma ve eş zamanlı bir biçimde bellek boşaltma olarak performansı artırabilir.|  
 |[Diğer eşzamanlılık modelleriyle karşılaştırma](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md)|PreEmptive tarafından ve işbirlikçi zamanlama mekanizmaları arasındaki farklar açıklanmaktadır.|  
-|[Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Uygulamalarınızda çeşitli paralel desen, örneğin, paralel algoritmalar kullanmayı açıklar.|  
-|[Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)|Uygulamalarınızda zaman uyumsuz aracılar kullanmayı açıklar.|  
-|[Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)|Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.|
+|[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Uygulamalarınızda çeşitli paralel desen, örneğin, paralel algoritmalar kullanmayı açıklar.|  
+|[Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)|Uygulamalarınızda zaman uyumsuz aracılar kullanmayı açıklar.|  
+|[Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)|Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.|
 

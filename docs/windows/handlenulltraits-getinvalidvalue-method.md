@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: af421098edd2004862f3410502ea693ea65ceb75
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 168213026851bf8a99b999d31cfa64568e13db92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handlenulltraitsgetinvalidvalue-method"></a>HANDLENullTraits::GetInvalidValue Metodu
 Geçersiz bir tanıtıcı temsil eder.  
@@ -39,4 +42,4 @@ inline static Type GetInvalidValue();
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HANDLENullTraits yapısı](../windows/handlenulltraits-structure.md)
+ [HANDLENullTraits Yapısı](../windows/handlenulltraits-structure.md)

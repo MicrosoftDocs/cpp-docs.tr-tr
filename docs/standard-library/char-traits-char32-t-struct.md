@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 59dd4c1a581a1e0a2b2acc78a6e5a62e7b85d22f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a6b315da89f94da232f5d0ed44a9e3351f41824
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chartraitsltchar32tgt-struct"></a>char_traits&lt;char32_t&gt; yapısı
 Şablon yapısı uzmanlığı olan yapı **char_traits\<CharType >** türünde bir öğe için `char32_t`.  
@@ -43,4 +44,4 @@ struct char_traits<char32_t>;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<dize >](../standard-library/string.md)   
- [char_traits yapısı](../standard-library/char-traits-struct.md)
+ [char_traits Yapısı](../standard-library/char-traits-struct.md)

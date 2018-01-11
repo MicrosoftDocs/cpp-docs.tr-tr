@@ -16,11 +16,14 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d09aa9d2ea4df90ad8a74b426942d21ea1d2f6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2511034af4399c983b8114ec01a86e3290bd2a8c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="generic-delegates-visual-c"></a>Genel Temsilciler (Visual C++)
 Genel tür parametreleri ile temsilcileri kullanabilirsiniz. Temsilciler üzerinde daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  
@@ -167,4 +170,4 @@ Invoking the double delegate: m = 0.123, n = 0.123
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

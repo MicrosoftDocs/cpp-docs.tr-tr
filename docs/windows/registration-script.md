@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2260006e45407051f37e220d01cebd0ba8f797d7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 40790788fdb5ce73a6c33e62b6ee55d2da4c5364
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registrationscript"></a>registration_script
 Belirtilen özel kaydı betik yürütür.  
@@ -80,4 +83,4 @@ class CMyClass:public IFace {};
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM öznitelikleri](../windows/com-attributes.md)   
  [Sınıf öznitelikleri](../windows/class-attributes.md)   
- [RDX](../windows/rdx.md)   
+ [rdx](../windows/rdx.md)   

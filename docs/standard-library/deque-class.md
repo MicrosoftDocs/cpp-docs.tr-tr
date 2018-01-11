@@ -99,11 +99,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 852a9d97fed21835c966b4f47af4fb24ad026546
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58f66f264e5586b2cfbc0125329be4dec34298d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deque-class"></a>deque Sınıfı
 Doğrusal bir düzenleme içinde belirli bir türde öğeleri düzenler ve bir vektör gibi herhangi bir öğe ve verimli ekleme ve silme kapsayıcı arkasındaki hızlı rastgele erişim sağlar. Ancak, bir vektör aksine `deque` sınıfı da destekler verimli ekleme ve silme ön kapsayıcısının.  

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d40c05faa3ecc551904d2f267078ba342ea42b46
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 045dd8dd0dbee58c0feea33bc7ce4f6cea30e591
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulemethodreleasenotifiermethodreleasenotifier-constructor"></a>Module::MethodReleaseNotifier::MethodReleaseNotifier Oluşturucusu
 Module::MethodReleaseNotifier sınıfının yeni bir örneğini başlatır.  
@@ -52,4 +55,4 @@ MethodReleaseNotifier(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Module::MethodReleaseNotifier sınıfı](../windows/module-methodreleasenotifier-class.md)
+ [Module::MethodReleaseNotifier Sınıfı](../windows/module-methodreleasenotifier-class.md)

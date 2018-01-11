@@ -13,11 +13,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27107c794dfd4987eb0519dfeaa9762f47d0417c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9ce2c554ac6d959df868b80c1959a286fb0ef307
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="deferrableeventargs-class"></a>DeferrableEventArgs Sınıfı
 Deferrals için olay bağımsız değişken türleri için kullanılan bir şablon sınıfı.  
@@ -46,13 +49,13 @@ class DeferrableEventArgs : public TEventArgsInterface
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[DeferrableEventArgs::GetDeferral yöntemi](../windows/deferrableeventargs-getdeferral-method.md)|Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/?LinkId=526520) ertelenmiş bir olayı temsil eden nesne.|  
-|[Deferrableeventargs::ınvokeallfinished yöntemi](../windows/deferrableeventargs-invokeallfinished-method.md)|Ertelenmiş olayını işlemek için tüm işleme tamamlandığını göstermek için çağrılır.|  
+|[DeferrableEventArgs::GetDeferral Metodu](../windows/deferrableeventargs-getdeferral-method.md)|Bir başvuru edinir [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) ertelenmiş bir olayı temsil eden nesne.|  
+|[DeferrableEventArgs::InvokeAllFinished Metodu](../windows/deferrableeventargs-invokeallfinished-method.md)|Ertelenmiş olayını işlemek için tüm işleme tamamlandığını göstermek için çağrılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu sınıfın örnekleri, ertelenmiş olayları için olay işleyicilerine geçirilir. Şablon parametreleri ertelenmiş olay belirli bir tür için olay bağımsız değişkenlerinin ayrıntıları tanımlayan bir arabirim ve arabirimi uygulayan bir sınıfı temsil eder.  
   
- Sınıfı, ertelenmiş olayı için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Çağırabilirsiniz [GetDeferral](../windows/deferrableeventargs-getdeferral-method.md) almak için yöntemi [erteleme](http://go.microsoft.com/fwlink/?LinkId=526520) içinden alabilirsiniz ertelenmiş olayla ilgili tüm bilgileri nesnesi. Olay işleme tamamladıktan sonra tam erteleme nesnesinde çağırmalıdır. Ardından çağırmalıdır [InvokeAllFinished](../windows/deferrableeventargs-invokeallfinished-method.md) olay işleyicisi yöntemi sonunda da sağlar tüm Ertelenmiş Olaylar tamamlanmasından düzgün bildirilir.  
+ Sınıfı, ertelenmiş olayı için bir olay işleyicisi için ilk bağımsız değişken olarak görünür. Çağırabilirsiniz [GetDeferral](../windows/deferrableeventargs-getdeferral-method.md) almak için yöntemi [erteleme](http://go.microsoft.com/fwlink/p/?linkid=526520) içinden alabilirsiniz ertelenmiş olayla ilgili tüm bilgileri nesnesi. Olay işleme tamamladıktan sonra tam erteleme nesnesinde çağırmalıdır. Ardından çağırmalıdır [InvokeAllFinished](../windows/deferrableeventargs-invokeallfinished-method.md) olay işleyicisi yöntemi sonunda da sağlar tüm Ertelenmiş Olaylar tamamlanmasından düzgün bildirilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** event.h  
@@ -60,4 +63,4 @@ class DeferrableEventArgs : public TEventArgsInterface
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f70f4403c3318729ae0dcf42e717902c48c8759b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2b187c23c60c7294170a66a819f78bebfd5e5f8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="msunion"></a>ms_union
 Ağ veri gösterimi hizalama nonencapsulated birleşimler denetler.  
@@ -70,10 +73,10 @@ __interface IFireTabCtrl {
 |**Uygulandığı öğe:**|Nonencapsulated birleşimler|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**görüntüleme arabirimi**|  
+|**Geçersiz öznitelikler**|**dispinterface**|  
   
  Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
+ [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   

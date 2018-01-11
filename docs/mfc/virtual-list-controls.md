@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2853c40a5eaa3ccb8dbbf5855b92b4cba9b3a140
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0223d9733f9290d989183a34b91779ee1f4d5e28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="virtual-list-controls"></a>Sanal Liste Denetimleri
 Sanal liste denetimi sahip bir liste görünümü denetimi olan **LVS_OWNERDATA** stili. Bu stili bir öğe sayısı kadar desteklemek denetim sağlayan bir `DWORD` (varsayılan öğe sayısı için yalnızca genişleten bir `int`). Ancak, bu stili tarafından sağlanan en büyük avantajı veri öğelerin alt kümesine herhangi bir zamanda bellekte yeterlidir yeteneğidir. Bu bilgi, büyük veritabanları ile kullanmak için kendisini ödünç vermek sanal liste görünümü denetimi verilerine erişme belirli yöntemleri zaten yerinde nerede sağlar.  
@@ -71,5 +72,5 @@ Sanal liste denetimi sahip bir liste görünümü denetimi olan **LVS_OWNERDATA*
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

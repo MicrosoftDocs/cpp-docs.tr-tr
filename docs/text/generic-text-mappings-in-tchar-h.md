@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 6fe2773ab5a6429f2ab2c863598dabb4dddef628
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 405e95e9eb8fb760e2688e164178cf9270f31877
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h'de Genel Metin Eşlemeleri
 Uluslararası kullanımda kodun taşınmasını kolaylaştırmak için [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] çalışma zamanı kitaplığı sağlayan [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)]-birçok veri türleri, yordamlar ve diğer nesneleri için belirli genel metin eşlemeleri. Bu eşlemeler Tchar.h'de tek bayt, birden çok baytlı, derlenmiş genel kodlar yazmak için tanımlanan kullanabilirsiniz veya [!INCLUDE[TLA#tla_unicode](../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] karakter kümesi kullanarak tanımladığınız bir bildirim sabit bağlı olarak bir `#define` deyimi. Genel metin eşlemeleri [!INCLUDE[TLA#tla_ms](../text/includes/tlasharptla_ms_md.md)] olmayan uzantıları [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] uyumlu.  
@@ -101,4 +102,4 @@ RetVal = strrev(szString);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)   
- [TCHAR kullanma. _MBCS Kodu ile H veri türleri](../text/using-tchar-h-data-types-with-mbcs-code.md)
+ [_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma](../text/using-tchar-h-data-types-with-mbcs-code.md)

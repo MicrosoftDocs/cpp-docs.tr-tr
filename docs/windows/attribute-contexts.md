@@ -14,11 +14,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fceb15c713eee25c4ae04ef2a095737e587170a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 662b540548c0594364bf11087c3b52420d29cf0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="attribute-contexts"></a>Öznitelik Bağlamları
 C++ öznitelikleri dört temel alan kullanarak tanımlanabilen: Bunlar uygulanabilir hedef (**uygulandığı**), veya repeatable olmaları durumunda (**Repeatable**), diğer öznitelikleri (varlığınıgerekli **Gerekli öznitelikler**) ve diğer öznitelikleri uyumsuzluklar (**geçersiz öznitelikler**). Bu alanların her özniteliğin başvuru konusu eşlik eden bir tabloda listelenmiştir. Bu alanların her biri aşağıda açıklanmıştır.  
@@ -38,4 +41,4 @@ C++ öznitelikleri dört temel alan kullanarak tanımlanabilen: Bunlar uygulanab
  Bu alanda belirtilen öznitelik uyumsuz diğer öznitelikleri listeler. Bu alan için herhangi bir giriş bir öznitelik için nadir bir durumdur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ öznitelikleri başvurusu](../windows/cpp-attributes-reference.md)
+ [C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)

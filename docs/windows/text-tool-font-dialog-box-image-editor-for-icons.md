@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f14e398943d71cab4e520b373834b7373146f221
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2f5df3215f2d3487b919c2c89215dab17d288d4a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="text-tool-font-dialog-box-image-editor-for-icons"></a>Metin Aracı Yazı Tipi İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
 Kullandığınızda yazı tipi ayarlarını belirtir [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md) , [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md).  

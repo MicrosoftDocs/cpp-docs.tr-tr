@@ -16,11 +16,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 17009c1e9c1f7a771b717a96d1aadc4a680fe78f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a3098fec700a498f73a86f8e1fd40609628a77d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod satırı gibi daha fazla. Tek başına özniteliği deyimleri noktalı satırın sonundaki gerektirir.  
@@ -33,7 +36,7 @@ Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod sa
 |[emitidl](../windows/emitidl.md)|Tüm sonraki IDL öznitelikleri işlenen ve olması oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirler.|  
 |[idl_module](../windows/idl-module.md)|Bir giriş noktası DLL'de belirtir.|  
 |[idl_quote](../windows/idl-quote.md)|Visual C++ geçerli sürümde desteklenmez IDL yapıları kullanmanıza olanak sağlar ve bunları oluşturulan .idl dosyasına geçirir.|  
-|[içeri aktarma](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya .h dosyasını belirtir.|  
+|[import](../windows/import.md)|Ana .idl dosyanızdan başvuru yapmak istediğinizi tanımlarını içeren başka bir .idl, .odl veya .h dosyasını belirtir.|  
 |[importidl](../windows/importidl.md)|Belirtilen .idl dosya oluşturulan .idl dosyasına ekler|  
 |[importlib](../windows/importlib.md)|Zaten başka bir tür kitaplığı oluşturulan tür kitaplığı kullanılabilir içine derlenmiştir türleri sağlar.|  
 |[içerir](../windows/include-cpp.md)|Oluşturulan .idl dosyasında dahil edilecek bir veya daha fazla üst bilgi dosyaları belirtir.|  
@@ -44,4 +47,4 @@ Tek başına bir öznitelik C++ anahtar sözcüğü çalışmaz ancak bir kod sa
 |[pragma](../windows/pragma.md)|Belirtilen dize tırnak karakteri olmadan oluşturulan .idl dosyasına yayar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıma göre öznitelikler](../windows/attributes-by-usage.md)
+ [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

@@ -31,11 +31,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 705ffaa38222d83fe02e20f20c47ee4c06f22294
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e8768fa138da74761bc581f8b9f54a2fe432776
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 Üst öğe her zaman en büyük olan bazı temel kapsayıcı türü veya en yüksek öncelikli erişimi sınırlayan işlevlerin bir kısıtlama sağlayan bir şablon kapsayıcı bağdaştırıcısının sınıfı. Yeni öğeler priority_queue eklenebilir ve priority_queue üst öğenin Denetlenmekte veya kaldırılabilir.  
@@ -94,7 +95,7 @@ class priority_queue
 |-|-|  
 |[boş](#empty)|Varsa testleri `priority_queue` boş.|  
 |[POP](#pop)|En büyük öğesinin kaldırır `priority_queue` üst konumdan.|  
-|[anında iletme](#push)|İşleç öğesinden önceliğini göre öncelik sırasına bir öğe ekler <.|  
+|[push](#push)|İşleç öğesinden önceliğini göre öncelik sırasına bir öğe ekler <.|  
 |[boyutu](#size)|Öğelerin sayısını döndürür `priority_queue`.|  
 |[Sayfanın Üstü](#top)|Bir const döndürür başvuru en üstündeki en büyük öğesine `priority_queue`.|  
   

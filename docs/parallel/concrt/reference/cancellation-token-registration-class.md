@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c2d80255803c4d2ca2aec05af8115ac887f7258b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70ab8114860a77582a6c9f6276b74122f9505c26
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cancellationtokenregistration-class"></a>cancellation_token_registration Sınıfı
 `cancellation_token_registration` Sınıfı temsil eden bir geri çağırma bildirimden bir `cancellation_token`. Zaman `register` yöntemi bir `cancellation_token` iptal oluştuğunda, bildirimi almak için kullanılan bir `cancellation_token_registration` nesne çağıran artık belirli bir geri çağırma istemesini geri dönüş için bir tanıtıcı kullanımlayapılmasıgibidöndürülür`deregister` yöntemi.  
@@ -46,7 +47,7 @@ class cancellation_token_registration;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator! =](#operator_neq)||  
+|[operator!=](#operator_neq)||  
 |[işleç =](#operator_eq)||  
 |[operator ==](#operator_eq_eq)||  
   
@@ -113,4 +114,4 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

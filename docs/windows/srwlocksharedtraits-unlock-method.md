@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e98989e6b42f398e48b8c38281961f26a0ce47fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: beca240c99dd4e0cacfa0f28024dab10883614b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="srwlocksharedtraitsunlock-method"></a>SRWLockSharedTraits::Unlock Yöntemi
 Belirtilen SRWLock nesnenin özel denetim serbest bırakır.  
@@ -44,4 +47,4 @@ inline static void Unlock(
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLockSharedTraits yapısı](../windows/srwlocksharedtraits-structure.md)
+ [SRWLockSharedTraits Yapısı](../windows/srwlocksharedtraits-structure.md)

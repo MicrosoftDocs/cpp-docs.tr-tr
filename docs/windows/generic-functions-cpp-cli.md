@@ -19,11 +19,14 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2ffaee4b452b6f7eb31ad81a8b7b1216eb670e7f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9ebafa409680609d6e097b803be2b539ccdc7601
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 Tür parametreleri ile bildirilmiş bir işlev buna genel bir işlevdir. Çağrıldığında, gerçek türleri tür parametreleri yerine kullanılır.  
@@ -55,7 +58,7 @@ return-type identifier<type-parameter identifier(s)>
 {function-body}  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *öznitelikleri* (isteğe bağlı)  
  Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
@@ -184,7 +187,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 My function returned an int: 2003  
@@ -193,4 +196,4 @@ My function returned a string: Hello generic functions!
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)   
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

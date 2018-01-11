@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0169cf171e519a4fd620cacd7e684c400f94929d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: be882671da836f7d96f4c726753d6235735f363d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-using-the-new-mfc-shell-controls"></a>İzlenecek yol: Yeni MFC Kabuk Denetimlerini Kullanma
 Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölme içerir bir pencere oluşturur. Sol bölmede içerecek bir [CMFCShellTreeCtrl](../mfc/reference/cmfcshelltreectrl-class.md) masaüstünüzü hiyerarşik bir görünümü görüntüler nesnesi. Sağ bölmede içerecek bir [CMFCShellListCtrl](../mfc/reference/cmfcshelllistctrl-class.md) , sol bölmede seçili klasördeki dosyaları gösterir.  
@@ -196,5 +197,5 @@ Bu kılavuzda, dosya Gezgini benzer bir uygulama oluşturacaksınız. İki bölm
 -   `CMFCShellListCtrl` Dosyaları gibi farklı modda görüntülemeyi destekler **büyük simgeler**, **küçük simgeler**, **listesi**, ve **ayrıntıları**. Bu işlev uygulamak için uygulamanızın güncelleştirin. İpucu: bkz [Visual C++ örnekleri](../visual-cpp-samples.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İzlenecek yollar](../mfc/walkthroughs-mfc.md)
+ [İzlenecek Yollar](../mfc/walkthroughs-mfc.md)
 

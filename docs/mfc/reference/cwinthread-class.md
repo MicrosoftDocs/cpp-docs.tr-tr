@@ -61,11 +61,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b762617f8f778605e373099d87ab04094ee91d35
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 406fc12869d6fe02188de6e469af17b3809df9b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 Bir uygulama içinde yürütme iş parçacığı temsil eder.  
@@ -576,4 +577,4 @@ DWORD SuspendThread();
  [CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md)   
- [CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)
+ [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)

@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 167b6f8e522c7f1c64143da6305f1e275dae334a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 954a0448f160ba6d19eb4f48d44b0b7e0a718f17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-member-attributes"></a>Veri Üyesi Öznitelikleri
 Aşağıdaki öznitelikler sınıfı, coclass'ı veya arabirim veri üyeleri için geçerlidir.  
@@ -36,11 +39,11 @@ Aşağıdaki öznitelikler sınıfı, coclass'ı veya arabirim veri üyeleri iç
 |[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
 |[defaultbind](../windows/defaultbind.md)|En iyi nesneyi temsil eden tek, bağlanabilirse özelliği gösterir.|  
 |[displaybind](../windows/displaybind.md)|Kullanıcıya bağlanabilir olarak görüntülenmelidir bir özelliği belirtir.|  
-|[Kimliği](../windows/id.md)|Üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntem) için bir DISPID belirtir.|  
+|[id](../windows/id.md)|Üye işlevi (bir özellik veya bir arabirim veya görüntüleme arabirimi bir yöntem) için bir DISPID belirtir.|  
 |[Aralık](../windows/range-cpp.md)|Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.|  
-|[RDX](../windows/rdx.md)|Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı değiştirir.|  
-|[salt okunur](../windows/readonly-cpp.md)|Bir veri üyesi atamayı engeller.|  
+|[rdx](../windows/rdx.md)|Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı değiştirir.|  
+|[readonly](../windows/readonly-cpp.md)|Bir veri üyesi atamayı engeller.|  
 |[requestedit](../windows/requestedit.md)|Özellik desteklediğini gösterir **OnRequestEdit** bildirim.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıma göre öznitelikler](../windows/attributes-by-usage.md)
+ [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

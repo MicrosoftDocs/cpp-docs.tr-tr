@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1ad48700b1a7d2a4ca516e5df98a6ac2e0dd0b78
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 3f234b46da1a70ee0256a9a38ebb2ef7ae0bb5bb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulegetclassobject-method"></a>Module::GetClassObject Metodu
 Sınıf oluşturucuları önbelleği Retreives.  
@@ -59,4 +62,4 @@ Sınıf oluşturucuları önbelleği Retreives.
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Modül sınıfı](../windows/module-class.md)
+ [Modül Sınıfı](../windows/module-class.md)

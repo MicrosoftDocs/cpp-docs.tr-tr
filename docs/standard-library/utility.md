@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4e89fdf2b1af11b40c13f57b0febd1daa05894ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4cbb348ec11c9c4f832c993ad1e4799c8a39aad2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltutilitygt"></a>&lt;yardımcı programı&gt;
 C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir oldukları gibi kabul gerektiğinde yararlı olan nesneleri çiftlerini yönetmek için yardımcı işleçler tanımlar.  
@@ -46,7 +47,7 @@ C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir o
 |||  
 |-|-|  
 |[İlet](../standard-library/utility-functions.md#forward)|Başvuru türü korur (ya da `lvalue` veya `rvalue`) tarafından kusursuz iletme getirilmemeli gelen bağımsız değişken.|  
-|[Al](../standard-library/utility-functions.md#get)|Bir öğeyi alır işlevi bir `pair` nesnesi.|  
+|[get](../standard-library/utility-functions.md#get)|Bir öğeyi alır işlevi bir `pair` nesnesi.|  
 |[make_pair](../standard-library/utility-functions.md#make_pair)|Türündeki nesneleri oluşturmak için kullanılan bir şablon yardımcı işlevini `pair`, bileşen türleri parametre olarak geçirilen veri türleri burada dayanır.|  
 |[taşıma](../standard-library/utility-functions.md#move)|Bağımsız değişken olarak geçirilen döndürür bir `rvalue` başvuru.|  
 |[değiştirme](../standard-library/utility-functions.md#swap)|İki öğelerini alış verişleri `pair` nesneleri.|  
@@ -55,12 +56,12 @@ C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir o
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/utility-operators.md#op_neq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit değil.|  
+|[operator!=](../standard-library/utility-operators.md#op_neq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit değil.|  
 |[operator ==](../standard-library/utility-operators.md#op_eq_eq)|Sağ taraftaki çifti nesnesi işlecinin sol tarafındaki çifti nesnesi eşitse testleri.|  
 |[operator <](../standard-library/utility-operators.md#op_lt)|Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test azdır sağ tarafında çifti nesnesi.|  
 |[işleci\<=](../standard-library/utility-operators.md#op_gt_eq)|Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında çifti nesnesi eşit veya daha az olur.|  
 |[operator >](../standard-library/utility-operators.md#op_gt)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi değerinden daha büyük.|  
-|[operator > =](../standard-library/utility-operators.md#op_gt_eq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit veya daha büyük.|  
+|[operator>=](../standard-library/utility-operators.md#op_gt_eq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit veya daha büyük.|  
   
 ### <a name="structs"></a>Yapılar  
   
@@ -71,7 +72,7 @@ C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir o
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

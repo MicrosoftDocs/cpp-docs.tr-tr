@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 90edebe8e57e6720ad1cb7a83b59f478532c16c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 340942905ce252f7e4a40d8ae5366d5d154755d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve paralel iş zaman iptal belirleme rolünü açıklamaktadır.  
@@ -86,7 +87,7 @@ Bu belge iptali paralel Desen kitaplığı (PPL), paralel iş iptal etme ve para
  Paralel görevleri iptal etme daha fazla örnek için bkz: [izlenecek yol: bağlanma kullanarak görevleri ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [nasıl yapılır: paralel bir döngüden gelen sonu için kullanım iptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), ve [nasıl yapılır: kullanın Özel durum paralel bir döngüden kurtulmak için işleme](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).  
   
 ###  <a name="tokens"></a>Paralel iş iptal etmek için bir iptal belirteci kullanma  
- `task`, `task_group`, Ve `structured_task_group` sınıfları iptal belirteçlerini kullanımı ile iptal destekler. PPL'de tanımlar [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) ve [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) bu amaç için sınıflar. İş iptal etmek için bir iptal belirteci kullandığınızda, çalışma zamanı bu belirtece abone yeni iş başlatılmaz. Zaten etkin olan iş [is_canceled] kullanabilirsiniz ((.. /.. / parallel/concrt/reference/cancellation-token-class.md#is_canceled) iptal belirteci izlemek ve mümkün olduğunda durdurmak için üye işlevi.  
+ `task`, `task_group`, Ve `structured_task_group` sınıfları iptal belirteçlerini kullanımı ile iptal destekler. PPL'de tanımlar [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) ve [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) bu amaç için sınıflar. İş iptal etmek için bir iptal belirteci kullandığınızda, çalışma zamanı bu belirtece abone yeni iş başlatılmaz. Zaten etkin olan iş kullanabileceğiniz [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) iptal belirteci izlemek ve mümkün olduğunda durdurmak için üye işlevi.  
   
 
  İptal başlatmak için çağrı [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) yöntemi. Aşağıdaki şekillerde iptal için yanıtlayın:  
@@ -263,23 +264,23 @@ Caught 50
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: paralel bir döngüden kurtulmak için İptal kullanın](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)|İptal paralel arama algoritması uygulamak için nasıl kullanılacağını gösterir.|  
-|[Nasıl yapılır: özel durum paralel bir döngüden kurtulmak için işleme kullanın](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Nasıl kullanılacağını gösterir `task_group` temel ağaç yapısı için bir arama algoritması yazma sınıfı.|  
-|[Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Çalışma zamanı görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işler ve nasıl özel durumlar uygulamalarınızda yanıt açıklar.|  
+|[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için İptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)|İptal paralel arama algoritması uygulamak için nasıl kullanılacağını gösterir.|  
+|[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için Özel Durum İşlemeyi Kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Nasıl kullanılacağını gösterir `task_group` temel ağaç yapısı için bir arama algoritması yazma sınıfı.|  
+|[Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Çalışma zamanı görev grupları, Basit görevler ve zaman uyumsuz aracılar tarafından oluşturulan özel durumları nasıl işler ve nasıl özel durumlar uygulamalarınızda yanıt açıklar.|  
 |[Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|Görevler için görev grupları nasıl ilişkili olduğunu ve yapılandırılmamış ve yapılandırılmış görevler uygulamalarınızı nasıl kullanabileceğiniz açıklanır.|  
-|[Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Eşzamanlı olarak veri koleksiyonlar üzerinde çalışmayı gerçekleştirmek paralel algoritmalar açıklar|  
-|[Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Paralel Desen kitaplığı genel bir bakış sağlar.|  
+|[Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)|Eşzamanlı olarak veri koleksiyonlar üzerinde çalışmayı gerçekleştirmek paralel algoritmalar açıklar|  
+|[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Paralel Desen kitaplığı genel bir bakış sağlar.|  
   
 ## <a name="reference"></a>Başvuru  
- [task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)  
+ [task Sınıfı (Eşzamanlılık Çalışma Zamanı)](../../parallel/concrt/reference/task-class.md)  
   
- [cancellation_token_source sınıfı](../../parallel/concrt/reference/cancellation-token-source-class.md)  
+ [cancellation_token_source Sınıfı](../../parallel/concrt/reference/cancellation-token-source-class.md)  
   
- [cancellation_token sınıfı](../../parallel/concrt/reference/cancellation-token-class.md)  
+ [cancellation_token Sınıfı](../../parallel/concrt/reference/cancellation-token-class.md)  
   
  [task_group sınıfı](reference/task-group-class.md)  
   
- [structured_task_group sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)  
+ [structured_task_group Sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)  
 
  [parallel_for işlevi](reference/concurrency-namespace-functions.md#parallel_for)
 

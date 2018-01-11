@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70903fd7d74f23d17fffb9795b36c5351745a829
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d5c2c626ceb0243e91e56d70f0d8ae71208b157f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler
 Bu belge eşzamanlılık çalışma zamanı birden çok alanlarına uygulanan en iyi uygulamaları açıklar.  
@@ -163,4 +164,4 @@ Error details:
  [Nasıl yapılır: bağlam sınıfını işbirlikçi semafor uygulamak için kullanın](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)   
  [İzlenecek yol: Bir kullanıcı arabirimi iş parçacığından işi kaldırma](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)   
  [Paralel desen Kitaplığı'ndaki en iyi yöntemler](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)   
- [Zaman uyumsuz aracılar Kitaplığı'ndaki en iyi yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)
+ [Zaman Uyumsuz Aracılar Kitaplığı'ndaki En İyi Yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2860a0bfd050c4e2a86e948c7008327d237bc5ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9af3a0fe28e0b5d26f17f16a6e217dce9fd82969
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>Ekleme İşleçlerini Kullanma ve Biçimi Denetleme
 Bu konuda biçimi denetleme ve ekleme işleçlerini kendi sınıfları için oluşturma gösterilmektedir. Ekleme (**<<**) tüm standart C++ veri türleri için önceden programlanmış, hangi işleci bir çıkış akışı nesneye bayt gönderir. Ekleme işleçlerini "tamsayı bağımsız değişkeni varsayılan biçimi değiştirme öğeleri olan önceden tanımlanmış manipülatörleri ile" çalışır.  
@@ -216,8 +217,8 @@ std::cout <<extracted;   //   This
   
  Tırnak işaretli işleci giriş dizesi bir ham dize olup veya normal bir dize bağımsız olarak yararlı olacak şekilde nasıl bir dize kodda gösterilir ekleme ve çıkarma işlemleri boşluk davranışını bağımsızdır. Giriş dizesi, ne olursa olsun, biçimi katıştırılmış teklifler, satır sonları, sekmeler ve benzeri ve bunların tümü muhafaza edilir quoted() manipulator tarafından.  
   
- Daha fazla bilgi ve tam kod örnekleri, bkz: [tırnak içine alınmış]--brokenlink--(../Topic/%3Cios%3E%20functions.md#quoted).  
+ Daha fazla bilgi ve tam kod örnekleri, bkz:--brokenlink--[tırnak içine alınmış] (.. / Topic/%3Cios%3E%20functions.md#quoted).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkış akışları](../standard-library/output-streams.md)   
+ [Çıkış Akışları](../standard-library/output-streams.md)   
 

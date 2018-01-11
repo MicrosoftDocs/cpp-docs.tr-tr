@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: eace3f5dd5d0693f5cb42b32e4d2c8c52a5eddfe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e1745dcab769f5a5c81e089b4fba212ab4d6da0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltlimitsgt"></a>&lt;sınırları&gt;
 Şablon sınıfı tanımlayan `numeric_limits` ve kayan nokta temsili ilgili ve yuvarlama iki numaralandırmalar.  
@@ -47,11 +48,11 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[numeric_limits sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı yerleşik sayısal türler aritmetik özelliklerini açıklar.|  
+|[numeric_limits Sınıfı](../standard-library/numeric-limits-class.md)|Şablon sınıfı yerleşik sayısal türler aritmetik özelliklerini açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

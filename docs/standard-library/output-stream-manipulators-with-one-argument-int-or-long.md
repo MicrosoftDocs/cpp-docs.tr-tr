@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 418b9e1f982e1bb37559ee35b6953d7d3f198b61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c13d6352fcd3b2df26e9585b74e17b549106d19b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="output-stream-manipulators-with-one-argument-int-or-long"></a>Bir Bağımsız Değişkenli Çıkış Akışı Manipülatörleri (int veya long)
 İostream sınıf kitaplığı parametreli manipülatörleri oluşturmak için makroları kümesi sağlar. Tek bir manipülatörleri `int` veya `long` bağımsız değişkeni olan bir özel durum. Tek bir kabul eden bir çıkış akışı manipulator oluşturmak için `int` veya `long` bağımsız değişkeni (gibi `setw`), tanımlanan _Smanip makrosu kullanmalısınız \<iomanip >. Bu örnek tanımlayan bir `fillblank` boşlukları belirtilen sayıda akışa ekler manipulator:  
@@ -55,5 +56,5 @@ int main( )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağımsız değişkenlerle birlikte özel Manipülatörleri](../standard-library/custom-manipulators-with-arguments.md)
+ [Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)
 

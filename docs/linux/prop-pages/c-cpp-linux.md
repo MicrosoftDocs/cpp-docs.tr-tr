@@ -42,11 +42,14 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.CompileAs
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 94a22843c15e537a7af8e1e44827f8c1ab365165
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- linux
+ms.openlocfilehash: 096775841841574571b7ef731db52f3bbda6485f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cc-properties-linux-c"></a>C/C++ özellikleri (Linux C++)
 
@@ -98,8 +101,8 @@ C++ özel durumlarını etkinleştirin | Özel durum derleyici tarafından kulla
 Özellik | Açıklama | Seçenekler
 --- | ---| ---
 Çalışma zamanı türü bilgileri etkinleştir | Çalışma zamanında (çalışma zamanı türü bilgileri) C++ nesne türlerini denetlemek için kod ekler.     (frtti, fno rttı)
-C dili standart | C dili standart belirler. | **Varsayılan**<br>**C89** -C89 dil standardı.<br>**C99** -C99 dil standardı.<br>**C11** -C11 dil standardı.<br>**C99 (GNU Dialect)** -C99 (GNU Dialect) dil standardı.<br>**C11 (GNU Dialect)** -C11 (GNU Dialect) dil standardı.<br>
-C++ dili standart | C++ dili standart belirler. | **Varsayılan**<br>**C ++ 03** -C ++ 03 dil standardı.<br>**C ++ 11** -C ++ 11 dil standardı.<br>**C ++ 14** -C ++ 14 dil standardı.<br>**C ++ 03 (GNU Dialect)** - C ++ 03 (GNU Dialect) dil standardı.<br>**C ++ 11 (GNU Dialect)** - C ++ 11 (GNU Dialect) dil standardı.<br>**C ++ 14 (GNU Dialect)** - C ++ 14 (GNU Dialect) dil standardı.<br>
+C dili standart | C dili standart belirler. | **Default**<br>**C89** -C89 dil standardı.<br>**C99** -C99 dil standardı.<br>**C11** -C11 dil standardı.<br>**C99 (GNU Dialect)** -C99 (GNU Dialect) dil standardı.<br>**C11 (GNU Dialect)** -C11 (GNU Dialect) dil standardı.<br>
+C++ dili standart | C++ dili standart belirler. | **Default**<br>**C ++ 03** -C ++ 03 dil standardı.<br>**C ++ 11** -C ++ 11 dil standardı.<br>**C ++ 14** -C ++ 14 dil standardı.<br>**C ++ 03 (GNU Dialect)** - C ++ 03 (GNU Dialect) dil standardı.<br>**C ++ 11 (GNU Dialect)** - C ++ 11 (GNU Dialect) dil standardı.<br>**C ++ 14 (GNU Dialect)** - C ++ 14 (GNU Dialect) dil standardı.<br>
 
 ## <a name="advanced"></a>Gelişmiş
 Özellik | Açıklama | Seçenekler

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c13e025b0a15998a6420b29b0bb23ff65824f14e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 787712a857740afad539c0e44c450c6762aeb48f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="weakrefoperatoramp-operator"></a>WeakRef::operator&amp; işleci
 Geçerli WeakRef nesnesini temsil eden bir ComPtrRef nesnesi döndürür.  
@@ -42,4 +45,4 @@ Details::ComPtrRef<WeakRef> operator&() throw()
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [WeakRef sınıfı](../windows/weakref-class.md)
+ [WeakRef Sınıfı](../windows/weakref-class.md)

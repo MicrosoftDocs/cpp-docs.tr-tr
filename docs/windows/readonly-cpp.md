@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 52ee0c600cf12a9709072a8c1cb502dada70f708
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 829ca2126ec43be54d96a98b2ada4f5952626e21
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="readonly-c"></a>readonly (C++)
 Bir veri üyesi atamayı engeller.  
@@ -69,4 +72,4 @@ __interface IFireTabCtrl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Veri üyesi öznitelikleri](../windows/data-member-attributes.md)   
+ [Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)   

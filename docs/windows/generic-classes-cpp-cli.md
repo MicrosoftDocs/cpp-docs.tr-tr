@@ -19,11 +19,14 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e59aafde058565435e0a777a55ff7b010fea705e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 22f2d00c4f8e07ea9d04e03c2e95190be056cbd9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 Genel bir sınıf, aşağıdaki biçimi kullanarak bildirilmiş:  
@@ -704,4 +707,4 @@ The field is assigned the string: Hello Generics!
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

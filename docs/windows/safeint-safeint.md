@@ -18,11 +18,14 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 77ff8395aee764c67a3f90b69f33f4299de4f550
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a9820227384866cdb1a6470ebd9650187848334c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safeintsafeint"></a>SafeInt::SafeInt
 Oluşturan bir `SafeInt` nesnesi.  
@@ -81,4 +84,4 @@ SafeInt (
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [SafeInt Kitaplığı](../windows/safeint-library.md)   
  [SafeInt sınıfı](../windows/safeint-class.md)   
- [Safeıntexception sınıfı](../windows/safeintexception-class.md)
+ [SafeIntException Sınıfı](../windows/safeintexception-class.md)

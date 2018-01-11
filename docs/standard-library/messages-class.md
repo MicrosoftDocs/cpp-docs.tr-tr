@@ -33,11 +33,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d60a1ba5ac8acbb6fbaf9e5b7e922a1f373f9293
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1bf1320e138224b36e0d73e1d2702b9cf85fb8c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="messages-class"></a>messages Sınıfı
 Verili bir yerel ayar için uluslararası iletilerin bir kataloğundan yerelleştirilmiş iletiler almak için bir yerel ayar olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı.  
@@ -77,12 +78,12 @@ class messages : public messages_base;
   
 |||  
 |-|-|  
-|[Kapat](#close)|İleti kataloğunu kapatır.|  
+|[close](#close)|İleti kataloğunu kapatır.|  
 |[do_close](#do_close)|İleti kataloğunu kapatmak için çağrılan sanal işlev.|  
 |[do_get](#do_get)|İleti kataloğunu almak için çağrılan sanal işlev.|  
 |[do_open](#do_open)|İleti kataloğunu açmak için çağrılan sanal işlev.|  
-|[Al](#get)|İleti kataloğunu alır.|  
-|[açın](#open)|İleti kataloğunu açar.|  
+|[get](#get)|İleti kataloğunu alır.|  
+|[open](#open)|İleti kataloğunu açar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
@@ -289,7 +290,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<yerel ayar >](../standard-library/locale.md)   
  [messages_base sınıfı](../standard-library/messages-base-class.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

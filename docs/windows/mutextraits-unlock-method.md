@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6691f756817eb2b7d7ab97113fa06ae908c0b102
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 55c1252dfa1464d68b28f2da520b5ac8319ae096
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mutextraitsunlock-method"></a>MutexTraits::Unlock Yöntemi
 Paylaşılan bir kaynağa özel denetimin serbest bırakır.  
@@ -44,4 +47,4 @@ inline static void Unlock(
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MutexTraits yapısı](../windows/mutextraits-structure.md)
+ [MutexTraits Yapısı](../windows/mutextraits-structure.md)

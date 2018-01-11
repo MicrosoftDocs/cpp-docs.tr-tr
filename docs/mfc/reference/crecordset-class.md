@@ -141,11 +141,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ef856814b931f50359356e25ee8386a8e0a9c3b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c2375739fe4d8442d4ecb7a1514641d45de4a8be
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crecordset-class"></a>CRecordset sınıfı
 Bir veri kaynağından seçilen kayıt kümesini temsil eder.  
@@ -1783,4 +1784,4 @@ virtual BOOL Update();
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CRecordView sınıfı](../../mfc/reference/crecordview-class.md)
+ [CRecordView Sınıfı](../../mfc/reference/crecordview-class.md)

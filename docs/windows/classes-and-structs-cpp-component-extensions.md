@@ -18,11 +18,14 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 45fc41430fbbf04f8b1b56fe6355fb0b81f8e1ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8d75bc7f0935ef7444d37f3708379598a549417e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
 Sınıfta veya yapı bildirir, *nesne ömrü* otomatik olarak yönetilir. Nesne artık erişilebilir değil veya kapsam dışında olduğunda Visual C++ nesnesine ayrılan bellek otomatik olarak atar.  
@@ -42,7 +45,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *class_access* (isteğe bağlı)  
  Sınıf veya yapı derleme dışına erişilebilirliğini. Olası değerler şunlardır: **ortak** ve `private` (`private` varsayılandır). İç içe geçmiş sınıflar ya da yapının olamaz bir *class_access* tanımlayıcısı.  
@@ -75,26 +78,26 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
  
   
--   [Başvuru türleri için C++ yığın anlamları](../dotnet/cpp-stack-semantics-for-reference-types.md)  
+-   [Referans Türleri için C++ Yığın Anlamları](../dotnet/cpp-stack-semantics-for-reference-types.md)  
   
 -   [Sınıflar, yapılar ve birleşimleri](../cpp/classes-and-structs-cpp.md)  
   
 -   [Yok ediciler ve sonlandırıcılar nasıl yapılır: sınıfları ve yapıları tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)  
   
--   [Kullanıcı tanımlı işleçler (C + +/ CLI)](../dotnet/user-defined-operators-cpp-cli.md)  
+-   [Kullanıcı Tanımlı İşleçler (C++/CLI)](../dotnet/user-defined-operators-cpp-cli.md)  
   
--   [Kullanıcı tanımlı dönüştürmeler (C + +/ CLI)](../dotnet/user-defined-conversions-cpp-cli.md)  
+-   [Kullanıcı Tanımlı Dönüşümler (C++/CLI)](../dotnet/user-defined-conversions-cpp-cli.md)  
   
--   [Nasıl yapılır: C# tarafından kullanılması için yerel sınıfı sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)  
+-   [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)  
   
--   [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)  
+-   [Genel Sınıflar (C++/CLI)](../windows/generic-classes-cpp-cli.md)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  **Açıklamalar**  
   
  Bkz: [Ref sınıflar ve yapılar](http://msdn.microsoft.com/library/windows/apps/hh699870.aspx) ve [değer sınıflar ve yapılar](http://msdn.microsoft.com/library/windows/apps/hh699861.aspx).  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *taban_türü* (isteğe bağlı)  
  Bir taban türü. A `ref class` veya `ref struct` sıfır veya daha fazla arabirimleri ve sıfır veya bir devralabilirsiniz `ref` türleri. A `value class` veya `value struct` yalnızca sıfır veya daha fazla arabirimlerinden devralabilirsiniz.  
@@ -111,7 +114,7 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
   
  Aşağıdaki tabloda gösterilen söz dizimi farkları listeler **tüm çalışma zamanları** C + belirli bölüm +/ CLI.  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *taban_türü* (isteğe bağlı)  
  Bir taban türü. A `ref class` veya `ref struct` sıfırdan devralabilirsiniz veya daha fazla yönetilen arabirimleri ve sıfır veya bir başvuru türleri. A `value class` veya `value struct` yalnızca sıfır veya daha fazla yönetilen arabirimlerinden devralabilirsiniz.  
@@ -124,4 +127,4 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
  Derleyici seçeneği:   **/CLR**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

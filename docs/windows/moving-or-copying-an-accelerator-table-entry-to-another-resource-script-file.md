@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5b51fbaf25861712f0809f8ef0e9b3cb2494621f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e3ae2d0decbb822de88a9c3021cf73f7e4f56e10
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı Tablosu Girişini Başka Bir Kaynak Betik Dosyasına Taşıma veya Kopyalama
 ### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Taşımak veya Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına kopyalamak için  

@@ -38,11 +38,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e0ad63f077bcc018681f852d1495e9f1abd7d4fd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b094e0cc34cc1a832e531cff9a5f3fa1366abcc1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chartraits-struct"></a>char_traits Yapısı
 Char_traits yapısı bir karakter ile ilişkili öznitelikleri açıklanmaktadır.  
@@ -79,7 +80,7 @@ struct char_traits;
 |[Karşılaştırma](#compare)|İki dizeyi karakter belirtilen sayıya kadar karşılaştırır.|  
 |[kopyalama](#copy)|Belirtilen sayıda karakteri bir dizeden başka bir konuma kopyalar. Kullanım dışı. Kullanım [char_traits::_Copy_s](#copy_s) yerine.|  
 |[_Copy_s](#copy_s)|Belirtilen sayıda karakteri bir dizeden başka bir konuma kopyalar.|  
-|[EOF](#eof)|Dosya sonu (EOF) karakteri döndürür.|  
+|[eof](#eof)|Dosya sonu (EOF) karakteri döndürür.|  
 |[EQ](#eq)|İki olup olmadığını sınar `char_type` karakterler eşit olur.|  
 |[eq_int_type](#eq_int_type)|İki karakter olarak temsil olup olmadığını sınar `int_type`s eşit.|  
 |[Bul](#find)|Belirtilen bir karakterin karakter aralığı içinde ilk a geçişi arar.|  
@@ -1167,5 +1168,5 @@ The recovered char_type of ch2 is equal to the original ch2.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

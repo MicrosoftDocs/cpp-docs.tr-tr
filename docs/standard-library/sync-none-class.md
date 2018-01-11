@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6b4c21cc7788bdfa6511e93873bf64bcfe796e2a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bf0d71bc517e97a99db79dfc905935fba81faed0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="syncnone-class"></a>sync_none Sınıfı
 Açıklayan bir [eşitleme filtresi](../standard-library/allocators-header.md) eşitleme sağlar.  
@@ -49,9 +50,9 @@ class sync_none
   
 |||  
 |-|-|  
-|[ayırma](#allocate)|Bir bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir bellek bloğu ayırır.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
-|[eşittir](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|  
+|[equals](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<allocators >  

@@ -144,11 +144,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e078f094e51b022bc697ba44eec47de1bf452c96
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 56d3d30907a5001b95cdd55bd17fc86eaf5c078f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cpane-class"></a>CPane sınıfı
 `CPane` Sınıfı, bir geliştirmesini [CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md). Varolan bir MFC projesine yükseltiyorsanız, tüm oluşumlarını Değiştir `CControlBar` ile `CPane`.  
@@ -1424,4 +1425,4 @@ void UpdateVirtualRect(CPoint ptOffset);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md)
+ [CBasePane Sınıfı](../../mfc/reference/cbasepane-class.md)

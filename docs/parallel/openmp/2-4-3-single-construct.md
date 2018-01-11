@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3efb6c833227140440d327ea47906f8239769689
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72dc551986f149bda668c438ac5f51d01d530c51
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="243-single-construct"></a>2.4.3 single Yapı
 **Tek** yönergesi ilişkili yapılandırılmış blok (mutlaka ana iş parçacığı) ekibin yalnızca bir iş parçacığı tarafından yürütülür belirleyen bir yapısı tanımlar. Söz dizimi **tek** yönergesi aşağıdaki gibidir:  

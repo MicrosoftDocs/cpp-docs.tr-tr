@@ -14,11 +14,14 @@ caps.latest.revision: "2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c48acafe67f900de55af1fb7ec23a174fc0cc960
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ae7ac6cd1e21574ad7b65e6e452d48059a3a6b6b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hstringdetach-method"></a>HString::Detach Yöntemi
 Temel alınan değeri belirtilen HString nesnesinden keser.  
@@ -38,4 +41,4 @@ HSTRING Detach() throw()
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HString sınıfı](../windows/hstring-class.md)
+ [HString Sınıfı](../windows/hstring-class.md)

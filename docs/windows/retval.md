@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f4e6a49f62b38c83b3cda8b92812aebcc10997bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: cf7aa0cf8dd9767f603807ee18e23fe02d3446c7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="retval"></a>retval
 Üye dönüş değerini parametre belirler.  
@@ -48,12 +51,12 @@ ms.lasthandoff: 10/24/2017
 |-|-|  
 |**Uygulandığı öğe:**|Arabirim parametresi, arabirim yöntemi|  
 |**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**çıkışı**|  
-|**Geçersiz öznitelikler**|**içinde**|  
+|**Gerekli öznitelikler**|**out**|  
+|**Geçersiz öznitelikler**|**in**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Parametre öznitelikleri](../windows/parameter-attributes.md)   
- [Yöntem öznitelikleri](../windows/method-attributes.md)   
+ [Yöntem Öznitelikleri](../windows/method-attributes.md)   

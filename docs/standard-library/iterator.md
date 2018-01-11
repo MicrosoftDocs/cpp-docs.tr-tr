@@ -17,11 +17,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2d0e3c65101455958772415228d5cf0d95fbd4d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3f0918b5d4c222506173c03859cb74ec3fd13bdd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltiteratorgt"></a>&lt;Yineleyici&gt;
 Yineleyici basit öğelerini, önceden tanımlanmış yineleyicileri ve akış yineleyicilerinin yanı sıra pek çok destek şablonunu da tanımlar. Ön tanımlı yineleyiciler ekleme ve tersine çevirme bağdaştırıcıları içerir. Ekleme yineleyici bağdaştırıcıların üç sınıfı vardır: ön, arka ve genel. Kapsayıcı üye işlevi yineleyicilerin sağladığı üzerine yaz semantiği yerine ekle semantiği sağlar.  
@@ -73,12 +74,12 @@ Yineleyici basit öğelerini, önceden tanımlanmış yineleyicileri ve akış y
   
 |||  
 |-|-|  
-|[operator! =](../standard-library/iterator-operators.md#op_neq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.|  
+|[operator!=](../standard-library/iterator-operators.md#op_neq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.|  
 |[operator ==](../standard-library/iterator-operators.md#op_eq_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.|  
 |[operator <](../standard-library/iterator-operators.md#op_lt)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.|  
 |[işleci\<=](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.|  
 |[operator >](../standard-library/iterator-operators.md#op_gt)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.|  
-|[operator > =](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.|  
+|[operator>=](../standard-library/iterator-operators.md#op_gt_eq)|İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.|  
 |[operator +](../standard-library/iterator-operators.md#op_add)|Yineleyici için uzaklık ekler ve yeni döndürür `reverse_iterator` yeni uzaklık konumunda eklenen öğesi adresleme.|  
 |[operator-](../standard-library/iterator-operators.md#operator-)|Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.|  
   
@@ -99,7 +100,7 @@ Yineleyici basit öğelerini, önceden tanımlanmış yineleyicileri ve akış y
 |[iterator_traits](../standard-library/iterator-traits-struct.md)|Aynı şekilde başvurulabilsinler diye farklı yineleyici türleriyle ilişkilendirilen kritik türleri sağlayan şablon yardımcı sınıfı.|  
 |[move_iterator](../standard-library/move-iterator-class.md)|A `move_iterator` nesne türünde rasgele erişim yineleyici depolar `RandomIterator`. Başvurunun kaldırıldığı durum dışında, rastgele erişimli yineleyici gibi davranır. Sonucu `operator*` için örtük olarak cast `value_type&&:` yapmak için bir `rvalue reference`.|  
 |[ostream_iterator](../standard-library/ostream-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfının nesneleri ekler **türü** bir çıkış akışı hangi BT bir nesne türü depoları eriştiği **işaretçi** için `basic_ostream` \< **Elem** , **Tr**>.|  
-|[ostreambuf_iterator sınıfı](../standard-library/ostreambuf-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfının öğeleri ekler **Elem** depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir çıkış akışı arabellek içine `basic_streambuf` \< **Elem**, **Tr**>.|  
+|[ostreambuf_iterator Sınıfı](../standard-library/ostreambuf-iterator-class.md)|Şablon sınıfı, bir çıkış yineleyici nesnesi tanımlar. Sınıfının öğeleri ekler **Elem** depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir çıkış akışı arabellek içine `basic_streambuf` \< **Elem**, **Tr**>.|  
 |[output_iterator_tag](../standard-library/output-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf **iterator_category** çıkış yineleyici temsil eden bir işlev.|  
 |[random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md)|Dönüş türü için sağlayan bir sınıf **iterator_category** rasgele erişim yineleyici temsil eden bir işlev.|  
 |[reverse_iterator](../standard-library/reverse-iterator-class.md)|Şablon sınıfı, rastgele erişim yineleyici olarak davranan bir nesneyi yalnızca tersten açıklar.|  

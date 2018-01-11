@@ -16,11 +16,14 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b41ce8b1affe36126a7b36bea631880d13fdeff
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b08ab6585cd4d8c7a4da93273f99d47c0265608c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
 Tür parametreleri sınıflarında uygulamak kısıtlamaları arabirimlerde tür parametreleri için geçerli aynıdır (bkz [Genel sınıflar (C + +/ CLI)](../windows/generic-classes-cpp-cli.md)).  
@@ -319,4 +322,4 @@ The String field contains: My string
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

@@ -14,11 +14,14 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 85adbf7c14f0d610cea4085169b945b55d6b5ab9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 3e760181f48e4bfd197514b152701e94ac6e94a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handle-to-object-operator---c-component-extensions"></a>İşlenecek Nesne İşleci (^) (C++ Bileşen Uzantıları)
 *Bildirimcisi işlemek* (`^`, "hat" denilir), türü değiştirir [belirticisi](../cpp/overview-of-declarators.md) sistemi nesnenin olduğunu belirlediğinde, bildirilen nesnesi'nin otomatik olarak silinmesini anlamına gelir artık erişilebilir.  
@@ -75,7 +78,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 1  
@@ -109,7 +112,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Not a boxed int  
@@ -155,7 +158,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Type is System.Collections.ArrayList  
@@ -207,7 +210,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Array value: 7  

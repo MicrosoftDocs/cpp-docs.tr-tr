@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7869ba251868241c082080d3485d5a82c492b8f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 68bfea40f926ed74afd6fd246b57d39b7225cdf9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 Üstbilgisini `<system_error>` özel durum sınıfı tanımlamak için `system_error` ve ilgili alt düzey sistem hataları işlemek için şablonlar.  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/24/2017
 |||  
 |-|-|  
 |[operator ==](../standard-library/system-error-operators.md#op_eq_eq)|Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.|  
-|[operator! =](../standard-library/system-error-operators.md#op_neq)|Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.|  
+|[operator!=](../standard-library/system-error-operators.md#op_neq)|Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.|  
 |[operator <](../standard-library/system-error-operators.md#op_lt)|Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.|  
   
 ### <a name="enumerations"></a>Numaralandırmalar  

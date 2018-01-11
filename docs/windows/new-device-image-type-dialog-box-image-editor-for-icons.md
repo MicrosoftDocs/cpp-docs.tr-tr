@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c667616325cf29d959340db38a8336dd6c63e8c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e41f62a3668174dc9a5873d9bf16617555a96092
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="new-ltdevicegt-image-type-dialog-box-image-editor-for-icons"></a>Yeni &lt;aygıt&gt; görüntü türü iletişim kutusu (simgeler için görüntü Düzenleyicisi)
 Belirtilen bir türün yeni cihaz görüntüsü oluşturmanıza olanak sağlar. Açmak için **yeni \<aygıt > Görüntü** iletişim kutusu, tıklatın **yeni görüntü türü** üzerinde **görüntü** menüsü.  
@@ -48,4 +51,4 @@ Belirtilen bir türün yeni cihaz görüntüsü oluşturmanıza olanak sağlar. 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
  [Görüntü menüsü](../windows/image-menu-image-editor-for-icons.md)   
- [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+ [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

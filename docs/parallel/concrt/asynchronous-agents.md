@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5196503776be8abf4de49c9ae0ffc42122f9028f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c4ce3240041987a79657c7e8bf296f9e89acb7a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asynchronous-agents"></a>Zaman Uyumsuz Aracılar
 Bir *zaman uyumsuz Aracısı* (veya yalnızca *Aracısı*) zaman uyumsuz olarak daha büyük hesaplama görevlerini çözümlemek için diğer aracıları ile çalışan bir uygulama bileşenidir. Bir aracı olarak ayarlanmış bir yaşam döngüsü sahip bir görev olarak düşünün. Örneğin, bir aracı kullanılabilir olduğunda (örneğin, klavye, disk üzerindeki bir dosya veya bir ağ bağlantısı) bir giriş/çıkış aygıtı ve başka bir aracı veri eylem bu veriler üzerinde gerçekleştirebileceğiniz okuyabilir. İlk aracı ileti geçirme ikinci Aracısı daha fazla veri kullanılabilir olduğunu bildirmek üzere kullanır. Eşzamanlılık Çalışma zamanı Görev Zamanlayıcısı'nı engellemek ve işbirliği ile elde etmek aracıları etkinleştirmek için etkili bir mekanizma sağlar daha az verimli önalım gerektirmeden.  
@@ -70,5 +71,5 @@ Bir *zaman uyumsuz Aracısı* (veya yalnızca *Aracısı*) zaman uyumsuz olarak 
  Temel bir aracı temelli uygulama oluşturmayı gösteren bir örnek için bkz: [izlenecek yol: aracı temelli uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
+ [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 798dc2ca8b6a04203232d9eee52b1f5be5eacdd5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 06e4b772288f2e7374bb10f1298da33fbc6dcac0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
@@ -74,4 +75,4 @@ Daha fazla bilgi için bkz: [UNIX'ten Win32'ye taşıma](../porting/porting-from
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[C/C++ programları oluşturma](../build/building-c-cpp-programs.md)
+[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)

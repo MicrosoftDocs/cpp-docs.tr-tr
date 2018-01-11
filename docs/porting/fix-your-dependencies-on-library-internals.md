@@ -16,11 +16,12 @@ caps.latest.revision: "1"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c356e5f7a8bdd9441e506c9ca30c34fa3c8d5144
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e6bd85de7c5235dcee0547e982d10a7abde954d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fix-your-dependencies-on-library-internals"></a>Kitaplık iç üzerinde bağımlılıklarınızı Düzelt
 
@@ -86,6 +87,6 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
   
 ## <a name="see-also"></a>Ayrıca bkz.  
   
-[Visual C++'ın önceki sürümlerinden yükseltme projeleri](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[Olası yükseltme sorunlarını (Visual C++) genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)  
-[Evrensel CRT kodunuzu yükseltme](upgrade-your-code-to-the-universal-crt.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)  
+[Kodunuzu Evrensel CRT’ye Yükseltme](upgrade-your-code-to-the-universal-crt.md)  

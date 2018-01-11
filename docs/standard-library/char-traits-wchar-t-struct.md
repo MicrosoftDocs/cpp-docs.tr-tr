@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 48e7d34ba3a80060fe15f3b5e487b93db489a5e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ea9e39defefae6133f73262c90f0da9db3ea2edf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chartraitsltwchartgt-struct"></a>char_traits&lt;wchar_t&gt; yapısı
 Şablon yapısı uzmanlaşması bir sınıfı **char_traits\<CharType >** türünde bir öğe için `wchar_t`.  
@@ -43,7 +44,7 @@ struct char_traits<wchar_t>;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [char_traits yapısı](../standard-library/char-traits-struct.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

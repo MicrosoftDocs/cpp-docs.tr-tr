@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 46c75b942209ed56d13fc9dcedf4f1e5bf2d2bc2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 835c6e8824c29b46fa32bf219518c6d1dc64fa39
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inverting-the-colors-in-a-selection-image-editor-for-icons"></a>Seçimdeki Renkleri Ters Çevirme (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi görüntüyü ters renklerle nasıl görüneceği anlayabilirsiniz şekilde görüntünün seçili bölümündeki renkleri ters çevirme için kullanışlı bir yol sağlar.  

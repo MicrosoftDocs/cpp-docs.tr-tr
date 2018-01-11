@@ -17,11 +17,14 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6f19c3fa4694515ee4dafcc1e3de6d3e669321df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b9d310043a2693eaef254256385becc0bcc7d501
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="property--c-component-extensions"></a>özellik (C++ Bileşen Uzantıları)
 Bildiren bir *özelliği*, davranır ve bir veri üyesi veya bir dizi öğesine gibi erişilen üye işlevi değil.  
@@ -113,7 +116,7 @@ modifier property type default[index];
 }  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *Değiştirici*  
  Özellik bildirimi ya da bir get/set erişimcisi yöntemi kullanılabilir değiştiricisi. Olası değerler şunlardır: `static` ve `virtual`.  
@@ -208,7 +211,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 test  
@@ -217,4 +220,4 @@ test
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

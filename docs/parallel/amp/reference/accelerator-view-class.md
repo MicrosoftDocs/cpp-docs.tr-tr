@@ -31,11 +31,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 66d98297d681f3c2c377a7bccb7b988169aca76d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9fd05acc351a23cc088c6491a76ecfb91583b16b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="acceleratorview-class"></a>accelerator_view Sınıfı
 C++ AMP verileri paralel Hızlandırıcı üzerinde bir sanal cihaz soyutlama temsil eder.  
@@ -72,7 +73,7 @@ class accelerator_view;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator! =](#operator_neq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `false` aynı; olmaları durumunda hata verir `true`.|  
+|[operator!=](#operator_neq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `false` aynı; olmaları durumunda hata verir `true`.|  
 |[işleç =](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator_view` bunu nesnesine.|  
 |[operator ==](#operator_eq_eq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `true` aynı; olmaları durumunda hata verir `false`.|  
   
@@ -334,4 +335,4 @@ void wait();
   
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d519e7310237a00e1423f70adea5fa0590ec5350
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f694e763bb9fce65a703e8852e3f875a646f10c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="integralconstant-class-boolconstant-class"></a>integral_constant sınıfı, bool_constant sınıfı
 Bir integral, tür ve değer sabit hale getirir.  

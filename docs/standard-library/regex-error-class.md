@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 462247056f916178388ec233d7d0b9d3774bb11f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dce4b42d5e9ec05544ceb7e8c885ba93634579a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regexerror-class"></a>regex_error Sınıfı
 Hatalı basic_regex nesne bildirir.  
@@ -148,10 +149,10 @@ regex error: unbalanced parentheses
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [\<Regex >](../standard-library/regex.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
 [\<Regex > işleçleri](../standard-library/regex-operators.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
-[regex_traits sınıfı](../standard-library/regex-traits-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 586aabee3c6db0d2b87115d5c058b9a2dc5b22c9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4624046c2810f3c23807aab8824d5a0ab62fdcc3
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 Rastgele bir dizisi doğrusal congruential algoritması tarafından oluşturur.  
@@ -95,7 +96,7 @@ typedef linear_congruential_engine<unsigned int, 16807, 0, 2147483647> minstd_ra
 typedef linear_congruential_engine<unsigned int, 48271, 0, 2147483647> minstd_rand;  
 ```  
   
- Wikipedia makaleyi doğrusal congruential altyapısı algoritması hakkında ayrıntılı bilgi için bkz: [doğrusal congruential Oluşturucu](http://go.microsoft.com/fwlink/LinkId=402446).  
+ Wikipedia makaleyi doğrusal congruential altyapısı algoritması hakkında ayrıntılı bilgi için bkz: [doğrusal congruential Oluşturucu](http://go.microsoft.com/fwlink/p/?linkid=402446).  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<rastgele >  

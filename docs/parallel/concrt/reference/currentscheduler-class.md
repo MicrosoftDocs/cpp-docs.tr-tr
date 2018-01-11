@@ -27,11 +27,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad1d49bb90a5f3c0732fd81851e34485e95f3ccb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 936904f19687463a9b5c51262c8e6f7a8b9fe5a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler Sınıfı
 Bir Özet arama bağlamla ilişkili geçerli Zamanlayıcı temsil eder.  
@@ -50,7 +51,7 @@ class CurrentScheduler;
 |----------|-----------------|  
 |[Oluşturma](#create)|Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametre ve arama bağlamına ekler. Yeni oluşturulan Zamanlayıcı arama bağlamı için geçerli Zamanlayıcı olur.|  
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Arama bağlamla ilişkili Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
-|[Ayırma](#detach)|Arama bağlamından geçerli Zamanlayıcı ayırır ve varsa, daha önce eklenen Zamanlayıcısı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem döndükten sonra çağıran bağlamını sonra kullanarak içeriği önceden iliştirilmiş zamanlayıcısı tarafından yönetilen `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.|  
+|[Detach](#detach)|Arama bağlamından geçerli Zamanlayıcı ayırır ve varsa, daha önce eklenen Zamanlayıcısı geçerli Zamanlayıcı olarak geri yükler. Bu yöntem döndükten sonra çağıran bağlamını sonra kullanarak içeriği önceden iliştirilmiş zamanlayıcısı tarafından yönetilen `CurrentScheduler::Create` veya `Scheduler::Attach` yöntemi.|  
 |[Al](#get)|Bir işaretçi geçerli Zamanlayıcı da adlandırılan çağıran bağlamını ilişkili Zamanlayıcı döndürür.|  
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Arama bağlamla ilişkili Zamanlayıcı için geçerli sanal işlemci sayısını döndürür.|  
 |[GetPolicy](#getpolicy)|Geçerli Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.|  

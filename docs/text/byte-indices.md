@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: ec28ce5e577fe4d1e766934095d22a7e64a6a3da
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 594acadeedad06e9720180c38bd0bcd657391879
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 Aşağıdaki ipuçlarını kullanın:  
@@ -45,4 +46,4 @@ Aşağıdaki ipuçlarını kullanın:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   
- [Bir dizedeki son karakter](../text/last-character-in-a-string.md)
+ [Dizedeki Son Karakter](../text/last-character-in-a-string.md)

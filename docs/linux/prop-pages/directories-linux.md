@@ -11,16 +11,14 @@ ms.assetid: 12d45b93-0a5c-455e-b12a-9b9aad9a6d6c
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-f1_keywords:
-- VC.Project.VCDirectories.IncludePath
-- VC.Project.VCDirectories.LibraryPath
-- VC.Project.VCDirectories.SourcePath
-- VC.Project.VCDirectories.ExcludePath
-ms.openlocfilehash: 2ef2056e17e1c722a2a4fb3a231a0844dfd8aae2
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- linux
+ms.openlocfilehash: f1e43e5a0bd7b67c86ff0eca8abaffef43eb7f3b
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="vc-directories-linux-c"></a>VC ++ dizinleri (Linux C++)
 

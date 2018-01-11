@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c5cc3f82334752854300c683b9aa1b02c7e94791
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a8812e5ee6c568cbe7e529a21f229d7c19900b8d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nowait"></a>nowait
 Bir yönerge örtük engel geçersiz kılar.  
@@ -33,11 +34,11 @@ nowait
 ## <a name="remarks"></a>Açıklamalar  
  `nowait`Aşağıdaki yönergeleri için geçerlidir:  
   
--   [için](../../../parallel/openmp/reference/for-openmp.md)  
+-   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
 -   [bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
   
--   [tek](../../../parallel/openmp/reference/single.md)  
+-   [single](../../../parallel/openmp/reference/single.md)  
   
  Daha fazla bilgi için bkz: [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md), [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md), ve [2.4.3 tek oluşturmak](../../../parallel/openmp/2-4-3-single-construct.md).  
   
@@ -89,4 +90,4 @@ int main( )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

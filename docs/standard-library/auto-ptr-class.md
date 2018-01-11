@@ -25,11 +25,12 @@ caps.latest.revision: "26"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c7411a11a396627fb01d1dad1d47dc957ce968a7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 960da86c5ae3efa0cb50077becfb526000f71b4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 Kaynak denetim bloğu ayrıldığında otomatik olarak kaldırıldığı sağlayan bir kaynak geçici akıllı bir işaretçi sarmalar.  
@@ -91,7 +92,7 @@ public:
   
 |||  
 |-|-|  
-|[Al](#get)|Üye fonksiyonu saklı işaretçi döndüren `myptr`.|  
+|[get](#get)|Üye fonksiyonu saklı işaretçi döndüren `myptr`.|  
 |[Sürüm](#release)|Üye saklı işaretçi değiştirir `myptr` null işaretçiyle ve daha önce depolanan işaretçi döndürür.|  
 |[Sıfırla](#reset)|Üye işlevini ifadeyi hesaplar `delete myptr`, ancak yalnızca depolanmış işaretçi değeri `myptr` işlev çağrısının sonucunda değişiklikleri. Ardından saklı işaretçisi ile değiştirir `ptr`.|  
   
@@ -523,5 +524,5 @@ Destructing 00311B88 Value: 6
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [unique_ptr sınıfı](../standard-library/unique-ptr-class.md)
+ [unique_ptr Sınıfı](../standard-library/unique-ptr-class.md)
 

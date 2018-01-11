@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac2807f453b2cead5482c65f2c70665ebc7dfb98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 272d851015595840619685a79fcedf616617b2c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="srwlocklockshared-method"></a>SRWLock::LockShared Yöntemi
 Paylaşılan modda SRWLock nesneyi alır.  
@@ -47,4 +50,4 @@ static SyncLockShared LockShared(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLock sınıfı](../windows/srwlock-class.md)
+ [SRWLock Sınıfı](../windows/srwlock-class.md)

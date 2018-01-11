@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4c68c3dae5a8e53251d9d6724a91e753a7accc5e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 32377754dcb8f8098ab1f74db8fb8d4d74b0c73c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ispointer-class"></a>is_pointer Sınıfı
 Testleri türünü gösteren bir işaretçidir.  
@@ -87,4 +88,4 @@ is_pointer<int *> == true
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
  [is_member_pointer sınıfı](../standard-library/is-member-pointer-class.md)   
- [is_reference sınıfı](../standard-library/is-reference-class.md)
+ [is_reference Sınıfı](../standard-library/is-reference-class.md)

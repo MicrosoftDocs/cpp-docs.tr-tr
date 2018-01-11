@@ -27,11 +27,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9f4c174050d2280f116f41be94741dc3c71ae91a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc53ce776dd494c4af312c16d751f883afecc69d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basicfstream-class"></a>basic_fstream Sınıfı
 Ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, türündekiöğelerile`Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`.  
@@ -99,9 +100,9 @@ Writing to a basic_fstream object...
   
 |||  
 |-|-|  
-|[Kapat](#close)|Bir dosyayı kapatır.|  
+|[close](#close)|Bir dosyayı kapatır.|  
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|  
-|[açın](#open)|Bir dosyayı açar.|  
+|[open](#open)|Bir dosyayı açar.|  
 |[rdbuf](#rdbuf)|Saklı Akış Arabellek türü işaretçinin adresini döndürür [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>.|  
 |[değiştirme](#swap)|Bu nesne içeriği başka bir içerikle alış verişleri `basic_fstream` nesnesi.|  
   
@@ -264,5 +265,5 @@ void swap(basic_fstream& right);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 

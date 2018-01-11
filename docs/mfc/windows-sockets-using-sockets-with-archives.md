@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3eb7d6c18e1a1fd77e0c0c8506d46536add5cb21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c9956e48f88988dfec7e04cda5bba95e514ec109
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-using-sockets-with-archives"></a>Windows Yuvaları: Yuvaları Arşivlerle Kullanma
 Bu makalede [CSocket programlama modeli](#_core_the_csocket_programming_model). Sınıf [CSocket](../mfc/reference/csocket-class.md) sınıfı daha soyutlama daha yüksek düzeyde yuva desteği sağlayan [CAsyncSocket](../mfc/reference/casyncsocket-class.md). `CSocket`bir yuva nesnesi bir MFC üzerinden veri iletmek için MFC serileştirme protokolü bir sürümünü kullanan [CArchive](../mfc/reference/carchive-class.md) nesnesi. `CSocket`(Windows iletilerinin arka plan işleme yönetirken) engelleme sağlar ve için erişmenizi `CArchive`, pek çok görünüşünün ham API veya sınıfı kullanarak kendiniz yapmak zorunda iletişimi yöneten `CAsyncSocket`.  
@@ -82,9 +83,9 @@ Bu makalede [CSocket programlama modeli](#_core_the_csocket_programming_model). 
   
  Daha fazla bilgi için bkz.:  
   
--   [Windows Yuvaları: Akış yuvaları](../mfc/windows-sockets-stream-sockets.md)  
+-   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
   
--   [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
+-   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c4c6ad648aff3503272760675a8db99cd1889d9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b87e52294ccd61cd349ed6a85eca6760ace2c473
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş Yardım çeşitli şablonlar tanımlar.  

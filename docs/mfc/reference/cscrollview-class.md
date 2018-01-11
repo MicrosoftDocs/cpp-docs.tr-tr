@@ -39,11 +39,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a2fc453acf01b978a7cc9ba7eb569ff1775f6c11
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fc0ef44371a4ade68e80f3169778b9e867c15b17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 A [CView](../../mfc/reference/cview-class.md) yetenekleri kaydırma ile.  
@@ -353,4 +354,4 @@ void SetScrollSizes(
  [CView sınıfı](../../mfc/reference/cview-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CView sınıfı](../../mfc/reference/cview-class.md)   
- [CSplitterWnd sınıfı](../../mfc/reference/csplitterwnd-class.md)
+ [CSplitterWnd Sınıfı](../../mfc/reference/csplitterwnd-class.md)

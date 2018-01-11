@@ -51,11 +51,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ffc7f3e830d9caccf3428b2d9d3b70253d8d3b18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c5ec1881695c80c8f493ac2a2848d0349f430aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 Türündeki öğeler iletimini denetleyen bir Akış Arabellek açıklar `Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`, gelen ve giden bir dış dosyasında depolanan öğeleri dizisi.  
@@ -220,9 +221,9 @@ Hex Dump of wwHello.txt - note that output is wchar_t chars:
   
 |||  
 |-|-|  
-|[Kapat](#close)|Bir dosyayı kapatır.|  
+|[close](#close)|Bir dosyayı kapatır.|  
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını gösterir.|  
-|[açın](#open)|Bir dosyayı açar.|  
+|[open](#open)|Bir dosyayı açar.|  
 |[taşma](#overflow)|Yeni bir karakter tam arabelleğine takıldığında çağrılabilir korumalı sanal işlev.|  
 |[pbackfail](#pbackfail)|Korumalı sanal üye fonksiyonu geri öğenin Giriş akışı yerleştirin ve ardından (tarafından sonraki işaretçisi işaret) geçerli öğe olun dener.|  
 |[seekoff](#seekoff)|Korumalı sanal üye fonksiyonu geçerli konumlar denetimli akışlar için alter dener.|  
@@ -624,5 +625,5 @@ virtual int_type underflow();
  [\<fstream >](../standard-library/fstream.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
