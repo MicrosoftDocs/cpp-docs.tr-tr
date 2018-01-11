@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7ad1ba9120575840ac833a20061b3e1c5a547412
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: bf82e1fabd45e9bccd63e4ba46068b75d2c2a0a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-working-with-large-data-items-odbc"></a>Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)
 Bu konu, MFC ODBC sınıfları ve MFC DAO sınıfları için geçerlidir.  
@@ -67,4 +70,4 @@ Bu konu, MFC ODBC sınıfları ve MFC DAO sınıfları için geçerlidir.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
  [Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)   
- [Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+ [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

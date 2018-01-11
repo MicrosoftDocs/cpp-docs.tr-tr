@@ -33,11 +33,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 72de3b05dad581b2b0f4f3eec19e15d211bba601
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8f93c17416c81d4c152608f4d8a8b78f48e5422c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
 Daha fazla bilgi için bkz: [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
@@ -263,4 +264,4 @@ OLEUICONVERT m_cv;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)
+ [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)

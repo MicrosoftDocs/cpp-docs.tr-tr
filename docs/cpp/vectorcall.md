@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e61efe58ae718e7381d6404f54c0887f556ac34c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54c1473e2341c783ebf73883680d51f161d99163
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorcall"></a>__vectorcall
 **Microsoft özel**  
@@ -300,4 +301,4 @@ int __cdecl main( void )
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

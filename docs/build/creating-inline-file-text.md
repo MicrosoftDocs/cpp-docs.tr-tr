@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 174160657e5494f5566fd0828815b3c0f1b3d601
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dcc27a303e9d03d2e899a76703bcfae5abfd0c04
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-inline-file-text"></a>Satır İçi Dosya Metni Oluşturma
 Satır içi dosyalar, geçici veya kalıcı.  
@@ -43,4 +44,4 @@ Satır içi dosyalar, geçici veya kalıcı.
  Geçici bir dosya oturum boyunca var ve diğer komutlarla yeniden kullanılabilir. Belirtin **TUTMAK** NMAKE oturumun ardından; dosyayı korumak için kapanış açılı ayraçları sonra adsız bir dosya diskte oluşturulan dosya adı ile korunur. Belirtin **NOKEEP** veya geçici bir dosya için hiçbir şey yok. **TUTMAK** ve **NOKEEP** büyük küçük harfe duyarlı değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyasındaki satır içi dosyalar](../build/inline-files-in-a-makefile.md)
+ [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

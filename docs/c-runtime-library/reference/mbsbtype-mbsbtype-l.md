@@ -39,11 +39,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a20ff8b10229714a434dc0f77748f37f9c15064a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 05c106136c36d09b06e5b168a0c582b87c306d93
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbsbtype-mbsbtypel"></a>_mbsbtype, _mbsbtype_l
 Dize içinde bayt türünü döndürür.  
@@ -104,4 +105,4 @@ int _mbsbtype_l(
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)
+ [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)

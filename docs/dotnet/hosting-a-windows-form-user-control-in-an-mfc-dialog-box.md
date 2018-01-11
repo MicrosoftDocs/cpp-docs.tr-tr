@@ -17,11 +17,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 311a07b81eb5450853d94332cbc742007546ee8e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: da8e8a54947b329fe36eea5c80bdc13ba5cdfa74
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hosting-a-windows-form-user-control-in-an-mfc-dialog-box"></a>MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma
 MFC ActiveX denetimi özel bir tür olarak bir Windows Forms denetimi barındırır ve denetimle ActiveX arabirimleri ve özelliklerini ve yöntemlerini kullanarak iletişim kurar <xref:System.Windows.Forms.Control> sınıfı. Denetim üzerinde çalışması için .NET Framework özellikleri ve yöntemleri kullanmanızı öneririz.  
@@ -32,11 +35,11 @@ MFC ActiveX denetimi özel bir tür olarak bir Windows Forms denetimi barındır
 >  Geçerli sürümde, bir `CDialogBar` nesnesi Windows Forms denetimlerini barındıramaz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: bir iletişim kutusunda kullanıcı denetimi ve konak oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)  
+ [Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma](../dotnet/how-to-create-the-user-control-and-host-in-a-dialog-box.md)  
   
  [Nasıl yapılır: Windows Forms ile DDX/DDV veri bağlaması yapma](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md)  
   
- [Nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)  
+ [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)  
   
 ## <a name="reference"></a>Başvuru  
  [Ddx_managedcontrol sınıfı](../mfc/reference/cwinformscontrol-class.md) &#124; [CDialog sınıfı](../mfc/reference/cdialog-class.md) &#124; [CWnd sınıfı](../mfc/reference/cwnd-class.md) &#124;<xref:System.Windows.Forms.Control>  
@@ -45,4 +48,4 @@ MFC ActiveX denetimi özel bir tür olarak bir Windows Forms denetimi barındır
  [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
  [Windows Forms/MFC programlama farkları](../dotnet/windows-forms-mfc-programming-differences.md)   
  [MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)   
- [MFC iletişim kutusu olarak Windows formu kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)
+ [MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)

@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b3475ae25a6c11dbbbead1de4fb4f3180e2e24f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 96a12f544babbf188c3718bcd49233472ad0d002
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="member-declarations-within-a-class-or-interface-ccli"></a>Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)
 Özellikler ve işleçlerin bildirimi yaygın Yönetilen Uzantılar'dan C++ için Yönetilen Uzantılar tasarımında gösterilen temeldeki uygulama ayrıntılarını gizleme Visual C++ için oluşturulmuştur. Olay bildirimleri de değiştirildi.  
@@ -28,32 +31,32 @@ ms.lasthandoff: 10/24/2017
  Değişiklik kategorisi altında olan Yönetilen Uzantılar desteği olmayan, statik oluşturucular artık olmasını tanımlanan çıkış (bunlar Yönetilen Uzantılar içinde tanımlanan satır içi gerekiyordu) satır dışı ve oluşturucuyu temsilci seçme kavramı sunulmuştur.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Özellik bildirimi](../dotnet/property-declaration.md)  
+ [Özellik Bildirimi](../dotnet/property-declaration.md)  
  Özellik bildirimleri değişiklikler açıklanır.  
   
- [Özellik dizini bildirimi](../dotnet/property-index-declaration.md)  
+ [Özellik Dizini Bildirimi](../dotnet/property-index-declaration.md)  
  Dizin oluşturulmuş özellik bildirimleri değişiklikler açıklanır.  
   
- [Temsilciler ve olaylar](../dotnet/delegates-and-events.md)  
+ [Temsilciler ve Olaylar](../dotnet/delegates-and-events.md)  
  Temsilciler ve olaylar bildirmek için sözdizimi değişiklikleri açıklar.  
   
- [Sanal işlev mühürleme](../dotnet/sealing-a-virtual-function.md)  
+ [Sanal İşlev Mühürleme](../dotnet/sealing-a-virtual-function.md)  
  Bir işlev mühürleme için sözdizimi değişiklikleri açıklar.  
   
- [Aşırı yüklenmiş işleçler](../dotnet/overloaded-operators.md)  
+ [aşırı yüklenmiş işleçler](../dotnet/overloaded-operators.md)  
  İşleç aşırı yüklemesi değişiklikler açıklanır.  
   
  [Dönüştürme İşleçlere Değiştirme](../dotnet/changes-to-conversion-operators.md)  
  Dönüştürme İşleçlere Değiştirme açıklanır.  
   
- [Arabirim üyesini açık geçersiz kılma](../dotnet/explicit-override-of-an-interface-member.md)  
+ [Arabirim Üyesini Açık Geçersiz Kılma](../dotnet/explicit-override-of-an-interface-member.md)  
  Arabirim üyesini açık geçersiz kılma için yönteminde değişiklikler açıklanmaktadır.  
   
- [Özel sanal işlevler](../dotnet/private-virtual-functions.md)  
+ [Özel Sanal İşlevler](../dotnet/private-virtual-functions.md)  
  Türetilmiş sınıflarda özel sanal işlevler işlenme değişiklikleri anlatır.  
   
- [Statik Const Int bağlantısı artık değişebilir değerdir](../dotnet/static-const-int-linkage-is-no-longer-literal.md)  
+ [Statik Const Int Bağlantısı Artık Değişebilir Değerdir](../dotnet/static-const-int-linkage-is-no-longer-literal.md)  
  Yönteminde değişiklikler tartışılır `static const` tümleşik üyeleri bağlı ve açıkça kullanarak yeni bir sabit bildirme nasıl `literal` anahtar sözcüğü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)
+ [C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)

@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c2d7403dc318a0d5c7a906ec4c7f1e388143b3f6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b092dad600c1698d3cbe550f16e05a8307f030fd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicparameteraccessorsetparam"></a>CDynamicParameterAccessor::SetParam
 Belirtilen (dize olmayan) verileri kullanarak parametre arabelleği ayarlar.  
@@ -78,4 +81,4 @@ bool SetParam(
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDynamicParameterAccessor sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)
+ [CDynamicParameterAccessor Sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)

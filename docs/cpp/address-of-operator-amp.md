@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d542c508b84da14d4f628796ae5fd42983db0114
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 814b21839ac851e942aaee34ed28fd43facb418a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="address-of-operator-amp"></a>Address-of işleci:&amp;
 ## <a name="syntax"></a>Sözdizimi  
@@ -116,4 +117,4 @@ int main() {
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Lvalue başvuru Bildirimcisi: &](../cpp/lvalue-reference-declarator-amp.md)   
- [Yöneltmesi ve adresi-of işleçleri](../c-language/indirection-and-address-of-operators.md)
+ [İşleçlerin Yöneltmesi ve Adresi](../c-language/indirection-and-address-of-operators.md)

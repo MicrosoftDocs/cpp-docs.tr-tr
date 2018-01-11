@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e56547eec870265bcb2e5b77e19a237102c59ef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: eb2a5aa351afec2d5a379b6c8c0543e69db2f045
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdataconnectioncopy"></a>CDataConnection::Copy
 Varolan bir veri bağlantısı bir kopyasını oluşturur.  
@@ -45,4 +48,4 @@ Varolan bir veri bağlantısı bir kopyasını oluşturur.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDataConnection sınıfı](../../data/oledb/cdataconnection-class.md)
+ [CDataConnection Sınıfı](../../data/oledb/cdataconnection-class.md)

@@ -83,11 +83,12 @@ caps.latest.revision: "36"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 734097d8fffcbe21f17b68432d6233a03b11a28a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a235b88b676f7cf643a878e9a06408c87b20bcba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 `CMFCStatusBar` Sınıfı uygulayan benzer bir durum çubuğu `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından sunulmuyor özelliklere sahiptir `CStatusBar` görüntüleri, animasyonları ve ilerleme çubukları; görüntüleme olanağı ve fare çift tıklamalar yanıt verme yeteneği gibi sınıfı. 
@@ -777,4 +778,4 @@ void SetTipText(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CPane sınıfı](../../mfc/reference/cpane-class.md)   
- [CStatusBar sınıfı](../../mfc/reference/cstatusbar-class.md)
+ [CStatusBar Sınıfı](../../mfc/reference/cstatusbar-class.md)

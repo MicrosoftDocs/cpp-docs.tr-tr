@@ -39,11 +39,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 05b29845f327c680d0fd37b26ec9782a20c47d94
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23dd24116fe279cc44c95b627d7420b11a2a8361
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrt-relational-operators"></a>_com_ptr_t İlişkisel İşleçleri
 **Microsoft özel**  
@@ -189,4 +190,4 @@ bool operator>=(
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

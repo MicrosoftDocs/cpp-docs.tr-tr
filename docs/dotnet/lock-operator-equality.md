@@ -19,11 +19,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33e372deb0bbae86efdf1a7c928d45e673e0b334
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 60922b0074a1ce10a4c6f61d73d3c20f3381f508
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lockoperator"></a>lock::operator==
 Eşitlik işleci.  
@@ -74,4 +77,4 @@ Equal!
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [lock üyeleri](../dotnet/lock-members.md)   
- [Lock::operator! =](../dotnet/lock-operator-inequality.md)
+ [lock::operator!=](../dotnet/lock-operator-inequality.md)

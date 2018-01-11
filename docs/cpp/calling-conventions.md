@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13003d247e1fb90ff078746af0cbbe2d7255ea18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d2b5dbd0821516f5de1d05bc2069ee165e762241
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="calling-conventions"></a>Çağırma Kuralları
 Visual C/C++ derleyicisi, iç ve dış işlevleri çağırmak için birkaç farklı kural sağlar. Bu farklı yaklaşımların anlaşılması, programınızdaki hataları ayıklamanıza ve kodunuzu derleme dili yordamlarına bağlamanıza yardımcı olur.  
@@ -31,13 +32,13 @@ Visual C/C++ derleyicisi, iç ve dış işlevleri çağırmak için birkaç fark
   
 -   [Bağımsız değişken geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md) (`__cdecl`, `__stdcall`, `__fastcall`ve diğerleri)  
   
--   [Çağırma örneği: İşlev prototipi ve çağrı](../cpp/calling-example-function-prototype-and-call.md)  
+-   [Çağırma Örneği: İşlev Prototipi ve Çağrı](../cpp/calling-example-function-prototype-and-call.md)  
   
 -   [Çıplak işlev çağrıları özel giriş ve bitiş kodu yazmak için kullanma](../cpp/naked-function-calls.md)  
   
--   [Kayan nokta Eşişlemcisi ve çağırma kuralları](../cpp/floating-point-coprocessor-and-calling-conventions.md)  
+-   [Kayan Nokta Eşişlemcisi ve Çağırma Kuralları](../cpp/floating-point-coprocessor-and-calling-conventions.md)  
   
 -   [Kullanılmayan çağırma kuralları](../cpp/obsolete-calling-conventions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)
+ [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

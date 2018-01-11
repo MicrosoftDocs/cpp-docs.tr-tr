@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f65bba12d56ec8e73dacd661ba551aa6e3ea636b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 54e0cfd9c0cd2a21bf483024827d998bc046b659
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandimplmbisexecuting"></a>ICommandImpl::m_bIsExecuting
 Komut şu anda yürütülmekte olup olmadığını gösterir.  
@@ -45,4 +48,4 @@ unsigned m_bIsExecuting:1;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icommandımpl sınıfı](../../data/oledb/icommandimpl-class.md)   
- [Icommandımpl::m_bcancelwhenexecuting](../../data/oledb/icommandimpl-m-bcancelwhenexecuting.md)
+ [ICommandImpl::m_bCancelWhenExecuting](../../data/oledb/icommandimpl-m-bcancelwhenexecuting.md)

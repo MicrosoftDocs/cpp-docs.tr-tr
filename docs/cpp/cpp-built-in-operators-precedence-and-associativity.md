@@ -23,11 +23,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7a286be3d29e22cc3bae3d34241f08735f5f7b0b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 95cbb68740fe43fa8a76624abb57284cb68e7805
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçleri, öncelik ve birleşim
 
@@ -62,8 +63,8 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 |[Birli artı](../cpp/unary-plus-and-negation-operators-plus-and.md)|[+](../cpp/unary-plus-and-negation-operators-plus-and.md)|
 |[Adres](../cpp/address-of-operator-amp.md)|[&amp;](../cpp/address-of-operator-amp.md)|
 |[Yöneltme](../cpp/indirection-operator-star.md)|[&#42;](../cpp/indirection-operator-star.md)|
-|[Nesne oluşturma](../cpp/new-operator-cpp.md)|[Yeni](../cpp/new-operator-cpp.md)|
-|[Nesne yok](../cpp/delete-operator-cpp.md)|[Sil](../cpp/delete-operator-cpp.md)|
+|[Nesne oluşturma](../cpp/new-operator-cpp.md)|[new](../cpp/new-operator-cpp.md)|
+|[Nesne yok](../cpp/delete-operator-cpp.md)|[delete](../cpp/delete-operator-cpp.md)|
 |[Atama](../cpp/cast-operator-parens.md)|[()](../cpp/cast-operator-parens.md)|
 |**Sağ birleşim sol Grup 4 önceliği**|
 |[İşaretçi-üye (nesneleri veya işaretçileri)](../cpp/pointer-to-member-operators-dot-star-and-star.md)|[. &#42; ya da -> &#42;](../cpp/pointer-to-member-operators-dot-star-and-star.md)|
@@ -116,6 +117,6 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İşleç aşırı yüklemesi](operator-overloading.md)
+[İşleç Aşırı Yüklemesi](operator-overloading.md)
 
 

@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d7eaeb62f3d8231d7b1a5bca503cd355f7a7aca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6754adcb348cb6eb061e32fc58e78f43663b1a90
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="process"></a>process
 Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye değişkeninin veya işlemde tüm uygulama etki alanlarında paylaşılan statik yerel değişkenin tek bir kopyasının olması gerektiğini belirtir. Bu öncelikle ile derleme yapılırken kullanılacak yöneliktir **/CLR: pure**, çünkü altında **/CLR: pure** genel ve statik değişkenlerdir varsayılan uygulama etki alanı başına. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. İle derleme yapılırken **/CLR**, genel ve statik değişkenlerdir varsayılan işlem başına (kullanmasına gerek kalmamasını `__declspec(process)`.  
@@ -38,4 +39,4 @@ Yönetilen uygulama işleminizde, belirli genel değişkenin, statik üye deği�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 922e5cdf0e52cee694c4ce4e54e90e1fcf10be88
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d7cec85c3f667b5ea0423ad6caf998c53bad6307
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csessioncommit"></a>CSession::Commit
 İşlem kaydeder.  
@@ -52,4 +55,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CSession sınıfı](../../data/oledb/csession-class.md)
+ [CSession Sınıfı](../../data/oledb/csession-class.md)

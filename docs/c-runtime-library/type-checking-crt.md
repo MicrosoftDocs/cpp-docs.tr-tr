@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6bffc721ac685be91531b3d876234de8be2477c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d18ae0818dd839bee0d93bd7194dadcc9abf6627
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="type-checking-crt"></a>Tür Denetleme (CRT)
 Derleyici sınırlı tür denetlemesi değişken sayıda bağımsız değişken, aşağıdaki gibi yapabileceği işlevleri gerçekleştirir:  
@@ -40,4 +41,4 @@ Derleyici sınırlı tür denetlemesi değişken sayıda bağımsız değişken,
  Derleyici aynı sınırlı tür bu işlevler joker karakter karşılık gelen denetleme gerçekleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

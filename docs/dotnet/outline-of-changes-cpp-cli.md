@@ -13,11 +13,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a17ad8aca031d6345f3ded4839dbb543c1edf133
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: fdc0015bda5f0a6678b1d274c79445aba4e4aab0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="outline-of-changes-ccli"></a>Değişikliklerin Anahattı (C++/CLI)
 Bu anahat, bazı değişiklikler örnekleri Yönetilen Uzantılar'dan dilde c++ Visual C++ için gösterir. Daha fazla bilgi için her öğe eşlik bağlantıyı izleyin.  
@@ -519,6 +522,6 @@ Array^ myIntArray =
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)   
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
 
 

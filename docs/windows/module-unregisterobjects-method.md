@@ -15,11 +15,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6f62ae76b0ff86c11ab0bc347550fe27b406acb5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d7e55afb96805fba6558cb900d2421a86379791c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="moduleunregisterobjects-method"></a>Module::UnregisterObjects Yöntemi
 Böylece diğer uygulamalar için bağlanamıyor Belirtilen modül nesneleri kaydını siler.  
@@ -48,4 +51,4 @@ HRESULT UnregisterObjects(
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Modül sınıfı](../windows/module-class.md)
+ [Modül Sınıfı](../windows/module-class.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 960f7989d3891be4cf23ef75b0982a2577f5e95e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ae8b8266aca2c9d6099455ddcb7618206dbe8c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-ccomobjectrootex"></a>İn uygulamasına uygulama
 [İn uygulamasına](../atl/reference/ccomobjectrootex-class.md) tüm ATL nesneleri bir örneği olması gerekir; gereklidir `CComObjectRootEx` veya [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) kendi Devralmada. `CComObjectRootEx`Varsayılan sağlar `QueryInterface` mekanizması tabanlı COM harita girişlerde.  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)   
- [COM eşleme makroları](../atl/reference/com-map-macros.md)
+ [COM Eşleme Makroları](../atl/reference/com-map-macros.md)
 

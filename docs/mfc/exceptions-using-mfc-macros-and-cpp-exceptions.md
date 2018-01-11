@@ -27,11 +27,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ecf00200b87b1999293e8c6d69e922c3052d5c9c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6597f43deee73addff8e8f2045a38d7b1109fc0b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma
 Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahtar sözcükleri kullanan kodu yazmada dikkat edilmesi gerekenler açıklanmaktadır.  
@@ -63,5 +64,5 @@ Bu makalede MFC özel durum işleme makroları ve C++ özel durum işleme anahta
  Daha fazla bilgi için bkz: [özel durumlar: özel durum içeriklerini İnceleme](../mfc/exceptions-examining-exception-contents.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

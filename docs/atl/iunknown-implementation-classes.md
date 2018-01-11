@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac484e58b585a09eff40d1b058e44dad6b8d394c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 34c0b46d8a7d89ca46dc4361fe85469bd64e538c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iunknown-implementation-classes"></a>IUnknown uygulaması sınıfları
 Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:  
@@ -47,11 +48,11 @@ Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:
 -   [CComObjectStack](../atl/reference/ccomobjectstack-class.md) iskelet uyarlamasını kullanarak geçici bir COM nesnesi oluşturur **IUnknown**.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)  
+ [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
  [Toplama ve sınıf Fabrika makroları](../atl/reference/aggregation-and-class-factory-macros.md)   
  [COM eşleme makroları](../atl/reference/com-map-macros.md)   
- [COM eşlemesi genel işlevler](../atl/reference/com-map-global-functions.md)
+ [COM Eşlemesi Genel İşlevleri](../atl/reference/com-map-global-functions.md)
 

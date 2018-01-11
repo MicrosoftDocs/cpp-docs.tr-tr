@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 925e1f7a2675dc0aaed3a0cab064e01681de673c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ca20bfa7574f604187734040b3ccc001d6aaf68d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comerrorwcodetohresult"></a>_com_error::WCodeToHRESULT
 **Microsoft özel**  
@@ -50,4 +51,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_com_error::WCode](../cpp/com-error-wcode.md)   
  [_com_error::HRESULTToWCode](../cpp/com-error-hresulttowcode.md)   
- [_com_error sınıfı](../cpp/com-error-class.md)
+ [_com_error Sınıfı](../cpp/com-error-class.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4178d9d6a48e10510bb739bc2e1a55ecbe2714e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7453fbab0ade6cfe2cbdd836d7d59ba49c3ccfd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="references-c"></a>Başvurular (C++)
 Bir işaretçi aşağıdakine benzer bir başvuru bellekte bir başka bir yerde bulunan nesnenin adresini depolar. Bir işaretçi başlatıldıktan sonra bir başvuru ayarlayın ya da farklı bir nesneye başvuruda kurulamıyor null. Başvuruları iki tür vardır: başvuran bir adlandırılmış değişken ve rvalue başvuru başvuran lvalue başvuru bir [geçici nesne](../cpp/temporary-objects.md). & İşleci güveninin lvalue başvuru ve & & işleci rvalue başvuru veya bağlam bağlı olarak Evrensel başvurusu (rvalue veya lvalue) olduğunu belirtir.  
@@ -117,9 +118,9 @@ int main() {
 ## <a name="comment"></a>Yorum  
  Bu bölümdeki konular:  
   
--   [Başvuru türü işlev bağımsız değişkenleri](../cpp/reference-type-function-arguments.md)  
+-   [Başvuru Türü İşlev Bağımsız Değişkenleri](../cpp/reference-type-function-arguments.md)  
   
--   [Başvuru türü işlev dönüşleri](../cpp/reference-type-function-returns.md)  
+-   [Başvuru Türü İşlev Dönüşleri](../cpp/reference-type-function-returns.md)  
   
--   [İşaretçi başvuruları](../cpp/references-to-pointers.md)  
+-   [İşaretçi Başvuruları](../cpp/references-to-pointers.md)  
   

@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: baab48b21ab624d285fecac0e888f8d32e86342b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 002979151b6c076cc1f5d7f7a7ec2868ae897df3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetidentityimplissamerow"></a>IRowsetIdentityImpl::IsSameRow
 Aynı satır başvurursanız görmek için iki satır işleyicilerini karşılaştırır.  
@@ -49,4 +52,4 @@ Aynı satır başvurursanız görmek için iki satır işleyicilerini karşıla�
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Irowsetıdentityımpl sınıfı](../../data/oledb/irowsetidentityimpl-class.md)
+ [IRowsetIdentityImpl Sınıfı](../../data/oledb/irowsetidentityimpl-class.md)

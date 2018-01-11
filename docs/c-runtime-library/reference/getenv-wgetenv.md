@@ -41,11 +41,12 @@ caps.latest.revision: "31"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8a0f0ebd9d413a8ab49abcc08102cd33948e24fc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e0d010e7b04093446792eb122a67227880b7a395
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="getenv-wgetenv"></a>getenv, _wgetenv
 Geçerli ortamından bir değer alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
@@ -152,4 +153,4 @@ New LIB variable is: c:\mylib;c:\yourlib
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
  [_putenv, _wputenv](../../c-runtime-library/reference/putenv-wputenv.md)   
- [Ortam sabitleri](../../c-runtime-library/environmental-constants.md)
+ [Ortam Sabitleri](../../c-runtime-library/environmental-constants.md)

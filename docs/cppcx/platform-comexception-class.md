@@ -18,11 +18,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 28475df3c5d13d1b90483213173f5343f6b85d79
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de0f7546019096e5126938d47443f6584bf4edb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException sınıfı
 Uygulama yürütmesi sırasında oluşan COM hataları temsil eder. COMException bir dizi önceden tanımlanmış, standart özel durumlar için temel sınıftır.  
@@ -44,11 +45,11 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 |------------|-----------------|  
 |[COMException](#ctor)|COMException sınıfının yeni bir örneğini başlatır.|  
   
- **Yöntemleri**  
+ **Yöntemler**  
   
  COMException sınıfı Equals(), Finalize(), GetHashCode(), GetType(), MemberwiseClose() ve ToString() yöntemleri devralır [Platform::Object sınıfı](../cppcx/platform-object-class.md).  
   
- **Veri Erişimi**  
+ **Özellikler**  
   
  COMException sınıfı aşağıdaki özelliklere sahiptir.  
   

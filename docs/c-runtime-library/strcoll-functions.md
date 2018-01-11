@@ -27,11 +27,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 224c30dfbc79ab91e60f7f55f4835d3f627c454c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e5f025d90d4ffac5f9dc293f621023591b5eb4f7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strcoll-functions"></a>strcoll İşlevleri
 Her biri `strcoll` ve `wcscoll` işlevlerini karşılaştırılmaktadır göre iki dizeyi `LC_COLLATE` kategori ayarı yerel ayar kod sayfası şu anda kullanımda. Her biri `_mbscoll` işlevler şu anda kullanımda birden çok baytlı kod sayfasına göre iki dizeyi karşılaştırır. Kullanım `coll` işlevleri geçerli kod sayfası karakter kümesi sırasını ve lexicographic karakter sırası arasında bir fark yoktur ve bu fark karşılaştırma için ilgilendirir dize karşılaştırmaları için. Karşılık gelen kullanmak `cmp` dize eşitlik için yalnızca test etmek için işlevleri.  

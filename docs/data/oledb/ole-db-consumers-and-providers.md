@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd09e1566a6f53244d420387870a03b0b34f8fb6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 4f0a0ee77b13d6e5231d002cb444ac5a7847f3d6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-consumers-and-providers"></a>OLE DB Tüketicileri ve Sağlayıcıları
 OLE DB Mimari Tüketicileri ve sağlayıcıları modelini kullanır. Bir tüketici veri isteğinde bulunur. Bir sağlayıcı tablo biçiminde veri yerleştirip tüketiciye dönmeden bu isteklere yanıt verir. Tüketici yapabilen herhangi bir çağrısına sağlayıcısında uygulanmalıdır.  
@@ -36,4 +39,4 @@ OLE DB Mimari Tüketicileri ve sağlayıcıları modelini kullanır. Bir tüketi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
- [OLE DB programlamaya genel bakış](../../data/oledb/ole-db-programming-overview.md)
+ [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

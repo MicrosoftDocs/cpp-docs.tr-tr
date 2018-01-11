@@ -21,11 +21,12 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 helpviewer_keywords: std::chrono [C++], duration
-ms.openlocfilehash: 70dc3b3b21961946a73f73e44ae3bed7c283bd4c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e25b632554f56054793f60f3fe058791798894d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="duration-class"></a>duration Sınıfı
 Tutan bir türünü açıklayan bir *zaman aralığı*, iki zaman noktası arasında geçen süre olduğu.  
@@ -295,4 +296,4 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [\<chrono >](../standard-library/chrono.md)   
- [duration_values yapısı](../standard-library/duration-values-structure.md)
+ [duration_values Yapısı](../standard-library/duration-values-structure.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cc2da54365af1d09d92608c4e6f37c3b04fd7230
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 97f3b609a68071f34e1841128a66b5518e1b17db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-mfc-topics"></a>Genel MFC Konuları
 Bu makaleler ailesi Microsoft Foundation Class (MFC) Kitaplığı hakkında teknik ayrıntılar içerir ve MFC çerçevesi ve anahtar bileşenleri ve alt sistemleri genel bir bakış sağlar.  
@@ -33,36 +34,36 @@ Bu makaleler ailesi Microsoft Foundation Class (MFC) Kitaplığı hakkında tekn
 ## <a name="in-this-section"></a>Bu Bölümde  
  `MFC Samples`, içinde sağlanacak olan [Visual C++ örnekleri](../visual-cpp-samples.md)  
   
- [MFC kaynak dosyalarını kullanma](../mfc/using-the-mfc-source-files.md)  
+ [MFC Kaynak Dosyalarını Kullanma](../mfc/using-the-mfc-source-files.md)  
   
- [MFC kitaplık sürümleri](../mfc/mfc-library-versions.md)  
+ [MFC Kitaplık Sürümleri](../mfc/mfc-library-versions.md)  
   
- [Windows uygulamaları yazmak için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)  
+ [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)  
   
- [Framework'te derleme](../mfc/building-on-the-framework.md)  
+ [Framework'te Derleme](../mfc/building-on-the-framework.md)  
   
- [CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)  
+ [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)  
   
  [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)  
   
- [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)  
+ [MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)  
   
- [Boşta döngü işleme](../mfc/idle-loop-processing.md)  
+ [Boşta Çevrim İşleme](../mfc/idle-loop-processing.md)  
   
- [MFC modül durumunda etkinleştirme bağlamları desteği](../mfc/support-for-activation-contexts-in-the-mfc-module-state.md)  
+ [MFC Modül Durumunda Etkinleştirme Bağlamları Desteği](../mfc/support-for-activation-contexts-in-the-mfc-module-state.md)  
   
- [MFC ortak denetimler kitaplığı yalıtımı](../mfc/isolation-of-the-mfc-common-controls-library.md)  
+ [MFC Ortak Denetimler Kitaplığını Yalıtma](../mfc/isolation-of-the-mfc-common-controls-library.md)  
   
- [Windows Vista ortak denetimleri için derleme gereksinimleri](../mfc/build-requirements-for-windows-vista-common-controls.md)  
+ [Windows Vista Ortak Denetimleri için Derleme Gereksinimleri](../mfc/build-requirements-for-windows-vista-common-controls.md)  
   
- [Nasıl yapılır: yeniden başlatma Yöneticisi desteği ekleme](../mfc/how-to-add-restart-manager-support.md)  
+ [Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme](../mfc/how-to-add-restart-manager-support.md)  
   
- [Dinamik düzen](../mfc/dynamic-layout.md)  
+ [Dinamik Düzen](../mfc/dynamic-layout.md)  
   
  MFC başvuru belgelerine genel bakış için bkz: [Microsoft Foundation Class Kitaplığı](../mfc/mfc-desktop-applications.md).  
   
  ATL hakkında daha fazla bilgi için bkz: [Etkin Şablon kitaplığı başvurusu](../atl/atl-class-overview.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere nesneleriyle çalışma](../mfc/working-with-window-objects.md)
+ [Pencere Nesneleriyle Çalışma](../mfc/working-with-window-objects.md)
 

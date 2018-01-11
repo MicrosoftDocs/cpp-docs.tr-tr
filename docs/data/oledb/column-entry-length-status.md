@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e57bcde55ae4d13d00bef6fe2b045a9f71e3d20f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 6b00bcd4a5f53b1e2451483ca1d0c8887c1b7723
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="columnentrylengthstatus"></a>COLUMN_ENTRY_LENGTH_STATUS
 Satır kümesi bağlamada veritabanındaki belirli sütunu temsil eder.  

@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b907524992b1fee2696856fe13cfc983fdfb8c61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: baf823d7ab09109a4b06a15039ed3fd9d7540191
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 Bir arabellek diğerine taşır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [memmove_s, wmemmove_s](../../c-runtime-library/reference/memmove-s-wmemmove-s.md).  

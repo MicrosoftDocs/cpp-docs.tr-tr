@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b3540a2d6d1c32a72d16cdb9bdab19aa18604021
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed083c960421ce17c0ce61036cd05191fc12c797
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="e-preprocess-to-stdout"></a>/E (stdout'a Önişle)
 C ve C++ kaynak dosyalarını preprocesses ve standart çıktı aygıtına önceden işlenmiş dosyalarını kopyalar.  
@@ -90,4 +91,4 @@ CL /E /C ADD.C
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

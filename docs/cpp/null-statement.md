@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ecaa8d968efa9a3cd8c700d3d4dfe4cae0f0dd53
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c10b493284ed4f81b15a1f045a3053743d919cc5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="null-statement"></a>Boş Deyim
 "Null" ile bir ifade deyimi açıklamadır *ifade* eksik. Dilin sözdizimi bir deyimi çağırdığında, ancak hiçbir ifade değerlendirmesini çağırmadığında yararlı olur. Noktalı virgül içerir.  
@@ -51,4 +52,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade deyimi](../cpp/expression-statement.md)
+ [İfade Deyimi](../cpp/expression-statement.md)

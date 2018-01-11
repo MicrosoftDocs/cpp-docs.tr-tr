@@ -12,14 +12,15 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 7c6e36d00d27f5fcf32faec666871ced1d9d0ac5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b34c0d36c33652ecbef3a1af745015d92fc05f3
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="quick-reference-ccx"></a>Hızlı Başvuru (C + +/ CX)
-Windows çalışma zamanı yalnızca güvenilir işletim sistemi ortamında yürütmek, yetkili İşlevler, veri türleri ve cihazlar kullanır ve aracılığıyla dağıtılan Evrensel Windows platformu uygulamaları destekleyen [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)]. C + +/ CX uygulamaları yazma Windows çalışma zamanı için basitleştirin. Bu makalede Hızlı Başvuru değildir; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md) ve [çalışma zamanı platformları için bileşen uzantıları](http://go.microsoft.com/fwlink/?LinkId=228720).  
+Windows çalışma zamanı yalnızca güvenilir işletim sistemi ortamında yürütmek, yetkili İşlevler, veri türleri ve cihazlar kullanır ve aracılığıyla dağıtılan Evrensel Windows platformu uygulamaları destekleyen [!INCLUDE[win8_appstore_long](../cppcx/includes/win8-appstore-long-md.md)]. C + +/ CX uygulamaları yazma Windows çalışma zamanı için basitleştirin. Bu makalede Hızlı Başvuru değildir; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md) ve [çalışma zamanı platformları için bileşen uzantıları](http://go.microsoft.com/fwlink/p/?linkid=228720).  
   
  Komut satırında derlerken kullanmak **/ZW** derleyici seçeneği bir evrensel Windows platformu uygulama veya bir Windows çalışma zamanı bileşeni oluşturma. Windows çalışma zamanı meta verileri (.winmd) dosyalarında tanımlanan, Windows çalışma zamanı bildirimleri erişmeye belirtin `#using` yönergesi veya **/FU** derleyici seçeneği. Bir evrensel Windows Platform uygulaması için bir proje oluşturduğunuzda, varsayılan olarak Visual Studio bu seçenekleri ayarlar ve tüm Windows çalışma zamanı kitaplıkları başvuruları ekler.  
   

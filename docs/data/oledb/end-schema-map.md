@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 560949afbfe02ff3c160c815be995b2dd3af5a29
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 856a124a0a63940c19c11660febea447a681fe98
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="endschemamap"></a>END_SCHEMA_MAP
 Şema eşleme sonunu gösterir.  
@@ -39,4 +42,4 @@ END_SCHEMA_MAP( )
  [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md)   
  [BEGIN_SCHEMA_MAP](../../data/oledb/begin-schema-map.md)   
  [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)   
- [IDBSchemaRowsetImpl sınıfı](../../data/oledb/idbschemarowsetimpl-class.md)
+ [IDBSchemaRowsetImpl Sınıfı](../../data/oledb/idbschemarowsetimpl-class.md)

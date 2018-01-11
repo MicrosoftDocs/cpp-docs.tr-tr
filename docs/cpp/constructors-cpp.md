@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77007b3d3805bb2fa159680c88d8e41825336da2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 57854ec15d3104d80e8dbba68ebc33937222172f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 Bir oluşturucu, kendi sınıfının bir örneğini başlatır üye işlevi türüdür. Bir oluşturucu sınıf ve hiçbir değer döndürmeyen aynı ada sahip. Bir Oluşturucu parametreleri herhangi bir sayıda olabilir ve bir sınıf herhangi bir sayıda aşırı yüklü oluşturucular olabilir. Oluşturucular herhangi erişilebilirlik, genel, korumalı veya özel olabilir. Tüm oluşturucuları tanımlama yok derleyici parametre almayan varsayılan bir oluşturucu oluşturur; silinmiş olarak varsayılan bir oluşturucu bildirerek bu davranışı geçersiz kılabilirsiniz.  

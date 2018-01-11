@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43f15ec1bf80c15f160d2a0b08a899806a3a7e01
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b765fabe8b83169353650286d05d02301dcb4807
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multiple-base-classes"></a>Birden Çok Taban Sınıfı
 Bölümünde açıklandığı gibi [birden çok devralma](http://msdn.microsoft.com/en-us/3b74185e-2beb-4e29-8684-441e51d2a2ca), bir sınıfın birden fazla temel sınıfından türetilmiş olmalıdır. (Burada türetilmiş sınıfları birden fazla temel sınıfından) birden çok devralmayı modelinde, temel sınıfları kullanılarak belirtilir *ana listesi* dilbilgisi öğesi. Örneğin, sınıf bildirimi `CollectionOfBook`, türetilmiş `Collection` ve `Book`, belirtilebilir:  

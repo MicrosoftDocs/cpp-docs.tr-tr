@@ -20,11 +20,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57ec673e945d0db14ce8fee0d477d7aeb2a9e238
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6efd56655cb5b262eab7d7f14c197e11466fb8bf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="serialization-ccli"></a>Seri Hale Getirme (C++/CLI)
 Seri hale getirme (durumunu nesne veya üye kalıcı bir ortamda depolama işlemi) Yönetilen sınıfları (bireysel alanlar ve özellikler dahil) tarafından desteklenen <xref:System.SerializableAttribute> ve <xref:System.NonSerializedAttribute> sınıfları.  
@@ -58,4 +61,4 @@ private:
  Her iki öznitelik kendi "kısa ad" kullanarak başvurulabilir unutmayın (**Serializable** ve **getirilmemiş**). Bu daha ayrıntılı olarak anlatılmıştır [öznitelikleri uygulama](/dotnet/standard/attributes/applying-attributes).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

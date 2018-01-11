@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dc9e686fe289cacb2c6daed1266f221c226e1d32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 797419c65855e1cbec4b13c53d6605fac0d23ed6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-access-limits"></a>Dosya Erişim Sınırları
 **ANSI 4.9.3** aynı dosyayı birden çok kez olup açık olabilir  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Zaten açık olan bir dosyayı açmaya izin verilmez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

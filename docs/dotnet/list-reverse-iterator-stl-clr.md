@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f502843c1bb97128af22dcfb0e18ee92ef0746fd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 27d78fbd1679e025dedd3a6fbbde3631e00a67eb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listreverseiterator-stlclr"></a>list::reverse_iterator (STL/CLR)
 Denetimli sırası için ters yineleyici türü.  
@@ -78,4 +81,4 @@ x b a
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::const_iterator (STL/CLR)](../dotnet/list-const-iterator-stl-clr.md)   
  [List::const_reverse_iterator (STL/CLR)](../dotnet/list-const-reverse-iterator-stl-clr.md)   
- [List::iterator (STL/CLR)](../dotnet/list-iterator-stl-clr.md)
+ [list::iterator (STL/CLR)](../dotnet/list-iterator-stl-clr.md)

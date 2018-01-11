@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d7af739b1c663487641eb798bbced749b720b034
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 074d47fef9476a0a5140ac56e1ccf077142a2c18
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetgetdata"></a>CRowset::GetData
 Satır satır kümesinin kopyadan verileri alır.  
@@ -56,4 +59,4 @@ HRESULT GetData(
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRowset sınıfı](../../data/oledb/crowset-class.md)
+ [CRowset Sınıfı](../../data/oledb/crowset-class.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e927afba7de87acbfffd611cb7bad2b4953c20ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8539578e8030862e63f4dda36c6b9c93a29547ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="configure-visual-c-for-arm-processors"></a>Visual C++ ARM işlemcileri için yapılandırma
 
@@ -25,16 +26,16 @@ Bu bölüm belgelerin ARM donanım hedeflemek için Visual C++ derleme araçlar�
   
 ## <a name="in-this-section"></a>Bu Bölümde  
 
-[ARM ABI kuralları genel bakış](../build/overview-of-arm-abi-conventions.md)  
+[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)  
 ARM Windows tarafından çağırma kuralları ve özel durum işleme yazmaç kullanımı için kullanılan uygulama ikili arabirimi açıklar.  
   
-[Genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
+[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
 Genellikle mimarileri boyunca taşınabilir olarak kabul edilir, ancak, farklı x86 hem x64 için ARM için sonuçlar C++ kod öğeleri açıklanır.  
   
-[ARM özel durum işleme](../build/arm-exception-handling.md)  
+[ARM Özel Durum İşleme](../build/arm-exception-handling.md)  
 Yapılandırılmış özel durum ARM Windows işleme sırasında geriye doğru izleme yığınının kodlama düzeni açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
-[ARM iç bilgileri](../intrinsics/arm-intrinsics.md)  
+[ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)  
 Derleyici iç bilgileri ARM mimarisi kullanan işlemciler açıklar.

@@ -19,11 +19,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c8c1c6134f1d92bad3dcf60e6253818a85f1b88b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ea93fa37ab895bd1b96c4955a3edc8fd773f4a86
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autogcrootrelease"></a>auto_gcroot::release
 Nesneden serbest `auto_gcroot` yönetimi.  
@@ -95,4 +98,4 @@ done
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [auto_gcroot üyeleri](../dotnet/auto-gcroot-members.md)   
- [auto_gcroot:: ~ auto_gcroot](../dotnet/auto-gcroot-tilde-auto-gcroot.md)
+ [auto_gcroot::~auto_gcroot](../dotnet/auto-gcroot-tilde-auto-gcroot.md)

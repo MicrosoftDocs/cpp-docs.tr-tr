@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1ca125f72815a16c2b6ba74da35fa56b9bd066c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3e51e523540e14905bef17edd52205c4d2102afa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-and-use-weakptr-instances"></a>Nasıl yapılır: weak_ptr Örnekleri Oluşturma ve Kullanma
 Nesnenin temel alınan nesnenin erişmek için bir yol bazen depolamalısınız bir `shared_ptr` artırılması gereken başvuru sayısı neden olmadan. Genellikle bu durum arasında döngüsel başvurulardan olduğunda ortaya çıkar `shared_ptr` örnekleri.  

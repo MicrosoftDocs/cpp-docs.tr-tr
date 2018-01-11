@@ -24,11 +24,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1846426caf759dfc2cce7e6b2e9177ddb4c6b12d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 169d371327137cf4f51ed10429eb5e9708a0e088
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-architecture-odbc"></a>Kayıt kümesi: Mimari (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -100,4 +103,4 @@ SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
  [Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)   
- [Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+ [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

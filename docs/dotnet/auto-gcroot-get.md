@@ -19,11 +19,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c5dbf86956de4a4df226bd87e970197f300f03b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c0aeb4a20f8c7dcb6a112080a88f600366ee62c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autogcrootget"></a>auto_gcroot::get
 Kapsanan nesnesini alır.  
@@ -91,4 +94,4 @@ in ClassA destructor:first
  **Namespace** msclr  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [auto_gcroot üyeleri](../dotnet/auto-gcroot-members.md)
+ [auto_gcroot Members](../dotnet/auto-gcroot-members.md)

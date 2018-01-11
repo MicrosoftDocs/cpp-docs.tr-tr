@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be2836f095a6ec5d8861def985d4561eacd7b1f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 62415d4dd5df14bfd2d26fdd976fe6e3c53ba95d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-c-statements"></a>C++ Deyimlerine Genel Bakış
 C++ deyimlerine ne zaman bir ifade deyimi, bir seçim deyimi, bir yineleme deyimi veya atlama deyimi özellikle bu dizisi değiştirir dışında ardışık olarak yürütülür.  
@@ -46,12 +47,12 @@ try-throw-catch
   
 |||||  
 |-|-|-|-|  
-|[sonu](../cpp/break-statement-cpp.md)|[else](../cpp/if-else-statement-cpp.md)|[__if_exists](../cpp/if-exists-statement.md)|[__try](../cpp/structured-exception-handling-c-cpp.md)|  
+|[break](../cpp/break-statement-cpp.md)|[else](../cpp/if-else-statement-cpp.md)|[__if_exists](../cpp/if-exists-statement.md)|[__try](../cpp/structured-exception-handling-c-cpp.md)|  
 |[durumu](../cpp/switch-statement-cpp.md)|[__except](../cpp/structured-exception-handling-c-cpp.md)|[__if_not_exists](../cpp/if-not-exists-statement.md)|[deneyin](../cpp/try-throw-and-catch-statements-cpp.md)|  
-|[Yakalama](../cpp/try-throw-and-catch-statements-cpp.md)|[için](../cpp/for-statement-cpp.md)|[__leave](../c-language/try-finally-statement-c.md)|[while](../cpp/while-statement-cpp.md)|  
-|[devam etmek](../cpp/continue-statement-cpp.md)|[Git](../cpp/goto-statement-cpp.md)|[Döndür](../cpp/return-statement-cpp.md)||  
-|[Varsayılan](../cpp/switch-statement-cpp.md)|[__finally](../cpp/structured-exception-handling-c-cpp.md)|[geçiş](../cpp/switch-statement-cpp.md)||  
-|[yapın](../cpp/do-while-statement-cpp.md)|[Eğer](../cpp/if-else-statement-cpp.md)|[throw](../cpp/try-throw-and-catch-statements-cpp.md)||  
+|[Yakalama](../cpp/try-throw-and-catch-statements-cpp.md)|[for](../cpp/for-statement-cpp.md)|[__leave](../c-language/try-finally-statement-c.md)|[while](../cpp/while-statement-cpp.md)|  
+|[continue](../cpp/continue-statement-cpp.md)|[goto](../cpp/goto-statement-cpp.md)|[return](../cpp/return-statement-cpp.md)||  
+|[default](../cpp/switch-statement-cpp.md)|[__finally](../cpp/structured-exception-handling-c-cpp.md)|[switch](../cpp/switch-statement-cpp.md)||  
+|[do](../cpp/do-while-statement-cpp.md)|[Eğer](../cpp/if-else-statement-cpp.md)|[throw](../cpp/try-throw-and-catch-statements-cpp.md)||  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimleri](../cpp/statements-cpp.md)
+ [Deyimler](../cpp/statements-cpp.md)

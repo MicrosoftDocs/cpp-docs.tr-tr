@@ -14,11 +14,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bdcfea2339bfe7aac93192e88a6ec39ce919c596
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 499855ec5052c039e007df8348db094aee356411
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changes-in-constructor-initialization-order"></a>Yapıcı Başlangıç Düzeninde Değişiklikler
 Sınıf oluşturucuları için başlatma sırasını Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirdi.  

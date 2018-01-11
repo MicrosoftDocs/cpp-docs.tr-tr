@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c8633acbb24ccaff19a8e15e78a09d7d6773576b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c8eb71e9975f06bfae5fe20c3ccae6d296a47f80
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptrptr"></a>ptr::~ptr
 Destructs bir `com::ptr`.  
@@ -108,4 +111,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [PTR üyeleri](../dotnet/ptr-members.md)   
  [PTR::PTR](../dotnet/ptr-ptr.md)   
- [PTR::CreateInstance](../dotnet/ptr-createinstance.md)
+ [ptr::CreateInstance](../dotnet/ptr-createinstance.md)

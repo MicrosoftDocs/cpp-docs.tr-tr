@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 31fe33f274a60b3fba69fa7b800e5e2c6c92ce20
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b62b79bb774d84b7ba6f9551efc0872b92d695d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorlt-pair-stlclr"></a>İşleç&lt;(eşleştirmesi) (STL/CLR)
 Küçük veya buna eşit eşleştirin karşılaştırma.  
@@ -84,4 +87,4 @@ int main()
  [operator! = (çifti) (STL/CLR)](../dotnet/operator-inequality-pair-stl-clr.md)   
  [İşleç\< (çifti) (STL/CLR)](../dotnet/operator-less-than-pair-stl-clr.md)   
  [operator > = (çifti) (STL/CLR)](../dotnet/operator-greater-or-equal-pair-stl-clr.md)   
- [operator > (çifti) (STL/CLR)](../dotnet/operator-greater-than-pair-stl-clr.md)
+ [operator> (pair) (STL/CLR)](../dotnet/operator-greater-than-pair-stl-clr.md)

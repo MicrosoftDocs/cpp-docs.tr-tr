@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9bbc7517013edd4c7af7c40c3787d8ec7749df32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ba4513f8ff7e6ce51a50faacbdbe08c6fca34d01
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listsplice-stlclr"></a>list::splice (STL/CLR)
 Düğümler arasındaki bağlantıları restitch.  
@@ -121,4 +124,4 @@ c2.size() = 0
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::Assign (STL/CLR)](../dotnet/list-assign-stl-clr.md)   
  [List::insert (STL/CLR)](../dotnet/list-insert-stl-clr.md)   
- [List::Merge (STL/CLR)](../dotnet/list-merge-stl-clr.md)
+ [list::merge (STL/CLR)](../dotnet/list-merge-stl-clr.md)

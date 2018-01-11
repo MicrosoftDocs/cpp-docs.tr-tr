@@ -17,11 +17,12 @@ caps.latest.revision: "36"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b7af430bd8c509713d5be76ea0f64601a91c35cd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 035fe5c222f6de5b3f0d71c0ce9133c1101f2993
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lambda-expressions-in-c"></a>C++'deki Lambda İfadeleri
 C ++ 11 ve sonraki sürümlerinde, bir lambda ifadesi — adlandırılırlar bir *lambda*— anonim işlevi nesneyi tanımlamanın uygun bir yoludur (bir *kapatma*) konumunda Burada, çağrılan veya bağımsız değişken olarak geçirilen sağ bir işlev. Tipik lambdas algoritmalar veya zaman uyumsuz yöntemleri geçirilen birkaç satır kod kapsüllemek için kullanılır. Bu makale lambdaların ne olduğunu tanımlar, bunları diğer programlama teknikleri ile karşılaştırır, faydalarını anlatır ve temel bir örnek verir.  

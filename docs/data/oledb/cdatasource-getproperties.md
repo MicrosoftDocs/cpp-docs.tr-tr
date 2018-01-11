@@ -20,11 +20,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d2dc4cdee71c15bdc3aadfabb6a253a2c0c8e548
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9b8460aaabf94562e686f87ff15a072702dd2ecb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdatasourcegetproperties"></a>CDataSource::GetProperties
 Bağlı veri kaynağı nesnesi için istenen özellik bilgilerini döndürür.  
@@ -54,4 +57,4 @@ Bağlı veri kaynağı nesnesi için istenen özellik bilgilerini döndürür.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDataSource sınıfı](../../data/oledb/cdatasource-class.md)
+ [CDataSource Sınıfı](../../data/oledb/cdatasource-class.md)

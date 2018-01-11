@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32fbc99ab51736b5950ce7982457dd0f2f1bc1b1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96233323e5a95f88a43fb56162393238f8c2e091
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 Koşullu dallanmayı denetler. Deyimlerinde *IF blok* yalnızca yürütülen *if ifadesi* sıfır olmayan bir değer olarak değerlendirilir (veya `true`). Varsa değerini *ifade* sıfır olmayan, olan *statement1* ve diğer ifadeleri blok içinde yürütülür ve başka blok, varsa, atlanır. Varsa değerini *ifade* sıfır sonra IF blok atlanır ve başka blok, varsa, yürütülür. Sıfır olmayan olarak değerlendirmek ifadeler
@@ -199,4 +200,4 @@ void f(T&& t, Rest&&... r)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [switch deyimi (C++)](../cpp/switch-statement-cpp.md)
+ [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

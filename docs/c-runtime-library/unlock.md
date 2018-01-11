@@ -30,11 +30,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 99626e7039def77c99347f93f681b69733637240
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e057bb0ee2b9e90d111ec4ba8b5783d9f8c32738
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unlock"></a>_unlock
 Çoklu iş parçacığı kilidi serbest bırakır.  
@@ -59,4 +60,4 @@ void __cdecl _unlock(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [_Lock'ı](../c-runtime-library/lock.md)
+ [_lock](../c-runtime-library/lock.md)

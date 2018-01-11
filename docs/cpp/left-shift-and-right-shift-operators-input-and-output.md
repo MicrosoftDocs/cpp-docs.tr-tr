@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad2da0f4f8807bef5899a32eabda931092641260
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7dece9ac4045fa8b46e5edf8b266312242000229
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 Bit kaydırma işleçleri olan sağa kaydırma işleci (>>), bitleri taşıyan *shift ifade* sağa ve sola kaydırma işleci (<<), bitleri taşıyan *shift-ifade* sol. <sup>1</sup>  
@@ -232,4 +233,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+ [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

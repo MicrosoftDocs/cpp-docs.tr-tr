@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4fb96ae6763d9b2ca86f99ee42a10f56e93d7e3e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 37aa5ab5cad2367bfc37e2e1b6fd886540eada8e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="destructors-c"></a>Yıkıcılar (C++)
 Bir yıkıcı nesne kapsam dışında geçip geçmeyeceğini veya bir çağrı tarafından açıkça yok olduğunda çağrılan otomatik olarak bir üye işlevdir `delete`. Bir yıkıcı bir tilde tarafından öncesinde sınıfı, aynı ada sahip (`~`). Örneğin, `String` sınıfının yok edicisi şu şekilde bildirilir: `~String()`. Bir yıkıcı tanımlamıyorsa derleyici bir varsayılan sağlar; birçok sınıflar için bu yeterlidir. Bellek kendi işaretçileri bunların işaret veya yalnızca özel bir yıkıcı sınıfı serbest bırakılması gereken sistem kaynaklarını işleyicilerine depoladığında tanımlamak gerekir.
@@ -71,7 +72,7 @@ int main() {
   
  Önceki örnekte, `String::~String` yok edicisi, metin depolama için dinamik olarak ayrılan alanı kaldırmak için `delete` işlecini kullanmaktadır.  
   
-## <a name="delcaring-destructors"></a>Delcaring Yıkıcılar  
+## <a name="declaring-destructors"></a>Yıkıcıları bildirme  
  Yıkıcılar işlevleri sınıfı bir tilde tarafından preceded ancak aynı ada sahip olan (`~`)  
   
  Çeşitli kurallar Yıkıcılar bildirimi kapsar. Yıkıcılar:  

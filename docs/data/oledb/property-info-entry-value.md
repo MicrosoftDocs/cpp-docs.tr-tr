@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25eb1627f4024fd18dbf0d22114c2e762ab8b897
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1c93b2d010feb6be0160ac3253890ad7ffaa168a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="propertyinfoentryvalue"></a>PROPERTY_INFO_ENTRY_VALUE
 Bir özellik kümesi içinde belirli bir özelliği temsil eder.  
@@ -37,7 +40,7 @@ dwPropID
  *Dwpropıd*  
  [in] A [DBPROPID](https://msdn.microsoft.com/en-us/library/ms723882.aspx) özelliği ile birlikte kullanılan değeri bir özelliği tanımlamak için GUID ayarlayın.  
   
- *değer*  
+ *value*  
  [in] Özellik değeri türü `DWORD`.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -53,4 +56,4 @@ dwPropID
  [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md)   
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
- [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+ [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

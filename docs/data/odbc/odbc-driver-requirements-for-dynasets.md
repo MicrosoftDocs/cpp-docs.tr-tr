@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 387520b478be07cd1829f9665663173cfa15efcc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 2c444cd8e8d13cca7d891dba92e881b8ca167bbc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-driver-requirements-for-dynasets"></a>Dynaset'ler için ODBC Sürücü Gereksinimleri
 MFC ODBC veritabanı sınıfları dinamik kümeler kayıt kümeleri dinamik özelliklere sahip olan; Bunlar belirli şekillerde veri kaynağı ile eşitlenmiş olarak kalır. Düzey 2 API uygunluğu ile bir ODBC sürücüsü MFC dinamik kümeler (ancak değil salt iletme kayıt kümeleri) gerektirir. Varsa sürücüsü, [veri kaynağı](../../data/odbc/data-source-odbc.md) düzey 1 API için uyumlu ayarlanırsa, hem güncelleştirilebilir ve salt okunur anlık görüntüler ve salt iletme kayıt kümeleri, ancak dinamik kümeleri kullanmaya devam edebilirsiniz. Ancak, genişletilmiş getirme ve anahtar kümesi temelli imleçler destekliyorsa, düzey 1 sürücüsü dinamik kümeleri destekleyebilir.  
@@ -35,4 +38,4 @@ MFC ODBC veritabanı sınıfları dinamik kümeler kayıt kümeleri dinamik öze
 >  Güncelleştirilebilir kayıt kümeleri için ODBC sürücüsü ya da konumlandırılmış güncelleştirme deyimleri desteklemesi gerekir veya **:: SQLSetPos** ODBC API işlevi. Her ikisi de destekleniyorsa, MFC kullanan **:: SQLSetPos** verimlilik. Alternatif olarak, anlık görüntüler için güncelleştirilebilir için anlık görüntüler (statik imleçler ve konumlandırılmış güncelleştirme deyimleri) gerekli desteği sağlayan imleç kitaplığı kullanabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC temelleri](../../data/odbc/odbc-basics.md)
+ [ODBC Temelleri](../../data/odbc/odbc-basics.md)

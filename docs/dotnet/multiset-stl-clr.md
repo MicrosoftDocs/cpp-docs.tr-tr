@@ -18,11 +18,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 801f6a99a6b479ebc72f62c59fc5fcf099814996
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9f964fd511d87d2fd5ca460eb72dc5c9db8351ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multiset-stlclr"></a>çoklu set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `multiset` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için.  
@@ -64,7 +67,7 @@ template<typename Key>
 |[multiset::iterator (STL/CLR)](../dotnet/multiset-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
 |[multiset::key_compare (STL/CLR)](../dotnet/multiset-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
 |[multiset::key_type (STL/CLR)](../dotnet/multiset-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
-|[multiset::Reference (STL/CLR)](../dotnet/multiset-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[multiset::reference (STL/CLR)](../dotnet/multiset-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[multiset::reverse_iterator (STL/CLR)](../dotnet/multiset-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[multiset::size_type (STL/CLR)](../dotnet/multiset-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
 |[multiset::value_compare (STL/CLR)](../dotnet/multiset-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
@@ -72,14 +75,14 @@ template<typename Key>
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[multiset::Begin (STL/CLR)](../dotnet/multiset-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
-|[multiset::Clear (STL/CLR)](../dotnet/multiset-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[multiset::Count (STL/CLR)](../dotnet/multiset-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[multiset::Empty (STL/CLR)](../dotnet/multiset-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[multiset::End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[multiset::begin (STL/CLR)](../dotnet/multiset-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[multiset::clear (STL/CLR)](../dotnet/multiset-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[multiset::count (STL/CLR)](../dotnet/multiset-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[multiset::empty (STL/CLR)](../dotnet/multiset-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
 |[multiset::equal_range (STL/CLR)](../dotnet/multiset-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[multiset::ERASE (STL/CLR)](../dotnet/multiset-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[multiset::Find (STL/CLR)](../dotnet/multiset-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[multiset::erase (STL/CLR)](../dotnet/multiset-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[multiset::find (STL/CLR)](../dotnet/multiset-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[multiset::insert (STL/CLR)](../dotnet/multiset-insert-stl-clr.md)|Öğeleri ekler.|  
 |[multiset::key_comp (STL/CLR)](../dotnet/multiset-key-comp-stl-clr.md)|İki anahtar sıralama temsilcisi kopyalar.|  
 |[multiset::lower_bound (STL/CLR)](../dotnet/multiset-lower-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
@@ -88,20 +91,20 @@ template<typename Key>
 |[multiset::rbegin (STL/CLR)](../dotnet/multiset-rbegin-stl-clr.md)|Ters denetimli dizisi başlangıcını belirtir.|  
 |[multiset::rend (STL/CLR)](../dotnet/multiset-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[multiset::size (STL/CLR)](../dotnet/multiset-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[multiset::Swap (STL/CLR)](../dotnet/multiset-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[multiset::swap (STL/CLR)](../dotnet/multiset-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[multiset::to_array (STL/CLR)](../dotnet/multiset-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[multiset::upper_bound (STL/CLR)](../dotnet/multiset-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
 |[multiset::value_comp (STL/CLR)](../dotnet/multiset-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[multiset::operator (STL/CLR) =](../dotnet/multiset-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator! = (multiset) (STL/CLR)](../dotnet/operator-inequality-multiset-stl-clr.md)|Belirler bir `multiset` nesne diğerine eşit değil `multiset` nesnesi.|  
-|[operator < (multiset) (STL/CLR)](../dotnet/operator-less-than-multiset-stl-clr.md)|Belirler bir `multiset` nesnesi, başka değerinden `multiset` nesnesi.|  
-|[operator < = (multiset) (STL/CLR)](../dotnet/operator-less-or-equal-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir değerinden küçük veya eşit başka `multiset` nesnesi.|  
-|[operator == (multiset) (STL/CLR)](../dotnet/operator-equality-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir diğerine eşit `multiset` nesnesi.|  
-|[operator > (multiset) (STL/CLR)](../dotnet/operator-greater-than-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir diğerinden daha büyük `multiset` nesnesi.|  
-|[operator > = (multiset) (STL/CLR)](../dotnet/operator-greater-or-equal-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir büyük veya ona eşit diğerine `multiset` nesnesi.|  
+|[multiset::operator= (STL/CLR)](../dotnet/multiset-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[operator!= (multiset) (STL/CLR)](../dotnet/operator-inequality-multiset-stl-clr.md)|Belirler bir `multiset` nesne diğerine eşit değil `multiset` nesnesi.|  
+|[operator< (multiset) (STL/CLR)](../dotnet/operator-less-than-multiset-stl-clr.md)|Belirler bir `multiset` nesnesi, başka değerinden `multiset` nesnesi.|  
+|[operator<= (multiset) (STL/CLR)](../dotnet/operator-less-or-equal-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir değerinden küçük veya eşit başka `multiset` nesnesi.|  
+|[operator== (multiset) (STL/CLR)](../dotnet/operator-equality-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir diğerine eşit `multiset` nesnesi.|  
+|[operator> (multiset) (STL/CLR)](../dotnet/operator-greater-than-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir diğerinden daha büyük `multiset` nesnesi.|  
+|[operator>= (multiset) (STL/CLR)](../dotnet/operator-greater-or-equal-multiset-stl-clr.md)|Belirler bir `multiset` nesnesidir büyük veya ona eşit diğerine `multiset` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

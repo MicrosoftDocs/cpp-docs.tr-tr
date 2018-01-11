@@ -32,11 +32,12 @@ caps.latest.revision: "26"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 71924eb149097c90fbfe2f3ceb2981ea45e97995
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7fb18e5f66f431afb86e86815f50217782902b8d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 Geniş karakter dizesi, birden çok baytlı karakter dizesi gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcsrtombs_s](../../c-runtime-library/reference/wcsrtombs-s.md).  

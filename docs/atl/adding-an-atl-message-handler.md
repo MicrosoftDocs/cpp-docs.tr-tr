@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a30c8d2c26893ddf101d7084a91215c7ed55bf48
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4358dc54589971c559bec48adf77252d4f4cda28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL ileti işleyicisi ekleme
 İleti işleyicisi (Windows iletilerini işleme bir üye fonksiyonu) için bir denetim eklemek için öncelikle Sınıf Görünümü'nde denetimi seçin. Ardından açın **özellikleri** penceresinde, seçin **iletileri** simgesi ve aşağı açılan kontrol gerekli ileti ters kutusunda tıklatın. İleti işleyicisi için bir bildirim bu denetimin üstbilgi dosyası ve denetimin .cpp dosyasındaki işleyicisinin iskelet bir uygulama ekler. Ayrıca ileti eşlemesi eklemek ve işleyici için bir giriş ekleyin.  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/24/2017
 -   Yeni ileti eşleme girdilerini ana ileti eşlemeye eklenir. Sihirbaz, diğer ileti eşlemeleri ve zincirleme tanımıyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir pencere uygulama](../atl/implementing-a-window.md)
+ [Pencere Uygulama](../atl/implementing-a-window.md)
 

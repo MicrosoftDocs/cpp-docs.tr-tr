@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0af38fe5e88540bf7e8947808c49c5283d742a4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 34af81829c90aa5e56c7358a3e0b23d6f6ab949f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrt-class"></a>_bstr_t Sınıfı
 **Microsoft özel**  
@@ -40,9 +41,9 @@ ms.lasthandoff: 10/24/2017
 |||  
 |-|-|  
 |[Ata](../cpp/bstr-t-assign.md)|Kopya bir `BSTR` içine `BSTR` tarafından Sarmalanan bir `_bstr_t`.|  
-|[Ekleme](../cpp/bstr-t-attach.md)|Bağlantıları bir `_bstr_t` sarmalayıcı bir `BSTR`.|  
+|[Attach](../cpp/bstr-t-attach.md)|Bağlantıları bir `_bstr_t` sarmalayıcı bir `BSTR`.|  
 |[kopyalama](../cpp/bstr-t-copy.md)|Yalıtılmış bir kopyasını oluşturur `BSTR`.|  
-|[Ayırma](../cpp/bstr-t-detach.md)|Döndürür `BSTR` tarafından Sarmalanan bir `_bstr_t` ve ayırır `BSTR` gelen `_bstr_t`.|  
+|[Detach](../cpp/bstr-t-detach.md)|Döndürür `BSTR` tarafından Sarmalanan bir `_bstr_t` ve ayırır `BSTR` gelen `_bstr_t`.|  
 |[GetAddress](../cpp/bstr-t-getaddress.md)|İşaret `BSTR` tarafından Sarmalanan bir `_bstr_t`.|  
 |[GetBSTR](../cpp/bstr-t-getbstr.md)|Başlangıcına işaret `BSTR` tarafından Sarmalanan `_bstr_t`.|  
 |[uzunluğu](../cpp/bstr-t-length.md)|Karakter sayısını verir `_bstr_t`.|  
@@ -53,8 +54,8 @@ ms.lasthandoff: 10/24/2017
 |-|-|  
 |[işleç =](../cpp/bstr-t-operator-equal.md)|Var olan yeni bir değer atar `_bstr_t` nesnesi.|  
 |[+= işleci](../cpp/bstr-t-operator-add-equal-plus.md)|Karakter sonuna ekler `_bstr_t` nesnesi.|  
-|[operator +](../cpp/bstr-t-operator-add-equal-plus.md)|İki dizeyi art arda ekler.|  
-|[işleci!](../cpp/bstr-t-operator-logical-not.md)|Denetler kapsüllenmiş `BSTR` olan bir **NULL** dize.|  
+|[işleç +](../cpp/bstr-t-operator-add-equal-plus.md)|İki dizeyi art arda ekler.|  
+|[işleç !](../cpp/bstr-t-operator-logical-not.md)|Denetler kapsüllenmiş `BSTR` olan bir **NULL** dize.|  
 |[operator ==,! =, \<, >, \<=, > =](../cpp/bstr-t-relational-operators.md)|İki karşılaştırır `_bstr_t` nesneleri.|  
 |[işleç wchar_t * &#124; char\*](../cpp/bstr-t-wchar-t-star-bstr-t-char-star.md)|Kapsüllenmiş Unicode ya da çok baytlı işaretçiler ayıklamak `BSTR` nesnesi.|  
   
@@ -66,4 +67,4 @@ ms.lasthandoff: 10/24/2017
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)
+ [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)

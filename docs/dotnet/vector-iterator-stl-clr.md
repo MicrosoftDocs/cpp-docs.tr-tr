@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0f3a63e6ce5e2aa86fd869081f60735a9ddda0b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e27743fd4d3cca3ad7783569dddac3af7e6d56c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectoriterator-stlclr"></a>vector::iterator (STL/CLR)
 Denetlenen dizi için bir yineleyici türü.  
@@ -76,4 +79,4 @@ x b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::const_iterator (STL/CLR)](../dotnet/vector-const-iterator-stl-clr.md)
+ [vector::const_iterator (STL/CLR)](../dotnet/vector-const-iterator-stl-clr.md)

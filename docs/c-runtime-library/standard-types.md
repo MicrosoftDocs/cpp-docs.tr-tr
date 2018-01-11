@@ -171,11 +171,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b80a4b8c947064886d6afa18e9c24d62195a049a
-ms.sourcegitcommit: c9108f0c45b7a634d4e6e5c2d2ec192d50ffdbab
+ms.workload: cplusplus
+ms.openlocfilehash: 4fd51f03d9a4134ee7193d5aede410bb541cd19f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="standard-types"></a>Standart Türler
 Microsoft çalışma zamanı kitaplığı aşağıdaki standart türler ve tür tanımları tanımlar.  
@@ -263,4 +264,4 @@ Microsoft çalışma zamanı kitaplığı aşağıdaki standart türler ve tür 
 |`wint_t`tamsayı|Herhangi bir geniş karakter veya geniş dosya sonu değerini tutabilen veri nesnesinin türü.|WCHAR.H,<br /><br /> CRTDEFS.H|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)
+ [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)

@@ -15,14 +15,17 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 09d64dc16728a27a74a964526fdd07b1540d6ea1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d000439ac03f7491d16dc2d4a2bdd83b3a805480
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="caccessorrowset-members"></a>CAccessorRowset Üyeleri
-**Yöntemleri**  
+**Yöntemler**  
   
 |||  
 |-|-|  
@@ -33,4 +36,4 @@ ms.lasthandoff: 10/24/2017
 |[GetColumnInfo](../../data/oledb/caccessorrowset-getcolumninfo.md)|Implements [IColumnsInfo::GetColumnInfo](https://msdn.microsoft.com/en-us/library/ms722704.aspx).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CAccessorRowset sınıfı](../../data/oledb/caccessorrowset-class.md)
+ [CAccessorRowset Sınıfı](../../data/oledb/caccessorrowset-class.md)

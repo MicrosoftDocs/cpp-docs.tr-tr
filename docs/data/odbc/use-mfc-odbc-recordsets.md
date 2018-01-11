@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 114725aad521edc30b9e33f0be699dc6019d15d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 0644d1c08b73442f07585c359f29dfeeee886d84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="use-mfc-odbc-recordsets"></a>MFC ODBC Kayıt Kümelerini Kullanma
 Bu konular aracılığıyla MFC ODBC kayıt kümeleri ile nasıl çalışılacağını açıklar.  
@@ -86,4 +89,4 @@ Bu konular aracılığıyla MFC ODBC kayıt kümeleri ile nasıl çalışılaca�
 -   [Veri sütunları kayıt kümesinde çalışma zamanında dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+ [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

@@ -18,11 +18,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d3cd1a75df607678546c53b53df134f45eb87026
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b981af06f48834eef59103b872b8b07e75cd0065
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 Şema satır kümeleri kendi yapılarını veya şema bilmeden bir veri deposu hakkında bilgi edinmek tüketicilere izin verir. Örneğin, bir veri deposu olurdu şekilde okuma tarafından şemanın bilgi sağlamak için hiçbir şekilde bir kullanıcı tarafından tanımlanan hiyerarşide düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları tüketici erişimcileri oluşturmak için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak izin vermek üzere üzerinde yöntemlerini sağlayıcının oturum nesnesi gösterir [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıf **IDBSchemaRowset**.  
@@ -265,4 +268,4 @@ virtual DBSTATUS GetDBStatus(CSimpleRow* , ATLCOLUMNINFO* pColInfo)
  Şema satır kümeleri destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş Sağlayıcı teknikleri](../../data/oledb/advanced-provider-techniques.md)
+ [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

@@ -20,11 +20,14 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e836730942b3293ff8adc6aa7f8c75f4d2376cc1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 59b4d974a6b25b896067bce0042d9a5ff9221cc2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC içinde Windows Formu Kullanıcı Denetimi Kullanma
 MFC Windows Forms destek sınıflarını kullanarak, MFC iletişim kutuları veya görünümler içinde bir ActiveX denetimi olarak Windows Forms denetimlerini MFC uygulamalarınız içinde barındırabilir. Ayrıca, Windows Forms forms MFC iletişim kutuları olarak barındırılabilir.  
@@ -50,26 +53,26 @@ MFC Windows Forms destek sınıflarını kullanarak, MFC iletişim kutuları vey
  MFC uygulamanız Windows Forms kullanıyorsa, uygulamanız ile mfcmifc90.dll yeniden dağıtmanız gerekir. Daha fazla bilgi için bkz: [MFC kitaplığını yeniden dağıtma](../ide/redistributing-the-mfc-library.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)  
+ [MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)  
   
- [MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)  
+ [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)  
   
- [MFC iletişim kutusu olarak Windows formu kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)  
+ [MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-form-user-control-as-an-mfc-dialog-box.md)  
   
 ## <a name="reference"></a>Başvuru  
- [Ddx_managedcontrol sınıfı](../mfc/reference/cwinformscontrol-class.md)  
+ [CWinFormsControl Sınıfı](../mfc/reference/cwinformscontrol-class.md)  
   
- [CWinFormsDialog sınıfı](../mfc/reference/cwinformsdialog-class.md)  
+ [CWinFormsDialog Sınıfı](../mfc/reference/cwinformsdialog-class.md)  
   
- [CWinFormsView sınıfı](../mfc/reference/cwinformsview-class.md)  
+ [CWinFormsView Sınıfı](../mfc/reference/cwinformsview-class.md)  
   
- [ICommandSource arabirimi](../mfc/reference/icommandsource-interface.md)  
+ [ICommandSource Arabirimi](../mfc/reference/icommandsource-interface.md)  
   
- [ICommandTarget arabirimi](../mfc/reference/icommandtarget-interface.md)  
+ [ICommandTarget Arabirimi](../mfc/reference/icommandtarget-interface.md)  
   
- [ICommandUI arabirimi](../mfc/reference/icommandui-interface.md)  
+ [ICommandUI Arabirimi](../mfc/reference/icommandui-interface.md)  
   
- [IView arabirimi](../mfc/reference/iview-interface.md)  
+ [IView Arabirimi](../mfc/reference/iview-interface.md)  
   
  [CommandHandler](../atl/commandhandler.md)  
   
@@ -80,7 +83,7 @@ MFC Windows Forms destek sınıflarını kullanarak, MFC iletişim kutuları vey
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Windows Forms](/dotnet/framework/winforms/index)  
   
- [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index)  
+ [Windows Forms Denetimleri](/dotnet/framework/winforms/controls/index)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8648005f26e334ae8d184aa437aef68b0318eed6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce18933c27a62b1a89551320f75df7e25a67ef03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="segment"></a>SEGMENT
 Adlı bir programı segmenti tanımlar *adı* segment özniteliklere sahip  
@@ -43,7 +44,7 @@ name ENDS
 |**WORD**|Sonraki kullanılabilir word adresi (word başına 2 bayt).|  
 |**DWORD**|Sonraki kullanılabilir çift word adresi (çift sözcük başına 4 bayt).|  
 |**PARA**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|  
-|**SAYFA**|Sonraki kullanılabilir sayfa adresi (sayfa başına 256 bayt).|  
+|**PAGE**|Sonraki kullanılabilir sayfa adresi (sayfa başına 256 bayt).|  
 |**HİZALAMA**(*n*)|Sonraki kullanılabilir  *n* th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
   
  Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.  
@@ -71,4 +72,4 @@ name ENDS
  İçin `ALIGN(n)`, `n` 8192 1'den 2'in herhangi bir güç olabilir; desteklenmiyor **/OMF**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

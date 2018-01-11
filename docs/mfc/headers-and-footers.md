@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48815b009ef157f79dc85be3465a361484c63d27
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7525cba7d05c4d04f0548bd2dc774503b284c220
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="headers-and-footers"></a>Üstbilgiler ve Altbilgiler
 Bu makalede, yazdırılan belgeye üstbilgiler ve altbilgiler ekleme açıklanmaktadır.  

@@ -18,11 +18,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aea20ee048ce0a11bb81893b0f492dcb28bd2aee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 643888b4a2bca802a9314d3468f2f416ff8a77b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 .NET Framework kullanılarak çeşitli dosya işlemlerini gösterir.  
@@ -31,20 +34,20 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Nasıl yapılır: bir dizindeki dosyaları numaralandırma (C + +/ CLI)](../dotnet/how-to-enumerate-files-in-a-directory-cpp-cli.md)  
+-   [Nasıl yapılır: Bir Dizindeki Dosyaları Numaralandırma (C++/CLI)](../dotnet/how-to-enumerate-files-in-a-directory-cpp-cli.md)  
   
--   [Nasıl yapılır: dosya sistemi değişikliklerini izleme (C + +/ CLI)](../dotnet/how-to-monitor-file-system-changes-cpp-cli.md)  
+-   [Nasıl yapılır: Dosya Sistemi Değişikliklerini İzleme (C++/CLI)](../dotnet/how-to-monitor-file-system-changes-cpp-cli.md)  
   
--   [Nasıl yapılır: ikili dosyaları okuma (C + +/ CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md)  
+-   [Nasıl yapılır: İkili Dosyaları Okuma (C++/CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md)  
   
--   [Nasıl yapılır: metin dosyası okuma (C + +/ CLI)](../dotnet/how-to-read-a-text-file-cpp-cli.md)  
+-   [Nasıl yapılır: Metin Dosyası Okuma (C++/CLI)](../dotnet/how-to-read-a-text-file-cpp-cli.md)  
   
--   [Nasıl yapılır: dosya bilgisi alma (C + +/ CLI)](../dotnet/how-to-retrieve-file-information-cpp-cli.md)  
+-   [Nasıl yapılır: Dosya Bilgisi Alma (C++/CLI)](../dotnet/how-to-retrieve-file-information-cpp-cli.md)  
   
--   [Nasıl yapılır: ikili dosyaları yazma (C + +/ CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md)  
+-   [Nasıl yapılır: İkili Dosyaları Yazma (C++/CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md)  
   
--   [Nasıl yapılır: bir metin dosyasına yazma (C + +/ CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)  
+-   [Nasıl yapılır: Metin Dosyaları Yazma (C++/CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)  
   
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

@@ -33,11 +33,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e792e8587d97c4ec6123af7b66e570816f25ba28
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13134a3e6b34be13d6d878cf94f204bb6c87a458
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wcrtombs"></a>wcrtomb_s
 Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bir sürümünü [wcrtomb](../../c-runtime-library/reference/wcrtomb.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

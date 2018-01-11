@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a408af2ac7de2f71c98467e08c49187c346304e0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44f275568df9b4f8200a3fac1d77520bab38e8d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="worker-archetype"></a>Çalışan Archetype
 Uygun sınıfları *çalışan* archetype sağlamak işlem iş öğeleri için kod sıraya alınmış bir iş parçacığı havuzu.  
@@ -29,7 +30,7 @@ Uygun sınıfları *çalışan* archetype sağlamak işlem iş öğeleri için k
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[Başlatma](#initialize)|Tüm istekler için geçirilmeden önce çalışan nesneyi başlatmak üzere çağrılır [yürütme](#execute).|  
+|[Initialize](#initialize)|Tüm istekler için geçirilmeden önce çalışan nesneyi başlatmak üzere çağrılır [yürütme](#execute).|  
 |[Yürütme](#execute)|Bir iş öğesi işlemek üzere çağrılır.|  
 |[Sonlandırma](#terminate)|Alt nesne için tüm istekleri iletildi sonra kapatmak için çağrılan [yürütme](#execute).|  
   
@@ -120,7 +121,7 @@ void Terminate(void* pvParam) throw();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Mimarisi türleri](../../atl/reference/atl-archetypes.md)   
  [Kavramları](../../atl/active-template-library-atl-concepts.md)   
- [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)
+ [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)
 
 
 

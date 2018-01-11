@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fc08403d0d8cf7875700ca539a3e68a0ed788104
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b077e4c92d9307b8ff99126c824d0a902ce1ff83
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequedeque-stlclr"></a>deque::deque (STL/CLR)
 Bir kapsayıcı nesnesi oluşturur.  
@@ -173,4 +176,4 @@ size() = 0
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
  [deque::Assign (STL/CLR)](../dotnet/deque-assign-stl-clr.md)   
  [deque::generic_container (STL/CLR)](../dotnet/deque-generic-container-stl-clr.md)   
- [işleç = (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)
+ [operator= (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)

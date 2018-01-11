@@ -18,11 +18,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b517bfe6ef3cc93b6edf647d137491ef78c0f716
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7c9f886b7e966f7746610622408dbd6933a10f3d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cutlpropsonpropertychanged"></a>CUtlProps::OnPropertyChanged
 Zincirleme özellikleri işlemek üzere bir özelliğe ayarladıktan sonra çağrılır.  
@@ -59,4 +62,4 @@ Zincirleme özellikleri işlemek üzere bir özelliğe ayarladıktan sonra çağ
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CUtlProps sınıfı](../../data/oledb/cutlprops-class.md)
+ [CUtlProps Sınıfı](../../data/oledb/cutlprops-class.md)

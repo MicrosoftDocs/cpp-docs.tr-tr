@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5c7a3bb2997bbec1c0e402c14985353dcf0bc768
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4bbc3c33488d2925c1a7f879adf50f015f79ec8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrtcopy"></a>_bstr_t::copy
 **Microsoft özel**  
@@ -55,4 +56,4 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)
+ [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

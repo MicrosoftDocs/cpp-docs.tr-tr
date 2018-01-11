@@ -33,11 +33,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 61386746e83c5c9d26358855c9791e03f13f029f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: f3bbd06f4ae6ab0b6a53007abd933017fa662d7e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csqllanguages-csqllanguageinfo"></a>CSQLLanguages, CSQLLanguageInfo
 Çağrı typedef sınıfı **CSQLLanguages** parametre sınıfı uygulamak için **Csqllanguageınfo**.  
@@ -63,4 +66,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

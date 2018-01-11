@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 45121b3dba14e5672333debf364f5aea2e3e3cd5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44130ba1991a9e14340e44427e0bb80c5bac0a47
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne değil düzgün eşlenmemiş.  
@@ -70,4 +71,4 @@ context_unblock_unbalanced() throw();
  Hata açıklayıcı bir ileti.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

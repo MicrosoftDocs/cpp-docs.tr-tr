@@ -35,11 +35,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d0e475da616c56f7867ce28bf253ddcff8f581be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc46d934c99e24b63ef314ef1f63402893c6bb18
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox sınıfı
 `CMFCRibbonCheckBox` Sınıfı bir Şerit panelinde, hızlı erişim araç çubuğu veya açılan menüye ekleyebilirsiniz bir onay kutusu uygular.  
@@ -272,4 +273,4 @@ virtual BOOL SetACCData(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCRibbonPanel sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)
+ [CMFCRibbonPanel Sınıfı](../../mfc/reference/cmfcribbonpanel-class.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 0010f039db295f2efc9a8b920d685258a66878d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e9ce20c019c022ed62c2be888617b387315731b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformdisconnectedexception-class"></a>Platform::DisconnectedException sınıfı
 Bir COM proxy nesnesi artık mevcut bir COM sunucusu başvuru girişiminde bulunduğunda oluşur  
@@ -47,4 +48,4 @@ public ref class DisconnectedException : COMException,    IException,    IPrinta
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException sınıfı](../cppcx/platform-comexception-class.md)
+ [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

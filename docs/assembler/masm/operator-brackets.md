@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8b320ec58f4c0f44860fe405e516f2f842144dce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3f9ff4039d550ac45be7812b5c422f0737c0a788
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-"></a>işleci\[\]  
 
@@ -36,4 +37,4 @@ expression1 [expression2]
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

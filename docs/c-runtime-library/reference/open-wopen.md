@@ -42,11 +42,12 @@ caps.latest.revision: "31"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b2362db1db1686bcf87cb171b3f29da48226d54b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9c53394391c34dc86e3516c54806c9bbd2b62ca7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="open-wopen"></a>_open, _wopen
 Bir dosyayı açar. Daha güvenli sürümlerinde kullanılabilir olmadığından, bu işlevler kullanım dışıdır; bkz: [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md).  

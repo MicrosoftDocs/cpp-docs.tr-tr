@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 22b9886587b07958650a0624386867d4bc69cfd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b495fc2b8bd0e667dd7dae7e23347f6971ec4d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-fatal-error-a1010"></a>ML Önemli Hatası A1010
 **eşleşmeyen blok iç içe geçme:**  
@@ -41,4 +42,4 @@ ms.lasthandoff: 10/24/2017
 -   Koşullu derleme yönergesi gibi bir [ELSE](../../assembler/masm/else-masm.md), [ELSEIF](../../assembler/masm/elseif-masm.md), veya **ENDIF** eşleşen bir olmadan [IF](../../assembler/masm/if-masm.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

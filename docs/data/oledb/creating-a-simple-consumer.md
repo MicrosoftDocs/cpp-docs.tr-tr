@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ab1066d9a1f56906fcbecca968da07b12a126c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5febdc019f5e575f685e4e93c892b7f5e777b776
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-simple-consumer"></a>Basit Tüketici Oluşturma
 ATL Proje Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı bir OLE DB Şablonları tüketicisi oluşturmak için kullanın.  
@@ -107,4 +110,4 @@ ATL Proje Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı bir OLE DB Şablonla
 >  Bu satırı derleme tüketici uygulamanın engeller ve sabit kodlanmış parolalar için bağlantı dizenizi denetlemenizi anımsatır. Bağlantı dizenizi denetledikten sonra bu kod satırı kaldırabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sihirbaz kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+ [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

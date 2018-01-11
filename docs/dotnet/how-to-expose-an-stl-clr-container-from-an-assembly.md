@@ -16,11 +16,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b47e59e5b0c14bc0014140da67d226d62fad02ba
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 84505edf0877a5ae20d28906dde7f4c709574034
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-expose-an-stlclr-container-from-an-assembly"></a>Nasıl yapılır: Bir Derlemeden STL/CLR Kapsayıcısı Sunma
 STL/CLR kapsayıcıları gibi `list` ve `map` şablon ref sınıfları uygulanır. C++ şablonları derleme zamanında örneği için tam olarak aynı imzaya sahip, ancak farklı derlemelerde olan iki şablon sınıfları gerçekte farklı türleridir. Bu şablon sınıfları derleme sınırlarında kullanılamaz anlamına gelir.  

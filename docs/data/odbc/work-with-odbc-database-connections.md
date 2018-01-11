@@ -20,11 +20,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e54e45ee34520d80d2611ed77dde578727d24e17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 739c1f106b4da7eac1b9667e55ff07e6ff4fc392
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC Veritabanı Bağlantılarıyla Çalışma
 Aşağıdaki konular, ODBC veri kaynaklarına bağlanmak açıklanmaktadır.  
@@ -36,4 +39,4 @@ Aşağıdaki konular, ODBC veri kaynaklarına bağlanmak açıklanmaktadır.
 -   [Program aracılığıyla ODBC veri kaynağını yapılandırma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+ [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

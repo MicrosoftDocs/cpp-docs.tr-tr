@@ -16,11 +16,12 @@ caps.latest.revision: "2"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5475a211e3b0c116a7ab51cb7b7b128f5742e0cc
-ms.sourcegitcommit: c9108f0c45b7a634d4e6e5c2d2ec192d50ffdbab
+ms.workload: cplusplus
+ms.openlocfilehash: 12fabf51f9a6d3db89ea544b5c3df1d59a6d5d02
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="use-native-multi-targeting-in-visual-studio-to-build-old-projects"></a>Yerel çoklu sürüm desteği eski projeler derlemek için Visual Studio'da kullanın
 
@@ -75,7 +76,7 @@ Gereksinim duyabileceğiniz Visual Studio indirmeleri bazıları şunlardır:
   - [Microsoft Visual Studio Community 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48146)  
   - [Windows Masaüstü Güncelleştirme 5 ile için Microsoft Visual Studio Express 2013](https://www.microsoft.com/en-us/download/details.aspx?id=48131)  
   - [Microsoft Visual Studio Express 2012 için Windows Masaüstü](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
-  - [Visual Studio 2012 güncelleştirme 5](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
+  - [Visual Studio 2012 Güncelleştirme 5](https://www.microsoft.com/en-us/download/details.aspx?id=34673)  
   - [Microsoft Visual C++ 2010 Express (Web Yükleyicisi)](https://download.microsoft.com/download/1/D/9/1D9A6C0E-FC89-43EE-9658-B9F0E3A76983/vc_web.exe)  
   - [Microsoft Visual Studio 2010 Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=23691)  
   - [Microsoft Visual C++ 2008 Express SP1 (Web Yükleyicisi)](https://go.microsoft.com/?linkid=7729279)  
@@ -84,5 +85,5 @@ Bu ürünler yüklü olduğunda **Platform araç takımı** özelliği açılan 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Visual C++'ın önceki sürümlerinden yükseltme projeleri](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[Visual Studio 2017 C++ uygunluk yenilikleri](../cpp-conformance-improvements-2017.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  

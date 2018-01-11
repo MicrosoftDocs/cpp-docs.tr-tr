@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a23629ae5bc7d1645367019ea38d747779b84b16
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ebeaae465bd387d3939f9588be3c4a8e5eaf507b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="srwlocktrylockexclusive-method"></a>SRWLock::TryLockExclusive Yöntemi
 Geçerli veya belirtilen SRWLock nesnesi özel kullanım modu SRWLock nesnesinde almaya çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kilit aittir.  
@@ -47,4 +50,4 @@ static SyncLockExclusive TryLockExclusive(
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLock sınıfı](../windows/srwlock-class.md)
+ [SRWLock Sınıfı](../windows/srwlock-class.md)

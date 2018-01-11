@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e550c41c28f0d2bac4386d4a4a1c012785fc1526
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6bac914a2803390fa737acce5d424d56079777a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme
 Dönüştürebilir bir <xref:System.String> için `std::string` veya `std::wstring`, kullanmadan `PtrToStringChars` Vcclr.h içinde.  
@@ -72,4 +75,4 @@ efgh
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+ [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

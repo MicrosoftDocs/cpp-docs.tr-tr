@@ -11,11 +11,12 @@ ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8c0fe11f502fbfedda226e1d699a2822bdfd676a
-ms.sourcegitcommit: 78f3f8208d49b7c1d87f4240f4a1496b7c29333e
+ms.workload: cplusplus
+ms.openlocfilehash: 3a1010d7061fb8df20cc821e26e903e356050850
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-and-155improvements155"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153) ve [15,5](#improvements_155).
 
@@ -67,7 +68,7 @@ Visual Studio 2015 güncelleştirme 3'ü aracılığıyla uygunluk geliştirmele
 
 **Extern constexpr için yeni derleyici anahtar** Visual Studio'nun önceki sürümleri derleyici her zaman vermiş bir `constexpr` değişkeni bile işaretlendi, değişken iç bağlantı `extern`. Visual Studio 2017 sürüm 15,5, yeni bir derleyici anahtar içinde [/Zc:externConstexpr](build/reference/zc-externconstexpr.md), doğru standartları uyumsuz davranışı etkinleştirir. Daha fazla bilgi için bkz: [extern constexpr bağlantı](#extern_linkage).
 
-**Dinamik özel durum belirtimleri kaldırma**: [P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html). Dinamik özel durum belirtimleri C ++ 11'de kullanım dışı bırakılan. Özellik C ++ 17 ' kaldırılır, ancak (hala) kullanım dışı `throw()` belirtimi için diğer ad olarak kesinlikle tutulur `noexcept(true)`. Daha fazla bilgi için bkz: [dinamik özel durum belirtimi kaldırma ve noexcept](#noexcept_removal). 
+**Dinamik özel durum belirtimleri kaldırma**: [P0003R5](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0003r5.html). Dinamik özel durum belirtimleri C++11'de kullanım dışı bırakıldı. Özellik C ++ 17 ' kaldırılır, ancak (hala) kullanım dışı `throw()` belirtimi için diğer ad olarak kesinlikle tutulur `noexcept(true)`. Daha fazla bilgi için bkz: [dinamik özel durum belirtimi kaldırma ve noexcept](#noexcept_removal). 
 
 **not_fn()** : [P0005R4](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0005r4.html) not1 ve not2 yerini alır.
 
@@ -1172,4 +1173,4 @@ int main()
 ```
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Visual C++ dili uyumluluğu](visual-cpp-language-conformance.md)  
+[Visual C++ Dil Uyumluluğu](visual-cpp-language-conformance.md)  

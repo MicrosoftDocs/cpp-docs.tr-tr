@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f9e91bf5bd5c35388646178335ed2ab42c3d1304
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d84888236b81fe862c6a22793e926ebf7df55c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="value-types-modern-c"></a>Değer Türleri (Modern C++)
 C++ sınıfları, varsayılan değer türleri şunlardır. Bu konu, değer türleri ve bunların kullanılması ile ilgili sorunları tanıtıcı genel bakış sağlar.  
@@ -60,7 +61,7 @@ test.cpp(15) : error C2248: 'MyRefType::operator =' : cannot access private memb
   
  Nasıl etkin taşıma varsa karar? Etkin yapım kopyalama zaten biliyorsanız, büyük olasılıkla derin bir kopya ucuz olabiliyorsa, etkin taşımak istersiniz. Destek taşıma biliyorsanız, ancak, bu mutlaka etkin kopyalama istediğiniz anlamına gelmez. Bu ikinci durumda, bir "yalnızca taşıma türü" adlı. Standart Kitaplığı'nda zaten örneğidir `unique_ptr`. Eski bir yan not olarak `auto_ptr` kullanım dışıdır ve tarafından değiştirildi `unique_ptr` C++'ın önceki sürümünde taşıma semantiği destek eksikliği nedeniyle tam olarak.  
   
- Taşıma semantiği kullanarak, dönüş değeri veya Ekle-in-middle kullanabilirsiniz. Taşıma bir iyileştirme kopyasının.. Yığın ayırma geçici bir çözüm olarak gerek yoktur. Aşağıdaki yarı kodu göz önünde bulundurun:  
+ Taşıma semantiği kullanarak, dönüş değeri veya Ekle-in-middle kullanabilirsiniz. Taşıma bir iyileştirme kopyasının. Yığın ayırma geçici bir çözüm olarak gerek yoktur. Aşağıdaki yarı kodu göz önünde bulundurun:  
   
 ```cpp  
 #include <set>  

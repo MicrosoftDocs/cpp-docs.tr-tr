@@ -16,11 +16,14 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 298a08689d6c4aa69d4a52af5fad965e3e353b5c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8b9b3c8ff385aed22785386c035ed537d8d97e97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-the-user-control-and-host-mdi-view"></a>Nasıl yapılır: Kullanıcı Denetim ve Konak MDI Görünümü Oluşturma
 Aşağıdaki adımlar bir .NET Framework kullanıcı denetimi oluşturma, denetim sınıf kitaplığı (özellikle, Windows Denetim Kitaplığı Proje), kullanıcı denetimi yazar ve ardından bir derlemeye Projeyi derlemek gösterir. Denetimin ardından türetilmiş sınıfları kullanan bir MFC uygulamasından tüketilebilir [CView sınıfı](../mfc/reference/cview-class.md) ve [CWinFormsView sınıfı](../mfc/reference/cwinformsview-class.md).  
@@ -110,4 +113,4 @@ Aşağıdaki adımlar bir .NET Framework kullanıcı denetimi oluşturma, deneti
      Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat hata ayıklama olmadan**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)
+ [MFC Görünümü Olarak Windows Forms Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-forms-user-control-as-an-mfc-view.md)

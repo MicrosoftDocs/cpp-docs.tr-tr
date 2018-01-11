@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95a3c2fb12742600822720702d274f251b044cc7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1de482b285f24ce9ed68bd70fa7b21b0b66a4d56
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chainpropertyset"></a>CHAIN_PROPERTY_SET
 Bu makrosu özellik grupları zincir oluşturur.  
@@ -48,4 +51,4 @@ ChainClass
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md)
+ [OLE DB Sağlayıcı Şablonları için Makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md)

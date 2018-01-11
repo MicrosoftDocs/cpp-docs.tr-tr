@@ -24,11 +24,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 40f4c4821a6141e7795f37f5a276a544677ba48b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07e41d6bf03df1231249a9e2ea5e54e420c9840c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
 Gelecekteki karşılık gelen bir C++ AMP zaman uyumsuz işlemi temsil eder.  
@@ -52,7 +53,7 @@ class completion_future;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Al](#get)|İlişkili zaman uyumsuz işlemi tamamlanana kadar bekler.|  
+|[get](#get)|İlişkili zaman uyumsuz işlemi tamamlanana kadar bekler.|  
 |[ardından](#then)|Bir geri çağırma işlevi nesnesine zincir `completion_future` yürütme ilişkili zaman uyumsuz işlemi bittikten sonra yürütülecek nesne.|  
 |[to_task](#to_task)|Döndürür bir `task` ilişkili zaman uyumsuz işlemi karşılık gelen nesne.|  
 |[Geçerli](#valid)|Nesne bir zaman uyumsuz işlemle ilişkili olup olmadığını belirten bir Boole değeri alır.|  
@@ -285,4 +286,4 @@ Bozar `completion_future` nesnesi.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

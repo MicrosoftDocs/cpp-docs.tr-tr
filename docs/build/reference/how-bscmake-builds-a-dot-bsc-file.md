@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: adc340a30fcf0292c3dc7fa0e595d488b4046431
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb8e03bed85a5e466a3c41f0cffc51d35c4b4561
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-bscmake-builds-a-bsc-file"></a>BSCMAKE .Bsc Dosyasını Nasıl Derler
 BSCMAKE oluşturur veya bunu en verimli şekilde .bsc dosyası oluşturur. Olası sorunları önlemek için yapılandırma işlemi anlamak önemlidir.  
@@ -32,4 +33,4 @@ BSCMAKE oluşturur veya bunu en verimli şekilde .bsc dosyası oluşturur. Olas�
 -   Bir artımlı derleme için başarılı olması .bsc dosyası mevcut olması gerekir. Tüm katkıda bulunan .sbr dosyaları, boş dosyalar bile bulunmalı ve BSCMAKE komut satırında belirtilmesi gerekir. BSCMAKE komut satırından .sbr dosyası atlarsanız, kendi katkı dosyasından kaldırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme bir. BSC dosyası](../../build/reference/building-a-dot-bsc-file.md)
+ [.Bsc Dosyası Derleme](../../build/reference/building-a-dot-bsc-file.md)

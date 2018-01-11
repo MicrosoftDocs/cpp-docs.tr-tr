@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d062a17fd71d53451aa8de3aa7d498f8a5ec68a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 14bd61bc4f319a50abdbf76d7f6e60e511e57312
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme
 İş parçacığı tüm OLE DB sağlayıcısı sınıfları ve kayıt defteri girdileri buna göre ayarlanır. Çok kullanıcılı durumlarda performansı yüksek düzeyde sağlanmasına yardımcı olmak amacıyla boş iş parçacığı desteklemek için iyi bir fikirdir. Sağlayıcınız iş parçacığı açısından güvenli tutmaya yardımcı olmak için kodunuzu düzgün bir şekilde engellendiğini doğrulamanız gerekir. Her yazma veya verileri depolamak kritik bölümler ile erişimini engellemelidir.  

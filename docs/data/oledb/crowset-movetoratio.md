@@ -24,11 +24,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bc5c5a46eabd6b308a8b91fba8f7844950d55985
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 70b4d7994bb2175d0d402fdd309a8258f7127dc7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetmovetoratio"></a>CRowset::MoveToRatio
 Satır satır kümesindeki bir kesir konumundan başlayarak getirir.  
@@ -70,4 +73,4 @@ Satır satır kümesindeki bir kesir konumundan başlayarak getirir.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRowset sınıfı](../../data/oledb/crowset-class.md)
+ [CRowset Sınıfı](../../data/oledb/crowset-class.md)

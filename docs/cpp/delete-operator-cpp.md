@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9b12d0e20ebb355eb8422784ae0921f693279117
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36da346329341221d43af2ec96aa17be4f819bf8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="delete-operator-c"></a>delete İşleci (C++)
 Bellek bloğunu kaldırır.  
@@ -99,5 +100,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [Yeni ve delete işleçleri](../cpp/new-and-delete-operators.md)   
+ [new ve delete İşleçleri](../cpp/new-and-delete-operators.md)   
  

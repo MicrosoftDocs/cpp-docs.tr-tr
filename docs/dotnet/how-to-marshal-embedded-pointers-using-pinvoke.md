@@ -19,11 +19,14 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c8f6716a11919c300dc3153ca678767503a35088
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c8ae331bb6bb6b35fc4353ad08240fd3d23136a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-marshal-embedded-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Katıştırılmış İşaretçileri Sıralama
 Platform Çağırma (P/Invoke) işlevselliği kullanılarak yönetilen koddan yönetilmeyen DLL'lere uygulanan işlevler çağrılabilir. DLL için kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte için tek seçenektir. Ancak, diğer .NET dilleri, Visual C++ alternatif P/Invoke sağlar. Daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) ve [nasıl yapılır: sıralama katıştırılmış işaretçileri C++ Çalışabilirliği kullanarak](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
@@ -110,4 +113,4 @@ int main() {
  DLL hiçbir bölümünün geleneksel kullanarak yönetilen kod açıktır Not #include yönergesi. İle içeri aktarılan işlevlerle sorunlar aslında, DLL yalnızca çalışma zamanında erişilir, böylece <xref:System.Runtime.InteropServices.DllImportAttribute> derleme zamanında algılanmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ (DllImport özniteliği) açık PInvoke kullanma](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+ [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)

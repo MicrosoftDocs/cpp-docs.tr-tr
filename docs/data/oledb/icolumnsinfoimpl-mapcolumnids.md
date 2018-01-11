@@ -23,11 +23,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: adcc2509cacdb6e05c2f3b3018fa95fd9a99e3bf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: c39cb7201ce60e8dfadd375956d738c30a6fdd61
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icolumnsinfoimplmapcolumnids"></a>IColumnsInfoImpl::MapColumnIDs
 Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sütunların sıra numaraları bir dizi döndürür.  
@@ -51,4 +54,4 @@ Belirtilen sütun kimlikleri tarafından tanımlanan bir satır kümesindeki sü
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icolumnsınfoımpl sınıfı](../../data/oledb/icolumnsinfoimpl-class.md)   
- [Icolumnsınfoımpl::GetColumnInfo](../../data/oledb/icolumnsinfoimpl-getcolumninfo.md)
+ [IColumnsInfoImpl::GetColumnInfo](../../data/oledb/icolumnsinfoimpl-getcolumninfo.md)

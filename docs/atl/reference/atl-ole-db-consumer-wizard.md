@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3ffb86fed1f7a3a4b6960fd13db84cdb3da7ce7c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d12020b6adfca2c23dc610b5e596ff883bb9e7ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketici Sihirbazı
 Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamalarla belirtilen OLE DB sağlayıcısı ile belirtilen veri kaynağına erişmek için gerekli ayarlar.  

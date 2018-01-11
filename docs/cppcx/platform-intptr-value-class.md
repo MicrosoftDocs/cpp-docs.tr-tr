@@ -18,11 +18,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4bd0fcdf8f7b7f825a087a2176babeb59bac4f05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 787e8aaa0dc46a651fc4d0ac8b16d9521aebd010
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 İmzalı bir işaretçi veya tanıtıcısı ve özelliği temsil eden platforma özgü boyutudur (32 bit veya 64 bit).  

@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 15dd1d6ece1af3d561801c497b87f7be4f7d5397
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6041a3701bfac1561ab58ac2a6f504d255fc31c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Platform::Collections::InputIterator sınıfı
 Windows çalışma zamanı türetilen koleksiyonlar için bir standart Şablon kitaplığı InputIterator sağlar.  

@@ -27,11 +27,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: daaebc957862b893b130dce28d47d4a166da9d52
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 927dc9312fa7ad9729e4a8ab87d1748f699c8508
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbookmarkgetsize"></a>CBookmark::GetSize
 Yer işareti arabellek boyutunu alır.  
@@ -51,4 +54,4 @@ virtual DBLENGTH GetSize( ) const throw( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CBookmark sınıfı](../../data/oledb/cbookmark-class.md)
+ [CBookmark Sınıfı](../../data/oledb/cbookmark-class.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1c0a58a528f6ae414c7970dc58ed67619f0c07f7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 19276530a0da38f383da6776e7cd62868c7ca1df
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sizestr"></a>SIZESTR
 Bir metin öğenin boyutunu bulur.  
@@ -32,4 +33,4 @@ name SIZESTR textitem
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

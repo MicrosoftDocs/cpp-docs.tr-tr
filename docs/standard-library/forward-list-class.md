@@ -91,11 +91,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: eba062342aeb0ecc6e9818d7da9eead94b81a9af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36354e8b6e6e0c456334caed402a700129b32dae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="forwardlist-class"></a>forward_list Sınıfı
 Öğe değişen uzunluk dizisi denetleyen bir nesne açıklar. Sıralı her türünün bir üyesi içeren düğümler, ayrı olarak bağlı listesi olarak depolanan `Type`.  
@@ -169,7 +170,7 @@ class forward_list
 |[Birleştirme](#merge)|Öğeleri bağımsız değişkeni listeden kaldırır, bunları hedef iletme listesine ekler ve öğeleri artan düzende veya başka bir belirtilen sırayla yeni, birleştirilmiş kümesini sıralar.|  
 |[pop_front](#pop_front)|İletme listesinin başında öğeyi siler.|  
 |[push_front](#push_front)|Bir öğeyi iletme listesini başlangıcına ekler.|  
-|[Kaldır](#remove)|Belirtilen bir değerle eşleşen bir iletme listesindeki öğeleri siler.|  
+|[remove](#remove)|Belirtilen bir değerle eşleşen bir iletme listesindeki öğeleri siler.|  
 |[remove_if](#remove_if)|Öğeleri belirtilen bir koşulu karşılanıp iletme listeden siler.|  
 |[yeniden boyutlandırma](#resize)|İleriye doğru listesi için yeni bir boyutunu belirtir.|  
 |[geriye doğru](#reverse)|Öğeleri bir iletme listesinde nasıl sırayla tersine çevirir.|  
@@ -957,5 +958,5 @@ typedef typename Allocator::value_type value_type;
  Şablon parametresi _ eşanlamlısı türüdür `Ty`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< forward_list >](../standard-library/forward-list.md)
+ [<forward_list>](../standard-library/forward-list.md)
 

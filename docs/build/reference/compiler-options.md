@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 490814f85199450d4261bf4071184b75b5ea10c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c433abea04ff81c69fe1b73569ea7e043e6e81ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 cl.exe Microsoft C ve C++ Derleyicileri ve bağlayıcı denetleyen bir araçtır. cl.exe yalnızca Microsoft Visual Studio desteklendiği işletim sistemlerinin üzerinde çalıştırılabilir.  
@@ -40,18 +41,18 @@ cl.exe Microsoft C ve C++ Derleyicileri ve bağlayıcı denetleyen bir araçtır
 ## <a name="finding-an-option"></a>Bir seçenek bulma  
  Belirli derleyici seçeneği bulmak için aşağıdaki listede birine bakın:  
   
--   [Alfabetik olarak listelenen derleyici seçenekleri](../../build/reference/compiler-options-listed-alphabetically.md)  
+-   [Alfabetik Listelenmiş Derleyici Seçenekleri](../../build/reference/compiler-options-listed-alphabetically.md)  
   
--   [Kategoriye göre listelenen derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md)  
+-   [Kategorilere Göre Listelenen Derleyici Seçenekleri](../../build/reference/compiler-options-listed-by-category.md)  
   
 ## <a name="specifying-options"></a>Seçeneklerini belirtme  
  Her derleyici seçeneği konuda geliştirme ortamında nasıl ayarlanabilir anlatılmaktadır. Geliştirme ortamı dışında seçeneklerini belirtme hakkında daha fazla bilgi için bkz:  
   
--   [Derleyici komut satırı sözdizimi](../../build/reference/compiler-command-line-syntax.md)  
+-   [Derleyici Komut Satırı Sözdizimi](../../build/reference/compiler-command-line-syntax.md)  
   
--   [CL komut dosyaları](../../build/reference/cl-command-files.md)  
+-   [CL Komut Dosyaları](../../build/reference/cl-command-files.md)  
   
--   [CL ortam değişkenleri](../../build/reference/cl-environment-variables.md)  
+-   [CL Ortam Değişkenleri](../../build/reference/cl-environment-variables.md)  
   
 ## <a name="related-build-tools"></a>İlgili derleme araçları  
  Kullanım [NMAKE](../../build/nmake-reference.md) , çıktı dosyasını oluşturmak için.  
@@ -64,4 +65,4 @@ cl.exe Microsoft C ve C++ Derleyicileri ve bağlayıcı denetleyen bir araçtır
  [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
  [Hızlı derleme](../../build/reference/fast-compilation.md)   
- [CL bağlayıcı çağırır](../../build/reference/cl-invokes-the-linker.md)
+ [CL Bağlayıcı Çağırır](../../build/reference/cl-invokes-the-linker.md)

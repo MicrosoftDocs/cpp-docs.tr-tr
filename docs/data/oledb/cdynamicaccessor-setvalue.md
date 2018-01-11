@@ -22,11 +22,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 194b87d9422f3e2ebf80fa647353c0cc6f72a5b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: bdd334f916257d3688658e941522b6cc20b12b40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicaccessorsetvalue"></a>CDynamicAccessor::SetValue
 Belirtilen sütun için veri depolar.  
@@ -74,4 +77,4 @@ bool SetValue(
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)
+ [CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)

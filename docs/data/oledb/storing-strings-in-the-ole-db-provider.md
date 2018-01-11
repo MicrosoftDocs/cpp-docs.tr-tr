@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: de8fdb6583f175505fc6a77070e30412aee38ae8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 11c058bacee52eb2b1df771a27d8695113f1c71d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storing-strings-in-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısında Depolama
 MyProviderRS.h öğesinde ATL OLE DB Sağlayıcı Sihirbazı adlı varsayılan kullanıcı kaydı oluşturur `CWindowsFile`. İki dizeyi işlemek için ya da değiştirme `CWindowsFile` veya kendi kullanıcı kaydı aşağıdaki kodda gösterildiği gibi ekleyin:  
@@ -55,4 +58,4 @@ END_PROVIDER_COLUMN_MAP()
  Sağlayıcınıza başarıyla Test ettiğinizde, ek arabirimler uygulayarak işlevselliğini artırmak isteyebilirsiniz. Bir örnek gösterilen [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit salt okunur sağlayıcıyı uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)
+ [Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)

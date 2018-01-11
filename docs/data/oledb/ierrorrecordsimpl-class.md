@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6bd2b342f2e7b29103b08c67fa973ed4a8c64869
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 30589266bc4f9b2c083de5ccd82af5bec02cd4ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
 OLE DB uygulayan [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) kayıtları ekleme ve veri üyeden kayıtları almak arabirimi ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) türü **CAtlArray <** `RecordClass`**>**.  
@@ -63,7 +66,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[AddErrorRecord](../../data/oledb/ierrorrecordsimpl-adderrorrecord.md)|Bir kayıt için OLE DB hata nesnesi ekler.|  
 |[Getbasicerrorınfo](../../data/oledb/cdberrorinfo-getbasicerrorinfo.md)|Dönüş kodu ve sağlayıcıya özgü hata numarası gibi hata ile ilgili temel bilgileri döndürür.|  
 |[GetCustomErrorObject](../../data/oledb/cdberrorinfo-getcustomerrorobject.md)|Bir işaretçi bir arabirim için bir özel hata nesnesi döndürür.|  
-|[Geterrorınfo](../../data/oledb/cdberrorinfo-geterrorinfo.md)|Döndürür bir [IErrorInfo](https://msdn.microsoft.com/en-us/library/ms718112.aspx) belirtilen kayıt arabirimi işaretçisi.|  
+|[GetErrorInfo](../../data/oledb/cdberrorinfo-geterrorinfo.md)|Döndürür bir [IErrorInfo](https://msdn.microsoft.com/en-us/library/ms718112.aspx) belirtilen kayıt arabirimi işaretçisi.|  
 |[GetErrorParameters](../../data/oledb/cdberrorinfo-geterrorparameters.md)|Hata parametrelerini döndürür.|  
 |[GetRecordCount](../../mfc/reference/cdaorecordset-class.md#getrecordcount)|OLE DB kayıt nesnesinde kayıt sayısını döndürür.|  
   

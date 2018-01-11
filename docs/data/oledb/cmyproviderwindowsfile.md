@@ -17,11 +17,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63143532c5f5ad770c6234a24fbedf1b478ba143
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: fef6896df77ff3bcbf9251e2aabba0f810b7f4db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmyproviderwindowsfile"></a>CMyProviderWindowsFile
 Sihirbaz, bir satır veri içeren sınıf oluşturur; Bu durumda, adlı `CMyProviderWindowsFile`. Aşağıdaki kod `CMyProviderWindowsFile` oluşturulan Sihirbazı'nı ve bir dizindeki tüm dosyaları kullanarak listeleri **WIN32_FIND_DATA** yapısı. `CMyProviderWindowsFile`öğesinden devralınan **WIN32_FIND_DATA** yapısı:  
@@ -84,4 +87,4 @@ HRESULT Execute(DBPARAMS * pParams, LONG* pcRowsAffected)
  Yöntem (karşılık gelen bir satır) her dosya için bir girdi oluşturur ve yerleştirir **m_rgRowData** veri üyesi. `CRowsetImpl` Sınıfı tanımlayan **m_rgRowData** veri üyesi. Bu dizideki veri tüm tabloyu temsil eder ve tüm şablonlarda kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sağlayıcı Sihirbazı tarafından oluşturulan dosyalar](../../data/oledb/provider-wizard-generated-files.md)
+ [Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)

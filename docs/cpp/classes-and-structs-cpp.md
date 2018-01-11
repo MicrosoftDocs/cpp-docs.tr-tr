@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0d5f690846954dde21252b2aabdd229abdf33ec6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ac15db222aed3abad980f4e1a0c715c099e2019c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classes-and-structs-c"></a>Sınıflar ve Yapılar (C++)
 Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan özel iken yapılar için varsayılan erişilebilirlik ortak olması dışında iki yapıları C++ ile aynıdır.  
@@ -32,11 +33,11 @@ Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan �
   
  Aşağıdaki konular bulunur:  
   
--   [sınıfı](../cpp/class-cpp.md)  
+-   [class](../cpp/class-cpp.md)  
   
--   [yapısı](../cpp/struct-cpp.md)  
+-   [struct](../cpp/struct-cpp.md)  
   
--   [Sınıf üyelerine genel bakış](../cpp/class-member-overview.md)  
+-   [Sınıf Üyelerine Genel bakış](../cpp/class-member-overview.md)  
   
 -   [Üye erişim denetimi](../cpp/member-access-control-cpp.md)  
   
@@ -48,15 +49,15 @@ Bu bölüm, C++ sınıfları ve yapıları tanıtır. Sınıflarda varsayılan �
   
 -   [Değişebilir veri üyeleri (değişebilir tanımlayıcı)](../cpp/mutable-data-members-cpp.md)  
   
--   [İç içe geçmiş sınıf bildirimleri](../cpp/nested-class-declarations.md)  
+-   [İç İçe Geçmiş Sınıf Bildirimleri](../cpp/nested-class-declarations.md)  
   
--   [Anonim sınıf türleri](../cpp/anonymous-class-types.md)  
+-   [Anonim Sınıf Türleri](../cpp/anonymous-class-types.md)  
   
--   [Üye işaretçileri](../cpp/pointers-to-members.md)  
+-   [Üye İşaretçileri](../cpp/pointers-to-members.md)  
   
--   [this işaretçisi](../cpp/this-pointer.md)  
+-   [this İşaretçisi](../cpp/this-pointer.md)  
   
--   [C++ Bit alanları](../cpp/cpp-bit-fields.md)  
+-   [C++ Bit Alanları](../cpp/cpp-bit-fields.md)  
   
  Üç sınıf yapısı, sınıf ve birleşim türleridir. Kullanılarak bildirilir [yapısı](../cpp/struct-cpp.md), [sınıfı](../cpp/class-cpp.md), ve [UNION](../cpp/unions.md) anahtar sözcükler (bkz [sınıf türleri tanımlama](http://msdn.microsoft.com/en-us/e8c65425-0f3a-4dca-afc2-418c3b1e57da)). Aşağıdaki tabloda, üç sınıf türleri arasındaki farklar gösterilmektedir.  
   

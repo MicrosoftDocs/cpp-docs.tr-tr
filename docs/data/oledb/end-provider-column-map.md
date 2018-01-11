@@ -15,11 +15,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fd827656020080c7f69a891723fe5b0c7fb2d41c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 6d55cbd4cfc6a15f56a56c40acc795335a7dcbc4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="endprovidercolumnmap"></a>END_PROVIDER_COLUMN_MAP
 Sağlayıcı sütun eşlemesi girdileri sonunu işaretler.  
@@ -42,4 +45,4 @@ END_PROVIDER_COLUMN_MAP( )
  [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md)   
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
- [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md)
+ [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1fc6893b02dccff6bb30d7a20d1a2c1dce9fbb1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7cbf969f601bd90e84bf0ee15ae2ea3dcb392610
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="invoking-scripts"></a>Komut dosyaları çağırma
 [Değiştirilebilir parametreler (kayıt şirketinizin önişlemci) kullanarak](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md) değiştirme eşlemeleri açıklanır ve kayıt yöntemi değinmektedir **AddReplacement**. Sekiz diğer yöntemleri komut belirli kayıt şirketi var ve tüm aşağıdaki tabloda açıklanmıştır.  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/24/2017
  Yöntemleri **FileRegister** ve **FileUnregister** bir kaynak betik istemiyorsanız veya kendi dosyasındaki komut dosyasının çalışmasını istiyorsanız kullanışlıdır. Yöntemleri **StringRegister** ve **StringUnregister** dinamik olarak ayrılan dizesinde depolanması .rgs dosya izin verin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaydedici betikleri oluşturma](../atl/creating-registrar-scripts.md)
+ [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)
 

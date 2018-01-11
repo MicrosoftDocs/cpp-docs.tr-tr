@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 719027387501e5dc9fe5d51e2464596bf309b278
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 078f1d3a0ca0e94d680cf33eac2403a2211a5e7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wcharmin"></a>WCHAR_MIN
 Türü için en düşük değer `wchar_t`.  
@@ -31,4 +32,4 @@ Türü için en düşük değer `wchar_t`.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

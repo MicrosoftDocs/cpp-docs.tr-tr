@@ -17,45 +17,46 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8019bf2de2055f43fee8468a9fa18d7b952308b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ceea56fb3cdc412efe1db3f51f5dc33f2c5f893
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-ctreectrl"></a>CTreeCtrl Kullanma
 Sınıfı tarafından temsil edilen bir ağaç denetimi [CTreeCtrl](../mfc/reference/ctreectrl-class.md), bir disk üzerinde bir dizin veya dosya ve dizinleri girdileri olan bir belgeyi başlıklarında gibi öğelerini hiyerarşik bir listesini görüntüleyen bir penceredir. Her öğe bir etiket ve isteğe bağlı eşlemli görüntüyü oluşur ve her bir öğeyi kendisiyle ilişkili alt öğeler listesi olabilir. Kullanıcı, bir öğeyi tıklatarak genişletme ve daraltma ilişkili alt öğeler listesi. Dizin ağacında dosya Gezgini sol bölmesinde, ağaç denetimi örneğidir.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [CTreeCtrl vs. CTreeView](../mfc/ctreectrl-vs-ctreeview.md)  
+-   [CTreeCtrl ile CTreeView Karşılaştırması](../mfc/ctreectrl-vs-ctreeview.md)  
   
--   [Ağaç denetimlerini kullanma](../mfc/using-tree-controls.md)  
+-   [Ağaç Denetimlerini Kullanma](../mfc/using-tree-controls.md)  
   
--   [Ağaç denetimi ile iletişim](../mfc/communicating-with-a-tree-control.md)  
+-   [Ağaç Denetimi ile İletişim](../mfc/communicating-with-a-tree-control.md)  
   
--   [Ağaç denetimi stilleri](../mfc/tree-control-styles.md)  
+-   [Ağaç Denetimi Stilleri](../mfc/tree-control-styles.md)  
   
--   [Ağaç denetimi üst ve alt öğeleri](../mfc/tree-control-parent-and-child-items.md)  
+-   [Ağaç Denetimi Üst ve Alt Öğeleri](../mfc/tree-control-parent-and-child-items.md)  
   
--   [Ağaç denetim öğesi konumu](../mfc/tree-control-item-position.md)  
+-   [Ağaç Denetim Öğesi Konumu](../mfc/tree-control-item-position.md)  
   
--   [Ağaç denetim öğesi etiketleri](../mfc/tree-control-item-labels.md)  
+-   [Ağaç Denetim Öğesi Etiketleri](../mfc/tree-control-item-labels.md)  
   
--   [Ağaç denetimi etiketini düzenleme](../mfc/tree-control-label-editing.md)  
+-   [Ağaç Denetimi Etiketini Düzenleme](../mfc/tree-control-label-editing.md)  
   
--   [Ağaç denetim öğesi durumlarına genel bakış](../mfc/tree-control-item-states-overview.md)  
+-   [Ağaç Denetim Öğesi Durumlarına Genel Bakış](../mfc/tree-control-item-states-overview.md)  
   
--   [Ağaç denetim görüntü listeleri](../mfc/tree-control-image-lists.md)  
+-   [Ağaç Denetim Görüntü Listeleri](../mfc/tree-control-image-lists.md)  
   
--   [Ağaç denetim öğesi seçimi](../mfc/tree-control-item-selection.md)  
+-   [Ağaç Denetim Öğesi Seçimi](../mfc/tree-control-item-selection.md)  
   
--   [Ağaç denetimi sürükle ve bırak işlemleri](../mfc/tree-control-drag-and-drop-operations.md)  
+-   [Ağaç Denetimi Sürükle ve Bırak İşlemleri](../mfc/tree-control-drag-and-drop-operations.md)  
   
--   [Ağaç denetim öğesi bilgileri](../mfc/tree-control-item-information.md)  
+-   [Ağaç Denetim Öğesi Bilgileri](../mfc/tree-control-item-information.md)  
   
--   [Ağaç denetimi bildirim iletileri](../mfc/tree-control-notification-messages.md)  
+-   [Ağaç Denetimi Bildirim İletileri](../mfc/tree-control-notification-messages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

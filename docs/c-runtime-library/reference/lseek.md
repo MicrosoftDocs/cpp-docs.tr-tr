@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a990d995756dbbc5dc966017cc85d62951566b96
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eebcd1589a396e55f8caf2d4fcf21be6ac929fd3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lseek"></a>lseek
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_lseek](../../c-runtime-library/reference/lseek-lseeki64.md) yerine.

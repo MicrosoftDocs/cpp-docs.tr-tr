@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 61152e939838833e9296643af1144fe363c7cf52
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d89f6b5116459018cb50eb58b976f6f853ed088
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="algorithms-modern-c"></a>Algoritmalar (Modern C++)
 Algoritmalara kullanmanızı tavsiye ederiz Modern C++ programlama [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md). Önemli bazı örnekler şunlardır:  

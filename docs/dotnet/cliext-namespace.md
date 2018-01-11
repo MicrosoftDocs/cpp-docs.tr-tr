@@ -19,11 +19,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c75a03ab2fd8556c924e65c63e0c300aefff2575
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: fb330c5933259a559aef324e31c9478d4f7852b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cliext-namespace"></a>cliext Ad Alanı
 `cliext` Ad alanı, STL/CLR kitaplığı tüm türleri içerir. Tüm bu türleri ve STL/CLR türleri hakkında daha fazla bilgi için bağlantılar listesi için bkz: [STL/CLR kitaplık başvurusu](../dotnet/stl-clr-library-reference.md).  

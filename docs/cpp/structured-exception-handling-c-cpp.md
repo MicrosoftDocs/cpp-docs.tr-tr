@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 60480cef84f04c8c962e94d8f550823f637cfd84
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 37d5a89ebf95d8852664dcd50e44e82009ebd95e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 Yapılandırılmış özel durum işleme (SEH) Windows ve Visual C++ desteklemesine rağmen çünkü daha taşınabilir ve esnek kodu sağlar ISO standart C++ özel durum işleme kullanmanızı öneririz. Bununla birlikte, var olan kodda ya da programlar belirli türleri için hala SEH kullanmanız gerekebilir.  
@@ -65,11 +66,11 @@ Yapılandırılmış özel durum işleme (SEH) Windows ve Visual C++ desteklemes
   
  Daha fazla bilgi için bkz.:  
   
--   [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)  
+-   [Özel Durum İşleyicisi Yazma](../cpp/writing-an-exception-handler.md)  
   
--   [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)  
+-   [Sonlandırma İşleyicisi Yazma](../cpp/writing-a-termination-handler.md)  
   
--   [Yapılandırılmış özel durum işlemeyi C++ ile kullanma](../cpp/using-structured-exception-handling-with-cpp.md)  
+-   [Yapılandırılmış Özel Durum İşlemeyi C++ ile Kullanma](../cpp/using-structured-exception-handling-with-cpp.md)  
   
 ## <a name="example"></a>Örnek  
  Bir C++ programı SEH kullanıyorsanız ve kullanarak derleme yerel nesneler olarak adlandırılır için Yıkıcılar daha önce belirtildiği gibi **/EH** belirli değiştiricileri seçeneğiyle — Örneğin, **/EHsc** ve **/EHa**. Ancak, yürütme sırasında davranışı C++ özel durumlarını da kullanıyorsanız, beklediğiniz olmayabilir. Aşağıdaki örnek, bu davranış farklılıkları gösterir.  

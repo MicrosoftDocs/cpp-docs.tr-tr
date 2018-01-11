@@ -21,11 +21,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: de1282b80517a1c264121fbc0b749d3ca4ca2add
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 6e411ebcf40099a2236048dd8f151b438fe5b947
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>(MFC veri erişimi) ikinci kayıt kümesinden liste kutusunu doldurma
 Varsayılan olarak, kayıt görünümü alanları kayıt görünümünün denetimleriyle eşleştirilen bir tek kayıt kümesi nesnesi ile ilişkilidir. Bazen bir liste kutusu koymak isteyebilirsiniz veya birleşik giriş kutusunu kayıt görünümünüzde denetlemek ve ikinci bir kayıt kümesi nesnesi değerlerle doldurun. Kullanıcı, kayıt görünümünde görüntülenecek bilgileri yeni bir kategori seçmek için liste kutusunu kullanabilirsiniz. Bu konuda nasıl ve ne zaman açıklanmaktadır Bunu yapmak için.  
@@ -79,4 +82,4 @@ void CSectionForm::OnInitialUpdate()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)
+ [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

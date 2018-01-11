@@ -47,11 +47,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 29ad3d47b88f7af2b5d98bc4e4be19c973399b3f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c84244a619873dcd61b52dee317a751ff28ec3ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -82,7 +83,7 @@ assignment-operator : one of
 |`^=`|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |`&#124;=`|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
   
- **İşleç anahtar sözcükleri**  
+ **İşleç Anahtar Sözcükleri**  
   
  Bileşik atama işleçlerinden üçünün metin eşdeğerleri vardır. Bunlar:  
   
@@ -205,4 +206,4 @@ B = A;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [C atama işleçleri](../c-language/c-assignment-operators.md)
+ [C Atama İşleçleri](../c-language/c-assignment-operators.md)

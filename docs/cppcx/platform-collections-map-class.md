@@ -24,11 +24,12 @@ caps.latest.revision: "19"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 3cf7cec405170a1bb1ee02cfd076c78c43524c74
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a3893f7213bc2b154851a5d2481070d0d43724bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections sınıfı
 Temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  

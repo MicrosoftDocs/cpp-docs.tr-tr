@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7f4575f212752a43df2b130fbde9aa7264186d6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4d89fa475c997e0842ef9de5a21c26e664f25d78
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-determine-if-shutdown-has-started-ccli"></a>Nasıl yapılır: Kapatmanın Başlayıp Başlamadığını Belirleme (C++/CLI)
 Aşağıdaki kod örneği, uygulama veya .NET Framework şu anda sonlandırıyor olup olmadığını belirlemek gösterilmiştir. Bu, kapatma sırasında bu yapıları sistem tarafından sonlandırılır ve güvenilir bir şekilde kullanılamaz olduğundan, .NET Framework'teki statik öğeler erişmek için kullanışlıdır. Denetleyerek <xref:System.Environment.HasShutdownStarted%2A> özelliği ilk olarak, bu öğeleri erişilmemesi olası hatalarını önlemek.  
@@ -45,4 +48,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

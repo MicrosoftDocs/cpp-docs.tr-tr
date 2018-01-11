@@ -13,11 +13,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2ea9a8e5be589b1249c295595932facab4153a16
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2500f19d77339d5115f7d36c4b34b84e396a9284
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="console-applications-in-visual-c"></a>Visual C++'ta konsol uygulamaları
 Bir konsol uygulaması giriş kabul eder ve çıktı olarak da bilinen komut istemi olan konsola gönderir. Konsol uygulamaları temel iş yapmak için veya çok karmaşık görevleri gerçekleştirmek için oluşturabilirsiniz. Bir konsol uygulaması, daha sonra bir Windows masaüstü uygulaması veya evrensel Windows Platform uygulaması içine eklemek istediğiniz işlevselliği kavram kanıtı Tanıtımı olarak da kullanabilirsiniz. Konsol uygulamaları kanallar veya diğer RPC mekanizmaları yoluyla diğer Masaüstü uygulamaları ile iletişim kurabilir.  
@@ -26,5 +29,5 @@ Bir konsol uygulaması giriş kabul eder ve çıktı olarak da bilinen komut ist
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[İzlenecek yol: bir standart C++ programı (C++) oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)|Kullanıcılar komut satırından çalıştırabilir bir konsol uygulamasının nasıl oluşturulacağını açıklar.|  
-|[Bir konsol uygulaması oluşturma](../windows/creating-a-console-application.md)|Konsol uygulamaları hakkında bilgi sağlar.|
+|[İzlenecek yol: Standart C++ Programı Oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)|Kullanıcılar komut satırından çalıştırabilir bir konsol uygulamasının nasıl oluşturulacağını açıklar.|  
+|[Konsol Uygulaması Oluşturma](../windows/creating-a-console-application.md)|Konsol uygulamaları hakkında bilgi sağlar.|

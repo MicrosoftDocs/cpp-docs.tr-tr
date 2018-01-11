@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a9e7e2119bf25fda107ff529781efa5c517b01fc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 25d53a92f24fa485e080f02c6c889263b3abe18f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicstringaccessora-class"></a>CDynamicStringAccessorA Sınıfı
 Veritabanı şeması (temel yapısı) olanağıyla varsa, bir veri kaynağına erişim sağlar.  
@@ -45,4 +48,4 @@ typedef CDynamicStringAccessorT<CHAR, DBTYPE_STR> CDynamicStringAccessorA;
  [CDynamicParameterAccessor sınıfı](../../data/oledb/cdynamicparameteraccessor-class.md)   
  [CManualAccessor sınıfı](../../data/oledb/cmanualaccessor-class.md)   
  [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)   
- [CDynamicStringAccessor sınıfı](../../data/oledb/cdynamicstringaccessor-class.md)
+ [CDynamicStringAccessor Sınıfı](../../data/oledb/cdynamicstringaccessor-class.md)

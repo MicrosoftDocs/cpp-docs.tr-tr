@@ -63,11 +63,12 @@ caps.latest.revision: "35"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4850299b43b805c93136a59d5ee227e8bf79d2dc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 710f4119ef943be5b58e4b617c1da1bc75e01c3a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vsnprintf-vsnprintf-vsnprintfl-vsnwprintf-vsnwprintfl"></a>vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l](../../c-runtime-library/reference/vsnprintf-s-vsnprintf-s-vsnprintf-s-l-vsnwprintf-s-vsnwprintf-s-l.md).  

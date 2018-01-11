@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 09692c7c57fc1ccfc0e3ba3492beada3e1de2621
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c609d76093f70f1026c7d9e52734f6f4de446e26
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorgt-queue-stlclr"></a>İşleç&gt; (kuyruk) (STL/CLR)
 Sıra karşılaştırma büyük.  
@@ -101,4 +104,4 @@ int main()
  [operator! = (kuyruk) (STL/CLR)](../dotnet/operator-inequality-queue-stl-clr.md)   
  [İşleç\< (kuyruk) (STL/CLR)](../dotnet/operator-less-than-queue-stl-clr.md)   
  [operator > = (kuyruk) (STL/CLR)](../dotnet/operator-greater-or-equal-queue-stl-clr.md)   
- [operator < = (kuyruk) (STL/CLR)](../dotnet/operator-less-or-equal-queue-stl-clr.md)
+ [operator<= (queue) (STL/CLR)](../dotnet/operator-less-or-equal-queue-stl-clr.md)

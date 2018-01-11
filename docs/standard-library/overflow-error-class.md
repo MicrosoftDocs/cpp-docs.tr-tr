@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ee50fe7189d8a6507ff1e148b4cead5e2f97db67
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eff6eb00c6658983cb734b7db53e909a17b9bfd5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overflowerror-class"></a>overflow_error Sınıfı
 Sınıfı, aritmetik taşma bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.  
@@ -77,5 +78,5 @@ Type class std::overflow_error
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [runtime_error sınıfı](../standard-library/runtime-error-class.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6a634d748a0960e0eda56f89bcca66463780f08f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4cf86c854345244eafff80392cdc575d026c61ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="time-management"></a>Zaman Yönetimi
 Geçerli saati almak ve dönüştürme, ayarlamak ve gerektiği şekilde depolamak için bu işlevler kullanın. Geçerli sistem saati saattir.  
@@ -35,7 +36,7 @@ Geçerli saati almak ve dönüştürme, ayarlamak ve gerektiği şekilde depolam
 |İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |--------------|---------|  
 |[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|Saat türünden dönüştürmek `struct tm` karakter dizesi. Bu işlevleri sürümlerini `_s` soneki daha güvenlidir.|  
-|[saati](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati süresi döndür.|  
+|[clock](../c-runtime-library/reference/clock.md)|İşlem için geçen duvar saati süresi döndür.|  
 |[CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|Saat türünden dönüştürmek `time_t`, `__time32_t` veya `__time64_t` karakter dizesi. Bu işlevleri sürümlerini `_s` soneki daha güvenlidir.|  
 |[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|İki kez arasındaki farkı işlem.|[System::DateTime:: çıkarma](https://msdn.microsoft.com/en-us/library/system.datetime.subtract.aspx)|  
 |[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|Geçerli sistem saatinin türü değişkeninde depolar `struct _timeb` veya türü `struct __timeb64` bu işlevleri sürümlerini `_s` soneki daha güvenli.|  
@@ -47,7 +48,7 @@ Geçerli saati almak ve dönüştürme, ayarlamak ve gerektiği şekilde depolam
 |[_strdate, _wstrdate](../c-runtime-library/reference/strdate-wstrdate.md), [_strdate_s, _wstrdate_s](../c-runtime-library/reference/strdate-s-wstrdate-s.md)|Geçerli sistem tarihi dize olarak döndürür. Bu işlevleri sürümlerini `_s` soneki daha güvenlidir.|  
 |[strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md)|Tarih ve saat dizesi uluslararası kullanmak için biçimlendirin.|  
 |[_strtime, _wstrtime](../c-runtime-library/reference/strtime-wstrtime.md), [_strtime_s, _wstrtime_s](../c-runtime-library/reference/strtime-s-wstrtime-s.md)|Geçerli sistem saatinin dize olarak döndürür. Bu işlevleri sürümlerini `_s` soneki daha güvenlidir.|  
-|[_time64 _time32, saat](../c-runtime-library/reference/time-time32-time64.md)|Geçerli sistem saatinin türü olarak alma `time_t`, `__time32_t` türü olarak veya `__time64_t`.|  
+|[time, _time32, _time64](../c-runtime-library/reference/time-time32-time64.md)|Geçerli sistem saatinin türü olarak alma `time_t`, `__time32_t` türü olarak veya `__time64_t`.|  
 |[_tzset](../c-runtime-library/reference/tzset.md)|Ortam zaman değişkeninden dış zamanı değişkenlerini ayarlamak `TZ`.|  
 |[_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)|Geçerli saat veya saat değeri yapısında depolanmış kullanarak belirtilen dosya için değiştirme saati ayarlayın.|  
   
@@ -58,4 +59,4 @@ Geçerli saati almak ve dönüştürme, ayarlamak ve gerektiği şekilde depolam
 >  Visual C++ ve Microsoft C/C++ Visual C++ 2005 önce sürümlerinde `time_t` olan bir `long int` (32 bit) ve bu nedenle tarihlerini kullanılamadı 3:14:07 19 Ocak 2038, UTC geçti. `time_t`Şimdi eşdeğer olan `__time64_t` varsayılan, ancak tanımlama `_USE_32BIT_TIME_T` değişiklikleri `time_t` için `__time32_t` ve 32-bit ele sürümleri çağırmak için çok zaman işlevleri zorlar `time_t`. Daha fazla bilgi için bkz: [standart türler](../c-runtime-library/standard-types.md) ve tek tek zaman işlevleri için belgeleri açıklamaları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

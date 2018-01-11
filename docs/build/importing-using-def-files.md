@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 81148525b70f3c5ff351feb9561699f3b9b5e932
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ee213f1aa381415444288dbab4473cae6f5fc7b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="importing-using-def-files"></a>DEF Dosyalarını Kullanarak İçeri Aktarma
 Kullanmayı seçerseniz **__declspec(dllimport)** .def dosyası ile birlikte, hatalı kodlamanın bir soruna neden olasılığını azaltmak için veri SABİTİ yerine kullanılacak .def dosyası değiştirmeniz gerekir:  
@@ -71,4 +72,4 @@ if (ulDataInDll == 0L)   /*sample code fragment*/
  Bu durumda hesaba .def dosyası SABİTİNDE görürse geçerli Visual C++ bağlayıcı bir uyarı verir. SABİTİ kullanmak için yalnızca gerçek neden, burada üstbilgi dosyası değil listesinde bazı nesne dosyası derleyememenizdir **__declspec(dllimport)** prototipinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir uygulamaya aktarma](../build/importing-into-an-application.md)
+ [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

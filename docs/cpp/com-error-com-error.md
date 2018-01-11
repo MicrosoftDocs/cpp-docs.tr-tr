@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 440151fd8b8cd7d28b1e2a9ad951e238ae41dffb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: df04357afd35b546fb43c90a102b7dc0cacdc95e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comerrorcomerror"></a>_com_error::_com_error
 **Microsoft özel**  
@@ -69,4 +70,4 @@ _com_error err(hr, perrinfo, true);
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_error sınıfı](../cpp/com-error-class.md)
+ [_com_error Sınıfı](../cpp/com-error-class.md)

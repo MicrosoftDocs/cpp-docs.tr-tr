@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 329e59f97bd804351ea209d666d512485c8f9c66
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b6d6e8b41e67c9f33d643a2f64c7bdf2d2251eff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-filtering-records-odbc"></a>Kayıt Kümesi: Kayıtları Filtreleme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -101,4 +104,4 @@ m_strFilter = "StudentID = 100";   // incorrect for some drivers
  [Kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)   
  [Kayıt kümesi: Nasıl kümelerinin kayıtları seçme biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)   
  [Kayıt kümesi: Kayıt kümeleri Güncelleştirmesi (ODBC) nasıl kaydeder.](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)   
- [Kayıt kümesi: Kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+ [Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)

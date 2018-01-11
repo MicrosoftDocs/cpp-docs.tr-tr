@@ -18,11 +18,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e55cb83461ed1a0229babf98c384b74de357aeb8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d5b91a2556a93f3cd74a24ea57306d70f2cbdb41
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queue-stlclr"></a>sıraya al (STL/CLR)
 Şablon sınıfı ilk giren ilk çıkar özelliğine sahip erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı bağdaştırıcısı kullandığınız `queue` temel alınan bir kapsayıcı bir sıra olarak yönetmek için.  
@@ -52,42 +55,42 @@ template<typename Value,
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
-|[Queue::const_reference (STL/CLR)](../dotnet/queue-const-reference-stl-clr.md)|Bir öğe için sabit bir başvuru türü.|  
-|[Queue::container_type (STL/CLR)](../dotnet/queue-container-type-stl-clr.md)|Temel alınan kapsayıcı türü.|  
-|[Queue::difference_type (STL/CLR)](../dotnet/queue-difference-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
-|[Queue::generic_container (STL/CLR)](../dotnet/queue-generic-container-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
-|[Queue::generic_value (STL/CLR)](../dotnet/queue-generic-value-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
-|[Queue::Reference (STL/CLR)](../dotnet/queue-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
-|[Queue::size_type (STL/CLR)](../dotnet/queue-size-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
-|[Queue::value_type (STL/CLR)](../dotnet/queue-value-type-stl-clr.md)|Öğenin türü.|  
+|[queue::const_reference (STL/CLR)](../dotnet/queue-const-reference-stl-clr.md)|Bir öğe için sabit bir başvuru türü.|  
+|[queue::container_type (STL/CLR)](../dotnet/queue-container-type-stl-clr.md)|Temel alınan kapsayıcı türü.|  
+|[queue::difference_type (STL/CLR)](../dotnet/queue-difference-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
+|[queue::generic_container (STL/CLR)](../dotnet/queue-generic-container-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirim türü.|  
+|[queue::generic_value (STL/CLR)](../dotnet/queue-generic-value-stl-clr.md)|Kapsayıcı bağdaştırıcısı için genel arabirimini öğenin türü.|  
+|[queue::reference (STL/CLR)](../dotnet/queue-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[queue::size_type (STL/CLR)](../dotnet/queue-size-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
+|[queue::value_type (STL/CLR)](../dotnet/queue-value-type-stl-clr.md)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[Queue::Assign (STL/CLR)](../dotnet/queue-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
-|[Queue::Back (STL/CLR)](../dotnet/queue-back-stl-clr.md)|Son öğe erişir.|  
-|[Queue::Empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[Queue::Front (STL/CLR)](../dotnet/queue-front-stl-clr.md)|İlk öğe erişir.|  
-|[Queue::get_container (STL/CLR)](../dotnet/queue-get-container-stl-clr.md)|Temel alınan kapsayıcı erişir.|  
-|[Queue::POP (STL/CLR)](../dotnet/queue-pop-stl-clr.md)|İlk öğeyi kaldırır.|  
-|[Queue::push (STL/CLR)](../dotnet/queue-push-stl-clr.md)|Yeni bir son öğesi ekler.|  
-|[Queue::Queue (STL/CLR)](../dotnet/queue-queue-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
-|[Queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[Queue::to_array (STL/CLR)](../dotnet/queue-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
+|[queue::assign (STL/CLR)](../dotnet/queue-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
+|[queue::back (STL/CLR)](../dotnet/queue-back-stl-clr.md)|Son öğe erişir.|  
+|[queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[queue::front (STL/CLR)](../dotnet/queue-front-stl-clr.md)|İlk öğe erişir.|  
+|[queue::get_container (STL/CLR)](../dotnet/queue-get-container-stl-clr.md)|Temel alınan kapsayıcı erişir.|  
+|[queue::pop (STL/CLR)](../dotnet/queue-pop-stl-clr.md)|İlk öğeyi kaldırır.|  
+|[queue::push (STL/CLR)](../dotnet/queue-push-stl-clr.md)|Yeni bir son öğesi ekler.|  
+|[queue::queue (STL/CLR)](../dotnet/queue-queue-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
+|[queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)|Öğe sayısını sayar.|  
+|[queue::to_array (STL/CLR)](../dotnet/queue-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
   
 |Özellik|Açıklama|  
 |--------------|-----------------|  
-|[Queue::back_item (STL/CLR)](../dotnet/queue-back-item-stl-clr.md)|Son öğe erişir.|  
-|[Queue::front_item (STL/CLR)](../dotnet/queue-front-item-stl-clr.md)|İlk öğe erişir.|  
+|[queue::back_item (STL/CLR)](../dotnet/queue-back-item-stl-clr.md)|Son öğe erişir.|  
+|[queue::front_item (STL/CLR)](../dotnet/queue-front-item-stl-clr.md)|İlk öğe erişir.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[Queue::operator (STL/CLR) =](../dotnet/queue-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator! = (kuyruk) (STL/CLR)](../dotnet/operator-inequality-queue-stl-clr.md)|Belirler bir `queue` nesne diğerine eşit değil `queue` nesnesi.|  
-|[operator < (kuyruk) (STL/CLR)](../dotnet/operator-less-than-queue-stl-clr.md)|Belirler bir `queue` nesnesi, başka değerinden `queue` nesnesi.|  
-|[operator < = (kuyruk) (STL/CLR)](../dotnet/operator-less-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir değerinden küçük veya eşit başka `queue` nesnesi.|  
-|[operator == (kuyruk) (STL/CLR)](../dotnet/operator-equality-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerine eşit `queue` nesnesi.|  
-|[operator > (sıra) (STL/CLR)](../dotnet/operator-greater-than-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerinden daha büyük `queue` nesnesi.|  
-|[operator > = (kuyruk) (STL/CLR)](../dotnet/operator-greater-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir büyük veya ona eşit diğerine `queue` nesnesi.|  
+|[queue::operator= (STL/CLR)](../dotnet/queue-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[operator!= (queue) (STL/CLR)](../dotnet/operator-inequality-queue-stl-clr.md)|Belirler bir `queue` nesne diğerine eşit değil `queue` nesnesi.|  
+|[operator< (queue) (STL/CLR)](../dotnet/operator-less-than-queue-stl-clr.md)|Belirler bir `queue` nesnesi, başka değerinden `queue` nesnesi.|  
+|[operator<= (queue) (STL/CLR)](../dotnet/operator-less-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir değerinden küçük veya eşit başka `queue` nesnesi.|  
+|[operator== (queue) (STL/CLR)](../dotnet/operator-equality-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerine eşit `queue` nesnesi.|  
+|[operator> (queue) (STL/CLR)](../dotnet/operator-greater-than-queue-stl-clr.md)|Belirler bir `queue` nesnesidir diğerinden daha büyük `queue` nesnesi.|  
+|[operator>= (queue) (STL/CLR)](../dotnet/operator-greater-or-equal-queue-stl-clr.md)|Belirler bir `queue` nesnesidir büyük veya ona eşit diğerine `queue` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

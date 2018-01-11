@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d395b6981e167bf759e0e26577dca962632a22c3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44179c3c34207b8f1bf3abbef2efd9505df47181
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrt-class"></a>_com_ptr_t Sınıfı
 **Microsoft özel**  
@@ -47,9 +48,9 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 |||  
 |-|-|  
 |[AddRef](../cpp/com-ptr-t-addref.md)|Çağrıları `AddRef` üye işlevini **IUnknown** kapsüllenmiş arabirim işaretçisi üzerinde.|  
-|[Ekleme](../cpp/com-ptr-t-attach.md)|Bu akıllı işaretçinin türü ham arabirim işaretçisi yalıtır.|  
+|[Attach](../cpp/com-ptr-t-attach.md)|Bu akıllı işaretçinin türü ham arabirim işaretçisi yalıtır.|  
 |[CreateInstance](../cpp/com-ptr-t-createinstance.md)|Verilen bir nesne yeni bir örneğini oluşturur bir **CLSID** veya **ProgID**.|  
-|[Ayırma](../cpp/com-ptr-t-detach.md)|Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.|  
+|[Detach](../cpp/com-ptr-t-detach.md)|Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.|  
 |[GetActiveObject](../cpp/com-ptr-t-getactiveobject.md)|Varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID** veya **ProgID**.|  
 |[Getınterfaceptr](../cpp/com-ptr-t-getinterfaceptr.md)|Kapsüllenmiş arabirim işaretçisi döndürür.|  
 |[QueryInterface](../cpp/com-ptr-t-queryinterface.md)|Çağrıları `QueryInterface` üye işlevini **IUnknown** kapsüllenmiş arabirim işaretçisi üzerinde.|  
@@ -71,4 +72,4 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)
+ [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)

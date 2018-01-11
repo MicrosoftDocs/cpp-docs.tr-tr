@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb6eafda669f4901db1259881fd2ed8cb995f559
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 325a9a98ec536eaabedef3a93fbe38ccc2016cd9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="obsolete-calling-conventions"></a>Kullanılmayan Çağırma Kuralları
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -38,4 +39,4 @@ ms.lasthandoff: 10/24/2017
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)
+ [Bağımsız Değişkeni Geçirme ve Adlandırma Kuralları](../cpp/argument-passing-and-naming-conventions.md)

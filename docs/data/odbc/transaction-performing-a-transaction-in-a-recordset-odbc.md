@@ -14,11 +14,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1451775374b94bbefb6396e7afeda2396df84ba4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: bd412549c86c3ca8ddc004016183b64248bdf292
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="transaction-performing-a-transaction-in-a-recordset-odbc"></a>İşlem: Kayıt Kümesinde İşlem Gerçekleştirme (ODBC)
 Bu konu kayıt kümesinde işlem gerçekleştirme açıklar.  
@@ -93,4 +96,4 @@ BOOL CEnrollDoc::RemoveStudent( CString strStudentID )
  [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
  [İşlem: İşlemlerin güncelleştirmeleri (ODBC) etkilemesi](../../data/odbc/transaction-how-transactions-affect-updates-odbc.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CRecordset sınıfı](../../mfc/reference/crecordset-class.md)
+ [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

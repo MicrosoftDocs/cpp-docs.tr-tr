@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 47d8fdec93c9d77e6648c5f648171a8ff349474d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3c4e86ffe91c2c0bf6a914e8f735b5faca6ae45f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 Kavramı *türü* c++'ta çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı örnekler türlerinin `int` tam sayı değerlerini depolamak için `double` kayan nokta değerlerini depolamak için (olarak da bilinen *skaler* veri türleri), veya standart kitaplığı sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Kendi türü tanımlayarak oluşturabileceğiniz bir `class` veya `struct`. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  
@@ -167,12 +168,12 @@ void someFunction() {
 ## <a name="windows-data-types"></a>Windows veri türleri  
  C ve C++ için Klasik Win32 programlamada çoğu işlevleri Windows'a özgü tür tanımları kullanın ve # makroları define (tanımlanan `windef.h`) ve dönüş değerleri parametre türlerini belirtmek için. Bu Windows veri türleri genellikle C/C++ yerleşik türleri için verilen yalnızca özel (diğer adlar) adlardır. Bu tür tanımları ve önişlemci tanımları tam listesi için bkz: [Windows veri türleri](http://msdn.microsoft.com/en-us/4553cafc-450e-4493-a4d4-cb6e2f274d46). HRESULT ve LCID gibi bu tür tanımlarından bazıları kullanışlı ve açıklayıcıdır. INT gibi diğerlerinin özel bir anlamı yoktur ve bunlar yalnızca temel C++ türlerinin diğer adlarıdır. Diğer Windows veri türleri C programlama ve 16-bit işlemci günlerinden kalma adlara sahiptir ve bu adların modern donanım veya işletim sistemlerinde herhangi bir amacı ya da anlamı yoktur. Ayrıca özel veri türleri olarak listelenen Windows çalışma zamanı kitaplığı ile ilişkili olan [Windows çalışma zamanı temel veri türlerini](http://msdn.microsoft.com/en-us/b5735851-ec07-48c1-92b4-ca9f768096f6). Modern C++ programlamada, Windows türü değerin nasıl yorumlanacağına ilişkin ek anlamlar iletmedikçe C++ temel türlerinin tercih edilmesi genel bir yönergedir.  
   
-## <a name="more-information"></a>Daha Fazla Bilgi  
+## <a name="more-information"></a>Daha fazla bilgi  
  C++ tür sistemi hakkında daha fazla bilgi için aşağıdaki konulara bakın.  
   
 |||  
 |-|-|  
-|[Değer türleri](../cpp/value-types-modern-cpp.md)|Açıklar *değer türleri* bunların kullanılması ile ilgili sorunları.|  
+|[Değer Türleri](../cpp/value-types-modern-cpp.md)|Açıklar *değer türleri* bunların kullanılması ile ilgili sorunları.|  
 |[Tür dönüştürmeleri ve tür güvenliği](../cpp/type-conversions-and-type-safety-modern-cpp.md)|Ortak tür dönüştürme sorunlarını açıklar ve bunları nasıl engelleyeceğinizi gösterir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

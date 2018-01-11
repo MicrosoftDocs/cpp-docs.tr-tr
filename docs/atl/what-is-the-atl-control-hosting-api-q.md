@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4f04f5caa30ab860634f0f96ae18e9da03577ba2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3e985ffd3b514feec81f4fee540a95792eb3658e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-is-the-atl-control-hosting-api"></a>ATL nedir denetimi barındırma API?
 ATL denetimi barındırma bir ActiveX denetimi kapsayıcısı görev yapması herhangi bir penceresi sağlayan işlevler kümesi bir API'dir. Bu işlevler statik olarak olabilir veya dinamik kaynak kodu olarak kullanılabilir olduğu projenize bağlı ve ATL90.dll tarafından kullanıma sunulan. Denetimi barındırma işlevleri, aşağıdaki tabloda listelenmiştir.  

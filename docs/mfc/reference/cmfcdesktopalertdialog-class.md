@@ -25,11 +25,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67ebc32e6670b6694e9071e8e7381600ae5e4925
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d7bd9ee29f1657b26d830679ae44d6e37580f91
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcdesktopalertdialog-class"></a>CMFCDesktopAlertDialog sınıfı
 `CMFCDesktopAlertDialog` Sınıfı ile birlikte kullanılır [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md) özel bir iletişim kutusu açılır penceresinde görüntülenecek.  
@@ -138,4 +139,4 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCDesktopAlertWnd sınıfı](../../mfc/reference/cmfcdesktopalertwnd-class.md)   
  [CMFCDesktopAlertWndInfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)   
- [CDialogEx sınıfı](../../mfc/reference/cdialogex-class.md)
+ [CDialogEx Sınıfı](../../mfc/reference/cdialogex-class.md)

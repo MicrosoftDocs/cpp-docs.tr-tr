@@ -12,11 +12,12 @@ caps.latest.revision: "42"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: f02bbb91563233e4e49537dd8f7a5290aad64b6d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 405f1890dc99e5a20102b7602ac83534cb5ded8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref sınıflar ve yapılar (C + +/ CX)
 C + +/ CX destekler kullanıcı tanımlı *ref sınıfları* ve *ref yapılar*ve kullanıcı tanımlı *değer sınıfları* ve *değer yapılar*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçerikleri belirli belirli kurallarına göre meta verilerine yayılan ve bu bunları Windows çalışma zamanı bileşenleri ve C++ veya diğer dillerde yazılmış Evrensel Windows platformu uygulamaları arasındaki geçirilmesini sağlar.  

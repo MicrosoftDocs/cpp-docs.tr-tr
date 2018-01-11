@@ -21,11 +21,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fe93031417b8fc7717be13007b0fcfc5d08a2c40
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 206f3d25069eaa12efce8150e82c4f54fc96f4fd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetupdateimpl-class"></a>IRowsetUpdateImpl Sınıfı
 OLE DB Şablonları uyarlamasını [IRowsetUpdate](https://msdn.microsoft.com/en-us/library/ms714401.aspx) arabirimi.  
@@ -81,7 +84,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 |[GetPendingRows](../../data/oledb/irowsetupdateimpl-getpendingrows.md)|Satırları bekleyen değişiklikler listesini döndürür.|  
 |[GetRowStatus](../../data/oledb/irowsetupdateimpl-getrowstatus.md)|Belirtilen satır durumunu döndürür.|  
 |[Geri alma](../../data/oledb/irowsetupdateimpl-undo.md)|Son getirme veya güncelleştirme satır değişiklikleri geri alır.|  
-|[Güncelleştirme](../../data/oledb/irowsetupdateimpl-update.md)|Satırın son getirme veya güncelleştirme yapılan değişiklikler iletir.|  
+|[Güncelleştir](../../data/oledb/irowsetupdateimpl-update.md)|Satırın son getirme veya güncelleştirme yapılan değişiklikler iletir.|  
   
 ### <a name="implementation-methods-callback"></a>Uygulama yöntemleri (geri arama)  
   
@@ -103,7 +106,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 > [!IMPORTANT]
 >  Sağlayıcınız uygulamak denemeden önce aşağıdaki belgeleri okuyun önerilir:  
   
--   [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)  
+-   [Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)  
   
 -   Bölüm 6'da *OLE DB Programcının Başvurusu*  
   
@@ -115,4 +118,4 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
- [Güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md)
+ [Güncelleştirilebilir Sağlayıcı Oluşturma](../../data/oledb/creating-an-updatable-provider.md)

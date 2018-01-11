@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2240da6f19354144a9b0967fe1e91e9b03d13333
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ef0a7fc69b570adaa3636a90a98311d817e140c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queueempty-stlclr"></a>queue::empty (STL/CLR)
 Bir öğe olup olmadığını sınar.  
@@ -81,4 +84,4 @@ empty() = True
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
- [Queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)
+ [queue::size (STL/CLR)](../dotnet/queue-size-stl-clr.md)

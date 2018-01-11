@@ -37,11 +37,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e8b30b01627f412602805b0ef2648cd7d863ad86
-ms.sourcegitcommit: ce115fcfb20b4fbc198f0f7b6d0ca3e94d7ce947
+ms.workload: cplusplus
+ms.openlocfilehash: 25e11878772b4c8f7afb07f7297ca80a2a5a0130
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toascii-toascii"></a>ToAscii, __toascii
 
@@ -83,4 +84,4 @@ Dönüştürülecek karakter.
 
 [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
 [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)   
-[to işlevleri](../../c-runtime-library/to-functions.md)
+[to İşlevleri](../../c-runtime-library/to-functions.md)

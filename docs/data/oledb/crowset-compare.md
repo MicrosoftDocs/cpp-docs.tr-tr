@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b7ad1f8b153f9f6b546d9781bb4544b13bcc7ce1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9d7e69c168489fcfe71c14fbbfe2b2aca8e28f62
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetcompare"></a>CRowset::Compare
 Karşılaştırır iki yer işaret kullanarak [IRowsetLocate::Compare](https://msdn.microsoft.com/en-us/library/ms709539.aspx).  
@@ -65,4 +68,4 @@ Karşılaştırır iki yer işaret kullanarak [IRowsetLocate::Compare](https://m
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRowset sınıfı](../../data/oledb/crowset-class.md)
+ [CRowset Sınıfı](../../data/oledb/crowset-class.md)

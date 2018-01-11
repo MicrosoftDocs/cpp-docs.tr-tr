@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b3c86e2455372f151225d2b2ebf871ce39678379
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 678edef7df252e62e971c446d7372760c6d3ad86
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator--masm-run-time"></a>işleci! (MASM çalışma zamanı)
 Mantıksal değilleme. İçinde yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.  
@@ -36,4 +37,4 @@ expression
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fe6dac8f182dedccc3a9318c1ec6f5a75709cec3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d870ae3fe50cf8264f213a744e6520cdf74ab71c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandpropertiesimplgetproperties"></a>ICommandPropertiesImpl::GetProperties
 Komutunun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndürür.  
@@ -50,4 +53,4 @@ Komutunun özellik eşlemesi kullanarak tüm istenen özellik kümeleri döndür
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icommandpropertiesımpl sınıfı](../../data/oledb/icommandpropertiesimpl-class.md)   
- [Icommandpropertiesımpl::SetProperties](../../data/oledb/icommandpropertiesimpl-setproperties.md)
+ [ICommandPropertiesImpl::SetProperties](../../data/oledb/icommandpropertiesimpl-setproperties.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71596eefa0d9553f562e0b5abf888fe83cc13669
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 840862915e90accbab254f5a9003446471608a2a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory Sınıfı
 Bir taban sınıf oluşturmak için temel bir mekanizma sağlar.  
@@ -50,7 +53,7 @@ class SimpleClassFactory : public ClassFactory<>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Simpleclassfactory::CreateInstance yöntemi](../windows/simpleclassfactory-createinstance-method.md)|Belirtilen arabiriminin bir örneğini oluşturur.|  
+|[SimpleClassFactory::CreateInstance Metodu](../windows/simpleclassfactory-createinstance-method.md)|Belirtilen arabiriminin bir örneğini oluşturur.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  
@@ -81,4 +84,4 @@ class SimpleClassFactory : public ClassFactory<>;
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

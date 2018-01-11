@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d9aefddc6658777488e0c0c499d23541f8c5c029
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2f86fa7455edfc29190593660c365e0cfe5ef629
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequeswap-stlclr"></a>deque::swap (STL/CLR)
 İki kapsayıcının içeriğinin yerini değiştirir.  
@@ -91,4 +94,4 @@ a b c
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
  [deque::Assign (STL/CLR)](../dotnet/deque-assign-stl-clr.md)   
- [işleç = (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)
+ [operator= (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)

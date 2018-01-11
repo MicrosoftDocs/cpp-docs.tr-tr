@@ -27,11 +27,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 686ac443eb32a9ca17e77baee95b50e06c6556b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec3d90f9bfcf51b3a5f48baea1c6e3cf06e7d72f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="staticassert-macro"></a>_STATIC_ASSERT Makrosu
 Derleme zamanında bir ifade değerlendirme ve sonuç olduğunda bir hata oluştur `FALSE`.  
@@ -80,4 +81,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)
+ [_ASSERT, _ASSERTE, _ASSERT_EXPR Makroları](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)

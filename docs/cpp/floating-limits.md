@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb5257b9b70750172a79b4c22a7da6c728664807
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 449356b7bce3f17862919e90d7fc7e72b2d57df6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="floating-limits"></a>Kayan Sınırları
 **Microsoft özel**  
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/24/2017
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tamsayı sınırları](../cpp/integer-limits.md)
+ [Tamsayı Sınırları](../cpp/integer-limits.md)

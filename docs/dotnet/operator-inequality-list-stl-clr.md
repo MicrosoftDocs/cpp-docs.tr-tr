@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 840fc420829a7c0cd9efe236207e7ab7a4285c47
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9411ff9e6e4a6f96059c89893eb4770442be7671
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-list-stlclr"></a>operator!= (list) (STL/CLR)
 Eşit değildir karşılaştırma listeleyin.  
@@ -99,4 +102,4 @@ int main()
  [İşleç\< (liste) (STL/CLR)](../dotnet/operator-less-than-list-stl-clr.md)   
  [operator > = (listesi) (STL/CLR)](../dotnet/operator-greater-or-equal-list-stl-clr.md)   
  [operator > (liste) (STL/CLR)](../dotnet/operator-greater-than-list-stl-clr.md)   
- [operator < = (listesi) (STL/CLR)](../dotnet/operator-less-or-equal-list-stl-clr.md)
+ [operator<= (list) (STL/CLR)](../dotnet/operator-less-or-equal-list-stl-clr.md)

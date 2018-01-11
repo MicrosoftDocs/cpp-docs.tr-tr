@@ -44,11 +44,12 @@ caps.latest.revision: "26"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e398363fd12853b06644019201028067cf10f7dd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54c7aa7fda123e811f23c2cc4b9e8d81f76966df
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strdate-wstrdate"></a>_strdate, _wstrdate
 Geçerli sistem tarihi bir arabellek kopyalayın. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_strdate_s, _wstrdate_s](../../c-runtime-library/reference/strdate-s-wstrdate-s.md).  

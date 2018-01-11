@@ -27,11 +27,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a704a4904683d2b1a448e9f5f327723b7681c96b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 3d849580ce3e9b264c854633c6bb9f274874c21d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-the-odbc-cursor-library"></a>ODBC: ODBC İmleç Kitaplığı
 Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açıklar. Daha fazla bilgi için bkz.:  
@@ -74,4 +77,4 @@ Bu konuda ODBC imleç kitaplığı açıklar ve nasıl kullanılacağını açı
  Bir veri kaynağına bağlandığınızda — çağırarak [CDatabase::OpenEx](../../mfc/reference/cdatabase-class.md#openex) veya [CDatabase::Open](../../mfc/reference/cdatabase-class.md#open) — imleç kitaplığı veri kaynağı için kullanılıp kullanılmayacağını belirtebilirsiniz. Bu veri kaynağında anlık görüntüleri oluşturacaksanız belirtin **CDatabase::useCursorLib** seçeneğini `dwOptions` parametresi `OpenEx` veya belirtmek **TRUE** için  **bUseCursorLib** parametresi **açık** (varsayılan değer **TRUE**). Dinamik kümeler ODBC sürücüsü destekliyorsa ve veri kaynağı üzerinde dinamik kümeler açmak istediğiniz, imleç kitaplığı (dinamik kümeler için gereken bazı sürücü işlevleri maskeleri) kullanmayın. Bu durumda, belirtmeyin **CDatabase::useCursorLib** içinde `OpenEx` veya belirtmek **FALSE** için **bUseCursorLib** parametresinde **açın**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC temelleri](../../data/odbc/odbc-basics.md)
+ [ODBC Temelleri](../../data/odbc/odbc-basics.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7ab69a7dbba33e37d23a880a6a9b36f7ed37d7d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8f89c49035e2e48dde8d502b1d61fa33d198f69a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changes-to-conversion-operators"></a>Dönüştürme İşleçlere Değiştirme
 Dönüştürme işleçleri sözdizimi C++ için Visual C++ için Yönetilen Uzantılar'dan değiştirdi.  
@@ -70,4 +73,4 @@ public:
  Başka bir değişiklik olarak bildirilen gibi tek bir bağımsız değişken Oluşturucu kabul edilir olduğunu `explicit`. Bu, çağrısını tetiklemek için açık bir atama gerekmediği anlamına gelir. Ancak, bir açık dönüşüm işleci tanımlanmışsa ve tek bağımsız değişkenli Oluşturucusu çağrılır olduğunu unutmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfta veya arabirimde üye bildirimleri (C + +/ CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)
+ [Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)

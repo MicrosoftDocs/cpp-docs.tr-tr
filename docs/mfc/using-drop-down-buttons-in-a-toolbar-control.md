@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 273c73ebfcda13217185b0f1f651229d299632c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01c09cb2bec4b466928557434767ce49948f46ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-drop-down-buttons-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma
 Standart düğmeler yanı sıra bir araç çubuğu açılır düğmeler da sağlayabilirsiniz. Açılan düğmesine bir ekli aşağı ok varlığını tarafından genellikle gösterilir.  
@@ -58,5 +59,5 @@ Standart düğmeler yanı sıra bir araç çubuğu açılır düğmeler da sağl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

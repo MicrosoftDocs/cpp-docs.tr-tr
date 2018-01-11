@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f10b8dff4974807107b5875347ec0156c8d166aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c10a6b92be86b3b5fc30d2975cb60cf211b026f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pushframe"></a>.PUSHFRAME
 Oluşturan bir `UWOP_PUSH_MACHFRAME` kod girişi bırakma. Varsa isteğe bağlı `code` belirtilirse, bırakma kod girdisi olarak 1 değiştiricisi verilir. Aksi takdirde değiştirici 0'dır.  
@@ -36,4 +37,4 @@ Oluşturan bir `UWOP_PUSH_MACHFRAME` kod girişi bırakma. Varsa isteğe bağlı
  Daha fazla bilgi için bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

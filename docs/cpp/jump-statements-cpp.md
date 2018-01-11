@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0765fd9fac779893edafe745c73d44df3a2c1487
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 84fb6cf5b1710389bbe0f2065a3d8f46606656a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="jump-statements-c"></a>Atlama Deyimleri (C++)
 C++ atlama deyimi, denetimin anlık bir yerel aktarmasını gerçekleştirir.  
@@ -35,13 +36,13 @@ goto identifier;
 ## <a name="remarks"></a>Açıklamalar  
  C++ atlama deyimlerinin açıklaması için aşağıdaki konulara bakın.  
   
--   [break deyimi](../cpp/break-statement-cpp.md)  
+-   [break Deyimi](../cpp/break-statement-cpp.md)  
   
--   [continue deyimi](../cpp/continue-statement-cpp.md)  
+-   [continue Deyimi](../cpp/continue-statement-cpp.md)  
   
--   [return deyimi](../cpp/return-statement-cpp.md)  
+-   [return Deyimi](../cpp/return-statement-cpp.md)  
   
 -   [goto deyimi](../cpp/goto-statement-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ deyimlerine genel bakış](../cpp/overview-of-cpp-statements.md)
+ [C++ Deyimlerine Genel Bakış](../cpp/overview-of-cpp-statements.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d2c241add0893535be3932e85f1a37daa0d5b642
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b98510e6a027927ee7e24bdf7ba44c7a902b84a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="namespaces-reference-ccx"></a>Ad alanları başvurusu (C + +/ CX)
 Bu bölümdeki makaleleri belgelerin derleyici C + Destek ad alanlarını açıklayan +/ CX.  
@@ -30,7 +31,7 @@ Bu bölümdeki makaleleri belgelerin derleyici C + Destek ad alanlarını açık
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Varsayılan ad alanı](../cppcx/default-namespace.md)|Yerleşik, temel türlerinin açıklamalarını içerir.|  
+|[Varsayılan Ad Alanı](../cppcx/default-namespace.md)|Yerleşik, temel türlerinin açıklamalarını içerir.|  
 |[Platform ad alanı](../cppcx/platform-namespace-c-cx.md)|Kullanabileceğiniz türleri ve yalnızca derleyici altyapısı tarafından kullanılan iç türleri açıklamaları içerir.|  
 |[Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)|Geliştirmeleri ve Windows çalışma zamanı uzantıları açıklamaları içeren`Windows::Foundation::Collections` ad alanı.|  
   

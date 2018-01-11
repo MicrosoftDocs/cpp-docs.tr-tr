@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 487e7936c1eb03b0367e0d56d659923533d000cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 320be2b045ed128885a581b995f1e3979baea491
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="maperase-stlclr"></a>map::erase (STL/CLR)
 Belirtilen konumlardaki öğeleri kaldırır.  
@@ -119,4 +122,4 @@ erase(L'e') = 1
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [Map::Clear (STL/CLR)](../dotnet/map-clear-stl-clr.md)
+ [map::clear (STL/CLR)](../dotnet/map-clear-stl-clr.md)

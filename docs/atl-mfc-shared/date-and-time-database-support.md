@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 68556e771716b57c8a80a7fbfc06bd206693ab41
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 83de3c9fc55b9eafb3863b70dfb1cd6fa6c23de7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="date-and-time-database-support"></a>Tarih ve saat: veritabanı desteği
 Sürüm 4. 0'dan sonra MFC veritabanı programlama kullanır [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) ve [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) tarih ve saat verilerini temsil eden sınıf. Ayrıca, Otomasyon kullanılan bu sınıfların sınıfından türetilen [COleVariant](../mfc/reference/colevariant-class.md). Tarih ve saat verilerini göründüklerinden yönetmek için daha iyi destek tedarik [CTime](../atl-mfc-shared/reference/ctime-class.md) ve [CTimeSpan](../atl-mfc-shared/reference/ctimespan-class.md).  
@@ -36,6 +37,6 @@ Sürüm 4. 0'dan sonra MFC veritabanı programlama kullanır [COleDateTime](../a
 -   [Tarih ve saat programlama Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve saat](../atl-mfc-shared/date-and-time.md)
+ [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)
 
 

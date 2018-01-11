@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2aac51541574ee1cf0363a77f40891ac37a18c49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9bd95a689fbb643af5e2291c0a86b248705b5f9a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a29---use-of-work-sharing-constructs-inside-a-critical-construct"></a>A.29   İş Paylaşım Yapılarının critical Yapı İçinde Kullanımı
 Aşağıdaki örnek, bir iş paylaşım yapısı içinde kullanarak gösterir bir `critical` oluşturun. İş paylaşım oluşturmak için bu örnek uyumludur ve `critical` yapı aynı paralel bölgeye bağlama.  

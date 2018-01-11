@@ -173,11 +173,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5437cef55a0e46f38eaf0e97b56ed9f82b4bb31c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 573b81ce8d78cde67b63579caa5ed96bbe557ae3
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 Windows ortak ağaç görünümü denetiminin işlevselliğini sağlar.  
@@ -285,9 +286,9 @@ class CTreeCtrl : public CWnd
   
  Kullanma hakkında daha fazla bilgi için `CTreeCtrl`, bkz:  
   
-- [Denetimleri](../../mfc/controls-mfc.md)  
+- [Denetimler](../../mfc/controls-mfc.md)  
   
-- [CTreeCtrl kullanma](../../mfc/using-ctreectrl.md)  
+- [CTreeCtrl Kullanma](../../mfc/using-ctreectrl.md)  
   
 - [Ağaç görünümü denetim başvurusu](http://msdn.microsoft.com/library/windows/desktop/bb759988) Windows SDK.  
   
@@ -1328,7 +1329,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
  Ağaç görünümü öğesi tanıtıcısını ( `HTREEITEM`) karşılık gelen `uAccId` parametresi. Daha fazla bilgi için bkz: `hItem` üyesi [TVITEMEX](http://msdn.microsoft.com/library/windows/desktop/bb773459) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Erişilebilirlik yardımları engelli kişilere yardımcı uygulamalarını bilgisayarları kullanılır. Tarafından kullanılan bir erişilebilirlik tanımlayıcısı `IAccessible` benzersiz şekilde bir öğeyi bir pencerede belirtmek için arabirim. "Hakkında Active Accessibility desteği" konusuna erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/linkid=56322).  
+ Erişilebilirlik yardımları engelli kişilere yardımcı uygulamalarını bilgisayarları kullanılır. Tarafından kullanılan bir erişilebilirlik tanımlayıcısı `IAccessible` benzersiz şekilde bir öğeyi bir pencerede belirtmek için arabirim. "Hakkında Active Accessibility desteği" konusuna erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).  
   
  Bu yöntem gönderir [TVM_MAPACCIDTOHTREEITEM](http://msdn.microsoft.com/library/windows/desktop/bb773734) Windows SDK'ın açıklanan ileti.  
   
@@ -1359,7 +1360,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
  Karşılık gelen erişilebilirlik tanımlayıcı `hItem` parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Erişilebilirlik yardımları engelli kişilere yardımcı uygulamalarını bilgisayarları kullanılır. Tarafından kullanılan bir erişilebilirlik tanımlayıcısı `IAccessible` benzersiz şekilde bir öğeyi bir pencerede belirtmek için arabirim. "Hakkında Active Accessibility desteği" konusuna erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/linkid=56322).  
+ Erişilebilirlik yardımları engelli kişilere yardımcı uygulamalarını bilgisayarları kullanılır. Tarafından kullanılan bir erişilebilirlik tanımlayıcısı `IAccessible` benzersiz şekilde bir öğeyi bir pencerede belirtmek için arabirim. "Hakkında Active Accessibility desteği" konusuna erişilebilirlik tanımlayıcıları hakkında daha fazla bilgi için arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).  
   
  Bu yöntem gönderir [TVM_MAPHTREEITEMTOACCID](http://msdn.microsoft.com/library/windows/desktop/bb773735) Windows SDK'ın açıklanan ileti.  
   
@@ -1987,7 +1988,7 @@ void ShowInfoTip(HTREEITEM hItem);
 |[in]`hItem`|Ağaç görünümü öğesi denetimi için bir tanıtıcı. Daha fazla bilgi için bkz: `hItem` üyesi [TVITEMEX](http://msdn.microsoft.com/library/windows/desktop/bb773459) yapısı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/linkid=56322).  
+ Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).  
   
  Bu yöntem gönderir [TVM_SHOWINFOTIP](http://msdn.microsoft.com/library/windows/desktop/bb773779) Windows SDK'ın açıklanan ileti.  
   
@@ -2039,4 +2040,4 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
  [MFC örnek CMNCTRL1](../../visual-cpp-samples.md)   
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Cımagelist sınıfı](../../mfc/reference/cimagelist-class.md)
+ [CImageList Sınıfı](../../mfc/reference/cimagelist-class.md)

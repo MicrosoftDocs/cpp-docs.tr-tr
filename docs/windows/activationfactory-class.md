@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6876fb3d418a4dac8a68449da5d0eae855daa440
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 73690603b1be1dd74b7ae7626372e3ab6ff9101e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activationfactory-class"></a>ActivationFactory Sınıfı
 Windows çalışma zamanı tarafından etkinleştirilecek bir veya daha fazla sınıfları sağlar.  
@@ -68,12 +71,12 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ActivationFactory::AddRef yöntemi](../windows/activationfactory-addref-method.md)|Geçerli ActivationFactory nesne başvurusu sayısını artırır.|  
-|[Activationfactory::getıids yöntemi](../windows/activationfactory-getiids-method.md)|Uygulanan arabirimi kimlikleri dizisini alır.|  
-|[ActivationFactory::GetRuntimeClassName yöntemi](../windows/activationfactory-getruntimeclassname-method.md)|Geçerli ActivationFactory başlatır nesne çalışma zamanı sınıf adını alır.|  
-|[ActivationFactory::GetTrustLevel yöntemi](../windows/activationfactory-gettrustlevel-method.md)|Geçerli ActivationFactory başlatır nesne güven düzeyini alır.|  
-|[Activationfactory::QueryInterface yöntemi](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim için bir işaretçi alır.|  
-|[ActivationFactory::Release yöntemi](../windows/activationfactory-release-method.md)|Başvurusu geçerli ActivationFactory nesne sayısını azaltır.|  
+|[ActivationFactory::AddRef Metodu](../windows/activationfactory-addref-method.md)|Geçerli ActivationFactory nesne başvurusu sayısını artırır.|  
+|[ActivationFactory::GetIids Metodu](../windows/activationfactory-getiids-method.md)|Uygulanan arabirimi kimlikleri dizisini alır.|  
+|[ActivationFactory::GetRuntimeClassName Metodu](../windows/activationfactory-getruntimeclassname-method.md)|Geçerli ActivationFactory başlatır nesne çalışma zamanı sınıf adını alır.|  
+|[ActivationFactory::GetTrustLevel Metodu](../windows/activationfactory-gettrustlevel-method.md)|Geçerli ActivationFactory başlatır nesne güven düzeyini alır.|  
+|[ActivationFactory::QueryInterface Metodu](../windows/activationfactory-queryinterface-method.md)|Belirtilen arabirim için bir işaretçi alır.|  
+|[ActivationFactory::Release Metodu](../windows/activationfactory-release-method.md)|Başvurusu geçerli ActivationFactory nesne sayısını azaltır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  
@@ -102,4 +105,4 @@ class ActivationFactory : public Details::RuntimeClass<typename Details::Interfa
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

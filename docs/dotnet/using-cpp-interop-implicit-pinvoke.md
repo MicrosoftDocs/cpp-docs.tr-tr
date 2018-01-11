@@ -31,11 +31,14 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1f400ed3e93af8f7e0727d3fe378d0ac471bd18f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 3a5f6b6cd68906753bc4f9a5fbc1d9e00bad02f8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)
 Diğer .NET dilleri, Visual C++ yönetilen ve yönetilmeyen kodu aynı uygulama ve hatta aynı dosyada verir bir birlikte çalışabilirlik desteğe sahiptir (ile [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmaları). Bu uygulamanın geri kalanına etkilemeden uygulamalarınız Visual C++ .NET işlevselliği tümleştirmek Visual C++ geliştiriciler sağlar.  
@@ -46,7 +49,7 @@ Diğer .NET dilleri, Visual C++ yönetilen ve yönetilmeyen kodu aynı uygulama 
   
  Visual C++ yönetilen ve yönetilmeyen işlevleri birlikte çalışmak iki yol sunar:  
   
--   [C++ (DllImport özniteliği) açık PInvoke kullanma](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
+-   [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
   
  Açık PInvoke .NET Framework tarafından desteklenir ve çoğu .NET dillerinde kullanılabilir. Ancak adından da anlaşılacağı gibi C++ birlikte çalışabilirliği Visual C++'a özeldir.  
   
@@ -91,57 +94,57 @@ Done
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ Çalışabilirliği kullanarak Unicode dizelerini sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama](../dotnet/how-to-marshal-unicode-strings-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak yapıları sıralama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Sıralama](../dotnet/how-to-marshal-structures-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak dizileri sıralama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Dizileri Sıralama](../dotnet/how-to-marshal-arrays-using-cpp-interop.md)  
   
--   [Nasıl yapılır: sıralama geri aramalar ve temsilciler C++ birlikte çalışması kullanarak](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışmayı Kullanarak Geri Çağrıları ve Temsilcileri Sıralama](../dotnet/how-to-marshal-callbacks-and-delegates-by-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Katıştırılmış İşaretçileri Sıralama](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md)  
   
--   [Nasıl yapılır: String'deki karakterlere erişme](../dotnet/how-to-access-characters-in-a-system-string.md)  
+-   [Nasıl yapılır: Bir System::String'deki Karakterlere Erişme](../dotnet/how-to-access-characters-in-a-system-string.md)  
   
--   [Nasıl yapılır: Dönüştür char * dizesini System::Byte dizisine](../dotnet/how-to-convert-char-star-string-to-system-byte-array.md)  
+-   [Nasıl yapılır: char * Dizesini System::Byte Dizisine Dönüştürme](../dotnet/how-to-convert-char-star-string-to-system-byte-array.md)  
   
 -   [Nasıl yapılır: System:: String'i wchar_t * veya char dönüştürme\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)  
   
--   [Nasıl yapılır: System:: String'i standart dizeye dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)  
+-   [Nasıl yapılır: System::String'i Standart Dizeye Dönüştürme](../dotnet/how-to-convert-system-string-to-standard-string.md)  
   
--   [Nasıl yapılır: standart dizeyi System::String olarak dönüştürme](../dotnet/how-to-convert-standard-string-to-system-string.md)  
+-   [Nasıl yapılır: Standart Dizeyi System::String Olarak Dönüştürme](../dotnet/how-to-convert-standard-string-to-system-string.md)  
   
--   [Nasıl yapılır: Bayt dizisine bir işaretçi edinin](../dotnet/how-to-obtain-a-pointer-to-byte-array.md)  
+-   [Nasıl yapılır: Bayt Dizisine Bir İşaretçi Alma](../dotnet/how-to-obtain-a-pointer-to-byte-array.md)  
   
--   [Nasıl yapılır: yönetilmeyen kaynakları Bayt dizisine yükleme](../dotnet/how-to-load-unmanaged-resources-into-a-byte-array.md)  
+-   [Nasıl yapılır: Yönetilmeyen Kaynakları Bayt Dizisine Yükleme](../dotnet/how-to-load-unmanaged-resources-into-a-byte-array.md)  
   
--   [Nasıl yapılır: Yerel İşlevde Başvuru sınıfını değiştirme](../dotnet/how-to-modify-reference-class-in-a-native-function.md)  
+-   [Nasıl yapılır: Yerel İşlevde Başvuru Sınıfını Değiştirme](../dotnet/how-to-modify-reference-class-in-a-native-function.md)  
   
--   [Nasıl yapılır: bir resmin yerel mi yoksa CLR mi olduğunu belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)  
+-   [Nasıl yapılır: Bir Resmin Yerel mi yoksa CLR mi olduğunu belirleme](../dotnet/how-to-determine-if-an-image-is-native-or-clr.md)  
   
--   [Nasıl yapılır: yerel DLL'i genel derleme önbelleğine ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)  
+-   [Nasıl yapılır: Yerel DLL'i Genel Derleme Önbelleğine Ekleme](../dotnet/how-to-add-native-dll-to-global-assembly-cache.md)  
   
--   [Nasıl yapılır: yerel tür içinde değer türüne başvuruyu tutma](../dotnet/how-to-hold-reference-to-value-type-in-native-type.md)  
+-   [Nasıl yapılır: Yerel Tür İçinde Değer Türüne Başvuruyu Tutma](../dotnet/how-to-hold-reference-to-value-type-in-native-type.md)  
   
--   [Nasıl yapılır: yönetilmeyen bellekte nesne başvurusunu tutma](../dotnet/how-to-hold-object-reference-in-unmanaged-memory.md)  
+-   [Nasıl yapılır: Yönetilmeyen Bellekte Nesne Başvurusunu Tutma](../dotnet/how-to-hold-object-reference-in-unmanaged-memory.md)  
   
 -   [Nasıl yapılır: / CLR derlemesini algılama](../dotnet/how-to-detect-clr-compilation.md)  
   
--   [Nasıl yapılır: System::Guid ve GUID arasında dönüştürme](../dotnet/how-to-convert-between-system-guid-and-guid.md)  
+-   [Nasıl yapılır: System::Guid ve GUID Arasında Dönüştürme](../dotnet/how-to-convert-between-system-guid-and-guid.md)  
   
--   [Nasıl yapılır: bir çıkış belirtin parametresi](../dotnet/how-to-specify-an-out-parameter.md)  
+-   [Nasıl yapılır: Bir out Parametresini Belirleme](../dotnet/how-to-specify-an-out-parameter.md)  
   
 -   [Nasıl yapılır: / CLR derlemesinde yerel tür kullanma](../dotnet/how-to-use-a-native-type-in-a-clr-compilation.md)  
   
--   [Nasıl yapılır: yerel türlerde işleyicileri bildirme](../dotnet/how-to-declare-handles-in-native-types.md)  
+-   [Nasıl yapılır: Yerel Türlerde İşleyicileri Bildirme](../dotnet/how-to-declare-handles-in-native-types.md)  
   
--   [Nasıl yapılır: C# tarafından kullanılması için yerel sınıfı sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)  
+-   [Nasıl yapılır: C# Tarafından Kullanılması için Yerel Sınıfı Sarmalama](../dotnet/how-to-wrap-native-class-for-use-by-csharp.md)  
   
  Birlikte çalışabilirlik senaryosunda temsilcileri kullanma hakkında daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönetilen koddan yerel işlevleri çağırma](../dotnet/calling-native-functions-from-managed-code.md)
+ [Yönetilen Koddan Yerel İşlevleri Çağırma](../dotnet/calling-native-functions-from-managed-code.md)

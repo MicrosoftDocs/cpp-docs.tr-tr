@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e12c704561cd56ac251479861740c7df205f1e37
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a59b353bb6ca1dc55933234c68f39f4b76dd16a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackstack-stlclr"></a>stack::stack (STL/CLR)
 Bir kapsayıcı bağdaştırıcısı nesnesi oluşturur.  
@@ -121,4 +124,4 @@ size() = 0
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
  [Stack::Assign (STL/CLR)](../dotnet/stack-assign-stl-clr.md)   
  [Stack::generic_container (STL/CLR)](../dotnet/stack-generic-container-stl-clr.md)   
- [Stack::operator (STL/CLR) =](../dotnet/stack-operator-assign-stl-clr.md)
+ [stack::operator= (STL/CLR)](../dotnet/stack-operator-assign-stl-clr.md)

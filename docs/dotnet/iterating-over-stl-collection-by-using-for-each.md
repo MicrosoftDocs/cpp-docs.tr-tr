@@ -14,11 +14,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f18b4bfdcb1c525e6e05b133e853d09b2dbd0a56
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 1a4ce2de13380895f1f313559abeb87e4cd65db2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iterating-over-c-standard-library-collection-by-using-for-each"></a>Foreach kullanarak C++ Standart Kitaplığı koleksiyonu üzerinden yineleme yapma
 `for each` Anahtar sözcüğü, C++ Standart Kitaplığı koleksiyon üzerinde döngüyle gezinmek için kullanılabilir.  
@@ -71,7 +74,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Months with 30 days = 4  
@@ -103,7 +106,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 retval: 60  
@@ -127,4 +130,4 @@ retval: 60
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [her biri için](../dotnet/for-each-in.md)   
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -32,11 +32,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 727b9b9976360e7fa0b2ea9e136223ccf723fed1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3145a78a145bed52fc30e64dbcf56210341d52cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignedreallocdbg"></a>_aligned_realloc_dbg
 İle ayrılmış bir bellek bloğu boyutu değişir [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) veya [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) (yalnızca hata ayıklama sürümü).  
@@ -97,4 +98,4 @@ void * _aligned_realloc_dbg(
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

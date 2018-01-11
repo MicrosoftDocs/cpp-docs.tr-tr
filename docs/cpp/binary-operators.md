@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a76b9505d11f17848232c69650c8e523bad91c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 15c52d48359210a21b23caa72afee7e2a3bcd8cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="binary-operators"></a>İkili İşleçler
 Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.  
@@ -79,4 +80,4 @@ Aşağıdaki tablo, aşırı yüklenebilir işleçler listesini gösterir.
 >  İkili işleçlerin dönüş türlerinde herhangi bir sınırlama yoktur; ancak, kullanıcı tanımlı ikili işleçlerin çoğu bir sınıf türü veya sınıf türü başvurusu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleç aşırı yüklemesi](../cpp/operator-overloading.md)
+ [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

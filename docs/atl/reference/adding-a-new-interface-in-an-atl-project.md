@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21aeda51a917bcb48b16ff8f9c2bc505adc18f1d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c07306a660162b23ecaffa4dd239b2538be0295
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesinde yeni bir arabirim ekleme
 Nesne veya denetim için bir arabirim eklediğinizde, bu arabiriminde her yöntemi için tamamlanmamış işlevleri oluşturun. Nesne veya denetim içinde yalnızca şu anda var olan bir tür kitaplığı'nda bulunan arabirimleri ekleyebilirsiniz. Ayrıca, sınıf arabirimi Ekle uygulamalıdır [BEGIN_COM_MAP](com-map-macros.md#begin_com_map) makrosu veya proje bağlanıyorsa olmalıdır `coclass` özniteliği.  
@@ -54,5 +55,5 @@ Nesne veya denetim için bir arabirim eklediğinizde, bu arabiriminde her yönte
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
  [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

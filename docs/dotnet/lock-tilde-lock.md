@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2fe737a0e40c1b45e7c5622ee377663e997e87ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: f81ebc097d53029dc4d4e161c9cf43e15e37b94d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locklock"></a>lock::~lock
 Destructs bir `lock` nesnesi.  
@@ -134,4 +137,4 @@ All threads completed.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [lock üyeleri](../dotnet/lock-members.md)   
- [Lock::LOCK](../dotnet/lock-lock.md)
+ [lock::lock](../dotnet/lock-lock.md)

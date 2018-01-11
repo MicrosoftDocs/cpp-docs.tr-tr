@@ -21,11 +21,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fc2309b7b97a97d19ff9a68895fef3ed3bda8b7c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5cd6c1821f49ba56b8d6ca27932b6cd7f0e17bf6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdataconnectionoperator-cdatasourceamp"></a>CDataConnection::operator CDataSource&amp;
 Kapsanan bir başvuru döndürür `CDataSource` nesnesi.  
@@ -53,4 +56,4 @@ operator const CDataSource&() throw( );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDataConnection sınıfı](../../data/oledb/cdataconnection-class.md)   
- [CDataConnection::operator CDataSource *](../../data/oledb/cdataconnection-operator-cdatasource-star.md)
+ [CDataConnection::operator CDataSource*](../../data/oledb/cdataconnection-operator-cdatasource-star.md)

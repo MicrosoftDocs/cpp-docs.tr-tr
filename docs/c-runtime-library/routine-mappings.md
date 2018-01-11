@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f7b85af65da564f7231d606933ff1ebbb90d5af0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f44da30387421123ab6998cfbb2855a743aace39
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="routine-mappings"></a>Rutin Eşlemeler
 Genel metin rutin eşlemeler TCHAR içinde tanımlanmıştır. H. `_tccpy`ve `_tclen` MBCS modeli işlevlerde eşlemeniz; makroları veya satır içi işlevler eksiksiz olması için SBCS ve Unicode modellerindeki eşlenmiş. Genel metin yordamı hakkında daha fazla bilgi için karşılık gelen hakkında Yardım konusuna bakın `SBCS`-, `_MBCS`-, veya `_UNICODE`-ilgili yordamı.  
@@ -275,4 +276,4 @@ Genel metin rutin eşlemeler TCHAR içinde tanımlanmıştır. H. `_tccpy`ve `_t
  [Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)   
  [Sabit ve Global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)   
  [Örnek genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)   
- [Genel metin eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)
+ [Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)

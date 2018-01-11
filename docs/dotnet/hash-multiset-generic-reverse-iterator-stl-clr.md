@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f29b5fe1d5f918f32ef6ca2b10f86d6cdbdcdfab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c3a9727c7958b73b564503a2d11ee1cf5f313853
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmultisetgenericreverseiterator-stlclr"></a>hash_multiset::generic_reverse_iterator (STL/CLR)
 Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  

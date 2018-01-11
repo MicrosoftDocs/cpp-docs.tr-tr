@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21d006aabc83af2021bb2b6d8bfa6a35588de12f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 94ee9d7bcffe7d17a5d5cf91fa3accdbe206b641
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overloaded-operators"></a>Aşırı Yüklenmiş İşleçler
 İşleç aşırı yüklemesi önemli ölçüde Yönetilen Uzantılar'dan C++ için Visual C++'a değişmiştir.  
@@ -80,4 +83,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfta veya arabirimde üye bildirimleri (C + +/ CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)
+ [Sınıfta veya Arabirimde Üye Bildirimleri (C++/CLI)](../dotnet/member-declarations-within-a-class-or-interface-cpp-cli.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 1550dca016b765278f8f1fe7ed9d95c4bfd3932e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 65d058780ee71731559733ac07eef3f614a47784
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crt-functions-not-supported-in-universal-windows-platform-apps"></a>Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri
 Evrensel Windows Platformu (UWP) uygulamaları oluştururken birçok C çalışma zamanı (CRT) işlevleri kullanılamaz. Bazı durumlarda, geçici çözümler kullanılabilir —-örneğin, Windows çalışma zamanı veya Win32 API'larını kullanabilirsiniz. Bunları veya destekleyen API'leri karşılık özellikleri UWP uygulamaları için geçerli olmadığından Bununla birlikte, diğer durumlarda, CRT işlevleri yasaklanan.  

@@ -14,11 +14,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 22483b1b1e90c406d1a2f6bd1731f15008b58daa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7f400a03f1b9ae877ee7ec681cb038698a92598a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-define-and-use-delegates-ccli"></a>Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)
 Bu makalede tanımlama ve temsilciler C + kullanma gösterilmektedir +/ CLI.  
@@ -82,7 +85,7 @@ int main( )
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 static SomeClass::Func - single  
@@ -117,7 +120,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 test  
@@ -163,7 +166,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Invoking delegate a:  
@@ -220,7 +223,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Call to Managed Function  
@@ -263,7 +266,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 hello  
@@ -345,7 +348,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 2  
@@ -421,7 +424,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 11  
@@ -460,7 +463,7 @@ int main() {
 };  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in f(R ^ r)  
@@ -504,7 +507,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 12  
@@ -512,4 +515,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md)
+ [temsilci (C++ Bileşen Uzantıları)](../windows/delegate-cpp-component-extensions.md)

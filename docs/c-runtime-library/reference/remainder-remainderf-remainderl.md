@@ -38,11 +38,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 78ba9803ab4eddd862d407fa79f7fa99fc0b565c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0da3e4a6e785b73ebf2bfb8a529581d52dcfe2d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remainder-remainderf-remainderl"></a>remainder, remainderf, remainderl
 Sayının yakın tamsayı değerine yuvarlanan iki kayan nokta değerlerinin kalanı hesaplar.  

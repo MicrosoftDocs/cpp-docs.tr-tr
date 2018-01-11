@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 7a157af2b9c7a8a99dc8f1e255071c1790365213
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 067ead44f000aae8999c0815191089f081edaa67
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode Yöntemi
 Bu örneğin karma kodunu döndürür.  
@@ -42,4 +43,4 @@ public:int GetHashCode()
  **Başlık:** vccorlib.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Varsayılan ad alanı](../cppcx/default-namespace.md)
+ [Varsayılan Ad Alanı](../cppcx/default-namespace.md)

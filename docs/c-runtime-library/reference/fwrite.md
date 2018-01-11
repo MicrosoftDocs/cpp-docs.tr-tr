@@ -31,11 +31,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 98d965b6a8e12e2f27d1544bec07357c28c3b7ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b830dfd7b0a9dace46336f8f02da14fc268daf6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fwrite"></a>fwrite
 Verileri bir akışa yazar.  
@@ -90,4 +91,4 @@ size_t fwrite(
  [_setmode](../../c-runtime-library/reference/setmode.md)   
  [fread](../../c-runtime-library/reference/fread.md)   
  [_fwrite_nolock](../../c-runtime-library/reference/fwrite-nolock.md)   
- [_Write](../../c-runtime-library/reference/write.md)
+ [_write](../../c-runtime-library/reference/write.md)

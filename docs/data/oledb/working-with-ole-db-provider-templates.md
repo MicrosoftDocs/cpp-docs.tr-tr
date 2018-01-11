@@ -18,30 +18,33 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d9158351892c8a8d097f0eccd498c05b2833d862
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b3411463070055a8ba1d1f37085c45bd2ed42a28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonlarıyla Çalışma
 OLE DB sağlayıcı şablonlarıyla çalışma konusunda bilgi edinmek için aşağıdaki konulara bakın:  
   
--   [Sağlayıcınıza arabirim ekleme](../../data/oledb/adding-an-interface-to-your-provider.md)  
+-   [Sağlayıcınıza Arabirim Ekleme](../../data/oledb/adding-an-interface-to-your-provider.md)  
   
--   [Sağlayıcınızdaki bir özelliğe başvurma](../../data/oledb/referencing-a-property-in-your-provider.md)  
+-   [Sağlayıcınızdaki Bir Özelliğe Başvurma](../../data/oledb/referencing-a-property-in-your-provider.md)  
   
--   [Sağlayıcınızdaki Özellikleri ayarlama](../../data/oledb/setting-properties-in-your-provider.md)  
+-   [Sağlayıcınızdaki Özellikleri Ayarlama](../../data/oledb/setting-properties-in-your-provider.md)  
   
--   [Sağlayıcınızdaki sütunları dinamik olarak bağlama](../../data/oledb/dynamically-binding-columns-in-your-provider.md)  
+-   [Sağlayıcınızdaki Sütunları Dinamik Olarak Bağlama](../../data/oledb/dynamically-binding-columns-in-your-provider.md)  
   
--   [Sağlayıcınızda Serbest iş parçacığı oluşturmayı destekleme](../../data/oledb/supporting-free-threading-in-your-provider.md)  
+-   [Sağlayıcınızda Serbest İş Parçacığı Oluşturmayı Destekleme](../../data/oledb/supporting-free-threading-in-your-provider.md)  
   
--   [Sağlayıcınızı test etme](../../data/oledb/testing-your-provider.md)  
+-   [Sağlayıcınızı Test Etme](../../data/oledb/testing-your-provider.md)  
   
--   [Sağlayıcınızda hata ayıklama](../../data/oledb/debugging-your-provider.md)  
+-   [Sağlayıcınızda Hata Ayıklama](../../data/oledb/debugging-your-provider.md)  
   
--   [Sağlayıcı tarafından desteklenmeyen veriyi dönüştürme](../../data/oledb/converting-data-not-supported-by-the-provider.md)  
+-   [Sağlayıcı Tarafından Desteklenmeyen Veriyi Dönüştürme](../../data/oledb/converting-data-not-supported-by-the-provider.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları başvurusu](../../data/oledb/ole-db-provider-templates-reference.md)   

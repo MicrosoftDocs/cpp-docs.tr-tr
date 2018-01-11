@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a93b6b8f182407109465d1397a063b23a408df9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c65bc0adb32d61cef76e02aa944826eaf866c7c5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="initializing-classes-and-structs-without-constructors-c"></a>Sınıfları ve yapıları oluşturucular olmadan başlatma (C++)
 Her zaman için bir sınıf, nispeten basit olanları özellikle bir oluşturucu tanımlamak gerekli değildir. Kullanıcılar nesnelerin sınıfta veya yapı tek düzen başlatma kullanarak aşağıdaki örnekte gösterildiği gibi başlatabilirsiniz:  

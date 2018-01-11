@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7a130e60403c9570d647955a6ad2d86f2ba49d1f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36272def7cf37d53e219011bef0e5151628d2299
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hardware-exceptions"></a>Donanım Özel Durumları
 İşletim sistemi tarafından kabul edilen standart özel durumların çoğu, donanım tarafından tanımlanmış özel durumlardır. Windows, birkaç alt düzey yazılım özel durumunu tanır, ancak bunlar genellikle en iyi işletim sistemi tarafından ele alınır.  
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+ [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

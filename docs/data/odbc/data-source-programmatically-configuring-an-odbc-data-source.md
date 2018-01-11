@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd401acedbdfd8928ab3b2b085ce02595bdaa13b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: ac5756452a8b1c2d5dbf2f27ac7d3e1a8b069ca2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
 Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları programlı olarak nasıl yapılandırabileceğiniz açıklanmaktadır. Bu size esneklik verilere erişmek için açıkça veri kaynakları adlarını belirtmek için ODBC Yöneticisi veya diğer programları kullanmak üzere kullanıcı zorlamadan sağlar.  
@@ -120,4 +123,4 @@ BOOL SQLConfigDataSource(HWND hwndParent,UINT fRequest, LPCSTR lpszDriver, LPCST
  ODBC Yöneticisi, belirli bir sürücüyü için yeni bir veri kaynağı oluşturmak için bilgileri görüntülediğinde tıklayın **yardımcı**. Bu genellikle sürücünün kullanımı ile ilgili önemli bilgiler içerir, bu sürücünün Yardım dosyasını açar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)
+ [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)

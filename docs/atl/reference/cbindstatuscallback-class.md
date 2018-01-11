@@ -40,11 +40,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 90546e2eb63c2b5dd9eb16a0ececfee2629562cf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 19aa979cb69bdbf8d74acbd96291fac9af78c845
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 Bu sınıf uygulayan `IBindStatusCallback` arabirimi.  

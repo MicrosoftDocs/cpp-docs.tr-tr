@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3594b8b1c08fb828e41f60ad49861f29904b67f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d7880a01f247d5dc3cce5a6f247297ef65289367
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="badcast-exception"></a>bad_cast Özel Durumu
 `bad_cast` özel durumu, başvuru türüne yapılan başarısız atamanın sonucu olarak `dynamic_cast` işleci tarafından oluşturulur.  
@@ -94,4 +95,4 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [dynamic_cast işleci](../cpp/dynamic-cast-operator.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+ [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

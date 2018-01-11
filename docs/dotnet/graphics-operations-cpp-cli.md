@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 923fc7074c4d139d680ed9dee96a0dc54a185f21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d80d490dd53a6a27c610532cb26825dc29f34cde
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="graphics-operations-ccli"></a>Grafik İşlemleri (C++/CLI)
 Görüntü işleme kullanmayı göstermektedir [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  
@@ -31,20 +34,20 @@ Görüntü işleme kullanmayı göstermektedir [!INCLUDE[winsdklong](../dotnet/i
  Aşağıdaki konular kullanımını göstermek <xref:System.Drawing.Image?displayProperty=fullName> görüntü işleme gerçekleştirmek için sınıf.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: .NET Framework ile resim dosyası biçimlerini dönüştürme](../dotnet/how-to-convert-image-file-formats-with-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET Framework ile Görüntü Dosyası Biçimlerini Dönüştürme](../dotnet/how-to-convert-image-file-formats-with-the-dotnet-framework.md)  
   
- [Nasıl yapılır: .NET Framework ile resimleri görüntüleme](../dotnet/how-to-display-images-with-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET Framework ile Görüntüleri Görüntüleme](../dotnet/how-to-display-images-with-the-dotnet-framework.md)  
   
- [Nasıl yapılır: .NET Framework ile şekil çizme](../dotnet/how-to-draw-shapes-with-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET Framework ile Şekil Çizme](../dotnet/how-to-draw-shapes-with-the-dotnet-framework.md)  
   
- [Nasıl yapılır: .NET Framework ile resimleri döndürme](../dotnet/how-to-rotate-images-with-the-dotnet-framework.md)  
+ [Nasıl yapılır: .NET Framework ile Görüntüleri Döndürme](../dotnet/how-to-rotate-images-with-the-dotnet-framework.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Grafik programlamaya Başlarken](/dotnet/framework/winforms/advanced/getting-started-with-graphics-programming)  
+ [Grafik Programlamaya Başlarken](/dotnet/framework/winforms/advanced/getting-started-with-graphics-programming)  
   
- [GDI + yönetilen kodu hakkında](/dotnet/framework/winforms/advanced/about-gdi-managed-code)  
+ [GDI+ Yönetilen Kodu Hakkında](/dotnet/framework/winforms/advanced/about-gdi-managed-code)  
   
  <xref:System.Drawing?displayProperty=fullName>  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

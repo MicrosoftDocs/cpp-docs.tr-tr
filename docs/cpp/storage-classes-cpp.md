@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3830f91683399eba4784b5348ca252e9caa22d57
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6914ace20d299b526dc7c0d5b066948a2759287
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-classes-c"></a>Depolama sınıfları (C++)  
   
@@ -39,7 +40,7 @@ A *depolama sınıfı* C++ bağlamında değişken bildirimleri olduğu nesneler
 
 ## <a name="in-this-section"></a>Bu bölümde:
   
--   [statik](#static)  
+-   [static](#static)  
 -   [extern](#extern)  
 -   [thread_local](#thread_local)
 
@@ -217,14 +218,12 @@ void DoSomething()
 ```  
   
 Hakkında dikkat edilecek noktalar `thread_local` tanımlayıcısı:  
+
+- DLL'leri dinamik olarak başlatılan iş parçacığı yerel değişkenleri tüm çağıran iş parçacığı üzerinde düzgün başlatılmamış olabilir. Daha fazla bilgi için bkz: [iş parçacığı](thread.md).
   
 -  `thread_local` Tanımlayıcısı ile birleştirilebilir `static` veya `extern`.  
   
 -  Uygulayabileceğiniz `thread_local` yalnızca veri bildirimler ve tanımlar; için `thread_local` işlevi bildirimlerinde veya tanımlarında kullanılamaz.  
-  
--  Kullanımını `thread_local` ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL'SİNİN alır. 
-  
--  XP sistemlerine `thread_local` DLL kullanıyorsa, doğru şekilde çalışmayabilir `thread_local` veri ve yüklendiği dinamik olarak aracılığıyla `LoadLibrary`.  
   
 -  Belirleyebileceğiniz `thread_local` yalnızca üzerinde veri öğeleri statik depolama süresi ile. Bu genel veri nesnelerini içerir (her ikisi de `static` ve `extern`), yerel statik nesneler ve sınıflar statik veri üyeleri. Herhangi bir yerel değişken bildirilen `thread_local` başka bir depolama sınıf sağladıysanız; örtük olarak statik diğer bir deyişle, blok kapsamında `thread_local` eşdeğerdir `thread_local static`. 
   

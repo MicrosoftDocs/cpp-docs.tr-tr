@@ -30,11 +30,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 747ee64a701250c83b3b0401a5fbb3d82496a99e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b100f1ee61b06639e75290fafd01dca6a10a820c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="try-throw-and-catch-statements-c"></a>try, throw ve catch Deyimleri (C++)
 Özel durum işlemeyi C++ içinde uygulamak için kullandığınız `try`, `throw`, ve `catch` ifadeler.  

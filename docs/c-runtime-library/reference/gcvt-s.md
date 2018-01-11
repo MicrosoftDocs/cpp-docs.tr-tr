@@ -39,11 +39,12 @@ caps.latest.revision: "30"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7ba9f1a7a77c0f9d23423906c18b05ace5b20ec8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a028431bb324fe634ee30ae81eec6c2d3371441
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="gcvts"></a>_gcvt_s
 Kayan nokta değeri dizeye dönüştürür. Bu bir sürümüdür [_gcvt](../../c-runtime-library/reference/gcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -89,7 +90,7 @@ errno_t _gcvt_s(
 |Değil `NULL` (noktaları için geçerli bellek)|sıfır|tüm|tüm|`EINVAL`|Değiştirilmedi.|  
 |Değil `NULL` (noktaları için geçerli bellek)|tüm|tüm|>= `sizeInBytes`|`EINVAL`|Değiştirilmedi.|  
   
- **Güvenlik sorunları**  
+ **Güvenlik Sorunları**  
   
  `_gcvt_s`erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
   

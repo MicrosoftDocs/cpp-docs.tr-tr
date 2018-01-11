@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a33a19a24504898ffb9e0d9b9d5c7c23fcef4efc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 06193b8c560c5ac6006698813222e698a98bccc3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cutlpropsisvalidvalue"></a>CUtlProps::IsValidValue
 Bir özelliğini ayarlamadan önce bir değer doğrulamak için kullanılır.  
@@ -54,4 +57,4 @@ Bir özelliğini ayarlamadan önce bir değer doğrulamak için kullanılır.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CUtlProps sınıfı](../../data/oledb/cutlprops-class.md)
+ [CUtlProps Sınıfı](../../data/oledb/cutlprops-class.md)

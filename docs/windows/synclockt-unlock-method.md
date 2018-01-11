@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 617c7069f3098d093482b478e33bc036274c2ccd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9b826cfdebaaed7b13de0ac2f2efa578c8b142a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="synclocktunlock-method"></a>SyncLockT::Unlock Metodu
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -39,4 +42,4 @@ void Unlock();
  **Namespace:** Microsoft::WRL::Wrappers::Details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SyncLockT sınıfı](../windows/synclockt-class.md)
+ [SyncLockT Sınıfı](../windows/synclockt-class.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2a73775316391fd90698f35a5d5f1fdd7e00ebe3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 45e60a412dc24f685fd375ebc19c109b2bee0e2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 **Microsoft özel**  
@@ -110,4 +111,4 @@ __popcnt(0xffffffff) = 32
  Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
+ [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

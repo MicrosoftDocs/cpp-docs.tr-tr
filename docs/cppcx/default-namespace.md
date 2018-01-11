@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 9d1c04acc5754627906448db9ac4f3afd65fbe7c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5a9d538e42d4173008343df186bd2579dc088fb5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="default-namespace"></a>Varsayılan ad alanı
 `default` Ad alanı kapsamlarını, C + tarafından desteklenen yerleşik türleri +/ CX.  
@@ -33,10 +34,10 @@ namespace default;
   
 |||  
 |-|-|  
-|[Varsayılan:: (type_name):: eşittir](../cppcx/default-type-name-equals-method.md)|Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.|  
-|[Varsayılan:: (type_name):: GetHashCode](../cppcx/default-type-name-gethashcode-method.md)|Bu örneğin karma kodunu döndürür.|  
-|[Varsayılan:: (type_name):: GetType](../cppcx/default-type-name-gettype-method.md)|Geçerli türünü temsil eden bir dize döndürür.|  
-|[Varsayılan:: (type_name):: ToString](../cppcx/default-type-name-tostring-method.md)|Geçerli türünü temsil eden bir dize döndürür.|  
+|[default::(type_name)::Equals](../cppcx/default-type-name-equals-method.md)|Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.|  
+|[default::(type_name)::GetHashCode](../cppcx/default-type-name-gethashcode-method.md)|Bu örneğin karma kodunu döndürür.|  
+|[default::(type_name)::GetType](../cppcx/default-type-name-gettype-method.md)|Geçerli türünü temsil eden bir dize döndürür.|  
+|[default::(type_name)::ToString](../cppcx/default-type-name-tostring-method.md)|Geçerli türünü temsil eden bir dize döndürür.|  
   
 ### <a name="built-in-types"></a>Yerleşik türler  
   

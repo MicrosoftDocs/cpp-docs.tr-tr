@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5f566a8657d4ca31ec4d3a946b0069243a5c18af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 312b8e28201447def0f09da9bcefc4a78e15d8ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ierrorrecordsimplgeterrorsource"></a>IErrorRecordsImpl::GetErrorSource
 Bir hata kaydından hatanın nedeni kaynak kodunu alır.  
@@ -47,4 +50,4 @@ Bir hata kaydından hatanın nedeni kaynak kodunu alır.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ierrorrecordsımpl sınıfı](../../data/oledb/ierrorrecordsimpl-class.md)
+ [IErrorRecordsImpl Sınıfı](../../data/oledb/ierrorrecordsimpl-class.md)

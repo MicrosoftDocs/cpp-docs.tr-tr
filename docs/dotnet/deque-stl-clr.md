@@ -18,11 +18,14 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5315f13588aa22696989be208e8b5e7dce5fc586
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9bd847b2641e6670a91d2edf1eb926aca423ad2f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deque-stlclr"></a>sıradan ayır (STL/CLR)
 Şablon sınıfı rastgele erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `deque` bitişik bir blok depolama gibi görünüyor, ancak hangi büyütür veya kalan öğeler kopyalamak için gerek kalmadan her iki uçta küçültür bir dizi öğelerini yönetmek için. Bunu verimli bir şekilde böylece uygulayabileceğiniz bir `double-ended queue`. (Bu nedenle ad.)  
@@ -65,23 +68,23 @@ template<typename Value>
 |[deque::generic_reverse_iterator (STL/CLR)](../dotnet/deque-generic-reverse-iterator-stl-clr.md)|Kapsayıcı için genel arabirimini ters yineleyici türü.|  
 |[deque::generic_value (STL/CLR)](../dotnet/deque-generic-value-stl-clr.md)|Kapsayıcı için genel arabirimini öğenin türü.|  
 |[deque::iterator (STL/CLR)](../dotnet/deque-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
-|[deque::Reference (STL/CLR)](../dotnet/deque-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[deque::reference (STL/CLR)](../dotnet/deque-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[deque::reverse_iterator (STL/CLR)](../dotnet/deque-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[deque::size_type (STL/CLR)](../dotnet/deque-size-type-stl-clr.md)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[deque::value_type (STL/CLR)](../dotnet/deque-value-type-stl-clr.md)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[deque::Assign (STL/CLR)](../dotnet/deque-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
-|[deque::AT (STL/CLR)](../dotnet/deque-at-stl-clr.md)|Belirtilen konumda bir öğe erişir.|  
-|[deque::Back (STL/CLR)](../dotnet/deque-back-stl-clr.md)|Son öğe erişir.|  
-|[deque::Begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
-|[deque::Clear (STL/CLR)](../dotnet/deque-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[deque::assign (STL/CLR)](../dotnet/deque-assign-stl-clr.md)|Tüm öğeleri değiştirir.|  
+|[deque::at (STL/CLR)](../dotnet/deque-at-stl-clr.md)|Belirtilen konumda bir öğe erişir.|  
+|[deque::back (STL/CLR)](../dotnet/deque-back-stl-clr.md)|Son öğe erişir.|  
+|[deque::begin (STL/CLR)](../dotnet/deque-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[deque::clear (STL/CLR)](../dotnet/deque-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
 |[deque::deque (STL/CLR)](../dotnet/deque-deque-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
-|[deque::Empty (STL/CLR)](../dotnet/deque-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[deque::End (STL/CLR)](../dotnet/deque-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
-|[deque::ERASE (STL/CLR)](../dotnet/deque-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[deque::Front (STL/CLR)](../dotnet/deque-front-stl-clr.md)|İlk öğe erişir.|  
+|[deque::empty (STL/CLR)](../dotnet/deque-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[deque::end (STL/CLR)](../dotnet/deque-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[deque::erase (STL/CLR)](../dotnet/deque-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[deque::front (STL/CLR)](../dotnet/deque-front-stl-clr.md)|İlk öğe erişir.|  
 |[deque::insert (STL/CLR)](../dotnet/deque-insert-stl-clr.md)|Öğeleri belirtilen bir konumda ekler.|  
 |[deque::pop_back (STL/CLR)](../dotnet/deque-pop-back-stl-clr.md)|Son öğeyi kaldırır.|  
 |[deque::pop_front (STL/CLR)](../dotnet/deque-pop-front-stl-clr.md)|İlk öğeyi kaldırır.|  
@@ -91,7 +94,7 @@ template<typename Value>
 |[deque::rend (STL/CLR)](../dotnet/deque-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[deque::resize (STL/CLR)](../dotnet/deque-resize-stl-clr.md)|Öğe sayısını değiştirir.|  
 |[deque::size (STL/CLR)](../dotnet/deque-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[deque::Swap (STL/CLR)](../dotnet/deque-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[deque::swap (STL/CLR)](../dotnet/deque-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[deque::to_array (STL/CLR)](../dotnet/deque-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
   
 |Özellik|Açıklama|  
@@ -101,14 +104,14 @@ template<typename Value>
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[deque::operator! = (STL/CLR)](../dotnet/deque-operator-inequality-stl-clr.md)|İki belirler `deque` nesneler eşit değildir.|  
-|[deque::operator(stl/CLR)](../dotnet/deque-operator-stl-clr.md)|Belirtilen konumda bir öğe erişir.|  
-|[operator < (deque) (STL/CLR)](../dotnet/operator-less-than-deque-stl-clr.md)|Belirler bir `deque` nesnesi, başka değerinden `deque` nesnesi.|  
-|[operator < = (deque) (STL/CLR)](../dotnet/operator-less-or-equal-deque-stl-clr.md)|Belirler bir `deque` nesnesidir değerinden küçük veya eşit başka `deque` nesnesi.|  
-|[işleç = (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator == (deque) (STL/CLR)](../dotnet/operator-equality-deque-stl-clr.md)|Belirler bir `deque` nesnesidir diğerine eşit `deque` nesnesi.|  
-|[operator > (deque) (STL/CLR)](../dotnet/operator-greater-than-deque-stl-clr.md)|Belirler bir `deque` nesnesidir diğerinden daha büyük `deque` nesnesi.|  
-|[operator > = (deque) (STL/CLR)](../dotnet/operator-greater-or-equal-deque-stl-clr.md)|Belirler bir `deque` nesnesidir büyük veya ona eşit diğerine `deque` nesnesi.|  
+|[deque::operator!= (STL/CLR)](../dotnet/deque-operator-inequality-stl-clr.md)|İki belirler `deque` nesneler eşit değildir.|  
+|[deque::operator(STL/CLR)](../dotnet/deque-operator-stl-clr.md)|Belirtilen konumda bir öğe erişir.|  
+|[operator< (deque) (STL/CLR)](../dotnet/operator-less-than-deque-stl-clr.md)|Belirler bir `deque` nesnesi, başka değerinden `deque` nesnesi.|  
+|[operator<= (deque) (STL/CLR)](../dotnet/operator-less-or-equal-deque-stl-clr.md)|Belirler bir `deque` nesnesidir değerinden küçük veya eşit başka `deque` nesnesi.|  
+|[operator= (deque) (STL/CLR)](../dotnet/operator-assign-deque-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[operator== (deque) (STL/CLR)](../dotnet/operator-equality-deque-stl-clr.md)|Belirler bir `deque` nesnesidir diğerine eşit `deque` nesnesi.|  
+|[operator> (deque) (STL/CLR)](../dotnet/operator-greater-than-deque-stl-clr.md)|Belirler bir `deque` nesnesidir diğerinden daha büyük `deque` nesnesi.|  
+|[operator>= (deque) (STL/CLR)](../dotnet/operator-greater-or-equal-deque-stl-clr.md)|Belirler bir `deque` nesnesidir büyük veya ona eşit diğerine `deque` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

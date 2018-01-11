@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65e2c342b1c7be86035955cf2d22fde838c0c3ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b29d77b7bcc56baa9866c2855065052b1d2607c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-retrieve-the-windows-version-ccli"></a>Nasıl yapılır: Windows Sürümünü Alma (C++/CLI)
 Aşağıdaki kod örneği, geçerli işletim sistemi platformu ve sürüm bilgileri almak gösterilmiştir. Bu bilgiler depolanır <xref:System.Environment.OSVersion%2A?displayProperty=fullName> özelliği ve Windows sürümünü ayrıntılı koşullarla tanımlayan bir numaralandırma oluşur ve bir <xref:System.Environment.Version%2A> işletim sisteminin tam yapı içeren nesne.  
@@ -65,4 +68,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

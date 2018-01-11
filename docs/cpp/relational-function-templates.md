@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73925a124c341f1a9e76ce7a17f34608b10a8936
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 959c8d75e40903f827a273e5d57660b0efed00b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="relational-function-templates"></a>İlişkisel İşlev Şablonları
 **Microsoft özel**  
@@ -96,4 +97,4 @@ template<typename _Interface,
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

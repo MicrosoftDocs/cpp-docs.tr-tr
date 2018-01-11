@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 2f9df89c398e943af3c422b7e025ad371a3e8285
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5aa6698306f06fb5d63a8e351054aa2c123749fe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tovector-function"></a>to_vector işlevi
 Döndürür bir `std::vector` değeri olan belirtilen IVector veya IVectorView parametre temel koleksiyonu ile aynı.  

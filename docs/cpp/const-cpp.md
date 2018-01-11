@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8290b9c73dbab2c3cc3ab63cfbff10f587e46d7b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c296f473f9128907e69437edf66734a7566242ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="const-c"></a>const (C++)
 Bir veri bildirimi değiştirirken **const** anahtar sözcüğü nesne veya değişken değiştirilebilir olmadığını belirtir.  
@@ -162,7 +163,7 @@ extern "C" const int x=10;
   
  Daha fazla bilgi için **const**, aşağıdaki konulara bakın:  
     
--   [const ve volatile işaretçiler](../cpp/const-and-volatile-pointers.md)  
+-   [const ve volatile İşaretçileri](../cpp/const-and-volatile-pointers.md)  
   
 -   [Tür niteleyicileri (C Dil Başvurusu)](../c-language/type-qualifiers.md)  
   
@@ -171,4 +172,4 @@ extern "C" const int x=10;
 -   [#define](../preprocessor/hash-define-directive-c-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

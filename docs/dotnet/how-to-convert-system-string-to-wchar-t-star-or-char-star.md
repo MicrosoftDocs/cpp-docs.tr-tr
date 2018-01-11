@@ -19,11 +19,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d0616e76985a06f9525a300c318fe1518cd6a70c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c304b3d01fa8d1cdece410d70ebe437d41d72cd0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-convert-systemstring-to-wchart-or-char"></a>Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme
 Kullanabileceğiniz `PtrToStringChars` dönüştürmek için Vcclr.h içinde <xref:System.String> için yerel `wchar_t *` veya `char *`.  CLR dizeleri dahili olarak Unicode olduğundan bu her zaman geniş bir Unicode dize işaretçisini döndürür. Aşağıdaki örnekte gösterildiği gibi daha sonra wide dönüştürebilirsiniz.  
@@ -73,4 +76,4 @@ Hello
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+ [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d3ec06d469f6fc71b23c9bdc6a67e5ed741d9f5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb0dd0bd25f1e4f8d0fd3bc0f1bee19f34497fb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
 Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman bu öznitelik Microsoft'a özgü declspec veya pragma, karşılaştırması kullanılacağı Kılavuzu bkz [C++ Standart öznitelikleri](attributes2.md).
@@ -78,4 +79,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

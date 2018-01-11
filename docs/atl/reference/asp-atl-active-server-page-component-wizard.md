@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e2ffa9ed5a25417cfcf46c5b47b55b3eecc2fe27
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 69d3837cc0996c0e0e0784214cfbfa6744afbf94
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asp-atl-active-server-page-component-wizard"></a>ASP, ATL Active Server sayfası Bileşen Sihirbazı
 Bilgileri ve durumu, ASP bileşenle ilgili işlemek için isteğe bağlı ayarları belirtmek için bu sayfayı ATL etkin sunucu sayfası Bileşen Sihirbazı'nı kullanın.  
@@ -36,7 +37,7 @@ Bilgileri ve durumu, ASP bileşenle ilgili işlemek için isteğe bağlı ayarla
 |------------|-----------------|  
 |**İstek**|Active Server Pages iç erişim sağlayan **isteği** nesnesi. İstek nesnesi bir HTTP isteği geçirmek için kullanılır.|  
 |**Yanıt**|Active Server Pages iç erişim sağlayan **yanıt** nesnesi. Bir isteğe yanıt olarak, yanıt nesnesini bilgileri kullanıcıya tarayıcıya gönderir.|  
-|**Oturumu**|Active Server Pages iç erişim sağlayan **oturum** nesnesi. **Oturum** nesne depolamak ve durum bilgilerini alma dahil olmak üzere geçerli kullanıcı oturum bilgilerini korur.|  
+|**Oturum**|Active Server Pages iç erişim sağlayan **oturum** nesnesi. **Oturum** nesne depolamak ve durum bilgilerini alma dahil olmak üzere geçerli kullanıcı oturum bilgilerini korur.|  
 |**Uygulama**|Active Server Pages iç erişim sağlayan **uygulama** nesnesi. **Uygulama** nesnesi birden çok ASP nesne arasında paylaşılan durumu yönetir.|  
 |**Sunucu**|Active Server Pages iç erişim sağlayan **Server** nesnesi. **Server** nesne diğer ASP nesneleri oluşturmanıza olanak sağlar.|  
   

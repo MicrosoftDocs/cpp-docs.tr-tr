@@ -16,11 +16,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fd322aa1cacfb9f1fa97f4e15d90bf6a8b30f472
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a0a276854c9f2e27439c2c16e9299d4eaa9243d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-define-and-consume-classes-and-structs-ccli"></a>Nasıl yapılır: Sınıfları ve Yapıları Tanımlama ve Kullanma (C++/CLI)
 Bu makalede kullanıcı tanımlı başvuru türleri ve türlerin C + tanımlama ve kullanma gösterilmektedir +/ CLI.  
@@ -170,7 +173,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in Public_Class  
@@ -217,7 +220,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in Public_Class  
@@ -301,7 +304,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in Public_Function  
@@ -400,7 +403,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in Public_Function  
@@ -492,7 +495,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in static constructor  
@@ -509,7 +512,7 @@ in static constructor
   
 -   [Nesne işleci (^) işleme](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)  
   
--   [interior_ptr (C + +/ CLI)](../windows/interior-ptr-cpp-cli.md)  
+-   [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)  
   
 ```  
   
@@ -548,7 +551,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 10.89  
@@ -591,7 +594,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Base::Test  
@@ -623,7 +626,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Derived::Test2  
@@ -658,7 +661,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 Derived::Test4  
@@ -712,7 +715,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 S object 0 being constructed, this=0018F378  
@@ -927,4 +930,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)   
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+ [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

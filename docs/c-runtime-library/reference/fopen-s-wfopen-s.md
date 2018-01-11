@@ -44,11 +44,12 @@ caps.latest.revision: "41"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 49a884b8ae4ea34c02a0ca57563077add4d9d6fa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3205577627967fa58c3fbc0d1318a48fc5525561
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
 Bir dosyayı açar. Bu sürümleri [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

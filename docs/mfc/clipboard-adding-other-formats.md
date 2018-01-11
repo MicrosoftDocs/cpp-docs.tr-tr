@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 030deda8b46492dba76fb85702fa40f22b0db594
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e6f7f21a64c062e2f210be9f13ce04428c397f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clipboard-adding-other-formats"></a>Pano: Diğer Biçimleri Ekleme
 Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişletmek açıklanmaktadır. Konu [Pano: veri kopyalama ve yapıştırmayı](../mfc/clipboard-copying-and-pasting-data.md) kopyalama ve yapıştırma panodan desteklemek için gereken en düşük uygulamayı açıklar. Bu tüm uygulamanız ise, Pano'ya yerleştirilen yalnızca biçimler: `CF_METAFILEPICT`, **CF_EMBEDSOURCE**, **CF_OBJECTDESCRIPTOR**ve büyük olasılıkla `CF_LINKSOURCE`. Uygulamaların çoğu bu üç Pano üzerinde daha fazla biçiminden gerekir.  
@@ -54,5 +55,5 @@ Bu konuda, özellikle OLE desteği için desteklenen biçimler listesini genişl
 -   [OLE](../mfc/ole-background.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pano: OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+ [Pano: OLE Pano Mekanizmasını Kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 

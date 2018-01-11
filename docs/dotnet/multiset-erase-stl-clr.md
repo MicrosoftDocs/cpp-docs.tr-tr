@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a65bd2acd519a976f77e20b9eed60f0ff492f88b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9e31d88345ea483c2abe5492b5b94122e86665cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multiseterase-stlclr"></a>multiset::erase (STL/CLR)
 Belirtilen konumlardaki öğeleri kaldırır.  
@@ -110,4 +113,4 @@ size() = 1
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)   
- [multiset::Clear (STL/CLR)](../dotnet/multiset-clear-stl-clr.md)
+ [multiset::clear (STL/CLR)](../dotnet/multiset-clear-stl-clr.md)

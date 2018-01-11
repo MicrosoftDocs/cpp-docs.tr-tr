@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e5794cd9ec0eb5afc879507bcf8942d6481ebca4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a5fa20f0a2236d6458490784d2fa0f1b53b13241
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 Başka bir işlem gerçekleştirir kod bloğu bir işlevdir. Bir işlev tabloya işlev bağımsız değişkenleri geçirmek arayanlar etkinleştirmek giriş parametreleri isteğe bağlı olarak tanımlayabilirsiniz. Bir işlev isteğe bağlı olarak bir değer çıktısı olarak döndürür. İşlevler, ideal olarak açıkça işlevi yaptığı açıklayan bir ad ile tek bir yeniden kullanılabilir blok ortak işlemlerinde kapsüllemek için kullanışlıdır. Aşağıdaki işlevi çağıran gelen iki tamsayı kabul eder ve bunların toplamı döndürür; `a` ve `b` olan *parametreleri* türü `int`.  
@@ -398,4 +399,4 @@ int (*myFunction(char* s))(int);
  [Açıkça varsayılan haline getirilen ve Silinen İşlevler](../cpp/explicitly-defaulted-and-deleted-functions.md)   
  [İşlevlerde bağımsız değişkene bağlı ad (Koenig) arama](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)   
  [Varsayılan bağımsız değişkenler](../cpp/default-arguments.md)   
- [Satır içi işlevler](../cpp/inline-functions-cpp.md)
+ [Satır İçi İşlevler](../cpp/inline-functions-cpp.md)

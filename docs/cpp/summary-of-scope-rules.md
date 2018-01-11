@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2261f5c2b843f607f8f0906764aee833c6a100f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c530a586ca2b8b70cfdc967c354738e93435f20c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Bir işlev adı gösterir işlevi sayısı ve türü parametrelerinin göre benzersiz olması gerekir. Ad anlaşılır, kalırsa [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  

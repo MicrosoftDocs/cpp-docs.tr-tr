@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5878c28ed0b4fc2663c17021aa9e277ccaa8ad4e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7ea314dbf34881a86faa862c6c6543bcee5f49e3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2249"></a>Derleyici Hatası C2249
 'member': erişim üyesine erişilebilir yol bildirilen sanal taban 'sınıfı'  

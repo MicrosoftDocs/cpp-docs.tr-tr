@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb6c4c3a993e439eeae4abf8ec4830ea1fb47372
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: cde93940ae690457df89923a214fd219b8b87606
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crowsetimplmrgrowdata"></a>CRowsetImpl::m_rgRowData
 Varsayılan olarak, bir `CAtlArray` kullanıcı kayıt şablonu bağımsız değişkeni üzerinde templatizes `CRowsetImpl`.  
@@ -43,4 +46,4 @@ ArrayType CRowsetBaseImpl::m_rgRowData;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRowsetImpl sınıfı](../../data/oledb/crowsetimpl-class.md)   
  [CRowsetImpl::m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md)   
- [CRowsetImpl::m_strındextext](../../data/oledb/crowsetimpl-m-strindextext.md)
+ [CRowsetImpl::m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md)

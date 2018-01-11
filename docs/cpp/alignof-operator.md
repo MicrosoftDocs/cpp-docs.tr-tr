@@ -23,11 +23,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 94940b15e185866d8f24a20c417e730c52b8502c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 50a8d6e524847d46d62b5f1da134332f35edcf92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürür işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.  
@@ -85,7 +86,7 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
  Hizalama değiştirme hakkında daha fazla bilgi için bkz:  
   
--   [Paketi](../preprocessor/pack.md)  
+-   [pack](../preprocessor/pack.md)  
   
 -   [Hizalama](../cpp/align-cpp.md)  
   
@@ -97,10 +98,10 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
  Hizalama x86 hem x64 ilişkin kodda farklar hakkında daha fazla bilgi için bkz:  
   
--   [X86 çakışıyor derleyici](../build/conflicts-with-the-x86-compiler.md)  
+-   [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)  
   
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

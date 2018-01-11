@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 86d4eeaadd8c2afcd5b223e7431614436ab8a786
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 119969860f031acbc2f1764a34a456d2e8a16437
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-implementing-futures"></a>İzlenecek yol: Vadeli İşlemleri Uygulama
 Bu konu, uygulamanızı vadeli uygulamak gösterilmiştir. Konusunda daha fazla yapan varolan işlevsellikte eşzamanlılık çalışma zamanı bir şey halinde birleştirmek gösterilmiştir.  
@@ -104,4 +105,4 @@ caught exception: error
  [Eşzamanlılık Çalışma zamanı izlenecek yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)   
  [Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)   
  [task_group sınıfı](reference/task-group-class.md)   
- [single_assignment sınıfı](../../parallel/concrt/reference/single-assignment-class.md)
+ [single_assignment Sınıfı](../../parallel/concrt/reference/single-assignment-class.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b3fa561d28ec402e631833310cdd76ecf41beef0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0359a6cbbb1f646432b03722cdf4ba3010cffa72
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parameter-passing"></a>Parametre Geçirme
 Yazmaçları ilk dört tamsayı bağımsız değişken geçirildi. Tamsayı değerleri (sırayla soldan sağa) RCX, RDX, R8 ve R9 geçirilir. Bağımsız değişkenler beş ve daha yüksek yığında geçirilir. Yazmaçları sağa hizalı tüm bağımsız değişkenler. Aranan kaydının üst BITS yoksayabilirsiniz şekilde yapılır olması ve yalnızca gerekli kayıt bölümü erişebilirsiniz.  
@@ -69,4 +70,4 @@ func4(__m64 a, _m128 b, struct c, float d);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralı](../build/calling-convention.md)
+ [Çağırma Kuralı](../build/calling-convention.md)

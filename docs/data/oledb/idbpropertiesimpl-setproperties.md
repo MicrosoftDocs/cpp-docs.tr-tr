@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 39a5bb5292d77f336bd6263693c343d3b302fb68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: d835810a2ca14c8e0631ed7dda8fcaddeb859d71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idbpropertiesimplsetproperties"></a>IDBPropertiesImpl::SetProperties
 Özellikleri veri kaynağı ve başlatma özellik grupları için veri kaynağı nesneleri veya başlatma özellik grubu sıralayıcısını ayarlar.  
@@ -49,4 +52,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idbpropertiesımpl sınıfı](../../data/oledb/idbpropertiesimpl-class.md)   
  [Idbpropertiesımpl::GetProperties](../../data/oledb/idbpropertiesimpl-getproperties.md)   
- [Idbpropertiesımpl::GetPropertyInfo](../../data/oledb/idbpropertiesimpl-getpropertyinfo.md)
+ [IDBPropertiesImpl::GetPropertyInfo](../../data/oledb/idbpropertiesimpl-getpropertyinfo.md)

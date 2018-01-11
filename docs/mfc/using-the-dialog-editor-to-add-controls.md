@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57969cbd79bfc19bc1e6b2523b02d5211a583e84
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 64ed32054c05ca012bc230ede47fa08e4d24595d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-dialog-editor-to-add-controls"></a>Denetim Eklemek için İletişim Kutusu Düzenleyicisini Kullanma
 İletişim-şablon kaynağıyla oluşturduğunuzda [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), denetimleri paletinden denetimleri sürükleyin ve iletişim kutusuna bırakın. Bu denetim türü için belirtimleri iletişim şablonu kaynağı ekler. Ne zaman, oluşturmak iletişim nesnesi ve çağrı kendi **oluşturma** veya `DoModal` üye işlevi framework Windows denetimi oluşturur ve ekranda iletişim penceresinde yerleştirir.  
@@ -32,5 +33,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Denetimleri yapma ve kullanma](../mfc/making-and-using-controls.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

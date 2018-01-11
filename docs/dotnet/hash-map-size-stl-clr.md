@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3029e0a9a1177a391dada664d17cca583ec555b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e5e07965ec9ba8e876f4141f28a653cb74433862
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmapsize-stlclr"></a>hash_map::size (STL/CLR)
 Öğe sayısını sayar.  
@@ -79,4 +82,4 @@ size() = 2 after adding 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)   
- [hash_map::Empty (STL/CLR)](../dotnet/hash-map-empty-stl-clr.md)
+ [hash_map::empty (STL/CLR)](../dotnet/hash-map-empty-stl-clr.md)

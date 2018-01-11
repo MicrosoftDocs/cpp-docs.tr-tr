@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8d0595078c9515c5c705a1cbfb1ed6b5e55db788
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e35d0efc92e011cfb4d93746efd1b03ac94a0779
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Rvalue başvuru Bildirimcisi:&amp;&amp;
 Rvalue deyim için bir başvuru tutar.  
@@ -59,7 +60,7 @@ int main()
   
  Visual C++ 2010'dan önce her çağrısı `operator+` ayırır ve yeni bir geçici döndürür `string` nesne (rvalue bir). `operator+`Kaynak dizeleri lvalues veya rvalues olduğunu bilmediğinden bir dize diğerine eklenemiyor. Kaynak dizeleri hem lvalues varsa, başka bir programda başvurulan ve bu nedenle değiştirilmemesi gerekir. Rvalue başvuru kullanarak `operator+` başka bir programda başvurulamaz rvalues yapılacak değiştirilebilir. Bu nedenle, `operator+` bir dize diğerine şimdi ekleyebilirsiniz. Bu dinamik bellek ayırma sayısını önemli ölçüde azaltabilir, `string` class gerçekleştirmelisiniz. Hakkında daha fazla bilgi için `string` sınıfı için bkz: [basic_string sınıfı](../standard-library/basic-string-class.md).  
   
- Derleyici dönüş değeri en iyi duruma getirme (RVO) veya adlı dönüş değeri en iyi duruma getirme (NRVO) kullanamazsınız taşıma semantiği de faydalıdır. Bu durumlarda, türü tanımlıyorsa derleyici taşıma oluşturucusuna çağırır. Adlı dönüş değeri en iyi duruma getirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri en iyi duruma getirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/?LinkId=131571).  
+ Derleyici dönüş değeri en iyi duruma getirme (RVO) veya adlı dönüş değeri en iyi duruma getirme (NRVO) kullanamazsınız taşıma semantiği de faydalıdır. Bu durumlarda, türü tanımlıyorsa derleyici taşıma oluşturucusuna çağırır. Adlı dönüş değeri en iyi duruma getirme hakkında daha fazla bilgi için bkz: [adlı dönüş değeri en iyi duruma getirme Visual C++ 2005'te](http://go.microsoft.com/fwlink/p/?linkid=131571).  
   
  Taşıma semantiği daha iyi anlamak için bir öğeye ekleme örneği göz önünde bulundurun. bir `vector` nesnesi. Varsa kapasitesini `vector` nesne aşıldı `vector` nesne öğeleri için bellek tahsis ve her öğe, eklenen öğesi için yer açmak için başka bir bellek konumuna kopyalayın. Bir ekleme işlemi öğenin kopyaladığında, yeni bir öğesi oluşturur, önceki öğesinden yeni öğe verileri kopyalamak için Kopyala oluşturucuyu çağırır ve önceki öğesi yok eder. Taşıma semantiği pahalı bellek ayırma gerçekleştirmek ve kopyalama işlemlerini yapmak zorunda kalmadan doğrudan nesneleri taşımanızı sağlar.  
   

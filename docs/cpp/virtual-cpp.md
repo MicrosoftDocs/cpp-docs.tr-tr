@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8d029ce5a75da7c3c5642912c3d2a418183eee0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 041939197f18861d27d1f99708e27415de2b7787
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="virtual-c"></a>virtual (C++)
 `virtual` Anahtar sözcüğü bir sanal işlev veya sanal bir temel sınıf bildirir.  
@@ -56,4 +57,4 @@ virtual [access-specifier] base-class-name
  Ayrıca bkz. aşağıdaki anahtar sözcükler: [sınıfı](../cpp/class-cpp.md), [özel](../cpp/private-cpp.md), [ortak](../cpp/public-cpp.md), ve [korumalı](../cpp/protected-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

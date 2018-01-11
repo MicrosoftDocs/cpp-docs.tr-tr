@@ -43,11 +43,12 @@ caps.latest.revision: "56"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c5a81cdcba10d65c496a946fb8847fdb09b1ff70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01558dfa6b28f10746c1487384bad44768b5877e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 Bir dosyayı açar. Ek parametre doğrulama ve return hata kodları gerçekleştirmek bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [fopen_s, _wfopen_s](../../c-runtime-library/reference/fopen-s-wfopen-s.md).  

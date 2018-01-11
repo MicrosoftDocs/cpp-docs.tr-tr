@@ -77,11 +77,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a3e683141c37d704dc04c7b322714c0457b95fbb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7e0f3b5e505695eca01437bf8d1999ffccca881a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cprovidertypes-cproviderinfo"></a>CProviderTypes, CProviderInfo
 Çağrı typedef sınıfı **CProviderTypes** parametre sınıfı uygulamak için **Cproviderınfo**.  
@@ -120,4 +123,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

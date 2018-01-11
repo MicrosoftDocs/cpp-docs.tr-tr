@@ -18,11 +18,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8009d587007e618bfecf46911c5b30486cf1aba4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 43be9c8a2339bb47d598304145a8c34f391b11c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-source-programmatically-creating-a-table-in-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağında Tablo Oluşturma
 Bu konu, verileriniz için bir tablo oluşturmak nasıl açıklar kullanarak kaynak `ExecuteSQL` sınıfının üye işlevini `CDatabase`, işlev içeren bir dize geçirme bir **CREATE TABLE** SQL deyimi.  
@@ -42,4 +45,4 @@ myDB.ExecuteSQL("CREATE TABLE OFFICES (OfficeID TEXT(4)" ",
 >  Belirtilen alan türleri **CREATE TABLE** SQL deyimi, kullanmakta olduğunuz ODBC sürücüsü göre farklılık. (Visual C++ 1.5 ile dağıtılan) Microsoft Query program hangi alan türlerinin bir veri kaynağı için kullanılabilir olduğunu öğrenmek için bir yoludur. Microsoft Query'de tıklatın **dosya**, tıklatın **Table_Definition'a**, bir veri kaynağından bir tablo seçin ve gösterilen türü bakmak **türü** birleşik giriş kutusu. SQL söz dizimi dizin oluşturmak için de bulunmaktadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)
+ [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)

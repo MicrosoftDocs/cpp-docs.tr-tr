@@ -32,11 +32,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8ade32b1b8ad47fdffd38c5a27ecb6500add00ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 320d08add01fa6ee277c6f1d676b076ded65f377
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vscanfs-vwscanfs"></a>vscanf_s, vwscanf_s
 Standart giriş akışı verileri okuma biçimlendirilmiş. Bu sürümleri [vscanf, vwscanf](../../c-runtime-library/reference/vscanf-vwscanf.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

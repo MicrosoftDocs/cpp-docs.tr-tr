@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59f9122c7d341e3ad6064a2d97b90c4a2ceb22aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 0ce5d9faba3e9dfd7e92cf603f9f6cb9b5f46486
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stackpush-stlclr"></a>stack::push (STL/CLR)
 Yeni bir son öğesi ekler.  
@@ -68,4 +71,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [Stack::POP (STL/CLR)](../dotnet/stack-pop-stl-clr.md)
+ [stack::pop (STL/CLR)](../dotnet/stack-pop-stl-clr.md)

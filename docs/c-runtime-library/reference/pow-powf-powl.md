@@ -44,11 +44,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 43156626c92160003a5ef0d5364b5a006df5141e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 16a0d7beefff97eca04e5f94ab720cda4728935f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 Hesaplar `x` üssünü `y`.  
@@ -154,4 +155,4 @@ int main( void )
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [Günlük, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
  [Sqrt, sqrtf, sqrtl](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)   
- [_Cıpow](../../c-runtime-library/cipow.md)
+ [_CIpow](../../c-runtime-library/cipow.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1d5fdb93880ec29343d38acba7d7d42caf155214
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 8ecdc146610fe20dcc007d6b1223d7108e1ee595
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -163,4 +166,4 @@ if( rsDel.Open( CRecordset::snapshot, strSQL ) )
  [Kayıt kümesi (ODBC)](../../data/odbc/recordset-odbc.md)   
  [Kayıt kümesi: kayıt kümesi (ODBC) yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)   
  [Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)   
- [Kayıt kümesi: bir birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)
+ [Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)

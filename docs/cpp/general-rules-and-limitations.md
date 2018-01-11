@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d7295cfad3d5194de6a80a15e8e186089a0f033f
-ms.sourcegitcommit: ce115fcfb20b4fbc198f0f7b6d0ca3e94d7ce947
+ms.workload: cplusplus
+ms.openlocfilehash: 51f92844e993671a3423c04523ccf4e03f7f7e48
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-rules-and-limitations"></a>Genel Kurallar ve Sınırlamalar
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  

@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 077da64dbcad46357e52e49f9e006e49456615aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d4b522286a727f428cd445bf67d12a1360b49b4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="timing-of-exception-handling-a-summary"></a>Özel Durum İşleme Zamanlaması: Özet
 Sonlandırma işleyicisi, `__try` deyim bloğu nasıl sonlandırılırsa sonlandırılsın yürütülür. Bunun nedenleri, `__try` bloğundan dışarı atlama, denetimi bloğun dışına aktaran bir `longjmp` deyimi ve özel durum işleme nedeniyle yığının geriye doğru izlenmesidir.  
@@ -58,4 +59,4 @@ Sonlandırma işleyicisi, `__try` deyim bloğu nasıl sonlandırılırsa sonland
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+ [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

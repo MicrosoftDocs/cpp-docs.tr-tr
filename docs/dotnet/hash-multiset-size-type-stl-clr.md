@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7023df4ed7684aab49edf455ba04cf91d1ea1a83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 23056cd9e9bb24c5b3ffe57052f90657dcf63d55
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmultisetsizetype-stlclr"></a>hash_multiset::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -75,4 +78,4 @@ end()-begin() = 3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_multiset (STL/CLR)](../dotnet/hash-multiset-stl-clr.md)   
- [hash_multiset::Empty (STL/CLR)](../dotnet/hash-multiset-empty-stl-clr.md)
+ [hash_multiset::empty (STL/CLR)](../dotnet/hash-multiset-empty-stl-clr.md)

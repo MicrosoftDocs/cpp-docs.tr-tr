@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e1f4caa98eecc2a7bcdebe7540b17842ea972725
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 437f83c2a226f7b030e1597bab620dcc6869b312
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="masm-for-x64-ml64exe"></a>x64 (ml64.exe) için (MASM)
 
@@ -53,19 +54,19 @@ Derleyici dil kodunuzu eklediğiniz .asm dosyasında oluşturun. Çözümünüz�
 
 Aşağıdaki ml64 özgü yönergeleri x64 hedefleyen assembler dili kaynak kodunuzda kullanabilirsiniz:  
   
--   [. ALLOCSTACK](../../assembler/masm/dot-allocstack.md)  
+-   [.ALLOCSTACK](../../assembler/masm/dot-allocstack.md)  
   
--   [. ENDPROLOG](../../assembler/masm/dot-endprolog.md)  
+-   [.ENDPROLOG](../../assembler/masm/dot-endprolog.md)  
   
--   [. PUSHFRAME](../../assembler/masm/dot-pushframe.md)  
+-   [.PUSHFRAME](../../assembler/masm/dot-pushframe.md)  
   
--   [. PUSHREG](../../assembler/masm/dot-pushreg.md)  
+-   [.PUSHREG](../../assembler/masm/dot-pushreg.md)  
   
--   [. SAVEREG](../../assembler/masm/dot-savereg.md)  
+-   [.SAVEREG](../../assembler/masm/dot-savereg.md)  
   
--   [. SAVEXMM128](../../assembler/masm/dot-savexmm128.md)  
+-   [.SAVEXMM128](../../assembler/masm/dot-savexmm128.md)  
   
--   [. SETFRAME](../../assembler/masm/dot-setframe.md)  
+-   [.SETFRAME](../../assembler/masm/dot-setframe.md)  
   
 Ayrıca, [PROC](../../assembler/masm/proc.md) yönergesi ml64.exe ile kullanılmak üzere güncelleştirilmiştir.  
   
@@ -92,4 +93,4 @@ mov eax, DWORD PTR [ecx*2+r10+0100h]
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+[Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
