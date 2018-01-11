@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f5ed413ec892ebdf89fc903ac9a9f06e4f2d917a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2ae85dbdab7bb1d72862aa315949821ba5cdb830
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listlist-stlclr"></a>list::list (STL/CLR)
 Bir kapsayıcı nesnesi oluşturur.  
@@ -174,4 +177,4 @@ size() = 0
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::Assign (STL/CLR)](../dotnet/list-assign-stl-clr.md)   
  [List::generic_container (STL/CLR)](../dotnet/list-generic-container-stl-clr.md)   
- [List::operator (STL/CLR) =](../dotnet/list-operator-assign-stl-clr.md)
+ [list::operator= (STL/CLR)](../dotnet/list-operator-assign-stl-clr.md)

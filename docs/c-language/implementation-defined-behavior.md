@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1fda4b8a6c530d494640d486227d3bdda25ea728
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 51587ea864faa11372fc07fd4e1e0b1d7333aaaf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementation-defined-behavior"></a>Uygulama Tanımlı Davranış
 ANSI X3.159-1989, *Amerikan Ulusal standardı bilgi Systems* - *programlama dili* - *C*, adlı bir bölüm içerir "Taşınabilirlik sorunlarını." ANSI bölüm ANSI her belirli bir uygulamaya açık bırakır C dil alanlarının listeler. Bu bölümde, Microsoft C bu uygulama tanımlı alanlar C dilinin nasıl işlediği açıklanmıştır.  

@@ -24,11 +24,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dbcd92697ebdf5a0db0581c4f4a5925b7fa542a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 15a760d1a9df383356ead2eb2d1e1b08e8b9ca57
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="oy-frame-pointer-omission"></a>/Oy (Çerçeve İşaretçisini Atlama)
 
@@ -70,4 +71,4 @@ Belirleyebileceğiniz kodunuzu EBP tabanlı adresleme gerektiriyorsa, **/Oy-** s
 
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
 
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

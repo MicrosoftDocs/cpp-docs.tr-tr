@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4ef6553fa3a773a9177db520603d9e2dea43adba
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bb37e6aa3b43bcf1fdd99f3286962749fbdf12fa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isunion-class"></a>is_union Sınıfı
 Testleri UNION türüdür.  
@@ -86,4 +87,4 @@ is_union<ints> == true
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_class sınıfı](../standard-library/is-class-class.md)
+ [is_class Sınıfı](../standard-library/is-class-class.md)

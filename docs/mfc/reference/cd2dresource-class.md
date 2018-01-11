@@ -33,11 +33,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9f178d16878955ba46670169c46ee5ca9edcde30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2cc6b80803cbddcbd05655a8f9620c102aef3e9c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cd2dresource-class"></a>CD2DResource sınıfı
 Bir soyut sınıf oluşturmak ve Fırçalar, Katmanlar ve metinler gibi D2D kaynakları yönetmek için bir arabirim sağlar.  
@@ -180,4 +181,4 @@ virtual HRESULT ReCreate(CRenderTarget* pRenderTarget);
  Yöntem başarılı olursa, S_OK verir. Aksi takdirde, HRESULT hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 80f8c8c6aa9c96338e37d9d709dd61337ccfae73
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ac58735947f7586d3929b4ada6da3e1988b94c9d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3183"></a>Derleyici Hatası C3183
 adlandırılmamış sınıf, yapı veya birleşim tanımlayamazsınız içinde yönetilen veya WinRT ' type'  

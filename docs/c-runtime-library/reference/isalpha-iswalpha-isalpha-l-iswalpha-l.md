@@ -49,11 +49,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e93b18a5fc29f74ba9ea9fb990d4a7a0715872b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d7ef7443a37d8d68b40f47f3eacfee8bac2626a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isalpha-iswalpha-isalphal-iswalphal"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 Tamsayı alfabetik bir karakter temsil edip etmediğini belirler.  
@@ -112,4 +113,4 @@ int _iswalpha_l(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
  [Yerel ayar](../../c-runtime-library/locale.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)
+ [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)

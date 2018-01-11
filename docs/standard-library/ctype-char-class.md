@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2a48b64b60887e5a6ba627a3ca25b77d32c05778
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d7e1fdc3a37abec334cccfe5a62954210e6e4a30
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctypeltchargt-class"></a>CType&lt;char&gt; sınıfı
 Bir şablon sınıfı açık alt uzmanlaşması sınıftır **ctype\<CharType**> yazmak için `char`, çeşitli özelliklerini bir karakter türü nitelemek için yerel ayar model hizmet verebilir nesneyi açıklayan `char`.  
@@ -151,5 +152,5 @@ protected:
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [facet sınıfı](http://msdn.microsoft.com/Library/dd4f12f5-cb1b-457f-af56-2fb204216ec1)   
  [ctype_base sınıfı](../standard-library/ctype-base-class.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

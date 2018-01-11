@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b141efa2ffa7d382278365101fca25b66ea25614
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 628a1263a93c6dea642429480f4b77b8347016f3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="upgrading-projects-from-earlier-versions-of-visual-c"></a>Önceki Visual C++ Sürümü Projelerini Yükseltme
 Çoğu durumda, Visual Studio'nun önceki bir sürümde oluşturulmuş bir proje açabilirsiniz. Ancak, Visual Studio bunu yapabilmek için projeyi yükseltir. Bu yükseltilmiş projeyi kaydederseniz önceki sürümde açılamaz.  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/24/2017
  Güncelleştirme hedeflenen Windows sürümleri hakkında daha fazla bilgi için bkz: [değiştirme WINVER ve _WIN32_WINNT](../porting/modifying-winver-and-win32-winnt.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme sistemi değişiklikleri](../build/build-system-changes.md)  
+ [Derleme Sistemi Değişiklikleri](../build/build-system-changes.md)  
  [Visual Studio 2017'de Visual C++ için Yenilikler](../what-s-new-for-visual-cpp-in-visual-studio.md) [Visual C++ değişiklik geçmişini 2003 2015](../porting/visual-cpp-change-history-2003-2015.md)   
- [Standart olmayan davranış](../cpp/nonstandard-behavior.md)
+ [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)

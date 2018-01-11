@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b6bd889a20c2c31de8e5fb6d11990fc2579ef2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9df1e5d7559b434c1af0f1feff3b73b8141a8865
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ftmbasemarshalinterface-method"></a>FtmBase::MarshalInterface Metodu
 Bazı istemci işleminde proxy nesneyi başlatmak için gerekli olan veriler bir akışa yazar.  
@@ -79,4 +82,4 @@ STDMETHODIMP MarshalInterface(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase sınıfı](../windows/ftmbase-class.md)
+ [FtmBase Sınıfı](../windows/ftmbase-class.md)

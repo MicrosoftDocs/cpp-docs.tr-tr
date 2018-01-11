@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 774d7398e871de88540856d9ced6a44f037b648e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e3ea32a33a3194282657999712effbad0e334bea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede bir C/C++ uygulaması neden başarısız yüklemek için bazı genel nedenleri ve sorunlarını gidermeye yönelik adımlar önerir.  
@@ -110,4 +111,4 @@ C/C++ uygulama yükleme başarısız olabilir bağımlı kitaplıkları bulunama
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yalıtılmış uygulamalar ve yan yana derlemeler kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+ [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

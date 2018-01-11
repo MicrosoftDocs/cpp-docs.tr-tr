@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1ffbffede067a34c737216a95351f097ca0eed7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc61b0bb9e1df702424c2e95d3d4ef3b2186dea0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-clistctrl"></a>CListCtrl Kullanma
 Tüm simgeleri düzenleme dosya Gezgini veya sütun listesi ile veya olmadan simgeleri metin olduğu gibi etiketlerle görüntülemek için bir liste denetimini kullanın. Dört olası "Görünüm" (MFC görünümlerle kafası olarak değil) bir açıklaması için bir liste denetiminde olabilir — simge görünümü, küçük simge görünümü, liste görünümü ve rapor görünümü — görünümlerde bkz [CListCtrl](../mfc/reference/clistctrl-class.md) sınıfına genel bakış.  
@@ -33,32 +34,32 @@ Tüm simgeleri düzenleme dosya Gezgini veya sütun listesi ile veya olmadan sim
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Liste denetimi ve liste görünümü](../mfc/list-control-and-list-view.md)  
+-   [Liste Denetimi ve Liste Görünümü](../mfc/list-control-and-list-view.md)  
   
--   [Liste öğeleri ve görüntü listeleri](../mfc/list-items-and-image-lists.md)  
+-   [Liste Öğeleri ve Görüntü Listeleri](../mfc/list-items-and-image-lists.md)  
   
--   [Geri çağrı öğeleri ve geri çağrı maskesi](../mfc/callback-items-and-the-callback-mask.md)  
+-   [Geri Çağrı Öğeleri ve Geri Çağrı Maskesi](../mfc/callback-items-and-the-callback-mask.md)  
   
--   [Liste denetimi oluşturma](../mfc/creating-the-list-control.md)  
+-   [Liste Denetimi Oluşturma](../mfc/creating-the-list-control.md)  
   
--   [Görüntü listeleri oluşturma](../mfc/creating-the-image-lists.md)  
+-   [Görüntü Listelerini Oluşturma](../mfc/creating-the-image-lists.md)  
   
--   [(Rapor görünümü) denetimine sütunlar ekleme](../mfc/adding-columns-to-the-control-report-view.md)  
+-   [Denetime Sütun Ekleme (Rapor Görünümü)](../mfc/adding-columns-to-the-control-report-view.md)  
   
--   [Denetime öğe ekleme](../mfc/adding-items-to-the-control.md)  
+-   [Denetime Öğe Ekleme](../mfc/adding-items-to-the-control.md)  
   
--   [Kaydırma, düzenleme, sıralama ve liste denetimlerinde bulma](../mfc/scrolling-arranging-sorting-and-finding-in-list-controls.md)  
+-   [Liste Denetimlerinde Kaydırma, Düzenleme Sıralama ve Bulma](../mfc/scrolling-arranging-sorting-and-finding-in-list-controls.md)  
   
--   [Liste denetimlerinde çalışma alanlarını uygulama](../mfc/implementing-working-areas-in-list-controls.md)  
+-   [Liste Denetimlerinde Çalışma Alanlarını Uygulama](../mfc/implementing-working-areas-in-list-controls.md)  
   
--   [Liste denetimlerinde bildirim iletilerini işleme](../mfc/processing-notification-messages-in-list-controls.md)  
+-   [Liste Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-list-controls.md)  
   
--   [Liste Denetim stillerini değiştirme](../mfc/changing-list-control-styles.md)  
+-   [Liste Denetim Stillerini Değiştirme](../mfc/changing-list-control-styles.md)  
   
--   [Sanal liste denetimleri](../mfc/virtual-list-controls.md)  
+-   [Sanal Liste Denetimleri](../mfc/virtual-list-controls.md)  
   
--   [Listesi denetimini yok etme](../mfc/destroying-the-list-control.md)  
+-   [Listesi Denetimini Yok Etme](../mfc/destroying-the-list-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

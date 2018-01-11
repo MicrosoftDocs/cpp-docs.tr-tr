@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ce36666b93823db13c455bcdefd2182a87267df1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 499b665bcf69c0077f5f587e66941cba468650a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="uppercase-and-lowercase"></a>Büyük Harf ve Küçük Harf
 **ANSI 3.1.2** büyük farklılıklar önemli olup olmadığı  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  Microsoft bağlayıcı büyük küçük harfe duyarlıdır. Tutarlı bir şekilde çalışması göre tüm tanımlayıcılar belirtmeniz gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tanımlayıcıların davranışı](../c-language/behavior-of-identifiers.md)
+ [Tanımlayıcıların Davranışı](../c-language/behavior-of-identifiers.md)

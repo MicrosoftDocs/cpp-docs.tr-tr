@@ -31,11 +31,12 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.openlocfilehash: ce91279c4504e9373a151286167f36d3b3439cbc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1de870da42504494e672cff4272fd230d1346114
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="future-class"></a>future Sınıfı
 Açıklayan bir *zaman uyumsuz dönüş nesnesi*.  
@@ -62,7 +63,7 @@ class future;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Al](#get)|İlişkili zaman uyumsuz durumunda depolanan sonucu alır.|  
+|[get](#get)|İlişkili zaman uyumsuz durumunda depolanan sonucu alır.|  
 |[Paylaş](#share)|Nesnesine dönüştürür bir `shared_future`.|  
 |[Geçerli](#valid)|Nesne boş değil olup olmadığını belirtir.|  
 |[bekleme](#wait)|Zaman uyumsuz işlemin ilişkili durumu hazır olana kadar geçerli iş parçacığının engeller.|  

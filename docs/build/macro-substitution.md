@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d8e63e071629c2647ccd8f89095fbc7c2285f1a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c2ea7a2509e58cfd4da163cc76c018d06c244fc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="macro-substitution"></a>Makro Değiştirme
 Zaman *makroadı* çağrılır, her oluşumu *Dize1* , tanımında dize ile değiştirilir *dize2*.  
@@ -38,4 +39,4 @@ $(macroname:string1=string2)
  Hiçbir boşluk ya da sekme iki nokta üst üste koyun; herhangi iki nokta üst üste sonra sabit değer olarak yorumlanır. Varsa *dize2* null, tüm oluşumlarını olan *Dize1* makro tanımı dizeden silinir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE makrosu kullanma](../build/using-an-nmake-macro.md)
+ [NMAKE Makrosu Kullanma](../build/using-an-nmake-macro.md)

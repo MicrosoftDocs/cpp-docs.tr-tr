@@ -17,11 +17,14 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 531088a36fb5e71517d1e1abd6fde8ffb2b18fe9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: bb8a8b7ea695d878235898a8741adf04ba91748c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sealed--c-component-extensions"></a>mühürlü (C++ Bileşen Uzantıları)
 `sealed`Sanal üyesi geçersiz kılınamaz ya da bir tür bir taban türü kullanılamaz gösteren bir bağlama duyarlı anahtar sözcüğü ref sınıfları için adıdır.  
@@ -141,4 +144,4 @@ public:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

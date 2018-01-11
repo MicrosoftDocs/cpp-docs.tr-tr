@@ -27,11 +27,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 729d46f1e228127b712e1533c7eab5976f690663
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3764eb29cc46ec7b6159456131dde1024b187f61
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-class-specifiers-for-external-level-declarations"></a>Dış Düzey Bildirimleri Depolama Sınıfı Tanımlayıcıları
 Dış değişkenler dosya kapsamında değişkenlerdir. Dışında herhangi bir işlev tanımlanır ve birçok işlevini potansiyel olarak kullanılabilir. İşlevler yalnızca dış düzeyinde tanımlanabilir ve bu nedenle, iç içe olamaz. Varsayılan olarak, dış değişkenleri ve işlevleri aynı ada sahip yapılan tüm başvuruları "dış bağlantı." sahip oldukları anlamına gelir aynı nesne başvuruları etkilenir. (Kullanabileceğiniz **statik** bu geçersiz kılma anahtar sözcüğü. Daha sonra daha fazla ayrıntı için bu bölümdeki bilgileri görebilirsiniz **statik**.)  
@@ -134,4 +135,4 @@ int x = 0;
  Varsa değişkeni `i` değil olsaydı başlatılmadığı, onu 0'a otomatik olarak ayarlanacak. Bu durumda, 1, 2 ve 3 değerlerini yazdırılan. Bkz: [başlatma](../c-language/initialization.md) değişken başlatma hakkında bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C depolama sınıfları](../c-language/c-storage-classes.md)
+ [C Depolama Sınıfları](../c-language/c-storage-classes.md)

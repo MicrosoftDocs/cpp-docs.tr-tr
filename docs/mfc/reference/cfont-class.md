@@ -31,11 +31,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65c1fd6d86c153881f8674732db2b61edcfab8cc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5431461c7c2cc33131f72f059edcfbd984eae5fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cfont-class"></a>CFont sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) yazı tipi yalıtır ve yazı tipi yönlendirmek için üye işlevleri sağlar.  
@@ -330,7 +331,7 @@ operator HFONT() const;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   
  [CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

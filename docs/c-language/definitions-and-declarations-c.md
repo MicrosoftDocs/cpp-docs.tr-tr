@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5800c18dd9a765aa85a8af90110c8ce32dc48174
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4886ee6a8bce115c2f7676124477ec81e71b16d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="definitions-and-declarations-c"></a>Bildirimler ve Tanımlar (C)
 **Microsoft özel**  
@@ -67,4 +68,4 @@ Dllimport int j;          /* a declaration. */
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL içeri ve dışarı aktarma işlevleri](../c-language/dll-import-and-export-functions.md)
+ [DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)

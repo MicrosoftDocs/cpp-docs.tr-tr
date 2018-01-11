@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f263673e6b325557694b26b1fd71e86c22029d05
-ms.sourcegitcommit: 78f3f8208d49b7c1d87f4240f4a1496b7c29333e
+ms.workload: cplusplus
+ms.openlocfilehash: 6882804d1ddf2e4f83947e310cde4c8c114120d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2429"></a>Derleyici Hatası C2429
 

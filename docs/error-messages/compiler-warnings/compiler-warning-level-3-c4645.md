@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c327aa47f46ffa7d7533d818d5140fdc5a5933af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e27ecf588ed8c6b581e0ac6d29b29108fd33b8b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-3-c4645"></a>Derleyici Uyarısı (Düzey 3) C4645
 __declspec(noreturn) ile bildirilen işlevi bir dönüş ifadesi içeriyor  

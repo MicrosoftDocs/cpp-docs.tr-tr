@@ -30,11 +30,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5815e377dd685cbab285608441c39d9d99ac1726
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9834a3ee67d49651de703a54660767604e067b25
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 Bir `unbounded_buffer` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` sınırsız bir ileti sayısı depolama yeteneği.  
   
@@ -355,6 +356,6 @@ unbounded_buffer(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [overwrite_buffer sınıfı](overwrite-buffer-class.md)   
- [single_assignment sınıfı](single-assignment-class.md)
+ [single_assignment Sınıfı](single-assignment-class.md)
 
 

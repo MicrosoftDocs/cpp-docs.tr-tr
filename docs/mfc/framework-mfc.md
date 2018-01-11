@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 09be7a5efbf3f78aa3cbc1862b811fff3d487c75
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c021b11809b3e6598e694fdaa46b7f829358e24f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="framework-mfc"></a>Framework (MFC)
 Çalışmanızı Microsoft Foundation Class (MFC) kitaplığı framework ile büyük ölçüde birkaç önemli sınıfları ve birkaç Visual C++ Araçları dayanır. Bazı sınıfları Win32 uygulama programlama arabirimi (API) büyük bir kısmı kapsüller. Diğer sınıfları belgeler, görünümler ve uygulama gibi uygulama kavramlarını kapsüller. Hala başkalarının OLE özellikleri ve ODBC ve DAO veri erişimi işlevselliği kapsüller.  
@@ -39,22 +40,22 @@ ms.lasthandoff: 10/24/2017
 ## <a name="in-this-section"></a>Bu Bölümde  
  [SDI ve MDI](../mfc/sdi-and-mdi.md)  
   
- [Belgeler, görünümler ve çerçeve](../mfc/documents-views-and-the-framework.md)  
+ [Belgeler, Görünümler ve Çerçeve](../mfc/documents-views-and-the-framework.md)  
   
  [Sihirbazlar ve kaynak düzenleyicileri](../mfc/wizards-and-the-resource-editors.md)  
   
 ## <a name="in-related-sections"></a>İçinde ilgili bölümler  
- [Framework'te derleme](../mfc/building-on-the-framework.md)  
+ [Framework'te Derleme](../mfc/building-on-the-framework.md)  
   
- [Framework kodunuzu çağırması](../mfc/how-the-framework-calls-your-code.md)  
+ [Framework'ün Kodunuzu Çağırması](../mfc/how-the-framework-calls-your-code.md)  
   
- [CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)  
+ [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)  
   
  [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)  
   
- [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)  
+ [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)  
   
- [Pencere nesneleri](../mfc/window-objects.md)  
+ [Pencere Nesneleri](../mfc/window-objects.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows uygulamaları yazmak için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)
+ [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

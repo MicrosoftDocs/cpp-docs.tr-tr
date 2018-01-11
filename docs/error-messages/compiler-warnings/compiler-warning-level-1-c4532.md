@@ -15,22 +15,23 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5cec2f70dfa6781c237cc1c08079904c7b48e171
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44aae61190b20bf1ef93b586c02e88837d487324
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4532"></a>Derleyici Uyarısı (düzey 1) C4532
 'Devam': atlama __finally/finally bloğu dışında davranış sonlandırma işleme sırasında tanımlanmamış  
   
  Derleyici şu anahtar sözcüklerden biri karşılaştı:  
   
--   [devam etmek](../../cpp/continue-statement-cpp.md)  
+-   [continue](../../cpp/continue-statement-cpp.md)  
   
--   [sonu](../../cpp/break-statement-cpp.md)  
+-   [break](../../cpp/break-statement-cpp.md)  
   
--   [Git](../../cpp/goto-statement-cpp.md)  
+-   [goto](../../cpp/goto-statement-cpp.md)  
   
  dışında bir atlama neden bir [__finally](../../cpp/try-finally-statement.md) veya [son](../../dotnet/finally.md) anormal sonlandırma sırasında bloğu.  
   

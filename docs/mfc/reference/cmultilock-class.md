@@ -25,11 +25,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d90e9898d830dd9468e51ca615f5d25417ed2f01
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dc3c391c624351b2835e1ec497d78bc191eb1fe7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 Birden çok iş parçacıklı programda kaynaklara erişimi denetlemek kullanılan erişim denetim mekanizmasını temsil eder.  
@@ -182,7 +183,7 @@ BOOL Unlock(
  İlk biçimini `Unlock` tarafından yönetilen eşitleme nesnenin kilidini açma girişiminde `CMultiLock`. İkinci biçiminde `Unlock` kilidini açma girişiminde `CSemaphore` tarafından sahip olunan nesneler `CMultiLock`. Varsa `CMultiLock` herhangi kendisine değil kilitli `CSemaphore` nesnesi, işlevi döndürür **FALSE**; Aksi takdirde döndürdüğü **TRUE**. `lCount`ve `lpPrevCount` parametrelerinin tam olarak aynıdır [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock). İkinci biçiminde `Unlock` nadiren multilock durumlar için geçerlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

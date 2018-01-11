@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d775d1f27be328a27e9b4bc843e1780a8efb02ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 75b07973b1410c7f8bbaa527876efa9b9f1481a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="processing-notification-messages-in-month-calendar-controls"></a>Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme
 Kullanıcı denetimi (tarihleri seçme ve/veya farklı bir ay görüntüleme), aylık takvim denetiminin ile etkileşimli olarak (`CMonthCalCtrl`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı görüntülemek için yeni bir ayın seçtiğinde vurgulanmış tarih kümesini sağlayabilir.  
@@ -40,5 +41,5 @@ Kullanıcı denetimi (tarihleri seçme ve/veya farklı bir ay görüntüleme), a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CMonthCalCtrl kullanma](../mfc/using-cmonthcalctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

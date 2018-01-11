@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8732b9deaf1da2e27b8f95aed63d09e9f4c41dec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a519b4241c9ffabaeeb387cc8e4997125d57781
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk2031"></a>Bağlayıcı Araçları Hatası LNK2031
 p/Invoke "function_declaration" decorated_name için; oluşturulamıyor Meta veriler eksik çağırma  

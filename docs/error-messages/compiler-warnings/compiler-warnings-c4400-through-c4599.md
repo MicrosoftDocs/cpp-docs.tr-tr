@@ -1,6 +1,6 @@
 ---
 title: "Derleyici uyarıları C4400 C4599 aracılığıyla | Microsoft Docs"
-ms.date: 10/25/2017
+ms.date: 11/17/2017
 ms.technology: cpp-tools
 ms.topic: error-reference
 f1_keywords:
@@ -132,22 +132,20 @@ ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 580f47f53d84cfba5aa55916bb88c8764c63553a
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 44b0c76c6aba144229923a969cf3da026de54201
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarıları C4400 C4599 aracılığıyla
 
-Bu bölümü belgelerin makalelerinde Visual C++ derleyici uyarıları, bir alt hakkında bilgiler içerir. Burada yer alan bilgiler erişebilir veya **çıkış** penceresi Visual Studio'da bir uyarı numarasını seçin ve ardından F1 tuşuna belirtin.
+Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı iletilerini kümesini açıklayın.
 
-> [!NOTE]
-> Her [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] hata veya uyarı MSDN içinde belgelenmiştir. Çoğu durumda, tanılama iletisinin tüm kullanılabilir bilgileri sağlar. Bir hata iletisi düşünüyorsanız, ek açıklama, bize bildirin gerekir. Bilgisayarınıza bu sayfadaki geri bildirim formu kullanın veya Visual Studio menü çubuğunda gidin ve seçebilirsiniz **yardımcı**, **bir hata raporu**, veya üzerinde bir öneri veya hata raporu gönderebilirsiniz [Microsoft Connect](http://connect.microsoft.com/VisualStudio).
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Visual C++ dili](http://go.microsoft.com/fwlink/?LinkId=158195) forumudur sorular ve tartışmaları hakkında [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] dili sözdizimi ve derleyicisi. [Visual C++ genel](http://go.microsoft.com/fwlink/?LinkId=158194) Forumu hakkında sorular için olan [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] , değil tartışılır diğer forumlarda. Üzerinde hataları ve Uyarıları hakkında Yardım bulabilirsiniz [yığın taşması](http://stackoverflow.com/).
-
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="warning-messages"></a>Uyarı iletileri
 
 |Uyarı|İleti|
 |-------------|-------------|
@@ -156,7 +154,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4401](../../error-messages/compiler-warnings/compiler-warning-level-1-c4401.md)|'*saklayıcısında*': üyesidir bit alanı|
 |[Derleyici Uyarısı (düzey 1) C4402](../../error-messages/compiler-warnings/compiler-warning-level-1-c4402.md)|PTR işleci kullanmanız gerekir|
 |[Derleyici Uyarısı (düzey 1) C4403](../../error-messages/compiler-warnings/compiler-warning-level-1-c4403.md)|Geçersiz PTR işleci|
-|[Derleyici Uyarısı (Düzey 3) C4404](../../error-messages/compiler-warnings/compiler-warning-level-3-c4404.md)|dönemi göz ardı yönergesi|
+|[Derleyici Uyarısı (düzey 3) C4404](../../error-messages/compiler-warnings/compiler-warning-level-3-c4404.md)|dönemi göz ardı yönergesi|
 |[Derleyici Uyarısı (düzey 1) C4405](../../error-messages/compiler-warnings/compiler-warning-level-1-c4405.md)|'*tanımlayıcısı*': tanımlayıcısıdır ayrılmış sözcük|
 |[Derleyici Uyarısı (düzey 1) C4406](../../error-messages/compiler-warnings/compiler-warning-level-1-c4406.md)|işlenen üzerinde göz ardı yönergesi|
 |[Derleyici Uyarısı (düzey 1) C4407](../../error-messages/compiler-warnings/compiler-warning-level-1-c4407.md)|üye Beyanları farklı işaretçi arasında cast, derleyici yanlış kod oluşturabilirsiniz|
@@ -164,9 +162,9 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4409](../../error-messages/compiler-warnings/compiler-warning-level-1-c4409.md)|Geçersiz yönerge boyutu|
 |[Derleyici Uyarısı (düzey 1) C4410](../../error-messages/compiler-warnings/compiler-warning-level-1-c4410.md)|işlenen geçersiz boyutu|
 |[Derleyici Uyarısı (düzey 1) C4411](../../error-messages/compiler-warnings/compiler-warning-level-1-c4411.md)|'*tanımlayıcısı*': sembol öteleme kasaya çözümler|
-|[Derleyici Uyarısı (Düzey 2) C4412'yi](../../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md)|'*işlevi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.|
+|[Derleyici Uyarısı (düzey 2) C4412](../../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md)|'*işlevi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.|
 |C4413 uyarı derleyici|'classname::member': başvuru üyesi Oluşturucusu çıktıktan sonra kalmıyor geçici bir başlatıldı|
-|[Derleyici Uyarısı (Düzey 3) C4414](../../error-messages/compiler-warnings/compiler-warning-level-3-c4414.md)|'*işlevi*': yakınında dönüştürülür kısa atlama işlevi|
+|[Derleyici Uyarısı (düzey 3) C4414](../../error-messages/compiler-warnings/compiler-warning-level-3-c4414.md)|'*işlevi*': yakınında dönüştürülür kısa atlama işlevi|
 |Derleyici Uyarısı (düzey 1) C4415|Yinelenen __declspec (code_seg ('*adı*'))|
 |Derleyici Uyarısı (düzey 1) C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4417|bir açık şablonu örneklemesi __declspec(code_seg(...)) olamaz: yoksayıldı|
@@ -239,7 +237,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4508](../../error-messages/compiler-warnings/compiler-warning-level-1-c4508.md)|'*işlevi*': işlevi; bir değer döndürmesi gerekir 'void' dönüş türü varsayılır|
 |C4509 uyarı derleyici|kullanılan standart olmayan uzantısı: '*işlevi*' SEH kullanır ve '*nesne*' yıkıcı sahip|
 |[Derleyici Uyarısı (düzey 4) C4510](../../error-messages/compiler-warnings/compiler-warning-level-4-c4510.md)|'*sınıfı*': varsayılan oluşturucu silindi olarak örtük olarak tanımlanmıştı|
-|[Derleyici Uyarısı (Düzey 3) C4511](../../error-messages/compiler-warnings/compiler-warning-level-3-c4511.md)|'*sınıfı*': kopya Oluşturucu silindi olarak örtük olarak tanımlanmıştı|
+|[Derleyici Uyarısı (düzey 3) C4511](../../error-messages/compiler-warnings/compiler-warning-level-3-c4511.md)|'*sınıfı*': kopya Oluşturucu silindi olarak örtük olarak tanımlanmıştı|
 |[Derleyici Uyarısı (düzey 4) C4512](../../error-messages/compiler-warnings/compiler-warning-level-4-c4512.md)|'*sınıfı*': atama işleci silindi olarak örtük olarak tanımlanmıştı|
 |[Derleyici Uyarısı (düzey 4) C4513](../../error-messages/compiler-warnings/compiler-warning-level-4-c4513.md)|'*sınıfı*': yıkıcı silindi olarak örtük olarak tanımlanmıştı|
 |[Derleyici Uyarısı (düzey 4) C4514](../../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md)|'*işlevi*': başvurulmayan satır içi işlev kaldırıldı|
@@ -248,23 +246,23 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 4) C4517](../../error-messages/compiler-warnings/compiler-warning-level-4-c4517.md)|erişim bildirimleri kullanım dışıdır; üye kullanarak bildirimleri daha iyi bir alternatif sunar|
 |[Derleyici Uyarısı (düzey 1) C4518](../../error-messages/compiler-warnings/compiler-warning-level-1-c4518.md)|'*belirticisi*': depolama sınıfı veya türü specifier(s) beklenmeyen burada; yoksayıldı|
 |Derleyici Uyarısı (hata) C4519|Varsayılan şablon bağımsız değişken yalnızca bir sınıf şablonunu temel izin verilir|
-|[Derleyici Uyarısı (Düzey 3) C4521](../../error-messages/compiler-warnings/compiler-warning-level-3-c4521.md)|'*sınıfı*': belirtilen birden çok kopya oluşturucuları|
-|[Derleyici Uyarısı (Düzey 3) C4522](../../error-messages/compiler-warnings/compiler-warning-level-3-c4522.md)|'*sınıfı*': belirtilen birden çok atama işleçleri|
-|[Derleyici Uyarısı (Düzey 3) C4523](../../error-messages/compiler-warnings/compiler-warning-level-3-c4523.md)|'*sınıfı*': belirtilen birden çok Yıkıcılar|
+|[Derleyici Uyarısı (düzey 3) C4521](../../error-messages/compiler-warnings/compiler-warning-level-3-c4521.md)|'*sınıfı*': belirtilen birden çok kopya oluşturucuları|
+|[Derleyici Uyarısı (düzey 3) C4522](../../error-messages/compiler-warnings/compiler-warning-level-3-c4522.md)|'*sınıfı*': belirtilen birden çok atama işleçleri|
+|[Derleyici Uyarısı (düzey 3) C4523](../../error-messages/compiler-warnings/compiler-warning-level-3-c4523.md)|'*sınıfı*': belirtilen birden çok Yıkıcılar|
 |[Derleyici Uyarısı (düzey 1) C4526](../../error-messages/compiler-warnings/compiler-warning-level-1-c4526.md)|'*işlevi*': statik üye işlevi sanal işlevi geçersiz kılma olamaz '*sanal işlev*' göz ardı, geçersiz kılma sanal işlev gizli|
 |[Derleyici Uyarısı (düzey 1) C4530](../../error-messages/compiler-warnings/compiler-warning-level-1-c4530.md)|C++ özel durum işleyici olarak kullanılır, ancak semantiği bırakma etkin değil. /EHsc belirtin|
 |Derleyici Uyarısı (düzey 1) C4531|C++ özel durum işleme Windows CE mevcut değil. Yapılandırılmış özel durum işleme kullanın|
 |[Derleyici Uyarısı (düzey 1) C4532](../../error-messages/compiler-warnings/compiler-warning-level-1-c4532.md)|'Devam': ' __finally/finally' bloğunun dışında atlama davranışı sonlandırma işleme sırasında tanımlanmamış|
 |[Derleyici Uyarısı (düzey 1) C4533](../../error-messages/compiler-warnings/compiler-warning-level-1-c4533.md)|Başlatma '*değişkeni*'tarafından Atlanan'*goto etiket*'|
-|[Derleyici Uyarısı (Düzey 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'*Oluşturucusu*'' sınıfı/struct' için varsayılan bir oluşturucu olmaz'*tanımlayıcısı*' varsayılan bağımsız değişkeni nedeniyle|
-|[Derleyici Uyarısı (Düzey 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|Arama _set_se_translator() /EHa gerektirir|
+|[Derleyici Uyarısı (düzey 3) C4534](../../error-messages/compiler-warnings/compiler-warning-level-3-c4534.md)|'*Oluşturucusu*'' sınıfı/struct' için varsayılan bir oluşturucu olmaz'*tanımlayıcısı*' varsayılan bağımsız değişkeni nedeniyle|
+|[Derleyici Uyarısı (düzey 3) C4535](../../error-messages/compiler-warnings/compiler-warning-level-3-c4535.md)|Arama _set_se_translator() /EHa gerektirir|
 |[Derleyici Uyarısı (düzey 4) C4536](../../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md)|'*typename*': tür adı meta veri sınırını aşan '*character_limit*' karakter|
 |[Derleyici Uyarısı (düzey 1) C4537](../../error-messages/compiler-warnings/compiler-warning-level-1-c4537.md)|'*nesne*': '.'UDT olmayan türüne uygulanacağını|
-|[Derleyici Uyarısı (Düzey 3) C4538](../../error-messages/compiler-warnings/compiler-warning-level-3-c4538.md)|'*türü*': const/volatile niteleyicileri bu türü desteklenmiyor|
+|[Derleyici Uyarısı (düzey 3) C4538](../../error-messages/compiler-warnings/compiler-warning-level-3-c4538.md)|'*türü*': const/volatile niteleyicileri bu türü desteklenmiyor|
 |[Derleyici Uyarısı (düzey 1) C4540](../../error-messages/compiler-warnings/compiler-warning-level-1-c4540.md)|dynamic_cast erişilemez ya da belirsiz tabanına dönüştürmek için kullanılan; çalışma zamanı test başarısız olur ('*type1*'to'*type2*')|
 |[Derleyici Uyarısı (düzey 1) C4541](../../error-messages/compiler-warnings/compiler-warning-level-1-c4541.md)|'*tanımlayıcısı*'biçimli türünde kullanılan'*türü*' /GR-ile; beklenmeyen davranışlara neden olabilir|
 |Derleyici Uyarısı (düzey 1) C4542|Birleştirilmiş eklenen metin dosyası oluşturma atlanıyor yazamıyor *dosya türü* dosya: '*sorunu*': *iletisi*|
-|[Derleyici Uyarısı (Düzey 3) C4543](../../error-messages/compiler-warnings/compiler-warning-level-3-c4543.md)|Eklenen metin özniteliği tarafından gizlenen ' hiçbir\_injected_text'|
+|[Derleyici Uyarısı (düzey 3) C4543](../../error-messages/compiler-warnings/compiler-warning-level-3-c4543.md)|Eklenen metin özniteliği tarafından gizlenen ' hiçbir\_injected_text'|
 |[Derleyici Uyarısı (düzey 1) C4544](../../error-messages/compiler-warnings/compiler-warning-level-1-c4544.md)|'*bildirimi*': varsayılan bu şablonu bildiriminde göz ardı şablon bağımsız değişken|
 |[Derleyici Uyarısı (düzey 1) C4545](../../error-messages/compiler-warnings/compiler-warning-level-1-c4545.md)|virgülden önceki ifade bir bağımsız değişken listesi olmayan bir işlev olarak değerleniyor|
 |[Derleyici Uyarısı (düzey 1) C4546](../../error-messages/compiler-warnings/compiler-warning-level-1-c4546.md)|virgülden önceki işlev çağrısında bağımsız değişken listesi eksik|
@@ -278,7 +276,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (Düzey 3) C4554](../../error-messages/compiler-warnings/compiler-warning-level-3-c4554.md) C4554|'*işleci*': öncelik açıklamak için ayraç kullanın; İşleç önceliği olası hata denetimi|
 |[Derleyici Uyarısı (düzey 1) C4555](../../error-messages/compiler-warnings/compiler-warning-level-1-c4555.md)|ifadenin etkisi yok; yan etkisi olan ifade bekleniyordu|
 |[Derleyici Uyarısı (düzey 1) C4556](../../error-messages/compiler-warnings/compiler-warning-level-1-c4556.md)|İç hemen bağımsız değişkeninin değeri '*değeri*'aralık dışında olduğundan'*lower_bound* - *upper_bound*'|
-|[Derleyici Uyarısı (Düzey 3) C4557](../../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md)|'__assume' içeren etkisi '*etkisi*'|
+|[Derleyici Uyarısı (düzey 3) C4557](../../error-messages/compiler-warnings/compiler-warning-level-3-c4557.md)|'__assume' içeren etkisi '*etkisi*'|
 |[Derleyici Uyarısı (düzey 1) C4558](../../error-messages/compiler-warnings/compiler-warning-level-1-c4558.md)|işlenen değerini '*değeri*'aralık dışında olduğundan'*lower_bound* - *upper_bound*'|
 |[Derleyici Uyarısı (düzey 4) C4559](../../error-messages/compiler-warnings/compiler-warning-level-4-c4559.md)|'*işlevi*': şemadaki; işlevi kazançlar __declspec(modifier)|
 |[Derleyici Uyarısı (düzey 1) C4561](../../error-messages/compiler-warnings/compiler-warning-level-1-c4561.md)|'__fastcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' dönüştürme|
@@ -288,7 +286,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4566](../../error-messages/compiler-warnings/compiler-warning-level-1-c4566.md)|evrensel karakter-adı tarafından temsil edilen karakter '*char*' geçerli kod sayfası gösterilemez (*numarası*)|
 |Derleyici Uyarısı (düzey 1) C4568|'*işlevi*': hiçbir üye açık geçersiz kılma imza eşleşmesi|
 |Derleyici Uyarısı (Düzey 3) C4569|'*işlevi*': hiçbir üye açık geçersiz kılma imza eşleşmesi|
-|[Derleyici Uyarısı (Düzey 3) C4570](../../error-messages/compiler-warnings/compiler-warning-level-3-c4570.md)|'*türü*': soyut ancak soyut işlevleri taşıdığından açıkça bildirilmedi|
+|[Derleyici Uyarısı (düzey 3) C4570](../../error-messages/compiler-warnings/compiler-warning-level-3-c4570.md)|'*türü*': soyut ancak soyut işlevleri taşıdığından açıkça bildirilmedi|
 |[Derleyici Uyarısı (düzey 4) C4571](../../error-messages/compiler-warnings/compiler-warning-level-4-c4571.md)|Bilgi amaçlı: Visual C++ 7.1 beri değiştirilen catch(...) semantiği; yapılandırılmış özel durum (SEH) artık yakalandı|
 |[Derleyici Uyarısı (düzey 1) C4572](../../error-messages/compiler-warnings/compiler-warning-level-1-c4572.md)|/ CLR altında [ParamArray] özniteliği kullanım dışı, '...' kullanmak yerine|
 |Derleyici Uyarısı (düzey 1) C4573|kullanımını '*lambda işlevi*' 'this' ancak yakalamak için derleyici gerektirir geçerli varsayılan yakalama modu izin vermediğinden|
@@ -296,11 +294,11 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |Derleyici Uyarısı (düzey 1) C4575|'__vectorcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' dönüştürme|
 |Derleyici Uyarısı (düzey 1, hata) C4576|Başlatıcı listesi tarafından izlenen bir parantez içine alınmış bir standart açık tür dönüştürme sözdizimi türüdür|
 |Derleyici Uyarısı (düzey 1, hata) C4578|'abs': dönüştürme '*type1*'to'*type2*', olası veri kaybını (çağırmak mu demek istediniz '*işlevi*' veya #include <cmath>?)|
-|[Derleyici Uyarısı (Düzey 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[öznitelik] kullanım dışıdır; Bunun yerine bir temel sınıf olarak System::Attribute veya Platform::Metadata belirtin|
+|[Derleyici Uyarısı (düzey 3) C4580](../../error-messages/compiler-warnings/compiler-warning-level-3-c4580.md)|[öznitelik] kullanım dışıdır; Bunun yerine bir temel sınıf olarak System::Attribute veya Platform::Metadata belirtin|
 |[Derleyici Uyarısı (düzey 1) C4581](../../error-messages/compiler-warnings/compiler-warning-level-1-c4581.md)|davranış Kullanım: ' "*dize*"' yerine '*dize*' işlem özniteliği|
 |Derleyici Uyarısı (düzey 4) C4582|'*türü*': Oluşturucu örtük olarak çağrılmaz|
 |Derleyici Uyarısı (düzey 4) C4583|'*türü*': yıkıcı örtük olarak çağrılmaz|
-|[Derleyici Uyarısı (düzey 1) c4584 arasındaki](../../error-messages/compiler-warnings/compiler-warning-level-1-c4584.md)|'*class1*': temel sınıf*Ders2*'taban sınıfının zaten'*Ders3 alanları*'|
+|[Derleyici Uyarısı (düzey 1) C4584](../../error-messages/compiler-warnings/compiler-warning-level-1-c4584.md)|'*class1*': temel sınıf*Ders2*'taban sınıfının zaten'*Ders3 alanları*'|
 |Derleyici Uyarısı (düzey 1, hata) C4585|'*sınıfı*': A 'ortak ref class' ya da korumalı olmalıdır veya mevcut bir türetilen WinRT korumasız sınıfı|
 |Derleyici Uyarısı (düzey 1, hata) C4586|'*türü*': 'Windows' adlı üst düzey bir ad alanında bir ortak türü bildirilemez|
 |Derleyici Uyarısı (düzey 1) C4587|'*anonymous_structure*': davranış değişikliği: Oluşturucusu artık dolaylı olarak çağrılır|

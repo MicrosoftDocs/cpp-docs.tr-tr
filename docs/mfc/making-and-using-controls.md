@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3a8ee6a5b1c24ce718a019f8d660b4d433a4055c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aaae665311db47a7129ecaaef816dc3c3b546d45
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="making-and-using-controls"></a>Denetimleri Yapma ve Kullanma
 Visual c++'ta çoğu denetimleri iletişim kutuları için yaptığınız [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md). Ancak herhangi bir iletişim kutusu veya pencere denetimleri de oluşturabilirsiniz.  
@@ -40,9 +41,9 @@ Visual c++'ta çoğu denetimleri iletişim kutuları için yaptığınız [ileti
   
 -   [Ortak denetimlerden bildirim alma](../mfc/receiving-notification-from-common-controls.md)  
   
--   [İletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)  
+-   [İletişim Kutusu Veri Değişimi ve Doğrulaması](../mfc/dialog-data-exchange-and-validation.md)  
   
--   [Kod sihirbazları kullanarak denetimlere tür kullanımı uyumlu erişim](../mfc/type-safe-access-to-controls-with-code-wizards.md)  
+-   [Kod Sihirbazları Kullanarak Denetimlere Tür Kullanımı Uyumlu Erişim](../mfc/type-safe-access-to-controls-with-code-wizards.md)  
   
 -   Tek denetimleri: bkz [denetimleri](../mfc/controls-mfc.md) bağlantıları tüm ortak denetimleri için  
   
@@ -51,5 +52,5 @@ Visual c++'ta çoğu denetimleri iletişim kutuları için yaptığınız [ileti
 -   [İletişim kutusu çubukları](../mfc/dialog-bars.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

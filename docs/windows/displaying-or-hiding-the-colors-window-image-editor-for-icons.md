@@ -18,11 +18,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8b006f6081d88481bdb697d8209014d8296fbea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 0b6093bc10cb3ce1a94c27a14e03d4cdc44510ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="displaying-or-hiding-the-colors-window-image-editor-for-icons"></a>Renkler Penceresini Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 ### <a name="to-display-colors-window"></a>Renkler penceresini görüntülemek için  
@@ -47,4 +50,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Renkler penceresi](../windows/colors-window-image-editor-for-icons.md)   
- [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+ [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

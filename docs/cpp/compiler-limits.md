@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e64bedc169fb4737a7e16175099df5571df82ef2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf668ddfa1c2d7e62ca10963827056f9661b83f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-limits"></a>Derleyici Sınırları
 C++ Standart çeşitli dil yapıları için sınırlar önerir. Burada Visual C++ derleyicisi önerilen sınırları uygulamıyor örneklerinin bir listesi verilmiştir. İlk sayı ISO C++ 11'de standart (INCITS/ISO/IEC 14882-2011 [2012] eki B) belirlenen sınırı ve ikinci sayı Visual C++ tarafından uygulanan sınır:  
@@ -42,4 +43,4 @@ C++ Standart çeşitli dil yapıları için sınırlar önerir. Burada Visual C+
 -   Bir şablon bildirimi - C++ standart şablon bağımsız değişkenler: 1024, Visual C++ Derleyici: 2046.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Standart olmayan davranış](../cpp/nonstandard-behavior.md)
+ [Standart Olmayan Davranış](../cpp/nonstandard-behavior.md)

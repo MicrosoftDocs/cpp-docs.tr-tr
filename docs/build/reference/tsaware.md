@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 64cbd487020360004af2858cbb345f4e4b4ec5aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 68cdcb1253eca6eb168aab0b846bd7a49daa6fd5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tsaware"></a>/TSAWARE
 ```  
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/24/2017
  Bir programın görüntü kullanılan gibi aynı şekilde değiştirmek EDITBIN yardımcı programı/TSAWARE seçeneği sağlar [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) bağlayıcı seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

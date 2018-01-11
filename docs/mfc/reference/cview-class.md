@@ -63,11 +63,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d97c12b54e644298edb21706b4659ba84e43256e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 843417508fc43f99b0027873988746d03a7863cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cview-class"></a>CView sınıfı
 Temel işlevleri için kullanıcı tanımlı görünüm sınıfları sağlar.  
@@ -806,4 +807,4 @@ virtual void OnUpdate(
  [CSplitterWnd sınıfı](../../mfc/reference/csplitterwnd-class.md)   
  [CDC sınıfı](../../mfc/reference/cdc-class.md)   
  [CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)   
- [CDocument sınıfı](../../mfc/reference/cdocument-class.md)
+ [CDocument Sınıfı](../../mfc/reference/cdocument-class.md)

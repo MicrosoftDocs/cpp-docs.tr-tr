@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b26c1a3cded4dbc81548a2b51c99819d015fc0bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 232f01ffd829fa367a35193b23c6fea56e4ea4d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exitsuccess-exitfailure"></a>EXIT_SUCCESS, EXIT_FAILURE
 ## <a name="syntax"></a>Sözdizimi  
@@ -40,4 +41,4 @@ ms.lasthandoff: 10/24/2017
  [atexit](../c-runtime-library/reference/atexit.md)   
  [Çıkış, _Exit, _exit](../c-runtime-library/reference/exit-exit-exit.md)   
  [_onexit, _onexit_m](../c-runtime-library/reference/onexit-onexit-m.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

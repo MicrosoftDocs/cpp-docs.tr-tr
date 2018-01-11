@@ -16,14 +16,15 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 10b05a8d994b1df7140c7f9bd4db984931b1896f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7d2522169588aa285c91c535eb31360679d8136
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linkage"></a>Bağlantı
 Tanımlayıcı adları farklı kapsamlardaki farklı tanımlayıcılara başvurabilir. Farklı kapsamlarda veya aynı kapsamda birden çok kez bildirilen bir tanımlayıcı "bağlantı" olarak adlandırılan bir işlem ile aynı tanımlayıcıya veya işleve başvurabilir. Bağlantı bir tanımlayıcının başvurulabildiği ("görünürlüğünü") programın bölümlerini belirler. Üç tür bağlantı vardır: [iç](../c-language/internal-linkage.md), [dış](../c-language/external-linkage.md), ve [bağlantı yok](../c-language/no-linkage.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlantıyı belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)
+ [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)

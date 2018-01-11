@@ -35,11 +35,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1ccac37a7ffa7ab5967118ec2bcb4c2c4cf5501c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 34bd53dec328ebf94e8bb9eb6f72aae1e8a90bc4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 `CMFCTasksPaneTaskGroup` Bir yardımcı sınıfı tarafından kullanılan bir sınıftır [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetim. Nesne türü `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Framework Daralt düğmesi ayrı bir kutuya görüntüler öğeleri listesi görev grubudur. Kutunun isteğe bağlı bir başlıkla (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.  
@@ -231,4 +232,4 @@ virtual BOOL SetACCData(
  [CMFCTasksPane sınıfı](../../mfc/reference/cmfctaskspane-class.md)   
  [CMFCTasksPaneTask sınıfı](../../mfc/reference/cmfctaskspanetask-class.md)   
  [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)   
- [CObject sınıfı](../../mfc/reference/cobject-class.md)
+ [CObject Sınıfı](../../mfc/reference/cobject-class.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a69cf52d3b5b3e7eea093741e75b545de412c86
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 245ce0febf1a19e0bbb93c5d72584b26e23f6dfc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chartraitsltchar16tgt-struct"></a>char_traits&lt;char16_t&gt; yapısı
 Şablon yapısı uzmanlığı olan yapı **char_traits\<CharType >** türünde bir öğe için `char16_t`.  
@@ -44,7 +45,7 @@ struct char_traits<char16_t>;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<dize >](../standard-library/string.md)   
  [char_traits yapısı](../standard-library/char-traits-struct.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

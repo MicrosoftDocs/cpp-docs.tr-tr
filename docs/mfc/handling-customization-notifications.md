@@ -58,11 +58,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c849fb14b9400711596e36a8d5b5829c233efd45
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec4561fda34ba2b20f7fe46aea52f272eed3b9ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handling-customization-notifications"></a>Özelleştirme Bildirimlerini İşleme
 Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeleri yeniden düzenlemek kullanıcı izin veren bir sistem tanımlı özelleştirme iletişim kutusu dahil olmak üzere yerleşik özelleştirme özelliklere sahiptir. Uygulama, özelleştirme özellikleri kullanılabilir olduğunu ve kullanıcının araç çubuğunu özelleştirebilirsiniz uzantı denetimlerini belirler.  
@@ -197,5 +198,5 @@ Windows araç yaygın bir denetim eklemek, silmek veya araç çubuğu düğmeler
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

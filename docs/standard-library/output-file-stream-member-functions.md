@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dec5db670afd169093125f2830551aec85b61e35
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 25313cce5d032c4c3975fffbf8ca89b232031661
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="output-file-stream-member-functions"></a>Çıkış Dosya Akışı Üye İşlevleri
 Çıkış akışı üye işlevleri sahip üç tür: manipülatörleri için biçimlendirilmemiş gerçekleştirmesi eşdeğer olan yazma işlemleri ve aksi takdirde akış değiştiren bu durum ve herhangi bir eşdeğer manipulator veya ekleme işleci sahip. Sıralı, biçimlendirilmiş çıkışı için yalnızca ekleme işleçlerini ve manipülatörleri kullanabilirsiniz. Rasgele erişim ikili disk çıktı için diğer üye işlevleri ile veya olmadan ekleme işleçlerini kullanın.  
@@ -114,7 +115,7 @@ int main( )
 |[hatalı](http://msdn.microsoft.com/Library/4038d331-e9c9-48b0-bf49-c6505744469c)|Döndürür **true** kurtarılamaz bir hata varsa.|  
 |[başarısız](http://msdn.microsoft.com/Library/619f1b36-1e72-4551-8b48-888ae4e370d2)|Döndürür **true** kurtarılamaz bir hata ya da bir dönüştürme hatası gibi "beklenen" bir koşul ise veya dosya bulunamadı. İşleme genellikle çağrısı yapıldıktan sonra devam **temizleyin** bir sıfır bağımsız değişkeni ile.|  
 |[iyi](http://msdn.microsoft.com/Library/77f0aa17-2ae1-48ae-8040-592d301e3972)|Döndürür **true** (kurtarılamaz veya diğer) hata koşulu yok ve dosya sonu bayrağı ayarlı değil.|  
-|[EOF](http://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|Döndürür **true** dosya sonu koşulunu.|  
+|[eof](http://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|Döndürür **true** dosya sonu koşulunu.|  
 |[Temizle](http://msdn.microsoft.com/Library/dc172694-1267-45f8-8f5c-e822e16fc271)|İç hata durumuna ayarlar. Varsayılan bağımsız değişkenler olarak adlandırılan, tüm hata BITS temizler.|  
 |[rdstate](http://msdn.microsoft.com/Library/e235e4e2-7e95-4777-a160-3938d263dd9c)|Geçerli hata durumuna döndürür.|  
   
@@ -145,5 +146,5 @@ if(!cout.fail())...
  **Void\*()** işleci eşit değil **iyi** çünkü dosya sonu için test değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkış akışları](../standard-library/output-streams.md)
+ [Çıkış Akışları](../standard-library/output-streams.md)
 

@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 396d462b76b1aaa2fac5d0fdf2d0b89e581085e7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8629268e838fb6e3ad25a8b62a4ff8bf334799e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cd2dellipse-class"></a>CD2DEllipse sınıfı
 İçin sarmalayıcı `D2D1_ELLIPSE`.  
@@ -77,4 +78,4 @@ CD2DEllipse(
  RADIUS X ve Y-radius elipsin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

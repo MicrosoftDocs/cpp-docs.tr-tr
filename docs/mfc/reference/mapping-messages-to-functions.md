@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58f44b4b71da32278a2f623229fb2084fa7af336
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad36b249e601e15e25f32ef1ef7e6d5a28874cf1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapping-messages-to-functions"></a>İletileri İşlevlere Eşleme
 Özellikler penceresini, ileti işleyicileri (MFC kullanıcı arabirimi sınıfları üye işlevlerini) bağlamak, uygulamanızın kaynaklar tarafından üretilen iletileri sağlar. Kullandıkları [MFC ileti eşlemeleri](../../mfc/messages-and-commands-in-the-framework.md) bağlama oluşturmak için.  

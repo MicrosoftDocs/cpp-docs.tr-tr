@@ -24,11 +24,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 696765451079301e2a25cc831c34e41802dd33f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b63f6d05415b163e523589756ba2eb67ab2c61a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="automation-clients-using-type-libraries"></a>Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma
 Otomasyon istemcileri istemcileridir sunucuları nesneleri yönetmek için sunucu nesneleri özellikleri ve yöntemleri hakkında bilgi olması gerekir. Özellikler veri türlerine sahip; yöntemleri genellikle dönüş değerleri ve parametreleri kabul eder. İstemci, sunucu nesnesi türü için statik olarak bağlamak için tüm bunların veri türleri hakkında bilgi gerektirir.  
@@ -67,5 +68,5 @@ Otomasyon istemcileri istemcileridir sunucuları nesneleri yönetmek için sunuc
      Sihirbaz sonra belirtilen sınıf ve dosya adlarını kullanarak, gönderme sınıfları için kod yazacaksınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Otomasyon istemcileri](../mfc/automation-clients.md)
+ [Otomasyon İstemcileri](../mfc/automation-clients.md)
 

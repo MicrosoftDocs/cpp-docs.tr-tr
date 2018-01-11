@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5b0d17ba04dc1648d9aa05dff98715ef9a80a230
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 848b4b449fa2c9c8930a616b70a5b61cb28d8fbf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ Programları Bildirim Üretimini Anlama
 A [bildirim](http://msdn.microsoft.com/library/aa375365) harici bir XML dosyası veya bir kaynak olabilir bir XML belgesi bir uygulama veya bir derleme katıştırılır. Bildirimi bir [yalıtılmış uygulama](http://msdn.microsoft.com/library/aa375190) adları ve paylaşılan yan yana derlemeler için uygulaması bağlamak çalışma zamanında sürümlerini yönetmek için kullanılır. Yan yana derleme bildirimi bağımlılıklarını adları, sürüm, kaynakları ve diğer derlemelerden belirtir.  
@@ -29,4 +30,4 @@ A [bildirim](http://msdn.microsoft.com/library/aa375365) harici bir XML dosyası
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yalıtılmış uygulamalar ve yan yana derlemeler kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
- [C/C++ yalıtılmış uygulamaları ve yan yana derlemeler](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+ [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

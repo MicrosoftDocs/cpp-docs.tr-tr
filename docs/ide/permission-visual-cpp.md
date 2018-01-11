@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 02a379b9856d2e8c7a764b3c8be49652a3f3d678
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 416467782be92760ac999301f9899be1260905aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltpermissiongt-visual-c"></a>&lt;izin&gt; (Visual C++)
 \<İzni > etiketi üyesi erişim belge olanak sağlar. <xref:System.Security.PermissionSet>üye erişimi belirtmenize olanak sağlar.  
@@ -65,4 +66,4 @@ public ref class TestClass {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

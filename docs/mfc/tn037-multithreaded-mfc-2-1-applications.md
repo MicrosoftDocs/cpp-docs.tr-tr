@@ -15,16 +15,17 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 36e1c78ad0ac70af55b1e2c0be719f328044d939
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 845d46ded54cae54157b7bf7754011e384d412d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn037-multithreaded-mfc-21-applications"></a>TN037: Çoklu İş Parçacığı Kullanan MFC 2.1 Uygulamaları
 Bu teknik Not başlangıçta çoklu iş parçacığı kullanan MFC 2.1, ilk olarak Windows NT için Visual C++ 1.0 ile sağlanan programlarla sınırlamaları açıklanmaktadır. MFC 3.0 destekleyen çoklu iş parçacığı kullanımı doğrudan ve belgelenmiştir. Daha fazla bilgi için bkz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

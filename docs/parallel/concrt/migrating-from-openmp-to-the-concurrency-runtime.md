@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0bdaf5b8f6128e9b718b35b7332707a5249b33ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 65359e76e036a0d8d33de2de9f6c96c6425d2152
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş
 Eşzamanlılık Çalışma zamanı çeşitli programlama modeli sağlar. Bu modeller çakışıyor olabilir veya diğer kitaplıkları modellerinin tamamlar. Bu belgeler bölümü karşılaştırma [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp) eşzamanlılık çalışma zamanı ve Eşzamanlılık Çalışma zamanı kullanmak için mevcut OpenMP kod geçirme hakkında örnekler sağlar.  
@@ -54,23 +55,23 @@ Eşzamanlılık Çalışma zamanı çeşitli programlama modeli sağlar. Bu mode
 |Uygulamanız, c dilinde yazılır|Eşzamanlılık Çalışma zamanı C++ özelliklerinin kullandığından, tam olarak kullanmak için C uygulamayı sağlayan kodu yazılamıyor olduğunda, uygun olmayabilir.|  
   
 ## <a name="related-topics"></a>İlgili Konular  
- [Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak üzere döngü bir OpenMP paralelini dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)  
+ [Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)  
 
  OpenMP kullanan temel bir döngü verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) ve [için](../../parallel/openmp/reference/for-openmp.md) yönergeleri, eşzamanlılık çalışma zamanı kullanmak üzere dönüştürülmesi gösterilmektedir [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritma.  
 
   
- [Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için İptali kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)  
+ [Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)  
  Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) çalıştırmak için tüm yinelemeleri gerektirmez döngü eşzamanlılık çalışma zamanı iptal mekanizması kullanacak şekilde dönüştürmek nasıl gösterir.  
   
- [Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için özel durum işleme kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md)  
+ [Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Özel Durum İşleme Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md)  
  Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) özel durum işleme gerçekleştirir döngü eşzamanlılık çalışma zamanı özel durum mekanizması işleme kullanacak şekilde dönüştürmek nasıl gösterir.  
   
- [Nasıl yapılır: eşzamanlılık çalışma zamanı kullanmak için azaltma değişkeni kullanan bir OpenMP döngüsünü dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)  
+ [Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için Azaltma Değişkeni Kullanan bir OpenMP Döngüsünü Dönüştürme](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)  
  Bir OpenMP verilen [paralel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[için](../../parallel/openmp/reference/for-openmp.md) kullanan döngüsünü [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi, eşzamanlılık çalışma zamanı kullanmak için dönüştürmenin nasıl yapılacağı gösterilmektedir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)   
  [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)   
  [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)   
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
+ [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
 

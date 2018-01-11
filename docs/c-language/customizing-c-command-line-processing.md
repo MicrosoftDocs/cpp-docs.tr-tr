@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 00194acd1aa72db73f75a2cb5aa5700df02be0a3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 60f0c14382190cb724c4e4a84488006c54813558
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="customizing-c-command-line-processing"></a>C Komut Satırı İşlemini Özelleştirme
 Programınızı komut satırı bağımsız değişken almaz, komut satırı işlemini gerçekleştiren kitaplık yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordam adlı **_setargv** (veya **_wsetargv** joker karakter ortamında), açıklandığı gibi [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md). Kullanımını engellemek için dosyayı içeren içinde hiçbir şey yapmaz bir yordamı tanımlayın **ana** işlev ve adlandırın **_setargv** (veya **_wsetargv** geniş karakter ortam). Çağrı **_setargv** veya **_wsetargv** sonra tanımınızı tarafından sağlanıyorsa **_setargv** veya **_wsetargv** , ve kitaplığı sürümü yüklü değil.  
@@ -37,4 +38,4 @@ Programınızı komut satırı bağımsız değişken almaz, komut satırı işl
  Programınızı çağrılar yaparsa **_spawn** veya **_exec** C Çalışma Zamanı Kitaplığı'nda yordamları ailesi, size değil bastırmak ortam işleme yordamı geçirmek için bu yordamı kullanıldığından bir Yeni işlem ortamına spawning işlemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main işlevi ve Program yürütme](../c-language/main-function-and-program-execution.md)
+ [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

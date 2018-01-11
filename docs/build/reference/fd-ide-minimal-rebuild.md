@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5fac2b16d3a494c323a351ab0cb67f1940523649
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0dfcf34be03204b920e5a4459c6a2d7ea6c506d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fd-ide-minimal-rebuild"></a>/FD (IDE En Az Yeniden Derleme)
 **/FD** kullanıcılara gösterilmez [komut satırı](../../ide/command-line-property-pages.md) C++ projenin özellik sayfasındaki **özellik sayfaları** iletişim kutusunda, varsa ve yalnızca [/GM derlemeyi (etkinleştirmek en az yeniden derleme)](../../build/reference/gm-enable-minimal-rebuild.md) de seçilmedi. **/FD** geliştirme ortamından dışında herhangi bir etkisi olmaz. **/FD** çıktısında gösterilmeyen **cl /?**.  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

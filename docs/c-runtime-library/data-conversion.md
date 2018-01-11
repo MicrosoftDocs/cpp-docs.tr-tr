@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a711a8087fef7978eceaadece317d4aac95d6340
-ms.sourcegitcommit: 2a5d0e9e6829150cbc22c6de3395ec13008e3266
+ms.workload: cplusplus
+ms.openlocfilehash: 11b28793e5e659e3135061e3a6fd410d9b1c9f3c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-conversion"></a>Veri Dönüştürme
 Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yordamlar, yazabilir dönüşümleri daha hızlı yürütün. İle başlayan her yordam bir `to` öneki makro ve bir işlevi olarak uygulanır. Bkz: [seçme arasında işlevler ve makrolar](../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md) uygulaması seçme hakkında bilgi için.  
@@ -56,7 +57,7 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 |[strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)|Dizeye dönüştürme `long` tamsayı|  
 |[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)|Dizeye dönüştürme `unsigned long` tamsayı|  
 |[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)|Yerel ayarlara özgü bilgilere göre Harmanlanmış forma dize dönüştürme|  
-|[ToAscii, __toascii](../c-runtime-library/reference/toascii-toascii.md)|ASCII kodu karakter dönüştürme||  
+|[toascii, __toascii](../c-runtime-library/reference/toascii-toascii.md)|ASCII kodu karakter dönüştürme||  
 |[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|Karakter test etme ve şu anda büyük harf, küçük harfe Dönüştür|  
 |[tolower, _tolower, towlower, _tolower_l, _towlower_l](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)|Koşulsuz olarak küçük harf karakter dönüştürme|[System::String::ToLower](https://msdn.microsoft.com/en-us/library/system.string.tolower.aspx)|  
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md), [_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l](../c-runtime-library/reference/mbctolower-mbctolower-l-mbctoupper-mbctoupper-l.md)|Karakter test etme ve şu anda küçük harfler, büyük harfe Dönüştür|  
@@ -70,4 +71,4 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 |[atol, _atol_l, _wtol, _wtol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|Joker karakter dizeye dönüştürme`long`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

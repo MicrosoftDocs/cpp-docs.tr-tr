@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 216e022c3bbf3c91ce90877511781bc8aaa559e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f6b8cc949e84d0386e3373c06680ef3f2460235
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-compiler-fatal-error-rw1023"></a>Kaynak Derleyicisi Önemli Hatası RW1023
 Tam sürücü dosyası yazma g/ç hatası  

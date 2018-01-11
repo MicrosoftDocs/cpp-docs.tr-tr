@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 750dc9c8e034c8fb3157cba4f84cfe158ff2e999
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 459383474c9ffed9a7ad6cefe01ea21626cb23b1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Alternatifleri
 MFC uygulamaları, belge/görünüm mimarisinin normalde bilgiler, dosya biçimlerini ve görsel veri kullanıcılarına yönetmek için kullanın. Masaüstü uygulamaları çoğunluğu için belge/görünüm mimarisinin bir uygun ve etkili uygulama mimarisidir. Bu mimari veri görüntüleme ve, çoğu durumda ayıran, uygulamanızı kolaylaştırır ve gereksiz kod azaltır.  

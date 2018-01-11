@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 68e2eff68eb4a5ae2d7868929bca169e399a7347
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3aabdb1dd59e1039f81d2ffe75c0d9e0770e43db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo Yapısı
 `CDaoParameterInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan bir parametre nesne hakkında bilgiler içerir.  
@@ -64,4 +65,4 @@ struct CDaoParameterInfo
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)
+ [CDaoQueryDef Sınıfı](../../mfc/reference/cdaoquerydef-class.md)

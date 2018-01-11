@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 93e3b33e6e5e9eee52ec08eac32c47bf0ae6213f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e73e7aa3ff62782c6ebd3b5a8728aa05e78b1784
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parameters"></a>Parametreler
 Bağımsız değişkenler, bir işlev çağrısı tarafından bir işlevine geçirilen değerlerin adlardır. Parametreler işlev almak için bekliyor değerlerdir. Bir işlev prototipi işlevi adından parantez işlev parametrelerini ve türlerinin tam listesi içerir. Parametre bildirimleri türleri, boyutlar ve parametrelerinde depolanan değerlerin tanımlayıcıları belirtin.  
@@ -85,4 +86,4 @@ void new( double x, double y, double z )
  Derleyici olağan aritmetik dönüştürmeler bağımsız olarak her bir parametreyi ve her bağımsız gerekirse gerçekleştirir. Hiçbir parametre dönüştürmeden sonra daha kısa bir `int`, ve bir parametre yok **float** parametre türü olarak açıkça belirtilmediği sürece yazın **float** prototip içinde. Bu, örneğin, bu parametre olarak bildirme anlamına gelir bir `char` olarak bildirme aynı etkiye sahip bir `int`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C işlev tanımları](../c-language/c-function-definitions.md)
+ [C İşlev Tanımları](../c-language/c-function-definitions.md)

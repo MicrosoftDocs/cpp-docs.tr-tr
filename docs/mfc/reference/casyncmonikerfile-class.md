@@ -43,11 +43,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: de31d57f3b9724cf8a3075b34be45a21556aea2f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 546e251f3387175812e6ba7f8cfed5d8a878d658
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 ActiveX denetimlerinde zaman uyumsuz adlar kullanmak için işlevsellik sağlar (önceki adıyla OLE denetimleri).  
@@ -171,7 +172,7 @@ virtual DWORD GetBindInfo() const;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama bağlama zaman uyumsuz, bir depolama ortamına (akış) kullanın ve veri gönderme modeli kullanmak için olacak şekilde ayarlar. Bağlama davranışı değiştirmek istiyorsanız, bu işlev geçersiz kılar.  
   
- Bunu yapmak için bir sebep veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için olacaktır. Bir veri çekme modeli bağlama işlemi istemci sürücüleri ve onu okunduğunda ad veri istemciye yalnızca sağlar.. Bir veri gönderimi modeldeki ad zaman uyumsuz bağlama işlemi sürücüler ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.  
+ Bunu yapmak için bir sebep veri çekme modeli yerine veri gönderme modeli kullanarak bağlamak için olacaktır. Bir veri çekme modeli bağlama işlemi istemci sürücüleri ve onu okunduğunda ad veri istemciye yalnızca sağlar. Bir veri gönderimi modeldeki ad zaman uyumsuz bağlama işlemi sürücüler ve yeni veriler kullanılabilir olduğunda istemci sürekli olarak bildirir.  
   
 ##  <a name="getbinding"></a>CAsyncMonikerFile::GetBinding  
  Zaman uyumsuz aktarım bağlama için bir işaretçi almak için bu işlevini çağırın.  
@@ -410,4 +411,4 @@ virtual BOOL Open(
  [CMonikerFile sınıfı](../../mfc/reference/cmonikerfile-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CMonikerFile sınıfı](../../mfc/reference/cmonikerfile-class.md)   
- [CDataPathProperty sınıfı](../../mfc/reference/cdatapathproperty-class.md)
+ [CDataPathProperty Sınıfı](../../mfc/reference/cdatapathproperty-class.md)

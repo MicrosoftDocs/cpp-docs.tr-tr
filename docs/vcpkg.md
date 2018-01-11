@@ -11,11 +11,12 @@ ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
 ms.topic: article
 dev_langs: C++
 manager: ghogen
-ms.openlocfilehash: de5825e64abac210561cb8cbe0dc3320a740cbee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0728827cb2cd604ec4e7ff1ef58b68ed8fb64532
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vcpkg-c-package-manager-for-windows"></a>vcpkg: Windows için C++ Paket Yöneticisi 
 vcpkg edinme ve yükleme Windows üçüncü taraf kitaplıkların büyük ölçüde kolaylaştıran bir komut satırı paket yöneticisidir. Projenizi üçüncü taraf kitaplıkları kullanıyorsa, bunları yüklemeye vcpkg kullanmanızı öneririz. vcpkg hem açık kaynak hem de özel kitaplıkları destekler. Vcpkg genel katalogdaki tüm kitaplıkları Visual Studio 2015 ve Visual Studio 2017 ile uyumluluk için test edilmiştir. C++ topluluk sürekli olarak daha fazla kitaplık ekleme ve May 2017 itibariyle katalogda üzerinde 238 kitaplıkları vardır.
@@ -107,14 +108,16 @@ Karşıdan yükle ve kitaplıkları oluşturmak için bir takımındaki gerektir
 Genel katalog kitaplıkları en son sürümleri ile güncel tutulur. Yerel Kitaplıklarınızı hangisinin güncel olduğunu belirlemek için kullanın `vcpkg update`. Bağlantı noktaları koleksiyonunuzu genel katalog en son sürüme güncelleştirmek hazır olduğunuzda, yalnızca github deposuna yönelik bir git çekme işlemi yapın veya yeni bir kopya oluşturun ve hala gerekliyse eskisinin tutun.
 
 ### <a name="contribute-new-libraries"></a>Yeni kitaplıkları katkıda bulunan
-Özel bağlantı noktaları koleksiyonunuzda gibi kitaplıkları içerebilir. Genel Katalog için yeni bir kitaplık önermek için 
-
+Özel bağlantı noktaları koleksiyonunuzda gibi kitaplıkları içerebilir. Genel Katalog için yeni bir kitaplık önermek için bir sorun açmak [GitHub vcpkg sorunu sayfası](https://github.com/Microsoft/vcpkg/issues).
 
 ### <a name="remove-a-library"></a>Bir kitaplık Kaldır
 Tür `vcpkg remove` yüklü bir kitaplığını kaldırmak için. Diğer kitaplıkları bağımlı ise, komutu yeniden çalıştırarak istenir `--recurse`, kaldırılacak tüm aşağı akış kitaplıkları neden olacak.
 
 ### <a name="customize-vcpkg"></a>Vcpkg özelleştirme
 İstediğiniz herhangi bir şekilde vcpkg kopyasını değiştirebilirsiniz. Birden çok vcpkg klonlar oluşturabilir ve portfiles kitaplıkları belirli sürümlerini edinmek veya komut satırı parametrelerini belirtmek için her biri olarak değiştirebilirsiniz. Örneğin, kuruluş, geliştiricilerin bir grup bir dizi bağımlılıkları olan yazılımı çalışıyor olabilirsiniz ve başka bir grubu farklı bir kümesi olabilir. İki vcpkg klonlar ayarlamak ve kitaplıklar ve derleme anahtarlar vb., sürümleri karşıdan yüklemek için her biri gereksinimlerinize göre değiştirin. 
+
+### <a name="uninstall-vcpkg"></a>Vcpkg kaldırma
+Yalnızca dizini silin. 
 
 ## <a name="the-vcpkg-folder-hierarchy"></a>Vcpkg klasör hiyerarşisi
 Tüm vcpkg işlevselliği ve verileri tek bir dizin hiyerarşisinde tamamen kendi içinde bulunan; Bu, bir "örnek" adı verilir. Kayıt defteri ayarları veya ortam değişkenleri yok. Bir makinede herhangi bir sayıda vcpkg örneklerini sahip olabilir ve birbirleri ile etkilemeyecektir. 

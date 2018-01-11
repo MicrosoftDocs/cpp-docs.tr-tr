@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c3cd9728a8e4786caefe8a65fa9a6f9c8849ca01
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2db502f9facf1a27fe6de9ca8e18f2ee9b2e1777
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3727"></a>Derleyici Hatası C3727
 'event': yönetilen bir olay üye işlevi veya bir işaretçi bir temsilci bir veri üyesi olması gerekir  

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13f497358ae320263fd7043787abb943f760809b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ea979083fb00d57e455b97c2f6b94f7ea7c6b596
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="values"></a>Değerler
 **ANSI 3.1.2.5** Beyanları ve kayan nokta sayıları çeşitli türlerde değerler kümesi  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  **Uzun çift** türünü içeren üs için 15 ve 64 Mantis için oturum açma için 80 bitleri: 1. Kendi 1.2E4932 +/-ile en az 19 basamaklı duyarlık arasındadır. Microsoft C derleyicisi, türü gösterimi unutmayın **uzun çift** yazmak için aynıdır **çift**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta Matematiği](../c-language/floating-point-math.md)
+ [Kayan Nokta Matematiği](../c-language/floating-point-math.md)

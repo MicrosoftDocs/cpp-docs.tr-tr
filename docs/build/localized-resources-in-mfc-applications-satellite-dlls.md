@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8f601c32a1fe2accec2663246a56830fda5ed930
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ba1c8d52796ae9251a79df9600be80612db33e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri
 MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, birden çok dil için yerelleştirilmiş uygulamaları oluşturmaya yardımcı olan bir özellik için gelişmiş destek sağlar. DLL uydu bir [yalnızca kaynak DLL](../build/creating-a-resource-only-dll.md) belirli bir dil için yerelleştirilmiş bir uygulamanın kaynaklar içeriyor. Uygulama çalışmaya başladığında, MFC yerelleştirilmiş kaynak ortamınız için en uygun otomatik olarak yükler. Örneğin, İngilizce dil kaynaklarla iki Uydu DLL'leri, biri, kaynaklarınızı ve diğer Almanca çevirisini içeren Fransızca çeviri içeren bir uygulama olabilir. Uygulamayı bir İngilizce dil sistemde çalıştırdığınızda İngilizce kaynaklarını kullanır. Fransızca sistemde, Fransızca kaynakları kullanır; Almanca sistemde, Almanca kaynakları kullanır.  
@@ -62,4 +63,4 @@ MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, birden çok dil için yerelleştirilmi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)   
- [TN057: MFC bileşenlerini yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)
+ [TN057: MFC Bileşenlerini Yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)

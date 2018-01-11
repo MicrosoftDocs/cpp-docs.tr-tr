@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8908fb93cf6bc1c5a0c19cbbdb6597451c1cfa51
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b88f895255c698f04b6988e63b8b75372fa59b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="module-states-of-a-regular-mfc-dll-dynamically-linked-to-mfc"></a>Normal MFC DLL'nin Modül durumları dinamik olarak MFC'ye bağlı
 MFC DLL normal MFC DLL dinamik olarak bağlama yeteneği oldukça karmaşık bazı yapılandırmalara izin verir. Örneğin, normal bir MFC DLL ve kullandığı yürütülebilir hem de dinamik olarak MFC DLL ve tüm MFC uzantı DLL'leri bağlayabilirsiniz.  
@@ -48,7 +49,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
   
 -   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [MFC uzantı DLL'leri](../build/extension-dlls-overview.md)  
+-   [MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

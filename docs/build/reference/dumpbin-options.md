@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8945eb3ca53d6402e2db31c8a174d45394bcfb2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 80f142071a2a6b71dd134a7fb31474f917d5348f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dumpbin-options"></a>DUMPBIN Seçenekleri
 İsteğe bağlı bir tire (-) ya da seçenek adında eğik çizgi (/), bir seçenek belirticisi oluşur. Seçenek adları kısaltılmış olamaz. Bazı seçenekler iki nokta (:) sonra belirtilen bir bağımsız değişken, alın. Hiçbir boşluk ya da sekme bir seçenek belirtimi içinde izin verilir. Komut satırı seçeneği belirtimlere ayırmak için bir veya daha fazla boşluk ya da sekme kullanın. Seçenek adlarının ve kendi anahtar sözcüğü veya dosya adı bağımsız değişkeni büyük küçük harfe duyarlı değildir. Çoğu seçenekler tüm ikili dosyaları için geçerlidir; birkaç yalnızca çok belirli dosya türlerini uygulayın. Varsayılan olarak, DUMPBIN standart çıktıya bilgileri gönderir. Kullanım [/OUT](../../build/reference/out-dumpbin.md) çıktıyı bir dosyaya göndermek için seçeneği.  
@@ -76,4 +77,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   
- [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md)
+ [DUMPBIN Başvurusu](../../build/reference/dumpbin-reference.md)

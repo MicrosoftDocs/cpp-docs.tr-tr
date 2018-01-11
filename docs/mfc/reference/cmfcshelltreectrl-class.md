@@ -39,11 +39,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aba82dd5e70f3202512b728df2dbcb6f45600c69
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 727b0032687ed22692f07f9b5e9e5fe8b2813071
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 `CMFCShellTreeCtrl` Sınıfını genişleten [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md) Kabuk öğeleri hiyerarşisini görüntüleyerek işlevselliği.  
@@ -276,4 +277,4 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md)   
- [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md)
+ [CMFCShellListCtrl Sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 18e0ebe846a8ee0bf583ad342e43959e4996cd87
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 11e02e4adb2e2bdb79f275537047199f434a57c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="singlelinkregistry-class"></a>single_link_registry Sınıfı
 `single_link_registry` Nesne bir `network_link_registry` yalnızca tek bir kaynak veya hedef blok yönetir.  
@@ -56,11 +57,11 @@ class single_link_registry : public network_link_registry<_Block>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ekleme](#add)|Bir bağlantı ekler `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[add](#add)|Bir bağlantı ekler `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
 |[başlayın](#begin)|Yineleyici ilk öğe döndürür `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
 |[içerir](#contains)|Aramaları `single_link_registry` belirtilen bloğu için nesnesi. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
 |[sayısı](#count)|Öğeleri sayar `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[Kaldır](#remove)|Bir bağlantıdan kaldırır `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [network_link_registry](network-link-registry-class.md)  
@@ -163,4 +164,4 @@ virtual ~single_link_registry();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [multi_link_registry sınıfı](multi-link-registry-class.md)
+ [multi_link_registry Sınıfı](multi-link-registry-class.md)

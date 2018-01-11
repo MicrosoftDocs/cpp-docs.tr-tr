@@ -24,11 +24,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2f8bda6ab864c01227d76efafcc8db7bdfec1327
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a9c9380bddb9b406d9a3e6233a87870ab81df5c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr sınıfı
 Bu sınıf, bir bellek yöneticisi arabirimi temsil eder.  

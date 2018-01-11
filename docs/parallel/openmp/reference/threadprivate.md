@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a95212d3774e9befeccbd8f0da3773305041d11c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 25685991222b02f4c622f344b06e9faaea4caf02
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="threadprivate"></a>threadprivate
 Bir değişken için bir iş parçacığı özel olduğunu belirtir.  
@@ -72,4 +73,4 @@ int main()
  Kullanarak, bir örnek için `threadprivate`, bkz: [özel](../../../parallel/openmp/reference/private-openmp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeleri](../../../parallel/openmp/reference/openmp-directives.md)
+ [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

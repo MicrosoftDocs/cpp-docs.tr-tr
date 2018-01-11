@@ -35,11 +35,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 922fed9dde6e3f38ae1276034ce84a97db9f99be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9bd77d18f63885aa29f49ce8bd497f935d292e0b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fcvts"></a>_fcvt_s
 Kayan noktalı sayı bir dizeye dönüştürür. Bu bir sürümüdür [_fcvt](../../c-runtime-library/reference/fcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -98,7 +99,7 @@ errno_t _fcvt_s(
 |tüm|tüm|tüm|tüm|`NULL`|tüm|`EINVAL`|Değiştirilmedi.|  
 |tüm|tüm|tüm|tüm|tüm|`NULL`|`EINVAL`|Değiştirilmedi.|  
   
- **Güvenlik sorunları**  
+ **Güvenlik Sorunları**  
   
  `_fcvt_s`erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
   

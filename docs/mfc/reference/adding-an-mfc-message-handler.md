@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ed68a99e35d5ab234e567e01ea264bea64579fdf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 170e8314759d24ce1cfe7413b0c41e81a5617445
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC İleti İşleyicisi Ekleme
 Yapabilecekleriniz [bir ileti işleyicisini eklemek için Özellikler penceresini kullanın](../../mfc/reference/mapping-messages-to-functions.md) (Windows iletilerini işleme bir üye fonksiyonu) ileti işleyicisi bir sınıf ve harita Windows iletileri. Ayrıca ekleyebileceğiniz [herhangi bir iletişim kutusu denetimi için bir olay işleyicisi](../../windows/adding-event-handlers-for-dialog-box-controls.md).  
@@ -36,5 +37,5 @@ Yapabilecekleriniz [bir ileti işleyicisini eklemek için Özellikler penceresin
  [Üye değişkeni ekleme](../../ide/adding-a-member-variable-visual-cpp.md)   
  [Sanal işlevi geçersiz kılma](../../ide/overriding-a-virtual-function-visual-cpp.md)   
  [Sınıf yapısında gezinme](../../ide/navigating-the-class-structure-visual-cpp.md)   
- [İletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md)
+ [İletişim Kutusu Düzenleyicisi](../../windows/dialog-editor.md)
 

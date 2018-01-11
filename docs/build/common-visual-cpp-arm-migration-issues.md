@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 458272a769fd1ce2076b6d80f5b3977a7c2ea7b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 39902d953702703a4367be24bf6c1cd011863289
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="common-visual-c-arm-migration-issues"></a>Genel Visual C++ ARM Geçiş Sorunları
 
@@ -61,7 +62,7 @@ Değer tamsayı türünde için dönüştürülüyor aralıkta olduğunu biliyor
   
 ### <a name="shift-operator---behavior"></a>Kaydırma işleci (<\< >>) davranışı  
 
-Desen başlamadan önce sola veya sağa en çok 255 BITS ARM mimarisi üzerinde bir değer gölgeye. Bir 64-bit değişken deseni kaynağı olmadığı sürece x86 hem x64 mimarileri üzerinde her 32 birden çok düzeni yinelenir; Bu durumda, x 64 ve her bir yazılım uygulaması burada işe x86 üzerinde 256 katları 64 her katları adresindeki düzeni tekrarlar. Örneğin, 32 konumlar tarafından sol gölgeye 1 değerine sahip 32-bit bir değişken, ARM üzerinde sonuç 0'dır, üzerinde x86 sonucu 1. ve üzerinde x64 sonucu de 1.. Ancak, kaynak değeri bir 64-bit değişken ise, tüm üç platformlarda sonuç 4294967296 olur ve "64 konumlar x64 veya ARM üzerinde 256 konumlar ve x86 değişme kadar değeri sarma değil".  
+Desen başlamadan önce sola veya sağa en çok 255 BITS ARM mimarisi üzerinde bir değer gölgeye. Bir 64-bit değişken deseni kaynağı olmadığı sürece x86 hem x64 mimarileri üzerinde her 32 birden çok düzeni yinelenir; Bu durumda, x 64 ve her bir yazılım uygulaması burada işe x86 üzerinde 256 katları 64 her katları adresindeki düzeni tekrarlar. Örneğin, 32 konumlar tarafından sol gölgeye 1 değerine sahip 32-bit bir değişken, ARM üzerinde sonuç 0'dır, üzerinde x86 sonucu 1. ve üzerinde x64 sonucu de 1. Ancak, kaynak değeri bir 64-bit değişken ise, tüm üç platformlarda sonuç 4294967296 olur ve "64 konumlar x64 veya ARM üzerinde 256 konumlar ve x86 değişme kadar değeri sarma değil".  
   
 Kaynak türü bit sayısını aşıyor shift işleminin sonucu tanımsız olduğundan, derleyicinin tüm durumlarda tutarlı davranışı sağlamak için gerekli değildir. Bir kaydırma hem işlenenleri derleme zamanında biliniyorsa, örneğin, derleyici program shift sonucunu önceden hesaplar için bir iç yordamı kullanarak ve kaydırma işlemi yerine sonuç değiştirerek en iyi duruma. Shift tutar çok büyük ya da negatif sayı ise, iç yordamı sonucunu CPU tarafından yürütülen gibi farklı aynı shift ifadenin sonucu olabilir.  
   
@@ -113,4 +114,4 @@ X86 hem x64 mimarileri varsayılandır **/volatile:ms** Microsoft C++ derleyicis
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Visual C++ ARM işlemcileri için yapılandırma](../build/configuring-programs-for-arm-processors-visual-cpp.md)
+[Visual C++’ı ARM işlemciler için yapılandırma](../build/configuring-programs-for-arm-processors-visual-cpp.md)

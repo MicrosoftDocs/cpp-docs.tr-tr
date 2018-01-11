@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0a628d0ce3d85a2bdcae9c7d25550cbd36386e67
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 93652274432e5ae84bc7336f233f1cdfd278dc00
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schedulerworkercreationerror-class"></a>scheduler_worker_creation_error Sınıfı
 Bu sınıf eşzamanlılık çalışma zamanı'nda çalışan yürütme bağlamı oluşturmak için bir hatadan dolayı oluşturulan bir özel açıklar.  
@@ -77,4 +78,4 @@ explicit _CRTIMP scheduler_worker_creation_error(
  `HRESULT` Özel duruma neden hata değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

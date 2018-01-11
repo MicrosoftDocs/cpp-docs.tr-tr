@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4a0ff39c5565f12b4c4c1d5ae4a5850398be2b22
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23e0376006336aecb9d77bb448bf14614399a37a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="improving-compiler-throughput"></a>Derleyici Üretimini Geliştirme
 Projenizi daha hızlı oluşturmak için önceden derlenmiş üstbilgi dosyaları kullanın. ATL, MFC ya da Windows SDK'sı üst bilgi dosyaları kullanıyorsanız, bu önemlidir.  
@@ -32,4 +33,4 @@ Projenizi daha hızlı oluşturmak için önceden derlenmiş üstbilgi dosyalar�
  Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu iyileştirme](../../build/reference/optimizing-your-code.md)
+ [Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)

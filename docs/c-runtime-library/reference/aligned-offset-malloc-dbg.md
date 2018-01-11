@@ -32,11 +32,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f91d7f16d8505a5529aa770217e7d3947a24e3d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2d06092e33fb9cf13fb4ca39e19841fa3bb7fc42
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignedoffsetmallocdbg"></a>_aligned_offset_malloc_dbg
 Belirtilen hizalama sınırında (yalnızca hata ayıklama sürümü) bellek ayırır.  
@@ -99,4 +100,4 @@ void * _aligned_offset_malloc_dbg(
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

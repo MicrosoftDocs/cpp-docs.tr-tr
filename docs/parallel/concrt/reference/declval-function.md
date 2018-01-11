@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e9b7ccd6fbe043e2aa4edf0ff659b703108f6279
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae39b0ffe57d5286d9bf59049de2d6823a4910e4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="declval-function"></a>declval İşlevi
 ## <a name="syntax"></a>Sözdizimi  
@@ -39,4 +40,4 @@ _T&& declval();
  **Namespace:** stdx  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [stdx Namespace](stdx-namespace.md)
+ [stdx Ad Alanı](stdx-namespace.md)

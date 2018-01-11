@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ea3d4c2461579fcafc4f9ff7ba5071572229c640
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 033d772a40ddf55474ca845c9c5708423bcf5e90
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="one-dimensional-arrays"></a>Bir Boyutlu Diziler
 Köşeli ayraçlar içinde bir ifade arkasından bir sonek ifadesi (**[]**) bir dizi nesnesi bir öğenin alt gösterimidir. Alt simge ifadesi adresini değerinde temsil eden *ifade* ötesinde konumlandırır *sonek ifade* olarak ifade edilen zaman  
@@ -74,4 +75,4 @@ b[a]
  Alt simge ifadesi `line[0]` tarafından temsil edilen adres uzaklığı itibaren satırının ilk öğe değerini temsil eden `line` 0'dır. Benzer şekilde, bir ifade gibi `line[5]` satır öğesi uzaklığı beş konumdan veya dizinin altıncı öğesine başvuruyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Alt simge işleci:](../cpp/subscript-operator.md)
+ [Alt Simge İşleci:](../cpp/subscript-operator.md)

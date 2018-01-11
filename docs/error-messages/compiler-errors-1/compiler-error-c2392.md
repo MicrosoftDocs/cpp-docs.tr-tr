@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6fa5164028a622b03eb770e24a91c4b07968c3bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 04fecba855d986c735a64ada77d81a28485fc161
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2392"></a>Derleyici Hatası C2392
 'method1': türleri desteklenmiyor eşdeğişken döndürür yönetilen veya WinRTtypes, aksi takdirde 'method2' geçersiz  

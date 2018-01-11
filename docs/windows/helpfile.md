@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6681f8f47895d94935f9fbbb3d93d379a82f7eb6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 63987b4e1427f12925b55fa3570d80b9e3a4686d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="helpfile"></a>helpfile
 Tür Kitaplığı Yardım dosyasının adını ayarlar.  
@@ -63,4 +66,4 @@ Tür Kitaplığı Yardım dosyasının adını ayarlar.
  [Yöntem öznitelikleri](../windows/method-attributes.md)   
  [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
  [HelpContext](../windows/helpcontext.md)   
- [HelpString](../windows/helpstring.md)   
+ [helpstring](../windows/helpstring.md)   

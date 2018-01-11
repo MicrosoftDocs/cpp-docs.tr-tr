@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 401fe3685066017a6c21d54992d213fd804f70a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d53449ed39f40fd6cb1bfb6bd5924595ef78fd6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fcvt"></a>fcvt
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_fcvt](../../c-runtime-library/reference/fcvt.md) veya Gelişmiş Güvenlik [_fcvt_s](../../c-runtime-library/reference/fcvt-s.md) yerine.

@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d1dd4689cf4e2ef4c4f6601396110327c74773b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4905634af75f30c5428f8091d736adbe1b8490d8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arch-x86"></a>/arch (x86)
 X86 üzerinde kod oluşturma için Mimari belirtir. Ayrıca bkz. [/(x64) arch](../../build/reference/arch-x64.md) ve [/arch (ARM)](../../build/reference/arch-arm.md).  
@@ -88,4 +89,4 @@ r = t + d;     // This should produce the same overall result
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/ arch (en düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

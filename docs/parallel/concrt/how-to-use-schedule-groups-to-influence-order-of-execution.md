@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 909f6793e6171e0f219493815ca520cf4c390025
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fcb37c1c14a9d09230bfa5d4fdce1da5eddfb4f3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>Nasıl yapılır: Yürütme Sırasını Etkilemek için Zamanlama Grupları Kullanma
 Eşzamanlılık Çalışma Zamanı'nda görevler zamanlanmış sipariş belirleyici değildir. Ancak, görevleri çalıştırdığınız sırasını etkilemek için zamanlama ilkelerini kullanabilirsiniz. Bu konuda zamanlama grupları ile birlikte kullanmayı gösterir [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) görevlerin çalıştığı sırasını etkilemek için Zamanlayıcı ilkesi.  
@@ -118,5 +119,5 @@ group 1,
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zamanlama grupları](../../parallel/concrt/schedule-groups.md)   
- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)
+ [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)
 

@@ -25,11 +25,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ab4e9999b46bc005f377b51c691f6947519143e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1cbd96f5044626c7c3c07e8fca115c2b1dca8cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="destroying-frame-windows"></a>Çerçeve Pencerelerini Yok Etme
 MFC çerçevesi pencere yok etme ve bunun yanı sıra oluşturma framework belgeler ve görünümler ile ilişkili bu Windows yönetir. Ek windows oluşturursanız, yok etme için sorumludur.  
@@ -43,5 +44,5 @@ MFC çerçevesi pencere yok etme ve bunun yanı sıra oluşturma framework belge
 -   [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+ [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

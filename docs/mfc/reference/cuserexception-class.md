@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f88b9f7fb64697061df1e6d32f51a7c88c7e1be6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4613f2ba06ffa697df219172b98a5cf193c1f3b2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cuserexception-class"></a>CUserException sınıfı
 Bir son kullanıcı işlemi durdurmak için oluşturulur.  
@@ -61,4 +62,4 @@ class CUserException : public CSimpleException
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CException sınıfı](../../mfc/reference/cexception-class.md)
+ [CException Sınıfı](../../mfc/reference/cexception-class.md)

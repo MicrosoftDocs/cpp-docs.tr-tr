@@ -42,11 +42,12 @@ caps.latest.revision: "30"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0b7c3342550a65941c84b7902d7ed3e3ff11b3e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 78213f97021ad1e7c89d5dfde6c1cea8b6e12a7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="gmtime-gmtime32-gmtime64"></a>gmtime, _gmtime32, _gmtime64
 Bir saat değeri bir yapısına dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).  
@@ -165,4 +166,4 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   
  [_mkgmtime, _mkgmtime32, _mkgmtime64](../../c-runtime-library/reference/mkgmtime-mkgmtime32-mkgmtime64.md)   
  [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)

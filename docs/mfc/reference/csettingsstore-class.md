@@ -33,11 +33,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d30a06cc420b5e9f00f0340e92295ca629ad6fee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e8ed7cc6c6671e85c21379c4804df4d2f3e3d99d
+ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
 Windows API işlevleri, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.  
@@ -128,7 +129,7 @@ CSettingsStore(
  Belirten Boolean parametre olup olmadığını `CSettingsStore` nesnesi salt okunur modda oluşturulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `bAdmin` ayarlanır `false`, `m_hKey` üye değişkeni ayarlanmış `HKEY_LOCAL_MACHINE`. Ayarlarsanız `bAdmin` için `true`, `m_hKey` ayarlanır `HKEY_CURRENT_USER`.  
+ Varsa `bAdmin` ayarlanır `true`, `m_hKey` üye değişkeni ayarlanmış `HKEY_LOCAL_MACHINE`. Ayarlarsanız `bAdmin` için `false`, `m_hKey` ayarlanır `HKEY_CURRENT_USER`.  
   
  Güvenlik erişimi bağlıdır `bReadOnly` parametresi. Varsa `bReadonly` olan `false`, güvenlik erişimi ayarlanacak `KEY_ALL_ACCESS`. Varsa `bReadyOnly` olan `true`, güvenlik erişimi için bir birleşimini ayarlanacak `KEY_QUERY_VALUE, KEY_NOTIFY` ve `KEY_ENUMERATE_SUB_KEYS`. Kayıt defteri ile birlikte güvenlik erişim hakkında daha fazla bilgi için bkz: [kayıt defteri anahtarı güvenliği ve erişim hakları](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
   
@@ -452,4 +453,4 @@ virtual BOOL Write(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)
+ [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)

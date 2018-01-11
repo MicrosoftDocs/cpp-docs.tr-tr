@@ -45,11 +45,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33e0ca4c92d22d8afaed4523a7f274b6b5d20a2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 22922d29c09ee97a8b2a292953b4bf903ab6649e
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="cbitmap-class"></a>CBitmap sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) bit eşlem yalıtır ve bit eşlem işlemek için üye işlevleri sağlar.  
@@ -374,7 +375,7 @@ BOOL LoadMappedBitmap(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `LoadMappedBitmap` düğmesi metindeki yaygın olarak kullanılan renkleri eşler.  
   
- Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için bkz: Windows işlevi [CreateMappedBitmap](http://go.microsoft.com/fwlink/linkid=230562) ve [COLORMAP](http://msdn.microsoft.com/library/windows/desktop/bb760448) Windows SDK'sındaki yapısı.  
+ Eşlenmiş bir bit eşlem oluşturma hakkında daha fazla bilgi için bkz: Windows işlevi [CreateMappedBitmap](http://go.microsoft.com/fwlink/p/?linkid=230562) ve [COLORMAP](http://msdn.microsoft.com/library/windows/desktop/bb760448) Windows SDK'sındaki yapısı.  
   
 ##  <a name="loadoembitmap"></a>CBitmap::LoadOEMBitmap  
  Windows tarafından kullanılan önceden tanımlanmış bir bit eşlem yükler.  
@@ -474,5 +475,5 @@ CSize SetBitmapDimension(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek MDI](../../visual-cpp-samples.md)   
  [CGdiObject sınıfı](../../mfc/reference/cgdiobject-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

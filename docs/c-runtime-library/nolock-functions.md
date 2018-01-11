@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 769fce588307a559a5926dfb5374ccad72ed857b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 250f12be8e1768b5e73636210753c95188d9229f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nolock-functions"></a>_nolock İşlevleri
 Bu, tüm kilitleme gerçekleştirmeyin işlevlerdir. Bunlar, en yüksek performans gerektiren kullanıcılar için sağlanır. Daha fazla bilgi için bkz: [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md).  
@@ -63,4 +64,4 @@ Bu, tüm kilitleme gerçekleştirmeyin işlevlerdir. Bunlar, en yüksek performa
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Giriş ve çıkış](../c-runtime-library/input-and-output.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

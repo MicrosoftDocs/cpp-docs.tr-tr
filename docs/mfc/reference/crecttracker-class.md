@@ -49,11 +49,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b151912140a2aa228b26a0afa7d620467d729386
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f870ef92296636c8d27fc166d41cdefc54d1585
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crecttracker-class"></a>CRectTracker sınıfı
 Bir öğenin görüntülenen taşınır ve farklı fashions yeniden boyutlandırılıp sağlar.  
@@ -444,4 +445,4 @@ BOOL TrackRubberBand(
  [MFC örnek DRAWCLI](../../visual-cpp-samples.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleResizeBar sınıfı](../../mfc/reference/coleresizebar-class.md)   
- [CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)
+ [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)

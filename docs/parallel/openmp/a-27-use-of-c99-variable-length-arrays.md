@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 673eeb7229524b17c12a9a40c64380e4e5bb5feb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4bf3136c4fb4c5c14b728acbc61f3fbf66ce08bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a27---use-of-c99-variable-length-arrays"></a>A.27   C99 Değişken Uzunluklu Dizilerin Kullanımı
 Aşağıdaki örnek, içinde nasıl C99 değişken uzunlukta diziler (VLAs) kullanılacağını gösterir. bir `firstprivate` yönergesi ([bölüm 2.7.2.2](../../parallel/openmp/2-7-2-2-firstprivate.md) sayfasında 26).  

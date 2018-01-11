@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 37e7cd70b9c121591c42811870558bbb0cc08d31
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d8054fe4fae4aafa88c34833a5a2a92a6b9b44bf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: Bağlama Duyarlı Yardım Desteği
 Bu Not Yardım bağlamları kimlikleri ve diğer Yardım konuları MFC'de atamak için kurallar açıklanmaktadır. Bağlama duyarlı Yardım desteği Visual C++'da kullanılabilir Yardım Derleyici gerektirir.  
@@ -180,5 +181,5 @@ int AFXAPI AfxMessageBox(UINT nIDPrompt,
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

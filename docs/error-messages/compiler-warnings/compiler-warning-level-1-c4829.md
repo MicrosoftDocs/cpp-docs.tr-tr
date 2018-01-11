@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2a7fe8de7fd47b16397972a054c18cd266f8c588
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d662aaf24526320c0ced706534099d4c94a3c9f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4829"></a>Derleyici Uyarısı (düzey 1) C4829
 Büyük olasılıkla yanlış parametreler ana işlevi. Göz önünde bulundurun ' intmain (Platform::Array\<Platform::String ^ > ^ argv)'  

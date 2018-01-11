@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dbc85ad329a990ecdd7bc3a05f28d16a0c58c8e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 32b9f5f3ee335aac0a8382377aa850c3b91a27a0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="profile-guided-optimization-error-pg0165"></a>Profil Temelli İyileştirme Hatası PG0165
 'Filename.pgd' okunuyor: ' PGD sürümü desteklenmiyor (sürüm uyumsuzluğu)'.  

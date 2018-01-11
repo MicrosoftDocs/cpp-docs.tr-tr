@@ -17,16 +17,17 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 583b2c0ec67c4799753fe52d74131e7238b11d46
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9792f8b7758ff5a1e5742b6643d9f73931bce6f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idl-attributes-add-method-wizard"></a>IDL Öznitelikleri, Yöntem Ekleme Sihirbazı
 Yöntem Ekleme Sihirbazı'nı bu sayfanın tüm arabirimi tanım dili (IDL) ayarlarını yöntemi belirtmek için kullanın.  
   
- **Kimliği**  
+ **id**  
  Yöntemi tanımlayan sayısal Kimliğini ayarlar. Bkz: [kimliği](http://msdn.microsoft.com/library/windows/desktop/aa367040) içinde *MIDL başvuru*.  
   
  Bu kutu için özel arabirimleri kullanılamıyor ve MFC dispinterfaces için kullanılamaz.  
@@ -36,12 +37,12 @@ Yöntem Ekleme Sihirbazı'nı bu sayfanın tüm arabirimi tanım dili (IDL) ayar
   
  MFC dispinterfaces için kullanılamaz.  
   
- **HelpContext**  
+ **helpcontext**  
  Bu yöntemi Yardım dosyasında kullanıcı görünümü bilgi sağlayan bir içerik Kimliğini belirtir. Bkz: [helpcontext](http://msdn.microsoft.com/library/windows/desktop/aa366851) içinde *MIDL başvuru*.  
   
  MFC dispinterfaces için kullanılamaz.  
   
- **HelpString**  
+ **helpstring**  
  Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, bunu ayarlamak "yöntem *yöntem adı*." Bkz: [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) içinde *MIDL başvuru*.  
   
  MFC dispinterfaces için kullanılamaz.  
@@ -51,11 +52,11 @@ Yöntem Ekleme Sihirbazı'nı bu sayfanın tüm arabirimi tanım dili (IDL) ayar
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|**Gizli**|Yöntem var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) içinde *MIDL başvuru*.|  
+|**hidden**|Yöntem var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) içinde *MIDL başvuru*.|  
 |**Kaynak**|Yöntemi, üyesi olayları kaynağı olduğunu gösterir. Bkz: [kaynak](http://msdn.microsoft.com/library/windows/desktop/aa367166) içinde *MIDL başvuru*.|  
 |`local`|MIDL derleyici yöntemi uzak olmadığını belirtir. Bkz: [yerel](http://msdn.microsoft.com/library/windows/desktop/aa367071) içinde *MIDL başvuru*.|  
-|**sınırlı**|Yöntem rasgele çağrılamaz belirtir. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) içinde *MIDL başvuru*.|  
-|**Vararg**|Değişken sayıda bağımsız değişken yöntemi aldığını belirtir. Bunu başarmak için son bağımsız değişken güvenli bir dizi olmalıdır **değişken** kalan tüm bağımsız değişkenler içeren türü. Bkz: [vararg](http://msdn.microsoft.com/library/windows/desktop/aa367304) içinde *MIDL başvuru*.|  
+|**restricted**|Yöntem rasgele çağrılamaz belirtir. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) içinde *MIDL başvuru*.|  
+|**vararg**|Değişken sayıda bağımsız değişken yöntemi aldığını belirtir. Bunu başarmak için son bağımsız değişken güvenli bir dizi olmalıdır **değişken** kalan tüm bağımsız değişkenler içeren türü. Bkz: [vararg](http://msdn.microsoft.com/library/windows/desktop/aa367304) içinde *MIDL başvuru*.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)   

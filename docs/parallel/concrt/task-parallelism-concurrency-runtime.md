@@ -19,11 +19,12 @@ caps.latest.revision: "56"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 26b41c4fa3f3cdc9840eecbd31790b7cf82d7659
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d2a177f30829719022afdedd810ecc265c94130d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleştirir ve genellikle diğer görevlerle Paralel çalışan iş birimidir. Bir görev halinde düzenlenmiştir ek, daha ayrıntılı görevleri ayrılmış bir *görev grubu*.  
@@ -319,16 +320,16 @@ Message from task: 42
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic Sıralama algoritması performansını artırmak için algoritması.|  
-|[Nasıl yapılır: paralel işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlemler gerçekleştiren bir program performansını artırmak için algoritması.|  
-|[Nasıl yapılır: bir gecikmeden sonra tamamlanan bir görev oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Nasıl kullanılacağını gösterir `task`, `cancellation_token_source`, `cancellation_token`, ve `task_completion_event` bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıflar.|  
-|[İzlenecek yol: Vadeli işlemleri uygulama](../../parallel/concrt/walkthrough-implementing-futures.md)|Daha fazla yapan varolan işlevsellikte eşzamanlılık çalışma zamanı bir şey halinde birleştirmek gösterilmiştir.|  
-|[Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Eş zamanlı uygulamaları geliştirmek için kesinlik temelli bir programlama modeli sağlar PPL açıklar.|  
+|[Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic Sıralama algoritması performansını artırmak için algoritması.|  
+|[Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlemler gerçekleştiren bir program performansını artırmak için algoritması.|  
+|[Nasıl yapılır: Bir Gecikmeden Sonra Tamamlanan bir Görev Oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Nasıl kullanılacağını gösterir `task`, `cancellation_token_source`, `cancellation_token`, ve `task_completion_event` bir gecikmeden sonra tamamlanan bir görev oluşturmak için sınıflar.|  
+|[İzlenecek Yol: Vadeli İşlemleri Uygulama](../../parallel/concrt/walkthrough-implementing-futures.md)|Daha fazla yapan varolan işlevsellikte eşzamanlılık çalışma zamanı bir şey halinde birleştirmek gösterilmiştir.|  
+|[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Eş zamanlı uygulamaları geliştirmek için kesinlik temelli bir programlama modeli sağlar PPL açıklar.|  
   
 ## <a name="reference"></a>Başvuru  
- [task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)  
+ [task Sınıfı (Eşzamanlılık Çalışma Zamanı)](../../parallel/concrt/reference/task-class.md)  
   
- [task_completion_event sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)  
+ [task_completion_event Sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)  
 
  [when_all işlevi](reference/concurrency-namespace-functions.md#when_all)  
   
@@ -338,4 +339,4 @@ Message from task: 42
   
  [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)  
   
- [structured_task_group sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)
+ [structured_task_group Sınıfı](../../parallel/concrt/reference/structured-task-group-class.md)

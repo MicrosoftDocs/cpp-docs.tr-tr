@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2a16e9125c0c121aea3905b6e20eba59ef1dc68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f8fee8ecffda86f306b44f0d5b873d5192d4d181
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="output-streams"></a>Çıkış Akışları
 Bir çıkış akışı bayt için bir hedef nesnesidir. Üç en önemli çıkış akışı sınıflardır `ostream`, `ofstream`, ve `ostringstream`.  
@@ -40,22 +41,22 @@ Bir çıkış akışı bayt için bir hedef nesnesidir. Üç en önemli çıkı�
  Çalışma zamanı işlevi gibi `sprintf_s`, `ostringstream` sınıfı, bellek içi dizeleri çıkışı destekler. Akış g/ç biçimlendirme kullanarak bellekte bir dize oluşturmak için sınıfın bir nesnesi oluşturmak `ostringstream`.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Çıkış akış nesnelerini oluşturma](../standard-library/constructing-output-stream-objects.md)  
+ [Çıkış Akış Nesnelerini Oluşturma](../standard-library/constructing-output-stream-objects.md)  
   
- [Ekleme işleçlerini kullanma ve biçimi denetleme](../standard-library/using-insertion-operators-and-controlling-format.md)  
+ [Ekleme İşleçlerini Kullanma ve Biçimi Denetleme](../standard-library/using-insertion-operators-and-controlling-format.md)  
   
- [Çıkış dosya akışı üye işlevleri](../standard-library/output-file-stream-member-functions.md)  
+ [Çıkış Dosya Akışı Üye İşlevleri](../standard-library/output-file-stream-member-functions.md)  
   
- [Ara belleğe almanın etkileri](../standard-library/effects-of-buffering.md)  
+ [Ara Belleğe Almanın Etkileri](../standard-library/effects-of-buffering.md)  
   
- [İkili çıktı dosyaları](../standard-library/binary-output-files.md)  
+ [İkili Çıktı Dosyaları](../standard-library/binary-output-files.md)  
   
- [Aşırı yükleme << kendi sınıflarınız için işleci](../standard-library/overloading-the-output-operator-for-your-own-classes.md)  
+ [Kendi Sınıflarınız İçin << İşleci Aşırı Yükleme](../standard-library/overloading-the-output-operator-for-your-own-classes.md)  
   
- [Bağımsız değişkenler olmadan kendi Manipülatörlerinizi yazma](../standard-library/writing-your-own-manipulators-without-arguments.md)  
+ [Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma](../standard-library/writing-your-own-manipulators-without-arguments.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz. 
  [ofstream](../standard-library/basic-ofstream-class.md)   
  [ostringstream](../standard-library/basic-ostringstream-class.md)   
- [iostream programlama](../standard-library/iostream-programming.md)
+ [iostream Programlaması](../standard-library/iostream-programming.md)
 

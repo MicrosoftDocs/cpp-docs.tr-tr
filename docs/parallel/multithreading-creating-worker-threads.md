@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c43b8453b592369d8179c9d3917bdbcc7381fa00
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 94a047de82bebb03f681e1bfdf6f68d56554fe8a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-creating-worker-threads"></a>Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma
 Bir çalışan iş parçacığı yaygın kullanıcı uygulamanızı kullanmaya devam etmek için beklemek için olmamalıdır arka plan görevlerini işlemek için kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevleri çalışan iş parçacığı iyi örnekleridir. Bu konuda, bir çalışan iş parçacığı oluşturmak için gerekli adımları ayrıntıları verilmektedir. Konular şunlardır:  
@@ -98,7 +99,7 @@ AfxBeginThread(MyThreadProc, pNewObject);
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [Çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma](../parallel/multithreading-creating-user-interface-threads.md)  
+-   [Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma](../parallel/multithreading-creating-user-interface-threads.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

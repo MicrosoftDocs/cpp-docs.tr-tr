@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c7e88956ab7c7fe1c03d10a8519aedad4767e48e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 406e35b6ab694ca972d4cd6add0dcca7586e5005
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="settings-for-the-tool-tip-control"></a>Araç İpucu Denetimi için Ayarlar
 Araç ipucunu denetimini ayarlayabilirsiniz ([CToolTipCtrl](../mfc/reference/ctooltipctrl-class.md)) etkin veya devre dışı olmalıdır. Etkin olarak ayarladığınızda, araç ipucunu denetimini imleci bir aracı üzerinde olduğunda görüntülenir. Etkin olmayan olarak ayarladığınızda, imleci bir araç olsa bile araç ipucunu denetimini görünmez. Çağrı [etkinleştirme](../mfc/reference/ctooltipctrl-class.md#activate) etkinleştirmek veya bir araç ipucunu denetimini devre dışı bırakmak için.  
@@ -31,5 +32,5 @@ Araç ipucunu denetimini ayarlayabilirsiniz ([CToolTipCtrl](../mfc/reference/cto
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolTipCtrl kullanma](../mfc/using-ctooltipctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0f1b588abe7bb222751506e21d90b4b8596b381f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9446cb72ba9380e57b014b32d9ae00f6e9e554d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk2017"></a>Bağlayıcı Araçları Hatası LNK2017
 'kesimine' /LARGEADDRESSAWARE:NO geçersiz 'simgesi' yeniden konumlandırma  

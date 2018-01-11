@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d8ca7968011061b36fe0b0e54bea457ee40c431
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a4987554965674612eaf8d9aa78c659f7f28b75
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdocitem-class"></a>CDocItem sınıfı
 Bir belgenin veri bileşenleridir belge öğeleri için temel sınıf.  
@@ -93,4 +94,4 @@ virtual BOOL IsBlank() const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [COleDocument sınıfı](../../mfc/reference/coledocument-class.md)   
  [COleServerItem sınıfı](../../mfc/reference/coleserveritem-class.md)   
- [COleClientItem sınıfı](../../mfc/reference/coleclientitem-class.md)
+ [COleClientItem Sınıfı](../../mfc/reference/coleclientitem-class.md)

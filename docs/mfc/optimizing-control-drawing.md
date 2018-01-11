@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b7b78bd517e7f31168c13595ec699b223ba458e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3e79a7b8e539198844c106a9c41408f04d69186
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="optimizing-control-drawing"></a>Denetim Çizimini İyileştirme
 Kendisini bir kapsayıcı tarafından sağlanan cihaz bağlamına çizmek için bir denetim istendiğinde, genellikle GDI Nesneleri (örneğin, kalemler, Fırçalar ve yazı tipleri) cihaz bağlamına seçer, çizim işlemlerini gerçekleştirir ve önceki GDI nesneleri geri yükler. Daha önce seçilen nesneleri denetimleri tek tek geri yüklemezseniz kapsayıcı aynı cihaz bağlamına çizilecek birden çok denetimleri varsa ve her denetim gerektirdiği GDI nesneleri seçer, zaman kaydedilebilir. Tüm denetimler çizilmiş sonra kapsayıcı özgün nesneleri otomatik olarak geri yükleyebilirsiniz.  
@@ -56,5 +57,5 @@ Kendisini bir kapsayıcı tarafından sağlanan cihaz bağlamına çizmek için 
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md)   
- [MFC ActiveX denetimleri: ActiveX denetimini boyama](../mfc/mfc-activex-controls-painting-an-activex-control.md)
+ [MFC ActiveX Denetimleri: ActiveX Denetimini Boyama](../mfc/mfc-activex-controls-painting-an-activex-control.md)
 

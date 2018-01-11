@@ -345,11 +345,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c3c0888ef6fd2980eefed9a6e5c503454201c3dc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 895091131bf8a62a13527f717831a34764c931ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 OLE denetimleri geliştirmek için güçlü bir temel sınıf.  
@@ -3770,4 +3771,4 @@ virtual LRESULT WindowProc(
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFontHolder sınıfı](../../mfc/reference/cfontholder-class.md)   
- [CPictureHolder sınıfı](../../mfc/reference/cpictureholder-class.md)
+ [CPictureHolder Sınıfı](../../mfc/reference/cpictureholder-class.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f4b983d790f2261714d831d6a66420e2e5d79502
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c4e8707dac15c634242145f9563033de0e109ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="statements-limits-on-switch-statements"></a>Deyimler: Switch Deyimleri Sınırları
 **ANSI 3.6.4.2** sayısı **durum** değerler bir `switch` deyimi  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Microsoft C sayısını sınırlamaz **durum** değerler bir **geçiş** deyimi. Kullanılabilir bellek tarafından sınırlıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)
+ [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

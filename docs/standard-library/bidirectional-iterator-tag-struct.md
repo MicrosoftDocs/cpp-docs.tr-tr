@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c6309b85946849faf9b1193a29a5684dbfd7f738
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6ac5f22a22ad64e137a56be964068229a6ed0958
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bidirectionaliteratortag-struct"></a>bidirectional_iterator_tag Yapısı
 Dönüş türü için sağlayan bir sınıf **iterator_category** çift yönlü yineleyici temsil eden bir işlev.  

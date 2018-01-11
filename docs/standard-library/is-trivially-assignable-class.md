@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4d40adc84ae8e2a9bb8f53e78d3a90dda99fd7e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 888c57de7cf83dda35f5d0cc114abed30fbb2115
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="istriviallyassignable-class"></a>is_trivially_assignable sınıfı
 Bir değeri olup olmadığını sınar `From` türü trivially atanabilen `To` türü  
@@ -49,7 +50,7 @@ struct is_trivially_assignable;
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 
 
 

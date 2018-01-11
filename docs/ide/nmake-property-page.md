@@ -1,5 +1,5 @@
 ---
-title: "NMake özellik sayfası | Microsoft Docs"
+title: "NMake özellik sayfası (Windows C++) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -19,16 +19,17 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6c487cf7218f11ba6a6a27ddcf5e7b6b575b1499
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7cc9f6dc7c5fec4a184ed189cfaae230df3f1e9e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
 **NMake** özellik sayfası NMake projeleri için yapılandırma ayarlarını belirtmenize olanak sağlar.  
   
- NMake projeler hakkında daha fazla bilgi için bkz: [derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md).  
+ NMake projeler hakkında daha fazla bilgi için bkz: [derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md). Non_Windows derleme görevleri dosyası projeleri için bkz: [derleme görevleri dosyası proje özellikleri (Linux C++)](../linux/prop-pages/makefile-linux.md), [genel proje özellikleri (Android C++ derleme görevleri dosyası)](/visualstudio/cross-platform/general-makefile-android-prop-page) veya [NMake özellikleri (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
   
  **NMake** özellik sayfası, aşağıdaki özellikleri içerir.  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/24/2017
  **Komut satırı Temizle**  
  Ne zaman çalıştırılması için komutu belirler **temiz** üzerinde tıkladığınız **yapı** menüsü.  
   
- **Çıktı**  
+ **Output**  
  Komut satırı için çıktı içeren dosyanın adını belirtir. Varsayılan olarak, bu dosya adı proje adına göre temel alır.  
   
  **Önişlemci tanımları**  
@@ -69,4 +70,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Nasıl yapılır: derleme görevleri dosyası projeleri için IntelliSense'i etkinleştirme](../ide/how-to-enable-intellisense-for-makefile-projects.md)
+ [Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme](../ide/how-to-enable-intellisense-for-makefile-projects.md)

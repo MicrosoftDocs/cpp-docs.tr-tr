@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5c056907716f95a82fde01847485837fcba96f66
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 37d77fdc4df7d2e7239b8bba652d8cf8f4bbc997
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığını ve Dışarı Aktarma Dosyasını Kullanma
 Bir program, ayrıca alır başka bir programa (yürütülebilir bir dosyanın veya bir DLL) verir veya ikiden fazla programlar hem vermek ve birbirlerinden alırsanız, bu programlar bağlamak için komutları dairesel dışarı aktarmalar uyum gerekir.  
@@ -37,4 +38,4 @@ Bir program, ayrıca alır başka bir programa (yürütülebilir bir dosyanın v
  Son olarak, programın ile başlamıştır bağlayın. BAĞLANTI komutta, nesneleri ve kitaplıkları LIB program ve içeri aktarma kitaplığı için oluşturulan .exp dosyası programı veya program tarafından kullanılan dışarı kitaplığı belirtin. Örnek devam etmek için nesneleri ve ONE.dll gidin kitaplıkları yanı sıra ONE.exp ve TWO.lib, ONE.dll bağlantı komutu içerir. .Def dosyası ya da/Export belirtimleri bağlantı komutta belirtmeyin; Verme tanımları .exp dosyasında bulunan çünkü bunlar, gerekli değildir. Bir .exp dosyası kullanarak bağladığınızda, bağlantı içeri aktarma kitaplığı oluşturmaz, .exp dosyasını oluştururken bir kabul ettiği için oluşturulmuştur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)
+ [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)

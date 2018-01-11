@@ -464,11 +464,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b97785b2853b278e93f5f13aa2c40741d10c9d9c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33d88b6f187e80635bcc1f63077f674d6adbb74a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reference-concurrency-runtime"></a>Başvuru (Eşzamanlılık Çalışma Zamanı)
 Bu bölüm eşzamanlılık çalışma zamanı için başvuru bilgileri içerir.

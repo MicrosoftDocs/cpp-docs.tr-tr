@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 119de1e705a0e3de93aadc61d38ecdde2fc43fe9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 972a8dc27283839ce1eade0e1e9b81dc92998b15
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-extended-storage-class-attributes"></a>C Genişletilmiş Depolama Sınıfı Öznitelikler
 **Microsoft özel**  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/24/2017
  *Genişletilmiş-decl-değiştirici-seq genişletilmiş decl-değiştirici*  
   
  *Genişletilmiş decl-değiştirici*:  
- **iş parçacığı**  
+ **thread**  
   
  **naked**  
   
@@ -58,4 +59,4 @@ ms.lasthandoff: 10/24/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve türler](../c-language/declarations-and-types.md)
+ [Bildirimler ve Türler](../c-language/declarations-and-types.md)

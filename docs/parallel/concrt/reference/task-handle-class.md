@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 358d217a131ec3e282775604619f1ff265baf490
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 38da8f97dfd689037f52f5e7c67bb51f4577a05a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="taskhandle-class"></a>task_handle Sınıfı
 `task_handle` Sınıfı, bir tek tek paralel iş öğesini temsil eder. Yönergeler ve bir parça işin yürütmek için gerekli verileri saklar.  
@@ -108,4 +109,4 @@ task_handle(const _Function& _Func);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [task_group sınıfı](task-group-class.md)   
- [structured_task_group sınıfı](structured-task-group-class.md)
+ [structured_task_group Sınıfı](structured-task-group-class.md)

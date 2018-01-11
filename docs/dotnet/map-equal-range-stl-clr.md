@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13500bbd5842460dff5cf071bd626555bf1c5cc9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 665475d63129bab1c1413d51f6324aba52806fc3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapequalrange-stlclr"></a>map::equal_range (STL/CLR)
 Belirtilen bir anahtarla eşleşen aralığı bulur.  
@@ -90,4 +93,4 @@ equal_range(L'x') empty = True
  [Map::Count (STL/CLR)](../dotnet/map-count-stl-clr.md)   
  [Map::Find (STL/CLR)](../dotnet/map-find-stl-clr.md)   
  [Map::lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)   
- [Map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)
+ [map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)

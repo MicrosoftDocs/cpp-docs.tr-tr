@@ -12,11 +12,12 @@ caps.latest.revision: "35"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: c8496e0128d3ebd88c5a3a2fafad593c135f6fbf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5c97a264488e8b382091b24cdef8faae4c7bbfc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı koleksiyon türü boş kullanımını yapabilir. Ancak, geçirdiğiniz zaman koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabirimi (ABI) — Örneğin, bir XAML denetimi veya bir JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  
@@ -104,27 +105,27 @@ void FindButton(UIElementCollection^ col)
   
  Değiştirilebilir bir koleksiyonun öğelerini değiştirilebilir, ancak olarak bilinen bir salt okunur koleksiyonun öğelerini bir *Görünüm*, salt okunur. Öğeleri bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) veya[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) koleksiyonu erişilebilir yineleyici veya koleksiyonun kullanarak [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) ve bir dizin. İlişkilendirilebilir bir koleksiyonun öğelerini erişilebilir koleksiyonunun kullanarak [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar.  
   
- [Platform::Collections sınıfı](../cppcx/platform-collections-map-class.md)  
+ [Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)  
  Değiştirilebilir, ilişkilendirilebilir koleksiyonu. Harita, anahtar-değer çiftleri öğelerdir. İlişkili değerini ve tüm anahtar-değer çiftleri yineleme almak için bir anahtar bakarak, her ikisi de desteklenir.  
   
  `Map`ve `MapView` üzerinde şablonlu olan `<K, V, C = std::less<K>>`; bu nedenle, karşılaştırıcı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` üzerinde şablonlu olan `<T, E = std::equal_to<T>>` davranışını özelleştirebilirsiniz böylece `IndexOf()`. Bu çoğunlukla önemlidir `Vector` ve `VectorView` değeri yapılar. Örneğin, bir vektör oluşturmak için\<Windows::Foundation::DateTime >, DateTime aşırı değil çünkü özel bir karşılaştırıcı sağlamalısınız == işleci.  
   
- [Platform::Collections::MapView sınıfı](../cppcx/platform-collections-mapview-class.md)  
+ [Platform::Collections::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)  
  Bir salt okunur sürümünü bir `Map`.  
   
- [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md)  
+ [Platform::Collections::Vector Sınıfı](../cppcx/platform-collections-vector-class.md)  
  Değiştirilebilir dizisi koleksiyonu. `Vector<T>`sabiti zamanı rasgele erişim ve amortized-sabiti-time destekler [Append](../cppcx/platform-collections-vector-class.md#append) işlemleri...  
   
- [Platform::Collections::VectorView sınıfı](../cppcx/platform-collections-vectorview-class.md)  
+ [Platform::Collections::VectorView Sınıfı](../cppcx/platform-collections-vectorview-class.md)  
  Bir salt okunur sürümünü bir `Vector`.  
   
- [Platform::Collections::InputIterator sınıfı](../cppcx/platform-collections-inputiterator-class.md)  
+ [Platform::Collections::InputIterator Sınıfı](../cppcx/platform-collections-inputiterator-class.md)  
  STL giriş yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
   
- [Platform::Collections::VectorIterator sınıfı](../cppcx/platform-collections-vectoriterator-class.md)  
+ [Platform::Collections::VectorIterator Sınıfı](../cppcx/platform-collections-vectoriterator-class.md)  
  STL değişebilir rasgele erişim yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
   
- [Platform::Collections::VectorViewIterator sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)  
+ [Platform::Collections::VectorViewIterator Sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)  
  Bir STL gereksinimlerini karşılayan bir STL yineleyici `const` rasgele erişim yineleyici.  
   
 ### <a name="begin-and-end-functions"></a>Begin() ve end() işlevleri  

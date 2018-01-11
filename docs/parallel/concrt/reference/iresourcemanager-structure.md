@@ -24,11 +24,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ca65d1e021bc1710386bf7b448b55378af96f56e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0a88cfafe9bbfdc04776050a0a956bf9a8b6766e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager Yapısı
 Eşzamanlılık Çalışma zamanı kaynak yöneticisi için bir arabirim. Bu, zamanlayıcılar Resource Manager ile iletişim kurmak arabirimidir.  
@@ -172,4 +173,4 @@ virtual unsigned int Release() = 0;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [Ischedulerproxy yapısı](ischedulerproxy-structure.md)   
- [Ischeduler yapısı](ischeduler-structure.md)
+ [IScheduler Yapısı](ischeduler-structure.md)

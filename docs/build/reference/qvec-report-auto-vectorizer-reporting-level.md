@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e0df8e487f2f79029c73adfbf44cb3873bcfcaa3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 43c9a182046ff148621151107a98932cc39835f2
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
 Derleyici raporlama özelliğini etkinleştirir [otomatik vektör hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) ve derleme sırasında bilgilendirici iletileri çıktı düzeyini belirtir.  
@@ -53,4 +54,4 @@ Derleyici raporlama özelliğini etkinleştirir [otomatik vektör hale getirici]
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/?LinkId=263662)
+ [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)

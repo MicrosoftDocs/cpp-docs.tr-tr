@@ -45,11 +45,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b25658eda1ff4190f62478126d738a744cb17bce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3c0dcf83a409f949d1f6bd677d76242186cb4eb7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_InterlockedXor iç işlevler
 **Microsoft özel**  
@@ -212,4 +213,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [X86 çakışıyor derleyici](../build/conflicts-with-the-x86-compiler.md)
+ [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)

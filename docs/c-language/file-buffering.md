@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 56d486d06672068526fef41848c959aec382aa66
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 101f42ed53f0677add470c350df70cb08a7a47eb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-buffering"></a>Dosyayı Ara Belleğe Alma
 **ANSI 4.9.3** dosyayı arabelleğe alma özellikleri  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  Standart I/O işlevleri aracılığıyla erişilen disk dosyaları tamamıyla arabelleğe alınır. Varsayılan olarak, arabellek 512 bayt tutar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e8bec09279dcb18753575ed496812d5565e2e62b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e5433688fee855654e29715ceffa4af432e2c30a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-3-c4636"></a>Derleyici Uyarısı (Düzey 3) C4636
 XML belge açıklaması 'oluşturmak için ' uygulanan: etiketi boş gerekli '' özniteliği.  

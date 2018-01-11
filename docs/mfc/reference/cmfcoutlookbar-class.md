@@ -49,11 +49,12 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 00988ef4a0b70561ec3a5687502ddae95508dad5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 257b9157059f20d9023abee092c38ad8c1a57167
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar sınıfı
 Görsel görünümünü sekmeli bölmesiyle **Gezinti Bölmesi** Microsoft Outlook 2000 veya Outlook 2003'te. `CMFCOutlookBar` Nesnesini içeren bir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesne ve bir dizi sekme. Sekmeleri birini kullanabilir [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri veya `CWnd`-türetilmiş nesneleri. Kullanıcı için Outlook çubuğu düğmeleri ve görüntüleme alanı bir dizi olarak görünür. Kullanıcı bir düğmesine tıkladığında, ilgili denetim veya düğmesi bölmesinde görüntülenir.  
@@ -526,4 +527,4 @@ void SetMode2003(BOOL bMode2003=TRUE);
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CBaseTabbedPane sınıfı](../../mfc/reference/cbasetabbedpane-class.md)   
  [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md)   
- [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md)
+ [CMFCOutlookBarPane Sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4004b7bc206b099a945aa70b5976b421fc3c547d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d465b39e00bee0911fb5b04bbe60af68e1f296c5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-agents-that-use-specific-scheduler-policies"></a>Nasıl yapılır: Belirli Zamanlayıcı İlkelerini Kullanan Aracılar Oluşturma
 Bir aracı zaman uyumsuz olarak daha büyük hesaplama görevlerini çözümlemek için diğer bileşenlerle birlikte çalışan bir uygulama bileşendir. Bir aracı tipik olarak ayarlanmış bir yaşam döngüsü sahiptir ve durumu korur.  
@@ -61,6 +62,6 @@ Computing all permutations of 'Grapefruit'...
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md)   
- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)   
+ [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)   
  
 

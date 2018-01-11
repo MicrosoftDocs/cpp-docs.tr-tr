@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f847e3e8d79e5d36f455d3192b10376237a4d3bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd1d2938a75010d20bde26d2d9d5656b1418f3da
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-and-database-classes"></a>Dosya ve Veritabanı Sınıfları
 Bu sınıf, bir veritabanı veya bir disk dosyası bilgilerini depolamak izin verir. Veritabanı sınıfları üç kümesi vardır: OLE DB, ODBC ve DAO — benzer bir işlevsellik sağlar. OLE DB Grup OLE DB kullanılarak uygulanır ve OLE DB tüketici şablonlarıyla çalışır, DAO grubu veri erişim nesnesi kullanılarak uygulanır ve ODBC Grup açık veritabanı bağlantısı kullanılarak uygulanır. Vardır ayrıca standart dosyaları, etkin akışını ve HTML akışlarını düzenleme için sınıfları kümesi.  
@@ -31,11 +32,11 @@ Bu sınıf, bir veritabanı veya bir disk dosyası bilgilerini depolamak izin ve
   
 -   [Dosya g/ç sınıfları](../mfc/file-i-o-classes.md)  
   
--   [OLE DB sınıfları](../mfc/ole-db-classes.md)  
+-   [OLE DB Sınıfları](../mfc/ole-db-classes.md)  
   
--   [DAO sınıfları](../mfc/dao-classes.md)  
+-   [DAO Sınıfları](../mfc/dao-classes.md)  
   
--   [ODBC sınıfları](../mfc/odbc-classes.md)  
+-   [ODBC Sınıfları](../mfc/odbc-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../mfc/class-library-overview.md)

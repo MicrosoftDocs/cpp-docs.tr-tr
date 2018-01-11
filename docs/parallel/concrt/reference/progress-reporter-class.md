@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a72250bcb35b625276d0b8692ce1ec9d13a20ade
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1dcdba2e5242dcd750eea42b61575ebea921d7b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="progressreporter-class"></a>progress_reporter Sınıfı
 Belirli bir türdeki ilerleme bildirimleri raporlama ilerleme Raporlayıcı sınıf sağlar. Her progress_reporter nesne belirli bir zaman uyumsuz eylem veya işlem için bağlı.  
@@ -83,4 +84,4 @@ void report(const _ProgressType& val) const;
  Rapora bir ilerleme bildirimi aracılığıyla yükü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

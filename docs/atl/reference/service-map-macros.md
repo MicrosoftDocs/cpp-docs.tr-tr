@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fb8ee6db5f75a71e11a0b3dbdbca1bc6c077c3a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 444d89833d84f23099ff0de8bce29bfc9d0a1344
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="service-map-macros"></a>Hizmet eşleme makroları
 Bu makroları hizmet eşlemeleri ve girişleri tanımlayın.  

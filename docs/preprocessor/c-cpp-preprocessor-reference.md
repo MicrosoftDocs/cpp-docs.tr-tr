@@ -16,26 +16,27 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e0ce24f1f7b50a899f02cc8578a293aa5734548b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c91928edf1617d8572cf6a6087afecb8e08eec3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cc-preprocessor-reference"></a>C/C++ Ön işlemci Başvurusu
 *C/C++ ön işlemci başvurusu* Microsoft C/C++ içinde uygulandığı şekilde önişlemci açıklar. Derleyiciye geçirilmeden önce önişlemci C ve C++ dosyalarda ön işlemleri gerçekleştirir. Önişlemci koşullu Kodu derlemek, dosyaları eklemek, derleme zamanı hata iletileri belirtin ve kod bölümleri için makine özgü kurallar geçerlidir için kullanabilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)  
+ [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)  
  Kaynak programlar değiştirmek kolay ve farklı bir yürütme ortamlarda derlemek kolay hale getirmek için genellikle kullanılan yönergeleri açıklar.  
   
- [Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)  
+ [Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)  
  Bağlamında kullanılan dört önişlemci özgü işleçleri anlatılmaktadır `#define` yönergesi.  
   
- [Önceden tanımlı makrolar](../preprocessor/predefined-macros.md)  
+ [Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)  
  ANSI ve Microsoft C++ belirtildiği gibi önceden tanımlı makrolar açıklanır.  
   
- [Pragmaları](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
+ [Pragmalar](../preprocessor/pragma-directives-and-the-pragma-keyword.md)  
  C ve C++ dilleri ile genel uyumluluk korurken makine ve işletim sistemine özgü özellikleri sunmak her derleyici için bir yol sunar pragmaları açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

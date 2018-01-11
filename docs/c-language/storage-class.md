@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c97bf4f71bb215477c00295a11f659870c2535b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4385515becbb32b256b2bf6562af941371ef47e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `extern` veya **statik** depolama sınıfı.  
@@ -46,7 +47,7 @@ Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `ext
  *depolama sınıfı tanımlayıcısı*: /\* işlev tanımları\*/  
  **extern**  
   
- **statik**  
+ **static**  
   
  Bir işlev tanımı içermiyorsa bir *depolama sınıfı tanımlayıcısı*, depolama sınıfı varsayılanları `extern`. Bir işlevi açıkça `extern` olarak bildirebilirsiniz, ancak bu gerekli değildir.  
   
@@ -65,4 +66,4 @@ Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `ext
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C işlev tanımları](../c-language/c-function-definitions.md)
+ [C İşlev Tanımları](../c-language/c-function-definitions.md)

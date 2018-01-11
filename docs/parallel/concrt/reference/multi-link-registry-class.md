@@ -24,11 +24,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 39c93cf2c2e3642d2ed6c3fcf08cadafea4ce8bf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5d95a98d56ea666ed823f3caef2190dea1591cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry Sınıfı
 `multi_link_registry` Nesne bir `network_link_registry` birden çok kaynak blokları veya birden çok hedef blokları yönetir.  
@@ -57,11 +58,11 @@ class multi_link_registry : public network_link_registry<_Block>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ekleme](#add)|Bir bağlantı ekler `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[add](#add)|Bir bağlantı ekler `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
 |[başlayın](#begin)|Yineleyici ilk öğe döndürür `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
 |[içerir](#contains)|Aramaları `multi_link_registry` belirtilen bloğu için nesnesi. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
 |[sayısı](#count)|Öğeleri sayar `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[Kaldır](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `multi_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
 |[set_bound](#set_bound)|Bağlantı sayısı üst sınırı ayarlayan `multi_link_registry` hold nesnesi.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -180,4 +181,4 @@ void set_bound(size_t _MaxLinks);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [single_link_registry sınıfı](single-link-registry-class.md)
+ [single_link_registry Sınıfı](single-link-registry-class.md)

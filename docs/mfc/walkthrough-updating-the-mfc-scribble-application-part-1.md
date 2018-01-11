@@ -20,21 +20,22 @@ caps.latest.revision: "54"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 306bf3d556f61035f51798ffb6167e323793b0c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 65dea486e80e4f6f1b98dffe6c387f2e530c9ef3
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştirme
-Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygulamasına değiştirme gösterilir. Visual Studio Office 2007 Şerit ve Windows 7 manzara Şerit destekler. Şerit kullanıcı arabirimi hakkında daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/linkid=129233) MSDN Web sitesinde.  
+Bu anlatımda Şerit kullanıcı arabirimi kullanmak için varolan bir MFC uygulamasına değiştirme gösterilir. Visual Studio Office 2007 Şerit ve Windows 7 manzara Şerit destekler. Şerit kullanıcı arabirimi hakkında daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233) MSDN Web sitesinde.  
   
  Bu kılavuz çizgi çizimler için fare kullanmanıza olanak sağlayan Klasik 1.0 MFC karalama örnek değiştirir. Kılavuzun bu bölümü, böylece bir Şerit çubuğu görüntüler karalama örnek değiştirmek gösterilmiştir. [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) daha fazla düğme Şerit çubuğuna ekler.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
- [Visual C++ örnekleri](../visual-cpp-samples.md)  
+ [Visual C++ Örnekleri](../visual-cpp-samples.md)  
   
- [Visual C++ örnekleri](../visual-cpp-samples.md)  
+ [Visual C++ Örnekleri](../visual-cpp-samples.md)  
   
 ##  <a name="top"></a>Bölümler  
  Kılavuzun bu bölümü aşağıdaki bölümleri içerir:  

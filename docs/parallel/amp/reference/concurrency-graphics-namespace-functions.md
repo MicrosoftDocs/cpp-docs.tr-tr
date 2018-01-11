@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4277b01f702807435132cd92785aefe7f3ab30f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7338e634c7ce10b06e7b599494ed934942febe42
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencygraphics-namespace-functions"></a>CONCURRENCY::Graphics ad alanı işlevleri
 |||  
@@ -320,4 +321,4 @@ concurrency::completion_future copy_async(_Src_type& _Src,
  **Namespace:** Concurrency::graphics 
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

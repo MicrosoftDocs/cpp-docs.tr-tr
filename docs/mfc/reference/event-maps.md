@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8100119dba1094ced9358e5ff0102d831a713b2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 130e4ecf7534b16ecabf4c35665a4dabe9eee34e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="event-maps"></a>Olay Eşlemeleri
 Bir denetim (Denetim geliştirici tarafından belirlenir) bazı eylemler (örneğin, bir tuş vuruşu, fare tıklatma veya denetimin durumunu değişiklik) gerçekleştirilmedi kapsayıcısı bildir istediği her bir olay tetikleme işlevi çağırır. Bu işlev, bazı önemli eylem ilgili olay tetikleme tarafından oluştu denetimi kapsayıcısı bildirir.  
@@ -131,10 +132,10 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
   
 |Simgesi|Parametre türü|  
 |------------|--------------------|  
-|**VTS_I2**|**kısa**|  
-|**VTS_I4**|**uzun**|  
-|**VTS_R4**|**kayan nokta**|  
-|**VTS_R8**|**çift**|  
+|**VTS_I2**|**short**|  
+|**VTS_I4**|**long**|  
+|**VTS_R4**|**float**|  
+|**VTS_R8**|**double**|  
 |**VTS_COLOR**|**OLE_COLOR**|  
 |**VTS_CY**|**PARA BİRİMİ**|  
 |**VTS_DATE**|**TARİH**|  

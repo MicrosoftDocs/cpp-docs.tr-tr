@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f03d3f2bb10fa6b12cb046fd77f45a2bc6153064
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2412ab15317604e1d6cccc5535226d429d8ba6b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="specifying-the-pathname"></a>Yol Adını Belirtme
 Çıktı dosyası seçeneğin kabul eden bir *pathname* bir konum ve çıktı dosyası için bir ad belirtebilirsiniz bağımsız değişkeni. Bağımsız değişkeni bir sürücü adı, dizin ve dosya adı içerebilir. Seçenek ve bağımsız değişken arasında boşluk bulunmamalıdır.  
@@ -47,4 +48,4 @@ CL /FmPRN HELLO.CPP
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

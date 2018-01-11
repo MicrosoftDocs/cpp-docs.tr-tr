@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c136e2d73256c78768e8b712d901e4fe4f819673
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a2f8991b6cc827c35c94b0989ef82e32422fd5c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="providing-mouse-interaction-while-inactive"></a>Devre Dışı İken Fare Etkileşimi Sağlama
 Denetim hemen etkinleştirilmemişse hala işlemek istediğiniz `WM_SETCURSOR` ve `WM_MOUSEMOVE` kendi pencere denetim olmasına rağmen iletileri. Bu etkinleştirerek gerçekleştirilebilir `COleControl`'s uyarlamasını `IPointerInactive` varsayılan olarak devre dışıdır arabirimi. (Bkz *ActiveX SDK* bu arabirim açıklaması.) Etkinleştirmek için dahil `pointerInactive` tarafından döndürülen bayraklar kümesi bayrağı [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags):  
@@ -40,5 +41,5 @@ Denetim hemen etkinleştirilmemişse hala işlemek istediğiniz `WM_SETCURSOR` v
  [!code-cpp[NVC_MFC_AxOpt#12](../mfc/codesnippet/cpp/providing-mouse-interaction-while-inactive_5.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md)
+ [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

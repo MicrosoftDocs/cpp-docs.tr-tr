@@ -26,11 +26,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43b53b1d8a9165abb093f0071ece4e3dd8e891f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6db1fe614de8a3f47bae989ccb26512c375cec50
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isource-class"></a>ISource Sınıfı
 `ISource` Sınıftır arabirimi tüm blokları kaynağı için. Kaynak blokları yayılması iletileri `ITarget` engeller.  
@@ -243,4 +244,4 @@ virtual void unlink_targets() = 0;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Itarget sınıfı](itarget-class.md)
+ [ITarget Sınıfı](itarget-class.md)

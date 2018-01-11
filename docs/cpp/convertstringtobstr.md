@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e6e62a4de1e1bc4e38bc05fa1012867c2e7fc3e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4347fdcf25373e088a8d8bc54cc3219285aa347
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="convertstringtobstr"></a>ConvertStringToBSTR
 **Microsoft özel**  
@@ -73,4 +74,4 @@ BSTR text: Test
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Global COM işlevleri](../cpp/compiler-com-global-functions.md)
+ [Derleyici Global COM İşlevleri](../cpp/compiler-com-global-functions.md)

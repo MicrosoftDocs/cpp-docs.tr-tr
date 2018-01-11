@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7532a9b2bb0b04b1d56b92551df17e7c7466c8f6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e0ff9c0c58498361764dcc1b6c454c9b629d9bed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
 Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. EXE) ortak nesne dosyası biçimi (COFF) ikili dosyalarını değiştirir. Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplığı (DLL) değiştirmek için EDITBIN kullanabilirsiniz.  
@@ -38,4 +39,4 @@ Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. EXE) ortak nesne dosyası
 -   [EDITBIN seçenekleri](../../build/reference/editbin-options.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)
+ [C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)

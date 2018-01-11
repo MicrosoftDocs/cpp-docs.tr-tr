@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b60b1544e277ef4fece8368b6913cf686960dcaa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cee24f0e5142af37681bd293a3be3600ddbd1cc4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="process-and-environment-control"></a>Süreç ve Ortam Denetimi
 İşlem Denetim yordamları başlatma, durdurma ve bir programdan işlemlerini yönetmek için kullanın. Almak ve işletim sistemi ortamı hakkındaki bilgileri değiştirmek için ortam denetimi yordamları kullanın.  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/24/2017
   
 |Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
 |-------------|---------|  
-|[durdurma](../c-runtime-library/reference/abort.md)|Arabellek boşaltma veya tarafından kaydedilen işlevleri çağırma olmadan işlem iptal `atexit` ve`_onexit`|  
+|[abort](../c-runtime-library/reference/abort.md)|Arabellek boşaltma veya tarafından kaydedilen işlevleri çağırma olmadan işlem iptal `atexit` ve`_onexit`|  
 |[Assert](../c-runtime-library/reference/assert-macro-assert-wassert.md)|Test mantık hatası için|  
 |[_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makroları|Benzer şekilde `assert`, ancak yalnızca çalışma zamanı kitaplıkları hata ayıklama sürümlerinde kullanılabilir|  
 |[atexit](../c-runtime-library/reference/atexit.md)|Program sonlandırma yürütmesi için zamanlama rutinleri|  
@@ -62,9 +63,9 @@ ms.lasthandoff: 10/24/2017
 |[_pipe](../c-runtime-library/reference/pipe.md)|Okuma ve yazma için kanal oluştur|  
 |[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)|Kanal oluşturma ve komut yürütme|  
 |[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md), [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)|Ekleme veya ortam değişkeninin değerini değiştirme|  
-|[Yükselt](../c-runtime-library/reference/raise.md)|Arama işlemi için sinyal gönderme|  
+|[raise](../c-runtime-library/reference/raise.md)|Arama işlemi için sinyal gönderme|  
 |[setjmp](../c-runtime-library/reference/setjmp.md)|Yığın ortamını kaydedin; yerel olmayan yürütmek için kullanın`goto`|  
-|[Sinyal](../c-runtime-library/reference/signal.md)|Tanıtıcı Kesme sinyali|  
+|[signal](../c-runtime-library/reference/signal.md)|Tanıtıcı Kesme sinyali|  
 |[_spawnl, _wspawnl](../c-runtime-library/reference/spawnl-wspawnl.md)|Oluşturma ve belirtilen bağımsız değişken listesiyle yeni işlem yürütme|  
 |[_spawnle, _wspawnle](../c-runtime-library/reference/spawnle-wspawnle.md)|Oluşturma ve belirtilen bağımsız değişken listesi ve ortam ile yeni işlem yürütme|  
 |[_spawnlp, _wspawnlp](../c-runtime-library/reference/spawnlp-wspawnlp.md)|Oluşturma ve yeni işlem kullanarak yürütme `PATH` değişkeni ve belirtilen bağımsız değişken listesi|  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/24/2017
 |[_spawnve, _wspawnve](../c-runtime-library/reference/spawnve-wspawnve.md)|Oluşturma ve belirtilen ortam ve bağımsız değişken dizisi ile yeni işlem yürütme|  
 |[_spawnvp, _wspawnvp](../c-runtime-library/reference/spawnvp-wspawnvp.md)|Oluşturma ve yeni işlem kullanarak yürütme `PATH` değişkeni ve belirtilen bağımsız değişken dizisi|  
 |[_spawnvpe, _wspawnvpe](../c-runtime-library/reference/spawnvpe-wspawnvpe.md)|Oluşturma ve yeni işlem kullanarak yürütme `PATH` değişkeni, belirtilen ortam ve bağımsız değişken dizisi|  
-|[Sistem, _wsystem](../c-runtime-library/reference/system-wsystem.md)|İşletim sistemi komutu yürütün|  
+|[system, _wsystem](../c-runtime-library/reference/system-wsystem.md)|İşletim sistemi komutu yürütün|  
   
  Windows işletim sisteminde, oluşturulan işlemi spawning işlemi eşdeğerdir. Herhangi bir işlem kullanabilirsiniz `_cwait` işlem kimliği bilinir diğer işlemin tamamlanmasını beklemek için.  
   
@@ -95,4 +96,4 @@ ms.lasthandoff: 10/24/2017
 |`_execvpe, _spawnvpe`|Evet|Dizi|Son bağımsız değişken olarak geçirilen yeni işlem için ortam tabloya işaretçi|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5f81e7c2e3f07074f451446d9ccc1796e1c393bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 594a23113159c7d4afa9e3119952b001f8ee7ed4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
 Bir doku WriteOnly erişim sağlar.  
@@ -71,7 +72,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ayarlama](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
+|[set](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -170,4 +171,4 @@ writeonly_texture_view(
  Oluşturmak için kullanılan doku `writeonly_texture_view`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 218a19225286de9dbcb75bf3e134b9ae66e0271a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f724d566703300d0f929df680b659b7adbfa9577
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="include-directive-cc"></a>#include Yönergesi (C/C++)
 Kaynak programda yönergesi göründüğü noktada göründükleri gibi belirtilen bir dosyanın içeriğini işlemek için önişlemci söyler.  
@@ -103,4 +104,4 @@ CL MYPROG.C
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)
+ [Ön işlemci Yönergeleri](../preprocessor/preprocessor-directives.md)

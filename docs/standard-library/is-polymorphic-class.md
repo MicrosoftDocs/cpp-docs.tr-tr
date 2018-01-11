@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7a80d70a55a221c82e8b9d66cd1139d5bee71e26
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aa00aff766ee841e2bc029b8bc65c82cb4d58c92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 Bir sanal işlev türü olup olmadığını test.  
@@ -98,4 +99,4 @@ is_polymorphic<throws> == true
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_abstract sınıfı](../standard-library/is-abstract-class.md)
+ [is_abstract Sınıfı](../standard-library/is-abstract-class.md)

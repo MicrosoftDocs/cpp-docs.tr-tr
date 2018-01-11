@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 86c80c4b708bd4315b2ce2ceaf7b61e0629a8b2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e8e5e441011c69e2b50b4565981d89a7730d542f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3496"></a>Derleyici Hatası C3496
 'this' değeri her zaman yakalanır: '&' yoksayıldı  
@@ -47,4 +48,4 @@ class C
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md)
+ [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

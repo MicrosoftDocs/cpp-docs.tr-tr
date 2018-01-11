@@ -53,11 +53,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d99942bf039811db8299e3f6bc6a8c52e3026b68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 37400e889f32ab01e187388be94b391402958fa8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdwordarray-class"></a>CDWordArray sınıfı
 32-bit doublewords dizileri destekler.  
@@ -127,4 +128,4 @@ class CDWordArray : public CObject
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CObArray sınıfı](../../mfc/reference/cobarray-class.md)
+ [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)

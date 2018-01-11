@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43d8cf7ae406f2d29a381f765686e6537243de3f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 747f5d55821c6911e80087ebbad65b2169e6fc49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="slider-control-styles"></a>Kaydırıcı Denetim Stilleri
 Kaydırıcı denetimleri ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) dikey veya yatay yönlendirme olabilir. Değer çizgilerinin iki tarafında olabilir hem kenara veya hiçbiridir. Ardışık değerlerin aralığını belirtmek için de kullanılabilir. Bu özellikler, kaydırıcı denetimi oluşturduğunuzda, belirttiğiniz kaydırıcı denetim stilleri kullanılarak denetlenir.  
@@ -39,5 +40,5 @@ Kaydırıcı denetimleri ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSliderCtrl kullanma](../mfc/using-csliderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

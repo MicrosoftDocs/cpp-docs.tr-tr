@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7a44b005738103b91fd435bdc88f5fef9a1888a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0646e703f172777817aa569fa28d3430624ccae8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 Başka bir olayın oluştuğunu bildirmek bir iş parçacığı sağlayan bir eşitleme nesnesi olan bir olayı temsil eder.  
@@ -183,5 +184,5 @@ BOOL Unlock();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSyncObject sınıfı](../../mfc/reference/csyncobject-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

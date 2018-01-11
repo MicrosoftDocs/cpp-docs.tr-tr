@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d238acf9bfe55052a1d6dc316f5425774737f9f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c43761189d9241e77faa67ad106f346fb8f92ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="character-classification"></a>Karakter Sınıflaması
 Bu yordamlar her belirtilen tek baytlı karakter, uluslararası karakter veya birden çok baytlı karakter memnuniyet bir koşul için sınar. (Tanım olarak, ASCII karakter kümesi 0 ile 127 arasında tüm çok baytlı karakter kümeleri bir alt kümesidir. Örneğin, Japonca katakana ASCII iyi olarak ASCII olmayan karakterler içerir.)  
@@ -66,4 +67,4 @@ if ((c >= 'A') && (c <= 'Z')) || ((c >= 'a') && (c <= 'z'))
 |[_mbclen, mblen, _mblen_l](../c-runtime-library/reference/mbclen-mblen-mblen-l.md)|Geçerli birden çok baytlı karakter uzunluğunu döndürür; Sonuç bağımlı `LC_CTYPE` geçerli yerel ayar kategorisi ayarı|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

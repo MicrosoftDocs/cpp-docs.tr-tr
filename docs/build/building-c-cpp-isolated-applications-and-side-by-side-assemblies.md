@@ -20,11 +20,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c91e6e6e4b74e1f2e9832d32b4bbf82cd62d6053
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a5dec3b0db6d77cc11d0e2ccdc97fe54ab8e0624
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
 Visual C++ üzerinde fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modeli destekler [yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190) ve [yan yana derlemeler](http://msdn.microsoft.com/library/ff951640). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan olarak yalıtılmış uygulamalar derlemeler [bildirimleri](http://msdn.microsoft.com/library/aa375365) bağımlılıklarını Visual C++ kitaplıkları üzerinde açıklamak için.  
@@ -34,19 +35,19 @@ Visual C++ üzerinde fikrini tabanlı Windows istemci uygulamaları için bir da
  Bu bölümde, nasıl C/C++ uygulamanızı yalıtılmış bir uygulama olarak oluşturun ve bildirim kullanarak Visual C++ kitaplıkları bağlar olun anlatılmaktadır. Bu bölümdeki bilgiler, öncelikle yerel veya yönetilmeyen, Visual C++ uygulamaları için geçerlidir. Visual C++ ile yerleşik yerel uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Yalıtılmış uygulamalar ve yan yana derlemeler kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)  
+ [Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)  
   
- [C/C++ yalıtılmış uygulamaları derleme](../build/building-c-cpp-isolated-applications.md)  
+ [C/C++ Yalıtılmış Uygulamaları Derleme](../build/building-c-cpp-isolated-applications.md)  
   
- [C/C++ yan yana derlemeleri oluşturma](../build/building-c-cpp-side-by-side-assemblies.md)  
+ [C/C++ Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-side-by-side-assemblies.md)  
   
- [Nasıl yapılır: kayıt gerektirmeyen COM bileşenlerini derleme](../build/how-to-build-registration-free-com-components.md)  
+ [Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme](../build/how-to-build-registration-free-com-components.md)  
   
- [Nasıl yapılır: COM bileşenlerini kullanacak yalıtılmış uygulamalar oluşturma](../build/how-to-build-isolated-applications-to-consume-com-components.md)  
+ [Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)  
   
- [C/C++ programları bildirim üretimini anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)  
+ [C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)  
   
- [Sorun giderme C/C++ yalıtılmış uygulamaları ve yan yana derlemeleri oluşturma](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
+ [C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [Yalıtılmış uygulamalar ve yan yana derlemeler](http://msdn.microsoft.com/library/dd408052)  

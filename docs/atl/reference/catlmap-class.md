@@ -47,11 +47,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9d16ff30313a9346aa25f8febfba2f6e0d8307f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9166e8f7804a3138d3e891fbe15b54cb0e270811
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="catlmap-class"></a>CAtlMap sınıfı
 Bu sınıf oluşturmak ve bir harita nesnesi yönetmek için yöntemler sağlar.  
@@ -284,7 +285,7 @@ CPair* GetAt(POSITION& pos) throw();
  `key`  
  Haritanın anahtarın türünü belirten bir şablon parametre.  
   
- *değer*  
+ *value*  
  Haritanın değerin türünü belirten bir şablon parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -365,7 +366,7 @@ void GetNextAssoc(
  `key`  
  Haritanın anahtarın türünü belirten bir şablon parametre.  
   
- *değer*  
+ *value*  
  Haritanın değerin türünü belirten bir şablon parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -507,7 +508,7 @@ CPair* Lookup(KINARGTYPE key) throw();
  `key`  
  Bakılacak öğesi tanımlayan anahtarını belirtir.  
   
- *değer*  
+ *value*  
  Değişken, aranan yukarı değerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -601,7 +602,7 @@ POSITION SetAt(
  `key`  
  Anahtar değeri eklemek için `CAtlMap` nesnesi.  
   
- *değer*  
+ *value*  
  Eklenecek değer `CAtlMap` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -650,7 +651,7 @@ void SetValueAt(
  `pos`  
  Önceki bir çağrı tarafından döndürülen konumu sayaç [CAtlMap::GetNextAssoc](#getnextassoc) veya [CAtlMap::GetStartPosition](#getstartposition).  
   
- *değer*  
+ *value*  
  Eklenecek değer `CAtlMap` nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  

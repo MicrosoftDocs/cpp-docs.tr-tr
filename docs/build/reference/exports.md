@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 10a2a8bbe2f669f8ab28a9d169c124c7da2966e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f9a8e902e42d44ffa292b9f821839b8e948d7a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exports"></a>EXPORTS
 Dışarı aktarılan adlarını belirtin bir veya daha fazla verme tanımları bir bölümünü veya sıra numaraları işlevleri ya da veri sunar. Her tanım ayrı bir satırda olmalıdır.  
@@ -89,4 +90,4 @@ EXPORTS
  Aktardığınızda bir değişken DLL'den kullanarak bir. DEF dosya sahip olmadığınız belirtmek `__declspec(dllexport)` değişkeni üzerinde. Ancak, DLL kullanan herhangi bir dosyada, hala kullanmalısınız `__declspec(dllimport)` veri bildiriminde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

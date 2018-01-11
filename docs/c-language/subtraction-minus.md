@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d07f6bf2c5d48b3149eb43448e217d1a66b92c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b32986513a94c20f0fb0cd1b4c65dd21e8c9e8aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="subtraction--"></a>Çıkarma (-)
 Çıkarma işleci (**-**) ilk ikinci işlenen çıkarır. Her iki işlenen, tamsayı veya kayan türleri veya bir işlenen bir işaretçi ve diğer bir tamsayı olabilir.  
@@ -30,4 +31,4 @@ ms.lasthandoff: 10/24/2017
  Çıkarma işleci bir tamsayı değeri arasında bir işaretçi değeri çıkarılır, tamsayı değeri dönüştürür (*ı*) işaretçi adresleri değeri boyutuyla çarparak tarafından. Dönüştürme işleminden sonra tamsayı değeri temsil eden *ı* her konum işaretçi türü tarafından belirtilen uzunluğa sahip olduğu bellek konumlar. Dönüştürülmüş tamsayı değeri işaretçi değerinden çıkarılır, bellek adresi sonucudur *ı* özgün adresinden önce konumlar. Özgün işaretçi değeri tarafından ele türünde bir değer yeni işaretçisi işaret ediyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ek işleçleri](../c-language/c-additive-operators.md)
+ [C Ek İşleçleri](../c-language/c-additive-operators.md)

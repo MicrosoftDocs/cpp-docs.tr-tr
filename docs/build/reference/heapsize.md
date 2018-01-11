@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9ff8842b979b00eb1dd1bd4e548b12b54d32986e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ee43dc08655aeb9a4eb503e35bc9a807c8e5b31f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="heapsize"></a>HEAPSIZE
 İle aynı işlevselliği sunar [/yığın](../../build/reference/heap-set-heap-size.md) bağlayıcı seçeneği.  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

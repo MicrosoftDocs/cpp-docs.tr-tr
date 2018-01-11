@@ -19,11 +19,12 @@ caps.latest.revision: "50"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9b2e0af195270b55f80f7eaba37f273765b3cf4b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 106123557c4efab5ccddf9f1292570d36b0f8313
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
 Bir uygulamayı dağıtırken, onu desteklemek için gerekli tüm dosyaları da dağıtmalısınız. Bu dosyalardan herhangi biri Microsoft tarafından sağlanıyorsa, bunları yeniden dağıtma izniniz olup olmadığını kontrol edin. Visual Studio Lisans Koşulları'nı gözden geçirmek için IDE Microsoft Visual Studio hakkında iletişim kutusunda lisans koşulları bağlantısına bakın veya karşıdan [Microsoft Yazılımı Lisans koşulları](http://go.microsoft.com/fwlink/p/?LinkId=831114) dosya. "Visual Studio belirli sürümleri için Microsoft Yazılım Lisans Koşulları'nın"Dağıtılabilir kod"bölümünde başvurulan listesidir" görüntülemek için bkz: [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 için dağıtılabilir kod SDK (içerir yardımcı programları ve BuildServer Dosyaları)](http://go.microsoft.com/fwlink/p/?LinkId=823098), veya Visual Studio 2015 için bkz. [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=523763). Yeniden dağıtılabilir dosyalar hakkında daha fazla bilgi için bkz: [belirleme hangi DLL'lerin yeniden dağıtılacağını](../ide/determining-which-dlls-to-redistribute.md) ve [Dağıtım örnekleri](../ide/deployment-examples.md).  
@@ -46,9 +47,9 @@ Bir uygulamayı dağıtırken, onu desteklemek için gerekli tüm dosyaları da 
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Birleştirme modüllerini kullanarak yeniden dağıtma](../ide/redistributing-components-by-using-merge-modules.md)|Visual C++ yeniden dağıtılabilir birleştirme modülleri Visual C++ çalışma zamanı kitaplıkları paylaşılan DLL'ler %windir%\system32\ klasör olarak yüklemek için nasıl kullanılacağını açıklar.|  
-|[Visual C++ ActiveX denetimlerini yeniden dağıtma](../ide/redistributing-visual-cpp-activex-controls.md)|ActiveX Denetimlerini kullanan bir uygulamanın nasıl yeniden dağıtılması gerektiği açıklanmaktadır.|  
-|[Veritabanı destek dosyalarını yeniden dağıtma](../ide/redistributing-database-support-files.md)|Microsoft Veri Erişim SDK'sındaki veritabanı teknolojileri ve Veri Erişim Nesneleri (DAO) için destek dosyalarının nasıl yeniden dağıtılacağı ele alınmaktadır.|  
-|[MFC kitaplığını yeniden dağıtma](../ide/redistributing-the-mfc-library.md)|MFC kullanan bir uygulamanın nasıl yeniden dağıtılacağı açıklanmaktadır.|  
+|[Visual C++ ActiveX Denetimlerini Yeniden Dağıtma](../ide/redistributing-visual-cpp-activex-controls.md)|ActiveX Denetimlerini kullanan bir uygulamanın nasıl yeniden dağıtılması gerektiği açıklanmaktadır.|  
+|[Veritabanı Destek Dosyalarını Yeniden Dağıtma](../ide/redistributing-database-support-files.md)|Microsoft Veri Erişim SDK'sındaki veritabanı teknolojileri ve Veri Erişim Nesneleri (DAO) için destek dosyalarının nasıl yeniden dağıtılacağı ele alınmaktadır.|  
+|[MFC Kitaplığını Yeniden Dağıtma](../ide/redistributing-the-mfc-library.md)|MFC kullanan bir uygulamanın nasıl yeniden dağıtılacağı açıklanmaktadır.|  
 |[ATL uygulamasını yeniden dağıtma](../ide/redistributing-an-atl-application.md)|ATL kullanan bir uygulamayı yeniden dağıtmak açıklar Visual Studio 2012'den itibaren yeniden dağıtılabilir kitaplık ATL için gereklidir.|  
-|[Dağıtım örnekleri](../ide/deployment-examples.md)|Visual C++ uygulamalarının nasıl dağıtıldığını gösteren örneklere bağlantılar verir.|  
+|[Dağıtım Örnekleri](../ide/deployment-examples.md)|Visual C++ uygulamalarının nasıl dağıtıldığını gösteren örneklere bağlantılar verir.|  
 |[Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)|Visual C++ dağıtım kavramlarını ve teknolojilerini tanıtır.|

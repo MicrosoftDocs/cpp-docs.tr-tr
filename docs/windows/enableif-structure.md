@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2ca53e203d24371f9ad661588c2c25a25cf8eebf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e9da168cd0f715f3140a9e9c9a93d943bcee3d97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enableif-structure"></a>EnableIf Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -66,4 +69,4 @@ struct EnableIf<true, T>;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

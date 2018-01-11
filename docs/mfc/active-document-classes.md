@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6494e19b5e5b7cc24226f92736c96371b4cc2d9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0a67e0acc99c25309fc21558a65fac55c37f76fd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-document-classes"></a>Etkin Belge Sınıfları
 Etkin belgeler, Internet Explorer 5.5 gibi bir Web tarayıcısı, tüm istemci penceresinde veya etkin belgeler destekleyen Microsoft Office Binder gibi etkin bir kapsayıcı görüntülenebilir.  

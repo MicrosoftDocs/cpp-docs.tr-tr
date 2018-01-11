@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0cb598a5b0f87080a937218962037d849275d7bd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aed7ed0ed32f73927f3755c0ba3733aaef084818
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-tiles"></a>Döşemeleri Kullanma
 Döşeme uygulamanızı ivmesini en üst düzeye çıkarmak için kullanabilirsiniz. Döşeme böler iş parçacığı eşit dikdörtgen alt kümeler veya *kutucukları*. Uygun döşeme boyutunu ve döşeli algoritması kullanırsanız, C++ AMP kodunuzdan daha da fazla hızlandırma alabilirsiniz. Döşeme temel bileşeni vardır:  
@@ -337,5 +338,5 @@ parallel_for_each(matrix.extent.tile<SAMPLESIZE, SAMPLESIZE>(),
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [tile_static anahtar sözcüğü](../../cpp/tile-static-keyword.md)
+ [tile_static Anahtar Sözcüğü](../../cpp/tile-static-keyword.md)
 

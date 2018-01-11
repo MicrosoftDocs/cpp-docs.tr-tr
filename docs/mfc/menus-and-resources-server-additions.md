@@ -27,11 +27,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65417079c3241feca9c43e058026674c6e35d18b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c7aaf4a087fbcfc28686e7ec8d2411d6f7531466
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="menus-and-resources-server-additions"></a>Menüler ve Kaynaklar: Sunucu Ekleme
 Bu makalede menüleri ve diğer kaynakların bir görsel düzenleme sunucu (Bileşen) uygulaması için yapılması gereken değişiklikleri açıklar. Bu üç modlarından birini başlatılabilir çünkü sunucu uygulaması menü yapısı ve diğer kaynakları birçok eklemeleri gerektirir: tek başına, katıştırılmış, veya yerinde bildirimde. Bölümünde açıklandığı gibi [menüleri ve kaynakları (OLE)](../mfc/menus-and-resources-ole.md) makale, en fazla dört menüleri kümesi vardır. Yalnızca üç miniserver için kullanılırken dört bir MDI tam sunucu uygulaması için kullanılır. Uygulama Sihirbazı'nı menüsü düzeni istediğiniz sunucu türü için gerekli oluşturur. Bazı özelleştirme gerekli olabilir.  
@@ -76,5 +77,5 @@ Bu makalede menüleri ve diğer kaynakların bir görsel düzenleme sunucu (Bile
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   
- [Menüler ve kaynaklar: menü birleştirme](../mfc/menus-and-resources-menu-merging.md)
+ [Menüler ve Kaynaklar: Menü Birleştirme](../mfc/menus-and-resources-menu-merging.md)
 

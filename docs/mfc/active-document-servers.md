@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 76e1e4d237e486734c734359f4844e27d80dd2a3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3dacb923b2e51ddc031165e637b08c9614ee1bf3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-document-servers"></a>Etkin Belge Sunucuları
 Etkin belge sunucuları gibi diğer uygulama türleriyle Word, Excel veya PowerPoint konak belgelerin etkin belgeler çağrılır. (Yalnızca başka bir belge sayfasında görüntülenir) nesneleri OLE katıştırılmış etkin belgeler tam arabirimi ve kendilerini oluşturan sunucu uygulamasının tam yerel işlevselliği sağlar. Kullanıcılar, belgeleri oluşturabilir (etkin belgeyi etkin olup olmadığını), sık kullanılan uygulamalar gücünü kullanarak henüz kabul elde edilen proje tek bir varlık olarak.  
@@ -39,5 +40,5 @@ Etkin belge sunucuları gibi diğer uygulama türleriyle Word, Excel veya PowerP
  `COleDocObjectItem` Sınıfı, bir etkin belge kapsayıcısı olmak bir OLE kapsayıcı olanak tanır. MFC Uygulama Sihirbazı'nı seçerek bir etkin belge kapsayıcısı oluşturmak için kullanabileceğiniz **etkin belge kapsayıcısı** MFC Uygulama Sihirbazı'nı bileşik belge desteği sayfasının onay kutusu. Daha fazla bilgi için bkz: [bir etkin belge kapsayıcı uygulaması oluşturma](../mfc/creating-an-active-document-container-application.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsaması](../mfc/active-document-containment.md)
+ [Etkin Belge Kapsaması](../mfc/active-document-containment.md)
 

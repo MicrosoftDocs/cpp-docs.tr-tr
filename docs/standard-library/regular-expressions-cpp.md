@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9c32cc76c27b89bd3820e24bc7f38da0d12e0add
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 81eb92a93b60259abdb90020bb6e89cb0664eea5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 C++ Standart Kitaplığı, birden çok normal ifade aynı destekler. Bu konu, normal ifadeler kullanırken kullanılabilir dilbilgisi farklılıkları açıklar.  
@@ -34,7 +35,7 @@ Kullanılacak normal ifade dilbilgisi tarafından birini kullanarak belirtilen `
 -   `extended`: Normal ifadeler veya ERE POSIX genişletilmiş.
 -   `awk`: Bu `extended`, ancak ek çıkışları yazdırılamayan karakterler içeriyor.
 -   `grep`: Bu `basic`, ancak yeni satır alternations ayırmak ('\n') karakteri de sağlar.
--   `egrep`: Bu `extended`, ancak yeni satır karakterlerini alternatios ayırmak de sağlar.
+-   `egrep`: Bu `extended`, ancak yeni satır karakterlerini alternations ayırmak de sağlar.
 
 Hiçbir dil bilgisi belirtilmemişse, varsayılan olarak, `ECMAScript` varsayılır. Yalnızca bir dilbilgisi belirtilebilir.  
   
@@ -462,5 +463,5 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 |"$nn"||Konumundaki yakalama grubuyla eşleşen karakter dizisi `nn`, burada `nn` 10 ile 99 arasında bir sayı (`[match[nn].first, match[nn].second)`)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
 

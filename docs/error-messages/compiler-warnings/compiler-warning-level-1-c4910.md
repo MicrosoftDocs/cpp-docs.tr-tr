@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f0402e03d77968de3b4c1addf58c481ec85a61b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9f758e2e15d5492724e9b819622202831d4e9f5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4910"></a>Derleyici Uyarısı (düzey 1) C4910
 '\<tanımlayıcısı >': '__declspec(dllexport)' ve 'extern' üzerinde bir açık örnekleme uyumsuz  
@@ -28,4 +29,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık örnekleme](../../cpp/explicit-instantiation.md)   
  [dllexport, dllimport](../../cpp/dllexport-dllimport.md)   
- [Genel kurallar ve sınırlamalar](../../cpp/general-rules-and-limitations.md)
+ [Genel Kurallar ve Sınırlamalar](../../cpp/general-rules-and-limitations.md)

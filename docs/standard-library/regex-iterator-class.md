@@ -27,11 +27,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ef28175227bc35641909af71268a86804218649e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13744086b9e25c5f3be880885fae624822fd5f73
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regexiterator-class"></a>regex_iterator Sınıfı
 Eşleşme için yineleyici sınıfı.  
@@ -771,13 +772,13 @@ match == a
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [\<Regex >](../standard-library/regex.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
-[regex_error sınıfı](../standard-library/regex-error-class.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
+[regex_error Sınıfı](../standard-library/regex-error-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
 [\<Regex > işleçleri](../standard-library/regex-operators.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
-[regex_traits sınıfı](../standard-library/regex-traits-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  
 
   

@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 26630280a11b21b77d5e8bcba0bf6176544dedcb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: baabac0a4461c659a3e70c2c26bcb971f0e1c738
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 Sınıflarını tanımlayan [condition_variable](../standard-library/condition-variable-class.md) ve [condition_variable_any](../standard-library/condition-variable-any-class.md) bir koşul doğru olmasını bekleyin nesneleri oluşturmak için kullanılır.  
@@ -67,4 +68,4 @@ while (condition is false)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [condition_variable sınıfı](../standard-library/condition-variable-class.md)   
- [condition_variable_any sınıfı](../standard-library/condition-variable-any-class.md)
+ [condition_variable_any Sınıfı](../standard-library/condition-variable-any-class.md)

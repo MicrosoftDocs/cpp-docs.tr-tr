@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae753f1a483c05843797268641c4cc0c5d64c52a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67d66667d169a95ae4d62ccadd2b56a136cd0a76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 Tüm bildirimcisi bir "karmaşık bildirimcisi." belirli yorumu belirtmek için parantez içine alın Karmaşık bildirimcisi birden fazla dizi, işaretçi veya işlevi belirleyici tam bir tanımlayıcıdır. Dizi, işaretçi ve işlev değiştiricileri çeşitli tek bir tanımlayıcı uygulayabilirsiniz. Genellikle `typedef` bildirimleri basitleştirmek için kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
@@ -135,4 +136,4 @@ union sign *(*var[5])[5]; /* Array of pointers to arrays
  Bu örnek, parantez yerleşimini bildirimi anlamını nasıl değiştiğini gösterir. Bu örnekte, `var` birleşimler işaretçiler beş öğesi dizileri işaretçiler beş öğesi dizisidir. Kullanımıyla ilgili örnekler için `typedef` karmaşık bildirimleri önlemek için bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve türler](../c-language/declarations-and-types.md)
+ [Bildirimler ve Türler](../c-language/declarations-and-types.md)

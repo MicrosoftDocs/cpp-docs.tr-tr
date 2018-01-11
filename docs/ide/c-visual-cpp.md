@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d44d1fccb0a6fdbcedff641982033bfdee4adc6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b8d4ea984864975196251c9f362283a0df1932cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltcgt-visual-c"></a>&lt;c&gt; (Visual C++)
 \<c > etiketi belirten bir açıklama metni kodu olarak işaretlenmelidir. Kullanım [ \<kodu >](../ide/code-visual-cpp.md) birden fazla satır kodu olarak belirtmek için.  
@@ -61,4 +62,4 @@ public:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ad6d78b6209b2a2d45f0d0e5874dff1271da880b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 371aad5dc573a13ca834d8d6d9667a43bb40324e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
 Kayan noktalı ondalık değer tam bir ikili temsili genellikle gerekmez. Bir yan etkisi, CPU kayan nokta verisi nasıl temsil ettiğini budur. Bu nedenle, bazı duyarlık kaybına karşılaşabilirsiniz ve bazı kayan nokta işlemleri beklenmeyen sonuçlara neden olabilir.  
@@ -71,4 +72,4 @@ They are not equal! The value of c is  2.4679999352 or 2.468000
  EPSILON için float 1.192092896e olarak için tanımlanan flt_epsılon sabitleri kullanabilirsiniz-07F, ya da çift 2.2204460492503131e olarak için tanımlanan dbl_epsılon-016. Bu sabitleri float.h eklemeniz gerekir. Bu sabit değerler tanımlanmadı en küçük pozitif sayı x, bu tür bu x + 1.0 1.0 eşit değil. Bu çok küçük bir sayı olduğundan, kullanıcı tanımlı dayanıklılık çok büyük sayılar içeren hesaplamalar için içermelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu iyileştirme](../../build/reference/optimizing-your-code.md)
+ [Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f835efbe84b05359a9a835f3afbdccf5839fc31c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d53e0438d73aa73a32f26d417ea60c4540162125
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cachesuballoc-class"></a>cache_suballoc Sınıfı
 Tanımlayan bir [ayırıcısı engelleme](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta kaldırır.  
@@ -58,7 +59,7 @@ class cache_suballoc
   
 |||  
 |-|-|  
-|[ayırma](#allocate)|Bir bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir bellek bloğu ayırır.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
   
 ## <a name="requirements"></a>Gereksinimler  

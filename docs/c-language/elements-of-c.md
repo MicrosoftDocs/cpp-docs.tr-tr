@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cae6e69b62252f506136ecf8b7de03b09777ebf8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f6fe5581721dec428480e3640e4875eda20a09b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="elements-of-c"></a>C Öğeleri
 Bu bölümde, C programını oluşturmak için kullanılan adlar, sayılar ve karakterler dahil olmak üzere C programlama dilinin öğeleri açıklanmaktadır. ANSI C sözdizimi, bu bileşen belirteçlerini etiketler.  
@@ -31,13 +32,13 @@ Bu bölümde, C programını oluşturmak için kullanılan adlar, sayılar ve ka
   
 -   [Belirteçleri](../c-language/c-tokens.md)  
   
--   [Açıklamaları](../c-language/c-comments.md)  
+-   [Açıklamalar](../c-language/c-comments.md)  
   
--   [Anahtar sözcükler](../c-language/c-keywords.md)  
+-   [Anahtar Sözcükler](../c-language/c-keywords.md)  
   
--   [Tanımlayıcıları](../c-language/c-identifiers.md)  
+-   [Tanımlayıcılar](../c-language/c-identifiers.md)  
   
--   [Sabitleri](../c-language/c-constants.md)  
+-   [Sabitler](../c-language/c-constants.md)  
   
 -   [Dize değişmez değerleri](../c-language/c-string-literals.md)  
   

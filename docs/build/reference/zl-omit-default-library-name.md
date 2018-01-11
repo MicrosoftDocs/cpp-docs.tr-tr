@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8b0d4f865d060ceaf99a808d87574cb6d088f139
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b77b9c1033be1f6144d92b6051118ca85aaaf20
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl (Varsayılan Kitaplık Adını Atla)
 Varsayılan C çalışma zamanı kitaplığı adı .obj dosyasından atlar. Varsayılan olarak, derleyici kitaplığının adı doğru kitaplık bağlayıcıya yönlendirmek için .obj dosyasına yerleştirir.  
@@ -78,4 +79,4 @@ void Test() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

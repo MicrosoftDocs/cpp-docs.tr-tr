@@ -31,11 +31,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 153c71f36eb56ce9d848b791e9a2ef16d9f6a6d0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67e5aeee2aaa96b143962beb0790e3854ff7de01
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 Bu sınıf sarmalar `VARIANT` depolanan verilerin türünü belirten bir üye sağlama türü.  

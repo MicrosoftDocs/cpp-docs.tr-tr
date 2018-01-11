@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89bccb4ce3803708d919f0778c49428c399a3b70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 698c59614894314e70019fe2b4621755b4cd3085
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
 `combinable<T>` Nesne kilidi serbest iş parçacığı yerel alt sırasında paralel algoritmalar hesaplamalar veri, iş parçacığı özel kopyasının sağlamak için tasarlanmıştır. Paralel işlemin sonunda, iş parçacığı özel alt hesaplamalar sonra nihai sonucu birleştirilebilir. Bu sınıf, paylaşılan bir değişken yerine kullanılabilir ve aksi durumda olurdu, çok sayıda paylaşılan değişken üzerinde Çekişme bir performans geliştirmesinden ortaya çıkabilir.  
@@ -191,4 +192,4 @@ combinable& operator= (const combinable& _Copy);
  Bu başvuru `combinable` nesnesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 409bb0fadf994e793323c5585098f12c7f5f6c32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 877d83a6833b9505c326bc5312d2f151add07cb8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>Özellik Bölümleri ve Özellik Sayfaları (MFC)
 Bir MFC [iletişim kutusu](../mfc/dialog-boxes.md) "iletişim sekmesinde" bir görünüm üzerinde özellik bölümleri ve özellik sayfaları ekleme alabilir. "Özellik sayfası" adı verilen MFC'de dosya klasörleri yedeklemek için ön veya bir grup art arda windows görülen yığınını benzediğini sekmeli sayfaları yığınını içerecek şekilde bu tür bir Microsoft Word, Excel ve Visual C++, birçok iletişim kutularında benzer iletişim kutusu görüntülenir. Ön sekmesindeki denetimleri görünür; Yalnızca etiketli sekme arka sekmelerde görülebilir. Özellik sayfaları çok sayıda özellikleri veya oldukça düzgün çeşitli gruplar halinde kalan ayarlarını yönetmek için özellikle yararlıdır. Genellikle, bir özellik sayfasını, birçok ayrı iletişim kutuları değiştirerek bir kullanıcı arabirimi basitleştirebilir.  
@@ -40,5 +41,5 @@ Bir MFC [iletişim kutusu](../mfc/dialog-boxes.md) "iletişim sekmesinde" bir g�
  [Özellik sayfaları ve MFC'de özellik sayfaları](../mfc/property-sheets-and-property-pages-in-mfc.md)   
  [Veri Değişimi](../mfc/exchanging-data.md)   
  [Kalıcı olmayan özellik sayfası oluşturma](../mfc/creating-a-modeless-property-sheet.md)   
- [Uygula düğmesini işleme](../mfc/handling-the-apply-button.md)
+ [Uygula Düğmesini İşleme](../mfc/handling-the-apply-button.md)
 

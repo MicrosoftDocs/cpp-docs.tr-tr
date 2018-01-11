@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 62c497857395f606f288510b65ffe77133002ca1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cdcc80aff5827d782f97a69c962670b08fdd3ad0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="execlpe"></a>execlpe
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_execlpe](../../c-runtime-library/reference/execlpe-wexeclpe.md) yerine.  

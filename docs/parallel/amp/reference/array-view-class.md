@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d0378e35d182409cd4077b3f7c6fc270d116f18c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 467d806203687610265d1b199e01295f93557081
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arrayview-class"></a>array_view Sınıfı
 Başka bir kapsayıcıda tutulan verileri üzerinden N boyutlu bir görünümü gösterir.  
@@ -89,8 +90,8 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 |[get_source_accelerator_view](#get_source_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) burada veri kaynağı `array_view` bulunur.|  
 |[yenileme](#refresh)|Bildirir `array_view` bağlı bellek dışında değiştirildi nesne `array_view` arabirimi. Bu yöntem çağrısı önbelleğe alınan tüm bilgileri eski işler.|  
 |[reinterpret_as](#reinterpret_as)|Tüm öğeleri içeren tek boyutlu bir dizi döndürür `array_view` nesnesi.|  
-|[Bölüm](#section)|Alt döndürür `array_view` belirtilen kaynağa ve bu, isteğe bağlı olarak, nesne belirtilen uzantı sahiptir.|  
-|[Eşitleme](#synchronize)|İçin yapılan tüm değişiklikler eşitler `array_view` nesne kaynak verileri dön.|  
+|[section](#section)|Alt döndürür `array_view` belirtilen kaynağa ve bu, isteğe bağlı olarak, nesne belirtilen uzantı sahiptir.|  
+|[synchronize](#synchronize)|İçin yapılan tüm değişiklikler eşitler `array_view` nesne kaynak verileri dön.|  
 |[synchronize_async](#synchronize_async)|Zaman uyumsuz olarak yapılan herhangi bir değişiklik eşitler `array_view` nesne kaynak verileri dön.|  
 |[synchronize_to](#synchronize_to)|İçin yapılan tüm değişiklikler eşitler `array_view` belirtilen nesneye [accelerator_view](accelerator-view-class.md).|  
 |[synchronize_to_async](#synchronize_to_async)|Zaman uyumsuz olarak yapılan herhangi bir değişiklik eşitler `array_view` belirtilen nesneye [accelerator_view](accelerator-view-class.md).|  
@@ -825,4 +826,4 @@ array_view<const value_type,_New_rank> view_as(
  `array_view` Oluşturulan nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

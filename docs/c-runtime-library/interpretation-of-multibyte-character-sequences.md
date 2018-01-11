@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ca454b0087bd9cc1b8ded6f7b2d4ccb201373dc4
-ms.sourcegitcommit: 2a5d0e9e6829150cbc22c6de3395ec13008e3266
+ms.workload: cplusplus
+ms.openlocfilehash: 90f7f9431ddfc2d21a29b35643ee3dff3e34cd6a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interpretation-of-multibyte-character-sequences"></a>Çok Baytlı Karakter Sıralarının Yorumu
 Microsoft Çalışma Zamanı Kitaplığı'ndaki en çok baytlı karakter yordamları için birden çok baytlı kod sayfası ile ilgili çok baytlı karakter sıralarının farkındayız. Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
@@ -39,4 +40,4 @@ Microsoft Çalışma Zamanı Kitaplığı'ndaki en çok baytlı karakter yordaml
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

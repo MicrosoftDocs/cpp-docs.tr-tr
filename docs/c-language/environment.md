@@ -13,16 +13,17 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ea8d2d23a844532b6e66f137e28a3844ad6b22a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ee74ca504338b7595838d6bc250ae755d7c5d1ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="environment"></a>Ortam
--   [Main bağımsız değişkenleri](../c-language/arguments-to-main.md)  
+-   [main Bağımsız Değişkenleri](../c-language/arguments-to-main.md)  
   
--   [Etkileşimli cihazlar](../c-language/interactive-devices.md)  
+-   [Etkileşimli Cihazlar](../c-language/interactive-devices.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)
+ [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

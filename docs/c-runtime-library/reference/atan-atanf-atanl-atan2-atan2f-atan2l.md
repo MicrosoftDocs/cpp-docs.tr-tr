@@ -49,11 +49,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b13ccda9dd613b0150276d8471f2a5330016e95e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36e90d781c4cc4512f4869247c296b69b19c1f9b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atan-atanf-atanl-atan2-atan2f-atan2l"></a>atan, atanf, atanl, atan2, atan2f, atan2l
 Tanjantını hesaplar `x` (`atan`, `atanf`, ve `atanl`) veya arktanjantını `y` / `x` (`atan2`, `atan2f`, ve `atan2l`).  
@@ -164,4 +165,4 @@ Arctangent of 0.500000 / 5.000000: 0.099669
  [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [Tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
  [_Cıatan](../../c-runtime-library/ciatan.md)   
- [_Cıatan2](../../c-runtime-library/ciatan2.md)
+ [_CIatan2](../../c-runtime-library/ciatan2.md)

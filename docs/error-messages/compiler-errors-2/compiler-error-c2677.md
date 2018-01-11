@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4362fdb85c6700c9f9592b9bbf626738e6c4d4b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 846d8a2001b2bcb605b90b06a5a3b8fb8cd413bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2677"></a>Derleyici Hatası C2677
 İkili 'işleci': genel bir işleç bulundu türü 'type' aldığı (veya kabul edilebilir bir dönüştürme yok)  

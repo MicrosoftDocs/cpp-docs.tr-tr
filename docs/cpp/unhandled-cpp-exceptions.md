@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6954c3eecfb3e6048a653401f4238b950e3aecf0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6b7410d34b7b9f31c96cf7e991133770099735a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unhandled-c-exceptions"></a>İşlenilmeyen C++ Özel Durumları
 Eşleşen bir işleyici varsa (veya üç nokta **catch** işleyici) geçerli özel durumu için önceden tanımlanmış bulunamıyor `terminate` çalışma zamanı işlevi çağrılır. (İşleyicilerinizden herhangi birinde `terminate`'i de açıkça çağırabilirsiniz.) Varsayılan `terminate` işlemi, `abort` çağırmaktır. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. `terminate` Yordamı her zaman bir bağımsız değişken olarak verilen son işlevi çağırır `set_terminate`.  
@@ -63,4 +64,4 @@ term_func was called by terminate.
  `term_func` işlevi, ideal olarak `exit` çağrısıyla programı veya geçerli iş parçacığını sonlandırmalıdır. Sonlandırmazsa ve bunun yerine arayanına dönerse, `abort` çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+ [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

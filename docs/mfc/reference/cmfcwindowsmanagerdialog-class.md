@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3f018796bcb0e41196f473ec8a07644a5b0cfb68
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f20a93135a6f310b626cbe12f68f72c64e4ce8e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcwindowsmanagerdialog-class"></a>CMFCWindowsManagerDialog sınıfı
 `CMFCWindowsManagerDialog` MDI alt pencereleri MDI uygulamasında yönetmek bir kullanıcı nesnesi sağlar.  
@@ -87,4 +88,4 @@ CMFCWindowsManagerDialog(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md)
+ [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)

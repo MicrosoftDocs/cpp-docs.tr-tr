@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c791feb2abb9deda0fcd0c18602682b81e4dcf28
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 992c3164a8adb95125d9e4be4f88f930270b08ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-language-syntax-summary"></a>C Dili Sözdizimi Özeti
 Bu bölüm C dili ve Microsoft'a özgü C dili özelliklerinin tam açıklamasını sağlar. Bu bölümde sözdizimi gösterimini herhangi bir dil bileşeni için tam sözdizimi belirlemek amacıyla kullanabilirsiniz. Bir konunun ele alındığı bu kılavuzun kısmında sözdizimi için açıklaması görünür.  

@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ea1374a07b284b45fe5c5de432c45a39732f4dad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f040764260e938ae4139ae656209ba588448017
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conventions"></a>Kurallar
 Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:  
@@ -35,4 +36,4 @@ Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelik
  Bir terminal olmayanın ardından gelen iki nokta üst üste (:), tanımını sunar. Alternatif tanımlar, ayrı satırlarda listelenmiştir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Dilbilgisi özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)
+ [Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

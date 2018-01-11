@@ -31,11 +31,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 45e3fde574dee564e126ae7fbbc42e8ee5a61442
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3c3c9d961c69616df05975f2d484d0bbfd43f514
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="colevariant-class"></a>COleVariant sınıfı
 Yalıtan [değişken](http://msdn.microsoft.com/en-us/e305240e-9e11-4006-98cc-26f4932d2118) veri türü.  
@@ -382,7 +383,7 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
  DAO kayıt kümesinde bir UNICODE olmayan yapı dizeleri ANSI olmasını bekler. Bu nedenle, DAO için işlevleri kullanan `COleVariant` nesneleri, UNICODE kayıt kümesi oluşturuyorsanız değil, kullanmalıdır **COleVariant::COleVariant (** `lpszSrc` **,** `vtSrc` **)**  Oluşturucusu ile form `vtSrc` kümesine `VT_BSTRT` (ANSI) veya kullanın `SetString` ile `vtSrc` kümesine `VT_BSTRT` ANSI dizelerini yapma. Örneğin, `CDaoRecordset` işlevleri [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) ve [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) kullanmak `COleVariant` parametre olarak nesneleri. DAO kayıt kümesi UNICODE değilse, bu nesnelerin ANSI olması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7f9d0e4f3b3e45d9eace17084bceb84f49385663
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 51f78f436d0e19779d0ebca499a559a60d12bcf9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk2001"></a>Bağlayıcı Araçları Hatası LNK2001
 Çözümlenmemiş dış simgesi "*simgesi*"  

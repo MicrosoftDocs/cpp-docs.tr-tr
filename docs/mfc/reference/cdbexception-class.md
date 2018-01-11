@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b171766fd4376478a11b4bab4dacf7cef58129a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 295b0d9ed9ce37988766455741a168b8c1d5ee6b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdbexception-class"></a>CDBException sınıfı
 Veritabanı sınıflardan doğan bir özel durumu temsil eder.  
@@ -157,4 +158,4 @@ class CDBException : public CException
  [CFieldExchange sınıfı](../../mfc/reference/cfieldexchange-class.md)   
  [CRecordset::Update](../../mfc/reference/crecordset-class.md#update)   
  [CRecordset::Delete](../../mfc/reference/crecordset-class.md#delete)   
- [CException sınıfı](../../mfc/reference/cexception-class.md)
+ [CException Sınıfı](../../mfc/reference/cexception-class.md)

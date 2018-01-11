@@ -13,28 +13,29 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1c6a5bc8df28b696e9f0fee15304667cf4f49227
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e452f198f99054a93ad27e243fa4ed43ba3f8b33
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="organization-of-the-c-language-reference"></a>C Dili Başvurularının Organizasyonu
--   [C öğeleri](../c-language/elements-of-c.md)  
+-   [C Öğeleri](../c-language/elements-of-c.md)  
   
--   [Program yapısı](../c-language/program-structure.md)  
+-   [Program Yapısı](../c-language/program-structure.md)  
   
--   [Bildirimler ve türler](../c-language/declarations-and-types.md)  
+-   [Bildirimler ve Türler](../c-language/declarations-and-types.md)  
   
 -   [İfadeler ve Atamalar](../c-language/expressions-and-assignments.md)  
   
--   [Deyimleri](../c-language/statements-c.md)  
+-   [Deyimler](../c-language/statements-c.md)  
   
 -   [İşlevler](../c-language/functions-c.md)  
   
--   [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md)  
+-   [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)  
   
--   [Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)  
+-   [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C Dil Başvurusu](../c-language/c-language-reference.md)

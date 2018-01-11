@@ -37,11 +37,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ceca13bd09483c788c430d420b53c88bb97ed34d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de1e30e6ca9f404199c6db43837f35d612a02b69
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren bir düzenlenebilir metin kutusu düzenleme Gözat denetimi destekler. Kullanıcı Gözat düğmesine tıkladığında, Denetim özel bir eylem gerçekleştiren veya bir dosya tarayıcısı veya bir klasörü tarayıcı içeren bir standart iletişim kutusu görüntüler.  
@@ -315,4 +316,4 @@ virtual BOOL OnIllegalFileName(CString& strFileName);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ff189a255fe9e3c54ac4c15fbea43dcf8d8a2b12
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 15aeb1af7f41cf2df8be3f69657ec6870c55ab34
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma
 MFC özel durum işleme standardı yalnızca MFC ya da diğer kitaplıkları işlevlerde tarafından oluşturulan özel durumları yakalamak için kullanmak mümkündür. Özel durumları karşılaşabilirsiniz işlevleri yazıyorsanız kitaplık kodu tarafından oluşturulan özel durumları yakalama ek olarak, özel durumlar kendi kodunuzdan atabilirsiniz.  
@@ -50,5 +51,5 @@ MFC özel durum işleme standardı yalnızca MFC ya da diğer kitaplıkları iş
 >  MFC'nin varsayılan işleme özel durumlar geçerlidir yalnızca işaretçileri `CException` nesneleri (ve nesnelerin `CException`-türetilmiş sınıfları). Yukarıdaki örnekte MFC'nin özel durum mekanizması atlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

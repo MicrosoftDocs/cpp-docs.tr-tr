@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21ca1d07a39950c5d5de83ed6e3a09c12c775d4d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f5b80b55361a8f7bfa195b08d02feb94af0874bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C++ Standart Kitaplığı tabanlı bir koleksiyon uygulama
 ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon arabirimleri nesneleriniz hızlıca uygulamak etkinleştirmek için arabirim. Bu sınıf nasıl çalıştığını anlamak için Otomasyon istemcilerinde amaçlayan bir salt okunur koleksiyonun uygulamak için bu sınıf kullanan basit bir örnek (aşağıda) üzerinden çalışır.  
@@ -94,7 +95,7 @@ ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon
  [!code-cpp[NVC_ATL_COM#28](../atl/codesnippet/cpp/implementing-an-stl-based-collection_5.h)]  
   
 ##  <a name="vcconpopulate_the_collection"></a>Koleksiyon doldurmak için kod ekleme  
- Vektör verilerle doldurmak için kalan tek şey.. Bu basit örnekte koleksiyonuna sınıfa ilişkin oluşturucuda birkaç sözcük ekleyebilirsiniz:  
+ Vektör verilerle doldurmak için kalan tek şey. Bu basit örnekte koleksiyonuna sınıfa ilişkin oluşturucuda birkaç sözcük ekleyebilirsiniz:  
   
  [!code-cpp[NVC_ATL_COM#29](../atl/codesnippet/cpp/implementing-an-stl-based-collection_6.h)]  
   
@@ -103,5 +104,5 @@ ATL sağlar `ICollectionOnSTLImpl` C++ Standart Kitaplığı tabanlı koleksiyon
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Koleksiyonlar ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)   
  [ATLCollections örnek](../visual-cpp-samples.md)   
- [ATL kopyalama İlkesi sınıfları](../atl/atl-copy-policy-classes.md)
+ [ATL Kopyalama İlkesi Sınıfları](../atl/atl-copy-policy-classes.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9ccdd1222335cba8ba3169903f8a05e064801ccd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c7439908970d61f55f10915ff69bc990a6fcc841
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writing-your-own-manipulators-without-arguments"></a>Bağımsız Değişkenler Olmadan Kendi Manipülatörlerinizi Yazma
 Bağımsız değişkenler kullanmayın manipülatörlerinizi yazma sınıf türetme ne karmaşık makroları kullanımını gerektirir. Yazıcı çifti gerektirir varsayalım \<ESC > [Kalın modu girmek için tıklatın. Akışa doğrudan bu çifti ekleyebilirsiniz:  
@@ -51,5 +52,5 @@ _Myt& operator<<(ios_base& (__cdecl *_Pfn)(ios_base&))
  Diğer aşırı yüklenmiş işleçler genişletmek için bu özelliği kullanın. Bu durumda, arızi olduğundan, `bold` akışa karakter ekler. Bitişik karakter yazdırıldığında bu akışa mutlaka eklendiğinde, işlev çağrılır. Bu nedenle, yazdırma akışın arabelleğe alma nedeniyle Gecikmeli.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkış akışları](../standard-library/output-streams.md)
+ [Çıkış Akışları](../standard-library/output-streams.md)
 

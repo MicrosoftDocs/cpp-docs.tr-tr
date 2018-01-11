@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 93bb3b8f1b765b70128537b096142a9d7ac3ae8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 845c2fab98d246ccee51aff721b1ceb011e3803c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pragma-directives-and-the-pragma-keyword"></a>Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü
 Pragma yönergeleri makine veya işletim özgü derleyicisi özelliklerini belirtin. `__pragma` Microsoft derleyici özel anahtar sözcüğü makrosu tanımları içindeki kod pragma yönergeleri için sağlar.  
@@ -55,19 +56,19 @@ __pragma(token-string)
 |-|-|-|  
 |[alloc_text](../preprocessor/alloc-text.md)|[auto_inline](../preprocessor/auto-inline.md)|[bss_seg](../preprocessor/bss-seg.md)|  
 |[check_stack](../preprocessor/check-stack.md)|[code_seg](../preprocessor/code-seg.md)|[Açıklama](../preprocessor/comment-c-cpp.md)|  
-|[Bileşen](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|  
+|[component](../preprocessor/component.md)|[uygun](../preprocessor/conform.md) <sup>1</sup>|[const_seg](../preprocessor/const-seg.md)|  
 |[data_seg](../preprocessor/data-seg.md)|[kullanım dışı](../preprocessor/deprecated-c-cpp.md)|[detect_mismatch](../preprocessor/detect-mismatch.md)|  
 |[fenv_access](../preprocessor/fenv-access.md)|[float_control](../preprocessor/float-control.md)|[fp_contract](../preprocessor/fp-contract.md)|  
 |[işlevi](../preprocessor/function-c-cpp.md)|[hdrstop](../preprocessor/hdrstop.md)|[include_alias](../preprocessor/include-alias.md)|  
 |[init_seg](../preprocessor/init-seg.md) <sup>1</sup>|[inline_depth](../preprocessor/inline-depth.md)|[inline_recursion](../preprocessor/inline-recursion.md)|  
-|[İç](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|  
-|[Yönetilen](../preprocessor/managed-unmanaged.md)|[İleti](../preprocessor/message.md)||  
-|[omp](../preprocessor/omp.md)|[bir kez](../preprocessor/once.md)||  
-|[en iyi duruma getirme](../preprocessor/optimize.md)|[Paketi](../preprocessor/pack.md)|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|  
-|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|[bölge, endregion](../preprocessor/region-endregion.md)|  
-|[runtime_checks](../preprocessor/runtime-checks.md)|[Bölüm](../preprocessor/section.md)|[setlocale](../preprocessor/setlocale.md)|  
+|[intrinsic](../preprocessor/intrinsic.md)|[döngü](../preprocessor/loop.md) <sup>1</sup>|[make_public](../preprocessor/make-public.md)|  
+|[Yönetilen](../preprocessor/managed-unmanaged.md)|[message](../preprocessor/message.md)||  
+|[omp](../preprocessor/omp.md)|[once](../preprocessor/once.md)||  
+|[optimize](../preprocessor/optimize.md)|[pack](../preprocessor/pack.md)|[pointers_to_members](../preprocessor/pointers-to-members.md) <sup>1</sup>|  
+|[pop_macro](../preprocessor/pop-macro.md)|[push_macro](../preprocessor/push-macro.md)|[region, endregion](../preprocessor/region-endregion.md)|  
+|[runtime_checks](../preprocessor/runtime-checks.md)|[section](../preprocessor/section.md)|[setlocale](../preprocessor/setlocale.md)|  
 |[strict_gs_check](../preprocessor/strict-gs-check.md)|[Yönetilmeyen](../preprocessor/managed-unmanaged.md)|[vtordisp](../preprocessor/vtordisp.md) <sup>1</sup>|  
-|[Uyarı](../preprocessor/warning.md)|||  
+|[warning](../preprocessor/warning.md)|||  
   
  1. Yalnızca C++ derleyicisi tarafından desteklenir.  
   
@@ -115,4 +116,4 @@ return _hr; \
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)   
  [C pragmaları](../c-language/c-pragmas.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

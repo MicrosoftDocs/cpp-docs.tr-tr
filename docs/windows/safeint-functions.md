@@ -14,11 +14,14 @@ caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 7b71ee1088c60ea1c13b04fef517169f40a32d96
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 6ae482b7f58d64a46b82b32c6c6d62d7f69f0dce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safeint-functions"></a>SafeInt İşlevleri
 SafeInt Kitaplığı örneğini oluşturmadan kullanabileceğiniz birçok işlevleri sağlar [SafeInt sınıfı](../windows/safeint-class.md). Tek bir matematik işlemi tamsayı Taşma alanındaki korumak istiyorsanız, bu işlevler kullanabilirsiniz. Birden çok matematik işlemleri korumak istiyorsanız, oluşturmalısınız `SafeInt` nesneleri. Oluşturmak için daha verimlidir `SafeInt` birden çok kez bu işlevler kullanımı çok nesneleri.  
@@ -43,5 +46,5 @@ SafeInt Kitaplığı örneğini oluşturmadan kullanabileceğiniz birçok işlev
   
 |Bölüm|Açıklama|  
 |-------------|-----------------|  
-|[SafeInt sınıfı](../windows/safeint-class.md)|`SafeInt` Sınıfı.|  
-|[Safeıntexception sınıfı](../windows/safeintexception-class.md)|SafeInt Kitaplığı'na belirli özel durum sınıfı.|
+|[SafeInt Sınıfı](../windows/safeint-class.md)|`SafeInt` Sınıfı.|  
+|[SafeIntException Sınıfı](../windows/safeintexception-class.md)|SafeInt Kitaplığı'na belirli özel durum sınıfı.|

@@ -30,11 +30,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2a9098f6f8f0374ad10396f30cf5aa636d9843d7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f41348b77d65f3ade8016c9e23a31555db2d3612
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overwritebuffer-class"></a>overwrite_buffer Sınıfı
 Bir `overwrite_buffer` ileti bloğu birden çok hedef birden çok kaynak, sıralı `propagator_block` aynı anda tek bir ileti depolama yeteneği. Yeni iletiler önceden tutulan olanları üzerine yazın.  
@@ -64,7 +65,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[has_value](#has_value)|Denetler olup olmadığını bu `overwrite_buffer` ileti bloğu değerine henüz sahip.|  
-|[değer](#value)|İçinde depolanan iletinin geçerli yükü bir başvuru edinir `overwrite_buffer` ileti bloğu.|  
+|[value](#value)|İçinde depolanan iletinin geçerli yükü bir başvuru edinir `overwrite_buffer` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -330,4 +331,4 @@ T value();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [unbounded_buffer sınıfı](unbounded-buffer-class.md)   
- [single_assignment sınıfı](single-assignment-class.md)
+ [single_assignment Sınıfı](single-assignment-class.md)

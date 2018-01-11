@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 768ccdc197df8d38cb594c2408bb6fc6998dfdcb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c7b2e15761815b75ba8001ad4eb5a5c276f5056
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-ports-and-socket-addresses"></a>Windows Yuvaları: Bağlantı Noktaları ve Yuva Adresleri
 Bu makalede koşulları "port" ve "Windows Yuvaları ile kullanılan adresi" olarak açıklanmaktadır.  
@@ -47,15 +48,15 @@ Bu makalede koşulları "port" ve "Windows Yuvaları ile kullanılan adresi" ola
   
  Daha fazla bilgi için bkz.:  
   
--   [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
+-   [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
   
--   [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
+-   [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
   
--   [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
+-   [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
   
--   [Windows Yuvaları: Akış yuvaları](../mfc/windows-sockets-stream-sockets.md)  
+-   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
   
--   [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
+-   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)

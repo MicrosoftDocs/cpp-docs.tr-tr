@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 696d00e32ebf692d8155b93247f3ca83b0bb2b08
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 4a3f8542f2c897f45916ac62fbac147259b2362d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atltraceerrorrecords"></a>AtlTraceErrorRecords
 Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm aygıta dökümünü yapar.  
@@ -48,4 +51,4 @@ Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm aygıta dökümünü
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makrolar ve genel işlevler için OLE DB Tüketici Şablonları](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)   
- [Cdberrorınfo sınıfı](../../data/oledb/cdberrorinfo-class.md)
+ [CDBErrorInfo Sınıfı](../../data/oledb/cdberrorinfo-class.md)

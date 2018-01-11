@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6d4286e834f4ee9ac644dfe28ed2d702cb894b5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7277599efd0f8395d2961a08a69e5bd9d2c7cf9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4186"></a>Derleyici Uyarısı (düzey 1) C4186
 \#içeri aktarma öznitelik 'özniteliği' sayısı bağımsız değişkenler gerektirir; göz ardı  

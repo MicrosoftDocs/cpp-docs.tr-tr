@@ -31,11 +31,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 31406418b14c6b3008fc734d53be6ca6319df8c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce34abd10b4681ba378cf4fbd777c96277f4db4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="automation"></a>Otomatikleştirme
 Otomasyon (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için mümkün kılar.  
@@ -77,9 +78,9 @@ Otomasyon (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Otomasyon istemcileri](../mfc/automation-clients.md)  
+-   [Otomasyon İstemcileri](../mfc/automation-clients.md)  
   
--   [Otomasyon sunucuları](../mfc/automation-servers.md)  
+-   [Otomasyon Sunucuları](../mfc/automation-servers.md)  
   
 -   [Uzak Otomasyon](../mfc/remote-automation.md)  
   

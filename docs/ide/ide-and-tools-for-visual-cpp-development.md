@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1fc416d6856b2b84005e4e1d66e17a3b10e93eb6
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: e503c3ecbf0cd7245aadeb231030a91577e1e865
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ide-and-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme araçları
 Çok sayıda windows ve diğer dilleri ortak araçları, Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Visual C++ paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, kod düzenleyicisini ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Genellikle, bir paylaşılan aracı ya da penceresini biraz farklı bir özellikler kümesi için C++ .NET dillerini veya Javascript için vardır. Bazı windows veya araçları yalnızca Visual Studio Pro veya Visual Studio Enterprise'da kullanılabilir.   
@@ -116,10 +117,10 @@ ms.lasthandoff: 10/31/2017
   
 |||  
 |-|-|  
-|[Visual C++ Araçları ve Visual Studio sürümlerinde özellikleri](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Hangi özelliklerin Visual Studio çeşitli sürümlerinde kullanılabilir olduğunu gösterir.|  
+|[Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Hangi özelliklerin Visual Studio çeşitli sürümlerinde kullanılabilir olduğunu gösterir.|  
 |[MSBuild tabanlı projeler oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)|C++ MSBuild tabanlı projeler Visual Studio ve bağlantılar oluşturmak ve bunları yönetmek nasıl açıklayan diğer makaleler için genel bir bakış sağlar.|  
 |[Visual C++ projelerinde CMake](cmake-tools-for-visual-cpp.md).|CMake veya diğer MSBuild olmayan projeleri Visual C++'ta nasıl oluşturulacağını açıklar.|
-|[C/C++ programları oluşturma](../build/building-c-cpp-programs.md)|C++ projeleri derleme açıklar.|  
+|[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)|C++ projeleri derleme açıklar.|  
 |[Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)|C++ uygulamaları ve ayrıntılı dağıtım açıklayan diğer makalelere bağlantılar için dağıtım genel bir bakış sağlar.|  
-|[Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)|Visual Studio'nun önceki sürümleri oluşturulan C++ uygulamalarını yükseltme ve ayrıca dışında Visual Studio Araçları ile oluşturulmuş uygulamalar geçirme hakkında ayrıntılı bilgi.|  
+|[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)|Visual Studio'nun önceki sürümleri oluşturulan C++ uygulamalarını yükseltme ve ayrıca dışında Visual Studio Araçları ile oluşturulmuş uygulamalar geçirme hakkında ayrıntılı bilgi.|  
 |[Visual C++](../top/visual-cpp-in-visual-studio.md)|Visual Studio ve bağlantıları Visual C++ belge geri kalanı için Visual C++ anahtar özelliklerini açıklar.|

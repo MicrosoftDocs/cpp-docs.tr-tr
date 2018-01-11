@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92f3af3fa84043d9e8755136ab66e345e455ff1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd861da77b549a73edf9aeface714b0066d88344
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
 **İçin** yönergesi ilişkili döngü yinelemelerini paralel olarak yürütülecek belirten bir yinelemeli iş paylaşım yapısıyla tanımlar. Yinelemelerini **için** döngü bağlar, paralel yapı yürütme grupta zaten iş parçacıkları arasında dağıtılır. Söz dizimi **için** yapı aşağıdaki gibidir:  

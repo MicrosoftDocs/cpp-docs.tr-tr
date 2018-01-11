@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b30ecd8a8a508842d0edf9af8c4b3736728ca735
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e29ae754e7f5b078c23f0cdf27c0a280cd28b40a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>Internet URL Ayrıştırma genel öğeleri ve Yardımcıları
 Bir istemci Internet sunucusuna bir sorgu gönderdiğinde, URL Ayrıştırma genel öğeleri birini istemcisi hakkında bilgi ayıklamak için kullanabilirsiniz. Yardımcı işlevleri diğer Internet işlevsellik sağlar.

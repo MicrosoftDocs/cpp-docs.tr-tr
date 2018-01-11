@@ -53,11 +53,12 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1502f2bc315df705f7a135305388277c6d44918e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f9481583c56676d206225ad76f8131c2a79821f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton sınıfı
 Tıklandığında, normal bir düğme gibi davranan araç çubuğu düğmesi türü. Ancak, aşağı açılan araç çubuğunu açar ( [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md) kullanıcının tıklatıp araç çubuğu düğmesi tutan durumunda.  
@@ -490,7 +491,7 @@ void SetDefaultCommand(UINT uiCmd);
  [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)   
  [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)   
  [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)   
- [İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+ [İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
 
 

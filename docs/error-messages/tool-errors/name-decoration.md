@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0016a340f44394ec2aa8a285c6ce3cf1c2bc8f7a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f780b91d7d58ecdfc9b2af4295c76253357f8e66
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 Ad düzenlemesi genellikle C++ adlandırma kurallarına başvuruyor, ancak C durumlarda bir dizi için geçerli olabilir. Varsayılan olarak, C++ işlevi için bir bağlayıcı adı oluşturmak için bu işlev adı, parametreler ve dönüş türü kullanır. Aşağıdaki işlevi göz önünde bulundurun:  
@@ -46,4 +47,4 @@ void CALLTYPE test(void)
  Şu anda hiçbir standart c++ derleyici satıcılar veya bir derleyici farklı sürümleri arasında bile adlandırma. Bu nedenle diğer derleyicileri ile derlenen nesne dosyaları bağlama aynı adlandırma şeması vermeyebilir ve böylece çözümlenmemiş externals neden olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı araçları hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)
+ [Bağlayıcı Araçları Hatası LNK2001](../../error-messages/tool-errors/linker-tools-error-lnk2001.md)

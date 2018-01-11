@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a78f6e4c7cdb5dbd25354d93d9bafc2892098c7d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e0d60eed00abc60c09e03838a113c424d8f173a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
 / DEF seçeneği ile LIB içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak için kullanabilirsiniz. Dışarı aktarma dosyasını içeren bir program oluşturmak için bağlantı kullanır (genellikle bir dinamik bağlantı kitaplığı (DLL)) dışa aktarır ve diğer programlarla bu dışarı başvuruları çözümlemek için içeri aktarma kitaplığını kullanır.  
@@ -35,4 +36,4 @@ ms.lasthandoff: 10/24/2017
  Bu ayrıca alır bir programa bir DLL dışarı aktarmaları, ancak, olup doğrudan veya dolaylı olarak, LIB içeri aktarma kitaplıkları birini oluşturmak için kullanmanız gerekir. LIB içeri aktarma kitaplığı oluşturduğunda, ayrıca bir dışarı aktarma dosyası oluşturur. Dışa aktarma dosyası Ddl'lerden biri bağlarken kullanmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB başvurusu](../../build/reference/lib-reference.md)
+ [LIB Başvurusu](../../build/reference/lib-reference.md)

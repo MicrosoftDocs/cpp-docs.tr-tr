@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7de79303e414691df7b069b55b82b2ba39f6ea1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03fc696af7605f9937ecddf40a06a0c020aff82c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 İşler çağrısı [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) açıkça bir DLL'e bağlanmak için. İşlev başarılı olursa, belirtilen DLL çağırma işlemi adres alanına eşler ve diğer işlevleri açıkça bağlamada ile kullanılan DLL için bir işleyici döner — Örneğin, `GetProcAddress` ve `FreeLibrary`.  

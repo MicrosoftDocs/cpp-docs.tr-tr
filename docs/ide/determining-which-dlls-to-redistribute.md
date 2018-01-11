@@ -19,11 +19,12 @@ caps.latest.revision: "31"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ae47ec92ecea46aba5f0e1bf144a34fd5532af9d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a3cc7b80e16abeecc756e7fa480c7bfe71682382
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
 
@@ -39,7 +40,7 @@ Tek tek yeniden dağıtılabilir DLL'leri de Visual Studio yüklemenizin dahil e
 
 İle uygulamanızı yeniden dağıtmanıza gerek hangi DLL'lerin belirlemek için uygulamanızın bağımlı DLL'lerin listesini toplayın. Bunlar normalde bağlayıcı kitaplık girişleri içe aktarırken listelenmiştir. Vcruntime ve evrensel C çalışma zamanı kitaplığı (UCRT), gibi belirli kitaplıkları, varsayılan olarak dahil edilir. Uygulamanızı veya bağımlılıklarından biri LoadLibrary DLL dinamik olarak yüklemek için kullanılıyorsa, bu DLL bağlayıcı girişleri içinde listelenen değil. Dinamik olarak yüklenen DLL'leri listesi toplamak için bir yoldur bağımlılık bekçisi (depends.exe) uygulamanızı üzerinde çalıştırmak için açıklandığı gibi [bir Visual C++ uygulaması bağımlılıklarını anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md). Ne yazık ki, bu aracı eskidir ve belirli DLL'ler bulunamıyor bildirebilir.
 
-Bağımlılıklar listesine sahip olduğunuzda Microsoft Visual Studio yükleme dizininde bulunan Redist.txt dosyasındaki bağlı listesi ya da ""Dağıtılabilir kod dosyaları"bölümünde başvurulan REDIST" yeniden dağıtılabilir DLL'lerin listesini bu karşılaştırın Microsoft Yazılımı Lisans koşulları Visual Studio kopyası için. Visual Studio 2017 için bkz: [Microsoft Visual Studio 2017 (yardımcı programları içerir, genişletilebilirlik ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/?LinkId=823098). Visual Studio 2015 için bkz: [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK (içerir yardımcı programları ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/?LinkId=799794). Visual Studio 2013 için listenin çevrimiçi kullanılabilir [Microsoft Visual Studio 2013 ve Microsoft Visual Studio 2013 SDK için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=313603).
+Bağımlılıklar listesine sahip olduğunuzda Microsoft Visual Studio yükleme dizininde bulunan Redist.txt dosyasındaki bağlı listesi ya da ""Dağıtılabilir kod dosyaları"bölümünde başvurulan REDIST" yeniden dağıtılabilir DLL'lerin listesini bu karşılaştırın Microsoft Yazılımı Lisans koşulları Visual Studio kopyası için. Visual Studio 2017 için bkz: [Microsoft Visual Studio 2017 (yardımcı programları içerir, genişletilebilirlik ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?linkid=823098). Visual Studio 2015 için bkz: [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK (içerir yardımcı programları ve BuildServer Dosyaları) için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?linkid=799794). Visual Studio 2013 için listenin çevrimiçi kullanılabilir [Microsoft Visual Studio 2013 ve Microsoft Visual Studio 2013 SDK için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=313603).
 
 C çalışma zamanı kitaplığı (CRT) Visual Studio 2015 önce Visual Studio sürümlerinde, bir yeniden dağıtılabilir DLL'de msvc olarak dahil*sürüm*.dll. Visual Studio 2015'ten başlayarak, CRT işlevlerde vcruntime ve UCRT halinde bulunanad. UCRT Windows 10, Windows Update tarafından yönetilen bir sistem bileşeni sunulmuştur. Tüm Windows 10 işletim sistemlerinde kullanılabilir. Uygulamanızı daha eski işletim sistemlerini dağıtmak için UCRT de yeniden dağıtmanız gerekebilir. UCRT herhangi bir sürümü zaten yüklüyse, yalnızca işletim sistemlerinde Windows 10'dan önceki yüklenir, Visual Studio yeniden dağıtılabilir dosyaları dahil ve yalnızca UCRT eski bir sürümü. Alt düzey sistemler için UCRT Microsoft Sistem güncelleştirmesi paketi olarak yüklenebilen bir sürümü için bkz: [Windows 10 Universal C çalışma zamanı](https://www.microsoft.com/en-us/download/details.aspx?id=48234) Microsoft Download Center'da.
 
@@ -56,7 +57,7 @@ Aşağıdaki tabloda, uygulamanızın bağlı Visual C++ DLL'leri bazıları aç
 |MFC*sürüm*.dll|Microsoft Foundation (MFC) kitaplığı sınıflarını kullanın.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md).|
 |MFC*sürüm* *dil*.dll|Microsoft Foundation (MFC) kitaplık kaynaklarını sınıfları.|MFC için belirli bir dil kaynakları kullanan uygulamalar.|
 |MFC*sürüm*u.dll|MFC Kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ve Unicode desteği gerektirir.|
-|mfcmifc80.dll'ye|MFC yönetilen arabirimler kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
+|mfcmifc80.dll|MFC yönetilen arabirimler kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
 |mfcm*sürüm*.dll|MFC yönetilen kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
 |mfcm*sürüm*u.dll|MFC yönetilen kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index) ve Unicode desteği gerektirir.|
 |vcamp*sürüm*.dll|Yerel kod için AMP kitaplığı.|Kullanan uygulamalar [C++ AMP Kitaplığı](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md) kodu.|
@@ -71,6 +72,6 @@ Genellikle, işletim sisteminin bir parçası olduğundan sistem DLL'leri yenide
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md)
+[Dağıtım Yöntemi Seçme](../ide/choosing-a-deployment-method.md)
 
 [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

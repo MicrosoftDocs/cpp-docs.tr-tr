@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27305572c31bebdf2530aa96b4af29b709f6b1b9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6d76be3bd3863826391cc812f17dca88cb3a5457
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>Pano: Veri Kopyalama ve Yapıştırma
 Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulanması için gerekli en düşük iş açıklar. Okumanız önerilir [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) devam etmeden önce konuları.  
@@ -76,5 +77,5 @@ Bu konu, kopyalama ve OLE uygulamanızda panodan yapıştırma uygulanması içi
 -   [OLE](../mfc/ole-background.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pano: OLE Pano mekanizmasını kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
+ [Pano: OLE Pano Mekanizmasını Kullanma](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 

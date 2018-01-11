@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c4192b39c2bb60c9bb2a896a6c30769acff15fb5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ac3034f1384bbd38cb0ca90d0df8ff5bed411d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iteratortraits-struct"></a>iterator_traits Yapısı
 Şablon yardımcı yapı yineleyici olması gereken tüm kritik tür tanımları belirtmek için kullanılır.  

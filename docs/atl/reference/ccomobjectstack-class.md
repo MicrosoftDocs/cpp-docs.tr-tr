@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a4e00fc1f703df824daf7c0f1fc5fbaed05beb32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1b7fa9d14a27277d4c26fc6e7589400e19ef1395
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccomobjectstack-class"></a>CComObjectStack sınıfı
 Bu sınıf geçici bir COM nesnesi oluşturur ve bir iskelet uygulamasıyla sağlar **IUnknown**.  

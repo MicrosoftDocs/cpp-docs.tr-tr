@@ -22,11 +22,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c3e9ab166605d4d67e450a206cf1b47ea6d97f0a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c38f4c75a41de8b2f2b494941c6a52b1ff46fa4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>Visual C++ MSBuild tabanlı projeler oluşturma ve yönetme
 MSBuild Visual C++ için yerel yapılandırma sistemi ve genellikle en iyi oluşturma MFC ya da ATL kitaplıkları kullanan masaüstü uygulamaları yanı sıra UWP uygulamaları için kullanmak üzere sistemi. MSBuild proje sistemi ve Visual Studio IDE ile tümleşiktir, ancak bunu da komut satırından kullanabilirsiniz. Visual C++ Visual Studio 2017'dan başlayarak, destekler [CMake ve diğer MSBuild olmayan sistemleri Klasör Aç özelliği aracılığıyla](non-msbuild-projects.md).
@@ -49,23 +50,23 @@ Visual C++ projeleri seçerek oluşturabileceğiniz **dosyası &#124; Yeni &#124
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)  
  Visual C++'da kullanılabilir MSBuild tabanlı proje türleri açıklanmaktadır.  
   
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)  
+ [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)  
  Çeşitli MSBuild proje türleri ile birlikte kullanılan dosya türlerini açıklar.  
   
- [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)  
+ [Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)  
  Sihirbazlar ile Visual C++ projeleri oluşturma için nasıl kullanılacağını.  
   
- [Proje özellikleriyle çalışma](../ide/working-with-project-properties.md)  
+ [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)  
  Özellik sayfaları ve özellik sayfaları proje ayarlarınızı belirtmek için nasıl kullanılacağını açıklar.  
   
  [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)  
  Sınıfları, yöntemleri, değişkenlerin ve diğer öğelerin işlevselliği eklemek için projenize ekleme işlemi açıklanmaktadır.  
   
- [Nasıl yapılır: derlemeler için proje çıktı dosyalarını düzenleme](../ide/how-to-organize-project-output-files-for-builds.md)  
+ [Nasıl Yapılır: Derlemeler için Proje Çıktı Dosyalarını Düzenleme](../ide/how-to-organize-project-output-files-for-builds.md)  
  Proje çıktı dosyalarını düzenleme açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [C/C++ programları oluşturma](../build/building-c-cpp-programs.md)  
+ [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
  Komut satırından veya Visual Studio tümleşik geliştirme ortamı'ndan programınızı oluşturma açıklayan konulara bağlantılar sağlar.  
   
  [Visual C++ başvurusu](http://msdn.microsoft.com/en-us/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  

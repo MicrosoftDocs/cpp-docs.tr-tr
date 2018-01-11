@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be83831c79b398de9e9b0791d172cf7608e322aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0a011201a521ed97cf9ebe4c0a8249526b9d7c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="servers"></a>Sunucular
 Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri) kullanmak için kapsayıcı uygulamaları tarafından oluşturur. Görsel düzenleme sunucu uygulaması, görsel düzenleme veya yerinde etkinleştirme de destekler. OLE sunucu başka bir biçimidir bir [Otomasyon sunucusu](../mfc/automation-servers.md). Bazı sunucu uygulamaları yalnızca katıştırılmış öğeleri oluşturulmasını destekler; Başkalarının katıştırılmış ve bağlantılı öğeler oluşturulmasını destekler. Bu nadir olmasına rağmen bazı yalnızca bağlama destekler. Kullanıcı bir öğeyi düzenlemek istediğinde tüm sunucu uygulamaları tarafından kapsayıcı uygulamaları etkinleştirme desteklemesi gerekir. Bir uygulama, bir kapsayıcı ve bir sunucu olabilir. Diğer bir deyişle, onu hem de kendi belgelerine verileri birleştirmek ve diğer uygulamaların belgelerine öğeleri olarak birleştirilebilir veri oluşturun.  
@@ -52,15 +53,15 @@ Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri
   
  Sunucuları hakkında daha fazla bilgi için bkz:  
   
--   [Sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md)  
+-   [Sunucular: Sunucu Uygulama](../mfc/servers-implementing-a-server.md)  
   
--   [Sunucular: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md)  
+-   [Sunucular: Sunucu Belgeleri Uygulama](../mfc/servers-implementing-server-documents.md)  
   
--   [Sunucular: Yerinde çerçeve pencereleri uygulama](../mfc/servers-implementing-in-place-frame-windows.md)  
+-   [Sunucular: Yerinde Çerçeve Pencereleri Uygulama](../mfc/servers-implementing-in-place-frame-windows.md)  
   
--   [Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)  
+-   [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)  
   
--   [Sunucular: Kullanıcı arabirimi sorunları](../mfc/servers-user-interface-issues.md)  
+-   [Sunucular: Kullanıcı Arabirimi Sorunları](../mfc/servers-user-interface-issues.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE](../mfc/ole-in-mfc.md)   
@@ -68,5 +69,5 @@ Bir sunucu uygulaması (veya bileşen uygulama) OLE öğeleri (veya bileşenleri
  [Kapsayıcılar: Gelişmiş Özellikler](../mfc/containers-advanced-features.md)   
  [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   
  [Kayıt](../mfc/registration.md)   
- [Otomasyon sunucuları](../mfc/automation-servers.md)
+ [Otomasyon Sunucuları](../mfc/automation-servers.md)
 

@@ -34,11 +34,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 214083f511067c102fcb3ab7d3e6637cfeb548ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b7733a366ade87dd937eb20eab97a5258db8787a
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="chdrive"></a>_chdrive
 Geçerli çalışma sürücüyü değiştirir.  
@@ -64,7 +65,7 @@ int _chdrive(
 ## <a name="remarks"></a>Açıklamalar  
  Varsa `drive` olan aralığı içinde 1 ila 26, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_chdrive** işlev döndürür -1, `errno` ayarlanır `EACCES`, ve `_doserrno` ayarlanır `ERROR_INVALID_DRIVE`.  
   
- **_Chdrive** işlevi değil iş parçacığı bağımlı olduğundan dolayı **SetCurrentDirectory** kendisi iş parçacığı açısından güvenli işlevi. Kullanılacak **_chdrive** güvenli bir çok iş parçacıklı uygulamada kendi iş parçacığı eşitleme sağlamanız gerekir. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/?LinkID=150542) arayın ve sonra **SetCurrentDirectory**.  
+ **_Chdrive** işlevi değil iş parçacığı bağımlı olduğundan dolayı **SetCurrentDirectory** kendisi iş parçacığı açısından güvenli işlevi. Kullanılacak **_chdrive** güvenli bir çok iş parçacıklı uygulamada kendi iş parçacığı eşitleme sağlamanız gerekir. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) arayın ve sonra **SetCurrentDirectory**.  
   
  **_Chdrive** işlevi değişiklikler yalnızca geçerli çalışma sürücü;  **_chdir** geçerli çalışma dizini değiştirir.  
   
@@ -87,4 +88,4 @@ int _chdrive(
  [_getdrive](../../c-runtime-library/reference/getdrive.md)   
  [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)   
  [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)   
- [Sistem, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+ [system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)

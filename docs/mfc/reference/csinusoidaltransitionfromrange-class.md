@@ -31,11 +31,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a01360d79d752e37da42759f22aecbb0cd65b52f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d53e89f1fa73926976896743ab5293d85e5d81c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange sınıfı
 Verilen oscillation aralığındadır bir aralık sinusoidal geçiş yalıtır.  
@@ -163,4 +164,4 @@ UI_ANIMATION_SLOPE m_slope;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e85ee1a0c250cf67f2a379ccad8c11a99b96f76
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1a7c6aa769faaacd128bb51a422227230fa4a851
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
 [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)]hata ayıklama ve profil çok iş parçacıklı uygulamalar için kapsamlı destek sağlar.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/24/2017
 ## <a name="event-tracing"></a>Olay izleme  
  Eşzamanlılık Çalışma zamanı kullanan [Windows için olay izleme](http://msdn.microsoft.com/library/windows/desktop/bb968803) çeşitli olaylar meydana geldiğinde profil oluşturucular gibi izleme araçları bildirmek için (ETW). Paralel bir algoritma başlıyor veya bitiyorsa, bu olayları bir zamanlayıcı etkinleştirilmiş veya devre dışı bırakıldığında, bir bağlam başlar, sona erer, engeller, kaldırır veya verir ve içerir.  
   
- Gibi araçları [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) bu işlevselliğini kullanır; bu nedenle, genellikle bu olayları ile doğrudan çalışmak zorunda değilsiniz. Ancak, bu olayların ne zaman özel bir profil oluşturucu geliştirme kullandığınızda veya olay izleme araçları gibi yararlı [XPerf'in](http://go.microsoft.com/fwlink/linkid=160628).  
+ Gibi araçları [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) bu işlevselliğini kullanır; bu nedenle, genellikle bu olayları ile doğrudan çalışmak zorunda değilsiniz. Ancak, bu olayların ne zaman özel bir profil oluşturucu geliştirme kullandığınızda veya olay izleme araçları gibi yararlı [XPerf'in](http://go.microsoft.com/fwlink/p/?linkid=160628).  
   
  Eşzamanlılık Çalışma zamanı yalnızca izleme etkinleştirildiğinde bu olayları başlatır. Çağrı [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) olayı izlemeyi etkinleştirmek için işlev ve [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#disabletracing) izlemeyi devre dışı bırakmak işlevi.  
   
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/24/2017
  Çalışma zamanı, çağrı sayısı izler `EnableTracing` ve `DisableTracing`. Bu nedenle, çağırırsanız `EnableTracing` birden çok kez çağırmalısınız `DisableTracing` izlemeyi devre dışı bırakmak için aynı sayısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)
+ [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)
 

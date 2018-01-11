@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e20432f603f1bd68749ad31d2e74abc333db48f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 23682b9aea37b13fa399f045e22c6148ef384f9b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multimaperase-stlclr"></a>multimap::erase (STL/CLR)
 Belirtilen konumlardaki öğeleri kaldırır.  
@@ -119,4 +122,4 @@ erase(L'e') = 1
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [multimap (STL/CLR)](../dotnet/multimap-stl-clr.md)   
- [multimap::Clear (STL/CLR)](../dotnet/multimap-clear-stl-clr.md)
+ [multimap::clear (STL/CLR)](../dotnet/multimap-clear-stl-clr.md)

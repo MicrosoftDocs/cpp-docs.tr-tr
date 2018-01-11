@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9f1ab7e0eb9a49e1ed73c2bc33d78b480f8ef907
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c8385e3c229c9740bae4d59b3076b189cb1842d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isfinal-class"></a>is_final sınıfı
 Türü işaretli bir sınıf türü olup olmadığını sınar `final`.  
@@ -47,7 +48,7 @@ struct is_final;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [final tanımlayıcısı](../cpp/final-specifier.md)
+ [final Tanımlayıcısı](../cpp/final-specifier.md)
 
 
 

@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b3f343eee6c6512bb30434aa428f3a4b9bd7a6df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 58f02c6d2a6dcdc4c858fe92b2cf5e1eecdba1a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tmpmax-ltmpnam"></a>TMP_MAX, L_tmpnam
 ## <a name="syntax"></a>Sözdizimi  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/24/2017
  `TMP_MAX`benzersiz dosya adları en fazla sayısı, `tmpnam` işlevi oluşturabilir. `L_tmpnam`tarafından oluşturulan geçici dosya adları uzunluğu `tmpnam`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

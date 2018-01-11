@@ -17,29 +17,30 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c15def4acc3daad2cb0739da0f53e2a9871d172
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 86bca4c48403bd41ce40b79a4b9f7c041ebb26e9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-ctoolbarctrl"></a>CToolBarCtrl Kullanma
 Araç çubuğu denetimi kullanabilirsiniz ([CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)) düğmeleri ve isteğe bağlı alanları içeren bir denetim penceresi oluşturulamadı. Kullanıcının seçtiği gibi her düğme araç çubuğu denetimi penceresinde üst penceresine bir komut iletisi gönderir. Genellikle, bir araç çubuğu düğmeleri kullanıcının uygulamanın komutlara erişmek ek ve daha doğrudan bir yol sağlayarak uygulamanın menüde öğelere karşılık gelir.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Araç çubuğu oluşturma yöntemleri](../mfc/methods-of-creating-a-toolbar.md)  
+-   [Araç Çubuğu Oluşturma Yöntemleri](../mfc/methods-of-creating-a-toolbar.md)  
   
--   [Araç çubuğu denetimi için ayarlar](../mfc/settings-for-the-toolbar-control.md)  
+-   [Araç Çubuğu Denetimi için Ayarlar](../mfc/settings-for-the-toolbar-control.md)  
   
--   [CToolBarCtrl nesnesi oluşturma](../mfc/creating-a-ctoolbarctrl-object.md)  
+-   [CToolBarCtrl Nesnesi Oluşturma](../mfc/creating-a-ctoolbarctrl-object.md)  
   
--   [Bir araç çubuğu denetiminde resim listeleri kullanma](../mfc/using-image-lists-in-a-toolbar-control.md)  
+-   [Bir Araç Çubuğu Denetiminde Görüntü Listeleri Kullanma](../mfc/using-image-lists-in-a-toolbar-control.md)  
   
--   [Araç çubuğu denetiminde açılır düğmeler kullanma](../mfc/using-drop-down-buttons-in-a-toolbar-control.md)  
+-   [Bir Araç Çubuğu Denetiminde Açılır Düğmeler Kullanma](../mfc/using-drop-down-buttons-in-a-toolbar-control.md)  
   
--   [Araç çubuğu denetiminin görünümünü özelleştirme](../mfc/customizing-the-appearance-of-a-toolbar-control.md)  
+-   [Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme](../mfc/customizing-the-appearance-of-a-toolbar-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

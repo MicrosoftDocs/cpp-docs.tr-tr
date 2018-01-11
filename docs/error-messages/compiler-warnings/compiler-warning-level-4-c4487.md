@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 01ae890c5566132462a5bd259341e62b97610ece
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c992385c9bd2a7f2c918956ba128ea45afa0752
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4487"></a>Derleyici Uyarısı (düzey 4) C4487
 'derived_class_function': devralınan sanal olmayan yöntemi 'base_class_function' ile eşleşir, ancak açıkça 'new' işaretli değil  

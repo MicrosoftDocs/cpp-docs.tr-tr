@@ -39,11 +39,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 779ecfc7bd546e2acbd013be9cbb229df2c5e62d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 90bc58ce3d56852b983a673968df97b55f4bdeab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder sınıfı
 Resim, denetiminde görüntüleme olanak tanır. bir resim özelliği uygular.  
@@ -301,4 +302,4 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CFontHolder sınıfı](../../mfc/reference/cfontholder-class.md)
+ [CFontHolder Sınıfı](../../mfc/reference/cfontholder-class.md)

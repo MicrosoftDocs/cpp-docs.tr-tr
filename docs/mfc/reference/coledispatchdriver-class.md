@@ -37,11 +37,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e19bfb11a564f23ce41bbc963a19fd239476dfb7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 059ff922689eaf354d4b4ae9b89fb49ab8c5a885
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 OLE Otomasyon istemci tarafı uygular.  
@@ -95,9 +96,9 @@ class COleDispatchDriver
   
  Kullanma hakkında daha fazla bilgi için `COleDispatchDriver`, aşağıdaki makalelere bakın:  
   
-- [Otomasyon istemcileri](../../mfc/automation-clients.md)  
+- [Otomasyon İstemcileri](../../mfc/automation-clients.md)  
   
-- [Otomasyon sunucuları](../../mfc/automation-servers.md)  
+- [Otomasyon Sunucuları](../../mfc/automation-servers.md)  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `COleDispatchDriver`  
@@ -266,10 +267,10 @@ void AFX_CDECL InvokeHelper(
 |Simgesi|Dönüş Türü|  
 |------------|-----------------|  
 |`VT_EMPTY`|`void`|  
-|`VT_I2`|**kısa**|  
-|`VT_I4`|**uzun**|  
-|`VT_R4`|**kayan nokta**|  
-|`VT_R8`|**çift**|  
+|`VT_I2`|**short**|  
+|`VT_I4`|**long**|  
+|`VT_R4`|**float**|  
+|`VT_R8`|**double**|  
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**TARİH**|  
 |`VT_BSTR`|`BSTR`|  
@@ -378,4 +379,4 @@ void AFX_CDECL SetProperty(
  [MFC örnek CALCDRIV](../../visual-cpp-samples.md)   
  [MFC örnek ACDUAL](../../visual-cpp-samples.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)
+ [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)

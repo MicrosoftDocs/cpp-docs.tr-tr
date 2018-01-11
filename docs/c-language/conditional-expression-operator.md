@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0e8c9b14ece9f3af56be11909679592cfe5ca2de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: acfb89584de60c41d17c532b389099b815d0fb3a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conditional-expression-operator"></a>Koşullu İfade İşleci
 C sahip bir Üçlü işleci: koşullu ifade işleci (**?:**).  
@@ -77,4 +78,4 @@ int y;
  Bu örnekte, iki işlev `f1` ve `f2`ve iki değişken `x` ve `y`, bildirilir. Daha sonra program iki değişken işlevi aynı değeri varsa `f1` olarak adlandırılır. Aksi takdirde, `f2` olarak adlandırılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Koşullu işleç:? :](../cpp/conditional-operator-q.md)
+ [Koşullu İşleç: ? :](../cpp/conditional-operator-q.md)

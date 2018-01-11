@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9463d5b8d0142b824766d2eac5a75a3bbda89929
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bd31ce10c5121405ea22394ab7b95f636dde70c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="container-classbegin"></a>Kapsayıcı Sınıfı::begin
 > [!NOTE]
@@ -37,4 +38,4 @@ iterator begin();
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)
+ [Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

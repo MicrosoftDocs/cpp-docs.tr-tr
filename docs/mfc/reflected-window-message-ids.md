@@ -57,11 +57,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 445b5edcbd13c31aa299ad93713da40c25081533
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54b8f0fc8c58ea70a1499104e28a0e0a09bd4fee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reflected-window-message-ids"></a>Yansımış Pencere İletisi Kimlikleri
 ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekilde bir alt kümesi için bir penceredir. Daha fazla bilgi için bkz: [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md).  
@@ -95,5 +96,5 @@ ActiveX denetimi veya diğer özel denetimi oluşturmak için hızlı bir şekil
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri: bir Windows denetimini alt sınıf yapma](../mfc/mfc-activex-controls-subclassing-a-windows-control.md)   
- [TN062: Windows denetimleri için ileti yansıması](../mfc/tn062-message-reflection-for-windows-controls.md)
+ [TN062: Windows Denetimleri için İleti Yansıması](../mfc/tn062-message-reflection-for-windows-controls.md)
 

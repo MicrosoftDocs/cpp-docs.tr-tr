@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aaf8bb7cf4cd3c078ac4f4d47667ff9656df1450
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 471201d1817bc19b76ac1357c33a97da75587790
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remote-automation-threading-models"></a>Uzaktan Otomasyon İş Parçacığı Oluşturma Modelleri
 Uzak Otomasyon tek iş parçacıklı ve COM Grup iş parçacıklı modellerini destekler Olan tüm bu Visual C++ destekler, 32 bit ve 64 bit platformlarda, iş parçacığı modeli "Grup" olarak ayarlanmalıdır. Hakkında daha fazla bilgi ve nerede Bunu yapmak için bkz: [oluşturma programları, kullanım uzaktan Otomasyon](../mfc/creating-programs-that-use-remote-automation.md).  

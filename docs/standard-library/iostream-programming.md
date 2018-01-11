@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c817ab67fecb1479971d729977ad55d6b3e506fc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4492f590c1be5604fcd630c41cdf79ce21e8b76f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iostream-programming"></a>iostream Programlaması
 Bu bölümde bir [Genel Açıklama](../standard-library/what-a-stream-is.md) in iostream sınıfları ve ardından açıklar [çıkış akışları](../standard-library/output-streams.md), [Giriş akışı](../standard-library/input-streams.md), ve [giriş/çıkış Akışlar](../standard-library/input-output-streams.md). Bölümün sonuna Gelişmiş iostream programlaması hakkında bilgi sağlar.  
@@ -40,17 +41,17 @@ Bu bölümde bir [Genel Açıklama](../standard-library/what-a-stream-is.md) in 
  Olduğundan ayrıca bir tartışma [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md) ve [stdext ad alanı](../standard-library/stdext-namespace.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Ne bir akışı](../standard-library/what-a-stream-is.md)  
+ [Akışın Ne Olduğu](../standard-library/what-a-stream-is.md)  
   
- [Çıkış akışları](../standard-library/output-streams.md)  
+ [Çıkış Akışları](../standard-library/output-streams.md)  
   
- [Giriş akışları](../standard-library/input-streams.md)  
+ [Giriş Akışları](../standard-library/input-streams.md)  
   
  [Giriş/Çıkış akışları](../standard-library/input-output-streams.md)  
   
- [Bağımsız değişkenlerle birlikte özel Manipülatörleri](../standard-library/custom-manipulators-with-arguments.md)  
+ [Bağımsız Değişkenlerle Birlikte Özel Manipülatörler](../standard-library/custom-manipulators-with-arguments.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 

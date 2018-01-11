@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ecc87072530cc71d7194f650e9e46bec55bb80da
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed7bc195c771026ff3e58d53f9e3936791810e76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn058-mfc-module-state-implementation"></a>TN058: MFC Modül Durumu Uygulaması
 > [!NOTE]
@@ -178,5 +179,5 @@ while (str.GetLength() != 52)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ebbccf147cc45ce5e3dab512e13a8b059f104cdd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc8b3b21cdc9aad183f39bf709f93e022e790eef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 Bir komut bir yapı olayıdır, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] derleme sürecindeki belirli bir aşamada gerçekleştirir. *Oluşturma öncesi* olayı, yapı başlamadan önce oluşur; *bağlama öncesi* olayı bağlantı adım başlamadan önce; oluşur ve *oluşturma sonrası* olay oluştuktan sonra derleme başarılı bir şekilde sona erer. Yalnızca ilişkili derleme adımı oluşursa bir yapı olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
@@ -78,4 +79,4 @@ Bir komut bir yapı olayıdır, [!INCLUDE[vstecmsbuild](../build/includes/vstecm
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)   
- [İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)
+ [İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)

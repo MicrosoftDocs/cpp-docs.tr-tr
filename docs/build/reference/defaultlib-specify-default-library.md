@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0f130dd9f445f51f68f24946bc9d541e95581b9f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 40fe07543dd9dc65d93cc9f79504f5fd324204dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="defaultlib-specify-default-library"></a>/DEFAULTLIB (Varsayılan Kitaplığı Belirt)
 ```  
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

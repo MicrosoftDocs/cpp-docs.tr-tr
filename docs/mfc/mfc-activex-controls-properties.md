@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 26947b0c2c779f65fb01dd78d56ffe19afaf27ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eea42401255f0aa99dd7a42b8e9b69e45dfe7b5b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX Denetimleri: Özellikler
 ActiveX denetimi denetim kapsayıcısı ile iletişim kurmak için olay tetikler. Kapsayıcı, buna karşılık, yöntemleri ve özellikleri denetimi ile iletişim kurmak için kullanır. Yöntemleri ve özellikleri sırasıyla üye işlevleri ve C++ sınıfının üye değişkenleri için kullanım ve amacı, benzerdir. Herhangi bir kapsayıcıya sunulan veri üyeleri ActiveX denetiminin özelliklerdir. Özellikler, Otomasyon istemcileri ve ActiveX denetimi kapsayıcıları gibi ActiveX denetimlerini içeren uygulamalar için arabirim sağlar.  
@@ -36,14 +37,14 @@ ActiveX denetimi denetim kapsayıcısı ile iletişim kurmak için olay tetikler
   
  Aşağıdaki makaleler ActiveX denetimi özellikleri daha ayrıntılı ele alınmıştır:  
   
--   [MFC ActiveX denetimleri: Stok Özellikler ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)  
+-   [MFC ActiveX Denetimleri: Stok Özellikler Ekleme](../mfc/mfc-activex-controls-adding-stock-properties.md)  
   
--   [MFC ActiveX denetimleri: Özel özellikler ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md)  
+-   [MFC ActiveX Denetimleri: Özel Özellikler Ekleme](../mfc/mfc-activex-controls-adding-custom-properties.md)  
   
--   [MFC ActiveX denetimleri: Gelişmiş özellik uygulama](../mfc/mfc-activex-controls-advanced-property-implementation.md)  
+-   [MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama](../mfc/mfc-activex-controls-advanced-property-implementation.md)  
   
--   [MFC ActiveX denetimleri: Ortam özelliklerine erişme](../mfc/mfc-activex-controls-accessing-ambient-properties.md)  
+-   [MFC ActiveX Denetimleri: Ortam Özelliklerine Erişme](../mfc/mfc-activex-controls-accessing-ambient-properties.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

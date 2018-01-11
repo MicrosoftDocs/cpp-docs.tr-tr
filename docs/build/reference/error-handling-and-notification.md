@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b7666325caafdbdf2a56eeb1c02c183d0ead54e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 738721eb3fc37ba076157129cb88a22f2c90e464
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="error-handling-and-notification"></a>Hata İşleme ve Bildirme
 Hata işleme ve bildirme hakkında daha fazla bilgi için bkz: [yardımcı işlevini anlama](understanding-the-helper-function.md).  
@@ -35,11 +36,11 @@ Hata işleme ve bildirme hakkında daha fazla bilgi için bkz: [yardımcı işle
   
  Hata işleme ve bildirme aşağıdaki konular ele alınmıştır:  
   
--   [Bildirim kancaları](../../build/reference/notification-hooks.md)  
+-   [Bildirim Kancaları](../../build/reference/notification-hooks.md)  
   
--   [Hata kancaları](../../build/reference/failure-hooks.md)  
+-   [Hata Kancaları](../../build/reference/failure-hooks.md)  
   
--   [Özel durumlar](../../build/reference/exceptions-c-cpp.md)  
+-   [Özel Durumlar](../../build/reference/exceptions-c-cpp.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+ [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

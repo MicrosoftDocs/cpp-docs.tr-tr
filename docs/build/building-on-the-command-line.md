@@ -19,11 +19,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1e780bda6850ef2096ecaf1dbffeefdb9d11c9f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5780fb725ab9ccfbba189894c22c991c415f6c2
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="build-cc-code-on-the-command-line"></a>Komut satırında C/C++ kodu derleme
 
@@ -48,7 +49,7 @@ Komut istemi kısayolları sürüme özgü yüklü olan [!INCLUDE[vsprvs](../ass
 
 Gerçek başlangıç menüsünde klasörü ve kısayol adları sürümüne bağlı olarak farklılık gösterir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] yüklü olduğunu ve yükleme ayarladıysanız takma adı. Örneğin, geliştirici komut istemi kısayoluna yüklü Visual Studio 2017 varsa ve 15.3 takma ad yüklemesini verdiniz adlı **VS 2017 (15.3) için geliştirici komut istemi**, adlı bir klasörde  **Visual Studio 2017**. 
 
-Uygulamasını yüklediyseniz [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/?linkid=840931) veya [Visual C++ 2015 derleme Araçları](http://landinghub.visualstudio.com/visual-cpp-build-tools) edition, ayrıca belirli yerel yalnızca olabilir veya geçici araçları Geliştirici komut istemi seçenekleri. 
+Uygulamasını yüklediyseniz [derleme araçları Visual Studio 2017 için](https://go.microsoft.com/fwlink/p/?linkid=840931) veya [Visual C++ 2015 derleme Araçları](http://landinghub.visualstudio.com/visual-cpp-build-tools) edition, ayrıca belirli yerel yalnızca olabilir veya geçici araçları Geliştirici komut istemi seçenekleri. 
 
 <a name="developer_command_prompt"></a>
 ## <a name="to-open-a-developer-command-prompt-window"></a>Bir geliştirici komut istemi penceresi açmak için  
@@ -86,11 +87,11 @@ Varolan bir komut penceresinde belirli yapı mimarisi belirtmek için en basit y
 |Vcvarsall.bat mimarisi bağımsız değişkeni|Derleyici|Ana bilgisayar mimarisi|Derleme çıktı mimarisi|  
 |----------------------------|--------------|----------------------------------|-------------------------------|  
 |x86|x86 32-bit yerel|x86, x64|x86|  
-|x86\_amd64 veya x86\_x64|x86 üzerinde x64 arası|x86, x64|x64|  
+|x86\_amd64 veya x86\_x64|x86 üzerinde x64 arası|x86, x64|X64|  
 |x86_arm|X86 ARM|x86, x64|ARM|  
-|AMD64 veya x64|x64 64-bit yerel|x64|x64|  
-|AMD64\_x86 veya x64\_x86|x64 üzerinde x86 arası|x64|x86|  
-|AMD64\_arm veya x64\_arm|X64 ARM|x64|ARM|  
+|AMD64 veya x64|x64 64-bit yerel|X64|X64|  
+|AMD64\_x86 veya x64\_x86|x64 üzerinde x86 arası|X64|x86|  
+|AMD64\_arm veya x64\_arm|X64 ARM|X64|ARM|  
   
 Kullanabileceğiniz **depolamak** veya **uwp** platform türünü veya hiçbiri bir masaüstü uygulamasının belirtmek için belirtmek için Seçenekler. Windows SDK sürüm belirtmek için tam bir Windows 10 SDK numarası 10.0.10240.0 gibi kullanın veya Windows 8.1 SDK'yı kullanmak için 8.1 belirtin. Visual Studio 2015 derleyici araç setini belirtmek için 14.0 kullanın; Varsayılan olarak, ortamın Visual Studio 2017 derleyici araç setini kullanmak üzere ayarlanmış.
 
@@ -152,22 +153,22 @@ Komut satırında yapılandırdığınızda, uyarılar, hatalar ve iletileri hak
 
 Bu bölümdeki makaleleri belgelerinin uygulamalar komut satırında derleme, 64-bit toolsets ve hedef x86, x64, kullanın ve platformlar ARM ve komut satırı derleme kullanmayı göstermek için komut satırı derleme ortamı özelleştirmeyi açıklayan gösterir MSBuild ve NMAKE araçları.  
   
-[İzlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)  
+[İzlenecek Yol: Komut Satırında Yerel C++ Programı Derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md)  
 Oluşturma ve basit bir C++ program komut satırında derleme gösteren bir örnek sağlar.  
   
 [İzlenecek yol: komut satırında C programı derleme](../build/walkthrough-compile-a-c-program-on-the-command-line.md)  
 C programlama dilinde yazılmış bir program derleyebilir açıklar.  
   
-[İzlenecek yol: derleme C + +/ CLI programını komut satırı](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)  
+[İzlenecek Yol: Komut Satırında C++/CLI Programını Derleme](../build/walkthrough-compiling-a-cpp-cli-program-on-the-command-line.md)  
 Oluşturma ve derleme C + açıklar +/ .NET Framework kullanan CLI program.  
   
-[İzlenecek yol: derleme C + +/ CX programı komut satırı](../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)  
+[İzlenecek Yol: Komut Satırında C++/CX Programı Derleme](../build/walkthrough-compiling-a-cpp-cx-program-on-the-command-line.md)  
 Oluşturma ve derleme C + açıklar +/ CX programı, Windows çalışma zamanı kullanır.  
   
-[Komut satırı derlemeleri için yolu ve ortam değişkenlerini ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)  
+[Komut Satırı Derlemeleri için Yolu ve Ortam Değişkenlerini Ayarlama](../build/setting-the-path-and-environment-variables-for-command-line-builds.md)  
 Gerekli ortam değişkenleri, hedef x86, x64, komut satırı derlemeleri için ayarlanmış ve platformlar 32 bit veya 64-bit bir araç setini kullanarak ARM sahip bir komut istemi penceresi başlangıç açıklar.  
   
-[NMAKE başvurusu](../build/nmake-reference.md)  
+[NMAKE Başvurusu](../build/nmake-reference.md)  
 Microsoft Program Bakımı yardımcı programı (NMAKE. açıklamak makalelerinin bağlantıları sağlar EXE).  
   
 [MSBuild (Visual C++)](../build/msbuild-visual-cpp.md)  
@@ -181,12 +182,12 @@ Hata ayıklama veya yayın çalışma zamanı kitaplığı kullanmak için bu de
 [C/C++ Derleyici Seçenekleri](../build/reference/compiler-options.md)  
 C ve C++ derleyici seçenekleri ve CL.exe ele makalelerinin bağlantıları sağlar.  
   
-[Bağlayıcı seçenekleri](../build/reference/linker-options.md)  
+[Bağlayıcı Seçenekleri](../build/reference/linker-options.md)  
 Bağlayıcı seçenekleri ve LINK.exe ele makalelerinin bağlantıları sağlar.  
   
-[C/C++ derleme araçları](../build/reference/c-cpp-build-tools.md)  
+[C/C++ Derleme Araçları](../build/reference/c-cpp-build-tools.md)  
 C/C++ için bağlantılar yapı içinde yer alan araçlar sağlayan [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[C/C++ programları oluşturma](../build/building-c-cpp-programs.md)
+[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)

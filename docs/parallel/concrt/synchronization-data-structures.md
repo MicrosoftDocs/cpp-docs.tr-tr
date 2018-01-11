@@ -14,11 +14,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aee9abf10646df6395984607544755dcb0ed802a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1dd1c47cad01e0324f8027593eb4933f70cd6191
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="synchronization-data-structures"></a>Eşitleme Veri Yapıları
 Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından paylaşılan verilere erişim eşitlemenize olanak birkaç veri yapılarını sağlar. Bu veri yapıları seyrek değiştirmek veri paylaşılan olduğunda yararlıdır. Eşitleme nesnesi, örneğin, önemli bir bölümü, paylaşılan kaynağı kullanılabilir hale gelene kadar beklenecek başka bir iş parçacığı neden olur. Bu nedenle, sık kullanılan veri erişimi eşitlemek için böyle bir nesnenin kullanırsanız, uygulamanızda ölçeklenebilirlik kaybedebilir. [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) sağlar [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) çeşitli iş parçacıkları ve eşitleme gerek kalmadan görevler arasında kaynak paylaşımı sağlayan sınıf. Hakkında daha fazla bilgi için `combinable` sınıfı için bkz: [paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -32,7 +33,7 @@ Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından pay
   
 -   [scoped_lock ve scoped_lock_read](#scoped_lock)  
   
--   [Olay](#event)  
+-   [event](#event)  
   
 ##  <a name="critical_section"></a>critical_section  
  [Concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı, bunları preempting yerine diğer görevlere verir işbirlikçi karşılıklı dışlama nesneyi temsil eder. Kritik bölümler, birden çok iş parçacığı özel okuma ve yazma erişimi Paylaşılan verilere gerektiğinde faydalıdır.  
@@ -46,7 +47,7 @@ Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından pay
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[kilitleme](reference/critical-section-class.md#lock)|Kritik bölüm edinir. Kilit alır kadar çağıran bağlamını engeller.|  
+|[lock](reference/critical-section-class.md#lock)|Kritik bölüm edinir. Kilit alır kadar çağıran bağlamını engeller.|  
 |[try_lock](reference/critical-section-class.md#try_lock)|Kritik bölüm almaya çalışır, ancak değil engeller.|  
 |[kilidini aç](reference/critical-section-class.md#unlock)|Kritik bölüm serbest bırakır.|  
   
@@ -73,7 +74,7 @@ Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından pay
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[kilitleme](reference/reader-writer-lock-class.md#lock)|Okuma/yazma erişimi kilidi edinir.|  
+|[lock](reference/reader-writer-lock-class.md#lock)|Okuma/yazma erişimi kilidi edinir.|  
 |[try_lock](reference/reader-writer-lock-class.md#try_lock)|Okuma/yazma erişimi kilidi almaya çalışır, ancak değil engeller.|  
 |[lock_read](reference/reader-writer-lock-class.md#lock_read)|Salt okunur erişim kilidi edinir.|  
 |[try_lock_read](reference/reader-writer-lock-class.md#try_lock_read)|Kilit salt okunur erişim kazanmak çalışır, ancak değil engeller.|  
@@ -103,7 +104,7 @@ Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından pay
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[bekleme](reference/event-class.md#wait)|Olay işaret hale bekler.|  
-|[ayarlama](reference/event-class.md#set)|Olay iş durumuna ayarlar.|  
+|[set](reference/event-class.md#set)|Olay iş durumuna ayarlar.|  
 |[Sıfırla](reference/event-class.md#reset)|Olay işaret olmayan durumuna ayarlar.|  
 |[wait_for_multiple](reference/event-class.md#wait_for_multiple)|Birden çok olay işaret hale bekler.|  
 
@@ -114,9 +115,9 @@ Eşzamanlılık Çalışma zamanı birden çok iş parçacığı tarafından pay
  [[Üst](#top)]  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Eşitleme veri yapılarını Windows API ile karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)  
+ [Eşitleme Veri Yapılarını Windows API ile Karşılaştırma](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)  
  Eşitleme veri yapılarını Windows API tarafından sağlanan davranışını karşılaştırır.  
   
- [Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)  
+ [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)  
  Paralel Programlama basitleştiren ve ilgili konulara bağlantılar içerir eşzamanlılık çalışma, açıklar.
 

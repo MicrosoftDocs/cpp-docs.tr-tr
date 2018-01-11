@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7352f1d72778288067238158449023a197130870
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e11fade0bf5bf6f816f273250217be24c8bc87c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strstream-class"></a>strstream Sınıfı
 Ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri açıklar [strstreambuf](../standard-library/strstreambuf-class.md).  
@@ -161,7 +162,7 @@ strstream(char* ptr,
  [iostream](../standard-library/istream-typedefs.md#iostream)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 
 

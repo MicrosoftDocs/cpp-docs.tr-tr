@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d37a45443efe1ad45e21c5729907135d0e037baa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fa9fb14dd09ace2d641fa69fa4cf39ccefeb3d01
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows Yuvaları: Yuva Bildirimleri
 Bu makalede yuva sınıflardaki bildirim işlevleri açıklanmaktadır. Bu üye işlevleri yuva nesnenizin önemli olayları bildirmek için framework çağıran geri çağırma işlevlerdir. Bildirim işlevler şunlardır:  
@@ -56,17 +57,17 @@ Bu makalede yuva sınıflardaki bildirim işlevleri açıklanmaktadır. Bu üye 
   
  Daha fazla bilgi için bkz.:  
   
--   [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
+-   [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
   
--   [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)  
+-   [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)  
   
--   [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
+-   [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
   
--   [Windows Yuvaları: engelleme](../mfc/windows-sockets-blocking.md)  
+-   [Windows Yuvaları: Engelleme](../mfc/windows-sockets-blocking.md)  
   
--   [Windows Yuvaları: Bayt sıralama](../mfc/windows-sockets-byte-ordering.md)  
+-   [Windows Yuvaları: Bayt Sıralama](../mfc/windows-sockets-byte-ordering.md)  
   
--   [Windows Yuvaları: Dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md)  
+-   [Windows Yuvaları: Dizeleri Dönüştürme](../mfc/windows-sockets-converting-strings.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)

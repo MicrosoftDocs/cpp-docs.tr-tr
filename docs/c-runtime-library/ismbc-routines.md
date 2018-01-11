@@ -26,11 +26,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8b512bad001ed86ad0720002cd49c54b21b6e555
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cbe2879f031f261871676f9e11f0b6f2a0908a95
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
 Her **_ismbc** yordamı testleri belirli bir birden çok baytlı karakter `c` belirli bir koşul için.  
@@ -80,4 +81,4 @@ Her **_ismbc** yordamı testleri belirli bir birden çok baytlı karakter `c` be
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karakter Sınıflaması](../c-runtime-library/character-classification.md)   
  [is, isw rutinleri](../c-runtime-library/is-isw-routines.md)   
- [_ismbb rutinleri](../c-runtime-library/ismbb-routines.md)
+ [_ismbb Yordamları](../c-runtime-library/ismbb-routines.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9e9dca1b95af3971045a1ce86807ef28be096546
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c61d9c6f38851e48335f83cccfeb5a8bf4aba448
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scope-and-visibility"></a>Kapsam ve Görünürlük
 İçinde başvurulabilir program bölümlerini bir tanımlayıcının "görünürlük" belirler — "kapsamı." Bir görünür bir tanımlayıcıdır (yani, kullanılabilir), (, restrictiveness artan sırada), dosya, işlev, blok veya işlev prototipi göründüğü sınırlı bölümleri kendi "kapsam tarafından" çevrelenmiş bir programın içinde. Tanımlayıcı kapsamını adı kullanılabilir program parçasıdır. Buna bazen "sözcük kapsamı." adı verilir Kapsam dört tür vardır: işlev, dosya, blok ve işlev prototipi.  
@@ -43,4 +44,4 @@ ms.lasthandoff: 10/24/2017
  Değişkenleri diğer kaynak dosyalarında görünür yapmak için uygun bildirimleri açıklanan [depolama sınıfları](../c-language/c-storage-classes.md). Ancak, değişkenler ve işlevleri bildirilen dış düzeyi ile **statik** depolama sınıfı tanımlayıcısı yalnızca bunlar tanımlı kaynak dosya içinde görünür. Diğer tüm işlevleri genel olarak görünür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)
+ [Ömür, Kapsam, Görünürlük ve Bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md)

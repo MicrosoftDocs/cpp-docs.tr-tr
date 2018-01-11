@@ -22,11 +22,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 310ccd778a0d681afad40b7dd67067c9e9af875d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ef8836dec60eca6a7dac13af21c81adf72b5b319
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>CPrivateObjectSecurityDesc sınıfı
 Bu sınıf, bir özel nesneye güvenli tanımlayıcısı nesnesi temsil eder.  
@@ -261,4 +262,4 @@ bool Set(
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik genel işlevler](../../atl/reference/security-global-functions.md)   
- [CSecurityDesc sınıfı](../../atl/reference/csecuritydesc-class.md)
+ [CSecurityDesc Sınıfı](../../atl/reference/csecuritydesc-class.md)

@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bd07c980ce95af06b7f8f5bf2faa29596802cdb1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8fd00219c70c43a1af5f03975118eddbfae147e1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="execl"></a>execl
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_execl](../../c-runtime-library/reference/execl-wexecl.md) yerine.  

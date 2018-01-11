@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: abc5a751d6edf0aa5d51666592927bf5713d1908
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec6cc9b61f837db4c9766c077fa60f4d9c2b95bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="logbrush-structure"></a>LOGBRUSH Yapısı
 `LOGBRUSH` Stili, renk ve fiziksel fırça desenini yapısını tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) ve [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) işlevleri.  

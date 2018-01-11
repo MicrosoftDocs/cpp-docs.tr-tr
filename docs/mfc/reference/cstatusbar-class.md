@@ -47,11 +47,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d5a669551bcc28328054e369ff70bbccbc505c5c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c373f21762c1bf7f21d2a775453bab74c735891d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cstatusbar-class"></a>CStatusBar sınıfı
 Denetim çubuğu satır metin çıktısı bölmeleri ya da "göstergeleri."  
@@ -467,4 +468,4 @@ BOOL SetPaneText(
  [CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CStatusBarCtrl sınıfı](../../mfc/reference/cstatusbarctrl-class.md)   
- [CControlBar sınıfı](../../mfc/reference/ccontrolbar-class.md)
+ [CControlBar Sınıfı](../../mfc/reference/ccontrolbar-class.md)

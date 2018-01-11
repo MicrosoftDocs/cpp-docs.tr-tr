@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9b9caa028d7f870ecdd6c67503c6bc9448cff1d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 010f5fd443271bec1d28b6760f0c17f4e17d803b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
 Bu belge rolü eşzamanlılık çalışma zamanındaki Basit görevler açıklanmaktadır. A *basit görev* doğrudan zamanlama bir görevdir bir `concurrency::Scheduler` veya `concurrency::ScheduleGroup` nesnesi. Windows API için sağladığınız işlevi basit bir görev benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) işlevi. Bu nedenle, Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için var olan kodu uyum olduğunda yararlıdır. Eşzamanlılık Çalışma Basit görevler zaman uyumsuz aracılar zamanlamak ve zaman uyumsuz ileti blokları arasındaki iletileri göndermek için kullanır.  
@@ -37,5 +38,5 @@ Bu belge rolü eşzamanlılık çalışma zamanındaki Basit görevler açıklan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [İzlenecek yol: Mevcut kodu hafif görevleri kullanmaya uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
+ [İzlenecek Yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
 

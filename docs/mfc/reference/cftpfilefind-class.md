@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ff064892172a4d1ab9d31c67be031935650c6c16
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4fe3b188d5b03c9e727349b9e30982cf52006c9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind sınıfı
 Internet dosya aramaları FTP sunucularının yardımcı olur.  
@@ -172,4 +173,4 @@ CString GetFileURL() const;
  [CGopherFileFind sınıfı](../../mfc/reference/cgopherfilefind-class.md)   
  [CInternetFile sınıfı](../../mfc/reference/cinternetfile-class.md)   
  [CGopherFile sınıfı](../../mfc/reference/cgopherfile-class.md)   
- [CHttpFile sınıfı](../../mfc/reference/chttpfile-class.md)
+ [CHttpFile Sınıfı](../../mfc/reference/chttpfile-class.md)

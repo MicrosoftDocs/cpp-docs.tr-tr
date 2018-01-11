@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63ec2b42f405c19c6e95c14327ee90039426e1c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 103f02109558d9f301f9f1eec867e9379c102e17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits Yapısı
 Semafor nesnesinin ortak özelliklerini tanımlar.  
@@ -36,7 +39,7 @@ struct SemaphoreTraits : HANDLENullTraits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[SemaphoreTraits::Unlock yöntemi](../windows/semaphoretraits-unlock-method.md)|Paylaşılan bir kaynak denetim serbest bırakır.|  
+|[SemaphoreTraits::Unlock Metodu](../windows/semaphoretraits-unlock-method.md)|Paylaşılan bir kaynak denetim serbest bırakır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HANDLENullTraits`  
@@ -49,4 +52,4 @@ struct SemaphoreTraits : HANDLENullTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

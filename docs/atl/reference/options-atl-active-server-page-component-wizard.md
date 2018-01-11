@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8bba50b9d9859039c34532ed2a4fba189db48374
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6564b340458ae7e9a8e137d2338ba68b3e729a0f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server sayfası Bileşen Sihirbazı
 Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için bu sayfayı ATL etkin sunucu sayfası Bileşen Sihirbazı'nı kullanın.  

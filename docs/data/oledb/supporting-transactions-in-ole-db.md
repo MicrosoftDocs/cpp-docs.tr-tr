@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9a7b1e937a7fa1ab33ff74d3c4e42856928320fc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9be6fb1c86b43f7833818648d84875b1e4c55b59
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB'de İşlemleri Destekleme
 A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu iş, bir veri kaynağı güncelleştirmelerini bir dizi böylece tüm başarılı ve aynı anda kaydedilmeden ya da (herhangi biri başarısız olursa) hiçbirinin tamamlanmadığı için bir yoldur ve tüm işlem geri alındı. Bu işlem veri kaynağında sonucun bütünlüğünü sağlar.  
@@ -60,4 +63,4 @@ A [işlem](../../data/transactions-mfc-data-access.md) grubu ya da toplu iş, bi
  Dağıtılmış işlem Dağıtılmış veri güncelleştiren bir işlemdir; diğer bir deyişle, verileri birden çok ağa bağlı bilgisayar sisteminde. Dağıtılmış bir sistemde işlemleri desteklemek istiyorsanız, OLE DB işlem desteği yerine .NET Framework kullanmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Erişimcileri kullanma](../../data/oledb/using-accessors.md)
+ [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

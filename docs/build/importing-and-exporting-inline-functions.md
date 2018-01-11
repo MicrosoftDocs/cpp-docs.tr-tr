@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7753660b38d67b410927ce831b936a998353e622
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6f8d159a1537cdfee02d45805632ba9ad4afa7e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="importing-and-exporting-inline-functions"></a>Satır İçi İşlevleri İçeri ve Dışarı Aktarma
 İçeri aktarılan işlevler satır içi olarak tanımlanabilir. Etkisi kabaca standart işlev satır içi tanımlama aynıdır; işlev çağrıları makro gibi satır içi koda genişletilir. C++ destekleyen bir şekilde DLL'de bazı üye işlevleri için verimliliğini sınıflarını gibi temelde faydalı olur.  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/24/2017
 -   [__Declspec(dllimport) kullanarak bir uygulama içeri aktarmak için](../build/importing-into-an-application-using-declspec-dllimport.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri ve dışarı aktarma](../build/importing-and-exporting.md)
+ [İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)

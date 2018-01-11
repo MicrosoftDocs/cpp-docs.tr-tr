@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0346f362dac7a184691feac4a8dab25f5709e095
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 880c7bd52476614a4356690aff2fda286e9f3aef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="which-atl-classes-facilitate-activex-control-containment"></a>Hangi ATL sınıfları ActiveX denetimi kapsamasını kolaylaştırmak?
 ATL'ın denetimi barındırma kodu herhangi ATL sınıfları kullanmanızı gerektirmez; yalnızca oluşturabileceğiniz bir **"AtlAxWin80"** penceresi ve gerekirse denetimi barındırma API kullanın (daha fazla bilgi için bkz: **ATL denetimi barındırma API nedir**. Ancak, aşağıdaki sınıflar kapsama özellikleri kullanmak kolaylaştırır.  

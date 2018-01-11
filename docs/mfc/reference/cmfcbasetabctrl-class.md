@@ -249,11 +249,12 @@ caps.latest.revision: "41"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59032e700fe81c3343959252bc28433b0f6ae460
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8dd8f70ffd2568f509b8b12be2167579c4ec4475
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli windows için temel işlevselliği uygular.  
@@ -2182,4 +2183,4 @@ virtual void SwapTabs(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCTabCtrl sınıfı](../../mfc/reference/cmfctabctrl-class.md)   
- [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md)
+ [CMFCOutlookBarTabCtrl Sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md)

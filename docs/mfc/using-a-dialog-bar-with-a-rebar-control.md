@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 573e25a0750ab52da531f86e89094edc16288cdc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bd4eb47da7c3866e01ee563b9f6b42fa21ada109
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma
 Bölümünde belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md), her bant yalnızca bir alt pencere (veya Denetim) içerebilir. Bant başına birden fazla alt pencere sahip olmak istiyorsanız bu bir sınırlama olabilir. Bir iletişim çubuğu kaynak sahip birden çok denetim oluşturma ve rebar denetimi (iletişim kutusu çubuğunu içeren) bir rebar bant eklemek için kullanışlı bir geçici bir çözüm değildir.  
@@ -51,5 +52,5 @@ Bölümünde belirtildiği gibi [Rebar denetimleri ve bantları](../mfc/rebar-co
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

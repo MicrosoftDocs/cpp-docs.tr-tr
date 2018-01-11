@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43c81346f7d92d75aade9b5cfc9ae845ce51c8f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: fc63f89b8b8ff40198efbff69c64c3553dafd12f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ref-c"></a>ref (C++)
 Bir başvuru işaretçi tanımlar.  
@@ -66,4 +69,4 @@ __interface IFireTabCtrl
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Parametre öznitelikleri](../windows/parameter-attributes.md)   
+ [Parametre Öznitelikleri](../windows/parameter-attributes.md)   

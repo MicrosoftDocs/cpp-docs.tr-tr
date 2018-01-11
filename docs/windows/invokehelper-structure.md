@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 52dc2118f537535b81163d375db483a57c5a9854
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: acabc6833e23c4f17bc337b67a89578bc95bbd6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -108,19 +111,19 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Invokehelper::ınvokehelper Oluşturucusu](../windows/invokehelper-invokehelper-constructor.md)|Invokehelper sınıfının yeni bir örneğini başlatır.|  
+|[InvokeHelper::InvokeHelper Oluşturucusu](../windows/invokehelper-invokehelper-constructor.md)|Invokehelper sınıfının yeni bir örneğini başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Invokehelper::Invoke yöntemi](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
+|[InvokeHelper::Invoke Metodu](../windows/invokehelper-invoke-method.md)|Belirtilen bağımsız değişken sayısı, imzası içeren olay işleyicisini çağırır.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Invokehelper::callback_ veri üyesi](../windows/invokehelper-callback-data-member.md)|Bir olay gerçekleştiğinde çağırmak için olay işleyicisini temsil eder.|  
+|[InvokeHelper::callback_ Veri Üyesi](../windows/invokehelper-callback-data-member.md)|Bir olay gerçekleştiğinde çağırmak için olay işleyicisini temsil eder.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InvokeHelper`  
@@ -131,4 +134,4 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> : Microsoft::WRL::RuntimeC
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

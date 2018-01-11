@@ -35,11 +35,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f2e3f91d2baca3829538d199ce000d56a7be24d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 63472ad24a981a39a20e6c0cabb82f7c96d1e59e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fpieeeflt"></a>_fpieee_flt
 IEEE kayan nokta özel durumlar için kullanıcı tanımlı tuzak işleyiciyi çağırır.  

@@ -25,11 +25,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7d7d4d2554e346f67d62f3832ed1722c35970154
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d27cb58766e019d26e3cfc3d99b4d719be701f37
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="timeput-class"></a>time_put Sınıfı
 Saat değerleri denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesne şablonu sınıf tanımlar `CharType`.  
@@ -255,5 +256,5 @@ explicit time_put(size_t _Refs = 0);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<yerel ayar >](../standard-library/locale.md)   
  [time_base sınıfı](../standard-library/time-base-class.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

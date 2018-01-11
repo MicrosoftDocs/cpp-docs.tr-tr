@@ -17,11 +17,12 @@ ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 36c1baec22ce0804b4271718dd9495c4213941b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 20715b48413a705aa2338e7e37538171e4141cad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="natvis-add-natvis-to-pdb"></a>/ NATVIS (Natvis PDB için ekleme)
   
@@ -53,5 +54,5 @@ BAĞLANTI yok sayıyor /NATVIS PDB dosyası kullanılarak oluşturulduğunda de�
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
 [Visual Studio Hata Ayıklayıcısı'ndaki yerel nesnelerin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects)  
-[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)  
-[Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

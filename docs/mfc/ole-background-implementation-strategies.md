@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 68c6bd5c910f33a5d9262738a8746f2a4f2c56d5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7325cb5cb7be4750507d8694ba8bc5efc3ce8606
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-background-implementation-strategies"></a>OLE Arka Planı: Uygulama Stratejileri
 Uygulamanızın bağlı olarak, OLE desteği eklemek için dört olası uygulama stratejileri vardır:  

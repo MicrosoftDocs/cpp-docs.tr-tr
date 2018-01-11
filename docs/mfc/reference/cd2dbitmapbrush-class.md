@@ -53,11 +53,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 678ab34828e1b650dc94d773c5a79cb608a41b9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3dd588a26b73fb6e5f1b205b20f21aab8272c439
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush sınıfı
 ID2D1BitmapBrush için sarmalayıcı.  
@@ -368,4 +369,4 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
  Fırça bit eşlem ölçeklendirilmiş veya Döndürülmüş kullanılan ilişkilendirme modu  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

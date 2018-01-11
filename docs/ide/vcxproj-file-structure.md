@@ -14,11 +14,12 @@ caps.latest.revision: "1"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bc57a69b71bd7fbdbf97d5c34e7e6ec0694bb5df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bdfd703b819b40a2fc391c1c6cb17edd0eff4cb9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vcxproj-and-props-file-structure"></a>.vcxproj ve .props dosya yapısı
 MSBuild Visual Studio varsayılan proje sistemidir; seçtiğinizde **dosya | Yeni proje** Visual c++'ta ayarlarını uzantılı bir XML proje dosyasında depolanan MSBuild Projesi oluşturmakta olduğunuz `.vcxproj`. Proje dosyası da .props dosyaları ve ayarları depolandığı .targets dosyaları içeri. Çoğu durumda, hiçbir zaman proje dosyasını el ile düzenlemeniz gerekir ve MSBuild iyi anlamış yoksa aslında el ile düzenlemeden değil. Mümkün olduğunda proje ayarlarını değiştirmek için Visual Studio özellik sayfaları kullanmanız gerekir (bkz [proje özellikleriyle çalışma](working-with-project-properties.md). Ancak, bazı durumlarda bir proje dosyası veya özellik sayfasında el ile değiştirmeniz gerekebilir. Bu senaryolar için bu makalede dosya yapısı hakkında temel bilgileri içerir. 

@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89587f87bd71d2688bba2c128d28c01212b50b71
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e2bf6e4728bac6622f9872ab939e084b14f49ae8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="criticalsection-class"></a>CriticalSection Sınıfı
 Kritik bölüm nesneyi temsil eder.  
@@ -37,21 +40,21 @@ class CriticalSection;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CriticalSection::CriticalSection Oluşturucusu](../windows/criticalsection-criticalsection-constructor.md)|Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesini başlatır.|  
-|[CriticalSection:: ~ CriticalSection yok Edicisi](../windows/criticalsection-tilde-criticalsection-destructor.md)|Deinitializes ve geçerli CriticalSection nesnesini yok eder.|  
+|[CriticalSection::~CriticalSection Yıkıcısı](../windows/criticalsection-tilde-criticalsection-destructor.md)|Deinitializes ve geçerli CriticalSection nesnesini yok eder.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CriticalSection::TryLock yöntemi](../windows/criticalsection-trylock-method.md)|Önemli bir bölümü engellenmeden girmek çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kritik bölümünün aittir.|  
-|[CriticalSection::Lock yöntemi](../windows/criticalsection-lock-method.md)|Belirtilen kritik bölüm nesnenin sahipliğini bekler. Çağıran iş parçacığı sahipliği verildiğinde işlevi döndürür.|  
-|[Criticalsection::IsValid yöntemi](../windows/criticalsection-isvalid-method.md)|Geçerli kritik bölüm geçerli olup olmadığını gösterir.|  
+|[CriticalSection::TryLock Metodu](../windows/criticalsection-trylock-method.md)|Önemli bir bölümü engellenmeden girmek çalışır. Çağrı başarılı olursa, çağıran iş parçacığı kritik bölümünün aittir.|  
+|[CriticalSection::Lock Metodu](../windows/criticalsection-lock-method.md)|Belirtilen kritik bölüm nesnenin sahipliğini bekler. Çağıran iş parçacığı sahipliği verildiğinde işlevi döndürür.|  
+|[CriticalSection::IsValid Metodu](../windows/criticalsection-isvalid-method.md)|Geçerli kritik bölüm geçerli olup olmadığını gösterir.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CriticalSection::cs_ veri üyesi](../windows/criticalsection-cs-data-member.md)|Bir kritik bölüm veri üyesi bildirir.|  
+|[CriticalSection::cs_ Veri Üyesi](../windows/criticalsection-cs-data-member.md)|Bir kritik bölüm veri üyesi bildirir.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CriticalSection`  
@@ -62,4 +65,4 @@ class CriticalSection;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

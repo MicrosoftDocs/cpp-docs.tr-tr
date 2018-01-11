@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 50aaf3f695b023d6316fdd5d601962435903e15c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7da90e13c325380cb8aad54d1af712c1567e0420
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltregexgt"></a>&lt;Regex&gt;
 Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md)ve birkaç şablon sınıfları ve işlevleri metin bir normal ifade nesnesi için eşleşme aramak için.  
@@ -93,22 +94,22 @@ Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../
 |||  
 |-|-|  
 |[operator ==](../standard-library/regex-operators.md#op_eq_eq)|Çeşitli nesneleri, eşit karşılaştırması.|  
-|[operator! =](../standard-library/regex-operators.md#op_neq)|Karşılaştırma nesnelerin çeşitli eşit değil.|  
+|[operator!=](../standard-library/regex-operators.md#op_neq)|Karşılaştırma nesnelerin çeşitli eşit değil.|  
 |[operator <](../standard-library/regex-operators.md#op_lt)|Çeşitli nesnelerin karşılaştırma küçüktür.|  
 |[işleci\<=](../standard-library/regex-operators.md#op_gt_eq)|Karşılaştırma çeşitli nesnelerin küçüktür veya eşittir.|  
 |[operator >](../standard-library/regex-operators.md#op_gt)|Karşılaştırma nesnelerin çeşitli büyüktür.|  
-|[operator > =](../standard-library/regex-operators.md#op_gt_eq)|Büyük veya ona eşit olmak üzere çeşitli nesneleri karşılaştırması.|  
+|[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Büyük veya ona eşit olmak üzere çeşitli nesneleri karşılaştırması.|  
 |[işleç <<](../standard-library/regex-operators.md#op_lt_lt)|Ekler bir `sub_match` bir akış.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
-[regex_error sınıfı](../standard-library/regex-error-class.md)  
+[Normal İfadeler (C++)](../standard-library/regular-expressions-cpp.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
+[regex_error Sınıfı](../standard-library/regex-error-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
 [\<Regex > işleçleri](../standard-library/regex-operators.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
-[regex_traits sınıfı](../standard-library/regex-traits-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  
 
 

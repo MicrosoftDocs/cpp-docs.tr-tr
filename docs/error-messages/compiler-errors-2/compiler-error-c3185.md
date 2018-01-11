@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 10b25fa08693e4fc6c4e495c84944d79ab6e73ae
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9defaa122e998d9b5cc1ab46224bdf04b8027b6a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3185"></a>Derleyici Hatası C3185
 'kullanılan TypeID' yönetilen veya WinRT türü 'type', 'işleci' bunun yerine kullanın  

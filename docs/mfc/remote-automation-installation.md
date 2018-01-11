@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3908176b6fba46aa9675ac7aa61bb617f1bfa00a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: acd8ee55261dfa03c68aef506dc90188d8d27d37
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remote-automation-installation"></a>Uzak Otomasyon Yüklemesi
 Uzak Otomasyon nispeten daha az sayıda bileşeni vardır:  
@@ -45,7 +46,7 @@ Uzak Otomasyon nispeten daha az sayıda bileşeni vardır:
   
  [Uzak Otomasyon Bağlantı Yöneticisi](../mfc/remote-automation-connection-manager.md)  
   
- [Uzak Otomasyon kullanıcı bileşenleri](../mfc/remote-automation-user-components.md)  
+ [Uzak Otomasyon Kullanıcı Bileşenleri](../mfc/remote-automation-user-components.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzak Otomasyon](../mfc/remote-automation.md)

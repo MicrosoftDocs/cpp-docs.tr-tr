@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ee7aed9bfcbc105892e647c5e59b45805120ba39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b04ab7fafba9f17aeba4f15f937972389467593c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="predefined-accelerator-keys"></a>Önceden Tanımlanmış Hızlandırıcı Tuşları
 Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızlandırıcı tuşları mevcuttur. Bu sanal anahtarlar Windows ortamını bazılarıdır. Diğer destek tarayıcılar ve Unicode uygulamaları. Bu anahtarları herhangi Hızlandırıcı kullanabilirsiniz.  
@@ -63,7 +66,7 @@ Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızland�
 |VK_OEM_2|Windows: için ABD Standart klavye, '/?' anahtar|  
 |VK_OEM_3|Windows: için ABD Standart klavye '' ~' anahtarı|  
 |VK_OEM_4|Windows: ABD Standart klavye için ' [{' anahtarı|  
-|VK_OEM_5|Windows: için ABD Standart klavye '\\& #124;' anahtar|  
+|VK_OEM_5|Windows: için ABD Standart klavye '\\&#124;' anahtar|  
 |VK_OEM_6|Windows: ABD Standart klavye için ']}' anahtar|  
 |VK_OEM_7|Windows: ABD Standart klavyeyi için 'tek-teklif/çift-quote' anahtarı|  
 |VK_OEM_COMMA|Windows: tüm ülke/bölge için ',' anahtarı|  
@@ -88,4 +91,4 @@ Windows uygulaması projesi parçası olabilir önceden tanımlanmış Hızland�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7bd035b74988758142fe9d0fedc43946f35c2d58
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dea28bd31812449e34bb481d316070f8f21aaede
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-combinable-to-improve-performance"></a>Nasıl yapılır: Performansı arttırmak için combinable Kullanma
 Bu örnek nasıl kullanılacağını gösterir [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) sayıların toplamını hesaplamak için sınıf bir [std::array](../../standard-library/array-class-stl.md) asal olan nesne. `combinable` Sınıfı, paylaşılan durum ortadan kaldırarak performansını artırır.  
@@ -73,4 +74,4 @@ parallel time: 1638 ms
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Paralel kapsayıcılar ve nesneler](../../parallel/concrt/parallel-containers-and-objects.md)   
  [combinable sınıfı](../../parallel/concrt/reference/combinable-class.md)   
- [critical_section sınıfı](../../parallel/concrt/reference/critical-section-class.md)
+ [critical_section Sınıfı](../../parallel/concrt/reference/critical-section-class.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 35f48a87a0b9526ad6150a700190f4509e1128d5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c954354321d814952ec3ac5ea148cc9177cd0fe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="setting-the-mode-of-a-cstatusbarctrl-object"></a>CStatusBarCtrl Nesnesinin Modunu Ayarlama
 İçin iki modda bir `CStatusBarCtrl` nesnesi: Basit ve basit olmayan. Çoğu durumda, metin ve belki de bir simge veya simgeleri birlikte bir veya daha fazla bölümleri durum çubuğu denetimine sahip olur. Bu basit olmayan mod adı verilir. Bu modu hakkında daha fazla bilgi için bkz: [CStatusBarCtrl nesnesinin bölümlerini başlatma](../mfc/initializing-the-parts-of-a-cstatusbarctrl-object.md).  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CStatusBarCtrl kullanma](../mfc/using-cstatusbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

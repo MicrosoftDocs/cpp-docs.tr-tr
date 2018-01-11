@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8319dc6cee5b5dc5c5f0ede2d8d9a9913efb7a4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 309474220f081a0eca67d0f83ead21c59eb649e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 Katıştırılmış OLE denetimi bir olay başlatıldığında, denetimin kapsayıcı "MFC tarafından sağlanan bir olay havuz haritası," olarak adlandırılan bir mekanizma kullanarak olayı alır. Bu olay havuz eşlemesi her belirli olay yanı sıra bu olayların parametreleri için işleyici işlevleri belirler. Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz: [ActiveX denetimi kapsayıcıları](../../mfc/activex-control-containers.md).  

@@ -17,11 +17,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 683fa6e8711deb5f61e4a41e7e9a64313d8abda8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 033cb6ffdfab217be5642f5ce5c9bb6ab9af68fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="logicaland-struct"></a>logical_and Yapısı
 Mantıksal ve işlecini işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator&&`) bağımsız değişkenlerini üzerinde.  

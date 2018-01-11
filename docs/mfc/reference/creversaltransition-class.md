@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30d616bb63953e302973d3b6cbb254869c5f2491
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fdce13f41e95cda592fec03fcedb01984fb34ab9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creversaltransition-class"></a>CReversalTransition sınıfı
 Ters geçiş yalıtır.  
@@ -106,4 +107,4 @@ UI_ANIMATION_SECONDS m_duration;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 467a342b612a82532acb04f11b5fa9f36ce9fe82
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 61dae4cf26f881014f0d98bbf30ebd10a360b10f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-declarations"></a>Bildirimlerin Özeti
 `declaration`:  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/24/2017
   
  **kaydetme**  
   
- **statik**  
+ **static**  
   
  **extern**  
   
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/24/2017
   
  **char**  
   
- **kısa**  
+ **short**  
   
  **int**  
   
@@ -82,11 +83,11 @@ ms.lasthandoff: 10/24/2017
   
  `__int64`/ * Microsoft özel\*/  
   
- **uzun**  
+ **long**  
   
- **kayan nokta**  
+ **float**  
   
- **çift**  
+ **double**  
   
  **İmzalı**  
   
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/24/2017
  *struct veya union tanımlayıcı*<sub>kabul</sub>**{** *yapısı bildirimi listesi* **}**  *struct veya union tanımlayıcısı*  
   
  *struct veya union*:  
- **yapısı**  
+ **struct**  
   
  **birleşim**  
   
@@ -230,7 +231,7 @@ ms.lasthandoff: 10/24/2017
  *Genişletilmiş-decl-değiştirici-seq genişletilmiş decl-değiştirici*  
   
  *Genişletilmiş decl-değiştirici*: /\* Microsoft Specific\*/  
- **iş parçacığı**  
+ **thread**  
   
  **naked**  
   
@@ -241,4 +242,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çağırma kuralları](../cpp/calling-conventions.md)   
  [Tümcecik yapısı dil bilgisi](../c-language/phrase-structure-grammar.md)   
- [Kullanılmayan çağırma kuralları](../cpp/obsolete-calling-conventions.md)
+ [Kullanılmayan Çağırma Kuralları](../cpp/obsolete-calling-conventions.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 452debf30eec9f5ca5eacd562302a578e0d0138a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5c40b7e055585a11b90c2cec1fefb967b51b35cf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
 Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etkileyen birçok stil sağlar. Araç çubuğu nesnesi ayarlayarak değiştirme `dwCtrlStyle` parametresinin `CToolBarCtrl::Create` (veya `CToolBar::CreateEx`) araç çubuğu denetimi ilk oluşturduğunuzda üye işlevi.  
@@ -62,5 +63,5 @@ Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etk
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

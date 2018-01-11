@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0d2d8aa3d428b45da81b2f9256988e089f121dd0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 59007bdabc81b5fe49aa4b5265dc0fc73ef4f0b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="makefile-preprocessing-operators"></a>Derleme Görevleri Dosyası Önişleme İşleçleri
 Derleme görevleri dosyası önişleme ifadeleri hareket işleçleri sabit değerleri, çıkış kodlarından komutları, dizeleri, makroları ve dosya sistemi yolları kullanabilirsiniz. İfade değerlendirmek için Önişlemci makroları, ilk genişletir ve komutları yürütür ve işlemleri gerçekleştirir. Operations parantez içinde açık gruplandırma sırasına göre ve İşleç önceliği sırasına göre değerlendirilir. Sonuç sabit bir değerdir.  
@@ -78,4 +79,4 @@ Derleme görevleri dosyası önişleme ifadeleri hareket işleçleri sabit değe
 >  Bit düzeyinde XOR işleci (`^`) kaçış karakteri ile aynıdır ve kaçış uygulanmalıdır (olarak `^^`) bir ifadede kullanıldığında.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası önişlemlerindeki ifadeler](../build/expressions-in-makefile-preprocessing.md)
+ [Derleme Görevleri Dosyası Ön İşlemlerindeki İfadeler](../build/expressions-in-makefile-preprocessing.md)

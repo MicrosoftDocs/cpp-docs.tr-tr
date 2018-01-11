@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5ceebaf35c9e6bb2c5be9b8b1a33f5f943e25274
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a78e7b9fd8f9c67f14a4bb51088866785d372cca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="processing-notification-messages-in-extended-combo-box-controls"></a>Genişletilmiş Birleşik Giriş Kutusu Denetimlerinde Bildirim İletilerini İşleme
 Genişletilmiş Birleşik giriş kutusu, denetimi kullanıcıların etkileşimli olarak (`CComboBoxEx`) üst pencereye, bildirim iletileri gönderir genellikle bir görünüm veya iletişim nesnesi. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, ne zaman kullanıcı aşağı açılan liste etkinleştirir veya denetimin tıklama düzenleme kutusuna, **CBEN_BEGINEDIT** bildirim gönderilir.  
@@ -43,5 +44,5 @@ Genişletilmiş Birleşik giriş kutusu, denetimi kullanıcıların etkileşimli
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComboBoxEx kullanma](../mfc/using-ccomboboxex.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

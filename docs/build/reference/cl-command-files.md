@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8e42c349436bd0df4f1e26b35d238b6e1ee75c32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a711b2f4a484a6370af828c5d0aad522686ca3f1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 Bir komut dosyası seçenekleri ve aksi durumda yazarsınız üzerinde dosya adlarını içeren bir metin dosyasıdır [komut satırı](../../build/reference/compiler-command-line-syntax.md) veya kullanarak belirtin [CL ortam değişkeni](../../build/reference/cl-environment-variables.md). CL derleyici komut dosyasını CL ortam değişkeni veya komut satırı bağımsız değişken olarak kabul eder. Komut satırında veya CL ortam değişkeninde olanın aksine, komut dosyası birden fazla satırı seçeneği ve dosya adı kullanmanıza izin verir.  

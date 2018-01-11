@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ece4c1b56aeb724c16683a3614d908a7e0caaad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4d2cd6344f11a9c32ade0fc3241225a8763c18b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="files-in-mfc"></a>MFC'deki Dosyalar
 Microsoft Foundation Class Kitaplığı (MFC içinde), sınıf [CFile](../mfc/reference/cfile-class.md) normal dosya g/ç işlemleri gerçekleştirir. Bu makaleler ailesi, açın ve dosyaları kapatın yanı sıra okuma ve bu dosyaların veri yazma açıklanmaktadır. Ayrıca, dosya durum işlemleri anlatılmaktadır. MFC nesne tabanlı serileştirme özelliklerini okuma ve veri dosyaları yazılıyor alternatif bir yolu olarak kullanmak üzere nasıl açıklaması için bkz [seri hale getirme](../mfc/serialization-in-mfc.md).  
@@ -70,4 +71,4 @@ Microsoft Foundation Class Kitaplığı (MFC içinde), sınıf [CFile](../mfc/re
  [Kavramları](../mfc/mfc-concepts.md)   
  [Genel MFC konuları](../mfc/general-mfc-topics.md)   
  [CArchive sınıfı](../mfc/reference/carchive-class.md)   
- [CObject sınıfı](../mfc/reference/cobject-class.md)
+ [CObject Sınıfı](../mfc/reference/cobject-class.md)

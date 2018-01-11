@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c91ba5c74ebda12df4bc912ac8bd760263364345
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fd81a8548dbb746da4afa5b89bc49ee801cbaeb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wizards-and-the-resource-editors"></a>Sihirbazlar ve Kaynak Düzenleyicileri
 Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte kullanmak için bazı sihirbazlar içerir. Programlama, ActiveX denetimleri için [ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md) , MFC Uygulama Sihirbazı'nın benzer bir amaca hizmet eder. Bu araçların çoğu olmadan MFC uygulamaları yazma sırasında araçları büyük ölçüde basitleştirebilir ve çalışmanızı hızlandırmak.  
@@ -57,4 +58,4 @@ Visual C++ MFC programlama birçok tümleşik kaynak düzenleyicileri birlikte k
  MFC Uygulama Sihirbazı'nı, Visual C++ sihirbazları, kaynak düzenleyicileri ve MFC çerçevesi çok fazla iş yapmanız ve kodunuzu çok daha kolay hale. Uygulamaya özgü kod toplu, belge ve görünüm sınıfları ' dir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows uygulamaları yazmak için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)
+ [Windows Uygulamaları Yazmak için Sınıfları Kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md)

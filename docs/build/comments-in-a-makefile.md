@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7edfd0759c91adc75b77b0b320e2469722f5efc7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dfd8e3dda4014048a4f39191b555b1eff1d97288
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comments-in-a-makefile"></a>Derleme Görevleri Dosyası Açıklamaları
 Bir yorum sayı işareti koyun (#). NMAKE sonraki yeni satır karakteri sayı işareti metnin yoksayar. Örnekler:  
@@ -48,4 +49,4 @@ DEF = ^#define  #Macro for a C preprocessing directive
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası içeriği](../build/contents-of-a-makefile.md)
+ [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)

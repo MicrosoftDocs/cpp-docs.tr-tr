@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d70249536945d6426598eade2ecb50965221727e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3fd146ecd4a5c1b431ea63a98e770b0cb2e0917d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="controls-mfc"></a>Denetimler (MFC)
 Kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri nesneleri denetimleridir. Bunlar genellikle iletişim kutularında veya araç çubukları görüntülenir. Bu konuda ailesi denetimleri üç ana türlerini kapsar:  
@@ -73,7 +74,7 @@ Kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri n
 |[Üstbilgi](../mfc/using-cheaderctrl.md)|[CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)|Bir metin sütunu görünür düğme; görüntülenen metin genişliğini denetler|Evet|  
 |[kısayol tuşu](../mfc/using-chotkeyctrl.md)|[CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md)|"Sık kullanılan tuş" oluşturmak kullanıcının sağlayan penceresi hızlı bir şekilde bir eylemi gerçekleştirmek için|Evet|  
 |[Resim Listesi](../mfc/using-cimagelist.md)|[Cımagelist](../mfc/reference/cimagelist-class.md)|Simgeler veya bit eşlemler büyük kümelerini yönetmek için kullanılan görüntü koleksiyonu (resim listesi denetim gerçekten değildir; diğer denetimler tarafından kullanılan listelerini destekler)|Evet|  
-|[Liste](../mfc/using-clistctrl.md)|[CListCtrl](../mfc/reference/clistctrl-class.md)|Metin simgelerle görüntüler penceresi|Evet|  
+|[list](../mfc/using-clistctrl.md)|[CListCtrl](../mfc/reference/clistctrl-class.md)|Metin simgelerle görüntüler penceresi|Evet|  
 |Liste kutusu|[CListBox](../mfc/reference/clistbox-class.md)|Dizeleri listesini içeren kutusu|Hayır|  
 |[Ay takvim](../mfc/using-cmonthcalctrl.md)|[CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)|Tarih bilgileri görüntüleyen denetimi|Evet|  
 |[ilerleme durumu](../mfc/using-cprogressctrl.md)|[CProgressCtrl](../mfc/reference/cprogressctrl-class.md)|Uzun bir işlemin ilerlemesini gösterir penceresi|Evet|  
@@ -113,11 +114,11 @@ Kullanıcıları girin ya da verileri işlemek için etkileşim kurabildikleri n
   
 -   [Ortak denetimlerden bildirim iletilerini alma](../mfc/receiving-notification-from-common-controls.md)  
   
--   [Örnekleri](../mfc/common-control-sample-list.md)  
+-   [Örnekler](../mfc/common-control-sample-list.md)  
   
  Windows ortak denetimleri Windows SDK hakkında daha fazla bilgi için bkz: [ortak denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775493).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)
+ [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
 

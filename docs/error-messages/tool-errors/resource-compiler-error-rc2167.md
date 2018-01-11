@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0981be10e1ce7460179812ec3610982f1fb4fa8f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fd3515021c48f9293e7ee4223acaa7472ed7de5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-compiler-error-rc2167"></a>Kaynak Derleyicisi Hatası RC2167
 Tanınmayan VERSIONINFO alan; BEGIN veya virgül bekleniyor  

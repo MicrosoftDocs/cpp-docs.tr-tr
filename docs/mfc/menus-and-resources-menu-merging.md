@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1671d9d52625395fcad579470d8c3b0224cca189
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c686d461a3052feb4a55cf7948b58102f10ac1f1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="menus-and-resources-menu-merging"></a>Menüler ve Kaynaklar: Menü Birleştirme
 Bu makalede görsel düzenleme işlemek ve düzgün şekilde yerinde etkinleştirme OLE belge uygulamaları için gerekli adımları ayrıntılarını verir. Yerinde etkinleştirme (Bileşen) uygulamaları kapsayıcı ve sunucu için bir zorluk oluşturur. Kullanıcı (kapsayıcı belge bağlamında) aynı çerçeve penceresindeki kalır, ancak gerçekte başka bir uygulama (sunucu) çalışıyor. Bu kapsayıcı ve sunucu uygulamaları kaynaklarına arasında düzenlemesi gerektirir.  
@@ -118,5 +119,5 @@ END
  [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   
  [Etkinleştirme](../mfc/activation-cpp.md)   
  [Sunucuları](../mfc/servers.md)   
- [Kapsayıcıları](../mfc/containers.md)
+ [Kapsayıcılar](../mfc/containers.md)
 

@@ -31,11 +31,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a69f26f344fd4cdccd2ff2a700dcd7e7d473e26a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f59b48022cc448b8b06502febdaf1634998ac9f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
 Bir Özet bir eşzamanlılık çalışma zamanı Zamanlayıcısı temsil eder.  
@@ -59,7 +60,7 @@ class Scheduler;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ekleme](#attach)|Zamanlayıcı çağıran bağlamını ekler. Bu yöntem döndükten sonra çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.|  
+|[Attach](#attach)|Zamanlayıcı çağıran bağlamını ekler. Bu yöntem döndükten sonra çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.|  
 |[Oluşturma](#create)|Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametresi, ilk başvuru zamanlayıcıda yerleştirir ve devre dışı bir işaretçi döndürür.|  
 |[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Sanal işlemcilerin sayısı için Zamanlayıcı'yı döndürür.|  

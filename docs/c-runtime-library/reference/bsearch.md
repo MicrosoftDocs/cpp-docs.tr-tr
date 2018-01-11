@@ -31,11 +31,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2a7166570785d2d73db06fcdf7e42492317621a0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1db24ea4be15c4111b94a28323903dd3f2c3ed7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bsearch"></a>bsearch
 İkili arama sıralanmış bir dizinin gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).  

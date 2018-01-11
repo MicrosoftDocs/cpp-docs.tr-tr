@@ -7,11 +7,12 @@ ms.assetid: fc6aa7e5-34dd-4ec2-88bd-16e430361dc7
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c0a8c1cf8b7057d9f817daffad5f26e8aad4785d
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 261e826043a4f922902de91573a16707897ae6b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4868"></a>Derleyici Uyarısı (düzey 4) C4868
 

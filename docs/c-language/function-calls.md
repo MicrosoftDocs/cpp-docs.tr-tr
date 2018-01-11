@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3f04acfe9458b8a10142ef7bc12155bc8e2a9a52
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5c314fb66a6bd45d1e9ce22b9d88195dce27b85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-calls"></a>işlev Çağrıları
 A *işlev çağrısı* denetim ve bağımsız değişkenler (varsa) bir işleve aktardığı ifade olan ve biçime sahiptir:  

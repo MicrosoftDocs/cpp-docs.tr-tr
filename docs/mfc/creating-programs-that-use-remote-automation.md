@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 393e8aea159e83e43b83a9f06522466c60baba9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: deb832e0baed30507ef3f9929fb5f12805b7a807
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-programs-that-use-remote-automation"></a>Uzaktan Otomasyon Kullanan Programlar Oluşturma
 Herhangi bir Otomasyon nesnesi ve herhangi bir Otomasyon denetleyicisi uzaktan Otomasyon kaynak kodu derleme gerek kalmadan ve yeniden bağlama için gerek kalmadan herhangi bir değişiklik olmadan kullanmaya devam edebilir. Yerel olarak çalışan bir ayarladıktan sonra (diğer bir deyişle, aynı makine üzerindeki), uzaktan yürütmek için yalnızca birkaç adımda gitmek.  
@@ -55,5 +56,5 @@ Herhangi bir Otomasyon nesnesi ve herhangi bir Otomasyon denetleyicisi uzaktan O
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uzak Otomasyon](../mfc/remote-automation.md)   
- [AUTOCLIK ve AUTODRIV kullanarak uzak Otomasyonu çalıştırma](../mfc/running-remote-automation-using-autoclik-and-autodriv.md)
+ [AUTOCLIK ve AUTODRIV Kullanarak Uzak Otomasyonu Çalıştırma](../mfc/running-remote-automation-using-autoclik-and-autodriv.md)
 

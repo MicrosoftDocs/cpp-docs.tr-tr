@@ -32,11 +32,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be49baef0af65bfe3de2b75e6b243f7a23f8eecb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d6646fa33c0a78e8194faa5d511e107febca6d6f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="docking-and-floating-toolbars"></a>Yerleşen ve Kayan Araç Çubukları
 Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Dockable araç çubuğu bağlı veya, kendi üst penceresi herhangi bir kenarında yerleşik veya ayrılmış veya yükleyebilir, kendi kısa çerçeve penceresinde kaydırılmış. Bu makalede, uygulamalarınızda dockable araç çubukları kullanımı açıklanmaktadır.  
@@ -118,5 +119,5 @@ Microsoft Foundation Class Kitaplığı dockable araç çubukları destekler. Do
 -   [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)
+ [MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
 

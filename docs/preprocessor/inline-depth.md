@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7ec052eb387e2dd5ea169b45cdf98edb62f4c203
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f105512910658603139105ecf1cf1d5b7030ad00
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inlinedepth"></a>inline_depth
 `n`'den daha büyük bir derinlikteyse (çağrı grafında) hiçbir işlevin satır içine alınmayacağı satır içi buluşsal arama derinliğini belirtir.  

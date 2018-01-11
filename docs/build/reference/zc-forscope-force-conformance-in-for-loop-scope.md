@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 72595581e5054630e761f214c1a30c139fb7b69b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 243966ae5e8c7d0792f40206adc9d0ae3b2fb673
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope (Döngü Kapsamında Uyumluluğu Zorla)
 Standart C++ davranışını uygulamak için kullanılan [için](../../cpp/for-statement-cpp.md) döngüler Microsoft Uzantıları ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).  **/ ZC: forscope** varsayılan olarak açıktır.  

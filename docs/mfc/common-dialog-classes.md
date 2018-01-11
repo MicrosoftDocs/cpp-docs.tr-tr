@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 50adbc6faa802802c36e18c614992341def06331
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fcbed7cec501257f03ab13447d54e081c1d46c76
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="common-dialog-classes"></a>Ortak İletişim Kutusu Sınıfları
 Sınıf yanı sıra [CDialog](../mfc/reference/cdialog-class.md), MFC kaynakları türetilen birden fazla sınıf `CDialog` aşağıdaki tabloda gösterildiği gibi yaygın olarak kullanılan iletişim kutularını kapsayan. Kapsüllenmiş iletişim kutularında "ortak iletişim kutuları" olarak adlandırılır ve Windows ortak iletişim kitaplığı (COMMDLG. parçası DLL). İletişim şablonu kaynakları ve bu sınıflar için kod Windows'da Windows 3.1 ve sonraki sürümleri parçası olan ortak iletişim kutuları sağlanır.  
@@ -49,5 +50,5 @@ Sınıf yanı sıra [CDialog](../mfc/reference/cdialog-class.md), MFC kaynaklar�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   
  [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [OLE iletişim kutuları](../mfc/dialog-boxes-in-ole.md)
+ [OLE'deki İletişim Kutuları](../mfc/dialog-boxes-in-ole.md)
 

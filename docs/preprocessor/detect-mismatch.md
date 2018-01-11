@@ -19,11 +19,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d99efe6bca27cdbefa73057f843adbcd01cd1fdf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 90f4013606ba94c6ea18aa4369bb2e3298034081
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="detectmismatch"></a>detect_mismatch
 Bir kayıt nesneyi yerleştirir. Bağlayıcı olası eşleşmeler bu kayıtları denetler.  
@@ -57,4 +58,4 @@ int main ()
  Bu dosyaların her ikisini de komut satırını kullanarak derleme yaparsanız `cl pragma_directive_detect_mismatch_a.cpp pragma_directive_detect_mismatch_b.cpp`, hatasıyla karşılaşırsınız `LNK2038`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

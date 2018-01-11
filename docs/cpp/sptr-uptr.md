@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0dd691c706fa9b80307971b7004ee1fbbccd7153
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: daa431204c66def272d07fc0b670dc279e1569ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -96,4 +97,4 @@ p32u: p64 = 0000000087654321
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)
+ [Microsoft'a Özel Değiştiriciler](../cpp/microsoft-specific-modifiers.md)

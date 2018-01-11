@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e48212de73a614ec7baca9bbd5a919d16941486c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 507f684a0c5c7a923cd5c8e16bc9578b8b68e511
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-image-lists-in-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminde Görüntü Listeleri Kullanma
 Varsayılan olarak, bir toolbar denetimine düğme tarafından kullanılan görüntüleri tek bir bit eşlem olarak depolanır. Ancak, bir resim listeleri kümesinde düğme resimlerini de depolayabilir. Araç çubuğu denetimi nesnesi için üç ayrı bir görüntü listeleri kullanabilirsiniz:  
@@ -47,5 +48,5 @@ Varsayılan olarak, bir toolbar denetimine düğme tarafından kullanılan gör�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

@@ -27,11 +27,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 75be5687e63fe38f1ffa8f91c41963dfa1171e48
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67cf15c6681c989a2da2b4e6824fec6012c517bf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sourcelinkmanager-class"></a>source_link_manager Sınıfı
 `source_link_manager` Nesnesi ileti bloğu ağ bağlantıları yönetir `ISource` engeller.  
@@ -69,14 +70,14 @@ class source_link_manager;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ekleme](#add)|Kaynak bağlantısı ekler `source_link_manager` nesnesi.|  
+|[add](#add)|Kaynak bağlantısı ekler `source_link_manager` nesnesi.|  
 |[başlayın](#begin)|Yineleyici ilk öğe döndürür `source_link_manager` nesnesi.|  
 |[içerir](#contains)|Aramaları `network_link_registry` bu içinde `source_link_manager` belirtilen bloğu için nesnesi.|  
 |[sayısı](#count)|Bağlantılı bloklarında sayar `source_link_manager` nesnesi.|  
 |[başvuru](#reference)|Üzerinde bir başvuru edinir `source_link_manager` nesnesi.|  
 |[register_target_block](#register_target_block)|Bu tutan hedef blok kaydeder `source_link_manager` nesnesi.|  
 |[Sürüm](#release)|Üzerinde başvuru serbest `source_link_manager` nesnesi.|  
-|[Kaldır](#remove)|Bir bağlantıdan kaldırır `source_link_manager` nesnesi.|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `source_link_manager` nesnesi.|  
 |[set_bound](#set_bound)|Bu eklenebilir kaynak bağlantı sayısının üst sınırını ayarlar `source_link_manager` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -216,4 +217,4 @@ source_link_manager();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [single_link_registry sınıfı](single-link-registry-class.md)   
- [multi_link_registry sınıfı](multi-link-registry-class.md)
+ [multi_link_registry Sınıfı](multi-link-registry-class.md)

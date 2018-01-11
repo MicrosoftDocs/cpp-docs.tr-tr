@@ -27,11 +27,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 787f9eb4b7c058c7a6f4e43eaba781546627fa04
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: baabba60ffaf886b7a34acfbff5b923a4495fa1b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idle-loop-processing"></a>Boşta Çevrim İşleme
 Birçok uygulama "arka planda." uzun yönlendirilmeden Bazen performans değerlendirmeleri gibi iş için çoklu iş parçacığı kullanımı kullanarak dikte. İş parçacığı içeren ek geliştirme yükünü MFC yapar boşta kalma süresi iş gibi basit görevleri için önerilmez şekilde [ONIDLE](../mfc/reference/cwinthread-class.md#onidle) işlevi. Bu makalede üzerindeki boşta işleme odaklanır. Çoklu iş parçacığı kullanımı, bkz: hakkında daha fazla bilgi için [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
@@ -64,5 +65,5 @@ Birçok uygulama "arka planda." uzun yönlendirilmeden Bazen performans değerle
  Boşta işleme gerçekleştirme hakkında daha fazla bilgi için bkz: [ONIDLE](../mfc/reference/cwinthread-class.md#onidle) MFC Kitaplığı Başvurusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1cc5ed3a3a5ddd4117a3332703613a8d525853a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a3f8a4e1ca62a77c16dafedd0921ca842d7a048
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a19---examples-showing-incorrect-nesting-of-work-sharing-directives"></a>A.19   İş Paylaşım Yönergelerinin Yanlış İş İçe Konulmasını Gösteren Örnekler
 Bu bölümdeki örnekleri yönerge iç içe geçmiş kuralları gösterilmektedir. Yönerge iç içe geçirme hakkında daha fazla bilgi için bkz: [bölüm 2.9](../../parallel/openmp/2-9-directive-nesting.md) sayfasında 33.  

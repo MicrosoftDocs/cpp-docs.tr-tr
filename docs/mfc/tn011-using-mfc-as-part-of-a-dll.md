@@ -20,11 +20,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 312451f40b19375dcef9d4a68b2d1bf3f3ae2562
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0d0ac05e314f3f8354ba289695afa672b1e28881
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: Bir DLL'in bir Parçası Olarak MFC Kullanma
 Bu Not MFC kitaplığını Windows dinamik bağlantı kitaplığı (DLL) bir parçası olarak kullanmanıza olanak sağlayan Normal MFC DLL'leri açıklar. Bu, Windows DLL'leri ve bunları oluşturma konusunda bilgi sahibi olduğunuzu varsayar. MFC uzantı DLL'leri hakkında daha fazla bilgi için hangi oluşturabileceğiniz ile MFC kitaplığına uzantılarını görmek [, DLL sürümü MFC](../mfc/tn033-dll-version-of-mfc.md).  
@@ -116,5 +117,5 @@ BOOL PromptTraceFlags(TracerData FAR* lpData);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

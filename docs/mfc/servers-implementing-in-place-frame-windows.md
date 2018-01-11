@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1102d6459701314c5b0d5b3e96908052504262d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7e26cbb0099f897c65ab3e39338f3c36e77112e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="servers-implementing-in-place-frame-windows"></a>Sunucular: Yerinde Çerçeve Pencereleri Uygulama
 Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kullanmazsanız, görsel düzenleme server uygulamanızda yerinde çerçeve pencereleri uygulamak için yapmanız gerekir açıklanmaktadır. Bu makalede açıklanan yordamı izlemek yerine, varolan bir yerinde çerçeve pencere sınıfı Uygulama Sihirbazı tarafından oluşturulan bir uygulama veya Visual C++ ile sağlanan bir örnek kullanabilirsiniz.  
@@ -62,5 +63,5 @@ Bu makalede, sunucu uygulamanızı oluşturmak için Uygulama Sihirbazı'nı kul
  [Sunucuları](../mfc/servers.md)   
  [Sunucular: sunucu uygulama](../mfc/servers-implementing-a-server.md)   
  [Sunucular: Sunucu belgeleri uygulama](../mfc/servers-implementing-server-documents.md)   
- [Sunucular: Sunucu öğeleri](../mfc/servers-server-items.md)
+ [Sunucular: Sunucu Öğeleri](../mfc/servers-server-items.md)
 

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 96ca4417cea6b4bdd1107d3f5d7b4ea9d85269e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 308f9deada47998c2f639d01ea5b9fdc9d04faa5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-support-classes"></a>Windows Destek sınıfları
 Aşağıdaki sınıflar windows için destek sağlar:  
@@ -55,12 +56,12 @@ Aşağıdaki sınıflar windows için destek sağlar:
 -   [CWinTraitsOR](../atl/reference/cwintraitsor-class.md) pencere stilleri ve bir pencere oluşturmak için kullanılan genişletilmiş stilleri varsayılan değerleri sağlar. Bir pencere oluşturma sırasında sağlanan değerler için mantıksal veya işlecini kullanarak bu değerleri eklenir.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [ATL pencere sınıfları](../atl/atl-window-classes.md)  
+ [ATL Pencere Sınıfları](../atl/atl-window-classes.md)  
   
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
  [İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
- [Pencere sınıfı makroları](../atl/reference/window-class-macros.md)
+ [Pencere Sınıfı Makroları](../atl/reference/window-class-macros.md)
 

@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 40ff1d5bf9e1514b8366cc113426ee83cb1dcc39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3bd9da00d2d6ea0110562f523a0adc53c1a476c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rubber-banding-and-trackers"></a>Rubber-Banding ve İzleyiciler
 Başka bir özellik izleyicileri ile sağlanan seçilecek öğeleri etrafında boyutlandırma dikdörtgen sürükleyerek birden çok OLE öğeleri seçmek bir kullanıcının "bant dışı pencere" seçim değildir. Kullanıcı sol fare düğmesini bıraktığında, kullanıcı tarafından seçilen bölge içindeki öğeler seçilir ve kullanıcı tarafından yönetilebilir. Örneğin, kullanıcı seçimi sürükleyin ve bu da başka bir kapsayıcı uygulamasına.  
@@ -40,4 +41,4 @@ Başka bir özellik izleyicileri ile sağlanan seçilecek öğeleri etrafında b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzleyiciler: OLE uygulamanızda izleyicileri uygulama](../mfc/trackers-implementing-trackers-in-your-ole-application.md)   
- [CRectTracker sınıfı](../mfc/reference/crecttracker-class.md)
+ [CRectTracker Sınıfı](../mfc/reference/crecttracker-class.md)

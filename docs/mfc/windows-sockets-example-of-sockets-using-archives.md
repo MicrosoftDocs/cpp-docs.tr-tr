@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1e66a6fd81e1d6240c6b5c203a7101d18f987e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e0e70e8ecc14496b03bc758d91f078a926f33532
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows Yuvaları: Arşivlerle Kullanılan Yuvalara Örnek
 Bu makalede sınıfını kullanarak bir örnek sunar [CSocket](../mfc/reference/csocket-class.md). Örnek kullanan `CArchive` yuva verilerine serileştirmek için nesneleri. Bu belge serileştirmesi için veya bir dosyadan olmadığını unutmayın.  
@@ -56,11 +57,11 @@ Bu makalede sınıfını kullanarak bir örnek sunar [CSocket](../mfc/reference/
   
  Windows Yuvaları belirtimi daha fazla bilgi için bkz: **htonl**, **htons**, **ntohl**, **ntohs**. Ayrıca, daha fazla bilgi için bkz:  
   
--   [Windows Yuvaları: Yuva sınıflarından türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)  
+-   [Windows Yuvaları: Yuva Sınıflarından Türetme](../mfc/windows-sockets-deriving-from-socket-classes.md)  
   
--   [Windows Yuvaları: Yuvaların arşivlerle çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
+-   [Windows Yuvaları: Yuvaların Arşivlerle Çalışması](../mfc/windows-sockets-how-sockets-with-archives-work.md)  
   
--   [Windows Yuvaları: arka plan](../mfc/windows-sockets-background.md)  
+-   [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   

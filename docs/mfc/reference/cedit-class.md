@@ -105,11 +105,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b37610531a1c554efa6a8f745730efb8a06e6673
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4418f20b267218b761dd6637762df1b420e9ac6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Bir Windows düzenleme denetimi işlevselliğini sağlar.  
@@ -225,7 +226,7 @@ class CEdit : public CWnd
   
  Daha fazla bilgi için `CEdit`, bkz:  
   
-- [Denetimleri](../../mfc/controls-mfc.md)  
+- [Denetimler](../../mfc/controls-mfc.md)  
   
 -   Bilgi Bankası makalesi Q259949: bilgi: SetCaretPos() olan uygun olmayan CEdit veya CRichEditCtrl denetimleri  
   
@@ -1295,4 +1296,4 @@ BOOL Undo();
  [CListBox sınıfı](clistbox-class.md)   
  [CScrollBar sınıfı](cscrollbar-class.md)   
  [CStatic sınıfı](cstatic-class.md)   
- [CDialog sınıfı](cdialog-class.md)
+ [CDialog Sınıfı](cdialog-class.md)

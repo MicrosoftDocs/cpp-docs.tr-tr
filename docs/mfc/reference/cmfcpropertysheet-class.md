@@ -51,11 +51,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b8b8624d65e6bee9aacb8ac1f8d7ec9537e5e9c6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e2684de5c72dcc755c2a75e2553eed509ce76533
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 `CMFCPropertySheet` Sınıfı, burada her özellik sayfası belirtilen bir sayfa sekmesi, araç çubuğu düğmesi, ağaç denetim düğümü veya bir liste öğesi tarafından bir özellik sayfası destekler.  
@@ -474,4 +475,4 @@ void SetLook(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCPropertyPage sınıfı](../../mfc/reference/cmfcpropertypage-class.md)   
- [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)
+ [CMFCOutlookBar Sınıfı](../../mfc/reference/cmfcoutlookbar-class.md)

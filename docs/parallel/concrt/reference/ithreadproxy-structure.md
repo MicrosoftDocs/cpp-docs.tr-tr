@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f56e7858fc313ac35d5a3937e2d64472f28e355d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc0808d7b6eae3db64695d2d3e0b40d092361a6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 Bir iş parçacığı için bir Özet yürütme. Bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı İlkesi anahtarı Resource Manager vermek, normal bir Win32 iş parçacığı veya kullanıcı modu zamanlanabilir (UMS) iş parçacığı tarafından yedeklenen bir iş parçacığı proxy. UMS iş parçacığı desteklenen 64-bit işletim sistemi sürümü Windows 7 ve üzeri.  
@@ -135,4 +136,4 @@ virtual void YieldToSystem() = 0;
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [Iexecutioncontext yapısı](iexecutioncontext-structure.md)   
  [Ischeduler yapısı](ischeduler-structure.md)   
- [Ivirtualprocessorroot yapısı](ivirtualprocessorroot-structure.md)
+ [IVirtualProcessorRoot Yapısı](ivirtualprocessorroot-structure.md)

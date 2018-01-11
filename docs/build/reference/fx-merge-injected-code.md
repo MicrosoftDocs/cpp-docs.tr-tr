@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 344d9ded0cdb77abfc2fa53ab4180f2e484b7dc9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d00f54a3f7842108a7a9b144fe27058996d3c58b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fx-merge-injected-code"></a>/Fx (Eklenen Kodu Birleştir)
 Eklenen kod kaynağına birleştirilmiş ile her kaynak dosyasının bir kopyasını oluşturur.  
@@ -85,4 +86,4 @@ Eklenen kod kaynağına birleştirilmiş ile her kaynak dosyasının bir kopyas�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

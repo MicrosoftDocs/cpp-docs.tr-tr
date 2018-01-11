@@ -22,11 +22,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: af687c482ee3565d7b350672b83291194a2edf44
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e3edffb10aad7b5793907c8c95ad5028f4d1d23
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iexecutioncontext-structure"></a>IExecutionContext Yapısı
 Belirli bir sanal işlemcinin çalıştırabilir ve işbirliği ile anahtarlı bağlamının olması bir yürütme bağlamı için bir arabirim.  
@@ -129,4 +130,4 @@ virtual void SetProxy(_Inout_ IThreadProxy* pThreadProxy) = 0;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [Ischeduler yapısı](ischeduler-structure.md)   
- [Ithreadproxy yapısı](ithreadproxy-structure.md)
+ [IThreadProxy Yapısı](ithreadproxy-structure.md)

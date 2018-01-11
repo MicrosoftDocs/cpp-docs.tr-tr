@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54eeffebcc20846666c6ebb6a2951f8d55a5b8c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 71fe791e776450d21878144447cf95cdedb34875
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="improper-access-to-a-union"></a>Birleşime Düzgün Olmayan Erişim
 **ANSI 3.3.2.3** birleşim nesne üyesi, farklı bir tür üyesi kullanılarak erişilir  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  Örneğin, bir birleşimi **float** ve `int` bildirilmedi. A **float** değeri depolanır, ancak programı daha sonra değeri olarak erişen bir `int`. Böyle bir durumda, iç depolaması ve değeri değişir **float** değerleri. Tamsayı değeri güvenilir olmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, birleşimler, numaralandırmalar ve Bit alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)
+ [Yapılar, Birleşimler, Numaralandırmalar ve Bit Alanları](../c-language/structures-unions-enumerations-and-bit-fields.md)

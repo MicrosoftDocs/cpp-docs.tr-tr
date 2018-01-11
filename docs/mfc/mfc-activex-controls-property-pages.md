@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3dd62127d5fb09675d6c91963d85dd6ae7f44f35
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dde35df301c34a6c3a29c48d5ad145681b64a72e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX Denetimleri: Özellik Sayfaları
 Özellik sayfaları ActiveX denetimi özelliklerini görüntülemek ve değiştirmek bir ActiveX denetimi verin. Bu özellikleri görüntülemek ve denetim özelliklerini düzenleme için özelleştirilmiş, grafik bir arabirim sağlayan bir veya daha fazla özellik sayfaları içeren bir denetim özellikleri iletişim kutusu çağırarak erişilir.  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/24/2017
   
  ActiveX denetiminde özellik sayfalarını kullanma ile ilgili daha fazla bilgi için aşağıdaki makalelere bakın:  
   
--   [MFC ActiveX denetimleri: Başka bir özel özellik sayfası ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)  
+-   [MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)  
   
--   [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)  
+-   [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)  
   
  ActiveX denetimi dışında bir MFC uygulamasında özellik sayfalarını kullanma hakkında daha fazla bilgi için bkz: [özellik sayfalarını](../mfc/property-sheets-mfc.md).  
   
@@ -121,4 +122,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
- [COlePropertyPage sınıfı](../mfc/reference/colepropertypage-class.md)
+ [COlePropertyPage Sınıfı](../mfc/reference/colepropertypage-class.md)

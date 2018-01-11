@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c225e5f34b92e9a6e29c3cb15168376a04cdc425
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96168e569ff2207e43663f50989eb0686d3d52a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 sınıfı
 `CMFCVisualManagerWindows7` Uygulamanın görünümünü sunan bir [!INCLUDE[win7](../../build/includes/win7_md.md)] uygulama.  
@@ -195,4 +196,4 @@ virtual void OnFillMenuImageRect(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCVisualManager sınıfı](../../mfc/reference/cmfcvisualmanager-class.md)   
- [CMFCVisualManagerWindows sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md)
+ [CMFCVisualManagerWindows Sınıfı](../../mfc/reference/cmfcvisualmanagerwindows-class.md)

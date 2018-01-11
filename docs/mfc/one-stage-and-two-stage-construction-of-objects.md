@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0f3e337f96c1acef53b1ec34237d31a868fb4dfe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 677a29d4f0b65a9490f24a5906d606a05bb4573b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="one-stage-and-two-stage-construction-of-objects"></a>Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı
 İki kalemler ve fırçalar gibi grafik nesneleri oluşturma tekniği arasında seçim yapabilirsiniz:  
@@ -49,8 +50,8 @@ ms.lasthandoff: 10/24/2017
   
 -   [Cihaz bağlamları](../mfc/device-contexts.md)  
   
--   [Bir görünümde çizim yapma](../mfc/drawing-in-a-view.md)  
+-   [Bir Görünümde Çizim Yapma](../mfc/drawing-in-a-view.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Grafik nesneleri](../mfc/graphic-objects.md)
+ [Grafik Nesneler](../mfc/graphic-objects.md)
 

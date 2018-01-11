@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8771aba4328cef785347712f037ea21c5a46cfad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b8b9166c1beae167f6d31913c3df10a8f57bbef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-compound-assignment"></a>C Bileşik Atama
 Bileşik atama işleçleri basit atama işleci başka bir ikili işleç ile birleştirin. Bileşik atama işleçleri ek operatör tarafından belirtilen işlemi gerçekleştirmek, sonra sol işleneni sonucu atayın. Örneğin, bir bileşik atama ifadesi gibi  
@@ -59,4 +60,4 @@ n &= MASK;
  Bit düzeyinde kapsayıcı-ve işlem gerçekleştirilir Bu örnekte, `n` ve `MASK`, ve sonucu atandığı `n`. Bildirim sabiti `MASK` ile tanımlanmış bir [#define](../preprocessor/hash-define-directive-c-cpp.md) önişlemci yönergesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C atama işleçleri](../c-language/c-assignment-operators.md)
+ [C Atama İşleçleri](../c-language/c-assignment-operators.md)

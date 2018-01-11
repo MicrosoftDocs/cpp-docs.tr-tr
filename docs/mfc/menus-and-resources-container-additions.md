@@ -27,11 +27,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a3c8bec06315982725cce531476cbe7daaf154a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 654efeaacd08e0d2c8c51cee012fd58dcbf071ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="menus-and-resources-container-additions"></a>Menüler ve Kaynaklar: Kapsayıcı Ekleme
 Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uygulamasında yapılması gereken değişiklikleri açıklar.  
@@ -91,5 +92,5 @@ Bu makalede menüleri ve diğer kaynaklara bir görsel düzenleme kapsayıcı uy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)   
- [Menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md)
+ [Menüler ve Kaynaklar: Sunucu Ekleme](../mfc/menus-and-resources-server-additions.md)
 

@@ -14,13 +14,14 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7685bd1c112651b07540fefd2a28be91c9671706
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0847d92d890026ce6cfb963b022a3859370877fe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
-# <a name="ltthreadgt"></a>&lt;iş parçacığı&gt;
+# <a name="ltthreadgt"></a>&lt;thread&gt;
 Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread` ve çeşitli destekleyici işlevler.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -42,13 +43,13 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[iş parçacığı sınıfı](../standard-library/thread-class.md)|İnceleyin ve bir iş parçacığı bir uygulamada yürütme yönetmek için kullanılan nesneyi tanımlar.|  
+|[thread Sınıfı](../standard-library/thread-class.md)|İnceleyin ve bir iş parçacığı bir uygulamada yürütme yönetmek için kullanılan nesneyi tanımlar.|  
   
 ### <a name="public-structures"></a>Genel yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[hash yapısı (Standart C++ Kitaplığı)](../standard-library/hash-structure-stl.md)|Benzersiz olarak tarafından belirlenen bir değer döndüren bir üye işlevi tanımlayan bir `thread::id`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerin bir dağıtım.|  
+|[hash Yapısı (C++ Standart Kitaplığı)](../standard-library/hash-structure-stl.md)|Benzersiz olarak tarafından belirlenen bir değer döndüren bir üye işlevi tanımlayan bir `thread::id`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerin bir dağıtım.|  
   
 ### <a name="public-functions"></a>Genel işlevler  
   
@@ -58,7 +59,7 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
 |[sleep_for](../standard-library/thread-functions.md#sleep_for)|Çağıran iş parçacığı engeller.|  
 |[sleep_until](../standard-library/thread-functions.md#sleep_until)|Çağıran iş parçacığı en az belirtilen zamana kadar engeller.|  
 |[değiştirme](../standard-library/thread-functions.md#swap)|İki durumlarını alış verişleri `thread` nesneleri.|  
-|[uyarı simgesi](../standard-library/thread-functions.md#yield)|Geçerli iş parçacığının normal şekilde çalışmaya devam eder olsa bile diğer iş parçacıklarını çalıştırmak için işletim sistemi işaret eder.|  
+|[yield](../standard-library/thread-functions.md#yield)|Geçerli iş parçacığının normal şekilde çalışmaya devam eder olsa bile diğer iş parçacıklarını çalıştırmak için işletim sistemi işaret eder.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -74,5 +75,5 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

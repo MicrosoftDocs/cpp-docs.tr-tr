@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e6e10a2a2991f314d61bd8c2df22b59d7791b6c9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 810a4c2dbf5c80688dd739c48df0056ab394cafd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recommendations-for-choosing-between-functions-and-macros"></a>İşlevlerle Makrolar Arasında Seçim Önerileri
 Çoğu Microsoft çalışma zamanı kitaplığı yordamları derlenen veya İşlevler birleştirilen, ancak bazı yordamları makroları olarak uygulanır. Bir işlev ve bir yordam makrosu sürümü üstbilgi dosyası bildirir, her zaman sonra işlevi bildirimi göründüğünden makro tanımı, önceliklidir. Bir işlev ve makro uygulanan bir yordam çağırdığınızda, iki yolla işlev sürümü kullanmak için derleyicisi uygulayabilirsiniz:  
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/24/2017
 -   **Tür denetleme** bir işlev bildirirken derleyici bağımsız değişken türleri kontrol edebilirsiniz. Makro bildiremezsiniz olduğundan derleyici makrosu bağımsız değişken türleri iade edilemiyor; bağımsız değişken sayısı denetleyebilirsiniz rağmen bir makro geçirin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f98cc77ecc11f2b3ea07352e48c1e6a096125300
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f14998ce663e5a8e53901acf9192719fa41e724
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="providing-flicker-free-activation"></a>Titreşimsiz Etkinleştirme Sağlama
 Denetiminiz kendisini aynı etkin ve etkin durumda çizer (ve penceresiz etkinleştirme kullanmaz varsa), çizim işlemleri ve etkin olmayan arasında geçiş yaparken, normal olarak ortaya eşlik eden visual titreşimi çıkarabilirsiniz ve etkin durumları. Bunu yapmak için dahil **noFlickerActivate** tarafından döndürülen bayraklar kümesi bayrağı [COleControl::GetControlFlags](../mfc/reference/colecontrol-class.md#getcontrolflags). Örneğin:  
@@ -35,5 +36,5 @@ Denetiminiz kendisini aynı etkin ve etkin durumda çizer (ve penceresiz etkinle
  Penceresiz etkinleştirme kullanıyorsanız, bu en iyi duruma getirme bir etkisi yoktur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md)
+ [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

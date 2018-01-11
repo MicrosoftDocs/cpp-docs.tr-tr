@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: babb15cd887ddd877d2aa898b9df7d35618be990
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c09540308ea87093cab74dbe0833587e9828e42
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltreturnsgt-visual-c"></a>&lt;verir&gt; (Visual C++)
 \<Döndürür > etiketi açıklamasında bir yöntem bildirimi için dönüş değerini açıklamak için kullanılmalıdır.  
@@ -57,4 +58,4 @@ public:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

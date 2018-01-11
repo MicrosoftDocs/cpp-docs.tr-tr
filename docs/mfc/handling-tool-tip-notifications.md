@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6d6ec102d38e91389fddb3faf4eb83ace9ba7129
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2b7668420b849dc08215a4fc309edf86e9171462
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handling-tool-tip-notifications"></a>Araç İpucu Bildirimlerini İşleme
 Belirttiğinizde `TBSTYLE_TOOLTIPS` stili, araç oluşturur ve bir araç ipucunu denetimini yönetir. Araç İpucu araç çubuğu düğmesi açıklayan metin satırının içeren küçük bir açılır penceredir. Yalnızca kullanıcı imleci bir araç çubuğu düğmesini koyar ve onu var. yaklaşık yarısı için ikinci bırakır görünen araç ipucu gizlenir. Araç İpucu imlecin yanında görüntülenir.  
@@ -53,5 +54,5 @@ Belirttiğinizde `TBSTYLE_TOOLTIPS` stili, araç oluşturur ve bir araç ipucunu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

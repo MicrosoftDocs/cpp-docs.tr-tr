@@ -17,16 +17,17 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c44f08c825be281fbc43b75318f80a61de24e5bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f85e4e1904d524f6e8734c9e26dc05510cf0de83
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn049-mfcole-mbcs-to-unicode-translation-layer-mfcans32"></a>TN049: MFC/OLE MBCS'den Unicode Çeviri Katmanına (MFCANS32)
 İlk olarak nasıl açıklanan bu not MFCANS32. DLL sağlar ANSI arabirimlerde öncelikle 32-bit OLE Unicode dünyanın. Bu DLL artık MFC tarafından kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
- [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)
+ [Kategoriye Göre Teknik Notlar](../mfc/technical-notes-by-category.md)
 

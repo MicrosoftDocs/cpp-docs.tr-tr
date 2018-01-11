@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: adff972c3e2f343c45accc8ff79230e7156ffd44
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1efc61e097d7e1136fdb7b6ef740dc00342077e4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Tür Kitaplığından Bir MFC Sınıfı Ekleme
 Bir MFC sınıfı kullanılabilir Tür Kitaplığı'nda bir arabirim oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı ekleme bir [MFC uygulaması](../../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimini](../../mfc/reference/creating-an-mfc-activex-control.md).  
@@ -45,5 +46,5 @@ Bir MFC sınıfı kullanılabilir Tür Kitaplığı'nda bir arabirim oluşturmak
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon istemcileri](../../mfc/automation-clients.md)   
- [Otomasyon istemcileri: Tür kitaplıklarını kullanma](../../mfc/automation-clients-using-type-libraries.md)
+ [Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)
 

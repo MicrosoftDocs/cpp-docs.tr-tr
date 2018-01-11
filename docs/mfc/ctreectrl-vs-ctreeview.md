@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b5a0dfd4f7b658cc585972ace1335a80b9bbd93a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bb0c1b7a7bf73ab70bbccca6f2a9ccc2ab385516
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctreectrl-vs-ctreeview"></a>CTreeCtrl vs. CTreeView
 Ağaç denetimleri kapsülleyen iki sınıf MFC sağlar: [CTreeCtrl](../mfc/reference/ctreectrl-class.md) ve [CTreeView](../mfc/reference/ctreeview-class.md). Her sınıf farklı durumlarda yararlıdır.  
@@ -36,5 +37,5 @@ Ağaç denetimleri kapsülleyen iki sınıf MFC sağlar: [CTreeCtrl](../mfc/refe
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

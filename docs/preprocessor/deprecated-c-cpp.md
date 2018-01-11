@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d7ac32f7e1180836e5dabf9ca876d579f2f73f17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7ee6f8c77c1596789fcb731833a1fb432e77d7e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deprecated-cc"></a>deprecated (C/C++)
 **Kullanım dışı** gösteren bir işlev, tür veya başka bir tanımlayıcı artık bir gelecekte desteklenebilir olduğunu pragma sağlar serbest bırakma veya artık kullanılmalıdır.  
@@ -83,4 +84,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

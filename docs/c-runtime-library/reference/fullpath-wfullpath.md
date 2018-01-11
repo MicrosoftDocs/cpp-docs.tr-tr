@@ -41,11 +41,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a1cc6a80609828d084b56ef4f981c9d03de8070
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c96e806615d165bcdc3b5a5b89e4b8a966d8b1e7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fullpath-wfullpath"></a>_fullpath, _wfullpath
 Belirtilen göreli yol adı için bir mutlak veya tam yol adı oluşturur.  

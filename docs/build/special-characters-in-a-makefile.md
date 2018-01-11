@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 53b2457c87e587b4e1ef13e53bf2dfcdd4800d7f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6c574040d6004516682379a5e64b87c1b92388ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="special-characters-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Özel Karakterler
 NMAKE özel karakter harf karakter olarak kullanmak için önündeki şapka (^) yerleştirin. NMAKE diğer karakterlerden önce belirliyorsanız düzeltme işaretleri yoksayar. Özel karakterler şunlardır:  
@@ -38,4 +39,4 @@ NMAKE özel karakter harf karakter olarak kullanmak için önündeki şapka (^) 
  Bir komut değişmez değer bir karakteri olarak dolar işareti ($) kullanmak için iki dolar işareti ($$) belirtin. Bu yöntem, diğer durumlarda kullanılabilir olduğu ^ $ çalışır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası içeriği](../build/contents-of-a-makefile.md)
+ [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)

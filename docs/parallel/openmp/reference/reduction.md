@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 33c629253db2d891f5e52347db291a3eec00bd03
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67e8b7740c4e346b3e6a0751376c4cecb3437e82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reduction"></a>reduction
 Her iş parçacığı için özel bir veya daha fazla değişken azaltma işlemi paralel bölge sonundaki konu olduğunu belirtir.  
@@ -42,9 +43,9 @@ reduction(operation:var)
 ## <a name="remarks"></a>Açıklamalar  
  `reduction`Aşağıdaki yönergeleri için geçerlidir:  
   
--   [için](../../../parallel/openmp/reference/for-openmp.md)  
+-   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [Paralel](../../../parallel/openmp/reference/parallel.md)  
+-   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
 -   [bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
   
@@ -164,4 +165,4 @@ All of the the functions, func1 through func5 succeeded!
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

@@ -17,20 +17,21 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: df7c1681daf0f0ccae7d6307b2f6c000c01a313c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 734b118cfdd1523379e9fb1e5e157bf9da9824af
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="openmp-in-visual-c"></a>Visual C++'da OpenMP
 OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok işlemci kullanacak uygulamaları yazmanızı sağlar. Visual C++ OpenMP 2.0 standart destekler.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Yönergeleri](../../parallel/openmp/reference/openmp-directives.md)  
+ [Yönergeler](../../parallel/openmp/reference/openmp-directives.md)  
  OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.  
   
- [Yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md)  
+ [Yan Tümceler](../../parallel/openmp/reference/openmp-clauses.md)  
  OpenMP API çağrısında kullanılan yan tümceleri bağlantılar sağlar.  
   
  [Kitaplık Başvurusu](../../parallel/openmp/reference/openmp-library-reference.md)  
@@ -43,5 +44,5 @@ OpenMP C ve C++ uygulaması program arabirimi etkili bir şekilde birden çok i�
  [/ OpenMP (OpenMP 2.0 desteğini etkinleştir)](../../build/reference/openmp-enable-openmp-2-0-support.md)  
  İşlenecek derleyici neden `#pragma omp`.  
   
- [Önceden tanımlı makrolar](../../preprocessor/predefined-macros.md)  
+ [Önceden Tanımlanmış Makrolar](../../preprocessor/predefined-macros.md)  
  Önceden tanımlanmış ANSI C ve C++ Microsoft uygulaması makroları adları. _OPENMP makrosu bakın.

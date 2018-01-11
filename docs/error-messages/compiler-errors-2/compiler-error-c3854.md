@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 34285e8de195b2b7c516cf665f3b2cbf37039e6d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ed910ecf91642a6a1a1c5777be09b0251ddeda2d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3854"></a>Derleyici Hatası C3854
 '=' ın sol ifade bir işleve değerlendirir. (Bir işlev l-değeri değildir) bir işleve atayamazsınız.  

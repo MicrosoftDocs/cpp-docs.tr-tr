@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7b1e38a6ca424a71418790b18b3c115d12bb3065
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eeddfe4c67de2e96d42c7714619463ae3be45187
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Kalıcılığı ve Başlatmayı İyileştirme
 Varsayılan olarak, kalıcılığı ve başlatmayı denetiminde tarafından işlenen `DoPropExchange` üye işlevi. Tipik bir denetiminde birkaç çağrıları bu işlevi içeren **PX_** işlevleri (`PX_Color`, `PX_Font`, vb.), her bir özellik için bir tane.  
@@ -54,5 +55,5 @@ Varsayılan olarak, kalıcılığı ve başlatmayı denetiminde tarafından işl
  Ancak `Serialize` ve `OnResetState` geçersiz kılınmışsa, `DoPropExchange` işlevi saklanması sağlam özellik paketi biçiminde kalıcılığı için hala kullanıldığından. Üç bağımsız olarak hangi Kalıcılık düzeneğini kapsayıcı denetimi özelliklerini tutarlı olarak yönetir emin olmak için bu işlevlerin sağlamak önemlidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md)
+ [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

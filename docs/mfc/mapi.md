@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 505b9b16bb3c84e92a640f136c5aa58fdaaa13a5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de955ecc25137f5305806ca5ba03ed15930574dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapi"></a>MAPI
 Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygulama programlama arabirimi (MAPI) açıklanmaktadır. MFC sağlayan bir MAPI alt sınıfında desteği **CDocument** tüm API'larını değil ancak. Daha fazla bilgi için bkz: [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md).  
@@ -37,7 +38,7 @@ Bu makalede, istemci ileti uygulama geliştiricileri için Microsoft ileti uygul
  MAPI hakkında daha fazla bilgi için Windows SDK'ın altında Kılavuzu Win32 ileti (MAPI) içinde makalelerine bakın.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [MFC içinde MAPI desteği](../mfc/mapi-support-in-mfc.md)  
+ [MFC’de MAPI Desteği](../mfc/mapi-support-in-mfc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDocument::OnFileSendMail](../mfc/reference/cdocument-class.md#onfilesendmail)   

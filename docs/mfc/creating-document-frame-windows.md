@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25780092d11580225bef325c53e99c82263267b5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9098026c1a38f8e60093415ba1c5a2b3678b64d5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-document-frame-windows"></a>Belge Çerçeve Pencereleri Oluşturma
 [Belge/görünüm oluşturma](../mfc/document-view-creation.md) gösterir nasıl [CDocTemplate](../mfc/reference/cdoctemplate-class.md) nesne düzenler Çerçeve penceresi, belge ve görünüm oluşturma ve tüm birbirine bağlama. Üç [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) bağımsız değişkenleri `CDocTemplate` Oluşturucusu belirtin çerçeve penceresi, belge ve belge şablonu yanıt olarak yeni bir komut dosyasındaki gibi kullanıcı komutları dinamik olarak oluşturur. görünüm sınıfları menü veya bir MDI Pencere menüsünden Yeni Pencere komutu. Bir görünüm ve belge için bir çerçeve penceresi oluşturduğunda, belge şablonu daha sonra kullanmak için bu bilgileri depolar.  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/24/2017
 -   [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencerelerini kullanma](../mfc/using-frame-windows.md)
+ [Çerçeve Pencerelerini Kullanma](../mfc/using-frame-windows.md)
 

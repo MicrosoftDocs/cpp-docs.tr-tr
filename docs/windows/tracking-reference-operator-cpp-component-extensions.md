@@ -17,11 +17,14 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 733c99dc4895907ba943f32dc7048ce6cfc01528
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 71389a622b02d5c0379b2be1a91783e8235077bb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tracking-reference-operator-c-component-extensions"></a>İzleme Başvurusu İşleci (C++ Bileşen Uzantıları)
 A *izleme başvurusu* (`%`) normal bir C++ başvurusu gibi davranır (`&`) dışında bir nesne için izleme başvurusu atandığında, nesnenin başvuru sayısı artırılır.  
@@ -80,7 +83,7 @@ ref class Foo sealed {};
   
  C + başvuruları izleme hakkında daha fazla bilgi için +/ CLI, bkz:  
   
--   [Nasıl yapılır: C + başvuruları izleme kullanmak +/ CLI](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
+-   [Nasıl yapılır: C++/CLI Üzerinde İzleme Başvurularını Kullanma](../dotnet/how-to-use-tracking-references-in-cpp-cli.md)
   
 ### <a name="examples"></a>Örnekler  
  **Örnek**  
@@ -143,7 +146,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 21  

@@ -25,11 +25,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 790a47c8449694a6c82aa1f9564b1d935ef9e39e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e12c446ec97bc4cf9d2f2caff642b0ed6fb210d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="randomdevice-class"></a>random_device Sınıfı
 Dış bir aygıttan rastgele bir sıra oluşturur.  

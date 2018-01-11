@@ -23,11 +23,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58d1c1ec052c399cf56cd145e7ee06f52483661e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 451cc5690e871c1292f0a8ff2450eca950ada65b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cpaintdc-class"></a>CPaintDC sınıfı
 Bir cihaz bağlamı sınıfın türetildiği [CDC](../../mfc/reference/cdc-class.md).  
@@ -125,7 +126,7 @@ PAINTSTRUCT m_ps;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek MDI](../../visual-cpp-samples.md)   
  [CDC sınıfı](../../mfc/reference/cdc-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

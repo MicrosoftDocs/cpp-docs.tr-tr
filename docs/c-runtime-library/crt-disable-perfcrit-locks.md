@@ -19,11 +19,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bb9a5662b15e6e4d0b6df09520263528f9fa72c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07962266c94743968ff407aa5be78f66e189f6aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtdisableperfcritlocks"></a>_CRT_DISABLE_PERFCRIT_LOCKS
 Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırakır.  
@@ -38,4 +39,4 @@ Performans açısından kritik g/ç işlemlerinde kilitleme devre dışı bırak
  Bu simge tanımlama tek iş parçacıklı g/Ç-bağlı programlarda tek iş parçacıklı g/ç modeli varsaymak tüm g/ç işlemleri zorlayarak performansı artırabilir. Daha fazla bilgi için bkz: [birden çok iş parçacıklı kitaplık performansı](../c-runtime-library/multithreaded-libraries-performance.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

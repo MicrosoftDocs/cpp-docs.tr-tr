@@ -829,11 +829,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2a4fc6c962ffeaeb8c81da8053aeb2e96aad448c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0f1d622c2b10b9483a1c40a99bd4956ad24fa07f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 Microsoft Foundation Class Kitaplığı'ndaki tüm pencere sınıfları temel işlevselliğini sağlar.  
@@ -2328,7 +2329,7 @@ int DlgDirList(
   
  `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`  
   
- Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan ( ** \* **), herhangi bir sayıda karakter eşleşmesi anlamına gelir.  
+ Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan (  **\*** ), herhangi bir sayıda karakter eşleşmesi anlamına gelir.  
   
  İçin 0 uzunlukta bir dize belirtirseniz `lpPathSpec`, veya yalnızca bir dizin adı belirtin, ancak hiçbir dosya belirtimi dahil etmeyin, dize olacak şekilde değiştirilecek "*.\*".  
   
@@ -2391,7 +2392,7 @@ int DlgDirListComboBox(
   
  `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`  
   
- Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan ( ** \* **), herhangi bir sayıda karakter eşleştirilmez.  
+ Bu örnekte, `drive` bir sürücü harfi `directory` geçerli dizin adı ve *filename* en az bir joker karakter içermelidir geçerli bir dosya adı. Herhangi bir karakter ve bir yıldız işareti aynı anlamı bir soru işareti (*) joker karakter olan (  **\*** ), herhangi bir sayıda karakter eşleştirilmez.  
   
  Sıfır uzunlukta bir dize için belirtirseniz `lpPathSpec`, geçerli dizin kullanılır ve `lpPathSpec` değiştirilmeyecek. Yalnızca bir dizin adı belirtin, ancak hiçbir dosya belirtimi dahil etmeyin, dize olacak şekilde değiştirilecek "*".  
   
@@ -4828,7 +4829,7 @@ void AFX_CDECL InvokeHelper(
  Belirtilen türlerinin parametrelerin değişken listesi `pbParamInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `pbParamInfo` Parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen *... * sözdizimi bildirimi.  
+ `pbParamInfo` Parametresi, yöntemi veya özelliği için geçirilen parametre türlerini belirtir. Bağımsız değişken listesi tarafından temsil edilen *...*  sözdizimi bildirimi.  
   
  Bu işlev parametreleri dönüştürür **VARIANTARG** değerleri sonra çağırır **IDispatch::Invoke** ActiveX denetimi yöntemi. Varsa çağrısı **IDispatch::Invoke** başarısız olursa, bu işlev throw bir özel durum. Varsa `SCODE` (durum kodu) tarafından döndürülen **IDispatch::Invoke** olan `DISP_E_EXCEPTION`, bu işlev oluşturur bir [COleException](../../mfc/reference/coleexception-class.md) onu oluşturur nesnesi, aksi takdirde bir [ COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
@@ -5103,10 +5104,10 @@ int MessageBox(
   
 |||  
 |-|-|  
-|![Stop & #40; x & #41; simge](../../mfc/reference/media/vc364f1.gif "vc364f1")|**MB_ICONHAND**, **mb_ıconstop**, ve **MB_ICONERROR**|  
-|![Yardım & #40; & #41; simge](../../mfc/reference/media/vc364f2.gif "vc364f2")|**MB_ICONQUESTION**|  
-|![Önemli & #40; & #33; & #41; simge](../../mfc/reference/media/vc364f3.gif "vc364f3")|**Mb_ıconexclamatıon** ve **MB_ICONWARNING**|  
-|![Bilgi & #40; i & #41; simge](../../mfc/reference/media/vc364f4.gif "vc364f4")|**MB_ICONASTERISK** ve **mb_ıconınformatıon**|  
+|![Stop &#40; x &#41; simge](../../mfc/reference/media/vc364f1.gif "vc364f1")|**MB_ICONHAND**, **mb_ıconstop**, ve **MB_ICONERROR**|  
+|![Yardım &#40; &#41; simge](../../mfc/reference/media/vc364f2.gif "vc364f2")|**MB_ICONQUESTION**|  
+|![Önemli &#40; &#33; &#41; simge](../../mfc/reference/media/vc364f3.gif "vc364f3")|**Mb_ıconexclamatıon** ve **MB_ICONWARNING**|  
+|![Bilgi &#40; i &#41; simge](../../mfc/reference/media/vc364f4.gif "vc364f4")|**MB_ICONASTERISK** ve **mb_ıconınformatıon**|  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#104](../../mfc/reference/codesnippet/cpp/cwnd-class_44.cpp)]  
@@ -5135,7 +5136,7 @@ BOOL ModifyStyle(
  Stil başarıyla değiştirilirse sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (& #124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sındaki.  
+ Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sındaki.  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyle` Windows API işlev çağrılarını [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört hazır bayraklarla:  
   
@@ -5179,7 +5180,7 @@ BOOL ModifyStyleEx(
  Stil başarıyla değiştirilirse sıfır olmayan; Aksi takdirde, 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR (& #124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) bu kitaptaki ve [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki stilleri genişletilmiş  
+ Bit düzeyinde OR (&#124;) kullanarak eklendiğinde veya kaldırıldığında stiller birleştirilebilir işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) bu kitaptaki ve [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki stilleri genişletilmiş  
   
  Varsa `nFlags` sıfır olmayan, olan `ModifyStyleEx` Windows API işlev çağrılarını [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencere birleştirerek yeniden çizer `nFlags` aşağıdaki dört hazır bayraklarla:  
   
@@ -7875,7 +7876,7 @@ afx_msg void OnPaint();
   
  Tüm gerekli iç yeniden çizerken veya her biri için kendi iç veri yapıları bakarak güncelleştirme olup olmadığını denetlemek için bir uygulamanın sorumluluğu olan `WM_PAINT` olduğundan ileti bir `WM_PAINT` iletisi Bunun nedeni geçersiz bir alanı ve bir çağrı tarafından `RedrawWindow` üye işleviyle **RDW_INTERNALPAINT** bayrağı ayarlanmış.  
   
- Bir iç `WM_PAINT` ileti Windows tarafından yalnızca bir kez gönderilir. Bir iç sonra `WM_PAINT` ileti bir pencere tarafından gönderildiği `UpdateWindow` üye işlevi, başka `WM_PAINT` gönderilen veya pencere geçersiz kadar veya kadar gönderilen iletileri `RedrawWindow` üye işlevi ile tekrarçağrılır** RDW_INTERNALPAINT** bayrağı ayarlanmış.  
+ Bir iç `WM_PAINT` ileti Windows tarafından yalnızca bir kez gönderilir. Bir iç sonra `WM_PAINT` ileti bir pencere tarafından gönderildiği `UpdateWindow` üye işlevi, başka `WM_PAINT` gönderilen veya pencere geçersiz kadar veya kadar gönderilen iletileri `RedrawWindow` üye işlevi ile tekrarçağrılır **RDW_INTERNALPAINT** bayrağı ayarlanmış.  
   
  Belge/görünüm uygulamalarında bir görüntü oluşturma hakkında daha fazla bilgi için bkz: [CView::OnDraw](../../mfc/reference/cview-class.md#ondraw).  
   
@@ -8870,7 +8871,7 @@ virtual INT_PTR OnToolHitTest(
   
 - `uId` = **(UINT) hWndChild** işlemek için bir alt pencere  
   
-- `uFlags`& #124; = **TTF_IDISHWND** aracı tanıtıcısı  
+- `uFlags`&#124; = **TTF_IDISHWND** aracı tanıtıcısı  
   
 - `lpszText` = **LPSTR_TEXTCALLBACK** belirtilen penceresinde görüntülenecek dize işaretçi  
   
@@ -11136,4 +11137,4 @@ virtual void ResizeDynamicLayout();
  [CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)   
- [CView sınıfı](../../mfc/reference/cview-class.md)
+ [CView Sınıfı](../../mfc/reference/cview-class.md)

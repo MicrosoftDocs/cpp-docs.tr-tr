@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: daffef64ab4c212a9688b05e450f226519869f7d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 851776be55ce485d660aa46f4338235c3a1a413a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="typedef-declarations"></a>Typedef Bildirimleri
 Typedef bildirimiyle depolama sınıfı olarak typedef bildirimidir. Yeni bir tür bildirimcisi olur. Typedef bildirimleri daha kısa ya da daha anlamlı adları zaten C tarafından tanımlanan türlerin veya bildirilen türleri oluşturmak için kullanabilirsiniz. TypeDef adları değişebilir uygulama ayrıntılarını kapsülleyen olanak sağlar.  
@@ -47,15 +48,15 @@ Typedef bildirimiyle depolama sınıfı olarak typedef bildirimidir. Yeni bir t�
   
  **char**  
   
- **kısa**  
+ **short**  
   
  **int**  
   
- **uzun**  
+ **long**  
   
- **kayan nokta**  
+ **float**  
   
- **çift**  
+ **double**  
   
  **İmzalı**  
   

@@ -27,11 +27,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d079edd919d54149b527330a7a3cb49fa496f676
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 77d73ef71854753ffd561053cc71509c7654d33b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>Internet İstemci Sınıfları için Önkoşullar
 (Örneğin bir dosya okuma) bir Internet istemcisi tarafından yapılan bazı eylemler önkoşul eylemleri (bir Internet bağlantısı kurmadan bu durumda,) sahip. Aşağıdaki tablolar, bazı istemci eylemleri için önkoşulları listeler.  
@@ -81,4 +82,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
  [Internet istemci uygulamaları oluşturmak için MFC sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)   
- [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+ [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

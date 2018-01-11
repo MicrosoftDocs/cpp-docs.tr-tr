@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a77f769aed208c557b72e12572d170482d2538ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 81d2988742eb9e8cd6aef134510ac8272d3dd27c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk1188"></a>Bağlayıcı Araçları Hatası LNK1188
 BADFIXUPSECTION:: Geçersiz düzeltmesi hedef 'simge'; olası sıfır uzunluk bölümü  

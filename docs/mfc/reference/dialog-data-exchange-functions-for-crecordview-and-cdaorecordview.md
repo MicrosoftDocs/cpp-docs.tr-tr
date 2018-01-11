@@ -31,11 +31,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 69c70c42a2b4c83933464249a1096339cf1eb98f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f58b7ba7ae51c4db065cd7b30cc233128f7b7c68
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu arasında veri değişimi için kullanılan DDX_Field işlevleri listeler bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecordView](../../mfc/reference/crecordview-class.md) form veya bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ve [ CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) formu.  
@@ -126,7 +127,7 @@ void AFXAPI DDX_FieldCBString(
  `nIDC`  
  Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -169,7 +170,7 @@ void AFXAPI DDX_FieldCBStringExact(
  `nIDC`  
  Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -212,7 +213,7 @@ void AFXAPI DDX_FieldCheck(
  `nIDC`  
  Denetim özellik ile ilişkilendirilmiş onay kutusu denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
  `pRecordset`  
@@ -293,7 +294,7 @@ void AFXAPI DDX_FieldLBString(
  `nIDC`  
  Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -336,7 +337,7 @@ void AFXAPI DDX_FieldLBStringExact(
  `nIDC`  
  Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -379,7 +380,7 @@ void AFXAPI DDX_FieldRadio(
  `nIDC`  
  İlk Kimliğini gruptaki (stiliyle **WS_GROUP**) bitişik radyo düğmesi denetimlerin [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -422,7 +423,7 @@ void AFXAPI DDX_FieldScroll(
  *nIDC\**  
  İlk Kimliğini gruptaki (stiliyle **WS_GROUP**) bitişik radyo düğmesi denetimlerin [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi.  
   
  `pRecordset`  
@@ -465,7 +466,7 @@ void AFXAPI DDX_FieldSlider(
  `nIDC`  
  Kaydırıcı denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  Değiştirilebilmesi için değeri referansı. Bu parametre tutan veya kaydırıcı denetimin geçerli kaydırma konumunu ayarlamak için kullanılır.  
   
  `pRecordset`  
@@ -609,7 +610,7 @@ void AFXAPI DDX_FieldText(
  `nIDC`  
  Bir denetimin kimliği [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
- *değer*  
+ *value*  
  Alan veri üyesi ilişkili başvuru `CRecordset` veya `CDaoRecordset` nesnesi. Değerin veri türü bağımlı olduğu aşırı yüklenmiş sürümlerinin `DDX_FieldText` kullanın.  
   
  `pRecordset`  

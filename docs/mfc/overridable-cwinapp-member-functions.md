@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3de4444aaeb55ab30ec6ce7e0ebd187c8468f673
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 64775ad9f44c55529107b50d0695e95e2b9c3a2f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overridable-cwinapp-member-functions"></a>Geçersiz Kılınabilir CWinApp Üye İşlevleri
 [CWinApp](../mfc/reference/cwinapp-class.md) birkaç anahtar geçersiz kılınabilir üye işlevleri sağlar (`CWinApp` sınıfından bu üyeleri geçersiz kılar [CWinThread](../mfc/reference/cwinthread-class.md), içinden `CWinApp` türetilen):  
@@ -38,4 +39,4 @@ ms.lasthandoff: 10/24/2017
  Yalnızca `CWinApp` geçersiz kılmanız gerekir üye işlevi `InitInstance`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CWinApp: Uygulama sınıfı](../mfc/cwinapp-the-application-class.md)
+ [CWinApp: Uygulama Sınıfı](../mfc/cwinapp-the-application-class.md)

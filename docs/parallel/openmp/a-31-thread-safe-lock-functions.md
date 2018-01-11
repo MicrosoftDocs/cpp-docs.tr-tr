@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a7572fd7e112c739119e58cd5403058bb99a4026
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 34a1d9b2a923af68bb63fb29a7031a7efa433a26
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a31---thread-safe-lock-functions"></a>A.31   İş Parçacığı Güvenli Kilit İşlevleri
 Aşağıdaki C++ örneğinde kilitleri paralel bir bölgede bir dizi kullanarak başlatmak gösterilmiştir `omp_init_lock` ([bölüm 3.2.1](../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md) sayfasında 42).  

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 302cd7ebd45e14c3e50d79f2665e68616a7b4503
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a9e9feb55a9d795102a7fe6760a8a6cdccc4ba4a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adoptlockt-structure"></a>adopt_lock_t Yapısı
 Tanımlamak için kullanılan bir türü temsil eden bir [adopt_lock](../standard-library/mutex-functions.md#adopt_lock).  

@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ec4b281812f66ba54d73866bce3b907d26a8ceb5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e085c6d9e4d030c8db44e11e570ffa1033abee35
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="user-interface-objects-and-command-ids"></a>Kullanıcı Arabirimi Nesneleri ve Komut Kimlikleri
 Menü öğeleri, araç çubuğu düğmeleri ve Hızlandırıcı tuşları olan "kullanıcı arabirimi nesneleri" komutları oluşturma yeteneği. Böyle bir kullanıcı arabirimi nesne her bir kimliği vardır. Bir kullanıcı arabirimi nesnesi nesne ve komutu aynı kimliği atayarak komutu ile ilişkilendirin. İçinde anlatıldığı gibi [iletileri](../mfc/messages.md), komutları, özel iletileri olarak uygulanır. "Komutları içinde Framework" Aşağıda şekil framework komutları nasıl yönettiğini gösterir. Bir kullanıcı arabirimi nesnesi oluşturduğunda bir komut gibi `ID_EDIT_CLEAR_ALL`, uygulamanızda nesnelerden işleme komutu — Aşağıda, belge nesnesinin şekildeki `OnEditClearAll` işlevi, belgenin ileti eşlemesi çağrılır.  
@@ -40,5 +41,5 @@ Framework'te komutları
 Komutunu Framework güncelleştiriliyor  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md)
+ [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

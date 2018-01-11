@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 08165d5e6308697ec75a6d03751b26fb626dbb15
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2d9b7ce4895d51c50185c5262664dc478af62cfa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="declarators-and-variable-declarations"></a>Bildirimler ve Değişken Bildirimleri
 Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildirimleri anlamını açıklar. Özellikle, kalan bölümleri aşağıdaki bildirme açıklamaktadır:  
@@ -32,7 +33,7 @@ Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildir
 |[Diziler](../c-language/array-declarations.md)|Aynı türde öğe koleksiyonunu oluşan değişkenleri|  
 |[İşaretçiler](../c-language/pointer-declarations.md)|Diğer değişkenlere işaret eden ve değerleri yerine (adresleri biçiminde) değişken konumlarını içeren değişkenleri|  
 |[Numaralandırma değişkenleri](../c-language/c-enumeration-declarations.md)|İntegral basit değişkenlerle adlandırılmış tamsayı sabitleri kümesinden bu tutun bir değer yazın|  
-|[Yapıları](../c-language/structure-declarations.md)|Farklı türe sahip değerleri koleksiyonunu oluşan değişkenleri|  
+|[Yapılar](../c-language/structure-declarations.md)|Farklı türe sahip değerleri koleksiyonunu oluşan değişkenleri|  
 |[Birleşimler](../c-language/union-declarations.md)|Aynı depolama alanı kaplar farklı türlerde birkaç değerlerinden oluşan değişkenleri|  
   
  Bir bildirimcisi programa sunulması adını belirten bir bildirim parçasıdır. Değiştiriciler gibi içerebilir  **\***  (işaretçi-için) ve Microsoft çağırma kuralı anahtar sözcükler.  
@@ -94,4 +95,4 @@ int *aptr[10] // Declares an array of 10 pointers
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve türler](../c-language/declarations-and-types.md)
+ [Bildirimler ve Türler](../c-language/declarations-and-types.md)

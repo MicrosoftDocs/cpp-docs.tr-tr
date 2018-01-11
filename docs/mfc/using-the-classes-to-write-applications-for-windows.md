@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 90790e12d2137324c4d641f1beac6c5cae0cff31
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a8edcabee2f835bd3a3acd0ff3789690764c397
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-classes-to-write-applications-for-windows"></a>Windows Uygulamaları Yazmak için Sınıfları Kullanma
 Birlikte ele alındığında, "Windows işletim sistemi için uygulama derleme bir uygulama çerçevesi," Microsoft Foundation Class (MFC) Kitaplığı'nda sınıfları oluşturur. Bir çok genel düzeyde framework uygulamanın çatıyı tanımlar ve çatıyı yerleştirilebilir standart kullanıcı arabirimi uygulamalarını sağlar. İşinizi Programcı olarak çatıyı geri kalanı uygulamanıza özgü olan şeyi olduğu doldurmaktır. Bir başlangıç dosyalarını çok kapsamlı başlangıç uygulaması oluşturmak için MFC Uygulama Sihirbazı'nı kullanarak alabilirsiniz. Microsoft Visual C++ kaynak düzenleyicileri sınıfı görünüm komutları kod ve sınıf kitaplığı konusu öğelerin bağlanmak için kullanıcı arabirimi öğeleri görsel olarak tasarlamak için uygulamaya özgü mantığını uygulamak için kullanın.  
@@ -55,19 +56,19 @@ Birlikte ele alındığında, "Windows işletim sistemi için uygulama derleme b
   
 -   [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)  
   
--   [İletişim kutuları](../mfc/dialog-boxes.md)  
+-   [İletişim Kutuları](../mfc/dialog-boxes.md)  
   
--   [Denetimleri](../mfc/controls-mfc.md)  
+-   [Denetimler](../mfc/controls-mfc.md)  
   
--   [Denetim çubukları](../mfc/control-bars.md)  
+-   [Denetim Çubukları](../mfc/control-bars.md)  
   
 -   [OLE](../mfc/ole-in-mfc.md)  
   
--   [Bellek yönetimi](../mfc/memory-management.md)  
+-   [Bellek Yönetimi](../mfc/memory-management.md)  
   
      Windows işletim sistemi için uygulamalar yazma bir avantajı vermiş yanı sıra, MFC de özellikle bağlama ve katıştırma teknolojisi OLE kullanan uygulamalar yazmak kolaylaşır. Uygulamanızı bir OLE görsel kapsayıcı, OLE görsel düzenleme sunucusu ya da her ikisini de düzenleme yapabileceğiniz ve böylece diğer uygulamaları nesneleri uygulamanızdan kullanın veya hatta uzaktan sürücü Otomasyon ekleyebilirsiniz.  
   
--   [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)  
+-   [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)  
   
      OLE denetim Geliştirme Seti (CDK) şimdi framework ile tamamen tümleşiktir. Bu makale ailesi ile MFC ActiveX denetimi geliştirme genel bir bakış sağlar. (ActiveX denetimlerini önceden OLE denetimleri bilinirdi.)  
   
@@ -80,5 +81,5 @@ Birlikte ele alındığında, "Windows işletim sistemi için uygulama derleme b
  MFC belge genel bir kılavuzu için bkz [genel MFC konuları](../mfc/general-mfc-topics.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

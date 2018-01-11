@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 906ab5406fb6ccfb8905c3cf76ae6968ef0979da
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f42efd011dfe5938eb455c885c6aa2c458910dfa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="subsystem"></a>/SUBSYSTEM
 Yürütülebilir görüntü tarafından gerekli yürütme ortamı belirtir.  
@@ -72,4 +73,4 @@ Yürütülebilir görüntü tarafından gerekli yürütme ortamı belirtir.
  Her alt birincil ve ikincil sürüm numaraları için minimum ve varsayılan değerler dahil olmak üzere daha fazla bilgi için bkz: [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

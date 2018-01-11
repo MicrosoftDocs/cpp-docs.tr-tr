@@ -29,11 +29,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 45afb51048b8bb98b8cea7f5ff28d9d475e8acfc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a50dd19b15e9510bd5d1ca504209caecaf195fc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbongallerymenubutton-class"></a>CMFCRibbonGalleryMenuButton sınıfı
 Şerit galerileri içeren Şerit menü düğmesi uygular.  
@@ -206,4 +207,4 @@ virtual BOOL IsEmptyMenuAllowed() const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md)   
- [CMFCRibbonGallery sınıfı](../../mfc/reference/cmfcribbongallery-class.md)
+ [CMFCRibbonGallery Sınıfı](../../mfc/reference/cmfcribbongallery-class.md)

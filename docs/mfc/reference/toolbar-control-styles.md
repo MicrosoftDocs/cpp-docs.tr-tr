@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 426620f5c4282858d28e80494c1f2a53a3da0fa3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9d81be893ce84da24b3a30518219ee1f6fd10057
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toolbar-control-styles"></a>ToolBar Denetim Stilleri
 [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) görünümünü belirleyen stili bayrakları kümesi ve düğme davranışını sahiptir. Bu bayrak birleşimi çağırarak ayarlayabileceğiniz [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle). Bu konu, stil bayrak değerleri ve anlamlarını listeler.  
@@ -71,6 +72,6 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)   
  [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md)   
- [Seri hale getirme Yöneticisi](../../mfc/visualization-manager.md)
+ [Seri Hale Getirme Yöneticisi](../../mfc/visualization-manager.md)
 
 

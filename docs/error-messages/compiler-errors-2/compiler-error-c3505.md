@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 47ca6c4e8e8c01e97ed0098c84c8ea8c64f387a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f7b13350ea7a2ffaf232e990bd3ade42d0c44a6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3505"></a>Derleyici Hatası C3505
 
@@ -31,6 +32,6 @@ Tür kitaplığı içeri aktarmayı denediğiniz 32-bit ve 64 bit sürümlerini 
   
 Daha fazla bilgi için bkz:  
   
--   [Nasıl yapılır: bir 64 Bit Visual C++ araç komut satırında etkinleştir](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)  
+-   [Nasıl yapılır: Komut Satırında 64 Bit Visual C++ Araç Takımını Etkinleştirme](../../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)  
   
--   [Nasıl yapılır: 64 Bit hedeflemek için Visual C++ projeleri x64 yapılandırma platformları](../../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+-   [Nasıl Yapılır: Visual C++ Projelerinin 64 Bit, x64 Platformları Hedeflemesi için Yapılandırma](../../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)

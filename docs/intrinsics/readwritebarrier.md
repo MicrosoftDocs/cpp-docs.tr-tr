@@ -17,11 +17,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 50f58a23f1e2f0fde4a21a4eba64795c8de97629
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2235c2089dd23a0572e960b995958c9e1740e108
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="readwritebarrier"></a>_ReadWriteBarrier
 **Microsoft özel**  
@@ -54,4 +55,4 @@ void _ReadWriteBarrier(void);
  [_ReadBarrier](../intrinsics/readbarrier.md)   
  [_WriteBarrier](../intrinsics/writebarrier.md)   
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

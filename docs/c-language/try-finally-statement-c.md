@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c76062799a0939ad86556c8e6718e94f2a3397e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 82e8f55d927edbad4812e23b96ad806510d39b85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="try-finally-statement-c"></a>try-finally Deyimi (C)
 **Microsoft özel**  
@@ -61,4 +62,4 @@ ms.lasthandoff: 10/24/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [try-finally deyimi](../cpp/try-finally-statement.md)
+ [try-finally Deyimi](../cpp/try-finally-statement.md)

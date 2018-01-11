@@ -83,11 +83,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92d2567a3f4754413c51c75b1c18b0a031e343d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3145aa734b37a965430810727962f3f13e5fe49f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="norm3-class"></a>norm_3 Sınıfı
 Kısa bir vektör üç normal sayıların temsil eder.  
@@ -287,4 +288,4 @@ static const int size = 3;
 ```   
  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12cb2f9ab7c69d8c120c1870c5cd97cbc59cf32e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36af37fae778a572d790a137073c62cfde22019c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cnoworkerthread-class"></a>CNoWorkerThread sınıfı
 Bu sınıf için bağımsız değişken olarak kullanma `MonitorClass` dinamik önbellek bakım devre dışı bırakmak istiyorsanız önbellek sınıflarına şablon parametresi.  

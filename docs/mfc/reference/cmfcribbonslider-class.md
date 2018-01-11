@@ -41,11 +41,12 @@ caps.latest.revision: "43"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9a6f18284329db36d163dc21b687c5f8d7cce7c8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e485afac346be1f21a0b3088367be5b9bf02e2ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 `CMFCRibbonSlider` Sınıfı bir Şerit çubuğu veya Şerit durum çubuğu ekleyebileceğiniz kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi Office 2007 uygulamalarda görünür yakınlaştırma kaydırıcılar benzer.  
@@ -257,4 +258,4 @@ void SetZoomIncrement(int nZoomIncrement);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCRibbonBaseElement sınıfı](../../mfc/reference/cmfcribbonbaseelement-class.md)
+ [CMFCRibbonBaseElement Sınıfı](../../mfc/reference/cmfcribbonbaseelement-class.md)

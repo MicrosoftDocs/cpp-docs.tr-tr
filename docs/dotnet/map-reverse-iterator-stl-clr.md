@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3334a2104a4ecf5f80fca89994cf6009f4a52ae7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 18fb2c9de7e3d9c9636d52e7f6fc2b67abeb9bca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapreverseiterator-stlclr"></a>map::reverse_iterator (STL/CLR)
 Denetimli sırası için ters yineleyici türü.  
@@ -71,4 +74,4 @@ int main()
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::const_iterator (STL/CLR)](../dotnet/map-const-iterator-stl-clr.md)   
  [Map::const_reverse_iterator (STL/CLR)](../dotnet/map-const-reverse-iterator-stl-clr.md)   
- [Map::iterator (STL/CLR)](../dotnet/map-iterator-stl-clr.md)
+ [map::iterator (STL/CLR)](../dotnet/map-iterator-stl-clr.md)

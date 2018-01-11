@@ -44,11 +44,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6e1b8dd85a8ddbfbf64af000eee8cacca26bf1ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad76dd59e0119e46030eb19223d678927b3fd077
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="splitpath-wsplitpath"></a>_splitpath, _wsplitpath
 Bir yol adı bileşenlerine bölün. Bu işlevlerin daha güvenli sürümü, bkz: [_splitpath_s, _wsplitpath_s](../../c-runtime-library/reference/splitpath-s-wsplitpath-s.md).  

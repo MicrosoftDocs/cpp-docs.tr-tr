@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6ff141818e05f9b5b36b6d0cfc5a58170fa97ab0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01d364313420c0a950f8eba222e3ae020fbd86cf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer Form (BNF) sözdizimi anlama
 ATL Kaydedicisi tarafından kullanılan komut aşağıdaki tabloda gösterilen gösterimi kullanan BNF sözdizimini kullanarak bu konuda açıklanmaktadır.  
@@ -107,5 +108,5 @@ val 'testhex' = d '&H55'
  belirleyen anahtar adı `testhex` olan bir **DWORD** değerini onaltılık 55 (ondalık 85) ayarlayın. Bu biçim aynılarını için Not **& H** gösterimi olarak Visual Basic belirtiminde bulundu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaydedici betikleri oluşturma](../atl/creating-registrar-scripts.md)
+ [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)
 

@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 04c76cee41a6cf79379b65a276f24d56f7090b98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e5526b0f8826a91eb0b1c5a6eae250abbb02fcf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-callback-fields-in-a-date-and-time-picker-control"></a>Bir Tarih ve Saat Seçici Denetiminde Geri Çağrı Alanlarını Kullanma
 Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek olarak, özel bir biçim dizesi belirli bölümlerini geri arama alanları belirterek, çıktı özelleştirebilirsiniz. Bir geri çağırma alanı bildirmek için bir veya daha fazla "X" karakter (ASCII kodu 88) herhangi bir yere biçim dizesi gövdesinde içerir. Örneğin, aşağıdaki dizeyi "' Bugün: 'yy' / 'MM' / 'dd' (gün 'X')'" ay, tarih ve yılın günü tarafından son ardından yıl geçerli değerini görüntülemek tarih ve Saat Seçici denetimini neden olur.  
@@ -75,5 +76,5 @@ Tarih ve Saat Seçici alanlarını tanımlayan standart biçimi karakterler ek o
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDateTimeCtrl kullanma](../mfc/using-cdatetimectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

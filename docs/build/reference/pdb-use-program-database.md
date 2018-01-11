@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0ea27dd7106e8490e9ba8ec9eacdcbbb02d33036
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9b8b255e88a199397463d26d408d425234571552
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pdb-use-program-database"></a>/PDB (Program Veritabanını Kullan)
 ```  
@@ -64,4 +65,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

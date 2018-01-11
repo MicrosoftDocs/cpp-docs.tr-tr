@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65d2161edc4b2aa03cd547467ca0f38158850051
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5c1b0e762ec2167a988e8e18f3dce932214716c9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recommended-tags-for-documentation-comments-visual-c"></a>Belge Açıklamaları için Önerilen Etiketler (Visual C++)
 Visual C++ Derleyici, kodundaki belge açıklamaları işler ve her derlenecek dosya için bir .xdc dosyası oluşturur ve xdcmake.exe bir .xml dosyasına .xdc dosyaları işler. Belgeleri oluşturmak için .xml dosyası işleme sitenizde uygulanması gereken bir ayrıntı yoktur.  
@@ -45,4 +46,4 @@ Visual C++ Derleyici, kodundaki belge açıklamaları işler ve her derlenecek d
  Geçerli sürümde, Visual C++ derleyicisi desteklemediği `<paramref>`, diğer Visual Studio derleyicileri tarafından desteklenen bir etiket. Visual C++ destekleyebilir `<paramref>` gelecek bir sürümde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

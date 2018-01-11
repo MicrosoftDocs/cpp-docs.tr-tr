@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 33467ac3a4397c3f446abe370dca5dc16c1a92ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc28de10a2a0d53ee87920d511ea894ad517a79a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
 **Microsoft özel**  
@@ -119,4 +120,4 @@ result3 = 0x30eca86
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)   
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
+ [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

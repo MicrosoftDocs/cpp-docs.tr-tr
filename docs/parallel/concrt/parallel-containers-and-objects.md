@@ -17,11 +17,12 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 695e3e07af26c709dadc70935e1e4d72705ecab8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9159b9c8170ee73afd8bee5305506a842368a231
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğelerini iş parçacığı açısından güvenli erişim sağlayan nesneleri içerir.  
@@ -35,7 +36,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
  Eş zamanlı kapsayıcılar:  
   
--   [concurrent_vector sınıfı](#ctor)  
+-   [concurrent_vector Sınıfı](#ctor)  
   
     -   [Concurrent_vector arasındaki farklar ve vektör](#ctor)  
   
@@ -43,7 +44,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
     -   [Özel durum güvenliği](#ctor)  
   
--   [concurrent_queue sınıfı](#queue)  
+-   [concurrent_queue Sınıfı](#queue)  
   
     -   [Concurrent_queue arasındaki farklar ve sıra](#queue-differences)  
   
@@ -51,21 +52,21 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
     -   [Yineleyici desteği](#queue-iterators)  
   
--   [concurrent_unordered_map sınıfı](#unordered_map)  
+-   [concurrent_unordered_map Sınıfı](#unordered_map)  
   
     -   [Concurrent_unordered_map arasındaki farklar ve unordered_map](#map-differences)  
   
     -   [Eşzamanlılık uyumlu işlemler](#map-safety)  
   
--   [concurrent_unordered_multimap sınıfı](#unordered_multimap)  
+-   [concurrent_unordered_multimap Sınıfı](#unordered_multimap)  
   
--   [concurrent_unordered_set sınıfı](#unordered_set)  
+-   [concurrent_unordered_set Sınıfı](#unordered_set)  
   
--   [concurrent_unordered_multiset sınıfı](#unordered_multiset)  
+-   [concurrent_unordered_multiset Sınıfı](#unordered_multiset)  
   
  Eşzamanlı nesneler:  
   
--   [combinable sınıfı](#combinable)  
+-   [combinable Sınıfı](#combinable)  
   
     -   [Yöntemleri ve özellikleri](#combinable-features)  
   
@@ -163,7 +164,7 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
   
 |||  
 |-|-|  
-|[boş](reference/concurrent-queue-class.md#empty)|[anında iletme](reference/concurrent-queue-class.md#push)|  
+|[boş](reference/concurrent-queue-class.md#empty)|[push](reference/concurrent-queue-class.md#push)|  
 |[get_allocator](reference/concurrent-queue-class.md#get_allocator)|[try_pop](reference/concurrent-queue-class.md#try_pop)|  
 
 
@@ -298,36 +299,36 @@ Paralel Desen kitaplığı (PPL) birkaç kapsayıcıları ve bunların öğeleri
 ###  <a name="combinable-examples"></a>Örnekler  
  Kullanımıyla ilgili örnekler için `combinable` sınıfında, aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)  
+-   [Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)  
   
--   [Nasıl yapılır: kümeleri birleştirmek için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)  
+-   [Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)  
   
  [[Üst](#top)]  
   
 ## <a name="related-topics"></a>İlgili Konular  
- [Nasıl yapılır: etkinliği arttırmak için paralel kapsayıcılar kullanma](../../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md)  
+ [Nasıl yapılır: Etkinliği Arttırmak için Paralel Kapsayıcılar Kullanma](../../parallel/concrt/how-to-use-parallel-containers-to-increase-efficiency.md)  
  Paralel kapsayıcılar verimli bir şekilde depolamak ve paralel verilere erişmek için nasıl kullanılacağını gösterir.  
   
- [Nasıl yapılır: performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)  
+ [Nasıl yapılır: Performansı arttırmak için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)  
  Nasıl kullanılacağını gösterir `combinable` paylaşılan durum ortadan kaldırmak için sınıf ve böylece performansı.  
   
- [Nasıl yapılır: kümeleri birleştirmek için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)  
+ [Nasıl yapılır: Kümeleri Birleştirmek için combinable Kullanma](../../parallel/concrt/how-to-use-combinable-to-combine-sets.md)  
  Nasıl kullanılacağını gösteren bir `combine` iş parçacığı yerel veri kümelerinin birleştirmek için işlevi.  
   
- [Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)  
+ [Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)  
  Ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modelidir PPL açıklar.  
   
 ## <a name="reference"></a>Başvuru  
- [concurrent_vector sınıfı](../../parallel/concrt/reference/concurrent-vector-class.md)  
+ [concurrent_vector Sınıfı](../../parallel/concrt/reference/concurrent-vector-class.md)  
   
- [concurrent_queue sınıfı](../../parallel/concrt/reference/concurrent-queue-class.md)  
+ [concurrent_queue Sınıfı](../../parallel/concrt/reference/concurrent-queue-class.md)  
   
- [concurrent_unordered_map sınıfı](../../parallel/concrt/reference/concurrent-unordered-map-class.md)  
+ [concurrent_unordered_map Sınıfı](../../parallel/concrt/reference/concurrent-unordered-map-class.md)  
   
- [concurrent_unordered_multimap sınıfı](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md)  
+ [concurrent_unordered_multimap Sınıfı](../../parallel/concrt/reference/concurrent-unordered-multimap-class.md)  
   
- [concurrent_unordered_set sınıfı](../../parallel/concrt/reference/concurrent-unordered-set-class.md)  
+ [concurrent_unordered_set Sınıfı](../../parallel/concrt/reference/concurrent-unordered-set-class.md)  
   
- [concurrent_unordered_multiset sınıfı](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md)  
+ [concurrent_unordered_multiset Sınıfı](../../parallel/concrt/reference/concurrent-unordered-multiset-class.md)  
   
- [combinable sınıfı](../../parallel/concrt/reference/combinable-class.md)
+ [combinable Sınıfı](../../parallel/concrt/reference/combinable-class.md)

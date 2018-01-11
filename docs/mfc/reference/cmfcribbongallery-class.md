@@ -89,11 +89,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5d5de8001f328a4f4b75b94c26974d02768fd85c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6cb4772f685a38db39c946a5e6f4e77df87998a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery sınıfı
 Office 2007-style Şerit galerileri uygular.  
@@ -776,4 +777,4 @@ void SetPaletteID(UINT nID);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)   
- [CMFCRibbonGalleryMenuButton sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)
+ [CMFCRibbonGalleryMenuButton Sınıfı](../../mfc/reference/cmfcribbongallerymenubutton-class.md)

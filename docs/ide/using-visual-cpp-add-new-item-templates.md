@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1ebf163c721d8fd05c5481859cf0158ee22180e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4c2326dc87c0490256972bfe23df5cc7ed13a787
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-visual-c-add-new-item-templates"></a>Visual C++ Yeni Öğe Ekle Şablonlarını Kullanma
 Kullanarak Visual C++ projeleri için ortak olan öğeleri kolayca ekleyebilirsiniz **Yeni Öğe Ekle** komutu. Kullandığınızda **Yeni Öğe Ekle** komutu, `Add New Item` uygun dosyaları projenize eklemek öğe şablonları listesi ile iletişim kutusu görüntülenir.  

@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6533c0a1adecd29807ae49921ff6bb279271a208
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8dcf28dc593b36464bf093cf7cd8a065112054e3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="renaming-with-a-name-that-exists"></a>Varolan Adla Yeniden Adlandırma
 **ANSI 4.9.4.2** Yeni adla bir dosya için bir çağrı önce varsa etkisi **yeniden adlandırma** işlevi  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Yoksa, bir ad kullanarak bir dosyayı yeniden adlandırmak çalışırsanız **yeniden adlandırma** işlevi başarısız olur ve bir hata kodu döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

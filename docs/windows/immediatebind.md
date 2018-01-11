@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3656a8a8b60c5492d6fe1d155e2b1274a0f03b16
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 31dddbbb205715e46de5d3382923ef4d73261b53
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="immediatebind"></a>immediatebind
 Veritabanı veri bağlama nesnenin bir özelliğini yapılan tüm değişiklikler, hemen bildirilecek gösterir.  

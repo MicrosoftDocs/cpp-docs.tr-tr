@@ -17,11 +17,12 @@ caps.latest.revision: "36"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e2c2641ada0f6bbcd1b19c4297ba85b3bb4d393
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 97669589af295c681fa21d6faeb31ec01be37e51
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asynchronous-message-blocks"></a>Zaman Uyumsuz İleti Blokları
 
@@ -38,19 +39,19 @@ Aracılar Kitaplığı iletileri uygulama bileşenleri arasında bir iş parçac
   
 - [unbounded_buffer sınıfı](#unbounded_buffer)  
   
-- [overwrite_buffer sınıfı](#overwrite_buffer)  
+- [overwrite_buffer Sınıfı](#overwrite_buffer)  
   
-- [single_assignment sınıfı](#single_assignment)  
+- [single_assignment Sınıfı](#single_assignment)  
   
-- [Çağrı sınıfı](#call)  
+- [call Sınıfı](#call)  
   
-- [Transformer sınıfı](#transformer)  
+- [transformer Sınıfı](#transformer)  
   
-- [seçenek sınıfı](#choice)  
+- [choice Sınıfı](#choice)  
   
 - [katılma ve multitype_join sınıfları](#join)  
   
-- [Timer sınıfı](#timer)  
+- [timer Sınıfı](#timer)  
   
 - [İleti filtreleme](#filtering)  
   
@@ -353,5 +354,5 @@ bool (T const &)
  [[Üst](#top)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
+ [Zaman Uyumsuz Aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)
 

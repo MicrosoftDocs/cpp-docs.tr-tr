@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3defc694e2ac3f859c160a2e34aecefd42627c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fa558129368559f3edddf9037f7f504933eb2563
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="maximum-string-length"></a>Maksimum Dize Uzunluğu
 **Microsoft özel**  
@@ -36,4 +37,4 @@ ms.lasthandoff: 10/24/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C dize değişmez değerleri](../c-language/c-string-literals.md)
+ [C Dize Değişmez Değerleri](../c-language/c-string-literals.md)

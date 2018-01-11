@@ -25,11 +25,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: de741e8e36f6358b0b0f100eaa266336c0338ca2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3eb5a5d383044e0e44a0913c06afa73c6fe2f0ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 Rastgele sayı altyapısı için rastgele çekirdek sağlayabilir imzasız tamsayı değerleri vektörü depolar.  

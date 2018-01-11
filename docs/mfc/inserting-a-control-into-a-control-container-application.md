@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3cf288014f47ee1e497ca5a38a3c48368a3b1e6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a1eaaf0426726f252fc4990f06faa73b0598cfbb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX Denetim Kapsayıcıları: Bir Denetim Kapsayıcısı Uygulamasına Denetim Ekleme
 Bir ActiveX denetimi kapsayıcısı uygulamasından bir ActiveX denetimini erişebilmeniz için önce bir kapsayıcı kullanılarak uygulama ActiveX denetimini eklemelisiniz [ActiveX denetimi Ekle](../windows/insert-activex-control-dialog-box.md) iletişim kutusu.  
@@ -32,5 +33,5 @@ Bir ActiveX denetimi kapsayıcısı uygulamasından bir ActiveX denetimini eriş
  Sarmalayıcı sınıfı başvurulan üye değişkeni bir sınıf otomatik olarak oluşturulur ve projenize eklenen ekledikten sonra. Bu sınıf, denetimi kapsayıcısı ve katıştırılmış denetimi arasında bir arabirim olarak kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md)
+ [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3ced015fec2e581748bd4309f6c7e1569cc2a7d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7625249f9d602d9c23daa36d067059bbe66fba34
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hash-structure-c-standard-library"></a>hash yapısı (Standart C++ Kitaplığı)
 Benzersiz olarak tarafından belirlenen bir değer döndüren bir üye işlevini tanımlar `Val`. Üye işlevini tanımlayan bir [karma](../standard-library/hash-class.md) eşleme türü değerleri için uygun işlevi `thread::id` dizin değerlerin bir dağıtım.  
@@ -44,4 +45,4 @@ struct hash<thread::id> :
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [\<iş parçacığı >](../standard-library/thread.md)   
- [unary_function yapısı](../standard-library/unary-function-struct.md)
+ [unary_function Yapısı](../standard-library/unary-function-struct.md)

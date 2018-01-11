@@ -17,11 +17,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67c1924b1e9ed3f533fc1f22fbc0f34a2ecf03be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d7d2d69cfdfd12f0a8dbdcf3a771e01db19da2c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-windows-programming-symbols"></a>MFC Windows Programlama Sembolleri
 Bu simgeleri de MFC destek dosyalarını parçası olan, ancak standart Windows uygulama işlevleri ve eylemlerini destekler. Bu simgeleri çoğunlukla menülerle kullanılır. Menü Düzenleyicisi'nde menülerle çalışırken, bu simgeleri ortak menü komutları ile ilişkili özellik penceresi görünür. Dosya menüsü çıkış komutu ile uygulamanız varsa, örneği için bu komutu ıd_app_exıt simgesiyle ilişkilendirilecek içinde [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  
@@ -69,4 +72,4 @@ Bu simgeleri de MFC destek dosyalarını parçası olan, ancak standart Windows 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC önceden tanımlanmış semboller](../windows/mfc-predefined-symbols.md)   
- [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)
+ [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

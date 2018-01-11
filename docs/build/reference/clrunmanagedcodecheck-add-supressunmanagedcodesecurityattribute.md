@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f4810da2a1dd24893a1e69a35091b3a7c89b527e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b0ac6b7c2c0ba9ea14a2ddd9c227143ec71e2b93
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (SupressUnmanagedCodeSecurityAttribute Ekleme)
 **/ CLRUNMANAGEDCODECHECK** bağlayıcı uygulanıp uygulanmayacağını belirtir <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> bağlayıcı-oluşturulan `PInvoke` Yerel DLL'leri yönetilen koddan çağrılar.  
@@ -61,4 +62,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

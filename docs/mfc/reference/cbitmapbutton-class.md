@@ -25,11 +25,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 619ddd7805207f14bb44ed52d148f53e3aa79e57
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d926e538cf9f9f1cb4935a1d53ba6c1fd7f4696e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbitmapbutton-class"></a>CBitmapButton sınıfı
 Metin yerine eşlemli görüntülerle etiketli basma düğmesi denetimleri oluşturur.  
@@ -218,5 +219,5 @@ void SizeToContent();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek CTRLTEST](../../visual-cpp-samples.md)   
  [CButton sınıfı](../../mfc/reference/cbutton-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

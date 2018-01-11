@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 234a2e94bb23b22e443eef2f55c8341b50e91227
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9aaba3d563367a559f6b25cb201bd60525f28906
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorgenericreverseiterator-stlclr"></a>vector::generic_reverse_iterator (STL/CLR)
 Kullanmak için ters yineleyici kapsayıcısı için genel arabirimi türü.  
@@ -85,4 +88,4 @@ a c c
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [Vector::generic_container (STL/CLR)](../dotnet/vector-generic-container-stl-clr.md)   
- [Vector::generic_iterator (STL/CLR)](../dotnet/vector-generic-iterator-stl-clr.md)
+ [vector::generic_iterator (STL/CLR)](../dotnet/vector-generic-iterator-stl-clr.md)

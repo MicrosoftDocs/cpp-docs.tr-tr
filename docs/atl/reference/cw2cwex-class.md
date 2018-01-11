@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9ef399ca76493e1666a31f457dca14be5a039e92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a83f0fefed5e2393c303038346e3b84ec1a3d570
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cw2cwex-class"></a>CW2CWEX sınıfı
 Bu sınıf dize dönüştürme makroları tarafından kullanılan `CW2CTEX` ve `CT2CWEX`ve typedef `CW2W`.  

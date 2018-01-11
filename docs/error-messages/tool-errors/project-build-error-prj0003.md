@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f06779fb8f2d5265d93cc4376b42669b978c4e5a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bcf80eb4d45fe1ae163772b96339c123996ae377
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003  
   
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/24/2017
 
 Bu hata için olası nedenler şunlardır:  
   
--   Projenize ATL sunucusuna bağlıdır. Visual Studio 2008'den itibaren ATL Sunucu artık Visual Studio bir parçası olarak dahil değildir, ancak CodePlex bir paylaşılan kaynağı proje olarak yayımlanmıştır. ATL Sunucu kaynak kodu ve araçları yüklemek için Git [ATL Sunucu kitaplığının ve araçları](http://go.microsoft.com/fwlink/?LinkID=81979).  
+-   Projenize ATL sunucusuna bağlıdır. Visual Studio 2008'den itibaren ATL Sunucu artık Visual Studio bir parçası olarak dahil değildir, ancak CodePlex bir paylaşılan kaynağı proje olarak yayımlanmıştır. ATL Sunucu kaynak kodu ve araçları yüklemek için Git [ATL Sunucu kitaplığının ve araçları](http://go.microsoft.com/fwlink/p/?linkid=81979).  
   
 -   Sistem kaynaklarının yetersizliği. Bu sorunu gidermek için bazı uygulamaları kapatın.  
   
@@ -40,4 +41,4 @@ Bu hata için olası nedenler şunlardır:
 -   Derleme görevleri dosyası projeleri için üzerinde çalıştırılacak bir komut eksik **komut satırı derleme** veya **komut satırı yeniden**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje derleme hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+ [Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

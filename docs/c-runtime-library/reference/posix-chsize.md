@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 065a713e61c4fc1b1b459948a11b68b855591538
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 185ca5af184b37bbd47f9519763c37599c497cc8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chsize"></a>chsize
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_chsize](../../c-runtime-library/reference/chsize.md) veya Gelişmiş Güvenlik [_chsize_s](../../c-runtime-library/reference/chsize-s.md) yerine.

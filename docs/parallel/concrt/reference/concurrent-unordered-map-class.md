@@ -24,11 +24,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9006489881d1435ad12eca424d0c1cc9ecf44041
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 29eae25b01dcb3b76a6c3c13a8675b92048b2d22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map Sınıfı
 `concurrent_unordered_map` Sınıftır türündeki öğeler değişen uzunluk dizisi denetleyen bir eşzamanlılık güvenli kapsayıcı `std::pair<const K, _Element_type>`. Sıra sağlayan eşzamanlılık güvenli bir şekilde temsil edilen ekleme, öğe erişim, yineleyici erişim ve yineleyici geçişi işlemleri.  
@@ -728,7 +729,7 @@ size_type unsafe_max_bucket_count() const;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
+ [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 
 

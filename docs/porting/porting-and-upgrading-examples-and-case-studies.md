@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 554134b71c4dc45a828595c0c7dfb639940494df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 212b51f417fc84b602e6231f2e769cb73c9a1460
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="porting-and-upgrading-examples-and-case-studies"></a>Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri
 Tür süresi karşılaşabileceğiniz sorunları hakkında bir fikir edinmek başarılı geçişler hikayeleri inceleyerek geçerli bir Visual C++'ın önceki bir sürümünden geçiş.  
@@ -32,4 +33,4 @@ Tür süresi karşılaşabileceğiniz sorunları hakkında bir fikir edinmek ba�
 -   [Spy ++](../porting/porting-guide-spy-increment.md) inceler ve çalışan uygulamalar, kullanıcı Arabirimi öğeleri hakkında bilgi sağlayan bir uygulamadır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)
+ [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)

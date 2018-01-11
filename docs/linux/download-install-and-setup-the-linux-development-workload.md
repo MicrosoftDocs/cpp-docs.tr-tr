@@ -11,11 +11,14 @@ ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d2e19ee03483dce82846e7e7bbb0ab103e01203f
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload:
+- cplusplus
+- linux
+ms.openlocfilehash: 13201f9fd397eaf191b7621ec0807a9901e961f8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="download-install-and-setup-the-linux-workload"></a>İndirme, yükleme ve Linux iş yükü Kurulumu
 

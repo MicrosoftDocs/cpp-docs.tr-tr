@@ -18,11 +18,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9cb7c5dfebc1f88e92aa9bb38ff62374964c44c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a0bc02fd9e7c65eafd199f8664dcf747417203e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="errorreport-dumpbinexe"></a>/ERRORREPORT (dumpbin.exe)
 ```  
@@ -35,4 +36,4 @@ ms.lasthandoff: 10/24/2017
  Hakkında daha fazla bilgi için **/errorreport**, bkz: [/errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)
+ [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

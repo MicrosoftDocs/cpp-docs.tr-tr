@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cd91b0c46e5243a223b3b8ab8cdfc9a03cd64cb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: adfa006e3b84517601237bbd844ac983115e74ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4530"></a>Derleyici Uyarısı (düzey 1) C4530
 C++ özel durum işleyici olarak kullanılır, ancak semantiği bırakma etkin değil. /EHsc belirtin  

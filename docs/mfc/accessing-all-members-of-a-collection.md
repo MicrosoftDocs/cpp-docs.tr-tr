@@ -14,24 +14,24 @@ helpviewer_keywords:
 - enumerating collections [MFC]
 - collections [MFC], accessing
 - collection classes [MFC]
-- accessing members"
-- arrays [MFC], iterating
-- iteration [MFC], collections
-- member access [MFC], collections
-- list collection iteration [MFC]s
-- MFC collection classes [MFC], accessing members
-- collections [MFC], looping through
-- loop structures [MFC], looping through collections
+- ', '
+- ', '
+- ', '
+- ', '
+- ', '
+- ', '
+- ', '
 ms.assetid: 7bbae518-062e-4393-81f9-b22abd2e5f59
 caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a5b3f6e78bfd0beac1c3c5eb2b2248ddaa7b6f1b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 34ba2795c12695702b2e38034081e17d69c156d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="accessing-all-members-of-a-collection"></a>Bir Koleksiyonun Tüm Üyelerine Erişme
 MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğelerini erişmek için kullanın. MFC liste ve eşleme koleksiyon sınıfları — hem şablona dayalı ve — türünün bir göstergesi kullanın **konumu** koleksiyonundaki belirli bir konuma açıklamak için. Bu koleksiyonun bir veya daha fazla üyelerini erişmek için ilk konumu göstergesi başlatmak sürekli olarak o konumdan koleksiyonuna geçirmek ve sonraki öğeye dönmek için isteyin. Koleksiyon yinelemeyi ilerleme durumu ile ilgili durum bilgilerini korumak için sorumlu değildir. Bu bilgiler konumu göstergesi tutulur. Ancak, belirli bir konuma göz önüne alındığında, koleksiyon sonraki öğeye döndürmek için sorumludur.  
@@ -84,5 +84,5 @@ MFC dizi koleksiyon sınıfları — hem şablona dayalı ve — dizinleri öğe
  Daha fazla bilgi için bkz: [CObject koleksiyonundaki tüm nesneleri silme](../mfc/deleting-all-objects-in-a-cobject-collection.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Koleksiyonları](../mfc/collections.md)
+ [Koleksiyonlar](../mfc/collections.md)
 

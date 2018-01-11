@@ -28,11 +28,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: defb0dc6faa5438dc7f040fbd09f318b60b5a2ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 540f3240588b8e6fde119a167eace8103ef58c5a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC Araç Çubuğu Uygulaması
 Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bit eşlem görüntülerini içerir. Bu görüntüleri pushbuttons, onay kutusu veya radyo düğmeleri gibi davranabilir. MFC sınıf sağlayan [CToolbar](../mfc/reference/ctoolbar-class.md) araç çubukları yönetmek için.  
@@ -102,13 +103,13 @@ Bir araç çubuğu bir [denetim çubuğu](../mfc/control-bars.md) denetimleri bi
   
 -   [Araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md)  
   
--   [Araç çubuğu denetimiyle çalışma](../mfc/working-with-the-toolbar-control.md)  
+-   [Araç Çubuğu Denetimiyle Çalışma](../mfc/working-with-the-toolbar-control.md)  
   
--   [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)  
+-   [Eski Araç Çubuklarınızı Kullanma](../mfc/using-your-old-toolbars.md)  
   
 -   [CToolBar](../mfc/reference/ctoolbar-class.md) ve [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) sınıfları  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç çubukları](../mfc/toolbars.md)   
- [Araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
+ [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
 

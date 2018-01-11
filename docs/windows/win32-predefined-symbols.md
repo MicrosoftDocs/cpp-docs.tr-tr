@@ -17,11 +17,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 01aa83fc5d0be468252b8593ee343ff28648d218
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 865d61611546e2550aaa241220dc226cea9f9b81
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 Bu simgeleri Win32 üstbilgi dosyalarını tanımlanır ve standart Windows uygulama işlevleri ve eylemlerini destekler. Bu simgeleri çoğunlukla ortak kullanıcı Arabirimi öğeleri ile kullanılır. Kaynak düzenleyicileri denetimlerinde ile çalışırken, bu simgeleri görünür [Özellikler penceresini](/visualstudio/ide/reference/properties-window) ortak denetimleriyle ilişkili. Örneği için araç uygulamayı görüntülenmelidir, simgeyi özelliği penceresinde IDI_SMALL simgesiyle ilişkili olacaktır.  
@@ -48,4 +51,4 @@ Bu simgeleri Win32 üstbilgi dosyalarını tanımlanır ve standart Windows uygu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)   
- [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)
+ [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

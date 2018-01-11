@@ -17,23 +17,24 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7d3bf5e85f148553513fd7bd8c6f7bad678196ef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2c484b8287f5743e3bee7e0e12f7d0c6740bceef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deployment-examples"></a>Dağıtım Örnekleri
 Bu bölümde Visual C++ uygulamalarını dağıtma gösteren örnekler içerir.  
   
 ## <a name="examples"></a>Örnekler  
- [İzlenecek yol: Kurulum projesi kullanarak Visual C++ uygulamasını dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)  
+ [İzlenecek Yol: Kurulum Projesi Kullanarak Visual C++ Uygulamasını Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md)  
   
- [İzlenecek yol: Visual C++ uygulamasını yerel uygulama klasörüne dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md)  
+ [İzlenecek Yol: Visual C++ Uygulamasını Yerel Uygulama Klasörüne Dağıtma](../ide/walkthrough-deploying-a-visual-cpp-application-to-an-application-local-folder.md)  
   
- [İzlenecek yol: Visual C++ yeniden dağıtılabilir paketi kullanarak bir Visual C++ uygulamasını dağıtma](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)  
+ [İzlenecek Yol: Visual C++ Yeniden Dağıtılabilir Paketini Kullanarak Visual C++ Uygulaması Dağıtmak](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md)  
   
- [Hata ayıklama yürütülebilir dosyayı çalıştırmak için Test Makinesi hazırlama](../ide/preparing-a-test-machine-to-run-a-debug-executable.md)  
+ [Yürütülebilir Hata Ayıklamayı Çalıştırmak için Test Makinesi Hazırlama](../ide/preparing-a-test-machine-to-run-a-debug-executable.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İzlenecek yol: Bir ClickOnce uygulamasını el ile dağıtma](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   

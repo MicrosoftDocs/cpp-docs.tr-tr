@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 53fa4efec4d30753613c02705869c766a5c251eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c27aeb10a58c828b6503ce96ddaadf138c258f27
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 Bir proje oluşturduğunuzda, değiştirin veya projenin işlevsellik eklemek isteyeceksiniz. Yeni üye işlevleri ve değişkenler ve ekleme Otomasyon yöntemleri ve özellikleri ekleme yeni sınıflar oluşturma gibi görevleri içerir. Kod sihirbazları bu tüm şeyler izin verecek şekilde tasarlanmıştır.  
@@ -79,4 +80,4 @@ Bir proje oluşturduğunuzda, değiştirin veya projenin işlevsellik eklemek is
  [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)   
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)
+ [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

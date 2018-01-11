@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1c0fe2f5e54205c3e9c82ebf1d9cb40504e5023
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8e3b343b13118930612e4adfed4c33a65a9e7be8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-methods"></a>MFC ActiveX Denetimleri: Yöntemler
 ActiveX denetimi kendisi ve kendi denetimi kapsayıcısı arasında iletişim kurmak için olay tetikler. Bir kapsayıcı ayrıca yöntemleri ve özellikleri yoluyla denetimi ile iletişim kurabilir. Yöntemleri işlevleri de denir.  
@@ -42,12 +43,12 @@ ActiveX denetimi kendisi ve kendi denetimi kapsayıcısı arasında iletişim ku
   
  Aşağıdaki makaleler yöntemleri ayrıntılı ele alınmıştır:  
   
--   [MFC ActiveX denetimleri: Stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)  
+-   [MFC ActiveX Denetimleri: Stok Yöntemler Ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md)  
   
--   [MFC ActiveX denetimleri: Özel yöntemler ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)  
+-   [MFC ActiveX Denetimleri: Özel Yöntemler Ekleme](../mfc/mfc-activex-controls-adding-custom-methods.md)  
   
--   [MFC ActiveX denetimleri: Bir yöntemden hata kodları döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)  
+-   [MFC ActiveX Denetimleri: Bir Metottan Hata Kodları Döndürme](../mfc/mfc-activex-controls-returning-error-codes-from-a-method.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

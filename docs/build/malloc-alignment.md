@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 66ec1e2e86996b8044909961bef9ab4ea3e76312
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4d9acaf1c8912e1b563bb5d05ae600d1430049e6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="malloc-alignment"></a>malloc Hizalaması
 [malloc](../c-runtime-library/reference/malloc.md) temel hizalama ve, herhangi bir nesne depolama tahsis edilen bellek miktarında sığacak için uygun hizalanır bellek döndürmek için sağlanır. A *temel hizalama* bir hizalama belirtimi olmadan uygulaması tarafından desteklenen en büyük hizalama küçük veya ona eşit bir hizalama. (Visual C++'da, bu için gerekli hizalama olan bir `double`, veya 8 bayt. 64 bit platformları hedefler kodda, 16 bayt'tır.) Örneğin, dört bayt ayırma dört bayt veya daha küçük nesne destekleyen bir sınır hizalı.  

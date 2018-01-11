@@ -11,11 +11,12 @@ caps.latest.revision: "1"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0f8742396a9ebe3780cb2c235238c9ce63986dc4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3e19f72dac00d18af62e91b1466bc40f2148518e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Evrensel CRT kodunuzu yükseltme
 
@@ -53,8 +54,8 @@ Birçok işlevini eklendi veya ISO C99 uyumluluğu artırmak için UCRT ve kod k
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)  
-[Olası yükseltme sorunlarını (Visual C++) genel bakış](overview-of-potential-upgrade-issues-visual-cpp.md)  
-[Visual C++'ın önceki sürümlerinden yükseltme projeleri](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
-[Visual C++ değişiklik geçmişini 2003 2015](visual-cpp-change-history-2003-2015.md)  
-[Visual Studio 2017 C++ uygunluk yenilikleri](../cpp-conformance-improvements-2017.md)  
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](visual-cpp-porting-and-upgrading-guide.md)  
+[Olası Yükseltme Sorunlarına Genel Bakış (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)  
+[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)  
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)  

@@ -83,11 +83,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12e2e25dd6a1ba2a31130196f04f336cecf6b34e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2f5211440d0180b3ad05e8d172c4dea8c35b2844
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="uint3-class"></a>uint_3 Sınıfı
 Kısa bir vektör üç işaretsiz tamsayı değerini temsil eder.  
@@ -295,4 +296,4 @@ static const int size = 3;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

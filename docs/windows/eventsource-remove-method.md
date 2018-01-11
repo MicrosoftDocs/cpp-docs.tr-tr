@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1879c939237275c279e1dd4bd1861ab3b02b468
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a11bce6d70c70bba2a4e75753c55d83bec32329f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsourceremove-method"></a>EventSource::Remove Yöntemi
 Geçerli EventSource nesneyle ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil olay işleyicisi siler.  
@@ -48,4 +51,4 @@ HRESULT Remove(
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [EventSource sınıfı](../windows/eventsource-class.md)
+ [EventSource Sınıfı](../windows/eventsource-class.md)

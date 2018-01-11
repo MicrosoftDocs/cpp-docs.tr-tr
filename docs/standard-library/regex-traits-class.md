@@ -49,11 +49,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5ee2c2aa566e8426e56da490ae9a3a71348dfeee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5acde3fe50cb470be79018d4bee9bf75401fe72d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regextraits-class"></a>regex_traits Sınıfı
 Eşleşen öğelerin özelliklerini açıklar.  
@@ -1548,12 +1549,12 @@ hex C == 12
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [\<Regex >](../standard-library/regex.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
-[regex_error sınıfı](../standard-library/regex-error-class.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
+[regex_error Sınıfı](../standard-library/regex-error-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
 [\<Regex > işleçleri](../standard-library/regex-operators.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  
  [regex_traits\<char > sınıfı](../standard-library/regex-traits-char-class.md)   
  [regex_traits\<wchar_t > sınıfı](../standard-library/regex-traits-wchar-t-class.md)

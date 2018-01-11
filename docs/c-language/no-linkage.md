@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 278325c1ad1b31ce20b6a17034be5e4731f6da78
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: abacc6fbd49f9f42620385a4206c9412648c173b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="no-linkage"></a>Bağlantı Yok
 Bir blok içerisindeki tanımlayıcının bildirimi `extern` depolama sınıfı tanımlayıcısını içermiyorsa, tanımlayıcının bağlantısı yoktur ve tanımlayıcı işleve özgüdür.  
@@ -36,4 +37,4 @@ Bir blok içerisindeki tanımlayıcının bildirimi `extern` depolama sınıfı 
  Tanımlayıcının hiçbir bağlantı yoksa, aynı kapsamda aynı adın yeniden bildirilmesi (bildirimcide veya tür tanımlayıcısında) simge yeniden tanımlama hatası oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlantıyı belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)
+ [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)

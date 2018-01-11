@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d36daeea830517527ccc4e9db35439dcbe2feed1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec468b1f763e2f855f25fd8808d83605fb10673a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clipboard-operations-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Pano İşlemleri
 Uygulamanızı bir zengin düzenleme denetimine Pano içeriğini yapıştırın ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) en iyi kullanılabilir Pano biçimi veya belirli bir pano biçimi kullanarak. Ayrıca, bir zengin düzenleme denetimine Pano biçimi yapıştırma uyumlu olup olmadığını belirleyebilirsiniz.  
@@ -40,5 +41,5 @@ Uygulamanızı bir zengin düzenleme denetimine Pano içeriğini yapıştırın 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7807d112b45b7316b630522ab7f896201d53ff2a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 535045d715651d6393227457068a86f240c27dce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -261,7 +262,7 @@ BOOL CMFCListViewApp::InitInstance()
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [AfxGetAmbientActCtx](#afxgetambientactctx)   
  [AFX_MANAGE_STATE](#afx_manage_state)   
- [MFC modüllerinin durum verisini yönetme](../managing-the-state-data-of-mfc-modules.md) 
+ [MFC Modüllerinin Durum Verisini Yönetme](../managing-the-state-data-of-mfc-modules.md) 
 
 ## <a name="afxtermextensionmodule"></a>AfxTermExtensionModule
 

@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2e7f81c109835ce3435f6f5a3da50fc5da774e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fb45b7fe1acd073e418d7a9c8cb01e79f55f29e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2693"></a>Derleyici Hatası C2693
 'işleci': yönetilen başvurular veya WinRT dizi için geçersiz karşılaştırma  

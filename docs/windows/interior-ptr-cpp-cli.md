@@ -18,11 +18,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: edb506b17cce617c438bc518bfbd5410b9dabbe2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: cd3e79306cb97413a833e039b0b333cb85b8e56d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
 Bir *iç işaretçi* bir işaretçi bir başvuru türü içinde ancak nesne bildirir. Bir başvuru tanıtıcısı, değer türü, paketlenmiş türü tanıtıcısı, yönetilen tür üyesi veya yönetilen bir dizi bir öğe için bir iç işaretçi işaret edebilir.  
@@ -75,13 +78,13 @@ cli::interior_ptr<cv_qualifier type> var = &initializer;
   
  İç işaretçiler hakkında daha fazla bilgi için bkz:  
   
--   [Nasıl yapılır: bildirme ve iç işaretçiler ve yönetilen diziler kullanma (C + +/ CLI)](../windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)  
+-   [Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)](../windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)  
   
--   [Nasıl yapılır: interior_ptr anahtar sözcüğü ile değer türleri bildirme (C + +/ CLI)](../windows/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)  
+-   [Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)](../windows/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)  
   
--   [Nasıl yapılır: iç işaretçiler ve yerel işaretçilerle işlevleri tekrar yükleme (C + +/ CLI)](../windows/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)  
+-   [Nasıl yapılır: İç İşaretçiler ve Yerel İşaretçilerle İşlevleri Tekrar Yükleme (C++/CLI)](../windows/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)  
   
--   [Nasıl yapılır: const anahtar sözcüğü ile iç işaretçileri bildirme (C + +/ CLI)](../windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)  
+-   [Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)](../windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
@@ -117,7 +120,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 1  
@@ -126,4 +129,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -38,11 +38,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 20e03e80517726689c7d3369e0afc4de30bcf230
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cd9e19a9729f53aae9f3a4fd32787a9ae02eae7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 Ters hiperbolik sinüsünü hesaplar.  
@@ -124,4 +125,4 @@ asinh( 0.868671 ) = 0.785398
  [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [Tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
  [ATANH, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)   
- [_Cıtan](../../c-runtime-library/citan.md)
+ [_CItan](../../c-runtime-library/citan.md)

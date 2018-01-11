@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0d2dc6bda0b364467fa04d0146a0d90846e597ae
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b4b54b78034037e9f3b015d7c1f67bb33771248c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-blocking"></a>Windows Yuvaları: Engelleme
 Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli sorunlar açıklanmaktadır. Bu makalede, engelleme yer almaktadır. Diğer sorunlar makalelerinde ele alınmıştır: [Windows Yuvaları: bayt sıralama](../mfc/windows-sockets-byte-ordering.md) ve [Windows Yuvaları: dizeleri dönüştürme](../mfc/windows-sockets-converting-strings.md).  
@@ -48,15 +49,15 @@ Bu makale ve iki yardımcı makaleler Windows Sockets programlamada çeşitli so
   
  Daha fazla bilgi için bkz.:  
   
--   [Windows Yuvaları: Sınıf Casyncsocket'ini kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
+-   [Windows Yuvaları: Sınıf CAsyncSocket'ini Kullanma](../mfc/windows-sockets-using-class-casyncsocket.md)  
   
--   [Windows Yuvaları: Yuvaları Arşivlerle kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
+-   [Windows Yuvaları: Yuvaları Arşivlerle Kullanma](../mfc/windows-sockets-using-sockets-with-archives.md)  
   
--   [Windows Yuvaları: arka plan](../mfc/windows-sockets-background.md)  
+-   [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)  
   
--   [Windows Yuvaları: Akış yuvaları](../mfc/windows-sockets-stream-sockets.md)  
+-   [Windows Yuvaları: Akış Yuvaları](../mfc/windows-sockets-stream-sockets.md)  
   
--   [Windows Yuvaları: Veri birimi yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
+-   [Windows Yuvaları: Veri Birimi Yuvaları](../mfc/windows-sockets-datagram-sockets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   

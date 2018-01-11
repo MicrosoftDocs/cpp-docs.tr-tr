@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3a2683fbc259cbac3551840f9ebe6e7c651430bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 76172804cc271a740244d06e791db35d534c69e7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="developing-your-own-helper-function"></a>Kendi Yardımcı İşlevinizi Geliştirme
 DLL veya içeri aktarmalar adlarına göre belirli işlemini yapmak için yordamının kendi sürüm sağlamak isteyebilirsiniz. Bunu yapmanın iki yöntemi vardır: büyük olasılıkla sağlanan kodu göre kendi kodlama veya yalnızca daha önce ayrıntılı bildirim kancaları kullanarak sağlanan sürüm takma.  
@@ -30,4 +31,4 @@ DLL veya içeri aktarmalar adlarına göre belirli işlemini yapmak için yordam
  Büyük olasılıkla yalnızca bildirim dliStartProcessing üzerinde varsayılan Yardımcısı aynı değerleri alan bir kullanıcı tarafından sağlanan bildirim kanca işlevi için yeni bir işaretçi sağlamak kolay olacaktır. Bu noktada, başarılı bir geri döndürme varsayılan Yardımcısı için varsayılan yardımcı tüm işlenmesi atlayacaktır gibi kanca işlevini temelde yeni yardımcı işlevini olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+ [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

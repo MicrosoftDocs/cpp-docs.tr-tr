@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: afec3ea0d88ff7ede9c498a270e2806a4ceb79e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2219ac079fecdb0f21215814885ee831d24f8f6e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-storage-classes"></a>C Depolama Sınıfları
 Bir değişkenin "depolama sınıfı" öğesi "Genel" veya "yerel" ömrü olup olmadığını belirler. C "statik" ve "Otomatik" Bu iki yaşam süresi'ı çağırır Genel bir ömre sahip bir öğe var ve programın yürütülmesi boyunca bir değere sahip. Tüm işlevleri genel ömürleri vardır.  
@@ -39,7 +40,7 @@ Bir değişkenin "depolama sınıfı" öğesi "Genel" veya "yerel" ömrü olup o
   
  **kaydetme**  
   
- **statik**  
+ **static**  
   
  **extern**  
   
@@ -64,4 +65,4 @@ Bir değişkenin "depolama sınıfı" öğesi "Genel" veya "yerel" ömrü olup o
  [Dış düzey bildirimleri depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-external-level-declarations.md) ve [iç düzey bildirimleri depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-for-internal-level-declarations.md) açıklayan *depolama sınıfı tanımlayıcısı* Terminal içinde her tür bildirimi ve varsayılan davranışı açıklamak olduğunda *depolama sınıfı tanımlayıcısı* bir değişkeninden atlanır. [İşlev bildirimli depolama sınıfı tanımlayıcıları](../c-language/storage-class-specifiers-with-function-declarations.md) işlevleri ile kullanılan depolama sınıfı tanımlayıcıları açıklanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve türler](../c-language/declarations-and-types.md)
+ [Bildirimler ve Türler](../c-language/declarations-and-types.md)

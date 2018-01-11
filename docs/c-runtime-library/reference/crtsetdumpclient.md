@@ -32,11 +32,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 689d81d491b58755ca865c92cc79043d105c2be2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bf64ca280998ac25adbb380ff8245a0b8eecf797
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtsetdumpclient"></a>_CrtSetDumpClient
 Dökümü uygulama tanımlı bir işlev yükler `_CLIENT_BLOCK` bellek blokları (yalnızca hata ayıklama sürümü) yazın.  

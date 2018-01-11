@@ -11,17 +11,14 @@ ms.assetid: 0c1c0fcc-a49b-451c-a5cb-ce9711fac064
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-f1_keywords:
-- VC.Project.RaspberryDebugger.DebuggerType
-- VC.Project.IVCLocalDebugPageObject.CommandArguments
-- VC.Project.IVCLocalDebugPageObject.WorkingDirectory
-- VC.Project.RaspberryDebugger.LaunchActivity
-- VC.Project.LinuxDebugger.DebugChildProcesses
-ms.openlocfilehash: d47645eab33ffb0ee6a203fdfb0cf30c856ea63f
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- linux
+ms.openlocfilehash: 11ebb11cca19c98bf9f72b9f99f33d66464cd485
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="c-debugging-properties-linux-c"></a>C++ hata ayıklama özellikleri (Linux C++)
 

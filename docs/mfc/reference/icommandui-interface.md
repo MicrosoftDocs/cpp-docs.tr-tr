@@ -24,11 +24,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e64d55250a9739e8465a4ae79ecb293e2879daef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4971ceaea57b91ff708315a2c32c7bac2801798f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandui-interface"></a>ICommandUI arabirimi
 Kullanıcı arabirimi komutları yönetir.  
@@ -127,4 +128,4 @@ Bu özellik, bu komut için kullanıcı arabirimi öğesi metni ayarlar. Metni i
  **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ccmduı sınıfı](../../mfc/reference/ccmdui-class.md)
+ [CCmdUI Sınıfı](../../mfc/reference/ccmdui-class.md)

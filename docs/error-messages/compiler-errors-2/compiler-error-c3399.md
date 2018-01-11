@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: abcf9e59df1562bd5b6b430c2c63554e87340abb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a55a6d40d6d39b368c31a2716c14d05e0e49a78c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3399"></a>Derleyici Hatası C3399
 'type': bağımsız bir genel parametre örneği oluşturulurken sağlayamaz  

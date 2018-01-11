@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b19a01ce06b76b49593adf54fa8af728be2d5c6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eaf2773a2d9e393c783a39e01c75f8efa62796df
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="when-update-handlers-are-called"></a>Güncelleştirme İşleyicilerini Çağırma Zamanı
 Kullanıcının oluşturduğu Dosya menüsünde fare tıklamaları varsayalım bir `WM_INITMENUPOPUP` ileti. Kullanıcı görebilmesi menüyü aşağı bırakır önce framework'ün güncelleştirme mekanizması topluca Dosya menüsünden tüm öğeleri güncelleştirir.  
@@ -45,5 +46,5 @@ Kullanıcının oluşturduğu Dosya menüsünde fare tıklamaları varsayalım b
  Menü başlatma uygulama aldığında gerçekleşen Framework'te otomatik bir `WM_INITMENUPOPUP` ileti. Boşta döngü sırasında menüleri için yaptığı gibi komut düğmesi güncelleştirme işleyicileri için benzer şekilde yönlendirme framework arar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: kullanıcı arabirimi nesnelerini güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
+ [Nasıl yapılır: Kullanıcı Arabirimi Nesnelerini Güncelleştirme](../mfc/how-to-update-user-interface-objects.md)
 

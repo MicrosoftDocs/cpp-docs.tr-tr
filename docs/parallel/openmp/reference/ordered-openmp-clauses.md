@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c472e51502b6a934096fe5c3a3b2e17b9e1d14cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 072266b07a71599d84b6a7f39966f455d0774672
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ordered-openmp-clauses"></a>ordered (OpenMP Yan Tümceleri)
 Üzerinde bir paralel gerekli [için](../../../parallel/openmp/reference/for-openmp.md) deyimi, bir [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) yönergesi olup döngüde kullanılacak.  
@@ -39,4 +40,4 @@ ordered
  Bkz: [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md) kullanma örneği için `ordered` yan tümcesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yan tümceleri](../../../parallel/openmp/reference/openmp-clauses.md)
+ [Yan Tümceler](../../../parallel/openmp/reference/openmp-clauses.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c674bc7711de8a7991ad6906d62a768f9360e6b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 097ae6d1486292d7dcc62dd4191e16f57e6f0a3c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-files-c"></a>Kaynak Dosyalar (C++)
 Kullanıcıya bilgi sağlamak arabirim öğeleri kaynaklardır. Bit eşlemler, simgeler, araç çubukları ve İmleçler tüm kaynaklardır. Bazı kaynaklar menüden seçerek veya iletişim kutusunda veri girme gibi bir eylem gerçekleştirmek üzere kullanılabilirler.  
@@ -40,4 +41,4 @@ Kullanıcıya bilgi sağlamak arabirim öğeleri kaynaklardır. Bit eşlemler, s
 |Ribbon.mfcribbon ms|*PROJNAME*\res|Kaynak Dosyalar|Şeritte düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren kaynak dosyası. Daha fazla bilgi için bkz: [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)
+ [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0569f745c1531e59d9b45f54c957176de4896f25
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 97e151d8c3ec44286807baf5e68d4e4eac17e306
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 Bu makalede öğesinden bir sınıf türetin için gereken en düşük adımları [CObject](../mfc/reference/cobject-class.md). Diğer `CObject` sınıfı makalelerde, özel yararlanmak için gereken adımlar açıklanmaktadır `CObject` seri hale getirme ve tanılama hata ayıklama desteği gibi özellikleri.  
@@ -72,5 +73,5 @@ Bu makalede öğesinden bir sınıf türetin için gereken en düşük adımlar�
  Makaleyi [işlevselliğini düzeylerini belirtme](../mfc/specifying-levels-of-functionality.md) nasıl işlevsellik, çalışma zamanı sınıf bilgileri, dinamik Nesne oluşturma ve seri hale getirme gibi diğer düzeylerini belirtileceğini açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject kullanma](../mfc/using-cobject.md)
+ [CObject Kullanma](../mfc/using-cobject.md)
 

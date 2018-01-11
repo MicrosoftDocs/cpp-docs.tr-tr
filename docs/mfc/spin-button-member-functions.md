@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57a2f9cfc5a95671eb21dabb91b8a83874341b76
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c6f0abfd5803ea4b4d4b4478104790e0f56e5afc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="spin-button-member-functions"></a>Döndür Düğmesi Üye İşlevleri
 Birden fazla üye işlevleri döndürme denetimi için kullanılabilir ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Değer değiştirme düğmesi aşağıdaki özniteliklerini değiştirmek için bu işlevler kullanın.  
@@ -37,5 +38,5 @@ Birden fazla üye işlevleri döndürme denetimi için kullanılabilir ([CSpinBu
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSpinButtonCtrl kullanma](../mfc/using-cspinbuttonctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

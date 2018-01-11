@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ebabc94a289cf28d76903714e9440f50cc1abea2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0db569d456a85418f01dfdf3abab116d68d99dff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="msbuild-visual-c"></a>MSBuild (Visual C++)
 Kullanabileceğiniz **MSBuild** aracı komut isteminden bir Visual C++ uygulaması oluşturma. Derleme işlemi oluşturma ve düzenleme bir proje dosyası (.vcxproj) bilgileri tarafından denetlenir. Proje dosyası derleme aşamaları, koşulları ve olayları temel yapı seçenekleri belirtir.  
@@ -28,14 +29,14 @@ Kullanabileceğiniz **MSBuild** aracı komut isteminden bir Visual C++ uygulamas
   
 |Terim|Tanım|  
 |----------|----------------|  
-|[MSBuild (Visual C++) genel bakış](../build/msbuild-visual-cpp-overview.md)|Visual C++ nasıl kullandığını açıklar **MSBuild** sistem.|  
-|[Derleme sistemi değişiklikleri](../build/build-system-changes.md)|Geçerli yapı sistemi ve önceki sürümü arasındaki farklılıklar açıklanır.|  
-|[İzlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Kullanarak bir Visual C++ projesi oluşturmak nasıl gösteren **MSBuild**.|  
-|[Nasıl yapılır: MSBuild projelerinde derleme olaylarını kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)|Derlemede particuler aşamada oluşan bir eylem belirtin gösterilmiştir: derleme başlamadan önce; bağlantı adım başlamadan önce; veya ve yapı sona erdikten sonra.|  
-|[Nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|Kullanıcı tanımlı bir aşama için derleme sırası eklemek gösterilmiştir.|  
-|[Nasıl yapılır: MSBuild projelerine özel derleme araçları ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|Belirli bir dosya oluşturma aracını ilişkilendirilecek gösterilmiştir.|  
-|[Nasıl yapılır: özel araçlarla proje özelliklerini tümleştirme](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|Proje özellikleri için özel bir araç seçeneklerini ekleneceği gösterilmektedir.|  
-|[Nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Birden fazla çerçeveleri veya toolsets bir projeyi derlemek gösterilmiştir.|  
+|[MSBuild’e (Visual C++) Genel Bakış](../build/msbuild-visual-cpp-overview.md)|Visual C++ nasıl kullandığını açıklar **MSBuild** sistem.|  
+|[Derleme Sistemi Değişiklikleri](../build/build-system-changes.md)|Geçerli yapı sistemi ve önceki sürümü arasındaki farklılıklar açıklanır.|  
+|[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Kullanarak bir Visual C++ projesi oluşturmak nasıl gösteren **MSBuild**.|  
+|[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)|Derlemede particuler aşamada oluşan bir eylem belirtin gösterilmiştir: derleme başlamadan önce; bağlantı adım başlamadan önce; veya ve yapı sona erdikten sonra.|  
+|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|Kullanıcı tanımlı bir aşama için derleme sırası eklemek gösterilmiştir.|  
+|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|Belirli bir dosya oluşturma aracını ilişkilendirilecek gösterilmiştir.|  
+|[Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|Proje özellikleri için özel bir araç seçeneklerini ekleneceği gösterilmektedir.|  
+|[Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Birden fazla çerçeveleri veya toolsets bir projeyi derlemek gösterilmiştir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Komut satırında C/C++ kodu derleme](../build/building-on-the-command-line.md)

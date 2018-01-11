@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4abe98ebf04aa5d38ab0681f2ebf3a803ab0f892
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb1a2ec2722bf644d1e1fb3f5b7d4352eb287ace
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-compiler-fatal-error-rc1067"></a>Kaynak Derleyicisi Önemli Hatası RC1067
 Derleyici sınırı: tanımlayıcısı taştı iç arabellek  

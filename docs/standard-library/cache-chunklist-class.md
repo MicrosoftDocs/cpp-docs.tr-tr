@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8f366e1a5d67aac945a366bbc81602b9bbb4002f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13d81e3eab6e93a138ac55ca53cbf8e61f195507
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cachechunklist-class"></a>cache_chunklist Sınıfı
 Tanımlayan bir [ayırıcısı engelleme](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta kaldırır.  
@@ -58,7 +59,7 @@ class cache_chunklist
   
 |||  
 |-|-|  
-|[ayırma](#allocate)|Bir bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir bellek bloğu ayırır.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
   
 ## <a name="requirements"></a>Gereksinimler  

@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b46158795c91c0c1982e50f56d8961106b952076
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8e64edebc511445973a7fbb79f8fb8ccfd3f607b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unicode-and-mbcs"></a>Unicode ve MBCS
 Uluslararası programlama yardımcı olmak için Microsoft Foundation sınıfları (MFC) kitaplığı, Visual c++ C çalışma zamanı kitaplığı ve Visual C++ geliştirme ortamı etkin. Bunlar sağlar:  
@@ -54,4 +55,4 @@ Uluslararası programlama yardımcı olmak için Microsoft Foundation sınıflar
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Metin ve dizeler](../text/text-and-strings-in-visual-cpp.md)   
- [Uluslararası etkinleştirme](../text/international-enabling.md)
+ [Uluslararası Etkinleştirme](../text/international-enabling.md)

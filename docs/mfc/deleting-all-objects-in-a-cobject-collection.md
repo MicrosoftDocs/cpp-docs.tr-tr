@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8065af989f220f5954b851149c1b7c7a814a7d1f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 04f1edc7f181bdb23e050d2fa608c9b3a2056749
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject Koleksiyonundaki Tüm Nesneleri Silme
 Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme açıklanmaktadır.  
@@ -88,5 +89,5 @@ Bu makalede (koleksiyon nesnesi silmeden) koleksiyonundaki tüm nesneleri silme 
  Çağırabilirsiniz `RemoveAll` haritada tüm öğeleri kaldırmak için veya `RemoveKey` tek bir öğe belirtilen anahtara sahip kaldırmak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir koleksiyonun tüm üyelerine erişme](../mfc/accessing-all-members-of-a-collection.md)
+ [Bir Koleksiyonun Tüm Üyelerine Erişme](../mfc/accessing-all-members-of-a-collection.md)
 

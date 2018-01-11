@@ -114,11 +114,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e8f76e8ace4eff6bd02efeba8a42554a27618bc1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 79343615b633b583775a482f0a9d2155e79ede10
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController sınıfı
 Oluşturma ve animasyonları yönetmek için merkezi bir arabirim sağlar animasyon denetleyicisi uygular.  
@@ -999,4 +1000,4 @@ virtual void UpdateAnimationManager();
  Bu yöntem geçerli saati animasyon yöneticiye ilerler arama, gerektiğinde film şeritleri durumlarını değiştirme ve herhangi bir animasyon değişkeni için uygun güncelleştirme değerleri Ara değerli. Dahili olarak IUIAnimationTimer::GetTime(timeNow) ve IUIAnimationManager::Update(timeNow) bu yöntemi çağırır. Bu davranış özelleştirmek için bir türetilmiş sınıfta bu yöntemi geçersiz kılın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

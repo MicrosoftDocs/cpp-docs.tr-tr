@@ -16,11 +16,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c314e224bbbc9b7d232ee9e2cb9bbc20ec8ead71
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7937e0eec53a800c7bcef2842310af368949bcca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="override-specifiers--c-component-extensions"></a>Geçersiz Kılma Tanımlayıcıları (C++ Bileşen Uzantıları)
 *Geçersiz kılma tanımlayıcıları* devralınan türleri üyeleri türetilmiş türlerde yapılandıran ve nasıl devralınan türlerini değiştirebilirsiniz.  
@@ -30,13 +33,13 @@ ms.lasthandoff: 10/24/2017
   
  Geçersiz kılma tanımlayıcıları hakkında daha fazla bilgi için bkz:  
   
--   [Özet](../windows/abstract-cpp-component-extensions.md)  
+-   [abstract](../windows/abstract-cpp-component-extensions.md)  
   
 -   [Yeni (vtable'de yeni yuva)](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)  
   
--   [geçersiz kılma](../windows/override-cpp-component-extensions.md)  
+-   [override](../windows/override-cpp-component-extensions.md)  
   
--   [korumalı](../windows/sealed-cpp-component-extensions.md)  
+-   [sealed](../windows/sealed-cpp-component-extensions.md)  
   
 -   [Geçersiz kılma tanımlayıcıları ve yerel derleme](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md)  
   
@@ -57,4 +60,4 @@ ms.lasthandoff: 10/24/2017
  Derleyici seçeneği:   **/CLR**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 476e64d052912e9937d054e52c66e1397b8da66f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a45425215fcaf336c0b1630634d0adf37ba3984
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zm-specify-precompiled-header-memory-allocation-limit"></a>/Zm (Önceden Derlenmiş Üst Bilgi Bellek Ayırma Sınırını Belirt)
 Önceden derlenmiş üstbilgileri oluşturmak için derleyicinin ayırdığı bellek miktarını belirler.  
@@ -76,4 +77,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

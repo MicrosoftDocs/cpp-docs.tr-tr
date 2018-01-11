@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 05f774b6cc243223d396d7c18648a2451bf8dd18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eb2c193fd12578e69abef2db555ebbc4fa061e1e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocators"></a>Ayırıcılar
 Allocators C++ Standart Kitaplığı tarafından ayırma ve ayırmayı kaldırma kapsayıcılarında depolanan öğelerin işlemek için kullanılır. Bir şablon parametresi türü std::array dışındaki tüm C++ Standart Kitaplığı kapsayıcıları sahip `allocator<Type>`, burada `Type` kapsayıcı öğe türünü temsil eder. Örneğin, vector sınıfı şu şekilde bildirilmiş:  

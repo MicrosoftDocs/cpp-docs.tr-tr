@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3464c7d183b20d2d0eb851489c8aecf86321876f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e7bfaa0f03eec11cf4a45115c03a8553ad54fb0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a17---using-nestable-locks"></a>A.17   İç İçe Konulabilir Kilitleri Kullanma
 Aşağıdaki örnekte (için [bölüm 3.2](../../parallel/openmp/3-2-lock-functions.md) sayfasında 41) nestable kilit hem tüm yapısı ve kendi üyelerinden biri için güncelleştirmeleri eşitlemek için nasıl kullanılabileceğini gösterir.  

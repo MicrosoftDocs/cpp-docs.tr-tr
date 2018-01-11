@@ -67,11 +67,12 @@ caps.latest.revision: "30"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73b8adbff021a179f3bd3185fa85ee18c84a441a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 689d538c03a35175040663aedb7bd6130aae10fd
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 `CDrawingManager` Sınıfı karmaşık çizim algoritmaları uygular.  
@@ -576,7 +577,7 @@ static COLORREF __stdcall HLStoRGB_ONE(
  Sağlanan HLS renk RGB gösterimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/linkid=119126).  
+ Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).  
   
  Bu yöntem ve `CDrawingManager::HLStoRGB_TWO` yöntemi aynı işlemi gerçekleştirir, ancak için farklı değerler gerektiren `H` parametresi. Bu yöntemde `H` daireye yüzdesidir. İçinde `CDrawingManager::HLStoRGB_TWO` yöntemi, `H` 0 ile hem de kırmızı temsil 360 arasında derece değerdir. Örneğin, `HLStoRGB_ONE`, bir değeri için 0,25 `H` 90 değerine denktir `HLStoRGB_TWO`.  
   
@@ -604,7 +605,7 @@ static COLORREF __stdcall HLStoRGB_TWO(
  Sağlanan HLS renk RGB gösterimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/linkid=119126).  
+ Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).  
   
  Bu yöntem ve [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yöntemi aynı işlemi gerçekleştirir, ancak için farklı değerler gerektiren `H` parametresi. Bu yöntemde, `H` 0 ile hem de kırmızı temsil 360 arasında derece değerdir. İçinde [CDrawingManager::HLStoRGB_ONE](#hlstorgb_one) yöntemi, `H` daireye yüzdesidir. Örneğin, `HLStoRGB_ONE`, bir değeri için 0,25 `H` 90 değerine denktir `HLStoRGB_TWO`.  
   
@@ -631,7 +632,7 @@ static COLORREF __stdcall HSVtoRGB(
  Sağlanan HSV renk RGB gösterimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/linkid=119126).  
+ Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).  
   
 ##  <a name="huetorgb"></a>CDrawingManager::HuetoRGB  
  Hue değeri bir kırmızı, yeşil veya mavi bileşenine dönüştürür.  
@@ -800,7 +801,7 @@ static void __stdcall RGBtoHSL(
 |[out]`L`|Yöntem rengi açıklık depoladığı bir çift için bir işaretçi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/linkid=119126).  
+ Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).  
   
  Döndürülen değeri `H` 0, 0 ve 1 temsil eden kırmızı 1 arasında bir kesir olarak temsil edilir. Döndürülen değerlerini `S` ve `L` numaraları 0 ile 1 arasında.  
   
@@ -829,7 +830,7 @@ static void __stdcall RGBtoHSV(
  Bu yöntem rengi sonuç değeri depoladığı bir çift için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/linkid=119126).  
+ Bir renk HSV (ton, Doygunluk ve değer), HSL (ton, Doygunluk ve parlaklığını) ya da RGB (kırmızı, yeşil ve mavi) gösterilebilir. Renk farklı sunumu hakkında daha fazla bilgi için bkz: [renk](http://go.microsoft.com/fwlink/p/?linkid=119126).  
   
  Döndürülen değeri `H` burada 0 ile 360 belirtmek kırmızı 0-360 arasında bir sayı değil. Dönüş değerleri için `S` ve `V` numaraları 0 ile 1 arasında.  
   
@@ -958,4 +959,4 @@ void DrawRotated(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

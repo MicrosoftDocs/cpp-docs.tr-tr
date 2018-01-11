@@ -20,11 +20,12 @@ caps.latest.revision: "36"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0a43837da95ef14b0a33f60a3260550fbdf80d2c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8fca748d3192fcecbec5194822cd302ad78a296e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-standard-library-header-files"></a>C++ Standart Kitaplık Üstbilgi Dosyaları
 C++ Standart Kitaplığı ve kategoriye göre uzantıları için üstbilgi dosyaları.  

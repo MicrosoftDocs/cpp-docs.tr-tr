@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5848e4f200f528261a135e38e1898a256433871b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad62906f5ee509bd6f99caca55b0df581e1f629b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="custom-manipulators-with-arguments"></a>Bağımsız Değişkenlerle Birlikte Özel Manipülatörler
 Bu bölümde bir veya daha fazla bağımsız değişkenlerle çıkış akışı manipülatörleri oluşturma ve nonoutput akışlar için manipülatörleri kullanmayı açıklar.  
@@ -29,8 +30,8 @@ Bu bölümde bir veya daha fazla bağımsız değişkenlerle çıkış akışı 
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Tek bağımsız değişkenli çıkış akışı Manipülatörleri](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) (`int` veya `long`)  
   
- [Diğer tek-bağımsız değişken çıkış akışı Manipülatörleri](../standard-library/other-one-argument-output-stream-manipulators.md)  
+ [Diğer Tek Bağımsız Değişkenli Çıkış Akışı Manipülatörleri](../standard-library/other-one-argument-output-stream-manipulators.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [iostream programlama](../standard-library/iostream-programming.md)
+ [iostream Programlaması](../standard-library/iostream-programming.md)
 

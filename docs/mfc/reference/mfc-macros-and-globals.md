@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71011177634e92b22cce1bc88a2ee711ad9537ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eeb53dea24ccd4d34ef90045e3254915135e70c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-macros-and-globals"></a>MFC Makroları ve Genel Öğeleri
 Microsoft Foundation Class Kitaplığı iki ana bölüme ayrılabilir: (1 MFC sınıfları ve (2) makroları ve genel öğeleri. Bir işlev veya değişken bir sınıf üyesi değilse, genel işlev veya değişken olur.  
@@ -54,7 +55,7 @@ Microsoft Foundation Class Kitaplığı iki ana bölüme ayrılabilir: (1 MFC s�
 
 -   [Temsilci ve arabirim eşlemeleri](delegate-and-interface-maps.md)
 
--   [Modülleri ve DLL'ler](extension-dll-macros.md)
+-   [Modüller ve DLL'ler](extension-dll-macros.md)
   
 -   [Uygulama bilgileri ve Yönetimi](application-information-and-management.md)  
   
@@ -68,11 +69,11 @@ Microsoft Foundation Class Kitaplığı iki ana bölüme ayrılabilir: (1 MFC s�
   
 -   [Standart iletişim kutusu veri doğrulama (DDV) yordamları](standard-dialog-data-validation-routines.md)  
   
--   [AFX iletileri](afx-messages.md)  
+-   [AFX İletileri](afx-messages.md)  
   
--   [ToolBar denetim stilleri](toolbar-control-styles.md)  
+-   [ToolBar Denetim Stilleri](toolbar-control-styles.md)  
   
--   [Cmfcımagepaintarea::ımage_edıt_mode numaralandırması](cmfcimagepaintarea-image-edit-mode-enumeration.md)  
+-   [CMFCImagePaintArea::IMAGE_EDIT_MODE Numaralandırması](cmfcimagepaintarea-image-edit-mode-enumeration.md)  
 
   
 ## <a name="database"></a>Veritabanı  

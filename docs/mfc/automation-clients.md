@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5c239aa86921f00e9f25a9960451a4c15586d74d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9cfb6aae5c947d1f36019e548c72b22a3304aa12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="automation-clients"></a>Otomasyon İstemcileri
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Bir otomasyon istemci, başka bir uygulamaya ait gösterilen nesneleri işleyebileceğiniz bir uygulamadır. Nesneleri gösteren uygulama Otomasyon sunucusu adı verilir. İstemci, bu nesnelerin özelliklerini ve işlevlerini erişerek sunucu uygulamasının nesneleri yönetir.  

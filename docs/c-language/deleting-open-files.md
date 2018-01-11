@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5283d9d1060848ab23442d324c7f506b0f61fcee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4cdb569a4617bb8d17c1e6bfc84433ca90551ac6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deleting-open-files"></a>Açık Dosyaları Silme
 **ANSI 4.9.4.1** açık bir dosyayı Kaldır işlevi etkisi  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  Kaldırma işlevi bir dosyayı siler. Dosya açıksa, bu işlev başarısız olur ve -1 değerini döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

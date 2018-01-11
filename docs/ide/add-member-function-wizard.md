@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 001af91af02f5b24e58737181258f036fe73a407
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 775b519b304549b474cd21980ef5a4cbe8f2d4d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-member-function-wizard"></a>Üye İşlevi Ekleme Sihirbazı
 Bu sihirbaz bir üye işlevi bildirimi üstbilgi dosyası ve bir saplama üye işlevi uygulama seçilen sınıf için uygulama dosyasına ekler.  
@@ -32,8 +33,8 @@ Bu sihirbaz bir üye işlevi bildirimi üstbilgi dosyası ve bir saplama üye i�
 ||||  
 |-|-|-|  
 |`char`|`int`|`unsigned int`|  
-|**çift**|**uzun**|`unsigned long`|  
-|**kayan nokta**|**kısa**|`void`|  
+|**double**|**long**|`unsigned long`|  
+|**float**|**short**|`void`|  
 |`HRESULT`|`unsigned char`||  
   
  **İşlev adı**  
@@ -45,8 +46,8 @@ Bu sihirbaz bir üye işlevi bildirimi üstbilgi dosyası ve bir saplama üye i�
 ||||  
 |-|-|-|  
 |`char`|`int`|`unsigned char`|  
-|**çift**|**uzun**|`unsigned int`|  
-|**kayan nokta**|**kısa**|`unsigned long`|  
+|**double**|**long**|`unsigned int`|  
+|**float**|**short**|`unsigned long`|  
   
  **Parametre adı**  
  Üye işlevini parametrelere sahipse üye fonksiyonu için eklemekte olduğunuz bir parametre adını ayarlar.  
@@ -57,17 +58,17 @@ Bu sihirbaz bir üye işlevi bildirimi üstbilgi dosyası ve bir saplama üye i�
  **Erişim**  
  Erişim için üye işlevi ayarlar. Erişim değiştiricileri diğer sınıflar üye işlevine sahip oldukları erişim belirttiğiniz anahtar sözcükler. Bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md) erişim belirtme hakkında daha fazla bilgi için. Üye işlevi erişim düzeyini ayarlamak **ortak** varsayılan olarak.  
   
--   [Ortak](../cpp/public-cpp.md)  
+-   [public](../cpp/public-cpp.md)  
   
--   [korumalı](../cpp/protected-cpp.md)  
+-   [protected](../cpp/protected-cpp.md)  
   
--   [Özel](../cpp/private-cpp.md)  
+-   [private](../cpp/private-cpp.md)  
   
  Yeni üye işlevi statik veya sanal olmasına ve satır içi olup denetleyin veya saf. Saf, olması için üye işlevini ayarlarsanız `Virtual` onay kutusu seçilidir ve **satır içi** onay kutusunu kullanılamaz olur. Statik olmayan, sanal olmayan üye işlevi varsayılandır.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|[Statik](../cpp/storage-classes-cpp.md)|İşlev genel gibi davranır ve sınıfı, hatta sınıfı örneklemesi dışında adlı belirtir. Üye işlevi erişim statik olmayan üye yok. Olarak belirtilen üye işlevi `Static` sanal olamaz.|  
+|[Static](../cpp/storage-classes-cpp.md)|İşlev genel gibi davranır ve sınıfı, hatta sınıfı örneklemesi dışında adlı belirtir. Üye işlevi erişim statik olmayan üye yok. Olarak belirtilen üye işlevi `Static` sanal olamaz.|  
 |[Sanal](../cpp/virtual-cpp.md)|Üye işlev çağrısı yapmak için kullanılan ifade bağımsız olarak bir nesne için doğru üye işlevi çağrılır sağlar. Olarak belirtilen üye işlevi `Virtual` statik olamaz.|  
 |**Saf**|Hiçbir uygulama bildirilen sanal üye işlevi için sağlanan gösterir; Bu nedenle, **saf** yalnızca sanal üye işlevlerini belirtilebilir. En az bir saf sanal üye işlevi içeren bir sınıf, soyut bir sınıf olarak kabul edilir. Soyut sınıftan türetilen sınıflara saf sanal üye fonksiyonu uygulamalıdır ya da, çok, soyut sınıflar.|  
 |[Satır içi](../cpp/inline-functions-cpp.md)|Üye işlev gövdesi bir kopyasını üye fonksiyonu olarak adlandırılan her yerde eklemek için derleyicisi bildirir. Olarak belirtilen üye işlevi **satır içi** saf olamaz.|  

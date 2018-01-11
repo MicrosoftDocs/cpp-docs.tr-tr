@@ -14,11 +14,14 @@ caps.latest.revision: "2"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1a7db502f5e0f9e5ccf4e2015cd288c32e617e78
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a0b0fe42e53409395fcdaa1ff9f8d553ceb758c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hstringrelease-method"></a>HString::Release Yöntemi
 Temel dize değeri siler ve boş bir değer için geçerli HString nesne intializes.  
@@ -35,4 +38,4 @@ void Release() throw()
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HString sınıfı](../windows/hstring-class.md)
+ [HString Sınıfı](../windows/hstring-class.md)

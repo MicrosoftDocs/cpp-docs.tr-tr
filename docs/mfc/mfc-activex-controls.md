@@ -25,11 +25,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e5351e7dca3c78b9709f183b8e1f6f9e7b2dc883
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c06b66be2dd9b982fc925aa69483a58fcc4799dc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
 ActiveX denetimi, Bileşen Nesne Modeli (çok çeşitli OLE işlevselliğini destekleyen ve çok sayıda yazılım gereksinimlerine uyacak şekilde özelleştirilmiş COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, hem sıradan ActiveX denetimi kapsayıcıları ve World Wide Web sayfalarında Internet üzerindeki kullanımı için tasarlanmıştır. Burada veya ile açıklanan MFC ActiveX denetimleri oluşturabilirsiniz [Etkin Şablon kitaplığı (ATL)](../atl/active-template-library-atl-concepts.md).  
@@ -51,9 +52,9 @@ ActiveX denetimi kapsayıcısı ve bir pencereli ActiveX denetimi arasındaki et
   
  Daha fazla bilgi için bkz.:  
   
--   [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md)  
+-   [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)  
   
--   [Etkin belgeler](../mfc/active-documents.md)  
+-   [Etkin Belgeler](../mfc/active-documents.md)  
   
 -   [ActiveX denetimleri anlama](http://msdn.microsoft.com/library/windows/desktop/ms693753)  
   

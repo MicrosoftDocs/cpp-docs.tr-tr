@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9f3bd3c7019c98f1be163ee31264b9fef0c52ac5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 16b73349a220f392730dd5526fd5f3d59e59754d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-external-projects"></a>Harici Projeler Derleme
 Harici bir proje, derleme görevleri dosyası veya (yabancı veya dış) dışındaki diğer tesis kullanan bir Visual C++ proje olan Visual C++ geliştirme ortamı.  
@@ -33,4 +34,4 @@ Harici bir proje, derleme görevleri dosyası veya (yabancı veya dış) dışı
  Visual C++ artık etkin proje için bir derleme görevleri dosyası geliştirme ortamından verme olanağı desteklediğini unutmayın. Kullanım [Devenv komut satırı anahtarları](/visualstudio/ide/reference/devenv-command-line-switches) komut satırında Visual Studio projeleri oluşturmak üzere.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da C++ projeleri derleme](../ide/building-cpp-projects-in-visual-studio.md)
+ [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)

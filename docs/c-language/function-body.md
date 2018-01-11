@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a30ad1b016e0ab4814e0ac6f6f4627cdf265f59b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0c85ecf0752ff34bf5b61e42309360f2bc4d448
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-body"></a>İşlev Gövdesi
 "İşlev gövdesi" işlevi ne yapacağını belirtin deyimleri içeren bileşik bir ifadedir.  
@@ -41,4 +42,4 @@ ms.lasthandoff: 10/24/2017
  A `return` bir ifade içeren deyimi gerekir yürütülebilir işlevi bir değer döndürülmesini istiyorsanız. Öyle değilse bir işlevin dönüş değeri tanımlanmamış `return` deyimi yürütüldüğünde veya `return` deyimi bir ifade içermiyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C işlev tanımları](../c-language/c-function-definitions.md)
+ [C İşlev Tanımları](../c-language/c-function-definitions.md)

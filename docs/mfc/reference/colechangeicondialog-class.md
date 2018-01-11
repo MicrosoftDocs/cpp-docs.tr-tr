@@ -27,11 +27,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 237c1fcbea36c4e978ca19b14def4d57a4470973
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 14e6f43ce49c5e5b51a6f69a3a8952608f5bfe49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="colechangeicondialog-class"></a>COleChangeIconDialog sınıfı
 OLE Simge Değiştir iletişim kutusu için kullanılır.  
@@ -184,4 +185,4 @@ OLEUICHANGEICON m_ci;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)
+ [COleDialog Sınıfı](../../mfc/reference/coledialog-class.md)

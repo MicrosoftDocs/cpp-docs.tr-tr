@@ -24,11 +24,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 98be16e8e493592f06aa2e4963f748e32b3f345d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b6760f2051542a28e78f5f8f2fa81f6937388d82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-events"></a>MFC ActiveX Denetimleri: Olaylar
 ActiveX denetimleri olayları bir şey denetime gerçekleştirilmedi bir kapsayıcı bildirmek için kullanın. Ortak olaylar tıklama denetimindeki, klavye ve değişiklikleri denetimin durumda kullanarak girilen veri örneklerindendir. Bu eylemler ortaya çıktığında denetimi kapsayıcı uyarmak için bir olay gönderir.  
@@ -54,9 +55,9 @@ ActiveX denetimleri olayları bir şey denetime gerçekleştirilmedi bir kapsay�
   
 -   [MFC ActiveX denetimleri: Stok olaylar ekleme](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md)  
   
--   [MFC ActiveX denetimleri: Özel olaylar ekleme](../mfc/mfc-activex-controls-adding-custom-events.md)  
+-   [MFC ActiveX Denetimleri: Özel Olaylar Ekleme](../mfc/mfc-activex-controls-adding-custom-events.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   
  [MFC ActiveX denetimleri: yöntemler](../mfc/mfc-activex-controls-methods.md)   
- [COleControl sınıfı](../mfc/reference/colecontrol-class.md)
+ [COleControl Sınıfı](../mfc/reference/colecontrol-class.md)

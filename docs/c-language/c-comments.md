@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 78c3e97530198b6685e402237bda5cdaf9a0754a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c2962669c6d925931d0e8ff0cbf3796dbbd1b430
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-comments"></a>C Açıklamaları
 Bir iletme eğik çizgi/yıldız birleşimi ile başlayan bir karakter dizisi "comment" olan (<b>/\*</b>), tek bir boşluk karakteri olarak derleyici tarafından kabul edilir ve aksi halde yoksayılır. Bir yorum yeni satır karakterleri dahil olmak üzere, ancak "açıklama bitiş" sınırlayıcı hariç gösterilebilir karakter kümesinden karakter herhangi bir birleşimini içerebilir (<b>\*/</b>). Açıklamalar, birden fazla satır kaplayabilir, ancak iç içe geçemez.  
@@ -90,4 +91,4 @@ printf( "Hello\n" );  /* Comments can go here */
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C belirteçleri](../c-language/c-tokens.md)
+ [C Belirteçleri](../c-language/c-tokens.md)

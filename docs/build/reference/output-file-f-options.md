@@ -18,18 +18,19 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 05b3411fd9b8c9da13138f025bbc2a60ce8c73de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fa7bdc75bd994b5220d4f6fbbc0d4defeb68c691
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="output-file-f-options"></a>Çıktı Dosyası (/F) Seçenekleri
 Çıktı dosyası seçenekleri oluşturun veya çıktı dosyalarını yeniden adlandırın. Söz konusu tüm C veya C++ kaynak dosyalarıyla ilgili komut satırı veya komut dosyası CL ortam değişkeninde belirtilen etkilemez.  
   
 -   [/ FA, /Fa (listeleme dosyası)](../../build/reference/fa-fa-listing-file.md)  
   
--   [Yol adını belirtme](../../build/reference/specifying-the-pathname.md)  
+-   [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)  
   
 -   [/FD (PDB dosyasını Adlandır)](../../build/reference/fd-program-database-file-name.md)  
   
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

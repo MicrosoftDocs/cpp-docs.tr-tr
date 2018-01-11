@@ -32,11 +32,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fa818c63e779b51c9aa6c36204b5be2932d3b752
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d71b5d13b5616717c0b3fc0ac6eae0fc1ca8b551
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 Program yürütme başlangıç ya da belirtilen yığın durumu (yalnızca hata ayıklama sürümü) yığın nesneleri hakkında bilgi dökümünü yapar.  

@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0b4864f4ac15a1d07deb4c3cb8a8d533b8cc4b82
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5015a001bf2c15f3144303ba5e19b2a9ea8c34f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-image-lists"></a>Ağaç Denetim Görüntü Listeleri
 Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ilişkili eşlemli görüntüleri çifti olabilir. Görüntüleri öğenin etiketi sol tarafında görünür. Bir görüntü öğesi seçilir ve öğe seçilmediğinde diğer görüntülendiğinde görüntülenir. Örneğin, değil seçildiğinde bir öğe seçildiğinde açık bir klasörde ve kapalı klasörü görüntülenebilir.  
@@ -38,5 +39,5 @@ Ağaç denetimi her öğe ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) ili
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

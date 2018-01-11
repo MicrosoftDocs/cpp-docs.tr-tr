@@ -40,11 +40,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 217290399a03174e599117077b27116a86808f7f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f52c6e5664292469ef33a88e9d5458c07ec69454
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-type-mappings"></a>Veri Türü Eşlemeleri
 Bu veri türü eşlemeleri TCHAR içinde tanımlanmıştır. H ve olup olmadığına göre değişir sabiti `_UNICODE` veya `_MBCS` programınıza tanımlandı.  
@@ -70,4 +71,4 @@ Bu veri türü eşlemeleri TCHAR içinde tanımlanmıştır. H ve olup olmadığ
  [Sabit ve Global değişken eşlemeleri](../c-runtime-library/constant-and-global-variable-mappings.md)   
  [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)   
  [Örnek genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)   
- [Genel metin eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)
+ [Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)

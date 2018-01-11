@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d1f0635933d2cf27b824c8b0a93f66429e22ea8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6aa24e0e9a0d9ee50a0c5c69e280ea7a727ca38b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="detaching-a-cwnd-from-its-hwnd"></a>Bir CWnd'i HWND'inden Ayırma
 Nesne - sağlamasına gerekiyorsa`HWND` ilişki, MFC sağlar başka `CWnd` üye işlevi [ayırma](../mfc/reference/cwnd-class.md#detach), Windows penceresinden C++ pencere nesnesi keser. Bu nesne bozulduğunda Windows pencere yok etme yıkıcı önler.  
@@ -38,5 +39,5 @@ Nesne - sağlamasına gerekiyorsa`HWND` ilişki, MFC sağlar başka `CWnd` üye 
 -   [Ayırma ve pencere belleği serbest bırakma](../mfc/allocating-and-deallocating-window-memory.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere nesneleri](../mfc/window-objects.md)
+ [Pencere Nesneleri](../mfc/window-objects.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1827b605390dd6e3a6e92ff5924cfce6a361d508
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c84486fd89eaa72bbafda4d46f41779d9a2eff4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="filenamemax"></a>FILENAME_MAX
 İzin verilen en büyük uzunluğunu bir `filename` dize arabellek boyutu.  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yol alanı sınırları](../c-runtime-library/path-field-limits.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

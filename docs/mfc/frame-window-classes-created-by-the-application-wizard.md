@@ -24,11 +24,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6cf6b49714f8549f5e5c940b00fcaccc39667933
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 497dd21bba3e807349b793e3b37e774c833ccb40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları
 Kullandığınızda [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-using-application-wizards.md) uygulama, belge ve görünüm sınıfları, ek bir iskelet uygulama oluşturmak için Uygulama Sihirbazı'nı, uygulamanızın ana çerçeve penceresi için bir türetilmiş çerçeve pencere sınıfı oluşturur. Sınıf adı verilen `CMainFrame` varsayılan ve onu içeren dosyaları tarafından MAINFRM olarak adlandırılır. H ve MAINFRM. CPP.  
@@ -43,5 +44,5 @@ Kullandığınızda [Uygulama Sihirbazı](../ide/creating-desktop-projects-by-us
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çerçeve penceresi sınıfları](../mfc/frame-window-classes.md)   
- [MFC programı veya Denetim Kaynağı ve başlık dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
+ [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)
 

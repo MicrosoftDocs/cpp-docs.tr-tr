@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b1a3b76d56c6d1b78218d75ca596ae7311e13ac6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: adacffa4dbce4cc908c393cb5019375234e9ff85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="case-c"></a>durum (C++)
 İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.  
@@ -34,7 +37,7 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *değer*  
+ *value*  
  Olası işleme sağlamak istediğiniz değeri girin. Türü **değeri** aşağıdaki türlerden biri olabilir:  
   
 -   `int`  
@@ -86,4 +89,4 @@ struct SizedValue2 {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
+ [Sınıf Öznitelikleri](../windows/class-attributes.md)   

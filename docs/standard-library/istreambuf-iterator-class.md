@@ -29,11 +29,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 280e7c43f4541e393a828d7eeed34e72f82a0689
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2334ebd75d3a941c453950a6a99adfd99e6b1555
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator Sınıfı
 Şablon sınıfı istreambuf_iterator depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir giriş akışı arabellek gelen karakter öğeleri ayıklar bir giriş yineleyici nesneyi tanımlayan `basic_streambuf` \< **CharType** , **Nitelikler**>.  

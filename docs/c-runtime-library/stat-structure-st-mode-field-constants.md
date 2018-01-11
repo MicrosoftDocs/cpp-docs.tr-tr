@@ -46,11 +46,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: eb6277eea45aec64c285c3e2780d65be0224ce11
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6d5502a563c674818626627a5161e7051682f258
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat Yapı st_mode Alanı Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -80,4 +81,4 @@ ms.lasthandoff: 10/24/2017
  [_stat, _wstat işlevleri](../c-runtime-library/reference/stat-functions.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
  [Standart Türler](../c-runtime-library/standard-types.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

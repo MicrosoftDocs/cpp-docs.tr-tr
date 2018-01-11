@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fb5b9968ad652e5ab6ef4dd29eb3c6ccc6da7493
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 17853a43d3a94be779b659b0da825467fa66f61c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="xml-documentation-visual-c"></a>XML Belgeleri (Visual C++)
 Visual C++'da, bir .xml dosyasına nasıl işleneceğini kaynak kodunuzu yorumlar ekleyebilirsiniz. Bu dosya daha sonra kodunuzda sınıfları için belgeleri oluşturan bir işlem girdisi olabilir.  
@@ -42,14 +43,14 @@ Visual C++'da, bir .xml dosyasına nasıl işleneceğini kaynak kodunuzu yorumla
   
 |Hakkında bilgi için|Bkz. |  
 |---------------------------|---------|  
-|Kullanılacak derleyici seçenekleri|[/ doc](../build/reference/doc-process-documentation-comments-c-cpp.md)|  
-|Yaygın olarak sağlamak için kullanabileceğiniz etiketleri işlevselliği belgelerde kullanılan|[Belge açıklamaları için önerilen etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md)|  
+|Kullanılacak derleyici seçenekleri|[/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)|  
+|Yaygın olarak sağlamak için kullanabileceğiniz etiketleri işlevselliği belgelerde kullanılan|[Belge Açıklamaları için Önerilen Etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md)|  
 |Kodunuzda yapıları tanımlamak için derleyici üreten kimlik dizeleri|[.Xml dosyası işleme](../ide/dot-xml-file-processing.md)|  
-|Belge etiketleri sınırlandırmak nasıl|[Visual C++ belge etiketleri için sınırlayıcılar](../ide/delimiters-for-visual-cpp-documentation-tags.md)|  
-|Bir veya daha fazla .xdc dosyalarından bir .xml dosyası oluşturuluyor.|[XDCMake başvurusu](../ide/xdcmake-reference.md)|  
+|Belge etiketleri sınırlandırmak nasıl|[Visual C++ Belge Etiketleri için Sınırlayıcılar](../ide/delimiters-for-visual-cpp-documentation-tags.md)|  
+|Bir veya daha fazla .xdc dosyalarından bir .xml dosyası oluşturuluyor.|[XDCMake Başvurusu](../ide/xdcmake-reference.md)|  
 |Visual Studio özellik alanlarına şekliyle XML hakkında bilgilere bağlantılar ilişkilendirir|[Visual Studio'da XML](/visualstudio/xml-tools/xml-tools-in-visual-studio)|  
   
  XML özel karakterleri belgelere açıklama metninde put gerekiyorsa, XML varlıkları veya CDATA bölümünde kullanmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

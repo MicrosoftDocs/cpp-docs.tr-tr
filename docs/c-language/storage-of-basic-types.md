@@ -32,11 +32,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4f510ce5459ec24a11996f02829e7d40d1ef9a37
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dff8df934a0c812ca798d5a1e87188e2468902ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-of-basic-types"></a>Temel Türleri Depolama
 Aşağıdaki tabloda her temel türü ile ilişkili depolama özetler.  
@@ -49,11 +50,11 @@ Aşağıdaki tabloda her temel türü ile ilişkili depolama özetler.
 |**kısa**, **kısa imzalanmamış**|2 bayt|  
 |`int`, `unsigned int`|4 bayt|  
 |**uzun**,`unsigned long`|4 bayt|  
-|**kayan nokta**|4 bayt|  
-|**çift**|8 bayt|  
+|**float**|4 bayt|  
+|**double**|8 bayt|  
 |`long double`|8 bayt|  
   
  C veri türleri genel kategorilere ayrılır. "Tam sayı türleri" dahil `char`, `int`, **kısa**, **uzun**, **imzalı**, `unsigned`, ve `enum`. "Kayan" türler **float**, **çift**, ve `long double`. "Aritmetik türleri" tüm kayan ve tam sayı türleri içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve türler](../c-language/declarations-and-types.md)
+ [Bildirimler ve Türler](../c-language/declarations-and-types.md)

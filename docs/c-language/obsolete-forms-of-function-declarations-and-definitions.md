@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fb3006cb92184ad7338b1d13b1d0559a39aa69d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c7de356abb7078b7dd50f0d90bf4ecb0a046945b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="obsolete-forms-of-function-declarations-and-definitions"></a>İşlev Bildirimlerinin ve Tanımlarının Kullanılmayan Formları
 Eski stil işlev bildirimlerinde ve tanımlarında parametreleri bildirmek için, ANSI C standardına göre önerilen sözdiziminden biraz daha farklı kurallar kullanılır. İlk olarak, eski stil bildirimlerde parametre listesi yoktur. İkinci olarak, işlev tanımında parametreler listelenir, ancak türleri parametre listesinde bildirilmez. tür bildirimleri, işlev gövdesini oluşturan bileşik deyimden önce gelir. Eski stil sözdizimi eskimiştir ve yeni kodlarda kullanılmamalıdır. Ancak eski stil sözdizimini kullanan kodlar hala desteklenmektedir. Bu örnekte, bildirimlerin ve tanımların eski formları gösterilmektedir:  
@@ -58,4 +59,4 @@ void funct1( int a, ... )
  Sonraki bölümde [C işlev tanımları](../c-language/c-function-definitions.md), eski stil söz dizimi de dahil olmak üzere, işlev tanımları için söz dizimi görülmektedir. Eski Tarz sözdiziminde parametrelerin listesi için nonterminal olan *tanımlayıcı listesi*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlevlerine genel bakış](../c-language/overview-of-functions.md)
+ [İşlevlere Genel Bakış](../c-language/overview-of-functions.md)

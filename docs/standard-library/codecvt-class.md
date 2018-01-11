@@ -51,11 +51,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 290b48c5417aa5511b34f2e4ec2e0d4b7358b026
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36631c1a23c90b875d2a2fba8a1cec23b97c2400
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 Bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı. Programın içindeki karakterleri ve program dışındaki karakterleri kodlamak için kullanılan değerler dizisi arasındaki dönüştürmeleri denetleyebilir.  
@@ -133,10 +134,10 @@ class codecvt : public locale::facet, codecvt_base;
 |[do_out](#do_out)|Bir sanal işlev olarak adlandırılan bir dizi iç dönüştürmek için `CharType`s dış bayt dizisi.|  
 |[do_unshift](#do_unshift)|Bir sanal işlev adlı sağlamak için `Byte`durumu bağımlı dönüştürmede bir dizi son karakter tamamlamak için gereken s `Byte`s.|  
 |[kodlama](#encoding)|Varsa testleri kodlamasını `Byte` akışıdır durumu bağımlı olup arasındaki oran `Byte`kullanılan s ve `CharType`üretilen s sabittir ve, varsa, o oranı değeri belirler.|  
-|[içinde](#in)|Bir dizi harici temsilini dönüştürür `Byte`bir dizi iç bir temsili s `CharType`s.|  
+|[in](#in)|Bir dizi harici temsilini dönüştürür `Byte`bir dizi iç bir temsili s `CharType`s.|  
 |[uzunluğu](#length)|Belirler kaç `Byte`dış belirli bir dizi s'den `Byte`s ürettiği iç verilen sayıdan fazla `CharType`s ve o sayısını döndürür `Byte`s.|  
 |[max_length](#max_length)|Dış maksimum sayısını döndürür `Byte`s bir dahili üretmek için gerekli `CharType`.|  
-|[çıkışı](#out)|Bir dizi iç dönüştürür `CharType`harici bir dizi s `Byte`s.|  
+|[out](#out)|Bir dizi iç dönüştürür `CharType`harici bir dizi s `Byte`s.|  
 |[unshift](#unshift)|Dış sağlar `Byte`durumu bağımlı dönüştürmede dizisini son karakter tamamlamak için gereken s `Byte`s.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -837,5 +838,5 @@ result unshift(
  [\<yerel ayar >](../standard-library/locale.md)   
  [Kod sayfaları](../c-runtime-library/code-pages.md)   
  [Yerel ayar adları, diller ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

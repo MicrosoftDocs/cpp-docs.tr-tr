@@ -49,11 +49,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 44727722c843e91d6ee924c2cffa6c4c465becad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b38b1225dbce3f747efeaa7aa1e5384f7931efe0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="canimationrect-class"></a>CAnimationRect sınıfı
 İki tarafı da animasyonlu dikdörtgen işlevlerini uygular.  
@@ -402,4 +403,4 @@ void SetDefaultValue(const CRect& rect);
  Animasyon nesnesine bir varsayılan değeri ayarlamak için bu işlevi kullanın. Bu yöntemleri dikdörtgenin sınırları için varsayılan değerleri atar. Ayrıca oluşturduysanız, temel alınan COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesneye abone, bu olayları yeniden etkinleştirmeniz gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

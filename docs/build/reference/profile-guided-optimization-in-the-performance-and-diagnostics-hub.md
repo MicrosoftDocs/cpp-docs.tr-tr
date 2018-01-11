@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e462fb157f035be275e6d97b9ccb35e136c24d4f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a51cab03c1361c178846e8b7f00ba7111dc8d731
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="profile-guided-optimization-in-the-performance-and-diagnostics-hub"></a>Performans ve Tanılama Hub'ında Profil Temelli İyileştirme
 Profil temelli iyileştirme Visual C++ performans ve tanılama hub'ı eklenti için geliştiriciler için profil temelli iyileştirme deneyimi kolaylaştırır. Yapabilecekleriniz [eklentiyi karşıdan](http://go.microsoft.com/fwlink/p/?LinkId=327915) Visual Studio Web sitesinden.  

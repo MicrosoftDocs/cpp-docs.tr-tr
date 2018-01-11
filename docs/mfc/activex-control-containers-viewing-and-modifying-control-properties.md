@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 90e866d1a3be4600b3b98e542caff6ed793f4226
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5e3a12f9d591cb94c8c16e7b9f22a4db0872e78f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activex-control-containers-viewing-and-modifying-control-properties"></a>ActiveX Denetim Kapsayıcıları: Denetim Özelliklerini Görüntüleme ve Değiştirme
 Bir projeye bir ActiveX denetimi eklediğinizde, ActiveX denetimi tarafından desteklenen özelliklerini görüntülemek ve değiştirmek kullanışlıdır. Bu makalede, Visual C++ kaynak Düzenleyici Bunu yapmak için nasıl kullanılacağı açıklanmaktadır.  
@@ -49,5 +50,5 @@ Bir projeye bir ActiveX denetimi eklediğinizde, ActiveX denetimi tarafından de
  Kullanım **özellikleri** değiştirin ve yeni özellikleri hemen test etmek için iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActiveX denetim kapsayıcıları](../mfc/activex-control-containers.md)
+ [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)
 

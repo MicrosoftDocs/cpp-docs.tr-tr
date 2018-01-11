@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bd86ab088f23241b27e958749e54ee3ae2841a5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: be274d7bcf970795df69744324332d29f252363a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsourcetargetspointerlock-data-member"></a>EventSource::targetsPointerLock_ Veri Üyesi
 Olay işleyicileri bu EventSource için bile eklenmiş durumdayken, kaldırıldı veya çağrılan iç veri üyelerine erişimi eşitler.  
@@ -36,4 +39,4 @@ Wrappers::SRWLock targetsPointerLock_;
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [EventSource sınıfı](../windows/eventsource-class.md)
+ [EventSource Sınıfı](../windows/eventsource-class.md)

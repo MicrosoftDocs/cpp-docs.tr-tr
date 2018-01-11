@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c7f06878b5d7c364704cd028ae87a5b43bd0d738
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b7229392e763450e658fc26762751c732bf743bb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3860"></a>Derleyici Hatası C3860
 tür bağımsız değişkeni, sınıf türü adı aşağıdaki parametreleri türü parametre listesine kullanılan sırayla listesi olmalıdır  

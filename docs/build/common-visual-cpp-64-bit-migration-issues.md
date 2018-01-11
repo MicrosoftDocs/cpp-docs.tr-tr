@@ -23,11 +23,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 957ac623aff18dbcb2d7f3418cc5acc96085c154
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b9ea3690e04106f0836d236eefee4acd9dda3a82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="common-visual-c-64-bit-migration-issues"></a>Genel Visual C++ 64 Bit Geçiş Sorunları
 
@@ -58,4 +59,4 @@ Daha fazla bilgi için bkz.:
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
 [Visual C++ 64-bit, x64 için yapılandırma hedefleri](../build/configuring-programs-for-64-bit-visual-cpp.md)   
-[Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)

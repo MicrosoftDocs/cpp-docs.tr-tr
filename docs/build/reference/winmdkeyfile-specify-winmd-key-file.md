@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ffa36a462c8cc1da25f20752bf38c3b79f642448
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bc6fa7ff554a15e2d9f13ebfa21e577581ddbad0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="winmdkeyfile-specify-winmd-key-file"></a>/WINMDKEYFILE (winmd Anahtar Dosyası Belirtin)
 Bir anahtar veya bir Windows çalışma zamanı meta verileri (.winmd) dosyasını imzalamak için bir anahtar çifti belirtir.  
@@ -42,4 +43,4 @@ Bir anahtar veya bir Windows çalışma zamanı meta verileri (.winmd) dosyasın
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

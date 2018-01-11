@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4f2d0399925c27e75c465f905f52e7e2ed2ba86f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b9a661f183816fec0f7a71c990f1508338100f4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="f-new-features-and-clarifications-in-version-20"></a>F Yeni özellikler ve açıklamalar sürüm 2.0
 Bu ekte sürüm 2.0 sürüm 1.0 taşımada OpenMP C/C++ belirtimi anahtar değişiklikler özetlenmektedir. Aşağıdaki öğeler belirtimine eklenen yeni özellikler şunlardır:  

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4e60e8918d33594df6d362eeed3a195484962d32
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce2e30be92e555584fef0977674b03a550500e6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-2-c4156"></a>Derleyici Uyarısı (Düzey 2) C4156
 dizi biçimi 'Delete'; kullanmadan bir dizi ifadesi silme Değiştirilen dizi biçimi  

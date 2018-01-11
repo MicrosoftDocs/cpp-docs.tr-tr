@@ -33,11 +33,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6062cec95c2471408db4e67f97dac4fddb5233e2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e2df087072d7f34123b00acafe52c130598592a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="expanddbg"></a>_expand_dbg
 Belirtilen bir yığınındaki bellek bloğu genişletmeden veya (yalnızca hata ayıklama sürümü) blok daraltılırken göre yeniden boyutlandırır.  

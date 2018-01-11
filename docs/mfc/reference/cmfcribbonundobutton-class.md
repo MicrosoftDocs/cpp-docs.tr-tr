@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f7d59d91f82a0fa86efcae7214874e0b2ca16a12
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 720a1de11dcf4c37b4b321bb0e014a9ae4e2e459
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton sınıfı
 `CMFCRibbonUndoButton` Sınıfı en son kullanıcı komutlarını içeren bir açılan liste düğmesi uygular. Kullanıcılar, bir veya daha fazla en son komut Yinele ya da bunları geri almak için aşağı açılan listeden seçebilirsiniz.  
@@ -158,4 +159,4 @@ virtual BOOL HasMenu() const;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCRibbonGallery sınıfı](../../mfc/reference/cmfcribbongallery-class.md)   
- [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)
+ [CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)

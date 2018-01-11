@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e02161133d0ea992daa147ff2ed9444ef3870b4c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ddf04fdb32d34c83761623acffbcbc3bdc88d369
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scrolling-arranging-sorting-and-finding-in-list-controls"></a>Liste Denetimlerinde Kaydırma, Düzenleme Sıralama ve Bulma
 Liste denetimleri ([CListCtrl](../mfc/reference/clistctrl-class.md)) varsayılan olarak kaydırılabilir şunlardır. Daha fazla bilgi için bkz: [kaydırma konumunu](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows SDK ve [kaydırma](../mfc/reference/clistctrl-class.md#scroll) üye işlevi.  
@@ -35,5 +36,5 @@ Liste denetimleri ([CListCtrl](../mfc/reference/clistctrl-class.md)) varsayılan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

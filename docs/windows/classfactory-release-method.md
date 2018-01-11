@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eccb21b6814626a5d7785781553102becbc332d8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b53ba7e09e372bb7639c70cc2ee56a0e6a489f4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classfactoryrelease-method"></a>ClassFactory::Release Yöntemi
 Başvuru sayısı için geçerli ClassFactory nesnesi azaltır.  
@@ -42,4 +45,4 @@ STDMETHOD_(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClassFactory sınıfı](../windows/classfactory-class.md)
+ [ClassFactory Sınıfı](../windows/classfactory-class.md)

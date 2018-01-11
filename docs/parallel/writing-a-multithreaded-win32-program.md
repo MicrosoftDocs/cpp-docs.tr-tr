@@ -25,11 +25,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e431c73b94975904a64b60c7541a2d665267d5b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ede0e6dc1740f93f4905dc69b1927aee0d1a7ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
 Birden çok iş parçacığı sahip bir program yazdığınızda, davranışlarını koordine gerekir ve [programın kaynaklarının kullanımını](#_core_sharing_common_resources_between_threads). Ayrıca her iş parçacığı aldığından emin olmak gerekir [kendi yığını](#_core_thread_stacks).  
@@ -70,4 +71,4 @@ ReleaseMutex( hIOMutex);
  Win32 ayrıca iş parçacığı yerel depolaması (iş parçacığı başına verileri depolamak için TLS) sağlar. Daha fazla bilgi için bkz: [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ve Win32 ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-c-and-win32.md)
+ [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)

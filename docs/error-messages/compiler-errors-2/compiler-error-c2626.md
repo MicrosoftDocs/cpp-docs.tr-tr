@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 54cee1b985f53e25a0ceb2426231440f1a1bd9bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 837fae0a32d473b5bf9adcf5c5fd4c564c7b033a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2626"></a>Derleyici Hatası C2626
 'tanımlayıcısı': bir özel veya korumalı veri üyesi bir anonim yapı ya da UNION izin verilmiyor  

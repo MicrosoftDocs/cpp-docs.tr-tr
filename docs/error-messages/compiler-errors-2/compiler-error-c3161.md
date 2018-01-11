@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4be981b2af166d85a3a83209a901f3e3e51b6246
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0cdbbd9364435ebcfad114331b6ba7289cb8010
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3161"></a>Derleyici Hatası C3161
 'arabirimi': sınıf iç içe geçme, yapısı, UNION veya arabirim arabiriminde; geçersiz iç içe bir sınıf, yapı veya birleşim arabiriminde geçersiz  

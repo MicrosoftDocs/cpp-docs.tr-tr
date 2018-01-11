@@ -71,11 +71,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4db8a7ee97c414a7775df393d419c7d12d61cdbf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f7a2b0e1dd95b460d6b6007e79378bc69f1b4ce
+ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 Microsoft Foundation Class dosya sınıfları için temel sınıf.  
@@ -183,7 +184,7 @@ virtual void Abort();
 ```  
 CFile();  
 CFile(CAtlTransactionManager* pTM);  
-  CFile(HANDLE hFile);
+CFile(HANDLE hFile);
 
  
 CFile(
@@ -834,4 +835,4 @@ virtual void Write(
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CStdioFile sınıfı](../../mfc/reference/cstdiofile-class.md)   
- [CMemFile sınıfı](../../mfc/reference/cmemfile-class.md)
+ [CMemFile Sınıfı](../../mfc/reference/cmemfile-class.md)

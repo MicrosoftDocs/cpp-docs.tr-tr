@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7753e30e305b7b36adc3b4d2b535f755fa455bdd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c7c8158d798df3fb48c45194ff6a01a1cbf3ab4a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3531"></a>Derleyici Hatası C3531
 'simgesi': türü içeren 'auto' bir simge bir başlatıcı olmalıdır  
@@ -46,4 +47,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Auto anahtar sözcüğü](../../cpp/auto-keyword.md)
+ [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

@@ -14,11 +14,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0e1abb5cdebca8c19aeeb4ec00fbc46b3120170d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7f5a767995ce0484552d96429573e0b355820207
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="consuming-generics-ccli"></a>Genel Türleri Kullanma (C++/CLI)
 Genel türler bir .NET dilinde yazılan diğer .NET dillerinde kullanılabilir. Şablonlar, derlenmiş bir bütünleştirilmiş genel hala genel kalır. Bu nedenle, bir genel türü farklı bir derleme ve hatta, genel tür tanımlandı derleme farklı bir dilde örneği.  
@@ -126,4 +129,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

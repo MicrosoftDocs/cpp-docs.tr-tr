@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77bb27558c702d8d10dcbf5e50f369d8d0479716
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ab2da8cc885f94bf15164ff17fdef2b2af13a41
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-carchive-ltlt-and-gtgt-operators"></a>CArchive kullanarak &lt; &lt; ve &gt; &gt; işleçleri
 `CArchive`sağlar <\< ve >> yazma ve okuma basit veri türleri için işleçleri yanı `CObject`s için ve bir dosya.  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/24/2017
   
 ||||  
 |-|-|-|  
-|`CObject*`|**Boyut ve CSize**|**kayan nokta**|  
+|`CObject*`|**Boyut ve CSize**|**float**|  
 |**WORD**|`CString`|**NOKTASI** ve`CPoint`|  
 |`DWORD`|**BAYT**|`RECT`ve`CRect`|  
 |**Çift**|**UZUN**|`CTime`ve`CTimeSpan`|  
@@ -68,5 +69,5 @@ ms.lasthandoff: 10/24/2017
  [!code-cpp[NVC_MFCSerialization#11](../mfc/codesnippet/cpp/using-the-carchive-output-and-input-operators_5.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)
+ [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

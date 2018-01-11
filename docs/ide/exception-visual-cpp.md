@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 687d907b243e62c3fa31b93c0aaebc5180d1cc17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c07dde806938b38dd55a3258b3724b0937d5601d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltexceptiongt-visual-c"></a>&lt;özel durum&gt; (Visual C++)
 \<Özel durum > etiketi hangi özel durum belirtmenize olanak sağlar. Bu etiket için bir yöntem tanımını uygulanır.  
@@ -75,4 +76,4 @@ public ref class TestClass {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

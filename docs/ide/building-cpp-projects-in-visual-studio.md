@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0aea958eb441f3b2b4d1adb993f1b92ae8359530
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: cd4934f3075f963efe59e8d73d8c72347fd53912
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="building-c-projects-in-visual-studio"></a>Visual Studio'da C++ Projeleri Derleme
 Visual Studio tümleşik geliştirme ortamında (IDE), çözümün tamamında ya da tek bir proje oluşturmak için birkaç yolu vardır. Derleme ayarlarını değiştirin ve geliştirme sürecini daha verimli hale getirmek için özel derleme adımları belirtin.  
@@ -55,35 +56,35 @@ Visual Studio tümleşik geliştirme ortamında (IDE), çözümün tamamında ya
  Yapı, yapı ayarlarını değiştirin ve özel belirleme hakkında daha fazla adımları yapı okumak için aşağıdaki makalelere bakın.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Özel derleme adımlarını ve derleme olaylarını anlama](../ide/understanding-custom-build-steps-and-build-events.md)  
+ [Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](../ide/understanding-custom-build-steps-and-build-events.md)  
  Tümleşik geliştirme ortamını yapı işleminde özelleştirmeyi açıklar.  
   
- [Derleme komutları ve özellikler için ortak makroları](../ide/common-macros-for-build-commands-and-properties.md)  
+ [Genel Derleme Komutları ve Özellikler Makroları](../ide/common-macros-for-build-commands-and-properties.md)  
  Dizeleri olduğu kabul edilir kullanabileceğiniz makroları listeler.  
   
- [Harici projeler derleme](../ide/building-external-projects.md)  
+ [Harici Projeler Derleme](../ide/building-external-projects.md)  
  Tümleşik geliştirme ortamı dışında özelliklerini kullanabilmeniz proje oluşturma açıklanır.  
   
- [Proje dosyaları](../ide/project-files.md)  
+ [Proje Dosyaları](../ide/project-files.md)  
  .Vcxproj dosyasının XML yapısını gösterir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [VC ++ dizinleri, projeler, Seçenekler iletişim kutusu](vcpp-directories-property-page.md)  
  (Yalnızca MSBuild Proje) Yürütülebilir dosyalar için arama yolu değiştirmek, bir derleme sırasında dosyaları, kitaplık dosyaları ve kaynak kodu dosyaları dahil etme açıklanmaktadır.  
   
- [Derleme ve oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio)  
+ [Derleme ve Oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio)  
  Visual Studio içinde oluşturma hakkında bilgi sağlar.  
   
- [C/C++ programları oluşturma](../build/building-c-cpp-programs.md)  
+ [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
  Komut satırından veya Visual Studio tümleşik geliştirme ortamı'ndan programınızı oluşturma açıklayan konulara bağlantılar sağlar.  
   
- [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md)  
+ [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)  
  C++, derleyici ve bağlayıcı programları seçenekleri ve ek derleme araçları oluşturmaya genel bakış için bağlantılar sağlar.  
   
- [Visual C++'ın önceki sürümlerinden yükseltme projeleri](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
+ [Önceki Visual C++ Sürümü Projelerini Yükseltme](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
  C++ projenizi derleyici araç setini daha yeni sürümlerine yükseltme konusunda sorunlar kapsayan konulara bağlantılar sağlar.  
   
-[Visual C++ taşıma ve yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)  
+[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)  
   Visual Studio'nun önceki sürümleri oluşturulan C++ uygulamalarını yükseltme ve ayrıca dışında Visual Studio Araçları ile oluşturulmuş uygulamalar geçirme hakkında ayrıntılı bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

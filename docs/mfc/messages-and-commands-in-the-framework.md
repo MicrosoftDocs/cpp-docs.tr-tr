@@ -18,18 +18,19 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ba55de8c308e7f2a76559006ff5dad0a7fe6f5d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 390f094b05994dcf2b3b2351a24f163b06554f84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="messages-and-commands-in-the-framework"></a>Framework'teki İletiler ve Komutlar
 Microsoft Windows "ileti güdümlü." için yazılmış uygulamalar Fare tıklamaları, tuş vuruşları, pencere hareketleri vb. gibi olaylara yanıt olarak, Windows uygun pencere iletileri gönderir. Framework uygulamalarını Windows için başka bir uygulama gibi Windows iletilerini işleme. Ancak framework de daha kolay, daha rahat ve daha iyi iletilerini işleme kapsüllenmiş olun bazı geliştirmeler içerir.  
   
  Aşağıdaki konular, makale ailesi geri kalanı iletiler ve komutlar tartışmak için kullanılan anahtar terimleri tanıtmaktadır:  
   
--   [İletileri](../mfc/messages.md)  
+-   [İletiler](../mfc/messages.md)  
   
 -   [İleti işleyicileri](../mfc/message-handlers.md)  
   
@@ -46,5 +47,5 @@ Microsoft Windows "ileti güdümlü." için yazılmış uygulamalar Fare tıklam
 -   [Komut hedefleri](../mfc/command-targets.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
+ [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
 

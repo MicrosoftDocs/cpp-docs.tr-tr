@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c3ea007346793f8d06ac85f20649b7d348014e17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92497027db3a2449914696f03fc86a144a48b62e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0032"></a>Proje Derleme Hatası PRJ0032
 Proje düzeyi özel derleme adımı için 'Outputs' özelliği, 'out 'macro_expansion' sonucunu veren makrosu' içeriyor.  

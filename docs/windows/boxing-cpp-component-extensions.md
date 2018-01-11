@@ -14,11 +14,14 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8d597466204aa17475ee732b77f321464ccc010
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 15fa5471280935c54cdb936af378634e2b60cacd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
 Visual C++ derleyicisi değer türleri adlı bir işlem nesneleri dönüştürebilir *kutulama*ve Dönüştür nesneleri değer türleri olarak adlandırılan bir işlemde *kutudan çıkarma*.  
@@ -88,13 +91,13 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
   
  Daha fazla bilgi için bkz.:  
   
--   [Nasıl yapılır: açık şekilde istek paketleme](../dotnet/how-to-explicitly-request-boxing.md)  
+-   [Nasıl yapılır: Açık Şekilde İstek Paketleme](../dotnet/how-to-explicitly-request-boxing.md)  
   
--   [Nasıl yapılır: değer türleri oluşturmak ve örtük kutulamayı için gcnew kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)  
+-   [Nasıl yapılır: Değer Türleri Oluşturmak için gcnew Kullanma ve Örtük Kutulamayı Kullanma](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)  
   
--   [Nasıl yapılır: Unbox](../dotnet/how-to-unbox.md)  
+-   [Nasıl yapılır: Açma](../dotnet/how-to-unbox.md)  
   
--   [Standart dönüştürmeler ve örtük kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)  
+-   [Standart Dönüştürmeler ve Örtük Kutulama](../dotnet/standard-conversions-and-implicit-boxing.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
@@ -174,7 +177,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 1  
@@ -197,4 +200,4 @@ in func2(System::ValueType^)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

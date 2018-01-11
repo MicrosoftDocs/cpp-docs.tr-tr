@@ -25,11 +25,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 98c59ec6c0eed419cdac05a39a65ea1bde624d49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 49cc917ddcd4d7de274a8f6bb1f61c940493a365
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock Sınıfı
 Yalnızca dönmesini yerel yazıcı tercih Okuyucu-Yazıcı sırası tabanlı kilidi. Kilidi okuyucular yazıcılarının sürekli yükü altında starves ve daha önce yazıcılarının - ilk (FIFO) erişimi verir.  
@@ -60,7 +61,7 @@ class reader_writer_lock;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[kilitleme](#lock)|Okuyucu-Yazıcı kilit bir yazıcı alır.|  
+|[lock](#lock)|Okuyucu-Yazıcı kilit bir yazıcı alır.|  
 |[lock_read](#lock_read)|Okuyucu-Yazıcı kilit okuyucu olarak alır. Yazarları varsa, etkin okuyucular bunlar yapılır kadar beklemek zorunda. Okuyucu sadece kilidi ilgi kaydeder ve serbest yazarlar için bekler.|  
 |[try_lock](#try_lock)|Okuyucu-Yazıcı yazan engellenmeden kilidi dener.|  
 |[try_lock_read](#try_lock_read)|Okuyucu-Yazıcı okuyucu olarak engellenmeden kilidi dener.|  
@@ -216,4 +217,4 @@ void unlock();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [critical_section sınıfı](critical-section-class.md)
+ [critical_section Sınıfı](critical-section-class.md)

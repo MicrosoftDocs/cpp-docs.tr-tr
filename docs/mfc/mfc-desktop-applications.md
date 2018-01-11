@@ -20,11 +20,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b8bc3b4b2273db0c5b090bf24875daafe7c63ec6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5f99270afc1f603b8e5e44a23cd422f96558efb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-desktop-applications"></a>MFC Masaüstü Uygulamaları
 Microsoft Foundation Class (MFC) kitaplığı, nesne yönelimli bir sarmalayıcı çoğunu Win32 ve COM API'leri sağlar. Çok basit Masaüstü uygulamaları oluşturmak için kullanılır ancak, birden çok denetimleri ile daha karmaşık kullanıcı arabirimleri geliştirmek gerektiğinde en yararlı olur. MFC uygulamaları Office stili kullanıcı arabirimleri ile oluşturmak için kullanabilirsiniz.  
@@ -46,41 +47,41 @@ Microsoft Foundation Class (MFC) kitaplığı, nesne yönelimli bir sarmalayıc�
  [Kavramları](mfc-concepts.md)  
  MFC konuları kavramsal makalelerini.  
   
- [Hiyerarşi grafiği](hierarchy-chart.md)  
+ [Hiyerarşi Grafiği](hierarchy-chart.md)  
  Görsel olarak sınıf ilişkileri Sınıf Kitaplığı'nda ayrıntılı olarak açıklanmaktadır.  
   
  [Sınıfa genel bakış](class-library-overview.md)  
  MFC Kitaplığı kategoriye göre sınıflarda listeler.  
   
- [İzlenecek yollar](walkthroughs-mfc.md)  
+ [İzlenecek Yollar](walkthroughs-mfc.md)  
  MFC Kitaplığı özelliklerle ilişkili çeşitli görevleri rehberlik makaleleri içerir.  
   
  [Teknik notlar](mfc-technical-notes.md)  
  MFC geliştirme ekibi sınıf kitaplığı tarafından yazılan özel konulara bağlantılar sağlar.  
   
- [MFC için özelleştirme](customization-for-mfc.md)  
+ [MFC için Özelleştirme](customization-for-mfc.md)  
  MFC uygulamanız özelleştirmek için bazı ipuçları verilmektedir.  
   
- [Sınıfları](reference/mfc-classes.md)  
+ [Sınıflar](reference/mfc-classes.md)  
  MFC sınıfları için üstbilgi dosya bilgileri ve bağlantılar sağlar.  
   
- [İç sınıflar](reference/internal-classes.md)  
+ [İç Sınıflar](reference/internal-classes.md)  
  MFC'de dahili olarak kullanılır. Tamlık için bu bölümde bu dahili sınıflar açıklanmaktadır, ancak kodunuzda doğrudan kullanılması amaçlanmamıştır.  
   
  [Makroları ve genel öğeleri](reference/mfc-macros-and-globals.md)  
  Makrolar ve genel işlevler MFC Kitaplığı'nda bağlantılar sağlar.  
   
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](reference/structures-styles-callbacks-and-message-maps.md)  
+ [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](reference/structures-styles-callbacks-and-message-maps.md)  
  Yapılar, stiller, geri aramalar ve ileti eşlemeleri MFC Kitaplığı tarafından kullanılan bağlantılar sağlar.  
   
- [MFC sihirbazları ve iletişim kutuları](reference/mfc-wizards-and-dialog-boxes.md)  
+ [MFC Sihirbazları ve İletişim Kutuları](reference/mfc-wizards-and-dialog-boxes.md)  
  MFC uygulamaları oluşturmak için Visual Studio özellikleri Kılavuzu.  
   
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)  
+ [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
  UI dizeler ve iletişim kutusu düzeni gibi statik kullanıcı arabirimi verileri yönetmek için kaynak dosyalarını kullanma  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Hiyerarşi grafiği kategorileri](hierarchy-chart-categories.md)  
+ [Hiyerarşi Grafiği Kategorileri](hierarchy-chart-categories.md)  
  MFC hiyerarşisi grafik kategoriye göre açıklar.  
   
  [ATL/MFC sınıfları paylaşılan](../atl-mfc-shared/atl-mfc-shared-classes.md)  

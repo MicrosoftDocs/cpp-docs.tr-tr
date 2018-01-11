@@ -30,11 +30,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dc49f795fb4c8f987271bd4f147a04e3ac873e33
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7a15b041f638312081417daae8c800647fbfb7d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 Yürütme bağlamı için bir Özet temsil eder.  
@@ -57,7 +58,7 @@ class Context;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Engelle](#block)|Geçerli bağlam engeller.|  
+|[Block](#block)|Geçerli bağlam engeller.|  
 |[CurrentContext](#currentcontext)|Bir işaretçi geçerli bağlamda döndürür.|  
 |[GetID](#getid)|Bağlam ait olduğu Zamanlayıcı içinde benzersizdir bağlamı için bir tanımlayıcı döndürür.|  
 |[Getschedulegroupıd](#getschedulegroupid)|Bağlam üzerinde çalışmakta zamanlama grubu için bir tanımlayıcı döndürür.|  

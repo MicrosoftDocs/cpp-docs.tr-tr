@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e3c189cf7e3c290844d0ce741d006ba70229f072
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b674c91ab5a27486b8212b9945957cd1074d5912
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4168"></a>Derleyici Uyarısı (düzey 1) C4168
 Derleyici sınırı: hata ayıklayıcı türleri dışında 'veritabanı' program veritabanını silin ve yeniden derleyin  

@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 521e45ab81e9d164e38c1ae9af8b7d0cf1048b4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ca88897a16a78dcb0f331f2ce56db29ab692a3c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="uniquecopy-stlclr"></a>unique_copy (STL/CLR)
 Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.  
@@ -43,4 +46,4 @@ template<class _InIt, class _OutIt, class _Pr> inline
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [algoritma (STL/CLR)](../dotnet/algorithm-stl-clr.md)
+ [algorithm (STL/CLR)](../dotnet/algorithm-stl-clr.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 18f168c9a3faf4a6bc2676e142a35ee6314db391
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 79b22e0634a28d208081d29d0fa3ec0cb01456bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="winmddelaysign-partially-sign-a-winmd"></a>/WINMDDELAYSIGN (winmd Dosyasını Kısmen İmzalayın)
 Kısmi bir Windows çalışma zamanı meta verileri (.winmd) dosya imzalama dosyasında ortak anahtarı koyarak sağlar.  
@@ -42,4 +43,4 @@ Kısmi bir Windows çalışma zamanı meta verileri (.winmd) dosya imzalama dosy
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

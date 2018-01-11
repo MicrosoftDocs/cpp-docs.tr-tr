@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dae377a89cb3264d8129c7d863d9d922d7bef876
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c971a4aebcd0f0a7c0baa59a445059f681f7e8af
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cachefreelist-class"></a>cache_freelist Sınıfı
 Tanımlayan bir [ayırıcısı engelleme](../standard-library/allocators-header.md) ayırır ve bellek blokları tek bir boyutta kaldırır.  
@@ -59,7 +60,7 @@ class cache_freelist
   
 |||  
 |-|-|  
-|[ayırma](#allocate)|Bir bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir bellek bloğu ayırır.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
   
 ## <a name="requirements"></a>Gereksinimler  

@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2e5a91ffb267d413c980d2313efbf9b0c41c0932
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3a9e4259c70aff53252cd91db217a96d9d5480a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="redistributing-an-atl-application"></a>ATL uygulamasını yeniden dağıtma
 Visual Studio 2012'den itibaren Etkin Şablon kitaplığı (ATL) yalnızca üstbilgi bir kitaplık değil. ATL projeleri ATL seçeneği için dinamik bir bağlantı yok. Yeniden dağıtılabilir ATL Kitaplık gereklidir.  
@@ -54,4 +55,4 @@ filename /regserver
  OLE DB Şablonları uygulamaları için hedef bilgisayarda Microsoft Data Access Components (MDAC) dosyaların en son sürümlerini olduğundan emin olun. Daha fazla bilgi için bkz: [veritabanı destek dosyalarını yeniden dağıtma](../ide/redistributing-database-support-files.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md)
+ [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

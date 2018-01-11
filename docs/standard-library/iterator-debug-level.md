@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 14939c7c39d207e686bcccf786dcabf93e809059
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 08b69d4f3cf8f5065cbae2708dace20de3b1f63f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iteratordebuglevel"></a>_ITERATOR_DEBUG_LEVEL
 `_ITERATOR_DEBUG_LEVEL` Makrosu denetimleri olup olmadığını [işaretli yineleyiciler](../standard-library/checked-iterators.md) ve [hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md) etkinleştirilir. Bu makrosu yerini alır ve eski birleştirir `_SECURE_SCL` ve `_HAS_ITERATOR_DEBUGGING` makroları.  
@@ -73,4 +74,4 @@ Bir kaynak dosyasında yineleyiciler tanımlamak tüm standart kitaplık üstbil
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [İşaretli yineleyiciler](../standard-library/checked-iterators.md)   
 [Hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)   
-[Güvenli kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)
+[Güvenli Kitaplıklar: C++ Standart Kitaplık](../standard-library/safe-libraries-cpp-standard-library.md)

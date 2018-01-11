@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 987691d2eaf8ae2f6c8f724fb8bcf4f26ad68dcd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 835c396c36a23d05a1e3512fa7ad5e4c4e81c795
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locale"></a>Yerel Ayar
 *Yerel ayar* programınızı özelleştirmek için kullanabileceğiniz ülke/bölge ve dil ayarları için başvuruyor. Bazı yerel ayara bağımlı kategorileri, tarihleri ve parasal değerleri için görüntü biçimlerini içerir. Daha fazla bilgi için bkz: [yerel ayar kategorileri](../c-runtime-library/locale-categories.md).  
@@ -79,4 +80,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

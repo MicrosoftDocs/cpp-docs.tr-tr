@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ab60d1275925504a746f8b6d01003129fd688673
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dfe8ab231d6bf4051cc730ff1beb23f93a8f301d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-identifiers"></a>C Tanımlayıcıları
 "Tanımlayıcıları" veya "simgelerini" sağladığınız değişkenleri, türleri, İşlevler ve etiketleri programınızdaki adlardır. Yazım denetimi ve herhangi bir anahtar sözcük durumundan tanımlayıcı adları farklı olmalıdır. Anahtar sözcükler (C ya da Microsoft) tanımlayıcı olarak kullanamazsınız; Bunlar, özel kullanım için ayrılmıştır. Tanımlayıcı değişkeni, tür veya işlev bildiriminde belirterek oluşturun. Bu örnekte, `result` bir tamsayı değişken için bir tanımlayıcıdır ve `main` ve `printf` işlevleri için tanımlayıcı adları.  
@@ -108,4 +109,4 @@ LastNum
  Tanımlayıcı "adı verilir program ve"aynı adlı başka bir kapsamda aynı tanımlayıcısına başvuruyor olup olmadığını belirleyen bağlantı,"bölgesi kapsamına" vardır. Bu konularda açıklanmıştır [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C öğeleri](../c-language/elements-of-c.md)
+ [C Öğeleri](../c-language/elements-of-c.md)

@@ -29,11 +29,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 719acc2706483a3fcfa5506da077cee9e5fc1a5b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad97690ca948525e9a0920d087e4dfd617a11b4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE Denetimleri için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu, bir iletişim kutusu, form görünümü veya denetim görünüm nesnesi OLE denetimi özelliği veri üyesi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi arasında veri değişimi için kullanılan DDX_OC işlevleri listeler.  
@@ -76,7 +77,7 @@ void AFXAPI DDX_OCBool(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -106,7 +107,7 @@ void AFXAPI DDX_OCBoolRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -136,7 +137,7 @@ void AFXAPI DDX_OCColor(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -166,7 +167,7 @@ void AFXAPI DDX_OCColorRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -202,7 +203,7 @@ void AFXAPI DDX_OCFloat(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -238,7 +239,7 @@ void AFXAPI DDX_OCFloatRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -274,7 +275,7 @@ void AFXAPI DDX_OCInt(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -310,7 +311,7 @@ void AFXAPI DDX_OCIntRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -340,7 +341,7 @@ void AFXAPI DDX_OCShort(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -370,7 +371,7 @@ void AFXAPI DDX_OCShortRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -400,7 +401,7 @@ void AFXAPI DDX_OCText(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -430,7 +431,7 @@ void AFXAPI DDX_OCTextRO(
  `dispid`  
  Denetimin özelliğini gönderme kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  

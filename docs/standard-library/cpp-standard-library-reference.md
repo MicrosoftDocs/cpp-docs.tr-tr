@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d7c2c20604b2630b5125da839b275170559c08e0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dc867d0a39a3e3869403c359e2d19a258366b679
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 C++ programı çok sayıda işlevler üzerinde bu C++ Standart Kitaplığı uyumlu uygulamasından çağırabilirsiniz. Bu işlevler giriş ve çıkış gibi temel Hizmetleri gerçekleştirmek ve sık kullanılan işlemleri verimli uygulamaları sağlar.  
@@ -30,10 +31,10 @@ C++ programı çok sayıda işlevler üzerinde bu C++ Standart Kitaplığı uyum
  Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)  
+ [C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)  
  C++ Standart Kitaplığı Microsoft uyarlamasını genel bir bakış sağlar.  
   
- [iostream programlama](../standard-library/iostream-programming.md)  
+ [iostream Programlaması](../standard-library/iostream-programming.md)  
  İostream programlaması genel bir bakış sağlar.  
   
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)  

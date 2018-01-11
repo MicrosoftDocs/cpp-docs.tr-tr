@@ -43,11 +43,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f4ab0d0b0d71455dfae3100a7ae291ed98764c48
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3007c98629b83e6302556582220684075d5049b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
 Konumlandırılmış bir köprü Şerit'te uygular. Tıklattığınızda köprü bir Web sayfası açılır.  
@@ -269,4 +270,4 @@ void SetLink(LPCTSTR lpszLink);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)
+ [CMFCRibbonButton Sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)

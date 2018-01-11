@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e031cf6d142e611c81ae73ee8d201a12acdea529
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ca598a9ac6a146457d24bcc80e54d003123d7dd4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri değişimi (DDX) yordamları listeler.  
@@ -92,7 +93,7 @@ void AFXAPI DDX_CBString(
  `nIDC`  
  Birleşik giriş kutusu denetimi denetim özelliğiyle ilişkili kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -123,7 +124,7 @@ void AFXAPI DDX_CBStringExact(
  `nIDC`  
  Birleşik giriş kutusu denetimi denetim özelliğiyle ilişkili kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -154,7 +155,7 @@ void AFXAPI DDX_Check(
  `nIDC`  
  Denetim özellik ile ilişkilendirilmiş onay kutusu denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -220,7 +221,7 @@ void AFXAPI DDX_DateTimeCtrl(
  `nIDC`  
  Üye değişkeni ile ilişkilendirilmiş tarih ve Saat Seçici denetimini kaynak kimliği.  
   
- *değer*  
+ *value*  
  İlk iki sürümlerinde, bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni, iletişim kutusu, form görünümü veya ile veri değişimi denetim görünüm nesnesi. Bir başvuru üçüncü sürümündeki bir `CString` veri üyesi denetim görünüm nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -288,7 +289,7 @@ void AFXAPI DDX_IPAddress(
  `nIDC`  
  Denetim özelliği ile ilişkili IP adresi denetim kaynak kimliği.  
   
- *değer*  
+ *value*  
  Bir başvuru `DWORD` IP adresi denetim dört alanı değerini içeren. Alanları doldurulmuş veya gibi görünecek.  
   
 |Alan|Alan değeri içeren BITS|  
@@ -353,7 +354,7 @@ void AFXAPI DDX_LBString(
  `nIDC`  
  Denetim özellik ile ilişkilendirilmiş liste kutusu denetimini kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -386,7 +387,7 @@ void AFXAPI DDX_LBStringExact(
  `nIDC`  
  Denetim özellik ile ilişkilendirilmiş liste kutusu denetimini kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -424,7 +425,7 @@ void AFXAPI DDX_MonthCalCtrl(
  `nIDC`  
  Aylık takvim denetiminin kaynak Kimliğini üye değişkeni ile ilişkilendirilmiş.  
   
- *değer*  
+ *value*  
  Bir başvuru bir `CTime` veya `COleDateTime` üye değişkeni iletişim kutusu, form görünümü veya ile veri değişimi denetim görünüm nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -456,7 +457,7 @@ void AFXAPI DDX_Radio(
  `nIDC`  
  Gruptaki ilk radyo denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeni bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -486,7 +487,7 @@ void AFXAPI DDX_Scroll(
  `nIDC`  
  Denetim özellik ile ilişkilendirilmiş kaydırma çubuğu denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya denetim üye değişkeni bir başvuru veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -514,7 +515,7 @@ void AFXAPI DDX_Slider(
  `nIDC`  
  Kaydırıcı denetimi kaynak kimliği.  
   
- *değer*  
+ *value*  
  Değiştirilebilmesi için değeri referansı. Bu parametre tutan veya kaydırıcı denetimin geçerli konumunu ayarlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -592,7 +593,7 @@ void AFXAPI DDX_Text(
  `nIDC`  
  Bir düzen denetimi iletişim kutusunda, form görünümü veya denetim görünüm nesnesi kimliği.  
   
- *değer*  
+ *value*  
  İletişim kutusunda, form görünümü veya denetim görünüm nesnesi veri üyesine bir başvuru. Veri türü *değeri* bağımlı olduğu aşırı yüklenmiş sürümlerinin `DDX_Text` kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  

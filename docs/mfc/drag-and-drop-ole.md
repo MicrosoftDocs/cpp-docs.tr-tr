@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5efc5a12acbad786039b687e5a9e3bb00e62e090
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a852e597c06a08c3e9eb83731dc7da7df077435
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="drag-and-drop-ole"></a>Sürükleme ve Bırakma (OLE)
 Veri kopyalama ve yapıştırma için öncelikle bir kısayol, OLE sürükle ve bırak özelliğidir. Veya veri kopyalamak için Pano'yu kullandığınızda, çeşitli adımları gereklidir. Verileri seçin, tıklatın **Kes** veya **kopya** gelen **Düzenle** menüsünde, hedef dosya, pencere veya uygulama, Git yerleştirin imleç istenen konumu ve tıklatın **Yapıştır** gelen **Düzenle** menüsü.  
@@ -41,13 +42,13 @@ Veri kopyalama ve yapıştırma için öncelikle bir kısayol, OLE sürükle ve 
   
  Sürükleme ve bırakma hakkında daha fazla bilgi için bkz:  
   
--   [Sürükle ve bırak: bir bırakma kaynağı uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)  
+-   [Sürükle ve Bırak: Bir Bırakma Kaynağı Uygulama](../mfc/drag-and-drop-implementing-a-drop-source.md)  
   
--   [Sürükle ve bırak: bir bırakma hedefi uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)  
+-   [Sürükle ve Bırak: Bir Bırakma Hedefi Uygulama](../mfc/drag-and-drop-implementing-a-drop-target.md)  
   
--   [Sürükle ve bırak: özelleştirme](../mfc/drag-and-drop-customizing.md)  
+-   [Sürükle ve Bırak: Özelleştirme](../mfc/drag-and-drop-customizing.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE](../mfc/ole-in-mfc.md)   
- [Veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)
+ [Veri Nesneleri ve Veri Kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md)
 

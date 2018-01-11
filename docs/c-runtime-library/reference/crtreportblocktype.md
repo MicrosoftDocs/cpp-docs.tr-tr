@@ -36,11 +36,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7ceee71188680503c6608ff37762012241c8b7be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 214f2f1393b793cca246d87946cf6f3dfc73fe4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtreportblocktype"></a>_CrtReportBlockType
 Belirli hata ayıklama yığını blok işaretçisi ile ilişkili blok türü/alt döndürür.  

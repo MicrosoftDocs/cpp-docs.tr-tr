@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9e5607fd240c7a97691189b8a3afa5e7c0171e26
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6ef567c39c93c3d43fdfc0fa63886144b03cd474
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="history-of-dcom"></a>DCOM Geçmişi
 Otomasyon, ilk olarak erken 1993 sunulmuştur, yalnızca aynı makinede çalışan uygulamalar arasında kullanılabilir. Rest olan OLE, COM (veya Bileşen Nesne modeli) olarak aynı bağlamasından paylaşılan olduğundan, ancak bu her zaman COM kendisini remoting özellikleri içerecek şekilde güncelleştirildiğinde, "Uzaktan erişilebilir" olacak üzere tasarlanmıştır. Dağıtılmış işlemi tamamen yerel işlemi geçiş var olan kodu çok az kayıpla veya hiç değişiklik gerekir, ayrıca planlandığı.  

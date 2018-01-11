@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4ff872fd95af540100ed71682c98a19936e87d7d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: efa74cde4843dacc60a6c399479e633aad005288
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-console-application"></a>Bir konsol uygulaması oluşturma
 Win32 konsol uygulaması oluşturmak için en kolay yolu, Win32 Uygulama Sihirbazı'nı kullanmaktır.  

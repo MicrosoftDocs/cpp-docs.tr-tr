@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d03b67b1207827ae753c9d2583d57eab49dc223a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7ed3f9adb564676d54e06152bfd7d277c4a5d952
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="textureview-class"></a>texture_view Sınıfı
 Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view`değer türü olan dokular okumak için yalnızca kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimleri okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
@@ -81,9 +82,9 @@ class texture_view<const value_type, _Rank>
 |[gather_blue](#gather_blue)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels mavi (z) bileşenlerinin döndürür.|  
 |[gather_green](#gather_green)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels yeşil (y) bileşenlerinin döndürür.|  
 |[gather_red](#gather_red)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels kırmızı (x) bileşenlerinin döndürür.|  
-|[Al](#get)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
+|[get](#get)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
 |[Örnek](#sample)|Fazla Yüklendi. Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatları ve ayrıntı düzeyi doku örnekleri.|  
-|[ayarlama](#set)|Bir öğenin değerini dizine göre ayarlar.|  
+|[set](#set)|Bir öğenin değerini dizine göre ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -501,4 +502,4 @@ typedef typename const value_type value_type;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

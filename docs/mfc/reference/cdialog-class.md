@@ -51,11 +51,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b823d40d4504be0180c3af3a6fb5359bf86725cd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 89c9670d19330e63a466c38a205a3122237e4f02
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 İletişim kutuları ekranda görüntülemek için kullanılan temel sınıf.  
@@ -133,7 +134,7 @@ class CDialog : public CWnd
   
  Daha fazla bilgi için `CDialog`, bkz:  
   
-- [İletişim kutuları](../../mfc/dialog-boxes.md)  
+- [İletişim Kutuları](../../mfc/dialog-boxes.md)  
   
 -   Bilgi Bankası makalesi Q262954: nasıl yapılır: bir Resizeable iletişim kutusu ile kaydırma çubukları oluşturma  
   
@@ -519,5 +520,5 @@ void SetHelpID(UINT nIDR);
  [MFC örnek DLGCBR32](../../visual-cpp-samples.md)   
  [MFC örnek DLGTEMPL](../../visual-cpp-samples.md)   
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

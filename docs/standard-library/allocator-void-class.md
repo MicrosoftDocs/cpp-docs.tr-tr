@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e1d9ddd5c719bffe8fec9c77c3495e7d170eaeb0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e6a457323d99ec36c019e099ebcd5fef4ab2f0b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocatorltvoidgt-class"></a>Allocator&lt;void&gt; sınıfı
 Türü için Şablon sınıfı ayırıcısı uzmanlaşması `void`, bu bağlamda anlamlı türleri tanımlama.  
@@ -64,7 +65,7 @@ class allocator<void> {
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

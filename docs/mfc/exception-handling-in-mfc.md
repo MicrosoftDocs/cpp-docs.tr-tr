@@ -44,11 +44,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d90482cc7b58962e76558a26bbf2777d8854e4ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 544130f27fb01d0d29652087351c8a5bbc5bd5c7
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
 Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İki mekanizma vardır:  
@@ -98,16 +99,16 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
   
 |Özel durum sınıfı|Açıklama|  
 |---------------------|-------------|  
-|[CMemoryException sınıfı](../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz|  
-|[CFileException sınıfı](../mfc/reference/cfileexception-class.md)|Dosya özel durumu|  
-|[CArchiveException sınıfı](../mfc/reference/carchiveexception-class.md)|Arşiv/seri hale getirme özel durumu|  
-|[CNotSupportedException sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Yanıt için desteklenmeyen hizmet isteği|  
-|[CResourceException sınıfı](../mfc/reference/cresourceexception-class.md)|Windows kaynak ayırma özel durumu|  
-|[CDaoException sınıfı](../mfc/reference/cdaoexception-class.md)|Veritabanı özel durumları (DAO sınıfları)|  
-|[CDBException sınıfı](../mfc/reference/cdbexception-class.md)|Veritabanı özel durumları (ODBC sınıfları)|  
-|[COleException sınıfı](../mfc/reference/coleexception-class.md)|OLE özel durumları|  
-|[COleDispatchException sınıfı](../mfc/reference/coledispatchexception-class.md)|Gönderme (Otomasyonu) özel durumlar|  
-|[CUserException sınıfı](../mfc/reference/cuserexception-class.md)|Bir ileti kutusu kullanıcıyla uyarıları özel durum sonra genel oluşturur [CException sınıfı](../mfc/reference/cexception-class.md)|  
+|[CMemoryException Sınıfı](../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz|  
+|[CFileException Sınıfı](../mfc/reference/cfileexception-class.md)|Dosya özel durumu|  
+|[CArchiveException Sınıfı](../mfc/reference/carchiveexception-class.md)|Arşiv/seri hale getirme özel durumu|  
+|[CNotSupportedException Sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Yanıt için desteklenmeyen hizmet isteği|  
+|[CResourceException Sınıfı](../mfc/reference/cresourceexception-class.md)|Windows kaynak ayırma özel durumu|  
+|[CDaoException Sınıfı](../mfc/reference/cdaoexception-class.md)|Veritabanı özel durumları (DAO sınıfları)|  
+|[CDBException Sınıfı](../mfc/reference/cdbexception-class.md)|Veritabanı özel durumları (ODBC sınıfları)|  
+|[COleException Sınıfı](../mfc/reference/coleexception-class.md)|OLE özel durumları|  
+|[COleDispatchException Sınıfı](../mfc/reference/coledispatchexception-class.md)|Gönderme (Otomasyonu) özel durumlar|  
+|[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Bir ileti kutusu kullanıcıyla uyarıları özel durum sonra genel oluşturur [CException sınıfı](../mfc/reference/cexception-class.md)|  
   
 > [!NOTE]
 >  MFC C++ özel durumlarını ve MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) anlatıldığı gibi [yapılandırılmış özel durum işleme](http://msdn.microsoft.com/library/windows/desktop/ms680657).  
@@ -115,27 +116,27 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
 ##  <a name="_core_further_reading_about_exceptions"></a>Özel durumlar hakkında daha fazla okuma  
  Aşağıdaki makaleler, özel durum teslim etme için MFC kitaplığını kullanarak açıklamaktadır:  
   
--   [Özel durumlar: Yakalama ve özel durumları silme](../mfc/exceptions-catching-and-deleting-exceptions.md)  
+-   [Özel Durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)  
   
--   [Özel durumlar: Özel durum içeriklerini İnceleme](../mfc/exceptions-examining-exception-contents.md)  
+-   [Özel Durumlar: Özel Durum İçeriklerini İnceleme](../mfc/exceptions-examining-exception-contents.md)  
   
--   [Özel durumlar: Özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md)  
+-   [Özel Durumlar: Özel Durumlarda Nesneleri Serbest Bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md)  
   
--   [Özel durumlar: Kendi İşlevlerinizden özel durumları atma](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)  
+-   [Özel Durumlar: Kendi İşlevlerinizden Özel Durum Atma](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)  
   
--   [Özel durumlar: Veritabanı özel durumları](../mfc/exceptions-database-exceptions.md)  
+-   [Özel durumlar: Veritabanı Özel Durumları](../mfc/exceptions-database-exceptions.md)  
   
--   [Özel durumlar: OLE özel durumları](../mfc/exceptions-ole-exceptions.md)  
+-   [Özel durumlar: OLE Özel Durumları](../mfc/exceptions-ole-exceptions.md)  
   
  Aşağıdaki makaleler MFC özel durum makroları C++ özel durum sözcüklerle karşılaştırır ve kodunuzu nasıl uyarlayabilirsiniz açıklanmaktadır:  
   
--   [Özel durumlar: Sürüm 3. 0'da özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)  
+-   [Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)  
   
--   [Özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md)  
+-   [Özel Durumlar: MFC Özel Durum Makrolarından Dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md)  
   
--   [Özel durumlar: MFC makroları ve C++ özel durumlarını kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)  
+-   [Özel Durumlar: MFC Makroları ve C++ Özel Durumlarını Kullanma](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ özel durum işleme](../cpp/cpp-exception-handling.md)   
- [I: kendi özel durum sınıfları nasıl oluşturulur](http://go.microsoft.com/fwlink/linkid=128045)
+ [I: kendi özel durum sınıfları nasıl oluşturulur](http://go.microsoft.com/fwlink/p/?linkid=128045)
 

@@ -27,11 +27,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a80e5d0815c919eaa1983d07d714cbe314a9916b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 484abaf5344400e03b53038d2c137497c202345f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
 Windows 98 ve Windows NT tarafından 3.51 ve sonraki sürümlerde desteklenen ortak denetimleri için belge görünüm mimarisi uyum sağlar.  
@@ -159,4 +160,4 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CTreeView sınıfı](../../mfc/reference/ctreeview-class.md)   
  [CListView sınıfı](../../mfc/reference/clistview-class.md)   
- [CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md)
+ [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)

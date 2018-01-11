@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84e603da97d31b240ad4b2d0471128be95028296
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70e2fd6d436120b6bae0cf02600a6d8866e11b39
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
 Rebar denetimiyle alt windows için kapsayıcı görevi görür. Bu alt windows, genellikle diğer denetimlerin bir rebar denetimi bant atanır. Rebar denetimiyle Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir bileşimini sahip her bant ile bir veya daha fazla bantları içerebilir. Ancak, bantlar birden fazla alt pencere içeremez.  
@@ -33,18 +34,18 @@ Rebar denetimiyle alt windows için kapsayıcı görevi görür. Bu alt windows,
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [CReBar vs. CReBarCtrl](../mfc/crebar-vs-crebarctrl.md)  
+-   [CReBar ile CReBarCtrl Karşılaştırması](../mfc/crebar-vs-crebarctrl.md)  
   
--   [Rebar denetimi oluşturma](../mfc/creating-a-rebar-control.md)  
+-   [Rebar Denetimi Oluşturma](../mfc/creating-a-rebar-control.md)  
   
--   [Rebar denetimleri ve bantları](../mfc/rebar-controls-and-bands.md)  
+-   [Rebar Denetimleri ve Bantları](../mfc/rebar-controls-and-bands.md)  
   
--   [Rebar denetimiyle birlikte bir resim listesi kullanma](../mfc/using-an-image-list-with-a-rebar-control.md)  
+-   [Rebar Denetimiyle Birlikte Bir Görüntü Listesi Kullanma](../mfc/using-an-image-list-with-a-rebar-control.md)  
   
--   [Rebar denetimiyle birlikte bir iletişim çubuğu kullanma](../mfc/using-a-dialog-bar-with-a-rebar-control.md)  
+-   [Rebar Denetimiyle Birlikte Bir İletişim Çubuğu Kullanma](../mfc/using-a-dialog-bar-with-a-rebar-control.md)  
   
--   [Bir Rebar denetiminde bildirim iletilerini işleme](../mfc/processing-notification-messages-in-a-rebar-control.md)  
+-   [Bir Rebar Denetiminde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-a-rebar-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

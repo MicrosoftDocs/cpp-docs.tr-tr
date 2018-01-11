@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aafa676a1c6b885b303634c4fc31bcbfc1c6f0ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 52ab28a015fa0312a5d064401451640c2747e9db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Nasıl yapılır: call ve transformer Sınıflarına İş İşlevleri Sağlama
 Bu konuda iş işlevleri sağlamak için çeşitli yollar gösterilmektedir [concurrency::call](../../parallel/concrt/reference/call-class.md) ve [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) sınıfları.  
@@ -69,4 +70,4 @@ Bu konuda iş işlevleri sağlamak için çeşitli yollar gösterilmektedir [con
  [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
  [Nasıl yapılır: veri ardışık düzeninde transformer kullanma](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)   
  [Çağrı sınıfı](../../parallel/concrt/reference/call-class.md)   
- [Transformer sınıfı](../../parallel/concrt/reference/transformer-class.md)
+ [transformer Sınıfı](../../parallel/concrt/reference/transformer-class.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 555c268a12cc37cbcbe00a7fc9ee4a166be2ea14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23ce2f2485c267e55dbc10954f8ba9abf17bd43b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3752"></a>Derleyici Hatası C3752
 'öznitelik sınıfı': öznitelik; sınıflandırmak olamaz 'anahtar sözcüğü' Bu bağlamda kullanılmamalıdır  

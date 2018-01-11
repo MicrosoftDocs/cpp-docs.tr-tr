@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aeea920579ddf6af71e3c3c9988c6315931f37f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3516f6968773f8aa866a4f2929c2c184e6ddb95
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="punctuation-and-special-characters"></a>Noktalama İşaretleri ve Özel Karakterler
 Noktalama işaretleri ve özel karakterler C karakter kümesinde derleyici veya derlenmiş program gerçekleştirdiği görevleri tanımlamak için program metin düzenleme gelen çeşitli kullanımlar vardır. Bir işlemin gerçekleştirilmesi için belirtmeyin. Bazı noktalama ayrıca işleçleri simgelerdir (bkz [işleçleri](../c-language/c-operators.md)). Derleyici kullanımlarını bağlamından belirler.  
@@ -35,4 +36,4 @@ Noktalama işaretleri ve özel karakterler C karakter kümesinde derleyici veya 
  Bu karakterleri c dilinde özel anlamları Bu kitap kullanımları açıklanmaktadır. Diyez işaretinden (**#**) yalnızca oluşabilir [ön işleme yönergeleri](../preprocessor/preprocessor-directives.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C öğeleri](../c-language/elements-of-c.md)
+ [C Öğeleri](../c-language/elements-of-c.md)

@@ -53,11 +53,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a5195f5a47fc2bff667849e7afffedd8cf4a4ae8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3b45de74c53ce24d64dc93e73f2195df76bd1152
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbytearray-class"></a>CLongBinary sınıfı
 Dinamik diziler bayt destekler.  
@@ -132,4 +133,4 @@ class CByteArray : public CObject
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CObArray sınıfı](../../mfc/reference/cobarray-class.md)
+ [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)

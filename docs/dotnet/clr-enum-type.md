@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 154904eb201f39852b57f253b97fba864084381a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: ad82c1d867c511121cd024f2affd5df98b4642bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clr-enum-type"></a>CLR Numaralandırma Türü
 Bildirim ve numaralandırmaları davranışını değişti Yönetilen Uzantılar'dan C++ için Visual C++'a.  
@@ -173,7 +176,7 @@ public:
   
  Bu, yerel ve CLR enum arasında tasarım stratejisini değiştirir. CLR enum bir ilişkilendirilmiş kapsam Visual C++'ta Bakımı bir ne gerekli ne de bir sınıf içinde enum bildirimi kapsüllemek etkin değil. Bu deyim cfront 2.0 zil laboratuvarlarda içinde süresini geçici de genel ad kirliliği sorunu çözmek için gelişen.  
   
- Özgün beta sürümünde yeni iostream kitaplığı Bell Laboratuarları Jerry Schwarz tarafından Jerry kitaplık ve gibi ortak numaralandırmalar için tanımlanan tüm ilişkili kapsüllemedi `read`, `write`, `append`, vb. , kullanıcıların kendi var olan Kodu derlemek neredeyse imkansız yapılan. Bir çözüm adları gibi çözümlerden olabilirdi `io_read`, `io_write`vb.. Kapsam için bir numaralandırma ekleyerek dilini değiştirmek için ikinci bir çözüm olabilirdi, ancak bu zaman mümkün değildi. Orta sınıfı içinde enum kapsülleyen ya da sınıf hiyerarşisinde için çözüm burada kapsayan sınıf kapsamı etiket adı ve numaralandırmalar Enum doldurmak bulunuyordu.) Diğer bir deyişle, sınıflar içinde Enum değerleri en az bir orijinal olarak yerleştirme motivasyon felsefi, değil, ancak genel ad alanı kirliliği problemine pratik yanıt.  
+ Özgün beta sürümünde yeni iostream kitaplığı Bell Laboratuarları Jerry Schwarz tarafından Jerry kitaplık ve gibi ortak numaralandırmalar için tanımlanan tüm ilişkili kapsüllemedi `read`, `write`, `append`, vb. , kullanıcıların kendi var olan Kodu derlemek neredeyse imkansız yapılan. Bir çözüm adları gibi çözümlerden olabilirdi `io_read`, `io_write`vb. Kapsam için bir numaralandırma ekleyerek dilini değiştirmek için ikinci bir çözüm olabilirdi, ancak bu zaman mümkün değildi. Orta sınıfı içinde enum kapsülleyen ya da sınıf hiyerarşisinde için çözüm burada kapsayan sınıf kapsamı etiket adı ve numaralandırmalar Enum doldurmak bulunuyordu.) Diğer bir deyişle, sınıflar içinde Enum değerleri en az bir orijinal olarak yerleştirme motivasyon felsefi, değil, ancak genel ad alanı kirliliği problemine pratik yanıt.  
   
  Visual C++ enum ile artık bir sınıftaki bir enum şifreleme için bir faydası yoktur. Aslında, bakarsanız `System` ad alanları, o numaralandırmalar, sınıflar ve arabirimler tüm aynı bildirim alanında bulunduğunu görürsünüz.  
   

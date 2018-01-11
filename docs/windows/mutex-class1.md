@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b3f0295ce9456822337c9beac3e6d1c35f7d80bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: c0e849d1fee7eca67f3b5765d31b54e0660eaa25
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mutex-class1"></a>Mutex Class1
 Paylaşılan bir kaynak yalnızca denetleyen eşitleme nesnesi temsil eder.  
@@ -42,19 +45,19 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Mutex::mutex Oluşturucusu](../windows/mutex-mutex-constructor.md)|Mutex sınıfı yeni bir örneğini başlatır.|  
+|[Mutex::Mutex Oluşturucusu](../windows/mutex-mutex-constructor.md)|Mutex sınıfı yeni bir örneğini başlatır.|  
   
 ### <a name="public-members"></a>Genel üyeler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Mutex::Lock yöntemi](../windows/mutex-lock-method.md)|Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili Mutex nesne kadar bekler yayımları mutex veya belirtilen zaman aşımı aralığı geçti.|  
+|[Mutex::Lock Metodu](../windows/mutex-lock-method.md)|Geçerli nesne ya da belirtilen tanıtıcı ile ilişkili Mutex nesne kadar bekler yayımları mutex veya belirtilen zaman aşımı aralığı geçti.|  
   
 ### <a name="public-operator"></a>Genel işleç  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Mutex::operator = işleci](../windows/mutex-operator-assign-operator.md)|Atar (taşır) belirtilen Mutex geçerli Mutex nesnesi nesne.|  
+|[Mutex::operator= İşleci](../windows/mutex-operator-assign-operator.md)|Atar (taşır) belirtilen Mutex geçerli Mutex nesnesi nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Mutex`  
@@ -65,4 +68,4 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)
