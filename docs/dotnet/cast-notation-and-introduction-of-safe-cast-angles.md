@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 39ed82a6f63bb113a3fc80929e5b1f5ba57724c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 80d1a6e8b1a1691b4e76bfdc1232c95c22d01408
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cast-notation-and-introduction-of-safecastltgt"></a>Dönüştürme gösterimi ve safe_cast giriş&lt;&gt;
 Dönüştürme gösterimi C++ için Visual C++ için Yönetilen Uzantılar'dan değiştirdi.  

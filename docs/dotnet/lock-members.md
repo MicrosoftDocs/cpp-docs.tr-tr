@@ -13,30 +13,33 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a87aed5e73f4b7d649f46ffae992884611a31b13
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c5f811cf875f8f846a6092f9974b8a451cd16c39
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lock-members"></a>lock üyeleri
 Üyeleri [lock sınıfı](../dotnet/lock-class.md).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Lock::LOCK](../dotnet/lock-lock.md)  
+ [lock::lock](../dotnet/lock-lock.md)  
   
- [Kilit:: ~ lock](../dotnet/lock-tilde-lock.md)  
+ [lock::~lock](../dotnet/lock-tilde-lock.md)  
   
- [Lock::Acquire](../dotnet/lock-acquire.md)  
+ [lock::acquire](../dotnet/lock-acquire.md)  
   
- [Lock::is_locked](../dotnet/lock-is-locked.md)  
+ [lock::is_locked](../dotnet/lock-is-locked.md)  
   
- [Lock::Release](../dotnet/lock-release.md)  
+ [lock::release](../dotnet/lock-release.md)  
   
- [Lock::try_acquire](../dotnet/lock-try-acquire.md)  
+ [lock::try_acquire](../dotnet/lock-try-acquire.md)  
   
- [Lock::operator bool](../dotnet/lock-operator-bool.md)  
+ [lock::operator bool](../dotnet/lock-operator-bool.md)  
   
- [Lock::operator ==](../dotnet/lock-operator-equality.md)  
+ [lock::operator==](../dotnet/lock-operator-equality.md)  
   
- [Lock::operator! =](../dotnet/lock-operator-inequality.md)
+ [lock::operator!=](../dotnet/lock-operator-inequality.md)

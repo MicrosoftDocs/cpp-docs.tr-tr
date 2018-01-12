@@ -22,11 +22,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ccbaa7e7ff4029c0ff6f0a8b4e1b9b9f4326da02
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 2da4f3741028642e90b004b19d71b837d4d2bbd3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandimplicommandimpl"></a>ICommandImpl::ICommandImpl
 Oluşturucu.  
@@ -43,4 +46,4 @@ ICommandImpl( );
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Icommandımpl sınıfı](../../data/oledb/icommandimpl-class.md)
+ [ICommandImpl Sınıfı](../../data/oledb/icommandimpl-class.md)

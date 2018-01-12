@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77f30e6254dce7c92100c216c78eb80fe1c23952
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: f434468580d37fd9a05b659b59d320199f366c84
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetchangeimplinsertrow"></a>IRowsetChangeImpl::InsertRow
 Oluşturur ve yeni bir satır kümesinde başlatır.  
@@ -48,4 +51,4 @@ Oluşturur ve yeni bir satır kümesinde başlatır.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetChangeImpl sınıfı](../../data/oledb/irowsetchangeimpl-class.md)
+ [IRowsetChangeImpl Sınıfı](../../data/oledb/irowsetchangeimpl-class.md)
