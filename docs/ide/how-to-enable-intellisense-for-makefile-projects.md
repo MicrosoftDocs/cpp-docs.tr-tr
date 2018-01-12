@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d086540d3b8f1475916bf5f8174f98de3c62c810
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fae3ec35259250f71ad672d9468b991033608ae4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-enable-intellisense-for-makefile-projects"></a>Nasıl Yapılır: Derleme Görevleri Dosyası Projeleri için IntelliSense'i Etkinleştirme
 Visual C++ derleme görevleri dosyası projeleri için IDE'de belirli ayarları veya derleyici seçenekleri, projenizin çalışması için IntelliSense başarısız yanlış ayarlanır. Derleme görevleri dosyası projeleri Visual Studio geliştirme ortamında açık olduğunda IntelliSense çalışmasını Visual C++ derleme görevleri dosyası projeleri yapılandırmak için bu yordamı kullanın.  
@@ -57,4 +58,4 @@ Visual C++ derleme görevleri dosyası projeleri için IDE'de belirli ayarları 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IntelliSense kullanma](/visualstudio/ide/using-intellisense)   
  [NMAKE başvurusu](../build/nmake-reference.md)   
- [Nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)
+ [Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)

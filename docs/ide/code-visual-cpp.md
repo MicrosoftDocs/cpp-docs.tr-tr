@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7ce06201d816cb91928f569ef3afe8422d5fecb7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 863ad36def9b32269ff4b1a0c131f46e67189a45
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltcodegt-visual-c"></a>&lt;kod&gt; (Visual C++)
 \<Kodu > etiketi bir veya daha fazla satır kodu olarak belirtmek için bir yol sağlar.  
@@ -47,4 +48,4 @@ ms.lasthandoff: 10/24/2017
  Bkz: [ \<örnek >](../ide/example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek konu \<kodu > etiketi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

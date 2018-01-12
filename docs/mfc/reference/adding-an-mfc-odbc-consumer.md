@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb3cfd8a2f8f4c28892962f451501245f14aa41c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d9aa31db069479a35b6a06335d95d1260c7a6e89
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-mfc-odbc-consumer"></a>MFC ODBC Tüketicisi Ekleme
 MFC ODBC Tüketicisi bir ODBC kayıt kümesi sınıf ve veri bağlamalarını bir veri kaynağına erişmek için gerekli oluşur.  

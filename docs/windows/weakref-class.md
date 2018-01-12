@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 148c39f1ef38b6b20de6d50cc75352a4f30a9090
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a8263595bdd564c313a8783a3a9baf0c6d562494
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="weakref-class"></a>WeakRef Sınıfı
 Temsil eden bir *zayıf başvuru* yalnızca Windows çalışma zamanı tarafından değil klasik COM kullanılabilir Zayıf başvuru olabilir ya da erişilebilir olmayabilir bir nesneyi temsil eder.  
@@ -72,21 +75,21 @@ if (strongRef == nullptr)
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[WeakRef::WeakRef Oluşturucusu](../windows/weakref-weakref-constructor.md)|WeakRef sınıfı yeni bir örneğini başlatır.|  
-|[WeakRef:: ~ WeakRef yok Edicisi](../windows/weakref-tilde-weakref-destructor.md)|WeakRef sınıfı, geçerli örneğini deinitializes.|  
+|[WeakRef::~WeakRef Yıkıcısı](../windows/weakref-tilde-weakref-destructor.md)|WeakRef sınıfı, geçerli örneğini deinitializes.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[WeakRef::As yöntemi](../windows/weakref-as-method.md)|Belirtilen ComPtr işaretçi parametresini belirtilen arabirimi temsil edecek şekilde ayarlar.|  
-|[Weakref::asııd yöntemi](../windows/weakref-asiid-method.md)|Belirtilen ComPtr işaretçi parametresi belirtilen arabirimi kimliğini temsil etmek için ayarlar|  
-|[WeakRef::CopyTo yöntemi](../windows/weakref-copyto-method.md)|Bir işaretçi bir arabirim için mevcut ise, belirtilen işaretçi değişkenine atar.|  
+|[WeakRef::As Metodu](../windows/weakref-as-method.md)|Belirtilen ComPtr işaretçi parametresini belirtilen arabirimi temsil edecek şekilde ayarlar.|  
+|[WeakRef::AsIID Metodu](../windows/weakref-asiid-method.md)|Belirtilen ComPtr işaretçi parametresi belirtilen arabirimi kimliğini temsil etmek için ayarlar|  
+|[WeakRef::CopyTo Metodu](../windows/weakref-copyto-method.md)|Bir işaretçi bir arabirim için mevcut ise, belirtilen işaretçi değişkenine atar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[WeakRef::operator & işleci](../windows/weakref-operator-ampersand-operator.md)|Geçerli WeakRef nesnesini temsil eden bir ComPtrRef nesnesi döndürür.|  
+|[WeakRef::operator& İşleci](../windows/weakref-operator-ampersand-operator.md)|Geçerli WeakRef nesnesini temsil eden bir ComPtrRef nesnesi döndürür.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ComPtr`  
@@ -99,4 +102,4 @@ if (strongRef == nullptr)
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

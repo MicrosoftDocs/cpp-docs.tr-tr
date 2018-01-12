@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3a7da6d72d68da8af42c2a6407444c97ecb0ca98
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6fb89336acfd158abeb395671f1fa01bca74d2d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stdx-namespace"></a>stdx Ad Alanı
 ## <a name="syntax"></a>Sözdizimi  
@@ -33,7 +34,7 @@ namespace stdx;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[declval işlevi](declval-function.md)||  
+|[declval İşlevi](declval-function.md)||  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** ppltasks.h  

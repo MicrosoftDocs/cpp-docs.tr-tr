@@ -55,11 +55,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 665c4b40ca8ec5a149685b5d9c2c54017ca0b883
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2c6e976b1a5497e8d2814208b6b3260037458fc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfccolormenubutton-class"></a>CMFCColorMenuButton sınıfı
 `CMFCColorMenuButton` Sınıfı, bir komutu veya bir Renk Seçici iletişim kutusu başlayan araç çubuğu düğmesi destekler.  
@@ -503,4 +504,4 @@ void SetColumnsNumber(int nColumns);
  [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md)   
  [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)   
  [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)   
- [CMFCColorButton sınıfı](../../mfc/reference/cmfccolorbutton-class.md)
+ [CMFCColorButton Sınıfı](../../mfc/reference/cmfccolorbutton-class.md)

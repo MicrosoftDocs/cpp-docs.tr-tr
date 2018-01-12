@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3553ac8948e10271da449356bde20d2a9ae4378b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 894ff7da95f09b1aedaa8fd9d1d9b44f77017a8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>İzlenecek yol: Kilitlenmeyi Önlemek için birleştirme kullanma
 Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek için kullanır. [concurrency::join](../../parallel/concrt/reference/join-class.md) uygulamanızda kilitlenmeyi önlemek için sınıf. Bir yazılım uygulamasında *kilitlenme* iki veya daha çok işlemler her bir kaynak basılı tutun ve karşılıklı olarak başka bir kaynağın serbest bırakmak başka bir işlemin tamamlanmasını beklemek oluşur.  
@@ -32,15 +33,15 @@ Bu konuda yemek Yiyen Filozoflar sorunu nasıl kullanılacağını göstermek i�
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki konuları okuyun:  
   
-- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)  
+- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)  
   
-- [İzlenecek yol: aracı temelli uygulama oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)  
+- [İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)  
   
-- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+- [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
-- [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)  
+- [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
   
-- [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)  
+- [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)  
   
 ##  <a name="top"></a>Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
@@ -156,4 +157,4 @@ plato ate 50 times.
  [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)   
  [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
  [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)   
- [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)
+ [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)

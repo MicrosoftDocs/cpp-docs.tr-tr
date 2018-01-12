@@ -17,11 +17,12 @@ caps.latest.revision: "32"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7aacc70a74b7c7fccb66a0a8363a261f4a8f1ba3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7bacb5663d8e06ee5a10629c547de6f96219697e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme
 Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak yaygın Windows çalışma zamanı bileşenleri, uzantı SDK'ları, COM bileşenlerini ve .NET derlemelerini. Bu, diğer ikili dosyaları programınızın bulur biçimi hem de projenizi türünü ve ikili türüne bağlıdır.  
@@ -122,4 +123,4 @@ Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Proje özellikleriyle çalışma](../ide/working-with-project-properties.md)
+ [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d2c6cfe794b9d7f50d7e12b8d2f444628ec6d79f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6b8e425363b81954a72d0eb08491c384c47c695d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a1---executing-a-simple-loop-in-parallel"></a>A.1   Basit Döngüyü Paralel Yürütme
 Aşağıdaki örnek, bir basit döngü kullanarak paralel hale gösterilmiştir `parallel for` yönergesi ([bölüm 2.5.1](../../parallel/openmp/2-5-1-parallel-for-construct.md) sayfasında 16). Döngü yineleme değişkeni varsayılan olarak, özel olduğundan özel yan tümcesinde açıkça belirtmek gerekli değildir.  

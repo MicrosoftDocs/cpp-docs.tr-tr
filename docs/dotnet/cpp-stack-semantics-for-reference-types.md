@@ -14,11 +14,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 182478ffdd0175fc2b5f80b4a534b85bb97190a1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8f4bf38fa6512b0dc86edad43c893d2dd09a97a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-stack-semantics-for-reference-types"></a>Referans Türleri için C++ Yığın Anlamları
 Visual C++ 2005 önce başvuru türünde bir örneği yalnızca kullanarak oluşturulabilir `new` Atık nesne oluşturulan işleci toplanan yığın. Bununla birlikte, artık yığında yerel türünün bir örneği oluşturmak için kullanacağınız aynı sözdizimini kullanarak bir başvuru türünde bir örnek oluşturabilirsiniz. Bu nedenle, kullanmak gerekmez [yeni başvuru, gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md) başvuru türünde bir nesne oluşturmak için. Ve nesne kapsam dışına çıktığında derleyici nesnenin yıkıcı çağırır.  
@@ -48,7 +51,7 @@ Visual C++ 2005 önce başvuru türünde bir örneği yalnızca kullanarak oluş
   
  Aşağıdaki başvuru türleri yığın anlamları ile kullanmak için kullanılabilir değil:  
   
--   [Temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md)  
+-   [temsilci (C++ Bileşen Uzantıları)](../windows/delegate-cpp-component-extensions.md)  
   
 -   [Diziler](../windows/arrays-cpp-component-extensions.md)  
   
@@ -118,4 +121,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)
+ [Sınıflar ve Yapılar](../windows/classes-and-structs-cpp-component-extensions.md)

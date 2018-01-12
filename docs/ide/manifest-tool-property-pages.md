@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65b3d2aa64ff350ef7219f319149268691db49ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5a99e8f39baa3ab3753e68ee87ecbb25d73f1a0a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="manifest-tool-property-pages"></a>Bildirim Aracı Özellik Sayfaları
 Kullanım **bildirim aracı** ayarlamak için özellik sayfaları yapı mt.exe için Seçenekler.  
@@ -34,4 +35,4 @@ Kullanım **bildirim aracı** ayarlamak için özellik sayfaları yapı mt.exe i
  [Bildirim aracı, yapılandırma özellikleri, Gelişmiş \<Projectname > özellik sayfaları iletişim kutusu](../ide/advanced-manifest-tool.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)
+ [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

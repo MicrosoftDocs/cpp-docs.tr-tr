@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1c7a463e3d2e0f11373c47f66a745c9c486a4581
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: be3bc617c0f3a9915c7ae0314b0e3889ecc561f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-categories"></a>İleti Kategorileri
 Üç ana kategoride için ne tür iletileri işleyicileri yazma:  
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/24/2017
  İletileri kategorisinde 3 — komutları — çeşitli nesneleri tarafından işlenebilir: belgeleri, belge şablonları ve uygulama nesnesi kendisini yanı sıra windows ve görünümler. Bir komut doğrudan bazı belirli nesne etkilediğinde, söz konusu nesne komutu işlemek için mantıklıdır. Örneğin, Dosya menüsündeki Aç komutu uygulamayla mantıksal olarak ilişkilendirilen: uygulama komut alındıktan sonra belirtilen bir belge açılır. Bu nedenle Aç komutu için uygulama sınıfının üye işlevi işleyicidir. Komutlar ve nesnelere nasıl yönlendirildiği hakkında daha fazla bilgi için bkz: [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletiler ve komutlar Framework'te](../mfc/messages-and-commands-in-the-framework.md)
+ [Framework'teki İletiler ve Komutlar](../mfc/messages-and-commands-in-the-framework.md)
 

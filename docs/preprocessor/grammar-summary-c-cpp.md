@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 075c960967a04d4850c964f69041e89bd405d066
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf98754c5efc0f897775fd4e99ba5d6d6ea98218
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="grammar-summary-cc"></a>Dilbilgisi Özeti (C/C++)
 Bu bölümde önişlemcinin resmi dilbilgisi açıklanmaktadır. Ön işleme yönergeleri sözdizimi kapsayan ve işleçler ele alınan [önişlemci](../preprocessor/preprocessor.md) ve [Pragma yönergeleri](../preprocessor/pragma-directives-and-the-pragma-keyword.md).  
@@ -29,9 +30,9 @@ Bu bölümde önişlemcinin resmi dilbilgisi açıklanmaktadır. Ön işleme yö
   
 -   [Tanımları](../preprocessor/definitions-for-the-grammar-summary.md)  
   
--   [Kuralları](../preprocessor/conventions.md)  
+-   [Kurallar](../preprocessor/conventions.md)  
   
--   [Ön İşlemci dil bilgisi](../preprocessor/preprocessor-grammar.md)  
+-   [Ön İşlemci Dil Bilgisi](../preprocessor/preprocessor-grammar.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

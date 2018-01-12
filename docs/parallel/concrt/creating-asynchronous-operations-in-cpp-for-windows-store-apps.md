@@ -16,11 +16,12 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95e35564c759a5ede802f3e1377f64df7ccaab67
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ff845e9766cadb1af2e018b3ab56097d74e8c6bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-asynchronous-operations-in-c-for-windows-8x-apps"></a>Windows 8.x uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma
 Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin üretmek için görev sınıfı kullanırken dikkate alınması gereken önemli noktaları bazıları açıklanmaktadır bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama.  
@@ -201,4 +202,4 @@ Bu belge Windows iş parçacığı havuzu tabanlı zaman uyumsuz işlemlerin ür
  Bu örnekte, çünkü iptali desteklemek olası `task` nesneleri destekleyen `create_async` örtük iptal belirteci kullanın. Çalışma işlevinizde yapılacak tanımlamak bir `cancellation_token` görevleriniz için İptali İşbirlikçi bir şekilde yanıt gerekip gerekmediğini nesne. PPL'de iptal hakkında daha fazla bilgi için bkz: [PPL'de iptal](cancellation-in-the-ppl.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Çalışma zamanı](../../parallel/concrt/concurrency-runtime.md)
+ [Eşzamanlılık Çalışma Zamanı](../../parallel/concrt/concurrency-runtime.md)

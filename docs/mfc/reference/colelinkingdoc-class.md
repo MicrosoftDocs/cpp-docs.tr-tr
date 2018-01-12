@@ -27,11 +27,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d9d02d128a96550cce393fc439ef7fdabcccd293
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 611d09a12da1d2ebf6fcae8d7573cc48a5318f97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc sınıfı
 Katıştırılmış öğelerine bağlama desteği OLE kapsayıcı belgeler için temel sınıfı içerir.  
@@ -185,4 +186,4 @@ void Revoke();
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   
  [COleDocument sınıfı](../../mfc/reference/coledocument-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CDocTemplate sınıfı](../../mfc/reference/cdoctemplate-class.md)
+ [CDocTemplate Sınıfı](../../mfc/reference/cdoctemplate-class.md)

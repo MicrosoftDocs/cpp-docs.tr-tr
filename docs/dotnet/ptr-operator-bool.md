@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0f197eb8c1370598695dde72d802e02153258ed8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5aaec44d5b8f2e8b43a94fa5d0e8b4250ac7bf49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptroperator-bool"></a>ptr::operator bool
 Kullanarak işleci `com::ptr` koşullu bir ifadede.  
@@ -102,4 +105,4 @@ DOM Document created.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [PTR üyeleri](../dotnet/ptr-members.md)   
- [PTR::operator!](../dotnet/ptr-operator-logical-not.md)
+ [ptr::operator!](../dotnet/ptr-operator-logical-not.md)

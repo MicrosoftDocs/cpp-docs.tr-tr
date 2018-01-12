@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fbca889234f476e0f7dcd67974105931cf11a44b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9936120a28e7120b5efcaaf6e05318b3970dab99
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-class-dialog-box"></a>Sınıf Ekle İletişim Kutusu
 **Sınıfı Ekle** iletişim kutusu olanak sağlayan şablonlar içerir:  
@@ -53,12 +54,12 @@ ms.lasthandoff: 10/24/2017
 |Şablon|Sihirbazı|  
 |--------------|------------|  
 |MFC için ATL desteği ekleme|Yok|  
-|ATL Active Server sayfası bileşeni|[ATL Active Server sayfası Bileşen Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)|  
-|ATL denetimi|[ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md)|  
-|ATL iletişim|[ATL iletişim Sihirbazı](../atl/reference/atl-dialog-wizard.md)|  
-|ATL COM + 1.0 bileşeni|[ATL COM + 1.0 Bileşen Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)|  
-|ATL OLEDB tüketici|[ATL OLE DB Tüketici Sihirbazı](../atl/reference/atl-ole-db-consumer-wizard.md)|  
-|ATL OLEDB Sağlayıcısı|[ATL OLE DB Sağlayıcı Sihirbazı](../atl/reference/atl-ole-db-provider-wizard.md)|  
+|ATL Active Server sayfası bileşeni|[ATL Active Server Page Bileşeni Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)|  
+|ATL denetimi|[ATL Denetimi Sihirbazı](../atl/reference/atl-control-wizard.md)|  
+|ATL iletişim|[ATL İletişim Kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|  
+|ATL COM + 1.0 bileşeni|[ATL COM+ 1.0 Bileşeni Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)|  
+|ATL OLEDB tüketici|[ATL OLE DB Tüketicisi Sihirbazı](../atl/reference/atl-ole-db-consumer-wizard.md)|  
+|ATL OLEDB Sağlayıcısı|[ATL OLE DB Sağlayıcısı Sihirbazı](../atl/reference/atl-ole-db-provider-wizard.md)|  
 |ATL özellik sayfası|[ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md)|  
 |ATL Basit Nesne|[ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)|  
 |WMI Olay sağlayıcısı|WMI Olay sağlayıcısı Sihirbazı|  
@@ -68,8 +69,8 @@ ms.lasthandoff: 10/24/2017
   
 |Şablon|Sihirbazı|  
 |--------------|------------|  
-|MFC Sınıfı|[MFC sınıf Ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|  
-|ActiveX denetiminden MFC sınıfı|[ActiveX denetimi sihirbazından sınıf ekleme](../ide/add-class-from-activex-control-wizard.md)|  
+|MFC Sınıfı|[MFC Sınıf Ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|  
+|ActiveX denetiminden MFC sınıfı|[ActiveX Denetimi Sihirbazından Sınıf Ekleme](../ide/add-class-from-activex-control-wizard.md)|  
 |TypeLib MFC sınıfı|[Typelib sihirbazından sınıf ekleme](../mfc/reference/add-class-from-typelib-wizard.md)|  
 |MFC ODBC tüketici|[MFC ODBC Tüketici Sihirbazı](../mfc/reference/mfc-odbc-consumer-wizard.md)|  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/24/2017
   
 |Şablon|Sihirbazı|  
 |--------------|------------|  
-|Genel C++ sınıfı|[Genel C++ sınıfı Sihirbazı](../ide/generic-cpp-class-wizard.md)|  
+|Genel C++ sınıfı|[Genel C++ Sınıfı Sihirbazı](../ide/generic-cpp-class-wizard.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)   

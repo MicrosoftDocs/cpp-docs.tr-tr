@@ -17,16 +17,17 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b4e45874b8cfebafbfedd6a8a91ef86816ac60b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e8ea7130770f88c377aa7f332ac60bb244b66f96
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="servers-user-interface-issues"></a>Sunucular: Kullanıcı Arabirimi Sorunları
 Bir sunucu uygulaması çok sayıda OLE kapsayıcı uygulamaları öğelerine sağlamak için kullanıcı arabirimi eklenmeli özelliği vardır. Menüleri ve bir sunucu uygulaması eklenmesi gereken ek kaynakları hakkında daha fazla bilgi için bkz: [menüler ve kaynaklar: sunucu ekleme](../mfc/menus-and-resources-server-additions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sunucuları](../mfc/servers.md)   
- [Menüler ve kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
+ [Menüler ve Kaynaklar (OLE)](../mfc/menus-and-resources-ole.md)
 

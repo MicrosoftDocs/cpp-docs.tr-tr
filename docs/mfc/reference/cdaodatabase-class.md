@@ -69,11 +69,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c72946edb68212e09ab93e9d36d2dfa8afd5630e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 48646e0635098aceea957f93015a5de93515096d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase sınıfı
 Verileri çalışabilir veritabanına bağlantıyı temsil eder.  
@@ -832,4 +833,4 @@ void SetQueryTimeout(short nSeconds);
  [CDaoTableDef sınıfı](../../mfc/reference/cdaotabledef-class.md)   
  [CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CDaoException sınıfı](../../mfc/reference/cdaoexception-class.md)
+ [CDaoException Sınıfı](../../mfc/reference/cdaoexception-class.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3a1c0ced45fc7f9c4e51a5dbe8a888c030a6b957
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6b3340df4ef1d36994182e2315c8eb437e76fd4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="xml-file-processing"></a>.Xml Dosyası İşleme
 Derleyici kodunuzda belgeleri oluşturmak için etiketli her yapı için bir kimlik dizesi oluşturur. Daha fazla bilgi için bkz: [önerilen etiketler belge açıklamaları](../ide/recommended-tags-for-documentation-comments-visual-cpp.md). Kimlik dizesi, yapı benzersiz olarak tanımlar. .Xml dosyası işleme programları kimlik dizesi belgelere uygulandığı karşılık gelen .NET Framework meta verileri veya yansıma öğesi tanımlamak için kullanabilirsiniz.  
@@ -186,4 +187,4 @@ namespace N {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

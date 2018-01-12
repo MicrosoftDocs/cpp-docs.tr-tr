@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b66571e08b18f9bf42b35293bef0485f6a154bbf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: c1b45cc94236d02bd7b7e8174de9752192c7e3c5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetinfoimplgetproperties"></a>IRowsetInfoImpl::GetProperties
 Özellikler için geçerli ayarları döndürür **DBPROPSET_ROWSET** grubu.  
@@ -50,4 +53,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Irowsetınfoımpl sınıfı](../../data/oledb/irowsetinfoimpl-class.md)   
  [Irowsetınfoımpl::getreferencedrowset](../../data/oledb/irowsetinfoimpl-getreferencedrowset.md)   
- [Irowsetınfoımpl::getspecification](../../data/oledb/irowsetinfoimpl-getspecification.md)
+ [IRowsetInfoImpl::GetSpecification](../../data/oledb/irowsetinfoimpl-getspecification.md)

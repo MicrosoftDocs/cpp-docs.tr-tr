@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d56bef1545d582caab72b9e309b27a540ac62f39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a3730c7e0ae1dbbae299ddbe6128044effa101a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="win32-internet-extensions-wininet"></a>Win32 Internet Uzantıları (WinInet)
 Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokolleri kullanarak bir ağ veri kaynağından (sunucu) bilgi erişen bir programdır. Internet istemci uygulaması, örneğin hava durumu eşlemeleri, hisse senedi fiyatları veya gazete başlıkları gibi veri almak için bir sunucu erişebilir. Internet istemcisi sunucunun bir dış ağa (Internet) veya (bazen intranet denir) bir iç ağ erişebilirsiniz.  
@@ -33,31 +34,31 @@ Internet istemci uygulaması gopher, FTP veya HTTP gibi Internet protokolleri ku
   
  Aşağıdaki konular Internet istemci uygulaması oluşturma işleminin ele alınmıştır:  
   
--   [Nasıl WinINet Internet istemci uygulamaları oluşturmayı kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)  
+-   [WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)  
   
--   [Nasıl MFC Internet istemci uygulamaları oluşturmayı kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)  
+-   [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)  
   
--   [Internet istemci uygulamaları oluşturmak için MFC sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)  
+-   [Internet İstemci Uygulamaları Oluşturmak için MFC Sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)  
   
--   [Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)  
+-   [Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)  
   
--   [MFC WinINet sınıfları kullanarak Internet istemci uygulaması yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)  
+-   [MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)  
   
  Aşağıdaki konular, tipik WinINet görevleri gerçekleştirmek için adımlar sağlar:  
   
--   [Tipik Internet istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-internet-client-application.md)  
+-   [Tipik Bir Internet İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-internet-client-application.md)  
   
--   [Tipik bir FTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)  
+-   [Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application.md)  
   
--   [Bir dosyayı silmek için tipik bir FTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)  
+-   [Dosya Silmek için Tipik Bir FTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)  
   
--   [Tipik bir Gopher istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)  
+-   [Tipik Bir Gopher İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-gopher-client-application.md)  
   
--   [Tipik bir HTTP istemci uygulamasındaki adımlar](../mfc/steps-in-a-typical-http-client-application.md)  
+-   [Tipik Bir HTTP İstemci Uygulamasındaki Adımlar](../mfc/steps-in-a-typical-http-client-application.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [WinINet temelleri](../mfc/wininet-basics.md)
+ [WinInet Temelleri](../mfc/wininet-basics.md)
 
 
 

@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dca7c6bc7c423018959a9ff38b5c54fa43f06c5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 68cd21e21c14a34122f1b26345fab767728ac6a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crebar-vs-crebarctrl"></a>CReBar vs. CReBarCtrl
 MFC rebars oluşturmak için iki sınıflar sağlar: [CReBar](../mfc/reference/crebar-class.md) ve [CReBarCtrl](../mfc/reference/crebarctrl-class.md) (hangi sarmalar Windows ortak denetim API'si). **CReBar** tüm rebar ortak denetim işlevselliğini sağlar ve bu gerekli ortak denetim ayarlarını ve yapıları birçoğu sizin için işler.  
@@ -44,5 +45,5 @@ MFC rebars oluşturmak için iki sınıflar sağlar: [CReBar](../mfc/reference/c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

@@ -43,11 +43,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12648a44b30e7e9cc883db6395b1c806cb7d6513
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7aad2f6ce26fd5ca9ed0ec323a8fcb05ac17f7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cinternetsession-class"></a>CInternetSession sınıfı
 Oluşturur ve tek bir veya birkaç eşzamanlı Internet oturum başlatır ve gerekiyorsa, proxy sunucusuna bağlantınız açıklar.  
@@ -589,4 +590,4 @@ BOOL SetOption(
  [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
  [CHttpConnection sınıfı](../../mfc/reference/chttpconnection-class.md)   
  [CFtpConnection sınıfı](../../mfc/reference/cftpconnection-class.md)   
- [CGopherConnection sınıfı](../../mfc/reference/cgopherconnection-class.md)
+ [CGopherConnection Sınıfı](../../mfc/reference/cgopherconnection-class.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b1fc852bf2becb429c5931341cfd426bc7c877ae
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: c80351071318b88956fa3717875561bdf30232dc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dao-classes"></a>DAO Sınıfları
 Microsoft Visual Basic ve Microsoft Access aynı veritabanı altyapısı'nı kullanan veri erişim nesnesi (DAO) veritabanları kolay erişim sağlamak için diğer uygulama framework sınıfları ile bu sınıfların çalışır. DAO sınıfları, çok çeşitli açık veritabanı bağlantısı (ODBC) sürücüler kullanılabilir veritabanlarını da erişebilirsiniz.  

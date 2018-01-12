@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 370d43413b50c1eaf1112bae5dab6cb50e9f42b1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44fcecbf1d7ddb6c46469f25349d972c8b317809
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="control-bar-classes"></a>Denetim Çubuğu Sınıfları
 Denetim çubukları bir çerçeve penceresinde eklenir. Düğmeler, durum bölmeleri veya bir iletişim şablonunu içerir. Aracı paletleri olarak da bilinir serbest kaydırılan denetim çubukları ekleyerek bunları uygulanır bir [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md) nesnesi.  

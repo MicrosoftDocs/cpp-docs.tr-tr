@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 189f18f5d8944fc61635b5aa83522e5a89a3a100
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 53720e93c7d45f1eaeb0e62749194720373bee1c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="formatting-the-output-of-a-custom-build-step-or-build-event"></a>Özel Derleme Adımının veya Derleme Olayının Çıktısını Biçimlendirme
 Özel derleme adımının veya derleme olayının çıktısını doğru biçimlendirildiğinden, kullanıcılar aşağıdaki yararları alın:  
@@ -58,4 +59,4 @@ ms.lasthandoff: 10/24/2017
  BAĞLANTI: önemli hatası LNK1104: dosyayı açamıyor '*somelib.lib*'  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel derleme adımlarını ve derleme olaylarını anlama](../ide/understanding-custom-build-steps-and-build-events.md)
+ [Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](../ide/understanding-custom-build-steps-and-build-events.md)

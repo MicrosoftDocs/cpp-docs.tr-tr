@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 28fac42db05f1540bcae677402fee58520b154ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 37f2f75e6274748cc3289dffd42e4debff96fc91
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorassign-stlclr"></a>vector::assign (STL/CLR)
 Tüm öğeleri değiştirir.  
@@ -107,4 +110,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
- [Vector::operator = (STL/CLR)](../dotnet/vector-operator-assign-stl-clr.md)
+ [vector::operator= (STL/CLR)](../dotnet/vector-operator-assign-stl-clr.md)

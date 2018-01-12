@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55469ffe0c5473ddda7007655e6f85b4d5822f0d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2e4916e0f563c4034dc27be1e3d911f42a65319
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>Nasıl yapılır: Zamanlayıcı Örneğini Yönetme
 Zamanlayıcı örnekleri özel zamanlama ilkeleri çeşitli iş yükleri ile ilişkilendirmenizi sağlar. Bu konu, oluşturma ve Zamanlayıcı örneğini yönetme gösteren iki temel örnekleri içerir.  
@@ -85,5 +86,5 @@ Current scheduler id: 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zamanlayıcı örnekleri](../../parallel/concrt/scheduler-instances.md)   
- [Nasıl yapılır: belirli Zamanlayıcı ilkeleri belirtme](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)
+ [Nasıl yapılır: Belirli Zamanlayıcı İlkeleri Belirtme](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)
 

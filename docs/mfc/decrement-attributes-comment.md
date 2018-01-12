@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c93d27cb5a9c6ef83f5b4f027d0e54cbe69a6bbd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 18a142cc0434e0e09e69d9bffc30826c461cf185
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="-attributes-comment"></a>// Özniteliklerle İlgili Açıklama
 `// Attributes` Ortak öznitelikleri (veya özellikleri) nesnesinin bir MFC sınıf bildirimi bölümü içerir. Genellikle üye değişkenleri veya Get/Set işlevler şunlardır. "Get" ve "Ayarla" işlevleri olabilir veya sanal olabilir. "Get" genellikle işlevlerdir **const**, çoğu durumda bunlar yan etkileri olmadığı için. Bu üyeleri normalde ortak; korumalı ve özel öznitelikleri genellikle uygulama bölümünde bulunur.  

@@ -19,11 +19,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c826d3999ac1f044bcc0ffc25e58f86ec7b7e881
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 3d8e65a62dcac8e97f8f416cd54050a76920afe6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-desktop-applications-c"></a>Windows Masaüstü uygulamaları (C++)
 Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.  
@@ -37,11 +40,11 @@ Bu bölümde bir penceresinde çalıştırın C++ masaüstü uygulamalarının n
   
 -   [Win32 Uygulama Sihirbazı](../windows/win32-application-wizard.md)  
   
--   [İzlenecek yol: Windows Masaüstü uygulamaları (C++) oluşturma](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)  
+-   [İzlenecek yol: Windows Masaüstü Uygulamaları Oluşturma (C++)](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)  
   
--   [Boş Windows masaüstü uygulaması oluşturma](../windows/creating-an-empty-windows-desktop-application.md)  
+-   [Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)  
   
--   [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)  
+-   [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md)

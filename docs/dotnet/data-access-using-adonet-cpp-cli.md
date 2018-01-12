@@ -19,11 +19,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f243b18b2666c21a6d83eabe35ecd6ad9df5905c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: fb7d184ebdb537c02b79a412d69a4bdcaabde424
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 ADO.NET veri erişimi için .NET Framework API'sidir ve güç ve önceki veri erişim çözümleri tarafından eşleşmeyen kullanım kolaylığı sağlar. Bu bölümde Visual C++ kullanıcılara, yerel türlerini hazırlama gibi benzersiz ADO.NET ile ilgili sorunlardan bazıları açıklanmaktadır.  
@@ -31,15 +34,15 @@ ADO.NET veri erişimi için .NET Framework API'sidir ve güç ve önceki veri er
  ADO.NET ortak dil çalışma zamanı (CLR) altında çalışır. Bu nedenle, ADO.NET ile etkileşimde bulunan herhangi bir uygulama da CLR hedeflemesi gerekir. Ancak, yerel uygulamalar ADO.NET kullanamaz anlamına gelmez. Bu örnekler yerel koddan ADO.NET veritabanıyla etkileşim kurmayı gösterilmektedir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Nasıl yapılır: ADO.NET için ANSI dizelerini sıralama (C + +/ CLI)](../dotnet/how-to-marshal-ansi-strings-for-adonet-cpp-cli.md)  
+ [Nasıl Yapılır: ADO.NET İçin ANSI Dizelerini Sıralama (C++/CLI)](../dotnet/how-to-marshal-ansi-strings-for-adonet-cpp-cli.md)  
   
- [Nasıl yapılır: ADO.NET için BSTR dizelerini sıralama (C + +/ CLI)](../dotnet/how-to-marshal-bstr-strings-for-adonet-cpp-cli.md)  
+ [Nasıl Yapılır: ADO.NET İçin BSTR Dizelerini Sıralama (C++/CLI)](../dotnet/how-to-marshal-bstr-strings-for-adonet-cpp-cli.md)  
   
- [Nasıl yapılır: ADO.NET için Unicode dizeleri sıralama (C + +/ CLI)](../dotnet/how-to-marshal-unicode-strings-for-adonet-cpp-cli.md)  
+ [Nasıl Yapılır: ADO.NET İçin Unicode Dizeleri Sıralama (C++/CLI)](../dotnet/how-to-marshal-unicode-strings-for-adonet-cpp-cli.md)  
   
- [Nasıl yapılır: ADO.NET için bir VARIANT'ı sıralama (C + +/ CLI)](../dotnet/how-to-marshal-a-variant-for-adonet-cpp-cli.md)  
+ [Nasıl yapılır: ADO.NET için bir VARIANT'ı Sıralama (C++/CLI)](../dotnet/how-to-marshal-a-variant-for-adonet-cpp-cli.md)  
   
- [Nasıl yapılır: ADO.NET için bir SAFEARRAY'i sıralama (C + +/ CLI)](../dotnet/how-to-marshal-a-safearray-for-adonet-cpp-cli.md)  
+ [Nasıl yapılır: ADO.NET için bir SAFEARRAY'i Sıralama (C++/CLI)](../dotnet/how-to-marshal-a-safearray-for-adonet-cpp-cli.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
@@ -49,4 +52,4 @@ ADO.NET veri erişimi için .NET Framework API'sidir ve güç ve önceki veri er
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)   
- [Yerel ve.NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+ [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

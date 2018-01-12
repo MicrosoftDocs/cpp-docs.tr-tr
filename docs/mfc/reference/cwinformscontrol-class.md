@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c68fd721d37757010d9f60a81e2cf809d7883cc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2e6bf46cf28c3bca3d71f85cdd681745a0379bd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwinformscontrol-class"></a>Ddx_managedcontrol sınıfı
 Bir Windows Forms denetimini barındırmak için temel işlevleri sağlar.  
@@ -210,4 +211,4 @@ inline operator TManagedControl^() const;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWinFormsDialog sınıfı](../../mfc/reference/cwinformsdialog-class.md)   
- [CWinFormsView sınıfı](../../mfc/reference/cwinformsview-class.md)
+ [CWinFormsView Sınıfı](../../mfc/reference/cwinformsview-class.md)

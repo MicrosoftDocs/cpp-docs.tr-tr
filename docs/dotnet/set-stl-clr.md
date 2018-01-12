@@ -18,11 +18,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cafab92b157fb0da39471d96a23a69e2ce209e5b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9624f08c54629657e7f52c2c688d2083aa557a56
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="set-stlclr"></a>set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `set` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için.  
@@ -64,7 +67,7 @@ template<typename Key>
 |[set::iterator (STL/CLR)](../dotnet/set-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
 |[set::key_compare (STL/CLR)](../dotnet/set-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
 |[set::key_type (STL/CLR)](../dotnet/set-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
-|[set::Reference (STL/CLR)](../dotnet/set-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[set::reference (STL/CLR)](../dotnet/set-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[set::reverse_iterator (STL/CLR)](../dotnet/set-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[set::size_type (STL/CLR)](../dotnet/set-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
 |[set::value_compare (STL/CLR)](../dotnet/set-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
@@ -72,14 +75,14 @@ template<typename Key>
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[set::Begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
-|[set::Clear (STL/CLR)](../dotnet/set-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[set::Count (STL/CLR)](../dotnet/set-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[set::Empty (STL/CLR)](../dotnet/set-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[set::End (STL/CLR)](../dotnet/set-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[set::begin (STL/CLR)](../dotnet/set-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[set::clear (STL/CLR)](../dotnet/set-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[set::count (STL/CLR)](../dotnet/set-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[set::empty (STL/CLR)](../dotnet/set-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[set::end (STL/CLR)](../dotnet/set-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
 |[set::equal_range (STL/CLR)](../dotnet/set-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[set::ERASE (STL/CLR)](../dotnet/set-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[set::Find (STL/CLR)](../dotnet/set-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[set::erase (STL/CLR)](../dotnet/set-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[set::find (STL/CLR)](../dotnet/set-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[set::insert (STL/CLR)](../dotnet/set-insert-stl-clr.md)|Öğeleri ekler.|  
 |[set::key_comp (STL/CLR)](../dotnet/set-key-comp-stl-clr.md)|İki anahtar sıralama temsilcisi kopyalar.|  
 |[set::lower_bound (STL/CLR)](../dotnet/set-lower-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
@@ -88,20 +91,20 @@ template<typename Key>
 |[set::rend (STL/CLR)](../dotnet/set-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[set::set (STL/CLR)](../dotnet/set-set-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
 |[set::size (STL/CLR)](../dotnet/set-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[set::Swap (STL/CLR)](../dotnet/set-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[set::swap (STL/CLR)](../dotnet/set-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[set::to_array (STL/CLR)](../dotnet/set-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[set::upper_bound (STL/CLR)](../dotnet/set-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
 |[set::value_comp (STL/CLR)](../dotnet/set-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[set::operator (STL/CLR) =](../dotnet/set-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[operator! = (set) (STL/CLR)](../dotnet/operator-inequality-set-stl-clr.md)|Belirler bir `set` nesne diğerine eşit değil `set` nesnesi.|  
-|[operator < (set) (STL/CLR)](../dotnet/operator-less-than-set-stl-clr.md)|Belirler bir `set` nesnesi, başka değerinden `set` nesnesi.|  
-|[operator < = (set) (STL/CLR)](../dotnet/operator-less-or-equal-set-stl-clr.md)|Belirler bir `set` nesnesidir değerinden küçük veya eşit başka `set` nesnesi.|  
-|[operator == (set) (STL/CLR)](../dotnet/operator-equality-set-stl-clr.md)|Belirler bir `set` nesnesidir diğerine eşit `set` nesnesi.|  
-|[operator > (set) (STL/CLR)](../dotnet/operator-greater-than-set-stl-clr.md)|Belirler bir `set` nesnesidir diğerinden daha büyük `set` nesnesi.|  
-|[operator > = (set) (STL/CLR)](../dotnet/operator-greater-or-equal-set-stl-clr.md)|Belirler bir `set` nesnesidir büyük veya ona eşit diğerine `set` nesnesi.|  
+|[set::operator= (STL/CLR)](../dotnet/set-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[operator!= (set) (STL/CLR)](../dotnet/operator-inequality-set-stl-clr.md)|Belirler bir `set` nesne diğerine eşit değil `set` nesnesi.|  
+|[operator< (set) (STL/CLR)](../dotnet/operator-less-than-set-stl-clr.md)|Belirler bir `set` nesnesi, başka değerinden `set` nesnesi.|  
+|[operator<= (set) (STL/CLR)](../dotnet/operator-less-or-equal-set-stl-clr.md)|Belirler bir `set` nesnesidir değerinden küçük veya eşit başka `set` nesnesi.|  
+|[operator== (set) (STL/CLR)](../dotnet/operator-equality-set-stl-clr.md)|Belirler bir `set` nesnesidir diğerine eşit `set` nesnesi.|  
+|[operator> (set) (STL/CLR)](../dotnet/operator-greater-than-set-stl-clr.md)|Belirler bir `set` nesnesidir diğerinden daha büyük `set` nesnesi.|  
+|[operator>= (set) (STL/CLR)](../dotnet/operator-greater-or-equal-set-stl-clr.md)|Belirler bir `set` nesnesidir büyük veya ona eşit diğerine `set` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

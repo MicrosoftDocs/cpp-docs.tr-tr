@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 445aa5a2a609c3cf2da83e9ff876195a05a33d6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: cb3c0d60c4b339d7ed2ae8bc4eee503036ac9097
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 Bu konudaki örnek ekler `IRowsetLocate` arabirimini `CMyProviderRowset` sınıfı. Neredeyse her durumda, var olan bir COM nesnesine bir arabirim ekleyerek başlatın. Ardından, tüketici şablonlarından çağrılar ekleyerek test edebilirsiniz. Örnek gösterir nasıl yapılır:  
@@ -274,4 +277,4 @@ END_ACCESSOR_MAP()
  Kod güncelleştirildiğinde, yapı ve sağlayıcı ile yürütme gerekir `IRowsetLocate` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş Sağlayıcı teknikleri](../../data/oledb/advanced-provider-techniques.md)
+ [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

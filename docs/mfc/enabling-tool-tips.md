@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c7e35dab6a94a01851b667ce4ab3dd58aa4bd8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0555af785d75c9247eb365a03a51161441a4722a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enabling-tool-tips"></a>Araç İpuçlarını Etkinleştirme
 (Örneğin, bir form görünümü veya iletişim kutusu denetimleri) penceresinin alt denetimler için araç ipucu destek etkinleştirebilirsiniz.  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/24/2017
 2.  Her denetim için bir dize girin, [TTN_NEEDTEXT bildirimini](../mfc/handling-ttn-needtext-notification-for-tool-tips.md) işleyicisi. Alt denetimler (örneğin, form görünümü sınıfı) içeren bir pencere ileti haritasını işleyicisidir. Bu işleyici, bir işlev çağırmalıdır denetimi tanımlar ve ayarlar **pszText** araç ipucunu denetimini tarafından kullanılan metin belirtmek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cframewnd'den türetilmemiş pencerelerde araç ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+ [CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 

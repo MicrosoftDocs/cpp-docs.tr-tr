@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 749d4badb3a7b5a2c61fa753a840765f14e2a329
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 16c0311c3eedc13cbc47214b44fc8810dee3eecd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-document-containment"></a>Etkin Belge Kapsaması
 Etkin belge kapsaması belgelerle oluşturmak ve her belge türü için birden çok uygulama çerçeveleri kullanmak için zorlama yerine çalışmak üzere tek bir çerçeve sağlayan bir teknolojidir. OLE katıştırılmış nesneler yalnızca tek bir içerik etkinleştirilebilir bileşik belge içinde çalışır, temel OLE teknolojisini farklıdır. Etkin belge kapsaması ile tek bir çerçevesi bağlamında tüm belgeyi (ilişkili menüleri, araç çubukları ve benzeri dahil olmak üzere diğer bir deyişle, tüm uygulamanın) etkinleştirin.  

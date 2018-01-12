@@ -27,11 +27,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a0c436a7fc1b7d567ed6cc684e76b46628de97d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c03cdca832dcf0627ad033082085661c3b26847
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
 Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sağlar. Internet için birçok yeni uygulama yazılmış ve yeni uygulama türlerini teknolojileri, tarayıcı yetenekleri ve güvenlik seçeneklerini değiştir yazılır. Tarayıcılar World Wide Web erişimi sağlama ve metin, grafik, ActiveX denetimleri ve belgeleri içeren HTML sayfalarını görüntüleme istemci bilgisayarlarda çalıştırın. Sunucuları, FTP, HTTP ve gopher hizmetleri sağlamak ve sunucu uzantısı uygulamaları CGI kullanmanın çalıştırın. Özel uygulamanızı bilgilerini almak ve veri Internet'te sağlayın.  
@@ -42,48 +43,48 @@ Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sa�
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Internet ile ilgili MFC sınıfları](../mfc/internet-related-mfc-classes.md)  
+-   [Internet ile İlgili MFC Sınıfları](../mfc/internet-related-mfc-classes.md)  
   
--   [Konuya göre Internet bilgileri](../mfc/internet-information-by-topic.md)  
+-   [Konuya Göre Internet Bilgileri](../mfc/internet-information-by-topic.md)  
   
--   [Göreve göre Internet bilgileri](../mfc/internet-information-by-task.md)  
+-   [Göreve Göre Internet Bilgileri](../mfc/internet-information-by-task.md)  
   
--   [Internet'te etkin teknoloji](../mfc/active-technology-on-the-internet.md)  
+-   [Internet'te Etkin Teknoloji](../mfc/active-technology-on-the-internet.md)  
   
--   [WinINet temelleri](../mfc/wininet-basics.md)  
+-   [WinInet Temelleri](../mfc/wininet-basics.md)  
   
--   [HTML temelleri](../mfc/html-basics.md)  
+-   [HTML Temelleri](../mfc/html-basics.md)  
   
--   [HTTP temelleri](../mfc/http-basics.md)  
+-   [HTTP Temelleri](../mfc/http-basics.md)  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
   
--   [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md)  
+-   [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)  
   
--   [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md)  
+-   [Internet'te Etkin Belgeler](../mfc/active-documents-on-the-internet.md)  
   
--   [Internet'teki zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
+-   [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
   
--   [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)  
+-   [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)  
   
--   [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)  
+-   [MFC Internet Programlama Görevleri](../mfc/mfc-internet-programming-tasks.md)  
   
--   [Uygulama tasarımı seçimleri](../mfc/application-design-choices.md)  
+-   [Uygulama Tasarımı Seçimleri](../mfc/application-design-choices.md)  
   
--   [MFC uygulamaları yazma](../mfc/writing-mfc-applications.md)  
+-   [MFC Uygulamaları Yazma](../mfc/writing-mfc-applications.md)  
   
--   [Internet uygulamalarını test etme](../mfc/testing-internet-applications.md)  
+-   [Internet Uygulamalarını Test Etme](../mfc/testing-internet-applications.md)  
   
 -   [Internet güvenliği](../mfc/internet-security-cpp.md)  
   
--   [DHTML denetimleri için ATL desteği](../atl/atl-support-for-dhtml-controls.md)  
+-   [DHTML Denetimleri için ATL Desteği](../atl/atl-support-for-dhtml-controls.md)  
   
 ##  <a name="_core_web_sites_for_more_information"></a>Daha fazla bilgi için Web siteleri  
- Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/linkid=56322) Web sitesi. (Bağlantılar bildirilmeksizin değiştirilebilir.)  
+ Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar bildirilmeksizin değiştirilebilir.)  
   
  Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolojileri ve son ve yaklaşan konferans ilgili üst hikayeler kullanma hakkında bilgi içerir. Bu sayfadan .NET ve XML Geliştirici Merkezi gibi birçok ilgili Geliştirici sitelere atlayabilirsiniz. Ayrıca, beta SDK'ları ve örnekleri de indirebilirsiniz.  
   
- [World Wide Web Konsorsiyumu (W3C)](http://go.microsoft.com/fwlink/linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri için belirtimler yayımlar.  
+ [World Wide Web Konsorsiyumu (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri için belirtimler yayımlar.  
   
 ##  <a name="_core_more_internet_help"></a>Internet ile ilgili daha fazla yardım  
  Windows SDK'sı OLE bölümü OLE programlama hakkında ek bilgi içerir. Bu bilgiler MFC sınıfları aracılığıyla yapmak yerine, doğrudan, Win32 WinINet işlevlerini kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca, Internet teknolojileri hakkında genel bilgi içerir.  

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 225535055f05fa8d6eeb08476004fbc5074e86b2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3e342df8bee9b69d0d84e3096f727d2c260b7493
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX Denetimleri: Başka Bir Özel Özellik Sayfası Ekleme
 Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha fazla özelliği vardır. Bu durumda, bu özellikleri görüntülemek için ActiveX denetiminin özellik sayfaları ekleyebilirsiniz.  
@@ -33,9 +34,9 @@ Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha f
   
  ActiveX denetiminde özellik sayfalarını kullanma ile ilgili daha fazla bilgi için aşağıdaki makalelere bakın:  
   
--   [MFC ActiveX denetimleri: Özellik sayfaları](../mfc/mfc-activex-controls-property-pages.md)  
+-   [MFC ActiveX Denetimleri: Özellik Sayfaları](../mfc/mfc-activex-controls-property-pages.md)  
   
--   [MFC ActiveX denetimleri: Stok özellik sayfalarını kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)  
+-   [MFC ActiveX Denetimleri: Stok Özellik Sayfalarını Kullanma](../mfc/mfc-activex-controls-using-stock-property-pages.md)  
   
     > [!NOTE]
     >  Bu yeni özellik sayfaları ActiveX denetimi özellik sayfaları için standart boyutu uygun önemle tavsiye edilir. Stok resmi ve rengi özellik ölçü 250 x 62 iletişim kutusu birimleri (DLU) sayfaları. Standart yazı tipi özellik sayfası 250 x 110 Dlu'lar ' dir. ActiveX Denetim Sihirbazı tarafından oluşturulan varsayılan özellik sayfası 250 x 62 DLU standardını kullanır.  
@@ -117,5 +118,5 @@ Bazen, bir ActiveX denetimini makul bir özellik sayfasında sığmayacak daha f
  Projenizi yeniden derleyin ve yeni özellik sayfası test etmek için Test kapsayıcısını kullanmak gerekli değişiklikleri yaptıktan sonra. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcısı erişim hakkında bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

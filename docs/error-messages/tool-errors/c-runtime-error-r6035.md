@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6f0f6e34ef6c95d4c1942cdc1348000213647b0b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6b5f9fb1f7562b26382c6b36e3947367013631bf
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="c-runtime-error-r6035"></a>C çalışma zamanı hatası R6035
 Bu güvenlik tanımlama bilgisinde bağlı olan bir işlev etkinken Microsoft Visual C++ çalışma zamanı kitaplığı, hata R6035 - bu uygulamanın modülünde modülünün genel güvenlik tanımlama bilgisi başlatılıyor.  __Security_init_cookie önceki çağırın.  
@@ -76,4 +77,4 @@ void DllEntryHelper() {
 >  Hata iletisi R6035 x86 tarafından oluşturulan yalnızca CRT hata ayıklama ve yapılandırılmış özel durum işleme, ancak koşul için bir hata özel durum tüm formları yanı sıra, tüm platformlarda, C++ EH gibi işliyor.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Güvenlik derinlemesine denetler](http://go.microsoft.com/fwlink/?linkid=7260)
+ [Derleyici Güvenlik derinlemesine denetler](http://go.microsoft.com/fwlink/p/?linkid=7260)

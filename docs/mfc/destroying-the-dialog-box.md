@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a9e975884724f9cf0f0c988f671de5182c94165e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b1b6c94c4c7efe3bc3300d6c8c5c34fbe890fb4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="destroying-the-dialog-box"></a>İletişim Kutusunu Yok Etme
 Kalıcı iletişim kutuları normalde yığın çerçevesi oluşturulur ve onları oluşturan işlevi sona erdiğinde yok. Nesne kapsam dışına çıktığında iletişim nesnenin yıkıcı adı verilir.  
@@ -33,5 +34,5 @@ Kalıcı iletişim kutuları normalde yığın çerçevesi oluşturulur ve onlar
  Kalıcı olmayan iletişim kutuları normal olarak oluşturulan ve bir ana görünüm veya çerçeve pencere tarafından sahip olunan — uygulamanın ana çerçeve penceresi veya belge çerçeve penceresi. Varsayılan [OnClose](../mfc/reference/cwnd-class.md#onclose) işleyicisi çağrılarını [DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow), iletişim kutusunun penceresi yok eder. İletişim kutusu tek başına veya diğer özel sahipliği semantiği hiçbir işaretçilerle anlamına gelir, geçersiz kılmalısınız [PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) C++ iletişim nesnesi yok etmek için. Ayrıca kılmalıdır [OnCancel](../mfc/reference/cdialog-class.md#oncancel) ve arama `DestroyWindow` gelen içindeki. Aksi durumda, artık gerekli olmadığında iletişim kutusu sahibi C++ nesne yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a7ad2d09d45747733bd79fd6fe2a7139cef5269a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e535fac6330d6268629e8e3681fec47c7b0d65d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="security-in-remote-automation"></a>Uzaktan Otomasyonda Güvenlik
 Uzak Otomasyon temel sunucu uygulama yazıcısı (veya bunun yerine, yönetici) belirli bir nesneyi uzaktan nasıl etkinleştirilebilir belirtmek izin vermek için güvenlik düzeyini destekler. Belirli bir sistemde tüm otomasyon nesneleri "Uzaktan etkinleştirmeye izin vermeyecek şekilde" veya "Uzaktan etkinleştirmeye izin vermek için" genel olarak ayarlanmış olabilir. Buna ek olarak ve daha sık ayrı ayrı nesneleri aşağıdakiler gibi özelliklerinden verilebilir. Uzaktan otomasyon kullanan bir anahtar her nesnenin kayıt defteri ayarlarını **AllowRemoteActivation**, belirli bir sunucuda uzaktan etkinleştirilebilir olup olmadığını belirlemek için. Bu mod yükleyebilecek ayarları kullanırsanız, kayıt defterinde her nesne bu anahtar ardından atanmış ve her biri ayrı ayrı durumu "Evet" veya uygun olarak "Hayır" şekilde ayarlanmış olmalıdır.  

@@ -16,11 +16,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25ab4b9cdba5a9a71d1258960e4da89d2d5e657d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: dfb654ba2cce069086713322624e947e14bc26f4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-read-data-from-the-windows-registry-ccli"></a>Nasıl yapılır: Windows Kayıt Defterinden Veri Okuma (C++/CLI)
 Aşağıdaki kod örneğinde <xref:Microsoft.Win32.Registry.CurrentUser> Windows kayıt defterinden veri okuma anahtarı. İlk olarak, alt anahtarlar kullanılarak numaralandırılır <xref:Microsoft.Win32.RegistryKey.GetSubKeyNames%2A> yöntemi ve ardından kimlikleri alt anahtarı kullanılarak açılır <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A> yöntemi. Kök anahtarları gibi her alt tarafından temsil edilen <xref:Microsoft.Win32.RegistryKey> sınıfı. Son olarak, yeni <xref:Microsoft.Win32.RegistryKey> nesnesi anahtar/değer çiftlerini numaralandırmak için kullanılır.  
@@ -76,4 +79,4 @@ int main( )
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Nasıl yapılır: Windows kayıt defterine veri yazma (C + +/ CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md)   
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

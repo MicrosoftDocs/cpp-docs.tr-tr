@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c46616914f9cf6d1069702c16cdd03f272d6561c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03fb11c29b51b30b1aaffccbe3e999f1cefc3fbb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-label-editing"></a>Ağaç Denetimi Etiketini Düzenleme
 Kullanıcı ağaç denetimindeki öğeleri etiketleri doğrudan düzenleyebilirsiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) olan **TVS_EDITLABELS** stili. Kullanıcı odaklı öğenin etiketini tıklatarak düzenleme başlar. Bir uygulama kullanarak düzenleme başlar [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) üye işlevi. Ağaç denetimi bildirim düzenlerken başlar ve ne zaman, iptal tamamlandı veya gönderir. Düzenleme tamamlandığında, uygunsa, öğenin etiketi güncelleştirmek için sorumludur.  
@@ -35,5 +36,5 @@ Kullanıcı ağaç denetimindeki öğeleri etiketleri doğrudan düzenleyebilirs
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

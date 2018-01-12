@@ -13,11 +13,12 @@ ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: da81f8731be97c69a73eddb96e9e56e49c59c91b
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload: cplusplus
+ms.openlocfilehash: 72106bd363987d39fb11c9ec1a6d3fd0ceb5665d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++'ta açık klasörü projeler
 Visual Studio 2017, kaynak dosyaları klasörünü açın ve hemen kodlama gözatma, yeniden düzenleme, hata ayıklama, IntelliSense desteği ile başlayın ve benzeri olanak tanıyan "Klasörünü aç" özelliği sunmaktadır. Hiçbir .sln veya .vcxproj dosyalar yüklenir; Gerekirse, özel görevler oluşturun ve parametreleri basit .json dosyalar ile başlatma olarak belirtebilirsiniz. Klasör Aç gücü, yalnızca dosyaların kaybolmasını koleksiyonları, ancak de ayrıca neredeyse tüm yapı sistem, CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, marka ve çok çeşitli şimdi Visual C++ destekleyebilir. 
@@ -229,5 +230,5 @@ Ek bağımsız değişkenlerini belirtmek için bunları eklemeniz yeterlidir `a
 Bu dosyayı kaydettiğinizde, yeni yapılandırmayı hedef hata ayıklama açılır listede görünür ve hata ayıklayıcısı başlayacak şekilde seçebilirsiniz. Yürütülebilir dosyalar herhangi bir sayı için istediğiniz kadar çok hata ayıklama yapılandırmaları oluşturabilirsiniz. Basarsanız **F5** hata ayıklayıcı şimdi başlar ve zaten ayarladığınız herhangi kesme noktası isabet. Tüm bilinen hata ayıklayıcı pencerelerinin ve işlevleri kullanıma hazırdır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[IDE ve Visual C++ geliştirme araçları](ide-and-tools-for-visual-cpp-development.md)
+[Visual C++ Geliştirme Araçları ve IDE](ide-and-tools-for-visual-cpp-development.md)
 

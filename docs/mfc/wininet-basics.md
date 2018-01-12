@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0598b131305684e9134a223fd599a8b642bf6da7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f3c9502c720b0f443ace3cfe637fb4826281ecf4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wininet-basics"></a>WinInet Temelleri
 WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP desteği eklemek için kullanabilirsiniz. Geçersiz kılabilirsiniz [OnStatusCallback](../mfc/reference/cinternetsession-class.md#onstatuscallback) ve `dwContext` aramak ve dosyaları karşıdan kullanıcılara ilerleme durumu bilgileri sağlamak için parametre.  
@@ -68,5 +69,5 @@ WinINet indirip dosyalarından, uygulamanızda karşıya yüklemek için FTP des
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)
+ [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
 

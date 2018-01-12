@@ -33,11 +33,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 975844d2a5dcad3afecd07411d2992abb6c8578b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e08749341bd7865c89e397e36aeff3a6ccc0d71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray sınıfı
 Tür kullanımı uyumlu "sarmalayıcı" sınıfının nesneleri için sağlar `CPtrArray` veya `CObArray`.  
@@ -273,7 +274,7 @@ void SetAt(
  *TÜRÜ*  
  Taban sınıfı dizisinde depolanan öğelerin türü.  
   
- *PTR*  
+ *ptr*  
  Dizide nIndex eklenecek öğe için bir işaretçi. Bir NULL değerine izin verilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -305,4 +306,4 @@ void SetAtGrow(
  [MFC örnek Topla](../../visual-cpp-samples.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CPtrArray sınıfı](../../mfc/reference/cptrarray-class.md)   
- [CObArray sınıfı](../../mfc/reference/cobarray-class.md)
+ [CObArray Sınıfı](../../mfc/reference/cobarray-class.md)

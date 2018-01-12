@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b35de0ea2b0f7e11dddcdf7b99f2ab01dcf7a7de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9056fc73e2718b2a21936c39e630f4d4fddf1eed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap sınıfı
 Tür kullanımı uyumlu işaretçi eşleme sınıfların nesneler için "sarmalayıcı" sağlar `CMapPtrToPtr`, `CMapPtrToWord`, `CMapWordToPtr`, ve `CMapStringToPtr`.  
@@ -97,7 +98,7 @@ void GetNextAssoc(
  `rPosition`  
  Bir başvuru belirtir bir **konumu** önceki tarafından döndürülen değer `GetNextAssoc` veya `BASE_CLASS` **:: GetStartPosition** çağırın.  
   
- *ANAHTARI*  
+ *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
  `rKey`  
@@ -170,7 +171,7 @@ BOOL RemoveKey(KEY key);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *ANAHTARI*  
+ *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
  `key`  
@@ -190,7 +191,7 @@ void SetAt(KEY key, VALUE newValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *ANAHTARI*  
+ *KEY*  
  Haritanın anahtarları türünü belirten bir şablon parametre.  
   
  `key`  
@@ -208,4 +209,4 @@ void SetAt(KEY key, VALUE newValue);
  [CMapPtrToPtr sınıfı](../../mfc/reference/cmapptrtoptr-class.md)   
  [CMapPtrToWord sınıfı](../../mfc/reference/cmapptrtoword-class.md)   
  [CMapWordToPtr sınıfı](../../mfc/reference/cmapwordtoptr-class.md)   
- [CMapStringToPtr sınıfı](../../mfc/reference/cmapstringtoptr-class.md)
+ [CMapStringToPtr Sınıfı](../../mfc/reference/cmapstringtoptr-class.md)

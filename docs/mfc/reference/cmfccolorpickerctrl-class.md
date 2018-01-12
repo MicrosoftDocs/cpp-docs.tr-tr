@@ -51,11 +51,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 66e0155adec5b00bbb5e5f090c3944899c5e92d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 11c015df63d3032a8616f7f19614376aa966d89b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl sınıfı
 `CMFCColorPickerCtrl` Sınıfı renkleri seçmek için kullanılan bir denetimi için işlevsellik sağlar.  
@@ -415,4 +416,4 @@ void SetType(COLORTYPE colorType);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md)
+ [CMFCColorDialog Sınıfı](../../mfc/reference/cmfccolordialog-class.md)

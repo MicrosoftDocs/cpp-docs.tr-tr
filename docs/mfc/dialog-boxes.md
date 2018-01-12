@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e4417fc2d4714a249b04bb0c1d04e5642495835
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8117d175d59859c97a360ca6a6d2af559b403e32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-boxes"></a>İletişim Kutuları
 Windows uygulamaları, sık sık iletişim kutuları aracılığıyla kullanıcı ile iletişim kurar. Sınıf [CDialog](../mfc/reference/cdialog-class.md) iletişim kutuları yönetme, Visual C++ iletişim kutusu Düzenleyicisi iletişim kutuları tasarlamak ve iletişim şablonu kaynaklarını oluşturmak kolaylaştırır ve kod sihirbazları başlatma işlemini basitleştirmek için bir arabirim sağlar ve bir iletişim kutusu ve kullanıcı tarafından girilen değerleri toplama denetimlerini doğrulanıyor.  
@@ -42,7 +43,7 @@ Windows uygulamaları, sık sık iletişim kutuları aracılığıyla kullanıc�
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Örnek: bir iletişim kutusunu menü komutu ile görüntüleme](../mfc/example-displaying-a-dialog-box-via-a-menu-command.md)  
+-   [Örnek: Bir İletişim Kutusunu Menü Komutu ile Görüntüleme](../mfc/example-displaying-a-dialog-box-via-a-menu-command.md)  
   
 -   [Framework'te iletişim kutusu bileşenleri](../mfc/dialog-box-components-in-the-framework.md)  
   
@@ -62,9 +63,9 @@ Windows uygulamaları, sık sık iletişim kutuları aracılığıyla kullanıc�
   
 -   [Windows iletilerini sınıfınıza eşleme](../mfc/mapping-windows-messages-to-your-class.md)  
   
--   [Yaygın olarak geçersiz kılınan üye işlevleri](../mfc/commonly-overridden-member-functions.md)  
+-   [Yaygın Olarak Geçersiz Kılınan Üye İşlevleri](../mfc/commonly-overridden-member-functions.md)  
   
--   [Yaygın olarak eklenen üye işlevleri](../mfc/commonly-added-member-functions.md)  
+-   [Yaygın Olarak Eklenen Üye İşlevleri](../mfc/commonly-added-member-functions.md)  
   
 -   [Ortak iletişim kutusu sınıfları](../mfc/common-dialog-classes.md)  
   
@@ -72,7 +73,7 @@ Windows uygulamaları, sık sık iletişim kutuları aracılığıyla kullanıc�
   
 -   Bir iletişim kutusu, kullanıcı arabirimi olan bir uygulama oluşturun: bkz [CMNCTRL1](../visual-cpp-samples.md) veya [CMNCTRL2](../visual-cpp-samples.md) örnek programlar. Uygulama Sihirbazı'nı bu seçenek de sağlar.  
   
--   [Örnekleri](../mfc/dialog-sample-list.md)  
+-   [Örnekler](../mfc/dialog-sample-list.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

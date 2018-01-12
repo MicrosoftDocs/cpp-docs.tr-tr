@@ -22,11 +22,14 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6699d446fadbc0ca380bea28df318c27a31c04e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5082f603c64e796ef369044e3586ae5bfe85605a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-generics-in-visual-c"></a>Visual C++'de Genel Türlere Genel Bakış
 Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli türleridir. Genel kullanıldığında, belirttiğiniz bir bilinmeyen tür parametresi ile tanımlanan bir türü bir parametreli türüdür.  
@@ -47,7 +50,7 @@ Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli 
   
 ## <a name="terminology-used-with-generics"></a>Genel türler ile kullanılan terminolojisi  
   
-##### <a name="type-parameters"></a>Tür Parametreleri  
+##### <a name="type-parameters"></a>Tür ParameTReleri  
  Bir veya daha fazla bilinmeyen tür olarak bilinen bir genel bildirimini içerir *tür parametrelerindeki*. Tür parametreleri genel bildirimi gövdesi içinde türünün temsil eden bir ad verilir. Tür parametresi genel bildirimi gövdesi içinde bir tür olarak kullanılır. Genel bildirimi listesi için < T\> t parametresi içerir  
   
 ##### <a name="type-arguments"></a>Tür bağımsız değişkenleri  
@@ -96,7 +99,7 @@ Genel türler, ortak dil çalışma zamanı tarafından desteklenen parametreli 
   
  `}`  
   
-## <a name="type-parameters"></a>Tür Parametreleri  
+## <a name="type-parameters"></a>Tür ParameTReleri  
  Genel bir sınıf tür parametrelerinde gibi diğer tanımlayıcıları kabul edilir. Ancak, türü bilinmediğinden kullanımlarını kısıtlamalar vardır. Örneğin, bu üyeler desteklemek için tür parametresi bilinen sürece üyeleri ve tür parametresi sınıfı yöntemlerinin kullanamazsınız. Diğer bir deyişle, üye türü parametresi üzerinden erişmek için üye türü parametrenin kısıtlama listesine içeren tür eklemeniz gerekir.  
   
  `// generics_overview_3.cpp`  
@@ -137,4 +140,4 @@ int main() {
  Burada `T` türü parametresi genel bir sınıf veya yöntemin tanımı'nda, varsayılan değeri değişkenine başlatır. Varsa `T` null işaretçi; olacaktır ref sınıfı ise `T` değer sınıfı nesne sıfır olarak başlatılır. Bu adlı bir *Başlatıcı varsayılan*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

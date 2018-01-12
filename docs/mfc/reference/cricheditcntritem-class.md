@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84cca25f52bab9af4f30f35e2eb17dadb94c20a1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ebb8cf92a522b63fb88338fe9befacc7d5f1d506
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem sınıfı
 İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), zengin düzenleme denetimine MFC'nin belge görünüm mimarisi bağlamında işlevselliğini sağlar.  
@@ -113,4 +114,4 @@ void SyncToRichEditObject(REOBJECT& reo);
  [COleClientItem sınıfı](../../mfc/reference/coleclientitem-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CRichEditDoc sınıfı](../../mfc/reference/cricheditdoc-class.md)   
- [CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md)
+ [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)

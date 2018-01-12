@@ -13,39 +13,42 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b644a78ddff41db1b2fa5bc13e2d2eb0bf897210
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b0057fc06d6a025dbc2a5537f0885271b3693ba3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptr-members"></a>ptr Üyeleri
 Üyeleri `com::ptr`.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [PTR::PTR](../dotnet/ptr-ptr.md)  
+ [ptr::ptr](../dotnet/ptr-ptr.md)  
   
- [PTR:: ~ ptr](../dotnet/ptr-tilde-ptr.md)  
+ [ptr::~ptr](../dotnet/ptr-tilde-ptr.md)  
   
- [PTR::Attach](../dotnet/ptr-attach.md)  
+ [ptr::Attach](../dotnet/ptr-attach.md)  
   
- [PTR::CreateInstance](../dotnet/ptr-createinstance.md)  
+ [ptr::CreateInstance](../dotnet/ptr-createinstance.md)  
   
- [PTR::detach](../dotnet/ptr-detach.md)  
+ [ptr::Detach](../dotnet/ptr-detach.md)  
   
- [PTR::GetInterface](../dotnet/ptr-getinterface.md)  
+ [ptr::GetInterface](../dotnet/ptr-getinterface.md)  
   
- [PTR::QueryInterface](../dotnet/ptr-queryinterface.md)  
+ [ptr::QueryInterface](../dotnet/ptr-queryinterface.md)  
   
- [PTR::Release](../dotnet/ptr-release.md)  
+ [ptr::Release](../dotnet/ptr-release.md)  
   
- [PTR::operator =](../dotnet/ptr-operator-assign.md)  
+ [ptr::operator=](../dotnet/ptr-operator-assign.md)  
   
- [PTR::operator ->](../dotnet/ptr-operator-arrow.md)  
+ [ptr::operator->](../dotnet/ptr-operator-arrow.md)  
   
- [PTR::operator!](../dotnet/ptr-operator-logical-not.md)  
+ [ptr::operator!](../dotnet/ptr-operator-logical-not.md)  
   
- [PTR::operator bool](../dotnet/ptr-operator-bool.md)  
+ [ptr::operator bool](../dotnet/ptr-operator-bool.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [com::PTR sınıfı](../dotnet/com-ptr-class.md)
+ [com::ptr Sınıfı](../dotnet/com-ptr-class.md)

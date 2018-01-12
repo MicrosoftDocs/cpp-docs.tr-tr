@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97b92735bba9445b7fd5d0ee2a303468ff199846
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e2b3b1d2b15db47eea8ebc10b2a73cafba5d6952
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-class-from-activex-control-wizard"></a>ActiveX Denetimi Sihirbazından Sınıf Ekleme
 Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz seçili ActiveX denetiminden eklediğiniz her bir arabirim için bir sınıf oluşturur.  
@@ -44,7 +45,7 @@ Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbaz
   
  Tıklatırsanız **kayıt defteri** altında **sınıfı gelen eklemek**, bu kutu değişikliği için kullanılamıyor.  
   
- **Arabirimleri**  
+ **Arabirimler**  
  Şu anda seçili ActiveX denetiminde arabirimler belirtir **kullanılabilir ActiveX denetimleri** veya belirtilen dosya türü kitaplığında **konumu**.  
   
 |Aktarma düğmesi|Açıklama|  
@@ -74,4 +75,4 @@ Kullanılabilir ActiveX denetiminden bir MFC sınıfı eklemek için bu sihirbaz
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ActiveX denetiminden sınıf ekleme](../ide/adding-a-class-from-an-activex-control-visual-cpp.md)   
- [Otomasyon istemcileri: Tür kitaplıklarını kullanma](../mfc/automation-clients-using-type-libraries.md)
+ [Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../mfc/automation-clients-using-type-libraries.md)

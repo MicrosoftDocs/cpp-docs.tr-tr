@@ -163,11 +163,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 51ccc21b89b7330eca084dbd740a36ce5e031ff8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03ef5135130590d142e9725e1d064b932cc7ff4d
+ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 Zengin düzenleme denetimine işlevselliğini sağlar.  
@@ -273,9 +274,9 @@ class CRichEditCtrl : public CWnd
   
  Kullanma hakkında daha fazla bilgi için `CRichEditCtrl`, bkz:  
   
-- [Denetimleri](../../mfc/controls-mfc.md)  
+- [Denetimler](../../mfc/controls-mfc.md)  
   
-- [CRichEditCtrl kullanma](../../mfc/using-cricheditctrl.md)  
+- [CRichEditCtrl Kullanma](../../mfc/using-cricheditctrl.md)  
   
 -   Bilgi Bankası makalesi Q259949: bilgi: SetCaretPos() olan uygun olmayan CEdit veya CRichEditCtrl denetimleri  
   
@@ -1210,7 +1211,7 @@ int LineLength(int nLine = -1) const;
  Bir karakterin karakter dizinini alınacak uzunluğunu olduğu satırında belirtir. Bu parametre -1 ise, seçili satır metni herhangi uzunluğu dahil değil, geçerli satır (düzeltme işareti içeren) uzunluğunu döndürdü. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için bu parametre yoksayılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Zaman `LineLength` çağrılır birden çok satırlı düzenleme denetimi için dönüş değeri tarafından belirtilen satır uzunluğu (bayt cinsinden) mi `nLine`. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için dönüş düzenleme denetimindeki metnin uzunluğu (bayt cinsinden) değerdir.  
+ Zaman `LineLength` çağrılır birden çok satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) tarafından belirtilen satırının `nLine`.  Satırın sonuna satır başı karakteri içermez. Zaman `LineLength` çağrılır tek satırlı düzenleme denetimi için dönüş değerini uzunluğudur (içinde `TCHAR`) düzenleme denetimindeki metin. Evrimçi denetimi karakter sayısından büyükse, dönüş değeri sıfırdır.
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [LineIndex](#lineindex) verilen satır numarası aralığında bir karakter dizini almak için üye işlevi `CRichEditCtrl` nesnesi.  
@@ -1915,4 +1916,4 @@ BOOL Undo();
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CEdit sınıfı](../../mfc/reference/cedit-class.md)   
- [CRichEditView sınıfı](../../mfc/reference/cricheditview-class.md)
+ [CRichEditView Sınıfı](../../mfc/reference/cricheditview-class.md)

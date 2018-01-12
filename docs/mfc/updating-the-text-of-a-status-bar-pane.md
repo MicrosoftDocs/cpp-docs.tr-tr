@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e447b6b8d4895bf0103995742fe0b2a5c8d62484
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0fb0f9bdaa032340256eee4781bfd775767f62ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>Durum Çubuğu Bölmesinin Metnini Güncelleştirme
 Bu makalede, bir MFC durum çubuğu bölmesinde görüntülenen metni değiştirme açıklanmaktadır. Durum çubuğu — bir pencere nesnesi sınıfının [CStatusBar](../mfc/reference/cstatusbar-class.md) — içeren birkaç "bölmeleri." Her bölme bilgilerini görüntülemek için kullanabileceğiniz durum çubuğu dikdörtgen bir alandır. Örneğin, birçok uygulama en sağdaki bölmelerinde CAPS LOCK, NUM LOCK ve diğer anahtarlar durumunu görüntüleyin. Uygulamalar ayrıca sıklıkla bilgilendirici metinde soldaki bölmesi (0), "iletisi bölme." olarak da adlandırılır görüntüleme Örneğin, varsayılan MFC durum çubuğu ileti bölmesinde seçili menü öğesi veya araç çubuğu düğmesi açıklayan bir dize göstermek için kullanır. Şekil [durum çubukları](../mfc/status-bar-implementation-in-mfc.md) MFC Uygulama Sihirbazı tarafından oluşturulan uygulamadan durum çubuğunu gösterir.  
@@ -84,4 +85,4 @@ Bu makalede, bir MFC durum çubuğu bölmesinde görüntülenen metni değiştir
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de durum çubuğu uygulaması](../mfc/status-bar-implementation-in-mfc.md)   
- [CStatusBar sınıfı](../mfc/reference/cstatusbar-class.md)
+ [CStatusBar Sınıfı](../mfc/reference/cstatusbar-class.md)

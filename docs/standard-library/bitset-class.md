@@ -45,11 +45,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 542be13898b18fb6f73a724eebe72f135f7ebde2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1bdd59695e7c1be32d65bcb9f49e01fa8903eaa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 Sabit sayıda bayrakları öğeler veya koşullar kümesi için koruma altında tutmada kısa bir yol sağlamak bitten oluşan bir dizi depolar nesnesi türünü açıklar. Bitset sınıfı her bit sabiti zamanı erişim sağlamak ve BITS koleksiyonunu içeren türü bitset nesnelerin işlemlerini destekler.  
@@ -92,7 +93,7 @@ class bitset
 |[ters çevirin](#flip)|Tüm bitleri değerini tersine çevirir bir `bitset` veya belirtilen bir konumdaki tek bir bit tersine çevirir.|  
 |[yok](#none)|Yok biti 1 olarak ayarlarsanız, testleri bir `bitset` nesnesi.|  
 |[Sıfırla](#reset)|Tüm bitleri sıfırlar bir `bitset` için 0 veya 0 belirtilen bir konuma bir bit hızında sıfırlar.|  
-|[ayarlama](#set)|Tüm BITS ayarlar bir `bitset` 1 ya da bir bit konumunda bir belirtilen 1 ayarlar.|  
+|[set](#set)|Tüm BITS ayarlar bir `bitset` 1 ya da bir bit konumunda bir belirtilen 1 ayarlar.|  
 |[boyutu](#size)|Bit sayısını döndürür bir `bitset` nesnesi.|  
 |[test etme](#test)|Testleri olup belirtilen bir konumda bit bir `bitset` 1 olarak ayarlayın.|  
 |[to_string](#to_string)|Dönüştüren bir `bitset` nesnesinin bir dize gösterimi.|  
@@ -109,7 +110,7 @@ class bitset
   
 |||  
 |-|-|  
-|[operator! =](#op_neq)|Bir hedef testleri `bitset` belirtilen eşitsizlik açısından `bitset`.|  
+|[operator!=](#op_neq)|Bir hedef testleri `bitset` belirtilen eşitsizlik açısından `bitset`.|  
 |[operator & =](#op_and_eq)|Bit kümeleri mantıksal ile Bitsel bir birleşimi gerçekleştirir `AND` işlemi.|  
 |[işleç <<](#op_lshift)|Bitleri kaydırır bir `bitset` konumlar belirtilen sayıda sola ve yeni bir sonuç döndürür `bitset`.|  
 |[işleç << =](#op_lshift_eq)|Bitleri kaydırır bir `bitset` konumlar belirtilen sayıda sola ve sonucu hedeflenen döndürür `bitset`.|  

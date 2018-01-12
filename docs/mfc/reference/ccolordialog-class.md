@@ -31,11 +31,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 329474d7d2212d621bdf263021a86d170118f1b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 38fbca875847e557981c09dc418c8e0ef65bed6e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 Bir renk seçimi iletişim kutusunu uygulamanıza eklemenizi sağlar.  
@@ -251,5 +252,5 @@ void SetCurrentColor(COLORREF clr);
  [MFC örnek MDI](../../visual-cpp-samples.md)   
  [MFC örnek DRAWCLI](../../visual-cpp-samples.md)   
  [CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 

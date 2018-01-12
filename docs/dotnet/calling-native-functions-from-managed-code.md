@@ -20,20 +20,23 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0843e3e9798087a1ed5d9415e8397149b0cd74f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 159b80fcc015db2999309fe99e9617f7dcd409ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 Ortak dil çalışma zamanı Platform Başlatma Hizmetleri ya da yerel dinamik bağlantı kitaplıkları (dll) C stili işlevleri çağırmak için kodu yönetilen tanır PInvoke sağlar. Aynı veri hazırlama "Sadece çalışır" ya da IJW, mekanizması için çalışma zamanı ile COM birlikte çalışabilirliği için kullanılır.  
   
  Daha fazla bilgi için bkz.:  
   
--   [C++ (DllImport özniteliği) açık PInvoke kullanma](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
+-   [C++'ta Açık PInvoke Kullanma (DllImport Özniteliği)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)  
   
--   [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
+-   [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
   
 -   [Yakından Platform çağırma](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
@@ -230,4 +233,4 @@ int main() {
  Daha iyi performans için daha az veri çağrı başına sıralama daha fazla çağrı yerine mümkün olduğunca kadar veri sıralama daha az PInvoke çağrıları vardır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel ve.NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)
+ [Yerel ve.NET Birlikte Çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md)

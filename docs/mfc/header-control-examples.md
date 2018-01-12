@@ -16,16 +16,17 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb539f7f903bdd4e0c8c2d1e86e18a132676f8d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4194669f25a851e215046c963db0a01fbb8d4e8a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="header-control-examples"></a>Üstbilgi Denetimine Örnekler
 Üstbilgi denetimleri örnekleri için bkz: [üstbilgi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

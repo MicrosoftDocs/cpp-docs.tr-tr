@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e98c9c180bb376032eb8ec74e431ba5408af3f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 90f8943b3fe81bb352be1fbbf38652012f20f84a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="priorityqueuesizetype-stlclr"></a>priority_queue::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -76,4 +79,4 @@ size difference = 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)   
- [priority_queue::Empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)
+ [priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)

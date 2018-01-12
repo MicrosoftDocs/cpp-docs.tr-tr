@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fdef4976d4a54c1ee746557f7f12aa0f6f34eb92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c9c1c3cad25bcee93fc6a5835f74fb868f44e8d3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmultimapvaluetype-stlclr"></a>hash_multimap::value_type (STL/CLR)
 Öğenin türü.  
@@ -73,4 +76,4 @@ int main()
  [hash_multimap (STL/CLR)](../dotnet/hash-multimap-stl-clr.md)   
  [hash_multimap::const_reference (STL/CLR)](../dotnet/hash-multimap-const-reference-stl-clr.md)   
  [hash_multimap::key_type (STL/CLR)](../dotnet/hash-multimap-key-type-stl-clr.md)   
- [hash_multimap::Reference (STL/CLR)](../dotnet/hash-multimap-reference-stl-clr.md)
+ [hash_multimap::reference (STL/CLR)](../dotnet/hash-multimap-reference-stl-clr.md)

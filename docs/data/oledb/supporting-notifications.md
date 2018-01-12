@@ -20,11 +20,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ea98172f1da948ed3839a4d3c07a5924ad952575
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 9a859a9f3b2061d1cb18c93cd9f46d30600ada28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="supporting-notifications"></a>Bildirimleri Destekleme
 ## <a name="implementing-connection-point-interfaces-on-the-provider-and-consumer"></a>Sağlayıcı ve tüketici bağlantı noktası arabirimler uygulama  
@@ -106,4 +109,4 @@ END_CONNECTION_POINT_MAP()
  Bildirimler için uygulamalarının çoğu OLE DB sağlayıcı şablonları içinde zaten ekli. Değil eklerseniz, `IRowsetNotifyCP` devralma zinciri derleyici bu kodu dolayısıyla kodunuzun boyutunu küçülterek, derleme akışından kaldırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş Sağlayıcı teknikleri](../../data/oledb/advanced-provider-techniques.md)
+ [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

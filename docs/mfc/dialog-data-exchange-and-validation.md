@@ -26,11 +26,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e7e481f7108b61f9af8d255bffac76f26a90200
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: af38919a65c7ecb16692f5833873a630e713951c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-data-exchange-and-validation"></a>İletişim Kutusu Veri Değişimi ve Doğrulaması
 İletişim kutusu veri değişimi (DDX) bir iletişim kutusu denetimleri başlatmak ve kullanıcı tarafından veri girişi toplamak için kolay yoludur. İletişim verisi doğrulama (DDV), bir iletişim kutusu veri girişi doğrulamak için kolay bir yoludur. DDX ve DDV iletişim kutularında yararlanmak için kullanmak [üye değişkeni ekleme](../ide/add-member-variable-wizard.md) veri üyeleri oluşturmak ve kendi veri türleri ayarlama ve doğrulama kurallarını belirtmek için.  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

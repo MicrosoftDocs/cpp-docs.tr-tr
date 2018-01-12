@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6c264e8d75b3a8f6fdd50b7f1a8e6bf03bd2d21a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d252605e35a223a6b0aa12820ac5d9fc2894b9c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listswap-stlclr"></a>list::swap (STL/CLR)
 İki kapsayıcının içeriğinin yerini değiştirir.  
@@ -91,4 +94,4 @@ a b c
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::Assign (STL/CLR)](../dotnet/list-assign-stl-clr.md)   
- [List::operator (STL/CLR) =](../dotnet/list-operator-assign-stl-clr.md)
+ [list::operator= (STL/CLR)](../dotnet/list-operator-assign-stl-clr.md)

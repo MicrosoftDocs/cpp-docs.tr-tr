@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 74ad65479af91abfd75e1459163737a8a4183deb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 36541f7ebb417302023d214695d07f498808718a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="transmitas"></a>transmit_as
 İstemci ve sunucu uygulamaları işlemek, sunulan bir türü iletilen türüyle ilişkilendirmek için derleyicisi bildirir.  
@@ -87,4 +90,4 @@ struct _TREE_NODE_TYPE * right;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
- [dışarı aktarma](../windows/export.md)   
+ [export](../windows/export.md)   

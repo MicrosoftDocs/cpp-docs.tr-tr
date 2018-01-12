@@ -23,11 +23,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a925f476d67ac4bc5abd2270f6c0b96df67c4466
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5a9f12f2670fce7ea1c28d68510ef6134a199dd7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sampler-class"></a>sampler Sınıfı
 Sampler sınıfı doku örnekleme için kullanılacak örnekleme yapılandırma bilgilerini toplar.  
@@ -215,4 +216,4 @@ sampler& operator= (// [2] move assingment operator sampler&& _Other) restrict(a
  Bu örneği örneğine başvuru.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

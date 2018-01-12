@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b5ac441e7fa91d73c4605a39585d2e293318417
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 343c3d9933006a5e2f938429138c595c5fb28b91
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-retrieve-the-net-framework-version-ccli"></a>Nasıl yapılır: .NET Framework Sürümünü Alma (C++/CLI)
 Aşağıdaki kod örneği, şu anda yüklü .NET Framework sürümünü belirlemek gösterilmiştir <xref:System.Environment.Version%2A> gösteren bir işaretçidir özelliği için bir <xref:System.Version> sürüm bilgilerini içeren nesne.  
@@ -50,4 +53,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

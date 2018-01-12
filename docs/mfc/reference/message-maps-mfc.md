@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 677a4a06402af1115f419dcd5979a13a84d79e08
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 958f308a089f2f503159b2ce56c2096595fc7613
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-maps-mfc"></a>İleti Eşlemeleri (MFC)
 Bu başvuru bölümü tüm listeler [ileti eşleme makroları](../../mfc/reference/message-map-macros-mfc.md) ve tüm [CWnd](../../mfc/reference/cwnd-class.md) karşılık gelen üye yanı sıra ileti eşleme girişleri işlev prototipleri:  
@@ -31,7 +32,7 @@ Bu başvuru bölümü tüm listeler [ileti eşleme makroları](../../mfc/referen
 |Kategori|Açıklama|  
 |--------------|-----------------|  
 |ON\_KOMUTU ileti işleyicisi|İşleme `WM_COMMAND` kullanıcı menü seçimlerini veya menü erişim tuşları tarafından üretilen iletileri.|  
-|[Alt pencere bildirim iletisi işleyicileri](../../mfc/reference/child-window-notification-message-handlers.md)|Alt Windows bildirim iletilerini işleme.|  
+|[Alt Pencere Bildirim İletisi İşleyicileri](../../mfc/reference/child-window-notification-message-handlers.md)|Alt Windows bildirim iletilerini işleme.|  
 |[WM_ ileti işleyicileri](../../mfc/reference/handlers-for-wm-messages.md)|İşleme `WM_` gibi iletilerini `WM_PAINT`.|  
 |[Kullanıcı tarafından tanımlanan ileti işleyicileri](../../mfc/reference/user-defined-handlers.md)|Kullanıcı tanımlı iletileri işleyin.|  
   
@@ -73,5 +74,5 @@ Bu başvuru bölümü tüm listeler [ileti eşleme makroları](../../mfc/referen
  Ancak, ileti eşlemeleri Microsoft Foundation Class Kitaplığı, önemli bir parçasıdır. Ne yaptıklarını anlamanız gerekir ve belgeleri için sağlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
+ [Yapılar, Stiller, Geri Çağrılar ve İleti Eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
 

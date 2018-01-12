@@ -27,11 +27,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0e3663f185380a7bb925a5c1bd94888dc3f37b79
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 22bb8144f3c83ca98bffa2f95e73eff31ddb89be
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="serialization-making-a-serializable-class"></a>Seri hale getirme: Seri Hale Getirilebilir Bir Sınıf Yapma
 Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşağıda listelenen bağlıdır ve aşağıdaki bölümlerde açıklanmıştır:  
@@ -99,5 +100,5 @@ Beş ana adım seri hale getirilebilir bir sınıf yapmak için gereklidir. Aşa
  Seri hale getirilebilir bir sınıf olduktan sonra makalesinde ele alındığı gibi sınıfın nesnelerini serileştirebilen [seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme](../mfc/serialization-in-mfc.md)
+ [Serileştirme](../mfc/serialization-in-mfc.md)
 

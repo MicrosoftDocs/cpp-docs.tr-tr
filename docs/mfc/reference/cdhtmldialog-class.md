@@ -127,11 +127,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a82079e43a5c4e1bfbcb9bb339663314d4ab2a49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eb546ffc35438e19bd5230d6e71db28061109bc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog sınıfı
 HTML kullanmak iletişim kutuları oluşturmak için kullanılan kendi kullanıcı arabirimlerini uygulamak için iletişim kutusu kaynakları yerine.  
@@ -394,7 +395,7 @@ void DDX_DHtml_CheckBox(
  `szId`  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ### <a name="example"></a>Örnek  
@@ -463,7 +464,7 @@ void DDX_DHtml_ElementText(
  *DISPID*  
  Veri değişimi istediğiniz HTML öğesi gönderme kimliği.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ##  <a name="ddx_dhtml_radio"></a>CDHtmlDialog::DDX_DHtml_Radio  
@@ -483,7 +484,7 @@ void DDX_DHtml_Radio(
  `szId`  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ##  <a name="ddx_dhtml_selectindex"></a>CDHtmlDialog::DDX_DHtml_SelectIndex  
@@ -503,7 +504,7 @@ void DDX_DHtml_SelectIndex(
  `szId`  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ##  <a name="ddx_dhtml_selectstring"></a>CDHtmlDialog::DDX_DHtml_SelectString  
@@ -523,7 +524,7 @@ void DDX_DHtml_SelectString(
  `szId`  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ##  <a name="ddx_dhtml_selectvalue"></a>CDHtmlDialog::DDX_DHtml_SelectValue  
@@ -543,7 +544,7 @@ void DDX_DHtml_SelectValue(
  `szId`  
  HTML denetiminin kimliği parametresi için belirtilen değer.  
   
- *değer*  
+ *value*  
  Değiştirilen değeri.  
   
 ### <a name="example"></a>Örnek  
@@ -1392,6 +1393,6 @@ STDMETHOD(UpdateUI)(void);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek DHtmlExplore](../../visual-cpp-samples.md)   
  [DDX_DHtml yardımcı makroları](#ddx_dhtml_helper_macros)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 

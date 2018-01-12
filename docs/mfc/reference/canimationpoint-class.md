@@ -37,11 +37,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c0710977a8f2c481ca90b2212359f0376a339373
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ab685c223c4a86c35ba0feb578d93f58844734b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="canimationpoint-class"></a>CAnimationPoint sınıfı
 Koordinatları animasyonlu nokta işlevlerini uygular.  
@@ -276,4 +277,4 @@ void SetDefaultValue(const POINT& ptDefault);
  Animasyon nesnesine bir varsayılan değeri ayarlamak için bu işlevi kullanın. Bu yöntemleri atar varsayılan değerler animasyon noktasının X ve Y koordinatları. Ayrıca oluşturduysanız, temel alınan COM nesneleri yeniden oluşturur. Bu olayları (ValueChanged veya IntegerValueChanged) animasyon nesneye abone, bu olayları yeniden etkinleştirmeniz gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

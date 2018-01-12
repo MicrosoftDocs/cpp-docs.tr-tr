@@ -14,11 +14,12 @@ caps.latest.revision: "124"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89b02c277faa3da102909ce88f33aea0c653ea50
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a2207b086b608fd601517c938572248147669ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişini 2003 2015
 Bu makalede, Visual Studio 2015 için Visual Studio 2003 ve bu makalede "yeni davranış" koşulları geri dönerseniz gelen tüm önemli değişiklikler açıklanmaktadır veya Visual Studio 2015 ve daha sonra "Şimdi" başvurun. Koşulları "eski davranışı" ve "önce" Visual Studio 2013 ve önceki sürümleri için bkz. 
@@ -3394,7 +3395,7 @@ C c;
   
 -   Makroları PROP_ENTRY ve PROP_ENTRY_EX kullanım ve güvenlik nedenleriyle makroları PROP_ENTRY_TYPE andPROP_ENTRY_TYPE_EX ile değiştirilir.  
   
-### <a name="atlmfc-shared-classes"></a>ATL/MFC sınıfları paylaşılan  
+### <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları  
   
 -   ATL bir bağımlılık CRT üzerinde oluşturulamıyor. Visual Studio'nun önceki sürümleri kullanabilirsiniz # ATL projesinde CRT üzerinde en düşük düzeyde bağımlı hale atl_mın_crt define. Visual C++ 2008'de tüm ATL projeleri atl_mın_crt tanımlanan bağımsız olarak CRT üzerinde en az bağımlıdır.  
   

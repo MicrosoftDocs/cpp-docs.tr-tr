@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9d3a33330ace97db19521362384356b58a6c8dca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f4e56c78e717b24390a82e7cbb55670f36369044
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rect-structure1"></a>RECT Structure1
 `RECT` Yapısı dikdörtgenin sol üst ve sağ alt köşe koordinatlarını tanımlar.  
@@ -60,4 +61,4 @@ typedef struct tagRECT {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
- [CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)
+ [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)

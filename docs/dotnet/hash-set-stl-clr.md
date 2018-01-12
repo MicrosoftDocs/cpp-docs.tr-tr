@@ -18,11 +18,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43521d3412c7ca7c1f03896fa7732e24bd6d880b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c46b212f200b2ef7d46afae567efdf3f5bcef0f7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashset-stlclr"></a>hash_set (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `hash_set` bir çift yönlü depolama her tablo girişi öğeleri dizisi bir karma tablosu olarak yönetmek için düğümleri ve tek bir öğede depolama her düğüm listesi bağlı. Her öğenin değerini dizisi sıralama için bir anahtar olarak kullanılır.  
@@ -65,7 +68,7 @@ template<typename Key>
 |[hash_set::iterator (STL/CLR)](../dotnet/hash-set-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
 |[hash_set::key_compare (STL/CLR)](../dotnet/hash-set-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
 |[hash_set::key_type (STL/CLR)](../dotnet/hash-set-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
-|[hash_set::Reference (STL/CLR)](../dotnet/hash-set-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[hash_set::reference (STL/CLR)](../dotnet/hash-set-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
 |[hash_set::reverse_iterator (STL/CLR)](../dotnet/hash-set-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
 |[hash_set::size_type (STL/CLR)](../dotnet/hash-set-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
 |[hash_set::value_compare (STL/CLR)](../dotnet/hash-set-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
@@ -73,15 +76,15 @@ template<typename Key>
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[hash_set::Begin (STL/CLR)](../dotnet/hash-set-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[hash_set::begin (STL/CLR)](../dotnet/hash-set-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
 |[hash_set::bucket_count (STL/CLR)](../dotnet/hash-set-bucket-count-stl-clr.md)|Demet sayar.|  
-|[hash_set::Clear (STL/CLR)](../dotnet/hash-set-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[hash_set::Count (STL/CLR)](../dotnet/hash-set-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[hash_set::Empty (STL/CLR)](../dotnet/hash-set-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[hash_set::End (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[hash_set::clear (STL/CLR)](../dotnet/hash-set-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[hash_set::count (STL/CLR)](../dotnet/hash-set-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[hash_set::empty (STL/CLR)](../dotnet/hash-set-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[hash_set::end (STL/CLR)](../dotnet/hash-set-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
 |[hash_set::equal_range (STL/CLR)](../dotnet/hash-set-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[hash_set::ERASE (STL/CLR)](../dotnet/hash-set-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[hash_set::Find (STL/CLR)](../dotnet/hash-set-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[hash_set::erase (STL/CLR)](../dotnet/hash-set-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[hash_set::find (STL/CLR)](../dotnet/hash-set-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[hash_set::hash_delegate (STL/CLR)](../dotnet/hash-set-hash-delegate-stl-clr.md)|Bir anahtar için karma temsilci kopyalar.|  
 |[hash_set::hash_set (STL/CLR)](../dotnet/hash-set-hash-set-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
 |[hash_set::insert (STL/CLR)](../dotnet/hash-set-insert-stl-clr.md)|Öğeleri ekler.|  
@@ -94,14 +97,14 @@ template<typename Key>
 |[hash_set::rehash (STL/CLR)](../dotnet/hash-set-rehash-stl-clr.md)|Karma tabloyu yeniden oluşturur.|  
 |[hash_set::rend (STL/CLR)](../dotnet/hash-set-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
 |[hash_set::size (STL/CLR)](../dotnet/hash-set-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[hash_set::Swap (STL/CLR)](../dotnet/hash-set-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[hash_set::swap (STL/CLR)](../dotnet/hash-set-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[hash_set::to_array (STL/CLR)](../dotnet/hash-set-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
 |[hash_set::upper_bound (STL/CLR)](../dotnet/hash-set-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
 |[hash_set::value_comp (STL/CLR)](../dotnet/hash-set-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[hash_set::operator (STL/CLR) =](../dotnet/hash-set-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[hash_set::operator= (STL/CLR)](../dotnet/hash-set-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fa023412ab7f79b04fcc6c3c2ebf52eeeda2e53a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 441765d85ce65a80102ed94b3f4394ae48c0e29f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-error-lnk2039"></a>Bağlayıcı Araçları Hatası LNK2039
 ref sınıfı alma\<türü >' another.obj içinde tanımlanan; içeri aktarılan veya tanımlı, ancak her ikisi de olması gerekir  
@@ -34,4 +35,4 @@ ref sınıfı alma\<türü >' another.obj içinde tanımlanan; içeri aktarılan
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı araçları hataları ve Uyarıları](../../error-messages/tool-errors/linker-tools-errors-and-warnings.md)   
- [Bağlayıcı araçları hatası LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)
+ [Bağlayıcı Araçları Hatası LNK1332](../../error-messages/tool-errors/linker-tools-error-lnk1332.md)

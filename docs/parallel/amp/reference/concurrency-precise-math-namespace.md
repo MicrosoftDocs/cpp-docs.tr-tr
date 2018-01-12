@@ -144,11 +144,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5250ab17fa6da4ed54d5bda84e32b409ca53869d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: edcce2cd9f21766065cbc43f7059c638a302abd2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math Ad Alanı
 İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her ikisi de duyarlık tek ve çift duyarlık sürümleri her işlevi bulunmaktadır. Örneğin, `acos` çift duyarlıklı sürümüdür ve `acosf` tek duyarlıklı sürümüdür. Tek duyarlıklı işlevleri dahil olmak üzere, bu işlevler Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir. Kullanabileceğiniz [accelerator::supports_double_precision](accelerator-class.md#supports_double_precision) bu işlevler üzerinde belirli bir kısayol çalıştırıp çalıştıramayacağını belirlemek için. 
@@ -306,4 +307,4 @@ namespace precise_math;
  **Namespace:** eşzamanlılık  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

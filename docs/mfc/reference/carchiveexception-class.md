@@ -23,11 +23,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e338e4af43b60ace466768b1c2f0694aace8a02
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c2ca798bf3cac50e00627fc3986072af7b2ff94
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="carchiveexception-class"></a>CArchiveException sınıfı
 Bir seri hale getirme özel durumu temsil eder  
@@ -133,5 +134,5 @@ CString m_strFileName;
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CArchive sınıfı](../../mfc/reference/carchive-class.md)   
  [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)   
- [Özel durum işleme](../../mfc/reference/exception-processing.md)
+ [Özel Durum İşleme](../../mfc/reference/exception-processing.md)
 

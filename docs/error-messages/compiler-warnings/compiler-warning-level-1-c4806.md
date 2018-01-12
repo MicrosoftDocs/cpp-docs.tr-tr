@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a9c9c48f01746aaf208db28ce84fe006e990aaf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5bddda6bd683133f278f79544b2bf13aa132e131
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4806"></a>Derleyici Uyarısı (düzey 1) C4806
 'işlemi': güvensiz işlemi: hiçbir değer türü 'type 'type' türü için yükseltilen' verilen sabiti eşit olabilir  

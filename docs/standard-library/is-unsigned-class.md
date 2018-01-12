@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 187f74ec4151fd3666864780fa3757a4fe0e6859
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e08c0f8926ccf2c0e64753887fe67bc19b523c54
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isunsigned-class"></a>is_unsigned Sınıfı
 Test türü işaretsiz tamsayıdır.  
@@ -83,4 +84,4 @@ is_unsigned<float> == false
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_signed sınıfı](../standard-library/is-signed-class.md)
+ [is_signed Sınıfı](../standard-library/is-signed-class.md)

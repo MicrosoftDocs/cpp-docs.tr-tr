@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1de3843ce44f043a3f948d63cd4d2f5eb429ff7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b1290e8769bfd072ac66c2e4d981eb6b4d641fc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="settings-for-the-toolbar-control"></a>Araç Çubuğu Denetimi için Ayarlar
 Araç çubuğundaki düğmeler bir bit eşlem, bir dize ya da her ikisini de görüntüleyebilirsiniz. Varsayılan olarak, görüntü boyutu 16 tarafından 15 piksel boyutları için ayarlanır. Tüm düğmeleri varsayılan 24 x 22 piksel aynı genişliğe değildir. Bir araç çubuğunun yüksekliği düğmeleri yüksekliğini tarafından belirlenir ve bir araç çubuğunun genişliği de varsayılan olarak üst pencerenin istemci alanını genişliğini ile aynıdır.  
@@ -29,5 +30,5 @@ Araç çubuğundaki düğmeler bir bit eşlem, bir dize ya da her ikisini de gö
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

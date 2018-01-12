@@ -105,11 +105,12 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5bf344db43c00f129d930da3fc32f3a67138c28d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44004262d9c009ee295404dd5c8781f795eb7bc2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coleipframewndex-class"></a>COleIPFrameWndEx sınıfı
 `COleIPFrameWndEx` Sınıf MFC destekleyen bir OLE kapsayıcı uygular. Uygulamanız için yerinde çerçeve pencere sınıfı türetilmelidir `COleIPFrameWndEx` bundan türetilen yerine sınıfı [COleIPFrameWnd](../../mfc/reference/coleipframewnd-class.md)sınıfı. 
@@ -938,4 +939,4 @@ virtual void WinHelp(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CFrameWndEx sınıfı](../../mfc/reference/cframewndex-class.md)   
- [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md)
+ [CMDIFrameWndEx Sınıfı](../../mfc/reference/cmdiframewndex-class.md)

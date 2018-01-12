@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e4c5c15e7d18fb768b7b0fffa99140ae64075da
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c174b06b27e78ca61d2608b8e04205068ac436e9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-class-design-philosophy"></a>Genel Sınıf Tasarımı Felsefesi
 C++ dili uzun popüler hale geldi önce Microsoft Windows tasarlanmıştır. Uygulamaları binlerce C dili Windows uygulama programlama arabirimi (API) kullandığından, bu arabirim için yakın gelecekte korunur. Herhangi bir C++ Windows arabirimi, bu nedenle yordam C dili API üstünde yerleştirilmiş olabilir. Bu C++ uygulamaları C uygulamaları ile bir arada mümkün olacağını garanti eder.  
@@ -53,7 +54,7 @@ C++ dili uzun popüler hale geldi önce Microsoft Windows tasarlanmıştır. Uyg
   
 -   [Uygulama Çerçevesi](../mfc/application-framework.md)  
   
--   [C dili API ilişkisi](../mfc/relationship-to-the-c-language-api.md)  
+-   [C Dili API'sına yönelik ilişki](../mfc/relationship-to-the-c-language-api.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../mfc/class-library-overview.md)

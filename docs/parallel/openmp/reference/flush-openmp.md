@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2892a260ae7982741fcda2944683b0d6957824ce
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72b69daf431ab9dfd2b5c2ed7cebdc8c5af75847
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="flush-openmp"></a>flush (OpenMP)
 Tüm iş parçacıklarının tüm paylaşılan nesneler için bellek aynı görünümünü olduğunu belirtir.  
@@ -99,4 +100,4 @@ data = 2
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeleri](../../../parallel/openmp/reference/openmp-directives.md)
+ [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

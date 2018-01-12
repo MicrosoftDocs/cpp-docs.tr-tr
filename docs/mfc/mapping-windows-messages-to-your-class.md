@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 704bcbb81939ecb721b5b119f8c02a6409c2b82a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4701b0ae9f71099febb1a239cea6285fb0a7b229
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapping-windows-messages-to-your-class"></a>Windows İletilerini Sınıfınıza Eşleme
 Windows iletilerini işlemek için iletişim kutusunu gerekiyorsa, uygun işleyici işlevleri geçersiz kılar. Bunu yapmak için Özellikler penceresini kullanın [ileti eşlemesi](../mfc/reference/mapping-messages-to-functions.md) iletişim kutusu sınıflarına. Bu, her ileti için ileti eşleme girişi yazar ve sınıfı için ileti işleyicisi üye işlevleri ekler. İleti işleyicileri kod yazmak için Visual C++ kaynak kodu Düzenleyicisi'ni kullanın.  
@@ -42,5 +43,5 @@ Windows iletilerini işlemek için iletişim kutusunu gerekiyorsa, uygun işleyi
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

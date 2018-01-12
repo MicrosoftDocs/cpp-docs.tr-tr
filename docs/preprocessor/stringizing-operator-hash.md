@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 585bdd0fa11cecdf3fb337f8c11d2287fe495371
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 320d3d2e5071d03a562e6673a8c13d28f4d0d114
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stringizing-operator-"></a>Dizeleyen İşleç (#)
 Sayı işareti ya da "dizeleyen" işleci (**#**) dönüştürür makrosu parametreleri dize değişmez değerleri parametre tanımına genişletmeden. Yalnızca bağımsız değişkenler alan makrolarla kullanılır. Makro tanımında biçimsel bir parametreden önce gelirse, makro çağrısı tarafından geçirilen gerçek bağımsız değişken tırnak işaretleri içine alınır ve dize sabit değeri olarak değerlendirilir. Daha sonra dize sabit değeri, dize haline getirme işleci ile biçimsel parametrenin makro tanımındaki her birleşim örneğini değiştirir.  
@@ -85,4 +86,4 @@ FB1(F B)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön İşlemci işleçleri](../preprocessor/preprocessor-operators.md)
+ [Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2ff302aa9cc8088b583e0c772d0a7ff7959ab164
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 07b97d4af18ff560a48aadb3ba71b61609f82a85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>MFC WinInet Sınıfları Kullanarak Internet İstemci Uygulaması Yazma
 Her Internet istemci uygulaması Internet oturumu temelidir. MFC Internet oturumları sınıfındaki nesneler olarak uygulayan [CInternetSession](../mfc/reference/cinternetsession-class.md). Bu sınıf kullanarak, bir Internet oturum ya da birkaç eşzamanlı oturumlar oluşturabilirsiniz.  
@@ -62,4 +63,4 @@ Her Internet istemci uygulaması Internet oturumu temelidir. MFC Internet oturum
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
  [Internet istemci uygulamaları oluşturmak için MFC sınıfları](../mfc/mfc-classes-for-creating-internet-client-applications.md)   
- [Internet İstemci sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)
+ [Internet İstemci Sınıfları için Önkoşullar](../mfc/prerequisites-for-internet-client-classes.md)

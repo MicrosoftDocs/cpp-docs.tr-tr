@@ -14,11 +14,14 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1d03fd235e1719ac3179cb91b9db5c1bdcec3fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 20a3b1153bbb8a8502a54aa74998817abf191860
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="typeid--c-component-extensions"></a>typeid (C++ Bileşen Uzantıları)
 Bir nesne türünü belirten bir değer alır.  
@@ -64,7 +67,7 @@ Platform::Type^ type = T::typeid;
 type::typeid  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *türü*  
  System::Type nesne istediğiniz bir türü (soyut bildirimcisi) adı.  
@@ -112,7 +115,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 typeid and GetType returned the same System::Type  
@@ -178,7 +181,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 True  
@@ -199,4 +202,4 @@ int::typeid == handle_to_int::typeid, as expected
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

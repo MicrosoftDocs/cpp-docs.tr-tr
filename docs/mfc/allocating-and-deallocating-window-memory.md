@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4933ea9f079a18c4147db2da96b99653c5ddda26
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 294de3c4d4ecdfcb31f6e8c227bd8a3c6764268d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocating-and-deallocating-window-memory"></a>Pencere Belleğini Ayırma ve Serbest Bırakma
 C++ kullanmayın **silmek** işleci bir çerçeve penceresi veya Görünüm yok. Bunun yerine, çağrı `CWnd` üye işlevi `DestroyWindow`. Çerçeve pencereleri, bu nedenle, ayrılan işleciyle yığında **yeni**. Çerçeve pencereleri yığın çerçevesinde veya genel olarak ayırırken dikkatli olun. Diğer windows yığın çerçevesi mümkün olduğunca ayrılmalıdır.  
@@ -38,5 +39,5 @@ C++ kullanmayın **silmek** işleci bir çerçeve penceresi veya Görünüm yok.
 -   [Bir CWND'i hwnd'inden ayırma](../mfc/detaching-a-cwnd-from-its-hwnd.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)
+ [Pencere Nesnelerini Yok Etme](../mfc/destroying-window-objects.md)
 

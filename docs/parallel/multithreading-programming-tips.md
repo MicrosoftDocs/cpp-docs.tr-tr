@@ -27,11 +27,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 180039627049dee0be8ebcaf211dabc2e42086c7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 30ecf45c8a22dfb42917affa59152aeefbc35425
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-programming-tips"></a>Çoklu İş Parçacığı Kullanımı: Programlama İpuçları
 Birden çok iş parçacıklı uygulamalar verilere erişirken tek iş parçacıklı uygulamalar daha büyük dikkat gerektirir. Olduğundan birden çok, yürütme bağımsız yollar aynı anda birden çok iş parçacıklı uygulamalarda algoritmalar, verilerini ya da her ikisini de bilmeniz gerekir bu verileri kullanmak aynı anda birden çok iş parçacığı tarafından kullanılabilir. Bu konu Microsoft Foundation Class (MFC) kitaplığı ile birden çok iş parçacıklı uygulamalar programlamada olası sorunları önleme teknikleri açıklar.  
@@ -65,4 +66,4 @@ Birden çok iş parçacıklı uygulamalar verilere erişirken tek iş parçacık
  MFC birkaç iş parçacığı güvenliği korumak için nesnelerine erişimi eşitlemek için iş parçacığı izin sınıfları sağlar. Bu sınıfların kullanımı açıklanmaktadır [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../parallel/multithreading-how-to-use-the-synchronization-classes.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md). Bu nesneler hakkında daha fazla bilgi için bkz: [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

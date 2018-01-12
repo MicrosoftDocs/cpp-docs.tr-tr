@@ -14,11 +14,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c4c88f29cd0ad7989c079a17f66f1f48e4874a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: e798b3e85bbb5d6b362900c25d4c3414458ea63d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 `RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute`dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  
@@ -105,4 +108,4 @@ public:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit salt okunur sağlayıcıyı uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)
+ [Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)

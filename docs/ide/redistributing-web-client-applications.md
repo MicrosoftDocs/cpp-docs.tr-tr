@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 55310ba91513da342cc51a2982a4bb9992e92b2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e764e42cb558d2e13e0609cb139e9538a72d09ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="redistributing-web-client-applications"></a>Web İstemcisi Uygulamalarını Yeniden Dağıtma
 Uygulamanızın WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, `CHtmlView` veya `CHtmlEditView`), Microsoft Internet Explorer 4.0 veya sonraki sürümü en azından en düşük düzeyde yüklü olmalıdır hedef bilgisayar üzerinde.  

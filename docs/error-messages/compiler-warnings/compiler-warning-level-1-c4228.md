@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ac01b49a45a64d1a4e1480a64410726c61975c51
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5e924a89b6da03f9ae14baabb222a7baa87dd120
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4228"></a>Derleyici Uyarısı (düzey 1) C4228
 kullanılan standart olmayan uzantısı: bildirimcisi listesinde virgülle sonra niteleyicileri yok sayılır  

@@ -25,30 +25,31 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ece6e335360c151271187ae75d45adafb1f57c15
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 90d7b1523c8a61405224fc21701b5203e2cfb006
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri
 Bu konu, Klasik Masaüstü uygulamalar için Visual C++ projeleri ile ilişkili olan dosyaları tüm türleri açıklanmaktadır. Projenizde eklenen gerçek dosyalarının proje türü ve bir Sihirbazı'nı kullanırken belirttiğiniz seçeneklere bağlıdır.  
   
--   [Proje ve çözüm dosyaları](../ide/project-and-solution-files.md)  
+-   [Proje ve Çözüm Dosyaları](../ide/project-and-solution-files.md)  
   
 -   [CLR projeleri](../ide/files-created-for-clr-projects.md)  
   
--   [ATL programı veya Denetim Kaynağı ve başlık dosyaları](../ide/atl-program-or-control-source-and-header-files.md)  
+-   [ATL Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/atl-program-or-control-source-and-header-files.md)  
   
--   [MFC programı veya Denetim Kaynağı ve başlık dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)  
+-   [MFC Programı veya Denetim Kaynağı ve Başlık Dosyaları](../ide/mfc-program-or-control-source-and-header-files.md)  
   
--   [Önceden derlenmiş üstbilgi dosyaları](../ide/precompiled-header-files.md)  
+-   [Önceden Derlenmiş Üst Bilgi Dosyaları](../ide/precompiled-header-files.md)  
   
 -   [Kaynak dosyaları](../ide/resource-files-cpp.md)  
   
--   [Yardım dosyaları (WinHelp)](../ide/help-files-winhelp.md)  
+-   [Yardım Dosyaları (WinHelp)](../ide/help-files-winhelp.md)  
   
--   [İpucu dosyaları](../ide/hint-files.md)  
+-   [İpucu Dosyaları](../ide/hint-files.md)  
   
  Olduğunda, [Visual C++ projesi oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md), yeni bir çözüm oluşturma veya bir çözüme proje ekleme. Önemsiz olmayan uygulamaları, genellikle bir çözümde birden çok proje ile geliştirilir.  
   
@@ -60,17 +61,17 @@ Bu konu, Klasik Masaüstü uygulamalar için Visual C++ projeleri ile ilişkili 
 |--------------------|----------|--------------|  
 |.asmx|Kaynak|Dağıtım dosyası.|  
 |.asp|Kaynak|Active Server Page dosyası.|  
-|.ATP|Project|Uygulama Şablonu proje dosyası.|  
+|.ATP|Proje|Uygulama Şablonu proje dosyası.|  
 |.bmp, .dib, .gif, .jpg, .jpe, .png|Kaynak|Genel görüntü dosyaları.|  
 |.BSC|Derleme|Tarayıcı kod dosyası.|  
 |.cpp; .c|Kaynak|Uygulamanız için ana kaynak kodu dosyaları.|  
 |.cur|Kaynak|İmleç bit eşlem grafik dosyası.|  
-|.dbp|Project|Veritabanı Proje dosyası.|  
+|.dbp|Proje|Veritabanı Proje dosyası.|  
 |.disco|Kaynak|Dinamik bulma belge dosyası. XML Web hizmeti bulma işler.|  
-|.exe, .dll|Project|Yürütülebilir dosya veya dinamik bağlantı kitaplık dosyaları.|  
+|.exe, .dll|Proje|Yürütülebilir dosya veya dinamik bağlantı kitaplık dosyaları.|  
 |.h|Kaynak|Üstbilgi (dahil) dosyası.|  
 |.htm, .html, .xsp, .asp, .htc, .hta, .xml|Kaynak|Ortak Web dosyaları.|  
-|. HxC|Project|Proje dosyası yardımcı olur.|  
+|. HxC|Proje|Proje dosyası yardımcı olur.|  
 |.ico|Kaynak|Simge bit eşlem grafik dosyası.|  
 |.idb|Derleme|Derleyici tarafından en az yeniden derleme ve artımlı derleme sırasında kullanılan sınıf tanımlarını ve kaynak dosyaları arasındaki bağımlılık bilgi içeren durum dosyası. Kullanım [/Fd](../build/reference/fd-program-database-file-name.md) derleyici seçeneği .idb dosyasının adını belirtin. Bkz: [/GM derlemeyi (etkinleştirmek en az yeniden derleme)](../build/reference/gm-enable-minimal-rebuild.md) daha fazla bilgi için.|  
 |.idl|Derleme|Arabirim tanımı dil dosyası. Bkz: [arabirim tanımı (IDL) dosya](http://msdn.microsoft.com/library/windows/desktop/aa378712) daha fazla bilgi için Windows SDK'sındaki.|  
@@ -84,15 +85,15 @@ Bu konu, Klasik Masaüstü uygulamalar için Visual C++ projeleri ile ilişkili 
 |.sln|Çözüm|[Çözüm](http://msdn.microsoft.com/en-us/a45c299d-69f5-4b67-879d-1383417df0a7) dosya.|  
 |.suo|Çözüm|Çözüm seçenekleri dosyası.|  
 |.txt|Kaynak|Bir metin dosyası, genellikle "Benioku".|  
-|.vap|Project|Visual Studio Analyzer proje dosyası.|  
+|.vap|Proje|Visual Studio Analyzer proje dosyası.|  
 |.vbg|Çözüm|Uyumlu proje Grup dosyası.|  
-|.vbp, .vip, .vbproj|Project|Visual Basic proje dosyası.|  
-|.vcxitems|Project|Birden çok C++ projeleri arasında kod dosya paylaşımı için öğeleri proje paylaşılan. Bkz: [proje dosyalarını ve derleme görevleri dosyaları](../ide/project-and-solution-files.md) daha fazla bilgi için.|
-|.vcxproj|Project|Visual C++ proje dosyası. Bkz: [proje dosyalarını ve derleme görevleri dosyaları](../ide/project-and-solution-files.md) daha fazla bilgi için.|  
-|. vcxproj.filters|Project|Çözüm Gezgini, bir dosya için bir proje eklemek için kullanıldığında, filtreleri dosyası nerede Çözüm Gezgini ağaç görünümünde dosya eklenir, kendi dosya adı uzantısına göre tanımlar.|  
-|.vdproj|Project|Visual Studio dağıtım proje dosyası.|  
-|.vmx|Project|Makro proje dosyası.|  
-|.vup|Project|Yardımcı programı proje dosyası.|  
+|.vbp, .vip, .vbproj|Proje|Visual Basic proje dosyası.|  
+|.vcxitems|Proje|Birden çok C++ projeleri arasında kod dosya paylaşımı için öğeleri proje paylaşılan. Bkz: [proje dosyalarını ve derleme görevleri dosyaları](../ide/project-and-solution-files.md) daha fazla bilgi için.|
+|.vcxproj|Proje|Visual C++ proje dosyası. Bkz: [proje dosyalarını ve derleme görevleri dosyaları](../ide/project-and-solution-files.md) daha fazla bilgi için.|  
+|. vcxproj.filters|Proje|Çözüm Gezgini, bir dosya için bir proje eklemek için kullanıldığında, filtreleri dosyası nerede Çözüm Gezgini ağaç görünümünde dosya eklenir, kendi dosya adı uzantısına göre tanımlar.|  
+|.vdproj|Proje|Visual Studio dağıtım proje dosyası.|  
+|.vmx|Proje|Makro proje dosyası.|  
+|.vup|Proje|Yardımcı programı proje dosyası.|  
   
  Visual Studio ile ilişkili diğer dosyalar hakkında daha fazla bilgi için bkz: [dosya türleri ve Visual Studio .NET içinde dosya uzantılarını](/visualstudio/ide/reference/project-and-solution-file-types).  
   
@@ -103,4 +104,4 @@ Bu konu, Klasik Masaüstü uygulamalar için Visual C++ projeleri ile ilişkili 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ proje oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)   
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
- [Diğer diller için sihirbaz desteği](../ide/wizard-support-for-other-languages.md)
+ [Diğer Diller için Sihirbaz Desteği](../ide/wizard-support-for-other-languages.md)

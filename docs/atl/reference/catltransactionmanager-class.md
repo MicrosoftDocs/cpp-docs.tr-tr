@@ -35,11 +35,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae0d3c60ee17683a1d46b35caadea7784e167b7e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0def8aa809cd1ccc115ccc2a09b1ae752316098f
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager sınıfı
 CAtlTransactionManager sınıfı Çekirdek İşlem Yöneticisi (KTM) işlevleri için sarmalayıcı sağlar.  
@@ -466,10 +467,10 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
  Dosya veya dizin adı.  
   
  `dwAttributes`  
- Dosya için ayarlanacak dosya öznitelikleri. Daha fazla bilgi için bkz: [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/linkid=158699).  
+ Dosya için ayarlanacak dosya öznitelikleri. Daha fazla bilgi için bkz: [SetFileAttributesTransacted](http://go.microsoft.com/fwlink/p/?linkid=158699).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu sarmalayıcı çağırır `SetFileAttributesTransacted` işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)
+ [ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)

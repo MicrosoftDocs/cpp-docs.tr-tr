@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b48ffcefc7363a81327843acd205eddb4ce74da7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 344efc07f3e9596a345a3d727d091a57d58ee7c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hashmapswap-stlclr"></a>hash_map::swap (STL/CLR)
 İki kapsayıcının içeriğinin yerini değiştirir.  
@@ -94,4 +97,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [hash_map (STL/CLR)](../dotnet/hash-map-stl-clr.md)   
- [hash_map::operator (STL/CLR) =](../dotnet/hash-map-operator-assign-stl-clr.md)
+ [hash_map::operator= (STL/CLR)](../dotnet/hash-map-operator-assign-stl-clr.md)

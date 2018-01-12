@@ -23,11 +23,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c329fd791118ebcaa5b64264afc59d24a1f563f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: adad6183d15b378feb7ec96aedff6a0013a2dd24
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 Bir program yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar" adlı hataları oluşabilir. Bunlar, bellek, kaynak ayırma hatalarını ve dosyaları bulmak için hata tükenmesinden olabilir.  
@@ -518,4 +519,4 @@ void  AfxAbort();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)   
- [CException sınıfı](../../mfc/reference/cexception-class.md)
+ [CException Sınıfı](../../mfc/reference/cexception-class.md)

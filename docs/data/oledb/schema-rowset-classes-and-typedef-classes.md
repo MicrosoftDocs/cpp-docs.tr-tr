@@ -15,11 +15,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27cb8085711ae9756b9bb5c1042bbe5475619025
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: a48ad06318f71b637cc0d16e577d4a15a29177cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
 Bir şema, sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Bir katalog bir veya daha fazla şemaları içerebilir, ancak her zaman görünümler ve etki alanı bilgileri şemasının içeren INFORMATION_SCHEMA adlı bir şema içermelidir. OLE DB'de şema bilgileri önceden tanımlanmış şema satır kümeleri kullanılarak alınır ve türleri, tablolar, sütunlar, dizinler, görünümler, onaylar ve kısıtlamaları, istatistikleri, karakter kümesi, harmanlamaları ve etki alanlarını içerir.  
@@ -67,4 +70,4 @@ Bir şema, sahip olduğu veya belirli bir kullanıcı tarafından oluşturulan v
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

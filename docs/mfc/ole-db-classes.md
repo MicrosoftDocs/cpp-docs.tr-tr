@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6bd9a752a0cb24dab5d81ac2f52e6315280668f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3b545fda37dd56f31c641bd58015bd6ea9e2494
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-classes"></a>OLE DB Sınıfları
 MFC'de OLE DB desteği şu anda sınıfının oluşur [COLEDBRecordView](../mfc/reference/coledbrecordview-class.md). `COleDBRecordView`doğrudan bağlı bir form görünümü aracılığıyla denetimlerindeki veritabanı kayıtlarını görüntüler bir [CRowset](../data/oledb/crowset-class.md) nesnesi. OLE DB Tüketici Şablonları hakkında daha fazla bilgi için bkz: [listesi, OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md).  

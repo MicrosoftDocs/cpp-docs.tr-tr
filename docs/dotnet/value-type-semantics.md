@@ -20,11 +20,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d04f84fa98c61161bc7f03eb5b38004e6d6659cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 21a7d6bcba2fca3fddd6f5e234663d6791398f5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="value-type-semantics"></a>Değer Türü Anlamları
 Değer türü anlamları, Visual C++ için C++ için Yönetilen Uzantılar'dan değiştirilmiştir.  
@@ -218,4 +221,4 @@ void f( G^ g ) {
  [Değer türleri ve davranışları (C + +/ CLI)](../dotnet/value-types-and-their-behaviors-cpp-cli.md)   
  [Sınıflar ve yapılar](../windows/classes-and-structs-cpp-component-extensions.md)   
  [interior_ptr (C + +/ CLI)](../windows/interior-ptr-cpp-cli.md)   
- [pin_ptr (C + +/ CLI)](../windows/pin-ptr-cpp-cli.md)
+ [pin_ptr (C++/CLI)](../windows/pin-ptr-cpp-cli.md)

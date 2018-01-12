@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aa15cb2eac229201dd0f686428133224b2f32afe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b10ee9e9b5a53d6f9f936c4bc158db8ebfb6be13
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
@@ -44,11 +45,11 @@ Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:
 ### <a name="unix-migration-guides"></a>UNIX geçiş kılavuzları  
  UNIX özel uygulama Geçiş Kılavuzu Teknik Yardım kod geçiş UNIX'ten Win32 ortamı sağlar.  
   
- [http://go.microsoft.com/fwlink/?LinkId=95428](http://go.microsoft.com/fwlink/?LinkId=95428)  
+ [http://go.microsoft.com/fwlink/p/?linkid=95428](http://go.microsoft.com/fwlink/p/?linkid=95428)  
   
  Unix geçişi Proje Kılavuzu üst düzey Yardım geçirme önemli projeleri UNIX'ten Win32'ye sağlayarak UNIX özel uygulama geçiş kılavuzunu tamamlar. Kılavuzu her proje geçiş aşamasında dikkate alınacak konular öneriler sağlar. Kılavuzu indirilmesi:  
   
- [http://go.microsoft.com/fwlink/?linkid=20012](http://go.microsoft.com/fwlink/?linkid=20012)  
+ [http://go.microsoft.com/fwlink/p/?linkid=20012](http://go.microsoft.com/fwlink/p/?linkid=20012)  
   
 ### <a name="microsoft-windows-services-for-unix-sfu"></a>Microsoft Windows Services for UNIX (SFU)  
  Microsoft Windows Services for UNIX (SFU) eksiksiz bir Windows varolan UNIX tabanlı ortamlarla bütünleştirmek için platformlar arası hizmetleri sağlar. Services for UNIX dosya paylaşımı, uzaktan erişim ve yönetim, parola eşitleme, ortak dizin yönetimi, yardımcı programlar ortak bir dizi ve bir kabuk sağlar.  
@@ -86,4 +87,4 @@ Uygulamaları Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ taşıma ve yükseltme Kılavuzu](visual-cpp-change-history-2003-2015.md)   
  [UNIX](../c-runtime-library/unix.md)   
- [Çıkarım kuralları](../build/inference-rules.md)
+ [Çıkarım Kuralları](../build/inference-rules.md)

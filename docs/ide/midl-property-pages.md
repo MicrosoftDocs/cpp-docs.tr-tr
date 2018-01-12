@@ -17,22 +17,23 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8d78b47ded0e27a1708886b0c1531d6be3807511
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 61bf005ca65948ea347fb6fed71db108628402b4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="midl-property-pages"></a>MIDL Özellik Sayfaları
 **MIDL** düğümü birkaç özellik sayfalarını içerir. Bunlara erişmek için. .idl dosyasına sağ tıklayın **Çözüm Gezgini**.  
   
--   [MIDL özellik sayfaları: Genel](../ide/midl-property-pages-general.md)  
+-   [MIDL Özellik Sayfaları: Genel](../ide/midl-property-pages-general.md)  
   
--   [MIDL özellik sayfaları: çıktı](../ide/midl-property-pages-output.md)  
+-   [MIDL Özellik Sayfaları: Çıktı](../ide/midl-property-pages-output.md)  
   
--   [MIDL özellik sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)  
+-   [MIDL Özellik Sayfaları: Gelişmiş](../ide/midl-property-pages-advanced.md)  
   
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz:<xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)
+ [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

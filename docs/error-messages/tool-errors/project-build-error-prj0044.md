@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 213e17b03fe683f87c441c85d5e96f67e7d9dd92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 69c2d899bb0459d2743b6e9f0d9b51fd1665e75e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0044"></a>Proje Derleme Hatası PRJ0044
 Özel derleme kural 'dosyası 'dosya' atanmış Kuralı' için 'Ek bağımlılıklar' özelliği geçersiz. Özelliği, '' value' değerlendiren dize' içeriyor.  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  Daha fazla bilgi için bkz: [özel derleme araçlarını belirtme](../../ide/specifying-custom-build-tools.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje derleme hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+ [Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

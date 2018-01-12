@@ -16,11 +16,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 245952bd8dfb9acc8fc8550955232a30b9dbfe9f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a49c8deb9185b024dfcca977ab229bf594e05101
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>İzlenecek Yol: Aracı Temelli Uygulama Oluşturma
 Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu kılavuzda, zaman uyumsuz olarak bir metin dosyasından veri okuyan bir aracı oluşturabilirsiniz. Uygulama, dosyanın içeriğini sağlama hesaplamak için Adler-32 sağlama toplamı algoritmayı kullanır.  
@@ -28,13 +29,13 @@ Bu konuda, temel bir aracı temelli uygulama oluşturma açıklanmaktadır. Bu k
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu izlenecek yolu tamamlamak için aşağıdaki konuları anlamanız gerekir:  
   
-- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)  
+- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)  
   
-- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+- [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
-- [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)  
+- [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
   
-- [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)  
+- [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)  
   
 ##  <a name="top"></a>Bölümler  
  Bu kılavuz aşağıdaki görevlerin nasıl gerçekleştirileceğini gösterir:  
@@ -192,5 +193,5 @@ Adler-32 sum is fefb0d75
  [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
  [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)   
  [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)   
- [İzlenecek yol: kilitlenmeyi önlemek için birleştirme birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
+ [İzlenecek Yol: Kilitlenmeyi Önlemek için birleştirme kullanma](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
 

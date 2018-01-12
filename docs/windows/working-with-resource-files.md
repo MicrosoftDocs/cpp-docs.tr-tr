@@ -17,11 +17,14 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 74e46aeae58e95b7d455923f6f082f5e10952826
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ad7961177133e43d3c3b8d66998ec9b0d1b8f150
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 > [!WARNING]
@@ -33,16 +36,16 @@ ms.lasthandoff: 10/24/2017
   
  Yeni kaynakları projenize ekleyin ve uygun kaynak Düzenleyicisi'ni kullanarak bu kaynakları değiştirin. Çoğu Visual C++ sihirbazları projeniz için bir .rc dosyası otomatik olarak oluşturur.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
  Kaynak dosyaları ve bunların Windows masaüstü uygulamalarında nasıl kullanıldığı açıklanmaktadır. Kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar da sağlanmıştır.  
   
- [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)  
+ [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
  Simgeler açıklar ve kullanma hakkında bilgi sağlar **kaynak semboller** projelerinizi sembolleri yönetmek için iletişim kutusu.  
   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)  
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)  
  Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her düzenleyicisiyle değiştirebilir ve her Düzenleyicisi'ni kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
@@ -52,7 +55,7 @@ ms.lasthandoff: 10/24/2017
  [Visual Studio Tanıtımı](http://msdn.microsoft.com/en-us/99997089-56ff-4d60-81a9-447062dc98ac)  
  Karışık dil çözümleri oluşturulmasında kolaylaştırır ve tüm araçlar paylaşmasına olanak veren aynı tümleşik geliştirme ortamı (IDE) kullanan geliştirme araçları tamamını açıklar.  
   
- [Bizimle iletişime geçin](/visualstudio/ide/talk-to-us)  
+ [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
  Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

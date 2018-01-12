@@ -17,14 +17,15 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4a0076f9ce0bcf4787f4e848fbcb0d34ae8968f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0dde2c26855e8d8acd51b8c607867d9b92b3987f
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
-Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında Şerit özelleştirme sağlar. Şerit komutları mantıksal gruplar halinde düzenler bir kullanıcı arabirimi (UI) öğesidir. Bu gruplar bir Şerit ayrı sekmeleri pencerenin üst kısmında görüntülenir. Şerit menü çubuğu ve araç çubuklarını yerini alır. Şerit uygulaması kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/linkid=129233). Aşağıdaki çizimde bir Şerit gösterir.  
+Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında Şerit özelleştirme sağlar. Şerit komutları mantıksal gruplar halinde düzenler bir kullanıcı arabirimi (UI) öğesidir. Bu gruplar bir Şerit ayrı sekmeleri pencerenin üst kısmında görüntülenir. Şerit menü çubuğu ve araç çubuklarını yerini alır. Şerit uygulaması kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için bkz: [Şerit](http://go.microsoft.com/fwlink/p/?linkid=129233). Aşağıdaki çizimde bir Şerit gösterir.  
   
  ![MFC Şeridi kaynak denetimi](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")  
   
@@ -90,13 +91,13 @@ ms.lasthandoff: 10/24/2017
   
  Aşağıdaki konular, Şerit Tasarımcısı'nda özellikleri kullanmak açıklanmaktadır:  
   
-- [Nasıl yapılır: uygulama düğmesini özelleştirme](../mfc/how-to-customize-the-application-button.md)  
+- [Nasıl yapılır: Uygulama Düğmesini Özelleştirme](../mfc/how-to-customize-the-application-button.md)  
   
-- [Nasıl yapılır: hızlı erişim araç çubuğunu özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)  
+- [Nasıl yapılır: Hızlı Erişim Araç Çubuğunu Özelleştirme](../mfc/how-to-customize-the-quick-access-toolbar.md)  
   
-- [Nasıl yapılır: Şerit denetimleri ve olay işleyicileri ekleme](../mfc/how-to-add-ribbon-controls-and-event-handlers.md)  
+- [Nasıl yapılır: Şerit Denetimleri ve Olay İşleyicileri Ekleme](../mfc/how-to-add-ribbon-controls-and-event-handlers.md)  
   
-- [Nasıl yapılır: bir MFC uygulamasından Şerit kaynağı yükleme](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)  
+- [Nasıl yapılır: Bir MFC Uygulamasından Şerit Kaynağı Yükleme](../mfc/how-to-load-a-ribbon-resource-from-an-mfc-application.md)  
   
 ## <a name="definitions-of-ribbon-elements"></a>Şerit öğelerinin tanımları  
  ![MFC Şerit](../mfc/media/ribbon.png "Şerit")  
@@ -115,5 +116,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)
+ [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)
 

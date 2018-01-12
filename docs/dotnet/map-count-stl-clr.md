@@ -15,11 +15,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 307dca37280e7474fce3c037d4b4f6845c3f7a0f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4308f060285918a8436160cdde59860fda39542b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapcount-stlclr"></a>map::count (STL/CLR)
 Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.  
@@ -79,4 +82,4 @@ count(L'C') = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
- [Map::equal_range (STL/CLR)](../dotnet/map-equal-range-stl-clr.md)
+ [map::equal_range (STL/CLR)](../dotnet/map-equal-range-stl-clr.md)

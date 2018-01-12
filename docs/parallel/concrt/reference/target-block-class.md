@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad7ae07933a0b74e88ae3acdcc787569e9c855f7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 42bf40997bed7bcf7125397d4984b636f64f3a6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="targetblock-class"></a>target_block Sınıfı
 `target_block` Sınıfı, temel bağlantı yönetim işlevleri sağlayan Özet temel sınıf ve hedef için hata denetimi yalnızca engeller.  
@@ -362,4 +363,4 @@ void wait_for_async_sends();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Itarget sınıfı](itarget-class.md)
+ [ITarget Sınıfı](itarget-class.md)

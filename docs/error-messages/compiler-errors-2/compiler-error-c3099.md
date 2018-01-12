@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b0303ef909d6f18cb54c70bc64ab06d415e96da5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a644a27c834efcd3c3857241927a6e618f600d0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3099"></a>Derleyici Hatası C3099
 'anahtar sözcüğü': [System::AttributeUsageAttribute] yönetilen özniteliklerini; kullanın [Windows::Foundation::Metadata::AttributeUsageAttribute] WinRT öznitelikleri için kullanın  

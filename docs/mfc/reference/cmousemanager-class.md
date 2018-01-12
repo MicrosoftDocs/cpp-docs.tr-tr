@@ -33,11 +33,12 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e395596ee8decde683c13c12a0c1f2bd33a8cc58
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f50b74731089346a9675b5340ba0ea1a0b2879f4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 Farklı komutlar belirli bir ile ilişkilendirilecek bir kullanıcının [CView](../../mfc/reference/cview-class.md) kullanıcı bu görünüm içinde tıklattığında nesne.  
@@ -248,7 +249,7 @@ void SetCommandForDblClk(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)   
- [Klavye ve fare özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)
+ [Klavye ve Fare Özelleştirmesi](../../mfc/keyboard-and-mouse-customization.md)
 
 
 

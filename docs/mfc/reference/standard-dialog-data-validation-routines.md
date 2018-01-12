@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4d1891c18527cc9682fbb563c8121f81df4f5f30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33566bcdfab1a618dc8ff79deb375b3f9d1221f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Standart İletişim Kutusu Veri Doğrulama Rutinleri
 Bu konu genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri doğrulama (DDV) yordamları listeler.  
@@ -62,7 +63,7 @@ void AFXAPI DDV_MaxChars(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `nChars`  
@@ -89,7 +90,7 @@ void AFXAPI DDV_MinMaxByte(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -155,7 +156,7 @@ void AFXAPI DDV_MinMaxDouble(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -185,7 +186,7 @@ void AFXAPI DDV_MinMaxDWord(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -215,7 +216,7 @@ void AFXAPI DDV_MinMaxFloat(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -245,7 +246,7 @@ void AFXAPI DDV_MinMaxInt(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -275,7 +276,7 @@ void AFXAPI DDV_MinMaxLong(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -305,7 +306,7 @@ void AFXAPI DDV_MinMaxLongLong(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -371,7 +372,7 @@ void AFXAPI DDV_MinMaxShort(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -401,7 +402,7 @@ void AFXAPI DDV_MinMaxSlider(
  `pDX`  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  Doğrulanacak değeri referansı. Bu parametre tutan veya kaydırıcı denetimin geçerli kaydırma konumunu ayarlar.  
   
  `minVal`  
@@ -431,7 +432,7 @@ void AFXAPI DDV_MinMaxUInt(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -461,7 +462,7 @@ void AFXAPI DDV_MinMaxULongLong(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  
@@ -495,7 +496,7 @@ void AFXAPI DDV_MinMaxULongLong(
  `pDX`  
  Bir işaretçi bir `CDataExchange` nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *değer*  
+ *value*  
  İletişim kutusu, form görünümü veya verinin doğrulandığı denetim görünüm nesnesi üye değişkeni bir başvuru.  
   
  `minVal`  

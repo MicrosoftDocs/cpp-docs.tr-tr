@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 176f2434bd89c4adb826e214a7bf94e917e4d239
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f9d704fec4a6ae0a95bd393b4a7fffa24884711e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bitmapinfo-structure"></a>BITMAPINFO Yapısı
 `BITMAPINFO` Yapısı boyutları ve bir Windows aygıt bağımsız bit eşlem (DIB) için renk bilgilerini tanımlar.  

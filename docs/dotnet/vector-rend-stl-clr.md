@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7f1c2f12e5e47b45821e20fc95c79952d892d5be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d322895e2421bfd11d6d402f332aa84daff74ece
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectorrend-stlclr"></a>vector::rend (STL/CLR)
 Ters denetimli dizinin sonuna belirler.  
@@ -85,4 +88,4 @@ int main()
  [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)   
  [Vector::Begin (STL/CLR)](../dotnet/vector-begin-stl-clr.md)   
  [Vector::End (STL/CLR)](../dotnet/vector-end-stl-clr.md)   
- [Vector::rbegin (STL/CLR)](../dotnet/vector-rbegin-stl-clr.md)
+ [vector::rbegin (STL/CLR)](../dotnet/vector-rbegin-stl-clr.md)

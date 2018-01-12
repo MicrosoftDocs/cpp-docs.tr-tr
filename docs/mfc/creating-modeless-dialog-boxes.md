@@ -17,15 +17,16 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7c5a701f42b2707b957753c1f8a22640c7818d72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0549f898a076b140e7b5bed23c1c1e8c60d6adba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-modeless-dialog-boxes"></a>Kalıcı Olmayan İletişim Kutuları Oluşturma
 Kalıcı olmayan iletişim kutusu için kendi ortak oluşturucu iletişim sınıfınızı sağlamanız gerekir. Kalıcı olmayan iletişim kutusu oluşturmak için ortak oluşturucu çağırın ve iletişim nesnenin çağrısı [oluşturma](../mfc/reference/cdialog-class.md#create) üye işlevi iletişim kaynağı yüklenemiyor. Çağırabilirsiniz **oluşturma** sırasında veya sonrasında oluşturucu çağrısı. İletişim kaynağını özelliğine sahipse **ws_vısıble**, hemen iletişim kutusu görüntülenir. Değilse, çağırmalısınız, kendi [ShowWindow](../mfc/reference/cwnd-class.md#showwindow) üye işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

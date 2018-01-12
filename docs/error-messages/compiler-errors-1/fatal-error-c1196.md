@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 891f3e6983160898a3acd1202236309150e6bd63
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cac9a7773f6a000c22ea77c0077238cf1cb3aab5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fatal-error-c1196"></a>Önemli hata C1196
 'tanımlayıcısı': 'typelib' tür kitaplığında bulunan tanımlayıcısı geçerli bir C++ tanımlayıcısı değil  

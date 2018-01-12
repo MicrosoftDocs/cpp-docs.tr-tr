@@ -103,11 +103,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f83ed395860033aa35dfedc4713653976a1f2763
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f96e403516d6f85804fa798d7a0c28575482ff43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="common-macros-for-build-commands-and-properties"></a>Derleme komutları ve özellikler için ortak makroları
 Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce size sunabilirsiniz. Bunlar varsayılan olarak, veya .props veya .targets dosyaları veya proje ayarlarınızı ayarlanır MSBuild özellikleri karşılık gelir. Bu makroları bir projesinin yerde kullanabilir **özellik sayfaları** iletişim kutusu burada dizeleri kabul edilir. Bu makrolar büyük küçük harfe duyarlı değildir.  
@@ -161,4 +162,4 @@ Yükleme seçenekleri bağlı olarak, Visual Studio Makroları yüzlerce size su
 |**$(FxCopDir)**|Fxcop.cmd dosyasının yolu. Fxcop.cmd dosya ile tüm Visual C++ sürümleri yüklü değil.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da C++ projeleri derleme](../ide/building-cpp-projects-in-visual-studio.md)
+ [Visual Studio'da C++ Projeleri Derleme](../ide/building-cpp-projects-in-visual-studio.md)

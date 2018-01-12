@@ -23,11 +23,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57faa6f211d754e24f620236823405f82a53fbb0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f1833cbbbfb6706cffe73770bcd9b61ff755a645
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="coleipframewnd-class"></a>COleIPFrameWnd sınıfı
 Uygulamanızın yerinde düzenleme penceresinin tabanı.  
@@ -132,4 +133,4 @@ virtual void RepositionFrame(
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   
  [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CFrameWnd sınıfı](../../mfc/reference/cframewnd-class.md)
+ [CFrameWnd Sınıfı](../../mfc/reference/cframewnd-class.md)

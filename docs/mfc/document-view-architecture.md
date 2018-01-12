@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 63bf1b92521f7a99baed0d4a000b2f3cb1f804cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 45c595b78b17ed00691533369ec4837345fcce03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="documentview-architecture"></a>Belge/Görünüm Mimarisi
 Varsayılan olarak, MFC Uygulama Sihirbazı'nı bir belge ve görünüm sınıfı ile uygulamanın çatıyı oluşturur. MFC bu iki sınıf veri yönetime ayırır. Belge verileri depolar ve verileri yazdırma yönetir ve verilerin birden çok görünüm güncelleştiriliyor düzenler. Görünüm verileri görüntüler ve onunla, düzenleme ve seçim dahil olmak üzere kullanıcı etkileşimi yönetir.  
@@ -73,13 +74,13 @@ Belge ve Görünüm
   
 -   [Belge/görünüm mimarisinin alternatifleri](../mfc/alternatives-to-the-document-view-architecture.md)  
   
--   [Tek bir belgeye birden çok görünüm ekleme](../mfc/adding-multiple-views-to-a-single-document.md)  
+-   [Tek Bir Belgeye Birden Çok Görünüm Ekleme](../mfc/adding-multiple-views-to-a-single-document.md)  
   
--   [Belgeleri kullanma](../mfc/using-documents.md)  
+-   [Belgeleri Kullanma](../mfc/using-documents.md)  
   
--   [Görünümleri kullanma](../mfc/using-views.md)  
+-   [Görünümleri Kullanma](../mfc/using-views.md)  
   
--   [Birden çok belge türü, görünümler ve çerçeve pencereleri](../mfc/multiple-document-types-views-and-frame-windows.md)  
+-   [Birden Fazla Belge Türü, Görünüm ve Çerçeve Penceresi](../mfc/multiple-document-types-views-and-frame-windows.md)  
   
 -   [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)  
   
@@ -89,7 +90,7 @@ Belge ve Görünüm
   
 -   [Belgeler ve görünümler olmadan veritabanı sınıflarını kullanma](../data/mfc-using-database-classes-without-documents-and-views.md)  
   
--   [Örnekleri](../visual-cpp-samples.md)  
+-   [Örnekler](../visual-cpp-samples.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
@@ -97,5 +98,5 @@ Belge ve Görünüm
  [Çerçeve pencereleri](../mfc/frame-windows.md)   
  [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   
  [Belge/görünüm oluşturma](../mfc/document-view-creation.md)   
- [Yeni belgeler, pencereler ve görünümler oluşturma](../mfc/creating-new-documents-windows-and-views.md)
+ [Yeni Belgeler, Pencereler ve Görünümler Oluşturma](../mfc/creating-new-documents-windows-and-views.md)
 

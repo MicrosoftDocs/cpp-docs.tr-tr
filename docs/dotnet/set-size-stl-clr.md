@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2fbb50ced150e9a7c3406ceb27933717b523c03a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 3e8e19c7ff7e4dedd34cf2c4cd6a5300ab17e7c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="setsize-stlclr"></a>set::size (STL/CLR)
 Öğe sayısını sayar.  
@@ -81,4 +84,4 @@ size() = 2 after adding 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [set (STL/CLR)](../dotnet/set-stl-clr.md)   
- [set::Empty (STL/CLR)](../dotnet/set-empty-stl-clr.md)
+ [set::empty (STL/CLR)](../dotnet/set-empty-stl-clr.md)

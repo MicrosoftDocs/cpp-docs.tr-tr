@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e96bac13e1f9b1cc956f5955c211f71114965aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: abe8bf2fb80775e8b99e3bae7fe6a3460e686096
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="commonly-added-member-functions"></a>Yaygın Olarak Eklenen Üye İşlevleri
 İletişim kutusunda Tamam'ı veya iptal dışında pushbuttons içeriyorsa, ileti işleyicisi iletişim sınıfınızda oluşturdukları denetim bildirimi iletileri yanıtlayın üye işlevleri yazmanız gerekir. Bir örnek için bkz: [karalama](../visual-cpp-samples.md) örnek program. Denetim bildirimi iletileri diğer denetimlerden iletişim kutusunda da işleyebilir.  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutuları](../mfc/dialog-boxes.md)   
  [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [Yaygın olarak geçersiz kılınan üye işlevleri](../mfc/commonly-overridden-member-functions.md)
+ [Yaygın Olarak Geçersiz Kılınan Üye İşlevleri](../mfc/commonly-overridden-member-functions.md)

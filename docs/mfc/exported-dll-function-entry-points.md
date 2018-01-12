@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8959c30a5c1b65687d51e127781b82cccf0cce5c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 28ded528d584e98b704b5f2d8e6e0a379a6a11a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exported-dll-function-entry-points"></a>Dışa Aktarılan DLL İşlev Giriş Noktaları
 DLL'den dışarı aktarılan işlevleri için kullanmak [AFX_MANAGE_STATE](reference/extension-dll-macros.md#afx_manage_state) DLL modülünden çağıran uygulamanın DLL'e geçerken uygun genel durumunu korumak üzere makrosu.  
@@ -41,5 +42,5 @@ DLL'den dışarı aktarılan işlevleri için kullanmak [AFX_MANAGE_STATE](refer
  `AFX_MANAGE_STATE`Her işlevi dll yerleştirin gerekmez. Örneğin, `InitInstance` uygulamayı olmadan MFC kodu tarafından çağrılan `AFX_MANAGE_STATE` MFC modül durumu önce otomatik olarak kayar çünkü `InitInstance` ve ardından geri sonra anahtarları `InitInstance` döndürür. Aynı tüm ileti eşleme işleyiciler için geçerlidir. Normal MFC DLL'leri gerçekte herhangi ileti yönlendirme önce Modül durumu otomatik olarak geçer özel ana pencere yordamı vardır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC modüllerinin durum verisini yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
+ [MFC Modüllerinin Durum Verisini Yönetme](../mfc/managing-the-state-data-of-mfc-modules.md)
 

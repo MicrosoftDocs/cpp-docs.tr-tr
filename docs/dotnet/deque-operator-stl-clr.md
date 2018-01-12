@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e355241a74125fd376ab7ca5744b2721cfd4837
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9729d163bfde41c2f36e3b34962e038279084d1f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequeoperatorstlclr"></a>deque::operator(stl/CLR)
 Belirtilen konumda bir öğe erişir.  
@@ -78,4 +81,4 @@ a x c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
- [deque::AT (STL/CLR)](../dotnet/deque-at-stl-clr.md)
+ [deque::at (STL/CLR)](../dotnet/deque-at-stl-clr.md)

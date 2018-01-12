@@ -14,11 +14,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 085c658fff3d387019c6e8574ebafcd347400823
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b894ec1cbd227663d46e98e523ffe8c1c5d84475
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 OLE DB uygulamanıza başlamadan önce aşağıdaki sorunları dikkate:  
@@ -37,11 +40,11 @@ OLE DB uygulamanıza başlamadan önce aşağıdaki sorunları dikkate:
  **Başka bir veri erişim teknolojisi (ADO, ODBC ve DAO) kullanarak eski kod var mı?**  
  Tüm durumlarda kapsayan (OLE DB bileşenleriyle ADO bileşenleri kullanma ve OLE DB için ODBC kodu geçirme) gibi teknolojileri olası birleşimlerini verildiğinde, Visual C++ belge kapsamında değildir. Ancak, çeşitli senaryolarda kapsayan birçok makale aşağıdaki Microsoft Web sitelerinde kullanılabilir:  
   
--   [Microsoft Yardım ve Destek](http://go.microsoft.com/fwlink/?linkid=148218)  
+-   [Microsoft Yardım ve Destek](http://go.microsoft.com/fwlink/p/?linkid=148218)  
   
--   [Microsoft Data Access teknik makaleleri genel bakış](http://go.microsoft.com/fwlink/?linkid=148217)  
+-   [Microsoft Data Access teknik makaleleri genel bakış](http://go.microsoft.com/fwlink/p/?linkid=148217)  
   
--   [Visual Studio Çözüm Merkezi](http://go.microsoft.com/fwlink/?linkid=148215)  
+-   [Visual Studio Çözüm Merkezi](http://go.microsoft.com/fwlink/p/?linkid=148215)  
   
 -   [Microsoft.com Ara](http://search.microsoft.com/)  
   
@@ -49,4 +52,4 @@ OLE DB uygulamanıza başlamadan önce aşağıdaki sorunları dikkate:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
- [OLE DB programlamaya genel bakış](../../data/oledb/ole-db-programming-overview.md)
+ [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

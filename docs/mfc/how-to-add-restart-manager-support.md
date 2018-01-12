@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e86ca1959ce22370e47bca508602d5efa35cd4f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a413f28909a52e3bc82e9d8f2694d559bf8a885c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-add-restart-manager-support"></a>Nasıl yapılır: Yeniden Başlatma Yöneticisi Desteği Ekleme
 Yeniden başlatma Yöneticisi eklenen bir özelliktir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] için [!INCLUDE[wiprlhext](../c-runtime-library/reference/includes/wiprlhext_md.md)]. Yeniden başlatma Yöneticisi beklenmedik şekilde kapatır veya yeniden uygulamanız için destek ekler. Yeniden başlatma Yöneticisi davranışını, uygulama türüne bağlıdır. Uygulamanız bir belge Düzenleyicisi ise, durumu otomatik olarak kaydetmek, uygulamanızın yeniden başlatma Yöneticisi etkin ve tüm açık içeriği belgeler ve uygulamanızı beklenmeyen kapatma sonrasında yeniden başlatır. Uygulamanızı bir belge Düzenleyicisi değilse, yeniden başlatma Yöneticisi uygulama yeniden başlatır, ancak varsayılan olarak uygulama durumunun kaydedilemiyor.  

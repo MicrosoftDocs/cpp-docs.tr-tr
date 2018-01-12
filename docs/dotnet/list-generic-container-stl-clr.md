@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7be6b4fa0f8c5d3c9c22487ad29b7a4d874c6d71
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5f04032a3777e9537a7565f479d2a3dce5b407cb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listgenericcontainer-stlclr"></a>list::generic_container (STL/CLR)
 Genel arabirim kapsayıcının türü.  
@@ -96,4 +99,4 @@ a b c d e
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::generic_iterator (STL/CLR)](../dotnet/list-generic-iterator-stl-clr.md)   
  [List::generic_reverse_iterator (STL/CLR)](../dotnet/list-generic-reverse-iterator-stl-clr.md)   
- [List::generic_value (STL/CLR)](../dotnet/list-generic-value-stl-clr.md)
+ [list::generic_value (STL/CLR)](../dotnet/list-generic-value-stl-clr.md)

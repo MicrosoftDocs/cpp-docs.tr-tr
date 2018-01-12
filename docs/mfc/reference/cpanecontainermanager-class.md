@@ -117,11 +117,12 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 508e62aa4a9bbe1767d8be446d75263f6322f239
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9185aee3b8a6750260549d5d180fa7e30e1fc321
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager sınıfı
 `CPaneContainerManager` Sınıfı, depolama ve geçerli yerleştirme düzeni görüntüsünü yönetir.  
@@ -908,4 +909,4 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CObject sınıfı](../../mfc/reference/cobject-class.md)   
  [CPaneContainer sınıfı](../../mfc/reference/cpanecontainer-class.md)   
- [CPaneDivider sınıfı](../../mfc/reference/cpanedivider-class.md)
+ [CPaneDivider Sınıfı](../../mfc/reference/cpanedivider-class.md)

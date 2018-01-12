@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aa722f53c9ad76c32486d493db6d37e70ce12879
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 303300ea172d6a750c376a573a4a6477f360fe92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pairoperator-stlclr"></a>pair::operator= (STL/CLR)
 Depolanan değer çifti yerini alır.  
@@ -69,4 +72,4 @@ int main()
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [çift (STL/CLR)](../dotnet/pair-stl-clr.md)
+ [pair (STL/CLR)](../dotnet/pair-stl-clr.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 652e299ad7dc01f070e3fe4ed9738fc9ed47a493
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 827bef034eeb7fc46b397c50f5ddf0c4cb6e48fc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-com"></a>MFC COM
 Çoğu Etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır ancak bir alt kümesini MFC COM, desteklemek için tasarlanmıştır COM programlama için. MFC'nin COM desteği konu bu bölümde açıklanmaktadır  
@@ -38,9 +39,9 @@ ms.lasthandoff: 10/24/2017
   
 -   ActiveX denetimleri, bir Web sitesi gibi kapsayıcıları kullanılabilir etkileşimli nesneleridir. ActiveX denetimleri hakkında daha fazla bilgi için bkz:  
   
-    -   [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)  
+    -   [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)  
   
-    -   [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md)  
+    -   [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)  
   
     -   [Genel Bakış: Internet](../mfc/mfc-internet-programming-basics.md)  
   
@@ -61,15 +62,15 @@ ms.lasthandoff: 10/24/2017
  Ayrıca, Bilgi Bankası makalesi Q248019 bkz: nasıl yapılır: önlemek sunucu meşgul iletişim kutusu görüntülenmesini sırasında bir uzun COM işlemin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Etkin belge kapsaması](../mfc/active-document-containment.md)  
+ [Etkin Belge Kapsaması](../mfc/active-document-containment.md)  
   
- [Otomasyon](../mfc/automation.md)  
+ [Otomatikleştirme](../mfc/automation.md)  
   
  [Uzak Otomasyon](../mfc/remote-automation.md)  
   
- [Bağlantı noktaları](../mfc/connection-points.md)  
+ [Bağlantı Noktaları](../mfc/connection-points.md)  
   
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)  
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../mfc/mfc-concepts.md)

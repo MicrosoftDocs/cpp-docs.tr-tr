@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 31d416638b00a5d517fe49526b49ef130a2e9d31
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e4e2d596527b60735b42fb4edfff6f36d0be808d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-warning-lnk4210"></a>Bağlayıcı Araçları Uyarısı LNK4210  
   
@@ -46,4 +47,4 @@ Bu sorunu gidermek için şunlardan birini deneyin:
 -   / Entry kullanarak projenize oluşturulduysa ve Entry işlevi dışındaki geçirilirse `_DllMainCRTStartup`, işlevini çağırmanız gerekir `_CRT_INIT` CRT başlatılamadı. DLL /GS kullanıyorsa, statik başlatıcıları gerektirir veya MFC ya da ATL kodu bağlamında adlı bu çağrı başına yeterli değildir. Bkz: [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)
+ [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)

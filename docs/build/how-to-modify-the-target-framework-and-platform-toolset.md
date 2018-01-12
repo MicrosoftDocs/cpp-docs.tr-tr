@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7a9ab87cc24a106e70e9662f58e7c7266dd39d8f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7ed85e0f1e1ce94401c505281c0e693a4904f92d
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
 Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedefleyen ve farklı platform toolsets kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç takımının sürüm proje sistemi kullanır. Hedef platform araç takımı, proje özelliklerini değiştirerek değiştirebilirsiniz. Hedef Framework projesi (.vcxproj) dosyasını değiştirerek değiştirebilirsiniz. Ayrı bir kod her derleme hedefi için temel sağlamak zorunda değildir.  
@@ -32,7 +33,7 @@ Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedefleyen v
 > [!NOTE]
 >  Hedef platform araç takımı değiştirmek için ilgili sürümü Visual Studio ya da Windows Platform SDK yüklü olması gerekir. Örneğin, Itanium platformuyla hedeflemek için **Windows7.1SDK** platform araç takımı, olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak, kullanabilirsiniz Visual Studio geliştirme işinizi doğru Framework sürümü ve platform araç takımı hedef koşuluyla yapmak için başka bir uyumlu sürümü.  
   
- Daha fazla hedef platformu özel platform araç takımı oluşturarak genişletebilirsiniz. Daha fazla bilgi için bkz: [C++ yerel çoklu sürüm desteği](http://go.microsoft.com/fwlink/?LinkId=196619) Visual C++ blogunda.  
+ Daha fazla hedef platformu özel platform araç takımı oluşturarak genişletebilirsiniz. Daha fazla bilgi için bkz: [C++ yerel çoklu sürüm desteği](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual C++ blogunda.  
   
 ### <a name="to-change-the-target-framework"></a>Hedef Framework değiştirmek için  
   

@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 49b05ad1fe25c7e5e99c02fdb0af3a554b324f42
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4d7f4e8ef0408f6358b8e7978d4327d6836cc722
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autohandleoperator"></a>auto_handle::operator=
 Atama işleci.  
@@ -114,4 +117,4 @@ in ClassA destructor: second
  **Namespace** msclr  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [auto_handle üyeleri](../dotnet/auto-handle-members.md)
+ [auto_handle Members](../dotnet/auto-handle-members.md)

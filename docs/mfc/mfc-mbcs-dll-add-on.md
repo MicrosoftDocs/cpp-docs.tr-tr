@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 810cf210c6ef40121be7905f6519ee9897b3cfb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
-ms.translationtype: MT
+ms.workload: cplusplus
+ms.openlocfilehash: 176ed47b4d6a799cf53d2a1cea8cb232f1c2c4aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-mbcs-dll-add-on"></a>MFC MBCS DLL Eklentisi
  Birden çok baytlı DLL'leri bir MFC projesine sahip Visual Studio 2015'te oluşturmak için gereksinim duyduğunuz **karakter kümesi** özelliğini **kullanımı çok baytlı karakter kümesi** veya **ayarlanmamış**.  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/24/2017
 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC kitaplık sürümleri](../mfc/mfc-library-versions.md)
+ [MFC Kitaplık Sürümleri](../mfc/mfc-library-versions.md)
 

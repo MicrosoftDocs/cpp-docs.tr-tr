@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a41ca93c91fad26c507c4e468e3c4ebf007c3aab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3457597edce1b7ce36b132d1bdd16d286cb94d03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="drawing-in-a-view"></a>Bir Görünümde Çizim Yapma
 Neredeyse tüm çizim uygulamanızda görünümün içinde gerçekleşir `OnDraw` görünümü sınıfında geçersiz kılmanız gerekir üye işlevi. (Çizim, ele fare istisnadır [yorumlama kullanıcı girişi aracılığıyla bir görünümü](../mfc/interpreting-user-input-through-a-view.md).) `OnDraw` Geçersiz kıl:  
@@ -54,5 +55,5 @@ Neredeyse tüm çizim uygulamanızda görünümün içinde gerçekleşir `OnDraw
  Daha fazla nasıl yazılacağını örnekleri için `OnDraw`, bkz: [MFC örnekleri](../visual-cpp-samples.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Görünümleri kullanma](../mfc/using-views.md)
+ [Görünümleri Kullanma](../mfc/using-views.md)
 

@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a97145953cdd5d11f2adc2109f11f3a45298a53c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4943554e67d43b6dc1652a984a0e758af9d6951b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cprintinfo-structure"></a>Cprintınfo yapısı
 Yazdırma veya Baskı Önizleme işle ilgili bilgileri depolar.  

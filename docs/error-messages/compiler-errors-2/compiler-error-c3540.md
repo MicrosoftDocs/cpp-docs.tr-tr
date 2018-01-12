@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0ff7a017ce86e567d0aabcf494e11f48d1cdea05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3befc331c4f43f4efd4e5039258e0faddae97db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3540"></a>Derleyici Hatası C3540
 'type': sizeof 'auto' içeren bir türü için uygulanamaz  
@@ -43,4 +44,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Auto anahtar sözcüğü](../../cpp/auto-keyword.md)   
  [/ZC:Auto (değişken türünü)](../../build/reference/zc-auto-deduce-variable-type.md)   
- [sizeof işleci](../../cpp/sizeof-operator.md)
+ [sizeof İşleci](../../cpp/sizeof-operator.md)

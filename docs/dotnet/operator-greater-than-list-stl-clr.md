@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 272324af8bf4a0cd26e4763c8346669a4833ccd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 0a50137d309c5913d627a065455061123c0e6146
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operatorgt-list-stlclr"></a>İşleç&gt; (liste) (STL/CLR)
 Liste karşılaştırma büyük.  
@@ -99,4 +102,4 @@ int main()
  [operator! = (listesi) (STL/CLR)](../dotnet/operator-inequality-list-stl-clr.md)   
  [İşleç\< (liste) (STL/CLR)](../dotnet/operator-less-than-list-stl-clr.md)   
  [operator > = (listesi) (STL/CLR)](../dotnet/operator-greater-or-equal-list-stl-clr.md)   
- [operator < = (listesi) (STL/CLR)](../dotnet/operator-less-or-equal-list-stl-clr.md)
+ [operator<= (list) (STL/CLR)](../dotnet/operator-less-or-equal-list-stl-clr.md)

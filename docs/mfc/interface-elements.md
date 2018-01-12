@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5eead62c46bb9405a63bd523508142575a8ad93f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ab3da476a4e8b18d5ac864f0cf690a6a113db11e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interface-elements"></a>Arabirim Öğeleri
 Bu belgede de tanıtılan arabirimi öğeleri açıklanır [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)] SP1 ve ayrıca kitaplığı önceki sürümünün farklar açıklanmaktadır.  

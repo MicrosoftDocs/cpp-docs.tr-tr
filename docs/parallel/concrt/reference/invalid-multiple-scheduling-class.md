@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 86d2680234b1d6f957e9f19f9cacc372f7fc8eff
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aa021ec655162cb75837ac1475e5cb9094f79fa8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar bir `task_handle` nesnesidir zamanlanmış birden çok kez kullanarak `run` yöntemi bir `task_group` veya `structured_task_group` nesne ya da müdahalede bulunan bir çağrı olmadan `wait` veya `run_and_wait` yöntemleri.  
@@ -72,4 +73,4 @@ invalid_multiple_scheduling() throw();
  [çalıştırma](task-group-class.md)   
  [bekleme](task-group-class.md)   
  [run_and_wait](task-group-class.md)   
- [structured_task_group sınıfı](structured-task-group-class.md)
+ [structured_task_group Sınıfı](structured-task-group-class.md)

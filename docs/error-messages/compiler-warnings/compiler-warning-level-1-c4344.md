@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2d786e2382639bba345e3d4dbc1085f1e9a48df8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6ebcd451d9c3cbeecb1309c5508d5d79096a7917
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4344"></a>Derleyici Uyarısı (düzey 1) C4344
 davranış değişikliği: açık şablon bağımsız değişken sonuçları 'Function 'işlevine yapılan çağrıda kullanımı  

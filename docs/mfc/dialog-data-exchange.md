@@ -30,11 +30,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e6da394a91eab08f0c79b3edb33132e3c85401af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 35f280228d523c7401e2a90ca395a79a9c87cd51
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-data-exchange"></a>İletişim Kutusu Veri Değişimi
 DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini nesnenin üye değişkenleri, genellikle ayarlamak, `OnInitDialog` işleyicisi veya iletişim Oluşturucusu. İletişim kutusu görüntülenmeden önce framework'ün DDX mekanizması nerede göründüklerinden iletişim kutusu denetimleri için üye değişkenlerin değerleri aktarır hemen iletişim kutusu görüntülendiğinde yanıt olarak `DoModal` veya **oluştur** . Varsayılan uygulaması `OnInitDialog` içinde `CDialog` çağrıları `UpdateData` sınıfının üye işlevini `CWnd` iletişim kutusu denetimleri başlatılamadı.  
@@ -61,5 +62,5 @@ DDX mekanizması kullanırsanız, iletişim kutusunun Başlangıç değerlerini 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)   
  [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [İletişim verisi doğrulama](../mfc/dialog-data-validation.md)
+ [İletişim Verisi Doğrulama](../mfc/dialog-data-validation.md)
 

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae41d50f227c2fa70091aee4e17bf28a40a9b287
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 792f112952493fe1ee86d52a6a235604ebee9db5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
 [Cımagelist](../mfc/reference/cimagelist-class.md) ekranda görüntü sürükleme işlevler içerir. Sürükleme işlevleri görüntüyü sorunsuz, renk ve imlecin bulunduğu tüm yanıp olmadan taşıyın. Maskelenmiş ve maskelenmemiş görüntüleri sürüklenebilir.  
@@ -41,5 +42,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cımagelist kullanma](../mfc/using-cimagelist.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

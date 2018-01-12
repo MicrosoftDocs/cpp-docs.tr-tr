@@ -20,11 +20,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bd0865b66d934920a1c74912d482a3d57030a115
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: f561a56b5859f6e7d0eaedeb6e6410bd4fe64a6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lockislocked"></a>lock::is_locked
 Kilit Tutuluyor olup olmadığını gösterir.  
@@ -135,4 +138,4 @@ All threads completed.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [lock üyeleri](../dotnet/lock-members.md)   
- [Lock::operator bool](../dotnet/lock-operator-bool.md)
+ [lock::operator bool](../dotnet/lock-operator-bool.md)

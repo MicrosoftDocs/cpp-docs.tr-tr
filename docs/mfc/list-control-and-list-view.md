@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 893ff83067c2a7fbc6c375dd6ee03248114ca5ac
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46c9d559d642b6edf926b9feb49332ef7ec2924a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="list-control-and-list-view"></a>Liste Denetimi ve Liste Görünümü
 Kolaylık olması için iki yolla liste denetimi MFC yalıtır. Liste denetimleri kullanabilirsiniz:  
@@ -48,5 +49,5 @@ Kolaylık olması için iki yolla liste denetimi MFC yalıtır. Liste denetimler
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

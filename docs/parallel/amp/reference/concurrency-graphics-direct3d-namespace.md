@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30cba3056cbc6bd6cf9137aad50b981d58c24546
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e5d72b26167a51c6d25e2a9d569ab0424e097a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencygraphicsdirect3d-namespace"></a>Concurrency::graphics::direct3d Ad Alanı
 Sağlar [get_texture](concurrency-graphics-direct3d-namespace-functions.md#get_texture) ve [make_texture](concurrency-graphics-direct3d-namespace-functions.md#make_texture) yöntemleri.  
@@ -49,4 +50,4 @@ namespace direct3d;
  **Namespace:** Concurrency::graphics  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

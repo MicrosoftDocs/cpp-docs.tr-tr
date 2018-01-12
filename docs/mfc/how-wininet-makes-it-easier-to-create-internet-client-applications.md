@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd3492afb8725ccc510d185c025a27f2ce07f7f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9c79404f296df09afb177930897064b8455217d1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet'in Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması
 Win32 Internet Uzantıları veya WinINet, gopher, FTP ve HTTP gibi ortak Internet protokolleri erişim sağlar. WinINet kullanarak Internet istemci uygulamaları programlama, daha yüksek düzeyde WinSock, TCP/IP'yi veya belirli Internet protokolleri ayrıntılarını ile mücadele etmek zorunda kalmadan yazabilirsiniz. WinINet tanıdık Win32 API arabirimi ile tüm üç iletişim kuralları için tutarlı bir işlevler kümesi sağlar. Bu tutarlılık temel Protokolü (örneğin, gelen HTTP FTP) değişirse yapmanız gereken kod değişikliklerini en aza indirir.  
@@ -56,5 +57,5 @@ Win32 Internet Uzantıları veya WinINet, gopher, FTP ve HTTP gibi ortak Interne
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)   
- [Nasıl MFC Internet istemci uygulamaları oluşturmayı kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+ [MFC'nin Internet İstemci Uygulamaları Oluşturmayı Kolaylaştırması](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
 

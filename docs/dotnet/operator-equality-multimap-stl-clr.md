@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25cbd6bac3828d31006c4b006b2864e7c9661e73
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a9f6052bb41878c0659b291e512b0274d5205c70
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-multimap-stlclr"></a>operator== (multimap) (STL/CLR)
 Eşit karşılaştırma listeleyin.  
@@ -101,4 +104,4 @@ int main()
  [İşleç\< (multimap) (STL/CLR)](../dotnet/operator-less-than-multimap-stl-clr.md)   
  [operator > = (multimap) (STL/CLR)](../dotnet/operator-greater-or-equal-multimap-stl-clr.md)   
  [operator > (multimap) (STL/CLR)](../dotnet/operator-greater-than-multimap-stl-clr.md)   
- [operator < = (multimap) (STL/CLR)](../dotnet/operator-less-or-equal-multimap-stl-clr.md)
+ [operator<= (multimap) (STL/CLR)](../dotnet/operator-less-or-equal-multimap-stl-clr.md)

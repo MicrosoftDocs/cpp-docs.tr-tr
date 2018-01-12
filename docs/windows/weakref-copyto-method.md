@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ca0fe93e89b1a7115e816157fe1842d616850675
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5b0114a9768fbea12a5b98f51911267cb24b0b43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="weakrefcopyto-method"></a>WeakRef::CopyTo Yöntemi
 Bir işaretçi bir arabirim için mevcut ise, belirtilen işaretçi değişkenine atar.  
@@ -68,4 +71,4 @@ HRESULT CopyTo(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [WeakRef sınıfı](../windows/weakref-class.md)
+ [WeakRef Sınıfı](../windows/weakref-class.md)

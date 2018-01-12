@@ -24,11 +24,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bfcc0cb9459245f4fa6553774ee943555c09d141
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92f5673aac014abdd4fd19425d9ae849f64284ea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registering-window-classes"></a>Pencere Sınıflarını Kaydetme
 Pencere "sınıfları" Windows için geleneksel programlamada windows herhangi bir sayıda oluşturulabileceği gelen bir "sınıf" (C++ sınıfı değil) özelliklerini tanımlayın. Bu sınıf bir şablonu veya windows oluşturmak için model türüdür.  
@@ -42,5 +43,5 @@ Pencere "sınıfları" Windows için geleneksel programlamada windows herhangi b
  Daha fazla bilgi için bkz: [Teknik Not 1](../mfc/tn001-window-class-registration.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencereler oluşturma](../mfc/creating-windows.md)
+ [Pencereler Oluşturma](../mfc/creating-windows.md)
 

@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cff995d4d5b21afc0dd1e54800cf812353c0b022
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d92518d53e878c6b44b01008194095cf8db12c40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listsizetype-stlclr"></a>list::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -75,4 +78,4 @@ end()-begin() = 3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [List::Empty (STL/CLR)](../dotnet/list-empty-stl-clr.md)
+ [list::empty (STL/CLR)](../dotnet/list-empty-stl-clr.md)

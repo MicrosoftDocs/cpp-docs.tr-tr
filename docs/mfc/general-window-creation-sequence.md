@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4bd939d6deda4f50d03ba0951720aa4d445fcae7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 59bed4387a6b8e6edeb504e29d221e76a0b39d18
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="general-window-creation-sequence"></a>Genel Pencere Oluşturma Dizisi
 Kendi alt gibi penceresinin bir pencere oluşturduğunuzda framework kadar aynı işlem içinde açıklanan olarak kullanır. [belge/görünüm oluşturma](../mfc/document-view-creation.md).  
@@ -47,5 +48,5 @@ Kendi alt gibi penceresinin bir pencere oluşturduğunuzda framework kadar aynı
 -   [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencereler oluşturma](../mfc/creating-windows.md)
+ [Pencereler Oluşturma](../mfc/creating-windows.md)
 

@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0e2ce9377d0ea4b2bd7b04255eb1c8099341af39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 30c7833a4df80669b6223f1fe6b1ccceed0257cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-with-c-and-win32"></a>C ve Win32 ile Çoklu İş Parçacığı Kullanımı
 Microsoft Visual C++, Microsoft Windows ile çoklu iş parçacığı kullanan uygulamalar oluşturmak için destek sağlar: Windows XP, Windows 2000, Windows NT, Windows Me ve Windows 98. Eşzamanlı klavye ve fare girdisi gibi birden çok etkinlikleri yönetmek uygulamanız gerekiyorsa birden çok iş parçacığı kullanmayı düşünmelisiniz. İkinci bir iş parçacığı fare etkinliklerini filtreler sırada bir iş parçacığı klavye girişini işleyebilir. Üçüncü bir iş parçacığı, fare ve klavye iş parçacığı dayalı ekran güncelleştirebilirsiniz. Aynı anda başka bir iş parçacığı disk dosyalarına erişebilir veya veri iletişim bağlantı noktasından alabilir.  
@@ -55,4 +56,4 @@ Microsoft Visual C++, Microsoft Windows ile çoklu iş parçacığı kullanan uy
 -   [İş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eski kod (Visual C++) için çoklu iş parçacığı desteği](../parallel/multithreading-support-for-older-code-visual-cpp.md)
+ [Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)](../parallel/multithreading-support-for-older-code-visual-cpp.md)

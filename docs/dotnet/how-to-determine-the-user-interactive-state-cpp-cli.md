@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f65933a1cbd81c0794263dfe3fa2628f52599257
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: a2cb3ffb8e0bfd8eba04555286894b6f1e58cfd7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-determine-the-user-interactive-state-ccli"></a>Nasıl yapılır: Kullanıcı Etkileşimli Durumunu Belirleme (C++/CLI)
 Aşağıdaki kod örneğinde, kodu bir etkileşimli kullanıcı bağlamında çalışacak olup olmadığını belirlemek gösterilmiştir. Varsa <xref:System.Environment.UserInteractive%2A> kod hizmet işlemi olarak çalışıyordur veya gelen bir Web uygulamasının içinde bu durumda, kullanıcıyla etkileşim çalışmamalıdır sonra yanlış.  
@@ -44,4 +47,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

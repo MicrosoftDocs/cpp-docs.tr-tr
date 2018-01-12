@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: db15abf9aca532b8c0fb712733c4e87350b58747
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6e67b6de0b7769322d0b7f1176245c8f68634afb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-regular-expressions-to-validate-data-formatting-ccli"></a>Nasıl yapılır: Veri Biçimlendirmesini Doğrulamak için Normal İfadeleri Kullanma (C++/CLI)
 Aşağıdaki kod örneğinde biçimlendirme dizesi doğrulamak için normal ifadeler kullanımını göstermektedir. Aşağıdaki kod örneğinde, geçerli bir telefon numarası dize içermelidir. Aşağıdaki kod örneğinde "\d{3}-\d{3}-\d{4}" dizesi her bir alan geçerli bir telefon numarası temsil ettiğini göstermek için kullanır. Bir basamak dizesindeki "d" gösterir ve sonra her "d" bağımsız değişkeni bulunmalıdır basamak sayısını belirtir. Bu durumda, numara çizgilerle ayrılmış olması zorunlu değildir.  
@@ -67,4 +70,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [.NET framework normal ifadeleri](/dotnet/standard/base-types/regular-expressions)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

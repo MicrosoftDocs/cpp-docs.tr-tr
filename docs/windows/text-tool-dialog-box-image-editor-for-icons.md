@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f913d3a7eea55547558602cb2ce37fd623434989
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ed1a15dbe8947bc52c8a91d94ca12fee6badcf77
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="text-tool-dialog-box-image-editor-for-icons"></a>Metin Aracı İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
 Kullanım **metin aracı** metin imleç, bit eşlem veya simge kaynak eklemek için iletişim kutusu.  

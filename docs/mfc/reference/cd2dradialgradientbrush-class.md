@@ -49,11 +49,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a190bbe75a7b0d0f26d210e299d58e8b6ba6caa7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8cdac3e2d2df31840ae90b79755b68d916033990
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cd2dradialgradientbrush-class"></a>CD2DRadialGradientBrush sınıfı
 ID2D1RadialGradientBrush için sarmalayıcı.  
@@ -326,4 +327,4 @@ void SetRadiusY(FLOAT radiusY);
  Gradyan elips y-radius. Bu değer fırça koordinat alan olmalıdır  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

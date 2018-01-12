@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b16df22efe86310e4d6faeadc35085507e15a7e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ee958116b7eed8804bb6c540187eea6b37d750ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl Kullanma
 Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.md)) bir takvim benzeri kullanıcı arabirimini uygular. Bu kullanıcı girmek veya bir tarih seçme çok sezgisel ve tanınabilir yöntemini sağlar. Denetim Ayrıca uygulama ile elde ve var olan veri türleri kullanılarak denetiminde tarih bilgisini ayarlamak için araçlar sağlar. Varsayılan olarak, ay ve gün geçerli ay Takvim denetimi görüntüler. Ancak, kullanıcı önceki ve sonraki ay boyunca kaydırma yapın ve belirli ayı ve/veya yıl mümkün değil.  
@@ -29,14 +30,14 @@ Aylık takvim denetiminin ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Aylık takvim denetimi oluşturma](../mfc/creating-the-month-calendar-control.md)  
+-   [Aylık Takvim Denetimi Oluşturma](../mfc/creating-the-month-calendar-control.md)  
   
--   [Aylık takvim denetimine örnekler](../mfc/month-calendar-control-examples.md)  
+-   [Aylık Takvim Denetimine Örnekler](../mfc/month-calendar-control-examples.md)  
   
--   [Bildirim iletilerini işleme Ay takvim denetimleri](../mfc/processing-notification-messages-in-month-calendar-controls.md)  
+-   [Aylık Takvim Denetimlerinde Bildirim İletilerini İşleme](../mfc/processing-notification-messages-in-month-calendar-controls.md)  
   
--   [Takvim denetiminin bir ayın gün durumunu ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md)  
+-   [Aylık Takvim Denetiminin Gün Durumunu Ayarlama](../mfc/setting-the-day-state-of-a-month-calendar-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

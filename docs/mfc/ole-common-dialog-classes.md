@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: db64f8c3e2c310b306a1be4696a5c4c7d2cea4f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0617354337e75e2c2431df894c054722349e2306
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-common-dialog-classes"></a>OLE Ortak İletişim Kutusu Sınıfları
 Bu sınıfları, bir dizi standart OLE iletişim kutuları uygulayarak ortak OLE görevler işleyin. Bunlar ayrıca OLE işlevselliği için tutarlı bir kullanıcı arabirimi sağlar.  

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1445675762bb715e7b879e8336b7ccf73c7eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e81be5ef0216f7d8a28ea7d5046c127f18670a6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows"></a>Windows
 Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows sınıfından türetilen [CWnd](../mfc/reference/cwnd-class.md)çerçeve pencereleri, görünümler, iletişim kutuları ve denetimleri dahil olmak üzere.  
@@ -42,7 +43,7 @@ Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows s
   
 -   [Pencere nesneleri oluşturma](../mfc/creating-windows.md)  
   
--   [Pencere nesnelerini yok etme](../mfc/destroying-window-objects.md)  
+-   [Pencere Nesnelerini Yok Etme](../mfc/destroying-window-objects.md)  
   
 -   [Pencere "sınıflarını" kaydetme](../mfc/registering-window-classes.md)  
   
@@ -78,7 +79,7 @@ Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows s
   
 -   [Cmdıchildwnd](../mfc/reference/cmdichildwnd-class.md)  
   
--   [Görünümleri kullanma](../mfc/using-views.md)  
+-   [Görünümleri Kullanma](../mfc/using-views.md)  
   
 -   [Birden çok belge türü, görünümler ve çerçeve pencereleri (Bölümlendirici pencereler)](../mfc/multiple-document-types-views-and-frame-windows.md)  
   
@@ -86,7 +87,7 @@ Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows s
   
  *Oluşturma ve Windows yok*  
   
--   [Genel pencere oluşturma dizisi](../mfc/general-window-creation-sequence.md)  
+-   [Genel Pencere Oluşturma Dizisi](../mfc/general-window-creation-sequence.md)  
   
 -   [Pencere nesneleri yok](../mfc/destroying-window-objects.md)  
   
@@ -117,5 +118,5 @@ Bu makaleler ailesi MFC çerçevesi pencere nesneleri kapsar. Tüm MFC windows s
  [İletişim kutuları](../mfc/dialog-boxes.md)   
  [Araç çubukları](../mfc/toolbars.md)   
  [Durum çubukları](../mfc/status-bars.md)   
- [İletişim kutusu çubukları](../mfc/dialog-bars.md)
+ [İletişim Kutusu Çubukları](../mfc/dialog-bars.md)
 

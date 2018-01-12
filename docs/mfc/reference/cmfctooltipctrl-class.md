@@ -43,11 +43,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83fe6fc144f4a8864cccb68edef230ba91364416
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae37349599977b236f111530f170da746b44b425
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge, bir etiket ve açıklama görüntüleyebilirsiniz. Gradyan Dolgu, özel metin ve renkler, kalın metin, yuvarlatılmış köşeleri veya balon stil kullanarak görünümünü özelleştirebilirsiniz.  
@@ -414,4 +415,4 @@ void SetParams(CMFCToolTipInfo* pParams);
  [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md)   
  [CTooltipManager sınıfı](../../mfc/reference/ctooltipmanager-class.md)   
  [CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)   
- [CWinAppEx sınıfı](../../mfc/reference/cwinappex-class.md)
+ [CWinAppEx Sınıfı](../../mfc/reference/cwinappex-class.md)

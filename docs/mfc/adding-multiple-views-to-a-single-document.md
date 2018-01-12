@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aea707a208e9642b5847b17a8f37a4a5f77f145e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 865b30ac7b4c8910e92d14274f1224c25e7f74d8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>Tek Bir Belgeye Birden Çok Görünüm Ekleme
 Microsoft Foundation Class (MFC) kitaplığı ile oluşturulan bir tek belge arabirimi (SDI) uygulamasında her belge türü tek bir görünüm türü ile ilişkilidir. Bazı durumlarda, yeni bir görünüm geçerli görünümüyle belgenin geçme özelliğine sahip önerilir.  

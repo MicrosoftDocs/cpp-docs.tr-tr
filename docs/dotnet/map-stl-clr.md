@@ -18,11 +18,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6b6e535dac08e473e281f45e45a084d856c931b7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c90fcb415b186257cd2aef801867918b367413b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="map-stlclr"></a>eşle (STL/CLR)
 Şablon sınıfı çift yönlü erişimi olan öğeleri değişen uzunluk dizisi denetleyen bir nesne tanımlar. Kapsayıcı kullandığınız `map` öğeleri dizisi (neredeyse) dengeli sıralı ağacı düğümleri olarak her bir öğe depolamak yönetmek için. Bir öğenin dizisi ve için kılma gider eşlenen bir değer sıralama için bir anahtar oluşur.  
@@ -66,57 +69,57 @@ template<typename Key,
   
 |Tür Tanımlaması|Açıklama|  
 |---------------------|-----------------|  
-|[Map::const_iterator (STL/CLR)](../dotnet/map-const-iterator-stl-clr.md)|Denetlenen dizi için bir sabit yineleyici türü.|  
-|[Map::const_reference (STL/CLR)](../dotnet/map-const-reference-stl-clr.md)|Bir öğe için sabit bir başvuru türü.|  
-|[Map::const_reverse_iterator (STL/CLR)](../dotnet/map-const-reverse-iterator-stl-clr.md)|Denetimli sırası için sabit bir ters yineleyici türü.|  
-|[Map::difference_type (STL/CLR)](../dotnet/map-difference-type-stl-clr.md)|İki öğeler arasında (büyük olasılıkla imzalanmış) bir uzaklık türü.|  
-|[Map::generic_container (STL/CLR)](../dotnet/map-generic-container-stl-clr.md)|Genel arabirim kapsayıcının türü.|  
-|[Map::generic_iterator (STL/CLR)](../dotnet/map-generic-iterator-stl-clr.md)|Yineleyici kapsayıcısı için genel arabirimi türü.|  
-|[Map::generic_reverse_iterator (STL/CLR)](../dotnet/map-generic-reverse-iterator-stl-clr.md)|Kapsayıcı için genel arabirimini ters yineleyici türü.|  
-|[Map::generic_value (STL/CLR)](../dotnet/map-generic-value-stl-clr.md)|Kapsayıcı için genel arabirimini öğenin türü.|  
-|[Map::iterator (STL/CLR)](../dotnet/map-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
-|[Map::key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
-|[Map::key_type (STL/CLR)](../dotnet/map-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
-|[Map::mapped_type (STL/CLR)](../dotnet/map-mapped-type-stl-clr.md)|Her anahtar ile ilişkili eşlenen değer türü.|  
-|[Map::Reference (STL/CLR)](../dotnet/map-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
-|[Map::reverse_iterator (STL/CLR)](../dotnet/map-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
-|[Map::size_type (STL/CLR)](../dotnet/map-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
-|[Map::value_compare (STL/CLR)](../dotnet/map-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
-|[Map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)|Öğenin türü.|  
+|[map::const_iterator (STL/CLR)](../dotnet/map-const-iterator-stl-clr.md)|Denetlenen dizi için bir sabit yineleyici türü.|  
+|[map::const_reference (STL/CLR)](../dotnet/map-const-reference-stl-clr.md)|Bir öğe için sabit bir başvuru türü.|  
+|[map::const_reverse_iterator (STL/CLR)](../dotnet/map-const-reverse-iterator-stl-clr.md)|Denetimli sırası için sabit bir ters yineleyici türü.|  
+|[map::difference_type (STL/CLR)](../dotnet/map-difference-type-stl-clr.md)|İki öğeler arasında (büyük olasılıkla imzalanmış) bir uzaklık türü.|  
+|[map::generic_container (STL/CLR)](../dotnet/map-generic-container-stl-clr.md)|Genel arabirim kapsayıcının türü.|  
+|[map::generic_iterator (STL/CLR)](../dotnet/map-generic-iterator-stl-clr.md)|Yineleyici kapsayıcısı için genel arabirimi türü.|  
+|[map::generic_reverse_iterator (STL/CLR)](../dotnet/map-generic-reverse-iterator-stl-clr.md)|Kapsayıcı için genel arabirimini ters yineleyici türü.|  
+|[map::generic_value (STL/CLR)](../dotnet/map-generic-value-stl-clr.md)|Kapsayıcı için genel arabirimini öğenin türü.|  
+|[map::iterator (STL/CLR)](../dotnet/map-iterator-stl-clr.md)|Denetlenen dizi için bir yineleyici türü.|  
+|[map::key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)|İki anahtar sıralama temsilcisi.|  
+|[map::key_type (STL/CLR)](../dotnet/map-key-type-stl-clr.md)|Bir sıralama anahtarının türü.|  
+|[map::mapped_type (STL/CLR)](../dotnet/map-mapped-type-stl-clr.md)|Her anahtar ile ilişkili eşlenen değer türü.|  
+|[map::reference (STL/CLR)](../dotnet/map-reference-stl-clr.md)|Bir öğe için bir başvuru türü.|  
+|[map::reverse_iterator (STL/CLR)](../dotnet/map-reverse-iterator-stl-clr.md)|Denetimli sırası için ters yineleyici türü.|  
+|[map::size_type (STL/CLR)](../dotnet/map-size-type-stl-clr.md)|İki öğe arasındaki (negatif olmayan) uzaklığı türü.|  
+|[map::value_compare (STL/CLR)](../dotnet/map-value-compare-stl-clr.md)|İki öğenin değerleri için sıralama temsilcisi.|  
+|[map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)|Öğenin türü.|  
   
 |Üye İşlevi|Açıklama|  
 |---------------------|-----------------|  
-|[Map::Begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
-|[Map::Clear (STL/CLR)](../dotnet/map-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
-|[Map::Count (STL/CLR)](../dotnet/map-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
-|[Map::Empty (STL/CLR)](../dotnet/map-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
-|[Map::End (STL/CLR)](../dotnet/map-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
-|[Map::equal_range (STL/CLR)](../dotnet/map-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
-|[Map::ERASE (STL/CLR)](../dotnet/map-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[Map::Find (STL/CLR)](../dotnet/map-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
-|[Map::insert (STL/CLR)](../dotnet/map-insert-stl-clr.md)|Öğeleri ekler.|  
-|[Map::key_comp (STL/CLR)](../dotnet/map-key-comp-stl-clr.md)|İki anahtar sıralama temsilcisi kopyalar.|  
-|[Map::lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
-|[Map::make_value (STL/CLR)](../dotnet/map-make-value-stl-clr.md)|Bir değer nesnesi oluşturur.|  
-|[Map::Map (STL/CLR)](../dotnet/map-map-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
-|[Map::rbegin (STL/CLR)](../dotnet/map-rbegin-stl-clr.md)|Ters denetimli dizisi başlangıcını belirtir.|  
-|[Map::rend (STL/CLR)](../dotnet/map-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
-|[Map::size (STL/CLR)](../dotnet/map-size-stl-clr.md)|Öğe sayısını sayar.|  
-|[Map::Swap (STL/CLR)](../dotnet/map-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
-|[Map::to_array (STL/CLR)](../dotnet/map-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
-|[Map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
-|[Map::value_comp (STL/CLR)](../dotnet/map-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
+|[map::begin (STL/CLR)](../dotnet/map-begin-stl-clr.md)|Denetlenen dizinin başlangıcını belirtir.|  
+|[map::clear (STL/CLR)](../dotnet/map-clear-stl-clr.md)|Tüm öğeleri kaldırır.|  
+|[map::count (STL/CLR)](../dotnet/map-count-stl-clr.md)|Belirtilen anahtar eşleşen öğeleri sayar.|  
+|[map::empty (STL/CLR)](../dotnet/map-empty-stl-clr.md)|Bir öğe olup olmadığını sınar.|  
+|[map::end (STL/CLR)](../dotnet/map-end-stl-clr.md)|Denetlenen dizinin bitişini belirtir.|  
+|[map::equal_range (STL/CLR)](../dotnet/map-equal-range-stl-clr.md)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
+|[map::erase (STL/CLR)](../dotnet/map-erase-stl-clr.md)|Belirtilen konumlardaki öğeleri kaldırır.|  
+|[map::find (STL/CLR)](../dotnet/map-find-stl-clr.md)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[map::insert (STL/CLR)](../dotnet/map-insert-stl-clr.md)|Öğeleri ekler.|  
+|[map::key_comp (STL/CLR)](../dotnet/map-key-comp-stl-clr.md)|İki anahtar sıralama temsilcisi kopyalar.|  
+|[map::lower_bound (STL/CLR)](../dotnet/map-lower-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığının başlangıcını bulur.|  
+|[map::make_value (STL/CLR)](../dotnet/map-make-value-stl-clr.md)|Bir değer nesnesi oluşturur.|  
+|[map::map (STL/CLR)](../dotnet/map-map-stl-clr.md)|Bir kapsayıcı nesnesi oluşturur.|  
+|[map::rbegin (STL/CLR)](../dotnet/map-rbegin-stl-clr.md)|Ters denetimli dizisi başlangıcını belirtir.|  
+|[map::rend (STL/CLR)](../dotnet/map-rend-stl-clr.md)|Ters denetimli dizinin sonuna belirler.|  
+|[map::size (STL/CLR)](../dotnet/map-size-stl-clr.md)|Öğe sayısını sayar.|  
+|[map::swap (STL/CLR)](../dotnet/map-swap-stl-clr.md)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[map::to_array (STL/CLR)](../dotnet/map-to-array-stl-clr.md)|Denetimli sırası yeni bir diziye kopyalar.|  
+|[map::upper_bound (STL/CLR)](../dotnet/map-upper-bound-stl-clr.md)|Belirtilen anahtarla eşleşen aralığın sonuna bulur.|  
+|[map::value_comp (STL/CLR)](../dotnet/map-value-comp-stl-clr.md)|İki öğenin değerleri için sıralama temsilci kopyalar.|  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[Map::operator (STL/CLR) =](../dotnet/map-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
-|[Map::operator(stl/CLR)](../dotnet/map-operator-stl-clr.md)|Bir anahtar ilişkili eşlenen değerine eşler.|  
-|[operator! = (map) (STL/CLR)](../dotnet/operator-inequality-map-stl-clr.md)|Belirler bir `map` nesne diğerine eşit değil `map` nesnesi.|  
-|[operator < (map) (STL/CLR)](../dotnet/operator-less-than-map-stl-clr.md)|Belirler bir `map` nesnesi, başka değerinden `map` nesnesi.|  
-|[operator < = (map) (STL/CLR)](../dotnet/operator-less-or-equal-map-stl-clr.md)|Belirler bir `map` nesnesidir değerinden küçük veya eşit başka `map` nesnesi.|  
-|[operator == (map) (STL/CLR)](../dotnet/operator-equality-map-stl-clr.md)|Belirler bir `map` nesnesidir diğerine eşit `map` nesnesi.|  
-|[operator > (map) (STL/CLR)](../dotnet/operator-greater-than-map-stl-clr.md)|Belirler bir `map` nesnesidir diğerinden daha büyük `map` nesnesi.|  
-|[operator > = (map) (STL/CLR)](../dotnet/operator-greater-or-equal-map-stl-clr.md)|Belirler bir `map` nesnesidir büyük veya ona eşit diğerine `map` nesnesi.|  
+|[map::operator= (STL/CLR)](../dotnet/map-operator-assign-stl-clr.md)|Denetimli dizisi yerini alır.|  
+|[map::operator(STL/CLR)](../dotnet/map-operator-stl-clr.md)|Bir anahtar ilişkili eşlenen değerine eşler.|  
+|[operator!= (map) (STL/CLR)](../dotnet/operator-inequality-map-stl-clr.md)|Belirler bir `map` nesne diğerine eşit değil `map` nesnesi.|  
+|[operator< (map) (STL/CLR)](../dotnet/operator-less-than-map-stl-clr.md)|Belirler bir `map` nesnesi, başka değerinden `map` nesnesi.|  
+|[operator<= (map) (STL/CLR)](../dotnet/operator-less-or-equal-map-stl-clr.md)|Belirler bir `map` nesnesidir değerinden küçük veya eşit başka `map` nesnesi.|  
+|[operator== (map) (STL/CLR)](../dotnet/operator-equality-map-stl-clr.md)|Belirler bir `map` nesnesidir diğerine eşit `map` nesnesi.|  
+|[operator> (map) (STL/CLR)](../dotnet/operator-greater-than-map-stl-clr.md)|Belirler bir `map` nesnesidir diğerinden daha büyük `map` nesnesi.|  
+|[operator>= (map) (STL/CLR)](../dotnet/operator-greater-or-equal-map-stl-clr.md)|Belirler bir `map` nesnesidir büyük veya ona eşit diğerine `map` nesnesi.|  
   
 ## <a name="interfaces"></a>Arabirimler  
   

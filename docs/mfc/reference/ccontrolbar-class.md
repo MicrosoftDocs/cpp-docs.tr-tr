@@ -55,11 +55,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb4852990bd928a00c5aaf8de4669ed791f68468
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a911ff6251a6b34162377610ae139cfa3a7cefaa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccontrolbar-class"></a>CControlBar sınıfı
 Denetim çubuğu sınıfları için temel sınıf [CStatusBar](../../mfc/reference/cstatusbar-class.md), [CToolBar](../../mfc/reference/ctoolbar-class.md), [CDialogBar](../../mfc/reference/cdialogbar-class.md), [CReBar](../../mfc/reference/crebar-class.md), ve [ COleResizeBar](../../mfc/reference/coleresizebar-class.md).  
@@ -113,7 +114,7 @@ class CControlBar : public CWnd
   
  Daha fazla bilgi için `CControlBar`, bkz:  
   
-- [Denetim çubukları](../../mfc/control-bars.md)  
+- [Denetim Çubukları](../../mfc/control-bars.md)  
   
 - [Teknik Not 31: Denetim çubukları](../../mfc/tn031-control-bars.md).  
   
@@ -504,4 +505,4 @@ void SetInPlaceOwner(CWnd* pWnd);
  [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md)   
  [CDialogBar sınıfı](../../mfc/reference/cdialogbar-class.md)   
  [CStatusBar sınıfı](../../mfc/reference/cstatusbar-class.md)   
- [CReBar sınıfı](../../mfc/reference/crebar-class.md)
+ [CReBar Sınıfı](../../mfc/reference/crebar-class.md)

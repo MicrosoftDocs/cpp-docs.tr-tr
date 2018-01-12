@@ -55,11 +55,12 @@ caps.latest.revision: "33"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5e5927cf9697a25e7e6e76a3e71c3d41ba1b32ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cfebb488921d81c36f842885ad49eae3f40a37fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 `CMFCDesktopAlertWnd` Sınıfı kullanıcıyı bir olay hakkında bilgilendirmek için ekranda görünen bir kalıcı olmayan iletişim kutusu işlevselliğini uygular.  
@@ -459,4 +460,4 @@ virtual CSize GetDialogSize();
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCDesktopAlertWndInfo sınıfı](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)   
  [CMFCDesktopAlertDialog sınıfı](../../mfc/reference/cmfcdesktopalertdialog-class.md)   
- [CWnd sınıfı](../../mfc/reference/cwnd-class.md)
+ [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)

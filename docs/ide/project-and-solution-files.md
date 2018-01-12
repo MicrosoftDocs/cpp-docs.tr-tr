@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 498f4404f0b3f6b291eca0e78315d2a010cbf846
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03797d266dc0f3104d6153b9d946d06ac963fafc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur. Bunlar, çözümdeki proje dosyalarını yönetmek için kullanılır.  
@@ -40,7 +41,7 @@ Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur
 |*PROJNAME.* vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Filtreleri* dosya. Çözüme eklendi dosyasının nereye yerleştirileceğini belirler. Örneğin, bir .h dosyası put **üstbilgi dosyaları** düğümü.|  
 |*PROJNAME.* vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Geçiş kullanıcı* dosya. Visual Studio 2008'den bir proje geçirildikten sonra bu dosyayı herhangi bir .vsprops dosyadan dönüştürüldü bilgiler içerir.|  
 |*PROJNAME*.idl|*PROJNAME*|Kaynak|(Proje özgü) Bir denetim tür kitaplığı arabirimi Açıklama Dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimi sunar. Daha fazla bilgi için bkz: [arabirim tanımı (IDL) dosya](http://msdn.microsoft.com/library/windows/desktop/aa378712) Windows SDK.|  
-|Readme.txt|*PROJNAME*|Project|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|  
+|Readme.txt|*PROJNAME*|Proje|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)
+ [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

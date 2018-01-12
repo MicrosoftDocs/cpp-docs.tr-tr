@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb5d5145df5df5e55b12f2928f43b8ac78b5d884
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e7608c05c5915a3b4d04cf6a12e1b424e6b44ab4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphoreoperator-operator"></a>Semaphore::operator= İşleci
 Belirtilen tanıtıcı geçerli semafor nesnesine bir semafor nesneden taşır.  
@@ -45,4 +48,4 @@ Semaphore& operator=(
  **Namespace:** Microsoft::wrl:: Wrappers
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Semafor sınıfı](../windows/semaphore-class.md)
+ [Semafor Sınıfı](../windows/semaphore-class.md)

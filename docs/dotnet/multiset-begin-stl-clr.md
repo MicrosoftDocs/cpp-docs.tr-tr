@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8e7b09d3ecd86393ced44c742f5bae5e7dec8d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 32f58f0b2dcb049d340b6cedec4c630b2fec73a9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multisetbegin-stlclr"></a>multiset::begin (STL/CLR)
 Denetlenen dizinin başlangıcını belirtir.  
@@ -75,4 +78,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)   
- [multiset::End (STL/CLR)](../dotnet/multiset-end-stl-clr.md)
+ [multiset::end (STL/CLR)](../dotnet/multiset-end-stl-clr.md)

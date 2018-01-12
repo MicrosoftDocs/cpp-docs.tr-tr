@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb13e31df1b30c775d1e961f09b10163d06b1ea7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 27046704975bf8f5e28f12acbfa72e860660fdbd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cimage-limitations-with-earlier-operating-systems"></a>Önceki İşletim Sistemlerinde CImage Sınırlamaları
 Birçok `CImage` işlevleri yalnızca Windows daha yeni sürümleri ile çalışır: Windows 95/98 veya Windows NT 4.0 veya Windows 2000. Bu makalede belirli yöntemlerini sürüm sınırlamaları açıklanmaktadır.  
@@ -46,4 +47,4 @@ Birçok `CImage` işlevleri yalnızca Windows daha yeni sürümleri ile çalış
  Sizin için 0x0500 ayarlamak _WIN32_WINNT uygulama ya da daha derleme yaparsanız **çizin** saydamlık otomatik olarak Windows 2000 veya Windows 98 ve üzerini çalıştıran sistemlerde işleyecek. Ayrıca çalışır, ancak Windows NT 4.0 ve Windows 95; saydamlık desteği Ancak, kullanmalıdır **/delayload** msimg32 yüklenmesini geciktirmek için. İçin yukarıda açıklandığı gibi LIB `AlphaBlend` ve `TransparentBlt`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cımage sınıfı](../atl-mfc-shared/reference/cimage-class.md)
+ [CImage Sınıfı](../atl-mfc-shared/reference/cimage-class.md)

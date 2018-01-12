@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c8378c3acb691164641f788a87f740b0900f1bd6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b709179cb5bc0fefa3f342374c792656fa1e934
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>İzlenecek yol: Görüntü İşleme Ağı Oluşturma
 Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti blokları bir ağ oluşturmak gösterilmiştir.  
@@ -32,11 +33,11 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:  
   
--   [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+-   [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
--   [Nasıl yapılır: ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
+-   [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
   
--   [İzlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)  
+-   [İzlenecek Yol: Veri Akışı Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)  
   
  Ayrıca, temel bilgileri anladığınızdan öneririz [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] bu kılavuza başlamadan önce.  
   
@@ -170,4 +171,4 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
  **cl.exe /DUNICODE /EHsc görüntü işleme network.cpp/Link gdiplus.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Çalışma zamanı izlenecek yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+ [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)

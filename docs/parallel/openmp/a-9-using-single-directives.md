@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 101d6570f2e3c3e757f28ffb632633d6570dac06
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 11d41d62448d41d7a11ef747e65cc6ac47e4bd7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a9---using-single-directives"></a>A.9   single Yönergelerini Kullanma
 Aşağıdaki örnekte gösterilmiştir `single` yönergesi ([bölüm 2.4.3](../../parallel/openmp/2-4-3-single-construct.md) sayfasında 15). Örnekte, yalnızca bir iş parçacığı (karşılaştığı genellikle ilk iş parçacığı `single` yönergesi) ilerleme iletisi yazdırır. Hangi iş parçacığı çalıştırır gibi kullanıcı varsayımlar yapmamalısınız `single` bölümü. Diğer tüm iş parçacıklarının atlar `single` bölümünde ve sonunda engeli Durdur `single` oluşturun. Başka bir iş parçacığı iş parçacığını yürütmek için beklemeden geçebilmeniz `single` bölümünde, bir `nowait` yan tümcesi belirtilebilir `single` yönergesi.  

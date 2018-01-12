@@ -1,7 +1,7 @@
 ---
 title: "C4200 ile C4399 derleyici uyarıları | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-tools
@@ -45,26 +45,24 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d5bb235544989ebdd1aa6ebebb7d96ba0cd7391d
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: c0de6e5d163322cde058ef564b78fdfe1141ab28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warnings-c4200-through-c4399"></a>C4200 ile C4399 derleyici uyarıları
 
-Bu bölümü belgelerin makalelerinde Visual C++ derleyici uyarıları, bir alt hakkında bilgiler içerir. Burada yer alan bilgiler erişebilir veya **çıkış** penceresi Visual Studio'da bir uyarı numarasını seçin ve ardından F1 tuşuna belirtin.
+Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı iletilerini kümesini açıklayın.
 
-> [!NOTE]
->  Her [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] hata veya uyarı MSDN içinde belgelenmiştir. Çoğu durumda, tanılama iletisinin tüm kullanılabilir bilgileri sağlar. Bir hata iletisi düşünüyorsanız, ek açıklama, bize bildirin gerekir. Bilgisayarınıza bu sayfadaki geri bildirim formu kullanın veya Visual Studio menü çubuğunda gidin ve seçebilirsiniz **yardımcı**, **bir hata raporu**, veya üzerinde bir öneri veya hata raporu gönderebilirsiniz [Microsoft Connect](http://connect.microsoft.com/VisualStudio).
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Visual C++ dili](http://go.microsoft.com/fwlink/?LinkId=158195) forumudur sorular ve tartışmaları hakkında [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] dili sözdizimi ve derleyicisi. [Visual C++ genel](http://go.microsoft.com/fwlink/?LinkId=158194) Forumu hakkında sorular için olan [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] , değil tartışılır diğer forumlarda. Üzerinde hataları ve Uyarıları hakkında Yardım bulabilirsiniz [yığın taşması](http://stackoverflow.com/).
-
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="warning-messages"></a>Uyarı iletileri
 
 |Uyarı|İleti|
 |-------------|-------------|
-|[Derleyici Uyarısı (Düzey 2 ve 4) C4200](../../error-messages/compiler-warnings/compiler-warning-levels-2-and-4-c4200.md)|kullanılan standart olmayan uzantısı: sıfır boyutlu dizi struct/Birleşimdeki|
+|[Derleyici Uyarısı (düzey 2 ve 4) C4200](../../error-messages/compiler-warnings/compiler-warning-levels-2-and-4-c4200.md)|kullanılan standart olmayan uzantısı: sıfır boyutlu dizi struct/Birleşimdeki|
 |[Derleyici Uyarısı (düzey 4) C4201](../../error-messages/compiler-warnings/compiler-warning-level-4-c4201.md)|kullanılan standart olmayan uzantısı: Adsız struct/birleşim|
 |[Derleyici Uyarısı (düzey 4) C4202](../../error-messages/compiler-warnings/compiler-warning-level-4-c4202.md)|kullanılan standart olmayan uzantısı: '...': prototip parametre adı listesi geçersiz|
 |C4203 uyarı derleyici|kullanılan standart olmayan uzantısı: statik üye değişkeni ile birleşim|
@@ -97,13 +95,13 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4237](../../error-messages/compiler-warnings/compiler-warning-level-1-c4237.md)|'anahtar sözcüğü' anahtar sözcüğü henüz desteklenir, ancak gelecekte kullanılmak üzere ayrılmış|
 |[Derleyici Uyarısı (düzey 4) C4238](../../error-messages/compiler-warnings/compiler-warning-level-4-c4238.md)|kullanılan standart olmayan uzantısı: lvalue kullanılan sınıf rvalue|
 |[Derleyici Uyarısı (düzey 4) C4239](../../error-messages/compiler-warnings/compiler-warning-level-4-c4239.md)|kullanılan standart olmayan uzantısı: 'belirteci': 'type1' öğesinden 'type2' dönüştürme|
-|[Derleyici Uyarısı (Düzey 3) C4240](../../error-messages/compiler-warnings/compiler-warning-level-3-c4240.md)|kullanılan standart olmayan uzantısı: erişim için 'şimdi 'acess_specifier1', daha önce onu olarak tanımlanan classname', 'access_specifier2' olarak tanımlanmıştı|
+|[Derleyici Uyarısı (düzey 3) C4240](../../error-messages/compiler-warnings/compiler-warning-level-3-c4240.md)|kullanılan standart olmayan uzantısı: erişim için 'şimdi 'acess_specifier1', daha önce onu olarak tanımlanan classname', 'access_specifier2' olarak tanımlanmıştı|
 |[Derleyici Uyarısı (düzey 4) C4242](../../error-messages/compiler-warnings/compiler-warning-level-4-c4242.md)|'identfier': 'type1' öğesinden 'type1', olası veri kaybını dönüştürme|
-|[Derleyici Uyarısı (Düzey 3) C4243](../../error-messages/compiler-warnings/compiler-warning-level-3-c4243.md)|'type1' 'type1' öğesinden 'conversion_type' dönüştürme var, ancak erişilemiyor|
-|[Derleyici Uyarısı (Düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md)|'conversion_type': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme|
-|[Derleyici Uyarısı (Düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md)|'conversion_type': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme|
+|[Derleyici Uyarısı (düzey 3) C4243](../../error-messages/compiler-warnings/compiler-warning-level-3-c4243.md)|'type1' 'type1' öğesinden 'conversion_type' dönüştürme var, ancak erişilemiyor|
+|[Derleyici Uyarısı (düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md)|'conversion_type': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme|
+|[Derleyici Uyarısı (düzey 3 ve 4) C4244](../../error-messages/compiler-warnings/compiler-warning-levels-3-and-4-c4244.md)|'conversion_type': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme|
 |[Derleyici Uyarısı (düzey 4) C4245](../../error-messages/compiler-warnings/compiler-warning-level-4-c4245.md)|'conversion_type': 'type1' dönüştürme 'type2', imzalı ve imzasız uyuşmazlığı|
-|[Derleyici Uyarısı (Düzey 2) C4250](../../error-messages/compiler-warnings/compiler-warning-level-2-c4250.md)|'classname': 'base_classname::member' hakimiyeti aracılığıyla devralır|
+|[Derleyici Uyarısı (düzey 2) C4250](../../error-messages/compiler-warnings/compiler-warning-level-2-c4250.md)|'classname': 'base_classname::member' hakimiyeti aracılığıyla devralır|
 |[Derleyici Uyarısı (düzey 1) C4251](../../error-messages/compiler-warnings/compiler-warning-level-1-c4251.md)|'tanımlayıcısı': 'object_type1' 'identifier1' 'Nesne_türü' 'identfier2' istemciler tarafından kullanılacak dll arabirimi olması gerekiyor|
 |[Derleyici Uyarısı (düzey 4) C4254](../../error-messages/compiler-warnings/compiler-warning-level-4-c4254.md)|'işleci': 'type2:field_bits', olası veri kaybını 'type1:field_bits' den dönüştürme|
 |[Derleyici Uyarısı (düzey 4) C4255](../../error-messages/compiler-warnings/compiler-warning-level-4-c4255.md)|'function': hiçbir işlev prototipi verilmedi: '()', '(void)' olarak dönüştürülüyor|
@@ -111,29 +109,29 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4258](../../error-messages/compiler-warnings/compiler-warning-level-1-c4258.md)|'değişkeni': tanımından döngü göz ardı için; çevreleyen kapsamdaki tanımından kullanılır|
 |[Derleyici Uyarısı (düzey 4) C4263](../../error-messages/compiler-warnings/compiler-warning-level-4-c4263.md)|'function': üye işlev hiçbir taban sınıfı sanal üye işlevini geçersiz kılmıyor|
 |[Derleyici Uyarısı (düzey 1) C4264](../../error-messages/compiler-warnings/compiler-warning-level-1-c4264.md)|'virtual_function': temel 'classname'; işlevinden sanal üyesi için kullanılabilir geçersiz kılma işlev gizli|
-|[Derleyici Uyarısı (Düzey 3) C4265](../../error-messages/compiler-warnings/compiler-warning-level-3-c4265.md)|'classname': sınıfı sanal işlevlere sahiptir, ancak yıkıcı değil virtual\n bu sınıfın örnekleri, değil destructed doğru|
+|[Derleyici Uyarısı (düzey 3) C4265](../../error-messages/compiler-warnings/compiler-warning-level-3-c4265.md)|'classname': sınıfı sanal işlevlere sahiptir, ancak yıkıcı değil virtual\n bu sınıfın örnekleri, değil destructed doğru|
 |[Derleyici Uyarısı (düzey 4) C4266](../../error-messages/compiler-warnings/compiler-warning-level-4-c4266.md)|'virtual_function': temel 'classname'; işlevinden sanal üyesi için kullanılabilir geçersiz kılma işlev gizli|
-|[Derleyici Uyarısı (Düzey 3) C4267](../../error-messages/compiler-warnings/compiler-warning-level-3-c4267.md)|'değişkeni': 'yazmak için ', olası veri kaybını 'size_t' dönüştürme|
+|[Derleyici Uyarısı (düzey 3) C4267](../../error-messages/compiler-warnings/compiler-warning-level-3-c4267.md)|'değişkeni': 'yazmak için ', olası veri kaybını 'size_t' dönüştürme|
 |[Derleyici Uyarısı (düzey 4) C4268](../../error-messages/compiler-warnings/compiler-warning-level-4-c4268.md)|'tanımlayıcısı': oluşturulan derleyici varsayılan kurucu ile başlatılmış 'const' statik/genel veri sıfırlarla nesnesini doldurur|
 |[Derleyici Uyarısı (düzey 1) C4269](../../error-messages/compiler-warnings/compiler-warning-level-1-c4269.md)|'tanımlayıcısı': oluşturulan derleyici varsayılan kurucu ile başlatılmış 'const' otomatik veri güvenilir olmayan sonuçlar üretir|
 |[Derleyici Uyarısı (düzey 1) C4272](../../error-messages/compiler-warnings/compiler-warning-level-1-c4272.md)|'function': __declspec(dllimport); işaretli yerel arama kuralı, bir işlev içeri aktarırken belirtmeniz gerekir.|
 |[Derleyici Uyarısı (düzey 1) C4273](../../error-messages/compiler-warnings/compiler-warning-level-1-c4273.md)|'function': tutarsız dll bağlantı|
 |Derleyici Uyarısı (düzey 1) C4274|göz ardı #ident; #pragma Açıklama (exestr, 'string') belgelerine bakın|
-|[Derleyici Uyarısı (Düzey 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll arabirim olmayan 'classkey' 'temel olarak kullanılan dll arabirimi için 'classkey' 'identifier2' identifier1'|
+|[Derleyici Uyarısı (düzey 2) C4275](../../error-messages/compiler-warnings/compiler-warning-level-2-c4275.md)|dll arabirim olmayan 'classkey' 'temel olarak kullanılan dll arabirimi için 'classkey' 'identifier2' identifier1'|
 |[Derleyici Uyarısı (düzey 1) C4276](../../error-messages/compiler-warnings/compiler-warning-level-1-c4276.md)|'function': sağlanan; hiçbir prototip Hiçbir parametre kabul|
 |Derleyici Uyarısı (düzey 1) C4277|içeri aktarılan 'classname::member' veri üyesi hem işlevi üye olarak maddesine; göz ardı veri üyesi|
-|[Derleyici Uyarısı (Düzey 3) C4278](../../error-messages/compiler-warnings/compiler-warning-level-3-c4278.md)|'tanımlayıcısı': Tür Kitaplığı 'Kitaplığı' nda tanımlayıcısıdır zaten bir makro; 'Yeniden Adlandır' niteleyicisi kullanın|
+|[Derleyici Uyarısı (düzey 3) C4278](../../error-messages/compiler-warnings/compiler-warning-level-3-c4278.md)|'tanımlayıcısı': Tür Kitaplığı 'Kitaplığı' nda tanımlayıcısıdır zaten bir makro; 'Yeniden Adlandır' niteleyicisi kullanın|
 |Derleyici Uyarısı (Düzey 3 ve düzey 4) C4279|'tanımlayıcısı': tanımlayıcısıdır Tür Kitaplığı 'Kitaplığı' nda bir anahtar sözcük; 'Yeniden Adlandır' niteleyicisi kullanın|
-|[Derleyici Uyarısı (Düzey 3) C4280](../../error-messages/compiler-warnings/compiler-warning-level-3-c4280.md)|'-> işleci', 'type' türü aracılığıyla kendi kendine özyinelemeli edildi|
-|[Derleyici Uyarısı (Düzey 3) C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md)|'type1' türü ile '-> işleci' özyineleme oluştu|
-|[Derleyici Uyarısı (Düzey 3) C4282](../../error-messages/compiler-warnings/compiler-warning-level-3-c4282.md)|ardından üzerinden türü 'type2'|
-|[Derleyici Uyarısı (Düzey 3) C4283](../../error-messages/compiler-warnings/compiler-warning-level-3-c4283.md)|ve türü 'typeN' aracılığıyla|
-|[Derleyici Uyarısı (Düzey 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|'identifier::operator -> için' dönüş türü iç gösterimini kullanarak uyguladıysanız yinelemelidir|
+|[Derleyici Uyarısı (düzey 3) C4280](../../error-messages/compiler-warnings/compiler-warning-level-3-c4280.md)|'-> işleci', 'type' türü aracılığıyla kendi kendine özyinelemeli edildi|
+|[Derleyici Uyarısı (düzey 3) C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md)|'type1' türü ile '-> işleci' özyineleme oluştu|
+|[Derleyici Uyarısı (düzey 3) C4282](../../error-messages/compiler-warnings/compiler-warning-level-3-c4282.md)|ardından üzerinden türü 'type2'|
+|[Derleyici Uyarısı (düzey 3) C4283](../../error-messages/compiler-warnings/compiler-warning-level-3-c4283.md)|ve türü 'typeN' aracılığıyla|
+|[Derleyici Uyarısı (düzey 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|'identifier::operator -> için' dönüş türü iç gösterimini kullanarak uyguladıysanız yinelemelidir|
 |[Derleyici Uyarısı (düzey 1) C4286](../../error-messages/compiler-warnings/compiler-warning-level-1-c4286.md)|'derived_type': 'line_number' satırındaki taban sınıfı ('taban_türü') tarafından yakalandı|
-|[Derleyici Uyarısı (Düzey 3) C4287](../../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md)|'operator': işaretsiz/negatif sabit uyuşmazlığı|
+|[Derleyici Uyarısı (düzey 3) C4287](../../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md)|'operator': işaretsiz/negatif sabit uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 1) C4288](../../error-messages/compiler-warnings/compiler-warning-level-1-c4288.md)|kullanılan standart olmayan uzantısı: 'değişkeni': for döngüsü denetim değişkeni için-döngüde bildirilen for döngüsü kapsamı dışındadır; kullanılır Dış kapsamdaki bildirimiyle çakışıyor|
 |[Derleyici Uyarısı (düzey 4) C4289](../../error-messages/compiler-warnings/compiler-warning-level-4-c4289.md)|kullanılan standart olmayan uzantısı: 'değişkeni': for döngüsü denetim değişkeni için-döngüde bildirilen for döngüsü kapsamı dışında kullanılır|
-|[Derleyici Uyarısı (Düzey 3) C4290](../../error-messages/compiler-warnings/compiler-warning-level-3-c4290.md)|C++ özel durum belirtimi bir işlevi belirtmek üzere dışında göz ardı __declspec(nothrow) değil|
+|[Derleyici Uyarısı (düzey 3) C4290](../../error-messages/compiler-warnings/compiler-warning-level-3-c4290.md)|C++ özel durum belirtimi bir işlevi belirtmek üzere dışında göz ardı __declspec(nothrow) değil|
 |[Derleyici Uyarısı (düzey 1) C4291](../../error-messages/compiler-warnings/compiler-warning-level-1-c4291.md)|'bildirimi': bulundu; hiçbir eşleşen delete işleci başlatma bir özel durum oluşturursa bellek serbest bırakılmaz|
 |[Derleyici Uyarısı (düzey 1) C4293](../../error-messages/compiler-warnings/compiler-warning-level-1-c4293.md)|'shift_operator': kaydırma sayısı negatif ya da çok büyük, undefined davranışı|
 |[Derleyici Uyarısı (düzey 4) C4295](../../error-messages/compiler-warnings/compiler-warning-level-4-c4295.md)|'array': dizidir sonlandırma bir null karakter dahil etmek için çok küçük|
@@ -142,14 +140,14 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |Derleyici Uyarısı (düzey 4) C4298|'tanımlayıcısı': Tür Kitaplığı 'Kitaplığı' nda tanımlayıcısıdır zaten bir makro; '__tanımlayıcı' yeniden adlandırma|
 |Derleyici Uyarısı (düzey 4) C4299|'tanımlayıcısı': tanımlayıcısıdır Tür Kitaplığı 'Kitaplığı' nda bir anahtar sözcük; '__tanımlayıcı' yeniden adlandırma|
 |C4301 uyarı derleyici|'derived_class::function': sanal işlevi geçersiz kılma yalnızca farklı 'base_class:function' const/volatile niteleyicisiyle|
-|[Derleyici Uyarısı (Düzey 2) C4302](../../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md)|'conversion': 'type1' öğesinden 'type2' öğesine kesilme|
+|[Derleyici Uyarısı (düzey 2) C4302](../../error-messages/compiler-warnings/compiler-warning-level-2-c4302.md)|'conversion': 'type1' öğesinden 'type2' öğesine kesilme|
 |C4303 uyarı derleyici|C style_cast' öğesinden 'type2' ' type1' kullanım dışı bırakıldı, static_cast, __try_cast veya dynamic_cast kullanın|
 |[Derleyici Uyarısı (düzey 1) C4305](../../error-messages/compiler-warnings/compiler-warning-level-1-c4305.md)|'conversion': 'type1' öğesinden 'type2' öğesine kesilme|
-|[Derleyici Uyarısı (Düzey 3) C4306](../../error-messages/compiler-warnings/compiler-warning-level-3-c4306.md)|'dönüştürme': 'type1' dan büyük boyutta dönüştürme 'type2'|
-|[Derleyici Uyarısı (Düzey 2) C4307](../../error-messages/compiler-warnings/compiler-warning-level-2-c4307.md)|'işleci': tam sayı sabit taşması|
-|[Derleyici Uyarısı (Düzey 2) C4308](../../error-messages/compiler-warnings/compiler-warning-level-2-c4308.md)|İmzasız türe dönüştürülüp negatif tamsayı sabiti|
-|[Derleyici Uyarısı (Düzey 2) C4309](../../error-messages/compiler-warnings/compiler-warning-level-2-c4309.md)|'dönüştürme': sabit değer kesilmesi|
-|[Derleyici Uyarısı (Düzey 3) C4310](../../error-messages/compiler-warnings/compiler-warning-level-3-c4310.md)|Cast sabit değeri tamsayıya dönüştürür|
+|[Derleyici Uyarısı (düzey 3) C4306](../../error-messages/compiler-warnings/compiler-warning-level-3-c4306.md)|'dönüştürme': 'type1' dan büyük boyutta dönüştürme 'type2'|
+|[Derleyici Uyarısı (düzey 2) C4307](../../error-messages/compiler-warnings/compiler-warning-level-2-c4307.md)|'işleci': tam sayı sabit taşması|
+|[Derleyici Uyarısı (düzey 2) C4308](../../error-messages/compiler-warnings/compiler-warning-level-2-c4308.md)|İmzasız türe dönüştürülüp negatif tamsayı sabiti|
+|[Derleyici Uyarısı (düzey 2) C4309](../../error-messages/compiler-warnings/compiler-warning-level-2-c4309.md)|'dönüştürme': sabit değer kesilmesi|
+|[Derleyici Uyarısı (düzey 3) C4310](../../error-messages/compiler-warnings/compiler-warning-level-3-c4310.md)|Cast sabit değeri tamsayıya dönüştürür|
 |[Derleyici Uyarısı (düzey 1) C4311](../../error-messages/compiler-warnings/compiler-warning-level-1-c4311.md)|'değişkeni': 'type2' 'type1' öğesinden işaretçi kesme|
 |[Derleyici Uyarısı (düzey 1) C4312](../../error-messages/compiler-warnings/compiler-warning-level-1-c4312.md)|'işlemi': 'type1' dan büyük boyutta dönüştürme 'type2'|
 |[Derleyici Uyarısı (düzey 1) C4313](../../error-messages/compiler-warnings/compiler-warning-level-1-c4313.md)|'function': biçim dizesi ' format_specifier' bağımsız değişkeni ' type' türünde ' argument_number' ile çakışıyor|
@@ -170,7 +168,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4329](../../error-messages/compiler-warnings/compiler-warning-level-1-c4329.md)|__declspec(align()) enum göz ardı edilir|
 |Derleyici Uyarısı (düzey 1) C4330|Bölüm göz ardı ' %s' için '%s' özniteliği|
 |[Derleyici Uyarısı (düzey 1) C4333](../../error-messages/compiler-warnings/compiler-warning-level-1-c4333.md)|'shift_operator': çok büyük bir miktarını, veri kaybı tarafından sağa kaydırma|
-|[Derleyici Uyarısı (Düzey 3) C4334](../../error-messages/compiler-warnings/compiler-warning-level-3-c4334.md)|'shift_operator': 32-bit kaydırma sonucunu örtük olarak dönüştürülen 64 bit (64-bit kaydırma hedeflenen oldu mu?)|
+|[Derleyici Uyarısı (düzey 3) C4334](../../error-messages/compiler-warnings/compiler-warning-level-3-c4334.md)|'shift_operator': 32-bit kaydırma sonucunu örtük olarak dönüştürülen 64 bit (64-bit kaydırma hedeflenen oldu mu?)|
 |[Derleyici Uyarısı C4335](../../error-messages/compiler-warnings/compiler-warning-c4335.md)|Mac dosya biçimi algılandı: Lütfen kaynak dosyasını DOS veya UNIX biçimine Dönüştür|
 |[Derleyici Uyarısı (düzey 4) C4336](../../error-messages/compiler-warnings/compiler-warning-level-4-c4336.md)|Çapraz referanslı Kitaplığı 'library1' 'library2' almadan önce içeri aktarma türü|
 |[Derleyici Uyarısı (düzey 4) C4337](../../error-messages/compiler-warnings/compiler-warning-level-4-c4337.md)|'library2' Çapraz referanslı tür kitaplığında 'library1' otomatik olarak içeri aktarılan|
@@ -186,10 +184,10 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |Derleyici Uyarısı (düzey 1) C4352|' % $t ': önceden tanımlanmış iç işlevi|
 |[Derleyici Uyarısı (düzey 1) C4353](../../error-messages/compiler-warnings/compiler-warning-level-1-c4353.md)|kullanılan standart olmayan uzantısı: sabit 0 olarak işlev ifadesi.  Bunun yerine '__noop' işlevini iç kullanın|
 |[Derleyici Uyarısı C4355](../../error-messages/compiler-warnings/compiler-warning-c4355.md)Derleyici Uyarısı (düzey 1 ve düzey 4) C4355|'this': temel üye Başlatıcı listede kullanılan|
-|[Derleyici Uyarısı (Düzey 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'member': statik veri üyesi türetilmiş sınıf başlatılamıyor|
-|[Derleyici Uyarısı (Düzey 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|Temsilci için biçimsel bağımsız değişken listesinde bulunan param dizisi bağımsız 'function' oluşturulurken göz ardı 'temsilci'|
+|[Derleyici Uyarısı (düzey 2) C4356](../../error-messages/compiler-warnings/compiler-warning-level-2-c4356.md)|'member': statik veri üyesi türetilmiş sınıf başlatılamıyor|
+|[Derleyici Uyarısı (düzey 3) C4357](../../error-messages/compiler-warnings/compiler-warning-level-3-c4357.md)|Temsilci için biçimsel bağımsız değişken listesinde bulunan param dizisi bağımsız 'function' oluşturulurken göz ardı 'temsilci'|
 |[Derleyici Uyarısı (düzey 1) C4358](../../error-messages/compiler-warnings/compiler-warning-level-1-c4358.md)|'işleci': dönüş türü, birleştirilmiş temsilcilerin değil 'void'; döndürülen değer tanımlı değil|
-|[Derleyici Uyarısı (Düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'type': hizalama belirticisi gerçek hizalama ('hizalama')'dan küçük ve yok sayılacak.|
+|[Derleyici Uyarısı (düzey 3) C4359](../../error-messages/compiler-warnings/compiler-warning-level-3-c4359.md)|'type': hizalama belirticisi gerçek hizalama ('hizalama')'dan küçük ve yok sayılacak.|
 |Derleyici Uyarısı (Düzey 2) C4362|'%$S': hizalama 8 bayttan büyük CLR tarafından desteklenmiyor|
 |[Derleyici Uyarısı (düzey 1) C4364](../../error-messages/compiler-warnings/compiler-warning-level-1-c4364.md)|# derleme sırasında daha önceden görülen'assembly ' using ' location'('line_number') as_friend özniteliğini; uygulanmamış as_friend|
 |[Derleyici Uyarısı (düzey 4) C4365](../../error-messages/compiler-warnings/compiler-warning-level-4-c4365.md)|'ifadesi': 'type1' dönüştürme 'type2', imzalı ve imzasız uyuşmazlığı|
@@ -214,7 +212,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |Derleyici Uyarısı (Düzey 3) C4387|'%s': olarak kabul edildi|
 |Derleyici Uyarısı (düzey 4) C4388|'%$L': İmzalı ve imzasız uyuşmazlığı|
 |[Derleyici Uyarısı (düzey 4) C4389](../../error-messages/compiler-warnings/compiler-warning-level-4-c4389.md)|'işleci': İmzalı ve imzasız uyuşmazlığı|
-|[Derleyici Uyarısı (Düzey 3) C4390](../../error-messages/compiler-warnings/compiler-warning-level-3-c4390.md)|';': boş bulundu; denetimli deyimi Bu amaç mi?|
+|[Derleyici Uyarısı (düzey 3) C4390](../../error-messages/compiler-warnings/compiler-warning-level-3-c4390.md)|';': boş bulundu; denetimli deyimi Bu amaç mi?|
 |[Derleyici Uyarısı (düzey 1) C4391](../../error-messages/compiler-warnings/compiler-warning-level-1-c4391.md)|'function_signature': iç işlevi için dönüş türü yanlış beklenen 'type'|
 |[Derleyici Uyarısı (düzey 1) C4392](../../error-messages/compiler-warnings/compiler-warning-level-1-c4392.md)|'function_signature': yanlış sayıda bağımsız değişken iç işlev, beklenen 'argument_count' bağımsız değişkenleri|
 |[Derleyici Uyarısı (düzey 1) C4393](../../error-messages/compiler-warnings/compiler-warning-level-1-c4393.md)|'değişkeni': const 'sabit değeri' veri üyesi üzerinde; hiçbir etkisi yoktur göz ardı|
@@ -222,5 +220,5 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4395](../../error-messages/compiler-warnings/compiler-warning-level-1-c4395.md)|'function': üye işlevi initonly veri üyesi 'member' bir kopyası üzerinde çağrılan|
 |Derleyici Uyarısı (Düzey 2) C4396|'%$S': bir arkadaş bildirimi işlevi şablonu özelleştirmesi için başvurduğunda satır içi belirticisi kullanılamaz|
 |[Derleyici Uyarısı (düzey 1) C4397](../../error-messages/compiler-warnings/compiler-warning-level-1-c4397.md)|DefaultCharSetAttribute göz ardı edilir|
-|[Derleyici Uyarısı (Düzey 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'değişkeni': işlem içi genel nesne ile birden çok appdomains oluşturuyor; düzgün çalışmayabilir __declspec(AppDomain) kullanmayı düşünün|
+|[Derleyici Uyarısı (düzey 3) C4398](../../error-messages/compiler-warnings/compiler-warning-level-3-c4398.md)|'değişkeni': işlem içi genel nesne ile birden çok appdomains oluşturuyor; düzgün çalışmayabilir __declspec(AppDomain) kullanmayı düşünün|
 |[Derleyici Uyarısı (düzey 1) C4399](../../error-messages/compiler-warnings/compiler-warning-level-1-c4399.md)|'simgesi': işlem içi simgesi işaretlenmemiş/CLR ile derlendiğinde __declspec('dllimport') ile: Saf|

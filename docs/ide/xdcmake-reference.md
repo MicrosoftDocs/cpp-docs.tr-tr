@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad0744da891c93dab44c980ed10aa4213a4dddb3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ea635d701b4dea2471067072083d9568f11f3d82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="xdcmake-reference"></a>XDCMake Başvurusu
 xdcmake.exe .xdc dosyalarını bir .xml dosyasına derler bir programdır. Kaynak kodu ile derlenen bir .xdc dosyası her kaynak kodu dosyasının Visual C++ derleyicisi tarafından oluşturulduğunda [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) ve kaynak kodu dosyasının XML etiketleriyle artırıldığında belge açıklamaları içerdiğinde.  
@@ -60,4 +61,4 @@ xdcmake.exe .xdc dosyalarını bir .xml dosyasına derler bir programdır. Kayna
  Bkz: [belge açıklamaları için önerilen etiketler](../ide/recommended-tags-for-documentation-comments-visual-cpp.md) belge açıklamaları için kaynak kodu dosyaları ekleme hakkında daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [XML belgeleri](../ide/xml-documentation-visual-cpp.md)
+ [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

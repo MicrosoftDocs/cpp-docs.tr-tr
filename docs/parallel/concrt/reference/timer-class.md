@@ -28,11 +28,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9a7771afe4a93c6c4dafcd090276202732d1ad8b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ffc58ce0354b4a3226db82a95d5c0b4cc7bc09f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
 A `timer` ileti bloğu tek hedef `source_block` hedefine belirtilen süre geçtikten sonra veya belirli aralıklarla ileti gönderme yapabilir.  
@@ -264,4 +265,4 @@ timer(
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

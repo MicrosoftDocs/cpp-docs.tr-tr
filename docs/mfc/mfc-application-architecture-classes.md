@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0b809daac194e1fed3abe98452c02f1521111fee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 623775d6c3306ba4afdb01eb78ea70b05f7a3365
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-application-architecture-classes"></a>MFC Uygulama Mimarisi Sınıfları
 Bu kategorideki sınıfları framework uygulaması mimarisini katkıda. Bunların çoğu uygulamaları için ortak işlevselliği sağlar. Uygulamaya özel işlevsellik eklemek için Framework'te doldurun. Genellikle, yeni sınıflar mimarisi sınıflarından türetme ve yeni üye ekleme veya var olan üye işlevlerini geçersiz kılma bunu.  

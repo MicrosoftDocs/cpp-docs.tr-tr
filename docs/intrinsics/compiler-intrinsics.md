@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 53d6986d569bbf928282dce9e9e1cba0601bc4ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ffbe20fb6c2b35cef46f975e99191bf96fdc6b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
 Çoğu işlevleri kitaplıklarında yer alır, ancak bazı işlevler yerleşiktir (diğer bir deyişle, iç) derleyici. Bunlar, iç işlevler veya iç bilgileri olarak adlandırılır.  
@@ -42,18 +43,18 @@ ms.lasthandoff: 10/24/2017
   
  Aşağıdaki bölümlerde üzerinde çeşitli mimarileri kullanılabilir tüm iç bilgi listesi. İç bilgiler belirli hedef işlemcinizin nasıl çalıştığını daha fazla bilgi için üreticinin başvuru belgelerine bakın.  
   
--   [ARM iç bilgileri](../intrinsics/arm-intrinsics.md)  
+-   [ARM İç Bilgileri](../intrinsics/arm-intrinsics.md)  
   
--   [x86 iç bilgi listesi](../intrinsics/x86-intrinsics-list.md)  
+-   [x86 İç Bilgi Listesi](../intrinsics/x86-intrinsics-list.md)  
   
--   [x64 (amd64) iç bilgi listesi](../intrinsics/x64-amd64-intrinsics-list.md)  
+-   [x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)  
   
--   [İç bilgiler kullanılabilir tüm mimarileri hakkında](../intrinsics/intrinsics-available-on-all-architectures.md)  
+-   [Tüm Mimarilerde Kullanılabilen İç Bilgiler](../intrinsics/intrinsics-available-on-all-architectures.md)  
   
--   [İç işlevler alfabetik listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)  
+-   [İç İşlevlerin Alfabetik Listesi](../intrinsics/alphabetical-listing-of-intrinsic-functions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM Assembler başvurusu](../assembler/arm/arm-assembler-reference.md)   
  [Microsoft Macro Assembler başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)
+ [C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)

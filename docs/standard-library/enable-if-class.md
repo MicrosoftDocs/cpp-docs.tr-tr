@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7753c840fe1b4c9850408b53fa0adf09ed1bc121
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4df9da47925919a005d3c235d35f57f54a3568aa
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 Koşullu SFINAE için bir tür örneği aşırı yükleme çözümü sağlar. İç içe geçmiş typedef `enable_if<Condition,Type>::type` var — ve eşanlamlısı `Type`— yalnızca ve yalnızca, `Condition` olan `true`.  
@@ -52,7 +53,7 @@ template <bool B, class T = void>
 using enable_if_t = typename enable_if<B,T>::type;
 ```  
   
- C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` aşırı resolution adayları kaldırmak için kullanılan — diğer bir deyişle, aşırı kümesi culls — böylece bir tanım başka lehinde reddedilebilir. Bu SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değildir](http://go.microsoft.com/fwlink/LinkId=394798) wikipedia'da.  
+ C++'da, şablon parametre değiştirme hatası kendi içinde bir hata değildir — bu olarak adlandırılır *SFINAE* (değiştirme hatası bir hata değildir). Genellikle, `enable_if` aşırı resolution adayları kaldırmak için kullanılan — diğer bir deyişle, aşırı kümesi culls — böylece bir tanım başka lehinde reddedilebilir. Bu SFINAE davranışı için uygundur. SFINAE hakkında daha fazla bilgi için bkz: [değiştirme hatası bir hata değildir](http://go.microsoft.com/fwlink/p/?linkid=394798) wikipedia'da.  
   
  Dört örnek senaryolar verilmiştir:  
   
@@ -142,7 +143,7 @@ func(make_pair("foo", "bar"));
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 
 
 

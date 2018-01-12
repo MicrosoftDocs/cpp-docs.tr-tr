@@ -24,11 +24,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6726596a22532bfe2095cca2e021afefaef80fec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d85ea58588ea889fc8294b23604d47aef725135
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-how-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarını Kullanma
 İş parçacıkları arasında kaynak erişim eşitleme bir ortak birden çok iş parçacıklı uygulamalar yazılırken sorunudur. İki veya daha fazla sahip aynı anda aynı veri istenmeyen ve beklenmeyen sonuçlara yol açabilir erişim iş parçacıkları. Örneğin, başka bir iş parçacığı aynı yapısını içeriğini okuma sırasında bir iş parçacığı yapının içeriklerini güncelleştirme. Hangi veriyi okuma iş parçacığının alacağı bilinmiyor: eski verileri, yeni yazılmış verileri veya muhtemelen her ikisinin bir karışımıyla. MFC bir dizi eşitleme ve bu sorunun çözümüne yardımcı olmak için eşitleme erişim sınıfları sağlar. Bu konu, mevcut sınıfları ve bunları tipik birden çok iş parçacıklı uygulamada iş parçacığı açısından güvenli sınıflar oluşturmak için nasıl kullanılacağını açıklar.  
@@ -65,4 +66,4 @@ singleLock.Unlock();
  Farklı durumlarda kullanılacak hangi eşitleme sınıfının belirleme hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz: [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz: [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 849f430caaaf8dacef53ecedd5dc4897041b624a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46b4962e30a6990f6de2c67437fc2af3989c2407
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencydirect3d-namespace"></a>Concurrency::direct3d Ad Alanı
 `direct3d` Ad alanı, D3D birlikte çalışabilirlik desteği işlevleri sağlar. Bu işlem AMP kodda D3D kaynaklarının sorunsuz kullanımını sağlar yanı sıra Ara yedek kopya oluşturmak zorunda kalmadan D3D kodda AMP içinde oluşturulan kaynakları kullanılmasına izin verin. Artımlı olarak C++ AMP kullanarak DirectX uygulamalarınızı işlem yoğunluklu bölümlerini hızlandırmak ve AMP hesaplamalar üretilen veriler üzerinde D3D API kullanın.  
@@ -41,13 +42,13 @@ namespace direct3d;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[scoped_d3d_access_lock sınıfı](scoped-d3d-access-lock-class.md)|RAII sarmalayıcı D3D erişim kilit için bir `accelerator_view` nesnesi.|  
+|[scoped_d3d_access_lock Sınıfı](scoped-d3d-access-lock-class.md)|RAII sarmalayıcı D3D erişim kilit için bir `accelerator_view` nesnesi.|  
   
 ### <a name="structures"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[adopt_d3d_access_lock_t yapısı](adopt-d3d-access-lock-t-structure.md)|D3D erişim kilit göstermek için etiket türünü benimsenen edinilen yerine.|  
+|[adopt_d3d_access_lock_t Yapısı](adopt-d3d-access-lock-t-structure.md)|D3D erişim kilit göstermek için etiket türünü benimsenen edinilen yerine.|  
   
 ### <a name="functions"></a>İşlevler  
   
@@ -85,4 +86,4 @@ namespace direct3d;
  **Namespace:** eşzamanlılık  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

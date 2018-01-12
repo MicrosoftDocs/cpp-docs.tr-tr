@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e457d7369195f20311ac444cb37c74ac077bfd87
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: e431ce20361a9a7d3d05676d1b9da01b98c07d5a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="predefined-symbol-ids"></a>Önceden Tanımlanmış Sembol Kimlikleri
 Proje türüne bağlı olarak yeni bir proje başladığınızda, bazı sembol kimlikleri kullanımınız için önceden tanımlanmıştır. Bu simge kimlikleri çeşitli kitaplıkları ve MFC gibi proje türleri destekler. Bunlar genellikle herhangi bir uygulama veya donanım öğelerinin fare veya yazıcı gibi eylemleri içinde yer alan ortak görevleri temsil eder.  
@@ -29,11 +32,11 @@ Proje türüne bağlı olarak yeni bir proje başladığınızda, bazı sembol k
   
  Bu kitaplıklar önceden tanımlanmış projenin bir parçası görünür semboller:  
   
--   [MFC önceden tanımlanmış semboller](../windows/mfc-predefined-symbols.md)  
+-   [MFC Önceden Tanımlanmış Semboller](../windows/mfc-predefined-symbols.md)  
   
--   [ATL önceden tanımlanmış semboller](../windows/atl-predefined-symbols.md)  
+-   [ATL Önceden Tanımlanmış Semboller](../windows/atl-predefined-symbols.md)  
   
--   [Win32 önceden tanımlanmış semboller](../windows/win32-predefined-symbols.md)  
+-   [Win32 Önceden Tanımlanmış Semboller](../windows/win32-predefined-symbols.md)  
   
     > [!NOTE]
     >  Önceden tanımlanmış semboller her zaman salt okunurdur.  
@@ -44,4 +47,4 @@ Proje türüne bağlı olarak yeni bir proje başladığınızda, bazı sembol k
  Win32, MFC ve ATL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)
+ [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

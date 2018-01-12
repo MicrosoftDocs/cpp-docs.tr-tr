@@ -19,11 +19,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3113ea5c2644c3e06a6435b7f088943ff22a2207
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 30503886c3a4af047226af88ee16e1132e9d0896
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autogcrootautogcroot"></a>auto_gcroot::auto_gcroot
 `auto_gcroot` Oluşturucusu.  
@@ -149,4 +152,4 @@ done
  [auto_gcroot üyeleri](../dotnet/auto-gcroot-members.md)   
  [auto_gcroot::Attach](../dotnet/auto-gcroot-attach.md)   
  [auto_gcroot::operator =](../dotnet/auto-gcroot-operator-assign.md)   
- [auto_gcroot:: ~ auto_gcroot](../dotnet/auto-gcroot-tilde-auto-gcroot.md)
+ [auto_gcroot::~auto_gcroot](../dotnet/auto-gcroot-tilde-auto-gcroot.md)

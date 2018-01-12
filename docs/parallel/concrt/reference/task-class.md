@@ -24,11 +24,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a44245ea212a770902787e01d1896612b7cb37b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ea618ca6a5784b44666c70d79bb10b2e9f6e394
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 Paralel Desen kitaplığı (PPL) `task` sınıfı. A `task` nesnesi paralel eşzamanlılık çalışma zamanı'nda paralel algoritmaları tarafından üretilen iş ve zaman uyumsuz olarak ve diğer görevleri ile aynı anda yürütülebilecek iş temsil eder. Bir sonuç türü üretir `_ResultType` başarıyla tamamlandığında. Tür görevleri `task<void>` hiçbir sonucu. Bir görev sırasında beklenen ve diğer görevler bağımsız olarak iptal. Ayrıca devamlılıklar kullanarak diğer görevleri ile birleştirilebilen ( `then`) ve birleştirme ( `when_all`) ve seçim ( `when_any`) desenleri.  
@@ -70,7 +71,7 @@ class task;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Al](#get)|Fazla Yüklendi. Bu görev üretilen sonuç döndürür. Görev bir terminal değilse durumunda, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.|  
+|[get](#get)|Fazla Yüklendi. Bu görev üretilen sonuç döndürür. Görev bir terminal değilse durumunda, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.|  
 |[is_apartment_aware](#is_apartment_aware)|Görev bir Windows çalışma zamanı açar olup olmadığını belirler `IAsyncInfo` arabirim ya da böyle bir görevden descended.|  
 |[is_done](#is_done)|Görev tamamlandı, belirler.|  
 |[Zamanlayıcı](#scheduler)|Bu Görev Zamanlayıcı'yı döndürür|  
@@ -81,7 +82,7 @@ class task;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator! =](#operator_neq)|Fazla Yüklendi. İki olup olmadığını belirleyen `task` nesneleri farklı iç görevler temsil eder.|  
+|[operator!=](#operator_neq)|Fazla Yüklendi. İki olup olmadığını belirleyen `task` nesneleri farklı iç görevler temsil eder.|  
 |[işleç =](#operator_eq)|Fazla Yüklendi. Bir dosyanın içeriğini değiştirir `task` başka bir nesne.|  
 |[operator ==](#operator_eq_eq)|Fazla Yüklendi. İki olup olmadığını belirleyen `task` nesneleri aynı iç görev temsil eder.|  
   
@@ -328,4 +329,4 @@ task_status wait() const;
 >  İçinde bir [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] uygulama, çağırmayın `wait` STA üzerinde çalışan kod Aksi halde, çalışma zamanı oluşturur [concurrency::invalid_operation](invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığının engeller ve uygulama yanıt veremez duruma neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task](#get) bir görev tabanlı devamlılığı öncül görev sonucu almak için yöntem.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

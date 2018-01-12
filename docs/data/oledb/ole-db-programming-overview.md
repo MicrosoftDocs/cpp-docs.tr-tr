@@ -16,11 +16,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1f3d97dda514b3cdb0773adb3d7830e611bca3d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 17e80f5a1fbe94a1d2bd4c7fc3b77525a77bbd4e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-programming-overview"></a>OLE DB Programlamaya Genel Bakış
 OLE DB yüksek performanslı, COM tabanlı veritabanı teknolojisidir. Formun, depolandığı bakılmaksızın verilere erişmek için genel bir yol sağlar. Tipik iş durumda çok büyük miktarda bilgi dışında şirket veritabanlarını depolanır. Bu bilgiler, dosya sistemlerinde (örneğin, FAT veya NTFS) dizine-sıralı dosyaları, kişisel veritabanları (örneğin, erişimi), elektronik tablolar (örneğin, Excel), proje planlama uygulamaları (örneğin, Proje) ve e-posta (örneğin, Outlook) bulunur. Veri deposunda bir OLE DB sağlayıcısı olduğu sürece OLE DB veri deposu herhangi bir tür aynı şekilde erişmenize olanak sağlar.

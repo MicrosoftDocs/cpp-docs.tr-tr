@@ -48,11 +48,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c1ac3ca255818bab745b7aa320ee69922359c14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8f52734e26d1965811aded67bc1e1dde6a2c28bc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="list-box-styles"></a>Liste Kutusu Stilleri
 -   **Lbs_dısablenoscroll** zaman liste kutusunda kaydırma için yeterli öğeleri içermiyor çubuğu devre dışı bırakılmış bir dikey kaydırma liste kutusu gösterir. Liste kutusu yeterli öğeleri içermediğinde, bu stili kaydırma çubuğu gizlenir.  

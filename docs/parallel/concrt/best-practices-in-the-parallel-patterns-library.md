@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ea611f555abe21a6ad3196bca287a7bd4ff00aa4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 40629b25ebcc954ac19389fbc0abb3aef6e9374a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Paralel Desen Kitaplığı'ndaki En İyi Yöntemler
 Bu belgede etkili kullanımı paralel Desen kitaplığı (PPL) biri için en iyi şekilde nasıl açıklanmaktadır. PPL'de hassas paralellik gerçekleştirmek için genel amaçlı kapsayıcıları ve nesneleri algoritmaları sağlar.  
@@ -286,5 +287,5 @@ Container 1: Freeing resources...Exiting program...
  [Nasıl yapılır: paralel bir döngüden kurtulmak için İptal kullanın](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)   
  [Nasıl yapılır: performansı arttırmak için combinable kullanma](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)   
  [Zaman uyumsuz aracılar Kitaplığı'ndaki en iyi yöntemler](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)   
- [Eşzamanlılık Çalışma zamanındaki genel en iyi yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
+ [Eşzamanlılık Çalışma Zamanındaki Genel En İyi Yöntemler](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
 

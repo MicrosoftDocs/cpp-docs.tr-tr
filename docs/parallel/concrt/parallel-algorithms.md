@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 191d368d6152f5eb8bd9bb3c7ff7e77a54182a2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cbabb499d67a2248ebaefa5cbc787afe2c6cfc08
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parallel-algorithms"></a>Paralel Algoritmalar
 Paralel Desen kitaplığı (PPL) eşzamanlı olarak veri koleksiyonlar üzerinde çalışmayı gerçekleştirmek algoritmaları sağlar. Bu algoritmalar C++ Standart Kitaplığı tarafından sağlanan benzer.  
@@ -318,14 +319,14 @@ Paralel Desen kitaplığı (PPL) eşzamanlı olarak veri koleksiyonlar üzerinde
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Nasıl yapılır: parallel_for döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-loop.md)|Nasıl kullanılacağını gösterir `parallel_for` matris çarpım gerçekleştirmek için algoritması.|  
-|[Nasıl yapılır: parallel_for_each döngüsü yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md)|Nasıl kullanılacağını gösterir `parallel_for_each` asal sayılar sayısı işlem için algoritma bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.|  
-|[Nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic Sıralama algoritması performansını artırmak için algoritması.|  
-|[Nasıl yapılır: paralel işlemleri yürütmek için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlemler gerçekleştiren bir program performansını artırmak için algoritması.|  
-|[Nasıl yapılır: eşleme gerçekleştirme ve işlemleri paralel azaltın](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)|Nasıl kullanılacağını gösterir `parallel_transform` ve `parallel_reduce` bir eşleme gerçekleştirme ve dosyaları sözcükleri oluşumlarını sayar işlemi azaltmak için algoritmaları.|  
-|[Paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modelidir PPL açıklar.|  
-|[PPL'de iptal](cancellation-in-the-ppl.md)|PPL'de, paralel iş iptal etme ve bir görev grubu ne zaman iptal belirleme iptal rolünü açıklar.|  
-|[Özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Özel durum eşzamanlılık çalışma zamanı'nda işleme rolünü açıklar.|  
+|[Nasıl yapılır: parallel_for Döngüsü Yazma](../../parallel/concrt/how-to-write-a-parallel-for-loop.md)|Nasıl kullanılacağını gösterir `parallel_for` matris çarpım gerçekleştirmek için algoritması.|  
+|[Nasıl yapılır: parallel_for_each Döngüsü Yazma](../../parallel/concrt/how-to-write-a-parallel-for-each-loop.md)|Nasıl kullanılacağını gösterir `parallel_for_each` asal sayılar sayısı işlem için algoritma bir [std::array](../../standard-library/array-class-stl.md) paralel nesne.|  
+|[Nasıl yapılır: Paralel Sıralama Rutini Yazmak için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bitonic Sıralama algoritması performansını artırmak için algoritması.|  
+|[Nasıl yapılır: Paralel İşlemleri Yürütmek için parallel_invoke Kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)|Nasıl kullanılacağını gösterir `parallel_invoke` bir paylaşılan veri kaynağı üzerinde birden çok işlemler gerçekleştiren bir program performansını artırmak için algoritması.|  
+|[Nasıl yapılır: Eşleme Gerçekleştirme ve İşlemleri Paralel Olarak Azaltma](../../parallel/concrt/how-to-perform-map-and-reduce-operations-in-parallel.md)|Nasıl kullanılacağını gösterir `parallel_transform` ve `parallel_reduce` bir eşleme gerçekleştirme ve dosyaları sözcükleri oluşumlarını sayar işlemi azaltmak için algoritmaları.|  
+|[Paralel Desen Kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md)|Ölçeklenebilirlik ve kolaylığı eşzamanlı uygulamaları geliştirmek için kullanım yükseltir kesinlik temelli bir programlama modelidir PPL açıklar.|  
+|[PPL'de İptal](cancellation-in-the-ppl.md)|PPL'de, paralel iş iptal etme ve bir görev grubu ne zaman iptal belirleme iptal rolünü açıklar.|  
+|[Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Özel durum eşzamanlılık çalışma zamanı'nda işleme rolünü açıklar.|  
   
 ## <a name="reference"></a>Başvuru  
 
@@ -336,13 +337,13 @@ Paralel Desen kitaplığı (PPL) eşzamanlı olarak veri koleksiyonlar üzerinde
  [parallel_invoke işlevi](reference/concurrency-namespace-functions.md#parallel_invoke)  
 
   
- [affinity_partitioner sınıfı](../../parallel/concrt/reference/affinity-partitioner-class.md)  
+ [affinity_partitioner Sınıfı](../../parallel/concrt/reference/affinity-partitioner-class.md)  
   
- [auto_partitioner sınıfı](../../parallel/concrt/reference/auto-partitioner-class.md)  
+ [auto_partitioner Sınıfı](../../parallel/concrt/reference/auto-partitioner-class.md)  
   
- [simple_partitioner sınıfı](../../parallel/concrt/reference/simple-partitioner-class.md)  
+ [simple_partitioner Sınıfı](../../parallel/concrt/reference/simple-partitioner-class.md)  
   
- [static_partitioner sınıfı](../../parallel/concrt/reference/static-partitioner-class.md)  
+ [static_partitioner Sınıfı](../../parallel/concrt/reference/static-partitioner-class.md)  
   
 
  [parallel_sort işlevi](reference/concurrency-namespace-functions.md#parallel_sort)  

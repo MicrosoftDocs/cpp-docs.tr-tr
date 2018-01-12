@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 56cfdf52ec3a6947a6a82774f551fc1a6880c959
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b470511c6d9a654357d0c8007083a2d754e300ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2652"></a>Derleyici Hatası C2652
 'tanımlayıcısı': Geçersiz kopya Oluşturucu: ilk parametre 'tanımlayıcı' olmamalıdır  

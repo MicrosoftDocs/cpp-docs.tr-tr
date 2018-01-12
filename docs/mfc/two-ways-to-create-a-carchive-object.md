@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e4243f381d10c3980ba7f819757cf2879e4e8936
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1b1db549544d421600ed6dae1a8a987006c2ab6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive Nesnesi Oluşturmanın İki Yolu
 Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:  
@@ -75,5 +76,5 @@ Oluşturmanın iki yolu vardır bir `CArchive` nesnesi:
      [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Seri hale getirme: bir nesneyi seri hale getirme](../mfc/serialization-serializing-an-object.md)
+ [Seri hale getirme: Bir Nesneyi Seri Hale Getirme](../mfc/serialization-serializing-an-object.md)
 

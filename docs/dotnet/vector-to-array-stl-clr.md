@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 47904e1845d4f2d9abb8e289bfe5337bd25892aa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 3ba05cb75f3ff2d67343b5acff715919edb8aede
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vectortoarray-stlclr"></a>vector::to_array (STL/CLR)
 Denetimli sırası yeni bir diziye kopyalar.  
@@ -75,4 +78,4 @@ a b c
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [vektör (STL/CLR)](../dotnet/vector-stl-clr.md)
+ [vector (STL/CLR)](../dotnet/vector-stl-clr.md)

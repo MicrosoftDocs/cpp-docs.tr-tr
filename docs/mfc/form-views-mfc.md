@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 16bcdf6c3ffd0c88233a01a6d3a9b71250224d9a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4e784858c17c01c8a538edebdb15a89863d16438
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="form-views-mfc"></a>Form Görünümleri (MFC)
 Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulamasını ekleyebilirsiniz bir [forms tabanlı uygulama](../mfc/reference/creating-a-forms-based-mfc-application.md) (biri olan Görünüm sınıfı türetilir `CFormView`). Forms desteklemek için uygulamanızın başlangıçta oluşturmadıysanız, Visual C++ yeni bir form eklediğinizde, bu desteği ekler. SDI veya MDI bir uygulamada varsayılan uygulayan [belge/görünüm mimarisi](../mfc/document-view-architecture.md), kullanıcı seçtiğinde `New` komutu (varsayılan olarak, üzerinde **dosya** menüsü), Visual C++ kullanıcıya sorar kullanılabilir formlardan seçin.  
@@ -69,7 +70,7 @@ Formlar dahil olmak üzere MFC kitaplıkları destekleyen Visual C++ uygulaması
   
 -   [Form tabanlı bir uygulama oluşturma](../mfc/reference/creating-a-forms-based-mfc-application.md)  
   
--   [Bir projeye Form ekleme](../mfc/inserting-a-form-into-a-project.md)  
+-   [Bir Projeye Form Ekleme](../mfc/inserting-a-form-into-a-project.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)

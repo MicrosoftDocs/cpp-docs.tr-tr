@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 06561a841f9c3fb549da11f08a31680bfb574e97
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 73bdf26a107dfd70f5506f27a76d146a354e7107
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icommandimplcancelexecution"></a>ICommandImpl::CancelExecution
 Geçerli komut yürütme iptal eder.  
@@ -43,4 +46,4 @@ HRESULT CancelExecution( );
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Icommandımpl sınıfı](../../data/oledb/icommandimpl-class.md)   
  [Icommandımpl::Execute](../../data/oledb/icommandimpl-execute.md)   
- [Icommandımpl::Cancel](../../data/oledb/icommandimpl-cancel.md)
+ [ICommandImpl::Cancel](../../data/oledb/icommandimpl-cancel.md)

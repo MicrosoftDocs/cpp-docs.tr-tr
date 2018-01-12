@@ -29,11 +29,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4acda08cac0e67559db48525e634cd21cdf5a8f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46467930b1d8bfaffe6bac4f862986d445315f87
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 Bir dizine sağlayan bir [tiled_extent](tiled-extent-class.md) nesnesi. Bu sınıf öğeleri yerel bölmesi kaynağa göreli ve genel kaynağa göreli erişmek için özellikler vardır. Döşeli alanları hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../../../parallel/amp/using-tiles.md).  
@@ -266,4 +267,4 @@ __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

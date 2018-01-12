@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9bba47c5c0ea12ae7c1ae4f57adc24b58166ded8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2087d4ff4e4905324f9bbdfaa954287f033feafe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union ve Struct Öznitelikleri
 Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/cc96cf26-ba93-4179-951e-695d1f5fdcf1), [yapısı](../cpp/struct-cpp.md), ve [enum](../cpp/enumerations-cpp.md) C++ anahtar sözcükleri.  
@@ -34,15 +37,15 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |---------------|-----------------|  
 |[durumu](../windows/case-cpp.md)|İle kullanılan [switch_type](../windows/switch-type.md) özniteliğini bir **UNION**.|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
-|[dışarı aktarma](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
 |[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğenin dizinini belirtir.|  
-|[HelpContext](../windows/helpcontext.md)|Kullanıcı görünümü öğeyle ilgili bilgi bu Yardım dosyasındaki olanak sağlayan bir içerik Kimliğini belirtir.|  
-|[HelpFile](../windows/helpfile.md)|Tür Kitaplığı Yardım dosyasının adını ayarlar.|  
-|[HelpString](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
+|[helpcontext](../windows/helpcontext.md)|Kullanıcı görünümü öğeyle ilgili bilgi bu Yardım dosyasındaki olanak sağlayan bir içerik Kimliğini belirtir.|  
+|[helpfile](../windows/helpfile.md)|Tür Kitaplığı Yardım dosyasının adını ayarlar.|  
+|[helpstring](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
 |[library_block](../windows/library-block.md)|.İdl dosyanın kitaplığı bloktaki bir yapı yerleştirir.|  
-|[PTR](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
-|[Ortak](../windows/public-cpp-attributes.md)|Bu gelen .idl dosya içinde başvurulmuyor olsa bile bir typedef türü kitaplığa gider sağlar.|  
-|[Ref](../windows/ref-cpp.md)|Bir başvuru işaretçi tanımlar.|  
+|[ptr](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
+|[public](../windows/public-cpp-attributes.md)|Bu gelen .idl dosya içinde başvurulmuyor olsa bile bir typedef türü kitaplığa gider sağlar.|  
+|[ref](../windows/ref-cpp.md)|Bir başvuru işaretçi tanımlar.|  
 |[switch_is](../windows/switch-is.md)|İfade veya bileşim üyesi seçer birleşim discriminant işlev gören tanımlayıcısını belirtir.|  
 |[switch_type](../windows/switch-type.md)|Birleşim discriminant kullanılan değişken türünü tanımlar.|  
 |[benzersiz](../windows/unique-cpp.md)|Benzersiz bir işaretçi belirtir.|  
@@ -53,7 +56,7 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
-|[dışarı aktarma](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
 |[UUID](../windows/uuid-cpp-attributes.md)|Sınıfta veya arabirimde benzersiz Kimliğini belirtir.|  
 |[v1_enum](../windows/v1-enum.md)|Belirtilen enum türü 16 bit varsayılan yerine bir 32 bit varlık olarak iletilmesi yönlendirir.|  
   
@@ -62,7 +65,7 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
-|[dışarı aktarma](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
 |[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğenin dizinini belirtir.|  
 |[last_is](../windows/last-is.md)|Aktarılacak son dizi öğesinden dizinini belirtir.|  
 |[length_is](../windows/length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|  
@@ -83,24 +86,24 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
 |[toplanabilir](../windows/aggregatable.md)|Sınıf toplama desteklediğini belirtir.|  
-|[Toplamalar](../windows/aggregates.md)|Bir denetim hedef sınıf toplayan gösterir.|  
+|[toplamlar](../windows/aggregates.md)|Bir denetim hedef sınıf toplayan gösterir.|  
 |[appobject](../windows/appobject.md)|Bir tam .exe uygulamayla ilişkili olan ve bu tür kitaplığında coclass'ı özellikleri ve işlevleri genel olarak kullanılabilir olduğunu gösterir bir uygulama nesnesi olarak coclass'ı tanımlar.|  
-|[coclass'ı](../windows/coclass.md)|ActiveX denetimi oluşturur.|  
+|[coclass](../windows/coclass.md)|ActiveX denetimi oluşturur.|  
 |[com_interface_entry](../windows/com-interface-entry-cpp.md)|Bir arabirim giriş COM Haritası ekler.|  
-|[denetimi](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
+|[control](../windows/control.md)|Kullanıcı tanımlı tür denetim olduğunu belirtir.|  
 |[Özel](../windows/custom-cpp.md)|Kendi özniteliğinizi tanımlamanıza olanak sağlar.|  
 |[db_column](../windows/db-column.md)|Belirtilen sütun, satır kümesine bağlar.|  
 |[db_command](../windows/db-command.md)|OLE DB komut oluşturur.|  
 |[db_param](../windows/db-param.md)|Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilendirir ve değişken sınırlandırır.|  
 |[db_source](../windows/db-source.md)|Bir veri kaynağı için bir bağlantı oluşturur.|  
 |[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
-|[Varsayılan](../windows/default-cpp.md)|Özel veya görüntüleme arabirimi coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.|  
+|[default](../windows/default-cpp.md)|Özel veya görüntüleme arabirimi coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.|  
 |[defaultvtable](../windows/defaultvtable.md)|Bir denetim için varsayılan vtable arabirimi olarak bir arabirim tanımlar.|  
 |[event_receiver](../windows/event-receiver.md)|Olay alıcısı oluşturur.|  
 |[event_source](../windows/event-source.md)|Bir olay kaynağı oluşturur.|  
-|[dışarı aktarma](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
 |[first_is](../windows/first-is.md)|Aktarılacak ilk dizi öğenin dizinini belirtir.|  
-|[Gizli](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
+|[hidden](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
 |[implements_category](../windows/implements-category.md)|Sınıfı için uygulanan bileşen kategorileri belirtir.|  
 |[last_is](../windows/last-is.md)|Aktarılacak son dizi öğesinden dizinini belirtir.|  
 |[length_is](../windows/length-is.md)|Aktarılacak dizi öğelerinin sayısını belirtir.|  
@@ -115,4 +118,4 @@ Aşağıdaki öznitelikler uygulamak [typedef](http://msdn.microsoft.com/en-us/c
 |[vi_progid](../windows/vi-progid.md)|Sürüm bağımsız form ProgID belirtir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıma göre öznitelikler](../windows/attributes-by-usage.md)
+ [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

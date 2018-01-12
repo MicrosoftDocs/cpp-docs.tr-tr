@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ca78fcc1de8b579a647dd9080dc64db0fde54e9b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 056f15dc0e7808a7f0ada7267a60e13d4c75d83b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listunique-stlclr"></a>list::unique (STL/CLR)
 Belirtilen bir sınamadan bitişik öğeleri kaldırır.  
@@ -94,4 +97,4 @@ a a
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
  [List::Remove (STL/CLR)](../dotnet/list-remove-stl-clr.md)   
  [List::remove_if (STL/CLR)](../dotnet/list-remove-if-stl-clr.md)   
- [List::sort (STL/CLR)](../dotnet/list-sort-stl-clr.md)
+ [list::sort (STL/CLR)](../dotnet/list-sort-stl-clr.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c084e38085c9cb1144a35900699a11bd58f3f105
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c2143a89d9b91c9c6db53beedce0875ee76f34cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="header-items-in-a-header-control"></a>Üstbilgi Denetimindeki Üstbilgi Öğeleri
 Üstbilgi denetimi oluşturan üstbilgi öğeleri davranışını ve görünümü önemli denetime sahip olursunuz ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)). Her üstbilgi öğesi, bir dize, eşlemli resmi, ilişkili resim listesi veya ilişkili bir uygulama tanımlı 32-bit değeri görüntüden olabilir. Dize, bit eşlem veya görüntü üstbilgi öğesi içinde görüntülenir.  
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/24/2017
 -   [Üstbilgi denetimleriyle resim listeleri kullanma](../mfc/using-image-lists-with-header-controls.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)
+ [CHeaderCtrl Kullanma](../mfc/using-cheaderctrl.md)
 

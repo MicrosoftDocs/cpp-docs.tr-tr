@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0372e407927d270fe5115fd3b5646d59049d269d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c32613aa6938b873a820fbb491fa2c507605a6d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>İzlenecek yol: Kullanıcı Arabirimi İş Parçacığından İşi Kaldırma
 Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı için Microsoft Foundation sınıfları (MFC) uygulamasında kullanıcı arabirimi (UI) iş parçacığı tarafından gerçekleştirilen iş taşımak için nasıl kullanılacağını gösterir. Bu belge, ayrıca uzun bir çizim işlem performansını artırmak nasıl gösterir.  
@@ -32,13 +33,13 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
   
 -   [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)  
   
--   [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+-   [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
--   [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)  
+-   [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
   
--   [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)  
+-   [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)  
   
--   [PPL'de iptal](cancellation-in-the-ppl.md)  
+-   [PPL'de İptal](cancellation-in-the-ppl.md)  
   
  Ayrıca, MFC Uygulama geliştirme temelleri anlamanız öneririz ve [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] bu kılavuza başlamadan önce. MFC hakkında daha fazla bilgi için bkz: [MFC Masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md). Hakkında daha fazla bilgi için [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)], bkz: [GDI +](https://msdn.microsoft.com/en-us/library/windows/desktop/ms533798).  
   
@@ -233,4 +234,4 @@ Bu belge eşzamanlılık çalışma zamanı bir çalışan iş parçacığı iç
  [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)   
  [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)   
  [PPL'de iptal](cancellation-in-the-ppl.md)   
- [MFC Masaüstü uygulamaları](../../mfc/mfc-desktop-applications.md)
+ [MFC Masaüstü Uygulamaları](../../mfc/mfc-desktop-applications.md)

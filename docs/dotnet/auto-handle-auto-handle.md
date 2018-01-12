@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f74f327bacc3ec96ad4fd3f41b4714ab3669456c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: bdb0d15ac53a217282655e84898c53b762b40aa8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autohandleautohandle"></a>auto_handle::auto_handle
 `auto_handle` Oluşturucusu.  
@@ -124,4 +127,4 @@ done
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [auto_handle üyeleri](../dotnet/auto-handle-members.md)   
  [auto_handle::operator =](../dotnet/auto-handle-operator-assign.md)   
- [auto_handle:: ~ auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)
+ [auto_handle::~auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)

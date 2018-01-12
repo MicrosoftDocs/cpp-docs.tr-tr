@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 043420b5d948f17c3764d985262a88f082277d9c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe2098c4caead6ebc9ad4747354ae96f093f2c91
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>COM, bildirim aracı, yapılandırma özellikleri yalıtılmış &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 Belirtmek için bu iletişim kutusunu kullanın **yalıtılmış COM** seçenekleri [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
@@ -31,7 +32,7 @@ Belirtmek için bu iletişim kutusunu kullanın **yalıtılmış COM** seçenekl
   
 ## <a name="task-list"></a>Görev Listesi  
   
--   [Nasıl yapılır: COM bileşenlerini kullanacak yalıtılmış uygulamalar oluşturma](../build/how-to-build-isolated-applications-to-consume-com-components.md)  
+-   [Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Tür kitaplığı dosyası**  
@@ -50,4 +51,4 @@ Belirtmek için bu iletişim kutusunu kullanın **yalıtılmış COM** seçenekl
  [Yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190)   
  [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)   
  [Bildirim aracı özellik sayfaları](../ide/manifest-tool-property-pages.md)   
- [Proje özellikleriyle çalışma](../ide/working-with-project-properties.md)   
+ [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)   

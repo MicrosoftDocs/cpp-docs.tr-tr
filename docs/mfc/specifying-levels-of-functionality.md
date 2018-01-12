@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6754b308343eb9cce4fdb84d0fcf159cb19a164a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13a2897d5e442794198870e7f6bed36196744888
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="specifying-levels-of-functionality"></a>İşlevsellik Düzeylerini Belirtme
 Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject](../mfc/reference/cobject-class.md)-türetilmiş sınıf:  
@@ -85,4 +86,4 @@ Bu makalede aşağıdaki işlevsellik düzeylerini eklemeyi açıklar, [CObject]
  Seri hale getirme, sınıfından türetilen zaman etkinleştirme hakkında daha fazla ayrıntı için `CObject`, makalelerine bakın [MFC'deki dosyalar](../mfc/files-in-mfc.md) ve [seri hale getirme](../mfc/serialization-in-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject'ten sınıf türetme](../mfc/deriving-a-class-from-cobject.md)
+ [CObject'ten Sınıf Türetme](../mfc/deriving-a-class-from-cobject.md)

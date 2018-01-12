@@ -19,11 +19,14 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 80cfc5f13a09eaed93c894e277e870895c812b24
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9226eaf035cee7614f2d072a5e2493c067012c2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-marshal-unicode-strings-using-c-interop"></a>Nasıl yapılır: C++ Çalışabilirliği Kullanarak Unicode Dizelerini Sıralama
 Bu konuda, bir model Visual C++ birlikte çalışabilirlik gösterilir. Daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
@@ -32,9 +35,9 @@ Bu konuda, bir model Visual C++ birlikte çalışabilirlik gösterilir. Daha faz
   
  Bu konuda nasıl Unicode dizeleri gösterilmektedir yönetilmeyen bir işleve ve tersi yönde yönetilen işlevden geçirildi. Diğer dizeler türleriyle birlikte çalışmak için aşağıdaki konulara bakın:  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak ANSI dizelerini sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak ANSI Dizelerini Sıralama](../dotnet/how-to-marshal-ansi-strings-using-cpp-interop.md)  
   
--   [Nasıl yapılır: C++ birlikte çalışması kullanarak COM dizelerini sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)  
+-   [Nasıl yapılır: C++ Birlikte Çalışması Kullanarak COM Dizelerini Sıralama](../dotnet/how-to-marshal-com-strings-using-cpp-interop.md)  
   
 ## <a name="example"></a>Örnek  
  (Vcclr.h'de belirtilmiş) PtrToStringChars işlevi bir UNICODE dizesi yönetilmeyen bir işleve yönetilen işlevden geçirmek için kullanılabilir yönetilen dize depolandığı bellekte erişmek için. Bu adres için yerel bir işleve geçirilir, bellek ile sabitlenmelidir önemlidir, çünkü [pin_ptr (C + +/ CLI)](../windows/pin-ptr-cpp-cli.md) dize verilerin taşınmasını engellemek için bir atık toplama döngüsü sırasında gerçekleşeceğini yönetilmeyen işlev yürütür.  
@@ -102,4 +105,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ birlikte çalışması (örtük PInvoke) kullanarak](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+ [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

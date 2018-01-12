@@ -129,11 +129,12 @@ caps.latest.revision: "37"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c79b909df39a9e27b4b66c03df4f700a6aac2d54
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 941a496d52dbf38401484bd6ddcd857875849dc6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwinappex-class"></a>CWinAppEx sınıfı
 `CWinAppEx`uygulama durumu işler, kayıt defterine durumunu kaydeder, kayıt defterinden durumu yükler, uygulama yöneticileri başlatır ve o aynı uygulama yöneticileri için bağlantılar sağlar.  
@@ -1371,4 +1372,4 @@ BOOL WriteString(
  [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md)   
  [CContextMenuManager sınıfı](../../mfc/reference/ccontextmenumanager-class.md)   
  [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md)   
- [CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md)
+ [CUserToolsManager Sınıfı](../../mfc/reference/cusertoolsmanager-class.md)

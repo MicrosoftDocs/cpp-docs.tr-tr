@@ -17,11 +17,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 757ab7a6d2c8b846a51da359c4b8dc5a72c6e9e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: db6c31df932890799f68e2ae466b0a927f0f999f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="version-c"></a>sürüm (C++)
 Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.  
@@ -53,11 +56,11 @@ Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımla
 |-|-|  
 |**Uygulandığı öğe:**|**sınıf**,`struct`|  
 |**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı**|  
+|**Gerekli öznitelikler**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
+ [Sınıf Öznitelikleri](../windows/class-attributes.md)   

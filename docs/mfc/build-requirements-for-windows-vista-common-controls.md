@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a6f6dabd14ddb95f1b4c2b49389c27f61a69970f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 76919bcdd416ed7195e94ed1fa0b2e3f3a4d573d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="build-requirements-for-windows-vista-common-controls"></a>Windows Vista Ortak Denetimleri için Derleme Gereksinimleri
 Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 6.1 destekler. Ortak Denetimler içinde yer alan [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ve kitaplık dahil [!INCLUDE[vsipsdk](../mfc/includes/vsipsdk_md.md)]. Kitaplığı, mevcut sınıfları ve yeni sınıflar geliştiren yeni ve destekleyen yöntemleri sağlar [!INCLUDE[windowsver](../build/reference/includes/windowsver_md.md)] ortak denetimler. Uygulamanızı oluşturma sırasında aşağıdaki bölümlerde açıklanan derleme ve Geçiş gereksinimleri karşılamalıdır.  
@@ -63,5 +64,5 @@ Microsoft Foundation Class (MFC) kitaplığı Windows ortak denetimleri sürüm 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel MFC konuları](../mfc/general-mfc-topics.md)   
  [Hiyerarşi grafiği](../mfc/hierarchy-chart.md)   
- [Kullanım dışı ANSI API'ları](../mfc/deprecated-ansi-apis.md)
+ [Kullanım Dışı ANSI API'leri](../mfc/deprecated-ansi-apis.md)
 

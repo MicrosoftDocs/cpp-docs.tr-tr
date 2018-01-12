@@ -17,11 +17,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 50b1b3c6fb425885c7d48975a3815951454f3bf1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7ad1d800619eb84a470dbc5e472e9191d13e8796
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>MFC İletişim Kutusu Olarak Windows Formu Kullanıcı Denetimi Barındırma
 MFC sağlar Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdialog-class.md) böylece bir Windows Forms kullanıcı denetimi barındırabilir (<xref:System.Windows.Forms.UserControl>) kalıcı veya geçici bir MFC iletişim kutusunda. `CWinFormsDialog`MFC sınıfından türetilen [CDialog](../mfc/reference/cdialog-class.md), iletişim kutusu kalıcı veya geçici başlatılabilir.  
@@ -144,4 +147,4 @@ MFC sağlar Şablon sınıfı [CWinFormsDialog](../mfc/reference/cwinformsdialog
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  <xref:System.Windows.Forms.UserControl?displayProperty=fullName>   
- [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)
+ [MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)

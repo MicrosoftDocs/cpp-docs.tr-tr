@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2767ae80c2b967bfbe78f35431949b472ff550f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3febe10f7c71e1c1d478dd6f6b6f565c4134e033
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iumsunblocknotification-structure"></a>IUMSUnblockNotification Yapısı
 Bildirim kaynağı engellenen ve zamanlama içeriği belirlenen Zamanlayıcının dönün tetiklenen bir iş parçacığı proxy engellemesini ve zamanlanması hazır Yöneticisi'nden temsil eder. İş parçacığı proxy'nin ilişkili yürütme bağlamı, döndürülen sonra bu arabirimi geçersiz `GetContext` yöntemi, yeniden.  
@@ -74,4 +75,4 @@ virtual IUMSUnblockNotification* GetNextUnblockNotification() = 0;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
  [Iumsscheduler yapısı](iumsscheduler-structure.md)   
- [Iumscompletionlist yapısı](iumscompletionlist-structure.md)
+ [IUMSCompletionList Yapısı](iumscompletionlist-structure.md)

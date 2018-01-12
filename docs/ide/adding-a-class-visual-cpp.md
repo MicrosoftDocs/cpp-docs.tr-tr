@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9dab2974d4d177580b0051338a20b9dacf113f89
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d767bd0afa85bc417cd33ce305ffe0061104bf64
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-a-class-visual-c"></a>Sınıf Ekleme (Visual C++)
 Visual C++ projesinde bir sınıf eklemek için **Çözüm Gezgini**, projeye sağ tıklayın, **Ekle**ve ardından **sınıfı**. Bu açılır [Ekle iletişim kutusu sınıfı](../ide/add-class-dialog-box.md) iletişim kutusu.  

@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 231fc4ec3707fa33cc50a62e45890cfc2090e1d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 163456b044a50bbbbdf5f4ae229723c8730bc369
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-technology-on-the-internet"></a>Internet'te Etkin Teknoloji
 Etkin teknoloji heyecan verici, dinamik içerik ve uygulamaları genel Internet veya intranet bilinen bir şirketin iç ağ oluşturma geliştiricilerinin açık bir platformdur. Internet programlama için Microsoft tarafından sağlanan ana teknolojileri aşağıda açıklanmıştır.  
@@ -42,5 +43,5 @@ Etkin teknoloji heyecan verici, dinamik içerik ve uygulamaları genel Internet 
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
  [Internet'te ActiveX denetimleri](../mfc/activex-controls-on-the-internet.md)   
  [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md)   
- [Win32 Internet Uzantıları (WinINet)](../mfc/win32-internet-extensions-wininet.md)
+ [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)
 

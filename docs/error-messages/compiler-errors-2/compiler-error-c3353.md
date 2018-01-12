@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 47a0231a161a2502c26786fceeb1b3634b236eaf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01f21bfce44b124955d84c7298cdcb6885ef87ce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3353"></a>Derleyici Hatası C3353
 'temsilci': bir temsilci yalnızca genel bir işlevi veya bir üye işlevini yönetilen veya WinRT türünden oluşturulabilir  

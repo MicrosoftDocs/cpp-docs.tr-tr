@@ -1,6 +1,6 @@
 ---
 title: "Derleyici uyarıları C4800 C5999 aracılığıyla | Microsoft Docs"
-ms.date: 10/25/2017
+ms.date: 11/17/2017
 ms.technology: cpp-tools
 ms.topic: error-reference
 f1_keywords:
@@ -97,26 +97,24 @@ ms.assetid: c3182430-8b3b-4ab2-a532-5cd436707dc8
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1bf919fbb1959af6fad031a7f32262466f6f49ff
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 6f3c9a15c61a859564bb5613a3b8059cb011ca80
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarıları C4800 C5999 aracılığıyla
 
-Bu bölümü belgelerin makalelerinde Visual C++ derleyici uyarıları, bir alt hakkında bilgiler içerir. Burada yer alan bilgiler erişebilir veya Visual Studio çıktı penceresinde bir hata numarası seçin ve ardından F1 tuşuna basın.
+Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı iletilerini kümesini açıklayın.
 
-> [!NOTE]
-> Her [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] hata veya uyarı MSDN içinde belgelenmiştir. Çoğu durumda, tanılama iletisinin tüm kullanılabilir bilgileri sağlar. Bir hata iletisi düşünüyorsanız, ek açıklama, bize bildirin gerekir. Bilgisayarınıza bu sayfadaki geri bildirim formu kullanın veya Visual Studio menü çubuğunda gidin ve seçebilirsiniz **yardımcı**, **bir hata raporu**, veya üzerinde bir öneri veya hata raporu gönderebilirsiniz [Microsoft Connect](http://connect.microsoft.com/VisualStudio).
+[!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Visual C++ dili](http://go.microsoft.com/fwlink/?LinkId=158195) forumudur sorular ve tartışmaları hakkında [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] dili sözdizimi ve derleyicisi. [Visual C++ genel](http://go.microsoft.com/fwlink/?LinkId=158194) Forumu hakkında sorular için olan [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] , değil tartışılır diğer forumlarda. Üzerinde hataları ve Uyarıları hakkında Yardım bulabilirsiniz [yığın taşması](http://stackoverflow.com/).
-
-## <a name="in-this-section"></a>Bu Bölümde
+## <a name="warning-messages"></a>Uyarı iletileri
 
 |Uyarı|İleti|
 |-------------|-------------|
-|[Derleyici Uyarısı (Düzey 3) C4800](compiler-warning-level-3-c4800.md)|'type': değer bool 'true' veya 'false' (Performans Uyarısı) zorlama|
+|[Derleyici Uyarısı (düzey 3) C4800](compiler-warning-level-3-c4800.md)|'type': değer bool 'true' veya 'false' (Performans Uyarısı) zorlama|
 |[Derleyici Uyarısı (düzey 1) C4803](compiler-warning-level-1-c4803.md)|'yöntemi': artırma yöntemi, olay farklı depolama sınıfından sahip 'event'|
 |[Derleyici Uyarısı (düzey 1) C4804](compiler-warning-level-1-c4804.md)|'işlemi': işlem ' bool' türünün güvensiz kullanımı|
 |[Derleyici Uyarısı (düzey 1) C4805](compiler-warning-level-1-c4805.md)|'işlemi': ' type' türünde güvensiz karışımı ve türü 'type' işlemi|
@@ -134,7 +132,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 4) C4820](compiler-warning-level-4-c4820.md)|eklenen 'member_name' oluştur değerinden sonra 'bytes' bayt dolduruluyor|
 |[Derleyici Uyarısı (düzey 1) C4821](compiler-warning-level-1-c4821.md)|Unicode kodlama türü belirlemek için lütfen dosyayı imza (BOM) ile kaydetmek için|
 |Derleyici Uyarısı (düzey 1) C4822|'üye işlevi': yerel sınıf üye işlevi bir gövde yok|
-|[Derleyici Uyarısı (Düzey 3) C4823](compiler-warning-level-3-c4823.md)|'function': sabitleme işaretçileri ancak bırakma kullanır semantiği etkin değil. /EHa kullanmayı düşünün|
+|[Derleyici Uyarısı (düzey 3) C4823](compiler-warning-level-3-c4823.md)|'function': sabitleme işaretçileri ancak bırakma kullanır semantiği etkin değil. /EHa kullanmayı düşünün|
 |Derleyici Uyarısı (Düzey 2) C4826|Dönüştürme '*type1*'to'*type2*' oturum genişletilmiş olduğu. Bu, çalışma zamanı beklenmeyen davranışlara neden olabilir.|
 |Derleyici Uyarısı (Düzey 3) C4827|Bir ortak 'ToString' yöntemi 0 parametrelerle sanal olarak işaretlenmesi gerekir ve geçersiz kılma|
 |[Derleyici Uyarısı (düzey 1) C4829](compiler-warning-level-1-c4829.md)|Büyük olasılıkla yanlış parametreler ana işlevi. Göz önünde bulundurun ' int ana (Platform::Array\<Platform::String ^ > ^ argv)'|
@@ -180,7 +178,7 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |[Derleyici Uyarısı (düzey 1) C4945](compiler-warning-level-1-c4945.md)|'simgesi': 'assembly1' simgesini alınamıyor: 'simgesi' başka bir derlemeden 'assembly2' içe gibi|
 |[Derleyici Uyarısı (düzey 1) C4946](compiler-warning-level-1-c4946.md)|reinterpret_cast ilgili sınıflar arasında kullanıldı: 'class1' ve 'class2'|
 |Derleyici Uyarısı (düzey 1) C4947|'type_or_member': kullanımdan kaldırılmış olarak işaretlenmiş|
-|[Derleyici Uyarısı (Düzey 2) C4948](compiler-warning-level-2-c4948.md)|'erişimci' dönüş türü, karşılık gelen ayarlayıcı son parametre türü eşleşmiyor.|
+|[Derleyici Uyarısı (düzey 2) C4948](compiler-warning-level-2-c4948.md)|'erişimci' dönüş türü, karşılık gelen ayarlayıcı son parametre türü eşleşmiyor.|
 |[Derleyici Uyarısı (düzey 1 ve düzey 4) C4949](compiler-warning-level-1-and-level-4-c4949.md)|'yönetilen' ve 'yönetilmeyen' pragmaları yalnızca ile derlendiğinde anlamlı ' / clr [: seçeneği]'|
 |Derleyici Uyarısı (düzey 1, hata) C4950|'type_or_member': kullanımdan kaldırılmış olarak işaretlenmiş|
 |Derleyici Uyarısı (düzey 1) C4951|'function' profili itibaren kullanılmıyor işlevi profil verileri, toplanan veriler, düzenlenebilir|
@@ -213,8 +211,8 @@ Hatalar ve uyarılar MSDN ortak forumlarda için Ek Yardım bulabilirsiniz. [Vis
 |Derleyici Uyarısı (Düzey 3) C4990|Warbird: *iletisi*|
 |Derleyici Uyarısı (Düzey 3) C4991|Warbird: işlev '*işlevi*' koruma düzeyini inlinee üst büyük olduğu için __forceinline içermesinden işaretlenmemiş|
 |Derleyici Uyarısı (Düzey 3) C4992|Warbird: işlev '*işlevi*' korunamıyor satır içi derleme içerdiğinden __forceinline içermesinden işaretlenmemiş|
-|[Derleyici Uyarısı (Düzey 3) C4995](compiler-warning-level-3-c4995.md)|'function': ad, kullanım dışı #pragma işaretlendi|
-|[Derleyici Uyarısı (Düzey 3) C4996](compiler-warning-level-3-c4996.md)|'*açıklama*': *iletisi*|
+|[Derleyici Uyarısı (düzey 3) C4995](compiler-warning-level-3-c4995.md)|'function': ad, kullanım dışı #pragma işaretlendi|
+|[Derleyici Uyarısı (düzey 3) C4996](compiler-warning-level-3-c4996.md)|'*açıklama*': *iletisi*|
 |Derleyici Uyarısı (düzey 1) C4997|'class': COM arabirimi veya Sahte Arabirimi coclass'ı uygulamıyor|
 |Derleyici Uyarısı (düzey 1) C4998|BEKLENTİ başarısız oldu: *Beklenti*(*değeri*)|
 |C4999 uyarı derleyici|Lütfen bilinmeyen uyarı Visual C++ Yardım menüsünden teknik destek komut seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın|

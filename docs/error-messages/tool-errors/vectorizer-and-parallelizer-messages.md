@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5ce85d60f0a3dc7f7ec88e480fb17289aaaf9fa1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 26d33c64fd57d9f0e9f9a33de6097601e65aa67d
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Vektör Yapıcı ve Paralel Hale Getirici İletileri
 Visual C++ derleyici seçenekleri kullanabileceğiniz [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) ve [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) ayarlamak için [otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md) çıkış neden kodları için ve bilgilendirme iletileri kendi etkinliği hakkında. Bu makalede, neden kodları ve iletiler açıklanmaktadır.  
@@ -989,7 +990,7 @@ void code_1505(int *A, int *B)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomatik Paralelleştirme ve otomatik Vektörleştirme](../../parallel/auto-parallelization-and-auto-vectorization.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/?LinkId=263662)   
+ [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)   
  [#pragma loop()](../../preprocessor/loop.md)   
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   

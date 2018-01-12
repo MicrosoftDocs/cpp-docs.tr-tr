@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ed0fe26aeeccef7488a64b42438da711feddf5a9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6186372dc3ac8bc1000a71706971c9ff72078c5a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="styles-for-the-progress-control"></a>İlerleme Denetimi için Stiller
 Başlangıçta oluşturduğunuzda ilerleme durumu denetimini ([CProgressCtrl::Create](../mfc/reference/cprogressctrl-class.md#create)), kullanın `dwStyle` ilerleme durumunu denetlemek için istenen pencere stilleri belirtmek için parametre. Aşağıdaki listede, geçerli pencere stilleri Ayrıntılar verilmiştir. Burada listelenen dışındaki herhangi bir pencere stili denetimi yoksayar. Her zaman denetim iletişim kutusunun üst öğesi, genellikle alt pencere olarak oluşturmanız gerekir.  
@@ -52,5 +53,5 @@ Başlangıçta oluşturduğunuzda ilerleme durumu denetimini ([CProgressCtrl::Cr
  Daha fazla bilgi için bkz: [pencere stilleri](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) içinde *MFC başvurusu*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CProgressCtrl kullanma](../mfc/using-cprogressctrl.md)
+ [CProgressCtrl Kullanma](../mfc/using-cprogressctrl.md)
 

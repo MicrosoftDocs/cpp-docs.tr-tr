@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e36d180223387a322776155e02d69e352ecec853
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d284452e7b6c9983a751117ad6c2290b267c6994
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constructing-input-stream-objects"></a>Giriş Akışı Oluşturma Nesneleri
 Yalnızca kullanıyorsanız `cin` nesnesi, bir giriş akışı oluşturmak gerekmez. Kullanırsanız, bir giriş akışı oluşturmalıdır:  
@@ -61,5 +62,5 @@ myString>> amt; // amt contains 123.45
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Giriş akışları](../standard-library/input-streams.md)
+ [Giriş Akışları](../standard-library/input-streams.md)
 

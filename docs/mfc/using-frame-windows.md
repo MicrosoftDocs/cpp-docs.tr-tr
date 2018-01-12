@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6245ea3f406311ab018f19ed1071c609c4e981f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e54a232b246665a1ef82fb48166eed2aff0fd9db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-frame-windows"></a>Çerçeve Pencerelerini Kullanma
 MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ve belgeleri — uygulaması Dosya menüsünden Aç komutlarını ve yeni bir parçası olarak. Framework çerçeve penceresi işlerin çoğunu sizin yerinize yaptığından, oluşturma, kullanma ve bu pencereleri yok etme yalnızca küçük bir rol oynar. Ancak açıkça kendi çerçeve pencereleri ve alt öğe pencerelerini özel amaçlar için oluşturabilirsiniz.  
@@ -30,7 +31,7 @@ MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ve b
   
 -   [Belge çerçeve pencereleri oluşturma](../mfc/creating-document-frame-windows.md)  
   
--   [CWnd nesneleri başlatılacağı zaman](../mfc/when-to-initialize-cwnd-objects.md)  
+-   [CWnd Nesneleri Ne Zaman Başlatılır?](../mfc/when-to-initialize-cwnd-objects.md)  
   
 -   [Çerçeve pencerelerini yok etme](../mfc/destroying-frame-windows.md)  
   
@@ -51,5 +52,5 @@ MFC çerçevesi belge çerçeve pencereleri oluşturur — ve görünümler ve b
 -   [Çerçeve pencere rol yazdırmayı ve Baskı Önizleme](../mfc/orchestrating-other-window-actions.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çerçeve pencereleri](../mfc/frame-windows.md)
+ [Çerçeve Pencereleri](../mfc/frame-windows.md)
 

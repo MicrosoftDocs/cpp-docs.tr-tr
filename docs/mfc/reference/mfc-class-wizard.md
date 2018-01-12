@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2d8a0e18da58829175a973bf31b2597240e23bd8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 66ef4c3595e25fecf4930cf62275847d8c264044
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
 Projenizdeki sınıfları iletileri ve ileti işleyicileri eklemenizi sağlar. Ayrıca, diğer sihirbazları Başlat veya projeniz için bir sınıf ekleyin.  
@@ -75,20 +76,20 @@ Projenizdeki sınıfları iletileri ve ileti işleyicileri eklemenizi sağlar. A
   
  Bir işleyici değiştirmek için karşılık gelen öğe ile çift **üye işlevleri** listesi. Veya, liste kutusunda bir öğe seçin ve ardından **kodu Düzenle**.  
   
- **İletileri**  
+ **İletiler**  
  Ekleme, silme, düzenleme veya bir ileti ve kendi ileti işleyicisi için arama olanak sağlar.  
   
  Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeyi çift **iletileri** listesi.  
   
  Özel ileti eklemek için tıklatın **eklemek özel ileti** veya Enter tuşuna basın ve değerleri belirtin **eklemek özel ileti** iletişim kutusu. Bu iletişim kutusunda, öğesini de seçebilirsiniz **kayıtlı ileti** işletim sistemi benzersiz olması garanti bir pencere ileti işlemek için.  
   
- **Sanal işlevler**  
+ **Sanal İşlevler**  
  Ekleme, silme, düzenleme veya sanal işlev ya da geçersiz kılınan bir sanal işlev için arama olanak sağlar.  
   
  **Üye değişkenleri**  
  Ekleme, silme, düzenleme veya üye değişkeni için arama olanak sağlar.  
   
- **Yöntemleri**  
+ **Yöntemler**  
  Eklemek, silmek veya aramak için bir yöntem ve ayrıca tanımı ya da bir yöntem bildirimi gidin olanak tanır.  
   
  Bir yöntem eklemek için tıklatın **ekleme yöntemi**ve değerlerini belirtin **ekleme yöntemi** iletişim kutusu.  

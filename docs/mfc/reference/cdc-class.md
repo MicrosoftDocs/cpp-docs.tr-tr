@@ -413,11 +413,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 11ece1ca08fc7f8b02c3f32284a986abc3e8e361
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9e8424638311cd6fdbe220bfd98bb27409ee670e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdc-class"></a>CDC sınıfı
 Bir cihaz bağlamı nesneler sınıfı tanımlar.  
@@ -6366,4 +6367,4 @@ BOOL WidenPath();
  [CPaintDC sınıfı](../../mfc/reference/cpaintdc-class.md)   
  [CWindowDC sınıfı](../../mfc/reference/cwindowdc-class.md)   
  [CClientDC sınıfı](../../mfc/reference/cclientdc-class.md)   
- [CMetaFileDC sınıfı](../../mfc/reference/cmetafiledc-class.md)
+ [CMetaFileDC Sınıfı](../../mfc/reference/cmetafiledc-class.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 94004ea52d76d39657da1fdb79e0b61777524d47
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9d532ff9cc030c92543bec898f34daf3559531f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4364"></a>Derleyici Uyarısı (düzey 1) C4364
 \#derleme 'location(line_number) as_friend özniteliği; olmadan, daha önce görülen dosya' için kullanma uygulanmamış as_friend  

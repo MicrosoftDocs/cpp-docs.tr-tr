@@ -43,11 +43,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 153653244534a1783b2b675f91216a8af3738e80
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ca1d0b5658da375c2202729e6888fa078063beb4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 Standart dize Bul ve Değiştir iletişim kutuları, uygulamanızda uygulamak sağlar.  
@@ -328,4 +329,4 @@ BOOL SearchDown() const;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CCommonDialog sınıfı](../../mfc/reference/ccommondialog-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)  
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)  

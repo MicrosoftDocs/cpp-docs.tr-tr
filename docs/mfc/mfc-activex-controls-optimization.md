@@ -25,11 +25,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5b1dab85041f63afd3904bc026bdf2a4d94b5301
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46a17a6594db6c59148042f6e8c6cc72c7068dc0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX Denetimleri: İyileştirme
 Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirmek için kullanabileceğiniz teknikler açıklanmaktadır.  
@@ -47,30 +48,30 @@ Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirme
 |MFC ActiveX Denetim Sihirbazı'nda denetim ayarı|Eylem|Daha fazla bilgi|  
 |-------------------------------------------------------|------------|----------------------|  
 |**Görünür zaman etkinleştirme** onay kutusu|Temizle|[Kapatma etkinleştirin görünür seçeneği](../mfc/turning-off-the-activate-when-visible-option.md)|  
-|**Penceresiz etkinleştirme** onay kutusu|Seçim|[Penceresiz etkinleştirme sağlama](../mfc/providing-windowless-activation.md)|  
-|**Kesilmemiş cihaz bağlamı** onay kutusu|Seçim|[Kesilmemiş bir cihaz bağlamı kullanma](../mfc/using-an-unclipped-device-context.md)|  
-|**Titreşimsiz etkinleştirme** onay kutusu|Seçim|[Titreşimsiz etkinleştirme sağlama](../mfc/providing-flicker-free-activation.md)|  
-|**Fare işaretçisini bildirimleri etkin olmadığında** onay kutusu|Seçim|[Devre dışı iken fare etkileşimi sağlama](../mfc/providing-mouse-interaction-while-inactive.md)|  
-|**Kod çizim en iyi duruma getirilmiş** onay kutusu|Seçim|[Denetim çizimini iyileştirme](../mfc/optimizing-control-drawing.md)|  
+|**Penceresiz etkinleştirme** onay kutusu|Seçim|[Penceresiz Etkinleştirme Sağlama](../mfc/providing-windowless-activation.md)|  
+|**Kesilmemiş cihaz bağlamı** onay kutusu|Seçim|[Kesilmemiş Bir Cihaz Bağlamı Kullanma](../mfc/using-an-unclipped-device-context.md)|  
+|**Titreşimsiz etkinleştirme** onay kutusu|Seçim|[Titreşimsiz Etkinleştirme Sağlama](../mfc/providing-flicker-free-activation.md)|  
+|**Fare işaretçisini bildirimleri etkin olmadığında** onay kutusu|Seçim|[Devre Dışı İken Fare Etkileşimi Sağlama](../mfc/providing-mouse-interaction-while-inactive.md)|  
+|**Kod çizim en iyi duruma getirilmiş** onay kutusu|Seçim|[Denetim Çizimini İyileştirme](../mfc/optimizing-control-drawing.md)|  
   
  Bu iyileştirmeler uygulamak üye işlevleri hakkında ayrıntılı bilgi için bkz: [COleControl](../mfc/reference/colecontrol-class.md). Üye işlevleri gibi kullanarak, listelenen [penceresiz işlemleri](http://msdn.microsoft.com/en-us/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) ve [etkin olmayan işaretçi işleme işlevleri](http://msdn.microsoft.com/en-us/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df).  
   
  Daha fazla bilgi için bkz.:  
   
--   [Kalıcılığı ve başlatmayı iyileştirme](../mfc/optimizing-persistence-and-initialization.md)  
+-   [Kalıcılığı ve Başlatmayı İyileştirme](../mfc/optimizing-persistence-and-initialization.md)  
   
--   [Penceresiz etkinleştirme sağlama](../mfc/providing-windowless-activation.md)  
+-   [Penceresiz Etkinleştirme Sağlama](../mfc/providing-windowless-activation.md)  
   
 -   [Kapatma etkinleştirin görünür seçeneği](../mfc/turning-off-the-activate-when-visible-option.md)  
   
--   [Devre dışı iken fare etkileşimi sağlama](../mfc/providing-mouse-interaction-while-inactive.md)  
+-   [Devre Dışı İken Fare Etkileşimi Sağlama](../mfc/providing-mouse-interaction-while-inactive.md)  
   
--   [Titreşimsiz etkinleştirme sağlama](../mfc/providing-flicker-free-activation.md)  
+-   [Titreşimsiz Etkinleştirme Sağlama](../mfc/providing-flicker-free-activation.md)  
   
--   [Kesilmemiş bir cihaz bağlamı kullanma](../mfc/using-an-unclipped-device-context.md)  
+-   [Kesilmemiş Bir Cihaz Bağlamı Kullanma](../mfc/using-an-unclipped-device-context.md)  
   
--   [Denetim çizimini iyileştirme](../mfc/optimizing-control-drawing.md)  
+-   [Denetim Çizimini İyileştirme](../mfc/optimizing-control-drawing.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)
+ [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)
 

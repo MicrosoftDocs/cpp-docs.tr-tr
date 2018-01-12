@@ -22,11 +22,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 30cd8e09a9569464fad2edd702320f830de9c861
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e61d0ca8ed269557efbd566da1aca160ef669e83
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-control-classes"></a>OLE Denetim Sınıfları
 Bunlar, OLE denetimleri yazarken kullanmak, birincil sınıflarıdır. `COleControlModule` OLE denetim modülü sınıfında benzer [CWinApp](../mfc/reference/cwinapp-class.md) bir uygulamada sınıfı. Her modül bir veya daha fazla OLE denetimleri uygular; Bu denetimler tarafından temsil edilen `COleControl` nesneleri. Bu denetimleri kullanarak kapsayıcılarına ile iletişim `CConnectionPoint` nesneleri.  

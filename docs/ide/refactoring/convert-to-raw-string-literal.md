@@ -11,11 +11,12 @@ ms.assetid: fffbfee4-66ee-42ba-aeb9-df07fb702c51
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c237f9042707654c913a24db916a82971603bb0a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 12aa512270ecce4564561634f99be9cbf155448a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="convert-to-raw-string-literal"></a>Sabit değer ham dizesi Dönüştür
 **Ne:** C++ ham dizeye herhangi bir dize sabit değeri kapatmanızı sağlar.

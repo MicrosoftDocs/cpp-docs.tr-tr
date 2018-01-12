@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3484067ffd35b9f4212dcfe7ee7bd147267e7ffe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ba9ec0ddcda9df6f0d950c2dcc0b3821f57f386
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="container-classiterator"></a>Kapsayıcı Sınıfı::iterator
 > [!NOTE]
@@ -37,4 +38,4 @@ typedef T5 iterator;
  Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T5**. Türünde bir nesne **yineleyici** türünde bir nesneye cast [const_iterator](../standard-library/container-class-const-iterator.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)
+ [Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

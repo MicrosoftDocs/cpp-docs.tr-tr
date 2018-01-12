@@ -28,11 +28,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4a891a03f9b54946060cc41d535c7dfc44fd94e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6131f2349a065052c9860038ca4b9f08de89f37d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="texture-class"></a>texture Sınıfı
 Veri toplama üzerinde bir doku olan bir `accelerator_view` ölçüde etki alanındaki. Değişkenleri, bir uzantı etki alanındaki her öğe için bir tane koleksiyonudur. Her bir değişken C++ ilkel türüne karşılık gelen bir değer tutar ( `unsigned int`, `int`, `float`, `double`), skaler bir tür ( `norm`, veya `unorm`), ya da kısa vektör türü.  
@@ -73,11 +74,11 @@ class texture;
 |----------|-----------------|  
 |[copy_to](#copy_to)|Kopya `texture` derin bir kopya yaparak bu hedefe nesnesi.|  
 |[veri](#data)|Bir CPU işaretçi bu doku ham verileri döndürür.|  
-|[Al](#get)|Belirtilen dizindeki öğenin değerini döndürür.|  
+|[get](#get)|Belirtilen dizindeki öğenin değerini döndürür.|  
 |[get_associated_accelerator_view](#get_associated_accelerator_view)|Döndürür [accelerator_view](accelerator-view-class.md) diğer bir deyişle kopyalanması bu doku için tercih edilen hedef.|  
 |[get_depth_pitch](#get_depth_pitch)|CPU üzerinde doku hazırlama 3B her derinliği dilimi arasında bayt sayısını döndürür.|  
 |[get_row_pitch](#get_row_pitch)|Her satırda bir 2B veya CPU üzerinde doku hazırlama 3B arasında bayt sayısını döndürür.|  
-|[ayarlama](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
+|[set](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -616,4 +617,4 @@ texture(
  Bölüm derecesini.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Graphics Namespace](concurrency-graphics-namespace.md)
+ [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

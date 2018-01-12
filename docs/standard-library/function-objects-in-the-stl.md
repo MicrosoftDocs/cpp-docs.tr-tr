@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 90b37372123031026017e23c683a5a65555577ca
-ms.sourcegitcommit: b3ffb717e2af6ca8072b56bf4aa96b3afff73414
+ms.workload: cplusplus
+ms.openlocfilehash: 2ba5024590a0682f8d65c7d21ca2cb15d2f481b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/30/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ Standart Kitaplığı'nda işlev nesneleri
 A *işlev nesnesi*, veya *functor*, operator() uygulayan herhangi bir tür. Bu işleç olarak adlandırılır *çağırma işleci* veya bazen *uygulama işleci*. C++ Standart Kitaplığı, öncelikle sıralama ölçütü kapsayıcıları ve algoritmaları olarak işlev nesneleri kullanır.  

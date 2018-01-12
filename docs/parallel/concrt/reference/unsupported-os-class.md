@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0ffe559be159bf54bdbbb9832dfb9a70bc47db13
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1f98d0c85a3149e4d865ec8bdfb82bfd032eb9c7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unsupportedos-class"></a>unsupported_os Sınıfı
 Bu sınıf, desteklenmeyen bir işletim sistemi kullanıldığında, bir özel durum açıklar.  
@@ -66,4 +67,4 @@ unsupported_os() throw();
  Hata açıklayıcı bir ileti.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

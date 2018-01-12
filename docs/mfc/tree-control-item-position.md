@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a69198834513362e87568f83f8c4f38b74a2b05d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: db47e27ad0b556e08f51685bf84b6bd998722239
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-item-position"></a>Ağaç Denetim Öğesi Konumu
 Ağaç denetim öğesi eklendiğinde, bir öğenin ilk konumu ayarlanır ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kullanarak `InsertItem` üye işlevi. Üye işlev çağrısı üst öğesi tanıtıcısı ve sonra yeni öğe eklenecek madde tanıtıcısı belirtir. İkinci işleyici verilen üst ya da bir alt öğesi tanımlamanız gerekir veya bu değerlerden birini: `TVI_FIRST`, `TVI_LAST`, veya `TVI_SORT`.  
@@ -35,5 +36,5 @@ Ağaç denetim öğesi eklendiğinde, bir öğenin ilk konumu ayarlanır ([CTree
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

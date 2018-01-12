@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fe22a58d3f7b5d19658f648343541a238ed296c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe8d012c0034354328e5a10f1fa977002639506b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltbitsetgt"></a>&lt;bitset&gt;
 Şablon sınıfı bitset ve temsil eden ve sabit boyutlu dizileri bit düzenleme için iki destekleyen şablon işlevleri tanımlar.  
@@ -48,11 +49,11 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[bitset sınıfı](../standard-library/bitset-class.md)|Şablon sınıfı bayrakları öğeler veya koşullar kümesi için koruma altında tutmada kısa bir yol sağlamak BITS sabit sayıda oluşan bir dizi depolar nesnesi türünü açıklar.|  
+|[bitset Sınıfı](../standard-library/bitset-class.md)|Şablon sınıfı bayrakları öğeler veya koşullar kümesi için koruma altında tutmada kısa bir yol sağlamak BITS sabit sayıda oluşan bir dizi depolar nesnesi türünü açıklar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

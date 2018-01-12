@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a6733a5a128cdd0b5b3b89828d74d0eb4eb9b301
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a1cea639835d6d9b99d43b081954742640ecc66f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="omp"></a>omp
 Bir veya daha fazla OpenMP yönergelerini, isteğe bağlı bir yönerge yan tümceleri ile birlikte alır.  
@@ -39,4 +40,4 @@ Bir veya daha fazla OpenMP yönergelerini, isteğe bağlı bir yönerge yan tüm
  Bkz: [OpenMP yönergeleri](../parallel/openmp/reference/openmp-directives.md) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

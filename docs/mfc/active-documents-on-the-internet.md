@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67fdedaf9b100ae85352b1514f96fe7e229e4f9f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0980f048b9be411308b159dea0ceaa71f8eee563
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="active-documents-on-the-internet"></a>Internet'te Etkin Belgeler
 Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Etkin belgeler sayfalı olabilir ve tüm istemci alanında görüntülenir. Bunlar geleneksel menü anlaşma yapın ve yerinde yanı sıra sunucu uygulaması açık bir pencerede düzenlenebilir. Taranmış bir kenarlığı küçük bir dikdörtgen olarak görüntülemek yerine, etkin tam çerçeve ve her zaman yerinde etkin belgelerdir.  
@@ -75,5 +76,5 @@ Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Et
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)   
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)
+ [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
 

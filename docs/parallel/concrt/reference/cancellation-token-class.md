@@ -23,11 +23,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e4e656fa567342dde9ba990bff5b0d8081337385
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a27bb4221e1a8db19f0dd7be37bb6ca3966635de
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token Sınıfı
 `cancellation_token` Sınıfı, başka bir işlem iptal istendi olup olmadığını belirleme özelliğini temsil eder. Verilen bir belirteç ile ilişkili bir `task_group`, `structured_task_group`, veya `task` örtük iptal sağlamak için. Bu ayrıca iptalleri sorgulanmak veya bir geri çağırma için varsa ve kayıtlı sahip ilişkili `cancellation_token_source` iptal edilir.  
@@ -61,7 +62,7 @@ class cancellation_token;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator! =](#operator_neq)||  
+|[operator!=](#operator_neq)||  
 |[işleç =](#operator_eq)||  
 |[operator ==](#operator_eq_eq)||  
   
@@ -190,4 +191,4 @@ template<typename _Function>
  A `cancellation_token_registration` içinde kullanılabilir nesne `deregister` daha önce kaydedilen bir geri çağırma kaydını silmek ve kullanılmasını önlemek için yöntem. Yöntemi özel durum oluşturacak bir [invalid_operation](invalid-operation-class.md) üzerinde çağrıldıysa özel bir `cancellation_token` kullanılarak oluşturulmuş nesne [cancellation_token::none](#none) yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

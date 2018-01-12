@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a38c2edeffbdd2c37e69ce0886c24ca0d2f0b68a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: e7a696562a94a52b444f751ae621ae458ca7e89f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB Tüketici Şablonları (C++)
 OLE DB Tüketici Şablonları OLE DB sürüm 2.6 belirtimini destekler. (OLE DB Tüketici Şablonları OLE DB 2.6 karşı test ancak her arabirimi belirtimini desteklemez.) Tüketici Şablonları bir OLE DB Tüketicisi uygulamak için yazmanız gereken kod miktarını en aza indirir. Şablonlar sağlar:  
@@ -40,13 +43,13 @@ OLE DB Tüketici Şablonları OLE DB sürüm 2.6 belirtimini destekler. (OLE DB 
 ## <a name="how-ole-db-consumers-access-data"></a>OLE DB tüketicileri veri nasıl erişim  
  Tüketiciler, aşağıdaki konularda açıklanan nesneleri çeşitli türlerde kullanın:  
   
--   [Veri kaynakları ve oturumlar](../../data/oledb/data-sources-and-sessions.md)  
+-   [Veri Kaynakları ve Oturumlar](../../data/oledb/data-sources-and-sessions.md)  
   
--   [Erişimciler ve satır kümeleri](../../data/oledb/accessors-and-rowsets.md)  
+-   [Erişimciler ve Satır Kümeleri](../../data/oledb/accessors-and-rowsets.md)  
   
--   [Komutlar ve tablolar](../../data/oledb/commands-and-tables.md)  
+-   [Komutlar ve Tablolar](../../data/oledb/commands-and-tables.md)  
   
--   [Kullanıcı kayıtları](../../data/oledb/user-records.md)  
+-   [Kullanıcı Kayıtları](../../data/oledb/user-records.md)  
   
  Tüketici bir şey yapmadan önce ilk (örneğin, SQL, Oracle, ODBC ve MSDS) erişmesi gereken veritabanı türü için uygun bir OLE DB sağlayıcısı seçin. Bunu yapmak için genellikle bir numaralandırıcı kullanır (bkz [CEnumerator](../../data/oledb/cenumerator-class.md) bölümünde belirtildiği gibi [veri kaynakları ve oturumlar](../../data/oledb/data-sources-and-sessions.md)).  
   

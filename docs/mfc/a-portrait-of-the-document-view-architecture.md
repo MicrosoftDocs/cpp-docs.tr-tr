@@ -25,11 +25,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e79222f908a7b71e81033fb34517834987e6590
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ceadc55945a31e4787287beb6943897784aeaad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>Belge/Görünüm Mimarisinin Bir Özeti
 Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri belgesinde depolanır, ancak görünümü ayrıcalıklı veri erişimi. Belge ayrımı görünümünden depolama ve veri Bakımı kendi görüntüden ayırır.  
@@ -43,7 +44,7 @@ Belgeler ve görünümler tipik bir MFC uygulamasında eşleştirilmelidir. Veri
  Görünümün seçim veya veri düzenleme olarak kendi içinde bir fare tıklatma de yorumlayabilir. Benzer şekilde, tuş vuruşlarınızı veri girişi veya düzenleme olarak yorumlayabilir. Kullanıcı türleri metin yöneten bir görünümde bir dize varsayalım. Görünüm belge için bir işaretçi alır ve bazı veri yapısında depolar belgeye yeni veri iletmek için işaretçiyi kullanır.  
   
 ## <a name="updating-multiple-views-of-the-same-document"></a>Aynı belgenin birden çok görünüm güncelleştiriliyor  
- Bir uygulamada aynı belgenin birden çok görünümlerle — bir metin düzenleyicisinde Bölümlendirici pencere gibi — görünümü, yeni verileri ilk belgeye geçirir.. Belgenin çağırır sonra [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendileri yeni verileri yansıtacak şekilde güncelleştirmek için belgenin tüm görünümleri söyler üye işlevi. Bu görünümler eşitler.  
+ Bir uygulamada aynı belgenin birden çok görünümlerle — bir metin düzenleyicisinde Bölümlendirici pencere gibi — görünümü, yeni verileri ilk belgeye geçirir. Belgenin çağırır sonra [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) kendileri yeni verileri yansıtacak şekilde güncelleştirmek için belgenin tüm görünümleri söyler üye işlevi. Bu görünümler eşitler.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

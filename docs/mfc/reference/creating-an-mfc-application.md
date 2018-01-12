@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eb5f30dfaf3710e1b3dbe782a0aa24b3cd02deb4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e23f1a138bfa6d297c33597b81035a11c1d96c03
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 MFC uygulaması için Microsoft Foundation Class (MFC) kitaplık tabanlı Windows yürütülebilir bir uygulamadır. MFC Uygulama oluşturmak için en kolay yolu, MFC Uygulama Sihirbazı'nı kullanmaktır.  
@@ -33,13 +34,13 @@ MFC uygulaması için Microsoft Foundation Class (MFC) kitaplık tabanlı Window
   
 -   [Windows uygulamaları yazmak için sınıfları kullanma](../../mfc/using-the-classes-to-write-applications-for-windows.md)  
   
--   [İletişim kutuları oluşturma ve görüntüleme](../../mfc/creating-and-displaying-dialog-boxes.md)  
+-   [İletişim Kutuları Oluşturma ve Görüntüleme](../../mfc/creating-and-displaying-dialog-boxes.md)  
   
--   [Bir form tabanlı MFC uygulaması oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)  
+-   [Form Tabanlı MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-forms-based-mfc-application.md)  
   
--   [Dosya Gezgini stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)  
+-   [Dosya Gezgini Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md)  
   
--   [Bir Web tarayıcısı stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)  
+-   [Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)  
   
  MFC Uygulama Sihirbazı'nı uygun sınıfları ve uygulamalar, sihirbazda belirttiğiniz seçeneklere bağlı olarak bu türlerinden herhangi birini dosyaları oluşturur.  
   

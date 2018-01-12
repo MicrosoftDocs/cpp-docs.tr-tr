@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58fbff4a5192d15a60cf3340ce762574947fb249
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01766dd741ed87d9ac11b8858221a1bd09b0cf31
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-data-validation"></a>İletişim Verisi Doğrulama
 Veri değişimi ek doğrulama DDV işlevlerini çağırarak örnekte gösterildiği gibi belirtebilirsiniz [iletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md). `DDV_MaxChars` Örnek çağrısında doğrular, metin kutusu denetimi girilen dize 20 karakterden uzun değil. Doğrulama başarısız olursa ve kullanıcı verileri yeniden girebilmek için sorunlu denetimi odağı koyar DDV işlevi genellikle bir ileti kutusu kullanıcıyla uyarır. Belirli bir denetim için DDV işlevi hemen sonra DDX işlevi için aynı denetim çağrılmalıdır.  
@@ -36,5 +37,5 @@ Veri değişimi ek doğrulama DDV işlevlerini çağırarak örnekte gösterildi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md)   
  [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)   
- [İletişim kutusu veri değişimi](../mfc/dialog-data-exchange.md)
+ [İletişim Kutusu Veri Değişimi](../mfc/dialog-data-exchange.md)
 

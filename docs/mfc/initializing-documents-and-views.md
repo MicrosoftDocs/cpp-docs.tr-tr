@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7cce7a5d24062d06ed1f12d49e4754627f28aa92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f80d870f9804454dc652fdda00f34fcdb7a52062
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="initializing-documents-and-views"></a>Belgeleri ve Görünümleri Başlatma
 Belge sınıfı her iki yönde desteklemesi gerekir böylece belgeleri iki farklı şekilde oluşturulur. İlk olarak, kullanıcı yeni, boş bir belge dosya yeni komutla oluşturabilirsiniz. Bu durumda geçersiz kılma belgede başlatma [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) sınıfının üye işlevini [CDocument](../mfc/reference/cdocument-class.md). İkinci olarak, içeriği bir dosyadan okunan yeni bir belge oluşturmak için kullanıcı Aç komutu Dosya menüsünde kullanabilirsiniz. Bu durumda geçersiz kılma belgede başlatma [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) sınıfının üye işlevini **CDocument**. Her iki başlatmada aynıysa iki geçersiz kılmaları, ortak bir üye işlevi çağırabilir veya `OnOpenDocument` çağırabilirsiniz `OnNewDocument` temiz bir belge başlatmak ve açma işlemi tamamlamak için.  
@@ -31,5 +32,5 @@ Belge sınıfı her iki yönde desteklemesi gerekir böylece belgeleri iki farkl
  Kendi belgeleri oluşturulduktan sonra görünümlerin oluşturulur. Belge çerçeve penceresi ve görünüm oluşturma framework tamamlandıktan sonra bir görünüm başlatmak için en iyi saattir. Geçersiz kılarak görünümünüzü başlatabilir [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) üye işlevini [CView](../mfc/reference/cview-class.md). Yeniden başlatın veya hiçbir şey ayarlamak gerekiyorsa, belge değişiklikleri her zaman, geçersiz kılabilirsiniz [in](../mfc/reference/cview-class.md#onupdate).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlatma ve belgeleri ve görünümleri temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
+ [Belgeleri ve Görünümleri Başlatma ve Temizleme](../mfc/initializing-and-cleaning-up-documents-and-views.md)
 

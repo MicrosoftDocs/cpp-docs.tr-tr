@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f257f12ebcf49ea12fded5e658ce2c2e25d4156c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 81ec1f2a1f419715a3e8e9fbac2fcba3c7584a9b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-handling-and-command-targets"></a>İleti İşleme ve Komut Hedefleri
 Komut gönderme arabirimi `IOleCommandTarget` sorgulamak ve komutları yürütmek için basit ve Genişletilebilir bir mekanizma tanımlar. Bu mekanizma Otomasyonu'nun basittir `IDispatch` tamamen komutları; standart kümesinde kullandığından komutları nadiren sahip bağımsız değişkenler ve hiçbir tür bilgileri söz konusu (de komut bağımsız değişkenleri için tür güvenliği yayınladıklarını).  
@@ -58,5 +59,5 @@ interface IOleCommandTarget : IUnknown
  `QueryStatus` Yöntemini burada belirli bir komut kümesi, kümesi ile tanımlanmasını olup olmadığını sınar bir **GUID**, desteklenir. Bu çağrı bir dizi doldurur **OLECMD** komutları yanı sıra bir komut ve/veya durum bilgisi adını tanımlayan bir metin döndüren desteklenen listesiyle değerleri (yapıları). Çağıran bir komutunu Çağır istediğinde komutu geçirebilirsiniz (ve kümesi **GUID**) için **Exec** seçenekleri ve bağımsız değişkenleri ile birlikte bir dönüş değeri geri alamazsınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Etkin belge kapsayıcıları](../mfc/active-document-containers.md)
+ [Etkin Belge Kapsayıcıları](../mfc/active-document-containers.md)
 

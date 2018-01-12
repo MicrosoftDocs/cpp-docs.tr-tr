@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4375b995ec60197f1e1f9f8238f1542ec7d1d313
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3c6386c5baf4af7447e4d3c711e644cb2ae5209a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl Kullanma
 "Sekme denetimi" Bölücü bir dizüstü bilgisayarın veya bir dosya dolabı etiketli klasörlerde benzerdir. Sınıfı tarafından temsil edilen sekme denetimi kullanmak [CTabCtrl](../mfc/reference/ctabctrl-class.md), bir kullanıcıya bir eş veya her bir sayfa arasındaki mantıksal ilişki öneren bir biçimde bir defada birden çok sayfa bilgiler veya denetimler göstermek için.  
@@ -30,20 +31,20 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Sekme denetimleri ve özellik sayfaları](../mfc/tab-controls-and-property-sheets.md)  
+-   [Sekme Denetimleri ve Özellik Sayfaları](../mfc/tab-controls-and-property-sheets.md)  
   
--   [Sekme ve sekme denetimi öznitelikleri](../mfc/tabs-and-tab-control-attributes.md)  
+-   [Sekme ve Sekme Denetimi Öznitelikleri](../mfc/tabs-and-tab-control-attributes.md)  
   
--   [Sahip tarafından çizilmiş sekmeler yapma](../mfc/making-owner-drawn-tabs.md)  
+-   [Sahip Tarafından Çizilmiş Sekmeler Yapma](../mfc/making-owner-drawn-tabs.md)  
   
--   [Sekme denetimiyle çalışma](../mfc/working-with-a-tab-control.md)  
+-   [Sekme Denetimiyle Çalışma](../mfc/working-with-a-tab-control.md)  
   
--   [Sekme denetimi oluşturma](../mfc/creating-the-tab-control.md)  
+-   [Sekme Denetimi Oluşturma](../mfc/creating-the-tab-control.md)  
   
--   [Sekme denetimine sekmeler ekleme](../mfc/adding-tabs-to-a-tab-control.md)  
+-   [Sekme Denetimine Sekmeler Ekleme](../mfc/adding-tabs-to-a-tab-control.md)  
   
--   [Sekme denetimi bildirim iletilerini işleme](../mfc/processing-tab-control-notification-messages.md)  
+-   [Sekme Denetimi Bildirim İletilerini İşleme](../mfc/processing-tab-control-notification-messages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

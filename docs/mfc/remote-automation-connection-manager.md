@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1a3085c92335aa6a2e0c5cd79cebb733688448a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf316653b2f968fd5373c6265bb4f3f3ef3b0ba4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remote-automation-connection-manager"></a>Uzak Otomasyon Bağlantı Yöneticisi
 İstemci ve sunucu makinelerini yapılandırmak için kayıt defteri değişiklikler yapmanız gerekir. El ile bunu yerine, uzak Otomasyon bağlantı (RAC) Yöneticisi aracını kullanmak çok daha kolay olur. Bu araç, RACMGR32. RACREG32 birlikte EXE. DLL, seçtiğiniz herhangi bir dizine kopyalanması gerekir. YOLU koyma da Çalıştır'ı kullanarak görev çubuğundan çalıştırılabilir. Alternatif olarak, bir kısayol oluşturun veya bir başvuru Başlat menüsünde yerleştirin.  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon Yöneticisi (MFC)](../mfc/automation-manager-mfc.md)   
  [Uzak Otomasyon kullanıcı bileşenleri](../mfc/remote-automation-user-components.md)   
- [Uzak Otomasyon yüklemesi](../mfc/remote-automation-installation.md)
+ [Uzak Otomasyon Yüklemesi](../mfc/remote-automation-installation.md)
 

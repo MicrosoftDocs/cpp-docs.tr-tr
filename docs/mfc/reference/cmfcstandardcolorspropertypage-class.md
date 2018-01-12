@@ -14,11 +14,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67b0c3ae4f8b6cd05fa12fb0121e1b0144b45df8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 60deb16628802e61ac411d576558a8659a638410
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcstandardcolorspropertypage-class"></a>CMFCStandardColorsPropertyPage sınıfı
 Renk iletişim kutusu içinde standart renkler seçmek için kullanıcıların kullanın bir özellik sayfasını temsil eder.  
@@ -69,4 +70,4 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md)   
- [CMFCCustomColorsPropertyPage sınıfı](../../mfc/reference/cmfccustomcolorspropertypage-class.md)
+ [CMFCCustomColorsPropertyPage Sınıfı](../../mfc/reference/cmfccustomcolorspropertypage-class.md)

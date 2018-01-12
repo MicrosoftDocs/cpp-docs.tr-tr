@@ -10,11 +10,12 @@ ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6ba1b01baf6c5d30da86821a976202bb5936c868
-ms.sourcegitcommit: 69632887f7a85f4841c49b4c1353d3144927a52c
+ms.workload: cplusplus
+ms.openlocfilehash: 631cd4f872c7b8912b791417c04f6c6e9e056bdd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4772"></a>Derleyici Uyarısı (düzey 1) C4772
 

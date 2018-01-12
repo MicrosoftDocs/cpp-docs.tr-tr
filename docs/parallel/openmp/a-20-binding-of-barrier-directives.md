@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8d88c431753d918c05866324dd6436a091d6057a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5b8cc2799f0aea9e75b3aad44d3cfa9e3f5e7de4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="a20---binding-of-barrier-directives"></a>A.20   barrier Yönergelerini Bağlama
 Yönerge bağlama kuralları çağrısı için bir **engel** en yakın kapsayan bağlamak için yönergesi `parallel` yönergesi. Yönerge bağlama hakkında daha fazla bilgi için bkz: [bölüm 2.8](../../parallel/openmp/2-8-directive-binding.md) sayfasında 32.  

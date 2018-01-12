@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 67be684e04a2ff8d97c58f625f1be39834813b70
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92583bba3dca60caa2895966a87571dc60805475
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT Yapısı
 `PAINTSTRUCT` Yapısı penceresinin istemci alanını boyamak için kullanılan bilgileri içerir.  

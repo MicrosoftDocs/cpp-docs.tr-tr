@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3feb2d9d72fbfcda7237ed0889158b1ee4f2a844
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ed20c29d017527d5c2ce0b0c5ab8053fc75dc6ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="purpose-of-attributes"></a>Özniteliklerin Amacı
 Öznitelikleri C++ dili Klasik yapısını bozmadan şu anda olası yönde genişletir. Öznitelikleri sağlayıcıları (dinamik olarak dil işlevselliğini genişletmek için ayrı DLL'ler) izin verir. Öznitelikleri birincil amacı, bileşen Geliştirici üretkenliği düzeyini artırma ek olarak, COM bileşenlerini yazma kolaylaştırmaktır. Öznitelikleri uygulanabilir sınıfları, veri üyeleri veya üye işlevleri gibi neredeyse tüm C++ yapı için. Bu yeni teknoloji tarafından sağlanan avantajlarından Vurgu verilmiştir:  

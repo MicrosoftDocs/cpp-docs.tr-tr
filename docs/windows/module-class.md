@@ -15,11 +15,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2536d406293d84db2ce5d5bd3e0292e0e57920e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d17e0dc79241fbd84e282b9cd8403259e34def0e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="module-class"></a>Modül Sınıfı
 İlgili nesneler koleksiyonunu temsil eder.  
@@ -50,15 +53,15 @@ class Module<OutOfProc> : public Module<InProc>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::GenericReleaseNotifier sınıfı](../windows/module-genericreleasenotifier-class.md)|Son nesne geçerli modülünde yayımlandığında, bir olay işleyiciyi çağırır. Olay işleyicisi lambda, functor veya işaretçi işlevi belirtilir.|  
-|[Module::MethodReleaseNotifier sınıfı](../windows/module-methodreleasenotifier-class.md)|Son nesne geçerli modülünde yayımlandığında, bir olay işleyiciyi çağırır. Olay işleyicisi bir nesne ve kendi yöntemi için işaretçi üyesi tarafından belirtilir.|  
-|[Module::ReleaseNotifier sınıfı](../windows/module-releasenotifier-class.md)|Bir modül son nesnesinde yayımlandığında, bir olay işleyiciyi çağırır.|  
+|[Module::GenericReleaseNotifier Sınıfı](../windows/module-genericreleasenotifier-class.md)|Son nesne geçerli modülünde yayımlandığında, bir olay işleyiciyi çağırır. Olay işleyicisi lambda, functor veya işaretçi işlevi belirtilir.|  
+|[Module::MethodReleaseNotifier Sınıfı](../windows/module-methodreleasenotifier-class.md)|Son nesne geçerli modülünde yayımlandığında, bir olay işleyiciyi çağırır. Olay işleyicisi bir nesne ve kendi yöntemi için işaretçi üyesi tarafından belirtilir.|  
+|[Module::ReleaseNotifier Sınıfı](../windows/module-releasenotifier-class.md)|Bir modül son nesnesinde yayımlandığında, bir olay işleyiciyi çağırır.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Modül:: ~ Module yok Edicisi](../windows/module-tilde-module-destructor.md)|Modül sınıfının geçerli örneği deinitializes.|  
+|[Module::~Module Yıkıcısı](../windows/module-tilde-module-destructor.md)|Modül sınıfının geçerli örneği deinitializes.|  
   
 ### <a name="protected-constructors"></a>Korumalı Oluşturucular  
   
@@ -70,33 +73,33 @@ class Module<OutOfProc> : public Module<InProc>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::Create yöntemi](../windows/module-create-method.md)|Bir modül bir örneğini oluşturur.|  
-|[Module::DecrementObjectCount yöntemi](../windows/module-decrementobjectcount-method.md)|Nesne sayısı modül tarafından izlenen azaltır.|  
-|[Module::GetActivationFactory yöntemi](../windows/module-getactivationfactory-method.md)|Modül için bir etkinleştirme üreteci alır.|  
-|[Module::GetClassObject yöntemi](../windows/module-getclassobject-method.md)|Sınıf oluşturucuları önbelleği Retreives.|  
-|[Module::GetModule yöntemi](../windows/module-getmodule-method.md)|Bir modül bir örneğini oluşturur.|  
-|[Module::GetObjectCount yöntemi](../windows/module-getobjectcount-method.md)|Bu modülü tarafından yönetilen nesne sayısını alır.|  
-|[Module::ıncrementobjectcount yöntemi](../windows/module-incrementobjectcount-method.md)|Bir modül tarafından izlenen nesne sayısını artırır.|  
-|[Module::RegisterCOMObject yöntemi](../windows/module-registercomobject-method.md)|Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla COM nesneleri kaydeder.|  
-|[Module::RegisterObjects yöntemi](../windows/module-registerobjects-method.md)|Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.|  
-|[Module::RegisterWinRTObject yöntemi](../windows/module-registerwinrtobject-method.md)|Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.|  
-|[Module::Terminate yöntemi](../windows/module-terminate-method.md)|Kapatmak için modülü tarafından örneği tüm oluşturucuları neden olur.|  
-|[Module::UnregisterCOMObject yöntemi](../windows/module-unregistercomobject-method.md)|Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.|  
-|[Module::UnregisterObjects yöntemi](../windows/module-unregisterobjects-method.md)|Böylece diğer uygulamalar için bağlanamıyor Belirtilen modül nesneleri kaydını siler.|  
-|[Module::UnregisterWinRTObject yöntemi](../windows/module-unregisterwinrtobject-method.md)|Diğer uygulamalar için bağlanamıyor böylece bir veya daha fazla Windows çalışma zamanı nesneleri kaydını siler.|  
+|[Module::Create Metodu](../windows/module-create-method.md)|Bir modül bir örneğini oluşturur.|  
+|[Module::DecrementObjectCount Metodu](../windows/module-decrementobjectcount-method.md)|Nesne sayısı modül tarafından izlenen azaltır.|  
+|[Module::GetActivationFactory Metodu](../windows/module-getactivationfactory-method.md)|Modül için bir etkinleştirme üreteci alır.|  
+|[Module::GetClassObject Metodu](../windows/module-getclassobject-method.md)|Sınıf oluşturucuları önbelleği Retreives.|  
+|[Module::GetModule Metodu](../windows/module-getmodule-method.md)|Bir modül bir örneğini oluşturur.|  
+|[Module::GetObjectCount Metodu](../windows/module-getobjectcount-method.md)|Bu modülü tarafından yönetilen nesne sayısını alır.|  
+|[Module::IncrementObjectCount Metodu](../windows/module-incrementobjectcount-method.md)|Bir modül tarafından izlenen nesne sayısını artırır.|  
+|[Module::RegisterCOMObject Metodu](../windows/module-registercomobject-method.md)|Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla COM nesneleri kaydeder.|  
+|[Module::RegisterObjects Metodu](../windows/module-registerobjects-method.md)|Diğer uygulamalar için bağlanabilmesi için COM veya Windows çalışma zamanı nesneleri kaydeder.|  
+|[Module::RegisterWinRTObject Metodu](../windows/module-registerwinrtobject-method.md)|Diğer uygulamalar için bağlanabilmesi için bir veya daha fazla Windows çalışma zamanı nesneleri kaydeder.|  
+|[Module::Terminate Metodu](../windows/module-terminate-method.md)|Kapatmak için modülü tarafından örneği tüm oluşturucuları neden olur.|  
+|[Module::UnregisterCOMObject Metodu](../windows/module-unregistercomobject-method.md)|Bir veya daha fazla COM nesneleri, diğer uygulamalar için bağlanmasını engelleyen kaydını siler.|  
+|[Module::UnregisterObjects Metodu](../windows/module-unregisterobjects-method.md)|Böylece diğer uygulamalar için bağlanamıyor Belirtilen modül nesneleri kaydını siler.|  
+|[Module::UnregisterWinRTObject Metodu](../windows/module-unregisterwinrtobject-method.md)|Diğer uygulamalar için bağlanamıyor böylece bir veya daha fazla Windows çalışma zamanı nesneleri kaydını siler.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::Create yöntemi](../windows/module-create-method.md)|Bir modül bir örneğini oluşturur.|  
+|[Module::Create Metodu](../windows/module-create-method.md)|Bir modül bir örneğini oluşturur.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Module::objectCount_ veri üyesi](../windows/module-objectcount-data-member.md)|Kaç tane sınıfları ile oluşturulmuş izler [olun](../windows/make-function.md) işlevi.|  
-|[Module::releaseNotifier_ veri üyesi](../windows/module-releasenotifier-data-member.md)|Bir işaretçi bir ReleaseNotifier nesnesine tutar.|  
+|[Module::objectCount_ Veri Üyesi](../windows/module-objectcount-data-member.md)|Kaç tane sınıfları ile oluşturulmuş izler [olun](../windows/make-function.md) işlevi.|  
+|[Module::releaseNotifier_ Veri Üyesi](../windows/module-releasenotifier-data-member.md)|Bir işaretçi bir ReleaseNotifier nesnesine tutar.|  
   
 ### <a name="macros"></a>Makrolar  
   
@@ -119,4 +122,4 @@ class Module<OutOfProc> : public Module<InProc>;
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

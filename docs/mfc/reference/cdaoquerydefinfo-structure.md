@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 64c8fe002c5b24e67d53b781a68411cffdd79928
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e476fd8e95b48b59bbb3bae41d9ad84829ca8fa9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdaoquerydefinfo-structure"></a>CDaoQueryDefInfo Yapısı
 `CDaoQueryDefInfo` Yapısı için veri erişim nesneleri (DAO) tanımlanan QueryDefs hakkında bilgiler içerir.  
@@ -113,4 +114,4 @@ struct CDaoQueryDefInfo
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CDaoQueryDef sınıfı](../../mfc/reference/cdaoquerydef-class.md)   
- [CDaoDatabase sınıfı](../../mfc/reference/cdaodatabase-class.md)
+ [CDaoDatabase Sınıfı](../../mfc/reference/cdaodatabase-class.md)

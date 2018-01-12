@@ -37,11 +37,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 657483c85c8b2f03d4a78e76cdc28a5dfff496e2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 32413fe7939b5e5d5d3d41bf32a923dd308f0395
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccmdui-class"></a>Ccmduı sınıfı
 İçinde yalnızca kullanılan bir `ON_UPDATE_COMMAND_UI` işleyicisinde bir `CCmdTarget`-türetilmiş sınıf.  
@@ -216,4 +217,4 @@ virtual void SetText(LPCTSTR lpszText);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek MDI](../../visual-cpp-samples.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CCmdTarget sınıfı](../../mfc/reference/ccmdtarget-class.md)
+ [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)

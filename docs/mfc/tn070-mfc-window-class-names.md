@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a652d4306e01d15d49ae6f931041d3d5dd9909f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 183fd4c76fc8df092c5b7740ff5de2e35b64d682
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC Pencere Sınıfı Adları
 > [!NOTE]
@@ -53,5 +54,5 @@ Afx:%x:%x:%x:%x:%x
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sayıya göre teknik notlar](../mfc/technical-notes-by-number.md)   
  [Kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md)   
- [: TN020 kimlik adlandırma ve numaralandırma kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)
+ [TN020: Kimlik Adlandırma ve Numaralandırma Kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)
 

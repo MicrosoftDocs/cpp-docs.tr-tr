@@ -19,11 +19,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 56f73aec78af0fe34d8c3881911a6ae1d7f26501
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2929cd6466b0e05cf2ae029eaee0cbe214d3a17c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-retrieve-time-elapsed-since-startup-ccli"></a>Nasıl yapılır: Başlangıçtan İtibaren Geçen Zamanı Alma (C++/CLI)
 Aşağıdaki kod örneğinde değer çizgisi sayısının nasıl belirleneceğini göstermektedir veya başlatılmasından itibaren Windows geçen milisaniye sayısı. Bu değer depolanan <xref:System.Environment.TickCount%2A?displayProperty=fullName> üye ve 32-bit değeri olduğu için yaklaşık her 24.9 günde sıfırlar.  
@@ -55,4 +58,4 @@ int main( )
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows işlemleri (C + +/ CLI)](../dotnet/windows-operations-cpp-cli.md)   
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

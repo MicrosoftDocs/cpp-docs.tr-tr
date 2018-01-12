@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f5741f6b09ec466c04794bf049222d344df34a85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ef95c252621aa7f725098dfcd08c7b5b3620826
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wizard-support-for-other-languages"></a>Diğer Diller için Sihirbaz Desteği
 Visual Studio yüklediğinizde, kurulum uygulaması sisteminizde listelenen yerel algılar ve uygun dil şablon ya da yerel şablonlarını yükler. Örneğin, Batı Avrupa yerel ayarlar için İngilizce, Fransızca, İtalyanca, İspanyolca ve Almanca Kurulum yükler. Bu diller görünür **kaynak dili** listesini [uygulama türü](../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.  
@@ -48,7 +49,7 @@ Visual Studio yüklediğinizde, kurulum uygulaması sisteminizde listelenen yere
 |Almanca|1031|  
 |İtalyanca|1040|  
 |Japonca|1041|  
-|Korece|1042|  
+|Kore Dili|1042|  
 |İspanyolca|3082|  
   
 ## <a name="format-of-visual-c-wizard-generated-files"></a>Visual C++ sihirbaz tarafından oluşturulan dosya biçimi  

@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 76fc842626890f48b641a495567338404330d8d4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3112c092a4e1d6eb970fb50153c543baa98ee853
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dispatch-maps"></a>Eşlemeleri Dağıtma
 OLE Otomasyon yöntemlerini çağırmaya ve uygulamalar arasında özelliklere erişmek için yöntemler sağlar. Bu istekleri gönderme için Microsoft Foundation Class Kitaplığı tarafından sağlanan "nesne işlevler ve Özellikler yanı sıra, Özellikler'in ve veri türleri iç ve dış adlarını atar gönderme harita" mekanizmadır işlev bağımsız değişkenleri.  
@@ -129,10 +130,10 @@ DISP_FUNCTION(
 |Simgesi|Dönüş türü|  
 |------------|-----------------|  
 |`VT_EMPTY`|`void`|  
-|`VT_I2`|**kısa**|  
-|`VT_I4`|**uzun**|  
-|`VT_R4`|**kayan nokta**|  
-|`VT_R8`|**çift**|  
+|`VT_I2`|**short**|  
+|`VT_I4`|**long**|  
+|`VT_R4`|**float**|  
+|`VT_R8`|**double**|  
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**TARİH**|  
 |`VT_BSTR`|`BSTR`|  
@@ -210,10 +211,10 @@ DISP_PROPERTY(
   
 |Simgesi|**Özellik türü**|  
 |------------|-----------------------|  
-|`VT_I2`|**kısa**|  
-|`VT_I4`|**uzun**|  
-|`VT_R4`|**kayan nokta**|  
-|`VT_R8`|**çift**|  
+|`VT_I2`|**short**|  
+|`VT_I4`|**long**|  
+|`VT_R4`|**float**|  
+|`VT_R8`|**double**|  
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**TARİH**|  
 |`VT_BSTR`|`CString`|  
@@ -299,10 +300,10 @@ DISP_PROPERTY_NOTIFY(
   
 |Simgesi|**Özellik türü**|  
 |------------|-----------------------|  
-|`VT_I2`|**kısa**|  
-|`VT_I4`|**uzun**|  
-|`VT_R4`|**kayan nokta**|  
-|`VT_R8`|**çift**|  
+|`VT_I2`|**short**|  
+|`VT_I4`|**long**|  
+|`VT_R4`|**float**|  
+|`VT_R8`|**double**|  
 |`VT_CY`|**CY**|  
 |`VT_DATE`|**TARİH**|  
 |`VT_BSTR`|`CString`|  

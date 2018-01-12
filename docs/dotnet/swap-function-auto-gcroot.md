@@ -17,11 +17,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5aecd0e745566a357612af2df3cf7f1be9d5ebe8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8696d5029b0ed412f31a2be3fe7af35239a99e3d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="swap-function-autogcroot"></a>swap İşlevi (auto_gcroot)
 Değiştirir biri arasında nesneleri `auto_gcroot` ve başka bir.  
@@ -77,4 +80,4 @@ s1 = 'string two', s2 = 'string one'
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [auto_gcroot](../dotnet/auto-gcroot.md)   
- [auto_gcroot::Swap](../dotnet/auto-gcroot-swap.md)
+ [auto_gcroot::swap](../dotnet/auto-gcroot-swap.md)

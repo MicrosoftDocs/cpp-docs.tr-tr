@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6531459f26605aa63eccbe69c84959b2abe70493
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 159391bc7d362c755c194f478692b2a271d779ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listsort-stlclr"></a>list::sort (STL/CLR)
 Denetimli dizisi sıralar.  
@@ -94,4 +97,4 @@ a b c
  [List::Merge (STL/CLR)](../dotnet/list-merge-stl-clr.md)   
  [List::reverse (STL/CLR)](../dotnet/list-reverse-stl-clr.md)   
  [List::splice (STL/CLR)](../dotnet/list-splice-stl-clr.md)   
- [List::Unique (STL/CLR)](../dotnet/list-unique-stl-clr.md)
+ [list::unique (STL/CLR)](../dotnet/list-unique-stl-clr.md)

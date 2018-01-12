@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b4e30b024b6a83a7ea2069386cff3166ce518faa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1cf5c850158e445e7695b85e540b1e0c162e621c
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor sınıfı
 Uzun bir işlem yaparken, genellikle bir kum saati görüntülenen bir bekleme imleç göstermek için bir satır içi bir yol sağlar.  
@@ -119,7 +120,7 @@ void Restore();
  [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)   
  [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)   
  [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)   
- [I: fare imleci bir Microsoft Foundation Class uygulamada nasıl değişiyor](http://go.microsoft.com/fwlink/linkid=128044)
+ [I: fare imleci bir Microsoft Foundation Class uygulamada nasıl değişiyor](http://go.microsoft.com/fwlink/p/?linkid=128044)
 
 
 

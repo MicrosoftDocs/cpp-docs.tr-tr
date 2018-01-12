@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92c3270afc783ea14052e5f70b0640919df26997
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1851460d5cf9deb8a803b13ec75d92c45c03e607
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="application-settings-mfc-dll-wizard"></a>Uygulama Ayarları, MFC DLL Sihirbazı
 Tasarım ve yeni bir MFC DLL projesi temel özellikleri eklemek için MFC DLL Sihirbazı'nın bu sayfayı kullanın.  
@@ -39,7 +40,7 @@ Tasarım ve yeni bir MFC DLL projesi temel özellikleri eklemek için MFC DLL Si
 ## <a name="additional-features"></a>Ek Özellikler  
  MFC DLL Otomasyon destekleyip desteklemeyeceğini ve Windows sockets desteği gerekmediğini seçin.  
   
- **Otomasyon**  
+ **Otomatikleştirme**  
  Seçin **Otomasyon** programınızı başka bir programda uygulanan nesneleri işlemek izin vermek için. Seçme **Otomasyon** programınızı diğer Otomasyon istemcileri için de sunar. Bkz: [Otomasyon](../../mfc/automation.md) daha fazla bilgi için.  
   
  **Windows Yuvaları**  
@@ -49,5 +50,5 @@ Tasarım ve yeni bir MFC DLL projesi temel özellikleri eklemek için MFC DLL Si
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC DLL Sihirbazı](../../mfc/reference/mfc-dll-wizard.md)   
- [MFC DLL projesi oluşturma](../../mfc/reference/creating-an-mfc-dll-project.md)
+ [MFC DLL Projesi Oluşturma](../../mfc/reference/creating-an-mfc-dll-project.md)
 

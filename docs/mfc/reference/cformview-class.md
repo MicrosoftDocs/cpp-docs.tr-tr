@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f22256f7e471fd30753db36ba53059b2588e0da8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 386e28631d20721f22eb2b778ffbe2e1d4b1824d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cformview-class"></a>Cformview'yu sınıfı
 Form görünümleri için kullanılan temel sınıf.  
@@ -119,4 +120,4 @@ BOOL IsInitDlgCompleted() const;
  [CScrollView sınıfı](../../mfc/reference/cscrollview-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CDialog sınıfı](../../mfc/reference/cdialog-class.md)   
- [CScrollView sınıfı](../../mfc/reference/cscrollview-class.md)
+ [CScrollView Sınıfı](../../mfc/reference/cscrollview-class.md)

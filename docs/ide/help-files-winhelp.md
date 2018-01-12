@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a5036aa329c0b4004bd7ada724c62e1a1669f050
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a5698f7001512c5a4f8c45b5c787f35c9ce0ca6c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="help-files-winhelp"></a>Yardım Dosyaları (WinHelp)
 Yardım desteği WinHelp türünü seçerek uygulamanızı eklediğinizde, aşağıdaki dosyalar oluşturulur **bağlama duyarlı Yardım** onay kutusunu ve ardından seçerek **WinHelp biçimi** içinde[Gelişmiş Özellikler](../mfc/reference/advanced-features-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.  
@@ -37,9 +38,9 @@ Yardım desteği WinHelp türünü seçerek uygulamanızı eklediğinizde, aşa�
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|  
 |---------------|------------------------|--------------------------------|-----------------|  
 |*PROJNAME*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Yardım Derleyici tarafından programınızı veya denetimin Yardım dosyası oluşturmak için kullanılan proje dosyası.|  
-|*PROJNAME*.rtf|*PROJNAME*\hlp|Project|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|  
+|*PROJNAME*.rtf|*PROJNAME*\hlp|Proje|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|  
 |Makehelp.bat|*PROJNAME*|Kaynak dosyaları|Projesi derlendiğinde Yardım Projeyi derlemek için sistem tarafından kullanılır.|  
 |Bullet.bmp|*PROJNAME*|Kaynak Dosyalar|Madde işaretli listeler göstermek için standart dosya Yardımı tarafından kullanılır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++ projeleri için oluşturulan dosya türleri](../ide/file-types-created-for-visual-cpp-projects.md)
+ [Visual C++ Projeleri için Oluşturulan Dosya Türleri](../ide/file-types-created-for-visual-cpp-projects.md)

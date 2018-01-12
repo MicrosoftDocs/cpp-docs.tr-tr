@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c9fc4999b1ca5c04abf2e867c46fc568d3da95c3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 83eeb1c7fd3032ae33c213f17522b171bdb46e55
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-the-framework-calls-your-code"></a>Framework'ün Kodunuzu Çağırması
 Kaynak kodunuz ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir. Uygulamanızı çalıştığında, denetim akışını çoğunu framework'ün kodda yer alıyor. Framework'te kullanıcı komutları seçer ve bir görünümündeki verileri düzenler gibi Windows iletilerini alır ileti döngüsü yönetir. Framework tek başına işleyebilir olayları kodunuz üzerinde hiç kullanmayın. Örneğin, çerçeve pencereleri kapatın ve kullanıcı komutlarına yanıt olarak uygulamadan çıkmak bilir. Bu görevleri işleme gibi framework fırsatlar bu olaylarına yanıt vermek için ileti işleyicileri ve C++ sanal işlevleri kullanır. Kodunuz denetiminde değildir, ancak:; çerçevedir.  
@@ -41,5 +42,5 @@ Kaynak kodunuz ve MFC çerçevesi kodda arasındaki ilişkiyi anlamak önemlidir
  Daha fazla bilgi için bkz: [sınıfı CWinApp: uygulama sınıfı](../mfc/cwinapp-the-application-class.md) ve [belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework'te derleme](../mfc/building-on-the-framework.md)
+ [Framework'te Derleme](../mfc/building-on-the-framework.md)
 

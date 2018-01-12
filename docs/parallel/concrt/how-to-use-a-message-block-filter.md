@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48649931d20d344e724bd0d3ae7c64a43caa9549
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: adcb300daa81c1325b216128b1971408a5931553
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-use-a-message-block-filter"></a>Nasıl yapılır: İleti Bloğu Filtresini Kullanma
 Bu belge, kabul etme veya reddetme ileti yükünü temel alınarak bir ileti için bir zaman uyumsuz ileti bloğu etkinleştirmek için bir filtre işlevi kullanmak gösterilmiştir.  
@@ -71,4 +72,4 @@ bool (T const &)
  [Zaman uyumsuz aracılar kitaplığı](../../parallel/concrt/asynchronous-agents-library.md)   
  [İzlenecek yol: bir veri akışı Aracısı oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)   
  [İzlenecek yol: bir görüntü işleme ağı oluşturma](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)   
- [Transformer sınıfı](../../parallel/concrt/reference/transformer-class.md)
+ [transformer Sınıfı](../../parallel/concrt/reference/transformer-class.md)

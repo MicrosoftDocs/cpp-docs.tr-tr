@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95ce4882f05dece5fc00b6a00cb994e5e78b479d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bfaad06571a8648db24497c46d55cb2eb1ce2157
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>Tarih ve Saat Seçici Denetiminde Özel Biçim Dizeleri Kullanma
 Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri (için benzersiz bir stil karşılık gelen her biçim) biçiminde tarih ve Saat Seçici denetimleri sağlar:  
@@ -42,5 +43,5 @@ Varsayılan olarak, geçerli tarih ve saati görüntülemek için üç türleri 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDateTimeCtrl kullanma](../mfc/using-cdatetimectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

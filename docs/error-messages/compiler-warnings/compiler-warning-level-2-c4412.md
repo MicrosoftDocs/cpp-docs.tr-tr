@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2cac6336997ee7ff7a72264ad8449b7d6190255e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 92898b9c8e8845ecc8bc650b80cf41a33b3a59d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-2-c4412"></a>Derleyici Uyarısı (Düzey 2) C4412'yi
 'function': işlev imzası içeren türü 'type'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.  

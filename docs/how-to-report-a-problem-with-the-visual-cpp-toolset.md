@@ -1,23 +1,22 @@
 ---
 title: "Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 1/03/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs: C++
-ms.assetid: ec24a49c-411d-47ce-aa4b-8398b6d3e8f6
-caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4a669b2935e4c21421d0c760e6de0c5c7340bed4
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload: cplusplus
+ms.openlocfilehash: b1a5cdb873d536702ecf8536d9a9e7c0205cc923
+ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset"></a>Visual C++ araç ile ilgili bir sorun bildirme
 
@@ -29,9 +28,9 @@ Bu belgede, okumanız
 
 - [Raporunuzu hazırlamak nasıl](#prepare), ve ne iyi bir rapor sağlar.
 
-- [Raporunuzu gönderme yolları](#send), ve bunları farklı kılan.
-
 - [Bir yeniden oluşturma oluşturmak nasıl](#generate)ve repros farklı türde.
+
+- [Raporunuzu gönderme yolları](#send), ve bunları farklı kılan.
 
 Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
 
@@ -47,7 +46,7 @@ En azından raporunuzu içermelidir
 
 - Karşılaşılan sorunla ayrıntılı bir açıklaması.
 
-- 'Yeniden oluşturma' — kaynak kodu sorun gösterilmektedir.
+- 'Yeniden oluşturma': kaynak kodu sorun gösterilmektedir.
 
 İçin okumaya öğrenin daha hakkındaki belirli bilgileri biz gereksinimini ve burada bulabilirsiniz.
 
@@ -94,7 +93,7 @@ Bu bilgileri bulmak için en iyi derleme günlüğünde sorunlu hemen sonra yerd
 
 #### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini bildirmek için
 
-1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosyası şu konumdadır \\...\Visual Studio Version\Projects\SolutionName\ProjectName\Config\ProjectName.tlog\CL.command.1.tlog.
+1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosyası şu konumdadır \\...\Visual Studio *sürüm*\Projects\\*SolutionName*\\*ProjectName*\ Config\\*ProjectName*.tlog\CL.command.1.tlog.
 
    Bu dosya içinde bunların her birini ayrı satırlara derlemek için kullanılan komut satırı bağımsız değişkenleri ve ardından kaynak kodu dosyaları adlarını bulabilirsiniz.
 
@@ -213,7 +212,7 @@ CONTEXT:
   Dr2    = 0000000000000000  Dr7    = 0000000000000000
 ```
 
-Artımlı bağlantılandırma etkindir ve yalnızca ilk bağladıktan sonra kilitlenme oluştu — diğer bir deyişle, yalnızca ilk tam üzerinde sonraki artımlı bağlantılandırma temel bağlama sonra — lütfen ayrıca nesne (.obj) ve kitaplık bir kopyasını karşılık gelir (.lib) dosyaları belirtin ilk bağlama tamamlandıktan sonra değiştirilen kaynak dosyaları için.
+Artımlı bağlantılandırma etkindir ve yalnızca ilk bağladıktan sonra kilitlenme oluştu (diğer bir deyişle, yalnızca ilk tam üzerinde sonraki artımlı bağlantılandırma temel bağlama sonra) Lütfen ayrıca nesne (.obj) ve kitaplık bir kopyasını karşılık gelir (.lib) dosyaları belirtin ilk bağlama tamamlandıktan sonra değiştirilen kaynak dosyaları için.
 
 #### <a name="bad-code-generation"></a>Hatalı kod oluşturma
 
@@ -221,50 +220,13 @@ Hatalı kod oluşturma nadir ancak derleyici yanlışlıkla uygulamanız bu soru
 
 Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros) bağlama zamanı kodu oluşturma (LTCG) kullanıyorsanız veya [ön işlemesi yapılan yeniden oluşturma](#preprocessed-repros) değilse. LTGC etkindir `/GL` cl.exe komut satırı bağımsız değişkeni.
 
-## <a name="send"></a>Raporunuzu gönderme yolları
-
-Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), ya da e-posta gönderin. Raporunuz için en iyi seçenek sorunla karşılaşıldı nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup ilerleme durumunu izlemek veya raporunuzu topluluğuyla paylaşmak istediğiniz tür bağlıdır.
-
-> [!NOTE]
-> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
-
-### <a name="send-an-email"></a>Bir e-posta Gönder
-
-E-posta raporunuzu Visual C++ Takımı'na doğrudan göndermek için başka bir yoldur; bizimle ulaşabilir [ compilercrash@microsoft.com ](mailto:compilercrash@microsoft.com).
-
-E-posta ile raporu göndermeyi seçerseniz, aşağıdaki şablonu, e-posta iletisinin gövdesi olarak kullanabilirsiniz. Bu bilgileri e-posta gövdesindeki dahil değil, kaynak kodu veya diğer dosyaları eklemek unutmayın.
-
-```Example
-To: compilercrash@microsoft.com
-Subject: Visual C++ Error Report
------
-
-Compiler version:
-
-CL.EXE command line:
-
-Problem description:
-
-Source code and repro steps:
-
-```
-
-### <a name="use-the-report-a-problem-tool"></a>Rapor bir sorun aracını kullanın
-
-Visual Studio sorun aracında rapor Visual Studio kullanıcıların çeşitli sorunlar yalnızca birkaç tıklama ile rapor bir yoldur. Karşılaştı ve ardından IDE ayrılmadan raporunuzu gönderme sorun hakkında ayrıntılı bilgi belirtmek için kullanabileceğiniz basit bir form sağlar.
-
-Bu belgede ele alınan araç takımı sorun türlerini için alışılmadık sorun araçtır raporu sayesinde, sorun bildirimi; Bununla birlikte, kendi bir seçenek değilse seçebilirsiniz, paketleri tercihlerinizi.
-
-> [!TIP]
-> Araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme) ilgili olmayan Visual Studio'da karşılaşabileceğiniz sorunlar diğer tür için bir sorun aracı rapor ekran yeteneklerini nedeniyle özellikle iyi bir seçimdir olabilir ve sorunu neden kayıt UI eylemlerini kendi yeteneği karşılaştı. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
-
 ## <a name="generate"></a>Bir yeniden oluşturma oluştur
 
-Bir yeniden oluşturma, raporlama sorun gösteren bir tam ve müstakil bir kod örneğidir. Bir yeniden oluşturma olan **değil** bir kod parçacığı — oluşturur ve çalıştırır (veya Raporlama sorun tarafından üretilen hataları dışında olur) tam bir örnek olması gerekir. Tüm gerekli içermesi gereken # standart üstbilgi için bile yönergeleri include.
+Bir yeniden oluşturma, raporlama sorun gösteren bir tam ve müstakil bir kod örneğidir. Bir yeniden oluşturma olan **değil** bir kod parçacığı; oluşturur ve çalıştırır (veya Raporlama sorun tarafından üretilen hataları dışında olur) tam bir örnek olması gerekir. Tüm gerekli içermesi gereken # standart üstbilgi için bile yönergeleri include.
 
 Ayrıca, iyi bir yeniden oluşturma değil
 
-- **En az.** Repros tam olarak karşılaştığınız sorunu hala gösteren sırasında olabildiğince küçük olmalıdır. Repros karmaşık veya gerçekçi olması gerekmez — basit,-noktaya repros daha iyi. Karşı çalışır, ancak yalnızca tanım ise olabilir kod örnekleri arasında gerekmez; soruna neden olan kod örneği gereklidir.
+- **En az.** Repros tam olarak karşılaştığınız sorunu hala gösteren sırasında olabildiğince küçük olmalıdır. Repros karmaşık veya gerçekçi olması gerekmez; Basit,-noktaya repros daha iyidir. Karşı çalışır, ancak yalnızca tanım ise olabilir kod örnekleri arasında gerekmez; soruna neden olan kod örneği gereklidir.
 
 - **Kendi içinde yer alan.** Repros gereksiz bağımlılıkları kaçınmalısınız. Lütfen, üçüncü taraf kitaplıklar olmadan sorunu yeniden oluşturup, bunu yapar. Tüm kitaplık kodu sorunsuz yeniden (`std::out`, `printf()` Tamam olan), lütfen bunu yapın. Biz sorun olası Katılımcısı olarak göz önünde bulundurmanız gereken kod miktarını azaltmak için bize enormously yardımcı olur.
 
@@ -330,3 +292,51 @@ Son olarak, tüm bir .zip dosyasına dizin veya benzer sıkıştırarak yeniden 
 Tek kaynak dosyası ya da önceden işlenmiş yeniden oluşturma sorunu indiremezsiniz ve sorun bağlantı yeniden oluşturma gerektirmez, biz araştırabilirsiniz ve IDE projesi. Proje içinde kod hala en az olmalıdır ve bu belgedeki tüm yönerge hala geçerlidir.
 
 Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosyasına veya benzer tüm dizin yapısının sıkıştırarak paketini ve raporunuza ekleyin.
+
+## <a name="send"></a>Raporunuzu gönderme yolları
+
+Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Raporunuzu içeren bir e-posta göndermek mümkündür, ancak ilk iki yöntem tercih edilir. Seçimi nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup, ilerleme durumunu izlemek veya raporunuzu toplulukla paylaştığı istediğiniz bağlıdır.
+
+> [!NOTE]
+> Raporunuzu nasıl gönderme bağımsız olarak, Microsoft, gizliliğinize saygı duyar. Biz bize gönderin verileri nasıl işler hakkında daha fazla bilgi için bkz: [Microsoft Visual Studio ürün ailesi gizlilik bildirimi](https://www.visualstudio.com/dn948229).
+
+### <a name="use-the-report-a-problem-tool"></a>Rapor bir sorun aracını kullanın
+
+**Bir sorun bildirmek** Visual Studio aracında Visual Studio kullanıcıların çeşitli sorunlar yalnızca birkaç tıklama ile rapor bir yoldur. Karşılaştı ve ardından IDE ayrılmadan raporunuzu gönderme sorun hakkında ayrıntılı bilgi belirtmek için kullanabileceğiniz basit bir form sağlar.
+
+Sorununuzu aracılığıyla raporlama **bir sorun bildirmek** araçtır kolay ve rahat IDE gelen. Başlık Çubuğu'ndan seçerek erişebildiğinizi **geri bildirim gönder** yanındaki simge **hızlı başlatma** arama kutusu veya bulabilir, menü çubuğunda **yardımcı**  >  **Geri bildirim gönder** > **bir sorun bildirmek**.
+
+Önce bir sorunu bildirmek seçtiğinizde, yazılım geliştirme topluluğuna benzer sorunlar için arama yapın. Sorununuzu önce bildirildiyse upvote konu ve ek özellikleri ile yorumlar ekleyin. Benzer bir sorun görmüyorsanız seçin **raporu yeni sorun** Visual Studio geri bildirim iletişim kutusunun alt kısmındaki düğmesine tıklayın ve sorunu bildirmek için adımları izleyin.
+
+### <a name="use-the-visual-studio-developer-community-pages"></a>Visual Studio Geliştirici topluluğu sayfalarını kullanma
+
+Visual Studio Geliştirici topluluğu sayfaları sorunları bildirme ve Visual Studio, C++ Derleyici, Araçlar ve kitaplıkları için çözüm bulmak için başka bir uygun yoludur. [Visual Studio soruları](https://developercommunity.visualstudio.com/spaces/8/index.html) IDE veya yükleme sorunları bildirmek nereye sayfasıdır. C++ Derleyici, bağlayıcı ve diğer araçları ve kitaplıklarını kullanma ile ilgili sorunlar için [C++ soruları](https://developercommunity.visualstudio.com/spaces/62/index.html) sayfası.
+
+Yazılım geliştirme topluluğuna başlığı, her sayfanın üstüne yakın gönderileri veya sorunları dilediğiniz benzer rapor konuları bulmak için kullanabileceğiniz bir arama kutusu ' dir. Bir çözüm ya da sorununuz için ilgili yararlı bilgiler zaten varolan bir konuda kullanılabilir olduğunu fark edebilirsiniz. Birisi önce aynı sorun bildirdi, lütfen upvote ve bu konu hakkında yorum yerine yeni bir sorun raporu oluşturun.
+
+Sorununuzu önce bildirilmedi kaldığınızda **bir sorun bildirmek** Geliştirici topluluğu sayfasında arama kutusunun yanında düğmesi. Visual Studio hesabınızda oturum açın ve profilinize Geliştirici topluluğu uygulama erişimi vermek kabul etmeniz istenebilir. Oturum açtığında, sorunun nerede rapor doğrudan sayfasına gidin. Yeniden oluşturma kodunuzu ve komut satırı, ekran görüntüleri, ilgili tartışmalar bağlantılar ve ilgili ve yararlı olduğunu düşündüğünüz diğer bilgiler içerebilir.
+
+### <a name="send-an-email"></a>Bir e-posta Gönder
+
+E-posta raporunuzu Visual C++ Takımı'na doğrudan göndermek için başka bir yoldur. Bizimle ulaşabilir [ compilercrash@microsoft.com ](mailto:compilercrash@microsoft.com). E-posta kullanarak Geliştirici topluluğuna bildirilen sorunları olabildiğince yakın izlenmez beri yalnızca diğer iki kullanılamıyor, bu yöntemi kullanırsanız **bir sorun bildirmek** aracı veya web sayfalarını ve açıklamaları ve çözümleri diğer Visual Studio kullanıcılara görünür.
+
+E-posta ile raporu göndermeyi seçerseniz, aşağıdaki şablonu, e-posta iletisinin gövdesi olarak kullanabilirsiniz. Bu bilgileri e-posta gövdesindeki dahil değil, kaynak kodu veya diğer dosyaları eklemek unutmayın.
+
+```Example
+To: compilercrash@microsoft.com
+Subject: Visual C++ Error Report
+-----
+
+Compiler version:
+
+CL.EXE command line:
+
+Problem description:
+
+Source code and repro steps:
+
+```
+
+> [!TIP]
+> Araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme) ilgili olmayan Visual Studio'da karşılaşabileceğiniz sorunlar diğer tür için bir sorun aracı rapor ekran yeteneklerini nedeniyle özellikle iyi bir seçimdir olabilir ve sorunu neden kayıt UI eylemlerini kendi yeteneği karşılaştı. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
+

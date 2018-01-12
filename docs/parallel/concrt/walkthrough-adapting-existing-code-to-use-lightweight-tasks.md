@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4e5be679f1c36d2a0a615f54de099b0d834d15c7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a50ad04421d7b4bcdc4a2c98de8f5a57b255c75
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-adapting-existing-code-to-use-lightweight-tasks"></a>İzlenecek yol: Mevcut Kodu Hafif Görevleri Kullanmaya Uyarlama
 Bu konu, Windows API'si oluşturmak ve basit bir görev kullanmak için bir iş parçacığını yürütmek için kullanılan var olan kodu uyum gösterilmektedir.  
@@ -99,4 +100,4 @@ Parameters = 50, 100
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
- [Zamanlayıcı sınıfı](../../parallel/concrt/reference/scheduler-class.md)
+ [Zamanlayıcı Sınıfı](../../parallel/concrt/reference/scheduler-class.md)

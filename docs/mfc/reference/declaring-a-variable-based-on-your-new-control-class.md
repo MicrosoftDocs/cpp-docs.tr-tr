@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 29b73ad49a087dc1143a2a635d819b67332a14db
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5aa98f815d9f9322c11d4256c13c0c7a42b4ab66
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="declaring-a-variable-based-on-your-new-control-class"></a>Yeni Denetim Sınıfınıza Dayalı Değişken Bildirme
 MFC denetim sınıfı oluşturduktan sonra dayalı bir değişken bildirebilirsiniz. Yeni değişken için bir bağlam sağlamak için iletişim kutusu Düzenleyicisi'ni açın ve yeniden kullanılabilir denetiminizi kullanmak istediğiniz iletişim kutusu düzenleyin. Ayrıca, iletişim kutusu zaten kendisiyle ilişkilendirilmiş bir sınıf olmalıdır. İletişim kutusu düzenleyicisini kullanma hakkında daha fazla bilgi için bkz: [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md).  

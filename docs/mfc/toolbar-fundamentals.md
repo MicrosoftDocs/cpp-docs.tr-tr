@@ -30,11 +30,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55e6df559d6a8365635cea7e94d20bd2576d2273
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 136b9f5dd36c9e4092b8e5c15ac1738541cf71f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toolbar-fundamentals"></a>Araç Çubuğu Temelleri
 Bu makalede, Uygulama Sihirbazı'nda bir seçeneğin uygulamanız için bir varsayılan araç çubuğu eklemenize olanak sağlayan temel MFC uygulaması açıklanmaktadır. Kapsanan konular şunlardır:  
@@ -107,5 +108,5 @@ Bu makalede, Uygulama Sihirbazı'nda bir seçeneğin uygulamanız için bir vars
 -   [Eski araç çubuklarınızı kullanma](../mfc/using-your-old-toolbars.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)
+ [MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
 

@@ -20,11 +20,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 384c8bac652e16a4f66a82ee7e4dbb5cc92fd32b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 9d910c7d6346d23f094e9359f0e5fe3536ee09dc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-marshaling-in-c"></a>C++'da Hazırlamaya Genel Bakış
 Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralamanız gerekir. [!INCLUDE[vs_orcas_long](../atl/reference/includes/vs_orcas_long_md.md)]yardımcı olmak için hazırlama kitaplığını sunulan sıralama ve basit bir şekilde veri dönüştürün.  
@@ -71,4 +74,4 @@ Karma modda bazen yerel ve yönetilen türler arasında verilerinizi sıralaman�
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ destek kitaplığı](../dotnet/cpp-support-library.md)   
- [Nasıl yapılır: hazırlama kitaplığını genişletme](../dotnet/how-to-extend-the-marshaling-library.md)
+ [Nasıl yapılır: Hazırlama Kitaplığını Genişletme](../dotnet/how-to-extend-the-marshaling-library.md)

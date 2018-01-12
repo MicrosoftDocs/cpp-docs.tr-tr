@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fe7255c5b9ad2ec9d2d1f226e1b40bda8fda7a56
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bbccd8b7a37f051fc9ef7d8e42b6d86f49a9c1b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chartraitsltchargt-struct"></a>char_traits&lt;char&gt; yapısı
 Şablon yapısı uzmanlığı olan yapı **char_traits\<CharType >** türünde bir öğe için `char`.  

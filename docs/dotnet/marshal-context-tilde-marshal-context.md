@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb052c27888bf168206c80fc06edd24034880433
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 42af11d58804a000e630d916cd5887c5005aa955
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="marshalcontextmarshalcontext"></a>marshal_context::~marshal_context
 Bozar bir `marshal_context` nesnesi.  
@@ -48,4 +51,4 @@ Bozar bir `marshal_context` nesnesi.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++'da hazırlamaya genel bakış](../dotnet/overview-of-marshaling-in-cpp.md)   
  [marshal_as](../dotnet/marshal-as.md)   
- [marshal_context sınıfı](../dotnet/marshal-context-class.md)
+ [marshal_context Class](../dotnet/marshal-context-class.md)

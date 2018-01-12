@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a4cb304e014412e16f425b4162fd4950dcc7789f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 36d577369dea4f5fe2fffa9801bbd8ae8501f71a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-chotkeyctrl"></a>CHotKeyCtrl Kullanma
 Sınıfı tarafından temsil edilen bir sık kullanılan tuş denetimi [CHotKeyCtrl](../mfc/reference/chotkeyctrl-class.md), kullanıcı türleri, CTRL + SHIFT + Q gibi tuş bileşimini metin gösterimini görüntüler bir penceredir. Ayrıca, bir iç temsili bu anahtarın bir sanal anahtar kod biçimidir ve shift durumu temsil eden bayrakları kümesi tutar. Sık kullanılan tuş denetimi sık kullanılan tuş gerçekten ayarlamaz —, bunu olduğu programınızı kadar. (Winuser.h standart sanal anahtar kodları listesi için bkz.)  
@@ -31,14 +32,14 @@ Sınıfı tarafından temsil edilen bir sık kullanılan tuş denetimi [CHotKeyC
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Sık kullanılan tuş denetimi kullanma](../mfc/using-a-hot-key-control.md)  
+-   [Bir Kısayol Tuşu Denetimini Kullanma](../mfc/using-a-hot-key-control.md)  
   
--   [Sık kullanılan tuş ayarlama](../mfc/setting-a-hot-key.md)  
+-   [Kısayol Tuşu Ayarlama](../mfc/setting-a-hot-key.md)  
   
--   [Genel sık kullanılan tuşlar](../mfc/global-hot-keys.md)  
+-   [Genel Kısayol Tuşları](../mfc/global-hot-keys.md)  
   
--   [İş parçacığına özgü sık kullanılan tuşlar](../mfc/thread-specific-hot-keys.md)  
+-   [İş Parçacığına Özgü Kısayol Tuşları](../mfc/thread-specific-hot-keys.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

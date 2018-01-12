@@ -56,11 +56,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a16876148aa73fada420a58aa4ba38b8a557ab93
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 94491a2df64017ea381377af8518414e80130d6a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="record-field-exchange-functions"></a>Kayıt Alanı Değişim İşlevleri
 Bu konu kayıt alanı değişimi (RFX, toplu RFX ve DFX) listeler bir kayıt kümesi nesnesi ve veri kaynağı arasındaki veri aktarımını otomatikleştirmek ve veriler üzerinde başka işlemler gerçekleştirmek için kullanılan işlevleri.  
@@ -144,7 +145,7 @@ void RFX_Binary(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](cbytearray-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `nMaxLength`  
@@ -178,7 +179,7 @@ void RFX_Bool(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **BOOL**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -206,7 +207,7 @@ void RFX_Byte(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **bayt**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -244,7 +245,7 @@ void RFX_Date(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri; Transfer edilecek değer. Çeşitli sürümleri işlevi farklı veri türleri için değer alın:  
   
  İşlev'in ilk sürüm bir başvuru alır bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesnesi. Bir aktarımı için kayıt kümesi veri kaynağına, bu değeri belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
@@ -279,7 +280,7 @@ void RFX_Double(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **çift**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -307,7 +308,7 @@ void RFX_Int(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `int`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -336,7 +337,7 @@ value );
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **uzun**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -364,7 +365,7 @@ void RFX_LongBinary(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `CLongBinary`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -392,7 +393,7 @@ void RFX_Single(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **float**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -424,7 +425,7 @@ void RFX_Text(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `CString`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `nMaxLength`  
@@ -697,7 +698,7 @@ void RFX_Int(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı `int`, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
 ### <a name="example"></a>Örnek  
@@ -873,7 +874,7 @@ void AFXAPI DFX_Binary(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](cbytearray-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `nPreAllocSize`  
@@ -915,7 +916,7 @@ void AFXAPI DFX_Bool(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **BOOL**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -953,7 +954,7 @@ void AFXAPI DFX_Byte(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **bayt**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -991,7 +992,7 @@ void AFXAPI DFX_Currency(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Bir aktarımı için kayıt kümesi veri kaynağına, bu değer türü belirtilen veri üyeden alınır [COleCurrency](colecurrency-class.md). Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1029,7 +1030,7 @@ void AFXAPI DFX_DateTime(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. İşlev bir başvuru alır bir [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) nesnesi. Bir aktarımı için kayıt kümesi veri kaynağına, bu değeri belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1070,7 +1071,7 @@ void AFXAPI DFX_Double(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **çift**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1108,7 +1109,7 @@ void AFXAPI DFX_Long(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **uzun**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1148,7 +1149,7 @@ void AFXAPI DFX_LongBinary(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CLongBinary](clongbinary-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  *dwPreAllocSize*  
@@ -1189,7 +1190,7 @@ void AFXAPI DFX_Short(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **kısa**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1231,7 +1232,7 @@ void AFXAPI DFX_Single(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı **float**, belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `dwBindOptions`  
@@ -1270,7 +1271,7 @@ void AFXAPI DFX_Text(
  `szName`  
  Bir veri sütununun adı.  
   
- *değer*  
+ *value*  
  Belirtilen veri üye depolanan değeri — transfer edilecek değer. Kayıt kümesinden veri kaynağına türünde değer aktarımı [CString](../../atl-mfc-shared/reference/cstringt-class.md), belirtilen veri üyeden alınır. Bir aktarımı için veri kaynağından kayıt kümesi için belirtilen veri üye değeri depolanır.  
   
  `nPreAllocSize`  

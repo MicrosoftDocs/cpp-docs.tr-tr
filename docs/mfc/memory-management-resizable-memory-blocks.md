@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1342f1f78b9880e5b24d21707282da39c8d4672e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3fce06d27a091ad1740c882367358cf69a6dc3e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="memory-management-resizable-memory-blocks"></a>Bellek Yönetimi: Yeniden Boyutlandırılabilir Bellek Blokları
 **Yeni** ve **silmek** makalede açıklanan işleçleri [bellek yönetimi: örnekler](../mfc/memory-management-examples.md), ayırma ve serbest bırakma sabit boyutlu bellek blokları için uygun olduğuna ve nesneleri. Bazen, uygulamanızın yeniden boyutlandırılabilir bellek blokları gerekebilir. Standart C çalışma zamanı kitaplığı işlevleri kullanmalısınız [malloc](../c-runtime-library/reference/malloc.md), [realloc](../c-runtime-library/reference/realloc.md), ve [ücretsiz](../c-runtime-library/reference/free.md) yeniden boyutlandırılabilir bellek blokları yığında yönetmek için.  
@@ -33,5 +34,5 @@ ms.lasthandoff: 10/24/2017
 >  Karıştırma **yeni** ve **silmek** aynı bellek bloğu yeniden boyutlandırılabilir bellek ayırma işlevlere işleçlerle MFC hata ayıklama sürümü bozuk bellek neden olur. Kullanılamaz `realloc` bir bellek bloğu ile ayrılmış **yeni**. Benzer şekilde, bir bellek bloğu ile ayırmanız gerekir değil **yeni** işleci ve onunla silme **ücretsiz**, veya **silmek** ileayrılmışbellekbloğuişlecinin`malloc`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek Yönetimi: Öbek ayırma](../mfc/memory-management-heap-allocation.md)
+ [Bellek Yönetimi: Öbek Ayırma](../mfc/memory-management-heap-allocation.md)
 

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 20bc5898f1c72fbbfba24aebbb70208b6690ab4b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 043bf855c285ee1e473bf9acc017f37a3ae61a00
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="an-example-of-the-comments"></a>Açıklamalara Bir Örnek
 Sınıfı aşağıdaki kısmi listesi `CChildFrame` MFC sınıf üyeleri kullanılan yöntemleri tarafından bölmek için kendi sınıflarda kullanan standart açıklamaları çoğunu kullanır:  

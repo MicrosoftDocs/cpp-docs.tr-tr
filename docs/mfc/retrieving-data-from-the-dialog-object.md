@@ -32,11 +32,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5b8f39673701ca61b6423e7247f52c0de5a846b6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d4b50ae3036a6f262312c7a05c2de093a977a588
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="retrieving-data-from-the-dialog-object"></a>İletişim Nesnesinden Veriyi Geri Alma
 Framework'te iletişim kutusu denetimleri değerlerini başlatılamadı ve denetimlerden değerleri almak için kolay bir yol sağlar. Daha fazla zahmetli el ile işlevleri gibi çağırmak için yaklaşımdır `SetDlgItemText` ve `GetDlgItemText` sınıfının üye işlevleri `CWnd`, Denetim windows için geçerlidir. Bu işlevler ile tek tek ayarlamak veya kendi değerini almak için her denetim işlevleri gibi çağırma erişim `SetWindowText` ve `GetWindowText`. Framework'ün yaklaşım, başlatma ve alma otomatikleştirir.  
@@ -50,5 +51,5 @@ Framework'te iletişim kutusu denetimleri değerlerini başlatılamadı ve denet
  Kalıcı iletişim kutusu için kullanıcı girilen herhangi bir veri alabilirsiniz `DoModal` döndürür **IDOK** ancak önce iletişim nesnesi yok. Kalıcı olmayan iletişim kutusu için veri iletişim nesnesinden herhangi bir zamanda çağırarak alabilirsiniz `UpdateData` bağımsız değişkeniyle **doğru** ve iletişim sınıf üye değişkenlerine erişme. Bu konu içinde daha ayrıntılı olarak ele alınmıştır [iletişim kutusu veri değişimi ve doğrulaması](../mfc/dialog-data-exchange-and-validation.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusunun yaşam döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
+ [Bir İletişim Kutusunun Yaşam Döngüsü](../mfc/life-cycle-of-a-dialog-box.md)
 

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b863f841d5edf04ccdfcc1a3376df43ffe2429b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6a3a961ca0197eb80a8fafeee16c6e54cce8579
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writing-mfc-applications"></a>MFC Uygulamaları Yazma
 Bu makalede, uygulamanız geliştirmek için ilk adımlar açıklanmaktadır. İlk olarak, ne tür bir uygulama yazmakta olduğunuz karar vermeniz gerekir. Birkaç seçenek ele alınan [uygulama tasarımı seçimleri](../mfc/application-design-choices.md). Uygulamanızı olacaktır:  
@@ -47,13 +48,13 @@ Bu makalede, uygulamanız geliştirmek için ilk adımlar açıklanmaktadır. İ
   
  Aşağıdaki makaleler de programlama görevleri başlamanıza yardımcı olması için yönergeler sağlar:  
   
--   [Uygulama tasarımı seçimleri](../mfc/application-design-choices.md)  
+-   [Uygulama Tasarımı Seçimleri](../mfc/application-design-choices.md)  
   
--   [Internet'teki zaman uyumsuz adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
+-   [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
   
--   [WinINet temelleri](../mfc/wininet-basics.md)  
+-   [WinInet Temelleri](../mfc/wininet-basics.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)   
- [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)
+ [MFC Internet Programlama Temelleri](../mfc/mfc-internet-programming-basics.md)
 

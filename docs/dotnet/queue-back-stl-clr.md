@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6badb225d57295931aac7ba6fe6d6e6ec747f6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 8b6f9cd950e42e31727c54aff29b637739bcf6f2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queueback-stlclr"></a>queue::back (STL/CLR)
 Son öğe erişir.  
@@ -81,4 +84,4 @@ back() = c
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
  [Queue::back_item (STL/CLR)](../dotnet/queue-back-item-stl-clr.md)   
  [Queue::Front (STL/CLR)](../dotnet/queue-front-stl-clr.md)   
- [Queue::front_item (STL/CLR)](../dotnet/queue-front-item-stl-clr.md)
+ [queue::front_item (STL/CLR)](../dotnet/queue-front-item-stl-clr.md)

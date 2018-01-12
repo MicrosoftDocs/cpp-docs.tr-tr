@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9431dea4d09f320727f6ae35b4c296cbb9799863
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 819f7d7e4e4d5b6182da6172bd91a1e799379b52
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semaphoretraitsunlock-method"></a>SemaphoreTraits::Unlock Yöntemi
 Paylaşılan bir kaynak denetim serbest bırakır.  
@@ -45,4 +48,4 @@ inline static void Unlock(
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [SemaphoreTraits yapısı](../windows/semaphoretraits-structure.md)
+ [SemaphoreTraits Yapısı](../windows/semaphoretraits-structure.md)

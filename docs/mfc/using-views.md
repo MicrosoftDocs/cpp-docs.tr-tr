@@ -24,11 +24,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 633bd52b64ba6c4c507867320585b8bc513e80c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 99493657313d480559d232bf9033dfb7a7a585c4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-views"></a>Görünümleri Kullanma
 Görünümün sorumlulukları belgenin veri kullanıcıya grafik görüntüleme ve kabul edin ve belge üzerinde işlemler olarak kullanıcı girişini yorumlama üzeresiniz. View sınıfı yazma görevleri vardır:  
@@ -59,5 +60,5 @@ Görünümün sorumlulukları belgenin veri kullanıcıya grafik görüntüleme 
  [Belge/görünüm mimarisi](../mfc/document-view-architecture.md)   
  [Cformview'yu sınıfı](../mfc/reference/cformview-class.md)   
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [Seri hale getirme mekanizmasını atlama](../mfc/bypassing-the-serialization-mechanism.md)
+ [Seri Hale Getirme Mekanizmasını Atlama](../mfc/bypassing-the-serialization-mechanism.md)
 

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d23a2513e1a952a6b37fb7dfdf3fd09d0ace0767
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 37dadc932701354de317d253a39bd2f2ee71a495
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
 Accelerator_view nesnedeki D3D erişim kilit RAII sarmalayıcı.  
@@ -117,4 +118,4 @@ scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
  Bu başvuru `scoped_accelerator_view_lock`.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Direct3D Namespace](concurrency-direct3d-namespace.md)
+ [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

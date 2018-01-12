@@ -23,11 +23,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 839a597624c0f1a00ab983ecd5f2f31aeefbd953
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1a7b9c76ffd4366522dce366a165698bd3a26173
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 Varolan ActiveX denetimleri (önceki adıyla OLE denetimleri) değişiklik yapmadan Internet üzerinde kullanılabilir. Ancak, kendi performansını artırmak için denetimleri değiştirmek isteyebilirsiniz. Bir Web sayfası denetiminizde kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosyasını ve tüm destekleyici dosyaları hedef makinede olmalıdır veya Internet üzerinden indirilmesi. Bu kod boyutu ve önemli bir konu zaman yükleme sağlar. İndirmeler imzalı .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  
@@ -85,7 +86,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
  Dolap dosyalarını MFC kullanmak paket ActiveX denetimleri için önerilen yoldur. MFC ActiveX denetimi dolap dosyasında paketleme ActiveX denetimi ve bağımlı DLL'lerin (örneğin, MFC DLL) denetim yüklemesine dahil edilecek bir .inf dosyası sağlar. Bir CAB dosyası otomatik olarak kullanarak daha hızlı indirme için kodu sıkıştırır. Bileşen yüklemesi için bir .cab dosyası kullanıyorsanız, tek tek her bileşen daha tüm .cab dosyasını imzalamak için daha hızlıdır.  
   
 ### <a name="creating-cab-files"></a>CAB dosyaları oluşturma  
- Bilgi Bankası makalesi dolap Geliştirme Seti indirebilirsiniz [310618: Microsoft dolap Yazılım Geliştirme Seti](http://go.microsoft.com/fwlink/linkid=148204). Bu Seti'nde dolap dosyalarını oluşturmak için gerekli araçları bulacaksınız.  
+ Bilgi Bankası makalesi dolap Geliştirme Seti indirebilirsiniz [310618: Microsoft dolap Yazılım Geliştirme Seti](http://go.microsoft.com/fwlink/p/?linkid=148204). Bu Seti'nde dolap dosyalarını oluşturmak için gerekli araçları bulacaksınız.  
   
  Tarafından için dolap dosyası işaret `CODEBASE` ActiveX denetimi .ocx dosya ve onun yükleme denetlemek için bir .inf dosyası içermelidir. Denetim dosyanızın adını belirterek dolap dosyası ve bir .inf dosyası oluşturun. Bu dolap dosyası, sistemde zaten mevcut olabilir bağımlı DLL'lerin içermez. Örneğin, MFC DLL'leri ayrı bir dolap dosyasında paketlenir ve denetleme .inf dosyası tarafından başvurulan.  
   
@@ -266,5 +267,5 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Internet programlama görevleri](../mfc/mfc-internet-programming-tasks.md)   
  [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md)   
- [MFC ActiveX denetimleri: ActiveX denetimini lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
+ [MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
 

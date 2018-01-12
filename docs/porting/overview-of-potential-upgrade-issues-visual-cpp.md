@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 977c13eabe0f25081b1bfe6b25e615002f0e6987
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: 1f1a727920ffe5e79bd62fd877e191dc6f6f3cc3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarını (Visual C++) genel bakış
 Yıllar içinde Visual C++ derleyicisi C++ dili, C++ Standart Kitaplığı, C çalışma zamanı (CRT) ve diğer kitaplıkları MFC ve ATL gibi değişiklikler yanı sıra birçok değişikliği gerçekleştirdi Sonuç olarak, bir uygulama Visual C++'ın önceki bir sürümden yükseltirken, derleyici ve bağlayıcı hataları ve Uyarıları daha önce düzgün bir şekilde derlenmiş kod karşılaşabilirsiniz. Temel eski özgün kod, bu tür hatalara büyük olası. Bu genel bakışta karşılaşabileceğiniz olası sorunların en yaygın sınıfları özetler ve daha ayrıntılı bilgi için bağlantılar sağlar.  

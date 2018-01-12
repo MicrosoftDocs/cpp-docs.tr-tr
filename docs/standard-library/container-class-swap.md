@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 13d083c596dcbaa275ed8d0f05ded2c5cb5547eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 09229429c64e895a722d52d203f0259cf69e6d24
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="container-classswap"></a>Kapsayıcı Sınıfı::swap
 > [!NOTE]
@@ -36,4 +37,4 @@ void swap(Container& right);
 Varsa  **\*this.get\_ayırıcısı ==** _sağ_**.get_allocator**, bunu bir takas Sabit sürede yapar. Aksi durumda, iki denetimli sıralarında öğesi atamaları ve oluşturucu çağrıları öğe sayısını orantılı çeşitli gerçekleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)
+[Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

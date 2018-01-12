@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 99016a9006bb13be70fe38fd222ad25a08792b20
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 49013e718ad540e88a1cbd00eceb6bb3dc0071b8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ptrptr"></a>ptr::ptr
 Oluşturan bir `com::ptr` bir COM nesnesi sarmalamak için.  
@@ -118,4 +121,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [PTR üyeleri](../dotnet/ptr-members.md)   
  [PTR::CreateInstance](../dotnet/ptr-createinstance.md)   
- [PTR:: ~ ptr](../dotnet/ptr-tilde-ptr.md)
+ [ptr::~ptr](../dotnet/ptr-tilde-ptr.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a5f7b9d6eeda8192fe05a73d25c04527bea2ee80
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5421cf47214d4ceeb7f8388835cb7a1cc57110ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="criticalsection-class"></a>critical_section Sınıfı
 Eşzamanlılık Çalışma zamanı açıkça farkındadır yeniden girme olmayan mutex.  
@@ -64,7 +65,7 @@ class critical_section;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[kilitleme](#lock)|Bu kritik bölüm edinir.|  
+|[lock](#lock)|Bu kritik bölüm edinir.|  
 |[native_handle](#native_handle)|Varsa bir platform özel yerel tanıtıcı döndürür.|  
 |[try_lock](#try_lock)|Engellenmeden kilidi dener.|  
 |[try_lock_for](#try_lock_for)|Belirli bir milisaniye sayısı için engellenmeden kilidi dener.|  
@@ -190,4 +191,4 @@ void unlock();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [reader_writer_lock sınıfı](reader-writer-lock-class.md)
+ [reader_writer_lock Sınıfı](reader-writer-lock-class.md)

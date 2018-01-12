@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c76bf7708c3bbe11ee7336b4c87f195fa01297d1
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: 3007e2fbae5bb0cee4472b6488be8ceb614bc1f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Bir uygulama yazdığınızda, tek bir oluşturma [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesne içermelidir. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesne içermelidir. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
@@ -138,7 +139,7 @@ CContextMenuManager* afxContextMenuManager;
  **Başlık:** afxcontextmenumanager.h     
 
 ### <a name="see-also"></a>Ayrıca Bkz.   
- [CContextMenuManager sınıfı](ccontextmenumanager-class.md)
+ [CContextMenuManager Sınıfı](ccontextmenumanager-class.md)
 
   
 ##  <a name="afxendthread"></a>AfxEndThread  
@@ -430,7 +431,7 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [CWnd sınıfı](cwnd-class.md)   
- [CFrameWndEx sınıfı](cframewndex-class.md)   
+ [CFrameWndEx Sınıfı](cframewndex-class.md)   
 
 ## <a name="afxismfctoolbar"></a>Afxısmfctoolbar
 Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.  
@@ -454,7 +455,7 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [CWnd sınıfı](cwnd-class.md)   
- [CMFCToolBar sınıfı](cmfctoolbar-class.md)
+ [CMFCToolBar Sınıfı](cmfctoolbar-class.md)
 
  
 ## <a name="afxkeyboardmanager"></a>AfxKeyboardManager
@@ -470,7 +471,7 @@ CKeyboardManager* afxKeyboardManager;
 ### <a name="see-also"></a>Ayrıca Bkz.  
 
  [Makrolar, genel işlevler ve genel değişkenler](mfc-macros-and-globals.md)   
- [CKeyboardManager sınıfı](ckeyboardmanager-class.md)
+ [CKeyboardManager Sınıfı](ckeyboardmanager-class.md)
 
 
 ##  <a name="afxloadlibrary"></a>AfxLoadLibrary  
@@ -531,7 +532,7 @@ CMenuTearOffManager* g_pTearOffMenuManager;
  **Başlık:** afxmenutearoffmanager.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.     
- [CMenuTearOffManager sınıfı](cmenutearoffmanager-class.md)
+ [CMenuTearOffManager Sınıfı](cmenutearoffmanager-class.md)
  
 ## <a name="afxmousemanager"></a>AfxMouseManager
 İşaretçi genel [fare Yöneticisi](cmousemanager-class.md).  
@@ -544,7 +545,7 @@ CMouseManager* afxMouseManager;
  **Başlık:** afxmousemanager.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [CMouseManager sınıfı](cmousemanager-class.md)
+ [CMouseManager Sınıfı](cmousemanager-class.md)
  
 
   
@@ -678,7 +679,7 @@ CShellManager* afxShellManager;
  **Başlık:** afxshellmanager.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [CShellManager sınıfı](cshellmanager-class.md)
+ [CShellManager Sınıfı](cshellmanager-class.md)
   
 ##  <a name="afxsocketinit"></a>Afxsocketınit  
  Bu işlev çağrısı, `CWinApp::InitInstance` Windows Sockets başlatmak için geçersiz kılın.  
@@ -712,7 +713,7 @@ CUserToolsManager* afxUserToolsManager;
  **Başlık:** afxusertoolsmanager.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [CUserToolsManager sınıfı](cusertoolsmanager-class.md)
+ [CUserToolsManager Sınıfı](cusertoolsmanager-class.md)
  
   
 ##  <a name="afxwininit"></a>Afxwinınit  
@@ -755,4 +756,4 @@ BOOL AFXAPI AfxWinInit(
     
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)   
- [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md)
+ [CWinApp Sınıfı](../../mfc/reference/cwinapp-class.md)

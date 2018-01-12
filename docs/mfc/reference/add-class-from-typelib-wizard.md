@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b0b4c56ccf67d5adae211925350dceaece3059cd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a4aad89b6f3227cac59b6429cc67975db3dad424
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-class-from-typelib-wizard"></a>Tür Kitaplığı Sihirbazından Sınıf Ekleme
 Kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sihirbazı kullanın. Sihirbaz seçilen tür kitaplığından eklediğiniz her bir arabirim için bir sınıf oluşturur.  
@@ -42,7 +43,7 @@ Kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sihirba
  **Konum**  
  Tür kitaplığı konumunu belirtir. Tıklatırsanız **dosya** altında **sınıfı gelen eklemek**, tür kitaplığı içeren dosyanın konumunu sağlayabilir. Dosyasının konumuna göz atmak için üç nokta düğmesini tıklatın.  
   
- **Arabirimleri**  
+ **Arabirimler**  
  Şu anda seçili tür kitaplığında arabirimleri listeler **kullanılabilir tür kitaplıklarının** listesi.  
   
 |Aktarma düğmesi|Açıklama|  
@@ -67,5 +68,5 @@ Kullanılabilir tür kitaplığından bir MFC sınıfı eklemek için bu sihirba
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür kitaplığından MFC sınıfı](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)   
- [Otomasyon istemcileri: Tür kitaplıklarını kullanma](../../mfc/automation-clients-using-type-libraries.md)
+ [Otomasyon İstemcileri: Tür Kitaplıklarını Kullanma](../../mfc/automation-clients-using-type-libraries.md)
 

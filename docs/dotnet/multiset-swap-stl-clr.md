@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b520cb617b4a8fed151d0c2f473cce75c7594178
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: af273d88f30cf514d6fa69df5604ea3e154d6681
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multisetswap-stlclr"></a>multiset::swap (STL/CLR)
 İki kapsayıcının içeriğinin yerini değiştirir.  
@@ -94,4 +97,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [multiset (STL/CLR)](../dotnet/multiset-stl-clr.md)   
- [multiset::operator (STL/CLR) =](../dotnet/multiset-operator-assign-stl-clr.md)
+ [multiset::operator= (STL/CLR)](../dotnet/multiset-operator-assign-stl-clr.md)

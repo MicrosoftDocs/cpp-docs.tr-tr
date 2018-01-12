@@ -21,23 +21,24 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d949c1ff19be6f3b89673753fdaccc2996bbef36
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1037b8b81c9286ac1b1dd9303294b4300e7c9309
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)
 Visual C++ yürütme eşzamanlı çalışan birden çok eşzamanlı iş parçacığına sahip olmanızı sağlar. İle çoklu iş parçacığı kullanımı, arkaplan görevleri, eşzamanlı girdi akışları ile yönetme, bir kullanıcı arabirimi ve daha fazlasını yapabilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [C ve Win32 ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-c-and-win32.md)  
+ [C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)  
  Microsoft Windows ile çoklu iş parçacığı kullanan uygulamalar oluşturmak için destek sağlar  
   
- [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
+ [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
  İşlemler ve iş parçacıkları nedir ve ne MFC yaklaşımının açıklar çoklu iş parçacığı kullanımı değil.  
   
- [Çoklu iş parçacığı kullanımı ve yerel ayarlar](../parallel/multithreading-and-locales.md)  
+ [Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../parallel/multithreading-and-locales.md)  
  C çalışma zamanı kitaplığı ve birden çok iş parçacıklı uygulamada C++ Standart Kitaplığı yerel ayar işlevselliğini kullanırken çıkabilecek sorunlar açıklanır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

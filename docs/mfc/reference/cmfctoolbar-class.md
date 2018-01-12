@@ -322,11 +322,12 @@ caps.latest.revision: "48"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1cf7e830f2c003135ceda9b63b244f9858b14d1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d652be633adca3d21d3cee5b54350c34e691740
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 `CMFCToolBar` Sınıfı benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bu düz araç çubukları, araç çubukları etkin görüntüler büyük simgeler, çağrı cihazı düğmeleri, kilitli araç çubukları, rebar denetimleri, görüntü, arka plan görüntüleri altındaki metin ile içerir ve araç çubuklarını sekmeli. `CMFCToolBar` Sınıfı da kullanıcı özelleştirmesi araç çubukları için yerleşik destek içerir ve menüler, sürükle ve bırak araç çubukları ve menü, birleşik giriş kutusu düğmeler arasına kutusunu düğmeler, renk seçiciler ve dökümü düğmeleri düzenleyin.
@@ -3449,7 +3450,7 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
  [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md)   
  [CMFCPopupMenuBar sınıfı](../../mfc/reference/cmfcpopupmenubar-class.md)   
  [CMFCDropDownToolBar sınıfı](../../mfc/reference/cmfcdropdowntoolbar-class.md)   
- [İzlenecek yol: Araç çubuklarına denetimler yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+ [İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 
 
 

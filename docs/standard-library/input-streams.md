@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e708f1cbb9db3cc546aac172291facfa95acfb83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8a753216cd8dfe0975d1d92451863b1ee2a88ddd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="input-streams"></a>Giriş Akışları
 Giriş akışı nesneyi bayt bir kaynaktır. En önemli üç Giriş akışı sınıfları [IStream](../standard-library/basic-istream-class.md), [ifstream](../standard-library/basic-ifstream-class.md), ve [istringstream](../standard-library/basic-istringstream-class.md).  
@@ -34,17 +35,17 @@ Giriş akışı nesneyi bayt bir kaynaktır. En önemli üç Giriş akışı sı
  Gibi kitaplığı işlevi `sscanf_s`, `istringstream` sınıfı, bellek içi dizeleri girişten destekler. Null Sonlandırıcı sahip bir karakter dizisi veri ayıklamak için ayırın ve dizesini başlatır, sonra sınıfın bir nesnesi oluşturmak `istringstream`.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Giriş akışı nesneleri oluşturma](../standard-library/constructing-input-stream-objects.md)  
+ [Giriş Akışı Oluşturma Nesneleri](../standard-library/constructing-input-stream-objects.md)  
   
- [Ayıklama işleçlerini kullanma](../standard-library/using-extraction-operators.md)  
+ [Ayıklama İşleçlerini Kullanma](../standard-library/using-extraction-operators.md)  
   
- [Ayıklama hataları için test etme](../standard-library/testing-for-extraction-errors.md)  
+ [Ayıklama Hataları için Test Yapma](../standard-library/testing-for-extraction-errors.md)  
   
- [Giriş akış Manipülatörleri](../standard-library/input-stream-manipulators.md)  
+ [Giriş Akışı Manipülatörleri](../standard-library/input-stream-manipulators.md)  
   
- [Giriş akışı üye işlevleri](../standard-library/input-stream-member-functions.md)  
+ [Giriş Akışı Üye İşlevleri](../standard-library/input-stream-member-functions.md)  
   
- [Aşırı yükleme >> kendi sınıflarınız için işleci](../standard-library/overloading-the-input-operator-for-your-own-classes.md)  
+ [Kendi Sınıflarınız İçin >> İşleci Aşırı Yükleme](../standard-library/overloading-the-input-operator-for-your-own-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [iostream programlama](../standard-library/iostream-programming.md)
+ [iostream Programlaması](../standard-library/iostream-programming.md)

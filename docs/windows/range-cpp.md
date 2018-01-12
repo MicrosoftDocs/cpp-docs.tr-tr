@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a43ad22484ec8502c66c16caa40933bf8f422df9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b95b1bfd093a12bca5398c266d6a7c8236140105
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="range-c"></a>aralık (C++)
 Bağımsız değişken veya değerleri çalışma zamanında ayarlanır alanları için izin verilen değer aralığı belirtir.  
@@ -77,4 +80,4 @@ __interface ICustom {
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Yöntem öznitelikleri](../windows/method-attributes.md)   
  [Parametre öznitelikleri](../windows/parameter-attributes.md)   
- [Veri üyesi öznitelikleri](../windows/data-member-attributes.md)   
+ [Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)   

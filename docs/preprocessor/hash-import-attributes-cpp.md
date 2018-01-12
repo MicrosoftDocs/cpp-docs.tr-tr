@@ -1,5 +1,5 @@
 ---
-title: "#<a name=\"import-attributes-c--microsoft-docs\"></a>Öznitelikler (C++) alma | Microsoft Docs"
+title: "#Öznitelikler (C++) alma | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fd11326e33ff783b3868215794f9803e97d41c55
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d5c2da30fd2b92ea302c40dc7dbef71499fdecdf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="import-attributes-c"></a>#import Öznitelikleri (C++)
 #İmport yönergesi ile kullanılan öznitelikler için bağlantılar sağlar.  

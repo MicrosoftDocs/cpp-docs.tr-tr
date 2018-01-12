@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1e1eb73bf0b4a3eb91be63f3953959fa67e0737
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 603504025bf4069f7a56b705e50a176975dbf244
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp ve MFC Uygulama Sihirbazı
 Bir uygulama sınıfı türetilen bir iskelet uygulama oluşturduğunda, MFC Uygulama Sihirbazı'nı bildirir [CWinApp](../mfc/reference/cwinapp-class.md). MFC Uygulama Sihirbazı'nı, ayrıca aşağıdaki öğeleri içeren bir uygulama dosyası oluşturur:  

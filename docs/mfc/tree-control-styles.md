@@ -30,11 +30,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eabc479d68134e3e0cc94a4236cb9ab3270cd2e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c141a2b0db673f8d3c5f2c116de5b5d2ec81a8ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
 Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri yöneten bir ağaç denetimin görünümünü yönlerini. Ağaç denetimi oluşturduğunuzda, ilk stilleri ayarlama. Alabilir ve kullanarak oluşturduktan sonra ağaç denetimi stilleri değiştirme [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) ve [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) belirterek Windows işlevleri **GWL_STYLE** için `nIndex` parametresi. Stilleri tam bir listesi için bkz: [ağaç görünümü denetimi pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760013) Windows SDK.  
@@ -51,5 +52,5 @@ Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri yön
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

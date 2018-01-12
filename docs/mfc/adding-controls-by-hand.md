@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 15712cbcae434f036c6c1b35800a566286932f88
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b13f6fdfb3c11819eb8d8838e5617e7a349d1023
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-controls-by-hand"></a>El İle Denetim Ekleme
 Seçebilir ya da [ile iletişim kutusu Düzenleyicisi için bir iletişim kutusu denetimleri ekleme](../mfc/using-the-dialog-editor-to-add-controls.md) veya bunları kendiniz koduyla ekleyin.  

@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ccf38dd68629d2a550767e5bf8adf31ae9fe2d44
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3491f4af6d7a75b98db5aece493f64433df80f13
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adoptd3daccesslockt-structure"></a>adopt_d3d_access_lock_t Yapısı
 D3D erişim kilit göstermek için etiket türünü benimsenen edinilen yerine.  
@@ -40,4 +41,4 @@ struct adopt_d3d_access_lock_t;
  **Namespace:** concurrency::direct3d  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Direct3D Namespace](concurrency-direct3d-namespace.md)
+ [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

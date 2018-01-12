@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 985e42514440ce26d9f17ee693f6e9235e838c8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 175a3b3f1640d2a91154793433fc9983fbd4b521
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="declaring-message-handler-functions"></a>İleti İşleyici İşlevlerini Bildirme
 Belirli kurallar ve kuralları, ileti işleyicisi işlevlerin adları yönetir. Aşağıdaki konularda açıklandığı gibi bu ileti kategorisine göre değişir:  
@@ -32,5 +33,5 @@ Belirli kurallar ve kuralları, ileti işleyicisi işlevlerin adları yönetir. 
 -   [Yansımış iletileri işleme](../mfc/handling-reflected-messages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İleti işleme ve eşleme](../mfc/message-handling-and-mapping.md)
+ [İleti İşleme ve Eşleme](../mfc/message-handling-and-mapping.md)
 

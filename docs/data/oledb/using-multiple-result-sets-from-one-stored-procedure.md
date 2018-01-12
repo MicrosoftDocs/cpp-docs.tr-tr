@@ -16,11 +16,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 787c2123981f894eb4b6ba088cfcef774b6ed6f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: ec887f01e377ffa6295086bbeeb56dcd884d6276
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>Depolanmış Bir Yordamdan Birden Çok Sonuç Kümesi Kullanma
 Çoğu depolanmış yordam birden çok sonuç kümesi döndürür. Bir veya daha çok select deyimi bu tür bir saklı yordam genellikle bir içerir. Tüketici tüm sonuç kümelerini işlemek için bunu göz önüne almanız gerekir.  
@@ -36,4 +39,4 @@ ms.lasthandoff: 10/24/2017
 4.  Çağrı `GetNextResult` üzerinde `CCommand` sınıfı. Başka bir sonuç satır kümesi olup olmadığını `GetNextResult` S_OK verir ve el ile erişimci kullanıyorsanız, sütunları yeniden bağlamanız. Varsa `GetNextResult` bir hata döndürür bulunmaktadır başka sonuç kümesi kullanılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Saklı yordamları kullanma](../../data/oledb/using-stored-procedures.md)
+ [Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)

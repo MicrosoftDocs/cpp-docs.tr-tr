@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84fa69490d72d08fd9421d7d15aed5c9d6bf6c26
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fa2fea0b9a514e51db556e256f9ff17329cf4ad5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-event-visual-c"></a>Olay Ekleme (Visual C++)
 Sınıf görünümünden kullanarak bir olay ekleyebilirsiniz [olay Ekleme Sihirbazı'nı](../ide/add-event-wizard.md) denetimi sınıfta için yalnızca, [MFC ActiveX denetimini](../mfc/reference/creating-an-mfc-activex-control.md) projesi. Başka türde bir proje için bir olay eklemek istiyorsanız, kullanmak **olayları** düğmesini [Özellikler penceresini](/visualstudio/ide/reference/properties-window).  

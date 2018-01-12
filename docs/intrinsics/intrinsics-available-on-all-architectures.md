@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 58c96e365a7ce3858f57ba9626c0181b60ddeec1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a97d2469fdec35c73e830d4a616a9e4487ffef86
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>İç bilgiler kullanılabilir tüm mimarileri hakkında
 Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:  
@@ -40,7 +41,7 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_bittestandset64](../intrinsics/bittestandset-bittestandset64.md)|intrin.h|  
 |[__debugbreak](../intrinsics/debugbreak.md)|intrin.h|  
 |[_disable](../intrinsics/disable.md)|intrin.h|  
-|[_tcp](../intrinsics/enable.md)|intrin.h|  
+|[_enable](../intrinsics/enable.md)|intrin.h|  
 |[__fastfail](../intrinsics/fastfail.md)|intrin.h|  
 |[_InterlockedAnd](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedAnd16](../intrinsics/interlockedand-intrinsic-functions.md)|intrin.h|  
@@ -183,4 +184,4 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM iç bilgileri](../intrinsics/arm-intrinsics.md)   
  [x86 iç bilgi listesi](../intrinsics/x86-intrinsics-list.md)   
- [x64 (amd64) iç bilgi listesi](../intrinsics/x64-amd64-intrinsics-list.md)
+ [x64 (amd64) İç Bilgi Listesi](../intrinsics/x64-amd64-intrinsics-list.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b4a509ee99acef2510424995569da297c5d6f971
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c04d411a6b0075d2fa08d846ad3b8a1bbb020c17
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="once"></a>once
 Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derleyici tarafından dahil olacağını belirtir.  
@@ -68,4 +69,4 @@ Bir kaynak kodu dosyasını derlerken dosyanın (açık) yalnızca bir kez derle
  Kullanma konusunda dikkatli olun `#pragma once` veya # önişlemci sembolleri etkilerini kontrol kullanmayı tasarlanmış birden çok kez dahil edilmek üzere üstbilgi dosyalarına koruma deyim include. Bu tasarım örneği için bkz: \<assert.h > Üstbilgi dosyası. Ayrıca yönetmek dikkatli olun boşa çıkarabilir eklenen dosyalar için birden fazla yol oluşturmamak için yol eklemeyi iyileştirme için her ikisini birden çok dahil # koruyucuları include ve `#pragma once`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma yönergeleri ve __Pragma anahtar sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+ [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

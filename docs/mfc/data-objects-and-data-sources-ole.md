@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb39b5089b7cd4849e5afd3eaac239c0c2ab3adf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 04619ee7851d2e2d6ad569583dfbb2e619d37026
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Veri Nesneleri ve Veri Kaynakları (OLE)
 Veri aktarımı, Pano veya sürükle ve bırak, kullanarak ya da gerçekleştirdiğinizde verileri bir kaynak ve hedef sahiptir. Başka bir uygulamaya yapıştırma için kabul ettiği ve kopyalamak için verileri bir uygulama sağlar. Aynı veri aktarımı başarılı olması için farklı işlemler gerçekleştirmek her iki tarafı aktarım gerekir. Microsoft Foundation Class (MFC) kitaplığı, bu Aktarım her iki tarafındaki temsil eden iki sınıflar sağlar:  
@@ -36,16 +37,16 @@ Veri aktarımı, Pano veya sürükle ve bırak, kullanarak ya da gerçekleştird
   
  Aşağıdaki makaleler veri nesneleri ve veri kaynaklarında uygulamalarınızı nasıl kullanılacağı açıklanmaktadır. Her ikisi de bağlı verileri kopyalama ve yapıştırma için çağrılabilir çünkü bu bilgiler kapsayıcı ve sunucu uygulamaları için geçerlidir.  
   
--   [Veri nesneleri ve veri kaynakları: oluşturma ve yok etme](../mfc/data-objects-and-data-sources-creation-and-destruction.md)  
+-   [Veri Nesneleri ve Veri Kaynakları: Oluşturma ve Yok Etme](../mfc/data-objects-and-data-sources-creation-and-destruction.md)  
   
--   [Veri nesneleri ve veri kaynakları: düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)  
+-   [Veri Nesneleri ve Veri Kaynakları: Düzenleme](../mfc/data-objects-and-data-sources-manipulation.md)  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Sürükleme ve bırakma](../mfc/drag-and-drop-ole.md)  
+ [Sürükleme ve Bırakma](../mfc/drag-and-drop-ole.md)  
   
  [Pano](../mfc/clipboard.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE](../mfc/ole-in-mfc.md)   
  [COleDataObject sınıfı](../mfc/reference/coledataobject-class.md)   
- [COleDataSource sınıfı](../mfc/reference/coledatasource-class.md)
+ [COleDataSource Sınıfı](../mfc/reference/coledatasource-class.md)

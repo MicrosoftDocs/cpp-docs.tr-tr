@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a49250dabf1f58f9933a296db87d951e75d8f187
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ff7dd60dbb91d88377f481510ea0e213f18098a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>İzlenecek Yol: Özel bir İleti Bloğu Oluşturma
 Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü oluşturmayı açıklar.  
@@ -30,9 +31,9 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:  
   
-- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+- [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
-- [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)  
+- [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)  
   
 ##  <a name="top"></a>Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
@@ -207,7 +208,7 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12  
 ```  
   
- `priority_buffer` Öncelik ve sonra da hangi iletileri aldığı sıraya göre sınıfı iletileri ilk siparişleri.. Bu örnekte, iletilerin büyük sayısal önceliğe sahip sıranın önünü eklenir.  
+ `priority_buffer` Öncelik ve sonra da hangi iletileri aldığı sıraya göre sınıfı iletileri ilk siparişleri. Bu örnekte, iletilerin büyük sayısal önceliğe sahip sıranın önünü eklenir.  
   
  [[Üst](#top)]  
   
@@ -219,4 +220,4 @@ Bu belge, gelen iletileri önceliğe göre sıralar özel ileti blok türü olu�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Çalışma zamanı izlenecek yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)   
  [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)   
- [İleti geçirme işlevleri](../../parallel/concrt/message-passing-functions.md)
+ [İleti Geçirme İşlevleri](../../parallel/concrt/message-passing-functions.md)

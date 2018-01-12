@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c355a0ec75912ab9ef8b20cc980bc920de96b37b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54e0da32736f00a8ba1f01e6cf3ce2d0f38c8ee9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="technical-notes-by-number"></a>Sayıya Göre Teknik Notlar
 Aşağıdaki teknik notlar sayısal, önce en kısa süre önce yazılmış Teknik Not ile listelenir. Kategoriye göre bir listesi için bkz: [kategoriye göre teknik notlar](../mfc/technical-notes-by-category.md).  
@@ -61,7 +62,7 @@ Aşağıdaki teknik notlar sayısal, önce en kısa süre önce yazılmış Tekn
 |35|[Visual C++ ile birden çok kaynak dosya ve üstbilgi dosyası kullanma](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)|  
 |33|[MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)|  
 |32|[MFC özel durum mekanizması](../mfc/tn032-mfc-exception-mechanism.md)|  
-|31|[Denetim çubukları](../mfc/tn031-control-bars.md)|  
+|31|[Denetim Çubukları](../mfc/tn031-control-bars.md)|  
 |30|[Yazdırma ve Baskı Önizlemeyi özelleştirme](../mfc/tn030-customizing-printing-and-print-preview.md)|  
 |29|[Bölümlendirici pencereler](../mfc/tn029-splitter-windows.md)|  
 |28|[Bağlama duyarlı Yardım desteği](../mfc/tn028-context-sensitive-help-support.md)|  
@@ -72,7 +73,7 @@ Aşağıdaki teknik notlar sayısal, önce en kısa süre önce yazılmış Tekn
 |22|[Standart komutları uygulama](../mfc/tn022-standard-commands-implementation.md)|  
 |21|[Komut ve ileti yönlendirme](../mfc/tn021-command-and-message-routing.md)|  
 |20|[Kimlik adlandırma ve numaralandırma kuralları](../mfc/tn020-id-naming-and-numbering-conventions.md)|  
-|17|[Pencere nesnelerini yok etme](../mfc/tn017-destroying-window-objects.md)|  
+|17|[Pencere Nesnelerini Yok Etme](../mfc/tn017-destroying-window-objects.md)|  
 |16|[MFC'de C++ birden çok devralmayı kullanma](../mfc/tn016-using-cpp-multiple-inheritance-with-mfc.md)|  
 |14|[Özel denetimler](../mfc/tn014-custom-controls.md)|  
 |11|[Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)|  

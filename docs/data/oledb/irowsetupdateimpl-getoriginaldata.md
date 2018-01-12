@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: af22342cd69913d33ac78e4b9c46e5b70a78fe84
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 42ae9c07ed7f85faeac6ad279096b20bdbed6aa1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetupdateimplgetoriginaldata"></a>IRowsetUpdateImpl::GetOriginalData
 En son için iletilen veya bekleyen değişiklikleri yoksayılıyor veri kaynağından alınan veriler alır.  
@@ -47,4 +50,4 @@ En son için iletilen veya bekleyen değişiklikleri yoksayılıyor veri kaynağ
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetUpdateImpl sınıfı](../../data/oledb/irowsetupdateimpl-class.md)
+ [IRowsetUpdateImpl Sınıfı](../../data/oledb/irowsetupdateimpl-class.md)

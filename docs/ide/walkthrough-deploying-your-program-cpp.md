@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6cec4d77ec1c5bcc010a061065516ef132ec88c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce59dc7b767c8ff8e988ac7a765d3bb5f1cdfffc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-deploying-your-program-c"></a>İzlenecek Yol: Programınızı Dağıtma (C++)
 İçinde listelenen önceki ilgili incelemeleri tamamlayarak uygulamanızı oluşturduğunuza göre [C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md), diğer kullanıcılar bir yükleyici oluşturmak üzere son adımdır program bilgisayarlarına yükleyin. Bunu yapmak için var olan çözümünüzü yeni bir proje ekleyeceksiniz. Bu yeni proje çıktısı, uygulamanızın başka bir bilgisayara yükler setup.exe dosyasıdır.  
@@ -96,5 +97,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ programları oluşturma](../build/building-c-cpp-programs.md)  
+ [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
  [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

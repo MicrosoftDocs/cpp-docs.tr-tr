@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 622853951c9119bb2a32e9e624966bf77579b557
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b4299d5bb0f638d33714a5b5daeff60fde3f49be
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-routing"></a>Komut Yönlendirme
 İleti eşleme bağlantıları işleyici işlevlerini Özellikler penceresini kullanın görev ve komutları arasında yapmaya komutları ile çalışırken sizin sorumluluğunuzdadır sınırlıdır. Ayrıca, çoğu komut işleyicileri yazmanız gerekir.  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/24/2017
  Önceki tabloda ikinci sütundaki numaralı girişleri Bahsediyor burada bir belge gibi diğer nesneler ilk sütununda karşılık gelen öğe bakın. Görünümü, belge için bir komut iletir ikinci sütunda okurken örneği için daha fazla yönlendirme izlemek için ilk sütunda "Belge" girişine bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md)
+ [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

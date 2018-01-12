@@ -15,14 +15,15 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e440897bd3c047a5f6598187004808defb4f6eaa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 253982da087dfc4b8ae9878b9788529960ecd8a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-does-it-cost-me-to-derive-a-class-from-cobject"></a>CObject'ten Sınıf Türetmenin Bana Maliyeti Nedir?
 Sınıfından türetilen içinde ek yükü [CObject](../mfc/reference/cobject-class.md) en alt düzeydedir. Yalnızca dört sanal işlevler ve tek bir türetilmiş sınıf devralır [CRuntimeClass](../mfc/reference/cruntimeclass-structure.md) nesnesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CObject sınıfı: Sık sorulan sorular](../mfc/cobject-class-frequently-asked-questions.md)
+ [CObject Sınıfı: Sık Sorulan Sorular](../mfc/cobject-class-frequently-asked-questions.md)

@@ -161,11 +161,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 60913269bf0d3120ebdba60fea912d52d1467853
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a07b8049f01d10556bded754ec2aae55581b7cb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl sınıfı
 [!INCLUDE[cpp_fp_under_construction](../../mfc/reference/includes/cpp_fp_under_construction_md.md)]  
@@ -291,10 +292,10 @@ class CMFCPropertyGridCtrl : public CWnd
   
 |örneği|Açıklama|  
 |-----------|-----------------|  
-|[CMFCPropertyGridProperty sınıfı](../../mfc/reference/cmfcpropertygridproperty-class.md)|Dize, Boolean değerleri, tarih değerini vb. belirtmek için kullanılan genel amaçlı özelliği.|  
-|[CMFCPropertyGridColorProperty sınıfı](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|Bir renk değeri seçmek için kullanılan özellik.|  
-|[CMFCPropertyGridFileProperty sınıfı](../../mfc/reference/cmfcpropertygridfileproperty-class.md)|Bir dosya seçmek için kullanılan özellik.|  
-|[CMFCPropertyGridFontProperty sınıfı](../../mfc/reference/cmfcpropertygridfontproperty-class.md)|Bir yazı tipi seçmek için kullanılan özellik.|  
+|[CMFCPropertyGridProperty Sınıfı](../../mfc/reference/cmfcpropertygridproperty-class.md)|Dize, Boolean değerleri, tarih değerini vb. belirtmek için kullanılan genel amaçlı özelliği.|  
+|[CMFCPropertyGridColorProperty Sınıfı](../../mfc/reference/cmfcpropertygridcolorproperty-class.md)|Bir renk değeri seçmek için kullanılan özellik.|  
+|[CMFCPropertyGridFileProperty Sınıfı](../../mfc/reference/cmfcpropertygridfileproperty-class.md)|Bir dosya seçmek için kullanılan özellik.|  
+|[CMFCPropertyGridFontProperty Sınıfı](../../mfc/reference/cmfcpropertygridfontproperty-class.md)|Bir yazı tipi seçmek için kullanılan özellik.|  
   
 ## <a name="illustrations"></a>Çizimler  
  Aşağıdaki çizimler iki yolla özellikleri görüntüleyen bir özellik kılavuz denetim tarif. Birinci çizim özelliklerini hiyerarşik olarak görüntüler ve ikinci özelliklerini alfabetik olarak görüntüler.  
@@ -1483,4 +1484,4 @@ virtual BOOL ValidateItemData(CMFCPropertyGridProperty* pProp);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sınıfları](../../mfc/reference/mfc-classes.md)
+ [Sınıflar](../../mfc/reference/mfc-classes.md)

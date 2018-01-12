@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d650df9c77b6a99c7ee9982caa88e8eb7c1b8d9d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b151e68c9cce0113c46f0eaffff8e19ed4d5c896
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ischedulerproxy-structure"></a>ISchedulerProxy Yapısı
 Tarafından zamanlayıcılar kaynak ayırma anlaşmak üzere eşzamanlılık çalışma zamanı Resource Manager ile iletişim kurmak arabirimi.  
@@ -169,4 +170,4 @@ virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
  [Ischeduler yapısı](ischeduler-structure.md)   
  [Ithreadproxy yapısı](ithreadproxy-structure.md)   
  [Ivirtualprocessorroot yapısı](ivirtualprocessorroot-structure.md)   
- [Iresourcemanager yapısı](iresourcemanager-structure.md)
+ [IResourceManager Yapısı](iresourcemanager-structure.md)

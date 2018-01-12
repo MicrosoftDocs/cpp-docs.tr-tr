@@ -15,16 +15,17 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54c37f3262c6750bad4330780a4db09f2eef9d49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9305f860fb393d2f5d3149300d8df4cfa9f6e5a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrency-namespace-operators"></a>Eşzamanlılık ad alanı işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#operator_neq)|[işleci&amp;&amp;](#operator_amp_amp)|[işleci&gt;](#operator_gt)|  
+|[operator!=](#operator_neq)|[işleci&amp;&amp;](#operator_amp_amp)|[işleci&gt;](#operator_gt)|  
 |[işleci&gt;=](#operator_gt_eq)|[işleci&lt;](#operator_lt)|[işleci&lt;=](#operator_lt_eq)|  
 |[operator ==](#operator_eq_eq)|[işleci||](#operator_lor)|  
   
@@ -325,4 +326,4 @@ inline bool operator>= (
  Bu yöntem eşzamanlılık uyumlu ya da eş zamanlı vektörlerinin değiştirebileceği diğer yöntemleri göre değil `_A` veya `_B`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace](concurrency-namespace.md)
+ [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

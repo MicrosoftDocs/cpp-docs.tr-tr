@@ -21,11 +21,14 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cff5256d94593959c280614858cdde8be3dee9f6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: fab5bb3c912aeea2598189965d424ba4508cf5c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)
 Yansıma çalışma zamanında denetlenecek bilinen veri türlerine izin verir. Belirli bir sınıf ya da değer türü üyeleri bulunan ve yansıma verilen derlemedeki veri türlerini numaralandırma sağlar. Bu tür bilinen veya derleme zamanında başvurulan bakılmaksızın bakılmaksızın geçerlidir. Bu yansıma geliştirme ve kod Yönetim Araçları için kullanışlı bir özelliği sağlar.  
@@ -38,9 +41,9 @@ Yansıma çalışma zamanında denetlenecek bilinen veri türlerine izin verir. 
   
  Bu bölümdeki konular:  
   
--   [Nasıl yapılır: yansıma kullanarak eklenti bileşeni mimarisi uygulama (C + +/ CLI)](../dotnet/how-to-implement-a-plug-in-component-architecture-using-reflection-cpp-cli.md)  
+-   [Nasıl yapılır: Yansıma Kullanarak Eklenti Bileşeni Mimarisi Uygulama (C++/CLI)](../dotnet/how-to-implement-a-plug-in-component-architecture-using-reflection-cpp-cli.md)  
   
--   [Nasıl yapılır: yansıma kullanarak derlemelerde veri türlerini numaralandırma (C + +/ CLI)](../dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md)  
+-   [Nasıl yapılır: Yansıma Kullanarak Derlemelerde Veri Türlerini Numaralandırma (C++/CLI)](../dotnet/how-to-enumerate-data-types-in-assemblies-using-reflection-cpp-cli.md)  
   
  Daha fazla bilgi için bkz: [System.Reflection Namespace](https://msdn.microsoft.com/en-us/library/system.reflection.aspx)  
   
@@ -233,4 +236,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

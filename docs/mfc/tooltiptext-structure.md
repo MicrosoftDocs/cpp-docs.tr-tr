@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c0fb340f5f912cd4356be1c87bf78110a30ff7e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: becbdcfcc6dbd26ae3095de098d12dbc078530cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tooltiptext-structure"></a>TOOLTIPTEXT Yapısı
 Yazma işleminde, [araç ipucu bildirim işleyicisi](../mfc/handling-ttn-needtext-notification-for-tool-tips.md), kullanmanız gereken `TOOLTIPTEXT` yapısı. Üyeleri `TOOLTIPTEXT` yapısı şunlardır:  
@@ -65,5 +66,5 @@ Yazma işleminde, [araç ipucu bildirim işleyicisi](../mfc/handling-ttn-needtex
 -   Bir dize kaynağı tanıtıcısı kopyalama `lpszText` üye ve kopyalama kaynağı içeren örneği tanıtıcısı `hinst` üyesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cframewnd'den türetilmemiş pencerelerde araç ipuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+ [CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 

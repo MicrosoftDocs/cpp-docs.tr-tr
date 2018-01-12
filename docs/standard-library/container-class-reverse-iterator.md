@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ee2d8ea4971fedd4be7dfdfe1de61fb3a3334f34
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ec8cffec1bbfa38fd607235f35bc9ed49a1c57f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="container-classreverseiterator"></a>Kapsayıcı Sınıfı::reverse_iterator
 > [!NOTE]
@@ -37,4 +38,4 @@ typedef T7 reverse_iterator;
  Bunu açıklanan burada belirtilmemiş türler eşanlamlısı olarak **T7** (genellikle `reverse_iterator`  **\<**  [yineleyici](../standard-library/container-class-iterator.md)  **>** ).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Örnek kapsayıcı sınıfı](../standard-library/sample-container-class.md)
+ [Örnek Kapsayıcı Sınıfı](../standard-library/sample-container-class.md)

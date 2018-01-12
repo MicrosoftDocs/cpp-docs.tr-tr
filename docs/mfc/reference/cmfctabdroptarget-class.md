@@ -27,11 +27,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: df98908522fd57b0b5cfd4af2e8bb0582028b122
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ff17f7312f5e04b6ae900e792523155705a3b4a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 Sekme denetimi OLE kitaplıklarının arasındaki iletişim mekanizması sağlar.  
@@ -243,7 +244,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [Sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md)
+ [Sürükleme ve Bırakma (OLE)](../../mfc/drag-and-drop-ole.md)
 
 
 

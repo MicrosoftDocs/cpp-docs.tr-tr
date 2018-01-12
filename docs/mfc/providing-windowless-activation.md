@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 536788ec2a09d00f4bd92cc602ea9a558415ef72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eb33f1dd9f8be8cb06cdfcc2aeecb653c2762410
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="providing-windowless-activation"></a>Penceresiz Etkinleştirme Sağlama
 Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdığınızda **CreateWindow'u**) yürütmek maliyetli olabilir. Tutan bir denetim bir pencere iletileri yönetmek penceresinin ekran vardır. Penceresiz denetimleri, bu nedenle windows denetimleriyle daha hızlı bir şekilde bağlıdır.  
@@ -64,5 +65,5 @@ Pencere oluşturma kod (diğer bir deyişle, gerçekleşen her şeyi çağırdı
  [!code-cpp[NVC_MFC_AxOpt#8](../mfc/codesnippet/cpp/providing-windowless-activation_4.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md)
+ [MFC ActiveX Denetimleri: İyileştirme](../mfc/mfc-activex-controls-optimization.md)
 

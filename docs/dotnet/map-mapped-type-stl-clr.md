@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ac5a39ed59b224304b0c8f2095a032bf39daef48
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 5e2a482582d49680c448c3172a11b54404d8390a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapmappedtype-stlclr"></a>map::mapped_type (STL/CLR)
 Her bir anahtar ile ilişkili bir eşlenen değer türü.  
@@ -73,4 +76,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::key_compare (STL/CLR)](../dotnet/map-key-compare-stl-clr.md)   
- [Map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)
+ [map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a45d03a01681d8617e12751822e9283da65b9ae6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96d5d440ace1ce1a1c8764132190487554925b66
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="makeexceptionptr-function"></a>make_exception_ptr İşlevi
 ## <a name="syntax"></a>Sözdizimi  
@@ -40,4 +41,4 @@ exception_ptr make_exception_ptr(_E _Except);
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Std Namespace](std-namespace.md)
+ [std Ad Alanı](std-namespace.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 02df801788d17f9ab00adc5c527db155d7db88f2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 62ecbe7dece323ce5e99fbe32b3b936fe3661362
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
 Bu sihirbaz, bir olay bir MFC ActiveX denetimi projesine ekler. Stok olayları listesinden seçebilirsiniz veya genellikle stok olay özelleştirebilirsiniz veya kendi olay belirtebilirsiniz.  

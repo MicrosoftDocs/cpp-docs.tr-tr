@@ -30,11 +30,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b0e2d2de89bab2f4d0c6f23882f294c148886bcc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ff24f75c27ee60a085a8f87256a96b65a57e523c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 ||||  
@@ -532,4 +533,4 @@ inline unsigned int umin(
  Bağımsız değişkenler en küçük sayısal değeri döndürür  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CONCURRENCY::Direct3D Namespace](concurrency-direct3d-namespace.md)
+ [Concurrency::direct3d Ad Alanı](concurrency-direct3d-namespace.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8a66c99d4e37021898a90ac7b553d298a40f55e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d4cf6b22ab5b08bc1ac2746f7b0ed7e5f98e79b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="collectionadaptervaluetype-stlclr"></a>collection_adapter::value_type (STL/CLR)
 Öğenin türü.  
@@ -76,4 +79,4 @@ a b c
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [collection_adapter (STL/CLR)](../dotnet/collection-adapter-stl-clr.md)   
- [collection_adapter::Reference (STL/CLR)](../dotnet/collection-adapter-reference-stl-clr.md)
+ [collection_adapter::reference (STL/CLR)](../dotnet/collection-adapter-reference-stl-clr.md)

@@ -19,16 +19,17 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4f1676e4fd5740a4ab1c3a5a8f9c694ba070149c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f9303ba69160bfc2fc9de835d91e194c897c1a77
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="making-owner-drawn-header-controls"></a>Sahip Tarafından Çizilmiş Üstbilgi Denetimleri Yapma
 Üstbilgi denetimi tek tek öğelerin tanımlayabilirsiniz ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) sahip tarafından çizilmiş öğeleri olmalıdır. Daha fazla bilgi için bkz: [Owner-Drawn üstbilgi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

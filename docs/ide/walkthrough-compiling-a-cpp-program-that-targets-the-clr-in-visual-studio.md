@@ -18,11 +18,12 @@ caps.latest.revision: "40"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 152d26874af277d742b106db29a4d9dd9c254c9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eca6960d23c43fbe27d753ab4f79a27dea7bd7e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-compiling-a-c-program-that-targets-the-clr-in-visual-studio"></a>İzlenecek Yol: Visual Studio'da CLR'yi Hedefleyen C++ Programını Derleme
 Visual Studio geliştirme ortamı kullanarak derlemek ve .NET sınıfları kullanan Visual C++ programları oluşturabilirsiniz.  
@@ -84,4 +85,4 @@ Visual Studio geliştirme ortamı kullanarak derlemek ve .NET sınıfları kulla
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   
- [C/C++ programları oluşturma](../build/building-c-cpp-programs.md)
+ [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)

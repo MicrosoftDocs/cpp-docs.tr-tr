@@ -11,11 +11,12 @@ ms.assetid: ea9b4719-34a3-474a-b4ec-05b1859f80f1
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e753654ebada3c508858ff0ceb3d840e4a592c4c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f311c2e5832754bfd785084b9aa930b5dbe43845
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implement-pure-virtuals"></a>Saf sanalların uygulama
 **Ne:** hemen bir sınıfta tüm saf sanal yöntemleri uygulamak için gereken kodu oluşturmanıza olanak sağlar. 

@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b94fb68ad28e45141551b238acf99baedf78ef6a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5f92dc200f29f5fd20c8dd1cc27508b9c7cdf4ce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-a-dataflow-agent"></a>İzlenecek Yol: Veri Akışı Aracısı Oluşturma
 Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulamalarının nasıl oluşturulacağını gösterir.  
@@ -32,11 +33,11 @@ Bu belgede denetim akışı yerine veri akışı dayalı tabanlı aracı uygulam
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:  
   
-- [Zaman uyumsuz aracılar](../../parallel/concrt/asynchronous-agents.md)  
+- [Zaman Uyumsuz Aracılar](../../parallel/concrt/asynchronous-agents.md)  
   
-- [Zaman uyumsuz ileti blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
+- [Zaman Uyumsuz İleti Blokları](../../parallel/concrt/asynchronous-message-blocks.md)  
   
-- [Nasıl yapılır: ileti bloğu filtresini kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
+- [Nasıl yapılır: İleti Bloğu Filtresini Kullanma](../../parallel/concrt/how-to-use-a-message-block-filter.md)  
   
 ##  <a name="top"></a>Bölümler  
  Bu kılavuz aşağıdaki bölümleri içerir:  
@@ -154,5 +155,5 @@ info: ===Logging finished.===
  [[Üst](#top)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Çalışma zamanı izlenecek yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
+ [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 

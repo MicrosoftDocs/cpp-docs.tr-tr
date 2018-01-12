@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cea39eae9e7dc18d354ab3d8f80a1b1412e81769
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b58669e0d4d1ccb147283f1368e78f5418bc32dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mapconstreference-stlclr"></a>map::const_reference (STL/CLR)
 Bir öğe için sabit bir başvuru türü.  
@@ -73,4 +76,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [eşleme (STL/CLR)](../dotnet/map-stl-clr.md)   
  [Map::Reference (STL/CLR)](../dotnet/map-reference-stl-clr.md)   
- [Map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)
+ [map::value_type (STL/CLR)](../dotnet/map-value-type-stl-clr.md)

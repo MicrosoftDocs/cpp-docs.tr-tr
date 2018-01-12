@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4cfe46b872c50ec5601fe8f3f86e07f441902624
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c587e3b84ae7afd7869a5c1405d8ddc4ab417b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-sending-and-receiving"></a>İleti Gönderme ve Alma
 İşlem ve framework nasıl yanıt vereceğini gönderen parçası göz önünde bulundurun.  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/24/2017
  Bir komut hedefi nesnesi bir ileti veya komut aldığında, bir eşleşme için ileti eşlemesi arar. İleti için bir işleyici bulursa işleyiciyi çağırır. İleti eşlemeleri nasıl aranır hakkında daha fazla bilgi için bkz: [nasıl Framework aramaları ileti eşlemeleri](../mfc/how-the-framework-searches-message-maps.md). Yeniden şekle bakın [Framework komutlarda](../mfc/user-interface-objects-and-command-ids.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md)
+ [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

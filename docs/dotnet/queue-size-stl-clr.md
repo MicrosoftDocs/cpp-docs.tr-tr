@@ -15,11 +15,14 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12ffbe3943bdd2c0475658b214b831122364a17f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 46f1eec77c1a4b030b412e21709dff0c2300712d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queuesize-stlclr"></a>queue::size (STL/CLR)
 Öğe sayısını sayar.  
@@ -81,4 +84,4 @@ size() = 4 after adding 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
- [Queue::Empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)
+ [queue::empty (STL/CLR)](../dotnet/queue-empty-stl-clr.md)

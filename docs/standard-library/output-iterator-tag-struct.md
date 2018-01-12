@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3558e8169d2facdd7319635c852847e3dc77c7ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a45dd68f5788244c7d7f1ea72b22af5f96c1a0d8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="outputiteratortag-struct"></a>output_iterator_tag Yapısı
 Dönüş türü için sağlayan bir sınıf **iterator_category** çıkış yineleyici temsil eden bir işlev.  

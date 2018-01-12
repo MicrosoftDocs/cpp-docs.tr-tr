@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9078c01456f2766d544280b57297dc3cc64d54f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de7ef22d66befda28c6a374e8fb39f6b24a1dd62
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-a-header-control"></a>Üstbilgi Denetimiyle Çalışma
 Üstbilgi denetimi kullanmanın en kolay yolu ([CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) liste denetimi ile birlikte; bkz [kullanarak CListCtrl](../mfc/using-clistctrl.md) daha sonra bu konuda ailesindeki. Ayrıca tek başına bir üstbilgi denetimi kullanabilirsiniz. MFC çağrıları **InitCommonControls** sizin için. En önemli görevler şunlardır:  
@@ -37,5 +38,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

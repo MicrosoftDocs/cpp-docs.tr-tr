@@ -27,11 +27,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f78c167bc2692309c657b591bb22e68dde328e71
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8bb903bb38194be5b6a72f27ed683e965d7605b4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 İstenen görüntü veya metin oluşturmak için oynatabilirsiniz grafik cihaz arabirimi (GDI) komutları dizisini içeren bir Windows Meta dosyası uygular.  
@@ -205,7 +206,7 @@ BOOL CreateEnhanced(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CDC sınıfı](../../mfc/reference/cdc-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)
+ [Hiyerarşi Grafiği](../../mfc/hierarchy-chart.md)
 
 
 

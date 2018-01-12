@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 381c34f523648f6bd5d421ec607241dbac5d2303
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6fcdf557a13d4948391ee3272b4e73ccb9398c5f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c2962"></a>Derleyici Hatası C2962
 sözdizimi hatası: 'belirteci': beklenen ile sona erdirmek için Şablon sınıfı üye işlev tanımının '}'  

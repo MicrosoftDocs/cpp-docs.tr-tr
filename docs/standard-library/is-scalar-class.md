@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1de66c68ce1b4b0ff53cb73d96c8a8c39719644d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de7b946edb165eff8b0f558b8f7fa3d75ffa1caa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isscalar-class"></a>is_scalar Sınıfı
 Tür skaler ise testleri.  
@@ -83,4 +84,4 @@ is_scalar<float> == true
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [< type_traits >](../standard-library/type-traits.md)   
- [is_compound sınıfı](../standard-library/is-compound-class.md)
+ [is_compound Sınıfı](../standard-library/is-compound-class.md)

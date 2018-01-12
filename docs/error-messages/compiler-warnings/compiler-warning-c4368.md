@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6fd66d8fb6d30a960c659345910242ec5a1a2e11
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9694eb05a2d14ff8dac49c0e9a3cb29dcf52bbac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-c4368"></a>Derleyici Uyarısı C4368
 Yönetilen 'type' üyesi olarak 'üyesi' tanımlanamıyor: karışık türleri desteklenmiyor  

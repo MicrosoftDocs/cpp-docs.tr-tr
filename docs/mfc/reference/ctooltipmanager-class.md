@@ -27,11 +27,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 532203c753a61e4d242d4e749e9912a6b6ce7b5c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2adb62f107cb50ade529d552ce1735c57f74b171
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager sınıfı
 Araç ipuçları hakkında çalışma zamanı bilgileri korur. `CTooltipManager` Uygulama başına başlatılan bir kez bir sınıftır.  
@@ -199,4 +200,4 @@ void UpdateTooltips();
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCToolTipCtrl sınıfı](../../mfc/reference/cmfctooltipctrl-class.md)   
- [CMFCToolTipInfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)
+ [CMFCToolTipInfo Sınıfı](../../mfc/reference/cmfctooltipinfo-class.md)

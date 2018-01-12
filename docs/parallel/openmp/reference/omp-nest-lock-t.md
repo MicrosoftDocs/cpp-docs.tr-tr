@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73615a6c8e4b09aae01369c5a2fed07117fe490c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8bbf62ae43ed1ebd0d28157b03fabace9b2b9d18
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ompnestlockt"></a>omp_nest_lock_t
 Şu kilit hakkında bilgileri tutan bir türü: kilit kullanılabilir ve iş parçacığı kimliği, sahibi kilit ve iç içe geçmiş sayı olup olmadığını.  
@@ -42,4 +43,4 @@ ms.lasthandoff: 10/24/2017
  Bkz: [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md) kullanma örneği için **omp_nest_lock_t**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri türleri](../../../parallel/openmp/reference/openmp-data-types.md)
+ [Veri Türleri](../../../parallel/openmp/reference/openmp-data-types.md)

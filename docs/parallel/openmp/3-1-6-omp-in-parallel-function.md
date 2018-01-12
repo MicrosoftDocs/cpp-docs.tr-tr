@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b72351095fd56ae6543c2ca742983eef315f2158
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e5d05af81eb112894ca27a7599c271138893ee1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="316-ompinparallel-function"></a>3.1.6 omp_in_parallel İşlevi
 **Omp_in_parallel** işlevi paralel bölge yürütmenin paralel olarak dinamik kapsam içinde çağrıldıysa sıfır olmayan bir değer döndürür; Aksi halde 0 döndürür. Biçimi aşağıdaki gibidir:  

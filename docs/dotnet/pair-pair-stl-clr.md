@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4d9e9c0ca9c7da1902fec68b5724e610a839ee69
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 6b2382161ae1a4acf8cb79f017a39daf51826b4d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pairpair-stlclr"></a>pair::pair (STL/CLR)
 Çifti nesnesi oluşturur.  
@@ -110,4 +113,4 @@ int main()
  **Namespace:** cliext  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [çift (STL/CLR)](../dotnet/pair-stl-clr.md)
+ [pair (STL/CLR)](../dotnet/pair-stl-clr.md)

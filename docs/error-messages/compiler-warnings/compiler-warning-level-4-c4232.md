@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ae768c40ceca96da8c9f1b933d7006d08ed5e6e3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d0b8725ca2a7ee6c5f512559eecdb6b01ac4c6a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4232"></a>Derleyici Uyarısı (düzey 4) C4232
 kullanılan standart olmayan uzantısı: 'tanımlayıcısı': adresi dllimport 'dllimport' değil statik kimlik garanti edilmez  

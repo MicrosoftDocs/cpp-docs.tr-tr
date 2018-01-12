@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9570783ceacab50ca4d0304ae3b412b91f02a64b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0509d4e5d0e5c4bd909271c27747b2232dac51f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3555"></a>Derleyici Hatası C3555
   
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
  [Derleyici Hatası C3556](../../error-messages/compiler-errors-2/compiler-error-c3556.md)   
- [Önemli hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)
+ [Önemli Hata C1001](../../error-messages/compiler-errors-1/fatal-error-c1001.md)

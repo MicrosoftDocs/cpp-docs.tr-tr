@@ -13,17 +13,18 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b92eb646b152a7bbd4588fe953a762389ce111dc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ff80109c1f3a5e03ecb85406cdaea24804f96783
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Programları Windows XP için yapılandırma
 Visual Studio birden çok platform toolsets desteklediğinden, işletim sistemleri ve varsayılan araç takımı tarafından desteklenmez çalışma zamanı kitaplıkları hedefleyebilirsiniz. Örneğin, platform araç takımı geçerek, C ++ 11, C ++ 14 ve C ++ 17 dil geliştirmeleri Visual Studio için Visual C++ derleyicisi tarafından desteklenen hedefleyen uygulamalar oluşturmak için kullanabileceğiniz [!INCLUDE[winxp](../build/includes/winxp_md.md)] ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. Ayrıca ikili uyumlu eski kod korumak için eski platform toolsets kullanabilir ve hala en son Visual Studio IDE özelliklerini yararlanın.  
   
 > [!NOTE]
->  Kullanıyorsanız [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)], yüklemeniz gereken [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] güncelleştirme platform araç takımı desteği eklemek için 4 [!INCLUDE[winxp](../build/includes/winxp_md.md)] ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. Bir kopyasını karşıdan yükleyip [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] güncelleştirme 4 bkz [Microsoft Visual Studio Express 2012 için Windows Masaüstü](http://go.microsoft.com/fwlink/?LinkID=265464) Microsoft Download Center'da. Daha sonra yüklemek [Visual Studio 2012 Update 4](http://go.microsoft.com/fwlink/?LinkID=335900) v110_xp platform araç takımı alınamıyor. Yükleme işleminden sonra en son yazılım güncelleştirmelerini almak için Windows Update'i kullanın.  
+>  Kullanıyorsanız [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)], yüklemeniz gereken [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] güncelleştirme platform araç takımı desteği eklemek için 4 [!INCLUDE[winxp](../build/includes/winxp_md.md)] ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)]. Bir kopyasını karşıdan yükleyip [!INCLUDE[vs_dev11_long](../build/includes/vs_dev11_long_md.md)] güncelleştirme 4 bkz [Microsoft Visual Studio Express 2012 için Windows Masaüstü](http://go.microsoft.com/fwlink/p/?linkid=265464) Microsoft Download Center'da. Daha sonra yüklemek [Visual Studio 2012 Update 4](http://go.microsoft.com/fwlink/p/?linkid=335900) v110_xp platform araç takımı alınamıyor. Yükleme işleminden sonra en son yazılım güncelleştirmelerini almak için Windows Update'i kullanın.  
   
 ## <a name="windows-xp-targeting-experience"></a>Windows XP deneyimi hedefleme  
  Visual Studio'da bulunan Windows XP platform araç takımı sürümüdür [!INCLUDE[win7](../build/includes/win7_md.md)] dahil SDK [!INCLUDE[vs_dev10_long](../build/includes/vs_dev10_long_md.md)], ancak geçerli C++ derleyicisi kullanır. Ayrıca uygun varsayılan değerlere proje özelliklerini yapılandırır — Örneğin, alt düzey hedefleme için uyumlu bir bağlayıcı belirtimi. Yalnızca Windows XP platform araç takımı kullanılarak oluşturulan Masaüstü uygulamaları çalıştıracağınız Windows [!INCLUDE[winxp](../build/includes/winxp_md.md)] ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], ancak bu uygulamaları daha yeni Windows işletim sistemlerinde de çalıştırabilirsiniz.  

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cf2b44fc34f74fd5bc21d4032a205e155134e4e8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e81ab1a51b8d485cd9816b2adb84889d777b3f23
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="toolbars"></a>Araç Çubukları
 MFC araç çubukları ve oluşturmak ve bunları nasıl makaleleri araç ailesi açıklar.  
@@ -41,5 +42,5 @@ MFC araç çubukları ve oluşturmak ve bunları nasıl makaleleri araç ailesi 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kullanıcı arabirimi öğeleri](../mfc/user-interface-elements-mfc.md)   
- [Araç çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
+ [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
 

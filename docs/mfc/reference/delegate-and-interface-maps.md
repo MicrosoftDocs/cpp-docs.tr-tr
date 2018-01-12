@@ -17,11 +17,12 @@ caps.latest.revision: "1"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b30586116fff517818822f484b1285a59fd2a98b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9767c8b92316ffb9e458ba650e28db9ddf1a095b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 |||  
 |-|-|  
@@ -53,7 +54,7 @@ BEGIN_DELEGATE_MAP(  CLASS );
  **Başlık:** msclr\event.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+ [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
  
 ##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
 Uygulama dosyasında kullanıldığında interfaced harita tanımını başlar.  
@@ -99,7 +100,7 @@ delegate void CommandHandler(  UINT^ cmdID  );
  **Başlık:** afxwinforms.h (derleme atlmfc\lib\mfcmifc80.dll tanımlanan)  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [Nasıl yapılır: komut ekleme yönlendirme Windows Forms denetimi](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
+ [Nasıl yapılır: Windows Forms Denetimi'ne Yönlendiren Komut Ekleme](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
  
 ##  <a name="commanduihandler"></a>Commanduıhandler
 Geri arama yöntemleri içeren bir kullanıcı arabirimi güncelleştirme komut ileti kaydeder.  
@@ -143,7 +144,7 @@ END_DELEGATE_MAP();
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
 
- [Nasıl yapılır: Windows Forms olayları yerel C++ sınıflarından havuzu](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
+ [Nasıl yapılır: Yerel C++ Sınıflarından İç Havuz Windows Forms Olayları](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
  
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP

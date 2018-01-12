@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5aafec3bb4213ec8785cb6f05e0cc5e2ecc72e4a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9f1c07145f42e1ad71fb6c2a3542d9014b7e33b5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="project-build-error-prj0031"></a>Proje Derleme Hatası PRJ0031
 'Outputs' özelliği için özel derleme adımı için 'çıkışı değerlendiren dosya 'bulunan dosya' makro' 'macro_expansion'.  

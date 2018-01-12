@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bed81cc8b212b6deef13cc0c6fed013b854fb4ea
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4590724bfc34d0ed9136e74e85b09db6a805c50c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>Eşitleme Veri Yapılarını Windows API ile Karşılaştırma
 Bu konu Windows API tarafından sağlanan için eşzamanlılık çalışma zamanı tarafından sağlanan eşitleme veri yapıları davranışını karşılaştırır.  
@@ -89,4 +90,4 @@ Windows event:
  Görevler hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşitleme veri yapıları](../../parallel/concrt/synchronization-data-structures.md)
+ [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)

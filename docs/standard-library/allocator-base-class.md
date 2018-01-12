@@ -49,11 +49,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3b128257c06c2d2a0c1e19b67aa33217138d88c9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cf1127a6ec3e921e19c9626cc51197eb2a87d6ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocatorbase-class"></a>allocator_base Sınıfı
 Kullanıcı tanımlı bir ayırıcı eşitleme filtresi oluşturmak için gereken genel işlevler ve temel sınıf tanımlar.  
@@ -97,7 +98,7 @@ class allocator_base
 |[_Charalloc](#charalloc)|Depolama türü için bir dizi ayırır `char`.|  
 |[_Chardealloc](#chardealloc)|Türündeki öğeler içeren bir dizi için depolama boşaltır `char`.|  
 |[Adres](#address)|Değeri belirtilen bir nesne adresini bulur.|  
-|[ayırma](#allocate)|Bir en az bazı belirtilen sayıda öğeyi depolamak için büyük bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir en az bazı belirtilen sayıda öğeyi depolamak için büyük bellek bloğu ayırır.|  
 |[Yapı](#construct)|Belirli bir nesne belirli bir değerle başlatılır belirtilen adresteki türünü oluşturur.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
 |[yok](#destroy)|Nesneleri yok Edicisi bellek ayırmayı kaldırma olmadan nesne saklandığı çağırır.|  

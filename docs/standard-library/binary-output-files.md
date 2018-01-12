@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: da2d0ac01919773492f075f2e2dd6a7d210224fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f7df0e43c018e19b91e95d791b8cf4fd79092551
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="binary-output-files"></a>İkili Çıktı Dosyaları
 Varsayılan çıkış modu metindir şekilde akışları başlangıçta metin için tasarlanmıştır. Metin modunda yeni satır karakteri (onaltılık 10) bir satır başı-satır besleme için (yalnızca 16 bit) genişletir. Genişletme, aşağıda gösterildiği gibi sorunlara neden olabilir:  
@@ -58,5 +59,5 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkış akışları](../standard-library/output-streams.md)
+ [Çıkış Akışları](../standard-library/output-streams.md)
 

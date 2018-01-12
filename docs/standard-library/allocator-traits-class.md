@@ -51,11 +51,12 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.openlocfilehash: 5ddb30840a3f92de70d688cc763394e92b356417
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7d96b4a03085a2a6486fa2f2fe0d7050323682c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocatortraits-class"></a>allocator_traits Sınıfı
 Şablon sınıfı tamamlayan bir nesneyi tanımlayan bir *ayırıcısı türü*. Depolama tahsis yönetmek için kullanılan bir ayırıcı nesneyi tanımlayan herhangi bir türü bir ayırıcı türüdür. Özellikle, herhangi bir ayırıcı türü için `Alloc`, kullanabileceğiniz `allocator_traits<Alloc>` ayırıcısı etkin bir kapsayıcı tarafından gerekli tüm bilgileri belirlemek için. Daha fazla bilgi için bkz: varsayılan [allocator sınıfı](../standard-library/allocator-class.md).  
@@ -88,7 +89,7 @@ class allocator_traits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ayırma](#allocate)|Verilen ayırıcısı parametresini kullanarak bellek ayırır statik yöntem.|  
+|[allocate](#allocate)|Verilen ayırıcısı parametresini kullanarak bellek ayırır statik yöntem.|  
 |[Yapı](#construct)|Bir nesne oluşturmak için belirtilen ayırıcısı kullanan statik yöntem.|  
 |[serbest bırakma](#deallocate)|Belirtilen sayıda nesneleri serbest bırakma için belirtilen ayırıcısı kullanır statik yöntem.|  
 |[yok](#destroy)|Kendi bellek ayırmayı kaldırma olmadan yıkıcı bir nesne üzerinde çağırmak için belirtilen ayırıcısı kullanan statik yöntem.|  
@@ -224,4 +225,4 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<bellek >](../standard-library/memory.md)   
  [pointer_traits yapısı](../standard-library/pointer-traits-struct.md)   
- [scoped_allocator_adaptor sınıfı](../standard-library/scoped-allocator-adaptor-class.md)
+ [scoped_allocator_adaptor Sınıfı](../standard-library/scoped-allocator-adaptor-class.md)

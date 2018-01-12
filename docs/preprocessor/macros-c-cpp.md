@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e68ca7ef9033e14b5463c4d2db11620a71e0d94e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c6919f1e3670251b952ce797df5ad10b786b1bbd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
 Ön işleme genişletir önişlemci yönergeleri değil tüm satırlarda makroları (olmayan satırlar bir  **#**  ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı olmayan bazı yönergeleri bölümlerinde bir Koşullu derleme. "Koşullu derleme" yönergeleri, sabit bir ifade test ederek, bir kaynak dosyanın parçalarını derlenmesini gizlemek izin vermek veya hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyici ve hangi metin blokları sırasında kaynak dosyadan kaldırılır ön işleme.  
@@ -40,9 +41,9 @@ ms.lasthandoff: 10/24/2017
   
 -   [Makrolar ve C++](../preprocessor/macros-and-cpp.md)  
   
--   [Variadic makrolar](../preprocessor/variadic-macros.md)  
+-   [Variadic Makrolar](../preprocessor/variadic-macros.md)  
   
--   [Önceden tanımlı makrolar](../preprocessor/predefined-macros.md)  
+-   [Önceden Tanımlanmış Makrolar](../preprocessor/predefined-macros.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ Ön İşlemci Başvurusu](../preprocessor/c-cpp-preprocessor-reference.md)

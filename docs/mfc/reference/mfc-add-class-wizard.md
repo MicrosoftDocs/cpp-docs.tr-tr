@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59d17c57bc694974210aed652568f913bbfc7c40
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b4c65785008c7257fc2f3714d9bf78395f4a8e40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-add-class-wizard"></a>MFC Sınıf Ekleme Sihirbazı
 Varolan bir MFC projesine bir sınıf ekleyin ya da bir sınıf MFC destekleyen bir ATL projesine eklemek için bu kodu Sihirbazı'nı kullanın. MFC desteği için Win32 projeleri MFC sınıfları de ekleyebilirsiniz. Projenizi oluşturduğunuzda, belirttiğiniz özellikler bu iletişim kutusunda seçeneklerini belirleyin.  
@@ -30,7 +31,7 @@ Varolan bir MFC projesine bir sınıf ekleyin ya da bir sınıf MFC destekleyen 
  Bu sayfada, sınıf adı, temel sınıf ve dosya adları için yeni sınıf belirtin.  
   
  **Sınıf adı**  
- Kimlikleri ve bu sayfadaki dosya adları için varsayılan taban sağlar ve yeni sınıfın adını belirtir. C++ sınıfları genellikle "C" ile başlangıç böylece Örneğin, "CMyClass" "MyClass.h" olur, vb..  
+ Kimlikleri ve bu sayfadaki dosya adları için varsayılan taban sağlar ve yeni sınıfın adını belirtir. C++ sınıfları genellikle "C" ile başlangıç böylece Örneğin, "CMyClass" "MyClass.h" olur, vb.  
   
  **Taban sınıfı**  
  Yeni sınıfı temel sınıfın adını belirtir. Varsayılan olarak, temel sınıftır [CWnd](../../mfc/reference/cwnd-class.md). Seçtiğiniz temel sınıfı, bu sayfada diğer kutuları etkin olup olmadığını belirler.  
@@ -72,13 +73,13 @@ Varolan bir MFC projesine bir sınıf ekleyin ya da bir sınıf MFC destekleyen 
  **. HTM dosyası**  
  Türetilen sınıflara uygulanır `CDHtmlDialog` yalnızca. DHTML iletişim kutusu için HTML dosya adını ayarlar. Varsayılan olarak, bu dosya adı, sınıf adını temel alır. DHTML iletişim kutusu kaynak kimliği ile birlikte projenin .rc dosyasının HTML bölümünde dosya adı görünür  
   
- **Otomasyon**  
+ **Otomatikleştirme**  
  Destek için sınıf düzeyinde ayarlar [Otomasyon](../../mfc/automation.md). Sınıf düzeyinde Otomasyon Otomasyon destekleyen tüm sınıflar için kullanılabilir. Otomasyon desteği ile oluşturulan projeleri için de kullanılabilir. Diğer bir deyişle, ya da bir MFC projesine, [ATL destekleyen](../../atl/reference/mfc-support-in-atl-projects.md), veya kendisi için seçtiğiniz bir MFC projesine **Otomasyon** onay kutusuna [Gelişmiş Özellikler](../../mfc/reference/advanced-features-mfc-application-wizard.md) MFC sayfası Uygulama Sihirbazı.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
 |**Yok**|Sınıf Otomasyonu desteği yok sahip olduğunu gösterir.|  
-|**Otomasyon**|Sınıf Otomasyonu desteklediğini belirtir. Bu seçeneği seçerseniz, yeni oluşturulan sınıf, Microsoft Visual Basic ve Microsoft Excel gibi Automation istemci uygulamaları tarafından programlanabilir nesnesi olarak kullanılabilir. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılamaz.|  
+|**Otomatikleştirme**|Sınıf Otomasyonu desteklediğini belirtir. Bu seçeneği seçerseniz, yeni oluşturulan sınıf, Microsoft Visual Basic ve Microsoft Excel gibi Automation istemci uygulamaları tarafından programlanabilir nesnesi olarak kullanılabilir. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılamaz.|  
 |**Tür Kimliğine göre creatable**|Sınıf ve Proje Otomasyonu kullanarak bu sınıfın nesnelerini oluşturma başka uygulamaları desteklemeniz gösterir. Bu seçenek ile Otomasyon istemcileri doğrudan bir Otomasyon nesnesi oluşturabilirsiniz. Tür kimliği metin kutusunda istemci uygulaması tarafından oluşturulacak nesne belirtmek için kullanılır; Bu sistem çapında ve benzersiz olması gerekir. Bu seçenek, bu tablodan sonra listelenen temel sınıflar için kullanılamaz.|  
   
  Otomasyon desteği aşağıdaki temel sınıflar için kullanılabilir değil:  

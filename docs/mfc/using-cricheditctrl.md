@@ -17,41 +17,42 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3fd0e0f0eeee0d0346a66b1a85ffdedad557d199
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bce83944ccfd1624bc15a6a42485782bea21fdc2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-cricheditctrl"></a>CRichEditCtrl Kullanma
 Zengin düzenleme denetimine kullanıcı girin ve metin düzenleme bir penceredir. Metin karakter ve paragraf biçimlendirmesini atanabilir ve katıştırılmış OLE nesnelerine içerebilir. Zengin düzenleme denetimine MFC tarafından temsil edilen [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) sınıfı.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Zengin düzenleme denetimine genel bakış](../mfc/overview-of-the-rich-edit-control.md)  
+-   [Zengin Düzenleme Denetimine Genel Bakış](../mfc/overview-of-the-rich-edit-control.md)  
   
--   [Zengin düzenleme denetimleriyle ilgili sınıflar](../mfc/classes-related-to-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimleriyle İlgili Sınıflar](../mfc/classes-related-to-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimine örnekler](../mfc/rich-edit-control-examples.md)  
+-   [Zengin Düzenleme Denetimine Örnekler](../mfc/rich-edit-control-examples.md)  
   
--   [Zengin düzenleme denetimlerinde karakter biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimlerinde Karakter Biçimlendirme](../mfc/character-formatting-in-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimlerinde paragraf biçimlendirme](../mfc/paragraph-formatting-in-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimlerinde Paragraf Biçimlendirme](../mfc/paragraph-formatting-in-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimindeki geçerli bölüm](../mfc/current-selection-in-a-rich-edit-control.md)  
+-   [Bir Zengin Düzenleme Denetimindeki Geçerli Bölüm](../mfc/current-selection-in-a-rich-edit-control.md)  
   
 -   [Zengin düzenleme denetimindeki sözcük sonları](../mfc/word-breaks-in-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimlerinde Pano işlemleri](../mfc/clipboard-operations-in-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimlerinde Pano İşlemleri](../mfc/clipboard-operations-in-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimlerinde akış işlemleri](../mfc/stream-operations-in-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimlerinde Akış İşlemleri](../mfc/stream-operations-in-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetimlerinde yazdırma](../mfc/printing-in-rich-edit-controls.md)  
+-   [Zengin Düzenleme Denetimlerinde Yazdırma](../mfc/printing-in-rich-edit-controls.md)  
   
--   [Tabansız zengin düzenleme denetimleri](../mfc/bottomless-rich-edit-controls.md)  
+-   [Tabansız Zengin Düzenleme Denetimleri](../mfc/bottomless-rich-edit-controls.md)  
   
--   [Zengin düzenleme denetiminden bildirim](../mfc/notifications-from-a-rich-edit-control.md)  
+-   [Bir Zengin Düzenleme Denetiminden Bildirim](../mfc/notifications-from-a-rich-edit-control.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

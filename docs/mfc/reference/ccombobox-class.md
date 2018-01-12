@@ -119,11 +119,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6a8b9c9de69f9042f68cc04d435070ade9b24dd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fffa5c09f1572200ca7850c8870b7daee9e3e75f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 Bir Windows birleşik giriş kutusu işlevselliğini sağlar.  
@@ -280,7 +281,7 @@ int AddString(LPCTSTR lpszString);
  Eklenecek null ile sonlandırılmış dizeye noktaları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, liste kutusunda dize sıfır tabanlı dizini.. Dönüş değeri **CB_ERR** bir hata oluşursa; dönüş değeri olan **CB_ERRSPACE** yeni bir dize depolamak yeterli alan olup olmadığını.  
+ Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, liste kutusunda dize sıfır tabanlı dizini. Dönüş değeri **CB_ERR** bir hata oluşursa; dönüş değeri olan **CB_ERRSPACE** yeni bir dize depolamak yeterli alan olup olmadığını.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Liste kutusu ile oluşturulmamışsa [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili, dize listesinin sonuna eklenir. Aksi takdirde dize listesine eklenir ve liste sıralanır.  
@@ -490,7 +491,7 @@ int Dir(
  Bir dosya belirtimi dize noktalarına. Dize, joker karakter içerebilir (örneğin, *.\*).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, listeye eklenen son filename sıfır tabanlı dizini.. Dönüş değeri **CB_ERR** bir hata oluşursa; dönüş değeri olan **CB_ERRSPACE** yeni dize depolamak yeterli alan olup olmadığını.  
+ Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, listeye eklenen son filename sıfır tabanlı dizini. Dönüş değeri **CB_ERR** bir hata oluşursa; dönüş değeri olan **CB_ERRSPACE** yeni dize depolamak yeterli alan olup olmadığını.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev Windows tarafından desteklenmiyor **ComboBoxEx** denetim. Bu denetimi hakkında daha fazla bilgi için bkz: [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
@@ -534,7 +535,7 @@ int FindString(
  Aranacak önek içeren null ile sonlandırılmış dize noktalarına. Arama durumu bağımsız olduğundan, bu dizeyi herhangi bir bileşimini büyük ve küçük harfleri içerebilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, eşleşen öğenin sıfır tabanlı dizini.. Bu **CB_ERR** arama başarısız olmuşsa.  
+ Dönüş değeri sıfırdan büyük veya 0 değerine eşit ise, eşleşen öğenin sıfır tabanlı dizini. Bu **CB_ERR** arama başarısız olmuşsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev Windows tarafından desteklenmiyor **ComboBoxEx** denetim. Bu denetimi hakkında daha fazla bilgi için bkz: [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
@@ -1358,4 +1359,4 @@ void ShowDropDown(BOOL bShowIt = TRUE);
  [CListBox sınıfı](../../mfc/reference/clistbox-class.md)   
  [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md)   
  [CStatic sınıfı](../../mfc/reference/cstatic-class.md)   
- [CDialog sınıfı](../../mfc/reference/cdialog-class.md)
+ [CDialog Sınıfı](../../mfc/reference/cdialog-class.md)

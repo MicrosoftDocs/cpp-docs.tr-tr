@@ -1942,11 +1942,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 10de33fd0baf8ffb5ccce5fc5a532413f27a2b42
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2ecdf6a3e736cfe2876d7ea68a8f113e6b120b40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 Visual C++ derleyicisi aşağıdaki ön tanımlı ARM mimarisine kullanılabilir hale getirir. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](http://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.  
@@ -2160,7 +2161,7 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `Location`  
  Bir bellek konumunu okuma veya yazma için adresi.  
@@ -2208,7 +2209,7 @@ int _MoveFromCoprocessor2(
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `coproc`  
  0-15 aralığında eşişlemcisi sayı.  
@@ -2247,7 +2248,7 @@ unsigned __int64 _MoveFromCoprocessor64(
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `coproc`  
  0-15 aralığında eşişlemcisi sayı.  
@@ -2292,7 +2293,7 @@ void _MoveToCoprocessor2(
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `value`  
  Eşişlemcisi yazılacak değer.  
@@ -2335,7 +2336,7 @@ void _MoveFromCoprocessor64(
   
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  `coproc`  
  0-15 aralığında eşişlemcisi sayı.  

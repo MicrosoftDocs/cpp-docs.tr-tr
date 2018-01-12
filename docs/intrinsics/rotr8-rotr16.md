@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ffa10eb29796be61b2c5f35809fd0ac65fc158a2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7a4205131ba5690f24216997fcfd8884077d0d9c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
 **Microsoft özel**  
@@ -109,4 +110,4 @@ Rotating unsigned short 0x12 right by 10 bits gives 0x480
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_rotl8, _rotl16](../intrinsics/rotl8-rotl16.md)   
- [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)
+ [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

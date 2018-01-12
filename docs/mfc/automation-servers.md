@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d44d1f5f9a9d37bd38f441820dd75cb9a4b92df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a33cf8113825804ac831b518e371c4150f2620ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="automation-servers"></a>Otomasyon Sunucuları
 Otomasyon nesneleri başka bir uygulamaya uygulanan işlemek için ya da bunlar işlenebilir nesnelerini ortaya çıkarmak için uygulamanız için mümkün kılar. Otomasyon sunucusu (Otomasyon nesneleri olarak adlandırılır) programlanabilir nesneleri başka uygulamalar için kullanıma sunan bir uygulamasıdır (adlı [Otomasyon istemcileri](../mfc/automation-clients.md)). Otomasyon sunucuları bazen Otomasyon bileşenleri olarak adlandırılır.  

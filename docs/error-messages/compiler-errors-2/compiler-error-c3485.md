@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cd49b93beb54776bf17a9ee2bc5c9816f0964451
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7fb872161cc82878c7809e6ebcae901db0ba772f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3485"></a>Derleyici Hatası C3485
 lambda tanımı herhangi MS niteleyicileri sahip olamaz  
@@ -43,4 +44,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md)
+ [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

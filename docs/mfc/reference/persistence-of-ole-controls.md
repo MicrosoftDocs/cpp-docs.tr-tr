@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b6bdd34d34fc7b1395a6f06a052ed21e60bf319d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3452bccd4bdf94c84e4549f99829aaa087e1803b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 OLE denetimlerinin bir yetenek olduğu özelliği kalıcılığı (veya seri hale getirme) okumak veya özellik değerleri için ve bir dosya veya akış yazmak OLE denetimi sağlar. Bir kapsayıcı uygulama serileştirme bile uygulama denetimi yok sonra bir denetimin özellik değerlerini depolamak için kullanabilirsiniz. OLE denetim özellik değerlerinin sonra dosyasından okunabilir veya akış denetiminin yeni örneği olduğunda daha sonraki bir zamanda oluşturulur.  

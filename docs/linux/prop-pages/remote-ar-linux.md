@@ -21,11 +21,14 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 - VC.Project.Ar.OutputFile
 - VC.Project.VCConfiguration.BuildLogFile
-ms.openlocfilehash: 402fa1f752b311014c828027e45a92a3dc6a2917
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- linux
+ms.openlocfilehash: 83b69c8aea824f08f3db6aa5f5b7bf01cacb339e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="remote-archive-properties-c-linux"></a>Uzak arşivi özellikler (C++ Linux)
 

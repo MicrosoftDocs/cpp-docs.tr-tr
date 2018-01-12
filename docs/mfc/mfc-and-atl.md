@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b626eb6edbd740ab9c11a9da9d5d72d83c19fc56
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4b53607c1ca163bf7e1e50728e64da0e3497f4cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 Microsoft Foundation sınıfları (MFC) yerel Masaüstü uygulamaları hızlı geliştirme için Win32 nesne yönelimli bir C++ kapsayıcı sağlar. Etkin Şablon kitaplığı (ATL), COM Geliştirme basitleştirir ve ActiveX denetimleri oluşturmak için yaygın kullanılan bir sarmalayıcı kitaplıktır.  
@@ -28,8 +29,8 @@ Microsoft Foundation sınıfları (MFC) yerel Masaüstü uygulamaları hızlı g
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md)|C++'ta GUI uygulamalarının hızlı geliştirme etkinleştirmek için Win32 üzerinden basit bir nesne yönelimli sarmalayıcı Microsoft Foundation sınıflar sağlar.|  
-|[ATL COM Masaüstü bileşenleri](../atl/atl-com-desktop-components.md)|Sınıf şablonları ATL sağlar ve c++ COM nesneleri oluşturma işlemini basitleştirmek için diğer kullanım oluşturur.|  
+|[MFC Masaüstü Uygulamaları](../mfc/mfc-desktop-applications.md)|C++'ta GUI uygulamalarının hızlı geliştirme etkinleştirmek için Win32 üzerinden basit bir nesne yönelimli sarmalayıcı Microsoft Foundation sınıflar sağlar.|  
+|[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)|Sınıf şablonları ATL sağlar ve c++ COM nesneleri oluşturma işlemini basitleştirmek için diğer kullanım oluşturur.|  
 |[ATL/MFC sınıfları paylaşılan](../atl-mfc-shared/atl-mfc-shared-classes.md)|İçin başvuran [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md) ve MFC ve ATL tarafından paylaşılan diğer sınıflar|  
-|[Kaynak dosyaları ile çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyici dizeler, görüntüler ve iletişim kutuları gibi UI kaynakları düzenlemenize olanak tanır.|  
+|[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)|Kaynak Düzenleyici dizeler, görüntüler ve iletişim kutuları gibi UI kaynakları düzenlemenize olanak tanır.|  
 |[Visual C++](../visual-cpp-in-visual-studio.md)|MSDN Kitaplığı'ndaki tüm C++ içerik için üst konu.|

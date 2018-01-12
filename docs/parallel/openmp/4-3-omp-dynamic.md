@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2b23719d1559a00b807f724a3e31eb7b673a5a17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 103067b28990854fb6522c19f4349a9607d65bab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="43-ompdynamic"></a>4.3 OMP_DYNAMIC
 **Omp_dynamıc** ortam değişkeni etkinleştirir veya dinamik ayarlama açıkça etkin veya devre dışı çağıraraksüreceparalelbölgeleryürütmeiçinkullanılabilirişparçacığısayısınıdinamikolarakayarlamayıdevredışıbırakır**omp_set_dynamic** kitaplığı yordamı. Değeri olmalıdır **TRUE** veya **FALSE**.  

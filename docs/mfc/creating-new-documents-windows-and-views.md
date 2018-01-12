@@ -35,11 +35,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d5bf77d2d14e8dda2f1eb02ac35d0ccaf81a8617
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 01837b079ba08ea2961b141549476da11a481a0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-new-documents-windows-and-views"></a>Yeni Belgeler, Pencereler ve Görünümler Oluşturma
 Aşağıdaki şekil, belgeler, görünümler ve çerçeve pencereleri oluşturma işlemine genel bakış verin. Katılımcı nesnelerde odaklanmak diğer makaleler ek ayrıntılar sağlanmaktadır.  
@@ -66,5 +67,5 @@ Bir görünüm oluşturma sırası
  [Belge şablonları ve belge/görünüm oluşturma işlemi](../mfc/document-templates-and-the-document-view-creation-process.md)   
  [Belge şablonu oluşturma](../mfc/document-template-creation.md)   
  [Belge/görünüm oluşturma](../mfc/document-view-creation.md)   
- [MFC nesneleri arasındaki ilişki](../mfc/relationships-among-mfc-objects.md)
+ [FC Nesneleri Arasındaki İlişki](../mfc/relationships-among-mfc-objects.md)
 

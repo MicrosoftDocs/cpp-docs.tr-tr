@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b21ea045d8c875bac6ca5b068cdeb919f0d6ad85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1688a2b689b3fc3391e617f3d65d3c681f05a84f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scheduler-instances"></a>Zamanlayıcı Örnekleri
 Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanılacağını rolü bu belgeyi açıklanmaktadır [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) ve [concurrency::CurrentScheduler](../../parallel/concrt/reference/currentscheduler-class.md) oluşturmak ve yönetmek için sınıflar Zamanlayıcı örnekleri. Zamanlayıcı örnekleri, belirli türde iş yükleri açık zamanlama ilkeleri ilişkilendirmek istediğinizde faydalıdır. Örneğin, yükseltilmiş iş parçacığı öncelikli olarak bazı görevleri çalıştırmak ve normal iş parçacığı öncelikli diğer görevleri çalıştırmak için varsayılan Zamanlayıcısı'nı kullanmak için bir zamanlayıcı örneğini oluşturabilirsiniz.  
@@ -104,7 +105,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
 |------------|-----------------|  
 |[Oluşturma](reference/currentscheduler-class.md#create)|Oluşturur bir `Scheduler` belirtilen ilke kullanır ve geçerli bağlamla ilişkilendirir nesnesi.|  
 |[Al](reference/currentscheduler-class.md#get)|Bir işaretçi alır `Scheduler` geçerli bağlamla ilişkili nesne. Bu yöntem, başvuru sayımı artırmaz `Scheduler` nesnesi.|  
-|[Ayırma](reference/currentscheduler-class.md#detach)|Geçerli bağlamdan geçerli Zamanlayıcı ayırır ve öncekinin geçerli Zamanlayıcı olarak ayarlar.|  
+|[Detach](reference/currentscheduler-class.md#detach)|Geçerli bağlamdan geçerli Zamanlayıcı ayırır ve öncekinin geçerli Zamanlayıcı olarak ayarlar.|  
 |[RegisterShutdownEvent](reference/currentscheduler-class.md#registershutdownevent)|Çalışma zamanı geçerli Zamanlayıcı bozulduğunda ayarlayan bir olay kaydeder.|  
 |[CreateScheduleGroup](reference/currentscheduler-class.md#createschedulegroup)|Oluşturur bir [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) geçerli Zamanlayıcı nesne.|  
 |[ScheduleTask](reference/currentscheduler-class.md#scheduletask)|Basit bir görev geçerli Zamanlayıcı zamanlama kuyruğuna ekler.|  
@@ -115,7 +116,7 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[Oluşturma](reference/scheduler-class.md#create)|Oluşturur bir `Scheduler` belirtilen ilke kullanan bir nesne.|  
-|[Ekleme](reference/scheduler-class.md#attach)|İlişkilendirir `Scheduler` birlikte geçerli bağlam nesnesi.|  
+|[Attach](reference/scheduler-class.md#attach)|İlişkilendirir `Scheduler` birlikte geçerli bağlam nesnesi.|  
 |[Başvuru](reference/scheduler-class.md#reference)|Başvuru sayaç artırılır `Scheduler` nesnesi.|  
 |[Sürüm](reference/scheduler-class.md#release)|Azaltır, başvuru sayaç `Scheduler` nesnesi.|  
 |[RegisterShutdownEvent](reference/scheduler-class.md#registershutdownevent)|Çalışma zamanı ayarlar bir olay kaydeder `Scheduler` nesne yok.|  
@@ -135,5 +136,5 @@ Zamanlayıcı örnekleri eşzamanlılık çalışma zamanı ve nasıl kullanıla
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   
  [Nasıl yapılır: Zamanlayıcı örneğini yönetme](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)   
  [Zamanlayıcı ilkeleri](../../parallel/concrt/scheduler-policies.md)   
- [Zamanlama grupları](../../parallel/concrt/schedule-groups.md)
+ [Zamanlama Grupları](../../parallel/concrt/schedule-groups.md)
 

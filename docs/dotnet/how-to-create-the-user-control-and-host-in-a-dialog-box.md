@@ -16,11 +16,14 @@ caps.latest.revision: "29"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cf0372029a6f6f3c2e2d3030d9e04ddcf6483f14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 81a618c46f08366b9de2a02cbf84f73d42e7b108
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-create-the-user-control-and-host-in-a-dialog-box"></a>Nasıl yapılır: İletişim Kutusunda Kullanıcı Denetimi Ve Konak Oluşturma
 Bu makaledeki adımları iletişim tabanlı oluşturduğunuzu varsayar ([CDialog sınıfı](../mfc/reference/cdialog-class.md)) Microsoft Foundation sınıfları (MFC) projesi, ancak aynı zamanda desteği ekleyebilirsiniz bir Windows Forms denetimi için varolan bir MFC iletişim kutusu.  
@@ -124,4 +127,4 @@ Bu makaledeki adımları iletişim tabanlı oluşturduğunuzu varsayar ([CDialog
      Üzerinde **hata ayıklama** menüsünde tıklatın **Başlat hata ayıklama olmadan**. MFC iletişim kutusunda Windows Forms denetimi görüntülenmelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC iletişim kutusunda Windows Form kullanıcı denetimi barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)
+ [MFC İletişim Kutusunda Windows Form Kullanıcı Denetimi Barındırma](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md)

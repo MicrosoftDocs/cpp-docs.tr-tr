@@ -25,11 +25,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d6789bd74924912361b3045d112c91ec6dcaedbe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1796351dc594712ef69ec5562f85501b30997104
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 `concurrent_priority_queue` Sınıfı eş zamanlı gönderme ve pop öğeleri için birden çok iş parçacığı sağlayan bir kapsayıcıdır. Öğeleri, öncelik şablon bağımsız değişken sağlanan bir functor tarafından belirlendiği öncelik sırasına Sil'i.  
@@ -79,7 +80,7 @@ template <typename T,
 |[Temizle](#clear)|Tüm öğeleri eşzamanlı öncelik siler. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[boş](#empty)|Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eş zamanlı öncelik sırası oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
-|[anında iletme](#push)|Fazla Yüklendi. Bir öğenin eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlılık güvenlidir.|  
+|[push](#push)|Fazla Yüklendi. Bir öğenin eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlılık güvenlidir.|  
 |[boyutu](#size)|Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[değiştirme](#swap)|İki eşzamanlı öncelik sırası içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[try_pop](#try_pop)|Kaldırır ve sıranın boş ise sıradan en yüksek öncelik öğeyi döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
@@ -272,7 +273,7 @@ bool try_pop(reference _Elem);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   
- [Paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
+ [Paralel Kapsayıcılar ve Nesneler](../../../parallel/concrt/parallel-containers-and-objects.md)
 
 
 

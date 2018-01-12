@@ -28,11 +28,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 976fc0c6fb4d803bf1f998518d9bcc5f4f808637
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d5a69e08d06a53dcb2f3a4be58618e9829e8c8a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml yardımcı makroları
 DDX_DHtml yardımcı makroları yaygın olarak kullanılan bir HTML sayfasında denetimlerin özelliklerini kolay erişim sağlar.  
@@ -252,4 +253,4 @@ DDX_DHtml_Img_Src(
 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDHtmlDialog sınıfı](../../mfc/reference/cdhtmldialog-class.md)
+ [CDHtmlDialog Sınıfı](../../mfc/reference/cdhtmldialog-class.md)

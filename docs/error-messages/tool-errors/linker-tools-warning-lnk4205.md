@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9ebec9dd1f56c780612c93b4ba5154af3ab0eb38
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fdf9cf0da51b7bb034984fceca209a110e81d54d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-tools-warning-lnk4205"></a>Bağlayıcı Araçları Uyarısı LNK4205
 'filename' modülü başvuran için geçerli hata ayıklama bilgileri eksik; hata ayıklama bilgileri gibi nesne bağlama  

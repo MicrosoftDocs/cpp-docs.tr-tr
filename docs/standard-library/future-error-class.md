@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cdb482dd71e19ad784e0e878432d800a384d57fa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1fc5ba9a34ee5c1a29892e4ba6ebc25366e408be
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="futureerror-class"></a>future_error Sınıfı
 Yönetme türleri yöntemleri ile oluşturulan bir özel durum nesnesi tanımlar [gelecekteki](../standard-library/future-class.md) nesneleri.  
@@ -45,4 +46,4 @@ const char *what() const throw();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [logic_error sınıfı](../standard-library/logic-error-class.md)   
- [error_code sınıfı](../standard-library/error-code-class.md)
+ [error_code Sınıfı](../standard-library/error-code-class.md)

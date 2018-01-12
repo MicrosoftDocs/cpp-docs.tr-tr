@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7856da95c8bd7563d66fc901bdac1f2a931b7384
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8c74d3134b5381be4ec330742726b26fea6155da
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 Özellik kullanımı sonucunda kodu injecting derleyici engeller.  
@@ -54,4 +57,4 @@ ms.lasthandoff: 10/24/2017
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
+ [Derleyici Öznitelikleri](../windows/compiler-attributes.md)   

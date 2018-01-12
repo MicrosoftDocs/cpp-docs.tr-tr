@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 320e3ac5126ec1e60d768e7c109f32610103f93b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8d6c2958c1f6cd5954efb9c8166c151cf2a8cc29
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-line-property-pages"></a>Komut Satırı Özellik Sayfaları
 Çoğu özellik sayfası klasörleri içeren bir **komut satırı** özellik sayfası. Hangi özellikler klasöründe ayarlanır bu sayfa görüntülenir. **Komut satırı** özellik sayfası de içeren bir **ek seçenekler** aracı için geçerli olan özellikler belirtebileceğiniz kutusu ancak kendisi için bir özellik yok klasöründe.  
@@ -30,4 +31,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [. Bağlayıcı girişi olarak lib dosyaları](../build/reference/dot-lib-files-as-linker-input.md)
+ [Bağlayıcı Girişi olarak .Lib Dosyaları](../build/reference/dot-lib-files-as-linker-input.md)

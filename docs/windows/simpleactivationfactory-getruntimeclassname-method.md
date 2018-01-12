@@ -14,11 +14,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 22cb09115938da3d90bbe7feac0aac490971ffd1
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 73431c7a0f719579caf3df146b69dd8d7248d0a6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="simpleactivationfactorygetruntimeclassname-method"></a>SimpleActivationFactory::GetRuntimeClassName Metodu
 
@@ -53,4 +56,4 @@ Varsa &#95; &#95; WRL_STRICT &#95; &#95; olduğundan sınıfı tarafından belir
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SimpleActivationFactory sınıfı](../windows/simpleactivationfactory-class.md)
+[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)

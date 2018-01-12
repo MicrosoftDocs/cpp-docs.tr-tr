@@ -35,11 +35,12 @@ caps.latest.revision: "28"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b75a3782d1e20ccd20cd4f9271d91e2ac391d388
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 857054bd60e206cc3a563aa5f00b872f67c58d3f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
 `CMFCCaptionButton` Sınıfı bir takma bölmesi veya bir kısa çerçeve penceresi başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazısı düğmeleri otomatik olarak oluşturur.  
@@ -273,4 +274,4 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md)   
- [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)
+ [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)

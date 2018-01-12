@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 06fd7aa6458a3c7e89d80146ec20a0e3f7587b4b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cfb7413cd6fd8dca976d668763fab678bb5c9ebf
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="c-runtime-error-r6025"></a>C çalışma zamanı hatası R6025
 saf sanal işlev çağrısı  
@@ -39,4 +40,4 @@ saf sanal işlev çağrısı
   
  Bu hata, bir Özet temel sınıf bir cast türde bir türetilmiş sınıf tarafından oluşturulur, ancak gerçekte bir temel sınıf işaretçidir işaretçi üzerinden bir sanal işlev çağırarak kaynaklanır. Bu gelen atama ortaya çıkabilir bir **void\***  bir sınıf için bir işaretçi için zaman **void\***  temel sınıfı oluşturma sırasında oluşturuldu.  
   
- Daha fazla bilgi için bkz: [Microsoft Destek](http://go.microsoft.com/fwlink/?LinkId=75220) Web sitesi.
+ Daha fazla bilgi için bkz: [Microsoft Destek](http://go.microsoft.com/fwlink/p/?linkid=75220) Web sitesi.

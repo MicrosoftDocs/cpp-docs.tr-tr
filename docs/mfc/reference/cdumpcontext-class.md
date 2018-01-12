@@ -29,11 +29,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fe45f47520efd0a96dff9b31f18eb267d0058c61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d54a461bece96faeb11f78a1788049abcabbae0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext sınıfı
 Okunabilir metin biçiminde tanılama çıktıları akış odaklı destekler.  
@@ -253,4 +254,4 @@ void SetDepth(int nNewDepth);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFile sınıfı](../../mfc/reference/cfile-class.md)   
- [CObject sınıfı](../../mfc/reference/cobject-class.md)
+ [CObject Sınıfı](../../mfc/reference/cobject-class.md)

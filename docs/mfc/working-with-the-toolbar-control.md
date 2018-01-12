@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e0d7c3709667b53f03e63463cbfbda997e265c3b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 475b44b856c874064a4ccbdaf7b648342eb9c657
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-the-toolbar-control"></a>Araç Çubuğu Denetimiyle Çalışma
 Bu makalede nasıl erişebileceğinizi açıklanmaktadır [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesinin altındaki bir [CToolBar](../mfc/reference/ctoolbar-class.md) çubuklarınızı üzerinde daha fazla denetim için. Bu gelişmiş bir konudur.  
@@ -67,5 +68,5 @@ Bu makalede nasıl erişebileceğinizi açıklanmaktadır [CToolBarCtrl](../mfc/
  Windows ortak denetimleri kullanma hakkında genel bilgi için bkz: [ortak denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775493).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC araç çubuğu uygulaması](../mfc/mfc-toolbar-implementation.md)
+ [MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)
 

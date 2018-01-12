@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 902044e23974b882c52f5cb715d42f0fe1f2f610
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46f62b3d208d4b5822ab259614823509970b2842
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL Sihirbazı
 MFC DLL projesi oluşturmak için MFC DLL Sihirbazı'nı kullandığınızda, çalışan bir başlatıcı uygulama yerleşik işlevselliği ile aldığınız derlenmiş, temel özelliklerini uygulayacak bir [DLL](../../build/dlls-in-visual-cpp.md). MFC starter program C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları ve bir proje (.vcxproj) dosyası içerir. Bu Başlatıcı dosyalarda oluşturulan kodu MFC temel alır. Projeniz Visual Studio'da için oluşturulan Readme.txt dosya ayrıntılar daha ayrıntılı bilgi için bkz ve [sınıfları ve İşlevler MFC DLL Sihirbazı tarafından oluşturulan](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)  
@@ -53,5 +54,5 @@ MFC DLL projesi oluşturmak için MFC DLL Sihirbazı'nı kullandığınızda, ç
  [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)   
  [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)   
  [Arabirimi uygulama](../../ide/implementing-an-interface-visual-cpp.md)   
- [Diğer diller için sihirbaz desteği](../../ide/wizard-support-for-other-languages.md)
+ [Diğer Diller için Sihirbaz Desteği](../../ide/wizard-support-for-other-languages.md)
 

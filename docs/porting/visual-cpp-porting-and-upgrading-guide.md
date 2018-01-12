@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 274154eb0688bc974a34b511d0aa39d08bb27b61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ba7e3f139aa9956cd9d2587522dc2d0ac1f2ff7b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve Visual Studio özellikleri yararlanarak yanı sıra derlemek ve üzerinde daha yeni bir sürüm Araçları'nın düzgün çalışması için kodu alma içerir. Bu konu ayrıca daha modern platformlara geçirme eski uygulamalar hakkında bilgiler içerir.  
@@ -80,17 +81,17 @@ Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve 
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Visual C++'ın önceki sürümlerinden yükseltme projeleri](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual C++ önceki sürümlerinde oluşturulan projelerin nasıl kullanılacağını açıklar.|  
+|[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual C++ önceki sürümlerinde oluşturulan projelerin nasıl kullanılacağını açıklar.|  
 |[Visual Studio 2017 RC'te Visual C++ yenilikleri](../what-s-new-for-visual-cpp-in-visual-studio.md)|IDE içinde değiştirir ve Visual Studio 2017 Visual Studio 2015'ten araçları|  
-|[Visual Studio 2017 C++ uygunluk yenilikleri](../cpp-conformance-improvements-2017.md)|Visual Studio 2017 Visual Studio 2015'den standartlara uygunluk geliştirmeleri|  
-|[Visual C++ değişiklik geçmişini 2003 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir 2015 aracılığıyla derleme araçlarını Visual Studio 2003 tüm değişikliklerin bir listesi.|  
-|[Visual C++ 2015 aracılığıyla yeni 2003 nedir](visual-cpp-what-s-new-2003-through-2015.md)|Tüm "yenilikler" bilgileri Visual Studio 2015 ile Visual Studio 2003 Visual C++ için.|  
-|[3. taraf kitaplıklar bağlantı noktası oluşturma](porting-third-party-libraries.md)|Nasıl kullanılacağını **vcpkg** bağlantı noktası eski açık kaynak kitaplıkları ile daha yeni bir Visual C++ toolsets derlenmiş sürümleri için komut satırı aracı.|  
-|[Taşıma ve yükseltme: örnekler ve örnek olay incelemeleri](porting-and-upgrading-examples-and-case-studies.md)|Bu bölüm için şu bağlantı noktalı ve birkaç örneklerini ve uygulamaları yükseltir ve deneyimleri ve sonuçları açıklanır. Bu verir okuma, bir fikir ne olduğunu taşıma ve yükseltme işlemi söz konusu bulabilirsiniz. İşlemi boyunca size ipuçları ve püf noktaları yükseltme için ele almaktadır ve nasıl belirli hataları göster düzeltilmiştir.|  
+|[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)|Visual Studio 2017 Visual Studio 2015'den standartlara uygunluk geliştirmeleri|  
+|[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir 2015 aracılığıyla derleme araçlarını Visual Studio 2003 tüm değişikliklerin bir listesi.|  
+|[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|Tüm "yenilikler" bilgileri Visual Studio 2015 ile Visual Studio 2003 Visual C++ için.|  
+|[Üçüncü Taraf Kitaplıklarını Taşıma](porting-third-party-libraries.md)|Nasıl kullanılacağını **vcpkg** bağlantı noktası eski açık kaynak kitaplıkları ile daha yeni bir Visual C++ toolsets derlenmiş sürümleri için komut satırı aracı.|  
+|[Taşıma ve Yükseltme: Örnekler ve Örnek Olay İncelemeleri](porting-and-upgrading-examples-and-case-studies.md)|Bu bölüm için şu bağlantı noktalı ve birkaç örneklerini ve uygulamaları yükseltir ve deneyimleri ve sonuçları açıklanır. Bu verir okuma, bir fikir ne olduğunu taşıma ve yükseltme işlemi söz konusu bulabilirsiniz. İşlemi boyunca size ipuçları ve püf noktaları yükseltme için ele almaktadır ve nasıl belirli hataları göster düzeltilmiştir.|  
 |[Evrensel Windows Platformu'na bağlantı noktası oluşturma](porting-to-the-universal-windows-platform-cpp.md)|Windows 10 kod bağlantı noktası oluşturma hakkında bilgi içerir|  
-|[UNIX kullanıcıları için Visual C++'a giriş](introduction-to-visual-cpp-for-unix-users.md)|Visual C++ için yenidir ve onunla üretken isteyen UNIX kullanıcıları için bilgi sağlar.|  
-|[UNIX'ten Win32'ye taşıma](porting-from-unix-to-win32.md)|Windows UNIX uygulamaları geçirme için seçenekleri açıklar.|  
-|[C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md)|Ayrıntılı olarak yükseltme, yeni sözdizimini kullanmak için için Yönetilen Uzantılar C++ söz dizimini gösterir. Daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).|  
+|[UNIX Kullanıcıları için Visual C++'a Giriş](introduction-to-visual-cpp-for-unix-users.md)|Visual C++ için yenidir ve onunla üretken isteyen UNIX kullanıcıları için bilgi sağlar.|  
+|[UNIX'ten Win32'ye Taşıma](porting-from-unix-to-win32.md)|Windows UNIX uygulamaları geçirme için seçenekleri açıklar.|  
+|[C++/CLI Geçiş Öncüsü](../dotnet/cpp-cli-migration-primer.md)|Ayrıntılı olarak yükseltme, yeni sözdizimini kullanmak için için Yönetilen Uzantılar C++ söz dizimini gösterir. Daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++](../visual-cpp-in-visual-studio.md)

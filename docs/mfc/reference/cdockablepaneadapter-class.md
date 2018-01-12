@@ -25,11 +25,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ed6346e94c01eed32712db5b459ff4a6987a0189
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5bb0e10490a381784e40167e16d1c7ec4e7e1a19
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter sınıfı
 İçin yerleşik destek sağlar `CWnd`-bölmeleri türetilmiş.  
@@ -145,4 +146,4 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md)
+ [CDockablePane Sınıfı](../../mfc/reference/cdockablepane-class.md)

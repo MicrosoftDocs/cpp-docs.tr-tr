@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 627039bdebc0f339ea09c144967356b7e288c2ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8eb855e1c11136cd88c1c1e796d9759581e3ceb3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-2-c4653"></a>Derleyici Uyarısı (Düzey 2) C4653
 'option' önceden derlenmiş üst bilgi ile; tutarsız derleyici seçeneği göz ardı geçerli komut satırı seçeneği  

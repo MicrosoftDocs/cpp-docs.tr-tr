@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d5bb9f4c00976ce60901148509d9390b85412ab7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 74ab0cb7bc84a5d6959989bacd52509d6eb639ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequeclear-stlclr"></a>deque::clear (STL/CLR)
 Tüm öğeleri kaldırır.  
@@ -84,4 +87,4 @@ size() = 0
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
- [deque::ERASE (STL/CLR)](../dotnet/deque-erase-stl-clr.md)
+ [deque::erase (STL/CLR)](../dotnet/deque-erase-stl-clr.md)

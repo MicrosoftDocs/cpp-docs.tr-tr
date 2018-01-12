@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 91c127819732fd8fef792b077f2fa146175ac91f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 525d8353c308796d70f974fa56cde3aa76c12142
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="list-items-and-image-lists"></a>Liste Öğeleri ve Görüntü Listeleri
 Liste denetiminde bir "öğesi" ([CListCtrl](../mfc/reference/clistctrl-class.md)) bir simge, bir etiket ve büyük olasılıkla diğer bilgileri ("alt öğeler") oluşur.  
@@ -42,5 +43,5 @@ Liste denetiminde bir "öğesi" ([CListCtrl](../mfc/reference/clistctrl-class.md
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   
- [Denetimleri](../mfc/controls-mfc.md)
+ [Denetimler](../mfc/controls-mfc.md)
 

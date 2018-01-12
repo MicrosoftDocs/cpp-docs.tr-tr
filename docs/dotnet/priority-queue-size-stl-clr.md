@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7cb89416afceca65e42ad3a54b7903554af2e0d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 88e2f017a47de85d4e8426a26f05ff1fb41bbe0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="priorityqueuesize-stlclr"></a>priority_queue::size (STL/CLR)
 Öğe sayısını sayar.  
@@ -81,4 +84,4 @@ size() = 4 after adding 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [priority_queue (STL/CLR)](../dotnet/priority-queue-stl-clr.md)   
- [priority_queue::Empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)
+ [priority_queue::empty (STL/CLR)](../dotnet/priority-queue-empty-stl-clr.md)

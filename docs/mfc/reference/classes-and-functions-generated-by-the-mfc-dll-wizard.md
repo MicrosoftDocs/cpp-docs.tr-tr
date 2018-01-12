@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 52465b01b8644b2f4ea1f4a22412af0159e4f598
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0cc40da55dce6edbbae0afcfe923dccc600802f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classes-and-functions-generated-by-the-mfc-dll-wizard"></a>MFC DLL Sihirbazı Tarafından Üretilen Sınıfları ve İşlevler
 MFC DLL Sihirbazı'nın oluşturduğu Kodu Oluşturmakta olduğunuz DLL ve seçtiğiniz seçenekleri türüne bağlıdır. MFC DLL Sihirbazı'nın hem Normal MFC DLL'leri formlar için aynı kodu oluşturur.  

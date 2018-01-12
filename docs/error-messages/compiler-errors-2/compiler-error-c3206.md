@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4faf775e3a3a179e49f013b21a948c49a4f89f74
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: c5f4318aabb2ecc616f08e98dfd08a2edd537d87
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3206"></a>Derleyici Hatası C3206
 'function': 'tür bağımsız değişken listesinin sınıfı türündeki 'typename' eksik param' için geçersiz tür bağımsız değişkeni  

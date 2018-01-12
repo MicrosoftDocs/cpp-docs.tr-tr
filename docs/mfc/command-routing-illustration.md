@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 03f9547197e2d5dca26fd17c9d4090eb20e795ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 24ac591005d5df6b18102d296352b8b2528ba839
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="command-routing-illustration"></a>Komut Yönlendirme Çizimi
 Göstermek için Tümünü Temizle'yi menü öğesi MDI uygulamanın Düzenle menüsünde komutu iletiden göz önünde bulundurun. Uygulamanın belge sınıfının üye işlevini olması için bu komut işleyici işlevi olur varsayalım. Menü öğesi kullanıcı seçtikten sonra bu komut, işleyici nasıl ulaştığında aşağıda verilmiştir:  
@@ -39,5 +40,5 @@ Göstermek için Tümünü Temizle'yi menü öğesi MDI uygulamanın Düzenle me
  Belge bir işleyiciye sahip değil, bu komut, belge şablonu sonraki rota. Ardından komutu Görünüm ve ardından çerçeve penceresi döndürecektir. Son olarak, çerçeve penceresi kendi ileti eşlemesi denetler. Bu onay de başarısız olursa komutu geri ana MDI çerçeve penceresi ve ardından uygulama nesnesi yönlendirilecektir — işlenmemiş komutların ultimate hedef.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Framework bir işleyici çağırması](../mfc/how-the-framework-calls-a-handler.md)
+ [Framework'ün İşleyici Çağırması](../mfc/how-the-framework-calls-a-handler.md)
 

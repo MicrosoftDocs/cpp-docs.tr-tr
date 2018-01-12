@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0318c8290e58fc479d5c427b60d246d81b62585c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 187373e911a91934741152110c67b7d133af827e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog sınıfı
 `CMFCImageEditorDialog` Sınıfı, bir görüntü Düzenleyicisi iletişim kutusu destekler.  
@@ -108,4 +109,4 @@ CMFCImageEditorDialog(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
- [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md)
+ [CMFCToolBar Sınıfı](../../mfc/reference/cmfctoolbar-class.md)

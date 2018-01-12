@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d004bae6e4a15ab9c2aa76da76eb450c92572199
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f8c19280645edad0d449708434ebbc0ee646e981
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windows-sockets-datagram-sockets"></a>Windows Yuvaları: Veri Birimi Yuvaları
 Bu makalede, veri birimi yuvaları, iki Windows yuva türlerinden birini açıklar. (Diğer tür [akışa yuva](../mfc/windows-sockets-stream-sockets.md).)  
@@ -38,5 +39,5 @@ Bu makalede, veri birimi yuvaları, iki Windows yuva türlerinden birini açıkl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC'de Windows Yuvaları](../mfc/windows-sockets-in-mfc.md)   
- [Windows Yuvaları: arka plan](../mfc/windows-sockets-background.md)
+ [Windows Yuvaları: Arka Plan](../mfc/windows-sockets-background.md)
 

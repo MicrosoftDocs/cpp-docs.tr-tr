@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d859335edb130fe18b57e3998a4685cfe45b16bb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe5e20d1cf5664d7d2a46ef6afd82f610ebca8ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-a-generic-c-class"></a>Genel C++ Sınıfı Ekleme
 Genel C++ sınıfı kullanarak ekleyebileceğiniz **sınıf görünümü**. Genel C++ sınıfı tanımladığınız ya da tanımladığınız bir sınıftan türetilen bir sınıftır.  

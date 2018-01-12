@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 289a4928c9c46f6d758ddc2f30ed864488ab725e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9f6b10c681eb12d38d33c50fe9e652ffd095dd4c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="parallel"></a>parallel
 Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir paralel bölge tanımlar.  
@@ -44,7 +45,7 @@ Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir pa
   
 -   [copyin](../../../parallel/openmp/reference/copyin.md)  
   
--   [Varsayılan](../../../parallel/openmp/reference/default-openmp.md)  
+-   [default](../../../parallel/openmp/reference/default-openmp.md)  
   
 -   [firstprivate](../../../parallel/openmp/reference/firstprivate.md)  
   
@@ -52,9 +53,9 @@ Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir pa
   
 -   [num_threads](../../../parallel/openmp/reference/num-threads.md)  
   
--   [Özel](../../../parallel/openmp/reference/private-openmp.md)  
+-   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
--   [Azaltma](../../../parallel/openmp/reference/reduction.md)  
+-   [reduction](../../../parallel/openmp/reference/reduction.md)  
   
 -   [Paylaşılan](../../../parallel/openmp/reference/shared-openmp.md)  
   
@@ -91,4 +92,4 @@ Hello from thread 3
  Çıkış sırası farklı makinelerde değişebilir unutmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeleri](../../../parallel/openmp/reference/openmp-directives.md)
+ [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

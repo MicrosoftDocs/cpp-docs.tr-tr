@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f70ef6431f8dab37b6df185efe1c7494ff0d9b1f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d3c4d37dfe5182e375e7581d6f5ef8188b922e5d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak için İptali Kullanan bir OpenMP Döngüsünü Dönüştürme
 Bazı paralel döngüler tüm yinelemeleri yürütülmesi gerektirmez. Örneğin, değer bulunduktan sonra için bir değer arayan bir algoritma sonlandırabilir. OpenMP dışında paralel bir döngüden ayırmak için bir mekanizma sağlamaz. Ancak, bir döngü çözüm bulunmuştur belirtmek üzere etkinleştirmek için bir Boole değeri veya bayrağını kullanabilirsiniz. Eşzamanlılık Çalışma zamanı henüz başlatılmamış diğer görevleri iptal etmek bir görev sağlayan işlevselliği sağlar.  
@@ -59,5 +60,5 @@ Using the Concurrency Runtime...
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OpenMP öğesinden eşzamanlılık çalışma zamanına geçiş](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)   
  [PPL'de iptal](cancellation-in-the-ppl.md)   
- [Paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md)
+ [Paralel Algoritmalar](../../parallel/concrt/parallel-algorithms.md)
 

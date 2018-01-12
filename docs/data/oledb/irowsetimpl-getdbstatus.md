@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bcfa368eaac89c1b7f0a094c139fc2434691e143
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: dff50d7ef201e8479ad06f6096549268b2dfe31d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetimplgetdbstatus"></a>IRowsetImpl::GetDBStatus
 Döndürür `DBSTATUS` durumu bayrakları belirtilen alan için.  
@@ -51,4 +54,4 @@ Döndürür `DBSTATUS` durumu bayrakları belirtilen alan için.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Irowsetımpl sınıfı](../../data/oledb/irowsetimpl-class.md)
+ [IRowsetImpl Sınıfı](../../data/oledb/irowsetimpl-class.md)

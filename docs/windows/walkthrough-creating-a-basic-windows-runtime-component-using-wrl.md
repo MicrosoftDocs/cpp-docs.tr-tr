@@ -13,11 +13,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0c57e6b8ffb501ea4c6b75429bab88bbe5dc93eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5859f3ebfcb55427e239a0018d539e2f4df13800
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="walkthrough-creating-a-basic-windows-runtime-component-using-wrl"></a>İzlenecek Yol: WRL Kullanarak Temel Windows Çalışma Zamanı Bileşeni Oluşturma
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) temel Windows çalışma zamanı bileşeni oluşturma için nasıl kullanılacağını gösterir. Bileşen iki sayı ekleyen ve sonuç asal olduğunda bir olay başlatır. Bu belge, ayrıca JavaScript kullanan bir evrensel Windows platformu uygulama bileşeninden kullanmayı gösterir.  

@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e727159cbd0f87d8ae01813b7ac2a0ed57362b08
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1018d678b6105f2d727f7806326218c168d8f728
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4436"></a>Derleyici Uyarısı (düzey 1) C4436
 Sanal Taban 'class1' den dynamic_cast Oluşturucusu veya yıkıcı 'class2' için veya kısmen oluşturulmuş nesnesiyle derleme /vd2 başarısız #pragma vtordisp(2) ile ' class2' yürürlükte tanımlayın  

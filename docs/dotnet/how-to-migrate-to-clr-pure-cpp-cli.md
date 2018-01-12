@@ -17,11 +17,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ebff4ae1ac304ee0af073de49f4ee988922247d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: b8d49ee233167c02570408ba091c2a99b78487d5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-migrate-to-clrpure-ccli"></a>Nasıl yapılır: /clr:pure'a Geçiş (C++/CLI)
 Bu konuda kullanarak saf MSIL geçirilirken çıkabilecek sorunları ele alınmıştır **/CLR: pure** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). Bu konu geçirilen kodun şu anda kullanılarak karışık derleme olarak derlendiğini varsayar **/CLR** saf MSIL yönetilmeyen koddan geçiş yolunun doğrudan olmaması seçeneğiyle. Yönetilmeyen kod için bkz: [nasıl yapılır: pure'a Geçiş](../dotnet/how-to-migrate-to-clr.md) saf MSIL geçirmeyi denemeden önce.  
@@ -55,4 +58,4 @@ Bu konuda kullanarak saf MSIL geçirilirken çıkabilecek sorunları ele alınm�
  Depolama kapsamı ve çağırma kuralları farklı olduğundan Visual C++ bağlayıcı karışık ve saf OBJ dosyaları bağlamak çalışmaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)
+ [Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)

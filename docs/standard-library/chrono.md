@@ -21,11 +21,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fe8917c18937856a6ca310a2bbf8380840202699
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 46500f4f1658c613ee8422791e46015b0e129532
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zaman instants değiştirmek işlevleri tanımlamak için.  
@@ -42,18 +43,18 @@ Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zam
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Duration sınıfı](../standard-library/duration-class.md)|Bir zaman aralığı tutan bir türünü tanımlar.|  
-|[time_point sınıfı](../standard-library/time-point-class.md)|Bir noktayı zamanında temsil eden bir tür açıklar.|  
+|[duration Sınıfı](../standard-library/duration-class.md)|Bir zaman aralığı tutan bir türünü tanımlar.|  
+|[time_point Sınıfı](../standard-library/time-point-class.md)|Bir noktayı zamanında temsil eden bir tür açıklar.|  
   
 ### <a name="structs"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[common_type yapısı](../standard-library/common-type-structure.md)|Şablon sınıfının özelleştirmeleri açıklar [common_type](../standard-library/common-type-class.md) işlemlerinden için `duration` ve `time_point`.|  
-|[duration_values yapısı](../standard-library/duration-values-structure.md)|Belirli değerleri sağlar `duration` şablon parametresi `Rep`.|  
+|[common_type Yapısı](../standard-library/common-type-structure.md)|Şablon sınıfının özelleştirmeleri açıklar [common_type](../standard-library/common-type-class.md) işlemlerinden için `duration` ve `time_point`.|  
+|[duration_values Yapısı](../standard-library/duration-values-structure.md)|Belirli değerleri sağlar `duration` şablon parametresi `Rep`.|  
 |[steady_clock yapısı](../standard-library/steady-clock-struct.md)|Temsil eden bir `steady` saat.|  
-|[system_clock yapısı](../standard-library/system-clock-structure.md)|Temsil eden bir *saat türü* sistem gerçek zamanlı saati dayanır.|  
-|[treat_as_floating_point yapısı](../standard-library/treat-as-floating-point-structure.md)|Bir tür kayan noktalı bir tür olarak kabul olup olmadığını belirtir.|  
+|[system_clock Yapısı](../standard-library/system-clock-structure.md)|Temsil eden bir *saat türü* sistem gerçek zamanlı saati dayanır.|  
+|[treat_as_floating_point Yapısı](../standard-library/treat-as-floating-point-structure.md)|Bir tür kayan noktalı bir tür olarak kabul olup olmadığını belirtir.|  
   
 ### <a name="functions"></a>İşlevler  
   
@@ -67,7 +68,7 @@ Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zam
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator-](../standard-library/chrono-operators.md#operator-)|İşleç çıkarması veya değilleme işlemi için `duration` ve `time_point` nesneleri.|  
-|[operator! =](../standard-library/chrono-operators.md#op_neq)|İle birlikte kullanılan eşitsizlik işleci `duration` veya `time_point` nesneleri.|  
+|[operator!=](../standard-library/chrono-operators.md#op_neq)|İle birlikte kullanılan eşitsizlik işleci `duration` veya `time_point` nesneleri.|  
 |[mod işleci](../standard-library/chrono-operators.md#op_modulo)|İşlemler modulo işleci için `duration` nesneleri.|  
 |[işleç *](../standard-library/chrono-operators.md#op_star)|Çarpma işleci için `duration` nesneleri.|  
 |[operator /](../standard-library/chrono-operators.md#op_div)|Bölme işleci için `duration` nesneleri.|  

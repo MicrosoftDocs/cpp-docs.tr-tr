@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 36b307e371fea279a8a3931221ee2cb05e9aa834
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 37aabb7704857c887555d46bbff5590cf2d4712e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequesizetype-stlclr"></a>deque::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -72,4 +75,4 @@ end()-begin() = 3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [deque (STL/CLR)](../dotnet/deque-stl-clr.md)   
- [deque::Empty (STL/CLR)](../dotnet/deque-empty-stl-clr.md)
+ [deque::empty (STL/CLR)](../dotnet/deque-empty-stl-clr.md)

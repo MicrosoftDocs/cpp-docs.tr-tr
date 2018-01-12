@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 67341c89d480f6ef0d44415f65dd0cd37bb065fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4f6410ca3f8a011cce3673eec28b616bfb4a96aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 Testleri POD türüdür.  
@@ -106,7 +107,7 @@ is_pod<throws> == false
 **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[< type_traits >](../standard-library/type-traits.md)
+[<type_traits>](../standard-library/type-traits.md)
 
 
 

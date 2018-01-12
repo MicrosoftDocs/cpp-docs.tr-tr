@@ -14,11 +14,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 970ecd355b42c83102c034c4639f152b1971dae6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: f1d9b1125fc54ecbd75fc49b36498a99f5e86f28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-define-and-install-a-global-exception-handler"></a>Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme
 Aşağıdaki kod örneğinde nasıl işlenmeyen özel durumlar gösterilmektedir yakalanabilir. Bir düğme örnek formu içeren, basıldığında bir özel durum oluşturulmasına neden olan bir null başvuru gerçekleştirir. Bu işlev bir tipik kod hatası temsil eder. Main işlevi tarafından yüklenen uygulama çapında özel durum işleyici tarafından oluşturulan özel durum yakalandı.  
@@ -80,4 +83,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../windows/exception-handling-cpp-component-extensions.md)
+ [Özel Durum İşleme](../windows/exception-handling-cpp-component-extensions.md)

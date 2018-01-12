@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e25924c7b6e3dfad79ef6efda62b7beaf1f6194
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: e38149ad3e591b9c9df49523dfc27a6b4c3d87d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="queuedifferencetype-stlclr"></a>queue::difference_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -85,4 +88,4 @@ popping 3 = 3
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [sıra (STL/CLR)](../dotnet/queue-stl-clr.md)   
- [Queue::size_type (STL/CLR)](../dotnet/queue-size-type-stl-clr.md)
+ [queue::size_type (STL/CLR)](../dotnet/queue-size-type-stl-clr.md)

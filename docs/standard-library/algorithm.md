@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 65cb348e19031965d70175d73ed8df94692f9db6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3cd9ac613dd788b116e648e2b1fd612aa07abcab
+ms.sourcegitcommit: 669f45f11b98b71b8a0e6808c0fe0cdf17484089
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="ltalgorithmgt"></a>&lt;algoritması&gt;
 Algoritmalar gerçekleştirmek C++ Standart Kitaplığı kapsayıcı şablon işlevleri tanımlar.  
@@ -44,7 +45,7 @@ Algoritmalar gerçekleştirmek C++ Standart Kitaplığı kapsayıcı şablon iş
   
 -   _Copy soneki algoritmanın yalnızca öğelerinin değerlerini yönetmeyeceğini, aynı zamanda değiştirilen değerlerin bir hedef aralığına da kopyalayacağını belirtir. `reverse` Algoritması bir aralıkta öğelerin sırasını tersine çevirir ve `reverse_copy` algoritması da bir hedef aralığına sonucu kopyalar.  
   
- C++ Standart Kitaplığı algoritmalar genellikle kendi amaç veya gereksinimleri hakkında bir şey belirtmek grupları sınıflandırılır. Bu öğeleri değiştirme karşılaştırıldığında değerini değiştirme algoritmaları değiştirme dahil olmayan algoritmaları. Algoritmaların değiştirilmesi öğelerin sırasını değiştirir, ancak kendi öğelerinin değerlerini değiştirmez. Algoritmaların kaldırılması bir aralıktaki ya da aralıktaki bir kopyadaki öğeleri yok sayabilir. Algoritmaların sıralanması bir aralıktaki öğeleri çeşitli şekillerde yeniden sıralar ve sıralanmış aralıktaki algoritmalar yalnızca öğeleri belirli bir şekilde sıralanmış algoritmalarda hareket eder.  
+ C++ Standart Kitaplığı algoritmalar genellikle kendi amaç veya gereksinimleri hakkında bir şey belirtmek grupları sınıflandırılır. Bu öğeleri değiştirme karşılaştırıldığında değerini değiştirme algoritmaları değiştirme dahil olmayan algoritmaları. Algoritmaların değiştirilmesi öğelerin sırasını değiştirir, ancak kendi öğelerinin değerlerini değiştirmez. Algoritmaların kaldırılması bir aralıktaki ya da aralıktaki bir kopyadaki öğeleri yok sayabilir. Algoritmalar sıralama çeşitli şekillerde bir aralıktaki öğeleri yeniden sıralamak ve sıralanmış aralığı algoritmaları yalnızca belirli bir şekilde öğeleri sıralanmıştır aralıkları hareket.  
   
  Kendi üstbilgi dosyası sayısal işlemek için sağlanan C++ Standart Kitaplığı sayısal algoritmalarına sahip [ \<sayısal >](../standard-library/numeric.md), ve işlev nesneleri ve bağdaştırıcıları başlığında tanımlanır [ \<işlev >](../standard-library/functional.md) Boole değerleri döndüren işlev nesneleri koşul olarak bilinir. Karşılaştırma varsayılan ikili koşulu olup `operator<`. Genelde, sıralanan öğelerin küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu eşdeğer olmayan öğeler arasında bir sıralamaya neden olur.  
   
@@ -108,7 +109,7 @@ Algoritmalar gerçekleştirmek C++ Standart Kitaplığı kapsayıcı şablon iş
 |[prev_permutation](../standard-library/algorithm-functions.md#prev_permutation)|Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.|  
 |[push_heap](../standard-library/algorithm-functions.md#push_heap)|Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.|  
 |[random_shuffle](../standard-library/algorithm-functions.md#random_shuffle)|Bir dizi yeniden düzenler *N* birini aralığına öğelerinde *N*! olası düzenlemeleri rastgele seçilmiş.|  
-|[Kaldır](../standard-library/algorithm-functions.md#remove)|Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.|  
+|[remove](../standard-library/algorithm-functions.md#remove)|Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.|  
 |[remove_copy](../standard-library/algorithm-functions.md#remove_copy)|Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|  
 |[remove_copy_if](../standard-library/algorithm-functions.md#remove_copy_if)|Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.|  
 |[remove_if](../standard-library/algorithm-functions.md#remove_if)|Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.|  

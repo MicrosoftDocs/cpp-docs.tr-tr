@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 093dbd6a860b6bf0c65753afe104efa377c2db7a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 137fe601e911b309d28281ecee7e67a88e1bb0a3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4516"></a>Derleyici Uyarısı (düzey 4) C4516
 'class::symbol': erişim bildirimleri dışıdır; üye kullanarak bildirimleri daha iyi bir alternatif sunar  

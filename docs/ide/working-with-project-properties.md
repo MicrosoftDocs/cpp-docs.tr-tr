@@ -18,11 +18,12 @@ caps.latest.revision: "45"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70fc1210df4600fd63c938a7721f09dcdd206cb1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de48e03c62d924334e005ffd7f008e0083fb405f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="working-with-project-properties"></a>Proje Özellikleriyle Çalışma
 IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *özellikleri*. Bu bilgiler, uygulama adı, (örneğin, DLL, LIB, EXE) uzantısı, derleyici seçenekleri, bağlayıcı seçenekleri, hata ayıklayıcı ayarları, özel derleme adımları ve diğer pek çok şeyi içerir. Genellikle, kullandığınız *özellik sayfaları* ( **proje &#124; Özellikler**) görüntülemek ve bu özellikleri değiştirmek için. 
@@ -84,25 +85,25 @@ IDE içinde bir proje oluşturmak için gereken tüm bilgileri olarak sunulan *�
   
  Bu konularda, her özellik sayfası hakkında daha fazla bilgi bulabilirsiniz:  
   
--   [Genel özellik sayfası (Proje)](../ide/general-property-page-project.md)  
+-   [Genel Özellik Sayfası (Proje)](../ide/general-property-page-project.md)  
   
--   [Genel özellik sayfası (dosya)](../ide/general-property-page-file.md)  
+-   [Genel Özellik Sayfası (Dosya)](../ide/general-property-page-file.md)  
   
--   [Komut satırı özellik sayfaları](../ide/command-line-property-pages.md)  
+-   [Komut Satırı özellik sayfaları](../ide/command-line-property-pages.md)  
   
 -   [C++ hata ayıklama yapılandırması proje ayarları](/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)  
   
 -   [NMake özellik sayfası](../ide/nmake-property-page.md)  
   
--   [Bağlayıcı özellik sayfaları](../ide/linker-property-pages.md)  
+-   [Bağlayıcı Özellik Sayfaları](../ide/linker-property-pages.md)  
   
--   [Kaynaklar özellik sayfaları](../ide/resources-property-pages.md)  
+-   [Kaynaklar Özellik Sayfaları](../ide/resources-property-pages.md)  
   
--   [MIDL özellik sayfaları](../ide/midl-property-pages.md)  
+-   [MIDL Özellik Sayfaları](../ide/midl-property-pages.md)  
   
--   [Web başvuruları özellik sayfası](../ide/web-references-property-page.md)  
+-   [Web Başvuruları Özellik Sayfası](../ide/web-references-property-page.md)  
   
--   [XML verileri oluşturma aracı özellik sayfası](../ide/xml-data-generator-tool-property-page.md)  
+-   [XML Verileri Oluşturma Aracı özellik sayfası](../ide/xml-data-generator-tool-property-page.md)  
   
 ## <a name="to-quickly-browse-and-search-all-properties"></a>Hızlı bir şekilde göz atmak ve tüm özellikleri aramak için  
  **Tüm seçenekleri** özellik sayfası (altında **yapılandırma özellikleri &#124; C/C++** düğümünde **özellik sayfaları** iletişim kutusu) göz atın ve geçerli bağlamda kullanılabilen özellikleri arama yapmak için hızlı bir yolunu sağlar. Özel bir arama kutusu ve sonuçlara filtre uygulamanıza yardımcı olacak basit bir sözdizimi vardır:  

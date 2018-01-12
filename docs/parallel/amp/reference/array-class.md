@@ -32,11 +32,12 @@ caps.latest.revision: "31"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ad9e098ad485c7a96670c4249770b038333e1bc8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5b76fcb181d955fc051ade5183b67b9d55b823ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="array-class"></a>array Sınıfı
 Hızlandırıcı için veri taşımak için kullanılan bir veri kapsayıcısını temsil eder.  
@@ -74,7 +75,7 @@ friend class array;
 |[get_cpu_access_type](#get_cpu_access_type)|Döndürür [access_type](concurrency-namespace-enums-amp.md#access_type) dizi. Bu yöntem yalnızca CPU üzerinde erişilebilir.|  
 |[get_extent](#get_extent)|Döndürür [ölçüde](extent-class.md) dizi nesnesi.|  
 |[reinterpret_as](#reinterpret_as)|Tüm öğeleri içeren tek boyutlu bir dizi döndürür `array` nesnesi.|  
-|[Bölüm](#section)|Alt döndürür `array` belirtilen kaynağa ve bu, isteğe bağlı olarak, nesne belirtilen uzantı sahiptir.|  
+|[section](#section)|Alt döndürür `array` belirtilen kaynağa ve bu, isteğe bağlı olarak, nesne belirtilen uzantı sahiptir.|  
 |[view_as](#view_as)|Döndürür bir [array_view](array-view-class.md) gelen oluşturulan nesne `array` nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
@@ -817,4 +818,4 @@ array_view<const value_type,_New_rank> view_as(
  [Array_view](array-view-class.md) oluşturulan nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Eşzamanlılık Namespace (C++ AMP)](concurrency-namespace-cpp-amp.md)
+ [Eşzamanlılık Ad Alanı (C++ AMP)](concurrency-namespace-cpp-amp.md)

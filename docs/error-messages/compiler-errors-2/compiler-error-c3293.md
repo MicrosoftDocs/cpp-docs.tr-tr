@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7bfa8c58bec79558f3d71868e9464242b9da9ea8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ccf6bd08b1ca540fcdf46d18631e0ab11c7fe4f6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-error-c3293"></a>Derleyici Hatası C3293
 'erişimcisi': 'default' sınıfı 'type' için varsayılan özelliği (Dizin Oluşturucu) erişmek için kullanın  

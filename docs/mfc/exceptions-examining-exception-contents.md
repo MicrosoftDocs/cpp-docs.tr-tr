@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 06d33c021d5bb7e802a9aba362fcd0152ff5eab0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 953dd61247f7d14ad04d5d5f85529c89f3aaad9d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-examining-exception-contents"></a>Özel Durumlar: Özel Durum İçeriklerini İnceleme
 Ancak bir **catch** bloğun bağımsız değişkeni, neredeyse her veri türü olabilir, MFC işlevleri sınıfından türetilen türlerin özel durumlar oluşturma `CException`. MFC işlevi tarafından oluşturulan bir özel yakalamak için daha sonra yazdığınız bir **catch** , bağımsız değişkeni bir işaretçidir bloğu için bir `CException` nesne (veya bir nesne türetilmiş `CException`, gibi `CMemoryException`). Özel durum tam türüne bağlı olarak, özel durumun belirli nedeni hakkında bilgi toplamak için özel durum nesnesi veri üyeleri inceleyebilirsiniz.  
@@ -38,5 +39,5 @@ Ancak bir **catch** bloğun bağımsız değişkeni, neredeyse her veri türü o
  Daha fazla bilgi için bkz: [özel durumlar: özel durumlarda nesneleri serbest bırakma](../mfc/exceptions-freeing-objects-in-exceptions.md) ve [özel durumlar: çalýþýrçalýþma yakalama ve silme özel durumları](../mfc/exceptions-catching-and-deleting-exceptions.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

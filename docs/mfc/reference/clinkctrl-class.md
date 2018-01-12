@@ -45,11 +45,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d61e3f09b96c236277cdaf3c38008be2a661f40
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e6834190d7693e60f80285b04a04c484313d3c2
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 Windows ortak SysLink denetimi işlevselliğini sağlar.  
@@ -132,7 +133,7 @@ virtual BOOL Create(DWORD dwStyle,
   
 ### <a name="parameters"></a>Parametreler  
  `lpszLinkMarkup`  
- İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706) içinde [MSDN Kitaplığı](http://go.microsoft.com/fwlink/linkid=556).  
+ İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
  `dwStyle`  
  Bağlantı denetimin stilini belirtir. Herhangi bir bileşimini denetim stilleri uygulayın. Bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) içinde `Windows SDK` daha fazla bilgi için.  
@@ -186,7 +187,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
   
 ### <a name="parameters"></a>Parametreler  
  `lpszLinkMarkup`  
- İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706) içinde [MSDN Kitaplığı](http://go.microsoft.com/fwlink/linkid=556).  
+ İşaretli görüntülenecek metni içeren sıfır ile sonlandırılan bir dize işaretçi. Daha fazla bilgi için konusundaki "Biçimlendirme ve bağlantı erişim" bölümüne bakın [SysLink denetimleri genel bakış](http://msdn.microsoft.com/library/windows/desktop/bb760706).  
   
  `dwExStyle`  
  Bağlantı denetimi genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri listesi için bkz: `dwExStyle` parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
@@ -469,4 +470,4 @@ BOOL SetItemUrl(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CWnd sınıfı](../../mfc/reference/cwnd-class.md)
+ [CWnd Sınıfı](../../mfc/reference/cwnd-class.md)

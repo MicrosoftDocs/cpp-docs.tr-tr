@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f829ca4de7aba26c2a457c0149326c7f96d1f691
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f297749c5bfa93397728cb8c6743adf710a9a1bb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modulemodule-destructor"></a>Module::~Module Yok Edicisi
 Modül sınıfının geçerli örneği deinitializes.  
@@ -36,4 +39,4 @@ virtual ~Module();
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [Modül sınıfı](../windows/module-class.md)
+ [Modül Sınıfı](../windows/module-class.md)

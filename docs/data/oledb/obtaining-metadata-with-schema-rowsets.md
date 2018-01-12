@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a2a57fd92183c60e245ecdd1ba237da74c9e575b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 0035606b02a1281b09287f19ffe087c9e6b36f7f
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>Şema Satır Kümeleri ile Meta Verileri Alma
 Bazen satır açmadan sağlayıcı, satır, tablo, sütun veya diğer veritabanı bilgileri hakkında bilgi edinmeniz gerekir. Veri veritabanı yapısı hakkındaki meta veriler denir ve çeşitli farklı yöntemler tarafından alınabilir. Şema satır kümeleri kullanan bir yöntemdir.  
@@ -59,7 +62,7 @@ CRestrictions<CAccessor<CColumnsInfo>
   
  [CRestrictions](../../data/oledb/crestrictions-class.md) sınıfı kısıtlama desteği sağlar. Şema satır kümesi örneği oluşturduktan sonra arama [CRestrictions::Open](../../data/oledb/crestrictions-open.md). Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür.  
   
- Kısıtlamaları belirtmek için başvurmak [ek B: şema satır kümeleri](http://go.microsoft.com/fwlink/?linkid=64681) ve kullanmakta olduğunuz satır kümesini aratın. Örneğin, **CColumns** karşılık gelen [SÜTUNLARIN satır kümesi](http://go.microsoft.com/fwlink/?linkid=64682); Bu konu COLUMNS satır kümesindeki kısıtlama sütunlarını listeler: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. Bu siparişi, sınırlamaları belirleme izlemeniz gerekir.  
+ Kısıtlamaları belirtmek için başvurmak [ek B: şema satır kümeleri](http://go.microsoft.com/fwlink/p/?linkid=64681) ve kullanmakta olduğunuz satır kümesini aratın. Örneğin, **CColumns** karşılık gelen [SÜTUNLARIN satır kümesi](http://go.microsoft.com/fwlink/p/?linkid=64682); Bu konu COLUMNS satır kümesindeki kısıtlama sütunlarını listeler: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME. Bu siparişi, sınırlamaları belirleme izlemeniz gerekir.  
   
  Bu nedenle, örneğin, tablo adı ile kısıtlamak istiyorsanız, TABLE_NAME üçüncü kısıtlama sütunu olduğuna dikkat edin ve ardından arama **açık**, aşağıdaki örnekte gösterildiği gibi üçüncü kısıtlama parametresi olarak istenilen tablo adını belirtme.  
   
@@ -89,11 +92,11 @@ CRestrictions<CAccessor<CColumnsInfo>
   
  Şema satır kümesi başvuru için typedef sınıfları sağlanan OLE DB Şablonları (bkz [şema satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).  
   
- Kısıtlama sütunları dahil OLE DB şema satır kümeleri hakkında daha fazla bilgi için bkz: [ek B: şema satır kümeleri](http://go.microsoft.com/fwlink/?linkid=64681) OLE DB Programcı Başvurusu.  
+ Kısıtlama sütunları dahil OLE DB şema satır kümeleri hakkında daha fazla bilgi için bkz: [ek B: şema satır kümeleri](http://go.microsoft.com/fwlink/p/?linkid=64681) OLE DB Programcı Başvurusu.  
   
  Şema satır kümesi sınıfları kullanmayı daha karmaşık örnekleri için bkz: [CatDB](http://msdn.microsoft.com/en-us/003d516b-2bf6-444e-8be5-4ebaa0b66046) ve [DBVIEWER](http://msdn.microsoft.com/en-us/07620f99-c347-4d09-9ebc-2459e8049832) örnekleri.  
   
  Şema satır kümeleri için sağlayıcı desteği hakkında daha fazla bilgi için bkz: [şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Erişimcileri kullanma](../../data/oledb/using-accessors.md)
+ [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aaebe39e758d3fa0ea919433204ce1b7313019b9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e853f2bd6f57c7ccc63e802f013661efb85d9796
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-database-exceptions"></a>Özel durumlar: Veritabanı Özel Durumları
 Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaledeki malzemesini çoğunu ile MFC sınıfları açık veritabanı bağlantısı (ODBC) veya MFC sınıfları için veri erişim nesneleri (DAO) çalıştığınız olup olmadığını geçerlidir. Malzeme birini veya diğer model belirli açık olarak işaretlenir. Konular şunlardır:  
@@ -78,5 +79,5 @@ Bu makalede, veritabanı özel durumları işleme açıklanmaktadır. Bu makaled
  ODBC ile çalışırken, Microsoft Jet (.mdb) veritabanlarıyla ve çoğu durumda çalışırken, yalnızca bir hata nesnesi olacaktır. Nadir durumlarda ODBC veri kaynağını kullanan ve birden çok hata olduğunda, tarafından döndürülen hataları sayısına dayalı DAO'ın hataları koleksiyonu aracılığıyla bir döngüye girer [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount). Döngünün her tamamlanışında çağrısı [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) yenileme için `m_pErrorInfo` veri üyesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../mfc/exception-handling-in-mfc.md)
+ [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

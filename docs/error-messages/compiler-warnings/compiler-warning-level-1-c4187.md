@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6968dfaed29a6ea5c656e60521c932a2c4c91bbe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33e3898f8803dc8a179f886d8556e0919076cb2a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-1-c4187"></a>Derleyici Uyarısı (düzey 1) C4187
 \#içeri aktarma öznitelikleri 'öznitelik1' ve 'öznitelik2' uyumsuz; hem göz ardı  

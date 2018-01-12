@@ -13,20 +13,21 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1fee551d667b40b3fc36b3ca1f91e093148083a5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 44cd4e5c47618a12c5d4ad5edd3bd8bbf9105309
+ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="arm-assembler-directives"></a>ARM Assembler Yönergeleri
-Çoğunlukla, Microsoft ARM assembler Bölüm 7'de belgelenen ARM assembler dili kullanan [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=246102). Ancak, bazı derleme yönergesi Microsoft uygulamaları ARM derleme yönergeleri farklı. Bu makalede farklar açıklanmaktadır.  
+Çoğunlukla, Microsoft ARM assembler Bölüm 7'de belgelenen ARM assembler dili kullanan [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102). Ancak, bazı derleme yönergesi Microsoft uygulamaları ARM derleme yönergeleri farklı. Bu makalede farklar açıklanmaktadır.  
   
 ## <a name="microsoft-implementations-of-arm-assembly-directives"></a>Microsoft uygulamaları ARM derleme yönergesi  
  ALAN  
  Bu alan öznitelikleri Microsoft ARM assembler destekler: ALIGN, kod, CODEALIGN, verileri, NOINIT, salt okunur, READWRITE, Flash, ARM.  
   
- Kaydırma kutusu ve ARM dışında tüm açıklandığı gibi iş [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/?LinkId=246102).  
+ Kaydırma kutusu ve ARM dışında tüm açıklandığı gibi iş [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  Microsoft ARM assembler Flash kod bölümünde Flash kodunu içerir ve kod bölümler için varsayılan değer gösterir.  ARM bölüm ARM kod içerdiğini gösterir.  
   
@@ -111,4 +112,4 @@ IMPORT sym{, WEAK alias{, TYPE t}}
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM Assembler komut satırı başvurusu](../../assembler/arm/arm-assembler-command-line-reference.md)   
- [ARM Assembler tanılama iletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)
+ [ARM Assembler Tanılama İletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)
