@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 75d26ff5b656b7a710fe695d55af563012aef3c6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 7e4de635015f550858facb3f0450710e1824d7ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stacksizetype-stlclr"></a>stack::size_type (STL/CLR)
 İki öğe arasındaki imzalı uzaklığı türü.  
@@ -76,4 +79,4 @@ size difference = 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın (STL/CLR)](../dotnet/stack-stl-clr.md)   
- [Stack::Empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md)
+ [stack::empty (STL/CLR)](../dotnet/stack-empty-stl-clr.md)

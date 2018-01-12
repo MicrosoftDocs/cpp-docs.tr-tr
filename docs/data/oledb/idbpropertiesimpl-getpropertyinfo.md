@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4891ba281000f58dd06a2c6e8bf38731da593005
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 6b1eb8bc9a859c29a28291dd77e5664df2f185cf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idbpropertiesimplgetpropertyinfo"></a>IDBPropertiesImpl::GetPropertyInfo
 Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.  
@@ -59,4 +62,4 @@ Veri kaynağı tarafından desteklenen özellik bilgilerini döndürür.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idbpropertiesımpl sınıfı](../../data/oledb/idbpropertiesimpl-class.md)   
  [Idbpropertiesımpl::GetProperties](../../data/oledb/idbpropertiesimpl-getproperties.md)   
- [Idbpropertiesımpl::SetProperties](../../data/oledb/idbpropertiesimpl-setproperties.md)
+ [IDBPropertiesImpl::SetProperties](../../data/oledb/idbpropertiesimpl-setproperties.md)

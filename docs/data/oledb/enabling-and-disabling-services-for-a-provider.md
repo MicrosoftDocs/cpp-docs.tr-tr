@@ -16,11 +16,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0fc9b085a77cb05f8e7bdd573df32125dd179c72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: dc6b3d7cc8e80eaa24c2e2dd9b4e23e79dfb09f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enabling-and-disabling-services-for-a-provider"></a>Sağlayıcı için Etkinleştirme ve Devre Dışı Bırakma Hizmetleri
 Tek tek OLE DB hizmetleri, etkin veya tek sağlayıcıya erişen tüm uygulamalar için varsayılan olarak devre dışı. Bu ekleyerek yapılır bir **OLEDB_SERVICES** sağlayıcı altında kayıt defteri girdisi ile CLSID, kullanıcının bir `DWORD` için hizmetleri etkinleştirmek veya devre dışı bırakmak, aşağıdaki tabloda gösterildiği gibi belirten değer.  
@@ -35,4 +38,4 @@ Tek tek OLE DB hizmetleri, etkin veya tek sağlayıcıya erişen tüm uygulamala
 |Hiçbir toplama, tüm hizmetleri devre dışı|\<Eksik anahtar >|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB hizmetleri devre dışı bırakma ve etkinleştirme](../../data/oledb/enabling-and-disabling-ole-db-services.md)
+ [OLE DB Hizmetlerini Etkinleştirme ve Devre Dışı Bırakma](../../data/oledb/enabling-and-disabling-ole-db-services.md)

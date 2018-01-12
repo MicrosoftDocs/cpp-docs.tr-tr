@@ -20,11 +20,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2416ab420473ceb0162a0ab0743047f7d51431a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 92ae29bc2a9e3d7e2fc246b4f43e3a7f586475da
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetchangeimpldeleterows"></a>IRowsetChangeImpl::DeleteRows
 Satır satır kümesinden siler.  
@@ -48,4 +51,4 @@ Satır satır kümesinden siler.
  **Başlık:** atldb.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IRowsetChangeImpl sınıfı](../../data/oledb/irowsetchangeimpl-class.md)
+ [IRowsetChangeImpl Sınıfı](../../data/oledb/irowsetchangeimpl-class.md)

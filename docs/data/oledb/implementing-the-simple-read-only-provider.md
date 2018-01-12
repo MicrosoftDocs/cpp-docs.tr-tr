@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cc7f2ff81874c49ed203c9733ad31741c1fde6cd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 354d1f64c2236706a977b8a9093e99f7b2013b22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-the-simple-read-only-provider"></a>Basit Salt Okunur Sağlayıcıyı Uygulama
 Bu konudaki genişletilmiş örnek bir metin dosyasından iki dize kümesi okuyan basit bir salt okunur sağlayıcıyı oluşturmak için sihirbaz tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Sihirbaz dosyalarından bu sağlayıcısı oluşturmak için aşağıdaki görevleri tamamlamak için kodu ekleyin:  
@@ -28,4 +31,4 @@ Bu konudaki genişletilmiş örnek bir metin dosyasından iki dize kümesi okuya
 -   [Dizeleri depola](../../data/oledb/storing-strings-in-the-ole-db-provider.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit salt okunur sağlayıcı oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)
+ [Basit Bir Salt Okunur Sağlayıcı Oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)

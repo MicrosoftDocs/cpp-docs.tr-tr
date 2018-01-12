@@ -23,11 +23,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c54cc1d91916e23e432faf8e407400b0985e3285
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 360eeb936e2bf7b4219e9e6dc8eb95fe40c52c6f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idbinitializeimplmdwstatus"></a>IDBInitializeImpl::m_dwStatus
 Veri kaynağı bayraklar.  
@@ -63,4 +66,4 @@ enum DATASOURCE_FLAGS {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idbınitializeımpl sınıfı](../../data/oledb/idbinitializeimpl-class.md)   
  [Idbınitializeımpl::ıdbınitializeımpl](../../data/oledb/idbinitializeimpl-idbinitializeimpl.md)   
- [Idbınitializeımpl::Uninitialize](../../data/oledb/idbinitializeimpl-uninitialize.md)
+ [IDBInitializeImpl::Uninitialize](../../data/oledb/idbinitializeimpl-uninitialize.md)

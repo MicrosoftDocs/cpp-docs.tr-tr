@@ -16,11 +16,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a9b97bd94793887f6d443d18914c2155597bec5d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: c85ac0b082e8ea1dfbff007a68061e6a286390cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changes-in-destructor-semantics"></a>Yok Edici Anlamlarında Yapılan Değişiklikler
 Sınıf Yıkıcılar anlamları önemli ölçüde Yönetilen Uzantılar'dan C++ için Visual C++ için değiştirilmiştir.  

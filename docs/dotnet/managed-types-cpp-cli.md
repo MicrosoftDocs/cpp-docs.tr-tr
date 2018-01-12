@@ -18,11 +18,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b32cc69cfa9758ac13d54326e2c6ff6574f237be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 1329cb6dd799d44d7810de22479638a105a8538f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="managed-types-ccli"></a>Yönetilen Türler (C++/CLI)
 Visual C++ .NET özellikleri ortak dil çalışma zamanı özellikleri için destek sağlar ve avantajları ve sınırlamaları çalışma zamanının tabi yönetilen türleri aracılığıyla erişmesini sağlar.  
@@ -31,13 +34,13 @@ Visual C++ .NET özellikleri ortak dil çalışma zamanı özellikleri için des
   
 -   [Yönetilen türler ve main işlevi](../dotnet/managed-types-and-the-main-function-cpp-cli.md)  
   
--   [C++ yerel türlerinin .NET framework eşdeğerleri (C + +/ CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)  
+-   [C++ Yerel Türlerinin .NET Framework Eşdeğerleri (C++/CLI)](../dotnet/dotnet-framework-equivalents-to-cpp-native-types-cpp-cli.md)  
   
--   [Değer türleri için sürüm sorunları yerel türlerin içinde bulunan (C + +/ CLI)](../dotnet/version-issues-for-value-types-nested-in-native-types-cpp-cli.md)  
+-   [Yerel Türlerin İçinde Bulunan Değer Türleri İçin Sürüm Sorunları (C++/CLI)](../dotnet/version-issues-for-value-types-nested-in-native-types-cpp-cli.md)  
   
--   [Nasıl yapılır: eşitlik için Test yapma (C + +/ CLI)](../dotnet/how-to-test-for-equality-cpp-cli.md)  
+-   [Nasıl yapılır: Eşitlik için Test Yapma (C++/CLI)](../dotnet/how-to-test-for-equality-cpp-cli.md)  
   
--   [Nasıl yapılır: derleme uyumluluk sorunlarını tanılama ve düzeltme (C + +/ CLI)](../dotnet/how-to-diagnose-and-fix-assembly-compatibility-problems-cpp-cli.md)  
+-   [Nasıl yapılır: Derleme Uyumluluk Sorunlarını Tanılama ve Düzeltme (C++/CLI)](../dotnet/how-to-diagnose-and-fix-assembly-compatibility-problems-cpp-cli.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
+ [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

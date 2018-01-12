@@ -18,11 +18,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d652af917c98d7f1df7bca5fffcd491b2afa1d77
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 4bf6cc3b69cb8a6bc90e6788ed817bc9b9a2d6a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idbinitializeimplinitialize"></a>IDBInitializeImpl::Initialize
 Veri kaynağı nesnesi özellik desteği hazırlayarak başlatır.  
@@ -44,4 +47,4 @@ Veri kaynağı nesnesi özellik desteği hazırlayarak başlatır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Idbınitializeımpl sınıfı](../../data/oledb/idbinitializeimpl-class.md)   
- [Idbınitializeımpl::Uninitialize](../../data/oledb/idbinitializeimpl-uninitialize.md)
+ [IDBInitializeImpl::Uninitialize](../../data/oledb/idbinitializeimpl-uninitialize.md)

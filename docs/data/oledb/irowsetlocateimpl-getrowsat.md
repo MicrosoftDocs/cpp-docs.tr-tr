@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: facb6498d38c05d513b08016b85865438174ed5b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: a757c6102851851ab4175f939a6f76d8136fa61c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetlocateimplgetrowsat"></a>IRowsetLocateImpl::GetRowsAt
 Yer işareti uzaklık tarafından belirtilen satır ile başlayan satırlar getirir.  
@@ -58,4 +61,4 @@ Yer işareti uzaklık tarafından belirtilen satır ile başlayan satırlar geti
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IRowsetLocateImpl sınıfı](../../data/oledb/irowsetlocateimpl-class.md)   
- [IRowsetLocateImpl::getrowsbybookmark](../../data/oledb/irowsetlocateimpl-getrowsbybookmark.md)
+ [IRowsetLocateImpl::GetRowsByBookmark](../../data/oledb/irowsetlocateimpl-getrowsbybookmark.md)

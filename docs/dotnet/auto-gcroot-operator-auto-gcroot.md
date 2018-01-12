@@ -19,11 +19,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 339df92e4b5085dfcfbc1eea1025612106dad6e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 58ccf1aa32a999fd85f6dc0a14fb514f6508a386
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autogcrootoperator-autogcroot"></a>auto_gcroot::operator auto_gcroot
 Tür atama işleci arasında `auto_gcroot` ve uyumlu türleri.  
@@ -86,4 +89,4 @@ Hello from first A!
  **Namespace** msclr  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [auto_gcroot üyeleri](../dotnet/auto-gcroot-members.md)
+ [auto_gcroot Members](../dotnet/auto-gcroot-members.md)

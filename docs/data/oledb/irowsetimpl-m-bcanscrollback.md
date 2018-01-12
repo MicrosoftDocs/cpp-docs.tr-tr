@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e64e0b63e3ddb06303f50bb774d736718ae59639
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 2f0fd3e481033947ddce11193872085b553d5ff7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetimplmbcanscrollback"></a>IRowsetImpl::m_bCanScrollBack
 Bir sağlayıcı, imleç kaydırma geriye doğru sahip olup olmadığını gösterir.  
@@ -45,4 +48,4 @@ unsigned  m_bCanScrollBack:1;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Irowsetımpl sınıfı](../../data/oledb/irowsetimpl-class.md)   
- [Irowsetımpl::m_bcanfetchback](../../data/oledb/irowsetimpl-m-bcanfetchback.md)
+ [IRowsetImpl::m_bCanFetchBack](../../data/oledb/irowsetimpl-m-bcanfetchback.md)

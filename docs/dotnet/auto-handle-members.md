@@ -13,11 +13,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c2c1c74e0cbda3cc6ad88c3e1ced6c183fecb084
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 4659cbd6441747af16c5986852eb3c618e20b8e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autohandle-members"></a>auto_handle Üyeleri
 Üyeleri `auto_handle`.  
@@ -25,19 +28,19 @@ ms.lasthandoff: 10/24/2017
 ## <a name="in-this-section"></a>Bu Bölümde  
  [auto_handle::auto_handle](../dotnet/auto-handle-auto-handle.md)  
   
- [auto_handle:: ~ auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)  
+ [auto_handle::~auto_handle](../dotnet/auto-handle-tilde-auto-handle.md)  
   
  [auto_handle::get](../dotnet/auto-handle-get.md)  
   
- [auto_handle::Release](../dotnet/auto-handle-release.md)  
+ [auto_handle::release](../dotnet/auto-handle-release.md)  
   
  [auto_handle::reset](../dotnet/auto-handle-reset.md)  
   
- [auto_handle::Swap](../dotnet/auto-handle-swap.md)  
+ [auto_handle::swap](../dotnet/auto-handle-swap.md)  
   
- [auto_handle::operator =](../dotnet/auto-handle-operator-assign.md)  
+ [auto_handle::operator=](../dotnet/auto-handle-operator-assign.md)  
   
- [auto_handle::operator ->](../dotnet/auto-handle-operator-arrow.md)  
+ [auto_handle::operator->](../dotnet/auto-handle-operator-arrow.md)  
   
  [auto_handle::operator!](../dotnet/auto-handle-operator-logical-not.md)  
   

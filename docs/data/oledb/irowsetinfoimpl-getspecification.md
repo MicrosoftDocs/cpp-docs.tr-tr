@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 012f845cd47bca6008cdc493651cf17bb1745466
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: c2c0fd40e5d46b67779da50983b8b8faad13a024
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irowsetinfoimplgetspecification"></a>IRowsetInfoImpl::GetSpecification
 Arabirim işaretçisi bu satır kümesini oluşturan nesnede (komut veya oturum) döndürür.  
@@ -51,4 +54,4 @@ Arabirim işaretçisi bu satır kümesini oluşturan nesnede (komut veya oturum)
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Irowsetınfoımpl sınıfı](../../data/oledb/irowsetinfoimpl-class.md)   
  [Irowsetınfoımpl::getreferencedrowset](../../data/oledb/irowsetinfoimpl-getreferencedrowset.md)   
- [Irowsetınfoımpl::GetProperties](../../data/oledb/irowsetinfoimpl-getproperties.md)
+ [IRowsetInfoImpl::GetProperties](../../data/oledb/irowsetinfoimpl-getproperties.md)

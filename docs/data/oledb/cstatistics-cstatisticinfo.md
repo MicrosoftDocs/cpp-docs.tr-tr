@@ -30,11 +30,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0063851a2a81f1fcafaf39497a64bdde3d3d43f0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 57c965c39903d6b089ce19e1f421036c6a5fd042
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cstatistics-cstatisticinfo"></a>CStatistics, CStatisticInfo
 Çağrı typedef sınıfı **CStatistics** parametre sınıfı uygulamak için **Cstatisticınfo**.  
@@ -57,4 +60,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

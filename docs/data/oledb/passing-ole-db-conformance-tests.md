@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8ef7e32f56fdff81c7a66a1dfcc6c613201e2f49
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 0df51ea0086104a45385673b310b5717bfa1c9ea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB Uygunluk Testlerini Geçme
 Sağlayıcıları daha tutarlı hale getirmek için OLE DB uygunluk testlerini bir dizi Veri Erişim SDK'sı sağlar. Testleri sağlayıcınız tüm yönlerini kontrol edin ve sağlayıcı beklendiği gibi ilişkin makul güvence verir. OLE DB uygunluk testlerini Microsoft Data Access SDK üzerinde bulabilirsiniz. Bu bölümde uygunluk testlerini geçmesi için yapmanız gereken şeylere odaklanmıştır. OLE DB uygunluk testlerini çalıştırma hakkında daha fazla bilgi için bkz.  
@@ -82,4 +85,4 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
 -   İzleme doğru programlama ücretsiz iş parçacıklı programlama (diğer bir deyişle, yazma kilidi) kuralları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gelişmiş Sağlayıcı teknikleri](../../data/oledb/advanced-provider-techniques.md)
+ [Gelişmiş Sağlayıcı Teknikleri](../../data/oledb/advanced-provider-techniques.md)

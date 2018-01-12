@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b91198d4280a271c775b7be79ecab3da7271fb57
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 533142115a4811c0f03f585b995b83383a33d831
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-object-model"></a>OLE DB Nesne Modeli
 OLE DB Nesne modeli aşağıdaki nesnelerden veya bileşenlerden oluşur. İlk dört nesne veya listelenen bileşenleri (veri kaynakları, oturumlar, komutları ve satır kümeleri) bir veri kaynağına bağlanmak ve onu görüntülemenizi sağlar. Erişimciler ile başlayarak, kalan ilişkilendirmek görüntülendiğinde verilerle çalışmak için.  
@@ -76,4 +79,4 @@ OLE DB Nesne modeli aşağıdaki nesnelerden veya bileşenlerden oluşur. İlk d
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   
- [OLE DB programlamaya genel bakış](../../data/oledb/ole-db-programming-overview.md)
+ [OLE DB Programlamaya Genel Bakış](../../data/oledb/ole-db-programming-overview.md)

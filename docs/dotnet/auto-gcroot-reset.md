@@ -19,11 +19,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 066ebb82b8a583351cb8a902750ec14071f0612b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 2dc5664ba1313fa09229447c0a86eec2b2b7b31f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="autogcrootreset"></a>auto_gcroot::reset
 Geçerli ait bir nesneyi yok ve isteğe bağlı olarak yeni bir nesne elinde gerçekleştirin.  
@@ -98,4 +101,4 @@ done
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [auto_gcroot üyeleri](../dotnet/auto-gcroot-members.md)   
  [auto_gcroot::Release](../dotnet/auto-gcroot-release.md)   
- [auto_gcroot::Attach](../dotnet/auto-gcroot-attach.md)
+ [auto_gcroot::attach](../dotnet/auto-gcroot-attach.md)

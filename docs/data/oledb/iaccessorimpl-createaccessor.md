@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8dbeec03a5947299bdc5810f0a90bb0c6c81dc47
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 52c15b9f7c7f2b1a304cd5f05b4c05af6394977e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iaccessorimplcreateaccessor"></a>IAccessorImpl::CreateAccessor
 Erişimci bağlamaları kümesinden oluşturur.  
@@ -52,4 +55,4 @@ Erişimci bağlamaları kümesinden oluşturur.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IAccessorImpl sınıfı](../../data/oledb/iaccessorimpl-class.md)   
  [IAccessorImpl::addrefaccessor](../../data/oledb/iaccessorimpl-addrefaccessor.md)   
- [IAccessorImpl::releaseaccessor](../../data/oledb/iaccessorimpl-releaseaccessor.md)
+ [IAccessorImpl::ReleaseAccessor](../../data/oledb/iaccessorimpl-releaseaccessor.md)

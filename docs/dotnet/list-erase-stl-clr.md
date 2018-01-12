@@ -15,11 +15,14 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0cd17daf073485f0e2aebaa7bb7d1594eeeec4cc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 54595b61ddd21ccd81cf4f2846224789861cb480
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="listerase-stlclr"></a>list::erase (STL/CLR)
 Belirtilen konumlardaki öğeleri kaldırır.  
@@ -105,4 +108,4 @@ size() = 1
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Liste (STL/CLR)](../dotnet/list-stl-clr.md)   
- [List::Clear (STL/CLR)](../dotnet/list-clear-stl-clr.md)
+ [list::clear (STL/CLR)](../dotnet/list-clear-stl-clr.md)

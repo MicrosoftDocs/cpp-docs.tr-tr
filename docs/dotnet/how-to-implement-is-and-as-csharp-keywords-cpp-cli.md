@@ -16,11 +16,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae9753a30e513a237d658e3110b9174072ccd25b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: d73cc06a79dd20743044803dd9c53b9e67e72995
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-implement-is-and-as-c-keywords-ccli"></a>Nasıl yapılır: is ve as C# Anahtar Sözcüklerini Uygulama (C++/CLI)
 Bu konuda işlevselliğini uygulamak nasıl gösterilmektedir `is` ve `as` Visual c++ C# anahtar sözcükleri.  
@@ -63,4 +66,4 @@ o is a string
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Diğer .NET dilleri ile birlikte çalışabilirlik (C + +/ CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)
+ [Diğer .NET Dilleri ile Birlikte Çalışabilirlik (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)

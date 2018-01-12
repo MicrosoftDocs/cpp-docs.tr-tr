@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d4b682b5d125f21e8212e2ac442caf51f8c2832e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- dotnet
+ms.openlocfilehash: 17a5fb91f77e1b0a83e63bf498568690001acebd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dequeoperator-stlclr"></a>deque::operator!= (STL/CLR)
 Deque eşit değildir karşılaştırma.  
@@ -99,4 +102,4 @@ int main()
  [İşleç\< (deque) (STL/CLR)](../dotnet/operator-less-than-deque-stl-clr.md)   
  [operator > = (deque) (STL/CLR)](../dotnet/operator-greater-or-equal-deque-stl-clr.md)   
  [operator > (deque) (STL/CLR)](../dotnet/operator-greater-than-deque-stl-clr.md)   
- [operator < = (deque) (STL/CLR)](../dotnet/operator-less-or-equal-deque-stl-clr.md)
+ [operator<= (deque) (STL/CLR)](../dotnet/operator-less-or-equal-deque-stl-clr.md)

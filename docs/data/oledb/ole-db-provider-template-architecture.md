@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 289d1d5f09f60b829c6dd7d1f1b00c0de3562518
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 8c1baa921f4a12aae40a01995cfd0b638cf614d8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB Sağlayıcı Şablonu Mimarisi
 ## <a name="data-sources-and-sessions"></a>Veri Kaynakları ve Oturumlar  
@@ -36,7 +39,7 @@ ms.lasthandoff: 10/24/2017
   
 -   [Veri kaynağı](../../data/oledb/data-source-object-interfaces.md)  
   
--   [Oturumu](../../data/oledb/session-object-interfaces.md)  
+-   [Oturum](../../data/oledb/session-object-interfaces.md)  
   
 -   [Satır kümesi](../../data/oledb/rowset-object-interfaces.md)  
   
@@ -58,7 +61,7 @@ ms.lasthandoff: 10/24/2017
   
  Daha fazla bilgi için aşağıdaki konulara bakın:  
   
--   [Özellik eşlemeleri](../../data/oledb/property-maps.md)  
+-   [Özellik Eşlemeleri](../../data/oledb/property-maps.md)  
   
 -   [Kullanıcı kaydı](../../data/oledb/user-record.md)  
   
