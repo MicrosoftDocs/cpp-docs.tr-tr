@@ -36,11 +36,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a86fd9be56b18c3ad51e3b24e965ae67b6b38fe4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aacd7b82525ca1b74c3d7a7ab7f8e09497e491ec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="configthreadlocale"></a>_configthreadlocale
 İş parçacığı başına yerel ayar seçenekleri yapılandırır.  
@@ -197,4 +198,4 @@ The time in German locale is: 'Mittwoch, 12. Mai 2004'
  [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md)   
  [_beginthread, _beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md)   
  [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çoklu iş parçacığı kullanımı ve yerel ayarlar](../../parallel/multithreading-and-locales.md)  
+ [Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../../parallel/multithreading-and-locales.md)  

@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae31985e380236baef0aec94e7bf5bd186cda7cf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c0ed58d114cb181245ff1452f0249f29edaf0b0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unrepresented-character-constants"></a>Temsil Edilmeyen Karakter Sabitleri
 **ANSI 3.1.3.4** temel yürütme karakter kümesi veya genişletilmiş karakteri temsil edilmeyen karakter ya da kaçış sırası içeren bir tamsayı karakter sabit değeri ayarlamak için geniş karakter sabiti  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Tüm karakter sabitleri veya kaçış dizileri genişletilmiş karakter kümesinde temsil edilebilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakterleri](../c-language/characters.md)
+ [Karakterler](../c-language/characters.md)

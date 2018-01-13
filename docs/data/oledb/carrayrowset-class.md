@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 82c209938c7d124e787310cb859aeb6191f32c8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 541bf3ea26ae57d0fd61c2d561b4fc87bbcc2932
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="carrayrowset-class"></a>CArrayRowset Sınıfı
 Array sözdizimini kullanarak bir satır kümesi öğeleri erişir.  
@@ -49,7 +52,7 @@ class CArrayRowset :
 |||  
 |-|-|  
 |[CArrayRowset](../../data/oledb/carrayrowset-carrayrowset.md)|Oluşturucu.|  
-|[Anlık görüntü](../../data/oledb/carrayrowset-snapshot.md)|Tüm satır belleğe okur.|  
+|[Anlık Görüntü](../../data/oledb/carrayrowset-snapshot.md)|Tüm satır belleğe okur.|  
   
 ### <a name="operators"></a>İşleçler  
   
@@ -69,4 +72,4 @@ class CArrayRowset :
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
  [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)   
- [CRowset sınıfı](../../data/oledb/crowset-class.md)
+ [CRowset Sınıfı](../../data/oledb/crowset-class.md)

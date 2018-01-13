@@ -13,11 +13,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 010979a0a72fc1d522a921b20df4579bc6efa159
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f98ca8068495be46b795d361c969c4feb2c24169
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptroperator-microsoftwrldetailsbooltype-operator"></a>ComPtr::operator Microsoft::WRL::Details::BoolType İşleci
 Bir ComPtr bir arabirim nesne ömrü yönetme olup olmadığını gösterir.  
@@ -38,4 +41,4 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ComPtr sınıfı](../windows/comptr-class.md)   
- [ComPtr::Get yöntemi](../windows/comptr-get-method.md)
+ [ComPtr::Get Metodu](../windows/comptr-get-method.md)

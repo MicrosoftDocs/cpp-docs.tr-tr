@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0d85ba653ceba37f065816ce792a03276bf36551
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a13861fe03547e37c4de72c21a528e297a217511
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="string-and-io-formatting-modern-c"></a>Dize ve G/Ç Biçimlendirme (Modern C++)
 C++ [iostreams](../standard-library/iostream.md) biçimlendirilmiş dizesini g/ç yeteneğine sahiptir. Örneğin, aşağıdaki kod bir tamsayı önce geçerli durumunu kapatmak kaydetme ve daha sonra durumu biçimlendirme cout için geçirilen sonra yalnızca bir satır için değişiklik kadar bu şekilde kalır olduğundan yeniden ayarlama onaltılık çıkış biçimine cout ayarlamak nasıl gösterir kodu.  

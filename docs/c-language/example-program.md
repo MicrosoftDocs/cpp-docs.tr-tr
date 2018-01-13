@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 976b3c21e24a8e1e6c99664b31d32f85985d7f55
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 903e4890bfad23310f0663fde52af4065e78486e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="example-program"></a>Örnek Program
 Aşağıdaki C kaynak program iki kaynak dosyaları içerir. Bazı çeşitli bildirimler ve tanımlar C programı'olası bir bakış sağlar. Bu kitap sonraki bölümlerde bu bildirimler, tanımları ve başlatmaları yazma ve C anahtar sözcükleri gibi kullanmayı açıklar **statik** ve `extern`. `printf` İşlevi C üstbilgi dosyasında STDIO bildirildi. H.  
@@ -83,4 +84,4 @@ int max( int a, int b )          // Note formal parameters are
  Ömür ve görünürlük tanımlayıcıların ele alınmıştır [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md). İşlevler hakkında daha fazla bilgi için bkz: [işlevler](../c-language/functions-c.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)
+ [Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)

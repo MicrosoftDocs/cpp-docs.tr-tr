@@ -19,11 +19,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13945181ac92ec35e0b252f31382202414333bc6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: b6aa938d53cfdf11d5956a63d944dfb1bd6afea1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccommandopen"></a>CCommand::Open
 Yürütür ve isteğe bağlı olarak komut bağlar.  
@@ -119,4 +122,4 @@ HRESULT Open(
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CCommand sınıfı](../../data/oledb/ccommand-class.md)
+ [CCommand Sınıfı](../../data/oledb/ccommand-class.md)

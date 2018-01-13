@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2e35d3f9a248d280f4ba617da89eb3993414a525
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 129267c69a2cf4830587f8ebc7c445a01591235b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="file-handling"></a>Dosya İşleme
 Oluşturma, silme ve dosyaları yönetmek için ve ayarlama ve dosya erişim izinlerini denetlemek için bu yordamları kullanın.  
@@ -55,8 +56,8 @@ Oluşturma, silme ve dosyaları yönetmek için ve ayarlama ve dosya erişim izi
 |[_fullpath, _wfullpath](../c-runtime-library/reference/fullpath-wfullpath.md)|Göreli bir yol mutlak bir yol adını genişletin|  
 |[_makepath, _wmakepath](../c-runtime-library/reference/makepath-wmakepath.md), [_makepath_s, _wmakepath_s](../c-runtime-library/reference/makepath-s-wmakepath-s.md)|Yol bileşenlerini tek, tam yola birleştirme|  
 |[_mktemp, _wmktemp](../c-runtime-library/reference/mktemp-wmktemp.md), [_mktemp_s, _wmktemp_s](../c-runtime-library/reference/mktemp-s-wmktemp-s.md)|Benzersiz dosya adı oluşturun|  
-|[Kaldır, _wremove](../c-runtime-library/reference/remove-wremove.md)|Dosya Sil|  
-|[Yeniden Adlandır, _wrename](../c-runtime-library/reference/rename-wrename.md)|Dosyayı yeniden adlandırın|  
+|[remove, _wremove](../c-runtime-library/reference/remove-wremove.md)|Dosya Sil|  
+|[rename, _wrename](../c-runtime-library/reference/rename-wrename.md)|Dosyayı yeniden adlandırın|  
 |[_splitpath, _wsplitpath](../c-runtime-library/reference/splitpath-wsplitpath.md), [_splitpath_s, _wsplitpath_s](../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)|Bileşenlerine yolu ayrıştırılamıyor|  
 |[_stat, _stat64, _stati64, _wstat, _wstat64, _wstati64](../c-runtime-library/reference/stat-functions.md)|Adlı dosyada dosya durum bilgilerini alma|  
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Program tarafından oluşturulan yeni dosyalar için varsayılan izni maskesini ayarlama|  
@@ -70,7 +71,7 @@ Oluşturma, silme ve dosyaları yönetmek için ve ayarlama ve dosya erişim izi
 |-------------|---------|  
 |[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|Bir dosyayı açar ve açık olan dosyaya bir işaretçi döndürür.|  
 |[_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)|Dosya Paylaşımı ile bir akış açın ve açık olan dosyaya bir işaretçi döndürür.|  
-|[_kurulum Aç, _wopen](../c-runtime-library/reference/open-wopen.md)|Bir dosyayı açar ve bir dosya tanımlayıcısı açılan dosyayı döndürür.|  
+|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|Bir dosyayı açar ve bir dosya tanımlayıcısı açılan dosyayı döndürür.|  
 |[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md), [_sopen_s, _wsopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md)|Dosya Paylaşımı ile bir dosya açın ve açık dosyanın dosya tanımlayıcısı döndürür.|  
 |[_pipe](../c-runtime-library/reference/pipe.md)|Okuma ve yazma için bir kanal oluşturur.|  
 |[freopen, _wfreopen](../c-runtime-library/reference/freopen-wfreopen.md), [freopen_s, _wfreopen_s](../c-runtime-library/reference/freopen-s-wfreopen-s.md)|Dosya işaretçisini yeniden atayın.|  
@@ -95,4 +96,4 @@ Oluşturma, silme ve dosyaları yönetmek için ve ayarlama ve dosya erişim izi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)   
  [Dizin denetimi](../c-runtime-library/directory-control.md)   
- [Sistem çağrıları](../c-runtime-library/system-calls.md)
+ [Sistem Çağrıları](../c-runtime-library/system-calls.md)

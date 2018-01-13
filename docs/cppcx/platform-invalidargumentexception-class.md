@@ -17,11 +17,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: c62b291d2136010c120e46141b6064a772524779
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4426fe0e8f4bc65e0071260dff0004abf327fe38
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platforminvalidargumentexception-class"></a>Platform::InvalidArgumentException sınıfı
 Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli değilse oluşturulur.  
@@ -45,4 +46,4 @@ public ref class InvalidArgumentException : COMException,    IException,    IPri
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException sınıfı](../cppcx/platform-comexception-class.md)
+ [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

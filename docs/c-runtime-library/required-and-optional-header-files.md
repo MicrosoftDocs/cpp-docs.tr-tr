@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 45e9d2e6940955b07624b89cafd09b7d89d9cd2c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9dde09f2125b595ffb3d79a69b4755353a0116bb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="required-and-optional-header-files"></a>Gerekli ve İsteğe Bağlı Başlık Dosyaları
 Gerekli ve isteğe bağlı bir listesini her çalıştırma yordamı açıklamasını içerir içeren veya üstbilgisi (. H), bu yordamı için dosyaları. Yordamın veya dahili olarak adlı başka bir yordamı tarafından kullanılan bir tanımını işlevi bildirimi almak için eklenmesi gereken üstbilgi dosyaları gerekir. İsteğe bağlı başlık dosyaları önceden tanımlanmış sabitler, tür tanımları veya satır içi makrolar yararlanmak için genellikle eklenmiştir. Aşağıdaki tabloda isteğe bağlı üstbilgi dosya içeriğinin bazı örnekler listelenmiştir:  
@@ -35,4 +36,4 @@ Gerekli ve isteğe bağlı bir listesini her çalıştırma yordamı açıklamas
  Çalışma Zamanı Kitaplığı üstbilgi dosyaları ANSI/ISO C Standart önerilen stil işlev bildirimleri sağlar. Derleyici türü ilişkili işlevi bildiriminden sonra oluşan her türlü rutin referans denetimi gerçekleştirir. İşlev bildirimleri dışındaki bazı türünde bir değer döndüren yordamları için özellikle önemli `int`, varsayılan değerdir. Kendi uygun belirtmeyin yordamları dönüş değeri kendi bildiriminde göz önünde bulundurulmalı derleyici tarafından döndürülecek bir `int`, hangi beklenmeyen sonuçlara neden olabilir. Bkz: [tür denetlemesi](../c-runtime-library/type-checking-crt.md) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

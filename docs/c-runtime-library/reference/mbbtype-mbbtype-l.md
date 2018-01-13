@@ -39,11 +39,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: badaf05406cc74c4cbf0112f948360fffb93c4c6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae66b1c0765f496dcfe460c4ea7ff4f84e9333ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbbtype-mbbtypel"></a>_mbbtype, _mbbtype_l
 Önceki bayt üzerinde temel byte türü döndürür.  
@@ -105,4 +106,4 @@ int _mbbtype_l(
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)
+ [Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)

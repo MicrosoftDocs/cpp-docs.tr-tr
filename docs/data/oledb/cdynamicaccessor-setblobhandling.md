@@ -20,11 +20,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c6117d0ebc2e41ee70900d17dd9a4804c232a070
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 02b9be4b187f55d9bfb8f3ee5e572f682742f538
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicaccessorsetblobhandling"></a>CDynamicAccessor::SetBlobHandling
 Geçerli satır değeri işleme BLOB ayarlar.  
@@ -57,4 +60,4 @@ Geçerli satır değeri işleme BLOB ayarlar.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)
+ [CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54a21ead5f47bd931bae912cb4ca28a8d900a75b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5d83f99b40e6eb897212fbcfb03c01b4f6b55e3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="uuidof-operator"></a>__uuidof İşleci
 **Microsoft özel**  
@@ -88,4 +89,4 @@ StringFromCLSID(__LIBID_, &lpolestr);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

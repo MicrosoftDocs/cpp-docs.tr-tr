@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 54a309b75d5e6b1773b7dd9bb294a1538397fd05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f98014ae0a610c1618e971cd833523ff9535b6ff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>Yerel Ayar Adları, Diller ve Ülke/Bölge Dizeleri
 *Yerel ayar* bağımsız değişkeni `setlocale` ve `_create_locale` işlevleri, yerel ayar adları, diller, ülke/bölge kodları ve Windows NLS API'si tarafından desteklenen kod sayfaları kullanılarak ayarlanabilir. *Yerel* bağımsız değişkeni aşağıdaki formu alır:  

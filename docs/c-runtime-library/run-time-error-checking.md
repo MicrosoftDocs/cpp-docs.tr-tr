@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bc3f87c5841ce99219ba0d5bac55e70852df632d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 981e8c04b305ccef12a463b0a4defd3017916b82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="run-time-error-checking"></a>Çalışma Zamanı Hata Denetimi
 C çalışma zamanı kitaplığı çalışma zamanı hata denetimleri (RTC) desteği işlevler içerir. Çalışma zamanı hata denetimi, belirli türde bir çalışma zamanı hataları bildirilen şekilde, program oluşturmanıza olanak verir. Hataları nasıl raporlandığını ve hangi tür hatalara bildirilen belirtin. Daha fazla bilgi için bkz: [nasıl yapılır: çalışma zamanı kullanmak yerel denetler](/visualstudio/debugger/how-to-use-native-run-time-checks).  
@@ -41,4 +42,4 @@ C çalışma zamanı kitaplığı çalışma zamanı hata denetimleri (RTC) dest
  [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)   
  [/ RTC (çalışma zamanı hata denetimleri)](../build/reference/rtc-run-time-error-checks.md)   
  [runtime_checks](../preprocessor/runtime-checks.md)   
- [Hata ayıklama yordamları](../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../c-runtime-library/debug-routines.md)

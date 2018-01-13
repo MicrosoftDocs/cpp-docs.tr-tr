@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e2c1f1b0d9c3b7c5949166b0018bf1e6e6fcbd14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ac628b660c37c4d281c1b889ccf5a3628240573
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 Kapsayıcı Şablon sınıfı vektör ve çeşitli destekleyici şablonları tanımlar.  
@@ -100,13 +101,13 @@ void swap (
 |[işleci\<=](../standard-library/vector-operators.md#op_gt_eq)|Vektör işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında vektör nesnesi eşit veya daha az olur.|  
 |[operator ==](../standard-library/vector-operators.md#op_eq_eq)|Vektör nesnesi işlecinin sol tarafındaki sağ tarafında vektör nesnesine eşitse testleri.|  
 |[operator >](../standard-library/vector-operators.md#op_gt)|Testleri işlecinin sol tarafındaki vektör nesnesi sağ tarafında vektör nesnesi değerinden daha büyük.|  
-|[operator > =](../standard-library/vector-operators.md#op_gt_eq)|Vektör işlecinin sol tarafındaki sağ tarafında vektör nesnesine eşit veya daha büyük bir nesneyse testleri.|  
+|[operator>=](../standard-library/vector-operators.md#op_gt_eq)|Vektör işlecinin sol tarafındaki sağ tarafında vektör nesnesine eşit veya daha büyük bir nesneyse testleri.|  
   
 ### <a name="classes"></a>Sınıflar  
   
 |||  
 |-|-|  
-|[vector sınıfı](../standard-library/vector-class.md)|Doğrusal bir düzenleme içinde belirli bir türde öğelerini düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren dizisi kapsayıcıların bir şablon sınıfı.|  
+|[vector Sınıfı](../standard-library/vector-class.md)|Doğrusal bir düzenleme içinde belirli bir türde öğelerini düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren dizisi kapsayıcıların bir şablon sınıfı.|  
   
 ### <a name="specializations"></a>Uzmanlıklar  
   

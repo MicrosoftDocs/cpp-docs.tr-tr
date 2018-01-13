@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 4cb43b7c3535fd5e09d08e1e488cf9ea3f39631a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ad914a9aa5e7207d1b39e4917a965d755564848
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 **/MP** seçeneği, komut satırında kaynak dosyalarını derlemek için toplam süreyi azaltabilir. **/MP** seçeneği bir veya daha fazla kopyalarını, her ayrı bir işlemde oluşturmak derleyicinin neden olur. Daha sonra bu kopya kaynak dosyaları aynı anda derleyin. Sonuç olarak, kaynak dosyaları derleme için toplam süreyi önemli ölçüde azaltılabilir.  
@@ -131,4 +132,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import yönergesi](../../preprocessor/hash-import-directive-cpp.md)   
- [Komut satırı başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)
+ [Komut Satırı Başvurusu](/visualstudio/msbuild/msbuild-command-line-reference)

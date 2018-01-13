@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cac5ba6baf821e7e9450ec01e7851edf625b8bd0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 91ffb9bd0645cab51e4140697c41e5b715380fe8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="section-editbin"></a>/SECTION (EDITBIN)
 ```  
@@ -68,4 +69,4 @@ ms.lasthandoff: 10/24/2017
  Belirtin `attributes` ve *hizalama* karakter hiçbir boşluk içeren bir dize olarak. Karakterleri büyük küçük harfe duyarlı değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+ [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

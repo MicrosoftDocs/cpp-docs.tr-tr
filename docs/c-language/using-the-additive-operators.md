@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9f2bdbc6a22754587dce3cb2a4c9b2baf12a1a1f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 94e2a63412e4fecd5f358659cc4bf02f90df57ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-additive-operators"></a>Ek İşleçlerini Kullanma
 Aşağıdaki örneklerde, toplama ve çıkarma işleçleri gösterilmekte ve bu bildirimler kullanılmaktadır:  
@@ -47,4 +48,4 @@ j = &x[i] - &x[i-2];
  Bu örnekte, üçüncü `x` öğesinin (`x[i-2]` tarafından verilmiştir) adresi, beşinci `x` öğesinin (`x[i]` tarafından verilmiştir) adresinden çıkarılır. Fark uzunluğuna bölünmüş bir **float**; tamsayı değeri 2 sonucudur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ek işleçleri](../c-language/c-additive-operators.md)
+ [C Ek İşleçleri](../c-language/c-additive-operators.md)

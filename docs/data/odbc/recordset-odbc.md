@@ -24,11 +24,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 668cd4b2f27c2cde18528c0eb2d4d661160c4e4e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 2c5fc714b9c2ff0e1af679edbc3842b86d201fee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-odbc"></a>Kayıt Kümesi (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -85,47 +88,47 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 -   [Kayıt kümesi: Mimari (ODBC)](../../data/odbc/recordset-architecture-odbc.md)  
   
--   [Kayıt kümesi: bir sınıf bir tablo için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)  
+-   [Kayıt Kümesi: Tablo için Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)  
   
--   [Kayıt kümesi: Oluşturma ve kapatma (ODBC) kayıt kümeleri](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)  
+-   [Kayıt Kümesi: Kayıt Kümeleri Oluşturma ve Kapatma (ODBC)](../../data/odbc/recordset-creating-and-closing-recordsets-odbc.md)  
   
--   [Kayıt kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)  
+-   [Kayıt Kümesi: Kaydırma (ODBC)](../../data/odbc/recordset-scrolling-odbc.md)  
   
--   [Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)  
+-   [Kayıt Kümesi: Yer İşaretleri ve Mutlak Konumlar (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)  
   
--   [Kayıt kümesi: Kayıtları filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)  
+-   [Kayıt Kümesi: Kayıtları Filtreleme (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)  
   
--   [Kayıt kümesi: Kayıtları sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)  
+-   [Kayıt Kümesi: Kayıtları Sıralama (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md)  
   
--   [Kayıt kümesi: kayıt kümesi (ODBC) kümesini parametreleştirme](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)  
+-   [Kayıt Kümesi: Bir Kayıt Kümesini Parametreleştirme (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)  
   
 ### <a name="topics-about-the-mechanics-of-modifying-recordsets"></a>Kayıt kümelerini değiştirmenin mekanizması hakkındaki konular  
   
--   [Kayıt kümesi: Ekleme, güncelleştirme ve silme kayıtlarını (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)  
+-   [Kayıt kümesi: Kayıtları Ekleme, Güncelleştirme ve Silme (ODBC)](../../data/odbc/recordset-adding-updating-and-deleting-records-odbc.md)  
   
--   [Kayıt kümesi: Kayıtları kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)  
+-   [Kayıt Kümesi: Kayıtları Kilitleme (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)  
   
--   [Kayıt kümesi: kayıt kümesi (ODBC) yeniden sorgulama](../../data/odbc/recordset-requerying-a-recordset-odbc.md)  
+-   [Kayıt kümesi: Bir Kayıt Kümesinde Yeniden Sorgulama (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md)  
   
 ### <a name="topics-about-somewhat-more-advanced-techniques"></a>Konular hakkında biraz daha gelişmiş teknikler  
   
--   [Kayıt kümesi: bir birleşim gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)  
+-   [Kayıt Kümesi: Birleşim Gerçekleştirme (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md)  
   
--   [Kayıt kümesi: bir sınıf bir önceden tanımlanmış sorgu için bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)  
+-   [Kayıt Kümesi: Önceden Tanımlanmış Sorgu için Bir Sınıf Bildirme (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-predefined-query-odbc.md)  
   
--   [Kayıt kümesi: Veri sütunlarını (ODBC) dinamik olarak bağlama](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)  
+-   [Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)  
   
--   [Kayıt kümesi: Kayıtları toplu (ODBC) yakalama](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)  
+-   [Kayıt Kümesi: Kayıtları Toplu Yakalama (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)  
   
--   [Kayıt kümesi: Büyük veri öğeleri ile çalışma (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)  
+-   [Kayıt kümesi: Büyük Veri Öğeleri ile Çalışma (ODBC)](../../data/odbc/recordset-working-with-large-data-items-odbc.md)  
   
--   [Kayıt kümesi: SUM'ları ve diğer toplama sonuçlarını (ODBC) alma](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)  
+-   [Kayıt Kümesi: SUM'ları ve Diğer Toplama Sonuçlarını Alma (ODBC)](../../data/odbc/recordset-obtaining-sums-and-other-aggregate-results-odbc.md)  
   
 ### <a name="topics-about-how-recordsets-work"></a>Nasıl çalıştığıyla ilgili konular  
   
--   [Kayıt kümesi: Nasıl kümelerinin kayıtları seçme biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)  
+-   [Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Seçme Biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)  
   
--   [Kayıt kümesi: Kayıt kümeleri Güncelleştirmesi (ODBC) nasıl kaydeder.](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)  
+-   [Kayıt Kümesi: Kayıt Kümelerinin Kayıtları Güncelleştirmesi (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)   

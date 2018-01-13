@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dd05385c8753414403116704f15e26bf9486cf14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c09209a323a06f883a54e7ecaec17c55a3bc6205
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="expressions-in-parentheses"></a>Parantezlerdeki İfadeler
 Tür veya kapalı ifadenin değerini değiştirmeden herhangi işleneni parantez içine alın. Örneğin, ifade:  
@@ -49,4 +50,4 @@ Tür veya kapalı ifadenin değerini değiştirmeden herhangi işleneni parantez
  Özel durumlar yan etkileri kaynaklanan içinde ele alınmıştır [yan etkileri](../c-language/side-effects.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C birincil ifadeler](../c-language/c-primary-expressions.md)
+ [C Birincil İfadeler](../c-language/c-primary-expressions.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: f1373686ca960f86ca9e8b2ea4756911906fd66d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 18963860b1f9398343370378140ebee7314690b3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="casting-ccx"></a>Atama (C + +/ CX)
 Dört farklı atama işleçleri uygulamak için Windows çalışma zamanı türleri: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). `safe_cast`ve `static_cast` dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) ayrıca derleme zamanı tür denetimi gerçekleştirir. `dynamic_cast`döndürür `nullptr` türü dönüştürme işlemi başarısız olursa. Ancak `reinterpret_cast` boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz `reinterpret_cast` dönüştürme başarılı olur bilmiyorsanız. Ayrıca, C türü Atamalar, C + kullanmamanızı öneririz +/ CX kod özdeş olduğundan `reinterpret_cast`.  

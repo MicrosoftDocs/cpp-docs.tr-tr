@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7b8604c90c4af46d98c3d9da72899670e86ca154
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c3a013cf584c37f84331a5ab5dfe74eaa213c851
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="understanding-the-helper-function"></a>Yardımcı İşlevini Anlama
 Bağlayıcı tarafından desteklenen Gecikmeli Yükleme Yardımcısı işlevi ne gerçekte DLL çalışma zamanında yükler ' dir. Kendi işlevi yazma ve Delayimp.lib içinde sağlanan yardımcı işlevini kullanmak yerine, programa bağlayarak davranışını özelleştirmek için yardımcı işlevini değiştirebilirsiniz. Bir yardımcı işlevini tüm Gecikmeli yüklenen DLL'ler işlevi görür.  
@@ -62,15 +63,15 @@ Bağlayıcı tarafından desteklenen Gecikmeli Yükleme Yardımcısı işlevi ne
   
  Aşağıdaki konular yardımcı işlevini açıklar:  
   
--   [Gecikmeli DLL değişiklikleri yardımcı işlevini Visual C++ 6.0 yüklemesi](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)  
+-   [Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)  
   
--   [Çağırma kuralları, parametreler ve dönüş türü](../../build/reference/calling-conventions-parameters-and-return-type.md)  
+-   [Çağırma Kuralları, Parametreler ve Dönüş Türü](../../build/reference/calling-conventions-parameters-and-return-type.md)  
   
--   [Yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md)  
+-   [Yapı ve Sabit Tanımları](../../build/reference/structure-and-constant-definitions.md)  
   
--   [Gereken değerleri hesaplama](../../build/reference/calculating-necessary-values.md)  
+-   [Gereken Değerleri Hesaplama](../../build/reference/calculating-necessary-values.md)  
   
--   [Gecikmeli yüklenen DLL'i kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)  
+-   [Gecikmeli Yüklenen DLL'i Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+ [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

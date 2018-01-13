@@ -25,11 +25,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 55c388ddddb5fd774afb6c4e84d6a96a4c38bebe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bb767bb3dbfbde8d73ab81acc444a772a05e7880
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constant-and-global-variable-mappings"></a>Sabit ve Global Değişken Eşlemeleri
 Bu genel metin sabiti, genel değişkeni ve standart türü eşlemeleri TCHAR içinde tanımlanır. H ve olup olmadığına göre değişir sabiti `_UNICODE` veya `_MBCS` programınıza tanımlandı.  
@@ -47,4 +48,4 @@ Bu genel metin sabiti, genel değişkeni ve standart türü eşlemeleri TCHAR i�
  [Veri türü eşlemeleri](../c-runtime-library/data-type-mappings.md)   
  [Rutin eşlemeler](../c-runtime-library/routine-mappings.md)   
  [Örnek genel metin programı](../c-runtime-library/a-sample-generic-text-program.md)   
- [Genel metin eşlemelerini kullanma](../c-runtime-library/using-generic-text-mappings.md)
+ [Genel Metin Eşlemelerini Kullanma](../c-runtime-library/using-generic-text-mappings.md)

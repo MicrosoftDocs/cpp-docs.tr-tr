@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: aa2a55f7d8d5c71bc2c654e99d73bd80d2a11956
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c5f05d02c6c9938f9515b16bbf3bc397d3463de
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="write"></a>write
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_write](../../c-runtime-library/reference/write.md) yerine.

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 82370900fc96c97665cb35351605db86c9ff4faf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6200a8207fdf25b533c7db7e05247797592744e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 **Microsoft özel**  
@@ -53,4 +54,4 @@ void __stdcall f3() throw();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

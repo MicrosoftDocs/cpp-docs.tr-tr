@@ -14,11 +14,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a61ed97ffd3caad6d254d3258711a7b45ad3c0dc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7a9c9572ece0f60971449f2e1b519ec662f9867f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrrefoperator-operator"></a>ComPtrRef::operator!= İşleci
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -76,4 +79,4 @@ bool operator!=(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)   
- [ComPtrRef sınıfı](../windows/comptrref-class.md)
+ [ComPtrRef Sınıfı](../windows/comptrref-class.md)

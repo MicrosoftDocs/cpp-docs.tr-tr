@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 47ecb7f1cdfc692c90cc02d922a93d54fe67c28f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 745c1b0c0bc522f54913d48adf58e7d7783208ce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="environment-variables-for-profile-guided-optimizations"></a>Profil Temelli İyileştirmeler için Ortam Değişkenleri
 Bu bölümde /LTCG:PGI ile oluşturulan görüntüdeki test senaryoları etkileyen ortam değişkenleri hakkında bilgi içerir.  
@@ -33,4 +34,4 @@ Bu bölümde /LTCG:PGI ile oluşturulan görüntüdeki test senaryoları etkiley
 -   [VCPROFILE_PATH](../../build/reference/vcprofile-path.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [El ile profil temelli iyileştirme için araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)
+ [El ile Profil Temelli İyileştirme Araçları](../../build/reference/tools-for-manual-profile-guided-optimization.md)

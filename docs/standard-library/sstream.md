@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 04c6675dd7af1fbbd1202337dda2fcf3570f5be0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3a8fb1e1ee10cb42a2fd75f6eb7f16a7bb359321
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltsstreamgt"></a>&lt;sstream&gt;
 Ayrılmış bir dizi nesnesi içinde depolanan sıraları iostreams işlemlerini destekleyen birkaç şablon sınıfları tanımlar. Bu tür dizileri şablon sınıfın nesnelerini gelen ve giden kolayca dönüştürülür [basic_string](../standard-library/basic-string-class.md).  
@@ -123,7 +124,7 @@ void swap (
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 
 
 

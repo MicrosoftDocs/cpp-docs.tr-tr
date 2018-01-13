@@ -18,11 +18,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cd6b99e59810c08e0e053d93ef0d6ef09700ed3a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7084a0fb74d963532e01623e8e9047768c67f801
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-a-stream-is"></a>Akışın Ne Olduğu
 C gibi C++ yerleşik giriş/çıkış yeteneğine sahip değil. Ancak, tüm C++ Derleyicileri paketiyle iostream sınıfları olarak bilinen bir sistematik, nesne yönelimli g/ç paketlenmiş. İostream sınıfları merkezi kavramı akışıdır. Stream nesnesi bir kaynak ve hedef bayt olarak davranan bir akıllı dosyası olarak düşünebilirsiniz. Bir akışın özellikleri, sınıf ve özelleştirilmiş ekleme ve çıkarma işleçleri tarafından belirlenir.  
@@ -33,5 +34,5 @@ C gibi C++ yerleşik giriş/çıkış yeteneğine sahip değil. Ancak, tüm C++ 
  [Giriş/Çıkış Seçenekleri](../standard-library/input-output-alternatives.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [iostream programlama](../standard-library/iostream-programming.md)
+ [iostream Programlaması](../standard-library/iostream-programming.md)
 

@@ -14,11 +14,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3dff3b8a7041c24f5becedb207b1aa9a9193afbf
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 438d75ad3a36c82c4f9389d4c9b65d677603f6c7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="converting-data-not-supported-by-the-provider"></a>Sağlayıcı Tarafından Desteklenmeyen Veriyi Dönüştürme
 Tüketici sağlayıcı tarafından desteklenmeyen bir veri türü istediğinde, OLE DB sağlayıcı şablonu için kodunu `IRowsetImpl::GetData` veri türüne dönüştürmek için Msdadc.dll çağırır.  

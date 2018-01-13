@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4a4133fe73ff5fdc7d4ad878d436536787e4ab6e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4ff1f046ef69ec451ab3a24a608ccda3ea7c6a71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr değer sınıfı
 Büyüklüğü (32 bit veya 64 bit) platformu için uygun olan bir imzasız işaretçisi temsil eder.  

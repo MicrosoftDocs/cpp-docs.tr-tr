@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0c3b51191c6dd5627bd25a110beb6bff9a9c60f7
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d83580537a81b1c75f44e32e6aa43b2b014c8373
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrrefbaseoperator-iinspectable-operator"></a>ComPtrRefBase::operator IInspectable** İşleci
 
@@ -48,4 +51,4 @@ Bu atama kullanılabilir yalnızca **&#95; &#95; WRL_CLASSIC_COM &#95; &#95;**  
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [ComPtrRefBase sınıfı](../windows/comptrrefbase-class.md)   
-[Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d5b4a2bbb46e906883f3f0c99c84d3b12cc0f104
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ea682b70f4417ef49bfca530af5f12f21699a389
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vcprofilepath"></a>VCPROFILE_PATH
 .PGC dosyaları oluşturmak için bir dizini belirtin.  
@@ -44,4 +45,4 @@ set VCPROFILE_PATH=c:\
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Profil temelli iyileştirmeler için ortam değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)
+ [Profil Temelli İyileştirmeler için Ortam Değişkenleri](../../build/reference/environment-variables-for-profile-guided-optimizations.md)

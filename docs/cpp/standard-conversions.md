@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 954ba431378317a3f9079677f49223a336af5d9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 324fa54362098e2b7ffae6fdf368bf590846f9c1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 C++ dili temel türleri arasında dönüştürmeler tanımlar. İşaretçi, başvuru, dönüştürmelerde de tanımlar ve işaretçi-üye türetilmiş tür. Bu dönüşümleri "standart dönüşümler." olarak adlandırılır (Türleri, standart türler ve türetilmiş türler hakkında daha fazla bilgi için bkz: [türleri](http://msdn.microsoft.com/en-us/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  

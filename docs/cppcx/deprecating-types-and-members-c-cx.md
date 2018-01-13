@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 0fbed1c29feccc6a999545daab6be8bd9ccfc7f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d743d63e46b20ab043173f0f5d353a2331a0e9c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri onaysız kılınmadan (C + +/ CX)
 C + +/ CX, üreticileri ve tüketicileri kullanarak Windows çalışma zamanı tür ve üyelerinin kullanımdan [kullanım dışı](http://msdn.microsoft.com/en-us/8b02ad36-3b5f-4361-888b-e6a99040e57c) özniteliği desteklenir. Bu öznitelik uygulanmış bir API kullanmak, API kullanım dışıdır ve ayrıca kullanmak için alternatif bir API önerir belirten bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleri ve yöntemleri bu özniteliğini uygulayın ve kendi özel ileti sağlayın.  

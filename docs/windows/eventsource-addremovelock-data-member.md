@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1eb3a62429883ce8b2ff39828cdcdff47624f894
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: df0ecba622e64154479015faeba398043993db49
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsourceaddremovelock-data-member"></a>EventSource::addRemoveLock_ Veri Üyesi
 Erişim eşitler [targets_](../windows/eventsource-targets-data-member.md) eklerken dizi, kaldırma veya olay işleyicilerini çağırma.  
@@ -36,4 +39,4 @@ Wrappers::SRWLock addRemoveLock_;
  **Namespace:** Microsoft::WRL
  
  ## <a name="see-also"></a>Ayrıca Bkz.
- [EventSource sınıfı](../windows/eventsource-class.md)
+ [EventSource Sınıfı](../windows/eventsource-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1f014cb2bdf1fa6077dd6922e40e0253b5297c29
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: bd277fecb0bc63d5ee823af98df8aa298b285964
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncstatusinternal-enumeration"></a>AsyncStatusInternal Numaralandırması
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -55,4 +58,4 @@ enum AsyncStatusInternal;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

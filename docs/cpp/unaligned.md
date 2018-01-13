@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1c148803da11ea85857cb77753d2e6af6a6ae22e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: da662cf9cbe17539381766d37255e63d958fb7b1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unaligned"></a>__unaligned
 `__unaligned` değiştiricisiyle bir işaretçiyi bildirdiğinizde, derleyici işaretçinin hizalanmamış verilere yönelik olduğunu varsayar. Sonuç olarak derleyici, Itanium İşlemci Ailesi (IPF) bilgisayarını hedefleyen bir uygulama için hizalanmamış verileri bir kerede bir bayt olarak okuyan kod oluşturur.  
@@ -33,13 +34,13 @@ ms.lasthandoff: 10/24/2017
   
 -   [Hizalama](../cpp/align-cpp.md)  
   
--   [__alignof işleci](../cpp/alignof-operator.md)  
+-   [__alignof İşleci](../cpp/alignof-operator.md)  
   
--   [Paketi](../preprocessor/pack.md)  
+-   [pack](../preprocessor/pack.md)  
   
 -   [/ZP (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md)  
   
--   [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md)  
+-   [Yapı Hizalama Örnekleri](../build/examples-of-structure-alignment.md)  
   
 ## <a name="example"></a>Örnek  
   
@@ -66,4 +67,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

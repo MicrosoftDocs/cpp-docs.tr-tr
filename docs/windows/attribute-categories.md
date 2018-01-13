@@ -14,26 +14,29 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 27e7c2a5e3a8d200ed169425823c1de73d5c46be
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 0fd2c9754269e339d4aabba2a24f3a626afa4b8e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="attribute-categories"></a>Öznitelik Kategorileri
 Öznitelik başvurusu çeşitli Visual c++'ta kullanabileceğiniz öznitelikler açıklanmaktadır.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [COM öznitelikleri](../windows/com-attributes.md)  
+ [COM Öznitelikleri](../windows/com-attributes.md)  
  COM Geliştirme çeşitli alanlar destekleyecek kodu yerleştirir.  
   
  [IDL öznitelikleri](../windows/idl-attributes.md)  
  Oluşturur veya ilişkili .idl dosyayı bir sihirbaz yapısı ve bu dosyayı sözdizimi ile tanıdık olmadan ve kaynak kodu dosyasının içinden değiştirir kod yerleştirir.  
   
- [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md)  
+ [OLE DB Tüketici Öznitelikleri](../windows/ole-db-consumer-attributes.md)  
  Temel kod yerleştirir [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları yürütülürken ve verilere erişim açılış tabloları gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.  
   
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)  
+ [Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
  Çeşitli genel programlama görevleri gerçekleştiren kod yerleştirir.  
   
  [Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  

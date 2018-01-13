@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 271708c8908e6d213047283c431e03726946e059
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2c87c279ae1f45899dfa4525c3bdc65bfa5acc2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="indirection-operator-"></a>Yönlendirme İşleci: *
 ## <a name="syntax"></a>Sözdizimi  
@@ -73,4 +74,4 @@ int main() {
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
  [Address-of işleci: &](../cpp/address-of-operator-amp.md)   
- [Yöneltmesi ve adresi-of işleçleri](../c-language/indirection-and-address-of-operators.md)
+ [İşleçlerin Yöneltmesi ve Adresi](../c-language/indirection-and-address-of-operators.md)

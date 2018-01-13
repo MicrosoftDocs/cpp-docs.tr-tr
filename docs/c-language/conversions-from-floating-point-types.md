@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4974edd25d0fcdd8d990b60459517bb1148c74ae
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a95596b2c9e7312d4581d1a4c641c2466420158
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="conversions-from-floating-point-types"></a>Kayan Nokta Türlerinden Dönüşümler
 A **float** dönüştürülen değer bir **çift** veya `long double`, veya bir **çift** dönüştürülen bir `long double`, değerindeki herhangi bir değişiklik olduğunda. A **çift** dönüştürülen değer bir **float** değeri temsil edilir tam olarak, mümkün olduğunda. Değeri tam olarak gösterilemezse duyarlık kaybolmuş olabilir. Sonucun aralığının dışında olması durumunda tanımlanmamış bir davranıştır. Bkz: [Floating-Point sabitleri sınırlamaları](../c-language/limits-on-floating-point-constants.md) kayan nokta türleri aralığı için.  
@@ -39,28 +40,28 @@ A **float** dönüştürülen değer bir **çift** veya `long double`, veya bir 
   
 |Başlangıç|Bitiş|Yöntem|  
 |----------|--------|------------|  
-|**kayan nokta**|`char`|Dönüştür **uzun**; Dönüştür **uzun** için`char`|  
-|**kayan nokta**|**kısa**|Dönüştür **uzun**; Dönüştür **uzun** için **kısa**|  
-|**kayan nokta**|**uzun**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
-|**kayan nokta**|**İmzasız short**|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **kısa**|  
-|**kayan nokta**|`unsigned long`|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **uzun**|  
-|**kayan nokta**|**çift**|İç gösterimi değiştirme|  
-|**kayan nokta**|`long double`|İç gösterimi değiştirme|  
-|**çift**|`char`|Dönüştür **float**; Dönüştür **float** için`char`|  
-|**çift**|**kısa**|Dönüştür **float**; Dönüştür **float** için **kısa**|  
-|**çift**|**uzun**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
-|**çift**|**İmzasız short**|Dönüştür **uzun**; Dönüştür **uzun** için **kısa imzalanmamış**|  
-|**çift**|`unsigned long`|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **uzun**|  
-|**çift**|**kayan nokta**|Olarak temsil eden bir **float**. Varsa **çift** değeri temsil edilemez tam olarak **float**, duyarlık kaybına oluşur. Değer olarak gösterilemeyecek kadar büyük olursa **float**, sonuç tanımlanmadı.|  
+|**float**|`char`|Dönüştür **uzun**; Dönüştür **uzun** için`char`|  
+|**float**|**short**|Dönüştür **uzun**; Dönüştür **uzun** için **kısa**|  
+|**float**|**long**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
+|**float**|**İmzasız short**|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **kısa**|  
+|**float**|`unsigned long`|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **uzun**|  
+|**float**|**double**|İç gösterimi değiştirme|  
+|**float**|`long double`|İç gösterimi değiştirme|  
+|**double**|`char`|Dönüştür **float**; Dönüştür **float** için`char`|  
+|**double**|**short**|Dönüştür **float**; Dönüştür **float** için **kısa**|  
+|**double**|**long**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
+|**double**|**İmzasız short**|Dönüştür **uzun**; Dönüştür **uzun** için **kısa imzalanmamış**|  
+|**double**|`unsigned long`|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **uzun**|  
+|**double**|**float**|Olarak temsil eden bir **float**. Varsa **çift** değeri temsil edilemez tam olarak **float**, duyarlık kaybına oluşur. Değer olarak gösterilemeyecek kadar büyük olursa **float**, sonuç tanımlanmadı.|  
 |`long double`|`char`|Dönüştür **float**; Dönüştür **float** için`char`|  
-|`long double`|**kısa**|Dönüştür **float**; Dönüştür **float** için **kısa**|  
-|`long double`|**uzun**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
+|`long double`|**short**|Dönüştür **float**; Dönüştür **float** için **kısa**|  
+|`long double`|**long**|Ondalık noktada keser. Sonuç olarak gösterilemeyecek kadar büyük olursa **uzun**, sonuç tanımlanmadı.|  
 |`long double`|**İmzasız short**|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **kısa**|  
 |`long double`|`unsigned long`|Dönüştür **uzun**; Dönüştür **uzun** için `unsigned` **uzun**|  
-|`long double`|**kayan nokta**|Olarak temsil eden bir **float**. Varsa **çift** değeri temsil edilemez tam olarak **float**, duyarlık kaybına oluşur. Değer olarak gösterilemeyecek kadar büyük olursa **float**, sonuç tanımlanmadı.|  
-|`long double`|**çift**|**Uzun çift** değeri olarak değerlendirilir **çift**.|  
+|`long double`|**float**|Olarak temsil eden bir **float**. Varsa **çift** değeri temsil edilemez tam olarak **float**, duyarlık kaybına oluşur. Değer olarak gösterilemeyecek kadar büyük olursa **float**, sonuç tanımlanmadı.|  
+|`long double`|**double**|**Uzun çift** değeri olarak değerlendirilir **çift**.|  
   
  Gelen dönüşümleri **float**, **çift**, veya `long double` değerler `unsigned long` dönüştürülen değerin en büyük pozitif büyükse doğru olmayan **uzun**değeri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Atama dönüşümleri](../c-language/assignment-conversions.md)
+ [Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

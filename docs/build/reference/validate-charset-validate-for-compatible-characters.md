@@ -19,11 +19,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dc33c39534e31212d18cd97cf355952e8f9ddf3c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7694eb94fe1b50d1892dab399b523a5b0e6deef7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/Validate-Charset (uyumlu karakterler doğrula)
 Kaynak dosya metin yalnızca gösterilebilir karakter içerdiğini doğrular UTF-8 olarak.  

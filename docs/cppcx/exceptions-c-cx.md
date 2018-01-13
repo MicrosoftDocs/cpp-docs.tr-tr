@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b9b7a5af4816ff638918ccf7478465fe120e8e67
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f578271823b0253dfa3defcb126bec251749a2dc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exceptions-ccx"></a>Özel durumlar (C + +/ CX)
 

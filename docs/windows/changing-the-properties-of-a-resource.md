@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d4f45fadc7507269939577b8d7e5df6b7d721e9a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a79c4bfa17abacaa68f5c6be608ff911505d9912
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-the-properties-of-a-resource"></a>Kaynağın Özelliklerini Değiştirme
 ### <a name="to-edit-the-properties-of-a-resource"></a>Kaynağın özelliklerini düzenlemek için  
@@ -44,4 +47,4 @@ ms.lasthandoff: 10/24/2017
  Yok.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

@@ -29,11 +29,12 @@ helpviewer_keywords:
 - std::recursive_timed_mutex [C++], try_lock_for
 - std::recursive_timed_mutex [C++], try_lock_until
 - std::recursive_timed_mutex [C++], unlock
-ms.openlocfilehash: 0a47e7794dd38169b99711bbc1898083a1c8c149
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9ed5930eca492d6793ab08c39b6af8b45a9124c2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recursivetimedmutex-class"></a>recursive_timed_mutex Sınıfı
 Temsil eden bir *mutex türü zaman aşımına*. Bu tür nesneler, zaman sınırlı bir program içinden engelleme kullanarak karşılıklı dışlama zorlamak için kullanılır. Nesne türü aksine [timed_mutex](../standard-library/timed-mutex-class.md), kilitleme yöntemleri çağırma etkisini `recursive_timed_mutex` nesneleri iyi tanımlanmış.  
@@ -57,7 +58,7 @@ class recursive_timed_mutex;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[kilitleme](#lock)|İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.|  
+|[lock](#lock)|İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.|  
 |[try_lock](#try_lock)|Sahipliğini almayı denediğinde `mutex` engelleme olmadan.|  
 |[try_lock_for](#try_lock_for)|Sahipliğini almayı denediğinde `mutex` belirtilen zaman aralığı.|  
 |[try_lock_until](#try_lock_until)|Sahipliğini almayı denediğinde `mutex` belirtilen süre kadar.|  

@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e7b7d3af084bad27660d8451c9cb09015731aec3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ef2f51d2f53b05ae651e811c1d53ceccdab7ad5c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsourcegetsize-method"></a>EventSource::GetSize Metodu
 Geçerli EventSource nesneyle ilişkili olay işleyicileri sayısını alır.  
@@ -39,4 +42,4 @@ size_t GetSize() const;
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [EventSource sınıfı](../windows/eventsource-class.md)
+ [EventSource Sınıfı](../windows/eventsource-class.md)

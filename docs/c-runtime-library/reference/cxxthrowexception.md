@@ -32,11 +32,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5cfe894dc20e77bf34067c16fddd74432c522bda
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d1c66f35a61a1b3f8577ac7a1432423906f091ab
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cxxthrowexception"></a>_CxxThrowException
 Özel durum kaydı oluşturur ve özel durum işleme başlayabilmesi için çalışma zamanı ortamı çağırır.  
@@ -64,4 +65,4 @@ extern "C" void __stdcall _CxxThrowException(
  **Kaynak:** Throw.cpp  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+ [Alfabetik İşlev Başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)

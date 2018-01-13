@@ -31,11 +31,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0adde41ca70fa5fdc457772f6023b02f9550e2ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c585afee6bbea3d0cc48b696bc005b9a8d6c7992
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="path-field-limits"></a>Yol Alanı Sınırları
 ## <a name="syntax"></a>Sözdizimi  
@@ -59,4 +60,4 @@ ms.lasthandoff: 10/24/2017
 >  C çalışma zamanı yol uzunluğu en çok 32768 karakter uzunluğu destekler, ancak bu uzun yolları destekleyecek şekilde özellikle dosya sistemi, işletim sistemi kadar olan. Alanların toplamını aşmamanız gereken `_MAX_PATH` için tam geriye dönük uyumluluk FAT32 dosya sistemleri. [!INCLUDE[win2kfamily](../c-runtime-library/includes/win2kfamily_md.md)], [!INCLUDE[WinXpFamily](../atl/reference/includes/winxpfamily_md.md)], [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)], ve Windows Vista NTFS dosya sistemi destekler yolları 32768 karakter kadar uzunlukta ancak yalnızca Unicode API'leri kullanırken. Yolun karakterden uzun yol adları kullanırken, önek \\ \\? \ ve C çalışma zamanı işlevleri Unicode sürümlerini kullanın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

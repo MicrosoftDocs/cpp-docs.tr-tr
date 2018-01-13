@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6f7b09ed7c4b52b45efee0708f65d8d2f3e24cd6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 036da9664c7b61e55e1322f12de3d9c8f72c3f53
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlev&gt;
 Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *işlev nesneleri*— olarak da bilinen functors — ve bunların bağlayıcıları. Nesneyi tanımlayan bir türde bir işlev nesnesidir `operator()`. İşlev nesnesi bir işlev işaretçisi olabilir, ancak nesne daha tipik olarak, bir işlev çağrısı sırasında erişilebilir ek bilgi depolamak için kullanılır.  
@@ -124,7 +125,7 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |[Not1](../standard-library/functional-functions.md#not1)|Birli koşul tamamlama döndürür.|  
 |[not2](../standard-library/functional-functions.md#not2)|İkili karşılaştırma tamamlama döndürür.|  
 |[ptr_fun](../standard-library/functional-functions.md#ptr_fun)|Bir yardımcı şablon işlevi birli ve ikili uyarlanabilir işlevleri, işaretçileri, sırasıyla dönüştürme birli ve ikili işlevi için kullanılır.|  
-|[Ref](../standard-library/functional-functions.md#ref)|Oluşturan bir `reference_wrapper` gelen bir bağımsız değişken.|  
+|[ref](../standard-library/functional-functions.md#ref)|Oluşturan bir `reference_wrapper` gelen bir bağımsız değişken.|  
 |[değiştirme](../standard-library/functional-functions.md#swap)|İki değiştirir `function` nesneleri.|  
   
 ### <a name="structs"></a>Yapılar  
@@ -160,7 +161,7 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |||  
 |-|-|  
 |[operator ==](../standard-library/functional-operators.md#op_eq_eq)|Eşitlik karşılaştırması aranabilir nesnelerin izin vermez.|  
-|[operator! =](../standard-library/functional-operators.md#op_neq)|Eşitsizlik karşılaştırma aranabilir nesnelerin izin vermez.|  
+|[operator!=](../standard-library/functional-operators.md#op_neq)|Eşitsizlik karşılaştırma aranabilir nesnelerin izin vermez.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

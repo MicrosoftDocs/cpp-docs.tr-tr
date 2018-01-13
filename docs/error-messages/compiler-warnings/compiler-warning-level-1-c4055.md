@@ -1,5 +1,3 @@
----
----
 # <a name="compiler-warning-level-1-c4055"></a>Derleyici Uyarısı (düzey 1) C4055  
   
 'dönüştürme': veri işaretçi 'type1' işlev işaretçisi 'type2' den  

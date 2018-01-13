@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5b1581fe5a952d1ea8e78f29e606af5ac148f3b7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6860198b9acce372b710e819a17f534e793f1ead
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-relational-and-equality-operators"></a>C İlişkisel ve Eşitlik İşleçleri
 Belirtilen ilişki geçerliliğini sınamak için ikinci işlenen kendi ilk işlenen ikili ilişkisel ve eşitlik işleçleri karşılaştırın. Sınanan ilişki true ve 0 ise false ise ilişkisel bir ifadenin sonucu 1'dir. Sonuç türü olan `int`.  
@@ -106,4 +107,4 @@ enum color { red, white, green } col;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İlişkisel işleçler: \<, >, \<= ve > =](../cpp/relational-operators-equal-and-equal.md)   
- [Eşitlik işleçleri: == ve! =](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)
+ [Eşitlik İşleçleri: == ve !=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)

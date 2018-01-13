@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c6ecdc6490b3d5792737eed65661ef7d53c54f14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b8caa2be1528c26cf374637f3d0357847721de9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unwind-procedure"></a>Bırakma Yordamı
 Geriye doğru izleme kod dizisi azalan düzende sıralanır. Özel durum oluştuğunda tam bağlamı bir bağlam kaydında işletim sistemi tarafından depolanır. Özel durum dağıtma mantığı sonra çağrılan bir özel durum işleyicisi bulmak için aşağıdaki adımları, sürekli olarak yürütür.  
@@ -43,4 +44,4 @@ Geriye doğru izleme kod dizisi azalan düzende sıralanır. Özel durum oluştu
  En küçük veri bırakma 8 bayt'tır. Bu, yalnızca 128 bayt veya daha az yığın tahsis ve büyük olasılıkla bir kalıcı kayıt kaydedilen bir işlevi temsil eder. Bu ayrıca bir zincirleme boyutudur hiçbir bırakma kodlarıyla sıfır uzunluklu giriş için bilgi yapısı bırakma.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum (x64) işleme](../build/exception-handling-x64.md)
+ [Özel Durum İşleme (x64)](../build/exception-handling-x64.md)

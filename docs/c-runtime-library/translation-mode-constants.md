@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8f5224064158dcbcb277524af21a0059a324fbc5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d1153251c08d626d17e87b5cc58dbd9360a21309
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="translation-mode-constants"></a>Çeviri Modu Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -64,4 +65,4 @@ ms.lasthandoff: 10/24/2017
  [_pipe](../c-runtime-library/reference/pipe.md)   
  [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)   
  [_setmode](../c-runtime-library/reference/setmode.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

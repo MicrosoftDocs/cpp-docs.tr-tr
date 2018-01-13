@@ -28,11 +28,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a7040ac0093471be657c2ed7a064719abcd0230
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 35f9a3e907b72b4b8cf8e673e771832ba3fc0527
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reserved-words"></a>Ayrılmış Sözcükler
 Aşağıdaki sözcükler bağlayıcı tarafından ayrılmış. Bu adları bağımsız değişken olarak kullanılan [modül tanımlama deyimleri](../../build/reference/module-definition-dot-def-files.md) yalnızca ad çift tırnak işaretleri içine alınırsa ("").  
@@ -52,8 +53,8 @@ Aşağıdaki sözcükler bağlayıcı tarafından ayrılmış. Bu adları bağı
 |**EXECUTEONLY**|**NODATA**1|**PARÇALARI**|  
 |**EXECUTEREAD**|**NOIOPL**1|**PAYLAŞILAN**|  
 |**EXETYPE**|**NONAME**|**TEK**|  
-|**DIŞARI AKTARMA**|**UYUMSUZ**1|**STACKSIZE**|  
-|**SABİT**1|**NONDISCARDABLE**|**SAPLAMA**|  
+|**EXPORTS**|**UYUMSUZ**1|**STACKSIZE**|  
+|**SABİT**1|**NONDISCARDABLE**|**STUB**|  
 |**İŞLEVLER**2|**YOK**|**SÜRÜM**|  
 |**HEAPSIZE**|**PAYLAŞILMAYAN**|**WINDOWAPI**|  
 |**İÇERİ AKTARMALAR**|**NOTWINDOWCOMPAT**1|**WINDOWCOMPAT**|  
@@ -66,4 +67,4 @@ Aşağıdaki sözcükler bağlayıcı tarafından ayrılmış. Bu adları bağı
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)
+ [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

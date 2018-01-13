@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e33492c0cdab2429f1d8ccfc0ad50247cd457a9a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 40afc6872ac04522c4c42f0a0d890b791ac03d53
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="writing-an-exception-filter"></a>Özel Durum Filtresi Yazma
 Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Kullanabileceğiniz özel durumu ve dönmeden işlemek için özel durum işleyici kodu kullanmak yerine, *filtre* sorunu giderip temizleyin ve ardından, -1 döndürerek normal akıştaki yığın silmeden sürdürmek için.  
@@ -87,4 +88,4 @@ __except( nCode = GetExceptionCode(), nCode == STATUS_INTEGER_OVERFLOW )
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bir özel durum işleyicisi yazma](../cpp/writing-an-exception-handler.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+ [Yapılandırılmış Özel Durum İşleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

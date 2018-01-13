@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 89be581f6e10ce5c3c7b0f92c37d165affb28844
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d1f9c9a09652eb76511c7d059cc70eae3fb99ffd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="break-statement-c"></a>break Deyimi (C++)
 `break` Deyimi en yakın kapsayan, yürütme sona erdirir döngü ya da göründüğü koşullu ifade. Denetim, varsa, deyimin sonunu takip eden deyime geçer.  
@@ -158,4 +159,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atlama deyimleri](../cpp/jump-statements-cpp.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
- [continue deyimi](../cpp/continue-statement-cpp.md)
+ [continue Deyimi](../cpp/continue-statement-cpp.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b59ad181ea39382a4f79b1af5e6f1d1dbc1ded62
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b26a1a17952693be9db6a80649aad2c40227d53e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Açıkça Kaldırma
 [/Delay](../../build/reference/delay-delay-load-import-settings.md): unload bağlayıcı seçeneği gecikme yüklü olduğu bir DLL dosyası olanak tanır. Varsayılan olarak, kodunuzu DLL bellekten kaldırıldığında, (/ DELAY: Unload kullanarak ve **__FUnloadDelayLoadedDLL2**), alma adresi tablosunda (IAT) Gecikmeli yüklenen içeri aktarmalar kalır. Ancak, / DELAY: Unload bağlayıcı komut satırında kullanırsanız, yardımcı işlevini IAT özgün formuna sıfırlama DLL açık kaldırılması destekler; Şimdi geçersiz işaretçileri üzerine yazılır. Bir alandır IAT [ImgDelayDescr](../../build/reference/calling-conventions-parameters-and-return-type.md) içeren bir kopyasını özgün IAT adresini (varsa).  
@@ -66,4 +67,4 @@ int main()
  Bkz: [Delay-Loaded DLL'i kaldırma](../../build/reference/unloading-a-delay-loaded-dll.md) daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+ [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

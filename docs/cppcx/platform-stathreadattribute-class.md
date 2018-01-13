@@ -20,11 +20,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 54e4b7621879252b14fa0fe71c837439da147df5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b1c2b8c38d672b6bd3ecd0fcafb54a9b6e723202
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformstathreadattribute-class"></a>Platform::STAThreadAttribute sınıfı
 Bir uygulama için iş parçacığı modelini tek iş parçacıklı (STA) olduğunu gösterir.  

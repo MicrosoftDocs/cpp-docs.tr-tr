@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c91c3834b5a4647f7c9cd41820dc04e5597277f0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aada86ec63ccade17577f5410ced62cb4d5cf03f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="structure-declarations"></a>Yapı Bildirimleri
 Bir "yapı bildirimi" bir tür adları ve bir dizi farklı olabilir ("üye" veya "alanlar" yapısı denir) değişken değerleri belirtir. Bir "etiketi," isteğe bağlı bir tanımlayıcısından yapısı türünün adı sağlar ve bir yapı türüne sonraki başvurular kullanılabilir. Bu yapı türünde bir değişken, türü tarafından tanımlanan tüm dizisi içerir. C yapılarda diğer dillerde "kayıtlar" olarak bilinen türleri benzerdir.  
@@ -35,7 +36,7 @@ Bir "yapı bildirimi" bir tür adları ve bir dizi farklı olabilir ("üye" veya
  *struct veya union tanımlayıcısı*  
   
  *struct veya union*:  
- **yapısı**  
+ **struct**  
   
  **birleşim**  
   
@@ -190,4 +191,4 @@ p_s->b = 100;  /* A reference to a field in the s structure */
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
+ [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

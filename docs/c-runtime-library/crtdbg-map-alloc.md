@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a2b61b315baa337675147ded1232a943e82b24ec
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f50dff4acd216521c8ad67e13f42ecca4f783e37
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtdbgmapalloc"></a>_CRTDBG_MAP_ALLOC
 Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulamanın hata ayıklama sürümü tanımlanır, heap işlevleri temel sürümü, hata ayıklama sürümlerine doğrudan eşlendi. Bayrak Crtdbg.h içinde eşleme yapmak için kullanılır. Bu bayrak yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlandı.  
@@ -32,4 +33,4 @@ Zaman **_CRTDBG_MAP_ALLOC** bayrağı, bir uygulamanın hata ayıklama sürümü
  Hata ayıklama sürümü yığın işlevi temel sürümü ile kullanma hakkında daha fazla bilgi için bkz: [hata ayıklama sürümü karşı temel sürümünü kullanarak](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim bayrakları](../c-runtime-library/control-flags.md)
+ [Denetim Bayrakları](../c-runtime-library/control-flags.md)

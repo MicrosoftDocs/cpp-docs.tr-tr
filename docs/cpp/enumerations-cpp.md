@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d210695f45fd4da8baacdc8abe06d9a5058d4f5d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96b1b29baaa779fda1e1f076daf3d8bd9335403b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 Numaralandırma numaralandırıcılar bilinen adlandırılmış tamsayı sabitleri kümesi içeren bir kullanıcı tanımlı bir türüdür.  
@@ -191,4 +192,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

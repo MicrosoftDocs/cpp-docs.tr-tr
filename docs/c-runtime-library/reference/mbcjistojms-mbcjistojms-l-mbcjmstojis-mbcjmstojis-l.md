@@ -49,11 +49,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3c6a0838d6fecccbc5d4e5ee00acdc5691d3b305
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ed3aada11b5020c285ce9fb867f08b288055581
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbcjistojms-mbcjistojmsl-mbcjmstojis-mbcjmstojisl"></a>_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 Japonya endüstri standardı (JIS) ve Japonya Microsoft (JMS) karakter arasında dönüştürür.  
@@ -114,4 +115,4 @@ unsigned int _mbcjmstojis_l(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [_ismbb rutinleri](../../c-runtime-library/ismbb-routines.md)
+ [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8e310a56fa35f2135cf2c8b67dfe4c4c89581242
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a7328cae0eca8caf397f1ec5c9b381d7bc8d5d0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clock-function-c"></a>clock İşlevi (C)
 **ANSI 4.12.2.1** dönem için `clock` işlevi  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  `clock` işlevinin dönemi, C programı yürütmeye başladığında başlar (0 değeri ile). 1'de ölçülen kez döndürür /**CLOCKS_PER_SEC** (hangi eşittir 1/1000 için Microsoft C).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

@@ -35,11 +35,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: edaebfb8fb3e4ec6d9b4fc0aa92253057f0aa6c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3885bfb44745d815e50012d0447060b6ff2aa985
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reallocdbg"></a>_realloc_dbg
 Belirtilen bir yığınındaki bellek bloğu taşıma ve/veya blok (yalnızca hata ayıklama sürümü) yeniden boyutlandırma yeniden ayırır.  

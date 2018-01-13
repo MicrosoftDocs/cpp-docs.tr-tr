@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ae6f7ca131e30c179d556e225600243500ae9379
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0e16711a61b3c8060396ce10aa2061600903499e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-abstract-declarators"></a>C Soyut Bildirimciler
 Soyut bildirimci, tanımlayıcısı olmayan, bir veya daha fazla işaretçiden, diziden veya işlev değiştiricisinden oluşan bir bildirimcidir. İşaretçi değiştiricisi (**\***) her zaman bir bildirimcisi; tanımlayıcısı önündeki dizi (**[]**) ve işlevi ( **()** ) değiştiricileri tanımlayıcı izleyin. Bu bilgiyle; tanımlayıcının, soyut bildirimcinin neresinde görüneceğini belirleyebilir ve ona göre bildiriciyi yorumlayabilirsiniz. Bkz: [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md) karmaşık bildirimcileri örnekleri ve ek bilgi için. Bildirimciler basitleştirmek için genellikle `typedef` kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
@@ -55,4 +56,4 @@ int (*const []) ( unsigned int, ... )
 >  Boş parantez kümesinden oluşan soyut bildirimcisi **()**, belirsiz olduğundan izin verilmiyor. İma edilen tanımlayıcının parantez içinde mi (bu durumda, değiştirilmemiş bir türdür) yoksa parantezlerden önce mi (bu durumda, bir işlev türüdür) olduğunu belirlemek mümkün değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
+ [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

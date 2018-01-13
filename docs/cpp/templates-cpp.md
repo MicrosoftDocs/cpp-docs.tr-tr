@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32c65fc68bc9e7be2770e951de466e48f482af90
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 935bee8447ad0d49ae965fb92538d2e260ec68ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="templates-c"></a>Şablonlar (C++)
 C++'ta genel programlama için temel şablonlarıdır. Kesin türü belirtilmiş bir dil C++ açıkça Programcı tarafından bildirilen ya da derleyici tarafından anlaşılan belirli bir türün tüm değişkenler gerektirir. Ancak, çok sayıda veri yapılarını ve algoritmaları üzerinde işletim ne tür aynı arayın. Şablonları etkinleştirme, bir sınıf ya da işlevin operations tanımlamak ve kullanıcının hangi somut belirtmesine izin vermek için bu işlemler türleri üzerinde çalışması gerekir.  

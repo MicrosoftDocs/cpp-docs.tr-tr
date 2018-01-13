@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 687a5ad1327e1a36a2b854c8a3fcb03d8f45e104
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4e6e6dff87e447a3885906130b6a08286643d6a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="side-effects"></a>Yan Etkiler
 Belirli bir sıraya değerlendirme dil garanti sırasında bir ifade Değerlendirme sırasını belirli uygulama tarafından dışında tanımlanır (kısmında özetlendiği gibi [öncelik ve değerlendirme, sipariş](../c-language/precedence-and-order-of-evaluation.md)). Örneğin, aşağıdaki işlev çağrıları yan etkileri oluşur:  

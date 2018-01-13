@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13d292cebbb8aa3aa6a65fbc41b8b38934732b5f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 18c2b89e8c09ca7ddb6ba7f2cc02c9b400265a35
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="for-statement-c"></a>for Deyimi (C)
 **İçin** deyimi bir deyim yineleyin veya belirtilen sayıda bileşik deyim olanak sağlar. Gövdesi bir **için** deyimi, isteğe bağlı bir koşul yanlış olana kadar sıfır veya daha fazla kez yürütüldüğünde. İsteğe bağlı ifade içinde kullanabilir **için** başlatmak ve sırasında değerlerini değiştirmek için deyimi **için** deyiminin yürütme.  
@@ -85,4 +86,4 @@ Number of tabs: 2
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimleri](../c-language/statements-c.md)
+ [Deyimler](../c-language/statements-c.md)

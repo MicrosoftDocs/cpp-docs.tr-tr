@@ -25,11 +25,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7aad1856f28a1d76b53b983e63f36cf5fd4a7cfe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 96f8c24736309ef1030664ee0fd466537d739496
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 `CComMultiThreadModel`iş parçacığı yöntemleri artırma ve azaltma için bir değişkenin değerini sağlar.  

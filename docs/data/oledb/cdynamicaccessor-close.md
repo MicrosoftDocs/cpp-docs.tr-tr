@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58ea3120389f7d4ddd3046a27fbd560e83267d4e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 7a7bf70a00ee989364f83564286cddb27e5b4cec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicaccessorclose"></a>CDynamicAccessor::Close
 Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) sınıfında arabirim işaretçisi.  
@@ -40,4 +43,4 @@ void Close( ) throw( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)
+ [CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)

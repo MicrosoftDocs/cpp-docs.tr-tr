@@ -43,11 +43,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 975a940760678ac06b7de1e7623b717860031da8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2cc04c398bc9be13664a91e59a36f7e39fade6db
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="casinh-casinhf-casinhl"></a>casinh, casinhf, casinhl
 Dal keser aralığı dışında ile karmaşık bir sayının ters hiperbolik sinüs alır [-i + ı] sanal ekseni boyunca.  

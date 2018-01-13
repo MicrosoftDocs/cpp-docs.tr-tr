@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2c88f22506a2f65c3385cc7d0851954f1115fb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fd8c95775eb8db2256d35715cc117a9bb0fab22e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modules-button"></a>Modüller Düğmesi
 Tıklatın **modülleri** ortaya çıkarmak için düğmesi **hata aramak için ek modüller** iletişim. İstenen EXE ya da DLL adını düzenleme kutusuna girin ve tıklatın **Ekle** hata iletisi aramanızda modülleri eklenecek. Bir modül vurgulayarak ve tıklayarak listeden kaldırmak **kaldırmak** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Değer düzenleme denetimi](../../build/reference/value-edit-control.md)
+ [Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)

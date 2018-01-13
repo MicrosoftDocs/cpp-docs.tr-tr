@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9d4f578ed7786ff8ebbc58e452b8f1847a299949
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7f31ac04ef372e38f4d7c6d86631dd833deaafa4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary"></a>/SUMMARY
 ```  
@@ -35,4 +36,4 @@ ms.lasthandoff: 10/24/2017
  Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)
+ [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

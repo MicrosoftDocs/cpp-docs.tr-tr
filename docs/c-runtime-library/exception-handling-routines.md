@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d12410aba4f64f54cbbfcc123d842171441192a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 95ecbc69dd9cbd86bd7891c79f115442f659ff94
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling-routines"></a>Özel Durum İşleme Rutinleri
 Program yürütülmesi sırasında beklenmeyen olaylarından kurtarmak için C++ özel durum işleme işlevlerini kullanın.  
@@ -35,4 +36,4 @@ Program yürütülmesi sırasında beklenmeyen olaylarından kurtarmak için C++
 |[beklenmeyen](../c-runtime-library/reference/unexpected-crt.md)|Çağrıları `terminate` veya işlev kullanarak belirtin `set_unexpected`. `unexpected` İşlevi, geçerli Microsoft C++ özel durum işleme uygulamasında kullanılamıyor|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

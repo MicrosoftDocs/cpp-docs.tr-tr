@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 622bf0194cbf5c3207d161edefcf7da23238fb85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33ec97d5f29398e9e20be9609573eecf33894948
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling-in-visual-c"></a>Visual C++'da Özel Durum İşleme
 Bir özel durum denetimi dışında kalan program kendi normal yürütme yol boyunca devam etmesini engelleyen büyük olasılıkla programın, bir hata durumudur. Nesne oluşturma, dosya giriş/çıkış ve diğer modüllerden yapılan işlev çağrıları gibi bazı işlemleri bile programınız düzgün çalışmasını özel durumların tüm olası kaynakları olur. Sağlam kod düşünmektedir ve özel durumları işler.  

@@ -34,11 +34,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 96e6c49f00c2b9a217d4a9cacc0ab5ba3a393698
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ec79418425202c2383933d4e718a0f5c14695847
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dup-dup2"></a>dup, dup2
 Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md) yerine.

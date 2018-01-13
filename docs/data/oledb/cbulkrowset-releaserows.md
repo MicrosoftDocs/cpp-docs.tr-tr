@@ -23,11 +23,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c26d8ccea242b5afceaca5a1216f4194c9590d41
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 8bf0f048d38b8b73bdd69f1a862336220fecaa47
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbulkrowsetreleaserows"></a>CBulkRowset::ReleaseRows
 Çağrıları [IRowset::ReleaseRows](https://msdn.microsoft.com/en-us/library/ms719771.aspx) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısı düşürmek için.  

@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fcb72c4e001a087b49967c64b10974ee41cc49ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 02a6cc8ffcb5748544191673de8f07e87449e806
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="definitions-and-conventions"></a>Tanımlar ve Kurallar
 Terminal sözdizimi tanımında noktalarıdır. Herhangi bir çözüm mümkündür. Terminal ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.  
@@ -47,4 +48,4 @@ expression <SUB>opt</SUB> }
  İki nokta (**:**) bir nonterminal aşağıdaki tanımına tanıtır. Alternatif tanımları listelenen ayrı satırlara dışında sözcüklerle başında zaman "birini."  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md)
+ [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)

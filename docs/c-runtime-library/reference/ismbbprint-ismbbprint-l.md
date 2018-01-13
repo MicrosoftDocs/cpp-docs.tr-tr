@@ -39,11 +39,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 451128fda38e5733cc9650e4783964d8c8aebfdc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2af7888be70a95aed35190b942e55a8a8247abba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismbbprint-ismbbprintl"></a>_ismbbprint, _ismbbprint_l
 Belirtilen birden çok baytlı karakter yazdırma karakter olup olmadığını belirler.  
@@ -87,4 +88,4 @@ isprint || _ismbbkprint
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)   
- [_ismbb rutinleri](../../c-runtime-library/ismbb-routines.md)
+ [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)

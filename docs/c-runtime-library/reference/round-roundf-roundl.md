@@ -38,11 +38,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b1f4532b8f37b5223aa42e7055ba9edf62339925
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0209e85b6846136a97a2c9fece459b6dc1ec4513
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 Kayan noktalı bir sayıyı en yakın tamsayıya yuvarlar.  
@@ -133,4 +134,4 @@ roundl(-2.500000) is -3
  [lrint, lrintf, lrintl, llrint, llrintf, llrintl](http://msdn.microsoft.com/en-us/312fd869-a9c0-4107-bb23-ab8299d04385)   
  [lround, lroundf, lroundl, llround, llroundf, llroundl](../../c-runtime-library/reference/lround-lroundf-lroundl-llround-llroundf-llroundl.md)   
  [nearbyint, nearbyintf, nearbyintl](http://msdn.microsoft.com/en-us/15111e73-331d-41d1-81b7-3e10df894848)   
- [Yazdır, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)
+ [rint, rintf, rintl](../../c-runtime-library/reference/rint-rintf-rintl.md)

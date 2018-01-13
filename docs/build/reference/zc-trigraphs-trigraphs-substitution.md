@@ -19,11 +19,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 56068f6cb630ac12b9c8417940411616cec65c69
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 739e772c87c937a552e07a32fa5bb80b1a1e2508
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zctrigraphs-trigraphs-substitution"></a>/Zc:trigraphs (Trigrafları Değiştirme)
 Zaman **/ZC: trigraphs** belirtilirse, derleyici, karşılık gelen bir noktalama karakteri kullanarak trigrafı karakter dizisi yerini alır. Trigrafı değiştirmeyi devre dışı bırakmak için şunu belirtin **/Zc:trigraphs-**. Varsayılan olarak, **/ZC: trigraphs** kapalıdır.  
@@ -41,4 +42,4 @@ Zaman **/ZC: trigraphs** belirtilirse, derleyici, karşılık gelen bir noktalam
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)   
- [Trigrafları](../../c-language/trigraphs.md)
+ [Trigraflar](../../c-language/trigraphs.md)

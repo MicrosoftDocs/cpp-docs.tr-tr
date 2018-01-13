@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9b4d4ad6a2fbfbb30fe5f0b465c8bb70753cd701
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: de370d8dbff1f1340539adc825f7f5316c59a468
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inline-functions-c"></a>Satır İçi İşlevler (C++)
 Sınıf bildirimi gövdesinde tanımlanan bir işlev, satır içi işlevdir.  
@@ -160,7 +161,7 @@ private:
   
 -   [Satır içi sınıfı üye işlevleri](../cpp/inline-functions-cpp.md)  
   
--   [Dllexport ve dllimport ile satır için C++ işlevlerini tanımlama](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)  
+-   [dllexport ve dllimport ile Satır İçi C++ İşlevlerini Tanımlama](../cpp/defining-inline-cpp-functions-with-dllexport-and-dllimport.md)  
   
 ## <a name="when-to-use-inline-functions"></a>Satır içi işlevlerin ne zaman kullanılacağı  
  Satır içi işlevler, en çok özel veri üyelerine erişme gibi küçük işlevler için yararlıdır. Bu bir veya iki satırlık "erişimci" işlevlerinin temel amacı, nesneler hakkında durum bilgileri döndürmektir; kısa işlevler işlev çağrılarının ek yüküne karşı duyarlıdır. Daha uzun işlevler, çağırma/döndürme dizisinde nispeten daha az süre harcar ve satır içine alma özelliğinden yararlanır.  

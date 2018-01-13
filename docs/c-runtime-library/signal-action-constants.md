@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 26a5b349836b7c9b08a66d4df8f3d2bedbe5b63f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 256f11d3f8daa8a00e70e24aa19c31b71413c13c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="signal-action-constants"></a>sinyal Eylemi Sabitleri
 Gerçekleştirilecek eylemi kesme sinyal alındığında değerine bağlıdır `func`.  
@@ -55,4 +56,4 @@ Gerçekleştirilecek eylemi kesme sinyal alındığında değerine bağlıdır `
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sinyal](../c-runtime-library/reference/signal.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

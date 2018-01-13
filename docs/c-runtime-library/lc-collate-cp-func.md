@@ -25,11 +25,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 36eed0a5592b41dd4f9f57c1f2f6c395d0bb784a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe7ff6ce073f84a87e2243ab98d3b99af0dfd22c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lccollatecpfunc"></a>___lc_collate_cp_func
 İç CRT işlevi. İş parçacığının geçerli harmanlama kod sayfası alır.  

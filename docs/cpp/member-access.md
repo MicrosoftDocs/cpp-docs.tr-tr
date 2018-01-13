@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 03a382191e78780aa350741b9cfceac11305cdcb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 18348c3d59457b7920f7902687f0220121c30e2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="member-access"></a>Üye Erişimi
 Üye erişimi işleci aşırı yüklemesi tarafından sınıf üye erişimi denetlenebilir (**->**). Bu işleç bu kullanımda birli işleç olarak kabul edilir ve aşırı yüklenmiş işleç işlevi bir sınıf üyesi işlevi olmalıdır. Bu nedenle, bu tür bir işlevin bildirimi şöyledir:  
@@ -44,4 +45,4 @@ class-type *operator->()
  **.** üye erişimi işleci aşırı yüklenemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleç aşırı yüklemesi](../cpp/operator-overloading.md)
+ [İşleç Aşırı Yüklemesi](../cpp/operator-overloading.md)

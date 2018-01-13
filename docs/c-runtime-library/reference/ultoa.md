@@ -29,11 +29,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8984b9cebc7c7916f45fd0ecdb630ba8bb46bade
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 67bc1b41849f6da6b85a1d286191ac41eaa910ba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ultoa"></a>ultoa
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_ultoa](../../c-runtime-library/reference/ultoa-ultow.md) veya Gelişmiş Güvenlik [_ultoa_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md) yerine.

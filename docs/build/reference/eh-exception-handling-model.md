@@ -23,11 +23,12 @@ caps.latest.revision: "29"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b0f4177ffb0db75eb18c39aa260f0b150da9b6f4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c56020d5013e951d9d43ed799d34641d114d612
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 Özel durum işleme koyma özel durumu iyileştirmek için denetlediğinde derleyici ve mi kapsamının dışında bir özel durum nedeniyle Git C++ nesneleri yok etme tarafından kullanılan türünü belirtir. Varsa **/EH** belirtilmezse, derleyici, yapılandırılmış zaman uyumsuz özel durumları ve C++ özel durumlarını yakalar ancak kapsamının dışında bir zaman uyumsuz özel durum nedeniyle Git C++ nesneleri silmiyor.  
@@ -126,4 +127,4 @@ int main() {
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
  [Hatalar ve özel durum işleme](../../cpp/errors-and-exception-handling-modern-cpp.md)   
  [Özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)   
- [Yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)
+ [Yapılandırılmış Özel Durum İşleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

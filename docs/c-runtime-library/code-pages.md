@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 02c1b7de9a8ed5f560a5999af453970785c487f5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a0899f5f617fd28d121b85183280bd28fe91ee46
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="code-pages"></a>Kod Sayfaları
 A `code page` sayı, noktalama işaretleri ve diğer karakterlerin içerebilen bir karakter kümesidir. Farklı diller ve yerel ayarlar farklı kod sayfaları kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve en Avrupa dilleri için kullanılır; OEM kod sayfası 932 Japonca Kanji için kullanılır.  
@@ -51,4 +52,4 @@ A `code page` sayı, noktalama işaretleri ve diğer karakterlerin içerebilen b
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

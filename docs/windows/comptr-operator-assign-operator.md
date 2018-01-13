@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 238c58e8fda169d86dc4be625ed16efa81c21fef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 30f04bdfe7b508bf83e34992fefdcb10c58b4655
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator= İşleci
 Bir değer için geçerli ComPtr atar.  
@@ -90,4 +93,4 @@ WRL_NOTHROW ComPtr& operator=(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr sınıfı](../windows/comptr-class.md)
+ [ComPtr Sınıfı](../windows/comptr-class.md)

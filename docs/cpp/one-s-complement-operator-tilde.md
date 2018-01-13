@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb63adc5d776bec488661ea3e575c8693ea1b728
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 635a3e3b2d270d2164adc3f25a260085d7c50d60
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="one39s-complement-operator-"></a>Bir &#39; s tamamlama işleci: ~
 ## <a name="syntax"></a>Sözdizimi  
@@ -64,4 +65,4 @@ int main () {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [Birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md)
+ [Birli Aritmetik İşleçler](../c-language/unary-arithmetic-operators.md)

@@ -45,11 +45,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6f321411fca27d22540d4dc63c56774522b04a5e
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: 3858955a1409842d80439401d6c689c06f6c86f3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isascii-isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -102,4 +103,4 @@ Geriye dönük uyumluluk için `isascii` makrosu yalnızca IF uygulanan [&#95; &
 
 [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
 [Yerel ayar](../../c-runtime-library/locale.md)   
-[is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)

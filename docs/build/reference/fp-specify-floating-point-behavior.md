@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 02ca51ef8c32e59a94f87419dd4a959022a30cde
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0f4a86c7bbbd38887944080a5a5c8124310fdd4a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (Kayan Nokta Davranışını Belirt)
 Bir kaynak kodu dosyasında kayan nokta türü davranışını belirtir.  

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95428e0513193c78f135157b09a354e050014f23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: c24d8dea31a87094329276af3ebfaf9f06136adc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="criticalsectiontraits-structure"></a>CriticalSectionTraits Yapısı
 Geçersiz bir kritik bölüm veya önemli bir bölümü serbest bırakmak için bir işlev desteklemek için bir CriticalSection nesnesi uzmanlaşmış.  
@@ -42,8 +45,8 @@ struct CriticalSectionTraits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Criticalsectiontraits::getınvalidvalue yöntemi](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Böylece şablon her zaman geçersiz CriticalSection şablon uzmanlaşmış.|  
-|[CriticalSectionTraits::Unlock yöntemi](../windows/criticalsectiontraits-unlock-method.md)|Böylece belirtilen kritik bölüm nesnenin sahipliğini serbest destekleyen bir CriticalSection şablonu uzmanlaşmış.|  
+|[CriticalSectionTraits::GetInvalidValue Metodu](../windows/criticalsectiontraits-getinvalidvalue-method.md)|Böylece şablon her zaman geçersiz CriticalSection şablon uzmanlaşmış.|  
+|[CriticalSectionTraits::Unlock Metodu](../windows/criticalsectiontraits-unlock-method.md)|Böylece belirtilen kritik bölüm nesnenin sahipliğini serbest destekleyen bir CriticalSection şablonu uzmanlaşmış.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CriticalSectionTraits`  
@@ -54,4 +57,4 @@ struct CriticalSectionTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

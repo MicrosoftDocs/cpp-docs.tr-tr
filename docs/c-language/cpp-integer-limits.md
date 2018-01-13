@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4c1596f035da98524238e558ffe23816730aa42b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 861310be7e13c0ca5e656edc4214e59f5dacd659
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-integer-limits"></a>C++ Tamsayı Sınırları
 **Microsoft özel**  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/24/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C tamsayı sabitleri](../c-language/c-integer-constants.md)
+ [C Tamsayı Sabitleri](../c-language/c-integer-constants.md)

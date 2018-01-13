@@ -43,11 +43,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 86dccd98c5420adadd0f1eb3af947769c59f594c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0b5b76543067b3df52e51b28ae4fc77cfa007860
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 Karmaşık sayıyı bağımsız değişkeni negatif gerçek ekseni boyunca kesin bir dal ile alır.  
@@ -97,4 +98,4 @@ long double cargl(
  [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
  [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
  [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [CAB dosyaları, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+ [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b6ba275b3a287130df111ba89ec2f4dd91170d17
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 12e81b26cd83214a5d62a42689bfc3a866ef1c10
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="release-builds"></a>Yayın Derlemeleri
 Yayın derlemesi iyileştirmeler kullanır. Yayın derlemesi oluşturma için en iyi duruma getirme kullandığınızda derleyici simgesel hata ayıklama bilgilerini üretmez. Kod izleme ve ASSERT oluşturulmaz olgu birlikte simgesel hata ayıklama bilgilerini yokluğu çağrıları, yürütülebilir dosyasının boyutunu daha azdır ve bu nedenle daha hızlı olacaktır anlamına gelir.  
@@ -30,9 +31,9 @@ Yayın derlemesi iyileştirmeler kullanır. Yayın derlemesi oluşturma için en
   
 -   [Yayın derlemesi oluşturma](../../build/reference/how-to-create-a-release-build.md)  
   
--   [Yayın derlemesi oluşturma genel sorunlar](../../build/reference/common-problems-when-creating-a-release-build.md)  
+-   [Yayın Derlemesi Oluşturmadaki Genel Sorunlar](../../build/reference/common-problems-when-creating-a-release-build.md)  
   
--   [Yayın derlemesi sorunlarını giderme](../../build/reference/fixing-release-build-problems.md)  
+-   [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)  
   
     -   [ASSERT deyimleri inceleniyor](../../build/reference/using-verify-instead-of-assert.md)  
   
@@ -40,8 +41,8 @@ Yayın derlemesi iyileştirmeler kullanır. Yayın derlemesi oluşturma için en
   
     -   [Yayın derlemesinde hata ayıklama](../../build/reference/how-to-debug-a-release-build.md)  
   
-    -   [Üzerine yazmalarını belleği denetleme](../../build/reference/checking-for-memory-overwrites.md)  
+    -   [Bellek Üzerine Yazmalarını Denetleme](../../build/reference/checking-for-memory-overwrites.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da C++ projeleri derleme](../../ide/building-cpp-projects-in-visual-studio.md)   
- [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)
+ [C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)

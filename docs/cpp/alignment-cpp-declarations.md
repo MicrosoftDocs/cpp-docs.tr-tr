@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a1326a0813e0d4092a7033e3e995336ac1f29056
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 019884793eb3472e52c7772351b2f5826520a193
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="alignment-c-declarations"></a>Hizalama (C++ Bildirimleri)
 C++ alt düzey özelliklerini de belirli donanım mimarisi en büyük avantajlarından yararlanmak bellekte nesneleri kesin hizalamasını belirtin yeteneğidir. Varsayılan olarak, kendi boyutu değeri sınıfı ve yapı üyelerinde derleyici hizalar: bool ve char hizalanır tek tek baytlık sınırları, iki bayt üzerinde kısa, dört bayt uzun uzun Int çift ve uzun çift sekiz bayt. Çoğu senaryoda asla varsayılan hizalamayı zaten en iyi olduğundan hizalama ile ilgilenen olmanız gerekir. Bazı durumlarda ancak, önemli ölçüde performans artışı veya bellek tasarruf veri yapıları için özel bir hizalama belirterek elde edebilirsiniz. Visual Studio 2015 öncesinde varsayılandan daha büyük bir hizalama belirtmek için Microsoft'a özgü anahtar sözcükler __alignof ve declspec(alignas) kullanabilirsiniz. Visual Studio 2015'te, başlangıç C ++ 11 standart anahtar sözcükleri kullanması gereken [alignof ve alignas](../cpp/alignof-and-alignas-cpp.md) en fazla kod taşınabilirlik için. Yeni anahtar sözcüklerin Microsoft'a özgü uzantılar başlık altında aynı şekilde davranır ve bu uzantılar belgelerine yeni anahtar sözcüklerin için de geçerlidir. Bkz: [__alignof işleci](../cpp/alignof-operator.md) ve [Hizala](../cpp/align-cpp.md) daha fazla bilgi için. C++ Standart yine de Microsoft #pragma kullanmanız gerekiyorsa hedef platformu için derleyici varsayılan değerinden küçük sınırlarındaki hizalama için paketleme davranışı belirtmiyor [paketi](../preprocessor/pack.md) bu durumda.  

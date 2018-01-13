@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 11fa4acae05c5488ce1d90873ec816744c7e83df
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 95b4aeaa5c180b7a0aa2af68646f8c85bfa951a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sizeof-operator-c"></a>sizeof İşleci (C)
 `sizeof` işleci, işlenen türünde bir nesneyi depolamak için gereken depolama miktarını bayt cinsinden verir. Bu işleç, makine bağımlı veri boyutları programlarınıza belirtmekten kaçının olanak sağlar.  
@@ -58,6 +59,6 @@ const int string_no = ( sizeof strings ) / ( sizeof strings[0] );
 Bu örnekte `strings`, bir `char` işaretçileri dizisidir. İşaretçilerin sayısı dizideki öğelerin sayısıdır, ancak belirtilmemiştir. Dizideki öğelerin sayısını hesaplamak üzere `sizeof` işlecini kullanarak işaretçilerin sayısını belirlemek kolaydır. **Const** tamsayı değeri `string_no` bu sayıya başlatılır. Çünkü bir **const** değeri `string_no` değiştirilemez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[C işleçleri](c-operators.md)  
-[C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
+[C İşleçleri](c-operators.md)  
+[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
   

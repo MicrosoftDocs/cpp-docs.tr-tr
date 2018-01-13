@@ -32,11 +32,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 59379d4916c8414717e886d6fea79e977d31836f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0d1c5192d3770a520a26bd7d9fd532f412a3e153
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtmemdumpstatistics"></a>_CrtMemDumpStatistics
 Kullanıcı tarafından okunabilir bir biçimde (yalnızca hata ayıklama sürümü) belirtilen yığın durumu için hata ayıklama üstbilgiyi dökümünü yapar.  
@@ -71,4 +72,4 @@ void _CrtMemDumpStatistics(
  **Kitaplıklar:** hata ayıklama sürümleri [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

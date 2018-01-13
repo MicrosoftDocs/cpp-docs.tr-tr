@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2558beae1a7bd689beba001f4637b1109b70faa5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1ccca814a388a458513773247f79cecf87fcdeae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="range"></a>/RANGE
 /RAWDATA veya /DISASM gibi diğer DUMPBIN seçenekleri ile kullanıldığında DUMPBIN çıktısını değiştirir.  
@@ -50,4 +51,4 @@ dumpbin /disasm /range:4219334,0x004061CD t.exe
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN seçenekleri](../../build/reference/dumpbin-options.md)
+ [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 863c6f1c83a57f9c8843bba8cf4db9c839abd309
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 3f063652b95cc5e778d7e1ffcbc809b9425f5425
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdynamicaccessorcdynamicaccessor"></a>CDynamicAccessor::CDynamicAccessor
 Oluşturur ve başlatır `CDynamicAccessor` nesnesi.  
@@ -54,4 +57,4 @@ Oluşturur ve başlatır `CDynamicAccessor` nesnesi.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDynamicAccessor sınıfı](../../data/oledb/cdynamicaccessor-class.md)
+ [CDynamicAccessor Sınıfı](../../data/oledb/cdynamicaccessor-class.md)

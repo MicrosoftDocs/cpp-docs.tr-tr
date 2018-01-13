@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e854c87355831980f768fd0027f8ac70d9001a1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2c21872c5d6fe6000038a3a2f4fe39451b566dd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="restrict"></a>__restrict
 Gibi **__declspec ( [kısıtlamak](../cpp/restrict.md) )** değiştiricisi, `__restrict` anahtar sözcüğü gösteren bir simge geçerli kapsamdaki diğer adı değil. `__restrict` anahtar sözcüğü, `__declspec ( restrict )` değiştiricisinden aşağıdaki şekilde farklıdır:  
@@ -62,4 +63,4 @@ union z {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

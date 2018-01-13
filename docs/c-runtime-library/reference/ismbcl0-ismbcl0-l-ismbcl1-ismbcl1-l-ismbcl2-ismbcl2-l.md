@@ -59,11 +59,12 @@ caps.latest.revision: "20"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 25472150345de54898e21bb63e869a74e22e905b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f30d9a89ce8d596db953aa41a3334a47503bdbd7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismbcl0-ismbcl0l-ismbcl1-ismbcl1l-ismbcl2-ismbcl2l"></a>_ismbcl0, _ismbcl0_l, _ismbcl1, _ismbcl1_l, _ismbcl2, _ismbcl2_l
 **Kod sayfası 932 özel işlevler**, geçerli yerel veya belirtilen LC_CTYPE dönüştürme durumu kategorisinin kullanma.  
@@ -141,4 +142,4 @@ int _ismbcl2_l(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
  [_ismbc rutinleri](../../c-runtime-library/ismbc-routines.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)
+ [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)

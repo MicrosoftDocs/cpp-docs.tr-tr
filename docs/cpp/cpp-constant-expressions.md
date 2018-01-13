@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9f6961e210af254cd807b133e034610f03ca866e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0cd30dd51b3d87b7d82b917734d187ae2278837a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-constant-expressions"></a>C++ Sabit İfadeleri
 A *sabit* değer değişmez bir olduğundan. C++, nesnenin değiştirilmesi ve o hedefi zorlamak için tasarlanmamıştır hedefi express sağlamak için iki anahtar sağlar.  
@@ -58,4 +59,4 @@ char chArray[(int)Size];
  Virgül işleci ve atama işleçleri sabit ifadelerinde kullanılamaz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade türleri](../cpp/types-of-expressions.md)
+ [İfade Türleri](../cpp/types-of-expressions.md)

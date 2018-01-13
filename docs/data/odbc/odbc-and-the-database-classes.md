@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8cf4d5dae14a59cc8b4c6d17ff118cdde59c28af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: e3041a4fc027a8786fb62db7df6eaf486633ce97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-and-the-database-classes"></a>ODBC ve Veritabanı Sınıfları
 MFC ODBC veritabanı sınıfları normalde yaptığınız kendiniz üye işlevlerini ODBC API işlev çağrılarını kapsüller [CDatabase](../../mfc/reference/cdatabase-class.md) ve [CRecordset](../../mfc/reference/crecordset-class.md) sınıfları. Örneğin, karmaşık ODBC çağrı sıraları, depolama konumları, hata koşullarını işleme ve diğer işlemler için döndürülen kayıtların bağlama sizin için veritabanı sınıfları tarafından yönetilir. Sonuç olarak, bir kayıt kümesi nesnesi kayıtlarda işlemek için önemli ölçüde daha basit bir sınıf arabirimi kullanın.  
@@ -33,4 +36,4 @@ MFC ODBC veritabanı sınıfları normalde yaptığınız kendiniz üye işlevle
  Veritabanı sınıfları ODBC işlevleri kapsülleyen rağmen bire bir eşleme ODBC API işlevleri sağlamaz. Veritabanı sınıfları veri erişim nesneleri Microsoft Access ve Microsoft Visual Basic'te bulunduktan sonra Modellenen soyutlama, daha yüksek düzeyde sağlar. Daha fazla bilgi için bkz: [ODBC ve MFC](../../data/odbc/odbc-and-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ODBC temelleri](../../data/odbc/odbc-basics.md)
+ [ODBC Temelleri](../../data/odbc/odbc-basics.md)

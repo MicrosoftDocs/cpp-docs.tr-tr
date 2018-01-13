@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 10f2eb4597808f726d55c3ece76b99c394d691c3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 446e15a6f578413cf3f0ddefa980303c10a5d280
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="calls-with-a-variable-number-of-arguments"></a>Değişken Sayıda Bağımsız Değişkenli Çağrılar
 Kısmi parametre listesi üç nokta gösterimi, üç noktalarla ardından virgül tarafından sonlandırıldı (**,...** ), daha fazla bağımsız değişken olabilir belirtmek için işlevine geçirilen, ancak bunları hakkında daha fazla bilgi verilir. Tür denetleme bu tür bağımsız değişkenler üzerinde gerçekleştirilmez. Üç nokta gösteriminden önce en az bir parametre gelmeli ve üç nokta gösterimi parametre listesindeki son belirteç olmalıdır. Üç nokta gösterimi olmadan, bir işlevin davranışı (parametre listesinde bildirilenlere ek olarak başka parametreler de alırsa) tanımlanmış olmaz.  
@@ -42,4 +43,4 @@ int average( int first, ...);
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev çağrıları](../c-language/function-calls.md)
+ [İşlev Çağrıları](../c-language/function-calls.md)

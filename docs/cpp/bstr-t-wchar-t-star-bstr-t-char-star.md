@@ -1,5 +1,5 @@
 ---
-title: _bstr_t::wchar_t *, _bstr_t::char * | Microsoft Docs
+title: _bstr_t::wchar_t*, _bstr_t::char* | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c078b727c42bb4704cfc3867cc22592f49a63e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c8dc91f76e31b124235347d7bef3e95f7cc5bf48
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bstrtwchart-bstrtchar"></a>_bstr_t::wchar_t*, _bstr_t::char*
 **Microsoft özel**  
@@ -46,4 +47,4 @@ operator char*( ) const;
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)
+ [_bstr_t Sınıfı](../cpp/bstr-t-class.md)

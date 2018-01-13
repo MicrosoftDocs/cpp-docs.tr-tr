@@ -20,11 +20,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ccbfe6543854dc6a904d80c9e483dfde8122327a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d53f868fd76877152bb3ec81fdba85c1d97b3aac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-commands-to-a-menu"></a>Menüye Komut Ekleme
 ### <a name="to-add-commands-to-a-menu"></a>Menüye komut eklemek için  
@@ -63,4 +66,4 @@ ms.lasthandoff: 10/24/2017
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Menü düzenleyicisi](../windows/menu-editor.md)   
+ [Menü Düzenleyicisi](../windows/menu-editor.md)   

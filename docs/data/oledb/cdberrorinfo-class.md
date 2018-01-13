@@ -18,11 +18,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d1ecd29e32686e8cc91ec9716625beeee2cef25
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: ed20f02b51afcd338b0a84f92def104c079869b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 OLE DB kullanarak OLE DB hata işleme için destek sağlar [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) arabirimi.  
@@ -42,7 +45,7 @@ class CDBErrorInfo
 |[Getallerrorınfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md)|Bir hata kaydında bulunan tüm hata bilgilerini döndürür.|  
 |[Getbasicerrorınfo](../../data/oledb/cdberrorinfo-getbasicerrorinfo.md)|Çağrıları [IErrorRecords::GetBasicErrorInfo](https://msdn.microsoft.com/en-us/library/ms723907.aspx) belirtilen hata ile ilgili temel bilgileri döndürmek için.|  
 |[GetCustomErrorObject](../../data/oledb/cdberrorinfo-getcustomerrorobject.md)|Çağrıları [IErrorRecords::GetCustomErrorObject](https://msdn.microsoft.com/en-us/library/ms725417.aspx) bir işaretçi bir arabirim bir özel hata nesnesi üzerinde dönün.|  
-|[Geterrorınfo](../../data/oledb/cdberrorinfo-geterrorinfo.md)|Çağrıları [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms711230.aspx) döndürmek için bir **IErrorInfo** belirtilen kayıt arabirimi işaretçisi.|  
+|[GetErrorInfo](../../data/oledb/cdberrorinfo-geterrorinfo.md)|Çağrıları [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms711230.aspx) döndürmek için bir **IErrorInfo** belirtilen kayıt arabirimi işaretçisi.|  
 |[GetErrorParameters](../../data/oledb/cdberrorinfo-geterrorparameters.md)|Çağrıları [IErrorRecords::GetErrorParameters](https://msdn.microsoft.com/en-us/library/ms715793.aspx) hata parametreleri dönün.|  
 |[GetErrorRecords](../../data/oledb/cdberrorinfo-geterrorrecords.md)|Hata kayıtları için belirtilen nesneyi alır.|  
   
@@ -55,4 +58,4 @@ class CDBErrorInfo
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DBVIEWER](../../visual-cpp-samples.md)   
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+ [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

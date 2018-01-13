@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: aac27465e486dc4bd02fd5e35b4c037862343a31
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 72f8aec06388c0d548da1de903bf47225c05c734
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interoperating-with-other-languages-ccx"></a>Diğer dilleri ile birlikte (C + +/ CX)
 Bu belge parçası C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıkları tarafından tüketilen Windows çalışma zamanı bileşenleri yazar. Tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönleri açıklanmaktadır, C + +/ CX uygulama JavaScript, bir .NET çerçevesi ile yönetilen dil ya da Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılan bileşenleri ile birlikte çalışır.  

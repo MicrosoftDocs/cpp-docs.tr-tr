@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2c1dfeafab3ffa3c9a25c5c2284f6ca2c047a6c2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8c37c016809d31fcb072f23768e9f54313331016
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
 IClassFactory arabiriminin temel işlevlerini uygular.  
@@ -71,10 +74,10 @@ class ClassFactory : public Details::RuntimeClass<
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ClassFactory::AddRef yöntemi](../windows/classfactory-addref-method.md)|Geçerli ClassFactory nesne başvurusu sayısını artırır.|  
-|[ClassFactory::LockServer yöntemi](../windows/classfactory-lockserver-method.md)|Arka plandaki sayısı geçerli ClassFactory nesne tarafından izlenen nesneleri artırır veya azaltır.|  
-|[ClassFactory::QueryInterface yöntemi](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirimi için bir işaretçi alır.|  
-|[ClassFactory::Release yöntemi](../windows/classfactory-release-method.md)|Başvuru sayısı için geçerli ClassFactory nesnesi azaltır.|  
+|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli ClassFactory nesne başvurusu sayısını artırır.|  
+|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Arka plandaki sayısı geçerli ClassFactory nesne tarafından izlenen nesneleri artırır veya azaltır.|  
+|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirimi için bir işaretçi alır.|  
+|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Başvuru sayısı için geçerli ClassFactory nesnesi azaltır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `I0`  
@@ -104,4 +107,4 @@ class ClassFactory : public Details::RuntimeClass<
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)   
- [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md)
+ [RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)

@@ -54,11 +54,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b534c0a43c78c42265fa3b36aca523dc27e170fd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a268830c14025f3a9581a4ad28481a54fa9f4f71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strerror-strerror-wcserror-wcserror"></a>strerror, _strerror, _wcserror, __wcserror
 Bir sistem hata ileti dizesi alır (`strerror`, `_wcserror`) veya bir kullanıcı tarafından sağlanan hata ileti dizesi biçimleri (`_strerror`, `__wcserror`). Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md).  

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 596f7d0ff2efdfa917996a89cbec6b23412a4bab
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: f6d16c94eb9d88f8e000f3830477fbf420acf8b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="member-function-templates"></a>Üye İşlev Şablonları
 
@@ -116,4 +117,4 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 
- [İşlev şablonları](../cpp/function-templates.md)
+ [İşlev Şablonları](../cpp/function-templates.md)

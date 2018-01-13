@@ -97,11 +97,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 43efb76381db85f4f1d601cb6d83dd82074e960a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 453b04174325a7c112105bdef1147e1b7909ccdb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rpt-rptf-rptw-rptfw-macros"></a>_RPT, _RPTF, _RPTW, _RPTFW Makroları
 Hata ayıklama rapor (yalnızca hata ayıklama sürümü) oluşturarak uygulamanın ilerleme durumunu izler. Unutmayın  *n*  değişkenlerinde sayısını belirtir `args` ve 0, 1, 2, 3, 4 veya 5 olabilir.  
@@ -187,4 +188,4 @@ _RPTFWn(
  Örnekte bkz [_ASSERT](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) konu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

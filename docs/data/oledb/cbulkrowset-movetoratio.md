@@ -23,11 +23,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 49401bc59ef6858f501c2613199ab5a9114a1e8d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 98536344e3282008ace529565e6c8d805b546ef2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbulkrowsetmovetoratio"></a>CBulkRowset::MoveToRatio
 Satır satır kümesindeki bir kesir konumundan başlayarak getirir.  
@@ -63,4 +66,4 @@ Satır satır kümesindeki bir kesir konumundan başlayarak getirir.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CBulkRowset sınıfı](../../data/oledb/cbulkrowset-class.md)
+ [CBulkRowset Sınıfı](../../data/oledb/cbulkrowset-class.md)

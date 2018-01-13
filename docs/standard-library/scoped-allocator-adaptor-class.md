@@ -34,11 +34,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c74216b8b510b17327c22a087295725049c4f024
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 66c188c490861e0b632791755b2d9914a7919865
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor Sınıfı
 Allocators, iç içe temsil eder.  
@@ -104,7 +105,7 @@ class scoped_allocator_adaptor;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ayırma](#allocate)|Kullanarak bellek ayırır `Outer` ayırıcısı.|  
+|[allocate](#allocate)|Kullanarak bellek ayırır `Outer` ayırıcısı.|  
 |[Yapı](#construct)|Bir nesne oluşturur.|  
 |[serbest bırakma](#deallocate)|Dış ayırıcısı kullanarak nesneleri kaldırır.|  
 |[yok](#destroy)|Belirtilen bir nesneyi yok eder.|  

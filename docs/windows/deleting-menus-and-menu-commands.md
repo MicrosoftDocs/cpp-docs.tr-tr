@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e99dcbc1908a68a01286e9d513a6c0538fe087f8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 36cd49a08e095a9a0c48e99819b92eb7047f3157
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="deleting-menus-and-menu-commands"></a>Menüleri ve Menü Komutlarını Silme
 ### <a name="to-delete-a-menu-or-menu-command"></a>Menü veya menü komutu silmek için  
@@ -40,4 +43,4 @@ ms.lasthandoff: 10/24/2017
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Menü düzenleyicisi](../windows/menu-editor.md)
+ [Menü Düzenleyicisi](../windows/menu-editor.md)

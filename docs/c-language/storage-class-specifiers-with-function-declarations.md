@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1073f0eef2a976866f0bacd0cfbe1f7e6f022334
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f7d8b6ba1c0287492195ee891b1a573bf74de6cf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-class-specifiers-with-function-declarations"></a>İşlev Bildirimli Depolama Sınıfı Tanımlayıcıları
 Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıfı tanımlayıcısı. İşlevlerin her zaman genel kullanım ömürleri vardır.  
@@ -50,4 +51,4 @@ Kullanabilirsiniz **statik** veya `extern` işlev bildirimleri depolama sınıf�
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C depolama sınıfları](../c-language/c-storage-classes.md)
+ [C Depolama Sınıfları](../c-language/c-storage-classes.md)

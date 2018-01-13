@@ -31,11 +31,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 82ef2df148abba6f482f9674a73d92e30d22ecdb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2798fff46d40ed6100f101cbc8839ad2fd166f4b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="setunexpected-crt"></a>set_unexpected (CRT)
 Çağrılacak kendi sonlandırma işlev yükler `unexpected`.  

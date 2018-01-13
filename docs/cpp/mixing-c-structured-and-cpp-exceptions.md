@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2cb390fa0b6cf90a76d0b751b8bdce7d4a3e54b9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 375f954f3df300b50a11067b009614ff8879b9b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mixing-c-structured-and-c-exceptions"></a>C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma
 Daha fazla taşınabilir kod yazmak istiyorsanız, yapılandırılmış özel durum işlemeyi C++ programında kullanmanız önerilmez. Ancak, bazen ile derleme isteyebilirsiniz **/EHa** yapılandırılmış özel durumlar ve C++ kaynak kodu karıştırmak ve her iki tür özel durumları işlemek için bazı tesis gerekir. Yapılandırılmış özel durum işleyici nesneleri veya yazılan özel durumları kavramına sahip olduğundan, C++ kodu tarafından oluşturulan özel durumları işleyemiyor; Ancak, C++ **catch** yapılandırılmış özel durum işleyicileri işleyebilir. Bu tür, C++ özel durum işleme sözdizimi olarak (**deneyin**, `throw`, **catch**) C derleyici ancak yapılandırılmış özel durum işleme sözdizimi tarafından kabul edilmedi (`__try`, `__except`, `__finally`) C++ derleyicisi tarafından desteklenir.  
@@ -47,4 +48,4 @@ Daha fazla taşınabilir kod yazmak istiyorsanız, yapılandırılmış özel du
 -   [SEH ve C++ EH arasındaki farklar](../cpp/exception-handling-differences.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ özel durum işleme](../cpp/cpp-exception-handling.md)
+ [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

@@ -20,11 +20,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a164bd7d07fac68de5b2e8fb4b49fa4e399c7cb2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 19f4f248a7fdca0d89df9c8becad69876bf6ac7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="designing-and-creating-a-record-view--mfc-data-access"></a>Tasarlama ve oluşturma (MFC veri erişimi) kayıt görünümü
 Kayıt görünümü sınıfıyla oluşturabilirsiniz [MFC Uygulama Sihirbazı'nı](../mfc/reference/database-support-mfc-application-wizard.md). Bir uygulama Sihirbazı'nı kullanırsanız kayıt görünümü sınıfı ve bir iletişim şablonunu kaynak için (denetimleri olmadan) oluşturur. Denetimleri için iletişim şablon kaynağı eklemek için Visual C++ iletişim kutusu Düzenleyicisi'ni kullanmanız gerekir. Kullanırsanız, diğer yandan, **sınıfı Ekle**, ilk iletişim şablon kaynağı Düzenleyicisi iletişim kutusunda oluşturun ve kayıt görünümü sınıfı oluşturmanız gerekir.  
@@ -53,4 +56,4 @@ Kayıt görünümü sınıfıyla oluşturabilirsiniz [MFC Uygulama Sihirbazı'n�
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
  [Kayıt kümesi (ODBC)](../data/odbc/recordset-odbc.md)   
- [ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)
+ [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

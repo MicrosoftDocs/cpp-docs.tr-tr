@@ -39,11 +39,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 36edbf47bacd20c06c726451d060dec61bce4e8a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ef81f58fc2180fcc29e943d0a352d1e6301ca7a1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismbbkalnum-ismbbkalnuml"></a>_ismbbkalnum, _ismbbkalnum_l
 Belirli bir birden çok baytlı karakter ASCII olmayan metin simge olup olmadığını belirler.  
@@ -81,4 +82,4 @@ int _ismbbkalnum_l(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)   
- [_ismbb rutinleri](../../c-runtime-library/ismbb-routines.md)
+ [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)

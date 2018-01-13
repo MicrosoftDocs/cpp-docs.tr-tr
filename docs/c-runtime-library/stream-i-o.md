@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 72772912097cf868538a496d3350d4708af5dc83
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f6a0c3fe1a85028f4b4220f8e2f111afa1012121
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stream-io"></a>Akış G/Ç
 Bu işlevler farklı boyutlarda ve büyük veri yapılarına tek karakter biçimlerinden verilerini işler. Ayrıca arabelleğe alma, performansı artırmak sağlarlar. Akış Arabellek varsayılan boyutu 4 K'dır. Bu yordamlar, yalnızca çalışma zamanı kitaplığı yordamları tarafından oluşturulan arabellekleri etkiler ve işletim sistemi tarafından oluşturulan arabellekleri üzerinde hiçbir etkisi yoktur.  
@@ -65,9 +66,9 @@ Bu işlevler farklı boyutlarda ve büyük veri yapılarına tek karakter biçim
 |[Printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md),[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)|Biçimlendirilmiş verileri yazma`stdout`|  
 |[putc, putwc](../c-runtime-library/reference/putc-putwc.md)|Bir akışa karakter yazma (makrosu sürümlerini `fputc` ve `fputwc`)|  
 |[putchar, putwchar](../c-runtime-library/reference/putc-putwc.md)|Karakter yazma `stdout` (makrosu sürümlerini `fputchar` ve `fputwchar`)|  
-|[koyar, _putws](../c-runtime-library/reference/puts-putws.md)|Akışa satır yazın|  
+|[puts, _putws](../c-runtime-library/reference/puts-putws.md)|Akışa satır yazın|  
 |[_putw](../c-runtime-library/reference/putw.md)|İkili yazma `int` akış|  
-|[Geri Sar](../c-runtime-library/reference/rewind.md)|Dosya konumu akışının başlangıcına Taşı|  
+|[rewind](../c-runtime-library/reference/rewind.md)|Dosya konumu akışının başlangıcına Taşı|  
 |[_rmtmp](../c-runtime-library/reference/rmtmp.md)|Tarafından oluşturulan geçici dosyaları kaldırma`tmpfile`|  
 |[scanf, _scanf_l, wscanf, _wscanf_l](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md),[scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md)|Verileri okuma biçimlendirilmiş`stdin`|  
 |[setbuf](../c-runtime-library/reference/setbuf.md)|Denetim akışı arabelleğe alma|  
@@ -105,4 +106,4 @@ Bu işlevler farklı boyutlarda ve büyük veri yapılarına tek karakter biçim
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Giriş ve çıkış](../c-runtime-library/input-and-output.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

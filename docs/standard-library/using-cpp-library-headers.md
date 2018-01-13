@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a90218b8cfc0dcc23475bb5e9fb531b2cebe4078
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ed672aed333a23b1f7722c3990e024b21bcc56a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-c-library-headers"></a>C++ Kitaplığı Üstbilgilerini Kullanma
 Standart üstbilginin içeriği, bir içerme yönergesi adlandırılmasıyla içerir.  
@@ -64,5 +65,5 @@ using namespace std;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

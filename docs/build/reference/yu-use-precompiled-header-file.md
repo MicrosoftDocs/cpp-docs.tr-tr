@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c0eb123cca28fdae379b387aaf09d0a200a88287
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c83f159882b9ed6fcfe5557c150413303c401dda
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu (Önceden Derlenmiş Üst Bilgi Dosyasını Kullanma)
 Geçerli derlemedeki varolan önceden derlenmiş üst bilgi (.pch) dosyasını kullanmak için derleyicisi bildirir.  
@@ -63,7 +64,7 @@ Geçerli derlemedeki varolan önceden derlenmiş üst bilgi (.pch) dosyasını k
   
 -   [/Y (önceden derlenmiş başlıklar)](../../build/reference/y-precompiled-headers.md)  
   
--   [Önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md)  
+-   [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
@@ -103,4 +104,4 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

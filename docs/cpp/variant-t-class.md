@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1afc35836f170a03ec7b8f4d8e20a1ff02995c23
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a670d18ab64637b54b063cfeb38f8d0cd8fee5d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="variantt-class"></a>_variant_t Sınıfı
 **Microsoft özel**  
@@ -41,10 +42,10 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[Ekleme](../cpp/variant-t-attach.md)|Bağlayan bir **değişken** içine nesne `_variant_t` nesne.|  
+|[Attach](../cpp/variant-t-attach.md)|Bağlayan bir **değişken** içine nesne `_variant_t` nesne.|  
 |[Temizle](../cpp/variant-t-clear.md)|Kapsüllenmiş temizler **değişken** nesnesi.|  
 |[ChangeType](../cpp/variant-t-changetype.md)|Türünü değiştirir `_variant_t` belirtilen nesneye **VARTYPE**.|  
-|[Ayırma](../cpp/variant-t-detach.md)|Kapsüllenmiş ayırır **değişken** bu nesneden `_variant_t` nesnesi.|  
+|[Detach](../cpp/variant-t-detach.md)|Kapsüllenmiş ayırır **değişken** bu nesneden `_variant_t` nesnesi.|  
 |[SetString](../cpp/variant-t-setstring.md)|Bir dize için atar `_variant_t` nesnesi.|  
   
 ### <a name="operators"></a>İşleçler  
@@ -63,4 +64,4 @@ ms.lasthandoff: 10/24/2017
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)
+ [Derleyici COM Desteği Sınıfları](../cpp/compiler-com-support-classes.md)

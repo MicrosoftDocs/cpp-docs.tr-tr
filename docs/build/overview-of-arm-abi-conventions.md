@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cf5ef9c9d9e122b23dc1b39d6e6092168f2c9381
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 073fe113c1915913d06a63c7feabcb7808896188
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-arm-abi-conventions"></a>ARM ABI kuralları genel bakış
 Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) üzerinde standart ARM EABI temel alır. Bu makale, ARM Windows standart arasındaki temel farklılıklar vurgular. Standart ARM EABI hakkında daha fazla bilgi için bkz: [uygulama ikili arabirimi (ABI) ARM mimarisi için](http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.subset.swdev.abi/index.html).  
@@ -212,4 +213,4 @@ Windows için ARM işlemci derlenmiş kod için uygulama ikili arabirimi (ABI) �
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel Visual C++ ARM geçiş sorunları](../build/common-visual-cpp-arm-migration-issues.md)   
- [ARM özel durum işleme](../build/arm-exception-handling.md)
+ [ARM Özel Durum İşleme](../build/arm-exception-handling.md)

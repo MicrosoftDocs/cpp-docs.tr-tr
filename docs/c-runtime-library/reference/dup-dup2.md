@@ -39,11 +39,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f267ebf6526ed46cf3ef5670c6aeeb93a5a075e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0c3f4ce550bd0d0d25d73284c87c33b6fa71647a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dup-dup2"></a>_dup, _dup2
 Açık bir dosya için ikinci bir dosya tanımlayıcısı oluşturur (`_dup`), veya bir dosya tanımlayıcısı yeniden atar (`_dup2`).  
@@ -156,4 +157,4 @@ This goes to file 'data'
  [Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)   
  [_close](../../c-runtime-library/reference/close.md)   
  [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
- [_kurulum Aç, _wopen](../../c-runtime-library/reference/open-wopen.md)
+ [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)

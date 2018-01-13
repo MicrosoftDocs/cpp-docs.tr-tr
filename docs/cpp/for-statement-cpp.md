@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 700a5d39d2752ba334f06b04382dab792d5f81e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8358af0cd6784b1974767456602350a8ccf1c57f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="for-statement-c"></a>for Deyimi (C++)
 Koşul yanlış olana kadar sürekli olarak bir deyimi yürütür. Aralık-based for deyimi hakkında daha fazla bilgi için bkz: [aralık tabanlı için deyimi (C++)](../cpp/range-based-for-statement-cpp.md).  
@@ -157,4 +158,4 @@ int main(){
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [while deyimi (C++)](../cpp/while-statement-cpp.md)   
  [yapın-while deyimi (C++)](../cpp/do-while-statement-cpp.md)   
- [Range-based for deyimi (C++)](../cpp/range-based-for-statement-cpp.md)
+ [Range-based for Deyimi (C++)](../cpp/range-based-for-statement-cpp.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e8a5783a89bc0a9d3bfd8ea9ff0318b894763e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5bea07ed3139240279848d94184564ec821a8cd9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lvalue-reference-declarator-amp"></a>Lvalue başvuru Bildirimcisi:&amp;
 Bir nesne adresini tutar ancak sözdizimsel olarak bir nesne gibi davranır.  
@@ -82,4 +83,4 @@ Bill is 40
  [Başvuruları](../cpp/references-cpp.md)   
  [Başvuru türü işlev bağımsız değişkenleri](../cpp/reference-type-function-arguments.md)   
  [Başvuru türü işlev dönüşleri](../cpp/reference-type-function-returns.md)   
- [İşaretçi başvuruları](../cpp/references-to-pointers.md)
+ [İşaretçi Başvuruları](../cpp/references-to-pointers.md)

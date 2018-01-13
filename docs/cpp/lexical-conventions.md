@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 317fdaadd622571f6e90be11a2b55a778806c39e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8c132def87ce2ba2fbe72f8a4696071ab62fda82
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="lexical-conventions"></a>Sözcük Kuralları
 Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programlar oluşturmak için kullanılan deyimleri, tanımları, bildirimleri ve diğer öğeleri oluşturmak için "sözcük temelli öğeler" veya "belirteçler" olarak adlandırılan bu öğeleri kullanırsınız. Bu bölümde aşağıdaki sözcük temelli öğeler ele alınmıştır:  
@@ -29,13 +30,13 @@ Bu bölüm bir C++ programının temel öğelerini tanıtır. Eksiksiz programla
   
 -   [Belirteçleri](../cpp/tokens-cpp.md)  
   
--   [Açıklamaları](../cpp/comments-cpp.md)  
+-   [Açıklamalar](../cpp/comments-cpp.md)  
   
--   [Tanımlayıcıları](../cpp/identifiers-cpp.md)  
+-   [Tanımlayıcılar](../cpp/identifiers-cpp.md)  
   
--   [Anahtar sözcükler](../cpp/keywords-cpp.md)  
+-   [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
   
--   [Noktalama işaretleri](../cpp/punctuators-cpp.md)  
+-   [Noktalama İşaretçileri](../cpp/punctuators-cpp.md)  
   
 -   [Sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)  
   

@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f8dbf60058a3aea341e5896ed8036096ce78d5f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9409bd83132877f73b58e12cb9503c41a3dc3cf9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="badtypeid-exception"></a>bad_typeid Özel Durumu
 `bad_typeid` Özel durum tarafından [typeid işleci](../cpp/typeid-operator.md) zaman işleneni `typeid` NULL işaretçi.  
@@ -85,4 +86,4 @@ Object is NULL
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

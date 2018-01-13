@@ -19,11 +19,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ee5e34ce0af330ec9a788ceda758a412e3d7ac2d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 59eb8aecbf2dd2138c8a0469d71364b55fd82774
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="transaction-how-transactions-affect-updates-odbc"></a>İşlem: İşlemlerin Güncelleştirmeleri Etkilemesi (ODBC)
 Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) düzenleme arabelleği (işlemleri dışında kullanılan aynı yöntemi) kullanımıyla işlemleri sırasında yönetilir. Kayıt alan veri üyeleri topluca geçici olarak sırasında kayıt yedekler geçerli kaydı içeren düzenleme arabelleği görevi gören bir `AddNew` veya **Düzenle**. Sırasında bir **silmek** işlemi, geçerli kayıt yedeklenmez bir işlem içinde. Düzenleme arabelleği ve nasıl geçerli kayıt güncelleştirmeleri depolamak hakkında daha fazla bilgi için bkz: [kayıt kümesi: nasıl kayıt kümelerini güncelleştirme kayıtları (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md).  
@@ -64,4 +67,4 @@ Güncelleştirmeleri [veri kaynağı](../../data/odbc/data-source-odbc.md) düze
  [İşlem (ODBC)](../../data/odbc/transaction-odbc.md)   
  [İşlem: (ODBC) kayıt kümesinde işlem gerçekleştirme](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)   
  [CDatabase sınıfı](../../mfc/reference/cdatabase-class.md)   
- [CRecordset sınıfı](../../mfc/reference/crecordset-class.md)
+ [CRecordset Sınıfı](../../mfc/reference/crecordset-class.md)

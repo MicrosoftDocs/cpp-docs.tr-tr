@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2486357766d2dbd9f5d4250e2d0fb38e02ba51bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 785692992863e5a1cf3800f536d3f8fe3790b4a0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar, aşırı yüklenmiş işlevler olarak bilinir ve Aşırı Yükleme bölümünde ayrıntılı olarak açıklanmaktadır. Aşırı yüklenmiş işlevler, programcıların bir işlev için bağımsız değişkenlerin türlerine ve sayısına göre farklı semantikler sağlamasına imkan tanır.  
@@ -528,4 +529,4 @@ double Account::Deposit( double dAmount, char *szPassword )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlevler (C++)](../cpp/functions-cpp.md)
+ [işlevler [C++]](../cpp/functions-cpp.md)

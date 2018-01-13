@@ -42,11 +42,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: abc8cfa4e21ea0a263224628a1e896493bd902e0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e7dfdf6479a7fc43f52c2a314f1b1b8e023f97a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strdupdbg-wcsdupdbg"></a>_strdup_dbg, _wcsdup_dbg
 Sürümleri [_strdup ve _wcsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md) hata ayıklama sürümünü kullanmak `malloc`.  

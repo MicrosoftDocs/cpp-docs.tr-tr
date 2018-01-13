@@ -37,11 +37,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c8bf42ec1eb4fed681f28cd73b87b3e42b36fe7e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2a487bb6f6ffd740f6479916c5115bf95d568655
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="running-lib"></a>LIB Çalıştırma
 LIB denetlemek için çeşitli komut satırı seçenekleri kullanılabilir.  
@@ -93,4 +94,4 @@ LIB @commandfile
  Diğer seçenekler, yalnızca belirli modları LIB için geçerlidir. Bu seçeneklerin her iki modda açıklayan bölümlerde ele alınmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB başvurusu](../../build/reference/lib-reference.md)
+ [LIB Başvurusu](../../build/reference/lib-reference.md)

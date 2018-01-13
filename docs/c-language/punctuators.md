@@ -14,15 +14,16 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59e62a027c20bc54ca03a4c1aceba373197a233f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 836837cd1b25782475fbd9d99141c6831edd0120
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="punctuators"></a>Noktalama İşaretleri
 `punctuator`: biri  
  **[ ]   ( )   { }   \*   ,   :   =   ;   ...   #**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük dilbilgisi](../c-language/lexical-grammar.md)
+ [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

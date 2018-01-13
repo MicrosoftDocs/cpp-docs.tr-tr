@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 40ca15541b9035a82869cdfed7f304eeaeeb2553
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 927711e5ad87be2a8c4683cb960cc02015de2316
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="errorcategory-class"></a>error_category Sınıfı
 Nesneler için hata kodları kategorisini tanımlayan soyut, ortak tabanı temsil eder.  
@@ -57,7 +58,7 @@ class error_category;
 |-|-|  
 |[default_error_condition](#default_error_condition)|Bir hata koşulu nesne için hata kodu değerini depolar.|  
 |[eşdeğer](#equivalent)|Hata nesneleri eşdeğer olup olmadığını belirten bir değer döndürür.|  
-|[İleti](#message)|Belirtilen hata kodu adını döndürür.|  
+|[message](#message)|Belirtilen hata kodu adını döndürür.|  
 |[adı](#name)|Kategorinin adını döndürür.|  
   
 ### <a name="operators"></a>İşleçler  
@@ -65,7 +66,7 @@ class error_category;
 |||  
 |-|-|  
 |[operator ==](#op_eq_eq)|Testler arasında eşitliği `error_category` nesneleri.|  
-|[operator! =](#op_neq)|Testler arasında eşitsizlik için `error_category` nesneleri.|  
+|[operator!=](#op_neq)|Testler arasında eşitsizlik için `error_category` nesneleri.|  
 |[operator <](#op_lt)|Varsa testleri [error_category](../standard-library/error-category-class.md) nesne küçük `error_category` nesne geçirilen karşılaştırma için.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -216,7 +217,7 @@ typedef int value_type;
  Bu tür tanımı için eş anlamlı olduğundan `int`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< system_error >](../standard-library/system-error.md)
+ [<system_error>](../standard-library/system-error.md)
 
 
 

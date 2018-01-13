@@ -32,11 +32,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 03f54ac06cd260859bce4be5fc028be2a2c8a6bd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 53adc2ce18b5442320511391f4848682520e3a26
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="geterrno"></a>_get_errno
 Errno genel değişkeni geçerli değerini alır.  
@@ -95,4 +96,4 @@ fyi, ENOENT = 2
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_set_errno](../../c-runtime-library/reference/set-errno.md)   
- [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)
+ [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)

@@ -23,11 +23,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d566afbea5b955024172a44309e5d00e47b6afbe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8ccc7cc8662e33e5999ceafbcd8f029e2675341b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-the-names-of-symbol-header-files"></a>Sembol Başlık Dosyalarının Adlarını Değiştirme
 Normalde tüm simge tanımlarını Resource.h kaydedilir. Ancak, bu değiştirmeniz gerekebilir, örneğin, aynı dizinde birden fazla kaynak dosyayla çalışabilirsiniz böylece dosya adını içerir.  
@@ -49,4 +52,4 @@ Normalde tüm simge tanımlarını Resource.h kaydedilir. Ancak, bu değiştirme
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kaynak sembolleri görüntüleme](../windows/viewing-resource-symbols.md)   
- [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)
+ [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

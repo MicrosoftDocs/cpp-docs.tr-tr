@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 40f86574e849bae8c1defafcfeab46fced2d77b0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 26a7cef5e023c0fb0d5e24fe68fed6b33bc8ae75
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 `do-while` Deyimi bir deyim veya bileşik deyim belirtilen ifadeye false olana kadar yineleyin olanak sağlar.  
@@ -53,4 +54,4 @@ do
  Bu `do-while` deyimi, iki deyimleri `y = f( x );` ve `x--;` bağımsız olarak ilk değeri yürütülür `x`. Ardından `x > 0` değerlendirilir. Varsa `x` 0'dan büyük deyimi gövdesi yeniden yürütülür ve `x > 0` değerlendirilir. Deyimi gövde sürekli yürütüldüğünde sürece `x` 0'dan büyük kalır. Yürütülmesi `do-while` açıklamayı sonlandıran `x` 0 veya eksi olur. Döngünün gövdesi en az bir kez çalıştırılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [yapın-while deyimi (C++)](../cpp/do-while-statement-cpp.md)
+ [do-while Deyimi (C++)](../cpp/do-while-statement-cpp.md)

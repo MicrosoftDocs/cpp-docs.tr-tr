@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 341dc7f2b16449356fab60f79424f5031ceefd6d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a8ffcc5ab1f50c474ed0ecf4d014419111682b85
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="backward-compatibility"></a>Geriye Dönük Uyumluluk
 Ürün sürümleri, OLDNAMES kitaplığı arasındaki uyumluluk için. LIB yeni adlarına eski adlarını eşler. Örneğin, `open` eşlendiği `_open`. Açıkça OLDNAMES ile bağlamanız gerekir. Yalnızca komut satırı seçenekleri aşağıdaki birleşimlerine derlediğinizde LIB:  

@@ -20,11 +20,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c807ead64a068a9797b49606d41d16664b6331e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: f665f6bda3b7d220faebb76e3f6503d7c00f6029
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdatasourceopenfromfilename"></a>CDataSource::OpenFromFileName
 Kullanıcı tarafından sağlanan dosya adıyla belirtilen dosyadan bir veri kaynağı açar.  
@@ -54,4 +57,4 @@ Kullanıcı tarafından sağlanan dosya adıyla belirtilen dosyadan bir veri kay
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDataSource sınıfı](../../data/oledb/cdatasource-class.md)
+ [CDataSource Sınıfı](../../data/oledb/cdatasource-class.md)

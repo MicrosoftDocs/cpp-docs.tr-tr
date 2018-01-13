@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 18d04884bacf2cbc03fd68c8ec0489595eb0f4d7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 60126db8e2a8f7fe9e56041c4f5b119df828958c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="blocks"></a>Bloklar
 Dizi bildirimleri, tanımları ve süslü ayraçlar içinde deyimleri (**{}**) bir "bloğu." olarak adlandırılır C. bloklarında iki tür vardır "Bileşik deyimi," bir deyimi bir veya daha fazla bilgilerinin oluşur (bkz [bileşik deyim](../c-language/compound-statement-c.md)), bir blok türü. Yanı sıra işlevi "üstbilgisi" (işlev adı, dönüş türü ve biçimsel parametresi) ilişkili diğer "işlev tanımı," bileşik bildirimi (işlevinin gövdesini) oluşur. Diğer blokları blokta "iç içe olamaz." kabul edilir  
@@ -30,4 +31,4 @@ Dizi bildirimleri, tanımları ve süslü ayraçlar içinde deyimleri (**{}**) b
  Tüm bileşik deyimler içinde süslü ayraçlar arasına alınan sırada her şeyin süslü ayraçlar içinde bileşik deyim oluşturduğunu unutmayın. Dizi, yapı veya numaralandırma öğeleri belirtimleri süslü ayraçlar içinde yer alabilir, örneğin, desteklense bileşik deyimler değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak dosyalar ve kaynak programlar](../c-language/source-files-and-source-programs.md)
+ [Kaynak Dosyalar ve Kaynak Programlar](../c-language/source-files-and-source-programs.md)

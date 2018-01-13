@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e1230ac8bcf210e519420e8fb4ef84e77bcd4869
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e66f5b4f490bd31a9f35b13c037f2b6cf607c40b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comptrtaddref"></a>_com_ptr_t::AddRef
 **Microsoft özel**  
@@ -40,4 +41,4 @@ void AddRef( );
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_com_ptr_t sınıfı](../cpp/com-ptr-t-class.md)
+ [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

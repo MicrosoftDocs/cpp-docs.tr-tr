@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f972664b7e7a72a5b271ecc4e3ad79c32c6cd0e7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a3a5d0b299b2bc38c95420515ab49eabd1268305
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reference-type-function-returns"></a>Başvuru Türü İşlev Dönüşleri
 İşlevler, bir başvuru türü döndürmek için bildirilebilir. Böyle bir bildirim yapmanın iki nedeni vardır:  

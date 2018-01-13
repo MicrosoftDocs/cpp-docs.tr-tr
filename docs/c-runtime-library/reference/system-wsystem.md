@@ -40,11 +40,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 85d5f0f745f66aebc526759be192af508510be92
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1c470717d48836fd405e98f5fccca222e87a9c33
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="system-wsystem"></a>system, _wsystem
 Bir komut yürütür.  
@@ -139,4 +140,4 @@ Line two.
  [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md)   
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [_flushall](../../c-runtime-library/reference/flushall.md)   
- [_spawn, _wspawn işlevleri](../../c-runtime-library/spawn-wspawn-functions.md)
+ [_spawn, _wspawn İşlevleri](../../c-runtime-library/spawn-wspawn-functions.md)

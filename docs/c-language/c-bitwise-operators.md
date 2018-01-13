@@ -23,11 +23,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3be1384c12ece809bd8fc275625efd4acef5a407
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a55cbad7606eb5ce204e3363b1d292c787b59740
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-bitwise-operators"></a>C Bit Düzeyinde İşleçler
 Bit düzeyinde işleçler Bitsel gerçekleştirmek- ve (**&**), özel veya bit düzeyinde (**^**) ve bit düzeyinde-(bunlar dahil)-OR (**&#124;**) işlemler.  

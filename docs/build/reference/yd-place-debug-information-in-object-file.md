@@ -19,11 +19,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9b86ec1bf3c47de45eaf9120d8e8f68ac9377db6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 419d97357fd3424d5de980f76c6758eaa47f3c7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd (Hata Ayıklama Bilgilerini Nesne Dosyasına Yerleştir)
 Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan kullanıldığında önceden derlenmiş üst bilgi (.pch) dosyasından [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.  
@@ -47,7 +48,7 @@ Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan 
   
 -   [/Y (önceden derlenmiş başlıklar)](../../build/reference/y-precompiled-headers.md)  
   
--   [Önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md)  
+-   [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
@@ -89,4 +90,4 @@ CL /YuETC.H /Z7 G.CPP
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

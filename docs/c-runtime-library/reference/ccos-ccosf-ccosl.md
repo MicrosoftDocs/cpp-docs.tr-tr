@@ -43,11 +43,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 18911bd1f42ab13a47d4e02aa0da2ea64dcdfba2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 263172acd83a5276aab936964cb871744ff3c157
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccos-ccosf-ccosl"></a>ccos, ccosf, ccosl
 Karmaşık bir sayının kosinüsünü alır.  

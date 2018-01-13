@@ -40,11 +40,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c44e5773920d42c9b37e24a11b015adccc8e1be8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3c819f62f36966363f32eb16b7af758de274d3d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="wctombs-wctombsl"></a>wctomb_s, _wctomb_s_l
 Geniş karakter karşılık gelen birden çok baytlı karakter dönüştürür. Bir sürümünü [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

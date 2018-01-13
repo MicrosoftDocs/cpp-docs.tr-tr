@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 74e4d0a87976017deda146274947d98a76002004
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fec44138379e3510f353f0fdd99f7a6a1905f9cc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="global-variables"></a>Global Değişkenler
 Microsoft C çalışma zamanı kitaplığı aşağıdaki genel değişkenleri veya makroları sağlar. Bu genel değişkenler veya makroları çeşitli hangi yerine genel değişkenler kullanmanızı öneririz, daha güvenli işlevsel sürümleri lehinde kullanım dışı bırakıldı.  
@@ -30,8 +31,8 @@ Microsoft C çalışma zamanı kitaplığı aşağıdaki genel değişkenleri ve
 |Değişken|Açıklama|  
 |--------------|-----------------|  
 |[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)|Komut satırı bağımsız değişkenleri içeriyor.|  
-|[_daylight, _dstbias, _timezone ve _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)|Kullanım dışı. Bunun yerine, kullanın `_get_daylight`, `_get_dstbias`, `_get_timezone`, ve `_get_tzname`.<br /><br /> Yerel saatine göre ayarlanır; Bazı tarih ve saat işlevleri kullanılır.|  
-|[errno, _doserrno, _sys_errlist ve _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)|Kullanım dışı. Bunun yerine, kullanın `_get_errno`, `_set_errno`, `_get_doserrno`, `_set_doserrno`, `perror` ve `strerror`.<br /><br /> Hata kodları ve ilgili bilgileri depolar.|  
+|[_daylight, _dstbias, _timezone, and _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)|Kullanım dışı. Bunun yerine, kullanın `_get_daylight`, `_get_dstbias`, `_get_timezone`, ve `_get_tzname`.<br /><br /> Yerel saatine göre ayarlanır; Bazı tarih ve saat işlevleri kullanılır.|  
+|[errno, _doserrno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)|Kullanım dışı. Bunun yerine, kullanın `_get_errno`, `_set_errno`, `_get_doserrno`, `_set_doserrno`, `perror` ve `strerror`.<br /><br /> Hata kodları ve ilgili bilgileri depolar.|  
 |[_environ, _wenviron](../c-runtime-library/environ-wenviron.md)|Kullanım dışı. Bunun yerine, kullanın `getenv_s`, `_wgetenv_s`, `_dupenv_s`, `_wdupenv_s`, `_putenv_s`, ve `_wputenv_s`.<br /><br /> İşlem ortamı dizeleri işaretçiler dizileri işaretçileri; Başlangıçta başlatıldı.|  
 |[_fmode](../c-runtime-library/fmode.md)|Kullanım dışı. Bunun yerine, kullanın `_get_fmode` veya `_set_fmode`.<br /><br /> Varsayılan dosya çevirisi modu ayarlar.|  
 |[_iob](../c-runtime-library/iob.md)|Konsolu, dosyaları ve aygıtlar için g/ç denetim yapıları dizisi.|  

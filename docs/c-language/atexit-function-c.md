@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fed4acd2ad200b47524801c83be459ac8e07ebc5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fdfa6bd17fb9cd584d138f0fbd219b2352a1858e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atexit-function-c"></a>atexit İşlevi (C)
 **ANSI 4.10.4.3** tarafından döndürülen durum `atexit` bağımsız değişkeninin değeri sıfır, exıt_success veya exıt_faılure dışında ise işlevi  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  `atexit` işlevi başarılı olursa sıfır değerini veya başarısız olursa sıfır olmayan bir değeri döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

@@ -16,14 +16,15 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd43cd92dbc0580ab87e45ed77bae1c1798613c5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2342777bfd2b1a039e68766e8dfe00ac2fa2f932
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="type-for-string-literals"></a>Dize Sabit Değerleri Türü
 Dize değişmez değerleri sahip türü dizisi `char` (diğer bir deyişle, **char []**). (Geniş karakter dizeleri olan türü dizisi `wchar_t` (diğer bir deyişle, **wchar_t []**).) Bu bir dize dizisi türündeki öğeler ile anlamına gelir `char`. Dizideki öğeler yanı sıra bir sonlandırma null karakter dizesi eşit karakter sayısını sayısıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C dize değişmez değerleri](../c-language/c-string-literals.md)
+ [C Dize Değişmez Değerleri](../c-language/c-string-literals.md)

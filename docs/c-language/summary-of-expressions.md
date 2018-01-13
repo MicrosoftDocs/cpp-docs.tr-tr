@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b4da1491fc4d4602765ebad67869c61f7073cd87
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6e8d3317a77093855a4f61d027f5f37f60d1b41e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-expressions"></a>İfadelerin Özeti
 *Birincil ifade*:  
@@ -155,4 +156,4 @@ ms.lasthandoff: 10/24/2017
  *OR ifadesi mantıksal***&#124; &#124;** *mantıksal-ve-ifadesi*   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tümcecik yapısı dil bilgisi](../c-language/phrase-structure-grammar.md)
+ [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)

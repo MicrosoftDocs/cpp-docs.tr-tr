@@ -17,11 +17,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: abcafb8f94265d14a609481a187dcc53267718d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 689ec4ab19b2e5079c31ab0a8677d25acf4e8899
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iterator-struct"></a>iterator Yapısı
 Bir kullanıcı tarafından tanımlanan yineleyici sınıf düzgün ile çalıştığından emin olmak için kullanılan boş bir temel yapı **iterator_trait**s.  

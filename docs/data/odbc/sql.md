@@ -18,11 +18,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1879def3a66765c48d9f86e4b7f0c56785a0cf91
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 0c4283e73b800ac0fd4d448d5137372807f893d5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sql"></a>SQL
 SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri denetimi olanak sağlayan bir ilişkisel veritabanı ile iletişim kurmak için bir yoldur. SQL sözdizimini kullanarak, belirttiğiniz ölçütlere göre kayıtları ayıklar bir deyim oluşturabilirsiniz.  
@@ -54,9 +57,9 @@ SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri 
   
 |SQL anahtar sözcüğü|Sihirbazlar ve veritabanı sınıflarını kullanma|  
 |-----------------|---------------------------------------------|  
-|**SEÇİN**|Hangi tablolar ve sütunlar veri kaynağındaki kullanılacak olan tanımlamak için.|  
-|**BURADA**|Seçimi daraltır bir filtre uygulamak için.|  
-|**SIRALAMA ÖLÇÜTÜ**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|  
+|**SELECT**|Hangi tablolar ve sütunlar veri kaynağındaki kullanılacak olan tanımlamak için.|  
+|**WHERE**|Seçimi daraltır bir filtre uygulamak için.|  
+|**ORDER BY**|Kayıt kümesi için bir sıralama düzeni uygulamak için.|  
 |**EKLE**|Yeni kayıtlar için kayıt eklemek için.|  
 |**SİL**|Bir kayıt kümesinden kayıtları silmek için.|  
 |**GÜNCELLEŞTİRME**|Bir kaydın alanlarını değiştirmek için.|  
@@ -85,10 +88,10 @@ SQL (yapılandırılmış sorgu dili) tanımlamak, sorgu, değiştirmek ve veri 
   
 -   [SQL: Kayıt Kümenizin SQL deyimini özelleştirme (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)  
   
--   [SQL: SQL ve C++ veri türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)  
+-   [SQL: SQL ve C++ Veri Türleri (ODBC)](../../data/odbc/sql-sql-and-cpp-data-types-odbc.md)  
   
--   [SQL: Doğrudan SQL çağrıları yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)  
+-   [SQL: Doğrudan SQL Çağrıları Yapma (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)   
- [ODBC temelleri](../../data/odbc/odbc-basics.md)
+ [ODBC Temelleri](../../data/odbc/odbc-basics.md)

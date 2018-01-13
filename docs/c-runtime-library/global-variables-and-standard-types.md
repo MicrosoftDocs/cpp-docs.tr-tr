@@ -19,15 +19,16 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c0ad9b7eba172a5ff5c88c2848d54a14af229526
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 39d234b4184565057d2925a1aa44369c2d1c3e2e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="global-variables-and-standard-types"></a>Global Değişkenler ve Standart Türler
 Microsoft çalışma zamanı kitaplığı için tanımları içeren [genel değişkenler](../c-runtime-library/global-variables.md), [denetim bayrakları](../c-runtime-library/control-flags.md), ve [standart türler](../c-runtime-library/standard-types.md) kitaplık yordamları tarafından kullanılır. Bu değişkenler, bayrakları ve türler programınıza bildirme ya da uygun üstbilgi dosyaları dahil erişin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

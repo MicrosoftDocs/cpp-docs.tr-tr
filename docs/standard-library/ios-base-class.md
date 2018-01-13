@@ -119,11 +119,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 04605ec5df5512549822d0e585bf1b28eb0b42e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 39098fc501ba94c4fa2cd6cf779e7c5c71cc2f1d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 Şablon parametreleri dayanmayan ortak giriş ve çıkış akışları üye işlevleri ve depolama sınıfı açıklanmaktadır. (Şablon sınıfı [basic_ios](../standard-library/basic-ios-class.md) ne yaygındır ve şablonun parametrelere bağlı olduğu açıklanmaktadır.)  
@@ -164,7 +165,7 @@ ms.lasthandoff: 10/24/2017
   
 |||  
 |-|-|  
-|[Olay](#event)|Olay türlerini belirtir.|  
+|[event](#event)|Olay türlerini belirtir.|  
   
 ### <a name="constants"></a>Sabitler  
   
@@ -187,11 +188,11 @@ ms.lasthandoff: 10/24/2017
 |[floatfield](#fmtflags)|Tanımlanan bir bit maskesi `fixed` &#124;`scientific`|  
 |[goodbit](#iostate)|Tüm durum bitleri temizleyin.|  
 |[onaltılık](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri onaltılık biçimde belirtir.|  
-|[içinde](#openmode)|Akıştan ayıklama belirtir.|  
-|[İç](#fmtflags)|Klavye takımı ekleyerek bir alan genişliği için oluşturulan bir sayısal alana iç bir noktada karakterler doldurur.|  
+|[in](#openmode)|Akıştan ayıklama belirtir.|  
+|[internal](#fmtflags)|Klavye takımı ekleyerek bir alan genişliği için oluşturulan bir sayısal alana iç bir noktada karakterler doldurur.|  
 |[Sol](#fmtflags)|Sola yaslamayı belirtir.|  
 |[Eki](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri sekizli biçiminde belirtir.|  
-|[çıkışı](#openmode)|Akış ekleme belirtir.|  
+|[out](#openmode)|Akış ekleme belirtir.|  
 |[sağ](#fmtflags)|Sağa yaslamayı belirtir.|  
 |[Bilimsel](#fmtflags)|Kayan nokta değerlerinin ekleme bilimsel biçimiyle (üstel alanı) belirtir.|  
 |[showbase](#fmtflags)|Oluşturulan tamsayı alan tabanı ortaya çıkarır bir önek ekleme belirtir.|  
@@ -1065,4 +1066,4 @@ testing
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)

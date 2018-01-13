@@ -17,11 +17,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54a596ce7821d89096836a0edbaf810d6c3f4a2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: fc425cf767db6939223288ebe74dcbc7fd4cf5b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -30,4 +33,4 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)   
- [Veri kaynağı: Bağlantıları yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
+ [Veri Kaynağı: Bağlantıları Yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)

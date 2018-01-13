@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 444b13ea2dc01930d7ce667eb25345d635c5a3de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03d610e1a7aefbd0c6615cd9ed758f64b6986e3d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.  
@@ -74,4 +75,4 @@ int main () {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İkili işleçli ifadeler](../cpp/expressions-with-binary-operators.md)   
  [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)   
- [Sıralı değerlendirme işleci](../c-language/sequential-evaluation-operator.md)
+ [Sıralı Değerlendirme İşleci](../c-language/sequential-evaluation-operator.md)

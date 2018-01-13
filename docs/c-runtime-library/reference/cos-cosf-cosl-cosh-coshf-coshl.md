@@ -52,11 +52,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c37223f67e5c6d03aa7401870fb7ccbbd111cee3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e06a929148da03e59edff6f0630cd60841e912e8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cos-cosf-cosl-cosh-coshf-coshl"></a>cos, cosf, cosl, cosh, coshf, coshl
 Kosinüsünü hesaplar (`cos`, `cosf`, veya `cosl`), ya da hiperbolik kosinüsü (`cosh`, `coshf`, veya `coshl`).  
@@ -133,4 +134,4 @@ long double coshl(
  [_matherr](../../c-runtime-library/reference/matherr.md)   
  [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [Tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
- [_Cıcos](../../c-runtime-library/cicos.md)
+ [_CIcos](../../c-runtime-library/cicos.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f5143ef57821d629fe6e2dccde04d82f8e8c9eef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7377824b45027318a21f464650ecbc837a76d31c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="qifist-suppress-ftol"></a>/QIfist (Suppress _ftol)
 Kullanım dışı. Yardımcı işlevi çağrısı bastırır `_ftol` bir kayan nokta türüne dönüştürme tamsayı türü için ne zaman gereklidir.  
@@ -74,4 +75,4 @@ Kullanım dışı. Yardımcı işlevi çağrısı bastırır `_ftol` bir kayan n
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+ [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

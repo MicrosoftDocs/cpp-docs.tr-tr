@@ -16,24 +16,25 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5531254a987e4d8ca72249459dae92dec21f995a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5130f1edcce8491be10c4b94da63bc0aa80768fe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
--   [Karakter sabitleri ve koşullu dahil etme](../c-language/character-constants-and-conditional-inclusion.md)  
+-   [Karakter Sabitleri ve Koşullu Dahil Etme](../c-language/character-constants-and-conditional-inclusion.md)  
   
--   [Köşeli parantez içindeki dosya adlarını dahil etme](../c-language/including-bracketed-filenames.md)  
+-   [Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme](../c-language/including-bracketed-filenames.md)  
   
--   [Tırnak işaretli dosya adlarını dahil etme](../c-language/including-quoted-filenames.md)  
+-   [Tırnak İşaretli Dosya Adlarını Dahil Etme](../c-language/including-quoted-filenames.md)  
   
--   [Karakter dizileri](../c-language/character-sequences.md)  
+-   [Karakter Sıraları](../c-language/character-sequences.md)  
   
--   [Pragmaları](../c-language/pragmas.md)  
+-   [Pragmalar](../c-language/pragmas.md)  
   
--   [Varsayılan tarih ve saat](../c-language/default-date-and-time.md)  
+-   [Varsayılan Tarih ve Saat](../c-language/default-date-and-time.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama tanımlı davranış](../c-language/implementation-defined-behavior.md)
+ [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

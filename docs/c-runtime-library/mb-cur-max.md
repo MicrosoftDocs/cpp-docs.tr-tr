@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3d82463f9041e4c121fc1988f396b2a1854ff338
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: 793a2a4bcab9e037eddcdc6126554c93669aac92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mbcurmax"></a>MB_CUR_MAX
 
@@ -45,4 +46,4 @@ Değeri `MB_CUR_MAX` en fazla bayt cinsinden geçerli yerel ayar için birden ç
 [wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)   
 [wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)   
 [Veri türü sabitleri](../c-runtime-library/data-type-constants.md)   
-[Genel sabitler](../c-runtime-library/global-constants.md)
+[Global Sabitler](../c-runtime-library/global-constants.md)

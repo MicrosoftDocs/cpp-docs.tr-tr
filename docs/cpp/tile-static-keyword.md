@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1259fb7731e188bdb5a02a7a573b5eddd6a47df5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad47c85a8815d8a1a77f15788c3b312267cb055b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="tilestatic-keyword"></a>tile_static Anahtar Sözcüğü
 `tile_static` Anahtar sözcüğü bir kutucuk iş parçacıklarının tüm iş parçacıkları tarafından erişilebilecek bir değişken bildirmek için kullanılır. Yürütme bildirim noktası ulaştığında ve çekirdek işlevi döndüğünde bitip değişken ömrü başlatır. Döşemeleri kullanma hakkında daha fazla bilgi için bkz: [kullanarak döşeme](../parallel/amp/using-tiles.md).  
@@ -155,4 +156,4 @@ for (int i = 0; i < 4; i++) {
  [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md)   
  [C++ AMP'ye genel bakış](../parallel/amp/cpp-amp-overview.md)   
  [parallel_for_each işlevi (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)   
- [İzlenecek yol: Matris çarpım](../parallel/amp/walkthrough-matrix-multiplication.md)
+ [İzlenecek yol: Matris Çarpım](../parallel/amp/walkthrough-matrix-multiplication.md)

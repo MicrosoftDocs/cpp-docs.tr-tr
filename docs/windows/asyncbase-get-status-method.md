@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f7ac7e7a42d0cde4507f812a270548acfb5a69e6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: aaa51225f8ff4ec81fbfa549b00f3614c0ad7c9d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbasegetstatus-method"></a>AsyncBase::get_Status Metodu
 Zaman uyumsuz işlemin durumunu gösteren bir değer alır.  
@@ -48,4 +51,4 @@ STDMETHOD(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase sınıfı](../windows/asyncbase-class.md)
+ [AsyncBase Sınıfı](../windows/asyncbase-class.md)

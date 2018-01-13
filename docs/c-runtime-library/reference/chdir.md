@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a77c31fc1dcbb18c290a0cd23a6a3137289a039d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a8e57c6df9ae6fb5023f21e1cb570465aa63e05c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chdir"></a>chdir
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_chdir](../../c-runtime-library/reference/chdir-wchdir.md) yerine.  

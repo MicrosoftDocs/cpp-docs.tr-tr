@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0037e4e22b50d8dc6bb3d5f7c90cc987d765d829
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 576cbc62e0e79df337464424c4425a1b49ef847b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iob"></a>_iob
 Stdio denetim yapıları dizisi.  
@@ -41,4 +42,4 @@ FILE _iob[_IOB_ENTRIES];
  `IOB_ENTRIES`20 stdio.h'olarak tanımlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel değişkenler](../c-runtime-library/global-variables.md)
+ [Global Değişkenler](../c-runtime-library/global-variables.md)

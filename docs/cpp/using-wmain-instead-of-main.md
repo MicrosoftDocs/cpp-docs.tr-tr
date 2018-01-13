@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: afd05862ef68bd4d095b5452b2877e3ad0be2d46
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d43ab12c42315d735220af8f91c40d8b6a5cc4f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-wmain-instead-of-main"></a>main Yerine wmain Kullanma
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -38,4 +39,4 @@ ms.lasthandoff: 10/24/2017
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main: Program başlatma](../cpp/main-program-startup.md)
+ [main: Program Başlatma](../cpp/main-program-startup.md)

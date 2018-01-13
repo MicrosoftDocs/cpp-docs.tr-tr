@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d56a1fef4c1223445b8968495768a1bcf714a28c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 64dac0be10921d07aeb954596b000e1015d64c4f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="close"></a>close
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_close](../../c-runtime-library/reference/close.md) yerine.

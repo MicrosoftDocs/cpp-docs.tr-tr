@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f6a524e552728df0cee3e320aa36bf92d687c539
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f14d330ada8f71cc3556b7151189968b43cff4ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compatibility"></a>Uyumluluk
 Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Standart Kitaplığı çoğunu destekler. C99 (ISO/IEC 9899:1999) kitaplıkla tanımlanan türü genel makroları özel durumları uygulayan \<tgmath.h > ve katı türü uyumluluğu \<complex.h >. UCRT de büyük bir alt kümesini POSIX.1 uygular (ISO/IEC 9945-1:1996, POSIX sistem uygulama programı arabirimi) C Kitaplığı, ancak değil tam olarak belirli bir POSIX standart uyumluluğunu.  Ayrıca, çeşitli Microsoft özgü işlevler ve standart bir parçası olmayan makroları UCRT uygular.  
@@ -39,9 +40,9 @@ Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Stand
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Windows mağazası uygulamaları, Windows çalışma zamanı ve C çalışma zamanı](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Ne zaman UCRT yordamları Evrensel Windows uygulamaları veya Windows mağazası uygulamaları ile uyumlu olmayan açıklar.|  
-|[ANSI C uyumluluğu](../c-runtime-library/ansi-c-compliance.md)|Standart uyumlu UCRT adlandırma açıklar.|  
+|[Windows Mağazası Uygulamaları, Windows Çalışma Zamanı ve C Çalışma Zamanı](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Ne zaman UCRT yordamları Evrensel Windows uygulamaları veya Windows mağazası uygulamaları ile uyumlu olmayan açıklar.|  
+|[ANSI C Uyumluluğu](../c-runtime-library/ansi-c-compliance.md)|Standart uyumlu UCRT adlandırma açıklar.|  
 |[UNIX](../c-runtime-library/unix.md)|UNIX programlar taşıma için kılavuz bilgiler verilmektedir.|  
-|[Windows platformları (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT desteklediği işletim sistemleri listelenmektedir.|  
-|[Geriye dönük uyumluluk](../c-runtime-library/backward-compatibility.md)|Yenilerini eski CRT adlarını eşleştirmek açıklar.|  
-|[CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)|CRT kitaplık (.lib) dosyaları ve ilişkili derleyici seçenekleri genel bir bakış sağlar.|
+|[Windows Platformları (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT desteklediği işletim sistemleri listelenmektedir.|  
+|[Geriye Dönük Uyumluluk](../c-runtime-library/backward-compatibility.md)|Yenilerini eski CRT adlarını eşleştirmek açıklar.|  
+|[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)|CRT kitaplık (.lib) dosyaları ve ilişkili derleyici seçenekleri genel bir bakış sağlar.|

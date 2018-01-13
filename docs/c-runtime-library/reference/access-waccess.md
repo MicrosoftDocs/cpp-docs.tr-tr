@@ -42,11 +42,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8523e2f2e0a3550c6b996fa26387b278b6df94ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5c4d8c6d8caae8b36f372ce75b4fc91638f9e78e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="access-waccess"></a>_access, _waccess
 Bir dosya salt okunur olup olmadığını belirler. Daha güvenli sürümlerinde kullanılabilir; bkz: [_access_s, _waccess_s](../../c-runtime-library/reference/access-s-waccess-s.md).  

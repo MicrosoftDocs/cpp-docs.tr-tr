@@ -34,11 +34,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b5b529519840df87d829c34cd8bddf123b96754e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e2e1a15b371aa4f2997d453e2543123b279ac0df
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="heap-constants"></a>Yığın Sabitleri
 ## <a name="syntax"></a>Sözdizimi  
@@ -65,4 +66,4 @@ ms.lasthandoff: 10/24/2017
  [_heapchk](../c-runtime-library/reference/heapchk.md)   
  [_heapset](../c-runtime-library/heapset.md)   
  [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [Genel sabitler](../c-runtime-library/global-constants.md)
+ [Global Sabitler](../c-runtime-library/global-constants.md)

@@ -16,11 +16,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1a30742a538d941220cf099c33445089c9a907c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1c975aac0459a13a3fb95fdec3dff1a648b0efec
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="features-of-record-view-classes--mfc-data-access"></a>Kayıt görünümü sınıfları (MFC veri erişimi) özellikleri
 Form tabanlı veri erişimi programlama sınıfı ile yapabileceğiniz [Cformview'yu](../mfc/reference/cformview-class.md), ancak [CRecordView](../mfc/reference/crecordview-class.md) genellikle türetmek bir daha iyi bir sınıftır. Ek olarak kendi `CFormView` özellikleri `CRecordView`:  
@@ -35,4 +38,4 @@ Form tabanlı veri erişimi programlama sınıfı ile yapabileceğiniz [Cformvie
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt görünümleri (MFC veri erişimi)](../data/record-views-mfc-data-access.md)   
- [ODBC sürücü listesi](../data/odbc/odbc-driver-list.md)
+ [ODBC Sürücü Listesi](../data/odbc/odbc-driver-list.md)

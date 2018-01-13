@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 407a0f42d2657488c39b37444990703f7b77bd08
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 42fcc58bcbff7be7b3b595f5b46882d5434dc314
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cc-language-and-standard-libraries"></a>C/C++ dil ve standart kitaplıkları
 Bu bölümde belgelerin kılavuzları ve ISO standartları C ve C++ için Microsoft uygulaması için referans içerik içerir.  
@@ -30,7 +31,7 @@ Bu bölümde belgelerin kılavuzları ve ISO standartları C ve C++ için Micros
 |[C++ Dil Başvurusu](../cpp/cpp-language-reference.md)|C++ dilleri için referans içerik.|  
 |[C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md)|C++ Standart Kitaplığı Microsoft uygulaması için referans içerik.|  
 |[C Dil Başvurusu](../c-language/c-language-reference.md)|C dili Microsoft uygulaması için referans içerik.|
-|[C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md)|Başvuru içeriği için C çalışma zamanı (CRT) Microsoft uygulamasıdır.|
+|[C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)|Başvuru içeriği için C çalışma zamanı (CRT) Microsoft uygulamasıdır.|
 |[SafeInt Kitaplığı](../windows/safeint-library.md)|Tamsayı taşması riski olmadan işlemek işlevlerin bir kitaplık için referans içerik.|  
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Visual Studio ve bağlantıları Visual C++ belge geri kalanı için Visual C++ anahtar özelliklerini açıklar.|  
 |[IDE ve geliştirme araçları](../ide/ide-and-tools-for-visual-cpp-development.md)|Bağlantılar oluşturmak için Visual Studio ve ilgili araçlarını kullanma hakkında bilgi içeren diğer makalelere yapı ve C++ uygulamaları dağıtın.|  

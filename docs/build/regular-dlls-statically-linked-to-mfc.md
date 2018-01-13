@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: acf04ba49e8e99aa1f51e5181f063d8da86c40e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0fd5eee67b48fd4895cc73adfb72d34f0bd24d2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>Statik olarak MFC'ye bağlı normal MFC DLL'leri
 MFC DLL statik olarak MFC'ye bağlı normal MFC'yi dahili olarak kullanan DLL'dir ve MFC veya MFC dışı çalıştırılabilirler tarafından DLL dışarı aktarılan işlevler çağrılabilir. Adı açıklandığı gibi bu tür DLL MFC statik bağlantı kitaplık sürümü kullanılarak oluşturulur. İşlevler, genellikle bir normal standart C arabirimi kullanan MFC DLL dışarı aktarılır. Örnek örneği nasıl yazma, yapı ve normal bir MFC DLL kullanmak için bkz: [ile ilgili](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap).  
@@ -81,13 +82,13 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
 -   [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
   
--   [Normal MFC DLL'lerde veritabanı, OLE ve yuva MFC uzantı DLL'leri kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
+-   [Normal MFC DLL'lerinde Veritabanı, OLE ve Yuva MFC uzantısı DLL'leri Kullanma](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)  
   
 -   [MFC DLL oluşturma](../mfc/reference/mfc-dll-wizard.md)  
   
--   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
+-   [Dinamik Olarak MFC'ye Bağlı Normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
   
--   [MFC uzantı DLL'leri](../build/extension-dlls-overview.md)  
+-   [MFC uzantısı DLL’leri](../build/extension-dlls-overview.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL türleri](../build/kinds-of-dlls.md)
+ [DLL Türleri](../build/kinds-of-dlls.md)

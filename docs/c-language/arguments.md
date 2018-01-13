@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b043dab2232e9cdfb0eb9fa90a59dab267b4e1af
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54819766da9ebd002fa4990ca0b9650626b89015
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arguments"></a>Arguments
 Bir işlevdeki bağımsız değişkenler şu biçimde olabilir:  
@@ -91,4 +92,4 @@ swap( &x, &y )
  Derleyici, `swap` prototipi her parametreye yönelik bağımsız değişken türleri içerdiğinden `swap` bağımsız değişkenleri için tür denetimi gerçekleştirir. Prototip ve tanımın parantez içindeki tanımlayıcıları, aynı veya farklı olabilir. Önemli olan, hem prototipte hem de tanımda bağımsız değişken türlerinin parametre listelerindeki türlerle eşleşmesidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev çağrıları](../c-language/function-calls.md)
+ [İşlev Çağrıları](../c-language/function-calls.md)

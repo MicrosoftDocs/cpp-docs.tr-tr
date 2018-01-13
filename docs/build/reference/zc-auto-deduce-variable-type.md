@@ -19,11 +19,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 33804c3876d378fe8138795b78a26f36a52e3c96
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd2f0ff353e1243685c94da0c28f29e810b2a9ef
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 **/Zc:auto [-]** derleyici seçeneği derleyici nasıl kullanılacağını söyler [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md) değişkenleri bildirmek için. Varsayılan seçenek belirtirseniz, **/Zc:auto**, derleyici, başlatma ifadesinden bildirilen değişkeninin türü deduces. Belirtirseniz **/Zc:auto-**, otomatik depolama sınıfı değişkenine derleyici ayırır.  
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)   
- [Auto anahtar sözcüğü](../../cpp/auto-keyword.md)
+ [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

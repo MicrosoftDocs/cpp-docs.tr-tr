@@ -15,11 +15,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: ed7868a1f9c0f5d163928c85a09577b9d6db2f37
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cd6a2440ea5f3ad708fcd6f569e701e2f47f74a0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections Namespace (C + +/ CX)
 C + +/ CX Windows::Foundation::Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanarak basitleştirmek işlevlerle tamamlar.  
@@ -39,10 +40,10 @@ namespace Windows {
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[back_inserter işlevi](../cppcx/back-inserter-function.md)|Bir koleksiyonun sonuna bir değer eklemek için kullanılan bir yineleyici döndürür.|  
-|[İşlev başlayın](../cppcx/begin-function.md)|Yineleyici işaret koleksiyonunun başına döndürür.|  
-|[Son işlevi](../cppcx/end-function.md)|Yineleyici işaret ötesinde bir koleksiyon döndürür.|  
-|[to_vector işlevi](../cppcx/to-vector-function.md)|Bir koleksiyon bir std::vector olarak döndürür.|  
+|[back_inserter İşlevi](../cppcx/back-inserter-function.md)|Bir koleksiyonun sonuna bir değer eklemek için kullanılan bir yineleyici döndürür.|  
+|[begin İşlevi](../cppcx/begin-function.md)|Yineleyici işaret koleksiyonunun başına döndürür.|  
+|[end İşlevi](../cppcx/end-function.md)|Yineleyici işaret ötesinde bir koleksiyon döndürür.|  
+|[to_vector İşlevi](../cppcx/to-vector-function.md)|Bir koleksiyon bir std::vector olarak döndürür.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** collection.h  

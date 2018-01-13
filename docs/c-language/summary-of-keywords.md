@@ -13,25 +13,26 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a41ffad94af09cb4228aadb901004ed4de9b7522
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 74a48a8f087bc70cda0ba7fb61772646d1446aa5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="summary-of-keywords"></a>Anahtar Sözcüklerin Özeti
 *anahtar sözcüğü* : biri  
   
 |||||  
 |-|-|-|-|  
-|**Otomatik**|**çift**|`int`|`struct`|  
-|**sonu**|**else**|**uzun**|`switch`|  
+|**Otomatik**|**double**|`int`|`struct`|  
+|**break**|**else**|**long**|`switch`|  
 |**durumu**|`enum`|**kaydetme**|`typedef`|  
 |`char`|`extern`|`return`|**birleşim**|  
-|**const**|**kayan nokta**|**kısa**|`unsigned`|  
-|**devam etmek**|**için**|**İmzalı**|`void`|  
-|**Varsayılan**|`goto`|`sizeof`|`volatile`|  
-|**yapın**|**Eğer**|**statik**|`while`|  
+|**const**|**float**|**short**|`unsigned`|  
+|**continue**|**for**|**İmzalı**|`void`|  
+|**default**|`goto`|`sizeof`|`volatile`|  
+|**do**|**Eğer**|**static**|`while`|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük dilbilgisi](../c-language/lexical-grammar.md)
+ [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

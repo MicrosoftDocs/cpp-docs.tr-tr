@@ -35,11 +35,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b3285e266091a902373f0bfd7b70b9c1123c19f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4cd751c88e5af3fde5c0f5415520a2c634a1958e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rtcseterrorfuncw"></a>_RTC_SetErrorFuncW
 Çalışma zamanı hata denetimleri (RTCs) raporlaması için işleyici olarak bir işlev belirler.  
@@ -107,4 +108,4 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)   
- [Çalışma zamanı hata denetimi](../../c-runtime-library/run-time-error-checking.md)
+ [Çalışma Zamanı Hata Denetimi](../../c-runtime-library/run-time-error-checking.md)

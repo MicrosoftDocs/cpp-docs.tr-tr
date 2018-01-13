@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 61e26b60916712e10c1c0fa5b255aa7bf2bc1fd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9cd5a1844bfeec798ee25a3cb8e65efd019e65e9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="typeinfo-class"></a>type_info Sınıfı
 **Type_info** sınıfı programında derleyici tarafından üretilen türü bilgileri açıklar. Bu sınıfın nesneleri, tür için bir ada etkili şekilde bir işaretçi depolar. **Type_info** sınıfı, iki tür eşitlik için karşılaştırılması veya harmanlama sırası için uygun kodlanmış bir değer de depolar. Türler için kodlama kurallarını ve harmanlama sırası belirsizdir ve programdan programa farklılık gösterebilir.  
@@ -56,4 +57,4 @@ public:
  Tür bilgilerini çok biçimli sınıflar serileştirilebilmesi için oluşturulan [/GR (çalışma zamanı türü bilgileri etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği belirtildi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı türü bilgileri](../cpp/run-time-type-information.md)
+ [Çalışma Zamanı Tür Bilgileri](../cpp/run-time-type-information.md)

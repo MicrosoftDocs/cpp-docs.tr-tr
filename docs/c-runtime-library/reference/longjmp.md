@@ -30,11 +30,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 25023a1bfa0854d628931d5de9a852cae1d88ba5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 864aacbc30d9d50e1d0335d0d74c7ed63119d132
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="longjmp"></a>longjmp
 Geri Yükleme ortamını ve yürütme yerel yığın.  
@@ -53,7 +54,7 @@ Geri Yükleme ortamını ve yürütme yerel yığın.
  `env`  
  Ortam depolandığı değişken.  
   
- *değer*  
+ *value*  
  İçin döndürülecek değer `setjmp` çağırın.  
   
 ## <a name="remarks"></a>Açıklamalar  

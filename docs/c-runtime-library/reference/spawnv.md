@@ -28,11 +28,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1f085bd55fdf357f9d18282fe1caa7d312d6114b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7c5c0258e8dcddedce0752377342c039fd44ec15
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="spawnv"></a>spawnv
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_spawnv](../../c-runtime-library/reference/spawnv-wspawnv.md) yerine.  

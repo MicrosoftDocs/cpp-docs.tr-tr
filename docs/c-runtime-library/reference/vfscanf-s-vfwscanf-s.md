@@ -32,11 +32,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6f6ffb0f0c4ad4e53c19daa226e12517efab315f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c1012a87cd2f5b73818000877216839f881c309c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vfscanfs-vfwscanfs"></a>vfscanf_s, vfwscanf_s
 Okuma akışı verilerden biçimlendirilmiş. Bu sürümlerine vfscanf, vfwscanf sahip güvenlik geliştirmeleri açıklandığı gibi [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

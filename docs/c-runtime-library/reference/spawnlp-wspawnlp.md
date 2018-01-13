@@ -41,11 +41,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d0453ce194e9321393f87ed492b92cf3ae11d4bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c3b68a8e404dcfce1b1cf98a092dc9bc17435ffb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="spawnlp-wspawnlp"></a>_spawnlp, _wspawnlp
 Oluşturur ve yeni bir işlem yürütür.  
@@ -132,4 +133,4 @@ intptr_t _wspawnlp(
  [_getmbcp](../../c-runtime-library/reference/getmbcp.md)   
  [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)   
  [_setmbcp](../../c-runtime-library/reference/setmbcp.md)   
- [Sistem, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+ [system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)

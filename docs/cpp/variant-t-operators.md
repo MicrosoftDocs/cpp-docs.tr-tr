@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e051d0b1b7e50392a0027301d2ca8dd170b8d44
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0fda515b152dca597c2712b65a26efb5acb780ae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="variantt-operators"></a>_variant_t İşleçleri
 Hakkında bilgi için **_variant_t** işleçleri bkz [_variant_t sınıfı](../cpp/variant-t-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_variant_t sınıfı](../cpp/variant-t-class.md)
+ [_variant_t Sınıfı](../cpp/variant-t-class.md)

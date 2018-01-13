@@ -25,11 +25,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9a804d38fa14fd77a68c53504814503042c2234a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 396f2a314c185f39593c92745346f988d666980f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="customizing-c-command-line-processing"></a>C++ Komut Satırı İşlemini Özelleştirme
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -42,4 +43,4 @@ ms.lasthandoff: 10/24/2017
 **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main: Program başlatma](../cpp/main-program-startup.md)
+ [main: Program Başlatma](../cpp/main-program-startup.md)

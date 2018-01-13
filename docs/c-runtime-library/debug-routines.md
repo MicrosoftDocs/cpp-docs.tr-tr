@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 25bbbfae7e12154f9e64540ce9f5e8bdb7ebef42
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 158a3b782ffedc7bd206f400c066c052062ad402
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="debug-routines"></a>Hata Ayıklama Yordamları
 C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama programları kolaylaştırmak ve geliştiricilerin izin veren çok sayıda tanı hizmetleri sağlar:  
@@ -50,9 +51,9 @@ C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama progra
 |[_CrtDbgReport, _CrtDbgReportW](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)|Bir kullanıcı iletiyle hata ayıklama rapor oluşturmak ve üç olası hedeflere raporu gönder|  
 |[_CrtDoForAllClientObjects](../c-runtime-library/reference/crtdoforallclientobjects.md)|Tüm uygulama tarafından sağlanan bir işlevi çağırmak `_CLIENT_BLOCK` yığınındaki türler|  
 |[_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md)|Önemli bellek sızıntısı oluştuğunda hata ayıklama yığınındaki bellek blokları tümünün dökümü|  
-|[_Crtısmemoryblock](../c-runtime-library/reference/crtismemoryblock.md)|Belirtilen bellek bloğu yerel yığın içinde bulunur ve geçerli hata ayıklama yığını blok türü tanımlayıcısı olduğundan emin olun|  
-|[_Crtısvalidheappointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Belirtilen bir işaretçi yerel yığınında olduğunu doğrular|  
-|[_Crtısvalidpointer](../c-runtime-library/reference/crtisvalidpointer.md)|Belirtilen bellek aralığı okuma ve yazma için geçerli olduğunu doğrulayın|  
+|[_CrtIsMemoryBlock](../c-runtime-library/reference/crtismemoryblock.md)|Belirtilen bellek bloğu yerel yığın içinde bulunur ve geçerli hata ayıklama yığını blok türü tanımlayıcısı olduğundan emin olun|  
+|[_CrtIsValidHeapPointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Belirtilen bir işaretçi yerel yığınında olduğunu doğrular|  
+|[_CrtIsValidPointer](../c-runtime-library/reference/crtisvalidpointer.md)|Belirtilen bellek aralığı okuma ve yazma için geçerli olduğunu doğrulayın|  
 |[_CrtMemCheckpoint](../c-runtime-library/reference/crtmemcheckpoint.md)|Hata ayıklama yığınını geçerli durumunu almak ve bir uygulama tarafından sağlanan içinde depolamak `_CrtMemState` yapısı|  
 |[_CrtMemDifference](../c-runtime-library/reference/crtmemdifference.md)|Önemli farklılıklar iki bellek durumlarını karşılaştırın ve sonuçları döndürür|  
 |[_CrtMemDumpAllObjectsSince](../c-runtime-library/reference/crtmemdumpallobjectssince.md)|Belirtilen bir denetim noktası alındıktan sonra yığında veya program yürütme başından nesneler hakkındaki bilgileri dökümü|  
@@ -71,7 +72,7 @@ C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama progra
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Bellek blokları ek alana sahip yığında belirtilen sayıda için hata ayıklama üstbilgi ayırmak ve arabellekleri üzerine yaz|  
 |[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Belirtilen bir öbek üzerinde bellek bloğu genişletme veya blok daraltılırken yeniden boyutlandırma|  
 |[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Yığın bellek bloğu boş|  
-|[_wfullpath_dbg olan _fullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Belirtilen göreli yol için bir mutlak veya tam yol adı oluşturma kullanarak ad [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|[System::IO::File:: oluşturma](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)|  
+|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Belirtilen göreli yol için bir mutlak veya tam yol adı oluşturma kullanarak ad [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|[System::IO::File:: oluşturma](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)|  
 |[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Geçerli çalışma dizini get kullanarak [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|  
 |[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Bir ek alana sahip yığında bellek bloğu için hata ayıklama üstbilgi ayırın ve arabellekleri üzerine yazma|  
 |[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Yığın bellek bloğu boyutu hesaplanamadı|  
@@ -85,7 +86,7 @@ C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama progra
   
 ||||  
 |-|-|-|  
-|[ACOS, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|[_fpclass](../c-runtime-library/reference/fpclass-fpclassf.md)|[_nextafter](../c-runtime-library/reference/nextafter-functions.md)|  
+|[acos, acosf, acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|[_fpclass](../c-runtime-library/reference/fpclass-fpclassf.md)|[_nextafter](../c-runtime-library/reference/nextafter-functions.md)|  
 |[asin](../c-runtime-library/reference/asin-asinf-asinl.md)|[_fpieee_flt](../c-runtime-library/reference/fpieee-flt.md)|[POW](../c-runtime-library/reference/pow-powf-powl.md)|  
 |[atan, atan2](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|[_fpreset](../c-runtime-library/reference/fpreset.md)|[Printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md), [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)*|  
 |[_cabs](../c-runtime-library/reference/cabs.md)|[frexp](../c-runtime-library/reference/frexp.md)|[_scalb](../c-runtime-library/reference/scalb.md)|  
@@ -115,4 +116,4 @@ C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama progra
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)   
- [Çalışma zamanı hata denetimi](../c-runtime-library/run-time-error-checking.md)
+ [Çalışma Zamanı Hata Denetimi](../c-runtime-library/run-time-error-checking.md)

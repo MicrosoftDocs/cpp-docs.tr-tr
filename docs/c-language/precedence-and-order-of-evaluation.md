@@ -18,36 +18,37 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 38dfcb75db204a501cb3669a5ba292037d7b7759
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0baad2e1003898e84169e20d3c8a839b8865a7e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandırılmasını ve değerlendirilmesini etkiler. Bir işlecin önceliği, daha yüksek veya daha düşük önceliğe sahip başka işleçler varsa bir anlam ifade eder. Önce daha yüksek önceliğe sahip işleçler değerlendirilir. Öncelik, "bağlama" sözcüğüyle de açıklanabilir. Daha yüksek önceliğe sahip işleçlerin daha sıkı bağlamaya sahip olduğu söylenir.  
   
  Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (işlenenlerin değerlendirilme sırası) özetlenmekte ve öncelikleri en yüksekten en düşüğe listelenmektedir. Birkaç işlecin birlikte göründüğü yerlerde, bu işleçler aynı önceliğe sahip olur ve ilişkilendirilebilirliklerine göre değerlendirilir. Tablodaki işleçler itibaren bölümlerde açıklanan [sonek işleçleri](../c-language/postfix-operators.md). Bu bölümün geri kalanında, öncelik ve ilişkilendirilebilirlik hakkında genel bilgiler verilmektedir.  
   
-### <a name="precedence-and-associativity-of-c-operators"></a>C İşleçlerinin Önceliği ve İlişkilendirilebilirliği  
+## <a name="precedence-and-associativity-of-c-operators"></a>C İşleçlerinin Önceliği ve İlişkilendirilebilirliği  
   
-|Simge1|İşlem Türü|İlişkilendirilebilirlik|  
+|Sembol <sup>1</sup>|İşlem Türü|İlişkilendirilebilirlik|  
 |-------------|-----------------------|-------------------|  
-|**[ ] ( ) . ->** sonek `++` ve sonek**--**|İfade|Soldan sağa|  
-|önek `++` ve önek **--sizeof & \* + - ~!**|Birli|Sağdan sola|  
+|**\[ ] ( ) . ->**<br /><br />**++** **--**  (sonek)|İfade|Soldan sağa|  
+**sizeof & \* + - ~!**<br /><br />**++--** (önek)|Birli|Sağdan sola|  
 |*işaretçisine tür olarak atar*|Birli|Sağdan sola|  
 |**\* / %**|Çarpma|Soldan sağa|  
 |**+ -**|ADDITIVE|Soldan sağa|  
-|**<\< >>**|Bit düzeyinde kaydırma|Soldan sağa|  
+|**\<\< >>**|Bit düzeyinde kaydırma|Soldan sağa|  
 |**\< > \<= >=**|İlişkisel|Soldan sağa|  
 |**== !=**|Eşitlik|Soldan sağa|  
 |**&**|Bit düzeyinde AND|Soldan sağa|  
 |**^**|Bit düzeyinde dışlamalı OR|Soldan sağa|  
 |**&#124;**|Bit düzeyinde kapsamalı OR|Soldan sağa|  
 |**&&**|Mantıksal AND|Soldan sağa|  
-|`&#124;&#124;`|Mantıksal OR|Soldan sağa|  
+|**&#124;&#124;**|Mantıksal OR|Soldan sağa|  
 |**? :**|Koşullu ifade|Sağdan sola|  
-|**= \*= /= %=**<br /><br /> **+= -= <\<= >>=&=**<br /><br /> **^= &#124;=**|Basit ve bileşik atama2|Sağdan sola|  
+|**= \*= /= %=**<br /><br /> **+= -= \<\<= >>= &=**<br /><br /> **^= &#124;=**|Basit ve bileşik atama <sup>2</sup>|Sağdan sola|  
 |**,**|Sıralı değerlendirme|Soldan sağa|  
   
  1. İşleçler, öncelik sırasına göre azalan olarak listelenmiştir. Aynı satırda veya grupta birkaç işleç görünüyorsa, bunlar eşit önceliğe sahip olur.  
@@ -60,22 +61,20 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
   
  Mantıksal işleçler de işlenenlerinin soldan sağa değerlendirilmesini garanti eder. Bununla birlikte, ifadenin sonucunu belirlemek için gereken en az sayıda işleneni değerlendirirler. Buna "kısa devre" değerlendirmesi adı verilir. Bu nedenle, ifadenin bazı işlenenleri değerlendirilmeyebilir. Örneğin, ifadede  
   
-```  
-x && y++  
-```  
+`x && y++`  
   
  ikinci işlenen `y++`, yalnızca `x` true (sıfırdan farklı) olduğunda değerlendirilir. Bu nedenle, `y``x` yanlış (0) olduğunda artmaz.  
   
- **Örnekler**  
+## <a name="examples"></a>Örnekler
   
  Aşağıdaki listede, derleyicinin bazı örnek ifadeleri otomatik olarak nasıl bağladığı gösterilmektedir:  
-  
+
 |İfade|Otomatik Bağlama|  
 |----------------|-----------------------|  
-|`a & b &#124;&#124; c`|`(a & b) &#124;&#124; c`|  
-|`a = b &#124;&#124; c`|`a = (b &#124;&#124; c)`|  
-|`q && r &#124;&#124; s--`|`(q && r) &#124;&#124; s--`|  
-  
+|bir & b &#124; &#124; c|(bir & b) &#124; &#124; c|  
+|bir = b &#124; &#124; c|bir = (b &#124; &#124; c)|  
+|q & & r &#124; &#124; s--|(q & & r) &#124; &#124; s--|  
+
  İlk ifadede, bit düzeyinde AND işleci (`&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `a & b` mantıksal OR işleminin ilk işlenenini oluşturur.  
   
  İkinci ifadede, mantıksal OR işleci (`||`) basit atama işlecine (`=`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `b || c` atamada sağ işlenen olarak gruplandırılır. `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.  
@@ -86,13 +85,11 @@ x && y++
   
 |Geçersiz İfade|Varsayılan Gruplandırma|  
 |------------------------|----------------------|  
-|`p == 0 ? p += 1: p += 2`|`( p == 0 ? p += 1 : p ) += 2`|  
+|p == 0? p += 1: p += 2|(p == 0? p += 1: p) += 2|  
   
  Bu ifadede, eşitlik işleci (`==`) en yüksek önceliğe sahiptir, bu nedenle `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (`? :`) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:  
   
-```  
-( p == 0 ) ? ( p += 1 ) : ( p += 2 )  
-```  
+`( p == 0 ) ? ( p += 1 ) : ( p += 2 )`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C işleçleri](../c-language/c-operators.md)
+ [C İşleçleri](../c-language/c-operators.md)

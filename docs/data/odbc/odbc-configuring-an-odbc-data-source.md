@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8e347683a079227226513ce82f9623860e826228
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 5bf7d2b1708e74d50adb417f531c741a467ed889
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-configuring-an-odbc-data-source"></a>ODBC: ODBC Veri Kaynağını Yapılandırma
 Kullanılacak bir [veri kaynağı](../../data/odbc/data-source-odbc.md) geliştirdiğinizde uygulamayla yapılandırmak için ODBC Yöneticisi kullanmanız gerekir. ODBC Yöneticisi kullanılabilir veri kaynaklarını ve bunların bağlantı bilgileri Windows kayıt defterinde izler. Eklemek, değiştirmek ve veri kaynaklarını silmek için ODBC Yöneticisi'ni kullanma **veri kaynakları** iletişim kutusu ekleyin ve ODBC sürücüleri silin.  
@@ -35,4 +38,4 @@ Kullanılacak bir [veri kaynağı](../../data/odbc/data-source-odbc.md) gelişti
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ODBC temelleri](../../data/odbc/odbc-basics.md)   
- [ODBC: ODBC API işlevlerini doğrudan çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)
+ [ODBC: ODBC API İşlevlerini Doğrudan Çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)

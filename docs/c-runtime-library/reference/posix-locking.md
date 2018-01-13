@@ -28,11 +28,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8534140ef0bed76c270a5e16dddd1f4a81bd335f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 658e25af3e7e948f5337c11fb80d4373810282cd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="locking"></a>kilitleme
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_locking](../../c-runtime-library/reference/locking.md) yerine.

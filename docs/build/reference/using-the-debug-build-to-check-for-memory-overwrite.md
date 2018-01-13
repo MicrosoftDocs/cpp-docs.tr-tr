@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7b8fc223a1e4e1162ce99bb3275152c49828aa99
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f18a13992e41cd88bc8edec44f16b02da38ad10c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
 Belleğin üzerine yazma için denetlemek için hata ayıklama derlemesi kullanmak için ilk projeniz hata ayıklama için yeniden oluşturmanız gerekir. Ardından, uygulamanızın çok başlangıcına Git `InitInstance` işlev ve aşağıdaki satırı ekleyin:  
@@ -48,4 +49,4 @@ ASSERT(AfxCheckMemory());
  Uygulamanızı yapısına bağlı açamayabilirsiniz `afxMemDF` programınızı bile test etmek için çok yavaş çalışmasına neden olur. `afxMemDF` Değişkeni neden `AfxCheckMemory` her çağrı için yeni çağrılması ve silmek için. Bu durumda, kendi çağrıları dağılım `AfxCheckMemory`(yukarıda gösterildiği gibi) ve bellek ayırmak için try üzerine bu şekilde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın derlemesi sorunlarını giderme](../../build/reference/fixing-release-build-problems.md)
+ [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

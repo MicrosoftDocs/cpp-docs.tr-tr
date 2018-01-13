@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4f708944b6feeecf36701d43183113b1c9356512
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8d9f3e165ee8ffdfe2fa57088f7a838612068fb0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="program-termination"></a>Program Sonlandırma
 C++'da, bir programdan çıkmak için birkaç yolu vardır:  
@@ -34,4 +35,4 @@ C++'da, bir programdan çıkmak için birkaç yolu vardır:
 -   Yürütme bir [dönmek](../cpp/return-statement-in-program-termination-cpp.md) from deyimi **ana**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Main: Program başlatma](../cpp/main-program-startup.md)
+ [main: Program Başlatma](../cpp/main-program-startup.md)

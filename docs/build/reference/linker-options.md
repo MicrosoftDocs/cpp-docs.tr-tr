@@ -19,11 +19,12 @@ caps.latest.revision: "37"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 44eeffb4305ab997e8f75bbf7c505c65456d9b0d
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload: cplusplus
+ms.openlocfilehash: f64f9bb94f6809ecfa189cd012dd0494506a3ca4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linker-options"></a>Bağlayıcı Seçenekleri
 
@@ -31,13 +32,13 @@ Genel nesne dosya biçimi (COFF) nesne dosyaları ve kitaplıkları bir yürüt�
 
 Aşağıdaki tabloda LINK.exe seçeneklerini listeler. BAĞLANTI hakkında daha fazla bilgi için bkz:
 
-- [Derleyici denetimindeki LINK seçenekleri](../../build/reference/compiler-controlled-link-options.md)
+- [Derleyici Denetimindeki LINK Seçenekleri](../../build/reference/compiler-controlled-link-options.md)
 
-- [LINK giriş dosyaları](../../build/reference/link-input-files.md)
+- [LINK Giriş Dosyaları](../../build/reference/link-input-files.md)
 
-- [LINK çıktısı](../../build/reference/link-output.md)
+- [LINK Çıktısı](../../build/reference/link-output.md)
 
-- [Ayrılmış sözcükler](../../build/reference/reserved-words.md)
+- [Ayrılmış Sözcükler](../../build/reference/reserved-words.md)
 
 Komut satırında bağlayıcı seçenekleri büyük küçük harfe duyarlı değildir; Örneğin, / temel ve /BASE aynı şeyi anlamına gelir. Komut satırında veya Visual Studio'da her seçenek belirtme hakkında daha fazla bilgi için bu seçeneği belgelerine bakın.
 
@@ -141,5 +142,5 @@ Daha fazla bilgi için bkz: [Compiler-Controlled bağlantı seçenekleri](../../
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)  
-[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)  
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)  
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  

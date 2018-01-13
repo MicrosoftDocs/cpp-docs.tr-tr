@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: daff74e0b25c43d89a2a45813e285a2222599a72
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2d5ec29b7348d858b502f292efd797020a17bfa0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="return-statement-c"></a>return Deyimi (C)
 `return` Deyimi bir işlev yürütülmesi sonlandırır ve denetim çağıran işleve geri döndürür. Çağrının hemen ardından noktada arama işlevinde yürütme sürdürür. A `return` deyimi bir değer de çağıran işleve geri dönebilirsiniz. Bkz: [dönüş türü](../c-language/return-type.md) daha fazla bilgi için.  
@@ -76,4 +77,4 @@ i = 2147483647, ll = 4611686014132420609
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimleri](../c-language/statements-c.md)
+ [Deyimler](../c-language/statements-c.md)

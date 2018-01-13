@@ -29,11 +29,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 30c47c43c5929eb0c10c584e20e485b9bb724e94
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dc86603127404fe26d6e826d2903733136411c92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ismbbblank-ismbbblankl"></a>_ismbbblank, _ismbbblank_l
 Belirtilen birden çok baytlı karakter boşluk karakteri olup olmadığını belirler.  
@@ -74,4 +75,4 @@ int _ismbbblank_l(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)   
- [_ismbb rutinleri](../../c-runtime-library/ismbb-routines.md)
+ [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)

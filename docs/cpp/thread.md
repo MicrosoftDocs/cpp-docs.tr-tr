@@ -19,16 +19,17 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d81cd7e569cd2baa8ab50b1904fa3ac15b36d0b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b26487e7f5f11bb32f418b438e9d0396b5854a91
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="thread"></a>thread
 
 **Microsoft özel**  
-**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi iş parçacığı yerel değişken bildirmek için kullanılır. Taşınabilir için eşdeğer C ++ 11 ve sonraki sürümleri, kullanın [thread_local](../cpp/storage-classes-cpp.md#thread_local) depolama sınıfı tanımlayıcısı.
+**İş parçacığı** genişletilmiş depolama sınıfı değiştiricisi iş parçacığı yerel değişken bildirmek için kullanılır. Taşınabilir için eşdeğer C ++ 11 ve sonraki sürümleri, kullanın [thread_local](../cpp/storage-classes-cpp.md#thread_local) taşınabilir kodu için depolama sınıfı tanımlayıcısı. Windows **thread_local** ile uygulanan **__declspec(thread)**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -46,13 +47,18 @@ __declspec( thread ) declarator
 __declspec( thread ) int tls_i = 1;  
 ```
 
-İş parçacığı yerel nesneleri ve değişkenleri bildirirken bu yönergelere uymanız gerekir:
+İş parçacığı yerel değişkenleri dinamik olarak yüklenen kitaplıklarında kullanırken, bir iş parçacığı yerel değişken düzgün başlatılmamış neden olan faktörleri bilmeniz gerekir:
+
+1) Değişkeni (oluşturucular dahil) bir işlev çağrısı ile başlatılırsa, bu işlevi yalnızca ikili/DLL yüklendikten sonra başlatılan bu iş parçacıkları ve ikili / işlemine yüklemek için DLL neden iş parçacığı için çağrılır. DLL yüklendiğinde, zaten çalışıyordu herhangi başka bir iş parçacığı için başlatma işlevleri adı değil. Dinamik başlatma DllMain DllMain çağrısı ancak DLL hiçbir iş parçacığı başladığında DLL işleminde değilse, ileti alır oluşur. 
+
+2) Statik olarak sabit değerlerle başlatılan iş parçacığı yerel değişkenler genellikle tüm iş parçacıklarında düzgün başlatılır. Ancak, aralık 2017 itibariyle yoktur bilinen uyumluluk sorunu Microsoft C++ derleyicinin yapabildiği constexpr değişkenleri almak yerine statik başlatma dinamik.  
+  
+   Not: Bu sorunların hem de gelecekte derleyici güncelleştirmeleri düzeltilmesi beklenir.
+
+
+Ayrıca, bu yönergeleri iş parçacığı yerel nesneleri ve değişkenleri bildirirken uymanız gerekir:
 
 - Uygulayabileceğiniz **iş parçacığı** özniteliği yalnızca sınıfı ve veri bildirimler ve tanımlar; için **iş parçacığı** işlevi bildirimlerinde veya tanımlarında kullanılamaz.
-
-- Kullanımını **iş parçacığı** özniteliği engelliyor olabilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL'SİNİN alır.
-
-- XP sistemlerine **iş parçacığı** DLL __declspec(thread) verileri kullanır ve dinamik olarak LoadLibrary yüklenirse düzgün çalışmayabilir.
 
 - Belirleyebileceğiniz **iş parçacığı** yalnızca veri öğeleri statik depolama süresi ile özniteliği. Bu genel veri nesnelerini içerir (her ikisi de **statik** ve **extern**), yerel statik nesneler ve sınıflar statik veri üyeleri. Otomatik veri nesneleri ile bildiremezsiniz **iş parçacığı** özniteliği.
 
@@ -94,5 +100,5 @@ __declspec( thread ) int tls_i = 1;
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [__declspec](../cpp/declspec.md)  
-[Anahtar sözcükler](../cpp/keywords-cpp.md)  
-[İş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+[İş Parçacığında Yerel Depolama (TLS)](../parallel/thread-local-storage-tls.md)

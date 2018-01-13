@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fee64f3d5c5e26783745961f4aa5dc076dd472c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3d4acb0acec44d695bd4c03ffa102a0ac42971b9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-operators"></a>C İşleçleri
 C işleçleri alt kümesi olan [C++ yerleşik işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md).  

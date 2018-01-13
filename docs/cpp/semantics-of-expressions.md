@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6c41ed94dcaee6632c3db7ae8590d570bb0e06c0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: efdf3f67e488af0e7c20c882552b18c533a031b7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ([İşleç önceliği ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md) içinde [sözcük kuralları](../cpp/lexical-conventions.md), işleçler zorunlu tuttukları ifadeleri C++ ilişkileri gösterir.)  

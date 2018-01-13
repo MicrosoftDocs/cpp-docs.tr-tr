@@ -40,11 +40,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 799cb3a867af9695fcb72ae6d681168f604d880f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fe47ee058f6dc4a33013e4773a7b3a057056b380
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 Bellek sızıntısı (yalnızca hata ayıklama sürümü) oluştuğunda dökümleri tüm bellek hata ayıklama yığınında engeller.  
@@ -85,4 +86,4 @@ int _CrtDumpMemoryLeaks( void );
  Nasıl kullanılacağına ilişkin bir örnek için `_CrtDumpMemoryLeaks`, bkz: [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)
+ [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

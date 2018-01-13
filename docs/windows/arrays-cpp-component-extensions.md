@@ -23,11 +23,14 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a2f0f4100344fbb2990e9feeb2b455642852c320
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 343f2369260531e828ea8db27cee5e52ea18fd31
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 `Platform::Array<T>` Türü C + +/ CX, veya `array` anahtar sözcüğü C + +/ CLI, belirtilen tür ve ilk değer bir dizi bildirir.  
@@ -40,9 +43,9 @@ ms.lasthandoff: 10/24/2017
   
  Dizileri hakkında daha fazla bilgi için bkz:  
   
--   [Nasıl yapılır: dizileri C + kullanma +/ CLI](../dotnet/how-to-use-arrays-in-cpp-cli.md)  
+-   [Nasıl yapılır: C++/CLI Üzerinde Dizi Kullanma](../dotnet/how-to-use-arrays-in-cpp-cli.md)  
     
--   [Değişken bağımsız değişken listeleri (...) (C + +/ CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
+-   [Değişken Bağımsız Değişken Listeleri (...) (C++/CLI)](../windows/variable-argument-lists-dot-dot-dot-cpp-cli.md)  
   
 ## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
  Diziler üyeleri olan `Platform` ad alanı. Diziler yalnızca tek boyutlu olabilir.  
@@ -172,4 +175,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

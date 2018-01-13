@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a50d9624c617904144ba9173a5e7fa0ce2064508
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8656d1c9f5f08e8736ee83705ea2daf9031c2446
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="initializing-aggregate-types"></a>Toplama Türlerini Başlatma
 Bir "aggregate" yapısı, UNION veya dizi türü türüdür. Bir toplama türü toplama türleri üyeleri içeriyorsa, başlatma kurallar yinelemeli olarak uygulanır.  

@@ -16,36 +16,37 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a61d2d7679542059a40c8ae6b2c3eb03910ec2b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d3b016fb60670dc8674691c52d593b468e597eed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="x64-software-conventions"></a>x64 Yazılım Kuralları
 Bu bölümde Visual C++ kuralı yöntemi çağırma açıklanmaktadır [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)], x86 64-bit uzantısı mimarisi.  
   
--   [X64 genel bakış çağırma kuralları](../build/overview-of-x64-calling-conventions.md)  
+-   [x64 Çağırma Kurallarına Genel Bakış](../build/overview-of-x64-calling-conventions.md)  
   
--   [Türler ve depolama](../build/types-and-storage.md)  
+-   [Türler ve Depolama](../build/types-and-storage.md)  
   
--   [YAZMAÇ kullanımı](../build/register-usage.md)  
+-   [Yazmaç Kullanımı](../build/register-usage.md)  
   
--   [Çağırma kuralı](../build/calling-convention.md)  
+-   [Çağırma Kuralı](../build/calling-convention.md)  
   
--   [Yığın kullanımı](../build/stack-usage.md)  
+-   [Yığın Kullanımı](../build/stack-usage.md)  
   
--   [Giriş ve bitiş](../build/prolog-and-epilog.md)  
+-   [Giriş ve Bitiş](../build/prolog-and-epilog.md)  
   
--   [Özel durum işleme](../cpp/exception-handling-in-visual-cpp.md)  
+-   [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)  
   
--   [Yapı içi değerler ve satır içi derleme](../build/intrinsics-and-inline-assembly.md)  
+-   [Yapı İçi Değerler ve Satır İçi Derleme](../build/intrinsics-and-inline-assembly.md)  
   
--   [Görüntü biçimi](../build/image-format.md)  
+-   [Görüntü Biçimi](../build/image-format.md)  
   
  Aşağıdaki derleyici seçeneği, uygulamanız için en iyi hale getirmenize yardımcı [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]:  
   
 -   [/ favor (Mimari özellikleri için iyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralları](../cpp/calling-conventions.md)
+ [Çağırma Kuralları](../cpp/calling-conventions.md)

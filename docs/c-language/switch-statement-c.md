@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b66e9f40e3fb7f4c9a6c9f6fcb9bcd9c2a45fdd3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 84594f668d0fc807ebb815cc519c7d45f62e8b12
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C)
 `switch` Ve **durumda** deyimleri Yardım denetim karmaşık koşullu ve dallanma işlemler. `switch` Deyimi deyimi kendi gövdesi içinde denetim aktarır.  
@@ -137,4 +138,4 @@ case 'f' :  hexcvt(c);
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [switch deyimi (C++)](../cpp/switch-statement-cpp.md)
+ [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

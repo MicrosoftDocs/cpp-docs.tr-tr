@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c34afdb71468d4ecba554a5a1b01768bddc2a517
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fbbf3d5f20c7935dbf8d600c2380929e05c0a367
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="domain-errors"></a>Etki Alanı Hataları
 **ANSI 4.5.1** etki alanı hataları matematik işlevleri tarafından döndürülen değerler  
@@ -26,4 +27,4 @@ ms.lasthandoff: 10/24/2017
  ERRNO. H dosyası tanımlar etki hata sabiti `EDOM` 33 olarak.  Dönüş değeri hakkında bilgi için hata nedeniyle belirli işlevi için Yardım konusuna bakın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık işlevleri](../c-language/library-functions.md)
+ [Kitaplık İşlevleri](../c-language/library-functions.md)

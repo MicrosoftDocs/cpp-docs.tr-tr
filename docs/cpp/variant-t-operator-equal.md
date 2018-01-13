@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 57ada98b0171711ea93fa8639e7c6c7aa1d7060a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 88998f18c750e064ee8eae254ca7ee4487be7176
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="varianttoperator-"></a>_variant_t::operator =
 **Microsoft özel**  
@@ -127,39 +128,39 @@ _variant_t& operator=(
 ## <a name="remarks"></a>Açıklamalar  
  İşleç, `_variant_t` nesnesine yeni bir değer atar:  
   
--   **işleç = (***varSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.      
+-   **işleç = (***varSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.  
   
--   **işleç = (***pVarSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.      
+-   **işleç = (***pVarSrc***)** varolan atar **değişken** için bir `_variant_t` nesnesi.  
   
--   **işleç = (***var_t_Src***)** varolan atar `_variant_t` nesnesine bir `_variant_t` nesnesi.      
+-   **işleç = (***var_t_Src***)** varolan atar `_variant_t` nesnesine bir `_variant_t` nesnesi.  
   
--   **işleç = (***sSrc***)** atayan bir **kısa** tamsayı değerine bir `_variant_t` nesnesi.      
+-   **işleç = (***sSrc***)** atayan bir **kısa** tamsayı değerine bir `_variant_t` nesnesi.  
   
--   **işleç = (**`lSrc`**)** atayan bir **uzun** tamsayı değerine bir `_variant_t` nesnesi.      
+-   **işleç = (**`lSrc`**)** atayan bir **uzun** tamsayı değerine bir `_variant_t` nesnesi.  
   
--   **işleç = (***fltSrc***)** atar bir **float** sayısal değer için bir `_variant_t` nesnesi.      
+-   **işleç = (***fltSrc***)** atar bir **float** sayısal değer için bir `_variant_t` nesnesi.  
   
--   **işleç = (***dblSrc***)** atar bir **çift** sayısal değer için bir `_variant_t` nesnesi.      
+-   **işleç = (***dblSrc***)** atar bir **çift** sayısal değer için bir `_variant_t` nesnesi.  
   
--   **işleç = (***cySrc***)** atayan bir **CY** nesnesine bir `_variant_t` nesnesi.      
+-   **işleç = (***cySrc***)** atayan bir **CY** nesnesine bir `_variant_t` nesnesi.  
   
--   **işleç = (***bstrSrc***)** atayan bir `BSTR` nesnesine bir `_variant_t` nesnesi.      
+-   **işleç = (***bstrSrc***)** atayan bir `BSTR` nesnesine bir `_variant_t` nesnesi.  
   
--   **işleç = (***wstrSrc***)** bir UNICODE dizesi atar bir `_variant_t` nesnesi.      
+-   **işleç = (***wstrSrc***)** bir UNICODE dizesi atar bir `_variant_t` nesnesi.  
   
--   **işleç = (**`strSrc`**)** birden çok baytlı dizeye atar bir `_variant_t` nesnesi.      
+-   **işleç = (**`strSrc`**)** birden çok baytlı dizeye atar bir `_variant_t` nesnesi.  
   
--   **işleç = (** `bSrc` **)** atayan bir `bool` değeri bir `_variant_t` nesnesi.    
+-   **işleç = (** `bSrc` **)** atayan bir `bool` değeri bir `_variant_t` nesnesi.  
   
--   **işleç = (***pDispSrc***)** atayan bir **VT_DISPATCH** nesnesine bir `_variant_t` nesnesi.      
+-   **işleç = (***pDispSrc***)** atayan bir **VT_DISPATCH** nesnesine bir `_variant_t` nesnesi.  
   
--   **işleç = (***pIUnknownSrc***)** atayan bir **VT_UNKNOWN** nesnesine bir `_variant_t` nesnesi.      
+-   **işleç = (***pIUnknownSrc***)** atayan bir **VT_UNKNOWN** nesnesine bir `_variant_t` nesnesi.  
   
--   **işleç = (***decSrc***)** atayan bir **ondalık** değeri bir `_variant_t` nesnesi.      
+-   **işleç = (***decSrc***)** atayan bir **ondalık** değeri bir `_variant_t` nesnesi.  
   
--   **işleç = (** `bSrc` **)** atayan bir **bayt** değeri bir `_variant_t` nesnesi.    
+-   **işleç = (** `bSrc` **)** atayan bir **bayt** değeri bir `_variant_t` nesnesi.  
   
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [_variant_t sınıfı](../cpp/variant-t-class.md)
+ [_variant_t Sınıfı](../cpp/variant-t-class.md)

@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 681c473c53fff5637d07f990df3f7eee78f65ec7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 88fb0a09565f50f352679bb07efad094db592e05
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activationfactoryaddref-method"></a>ActivationFactory::AddRef Yöntemi
 Geçerli ActivationFactory nesne başvurusu sayısını artırır.  
@@ -42,4 +45,4 @@ STDMETHOD_(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ActivationFactory sınıfı](../windows/activationfactory-class.md)
+ [ActivationFactory Sınıfı](../windows/activationfactory-class.md)

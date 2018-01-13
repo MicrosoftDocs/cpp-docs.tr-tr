@@ -23,11 +23,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e359b6bcb7ba201991575ab310e0db9b3b4f06a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 79ef7fdd5799b01ec115befcd50bbe4625d48bea
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap sınıfı
 Bu sınıf, her anahtar kırmızı siyah bir ikili ağacı kullanarak birden fazla değer ile ilişkilendirilebilir izin veren bir eşleme yapısı temsil eder.  
@@ -216,7 +217,7 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
  `key`  
  Anahtar değeri eklemek için `CRBMultiMap` nesnesi.  
   
- *değer*  
+ *value*  
  Eklenecek değer `CRBMultiMap` ile ilişkili nesne `key`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

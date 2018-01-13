@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6d74dfdf716065384a1c0a65a6a2bf0e5437dc1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 94f18b8a81cfde8d45a4e9e0256dd99a21bdd6a8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pointer-arithmetic"></a>İşaretçi Aritmetiği
 Bir işaretçi ve tamsayı içeren toplama işlemleri yalnızca bir dizi üye işaretçisi işleneni adresleri ve tamsayı değeri aynı dizinin sınırları içinde bir uzaklık üretir anlamlı sonuçlar verin. Tamsayı değeri bir adres uzaklık dönüştürüldüğünde Derleyici yalnızca bellek konumlarını aynı boyutta özgün adresi ve adres artı uzaklık arasında kalan varsayar.  
@@ -30,4 +31,4 @@ Bir işaretçi ve tamsayı içeren toplama işlemleri yalnızca bir dizi üye i�
  İki işaretçi değeri çıkarılır, benzer şekilde, yalnızca hiçbir boşlukları ile aynı türde değerler tarafından işlenen verilen adresleri arasında kalan dönüştürme varsayar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C ek işleçleri](../c-language/c-additive-operators.md)
+ [C Ek İşleçleri](../c-language/c-additive-operators.md)

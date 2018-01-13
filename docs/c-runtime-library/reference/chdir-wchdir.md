@@ -43,11 +43,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 343121b4484f97e0778098991c71731ed3c6ef2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6025a7a4f17d1dd461981db255340d3fe9d6c3d9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chdir-wchdir"></a>_chdir, _wchdir
 Geçerli çalışma dizini değiştirir.  
@@ -159,4 +160,4 @@ Volume in drive C has no label.
  [Dizin denetimi](../../c-runtime-library/directory-control.md)   
  [_mkdir, _wmkdir](../../c-runtime-library/reference/mkdir-wmkdir.md)   
  [_rmdir, _wrmdir](../../c-runtime-library/reference/rmdir-wrmdir.md)   
- [Sistem, _wsystem](../../c-runtime-library/reference/system-wsystem.md)
+ [system, _wsystem](../../c-runtime-library/reference/system-wsystem.md)

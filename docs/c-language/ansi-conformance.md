@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 52f391100912040128f64988e8e1873a61ecf297
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 94595011b392fc79f126c17a656f6a3453c4261d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ansi-conformance"></a>ANSI Uyumluluğu
 Microsoft C, ANSI C standardının 9899:1990 sürümünde ifade edildiği gibi C dili standardına uyar.  
@@ -28,4 +29,4 @@ Microsoft C, ANSI C standardının 9899:1990 sürümünde ifade edildiği gibi C
  ANSI C standardı için Microsoft uzantıları çevrimiçi başvuruda olduğu gibi bu kitabın metin ve sözdiziminde belirtilmiştir. Uzantılar ANSI C standardının bir parçası olmadığından, kullanımları sistemler arasında programların taşınabilirliğini kısıtlayabilir. Varsayılan olarak, Microsoft uzantıları etkindir. Uzantıları devre dışı bırakmak için, /Za derleyici seçeneğini belirtin. /Za ile tüm ANSI olmayan kodlar hata veya uyarılar oluşturur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C dili başvurularının organizasyonu](../c-language/organization-of-the-c-language-reference.md)
+ [C Dili Başvurularının Organizasyonu](../c-language/organization-of-the-c-language-reference.md)

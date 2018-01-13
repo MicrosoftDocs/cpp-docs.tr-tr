@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d06ea79b3dd5ca960ba57d0d27416acffe51c632
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6f32a4ebfd9aec0cfbdcc03098f6aa0a23b8ecff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="securescl"></a>_SECURE_SCL
   
@@ -48,5 +49,5 @@ Yerine geçen [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.m
 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)   
 [İşaretli yineleyiciler](../standard-library/checked-iterators.md)   
 [Hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)   
-[Güvenli kitaplıklar: C++ Standart Kitaplığı](../standard-library/safe-libraries-cpp-standard-library.md)
+[Güvenli Kitaplıklar: C++ Standart Kitaplık](../standard-library/safe-libraries-cpp-standard-library.md)
 

@@ -19,11 +19,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9bae9c7d8e50ca12767e5baed436912f04daafd9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: eaefb5f3ed8bd0c586e42527d47918dbb0dd5a57
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
@@ -46,7 +49,7 @@ Bu yana 2011 Microsoft, Microsoft SQL Server veritabanları, her iki şirket iç
 
 [ODBC sürücüsü 13,1 SQL Server - Windows yayımlanan](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server) C/C++ tabanlı uygulamaları için son ODBC sürücüsü Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için sağlam veri erişimi sağlar. Özellikleri dahil olmak üzere her zaman şifreli desteği, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. MacOS ve Linux için de kullanılabilir.     
  
-[SQL Server Native Client](https://msdn.microsoft.com/library/ms130892.aspx) SQL Server Native Client olan OLE DB ve SQL Server 2005'te SQL Server 2014 aracılığıyla destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API). Yeni uygulamalar için SQL Server ODBC sürücüsü 13,1 kullanmalıdır.
+[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming) SQL Server Native Client olan OLE DB ve SQL Server 2005'te SQL Server 2014 aracılığıyla destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API). Yeni uygulamalar için SQL Server ODBC sürücüsü 13,1 kullanmalıdır.
 
 [Microsoft Azure C ve C++ Geliştirme Merkezi](https://azure.microsoft.com/develop/cpp/) Azure artan esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçlarını kullanarak C++ uygulamalar oluşturmanızı kolaylaştırır.    
 

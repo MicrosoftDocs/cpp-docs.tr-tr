@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 13a358cd52f56189f157e8ccbfb3ac26be1823fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1c97d6bbf2c603d8bb3ab703a1e97b83a8bcbb08
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdataconnectionopen"></a>CDataConnection::Open
 Başlatma dizesi kullanarak bir veri kaynağı için bir bağlantı açar.  
@@ -48,4 +51,4 @@ Başlatma dizesi kullanarak bir veri kaynağı için bir bağlantı açar.
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CDataConnection sınıfı](../../data/oledb/cdataconnection-class.md)
+ [CDataConnection Sınıfı](../../data/oledb/cdataconnection-class.md)

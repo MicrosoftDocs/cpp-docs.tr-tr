@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 976ee601e836bbabbfbf65beca41f6fbd687cebb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7e86c4857aab7c0e1a23dcd03695d906a3d9e5e0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbasecontinueasyncoperation-method"></a>AsyncBase::ContinueAsyncOperation Yöntemi
 Zaman uyumsuz işlem işleme devam etmesi gerektiğini veya durdurmak belirler.  
@@ -39,4 +42,4 @@ inline bool ContinueAsyncOperation();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase sınıfı](../windows/asyncbase-class.md)
+ [AsyncBase Sınıfı](../windows/asyncbase-class.md)

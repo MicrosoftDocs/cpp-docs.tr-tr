@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9d1564d068f4d69c3190b8bb24a32e7efb01dbef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ab2f021a53e8ae685891863500feb3873e13e2e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sections-cc"></a>SECTIONS (C/C++)
 Bir veya daha fazla bölüm tanıtır `definitions` bölümlerde projenizin çıktı dosyasına erişim tanımlayıcıları olan.  
@@ -67,4 +68,4 @@ section [CLASS 'classname'] specifier
  Bölüm öznitelikleri belirtmek için eşdeğer bir yolu [/SECTION](../../build/reference/section-specify-section-attributes.md) seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 15fd185e085af9ffe58976b6c2859e905cccff6c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4392125d1834f31b02e4087644f8b8a06ad238f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="value-classes-and-structs-ccx"></a>Değer sınıflar ve yapılar (C + +/ CX)
 A *değer yapısı* veya *değer sınıfının* Windows çalışma zamanı uyumlu POD ("düz eski veri yapısı"). Sabit bir boyutu vardır ve yalnızca alandan oluşur; ref sınıfın aksine özelliği yok.  
@@ -159,4 +160,4 @@ public:
  [Sistem türü (C + +/ CX)](../cppcx/type-system-c-cx.md)   
  [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)   
  [Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)   
- [Ref sınıflar ve yapılar (C + +/ CX)](../cppcx/ref-classes-and-structs-c-cx.md)
+ [Başvuru Sınıfları ve Yapıları (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md)

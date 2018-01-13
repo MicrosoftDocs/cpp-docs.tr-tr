@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5c0df6d6da604812cace91fd1f98e74a5361d956
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b193b38bb986f6ba9f3e3da7037d39257744436d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbaseonstart-method"></a>AsyncBase::OnStart Yöntemi
 Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.  
@@ -39,4 +42,4 @@ virtual void OnStart(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [AsyncBase sınıfı](../windows/asyncbase-class.md)   
- [AsyncBase::OnStart yöntemi](../windows/asyncbase-onstart-method.md)
+ [AsyncBase::OnStart Metodu](../windows/asyncbase-onstart-method.md)

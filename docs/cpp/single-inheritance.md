@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c896b9ae68aad6e537655f03585f2261203099e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 003e407edfd50440a2bbeaf483c2fba94d178b57
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.  

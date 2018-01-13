@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 46bbbef9df3f68f322196962042039b32b4e0113
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 33e81f63e7647cbdbdc89b37ffdcb309b79e9340
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="name-cc"></a>NAME (C/C++)
 Ana çıktı dosyası için bir ad belirtir.  
@@ -34,4 +35,4 @@ NAME [application][BASE=address]
  DLL yapılandırdıysanız, adı yalnızca DLL adı etkiler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül tanımlama deyimleri kuralları](../../build/reference/rules-for-module-definition-statements.md)
+ [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

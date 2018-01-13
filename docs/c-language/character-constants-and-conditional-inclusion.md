@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c1e3d50dd4ecf19b1a7bcee7b5efc0d6e2e57d1c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 373dc99b7c4292501a41e17ba4d7393972c31c15
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="character-constants-and-conditional-inclusion"></a>Karakter Sabitleri ve Koşullu Dahil Etme
 **ANSI 3.8.1** olup koşullu dahil etme denetimleri sabit bir ifade tek karakterli karakter sabitinde değerini yürütme karakter kümesi içinde aynı karakter sabit değeri eşleşir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı  
@@ -25,4 +26,4 @@ ms.lasthandoff: 10/24/2017
  Önişlemci deyimlerinde kullanılacak karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci negatif karakter değerlerini tanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işleme yönergeleri](../c-language/preprocessing-directives.md)
+ [Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)

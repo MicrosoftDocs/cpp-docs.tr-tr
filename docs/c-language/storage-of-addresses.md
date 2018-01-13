@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3d0e996ac191ba3091925a85937e7636a2425215
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bd82f6f5046cf910fbc871be37d4af5856796792
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="storage-of-addresses"></a>Adres Deposu
 Adres ve adresin anlamı için gereken depolama alanı miktarı, derleyicinin uygulamasına bağlıdır. Farklı türlerden işaretçilerin aynı uzunluğa sahip olacağı garanti edilmez. Bu nedenle, **sizeof (char \*)** mutlaka eşit değil **sizeof (int \*)**.  
@@ -32,4 +33,4 @@ Adres ve adresin anlamı için gereken depolama alanı miktarı, derleyicinin uy
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşaretçi bildirimleri](../c-language/pointer-declarations.md)
+ [İşaretçi Bildirimleri](../c-language/pointer-declarations.md)

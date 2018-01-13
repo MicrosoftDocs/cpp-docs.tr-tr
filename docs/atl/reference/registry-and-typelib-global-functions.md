@@ -27,11 +27,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6f9dd09983a7b8cb781e26a6a3ed049d82d03632
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dbb919cb2fe4d91f5665fbea3dcfd2140d178341
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registry-and-typelib-global-functions"></a>Kayıt defteri ve TypeLib genel işlevler
 Bu işlevler yükleme ve bir tür kitaplığı kaydı için destek sağlar.  

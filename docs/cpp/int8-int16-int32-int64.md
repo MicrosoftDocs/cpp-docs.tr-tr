@@ -25,11 +25,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 54850e2ded4029c27804c5aec2c52d7f5eae7119
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 957e2483d61855c442780440ccf87441f00cb1c3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="int8-int16-int32-int64"></a>__int8, __int16, __int32, __int64
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
@@ -75,4 +76,4 @@ func
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [Temel türler](../cpp/fundamental-types-cpp.md)   
- [Veri türü aralıkları](../cpp/data-type-ranges.md)
+ [Veri Türü Aralıkları](../cpp/data-type-ranges.md)

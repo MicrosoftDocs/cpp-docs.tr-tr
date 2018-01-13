@@ -22,11 +22,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 834825b38eb8d5c81752dfed85f44202fbce3299
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 4a7d60f11457e509ae67da83aa6bc589af1ce43a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="odbc-administrator"></a>ODBC Yöneticisi
 ODBC Yöneticisi kaydeder ve yapılandırır [veri kaynaklarını](../../data/odbc/data-source-odbc.md) , kullanılabilir yerel olarak ya da bir ağ üzerinden. Sihirbazlar uygulamalarınızda kullanıcılarınızın veri kaynaklarına bağlayan kod oluşturmak için ODBC Yöneticisi tarafından sağlanan bilgileri kullanın.  
@@ -61,4 +64,4 @@ ODBC Yöneticisi kaydeder ve yapılandırır [veri kaynaklarını](../../data/od
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Açık veritabanı bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)   
- [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)
+ [Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)

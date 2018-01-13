@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e7d8b351f7cc58d37d4da8bc273d8541aee54446
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0ac15c18ce3277e8268b6b4582de4046f5f74d64
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="pointer-declarations"></a>İşaretçi Bildirimleri
 "İşaretçi bildirimi" işaretçi değişken adları ve değişken işaret ettiği nesne türünü belirtir. İşaretçi olarak bildirilen bir değişken bellek adresini tutar.  
@@ -128,4 +129,4 @@ struct id
  Değişkeni *kaydı* bir yapı türüne sahip *kimliği*. Unutmayın *sağlayıcı adı* adlı başka bir yapı türü için bir işaretçi olarak bildirilen *adı*. Bu bildirim önce görünebilir *adı* türü tanımlanmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve değişken bildirimleri](../c-language/declarators-and-variable-declarations.md)
+ [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

@@ -21,11 +21,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f996a206ebac40a469f2fc540c5e23ce0f5c2733
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 1ad9042c4001fc1a0e0c8c8d19e5ac53b6312875
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recordset-more-about-updates-odbc"></a>Kayıt Kümesi: Güncelleştirmeler Hakkında Daha Fazla Bilgi (ODBC)
 Bu konu MFC ODBC sınıfları için geçerlidir.  
@@ -108,4 +111,4 @@ Bu konu MFC ODBC sınıfları için geçerlidir.
  [Kayıt kümesi: Nasıl kümelerinin kayıtları seçme biçimi (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)   
  [Kayıt alanı değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)   
  [SQL](../../data/odbc/sql.md)   
- [Özel durumlar: Veritabanı özel durumları](../../mfc/exceptions-database-exceptions.md)
+ [Özel durumlar: Veritabanı Özel Durumları](../../mfc/exceptions-database-exceptions.md)

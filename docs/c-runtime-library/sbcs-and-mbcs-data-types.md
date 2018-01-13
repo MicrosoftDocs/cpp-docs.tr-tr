@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d32c9e792971b20da99377ad36f3872f5824dcc7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c54b6e9716e7f0aee9a0b211148b76804d9520bf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS ve MBCS Veri Türleri
 Herhangi bir Microsoft `MBCS` yalnızca tek baytlı karakter veya birden çok baytlı karakter, bir bayt işler çalışma zamanı kitaplığı yordamı bekliyor bir `unsigned int` bağımsız değişkeni (burada 0x00 < karakter değeri = < 0xFFFF ve 0x00 = < bayt değeri = < 0xFF =). Bir `MBCS` birden çok baytlı bayt veya karakter dizesi bağlamda işleme yordamı bekliyor olarak gösterilemeyecek kadar çok baytlı karakter dizesi bir `unsigned char` işaretçi.  
@@ -43,4 +44,4 @@ Herhangi bir Microsoft `MBCS` yalnızca tek baytlı karakter veya birden çok ba
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere göre çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)
+ [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fbc5ca61d1a45521c67426144ad5991170849230
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7b3b067db3812fbe7e5db1d367635eedc5362527
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
 Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:  
@@ -83,4 +84,4 @@ ipp = prop[2];
  Benzer şekilde, ikinci `prop[2]` deyimindeki `ipp = prop[2];` ifadesinin sonucu, iki boyutlu diziye yönelik olan bir işaretçi değeridir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Alt simge işleci:](../cpp/subscript-operator.md)
+ [Alt Simge İşleci:](../cpp/subscript-operator.md)

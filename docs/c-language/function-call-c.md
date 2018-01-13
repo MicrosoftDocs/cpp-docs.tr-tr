@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0faf339877b075a1337c73ec5ca3c41a869ceec2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4b4275c57b26808b7fbb4497572913ccfe951fcb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C)
 "İşlev çağrısı", çağrılan işlevin adını veya bir işlev işaretçisinin adını ve isteğe bağlı olarak işlevine geçirilen bağımsız değişkenleri içeren bir ifadedir.  
@@ -40,4 +41,4 @@ ms.lasthandoff: 10/24/2017
  Bir işlev çağrısı ifadesi, işlevin dönüş değerinin değerine ve türüne sahiptir. Bir işlev dizi türünde bir nesne döndüremez. İşlevin dönüş türü `void` ise (yani işlev hiçbir zaman bir değer döndürmeyecek şekilde bildirilmişse), işlev çağrısı ifadesinde de `void` türü vardır. (Bkz [işlev çağrılarını](../c-language/function-calls.md) daha fazla bilgi için.)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev çağırma işleci:)](../cpp/function-call-operator-parens.md)
+ [İşlev Çağırma İşleci: ()](../cpp/function-call-operator-parens.md)

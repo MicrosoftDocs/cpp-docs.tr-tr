@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d64e375375deac828689f37475d9bfe04b08925b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 18a3f12ac87f0165c74aaa487913f679f1a9941e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-declarators"></a>Bildiricilere Genel Bakış
 Bildirimciler, nesne veya işlev adlarını belirten bir bildirimin bileşenleridir. Bildirimciler, adlandırılmış nesnelerin bir nesne, işaretçi, başvuru veya dizi olduğunu da belirtir.  Bildirimciler temel türü belirtmese de, işaretçiler, başvurular ve diziler gibi türetilmiş türleri belirtmek için temel türdeki tür bilgilerini değiştirir.  İşlevlere uygulanan bildirimci, bir işlevin dönüş türünü nesne, işaretçi veya başvuru olarak belirtmek için tür tanımlayıcısı ile birlikte çalışır. (Ele tanımlayıcıları [bildirimler ve tanımlar](declarations-and-definitions-cpp.md), türü ve depolama sınıfı gibi özellikler taşır. Bu bölüm hem de ele alınan değiştiricileri [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md), Bildirimciler değiştirin.) Aşağıdaki şekilde, tam bir `MyFunction` bildirimi gösterilmekte ve bildirimin bileşenleri çağrılmaktadır.  
@@ -52,7 +53,7 @@ const char *pch, ch;
   
  **Bildirimciler işaretçileri, başvuruları ve diziler**  
   
- Adın önüne yerleştirilen işaretçi işleçleri, nesnenin bir işaretçi veya başvuru olmasına neden olur.  **\***  İşleci bildiren bir işaretçi; adıyla  **&**  işleci, bir başvuru olarak bildirir.  
+ Adın önüne yerleştirilen işaretçi işleçleri, nesnenin bir işaretçi veya başvuru olmasına neden olur.   **\***  İşleci bildiren bir işaretçi; adıyla  **&**  işleci, bir başvuru olarak bildirir.  
   
 ```  
 int *i; // declarator is *i  

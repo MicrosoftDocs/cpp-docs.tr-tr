@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0962059e6e55ce68133960cc9f8d1de8c7f0ef61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8b47969da4c560f28c07ac09caef83873e362ddc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
 Varsayılan sağlanan Gecikmeli Yükleme Yardımcısı gecikme yükü tanımlayıcıları bir işaretçi ve özgün içeri aktarma adres tablosunu (IAT) bir kopyasını pUnloadIAT alanına sahip olup olmadığını denetler. Bu durumda, onu bir işaretçi alma gecikme tanımlayıcısı listesinde kaydeder. Bu DLL'i açıkça kaldırma desteği adıyla DLL bulmak yardımcı işlevini etkinleştirir.  
@@ -69,4 +70,4 @@ __FUnloadDelayLoadedDLL2("User32.DLL");.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yardımcı işlevini anlama](understanding-the-helper-function.md)
+ [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 42237a142226d70b3cff0c07de5ed3daaeda8682
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e0285d8395b5a135ac75c40914232ad820f36f00
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="files-and-streams"></a>Dosyalar ve Akışlar
 Bir program, okuma ve dosyalara yazma, hedef ortam ile iletişim kurar. Bir dosya olabilir:  
@@ -53,4 +54,4 @@ Bir program, okuma ve dosyalara yazma, hedef ortam ile iletişim kurar. Bir dosy
  [Metin ve ikili akışlar](../c-runtime-library/text-and-binary-streams.md)   
  [Bayt ve geniş akışlar](../c-runtime-library/byte-and-wide-streams.md)   
  [Akışları denetleme](../c-runtime-library/controlling-streams.md)   
- [Akış durumları](../c-runtime-library/stream-states.md)
+ [Akış Durumları](../c-runtime-library/stream-states.md)

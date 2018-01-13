@@ -19,21 +19,22 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 58551edf5663d7ecbaf50f4ce0660247c00249c9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: db9cd28719b1ced8efee124a4b75fbd362de60e1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="keywords-c"></a>Anahtar sözcükler (C++)
 Anahtar sözcükler özel anlamları önceden tanımlanmış ayrılmış tanımlayıcılardır. Programınızdaki tanımlayıcıları olarak kullanılamaz. Aşağıdaki anahtar sözcükler Microsoft C++ için ayrılmıştır. Microsoft uzantıları adlarıdır başında alt çizgi ile.  
   
 ||||  
 |-|-|-|  
-|[__abstract](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__alignof işleci](../cpp/alignof-operator.md)|[__asm](../assembler/inline/asm.md)|  
+|[__abstract](../dotnet/declaration-of-a-managed-class-type.md) <sup>2</sup>|[__alignof İşleci](../cpp/alignof-operator.md)|[__asm](../assembler/inline/asm.md)|  
 |[__assume](../intrinsics/assume.md)|[__based](../cpp/based-pointers-cpp.md)|[__box](../dotnet/value-type-semantics.md) <sup>2</sup>|  
 |[__cdecl](../cpp/cdecl.md)|[__declspec](../cpp/declspec.md)|[__delegate anahtar](../dotnet/delegates-and-events.md) <sup>2</sup>|  
-|[__Event](../cpp/event.md)|[__except](../cpp/try-except-statement.md)|[__fastcall](../cpp/fastcall.md)|  
+|[__event](../cpp/event.md)|[__except](../cpp/try-except-statement.md)|[__fastcall](../cpp/fastcall.md)|  
 |[__finally](../cpp/try-finally-statement.md)|[__forceinline](../cpp/inline-functions-cpp.md)|[__gc](../dotnet/declaration-of-a-clr-reference-class-object.md) <sup>2</sup>|  
 |[__hook](../cpp/hook.md) <sup>3</sup>|[__tanımlayıcı](../windows/identifier-cpp-cli.md)|[__if_exists](../cpp/if-exists-statement.md)|  
 |[__if_not_exists](../cpp/if-not-exists-statement.md)|[__inline](inline-functions-cpp.md)|[__int16](../cpp/int8-int16-int32-int64.md)|  
@@ -46,39 +47,39 @@ Anahtar sözcükler özel anlamları önceden tanımlanmış ayrılmış tanıml
 |[__super](../cpp/super.md)|[__thiscall](../cpp/thiscall.md)|[__try /\__except](../cpp/try-except-statement.md), [__try /\__finally](../cpp/try-finally-statement.md)|  
 |[__try_cast](../dotnet/cast-notation-and-introduction-of-safe-cast-angles.md) <sup>2</sup>|[__unaligned](../cpp/unaligned.md)|[__unhook](../cpp/unhook.md) <sup>3</sup>|  
 |[__uuidof](../cpp/uuidof-operator.md)|[__value](../dotnet/value-type-semantics.md) <sup>2</sup>|[__virtual_inheritance](../cpp/inheritance-keywords.md)|  
-|[__w64](../cpp/w64.md)|[__wchar_t, wchar_t](../cpp/fundamental-types-cpp.md)|[Özet](../windows/abstract-cpp-component-extensions.md)|  
+|[__w64](../cpp/w64.md)|[__wchar_t, wchar_t](../cpp/fundamental-types-cpp.md)|[abstract](../windows/abstract-cpp-component-extensions.md)|  
 |[dizi](../windows/arrays-cpp-component-extensions.md)|[Otomatik](../cpp/auto-keyword.md)|[bool](../cpp/bool-cpp.md)|  
-|[sonu](../cpp/break-statement-cpp.md)|[durumu](../cpp/switch-statement-cpp.md)|[Yakalama](../cpp/try-throw-and-catch-statements-cpp.md)|  
-|[char](../cpp/fundamental-types-cpp.md)|[sınıfı](../cpp/class-cpp.md)|[const](../cpp/const-cpp.md)|  
-|[const_cast](../cpp/const-cast-operator.md)|[devam etmek](../cpp/continue-statement-cpp.md)|[decltype](../cpp/decltype-cpp.md)|  
-|[Varsayılan](../cpp/switch-statement-cpp.md)|[temsilci seçme](../windows/delegate-cpp-component-extensions.md)|[Sil](../cpp/delete-operator-cpp.md)|  
+|[break](../cpp/break-statement-cpp.md)|[durumu](../cpp/switch-statement-cpp.md)|[Yakalama](../cpp/try-throw-and-catch-statements-cpp.md)|  
+|[char](../cpp/fundamental-types-cpp.md)|[class](../cpp/class-cpp.md)|[const](../cpp/const-cpp.md)|  
+|[const_cast](../cpp/const-cast-operator.md)|[continue](../cpp/continue-statement-cpp.md)|[decltype](../cpp/decltype-cpp.md)|  
+|[default](../cpp/switch-statement-cpp.md)|[delegate](../windows/delegate-cpp-component-extensions.md)|[delete](../cpp/delete-operator-cpp.md)|  
 |[kullanım dışı](../cpp/deprecated-cpp.md) <sup>1</sup>|[dllexport](../cpp/dllexport-dllimport.md) <sup>1</sup>|[dllimport](../cpp/dllexport-dllimport.md) <sup>1</sup>|  
-|[yapın](../cpp/do-while-statement-cpp.md)|[çift](../cpp/fundamental-types-cpp.md)|[dynamic_cast](../cpp/dynamic-cast-operator.md)|  
-|[else](../cpp/if-else-statement-cpp.md)|[Enum](../cpp/enumerations-cpp.md)|[Enum sınıfı](../windows/enum-class-cpp-component-extensions.md)|  
-|[Enum struct](../windows/enum-class-cpp-component-extensions.md)|[Olay](../windows/event-cpp-component-extensions.md)|[açık](../cpp/user-defined-type-conversions-cpp.md)|  
-|[extern](../cpp/using-extern-to-specify-linkage.md)|[false](../cpp/false-cpp.md)|[Son olarak](../dotnet/finally.md)|  
-|[kayan nokta](../cpp/fundamental-types-cpp.md)|[için](../cpp/for-statement-cpp.md)|[her biri için](../dotnet/for-each-in.md)|  
+|[do](../cpp/do-while-statement-cpp.md)|[double](../cpp/fundamental-types-cpp.md)|[dynamic_cast](../cpp/dynamic-cast-operator.md)|  
+|[else](../cpp/if-else-statement-cpp.md)|[enum](../cpp/enumerations-cpp.md)|[Enum sınıfı](../windows/enum-class-cpp-component-extensions.md)|  
+|[Enum struct](../windows/enum-class-cpp-component-extensions.md)|[event](../windows/event-cpp-component-extensions.md)|[explicit](../cpp/user-defined-type-conversions-cpp.md)|  
+|[extern](../cpp/using-extern-to-specify-linkage.md)|[false](../cpp/false-cpp.md)|[finally](../dotnet/finally.md)|  
+|[float](../cpp/fundamental-types-cpp.md)|[for](../cpp/for-statement-cpp.md)|[for each, in](../dotnet/for-each-in.md)|  
 |[arkadaş](../cpp/friend-cpp.md)|[friend_as](../preprocessor/hash-using-directive-cpp.md)|[gcnew](../windows/ref-new-gcnew-cpp-component-extensions.md)|  
-|[Genel](../windows/generics-cpp-component-extensions.md)|[Git](../cpp/goto-statement-cpp.md)|[Eğer](../cpp/if-else-statement-cpp.md)|  
+|[Genel](../windows/generics-cpp-component-extensions.md)|[goto](../cpp/goto-statement-cpp.md)|[Eğer](../cpp/if-else-statement-cpp.md)|  
 |[initonly](../dotnet/initonly-cpp-cli.md)|[Satır içi](../cpp/inline-functions-cpp.md)|[int](../cpp/fundamental-types-cpp.md)|  
 |[arabirim sınıfı](../windows/interface-class-cpp-component-extensions.md)|[Arabirim yapısı](../windows/interface-class-cpp-component-extensions.md)|[interior_ptr](../windows/interior-ptr-cpp-cli.md)|  
-|[değişmez değer](../windows/literal-cpp-component-extensions.md)|[uzun](../cpp/fundamental-types-cpp.md)|[değişebilir](../cpp/mutable-data-members-cpp.md)|  
-|[naked](../cpp/naked-cpp.md) <sup>1</sup>|[ad alanı](namespaces-cpp.md)|[Yeni](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)|  
-|[Yeni](../cpp/new-operator-cpp.md)|[noinline](../cpp/noinline.md) <sup>1</sup>|[noreturn](../cpp/noreturn.md) <sup>1</sup>|  
+|[değişmez değer](../windows/literal-cpp-component-extensions.md)|[long](../cpp/fundamental-types-cpp.md)|[değişebilir](../cpp/mutable-data-members-cpp.md)|  
+|[naked](../cpp/naked-cpp.md) <sup>1</sup>|[namespace](namespaces-cpp.md)|[new](../windows/new-new-slot-in-vtable-cpp-component-extensions.md)|  
+|[new](../cpp/new-operator-cpp.md)|[noinline](../cpp/noinline.md) <sup>1</sup>|[noreturn](../cpp/noreturn.md) <sup>1</sup>|  
 |[nothrow](../cpp/nothrow-cpp.md) <sup>1</sup>|[novtable](../cpp/novtable.md) <sup>1</sup>|[nullptr](../cpp/nullptr.md)|  
-|[işleci](../cpp/operator-overloading.md)|[Özel](../cpp/private-cpp.md)|[özelliği](../windows/property-cpp-component-extensions.md)|  
-|[özellik](../cpp/property-cpp.md) <sup>1</sup>|[korumalı](../cpp/protected-cpp.md)|[Ortak](../cpp/public-cpp.md)|  
+|[operator](../cpp/operator-overloading.md)|[private](../cpp/private-cpp.md)|[property](../windows/property-cpp-component-extensions.md)|  
+|[özellik](../cpp/property-cpp.md) <sup>1</sup>|[protected](../cpp/protected-cpp.md)|[public](../cpp/public-cpp.md)|  
 |[ref sınıfı](../windows/classes-and-structs-cpp-component-extensions.md)|[ref yapısı](../windows/classes-and-structs-cpp-component-extensions.md)|[kaydetme](../cpp/storage-classes-cpp.md#register)|  
-|[reinterpret_cast](../cpp/reinterpret-cast-operator.md)|[Döndür](../cpp/return-statement-cpp.md)|[safecast](../windows/safe-cast-cpp-component-extensions.md)|  
-|[korumalı](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[kısa](../cpp/fundamental-types-cpp.md)|  
-|[İmzalı](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[statik](storage-classes-cpp.md)|  
-|[static_assert](../cpp/static-assert.md)|[static_cast](../cpp/static-cast-operator.md)|[yapısı](../cpp/struct-cpp.md)|  
-|[geçiş](../cpp/switch-statement-cpp.md)|[şablonu](templates-cpp.md)|[Bu](../cpp/this-pointer.md)|  
-|[iş parçacığı](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[TRUE](../cpp/true-cpp.md)|  
+|[reinterpret_cast](../cpp/reinterpret-cast-operator.md)|[return](../cpp/return-statement-cpp.md)|[safecast](../windows/safe-cast-cpp-component-extensions.md)|  
+|[sealed](../windows/sealed-cpp-component-extensions.md)|[selectany](../cpp/selectany.md) <sup>1</sup>|[short](../cpp/fundamental-types-cpp.md)|  
+|[İmzalı](../cpp/fundamental-types-cpp.md)|[sizeof](../cpp/sizeof-operator.md)|[static](storage-classes-cpp.md)|  
+|[static_assert](../cpp/static-assert.md)|[static_cast](../cpp/static-cast-operator.md)|[struct](../cpp/struct-cpp.md)|  
+|[switch](../cpp/switch-statement-cpp.md)|[şablonu](templates-cpp.md)|[this](../cpp/this-pointer.md)|  
+|[iş parçacığı](../cpp/thread.md) <sup>1</sup>|[throw](../cpp/try-throw-and-catch-statements-cpp.md)|[true](../cpp/true-cpp.md)|  
 |[deneyin](../cpp/try-throw-and-catch-statements-cpp.md)|[TypeDef](aliases-and-typedefs-cpp.md)|[TypeId](../cpp/typeid-operator.md)|  
-|[TypeId](../windows/typeid-cpp-component-extensions.md)|[TypeName](../cpp/typename.md)|[birleşim](../cpp/unions.md)|  
+|[TypeId](../windows/typeid-cpp-component-extensions.md)|[typename](../cpp/typename.md)|[birleşim](../cpp/unions.md)|  
 |[İmzasız](../cpp/fundamental-types-cpp.md)|[kullanarak](../cpp/using-declaration.md) bildirimi [kullanarak](namespaces-cpp.md#using_directives) yönergesi|[UUID](../cpp/uuid-cpp.md) <sup>1</sup>|  
-|[Değer sınıfı](../windows/classes-and-structs-cpp-component-extensions.md)|[değer yapısı](../windows/classes-and-structs-cpp-component-extensions.md)|[sanal](../cpp/virtual-cpp.md)|  
+|[Değer sınıfı](../windows/classes-and-structs-cpp-component-extensions.md)|[değer yapısı](../windows/classes-and-structs-cpp-component-extensions.md)|[virtual](../cpp/virtual-cpp.md)|  
 |[void](../cpp/void-cpp.md)|[volatile](../cpp/volatile-cpp.md)|[while](../cpp/while-statement-cpp.md)|  
   
  1 genişletilmiş öznitelikler için `__declspec` anahtar sözcüğü.  
@@ -104,4 +105,4 @@ Anahtar sözcükler özel anlamları önceden tanımlanmış ayrılmış tanıml
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sözcük kuralları](../cpp/lexical-conventions.md)   
- [C++ yerleşik işleçleri, öncelik ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
+ [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)

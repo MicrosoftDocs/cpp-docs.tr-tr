@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77a5e1c01254a67151d5b8577676537709bdba4e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9371aaf978f2ea9498445d0124b9be16cf3b0fa7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unions"></a>Birleşimler
 A `union` tüm üyeleri aynı bellek konumuna paylaşmak bir kullanıcı tanımlı tür. Başka bir deyişle, belirli bir zamanda birden fazla nesne üyeleri listesinden UNION içerebilir. Ayrıca, UNION sahip kaç üye olsun, her zaman yalnızca yeterli bellek büyük üye depolamak için kullandığını anlamına gelir.  
@@ -661,4 +662,4 @@ Adlandırılmış birleşimler kısıtlamalarına ek olarak, bu ek sınırlamala
  [Sınıflar ve yapılar](../cpp/classes-and-structs-cpp.md)   
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [sınıfı](../cpp/class-cpp.md)   
- [yapısı](../cpp/struct-cpp.md)
+ [struct](../cpp/struct-cpp.md)

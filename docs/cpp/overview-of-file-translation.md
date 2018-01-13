@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 37b10254ca101bcf19aff3c84abac4a122f242eb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a088d2da30aa77f477f3f6e5064b6b98170e953b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan oluşur. Bu dosyaların her biri, aşağıdaki kavramsal sırayla çevrilir (gerçek sıra "gibi" kuralını izler: çeviri bu adımlar uygulanmış gibi gerçekleşmelidir):  
@@ -57,4 +58,4 @@ C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan ol
 -   C önişlemci C++ işleçleri tanımıyor: **.\*** ,  **-> \*** , ve `::`. Bkz: [işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md) ve [ifadeleri](../cpp/expressions-cpp.md), işleçler hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük kuralları](../cpp/lexical-conventions.md)
+ [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

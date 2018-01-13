@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83f819338286139e2b03efd900c7dc6026f6895b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c394e67309811f3ca968da712cba4819278a1ca0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocate"></a>allocate
 **Microsoft özel**  
@@ -48,7 +49,7 @@ segname
   
 -   [init_seg](../preprocessor/init-seg.md)  
   
--   [Bölüm](../preprocessor/section.md)  
+-   [section](../preprocessor/section.md)  
   
 ## <a name="example"></a>Örnek  
   
@@ -65,4 +66,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__declspec](../cpp/declspec.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)

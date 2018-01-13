@@ -17,11 +17,12 @@ caps.latest.revision: "3"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: f66593167058c5eabd80619ce692083e141e18ef
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a44d0f79f0584fab38a1a4c095b1f032c1baeb7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformnullreferenceexception-class"></a>Platform::NullReferenceException sınıfı
 Null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.  
@@ -45,4 +46,4 @@ public ref class NullReferenceException : COMException,    IException,    IPrint
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException sınıfı](../cppcx/platform-comexception-class.md)
+ [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
