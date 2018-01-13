@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 73858235f949c07da646944efcae6e846a96d900
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f17f73efc8fba19bb129e3b118f8a4357444aad0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="avoidance-of-heap-contention"></a>Yığın Çekişme kaçınma
 MFC ve ATL tarafından sağlanan varsayılan dize yöneticileri, genel bir öbek üzerinde basit sarmalayıcıları kullanıcılardır. Bu genel yığın tam olarak birden çok iş parçacığı ayırın ve aynı anda öbek bozulmasını olmadan bellekten bunu serbest anlamına iş parçacığı, ' dir. İş parçacığı güvenliğini sağlamaya yardımcı olmak için kendisine erişim serileştirmek yığın sahiptir. Bu genellikle bir kritik bölüm veya benzer kilitleme mekanizması olarak gerçekleştirilir. İki iş parçacığı öbek aynı anda erişmeye her bir iş parçacığı diğer iş parçacığı isteği tamamlanana kadar engellendi. Birçok uygulama için öbek 's kilitleme mekanizması performans etkisini önemsizdir ve bu durum nadiren oluşur. Ancak, birden çok iş parçacığından öbek sık sık eriştiği uygulamalar için öbek 's kilit çakışması ve uygulamanın tek iş parçacıklı (makinelerde bile birden çok CPU ile), daha yavaş çalışmasına neden olabilir.  
@@ -38,5 +39,5 @@ MFC ve ATL tarafından sağlanan varsayılan dize yöneticileri, genel bir öbek
  Daha karmaşık bir iş parçacığı yordamı için iş parçacığının dizesi yöneticisi için bir işaretçi bir iş parçacığı yerel depolaması (TLS) yuvasına depolamak kullanışlı olabilir. Bu iş parçacığının dize Yöneticisi'ne erişmek için iş parçacığı yordamı tarafından çağrılan diğer işlevler sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT ile bellek yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+ [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
 

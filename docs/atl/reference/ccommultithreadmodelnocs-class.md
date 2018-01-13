@@ -25,11 +25,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f1f0b531942e281236c65ef9a2e1ad3d3f669bbe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cc32ab53469b1f125b56343806c7920461c64bf2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
 `CComMultiThreadModelNoCS`iş parçacığı yöntemleri artırma ve azaltma için önemli bir bölümü kilitleme veya kilidini açma işlevselliği bir değişkenin değerini sağlar.  

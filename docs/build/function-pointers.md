@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bd35f84dfdc150681c6d8d2ce196adc44724e8c7
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 00bcd323753b0885e2d46df0d4f9270e67cb2e71
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="function-pointers"></a>İşlev İşaretçileri
 İşlev işaretçileri yalnızca ilgili işlevi etiketini işaretçileridir. İşlev işaretçileri içeriği (İT) gereksinimleri tablosu vardır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralı](../build/calling-convention.md)
+ [Çağırma Kuralı](../build/calling-convention.md)

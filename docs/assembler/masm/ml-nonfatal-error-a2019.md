@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 98f38436b7804faa67679bc1890c4338912b80c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f686536568db56ee6469221588f74fad2c294da9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2019"></a>ML Önemli Olmayan Hatası A2019
 **İşlenen kayıt türü veya alan olması gerekir**  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  [Genişliği](../../assembler/masm/operator-width.md) işleci bir alan veya bir kayıt adı olan işleneni alır. [Maskesi](../../assembler/masm/operator-mask.md) işleci bir alan veya bir kayıt türü adı olan işleneni alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

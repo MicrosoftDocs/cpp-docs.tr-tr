@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f45a4fc1d69cf0caefb08a7a408ecc836d092851
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f57fc1bdd641fbc8e770ddc9b37480530034ba1d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 DACL (isteğe bağlı erişim denetim listesi) yapısı için bir sarmalayıcı sınıftır.  
@@ -253,4 +254,4 @@ void RemoveAllAces() throw();
  [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
  [ACE'ler](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [Güvenlik genel işlevler](../../atl/reference/security-global-functions.md)
+ [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

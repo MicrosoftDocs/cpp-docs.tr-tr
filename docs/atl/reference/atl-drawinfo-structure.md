@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6313291597db114a71db49814350f112770a9c34
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 70ea9b2532b8ab63bc9c840e7e08790b3af57342
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atldrawinfo-structure"></a>ATL_DRAWINFO yapısı
 Yazıcı, meta dosyası veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.  

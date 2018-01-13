@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c382f3a35b87dd6eeb21975ef692afd4127816d8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 700b467065d17a61dcfabf9dcaa6577a7ecffc11
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="prolog-and-epilog"></a>Giriş ve Bitiş
 Yığın alanı ayıran her işlev, diğer işlevleri, kalıcı Yazmaçları kaydeden veya özel durum işleme kullanan çağrıları adres sınırları ilgili işlev tablosu girişi ile ilişkilendirilmiş bırakma verileriyle açıklanmıştır bir giriş olması gerekir ( bakın[Özel durum işleme (x64)](../build/exception-handling-x64.md)). Giriş bağımsız değişkeni ev adresleri Yazmaçları gerekirse iter kalıcı Yazmaçları yığında kaydeder, Yereller ve temporaries için yığın sabit parçası ayırır ve isteğe bağlı olarak bir çerçeve işaretçisi oluşturur. İlişkili veri bırakma giriş eylemi açıklayan gerekir ve giriş kodu etkisini geri almak gerekli bilgileri sağlamanız gerekir.  
@@ -99,4 +100,4 @@ ret
  Bu kurallara bir bitiş şu anda yürütülmekte olan belirlemek ve arama işlevini bağlamı yeniden izin vermek için bitiş kalanı yürütülmesi benzetimini yapmak için bırakma kodu sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+ [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

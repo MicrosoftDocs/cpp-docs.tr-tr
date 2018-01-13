@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 566f2d29da9ff8422b8a29178f63a553bfe33668
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 42353a9c59bead96da8eb3b114c8acb2361b53d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="basic-cstring-operations"></a>Temel CString işlemleri
 Bu konuda aşağıdaki temel açıklanmaktadır [CString](../atl-mfc-shared/reference/cstringt-class.md) işlemleri:  
@@ -107,5 +108,5 @@ CString cs("meow");
  [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md)   
  [Şablonu özelleştirme](../cpp/template-specialization-cpp.md)   
- [Nasıl yapılır: çeşitli dize türleri arasında dönüştürme](../text/how-to-convert-between-various-string-types.md)
+ [Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma](../text/how-to-convert-between-various-string-types.md)
 

@@ -14,14 +14,15 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a6b98d3c03d319c2da397f969f8adf1ec858f72c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ef000f6611c9cb3794da8e46e6b905e57d5ecf92
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="executing-a-program-in-preprocessing"></a>Programı Önişlemde Yürütme
 Ön işleme sırasında bir komutunun çıkış kodu kullanmak için köşeli parantez ([]) içindeki tüm bağımsız değişkenler ile komutu belirtin. Komut yürütülmeden önce makroların genişletilir. NMAKE komutu belirtimi ön işleme denetlemek için bir ifadede kullanılan komutunun çıkış kodu ile yerini alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme görevleri dosyası önişlemlerindeki ifadeler](../build/expressions-in-makefile-preprocessing.md)
+ [Derleme Görevleri Dosyası Ön İşlemlerindeki İfadeler](../build/expressions-in-makefile-preprocessing.md)

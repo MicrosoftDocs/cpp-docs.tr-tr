@@ -21,11 +21,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e01b39eb7393d171b2c1fb30193810f62be85b99
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 319d130b9d8f17875aaa8bac15f546401457b963
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>Nesneleri ve denetimleri için ATL projesinde ekleme
 ATL veya MFC tabanlı projelerinizi bir nesneyi veya bir denetim eklemek için ATL kodu sihirbazlardan birini kullanabilirsiniz. Her COM nesnesi veya denetim için eklediğiniz, sihirbaz .cpp ve .h dosyaları yanı sıra, kayıt defteri betik tabanlı desteği için bir .rgs dosyası oluşturur. Aşağıdaki ATL kodu sihirbazlar Visual Studio'da kullanılabilir:  
@@ -34,7 +35,7 @@ ATL veya MFC tabanlı projelerinizi bir nesneyi veya bir denetim eklemek için A
 |-|-|-|  
 |[ATL Basit Nesne](../../atl/reference/atl-simple-object-wizard.md)|[ATL iletişim](../../atl/reference/atl-dialog-wizard.md)|[ATL denetimi](../../atl/reference/atl-control-wizard.md)|  
 |[ATL özellik sayfası](../../atl/reference/atl-property-page-wizard.md)|[ATL Active Server sayfası bileşeni](../../atl/reference/atl-active-server-page-component-wizard.md)|[ATL OLE DB Tüketicisi](../../atl/reference/atl-ole-db-consumer-wizard.md)|  
-|[MFC için ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|[ATL COM + 1.0 Bileşen Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)|[ATL OLE DB sağlayıcısı](../../atl/reference/atl-ole-db-provider-wizard.md)|  
+|[MFC için ATL desteği ekleme](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)|[ATL COM+ 1.0 Bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)|[ATL OLE DB sağlayıcısı](../../atl/reference/atl-ole-db-provider-wizard.md)|  
   
 > [!NOTE]
 >  Projenize ATL nesneyi eklemeden önce Ayrıntılar ve gereksinimler için kendi ilgili Yardım konuları nesnesinde gözden geçirmelidir.  
@@ -58,5 +59,5 @@ ATL veya MFC tabanlı projelerinizi bir nesneyi veya bir denetim eklemek için A
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
  [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

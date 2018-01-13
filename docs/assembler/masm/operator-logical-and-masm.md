@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 2fc52537c27651e8bd8087dcd7ca55b3e2ca87e1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: af49d3d079de2c98fade717d6bbb82727840e957
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="operator-ampamp-masm"></a>İşleç &amp; &amp; (MASM)
 Değiştirir `parameter` ile ilgili bağımsız değişken değeri.  
@@ -37,4 +38,4 @@ parameter
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler başvurusu](../../assembler/masm/operators-reference.md)
+ [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)

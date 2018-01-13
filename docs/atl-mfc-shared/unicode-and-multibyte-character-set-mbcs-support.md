@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 08f15fd57cb1354399e4e85b886141d02cb49daa
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
-ms.translationtype: MT
+ms.workload: cplusplus
+ms.openlocfilehash: ea35f36012eb893d8784c626c533690e97b517e5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 Örneğin, Japonca ve Çince, bazı dillerde geniş karakter kümesi vardır. Bu pazarlarında programlama desteklemek için geniş karakter kümeleri işleme için iki farklı yaklaşım için Microsoft Foundation Class Kitaplığı (MFC) etkinleştirilir:  

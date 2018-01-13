@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8e608d3b6826eb8bfbcebdec7fdf9891d033b418
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3ac09c1f107b51542b7a17c8661eb784b4abf14a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="chained-unwind-info-structures"></a>Zincirleme Bırakma Bilgi Yapıları
 UNW_FLAG_CHAININFO bayrağı ayarlarsanız, ardından bir bırakma bilgisi ikincil bir yapıdır ve paylaşılan özel durum işleyici/zincirleme-bilgisi adres alanı birincil bırakma bilgi içerir. Aşağıdaki kod alır birincil bırakma bilgi olduğunu varsayarak, `unwindInfo` kümesine sahip yapısı bayrağı ayarlanmış olduğu.  
@@ -33,4 +34,4 @@ PRUNTIME_FUNCTION primaryUwindInfo = (PRUNTIME_FUNCTION)&(unwindInfo->UnwindCode
  Ayarlama kümesine sahip bir UNWIND_INFO öğesi, UNWIND_INFO öğesi de (birden çok sabit) ayarlamak kümesine sahip bir RUNTIME_FUNCTION girdisini içerebilir. Sonuç olarak, zincirleme işaretçileri temizlenmiş kümesine sahip UNWIND_INFO öğeyi ulaşır bilgilerindeki; Bu, gerçek yordamı için giriş noktası işaret birincil UNWIND_INFO öğe değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri bırakma, özel durum işleme için hata ayıklayıcı desteği](../build/unwind-data-for-exception-handling-debugger-support.md)
+ [Özel Durum İşleme için Veri Bırakma, Hata Ayıklayıcı Desteği](../build/unwind-data-for-exception-handling-debugger-support.md)

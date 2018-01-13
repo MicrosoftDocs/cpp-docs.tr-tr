@@ -14,11 +14,12 @@ caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b5113abbf63fdb7ab87363e5344806d6eb34e0dd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: aa0bdc6a5a62b517c252a35d8f1193b34d6e0d32
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:  

@@ -22,11 +22,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb74d68bb8974f820ac09a0c56930d835a3fe7f3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54f237a629c4af9ea7ae30aeca21c03786abcd97
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject ve CComPolyObject uygulama
 Şablon sınıfları [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), ve [CComPolyObject](../atl/reference/ccompolyobject-class.md) her zaman en çok türetilen devralma zincirinde sınıflarıdır. Tüm yöntemlere işlemeye sorumluluğu olan **IUnknown**: `QueryInterface`, `AddRef`, ve **sürüm**. Ayrıca, `CComAggObject` ve `CComPolyObject` (toplanmış nesneler için kullanıldığında) özel başvuru sayımı sağlamak ve `QueryInterface` semantiği iç bilinmeyen için gereklidir.  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL COM nesneleri temelleri](../atl/fundamentals-of-atl-com-objects.md)   
- [Toplama ve sınıf Fabrika makroları](../atl/reference/aggregation-and-class-factory-macros.md)
+ [Toplama ve Sınıf Üreticisi Makroları](../atl/reference/aggregation-and-class-factory-macros.md)
 

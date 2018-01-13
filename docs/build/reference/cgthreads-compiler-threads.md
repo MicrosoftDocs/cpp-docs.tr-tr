@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9faa67386412d32ff0a40ef8c3a9776c332bbdde
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 542e35ecbb5e56ae0d13861b9885936f3b47c9da
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cgthreads-compiler-threads"></a>/CGTHREADS (Derleyici İş Parçacıkları)
 Bağlama zamanı kodu oluşturma belirtildiğinde en iyi duruma getirme ve kod oluşturma için kullanılacak cl.exe iş parçacığı sayısını ayarlar.  
@@ -57,4 +58,4 @@ Bağlama zamanı kodu oluşturma belirtildiğinde en iyi duruma getirme ve kod o
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)
+ [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)

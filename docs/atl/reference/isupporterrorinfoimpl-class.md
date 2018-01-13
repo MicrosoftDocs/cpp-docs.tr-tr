@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d57302ecd7f0e116e79e3c1fbcd263f5ff500a0c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 61e8dc6b277f8eb59ade428d3ef8ea3dd5c083ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="isupporterrorinfoimpl-class"></a>ISupportErrorInfoImpl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar [ISupportErrorInfo arabirimi](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32) ve tek bir arabirim bir nesne üzerinde hataları oluşturduğunda kullanılabilir.  

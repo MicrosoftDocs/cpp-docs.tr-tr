@@ -19,11 +19,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 22f428a21af037b86e063261003baf9849357c9e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bdbfdc47ad0bca868ce7594b84adfa093ef580ca
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inline-assembler"></a>Satır İçi Derleyicisi
 **Microsoft özel**  
@@ -35,27 +36,27 @@ ms.lasthandoff: 10/24/2017
   
  Satır içi derleme ARM üzerinde desteklenmiyor ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] işlemci.  Aşağıdaki konular, Visual C/C++ satır içi birleştirici/ayırıcı ile x86 işlemcilerin nasıl kullanıldığını açıklar:  
   
--   [Satır içi derleyiciye genel bakış](../../assembler/inline/inline-assembler-overview.md)  
+-   [Satır İçi Assembler’a Genel Bakış](../../assembler/inline/inline-assembler-overview.md)  
   
--   [Satır içi derleme avantajları](../../assembler/inline/advantages-of-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kod Avantajları](../../assembler/inline/advantages-of-inline-assembly.md)  
   
 -   [__asm](../../assembler/inline/asm.md)  
   
--   [__Asm bloklarında derleme dili kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)  
+-   [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)  
   
--   [__Asm bloklarında C veya C++ kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)  
+-   [__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)  
   
--   [Satır içi derlemede kayıtları koruma ve kullanma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md)  
+-   [Bir Satır İçi Bütünleştirilmiş Kodda Kayıtları Kullanma ve Koruma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md)  
   
--   [Satır içi derlemede etiketlere atlama](../../assembler/inline/jumping-to-labels-in-inline-assembly.md)  
+-   [İç Bütünleştirilmiş Kodda Etiketlere Atlama](../../assembler/inline/jumping-to-labels-in-inline-assembly.md)  
   
--   [Satır içi derlemede C işlevlerini çağırma](../../assembler/inline/calling-c-functions-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodda C İşlevlerini Çağırma](../../assembler/inline/calling-c-functions-in-inline-assembly.md)  
   
--   [Satır içi derlemede C++ işlevlerini çağırma](../../assembler/inline/calling-cpp-functions-in-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodda C İşlevlerini Çağırma](../../assembler/inline/calling-cpp-functions-in-inline-assembly.md)  
   
--   [__Asm bloklarını C makroları olarak tanımlama](../../assembler/inline/defining-asm-blocks-as-c-macros.md)  
+-   [__asm Bloklarını C Makroları olarak tanımlama](../../assembler/inline/defining-asm-blocks-as-c-macros.md)  
   
--   [Satır içi derleme en iyi duruma getirme](../../assembler/inline/optimizing-inline-assembly.md)  
+-   [Satır İçi Bütünleştirilmiş Kodu En İyi Duruma Getirme](../../assembler/inline/optimizing-inline-assembly.md)  
   
  **SON Microsoft özel**  
   

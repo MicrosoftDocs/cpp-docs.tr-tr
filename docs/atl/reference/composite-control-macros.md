@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 154c8f30e1d0141af7c0825d5af1208b95881a86
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b609801a1716e47b208644be02d4746abf8c288a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="composite-control-macros"></a>Bileşik Denetim makroları
 Olay iç havuz eşlemeleri ve girişleri bu makroları tanımlayın.  
@@ -156,4 +157,4 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları](../../atl/reference/atl-macros.md)   
- [Bileşik Denetim genel işlevler](../../atl/reference/composite-control-global-functions.md)
+ [Bileşik Denetim Genel İşlevleri](../../atl/reference/composite-control-global-functions.md)

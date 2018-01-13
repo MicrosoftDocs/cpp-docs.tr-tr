@@ -20,11 +20,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 35d71154ccbfc5f2d3147c55aaedff8cf85a06de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 84c8f800e0b68e23fe33ca0a7e1c1d977bcc344e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ccrtallocator-class"></a>CCRTAllocator sınıfı
 Bu sınıf CRT bellek yordamları kullanarak bellek yönetme için yöntemleri sağlar.  

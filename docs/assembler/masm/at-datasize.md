@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: cf68686031673d0164428fbc7c021a083a84c787
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: db43b21c010be00df8d32431c6681bdb5693d36c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="datasize"></a>@DataSize
 için 0 **çok küçük**, **küçük**, **orta**, ve **DÜZ** modeller, 1 için **COMPACT** ve  **BÜYÜK** modelleri ve 2 için **HUGE** modeli (sayısal eşitlemek).  
@@ -33,4 +34,4 @@ için 0 **çok küçük**, **küçük**, **orta**, ve **DÜZ** modeller, 1 için
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller başvurusu](../../assembler/masm/symbols-reference.md)
+ [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)

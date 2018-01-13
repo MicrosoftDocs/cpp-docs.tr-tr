@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3bc7646dab51b9a1fdd73b23d1f58c7b474c363e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0950cff4cb568f0adcae5e7d523f233868da013d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>Nasıl Yapılır: C/C++ Uygulamasına Bildirim Katıştırma
 C/C++ uygulamasına (veya kitaplığa) bu çoğu senaryoda doğru çalışma zamanı davranışı güvence altına alır çünkü içinde son ikili katıştırılmış kendi bildirimi olması önerilir. Varsayılan olarak, [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] kaynak dosyalarından proje oluşturduğunda bildirimi katıştırmak çalışır; bkz [Visual Studio'da bildirim oluşturma](../build/manifest-generation-in-visual-studio.md) daha fazla bilgi için. Ancak uygulama nmake kullanarak oluşturulursa, bazı değişiklikler mevcut derleme görevleri dosyası gereklidir. Bu bölümde, otomatik olarak son ikili içinde bildirimi katıştırmak için varolan derleme görevleri dosyaları değiştirmek gösterilmiştir.  
@@ -260,4 +261,4 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ programları bildirim üretimini anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+ [C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)

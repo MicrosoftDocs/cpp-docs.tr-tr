@@ -44,11 +44,12 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1a46a501c443baa65ab4c6da8bc4524c53e44989
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b199565221173d7664600f2869e079c2f1c95aae
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 Bu sınıf için sarmalayıcı, **SECURITY_DESCRIPTOR** yapısı.  
@@ -621,4 +622,4 @@ bool ToString(
  [Güvenliği örneği](../../visual-cpp-samples.md)   
  [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [Güvenlik genel işlevler](../../atl/reference/security-global-functions.md)
+ [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

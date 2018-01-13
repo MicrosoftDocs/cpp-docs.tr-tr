@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9726262e515f0b7aeb9df85fb02681ad6ba1f888
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d0b808f153a8508e57ceabc10a963d7e83791d94
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atlmfc-concepts"></a>ATL/MFC kavramları
 Bu bölümde yardımcı olmak üzere kavramsal ve görev tabanlı konuları Etkin Şablon kitaplığı (ATL) ve Microsoft Foundation Class (MFC) kitaplığı arasında paylaşılan sınıflarını kullanarak programı.  

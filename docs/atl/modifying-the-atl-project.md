@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0385903a0580d06c03d3973e697e7a7fc88bbd1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7de670642e80a32158b84c739d7081ca02d483a4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="modifying-the-atl-project"></a>ATL Proje değiştirme
 Bu noktada, bileşik denetim projenizi bileşik denetlemek için gerekli nesneleri uygular. Sonraki adım, bileşik denetim içerir ve tüm gerekli olayları işlemek herhangi bir denetim eklemektir.  
@@ -32,5 +33,5 @@ Bu noktada, bileşik denetim projenizi bileşik denetlemek için gerekli nesnele
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)   
- [Nasıl yapılır: kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md)
+ [Nasıl yapılır: Kaynak Betik Dosyası Oluşturma](../windows/how-to-create-a-resource-script-file.md)
 

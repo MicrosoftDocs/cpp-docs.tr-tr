@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c3eb7009e8092184effad5e1874297c8c04b213e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5d4ee7899cda213bf8d8cfd529fd7609976e20d4
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="catlservicemoduletstart-function"></a>CAtlServiceModuleT::Start işlevi
 Hizmet çalıştırdığınızda **_tWinMain** çağrıları **CAtlServiceModuleT::WinMain**, sırayla çağıran `CAtlServiceModuleT::Start`.  

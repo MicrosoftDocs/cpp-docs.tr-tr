@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f6a32ebf3ab59679ee3f5fff3aabaf6866011e76
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4e0251e33eb6b6ae2af920181077071c90c61192
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL basit bir nesne ekleme
 Projenize ATL (Etkin Şablon Kütüphanesi) nesne eklemek için projenize ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  
@@ -47,5 +48,5 @@ Projenize ATL (Etkin Şablon Kütüphanesi) nesne eklemek için projenize ATL uy
  [Bağlantı noktaları için bir nesne ekleme](../../atl/adding-connection-points-to-an-object.md)   
  [Yöntem ekleme](../../ide/adding-a-method-visual-cpp.md)   
  [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)   
- [Genel C++ sınıfı ekleme](../../ide/adding-a-generic-cpp-class.md)
+ [Genel C++ Sınıfı Ekleme](../../ide/adding-a-generic-cpp-class.md)
 

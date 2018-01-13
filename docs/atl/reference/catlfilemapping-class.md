@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a028c2458b0a5085a1f46bf31f377e6ed9e4d346
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2dce8e219c2a64ecc6e9b307533ecc0ea11d2792
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="catlfilemapping-class"></a>CAtlFileMapping sınıfı
 Bu sınıf yöntemleri için bir atama işleci ekleyerek bir bellek eşlemeli dosyasını temsil eder [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  

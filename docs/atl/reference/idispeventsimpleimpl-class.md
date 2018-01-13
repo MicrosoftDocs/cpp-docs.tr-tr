@@ -25,11 +25,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a6500a73151f2d04c6f6ec9185aca385f9c3108a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f8a5b3098961af4f3f9262cdc4c99dbe80b4ac7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl sınıfı
 Bu sınıf uygulamaları sağlar `IDispatch` bir tür kitaplığından türü bilgileri alınıyor olmadan yöntemleri.  

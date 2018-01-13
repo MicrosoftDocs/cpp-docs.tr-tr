@@ -9,9 +9,9 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - IAxWinHostWindowLic
-- No header/ATL::IAxWinHostWindowLic
-- No header/ATL::CreateControlLic
-- No header/ATL::CreateControlLicEx
+- ATLIFACE/ATL::IAxWinHostWindowLic
+- ATLIFACE/ATL::CreateControlLic
+- ATLIFACE/ATL::CreateControlLicEx
 dev_langs: C++
 helpviewer_keywords: IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2e74029025daeb18a3c63459845ef9edf4ca69cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 61bd50d5602812cc70ccc3201e9df255f469604a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>IAxWinHostWindowLic arabirimi
 Bu arabirim lisanslı denetim ve konak nesnesi düzenleme için yöntemleri sağlar.  

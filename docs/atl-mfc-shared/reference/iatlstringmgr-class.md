@@ -25,11 +25,12 @@ caps.latest.revision: "16"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cb5d582b73184d562f84363fa27bfc20a63f1d1f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 85b99b0b1f35ecbc35b4096ac8c2260d0a55680d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iatlstringmgr-class"></a>IAtlStringMgr sınıfı
 Bu sınıf arabirimi temsil eden bir `CStringT` bellek yöneticisi.  

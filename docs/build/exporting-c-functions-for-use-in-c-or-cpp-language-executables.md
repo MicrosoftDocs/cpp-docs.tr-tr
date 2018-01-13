@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e92ef965372d1bf0b0272b5a962091ff0ae88e1e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 232cfb3a65dfe3e65eaa2eeef0a4a55e723b7f7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exporting-c-functions-for-use-in-c-or-c-language-executables"></a>C ya da C++ Dili Çalıştırılabilir Öğelerinde Kullanmak için C İşlevlerini Dışarı Aktarma  
   
@@ -72,7 +73,7 @@ extern "C" {
   
 -   [Düzenlenmiş adlar](../build/reference/decorated-names.md)  
   
--   [Bağlantıyı belirtmek için extern kullanma](../cpp/using-extern-to-specify-linkage.md)  
+-   [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+ [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)

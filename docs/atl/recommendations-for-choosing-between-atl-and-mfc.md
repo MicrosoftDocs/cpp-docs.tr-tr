@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d912c6cd997c23b9623d20a104327fb6e4701494
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 079784f1fed84ae073767a4a0b622d3fdbf7384b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="recommendations-for-choosing-between-atl-and-mfc"></a>ATL ve MFC arasında seçim önerileri
 Bileşenleri ve uygulamaları geliştirirken arasında iki yaklaşım seçebilirsiniz — ATL ve MFC (Microsoft Foundation Class Kitaplığı).  
@@ -35,5 +36,5 @@ Bileşenleri ve uygulamaları geliştirirken arasında iki yaklaşım seçebilir
  Bir sihirbaz çalıştırarak var olan bir MFC projesinde ATL kullanma desteği ekleyebilirsiniz. Ayrıntılar için bkz [MFC projenize ATL desteği ekleme](../mfc/reference/adding-atl-support-to-your-mfc-project.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL giriş](../atl/introduction-to-atl.md)
+ [ATL’ye Giriş](../atl/introduction-to-atl.md)
 

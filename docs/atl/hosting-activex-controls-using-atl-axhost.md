@@ -20,11 +20,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: bb2e7da3ed12b48f82f5769dd8436f0440031226
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2aac8a8b9cbf0b72378a286943faa6e36a8f3f74
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="hosting-activex-controls-using-atl-axhost"></a>ATL AXHost kullanarak ActiveX denetimlerini barındırma
 Bu konudaki örnek AXHost oluşturma ve çeşitli ATL işlevleri kullanarak bir ActiveX denetimini barındırmak nasıl göstermektedir. Ayrıca denetim ve havuz olayları erişmek nasıl gösterir (kullanarak [IDispEventImpl](../atl/reference/idispeventimpl-class.md)) barındırılan denetiminden. Örnek ana penceresinde veya alt pencere Takvim denetimi barındırır.  
@@ -57,5 +58,5 @@ Bu konudaki örnek AXHost oluşturma ve çeşitli ATL işlevleri kullanarak bir 
  [AtlAxCreateControlLic](reference/composite-control-global-functions.md#atlaxcreatecontrollic)   
  [AtlAxCreateControlLicEx](reference/composite-control-global-functions.md#atlaxcreatecontrolex)   
  [CAxWindow2T sınıfı](../atl/reference/caxwindow2t-class.md)   
- [IAxWinHostWindowLic arabirimi](../atl/reference/iaxwinhostwindowlic-interface.md)
+ [IAxWinHostWindowLic Arabirimi](../atl/reference/iaxwinhostwindowlic-interface.md)
 

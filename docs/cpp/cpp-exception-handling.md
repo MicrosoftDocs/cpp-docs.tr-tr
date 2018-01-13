@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0187ad4620b51b12385cdee9196bc88eb142dc81
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: a6cbe3489b0d45111a527102c85e6d8c207715ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-exception-handling"></a>C++ Özel Durum İşleme
 C++ dili özel durum oluşturmak ve yakalamak için yerleşik destek sağlar. C++'ta programlarken, yerleşik C++ özel durum desteğini hemen hemen her zaman bu bölümde açıklandığı gibi kullanmalısınız.  
@@ -40,12 +41,12 @@ C++ dili özel durum oluşturmak ve yakalamak için yerleşik destek sağlar. C+
   
 -   [noexcept](../cpp/noexcept-cpp.md)  
   
--   [İşlenilmeyen C++ ifadeleri](../cpp/unhandled-cpp-exceptions.md)  
+-   [İşlenilmeyen C++ Özel Durumları](../cpp/unhandled-cpp-exceptions.md)  
   
--   [C (yapılandırılmış) ile C++ özel durumlarını karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)  
+-   [C (Yapılandırılmış) ile C++ Özel Durumlarını Karıştırma](../cpp/mixing-c-structured-and-cpp-exceptions.md)  
   
 ## <a name="support-for-earlier-mfc-exceptions"></a>Önceki MFC Özel Durumları için Destek  
  Sürüm 4. 0'dan sonra C++ özel durum mekanizması işleme kullanarak MFC başlamıştır. C++ özel durum işlemeyi yeni kod içinde kullanmanız teşvik edilse de, MFC sürüm 4.0 ve sonraki sürümler önceki sürümlerdeki MFC makroları korur, böylece eski kodlar bozulmaz. Makrolar ile yeni bir mekanizma da birleştirilebilir. Makrolar ve C++ özel durum işleme karıştırma ve yeni mekanizmasını kullanmak için eski kod dönüştürme makaleleri bilgi için [özel durumlar: kullanarak MFC makroları ve C++ özel durumlarını](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md) ve [özel durumlar: MFC'den dönüştürme Özel durum makroları](../mfc/exceptions-converting-from-mfc-exception-macros.md). Eski MFC özel durum makrolarını hala kullanmaya devam ediyorsanız, C++ özel durum anahtar sözcüklerini değerlendirin. Bkz: [özel durumlar: sürüm 3. 0'da özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme](../cpp/exception-handling-in-visual-cpp.md)
+ [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)

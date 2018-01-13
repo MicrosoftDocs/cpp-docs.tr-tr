@@ -64,11 +64,12 @@ caps.latest.revision: "13"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0cc09c716e8867c03147a28e6c0eb7d4fc844937
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 4a7a2a5baadab38283b621cb2f6ae99b36fe0a50
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-and-ml64-command-line-reference"></a>ML ve ML64 Komut Satırı Başvurusu
 Derler ve bir veya daha fazla assembly dili kaynak dosyaları bağlar. Komut satırı seçenekleri büyük/küçük harfe duyarlıdır.  
@@ -114,7 +115,7 @@ ML64 [[options]] filename [[ [[options]]  filename]]
 |**/H**`number`|Dış adlar sayı önemli karakterler için sınırlar. Varsayılan 31 karakterdir.<br /><br /> Ml64.exe kullanılamaz.|  
 |**/ Help**|ML hakkında Yardım için QuickHelp çağırır.|  
 |**/I**`pathname`|İçerme dosyası yolunu ayarlar. En fazla 10 **/I** seçenekleri izin verilir.|  
-|**/ nologo**|Başarılı derleme iletileri gizler.|  
+|**/nologo**|Başarılı derleme iletileri gizler.|  
 |**/ OMF**|Nesne modülü dosya biçimi (OMF) nesne modül türünü oluşturur.  **/ OMF** gelir **/c**; ML.exe OMF nesnelerini bağlamanın desteklemez.<br /><br /> Ml64.exe kullanılamaz.|  
 |**/SA**|Kullanılabilir tüm bilgiler listesi üzerinde etkinleştirir.|  
 |**SAFESEH**|Nesne hiçbir özel durum işleyicileri içeren ya da içeren tüm ile bildirilen özel durum işleyicileri olarak işaretler [. SAFESEH](../../assembler/masm/dot-safeseh.md).<br /><br /> Ml64.exe kullanılamaz.|  
@@ -159,4 +160,4 @@ ML64 [[options]] filename [[ [[options]]  filename]]
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ML hata iletileri](../../assembler/masm/ml-error-messages.md)   
- [Microsoft Macro Assembler başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+ [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

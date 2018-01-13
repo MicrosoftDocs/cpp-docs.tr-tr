@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e1eee05a9a206d3c02f34d619cf78822aaa4ed61
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 74ee1bbcf1a39171b18c09274543c72e0b844748
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="aggregates-and-unions"></a>Toplamlar ve Birleşimler
 Diziler, yapılar ve birleşimleri gibi diğer türleri tutarlı toplama ve birleşim depolama ve veri alma olun daha sıkı hizalama gereksinimleri vardır. Dizi, yapı ve birleşim tanımlarında şunlardır:  
@@ -39,14 +40,14 @@ Diziler, yapılar ve birleşimleri gibi diğer türleri tutarlı toplama ve birl
 |Skaler tür|C veri türü|Gerekli hizalama|  
 |**INT8**|`char`|Bayt|  
 |**UINT8**|`unsigned char`|Bayt|  
-|**INT16**|**kısa**|Word|  
+|**INT16**|**short**|Word|  
 |**UINT16**|**İmzasız short**|Word|  
 |**INT32**|**int, uzun**|Doubleword|  
 |**UINT32**|**İmzasız int, Long imzalanmamış**|Doubleword|  
 |**INT64**|`__int64`|Quadword|  
 |**UINT64**|**İmzasız __int64**|Quadword|  
-|**FP32 (tek duyarlık)**|**kayan nokta**|Doubleword|  
-|**FP64 (çift duyarlık)**|**çift**|Quadword|  
+|**FP32 (tek duyarlık)**|**float**|Doubleword|  
+|**FP64 (çift duyarlık)**|**double**|Quadword|  
 |**İŞARETÇİ**|**\***|Quadword|  
 |`__m64`|**Yapı __m64**|Quadword|  
 |`__m128`|**Yapı __m128**|Octaword|  
@@ -64,4 +65,4 @@ Diziler, yapılar ve birleşimleri gibi diğer türleri tutarlı toplama ve birl
 -   Bireysel bir derleyici paket boyutu nedeniyle yapısının ayarlayabilir. Örneğin [/Zp (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md) yapıları paketleme ayarlamak için sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Türler ve depolama](../build/types-and-storage.md)
+ [Türler ve Depolama](../build/types-and-storage.md)

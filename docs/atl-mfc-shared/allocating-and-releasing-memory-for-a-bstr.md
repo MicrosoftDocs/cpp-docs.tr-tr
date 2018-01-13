@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9b202d9e1d93cb170325ede736eb1ab33fc69b02
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 282ceac05587452fad750f05b642c0ffd5b929a7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve için BSTR belleği serbest bırakma
 Oluşturduğunuzda `BSTR`s ve bunları COM nesneleri arasında geçişi, kullandıkları bellek sızıntıları önlemek için bellek değerlendirmesini ilgilenebilmek gerekir. Zaman bir `BSTR` bir arabirim içinde kalır, siz gerekir serbest kendi bellek ile bittiğinde. Ancak, bir `BSTR` geçişleri arabirim dışında alıcı nesnesini alır kendi bellek yönetimi sorumluluğunu.  

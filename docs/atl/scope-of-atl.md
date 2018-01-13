@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a16fc5c39255201285de41d927b3c93a32793304
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: d1aaaaf1c312c41dad6ed3030dac30c7e28b2fce
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="scope-of-atl"></a>ATL kapsamı
 ATL COM nesneleri, otomasyon sunucuları ve ActiveX denetimlerini kolayca oluşturmanıza olanak sağlar. ATL birçok temel COM arabirimleri için yerleşik destek sağlar.  
@@ -27,5 +28,5 @@ ATL COM nesneleri, otomasyon sunucuları ve ActiveX denetimlerini kolayca oluşt
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL giriş](../atl/introduction-to-atl.md)   
- [ATL Proje Sihirbazı](../atl/reference/atl-project-wizard.md)
+ [ATL Projesi Sihirbazı](../atl/reference/atl-project-wizard.md)
 

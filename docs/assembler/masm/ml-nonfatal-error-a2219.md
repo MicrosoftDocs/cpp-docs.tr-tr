@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: dceb29148271a708f2a68be46520c0f3df391297
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3f918e79b47a6a1ea88ac8f01dd43f20fb793f99
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2219"></a>ML Önemli Olmayan Hatası A2219
 **Uzaklığı hatalı hizalamasını bırakma kodu**  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  İşleneni [. ALLOCSTACK](../../assembler/masm/dot-allocstack.md) ve [. SAVEREG](../../assembler/masm/dot-savereg.md) 8'in katı olmalıdır.  İşleneni [. SAVEXMM128](../../assembler/masm/dot-savexmm128.md) ve [. SETFRAME](../../assembler/masm/dot-setframe.md) 16 katları olması gerekir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

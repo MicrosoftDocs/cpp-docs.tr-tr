@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ceb64bb71ad43dd1a6e6fd45a3a0480d68eb643a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7164d2313f5610d1d7e56f5449c81ea9e2282981
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cfixedstringt-example-of-a-custom-string-manager"></a>CFixedStringT: Örnek bir özel dize Yöneticisi'nin
 ATL kitaplığı uygulayan bir sınıf tarafından kullanılan özel bir dize Yöneticisi örneği [CFixedStringT](../atl-mfc-shared/reference/cfixedstringt-class.md)adlı **CFixedStringMgr**. `CFixedStringT`türetilmiş [CStringT](../atl-mfc-shared/reference/cstringt-class.md) ve karakter verilerini bir parçası olarak ayıran bir dize uygulayan `CFixedStringT` dizesi tarafından belirtilen uzunluğundan daha küçük olduğu sürece kendisini nesne **t_nChars** Şablon parametresi `CFixedStringT`. Bu yaklaşımda, dize uzunluğu sabit arabellek boyutu büyüdükçe sürece dize öbek hiç gerekmez. Çünkü `CFixedStringT` mu her zaman kullanım dize verilerini ayırmak için bir yığın tarafından kullanılamaz **CAtlStringMgr** dize Yöneticisi olarak. Özel bir dize Yöneticisi kullanır (**CFixedStringMgr**), uygulama [IAtlStringMgr](../atl-mfc-shared/reference/iatlstringmgr-class.md) arabirimi. Bu arabirim içinde ele alınmıştır [uygulaması bir özel dize Yöneticisi'nin (Gelişmiş yöntemi)](../atl-mfc-shared/implementation-of-a-custom-string-manager-advanced-method.md).  
@@ -64,5 +65,5 @@ ATL kitaplığı uygulayan bir sınıf tarafından kullanılan özel bir dize Y�
  **Başlık:** cstringt.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT ile bellek yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+ [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
 

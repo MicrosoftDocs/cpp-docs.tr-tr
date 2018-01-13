@@ -18,11 +18,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: acae66ff8de61854d1fbaf38955ab275a01cffda
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 326f54db7f9edc30e924750143fdcdb78c02357b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="nmake-reference"></a>NMAKE Başvurusu
 Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte gelen bir komut satırı aracıdır [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] bir açıklama dosyasında yer alan komutları göre projeleri oluşturur.  
@@ -30,13 +31,13 @@ Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte ge
  NMAKE kullanmak için bir geliştirici komut istemi penceresinde çalıştırmanız gerekir. Bir geliştirici komut istemi penceresi araçları kitaplıkları, ayarlayın ve komut satırında oluşturmak için gereken dosya yolları dahil ortam değişkeni yok. Bir geliştirici komut istemi penceresi açın hakkında ayrıntılar için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md).  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
- [NMAKE çalıştırma](../build/running-nmake.md)  
+ [NMAKE Çalıştırma](../build/running-nmake.md)  
   
- [Derleme görevleri dosyası içeriği](../build/contents-of-a-makefile.md)  
+ [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)  
   
  [Açıklama blokları](../build/description-blocks.md)  
   
- [Derleme görevleri dosyası komutları](../build/commands-in-a-makefile.md)  
+ [Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)  
   
  [Makrolar ve NMAKE](../build/macros-and-nmake.md)  
   
@@ -51,4 +52,4 @@ Microsoft Program Bakımı yardımcı programı'nı (NMAKE. EXE) ile birlikte ge
  [C/C++ derleme araçları](../build/reference/c-cpp-build-tools.md)   
  [Visual C++ proje oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)   
  [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)   
- [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md)
+ [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)

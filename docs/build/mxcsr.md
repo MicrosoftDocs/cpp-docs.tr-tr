@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6bbd0adbfa7ccc51093ac087d908360b893ea518
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7794cea8906440c0adca94791d08e3ced6af747e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="mxcsr"></a>MxCsr
 Kayıt durumu MxCsr de içerir. Çağırma kuralı bu kayıt geçici ve kalıcı bir bölümü olarak böler. Volatile bölümü 6 durumu bayrakları, MXCSR oluşur [0:5], MXCSR [6:15] kaydı geri kalanı kalıcı olarak değerlendirilir.  
@@ -42,4 +43,4 @@ MXCSR[15]      : Flush to zero for masked underflow - 0 (off)
  Hiçbir varsayımlar özellikle bir işlevin belgelerinde açıklanan sürece MXCSR geçici kısmının işlevi sınır arasında durumuyla ilgili yapılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma kuralı](../build/calling-convention.md)
+ [Çağırma Kuralı](../build/calling-convention.md)

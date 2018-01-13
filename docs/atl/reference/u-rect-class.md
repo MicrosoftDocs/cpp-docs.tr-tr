@@ -20,11 +20,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8c7d4e7b34256d9544cd75dc71dbfb8294db30b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1b7efb94f5afdd2f6daa6fa047d36ea51c957d31
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="urect-class"></a>_U_RECT sınıfı
 Bu bağımsız değişken bağdaştırıcı sınıfı ya da verir `RECT` işaretçileri veya bakımından işaretçileri uygulanan bir işlev geçirilmesi başvuruları.  

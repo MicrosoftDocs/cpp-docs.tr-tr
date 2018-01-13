@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 59f6fa9ada7c69814d1841b350afc247ec489704
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 631426fece3960303d67d8929e99c404beaab998
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL projenizdeki CRT bağlantılandırma
 [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md) (CRT) programlama çok ATL geliştirme sırasında kolaylaştırabilir pek çok yararlı işlevleri sağlar. CRT kitaplık tüm ATL projeleri bağlantısı. Olumlu ve olumsuz yönlerini yönteminde bağlama görebilirsiniz [avantajları ve bileşim CRT bağlamak için kullanılan yöntem](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md).  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/24/2017
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL ve C çalışma zamanı koduyla programlama](../atl/programming-with-atl-and-c-run-time-code.md)   
- [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)
+ [DLL’ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)
 

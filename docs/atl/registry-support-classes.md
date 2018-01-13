@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 92ea41b61d38689c4a5d3bb81550f7e53cc46076
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f11a5361f25d08010735ee612b9296f888ed8933
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="registry-support-classes"></a>Kayıt defteri destek sınıfları
 Aşağıdaki sınıf kayıt defteri destek sağlar:  
@@ -34,5 +35,5 @@ Aşağıdaki sınıf kayıt defteri destek sağlar:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
- [Kayıt defteri makroları](../atl/reference/registry-macros.md)
+ [Kayıt Defteri Makroları](../atl/reference/registry-macros.md)
 

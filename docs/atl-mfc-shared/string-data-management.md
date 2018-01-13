@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b0ffeebee648c6ce804879683d7236786bbcbdc9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ad7a17b1b34375fcb45019bcaf8878757288a290
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="string-data-management"></a>Dize veri yönetimi
 Visual C++ dize verilerini yönetmek için birkaç yöntem sağlar:  
@@ -89,5 +90,5 @@ Visual C++ dize verilerini yönetmek için birkaç yöntem sağlar:
  Kullanabileceğiniz `CString` üye işlevleri [CSimpleStringT::LockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) ve [CSimpleStringT::UnlockBuffer](../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) başvuru sayımı etkinleştirmek veya devre dışı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel MFC konuları](../mfc/general-mfc-topics.md)
+ [Genel MFC Konuları](../mfc/general-mfc-topics.md)
 

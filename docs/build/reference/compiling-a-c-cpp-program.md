@@ -16,26 +16,27 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 75a48da1f4b0bf2832b1c82978e739ab01b96ca2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 79fe25913f5b86768f60a13d37d188ae8101bf14
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiling-a-cc-program"></a>C/C++ Programını Derleme
 
 Derleyici kullanma hakkında daha fazla bilgi için aşağıdaki bölümlere bakın:  
   
--   [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)  
+-   [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
   
 -   [Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
   
--   [Önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md)  
+-   [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)  
   
--   [Derleyicide ve bağlayıcıda Unicode desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
+-   [Derleyicide ve Bağlayıcıda Unicode Desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
 
 Derleyici ana bilgisayarı ve hedef mimarisi seçme hakkında daha fazla bilgi için bkz: [yapılandırma Visual C++ 64-bit, x64 için hedefleri](../../build/configuring-programs-for-64-bit-visual-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)

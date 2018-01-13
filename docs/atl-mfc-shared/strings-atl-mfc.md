@@ -32,11 +32,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1d2b48b1454c988819953c03d6de449d8290c12d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6a82f0d02cc8dc9b7c487c8cd9506a4c7d0360fe
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
 Neredeyse tüm programlar dize verilerle çalışır. Visual C++ Bu dize verilerini yönetmek için birkaç yöntem sağlar.  
@@ -45,14 +46,14 @@ Neredeyse tüm programlar dize verilerle çalışır. Visual C++ Bu dize veriler
  [CStringT kullanma](../atl-mfc-shared/using-cstringt.md)  
  Şablon sınıfı CStringT kullanarak programlama açıklar.  
   
- [CString kullanma](../atl-mfc-shared/using-cstring.md)  
+ [CString Kullanma](../atl-mfc-shared/using-cstring.md)  
  CString, CStringT varsayılan uygulamasını kullanarak programlama açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)  
  Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.  
   
- [MFC kavramları](../mfc/mfc-concepts.md)  
+ [MFC Kavramları](../mfc/mfc-concepts.md)  
  Yardımcı olmak üzere kavramsal ve görev tabanlı konuları sağlar MFC kitaplığını kullanarak programı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -21,11 +21,12 @@ caps.latest.revision: "21"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f55e1a4aa01f239721ad3a87f68be7c6d55b233f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 75581c8237dae6bc07ca239ac57ef327cd78e540
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl sınıfı
 Bu sınıf, bir koleksiyon sınıfı tarafından kullanılan yöntemleri sağlar.  

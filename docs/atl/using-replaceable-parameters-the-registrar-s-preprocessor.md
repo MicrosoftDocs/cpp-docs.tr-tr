@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6909db6a68a9e637ed0cf8513f49ba306007ce6f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b06333ba51b74501f3b7cd68248e5fb7e51ca94f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilir parametreler (kayıt &#39; s önişlemci) kullanma
 Değiştirilebilir parametreler çalışma zamanı verileri belirtmek bir kayıt şirketinizin istemci izin verin. Bunu yapmak için kayıt şirketi içine komut değiştirilebilir parametreler ile ilişkili değerleri girer değiştirme harita tutar. Kayıt şirketi bu girişler çalışma zamanında yapar.  
@@ -54,5 +55,5 @@ Değiştirilebilir parametreler çalışma zamanı verileri belirtmek bir kayıt
 >  DLL çıkarır projesi oluştururken, ATL tırnak işaretleri yol adı, eklemez **MODÜL %** veya **MODULE_RAW %** kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaydedici betikleri oluşturma](../atl/creating-registrar-scripts.md)
+ [Kaydedici Betikleri Oluşturma](../atl/creating-registrar-scripts.md)
 

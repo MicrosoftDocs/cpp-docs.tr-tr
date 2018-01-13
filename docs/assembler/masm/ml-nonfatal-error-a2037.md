@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 5b656d8dab486bd43f766f9a89d418c2805dfcf2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5817a3cbd50f14b13f08f16f97fa0f3a6dba3aa5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2037"></a>ML Önemli Olmayan Hatası A2037
 **Yapı tanımı içinde izin verilmiyor deyimi**  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  Bir yapı içeremez yönergeleri, etiketler, yordamlar, akış denetimi yönergeleri [. Başlangıç](../../assembler/masm/dot-startup.md), veya [. Çıkış](../../assembler/masm/dot-exit.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

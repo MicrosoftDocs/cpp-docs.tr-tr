@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ddacf677dab37bc85492dff1ec13dde23132da15
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 39c3a36f697527c7e133409f49656e4415f86a7f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dll-frequently-asked-questions"></a>Sıkça Sorulan DLL Soruları  
   
@@ -39,7 +40,7 @@ Aşağıdaki DLLs hakkında bazı sık sorulan sorular (SSS) istenir.
 
 ## <a name="mfc_multithreaded_1"></a>MFC DLL çoklu iş parçacığı oluşturabilir miyim?  
   
-Win32 iş parçacığı yerel depolaması (TLS) işlevleri gibi kullandığı sürece başlatma sırasında bir MFC DLL güvenli bir şekilde birden çok iş parçacığı oluşturabilir mi dışında **TlsAlloc** iş parçacığı yerel depolama alanı ayırmak için. Ancak, bir MFC DLL kullanıyorsa **__declspec(thread)** iş parçacığı yerel depolama alanı ayırmak için istemci uygulaması örtük olarak DLL'e bağlanması gerekir. İstemci uygulaması açıkça çağrısı DLL bağlar, **LoadLibrary** başarıyla DLL yüklemez. MFC DLL'leri içinde birden çok iş parçacığı oluşturma hakkında daha fazla bilgi için Bilgi Bankası makalesi, "Sorun: çağırma LoadLibrary() için yük bir DLL olduğunu sahip statik TLS" (Q118816) bakın.  
+Win32 iş parçacığı yerel depolaması (TLS) işlevleri gibi kullandığı sürece başlatma sırasında bir MFC DLL güvenli bir şekilde birden çok iş parçacığı oluşturabilir mi dışında **TlsAlloc** iş parçacığı yerel depolama alanı ayırmak için. Ancak, bir MFC DLL kullanıyorsa **__declspec(thread)** iş parçacığı yerel depolama alanı ayırmak için istemci uygulaması örtük olarak DLL'e bağlanması gerekir. İstemci uygulaması açıkça çağrısı DLL bağlar, **LoadLibrary** başarıyla DLL yüklemez. MFC DLL'leri içinde birden çok iş parçacığı oluşturma hakkında daha fazla bilgi için Bilgi Bankası makalesi, "Sorun: çağırma LoadLibrary() için yük bir DLL olduğunu sahip statik TLS" (Q118816) bakın. DLL'lerde iş parçacığı yerel değişkenleri hakkında daha fazla bilgi için bkz: [iş parçacığı](../cpp/thread.md).
   
  Başlatma sırasında yeni bir MFC iş parçacığı oluşturan bir MFC DLL, bir uygulama tarafından yüklendiğinde yanıt vermeyi durdurur. Her bir iş parçacığı çağırarak oluşturulduğunda bu içerir `AfxBeginThread` veya `CWinThread::CreateThread` içinde:  
   
@@ -78,4 +79,4 @@ DLL bir sıradan değiştirme MFC statik olarak bağlı normal bir MFC DLL ise d
 Olası bir nedeni de bellek sızıntısı MFC ileti işleyicisi işlevler içinde kullanılan geçici nesneler oluşturmasıdır. MFC uygulamalarında, bu geçici nesneleri otomatik olarak içinde temizlenmesini `CWinApp::OnIdle()` iletileri işleme Between çağrılan işlev. Ancak, MFC dinamik bağlantı kitaplıklarını (DLL'ler) içinde `OnIdle()` işlevi otomatik olarak çağrılmaz. Sonuç olarak, geçici nesneler otomatik olarak temizlenir değil. Geçici nesneleri temizlemek için DLL'i açıkça çağırmalıdır `OnIdle(1)` düzenli aralıklarla.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

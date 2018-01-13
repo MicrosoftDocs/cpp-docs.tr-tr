@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: fb19990b662ee9b021e950755b8b3e2bb42a6d18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 934b1b7157368f290a4d475ea5df994afeab5354
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2044"></a>ML Önemli Olmayan Hatası A2044
 **dosyasında geçersiz bir karakter**  
@@ -27,4 +28,4 @@ ms.lasthandoff: 10/24/2017
  Kaynak dosya bir yorum, dize dışında bir karakter içeriyor ya da değişmez değer, bir işleç veya diğer yasal karakter olarak tanınmadı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

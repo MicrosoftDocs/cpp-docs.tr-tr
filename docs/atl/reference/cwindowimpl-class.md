@@ -29,11 +29,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ba2633fe88b83dda2f0d0edcf58d477f8f760b89
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3aa14c3ae6c083cbf440d8b5b94fcb3754bd6fff
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl sınıfı
 Oluşturmak veya bir pencereyi alt sınıf yapma için yöntemleri sağlar.  
@@ -114,8 +115,8 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 |Daha fazla bilgi|Bkz. |  
 |--------------------------------|---------|  
 |Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|  
-|ATL Windows'da kullanma|[ATL pencere sınıfları](../../atl/atl-window-classes.md)|  
-|ATL Proje Sihirbazı|[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)|  
+|ATL Windows'da kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|  
+|ATL Proje Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CMessageMap](../../atl/reference/cmessagemap-class.md)  

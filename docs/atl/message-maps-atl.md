@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 650dcd31e07ef1995f09b0521991d79726b22774
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1e708fea75c594c7bb9504515c80222ad901c335
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 İleti eşlemesi işleyici işlevi belirli ileti, komut veya bildirim ile ilişkilendirir. ATL'ın kullanarak [ileti eşleme makroları](../atl/reference/message-map-macros-atl.md), bir pencere için ileti eşlemesi belirtebilirsiniz. Pencere yordamları `CWindowImpl`, `CDialogImpl`, ve `CContainedWindowT` kendi ileti eşlemesi pencerenin iletileri doğrudan.  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/24/2017
  Son olarak, diğer ileti eşlemeleri, ile bildirilen ATL destekleyen [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) makrosu. Her alternatif ileti eşlemesi geçişi için benzersiz bir numara ile tanımlanan `ALT_MSG_MAP`. Alternatif bir iletiyi kullanarak eşler, bir harita birden çok windows iletilerini işleyebilir. Varsayılan olarak, unutmayın `CWindowImpl` alternatif ileti eşlemeleri kullanmaz. Bu destek eklemek için geçersiz kılma `WindowProc` yönteminde, `CWindowImpl`-türetilmiş sınıf ve arama `ProcessWindowMessage` ileti eşlemesi tanımlayıcısına sahip.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir pencere uygulama](../atl/implementing-a-window.md)
+ [Pencere Uygulama](../atl/implementing-a-window.md)
 

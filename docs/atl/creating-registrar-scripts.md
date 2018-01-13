@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5142d0f5e3ede3a7cdd51af0fc54964b1cecec14
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b3bda4043693d14451a2de14cbc71fbecdcdddba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-registrar-scripts"></a>Kaydedici betikleri oluşturma
 Kaydedici betik sistem kayıt defteri API temelli yerine verilere erişim sağlar. Yalnızca bir veya iki satır bir anahtarı kayıt defterine eklemek için komut sürdüğünü beri verilere erişim genellikle daha verimli olur.  
@@ -34,15 +35,15 @@ Kaydedici betik sistem kayıt defteri API temelli yerine verilere erişim sağla
   
  Bu makalede Kaydedici betikleri ilgili aşağıdaki konuları içerir:  
   
--   [Backus Nauer Form (BNF) sözdizimi anlama](../atl/understanding-backus-nauer-form-bnf-syntax.md)  
+-   [Backus Nauer Form (BNF) Söz Dizimini Anlama](../atl/understanding-backus-nauer-form-bnf-syntax.md)  
   
--   [Anlama ayrıştırma ağacı](../atl/understanding-parse-trees.md)  
+-   [Ayrıştırma Ağaçlarını Anlama](../atl/understanding-parse-trees.md)  
   
--   [Kayıt defteri komut dosyası yazma örnekleri](../atl/registry-scripting-examples.md)  
+-   [Kayıt Defteri Betik Oluşturma Örnekleri](../atl/registry-scripting-examples.md)  
   
--   [Değiştirilebilir parametreler (kayıt şirketinin önişlemci) kullanma](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)  
+-   [Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)  
   
--   [Komut dosyaları çağırma](../atl/invoking-scripts.md)  
+-   [Betikleri Çağırma](../atl/invoking-scripts.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)

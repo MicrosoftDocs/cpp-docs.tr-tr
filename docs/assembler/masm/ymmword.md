@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 044f4888e4b9d83ddfcff9f5a1ed5e7a8bc84204
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 877bf138fa413e7e162c1f46c2d4010b2cba4613
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ymmword"></a>YMMWORD
 256 bit multimedya işlenenleri Intel Gelişmiş vektör Uzantıları (AVX) yönergeleri ile birlikte kullanılır.  
@@ -34,4 +35,4 @@ YMMWORD
  `YMMWORD`aynı türde temsil etmek üzere tasarlanmıştır `__m256` AVX iç bilgileri için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c833a4833bfc670a58796700efd4f885fe3ee560
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 932aad860cd2b78208857ca7b028e35cd96d481e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="inference-rules"></a>Çıkarsama Kuralları
 Çıkarım kuralları komutları hedefleri güncelleştirmek ve hedefler için bağımlılıklar anlamak için sağlayın. Aynı taban adına sahip bağımlı ve tek bir hedefi bir çıkarım kuralı uzantılarında eşleşmiyor. Çıkarım kuralları, kullanıcı tanımlı veya önceden tanımlanmış; önceden tanımlanmış kurallar tanımlanabilir.  
@@ -40,4 +41,4 @@ ms.lasthandoff: 10/24/2017
  [Çıkarsama kurallarında öncelik](../build/precedence-in-inference-rules.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE başvurusu](../build/nmake-reference.md)
+ [NMAKE Başvurusu](../build/nmake-reference.md)

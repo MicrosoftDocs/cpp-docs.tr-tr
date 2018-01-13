@@ -28,11 +28,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aab3048667099a698bd4aff928c7a23d7fbb01e2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ab4bb1e04bd21900cdf8d8122af51547e79aea22
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.  
@@ -100,8 +101,8 @@ template <class T,
 |Daha fazla bilgi|Bkz. |  
 |--------------------------------|---------|  
 |Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|  
-|ATL iletişim kutularında kullanma|[ATL pencere sınıfları](../../atl/atl-window-classes.md)|  
-|ATL Proje Sihirbazı|[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)|  
+|ATL iletişim kutularında kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|  
+|ATL Proje Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|  
 |İletişim kutuları|[İletişim kutuları](http://msdn.microsoft.com/library/windows/desktop/ms632588) ve sonraki konularda Windows SDK'sı|  
   
 ## <a name="requirements"></a>Gereksinimler  

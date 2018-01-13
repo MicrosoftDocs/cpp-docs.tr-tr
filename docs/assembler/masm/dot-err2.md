@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 078525ab1d26ac025d8cb20e72d620a555586921
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ada09468c52c38311e6cd44c4cde341a0b589e43
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="err2"></a>.ERR2
 [. HATA](../../assembler/masm/dot-err.md) varsa her derleme geçişi üzerinde hesaplanan blok **seçeneği: SETIF2** olan **TRUE.**  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

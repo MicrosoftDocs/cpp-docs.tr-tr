@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ebfa692f422283e69395639295b3bf2ace1741ed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: bff1ab29841ff2dd9973d538bb763d1fc1126a8f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="displaying-assertions"></a>Onaylar görüntüleme
 Hizmetinize bağlanan istemci yanıt vermemesine görünürse, hizmet uygulanan ve görmeye olmayan bir ileti kutusu görüntülenir. Bu, kodunuzun hatalarını ayıklamak için Visual C++'ın hata ayıklayıcı kullanarak onaylayın (bkz [Görev Yöneticisi'ni kullanarak](../atl/using-task-manager.md) Bu bölümde daha önce).  
@@ -30,5 +31,5 @@ Hizmetinize bağlanan istemci yanıt vermemesine görünürse, hizmet uygulanan 
  Hizmetinizi göremiyorsunuz bir ileti kutusu görüntüleme olduğunu belirlerseniz ayarlamak isteyebilirsiniz **masaüstü ile etkileşimde bulunma hizmetine izin** hizmeti yeniden kullanmadan önce seçeneği. Bu seçenek masaüstünde hizmeti tarafından görüntülenen ileti kutusu izin veren bir başlangıç parametresidir. Bu seçeneği belirlemek için Hizmetler Denetim Masası uygulamasını açın, hizmet seçin, **başlangıç**ve ardından **masaüstü ile etkileşimde bulunma hizmetine izin** seçeneği.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama ipuçları](../atl/debugging-tips.md)
+ [Hata Ayıklama İpuçları](../atl/debugging-tips.md)
 

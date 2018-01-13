@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12eab78bdf2f0499740ecc53dbb6cf7053948679
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: dd92900ffbb8170e942053910d3faedd1f5ab2ed
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="testing-the-atl-dhtml-control"></a>ATL DHTML denetimi test etme
 Projenizi oluşturduktan sonra derleme ve örnek denetimi test. Bunu önce sınıf görünümü ve Çözüm Gezgini proje incelemek için kullanın. Projenizin öğeleri daha ayrıntılı olarak açıklanmıştır [DHTML denetimi proje öğelerini tanımlama](../atl/identifying-the-elements-of-the-dhtml-control-project.md).  

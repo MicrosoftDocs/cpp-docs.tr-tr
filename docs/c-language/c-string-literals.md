@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ffce371c2d8af4d0153db4ff4d032e878eda4a64
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b0be3ee70ef708441d20fdbbc14f25f5102d734a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
 Kaynak karakter çift tırnak işaretleri içindeki kümesindeki bir karakter dizisi bir "dize" olan (**""**). Dize değişmez değerleri kullanılan bir dizi göstermek için hangi karakterleri, birlikte ele alındığında null sonlandırılmış bir dize oluşturur. Her zaman wide dize değişmez değerleri harfiyle önek gerekir **L**.  
@@ -51,4 +52,4 @@ char *amessage = "This is a string literal.";
  Tüm çıkış kodları listelenen [kaçış sıraları](../c-language/escape-sequences.md) tablo dize değişmez değerleri geçerlidir. Bir dize sabit değeri içinde çift tırnak işareti temsil etmek için kaçış sırası kullanmak  **\\"**. Tek tırnak işareti (**'**) bir kaçış sırası temsil edilebilir. Ters eğik çizgi (**\\**) ikinci ters bölü işareti gelmelidir (**\\\\**) dizesi içinde görüntülendiğinde. Bir satırın sonunda bir ters eğik çizgi görüntülendiğinde, her zaman bir satır devamlılığı karakteri olarak yorumlanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C öğeleri](../c-language/elements-of-c.md)
+ [C Öğeleri](../c-language/elements-of-c.md)

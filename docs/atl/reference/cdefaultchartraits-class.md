@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 02595c426a631e15bf2f1b5baed2550a8befe20a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 283f588af0e824801fbec13f32ae1276c13eb724
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cdefaultchartraits-class"></a>CDefaultCharTraits sınıfı
 Bu sınıf, büyük ve küçük harf karakter dönüştürme için iki statik işlevler sağlar.  

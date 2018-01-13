@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 667a6c35d979b0fb1da3675efd03e2840285b845
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 54ac3c9d53c3b6d2b295643001fd15b1e4c6c46d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-copy-policy-classes"></a>ATL kopyalama İlkesi sınıfları
 Kopya İlkesi sınıflardır [yardımcı sınıflar](../atl/utility-classes.md) başlatmak için kullanılan, kopyalamak ve verileri silme. Kopya İlkesi sınıflar, herhangi bir veri türü için Kopyalama Semantiğini tanımlayın ve farklı veri türleri arasında dönüştürmeler tanımlamak için izin verir.  

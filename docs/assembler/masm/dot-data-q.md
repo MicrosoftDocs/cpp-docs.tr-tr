@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: ff695978efb8357b5e6a8b902d283c9aead2edf5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c0fd448b7c4704e10c9ed32bfacd2662d2cdf834
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="data"></a>.DATA?
 İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), yakın veri kesimi başlatılmamış verileri (kesim adı _BSS) başlatır.  
@@ -33,4 +34,4 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

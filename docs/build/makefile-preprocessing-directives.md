@@ -50,11 +50,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 742faea629cb085c203e231c29ab9e512b9c2812
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 1bc73a86b0772b13731aaf7ac4e2ef0760caa8a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="makefile-preprocessing-directives"></a>Derleme Görevleri Dosyası Önişleme Yönergeleri
 Önişleme yönergeleri büyük küçük harfe duyarlı değildir. İlk ünlem işareti (!), satır başında yer almalıdır. Sıfır veya daha fazla boşluk veya sekmeler girinti ünlem sonra ortaya çıkabilir.  
@@ -101,4 +102,4 @@ ms.lasthandoff: 10/24/2017
  Undefines *makroadı*.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Makefile ön işlemesi](../build/makefile-preprocessing.md)
+ [Derleme Görevleri Dosyası Ön İşlemi](../build/makefile-preprocessing.md)

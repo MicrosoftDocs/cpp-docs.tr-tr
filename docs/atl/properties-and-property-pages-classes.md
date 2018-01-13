@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5e8885876d36dcc81169be990c7001aa3052253e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b6615f09245f4be3d5d98d1507b238c3b0d7b94c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="properties-and-property-pages-classes"></a>Özellikler ve özellik sayfaları sınıfları
 Aşağıdaki sınıfları, özellikleri ve özellik sayfaları destekler:  
@@ -44,9 +45,9 @@ Aşağıdaki sınıfları, özellikleri ve özellik sayfaları destekler:
 ## <a name="related-articles"></a>İlgili Makaleler  
  [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
   
- [ATL COM özellik sayfaları](../atl/atl-com-property-pages.md)  
+ [ATL COM Özellik Sayfaları](../atl/atl-com-property-pages.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)   
- [Özellik eşleme makroları](../atl/reference/property-map-macros.md)
+ [Özellik Eşleme Makroları](../atl/reference/property-map-macros.md)
 

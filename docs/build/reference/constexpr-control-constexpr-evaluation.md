@@ -19,11 +19,12 @@ ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 38bdf6bb5dbaaa802d669b81a2504a206642204e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7e594eb697c8972d28b513a3638d3eb704258b5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (Denetim constexpr değerlendirme)  
   
@@ -67,4 +68,4 @@ Sonlandırma `constexpr` değerlendirmesinden sonra *N* adımları. Varsayılan 
 ## <a name="see-also"></a>Ayrıca Bkz.  
   
 [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

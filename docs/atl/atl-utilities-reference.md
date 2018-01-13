@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: dd8bcd1cf83c134d4a3709329093ba0eeececde1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 69f085df8b5dadbd0ba9d20596d37cb6313bb3f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-utilities-reference"></a>ATL Yardımcı Programları Başvurusu
 ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), uygulamalarınızda kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.  
@@ -26,13 +27,13 @@ ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/re
   
 |||  
 |-|-|  
-|[CPathT sınıfı](../atl/reference/cpatht-class.md)|Bu sınıf bir yolunu temsil eder.|  
-|[CDebugReportHook sınıfı](../atl/reference/cdebugreporthook-class.md)|Bu sınıf için bir adlandırılmış kanal hata ayıklama raporları göndermek için kullanın.|  
-|[CNonStatelessWorker sınıfı](../atl/reference/cnonstatelessworker-class.md)|Bir iş parçacığı havuzu isteklerini alır ve bunları oluşturulan ve yok bir alt nesne açın her istekte aktarır.|  
-|[CNoWorkerThread sınıfı](../atl/reference/cnoworkerthread-class.md)|Bu sınıf için bağımsız değişken olarak kullanma `MonitorClass` dinamik önbellek bakım devre dışı bırakmak istiyorsanız önbellek sınıflarına şablon parametresi.|  
-|[CThreadPool sınıfı](../atl/reference/cthreadpool-class.md)|Bu sınıf, iş öğelerinin sırasını işlemek çalışan iş parçacığı havuzu sağlar.|  
-|[CUrl sınıfı](../atl/reference/curl-class.md)|Bu sınıf, bir URL temsil eder. URL diğer bağımsız olarak her öğenin var olan bir URL Ayrıştırma olup olmadığını denetlemek tanır dize ya da sıfırdan bir dize oluşturma.|  
-|[CWorkerThread sınıfı](../atl/reference/cworkerthread-class.md)|Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne işleyicilerinin bekler ve tanıtıcıları birini işaret, belirtilen istemci işlevi yürütür.|  
+|[CPathT Sınıfı](../atl/reference/cpatht-class.md)|Bu sınıf bir yolunu temsil eder.|  
+|[CDebugReportHook Sınıfı](../atl/reference/cdebugreporthook-class.md)|Bu sınıf için bir adlandırılmış kanal hata ayıklama raporları göndermek için kullanın.|  
+|[CNonStatelessWorker Sınıfı](../atl/reference/cnonstatelessworker-class.md)|Bir iş parçacığı havuzu isteklerini alır ve bunları oluşturulan ve yok bir alt nesne açın her istekte aktarır.|  
+|[CNoWorkerThread Sınıfı](../atl/reference/cnoworkerthread-class.md)|Bu sınıf için bağımsız değişken olarak kullanma `MonitorClass` dinamik önbellek bakım devre dışı bırakmak istiyorsanız önbellek sınıflarına şablon parametresi.|  
+|[CThreadPool Sınıfı](../atl/reference/cthreadpool-class.md)|Bu sınıf, iş öğelerinin sırasını işlemek çalışan iş parçacığı havuzu sağlar.|  
+|[CUrl Sınıfı](../atl/reference/curl-class.md)|Bu sınıf, bir URL temsil eder. URL diğer bağımsız olarak her öğenin var olan bir URL Ayrıştırma olup olmadığını denetlemek tanır dize ya da sıfırdan bir dize oluşturma.|  
+|[CWorkerThread Sınıfı](../atl/reference/cworkerthread-class.md)|Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne işleyicilerinin bekler ve tanıtıcıları birini işaret, belirtilen istemci işlevi yürütür.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -102,4 +103,4 @@ ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/re
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../atl/active-template-library-atl-concepts.md)   
- [ATL COM Masaüstü bileşenleri](../atl/atl-com-desktop-components.md)
+ [ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)

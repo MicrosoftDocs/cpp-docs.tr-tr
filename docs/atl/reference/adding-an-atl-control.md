@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: fb5ad74cf1905b14db46cb119766914e5e57f6cc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3200ea0fc8241007c1c97c1ab296166eb7889734
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="adding-an-atl-control"></a>ATL denetim ekleme
 Bir kullanıcı arabirimi nesnesi arabirimleri için tüm olası kapsayıcıları destekleyen bir proje eklemek için bu sihirbazı kullanın. Bu arabirimleri desteklemek için projenin ATL uygulamasını veya ATL desteği içeren bir MFC uygulaması olarak oluşturulmuş olması gerekir. Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [ATL nesne MFC uygulamanıza eklemek](../../mfc/reference/adding-atl-support-to-your-mfc-project.md) MFC uygulaması için ATL desteği uygulamak için.  

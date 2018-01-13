@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 3b1b361bf01e067a1fe76829aa4217e87b107915
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 8ac42eb934692fb9eaecf345b75e7544e7078f07
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="overview-of-x64-calling-conventions"></a>x64 Çağırma Kurallarına Genel Bakış
 X86 iki önemli farklılıkları ve [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] 64-bit adresleme yeteneği olan ve düz 16 64-bit birtakım genel kullanım için kaydeder. Genişletilmiş kayıt kümesi [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] kullanan [__fastcall](../cpp/fastcall.md) çağırma kuralı ve bir RISC tabanlı özel durum işleme modeli. `__fastcall` Kuralı kayıtları ilk dört bağımsız değişkenler ve yığın çerçevesi için ek bağımsız değişkenler geçirmek için kullanılır.  
@@ -38,4 +39,4 @@ X86 iki önemli farklılıkları ve [!INCLUDE[vcprx64](../assembler/inline/inclu
  Geçici olmayan Yazmaçları değiştirmeyin işlevleri yaprak işlevlerdir. Yaprak olmayan işlevi geçici olmayan RSP, örneğin, bir işlevi çağırmak ya da yerel değişkenler için ek yığın alanı ayırma değişebilir. Bir özel durum işlendiğinde geçici olmayan Yazmaçları kurtulmak için yaprak olmayan işlevleri düzgün rasgele bir yönerge konumundaki işlev bırakma açıklar statik verileri ile Açıklama eklenmelidir. Bu veri olarak depolanması *pdata*, veya sırayla başvurduğu yordamı veri *xdata*, özel durum verileri işleme. Xdata unwinding bilgiler içerir ve ek pdata veya bir özel durum işleyici işlevi işaret edebilir. Xdata içinde açıklanan düzgün olabilmesi açıklanabilmeleri ve sonuç ileri derecede kısıtlı. Yığın işaretçisi yaprak işlevlerinde dışında bir bitiş veya giriş, parçası olmayan kod herhangi bir bölgede 16 bayt hizalı gerekir. Yaprak işlevleri pdata ve xdata gerekli değildir için yalnızca bir dönüş taklit ederek sapmasına. İşlev açıklanabilmeleri ve sonuç uygun yapısı hakkında daha fazla ayrıntı için bkz: [giriş ve bitiş](../build/prolog-and-epilog.md). Özel durum işleme ve özel durum işleme ve pdata ve xdata geriye doğru izleme hakkında daha fazla bilgi için bkz: [özel durum işleme (x64)](../build/exception-handling-x64.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 yazılım kuralları](../build/x64-software-conventions.md)
+ [x64 Yazılım Kuralları](../build/x64-software-conventions.md)

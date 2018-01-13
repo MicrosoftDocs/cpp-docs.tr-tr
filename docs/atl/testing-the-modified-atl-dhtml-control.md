@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 84b9aa9ffb04b807cba07fdd3577622f62f6ab45
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c5ecb8526ec82e0f2d18c5306a94dd7f0160803b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>Değiştirilen ATL DHTML denetimi test etme
 Şimdi nasıl çalıştığını görmek için yeni denetim deneyin.  

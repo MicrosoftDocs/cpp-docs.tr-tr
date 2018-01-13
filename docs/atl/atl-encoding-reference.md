@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cd0f4b448de3fcaabe33822c0d8b1ee834260609
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b2a97809fefdc0a5e6e7d90e7b62bbee83f28bfb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-encoding-reference"></a>ATL Kodlama Başvurusu
 Ortak Internet standartları uuencode, onaltılık gibi bir dizi ve UTF8 Kodlaması atlenc.h içinde bulunan kodu tarafından desteklenir.  
@@ -53,5 +54,5 @@ Ortak Internet standartları uuencode, onaltılık gibi bir dizi ve UTF8 Kodlama
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kavramları](../atl/active-template-library-atl-concepts.md)   
- [ATL COM Masaüstü bileşenleri](../atl/atl-com-desktop-components.md)
+ [ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)
 

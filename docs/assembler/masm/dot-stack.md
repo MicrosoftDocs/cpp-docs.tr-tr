@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 20557bf243db1c004d6ec62dcb589cfb8605a285
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 87846cc3b7887cd763c1b1707118a9350de55038
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="stack"></a>.STACK
 İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), bir yığın kesiminin (kesim adı YIĞINI) tanımlar. İsteğe bağlı `size` (varsayılan 1024) yığınının bayt sayısını belirtir. `.STACK` Yönergesi yığını deyimi otomatik olarak kapanır.  
@@ -32,4 +33,4 @@ ms.lasthandoff: 10/24/2017
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)
+ [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

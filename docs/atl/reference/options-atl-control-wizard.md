@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 314f0c7675212ad1f453da189d6483fc9b8284c4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 60cc90ca5d5c374c223f9fe350d1a6a7357329ee
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="options-atl-control-wizard"></a>Seçenekler, ATL Denetim Sihirbazı
 "Arama sonuçları" Özet buraya ekleyin.  
@@ -88,5 +89,5 @@ ms.lasthandoff: 10/24/2017
 -   **Lisanslı**: denetlemek için destek ekler [lisans](http://msdn.microsoft.com/library/windows/desktop/ms690543). Lisanslı Denetimler, yalnızca istemci makinede doğru lisans varsa barındırılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL Denetim Sihirbazı](../../atl/reference/atl-control-wizard.md)
+ [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
 

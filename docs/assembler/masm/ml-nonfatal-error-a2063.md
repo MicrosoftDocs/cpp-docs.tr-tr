@@ -15,11 +15,12 @@ caps.latest.revision: "6"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a81475ac461831b13b61f3e37a10b476644cb399
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 0070a291f1ab65b4331f66be6cd1cdd4ffe40937
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-error-a2063"></a>ML Önemli Olmayan Hatası A2063
 **yalnızca 2 üssüne HİZALA olabilir: ifade**  
@@ -29,4 +30,4 @@ ms.lasthandoff: 10/24/2017
  **HİZALA** ifadesi güç 2 2 ile 256 arasında olmalıdır ve geçerli kesime, yapı veya birlik hizalamasını küçük veya buna eşit olmalıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML hata iletileri](../../assembler/masm/ml-error-messages.md)
+ [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)

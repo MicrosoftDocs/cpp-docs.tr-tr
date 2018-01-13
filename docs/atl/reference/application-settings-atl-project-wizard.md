@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 312c2b879f19e670d9737bfa530e0cc2a35bfe58
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 12b7e383716d7cfa330bdfdebe21c33550669cc2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="application-settings-atl-project-wizard"></a>Uygulama ayarları, ATL Proje Sihirbazı
 Kullanım **uygulama ayarları** tasarlamak ve yeni bir ATL projesine temel özellikleri eklemek için ATL Proje Sihirbazı sayfasında.  
@@ -57,5 +58,5 @@ Kullanım **uygulama ayarları** tasarlamak ve yeni bir ATL projesine temel öze
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md)   
  [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
- [Varsayılan ATL Proje yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+ [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

@@ -27,11 +27,12 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9be7c3924b940040c97be7a51228cb0456ee3207
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b1ac939d723596f4b0fc3f1013dd3f02cf2aa06b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="irunnableobjectimpl-class"></a>IRunnableObjectImpl sınıfı
 Bu sınıf uygulayan **IUnknown** ve bir varsayılan uygulamayı sağlar [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) arabirimi.  

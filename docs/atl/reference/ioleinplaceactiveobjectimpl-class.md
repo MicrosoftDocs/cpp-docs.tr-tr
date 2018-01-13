@@ -27,11 +27,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b72f211d605958c345d84ae7297f5d513b7adc18
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6d88f85e83a88b0a1ce2bd4566e3ca479dddc1af
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ioleinplaceactiveobjectimpl-class"></a>IOleInPlaceActiveObjectImpl sınıfı
 Bu sınıf, bir yerinde denetimi kapsayıcısı arasındaki iletişimi yardımcı yöntemler sağlar.  
@@ -176,6 +177,6 @@ HRESULT TranslateAccelerator(LPMSG lpmsg);
  Bkz: [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)  
+ [CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)  
  [Arabirimleri ActiveX denetimleri](http://msdn.microsoft.com/library/windows/desktop/ms692724)  
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)

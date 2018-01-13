@@ -21,11 +21,12 @@ caps.latest.revision: "22"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4bbebb6f5bd885c70d9c4fe4903a00c86bb83cf3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 23375f8f76e1a58bf29e3e3e269077fea4ae8d61
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iolecontrolimpl-class"></a>IOleControlImpl sınıfı
 Bu sınıf, bir varsayılan uygulamasını sağlar **IOleControl** arabirimi ve uygulayan **IUnknown**.  

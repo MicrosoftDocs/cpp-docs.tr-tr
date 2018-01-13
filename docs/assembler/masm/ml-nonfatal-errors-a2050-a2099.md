@@ -13,14 +13,15 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: f055356f4bb2247ae88b710b3833b748074df10a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 549e42fd1e37a75a80c3a35b713983169e27f44a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ml-nonfatal-errors-a2050-a2099"></a>ML Önemli Olmayan Hataları A2050-A2099
 ML önemli olmayan hatalar hakkında daha fazla bilgi için bkz: [ML hata iletileri](../../assembler/masm/ml-error-messages.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ML önemli olmayan hatalar](../../assembler/masm/ml-nonfatal-errors.md)
+ [ML Önemli Olmayan Hatalar](../../assembler/masm/ml-nonfatal-errors.md)

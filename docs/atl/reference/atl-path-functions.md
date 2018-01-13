@@ -7,15 +7,53 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 keywords: ATL, yol
+f1_keywords:
+- ATLPATH/ATL::ATLPath::AddBackslash
+- ATLPATH/ATL::ATLPath::AddExtension
+- ATLPATH/ATL::ATLPath::Append
+- ATLPATH/ATL::ATLPath::BuildRoot
+- ATLPATH/ATL::ATLPath::Canonicalize
+- ATLPATH/ATL::ATLPath::Combine
+- ATLPATH/ATL::ATLPath::CommonPrefix
+- ATLPATH/ATL::ATLPath::CompactPath
+- ATLPATH/ATL::ATLPath::CompactPathEx
+- ATLPATH/ATL::ATLPath::FileExists
+- ATLPATH/ATL::ATLPath::FindExtension
+- ATLPATH/ATL::ATLPath::FindFileName
+- ATLPATH/ATL::ATLPath::GetDriveNumber
+- ATLPATH/ATL::ATLPath::IsDirectory
+- ATLPATH/ATL::ATLPath::IsFileSpec
+- ATLPATH/ATL::ATLPath::IsPrefix
+- ATLPATH/ATL::ATLPath::IsRelative
+- ATLPATH/ATL::ATLPath::IsRoot
+- ATLPATH/ATL::ATLPath::IsSameRoot
+- ATLPATH/ATL::ATLPath::IsUNC
+- ATLPATH/ATL::ATLPath::IsUNCServer
+- ATLPATH/ATL::ATLPath::IsUNCServerShare
+- ATLPATH/ATL::ATLPath::MakePretty
+- ATLPATH/ATL::ATLPath::MatchSpec
+- ATLPATH/ATL::ATLPath::QuoteSpaces
+- ATLPATH/ATL::ATLPath::RelativePathTo
+- ATLPATH/ATL::ATLPath::RemoveArgs
+- ATLPATH/ATL::ATLPath::RemoveBackslash
+- ATLPATH/ATL::ATLPath::RemoveBlanks
+- ATLPATH/ATL::ATLPath::RemoveExtension
+- ATLPATH/ATL::ATLPath::RemoveFileSpec
+- ATLPATH/ATL::ATLPath::RenameExtension
+- ATLPATH/ATL::ATLPath::SkipRoot
+- ATLPATH/ATL::ATLPath::StripPath
+- ATLPATH/ATL::ATLPath::StripToRoot
+- ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
 caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 97d585eb8bbe59a8ccd92b866819fb869d35f64c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 29d41c0dc09620d34299a52a505d872096a7da8c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="atl-path-functions"></a>ATL yolu işlevleri
 
@@ -25,7 +63,7 @@ ATL yolları biçiminde yönlendirmek için ATLPath sınıfı sağlar [CPathT](c
   
 |||  
 |-|-|  
-|[CPathT sınıfı](cpatht-class.md)|Bu sınıf bir yolunu temsil eder.|  
+|[CPathT Sınıfı](cpatht-class.md)|Bu sınıf bir yolunu temsil eder.|  
 
 ### <a name="related-typedefs"></a>İlgili tür tanımları  
   

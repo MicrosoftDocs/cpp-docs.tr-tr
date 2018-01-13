@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b4895e7b1cd0e38b33c1efe66e9070073403ee01
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ae16adcc6743c7e35aae2a4121819a6df50cf4f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementing-a-dual-interface"></a>Çift arabirim uygulama
 Çift arabirimini kullanarak uygulayabileceğiniz [IDispatchImpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamayı sağlar sınıfı `IDispatch` çift arabirim yöntemleri. Daha fazla bilgi için bkz: [IDispatch arabirimi uygulama](http://msdn.microsoft.com/en-us/0e171f7f-0022-4e9b-ac8e-98192828e945).  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/24/2017
 >  ATL sunar [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ve [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) uyumlu bir çift arabirim tanımını içeren bir tür kitaplığı gerek kalmadan dispinterfaces uygulamanıza yardımcı olmak için sınıflar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çift arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
+ [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)
 

@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: bb5548d74544ba4277fa1d901ffa9f0b91b83f2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 13cbe4806d8b3960cbf80df41c7cce6e7657ba7e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exit-codes-from-nmake"></a>NMAKE Çıkış Kodları
 NMAKE aşağıdaki çıkış kodlarını döndürür:  
@@ -37,4 +38,4 @@ NMAKE aşağıdaki çıkış kodlarını döndürür:
 |255|Hedef (yalnızca /Q kullanıldığında verilen) güncel değil|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE çalıştırma](../build/running-nmake.md)
+ [NMAKE Çalıştırma](../build/running-nmake.md)

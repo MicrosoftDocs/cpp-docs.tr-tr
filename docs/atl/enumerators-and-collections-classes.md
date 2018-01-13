@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be97833c43f28edbf07f28ead507dc778f0ab166
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5bf13790a6ccd268f5b3d0e9486091ef67f673cf
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="enumerators-and-collections-classes"></a>Numaralandırmalar ve koleksiyon sınıfları
 Aşağıdaki sınıflar, COM koleksiyonlar ve numaralandırmalar için destek sağlar:  
@@ -35,7 +36,7 @@ Aşağıdaki sınıflar, COM koleksiyonlar ve numaralandırmalar için destek sa
 -   [ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md) uygulamasını sağlar **sayısı**, **öğesi**, ve `_NewEnum` koleksiyonu arabirimi özelliklerini.  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
- [ATL koleksiyonları ve numaralandırmalar](../atl/atl-collections-and-enumerators.md)  
+ [ATL Koleksiyonları ve Numaralandırıcıları](../atl/atl-collections-and-enumerators.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfa genel bakış](../atl/atl-class-overview.md)

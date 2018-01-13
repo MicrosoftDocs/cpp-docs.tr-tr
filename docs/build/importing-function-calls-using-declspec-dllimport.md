@@ -21,11 +21,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: d1501506d4575c5f7fe1ff1dc7823cbd1545b974
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 5553bd5e9999a4737dc258358402eb71269b9c40
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak İşlev Çağrılarını İçeri Aktarma
 Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir **_declspec(dllimport)** işlev çağrıları, bir uygulamaya DLL'den dışarı aktarmak için. Varsayımında `func1` içeren .exe dosyasından ayrı bir DLL bulunan bir işlevi olduğunu **ana** işlevi.  
@@ -82,4 +83,4 @@ call DWORD PTR __imp_func1
  Diğer taraftan, DLL içinden işlev çağrıları için dolaylı çağrı kullanmak zorunda istediğiniz değil. Bir işlevin adresi zaten biliyor. Yük ve Dolaylı çağrıdan önce işlevin adresini depolamak için zaman ve yer gerekli olduğundan, doğrudan çağrı her zaman daha hızlı ve daha küçük. Yalnızca kullanmak istediğiniz **__declspec(dllimport)** DLL işlevlerini DLL dışında çağrılırken. Kullanmayın **__declspec(dllimport)** bu DLL oluştururken DLL içindeki işlevlerde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir uygulamaya aktarma](../build/importing-into-an-application.md)
+ [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

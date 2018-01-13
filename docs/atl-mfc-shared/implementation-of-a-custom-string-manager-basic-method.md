@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e31d9f86b9ff6d2de8ef0bfa9fb039324c1556db
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b80af4fc8b463b6987f586c426bd465520f75ba6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementation-of-a-custom-string-manager-basic-method"></a>Uygulama bir özel dize Yöneticisi'nin (temel yöntemi)
 Dize verilerini ATL tarafından sağlanan kullanmak için bellek ayırma şeması özelleştirmek için en kolay yolu **CAtlStringMgr** sınıf ancak kendi bellek ayırma yordamlar sağlar. Oluşturucusu **CAtlStringMgr** tek bir parametre alır: gösteren bir işaretçi bir `IAtlMemMgr` nesnesi. `IAtlMemMgr`yığın için genel bir arabirim sağlayan bir Özet temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi, **CAtlStringMgr** ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim veya beş sağlanan ATL bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticilerini yalnızca mevcut bellek ayırma tesis kaydır:  
@@ -42,5 +43,5 @@ Dize verilerini ATL tarafından sağlanan kullanmak için bellek ayırma şemas�
  [!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT ile bellek yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+ [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
 

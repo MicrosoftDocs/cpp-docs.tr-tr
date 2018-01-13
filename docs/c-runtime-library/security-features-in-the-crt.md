@@ -35,11 +35,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6dd54fcfc9612b5c20288b78b60d84257ab8f2f9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ce5ff232a914b929153d8dc2ea6bb0951b4ff187
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="security-features-in-the-crt"></a>CRT'deki Güvenlik Özellikleri
 Birçok eski CRT işlevleri daha güvenli, daha yeni sürümlerde. Güvenli işlevi varsa, daha eski, daha az güvenli sürüm kullanım dışı olarak işaretlenmiş ve yeni sürüme sahip `_s` ("güvenli") soneki.  
@@ -96,4 +97,4 @@ strcpy(szBuf, "test"); // warning: deprecated
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Parametre doğrulama](../c-runtime-library/parameter-validation.md)   
  [Güvenli şablon aşırı yüklemeleri](../c-runtime-library/secure-template-overloads.md)   
- [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md)
+ [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)

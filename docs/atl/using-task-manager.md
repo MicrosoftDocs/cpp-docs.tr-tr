@@ -17,15 +17,16 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: eb099a534fba9c34d46d634bbca9648af1577a85
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: fffe15d74323b798fc6de1b318e55d47602774ad
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="using-task-manager"></a>Görev Yöneticisi'ni kullanma
 Bir hizmette hata ayıklamak için en basit yolu kullanarak Görev Yöneticisi'nde Windows NT 4.0 veya Windows 2000 biridir. Hizmet çalışırken, Görev Yöneticisi'ni başlatın ve tıklatın **işlemleri** sekmesi. EXE adına sağ tıklayın ve ardından **hata ayıklama**. Bu, çalışan işlem için bağlı Visual C++ çalıştırır. Şimdi, **bölün** üzerinde **hata ayıklama** menü kodunuzda kesme noktaları ayarlamanıza olanak sağlar. Tıklatın **çalıştırmak** seçili noktalarınıza çalıştırmak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama ipuçları](../atl/debugging-tips.md)
+ [Hata Ayıklama İpuçları](../atl/debugging-tips.md)
 

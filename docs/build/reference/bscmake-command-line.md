@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 278518ae37a4e76ea4fe0252e3341e54daebe599
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: c00a3842db37cc5027809f717ac47bd471dd073f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="bscmake-command-line"></a>BSCMAKE Komut Satırı
 BSCMAKE çalıştırmak için aşağıdaki komut satırı söz dizimini kullanın:  
@@ -44,4 +45,4 @@ BSCMAKE main.sbr file1.sbr file2.sbr
  İlgili bilgi için bkz: [BSCMAKE komut dosyası](../../build/reference/bscmake-command-file-response-file.md) ve [BSCMAKE seçenekleri](../../build/reference/bscmake-options.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [BSCMAKE başvurusu](../../build/reference/bscmake-reference.md)
+ [BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)

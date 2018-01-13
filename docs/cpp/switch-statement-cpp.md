@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 71cd25420f25e5069b874d382df9c0d6fb92e7d9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e668756e8cabafbdef522d6754487efe452f96de
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C++)
 Tam sayı ifadenin değerine bağlı olarak kod birden çok bölüm arasında seçim sağlar.  
@@ -174,5 +175,5 @@ int main(int argc, char *argv[])
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Seçim deyimleri](../cpp/selection-statements-cpp.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [Anahtar Sözcükler](../cpp/keywords-cpp.md)   
  
