@@ -17,11 +17,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 300c83a256e2a60ce9f7605093a2016f2d322785
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b0ed56fc3663b99af311c52e463bd2f16fcef0a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-a-symbol-or-symbol-name-id"></a>Sembolü veya Sembol Adını (ID) Değiştirme
 Yeni bir kaynak veya kaynak nesne oluşturduğunuzda, geliştirme ortamı gibi IDD_DIALOG1 varsayılan bir simge adı atar. Kullanabileceğiniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window) varsayılan sembol adını değiştirmek veya zaten bir kaynakla ilişkili herhangi bir sembol adını değiştirmek için.  
@@ -47,4 +50,4 @@ Yeni bir kaynak veya kaynak nesne oluşturduğunuzda, geliştirme ortamı gibi I
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md)   
- [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)
+ [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

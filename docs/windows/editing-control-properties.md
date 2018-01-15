@@ -17,11 +17,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d69f7f22b2bf3e51e2afa2ed53b04aeefe6a59e5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f2baed8431501bfa5bf68313403c87a1fb9bccb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="editing-control-properties"></a>Denetim Özelliklerini Düzenleme
 ### <a name="to-edit-the-properties-of-a-control-or-controls"></a>Bir denetim veya denetimlerin özelliklerini düzenlemek için  
@@ -49,5 +52,5 @@ ms.lasthandoff: 10/24/2017
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)
+ [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
 

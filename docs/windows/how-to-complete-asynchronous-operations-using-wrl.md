@@ -13,11 +13,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 25ac6c80689e60a412f0e5b66ddbf3aa0d8ab271
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8c505c44fe18f75eeb64c6b31ca222405f570761
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz işlemleri başlatmak ve işlemlerini tamamladıktan sonra iş gerçekleştirmek için nasıl kullanılacağını gösterir.  
@@ -126,4 +129,4 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz
  **cl.exe wrl tüketen asyncOp.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
+ [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

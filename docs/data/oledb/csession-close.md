@@ -19,11 +19,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 70016d94916bbd3479e0daa7d42c7a1f4a8785c1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: ceefd83603962f97050f8a2c494c7acdf7c383ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="csessionclose"></a>CSession::Close
 Tarafından açılmış oturumu [CSession::Open](../../data/oledb/csession-open.md).  
@@ -43,4 +46,4 @@ void Close( ) throw( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CSession sınıfı](../../data/oledb/csession-class.md)
+ [CSession Sınıfı](../../data/oledb/csession-class.md)

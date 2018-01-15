@@ -17,11 +17,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c61ced7e0931f1dba46a7a6b760755f799d29b6b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 76b7ad2c7acb9d232602c620a70cefabbecee531
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 Bu konuda aşağıdaki sık sorulan sorular yanıtlanmaktadır:  
@@ -87,14 +90,14 @@ class CMyClass
 ||||  
 |-|-|-|  
 |[call_as](../windows/call-as.md)|[durumu](../windows/case-cpp.md)|[cpp_quote](../windows/cpp-quote.md)|  
-|[Varsayılan](../windows/default-cpp.md)|[DefaultValue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
-|[emitidl](../windows/emitidl.md)|[Giriş](../windows/entry.md)|[first_is](../windows/first-is.md)|  
-|[HelpContext](../windows/helpcontext.md)|[HelpFile](../windows/helpfile.md)|[HelpString](../windows/helpstring.md)|  
-|[helpstringcontext](../windows/helpstringcontext.md)|[helpstringdll](../windows/helpstringdll.md)|[Kimliği](../windows/id.md)|  
-|[iid_is](../windows/iid-is.md)|[içeri aktarma](../windows/import.md)|[importlib](../windows/importlib.md)|  
+|[default](../windows/default-cpp.md)|[defaultvalue](../windows/defaultvalue.md)|[defaultvtable](../windows/defaultvtable.md)|  
+|[emitidl](../windows/emitidl.md)|[entry](../windows/entry.md)|[first_is](../windows/first-is.md)|  
+|[helpcontext](../windows/helpcontext.md)|[helpfile](../windows/helpfile.md)|[helpstring](../windows/helpstring.md)|  
+|[helpstringcontext](../windows/helpstringcontext.md)|[helpstringdll](../windows/helpstringdll.md)|[id](../windows/id.md)|  
+|[iid_is](../windows/iid-is.md)|[import](../windows/import.md)|[importlib](../windows/importlib.md)|  
 |[içerir](../windows/include-cpp.md)|[includelib](../windows/includelib-cpp.md)|[last_is](../windows/last-is.md)|  
 |[length_is](../windows/length-is.md)|[max_is](../windows/max-is.md)|[no_injected_text](../windows/no-injected-text.md)|  
-|[pointer_default](../windows/pointer-default.md)|[pragma](../windows/pragma.md)|[sınırlı](../windows/restricted.md)|  
+|[pointer_default](../windows/pointer-default.md)|[pragma](../windows/pragma.md)|[restricted](../windows/restricted.md)|  
 |[size_is](../windows/size-is.md)|[Kaynak](../windows/source-cpp.md)|[switch_is](../windows/switch-is.md)|  
 |[switch_type](../windows/switch-type.md)|[transmit_as](../windows/transmit-as.md)|[wire_marshal](../windows/wire-marshal.md)|  
   

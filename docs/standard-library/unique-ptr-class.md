@@ -33,11 +33,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 148d4b734f0e2cb56e959f54b99fb89a5efa6669
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: ba6ac8e50764801052c051703a211c4605a33601
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="uniqueptr-class"></a>unique_ptr Sınıfı
 Bir işaretçi ait nesne veya dizi depolar. Nesne/dizisi tarafından başka ait `unique_ptr`. Nesne/dizisinin kaldırıldığı zaman `unique_ptr` yok.  
@@ -147,7 +148,7 @@ public:
   
 |||  
 |-|-|  
-|[Al](#get)|Döndürür `stored_ptr`.|  
+|[get](#get)|Döndürür `stored_ptr`.|  
 |[get_deleter](#get_deleter)|Bir başvuru döndürür `stored_deleter`.|  
 |[Sürüm](#release)|depolar `pointer()` içinde `stored_ptr` ve önceki içeriğini döndürür.|  
 |[Sıfırla](#reset)|Şu anda sahip olunan kaynağı yayınlar ve yeni bir kaynağı kabul eder.|  

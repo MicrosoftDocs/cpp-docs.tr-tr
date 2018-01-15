@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1d020adfbcb9ee1a47750dd16b5466cf76391906
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: dabc47a586eaed540757971f7272e5ec4098be09
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handletraits-structure"></a>HANDLETraits Yapısı
 Bir tanıtıcı genel özelliklerini tanımlar.  
@@ -42,8 +45,8 @@ struct HANDLETraits;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[HANDLETraits::Close yöntemi](../windows/handletraits-close-method.md)|Belirtilen tanıtıcı kapatır.|  
-|[Handletraits::getınvalidvalue yöntemi](../windows/handletraits-getinvalidvalue-method.md)|Geçersiz bir tanıtıcı temsil eder.|  
+|[HANDLETraits::Close Metodu](../windows/handletraits-close-method.md)|Belirtilen tanıtıcı kapatır.|  
+|[HANDLETraits::GetInvalidValue Metodu](../windows/handletraits-getinvalidvalue-method.md)|Geçersiz bir tanıtıcı temsil eder.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HANDLETraits`  
@@ -54,4 +57,4 @@ struct HANDLETraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

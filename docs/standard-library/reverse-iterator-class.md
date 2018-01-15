@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 810f50a17dcdef3aac53462ac059a4aedd4343a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 03c9d04786bcffc8fbf951fe125dc64d45e8c0d2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator Sınıfı
 Şablon sınıfı, yalnızca tersten rastgele erişim veya çift yönlü bir yineleyici gibi davranan bir ters yineleyici nesnesini tanımlayan bir yineleyici bağdaştırıcısıdır. Bir aralığın geriye doğru geçişini sağlar.  
@@ -79,7 +80,7 @@ class reverse_iterator
   
 |||  
 |-|-|  
-|[temel](#base)|Temel alınan yineleyici gelen kurtarır kendi `reverse_iterator`.|  
+|[base](#base)|Temel alınan yineleyici gelen kurtarır kendi `reverse_iterator`.|  
   
 ### <a name="operators"></a>İşleçler  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b8cc4b94534845901a900a8c0ecff1d89c6bb600
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 20b68338dd15eaea0d74af9299da5ce8657f65f9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="safe-libraries-c-standard-library"></a>Güvenli Kitaplıklar: C++ Standart Kitaplık
 Visual C++ Standart daha güvenli hale getirmek için kitaplığı dahil olmak üzere C++ ile gönderilen kitaplıkları bazı geliştirmeler yapılmıştır.  
@@ -46,10 +47,10 @@ Visual C++ Standart daha güvenli hale getirmek için kitaplığı dahil olmak �
   
  [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md)  
   
- [İşaretli yineleyiciler](../standard-library/checked-iterators.md)  
+ [Denetlenmiş Yineleyiciler](../standard-library/checked-iterators.md)  
   
- [Hata ayıklama yineleyici desteği](../standard-library/debug-iterator-support.md)  
+ [Hata Ayıklama Yineleyici Desteği](../standard-library/debug-iterator-support.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md)
+ [C++ Standart Kitaplığına Genel Bakış](../standard-library/cpp-standard-library-overview.md)
 

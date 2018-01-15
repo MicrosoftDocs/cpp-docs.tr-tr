@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e00953d82f4287501e9010f9b7df53291365a7d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 24788e20e963910657cb69362d8adfc91d5f0ccc
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventtraits-structure"></a>EventTraits Yapısı
 Bir olay sınıfı tanıtıcısı özelliklerini tanımlar.  
@@ -43,4 +46,4 @@ struct EventTraits : HANDLENullTraits;
  **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Namespace](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+ [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

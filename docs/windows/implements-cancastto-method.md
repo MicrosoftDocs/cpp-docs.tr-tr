@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83d217cb749c350da45bcae2159e6b46d03f68cc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f1607b5fc290c398350b9e5c9d81eb50088b61c5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementscancastto-method"></a>Implements::CanCastTo Yöntemi
 Bir işaretçi belirtilen arabirime alır.  
@@ -52,4 +55,4 @@ __forceinline HRESULT CanCastTo(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Implements yapısı](../windows/implements-structure.md)
+ [Implements Yapısı](../windows/implements-structure.md)

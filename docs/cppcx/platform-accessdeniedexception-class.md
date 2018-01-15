@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 87e94e5f0aafabe8d3c8f4cb549a80717cf82742
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f2e39acbd87dffc6bd0ffdeb483ada1eb1c6cc52
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformaccessdeniedexception-class"></a>Platform::AccessDeniedException sınıfı
 Oluşturulan kaynak eriştiğinizde veya özellik engellendi.  
@@ -45,4 +46,4 @@ public ref class AccessDeniedException : COMException,    IException,    IPrinta
  **Meta veriler:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException sınıfı](../cppcx/platform-comexception-class.md)
+ [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

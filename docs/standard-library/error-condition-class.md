@@ -23,17 +23,17 @@ helpviewer_keywords:
 - std::error_condition::category
 - std::error_condition::clear
 - std::error_condition::message
-- 
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
 caps.latest.revision: "16"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c8109db3a6607abd1792485c93a59795d432f824
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: eaf36a6f078fd41eee75788a2adbbb5efed7f5d7
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="errorcondition-class"></a>error_condition Sınıfı
 Kullanıcı tanımlı hata kodları temsil eder.  
@@ -66,14 +66,14 @@ class error_condition;
 |[Ata](#assign)|Bir hata kodu değerini ve kategoriyi bir hata koşuluna atar.|  
 |[Kategori](#category)|Hata kategorisi döndürür.|  
 |[Temizle](#clear)|Hata kodu değerini ve kategori temizler.|  
-|[İleti](#message)|Hata kodu adını döndürür.|  
+|[message](#message)|Hata kodu adını döndürür.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
 |[operator ==](#op_eq_eq)|Testler arasında eşitliği `error_condition` nesneleri.|  
-|[operator! =](#op_neq)|Testler arasında eşitsizlik için `error_condition` nesneleri.|  
+|[operator!=](#op_neq)|Testler arasında eşitsizlik için `error_condition` nesneleri.|  
 |[operator <](#op_lt)|Varsa testleri `error_condition` nesne küçük `error_code` nesne geçirilen karşılaştırma için.|  
 |[işleç =](#op_eq)|Yeni bir numaralandırma değeri atar `error_condition` nesnesi.|  
 |[işleç bool değeri](#op_bool)|Türünde bir değişken bıraktığı `error_condition`.|  
@@ -281,7 +281,7 @@ typedef int value_type;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [error_category sınıfı](../standard-library/error-category-class.md)   
- [< system_error >](../standard-library/system-error.md)
+ [<system_error>](../standard-library/system-error.md)
 
 
 

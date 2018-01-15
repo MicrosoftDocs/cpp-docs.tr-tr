@@ -27,17 +27,20 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 1e1ff029c2fb7a39c0257358ebb1f73f53ca3837
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 117472c764dd6f13858881275b067600579a0fc8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-files-visual-studio"></a>Kaynak Dosyalar (Visual Studio)
 > [!NOTE]
 >  Bu yazıda Windows Masaüstü uygulamaları için geçerlidir. Evrensel Windows platformu uygulamaları kaynakları hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynakları](http://msdn.microsoft.com/en-us/476ea844-632c-4467-9ce3-966be1350dd4).  
 >   
-> Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+> Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
 >  
 > .NET programlama dilleri projelerde kaynak betik dosyaları kullanmayın beri kaynaklarınızdan açmalısınız **Çözüm Gezgini**. Kullanabileceğiniz [görüntü Düzenleyicisi](../windows/image-editor-for-icons.md) ve [İkili Düzenleyicisi](binary-editor.md) yönetilen projelerde kaynak dosyalarıyla çalışmak için. Düzenlemek istediğiniz yönetilen kaynaklar, bağlı kaynaklar olmalıdır. Visual Studio kaynak düzenleyicileri eklenmiş kaynakları düzenlemeyi desteklemez.  
   
@@ -83,9 +86,9 @@ ms.lasthandoff: 10/24/2017
   
 -   [İçeri ve dışarı aktarma kaynakları](../windows/how-to-import-and-export-resources.md)  
   
--   [Kaynaklar için düzenlenebilir dosya türleri](../windows/editable-file-types-for-resources.md)  
+-   [Kaynaklar için Düzenlenebilir Dosya Türleri](../windows/editable-file-types-for-resources.md)  
   
--   [Kaynak düzenlemesinden etkilenen dosyalar](../windows/files-affected-by-resource-editing.md)  
+-   [Kaynak Düzenlemesinden Etkilenen Dosyalar](../windows/files-affected-by-resource-editing.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  

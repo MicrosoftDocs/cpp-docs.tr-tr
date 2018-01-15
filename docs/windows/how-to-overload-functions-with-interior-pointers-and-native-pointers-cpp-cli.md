@@ -14,11 +14,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f0cc789143c7e29f7552b213d3c1dec330dd0833
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f5f46abca993acb2990c3310e8fefd9ab970b751
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-overload-functions-with-interior-pointers-and-native-pointers-ccli"></a>Nasıl yapılır: İç İşaretçiler ve Yerel İşaretçilerle İşlevleri Tekrar Yükleme (C++/CLI)
 Parametre türü iç işaretçi veya yerel bir işaretçi olmasına bağlı olarak işlevleri aşırı yüklenmiş.  
@@ -73,4 +76,4 @@ in f( interior_ptr<int> pi )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [interior_ptr (C + +/ CLI)](../windows/interior-ptr-cpp-cli.md)
+ [interior_ptr (C++/CLI)](../windows/interior-ptr-cpp-cli.md)

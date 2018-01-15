@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 95bb322944b6a7c68c5b9abde53e67382fe73ced
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 705260547d5a42b463d61b79c38592874f9dfa19
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="eventsource-class"></a>EventSource Sınıfı
 Bir olayı temsil eder. EventSource üye işlevleri eklemek, kaldırmak ve olay işleyicilerini çağırma.  
@@ -49,18 +52,18 @@ class EventSource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventSource::Add yöntemi](../windows/eventsource-add-method.md)|Olay işleyicileri geçerli EventSource nesne için kümesine tarafından belirtilen temsilci arabirimi temsil olay işleyicisi ekler.|  
-|[EventSource::GetSize yöntemi](../windows/eventsource-getsize-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri sayısını alır.|  
-|[EventSource::ınvokeall yöntemi](../windows/eventsource-invokeall-method.md)|Belirtilen bağımsız değişken türleri ve bağımsız değişkenler kullanarak geçerli EventSource nesneyle ilişkili her olay işleyicisini çağırır.|  
-|[EventSource::Remove yöntemi](../windows/eventsource-remove-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil olay işleyicisi siler.|  
+|[EventSource::Add Metodu](../windows/eventsource-add-method.md)|Olay işleyicileri geçerli EventSource nesne için kümesine tarafından belirtilen temsilci arabirimi temsil olay işleyicisi ekler.|  
+|[EventSource::GetSize Metodu](../windows/eventsource-getsize-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri sayısını alır.|  
+|[EventSource::InvokeAll Metodu](../windows/eventsource-invokeall-method.md)|Belirtilen bağımsız değişken türleri ve bağımsız değişkenler kullanarak geçerli EventSource nesneyle ilişkili her olay işleyicisini çağırır.|  
+|[EventSource::Remove Metodu](../windows/eventsource-remove-method.md)|Geçerli EventSource nesneyle ilişkili olay işleyicileri kümesinden tarafından belirtilen olay kaydı belirtecini temsil olay işleyicisi siler.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[EventSource::addRemoveLock_ veri üyesi](../windows/eventsource-addremovelock-data-member.md)|Erişim eşitler [targets_](../windows/eventsource-targets-data-member.md) eklerken dizi, kaldırma veya olay işleyicilerini çağırma.|  
-|[EventSource::targets_ veri üyesi](../windows/eventsource-targets-data-member.md)|Bir veya daha fazla olay işleyicileri dizisi.|  
-|[EventSource::targetsPointerLock_ veri üyesi](../windows/eventsource-targetspointerlock-data-member.md)|Olay işleyicileri bu EventSource için bile eklenmiş durumdayken, kaldırıldı veya çağrılan iç veri üyelerine erişimi eşitler.|  
+|[EventSource::addRemoveLock_ Veri Üyesi](../windows/eventsource-addremovelock-data-member.md)|Erişim eşitler [targets_](../windows/eventsource-targets-data-member.md) eklerken dizi, kaldırma veya olay işleyicilerini çağırma.|  
+|[EventSource::targets_ Veri Üyesi](../windows/eventsource-targets-data-member.md)|Bir veya daha fazla olay işleyicileri dizisi.|  
+|[EventSource::targetsPointerLock_ Veri Üyesi](../windows/eventsource-targetspointerlock-data-member.md)|Olay işleyicileri bu EventSource için bile eklenmiş durumdayken, kaldırıldı veya çağrılan iç veri üyelerine erişimi eşitler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `EventSource`  
@@ -71,4 +74,4 @@ class EventSource;
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

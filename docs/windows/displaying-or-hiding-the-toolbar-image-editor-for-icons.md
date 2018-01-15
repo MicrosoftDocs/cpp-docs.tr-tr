@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 78755b526ba5073224c2c9942526b1e8d09e4860
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 85927d747735bcf66251a5112775cc5a67214cfb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="displaying-or-hiding-the-toolbar-image-editor-for-icons"></a>Araç Çubuğunu Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 Çizim Araçları çoğunu kullanılabilir olduğundan [klavye](../windows/accelerator-keys-image-editor-for-icons.md), görüntü Düzenleyicisi araç çubuğunu gizlemek bazen yararlıdır.  
@@ -33,7 +36,7 @@ ms.lasthandoff: 10/24/2017
     > [!NOTE]
     >  Bu araç öğelerinden geçerli projeden bir görüntü dosyası olduğunda kullanılamaz görünür veya çözüm görüntü Düzenleyicisi'nde açık değil. Bkz: [bir simge veya başka görüntü oluşturma](../windows/creating-an-icon-or-other-image-image-editor-for-icons.md), projelerinize görüntü dosyaları ekleme hakkında bilgi için.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
  Gereksinimler  
   
@@ -42,5 +45,5 @@ ms.lasthandoff: 10/24/2017
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Renkler penceresi](../windows/colors-window-image-editor-for-icons.md)   
  [Araç çubuğu](../windows/toolbar-image-editor-for-icons.md)   
- [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+ [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
 

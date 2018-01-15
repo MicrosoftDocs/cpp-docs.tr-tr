@@ -18,11 +18,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 07703a0c2a7951da317478e15f461c6dcab923ad
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 443b77c35496c5870c19975ede165fbf59e17f2c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-unassigned-symbols"></a>Atanmamış Sembolleri Değiştirme
 İçinde iken [kaynak sembolleri iletişim kutusu](../windows/resource-symbols-dialog-box.md), düzenlemek veya bir kaynak veya nesne zaten atanmamış varolan sembolleri silin.  
@@ -46,4 +49,4 @@ ms.lasthandoff: 10/24/2017
  [Kaynak sembolleri görüntüleme](../windows/viewing-resource-symbols.md)   
  [Sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md)   
  [Sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md)   
- [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)
+ [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

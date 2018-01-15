@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 944ba06bd7b3d81abb2ab431494096f9ade77574
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 6b7ab27bb7a6458efde84451febaeb6f3ef37115
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="internationalization-strategies"></a>Uluslararası Duruma Getirme Stratejileri
 Hedef işletim sistemi ve pazarlara bağlı olarak birkaç uluslararası duruma getirme stratejileri vardır:  
@@ -49,4 +50,4 @@ Hedef işletim sistemi ve pazarlara bağlı olarak birkaç uluslararası duruma 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)   
- [Yerel ayarlar ve kod sayfaları](../text/locales-and-code-pages.md)
+ [Yerel Ayarlar ve Kod Sayfaları](../text/locales-and-code-pages.md)

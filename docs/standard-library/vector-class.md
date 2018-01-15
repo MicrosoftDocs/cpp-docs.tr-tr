@@ -97,11 +97,12 @@ caps.latest.revision: "24"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 57cc809cad0ef81d59e58a4fa0d582f2964fdbb8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f38fb67c20da6b1022c6365e66b1626cd8276313
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="vector-class"></a>vector Sınıfı
 C++ Standart Kitaplığı vector sınıfı doğrusal bir düzenleme içinde belirli bir türde öğelerini düzenlemek ve herhangi bir öğeye hızlı rastgele erişim izin veren dizisi kapsayıcıların şablon sınıfıdır. Rasgele erişim performansı üst düzey olduğunda sırası için tercih edilen kapsayıcı olması gerekir.  

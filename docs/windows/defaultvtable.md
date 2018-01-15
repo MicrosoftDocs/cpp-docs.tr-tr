@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 0753887cef2b169758351be9fafc0ec532bacb05
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 90c3fb3d72d71f4d61aebcef657b71bfaff87efd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="defaultvtable"></a>defaultvtable
 Bir COM nesnesi için varsayılan vtable arabirimi olarak bir arabirim tanımlar.  
@@ -77,11 +80,11 @@ class CMyC3 : public IMyI3 {};
 |-|-|  
 |**Uygulandığı öğe:**|**sınıf**,`struct`|  
 |**Yinelenebilir**|Hayır|  
-|**Gerekli öznitelikler**|**coclass'ı**|  
+|**Gerekli öznitelikler**|**coclass**|  
 |**Geçersiz öznitelikler**|Yok.|  
   
  Daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
+ [Sınıf Öznitelikleri](../windows/class-attributes.md)   

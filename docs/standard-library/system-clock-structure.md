@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: a7e57faa98571c59515a9b669d0ce5d53459b103
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 603415b438578258e982f0934161d2de436e2a3f
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="systemclock-structure"></a>system_clock Yapısı
 Temsil eden bir *saat türü* sistem gerçek zamanlı saati dayanır.  

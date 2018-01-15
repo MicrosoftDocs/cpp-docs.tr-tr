@@ -15,11 +15,14 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 846194b5c032ecea86e92078ae3b0bb3a8ed77b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 277123f28b9fb74676fcb7a657b6e6dbc294a4a5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="oleautomation"></a>oleautomation
 Arabirim otomasyon ile uyumlu olup olmadığını gösterir.  
@@ -47,10 +50,10 @@ Arabirim otomasyon ile uyumlu olup olmadığını gösterir.
 |**Uygulandığı öğe:**|`interface`|  
 |**Yinelenebilir**|Hayır|  
 |**Gerekli öznitelikler**|Yok.|  
-|**Geçersiz öznitelikler**|**görüntüleme arabirimi**|  
+|**Geçersiz öznitelikler**|**dispinterface**|  
   
  Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Arabirim öznitelikleri](../windows/interface-attributes.md)   
+ [Arabirim Öznitelikleri](../windows/interface-attributes.md)   

@@ -21,11 +21,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e520fb524cd25709b9d03ae992305a4fac41763
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a18ed3aad1d3a9ea697ac815658b5eba8d99bff1
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dialog-editor"></a>İletişim Kutusu Düzenleyicisi
 İletişim kutusu Düzenleyicisi oluşturma veya düzenleme iletişim kutusu kaynakları sağlar. Kaynak Görünümü penceresi bir iletişim kutusu .rc dosyasına çift tıklayarak iletişim kutusu Düzenleyicisi'ni açın (**Görünüm &#124; Kaynak görünümü**). Kaynak Görünümü Express sürümlerinde kullanılabilir olmadığını unutmayın.  
@@ -40,28 +43,28 @@ ms.lasthandoff: 10/24/2017
   
  Visual Studio 2015 ile başlayarak, nasıl denetimleri taşıyın ve kullanıcı bir iletişim kutusu yeniden boyutlandırır yeniden boyutlandırılmasını belirtin dinamik düzenleri tanımlamak için iletişim kutusu Düzenleyicisi'ni kullanabilirsiniz. Daha fazla bilgi için bkz: [dinamik düzen](../mfc/dynamic-layout.md).  
   
--   [Yeni bir iletişim kutusu oluşturma](../windows/creating-a-new-dialog-box.md)  
+-   [Yeni İletişim Kutusu Oluşturma](../windows/creating-a-new-dialog-box.md)  
   
 -   [Çalışma zamanında kullanıcıların çıkamayacağı iletişim kutusu oluşturma](../windows/creating-a-dialog-box-that-users-cannot-exit.md)  
   
--   [Gösteren veya iletişim kutusu Düzenleyicisi araç çubuğunu gizleme](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)  
+-   [İletişim Kutusu Araç Çubuğunu Gösterme veya Gizleme](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)  
   
 -   [İletişim kutusu Düzenleyicisi ile kod arasında geçiş yapma](../windows/switching-between-dialog-box-controls-and-code.md)  
   
--   [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)  
+-   [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
   
--   [İletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)  
+-   [İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md)  
   
--   [Bir iletişim kutusunu test etme](../windows/testing-a-dialog-box.md)  
+-   [İletişim Kutusunu Test Etme](../windows/testing-a-dialog-box.md)  
   
--   [Kısayol tuşları için iletişim kutusu Düzenleyicisi](../windows/accelerator-keys-for-the-dialog-editor.md)  
+-   [İletişim Kutusu Düzenleyicisi için Hızlandırma Tuşları](../windows/accelerator-keys-for-the-dialog-editor.md)  
   
--   [İletişim kutusu Düzenleyicisi sorunlarını giderme](../windows/troubleshooting-the-dialog-editor.md)  
+-   [İletişim Kutusu Düzenleyicisinde Sorun Giderme](../windows/troubleshooting-the-dialog-editor.md)  
   
     > [!TIP]
     >  Çoğu durumda iletişim kutusu Düzenleyicisi ' ni kullanırken, sık kullanılan komutlar kısayol menüsünü görüntülemek için sağ fare düğmesini tıklatabilirsiniz.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
@@ -71,5 +74,5 @@ ms.lasthandoff: 10/24/2017
  [Denetimleri](../mfc/controls-mfc.md)   
  [Denetim sınıfları](../mfc/control-classes.md)   
  [İletişim kutusu sınıfları](../mfc/dialog-box-classes.md)   
- [İletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md)
+ [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)
 

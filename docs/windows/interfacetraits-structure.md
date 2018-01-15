@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 494942ce3c50889cae7a8867dc2b86ed6a609313
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 1c28c7c1eef2fc278a0667ec4b7c635005331467
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -64,17 +67,17 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Interfacetraits::cancastto yöntemi](../windows/interfacetraits-cancastto-method.md)|Bir işaretçi için belirtilen işaretçi içerip içermeyeceğini gösterir `Base`.|  
-|[Interfacetraits::casttobase yöntemi](../windows/interfacetraits-casttobase-method.md)|Bir işaretçi belirtilen işaretçisine bıraktığı `Base`.|  
-|[Interfacetraits::casttounknown yöntemi](../windows/interfacetraits-casttounknown-method.md)|IUnknown işaretçisi belirtilen işaretçisine çevirir.|  
-|[Interfacetraits::fillarraywithıid yöntemi](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeniyle belirtilen dizi öğesi.|  
-|[Interfacetraits::Verify yöntemi](../windows/interfacetraits-verify-method.md)|Temel düzgün türetilmiş doğrular.|  
+|[InterfaceTraits::CanCastTo Metodu](../windows/interfacetraits-cancastto-method.md)|Bir işaretçi için belirtilen işaretçi içerip içermeyeceğini gösterir `Base`.|  
+|[InterfaceTraits::CastToBase Metodu](../windows/interfacetraits-casttobase-method.md)|Bir işaretçi belirtilen işaretçisine bıraktığı `Base`.|  
+|[InterfaceTraits::CastToUnknown Metodu](../windows/interfacetraits-casttounknown-method.md)|IUnknown işaretçisi belirtilen işaretçisine çevirir.|  
+|[InterfaceTraits::FillArrayWithIid Metodu](../windows/interfacetraits-fillarraywithiid-method.md)|Arabirim kimliği atar `Base` dizini bağımsız değişkeniyle belirtilen dizi öğesi.|  
+|[InterfaceTraits::Verify Metodu](../windows/interfacetraits-verify-method.md)|Temel düzgün türetilmiş doğrular.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Interfacetraits::ıidcount sabiti](../windows/interfacetraits-iidcount-constant.md)|Kimlikleri geçerli Interfacetraits nesneyle ilişkili arabirimi sayısını tutar.|  
+|[InterfaceTraits::IidCount Sabiti](../windows/interfacetraits-iidcount-constant.md)|Kimlikleri geçerli Interfacetraits nesneyle ilişkili arabirimi sayısını tutar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `InterfaceTraits`  
@@ -85,4 +88,4 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

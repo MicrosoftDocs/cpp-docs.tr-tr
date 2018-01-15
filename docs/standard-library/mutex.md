@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 65629b16b03503f70f7c966e19282391c512e4ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 9da491492437f5bf8ed245c84a33f44174ac44ba
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltmutexgt"></a>&lt;Mutex&gt;
 Standart üstbilgisini \<mutex > sınıflarını tanımlamak için `mutex`, `recursive_mutex`, `timed_mutex`, ve `recursive_timed_mutex`; şablonları `lock_guard` ve `unique_lock`; destekleyici türler ve İşlevler tanımlayın karşılıklı dışlama kod bölgeleri.  
@@ -59,28 +60,28 @@ Standart üstbilgisini \<mutex > sınıflarını tanımlamak için `mutex`, `rec
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[lock_guard sınıfı](../standard-library/lock-guard-class.md)|Yıkıcı kilidini açarak nesne oluşturmak için örneği bir şablon temsil eden bir `mutex`.|  
-|[Mutex sınıfı (Standart C++ Kitaplığı)](../standard-library/mutex-class-stl.md)|Mutex türünü temsil eder. Bir programdan karşılıklı dışlama zorlamak için bu tür nesneler kullanın.|  
-|[recursive_mutex sınıfı](../standard-library/recursive-mutex-class.md)|Mutex türünü temsil eder. İçin constrast içinde `mutex` sınıfı, zaten kilitli olan nesneler için kilitleme yöntemleri çağırma davranışını iyi tanımlanmış.|  
-|[recursive_timed_mutex sınıfı](../standard-library/recursive-timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Zaman sınırlı bir program içinden engelleme sahip karşılıklı dışlama zorlamak için bu tür nesneler kullanın. Nesne türü aksine `timed_mutex`, kilitleme yöntemleri çağırma etkisini `recursive_timed_mutex` nesneleri iyi tanımlanmış.|  
-|[timed_mutex sınıfı](../standard-library/timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Zaman sınırlı bir program içinden engelleme sahip karşılıklı dışlama zorlamak için bu tür nesneler kullanın.|  
-|[unique_lock sınıfı](../standard-library/unique-lock-class.md)|Kilitleme ve, kilidini açma yönetmek nesneleri oluşturmak için örneği bir şablon temsil eden bir `mutex`.|  
+|[lock_guard Sınıfı](../standard-library/lock-guard-class.md)|Yıkıcı kilidini açarak nesne oluşturmak için örneği bir şablon temsil eden bir `mutex`.|  
+|[mutex Sınıfı (C++ Standart Kitaplığı)](../standard-library/mutex-class-stl.md)|Mutex türünü temsil eder. Bir programdan karşılıklı dışlama zorlamak için bu tür nesneler kullanın.|  
+|[recursive_mutex Sınıfı](../standard-library/recursive-mutex-class.md)|Mutex türünü temsil eder. İçin constrast içinde `mutex` sınıfı, zaten kilitli olan nesneler için kilitleme yöntemleri çağırma davranışını iyi tanımlanmış.|  
+|[recursive_timed_mutex Sınıfı](../standard-library/recursive-timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Zaman sınırlı bir program içinden engelleme sahip karşılıklı dışlama zorlamak için bu tür nesneler kullanın. Nesne türü aksine `timed_mutex`, kilitleme yöntemleri çağırma etkisini `recursive_timed_mutex` nesneleri iyi tanımlanmış.|  
+|[timed_mutex Sınıfı](../standard-library/timed-mutex-class.md)|Zamanlanmış mutex türünü temsil eder. Zaman sınırlı bir program içinden engelleme sahip karşılıklı dışlama zorlamak için bu tür nesneler kullanın.|  
+|[unique_lock Sınıfı](../standard-library/unique-lock-class.md)|Kilitleme ve, kilidini açma yönetmek nesneleri oluşturmak için örneği bir şablon temsil eden bir `mutex`.|  
   
 ### <a name="functions"></a>İşlevler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[call_once](../standard-library/mutex-functions.md#call_once)|Yürütme sırasında tam olarak bir kez belirtilen bir aranabilir nesne çağırmak için bir mekanizma sağlar.|  
-|[kilitleme](../standard-library/mutex-functions.md#lock)|Tüm bağımsız değişkenler olmadan kilitlenme kilitlemek çalışır.|  
+|[lock](../standard-library/mutex-functions.md#lock)|Tüm bağımsız değişkenler olmadan kilitlenme kilitlemek çalışır.|  
   
 ### <a name="structs"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[adopt_lock_t yapısı](../standard-library/adopt-lock-t-structure.md)|Tanımlamak için kullanılan bir türü temsil eden bir `adopt_lock`.|  
-|[defer_lock_t yapısı](../standard-library/defer-lock-t-structure.md)|Tanımlayan bir türü temsil eden bir `defer_lock` aşırı yüklü oluşturucular birini seçmek için kullanılan nesne `unique_lock`.|  
-|[once_flag yapısı](../standard-library/once-flag-structure.md)|Temsil eden bir `struct` şablonu işleviyle kullanılan `call_once` başlatmanın emin olmak için kod bile birden çok iş parçacığı yürütme varlığında yalnızca bir kez çağrılır.|  
-|[try_to_lock_t yapı](../standard-library/try-to-lock-t-structure.md)|Temsil eden bir `struct` tanımlayan bir `try_to_lock` nesne ve aşırı yüklü oluşturucular birini seçmek için kullanılan `unique_lock`.|  
+|[adopt_lock_t Yapısı](../standard-library/adopt-lock-t-structure.md)|Tanımlamak için kullanılan bir türü temsil eden bir `adopt_lock`.|  
+|[defer_lock_t Yapısı](../standard-library/defer-lock-t-structure.md)|Tanımlayan bir türü temsil eden bir `defer_lock` aşırı yüklü oluşturucular birini seçmek için kullanılan nesne `unique_lock`.|  
+|[once_flag Yapısı](../standard-library/once-flag-structure.md)|Temsil eden bir `struct` şablonu işleviyle kullanılan `call_once` başlatmanın emin olmak için kod bile birden çok iş parçacığı yürütme varlığında yalnızca bir kez çağrılır.|  
+|[try_to_lock_t Yapısı](../standard-library/try-to-lock-t-structure.md)|Temsil eden bir `struct` tanımlayan bir `try_to_lock` nesne ve aşırı yüklü oluşturucular birini seçmek için kullanılan `unique_lock`.|  
   
 ### <a name="variables"></a>Değişkenler  
   

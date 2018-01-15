@@ -18,11 +18,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 352fca07ecb9528bb11ff1cb5cc1f701bfa01e1c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 6b24b0ed9b8e547a52388b6f93a4955da782331b
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="default-c"></a>default (C++)
 Özel veya görüntüleme arabirimi coclass'ı içinde tanımlanan varsayılan programlama arabirimi temsil ettiğini gösterir.  
@@ -121,4 +124,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Sınıf öznitelikleri](../windows/class-attributes.md)   
- [coclass'ı](../windows/coclass.md)   
+ [coclass](../windows/coclass.md)   

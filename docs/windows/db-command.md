@@ -15,11 +15,14 @@ caps.latest.revision: "13"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a59b7eceeafe7d158dd983936fb4cffecaf2e12f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 87209d673da47827723198697a26300d4056d3d0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="dbcommand"></a>db_command
 OLE DB komut oluşturur.  
@@ -267,4 +270,4 @@ int main() {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB tüketici öznitelikleri](../windows/ole-db-consumer-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
+ [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)   

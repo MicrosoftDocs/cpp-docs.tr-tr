@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 87e478109df859fc6c95da70500ab84a1cba1b4c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: b2b617870bdeec43dcdc9bf5d9031c0c4d78d0aa
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltlocalegt"></a>&lt;yerel ayar&gt;
 C++ programlarının, karakter sınıflandırması ve dize harmanlama için uluslararası desteğin dahil olduğu sayısal, parasal ve takvimle ilgili verileri göz önüne alarak farklı kültürel dönüştürmeleri kapsüllemek ve yönetmek için kullanabildiği şablon sınıflarını ve işlevleri tanımlar.  
@@ -85,13 +86,13 @@ C++ programlarının, karakter sınıflandırması ve dize harmanlama için ulus
 |[time_get_byname](../standard-library/time-get-byname-class.md)|Bir tür time_get yerel model hizmet verebilir bir nesneyi tanımlayan bir türetilmiş Şablon sınıfı\<**CharType**, **InputIterator**>.|  
 |[time_put](../standard-library/time-put-class.md)|Saat değerleri denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesneyi tanımlayan bir şablon sınıfı **CharType**.|  
 |[time_put_byname](../standard-library/time-put-byname-class.md)|Yerel ayar modeli türü hizmet verebilir bir nesneyi tanımlayan bir türetilmiş Şablon sınıfı `time_put` \< **CharType**, **OutputIterator**>.|  
-|[wbuffer_convert sınıfı](../standard-library/wbuffer-convert-class.md)|Öğeleri baytlık bir Akış Arabellek gelen ve giden iletimini denetleyen bir Akış Arabellek açıklar.|  
-|[wstring_convert sınıfı](../standard-library/wstring-convert-class.md)|Geniş bir dize ve bir bayt dizesini arasında dönüştürme gerçekleştirdiği bir şablon sınıfı.|  
+|[wbuffer_convert Sınıfı](../standard-library/wbuffer-convert-class.md)|Öğeleri baytlık bir Akış Arabellek gelen ve giden iletimini denetleyen bir Akış Arabellek açıklar.|  
+|[wstring_convert Sınıfı](../standard-library/wstring-convert-class.md)|Geniş bir dize ve bir bayt dizesini arasında dönüştürme gerçekleştirdiği bir şablon sınıfı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod sayfaları](../c-runtime-library/code-pages.md)   
  [Yerel ayar adları, diller ve ülke/bölge dizeleri](../c-runtime-library/locale-names-languages-and-country-region-strings.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 
 
 

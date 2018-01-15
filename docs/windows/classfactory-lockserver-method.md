@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 477df9807c3eda089289930cafbe6dce1c0f6da6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 5f646f198d884e677b622a312cfdb6187802e1c6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="classfactorylockserver-method"></a>ClassFactory::LockServer Yöntemi
 Arka plandaki sayısı geçerli ClassFactory nesne tarafından izlenen nesneleri artırır veya azaltır.  
@@ -48,4 +51,4 @@ STDMETHOD(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ClassFactory sınıfı](../windows/classfactory-class.md)
+ [ClassFactory Sınıfı](../windows/classfactory-class.md)

@@ -31,11 +31,12 @@ caps.latest.revision: "25"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c7515ba8f90cfc60cce84f8bd5c59fba6d3dc1d3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: cb7d7c601ab2750e01202bba7dbefcb05673a025
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 Öğeleri depolanan öğe dizisi gelen ve giden iletimini denetleyen bir Akış Arabellek açıklar bir `char` dizi nesnesi.  
@@ -461,5 +462,5 @@ virtual int underflow();
  [streambuf](../standard-library/streambuf-typedefs.md#streambuf)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [iostream programlama](../standard-library/iostream-programming.md)   
- [iostreams kuralları](../standard-library/iostreams-conventions.md)
+ [iostreams Kuralları](../standard-library/iostreams-conventions.md)
 

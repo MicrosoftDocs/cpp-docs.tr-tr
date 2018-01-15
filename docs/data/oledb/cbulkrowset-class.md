@@ -20,11 +20,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7208e2ecda79cf175f234499f6e69550693f182f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 26ed8c0a3f58ae046ad3e4766b7e009023759be0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
 Getirir ve tek bir çağrı ile birden çok satır işleyicilerini alarak, toplu veriler üzerinde çalışmaya satırları yönetir.  
@@ -67,4 +70,4 @@ class CBulkRowset : public CRowset<TAccessor>
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+ [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

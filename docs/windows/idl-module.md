@@ -15,11 +15,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5d51e9344f9cebace9266c93def83fd37604ce39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f052692686149b247a50c0d89e77797f4f48fab3
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="idlmodule"></a>idl_module
 Bir giriş noktası bir .dll dosyasını belirtir.  
@@ -106,4 +109,4 @@ void FuncName(int i);
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [IDL öznitelikleri](../windows/idl-attributes.md)   
  [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [Giriş](../windows/entry.md)   
+ [entry](../windows/entry.md)   

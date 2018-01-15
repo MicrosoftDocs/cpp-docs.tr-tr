@@ -18,11 +18,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 75e32739cdf096ee1f27a53aa6258bf36c1de4e0
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 09793ca8cf953742d280dd87f2d391dc3419a101
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="changing-the-caption-property-of-multiple-strings"></a>Birden Çok Dizenin Resim Yazısı Özelliğini Değiştirme
 Aşağıdaki yordamı birden çok dizenin resim yazısı özelliğinin nasıl değiştirileceğini gösterir.  

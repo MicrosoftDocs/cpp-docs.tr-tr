@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c7074139e7c3bfc9022fe211b12eb2c81eb727c3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f0a15a8c7089e6d24171ae552008c2b7c8ccafcd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="asyncbaseonclose-method"></a>AsyncBase::OnClose Yöntemi
 Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.  
@@ -39,4 +42,4 @@ virtual void OnClose(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [AsyncBase sınıfı](../windows/asyncbase-class.md)   
- [AsyncBase::Close yöntemi](../windows/asyncbase-close-method.md)
+ [AsyncBase::Close Metodu](../windows/asyncbase-close-method.md)

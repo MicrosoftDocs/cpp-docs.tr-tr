@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 76673c2b2c12c53bca1531384a1b0c3b007244a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 666aa484273068cbc080c638520e473403ace727
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="handletisvalid-method"></a>HandleT::IsValid Yöntemi
 Geçerli HandleT nesne bir tanıtıcı temsil edip etmediğini gösterir.  
@@ -39,4 +42,4 @@ bool IsValid() const;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT sınıfı](../windows/handlet-class.md)
+ [HandleT Sınıfı](../windows/handlet-class.md)

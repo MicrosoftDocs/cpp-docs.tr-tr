@@ -15,11 +15,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: ec9edad09252402578788eeccb8e9ea7508ab98d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: aac2a50e3c50941d607dea32c9f7c9eecde8e589
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="make-function"></a>Make İşlevi
 Belirtilen Windows çalışma zamanı sınıf başlatır. Aynı modülde tanımlanmış bir bileşen örneği oluşturmak için bu işlevi kullanın.  
@@ -238,4 +241,4 @@ ComPtr<T> Make();
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)
+ [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

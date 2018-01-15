@@ -21,11 +21,14 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 8a4f71b2877eaaa7af125918c7fe2b71bb031d39
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d68a9d35471e43296cade829700fc6c5b311ce2a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 Düzenleyici yeni simgesi veya imleci kaynak, görüntü oluştururken ilk görüntü (32 × 32, simgeler için 16 renk ve 32 x 32, imleçler için tek renkli) belirli bir stil oluşturur. Ardından ilk simgesi veya imleci görüntüleri farklı boyut ve stil ekleyin ve her ek görüntü, farklı görüntüleme cihazları için gerektiği gibi düzenleyin. Varolan bir görüntü türü ya da bir grafik programında oluşturulan bir bit eşlem kesme ve yapıştırma işlemi gerçekleştirerek görüntüyü da düzenleyebilirsiniz.  
@@ -43,7 +46,7 @@ Düzenleyici yeni simgesi veya imleci kaynak, görüntü oluştururken ilk gör�
   
      Bir artı işareti (**+**) yanındaki görüntü kaynak türü görünen **Ekle kaynak** iletişim kutusu, geldiğini araç şablonları kullanılabilir. Şablonları'nı genişletin, bir şablon seçin ve'artı işaretini tıklatın **yeni**.  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
  **Gereksinimler**  
   

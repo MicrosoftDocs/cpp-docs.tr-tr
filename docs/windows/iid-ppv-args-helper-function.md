@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 705f1ee7f1b471491b6df5953cf92b12f6edc13c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 9839fe71439fde54545a18ef107cec178b8bdcd5
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper İşlevi
 Belirtilen bağımsız değişken türü öğesinden türetilen doğrular `IUnknown` arabirimi.  

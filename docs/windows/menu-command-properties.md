@@ -14,11 +14,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 463db89257623d9464bb1e562261362ecf1dc68c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 186790db57c20abf9f67f693ff60029257ebd4f0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="menu-command-properties"></a>Menü Komut Özellikleri
 Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş [Özellikler penceresini](/visualstudio/ide/reference/properties-window) seçtiğinizde menü komutu. Özellikler penceresini ayrıca, bu özellikleri görüntülemenize olanak sağlar, ancak bu kategoriye göre alfabetik olarak listelenir.  
@@ -32,11 +35,11 @@ Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş 
 |**Gri**|TRUE ise, başlangıçta gri ve etkin olmayan menü komutu. Tür: Bool. Varsayılan: False.|  
 |**Yardım**|Menü öğesi sağa hizalar. Örneğin, **yardımcı** menü komutu olduğu her zaman açık tüm Windows uygulamalarını sağdaki. Bu özellik menü öğesini ayarlarsanız, bu öğeyi sağ uçta çok ile menüsünün en sonunda görüntülenir. Üst düzey öğelerine uygulanır. Varsayılan: **False**.|  
 |**KİMLİĞİ**|Üstbilgi dosyasında tanımlanan bir simge. Tür: Simge, tamsayı veya tırnak içine alınmış dize. Bile genellikle, düzenleyiciler hiçbirinde kullanılabilir herhangi bir simge kullanabilir [Özellikler penceresini](/visualstudio/ide/reference/properties-window) , seçmek aşağı açılan liste sağlamaz.|  
-|**Açılan**|TRUE ise, menüsü açılır menü komuttur. Tür: Bool. Varsayılan: menü çubuğundaki en üst düzey menü True; Aksi takdirde False.|  
+|**Açılan Pencere**|TRUE ise, menüsü açılır menü komuttur. Tür: Bool. Varsayılan: menü çubuğundaki en üst düzey menü True; Aksi takdirde False.|  
 |**Sor**|Bu komutu vurgulanmış durum çubuğunda görüntülenecek metni içerir. Metin dizesi tablosuna menü komutu ile aynı tanımlayıcıyla yerleştirilir. Bu özellik, herhangi bir proje türü için kullanılabilir, ancak çalışma zamanında MFC belirli bir işlevdir.|  
 |**Sağdan Sola Hizala**|Sağa hizalar çalışma zamanında menü çubuğundaki menü komutu. Tür: Bool. Varsayılan: False.|  
 |**Sağ sol sırası**|Arabirimi sağ İbranice veya Arapça gibi sola, okuyan herhangi bir dil için yerelleştirilmiş sağdan sola görüntülemek menü komutlarını sağlar.|  
-|**Ayırıcı**|TRUE ise, komutu bir ayırıcı ' dir. Tür: Bool. Varsayılan: False.|  
+|**Ayıraç**|TRUE ise, komutu bir ayırıcı ' dir. Tür: Bool. Varsayılan: False.|  
   
 
   
@@ -44,4 +47,4 @@ Aşağıdaki bilgiler görüntülenir Menüsü Özellikleri göre düzenlenmiş 
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Menü düzenleyicisi](../windows/menu-editor.md)
+ [Menü Düzenleyicisi](../windows/menu-editor.md)

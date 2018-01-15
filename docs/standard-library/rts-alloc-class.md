@@ -23,11 +23,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 77a85485c2ad2aad64417400e9189da5ab5c7b21
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 2e4870edc0b54a92307ddf88d58dd96ca3fd331e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="rtsalloc-class"></a>rts_alloc Sınıfı
 Rts_alloc Şablon sınıfı açıklayan bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbelleği örnekleri ve ayırma ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanmak için hangi örneğinin belirler.  
@@ -52,9 +53,9 @@ class rts_alloc
   
 |||  
 |-|-|  
-|[ayırma](#allocate)|Bir bellek bloğu ayırır.|  
+|[allocate](#allocate)|Bir bellek bloğu ayırır.|  
 |[serbest bırakma](#deallocate)|Nesneleri belirtilen konumdaki depolama başından itibaren belirli sayıda boşaltır.|  
-|[eşittir](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|  
+|[equals](#equals)|Eşitlik için iki önbellekleri karşılaştırır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<allocators >  

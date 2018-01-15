@@ -15,11 +15,14 @@ caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 32b10c79d5ec2a8d25c0a942dd96a22b8e6a71e9
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 49da8f90703190be068fe2d35a808b2cafed6f0c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="image-menu-image-editor-for-icons"></a>Görüntü Menüsü (Simgeler İçin Görüntü Düzenleyicisi)
 Görüntü Düzenleyicisi etkin olduğunda görüntülenir, Görüntü menüsü görüntüleri düzenleme, renk paletlerini yönetme ve görüntü Düzenleyicisi penceresini seçeneklerini ayarlama komutlar vardır. Ayrıca, simgeler ve İmleçler ile çalışırken, cihaz görüntüleri kullanma komutlar kullanılabilir.  
@@ -57,7 +60,7 @@ Görüntü Düzenleyicisi etkin olduğunda görüntülenir, Görüntü menüsü 
  **Donuk Çiz**  
  Seçili olduğunda, geçerli seçim opak yapar. Bu onay kutusu temizlendiğinde, geçerli seçim saydam yapar. Daha fazla bilgi için bkz: [donuk veya saydam arka plan seçme](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).  
   
- **Araç çubuğu Düzenleyicisi**  
+ **Araç Çubuğu Düzenleyicisi**  
  Açılır [yeni araç çubuğu kaynağı iletişim kutusu](../windows/new-toolbar-resource-dialog-box.md).  
   
  **Kılavuz ayarları**  
@@ -72,7 +75,7 @@ Görüntü Düzenleyicisi etkin olduğunda görüntülenir, Görüntü menüsü 
  **Resim türünü Sil**  
  Seçilen aygıt görüntüsünü siler.  
   
- **Araçları**  
+ **Araçlar**  
  Kullanılabilir tüm araçlar içeren bir alt başlatır [görüntü Düzenleyicisi araç](../windows/toolbar-image-editor-for-icons.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -80,5 +83,5 @@ Görüntü Düzenleyicisi etkin olduğunda görüntülenir, Görüntü menüsü 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Simgeler için görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+ [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
 

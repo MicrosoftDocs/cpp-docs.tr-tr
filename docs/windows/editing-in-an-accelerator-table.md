@@ -16,11 +16,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 756c42999edbf859fac0e5008f55f212883f1822
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 909b5548856d5d2ffc31a4f43d5ce85e9c2f8e5e
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="editing-in-an-accelerator-table"></a>Hızlandırıcı Tablosunu Düzenleme
 ### <a name="to-edit-in-an-accelerator-table"></a>Hızlandırıcı tablosunu düzenlemek için  

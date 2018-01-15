@@ -20,11 +20,14 @@ caps.latest.revision: "24"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cabe15639d75a1dfe7c41463ea9b95332f6dafa3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 616117f7274d6f68456aa23614fb354a71982fb2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ref-new-gcnew--c-component-extensions"></a>yeni başvuru, gcnew (C++ Bileşen Uzantıları)
 `ref new` Birleşik anahtar sözcüğü ayırır nesne erişilemez duruma ve bir işleyici döner toplanacak olan bir türü örneği ([^](../windows/handle-to-object-operator-hat-cpp-component-extensions.md)) ayrılmış nesnesine.  
@@ -89,11 +92,11 @@ int main()
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 32  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

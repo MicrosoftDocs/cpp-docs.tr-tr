@@ -17,11 +17,14 @@ caps.latest.revision: "26"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 43bab2679e958dbf8ffbd0f76b0d683636ba88de
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 30fd64fd37fb30c34b5d4f5901f16143fb1cd701
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="delegate--c-component-extensions"></a>temsilci (C++ Bileşen Uzantıları)
 Bir işlev işaretçisi temsil eden bir tür bildirir.  
@@ -119,9 +122,9 @@ function_declaration
   
  Temsilciler üzerinde daha fazla bilgi için bkz:  
   
--   [Nasıl yapılır: temsilcileri tanımlama ve kullanma (C + +/ CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)  
+-   [Nasıl yapılır: Temsilcileri Tanımlama ve Kullanma (C++/CLI)](../dotnet/how-to-define-and-use-delegates-cpp-cli.md)  
   
--   [Genel temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
+-   [Genel Temsilciler (Visual C++)](../windows/generic-delegates-visual-cpp.md)  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
@@ -188,7 +191,7 @@ int main () {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 in func1 8  
@@ -203,4 +206,4 @@ in static func3 11
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

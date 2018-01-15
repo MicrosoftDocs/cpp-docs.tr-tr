@@ -19,11 +19,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 3e2268e110df7a5111f6ccb0fa4dd4d3a2f4a9b8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 3cf8a75a416f03fed1ae7e0deb9118b3c40ea5fb
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmyprovidersession-myprovidersessh"></a>CMyProviderSession (MyProviderSess.H)
 MyProviderSess.H bildirim ve OLE DB oturum nesnesi uygulamasını içerir. Veri kaynağı nesnesi oturum nesnesi oluşturur ve bir tüketici ve sağlayıcı arasında görüşmeyi temsil eder. Bir veri kaynağı için birden fazla eşzamanlı oturum açılabilir. Devralma listesini `CMyProviderSession` izler:  
@@ -48,4 +51,4 @@ class ATL_NO_VTABLE CMyProviderSession :
  OLE DB belirtimine gerektiren uygulama sağlayıcıları **IDBSchemaRowset** arabirimi destek üç şema satır kümesi türleri: **DBSCHEMA_COLUMNS**, **DBSCHEMA_PROVIDER_TYPES** , ve `DBSCHEMA_TABLES`. Sihirbaz her şeması satır kümesi için uygulamaları oluşturur. Sihirbaz tarafından oluşturulan her sınıf içeren bir `Execute` yöntemi. Bu `Execute` yöntemi, hangi tablolar, sütunlar ve veri türleri hakkında desteklediğiniz sağlayıcı veri döndürebilirsiniz. Bu veri genellikle derleme zamanında bilinir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sağlayıcı Sihirbazı tarafından oluşturulan dosyalar](../../data/oledb/provider-wizard-generated-files.md)
+ [Sağlayıcı Sihirbazı Tarafından Üretilen Dosyalar](../../data/oledb/provider-wizard-generated-files.md)

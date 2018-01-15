@@ -13,11 +13,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 12e36d679e8067cc9dc0cd7e8a30735b042bc702
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: a3341992ce2b10897fca165a787e568b5e0bc660
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-handle-events-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Olayları İşleme
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve Windows çalışma zamanı nesne olayları işlemek için nasıl kullanılacağını gösterir.  
@@ -94,4 +97,4 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve
  **cl.exe wrl tüketen events.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
+ [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

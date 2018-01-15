@@ -22,11 +22,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be954451335deef88ad459b9de6b865ff45ed909
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 610e970ad84c6c89d91182b7a61bb759112fcd7d
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="resource-includes-dialog-box"></a>Kaynak İçerikleri İletişim Kutusu
 Kullanabileceğiniz **kaynağını içeren** tüm kaynaklar proje .rc dosyasını ve tüm depolama ortamı normal çalışma düzenleme değiştirmek için iletişim kutusu [simgeleri](../windows/symbols-resource-identifiers.md) Resource.h içinde.  
@@ -56,4 +59,4 @@ Kullanabileceğiniz **kaynağını içeren** tüm kaynaklar proje .rc dosyasın�
  [Nasıl yapılır: belirtin kaynaklar için dizin eklemeyi](../windows/how-to-specify-include-directories-for-resources.md)   
  [Semboller: Kaynak tanımlayıcılar](../windows/symbols-resource-identifiers.md)   
  [Kaynak dosyaları](../windows/resource-files-visual-studio.md)   
- [Kaynak düzenleyicileri](../windows/resource-editors.md)
+ [Kaynak Düzenleyicileri](../windows/resource-editors.md)

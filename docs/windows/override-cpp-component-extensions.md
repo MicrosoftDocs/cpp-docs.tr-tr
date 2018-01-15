@@ -16,11 +16,14 @@ caps.latest.revision: "19"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: c16b79d50ad0494956ee27f0928daabfefdacaed
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 88138001a9767bbe9752c1de0577910fca8bc914
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="override--c-component-extensions"></a>geçersiz kılma (C++ Bileşen Uzantıları)
 `override` Bağlama duyarlı anahtar sözcüğü bir türünün bir üyesi bir taban sınıf veya temel arabirim üye kıldığını gösterir.  

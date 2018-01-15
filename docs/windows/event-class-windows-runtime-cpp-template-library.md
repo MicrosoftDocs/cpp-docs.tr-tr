@@ -14,11 +14,14 @@ caps.latest.revision: "4"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: df791e5ef12dfeef72ebf48e673b774ddfd6aee5
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 4647a8b1001cd6acd6b70a3d15f127c8e3891c1c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="event-class-windows-runtime-c-template-library"></a>Olay Sınıfı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
 Bir olayı temsil eder.  
@@ -35,13 +38,13 @@ class Event : public HandleT<HandleTraits::EventTraits>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Event::Event yapıcı (Windows çalışma zamanı C++ Şablon kitaplığı)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Olay sınıfının yeni bir örneğini başlatır.|  
+|[Event::Event Yapıcı (Windows Çalışma Zamanı C++ Şablon Kitaplığı)](../windows/event-event-constructor-windows-runtime-cpp-template-library.md)|Olay sınıfının yeni bir örneğini başlatır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Event::operator = işleci](../windows/event-operator-assign-operator.md)|Geçerli olay örneği belirtilen olay referansı atar.|  
+|[Event::operator= İşleci](../windows/event-operator-assign-operator.md)|Geçerli olay örneği belirtilen olay referansı atar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `HandleT`  
@@ -54,4 +57,4 @@ class Event : public HandleT<HandleTraits::EventTraits>;
  **Namespace:** Microsoft::wrl:: Wrappers  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: Wrappers Namespace](../windows/microsoft-wrl-wrappers-namespace.md)
+ [Microsoft::WRL::Wrappers Ad Alanı](../windows/microsoft-wrl-wrappers-namespace.md)

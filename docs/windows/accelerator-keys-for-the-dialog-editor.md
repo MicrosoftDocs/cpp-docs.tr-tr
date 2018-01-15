@@ -15,11 +15,14 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 34b75667af85ce4d312eb4e9e2ea7402f97b26ab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 75e9e6cac169bfe5e5867d0c1f3c14f70d19f916
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="accelerator-keys-for-the-dialog-editor"></a>İletişim Kutusu Düzenleyicisi için Hızlandırma Tuşları
 Aşağıda varsayılan iletişim Düzenleyici komutlarını Hızlandırıcı tuşları verilmektedir. Kısayol tuşları değiştirmek için tıklatın. **seçenekleri** üzerinde **Araçları** menüsünde, ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için bkz: [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
@@ -47,11 +50,11 @@ Aşağıda varsayılan iletişim Düzenleyici komutlarını Hızlandırıcı tu�
 |Format.TestDialog|CTRL + T|Görünüm ve davranış test etmek için iletişim kutusu çalıştırır|  
 |Format.ToggleGuides|CTRL + G|İletişim düzenlemek için hiçbir kılavuz, kılavuzları ve kılavuz arasında geçiş yapar|  
   
- Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](https://msdn.microsoft.com/library/f45fce5x.aspx) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](https://msdn.microsoft.com/library/xbx3z216.aspx). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](https://msdn.microsoft.com/library/h6270d0z.aspx).  
+ Kaynakları yönetilen projelerine ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakları](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu.* Kaynak dosyaları el ile yönetilen projelerine ekleme, kaynaklara erişme, statik kaynaklarını görüntüleme ve özellikleri için kaynak dizeleri atama hakkında daha fazla bilgi için bkz: [Masaüstü uygulamaları için kaynak dosyalar oluşturma](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamaları yerelleştirme](/dotnet/standard/globalization-localization/index).  
   
 ## <a name="requirements"></a>Gereksinimler  
  Win32  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutusu Düzenleyicisi](../windows/dialog-editor.md)
+ [İletişim Kutusu Düzenleyicisi](../windows/dialog-editor.md)
 

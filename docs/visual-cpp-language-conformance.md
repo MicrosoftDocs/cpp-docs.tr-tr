@@ -9,11 +9,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 8e9d4d86abd15f59e94ce7e51d40e119f8ebd336
-ms.sourcegitcommit: 1b480aa74886930b3bd0435d71cfcc3ccda36424
+ms.workload: cplusplus
+ms.openlocfilehash: fa79bfc63a3906b3f7eb698c3d44ee8136db2c14
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ dili uyumluluğu
 
@@ -250,8 +251,8 @@ __VS 2017 15,5__ Visual Studio 2017 sürüm 15,5 desteklenen özellikleri göste
 
 [C++ Dil Başvurusu](cpp/cpp-language-reference.md)  
 [C++ Standart Kitaplığı](standard-library/cpp-standard-library-reference.md)   
-[Visual Studio 2017 C++ uygunluk yenilikleri](cpp-conformance-improvements-2017.md)  
-[Visual Studio 2017'de Visual C++ yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)  
+[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)  
+[Visual Studio 2017'deki Visual C++ Yenilikleri](what-s-new-for-visual-cpp-in-visual-studio.md)  
 [Visual C++ değişiklik geçmişini 2015 üzerinden 2003](porting/visual-cpp-change-history-2003-2015.md)  
-[Visual C++ 2015 aracılığıyla yeni 2003 nedir](porting/visual-cpp-what-s-new-2003-through-2015.md)  
+[Visual C++ 2003 ile 2015 Arasındaki Farklar](porting/visual-cpp-what-s-new-2003-through-2015.md)  
 [Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)  

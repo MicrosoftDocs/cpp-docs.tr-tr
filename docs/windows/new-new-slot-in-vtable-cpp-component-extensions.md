@@ -14,11 +14,14 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4612df74e360c389c34e750dd315074de415447c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: f208a62fd49e7aea67acf5b7e3e49d3571f8d910
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="new-new-slot-in-vtable--c-component-extensions"></a>yeni (vtable'da yeni yuva) (C++ Bileşen Uzantıları)
 `new` Anahtar sözcüğü gösterir sanal üyesi vtable'de yeni yuva alırsınız.  
@@ -95,7 +98,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 C::f() called  

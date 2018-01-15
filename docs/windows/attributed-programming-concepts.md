@@ -17,11 +17,14 @@ caps.latest.revision: "11"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 31a55b2413dceb2738522f755c7a27cd10c19872
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 2e5477d91d50ab239732adf3521a2bf07d92a1c8
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malzemeler çeşitli içerir. Öznitelikler, Visual C++ ' ta yeni bir özellik COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme kolaylaştırmak için tasarlanmıştır. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısı dinamik bağlantı kitaplığı (DLL) kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğelerin oluşturulmasında yardımcı özniteliği vardır. Tümleşik geliştirme ortamı (IDE), öznitelikleri ve Özellikler penceresini sihirbazları tarafından desteklenir.  
@@ -29,16 +32,16 @@ Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malz
  COM nesneleri yazmak için gereken ayrıntılı kodlama bazıları öznitelikleri ortadan olsa da, bir arka planda gerekir [COM Temelleri](http://msdn.microsoft.com/library/windows/desktop/ms694363) en iyi şekilde kullanmak için.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Özniteliklerin amacı](../windows/purpose-of-attributes.md)  
+ [Özniteliklerin Amacı](../windows/purpose-of-attributes.md)  
  Öznitelikli Programlama genel bir bakış sunar.  
   
- [Özniteliklerin temel Mekanikleri](../windows/basic-mechanics-of-attributes.md)  
+ [Özniteliklerin Temel Mekanikleri](../windows/basic-mechanics-of-attributes.md)  
  Öznitelikleri projenizde nasıl çalıştığını açıklar.  
   
- [Öznitelikli Program oluşturma](../windows/building-an-attributed-program.md)  
+ [Öznitelikli Program Derleme](../windows/building-an-attributed-program.md)  
  Projenizde C++ derleyici seçenekleri kullanma hakkında bilgi sağlar.  
   
- [Öznitelik kategorileri](../windows/attribute-categories.md)  
+ [Öznitelik Kategorileri](../windows/attribute-categories.md)  
  Visual C++'da kullanılan öznitelikler kategorilerini bağlantılar sağlar.  
   
  [Öznitelik Programmming SSS](../windows/attribute-programming-faq.md)  

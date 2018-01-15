@@ -47,11 +47,12 @@ caps.latest.revision: "19"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 10bc57e29383386df63de4cd6f27299a8f9986a6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 866ec8b37852f6c4fea6fdeeefa5eb9fdf21d819
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 Büyük küçük harflerden ve yerel karakter kümesiyle yerel ayar tarafından kullanılan küme arasında dönüştürme yapan, karakterleri sınıflandırmak için kullanılan model sağlayan bir sınıf.  
@@ -107,7 +108,7 @@ class ctype : public ctype_base;
 |[do_tolower](#do_tolower)|Bir karakteri ya da karakter aralığını kendi küçük harflerine dönüştürmek için çağrılan bir sanal işlev.|  
 |[do_toupper](#do_toupper)|Bir karakteri ya da karakter aralığını kendi büyük harflerine dönüştürmek için çağrılan bir sanal işlev.|  
 |[do_widen](#do_widen)|Adlı bir sanal işleve bir karakter türü dönüştürür `char` yerel karakter türüne karşılık gelen karakter kümesinde `CharType` yerel ayarı tarafından kullanılır.|  
-|[değil](#is)|Tek bir karakterin belirli bir özniteliği olup olmadığını sınar veya bir aralıktaki her bir karakter özniteliğini sınıflandırır ve bunları bir dizide saklar.|  
+|[is](#is)|Tek bir karakterin belirli bir özniteliği olup olmadığını sınar veya bir aralıktaki her bir karakter özniteliğini sınıflandırır ve bunları bir dizide saklar.|  
 |[daraltma](#narrow)|Bir karakter türü dönüştürür `CharType` bir yerel tür char yerel karakter kümesinde karşılık gelen karakter tarafından kullanılır.|  
 |[scan_is](#scan_is)|Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulur.|  
 |[scan_not](#scan_not)|Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulur.|  
@@ -808,5 +809,5 @@ Hello everyone!
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<yerel ayar >](../standard-library/locale.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

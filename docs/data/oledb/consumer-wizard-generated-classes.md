@@ -21,11 +21,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5189794a8f9c1aa44d46a5580fbfa177f15f7b53
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: 8ebd53b8b39fb94e4275f5052a74f77bf71bd790
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 Tüketici oluşturmak için ATL OLE DB Tüketici Sihirbazı'nı kullandığınızda, OLE DB Şablonları veya OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz komut sınıfı ve kullanıcı kayıt sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağı açmak için kullanılan kodu içerir. Kullanıcı kayıt sınıfı seçtiğiniz veritabanı tablosu için sütun eşlemesi içerir. Bununla birlikte, her durumda oluşturulan kod farklıdır:  
@@ -187,4 +190,4 @@ class CProducts : public CCommand<CAccessor<_CProductsAccessor> >
  Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kod hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sihirbaz kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+ [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

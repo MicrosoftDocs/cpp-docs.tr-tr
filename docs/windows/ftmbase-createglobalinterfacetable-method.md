@@ -15,11 +15,14 @@ caps.latest.revision: "3"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7d206e581166fb2bd685e6d4755d56e6d189656c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: cc96d8eaff3def90f9ff3e9bd76e0ef067094715
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ftmbasecreateglobalinterfacetable-method"></a>FtmBase::CreateGlobalInterfaceTable Yöntemi
 Genel arabirim tablosu (GIT) oluşturur.  
@@ -48,4 +51,4 @@ static HRESULT CreateGlobalInterfaceTable(
  **Namespace:** Microsoft::WRL  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase sınıfı](../windows/ftmbase-class.md)
+ [FtmBase Sınıfı](../windows/ftmbase-class.md)

@@ -13,11 +13,14 @@ caps.latest.revision: "17"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 953bb3c84916920d9913bac9242650e66114cefc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7e2da53a234f63bfd4c8a7f84ec5c107426f0e7c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 A *masaüstü uygulaması* c++'ta Windows API'ları ve penceresinde veya sistem konsolu ya da çalışır, tamamını erişmek için yerel bir uygulamadır. Masaüstü uygulamalarında C++ (Windows XP artık resmi olarak desteklenir ve o zamandan bu yana sunulan çok sayıda Windows API'leri vardır rağmen), Windows XP ile Windows 10 çalıştırabilirsiniz.   Bir masaüstü uygulaması Windows 10 çalıştıran bilgisayarlarda ve aynı zamanda XBox, Windows Phone, Surface Hub ve diğer aygıtlar üzerinde çalıştırılabilir bir evrensel Windows Platformu (UWP) uygulamasını farklıdır. Masaüstü vs hakkında daha fazla bilgi için. UWP uygulamalar için bkz [teknolojiyi seçin](https://msdn.microsoft.com/en-us/library/windows/desktop/dn614993\(v=vs.85\).aspx).  
@@ -42,13 +45,13 @@ A *masaüstü uygulaması* c++'ta Windows API'ları ve penceresinde veya sistem 
 |[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)|Konsolun aksine Windows çalıştıran masaüstü uygulamalarının nasıl oluşturulacağını.|  
 |[(C++) DirectX kullanarak oyun oluşturmak için kaynaklar](../windows/resources-for-creating-a-game-using-directx.md)|C++'ta oyun oluşturmak için içerik bağlantılar.|  
 |[İzlenecek yol: Oluşturma ve bir statik kitaplık kullanma](../windows/walkthrough-creating-and-using-a-static-library-cpp.md)|.Lib ikili dosya oluşturma|  
-|[Nasıl yapılır: Windows 10 kullanan Windows masaüstü uygulaması SDK'sına](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi adımlarını içerir.|  
+|[Nasıl yapılır: Windows 10 SDK’yı bir Windows Masaüstü Uygulamasında Kullanma](../windows/how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Windows 10 SDK'sını kullanarak oluşturmak projenizi adımlarını içerir.|  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Windows geliştirme](http://go.microsoft.com/fwlink/p/?LinkId=262282)|Windows API ve COM hakkında bilgiler içerir (Bazı Windows API'ları ve üçüncü taraf DLL'leri COM nesneleri olarak uygulanır.)|  
+|[Windows Geliştirme](http://go.microsoft.com/fwlink/p/?LinkId=262282)|Windows API ve COM hakkında bilgiler içerir (Bazı Windows API'ları ve üçüncü taraf DLL'leri COM nesneleri olarak uygulanır.)|  
 |[Hilo: Windows 7 için C++ uygulamaları geliştirme](http://go.microsoft.com/fwlink/p/?LinkId=262284)|Karusel tabanlı kullanıcı arabirimi oluşturmak üzere Windows animasyon ve Direct2D kullanan bir zengin istemci Windows Masaüstü uygulamasının nasıl oluşturulacağını açıklar.  Bu öğretici Windows 7 bu yana güncelleştirilmemiş ancak hala bir Win32 programlama throough giriş sağlar.|  
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Visual Studio ve bağlantıları Visual C++ belge geri kalanı için Visual C++ anahtar özelliklerini açıklar.|  
   

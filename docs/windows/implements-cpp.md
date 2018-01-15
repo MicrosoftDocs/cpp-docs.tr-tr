@@ -15,11 +15,14 @@ caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 44e1ec9a00f1de2ab07d7b2a916d274a9cddce2e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 0dbe7d829ae31f53a3dbc35df66bee2d50f14f19
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implements-c"></a>uygulamalar (C++)
 IDL coclass'ı üyeleri olmaya zorlanıp gönderme arabirimleri belirtir.  
@@ -550,4 +553,4 @@ public:
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
+ [Sınıf Öznitelikleri](../windows/class-attributes.md)   

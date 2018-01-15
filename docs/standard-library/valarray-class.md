@@ -39,11 +39,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 0fe6762e9e8f98895deda9ac8cbbe9a6fe3bb4fb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 3a335ffe93f0a695643c84b60cbc581ea5545da9
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 Şablon sınıfı türündeki öğeler bir dizi denetimleri bir nesneyi tanımlayan **türü** , bir dizi olarak depolanan, yüksek hızlı matematik işlemlerini gerçekleştirmek için tasarlanmış ve hesaplama performans için en iyi duruma getirilmiş.  
@@ -81,7 +82,7 @@ ms.lasthandoff: 10/24/2017
 |-|-|  
 |[Uygula](#apply)|Belirtilen işlev her öğeye uygular bir `valarray`.|  
 |[cshift](#cshift)|Tüm öğeleri cyclically kaydırır bir `valarray` konumlar belirtilen sayısı.|  
-|[boş](#free)|Tarafından kullanılan bellek boşaltır `valarray`.|  
+|[free](#free)|Tarafından kullanılan bellek boşaltır `valarray`.|  
 |[max](#max)|En büyük öğeyi bulur bir `valarray`.|  
 |[Min](#min)|En küçük öğeyi bulur bir `valarray`.|  
 |[yeniden boyutlandırma](#resize)|Öğelerin sayısını değiştirir bir `valarray` ekleyerek veya kaldırarak gerektiği gibi öğeleri belirtilen bir sayı.|  
@@ -1887,5 +1888,5 @@ The resulting valarray is:  ( 0 -10 20 -10 40 -10 60 -10 80 -10 ).
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

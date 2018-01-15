@@ -17,11 +17,14 @@ caps.latest.revision: "34"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6e821d68fac0467d48a2056e1818c3fd58963581
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: bdaef6a98e080da2e1290f1191590b7509c2eccd
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 `event` Anahtar sözcüğü bildiren bir *olay*, kayıtlı abonelere bildirim olduğu (*olay işleyicileri*) çeken bir şey gerçekleşen.  
@@ -45,12 +48,12 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *Değiştirici*  
  Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler şunlardır: `static` ve `virtual`.  
   
- *temsilci seçme*  
+ *delegate*  
  [Temsilci](../windows/delegate-cpp-component-extensions.md), olay işleyicisi eşleşmelidir, imzası.  
   
  *EVENT_NAME*  
@@ -107,12 +110,12 @@ modifiereventdelegate^ event_name
 }  
 ```  
   
- **Parametreleri**  
+ **Parametreler**  
   
  *Değiştirici*  
  Olay bildirimi ya da bir olay erişimci yöntemi kullanılabilir değiştiricisi.  Olası değerler şunlardır: `static` ve `virtual`.  
   
- *temsilci seçme*  
+ *delegate*  
  [Temsilci](../windows/delegate-cpp-component-extensions.md), olay işleyicisi eşleşmelidir, imzası.  
   
  *EVENT_NAME*  
@@ -229,7 +232,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 OnClick: 7, 3.14159  
@@ -273,7 +276,7 @@ int main() {
 }  
 ```  
   
- **Çıktı**  
+ **Output**  
   
 ```Output  
 0  
@@ -282,4 +285,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

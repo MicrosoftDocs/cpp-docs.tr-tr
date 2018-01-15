@@ -15,11 +15,14 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 21ede4ac7e9540e2694c10ab00144d285283f7bc
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: b6b283a7377227818d9d1d759240a2c9611368b6
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="implementsbase-structure"></a>ImplementsBase Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -44,4 +47,4 @@ struct ImplementsBase;
  **Namespace:** Microsoft::wrl:: details  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::wrl:: details Namespace](../windows/microsoft-wrl-details-namespace.md)
+ [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

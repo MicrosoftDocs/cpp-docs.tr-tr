@@ -21,37 +21,40 @@ caps.latest.revision: "20"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: aa42bfc67a94ed4e25045dc6656651a7b9bd645e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: d6f43bd1953cc13189f53d97090d3913a49072ac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="exception-handling--c-component-extensions"></a>Özel Durum İşleme (C++ Bileşen Uzantıları)
 Uygulamaları derlenmiş ile **/ZW** derleyici seçeneği veya **/CLR** her ikisini de kullanmanız derleyici seçeneği *özel durumları* program yürütme sırasında beklenmeyen hataları işlemek için. Aşağıdaki konular ele özel durum işleme ya da C + +/ CX veya C + +/ CLI uygulamalar.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
- [Yönetilen özel durumları kullanmaya ilişkin temel kavramlar](../dotnet/basic-concepts-in-using-managed-exceptions.md)  
+ [Yönetilen Özel Durumları Kullanmaya İlişkin Temel Kavramlar](../dotnet/basic-concepts-in-using-managed-exceptions.md)  
  Açıklar kullanarak ve özel durumları atma `try` / `catch` engeller.  
   
  [/ CLR altında özel durum işleme farkları](../dotnet/differences-in-exception-handling-behavior-under-clr.md)  
  C++ özel durum işleme standart davranışını arasındaki farklar açıklanmaktadır.  
   
- [Son olarak](../dotnet/finally.md)  
+ [finally](../dotnet/finally.md)  
  Nasıl kullanılacağı açıklanır finally anahtar sözcüğü.  
   
- [Nasıl yapılır: genel özel durum işleyici yükleyin ve tanımlayın](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
+ [Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
  Nasıl işlenmeyen özel durumlar gösteren yakalanabilir.  
   
- [Nasıl yapılır: MSIL'den oluşan yerel kodda Catch özel durumları](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)  
+ [Nasıl yapılır: MSIL'den Oluşan Yerel Kodda Catch Özel Durumları](../dotnet/how-to-catch-exceptions-in-native-code-thrown-from-msil.md)  
  Yerel kodda CLR ve C++ özel durumlarını yakalama açıklanmaktadır.  
   
- [Nasıl yapılır: genel özel durum işleyici yükleyin ve tanımlayın](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
+ [Nasıl yapılır: Genel Bir Özel Durum İşleyicisi Tanımlama ve Yükleme](../dotnet/how-to-define-and-install-a-global-exception-handler.md)  
  Tüm işlenmeyen özel durumları yakalamak gösterilmiştir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Özel durum işleme](../cpp/exception-handling-in-visual-cpp.md)  
+ [Özel Durum İşleme](../cpp/exception-handling-in-visual-cpp.md)  
  Özel durum işlemeyi C++ içinde açıklar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+ [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

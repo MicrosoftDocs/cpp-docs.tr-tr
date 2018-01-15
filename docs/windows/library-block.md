@@ -15,11 +15,14 @@ caps.latest.revision: "10"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4e0255002a8235f4e8a36d4b43df520d6e26865b
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: ab7c4c8c65d23dc252fb3ce228313fb36aa7e032
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="libraryblock"></a>library_block
 IDL kitaplığı bloktaki bir yapı yerleştirir.  
@@ -64,4 +67,4 @@ __interface IMyInterface {
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
+ [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)   

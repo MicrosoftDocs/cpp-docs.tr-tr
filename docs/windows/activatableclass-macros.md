@@ -21,11 +21,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 6cd75d4075cfe590151f7746281640febb334ce9
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 7043a3a9013f02048b34149dd113d2125dced6a2
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="activatableclass-macros"></a>ActivatableClass Makroları
 
@@ -73,4 +76,4 @@ Kullanmadığınız sürece bu makroları klasik COM ile kullanmayın `#undef` e
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Modül sınıfı](../windows/module-class.md)
+[Modül Sınıfı](../windows/module-class.md)

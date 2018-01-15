@@ -41,11 +41,12 @@ caps.latest.revision: "22"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 24ac78fad64877cb789451cd84db4ff5cd27142c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7cd59fec5d8b5b2a6a05634242e0506688422f81
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 Türü dizilerini açıklamak için yerel bir model hizmet verebilir bir nesneyi tanımlayan bir şablon sınıfı `CharType` biçimlendirme ve noktalama sayısal ve Boole ifadelerin hakkında bilgi göstermek için kullanılır.  
@@ -435,5 +436,5 @@ French_France.1252 falsename false
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<yerel ayar >](../standard-library/locale.md)   
  [facet sınıfı](../standard-library/locale-class.md#facet_class)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+ [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
 

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 349dbfd081301e8bf3661c8a6cf18766adaaf238
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: db25b79476490ccc6bfc3f68370f30b7e8f2afac
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections::MapView sınıfı
 Salt okunur bir görünüme temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  

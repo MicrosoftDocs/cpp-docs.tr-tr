@@ -14,11 +14,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e741324e6871846aba8912d53ca9aad5ce1cb739
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 7894e47b14dffc1685fbce8194f0fc45ed6b5d1c
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ltfuturegt"></a>&lt;Gelecekteki&gt;
 Standart üstbilgisini \<gelecekteki > şablon sınıfları ve bir işlev çalıştıran basitleştirmek destekleyen şablonları tanımlamak için — büyük olasılıkla ayrı bir iş parçacığı içinde — ve sonucu alınıyor. , İşlev tarafından döndürülen değer veya işlev tarafından gösterilen ancak işlevinde yakalandı bir özel durum oluşur.  
@@ -56,24 +57,24 @@ Standart üstbilgisini \<gelecekteki > şablon sınıfları ve bir işlev çalı
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Future sınıfı](../standard-library/future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar.|  
-|[future_error sınıfı](../standard-library/future-error-class.md)|Yönetme türleri yöntemleri ile oluşturulan bir özel durum nesnesi tanımlar `future` nesneleri.|  
-|[packaged_task sınıfı](../standard-library/packaged-task-class.md)|Çağrı sarmalayıcı olan bir zaman uyumsuz sağlayıcısını açıklar ve, çağrı imzası `Ty(ArgTypes...)`. İlişkili zaman uyumsuz durumuna olası sonuç yanı sıra kendi aranabilir nesnesinin bir kopyasını tutar.|  
-|[Promise sınıfı](../standard-library/promise-class.md)|Zaman uyumsuz bir sağlayıcısını açıklar.|  
-|[shared_future sınıfı](../standard-library/shared-future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar. Tersine ile bir `future` nesne, zaman uyumsuz bir sağlayıcı herhangi bir sayı ile ilişkilendirilebilir `shared_future` nesneleri.|  
+|[future Sınıfı](../standard-library/future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar.|  
+|[future_error Sınıfı](../standard-library/future-error-class.md)|Yönetme türleri yöntemleri ile oluşturulan bir özel durum nesnesi tanımlar `future` nesneleri.|  
+|[packaged_task Sınıfı](../standard-library/packaged-task-class.md)|Çağrı sarmalayıcı olan bir zaman uyumsuz sağlayıcısını açıklar ve, çağrı imzası `Ty(ArgTypes...)`. İlişkili zaman uyumsuz durumuna olası sonuç yanı sıra kendi aranabilir nesnesinin bir kopyasını tutar.|  
+|[promise Sınıfı](../standard-library/promise-class.md)|Zaman uyumsuz bir sağlayıcısını açıklar.|  
+|[shared_future Sınıfı](../standard-library/shared-future-class.md)|Zaman uyumsuz dönüş nesneyi açıklar. Tersine ile bir `future` nesne, zaman uyumsuz bir sağlayıcı herhangi bir sayı ile ilişkilendirilebilir `shared_future` nesneleri.|  
   
 ### <a name="structures"></a>Yapılar  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[is_error_code_enum yapısı](../standard-library/is-error-code-enum-structure.md)|Belirten uzmanlık `future_errc` depolamak için uygun bir `error_code`.|  
-|[uses_allocator yapısı](../standard-library/uses-allocator-structure.md)|Uzmanlık her zaman geçerlidir.|  
+|[is_error_code_enum Yapısı](../standard-library/is-error-code-enum-structure.md)|Belirten uzmanlık `future_errc` depolamak için uygun bir `error_code`.|  
+|[uses_allocator Yapısı](../standard-library/uses-allocator-structure.md)|Uzmanlık her zaman geçerlidir.|  
   
 ### <a name="functions"></a>İşlevler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[zaman uyumsuz](../standard-library/future-functions.md#async)|Zaman uyumsuz bir sağlayıcısını temsil eder.|  
+|[async](../standard-library/future-functions.md#async)|Zaman uyumsuz bir sağlayıcısını temsil eder.|  
 |[future_category](../standard-library/future-functions.md#future_category)|Bir başvuru döndürür `error_category` ilişkili hataları belirtir nesne `future` nesneleri.|  
 |[make_error_code](../standard-library/future-functions.md#make_error_code)|Oluşturur bir `error_code` olan `error_category` belirtir nesne `future` hataları.|  
 |[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Oluşturur bir `error_condition` olan `error_category` belirtir nesne `future` hataları.|  

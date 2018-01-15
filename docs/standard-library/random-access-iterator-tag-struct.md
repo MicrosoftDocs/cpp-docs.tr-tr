@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b7d45bba5c61948bb77dd2136687d47f8b4e9b33
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: f58235755081b2e0618388ede19e818784e8de0a
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="randomaccessiteratortag-struct"></a>random_access_iterator_tag Yapısı
 Dönüş türü için sağlayan bir sınıf **iterator_category** rasgele erişim yineleyici temsil eden bir işlev.  

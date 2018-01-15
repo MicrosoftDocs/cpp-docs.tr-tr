@@ -18,11 +18,14 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 943639ed97798369bd4efa24561fd5b174f81579
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- uwp
+ms.openlocfilehash: 8d8aad77236e5c1b2cdc8fe5958d87d8c53b8f05
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="how-to-improve-performance-with-generics-visual-c"></a>Nasıl yapılır: Genel Türlerle Performansı Artırma (Visual C++)
 Genel türler ile bir tür parametresi temelinde yeniden kullanılabilir kod oluşturabilirsiniz. Tür parametresi gerçek türü, istemci kodu tarafından adlı kadar ertelenir. Genel türler hakkında daha fazla bilgi için bkz: [genel türler](../windows/generics-cpp-component-extensions.md).  
@@ -131,4 +134,4 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Genel türler](../windows/generics-cpp-component-extensions.md)
+ [Genel Türler](../windows/generics-cpp-component-extensions.md)

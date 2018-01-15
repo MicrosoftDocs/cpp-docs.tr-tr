@@ -55,11 +55,14 @@ caps.latest.revision: "6"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 65112e8daab1923f296d65637cd67ce93ee22cc3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload:
+- cplusplus
+- data-storage
+ms.openlocfilehash: e9322a43ba183f9c7378633cca089eb498476d28
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="ckeycolumns-ckeycolumninfo"></a>CKeyColumns, CKeyColumnInfo
 Çağrı typedef sınıfı **CKeyColumns** parametre sınıfı uygulamak için **Ckeycolumnınfo**.  
@@ -88,4 +91,4 @@ ms.lasthandoff: 10/24/2017
  **Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions sınıfı](../../data/oledb/crestrictions-class.md)
+ [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)
