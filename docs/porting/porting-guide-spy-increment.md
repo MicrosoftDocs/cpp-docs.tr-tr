@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 11b50aa8eb5c44a8949228d03b0b733de90fb0b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: HT
+ms.openlocfilehash: 5043e77826e2210f45b70d564313ae6fd976d93a
+ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 Bu taşıma örnek olay incelemesi hangi tipik bir taşıma projede benzer bir fikir vermek üzere tasarlanmış, karşılaşabileceğiniz sorunları türlerini ve bazı genel ipuçları ve püf noktaları bağlantı noktası oluşturma sorunları ele almak için. Bu proje taşıma deneyimi kodu ayrıntılarını çok bağlı olduğundan bağlantı noktası oluşturma için eksiksiz bir kılavuz olma amacını değil.  
@@ -141,7 +141,7 @@ typedef std::basic_ostringstream<TCHAR> ostrstream;
   
 ```  
   
- Şu anda proje MBCS (çok baytlı karakter kümesi), char uygun karakter veri türü olacak şekilde kullanarak oluşturuyor. Ancak, daha kolay bir güncelleştirme UTF-16 Unicode koda izin vermek için bu char veya wchar_t mı bağlı olarak çözümler TCHAR için güncelleştiriyoruz **karakter kümesi** proje ayarlarını özellik MBCS veya Unicode olarak ayarlanmış.  
+ Proje MBCS (çok baytlı karakter kümesi), bunu kullanarak şu anda yerleşik `char` uygun karakter veri türü. Ancak, daha kolay bir güncelleştirme UTF-16 Unicode koda izin vermek için bunu güncelleştiriyoruz `TCHAR`, çözümler için `char` veya `wchar_t` mı bağlı olarak **karakter kümesi** özelliği proje ayarları MBCS veya Unicode.  
   
  Birkaç kod parçalarını güncelleştirilmesi gerekir.  Biz temel sınıf ios ios_base ile değiştirilir ve biz ostream değiştirilir tarafından basic_ostream olan\<T >. İki ek tür tanımları eklediğimiz ve bu bölümde derler.  
   
@@ -514,8 +514,9 @@ warning C4211: nonstandard extension used: redefined extern to static
   
  Bir değişken ilk bildirildi sorun oluşur `extern`, daha sonra bildirilen `static`. Bu iki depolama sınıfı tanımlayıcıları anlamını birbirini dışlayan, ancak bu bir Microsoft uzantısı olarak izin verilir. Kodunun diğer derleyiciler taşınabilir olmasını istediğiniz ya da /Za (ANSI uyumluluğu) ile derlemek istedi, eşleşen depolama sınıfı tanımlayıcıları için bildirimler değiştirirsiniz.  
   
-##  <a name="porting_to_unicode"></a>11. adım. Unicode MBCS bağlantı noktası oluşturma  
- Unicode dediğimiz Windows dünyasında, biz genellikle UTF-16 anlama olduğunu unutmayın. UTF-8 Linux gibi diğer işletim sistemlerinin kullanın, ancak Windows bir genellikle desteklemez. Gerçekte UTF-16 Unicode MBCS koda bağlantı noktası için adımı gerçekleştirmeden önce geçici olarak MBCS kullanım dışıdır uyarılarını kaldırmak için diğer iş yapmak veya bunları taşıma uygun bir zamana kadar erteleyin için istiyoruz. MBCS geçerli kod kullanır ve MFC MBCS sürümünü indirmek ihtiyacımız devam etmek için.  Ayrı olarak indirilmesi gerekir böylece bu yerine büyük kitaplığı varsayılan Visual Studio yüklemesinden kaldırıldı. Bkz: [MFC MBCS DLL eklentisi](../mfc/mfc-mbcs-dll-add-on.md). Bu karşıdan yükleyip Visual Studio'yu yeniden başlatın sonra derlemek ve MFC MBCS sürümü ile bağlantı ancak MBCS hakkında uyarılar kurtulmak için de NO_WARN_MBCS_MFC_DEPRECATION proje önişlemci bölümünde önceden tanımlı makrolar listesine eklemeniz özellikleri veya stdafx.h üstbilgi dosyası veya diğer ortak üstbilgi dosyası başlangıcı.  
+##  <a name="porting_to_unicode"></a>11. adım. Unicode MBCS bağlantı noktası oluşturma
+
+ Unicode dediğimiz Windows dünyasında, biz genellikle UTF-16 anlama olduğunu unutmayın. UTF-8 Linux gibi diğer işletim sistemlerinin kullanın, ancak Windows bir genellikle desteklemez. MFC MBCS sürümü 2015 ve Visual Studio 2013'ün de kullanım, ancak Visual Studio 2017 içinde artık kullanım dışı. Visual Studio 2013 veya 2015, aslında UTF-16 Unicode MBCS koda bağlantı noktası için adımı gerçekleştirmeden önce kullanıyorsanız, biz geçici olarak MBCS kullanım dışıdır uyarılarını kaldırmak için diğer iş yapmak veya bunları taşıma uygun bir zamana kadar erteleyin için isteyebilirsiniz. MBCS geçerli kod kullanır ve MFC ANSI/MBCS sürümünü yüklemek ihtiyacımız devam etmek için. Bunun yerine büyük MFC Kitaplığı Visual Studio varsayılan parçası olmayan **C++ ile masaüstü geliştirme** yükleyicisinde isteğe bağlı bileşenler'den seçilmelidir şekilde yükleme. Bkz: [MFC MBCS DLL eklentisi](../mfc/mfc-mbcs-dll-add-on.md). Bu karşıdan yükleyip Visual Studio'yu yeniden başlatın, derleme ve bağlama MFC MBCS sürümüyle, ancak Visual Studio 2013 veya 2015 kullanıyorsanız MBCS hakkında uyarılar elden için de eklemeniz gerekir sonra **NO_WARN_MBCS_MFC_DEPRECATION**Proje Özellikleri'nin veya stdafx.h üstbilgi dosyası veya diğer ortak üstbilgi dosyası başındaki önişlemci bölümdeki önceden tanımlı makrolar listenize.  
   
  Şimdi bazı bağlayıcı hatalarını sunuyoruz.  
   
@@ -531,7 +532,7 @@ msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\Sp
   
  Artık bize gerçekte eski çok baytlı karakter kümesi (MBCS) kodu Unicode'a güncelleştirin. Bu içkin şekilde Windows masaüstü platformu için bağlı olan bir Windows uygulaması olduğundan biz bunu UTF-16 Unicode için Windows'un kullandığı bağlantı noktası. Platformlar arası kod yazma veya başka bir platform için bir Windows uygulaması bağlantı noktası oluşturma, diğer işletim sistemlerinde yaygın olarak kullanılan UTF-8 bağlantı noktası oluşturma düşünmek isteyebilirsiniz.  
   
- UTF-16 Unicode için bağlantı noktası oluşturma, biz biz yine MBCS'den veya derleme seçeneği isteyip istemediğinize karar gerekir.  MBCS Desteği seçeneğine sahip istiyoruz, biz TCHAR makrosu char veya wchar_t olup derleme sırasında _MBCS veya _UNICODE tanımlanan bağlı olarak, çözülen karakter türü olarak kullanmanız gerekir. TCHAR ve TCHAR wchar_t yerine çeşitli API'ler ve ilişkili API'ler sürümleri geçiş yapma, geri kodunuzu MBCS sürüme _MBCS makrosu _UNICODE yerine tanımlayarak edinebileceğiniz anlamına gelir. TCHAR yanı sıra, yaygın olarak kullanılan tür tanımları, makrolar ve işlevler gibi TCHAR sürümlerini çeşitli bulunmaktadır. Örneğin, LPCSTR ve benzeri yerine LPCTSTR. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** bölümünde **karakter kümesi** özelliğinden **kullanım MBCS Karakter kümesi** için **Unicode karakter kümesi kullanan**. Bu ayar, hangi makrosu derleme sırasında önceden tanımlanmış etkiler. UNICODE makrosu ve _UNICODE makrosu yoktur. Proje özelliği hem de tutarlı bir şekilde etkiler. Visual C++ üstbilgi MFC gibi _UNICODE kullandığınızda, ancak bir tanımlandığında Windows üstbilgileri UNICODE kullanın, diğer her zaman tanımlanır.  
+ UTF-16 Unicode için bağlantı noktası oluşturma, biz biz yine MBCS'den veya derleme seçeneği isteyip istemediğinize karar gerekir.  MBCS Desteği seçeneğine sahip istiyoruz, TCHAR makrosu ya da çözümler karakter türü olarak kullanmamız gereken `char` veya `wchar_t`olup derleme sırasında _MBCS veya _UNICODE tanımlanan bağlı olarak. TCHAR ve TCHAR yerine çeşitli API'ler sürümleri geçiş `wchar_t` ve ilişkili API'ler, geri kodunuzu MBCS sürüme _MBCS makrosu _UNICODE yerine tanımlayarak edinebileceğiniz anlamına gelir. TCHAR yanı sıra, yaygın olarak kullanılan tür tanımları, makrolar ve işlevler gibi TCHAR sürümlerini çeşitli bulunmaktadır. Örneğin, LPCSTR ve benzeri yerine LPCTSTR. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** bölümünde **karakter kümesi** özelliğinden **kullanım MBCS Karakter kümesi** için **Unicode karakter kümesi kullanan**. Bu ayar, hangi makrosu derleme sırasında önceden tanımlanmış etkiler. UNICODE makrosu ve _UNICODE makrosu yoktur. Proje özelliği hem de tutarlı bir şekilde etkiler. Visual C++ üstbilgi MFC gibi _UNICODE kullandığınızda, ancak bir tanımlandığında Windows üstbilgileri UNICODE kullanın, diğer her zaman tanımlanır.  
   
  İyi bir [Kılavuzu](http://msdn.microsoft.com/library/cc194801.aspx) UTF-16 Unicode'a MBCS bağlantı noktası oluşturma için TCHAR kullanarak mevcut. Biz bu yol seçin. İlk olarak, biz değiştirmek **karakter kümesi** özelliğine **kullanım Unicode karakter kümesi** ve projeyi yeniden derleyin.  
   
@@ -555,7 +556,7 @@ wsprintf(szTmp, "%d.%2.2d.%4.4d", rmj, rmm, rup);
 wsprintf(szTmp, _T("%d.%2.2d.%4.4d"), rmj, rmm, rup);  
 ```  
   
- _T makrosu bir karakter veya UNICODE ve MBCS ayarı bağlı olarak bir wchar_t dize olarak bir dize sabit değeri derleme yapma etkisi yoktur. _T Visual Studio ile tüm dizeleri değiştirmek için önce açın **hızlı Değiştir** (klavye: Ctrl + F) kutusunu veya **dosyalarda Değiştir** (klavye: Ctrl + Shift + H), ardından **kullanım normal İfadeleri** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` değiştirme metin olarak. Bazı dizelerini geçici _T makrosu zaten varsa, bu yordamı, yeniden ekleyecek ve burada istemediğiniz kullandığınızda gibi _T durumlarda bulabilirsiniz `#include`, kullanmak en iyisidir **Değiştir sonraki** yerine  **Tüm değiştirmek**.  
+ _T makrosu olarak bir dize sabit değeri derleme yapma etkisi bir `char` dize veya bir `wchar_t` UNICODE ve MBCS ayarı bağlı olarak bir dize. _T Visual Studio ile tüm dizeleri değiştirmek için önce açın **hızlı Değiştir** (klavye: Ctrl + F) kutusunu veya **dosyalarda Değiştir** (klavye: Ctrl + Shift + H), ardından **kullanım normal İfadeleri** onay kutusu. Girin `((\".*?\")|('.+?'))` arama metni olarak ve `_T($1)` değiştirme metin olarak. Bazı dizelerini geçici _T makrosu zaten varsa, bu yordamı, yeniden ekleyecek ve burada istemediğiniz kullandığınızda gibi _T durumlarda bulabilirsiniz `#include`, kullanmak en iyisidir **Değiştir sonraki** yerine  **Tüm değiştirmek**.  
   
  Bu belirli işlevi [wsprintf](https://msdn.microsoft.com/library/windows/desktop/ms647550.aspx), bu, olası arabellek taşması nedeniyle kullanılmaması önerir için gerçekten Windows üstbilgileri ve belgelere tanımlanır. Boyut için verilen `szTmp` arabellek arabellek için yazılacak tüm verileri tutabilir denetlemek işlev için hiçbir şekilde gelir. Güvenli biz benzer diğer sorunları gidermek CRT için bağlantı noktası oluşturma hakkında sonraki bölüme bakın. İle değiştirerek sona [_stprintf_s](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md).  
   
@@ -573,7 +574,7 @@ _tcscpy(pParentNode->m_szText, strTitle);
   
 ```  
   
- _Tcscpy işlevi, bir dize kopyalama TCHAR strcpy işlevi olan kullanılan olsa bile, ayrılan arabellek char arabelleği. Bu TCHAR için kolayca değiştirilir.  
+ _Tcscpy işlevi, bir dize kopyalama TCHAR strcpy işlevi olan kullanılan olsa bile, ayrıldı arabelleği, bir `char` arabellek. Bu TCHAR için kolayca değiştirilir.  
   
 ```cpp  
 pParentNode->m_szText = new TCHAR[strTitle.GetLength() + 1];  
@@ -581,7 +582,7 @@ _tcscpy(pParentNode->m_szText, strTitle);
   
 ```  
   
- Benzer şekilde, sabit değiştirdik `LPSTR` (dizeye uzun işaretçisi) ve `LPCSTR` (sabit dizeye uzun işaretçisi) için `LPTSTR` (TCHAR dizeye uzun işaretçisi) ve `LPCTSTR` (sabit TCHAR dizeye uzun işaretçisi) sırasıyla tarafından garanti olduğunda bir Derleyici Hatası. Her durumda, ayrı ayrı incelenmesi gerekiyordu çünkü bu tür değişiklik genel Ara ve Değiştir ' kullanarak yapmamak seçtik. Bazı durumlarda, char sürümü, ne zaman belirli Windows A son ekine sahip Windows yapıları kullandığınız iletilerini işleme gibi istenmeyen. Windows API içinde bir sonek ASCII veya ANSI anlamına gelir (ve MBCS için de geçerlidir) ve geniş karakterler veya UTF-16 Unicode W soneki anlamına gelir. Bu adlandırma deseni Windows üstbilgilerinde kullanılır, ancak yalnızca bir MBCS sürümde zaten tanımlı bir işlev Unicode sürümünü eklemek varken de onu Spy ++ kodunda izlenen.  
+ Benzer şekilde, sabit değiştirdik `LPSTR` (dizeye uzun işaretçisi) ve `LPCSTR` (sabit dizeye uzun işaretçisi) için `LPTSTR` (TCHAR dizeye uzun işaretçisi) ve `LPCTSTR` (sabit TCHAR dizeye uzun işaretçisi) sırasıyla tarafından garanti olduğunda bir Derleyici Hatası. Her durumda, ayrı ayrı incelenmesi gerekiyordu çünkü bu tür değişiklik genel Ara ve Değiştir ' kullanarak yapmamak seçtik. Bazı durumlarda, `char` sürüm istedi, ne zaman belirli Windows A son ekine sahip Windows yapıları kullandığınız iletilerini işleme gibi. Windows API içinde bir sonek ASCII veya ANSI anlamına gelir (ve MBCS için de geçerlidir) ve geniş karakterler veya UTF-16 Unicode W soneki anlamına gelir. Bu adlandırma deseni Windows üstbilgilerinde kullanılır, ancak yalnızca bir MBCS sürümde zaten tanımlı bir işlev Unicode sürümünü eklemek varken de onu Spy ++ kodunda izlenen.  
   
  Biz doğru çözümleyen bir sürümünü kullanmak için bir tür değiştirmek zorunda bazı durumlarda (örneğin WNDCLASSA yerine WNDCLASS).  
   

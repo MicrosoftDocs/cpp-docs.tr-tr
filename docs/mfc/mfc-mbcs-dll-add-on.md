@@ -1,7 +1,7 @@
 ---
 title: MFC MBCS DLL eklentisi | Microsoft Docs
 ms.custom: 
-ms.date: 08/20/2017
+ms.date: 1/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-windows
@@ -11,28 +11,27 @@ dev_langs: C++
 helpviewer_keywords:
 - MBCS
 - MFC
-ms.assetid: bebec0ff-e019-42ca-b5df-8c218ac5b54a
-caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 176ed47b4d6a799cf53d2a1cea8cb232f1c2c4aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: HT
+ms.openlocfilehash: d6f134110ff95956cc37d6e038a680ff27cbc298
+ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="mfc-mbcs-dll-add-on"></a>MFC MBCS DLL Eklentisi
- Birden çok baytlı DLL'leri bir MFC projesine sahip Visual Studio 2015'te oluşturmak için gereksinim duyduğunuz **karakter kümesi** özelliğini **kullanımı çok baytlı karakter kümesi** veya **ayarlanmamış**.  
 
-**Visual Studio 2013'ün**: DLL karşıdan [Visual Studio 2013 için birden çok baytlı MFC Kitaplığı](https://www.microsoft.com/en-us/download/details.aspx?id=40770).
+MFC desteği ve çok baytlı karakter kümesi (MBCS) başlatılamadığından, 2015 ve 2017 Visual Studio 2013'te Visual Studio yüklemesi sırasında ek bir adım gerektirir.
 
-**Visual Studio 2015**: DLL Visual C++ Kurulum bileşenlerinde yer almaktadır. Visual C++ ve MFC Visual Studio kurulumunda isteğe bağlı yükleme bağlantılardır. MFC yüklendiğinden emin olmak için tercih **özel** kurulumunda ve altında **programlama dilleri**, olduğundan emin olun **Visual C++** ve **Microsoft Foundation C++ sınıfları** seçilir. Visual Studio'nun zaten yüklediyseniz, bir MFC projesine oluşturma girişiminde bulunduğunuzda Visual C++ ve/veya MFC yüklemeniz istenir.  
-  
-**Visual Studio 2017**: DLL yüklü olan **C++ ile masaüstü geliştirme** seçtiğinizde iş yükü **MFC ve ATL desteği** gelen **isteğe bağlı bileşenler** bölmesi.
+**Visual Studio 2013**: varsayılan olarak, Visual Studio 2013'te yüklü MFC kitaplıkları yalnızca Unicode geliştirme desteği. MBCS dll bir MFC projesine sahip Visual Studio 2013'te oluşturmak için gereksinim duyduğunuz **karakter kümesi** özelliğini **kullanımı çok baytlı karakter kümesi** veya **ayarlanmamış**. DLL karşıdan [Visual Studio 2013 için birden çok baytlı MFC Kitaplığı](https://www.microsoft.com/en-us/download/details.aspx?id=40770).
 
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC Kitaplık Sürümleri](../mfc/mfc-library-versions.md)
+**Visual Studio 2015**: hem Unicode ve MBCS MFC DLL'leri Visual C++ Kurulum bileşenleri dahil, ancak MFC varsayılan olarak yüklü olmayan dil desteği. Visual C++ ve MFC Visual Studio kurulumunda isteğe bağlı yükleme bağlantılardır. MFC yüklendiğinden emin olmak için tercih **özel** kurulumunda ve altında **programlama dilleri**, olduğundan emin olun **Visual C++** ve **Microsoft Foundation C++ sınıfları** seçilir. Visual Studio'nun zaten yüklediyseniz, bir MFC projesine oluşturma girişiminde bulunduğunuzda Visual C++ ve/veya MFC yüklemeniz istenir.
+
+**Visual Studio 2017**: Unicode ve MBCS MFC DLL'leri birlikte yüklenen **C++ ile masaüstü geliştirme** seçtiğinizde iş yükü **MFC ve ATL desteği** gelen  **İsteğe bağlı bileşenler** bölmesi. Yüklemenizi bu bileşenlerin içermiyorsa, Yükleyiciden başlatabilirsiniz **yeni projeler** kullanarak iletişim **açık Visual Studio yükleyicisi** bağlantı.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[MFC Kitaplık Sürümleri](../mfc/mfc-library-versions.md)
 
