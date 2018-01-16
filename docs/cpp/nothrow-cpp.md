@@ -1,7 +1,7 @@
 ---
 title: nothrow (C++) | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/03/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-language
@@ -13,45 +13,50 @@ helpviewer_keywords:
 - __declspec keyword [C++], nothrow
 - nothrow __declspec keyword
 ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
-caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: a6200a8207fdf25b533c7db7e05247797592744e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5e0f5f40fbcfcb95952fd956060801e862e9cdaf
+ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
-**Microsoft özel**  
-  
- İşlevlerin bildiriminde kullanılabilen `__declspec` genişletilmiş özniteliği.  
-  
+
+**Microsoft Specific**
+
+İşlevlerin bildiriminde kullanılabilen `__declspec` genişletilmiş özniteliği.
+
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-return-type __declspec(nothrow) [call-convention] function-name ([argument-list])  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu öznitelik, derleyiciye bildirilen işlevlerin ve çağırdığı işlevlerin hiçbir zaman özel durum oluşturmayacağını bildirir. Artık varsayılan olarak zaman uyumlu özel durum işleme modeliyle, derleyici böyle bir işlevde geriye doğru izlenemeyen nesnelerin kullanım süresini izleme mekaniklerini ortadan kaldırabilir ve kod boyutunu önemli ölçüde azaltabilir. Aşağıdaki önişlemci yönergesi dikkate alındığında, aşağıdaki üç işlev bildirimi eşdeğerdir:  
-  
-```  
-#define WINAPI __declspec(nothrow) __stdcall   
-  
-void WINAPI f1();  
-void __declspec(nothrow) __stdcall f2();  
-void __stdcall f3() throw();  
-```  
-  
- `void __declspec(nothrow) __stdcall f2();` kullanımı, bir işlevler kümesinde kolayca `#define` belirtmek için `nothrow` deyimi tarafından gösterilen gibi bir API tanımı kullanabilmenizi sağlar. Üçüncü `, void __stdcall f3() throw();` bildirimi, C++ standardı tarafından tanımlanan sözdizimidir.  
-  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__declspec](../cpp/declspec.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+> *dönüş türü* __declspec(nothrow) [*arama kuralı*] *işlev adı* ([*bağımsız değişken listesi*])
+
+## <a name="remarks"></a>Açıklamalar
+
+Tüm yeni kod kullanmanızı öneririz [noexcept](noexcept-cpp.md) işleci yerine `__declspec(nothrow)`.
+
+Bu öznitelik, derleyiciye bildirilen işlevlerin ve çağırdığı işlevlerin hiçbir zaman özel durum oluşturmayacağını bildirir. Ancak, yönergesi uygulamaz. Diğer bir deyişle, hiçbir zaman neden [std::terminate](../standard-library/exception-functions.md#terminate) çağrılacak, aksine `noexcept`, veya **std:c ++ 17** mod (Visual Studio 2017 15,5 ve sonraki sürümleri), `throw()`.
+
+Artık varsayılan olarak zaman uyumlu özel durum işleme modeliyle, derleyici böyle bir işlevde geriye doğru izlenemeyen nesnelerin kullanım süresini izleme mekaniklerini ortadan kaldırabilir ve kod boyutunu önemli ölçüde azaltabilir. Aşağıdaki önişlemci yönergesi verildiğinde, aşağıdaki üç işlev bildirimleri de eşdeğer **/Std: c ++ 14** modu:
+
+```cpp
+#define WINAPI __declspec(nothrow) __stdcall
+
+void WINAPI f1();
+void __declspec(nothrow) __stdcall f2();
+void __stdcall f3() throw();
+```
+
+İçinde **/Std: c ++ 17** modu, `throw()` başkalarına kullanan eşdeğer olmayan `__declspec(nothrow)` neden olduğundan `std::terminate` işlevinden bir özel durum olursa çağrılacak.
+
+`void __stdcall f3() throw();` Bildirimi C++ Standart tarafından tanımlanan sözdizimini kullanır. C ++ 17 içinde `throw()` anahtar sözcük kullanım dışı.
+
+**SON Microsoft özel**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__declspec](../cpp/declspec.md)  
+[noexcept](noexcept-cpp.md)  
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
