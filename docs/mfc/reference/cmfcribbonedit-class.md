@@ -84,11 +84,12 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2aa9f57fd95f31181f62892349aff7d7223fd786
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 43a497b3eeec48c22d688f4974efcb3d2f511446
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
 Şerit çubuğunda bulunan bir düzenleme denetimi uygular.  
@@ -680,4 +681,4 @@ void SetWidth(
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [Sınıfları](../../mfc/reference/mfc-classes.md)   
  [CMFCRibbonButton sınıfı](../../mfc/reference/cmfcribbonbutton-class.md)   
- [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md)
+ [CMFCRibbonBar Sınıfı](../../mfc/reference/cmfcribbonbar-class.md)

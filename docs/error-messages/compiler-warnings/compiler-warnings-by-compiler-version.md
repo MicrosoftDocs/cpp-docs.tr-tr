@@ -16,11 +16,12 @@ caps.latest.revision: "0"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c0f4a4aedc85cade0d5b7b895e5998733460a7ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: 52513b156ee8c86d8358be84a27c28d15eb86641
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları  
   
@@ -362,7 +363,7 @@ C4678|temel sınıfı*bildirimi*'den az erişilebilir olduğundan'*adı*'
 C4679|'*açıklama*': üye içe aktarılamıyor
 C4687|'*türü*': korumalı bir Özet sınıf bir arabirim uygulayamaz '*türü*'
 C4688|'*adı*': kısıtlama listesini içeren derleme özel türü '*bildirimi*'
-C4690|[emitidl (pop)]: iter'den daha fazla POP
+C4690|[ emitidl( pop ) ]: iter'den daha fazla POP
 C4691|'*türü*': başvuru türü bekleniyordu başvurulmayan *Modülü* '*açıklama*', bunun yerine kullanılan geçerli çeviri biriminde tanımlanan türü
 C4692|'*adı*': İmza özel olmayan üye olarak içeren derleme özel yerel tür '*bildirimi*'
 C4693|'*türü*': korumalı bir Özet sınıf hiçbir örnek üyesinin olamaz*adı*'
@@ -605,4 +606,4 @@ C4998|BEKLENTİ başarısız oldu: *açıklama*(*numarası*)
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)  
 [Varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)  
-[Uyarı](../../preprocessor/warning.md)  
+[warning](../../preprocessor/warning.md)  

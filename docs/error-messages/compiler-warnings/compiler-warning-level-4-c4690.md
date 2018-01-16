@@ -15,14 +15,15 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 9bf90ed2f977dfa0645458d17f6399984b6a8267
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.workload: cplusplus
+ms.openlocfilehash: e1307a571e38cf7e4ef81f7c9c08a07bf5c833c0
+ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 12/21/2017
 ---
 # <a name="compiler-warning-level-4-c4690"></a>Derleyici Uyarısı (düzey 4) C4690
-[emitidl (pop)]: iter'den daha fazla POP  
+[ emitidl( pop ) ]: iter'den daha fazla POP  
   
  [Emitidl](../../windows/emitidl.md) özniteliği, bu gönderilen bir kez daha Sil'i.  
   
