@@ -20,11 +20,11 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 86b12604a5348c3a1aabb33c7e13a4e7a3c57932
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ba64cf2e866579b3377e57445c98eb9a436a1edd
+ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)
 
@@ -53,6 +53,7 @@ Bunlar `/Zc` derleyici seçenekleri:
 |[rvalueCast\[-\]](zc-rvaluecast-enforce-type-conversion-rules.md)|Standart C++ açık tür dönüştürme kurallarını zorlama (varsayılan olarak kapalıdır).|
 |[sizedDealloc\[-\]](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)|C ++ 14 küresel ölçekli ayırmayı kaldırma işlevleri etkinleştir (üzerinde varsayılan olarak).|
 |[strictStrings\[-\]](zc-strictstrings-disable-string-literal-type-conversion.md)|Devre dışı bırak sabit değer dizesi için `char*` veya `wchar_t*` dönüştürme (varsayılan olarak kapalıdır).|
+|[Üçlü\[-\]](zc-ternary.md)|İşlenen türleri koşullu işleç kurallarında zorlamak (varsayılan olarak kapalıdır).|
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|İş parçacığı yerel statik başlatma etkinleştir (üzerinde varsayılan olarak).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|Varsayın `operator new` hatada oluşturur (varsayılan olarak kapalıdır).|
 |[trigrafları\[-\]](zc-trigraphs-trigraphs-substitution.md)|Trigrafları (varsayılan olarak geçersiz, kapalı) etkinleştirin.|

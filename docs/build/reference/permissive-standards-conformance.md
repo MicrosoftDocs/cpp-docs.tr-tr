@@ -18,11 +18,11 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 90ff6d2be6174f32d7d93252ebd8b693b422076d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da744d2a037d865ddd0028e59ef3ba3c56d3bdd7
+ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="permissive--standards-conformance"></a>/ izin veren-(standartları uyumluluğu)
 
@@ -42,7 +42,7 @@ Varsayılan olarak, **/ izin veren-** seçeneği, Visual Studio 2017 sürüm 15,
 
 **/ İzin veren-** seçeneği ayarlar [/ZC: strictstrings](../../build/reference/zc-conformance.md) ve [/Zc:rvalueCast](../../build/reference/zc-conformance.md) uyumlu davranış seçenekleri. Bunlar varsayılan uyumsuz davranışı için. Belirli geçirebilirsiniz **/Zc** sonra seçenekleri **/ izin veren-** bu davranışı geçersiz kılmak için komut satırında.
 
-Visual Studio 2017 sürüm 15.3, derleyici başında sürümlerinde **/ izin veren-** seçeneği ayarlar **/Zc:ternary** seçeneği. Derleyici iki aşamalı adı araması gereksinimlerini daha fazla uygular. Zaman **/ izin veren-** seçeneği olarak ayarlanmışsa, derleyici şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlayan işlevi ve sınıf şablonu tanımlarını ayrıştırır. Bu sürümde, yalnızca ad Bağımlılık çözümlemesini gerçekleştirilir.
+Visual Studio 2017 sürüm 15.3, derleyici başında sürümlerinde **/ izin veren-** seçeneği ayarlar [/Zc:ternary](../../build/reference/zc-ternary.md) seçeneği. Derleyici iki aşamalı adı araması gereksinimlerini daha fazla uygular. Zaman **/ izin veren-** seçeneği olarak ayarlanmışsa, derleyici şablonlarında kullanılan bağımlı ve bağımlı olmayan adları tanımlayan işlevi ve sınıf şablonu tanımlarını ayrıştırır. Bu sürümde, yalnızca ad Bağımlılık çözümlemesini gerçekleştirilir.
 
 Ortama özgü Uzantılar ve standart kadar uygulama bırakır dil alanları etkilenmez **/ izin veren-**. Örneğin, Microsoft'a özgü `__declspec`, çağırma ve yapılandırılmış özel durum işleme anahtar sözcükler ve derleyici özgü pragma yönergeleri veya öznitelikleri değil bayrağı derleyici tarafından **/ izin veren-** modu.
 

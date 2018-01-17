@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 72106bd363987d39fb11c9ec1a6d3fd0ceb5665d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 721dd39cf8cda6277eb129f259b7ede2d9f0da28
+ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++'ta açık klasörü projeler
 Visual Studio 2017, kaynak dosyaları klasörünü açın ve hemen kodlama gözatma, yeniden düzenleme, hata ayıklama, IntelliSense desteği ile başlayın ve benzeri olanak tanıyan "Klasörünü aç" özelliği sunmaktadır. Hiçbir .sln veya .vcxproj dosyalar yüklenir; Gerekirse, özel görevler oluşturun ve parametreleri basit .json dosyalar ile başlatma olarak belirtebilirsiniz. Klasör Aç gücü, yalnızca dosyaların kaybolmasını koleksiyonları, ancak de ayrıca neredeyse tüm yapı sistem, CMake Ninja, QMake (Qt projelerde), gyp, SCons, Gradle, Buck, marka ve çok çeşitli şimdi Visual C++ destekleyebilir. 
@@ -39,8 +39,8 @@ Visual C++'da herhangi bir yapı sistemini kullanın ve hala avantajlarını Vis
 |||
 |-|-|
 |CppProperties.json|Tarama için özel yapılandırma bilgilerini belirtin. Bu dosya, gerekirse, kök proje klasörünüzde oluşturun.|
-|Launch.vs.JSON|Komut satırı bağımsız değişkenleri belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **hata ayıklama ve başlatma ayarları**.|
-|Tasks.vs.JSON|Özel derleme komutları ve derleyici anahtarları belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **yapılandırma görevleri**.|
+|launch.vs.json|Komut satırı bağımsız değişkenleri belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **hata ayıklama ve başlatma ayarları**.|
+|tasks.vs.json|Özel derleme komutları ve derleyici anahtarları belirtin. Üzerinden erişilen **Çözüm Gezgini** bağlam menüsü öğesini **yapılandırma görevleri**.|
 
 ### <a name="configure-intellisense-with-cpppropertiesjson"></a>IntelliSense CppProperties.json ile yapılandırma
 IntelliSense ve göz atma davranışlarına kısmen tanımlar etkin yapı yapılandırmasına bağlıdır # yolları, derleyici anahtarları ve diğer parametreleri include. Varsayılan olarak, Visual Studio hata ayıklama ve yayın yapılandırmaları sağlar. Bazı projeler için IntelliSense ve göz atma özellikleri tam olarak kodunuzu kavrama sırayla özel yapılandırma oluşturmak gerekebilir. Yeni bir yapılandırma tanımlamak için kök klasöründe CppProperties.json adlı bir dosya oluşturun. Aşağıda bir örnek verilmiştir:
@@ -71,20 +71,131 @@ Bir yapılandırma aşağıdaki özelliklerden herhangi biri olabilir:
 |`forcedInclude`|Her derleme biriminde otomatik olarak eklenecek üstbilgi (eşler için /FI için MSVC veya - clang için dahil)|
 |`undefines`|Tanımsız (maps) MSVC /U için olacak şekilde makroları listesi|
 |`intelliSenseMode`|kullanılacak IntelliSense altyapısı. Mimari belirli çeşitleri MSVC, gcc veya Clang belirtebilirsiniz:
-- MSVC x86 (varsayılan)
-- MSVC x64
-- MSVC arm
-- Windows clang x86
-- Windows clang x64
-- Windows clang arm
-- Linux x64
-- Linux x86
-- Linux arm
+- msvc-x86 (default)
+- msvc-x64
+- msvc-arm
+- windows-clang-x86
+- windows-clang-x64
+- windows-clang-arm
+- Linux-x64
+- Linux-x86
+- Linux-arm
 - gccarm
 
-CppProperties.json destekler ortam değişkeni genişletmesini yolları ve diğer özellik değerlerini içerir. Sözdizimi `${env.FOODIR}` bir ortam değişkeni genişletmek için `%FOODIR%`.
+#### <a name="environment-variables"></a>Ortam değişkenleri
+CppProperties.json destekler sistem ortam değişkeni genişletmesini yolları ve diğer özellik değerlerini içerir. Sözdizimi `${env.FOODIR}` bir ortam değişkeni genişletmek için `%FOODIR%`. Aşağıdaki sistem tarafından tanımlanan değişkenler de desteklenir:
 
-Ayrıca bu dosya içinde aşağıdaki yerleşik makroları erişim sahibi:
+|Değişken adı|Açıklama|  
+|-----------|-----------------|
+|vsdev|Varsayılan Visual Studio ortamı|
+|msvc_x86|X86 kullanarak x86 için derleme araçları|
+|msvc_arm|X86 kullanarak ARM için derleme araçları|
+|msvc_arm64|X86 kullanarak derleme ARM64 için Araçlar|
+|msvc_x86_x64|X86 kullanarak derleme AMD64 için Araçlar|
+|msvc_x64_x64|AMD64 için 64-bit araçlarını kullanarak derleme|
+|msvc_arm_x64|64-bit araçlarını kullanarak ARM için derleme|
+|msvc_arm64_x64|Derleme ARM64 için 64-bit araçlarını kullanma|
+
+Linux iş yükü yüklendiğinde, Linux ve WSL uzaktan hedeflemek için aşağıdaki ortamlarda kullanılabilir:
+
+|Değişken adı|Açıklama|  
+|-----------|-----------------|
+|linux_x86|Hedef x86 Linux uzaktan|
+|linux_x64|Hedef x64 Linux uzaktan|
+|linux_arm|ARM Linux uzaktan hedef|
+
+Özel ortam değişkenleri CppProperties.json ya da genel tanımlayabilirsiniz veya başına yapılandırma. Aşağıdaki örnekte nasıl varsayılan ve özel ortam değişkenleri bildirilen ve kullanılabilecek gösterir. Genel **ortamları** özellik bildiren adlı bir değişkende **INCLUDE** tarafından herhangi bir yapılandırma kullanılabilir:
+
+```json
+{
+  // The "environments" property is an array of key value pairs of the form
+  // { "EnvVar1": "Value1", "EnvVar2": "Value2" }
+  "environments": [
+    {
+      "INCLUDE": "${workspaceRoot}\\src\\includes"
+    }
+  ],
+ 
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        // Inherit the MSVC 32-bit environment and toolchain.
+        "msvc_x86"
+      ],
+      "name": "x86",
+      "includePath": [
+        // Use the include path defined above.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x86"
+    },
+    {
+      "inheritEnvironments": [
+        // Inherit the MSVC 64-bit environment and toolchain.
+        "msvc_x64"
+      ],
+      "name": "x64",
+      "includePath": [
+        // Use the include path defined above.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x64"
+    }
+  ]
+}
+```
+Ayrıca tanımlayabilirsiniz bir **ortamları** özelliği içinde bir yapılandırma olan yalnızca bu yapılandırma için geçerlidir ve aynı ada sahip herhangi bir genel değişkeni için geçersiz kılar. Aşağıdaki örnekte, x64 yapılandırmasını yerel tanımlar **INCLUDE** genel değerini geçersiz kılar değişkeni:
+
+```json
+{
+  "environments": [
+    {
+      "INCLUDE": "${workspaceRoot}\\src\\includes"
+    }
+  ],
+ 
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "msvc_x86"
+      ],
+      "name": "x86",
+      "includePath": [
+        // Use the include path defined in the global environments property.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x86"
+    },
+    {
+      "environments": [
+        {
+          // Append 64-bit specific include path to env.INCLUDE.
+          "INCLUDE": "${env.INCLUDE};${workspaceRoot}\\src\\includes64"
+        }
+      ],
+ 
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64",
+      "includePath": [
+        // Use the include path defined in the local environments property.
+        "${env.INCLUDE}"
+      ],
+      "defines": [ "WIN32", "_DEBUG", "UNICODE", "_UNICODE" ],
+      "intelliSenseMode": "msvc-x64"
+    }
+  ]
+}
+```
+
+Tüm özel ve varsayılan ortam değişkenlerini de tasks.vs.json ve launch.vs.json de kullanılabilir.
+
+#### <a name="macros"></a>Makrolar
+Aşağıdaki yerleşik makroları CppProperties.json içinde erişebilirsiniz:
 |||
 |-|-|
 |`${workspaceRoot}`| çalışma klasörü tam yolu|
@@ -138,7 +249,7 @@ Yapı komut dosyaları veya diğer dış işlemleri doğrudan IDE'de görevler o
 
 ![Klasör Aç yapılandırma görevleri](media/open-folder-config-tasks.png)
 
-Bu oluşturur (veya açar) `tasks.vs.json` Visual Studio, kök proje klasöründe oluşturan .vs klasördeki dosya. Bu dosyada herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görev tanımlayan bir tasks.vs.json dosyası gösterir. `taskName`görünen adı bağlam menüsünde tanımlar. `appliesTo`komut gerçekleştirilebilir hangi dosyaların tanımlar. `command` Özelliği (cmd.exe Windows) konsol yolunu tanımlar COMSPEC ortam değişkeni anlamına gelmektedir. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
+Bu oluşturur (veya açar) `tasks.vs.json` Visual Studio, kök proje klasöründe oluşturan .vs klasördeki dosya. Bu dosyada herhangi bir rastgele görev tanımlayın ve ondan çağırma **Çözüm Gezgini** bağlam menüsü. Aşağıdaki örnek, tek bir görev tanımlayan bir tasks.vs.json dosyası gösterir. `taskName`görünen adı bağlam menüsünde tanımlar. `appliesTo`komut gerçekleştirilebilir hangi dosyaların tanımlar. `command` Özelliği (cmd.exe Windows) konsol yolunu tanımlar COMSPEC ortam değişkeni anlamına gelmektedir. CppProperties.json veya CMakeSettings.json bildirilen ortam değişkenlerini de başvurabilirsiniz. `args` Özelliği çağrılacak komut satırını belirtir. `${file}` Makrosu alır seçili dosyasında **Çözüm Gezgini**. Aşağıdaki örnek şu anda seçili .cpp dosyasının dosya adını görüntüler.
 
 ```json
 {
@@ -155,6 +266,8 @@ Bu oluşturur (veya açar) `tasks.vs.json` Visual Studio, kök proje klasöründ
 }
 ```
 Tasks.vs.JSON kaydedildikten sonra klasördeki tüm .cpp dosyasına sağ tıklayın, seçin **Yankı filename** bağlam menüsünden ve dosya adı çıktı penceresinde görüntülenen bakın.
+
+
 
 #### <a name="appliesto"></a>appliesTo
 Görevler için herhangi bir dosya veya klasör adını belirterek oluşturabileceğiniz `appliesTo` alan, örneğin `"appliesTo" : "hello.cpp"`. Aşağıdaki dosya maskeleri değerleri olarak kullanılabilir:
