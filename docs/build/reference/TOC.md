@@ -142,6 +142,7 @@
 ##### [/Zc:rvalueCast (Tür dönüştürme kurallarını zorla)](zc-rvaluecast-enforce-type-conversion-rules.md)
 ##### [/Zc:sizedDealloc (Global Boyutlu Ayırmayı Kaldırma İşlevlerini Etkinleştir)](zc-sizeddealloc-enable-global-sized-dealloc-functions.md)
 ##### [/Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)](zc-strictstrings-disable-string-literal-type-conversion.md)
+##### [/Zc:ternary (Koşullu işleç kurallarını zorla)](zc-ternary.md)
 ##### [/Zc:threadSafeInit  (İş Parçacığı Güvenli Yerel Statik Başlatma)](zc-threadsafeinit-thread-safe-local-static-initialization.md)
 ##### [/Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)](zc-throwingnew-assume-operator-new-throws.md)
 ##### [/Zc:trigraphs (Trigrafları Değiştirme)](zc-trigraphs-trigraphs-substitution.md)
