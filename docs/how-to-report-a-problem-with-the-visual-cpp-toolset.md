@@ -1,9 +1,6 @@
 ---
 title: "Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs"
-ms.custom: 
-ms.date: 1/03/2018
-ms.reviewer: 
-ms.suite: 
+ms.date: 1/11/2018
 ms.technology: cpp
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -12,31 +9,31 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: b1a5cdb873d536702ecf8536d9a9e7c0205cc923
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.openlocfilehash: 697b5dc087aa61280922d5574001838ea5ff1dcb
+ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset"></a>Visual C++ araç ile ilgili bir sorun bildirme
 
-Visual C++ Derleyici, bağlayıcı veya diğer araçlar sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz.
+Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz.
 
-Bir sorun hakkında bilmeniz bize en iyi yolu, bize sorunla karşılaşıldı programınız ve kendi makinelerde problemi kullanırız biraz kod nasıl oluşturmakta olduğunuz hakkında ayrıntılar açıklamasını içeren bir rapor göndermektir. Bu bilgiler, hızlı bir şekilde sorun var ve ortamınız için yerel değil doğrulayın, derleyici ve nedenini tanılamak için diğer sürümleri etkileyip etkilemediğini belirlemek olanak sağlar.
+Bir sorun hakkında bilmeniz bize en iyi yolu bize programınızı oluşturmakta olduğunuz nasıl ve bir hakkında hatayla karşılaşıldı, Ayrıntılar sorun açıklamasını içeren bir rapor göndermektir *yeniden oluşturma*, yeniden oluşturmak için kullanabileceğiniz eksiksiz bir test çalışması sorunu kendi makinelerde. Bu bilgiler sorunu bizim kodda var ve ortamınız için derleyici'nin diğer sürümlerini etkiler olup olmadığını belirlemek ve nedenini tanılamak için yerel değil hızla doğrulamamıza olanak sağlar.
 
 Bu belgede, okumanız
 
-- [Raporunuzu hazırlamak nasıl](#prepare), ve ne iyi bir rapor sağlar.
+- [Raporunuzu hazırlamak nasıl](#how-to-prepare-your-report), ve ne iyi bir rapor sağlar.
 
-- [Bir yeniden oluşturma oluşturmak nasıl](#generate)ve repros farklı türde.
+- [Bir yeniden oluşturma oluşturmak nasıl](#how-to-generate-a-repro)ve repros farklı türde.
 
-- [Raporunuzu gönderme yolları](#send), ve bunları farklı kılan.
+- [Raporunuzu gönderme yolları](#ways-to-send-your-report), ve bunları farklı kılan.
 
 Raporlarınızı bize ve sizin gibi diğer geliştiriciler için önemlidir. Visual C++ geliştirmemize yardımcı olduğunuz için teşekkür ederiz!
 
-## <a name="prepare"></a>Raporunuzu hazırlama
+## <a name="how-to-prepare-your-report"></a>Raporunuzu hazırlama
 
-Yüksek kaliteli rapor oluşturma önemlidir çünkü kendi oldukça zor tam bilgisi olmadan kendi makinelerde karşılaştığınız sorunu yeniden oluşturma. Daha iyi raporunuzu, daha etkili bir şekilde biz olan mümkün yeniden oluşturun ve sorunu tanılamak.
+Tam bilgisi olmadan kendi makinelerde karşılaştığınız sorunu yeniden oluşturmak oldukça zor olduğundan, yüksek kaliteli rapor oluşturma önemlidir. Daha iyi raporunuzu, daha etkili bir şekilde biz olan mümkün yeniden oluşturun ve sorunu tanılamak.
 
 En azından raporunuzu içermelidir
 
@@ -46,58 +43,45 @@ En azından raporunuzu içermelidir
 
 - Karşılaşılan sorunla ayrıntılı bir açıklaması.
 
-- 'Yeniden oluşturma': kaynak kodu sorun gösterilmektedir.
+- Bir yeniden oluşturma: sorunu gösteren tam, Basitleştirilmiş, kendi içinde bulunan kaynak kodu örneği.
 
-İçin okumaya öğrenin daha hakkındaki belirli bilgileri biz gereksinimini ve burada bulabilirsiniz.
+İçin okumaya ihtiyacımız belirli bilgiler hakkında daha fazla bilgi ve burada bulabilirsiniz ve iyi bir yeniden oluşturma oluşturma.
 
 ### <a name="the-toolset-version"></a>Araç takımının sürüm
 
-Böylece biz, yeniden oluşturma aynı araç takımı karşı bizim makinelerde test kullandığınız araç takımı tam sürüm bilgilerini ihtiyacımız var. Sorunu yeniden, bu bilgileri bize Ayrıca hangi bir araç takımı Sergi aynı sorun sürümlerinin araştırmak için bir başlangıç noktası sunar.
+Tam sürüm bilgileri ve sorunu neden olur ve böylece, yeniden oluşturma aynı araç takımı karşı bizim makinelerde sınayabilirsiniz araç takımı hedef mimarisini ihtiyacımız var. Sorunu yeniden, bu bilgileri bize Ayrıca hangi bir araç takımı Sergi aynı sorun sürümlerinin araştırmak için bir başlangıç noktası sunar.
 
 #### <a name="to-report-the-full-version-of-the-compiler-youre-using"></a>Kullanmakta olduğunuz derleyici'nın tam sürümünü bildirmek için
 
-1. Klavyenizde Windows tuşuna basın ve yazmaya başlayın `Developer Command Prompt`.
+1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisi ile eşleşir. Örneğin, Visual Studio 2017 üzerinde x64 için x64 kullanarak yapılandırdıysanız hedefleri seçin **x64 VS 2017 için yerel Araçları Komut İstemi**. Daha fazla bilgi için bkz: [Geliştirici komut istemi kısayolları](build/building-on-the-command-line.md#developer-command-prompt-shortcuts).
 
-1. Seçin **Geliştirici komut istemi** Visual Studio sürümü ile eşleşen sürümünü kullanmakta olduğunuz eşleşmeleri listesinde göründüğünde.
-
-1. İçinde **Geliştirici komut istemi** konsolunda, aşağıdaki komutu girin `cl /Bv /CLR`.
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl**.
 
 Çıktı aşağıdakine benzer görünmelidir:
 
 ```Output
-C:\Compiler>cl /Bv /CLR
-Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40209
-for Microsoft (R) .NET Framework version 4.00.30319.34014
+C:\Users\username\Source>cl
+Microsoft (R) C/C++ Optimizing Compiler Version 19.10.25017 for x64
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
-Compiler Passes:
- C:\WinCComp\binaries.x86chk\bin\i386\cl.exe:        Version 18.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\c1.dll:        Version 18.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\c1xx.dll:      Version 18.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\c2.dll:        Version 18.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\link.exe:      Version 12.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\mspdb120.dll:  Version 12.00.40209.0
- C:\WinCComp\binaries.x86chk\bin\i386\1033\clui.dll: Version 18.00.40209.0
- Common Language Runtime:                            Version  4.00.30319.34014
-
-cl : Command line error D8003 : missing source filename
+usage: cl [ option... ] filename... [ /link linkoption... ]
 ```
 
 Kopyalayabilir ve tüm çıktı raporunuzu yapıştırabilirsiniz.
 
 ### <a name="the-command-line"></a>Komut satırı
 
-Tam biz bunu tam olarak aynı şekilde bizim makinelerde oluşturabilmeleri kodunuzu oluşturmak için kullanılan komut satırı (cl.exe ve bağımsız değişkenler) ihtiyacımız var. Karşılaşılan sorunla yalnızca belirli bir bağımsız değişken veya bağımsız değişkenler bileşimi ile oluştururken olabileceğinden, bu önemlidir.
+Tam biz bunu tam olarak aynı şekilde bizim makinelerde oluşturabilmeleri, kodunuzu oluşturmak için kullanılan komut satırı (cl.exe ve tüm bağımsız değişkenler) ihtiyacımız var. Karşılaşılan sorunla yalnızca belirli bir bağımsız değişken veya bağımsız değişkenler bileşimi ile oluştururken olabileceğinden, bu önemlidir.
 
 Bu bilgileri bulmak için en iyi derleme günlüğünde sorunlu hemen sonra yerdir. Bu komut satırı sorunu katkıda bulunan tam olarak aynı bağımsız değişkenler içeriyor sağlar.
 
 #### <a name="to-report-the-contents-of-the-command-line"></a>Komut satırının içeriğini bildirmek için
 
-1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosyası şu konumdadır \\...\Visual Studio *sürüm*\Projects\\*SolutionName*\\*ProjectName*\ Config\\*ProjectName*.tlog\CL.command.1.tlog.
+1. Bulun **CL.command.1.tlog** dosya ve açın. Varsayılan olarak, bu dosya, Belgeler klasöründe bulunan \\Visual Studio *sürüm*\\projeleri\\*SolutionName* \\ *ProjectName*\\*yapılandırma*\\*ProjectName*.tlog\\CL.command.1.tlog, ya da kullanıcı klasörü altında \\Kaynak\\depoları\\*SolutionName*\\*ProjectName*\\*yapılandırma* \\ *ProjectName*.tlog\\CL.command.1.tlog. Başka bir yapı sistem kullanırsanız veya varsayılan konumu projeniz için değiştirdiyseniz, farklı bir konumda olabilir.
 
    Bu dosya içinde bunların her birini ayrı satırlara derlemek için kullanılan komut satırı bağımsız değişkenleri ve ardından kaynak kodu dosyaları adlarını bulabilirsiniz.
 
-1. Sorunun nerede oluştuğunu kaynak kodu dosyasının adını içeren satırı bulun; Satır altındaki karşılık gelen cl.exe komutun ve bağımsız değişkenlerini içerir.
+1. Sorunun nerede oluştuğunu kaynak kodu dosyasının adını içeren satırı bulun; Satır altındaki karşılık gelen cl.exe komut bağımsız değişkenlerini içerir.
 
 Kopyalayın ve tüm komut satırı, rapora yapıştırın.
 
@@ -105,18 +89,37 @@ Kopyalayın ve tüm komut satırı, rapora yapıştırın.
 
 Biz biz bizim makineler aynı etkisini görmek doğrulayabilir karşılaşılan sorunla ayrıntılı bir açıklaması ihtiyacımız; kendi da bazen yararlı bize gerçekleştirmek çalıştığınız ve olmasını beklediğinizi bilmeleri için.
 
-Yeniden oluşturma kodunuzu ve bize yardımcı olabilecek herhangi bir ayrıntıyı sorunu tanılamak anlamanıza yardımcı olmak için gerçekleştirmek çalıştığınız kısa bir açıklaması karşılaştığınız, tüm iş ya gibi, lütfen araç takımı tarafından verilen kesin hata iletileri belirtin. bulunan. Başka bir yerde raporunuzda bulunan bilgileri yinelenen kaçının.
+Lütfen gördüğünüz verilen araç takımı veya tam çalışma zamanı davranışı tam hata iletileri sağlayın. Biz düzgün sorunu çoğaltılamaz olduğunu doğrulamak için bu bilgilere ihtiyacımız var. Lütfen tüm Derleyici çıktısı, yalnızca son hata iletisi içerir. Bildirdiğiniz sorunun açan her şeyi görmek gerekir. Komut satırı derleyicisini kullanarak sorunu çoğaltabilirsiniz olduğunda, o Derleyici çıktısı tercih edilir; IDE ve diğer yapı sistemleri hata iletileri görmek veya yalnızca bir hata iletisi, ilk satırının yakalama filtre uygulayabilir.
+
+Lütfen sorunu derleyici geçersiz kodu kabul eder ve bir tanılama oluşturmaz ise, bu rapor unutmayın.
+
+Bir çalışma zamanı davranışı sorunu bildirmek için program yazdırır ve görmeyi beklediğiniz tam bir kopyasını içerir. İdeal olarak, bu çıkış deyiminde kendisi, örneğin, gömülü olduğu `printf("This should be 5: %d\n", actual_result);`. Programınızı kilitleniyor veya askıda kalır, bu da söz.
+
+Bize yardımcı olabilecek herhangi bir ayrıntıyı, tüm iş bulduğunuz ya gibi karşılaştığınız sorunu tanılamak ekleyin. Başka bir yerde raporunuzda bulunan bilgileri yinelenen kaçının.
 
 ### <a name="the-repro"></a>Yeniden oluşturma
 
-İhtiyacımız bir *yeniden oluşturma*, böylece hata bizim makinelerde üretebileceği sorun gösteren kendi içinde bulunan kaynak kod örneği, karşılaştığınız. Tür karşılaştığınız sorunlar ne tür bir yeniden oluşturma, raporunuza dahil belirler. Uygun bir yeniden oluşturma araştırmak için hiçbir şey sunuyoruz.
+Bir yeniden oluşturma tekrarlanarak karşılaşılan sorunla gösteren tam ve müstakil kaynak kodu örneği olduğunu (Bu nedenle adı). Böylece hata bizim makinelerde üretebileceği bir yeniden oluşturma ihtiyacımız var. Kodu derler ve çalışan ya da derlemek ve çalıştırmak basit bir yürütülebilir dosyayı oluşturmak için kendi başına kullanılmıyorsa, buldunuz sorun için yeterli olmalıdır. Bir yeniden oluşturma bir kod parçacığı değil; tam işlevleri ve sınıfları olması ve tüm gerekli içeren # standart üstbilgi için bile yönergeleri include.
 
-Rapor metninizi kısa, kendi içinde bulunan repros doğrudan dahil edilebilir, ancak büyük kaynak kodu repros rapora eklenmesi gerekir. Bir tek kaynak kodu dosyasına azaltılamaz repros rapora bir .zip dosyasına tüm dosyaları içeren dizini sıkıştırma tarafından paketlenmiş veya benzer ve bağlı olmalıdır. Rapor metindeki asla kaynak kodunda her zaman ek senaryoya özgü ayrıntılar bulunması gerekir.
+#### <a name="what-makes-a-good-repro"></a>İyi bir yeniden oluşturma kılan
 
-Bize sağlayabilir yeniden oluşturma en iyi türde bir *en az yeniden oluşturma*. Bu sorun göstermek için yeterli kodu içeren bir tek, kendi içinde bulunan kaynak kodu (olmadan kullanıcı üstbilgileri başvurular) dosyasıdır. Yalnızca bu formdaki bir yeniden oluşturma sağlayabilir, kaynak kodu dosyasının raporunuza ekleyin; ihtiyacımız kendi tüm.
+İyi bir yeniden oluşturma aşağıdaki gibidir:
 
-Bağımlılıklar olmadan en az bir yeniden oluşturma sorunu sıkıştırmak olamaz, raporunuza içermelidir yeniden oluşturma türü belirlemek için aşağıdaki bölümlere bakın.
+- **En az.** Repros, olabildiğince küçük henüz hala tam olarak karşılaştığınız sorunu gösterir. Repros karmaşık veya gerçekçi olması gerekmez; yalnızca standart veya belgelenmiş derleyici uygulaması ya da tanılama eksik olması durumunda uyumlu kodu, uyumluluğunu değil kodu göstermek ihtiyaç duyar. Sorun göstermek için yeterli kodu içeren basit,-noktaya repros en iyisidir. Lütfen ortadan kaldırmak veya kod basitleştirebilir ve uyumluluğunu kalır ve ayrıca değişmeden sorunu bırakın, bunu yapın. Karşı çalışan kod örnekleri arasında gerekmez. 
 
+- **Kendi içinde yer alan.** Repros gereksiz bağımlılıkları kaçınmalısınız. Lütfen, üçüncü taraf kitaplıklar olmadan sorunu yeniden oluşturup, bunu yapar. Basit çıktı deyimleri yanı sıra tüm kitaplık kodu olmadan sorunu yeniden varsa (örneğin, `puts("this shouldn't compile");`, `std::cout << value;`, ve `printf("%d\n", value);` teşkil), lütfen bunu yapın. Tüm kullanıcı üstbilgileri başvuru olmadan bir tek kaynak kodu dosyasına örnek sıkıştırılmış durumunda idealdir. Biz sorun olası Katılımcısı olarak göz önünde bulundurmanız gereken kod miktarını azaltmak için bize enormously yardımcı olur.
+
+- **En son derleyici sürümü karşı.** Repros en son güncelleştirmeyi Araç Takımı'nın en son sürümünü veya sonraki güncelleştirme veya sonraki büyük yayın, mümkün olduğunda en son ön sürümünü kullanmanız gerekir. Araç takımı eski sürümleri karşılaşabileceğiniz sorunları, daha yeni sürümlerinde çok sık düzeltildi. Düzeltmeler backported olağanüstü durumlarda yalnızca eski sürümlere edinilebilir.
+
+- **Diğer derleyiciler karşı kullanıma** varsa. Taşınabilir C++ kodu ile ilgili repros davranışı diğer derleyiciler karşı mümkünse doğrulamanız gerekir. Standart program doğruluk, sonuçta belirler ve hiçbir derleyici mükemmeldir ancak Clang ve GCC kodunuzu bir tanılama olmadan kabul edin ve MSVC desteklemez, bizim derleyici hatada görüntülemekte olduğunuz olasıdır. (Diğer olasılıklar UNIX ve Windows davranışı ya da C++ standartlar uygulamasını farklı düzeylerde farklılıkları içerir ve benzeri.) Tüm derleyicileri kodunuzu reddederseniz, öte yandan, daha sonra kodunuzu hatalı olduğunu olasıdır. Farklı hata iletilerini görme sorunu kendi başınıza tanılamaya yardımcı olabilir.
+
+   Kodunuzu karşı test etmek için çevrimiçi derleyicileri listesini bulabilirsiniz [çevrimiçi C++ Derleyicileri](https://isocpp.org/blog/2013/01/online-c-compilers) ISO C++ Web sitesi ya da bu seçkin [çevrimiçi C++ Derleyicileri listesi](https://arnemertz.github.io/online-compilers/) github'da. Belirli bazı örnekler [Wandbox](https://wandbox.org/), [derleyici Explorer](https://godbolt.org/), ve [Coliru](http://coliru.stacked-crooked.com/). 
+
+   > [!NOTE]
+   > Microsoft ile çevrimiçi derleyici Web siteleri bağlı değildir. Birçok çevrimiçi derleyici Web sitesi kişisel projeler olarak çalıştırılır ve sitelerin bazıları bu okuyun, ancak bir arama başkalarının kullanabileceğiniz bulmalıdır kullanılamayabilir.
+
+Derleyici sorunlarını bağlayıcı ve kitaplıklarında kendilerini özellikle yolları göster eğilimindedir. Tür karşılaştığınız sorunlar ne tür bir yeniden oluşturma, raporunuza dahil belirler. Uygun bir yeniden oluşturma araştırmak için hiçbir şey sunuyoruz. Burada, karşılaşabileceğiniz sorunları ve her tür sorunları bildirmek için kullanması gereken repros türleri oluşturmak için yönergeler türleri bazılarını bulunmaktadır.
+ 
 #### <a name="frontend-parser-crash"></a>Ön uç (ayrıştırıcı) kilitlenme
 
 Ön uç çökme (Crash) derleyici ayrıştırma işlemi sırasında oluşur. Genellikle, derleyici yayma [önemli hata C1001](error-messages/compiler-errors-1/fatal-error-c1001.md) ve hangi hata oluştu; genellikle bir dosya msc1.cpp Bahsediyor, ancak bu ayrıntı yoksayabilirsiniz kaynak kodu dosya ve satır numarası başvuru.
@@ -144,13 +147,13 @@ INTERNAL COMPILER ERROR in 'd:\o\dev\otools\bin\x64\cl.exe'
     Help menu, or open the Technical Support help file for more information
 ```
 
-#### <a name="backend_crash"></a>Arka uç (kod oluşturma) kilitlenme
+#### <a name="backend-code-generation-crash"></a>Arka uç (kod oluşturma) kilitlenme
 
-Arka uç çökme (Crash) kod derleyici oluşturma aşaması sırasında oluşur. Genellikle, derleyici yayma [önemli hata C1001](error-messages/compiler-errors-1/fatal-error-c1001.md)ve başvuru kaynak kodu dosya ve satır numarası sorunla ilişkili; genellikle bir dosya compiler\utc\src\p2\main.c Bahsediyor, ancak bu ayrıntı yoksayabilirsiniz.
+Arka uç çökme (Crash) kod derleyici oluşturma aşaması sırasında oluşur. Genellikle, derleyici yayma [önemli hata C1001](error-messages/compiler-errors-1/fatal-error-c1001.md)ve değil kaynak kodu dosyasının başvuru ve satır numarası sorunla ilişkili; genellikle dosya derleyici Bahsediyor\\utc\\src\\p2\\main.c, ancak bu ayrıntı yoksayabilirsiniz.
 
-Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros) bağlama zamanı kodu oluşturma (LTCG) kullanıyorsanız veya [ön işlemesi yapılan yeniden oluşturma](#preprocessed-repros) değilse. LTGC etkindir `/GL` cl.exe komut satırı bağımsız değişkeni.
+Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros) bağlama zamanı kodu oluşturma (LTCG) kullanıyorsanız, etkin **/GL** cl.exe komut satırı bağımsız değişkeni. Aksi durumda, Lütfen bir [yeniden oluşturma ön işlemesi yapılan](#preprocessed-repros) yerine.
 
-Bu tür bir kilitlenme LTCG olduğu için örnek derleyici çıktı **değil** kullanılır. Derleyici çıktı bunun gibi görünürse sağlamalıdır bir [ön işlemesi yapılan yeniden oluşturma](#preprocessed-repros).
+Burada, örnek Derleyici çıktısı için bir arka uç kilitlenme LTCG kullanılmaz verilmiştir. Derleyici çıktı bunun gibi görünürse sağlamalıdır bir [ön işlemesi yapılan yeniden oluşturma](#preprocessed-repros).
 
 ```Output
 repro.cpp
@@ -167,14 +170,14 @@ INTERNAL COMPILER ERROR in
     Help menu, or open the Technical Support help file for more information
 ```
 
-Çizgi ile başlayan, **iç derleyici hatası** link.exe değinmektedir yerine cl.exe, LTCG etkindir ve sağlamanız bir [bağlantı yeniden oluşturma](#link-repros). Varsa, not için bir önceki adımda Temizle LTCG derleyici hata iletisinden etkin olup olmadığını ihtiyacınız olabilecek incelemek, derleme kopyaladığınız komut satırı bağımsız değişkenleri oturum `/GL` komut satırı bağımsız değişkeni.
+Çizgi ile başlayan, **iç derleyici hatası** link.exe değinmektedir yerine cl.exe, LTCG etkindir ve sağlamanız bir [bağlantı yeniden oluşturma](#link-repros). Varsa, not için bir önceki adımda Temizle LTCG derleyici hata iletisinden etkin olup olmadığını ihtiyacınız olabilecek incelemek, derleme kopyaladığınız komut satırı bağımsız değişkenleri oturum **/GL** komut satırı bağımsız değişkeni.
 
 #### <a name="linker-crash"></a>Bağlayıcı kilitlenme
 
 Bağlayıcı çökme (Crash) derleyici çalıştıktan sonra bağlama işlemi sırasında oluşur. Genellikle, bağlayıcı yayma [Bağlayıcı araçları hatası LNK1000](error-messages/tool-errors/linker-tools-error-lnk1000.md).
 
 > [!NOTE]
-> Çıkış C1001 söz edilen ya da bağlama zamanı kodu oluşturma içerir oluştuysa, [arka uç (kod oluşturma) kilitlenme](#backend_crash) yerine daha fazla bilgi için.
+> Çıkış C1001 söz edilen ya da bağlama zamanı kodu oluşturma içerir oluştuysa, [arka uç (kod oluşturma) kilitlenme](#backend-code-generation-crash) yerine daha fazla bilgi için.
 
 Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros).
 
@@ -212,88 +215,80 @@ CONTEXT:
   Dr2    = 0000000000000000  Dr7    = 0000000000000000
 ```
 
-Artımlı bağlantılandırma etkindir ve yalnızca ilk bağladıktan sonra kilitlenme oluştu (diğer bir deyişle, yalnızca ilk tam üzerinde sonraki artımlı bağlantılandırma temel bağlama sonra) Lütfen ayrıca nesne (.obj) ve kitaplık bir kopyasını karşılık gelir (.lib) dosyaları belirtin ilk bağlama tamamlandıktan sonra değiştirilen kaynak dosyaları için.
+Artımlı bağlantılandırma etkindir ve yalnızca bir başarılı ilk bağlantı sonra kilitlenme oluştu (diğer bir deyişle, yalnızca ilk tam üzerinde sonraki artımlı bağlantılandırma temel bağlama sonra) Lütfen nesne (.obj) bir kopyasını da sağlar ve kitaplık (.lib) dosyaları ilk bağlantı tamamlandıktan sonra değiştirilen kaynak dosyalarına karşılık gelir.
 
 #### <a name="bad-code-generation"></a>Hatalı kod oluşturma
 
-Hatalı kod oluşturma nadir ancak derleyici yanlışlıkla uygulamanız bu sorunu derleme zamanında algılama yerine çalışma zamanı kilitlenmesine neden olacak yanlış kodu oluşturduğunda gerçekleşir. Hatalı kod oluşturma sonuçlarını yaşıyor sorun düşünüyorsanız, raporunuzu aynı şekilde işlem bir [arka uç (kod oluşturma) kilitlenme](#backend_crash).
+Hatalı kod oluşturma nadir ancak derleyici yanlışlıkla uygulamanız bu sorunu derleme zamanında algılama yerine çalışma zamanı kilitlenmesine neden olacak yanlış kodu oluşturduğunda gerçekleşir. Hatalı kod oluşturma sonuçlarını yaşıyor sorun düşünüyorsanız, raporunuzu aynı şekilde işlem bir [arka uç (kod oluşturma) kilitlenme](#backend-code-generation-crash).
 
-Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros) bağlama zamanı kodu oluşturma (LTCG) kullanıyorsanız veya [ön işlemesi yapılan yeniden oluşturma](#preprocessed-repros) değilse. LTGC etkindir `/GL` cl.exe komut satırı bağımsız değişkeni.
+Bu çökme türü için lütfen bir [bağlantı yeniden oluşturma](#link-repros) bağlama zamanı kodu oluşturma (LTCG) kullanıyorsanız, etkin **/GL** cl.exe komut satırı bağımsız değişkeni. Lütfen bir [yeniden oluşturma ön işlemesi yapılan](#preprocessed-repros) değilse.
 
-## <a name="generate"></a>Bir yeniden oluşturma oluştur
+## <a name="how-to-generate-a-repro"></a>Bir yeniden oluşturma oluşturmak nasıl
 
-Bir yeniden oluşturma, raporlama sorun gösteren bir tam ve müstakil bir kod örneğidir. Bir yeniden oluşturma olan **değil** bir kod parçacığı; oluşturur ve çalıştırır (veya Raporlama sorun tarafından üretilen hataları dışında olur) tam bir örnek olması gerekir. Tüm gerekli içermesi gereken # standart üstbilgi için bile yönergeleri include.
-
-Ayrıca, iyi bir yeniden oluşturma değil
-
-- **En az.** Repros tam olarak karşılaştığınız sorunu hala gösteren sırasında olabildiğince küçük olmalıdır. Repros karmaşık veya gerçekçi olması gerekmez; Basit,-noktaya repros daha iyidir. Karşı çalışır, ancak yalnızca tanım ise olabilir kod örnekleri arasında gerekmez; soruna neden olan kod örneği gereklidir.
-
-- **Kendi içinde yer alan.** Repros gereksiz bağımlılıkları kaçınmalısınız. Lütfen, üçüncü taraf kitaplıklar olmadan sorunu yeniden oluşturup, bunu yapar. Tüm kitaplık kodu sorunsuz yeniden (`std::out`, `printf()` Tamam olan), lütfen bunu yapın. Biz sorun olası Katılımcısı olarak göz önünde bulundurmanız gereken kod miktarını azaltmak için bize enormously yardımcı olur.
-
-- **En son derleyici sürümü karşı.** Repros mümkün olduğunca Araç Takımı'nın en son sürümünü kullanmanız gerekir. Araç takımı eski sürümleri hala karşılaşabileceğiniz sorunları, daha yeni sürümlerinde çok sık düzeltildi.
-
-- **Diğer derleyiciler karşı kullanıma**, uygunsa. Taşınabilir C++ kodu ile ilgili repros davranışı diğer derleyiciler karşı mümkünse doğrulamanız gerekir.
-
-   Bu adım, kodunuzu zaman MSVC Clang ve GCC disagrees olarak doğru veya yanlış olarak ne zaman MSVC, Clang ve GCC kabul olup kodunuzu hata üretir belirlemeye yardımcı olur.
+Sorunun kaynağını izlemenize yardımcı olmak için bir [iyi yeniden oluşturma](#what-makes-a-good-repro) önemlidir. Belirli türde repros için aşağıda açıklanan adımları uygulamadan önce mümkün olduğunca sorun gösteren kod sıkıştırmak deneyin. Ortadan kaldırmak veya bağımlılıkları, gerekli üst bilgilerinin ve kitaplıklarının en aza indirmek ve derleyici seçenekleri ve mümkünse kullanılan önişlemci tanımları sınırlamak deneyin.
 
 Rapor farklı türde sorunları için kullanacağınız repros çeşitli türleri oluşturmak için yönergeler aşağıda verilmiştir.
 
 ### <a name="preprocessed-repros"></a>Önceden işlenmiş repros
 
-Önceden işlenmiş yeniden oluşturma, bir sorunu gösterir ve özgün kaynak dosyasını işleyerek C önişlemci çıktısını oluşturuldu tek kaynak bir dosyadır. Bu işlem Inlines ek kaynağı ve başlık dosyaları bağımlılıkları kaldırmak için üstbilgileri dahil ve makroları, #ifdefs ve yerel ortamınıza bağlı olan diğer önişlemci komutları da giderir.
+A *yeniden oluşturma ön işlemesi yapılan* C önişlemci çıktısını kullanılarak oluşturulan bir sorunu gösterir tek kaynak dosyası **/P** özgün yeniden oluşturma kaynak dosyasını derleyici seçeneği. Bu Inlines ek kaynağı ve başlık dosyaları bağımlılıkları kaldırmak için üstbilgileri dahil ve makroları, #ifdefs ve yerel ortamınıza bağlı olan diğer önişlemci komutları da giderir.
 
 > [!NOTE]
-> Önceden işlenmiş repros az biz genellikle sorun zaten düzelttik olup olmadığını görmek için en son, devam eden bir uygulama yerine isteyeceksiniz çünkü bizim standart kitaplık uygulaması'nda hataları nedeni olabilir sorunlar için uygun olduğunu unutmayın. Bu durumda, verme yeniden oluşturma önişle ve tek bir kaynak dosyası için sorun indiremezsiniz, kodunuzu bir .zip dosyasına veya benzer paketini veya bir IDE projeyi yeniden oluşturma kullanmayı düşünün (bkz [diğer Repros](#other-repros) aşağıda).
+> Önceden işlenmiş repros bizim standart kitaplık uygulaması'nda hataları nedeni olabilir sorunları için yararlı değildir biz genellikle sorun zaten düzelttik olup olmadığını görmek için en son, devam eden bir uygulama yerine isteyeceksiniz. Bu durumda, yeniden oluşturma önişle yok ve azaltırsanız olamaz, tek bir kaynak dosyası, sorunu kodunuzu bir .zip dosyasına veya benzer paketini veya bir IDE projeyi yeniden oluşturma kullanmayı düşünün. Daha fazla bilgi için bkz: [diğer repros](#other-repros).
 
 #### <a name="to-preprocess-a-source-code-file"></a>Kaynak kodu dosyasının önişle için
 
-1. Klavyenizde Windows tuşuna basın ve yazmaya başlayın `Developer Command Prompt`.
+1. Bölümünde açıklandığı gibi yeniden oluşturma oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini bildirmek için](#to-report-the-contents-of-the-command-line).
 
-1. Seçin **Geliştirici komut istemi** Visual Studio sürümü ile eşleşen sürümünü kullanmakta olduğunuz eşleşmeleri listesinde göründüğünde.
+1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisi ile eşleşir.
 
-1. İçinde **Geliştirici komut istemi** konsol penceresinde, aşağıdaki komutu girin `cl /P argumentsfilename.cpp`.
+1. Yeniden oluşturma projenizi içeren dizine geçin.
 
-Önceden işlenmiş (şimdi filename.i) dosyanız olduktan sonra onu emin olmak için iyi bir fikirdir önceden işlenmiş dosyasını kullanarak sorunu hala repros. Kullanabileceğiniz `/TP` önişlemci adımı atlamak için cl.exe söyleyin ve her zamanki gibi derleme yeniden denemek için komut satırı bağımsız değişkeni.
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl /P** *bağımsız değişkenleri* *filename.cpp*, burada *bağımsız değişkenleri* olduğu Yukarıdaki yakalanan bağımsız değişkenlerinin listesi ve *filename.cpp* , yeniden oluşturma kaynak dosyasının adıdır. Bu komutu yeniden oluşturma için kullanılan komut satırı yinelenir ancak önişlemci geçişi sonrasında derleme durdurur ve önceden işlenmiş kaynak koduna çıkarır *filename*. ediyorum.
+
+Önceden işlenmiş dosyasını oluşturduktan sonra onu emin olmak için iyi bir fikirdir önceden işlenmiş dosyasını kullanarak sorunu hala repros.
 
 #### <a name="to-confirm-that-the-error-still-repros-with-the-preprocessed-file"></a>Onaylamak için hata önceden işlenmiş dosyasıyla repros hala
 
-1. Klavyenizde Windows tuşuna basın ve yazmaya başlayın `Developer Command Prompt`.
-
-1. Seçin **Geliştirici komut istemi** Visual Studio sürümü ile eşleşen sürümünü kullanmakta olduğunuz eşleşmeleri listesinde göründüğünde.
-
-1. İçinde **Geliştirici komut istemi** konsol penceresinde, aşağıdaki komutu girin `cl arguments /TP filename.i`.
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **cl** *bağımsız değişkenleri* **/TP** *filename *** .i** cl.exe için bildirmek için C++ kaynak dosyası olarak önceden işlenmiş dosyasını derleyin nerede *bağımsız değişkenleri* yukarıda ancak herhangi biriyle yakalanan bağımsız değişkenleri listesi **/D** ve **/I** bağımsız değişkenleri (Bunlar zaten önceden işlenmiş dosyasında dahil edilmiş olduğundan) kaldırılır; ve nerede *filename *** .i** önceden işlenmiş dosyanızı adıdır.
 
 1. Sorunu yeniden olduğunu onaylayın.
 
-Son olarak, bu yeniden oluşturma raporunuza ekleyin.
+Son olarak, önceden işlenmiş yeniden oluşturma attach *filename*raporunuza .i.
 
 ### <a name="link-repros"></a>Bağlantı repros
 
-Bağlantı yeniden oluşturma topluca bağlama zamanı kodu oluşturma (LTCG) veya bir bağlayıcı kilitlenme içeren bir arka uç kilitlenme gibi bağlantı zaman ortaya çıkan bir sorun göstermek derleme yapıları içeren tek bir dizindir; dahil edilen yapı böylece sorunu yeniden giriş bağlayıcı gerekenler ürünleridir. Bağlantı repros kolayca bağlayıcı tarafından sağlanan özellikleri kullanılarak oluşturulabilir.
+A *yeniden oluşturma bağlantı* tarafından belirtilen bir dizin, bağlayıcı tarafından oluşturulan içeriği **bağlantı\_yeniden oluşturma** ortam değişkeni. Topluca bağlama zamanı kodu oluşturma (LTCG) içeren bir arka uç kilitlenme ya da bir bağlayıcı kilitlenme gibi bağlantı zaman ortaya çıkan bir sorun göstermek derleme yapıları içerir. Bunlar yapıları yapı olan sorunu yeniden böylece giriş bağlayıcı gerekli olanlar. Bağlantı yeniden oluşturma bağlayıcı yerleşik yeniden oluşturma oluşturma özelliğini etkinleştirmek için bu ortam değişkenini kullanarak kolayca oluşturulabilir.
 
 #### <a name="to-generate-a-link-repro"></a>Bağlantı yeniden oluşturma oluşturmak için
 
-1. Bir komut istemi açın ve aşağıdaki komutu girin `mkdir directory` bağlantı yeniden oluşturma için bir dizin oluşturmak için.
+1. Bölümünde açıklandığı gibi yeniden oluşturma oluşturmak için kullanılan komut satırı bağımsız değişkenleri yakalama [komut satırının içeriğini bildirmek için](#to-report-the-contents-of-the-command-line).
 
-1. Link_repro ortam değişkeni, yeni oluşturduğunuz dizine ayarlayın; Aşağıdaki komutu girin `set link_repro=directory`.
+1. Açık **Geliştirici komut istemi** projenizi oluşturmak için kullanılan Visual Studio sürümü ve yapılandırma mimarisi ile eşleşir.
 
-1. Yapı gerçekleştirmek istiyorsanız gelen Visual Studio içinde komut isteminden komutunu girerek başlatın `devenv`. Bu link_repro ortam değişkeninin değerini Visual Studio'ya görünür olmasını sağlar.
+1. Geliştirici komut istemi konsol penceresinde yeniden oluşturma projenizi içeren dizine geçin.
 
-1. Uygulamanızı yapılandırmak ve beklenen sorun oluştu onaylayın.
+1. Girin **mkdir linkrepro** bağlantı yeniden oluşturma için bir dizin oluşturmak için.
 
-1. 3. adımda başlatılan Visual Studio şimdi kapatın.
+1. Aşağıdaki komutu girin **kümesi bağlantı\_yeniden oluşturma linkrepro =** ayarlamak için **bağlantı\_yeniden oluşturma** oluşturduğunuz dizine ortam değişkeni.
 
-1. Link_repro ortam değişkeni temizleyin; komutunu girin`set link_repro=`
+1. Geliştirici komut istemi konsol penceresinde, Visual Studio'da yeniden oluşturma projesi oluşturmak için aşağıdaki komutu girin **devenv**. Bu değeri sağlar **bağlantı\_yeniden oluşturma** ortam değişkenidir Visual Studio'ya görünür. Komut satırında Projeyi derlemek için yeniden oluşturma yapı çoğaltmak için yukarıdaki yakalanan komut satırı bağımsız değişkenlerini kullanın.
 
-Son olarak, tüm bir .zip dosyasına dizin veya benzer sıkıştırarak yeniden oluşturma paketini ve raporunuza ekleyin.
+1. Yeniden oluşturma projeyi oluşturun ve beklenen sorun oluştu onaylayın.
+
+1. Yapı gerçekleştirmek için kullandıysanız Visual Studio'yu kapatın.
+
+1. Geliştirici komut istemi konsol penceresinde aşağıdaki komutu girin **kümesi bağlantı\_yeniden oluşturma =** temizlemek için **bağlantı\_yeniden oluşturma** ortam değişkeni.
+
+Son olarak, tüm linkrepro bir .zip dosyasına dizin veya benzer sıkıştırarak yeniden oluşturma paketini ve raporunuza ekleyin.
 
 ### <a name="other-repros"></a>Diğer repros
 
-Tek kaynak dosyası ya da önceden işlenmiş yeniden oluşturma sorunu indiremezsiniz ve sorun bağlantı yeniden oluşturma gerektirmez, biz araştırabilirsiniz ve IDE projesi. Proje içinde kod hala en az olmalıdır ve bu belgedeki tüm yönerge hala geçerlidir.
+Tek kaynak dosyası ya da önceden işlenmiş yeniden oluşturma sorunu indiremezsiniz ve sorun bağlantı yeniden oluşturma gerektirmez, biz IDE projesinde araştırabilirsiniz. İyi bir yeniden oluşturma oluşturma konusunda tüm yönerge hala geçerlidir; kod sorunu en son araçlarımız gerçekleşmesi gereken en düşük ve kendi başına olmalıdır ve uygunsa, sorun diğer derleyiciler görülmelidir değil.
 
 Yeniden oluşturma en az bir IDE projesi olarak oluşturun, sonra bir .zip dosyasına veya benzer tüm dizin yapısının sıkıştırarak paketini ve raporunuza ekleyin.
 
-## <a name="send"></a>Raporunuzu gönderme yolları
+## <a name="ways-to-send-your-report"></a>Raporunuzu gönderme yolları
 
 Raporunuzu bize almak için birkaç yolu vardır. Visual Studio'nun yerleşik kullanabilirsiniz [bir sorun aracı rapor](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017), veya [Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/) sayfaları. Raporunuzu içeren bir e-posta göndermek mümkündür, ancak ilk iki yöntem tercih edilir. Seçimi nasıl raporunuzu araştırmak mühendisleri ile etkileşim kurmak istediğinizi ve olup, ilerleme durumunu izlemek veya raporunuzu toplulukla paylaştığı istediğiniz bağlıdır.
 
@@ -339,4 +334,3 @@ Source code and repro steps:
 
 > [!TIP]
 > Araç takımı için (örneğin, kullanıcı Arabirimi sorunları, bozuk bir IDE işlevsellik veya genel kilitlenme) ilgili olmayan Visual Studio'da karşılaşabileceğiniz sorunlar diğer tür için bir sorun aracı rapor ekran yeteneklerini nedeniyle özellikle iyi bir seçimdir olabilir ve sorunu neden kayıt UI eylemlerini kendi yeteneği karşılaştı. Hiçbir zaman bu diğer tür hatalara e-posta göndererek bildirmelisiniz compilercrash@microsoft.com.
-

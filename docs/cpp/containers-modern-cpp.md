@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: ffad61c015c38d808b35ebffd98f74733d0997de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4fc8bbc3a983e6fa50e4ae5e8590e1f1de37f02f
+ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="containers-modern-c"></a>Kapsayıcılar (Modern C++)  
   
@@ -41,7 +41,7 @@ Performansı en iyi duruma getirme gerektiğinde kullanmayı dikkate alın:
   
 1.  [Dizi](../standard-library/array-class-stl.md) katıştırma Örneğin, bir sınıf üyesi olarak önemli olduğunda yazın.  
   
-2.  [Unordered_map] gibi ilişkilendirilebilir kapsayıcılarına sıralanmamış ((.. /Standard-library/unordered-Map-class.MD). Bu alt öğesi başına yükü sahip ve sabiti zamanı arama, ancak bunlar doğru ve verimli şekilde kullanmanıza zor olabilir.  
+2.  İlişkilendirilebilir kapsayıcıları gibi sıralanmamış [unordered_map](../standard-library/unordered-map-class.md). Bu alt öğesi başına yükü sahip ve sabiti zamanı arama, ancak bunlar doğru ve verimli şekilde kullanmanıza zor olabilir.  
   
 3.  Sıralanmış `vector`. Daha fazla bilgi için bkz: [algoritmaları](../cpp/algorithms-modern-cpp.md).  
   

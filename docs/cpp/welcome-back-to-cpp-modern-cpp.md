@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: d26cfad945278a45eccad2dc031d90e27da63dc0
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: 4e45c48671a0df62103a58a89d0c351209c71ed2
+ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Diğer diller çok çeşitli uygulamaları oluşturmak için kullandığı için dil daha esnektir — eğlenceli ve aygıt sürücüleri, katıştırılmış programları ve Windows istemci uygulamaları için yüksek performanslı bilimsel yazılım heyecan verici oyunlar. 20 yıldan fazla, C++, bunlar ve diğer birçok gibi sorunları çözmek için kullanılmış. Ne değil bilirsiniz C++ programcıları artan sayıda dün dowdy C stili programlama yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -50,40 +50,60 @@ C++ dünyanın en yaygın olarak kullanılan programlama dillerinde biridir. İy
  C++ dili de gelişmiştir. Aşağıdaki kod parçacıkları karşılaştırın. Bu bir şeyler c++'ta olması için nasıl kullanılacağını gösterir:  
   
 ```cpp  
-// circle and shape are user-defined types  
-circle* p = new circle( 42 );   
-vector<shape*> v = load_shapes();  
-  
-for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {  
-    if( *i && **i == *p )  
-        cout << **i << " is a match\n";  
-}  
-  
-for( vector<circle*>::iterator i = v.begin();  
-        i != v.end(); ++i ) {  
-    delete *i; // not exception safe  
-}  
-  
-delete p;  
-```  
-  
+
+#include <vector>
+
+void f()
+{
+    // Assume circle and shape are user-defined types  
+    circle* p = new circle( 42 );   
+    vector<shape*> v = load_shapes();  
+
+    for( vector<circle*>::iterator i = v.begin(); i != v.end(); ++i ) {  
+        if( *i && **i == *p )  
+            cout << **i << " is a match\n";  
+    }  
+
+    // CAUTION: If v's pointers own the objects, then you
+    // must delete them all before v goes out of scope.
+    // If v's pointers do not own the objects, and you delete
+    // them here, any code that tries to dereference copies
+    // of the pointers will cause null pointer exceptions.
+    for( vector<circle*>::iterator i = v.begin();  
+            i != v.end(); ++i ) {  
+        delete *i; // not exception safe  
+    }  
+
+    // Don't forget to delete this, too.  
+    delete p;  
+} // end f()
+```
+
  Aynı şey modern C++'da nasıl yapıldığını aşağıda verilmiştir:  
   
-```cpp  
+```cpp
+
 #include <memory>  
 #include <vector>  
-// ...  
-// circle and shape are user-defined types  
-auto p = make_shared<circle>( 42 );  
-vector<shared_ptr<shape>> v = load_shapes();  
-  
-for( auto& s : v ) {  
-    if( s && *s == *p )  
-        cout << *s << " is a match\n";  
-} 
-```  
-  
- Modern C++'da yeni/silme veya açık özel durum akıllı işaretçileri bunun yerine kullandığından işleme kullanmanız gerekmez. Kullandığınızda `auto` kesintisi yazın ve [lambda işlevi](../cpp/lambda-expressions-in-cpp.md), daha hızlı, kod yazabilirsiniz onu artırmak ve daha iyi anlamak. Ve `for_each` temizleyici, kullanmayı daha kolay ve istenmeyen hata potansiyeli daha az bir `for` döngü. Uygulamanızı yazmak için Demirbaş kod en küçük satırları ile birlikte kullanabilirsiniz. Ve bu kodu özel durum güvenli ve bellek güvenli hale getirmek ve uğraşmanız hiçbir ayırma/kaldırma veya hata kodları sahip.  
+
+void f()
+{
+    // ...  
+    auto p = make_shared<circle>( 42 );  
+    vector<shared_ptr<shape>> v = load_shapes();  
+
+    for( auto& s : v ) 
+    {  
+        if( s && *s == *p )
+        {
+            cout << *s << " is a match\n";
+        }
+    }
+}
+
+```
+
+ Modern C++'da yeni/silme veya açık özel durum akıllı işaretçileri bunun yerine kullandığından işleme kullanmanız gerekmez. Kullandığınızda `auto` kesintisi yazın ve [lambda işlevi](../cpp/lambda-expressions-in-cpp.md), daha hızlı, kod yazabilirsiniz onu artırmak ve daha iyi anlamak. Ve aralık tabanlı `for` döngü temizleyici kullanmayı daha kolay ve hata potansiyeli daha az istenmeyen C-style'den `for` döngü. Uygulamanızı yazmak için Demirbaş kod en küçük satırları ile birlikte kullanabilirsiniz. Ve bu kodu özel durum güvenli ve bellek güvenli hale getirmek ve uğraşmanız hiçbir ayırma/kaldırma veya hata kodları sahip.  
   
  Çok biçimlilik iki tür Modern C++ içerir: şablonlarıyla derleme zamanında ve devralma ve sanallaştırma aracılığıyla çalışma zamanında. Çok biçimlilik harika etkili olması için iki tür karıştırabilirsiniz. C++ Standart kitaplığı şablonu `shared_ptr` görünüşe göre zahmetsiz türü silinme gerçekleştirmek için iç sanal yöntemlerini kullanır. Ancak bir şablon daha iyi bir seçimdir sanallaştırma çok biçimlilik için aşırı kullanma. Şablonları çok güçlü olabilir.  
   
