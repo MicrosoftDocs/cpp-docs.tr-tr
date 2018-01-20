@@ -45,11 +45,11 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 8dac3a0e796d24ed714cd1a15be34081476d77d8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8a94c21cb35237f08a4a8860b1a414c91d5e8801
+ms.sourcegitcommit: 4df3cf1ae6ac1154a9dff9de0063377df43380a2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
 Yeni bir dizin oluşturur.  
@@ -58,7 +58,7 @@ Yeni bir dizin oluşturur.
   
 ```  
   
-      int _mkdir(  
+int _mkdir(
    const char *dirname   
 );  
 int _wmkdir(  
