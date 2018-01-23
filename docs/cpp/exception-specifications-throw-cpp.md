@@ -1,7 +1,7 @@
 ---
-title: "Özel durum belirtimleri (throw) (C++) | Microsoft Docs"
+title: "Özel durum belirtimleri (throw, noexcept) (C++) | Microsoft Docs"
 ms.custom: 
-ms.date: 01/12/2018
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-language
@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c93fdaa75155e6f0117ef1c30d4e093d5ca0e576
-ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
+ms.openlocfilehash: bd96f666c4733f1c9b1aff65705840a46729194c
+ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
 Özel durum belirtimleri Programcı hedefi bir işlev tarafından yayılan özel durum türleri hakkında belirten bir C++ dili özelliğidir. Bir işlev olabilir veya bir özel durum tarafından kullanarak sonlandırılabilir değil belirtebilirsiniz bir *özel durum belirtimi*. Beklenmeyen bir özel durum, programı sonlandırmak için işlevi çıkışları ve derleyici işlev çağrıları iyileştirmek için bu bilgileri kullanabilirsiniz. 
 
-C ++ 17 önce özel durum belirtimi iki tür vardı. *Noexcept belirtimi* C ++ 11'de yeni oluştu. Escape işlevi olası özel durumları kümesi boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*, veya `throw(optional_type_list)` belirtimi, C ++ 11'de kullanım dışı ve dışında C ++ 17'de kaldırılan `throw()`, noexcept(true) için diğer ad değil. Bu özel durum belirtimi hangi özel durumlar dışında bir işlev atılabilen hakkında özet bilgileri sağlamak için tasarlanmıştır ancak uygulamada sorunlu olarak bulunamadı. Biraz kullanışlı olması için kanıtlamak bir dinamik özel durum belirtimi koşulsuz edildi `throw()` belirtimi. Örneğin, işlev bildirimi:
+C ++ 17 önce özel durum belirtimi iki tür vardı. *Noexcept belirtimi* C ++ 11'de yeni oluştu. Escape işlevi olası özel durumları kümesi boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*, veya `throw(optional_type_list)` belirtimi, C ++ 11'de kullanım dışı ve dışında C ++ 17'de kaldırılan `throw()`, için diğer ad olduğu `noexcept(true)`. Bu özel durum belirtimi hangi özel durumlar dışında bir işlev atılabilen hakkında özet bilgileri sağlamak için tasarlanmıştır ancak uygulamada sorunlu olarak bulunamadı. Biraz kullanışlı olması için kanıtlamak bir dinamik özel durum belirtimi koşulsuz edildi `throw()` belirtimi. Örneğin, işlev bildirimi:
 
 ```cpp
 void MyFunction(int i) throw();

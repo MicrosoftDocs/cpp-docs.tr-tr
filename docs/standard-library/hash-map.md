@@ -1,7 +1,7 @@
 ---
 title: '&lt;hash_map&gt; | Microsoft Docs'
 ms.custom: 
-ms.date: 09/18/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-standard-libraries
@@ -12,63 +12,57 @@ f1_keywords:
 - std::<hash_map>
 dev_langs: C++
 helpviewer_keywords: hash_map header
-ms.assetid: 0765708a-a668-42a2-9800-654c857bdcc2
-caps.latest.revision: "27"
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: a996142e128f4113fb9d1057cd061155dae251f1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 41a8d8fd7c1f501401096d069c7dac097693f522
+ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
+
 > [!NOTE]
->  Bu üst kullanılmıyor. Alternatif [ \<unordered_map >](unordered-map.md).  
-  
- Kapsayıcı şablon sınıfları hash_map ve hash_multimap ve bunların destekleyen şablonları tanımlar.  
- 
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <hash_map>  
-  
-```  
-  
-### <a name="operators"></a>İşleçler  
-  
-|Hash_map sürüm|Hash_multimap sürüm|Açıklama|  
-|-----------------------|----------------------------|-----------------|  
-|[operator! = (hash_map)](hash-map-operators.md#op_neq)|[operator!=(hash_multimap)](hash-map-operators.md#op_neq_mm)|Testleri işlecinin sol tarafındaki hash_map veya hash_multimap nesnesi sağ tarafında hash_map veya hash_multimap nesnesine eşit değil.|  
-|[operator == (hash_map)](hash-map-operators.md#op_eq_eq)|[işleç == (hash_multimap)] ((karma harita operators.md #op_eq_eq_mm)|Hash_map veya hash_multimap nesne işlecinin sol tarafındaki sağ tarafında hash_map veya hash_multimap nesnesine eşitse testleri.|  
-  
-### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri  
-  
-|Hash_map sürüm|Hash_multimap sürüm|Açıklama|  
-|-----------------------|----------------------------|-----------------|  
-|[Swap (hash_map)](hash-map-class.md#swap)|[Swap (hash_multimap)](hash-multimap-class.md#swap)|İki hash_maps veya hash_multimaps öğelerini değiş tokuş eder.|  
-  
-### <a name="classes"></a>Sınıflar  
-  
-|||  
-|-|-|  
-|[hash_compare Sınıfı](hash-compare-class.md)|Herhangi bir karma ilişkilendirilebilir kapsayıcıları tarafından kullanılan bir nesneyi tanımlayan — hash_map, hash_multimap, hash_set, veya hash_multiset — varsayılan olarak **nitelikler** sıralamak ve içerdikleri öğeleri karma parametre nesnesi.|  
-|[value_compare Sınıfı](value-compare-class.md)|Hash_map içindeki göreli sıralarına belirlemek için kendi anahtarları değerlerinin karşılaştırılmasıyla bir hash_map öğelerini karşılaştırabilirsiniz bir işlev nesnesi sağlar.|  
-|[hash_map Sınıfı](hash-map-class.md)|Her öğe değeri benzersiz olan sıralama anahtarı olan bir çift olduğu bir koleksiyon ve ilişkili veriler bir değer verileri hızlı alınmasını ve depolama için kullanılır.|  
-|[hash_multimap Sınıfı](hash-multimap-class.md)|Her öğe değeri benzersiz olması gerekmez sıralama anahtarı olan bir çift olduğu bir koleksiyon ve ilişkili veriler bir değer verileri hızlı alınmasını ve depolama için kullanılır.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<hash_map >  
-  
- **Namespace:** stdext  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Üstbilgi dosyaları başvurusu](cpp-standard-library-header-files.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](thread-safety-in-the-cpp-standard-library.md)   
- [C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)
+> Bu üst kullanılmıyor. Alternatif [ \<unordered_map >](unordered-map.md).
 
+Kapsayıcı şablon sınıfları hash_map ve hash_multimap ve bunların destekleyen şablonları tanımlar.
 
+## <a name="syntax"></a>Sözdizimi
 
+> #<a name="include-hashmap"></a>< hash_map > içerir
+
+### <a name="operators"></a>İşleçler
+
+|Hash_map sürüm|Hash_multimap sürüm|Açıklama|
+|-----------------------|----------------------------|-----------------|
+|[operator!= (hash_map)](hash-map-operators.md#op_neq)|[operator!=(hash_multimap)](hash-map-operators.md#op_neq_mm)|Testleri işlecinin sol tarafındaki hash_map veya hash_multimap nesnesi sağ tarafında hash_map veya hash_multimap nesnesine eşit değil.|
+|[operator== (hash_map)](hash-map-operators.md#op_eq_eq)|[operator== (hash_multimap)](hash-map-operators.md#op_eq_eq_mm)|Hash_map veya hash_multimap nesne işlecinin sol tarafındaki sağ tarafında hash_map veya hash_multimap nesnesine eşitse testleri.|
+
+### <a name="specialized-template-functions"></a>Özelleşmiş Şablon İşlevleri
+
+|Hash_map sürüm|Hash_multimap sürüm|Açıklama|
+|-----------------------|----------------------------|-----------------|
+|[swap (hash_map)](hash-map-class.md#swap)|[swap (hash_multimap)](hash-multimap-class.md#swap)|İki hash_maps veya hash_multimaps öğelerini değiş tokuş eder.|
+
+### <a name="classes"></a>Sınıflar
+
+|||
+|-|-|
+|[hash_compare Sınıfı](hash-compare-class.md)|Herhangi bir karma ilişkilendirilebilir kapsayıcıları tarafından kullanılan bir nesneyi tanımlayan — hash_map, hash_multimap, hash_set, veya hash_multiset — varsayılan olarak **nitelikler** sıralamak ve içerdikleri öğeleri karma parametre nesnesi.|
+|[value_compare Sınıfı](value-compare-class.md)|Hash_map içindeki göreli sıralarına belirlemek için kendi anahtarları değerlerinin karşılaştırılmasıyla bir hash_map öğelerini karşılaştırabilirsiniz bir işlev nesnesi sağlar.|
+|[hash_map Sınıfı](hash-map-class.md)|Her öğe değeri benzersiz olan sıralama anahtarı olan bir çift olduğu bir koleksiyon ve ilişkili veriler bir değer verileri hızlı alınmasını ve depolama için kullanılır.|
+|[hash_multimap Sınıfı](hash-multimap-class.md)|Her öğe değeri benzersiz olması gerekmez sıralama anahtarı olan bir çift olduğu bir koleksiyon ve ilişkili veriler bir değer verileri hızlı alınmasını ve depolama için kullanılır.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<hash_map >
+
+**Namespace:** stdext
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Üstbilgi dosyaları başvurusu](cpp-standard-library-header-files.md)  
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](thread-safety-in-the-cpp-standard-library.md)  
+[C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)  

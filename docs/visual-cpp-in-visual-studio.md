@@ -18,13 +18,13 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: a4eccca9e7afd26684d5845d853b4be98001cf58
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.openlocfilehash: 6fecc7f821bec90321095130fb21147d7227685c
+ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/22/2018
 ---
-# <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
+# <a name="visual-c-in-visual-studio"></a>Visual C++ in Visual Studio
 
 Visual Studio 2017 programlama dili ve geliştirme araçları yerel Evrensel Windows uygulamaları, yerel Masaüstü ve sunucu uygulamaları, Android ve iOS aynı zamanda Windows çalıştıran ve .NET üzerinde çalışan uygulamalar yönetilen platformlar arası kitaplıkları geliştirmenize yardımcı Çerçeve.
 
@@ -32,7 +32,7 @@ Visual Studio 2017 programlama dili ve geliştirme araçları yerel Evrensel Win
 
 Programları yazma C++ geliştiricileri için içeriktir.
 
-- C++ yeniden dağıtılabilir paketi için aradığınız ve bir program çalıştırabilmeniz için çalışma zamanı bileşenleri Git [Microsoft Download Center](http://www.microsoft.com/en-us/download/) ve girin **Visual C++** arama kutusuna.
+- Belirli bir C++ yeniden dağıtılabilir paketi aradığınız ve bir program çalıştırabilmeniz için çalışma zamanı bileşenleri Git [Microsoft](http://www.microsoft.com/) Web sitesi ve girin **Visual C++ yeniden dağıtılabilir** arama kutusuna. İndirin ve bilgisayarınız (64 bit Windows'ta çalıştırıyorsanız, örneğin, x64) mimarisini ve ihtiyacınız Visual C++ sürümü için yeniden dağıtılabilir paketini yükleyin. 
 
 - C++ programlama kavramları giriş arıyorsanız, bu içerik sunan birçok Web sitesi birine gidin veya bir kopyasını almak [programlama--ilkeleri ve uygulama C++ (ikinci Edition) kullanarak](http://stroustrup.com/Programming/) C++, çalışan Bjarne stok tarafından Stroustrup. Visual C++ içerik C++ temel olarak bilindiğini zaten olduğunu varsayar.
 
@@ -76,7 +76,7 @@ Hangi platformların desteklendiğini öğrenin.
 [Visual C++ Örnekleri](visual-cpp-samples.md)  
 Örnekler hakkında bilgi.
 
-[Visual Studio Geliştirici topluluğu](https://developercommunity.visualstudio.com/)  
+[Visual Studio Developer Community](https://developercommunity.visualstudio.com/)  
 Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulunmayı öğrenin.
 
 ## <a name="writing-applications-in-c"></a>C++ uygulamaları yazma

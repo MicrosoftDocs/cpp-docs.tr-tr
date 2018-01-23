@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9bf25d8f3653d2146774efd333daff74a5fb33e2
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: b2206151f68e02ebadbfab5785a7a1e90be67468
+ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -40,7 +40,7 @@ Visual C++ ile geliştirebilirsiniz Windows uygulamaları birkaç geniş kategor
 
 ##  <a name="BK_WindowsUniversal"></a>Windows Evrensel uygulamaları
 
-Windows 10 ile uygulamaları tabletleri ve telefonları gibi tüm Windows 10 cihazlarda yanı sıra masaüstünde çalıştırabilir. Masaüstü bir pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki aygıtlarda de çalıştırabilirsiniz.  İki tür uygulamaları için programlama modelini Win32 Masaüstü uygulamalardan farklıdır. Bu Windows uygulamaları Windows kullanıcı arabirimi öğeleri, bu uygulamalar için temel hizmetleri sağlayan ve sağlar, çalışma zamanı ve bir arabirim desteklenen farklı donanım aygıtları için çalışır. Bu uygulamaları için yerel kodu derleme ve XAML kullanıcı arabirimi olan ya da DirectX kullanın. Windows çalışma zamanı bileşenleri diğer Windows uygulamalarını tüketebileceği yerel kodda yazabilirsiniz — bunlar, C#, Visual Basic veya JavaScript içinde yazılmış uygulamalar içerir. Daha fazla bilgi için bkz: [C++'da bir evrensel Windows Platform uygulaması oluşturma](http://go.microsoft.com/fwlink/p/?linkid=534976), [DirectX kullanarak ilk UWP oyununuzu oluşturma](http://go.microsoft.com/fwlink/p/?LinkId=244656), ve [oluşturma Windows çalışma zamanı bileşenleri c++](http://go.microsoft.com/fwlink/p/?LinkId=244658).
+Windows 10 ile uygulamaları tabletleri ve telefonları gibi tüm Windows 10 cihazlarda yanı sıra masaüstünde çalıştırabilir. Masaüstü bir pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki aygıtlarda de çalıştırabilirsiniz.  İki tür uygulamaları için programlama modelini Win32 Masaüstü uygulamalardan farklıdır. Bu Windows uygulamaları Windows kullanıcı arabirimi öğeleri, bu uygulamalar için temel hizmetleri sağlayan ve sağlar, çalışma zamanı ve bir arabirim desteklenen farklı donanım aygıtları için çalışır. Bu uygulamaları için yerel kodu derleme ve XAML kullanıcı arabirimi olan ya da DirectX kullanın. Windows çalışma zamanı bileşenleri diğer Windows uygulamalarını tüketebileceği yerel kodda yazabilirsiniz — bunlar, C#, Visual Basic veya JavaScript içinde yazılmış uygulamalar içerir. Daha fazla bilgi için bkz: [C++'da bir UWP "Hello world" uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp), [DirectX ile basit UWP oyun oluşturmak](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game), ve [oluşturma Windows çalışma zamanı bileşenleri c++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 > [!TIP]
 > Windows 10 için varolan Masaüstü uygulamanızı Windows mağazası yoluyla dağıtılmak paketlemek için masaüstü uygulaması dönüştürücü kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).

@@ -20,13 +20,17 @@ author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 106123557c4efab5ccddf9f1292570d36b0f8313
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a89795e19df46b3701cf8dcc7a402540f693db94
+ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="redistributing-visual-c-files"></a>Visual C++ Dosyalarını Yeniden Dağıtma
+
+> [!NOTE]
+> Visual C++ çalışma zamanı dosyaları birinin bir yükleme olarak aradığınız çünkü burada misiniz? Git [Microsoft](http://www.microsoft.com/) Web sitesi ve girin **Visual C++ yeniden dağıtılabilir** arama kutusuna. İndirin ve bilgisayarınız (64 bit Windows'ta çalıştırıyorsanız, örneğin, x64) mimarisini ve ihtiyacınız Visual C++ sürümü için yeniden dağıtılabilir paketini yükleyin.   
+  
 Bir uygulamayı dağıtırken, onu desteklemek için gerekli tüm dosyaları da dağıtmalısınız. Bu dosyalardan herhangi biri Microsoft tarafından sağlanıyorsa, bunları yeniden dağıtma izniniz olup olmadığını kontrol edin. Visual Studio Lisans Koşulları'nı gözden geçirmek için IDE Microsoft Visual Studio hakkında iletişim kutusunda lisans koşulları bağlantısına bakın veya karşıdan [Microsoft Yazılımı Lisans koşulları](http://go.microsoft.com/fwlink/p/?LinkId=831114) dosya. "Visual Studio belirli sürümleri için Microsoft Yazılım Lisans Koşulları'nın"Dağıtılabilir kod"bölümünde başvurulan listesidir" görüntülemek için bkz: [Microsoft Visual Studio 2017 ve Microsoft Visual Studio 2017 için dağıtılabilir kod SDK (içerir yardımcı programları ve BuildServer Dosyaları)](http://go.microsoft.com/fwlink/p/?LinkId=823098), veya Visual Studio 2015 için bkz. [Microsoft Visual Studio 2015 ve Microsoft Visual Studio 2015 SDK için dağıtılabilir kod](http://go.microsoft.com/fwlink/p/?LinkId=523763). Yeniden dağıtılabilir dosyalar hakkında daha fazla bilgi için bkz: [belirleme hangi DLL'lerin yeniden dağıtılacağını](../ide/determining-which-dlls-to-redistribute.md) ve [Dağıtım örnekleri](../ide/deployment-examples.md).  
   
  Visual C++ yeniden dağıtılabilir dosyaları dağıtmak için Visual C++ yeniden dağıtılabilir paketleri kullanabilirsiniz (VCRedist\_x86.exe, VCRedist\_x64.exe veya VCRedist\_arm.exe) Visual Studio'da dahil edilir. Visual Studio 2017 ' Bu dosyalar Program dosyaları [(x86)] bulunabilir\\Microsoft Visual Studio\\2017\\_edition_\\VC\\Redist\\ MSVC\\_lib sürüm_ klasörü, burada _edition_ olan yüklüyse, Visual Studio sürümü ve _lib sürüm_ sürümü yeniden dağıtmak için kitaplıkları. Program dosyaları [(x 86)] \Microsoft Visual Studio Visual Studio 2015'te bu dosyalar, Visual Studio yükleme dizini altında bulunabilir *sürüm*\VC\redist\\*yerel ayar* \\. Başka bir seçenek, Visual Studio 2017 [(x 86)] Program Files yer yeniden dağıtılabilir birleştirme modülleri (.msm dosyaları) kullanmaktır\\Microsoft Visual Studio\\2017\\_edition_ \\ VC\\Redist\\MSVC\\_lib sürüm_\\MergeModules\\ klasör. Visual Studio 2015'te bu Program dosyaları [(x 86)] \Common Files\Merge modülleri bulunabilir\\. Yeniden dağıtılabilir Visual C++ DLL'lerde doğrudan yüklemeye mümkündür *uygulama yerel klasörüne*, yürütülebilir uygulama dosyanızı içeren klasörü olduğu. Nedeni bakım için bu yükleme konumu kullanmanızı önermiyoruz.  
