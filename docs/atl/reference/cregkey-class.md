@@ -199,7 +199,7 @@ LONG Create(
  Bir işaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı tanıtıcı anahtarının bir alt işlem tarafından devralınan olup olmadığını gösterir. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınan anlamına gelir) olur.  
   
  *lpdwDisposition*  
- [out] (Anahtar vardı ve açıldı varsa) NULL olmayan, (anahtar yoktu ve oluşturuldu varsa) REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY alır.  
+ [out] \(Anahtar vardı ve açıldı varsa) NULL olmayan, (anahtar yoktu ve oluşturuldu varsa) REG_CREATED_NEW_KEY veya REG_OPENED_EXISTING_KEY alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, ERROR_SUCCESS döndürür ve anahtar açar. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H.  

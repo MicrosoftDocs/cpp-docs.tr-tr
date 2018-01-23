@@ -217,7 +217,7 @@ std::cout <<extracted;   //   This
   
  Tırnak işaretli işleci giriş dizesi bir ham dize olup veya normal bir dize bağımsız olarak yararlı olacak şekilde nasıl bir dize kodda gösterilir ekleme ve çıkarma işlemleri boşluk davranışını bağımsızdır. Giriş dizesi, ne olursa olsun, biçimi katıştırılmış teklifler, satır sonları, sekmeler ve benzeri ve bunların tümü muhafaza edilir quoted() manipulator tarafından.  
   
- Daha fazla bilgi ve tam kod örnekleri, bkz:--brokenlink--[tırnak içine alınmış] (.. / Topic/%3Cios%3E%20functions.md#quoted).  
+ Daha fazla bilgi ve tam kod örnekleri, bkz: [tırnak içine alınmış]--brokenlink--(../Topic/%3Cios%3E%20functions.md#quoted).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıkış Akışları](../standard-library/output-streams.md)   

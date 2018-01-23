@@ -116,7 +116,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 |[Derleyici Hatası C2913](compiler-error-c2913.md)|Açık uzmanlık; '*bildirimi*' sınıf şablonu uzmanlaşması değil|
 |[Derleyici Hatası C2914](compiler-error-c2914.md)|'*tanımlayıcısı*': işlev bağımsız değişkeni belirsiz olduğundan şablon/genel değişkeni türetme olamaz|
 |Derleyici Hatası C2915|'*tanımlayıcısı*': '*türü*' WinRT türü yayımlanan yüzey üzerinde doğrudan kullanılamaz. Kullanım ' Platform::Object ^' bunun yerine bu tür geçirmek için|
-|Derleyici Hatası C2916|'*tanımlayıcısı*': [FlagsAttribute] (yalnızca) belirtilmelidir ortak bir enum 'türü temel imzasız int ile'|
+|Derleyici Hatası C2916|'*tanımlayıcısı*': [FlagsAttribute] \(yalnızca) belirtilmelidir ortak bir enum 'türü temel imzasız int ile'|
 |[Derleyici Hatası C2917](compiler-error-c2917.md)|'*tanımlayıcısı*': Geçersiz şablon parametresi|
 |[Derleyici Hatası C2918](compiler-error-c2918.md)|'*tanımlayıcısı*': WinRT türü yayımlanan yüzeyine dizinli özellikler kullanılamaz|
 |[Derleyici Hatası C2919](compiler-error-c2919.md)|'*türü*': WinRT türü yayımlanan yüzeyine işleçler kullanılamaz|

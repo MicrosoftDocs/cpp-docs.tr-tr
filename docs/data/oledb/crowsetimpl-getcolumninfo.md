@@ -45,7 +45,7 @@ Belirli bir istemci isteği için sütun bilgileri alır.
  [in] Kullanıcının bir işaretçi `CRowsetImpl` türetilmiş sınıf.  
   
  `pcCols`  
- [in] (Sayıya çıktı) bir işaretçi sütun döndürdü.  
+ [in] \(Sayıya çıktı) bir işaretçi sütun döndürdü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir statik **ATLCOLUMNINFO** yapısı.  
