@@ -18,24 +18,23 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c394e67309811f3ca968da712cba4819278a1ca0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2494b9ec9ad78e3ea6910669c4d896448f60b06f
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="allocate"></a>allocate
-**Microsoft özel**  
+**Microsoft Specific**  
   
  **Tahsis** bildirimi belirleyici ad içinde veri öğesi ayrılan veri kesimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-__declspec(allocate("  
-segname  
-")) declarator  
+
+   __declspec(allocate("segname")) declarator  
+
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  

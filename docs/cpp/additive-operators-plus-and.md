@@ -24,11 +24,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 8d316505939b22149b53a1012113a7aba88e2dcc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d1096565843cfe150530a825254e9ad6c24b5ec8
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="additive-operators--and--"></a>Ek İşleçler: + and -
 ## <a name="syntax"></a>Sözdizimi  
@@ -57,7 +57,7 @@ expression - expression
 |----------|-------------|  
 |*aritmetik*|Kayan ve tam sayı türleri topluca "aritmetik" türleri olarak adlandırılır.|  
 |*tam sayı*|Türleri char ve tüm boyutları (uzun ve kısa) ve numaralandırmalar int "tümleşik" türleridir.|  
-|*skaler*|Skaler işleçler aritmetik veya işaretçi türündeki işlenenler ' dir.|  
+|*scalar*|Skaler işleçler aritmetik veya işaretçi türündeki işlenenler ' dir.|  
   
  Bu işleçlere yasal birleşimleridir:  
   
@@ -65,11 +65,11 @@ expression - expression
   
  *skaler* + *tam sayı*  
   
- *tam sayı* + *skaler*  
+ *integral* + *scalar*  
   
  *aritmetik* - *aritmetik*  
   
- *skaler* - *skaler*  
+ *scalar* - *scalar*  
   
  Toplama ve çıkarma eşdeğer işlemleri olmadığına dikkat edin.  
   
@@ -116,7 +116,7 @@ for( int i = 0; i < 10; ++i )
 >  `pIntArray = pIntArray + 1` formunun kodu C++ programlarında nadiren bulunur; arttırma yapmak için şu formlar tercih edilir: `pIntArray++` veya `pIntArray += 1`.  
   
 ## <a name="pointer-subtraction"></a>İşaretçi çıkarması  
- Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifadesi, ptrdiff_t (STDDEF.H standart içerme dosyasında tanımlanır) türünün işaretli integral sonucunu verir.  
+ Her iki işlenen de işaretçiyse, çıkarma işleminin sonucu işlenenler arasındaki farktır (dizi öğelerinde). Çıkarma ifade türü ptrdiff_t imzalı tam sayı sonucunu verir (standart INCLUDE dosyasında tanımlanan \<stddef.h >).  
   
  İşlenenlerden biri, ikinci işlenen olduğu takdirde integral türünde olabilir. Çıkarma işleminin sonucu, orijinal işaretçiyle aynı türdendir. Çıkarma değerini gösteren bir işaretçidir (*n* - *ı*) th dizi öğesi, burada  *n*  öğesi işaret ediyor özgün işaretçi ve *ı* ikinci işlenen tam sayı değeri.  
   

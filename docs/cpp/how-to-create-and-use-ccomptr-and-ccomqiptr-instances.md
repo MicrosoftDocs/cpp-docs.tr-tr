@@ -14,11 +14,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 342fd293983840257e83e287df3a8ef6767826c2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 35f007cadb3afca1ccacebf1e831ba761602c904
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma
 Klasik Windows programlama kitaplıkları genellikle olarak COM nesneleri (veya daha hassas bir şekilde COM sunucuları) uygulanır. Çoğu Windows işletim sistemi bileşenleri COM sunucuları olarak uygulanır ve bu formda kitaplıkları pek çok katkıda bulunanlar sağlar. COM temel kavramları hakkında daha fazla bilgi için bkz [Bileşen Nesne Modeli (COM)](http://msdn.microsoft.com/en-us/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4).  
@@ -30,7 +30,7 @@ Klasik Windows programlama kitaplıkları genellikle olarak COM nesneleri (veya 
   
  [!code-cpp[COM_smart_pointers#01](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_1.cpp)]  
   
- `CComPtr`ve kendi akrabaları ATL parçası olan ve atlcomcli.h tanımlanır. `_com_ptr_t`içinde comip.h bildirildi. Özelleştirmeleri, derleyici oluşturur `_com_ptr_t` tür kitaplıkları için sarmalayıcı sınıflar oluşturduğunda.  
+ `CComPtr`ve kendi akrabaları ATL parçası olan ve içinde tanımlanan \<atlcomcli.h >. `_com_ptr_t`içinde bildirilen \<comip.h >. Özelleştirmeleri, derleyici oluşturur `_com_ptr_t` tür kitaplıkları için sarmalayıcı sınıflar oluşturduğunda.  
   
 ## <a name="example"></a>Örnek  
  ATL de sağlar `CComQIPtr`, ek bir arabirim almak için bir COM nesnesinin sorgulamak için daha basit bir sözdizimi içeriyor. Ancak, öneririz `CComPtr` , her şeyi mevcut olduğundan `CComQIPtr` yapabilirsiniz ve anlam olarak ham COM arabirimi işaretçileri ile daha tutarlı. Kullanırsanız, bir `CComPtr` için bir arabirimi sorgulamak için yeni arabirim işaretçisi bir out parametresi yerleştirilir. Çağrı başarısız olursa, tipik bir COM Düzen olduğu HRESULT döndürülür. İle `CComQIPtr`işaretçi dönüş değerdir ve çağrısı başarısız olursa, iç HRESULT dönüş değeri erişilemez. Aşağıdaki iki satırları göster nasıl de mekanizmaları işleme hatası `CComPtr` ve `CComQIPtr` farklılık gösterir.  

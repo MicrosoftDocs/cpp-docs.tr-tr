@@ -16,14 +16,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 44179c3c34207b8f1bf3abbef2efd9505df47181
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f9a17309ab08d50be1366b8db71798766b52baa9
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="comptrt-class"></a>_com_ptr_t Sınıfı
-**Microsoft özel**  
+**Microsoft Specific**  
   
  A `_com_ptr_t` nesne COM arabirimi işaretçisi yalıtır ve "Akıllı" bir işaretçi olarak adlandırılır. Bu şablon sınıfı kaynak ayırma ve ayırmayı kaldırma işlev çağrılarını aracılığıyla yönetir **IUnknown** üye işlevleri: `QueryInterface`, `AddRef`, ve **sürüm**.  
   
@@ -52,7 +52,7 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 |[CreateInstance](../cpp/com-ptr-t-createinstance.md)|Verilen bir nesne yeni bir örneğini oluşturur bir **CLSID** veya **ProgID**.|  
 |[Detach](../cpp/com-ptr-t-detach.md)|Kapsüllenmiş arabirim işaretçisini ayıklar ve döndürür.|  
 |[GetActiveObject](../cpp/com-ptr-t-getactiveobject.md)|Varolan bir nesneyi, verilen örneğine bağlanan bir **CLSID** veya **ProgID**.|  
-|[Getınterfaceptr](../cpp/com-ptr-t-getinterfaceptr.md)|Kapsüllenmiş arabirim işaretçisi döndürür.|  
+|[GetInterfacePtr](../cpp/com-ptr-t-getinterfaceptr.md)|Kapsüllenmiş arabirim işaretçisi döndürür.|  
 |[QueryInterface](../cpp/com-ptr-t-queryinterface.md)|Çağrıları `QueryInterface` üye işlevini **IUnknown** kapsüllenmiş arabirim işaretçisi üzerinde.|  
 |[Sürüm](../cpp/com-ptr-t-release.md)|Çağrıları **sürüm** üye işlevini **IUnknown** kapsüllenmiş arabirim işaretçisi üzerinde.|  
   
@@ -67,7 +67,7 @@ _COM_SMARTPTR_TYPEDEF(IMyInterface, __uuidof(IMyInterface));
 **SON Microsoft özel**  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** comip.h  
+ **Başlık:** \<comip.h >  
   
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   

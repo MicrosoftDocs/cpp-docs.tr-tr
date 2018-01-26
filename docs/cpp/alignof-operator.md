@@ -24,26 +24,23 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 50a8d6e524847d46d62b5f1da134332f35edcf92
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: faceca31928d9c49f3c1cf5b933a65767ece7453
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürür işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Türünde bir değer döndürür **size_t** diğer bir deyişle hizalama gereksinim türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      __alignof(   
-   type    
-)  
+  __alignof( type )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -54,9 +51,9 @@ C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürü
 |**__alignof (karakter)**|1.|  
 |**__alignof (kısa)**|2|  
 |**__alignof (int)**|4|  
-|**__alignof ( \__int64)**|8|  
+|**__alignof( \__int64 )**|8|  
 |**__alignof (kayan nokta)**|4|  
-|**__alignof (çift)**|8|  
+|**__alignof( double )**|8|  
 |**__alignof (char\* )**|4|  
   
  `__alignof` Değerdir değeri ile aynı `sizeof` temel türleri için. , Ancak bu örnek göz önünde bulundurun:  
@@ -92,7 +89,7 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
 -   [__unaligned](../cpp/unaligned.md)  
   
--   [/ZP (yapı üyesi hizalama)](../build/reference/zp-struct-member-alignment.md)  
+-   [/Zp (Yapı Üyesi Hizalama)](../build/reference/zp-struct-member-alignment.md)  
   
 -   [Yapı hizalama örnekleri](../build/examples-of-structure-alignment.md) (x64 belirli)  
   

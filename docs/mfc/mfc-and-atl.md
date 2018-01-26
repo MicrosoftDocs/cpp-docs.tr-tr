@@ -1,7 +1,7 @@
 ---
 title: MFC ve ATL | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/24/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: cpp-windows
@@ -14,16 +14,20 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 4b53607c1ca163bf7e1e50728e64da0e3497f4cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1b863b002f6ab8362ed51e8cb16747de53eeb1b8
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="mfc-and-atl"></a>MFC ve ATL
 Microsoft Foundation sınıfları (MFC) yerel Masaüstü uygulamaları hızlı geliştirme için Win32 nesne yönelimli bir C++ kapsayıcı sağlar. Etkin Şablon kitaplığı (ATL), COM Geliştirme basitleştirir ve ActiveX denetimleri oluşturmak için yaygın kullanılan bir sarmalayıcı kitaplıktır.  
   
- MFC veya ATL programı Visual Studio Community sürümü veya üzeri oluşturabilirsiniz. Express sürümleri MFC ve ATL desteklemez Visual Studio 2015 ' te Visual C++ isteğe bağlı bir bileşenidir ve MFC ve ATL bileşenleri isteğe bağlı alt Visual C++ altında bileşenlerdir. Visual Studio'ı ilk yüklediğinizde bu bileşenlerin seçmezseniz bir MFC ya da ATL projesi oluşturma veya açma girişiminde ilk kez yüklerken istenir.  
+MFC veya ATL programı Visual Studio Community sürümü veya üzeri oluşturabilirsiniz. Express sürümleri MFC ve ATL desteklemez 
+
+Visual Studio 2015 ' te Visual C++ isteğe bağlı bir bileşenidir ve MFC ve ATL bileşenleri isteğe bağlı alt Visual C++ altında bileşenlerdir. Visual Studio'ı ilk yüklediğinizde bu bileşenlerin seçmezseniz bir MFC ya da ATL projesi oluşturma veya açma girişiminde ilk kez yüklerken istenir.  
+
+Visual Studio 2017 ve daha sonra MFC ve ATL isteğe bağlı alt altında bileşenleridir **C++ ile masaüstü geliştirme** Visual Studio yükleyici program iş yükü. ATL desteği MFC olmadan yükleyebilirsiniz veya birleştirilmiş MFC ve ATL desteği (MFC üzerinde ATL bağlıdır). İş yükleri ve bileşenleri hakkında daha fazla bilgi için bkz: [yükleme Visual Studio 2017](/visualstudio/install/install-visual-studio).
   
 ## <a name="related-articles"></a>İlgili Makaleler  
   

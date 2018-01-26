@@ -16,14 +16,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 47ee4686c5c0a239b868d6da9aaccc332def19dc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53defbe6c686630791317fa20aca48414144eb91
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="comerror-class"></a>_com_error Sınıfı
-**Microsoft özel**  
+**Microsoft Specific**  
   
  A `_com_error` nesne türü Kitaplığı'ndan oluşturulan üstbilgi dosyalarında hata işleme sarmalayıcı işlevleri veya COM desteği sınıfları biri tarafından algılanan bir özel durumu temsil eder. `_com_error` Sınıfı yalıtır `HRESULT` hata kodu ve varsa ilişkili `IErrorInfo Interface` nesnesi.  
   
@@ -73,10 +73,10 @@ ms.lasthandoff: 12/21/2017
 **SON Microsoft özel**  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** comdef.h  
+ **Başlık:** \<comdef.h >  
   
  `Lib:`comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici COM desteği sınıfları](../cpp/compiler-com-support-classes.md)   
- [IErrorInfo arabirimi](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)
+ [IErrorInfo Interface](http://msdn.microsoft.com/en-us/4dda6909-2d9a-4727-ae0c-b5f90dcfa447)

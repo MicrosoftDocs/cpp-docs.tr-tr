@@ -25,11 +25,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 98601b9d4293417d03dcdcc96b2ae0bb54defdc0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4eb616945a831502077066bdf306bef306f543eb
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 Bazı program hataların en yaygın kaynakları özel durumlar olarak sistem tarafından işaretlenmeyen. Örneğin, bir bellek bloğu ayırma girişimi, ancak yeterli bellek yok, çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
@@ -44,7 +44,7 @@ Bazı program hataların en yaygın kaynakları özel durumlar olarak sistem tar
   
 -   Tanımladığınız özel durum kodu için test etmek için özel durum işleme filtreleri kullanın.  
   
- WINERROR. H dosyasını özel durum kodları biçimi gösterir. Çakışan bir kod var olan bir özel durum kodu belirtmiyor emin olmak için üçüncü en önemli biti 1 olarak ayarlayın. Aşağıdaki tabloda gösterildiği gibi dört en önemli BITS ayarlanması gerekir.  
+ \<Winerror.h'de > dosyasını özel durum kodları biçimi gösterir. Çakışan bir kod var olan bir özel durum kodu belirtmiyor emin olmak için üçüncü en önemli biti 1 olarak ayarlayın. Aşağıdaki tabloda gösterildiği gibi dört en önemli BITS ayarlanması gerekir.  
   
 |Bits|Önerilen ikili ayarı|Açıklama|  
 |----------|--------------------------------|-----------------|  

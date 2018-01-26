@@ -15,35 +15,41 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: e30e9259a5b3e59b9f8c2f3af877bca3a98c84dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 157b31f244ce5400aac5857f2473deb67938d8d0
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="event-handling-in-native-c"></a>Yerel C++'da Olay İşleme
-Yerel C++ olay işlemede kullanarak bir olay kaynağı ve olay alıcıyı ayarlamak [event_source](../windows/event-source.md) ve [event_receiver](../windows/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `native`. Bu öznitelikler bunlar olayları yangın ve yerel, COM olmayan bağlamda olayları işlemek için uygulanır sınıfları sağlar.  
+
+Yerel C++ olay işlemede kullanarak bir olay kaynağı ve olay alıcıyı ayarlamak [event_source](../windows/event-source.md) ve [event_receiver](../windows/event-receiver.md) sırasıyla belirten öznitelikleri `type` = `native`. Bu öznitelikler bunlar olayları yangın ve yerel, COM olmayan bağlamda olayları işlemek için uygulanır sınıfları sağlar.
+
+## <a name="declaring-events"></a>Olayları Bildirme
+
+Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) yöntemi bir olay olarak bildirmek için bir yöntem bildirimi on anahtar sözcüğü. Yöntem bildirin emin olun, ancak bunu tanımlamaz; Bunu yapmak için bir olay yapıldığında derleyici yöntemi örtük olarak tanımladığından derleyici hatası oluşturur. Yerel olayları sıfır veya daha fazla parametre yöntemleriyle olabilir. Dönüş türü void veya herhangi bir tamsayı türü olabilir.  
   
-## <a name="declaring-events"></a>Olayları Bildirme  
- Bir olay kaynağı sınıfında kullanın [__event](../cpp/event.md) yöntemi bir olay olarak bildirmek için bir yöntem bildirimi on anahtar sözcüğü. Yöntem bildirin emin olun, ancak bunu tanımlamaz; Bunu yapmak için bir olay yapıldığında derleyici yöntemi örtük olarak tanımladığından derleyici hatası oluşturur. Yerel olayları sıfır veya daha fazla parametre yöntemleriyle olabilir. Dönüş türü void veya herhangi bir tamsayı türü olabilir.  
-  
-## <a name="defining-event-handlers"></a>Olay işleyicileri tanımlama  
- Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız.  
+## <a name="defining-event-handlers"></a>Olay işleyicileri tanımlama
+
+Bir olay alıcısı sınıfında, işleyecekleri olayla eşleşen imzalı yöntemler (dönüş türleri, çağrı kuralları ve bağımsız değişkenler) olan olay işleyicilerini tanımlarsınız.  
   
 ## <a name="hooking-event-handlers-to-events"></a>Olay İşleyicilerini Olaylara Takma  
- Ayrıca bir olay alıcı sınıfta iç işlevini [__hook](../cpp/hook.md) olayları olay işleyicileri ile ilişkilendirilecek ve [__unhook](../cpp/unhook.md) olay işleyicileri olayların ilişkilendirmesini kaldırmak. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.  
+
+Ayrıca bir olay alıcı sınıfta iç işlevini [__hook](../cpp/hook.md) olayları olay işleyicileri ile ilişkilendirilecek ve [__unhook](../cpp/unhook.md) olay işleyicileri olayların ilişkilendirmesini kaldırmak. Bir olay işleyicisine birden fazla olay veya bir olaya birden fazla olay işleyicisi takabilirsiniz.  
   
 ## <a name="firing-events"></a>Olayları Tetikleme  
- Bir olay tetikleyin için yalnızca bir olay Olay kaynağı sınıf bildirilen yöntemini çağırın. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.  
+
+Bir olay tetikleyin için yalnızca bir olay Olay kaynağı sınıf bildirilen yöntemini çağırın. Olaya olay işleyicileri takılmışsa, işleyiciler çağırılır.  
   
 ### <a name="native-c-event-code"></a>Yerel C++ olay kodu  
- Aşağıdaki örnek, yerel C++'ta bir olay tetikleyin gösterilmektedir. Örneği derlemek ve çalıştırmak için koddaki açıklamalara bakın.  
+
+Aşağıdaki örnek, yerel C++'ta bir olay tetikleyin gösterilmektedir. Örneği derlemek ve çalıştırmak için koddaki açıklamalara bakın.  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp  
 // evh_native.cpp  
 #include <stdio.h>  
   
@@ -87,10 +93,12 @@ int main() {
   
 ### <a name="output"></a>Çıkış  
   
-```  
+```Output
 MyHandler2 was called with value 123.  
 MyHandler1 was called with value 123.  
 ```  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Olay İşleme](../cpp/event-handling.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Olay İşleme](../cpp/event-handling.md)  
+

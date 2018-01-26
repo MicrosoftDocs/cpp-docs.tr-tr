@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 3fcd54b9aacf4eaba4bb5acfb115943225aa0efa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e73c2549e5ce29823376b378b9dc565e2d883ffa
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="abort-function"></a>abort İşlevi
 
-**Abort** işlevi, ayrıca standart içerme dosyası STDLIB bildirilmedi. H, C++ programı sonlandırır. Arasındaki farkı **çıkmak** ve **abort** olan **çıkmak** (genel nesne Yıkıcılar çağrılır), gerçekleşmesi için C++ çalışma zamanı sonlandırma işleme sağlar Oysa **abort** program hemen sonlandırır. Daha fazla bilgi için bkz: [abort](../c-runtime-library/reference/abort.md) içinde *çalışma zamanı kitaplığı başvurusu*.
+**Abort** işlevi, ayrıca standart INCLUDE dosyasında bildirilen \<stdlib.h >, C++ programı sonlandırır. Arasındaki farkı **çıkmak** ve **abort** olan **çıkmak** (genel nesne Yıkıcılar çağrılır), gerçekleşmesi için C++ çalışma zamanı sonlandırma işleme sağlar Oysa **abort** program hemen sonlandırır. Daha fazla bilgi için bkz: [abort](../c-runtime-library/reference/abort.md) içinde *çalışma zamanı kitaplığı başvurusu*.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

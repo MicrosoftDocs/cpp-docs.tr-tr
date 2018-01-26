@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: b9e0d6a7f903d4af39698b2d98c005cbf64515eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ee6a34a70465904e6725f42e68eb4a00c03a1661
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="exit-function"></a>exit İşlevi
-**Çıkmak** standart içerme dosyası STDLIB bildirilen işlevi. H, C++ programı sonlandırır.  
+**Çıkmak** işlevi, standart INCLUDE dosyasında bildirilen \<stdlib.h >, C++ programı sonlandırır.  
   
  Bağımsız değişken olarak sağlanan değer **çıkmak** işletim sistemi programın dönüş kodu veya çıkış kodu olarak döndürülür. Kural olarak, sıfır olan dönüş kodu programın başarıyla tamamlandığı anlamına gelir.  
   
 > [!NOTE]
->  Programınızın başarılı veya başarısız olduğunu göstermek için STDLIB.H'de tanımlanan `EXIT_FAILURE` ve `EXIT_SUCCESS` sabitlerini kullanabilirsiniz.  
+>  Sabitler kullanabilirsiniz `EXIT_FAILURE` ve `EXIT_SUCCESS`, içinde tanımlı \<stdlib.h >, başarı veya başarısızlık programınızın belirtmek için.  
   
  Sertifika veren bir `return` from deyimi **ana** işlevi çağırmak için eşdeğerdir **çıkmak** işlevi bağımsız değişken olarak dönüş değerine sahip.  
   

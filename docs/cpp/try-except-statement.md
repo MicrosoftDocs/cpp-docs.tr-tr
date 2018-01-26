@@ -37,15 +37,15 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 240b8ad1b0cfd9c8b85b58c8d2309fb97f961573
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 24be4e7fd6b4dc95d9964e69943a94ecad947a47
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="try-except-statement"></a>try-except Deyimi
 
-**Microsoft özel**  
+**Microsoft Specific**  
 **Deneyin-dışında** ifadesi bir Microsoft uzantısı c ve destekleyen C++ dilleri yapılandırılmış özel durum işleme.  
 
 ## <a name="syntax"></a>Sözdizimi  
@@ -54,7 +54,7 @@ ms.lasthandoff: 12/21/2017
 > {  
 >    Korumalı kod  
 > }  
-> **__except** ( *ifade* )  
+> **__except** ( *expression* )  
 > {  
 >    özel durum işleyici kodu  
 > }  
@@ -113,13 +113,13 @@ typedef struct _EXCEPTION_POINTERS {
 } EXCEPTION_POINTERS, *PEXCEPTION_POINTERS; 
 ```  
 
-İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` içerme dosyası WINNT tanımlanır. H ve `_EXCEPTION_RECORD` ve `_CONTEXT` içerme dosyası EXCPT tanımlanır. H
+İşaretçi türleri `PEXCEPTION_RECORD` ve `PCONTEXT` INCLUDE dosyasında tanımlanan \<winnt.h >, ve `_EXCEPTION_RECORD` ve `_CONTEXT` INCLUDE dosyasında tanımlanan \<excpt.h >
 
 Kullanabileceğiniz `GetExceptionCode` özel durum işleyici içinde. Ancak, kullanabileceğiniz `GetExceptionInformation` yalnızca özel durum filtre ifadesi içinde. İşaret ettiği bilgiler, genellikle yığındadır ve denetim özel durum işleyicisine aktarıldığında kullanılamaz.
 
 İç işlev `AbnormalTermination` sonlandırma işleyicisi içinde kullanılabilir. İse 0 döndürür gövdesini **try-finally** açıklamayı sonlandıran sıralı olarak. Diğer tüm durumlarda, 1 döndürür.
 
-EXCPT.H, bu iç öğeler için bazı alternatif adlar tanımlar:
+Bu yapı için bazı diğer adlar excpt.h tanımlar:
 
 `GetExceptionCode`eşdeğerdir`_exception_code`
 

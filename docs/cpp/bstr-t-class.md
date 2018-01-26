@@ -19,14 +19,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 34af81829c90aa5e56c7358a3e0b23d6f6ab949f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6943a75f83bac517ce3c9677b0abd8ef560e9b77
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="bstrt-class"></a>_bstr_t Sınıfı
-**Microsoft özel**  
+**Microsoft Specific**  
   
  A `_bstr_t` nesne yalıtır [BSTR veri türü](http://msdn.microsoft.com/en-us/1b2d7d2c-47af-4389-a6b6-b01b7e915228). Kaynak ayırma ve ayırmayı kaldırma işlev çağrılarını aracılığıyla sınıfı yönetir **SysAllocString** ve **SysFreeString** ve diğer `BSTR` API'leri uygun olduğunda. `_bstr_t` Sınıfı başvuru aşırı yükünü önlemek için sayım kullanır.  
   
@@ -62,7 +62,7 @@ ms.lasthandoff: 12/21/2017
 **SON Microsoft özel**  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** comutil.h  
+ **Başlık:** \<comutil.h >  
   
  **LIB:** comsuppw.lib veya comsuppwd.lib (bkz [/ZC: wchar_t (wchar_t yerel tür olan)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md) daha fazla bilgi için)  
   

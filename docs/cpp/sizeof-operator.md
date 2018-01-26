@@ -16,11 +16,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 244af2a6afe87757c6a242c8a750f1bc3c99e557
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 072dbd8d41a867f7cd31316ef0bc1c20660952ef
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sizeof-operator"></a>sizeof İşleci
 Kendi işleneninin türü boyutuna göre boyutu ortaya çıkarır `char`.  
@@ -36,7 +36,7 @@ sizeof  ( type-name )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonucu `sizeof` işlecidir türü `size_t`, tanımlanan içerme dosyası STDDEF tamsayı türü. H. Bu işleç, makine bağımlı veri boyutları programlarınıza belirtmekten kaçının olanak sağlar.  
+ Sonucu `sizeof` işlecidir türü `size_t`, INCLUDE dosyasında tanımlanan bir tam sayı türü \<stddef.h >. Bu işleç, makine bağımlı veri boyutları programlarınıza belirtmekten kaçının olanak sağlar.  
   
  İşlenenin `sizeof` şunlardan biri olabilir:  
   

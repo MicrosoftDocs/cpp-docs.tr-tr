@@ -18,14 +18,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: ad4362b8e84d7ffb4bb090a4e513538cdb26ae25
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c999b429cb789167eeb754b6f11a8b3d90c28642
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="uuid-c"></a>uuid (C++)
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bir sınıf veya bildirilen veya tanımlı yapısı (tam COM nesne tanımları yalnızca) ile bir GUID derleyici iliştirir `uuid` özniteliği.  
   
@@ -33,9 +33,7 @@ ms.lasthandoff: 12/21/2017
   
 ```  
   
-__declspec( uuid("  
-ComObjectGUID  
-") ) declarator  
+__declspec( uuid("ComObjectGUID") ) declarator  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -46,7 +44,7 @@ struct __declspec(uuid("00000000-0000-0000-c000-000000000046")) IUnknown;
 struct __declspec(uuid("{00020400-0000-0000-c000-000000000046}")) IDispatch;  
 ```  
   
- Bu öznitelik bir yeniden bildirimi uygulanabilir. Bu sistem başlıklarının arabirimleri gibi tanımlarınızı sağlar **IUnknown**ve (örneğin, COMDEF diğer bazı üstbilgisinde yeniden bildirimi. Y) GUID sağlamak için kullanılır.  
+ Bu öznitelik bir yeniden bildirimi uygulanabilir. Bu sistem başlıklarının arabirimleri gibi tanımlarınızı sağlar **IUnknown**ve bazı diğer üstbilgisinde yeniden bildirimi (gibi \<comdef.h >) GUID sağlamak için.  
   
  Anahtar sözcüğü [__uuidof](../cpp/uuidof-operator.md) GUID bağlı kullanıcı tanımlı bir tür sabiti almak için uygulanabilir.  
   

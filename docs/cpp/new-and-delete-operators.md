@@ -21,11 +21,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: a34d703783ce638991585b7e7a99b2015923182b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3af862988502ac0d1908c466aae5e62b753509c2
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -56,7 +56,7 @@ Bellek boşaltın ve ayırmayı yeniden deneme girişiminde bir yordam yazabilir
 |**:: new işleci**|Global|  
 |*sınıf adı* **:: new işleci**|örneği|  
   
- İlk bağımsız değişken **new işleci** türünde olmalıdır **size_t** (STDDEF içinde tanımlanan bir türü. Y) ve dönüş türü olan her zaman **void \*** .  
+ İlk bağımsız değişken **new işleci** türünde olmalıdır **size_t** (tanımlanan bir türü \<stddef.h >), ve dönüş türü her zaman **void \***  .  
   
  Genel **new işleci** işlevi çağrılır **yeni** işleci, yerleşik türlerin ayırmak için kullanılır, içermeyen nesneleri sınıf türü kullanıcı tanımlı **new işleci** işlevler ve diziler herhangi bir türde. Zaman **yeni** işleci nesneleri sınıf türü ayırmak için kullanılan burada bir **new işleci** tanımlanır, o sınıfın **new işleci** olarak adlandırılır.  
   

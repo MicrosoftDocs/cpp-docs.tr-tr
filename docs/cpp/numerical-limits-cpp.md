@@ -15,14 +15,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 496bbd686b0baaacda42de29c825c9539fb50371
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e531de79621eb3a010a41c7e5059dd5b76b2c2fc
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="numerical-limits-c"></a>Sayısal Sınırlar (C++)
-İki standart içerilen dosya, LIMITS.H ve FLOAT.H, sayısal sınırlamaları veya verilen bir türde bir değişkenin tutabildiği en düşük ve en yüksek değerleri tanımlar. Bu alt limitlerin ve üst sınırlar ANSI c aynı veri gösterimi kullanan tüm C++ derleyicisi taşınabilir olması garanti SINIRLAR. H içerme dosyası tanımlar [tam sayı türleri için sayısal sınırlar](../cpp/integer-limits.md)ve kayan noktalı sayı. H tanımlar [türleri değişken için sayısal sınırlar](../cpp/floating-limits.md).  
+İki standart içerme dosyaları, \<lımıts.h > ve \<float.h >, sayısal sınırlar veya belirli bir türde bir değişken tutabilir ve en düşük değerleri tanımlayın. Bu alt limitlerin ve üst sınırlar ANSI c aynı veri gösterimi kullanan tüm C++ derleyicisi taşınabilir olması garanti \<Lımıts.h > dahil dosyası tanımlar [tam sayı türleri için sayısal sınırlar](../cpp/integer-limits.md), ve \<float.h > tanımlar [türleri değişken için sayısal sınırlar](../cpp/floating-limits.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Temel kavramlar](../cpp/basic-concepts-cpp.md)

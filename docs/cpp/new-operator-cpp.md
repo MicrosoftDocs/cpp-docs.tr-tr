@@ -15,11 +15,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 98a6a535071246f75d877e7f63d3a0e9d86053be
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 68843f0619b5ebc057f83bdb4f49807a15fb86a1
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="new-operator-c"></a>new İşleci (C++)
 Bir nesne ya da dizi nesneleri için bellek ayırır *türü adı* boş depolamak ve uygun yazılan, sıfır olmayan bir işaretçi nesneyi döndürür.  
@@ -75,7 +75,7 @@ delete *p;
  *tür adı*  
  Ayrılacak türünü belirtir; Yerleşik veya kullanıcı tanımlı türü olabilir. Tür belirtimi karmaşık ise, bağlama sırasını zorlamak için parantez ile çevrelenmiş.  
   
- *Başlatıcı*  
+ *initializer*  
  Başlatılmış bir nesne için bir değer sağlar. Başlatıcılar diziler için belirtilemez. **Yeni** işleci yalnızca sınıfı varsayılan bir oluşturucu varsa nesne dizileri oluşturur.  
   
 ## <a name="example"></a>Örnek  
@@ -238,7 +238,7 @@ int main()
  Derleyici karşılaştığında **yeni** türünde bir nesne ayrılamadı işleci `type`, çağrı sorunları `type` **:: new işleci (sizeof (** `type` **))**  veya kullanıcı tanımlı Hayır ise `operator new` tanımlanan **:: new işleci (sizeof (** `type` **))**. Bu nedenle, **yeni** işleci, nesne için doğru bellek miktarını ayırabilirsiniz.  
   
 > [!NOTE]
->  Bağımsız değişkeni `operator new` türü **size_t**. Bu tür doğrudan içinde tanımlandı. H, MALLOC. H, BELLEK. H, ARAMA. H, STDDEF. H, STDIO. H, STDLIB. H, DİZE. H ve saat. H.  
+>  Bağımsız değişkeni `operator new` türü **size_t**. Bu tür tanımlanan \<direct.h >, \<malloc.h >, \<memory.h >, \<search.h >, \<stddef.h >, \<stdio.h >, \<stdlib.h >, \<string.h >, ve \<time.h >.  
   
  Dilbilgisi bir seçenek belirtimi verir *yerleştirme* (dil bilgisi için bkz: [new işleci](../cpp/new-operator-cpp.md)). *Yerleştirme* parametresi yalnızca kullanıcı tanımlı uygulamaları için kullanılabilir `operator new`; geçirilecek ek bilgiler sağlayan `operator new`. Bir ifade içeren bir *yerleştirme* gibi alan `T *TObject = new ( 0x0040 ) T;` için çevrilen `T *TObject = T::operator new( sizeof( T ), 0x0040 );` sınıfı T üye işleci yeni, aksi takdirde gerekiyorsa `T *TObject = ::operator new( sizeof( T ), 0x0040 );`.  
   

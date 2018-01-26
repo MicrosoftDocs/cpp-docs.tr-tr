@@ -21,19 +21,19 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: a2f22f24206a125f9575529a203e5433f1b825a1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a715662ac6680218e3b15822108f429733569bfa
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="functions-with-variable-argument-lists--c"></a>Değişken bağımsız değişken işlevleri listeler (C++)
 İşlev bildirimleri son üyesini üç nokta (...) can olduğu değişken sayıda bağımsız değişken alın. Bu durumlarda, C++ tür açıkça bildirilen bağımsız değişkenleri yalnızca denetlemesini sağlar. Bir işlev sayısını ve türlerini bağımsız değişkenlerinin bile genel değişebilir şekilde yapmanız gerektiğinde değişken bağımsız değişken listeleri kullanabilirsiniz. Ailesi işlevlerini değişken bağımsız değişken listeleri kullanan işlevler örneğidir. `printf` *bağımsız değişken bildirimi listesi*  
   
 ## <a name="functions-with-variable-arguments"></a>Değişken bağımsız değişken işlevleri  
- Bağımsız değişkenler bildirilen olanlar sonra erişmek için standart içerme dosyası STDARG bulunan makroları kullanın. Aşağıda açıklandığı gibi H.  
+ Bağımsız değişkenler bildirilen olanlar sonra erişim, standart INCLUDE dosyasında yer alan makroları kullanın \<stdarg.h > aşağıda açıklandığı gibi.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Microsoft C++ son bağımsız değişken üç nokta ise ve üç nokta virgül koyarak bağımsız değişken olarak belirtilmesi üç nokta sağlar. Bu nedenle, bildirimi `int Func( int i, ... );` geçerli, ama `int Func( int i ... );` değil.  
   
@@ -43,9 +43,9 @@ ms.lasthandoff: 12/21/2017
   
  Tür bağımsız değişkenleri `char` geçirilen değişken bağımsız değişken olarak, bunlar yazmak için dönüştürülür `int`. Benzer şekilde, tür bağımsız değişkenleri **float** geçirilen değişken bağımsız değişken olarak, bunlar yazmak için dönüştürülür **çift**. Her zamanki Entegral ve kayan nokta promosyonlar tabi değişkenleridir diğer türleri. Bkz: [standart dönüşümler](standard-conversions.md) daha fazla bilgi için.  
   
- Bağımsız değişken listesinde üç nokta (...) kullanarak, değişken listeleri gerektiren işlevleri bildirilir. Değişken listesi tarafından geçirilen bağımsız değişkenlere erişmek için STDARG içerme dosyasında açıklanan türleri ve makroları kullanın. Bu makrolar hakkında daha fazla bilgi için bkz: [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). C çalışma zamanı kitaplığı belgeleri.  
+ Bağımsız değişken listesinde üç nokta (...) kullanarak, değişken listeleri gerektiren işlevleri bildirilir. Açıklanan makroları ve türleri kullanma \<stdarg.h > bir değişken listesi tarafından geçirilen erişim bağımsız değişkenlerini dosyasına içerir. Bu makrolar hakkında daha fazla bilgi için bkz: [va_arg, va_copy, va_end, va_start](../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md). C çalışma zamanı kitaplığı belgeleri.  
   
- Aşağıdaki örnek, makroları (STDARG içinde bildirilen. türü ile birlikte nasıl çalıştığını gösterir. H): 
+ Aşağıdaki örnek, makroları türü ile birlikte nasıl çalıştığını gösterir (bildirilen \<stdarg.h >): 
   
 ```  
 // variable_argument_lists.cpp  

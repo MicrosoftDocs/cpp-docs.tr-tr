@@ -22,14 +22,14 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 32ea2fbcbdee22e12487d7497f651b0d70b59c0e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d4e5b98b5541d1dc5f4a94c9611668a9ea8d787a
+ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="dllexport-dllimport"></a>dllexport, dllimport
-**Microsoft özel**  
+**Microsoft Specific**  
   
  `dllexport` Ve **dllimport** depolama sınıfı öznitelikler C ve C++ dilleri için Microsoft'a özgü uzantılar bağlıdır. Ya da DLL'den işlevleri, veri ve nesneleri almak ve vermek için bunları kullanabilirsiniz.  
   
@@ -37,8 +37,8 @@ ms.lasthandoff: 12/21/2017
   
 ```  
   
-      __declspec( dllimport ) declarator  
-__declspec( dllexport ) declarator  
+   __declspec( dllimport ) declarator  
+   __declspec( dllexport ) declarator  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
