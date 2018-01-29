@@ -102,6 +102,7 @@
 ##### [/Qpar (Otomatik Paralel Hale Getirici)](qpar-auto-parallelizer.md)
 ##### [/Qpar-report (Otomatik Paralel Hale Getirici Raporlama Düzeyi)](qpar-report-auto-parallelizer-reporting-level.md)
 ##### [/Qsafe_fp_loads](qsafe-fp-loads.md)
+##### [/Qspectre](qspectre.md)
 ##### [/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)](qvec-report-auto-vectorizer-reporting-level.md)
 #### [/RTC (Çalışma Zamanı Hata Denetimleri)](rtc-run-time-error-checks.md)
 #### [/sdl (Ek Güvenlik Denetimlerini Etkinleştir)](sdl-enable-additional-security-checks.md)
