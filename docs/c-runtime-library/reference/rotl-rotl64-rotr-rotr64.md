@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -34,7 +35,8 @@ f1_keywords:
 - _rotr
 - _rotl
 - rotl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - rotl64 function
 - _rotl function
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - _rotr64 function
 - bits, rotating
 ms.assetid: cfce439b-366f-4584-8ab1-d527b13fcfc6
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3cd52d08ccb5c75e58bc96ee490b70b99217555d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4524e2323c3e97b70ef5f3bd1778ebda11ac519e
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="rotl-rotl64-rotr-rotr64"></a>_rotl, _rotl64, _rotr, _rotr64
 BITS sola döndürür (`_rotl`) sağa (`_rotr`).  
@@ -65,7 +68,7 @@ BITS sola döndürür (`_rotl`) sağa (`_rotr`).
   
 ```  
   
-      unsigned int _rotl(  
+unsigned int _rotl(  
    unsigned int value,  
    int shift   
 );  
@@ -100,8 +103,8 @@ unsigned __int64 _rotr64(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|**_rotl, _rotl64**|\<stdlib.h >|  
-|**_rotr, _rotr64**|\<stdlib.h >|  
+|**_rotl, _rotl64**|\<stdlib.h>|  
+|**_rotr, _rotr64**|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

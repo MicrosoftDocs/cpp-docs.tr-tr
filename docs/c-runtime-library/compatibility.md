@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.programs
-dev_langs: C++
+f1_keywords:
+- c.programs
+dev_langs:
+- C++
 helpviewer_keywords:
 - CRT, compatibility
 - compatibility, C run-time libraries
 - compatibility
 ms.assetid: 346709cb-edda-4909-9a19-3d253eddb6b7
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f14d330ada8f71cc3556b7151189968b43cff4ca
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2c7d2882017a624bb00f5a32f5d6da69ff61057
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="compatibility"></a>Uyumluluk
 Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Standart Kitaplığı çoğunu destekler. C99 (ISO/IEC 9899:1999) kitaplıkla tanımlanan türü genel makroları özel durumları uygulayan \<tgmath.h > ve katı türü uyumluluğu \<complex.h >. UCRT de büyük bir alt kümesini POSIX.1 uygular (ISO/IEC 9945-1:1996, POSIX sistem uygulama programı arabirimi) C Kitaplığı, ancak değil tam olarak belirli bir POSIX standart uyumluluğunu.  Ayrıca, çeşitli Microsoft özgü işlevler ve standart bir parçası olmayan makroları UCRT uygular.  
@@ -34,7 +38,7 @@ Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Stand
   
  Standart C Kitaplığı'nda belirli işlevleri güvenli olmayan kullanım geçmişini yanlış kullanılmış parametreleri ve denetlenmeyen arabellekler nedeniyle vardır. Bu işlevler genellikle kodda güvenlik sorunları kaynağıdır. Microsoft, bir dizi parametre kullanımı doğrulayın ve çalışma zamanında bir sorun algılandığında geçersiz parametre işleyicisi çağırma bu işlevlerin daha güvenli sürümleri oluşturmuştur.  Varsayılan olarak, bir işlev kullanılabilir daha güvenli bir değişken sahip kullanıldığında bir kullanımdan kaldırma uyarısı Visual C++ derleyicisi verir. C++ olarak kodunuzu derlerken tanımlayabilirsiniz `_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES` çoğu uyarılarını kaldırmak için 1 olarak. Bu şablon aşırı yüklemeleri taşınabilir kaynak kodu koruyarak daha güvenli çeşitleri çağırmak için kullanır. Uyarıyı gizlemek için tanımlamak `_CRT_SECURE_NO_WARNINGS` bu işlevlerini kullanan kodu tüm üstbilgileri eklemeden önce. Daha fazla bilgi için bkz: [CRT'deki güvenlik özellikleri](../c-runtime-library/security-features-in-the-crt.md).  
   
- Belirli işlevleri için belgelere içinde belirtildiği gibi UCRT Windows API ile uyumlu olması dışında.  Belirli İşlevler, Windows 8 Mağazası uygulamaları veya Windows 10 Evrensel Windows uygulamaları desteklenmez. Bu işlevler listelenen [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx), desteklenmeyen işlevler numaralandırır [Windows çalışma zamanı](http://msdn.microsoft.com/en-us/9a1a18b8-9802-4ec5-b9de-0d2dfdf414e9).  
+ Belirli işlevleri için belgelere içinde belirtildiği gibi UCRT Windows API ile uyumlu olması dışında.  Belirli İşlevler, Windows 8 Mağazası uygulamaları veya Windows 10 Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Bu işlevler listelenen [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md), Windows çalışma zamanı tarafından desteklenmeyen işlevler numaralandırır ve [UWP](/uwp).  
   
 ## <a name="related-articles"></a>İlgili Makaleler  
   

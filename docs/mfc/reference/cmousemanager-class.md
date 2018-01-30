@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXMOUSEMANAGER/CMouseManager::LoadState
 - AFXMOUSEMANAGER/CMouseManager::SaveState
 - AFXMOUSEMANAGER/CMouseManager::SetCommandForDblClk
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMouseManager [MFC], AddView
 - CMouseManager [MFC], GetViewDblClickCommand
@@ -29,16 +31,17 @@ helpviewer_keywords:
 - CMouseManager [MFC], SaveState
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f50b74731089346a9675b5340ba0ea1a0b2879f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7d019bedd63e7b7700ec91309c9ccaa0a41bf1ed
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 Farklı komutlar belirli bir ile ilişkilendirilecek bir kullanıcının [CView](../../mfc/reference/cview-class.md) kullanıcı bu görünüm içinde tıklattığında nesne.  
@@ -77,7 +80,7 @@ class CMouseManager : public CObject
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxmousemanager.h  
   
-##  <a name="addview"></a>CMouseManager::AddView  
+##  <a name="addview"></a>  CMouseManager::AddView  
  Kayıtları bir [CView](../../mfc/reference/cview-class.md) nesnesi ile [CMouseManager sınıfı](../../mfc/reference/cmousemanager-class.md) özel fare davranışını desteklemez.  
   
 ```  
@@ -124,7 +127,7 @@ BOOL AddView(
   
  [!code-cpp[NVC_MFC_StateCollection#4](../../mfc/reference/codesnippet/cpp/cmousemanager-class_1.cpp)]  
   
-##  <a name="getviewdblclickcommand"></a>CMouseManager::GetViewDblClickCommand  
+##  <a name="getviewdblclickcommand"></a>  CMouseManager::GetViewDblClickCommand  
  Kullanıcı sağlanan görünüm içinde tıklattığında çalıştırılan komut döndürür.  
   
 ```  
@@ -138,7 +141,7 @@ UINT GetViewDblClickCommand(int iId) const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Görünüm bir komut ile ilişkili ise, komut tanımlayıcısı; Aksi takdirde 0.  
   
-##  <a name="getviewiconid"></a>CMouseManager::GetViewIconId  
+##  <a name="getviewiconid"></a>  CMouseManager::GetViewIconId  
  Bir görünüm kimliği ile ilişkili simgeyi alır.  
   
 ```  
@@ -155,7 +158,7 @@ UINT GetViewIconId(int iViewId) const;
 ### <a name="remarks"></a>Açıklamalar  
  Görünüm ilk kullanılarak kaydedilmemesi şartıyla bu yöntem başarısız olur [CMouseManager::AddView](#addview).  
   
-##  <a name="getviewidbyname"></a>CMouseManager::GetViewIdByName  
+##  <a name="getviewidbyname"></a>  CMouseManager::GetViewIdByName  
  Bir görünüm adı ile ilişkili görünüm kimliği alır.  
   
 ```  
@@ -172,7 +175,7 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem arar kullanarak kayıtlı görünümleri aracılığıyla [CMouseManager::AddView](#addview).  
   
-##  <a name="getviewnames"></a>CMouseManager::GetViewNames  
+##  <a name="getviewnames"></a>  CMouseManager::GetViewNames  
  Tüm kayıtlı görünüm adlarının bir listesini alır.  
   
 ```  
@@ -224,7 +227,7 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
   
  Çoğu durumda, bu işlev doğrudan çağırmanız gerekmez. Çalışma alanı serileştirme işleminin bir parçası olarak adlandırılır. Çalışma alanı seri hale getirme işlemi hakkında daha fazla bilgi için bkz: [CWinAppEx::SaveState](../../mfc/reference/cwinappex-class.md#savestate).  
   
-##  <a name="setcommandfordblclk"></a>CMouseManager::SetCommandForDblClk  
+##  <a name="setcommandfordblclk"></a>  CMouseManager::SetCommandForDblClk  
  Özel bir komut fare yöneticisiyle önce kaydedilmiş bir görünümü ile ilişkilendirir.  
   
 ```  
@@ -241,7 +244,7 @@ void SetCommandForDblClk(
  Komut tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Özel bir komut bir görünümü ile ilişkilendirmek için önce görünümü kullanarak kaydetmeniz gerekir [CMouseManager::AddView](#addview). `AddView` Yöntemi, bir görünüm tanımlayıcı bir giriş parametresi olarak gerektirir. Bir görünüm kaydettiğinizde çağırabilirsiniz `CMouseManager::SetCommandForDblClk` için sağlanan aynı görünüm tanımlayıcı giriş parametresi ile `AddView`. Bundan sonra kullanıcı kayıtlı görünümünde fare tıklattığında uygulama belirtildiği komutu yürütecek `uiCmd.` özel fare davranışı desteklemek için de fare Yöneticisi ile kayıtlı görünümünü özelleştirmek gerekir. Özel fare davranışı hakkında daha fazla bilgi için [klavye ve fare özelleştirmesi]--brokenlink--bakın (.. / Fare ve klavye customization.md).  
+ Özel bir komut bir görünümü ile ilişkilendirmek için önce görünümü kullanarak kaydetmeniz gerekir [CMouseManager::AddView](#addview). `AddView` Yöntemi, bir görünüm tanımlayıcı bir giriş parametresi olarak gerektirir. Bir görünüm kaydettiğinizde çağırabilirsiniz `CMouseManager::SetCommandForDblClk` için sağlanan aynı görünüm tanımlayıcı giriş parametresi ile `AddView`. Bundan sonra kullanıcı kayıtlı görünümünde fare tıklattığında uygulama belirtildiği komutu yürütecek `uiCmd.` özel fare davranışı desteklemek için de fare Yöneticisi ile kayıtlı görünümünü özelleştirmek gerekir. Özel fare davranışı hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../keyboard-and-mouse-customization.md).  
   
  Varsa `uiCmd` ayarlanmış 0 olarak belirtilen görünüm artık bir komutla ilişkili değil.  
   

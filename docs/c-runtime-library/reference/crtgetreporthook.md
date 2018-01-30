@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _CrtGetReportHook
+apiname:
+- _CrtGetReportHook
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtGetReportHook
 - _CrtGetReportHook
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtGetReportHook function
 - _CrtGetReportHook function
 ms.assetid: 922758ed-7edd-4359-9c92-0535192dc11a
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 69c49895f50f18e96a1d673df3e80e6bb7d88824
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 94b92ee2bc6f30df99db23cb1417f1e490d24fa5
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="crtgetreporthook"></a>_CrtGetReportHook
 Çalışma zamanı hata ayıklama işlemi (yalnızca hata ayıklama sürümü) raporlaması için C içine takma için istemci tanımlı raporlama işlevi alır.  
@@ -60,7 +64,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtGetReportHook`|\<crtdbg.h >|  
+|`_CrtGetReportHook`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   
@@ -68,7 +72,7 @@ _CRT_REPORT_HOOK _CrtGetReportHook( void );
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="example"></a>Örnek  
- Nasıl kullanılacağına ilişkin bir örnek için `_CrtSetReportHook`, bkz: [rapor](http://msdn.microsoft.com/en-us/f6e08c30-6bd9-459a-830a-56deec0d2051).  
+ Nasıl kullanılacağına ilişkin bir örnek için `_CrtSetReportHook`, bkz: [rapor](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/report).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)   

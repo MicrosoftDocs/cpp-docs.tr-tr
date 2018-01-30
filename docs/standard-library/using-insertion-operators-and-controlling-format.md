@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: insertion operators
+dev_langs:
+- C++
+helpviewer_keywords:
+- insertion operators
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9af3a0fe28e0b5d26f17f16a6e217dce9fd82969
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2794da411458ccdf83725b80a6b5ba8371e53248
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>Ekleme İşleçlerini Kullanma ve Biçimi Denetleme
 Bu konuda biçimi denetleme ve ekleme işleçlerini kendi sınıfları için oluşturma gösterilmektedir. Ekleme (**<<**) tüm standart C++ veri türleri için önceden programlanmış, hangi işleci bir çıkış akışı nesneye bayt gönderir. Ekleme işleçlerini "tamsayı bağımsız değişkeni varsayılan biçimi değiştirme öğeleri olan önceden tanımlanmış manipülatörleri ile" çalışır.  
@@ -32,7 +36,7 @@ Bu konuda biçimi denetleme ve ekleme işleçlerini kendi sınıfları için olu
   
 - [Duyarlılık](#vclrfprecisionanchor5)  
   
-- [Sayı tabanını](#vclrfradixanchor6)  
+- [Radix](#vclrfradixanchor6)  
   
 ##  <a name="vclrfoutputwidthanchor3"></a>Çıktı genişliği  
  Çıkış hizalamak için her öğe için çıktı genişliği koyarak belirttiğiniz `setw` manipulator akış veya çağırarak **genişliği** üye işlevi. Bu örnek sağa geniş bir sütun en az 10 karakter değerleri hizalar:  
@@ -213,11 +217,11 @@ std::cout <<extracted;   //   This
   
  Bu davranış el ile üstesinden gelmek, ancak daha kullanışlı, C ++ 14 dize gidiş yapma ekler `std::quoted` manipulator içinde akış `<iomanip>`. Ekleme, üzerine `quoted()` sınırlayıcı dizesiyle çevreleyen (tırnak ' "' varsayılan olarak) ve ayıklama sırasında son sınırlayıcı karşılaşılanaa kadar tüm karakterleri ayıklamak için akışını yönetir. Tüm Katıştırılmış tırnak bir kaçış karakteriyle kaçışlı ('\\\\' varsayılan olarak).  
   
- Sınırlayıcı yalnızca akış nesnesinde var; Ayıklanan dizesinde mevcut değildir ancak tarafından döndürülen dize mevcut [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str)().  
+ Sınırlayıcı yalnızca akış nesnesinde var; Ayıklanan dizesinde mevcut değildir ancak tarafından döndürülen dize mevcut [basic_stringstream::str](../standard-library/basic-stringstream-class.md#str).  
   
  Tırnak işaretli işleci giriş dizesi bir ham dize olup veya normal bir dize bağımsız olarak yararlı olacak şekilde nasıl bir dize kodda gösterilir ekleme ve çıkarma işlemleri boşluk davranışını bağımsızdır. Giriş dizesi, ne olursa olsun, biçimi katıştırılmış teklifler, satır sonları, sekmeler ve benzeri ve bunların tümü muhafaza edilir quoted() manipulator tarafından.  
   
- Daha fazla bilgi ve tam kod örnekleri, bkz: [tırnak içine alınmış]--brokenlink--(../Topic/%3Cios%3E%20functions.md#quoted).  
+ Daha fazla bilgi ve tam kod örnekleri için bkz: [tırnak içine alınmış](../standard-library/iomanip-functions.md#quoted).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Çıkış Akışları](../standard-library/output-streams.md)   

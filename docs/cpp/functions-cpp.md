@@ -1,13 +1,15 @@
 ---
 title: "İşlevler (C++) | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/25/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - defaults, arguments
 - function definitions
@@ -15,16 +17,17 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a5fa20f0a2236d6458490784d2fa0f1b53b13241
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 88031e4f47bea363c441986c72d5f890c03447f7
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="functions-c"></a>İşlevler [C++]
 Başka bir işlem gerçekleştirir kod bloğu bir işlevdir. Bir işlev tabloya işlev bağımsız değişkenleri geçirmek arayanlar etkinleştirmek giriş parametreleri isteğe bağlı olarak tanımlayabilirsiniz. Bir işlev isteğe bağlı olarak bir değer çıktısı olarak döndürür. İşlevler, ideal olarak açıkça işlevi yaptığı açıklayan bir ad ile tek bir yeniden kullanılabilir blok ortak işlemlerinde kapsüllemek için kullanışlıdır. Aşağıdaki işlevi çağıran gelen iki tamsayı kabul eder ve bunların toplamı döndürür; `a` ve `b` olan *parametreleri* türü `int`.  
@@ -50,6 +53,8 @@ int main()
  İşlev uzunluğa pratik bir sınır yoktur ancak tek iyi tanımlanmış bir görev gerçekleştirmeniz işlevleri için iyi tasarım amaçlar. Karmaşık algoritmalar kolay anlamak daha basit işlevlerini mümkün olduğunca parçalanmış.  
   
  Sınıf kapsamda tanımlanan işlevler üye işlevleri çağrılır. C++'da, diğer diller, bir işlev de (örtük genel ad alanı dahil) ad alanı kapsamda tanımlanabilir. Bu tür işlevler adlı *serbest işlevleri* veya *olmayan üye işlevleri*; standart kitaplığında yaygın olarak kullanılır.  
+
+İşlevler olabilir *aşırı*, sayı ve/veya biçimsel parametresi türü farklıysa, bir işlev farklı sürümlerini başka bir deyişle, aynı adı paylaşan. Daha fazla bilgi için bkz: [işlev aşırı yüklemesi](../cpp/function-overloading.md).
   
 ## <a name="parts-of-a-function-declaration"></a>Bir işlev bildirimi bölümleri  
  En az bir işlev *bildirimi* dönüş türü, işlev adı ve (boş olabilir) parametre listesini derleyici ek yönergeler sağlayan isteğe bağlı anahtar sözcükleri birlikte oluşur. Aşağıdaki örnek, bir işlev bildirimi verilmiştir:
@@ -127,7 +132,7 @@ int sum(int a, int b)
   
 7.  (yalnızca üye işlevleri) `static` uygulanan bir üyesine işlevi işlevi tüm nesne sınıfı örnekleriyle ilişkili olmadığı anlamına gelir.  
   
-8.  (Yalnızca statik olmayan üye işlevleri) Ref-ne zaman seçmek için bir işlev ait hangi aşırı yüklemenin derleyiciye belirten Niteleyici, örtük nesne parametresi (* Bu) rvalue başvuru lvalue başvuru karşılaştırması.  
+8.  (Yalnızca statik olmayan üye işlevleri) Ref-ne zaman seçmek için bir işlev ait hangi aşırı yüklemenin derleyiciye belirten Niteleyici, örtük nesne parametresi (* Bu) rvalue başvuru lvalue başvuru karşılaştırması. Daha fazla bilgi için bkz: [işlev aşırı yüklemesi](function-overloading.md#ref-qualifiers). 
   
  Aşağıdaki şekilde bir işlev tanımı parçaları gösterilmektedir. İşlev gövdesi gölgeli bir alandır.  
   
@@ -373,7 +378,7 @@ int main()
 }
 ```
 
-4. Dönüş değerini kullanarak ek olarak, "değerlerini pass-by-reference kullanabilir, böylece işlevi değiştirmek veya çağıranın sağlar nesneleri değerlerini başlatma parametreleri herhangi bir sayıda tanımlayarak dönebilirsiniz". Daha fazla bilgi için bkz: [başvuru türü işlev bağımsız değişkenleri](reference-type-function-arguments.md).
+4. Dönüş değerini kullanarak ek olarak, "değerlerini pass-by-reference kullanabilir, böylece işlevi değiştirmek veya çağıranın sağlar nesneleri değerlerini başlatma parametreleri herhangi bir sayıda tanımlayarak dönebilirsiniz". Daha fazla bilgi için bkz: [başvuru türü işlev bağımsız değişkenleri](reference-type-function-arguments.md).  
   
 ## <a name="function-pointers"></a>İşlev işaretçileri  
  C++, C dil aynı şekilde işlev işaretçileri destekler. Ancak daha fazla tür kullanımı uyumlu alternatifi genellikle bir işlev nesnesi kullanmaktır.  

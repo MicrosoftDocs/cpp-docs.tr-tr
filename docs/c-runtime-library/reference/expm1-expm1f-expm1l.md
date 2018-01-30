@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -28,22 +29,24 @@ f1_keywords:
 - expm1l
 - expm1
 - expm1f
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - expm1f function
 - expm1l function
 - expm1 function
 ms.assetid: 2a4dd2d9-370c-42b0-9067-0625efa272e0
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8fe98cb7002bcdbf428115666e07401f26205733
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e02b2b481e1b773e780623d43ae94d8abe0cba2
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="expm1-expm1f-expm1l"></a>expm1, expm1f, expm1l
 E tabanında bir eksi bir değer üstel hesaplar.  
@@ -88,5 +91,5 @@ long double expm1l(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [exp2, exp2f, exp2l](http://msdn.microsoft.com/en-us/a7974629-be1e-4196-a562-6624a0732003)   
+ [exp2, exp2f, exp2l](exp2-exp2f-exp2l.md)   
  [pow, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)

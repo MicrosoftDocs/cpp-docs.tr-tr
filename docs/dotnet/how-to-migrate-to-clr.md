@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - upgrading Visual C++ applications, /clr compiler option
 - compiling native code [C++]
@@ -16,18 +18,18 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f38450831ad85a09d3a43173f8febc7841f02c09
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cd40443bc656b0e0ec02b1ec05b604a758628321
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 Bu konuda yerel kodu derleme sırasında ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** çağırma ve .NET derlemelerden yönetilmeyen modüller ile uyumluluğunu korurken çağrılması için Visual C++ modül sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [yerel ve .NET birlikte çalışabilirliği](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.  
@@ -116,7 +118,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## <a name="fixing-errors"></a>Hatalarını çözme  
  İle derleme **/CLR** derleyici, bağlayıcı veya çalışma zamanı hatalarına neden olabilir. Bu bölümde, en sık karşılaşılan sorunlar açıklanmaktadır.  
   
-### <a name="metadata-merge"></a>Meta veri birleştirme  
+### <a name="metadata-merge"></a>Metadata Merge  
  Veri türleri farklı sürümlerini bağlayıcının iki tür için oluşturulan meta veri eşleşmediği için başarısız olmasına neden olabilir. (Bu genellikle bir türün üyeleri koşullu olarak tanımlanır, ancak koşulları türünü kullanan tüm CPP dosyaları için aynı olmayan neden olur.) Bu durumda bağlayıcı, yalnızca simge adı ve türü tanımlandığı ikinci OBJ dosyasının adı raporlama başarısız olur. Genellikle, bir veri türü sürümünün konumunu bulmak için OBJ dosyaları bağlayıcıya gönderilir sırasını döndürmek kullanışlıdır.  
   
 ### <a name="loader-lock-deadlock"></a>Yükleyici kilidi kilitlenmesi  
@@ -147,7 +149,7 @@ COMObj2->Method(args);  // C++ equivalent
 ## <a name="using-new-visual-c-features"></a>Yeni Visual C++ özellikleri kullanma  
  Uygulama derlerken, bağlantılar ve çalıştırmalarını sonra ile derlenmiş herhangi bir modüle .NET özellikleri kullanmaya başlayabilirsiniz **/CLR**. Daha fazla bilgi için bkz: [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  
   
- C++ için Yönetilen Uzantılar kullandıysanız, kodunuzu yeni sözdizimini kullanmak için dönüştürebilirsiniz. Söz dizimi farkları özeti için bkz: [C++ sözdizimi yükseltme denetim listesi için (NOTINBUILD) Yönetilen Uzantılar](http://msdn.microsoft.com/en-us/edbded88-7ef3-4757-bd9d-b8f48ac2aada). C++ için Yönetilen Uzantılar dönüştürme hakkında daha fazla bilgi için bkz: [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md).  
+ C++ için Yönetilen Uzantılar kullandıysanız, kodunuzu yeni sözdizimini kullanmak için dönüştürebilirsiniz. C++ için Yönetilen Uzantılar dönüştürme hakkında daha fazla bilgi için bkz: [C + +/ CLI geçiş öncüsü](../dotnet/cpp-cli-migration-primer.md).  
   
  Visual C++ içinde .NET programlama hakkında bilgi için bkz:  
   

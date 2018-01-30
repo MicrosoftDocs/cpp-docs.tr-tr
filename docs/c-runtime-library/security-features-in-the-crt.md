@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - _CRT_SECURE_NO_DEPRECATE
 - _CRT_NONSTDC_NO_WARNINGS
 - _CRT_SECURE_NO_WARNINGS
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - security deprecation warnings [C++]
 - CRT_NONSTDC_NO_DEPRECATE
@@ -31,16 +33,17 @@ helpviewer_keywords:
 - CRT, security enhancements
 - parameters [C++], validation
 ms.assetid: d9568b08-9514-49cd-b3dc-2454ded195a3
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ce5ff232a914b929153d8dc2ea6bb0951b4ff187
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1d32a69e179acee501c17d96218cc4ef2e10f0c3
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="security-features-in-the-crt"></a>CRT'deki Güvenlik Özellikleri
 Birçok eski CRT işlevleri daha güvenli, daha yeni sürümlerde. Güvenli işlevi varsa, daha eski, daha az güvenli sürüm kullanım dışı olarak işaretlenmiş ve yeni sürüme sahip `_s` ("güvenli") soneki.  
@@ -65,7 +68,7 @@ strcpy(szBuf, "test"); // warning: deprecated
   
  Güvenli şablon aşırı yüklemeleri olmadan bu kullanım dışı işlevleri için kesinlikle güvenli sürümlerini kullanmak üzere kodunuzu el ile güncelleştirme dikkate almalısınız.  
   
- Başka bir kullanımdan kaldırma uyarıları, güvenlik, ilgisiz POSIX işlevleri kaynağıdır. Standart kullanıcıların eşdeğerleriyle POSIX işlev adları (örneğin, değiştirme [erişim](../c-runtime-library/reference/access-crt.md) için [_access](../c-runtime-library/reference/access-waccess.md)), veya tanımlayarak POSIX ile ilgili kullanımdan kaldırma uyarıları devre dışı bırakma `_CRT_NONSTDC_NO_WARNINGS`. Daha fazla bilgi için bkz: [kullanım dışı CRT işlevleri](http://msdn.microsoft.com/en-us/7e259932-c6c8-4c1a-9637-639e591681a5).  
+ Başka bir kullanımdan kaldırma uyarıları, güvenlik, ilgisiz POSIX işlevleri kaynağıdır. Standart kullanıcıların eşdeğerleriyle POSIX işlev adları (örneğin, değiştirme [erişim](../c-runtime-library/reference/access-crt.md) için [_access](../c-runtime-library/reference/access-waccess.md)), veya tanımlayarak POSIX ile ilgili kullanımdan kaldırma uyarıları devre dışı bırakma `_CRT_NONSTDC_NO_WARNINGS`. Daha fazla bilgi için bkz: [Uyumluluk](compatibility.md).  
   
 ## <a name="additional-security-features"></a>Ek güvenlik özellikleri  
  Güvenlik özelliklerden bazıları şunlardır:  

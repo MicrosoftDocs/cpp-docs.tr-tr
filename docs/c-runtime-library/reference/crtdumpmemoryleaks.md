@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _CrtDumpMemoryLeaks
+apiname:
+- _CrtDumpMemoryLeaks
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -27,7 +29,8 @@ f1_keywords:
 - CrtDumpMemoryLeaks
 - _CrtDumpMemoryLeaks
 - _CRTDBG_CHECK_CRT_DF
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtDumpMemoryLeaks function
 - CRTDBG_LEAK_CHECK_DF macro
@@ -36,16 +39,17 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: 71b2eab4-7f55-44e8-a55a-bfea4f32d34c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fe47ee058f6dc4a33013e4773a7b3a057056b380
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 859f1918afc69054b13cab161f2d7b4801bcbd78
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 Bellek sızıntısı (yalnızca hata ayıklama sürümü) oluştuğunda dökümleri tüm bellek hata ayıklama yığınında engeller.  
@@ -75,7 +79,7 @@ int _CrtDumpMemoryLeaks( void );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtDumpMemoryLeaks`|\<crtdbg.h >|  
+|`_CrtDumpMemoryLeaks`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   
@@ -83,7 +87,7 @@ int _CrtDumpMemoryLeaks( void );
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="example"></a>Örnek  
- Nasıl kullanılacağına ilişkin bir örnek için `_CrtDumpMemoryLeaks`, bkz: [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
+ Nasıl kullanılacağına ilişkin bir örnek için `_CrtDumpMemoryLeaks`, bkz: [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)

@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - LoadStdProfileSettings
 - EnableShellOpen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - files [MFC], most recently used
 - DragAcceptFiles method [MFC]
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - MFC, file operations
 - registration [MFC], shell
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f8734bfd4e673e1298d6822bbd272e2d70ff7a81
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 28a12d9553e1519c158c0a0e9d2fcec6365b65fe
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="special-cwinapp-services"></a>Özel CWinApp Hizmetleri
 İleti döngüsü çalıştıran ve uygulamayı başlatın ve sonra temizleme fırsatı veren yanı sıra [CWinApp](../mfc/reference/cwinapp-class.md) birkaç diğer hizmetler sağlar.  
@@ -60,9 +63,9 @@ ms.lasthandoff: 12/21/2017
   
  Bu otomatik kayıt Destek `CWinApp` .reg dosyasını uygulamanızla birlikte sevk etmek veya özel yükleme yapması için gereksinimini ortadan kaldırır.  
   
- GDI + uygulamanız için başlatmak istiyorsanız ([GdiplusStartup]--brokenlink--çağırarak (_gdiplus_FUNC_GdiplusStartup_token_input_output_) içinde [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) işlevi), bunları gerekir GDI + arka plan iş parçacığı engelleyin.  
+ GDI + uygulamanız için başlatmak istiyorsanız (çağırarak [GdiplusStartup](https://msdn.microsoft.com/library/ms534077) içinde [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) işlevi), GDI + arka plan iş parçacığı gizlemek vardır.  
   
- Bunu ayarlayarak yapabilirsiniz **SuppressBackgroundThread** üyesi [GdiplusStartupInput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupInput) yapısına **doğru**. Ne zaman gizleme GDI + arka plan iş parçacığı, **NotificationHook** ve **NotificationUnhook** çağrıları (bakın [GdiplusStartupOutput]--brokenlink--(_gdiplus_STRUC_GdiplusStartupOutput)) gerekir yalnızca girerek ve uygulama ileti döngüsü çıkmadan önce yapılmalıdır. Çağrılacak bu nedenle, uygun bir yerdir **GdiplusStartup** ve sanal işlev bir geçersiz kılma kanca bildirim işlevleri olacağını [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), aşağıda gösterildiği gibi:  
+ Bunu ayarlayarak yapabilirsiniz **SuppressBackgroundThread** üyesi [GdiplusStartupInput](https://msdn.microsoft.com/library/ms534067) için yapı **doğru**. Ne zaman gizleme GDI + arka plan iş parçacığı, **NotificationHook** ve **NotificationUnhook** çağrıları yapılan yalnızca önceki girerek ve uygulama ileti döngüsü çıkılıyor. Bu çağrıları hakkında daha fazla bilgi için bkz: [GdiplusStartupOutput](https://msdn.microsoft.com/library/ms534068). Çağrılacak bu nedenle, uygun bir yerdir **GdiplusStartup** ve sanal işlev bir geçersiz kılma kanca bildirim işlevleri olacağını [CWinApp::Run](../mfc/reference/cwinapp-class.md#run), aşağıda gösterildiği gibi:  
   
  [!code-cpp[NVC_MFCDocView#6](../mfc/codesnippet/cpp/special-cwinapp-services_1.cpp)]  
   

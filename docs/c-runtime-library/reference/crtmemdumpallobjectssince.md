@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _CrtMemDumpAllObjectsSince
+apiname:
+- _CrtMemDumpAllObjectsSince
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtMemDumpAllObjectsSince
 - _CrtMemDumpAllObjectsSince
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CrtMemDumpAllObjectsSince function
 - CrtMemDumpAllObjectsSince function
 ms.assetid: c48a447a-e6bb-475c-9271-a3021182a0dc
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d71b5d13b5616717c0b3fc0ac6eae0fc1ca8b551
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c1c04d21b1c4009bd93e608d1c243d5b459e2422
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 Program yürütme başlangıç ya da belirtilen yığın durumu (yalnızca hata ayıklama sürümü) yığın nesneleri hakkında bilgi dökümünü yapar.  
@@ -68,7 +72,7 @@ Program yürütme başlangıç ya da belirtilen yığın durumu (yalnızca hata 
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|**_CrtMemDumpAll ObjectsSince**|\<crtdbg.h >|  
+|**_CrtMemDumpAll-ObjectsSince**|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   
@@ -76,7 +80,7 @@ Program yürütme başlangıç ya da belirtilen yığın durumu (yalnızca hata 
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="example"></a>Örnek  
- Nasıl kullanılacağına ilişkin bir örnek için `_CrtMemDumpAllObjectsSince`, bkz: [crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167).  
+ Nasıl kullanılacağına ilişkin bir örnek için `_CrtMemDumpAllObjectsSince`, bkz: [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)   

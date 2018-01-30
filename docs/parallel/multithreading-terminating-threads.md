@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: CREATE_SUSPENDED
-dev_langs: C++
+f1_keywords:
+- CREATE_SUSPENDED
+dev_langs:
+- C++
 helpviewer_keywords:
 - premature thread termination
 - starting threads
@@ -19,16 +22,17 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8017d47f632374d8979d9a0850e1d1bfd8b9df07
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c287de62169ef5d205ac791071cee4b103f60abc
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="multithreading-terminating-threads"></a>Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma
 İki normal durum iş parçacığının sonlandırılmasına neden: denetleyen işlev çıkar veya iş parçacığının tamamlanıncaya kadar çalışabilmesi için izin verilmiyor. Sözcük işlemci arka plan yazdırması için bir iş parçacığı kullandıysanız, denetleme normalde başarıyla tamamlanmış yazdırma sonlandırma işlevi. Ancak, kullanıcı yazdırmayı iptal etmek istiyorsa, erken sona erdirilecek arka plan yazdırma iş parçacığı vardır. Bu konu, her durumun nasıl uygulanacağını ve sonlandırıldıktan sonra bir iş parçacığı çıkış kodunu alma açıklar.  
@@ -58,7 +62,7 @@ ms.lasthandoff: 12/21/2017
   
 -   Ayarlama `m_bAutoDelete` veri üyesini **FALSE**. Böylece `CWinThread` iş parçacığı sonlandırıldıktan sonra varlığını sürdürmesi için nesne. Daha sonra erişebilirsiniz `m_hThread` iş parçacığı sonlandırıldıktan sonra veri üyesi. Bu yöntemi kullanırsanız, ancak yok etme için sorumlu olduğunuz `CWinThread` framework otomatik olarak onu sizin için silmez çünkü nesne. Bu tercih edilen yöntemdir.  
   
--   İş parçacığının işleyicilerini ayrı saklayın. İş parçacığı oluşturulduktan sonra kopyalama, `m_hThread` veri üyesi (kullanarak **:: DuplicateHandle**) başka bir değişkene ve değişken üzerinden erişebilirsiniz. Bu şekilde nesne sonlandırma gerçekleşir ve iş parçacığının neden yine de bulabilirsiniz otomatik olarak silinir. Tanıtıcı çoğaltabilirsiniz önce iş parçacığı sonlandırma değil, dikkat edin. Bunu yapmak için en güvenli yolu geçirmektir **AfxBeginThread'e** için [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), tanıtıcı depolamak ve ardından iş parçacığını çağırarak devam [ResumeThread'i](../topic/../mfc/reference/cwinthread-class.md#resumethread).  
+-   İş parçacığının işleyicilerini ayrı saklayın. İş parçacığı oluşturulduktan sonra kopyalama, `m_hThread` veri üyesi (kullanarak **:: DuplicateHandle**) başka bir değişkene ve değişken üzerinden erişebilirsiniz. Bu şekilde nesne sonlandırma gerçekleşir ve iş parçacığının neden yine de bulabilirsiniz otomatik olarak silinir. Tanıtıcı çoğaltabilirsiniz önce iş parçacığı sonlandırma değil, dikkat edin. Bunu yapmak için en güvenli yolu geçirmektir **AfxBeginThread'e** için [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), tanıtıcı depolamak ve ardından iş parçacığını çağırarak devam [ResumeThread'i](../mfc/reference/cwinthread-class.md#resumethread).  
   
  Nedenini belirlemek her iki yöntem sayesinde bir `CWinThread` nesne sonlandırıldı.  
   

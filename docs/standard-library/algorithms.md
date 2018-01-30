@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - libraries [C++], C++ algorithm conventions
 - algorithms [C++], C++
@@ -15,16 +17,17 @@ helpviewer_keywords:
 - algorithm template function C++ library conventions
 - conventions [C++], C++ algorithm
 ms.assetid: dec9b373-7d5c-46cc-b7d2-21a938ecd0a6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6608b7499c18f1b740875c403e9cb8d55736c30d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5bc9d57f93b5d3ee537330ab16c2c9a02b6beead
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="algorithms"></a>Algoritmalar
 Algoritmalar, C++ Standart Kitaplığı, temel bir parçasıdır. Algoritmalar kapsayıcıları kendilerini ile ancak bunun yerine yineleyiciler çalışmaz. Bu nedenle, aynı algoritmayı çoğu değilse tarafından tüm C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Bu bölüm, C++ Standart Kitaplığı algoritmalarının terminoloji ve kuralları açıklar.  
@@ -56,7 +59,7 @@ Algoritmalar, C++ Standart Kitaplığı, temel bir parçasıdır. Algoritmalar k
   
  Yineleyiciler aralığında belirlenen öğeleri dizisi [`First`, `Last`) operatörü tarafından sıralanan sırası **<**  her IF *N* aralığında [0, `Last`  -  `First`) ve her *M* aralığında (N `Last`  -  `First`) koşulu! () \*(`First` + *M*) < \*(*ilk* + *N*)) geçerlidir. (Öğeleri artan düzende sıralanır unutmayın.) Koşul işlevi **işleci <**, ya da ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu. Ayrıca, katı bir zayıf onu karşılaştırır işlenen üzerinde sıralama koymak gerekir.  
   
- Yineleyiciler aralığında belirlenen öğeleri dizisi [`First`, `Last`) yığın göre sıralanmış **işleci <** her IF *N* aralığında [1, `Last`  -  `First`) koşulu! (\*`First` < \*(`First` + *N*)) geçerlidir. (İlk öğesi, en büyük olur.) İç yapısını Aksi halde yalnızca şablon işlevleri bilinen [make_heap](http://msdn.microsoft.com/Library/b09f795c-f368-4aa8-b57e-61ee6100ddc2), [pop_heap]--brokenlink--(.. / Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#pop_heap) ve [push_heap] - brokenlink--(.. / Topic/not%20found:c10b0c65-410c-4c83-abf8-8b7f61bba8d0.md#push_heap). Sıralı, koşul işlevinin olduğu gibi **işleci <**, veya ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini ve katı bir zayıf onu karşılaştırır işlenen üzerinde sıralama koymak gerekir. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu.  
+ Yineleyiciler aralığında belirlenen öğeleri dizisi [`First`, `Last`) yığın göre sıralanmış **işleci <** her IF *N* aralığında [1, `Last`  -  `First`) koşulu! (\*`First` < \*(`First` + *N*)) geçerlidir. (İlk öğesi, en büyük olur.) İç yapısını Aksi halde yalnızca şablon işlevleri bilinen [make_heap](../standard-library/algorithm-functions.md#make_heap), [pop_heap](../standard-library/algorithm-functions.md#pop_heap), ve [push_heap](../standard-library/algorithm-functions.md#push_heap). Sıralı, koşul işlevinin olduğu gibi **işleci <**, veya ona ait tüm değiştirme gerekir değiştirmemesi işlenenleri birini ve katı bir zayıf onu karşılaştırır işlenen üzerinde sıralama koymak gerekir. Aynı verim gerekir `bool` kabul edilir ve her iki işlenen bir kopyasını işleneni yerine, aynı sonucu verecek gerekir her zaman sonucu.  
   
  C++ Standart Kitaplığı algoritmaları bulunan [ \<algoritması >](../standard-library/algorithm.md) ve [ \<sayısal >](../standard-library/numeric.md) üstbilgi dosyaları.  
   

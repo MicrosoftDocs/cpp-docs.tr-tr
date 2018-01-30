@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: 'index-page '
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - attributed programming [C++]
 - attributes [C++]
 - programming [C++], attributed programming
 ms.assetid: 563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2e5477d91d50ab239732adf3521a2bf07d92a1c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6498659865ae3cad536cdc8e446c04cdd731a67e
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malzemeler çeşitli içerir. Öznitelikler, Visual C++ ' ta yeni bir özellik COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme kolaylaştırmak için tasarlanmıştır. Kaynak dosyalarınız öznitelikleri eklediğinizde derleyici sağlayıcısı dinamik bağlantı kitaplığı (DLL) kod ekleme veya oluşturulan nesne dosyaları kodda değiştirmek için birlikte çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğelerin oluşturulmasında yardımcı özniteliği vardır. Tümleşik geliştirme ortamı (IDE), öznitelikleri ve Özellikler penceresini sihirbazları tarafından desteklenir.  
@@ -57,5 +59,3 @@ Visual C++ öznitelikleri programlarınıza kullanmanıza yardımcı olacak malz
  [__super](../cpp/super.md)ve [__interface](../cpp/interface.md)  
  Öznitelikli Programlama ilgili yeni C++ anahtar sözcükleri bağlantılar.  
   
- [(NOTINBUILD) Visual C++ programlama yöntemleri](http://msdn.microsoft.com/en-us/0822f806-fa81-4b65-bf0f-1e2921f30c95)  
- Visual C++ kitaplıkları hakkındaki kavramsal bilgileri ve çeşitli kodlama teknolojilerini ve tekniklerini açıklayan konuların bağlantılarını sağlar.

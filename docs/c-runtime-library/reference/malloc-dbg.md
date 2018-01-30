@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _malloc_dbg
+apiname:
+- _malloc_dbg
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - malloc_dbg
 - _malloc_dbg
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - malloc_dbg function
 - memory allocation
 - _malloc_dbg function
 ms.assetid: c97eca51-140b-4461-8bd2-28965b49ecdb
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fc67af9abb5602cca81eefa6aaeb131423057678
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6693b362bcc69b6ca8e8b97dc350eb57b802436f
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 Ek alan yığınla bellek bloğu için hata ayıklama üstbilgi ayırır ve arabellekler (yalnızca hata ayıklama sürümü) üzerine yazılır.  
@@ -85,7 +89,7 @@ void *_malloc_dbg(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_malloc_dbg`|\<crtdbg.h >|  
+|`_malloc_dbg`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   
@@ -93,7 +97,7 @@ void *_malloc_dbg(
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  
   
 ## <a name="example"></a>Örnek  
- Nasıl kullanılacağına ilişkin bir örnek için `_malloc_dbg`, bkz: [crt_dbg1](http://msdn.microsoft.com/en-us/17b4b20c-e849-48f5-8eb5-dca6509cbaf9).  
+ Nasıl kullanılacağına ilişkin bir örnek için `_malloc_dbg`, bkz: [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)   

@@ -1,33 +1,38 @@
 ---
 title: "İşlev aşırı yüklemesi | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 1/25/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - function overloading [C++], about function overloading
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 785692992863e5a1cf3800f536d3f8fe3790b4a0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d21ecfb649748c9bf7e190d4857ce93ebee61dd1
+ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
-C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar, aşırı yüklenmiş işlevler olarak bilinir ve Aşırı Yükleme bölümünde ayrıntılı olarak açıklanmaktadır. Aşırı yüklenmiş işlevler, programcıların bir işlev için bağımsız değişkenlerin türlerine ve sayısına göre farklı semantikler sağlamasına imkan tanır.  
+C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş işlevlerin bir işlev bağımsız değişken sayısı ve türleri bağlı olarak farklı anlamları sağlamak etkinleştirin. 
   
- Örneğin, bir **yazdırma** bir dize alır işlevi (veya **char \*** ) bağımsız değişkeni bir bağımsız değişken türü birden çok farklı görevleri gerçekleştirir **çift** . Aşırı yükleme, tekdüzen adlandırmaya imkan tanır ve programcıların `print_sz` veya `print_d` gibi adlar oluşturma zorunluluğunu ortadan kaldırır. Aşağıdaki tabloda, C++'nın aynı kapsamda aynı ana sahip işlev gruplarını birbirinden ayırmak için işlev bildiriminin hangi bölümlerini kullandığını gösterir.  
+ Örneğin, bir **yazdırma** isteyen işlevi bir **std::string** bağımsız değişkeni bir bağımsız değişken türü birden çok farklı görevleri gerçekleştirebileceğiniz **çift**. Aşırı yükleme kaydeder, adları gibi kullanmak zorunda kalmaktan `print_string` veya `print_double`. Derleme zamanında, çağıran tarafından geçirilen bağımsız değişken türünü kullanmak için hangi aşırı yüklemenin dayalı derleyici seçer.  Çağırırsanız **print(42.0)** sonra **void yazdırma (çift d)** işlevi çağrılabilir. Çağırırsanız **("Merhaba Dünya") yazdırma** sonra **print(std::string) void** aşırı çağrılabilir.
+
+Üye işlevleri ve üye olmayan işlevleri aşırı yüklenebilir. Aşağıdaki tabloda, C++'nın aynı kapsamda aynı ana sahip işlev gruplarını birbirinden ayırmak için işlev bildiriminin hangi bölümlerini kullandığını gösterir.  
   
 ### <a name="overloading-considerations"></a>Aşırı Yükleme Hakkında Önemli Noktalar  
   
@@ -39,9 +44,8 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 |Üç noktanın olması veya olmaması|Evet|  
 |`typedef` adlarının kullanımı|Hayır|  
 |Belirtilmemiş dizi sınırları|Hayır|  
-|**const** veya `volatile` (aşağıya bakın)|Evet|  
-  
- İşlev dönüş türü temel alınarak ayırt edilebilir rağmen bunlar bu temelinde aşırı yüklenemez.  `Const`veya `volatile` yalnızca temel olarak uygulamak için bir sınıfta kullanılabilir aşırı yüklemesi için kullanılan **bu** sınıfı, işlevin dönüş türü için bir işaretçi.  Diğer bir deyişle, aşırı yüklemesi yalnızca geçerlidir **const** veya `volatile` anahtar sözcüğünü izleyen bildiriminde işlevin bağımsız değişken listesi.  
+|**const** veya`volatile`|Evet, tüm işlevi uygulandığında|
+|[ref-qualifier](#ref-qualifier)|Evet|  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnekte, aşırı yüklemenin nasıl kullanılabileceği gösterilmektedir.  
@@ -51,68 +55,71 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 // compile with: /EHsc  
 #include <iostream>  
 #include <math.h>  
-  
+#include <string>
+
 // Prototype three print functions.  
-int print( char *s );                  // Print a string.  
-int print( double dvalue );            // Print a double.  
-int print( double dvalue, int prec );  // Print a double with a  
-//  given precision.  
-using namespace std;  
-int main( int argc, char *argv[] )  
-{  
-const double d = 893094.2987;  
-if( argc < 2 )  
-    {  
-// These calls to print invoke print( char *s ).  
-print( "This program requires one argument." );  
-print( "The argument specifies the number of" );  
-print( "digits precision for the second number" );  
-print( "printed." );  
-exit(0);  
-    }  
-  
-// Invoke print( double dvalue ).  
-print( d );  
-  
-// Invoke print( double dvalue, int prec ).  
-print( d, atoi( argv[1] ) );  
-}  
-  
+int print(std::string s);             // Print a string.  
+int print(double dvalue);            // Print a double.  
+int print(double dvalue, int prec);  // Print a double with a  
+                                     //  given precision.  
+using namespace std;
+int main(int argc, char *argv[])
+{
+    const double d = 893094.2987;
+    if (argc < 2)
+    {
+        // These calls to print invoke print( char *s ).  
+        print("This program requires one argument.");
+        print("The argument specifies the number of");
+        print("digits precision for the second number");
+        print("printed.");
+        exit(0);
+    }
+
+    // Invoke print( double dvalue ).  
+    print(d);
+
+    // Invoke print( double dvalue, int prec ).  
+    print(d, atoi(argv[1]));
+}
+
 // Print a string.  
-int print( char *s )  
-{  
-cout << s << endl;  
-return cout.good();  
-}  
-  
+int print(string s)
+{
+    cout << s << endl;
+    return cout.good();
+}
+
 // Print a double in default precision.  
-int print( double dvalue )  
-{  
-cout << dvalue << endl;  
-return cout.good();  
-}  
-  
-// Print a double in specified precision.  
+int print(double dvalue)
+{
+    cout << dvalue << endl;
+    return cout.good();
+}
+
+//  Print a double in specified precision.  
 //  Positive numbers for precision indicate how many digits  
 //  precision after the decimal point to show. Negative  
 //  numbers for precision indicate where to round the number  
 //  to the left of the decimal point.  
-int print( double dvalue, int prec )  
-{  
-// Use table-lookup for rounding/truncation.  
-static const double rgPow10[] = {   
-10E-7, 10E-6, 10E-5, 10E-4, 10E-3, 10E-2, 10E-1, 10E0,  
-10E1,  10E2,  10E3,  10E4, 10E5,  10E6  
-    };  
-const int iPowZero = 6;  
-// If precision out of range, just print the number.  
-if( prec < -6 || prec > 7 )  
-return print( dvalue );  
-// Scale, truncate, then rescale.  
-dvalue = floor( dvalue / rgPow10[iPowZero - prec] ) *  
-rgPow10[iPowZero - prec];  
-cout << dvalue << endl;  
-return cout.good();  
+int print(double dvalue, int prec)
+{
+    // Use table-lookup for rounding/truncation.  
+    static const double rgPow10[] = {
+        10E-7, 10E-6, 10E-5, 10E-4, 10E-3, 10E-2, 10E-1, 
+        10E0, 10E1,  10E2,  10E3,  10E4, 10E5,  10E6 };
+    const int iPowZero = 6;
+
+    // If precision out of range, just print the number.  
+    if (prec < -6 || prec > 7)
+    {
+        return print(dvalue);
+    }
+    // Scale, truncate, then rescale.  
+    dvalue = floor(dvalue / rgPow10[iPowZero - prec]) *
+        rgPow10[iPowZero - prec];
+    cout << dvalue << endl;
+    return cout.good();
 }  
 ```  
   
@@ -181,7 +188,7 @@ F1 = Add( 3, 6 );
   
  Bu iki kesişimi boş olduğunu unutmayın. Bu nedenle, derleyici bir hata iletisi oluşturur.  
   
- Bağımsız değişken eşleştirme, bir işlev için  *n*  varsayılan bağımsız değişkenler olarak değerlendirilir  *n* + 1 ayrı işlevleri, her biri farklı sayıda bağımsız değişken.  
+ Bağımsız değişken eşleştirme, bir işlev için * n * varsayılan bağımsız değişkenler olarak değerlendirilir * n *+ 1 ayrı işlevleri, her biri farklı sayıda bağımsız değişken.  
   
  Joker karakter üç nokta (...) görür; herhangi bir gerçek bağımsız değişken eşleşir. Aşırı yüklenmiş işlevi kümelerinizi onaylamadığından çok dikkatli tasarım değil, bu çok sayıda belirsiz kümelerine neden olabilir.  
   
@@ -257,7 +264,7 @@ volatile Over&
 |*tür adı*|*tür adı***&**|  
 |*tür adı***&**|*tür adı*|  
 |*tür adı* **]**|*tür adı\**|  
-|*tür adı* **(** *bağımsız değişken listesi* **)**|**(**  *\*türü adı* **) (** *bağımsız değişken listesi* **)**|  
+|*tür adı* **(** *bağımsız değişken listesi* **)**|**(** * \*türü adı* **) (** *bağımsız değişken listesi* **)**|  
 |*tür adı*|**const** *türü adı*|  
 |*tür adı*|`volatile`*türü adı*|  
 |*tür adı\**|**const** *türü adı\**|  
@@ -267,19 +274,19 @@ volatile Over&
   
 1.  Tam eşleşme. Hangi işlev çağrılır ve işlev prototipi türleri bildirilen türler arasında tam bir eşleşme her zaman en iyi eşleşme olan. Önemsiz dönüşümleri dizilerini tam eşleşme sınıflandırılır. Ancak, bu dönüşümleri yapmayın sıraları Dönüştür sıraları iyi değerlendirilir:  
   
-    -   İşaretçi işaretçisine gelen **const** (`type`  **\***  için **const** `type`  **\***  ).  
+    -   İşaretçi işaretçisine gelen **const** (`type` ** \* ** için **const** `type` ** \* ** ).  
   
-    -   İşaretçi işaretçisine gelen `volatile` (`type`  **\***  için `volatile` `type`  **\*** ).  
+    -   İşaretçi işaretçisine gelen `volatile` (`type` ** \* ** için `volatile` `type` ** \* **).  
   
-    -   Başvuru için başvurusundan **const** (`type`  **&**  için **const** `type`  **&** ).  
+    -   Başvuru için başvurusundan **const** (`type` ** & ** için **const** `type` ** & **).  
   
-    -   Başvuru için başvurusundan `volatile` (`type`  **&**  için `volatile` `type`  **&** ).  
+    -   Başvuru için başvurusundan `volatile` (`type` ** & ** için `volatile` `type` ** & **).  
   
 2.  Promosyon kullanarak eşleşir. Yalnızca tamsayı yükseltmeleri, gelen dönüşümleri içeren tam bir eşleşme olarak sınıflandırılan değil dizisi **float** için **çift**, ve önemsiz dönüşümleri promosyonlar kullanarak bir eşleşme olarak sınıflandırılmış. Eşleşen ne kadar iyi bir tam bir eşleşme olarak promosyonlar kullanarak bir eşleşme standart dönüşümler kullanarak eşleşmeden daha iyi olsa da.  
   
 3.  Standart dönüşümler kullanarak eşleşir. Tam bir eşleşme veya yalnızca standart dönüşümler ve önemsiz dönüşümleri içeren promosyonlar kullanarak bir eşleşme olarak sınıflandırılan değil dizisi standart dönüşümler kullanarak bir eşleşme olarak sınıflandırılır. Bu kategoride aşağıdaki kurallar uygulanır:  
   
-    -   Bir işaretçi dönüştürmeye türetilmiş bir sınıf, doğrudan veya dolaylı bir taban sınıfı için bir işaretçi dönüştürme için tercih **void \***  veya **const void \*** .  
+    -   Bir işaretçi dönüştürmeye türetilmiş bir sınıf, doğrudan veya dolaylı bir taban sınıfı için bir işaretçi dönüştürme için tercih **void \* ** veya **const void \* **.  
   
     -   Bir işaretçi bir dönüştürme için bir taban sınıfı için bir işaretçi türetilmiş bir sınıf için temel sınıfı için doğrudan bir temel sınıf daha yakındır daha iyi bir eşleşme üretir. Aşağıdaki çizimde gösterildiği gibi sınıf hiyerarşisi olduğunu varsayın.  
   
@@ -294,7 +301,7 @@ Tercih edilen dönüşümleri gösteren grafik
   
  Önceki kural türetme yalnızca belirli bir yol geçerlidir. Aşağıdaki çizimde gösterilen grafik göz önünde bulundurun.  
   
- ![Çoklu &#45; tercih edilen dönüşümleri gösterir devralma](../cpp/media/vc391t2.gif "vc391T2")  
+ ![Çoklu & #45; tercih edilen dönüşümleri gösterir devralma](../cpp/media/vc391t2.gif "vc391T2")  
 Tercih edilen dönüşümleri gösteren birden çok devralma grafiği  
   
  Türüne dönüştürme `C*` yazmak için `B*` türüne dönüştürme için tercih edilir `C*` yazmak için `A*`. Aynı yolda oldukları nedeni ve `B*` daha yakındır. Ancak, türüne dönüştürme `C*` yazmak için `D*` türüne dönüştürme için tercih değil `A*`; tercih yoktur dönüşümleri farklı yollar izledikleri için.  
@@ -399,15 +406,54 @@ obj.name
 ```  
   
  Sol işleneni `->*` ve `.*` (işaretçiden üyeye) işleçleri aynı şekilde ele `.` ve `->` bağımsız değişken eşleştirme göre (üye seçim) işleçleri.  
+
+## <a name="ref-qualifiers"></a>Ref niteleyicileri üzerinde üye işlevleri  
+Ref niteleyicileri olanaklı hale getirir olup nesne gösterdiği temel alarak üye işlevi aşırı yüklemeyi `this` bir rvalue ya da bir lvalue.  Bu özellik gereksiz kopyalama işlemleri senaryolarda önlemek için işaretçi veri erişebilmesi için değil seçtiğiniz kullanılabilir. Örneğin, sınıf varsayın **C** kurucusu bazı veriler başlatır ve bu verilerin bir kopyasını üye işlevinde döndürür **get_data()**. Türünde bir nesne, **C** derleyici seçecektir sonra yaklaşık yok edilmesi için bir rvalue olan **get_data() & &** kopyalamak yerine aşırı yükleme, hangi verileri taşır. 
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class C
+{
+
+public:
+    C() {/*expensive initialization*/}
+    vector<unsigned> get_data() & 
+    { 
+        cout << "lvalue\n";
+        return _data;
+    }
+    vector<unsigned> get_data() && 
+    {
+        cout << "rvalue\n";
+        return std::move(_data);
+    }
+    
+private:
+    vector<unsigned> _data;
+};
+
+int main()
+{
+    C c;
+    auto v = c.get_data(); // get a copy. prints "lvalue".
+    auto v2 = C().get_data(); // get the original. prints "rvalue"
+    return 0;
+}
+
+```
   
-## <a name="restrictions"></a>Kısıtlamalar  
+## <a name="restrictions-on-overloading"></a>Aşırı yükleme kısıtlamaları  
  Birkaç kısıtlamaları aşırı yüklenmiş işlevlerin kabul edilebilir bir kümesini yöneten:  
   
 -   Aşırı yüklenmiş işlevlerin kümesinde iki tüm işlevler farklı bağımsız değişken listeleri olması gerekir.  
   
 -   Tek başına, dönüş türüne göre aynı türdeki bağımsız değişken listeleriyle işlevler aşırı yüklemesi bir hatadır.  
   
-     **Microsoft özel**  
+     **Microsoft Specific**  
   
  Aşırı yüklenebilir **new işleci** yalnızca temeline göre dönüş türü — özellikle, belirtilen bellek modeli değiştiricisi temel alınarak.  
   
@@ -424,7 +470,7 @@ obj.name
     void Print( PSTR szToPrint );  
     ```  
   
-     Önceki iki işlevleri aynı bağımsız değişken listeleri vardır. `PSTR`türü için eş anlamlı olduğundan **char \*** . Üye kapsamda bu kodu bir hata oluşturur.  
+     Önceki iki işlevleri aynı bağımsız değişken listeleri vardır. `PSTR`türü için eş anlamlı olduğundan **char \* **. Üye kapsamda bu kodu bir hata oluşturur.  
   
 -   Numaralandırılmış türler farklı türler ve Aşırı yüklenen işlevler arasında ayrım yapmak için kullanılır.  
   
@@ -443,10 +489,13 @@ obj.name
     void Print( char szToPrint[][9][42] );  
     ```  
   
-## <a name="declaration-matching"></a>Bildirim eşleştirme  
+## <a name="overloading-overriding-and-hiding"></a>Aşırı yüklemesi, geçersiz kılma ve gizleme
+  
  Her iki işlev bildirimleri aynı kapsamda aynı ada sahip aynı işlevi veya aşırı yüklenmiş iki ayrı işlev başvurabilir. Bağımsız değişken olarak listeleniyorsa (önceki bölümde açıklandığı gibi) eşdeğer türlerle bağımsız bildirimleri içeren, aynı işleve işlev bildirimleri bakın. Aksi takdirde, aşırı yüklemesi kullanılarak seçilen iki farklı işlevler başvurun.  
   
- Sınıf kapsamı kesinlikle gözlenir; Bu nedenle, bir taban sınıf içinde bildirilen bir işlev işlevi olarak aynı kapsamda türetilen bir sınıfta bildirilmedi. Temel sınıfı işlevinde aynı ada sahip bir türetilmiş sınıfta bir işlev bildirilirse, türetilmiş sınıf işlev aşırı yüklemesi neden yerine temel sınıf işlevi gizler.  
+ Sınıf kapsamı kesinlikle gözlenir; Bu nedenle, bir taban sınıf içinde bildirilen bir işlev işlevi olarak aynı kapsamda türetilen bir sınıfta bildirilmedi. Sanal bir temel sınıfı, türetilmiş sınıf işlevi işlevinde aynı ada sahip türetilmiş bir sınıf işlevinde bildirilen varsa *geçersiz kılmaları* temel sınıf işlevi. Daha fazla bilgi için bkz: [sanal işlevler](../cpp/virtual-functions.md).
+
+Taban sınıf işlevi 'sanal' olarak bildirilmedi sonra türetilmiş sınıf işlevi söylenir *Gizle* onu. Hem geçersiz kılma ve gizleme aşırı yüklemesini farklıdır.  
   
  Blok kapsamı kesinlikle gözlenir; Bu nedenle, dosya kapsamda bildirilen işlevi bir işlevi olarak aynı kapsamda yerel olarak bildirilmedi. Yerel olarak bildirilen bir işlev dosya kapsamda bildirilen bir işlevi olarak aynı ada sahipse, yerel olarak bildirilen işlev aşırı yüklemesi neden yerine dosya kapsamlı işlevi gizler. Örneğin:  
   
@@ -526,7 +575,10 @@ double Account::Deposit( double dAmount, char *szPassword )
    else  
       return 0.0;  
 }  
-```  
+```
+
+
+
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [işlevler [C++]](../cpp/functions-cpp.md)
