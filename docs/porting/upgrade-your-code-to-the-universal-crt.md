@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3e19f72dac00d18af62e91b1466bc40f2148518e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e63945dc51fe55d81963790e7373a3d4dc9b0efe
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>Evrensel CRT kodunuzu yükseltme
 
@@ -42,7 +43,7 @@ Güncelleştirdiğinizde, Visual C++ projeleri projenin ayarlarsanız **bağlay�
   
 ## <a name="deployment-and-redistribution-of-the-universal-crt"></a>Dağıtım ve evrensel CRT dağıtılması
   
-UCRT artık Microsoft Windows işletim sisteminin bir bileşeni olduğundan, Windows 10 işletim sisteminin parçası olarak dahil edilir ve daha eski işletim sistemleri, Windows 8.1 ile Windows Vista için Windows Update aracılığıyla kullanılabilir. Yeniden dağıtılabilir sürüm, Windows XP için kullanılabilir. Bir işletim sistemi bileşeni olarak UCRT güncelleştirmeler ve Bakım Windows Update tarafından Visual Studio ve Visual C++ Derleyici sürümler bağımsız olarak yönetilir. UCRT güvenlik güncelleştirmeleri ve daha küçük bir görüntü boyutu kolaylığı için bir Windows bileşeni olduğundan, uygulamanız için UCRT merkezi dağıtımını kesinlikle öneririz.  
+UCRT artık Microsoft Windows işletim sisteminin bir bileşeni olduğundan, Windows 10 işletim sisteminin parçası olarak dahil edilir ve daha eski işletim sistemleri, Windows 8.1 ile Windows Vista için Windows Update aracılığıyla kullanılabilir. Yeniden dağıtılabilir sürüm, Windows XP için kullanılabilir. Bir işletim sistemi bileşeni olarak UCRT güncelleştirmeler ve Bakım Windows Update tarafından Visual Studio ve Microsoft C++ Derleyici sürümler bağımsız olarak yönetilir. UCRT güvenlik güncelleştirmeleri ve daha küçük bir görüntü boyutu kolaylığı için bir Windows bileşeni olduğundan, uygulamanız için UCRT merkezi dağıtımını kesinlikle öneririz.  
   
 Visual Studio 2015 veya Visual Studio 2017 tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'un desteklenen sürümleri için vcredist paketini kullanarak dağıtabilirsiniz. Vcredist paketleri UCRT bileşenleri içerir ve otomatik olarak Windows işletim sistemlerinde, varsayılan olarak yüklü olmayan yükleyin. Daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   

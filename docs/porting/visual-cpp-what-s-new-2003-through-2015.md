@@ -9,18 +9,20 @@ ms.technology:
 - devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5c401aa7a063ab7e76353a5781f008243204bc35
-ms.sourcegitcommit: b5ff17bcd5e5e02bc21717859165a6b819a0ab84
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4e730d7d47a8742d3c4f1f7c4636aabd8785cc93
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ &#39; teki 2015 aracılığıyla yeni 2003
 
@@ -1485,7 +1487,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
 #### <a name="compiler"></a>Derleyici
 
-Microsoft C++ derleyicisi bu ISO C ++ 11 dil özellikleri destekler:
+Microsoft Visual C++ derleyicisi bu ISO C ++ 11 dil özellikleri destekler:
 
 - Şablon şablonları varsayılan bağımsız değişkenleri işlevi.
 - Oluşturucular için temsilci seçme
@@ -1502,8 +1504,8 @@ Microsoft C++ derleyicisi bu ISO C ++ 11 dil özellikleri destekler:
 - Bileşik değişmez değerler.
 - Belirlenen başlatıcıları.
 - Kod bildirimlerle karıştırma.
-- Yeni derleyici seçeneği/ZC: strictstrings kullanarak dize sabit değeri dönüştürme değiştirilebilir değerlere izin verilmeyen. C ++ 98, dize değişmez değerleri dönüştürmeye char\* (ve geniş, değişmez değerleri wchar_t için dize\*) kullanımdan kaldırılmıştır. C ++ 11'de, dönüştürme tamamen kaldırıldı. Yerine derleyici kesinlikle standardına uygun ancak dönüştürme denetimini/ZC: strictstrings seçeneği sağlar. Varsayılan olarak, seçeneği kapalıdır. Bu seçenek hata ayıklama modunda kullanırken, STL derlenmez olduğunu unutmayın.
-- rvalue/lvalue başvuru atamaları. Rvalue başvuru ile C ++ 11 açıkça lvalues ve rvalues arasında ayırt edebilirsiniz. Daha önce Visual C++ derleyicisi bu belirli atama senaryolarda sağlamadı. Yeni bir derleyici seçeneği olan /Zc:rvalueCast, C++ dili çalışma Paper(see section 5.4, [expr.cast]/1) ile derleyici uyumluluğu sağlamak için eklenmiştir. Bu seçenek belirtilmediğinde varsayılan Visual Studio 2012 ile aynı davranıştır.
+- Dize değişmez değer dönüştürme değiştirilebilir değerlere yeni derleyici seçeneğini kullanarak izin verilmeyen **/ZC: strictstrings**. C ++ 98, dize değişmez değerleri dönüştürmeye char\* (ve geniş, değişmez değerleri wchar_t için dize\*) kullanımdan kaldırılmıştır. C ++ 11'de, dönüştürme tamamen kaldırıldı. Derleyici kesinlikle standardına uygun ancak yerine sağlar **/ZC: strictstrings** dönüştürme denetimini seçeneği. Varsayılan olarak, seçeneği kapalıdır. Bu seçenek hata ayıklama modunda kullanırken, STL derlenmez olduğunu unutmayın.
+- rvalue/lvalue başvuru atamaları. Rvalue başvuru ile C ++ 11 açıkça lvalues ve rvalues arasında ayırt edebilirsiniz. Daha önce derleyici bu belirli atama senaryolarda sağlamadı. Yeni bir derleme seçeneği **/Zc:rvalueCast**, C++ dili çalışma Paper(see section 5.4, [expr.cast]/1) ile derleyici uyumluluğu sağlamak için eklendi. Bu seçenek belirtilmediğinde varsayılan Visual Studio 2012 ile aynı davranıştır.
   - Not: kullanarak varsayılan işlevler için = varsayılan memberwise taşıma oluşturucuları istek ve taşıma atama işleçleri desteklenmiyor.
 
 ### <a name="c99-libraries"></a>C99 kitaplıkları

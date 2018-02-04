@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 09/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: UNIX [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 06e4b772288f2e7374bb10f1298da33fbc6dcac0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 258f08db457761a37822a872415633d6359b7b47
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX Kullanıcıları için Visual C++'a Giriş
 
-Bu konu, Visual C++ için yenidir ve Visual Studio tümleşik geliştirme ortamı (IDE) ve Visual C++ ile üretken isteyen UNIX kullanıcıları için bilgi sağlar.  
+Bu konu, Visual Studio için yenidir ve C++ ve Visual Studio tümleşik geliştirme ortamı (IDE) ile üretken isteyen UNIX kullanıcıları için bilgi sağlar.
   
 ## <a name="getting-started-on-the-command-line"></a>Komut satırında Başlarken  
 
-Visual C++ komut satırından UNIX komut satırı ortamı kullanacağınız benzer şekilde kullanabilirsiniz. Komut satırı C ve C++ derleyicisi (CL. kullanarak komut satırından derleme EXE), bağlayıcı (bağlantı. EXE) ve diğer NMAKE,. EXE, UNIX Microsoft sürümü yardımcı olun.  
+C++ derleyicisi komut satırından UNIX komut satırı ortamı kullanacağınız benzer şekilde kullanabilirsiniz. Komut satırı C ve C++ derleyicisi (CL. kullanarak komut satırından derleme EXE), bağlayıcı (bağlantı. EXE) ve diğer NMAKE,. EXE, UNIX Microsoft sürümü yardımcı olun.  
   
-UNIX komutları/usr/bin gibi bir ortak klasöre yüklenir. Visual C++'da, komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX farklı olarak bu araçlar düz bir komut istemi penceresinde kullanılabilir değil. Komut satırı araçları, bir geliştirici komut istemi kısayol kullanma veya Çalıştır kullanmak için geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve komut satırından Visual C++ programları derlemek için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
+UNIX komutları/usr/bin gibi bir ortak klasöre yüklenir. Visual Studio'da komut satırı araçları, Visual Studio yükleme dizininde VC\bin alt ve alt dizinlerinde yüklenir. UNIX farklı olarak bu araçlar düz bir komut istemi penceresinde kullanılabilir değil. Komut satırı araçları, bir geliştirici komut istemi kısayol kullanma veya Çalıştır kullanmak için geliştirici komut dosyası vcvarsall.bat gibi. Bu yolu ve C++ programları komut satırından derlemek için gerekli olan diğer ortam değişkenlerini ayarlar. Daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [izlenecek yol: komut satırında yerel C++ programı derleme](../build/walkthrough-compiling-a-native-cpp-program-on-the-command-line.md).  
   
 Bir geliştirici komut istemi kısayoluna açmak için girin *Geliştirici komut istemi* masaüstünde denetimi arayın ve seçin **Geliştirici komut istemi** Visual Studio sürümünüze sonucu. Belirli bir konağa ve hedef mimari için önceden yapılandırılmış bir geliştirici komut istemi seçmek için açık **Başlat** menüsü (Windows simgesi Masaüstü köşesinde) ve Visual Studio sürümünüze klasöre kaydırma yapın , aşağıdaki gibi **Visual Studio 2017**. Klasörü açın ve tercih edilen konak ve hedef Mimarinizi komut istemi kısayoluna seçin.
   
@@ -47,11 +51,11 @@ Birden çok kitaplıkları ve yürütülebilir dosyaları, her olası derleyici 
   
 ## <a name="importing-your-existing-code"></a>Varolan kod içeri aktarma 
  
-Visual C++ ile veya bir derleme görevleri dosyası olmadan derlemek ve içine yerleştirmek için ayarlanmış var olan kodu oluşturmak için kullanabileceğiniz bir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] projesi. Daha fazla bilgi için bkz: [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
+C++ derleyicisi ile veya bir derleme görevleri dosyası olmadan derlemek ve içine yerleştirmek için ayarlanmış var olan kodu oluşturmak için kullanabileceğiniz bir [!INCLUDE[vsprvs](../assembler/masm/includes/vsprvs_md.md)] projesi. Daha fazla bilgi için bkz: [nasıl yapılır: Varolan koddan C++ projesi oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md).  
   
 ## <a name="creating-a-new-project"></a>Yeni proje oluşturma  
 
-Geliştirme ortamında yeni projeler oluşturabilir. Visual C++ çeşitli ortak görevler için standart kod sağlayan çok sayıda şablonları sağlar. Uygulama sihirbazları çeşitli uygulama türleri için kod anahatlarıyla projeler oluşturmak için kullanabilirsiniz.  
+Geliştirme ortamında yeni projeler oluşturabilir. Visual Studio çeşitli ortak görevler için standart kod sağlayan çok sayıda şablonları sağlar. Uygulama sihirbazları çeşitli uygulama türleri için kod anahatlarıyla projeler oluşturmak için kullanabilirsiniz.  
   
 Boş bir proje ile kullanarak başlatabilirsiniz **konsol uygulaması (Win32) Sihirbazı**. Seçin **boş proje** onay kutusu. Daha sonra yeni ve mevcut dosyaları projeye sonra ekleyebilirsiniz.  
   
@@ -59,9 +63,9 @@ Bir proje oluşturduğunuzda, projeyi adlandırmanız gerekir. Varsayılan olara
   
 ## <a name="microsoft-specific-modifiers"></a>Microsoft'a Özgü Değiştiriciler  
 
-Visual C++ programlama Windows işletim sistemlerinde desteklemek için programlama dili standart C++ birkaç uzantı içerir. Bu uzantılar çağırma kurallarına işlev depolama sınıfı öznitelikler belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Tüm Visual C++ uzantılarının tam listesi için bkz: [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
+Microsoft Visual C++ Derleyici programlama Windows işletim sistemlerinde desteklemek için programlama dili standart C++ için birkaç uzantıları uygular. Bu uzantılar çağırma kurallarına işlev depolama sınıfı öznitelikler belirtmek için kullanılır ve tabanlı adresleme, diğerlerinin yanında. Tüm desteklenen C++ uzantılarının tam listesi için bkz: [Microsoft'a özgü değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
   
-Kullanarak tüm Microsoft özgü uzantılar c++ devre dışı bırakabilirsiniz **/Za** derleyici seçeneği. Birden çok platformu üzerinde çalıştırmak için kod yazmak istiyorsanız bu seçeneği önerilir. Daha fazla bilgi için **/Za** derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). Visual C++ uygunluğu hakkında daha fazla bilgi için bkz: [standart dışı davranış](../cpp/nonstandard-behavior.md).  
+Kullanarak tüm Microsoft özgü uzantılar c++ devre dışı bırakabilirsiniz **/Za** derleyici seçeneği. Birden çok platformu üzerinde çalıştırmak için kod yazmak istiyorsanız bu seçeneği önerilir. Daha fazla bilgi için **/Za** derleyici seçeneği bkz [/Za, /Ze (dil uzantılarını devre dışı bırak)](../build/reference/za-ze-disable-language-extensions.md). C++ Derleyici uyumluluğu hakkında daha fazla bilgi için bkz: [Visual C++ dili uygunluk](../visual-cpp-language-conformance.md) ve [standart dışı davranış](../cpp/nonstandard-behavior.md).  
   
 ## <a name="precompiled-headers"></a>Önceden derlenmiş üst bilgileri  
 

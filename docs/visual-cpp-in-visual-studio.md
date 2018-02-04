@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - unmanaged code, C++
 - development environment, Visual C++
@@ -17,26 +19,17 @@ helpviewer_keywords:
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6fecc7f821bec90321095130fb21147d7227685c
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2a1cfde0baec56931f7b3a5603d8166df6067eb5
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual C++ in Visual Studio
 
-Visual Studio 2017 programlama dili ve geliştirme araçları yerel Evrensel Windows uygulamaları, yerel Masaüstü ve sunucu uygulamaları, Android ve iOS aynı zamanda Windows çalıştıran ve .NET üzerinde çalışan uygulamalar yönetilen platformlar arası kitaplıkları geliştirmenize yardımcı Çerçeve.
-
-**Bu belge için kim?**
-
-Programları yazma C++ geliştiricileri için içeriktir.
-
-- Belirli bir C++ yeniden dağıtılabilir paketi aradığınız ve bir program çalıştırabilmeniz için çalışma zamanı bileşenleri Git [Microsoft](http://www.microsoft.com/) Web sitesi ve girin **Visual C++ yeniden dağıtılabilir** arama kutusuna. İndirin ve bilgisayarınız (64 bit Windows'ta çalıştırıyorsanız, örneğin, x64) mimarisini ve ihtiyacınız Visual C++ sürümü için yeniden dağıtılabilir paketini yükleyin. 
-
-- C++ programlama kavramları giriş arıyorsanız, bu içerik sunan birçok Web sitesi birine gidin veya bir kopyasını almak [programlama--ilkeleri ve uygulama C++ (ikinci Edition) kullanarak](http://stroustrup.com/Programming/) C++, çalışan Bjarne stok tarafından Stroustrup. Visual C++ içerik C++ temel olarak bilindiğini zaten olduğunu varsayar.
-
-- Visual Studio'dan ücretli veya ücretsiz bir sürümünü karşıdan yüklemeniz için Visual C++ derleyicisi arıyorsanız, [https://www.visualstudio.com/](https://www.visualstudio.com/).
+Microsoft Visual Visual C++ ya da MSVC, genellikle kısaltılmış C++ adıdır C++, C ve derleme dili geliştirme araçları ve kullanılabilir kitaplıkları için Windows Visual Studio bir parçası olarak. Bu araçlar ve kitaplıkları, Evrensel Windows Platformu (UWP) uygulamaları, yerel Windows Masaüstü ve sunucu uygulamaları, platformlar arası kitaplıkları ve Windows, Linux, Android ve iOS, hem de yönetilen uygulamaları ve .NET kullanımı kitaplıkları çalışan uygulamalar oluşturmanıza olanak verir Çerçeve. Herhangi bir şey basit konsol uygulamalardan en karmaşık ve karmaşık Windows Masaüstü için aygıt sürücüleri ve uygulamaları platformlar arası oyunlara mobil cihazları ve işletim sistemi bileşenleri için en küçük IOT aygıtlardan yazmak için Visual C++ kullanın çok sunuculu yüksek performanslı Azure bulut bilgi işlem.
 
 ## <a name="general-information-about-visual-c"></a>Visual C++ hakkında genel bilgiler
 
@@ -47,7 +40,7 @@ Visual C++ içindeki yenilikleri öğrenin.
 Visual Studio 2017 C++ uygunluk geliştirmeler hakkında bilgi edinin.
 
 [Visual C++ dili uyumluluğu](visual-cpp-language-conformance.md)  
-Visual C++'ta özelliğiyle uygunluk durumu listesi.
+Uyumluluk durumuna göre MSVC C++ derleyicisi özelliğinde listesi.
 
 [Visual C++ değişiklik geçmişi 2003 - 2015](porting/visual-cpp-change-history-2003-2015.md)  
 Önceki sürümlerde önemli değişiklikler hakkında bilgi edinin.
@@ -59,13 +52,13 @@ Güvenli kod modern C++ programlama C ++ 11 ve hızlı yazmanıza olanak tanıya
  Visual C++ araç takımı (Derleyici, bağlayıcı ve başka araçlar) ve raporunuzu gönderme yolları karşı etkin hata raporlarını oluşturmayı öğrenin.
 
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](porting/visual-cpp-porting-and-upgrading-guide.md)  
-Kod bağlantı noktası oluşturma ve Windows 10 ve evrensel Windows platformu C++ kodu bağlantı noktası oluşturma dahil olmak üzere Visual Studio 2017'de Visual C++ projeleri yükseltme için kılavuz.
+Kod bağlantı noktası oluşturma ve Windows 10 ve evrensel Windows platformu C++ kodu bağlantı noktası oluşturma dahil olmak üzere Visual Studio 2017 için projeleri yükseltme için kılavuz.
 
 [Visual C++ ekip blogu](http://blogs.msdn.com/b/vcblog/)  
  Yeni özellikler ve geliştiricileri en son bilgileri hakkında daha fazla bilgi [!INCLUDE[vcprvc](build/includes/vcprvc_md.md)].
 
 [Visual Studio indirmeleri](http://go.microsoft.com/fwlink/p/?linkid=235233)  
-Visual C++ indirin.
+Visual Studio indirin.
 
 [Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)  
 Farklı Visual Studio sürümleri hakkında bilgi edinin.
@@ -84,7 +77,7 @@ Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulu
 [Evrensel Windows uygulamaları](windows/universal-windows-apps-cpp.md)  
 Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. Windows mağazası uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Visual Studio kullanarak geliştirme Windows mağazası uygulamaları](http://go.microsoft.com/fwlink/p/?LinkId=248364) ve [C++ kullanarak Yol Haritası Windows mağazası uygulamaları için](http://go.microsoft.com/fwlink/p/?LinkId=244654).
 
-[Masaüstü Uygulamaları (Visual C++)](windows/desktop-applications-visual-cpp.md)  
+[Masaüstü uygulamaları (C++)](windows/desktop-applications-visual-cpp.md)  
 İleti döngüsü ve geri aramalar içeren masaüstü uygulamaları oluşturmayı öğrenin.
 
 [Visual C++'ta DLL'ler](build/dlls-in-visual-cpp.md)  
@@ -117,7 +110,7 @@ C++ önişlemci hakkında daha fazla bilgi için bkz: [C/C++ ön işlemci başvu
 
 ## <a name="c-libraries-in-visual-studio"></a>Visual Studio'da C++ kitaplıkları
 
-Aşağıdaki bölümler, Visual C++ ile birlikte farklı C++ kitaplıkları hakkında bilgi sağlar.
+Aşağıdaki bölümler, Visual Studio'da bulunan farklı C ve C++ kitaplıkları hakkında bilgi sağlar.
 
 [C Çalışma Zamanı Kitaplığı Başvurusu](c-runtime-library/c-run-time-library-reference.md)  
 Güvenlik sorunlarına neden olduğu bilinen işlevlere alternatif olarak güvenliği artırılmış seçenekleri içerir.
@@ -138,27 +131,18 @@ CPU üzerinde yürütülen zaman uyumsuz ve paralel algoritmalar.
 GPU üzerinde yürütülen yoğun paralel algoritmalar.
 
 [Windows çalışma zamanı Şablon kitaplığı (WRL)](http://msdn.microsoft.com/library/windows/apps/hh438466.aspx)  
-[!INCLUDE[win8_appname_long](build/includes/win8_appname_long_md.md)]uygulamaları ve bileşenleri.
+[!INCLUDE[win8_appname_long](build/includes/win8_appname_long_md.md)] uygulamaları ve bileşenleri.
 
-[C++/CLI (Visual C++) ile .NET Programlama](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
+[.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
 Ortak dil çalışma zamanı (CLR) için programlama.
 
 Ayrıca belgelerine bakın [STL/CLR](dotnet/stl-clr-library-reference.md) ve [C++ destek kitaplığı](dotnet/cpp-support-library.md).
 
 ## <a name="other-c-libraries"></a>Diğer C++ kitaplıkları
 
-Bu bölümde, Visual Studio ile bulunmamaktadır ancak indirilebilen ve Visual C++ ile kullanılan kitaplıklarına bağlantılar içerir.
-
-[Artırma](http://www.boost.org/)  
-Popüler ve yaygın olarak kullanılan kitaplığı.
-
-[C++ REST SDK](http://casablanca.codeplex.com).  
-Web Hizmetleri ile HTTP üzerinden iletişim kuran bir Microsoft kitaplığı.
+Bulma ve yükleme 600'den fazla C++ açık kaynak kitaplıkları'nın büyük ölçüde kolaylaştırma vcpkg komut satırı aracını kullanabilirsiniz. Bkz: [vcpkg: Windows için C++ Paket Yöneticisi](vcpkg.md).
 
 ## <a name="more-resources"></a>Daha fazla kaynak
-
-[Visual C++ kaynakları](http://msdn.microsoft.com/vstudio/hh386302.aspx)  
-Diğer Visual C++ kaynakları.
 
 [Standart C++](http://isocpp.org/)  
 C++ hakkında bilgi edinin, Modern C++ hakkında genel bilgileri alın ve kitaplar, makaleler, konuşmalar ve olaylar için bağlantılara ulaşın

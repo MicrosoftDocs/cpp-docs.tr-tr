@@ -1,23 +1,26 @@
 ---
 title: "Visual C++ araç ile ilgili bir sorun bildirme | Microsoft Docs"
 ms.date: 1/11/2018
-ms.technology: cpp
+ms.technology:
+- cpp
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 697b5dc087aa61280922d5574001838ea5ff1dcb
-ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fd7ba80e60251c56fd28a1c380d395e686fc27a4
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset"></a>Visual C++ araç ile ilgili bir sorun bildirme
 
-Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz.
+Microsoft Visual C++ Derleyici, bağlayıcı, veya diğer araçlar ve kitaplıkları sorunlarla karşılaşırsanız, bunları hakkında bilmek isteriz.
 
 Bir sorun hakkında bilmeniz bize en iyi yolu bize programınızı oluşturmakta olduğunuz nasıl ve bir hakkında hatayla karşılaşıldı, Ayrıntılar sorun açıklamasını içeren bir rapor göndermektir *yeniden oluşturma*, yeniden oluşturmak için kullanabileceğiniz eksiksiz bir test çalışması sorunu kendi makinelerde. Bu bilgiler sorunu bizim kodda var ve ortamınız için derleyici'nin diğer sürümlerini etkiler olup olmadığını belirlemek ve nedenini tanılamak için yerel değil hızla doğrulamamıza olanak sağlar.
 

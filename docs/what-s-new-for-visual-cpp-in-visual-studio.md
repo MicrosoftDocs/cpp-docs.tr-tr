@@ -1,22 +1,24 @@
 ---
 title: Visual Studio'da Visual C++ yenilikler | Microsoft Docs
 ms.date: 11/15/2017
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.topic: article
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f266e17e88118e41550da68e77434f52b3456261
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 328862bdb85059735ef069df1c7a9be8c6651f77
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="whats-new-for-visual-c-in-includevsdev15mdmiscincludesvsdev15mdmd"></a>Visual c++'ta için yenilikler nelerdir?[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]
 
-[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]çok sayıda güncelleştirme getirir ve Visual C++ ortamına giderir. 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, müşteriler tarafından birçok gönderilen [bir sorun bildirmek](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) ve [bir öneride bulunmak](https://visualstudio.uservoice.com/) altında seçenekleri **geri bildirim gönder** . Hataları bildirdiğiniz için teşekkür ederiz! Tüm Visual Studio yenilikler hakkında daha fazla bilgi için lütfen ziyaret [yenilikler [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] ](https://go.microsoft.com/fwlink/p/?linkid=834481).
+[!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] çok sayıda güncelleştirme getirir ve Visual C++ ortamına giderir. 250'den fazla düzeltilen artık ve derleyici ve araçlarını sorunlar bildirildiğinde, müşteriler tarafından birçok gönderilen [bir sorun bildirmek](/visualstudio/how-to-report-a-problem-with-visual-studio-2017) ve [bir öneride bulunmak](https://visualstudio.uservoice.com/) altında seçenekleri **geri bildirim gönder** . Hataları bildirdiğiniz için teşekkür ederiz! Tüm Visual Studio yenilikler hakkında daha fazla bilgi için lütfen ziyaret [yenilikler [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] ](https://go.microsoft.com/fwlink/p/?linkid=834481).
 
 <!--The compiler and tools version number in [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] is 14.10.24629. -->
 
@@ -32,11 +34,11 @@ Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özel
 
    **Visual Studio 2017 sürüm 15.3**:
 
-   **/Std: c ++ 17** seçeneği Visual C++ derleyicisi tarafından uygulanan C ++ 17 özellikler kümesi sağlar. Bu seçenek, C ++ 17 sonra derleyicisi ve standart kitaplığı desteği değiştirilen özellikler için veya yeni C++ standart çalışma taslak ve hatasını güncelleştirmeleri sürümlerinde devre dışı bırakır. Bu özellikleri etkinleştirmek için **/Std: c ++ Son**.
+   **/Std: c ++ 17** seçeneği derleyici tarafından uygulanan C ++ 17 özellikler kümesi sağlar. Bu seçenek, C ++ 17 sonra derleyicisi ve standart kitaplığı desteği değiştirilen özellikler için veya yeni C++ standart çalışma taslak ve hatasını güncelleştirmeleri sürümlerinde devre dışı bırakır. Bu özellikleri etkinleştirmek için **/Std: c ++ Son**.
 
    **Visual Studio 2017 sürüm 15,5**:
 
-   Visual C++ derleyicisi yaklaşık %75 yapılandırılmış bağlamaları dahil olmak üzere C ++ 17'de yeni özellikleri destekleyen `constexpr` Lambda'lar, `if constexpr`, satır içi değişkenleri Katlama ifadeleri ve ekleme `noexcept` türü sisteme. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için bkz: [C++ uygunluk Visual Studio 2017 yenilikleri](cpp-conformance-improvements-2017.md)
+   Derleyici yaklaşık %75 yapılandırılmış bağlamaları dahil olmak üzere C ++ 17'de yeni özellikleri destekleyen `constexpr` Lambda'lar, `if constexpr`, satır içi değişkenleri Katlama ifadeleri ve ekleme `noexcept` türü sisteme. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için bkz: [C++ uygunluk Visual Studio 2017 yenilikleri](cpp-conformance-improvements-2017.md)
 
 - [/ izin veren-](build/reference/permissive-standards-conformance.md): tüm katı standartları uyumluluk derleyici seçenekleri etkinleştirip çoğu Microsoft özgü derleyici uzantıları devre dışı bırakmak (ama `__declspec(dllimport)`, örneğin). Bu seçenek varsayılan olarak kapalıdır ancak üzerinde varsayılan olarak, belirli bir noktada gelecekte olacaktır.
 
@@ -48,7 +50,7 @@ Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özel
 
 - [/Debug:fastlink](build/reference/debug-generate-debug-info.md): % 30 etkinleştirmek daha hızlı artımlı bağlantı zaman (vs. Visual Studio 2015) değil kopyalayarak tüm PDB dosyasına hata ayıklama bilgileri. PDB dosyası yerine yürütülebilir dosyayı oluşturmak için kullanılan nesne ve kitaplık dosyaları için hata ayıklama bilgileri işaret eder. Bkz: [daha hızlı C++ derleme /Debug:fastlink ile VS "15" döngüsünde](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/) ve [derlemeler Visual Studio'da C++ önerileri hızı](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/).
 
-- [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)]kullanarak verir [/SDL](build/reference/sdl-enable-additional-security-checks.md) ile [/ await](build/reference/await-enable-coroutine-support.md). Biz kaldırılan [eş yordamlarla/RTC](build/reference/rtc-run-time-error-checks.md) sınırlamasını.
+- [!INCLUDE[vs_dev15_md](misc/includes/vs_dev15_md.md)] kullanarak verir [/SDL](build/reference/sdl-enable-additional-security-checks.md) ile [/ await](build/reference/await-enable-coroutine-support.md). Biz kaldırılan [eş yordamlarla/RTC](build/reference/rtc-run-time-error-checks.md) sınırlamasını.
 
 ### <a name="codegen-security-diagnostics-and-versioning"></a>CODEGEN, güvenlik, tanılama ve sürüm oluşturma
 

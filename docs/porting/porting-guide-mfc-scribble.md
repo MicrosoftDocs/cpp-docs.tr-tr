@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8ddb517d-89ba-41a1-ab0d-4d2c6d9047e8
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6445f07c8adff13a65bde46cc9e1cefd789b97ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 88be2baf2c2ce11be4594501ef12c2e339dec4dd
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="porting-guide-mfc-scribble"></a>Taşıma Kılavuzu: MFC Scribble
 Visual Studio için Visual Studio 2017 eski sürümlerinde oluşturulan Visual C++ projeleri için yükseltme yordamını dağıtır çeşitli konular ilk konudur. Bu konularda yükseltme işlemi oldukça basit bir proje ile başlayan ve biraz daha karmaşık olanları taşıma örneği tarafından tanıtır. Bu konuda, belirli bir projenin, MFC karalama yükseltme sürecinde size çalışır. C++ projeleri için uygun yükseltme işlemi için temel bir giriş olarak.  
@@ -85,7 +88,7 @@ _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
  Hiçbir test paketi biz yalnızca uygulaması başlatıldı şekilde özelliklerini kullanıcı Arabirimi aracılığıyla el ile test yoktur. Herhangi bir sorun gözlenen.  
   
 ### <a name="step-4-improve-the-code"></a>4. adım. Kod geliştirmek  
- Visual Studio 2017 geçirdikten, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. Visual C++ Derleyici geçerli sürümü C++ Standart sonra önceki sürümleri için daha fazla uyumluluğunu bir göz varsa bazı kodlar kodunuzu diğer derleyiciler daha güvenli ve daha kolay taşınabilir hale getirmek için değişikliklerini işletim sistemleri, dikkate almanız gereken olduğundan ve bazı geliştirmeler.  
+ Visual Studio 2017 geçirdikten, yeni C++ özelliklerden yararlanmak için bazı değişiklikler yapmak isteyebilirsiniz. C++ derleyicisi geçerli sürümü C++ Standart sonra önceki sürümleri için daha fazla uyumluluğunu bir göz varsa bazı kodlar kodunuzu diğer derleyiciler daha güvenli ve daha kolay taşınabilir hale getirmek için değişikliklerini işletim sistemleri, bazı düşünmelisiniz olduğundan ve geliştirmeler.  
   
 ## <a name="next-steps"></a>Sonraki adımlar  
  Küçük ve basit Windows Masaüstü uygulama karalama olması ve dönüştürmek sabit değildi. Çok sayıda küçük, basit uygulamaları kolayca yeni sürüme dönüştürün.  Daha fazla kod satır sayısını, modern mühendislik standartları kadar olmayabilir eski eski kod ile daha karmaşık uygulamalar için birden çok projeye ve kitaplıkları, özel derleme adımları veya karmaşık komut dosyalı otomatik derlemeler için yükseltmek için daha uzun sürer. Devam etmek [sonraki örnek](../porting/porting-guide-com-spy.md), COM Spy adlı ATL/COM uygulama.  

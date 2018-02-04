@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: f5fbcc3d-aa72-41a6-ad9a-a706af2166fb
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ba7e3f139aa9956cd9d2587522dc2d0ac1f2ff7b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d5751899dc064da4b17e240411878187a80acbdc
+ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="visual-c-porting-and-upgrading-guide"></a>Visual C++ taşıma ve yükseltme Kılavuzu
 Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve Visual Studio özellikleri yararlanarak yanı sıra derlemek ve üzerinde daha yeni bir sürüm Araçları'nın düzgün çalışması için kodu alma içerir. Bu konu ayrıca daha modern platformlara geçirme eski uygulamalar hakkında bilgiler içerir.  
@@ -82,7 +85,7 @@ Bu konu, Visual C++ kodu yükseltmek için bir kılavuz sağlar. Bu yeni dil ve 
 |Başlık|Açıklama|  
 |-----------|-----------------|  
 |[Önceki Visual C++ Sürümü Projelerini Yükseltme](upgrading-projects-from-earlier-versions-of-visual-cpp.md)|Visual C++ önceki sürümlerinde oluşturulan projelerin nasıl kullanılacağını açıklar.|  
-|[Visual Studio 2017 RC'te Visual C++ yenilikleri](../what-s-new-for-visual-cpp-in-visual-studio.md)|IDE içinde değiştirir ve Visual Studio 2017 Visual Studio 2015'ten araçları|  
+|[Visual Studio 2017 RC, C++ derleyicisi'ne yönelik yeni nedir](../what-s-new-for-visual-cpp-in-visual-studio.md)|IDE içinde değiştirir ve Visual Studio 2017 Visual Studio 2015'ten araçları|  
 |[Visual Studio 2017’deki C++ uyumluluk geliştirmeleri](../cpp-conformance-improvements-2017.md)|Visual Studio 2017 Visual Studio 2015'den standartlara uygunluk geliştirmeleri|  
 |[Visual C++ değişiklik geçmişi 2003 - 2015](visual-cpp-change-history-2003-2015.md)|Visual C++ kitaplıkları ve kodunuzda değişiklikler gerektirebilir 2015 aracılığıyla derleme araçlarını Visual Studio 2003 tüm değişikliklerin bir listesi.|  
 |[Visual C++ 2003 ile 2015 Arasındaki Farklar](visual-cpp-what-s-new-2003-through-2015.md)|Tüm "yenilikler" bilgileri Visual Studio 2015 ile Visual Studio 2003 Visual C++ için.|  
