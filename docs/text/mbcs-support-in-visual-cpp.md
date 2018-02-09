@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: _mbcs
-dev_langs: C++
+f1_keywords:
+- _mbcs
+dev_langs:
+- C++
 helpviewer_keywords:
 - tools [C++], MBCS support
 - Asian languages [C++]
@@ -28,19 +31,20 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdc00509d8660d8111ff1b966b7a881a153cb6c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 92d0b737c0cfb894f87da61519f30224f6a12fc1
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
-Bir MBCS etkinleştirilmiş Windows 2000 veya Windows XP işletim sistemi sürümünde çalıştırdığınızda (tümleşik kaynak kod düzenleyicisinde, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS etkinleştirilmiş, bellek penceresi dışında sistemidir.  
+Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tümleşik kaynak kod düzenleyicisini, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS etkinleştirilmiş, bellek penceresi dışında sistemidir.  
   
  ANSI veya Unicode karakter olarak bunlara çevirebilir olsa bile bellek penceresi bayt veri MBCS karakter olarak yorumlayın değil. ANSI karakter her zaman 1 bayt boyutunda ve Unicode karakterler 2 bayt cinsinden boyutu. MBCS ile karakterler 1 veya 2 bayt boyutunda olabilir ve kendi yorum hangi kod sayfası kullanımda olduğuna bağlıdır. Bu nedenle, güvenilir bir şekilde MBCS karakterleri görüntülemek bellek penceresi zor olabilir. Bellek penceresi hangi bayt karakter başlangıcıdır bilemezsiniz. Geliştirici bayt değerlerini bellek penceresinde görüntüleyebilir ve karakter gösterimi belirlemek için tabloları değeri bakın. Başlangıç adresi kaynak koduna göre bir dize olarak Geliştirici bildiği için bu mümkün olur.  
   

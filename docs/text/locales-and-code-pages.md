@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - locales [C++], about locales
 - locale IDs [C++]
@@ -22,16 +24,17 @@ helpviewer_keywords:
 - code pages [C++], locales
 - conventions [C++], international character support
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8f1134d106949918c7e8984835b86bbc4c6062f8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 54ab2f67a382da831ff4c1038f0269d0044f751f
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="locales-and-code-pages"></a>Yerel Ayarlar ve Kod Sayfaları
 Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları yansıtır. Belirli bir dile birden fazla ülke/bölge içinde konuşulan; Örneğin, Portekizce de olduğu gibi Portekiz Brezilya konuşulmaz. Buna karşılık, bir ülke veya bölgeye birden fazla resmi dili olabilir. Örneğin, iki dil Kanada vardır: İngilizce ve Fransızca. Bu nedenle, Kanada iki ayrı yerel ayarı vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.  
@@ -44,7 +47,7 @@ Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları 
   
  Kod sayfaları hakkında daha fazla bilgi için bkz: [kod sayfaları](../c-runtime-library/code-pages.md).  
   
- C çalışma zamanı kitaplığı iç kod sayfaları iki tür vardır: yerel ayar ve çok baytlı. Program yürütülmesi sırasında geçerli kod sayfası değiştirebilirsiniz (belgelerine bakın [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md) işlevleri). Ayrıca, çalışma zamanı kitaplığı bir elde edilir ve işletim sistemi kod sayfası değerini kullanın. Windows 2000'de işletim sistemi kod sayfası "sistem varsayılan ANSI" kod sayfasıdır. Bu kod sayfası program yürütme süresi için sabittir.  
+ C çalışma zamanı kitaplığı iç kod sayfaları iki tür vardır: yerel ayar ve çok baytlı. Program yürütülmesi sırasında geçerli kod sayfası değiştirebilirsiniz (belgelerine bakın [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md) işlevleri). Ayrıca, çalışma zamanı kitaplığı bir elde edilir ve program yürütme süresi için sabittir işletim sistemi kod sayfası değerini kullanın.  
   
  Yerel ayar kod sayfası değiştiğinde seçilen kod sayfası tarafından dikte işlevleri değişiklikler yerel ayara bağımlı kümesi davranışını. Varsayılan olarak, tüm yerel ayara bağımlı işlevleri yürütme "C" yerel ayar için benzersiz bir yerel ayar kod sayfası ile başlar. İç yerel ayar kod sayfası (yanı sıra diğer yerel ayarlara özgü özellikleri) çağırarak değiştirebileceğiniz `setlocale` işlevi. Çağrı `setlocale`(LC_ALL, "") yerel işletim sisteminin kullanıcı yerel ayarı tarafından belirtilen ayarlar.  
   

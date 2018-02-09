@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - globalization [C++], character sets
 - language-portable code [C++]
@@ -18,21 +20,22 @@ helpviewer_keywords:
 - character sets [C++], international programming strategies
 - localization [C++], character sets
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6b7ab27bb7a6458efde84451febaeb6f3ef37115
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ead6470bbbeacd43326f4373877eb991e5899116
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="internationalization-strategies"></a>Uluslararası Duruma Getirme Stratejileri
 Hedef işletim sistemi ve pazarlara bağlı olarak birkaç uluslararası duruma getirme stratejileri vardır:  
   
--   Uygulamanızı Unicode kullanır ve bu nedenle Windows 2000 ve Windows NT, ancak Windows 95 veya Windows 98 çalıştırır.  
+-   Uygulamanız Unicode kullanır.  
   
      Tüm karakterleri, 16 bit uzunluğunda (ANSI karakter programınızın bazı bölümlerinde özel amaçlarla kullanabilirsiniz ancak) ve Unicode özgü işlevsellik kullanın. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için yalnızca Unicode programlama sağlar. MFC tam Unicode etkindir.  
   
@@ -41,8 +44,6 @@ Hedef işletim sistemi ve pazarlara bağlı olarak birkaç uluslararası duruma 
      MBCS özgü işlevini kullanın. Dizeleri tek baytlık karakterler, çift baytlık karakterler ya da her ikisini de içerebilir. C çalışma zamanı kitaplığı işlevleri, makroları ve veri türleri için sadece MBCS programlama sağlar. MFC tam MBCS etkindir.  
   
 -   Uygulamanız için kaynak kodu tam taşınabilirlik için yazılmıştır — simgesiyle yeniden derlenmesi tarafından **_UNICODE** veya sembol **_MBCS** tanımlanan kullanın ya da sürümleri üretebilir. Daha fazla bilgi için bkz: [Tchar.h'de genel metin eşlemeleri](../text/generic-text-mappings-in-tchar-h.md).  
-  
--   Uygulamanızı bir açıklandığı gibi eksik Windows 95, Windows 98 ve Windows ME Unicode işlevleri için sarmalayıcı kitaplık kullanır [hem Windows 98 ve Windows 2000 çalıştıran tek bir Unicode Uygulaması Tasarlama](http://go.microsoft.com/fwlink/p/?LinkId=250770). Sarmalayıcı kitaplıklar de ticari olarak kullanılabilir.  
   
      Tümüyle taşınabilir C çalışma zamanı işlevleri, makroları ve veri türlerini kullanın. MFC'nin esnekliği bu stratejileri destekler.  
   

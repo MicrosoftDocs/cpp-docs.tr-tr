@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - servers [MFC], initializing
 - initializing servers [MFC]
@@ -18,16 +20,17 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c0b97a249246a9f7f9d47880f75bdce2ca643ae3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 636a0c2ff254957724511a067fa64533cb4837aa
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="registration"></a>Kayıt
 Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilecek nesne türlerinin bir listesini gösterir. OLE bu listedeki tüm sunucu uygulamaları tarafından sağlanan bilgileri içeren sistem kayıt veritabanından alır. Bir sunucu için kendisini kaydettiğinde, sistem kayıt veritabanına (kayıt defteri) koyar girişler her onu sağlayan nesnesi türünü açıklar, dosya uzantıları ve yolunu kendisi, diğer bilgilerin yanı.  
@@ -44,12 +47,12 @@ Bir kullanıcı bir uygulamaya bir OLE öğesi eklemek istediğinde OLE Seçilec
 > [!NOTE]
 >  Bağımsız uygulamalar çalıştırdığınızda MFC Uygulama Sihirbazı tarafından otomatik olarak oluşturulan uygulamaları kendilerini kaydedin.  
   
- Yükleme sırasında uygulamanız kaydetmek istiyorsanız, RegEdit.exe programı kullanın. (Windows 95, Windows 98 ve Windows ME, RegEdit Windows dizinindedir. Windows NT ve Windows 2000'de RegEdit Windows System32 dizinindedir.) Uygulamanızla birlikte bir Kurulum programı eklerseniz, Kurulum programı çalıştır sahip "RegEdit /S *appname*.reg". (Diğer bir deyişle, komutun başarılı tamamlanma bildirimi iletişim kutusu görüntülemez, sessiz işlemi /S bayrağı gösterir.) Aksi takdirde, RegEdit el ile çalıştırmak için kullanıcıdan isteyin.  
+ Yükleme sırasında uygulamanız kaydetmek istiyorsanız, RegEdit.exe programı kullanın. Uygulamanızla birlikte bir Kurulum programı eklerseniz, Kurulum programı çalıştır sahip "RegEdit /S *appname*.reg". (Diğer bir deyişle, komutun başarılı tamamlanma bildirimi iletişim kutusu görüntülemez, sessiz işlemi /S bayrağı gösterir.) Aksi takdirde, RegEdit el ile çalıştırmak için kullanıcıdan isteyin.  
   
 > [!NOTE]
 >  Uygulama Sihirbazı tarafından oluşturulan .reg dosyasını yürütülebilir dosyanın tam yolunu içermez. Yükleme programı ya da çalıştırılabilir dosyanın tam yolunu içerir veya PATH ortam değişkeni yükleme dizini içerecek şekilde değiştirmek için .reg dosyasını değiştirmeniz gerekir.  
   
- RegEdit kayıt veritabanına .reg metin dosyasının içeriğini birleştirir. Veritabanı doğrulamak veya onarmak için Kayıt Defteri Düzenleyicisi'ni kullanın. Temel OLE girdileri silme kaçınmaya dikkat edin. (Windows 95, Windows 98 ve Windows ME, Kayıt Defteri Düzenleyicisi Regedit.exe'yi ' dir. Windows NT ve Windows 2000'de RegEdit32.exe olmasından.)  
+ RegEdit kayıt veritabanına .reg metin dosyasının içeriğini birleştirir. Veritabanı doğrulamak veya onarmak için Kayıt Defteri Düzenleyicisi'ni kullanın. Temel OLE girdileri silme kaçınmaya dikkat edin.  
   
 ##  <a name="_core_server_initialization"></a>Sunucu başlatma  
  Uygulama Sihirbazı'nı bir sunucu uygulaması oluşturduğunuzda, sihirbazın tüm başlatma görevlerini sizin yerinize otomatik olarak tamamlar. Bu bölümde, bir sunucu uygulaması el ile yazarsanız yapmanız gerekir açıklanmaktadır.  

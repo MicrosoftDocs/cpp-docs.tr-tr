@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /tsaware
 - VC.Project.VCLinkerTool.TerminalServerAware
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Terminal Server
 - /TSAWARE linker option
@@ -18,16 +20,17 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4c6fb783f717f730945f8d34c8fe2a03f5e1f6d0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2956bd2ed8aa0c36e730468a15856cecfaf7e23f
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 ```  
@@ -43,7 +46,7 @@ ms.lasthandoff: 12/21/2017
   
  / TSAWARE kullanın ve uygulamanızı hala INİ dosyaları kullanıyorsa, dosya sistemi tüm kullanıcılar tarafından paylaşılır. / TSAWARE uygulamanızla hala kabul edilebilir değilse bağlayabilirsiniz; Aksi takdirde /TSAWARE:NO kullanmanız gerekir.  
   
- / TSAWARE seçeneği, Windows ve konsol uygulamaları için Windows 2000 ve daha sonra varsayılan olarak etkindir. Bkz: [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) ve [/VERSION](../../build/reference/version-version-information.md) bilgi.  
+ / TSAWARE seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bkz: [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) ve [/VERSION](../../build/reference/version-version-information.md) bilgi.  
   
  / TSAWARE sürücüleri, vxd ya da DLL'ler için geçerli değil.  
   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - AFXDLGS/CPrintDialog::PrintRange
 - AFXDLGS/CPrintDialog::PrintSelection
 - AFXDLGS/CPrintDialog::m_pd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPrintDialog [MFC], CPrintDialog
 - CPrintDialog [MFC], CreatePrinterDC
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - CPrintDialog [MFC], PrintSelection
 - CPrintDialog [MFC], m_pd
 ms.assetid: 5bdb2424-adf8-433d-a97c-df11a83bc4e4
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 653cdc4580862288d98600603c1b45526ea38675
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d7834351533cac7f518f5ce5f5558a6be2da34be
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cprintdialog-class"></a>CPrintDialog sınıfı
 Yazdırma için Windows ortak iletişim kutusu tarafından sağlanan hizmetlerin yalıtır.  
@@ -105,7 +108,7 @@ class CPrintDialog : public CCommonDialog
  Ortak yazdırma iletişim kutuları yazdırma ve baskı Kurulum iletişim kutuları Windows standartları ile tutarlı bir şekilde uygulama için kolay bir yol sağlar.  
   
 > [!NOTE]
->  `CPrintDialogEx` Sınıfı Windows 2000 yazdırma özellik sayfası tarafından sağlanan hizmetlerin yalıtır. Daha fazla bilgi için bkz: [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) genel bakış.  
+>  `CPrintDialogEx` Sınıfı Windows yazdırma özellik sayfası tarafından sağlanan hizmetlerin yalıtır. Daha fazla bilgi için bkz: [CPrintDialogEx](../../mfc/reference/cprintdialogex-class.md) genel bakış.  
   
  `CPrintDialog`kişinin işlevselliği, tarafından kılınan [CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md), her ikisi de Kurulum ve sayfa yapısı yazdırmak için ortak bir iletişim kutusu ile sağlamak için tasarlanmıştır.  
   
@@ -177,7 +180,7 @@ CPrintDialog(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#174](../../mfc/codesnippet/cpp/cprintdialog-class_1.cpp)]  
   
-##  <a name="createprinterdc"></a>CPrintDialog::CreatePrinterDC  
+##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC  
  Bir yazıcı cihaz bağlamı (DC) oluşturur [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
 ```  
@@ -193,7 +196,7 @@ HDC CreatePrinterDC();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#106](../../mfc/codesnippet/cpp/cprintdialog-class_2.cpp)]  
   
-##  <a name="domodal"></a>CPrintDialog::DoModal  
+##  <a name="domodal"></a>  CPrintDialog::DoModal  
  Windows ortak Yazdır iletişim kutusu görüntüler ve kullanıcının kopyalar, sayfa aralığı sayısı gibi çeşitli yazdırma seçeneklerini seçmesini sağlar ve kopya Harmanlanmış.  
   
 ```  

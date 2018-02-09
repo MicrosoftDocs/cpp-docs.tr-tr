@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -25,7 +26,8 @@ f1_keywords:
 - _inp
 - _inpw
 - _inpd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - inp function
 - inpw function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - I/O [CRT], port
 - _inpw function
 ms.assetid: 5d9c2e38-fc85-4294-86d5-7282cc02d1b3
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 15fa7169f46e84cf60e1b869e5eb68a392b16a3a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7b73d8287954a401b8b966fb1220cfcecfc416eb
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="inp-inpw-inpd"></a>_inp, _inpw, _inpd
 Bir bayt bir bağlantı noktasından girişleri (`_inp`), bir sözcük (`_inpw`), veya bir çift sözcük (`_inpd`).  
@@ -80,7 +83,7 @@ unsigned long _inpd(
 ## <a name="remarks"></a>Açıklamalar  
  `_inp`, `_inpw`, Ve `_inpd` işlevleri okuma byte, bir sözcük ve bir çift sözcük sırasıyla, belirtilen giriş bağlantı noktasından. Giriş değeri 0 - 65.535 aralığında imzasız herhangi kısa tamsayı olabilir.  
   
- Bu işlevler doğrudan bir g/ç bağlantı noktasından okuma çünkü bunlar kullanıcı kodu Windows NT, Windows 2000, Windows XP ve Windows Server 2003 kullanılmayabilir.  
+ Bu işlevler doğrudan bir g/ç bağlantı noktasından okumak için kullanıcı kodunda kullanılamaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

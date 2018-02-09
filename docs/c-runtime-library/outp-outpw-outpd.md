@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -25,7 +26,8 @@ f1_keywords:
 - _outpd
 - _outp
 - outpd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - outpw function
 - words
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _outpw function
 - _outp function
 ms.assetid: c200fe22-41f6-46fd-b0be-ebb805b35181
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: edcb3f8da6252705fe494acaa64c623b8a22ed3b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8f2b32b17ed65120aa98b19ed3b2cf599364fee0
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 Bir bağlantı noktası, bir bayt çıkışları (`_outp`), bir sözcük (`_outpw`), veya bir çift sözcük (`_outpd`).  
@@ -91,7 +94,7 @@ unsigned long dataword
 ## <a name="remarks"></a>Açıklamalar  
  `_outp`, `_outpw`, Ve `_outpd` işlevler yazma byte, bir sözcük ve bir çift sözcük sırasıyla belirtilen çıkış bağlantı noktasına. *Bağlantı noktası* bağımsız değişkeni, herhangi bir işaretsiz tamsayı 0 - 65.535; aralığında olabilir *databyte* aralık 0 - 255; herhangi bir tamsayı ve *dataword* herhangi bir değer bir tamsayı, imzasız kısa tamsayı ve imzasız uzun tamsayı aralığında sırasıyla olabilir.  
   
- Bu işlevlerin bir g/ç bağlantı noktasına doğrudan yazma çünkü kullanıcı kod Windows NT, Windows 2000, Windows XP ve Windows Server 2003 ile kullanılamaz. Bu işletim sistemlerindeki g/ç bağlantı noktaları hakkında daha fazla bilgi için MSDN'de "Seri iletişimler, Win32 için" arayın.  
+ Bu işlevlerin bir g/ç bağlantı noktasına doğrudan yazma çünkü kullanıcı kodunda kullanılamaz. Bu işletim sistemlerindeki g/ç bağlantı noktaları hakkında daha fazla bilgi için MSDN'de "Seri iletişimler, Win32 için" arayın.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

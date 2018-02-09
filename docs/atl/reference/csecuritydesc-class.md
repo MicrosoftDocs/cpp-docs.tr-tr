@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -37,19 +38,22 @@ f1_keywords:
 - ATLSECURITY/ATL::CSecurityDesc::SetOwner
 - ATLSECURITY/ATL::CSecurityDesc::SetSacl
 - ATLSECURITY/ATL::CSecurityDesc::ToString
-dev_langs: C++
-helpviewer_keywords: CSecurityDesc class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b199565221173d7664600f2869e079c2f1c95aae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 64f286a02729a5fd39885a449056973381e52611
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 Bu sınıf için sarmalayıcı, **SECURITY_DESCRIPTOR** yapısı.  
@@ -70,7 +74,7 @@ class CSecurityDesc
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CSecurityDesc::CSecurityDesc](#csecuritydesc)|Oluşturucu.|  
-|[CSecurityDesc:: ~ CSecurityDesc](#dtor)|Yok Edicisi.|  
+|[CSecurityDesc::~CSecurityDesc](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -120,7 +124,7 @@ class CSecurityDesc
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
   
-##  <a name="csecuritydesc"></a>CSecurityDesc::CSecurityDesc  
+##  <a name="csecuritydesc"></a>  CSecurityDesc::CSecurityDesc  
  Oluşturucu.  
   
 ```
@@ -136,7 +140,7 @@ CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  `CSecurityDesc` Nesne isteğe bağlı olarak kullanılarak oluşturulabilir bir **SECURITY_DESCRIPTOR** yapısı veya önceden tanımlanmış `CSecurityDesc` nesnesi.  
   
-##  <a name="dtor"></a>CSecurityDesc:: ~ CSecurityDesc  
+##  <a name="dtor"></a>  CSecurityDesc::~CSecurityDesc  
  Yok Edicisi.  
   
 ```
@@ -163,9 +167,9 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Dize kullanarak oluşturulabilir [CSecurityDesc::ToString](#tostring). Güvenlik tanımlayıcısı bir dizeye dönüştürme depolamak ve iletmek kolaylaştırır.  
   
- Çağırır çünkü bu yöntem yalnızca Windows 2000 ve daha sonra kullanılabilir [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ Bu yöntemi çağırır [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
-##  <a name="getcontrol"></a>CSecurityDesc::GetControl  
+##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  Alır, bilgileri güvenlik tanımlayıcısı denetler.  
   
 ```
@@ -180,7 +184,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
  Yöntem başarılı olursa, false başarısız olursa true döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırır gibi bu yöntem yalnızca Windows 2000 kullanırken anlamlı ya da üstü [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
+ Bu yöntemi çağırır [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
   
 ##  <a name="getdacl"></a>CSecurityDesc::GetDacl  
  İsteğe bağlı erişim denetimi listesi (DACL) bilgileri güvenlik tanımlayıcısından alır.  
@@ -205,7 +209,7 @@ bool GetDacl(
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, false başarısız olursa true döndürür.  
   
-##  <a name="getgroup"></a>CSecurityDesc::GetGroup  
+##  <a name="getgroup"></a>  CSecurityDesc::GetGroup  
  Birincil grup bilgileri güvenlik tanımlayıcısından alır.  
   
 ```
@@ -224,7 +228,7 @@ bool GetGroup(
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, false başarısız olursa true döndürür.  
   
-##  <a name="getowner"></a>CSecurityDesc::GetOwner  
+##  <a name="getowner"></a>  CSecurityDesc::GetOwner  
  Güvenlik tanımlayıcısı sahibi bilgilerini alır.  
   
 ```
@@ -253,7 +257,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi döndürür [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) yapısı.  
   
-##  <a name="getsacl"></a>CSecurityDesc::GetSacl  
+##  <a name="getsacl"></a>  CSecurityDesc::GetSacl  
  Güvenlik tanımlayıcısından sistem erişim denetimi listesi (SACL) bilgilerini alır.  
   
 ```
@@ -336,7 +340,7 @@ bool IsDaclProtected() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetDacl](#setdacl) yöntemi.  
   
- Yalnızca Windows 2000 Devralınabilir ACE otomatik yayılmasını desteklediği bu yöntem yalnızca Windows 2000 veya sonraki sürümlerde, anlamlıdır.  
+ Bu yöntem Devralınabilir ACE otomatik yayılmasını destekler.  
   
 ##  <a name="isgroupdefaulted"></a>CSecurityDesc::IsGroupDefaulted  
  Güvenlik tanımlayıcı grubun güvenlik tanımlayıcısı (SID) varsayılan olarak ayarlanmış olmadığını belirler.  
@@ -418,7 +422,7 @@ bool IsSaclProtected() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu bayrak ayarlamak için kullanın [CSecurityDesc::SetSacl](#setsacl) yöntemi.  
   
- Yalnızca Windows 2000 Devralınabilir ACE otomatik yayılmasını desteklediği bu yöntem yalnızca Windows 2000 veya sonraki sürümlerde, anlamlıdır.  
+ Bu yöntem Devralınabilir ACE otomatik yayılmasını destekler.  
   
 ##  <a name="isselfrelative"></a>CSecurityDesc::IsSelfRelative  
  Güvenlik tanımlayıcısı kendine bağlı biçimde olup olmadığını belirler.  
@@ -456,7 +460,7 @@ bool MakeSelfRelative() throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Mutlak biçimde güvenlik tanımlayıcısı bilgilerini içeren yerine, içerdiği bilgilere işaretçiler içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısı'nda bir **SECURITY_DESCRIPTOR** yapısı bilgileri her zaman başlatır, ancak diğer güvenlik tanımlayıcısı kullanıcının bileşenleri herhangi bir sırada yapısı izleyin. Bellek adreslerini kullanmak yerine, güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik açıklayıcısı bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan faydalıdır. Daha fazla bilgi için bkz: [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
   
-##  <a name="operator_eq"></a>CSecurityDesc::operator =  
+##  <a name="operator_eq"></a>  CSecurityDesc::operator =  
  Atama işleci.  
   
 ```
@@ -471,7 +475,7 @@ CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş döndürür `CSecurityDesc` nesnesi.  
   
-##  <a name="operator_const_security_descriptor__star"></a>CSecurityDesc::operator const SECURITY_DESCRIPTOR *  
+##  <a name="operator_const_security_descriptor__star"></a>  CSecurityDesc::operator const SECURITY_DESCRIPTOR *  
  Bir işaretçi bir değere bıraktığı **SECURITY_DESCRIPTOR** yapısı.  
   
 ```  
@@ -498,7 +502,7 @@ bool SetControl(
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırır gibi bu yöntem yalnızca Windows 2000 ve daha sonra kullanılabilir [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
+ Bu yöntemi çağırır [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
 ##  <a name="setdacl"></a>CSecurityDesc::SetDacl  
  Bir isteğe bağlı erişim denetimi listesi (DACL) bilgilerini ayarlar. Güvenlik tanımlayıcısı DACL zaten varsa, değiştirilir.  
@@ -616,7 +620,7 @@ bool ToString(
   
  DACL NULL ise ve SE_DACL_PRESENT denetim bit giriş güvenlik tanımlayıcısı ayarlı değil, sonuçta ortaya çıkan güvenlik açıklayıcı dizesinin D: bileşen yok. Bkz: [güvenlik tanımlayıcısı dizesi biçimi](http://msdn.microsoft.com/library/windows/desktop/aa379570) daha fazla ayrıntı için.  
   
- Çağırır gibi bu yöntem yalnızca Windows 2000 ve daha sonra kullanılabilir [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ Bu yöntemi çağırır [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   

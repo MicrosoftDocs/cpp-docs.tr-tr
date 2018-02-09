@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,19 +20,22 @@ f1_keywords:
 - ATLSECURITY/ATL::CTokenGroups::GetPTOKEN_GROUPS
 - ATLSECURITY/ATL::CTokenGroups::GetSidsAndAttributes
 - ATLSECURITY/ATL::CTokenGroups::LookupSid
-dev_langs: C++
-helpviewer_keywords: CTokenGroups class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b6f0e8e2f63d5765e0e888c7a98cea77c862e241
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1a5a958fcc1bd8c26599272774c86cd64fa2c720
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups sınıfı
 Bu sınıf için sarmalayıcı, **TOKEN_GROUPS** yapısı.  
@@ -52,7 +56,7 @@ class CTokenGroups
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CTokenGroups::CTokenGroups](#ctokengroups)|Oluşturucu.|  
-|[CTokenGroups:: ~ CTokenGroups](#dtor)|Yok Edicisi.|  
+|[CTokenGroups::~CTokenGroups](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -75,7 +79,7 @@ class CTokenGroups
 |[CTokenGroups::operator =](#operator_eq)|Atama işleci.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve Windows NT veya Windows 2000 sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve bir Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
  **CTokenGroups** için sarmalayıcı sınıftır [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) yapısı, bir erişim belirteci grup güvenlik tanımlayıcılarını (SID'ler) hakkında bilgi içeren.  
   
@@ -121,7 +125,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  `CTokenGroups` Nesne isteğe bağlı olarak kullanılarak oluşturulabilir bir **TOKEN_GROUPS** yapısı veya önceden tanımlanmış `CTokenGroups` nesnesi.  
   
-##  <a name="dtor"></a>CTokenGroups:: ~ CTokenGroups  
+##  <a name="dtor"></a>  CTokenGroups::~CTokenGroups  
  Yok Edicisi.  
   
 ```
@@ -145,7 +149,7 @@ bool Delete(const CSid& rSid) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsa true değerini döndürür `CSid` yanlış aksi kaldırılmıştır.  
   
-##  <a name="deleteall"></a>CTokenGroups::DeleteAll  
+##  <a name="deleteall"></a>  CTokenGroups::DeleteAll  
  Tüm siler `CSid` nesneleri ve bunların ilişkili öznitelikleri `CTokenGroups` nesnesi.  
   
 ```
@@ -221,7 +225,7 @@ bool LookupSid(
  Varsa true değerini döndürür `CSid` bulunursa, false Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayarı `pdwAttributes` için NULL varlığını onaylayan bir yol sağlar `CSid` öznitelik erişme olmadan. Bu yöntem Windows 2000 altında hatalı sonuçlar oluşabilir gibi erişim hakları denetlemek için kullanılmamalıdır olduğunu unutmayın. Uygulamaların yerine kullanması gereken [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) yöntemi.  
+ Ayarı `pdwAttributes` için NULL varlığını onaylayan bir yol sağlar `CSid` öznitelik erişme olmadan. Bu yöntem erişim hakları denetlemek için kullanılmamalıdır olduğunu unutmayın. Uygulamaların yerine kullanması gereken [CAccessToken::CheckTokenMembership](../../atl/reference/caccesstoken-class.md#checktokenmembership) yöntemi.  
   
 ##  <a name="operator_eq"></a>CTokenGroups::operator =  
  Atama işleci.  

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: vc.codewiz.class.atl.simple.options
-dev_langs: C++
-helpviewer_keywords: ATL Simple Object Wizard, options
+f1_keywords:
+- vc.codewiz.class.atl.simple.options
+dev_langs:
+- C++
+helpviewer_keywords:
+- ATL Simple Object Wizard, options
 ms.assetid: 125fe179-942d-4181-8b82-33e92e1fd779
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c57206cb5be251e609f14132b4f0913a22b31534
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 37341dc23f95e1863aeae4a1b57c01d24d6ad365
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="options-atl-simple-object-wizard"></a>ATL Basit Nesne Sihirbazı Seçenekleri
 Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için ATL Basit Nesne Sihirbazı'nın bu sayfayı kullanın.  
@@ -38,7 +43,7 @@ Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için ATL Ba
 |**Grup**|Nesne Apartman iş parçacığı oluşturma kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her bir boş iş parçacıklı bileşen nesnesinin ömrü boyunca nesnesi, iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı birden fazla nesne kullanılabilir. Her grup için belirli bir iş parçacığı bağlıdır ve bir Windows ileti Pompalama (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded grupların](http://msdn.microsoft.com/library/windows/desktop/ms680112) daha fazla bilgi için.|  
 |**Her ikisi**|Nesne grubu ya da boş iş parçacığı oluşturma, oluşturulduktan bir iş parçacığı hangi tür gelen bağlı olarak kullanabileceğiniz belirtir.|  
 |**Boş**|Nesne serbest iş parçacığı oluşturmayı kullandığını belirtir. Boş iş parçacığı oluşturma için çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı grupların](http://msdn.microsoft.com/library/windows/desktop/ms693421) daha fazla bilgi için.|  
-|**Nötr** (yalnızca Windows 2000)|Nesne birden çok iş parçacıklı grupların yönelik yönergeleri takip eder, ancak iş parçacığı her türlü yürütebilir belirtir.|  
+|**Nötr**|Nesne birden çok iş parçacıklı grupların yönelik yönergeleri takip eder, ancak iş parçacığı her türlü yürütebilir belirtir.|  
   
  **Toplama**  
  Nesne kullanıp kullanmadığını belirten [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Hangi istemcilere göstermek için arabirimleri toplama bir nesne seçer ve onları toplama bir nesne uygulanırsa, gibi arabirimler gösterilir. Birleşik nesnesinin istemciler yalnızca toplama bir nesne ile iletişim kurar.  
@@ -49,7 +54,7 @@ Daha fazla verimlilik ve nesne için hata desteği için tasarlamak için ATL Ba
 |Hayır|Nesne olmayan toplanır belirtir.|  
 |Yalnızca|Nesne toplanması gereken belirtir.|  
   
- **Arabirimi**  
+ **Interface**  
  Nesne destekleyen arabirimi türünü belirtir. Varsayılan olarak, bir çift arabirim nesnesi destekler.  
   
 |Seçenek|Açıklama|  

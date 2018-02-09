@@ -531,7 +531,6 @@
 ##### [Grafik Nesneler](graphic-objects.md)
 ###### [Nesnelerin Tek Aşamalı ve İki Aşamalı Yapımı](one-stage-and-two-stage-construction-of-objects.md)
 ###### [Bir Cihaz Bağlamına Grafik Nesnesi Seçme](selecting-a-graphic-object-into-a-device-context.md)
-###### [Önceki İşletim Sistemlerinde CImage Sınırlamaları](cimage-limitations-with-earlier-operating-systems.md)
 #### [Çerçeve Pencereleri](frame-windows.md)
 ##### [Çerçeve Penceresi Sınıfları](frame-window-classes.md)
 ###### [Uygulama Sihirbazı Tarafından Oluşturulan Çerçeve Pencere Sınıfları](frame-window-classes-created-by-the-application-wizard.md)

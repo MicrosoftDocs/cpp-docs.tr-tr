@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -24,19 +25,22 @@ f1_keywords:
 - ATLSECURITY/ATL::CSid::LoadAccount
 - ATLSECURITY/ATL::CSid::Sid
 - ATLSECURITY/ATL::CSid::SidNameUse
-dev_langs: C++
-helpviewer_keywords: CSid class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3915206f0b05e33d5e13e41871a597ea7278ee8f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 38c2cff0cb9bd99a70e142d16ee5e7d38e82d8d0
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="csid-class"></a>CSID sınıfı
 Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.  
@@ -63,7 +67,7 @@ class CSid
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CSid::CSid](#csid)|Oluşturucu.|  
-|[CSID:: ~ CSID](#dtor)|Yok Edicisi.|  
+|[CSid::~CSid](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -171,7 +175,7 @@ explicit CSid(
   
  Başlatma başarısız olursa Oluşturucusu özel durum oluşturacak bir [CAtlException sınıfı](../../atl/reference/catlexception-class.md).  
   
-##  <a name="dtor"></a>CSID:: ~ CSID  
+##  <a name="dtor"></a>  CSid::~CSid  
  Yok Edicisi.  
   
 ```
@@ -181,7 +185,7 @@ virtual ~CSid() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi nesne tarafından alınan tüm kaynakları serbest bırakır.  
   
-##  <a name="csidarray"></a>CSid::CSidArray  
+##  <a name="csidarray"></a>  CSid::CSidArray  
  Bir dizi [CSID](../../atl/reference/csid-class.md) nesneleri.  
   
 ```
@@ -224,7 +228,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) daha fazla ayrıntı için Windows SDK.  
   
-##  <a name="getlength"></a>CSid::GetLength  
+##  <a name="getlength"></a>  CSid::GetLength  
  Uzunluğunu döndürür `CSid` nesnesi.  
   
 ```
@@ -240,7 +244,7 @@ UINT GetLength() const throw();
 > [!NOTE]
 >  Hata ayıklama yapıları varsa, işlev ASSERT neden olacak altında `CSid` nesnesi geçerli değil.  
   
-##  <a name="getpsid"></a>CSid::GetPSID  
+##  <a name="getpsid"></a>  CSid::GetPSID  
  Bir işaretçi döndüren bir `SID` (güvenlik tanımlayıcısı) yapısı.  
   
 ```
@@ -250,7 +254,7 @@ const SID* GetPSID() const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Adresini döndürür `CSid` nesne temel aldığı `SID` yapısı.  
   
-##  <a name="getpsid_identifier_authority"></a>CSid::GetPSID_IDENTIFIER_AUTHORITY  
+##  <a name="getpsid_identifier_authority"></a>  CSid::GetPSID_IDENTIFIER_AUTHORITY  
  Bir işaretçi döndürür **SID_IDENTIFIER_AUTHORITY** yapısı.  
   
 ```
@@ -263,7 +267,7 @@ const SID_IDENTIFIER_AUTHORITY* GetPSID_IDENTIFIER_AUTHORITY() const throw();
 > [!NOTE]
 >  Hata ayıklama yapıları varsa, işlev ASSERT neden olacak altında `CSid` nesnesi geçerli değil.  
   
-##  <a name="getsubauthority"></a>CSid::GetSubAuthority  
+##  <a name="getsubauthority"></a>  CSid::GetSubAuthority  
  İçinde belirtilen bir kimliğinin alt yetki verir bir `SID` (güvenlik tanımlayıcısı) yapısı.  
   
 ```
@@ -283,7 +287,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 > [!NOTE]
 >  Hata ayıklama yapıları varsa, işlev ASSERT neden olacak altında `CSid` nesnesi geçerli değil.  
   
-##  <a name="getsubauthoritycount"></a>CSid::GetSubAuthorityCount  
+##  <a name="getsubauthoritycount"></a>  CSid::GetSubAuthorityCount  
  Kimliğinin alt yetki sayımını döndürür.  
   
 ```
@@ -340,7 +344,7 @@ bool LoadAccount(
 ### <a name="remarks"></a>Açıklamalar  
  `LoadAccount`bir güvenlik tanımlayıcısı için belirtilen ad bulmaya çalışır. Bkz: [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166\(v=vs.85\).aspx) daha fazla ayrıntı için.  
   
-##  <a name="operator_eq"></a>CSid::operator =  
+##  <a name="operator_eq"></a>  CSid::operator =  
  Atama işleci.  
   
 ```
@@ -374,7 +378,7 @@ bool operator==(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** Aksi durumda güvenlik tanımlayıcısı eşitse, **false**.  
   
-##  <a name="operator_neq"></a>CSid::operator! =  
+##  <a name="operator_neq"></a>  CSid::operator !=  
  Eşitsizlik açısından iki güvenlik tanımlayıcısı nesneleri sınar.  
   
 ```
@@ -393,7 +397,7 @@ bool operator!=(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** güvenlik tanımlayıcıları aksi eşit değilse **false**.  
   
-##  <a name="operator_lt"></a>CSid::operator&lt;  
+##  <a name="operator_lt"></a>  CSid::operator &lt;  
  Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.  
   
 ```
@@ -412,7 +416,7 @@ bool operator<(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** varsa `lhs` olan değerinden `rhs`, aksi takdirde **false**.  
   
-##  <a name="operator_lt__eq"></a>CSid::operator&lt;=  
+##  <a name="operator_lt__eq"></a>  CSid::operator &lt;=  
  Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.  
   
 ```
@@ -431,7 +435,7 @@ bool operator<=(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** varsa `lhs` küçük veya eşittir `rhs`, aksi takdirde **false**.  
   
-##  <a name="operator_gt"></a>CSid::operator&gt;  
+##  <a name="operator_gt"></a>  CSid::operator &gt;  
  Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.  
   
 ```
@@ -450,7 +454,7 @@ bool operator>(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** varsa `lhs` değerinden daha büyük `rhs`, aksi takdirde **false**.  
   
-##  <a name="operator_gt__eq"></a>CSid::operator&gt;=  
+##  <a name="operator_gt__eq"></a>  CSid::operator &gt;=  
  Göreli iki güvenlik tanımlayıcısı nesneleri karşılaştırır.  
   
 ```
@@ -469,7 +473,7 @@ bool operator>=(
 ### <a name="return-value"></a>Dönüş Değeri  
  **doğru** varsa `lhs` büyük veya eşit `rhs`, aksi takdirde **false**.  
   
-##  <a name="operator_const_sid__star"></a>CSid::operator const SID *  
+##  <a name="operator_const_sid__star"></a>  CSid::operator const SID *  
  Atamalar bir `CSid` gösteren bir işaretçi nesnesine bir `SID` (güvenlik tanımlayıcısı) yapısı.  
   
 ```  
@@ -487,7 +491,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `SID` yapısı görüntüleme, depolama ve iletim için uygun bir biçiminde bir dize olarak. Eşdeğer [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399), bu işlevi yalnızca Windows 2000 veya sonraki sürümlerde kullanılabilir olsa da ve önceki işletim sistemleri için benzetilmiş.  
+ Döndürür `SID` yapısı görüntüleme, depolama ve iletim için uygun bir biçiminde bir dize olarak. Eşdeğer [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
   
 ##  <a name="sidnameuse"></a>CSid::SidNameUse  
  Durumu açıklamasını döndürür `CSid` nesnesi.  

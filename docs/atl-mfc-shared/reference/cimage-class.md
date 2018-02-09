@@ -1,10 +1,11 @@
 ---
 title: "Cımage sınıfı | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/01/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -50,7 +51,8 @@ f1_keywords:
 - ATLIMAGE/ATL::CImage::SetTransparentColor
 - ATLIMAGE/ATL::CImage::StretchBlt
 - ATLIMAGE/ATL::CImage::TransparentBlt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - jpeg files
 - bitmaps [C++], ATL and MFC support for
@@ -61,16 +63,17 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d2720fb2b1e558b564615e1589735fe84688374b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4d5478a258c55996fe4073ffc1ab616b2b71386c
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 `CImage`Yük ve görüntüleri JPEG, GIF, BMP ve Taşınabilir Ağ Grafikleri (PNG) biçimlerde kaydetme özelliği de dahil olmak üzere Gelişmiş bit eşlem desteği sağlar.  
@@ -120,7 +123,7 @@ class CImage
 |[CImage::IsDIBSection](#isdibsection)|Ekli bit eşlem DIB bölüm olup olmadığını belirler.|  
 |[CImage::IsIndexed](#isindexed)|Bit eşlem 's renkler için dizinlenmiş palet eşlenmiş gösterir.|  
 |[CImage::IsNull](#isnull)|Kaynak bitmap yüklü olmadığını gösterir.|  
-|[CImage::IsTransparencySupported](#istransparencysupported)|Uygulamasının saydam bit eşlemler destekler ve Windows 2000 veya üstü derlenen olup olmadığını gösterir.|  
+|[CImage::IsTransparencySupported](#istransparencysupported)|Uygulama saydam bit eşlemler destekleyip desteklemediğini belirtir.|  
 |[CImage::Load](#load)|Görüntüyü belirtilen dosyadan yükler.|  
 |[CImage::LoadFromResource](#loadfromresource)|Görüntüyü belirtilen kaynak yükler.|  
 |[CImage::MaskBlt](#maskblt)|Belirtilen maske ve Tarama işlemi kullanarak kaynak ve hedef bit eşlemler renk verilerini bir araya getirir.|  
@@ -198,17 +201,6 @@ void CMyDlg::OnRButtonDown(UINT nFlags, CPoint point)
 
   
  Aracılığıyla `CImage`, gerçek BITS DIB bölümün erişimi. Kullanabileceğiniz bir `CImage` herhangi bir yere Win32 HBITMAP veya DIB bölümünde daha önce kullanılan nesne.  
-  
-> [!NOTE]
->  Aşağıdaki `CImage` yöntemi kullanımlarını üzerinde sınırlamalar vardır:  
-  
-|Yöntem|Sınırlama|  
-|------------|----------------|  
-|[PlgBlt](#plgblt)|Yalnızca Windows NT 4.0 veya sonraki sürümlerinde çalışıyor. Windows 95/98 veya sonraki sürümlerde çalışan uygulamalar üzerinde çalışmaz.|  
-|[MaskBlt](#maskblt)|Yalnızca Windows NT 4.0 veya sonraki sürümlerinde çalışıyor. Windows 95/98 veya sonraki sürümlerde çalışan uygulamalar üzerinde çalışmaz.|  
-|[AlphaBlend](#alphablend)|Yalnızca Windows 2000, Windows 98 ve sonraki sistemleri ile çalışır.|  
-|[TransparentBlt](#transparentblt)|Yalnızca Windows 2000, Windows 98 ve sonraki sistemleri ile çalışır.|  
-|[Çizme](#draw)|Yalnızca Windows 2000, Windows 98 ve sonraki sistemleri saydamlığı destekler.|  
   
  Kullanabileceğiniz `CImage` MFC veya ATL  
   
@@ -622,7 +614,7 @@ void* GetBits() throw();
 > [!NOTE]
 >  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler; Sonuç olarak, size piksel erişim bir `CImage` DIB bölüm piksel olduğu gibi nesne. (0, 0) konumundaki piksel döndürülen işaretçisi işaret ediyor.  
   
-##  <a name="getbpp"></a>CImage::GetBPP  
+##  <a name="getbpp"></a>  CImage::GetBPP  
  Bit / piksel değerini alır.  
   
 ```
@@ -727,7 +719,7 @@ CImage::GetExporterFilterString(
   
 - **excludeDefaultLoad** = 0 yük, tüm dosya türleri varsayılan olarak dahil  
   
-- **excludeDefaultSave** = **excludeIcon &#124; excludeEMF &#124; excludeWMF** genellikle sahip oldukları özel gereksinimler için kaydetme için bu dosyalar varsayılan olarak dışarıda bırakılır.  
+- **excludeDefaultSave** = **excludeIcon &#124; excludeEMF &#124; excludeWMF** For saving, these files are excluded by default because they usually have special requirements.  
   
  `chSeparator`  
  Görüntü biçimleri arasında kullanılan ayırıcı. Bkz: **açıklamalar** daha fazla bilgi için.  
@@ -816,7 +808,7 @@ CImage::GetImporterFilterString(
   
 - **excludeDefaultLoad** = 0 yük, tüm dosya türleri varsayılan olarak dahil  
   
-- **excludeDefaultSave** = **excludeIcon &#124; excludeEMF &#124; excludeWMF** genellikle sahip oldukları özel gereksinimler için kaydetme için bu dosyalar varsayılan olarak dışarıda bırakılır.  
+- **excludeDefaultSave** = **excludeIcon &#124; excludeEMF &#124; excludeWMF** For saving, these files are excluded by default because they usually have special requirements.  
   
  `chSeparator`  
  Görüntü biçimleri arasında kullanılan ayırıcı. Bkz: **açıklamalar** daha fazla bilgi için.  
@@ -834,7 +826,7 @@ CImage::GetImporterFilterString(
   
  Varsayılan ayırıcı kullan ' &#124;' Bu dize bir MFC geçirirseniz `CFileDialog` nesnesi. Bu dize bir ortak geçirirseniz null ayırıcı '\0' kullanmak **Dosya Aç** iletişim kutusu.  
   
-##  <a name="getmaxcolortableentries"></a>CImage::GetMaxColorTableEntries  
+##  <a name="getmaxcolortableentries"></a>  CImage::GetMaxColorTableEntries  
  Renk tablosunda giriş sayısı üst sınırı alır.  
   
 ```
@@ -865,7 +857,7 @@ int GetPitch() const throw();
 > [!NOTE]
 >  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.  
   
-##  <a name="getpixel"></a>CImage::GetPixel  
+##  <a name="getpixel"></a>  CImage::GetPixel  
  Tarafından belirtilen konumda piksel rengi alır *x* ve *y*.  
   
 ```
@@ -914,7 +906,7 @@ LONG GetTransparentColor() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Saydam Rengi dizini.  
   
-##  <a name="getwidth"></a>CImage::GetWidth  
+##  <a name="getwidth"></a>  CImage::GetWidth  
  Görüntünün piksel cinsinden genişliği alır.  
   
 ```
@@ -978,7 +970,7 @@ bool IsNull() const throw();
  Bu yöntem **True** bir bit eşlem şu anda değilse yüklenen; Aksi takdirde **False**.  
   
 ##  <a name="istransparencysupported"></a>CImage::IsTransparencySupported  
- Uygulamasının saydam bit eşlemler destekler ve Windows 2000 veya üstü derlenen olup olmadığını gösterir.  
+ Uygulama saydam bit eşlemler destekleyip desteklemediğini belirtir.  
   
 ```
 static BOOL IsTransparencySupported() throw();
@@ -989,8 +981,6 @@ static BOOL IsTransparencySupported() throw();
   
 ### <a name="remarks"></a>Açıklamalar  
  Dönüş değeri sıfır olmayan ise ve saydamlık desteklenir, çağrı [AlphaBlend](#alphablend), [TransparentBlt](#transparentblt), veya [çizin](#draw) saydam renkleri işleyecek.  
-  
- Uygulama işletim sistemleri ile kullanmak için önce Windows 2000 veya Windows 98 derlenir varsa, bu yöntem her zaman bile daha yeni işletim sistemlerinde 0 döndürür.  
   
 
 ##  <a name="load"></a>CImage::Load  
@@ -1136,7 +1126,7 @@ BOOL MaskBlt(
 ##  <a name="operator_hbitmap"></a>CImage::operator HBITMAP  
  Ekli Windows GDI işleyicisini almak için bu işleci kullanın `CImage` nesnesi. Bu işleç doğrudan kullanımını destekleyen bir atama işleci olan bir `HBITMAP` nesnesi.  
   
-##  <a name="plgblt"></a>CImage::PlgBlt  
+##  <a name="plgblt"></a>  CImage::PlgBlt  
  Bit bloğu aktarımı bir paralel kenarı bir hedef cihaz bağlamda içine dikdörtgenden kaynak aygıt bağlamda gerçekleştirir.  
   
 ```
@@ -1324,7 +1314,7 @@ void SetPixelIndexed(int x, int y, int iIndex) throw();
  `iIndex`  
  Bir renk renk paletindeki dizini.  
   
-##  <a name="setpixelrgb"></a>CImage::SetPixelRGB  
+##  <a name="setpixelrgb"></a>  CImage::SetPixelRGB  
  Tarafından belirlenen konumlara piksel ayarlar *x* ve *y* tarafından gösterilen renkleri için *r*, *g*, ve *b*, yeşil bir kırmızı, mavi (RGB) görüntüsü.  
   
 ```

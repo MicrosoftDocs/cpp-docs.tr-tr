@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,19 +22,22 @@ f1_keywords:
 - ATLSECURITY/ATL::CTokenPrivileges::GetNamesAndAttributes
 - ATLSECURITY/ATL::CTokenPrivileges::GetPTOKEN_PRIVILEGES
 - ATLSECURITY/ATL::CTokenPrivileges::LookupPrivilege
-dev_langs: C++
-helpviewer_keywords: CTokenPrivileges class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CTokenPrivileges class
 ms.assetid: 89590105-f001-4014-870d-142926091231
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0dc0fb58d1b92fac1462b355b9afb353554f3f23
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e48ff04428d6cde6501c2782894c4132157a02b9
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
 Bu sınıf için sarmalayıcı, **TOKEN_PRIVILEGES** yapısı.  
@@ -54,7 +58,7 @@ class CTokenPrivileges
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CTokenPrivileges::CTokenPrivileges](#ctokenprivileges)|Oluşturucu.|  
-|[CTokenPrivileges:: ~ CTokenPrivileges](#dtor)|Yok Edicisi.|  
+|[CTokenPrivileges::~CTokenPrivileges](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -79,7 +83,7 @@ class CTokenPrivileges
 |[CTokenPrivileges::operator =](#operator_eq)|Atama işleci.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve Windows NT veya Windows 2000 sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve bir Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
  Erişim belirteci, her kullanıcı için çeşitli güvenlik ayrıcalıklarının açıklamak için kullanılır. Yerel olarak benzersiz bir tanımlayıcı olarak adlandırılan bir 64-bit sayısını ayrıcalık oluşur ( [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)) ve tanımlayıcısı dizesi.  
   
@@ -130,7 +134,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  `CTokenPrivileges` Nesne isteğe bağlı olarak kullanılarak oluşturulabilir bir **TOKEN_PRIVILEGES** yapısı veya önceden tanımlanmış `CTokenPrivileges` nesnesi.  
   
-##  <a name="dtor"></a>CTokenPrivileges:: ~ CTokenPrivileges  
+##  <a name="dtor"></a>  CTokenPrivileges::~CTokenPrivileges  
  Yok Edicisi.  
   
 ```
@@ -155,9 +159,9 @@ bool Delete(LPCTSTR pszPrivilege) throw();
  Ayrıcalık Aksi halde başarıyla silindi, false ise, true döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, Windows 2000 kısıtlı belirteçleri oluşturmak için bir araç olarak kullanışlıdır.  
+ Bu yöntem, kısıtlı belirteçleri oluşturmak için bir araç olarak kullanışlıdır.  
   
-##  <a name="deleteall"></a>CTokenPrivileges::DeleteAll  
+##  <a name="deleteall"></a>  CTokenPrivileges::DeleteAll  
  Gelen tüm ayrıcalıkları siler `CTokenPrivileges` erişim belirteci nesnesi.  
   
 ```
@@ -304,6 +308,6 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
  [Güvenliği örneği](../../visual-cpp-samples.md)   
  [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630)   
  [LUID](http://msdn.microsoft.com/library/windows/desktop/aa379261)   
- [LUID_AND_ATTRIBUTES KONUSUNA](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
+ [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
  [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

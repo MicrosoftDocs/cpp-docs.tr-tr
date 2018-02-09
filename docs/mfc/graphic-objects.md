@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - HRGN
 - HFONT
 - HBITMAP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CRgn class [MFC], HRGN handle type
 - HPEN [MFC]
@@ -48,22 +50,23 @@ helpviewer_keywords:
 - painting and device context [MFC]
 - CPalette class [MFC], HPALETTE handle type
 ms.assetid: 41963b25-34b7-4343-8446-34ba516b83ca
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0fabeeae17b5bc81fdf592ed452a088b75bae544
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6dfdba311ed13b1ffbd5e1f830d6fa87cfce915d
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
 Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar. Çizgiler, dolgu evin içindekiler ve metin çizmek için yazı tiplerini Fırçalar çizmek için Kalem sağlar. MFC Windows çizim araçları eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıfların ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcısı türleri gösterilmektedir.  
   
 > [!NOTE]
->  GDI + ile Windows XP dahil edilmiştir ve Windows NT 4.0 SP6, Windows 2000, Windows 98 ve Windows Me için yeniden dağıtılabilir olarak kullanılabilir En son yeniden yüklemek için bkz [http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm](http://www.microsoft.com/msdownload/platformsdk/sdkupdate/psdkredist.htm). Daha fazla bilgi için GDI + SDK belgelerine bakın: [http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
+>  Daha fazla bilgi için GDI + SDK belgelerine bakın: [http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
   
  Bu makale, bu grafik nesne sınıfları kullanımını açıklar:  
   
@@ -111,8 +114,6 @@ Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar.
 -   [Bir Cihaz Bağlamına Grafik Nesnesi Seçme](../mfc/selecting-a-graphic-object-into-a-device-context.md)  
   
 -   [Cihaz bağlamları](../mfc/device-contexts.md)  
-  
--   [Önceki işletim sistemlerinde Cımage sınırlamaları](../mfc/cimage-limitations-with-earlier-operating-systems.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pencere Nesneleri](../mfc/window-objects.md)

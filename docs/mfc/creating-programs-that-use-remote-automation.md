@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: Remote Automation, creating programs
+dev_langs:
+- C++
+helpviewer_keywords:
+- Remote Automation, creating programs
 ms.assetid: 8eb31320-1037-4029-b1f3-fdc9406dbaf1
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: deb832e0baed30507ef3f9929fb5f12805b7a807
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 86a9b9f4dccaaa3a97366dffb11955d3b148aff5
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-programs-that-use-remote-automation"></a>Uzaktan Otomasyon Kullanan Programlar Oluşturma
 Herhangi bir Otomasyon nesnesi ve herhangi bir Otomasyon denetleyicisi uzaktan Otomasyon kaynak kodu derleme gerek kalmadan ve yeniden bağlama için gerek kalmadan herhangi bir değişiklik olmadan kullanmaya devam edebilir. Yerel olarak çalışan bir ayarladıktan sonra (diğer bir deyişle, aynı makine üzerindeki), uzaktan yürütmek için yalnızca birkaç adımda gitmek.  
@@ -46,7 +50,7 @@ Herhangi bir Otomasyon nesnesi ve herhangi bir Otomasyon denetleyicisi uzaktan O
   
  3. adım düzgün yüklenmesi ve seçilen sunucu makinesi veya makinelerde sunucu uygulaması kaydettirilirken içerir. Uygulamanın kendi kendine kayıt ise, yeniden kez yürütme de kaydeder.  
   
- 4. adım uzaktan yürütme izin vermek için sunucu yapılandırmayı içerir. RAC Yöneticisi server makinesinde çalıştırabilir ve emin **istemci erişimi** sekmesi odağı vardır. İstediğiniz etkinleştirme modeli seçin (genellikle **anahtarı tarafından uzaktan oluşturur izin**. Bu seçeneği seçerseniz, ayrıca tıklamanız gerekir **uzaktan etkinleştirmeye izin** 'Y' için kayıt defteri girdisinin değeri ayarlamak için onay kutusunu). Windows NT çalıştırıyorsanız veya Windows 2000 ve izin uzak oluşturur (ACL) seçeneğini belirleyin, ACL ileterek Düzenle seçeneğine de sahip **Düzenle ACL** düğmesi.  
+ 4. adım uzaktan yürütme izin vermek için sunucu yapılandırmayı içerir. RAC Yöneticisi server makinesinde çalıştırabilir ve emin **istemci erişimi** sekmesi odağı vardır. İstediğiniz etkinleştirme modeli seçin (genellikle **anahtarı tarafından uzaktan oluşturur izin**. Bu seçeneği seçerseniz, ayrıca tıklamanız gerekir **uzaktan etkinleştirmeye izin** 'Y' için kayıt defteri girdisinin değeri ayarlamak için onay kutusunu). İzin uzak oluşturur (ACL) seçeneğini seçerseniz, ACL ileterek Düzenle seçeneğine de sahip **Düzenle ACL** düğmesi.  
   
  Çalışmak uzak Otomasyon izin vermek için ardından Otomasyon Yöneticisi yüklü ve çalışan sunucu makinede veya makineleri olduğundan emin olmak gerekir. Yüklenmemişse, AUTMGR32 kopyalayın. EXE Windows Sistem dizini. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz: [uzak Otomasyon yüklemesi](../mfc/remote-automation-installation.md). Uzak Otomasyon başlatmak için Otomasyon Yöneticisi'ni yürütün. İleti sayısı gösterileceği küçük durum penceresi görüntülenir. Başlatıldıktan sonra kendisini küçülür. Durum bilgisi görmeye devam etmek istiyorsanız, tıklayabilirsiniz **Otomasyon Yöneticisi** pencereyi geri yüklemek için görev çubuğunda sekme.  
   

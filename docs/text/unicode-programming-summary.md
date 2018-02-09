@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2d08fcc502ac7daf97955741d044ebf1e50afab3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 03ee8a4032b054eb670de160aea9ec54dcf80f4d
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 MFC ve C çalışma zamanı Unicode desteği yararlanmak için aktarmanız gerekir:  
@@ -91,7 +94,7 @@ MFC ve C çalışma zamanı Unicode desteği yararlanmak için aktarmanız gerek
   
 -   Kullanım [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md) Unicode dosyalarını açmak için.  
   
- Özetlemek için MFC ve çalışma zamanı kitaplığı aşağıdaki Unicode desteği Windows 2000 altında programlama sağlar:  
+ Özetlemek için Unicode programlama için aşağıdaki Destek MFC ve çalışma zamanı kitaplığı sağlar:  
   
 -   Unicode etkin dahil olmak üzere, veritabanı sınıf üyesi işlevleri dışında tüm MFC işlevleri `CString`. `CString`Ayrıca Unicode/ANSI dönüştürme işlevleri sağlar.  
   

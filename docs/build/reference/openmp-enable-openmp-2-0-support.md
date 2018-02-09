@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /openmp
 - VC.Project.VCCLCompilerTool.OpenMP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /openmp compiler option [C++]
 - -openmp compiler option [C++]
 ms.assetid: 9082b175-18d3-4378-86a7-c0eb95664e13
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a8d3aaeb5d3e71dfced4bf78384a62898d99a5ee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c8217a901f071f50dbd2d7dfcbffccf4014a9444
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="openmp-enable-openmp-20-support"></a>/openmp (OpenMP 2.0 Desteğini Etkinleştir)
 İşlenecek derleyici neden `#pragma` [omp](../../preprocessor/omp.md).  
@@ -37,8 +40,6 @@ ms.lasthandoff: 12/21/2017
   
 ## <a name="remarks"></a>Açıklamalar  
  `#pragma omp`belirtmek için kullanılan [yönergeleri](../../parallel/openmp/reference/openmp-directives.md) ve [yan tümceleri](../../parallel/openmp/reference/openmp-clauses.md). Varsa **/OpenMP** belirtilmemiş bir derlemede derleyici OpenMP yan tümceleri ve yönergeleri göz ardı eder. [OpenMP işlevi](../../parallel/openmp/reference/openmp-functions.md) çağrıları derleyici olsa bile tarafından işlenen **/OpenMP** belirtilmedi.  
-  
- Bir uygulama ile derlenmiş **/OpenMP** ve kullanarak [kitaplıkları](../../parallel/openmp/reference/openmp-libraries.md) yalnızca Windows 2000 veya sonraki işletim sistemleri üzerinde çalıştırılabilir.  
   
  Uygulamaları derlenmiş ile **/OpenMP** ve **/CLR** yalnızca bir tek bir uygulama etki alanı işlemde çalıştırılabilir; birden çok uygulama etki alanları desteklenmez. Modül Oluşturucusu (.cctor) çalıştırdığınızda, diğer bir deyişle, bu işlem ile derlenmiş algılar **/OpenMP** ve uygulama varsayılan olmayan çalışma zamanına yüklüyse. Daha fazla bilgi için bkz: [appdomain](../../cpp/appdomain.md), [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md), ve [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).  
   

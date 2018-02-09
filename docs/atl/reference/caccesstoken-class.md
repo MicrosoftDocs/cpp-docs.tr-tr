@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -55,21 +56,24 @@ f1_keywords:
 - ATLSECURITY/ATL::CAccessToken::SetDefaultDacl
 - ATLSECURITY/ATL::CAccessToken::SetOwner
 - ATLSECURITY/ATL::CAccessToken::SetPrimaryGroup
-dev_langs: C++
-helpviewer_keywords: CAccessToken class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3df4c5ac46c159cd3ed955621af914c677182a57
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b8d2a314ea7697ef4379b899ee6845cd4ceca707
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="caccesstoken-class"></a>CAccessToken sınıfı
+# <a name="caccesstoken-class"></a>CAccessToken Class
 Bir erişim belirteci için bir sarmalayıcı sınıftır.  
   
 > [!IMPORTANT]
@@ -87,7 +91,7 @@ class CAccessToken
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAccessToken:: ~ CAccessToken](#dtor)|Yok Edicisi.|  
+|[CAccessToken::~CAccessToken](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -140,7 +144,7 @@ class CAccessToken
 |[CAccessToken::SetPrimaryGroup](#setprimarygroup)|Birincil grup ayarlamak için bu yöntemi çağırın `CAccessToken` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve Windows NT veya Windows 2000 sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamında açıklayan ve bir Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
  Erişim denetimi modeli Windows giriş için bkz: [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK'sındaki.  
   
@@ -161,7 +165,7 @@ void Attach(HANDLE hToken) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Hata ayıklama derlemelerinde, bir onaylama hata oluşacaktır `CAccessToken` nesne zaten bir erişim belirteci sahipliğini içeriyor.  
   
-##  <a name="dtor"></a>CAccessToken:: ~ CAccessToken  
+##  <a name="dtor"></a>  CAccessToken::~CAccessToken  
  Yok Edicisi.  
   
 ```
@@ -332,9 +336,6 @@ bool CreateRestrictedToken(
 ### <a name="remarks"></a>Açıklamalar  
  `CreateRestrictedToken`kullanan [CreateRestrictedToken](http://msdn.microsoft.com/library/windows/desktop/aa446583) yeni Win32 işlevi `CAccessToken` nesnesiyle kısıtlamaları.  
   
-> [!NOTE]
->  Bu yöntem yalnızca Windows 2000 veya üstü kullanılabilir.  
-  
 > [!IMPORTANT]
 >  Kullanırken `CreateRestrictedToken`, aşağıdakilerden emin olun: Varolan belirtecin geçerli (ve kullanıcı tarafından girilen) ve `SidsToDisable` ve `PrivilegesToDelete` hem geçerli (hem de kullanıcı tarafından girilen). Yöntem false değeri döndürülürse, işlevselliği reddedin.  
   
@@ -441,7 +442,7 @@ bool GetDefaultDacl(CDacl* pDacl) const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan DACL, aksi takdirde kurtarılan, yanlış olması durumunda true döndürür.  
   
-##  <a name="geteffectivetoken"></a>CAccessToken::GetEffectiveToken  
+##  <a name="geteffectivetoken"></a>  CAccessToken::GetEffectiveToken  
  Almak için bu yöntemi çağırın `CAccessToken` nesne geçerli iş parçacığının etkin için erişim belirtecini eşittir.  
   
 ```
@@ -479,7 +480,7 @@ HANDLE GetHandle() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işleyici döner `CAccessToken` nesnenin erişim belirteci.  
   
-##  <a name="getimpersonationlevel"></a>CAccessToken::GetImpersonationLevel  
+##  <a name="getimpersonationlevel"></a>  CAccessToken::GetImpersonationLevel  
  Kimliğe bürünme düzeyi erişim belirtecinden almak için bu yöntemi çağırın.  
   
 ```
@@ -494,7 +495,7 @@ bool GetImpersonationLevel(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="getlogonsessionid"></a>CAccessToken::GetLogonSessionId  
+##  <a name="getlogonsessionid"></a>  CAccessToken::GetLogonSessionId  
  İlişkili oturum açma oturum kimliği almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -511,7 +512,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Hata ayıklama derlemelerinde, bir onaylama hata oluşacaktır `pluid` geçersiz bir değer.  
   
-##  <a name="getlogonsid"></a>CAccessToken::GetLogonSid  
+##  <a name="getlogonsid"></a>  CAccessToken::GetLogonSid  
  İlişkili oturum açma SID almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -545,7 +546,7 @@ bool GetOwner(CSid* pSid) const throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Sahibi, bu erişim belirteci etkinken oluşturulan tüm nesneler üzerinde varsayılan olarak ayarlanır.  
   
-##  <a name="getprimarygroup"></a>CAccessToken::GetPrimaryGroup  
+##  <a name="getprimarygroup"></a>  CAccessToken::GetPrimaryGroup  
  İle ilişkili birincil grup almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -596,7 +597,7 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrıları [OpenProcessToken](http://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 işlevi.  
   
-##  <a name="getprofile"></a>CAccessToken::GetProfile  
+##  <a name="getprofile"></a>  CAccessToken::GetProfile  
  İle ilişkili kullanıcı profili işaret eden tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -620,7 +621,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="getstatistics"></a>CAccessToken::GetStatistics  
+##  <a name="getstatistics"></a>  CAccessToken::GetStatistics  
  İle ilgili bilgi almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -673,7 +674,7 @@ bool GetThreadToken(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="gettokenid"></a>CAccessToken::GetTokenId  
+##  <a name="gettokenid"></a>  CAccessToken::GetTokenId  
  Belirteci ile ilişkili kimlik almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -687,7 +688,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
-##  <a name="gettype"></a>CAccessToken::GetType  
+##  <a name="gettype"></a>  CAccessToken::GetType  
  Belirteç türü almak için bu yöntemi çağırın `CAccessToken` nesnesi.  
   
 ```
@@ -945,7 +946,7 @@ bool OpenThreadToken(
   
  [CAutoRevertImpersonation sınıfı](../../atl/reference/cautorevertimpersonation-class.md) otomatik olarak ayarlayarak oluşturulan Kimliğine bürünülen erişim belirteçleri geri döndürmek için kullanılan `bImpersonate` bayrağını *doğru*.  
   
-##  <a name="privilegecheck"></a>CAccessToken::PrivilegeCheck  
+##  <a name="privilegecheck"></a>  CAccessToken::PrivilegeCheck  
  Belirtilen bir dizi ayrıcalık etkin içinde olup olmadığını belirlemek için bu yöntemi çağırın **CAccessToken** nesnesi.  
   
 ```

@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.classes.dialog
-dev_langs: C++
+f1_keywords:
+- vc.classes.dialog
+dev_langs:
+- C++
 helpviewer_keywords:
 - property sheet classes
 - dialog box classes
@@ -16,16 +19,17 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3095dfbbfa33f4c3110afb96c741a508611521cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6d51529e5d04a8297c0d3824ab38c7d2045bc866
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="dialog-box-classes"></a>İletişim Kutusu Sınıfları
 Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri kapsülleyen. Bir iletişim kutusu penceresinin özel bir tür olduğundan `CDialog` türetildiği `CWnd`. İletişim sınıflarından `CDialog` kullanın açma veya dosya, yazdırma, yazı tipi veya renk seçme kaydetme gibi standart iletişim kutuları için ortak iletişim kutusu sınıfları, bir arama ve değiştirme işlemi başlatılıyor veya çeşitli gerçekleştirme veya OLE ile ilgili işlemler.  
@@ -58,7 +62,7 @@ Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri k
  Bir dosya yazdırma için bir standart iletişim kutusu sağlar.  
   
  [CPrintDialogEx](../mfc/reference/cprintdialogex-class.md)  
- Bir Windows 2000 yazdırma özellik sayfası sağlar.  
+ Bir Windows yazdırma özellik sayfası sağlar.  
   
  [CPageSetupDialog](../mfc/reference/cpagesetupdialog-class.md)  
  Ayar ve boşluklarının değiştirme için ek destek ile Windows ortak Sayfa Yapısı iletişim kutusu tarafından sağlanan hizmetlerin yalıtır.  
@@ -121,7 +125,7 @@ Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri k
  [CDialogBar](../mfc/reference/cdialogbar-class.md)  
  Bir iletişim kutusu şablona dayalı bir denetim çubuğu.  
   
- [Cformview'yu](../mfc/reference/cformview-class.md)  
+ [CFormView](../mfc/reference/cformview-class.md)  
  Düzeni bir iletişim kutusu şablonda tanımlanan kaydırma görüntüleyin. Öğesinden bir sınıf türetin `CFormView` bir iletişim kutusu şablona dayalı bir kullanıcı arabirimi uygulamak için.  
   
  [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)  
@@ -130,7 +134,7 @@ Sınıf `CDialog` ve türetilmiş sınıflarının iletişim kutusu işlevleri k
  [CRecordView](../mfc/reference/crecordview-class.md)  
  Bir form sağlayan bir açık veritabanı bağlantısı (ODBC) kayıt kümesi nesnesine doğrudan bağlı Görünüm. Tüm form görünümleri gibi bir `CRecordView` bir iletişim kutusu şablona dayalı.  
   
- [Cprintınfo](../mfc/reference/cprintinfo-structure.md)  
+ [CPrintInfo](../mfc/reference/cprintinfo-structure.md)  
  Yazdırın veya Önizleme işle ilgili bilgileri içeren bir yapısı. Yazdırma mimarisi tarafından kullanılan [CView](../mfc/reference/cview-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

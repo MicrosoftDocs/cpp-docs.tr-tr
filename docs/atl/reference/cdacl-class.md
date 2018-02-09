@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,19 +17,22 @@ f1_keywords:
 - ATLSECURITY/ATL::CDacl::GetAceCount
 - ATLSECURITY/ATL::CDacl::RemoveAce
 - ATLSECURITY/ATL::CDacl::RemoveAllAces
-dev_langs: C++
-helpviewer_keywords: CDacl class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f57fc1bdd641fbc8e770ddc9b37480530034ba1d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5ac83d5c1f72bf1df20d41ec39b464ddb79e4f8e
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 DACL (isteğe bağlı erişim denetim listesi) yapısı için bir sarmalayıcı sınıftır.  
@@ -49,7 +53,7 @@ class CDacl : public CAcl
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CDacl::CDacl](#cdacl)|Oluşturucu.|  
-|[CDacl:: ~ CDacl](#dtor)|Yok Edicisi.|  
+|[CDacl::~CDacl](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -84,7 +88,7 @@ class CDacl : public CAcl
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
   
-##  <a name="addallowedace"></a>CDacl::AddAllowedAce  
+##  <a name="addallowedace"></a>  CDacl::AddAllowedAce  
  İzin verilen ACE (erişim denetim girdisi) ekler `CDacl` nesnesi.  
   
 ```
@@ -123,12 +127,9 @@ bool AddAllowedAce(
 ### <a name="remarks"></a>Açıklamalar  
  A `CDacl` nesnesi kullanıcılar ve nesne erişebilen grupları tanımlar sıfır veya daha fazla ACE (erişim denetimi girdileri) içerir. Bu yöntem erişimine izin veren bir ACE ekler `CDacl` nesnesi.  
   
-> [!NOTE]
->  İkinci biçiminde `AddAllowedAce` yalnızca Windows 2000 kullanılabilir ve üzerinde desteklenir.  
-  
  Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) içinde ayarlanan çeşitli bayrakları açıklaması `AceFlags` parametresi.  
   
-##  <a name="adddeniedace"></a>CDacl::AddDeniedAce  
+##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
  Reddedilen ACE (erişim denetim girdisi) ekler `CDacl` nesnesi.  
   
 ```
@@ -167,9 +168,6 @@ bool AddDeniedAce(
 ### <a name="remarks"></a>Açıklamalar  
  A `CDacl` nesnesi kullanıcılar ve nesne erişebilen grupları tanımlar sıfır veya daha fazla ACE (erişim denetimi girdileri) içerir. Bu yöntem için erişimini engellediği ACE ekler `CDacl` nesnesi.  
   
-> [!NOTE]
->  İkinci biçiminde `AddDeniedAce` yalnızca Windows 2000 kullanılabilir ve üzerinde desteklenir.  
-  
  Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) içinde ayarlanan çeşitli bayrakları açıklaması `AceFlags` parametresi.  
   
 ##  <a name="cdacl"></a>CDacl::CDacl  
@@ -187,7 +185,7 @@ CDacl () throw();
 ### <a name="remarks"></a>Açıklamalar  
  `CDacl` Nesne isteğe bağlı olarak var olan kullanılarak oluşturulabilir **ACL** yapısı. DACL yalnızca (isteğe bağlı erişim denetim listesi) dikkate almak önemlidir ve SACL yok (sistem erişim denetim listesi), bu parametre olarak geçirilen. Hata ayıklama derlemelerinde SACL geçirme ASSERT neden olur. Yayın derlemeleri SACL geçirme (erişim denetimi girdileri) ACE'ler yok sayılacak ACL'de neden olur ve herhangi bir hata meydana gelir.  
   
-##  <a name="dtor"></a>CDacl:: ~ CDacl  
+##  <a name="dtor"></a>  CDacl::~CDacl  
  Yok Edicisi.  
   
 ```
@@ -197,7 +195,7 @@ CDacl () throw();
 ### <a name="remarks"></a>Açıklamalar  
  Yıkıcı kullanarak tüm ACE'ler (erişim denetimi girdileri) dahil olmak üzere nesne tarafından alınan tüm kaynakları serbest bırakır [CDacl::RemoveAllAces](#removeallaces).  
   
-##  <a name="getacecount"></a>CDacl::GetAceCount  
+##  <a name="getacecount"></a>  CDacl::GetAceCount  
  ACE'ler (erişim denetimi girdileri) sayısını döndürür `CDacl` nesnesi.  
   
 ```
@@ -207,7 +205,7 @@ UINT GetAceCount() const throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  ACE'ler içinde yer alan sayısını döndürür `CDacl` nesnesi.  
   
-##  <a name="operator_eq"></a>CDacl::operator =  
+##  <a name="operator_eq"></a>  CDacl::operator =  
  Atama işleci.  
   
 ```

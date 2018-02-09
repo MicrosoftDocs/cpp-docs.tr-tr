@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: _mbcs
-dev_langs: C++
+f1_keywords:
+- _mbcs
+dev_langs:
+- C++
 helpviewer_keywords:
 - MBCS [C++], Unicode
 - MFC [C++], character sets
@@ -19,26 +22,24 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - runtime [C++], language portability
 ms.assetid: 677baec6-71b4-4579-94df-64f18bc117c4
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8e64edebc511445973a7fbb79f8fb8ccfd3f607b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9a841fc97715782c303065e37cbaeb8137cf0bc3
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="unicode-and-mbcs"></a>Unicode ve MBCS
 Uluslararası programlama yardımcı olmak için Microsoft Foundation sınıfları (MFC) kitaplığı, Visual c++ C çalışma zamanı kitaplığı ve Visual C++ geliştirme ortamı etkin. Bunlar sağlar:  
   
--   Unicode standart Windows 2000 (eski adıyla Windows NT) desteği. Unicode geçerli standarttır ve mümkün olduğunda kullanılmalıdır.  
+-   Windows'da Unicode standart desteği. Unicode geçerli standarttır ve mümkün olduğunda kullanılmalıdır.  
   
      Unicode kodlama, tüm diller için yeterli Kodlamalar sağlayan bir 16 bit karakterdir. Tüm ASCII karakterleri Unicode genişletmiştir karakter olarak dahil edilir.  
-  
-    > [!NOTE]
-    >  Unicode standart Windows 95, Windows 98 veya Windows Millennium Edition üzerinde desteklenmiyor.  
   
 -   Tüm platformlarda çift bayt karakter kümesi (DBCS) adlı bir form birden çok baytlı karakter kümesi (MBCS) desteği.  
   

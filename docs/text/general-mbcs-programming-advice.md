@@ -4,27 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: _mbcs
-dev_langs: C++
+f1_keywords:
+- _mbcs
+dev_langs:
+- C++
 helpviewer_keywords:
 - MBCS [C++], dialog box fonts
 - MS Shell Dlg
 - MBCS [C++], programming
 - dialog boxes [C++], fonts
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8a09bfb9b30e279e8d0b7696055c1e54ac56bfae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b379c163963a9ae0dd0c59c7d0fc809fee4f46d0
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="general-mbcs-programming-advice"></a>Genel MBCS Programlama Önerileri
 Aşağıdaki ipuçlarını kullanın:  
@@ -39,7 +43,7 @@ Aşağıdaki ipuçlarını kullanın:
   
 -   İletişim kutuları tasarlarken, yaklaşık olarak %30 izin MBCS çevirisi için statik metin denetimleri sonunda boşluk.  
   
--   Bazı yazı tipleri tüm sistemlerde kullanılabilir olmadığından, uygulamanız için yazı tipi seçerken dikkatli olun. Örneğin, Windows 2000 Japonca sürümü Helvetica yazı tipini desteklemez.  
+-   Bazı yazı tipleri tüm sistemlerde kullanılabilir olmadığından, uygulamanız için yazı tipi seçerken dikkatli olun.  
   
 -   İletişim kutuları için yazı tipi seçerken, kullanmak [MS Kabuk iletişim kutusu](http://msdn.microsoft.com/library/windows/desktop/dd374112) MS Sans Serif veya Helvetica yerine. MS Kabuk iletişim kutusu ile doğru yazı tipi iletişim kutusu oluşturmadan önce sistem tarafından değiştirilir. MS Kabuk iletişim kutusu kullanılarak bu yazı tipi ile mücadele etmek için işletim sisteminde değişiklikleri otomatik olarak kullanılabilir olmasını sağlar. (Bu sistemleri MS Kabuk iletişim kutusu doğru şekilde işlemez çünkü MFC MS Kabuk iletişim kutusu DEFAULT_GUI_FONT veya sistem yazı tipi Windows 95, Windows 98 ve Windows NT 4 ile değiştirir.)  
   

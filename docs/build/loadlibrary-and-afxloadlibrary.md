@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: LoadLibrary
-dev_langs: C++
+f1_keywords:
+- LoadLibrary
+dev_langs:
+- C++
 helpviewer_keywords:
 - DLLs [C++], AfxLoadLibrary
 - DLLs [C++], LoadLibrary
@@ -16,16 +19,17 @@ helpviewer_keywords:
 - LoadLibrary method
 - explicit linking [C++]
 ms.assetid: b4535d19-6243-4146-a31a-a5cca4c7c9e3
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 03fc696af7605f9937ecddf40a06a0c020aff82c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dd24f125398cab606ca835094727a4a2819fb17e
+ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 İşler çağrısı [LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187) (veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) açıkça bir DLL'e bağlanmak için. İşlev başarılı olursa, belirtilen DLL çağırma işlemi adres alanına eşler ve diğer işlevleri açıkça bağlamada ile kullanılan DLL için bir işleyici döner — Örneğin, `GetProcAddress` ve `FreeLibrary`.  
@@ -39,7 +43,7 @@ ms.lasthandoff: 12/21/2017
  Windows DLL yüklenemiyorsa, işlem hatadan kurtarmak deneyebilirsiniz. Örneğin, işlem hata kullanıcıya bildirmek ve dll Dosyasının başka bir yolu belirtmesini isteyin.  
   
 > [!IMPORTANT]
->  Windows NT 4, Windows 2000 veya Windows XP (SP1) öncesinde altında çalışacak şekilde kodu ise DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde bu işletim sistemlerinde, geçerli dizin ilk aranır. Dosya yolunu uygun değil, hedeflenen değil bir dosyası yüklenmiş.  
+>  DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde geçerli dizinin ilk aranır. Dosya yolunu uygun değil, hedeflenen değil bir dosyası yüklenmiş.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
