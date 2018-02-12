@@ -1,44 +1,50 @@
 ---
 title: noalias | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/09/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: noalias_cpp
-dev_langs: C++
+f1_keywords:
+- noalias_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - noalias __declspec keyword
 - __declspec keyword [C++], noalias
 ms.assetid: efafa8b0-7f39-4edc-a81e-d287ae882c9b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 92e96ce931ea5bc44e03a5803865daa66f960e92
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6fd57b10aba4298ff7facd725ab3ce1934ccf1ab
+ms.sourcegitcommit: f3c398b1c7dbf36ab71b5ca89d365b1913afa307
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/11/2018
 ---
 # <a name="noalias"></a>noalias
 
-**Microsoft özel**
+**Microsoft Specific**
 
 `noalias`bir işlev çağrısı değiştirmeyin veya başvuru görünür genel durum, anlamına gelir ve yalnızca işaret bellek değiştirir *doğrudan* işaretçi parametreleri (birinci düzey indirections) tarafından.
 
 Bir işlevi olarak ek açıklama eklenmişse `noalias`, iyileştirici parametreleri kendilerini yanı sıra, yalnızca ilk düzeyi indirections işaretçi parametrelerinin başvurulan veya işlevinde değiştiren, kabul edilebilir. Görünür genel durum değil tanımlanan veya derleme kapsamı dışında başvurulan tüm veri kümesidir ve kendi adres alınmaz. Tüm kaynak dosyaları derleme kapsamıdır ([/LTCG (bağlama zamanı kodu oluşturma)](../build/reference/ltcg-link-time-code-generation.md) derlemeler) ya da tek bir kaynak dosyası (olmayan**/LTCG** yapı).
 
+`noalias` Ek açıklama yalnızca açıklamalı işlev gövdesi içinde geçerlidir. Bir işlevi olarak işaretleme `__declspec(noalias)` işlev tarafından döndürülen işaretçileri yumuşatma etkilemez.
+
+Yumuşatma etkileyebilir başka bir açıklama için bkz: [__declspec(restrict)](../cpp/restrict.md).
+
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örneği kullanarak gösteren `__declspec(restrict)` ve `__declspec(noalias)`. Bellek normalde, döndürülen `malloc` olan `restrict` CRT üstbilgileri uygun şekilde donatılmış olduğundan.
+Aşağıdaki örnek kullanımını gösteren `__declspec(noalias)`.
 
-Ancak, bu örnekte, işaretçileri `mempool` ve `memptr` derleyici bellek yumuşatma tabi değil garantisi yoktur nedenle geneldir. İşaretçileri ile döndüren işlevler dekorasyon `__declspec(restrict)` bellek dönüş değeri tarafından işaret derleyici diğer değil söyler.
-
-Bellekle erişen örnek işlevinde dekorasyon `__declspec(noalias)` bu işlev işaretçileri parametre listesinde aracılığıyla dışında genel durum etkilemediğinden derleyici söyler.
+Zaman işlevi `multiply` erişir bellek açıklama `__declspec(noalias)`, bu işlev parametre listesinde işaretçileri aracılığıyla dışında genel durumunu değiştirmez derleyici söyler.
 
 ```C
 // declspec_noalias.c
@@ -51,7 +57,7 @@ Bellekle erişen örnek işlevinde dekorasyon `__declspec(noalias)` bu işlev i�
 
 float * mempool, * memptr;
 
-__declspec(restrict) float * ma(int size)
+float * ma(int size)
 {
     float * retval;
     retval = memptr;
@@ -59,7 +65,7 @@ __declspec(restrict) float * ma(int size)
     return retval;
 }
 
-__declspec(restrict) float * init(int m, int n)
+float * init(int m, int n)
 {
     float * a;
     int i, j;
@@ -101,7 +107,7 @@ int main()
     a = init(M, N);
     b = init(N, P);
     c = init(M, P);
-
+ 
     multiply(a, b, c);
 }
 ```
@@ -109,4 +115,5 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [__declspec](../cpp/declspec.md)  
-[Anahtar Sözcükler](../cpp/keywords-cpp.md)
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+[__declspec(restrict)](../cpp/restrict.md)  
