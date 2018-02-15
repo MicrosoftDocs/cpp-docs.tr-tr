@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _close
+ms.topic: reference
+apiname:
+- _close
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,23 +23,26 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _close
-dev_langs: C++
+f1_keywords:
+- _close
+dev_langs:
+- C++
 helpviewer_keywords:
 - _close function
 - close function
 - files [C++], closing
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2cb1cace610479113c3a4be00daf634b0da75e2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9532d8fb98786f35dfa888b5bf8bef5e3e8b2583
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="close"></a>_close
 Bir dosyayı kapatır.  
@@ -55,7 +60,7 @@ int _close(
  Açık olan dosyaya başvuran dosya tanımlayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_close`Dosya başarılı bir şekilde kapatıldı 0 döndürür. Dönüş değeri-1 hata gösterir.  
+ `_close` Dosya başarılı bir şekilde kapatıldı 0 döndürür. Dönüş değeri-1 hata gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_close` İşlev ile ilişkili dosya kapatır `fd`.  

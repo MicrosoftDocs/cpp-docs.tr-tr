@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wmkdir
 - _mkdir
@@ -29,7 +30,8 @@ f1_keywords:
 - _tmkdir
 - wmkdir
 - _wmkdir
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wmkdir function
 - folders [C++], creating
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _mkdir function
 - _tmkdir function
 ms.assetid: 7f22d01d-63a5-4712-a6e7-d34878b2d840
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8a94c21cb35237f08a4a8860b1a414c91d5e8801
-ms.sourcegitcommit: 4df3cf1ae6ac1154a9dff9de0063377df43380a2
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b7ca09b2ae9e9428647cbc0dc8778be0c58616fc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mkdir-wmkdir"></a>_mkdir, _wmkdir
 Yeni bir dizin oluşturur.  
@@ -82,9 +85,9 @@ int _wmkdir(
  Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_mkdir` İşlevi yeni bir dizin ile belirtilen oluşturur *DizinAdı.* `_mkdir`çağrı, yalnızca son bileşeni başına yalnızca bir yeni dizin oluşturabilirsiniz `dirname` yeni bir dizin adı verebilirsiniz. `_mkdir`yol ayırıcısı tercüme etmez. Windows NT, her iki ters eğik çizgi ( \\) ve eğik çizgi (/) geçerli bir yol sınırlayıcı karakter dizelerini çalışma zamanı yordamları.  
+ `_mkdir` İşlevi yeni bir dizin ile belirtilen oluşturur *DizinAdı.* `_mkdir` çağrı, yalnızca son bileşeni başına yalnızca bir yeni dizin oluşturabilirsiniz `dirname` yeni bir dizin adı verebilirsiniz. `_mkdir` yol ayırıcısı tercüme etmez. Windows NT, her iki ters eğik çizgi ( \\) ve eğik çizgi (/) geçerli bir yol sınırlayıcı karakter dizelerini çalışma zamanı yordamları.  
   
- `_wmkdir`bir joker karakter sürümü `_mkdir`; `dirname` bağımsız değişkeni `_wmkdir` bir joker karakter dizesidir. `_wmkdir`ve `_mkdir` Aksi takdirde aynı şekilde davranır.  
+ `_wmkdir` bir joker karakter sürümü `_mkdir`; `dirname` bağımsız değişkeni `_wmkdir` bir joker karakter dizesidir. `_wmkdir` ve `_mkdir` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

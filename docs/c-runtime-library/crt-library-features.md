@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.runtime
-dev_langs: C++
+f1_keywords:
+- c.runtime
+dev_langs:
+- C++
 helpviewer_keywords:
 - MSVCR71.dll
 - libraries [C++], multithreaded
@@ -24,22 +27,23 @@ helpviewer_keywords:
 - libraries [C++], run-time
 - linking [C++], libraries
 ms.assetid: a889fd39-807d-48f2-807f-81492612463f
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 50ca3fd6d60e7fecf84c81d14c859f5b2f51e120
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 104119afba696f51598af202c8eb7f1afe79aa93
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili derleyici seçenekleri ve önişlemci yönergeleri oluşturan çeşitli .lib dosyaları anlatılmaktadır.  
   
 ## <a name="c-run-time-libraries-crt"></a>C Çalışma Zamanı Kitaplıkları (CRT)  
- C çalışma zamanı kitaplığı (CRT), ISO C99 standart kitaplığı içerir C++ Standart Kitaplığı, parçasıdır. CRT uygulayan Visual C++ kitaplıkları yerel kod geliştirme ve hem karışık yerel ve yönetilen kod ve saf yönetilen kod için .NET geliştirme desteği. Çok iş parçacıklı geliştirme CRT'in tüm sürümleri destekler. Hem statik, doğrudan kodunuza, kitaplık bağlamak için bağlama veya kod kullanımı ortak DLL dosyalarınızı izin vermek için dinamik bağlantılandırma kitaplıkları çoğunu destekler.  
+ C çalışma zamanı kitaplığı (CRT), ISO C99 standart kitaplığı içerir C++ Standart Kitaplığı, parçasıdır. Hem yerel ve yönetilen kod karışık ve CRT uygulayan Visual C++ kitaplıkları yerel kod geliştirme desteği. Çok iş parçacıklı geliştirme CRT'in tüm sürümleri destekler. Hem statik, doğrudan kodunuza, kitaplık bağlamak için bağlama veya kod kullanımı ortak DLL dosyalarınızı izin vermek için dinamik bağlantılandırma kitaplıkları çoğunu destekler.  
   
  Visual Studio 2015'ten başlayarak, CRT yeni ikili dosyalar içinde bulunanad. Evrensel CRT (UCRT) tarafından standart C99 CRT kitaplık dışarı globals ve işlevler içerir. UCRT artık Windows bir bileşenidir ve Windows 10 bir parçası olarak gelir. Statik kitaplık, DLL içeri aktarma kitaplığı ve başlık dosyaları UCRT için artık Windows 10 SDK bulunamadı. Visual C++ yüklediğinizde Visual Studio Kurulumu Windows 10 SDK UCRT kullanmak için gereken alt yükler. Visual Studio 2015 ve sonraki sürümleri tarafından desteklenen Windows sürümlerini UCRT kullanabilirsiniz. Windows 10 dışında Windows'un desteklenen sürümleri için vcredist kullanarak dağıtabilirsiniz. Daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
@@ -47,10 +51,10 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
 |Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|--------------------|---------------------|------------|-----------------------------|  
-|libucrt.lib|Yok.|Statik olarak UCRT kodunuza bağlar.|**/ MT**|_MT|  
-|libucrtd.lib|Yok.|Statik bağlama için UCRT sürümü hata ayıklama. Değil yeniden dağıtılabilir.|**/ MTd**|_DEBUG, _MT|  
+|libucrt.lib|Yok.|Statik olarak UCRT kodunuza bağlar.|**/MT**|_MT|  
+|libucrtd.lib|Yok.|Statik bağlama için UCRT sürümü hata ayıklama. Değil yeniden dağıtılabilir.|**/MTd**|_DEBUG, _MT|  
 |ucrt.lib|ucrtbase.dll|DLL içeri aktarma kitaplığını UCRT için.|**/MD**|_MT, _DLL|  
-|ucrtd.lib|ekler|DLL UCRT hata ayıklama sürümü için kitaplığı içeri aktarın. Değil yeniden dağıtılabilir.|**/ MDd**|_DEBUG, _MT, _DLL|  
+|ucrtd.lib|ekler|DLL UCRT hata ayıklama sürümü için kitaplığı içeri aktarın. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|  
   
  Vcruntime kitaplığı özel durum işleme ve hata ayıklama desteği, çalışma zamanı denetimleri ve tür bilgileri, uygulama ayrıntılarını ve bazı genişletilmiş kitaplık işlevleri gibi Visual C++ CRT uygulamaya özel kod içerir. Bu kitaplık kullanılan derleyici sürümüne özeldir.  
   
@@ -58,10 +62,10 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
 |Kitaplığı|İlişkili DLL|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|--------------------|---------------------|------------|-----------------------------|  
-|libvcruntime.lib|Yok.|Statik olarak kodunuza bağlı.|**/ MT**|_MT|  
-|libvcruntimed.lib|Yok.|Statik bağlama için sürüm hata ayıklama. Değil yeniden dağıtılabilir.|**/ MTd**|_MT, _DEBUG|  
+|libvcruntime.lib|Yok.|Statik olarak kodunuza bağlı.|**/MT**|_MT|  
+|libvcruntimed.lib|Yok.|Statik bağlama için sürüm hata ayıklama. Değil yeniden dağıtılabilir.|**/MTd**|_MT, _DEBUG|  
 |vcruntime.lib|vcruntime\<sürüm > .dll|DLL içeri aktarma kitaplığını vcruntime için.|**/MD**|_MT, _DLL|  
-|vcruntimed.lib|vcruntime\<sürüm > d.dll|Hata ayıklama vcruntime için DLL içeri aktarma kitaplığı. Değil yeniden dağıtılabilir.|**/ MDd**|_DEBUG, _MT, _DLL|  
+|vcruntimed.lib|vcruntime\<version>d.dll|Hata ayıklama vcruntime için DLL içeri aktarma kitaplığı. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|  
   
  CRT başlatır CRT kitaplık statik veya dinamik olarak bağlı, veya yerel, yönetilen veya karma kodu olduğuna bağlı birden çok kitaplık birinde koddur. Bu kod CRT başlatma, iç iş parçacığı başına veri başlatma ve sonlandırma işler. Kullanılan derleyici sürümüne özeldir. Dinamik olarak bağlı UCRT kullanırken bile bu kitaplığı her zaman statik olarak bağlanır.  
   
@@ -69,14 +73,14 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
 |Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |-------------|---------------------|------------|-----------------------------|  
-|Libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/ MT**|_MT|  
-|libcmtd.lib|Statik olarak yerel CRT başlatma hata ayıklama sürümü bağlar. Değil yeniden dağıtılabilir.|**/ MTd**|_DEBUG, _MT|  
-|Msvcrt.lib|DLL UCRT ve vcruntime ile kullanım için yerel CRT başlatma için statik kitaplığı.|**/MD**|_MT, _DLL|  
-|msvcrtd.lib|Statik kitaplık yerel CRT başlatma DLL UCRT ve vcruntime ile kullanmak için hata ayıklama sürümü. Değil yeniden dağıtılabilir.|**/ MDd**|_DEBUG, _MT, _DLL|  
+|libcmt.lib|Statik olarak yerel CRT başlatma kodunuza bağlar.|**/MT**|_MT|  
+|libcmtd.lib|Statik olarak yerel CRT başlatma hata ayıklama sürümü bağlar. Değil yeniden dağıtılabilir.|**/MTd**|_DEBUG, _MT|  
+|msvcrt.lib|DLL UCRT ve vcruntime ile kullanım için yerel CRT başlatma için statik kitaplığı.|**/MD**|_MT, _DLL|  
+|msvcrtd.lib|Statik kitaplık yerel CRT başlatma DLL UCRT ve vcruntime ile kullanmak için hata ayıklama sürümü. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|  
 |msvcmrt.lib|DLL UCRT ve vcruntime ile kullanmak için karışık yerel ve yönetilen CRT başlatma için statik kitaplığı.|**/ CLR**||  
 |msvcmrtd.lib|Statik kitaplık karışık yerel ve yönetilen CRT başlatma DLL UCRT ve vcruntime ile kullanmak için hata ayıklama sürümü. Değil yeniden dağıtılabilir.|**/ CLR**||  
-|Msvcurt.lib|**Kullanım dışı** saf için statik kitaplık yönetilen CRT.|**/ CLR: pure**||  
-|msvcurtd.lib|**Kullanım dışı** saf hata ayıklama sürümü için statik kitaplık yönetilen CRT. Değil yeniden dağıtılabilir.|**/ CLR: pure**||  
+|msvcurt.lib|**Kullanım dışı** saf için statik kitaplık yönetilen CRT.|**/clr:pure**||  
+|msvcurtd.lib|**Kullanım dışı** saf hata ayıklama sürümü için statik kitaplık yönetilen CRT. Değil yeniden dağıtılabilir.|**/clr:pure**||  
   
  Komut satırında C çalışma zamanı kitaplığı belirtir derleyici seçeneği olmadan programınızdan bağlantı varsa, bağlayıcı statik olarak bağlantılı CRT kitaplıklar kullanır: libcmt.lib, libvcruntime.lib ve libucrt.lib.  
   
@@ -86,9 +90,7 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
  Kullanıyorsanız **/CLR** derleyici geçiş kodunuzu bağlantılı olması ile bir statik kitaplık, msvcmrt.lib. Statik kitaplık, yönetilen kod ve yerel CRT arasındaki proxy sağlar. Statik olarak bağlantılı CRT kullanamazsınız ( **/MT** veya **/MTd** seçenekleri) ile **/CLR**. Dinamik olarak bağlı kitaplıklarını kullanma (**/MD** veya **/MDd**) yerine.  
   
- Kullanıyorsanız **/CLR: pure** derleyici anahtar kodunuzu statik kitaplık msvcurt.lib ile bağlanır. İle **/CLR**, statik olarak bağlantılı kitaplıkla bağlayamazsınız. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'ten başlayarak dışıdır.  
-  
- CRT ile kullanma hakkında daha fazla bilgi için **/CLR**, bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md); için **/CLR: pure**, bkz: [saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ CRT ile kullanma hakkında daha fazla bilgi için **/CLR**, bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md).  
   
  Hata ayıklama sürümü, uygulamanızın oluşturmak için [_DEBUG](../c-runtime-library/debug.md) bayrağı tanımlanmalıdır ve uygulama bir hata ayıklama sürümü bu kitaplıklar biri ile bağlanması gerekir. Kitaplık dosyaları hata ayıklama sürümleri kullanma hakkında daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).  
   
@@ -98,10 +100,10 @@ Bu konuda C çalışma zamanı kitaplıkları yanı sıra bunların ilişkili de
   
 |C++ Standart Kitaplığı|Özellikler|Seçenek|Ön işlemci yönergeleri|  
 |----------------------------|---------------------|------------|-----------------------------|  
-|LIBCPMT. LIB|Birden çok iş parçacıklı, statik bağlantı|**/ MT**|_MT|  
+|LIBCPMT.LIB|Birden çok iş parçacıklı, statik bağlantı|**/MT**|_MT|  
 |MSVCPRT. LIB|Birden çok iş parçacıklı, dinamik bağlantı (kitaplığı içeri aktarmak için MSVCP\<sürüm > .dll)|**/MD**|_MT, _DLL|  
-|LIBCPMTD. LIB|Birden çok iş parçacıklı, statik bağlantı|**/ MTd**|_DEBUG, _MT|  
-|MSVCPRTD. LIB|Birden çok iş parçacıklı, dinamik bağlantı (kitaplığı içeri aktarmak için MSVCP\<sürüm > D.DLL)|**/ MDd**|_DEBUG, _MT, _DLL|  
+|LIBCPMTD.LIB|Birden çok iş parçacıklı, statik bağlantı|**/MTd**|_DEBUG, _MT|  
+|MSVCPRTD.LIB|Birden çok iş parçacıklı, dinamik bağlantı (kitaplığı içeri aktarmak için MSVCP\<sürüm > D.DLL)|**/MDd**|_DEBUG, _MT, _DLL|  
   
  Yayın sürümü, projenizin temel C çalışma zamanı kitaplıkları (LIBCMT. birini oluşturduğunuzda LIB, MSVCMRT. LIB, MSVCRT. LIB) varsayılan olarak bağlı olduğu, seçtiğiniz bağlı olarak derleyici seçeneği (birden çok iş parçacıklı, DLL, / CLR). Aşağıdakilerden birini eklerseniz [C++ standart kitaplık üstbilgi dosyaları](../standard-library/cpp-standard-library-header-files.md) kodunuzda C++ Standart Kitaplığı, otomatik olarak tarafından Visual C++ derleme zamanında bağlanır. Örneğin:  
   

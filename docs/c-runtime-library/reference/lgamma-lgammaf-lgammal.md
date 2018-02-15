@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - lgamma
 - lgammaf
@@ -33,22 +33,24 @@ f1_keywords:
 - math/lgamma
 - math/lgammaf
 - math/lgammal
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - lgamma function
 - lgammal function
 - lgammaf function
 ms.assetid: 6e326c58-7077-481a-a329-c82ae56ae9e6
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4bd91c4dd26582e98f4a6ee9f92ad0293c460433
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e7ef4a64252342484a1c6aa68722013f1e6bffdf
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="lgamma-lgammaf-lgammal"></a>lgamma, lgammaf, lgammal
 Mutlak değeri belirtilen değere Gama işlevinin doğal logaritmasını belirler.  
@@ -79,15 +81,15 @@ long double lgammal(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`x`  
+ [in] `x`  
  İşlem için değer.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, mutlak değeri Gama işlevinin doğal logaritmasını döndürür`x.`  
+ Başarılı olursa, mutlak değeri Gama işlevinin doğal logaritmasını döndürür `x.`  
   
 |Sorun|Döndür|  
 |-----------|------------|  
-|`x`= NaN|NaN|  
+|`x` = NaN|NaN|  
 |`x` = ±0|+ SONSUZ|  
 |`x`Negatif tamsayı =|+ SONSUZ|  
 |±INFINITY|+ SONSUZ|  

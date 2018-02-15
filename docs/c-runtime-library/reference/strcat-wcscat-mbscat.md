@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbscat
 - wcscat
@@ -31,7 +32,8 @@ f1_keywords:
 - _tcscat
 - strcat
 - wcscat
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - concatenating strings
 - mbscat function
@@ -46,22 +48,23 @@ helpviewer_keywords:
 - appending strings
 - wcscat function
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b7b85ce742cb39dcb9333a4eae5959e38c4ec50a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cd2abb7326735cb84ffc8905d1ed30e030c88559
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strcat-wcscat-mbscat"></a>strcat, wcscat, _mbscat
 Bir dize ekler. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strcat_s, wcscat_s, _mbscat_s](../../c-runtime-library/reference/strcat-s-wcscat-s-mbscat-s.md).  
   
 > [!IMPORTANT]
->  `_mbscat_s`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscat_s`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -111,7 +114,7 @@ unsigned char *_mbscat(
 > [!IMPORTANT]
 >  `strcat`, `strDestination` içinde yeterli yer olup olmadığını, `strSource` eklemeden denetlemediğinden, arabellek taşmalarına neden olabilir. Kullanmayı [strncat](../../c-runtime-library/reference/strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md) yerine.  
   
- `wcscat`ve `_mbscat` joker karakter ve çok baytlı karakter sürümleri `strcat`. Bağımsız değişkenleri ve dönüş değerini `wcscat` joker karakter olan dizeleri; bu `_mbscat` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
+ `wcscat` ve `_mbscat` joker karakter ve çok baytlı karakter sürümleri `strcat`. Bağımsız değişkenleri ve dönüş değerini `wcscat` joker karakter olan dizeleri; bu `_mbscat` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
   
  C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

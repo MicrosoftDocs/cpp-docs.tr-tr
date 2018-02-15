@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fclose
 - _fcloseall
@@ -26,22 +27,24 @@ apitype: DLLExport
 f1_keywords:
 - fclose
 - _fcloseall
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fclose function
 - streams, closing
 - _fcloseall function
 ms.assetid: c3c6ea72-92c6-450a-a33e-3e568d2784a4
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2d670ead8214f54323cf9f6b284eaaef9a582757
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a9399aa2848ff3f5179b711674fa524ef7543fc0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fclose-fcloseall"></a>fclose, _fcloseall
 Bir akış kapatır (`fclose`) veya tüm açık akışları kapatır (`_fcloseall`).  
@@ -60,7 +63,7 @@ int _fcloseall( void );
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fclose`Akış başarıyla kapalıysa 0 döndürür. `_fcloseall`Akış kapalı toplam sayısını döndürür. Her iki işlevi dönüş `EOF` hatayı belirtmek için.  
+ `fclose` Akış başarıyla kapalıysa 0 döndürür. `_fcloseall` Akış kapalı toplam sayısını döndürür. Her iki işlevi dönüş `EOF` hatayı belirtmek için.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `fclose` İşlev kapandığında `stream`. Varsa `stream` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `fclose` ayarlar `errno` için `EINVAL` ve döndürür `EOF`. Önerilir `stream` işaretçi her zaman kontrol edileceği bu işlev çağrılmadan önce.  
@@ -71,7 +74,7 @@ int _fcloseall( void );
   
  **Not:** bu işlevlerin bir akış kapatmak için kullanıldığında, temel alınan dosya tanımlayıcısı ve işletim sistemi dosya işleci (veya yuva), yanı sıra Akış kapalı. Bu nedenle, dosyayı ilk olarak açtıysanız bir dosya olarak işlemek veya dosya tanımlayıcısı ve ile kapalı `fclose`, değil de çağrı yapmanız `_close` için dosya tanımlayıcısı kapatın; Win32 işlevini çağırmayın `CloseHandle` dosya tanıtıcısı kapatın.  
   
- `fclose`ve `_fcloseall` başka bir iş parçacığı girişime karşı korumak için kodu ekleyin. Kilitleme sürüm için bir `fclose`, bkz: `_fclose_nolock`.  
+ `fclose` ve `_fcloseall` başka bir iş parçacığı girişime karşı korumak için kodu ekleyin. Kilitleme sürüm için bir `fclose`, bkz: `_fclose_nolock`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

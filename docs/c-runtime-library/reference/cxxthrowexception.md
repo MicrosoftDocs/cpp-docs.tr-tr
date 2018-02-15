@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CxxThrowException
+ms.topic: reference
+apiname:
+- _CxxThrowException
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CxxThrowException
 - _CxxThrowException
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CxxThrowException function
 - CxxThrowException function
 ms.assetid: 0b90bef5-b7d2-46e0-88e2-59e531e01a4d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d1c66f35a61a1b3f8577ac7a1432423906f091ab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fb59e3e81a9e92d3a692e91c9c25a92fd09603cd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cxxthrowexception"></a>_CxxThrowException
 Özel durum kaydı oluşturur ve özel durum işleme başlayabilmesi için çalışma zamanı ortamı çağırır.  
@@ -52,10 +56,10 @@ extern "C" void __stdcall _CxxThrowException(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`pExceptionObject`  
+ [in] `pExceptionObject`  
  Özel durum oluşturdu nesne.  
   
- [in]`pThrowInfo`  
+ [in] `pThrowInfo`  
  Özel durum işlemek için gereken bilgiler.  
   
 ## <a name="remarks"></a>Açıklamalar  

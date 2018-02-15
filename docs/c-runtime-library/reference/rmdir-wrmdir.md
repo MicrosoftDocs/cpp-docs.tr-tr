@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wrmdir
 - _rmdir
@@ -29,7 +30,8 @@ f1_keywords:
 - wrmdir
 - _rmdir
 - _wrmdir
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _rmdir function
 - directories [C++], deleting
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d926158275e56c6d845d73fe2d8b4092a84c096c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 527b9baa6da22ae33ef0bd14ded46780aecaa0d2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rmdir-wrmdir"></a>_rmdir, _wrmdir
 Bir dizini siler.  
@@ -87,7 +90,7 @@ int _wrmdir(
 ## <a name="remarks"></a>Açıklamalar  
  `_rmdir` İşlevi tarafından belirtilen dizin siler `dirname`. Dizinin boş olması gerekir ve geçerli çalışma dizini veya kök dizini olmamalıdır.  
   
- `_wrmdir`bir joker karakter sürümü `_rmdir`; `dirname` bağımsız değişkeni `_wrmdir` bir joker karakter dizesidir. `_wrmdir`ve `_rmdir` Aksi takdirde aynı şekilde davranır.  
+ `_wrmdir` bir joker karakter sürümü `_rmdir`; `dirname` bağımsız değişkeni `_wrmdir` bir joker karakter dizesidir. `_wrmdir` ve `_rmdir` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

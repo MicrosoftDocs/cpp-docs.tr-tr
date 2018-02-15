@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtReportBlockType
+ms.topic: reference
+apiname:
+- _CrtReportBlockType
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,7 +25,8 @@ apitype: DLLExport
 f1_keywords:
 - _CrtReportBlockType
 - CrtReportBlockType
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtReportBlockType function
 - BLOCK_SUBTYPE macro
@@ -32,16 +35,17 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 214f2f1393b793cca246d87946cf6f3dfc73fe4e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7104f429a6be7b6715982c99b11a51b75efca9d3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtreportblocktype"></a>_CrtReportBlockType
 Belirli hata ayıklama yığını blok işaretçisi ile ilişkili blok türü/alt döndürür.  
@@ -71,7 +75,7 @@ Belirli hata ayıklama yığını blok işaretçisi ile ilişkili blok türü/al
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtReportBlockType`|\<crtdbg.h >|  
+|`_CrtReportBlockType`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

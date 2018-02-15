@@ -1,13 +1,15 @@
 ---
 title: Sinyal | Microsoft Docs
 ms.custom: 
-ms.date: 1/02/2018
+ms.date: 02/12/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: signal
+ms.topic: reference
+apiname:
+- signal
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,18 +23,22 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: signal
-dev_langs: C++
-helpviewer_keywords: signal function
+f1_keywords:
+- signal
+dev_langs:
+- C++
+helpviewer_keywords:
+- signal function
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 337bc5e222ee7fcb313d0b7ea0722dbb5cacea75
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 23eae404bf5f8e2227d68189938defb2308f5e6b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="signal"></a>sinyal
 
@@ -44,21 +50,19 @@ Ayarlar sinyal işleme kesme.
 ## <a name="syntax"></a>Sözdizimi
 
 ```C
-void (__cdecl *signal(
-   int sig,
-   void (__cdecl *func ) (int [, int ] )))(int);
+void __cdecl *signal(int sig, int (*func)(int, int));
 ```
 
 ### <a name="parameters"></a>Parametreler
-_SIG_  
+_sig_  
 Sinyal değeri.
 
-_FUNC_  
-Yürütülecek işlev. İlk parametre bir sinyal değer ve ikinci parametre ilk parametre SIGFPE olduğunda, kullanılabilir alt koddur.
+_func_  
+İkinci parametre, yürütülecek işlevine bir işaretçidir. İlk parametre bir sinyal değer ve ikinci parametre ilk parametre SIGFPE olduğunda, kullanılabilir alt koddur.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`signal`önceki değerini döndürür _func_ verilen sinyal ile ilişkili. Örneğin, önceki değeri _func_ edildi `SIG_IGN`, dönüş değeri de mi `SIG_IGN`. Dönüş değeri `SIG_ERR` bir hata olduğunu gösterir; bu durumda, `errno` ayarlanır `EINVAL`.
+`signal` verilen sinyal ile ilişkili func önceki değerini döndürür. Örneğin, önceki değeri _func_ edildi `SIG_IGN`, dönüş değeri de mi `SIG_IGN`. Dönüş değeri `SIG_ERR` bir hata olduğunu gösterir; bu durumda, `errno` ayarlanır `EINVAL`.
 
 Bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) dönüş kodları hakkında daha fazla bilgi.
 
@@ -80,7 +84,7 @@ Varsa _SIG_ bulunmaması yukarıdaki değerini geçersiz parametre işleyicisi, 
 Varsayılan olarak, `signal` çağıran program değerini bakılmaksızın 3, çıkış koduyla sona erer _SIG_.
 
 > [!NOTE]
-> `SIGINT`herhangi bir Win32 uygulaması için desteklenmiyor. CTRL + C kesme ortaya çıktığında, Win32 işletim sistemleri, özellikle o kesme işlemek için yeni bir iş parçacığı oluşturur. Bu, birden çok iş parçacıklı haline gelir ve beklenmeyen davranışlara neden UNIX birinde gibi tek iş parçacığı uygulamaya neden olabilir.
+> `SIGINT` herhangi bir Win32 uygulaması için desteklenmiyor. CTRL + C kesme ortaya çıktığında, Win32 işletim sistemleri, özellikle o kesme işlemek için yeni bir iş parçacığı oluşturur. Bu, birden çok iş parçacıklı haline gelir ve beklenmeyen davranışlara neden UNIX birinde gibi tek iş parçacığı uygulamaya neden olabilir.
 
 _Func_ bağımsız değişkeni olan bir adres yazdığınız bir sinyal işleyicisine veya önceden tanımlanmış sabitleri birine `SIG_DFL` veya `SIG_IGN`, ayrıca SİNYALİN tanımlanmış. H. Varsa _func_ bir işlevi olduğunu verilen sinyal için sinyal işleyici olarak yüklenir. Sinyal işleyicinin prototip bir biçimsel bağımsız değişken gerektiriyor _SIG_, türü `int`. İşletim sistemi aracılığıyla gerçek bağımsız değişkeni sağlar _SIG_ bir kesinti oluştuğunda; kesme oluşturulan sinyal değişkendir. Bu nedenle, (yukarıdaki tabloda listelenen) altı bildirim sabitleri sinyal işleyicinizi belirlemek için hangi kesme oluştu ve uygun eylemi gerçekleştirin kullanabilirsiniz. Örneğin, çağırabilirsiniz `signal` iki kere aynı işleyici için iki farklı sinyalleri atamak ve ardından test etmek için _SIG_ farklı eylemleri işleyicinin değişkeninde temel sinyal alındı.
 

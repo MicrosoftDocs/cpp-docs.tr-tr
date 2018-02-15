@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _fileno
+ms.topic: reference
+apiname:
+- _fileno
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,24 +23,27 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _fileno
-dev_langs: C++
+f1_keywords:
+- _fileno
+dev_langs:
+- C++
 helpviewer_keywords:
 - file handles [C++], getting from streams
 - fileno function
 - _fileno function
 - streams, getting file handles
 ms.assetid: 86474174-2f17-4100-bcc4-352dd976c7b5
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fab2792c46579ef702dfd16cdd248de3d4b7076c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1d0ce17b75ea74154121549209aed94b0a3affea
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fileno"></a>_fileno
 Bir akış ile ilişkili dosya tanımlayıcısı alır.  
@@ -56,7 +61,7 @@ int _fileno(
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_fileno`dosya tanımlayıcısı döndürür. Döndürülen hata yoktur. Sonuç tanımsız ise `stream` açık bir dosyayı belirtmiyor. Akış ise `NULL`, `_fileno` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri -1 ve kümelerini yürütülmesine izin veriliyorsa `errno` için `EINVAL`.  
+ `_fileno` dosya tanımlayıcısı döndürür. Döndürülen hata yoktur. Sonuç tanımsız ise `stream` açık bir dosyayı belirtmiyor. Akış ise `NULL`, `_fileno` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için bu işlev dönüşleri -1 ve kümelerini yürütülmesine izin veriliyorsa `errno` için `EINVAL`.  
   
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   

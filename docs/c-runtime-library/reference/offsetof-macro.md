@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,24 +20,27 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: offsetof
-dev_langs: C++
+f1_keywords:
+- offsetof
+dev_langs:
+- C++
 helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d99947615f2f24116f3d9b64e94daba60c848ec4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a70bb2823f29caf3f76224bfb91c3c9642bbdcf1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="offsetof-macro"></a>offsetof makrosu
+# <a name="offsetof-macro"></a>offsetof Macro
 Uzaklık üyenin üst yapısını baştan alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -57,13 +61,13 @@ Uzaklık üyenin üst yapısını baştan alır.
  Uzaklık belirlemek için ana veri yapısı üye adı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `offsetof`uzaklık belirtilen üye bayt cinsinden üst veri yapısını baştan döndürür. Bit alanları için tanımlı değil.  
+ `offsetof` uzaklık belirtilen üye bayt cinsinden üst veri yapısını baştan döndürür. Bit alanları için tanımlı değil.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `offsetof` Makrosu bayt cinsinden uzaklık döndürür `memberName` tarafından belirtilen yapısı başından itibaren *structName* türünde bir değer olarak `size_t`. Türleriyle belirtebilirsiniz `struct` anahtar sözcüğü.  
   
 > [!NOTE]
->  `offsetof`bir işlev değil ve C prototipi kullanarak açıklanan olamaz.  
+>  `offsetof` bir işlev değil ve C prototipi kullanarak açıklanan olamaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

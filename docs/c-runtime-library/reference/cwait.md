@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _cwait
+ms.topic: reference
+apiname:
+- _cwait
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,28 +23,31 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-process-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _cwait
-dev_langs: C++
+f1_keywords:
+- _cwait
+dev_langs:
+- C++
 helpviewer_keywords:
 - cwait function
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 817b8ef39758a47fe28a3a2e2320ae7384a2bc86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 483b98f005a77ff41d2a319a9d07ccc88ad32721
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cwait"></a>_cwait
 Başka bir işlem sonlanana kadar bekler.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -75,9 +80,9 @@ intptr_t _cwait(
  Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_cwait` İşlevi bekler tarafından sağlanan işlem kimliği belirtilen işlemin sonlandırılması için `procHandle`. Değeri `procHandle` için geçirilen `_cwait` çağrısı tarafından döndürülen değer olmalıdır [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlem oluşturulan işlevi. İşlem kimliği önce ererse `_cwait` olarak adlandırılır, `_cwait` hemen döndürür. `_cwait`kendisi için diğer bilinen işlemin tamamlanmasını beklemek için herhangi bir işlem tarafından kullanılan geçerli bir tanıtıcı (`procHandle`) bulunmaktadır.  
+ `_cwait` İşlevi bekler tarafından sağlanan işlem kimliği belirtilen işlemin sonlandırılması için `procHandle`. Değeri `procHandle` için geçirilen `_cwait` çağrısı tarafından döndürülen değer olmalıdır [_spawn](../../c-runtime-library/spawn-wspawn-functions.md) belirtilen işlem oluşturulan işlevi. İşlem kimliği önce ererse `_cwait` olarak adlandırılır, `_cwait` hemen döndürür. `_cwait` kendisi için diğer bilinen işlemin tamamlanmasını beklemek için herhangi bir işlem tarafından kullanılan geçerli bir tanıtıcı (`procHandle`) bulunmaktadır.  
   
- `termstat`belirtilen işlemin dönüş kodu depolanacağı bir arabellek noktalarına. Değeri `termstat` belirtilen işlem normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. `ExitProcess`Belirtilen işlem çağırırsa dahili olarak çağrılır `exit` veya `_exit`, döndürür `main`, veya sonuna ulaştığında `main`. Geri geçirilir değeri hakkında daha fazla bilgi için `termstat`, bkz: [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). Varsa `_cwait` için bir NULL değer kullanılarak çağrılan `termstat`, belirtilen işlemin dönüş kodu saklanmaz.  
+ `termstat` belirtilen işlemin dönüş kodu depolanacağı bir arabellek noktalarına. Değeri `termstat` belirtilen işlem normalde Windows çağırarak sonlandırıldı olup olmadığını gösteren [ExitProcess](http://msdn.microsoft.com/library/windows/desktop/ms682658.aspx) API. `ExitProcess` Belirtilen işlem çağırırsa dahili olarak çağrılır `exit` veya `_exit`, döndürür `main`, veya sonuna ulaştığında `main`. Geri geçirilir değeri hakkında daha fazla bilgi için `termstat`, bkz: [GetExitCodeProcess](http://msdn.microsoft.com/library/windows/desktop/ms683189.aspx). Varsa `_cwait` için bir NULL değer kullanılarak çağrılan `termstat`, belirtilen işlemin dönüş kodu saklanmaz.  
   
  `action` Parametresi, Windows işletim sistemi tarafından yoksayıldığından, çünkü üst-alt ilişkisi bu ortamlarda uygulanmaz.  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ismbbalnum
 - _ismbbalnum_l
@@ -28,23 +29,25 @@ f1_keywords:
 - ismbbalnum
 - _ismbbalnum_l
 - ismbbalnum_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _ismbbalnum_l function
 - ismbbalnum function
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 830e86fad45d77a90fcc7ce22d484ad36d6b03b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4badd63e50edc57ea09465693797d090e43b2876
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ismbbalnum-ismbbalnuml"></a>_ismbbalnum, _ismbbalnum_l
 Belirtilen birden çok baytlı karakter alfasayısal veya sayısal olup olmadığını belirler.  
@@ -68,7 +71,7 @@ int _ismbbalnum_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_ismbbalnum`sıfır olmayan bir değer döndürür ifade:  
+ `_ismbbalnum` Sıfır olmayan bir değer döndürür ifade:  
   
 ```  
 isalnum || _ismbbkalnum  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _clearfp
 - _clear87
@@ -28,7 +29,8 @@ f1_keywords:
 - _clearfp
 - _clear87
 - clear87
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - clearing floating point status word
 - clearfp function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - _clearfp function
 - clear87 function
 ms.assetid: 72d24a70-7688-4793-ae09-c96d33fcca52
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6fb487a2db1938c173a8b926319adcfb57fc7e80
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e1afc7bd1b5921a7ac24e8df2ed0adf0a807616
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="clear87-clearfp"></a>_clear87, _clearfp
 Alır ve kayan nokta durum sözcüğünü temizler.  
@@ -63,7 +66,7 @@ unsigned int _clearfp( void );
 ## <a name="remarks"></a>Açıklamalar  
  `_clear87` İşlevi kayan nokta durum sözcüğünü özel durumu bayrakları temizler, meşgul bit 0 olarak ayarlar ve durum sözcüğünü döndürür. Kayan nokta durum sözcüğünü 8087/80287 durum sözcüğünü ve kayan nokta yığın taşması ve underflow gibi 8087/80287 özel durum işleyici tarafından algılanan diğer koşullar birleşimidir.  
   
- `_clearfp`Bir platformdan bağımsız, taşınabilir sürümü `_clear87` yordamı. Aynı `_clear87` Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu x64 ve ARM taşınabilir olduğundan emin olmak için kullanmak `_clearfp`. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz `_clear87` veya `_clearfp`.  
+ `_clearfp` Bir platformdan bağımsız, taşınabilir sürümü `_clear87` yordamı. Aynı `_clear87` Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu x64 ve ARM taşınabilir olduğundan emin olmak için kullanmak `_clearfp`. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz `_clear87` veya `_clearfp`.  
   
  Bu işlevler ile derleme yapılırken bırakılmıştır [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) çünkü ortak dil çalışma zamanı yalnızca varsayılan kayan nokta duyarlık destekler.  
   

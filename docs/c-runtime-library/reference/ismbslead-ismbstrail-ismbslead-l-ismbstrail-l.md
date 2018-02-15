@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ismbstrail
 - _ismbslead_l
@@ -36,7 +37,8 @@ f1_keywords:
 - _ismbstrail_l
 - ismbstrail
 - _ismbslead_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ismbstrail function
 - _ismbslead function
@@ -47,22 +49,23 @@ helpviewer_keywords:
 - ismbstrail_l function
 - _ismbstrail_l function
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: af774ccf790c258e1b0bc6bc5f8509eb4537607d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a3d44722daa76e7409a43887f91d127c732dd6df
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ismbslead-ismbstrail-ismbsleadl-ismbstraill"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 Çok baytlı karakter dizesi ön baytlar ve baytlar için bağlama duyarlı testlerini gerçekleştirir ve verilen alt dizenin işaretçinin baytı veya sondaki bayt işaret olup olmadığını belirler.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -98,10 +101,10 @@ int _ismbstrail_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_ismbslead`karakter baytı ise -1 döndürür ve `_ismbstrail` karakter sondaki bayt ise -1 döndürür. Giriş dizelerini geçerli olan, ancak bir baytı veya sondaki bayt değildir, bu işlevler sıfır döndürür. Bağımsız değişkenlerden değilse `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `NULL` ve `errno` için `EINVAL`.  
+ `_ismbslead` karakter baytı ise -1 döndürür ve `_ismbstrail` karakter sondaki bayt ise -1 döndürür. Giriş dizelerini geçerli olan, ancak bir baytı veya sondaki bayt değildir, bu işlevler sıfır döndürür. Bağımsız değişkenlerden değilse `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `NULL` ve `errno` için `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_ismbslead`ve `_ismbstrail` yavaştır `_ismbblead` ve `_ismbbtrail` sürümleri çünkü bunlar dize bağlam dikkate alın.  
+ `_ismbslead` ve `_ismbstrail` yavaştır `_ismbblead` ve `_ismbbtrail` sürümleri çünkü bunlar dize bağlam dikkate alın.  
   
  Bu işlevleri sürümlerini `_l` soneki, yerel ayara bağımlı davranışlarını geçirilen yerel yerine geçerli yerel kullandıkları dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -114,7 +117,7 @@ int _ismbstrail_l(
 |`_ismbslead_l`|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|  
 |`_ismbstrail_l`|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|  
   
- \*İçin test durumları için bildirim sabitleri.  
+ \* İçin test durumları için bildirim sabitleri.  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

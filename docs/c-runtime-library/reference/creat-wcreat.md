@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _creat
 - _wcreat
@@ -29,7 +30,8 @@ f1_keywords:
 - _creat
 - tcreat
 - _tcreat
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcreat function
 - _wcreat function
@@ -39,19 +41,20 @@ helpviewer_keywords:
 - creat function
 - _tcreat function
 ms.assetid: 3b3b795d-1620-40ec-bd2b-a4bbb0d20fe5
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d8474031a7ba98952c258b4dc4041c7eff57c434
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0355f28ada6313e201b8d761813767135ee3cbf8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="creat-wcreat"></a>_creat, _wcreat
-Yeni bir dosya oluşturur. `_creat`ve `_wcreat` kullanım dışı bırakıldı; kullanın [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) yerine.  
+Yeni bir dosya oluşturur. `_creat` ve `_wcreat` kullanım dışı bırakıldı; kullanın [_sopen_s, _wsopen_s](../../c-runtime-library/reference/sopen-s-wsopen-s.md) yerine.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,9 +79,9 @@ int _wcreat(
 ## <a name="return-value"></a>Dönüş Değeri  
  Bu işlevler başarılı olursa, oluşturulan dosya için dosya tanımlayıcısı döndürür. Aksi takdirde işlevleri -1 döndürür ve `errno` aşağıdaki tabloda gösterildiği gibi.  
   
-|`errno`ayarı|Açıklama|  
+|`errno` Ayarı|Açıklama|  
 |---------------------|-----------------|  
-|`EACCES`|`filename`Varolan salt okunur dosyanın veya bir dosya yerine bir dizin belirtir.|  
+|`EACCES`|`filename` Varolan salt okunur dosyanın veya bir dosya yerine bir dizin belirtir.|  
 |`EMFILE`|Daha fazla hiçbir dosya tanımlayıcıları kullanılabilir.|  
 |`ENOENT`|Belirtilen dosya bulunamadı.|  
   
@@ -87,7 +90,7 @@ int _wcreat(
  Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_creat` İşlevi yeni bir dosya oluşturur veya açar ve mevcut bir tamsayıya dönüştürür. `_wcreat`bir joker karakter sürümü `_creat`; `filename` bağımsız değişkeni `_wcreat` bir joker karakter dizesidir. `_wcreat`ve `_creat` Aksi takdirde aynı şekilde davranır.  
+ `_creat` İşlevi yeni bir dosya oluşturur veya açar ve mevcut bir tamsayıya dönüştürür. `_wcreat` bir joker karakter sürümü `_creat`; `filename` bağımsız değişkeni `_wcreat` bir joker karakter dizesidir. `_wcreat` ve `_creat` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -105,14 +108,14 @@ int _wcreat(
   
  Yazma izni verilmedi, dosya salt okunurdur. Tüm dosyaları her zaman okunabilir; salt yazılır izin vermek mümkün değildir. Modları `_S_IWRITE` ve `_S_IREAD | _S_IWRITE` sonra eşdeğerdir. Kullanarak açılan dosyaları `_creat` her zaman uyumluluk modunda açılmış (bkz [_sopen](../../c-runtime-library/reference/sopen-wsopen.md)) ile `_SH_DENYNO`.  
   
- `_creat`Geçerli dosya izni maskesi uygular `pmode` izinleri ayarlamadan önce (bkz [_umask](../../c-runtime-library/reference/umask.md)). `_creat`öncelikle önceki kitaplıkları ile uyumluluk için sağlanır. Çağrı `_open` ile `_O_CREAT` ve `_O_TRUNC` içinde `oflag` parametredir eşdeğer `_creat` ve için yeni kod tercih edilir.  
+ `_creat` Geçerli dosya izni maskesi uygular `pmode` izinleri ayarlamadan önce (bkz [_umask](../../c-runtime-library/reference/umask.md)). `_creat` öncelikle önceki kitaplıkları ile uyumluluk için sağlanır. Çağrı `_open` ile `_O_CREAT` ve `_O_TRUNC` içinde `oflag` parametredir eşdeğer `_creat` ve için yeni kod tercih edilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_creat`|\<io.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|  
-|`_wcreat`|\<io.h > veya \<wchar.h >|\<sys/Types.h >, \<sys/stat.h >, \<errno.h >|  
+|`_creat`|\<io.h >|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|  
+|`_wcreat`|\<io.h > veya \<wchar.h >|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

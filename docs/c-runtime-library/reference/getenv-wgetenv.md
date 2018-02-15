@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - getenv
 - _wgetenv
@@ -27,7 +28,8 @@ f1_keywords:
 - _wgetenv
 - getenv
 - _tgetenv
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - getenv function
 - tgetenv function
@@ -37,22 +39,23 @@ helpviewer_keywords:
 - _tgetenv function
 - _wgetenv function
 ms.assetid: 3b9cb9ab-a126-4e0e-a44f-6c5a7134daf4
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e0d010e7b04093446792eb122a67227880b7a395
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 99d9104959dccf4a6879c4e929a1cdc281317171
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getenv-wgetenv"></a>getenv, _wgetenv
 Geçerli ortamından bir değer alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -73,11 +76,11 @@ wchar_t *_wgetenv(
  İşaretçi ortamı tabloyu içeren girişi döndüren `varname`. Döndürülen işaretçisi kullanılarak ortam değişkeninin değerini değiştirmek güvenli değildir. Kullanım `_putenv` bir ortam değişkeninin değerini değiştirmek için işlevi. Dönüş değeri `NULL` varsa `varname` ortamı tablosunda bulunamadı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `getenv` İşlevi için ortam değişkenleri listesi arar `varname`. `getenv`Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `getenv`ve `_putenv` genel değişkeni tarafından işaret ortam kopyasını kullanmak `_environ` ortama erişmek için. `getenv`Yalnızca Çalışma Zamanı Kitaplığı'na erişilebilir veri yapıları ve "işlem için işletim sistemi tarafından oluşturulan segment" ortam üzerinde çalışır. Bu nedenle, kullanan programlar `envp` bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler alabilir.  
+ `getenv` İşlevi için ortam değişkenleri listesi arar `varname`. `getenv` Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `getenv` ve `_putenv` genel değişkeni tarafından işaret ortam kopyasını kullanmak `_environ` ortama erişmek için. `getenv` Yalnızca Çalışma Zamanı Kitaplığı'na erişilebilir veri yapıları ve "işlem için işletim sistemi tarafından oluşturulan segment" ortam üzerinde çalışır. Bu nedenle, kullanan programlar `envp` bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler alabilir.  
   
  Varsa `varname` olan `NULL`, bu işlev açıklandığı gibi bir geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve döndürür `NULL`.  
   
- `_wgetenv`bir joker karakter sürümü `getenv`; bağımsız değişkeni ve dönüş değeri `_wgetenv` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`.  
+ `_wgetenv` bir joker karakter sürümü `getenv`; bağımsız değişkeni ve dönüş değeri `_wgetenv` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`.  
   
  MBCS programında (örneğin, bir programında SBCS ASCII), `_wenviron` başlangıçta `NULL` çok baytlı karakter dizeleri oluşturulan ortam olduğundan. Ardından, ilk çağrıda `_wputenv`, ya da ilk çağrıda `_wgetenv` (MBCS) ortam zaten varsa, karşılık gelen bir joker karakter dizesi ortamı oluşturulur ve ardından işaret ediyor `_wenviron`.  
   
@@ -89,7 +92,7 @@ wchar_t *_wgetenv(
 >  Çalışma zamanı sistem Unicode sürümü ve ortam, birden çok baytlı sürümü korurken nadir durumlarda, bu iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir UNICODE dizesi herhangi bir benzersiz çok baytlı karakter dizesini eşleştirir ancak çok baytlı karakter dizesi için benzersiz bir UNICODE dizesi eşlemesinden mutlaka benzersiz olmadığından budur. Daha fazla bilgi için bkz: [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).  
   
 > [!NOTE]
->  `_putenv` Ve `_getenv` işlevleri aileleri iş parçacığı açısından güvenli değildir. `_getenv`dize işaretçisi sırasında döndürebilirsiniz `_putenv` rastgele hatalarına neden dize değiştiriyor. Bu işlevler çağrıları eşitlendiğinden emin olun.  
+>  `_putenv` Ve `_getenv` işlevleri aileleri iş parçacığı açısından güvenli değildir. `_getenv` dize işaretçisi sırasında döndürebilirsiniz `_putenv` rastgele hatalarına neden dize değiştiriyor. Bu işlevler çağrıları eşitlendiğinden emin olun.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -103,7 +106,7 @@ wchar_t *_wgetenv(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`getenv`|\<stdlib.h >|  
+|`getenv`|\<stdlib.h>|  
 |`_wgetenv`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

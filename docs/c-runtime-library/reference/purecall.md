@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _purecall
+ms.topic: reference
+apiname:
+- _purecall
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,21 +26,23 @@ apitype: DLLExport
 f1_keywords:
 - purecall
 - _purecall
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _purecall function
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8ef2670188374dc7af5fa34c76df73c3d261efc4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c19324cde907f31ab18a312f3039c2da7a3a40c7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="purecall"></a>_purecall
 Varsayılan saf sanal işlev çağrısı hata işleyicisi. Derleyici saf sanal üye işlevi çağrıldığında, bu işlev çağrısı için kod oluşturur.  

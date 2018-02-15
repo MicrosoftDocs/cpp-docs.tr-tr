@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _exit
 - exit
@@ -30,7 +31,8 @@ f1_keywords:
 - process/_Exit
 - stdlib/exit
 - stdlib/_Exit
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - exit function
 - _exit function
@@ -40,12 +42,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dbb54b756363da2069bbc4bface4e971fcab91e4
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed4835662a53f3cb19b47818a9d6adfb3dfb2930
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="exit-exit-exit"></a>Çıkış, _Exit, _exit
 
@@ -70,7 +73,7 @@ void _exit(
 
 ### <a name="parameters"></a>Parametreler
 
-_durumu_  
+_Durumu_  
 Durum kodu çıkın.
 
 ## <a name="remarks"></a>Açıklamalar

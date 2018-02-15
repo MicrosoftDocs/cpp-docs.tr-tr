@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ftime_s
 - _ftime64_s
@@ -31,7 +32,8 @@ f1_keywords:
 - _ftime32_s
 - ftime32_s
 - ftime64_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ftime32_s function
 - ftime_s function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - _ftime_s function
 - _ftime32_s function
 ms.assetid: d03080d9-a520-45be-aa65-504bdb197e8b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: eb90c8f9ed18355821e3a067b0f2b9b92562b08c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: baf4371e90dfe06a4896c33937f578a2483475d3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ftimes-ftime32s-ftime64s"></a>_ftime_s, _ftime32_s, _ftime64_s
 Geçerli saati alır. Sürümleri bunlar [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -94,9 +97,9 @@ errno_t _ftime64_s(
   
  `_ftime64_s`, kullanan `__timeb64` yapısı, 23:59:59, 31 Aralık 3000 UTC; yukarı ifade için dosya oluşturma tarihleri sağlarken `_ftime32_s` yalnızca ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısından, 1 Ocak 1970'ten, bu işlevler için tarih aralığını alt sınırdır.  
   
- `_ftime_s`eşdeğer olan `_ftime64_s` ve `_timeb` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_ftime_s` 32-bit zamanını kullanır ve `_timeb` 32-bit saati içerir.  
+ `_ftime_s` eşdeğer olan `_ftime64_s` ve `_timeb` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_ftime_s` 32-bit zamanını kullanır ve `_timeb` 32-bit saati içerir.  
   
- `_ftime_s`parametreleri doğrular. Null işaretçi olarak aktarılırsa `timeptr`, açıklandığı gibi geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar `errno` için `EINVAL`.  
+ `_ftime_s` parametreleri doğrular. Null işaretçi olarak aktarılırsa `timeptr`, açıklandığı gibi geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar `errno` için `EINVAL`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -167,7 +170,7 @@ The time is Mon Apr 28 11:08:54.230 2003
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   
  [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)

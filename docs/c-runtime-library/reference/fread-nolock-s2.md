@@ -8,8 +8,9 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _fread_nolock_s
+ms.topic: reference
+apiname:
+- _fread_nolock_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -26,18 +27,20 @@ apitype: DLLExport
 f1_keywords:
 - _fread_nolock_s
 - stdio/_fread_nolock_s
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 5badb9ab-11df-4e17-8162-30bda2a4572e
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a0bec6662cd661ef4a81d66027b272cc297c84fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 438e12cd9a2a4099231e2dfb9c2ba27375811ea7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="freadnolocks"></a>_fread_nolock_s
 Verileri başka bir iş parçacığı kilitlemeden bir akıştan okur. Bu sürümü [fread_nolock](../../c-runtime-library/reference/fread-nolock.md) açıklandığı gibi güvenlik geliştirmeleri vardır [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  

@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /CLRIMAGETYPE
 - VC.Project.VCLinkerTool.CLRImageType
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /CLRIMAGETYPE linker option
 - -CLRIMAGETYPE linker option
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b7d8edd6c9e62456e54ac6228f25d7f923a6813c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d8de8abb1602499cea0b1412d4199ea54b3bf601
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="clrimagetype-specify-type-of-clr-image"></a>/CLRIMAGETYPE (CLR Görüntü Türünü Belirt)
 ```  
@@ -32,15 +35,9 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bağlayıcı yerel nesneleri kabul eder ve ayrıca kullanarak derlenen MSIL nesneleri [/CLR](../../build/reference/clr-common-language-runtime-compilation.md), / CLR: pure, veya/CLR: safe. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. Karma nesneleri aynı derlemede geçirildiğinde, sonuçta elde edilen çıktı dosyası verifiability, varsayılan olarak, en düşük düzeyde verifiability giriş modüllerin eşit olur. Örneğin, hem güvenli hem de saf modülü bağlayıcıya geçirirseniz, çıktı dosyası saf olacaktır. Yerel görüntü ve karma mod görüntü geçirirseniz (kullanarak derlenmiş **/CLR**), elde edilen görüntü bir karma mod görüntüsü olacaktır.  
+ Bağlayıcı yerel nesneleri kabul eder ve ayrıca kullanarak derlenen MSIL nesneleri [/CLR](../../build/reference/clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. Karma nesneleri aynı derlemede geçirildiğinde, sonuçta elde edilen çıktı dosyası verifiability, varsayılan olarak, en düşük düzeyde verifiability giriş modüllerin eşit olur. Örneğin, yerel bir görüntü ve karma mod görüntü geçirirseniz (kullanarak derlenmiş **/CLR**), elde edilen görüntü bir karma mod görüntüsü olacaktır.  
   
  Bu ihtiyacınız olursa, /CLRIMAGETYPE verifiability, daha düşük düzeyde belirtmek için kullanabilirsiniz.  
-  
- .NET 4.5 içinde /CLRIMAGETYPE SAFE32BITPREFERRED seçeneğini destekler. Bu ayarlar — görüntünün PE üstbilgisinde — MSIL nesneleri güvenli ve olabilir belirten bayrakları 32-bit yürütme ortamı tercih edilen ancak bu tüm platformlarda çalıştırın. Bu seçenek, ARM platformda çalışacak bir uygulama sağlar ve ayrıca, 64-bit Yürütme Ortamı'nı kullanarak yerine 64 bit işletim sistemlerinde WOW64 altında çalışması gerektiğini belirtir.  
-  
- Kullanarak derlenen bir .exe, **/CLR** veya **/CLR: pure** çalıştırılan bir 64-bit işletim sisteminde 64-bit işletim sisteminde çalıştırmak bir 32 bit uygulama etkinleştirir WOW64 altında uygulamayı çalıştırın. Varsayılan olarak, kullanarak derlenmiş bir .exe **/CLR: safe** işletim sisteminin 64-bit desteği altında çalıştırın. Ancak, güvenli uygulamanız bir 32 bit bileşeni yükler mümkündür. Bu durumda, 32 bit uygulama yüklendiğinde işletim sisteminin 64-bit desteği altında çalışan güvenli bir görüntü başarısız olur. Güvenli bir görüntü bir 64-bit işletim sisteminde 32 bit bileşen yüklenirken çalışmaya devam ettiğinden emin olmak için /CLRIMAGETYPE:SAFE32BITPREFERRED seçeneğini kullanın. Kodunuzu ARM platformda çalışacak yoksa /CLRIMAGETYPE belirtebilirsiniz: meta veriler (.corflags) değiştirmek için saf seçeneği WOW64 altında çalıştırılması için İşaretleme (ve kendi giriş simge değiştirerek):  
-  
- **cl/CLR: safe t.cpp/Link /clrimagetype: Saf /entry:?main@@$$HYMHXZ /subsystem:console**  
   
  Bir dosya CLR görüntü türünü belirleme hakkında daha fazla bilgi için bkz: [/CLRHEADER](../../build/reference/clrheader.md).  
   

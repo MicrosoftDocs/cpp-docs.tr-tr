@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: div
+ms.topic: reference
+apiname:
+- div
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: div
-dev_langs: C++
+f1_keywords:
+- div
+dev_langs:
+- C++
 helpviewer_keywords:
 - div function
 - quotients, computing
@@ -30,16 +34,17 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a942c3414fa7801912de59ec41fd6477d7c19f2f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2090ca5e08af74854177f02d6313d6c1304ed2c6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="div"></a>div
 Sayının ve iki tamsayı değerleri geri kalanı hesaplar.  
@@ -69,7 +74,7 @@ lldiv_t div(
  Payda değeri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `div`tür bağımsız değişkenleri kullanarak adında `int` türü yapısını döndürür `div_t`, sayının ve kalanı oluşur. Aşırı yükleme dönüş değeri türü bağımsız değişkenleri ile `long` olan `ldiv_t`. Her ikisi de `div_t` ve `ldiv_t` STDLIB tanımlanır. H.  
+ `div` tür bağımsız değişkenleri kullanarak adında `int` türü yapısını döndürür `div_t`, sayının ve kalanı oluşur. Aşırı yükleme dönüş değeri türü bağımsız değişkenleri ile `long` olan `ldiv_t`. Her ikisi de `div_t` ve `ldiv_t` STDLIB tanımlanır. H.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `div` İşlev böler `numer` tarafından `denom` ve böylece sayının ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı içeren sayının `int quot`ve kalan `int rem`. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.  
@@ -80,7 +85,7 @@ lldiv_t div(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`div`|\<stdlib.h >|  
+|`div`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

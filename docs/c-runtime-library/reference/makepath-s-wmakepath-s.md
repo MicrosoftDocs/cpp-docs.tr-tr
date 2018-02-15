@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wmakepath_s
 - _makepath_s
@@ -28,7 +29,8 @@ f1_keywords:
 - makepath_s
 - _makepath_s
 - wmakepath_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _makepath_s function
 - wmakepath_s function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - _wmakepath_s function
 - makepath_s function
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9b808d41bfb0d9da3f709f8f655a86c168b15e00
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bef7cdbd58ba21396c78a1945e272e0a0e1baa4d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="makepaths-wmakepaths"></a>_makepath_s, _wmakepath_s
 Bir yol adı bileşenlerini oluşturur. Sürümleri bunlar [_makepath, _wmakepath](../../c-runtime-library/reference/makepath-wmakepath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -88,41 +91,41 @@ errno_t _wmakepath_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`path`  
+ [out] `path`  
  Tam yol arabelleği.  
   
- [in]`sizeInWords`  
+ [in] `sizeInWords`  
  Sözcükler arabellek boyutu.  
   
- [in]`sizeInBytes`  
+ [in] `sizeInBytes`  
  Arabelleğin bayt cinsinden boyutu.  
   
- [in]`drive`  
- Bir harf (A, B vb.) içeren istenen sürücü ve bir isteğe bağlı izleyen iki nokta üst üste karşılık gelen. `_makepath_s`Eğer yoksa iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa `drive` olan `NULL` veya noktaları boş bir dize için sürücü harfi görünür bileşik `path` dize.  
+ [in] `drive`  
+ Bir harf (A, B vb.) içeren istenen sürücü ve bir isteğe bağlı izleyen iki nokta üst üste karşılık gelen. `_makepath_s` Eğer yoksa iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa `drive` olan `NULL` veya noktaları boş bir dize için sürücü harfi görünür bileşik `path` dize.  
   
- [in]`dir`  
+ [in] `dir`  
  Sürücü göstergesi ya da gerçek dosya adı dahil değil, dizinleri yolunu içerir. Eğik isteğe bağlıdır ve eğik çizgi (/) veya ters eğik çizgi (\\) veya her ikisini de tek bir kullanılabilir `dir` bağımsız değişkeni. Hiçbir sondaki eğik çizgi varsa (/ veya \\) belirtilirse, otomatik olarak eklenir. Varsa `dir` olan `NULL` veya hiçbir dizin yolu boş bir dize noktalarına bileşik eklenen `path` dize.  
   
- [in]`fname`  
+ [in] `fname`  
  Tüm dosya adı uzantıları olmadan temel dosya adı içeriyor. Varsa `fname` olan `NULL` veya bir dosya adı boş bir dize noktalarına bileşik eklenen `path` dize.  
   
- [in]`ext`  
- Gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. `_makepath_s`içinde görünmüyorsa dönemi otomatik olarak ekler `ext`. Varsa `ext` olan `NULL` ya da boş bir dize, hiçbir uzantı noktalarına bileşik eklenen `path` dize.  
+ [in] `ext`  
+ Gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. `_makepath_s` içinde görünmüyorsa dönemi otomatik olarak ekler `ext`. Varsa `ext` olan `NULL` ya da boş bir dize, hiçbir uzantı noktalarına bileşik eklenen `path` dize.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır; hatasında bir hata kodu.  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`path`|`sizeInWords` / `sizeInBytes`|Döndür|İçeriği`path`|  
+|`path`|`sizeInWords` / `sizeInBytes`|Döndür|İçeriği `path`|  
 |------------|------------------------------------|------------|------------------------|  
 |`NULL`|tüm|`EINVAL`|değiştirilmedi|  
 |tüm|<= 0|`EINVAL`|değiştirilmedi|  
   
- Yukarıdaki hata koşullardan herhangi biri meydana gelirse, bu işlevler geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevleri döndürür `EINVAL`. `NULL`Parametreler için izin verilen `drive`, `fname`, ve `ext`. Davranışı hakkında bilgi için bu parametre null işaretçiler ya da boş dize olduğunda, Açıklamalar bölümüne bakın.  
+ Yukarıdaki hata koşullardan herhangi biri meydana gelirse, bu işlevler geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevleri döndürür `EINVAL`. `NULL` Parametreler için izin verilen `drive`, `fname`, ve `ext`. Davranışı hakkında bilgi için bu parametre null işaretçiler ya da boş dize olduğunda, Açıklamalar bölümüne bakın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_makepath_s` İşlevi tek tek bileşenlerinden sonucu depolamak bileşik yol dizesi oluşturur `path`. `path` Bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. `_wmakepath_s`bir joker karakter sürümü `_makepath_s`; bağımsız değişkenleri `_wmakepath_s` joker karakter dizelerdir. `_wmakepath_s`ve `_makepath_s` Aksi takdirde aynı şekilde davranır.  
+ `_makepath_s` İşlevi tek tek bileşenlerinden sonucu depolamak bileşik yol dizesi oluşturur `path`. `path` Bir sürücü harfi, dizin yolu, dosya adı ve dosya adı uzantısı içerebilir. `_wmakepath_s` bir joker karakter sürümü `_makepath_s`; bağımsız değişkenleri `_wmakepath_s` joker karakter dizelerdir. `_wmakepath_s` ve `_makepath_s` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -132,7 +135,7 @@ errno_t _wmakepath_s(
   
  `path` Bağımsız değişken tam yolunu tutabilecek kadar büyük bir boş arabelleğe işaret etmelidir. Bileşik `path` değerinden büyük olmalı `_MAX_PATH` sabiti Stdlib.h tanımlanmış.  
   
- Yol ise `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Ayrıca, `errno` ayarlanır `EINVAL`. `NULL`diğer tüm parametreler için izin verilen değerler.  
+ Yol ise `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Ayrıca, `errno` ayarlanır `EINVAL`. `NULL` diğer tüm parametreler için izin verilen değerler.  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -142,7 +145,7 @@ errno_t _wmakepath_s(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_makepath_s`|\<stdlib.h >|  
+|`_makepath_s`|\<stdlib.h>|  
 |`_wmakepath_s`|\<stdlib.h > veya \<wchar.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

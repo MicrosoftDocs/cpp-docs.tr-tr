@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: /clr compiler option [C++], restrictions
+dev_langs:
+- C++
+helpviewer_keywords:
+- /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: aa0bdc6a5a62b517c252a35d8f1193b34d6e0d32
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3552fda0ce6dc80c253809cfd464555d32604534
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="clr-restrictions"></a>/clr Kısıtlamalar
 Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:  
@@ -50,21 +54,17 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
   
     -   **/FP: katı** ve **/fp: dışında** (bkz [/fp (Floating-Point davranış belirtin)](../../build/reference/fp-specify-floating-point-behavior.md))  
   
-    -   [/ZD](../../build/reference/z7-zi-zi-debug-information-format.md)  
+    -   [/Zd](../../build/reference/z7-zi-zi-debug-information-format.md)  
   
-    -   [/GM derlemeyi](../../build/reference/gm-enable-minimal-rebuild.md)  
+    -   [/Gm](../../build/reference/gm-enable-minimal-rebuild.md)  
   
-    -   [/ MT](../../build/reference/md-mt-ld-use-run-time-library.md)  
+    -   [/MT](../../build/reference/md-mt-ld-use-run-time-library.md)  
   
-    -   [/ RTC](../../build/reference/rtc-run-time-error-checks.md)  
+    -   [/RTC](../../build/reference/rtc-run-time-error-checks.md)  
   
     -   **/ZI**  
   
--   Birleşimi `_STATIC_CPPLIB` önişlemci tanımı (`/D_STATIC_CPPLIB`) ve **/CLR** veya **/CLR: pure** derleyici seçeneği desteklenmez. Tanımı statik birden çok iş parçacıklı C++ Standart desteklenmeyen kitaplığı ile bağlantı için uygulamanızı neden olacağından bunu olmasıdır. Daha fazla bilgi için bkz: [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) konu.  
-  
--   [/J](../../build/reference/j-default-char-type-is-unsigned.md) desteklenmeyen **/CLR: safe** veya **/CLR: pure**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
-  
--   ATL ve MFC kitaplıkları saf mod derlemesi tarafından desteklenmez (**/CLR: pure**). Kullanabileceğiniz **/CLR: pure** C++ Standart Kitaplığı ve ayrıca ile derleme yaparsanız CRT **/MD** veya **/MDd**.  
+-   Birleşimi `_STATIC_CPPLIB` önişlemci tanımı (`/D_STATIC_CPPLIB`) ve **/CLR** derleyici seçeneği desteklenmez. Tanımı statik birden çok iş parçacıklı C++ Standart desteklenmeyen kitaplığı ile bağlantı için uygulamanızı neden olacağından bunu olmasıdır. Daha fazla bilgi için bkz: [/MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../../build/reference/md-mt-ld-use-run-time-library.md) konu.  
   
 -   Kullanırken **/zı** ile **/CLR**, performans etkileri vardır. Daha fazla bilgi için bkz: [/zı](../../build/reference/z7-zi-zi-debug-information-format.md).  
   
@@ -75,7 +75,7 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
     Console::WriteLine((__wchar_t)L' ')   // Will output a space.  
     ```  
   
--   [/GS](../../build/reference/gs-buffer-security-check.md) ile derleme yapılırken dikkate **/CLR**, altında bir işlev olmadığı sürece `#pragma` [yönetilmeyen](../../preprocessor/managed-unmanaged.md) veya işlevi için yerel olarak derlenmelidir, derleyici, bu durumda olacaktır Varsayılan olarak kapalıdır C4793, uyarı oluşturur.  
+-   [/GS](../../build/reference/gs-buffer-security-check.md) ile derleme yapılırken dikkate **/CLR**, altında bir işlev olmadığı sürece `#pragma` [yönetilmeyen](../../preprocessor/managed-unmanaged.md) veya işlevi için yerel olarak derlenmelidir varsa, bu durumda derleyici üretir Varsayılan olarak kapalıdır C4793 uyarı.  
   
 -   Bkz: [/Entry](../../build/reference/entry-entry-point-symbol.md) yönetilen bir uygulamanın işlevi imza gereksinimlerini için.  
   
@@ -84,8 +84,6 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
 -   Değişken sayıda bağımsız değişkenler (varargs) almayan işlevleri yerel işlevler oluşturulur. Değişken bağımsız değişken konumda herhangi bir yönetilen veri türleri için yerel türleri başvuruya. Unutmayın <xref:System.String?displayProperty=fullName> türleridir gerçekte joker karakter dizeleri, ancak tek baytlı karakter dizeleri hazırlanırlar. Printf belirleyici %S (wchar_t *) ise, bu nedenle, %s dizeye yerine sıralama.  
   
 -   Va_arg makrosu kullanırken ile derleme yapılırken beklenmeyen sonuçlar alabilirsiniz **/CLR: pure**.  Daha fazla bilgi için bkz: [va_arg, va_copy, va_end, va_start](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md).  
-  
--   Uygulamanızı türünde bir bağımsız değişken geçerse [va_list](../../c-runtime-library/reference/va-arg-va-copy-va-end-va-start.md) bir işleve bildirilen değişken sayıda bağımsız değişken yapılacak ve uygulamanız ile derlenmiş **/CLR: pure**, CLR oluşturur <xref:System.NotSupportedException>. Varsa **/CLR** kullanılan bunun yerine, etkilenen işlevleri yerel koda derlenmiş ve düzgün şekilde yürütün. Varsa **/CLR: safe** olan kullanıldığında, bir hata tanılama yayınlanır.  
   
 -   Yönetilen koddan parametre bilgilerini (işlev bağımsız değişkenleri); almak için yığın yol işlevleri çağırmalısınız değil P/Invoke katman yığın başka olması bu bilgileri neden olur.  Örneğin, proxy/stub ile derleme değil **/CLR**.  
   
@@ -101,7 +99,5 @@ Kullanımı ile ilgili aşağıdaki kısıtlamalar Not **/CLR**:
   
     -   Başvuruları içeren bir işlev hizalı türleri, diğer bir deyişle, türleri kullanılarak bildirilen `__declspec(align(...))`.  
   
--   Kullanamazsınız [Derleyici COM desteği](../../cpp/compiler-com-support.md) ile sınıfları **/CLR: pure** veya **/CLR: safe**.  
-  
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [/ CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+ [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)

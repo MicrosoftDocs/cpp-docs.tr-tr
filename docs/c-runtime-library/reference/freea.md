@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _freea
+ms.topic: reference
+apiname:
+- _freea
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - freea
 - _freea
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _freea function
 - freea function
 - memory deallocation
 ms.assetid: dcd30584-dd9d-443b-8c4c-13237a1cecac
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 921687fbc5d8ab0b509e5a2e43c9c9ff4b18727a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6bf2bd2d3dacba307f529798727e7af745bf7cf9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="freea"></a>_freea
 Kaldırır veya bir bellek bloğu boşaltır.  
@@ -59,9 +63,9 @@ void _freea(
  Yok.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_freea` İşlevi bir bellek bloğu kaldırır (`memblock`) önceden ayrılmış bir çağrı tarafından [_malloca](../../c-runtime-library/reference/malloca.md). `_freea`Öbek veya yığın belleği ayrıldı olmadığını görmek için denetler. Yığında ayırdığınızda `_freea` hiçbir şey yapmaz. Yığında ayrılmış olan, bloğu ayrıldı, istenen bayt sayısı boşaltılmış bayt sayısı eşdeğerdir. Varsa `memblock` olan `NULL`, işaretçi yok sayılır ve `_freea` hemen döndürür. Geçersiz bir işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğu için bir işaretçi `_malloca`) sonraki ayırma isteklerini etkiler ve hatalara neden olabilir.  
+ `_freea` İşlevi bir bellek bloğu kaldırır (`memblock`) önceden ayrılmış bir çağrı tarafından [_malloca](../../c-runtime-library/reference/malloca.md). `_freea` Öbek veya yığın belleği ayrıldı olmadığını görmek için denetler. Yığında ayırdığınızda `_freea` hiçbir şey yapmaz. Yığında ayrılmış olan, bloğu ayrıldı, istenen bayt sayısı boşaltılmış bayt sayısı eşdeğerdir. Varsa `memblock` olan `NULL`, işaretçi yok sayılır ve `_freea` hemen döndürür. Geçersiz bir işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğu için bir işaretçi `_malloca`) sonraki ayırma isteklerini etkiler ve hatalara neden olabilir.  
   
- `_freea`çağrıları `free` dahili olarak bellek öbek üzerinde ayrılır bulursa. Bellek öbek üzerinde olduğu ya da yığın işaretleyicisi tarafından belirlenir bellek tahsis edilen bellek hemen önceki adresindeki yerleştirilir.  
+ `_freea` çağrıları `free` dahili olarak bellek öbek üzerinde ayrılır bulursa. Bellek öbek üzerinde olduğu ya da yığın işaretleyicisi tarafından belirlenir bellek tahsis edilen bellek hemen önceki adresindeki yerleştirilir.  
   
  Bellek boşaltma içinde bir hata meydana gelirse `errno` bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -69,7 +73,7 @@ void _freea(
   
  Çağrı `_freea` tüm çağrıları eşlik gerekir `_malloca`. Ayrıca çağırmak için bir hata olduğunu `_freea` aynı bellek üzerindeki iki kez. Ne zaman uygulamanın bağlı olduğu C çalışma zamanı kitaplıkları ile bir hata ayıklama sürümü özellikle [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md) tanımlayarak etkin Özellikler `_CRTDBG_MAP_ALLOC`, Bul eksik veya yinelenen çağrıları için daha kolay `_freea`. Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).  
   
- `_freea`işaretlenen `__declspec(noalias)`, işlev genel değişkenler değiştirmemeniz garanti anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md).  
+ `_freea` işaretlenen `__declspec(noalias)`, işlev genel değişkenler değiştirmemeniz garanti anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _gmtime32
 - gmtime
@@ -28,7 +29,8 @@ f1_keywords:
 - gmtime
 - _gmtime32
 - _gmtime64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - gmtime32 function
 - _gmtime64 function
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - gmtime64 function
 - time structure conversion
 ms.assetid: 315501f3-477e-475d-a414-ef100ee0db27
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 78213f97021ad1e7c89d5dfde6c1cea8b6e12a7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4646902145796ede0659493cb0805cfdf85bb52e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="gmtime-gmtime32-gmtime64"></a>gmtime, _gmtime32, _gmtime64
 Bir saat değeri bir yapısına dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md).  
@@ -104,7 +107,7 @@ struct tm *_gmtime64(
   
  `_gmtime64`, kullanan `__time64_t` yapısı, ancak yukarı 23:59:59, 31 Aralık 3000 UTC, ifade için tarihleri etkinleştirir `_gmtime32` yalnızca ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısından, 1 Ocak 1970'ten, hem işlevleri için tarih aralığını alt sınırdır.  
   
- `gmtime`değerlendiren bir satır içi işlev `_gmtime64`, ve `time_t` eşdeğerdir `__time64_t` sürece `_USE_32BIT_TIME_T` tanımlanır. Yorumlamaya derleyici zorlarsanız gerekir `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`, ancak bunu neden yapılması `gmtime` içinde-çizgili için olacak şekilde `_gmtime32` ve `time_t` olarak tanımlanması için `__time32_t`. 64 bit platformlarda izin verilmiyor ve her durumda, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir çünkü bunu değil yapmanızı öneririz.  
+ `gmtime` değerlendiren bir satır içi işlev `_gmtime64`, ve `time_t` eşdeğerdir `__time64_t` sürece `_USE_32BIT_TIME_T` tanımlanır. Yorumlamaya derleyici zorlarsanız gerekir `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`, ancak bunu neden yapılması `gmtime` içinde-çizgili için olacak şekilde `_gmtime32` ve `time_t` olarak tanımlanması için `__time32_t`. 64 bit platformlarda izin verilmiyor ve her durumda, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir çünkü bunu değil yapmanızı öneririz.  
   
  Bu işlevler kendi parametreleri doğrulayın. Varsa `timer` null işaretçi ya da devre dışı zamanlayıcı değeri negatifse, bu işlevlerin bir geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevlerin dönüş `NULL` ve `errno` için `EINVAL`.  
   
@@ -160,7 +163,7 @@ Coordinated universal time is Tue Feb 12 23:11:31 2002
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   

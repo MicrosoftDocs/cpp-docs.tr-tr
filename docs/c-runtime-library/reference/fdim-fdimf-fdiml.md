@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fdim
 - fdimf
@@ -33,22 +33,24 @@ f1_keywords:
 - math/fdim
 - math/fdimf
 - math/fdiml
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fdim function
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ecf0b0590942aad133cb7b8f478200525e4f4519
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 60e628f84dcadf7b1e214d526981191036428042
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 Pozitif değerler arasındaki farkın birinci ve ikinci belirler.  
@@ -84,10 +86,10 @@ long double fdiml(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`x`  
+ [in] `x`  
  İlk değer.  
   
- [in]`y`  
+ [in] `y`  
  İkinci değer.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -95,8 +97,8 @@ long double fdiml(
   
 |Dönüş değeri|Senaryo|  
 |------------------|--------------|  
-|x-y|x > y|  
-|0|x < = y|  
+|x-y|if x > y|  
+|0|if x <= y|  
   
  Aksi takdirde, aşağıdaki hatalardan biri döndürebilir:  
   
@@ -104,7 +106,7 @@ long double fdiml(
 |-----------|------------|  
 |taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|  
 |Underflow aralık hatası|(sonra yuvarlama) doğru değeri|  
-|`x`veya `y` NaN olup|NaN|  
+|`x` veya `y` NaN olup|NaN|  
   
  Hataları raporlanır belirtilmiş [_matherr](../../c-runtime-library/reference/matherr.md).  
   

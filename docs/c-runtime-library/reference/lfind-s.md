@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _lfind_s
+ms.topic: reference
+apiname:
+- _lfind_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - lfind_s
 - _lfind_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - linear searching
 - keys, finding in arrays
@@ -33,16 +36,17 @@ helpviewer_keywords:
 - searching, linear
 - _lfind_s function
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8bff33c66ebe8bdb2b5eb497aad2e3a11bc04a76
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7986e6ad93eb8b4372f6ec058d0758d849b48363
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="lfinds"></a>_lfind_s
 Belirtilen anahtar için doğrusal arama gerçekleştirir. Bir sürümünü [_lfind](../../c-runtime-library/reference/lfind.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -94,9 +98,9 @@ void *_lfind_s(
 |tüm|tüm|`NULL`|bir|tüm|`EINVAL`|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_lfind_s` İşlevi gerçekleştiren değeri için doğrusal arama `key` dizisindeki `num` öğeleri, her biri `width` bayt sayısı. Farklı `bsearch_s`, `_lfind_s` sıralanacak dizi gerektirmez. `base` Bağımsız değişkeni bir işaretçidir aranacağı dizinin tabanı. `compare` Bağımsız değişkeni bir işaretçidir iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam. `_lfind_s`çağrıları `compare` geçirme, arama sırasında rutin bir veya birden çok kez `context` işaretçi ve her çağrıda iki dizi öğeleri işaretçiler. `compare` Yordamı öğeleri karşılaştırın ardından (öğeleri farklı sıfır olmayan anlamına gelir) dönün veya 0 (öğeleri aynı olduğu anlamına gelir).  
+ `_lfind_s` İşlevi gerçekleştiren değeri için doğrusal arama `key` dizisindeki `num` öğeleri, her biri `width` bayt sayısı. Farklı `bsearch_s`, `_lfind_s` sıralanacak dizi gerektirmez. `base` Bağımsız değişkeni bir işaretçidir aranacağı dizinin tabanı. `compare` Bağımsız değişkeni bir işaretçidir iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam. `_lfind_s` çağrıları `compare` geçirme, arama sırasında rutin bir veya birden çok kez `context` işaretçi ve her çağrıda iki dizi öğeleri işaretçiler. `compare` Yordamı öğeleri karşılaştırın ardından (öğeleri farklı sıfır olmayan anlamına gelir) dönün veya 0 (öğeleri aynı olduğu anlamına gelir).  
   
- `_lfind_s`benzer `_lfind` eklenmesi dışında `context` işaretçi karşılaştırması işlevinin bağımsız değişkenleri ve işlev parametre listesi. `context` İşaretçi Aranan veri yapısı bir nesnenin parçası ise yararlı olabilir ve `compare` işlevi nesnenin üyelerine erişme gerekiyor. `compare` İşlevi uygun nesne türüne ve erişim üyeleri bu nesnenin void işaretçi çevirebilirsiniz. Eklenmesi `context` parametreyi yapar `_lfind_s` daha güvenli ek bağlam verileri kullanılabilir hale getirmek için statik değişkenler kullanımıyla ilişkili yeniden giriş hataları önlemek için kullanılabileceğinden `compare` işlevi.  
+ `_lfind_s` benzer `_lfind` eklenmesi dışında `context` işaretçi karşılaştırması işlevinin bağımsız değişkenleri ve işlev parametre listesi. `context` İşaretçi Aranan veri yapısı bir nesnenin parçası ise yararlı olabilir ve `compare` işlevi nesnenin üyelerine erişme gerekiyor. `compare` İşlevi uygun nesne türüne ve erişim üyeleri bu nesnenin void işaretçi çevirebilirsiniz. Eklenmesi `context` parametreyi yapar `_lfind_s` daha güvenli ek bağlam verileri kullanılabilir hale getirmek için statik değişkenler kullanımıyla ilişkili yeniden giriş hataları önlemek için kullanılabileceğinden `compare` işlevi.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

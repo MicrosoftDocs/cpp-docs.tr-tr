@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ultoa
 - _ultow
@@ -29,7 +30,8 @@ f1_keywords:
 - _ultoa
 - _ultow
 - _ultot
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ultot function
 - converting integers
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _ultoa function
 - converting numbers, to strings
 ms.assetid: 7a472dc4-5652-4513-93c3-3358522c23be
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5e555275f4516d92318ec5cfffbca3472c2a5cf8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 94073b947848199bdc093f959ddceadcb1835f16
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ultoa-ultow"></a>_ultoa, _ultow
 İmzasız uzun tamsayı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_ultoa_s, _ultow_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md).  
@@ -95,7 +98,7 @@ wchar_t *_ultow(
  Bu işlevlerin her biri için bir işaretçi döndürür `str`. Döndürülen hata yoktur.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_ultoa` İşlev dönüştürür `value` null olarak sonlandırılan bir karakter dizesine ve sonuç (en fazla 33 bayt) depolar `str`. Hiçbir taşma denetimi gerçekleştirilir. `radix`tabanı belirtir `value`; `radix` 2 36 aralığında olmalıdır. `_ultow`bir joker karakter sürümü `_ultoa`.  
+ `_ultoa` İşlev dönüştürür `value` null olarak sonlandırılan bir karakter dizesine ve sonuç (en fazla 33 bayt) depolar `str`. Hiçbir taşma denetimi gerçekleştirilir. `radix` tabanı belirtir `value`; `radix` 2 36 aralığında olmalıdır. `_ultow` bir joker karakter sürümü `_ultoa`.  
   
 > [!IMPORTANT]
 >  Arabellek aşırı çalıştırmaları önlemek için emin `str` arabellek dönüştürülen basamak, artı sonunda null karakteri tutabilecek kadar büyük.  
@@ -112,7 +115,7 @@ wchar_t *_ultow(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_ultoa`|\<stdlib.h >|  
+|`_ultoa`|\<stdlib.h>|  
 |`_ultow`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

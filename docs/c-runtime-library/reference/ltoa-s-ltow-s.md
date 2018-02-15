@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ltoa_s
 - _ltow_s
@@ -27,7 +28,8 @@ f1_keywords:
 - _ltoa_s
 - ltoa_s
 - ltow_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - converting integers
 - _ltoa_s function
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - ltoa_s function
 - _ltow_s function
 ms.assetid: d7dc61ea-1ccd-412d-b262-555a58647386
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: de078e5ad6d2488b852e14247d2d72ca751a9635
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 181f03752a16f64329eb94ae0cd8fac091fa2987
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ltoas-ltows"></a>_ltoa_s, _ltow_s
 Uzun tamsayı bir dizeye dönüştürür. Sürümleri bunlar [_ltoa, _ltow](../../c-runtime-library/reference/ltoa-ltow.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -97,7 +100,7 @@ errno_t _ltow_s(
  İşlev başarılı olduğunda sıfır veya bir hata kodu.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_ltoa_s` İşlevi dönüştürür rakamı `value` null olarak sonlandırılan bir karakter dizesine ve sonuç (en fazla 33 bayt) depolar `str`. `radix` Bağımsız değişkeni belirtir tabanı `value`, 2-36 aralığında olmalıdır. Varsa `radix` eşittir 10 ve `value` olan negatif saklı dizenin ilk karakter eksi işareti (-)'dir. `_ltow_s`bir geniş karakter sürümü `_ltoa_s`; ikinci bağımsız değişkeni `_ltow_s` geniş karakter dizeler.  
+ `_ltoa_s` İşlevi dönüştürür rakamı `value` null olarak sonlandırılan bir karakter dizesine ve sonuç (en fazla 33 bayt) depolar `str`. `radix` Bağımsız değişkeni belirtir tabanı `value`, 2-36 aralığında olmalıdır. Varsa `radix` eşittir 10 ve `value` olan negatif saklı dizenin ilk karakter eksi işareti (-)'dir. `_ltow_s` bir geniş karakter sürümü `_ltoa_s`; ikinci bağımsız değişkeni `_ltow_s` geniş karakter dizeler.  
   
  Varsa `str` olan bir `NULL` işaretçi veya `sizeOfstr` küçük veya ona eşit sıfır olarak açıklandığı gibi bu işlevlerin bir geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve ayarlayın `errno` için `EINVAL` veya `value` veya `str` uzun tamsayı aralık dışında bu işlevler -1 döndürür ve `errno` için `ERANGE`.  
   
@@ -113,8 +116,8 @@ errno_t _ltow_s(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_ltoa_s`|\<stdlib.h >|  
-|`_ltow_s`|\<stdlib.h >|  
+|`_ltoa_s`|\<stdlib.h>|  
+|`_ltow_s`|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _CrtDbgReport
 - _CrtDbgReportW
@@ -43,11 +43,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4720053f96972c6ff0d846b9641d9ddc2d256f20
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 45cd908519fbacb42e017676a245451a5966891e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtdbgreport-crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 Hata ayıklama iletisi ile bir rapor oluşturur ve rapor üç olası hedeflerine (yalnızca hata ayıklama sürümü) gönderir.  
@@ -98,11 +98,11 @@ int _CrtDbgReportW(
  [_RPT, _RPTF](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) debug makroları çağrısı `_CrtDbgReport` raporları kendi hata ayıklama oluşturmak için. Bu makroları joker karakter sürümlerinin yanı [_ASSERT &#91; E &#93; ](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), `_RPTW n` ve `_RPTFW n`, kullanın `_CrtDbgReportW` raporları kendi hata ayıklama oluşturmak için. Zaman `_CrtDbgReport` veya `_CrtDbgReportW` 1, dönüş tam zamanında (JIT) hata ayıklama etkin olması koşuluyla bu makroları hata ayıklayıcısını başlatın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtDbgReport`ve `_CrtDbgReportW` hata ayıklama rapor üç farklı hedeflere gönderebilirsiniz: hata ayıklama rapor dosyası, bir hata ayıklama İzleyicisi'ni ( [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] hata ayıklayıcı), veya bir hata ayıklama iletisi penceresi. İki yapılandırma İşlevler, [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md), her rapor türü için hedefleri ve hedef belirtmek için kullanılır. Bu işlevler raporlama hedef veya ayrı olarak denetlenmesini her rapor türü için hedefleri izin verir. Örneğin, belirtmek olası bir `reportType` , `_CRT_WARN` yalnızca hata ayıklama İzleyicisi gönderildi, ancak bir `reportType` , `_CRT_ASSERT` bir hata ayıklama iletisi penceresi ve kullanıcı tanımlı rapor dosyası gönderilmeyecek.  
+ `_CrtDbgReport` ve `_CrtDbgReportW` hata ayıklama rapor üç farklı hedeflere gönderebilirsiniz: hata ayıklama rapor dosyası, bir hata ayıklama İzleyicisi'ni ( [!INCLUDE[vsprvs](../../assembler/masm/includes/vsprvs_md.md)] hata ayıklayıcı), veya bir hata ayıklama iletisi penceresi. İki yapılandırma İşlevler, [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md), her rapor türü için hedefleri ve hedef belirtmek için kullanılır. Bu işlevler raporlama hedef veya ayrı olarak denetlenmesini her rapor türü için hedefleri izin verir. Örneğin, belirtmek olası bir `reportType` , `_CRT_WARN` yalnızca hata ayıklama İzleyicisi gönderildi, ancak bir `reportType` , `_CRT_ASSERT` bir hata ayıklama iletisi penceresi ve kullanıcı tanımlı rapor dosyası gönderilmeyecek.  
   
- `_CrtDbgReportW`joker karakter sürümü `_CrtDbgReport`. Tüm çıktı ve dize parametreleri joker karakter dizelerini olan; Aksi durumda tek baytlı karakter sürüme aynıdır.  
+ `_CrtDbgReportW` joker karakter sürümü `_CrtDbgReport`. Tüm çıktı ve dize parametreleri joker karakter dizelerini olan; Aksi durumda tek baytlı karakter sürüme aynıdır.  
   
- `_CrtDbgReport`ve `_CrtDbgReportW` getirilmesiyle hata ayıklama rapor için kullanıcı iletisi oluşturmak `argument`[`n`] bağımsız değişkenleriyle `format` tarafından tanımlanan aynı kurallarını kullanarak, dize `printf` veya `wprintf` işlevleri. Bu işlevler sonra hata ayıklama raporu oluşturmak ve geçerli rapor modlarını temel hedeflerini, veya hedef belirleme ve dosya için tanımlanmış `reportType`. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde `filename`, `lineNumber`, ve `moduleName` penceresinde görüntülenen bilgiler eklenir.  
+ `_CrtDbgReport` ve `_CrtDbgReportW` getirilmesiyle hata ayıklama rapor için kullanıcı iletisi oluşturmak `argument`[`n`] bağımsız değişkenleriyle `format` tarafından tanımlanan aynı kurallarını kullanarak, dize `printf` veya `wprintf` işlevleri. Bu işlevler sonra hata ayıklama raporu oluşturmak ve geçerli rapor modlarını temel hedeflerini, veya hedef belirleme ve dosya için tanımlanmış `reportType`. Rapor bir hata ayıklama iletisi penceresine gönderildiğinde `filename`, `lineNumber`, ve `moduleName` penceresinde görüntülenen bilgiler eklenir.  
   
  Rapor modu veya modları, dosya ve sonuçta elde edilen davranışını için kullanılabilir seçenekleri aşağıdaki tabloda listelenmektedir `_CrtDbgReport` ve `_CrtDbgReportW`. Bu seçenekler bit FLAGS içinde bayrak olarak tanımlanan \<crtdbg.h >.  
   
@@ -125,7 +125,7 @@ int _CrtDbgReportW(
 |`_CrtDbgReport`|\<crtdbg.h>|  
 |`_CrtDbgReportW`|\<crtdbg.h>|  
   
- `_CrtDbgReport`ve `_CrtDbgReportW` Microsoft uzantıları. Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ `_CrtDbgReport` ve `_CrtDbgReportW` Microsoft uzantıları. Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="libraries"></a>Kitaplıklar  
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: setvbuf
+ms.topic: reference
+apiname:
+- setvbuf
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,23 +23,26 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: setvbuf
-dev_langs: C++
+f1_keywords:
+- setvbuf
+dev_langs:
+- C++
 helpviewer_keywords:
 - controlling stream buffering
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0855982627c60c51ec5753031ae932ffd430f024
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 072a1a9b1fca01dc8c6266f65232e4a8d8183580
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setvbuf"></a>setvbuf
 Akışı arabelleğe alma ve arabellek boyutunu denetler.  
@@ -74,7 +79,7 @@ int setvbuf(
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `setvbuf` İşlevi sağlar ve arabellek boyutu için her iki kez arabelleğe alma denetlemek program `stream`. `stream`açıldıktan sonra bir g/ç işlemi geçmemiştir açık bir dosyadan başvurmalıdır. Tarafından diziyi işaret için `buffer` olduğu sürece arabellek olarak kullanılan `NULL`, bu durumda `setvbuf` kullandığı otomatik olarak ayrılmış bir arabellek uzunluğu `size`/2 * 2 bayt.  
+ `setvbuf` İşlevi sağlar ve arabellek boyutu için her iki kez arabelleğe alma denetlemek program `stream`. `stream` açıldıktan sonra bir g/ç işlemi geçmemiştir açık bir dosyadan başvurmalıdır. Tarafından diziyi işaret için `buffer` olduğu sürece arabellek olarak kullanılan `NULL`, bu durumda `setvbuf` kullandığı otomatik olarak ayrılmış bir arabellek uzunluğu `size`/2 * 2 bayt.  
   
  Modu olmalıdır `_IOFBF`, `_IOLBF`, veya `_IONBF`. Varsa `mode` olan `_IOFBF` veya `_IOLBF`, ardından `size` arabellek boyutu kullanılır. Varsa `mode` olan `_IONBF`, akış arabellekten çıkarılan ve `size` ve `buffer` göz ardı edilir. İçin değerler `mode` ve anlamlarını şunlardır:  
   

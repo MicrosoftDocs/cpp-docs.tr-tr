@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtMemCheckpoint
+ms.topic: reference
+apiname:
+- _CrtMemCheckpoint
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,21 +26,23 @@ f1_keywords:
 - CrtMemCheckpoint
 - _CrtMemCheckpoint
 - crtdbg/_CrtMemCheckpoint
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtMemCheckpoint function
 - _CrtMemCheckpoint function
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 39f2a901404a9c2c34dc9147cb4ed51f070396a9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 37333b2b4621b9434a9fe1a924162957d5ea824f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
 Hata ayıklama yığınını geçerli durumunu alır ve depolar bir uygulama tarafından sağlanan içinde `_CrtMemState` yapısı (yalnızca hata ayıklama sürümü).  
