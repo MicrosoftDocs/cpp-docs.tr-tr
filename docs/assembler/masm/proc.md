@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: PROC
-dev_langs: C++
-helpviewer_keywords: PROC directive
+ms.topic: reference
+f1_keywords:
+- PROC
+dev_langs:
+- C++
+helpviewer_keywords:
+- PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b4b8b5259e3a7e42e7eb08cb4832496a6f3c35c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0900b277650fee1c4134d354d964d49d570c6266
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="proc"></a>PROC
 Başlangıç ve bitiş adlı bir yordam bloğunun işaretler *etiket*. Blok ifadeler ile çağrılabilir **ÇAĞRISI** yönergesi veya [INVOKE](../../assembler/masm/invoke.md) yönergesi.  

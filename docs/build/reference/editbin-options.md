@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: editbin
-dev_langs: C++
-helpviewer_keywords: EDITBIN program, options
+f1_keywords:
+- editbin
+dev_langs:
+- C++
+helpviewer_keywords:
+- EDITBIN program, options
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2658b2ca23ef34b63e0788791f3fb528107e1efd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e4fc808f27b1d7a37e29a0f308ce51d31a9cc953
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="editbin-options"></a>EDITBIN Seçenekleri
 Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplıklarını (DLL'ler) değiştirmek için EDITBIN kullanabilirsiniz. EDITBIN yaptığı değişiklikler seçeneklerini belirtin.  
@@ -31,26 +36,26 @@ Nesne dosyaları, yürütülebilir dosyaları ve dinamik bağlantı kitaplıklar
   
 |Seçenek|Amaç|  
 |------------|-------------|  
-|[/ ALLOWBIND](../../build/reference/allowbind.md)|DLL bağlı olup olmadığını belirtir.|  
-|[/ ALLOWISOLATION](../../build/reference/allowisolation.md)|DLL veya yürütülebilir dosya bildirim arama davranışını belirtir.|  
-|[/ APPCONTAINER](../../build/reference/appcontainer.md)|Uygulama içinde bir Appcontaıner çalıştırma olup olmadığını belirtir; örneğin, bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama.|  
-|[/ BIND](../../build/reference/bind.md)|Giriş noktaları için adresleri yükleme süresini hızlandırmak için belirtilen nesneler ayarlar.|  
-|[/ DYNAMICBASE](../../build/reference/dynamicbase.md)|DLL veya yürütülebilir görüntü rastgele yükleme zamanında adres boşluğu düzeni rastgele seçimini (ASLR) kullanarak rebased olup olmadığını belirtir.|  
+|[/ALLOWBIND](../../build/reference/allowbind.md)|DLL bağlı olup olmadığını belirtir.|  
+|[/ALLOWISOLATION](../../build/reference/allowisolation.md)|DLL veya yürütülebilir dosya bildirim arama davranışını belirtir.|  
+|[/APPCONTAINER](../../build/reference/appcontainer.md)|Uygulama içinde bir Appcontaıner çalıştırma olup olmadığını belirtir; örneğin, bir UWP uygulaması.|  
+|[/BIND](../../build/reference/bind.md)|Giriş noktaları için adresleri yükleme süresini hızlandırmak için belirtilen nesneler ayarlar.|  
+|[/DYNAMICBASE](../../build/reference/dynamicbase.md)|DLL veya yürütülebilir görüntü rastgele yükleme zamanında adres boşluğu düzeni rastgele seçimini (ASLR) kullanarak rebased olup olmadığını belirtir.|  
 |[/ ERRORREPORT](../../build/reference/errorreport-editbin-exe.md)|İç hataları Microsoft'a bildirir.|  
-|[/ HEAP](../../build/reference/heap.md)|Yürütülebilir görüntünün öbek boyutunu bayt cinsinden ayarlar.|  
-|[/ HIGHENTROPYVA](../../build/reference/highentropyva.md)|DLL veya yürütülebilir görüntü yüksek entropi (64-bit) adres boşluğu düzeni rastgele seçimini (ASLR) destekleyip desteklemediğini belirtir.|  
-|[/ INTEGRITYCHECK](../../build/reference/integritycheck.md)|Yükleme zamanında dijital imza denetlenip denetlenmeyeceğini belirtir.|  
-|[/ LARGEADDRESSAWARE](../../build/reference/largeaddressaware.md)|Nesne iki gigabayttan büyük adresleri destekleyip desteklemediğini belirtir.|  
-|[/ NOLOGO](../../build/reference/nologo-editbin.md)|EDITBIN Başlangıç başlığını gizler.|  
-|[/ NXCOMPAT](../../build/reference/nxcompat.md)|Yürütülebilir görüntü Windows Veri Yürütme Engellemesi ile uyumlu olup olmadığını belirtir.|  
-|[/ REBASE](../../build/reference/rebase.md)|Belirtilen nesneler için temel adres ayarlar.|  
-|[/ RELEASE](../../build/reference/release.md)|Sağlama toplamı üstbilgisinde ayarlar.|  
+|[/HEAP](../../build/reference/heap.md)|Yürütülebilir görüntünün öbek boyutunu bayt cinsinden ayarlar.|  
+|[/HIGHENTROPYVA](../../build/reference/highentropyva.md)|DLL veya yürütülebilir görüntü yüksek entropi (64-bit) adres boşluğu düzeni rastgele seçimini (ASLR) destekleyip desteklemediğini belirtir.|  
+|[/INTEGRITYCHECK](../../build/reference/integritycheck.md)|Yükleme zamanında dijital imza denetlenip denetlenmeyeceğini belirtir.|  
+|[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware.md)|Nesne iki gigabayttan büyük adresleri destekleyip desteklemediğini belirtir.|  
+|[/NOLOGO](../../build/reference/nologo-editbin.md)|EDITBIN Başlangıç başlığını gizler.|  
+|[/NXCOMPAT](../../build/reference/nxcompat.md)|Yürütülebilir görüntü Windows Veri Yürütme Engellemesi ile uyumlu olup olmadığını belirtir.|  
+|[/REBASE](../../build/reference/rebase.md)|Belirtilen nesneler için temel adres ayarlar.|  
+|[/RELEASE](../../build/reference/release.md)|Sağlama toplamı üstbilgisinde ayarlar.|  
 |[/ SECTION](../../build/reference/section-editbin.md)|Bir bölüm özniteliklerini geçersiz kılar.|  
-|[/ STACK](../../build/reference/stack.md)|Yürütülebilir görüntünün yığın boyutunu bayt cinsinden ayarlar.|  
-|[/ SUBSYSTEM](../../build/reference/subsystem.md)|Yürütme ortamı belirtir.|  
-|[/ SWAPRUN](../../build/reference/swaprun.md)|Yürütülebilir görüntü gerekir olarak takas dosyasına kopyalanır ve buradan çalıştırın olduğunu belirtir.|  
-|[/ TSAWARE](../../build/reference/tsaware.md)|Uygulama çok kullanıcılı ortamda çalışmak üzere tasarlanmıştır belirtir.|  
-|[/ SÜRÜMÜ](../../build/reference/version.md)|Sürüm numarasını üstbilgisinde ayarlar.|  
+|[/STACK](../../build/reference/stack.md)|Yürütülebilir görüntünün yığın boyutunu bayt cinsinden ayarlar.|  
+|[/SUBSYSTEM](../../build/reference/subsystem.md)|Yürütme ortamı belirtir.|  
+|[/SWAPRUN](../../build/reference/swaprun.md)|Yürütülebilir görüntü gerekir olarak takas dosyasına kopyalanır ve buradan çalıştırın olduğunu belirtir.|  
+|[/TSAWARE](../../build/reference/tsaware.md)|Uygulama çok kullanıcılı ortamda çalışmak üzere tasarlanmıştır belirtir.|  
+|[/VERSION](../../build/reference/version.md)|Sürüm numarasını üstbilgisinde ayarlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   

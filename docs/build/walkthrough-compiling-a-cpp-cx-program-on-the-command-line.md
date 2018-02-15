@@ -4,29 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 677779aa8550869fe0859974b2aa4bbbb1c23d83
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 13e1b220123d3215e1c9150d00ee092ea4200ca8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
-Windows çalışma zamanı hedef ve komut satırında derleme Visual C++ programları oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahiptir. Kullanabileceğiniz C + +/ CX Windows Phone 8.1, Windows mağazası ve Windows Masaüstü için uygulamalar oluşturmak için. Daha fazla bilgi için bkz: [A Tur, c + +/ CX](http://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  
+Windows çalışma zamanı hedef ve komut satırında derleme Visual C++ programları oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahiptir. Kullanabileceğiniz C + +/ CX Evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü için uygulamalar oluşturmak için. Daha fazla bilgi için bkz: [A Tur, c + +/ CX](http://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  
   
  Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve komut satırında derleme. (Kullanabileceğiniz kendi C + +/ CX programı gösterilen bir yazmak yerine veya kullanabilirsiniz C + +/ CX kod örnekten başka bir Yardım makalesi. Bu teknik oluşturma ve hiçbir kullanıcı Arabirimi öğeleri içeren küçük modülleri sınamak için kullanışlıdır.)  
   
 > [!NOTE]
->  C + derlemek için Visual Studio IDE kullanabilirsiniz +/ CX programlar. Tasarım, hata ayıklama, öykünme ve komut satırında kullanılamaz dağıtım desteği IDE içerdiği için Windows mağazası uygulamaları oluşturmak için IDE kullanmanızı öneririz. Daha fazla bilgi için bkz: [temel bir C++ mağazası uygulaması oluşturma](http://msdn.microsoft.com/library/windows/apps/dn263168).  
+>  C + derlemek için Visual Studio IDE kullanabilirsiniz +/ CX programlar. Tasarım, hata ayıklama, öykünme ve komut satırında kullanılamaz dağıtım desteği IDE içerdiği için evrensel Windows Platformu (UWP) uygulamaları geliştirmek için IDE kullanmanızı öneririz. Daha fazla bilgi için bkz: [C++'da bir UWP uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  C++ dil temelleri anlamanız gerekir.  

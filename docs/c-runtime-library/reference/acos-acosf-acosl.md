@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - acosf
 - acos
@@ -30,7 +31,8 @@ f1_keywords:
 - acosf
 - math/acosf
 - math/acosl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - acos function
 - acosl function
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - trigonometric functions
 - arccosine function
 ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1daa54589ad1332f2cb85f7cc6fe03aa58d07a18
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9cccaa6369f6d858a63991c561e0c0984eba1aba
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="acos-acosf-acosl"></a>acos, acosf, acosl
 Arkkosinüsünü hesaplar.  
@@ -85,7 +88,7 @@ long double acosl(
 |-----------|-------------------|-----------------------|  
 |± ∞|`INVALID`|`_DOMAIN`|  
 |± QNAN, UL|yok|`_DOMAIN`|  
-|&#124; x &#124; > 1|`INVALID`|`_DOMAIN`|  
+|&#124;x&#124;>1|`INVALID`|`_DOMAIN`|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `acos` alın ve dönüş `float` ve `long double` türleri. Bir C programı `acos` her zaman alan ve döndüren bir `double`.  
@@ -151,5 +154,5 @@ Arccosine of 0.000000 = 1.570796
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
  [_matherr](../../c-runtime-library/reference/matherr.md)   
- [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
+ [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)

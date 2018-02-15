@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,19 +24,22 @@ f1_keywords:
 - std::or_eq
 - or_eq
 - std.or_eq
-dev_langs: C++
-helpviewer_keywords: or_eq function
+dev_langs:
+- C++
+helpviewer_keywords:
+- or_eq function
 ms.assetid: 1eb92464-ed58-40d8-a30e-f0a6aa2f4318
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7d6d8b7761cbf7f3802b185a10291c408cc0ff33
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 661708d93d79c0fd7be5e54b61044f38c21b1944
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="oreq"></a>or_eq
 Alternatif &#124; = işleci.  

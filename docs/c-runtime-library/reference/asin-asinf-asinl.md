@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - asinf
 - asinl
@@ -28,7 +29,8 @@ f1_keywords:
 - asin
 - asinl
 - asinf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - asin function
 - asinl function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5cc24746771c4e494648796847afee58e0bdf09c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4cb5f90a909a4e2250768bf158f6f51f53bbee4a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 Arksinüsünü hesaplar.  
@@ -83,7 +86,7 @@ long double asinl(
 |-----------|-------------------|-----------------------|  
 |± ∞|`INVALID`|`_DOMAIN`|  
 |± `QNAN`,`IND`|yok|`_DOMAIN`|  
-|&#124; x &#124; > 1|`INVALID`|`_DOMAIN`|  
+|&#124;x&#124;>1|`INVALID`|`_DOMAIN`|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `asin` ile `float` ve `long double` değerleri. Bir C programı `asin` her zaman alır ve bir double döndürür.  
@@ -99,9 +102,9 @@ long double asinl(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [ACOS, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
+ [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
  [_matherr](../../c-runtime-library/reference/matherr.md)   
- [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
+ [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)

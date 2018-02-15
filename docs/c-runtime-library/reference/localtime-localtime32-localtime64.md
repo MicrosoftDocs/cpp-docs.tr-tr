@@ -1,12 +1,13 @@
 ---
-title: "damgasını, _localtime32, _localtime64 | Microsoft Docs"
+title: localtime, _localtime32, _localtime64 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _localtime64
 - _localtime32
@@ -30,7 +31,8 @@ f1_keywords:
 - localtime32
 - localtime
 - _localtime32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - localtime32 function
 - _localtime32 function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - localtime function
 - time, converting values
 ms.assetid: 4260ec3d-43ee-4538-b998-402a282bb9b8
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 77a0a297413c053dee3e165ece07034487535b06
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1fa4d1b9c0f33df5f172500195edd4f50321d4e5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="localtime-localtime32-localtime64"></a>localtime, _localtime32, _localtime64
 Bir saat değeri dönüştürmek ve yerel saat dilimini düzeltin. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md).  
@@ -82,7 +85,7 @@ struct tm *_localtime64(
   
  `_localtime64`, kullanan `__time64_t` yapısı, 23:59:59, 31 Aralık 3000 Eşgüdümlü Evrensel Saat (UTC) ayarlama ifade tarihleri sağlarken `_localtime32` ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder.  
   
- `localtime`için değerlendiren bir satır içi işlev `_localtime64`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `localtime` için değerlendirilecek `_localtime32`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
+ `localtime` için değerlendiren bir satır içi işlev `_localtime64`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `localtime` için değerlendirilecek `_localtime32`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
   
  Yapı türünde alanlar [tm](../../c-runtime-library/standard-types.md) , her biri aşağıdaki değerlerini depolayan bir `int`:  
   
@@ -118,7 +121,7 @@ struct tm *_localtime64(
   
  Hem 32 bit ve 64 bit sürümlerini `gmtime`, `mktime`, `mkgmtime`, ve `localtime` tüm tek kullanımlık `tm` dönüştürme için iş parçacığı başına yapısı. Bu yordamlar her çağrısına önceki çağrının sonucu bozar.  
   
- `localtime`Kullanıcı ilk genel ortam değişkeni ayarlarsa için yerel saat dilimi düzeltir `TZ`. Zaman `TZ` ayarlandığında, diğer üç ortam değişkenlerini (`_timezone`, `_daylight`, ve `_tzname`) otomatik olarak da ayarlanır. Varsa `TZ` değişken ayarlanmazsa `localtime` tarih uygulama Denetim Masası'nda belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyor, Pasifik saat diliminde güveninin, PST8PDT varsayılan olarak kullanılır. Bkz: [_tzset](../../c-runtime-library/reference/tzset.md) bu değişkenleri açıklaması. `TZ`bir Microsoft uzantısı ve ANSI standart tanımının parçası olmayan `localtime`.  
+ `localtime` Kullanıcı ilk genel ortam değişkeni ayarlarsa için yerel saat dilimi düzeltir `TZ`. Zaman `TZ` ayarlandığında, diğer üç ortam değişkenlerini (`_timezone`, `_daylight`, ve `_tzname`) otomatik olarak da ayarlanır. Varsa `TZ` değişken ayarlanmazsa `localtime` tarih uygulama Denetim Masası'nda belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyor, Pasifik saat diliminde güveninin, PST8PDT varsayılan olarak kullanılır. Bkz: [_tzset](../../c-runtime-library/reference/tzset.md) bu değişkenleri açıklaması. `TZ` bir Microsoft uzantısı ve ANSI standart tanımının parçası olmayan `localtime`.  
   
 > [!NOTE]
 >  Hedef ortam gün ışığından yararlanma saati etkin olup olmadığını belirlemek denemelisiniz.  
@@ -182,9 +185,9 @@ Tue Feb 12 10:05:58 AM
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_tzset](../../c-runtime-library/reference/tzset.md)

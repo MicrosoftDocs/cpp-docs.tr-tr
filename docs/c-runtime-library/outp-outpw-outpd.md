@@ -48,11 +48,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f2b32b17ed65120aa98b19ed3b2cf599364fee0
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 85cc0953b92df0b26583f9c9028498beb3e1271f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="outp-outpw-outpd"></a>_outp, _outpw, _outpd
 Bir bağlantı noktası, bir bayt çıkışları (`_outp`), bir sözcük (`_outpw`), veya bir çift sözcük (`_outpd`).  
@@ -61,7 +61,7 @@ Bir bağlantı noktası, bir bayt çıkışları (`_outp`), bir sözcük (`_outp
 >  Bu işlevler artık kullanılmıyor. Visual Studio 2015'te başlayarak, bunlar CRT kullanılabilir değildir.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -82,7 +82,7 @@ unsigned long dataword
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *bağlantı noktası*  
+ *Bağlantı noktası*  
  Bağlantı noktası numarası.  
   
  *databyte, dataword*  

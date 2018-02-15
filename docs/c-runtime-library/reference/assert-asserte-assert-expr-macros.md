@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +25,8 @@ f1_keywords:
 - ASSERTE
 - _ASSERT
 - _ASSERT_EXPR
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - debugging [CRT], using macros
 - _ASSERTE macro
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - _ASSERT macro
 - _ASSERT_EXPR macro
 ms.assetid: e98fd2a6-7f5e-4aa8-8fe8-e93490deba36
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 07be60643ad77e1138c3c23a1dd358a1d4177f25
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b5dae684d922287c1301338ed3a59844ff6313ac
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="assert-asserte-assertexpr-macros"></a>_ASSERT, _ASSERTE, _ASSERT_EXPR makroları
 Bir ifade değerlendirme ve sonucu olduğunda hata ayıklama rapor oluşturmak `False` (yalnızca hata ayıklama sürümü).  
@@ -75,7 +78,7 @@ _ASSERTE(
   
  `_ASSERT_EXPR`, `_ASSERT` ve `_ASSERTE` değerlendirmek kendi `booleanExpression` bağımsız değişkeni ve sonuç olduğunda `false` (0), bir tanılama iletisi ve çağrı yazdırma [_CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) hata ayıklama rapor oluşturmak için. `_ASSERT` Makrosu yazdırır basit bir tanılama iletisi `_ASSERTE` iletisinde başarısız ifade bir dize gösterimini içeren ve `_ASSERT_EXPR` içeren `message` tanılama iletisi dizesi. Bu makroları hiçbir şey yapma zaman `booleanExpression` için sıfır olmayan değerlendirir.  
   
- `_ASSERT_EXPR`, `_ASSERT` ve `_ASSERTE` çağırma `_CrtDbgReportW`, geniş karakter olması tüm çıktı neden olur. `_ASSERTE`Unicode karakterler düzgün yazdırır `booleanExpression` ve `_ASSERT_EXPR` Unicode karakter yazdırır `message`.  
+ `_ASSERT_EXPR`, `_ASSERT` ve `_ASSERTE` çağırma `_CrtDbgReportW`, geniş karakter olması tüm çıktı neden olur. `_ASSERTE` Unicode karakterler düzgün yazdırır `booleanExpression` ve `_ASSERT_EXPR` Unicode karakter yazdırır `message`.  
   
  Çünkü `_ASSERTE` makrosu başarısız ifade belirtir ve `_ASSERT_EXPR` sağlar oluşturulan rapora bir ileti belirtin, uygulamanın kaynak koduna başvuran olmadan sorunu tanımlamak kullanıcıları etkinleştirin. Ancak, bir dezavantajı her bulunduğunu `message` tarafından yazdırılan `_ASSERT_EXPR` ve tarafından değerlendirilen her ifade `_ASSERTE` bir dize sabiti olarak, uygulamanızın çıkış (hata ayıklama sürümü) dosyasına dahil edilir. Bu nedenle, çok sayıda varsa çağrıları yapılan `_ASSERT_EXPR` veya `_ASSERTE`, bu ifadeler, çıktı dosyanızın boyutunu önemli ölçüde artırabilir.  
   
@@ -83,7 +86,7 @@ _ASSERTE(
   
 `_CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);`  
   
- `_CrtDbgReportW`hata ayıklama raporu oluşturur ve hedef veya geçerli rapor modu veya modları ve dosya için tanımlanan göre hedefler belirler `_CRT_ASSERT` rapor türü. Varsayılan olarak, onaylama işlemi hataları ve hataları bir hata ayıklama iletisi penceresine yönlendirilirsiniz. [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.  
+ `_CrtDbgReportW` hata ayıklama raporu oluşturur ve hedef veya geçerli rapor modu veya modları ve dosya için tanımlanan göre hedefler belirler `_CRT_ASSERT` rapor türü. Varsayılan olarak, onaylama işlemi hataları ve hataları bir hata ayıklama iletisi penceresine yönlendirilirsiniz. [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.  
   
  Hedef bir hata ayıklama iletisi penceresi ve kullanıcı olduğunda tıklar **yeniden deneme** düğmesini `_CrtDbgReportW` 1 döndürür neden `_ASSERT_EXPR`, `_ASSERT` ve `_ASSERTE` hata ayıklayıcısını başlatmak üzere makroları sağlanan tam zamanında (JIT) hata ayıklama etkin.  
   
@@ -97,7 +100,7 @@ _ASSERTE(
   
 |Makrosu|Gerekli başlık|  
 |-----------|---------------------|  
-|`_ASSERT_EXPR`,                  `_ASSERT`, `_ASSERTE`|\<crtdbg.h >|  
+|`_ASSERT_EXPR`,                  `_ASSERT`, `_ASSERTE`|\<crtdbg.h>|  
   
 ## <a name="example"></a>Örnek  
  Bu programda çağrıları yapılan `_ASSERT` ve `_ASSERTE` koşulu test etmek için makroları `string1 == string2`. Koşul başarısız olursa, bu makroları bir tanılama iletisi yazdırın. `_RPTn` Ve `_RPTFn` makroları grup da kullandı bu programda alternatif olarak `printf` işlevi.  

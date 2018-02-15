@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,19 +24,22 @@ f1_keywords:
 - std::bitand
 - std.bitand
 - bitand
-dev_langs: C++
-helpviewer_keywords: bitand function
+dev_langs:
+- C++
+helpviewer_keywords:
+- bitand function
 ms.assetid: 279cf9b5-fac1-49de-b329-f1a31b3481fe
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fdc65eaa632fe35c3418b2c962e22689f570f536
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0231646a12cb5d95b676a9ff58dcae8466bba250
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="bitand"></a>bitand
 Alternatif & işleci.  

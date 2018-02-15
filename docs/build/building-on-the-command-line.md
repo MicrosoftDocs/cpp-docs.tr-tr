@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - command-line builds [C++]
 - compiling source code [C++], command line
@@ -15,16 +17,17 @@ helpviewer_keywords:
 - command line [C++], building from
 - command line [C++], compilers
 ms.assetid: 7ca9daed-a003-4162-842d-908f79058365
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c5780fb725ab9ccfbba189894c22c991c415f6c2
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9f613c20e0cab45a8eaa802c4c7ba0c6ac391357
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="build-cc-code-on-the-command-line"></a>Komut satırında C/C++ kodu derleme
 
@@ -82,7 +85,7 @@ Birincil geliştirici komut istemi komut dosyası, VsDevCmd.bat, Common7\Tools a
 >   
 > Vcvarsall.bat dosya sürümü başka bir sürümü de değişir. Geçerli sürümü Visual C++, Visual C++'ın önceki bir sürümünü de olan bir bilgisayara yüklediyseniz, aynı komut istemi penceresinde farklı sürümlerdeki vcvarsall.bat veya başka bir komut dosyası çalıştırmayın.  
  
-Varolan bir komut penceresinde belirli yapı mimarisi belirtmek için en basit yolu vcvarsall.bat dosya kullanmaktır. Komut satırı yerel 32 bit veya 64-bit derleme ya da çapraz derleme x86, x64 veya ARM işlemcileri için yapılandırma için ortam değişkenlerini ayarlamak için vcvarsall.bat kullanabilirsiniz; Windows mağazası, Evrensel Windows platformu ya da Windows Masaüstü platformları hedeflemek için; kullanmak için hangi Windows SDK belirtmek için; ve platform araç takımı sürümü belirtin. Bağımsız değişkenler verdiyse, geçerli 32-bit yerel derleyici x86 için kullanmak için ortam değişkenleri vcvarsall.bat yapılandırır Windows Masaüstü hedefler. Ancak, herhangi bir yerel veya derleyici araçları çapraz yapılandırmak için kullanabilirsiniz. Yüklü değil veya yapı bilgisayar Mimarinizi üzerinde kullanılabilir olmayan bir derleyici yapılandırma belirtirseniz, bir hata iletisi görüntülenir. Bu tabloda, desteklenen mimari bağımsız değişkenleri gösterilmektedir:  
+Varolan bir komut penceresinde belirli yapı mimarisi belirtmek için en basit yolu vcvarsall.bat dosya kullanmaktır. Komut satırı yerel 32 bit veya 64-bit derleme ya da çapraz derleme x86, x64 veya ARM işlemcileri için yapılandırma için ortam değişkenlerini ayarlamak için vcvarsall.bat kullanabilirsiniz; Hedef Microsoft Store, Evrensel Windows platformu veya Windows Masaüstü platformları için; kullanmak için hangi Windows SDK belirtmek için; ve platform araç takımı sürümü belirtin. Bağımsız değişkenler verdiyse, geçerli 32-bit yerel derleyici x86 için kullanmak için ortam değişkenleri vcvarsall.bat yapılandırır Windows Masaüstü hedefler. Ancak, herhangi bir yerel veya derleyici araçları çapraz yapılandırmak için kullanabilirsiniz. Yüklü değil veya yapı bilgisayar Mimarinizi üzerinde kullanılabilir olmayan bir derleyici yapılandırma belirtirseniz, bir hata iletisi görüntülenir. Bu tabloda, desteklenen mimari bağımsız değişkenleri gösterilmektedir:  
   
 |Vcvarsall.bat mimarisi bağımsız değişkeni|Derleyici|Ana bilgisayar mimarisi|Derleme çıktı mimarisi|  
 |----------------------------|--------------|----------------------------------|-------------------------------|  
@@ -176,7 +179,7 @@ MSBuild.EXE kullanmak nasıl ele makalelerinin bağlantıları sağlar.
   
 ## <a name="related-sections"></a>İlgili Bölümler  
 
-[/ MD, / MT, /LD (çalışma zamanı kitaplığını kullan)](../build/reference/md-mt-ld-use-run-time-library.md)  
+[/MD, /MT, /LD (Çalışma Zamanı Kitaplığını Kullan)](../build/reference/md-mt-ld-use-run-time-library.md)  
 Hata ayıklama veya yayın çalışma zamanı kitaplığı kullanmak için bu derleyici seçenekleri kullanmayı açıklar.  
   
 [C/C++ Derleyici Seçenekleri](../build/reference/compiler-options.md)  

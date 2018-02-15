@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtSetReportMode
+ms.topic: reference
+apiname:
+- _CrtSetReportMode
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - _CrtSetReportMode
 - CrtSetReportMode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CrtSetReportMode function
 - CrtSetReportMode function
 ms.assetid: 3ecc6a12-afdd-4242-b046-8187ff6d4b36
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 75d71ae4df727df1dd82ff88a793dc4e9c462b76
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 45319f7584d0c18533433d01b3467ccfeecac8df
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetreportmode"></a>_CrtSetReportMode
 Hedef veya tarafından oluşturulan belirli bir rapor türü için hedefleri belirtir `_CrtDbgReport` ve çağrı makroların [_CrtDbgReport, _CrtDbgReportW](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md), gibi [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md), [_RPT, _RPTF, _RPTW, _RPTFW makroları](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md), ve [_RPT, _RPTF, _RPTW, _RPTFW makroları](../../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) (yalnızca hata ayıklama sürümü).  
@@ -62,7 +66,7 @@ int _CrtSetReportMode(
  Başarıyla tamamlandığında, `_CrtSetReportMode` belirtilen rapor türü için önceki rapor modu veya modları döndürür `reportType`. Geçersiz bir değer olarak geçtiyse `reportType` veya geçersiz bir mod için belirtilen `reportMode`, `_CrtSetReportMode` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve -1 döndürür. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtSetReportMode`Çıkış hedefini belirtir `_CrtDbgReport`. Çünkü makrolar `_ASSERT`, `_ASSERTE`, `_RPT`, ve `_RPTF` çağrısı `_CrtDbgReport`, `_CrtSetReportMode` bu makroları ile belirtilen metin Çıkış hedefini belirtir.  
+ `_CrtSetReportMode` Çıkış hedefini belirtir `_CrtDbgReport`. Çünkü makrolar `_ASSERT`, `_ASSERTE`, `_RPT`, ve `_RPTF` çağrısı `_CrtDbgReport`, `_CrtSetReportMode` bu makroları ile belirtilen metin Çıkış hedefini belirtir.  
   
  Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetReportMode` ön işleme sırasında kaldırılır.  
   
@@ -84,7 +88,7 @@ int _CrtSetReportMode(
   
  `_CrtSetReportMode` İşlevi atar belirtilen yeni rapor modu `reportMode` belirtilen rapor türü için `reportType` ve önceden tanımlanmış rapor modu için döndürür `reportType`. İçin kullanılabilir seçenekleri aşağıdaki tabloda listelenmektedir `reportMode` ve sonuçta elde edilen davranışını `_CrtDbgReport`. Bu seçenekler Crtdbg.h bit bayrakları olarak tanımlanır.  
   
-|Rapor modu|_CrtDbgReport davranışı|  
+|Rapor modu|_CrtDbgReport behavior|  
 |-----------------|-----------------------------|  
 |`_CRTDBG_MODE_DEBUG`|Hata Ayıklayıcı'nın çıkış penceresine iletisi yazar.|  
 |`_CRTDBG_MODE_FILE`|Bir kullanıcı tarafından sağlanan dosya işleci iletisi yazar. [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) belirli dosya ya da hedef olarak kullanılacak akışı tanımlamak için çağrılmalıdır.|  
@@ -104,7 +108,7 @@ _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDERR );
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_CrtSetReportMode`|\<crtdbg.h >|\<errno.h >|  
+|`_CrtSetReportMode`|\<crtdbg.h>|\<errno.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

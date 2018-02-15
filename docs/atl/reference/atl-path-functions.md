@@ -5,8 +5,9 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-keywords: ATL, yol
+ms.topic: reference
+keywords:
+- ATL, yol
 f1_keywords:
 - ATLPATH/ATL::ATLPath::AddBackslash
 - ATLPATH/ATL::ATLPath::AddExtension
@@ -45,15 +46,16 @@ f1_keywords:
 - ATLPATH/ATL::ATLPath::StripToRoot
 - ATLPATH/ATL::ATLPath::UnquoteSpaces
 ms.assetid: d1ec2b8d-7ec7-43ea-90dd-0a740d2a742b
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-ms.workload: cplusplus
-ms.openlocfilehash: 29d41c0dc09620d34299a52a505d872096a7da8c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a0540fe70464e8c7997275d99d8242e62625bdec
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atl-path-functions"></a>ATL yolu işlevleri
 
@@ -117,7 +119,7 @@ ATL yolları biçiminde yönlendirmek için ATLPath sınıfı sağlar [CPathT](c
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlpath.h  
 
-## <a name="addbackslash"></a>ATLPath::AddBackSlash
+## <a name="addbackslash"></a> ATLPath::AddBackSlash
 
 Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561).  
   
@@ -134,7 +136,7 @@ inline wchar_t* AddBackslash(wchar_t* pszPath);
  
   
 
-## <a name="addextension"></a>ATLPath::AddExtension
+## <a name="addextension"></a> ATLPath::AddExtension
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -147,7 +149,7 @@ inline BOOL AddExtension(wchar_t* pszPath, const wchar_t* pszExtension);
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563) Ayrıntılar için. 
   
-## <a name="append"></a>ATLPath::Append
+## <a name="append">ATLPath::Append</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -163,7 +165,7 @@ inline BOOL Append(wchar_t* pszPath, const wchar_t* pszMore);
  
   
 
-## <a name="buildroot"></a>ATLPath::BuildRoot
+## <a name="buildroot">ATLPath::BuildRoot</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -179,7 +181,7 @@ inline wchar_t* BuildRoot(wchar_t* pszPath, int iDrive);
  
   
 
-## <a name="canonicalize"></a>ATLPath::Canonicalize
+## <a name="canonicalize">ATLPath::Canonicalize</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -195,7 +197,7 @@ inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
  
   
 
-## <a name="combine"></a>ATLPath::Combine 
+## <a name="combine">ATLPath::Combine</a> 
 Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCombine](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773571).  
 
 ### <a name="syntax"></a>Sözdizimi  
@@ -215,7 +217,7 @@ inline wchar_t* Combine(
 PathCombine Ayrıntılar için bkz.
 
 
-## <a name="commonprefix"></a>ATLPath::CommonPrefix
+## <a name="commonprefix">ATLPath::CommonPrefix</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -238,7 +240,7 @@ inline int CommonPrefix(
  
   
 
-## <a name="compactpath"></a>ATLPath::CompactPath
+## <a name="compactpath"></a> ATLPath::CompactPath
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -261,7 +263,7 @@ inline BOOL CompactPath(
  
   
 
-## <a name="compactpathex"></a>ATLPath::CompactPathEx
+## <a name="compactpathex"></a> ATLPath::CompactPathEx
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -286,7 +288,7 @@ inline BOOL CompactPathEx(
  
   
 
-## <a name="fileexists"></a>ATLPath::FileExists
+## <a name="fileexists">ATLPath::FileExists</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -302,7 +304,7 @@ inline BOOL FileExists(const wchar_t* pszPath);
  
   
 
-## <a name="findextension"></a>ATLPath::FindExtension
+## <a name="findextension">ATLPath::FindExtension</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -318,7 +320,7 @@ inline wchar_t* FindExtension(const wchar_t* pszPath);
  
   
 
-## <a name="findfilename"></a>ATLPath::FindFileName
+## <a name="findfilename">ATLPath::FindFileName</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -334,7 +336,7 @@ inline wchar_t* FindFileName(const wchar_t* pszPath);
  
   
 
-## <a name="getdrivenumber"></a>ATLPath::GetDriveNumber  
+## <a name="getdrivenumber">ATLPath::GetDriveNumber</a>  
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -350,7 +352,7 @@ inline int GetDriveNumber(const wchar_t* pszPath);
  
 
 
-## <a name="isdirectory"></a>ATLPath::IsDirectory 
+## <a name="isdirectory">ATLPath::IsDirectory</a> 
 Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsDirectory](https://msdn.microsoft.com/en-us/library/windows/desktop/bb773621).
 
 ```  
@@ -360,7 +362,7 @@ inline BOOL IsDirectory(const wchar_t* pszPath);
 ### <a name="remarks"></a>Açıklamalar
 PathIsDirectory Ayrıntılar için bkz.  
 
-## <a name="isfilespec"></a>ATLPath::IsFileSpec
+## <a name="isfilespec">ATLPath::IsFileSpec</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -376,7 +378,7 @@ inline BOOL IsFileSpec(const wchar_t* pszPath);
  
   
 
-## <a name="isprefix"></a>ATLPath::IsPrefix
+## <a name="isprefix">ATLPath::IsPrefix</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -392,7 +394,7 @@ inline BOOL IsPrefix(const wchar_t* pszPrefix, const wchar_t* pszPath);
  
   
 
-## <a name="isrelative"></a>ATLPath::IsRelative
+## <a name="isrelative">ATLPath::IsRelative</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -408,7 +410,7 @@ inline BOOL IsRelative(const wchar_t* pszPath);
  
   
 
-## <a name="isroot"></a>ATLPath::IsRoot
+## <a name="isroot">ATLPath::IsRoot</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -424,7 +426,7 @@ inline BOOL IsRoot(const wchar_t* pszPath);
  
   
 
-## <a name="issameroot"></a>ATLPath::IsSameRoot
+## <a name="issameroot">ATLPath::IsSameRoot</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -440,7 +442,7 @@ inline BOOL IsSameRoot(const wchar_t* pszPath1, const wchar_t* pszPath2);
  
   
 
-## <a name="isunc"></a>ATLPath::IsUNC
+## <a name="isunc">ATLPath::IsUNC</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNC'yi](http://msdn.microsoft.com/library/windows/desktop/bb773712).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -456,7 +458,7 @@ inline BOOL IsUNC(const wchar_t* pszPath);
  
   
 
-## <a name="isuncserver"></a>ATLPath::IsUNCServer
+## <a name="isuncserver">ATLPath::IsUNCServer</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -472,7 +474,7 @@ inline BOOL IsUNCServer(const wchar_t* pszPath);
  
   
 
-## <a name="isuncservershare"></a>ATLPath::IsUNCServerShare
+## <a name="isuncservershare">ATLPath::IsUNCServerShare</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -488,7 +490,7 @@ inline BOOL IsUNCServerShare(const wchar_t* pszPath);
  
   
 
-## <a name="makepretty"></a>ATLPath::MakePretty
+## <a name="makepretty"></a> ATLPath::MakePretty
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -504,7 +506,7 @@ inline BOOL MakePretty(wchar_t* pszPath);
  
   
 
-## <a name="matchspec"></a>ATLPath::MatchSpec  
+## <a name="matchspec">ATLPath::MatchSpec</a>  
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -520,7 +522,7 @@ inline BOOL MatchSpec(const wchar_t* pszPath, const wchar_t* pszSpec);
  
   
 
-## <a name="quotespaces"></a>ATLPath::QuoteSpaces  
+## <a name="quotespaces">ATLPath::QuoteSpaces</a>  
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -536,7 +538,7 @@ inline void QuoteSpaces(wchar_t* pszPath);
  
   
 
-## <a name="relativepathto"></a>ATLPath::RelativePathTo
+## <a name="relativepathto">ATLPath::RelativePathTo</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -563,7 +565,7 @@ inline BOOL RelativePathTo(
  
   
 
-## <a name="removeargs"></a>ATLPath::RemoveArgs  
+## <a name="removeargs">ATLPath::RemoveArgs</a>  
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -579,7 +581,7 @@ inline void RemoveArgs(wchar_t* pszPath);
  
   
 
-## <a name="removebackslash"></a>ATLPath::RemoveBackslash
+## <a name="removebackslash">ATLPath::RemoveBackslash</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -595,7 +597,7 @@ inline wchar_t* RemoveBackslash(wchar_t* pszPath);
  
   
 
-## <a name="removeblanks"></a>ATLPath::RemoveBlanks
+## <a name="removeblanks">ATLPath::RemoveBlanks</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -611,7 +613,7 @@ inline void RemoveBlanks(wchar_t* pszPath);
  
   
 
-## <a name="removeextension"></a>ATLPath::RemoveExtension
+## <a name="removeextension">ATLPath::RemoveExtension</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -627,7 +629,7 @@ inline void RemoveExtension(wchar_t* pszPath);
  
   
 
-## <a name="removefilespec"></a>ATLPath::RemoveFileSpec
+## <a name="removefilespec"></a> ATLPath::RemoveFileSpec
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -643,7 +645,7 @@ inline BOOL RemoveFileSpec(wchar_t* pszPath);
  
   
 
-## <a name="renameextension"></a>ATLPath::RenameExtension
+## <a name="renameextension">ATLPath::RenameExtension</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -659,7 +661,7 @@ inline BOOL RenameExtension(wchar_t* pszPath, const wchar_t* pszExt);
  
   
 
-## <a name="skiproot"></a>ATLPath::SkipRoot
+## <a name="skiproot">ATLPath::SkipRoot</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -675,7 +677,7 @@ inline wchar_t* SkipRoot(const wchar_t* pszPath);
  
   
 
-## <a name="strippath"></a>ATLPath::StripPath
+## <a name="strippath"></a> ATLPath::StripPath
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -692,7 +694,7 @@ inline void StripPath(wchar_t* pszPath);
   
 
 
-## <a name="striptoroot"></a>ATLPath::StripToRoot
+## <a name="striptoroot">ATLPath::StripToRoot</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757).  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -708,7 +710,7 @@ inline BOOL StripToRoot(wchar_t* pszPath);
  
   
 
-## <a name="unquotespaces"></a>ATLPath::UnquoteSpaces
+## <a name="unquotespaces">ATLPath::UnquoteSpaces</a>
  Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763).  
   
 ### <a name="syntax"></a>Sözdizimi  

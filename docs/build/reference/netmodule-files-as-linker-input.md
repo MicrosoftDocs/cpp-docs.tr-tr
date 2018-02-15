@@ -4,39 +4,42 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MSIL linking
 - linking [C++], modules
 - .netmodules
 - modules, Visual C++
 ms.assetid: a4bcbe8a-4255-451d-853b-f88cfd82f4e1
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: adafad3532b17573278e7afd82bc33f2c3c50b67
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d1c30c56012dc14392ecdc6a089dcd88a217d6d8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="netmodule-files-as-linker-input"></a>Bağlayıcı Girişi olarak .netmodule Dosyaları
 Link.exe giriş olarak şimdi MSIL .obj ve .netmodules kabul eder. Bağlayıcı tarafından üretilen çıkış dosyası, bir derlemeyi ya da hiç çalışma zamanı bağımlılık herhangi bir bağlayıcıya giriş .netmodules ve .obj ile .netmodule olacaktır.  
   
  Visual C++ derleyicisi ile tarafından oluşturulan .netmodules [/LN (MSIL modülü Oluştur)](../../build/reference/ln-create-msil-module.md) veya bağlayıcı ile [/NOASSEMBLY (MSIL modülü Oluştur)](../../build/reference/noassembly-create-a-msil-module.md). .objs her zaman bir Visual C++ derleme içinde oluşturulur. Diğer Visual Studio derleyiciler için kullanmak **/target: Module** derleyici seçeneği.  
   
- Çoğu durumda, .netmodule ile oluşturulmamışsa bağlayıcıya .obj dosya .netmodule oluşturulan Visual C++ derlemeden geçirin. gerekecek [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). Visual C++ Derleyici kullanılarak üretilen saf MSIL bağlayıcı girişi olarak kullanılan MSIL .netmodules **/CLR: safe**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. Visual Studio .NET derleyicileri saf MSIL modülleri varsayılan olarak üretir.  
+  Bağlayıcı .obj dosya .netmodule oluşturulan Visual C++ derlemeden geçmesi gerekir. Bir .netmodule bilgilerinde çünkü artık desteklenmeyen **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı bırakılmış ve derleyici gelecek bir sürümünde kaldırılacak.   
   
  Bağlayıcı komut satırından çağırma hakkında daha fazla bilgi için bkz: [bağlayıcı komut satırı sözdizimi](../../build/reference/linker-command-line-syntax.md), [komut satırında C/C++ derleme kodu](../../build/building-on-the-command-line.md), ve [yolu ve ortam değişkenlerini ayarlama Komut satırı derlemeleri](../../build/setting-the-path-and-environment-variables-for-command-line-builds.md).  
   
- Bağlayıcı için bir .netmodule veya .dll dosyası geçirme derlenmiş ile Visual C++ derleyicisi tarafından **/CLR** veya **/CLR: pure** bir bağlayıcı hatasına neden. Daha fazla bilgi için bkz: [.netmodule girdi dosyalarını biçimi seçme](../../build/reference/choosing-the-format-of-netmodule-input-files.md).  
+ Bağlayıcı için bir .netmodule veya .dll dosyası geçirme derlenmiş ile Visual C++ derleyicisi tarafından **/CLR** bir bağlayıcı hatasına neden. Daha fazla bilgi için bkz: [.netmodule girdi dosyalarını biçimi seçme](../../build/reference/choosing-the-format-of-netmodule-input-files.md).  
   
- MSIL .obj dosyaları ile derlenmiş yanı sıra yerel .obj dosyaları bağlayıcı kabul **/CLR**, **/CLR: pure**, veya **/CLR: safe**. Karma .objs aynı derlemede geçirirken, sonuçta elde edilen çıktı dosyası verifiability varsayılan olarak, en düşük düzeyde verifiability giriş modüllerin eşit olacaktır. Örneğin, güvenli ve saf .obj bağlayıcıya geçirirseniz, çıktı dosyası saf olacaktır. [/ CLRIMAGETYPE (CLR, türü görüntü belirtin)](../../build/reference/clrimagetype-specify-type-of-clr-image.md) bu ihtiyacınız olursa verifiability, daha düşük düzeyde belirtmenize olanak sağlar.  
+ MSIL .obj dosyaları ile derlenmiş yanı sıra yerel .obj dosyaları bağlayıcı kabul **/CLR**. Karma .objs aynı derlemede geçirirken, sonuçta elde edilen çıktı dosyası verifiability varsayılan olarak, en düşük düzeyde verifiability giriş modüllerin eşit olacaktır. 
   
  Şu anda oluşan bir uygulama iki veya daha fazla derlemelerin varsa ve derlemede dahil edilmek üzere uygulama istediğiniz derlemeleri yeniden derleyin ve .objs veya tek bir derleme üretmek için .netmodules bağlayın.  
   

@@ -1,13 +1,15 @@
 ---
-title: "_Crtısvalidpointer | Microsoft Docs"
+title: _CrtIsValidPointer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtIsValidPointer
+ms.topic: reference
+apiname:
+- _CrtIsValidPointer
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtlsValidPointer
 - _CrtIsValidPointer
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtIsValidPointer function
 - _CrtIsValidPointer function
 ms.assetid: 91c35590-ea5e-450f-a15d-ad8d62ade1fa
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2a5063a82ca90b9f854adb1ef68328272df54f4c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e81cd074c9bd69386b300d307525a76515e02522
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtisvalidpointer"></a>_CrtIsValidPointer
 Bir işaretçi null olmadığını doğrular. C çalışma zamanı kitaplığı Visual Studio 2010 önce sürümlerinde, belirtilen bellek aralığı okuma ve yazma (yalnızca hata ayıklama sürümü) için geçerli olduğunu doğrular.  
@@ -63,7 +67,7 @@ int _CrtIsValidPointer(
  Bellek aralığı belirlemek için okuma/yazma erişilebilirlik.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_CrtIsValidPointer`Belirtilen işaretçisi null değil, TRUE döndürür. Visual Studio 2010 önce CRT kitaplık sürümleri bellek aralığı belirtilen işlem veya işlemleri için geçerli ise TRUE değerini döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
+ `_CrtIsValidPointer` Belirtilen işaretçisi null değil, TRUE döndürür. Visual Studio 2010 önce CRT kitaplık sürümleri bellek aralığı belirtilen işlem veya işlemleri için geçerli ise TRUE değerini döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  CRT kitaplık Visual Studio 2010 ile başlayarak, boyutu ve erişim parametreleri yok sayılır, ve `_CrtIsValidPointer` yalnızca belirtilen adresi null olmadığını doğrular. Bu test kendiniz gerçekleştirmek kolay olduğundan, bu işlevi kullanmak önerilmez. Visual Studio 2010 önce sürümlerde başlangıç bellek aralığı doğrular işlevi `address` ve için genişletme `size` bayttır belirtilen erişilebilirlik işlemi veya işlemleri için geçerli. Zaman `access` olan TRUE olarak ayarlanırsa, hem okuma ve yazma için bellek aralığı doğrulanır. Zaman `access` false, bellek aralığı yalnızca okuma için doğrulanır. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtIsValidPointer` ön işleme sırasında kaldırılır.  
@@ -80,9 +84,9 @@ _ASSERTE( _CrtIsValidPointer( address, size, TRUE ) );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtIsValidPointer`|\<crtdbg.h >|  
+|`_CrtIsValidPointer`|\<crtdbg.h>|  
   
- `_CrtIsValidPointer`bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ `_CrtIsValidPointer` bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="libraries"></a>Kitaplıklar  
  Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.  

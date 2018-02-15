@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _putws
 - puts
@@ -45,11 +45,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b57f785ac43866aedfe4bf9dbca59353ca3b51
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.openlocfilehash: 06f90cf85d19fab3dd08b8b0c3d789d263c55fbf
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="puts-putws"></a>puts, _putws
 Bir dizeyi yazar **stdout**.  
@@ -78,7 +78,7 @@ int _putws(
 ## <a name="remarks"></a>Açıklamalar  
  `puts` İşlev yazma `str` standart çıktı akışı için **stdout**, dize değiştirme kullanıcının sonlandırma null karakteri ('\0') çıkış akışına bir yeni satır karakteri ('\n') sahip.  
   
- `_putws`joker karakter sürümü `puts`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `puts`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `_putws` joker karakter sürümü `puts`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `puts` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
   **_putwch** geçerli KONSOL yerel ayarı kullanarak Unicode karakterler yazar.  
   
@@ -95,7 +95,7 @@ int _putws(
 |`puts`|\<stdio.h >|  
 |`_putws`|\<stdio.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="libraries"></a>Kitaplıklar  
  Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  

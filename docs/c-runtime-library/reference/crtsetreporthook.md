@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtSetReportHook
+ms.topic: reference
+apiname:
+- _CrtSetReportHook
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - _CrtSetReportHook
 - CrtSetReportHook
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtSetReportHook function
 - _CrtSetReportHook function
 ms.assetid: 1ae7c64f-8c84-4797-9574-b59f00f7a509
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4c1fb85ab41c02bb9f604f024f86ebb42706eeda
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8c7b3a8954c39e8157834297ab5ac3a747420af8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetreporthook"></a>_CrtSetReportHook
 C çalışma zamanı hata ayıklama raporlama işlemine (yalnızca hata ayıklama sürümü) takma tarafından istemci tanımlı raporlama işlevi yükler.  
@@ -58,7 +62,7 @@ _CRT_REPORT_HOOK _CrtSetReportHook(
  Önceki istemci tanımlı raporlama işlevi döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtSetReportHook`işlem raporlama C çalışma zamanı hata ayıklama kitaplığa Raporlama işlevini kullanmak bir uygulama sağlar. Sonuç olarak, her [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) çağrılır hata ayıklama rapor oluşturmak için uygulama işlevi ilk kez çağrıldığında raporlama kullanıcının. Bir uygulamanın odaklanmak belirli ayırma türlerinde veya kullanarak hedeflere kullanılamaz bir raporu göndermek için hata ayıklama raporları filtreleme gibi işlemler gerçekleştirmek için bu işlevi etkinleştirir `_CrtDbgReport`. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetReportHook` ön işleme sırasında kaldırılır.  
+ `_CrtSetReportHook` işlem raporlama C çalışma zamanı hata ayıklama kitaplığa Raporlama işlevini kullanmak bir uygulama sağlar. Sonuç olarak, her [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) çağrılır hata ayıklama rapor oluşturmak için uygulama işlevi ilk kez çağrıldığında raporlama kullanıcının. Bir uygulamanın odaklanmak belirli ayırma türlerinde veya kullanarak hedeflere kullanılamaz bir raporu göndermek için hata ayıklama raporları filtreleme gibi işlemler gerçekleştirmek için bu işlevi etkinleştirir `_CrtDbgReport`. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetReportHook` ön işleme sırasında kaldırılır.  
   
  Daha güçlü bir sürümü için `_CrtSetReportHook`, bkz: [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md).  
   
@@ -81,7 +85,7 @@ int YourReportHook( int reportType, char *message, int *returnValue );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtSetReportHook`|\<crtdbg.h >|  
+|`_CrtSetReportHook`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

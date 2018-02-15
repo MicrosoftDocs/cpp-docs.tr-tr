@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - nothrownew.obj
 - newmode.obj
@@ -36,21 +38,22 @@ helpviewer_keywords:
 - threadlocale.obj
 - pnoarg.obj
 ms.assetid: 05b5a77b-9dd1-494b-ae46-314598c770bb
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ece67a7c2b50423ea9ff4610e638dcdc2b979e14
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0108ecd9d0b9caaa2df3d450c185d5937a96463
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="link-options"></a>Bağlantı Seçenekleri
 CRT lib dizin, herhangi bir kod değişikliği olmadan belirli CRT özellikleri etkinleştirmek küçük nesne dosyaları sayısını içerir. Bunları kullanmak için bağlayıcı komut satırı eklemek zorunda olduğundan bunlara "bağlantı seçenekleri" denir.  
   
- Saf mod sürümleri var, ancak Visual Studio 2015'te kullanım dışı bırakılmıştır. Normal sürümleri yerel ve/CLR kodunu, (p ile önek) saf sürümleri kullanmanız için/CLR: pure modu. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+ Saf mod sürümleri, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır. Normal sürümleri yerel ve/CLR kodunu kullanın.  
   
 |Yerel ve/CLR|Saf modu|Açıklama|  
 |----------------------|---------------|-----------------|  

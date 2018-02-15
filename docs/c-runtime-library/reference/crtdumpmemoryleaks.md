@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _CrtDumpMemoryLeaks
 apilocation:
@@ -45,11 +45,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 859f1918afc69054b13cab161f2d7b4801bcbd78
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 8f71e37da509d4e8dd05c5a41afa9fe539294347
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtdumpmemoryleaks"></a>_CrtDumpMemoryLeaks
 Bellek sızıntısı (yalnızca hata ayıklama sürümü) oluştuğunda dökümleri tüm bellek hata ayıklama yığınında engeller.  
@@ -62,14 +62,14 @@ int _CrtDumpMemoryLeaks( void );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_CrtDumpMemoryLeaks`bellek sızıntısı bulunursa TRUE değerini döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
+ `_CrtDumpMemoryLeaks` bellek sızıntısı bulunursa TRUE değerini döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_CrtDumpMemoryLeaks` İşlevi bellek sızıntısı program yürütme başladığından bu yana gerçekleşip gerçekleşmediğini belirler. Yığın içindeki tüm nesneler için hata ayıklama üst bilgileri, bir sızıntısı bulunduğunda, kullanıcı tarafından okunabilir bir biçimde edebilir. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtDumpMemoryLeaks` ön işleme sırasında kaldırılır.  
   
- `_CrtDumpMemoryLeaks`sık sık uygulama tarafından ayrılan tüm belleği serbest olduğunu doğrulamak için program yürütme sonunda çağrılır. İşlev otomatik olarak program sonlandırmanın açarak çağrılabilir `_CRTDBG_LEAK_CHECK_DF` bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) kullanarak bayrak [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) işlevi.  
+ `_CrtDumpMemoryLeaks` sık sık uygulama tarafından ayrılan tüm belleği serbest olduğunu doğrulamak için program yürütme sonunda çağrılır. İşlev otomatik olarak program sonlandırmanın açarak çağrılabilir `_CRTDBG_LEAK_CHECK_DF` bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) kullanarak bayrak [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) işlevi.  
   
- `_CrtDumpMemoryLeaks`çağrıları [_CrtMemCheckpoint](../../c-runtime-library/reference/crtmemcheckpoint.md) öbek geçerli durumunu almak için değil serbest blokları durumu tarar. Serbest bırakılmamış blok karşılaşıldığında, `_CrtDumpMemoryLeaks` çağrıları [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md) program yürütme başlangıcı yığınından ayrılan tüm nesneleri için döküm bilgi.  
+ `_CrtDumpMemoryLeaks` çağrıları [_CrtMemCheckpoint](../../c-runtime-library/reference/crtmemcheckpoint.md) öbek geçerli durumunu almak için değil serbest blokları durumu tarar. Serbest bırakılmamış blok karşılaşıldığında, `_CrtDumpMemoryLeaks` çağrıları [_CrtMemDumpAllObjectsSince](../../c-runtime-library/reference/crtmemdumpallobjectssince.md) program yürütme başlangıcı yığınından ayrılan tüm nesneleri için döküm bilgi.  
   
  Varsayılan olarak, iç C çalışma zamanı blokları (`_CRT_BLOCK`) bellek dökümü işlemlerinde dahil edilmez. [_CrtSetDbgFlag](../../c-runtime-library/reference/crtsetdbgflag.md) işlevi,'nı açmak için kullanılabilir `_CRTDBG_CHECK_CRT_DF` , bit `_crtDbgFlag` sızıntısı algılama işleminde bu blokları içerecek şekilde.  
   

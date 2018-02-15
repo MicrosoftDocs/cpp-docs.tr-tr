@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _getmbcp
+ms.topic: reference
+apiname:
+- _getmbcp
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,22 +26,24 @@ apitype: DLLExport
 f1_keywords:
 - _getmbcp
 - getmbcp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - code pages, determining current
 - _getmbcp function
 - getmbcp function
 ms.assetid: 2db202d4-5c3d-4871-a0b8-ceb0b79ee7bb
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 72df20c67db5229cede51aa7c3492984d2ce9c53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5cfb2ee9e84d8a586d14cb95558d7d59967eeecc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getmbcp"></a>_getmbcp
 Geçerli kod sayfası alır.  

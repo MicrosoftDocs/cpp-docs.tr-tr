@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: qsort_s
+ms.topic: reference
+apiname:
+- qsort_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,24 +23,27 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: qsort_s
-dev_langs: C++
+f1_keywords:
+- qsort_s
+dev_langs:
+- C++
 helpviewer_keywords:
 - arrays [C++], sorting
 - quick-sort algorithm
 - qsort_s function
 - sorting arrays
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 333473d0b0b7e50e2b0faebef02835dcaf577440
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 31615609ad233f68b6caa78b85cd5efc0ca2dc71
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="qsorts"></a>qsort_s
 Hızlı sıralama gerçekleştirir. Bir sürümünü [qsort](../../c-runtime-library/reference/qsort.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -72,7 +77,7 @@ void qsort_s(
  Herhangi bir bağlam için bir işaretçi nesne `compare` yordamı erişim gerekir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `qsort_s` İşlevi bir dizi sıralamak için hızlı Sıralama algoritması uygulayan `num` öğeleri, her biri `width` bayt sayısı. Bağımsız değişken `base` sıralanacak dizisinin temel bir işaretçidir. `qsort_s`Bu dizi sıralanmış öğeleriyle üzerine yazar. Bağımsız değişken `compare` iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam bir işaretçidir. `qsort_s`çağrıları `compare` rutin bir veya daha fazla kez işaretçileri iki dizi öğelerinin her çağrıda geçirme sıralama sırasında:  
+ `qsort_s` İşlevi bir dizi sıralamak için hızlı Sıralama algoritması uygulayan `num` öğeleri, her biri `width` bayt sayısı. Bağımsız değişken `base` sıralanacak dizisinin temel bir işaretçidir. `qsort_s` Bu dizi sıralanmış öğeleriyle üzerine yazar. Bağımsız değişken `compare` iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam bir işaretçidir. `qsort_s` çağrıları `compare` rutin bir veya daha fazla kez işaretçileri iki dizi öğelerinin her çağrıda geçirme sıralama sırasında:  
   
 ```  
 compare( context, (void *) & elem1, (void *) & elem2 );  
@@ -82,9 +87,9 @@ compare( context, (void *) & elem1, (void *) & elem2 );
   
 |Dönüş değeri|Açıklama|  
 |------------------|-----------------|  
-|< 0|`elem1`küçüktür`elem2`|  
-|0|`elem1`eşdeğer`elem2`|  
-|> 0|`elem1`büyüktür`elem2`|  
+|< 0|`elem1` Küçüktür `elem2`|  
+|0|`elem1` Eşdeğer `elem2`|  
+|> 0|`elem1` Büyüktür `elem2`|  
   
  Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir dizi sıralamak için "büyüktür" ve "küçüktür" karşılaştırma işlevinde duygusu ters çevrilir.  
   
@@ -99,7 +104,7 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 |tüm|tüm|tüm|tüm|<= 0|`EINVAL`|  
 |tüm|tüm|`NULL`|tüm|tüm|`EINVAL`|  
   
- `qsort_s`aynı davranışı sahiptir `qsort` ancak `context` parametre ve kümelerini `errno`. Geçirerek bir `context` parametresi, karşılaştırma işlevleri bir nesne işaretçisi nesnesi işlevselliği veya diğer bilgileri erişilebilir bir öğesi işaretçisi erişmek için kullanabilirsiniz. Eklenmesi `context` parametreyi yapar `qsort_s` daha güvenli olduğundan `context` paylaşılan bilgileri kullanılabilir hale getirmek için statik değişkenler kullanarak sunulan yeniden giriş hataları önlemek için kullanılan `compare` işlevi.  
+ `qsort_s` aynı davranışı sahiptir `qsort` ancak `context` parametre ve kümelerini `errno`. Geçirerek bir `context` parametresi, karşılaştırma işlevleri bir nesne işaretçisi nesnesi işlevselliği veya diğer bilgileri erişilebilir bir öğesi işaretçisi erişmek için kullanabilirsiniz. Eklenmesi `context` parametreyi yapar `qsort_s` daha güvenli olduğundan `context` paylaşılan bilgileri kullanılabilir hale getirmek için statik değişkenler kullanarak sunulan yeniden giriş hataları önlemek için kullanılan `compare` işlevi.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

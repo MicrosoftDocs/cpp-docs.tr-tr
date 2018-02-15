@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wfreopen_s
 - freopen_s
@@ -27,7 +28,8 @@ f1_keywords:
 - freopen_s
 - _tfreopen_s
 - _wfreopen_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tfreopen_s function
 - _wfreopen_s function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - wfreopen_s function
 - freopen_s function
 ms.assetid: ad25a4da-6ad4-476b-a86d-660b221ca84d
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2276de6c4539dffe4456c18fdeff88f852a44c2f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a62165fee7ed54a7eeadf5f381945936bb441908
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="freopens-wfreopens"></a>freopen_s, _wfreopen_s
 Dosya işaretçisini yeniden atar. Bu sürümleri [freopen, _wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -68,23 +71,23 @@ errno_t _wfreopen(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pFile`  
+ [out] `pFile`  
  Dosya işaretçisini çağrı tarafından sağlanacak bir işaretçi.  
   
- [in]`path`  
+ [in] `path`  
  Yeni dosyanın yolu.  
   
- [in]`mode`  
+ [in] `mode`  
  İzin verilen erişim türü.  
   
- [in]`stream`  
+ [in] `stream`  
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bu işlevlerin her biri bir hata kodu döndürür. Bir hata oluşursa, özgün dosya kapatıldı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `freopen_s` İşlev ile ilişkilendirilmiş dosya kapatır `stream` ve yeniden atar `stream` tarafından belirtilen dosyaya `path.` `_wfreopen_s` bir joker karakter sürümü `_freopen_s`; `path` ve `mode` bağımsız değişkenleri `_wfreopen_s` joker karakter dizelerdir. `_wfreopen_s`ve `_freopen_s` Aksi takdirde aynı şekilde davranır.  
+ `freopen_s` İşlev ile ilişkilendirilmiş dosya kapatır `stream` ve yeniden atar `stream` tarafından belirtilen dosyaya `path.` `_wfreopen_s` bir joker karakter sürümü `_freopen_s`; `path` ve `mode` bağımsız değişkenleri `_wfreopen_s` joker karakter dizelerdir. `_wfreopen_s` ve `_freopen_s` Aksi takdirde aynı şekilde davranır.  
   
  Varsa `pFile`, `path`, `mode`, veya `stream` olan `NULL`, veya `path` boş bir dize açıklandığı gibi bu işlevleri geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   
@@ -94,7 +97,7 @@ errno_t _wfreopen(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tfreopen_s`|`freopen_s`|`freopen_s`|`_wfreopen_s`|  
   
- `freopen_s`genellikle önceden açılan dosyaları yeniden yönlendirmek için kullanılan `stdin`, `stdout`, ve `stderr` kullanıcı tarafından belirtilen dosyaları. İle ilişkili yeni dosya `stream` açılmış `mode`, hangi olduğu gibi dosya için istenen erişim türünü belirten bir karakter dizesini:  
+ `freopen_s` genellikle önceden açılan dosyaları yeniden yönlendirmek için kullanılan `stdin`, `stdout`, ve `stderr` kullanıcı tarafından belirtilen dosyaları. İle ilişkili yeni dosya `stream` açılmış `mode`, hangi olduğu gibi dosya için istenen erişim türünü belirten bir karakter dizesini:  
   
  `"r"`  
  Okuma için açılır. Dosya yok veya bulunamadı, `freopen_s` çağrısı başarısız olur.  
@@ -139,7 +142,7 @@ errno_t _wfreopen(
 |`freopen_s`|\<stdio.h >|  
 |`_wfreopen_s`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="example"></a>Örnek  
   

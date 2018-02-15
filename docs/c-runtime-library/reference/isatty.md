@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _isatty
+ms.topic: reference
+apiname:
+- _isatty
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,24 +23,27 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _isatty
-dev_langs: C++
+f1_keywords:
+- _isatty
+dev_langs:
+- C++
 helpviewer_keywords:
 - isatty function
 - character device checking
 - _isatty function
 - checking character devices
 ms.assetid: 9f1b2e87-0cd7-4079-b187-f2b7ca15fcbe
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4e3c845cf9fc1fec0031ebca94e65ef82445fdff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bea907f22496c3c1abe86462357ba14514a4aca7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isatty"></a>_isatty
 Bir dosya tanımlayıcısı karakter aygıtla ilişkili olup olmadığını belirler.  
@@ -57,7 +62,7 @@ int fd
  Sınanacak cihaza başvuruyor dosya tanımlayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_isatty`tanımlayıcı karakter cihaz ile ilişkili ise, sıfır olmayan bir değer döndürür. Aksi takdirde `_isatty` 0 döndürür.  
+ `_isatty` tanımlayıcı karakter cihaz ile ilişkili ise, sıfır olmayan bir değer döndürür. Aksi takdirde `_isatty` 0 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_isatty` İşlevi belirler olup olmadığını `fd` bir karakter cihaza (bir terminal, konsol, yazıcı veya seri bağlantı noktası).  

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vc.atl.COM
-dev_langs: C++
-helpviewer_keywords: COM modules classes
+ms.topic: reference
+f1_keywords:
+- vc.atl.COM
+dev_langs:
+- C++
+helpviewer_keywords:
+- COM modules classes
 ms.assetid: 0a8a82dd-a153-47cd-9bbe-1a1ad5d1a6ff
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a0ed40f96d64ebda2f9fc04b64e64d1533fb13d0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 68936ee5b916ac519f78761aa5d19fb1e39c6441
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="com-modules-classes"></a>COM modülleri sınıfları
 Aşağıdaki sınıflar bir COM modülü için destek sağlar:  

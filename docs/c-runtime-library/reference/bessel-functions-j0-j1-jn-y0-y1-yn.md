@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _j0
 - _j1
@@ -35,7 +36,8 @@ f1_keywords:
 - _y0
 - _y1
 - _yn
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Bessel functions
 - _j0 function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - _y1 function
 - _yn function
 ms.assetid: a21a8bf1-df9d-4ba0-a8c2-e7ef71921d96
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0d2b866c847055a37e4415b020b3e7e02fdaa5f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a6a31388bdf629ed1a133eaf91f715360b020319
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="bessel-functions-j0-j1-jn-y0-y1-yn"></a>Bessel işlevleri: _j0, _j1, _jn, _y0, _y1, _yn
 Birinci veya ikinci türünü, siparişler Bessel işlevinin hesaplar 0, 1 veya n. Bessel işlevleri elektromanyetik dalga teorik matematik içinde yaygın olarak kullanılır.  
@@ -107,7 +110,7 @@ double _yn(
 |-----------|-------------------|-----------------------|  
 |± `QNAN`,`IND`|`INVALID`|`_DOMAIN`|  
 |± 0|`ZERODIVIDE`|`_SING`|  
-|&#124; x &#124; < 0,0|`INVALID`|`_DOMAIN`|  
+|&#124;x&#124;<0.0|`INVALID`|`_DOMAIN`|  
   
 ## <a name="requirements"></a>Gereksinimler  
   

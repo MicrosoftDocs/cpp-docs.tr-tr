@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::ATL_DRAWINFO
 - ATL_DRAWINFO
 - ATL.ATL_DRAWINFO
-dev_langs: C++
-helpviewer_keywords: ATL_DRAWINFO structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- ATL_DRAWINFO structure
 ms.assetid: dd2e2aa8-e8c5-403b-b4df-35c0f6f57fb7
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 70ea9b2532b8ab63bc9c840e7e08790b3af57342
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f7a10932fd43e89af6d98d3d931d43810c710000
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atldrawinfo-structure"></a>ATL_DRAWINFO yapısı
 Yazıcı, meta dosyası veya ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.  
@@ -55,7 +59,7 @@ struct ATL_DRAWINFO {
  **dwDrawAspect**  
  Nasıl hedef gösterilemeyecek kadar belirtir. Beyanları içeriği, bir simge, bir küçük resim veya yazdırılan bir belge ekleyebilirsiniz. Olası değerler listesi için bkz: [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) ve [DVASPECT2](http://msdn.microsoft.com/library/windows/desktop/ms688644).  
   
- **Dizin**  
+ **lindex**  
  Çizim işlemi için ilgi hedef bölümü. Kendi yorumlama değeri bağlı olarak değişir **dwDrawAspect** üyesi.  
   
  **ptd**  

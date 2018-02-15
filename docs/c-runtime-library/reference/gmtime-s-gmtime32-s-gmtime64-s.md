@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _gmtime32_s
 - gmtime_s
@@ -31,7 +32,8 @@ f1_keywords:
 - _gmtime64_s
 - gmtime_s
 - _gmtime32_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - gmtime_s function
 - gmtime32_s function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f0d0fc911c052e58b1f2aeb9b656f737746bd2de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 92a840d608a892a117b6552e0b81c8dd3b6fcdb0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="gmtimes-gmtime32s-gmtime64s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 Bir saat değeri bir yapısına dönüştürür. Sürümleri bunlar [_gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -81,15 +84,15 @@ errno_t _gmtime64_s(
  Saklı zaman işaretçi. Gece yarısından beri geçen saat saniye olarak zaman gösterilir (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanan; Bu hataların listesi için bkz: [errno](../../c-runtime-library/errno-constants.md).  
+ Zero if successful. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanan; Bu hataların listesi için bkz: [errno](../../c-runtime-library/errno-constants.md).  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`_tm`|`time`|Döndür|Değer`_tm`|  
+|`_tm`|`time`|Döndür|Değer `_tm`|  
 |-----------|------------|------------|--------------------|  
 |`NULL`|tüm|`EINVAL`|Değiştirilmedi.|  
 |Değil `NULL` (noktaları için geçerli bellek)|`NULL`|`EINVAL`|Tüm alanları -1 olarak ayarlayın.|  
-|değil`NULL`|< 0|`EINVAL`|Tüm alanları -1 olarak ayarlayın.|  
+|değil `NULL`|< 0|`EINVAL`|Tüm alanları -1 olarak ayarlayın.|  
   
  İlk iki hata koşulları söz konusu olduğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   
@@ -130,7 +133,7 @@ errno_t _gmtime64_s(
   
  `_gmtime64_s`, kullanan `__time64_t` yapısı, 23:59:59, 31 Aralık 3000 UTC; yukarı ifade tarihleri sağlarken `gmtime32_s` yalnızca ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısından, 1 Ocak 1970'ten, hem bu işlevler için tarih aralığını alt sınırdır.  
   
- `gmtime_s`için değerlendiren bir satır içi işlev `_gmtime64_s` ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `gmtime_s` içinde-çizgili için olacak şekilde `_gmtime32_s`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
+ `gmtime_s` için değerlendiren bir satır içi işlev `_gmtime64_s` ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `gmtime_s` içinde-çizgili için olacak şekilde `_gmtime32_s`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -189,7 +192,7 @@ Coordinated universal time is Fri Apr 25 20:12:33 2003
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   

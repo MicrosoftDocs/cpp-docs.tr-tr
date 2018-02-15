@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 4653d1bd-300f-4083-86f5-d1a06f44e61c
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a46c2fa9ce553948c03cd2ab6ad20001d0021bed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c6b83039a054e19e62cbbe87befbe08dd7997e51
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="choosing-the-format-of-netmodule-input-files"></a>.netmodule Giriş Dosyaları Biçimini Seçme
 MSIL .obj dosya (ile derlenmiş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md)) .netmodule dosyası olarak da kullanılabilir.  .obj dosyaları meta verileri ve yerel simgeler içermelidir.  .netmodules yalnızca meta verileri içerir.  
@@ -26,7 +29,7 @@ MSIL .obj dosya (ile derlenmiş [/CLR](../../build/reference/clr-common-language
  MSIL .obj dosya için diğer Visual Studio derleyici/addmodule derleyici seçeneği geçirin (ancak edebilirsiniz .obj dosya elde edilen derlemeyi parçası haline gelir ve derleme sevk unutmayın).  Örneğin, Visual C# ve Visual Basic/addmodule derleyici seçeneği vardır.  
   
 > [!NOTE]
->  Çoğu durumda, bağlayıcıya .obj dosya .net modülünde oluşturulan derlemeden geçmesi gerekir.  Bunun tek istisnası .netmodule ile oluşturulmuşsa, [/CLR: pure](../../build/reference/clr-common-language-runtime-compilation.md).  Bir .dll veya .netmodule MSIL modülü dosyası bağlayıcıya geçirme içinde LNK1107 neden olabilir.  
+>  Çoğu durumda, bağlayıcıya .obj dosya .net modülünde oluşturulan derlemeden geçmesi gerekir.  Bir .dll veya .netmodule MSIL modülü dosyası bağlayıcıya geçirme içinde LNK1107 neden olabilir.  
   
  aracılığıyla başvuru bunların ilişkili .h dosyaları birlikte .obj dosyaları #include, .netmodule dosyasında yalnızca yönetilen türler bir C++ uygulaması tarafından kullanılabilecek ancak modülü içindeki yerel türler kullanmak C++ uygulamaları izin verin.  .Obj dosyasına geçirmeye çalışırsanız #using yerel türler hakkında bilgi; kullanılamaz # .obj dosyanın .h dosyası yerine include.  
   
@@ -41,8 +44,6 @@ MSIL .obj dosya (ile derlenmiş [/CLR](../../build/reference/clr-common-language
 -   Modüllerinizi yerel (olmayan bir yönetilen) kitaplığı oluşturmak için kullanılan, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .lib kitaplık dosyası oluşturur.  
   
 -   Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için tüm modül girişi (/ CLR: safe ile üretilen) doğrulanabilir olacaksa, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .dll (derleme) veya .netmodule (modül) kitaplık dosyası oluşturun.  
-  
--   Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için tüm modül girişi ile üretilen **/CLR: pure** veya **/CLR: safe**, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .dll (Oluştur derleme) veya .netmodule (yalnızca yönetilen tür kitaplığından kullanıma sunmak istiyorsanız Modülü). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. Kitaplığı'ndan yönetilen türler ve ayrıca yerel türler Kitaplığı'nda kullanmak için C++ uygulamaları istiyorsanız kullanıma sunmak istiyorsanız, kitaplık (aynı zamanda her modül için .h dosyaları sevk etmek istediğiniz kitaplıkları bileşen modülleri .obj dosyaları oluşur ile başvurulabilir şekilde # kaynak kodundan include).  
   
 -   Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için bir veya daha fazla modülleri giriş yalnızca/CLR ile üretilecek, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .dll (derleme) oluşturur.  Kitaplığı'ndan yönetilen türler ve ayrıca yerel türler Kitaplığı'nda kullanmak için C++ uygulamaları istiyorsanız kullanıma sunmak istiyorsanız, kitaplık (aynı zamanda her modül için .h dosyaları sevk etmek istediğiniz kitaplıkları bileşen modülleri .obj dosyaları oluşur ile başvurulabilir şekilde # kaynak kodundan include).  
   

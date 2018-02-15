@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: collection classes
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8a0c710629b69ffe690767d2d2948ce73631344d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 840a9132991942dac9f083796c1a56e80654cb6e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="collection-classes"></a>Koleksiyon Sınıfları
 Aşağıdaki sınıflar diziler, listeler, maps ve ayrıca karşılaştırmaları ve öğesi erişim yardımcı olmak için nitelikler yöntemleri için destek sağlar.  

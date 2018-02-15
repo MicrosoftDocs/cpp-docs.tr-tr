@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: SEGMENT
-dev_langs: C++
-helpviewer_keywords: SEGMENT directive
+ms.topic: reference
+f1_keywords:
+- SEGMENT
+dev_langs:
+- C++
+helpviewer_keywords:
+- SEGMENT directive
 ms.assetid: e6f68367-6714-4f06-a79c-edfa88014430
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ce18933c27a62b1a89551320f75df7e25a67ef03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 253c3b389bd0411e6b5096e914b6a844c8f40805
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="segment"></a>SEGMENT
 Adlı bir programı segmenti tanımlar *adı* segment özniteliklere sahip  
@@ -35,7 +40,7 @@ name ENDS
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Hizalama*  
+ *align*  
  Başlangıç adresi segmenti için seçilebilir bellek adresi aralığı. Hizalama türü aşağıdakilerden herhangi biri olabilir:  
   
 |Türü hizalayın|Başlangıç adresi|  
@@ -45,14 +50,14 @@ name ENDS
 |**DWORD**|Sonraki kullanılabilir çift word adresi (çift sözcük başına 4 bayt).|  
 |**PARA**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|  
 |**PAGE**|Sonraki kullanılabilir sayfa adresi (sayfa başına 256 bayt).|  
-|**HİZALAMA**(*n*)|Sonraki kullanılabilir  *n* th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
+|**ALIGN**(*n*)|Sonraki kullanılabilir  *n* th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
   
  Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.  
   
- *Birleştirme*  
- **Ortak**, **yığın**, **ortak**, **bellek**, **ADRESİNDEKİ***adresi*, **Özel**  
+ *combine*  
+ **Ortak**, **yığın**, **ortak**, **bellek**, **ADRESİNDEKİ *** adresi*, **özel**  
   
- *kullanın*  
+ *Kullanın*  
  **USE16**, **USE32**, **DÜZ**  
   
  `characteristics`  
@@ -66,7 +71,7 @@ name ENDS
  İle desteklenmez **/OMF**.  
   
  `class`  
- Nasıl kesimleri birleştirilmiş ve gerekir birleştirilmiş dosyasında sıralı belirler. Tipik değerlerdir, `'DATA'`, `'CODE'`, `'CONST'` ve`'STACK'`  
+ Nasıl kesimleri birleştirilmiş ve gerekir birleştirilmiş dosyasında sıralı belirler. Tipik değerlerdir, `'DATA'`, `'CODE'`, `'CONST'` ve `'STACK'`  
   
 ## <a name="remarks"></a>Açıklamalar  
  İçin `ALIGN(n)`, `n` 8192 1'den 2'in herhangi bir güç olabilir; desteklenmiyor **/OMF**.  

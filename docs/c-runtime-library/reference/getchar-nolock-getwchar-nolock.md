@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _getchar_nolock
 - _getwchar_nolock
@@ -27,7 +28,8 @@ f1_keywords:
 - _getwchar_nolock
 - _getchar_nolock
 - getchar_nolock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _getwchar_nolock function
 - getwchar_nolock function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - getchar_nolock function
 - standard input, reading from
 ms.assetid: dc49ba60-0647-4ae9-aa9a-a0618b1666de
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 08b6187c51d46f577c97405c36654de4181fcb87
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2cd21e89d9a58f329c626a110f9c10728fc057b7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getcharnolock-getwcharnolock"></a>_getchar_nolock, _getwchar_nolock
 Bir karakter standart girişten okur.  
@@ -61,7 +64,7 @@ wint_t _getwchar_nolock( void );
  Bkz: [getchar, getwchar](../../c-runtime-library/reference/getchar-getwchar.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_getchar_nolock`ve `_getwchar_nolock` özdeş `getchar` ve `getwchar` dışında diğer iş parçacıkları tarafından girişime korunmaz. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
+ `_getchar_nolock` ve `_getwchar_nolock` özdeş `getchar` ve `getwchar` dışında diğer iş parçacıkları tarafından girişime korunmaz. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -76,7 +79,7 @@ wint_t _getwchar_nolock( void );
 |`_getchar_nolock`|\<stdio.h >|  
 |`_getwchar_nolock`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="example"></a>Örnek  
   

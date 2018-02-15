@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,19 +24,22 @@ f1_keywords:
 - And
 - std.and
 - std::and
-dev_langs: C++
-helpviewer_keywords: and macro
+dev_langs:
+- C++
+helpviewer_keywords:
+- and macro
 ms.assetid: 2644ab57-8e1b-48f0-9021-cafe3e26bdc4
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1d28d0258584eab48aeaa77eaa78fe7640cb3300
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3984925cbb40daecb66fb964e884197a7fb0f8c9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="and"></a>and
 Alternatif & & işleci.  

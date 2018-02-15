@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtSetBreakAlloc
+ms.topic: reference
+apiname:
+- _CrtSetBreakAlloc
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtSetBreakAlloc
 - _CrtSetBreakAlloc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtSetBreakAlloc function
 - _CrtSetBreakAlloc function
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 70262673935e67fc6ee868a400fd57358a31547a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed018b75c9feb7b06cf572d9e60d0a92248b6e47
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetbreakalloc"></a>_CrtSetBreakAlloc
 Belirtilen nesnenin ayırma sipariş numarası (yalnızca hata ayıklama sürümü) üzerinde bir kesme noktası ayarlar.  
@@ -59,7 +63,7 @@ Belirtilen nesnenin ayırma sipariş numarası (yalnızca hata ayıklama sürüm
  Bir kesme vardı önceki nesne ayırma sıra numarasını döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtSetBreakAlloc`bellek ayırma, belirli bir noktada kesme ve isteğin başlangıç noktasının geri izleme tarafından bellek sızıntısı algılama gerçekleştirmek bir uygulama sağlar. İşlev yığınında ayrılmış olan bellek bloğu atanan sıralı nesne ayırma sipariş numarası kullanır. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetBreakAlloc` ön işleme sırasında kaldırılır.  
+ `_CrtSetBreakAlloc` bellek ayırma, belirli bir noktada kesme ve isteğin başlangıç noktasının geri izleme tarafından bellek sızıntısı algılama gerçekleştirmek bir uygulama sağlar. İşlev yığınında ayrılmış olan bellek bloğu atanan sıralı nesne ayırma sipariş numarası kullanır. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetBreakAlloc` ön işleme sırasında kaldırılır.  
   
  Nesne ayırma sipariş numarası depolanan *lRequest* alanını **_CrtMemBlockHeader** Crtdbg.h içinde tanımlanan yapısı. Bir bellek bloğu hakkında bilgi hata ayıklama dökümü işlevleri biri tarafından bildirildiğinde, bu sayı {36} gibi köşeli parantez içine alınır.  
   
@@ -69,7 +73,7 @@ Belirtilen nesnenin ayırma sipariş numarası (yalnızca hata ayıklama sürüm
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtSetBreakAlloc`|\<crtdbg.h >|  
+|`_CrtSetBreakAlloc`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

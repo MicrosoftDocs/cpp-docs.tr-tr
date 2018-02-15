@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _control87
 - _controlfp
@@ -32,7 +33,8 @@ f1_keywords:
 - controlfp
 - control87_2
 - _control87_2
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - floating-point numbers, control word
 - _control87 function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - EM_AMBIGUOUS
 - control87_2 function
 ms.assetid: 0d09729d-d9a0-43d6-864c-43ff25e7e0c5
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c4c6188917737e46807979d5f4a7fec350cb3e1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d2405b569c7e7accb828ba7052a9ea9fae125f0a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="control87-controlfp-control872"></a>_control87, _controlfp, __control87_2
 Alır ve kayan nokta denetim sözcüğü ayarlar. Daha güvenli bir sürümünü `_controlfp` kullanılabilir; bkz [_controlfp_s](../../c-runtime-library/reference/controlfp-s.md).  
@@ -102,9 +105,9 @@ int __control87_2(
 > [!NOTE]
 >  Varsayılan olarak, çalışma zamanı kitaplıkları tüm kayan nokta özel durumları maske.  
   
- `_controlfp`Bir platformdan bağımsız, taşınabilir sürümü `_control87`. Neredeyse aynıdır `_control87` işlevi Intel (x86), [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]ve ARM platformlar. X86, hedefliyorsanız [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], veya ARM platformları, kullanım `_control87` veya `_controlfp`.  
+ `_controlfp` Bir platformdan bağımsız, taşınabilir sürümü `_control87`. Neredeyse aynıdır `_control87` işlevi Intel (x86), [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]ve ARM platformlar. X86, hedefliyorsanız [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)], veya ARM platformları, kullanım `_control87` veya `_controlfp`.  
   
- Arasındaki farkı `_control87` ve `_controlfp` bunlar DENORMAL değerleri nasıl işler içinde değil. Intel (x86), için [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]ve ARM platformları `_control87` ayarlayabilir ve normal dışı işlenen özel durum maskesi temizleyin. `_controlfp`normal dışı işlenen özel durum maskesi değiştirmez. Bu örnekte fark gösterilmektedir:  
+ Arasındaki farkı `_control87` ve `_controlfp` bunlar DENORMAL değerleri nasıl işler içinde değil. Intel (x86), için [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)]ve ARM platformları `_control87` ayarlayabilir ve normal dışı işlenen özel durum maskesi temizleyin. `_controlfp` normal dışı işlenen özel durum maskesi değiştirmez. Bu örnekte fark gösterilmektedir:  
   
 ```  
 _control87( _EM_INVALID, _MCW_EM );   
@@ -131,7 +134,7 @@ _controlfp(_DN_FLUSH, _MCW_DN);
  ARM üzerinde ve [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimariler, sonsuzluk modu veya kayan nokta duyarlık değiştirme desteklenmez. Duyarlık denetimi maske üzerinde kullanılıyorsa [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platform, işlevi bir onaylama işlemi başlatır ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   
 > [!NOTE]
->  `__control87_2`ARM üzerinde desteklenmiyor veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimarileri. Kullanırsanız `__control87_2` ve programınızı ARM için derleme veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimarileri derleyici hata oluşturur.  
+>  `__control87_2` ARM üzerinde desteklenmiyor veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimarileri. Kullanırsanız `__control87_2` ve programınızı ARM için derleme veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] mimarileri derleyici hata oluşturur.  
   
  Kullandığınızda bu işlevler göz ardı edilir [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ortak dil çalışma zamanı (CLR) yalnızca varsayılan kayan nokta duyarlık desteklediğinden derlemek için.  
   
@@ -141,11 +144,11 @@ _controlfp(_DN_FLUSH, _MCW_DN);
   
 |Maskesi|Onaltılık değer|Sabit|Onaltılık değer|  
 |----------|---------------|--------------|---------------|  
-|`_MCW_DN`(Denetim normal dışı)|0x03000000|`_DN_SAVE`<br /><br /> `_DN_FLUSH`|0x00000000<br /><br /> 0x01000000|  
-|`_MCW_EM`(Özel durum maskesi kesme)|0x0008001F|`_EM_INVALID`<br /><br /> `_EM_DENORMAL`<br /><br /> `_EM_ZERODIVIDE`<br /><br /> `_EM_OVERFLOW`<br /><br /> `_EM_UNDERFLOW`<br /><br /> `_EM_INEXACT`|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|  
-|`_MCW_IC`(Sonsuz denetimi)<br /><br /> (ARM üzerinde desteklenmez veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platformları.)|0x00040000|`_IC_AFFINE`<br /><br /> `_IC_PROJECTIVE`|0x00040000<br /><br /> 0x00000000|  
-|`_MCW_RC`(Yuvarlama denetimi)|0x00000300|`_RC_CHOP`<br /><br /> `_RC_UP`<br /><br /> `_RC_DOWN`<br /><br /> `_RC_NEAR`|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|  
-|`_MCW_PC`(Precision denetimi)<br /><br /> (ARM üzerinde desteklenmez veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platformları.)|0x00030000|`_PC_24`(24 bit)<br /><br /> `_PC_53`(53 BITS)<br /><br /> `_PC_64`(64 bit)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|  
+|`_MCW_DN` (Denetim normal dışı)|0x03000000|`_DN_SAVE`<br /><br /> `_DN_FLUSH`|0x00000000<br /><br /> 0x01000000|  
+|`_MCW_EM` (Özel durum maskesi kesme)|0x0008001F|`_EM_INVALID`<br /><br /> `_EM_DENORMAL`<br /><br /> `_EM_ZERODIVIDE`<br /><br /> `_EM_OVERFLOW`<br /><br /> `_EM_UNDERFLOW`<br /><br /> `_EM_INEXACT`|0x00000010<br /><br /> 0x00080000<br /><br /> 0x00000008<br /><br /> 0x00000004<br /><br /> 0x00000002<br /><br /> 0x00000001|  
+|`_MCW_IC` (Sonsuz denetimi)<br /><br /> (ARM üzerinde desteklenmez veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platformları.)|0x00040000|`_IC_AFFINE`<br /><br /> `_IC_PROJECTIVE`|0x00040000<br /><br /> 0x00000000|  
+|`_MCW_RC` (Yuvarlama denetimi)|0x00000300|`_RC_CHOP`<br /><br /> `_RC_UP`<br /><br /> `_RC_DOWN`<br /><br /> `_RC_NEAR`|0x00000300<br /><br /> 0x00000200<br /><br /> 0x00000100<br /><br /> 0x00000000|  
+|`_MCW_PC` (Precision denetimi)<br /><br /> (ARM üzerinde desteklenmez veya [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] platformları.)|0x00030000|`_PC_24` (24 bit)<br /><br /> `_PC_53` (53 BITS)<br /><br /> `_PC_64` (64 bit)|0x00020000<br /><br /> 0x00010000<br /><br /> 0x00000000|  
   
 ## <a name="requirements"></a>Gereksinimler  
   

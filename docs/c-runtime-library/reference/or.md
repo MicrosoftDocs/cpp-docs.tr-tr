@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,19 +24,22 @@ f1_keywords:
 - std::or
 - std.or
 - Or
-dev_langs: C++
-helpviewer_keywords: or function
+dev_langs:
+- C++
+helpviewer_keywords:
+- or function
 ms.assetid: 6523b3ac-0a18-44ec-9e9a-b9bab8525ead
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6746cb23ef48fb0ac8bf3c5c87770c9df7522dbb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 92b1121ab8e8d5f665cea346143abbc26e0db31d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="or"></a>veya
 Alternatif &#124; &#124; işleç.  

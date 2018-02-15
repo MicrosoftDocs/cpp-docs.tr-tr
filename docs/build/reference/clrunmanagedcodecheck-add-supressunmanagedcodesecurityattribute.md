@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: /CLRUNMANAGEDCODECHECK
-dev_langs: C++
+f1_keywords:
+- /CLRUNMANAGEDCODECHECK
+dev_langs:
+- C++
 helpviewer_keywords:
 - -CLRUNMANAGEDCODECHECK linker option
 - /CLRUNMANAGEDCODECHECK linker option
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b0ac6b7c2c0ba9ea14a2ddd9c227143ec71e2b93
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f32ae791ebb09d3d2cfced48c42f982580e69b63
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (SupressUnmanagedCodeSecurityAttribute Ekleme)
 **/ CLRUNMANAGEDCODECHECK** bağlayıcı uygulanıp uygulanmayacağını belirtir <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> bağlayıcı-oluşturulan `PInvoke` Yerel DLL'leri yönetilen koddan çağrılar.  
@@ -36,7 +40,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="remarks"></a>Açıklamalar  
  Bağlayıcı tarafından oluşturulan varsayılan olarak, bağlayıcı SuppressUnmanagedCodeSecurityAttribute uygular `PInvoke` çağrıları. Zaman **/CLRUNMANAGEDCODECHECK** , SuppressUnmanagedCodeSecurityAttribute uygulanmamış etkindir.  
   
- Bağlayıcı yalnızca ile derlenmiş nesneleri bir öznitelik ekler. **/CLR** veya **/CLR: pure**. Bağlayıcı oluşturmayacak `PInvoke` ile derlenmiş nesnelerde çağırır **/CLR: safe**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+ Bağlayıcı yalnızca ile derlenmiş nesneleri bir öznitelik ekler. **/CLR** veya **/CLR: pure**. Ancak, **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı bırakılmış ve derleyici gelecek bir sürümünde kaldırılacak.  
   
  A `PInvoke` çağrısı, bağlayıcı tarafından üretilir, bağlayıcı yönetilen çağıran bir başvuru karşılamak için yönetilen bir simge bulunamıyor ancak bu başvuruyu karşılamak için yerel bir simge bulabilirsiniz. Hakkında daha fazla bilgi için `PInvoke`, bkz: [yönetilen koddan yerel işlevleri çağırma](../../dotnet/calling-native-functions-from-managed-code.md).  
   

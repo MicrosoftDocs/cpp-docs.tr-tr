@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vc.atl.Iunknown
-dev_langs: C++
-helpviewer_keywords: IUnknown implementation classes
+ms.topic: reference
+f1_keywords:
+- vc.atl.Iunknown
+dev_langs:
+- C++
+helpviewer_keywords:
+- IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 34c0b46d8a7d89ca46dc4361fe85469bd64e538c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 53d5363f6b11904e31ea0e9c6f452b2c8fa7e000
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="iunknown-implementation-classes"></a>IUnknown uygulaması sınıfları
 Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:  
@@ -39,7 +44,7 @@ Aşağıdaki sınıflar uygulama **IUnknown** ve ilgili yöntemler:
   
 -   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygulayan **IUnknown** etiketleri arabirimi için.  
   
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygulayan **IUnknown** "önbelleğe alınan" etiketleri arabirimi için.  
+-   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) Implements **IUnknown** for a "cached" tear-off interface.  
   
 -   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygulayan **IUnknown** iç nesne bir toplama veya etiketleri arabirimi.  
   

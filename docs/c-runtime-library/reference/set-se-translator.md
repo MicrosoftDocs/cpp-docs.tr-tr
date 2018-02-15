@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _set_se_translator
+ms.topic: reference
+apiname:
+- _set_se_translator
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - _set_se_translator
 - set_se_translator
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - set_se_translator function
 - exception handling, changing
 - _set_se_translator function
 ms.assetid: 280842bc-d72a-468b-a565-2d3db893ae0f
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f7ce46b8db587337b7a9c98279efd4b89ffa8f9f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 35ceedca9d26b92d96a3796a3deadee5e62f7f02
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setsetranslator"></a>_set_se_translator
 Tanıtıcıları Win32 özel durumlar (C yapılandırılmış özel durum) olarak C++ özel durum belirtilmiş.  
@@ -67,7 +71,7 @@ _se_translator_function _set_se_translator(
   
  Çevirici işlevi C++ throw daha fazla yapmalısınız belirtilmiş özel durum. (Bir günlük dosyasına örneğin yazmak gibi) atma yanı sıra herhangi bir şey varsa Çeviricisi işlev çağrıldığında sayısı platforma bağımlı olduğu için program beklendiği gibi davranabilir değil.  
   
- Birden çok iş parçacıklı bir ortamda Çeviricisi işlevleri her iş parçacığı için ayrı ayrı tutulur. Her yeni bir iş parçacığı kendi Çeviricisi işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi çeviri işleme sorumlu olduğu. `_set_se_translator`bir iş parçacığına özgü; başka bir DLL farklı çeviri işlev yükleyebilir.  
+ Birden çok iş parçacıklı bir ortamda Çeviricisi işlevleri her iş parçacığı için ayrı ayrı tutulur. Her yeni bir iş parçacığı kendi Çeviricisi işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi çeviri işleme sorumlu olduğu. `_set_se_translator` bir iş parçacığına özgü; başka bir DLL farklı çeviri işlev yükleyebilir.  
   
  `seTransFunction` Yazdığınız işlevi (/ CLR ile derlenmemiş) yerel koda derlenmiş bir işlev olmalıdır. Bunu bir işaretsiz tamsayı ve bir işaretçi bir Win32 almalıdır `_EXCEPTION_POINTERS` bağımsız değişken olarak yapısı. Win32 API çağrıları dönüş değerleri değişkenleridir `GetExceptionCode` ve `GetExceptionInformation` işlevleri, sırasıyla.  
   
@@ -207,5 +211,5 @@ Caught CMyException.
  [Özel durum işleme rutinleri](../../c-runtime-library/exception-handling-routines.md)   
  [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   
  [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)   
- [sonlandırma](../../c-runtime-library/reference/terminate-crt.md)   
- [beklenmeyen](../../c-runtime-library/reference/unexpected-crt.md)
+ [Sonlandırma](../../c-runtime-library/reference/terminate-crt.md)   
+ [unexpected](../../c-runtime-library/reference/unexpected-crt.md)

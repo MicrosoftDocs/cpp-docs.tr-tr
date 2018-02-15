@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbbtype
 - _mbbtype_l
@@ -28,29 +29,31 @@ f1_keywords:
 - mbbtype
 - mbbtype_l
 - _mbbtype
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _mbbtype function
 - _mbbtype_l function
 - mbbtype function
 - mbbtype_l function
 ms.assetid: b8e34b40-842a-4298-aa39-0bd2d8e51c2a
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ae66b1c0765f496dcfe460c4ea7ff4f84e9333ff
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: beaa8e11b8593205dd192547097e6f7228625410
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbbtype-mbbtypel"></a>_mbbtype, _mbbtype_l
 Önceki bayt üzerinde temel byte türü döndürür.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -77,9 +80,9 @@ int _mbbtype_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mbbtype`byte türü bir dize döndürür. Bu değeri tarafından belirtilen bağlama duyarlı bir karardır `type`, Denetim test durumu sağlar. `type`Önceki bayt dizesindeki türüdür. Aşağıdaki tabloda bildirim sabitleri Mbctype.h içinde tanımlanmıştır.  
+ `_mbbtype` byte türü bir dize döndürür. Bu değeri tarafından belirtilen bağlama duyarlı bir karardır `type`, Denetim test durumu sağlar. `type` Önceki bayt dizesindeki türüdür. Aşağıdaki tabloda bildirim sabitleri Mbctype.h içinde tanımlanmıştır.  
   
-|Değeri`type`|`_mbbtype`testler için|Dönüş değeri|`c`|  
+|Değeri `type`|`_mbbtype` testler için|Dönüş değeri|`c`|  
 |---------------------|--------------------------|------------------|---------|  
 |1 dışındaki herhangi bir değer|Geçerli bir tek bayt veya baytı|`_MBC_SINGLE` (0)|Tek bayt (0x20 - 0x7E, 0xA1 - 0xDF)|  
 |1 dışındaki herhangi bir değer|Geçerli bir tek bayt veya baytı|`_MBC_LEAD` (1)|Birden çok baytlı karakter baytını sağlama (0x81 - 0x9F, 0xE0 - 0xFC)|  
@@ -101,7 +104,7 @@ int _mbbtype_l(
 |`_mbbtype`|\<Mbstring.h >|\<Mbctype.h > *|  
 |`_mbbtype_l`|\<Mbstring.h >|\<Mbctype.h > *|  
   
- \*Bildirim sabitleri tanımlarında, dönüş değeri olarak kullanılır.  
+ \* Bildirim sabitleri tanımlarında, dönüş değeri olarak kullanılır.  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _dupenv_s
 - _wdupenv_s
@@ -30,7 +31,8 @@ f1_keywords:
 - dupenv_s
 - _tdupenv_s
 - _wdupenv_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _dupenv_s function
 - _tdupenv_s function
@@ -40,22 +42,23 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5e17ff0c468f3b99a1c97114c93ea64ecfa9499e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2ec5e7b80d7d3ff2c7f67ec66e4e3e454ea3f5aa
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="dupenvs-wdupenvs"></a>_dupenv_s, _wdupenv_s
 Geçerli ortamından bir değer alır.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -99,11 +102,11 @@ errno_t _wdupenv_s(
   
  Arabellek boyutu değil ilgileniyorsanız geçirebilirsiniz `NULL` için `numberOfElements`.  
   
- `_dupenv_s`Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `_dupenv_s`genel değişkeni tarafından işaret ortam kopyasını kullanan `_environ` ortama erişmek için. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) bir irdelemesi `_environ`.  
+ `_dupenv_s` Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `_dupenv_s` genel değişkeni tarafından işaret ortam kopyasını kullanan `_environ` ortama erişmek için. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) bir irdelemesi `_environ`.  
   
  Değer `buffer` ortam değişkeninin değeri; bir kopyası değiştirmeye ortam üzerinde hiçbir etkisi vardır. Kullanım [_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md) bir ortam değişkeninin değerini değiştirmek için işlevi.  
   
- `_wdupenv_s`bir joker karakter sürümü `_dupenv_s`; bağımsız değişkenleri `_wdupenv_s` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) hakkında daha fazla bilgi için `_wenviron`.  
+ `_wdupenv_s` bir joker karakter sürümü `_dupenv_s`; bağımsız değişkenleri `_wdupenv_s` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) hakkında daha fazla bilgi için `_wenviron`.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -115,7 +118,7 @@ errno_t _wdupenv_s(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_dupenv_s`|\<stdlib.h >|  
+|`_dupenv_s`|\<stdlib.h>|  
 |`_wdupenv_s`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

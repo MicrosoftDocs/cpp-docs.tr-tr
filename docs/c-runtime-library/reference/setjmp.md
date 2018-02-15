@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: setjmp
+ms.topic: reference
+apiname:
+- setjmp
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,23 +22,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: setjmp
-dev_langs: C++
+f1_keywords:
+- setjmp
+dev_langs:
+- C++
 helpviewer_keywords:
 - programs [C++], saving states
 - current state
 - setjmp function
 ms.assetid: 684a8b27-e8eb-455b-b4a8-733ca1cbd7d2
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 845c4eaac5c9aa0c4878016061eb07e6740f12f7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ef5c4b0e026090718fc02dd109a1fccb91152010
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setjmp"></a>setjmp
 Program geçerli durumunu kaydeder.  
@@ -71,7 +76,7 @@ int setjmp(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`setjmp`|\<setjmp.h'ı >|  
+|`setjmp`|\<setjmp.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

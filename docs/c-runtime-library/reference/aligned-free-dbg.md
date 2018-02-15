@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _aligned_free_dbg
+ms.topic: reference
+apiname:
+- _aligned_free_dbg
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - _aligned_free_dbg
 - aligned_free_dbg
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _aligned_free_dbg function
 - aligned_free_dbg function
 ms.assetid: eb0cb3c8-0992-4db8-bac3-65f1b8311ca6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9ea0dd62e2b76bef5e55fb152eecfc4c12d01fdf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b6eb10bd52593f3ec2f1ca7c30fa31c7d3ce9058
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="alignedfreedbg"></a>_aligned_free_dbg
 İle ayrılmış bellek bloğu boşaltır [_aligned_malloc](../../c-runtime-library/reference/aligned-malloc.md) veya [_aligned_offset_malloc](../../c-runtime-library/reference/aligned-offset-malloc.md) (yalnızca hata ayıklama).  
@@ -57,7 +61,7 @@ void _aligned_free_dbg(
 ## <a name="remarks"></a>Açıklamalar  
  `_aligned_free_dbg` İşlevidir bir hata ayıklama sürümü [_aligned_free](../../c-runtime-library/reference/aligned-free.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_aligned_free_dbg` yapılan bir çağrı için sınırlı `_aligned_free`. Her ikisi de `_aligned_free` ve `_aligned_free_dbg` bir bellek bloğu temel yığınındaki serbest ancak `_aligned_free_dbg` hata ayıklama özelliği düzenler: yetersiz bellek koşulları benzetimini yapmak için yığın 's bağlantılı listesinde boşaltılmış tutmak yeteneğini engeller.  
   
- `_aligned_free_dbg`Ücretsiz işlemi gerçekleştirmeden önce tüm belirtilen dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama bu bilgileri sağlamak için beklenmiyor. Bir bellek bloğu boşaltıldığında, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün her iki tarafında arabellekleri bütünlüğünü denetler ve üzerine oluştu, hata raporu verir. Varsa `_CRTDBG_DELAY_FREE_MEM_DF` bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlanmış, boşaltılmış blok atanan değer ile 0xDD, girilir `_FREE_BLOCK` engelleme türü ve Öbek 's bağlı bellek blokları listesinde tutulur.  
+ `_aligned_free_dbg` Ücretsiz işlemi gerçekleştirmeden önce tüm belirtilen dosyaları ve blok konumları üzerinde bir geçerlilik denetimi gerçekleştirir. Uygulama bu bilgileri sağlamak için beklenmiyor. Bir bellek bloğu boşaltıldığında, hata ayıklama yığını Yöneticisi otomatik olarak kullanıcı bölümünün her iki tarafında arabellekleri bütünlüğünü denetler ve üzerine oluştu, hata raporu verir. Varsa `_CRTDBG_DELAY_FREE_MEM_DF` bit alanı [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) bayrağı ayarlanmış, boşaltılmış blok atanan değer ile 0xDD, girilir `_FREE_BLOCK` engelleme türü ve Öbek 's bağlı bellek blokları listesinde tutulur.  
   
  Bellek boşaltma içinde bir hata meydana gelirse `errno` bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -67,7 +71,7 @@ void _aligned_free_dbg(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_aligned_free_dbg`|\<crtdbg.h >|  
+|`_aligned_free_dbg`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

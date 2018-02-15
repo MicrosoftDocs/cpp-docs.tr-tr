@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtSetDbgFlag
+ms.topic: reference
+apiname:
+- _CrtSetDbgFlag
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -33,7 +35,8 @@ f1_keywords:
 - _CRTDBG_CHECK_EVERY_1024_DF
 - _CrtSetDbgFlag
 - CRTDBG_REPORT_FLAG
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CRTDBG_CHECK_EVERY_16_DF macro
 - CRTDBG_CHECK_EVERY_16_DF macro
@@ -56,16 +59,17 @@ helpviewer_keywords:
 - CRTDBG_CHECK_CRT_DF macro
 - _CRTDBG_CHECK_CRT_DF macro
 ms.assetid: b5657ffb-6178-4cbf-9886-1af904ede94c
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c76630a6b55b85ae636e69da69d60947b4db50b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fb2af7756db37e3c5021894936d801d11705f0c6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetdbgflag"></a>_CrtSetDbgFlag
 Alır ya da durumunu değiştirir **_crtDbgFlag** hata ayıklama yığını Yöneticisi'ni (yalnızca hata ayıklama sürümü) ayırma davranışını denetlemek için bayrak.  
@@ -103,7 +107,7 @@ Alır ya da durumunu değiştirir **_crtDbgFlag** hata ayıklama yığını Yön
   
  C çalışma zamanı kitaplığı hata ayıklama yığınını doğrulanması ne sıklıkta gerçekleştirir belirtebilirsiniz (`_CrtCheckMemory`) çağrı sayısı temel `malloc`, `realloc`, **ücretsiz**, ve `_msize`.  
   
- `_CrtSetDbgFlag`üst 16 bit inceler `newFlag` parametresi için bir değer. Belirtilen değer sayısıdır `malloc`, `realloc`, **ücretsiz**, ve `_msize` arasında çağırır `_CrtCheckMemory` çağrıları. Dört önceden tanımlı makrolar bu amaç için sağlanır.  
+ `_CrtSetDbgFlag` üst 16 bit inceler `newFlag` parametresi için bir değer. Belirtilen değer sayısıdır `malloc`, `realloc`, **ücretsiz**, ve `_msize` arasında çağırır `_CrtCheckMemory` çağrıları. Dört önceden tanımlı makrolar bu amaç için sağlanır.  
   
 |Makrosu|_CrtCheckMemory yapılan çağrılar arasında malloc, realloc, boş ve _msize çağrı sayısı|  
 |-----------|------------------------------------------------------------------------------------------|  
@@ -135,7 +139,7 @@ _CrtSetDbgFlag(tmp);
   
  Üst 16 bit `newFlag` _CRTDBG_CHECK_ALWAYS_DF belirtildiğinde parametresi yok sayılıyor. Bu durumda, `_CrtCheckMemory` her çağırdığında adlı `malloc`, `realloc`, **ücretsiz**, ve `_msize`.  
   
- `newFlag`uygulamak için yeni bir durumda **_crtDbgFlag** ve bit alanların her biri için değerlerin birleşiminden oluşur.  
+ `newFlag` uygulamak için yeni bir durumda **_crtDbgFlag** ve bit alanların her biri için değerlerin birleşiminden oluşur.  
   
 ### <a name="to-change-one-or-more-of-these-bit-fields-and-create-a-new-state-for-the-flag"></a>Bir veya daha fazla bu bit alanları değiştirin ve bayrağı için yeni bir durum oluşturmak için  
   
@@ -176,7 +180,7 @@ _CrtSetDbgFlag( tmpFlag );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtSetDbgFlag`|\<crtdbg.h >|  
+|`_CrtSetDbgFlag`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _cgetws_s
 - _cgets_s
@@ -28,7 +29,8 @@ f1_keywords:
 - cgets_s
 - cgetws_s
 - _cgetws_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strings [C++], getting from console
 - console, getting strings from
@@ -37,22 +39,23 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 28e35d5f2eb2f07cd1b02fa8b1edc3f41b2c2174
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b72022fe28be410592ca9da24be11e7dfc649e70
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cgetss-cgetwss"></a>_cgets_s, _cgetws_s
 Bir karakter dizesi konsoldan alır. Bu sürümleri [_cgets ve _cgetws](../../c-runtime-library/cgets-cgetws.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -80,13 +83,13 @@ errno_t _cgetws_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`buffer`  
+ [out] `buffer`  
  Verileri için depolama konumu.  
   
- [in]`numberOfElements`  
+ [in] `numberOfElements`  
  Okunacak karakter üst sınırını aynı zamanda olan tek baytlı veya uluslararası karakter, arabellek boyutu.  
   
- [in]`pSizeRead`  
+ [in] `pSizeRead`  
  Gerçekte okunan karakter sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -94,14 +97,14 @@ errno_t _cgetws_s(
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`numberOfElements`|`pSizeRead`|Döndür|İçeriği`buffer`|  
+|`buffer`|`numberOfElements`|`pSizeRead`|Döndür|İçeriği `buffer`|  
 |--------------|------------------------|-----------------|------------|--------------------------|  
 |`NULL`|tüm|tüm|`EINVAL`|yok|  
-|değil`NULL`|sıfır|tüm|`EINVAL`|değiştirilmedi|  
-|değil`NULL`|tüm|`NULL`|`EINVAL`|sıfır uzunlukta bir dize|  
+|değil `NULL`|sıfır|tüm|`EINVAL`|değiştirilmedi|  
+|değil `NULL`|tüm|`NULL`|`EINVAL`|sıfır uzunlukta bir dize|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_cgets_s`ve `_cgetws_s` bir dize konsoldan okunan ve dizesiyle (null Sonlandırıcı) kopyalayın `buffer`. `_cgetws_s`işlev geniş karakter sürümüdür; karakter boyutu dışında bu iki işlevler davranışını aynıdır. Okunacak dize en büyük boyutu olarak geçirilen `numberOfElements` parametresi. Bu boyut sonlandırma null için fazladan bir karakter içermelidir. Okuma karakter gerçek sayısını yerleştirilir `pSizeRead`.  
+ `_cgets_s` ve `_cgetws_s` bir dize konsoldan okunan ve dizesiyle (null Sonlandırıcı) kopyalayın `buffer`. `_cgetws_s` işlev geniş karakter sürümüdür; karakter boyutu dışında bu iki işlevler davranışını aynıdır. Okunacak dize en büyük boyutu olarak geçirilen `numberOfElements` parametresi. Bu boyut sonlandırma null için fazladan bir karakter içermelidir. Okuma karakter gerçek sayısını yerleştirilir `pSizeRead`.  
   
  İşlemi sırasında veya parametrelerinin doğrulanırken bir hata meydana gelirse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve `EINVAL` döndürülür.  
   

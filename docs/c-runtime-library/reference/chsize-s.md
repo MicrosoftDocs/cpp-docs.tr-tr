@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _chsize_s
+ms.topic: reference
+apiname:
+- _chsize_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,22 +26,24 @@ apitype: DLLExport
 f1_keywords:
 - chsize_s
 - _chsize_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - files [C++], changing size
 - chsize_s function
 - _chsize_s function
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b00b0afdf9ba2daac8b4a64a8527d3b73e3c0cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 89ed8eb6511c9ba7126506e84e815616af78f84f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="chsizes"></a>_chsize_s
 Dosyasının boyutu değişir. Bu bir sürümüdür [_chsize](../../c-runtime-library/reference/chsize.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -61,14 +65,14 @@ errno_t _chsize_s(
  Yeni dosyanın bayt cinsinden uzunluğu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_chsize_s`Dosya boyutu başarıyla değiştirilirse 0 değerini döndürür. Sıfır olmayan bir dönüş değeri bir hata gösterir: dönüş değeri `EACCES` belirtilen dosya erişime karşı kilitliyse `EBADF` belirtilen dosya salt okunur ise veya tanımlayıcısı geçersiz `ENOSPC` boşluk cihaz veya bırakılırsa`EINVAL` boyutu küçükse sıfır. `errno`aynı değere ayarlanır.  
+ `_chsize_s` Dosya boyutu başarıyla değiştirilirse 0 değerini döndürür. Sıfır olmayan bir dönüş değeri bir hata gösterir: dönüş değeri `EACCES` belirtilen dosya erişime karşı kilitliyse `EBADF` belirtilen dosya salt okunur ise veya tanımlayıcısı geçersiz `ENOSPC` boşluk cihaz veya bırakılırsa`EINVAL` boyutu küçükse sıfır. `errno` aynı değere ayarlanır.  
   
  Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_chsize_s` İşlevi genişletir veya ilişkili dosya kesen `fd` tarafından belirtilen uzunluğa `size`. Dosya yazma izin veren bir modda açık olması gerekir. Boş karakterler ('\0') dosya genişletilmişse eklenir. Dosya kesilirse, dosyanın özgün uzunluğu kısaltılmış dosyasının sonuna tüm veriler kaybolur.  
   
- `_chsize_s`Dosya boyutu 64 bitlik bir tamsayı alır ve bu nedenle dosya boyutu 4 GB'den büyük işleyebilir. `_chsize`32-bit dosya boyutlarına sınırlıdır.  
+ `_chsize_s` Dosya boyutu 64 bitlik bir tamsayı alır ve bu nedenle dosya boyutu 4 GB'den büyük işleyebilir. `_chsize` 32-bit dosya boyutlarına sınırlıdır.  
   
  Bu işlev parametrelerini doğrular. Varsa `fd` geçerli dosya tanımlayıcısı veya boyutu sıfırdan küçük, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi değil [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   

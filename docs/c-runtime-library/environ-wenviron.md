@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,7 +13,8 @@ f1_keywords:
 - wenviron
 - _wenviron
 - _environ
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - environ function
 - _environ function
@@ -20,22 +22,23 @@ helpviewer_keywords:
 - process environment
 - wenviron function
 ms.assetid: 7e639962-6536-47cd-8095-0cbe44a56e03
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f89c777a25da5288709683750c907114dac1e5c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 277f8a853a5262d524016630f52bfcbfc8a8b18b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="environ-wenviron"></a>_environ, _wenviron
-`_environ` İşlem ortamını oluşturan çok baytlı karakter dizeleri işaretçiler dizisi için bir işaretçi bir değişkendir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır yerine genel değişkeni. `_environ`içinde Stdlib.h bildirildi.  
+`_environ` İşlem ortamını oluşturan çok baytlı karakter dizeleri işaretçiler dizisi için bir işaretçi bir değişkendir. Bu genel değişkeni daha güvenli işlevsel sürümleri için kullanım dışı [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md) ve [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md), hangi kullanılmalıdır yerine genel değişkeni. `_environ` içinde Stdlib.h bildirildi.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,7 +51,7 @@ extern char **_environ;
   
  `ENVVARNAME``=string`  
   
- `getenv_s`ve `putenv_s` kullanmak `_environ` erişme ve ortam Tablo değiştirme değişkeni. Zaman `_putenv` eklemek veya ortam ayarları silmek için adlı ortamı tablo boyutu değişir. Bellek konumunda, programın bellek gereksinimlerine bağlı olarak değişebilir. Değeri `_environ` otomatik olarak uygun şekilde ayarlanır.  
+ `getenv_s` ve `putenv_s` kullanmak `_environ` erişme ve ortam Tablo değiştirme değişkeni. Zaman `_putenv` eklemek veya ortam ayarları silmek için adlı ortamı tablo boyutu değişir. Bellek konumunda, programın bellek gereksinimlerine bağlı olarak değişebilir. Değeri `_environ` otomatik olarak uygun şekilde ayarlanır.  
   
  `_wenviron` Değişken Stdlib.h içinde bildirilen:  
   

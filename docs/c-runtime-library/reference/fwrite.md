@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: fwrite
+ms.topic: reference
+apiname:
+- fwrite
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,22 +23,25 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: fwrite
-dev_langs: C++
+f1_keywords:
+- fwrite
+dev_langs:
+- C++
 helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7b830dfd7b0a9dace46336f8f02da14fc268daf6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 73b5328ce6851ceb61ad3260760e95cd329ee064
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fwrite"></a>fwrite
 Verileri bir akışa yazar.  
@@ -66,7 +71,7 @@ size_t fwrite(
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fwrite`tam sayı döndürür gerçekte yazılan öğeleri, hangi olabilir değerinden `count` bir hata oluşursa. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemiyor. Her iki `stream` veya `buffer` null işaretçi veya tek sayıda yazılacak bayt Unicode modda belirtilirse, işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
+ `fwrite` tam sayı döndürür gerçekte yazılan öğeleri, hangi olabilir değerinden `count` bir hata oluşursa. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemiyor. Her iki `stream` veya `buffer` null işaretçi veya tek sayıda yazılacak bayt Unicode modda belirtilirse, işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `fwrite` İşlevi Yazar kadar `count` öğeleri, `size` uzunluğu her gelen `buffer` çıktısına `stream`. İle ilişkili dosya işaretçisini `stream` (varsa) tarafından gerçekten yazılan bayt sayısı artar. Varsa `stream` açıldığında metin modunda bir satır başı ile - satır besleme çifti her satır besleme değiştirilir. Değiştirme dönüş değeri üzerinde etkisi yoktur.  

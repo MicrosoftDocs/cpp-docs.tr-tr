@@ -1,13 +1,15 @@
 ---
-title: "_Crtısvalidheappointer | Microsoft Docs"
+title: _CrtIsValidHeapPointer | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtIsValidHeapPointer
+ms.topic: reference
+apiname:
+- _CrtIsValidHeapPointer
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtlsValidHeapPointer
 - _CrtIsValidHeapPointer
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CrtIsValidHeapPointer function
 - CrtIsValidHeapPointer function
 ms.assetid: caf597ce-1b05-4764-9f37-0197a982bec5
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0af543a4462c5cc9dec32c279750be744efa7303
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4f888466e0b1625f93c4e1cf66fab0bb85678094
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtisvalidheappointer"></a>_CrtIsValidHeapPointer
 Belirtilen bir işaretçi bazı C çalışma zamanı kitaplığı, ancak mutlaka tarafından arayanın CRT kitaplık ayrılmış yığın olduğunu doğrular. Visual Studio 2010 önce CRT sürümlerinde, bu belirtilen işaretçi yerel yığın (yalnızca hata ayıklama sürümü) olduğunu doğrular.  
@@ -56,7 +60,7 @@ Belirtilen bir işaretçi bazı C çalışma zamanı kitaplığı, ancak mutlaka
  Ayrılmış bellek bloğu başlangıcı işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_CrtIsValidHeapPointer`Belirtilen işaretçi tüm CRT kitaplık örnekleri tarafından paylaşılan yığınındaki ise TRUE değerini döndürür. Visual Studio 2010 önce CRT sürümlerinde, belirtilen işaretçi yerel yığınında ise bu TRUE döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
+ `_CrtIsValidHeapPointer` Belirtilen işaretçi tüm CRT kitaplık örnekleri tarafından paylaşılan yığınındaki ise TRUE değerini döndürür. Visual Studio 2010 önce CRT sürümlerinde, belirtilen işaretçi yerel yığınında ise bu TRUE döndürür. Aksi takdirde işlevi FALSE değerini döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlev kullanmanızı önermiyoruz. Visual Studio 2010 CRT kitaplık ile başlayarak, bir işletim sistemi yığın tüm CRT kitaplıkları paylaşma *işlem yığın*. `_CrtIsValidHeapPointer` İşlevi işaretçiyi CRT yığınında arayanın CRT kitaplık tarafından ayrılan ayrıldı ancak olup olmadığını bildirir. Örneğin, CRT kitaplık Visual Studio 2010 sürümü kullanılarak ayrılmış bir blok göz önünde bulundurun. Varsa `_CrtIsValidHeapPointer` CRT kitaplık Visual Studio 2012 sürümü tarafından dışarı aktarılan işlevin işaretçinin testleri, TRUE döndürür. Bu artık yararlı bir denemedir. Visual Studio 2010 önce CRT kitaplık sürümlerinde işlevi belirli bellek adresi yerel yığın içinde olduğundan emin olmak için kullanılır. Yerel yığın oluşturulur ve C çalışma zamanı kitaplığı belirli bir örneği tarafından yönetilen yığın ifade eder. Dinamik bağlantı kitaplığı (DLL) çalışma zamanı kitaplığı için statik bir bağlantı içeriyorsa, çalışma zamanı öbek ve bu nedenle, uygulamanın yerel yığın bağımsız kendi yığın kendi örneğine sahip. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtIsValidHeapPointer` ön işleme sırasında kaldırılır.  
@@ -73,7 +77,7 @@ _ASSERTE( _CrtIsValidHeapPointer( userData ) );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtIsValidHeapPointer`|\<crtdbg.h >|  
+|`_CrtIsValidHeapPointer`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

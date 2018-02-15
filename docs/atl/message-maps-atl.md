@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1e708fea75c594c7bb9504515c80222ad901c335
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 12eeb74266e9c303817430958025d6536147356c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="message-maps-atl"></a>İleti eşlemeleri (ATL)
 İleti eşlemesi işleyici işlevi belirli ileti, komut veya bildirim ile ilişkilendirir. ATL'ın kullanarak [ileti eşleme makroları](../atl/reference/message-map-macros-atl.md), bir pencere için ileti eşlemesi belirtebilirsiniz. Pencere yordamları `CWindowImpl`, `CDialogImpl`, ve `CContainedWindowT` kendi ileti eşlemesi pencerenin iletileri doğrudan.  
@@ -31,9 +34,9 @@ ms.lasthandoff: 12/21/2017
 ## <a name="chained-message-maps"></a>Zincirleme ileti eşlemeleri  
  ATL zinciri ileti eşlemeleri için hangi ileti başka bir sınıf içinde tanımlanan ileti eşlemesi için işleme yönlendirir sağlar. Örneğin, tüm windows o sınıfın zincirleme için Tekdüzen davranışı sağlamak için ortak ileti ayrı bir sınıfta işleme uygulayabilirsiniz. Bir taban sınıf veya veri üyesi sınıfınız zincir.  
   
- ATL ayrıca dinamik zincirleme, başka bir nesnenin ileti eşlemesi zinciri için çalışma zamanında sağlayan destekler. Dinamik zincirleme uygulamak için sınıfından türetilen [CDynamicChain](../atl/reference/cdynamicchain-class.md). Ardından bildirme [CHAIN_MSG_MAP_DYNAMIC](reference/message-map-macros-atl.md#chain_msg_map_dynamic) makro ileti eşlemesi içinde. `CHAIN_MSG_MAP_DYNAMIC`Nesne ve zincirleme ileti eşlemesi tanımlayan benzersiz bir numara gerektirir. Bu çağrı aracılığıyla benzersiz bir değer tanımlamanız gerekir `CDynamicChain::SetChainEntry`.  
+ ATL ayrıca dinamik zincirleme, başka bir nesnenin ileti eşlemesi zinciri için çalışma zamanında sağlayan destekler. Dinamik zincirleme uygulamak için sınıfından türetilen [CDynamicChain](../atl/reference/cdynamicchain-class.md). Ardından bildirme [CHAIN_MSG_MAP_DYNAMIC](reference/message-map-macros-atl.md#chain_msg_map_dynamic) makro ileti eşlemesi içinde. `CHAIN_MSG_MAP_DYNAMIC` Nesne ve zincirleme ileti eşlemesi tanımlayan benzersiz bir numara gerektirir. Bu çağrı aracılığıyla benzersiz bir değer tanımlamanız gerekir `CDynamicChain::SetChainEntry`.  
   
- Sınıfın türetildiği sağlanan bildiren bir ileti eşlemesi herhangi bir sınıf için zincir [CMessageMap](../atl/reference/cmessagemap-class.md). `CMessageMap`kendi ileti eşlemeleri diğer nesnelere kullanıma sunmak bir nesne sağlar. Unutmayın `CWindowImpl` zaten türeyen `CMessageMap`.  
+ Sınıfın türetildiği sağlanan bildiren bir ileti eşlemesi herhangi bir sınıf için zincir [CMessageMap](../atl/reference/cmessagemap-class.md). `CMessageMap` kendi ileti eşlemeleri diğer nesnelere kullanıma sunmak bir nesne sağlar. Unutmayın `CWindowImpl` zaten türeyen `CMessageMap`.  
   
 ## <a name="alternate-message-maps"></a>Diğer ileti eşlemeleri  
  Son olarak, diğer ileti eşlemeleri, ile bildirilen ATL destekleyen [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) makrosu. Her alternatif ileti eşlemesi geçişi için benzersiz bir numara ile tanımlanan `ALT_MSG_MAP`. Alternatif bir iletiyi kullanarak eşler, bir harita birden çok windows iletilerini işleyebilir. Varsayılan olarak, unutmayın `CWindowImpl` alternatif ileti eşlemeleri kullanmaz. Bu destek eklemek için geçersiz kılma `WindowProc` yönteminde, `CWindowImpl`-türetilmiş sınıf ve arama `ProcessWindowMessage` ileti eşlemesi tanımlayıcısına sahip.  

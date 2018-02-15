@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: 'index-page '
-dev_langs: C++
-helpviewer_keywords: operators [ATL]
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- operators [ATL]
 ms.assetid: 58ccd252-2869-45ee-8a5c-3ca40ee7f8a2
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bcd8ce5e46617958f0188a3563771061a37d22c6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bcbe04fb057ffc8077f422cd784b5d31691df1e3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atl-operators"></a>ATL işleçleri
 Bu bölüm için ATL genel işleçler başvuru konuları içerir.  
@@ -36,7 +40,7 @@ Bu bölüm için ATL genel işleçler başvuru konuları içerir.
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h.  
   
-##  <a name="operator_eq_eq"></a>operator ==  
+##  <a name="operator_eq_eq">operator ==</a>  
  Karşılaştırır `CSid` nesneleri veya `SID` (güvenlik tanımlayıcısı) yapıları eşitlik için.  
   
 ```   
@@ -53,7 +57,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **true** nesneleri eşitse, **false** eşit değillerse.  
   
-##  <a name="operator_neq"></a>operator! =  
+##  <a name="operator_neq">operator! =</a>  
  Karşılaştırır `CSid` nesneleri veya `SID` eşitsizlik yapılarında (güvenlik tanımlayıcısı).  
   
 ```   
@@ -70,7 +74,7 @@ bool operator==(const CSid& lhs, const CSid& rhs) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **true** nesneleri eşit değilse **false** eşit olup olmadıkları.  
   
-##  <a name="operator_lt"></a>operator <  
+##  <a name="operator_lt">operator <</a>  
  Varsa testleri `CSid` nesne veya `SID` yapısı işlecinin sol tarafındaki küçük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
   
 ```   
@@ -90,7 +94,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
   
-##  <a name="operator_gt"></a>operator >  
+##  <a name="operator_gt">operator ></a>  
  Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır büyük `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
   
 ```   
@@ -110,7 +114,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
   
-##  <a name="operator_lt__eq"></a>operator < =  
+##  <a name="operator_lt__eq">operator < =</a>  
  Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır küçük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
   
 ```   
@@ -130,7 +134,7 @@ bool operator<(const CSid& lhs, const CSid& rhs) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç adresini temel görevi gören `CSid` nesne veya `SID` yapısı ve C++ Standart Kitaplığı koleksiyon sınıfları uyum sağlamak için uygulanır.  
   
-##  <a name="operator_gt__eq"></a>operator > =  
+##  <a name="operator_gt__eq">operator > =</a>  
  Varsa testleri `CSid` nesne veya `SID` işlecinin sol tarafındaki yapısıdır değerinden büyük veya eşit `CSid` nesne veya `SID` yapısı (C++ Standart Kitaplığı uyumluluk için) sağ taraftaki.  
   
 ```   

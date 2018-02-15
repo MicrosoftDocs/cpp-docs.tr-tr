@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _getwch_nolock
 - _getch_nolock
@@ -30,7 +31,8 @@ f1_keywords:
 - _getwch_nolock
 - _gettch_nolock
 - gettch_nolock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - characters, getting from console
 - _getwch_nolock function
@@ -41,22 +43,23 @@ helpviewer_keywords:
 - getch_nolock function
 - gettch_nolock function
 ms.assetid: 9d248546-26ca-482c-b0c6-55812a987e83
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d305dd1d33c04a87cc5f76965b0e422164298f5c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 20d886bfc16c09526b681a302934a9d1e7655c37
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getchnolock-getwchnolock"></a>_getch_nolock, _getwch_nolock
 Konsolundan Yankı ve iş parçacığı kilitleme olmadan bir karakteri alır.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -69,7 +72,7 @@ wint_t _getwch_nolock( void );
  Okuma karakteri döndürür. Döndürülen hata yoktur.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_getch_nolock`ve `_getwch_nolock` özdeş `_getch` ve `_getchw` dışında bunlar girişime diğer iş parçacıkları tarafından korunmuyor. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
+ `_getch_nolock` ve `_getwch_nolock` özdeş `_getch` ve `_getchw` dışında bunlar girişime diğer iş parçacıkları tarafından korunmuyor. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: compl
+ms.topic: reference
+apiname:
+- compl
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,19 +26,22 @@ f1_keywords:
 - std::compl
 - std.compl
 - compl
-dev_langs: C++
-helpviewer_keywords: compl function
+dev_langs:
+- C++
+helpviewer_keywords:
+- compl function
 ms.assetid: e03f6fb5-cb8b-4afa-99c0-905f4105fb34
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 15ca138d271c1cf9e6a86cef8330b327c011b9b1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2c533f06209d0bd8880cf5b1e49b8d40b20d1210
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="compl"></a>compl
 ~ işleci alternatifi.  

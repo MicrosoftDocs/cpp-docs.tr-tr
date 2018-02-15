@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _itow
 - _i64tow
@@ -41,7 +42,8 @@ f1_keywords:
 - i64tow
 - itow
 - _ui64toa
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _itot function
 - ui64toa function
@@ -61,16 +63,17 @@ helpviewer_keywords:
 - converting numbers, to strings
 - _itoa function
 ms.assetid: 46592a00-77bb-4e73-98c0-bf629d96cea6
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ecf2dc476d9f35b0eb06dff8e0f701bcfa539914
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bdfe837630a4f8b36ca57970c6b23d832740f59d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="itoa-i64toa-ui64toa-itow-i64tow-ui64tow"></a>_itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow
 Tamsayı bir dizeye dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_itoa_s, _i64toa_s, _ui64toa_s, _itow_s, _i64tow_s, _ui64tow_s](../../c-runtime-library/reference/itoa-s-i64toa-s-ui64toa-s-itow-s-i64tow-s-ui64tow-s.md).  
@@ -179,12 +182,12 @@ wchar_t * _ui64tow(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_itoa`|\<stdlib.h >|  
-|`_i64toa`|\<stdlib.h >|  
-|`_ui64toa`|\<stdlib.h >|  
-|`_itow`|\<stdlib.h >|  
-|`_i64tow`|\<stdlib.h >|  
-|`_ui64tow`|\<stdlib.h >|  
+|`_itoa`|\<stdlib.h>|  
+|`_i64toa`|\<stdlib.h>|  
+|`_ui64toa`|\<stdlib.h>|  
+|`_itow`|\<stdlib.h>|  
+|`_i64tow`|\<stdlib.h>|  
+|`_ui64tow`|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

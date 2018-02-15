@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _CrtSetReportHook2
 - _CrtSetReportHookW2
@@ -27,23 +28,25 @@ f1_keywords:
 - CrtSetReportHook2
 - _CrtSetReportHookW2
 - _CrtSetReportHook2
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CrtSetReportHook2 function
 - _CrtSetReportHook2 function
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ed7c12cfc0755360c8512a60ba89b924518b5a1f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ec98ae83793d2f72026bd71ea1c625069df23b7d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetreporthook2-crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 Yükler veya istemci tarafından tanımlanan raporlama işlevi C çalışma zamanı hata ayıklama raporlama işlemine (yalnızca hata ayıklama sürümü) takma tarafından kaldırır.  
@@ -76,9 +79,9 @@ int _CrtSetReportHookW2(
  bir hatayla karşılaşıldı, -1 ile `EINVAL` veya `ENOMEM` başvuru sayısını döndürür; kümesi `pfnNewHook` çağrısından sonra.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtSetReportHook2`ve `_CrtSetReportHookW2` bağlayın veya bir işlev unhook ancak sağlar [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) yalnızca bir işlev bağlanmanıza olanak sağlar.  
+ `_CrtSetReportHook2` ve `_CrtSetReportHookW2` bağlayın veya bir işlev unhook ancak sağlar [_CrtSetReportHook](../../c-runtime-library/reference/crtsetreporthook.md) yalnızca bir işlev bağlanmanıza olanak sağlar.  
   
- `_CrtSetReportHook2`veya `_CrtSetReportHookW2` yerine kullanılmalıdır `_CrtSetReportHook` zaman kanca çağrısı yapıldığında DLL ve ne zaman birden çok DLL'ler yüklü olmayabilir ve kendi ayarı kanca işlevleri. Böyle bir durumda DLL'leri farklı bir sırada yüklenen ve kaldırılmış bir DLL işaret eden kanca işlevini bırakılabilir çok bellekten. Kanca işlevlerini ile eklendiyse herhangi bir hata ayıklama çıktı işlem çökmesi `_CrtSetReportHook`.  
+ `_CrtSetReportHook2` veya `_CrtSetReportHookW2` yerine kullanılmalıdır `_CrtSetReportHook` zaman kanca çağrısı yapıldığında DLL ve ne zaman birden çok DLL'ler yüklü olmayabilir ve kendi ayarı kanca işlevleri. Böyle bir durumda DLL'leri farklı bir sırada yüklenen ve kaldırılmış bir DLL işaret eden kanca işlevini bırakılabilir çok bellekten. Kanca işlevlerini ile eklendiyse herhangi bir hata ayıklama çıktı işlem çökmesi `_CrtSetReportHook`.  
   
  Herhangi bir kanca ile eklenen işlevler `_CrtSetReportHook` eklenen işlevleri hiçbir kanca varsa adlı `_CrtSetReportHook2` veya `_CrtSetReportHookW2` veya tüm kanca işlevleri eklendi `_CrtSetReportHook2` ve `_CrtSetReportHookW2` dönmek `FALSE`.  
   
@@ -103,8 +106,8 @@ int YourReportHook( int reportType, char *message, int *returnValue );
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_CrtSetReportHook2`|\<crtdbg.h >|\<errno.h >|  
-|`_CrtSetReportHookW2`|\<crtdbg.h >|\<errno.h >|  
+|`_CrtSetReportHook2`|\<crtdbg.h>|\<errno.h >|  
+|`_CrtSetReportHookW2`|\<crtdbg.h>|\<errno.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

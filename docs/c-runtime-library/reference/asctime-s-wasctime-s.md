@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wasctime_s
 - asctime_s
@@ -27,7 +28,8 @@ f1_keywords:
 - asctime_s
 - _wasctime_s
 - _tasctime_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tasctime_s function
 - _tasctime_s function
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 30a48101ea2db80f7c8a37434c1fd73c9c535286
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6914dd9c305a1313cde43e69f012786462f1d4a6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="asctimes-wasctimes"></a>asctime_s, _wasctime_s
 Dönüştürme bir `tm` zaman bir karakter dizesine yapısı. Bu işlevler sürümleridir [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -87,17 +90,17 @@ errno_t _wasctime_s(
  [in] Saat/tarih yapısı. Bu işlev geçerli bir işaretçi varsayar `struct tm` nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata olduğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H. Daha fazla bilgi için bkz: [errno sabitleri](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmektedir.  
+ Zero if successful. Bir hata olduğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H. Daha fazla bilgi için bkz: [errno sabitleri](../../c-runtime-library/errno-constants.md). Her bir hata koşulu için döndürülen gerçek hata kodları aşağıdaki tabloda gösterilmektedir.  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`numberOfElements`|`tm`|Döndür|Değer`buffer`|  
+|`buffer`|`numberOfElements`|`tm`|Döndür|Değer `buffer`|  
 |--------------|------------------------|----------|------------|-----------------------|  
 |`NULL`|tüm|tüm|`EINVAL`|değiştirilmedi|  
 |Değil `NULL` (noktaları için geçerli bellek)|0|tüm|`EINVAL`|değiştirilmedi|  
-|değil`NULL`|0 < < 26 boyutu|tüm|`EINVAL`|Boş dize|  
-|değil`NULL`|>= 26|`NULL`|`EINVAL`|Boş dize|  
-|değil`NULL`|>= 26|Geçersiz zaman yapısı veya aralık değerleri zamanı bileşenleri için yetersiz|`EINVAL`|Boş dize|  
+|değil `NULL`|0 < < 26 boyutu|tüm|`EINVAL`|Boş dize|  
+|değil `NULL`|>= 26|`NULL`|`EINVAL`|Boş dize|  
+|değil `NULL`|>= 26|Geçersiz zaman yapısı veya aralık değerleri zamanı bileşenleri için yetersiz|`EINVAL`|Boş dize|  
   
 > [!NOTE]
 >  Hata koşulları için `wasctime_s` benzer `asctime_s` boyut sınırını sözcükleri ölçülür özel durum oluştu.  
@@ -121,7 +124,7 @@ errno_t _wasctime_s(
   
  Tarafından üretilen dize sonuç `asctime_s` tam olarak 26 karakter içerir ve form `Wed Jan 02 02:03:55 1980\n\0`. 24 saatlik kullanılır. Tüm alanları sabit genişlik sahiptir. Yeni satır karakteri ve null karakter dizesi son iki konumlarını kaplar. İkinci parametre olarak geçirilen değer en az bu büyük olmalıdır. Bir hata kodu daha düşük ise `EINVAL`, döndürülür.  
   
- `_wasctime_s`bir joker karakter sürümü `asctime_s`. `_wasctime_s`ve `asctime_s` Aksi takdirde aynı şekilde davranır.  
+ `_wasctime_s` bir joker karakter sürümü `asctime_s`. `_wasctime_s` ve `asctime_s` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mapping"></a>Genel metin rutin eşleme  
   
@@ -184,5 +187,5 @@ Current date and time: Wed May 14 15:30:17 2003
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_tzset](../../c-runtime-library/reference/tzset.md)

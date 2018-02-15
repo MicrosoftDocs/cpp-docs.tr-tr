@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: Directives Reference
-dev_langs: C++
-helpviewer_keywords: MASM (Microsoft Macro Assembler), directives reference
+ms.topic: reference
+f1_keywords:
+- Directives Reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- MASM (Microsoft Macro Assembler), directives reference
 ms.assetid: da6efcd1-18f7-41de-81cd-a002a02f9a22
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b1d90c4fc585e4a20b7f973025c1cef970e6ea7b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ba0d13a4dab5668f1ee125c79275b93a7f5f7f04
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="directives-reference"></a>Yönergeler Başvurusu
 **x64**  
@@ -35,15 +40,15 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|[HİZALAMA](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|  
-|[ETİKET](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|  
+|[ALIGN](../../assembler/masm/align-masm.md)|[EVEN](../../assembler/masm/even.md)|  
+|[LABEL](../../assembler/masm/label-masm.md)|[ORG](../../assembler/masm/org.md)|  
   
 ### <a name="conditional-assembly"></a>Koşullu derleme  
   
 ||||  
 |-|-|-|  
 |[ELSE](../../assembler/masm/else-masm.md)|[ELSEIF](../../assembler/masm/elseif-masm.md)|[ELSEIF2](../../assembler/masm/elseif2.md)|  
-|[EĞER](../../assembler/masm/if-masm.md)|[IF2](../../assembler/masm/if2.md)|[IFB](../../assembler/masm/ifb.md)/[IFNB](../../assembler/masm/ifnb.md)|  
+|[IF](../../assembler/masm/if-masm.md)|[IF2](../../assembler/masm/if2.md)|[IFB](../../assembler/masm/ifb.md)/[IFNB](../../assembler/masm/ifnb.md)|  
 |[IFDEF](../../assembler/masm/ifdef.md)/[IFNDEF](../../assembler/masm/ifndef.md)|[IFDIF](../../assembler/masm/ifdif.md)/[IFDIF &#91; &#91; &#93; &#93;](../../assembler/masm/ifdif.md)|[IFE](../../assembler/masm/ife.md)|  
 |[IFIDN](../../assembler/masm/ifidn.md)/[IFIDN &#91; &#91; &#93; &#93;](../../assembler/masm/ifidn.md)|||  
   
@@ -52,7 +57,7 @@ ms.lasthandoff: 12/21/2017
 ||||  
 |-|-|-|  
 |[.BREAK](../../assembler/masm/dot-break.md)|[.CONTINUE](../../assembler/masm/dot-continue.md)|[.ELSE](../../assembler/masm/dot-else.md)|  
-|[. ELSEIF](../../assembler/masm/dot-if.md)|[.ENDIF](../../assembler/masm/dot-endif.md)|[.ENDW](../../assembler/masm/dot-endw.md)|  
+|[.ELSEIF](../../assembler/masm/dot-if.md)|[.ENDIF](../../assembler/masm/dot-endif.md)|[.ENDW](../../assembler/masm/dot-endw.md)|  
 |[.IF](../../assembler/masm/dot-if.md)|[.REPEAT](../../assembler/masm/dot-repeat.md)|[.UNTIL](../../assembler/masm/dot-until.md)|  
 |[.UNTILCXZ](../../assembler/masm/dot-untilcxz.md)|[.WHILE](../../assembler/masm/dot-while.md)||  
   
@@ -69,8 +74,8 @@ ms.lasthandoff: 12/21/2017
   
 ||||  
 |-|-|-|  
-|[HİZALAMA](../../assembler/masm/align-masm.md)|[BAYT](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|  
-|[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[ETİKET](../../assembler/masm/label-masm.md)|  
+|[ALIGN](../../assembler/masm/align-masm.md)|[BAYT](../../assembler/masm/byte-masm.md)/[SBYTE](../../assembler/masm/sbyte-masm.md)|[DWORD](../../assembler/masm/dword.md)/[SDWORD](../../assembler/masm/sdword.md)|  
+|[EVEN](../../assembler/masm/even.md)|[FWORD](../../assembler/masm/fword.md)|[LABEL](../../assembler/masm/label-masm.md)|  
 |[ORG](../../assembler/masm/org.md)|[QWORD](../../assembler/masm/qword.md)|[REAL4](../../assembler/masm/real4.md)|  
 |[REAL8](../../assembler/masm/real8.md)|[REAL10](../../assembler/masm/real10.md)|[TBYTE](../../assembler/masm/tbyte.md)|  
 |[WORD](../../assembler/masm/word.md)/[SWORD](../../assembler/masm/sword.md)|||  
@@ -97,15 +102,15 @@ ms.lasthandoff: 12/21/2017
   
 ||||  
 |-|-|-|  
-|[ENDM](../../assembler/masm/endm.md)|[EXITM](../../assembler/masm/exitm.md)|[GİT](../../assembler/masm/goto-masm.md)|  
-|[YEREL](../../assembler/masm/local-masm.md)|[MACRO](../../assembler/masm/macro.md)|[PURGE](../../assembler/masm/purge.md)|  
+|[ENDM](../../assembler/masm/endm.md)|[EXITM](../../assembler/masm/exitm.md)|[GOTO](../../assembler/masm/goto-masm.md)|  
+|[LOCAL](../../assembler/masm/local-masm.md)|[MACRO](../../assembler/masm/macro.md)|[PURGE](../../assembler/masm/purge.md)|  
   
 ### <a name="miscellaneous"></a>Çeşitli  
   
 ||||  
 |-|-|-|  
-|[DİĞER AD](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[AÇIKLAMA](../../assembler/masm/comment-masm.md)|  
-|[ECHO](../../assembler/masm/echo.md)|[BİTİŞ](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|  
+|[ALIAS](../../assembler/masm/alias-masm.md)|[ASSUME](../../assembler/masm/assume.md)|[AÇIKLAMA](../../assembler/masm/comment-masm.md)|  
+|[ECHO](../../assembler/masm/echo.md)|[END](../../assembler/masm/end-masm.md)|[.FPO](../../assembler/masm/dot-fpo.md)|  
 |[İÇERİR](../../assembler/masm/include-masm.md)|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[MMWORD](../../assembler/masm/mmword.md)|  
 |[SEÇENEĞİ](../../assembler/masm/option-masm.md)|[POPCONTEXT](../../assembler/masm/popcontext.md)|[PUSHCONTEXT](../../assembler/masm/pushcontext.md)|  
 |[.RADIX](../../assembler/masm/dot-radix.md)|[.SAFESEH](../../assembler/masm/dot-safeseh.md)|[XMMWORD](../../assembler/masm/xmmword.md)|  
@@ -132,21 +137,21 @@ ms.lasthandoff: 12/21/2017
 ||||  
 |-|-|-|  
 |[ENDM](../../assembler/masm/endm.md)|[İÇİN](../../assembler/masm/for-masm.md)|[FORC](../../assembler/masm/forc.md)|  
-|[GİT](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[WHILE](../../assembler/masm/while-masm.md)|  
+|[GOTO](../../assembler/masm/goto-masm.md)|[REPEAT](../../assembler/masm/repeat.md)|[WHILE](../../assembler/masm/while-masm.md)|  
   
 ### <a name="scope"></a>Kapsam  
   
 ||||  
 |-|-|-|  
 |[COMM](../../assembler/masm/comm.md)|[EXTERN](../../assembler/masm/extern-masm.md)|[EXTERNDEF](../../assembler/masm/externdef.md)|  
-|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[ORTAK](../../assembler/masm/public-masm.md)||  
+|[INCLUDELIB](../../assembler/masm/includelib-masm.md)|[PUBLIC](../../assembler/masm/public-masm.md)||  
   
 ### <a name="segment"></a>Segment  
   
 ||||  
 |-|-|-|  
 |[.ALPHA](../../assembler/masm/dot-alpha.md)|[ASSUME](../../assembler/masm/assume.md)|[.DOSSEG](../../assembler/masm/dot-dosseg.md)|  
-|[BİTİŞ](../../assembler/masm/end-masm.md)|[SONA ERER](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|  
+|[END](../../assembler/masm/end-masm.md)|[SONA ERER](../../assembler/masm/ends-masm.md)|[GROUP](../../assembler/masm/group.md)|  
 |[SEGMENT](../../assembler/masm/segment.md)|[.SEQ](../../assembler/masm/dot-seq.md)||  
   
 ### <a name="simplified-segment"></a>Basitleştirilmiş kesimi  

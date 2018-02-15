@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _heapmin
+ms.topic: reference
+apiname:
+- _heapmin
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - _heapmin
 - heapmin
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - heap memory
 - minimizing heaps
@@ -33,16 +36,17 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a43374b9e4453bf1584ffb4d33c6b8b9a1c8acf2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 986d56560b421fe0b1973f52a9dbfcf3ea88bff1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="heapmin"></a>_heapmin
 İşletim sistemi için kullanılmayan yığın belleği serbest bırakır.  
@@ -71,7 +75,7 @@ int _heapmin( void );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
- [boş](../../c-runtime-library/reference/free.md)   
+ [Boş](../../c-runtime-library/reference/free.md)   
  [_heapadd](../../c-runtime-library/heapadd.md)   
  [_heapchk](../../c-runtime-library/reference/heapchk.md)   
  [_heapset](../../c-runtime-library/heapset.md)   

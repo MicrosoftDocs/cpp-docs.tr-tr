@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _CrtGetDumpClient
+ms.topic: reference
+apiname:
+- _CrtGetDumpClient
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - CrtGetDumpClient
 - _CrtGetDumpClient
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CrtGetDumpClient function
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2bd7ff7ee99af78dba98e537a1c26b74ed5ed79c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3bdb4409ffad859f7755926b966bd332895093fa
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtgetdumpclient"></a>_CrtGetDumpClient
 Döküm alma için geçerli olan uygulama tanımlı işlevi alır `_CLIENT_BLOCK` bellek blokları (yalnızca hata ayıklama sürümü) yazın.  
@@ -60,7 +64,7 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_CrtGetDumpClient`|\<crtdbg.h >|  
+|`_CrtGetDumpClient`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

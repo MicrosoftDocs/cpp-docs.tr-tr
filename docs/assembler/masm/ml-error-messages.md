@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vc.errors.ml
-dev_langs: C++
-helpviewer_keywords: MASM (Microsoft Macro Assembler), ML error messages
+ms.topic: error-reference
+f1_keywords:
+- vc.errors.ml
+dev_langs:
+- C++
+helpviewer_keywords:
+- MASM (Microsoft Macro Assembler), ML error messages
 ms.assetid: e7e164b3-6d65-4b5b-8925-bfbebc043523
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1fa5933c9c676b76ebe342ffa848e7b40926da08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 09478bd3cff63e890014c6c14b11335feb8dfb3f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ml-error-messages"></a>ML Hata İletileri
 MASM bileşenleri tarafından oluşturulan hata iletileri üç kategoriye ayrılır:  

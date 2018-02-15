@@ -1,26 +1,29 @@
 ---
-title: "-APPCONTAINER (Windows mağazası uygulamaları) | Microsoft Docs"
+title: "/ APPCONTAINER (UWP/Microsoft mağazası uygulaması) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 22ca7bec885f20518950626d33f7e3af553d0d52
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1cc6e1d4c6e18cd2118571e57f671f85a0a3fb55
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="appcontainer-windows-store-app"></a>/APPCONTAINER (Windows Mağazası Uygulamaları)
+# <a name="appcontainer-microsoft-store-app"></a>/ APPCONTAINER (Microsoft mağazası uygulaması)
 Bağlayıcı bir uygulama kapsayıcısında çalıştırılmalıdır yürütülebilir bir görüntü oluşturup oluşturmayacağını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -32,7 +35,7 @@ Bağlayıcı bir uygulama kapsayıcısında çalıştırılmalıdır yürütüle
 ## <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, /APPCONTAINER kapalıdır.  
   
- Bu seçenek, uygulama ve appcontaıner işlem yalıtımı ortamında çalışan olup olmadığını belirtmek için yürütülebilir bir dosya değiştirir. Appcontaıner ortamında çalışması gereken bir uygulama için /APPCONTAINER belirtin — örneğin, bir [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] uygulama. (Oluşturduğunuzda seçenek Visual Studio'da otomatik olarak ayarlanır bir [!INCLUDE[win8_appstore_long](../../build/reference/includes/win8_appstore_long_md.md)] bir şablon uygulamadan.) Bir masaüstü uygulamasının /APPCONTAINER:NO belirtin veya yalnızca seçeneğini atlayın.  
+ Bu seçenek, uygulama ve appcontaıner işlem yalıtımı ortamında çalışan olup olmadığını belirtmek için yürütülebilir bir dosya değiştirir. Appcontaıner ortamında çalışması gereken bir uygulama için /APPCONTAINER belirtin — örneğin, bir evrensel Windows Platformu (UWP) veya Windows Phone 8.x uygulaması. (Bir şablondan bir evrensel Windows uygulaması oluşturma seçeneği otomatik olarak Visual Studio'da ayarlanır.) Bir masaüstü uygulamasının /APPCONTAINER:NO belirtin veya yalnızca seçeneğini atlayın.  
   
  /APPCONTAINER seçeneği sunulmuştur [!INCLUDE[win8](../../build/reference/includes/win8_md.md)].  
   

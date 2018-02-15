@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: A4012
-dev_langs: C++
-helpviewer_keywords: A4012
+ms.topic: error-reference
+f1_keywords:
+- A4012
+dev_langs:
+- C++
+helpviewer_keywords:
+- A4012
 ms.assetid: 842b1259-9679-4eeb-a02d-672a583a94e5
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0648d2bac0d300fc8e2c696b54741a3d7293a4f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1f23ba30bcd013d79add95d606b8787f94086273
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ml-warning-a4012"></a>ML Uyarısı A4012
 **Satır numarası bilgilerini kesimin sınıfı 'CODE' olmadan**  

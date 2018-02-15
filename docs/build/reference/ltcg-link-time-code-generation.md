@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,23 +14,25 @@ f1_keywords:
 - VC.Project.VCCLWCECompilerTool.WholeProgramOptimization
 - /ltcg
 - VC.Project.VCCLCompilerTool.WholeProgramOptimization
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - link-time code generation in C++ linker
 - /LTCG linker option
 - -LTCG linker option
 - LTCG linker option
 ms.assetid: 788c6f52-fdb8-40c2-90af-4026ea2cf2e2
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a8f1abc58f0c36f37307e1d8053e4dd8a4cac06a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 69e67755ce5015cdd63ad36625e71380a303d2d4
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Oluşturma)
 ```  
@@ -65,23 +68,23 @@ ms.lasthandoff: 12/21/2017
   
 -   [/ SABİT](../../build/reference/fixed-fixed-base-address.md)  
   
--   / LTCG  
+-   /LTCG  
   
--   [/ MAP](../../build/reference/map-generate-mapfile.md)  
+-   [/MAP](../../build/reference/map-generate-mapfile.md)  
   
--   [/ MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)  
+-   [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)  
   
--   [/ NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)  
+-   [/NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)  
   
 -   [/ OUT](../../build/reference/out-output-file-name.md)  
   
--   [/ PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)  
+-   [/PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)  
   
--   [/ PDB](../../build/reference/pdb-use-program-database.md)  
+-   [/PDB](../../build/reference/pdb-use-program-database.md)  
   
--   [/ PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)  
+-   [/PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)  
   
--   [/ STUB](../../build/reference/stub-ms-dos-stub-file-name.md)  
+-   [/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)  
   
 -   [/ VERBOSE](../../build/reference/verbose-print-progress-messages.md)  
   
@@ -134,11 +137,9 @@ ms.lasthandoff: 12/21/2017
 ## <a name="ltcg-and-msil-modules"></a>/ LTCG ve MSIL modülleri  
  Kullanarak derlenmiş modüller [/GL](../../build/reference/gl-whole-program-optimization.md) ve [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) bağlayıcı girişi olarak kullanılabilir olduğunda **/LTCG** belirtilir.  
   
--   **/ LTCG** yerel nesne dosyaları, yerel ve yönetilen nesne dosyaları karma kabul edebilirsiniz (kullanarak derlenmiş **/CLR**) ve saf nesne dosyaları (kullanarak derlenmiş **/CLR: pure**), ve güvenli nesne dosyaları ( kullanarak derlenmiş **/CLR: safe**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+-   **/ LTCG** yerel nesne dosyaları kabul edebilir ve karışık yerel/Yönetilen Nesne dosyaları (kullanarak derlenmiş **/CLR**). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
--   **/ LTCG** kullanılarak oluşturulan güvenli .netmodules kabul edebilir **/CLR: safe /LN** Visual C++'ta ve **/target: Module** tüm Visual Studio .NET derleyici içinde. . Netmodules üretilen kullanarak **/CLR** veya **/CLR: pure** tarafından kabul edilmedi **/LTCG**.  
-  
--   /LTCG:PGI kullanarak derlenmiş yerel modülleri kabul etmiyor **/GL** ve **/CLR**, veya saf modülleri (kullanılarak üretilen **/CLR: pure**)  
+-   /LTCG:PGI kullanarak derlenmiş yerel modülleri kabul etmiyor **/GL** ve   **/CLR**  
   
 #### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   

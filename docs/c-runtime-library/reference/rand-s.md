@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: rand_s
+ms.topic: reference
+apiname:
+- rand_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: rand_s
-dev_langs: C++
+f1_keywords:
+- rand_s
+dev_langs:
+- C++
 helpviewer_keywords:
 - generating pseudorandom numbers
 - random numbers, cryptographically secure
@@ -35,12 +39,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d5fde51ee8fb65426166d9d5d2e7d6e5873dd6e8
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2438b2ced054667a658f8f31a37c9a62112debc6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rands"></a>rand_s
 
@@ -72,13 +77,13 @@ Başarılı olursa, sıfır Aksi takdirde bir hata kodu. Varsa Giriş işaretçi
 #include <stdlib.h>
 ```
 
-`rand_s`bağımlı [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) kullanılabilir Windows XP ve üstü yalnızca API.
+`rand_s` bağımlı [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) kullanılabilir Windows XP ve üstü yalnızca API.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`rand_s`|\<stdlib.h >|
+|`rand_s`|\<stdlib.h>|
 
 Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _access_s
 - _waccess_s
@@ -28,7 +29,8 @@ f1_keywords:
 - access_s
 - _waccess_s
 - _access_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - access_s function
 - taccess_s function
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - _access_s function
 - _waccess_s function
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f562d62f3edb1f09fe6d7ebe7b509411ad2dc8c6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fca577dee68bef8da30a8e6fe64aa3478ceeffe8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="accesss-waccesss"></a>_access_s, _waccess_s
 Dosya okuma/yazma izinleri belirler. Bu bir sürümüdür [_access, _waccess](../../c-runtime-library/reference/access-waccess.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -97,7 +100,7 @@ errno_t _waccess_s(
   
  Okuma veya yazma izni dosyayı açma olanağı sağlamak yeterli değil. Bir dosyayı başka bir işlem tarafından kilitlenmiş, örneğin, bunu bile erişilebilir olmayabilir `_access_s` 0 döndürür.  
   
- `_waccess_s`bir joker karakter sürümü `_access_s`, burada `path` bağımsız değişkeni `_waccess_s` bir joker karakter dizesidir. Aksi takdirde, `_waccess_s` ve `_access_s` aynı şekilde davranır.  
+ `_waccess_s` bir joker karakter sürümü `_access_s`, burada `path` bağımsız değişkeni `_waccess_s` bir joker karakter dizesidir. Aksi takdirde, `_waccess_s` ve `_access_s` aynı şekilde davranır.  
   
  Bu işlevler kendi parametreleri doğrulayın. Varsa `path` olan `NULL` veya `mode` geçerli bir moda belirtmiyor açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   

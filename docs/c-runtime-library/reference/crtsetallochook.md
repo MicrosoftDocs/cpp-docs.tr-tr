@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _CrtSetAllocHook
 apilocation:
@@ -37,11 +37,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6168081aff668a3b613b4844be3c50b841f5bc07
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: f51d5ba216c387ea8f5871d68fcf026ea1749121
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crtsetallochook"></a>_CrtSetAllocHook
 Bir istemci tarafından tanımlanan ayırma işlevi C çalışma zamanı hata ayıklama bellek ayırma işlemine (yalnızca hata ayıklama sürümü) takma tarafından yükler.  
@@ -62,7 +62,7 @@ _CRT_ALLOC_HOOK _CrtSetAllocHook(
  Önceden tanımlanmış ayırma kanca işlevi döndürür veya `NULL` varsa `allocHook` olan `NULL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_CrtSetAllocHook`bir uygulamanın kendi ayırma işlevini C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemine olanak sağlar. Sonuç olarak, ayırmak için bir hata ayıklama ayırma işlevi her çağrısı yeniden ayırmak veya bir uygulamanın kanca işlevi çağrısı bir bellek bloğu Tetikleyicileri boşaltın. `_CrtSetAllocHook`bir uygulamanın uygulama yetersiz bellek gibi durumlarda nasıl işlediğini test etmek için kolay bir yöntem ayırma desenleri ve daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için Fırsat inceleyin olanağı sağlar. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetAllocHook` ön işleme sırasında kaldırılır.  
+ `_CrtSetAllocHook` bir uygulamanın kendi ayırma işlevini C çalışma zamanı hata ayıklama kitaplığı bellek ayırma işlemine olanak sağlar. Sonuç olarak, ayırmak için bir hata ayıklama ayırma işlevi her çağrısı yeniden ayırmak veya bir uygulamanın kanca işlevi çağrısı bir bellek bloğu Tetikleyicileri boşaltın. `_CrtSetAllocHook` bir uygulamanın uygulama yetersiz bellek gibi durumlarda nasıl işlediğini test etmek için kolay bir yöntem ayırma desenleri ve daha sonraki analizler için ayırma bilgileri günlüğe kaydetmek için Fırsat inceleyin olanağı sağlar. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtSetAllocHook` ön işleme sırasında kaldırılır.  
   
  `_CrtSetAllocHook` İşlevi yükler belirtilen yeni istemci tarafından tanımlanan ayırma işlevi `allocHook` ve önceden tanımlanmış kanca işlevi döndürür. Aşağıdaki örnek, bir istemci tarafından tanımlanan atama kanca nasıl örneklenmiş olmalıdır gösterir:  
   
@@ -74,7 +74,7 @@ lineNumber);
   
  `allocType` Bağımsız değişkeni ayırma işlemi türünü belirtir `(_HOOK_ALLOC`, `_HOOK_REALLOC`, ve `_HOOK_FREE`) ayırma 's kanca işlevi çağrısında tetiklendi. Tetikleyici ayırma türü olduğunda `_HOOK_FREE`, `userData` hakkında boşaltılacak bellek bloğu kullanıcı veri bölümü bir işaretçidir. Ancak, tetikleyici ayırma türü olduğunda `_HOOK_ALLOC` veya `_HOOK_REALLOC`, `userData` olan `NULL` bellek bloğu henüz tahsis değil çünkü.  
   
- `size`blok boyutu belleğin bayt cinsinden belirtir `blockType` bellek bloğu türünü gösterir `requestNumber` bellek bloğu nesne ayırma sipariş sayısı ve kullanılabilir durumdaysa `filename` ve `lineNumber` kaynak dosya adı belirtin ve Tetikleyici ayırma işlemi başlatıldığı satır numarası.  
+ `size` blok boyutu belleğin bayt cinsinden belirtir `blockType` bellek bloğu türünü gösterir `requestNumber` bellek bloğu nesne ayırma sipariş sayısı ve kullanılabilir durumdaysa `filename` ve `lineNumber` kaynak dosya adı belirtin ve Tetikleyici ayırma işlemi başlatıldığı satır numarası.  
   
  Kanca işlevini işlemeyi bitirdikten sonra ana C çalışma zamanı ayırma işlemini nasıl devam edileceği belirten bir Boole değeri döndürmelidir. Kanca işlevi olarak kanca işlevi hiçbir zaman çağırıldıktan sonra kanca işlevini döndürmelidir devam etmek için ana ayırma işlemini istediği zaman `TRUE`. Bu, özgün tetikleme ayırma işlemi çalıştırılmasına neden olur. Bu uygulamayı kullanarak kanca işlevini toplayın ve geçerli ayırma işlemi veya hata ayıklama yığınını durumunu engellemeden daha sonraki analizler için ayırma bilgilerini kaydedin.  
   
@@ -85,7 +85,7 @@ lineNumber);
  Hakkında daha fazla bilgi için `_CrtSetAllocHook` diğer bellek yönetimi işlevleri veya kendi istemci tanımlı kanca işlevlerini yazma nasıl kullanılabilir [hata ayıklama kanca işlevi yazma](/visualstudio/debugger/debug-hook-function-writing).  
   
 > [!NOTE]
->  `_CrtSetAllocHook`altında desteklenmiyor `/clr:pure`. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+>  `_CrtSetAllocHook` altında desteklenmiyor `/clr:pure`. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

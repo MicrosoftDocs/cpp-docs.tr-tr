@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLCompilerTool.CompileAsWinRT
 - /zw
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /ZW
 - -ZW compiler option
@@ -18,19 +20,20 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 75f46c2eaaa42f473e02bc553dd06b86cd5bbc98
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cbaa6d708cf882d3f396cc2a68159a520a017f8d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW (Windows Çalışma Zamanı Derlemesi)
-Kuyruktaki kaynak desteklemek için kodu [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) oluşturulması için [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar.  
+Kuyruktaki kaynak desteklemek için kodu [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) Evrensel Windows Platformu (UWP) uygulamaları oluşturma.  
   
  Kullandığınızda **/ZW** derlemek için her zaman belirtmeniz **/EHsc** de.  
   

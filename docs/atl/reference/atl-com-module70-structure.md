@@ -4,28 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::_ATL_COM_MODULE70
 - ATL._ATL_COM_MODULE70
 - _ATL_COM_MODULE70
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _ATL_COM_MODULE70 structure
 - ATL_COM_MODULE70 structure
 ms.assetid: 5b0b2fd0-bdeb-4c7e-8870-78fa69ace6e6
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f5d1e1d2716c5ab97c2b805a943ffe4587341dc4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 573bf43c783a1fb5dbd0eca364fedddb9bafbac7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atlcommodule70-structure"></a>_ATL_COM_MODULE70 yapısı
 ATL COM ilgili kodda tarafından kullanılan  

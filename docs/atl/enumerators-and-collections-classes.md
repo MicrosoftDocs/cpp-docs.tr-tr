@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vc.atl.enum
-dev_langs: C++
-helpviewer_keywords: enumerators, ATL classes
+ms.topic: reference
+f1_keywords:
+- vc.atl.enum
+dev_langs:
+- C++
+helpviewer_keywords:
+- enumerators, ATL classes
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5bf13790a6ccd268f5b3d0e9486091ef67f673cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 541be7b62844510ff6026b4b974a920f7bd9f3c7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="enumerators-and-collections-classes"></a>Numaralandırmalar ve koleksiyon sınıfları
 Aşağıdaki sınıflar, COM koleksiyonlar ve numaralandırmalar için destek sağlar:  
