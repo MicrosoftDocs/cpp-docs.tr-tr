@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ee78c1fb5c66974c946d0571db981d899f405fe3
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.sourcegitcommit: fa7a6dccddce3747389c91277a53e296f905305c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="remote-automation-connection-manager"></a>Uzak Otomasyon Bağlantı Yöneticisi
 İstemci ve sunucu makinelerini yapılandırmak için kayıt defteri değişiklikler yapmanız gerekir. El ile bunu yerine, uzak Otomasyon bağlantı (RAC) Yöneticisi aracını kullanmak çok daha kolay olur. Bu araç, RACMGR32. RACREG32 birlikte EXE. DLL, seçtiğiniz herhangi bir dizine kopyalanması gerekir. YOLU koyma da Çalıştır'ı kullanarak görev çubuğundan çalıştırılabilir. Alternatif olarak, bir kısayol oluşturun veya bir başvuru Başlat menüsünde yerleştirin.  

@@ -1,7 +1,7 @@
 # [C Çalışma Zamanı Kitaplığı Başvurusu](c-run-time-library-reference.md)
 # [CRT Kitaplık Özellikleri](crt-library-features.md)
 ## [Uyumluluk](compatibility.md)
-### [Windows Mağazası Uygulamaları, Windows Çalışma Zamanı ve C Çalışma Zamanı](windows-store-apps-the-windows-runtime-and-the-c-run-time.md)
+### [UWP Uygulamaları, Windows Çalışma Zamanı ve C Çalışma Zamanı](windows-store-apps-the-windows-runtime-and-the-c-run-time.md)
 ### [ANSI C Uyumluluğu](ansi-c-compliance.md)
 ### [UNIX](unix.md)
 ### [Windows Platformları (CRT)](windows-platforms-crt.md)

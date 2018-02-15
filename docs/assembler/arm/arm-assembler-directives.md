@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 44cd4e5c47618a12c5d4ad5edd3bd8bbf9105309
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c6d42e099ecf8d3630e54eeb629bb3f9f46fa363
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="arm-assembler-directives"></a>ARM Assembler Yönergeleri
 Çoğunlukla, Microsoft ARM assembler Bölüm 7'de belgelenen ARM assembler dili kullanan [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102). Ancak, bazı derleme yönergesi Microsoft uygulamaları ARM derleme yönergeleri farklı. Bu makalede farklar açıklanmaktadır.  
@@ -37,7 +40,7 @@ ms.lasthandoff: 01/03/2018
  KODU16  
  Microsoft ARM assembler izin verme öncesi UAL Flash sözdizimi gösterdiğinden desteklenmiyor.  Flash yönergesi, bunun yerine, UAL sözdizimi ile birlikte kullanın.  
   
- ORTAK  
+ COMMON  
  Ortak bölge için bir hizalama belirtimi desteklenmiyor.  
   
  DCDO  
@@ -57,7 +60,7 @@ ms.lasthandoff: 01/03/2018
 EXPORTsym {[type]}  
 ```  
   
- `sym`dışa aktarılacak simgenin olur.  `[type]`, belirtilmişse, ya da olabilir `[DATA]` simgenin veri noktalarını göstermek için veya `[FUNC]` simgenin için kod noktaları belirtmek için.  
+ `sym` dışa aktarılacak simgenin olur.  `[type]`, belirtilmişse, ya da olabilir `[DATA]` simgenin veri noktalarını göstermek için veya `[FUNC]` simgenin için kod noktaları belirtmek için.  
   
  Bir eş anlamlı dışa aktarma için geneldir.  
   
@@ -75,13 +78,13 @@ EXPORTsym {[type]}
 IMPORT sym{, WEAK alias{, TYPE t}}  
 ```  
   
- `sym`İçeri aktarılacak simgenin adıdır.  
+ `sym` İçeri aktarılacak simgenin adıdır.  
   
  ZAYIF varsa `alias` belirtilirse, bu gösterir `sym` zayıf bir dış. Hiçbir tanımlarında bağlantı aynı anda bulunur sonra bağlamak yerine tüm başvuruları `alias`.  
   
  Varsa türü `t` belirtilmemişse `t` nasıl bağlayıcı çözümlemeye gösteren `sym`.  Bu değerleri için `t` mümkündür:   
-1 — kitaplığı araması gerçekleştirme`sym`  
-2 — kitaplığı aramasını gerçekleştirin`sym`  
+1 — kitaplığı araması gerçekleştirme `sym`  
+2 — kitaplığı aramasını gerçekleştirin `sym`  
 3 —`sym` için diğer ad olduğu `alias` (varsayılan)  
   
  EXTERN olduğu alma eşanlamlısı hariç `sym` yalnızca başvuru geçerli derlemesindeki varsa alınır.  
@@ -99,7 +102,7 @@ IMPORT sym{, WEAK alias{, TYPE t}}
  Desteklenmez.  
   
  RELOC  
- `RELOC n`yalnızca bir yönerge veya bir veri tanım yönergesi izleyebilirsiniz. "Yerleştirildiğinde anonim hiçbir sembolü" dir.  
+ `RELOC n` yalnızca bir yönerge veya bir veri tanım yönergesi izleyebilirsiniz. "Yerleştirildiğinde anonim hiçbir sembolü" dir.  
   
  GEREKTİRİR  
  Desteklenmez.  

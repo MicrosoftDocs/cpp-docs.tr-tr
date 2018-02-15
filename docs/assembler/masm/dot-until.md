@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: .UNTIL
-dev_langs: C++
-helpviewer_keywords: .UNTIL directive
+ms.topic: reference
+f1_keywords:
+- .UNTIL
+dev_langs:
+- C++
+helpviewer_keywords:
+- .UNTIL directive
 ms.assetid: 491de65d-cfb7-4d17-86b1-be83d3d84083
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 35090be2623d5aa49c787150ecdc65c031e01a8c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f1b0f94f4cf1a21366ffac6d0402e17838f24511
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="until"></a>.UNTIL
 Bkz: [. Yineleme](../../assembler/masm/dot-repeat.md).  

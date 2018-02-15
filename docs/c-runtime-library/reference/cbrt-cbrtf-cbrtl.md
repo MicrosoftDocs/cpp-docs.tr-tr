@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - cbrt
 - cbrtf
@@ -28,22 +29,24 @@ f1_keywords:
 - cbrtl
 - cbrt
 - cbrtf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cbrtl function
 - cbrtf function
 - cbrt function
 ms.assetid: ab51d916-3db2-4beb-b46a-28b4062cd33f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9dd91b5ac59917e7f77cfb38faea96b03068b3e3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 73ae5542cd15d414f34e063a03fbafb6e1425381
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cbrt-cbrtf-cbrtl"></a>cbrt, cbrtf, cbrtl
 Küp kök hesaplar.  
@@ -75,9 +78,9 @@ long double cbrtl(
 ## <a name="return-value"></a>Dönüş Değeri  
  `cbrt` İşlevler Küp kökünü döndürür `x`.  
   
-|Giriş|SEH özel durumu|`_matherr`Özel durumu|  
+|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
 |-----------|-------------------|--------------------------|  
-|± ∞, QNAN, UL|yok|yok|  
+|± ∞, QNAN, IND|yok|yok|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `cbrt` Süren `float` veya `long double` türleri. Bir C programı `cbrt` her zaman alan ve döndüren `double`.  

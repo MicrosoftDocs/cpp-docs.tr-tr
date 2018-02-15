@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5e7f69c2ac2dbd8a0079d9160100077ccd35513e
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2eb6b395ec8f47e820cb3184c0d88b4c91e712eb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM Assembler Komut Satırı Başvurusu
 Bu makalede Microsoft ARM assembler komut satırı bilgilerini sağlar *armasm*, ortak nesne dosyası biçimi (COFF), Microsoft uygulamasına ARMv7 Flash assembly dili derler. Bağlayıcı COFF kodu ARM assembler veya kitaplığı tarafından oluşturulan nesne kitaplıkları ile birlikte C Derleyici tarafından üretilen nesne kodu ile bağlayabilirsiniz.  
@@ -35,25 +38,25 @@ armasm [[options]] -o objectfile sourcefile
   
 #### <a name="parameters"></a>Parametreler  
  `options`  
- -hataları`filename`  
+ -hataları `filename`  
  Hata ve uyarı iletileri yönlendirmek `filename`.  
   
- -i`dir[;dir]`  
+ -i `dir[;dir]`  
  Belirtilen dizin INCLUDE arama yoluna ekleyin.  
   
- -önceden`directive`  
+ -önceden `directive`  
  Bir simge önceden tanımlamayı SETA, SETL veya KÜMELERİ yönergesi belirtin. Örnek: **armasm.exe-"SETA 150 COUNT" source.asm önceden**. Daha fazla bilgi için bkz: [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102).  
   
  -nowarn  
  Tüm uyarı iletilerini devre dışı bırakın.  
   
- -Yoksay`warning`  
+ -Yoksay `warning`  
  Belirtilen uyarı devre dışı bırakın. Olası değerler için uyarılar hakkındaki bölüme bakın.  
   
  -Yardım  
  Komut satırı Yardım iletisi yazdırın.  
   
- -Makine`machine`  
+ -Makine `machine`  
  PE üstbilgisinde ayarlanan için makine türünü belirtin.  Olası değerler için `machine` şunlardır:  
 **ARM**— IMAGE_FILE_MACHINE_ARMNT için makine türünü ayarlar. Bu varsayılandır.   
 **Flash**— IMAGE_FILE_MACHINE_THUMB için makine türünü ayarlar.  
@@ -61,7 +64,7 @@ armasm [[options]] -o objectfile sourcefile
  -oldit  
  ARMv7 Stil Oluştur BT engeller.  Varsayılan olarak, ARMv8 uyumlu BT blokları oluşturulur.  
   
- -aracılığıyla`filename`  
+ -aracılığıyla `filename`  
  Ek komut satırı bağımsız değişkenlerini okuma `filename`.  
   
  -16  
@@ -73,7 +76,7 @@ armasm [[options]] -o objectfile sourcefile
  -g  
  Hata ayıklama bilgisi oluşturur.  
   
- -errorReport:`option`  
+ -errorReport: `option`  
  Hataları Microsoft'a bildirilir nasıl iç derleyici belirtin.  Olası değerler için `option` şunlardır:   
 **Hiçbiri**— raporları gönderme.   
 **İstemi**— raporları hemen göndermek için kullanıcıya sor.   
@@ -90,7 +93,7 @@ armasm [[options]] -o objectfile sourcefile
   
  **armasm myasmcode.asm -o myasmcode.obj**  
   
- **cl myccode.c/Link myasmcode.obj**  
+ **cl myccode.c /link myasmcode.obj**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ARM Assembler tanılama iletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)   

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _alloca
+ms.topic: reference
+apiname:
+- _alloca
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - _alloca
 - alloca
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory allocation, stack
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a48b0ab3e9717416736acf4187a27df2c737089b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 104c3df4e6f69d31c5090a87c8029351accd1e1e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="alloca"></a>_alloca
 Yığında bellek ayırır. Daha güvenli bir sürümü olmadığından bu işlev kullanım dışıdır; bkz: [_malloca](../../c-runtime-library/reference/malloca.md).  
@@ -52,7 +56,7 @@ void *_alloca(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`size`  
+ [in] `size`  
  Yığından ayrılacak bayt sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -61,7 +65,7 @@ void *_alloca(
  Bir yığın taşması özel durumu alanı ayrılamıyor ise oluşturulur. Yığın taşması özel durumu C++ özel durum değil; yapılandırılmış özel durum var. C++ özel durum işleme kullanmak yerine, kullanmalısınız [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_alloca`ayırır `size` program yığından bayt. (Ayırma yalnızca kapsamının dışına değil geçtiğinde) çağıran işlevi çıktığında ayrılan alanı boşaltılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin `_alloca` bağımsız değişken olarak [ücretsiz](../../c-runtime-library/reference/free.md).  
+ `_alloca` ayırır `size` program yığından bayt. (Ayırma yalnızca kapsamının dışına değil geçtiğinde) çağıran işlevi çıktığında ayrılan alanı boşaltılır. Bu nedenle, tarafından döndürülen işaretçi değer geçmeyin `_alloca` bağımsız değişken olarak [ücretsiz](../../c-runtime-library/reference/free.md).  
   
  Açıkça çağırmak için kısıtlamalar vardır `_alloca` bir özel durum işleyicisi (EH). X86 sınıfı işlemcilerde çalıştırmak EH yordamları çalışan kendi bellek çerçevede: yığın işaretçisi kapsayan işlevinin geçerli konumuna dayalı olmayan bellek alanında görevlerini gerçekleştirdikleri. En yaygın uygulamaları, Windows NT yapılandırılmış özel durum (SEH) işleme ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma `_alloca` herhangi bir program hatası EH yordamı çağrılırken dönün sırasında aşağıdaki senaryoları sonuçlarında:  
   

@@ -287,7 +287,7 @@
 ### [Nasıl yapılır: WRL Kullanarak Olayları İşleme](how-to-handle-events-using-wrl.md)
 ### [WRL Sınıf Kitaplığı Proje Şablonu](wrl-class-library-project-template.md)
 ### [İzlenecek yol: WRL Kullanarak Temel Windows Çalışma Zamanı Bileşeni Oluşturma](walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)
-### [İzlenecek yol: WRL ve Medya Altyapısı kullanarak Windows Mağazası uygulaması oluşturma](walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)
+### [İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)
 ### [Nasıl yapılır: WRL Kullanarak Klasik COM Bileşeni Oluşturma](how-to-create-a-classic-com-component-using-wrl.md)
 ### [Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma](how-to-instantiate-wrl-components-directly.md)
 ### [Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma](use-winmdidl-and-midlrt-to-create-h-files-from-windows-metadata.md)

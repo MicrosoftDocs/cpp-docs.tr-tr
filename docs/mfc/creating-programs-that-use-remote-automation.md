@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 86a9b9f4dccaaa3a97366dffb11955d3b148aff5
-ms.sourcegitcommit: a5916b48541f804a79891ff04e246628b5f9a24a
+ms.sourcegitcommit: fa7a6dccddce3747389c91277a53e296f905305c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="creating-programs-that-use-remote-automation"></a>Uzaktan Otomasyon Kullanan Programlar Oluşturma
 Herhangi bir Otomasyon nesnesi ve herhangi bir Otomasyon denetleyicisi uzaktan Otomasyon kaynak kodu derleme gerek kalmadan ve yeniden bağlama için gerek kalmadan herhangi bir değişiklik olmadan kullanmaya devam edebilir. Yerel olarak çalışan bir ayarladıktan sonra (diğer bir deyişle, aynı makine üzerindeki), uzaktan yürütmek için yalnızca birkaç adımda gitmek.  

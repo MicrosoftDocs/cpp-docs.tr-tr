@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: atexit
+ms.topic: reference
+apiname:
+- atexit
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,22 +22,25 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: atexit
-dev_langs: C++
+f1_keywords:
+- atexit
+dev_langs:
+- C++
 helpviewer_keywords:
 - processing, at exit
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8e812f39041287d17ee87766f6971d299654f0f4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bf87637fee2040bb5d1db05dd76e7e73728e375c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atexit"></a>atexit
 Belirtilen işlev Çıkışta işler.  
@@ -53,10 +58,10 @@ int atexit(
  Çağrılacak işlev.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `atexit`bir hata oluşursa 0 başarılı olursa ya da sıfır olmayan bir değer döndürür.  
+ `atexit` bir hata oluşursa 0 başarılı olursa ya da sıfır olmayan bir değer döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `atexit` İşlevi bir işlevin adresini geçirilen (`func`) programı normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar `atexit` son giren ilk çıkar (LIFO) sırayla yürütülen işlevlerin bir kayıt oluşturun. İşlevler geçirilen `atexit` parametreleri alamıyor. `atexit`ve `_onexit` öbek işlevleri kayıt tutmak için kullanın. Bu nedenle, yalnızca yığın bellek tarafından kaydedilebilir işlev sayısı sınırlıdır.  
+ `atexit` İşlevi bir işlevin adresini geçirilen (`func`) programı normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar `atexit` son giren ilk çıkar (LIFO) sırayla yürütülen işlevlerin bir kayıt oluşturun. İşlevler geçirilen `atexit` parametreleri alamıyor. `atexit` ve `_onexit` öbek işlevleri kayıt tutmak için kullanın. Bu nedenle, yalnızca yığın bellek tarafından kaydedilebilir işlev sayısı sınırlıdır.  
   
  Kodda `atexit` işlevi, ne zaman bellekten zaten herhangi bir DLL bağımlılıkları içermemelidir `atexit` işlevi çağrılır.  
   
@@ -66,7 +71,7 @@ int atexit(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`atexit`|\<stdlib.h >|  
+|`atexit`|\<stdlib.h>|  
   
 ## <a name="example"></a>Örnek  
  Bu program iter dört işlev ne zaman yürütülmeye işlevlerin yığına `atexit` olarak adlandırılır. Program çıktığında bu programlar, son üzerinde ilk olarak yürütülür.  
@@ -115,6 +120,6 @@ This is executed next.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)

@@ -23,11 +23,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2c7d2882017a624bb00f5a32f5d6da69ff61057
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: bed3ebc3723bfe6af8e3d12fc3702ecb0dda7b4f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="compatibility"></a>Uyumluluk
 Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Standart Kitaplığı çoğunu destekler. C99 (ISO/IEC 9899:1999) kitaplıkla tanımlanan türü genel makroları özel durumları uygulayan \<tgmath.h > ve katı türü uyumluluğu \<complex.h >. UCRT de büyük bir alt kümesini POSIX.1 uygular (ISO/IEC 9945-1:1996, POSIX sistem uygulama programı arabirimi) C Kitaplığı, ancak değil tam olarak belirli bir POSIX standart uyumluluğunu.  Ayrıca, çeşitli Microsoft özgü işlevler ve standart bir parçası olmayan makroları UCRT uygular.  
@@ -44,7 +44,7 @@ Evrensel C çalışma zamanı kitaplığı (UCRT) C++ uyum için gereken C Stand
   
 |Başlık|Açıklama|  
 |-----------|-----------------|  
-|[Windows Mağazası Uygulamaları, Windows Çalışma Zamanı ve C Çalışma Zamanı](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Ne zaman UCRT yordamları Evrensel Windows uygulamaları veya Windows mağazası uygulamaları ile uyumlu olmayan açıklar.|  
+|[UWP Uygulamaları, Windows Çalışma Zamanı ve C Çalışma Zamanı](../c-runtime-library/windows-store-apps-the-windows-runtime-and-the-c-run-time.md)|Ne zaman UCRT yordamları Evrensel Windows uygulamaları veya Microsoft Store uygulamaları ile uyumlu olmayan açıklar.|  
 |[ANSI C Uyumluluğu](../c-runtime-library/ansi-c-compliance.md)|Standart uyumlu UCRT adlandırma açıklar.|  
 |[UNIX](../c-runtime-library/unix.md)|UNIX programlar taşıma için kılavuz bilgiler verilmektedir.|  
 |[Windows Platformları (CRT)](../c-runtime-library/windows-platforms-crt.md)|CRT desteklediği işletim sistemleri listelenmektedir.|  

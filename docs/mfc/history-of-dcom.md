@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Remote Automation, DCOM
 - DCOM, about DCOM
 - DCOM
 ms.assetid: c21aa0ea-1396-4b52-b77f-88fb0fdd2a5c
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6ef567c39c93c3d43fdfc0fa63886144b03cd474
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: fa7a6dccddce3747389c91277a53e296f905305c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="history-of-dcom"></a>DCOM Geçmişi
 Otomasyon, ilk olarak erken 1993 sunulmuştur, yalnızca aynı makinede çalışan uygulamalar arasında kullanılabilir. Rest olan OLE, COM (veya Bileşen Nesne modeli) olarak aynı bağlamasından paylaşılan olduğundan, ancak bu her zaman COM kendisini remoting özellikleri içerecek şekilde güncelleştirildiğinde, "Uzaktan erişilebilir" olacak üzere tasarlanmıştır. Dağıtılmış işlemi tamamen yerel işlemi geçiş var olan kodu çok az kayıpla veya hiç değişiklik gerekir, ayrıca planlandığı.  

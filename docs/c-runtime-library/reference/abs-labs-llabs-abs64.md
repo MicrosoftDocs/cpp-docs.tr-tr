@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - abs
 - _abs64
@@ -35,7 +36,8 @@ f1_keywords:
 - llabs
 - math/llabs
 - cmath/abs
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - absolute values
 - abs function
@@ -43,16 +45,17 @@ helpviewer_keywords:
 - _abs64 function
 - calculating absolute values
 ms.assetid: 60f789d1-4a1e-49f5-9e4e-0bdb277ea26a
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 64c09dc8c8ce1ce5493ac4b2515c6b0be2910627
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1dc1e7532c715a045c2b76c3be2ef915f82693a1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="abs-labs-llabs-abs64"></a>Abs labs, llabs, _abs64
 Bağımsız değişken mutlak değerini hesaplar.  
@@ -99,7 +102,7 @@ __int64 _abs64(
 ## <a name="remarks"></a>Açıklamalar  
  Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `abs` alın ve dönüş `long`, `long long`, `float`, `double`, ve `long double` değerleri. Bu aşırı tanımlanan \<cmath > Üstbilgi. Bir C programı `abs` her zaman alır ve bir tamsayı döndürür  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Herhangi bir tam sayı türü kullanarak temsil edilebilir negatif tamsayı aralığı türü kullanarak temsil edilebilir pozitif tamsayılar aralığından daha büyük olduğundan dönüştürülemez bu işlevler için bağımsız değişken sağlayın mümkündür. Dönüş türü tarafından bağımsız değişkeni mutlak değerini gösterilemezse `abs` işlevler değişmeden bağımsız değişken değeri döndürür. Özellikle, `abs(INT_MIN)` döndürür `INT_MIN`, `labs(LONG_MIN)` döndürür `LONG_MIN`, `llabs(LLONG_MIN)` döndürür `LLONG_MIN`, ve `_abs64(_I64_MIN)` döndürür `_I64_MIN`. Bunun anlamı `abs` işlevleri, pozitif bir değer güvence altına almak için kullanılamaz.  
   
@@ -110,7 +113,7 @@ __int64 _abs64(
 |Yordam|Gerekli C üstbilgisi|Gerekli C++ üstbilgisi|  
 |-------------|-----------------------|---------------------------|  
 |`abs`, `labs`, `llabs`|\<Math.h > veya \<stdlib.h >|\<cmath >, \<cstdlib >, \<stdlib.h > veya \<math.h >|  
-|`_abs64`|\<stdlib.h >|\<cstdlib > veya \<stdlib.h >|  
+|`_abs64`|\<stdlib.h>|\<cstdlib > veya \<stdlib.h >|  
   
  Aşırı yüklenmiş sürümlerini `abs` C++'da eklemelisiniz \<cmath > Üstbilgi.  
   

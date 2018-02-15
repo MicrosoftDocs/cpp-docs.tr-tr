@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: for
-dev_langs: C++
-helpviewer_keywords: FOR directive
+ms.topic: reference
+f1_keywords:
+- for
+dev_langs:
+- C++
+helpviewer_keywords:
+- FOR directive
 ms.assetid: 99872e61-f503-4d34-b305-59f8556ba6b7
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 97afccc8667fcd24fbe92014d2a1d61bb6d91993
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e41290a50f1462f312116494c49b6558992d2860
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="for-masm"></a>FOR (MASM)
 Her biri için bir kez yineleneceğini bir blok işaretler `argument`, geçerli ile `argument` değiştirme `parameter` her tekrar üzerinde.  

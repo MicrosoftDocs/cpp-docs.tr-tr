@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: MMX instruction set
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- MMX instruction set
 ms.assetid: 705deb2d-c3fd-4696-9e22-8bcf25866daf
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b8aa4dc38a8ed04c2df04eaa944d43769ae996f2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0d099baff8b8c73be936c2bd92ce58d20ac6e357
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="intel39s-mmx-instruction-set"></a>Intel &#39; s MMX yönerge kümesi
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  

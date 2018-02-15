@@ -2,7 +2,7 @@
 # [Eşzamanlılık Çalışma Zamanına Genel Bakış](overview-of-the-concurrency-runtime.md)
 # [Eşzamanlılık Çalışma Zamanında Özel Durum İşleme](exception-handling-in-the-concurrency-runtime.md)
 # [Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)](parallel-diagnostic-tools-concurrency-runtime.md)
-# [Windows Mağazası Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)
+# [UWP Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)
 # [Eşzamanlılık Çalışma Zamanını Diğer Eşzamanlılık Modelleriyle Karşılaştırma](comparing-the-concurrency-runtime-to-other-concurrency-models.md)
 ## [OpenMP döngüsünden Eşzamanlılık Çalışma Zamanına geçiş](migrating-from-openmp-to-the-concurrency-runtime.md)
 ### [Nasıl yapılır: Eşzamanlılık Çalışma Zamanı Kullanmak üzere Döngü için bir OpenMP paralelini Dönüştürme](how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)

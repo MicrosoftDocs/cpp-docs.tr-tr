@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - length
 - Type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - variables, length
 - size, getting in inline assembly
@@ -22,19 +24,20 @@ helpviewer_keywords:
 - variables, type
 - variables, size
 ms.assetid: b62c2f2b-a7ad-4145-bae4-d890db86d348
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ee9edf9430c0333317a767e8f8c114453a6d80f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 38cbbd292ea662a725a8356b53fd0c1686e698e1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="type-and-variable-sizes-in-inline-assembly"></a>Satır İçi Derlemede Tür ve Değişken Boyutları
-**Microsoft özel**  
+**Microsoft Specific**  
   
  **UZUNLUĞU**, **BOYUTU**, ve **türü** işleçleri satır içi derlemede sınırlı bir anlama sahip. İle tüm kullanılamaz `DUP` işleci (MASM yönergeleri veya işleçleri ile tanımlayamazsınız nedeniyle). Ancak C veya C++ değişkenleri veya türleri boyutunu bulmak için kullanabilirsiniz:  
   

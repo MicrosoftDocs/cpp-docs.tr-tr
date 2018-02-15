@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -23,7 +24,8 @@ f1_keywords:
 - cgetws
 - _cgetws
 - _cgets
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _cgetws function
 - strings [C++], getting from console
@@ -32,16 +34,17 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9315791023b94fe7a2cdc97f1cec632c05ddbd2f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 81ce9e8144fc280cc8192696178648776c78f033
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cgets-cgetws"></a>_cgets, _cgetws
 Bir karakter dizesi konsoldan alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).  
@@ -50,7 +53,7 @@ Bir karakter dizesi konsoldan alır. Bu işlevlerin daha güvenli sürümleri ku
 >  Bu işlevler artık kullanılmıyor. Visual Studio 2015'te başlayarak, bunlar CRT kullanılabilir değildir. Bu işlev, _cgets_s ve _cgetws_s, güvenli sürümlerini hala kullanılabilir. Bu alternatif işlevler hakkında daha fazla bilgi için bkz: [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,7 +79,7 @@ wchar_t *_cgetws(
  Verileri için depolama konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_cgets`ve `_cgetws` dize başlangıç için bir işaretçi dönüş `buffer[2]`. Varsa `buffer` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, `NULL` ve `errno` için `EINVAL`.  
+ `_cgets` ve `_cgetws` dize başlangıç için bir işaretçi dönüş `buffer[2]`. Varsa `buffer` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, `NULL` ve `errno` için `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin bir karakter dizesi konsoldan okunan ve dize ve uzunluğu gösterdiği konumda depolamak `buffer`. `buffer` Parametresi, bir karakter dizisi için bir işaretçi olmalıdır. Dizinin ilk öğesi `buffer[0]`, okumak için dize maksimum uzunluğu (karakter cinsinden) içermelidir. Dizi dizesi, bir sonlandırma null karakteri ('\0') ve 2 ek bayt tutmak için yeterli sayıda öğe içermesi gerekir. İşlev karakter (CR-LF) birleşimi bir satır başı satır besleme veya belirtilen sayıda karakteri okuma kadar okur. Dize başlayarak depolanan `buffer[2]`. İşlev CR LF yazıyorsa, null karakteri ('\0') depolar. İşlev, dize gerçek uzunluğu sonra ikinci dizi öğesinde depolar. `buffer[1]`.  

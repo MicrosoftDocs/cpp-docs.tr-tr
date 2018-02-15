@@ -182,7 +182,7 @@
 ### [/ALIGN (Bölüm Hizalama)](align-section-alignment.md)
 ### [/ALLOWBIND (DLL Bağlamayı Önle)](allowbind-prevent-dll-binding.md)
 ### [/ALLOWISOLATION (Bildirim Arama)](allowisolation-manifest-lookup.md)
-### [/APPCONTAINER (Windows Mağazası Uygulamaları)](appcontainer-windows-store-app.md)
+### [/APPCONTAINER (UWP/Microsoft Store Uygulaması)](appcontainer-windows-store-app.md)
 ### [/ASSEMBLYDEBUG (DebuggableAttribute Ekleme)](assemblydebug-add-debuggableattribute.md)
 ### [/ASSEMBLYLINKRESOURCE (.NET Framework Kaynağına Bağlantı)](assemblylinkresource-link-to-dotnet-framework-resource.md)
 ### [/ASSEMBLYMODULE (Derlemeye MSIL Modülü Ekle)](assemblymodule-add-a-msil-module-to-the-assembly.md)
