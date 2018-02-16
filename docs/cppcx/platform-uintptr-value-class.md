@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::UIntPtr
-dev_langs: C++
-helpviewer_keywords: Platform::UIntPtr Struct
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::UIntPtr
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::UIntPtr Struct
 ms.assetid: dc4f5176-4c4d-4209-b68e-eb30f2c2465b
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4ff1f046ef69ec451ab3a24a608ccda3ea7c6a71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 380c2bf32a7a7cd43351347b9a4eb5aee24dc8cd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr değer sınıfı
 Büyüklüğü (32 bit veya 64 bit) platformu için uygun olan bir imzasız işaretçisi temsil eder.  

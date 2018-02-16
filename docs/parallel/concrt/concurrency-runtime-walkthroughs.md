@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - walkthroughs [Concurrency Runtime]
 - Concurrency Runtime, walkthroughs
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c9aaff86eb5781872675a46863ccfbafff60d24e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3c5716bcfa997a45ab44fcb1026d7e082026a7a8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="concurrency-runtime-walkthroughs"></a>Eşzamanlılık Çalışma Zamanı İzlenecek Yollar
 Bu bölümde senaryo tabanlı konular eşzamanlılık çalışma zamanı özelliklerinin çoğunu kullanmayı gösterir.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)  
- Nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) arabirimleri bir web hizmeti için HTTP GET ve POST istekleri göndermek için görevleri ile birlikte bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama.  
+ Nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) bir evrensel Windows Platformu (UWP) uygulamasını bir web hizmeti için HTTP GET ve POST istekleri göndermek için görevler birlikte arabirimleri.  
   
  [İzlenecek Yol: Aracı Temelli Uygulama Oluşturma](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)  
  Temel bir aracı temelli uygulama oluşturmayı açıklar.  

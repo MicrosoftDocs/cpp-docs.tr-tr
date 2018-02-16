@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - IRowsetLocate class, provider support for bookmarks
 - OLE DB provider templates, bookmarks
@@ -15,18 +17,18 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cb3c0d60c4b339d7ed2ae8bc4eee503036ac9097
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9e69f0cd9b77f4d492e5011a6c8e653515ea784e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="provider-support-for-bookmarks"></a>Yer İşaretleri Sağlayıcı Desteği
 Bu konudaki örnek ekler `IRowsetLocate` arabirimini `CMyProviderRowset` sınıfı. Neredeyse her durumda, var olan bir COM nesnesine bir arabirim ekleyerek başlatın. Ardından, tüketici şablonlarından çağrılar ekleyerek test edebilirsiniz. Örnek gösterir nasıl yapılır:  
@@ -41,7 +43,7 @@ Bu konudaki örnek ekler `IRowsetLocate` arabirimini `CMyProviderRowset` sınıf
   
  Ekleme `IRowsetLocate` arabirimi, çoğu arabirimlerinden biraz farklıdır. Vtable çizgiyi oluşturan, OLE DB sağlayıcı şablonları türetilmiş bir arabirim işlemek için bir şablon parametresi gerekir. Aşağıdaki kod yeni devralma listesi gösterir:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
@@ -49,18 +51,18 @@ Bu konudaki örnek ekler `IRowsetLocate` arabirimini `CMyProviderRowset` sınıf
 class CMyProviderRowset : public CRowsetImpl< CMyProviderRowset,   
       CTextData, CMyProviderCommand, CAtlArray<CTextData>,   
       CSimpleRow,   
-          IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate> >  
+          IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate>>  
 ```  
   
- Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek için dördüncü Varsayılanları kullanır ve beşinci parametreleri ancak `IRowsetLocateImpl` altıncı parametre olarak. `IRowsetLocateImpl`iki parametre şablonu alan bir OLE DB Şablon sınıfı: Bunlar takma `IRowsetLocate` arabirimini `CMyProviderRowset` sınıfı. Çoğu arabirimleri eklemek için bu adımı atlayın ve sonraki adıma geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimleri bu şekilde ele alınması gerekir.  
+ Dördüncü, beşinci ve altıncı parametrelerin hepsi eklenmiştir. Bu örnek için dördüncü Varsayılanları kullanır ve beşinci parametreleri ancak `IRowsetLocateImpl` altıncı parametre olarak. `IRowsetLocateImpl` iki parametre şablonu alan bir OLE DB Şablon sınıfı: Bunlar takma `IRowsetLocate` arabirimini `CMyProviderRowset` sınıfı. Çoğu arabirimleri eklemek için bu adımı atlayın ve sonraki adıma geçebilirsiniz. Yalnızca `IRowsetLocate` ve `IRowsetScroll` arabirimleri bu şekilde ele alınması gerekir.  
   
  Ardından bildirmeniz gerekir `CMyProviderRowset` çağırmak için `QueryInterface` için `IRowsetLocate` arabirimi. Satırı ekleyin `COM_INTERFACE_ENTRY(IRowsetLocate)` eşleme. İçin arabirim eşlemesi `CMyProviderRowset` aşağıdaki kodda gösterildiği gibi görünmelidir:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
-typedef CRowsetImpl< CMyProviderRowset, CTextData, CMyProviderCommand, CAtlArray<CTextData>, CSimpleRow, IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate> > _RowsetBaseClass;  
+typedef CRowsetImpl< CMyProviderRowset, CTextData, CMyProviderCommand, CAtlArray<CTextData>, CSimpleRow, IRowsetLocateImpl<CMyProviderRowset, IRowsetLocate>> _RowsetBaseClass;  
   
 BEGIN_COM_MAP(CMyProviderRowset)  
    COM_INTERFACE_ENTRY(IRowsetLocate)  
@@ -74,7 +76,7 @@ END_COM_MAP()
   
  İşlenecek **IColumnsInfo::GetColumnsInfo** çağrısı, silme **PROVIDER_COLUMN** içinde eşleme `CTextData` sınıfı. Bir işlev PROVIDER_COLUMN_MAP makrosu tanımlar `GetColumnInfo`. Tanımlamak kendi ihtiyacınız `GetColumnInfo` işlevi. İşlev bildirimi aşağıdaki gibi görünmelidir:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
   
@@ -92,7 +94,7 @@ class CTextData
   
  Ardından, uygulama `GetColumnInfo` MyProviderRS.cpp dosyasındaki gibi işlev:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////  
 // MyProviderRS.cpp  
   
@@ -161,13 +163,13 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 }  
 ```  
   
- `GetColumnInfo`bir özellik olarak adlandırılan olup olmadığını görmek için ilk denetimleri **DBPROP_IRowsetLocate** ayarlanır. OLE DB satır kümesi nesnesi kapalı isteğe bağlı arabirimler her özelliğe sahiptir. Tüketici Bu isteğe bağlı arabirimler birini kullanmak istiyorsa, bir özellik true olarak ayarlanır. Sağlayıcı bu özelliğini denetleyin ve dayalı özel eylemi gerçekleştirin.  
+ `GetColumnInfo` bir özellik olarak adlandırılan olup olmadığını görmek için ilk denetimleri **DBPROP_IRowsetLocate** ayarlanır. OLE DB satır kümesi nesnesi kapalı isteğe bağlı arabirimler her özelliğe sahiptir. Tüketici Bu isteğe bağlı arabirimler birini kullanmak istiyorsa, bir özellik true olarak ayarlanır. Sağlayıcı bu özelliğini denetleyin ve dayalı özel eylemi gerçekleştirin.  
   
  Uygulamanızda, komut nesnesi için işaretçi kullanarak özelliği alın. `pThis` İşaretçi satır kümesi veya komut sınıfını temsil eder. Burada şablon kullandığınızdan dolayı olarak geçirmek zorunda bir `void` işaretçi veya kod derlenmez.  
   
  Sütun bilgileri içerecek şekilde statik bir dizi belirtin. Tüketici yer işareti sütunu istemezse bir dizi girişi boşa harcanmış olur. Bu dizi dinamik olarak ayırabilir, ancak düzgün destroy emin olmak gerekir. Bu örnek tanımlar ve ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX makrolarını diziye bilgileri eklemek için kullanır. Aşağıdaki kodda gösterildiği gibi MyProviderRS.H dosyasına makrolar ekleyebilirsiniz:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
@@ -198,13 +200,13 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
   
  Tüketicideki kodu test etmek için bazı değişiklikler yapmanız gerekir `OnRun` işleyicisi. İlk işlevi için bir özellik için özellik kümesi eklemek için kodu ekleyin değişikliktir. Kod kümeleri **DBPROP_IRowsetLocate** özelliğinin true, böylece sağlayıcı yer işareti sütununu istediğinizi söyler. `OnRun` İşleyici kodu aşağıdaki gibi görünmelidir:  
   
-```  
+```cpp
 //////////////////////////////////////////////////////////////////////  
 // TestProv Consumer Application in TestProvDlg.cpp  
   
 void CTestProvDlg::OnRun()   
 {  
-   CCommand<CAccessor<CProvider> > table;  
+   CCommand<CAccessor<CProvider>> table;  
    CDataSource source;  
    CSession   session;  
   
@@ -229,7 +231,8 @@ void CTestProvDlg::OnRun()
       DBCOMPARE compare;  
       if (ulCount == 2)  
          tempBookmark = table.bookmark;  
-      HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,  
+
+HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,  
                  &compare);  
       if (FAILED(hr))  
          ATLTRACE(_T("Compare failed: 0x%X\n"), hr);  
@@ -251,7 +254,7 @@ void CTestProvDlg::OnRun()
   
  Ayrıca tüketicideki kullanıcı kayıt güncelleştirmeniz gerekir. Yer işareti ve bir girişe işlemek için sınıfa bir giriş eklemek **COLUMN_MAP**:  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////  
 // TestProvDlg.cpp  
   

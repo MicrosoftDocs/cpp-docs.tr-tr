@@ -4,44 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COLUMN_ENTRY_PS_STATUS
-dev_langs: C++
-helpviewer_keywords: COLUMN_ENTRY_PS_STATUS macro
+f1_keywords:
+- COLUMN_ENTRY_PS_STATUS
+dev_langs:
+- C++
+helpviewer_keywords:
+- COLUMN_ENTRY_PS_STATUS macro
 ms.assetid: c02140c6-246f-4df5-8b86-698d7d137022
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0c0507ed572fcea6ba9f73cb0c16ae079f9ae857
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 766f505dff0035bdfe465f191c84423ce38ba424
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="columnentrypsstatus"></a>COLUMN_ENTRY_PS_STATUS
 Satır kümesi bağlamada veritabanındaki belirli sütunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-COLUMN_ENTRY_PS_STATUS(  
-nOrdinal  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)  
   
 ```  
   
@@ -60,7 +53,7 @@ status
  `data`  
  [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.  
   
- *durumu*  
+ *Durumu*  
  [in] Sütun durumuna bağlı olmasını değişkeni.  
   
 ## <a name="remarks"></a>Açıklamalar  

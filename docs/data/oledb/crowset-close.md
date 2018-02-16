@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,30 +17,31 @@ f1_keywords:
 - ATL::CRowset::Close
 - ATL::CRowset<TAccessor>::Close
 - CRowset.Close
-dev_langs: C++
-helpviewer_keywords: Close method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Close method
 ms.assetid: 966d779e-e148-4dc0-bbba-7cfb9fa6a16b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 52904d76251289fbb98bf30865da1ae5684da4de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 48056f59482c0fc9750aed07a2aa394178fc5b18
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetclose"></a>CRowset::Close
 Satır ve geçerli serbest [IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

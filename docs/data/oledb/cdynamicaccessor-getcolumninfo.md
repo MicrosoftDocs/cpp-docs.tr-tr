@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,35 +14,34 @@ f1_keywords:
 - ATL::CDynamicAccessor::GetColumnInfo
 - CDynamicAccessor.GetColumnInfo
 - CDynamicAccessor::GetColumnInfo
-dev_langs: C++
-helpviewer_keywords: GetColumnInfo method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetColumnInfo method
 ms.assetid: 7f2102ea-b7cc-4714-812f-3ca2857f4b9a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ece75eeb539dff60b29396e3076cd2465571453a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8091dec73a4a0d5f3c933988484fb59caaebae97
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicaccessorgetcolumninfo"></a>CDynamicAccessor::GetColumnInfo
 Çoğu tüketiciler tarafından gerekli sütun meta verileri döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT GetColumnInfo(   
-   IRowset* pRowset,   
+```cpp
+HRESULT GetColumnInfo(IRowset* pRowset,   
    DBORDINAL* pColumns,   
    DBCOLUMNINFO** ppColumnInfo,   
-   OLECHAR** ppStringsBuffer    
-) throw( );  
+   OLECHAR** ppStringsBuffer) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _write
+ms.topic: reference
+apiname:
+- _write
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,23 +22,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: _write
-dev_langs: C++
+f1_keywords:
+- _write
+dev_langs:
+- C++
 helpviewer_keywords:
 - _write function
 - write function
 - files [C++], writing to
 ms.assetid: 7b868c33-766f-4e1a-95a7-e8d25f0604c4
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2169415576f29f6d64d8f597da61fa65a8f7bf2d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8bf8fcbfc0d66f89667d36baeb75252e7d92abc5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="write"></a>_write
 Verileri bir dosyaya yazar.  
@@ -145,5 +150,5 @@ Wrote 36 bytes to file.
  [Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)   
  [fwrite](../../c-runtime-library/reference/fwrite.md)   
  [_kurulum Aç, _wopen](../../c-runtime-library/reference/open-wopen.md)   
- [_microsoft](../../c-runtime-library/reference/read.md)   
+ [_read](../../c-runtime-library/reference/read.md)   
  [_setmode](../../c-runtime-library/reference/setmode.md)

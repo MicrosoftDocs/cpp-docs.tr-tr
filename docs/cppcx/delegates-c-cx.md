@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3612421c9089fbb97c0bf256040c8082cad01afc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: aca49513c52c5eff9c10461281bb4235fa39349f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
 `delegate` Anahtar sözcüğü bir işlev nesnesi standart C++'ta Windows çalışma zamanı denk bir başvuru türü bildirmek için kullanılır. Bir işlev imzasına benzer bir temsilci bildirimi; sarmalanmış işlev olmalıdır parametre türleri ve dönüş türünü belirtir. Bir kullanıcı tarafından tanımlanan temsilci bildirimi şudur:  
@@ -40,7 +41,7 @@ event PrimeFoundHandler^ primeFoundEvent;
 > [!TIP]
 >  Olay işleyici oluşturduğunuzda, visual Studio sizin için çok fazla iş yapar. Örneğin, olay işleyici XAML biçimlendirme belirtirseniz, araç ipucu görünür. Araç İpucu seçerseniz, Visual Studio, otomatik olarak olay işleyicisi yöntemi oluşturur ve olay yayımlama sınıfı üzerinde ile ilişkilendirir.  
   
- Aşağıdaki örnek temel düzeni gösterir. `Windows::Foundation::TypedEventHandler`Temsilci türüdür. İşleyici işlevi, adlandırılmış işlevi kullanılarak oluşturulur.  
+ Aşağıdaki örnek temel düzeni gösterir. `Windows::Foundation::TypedEventHandler` Temsilci türüdür. İşleyici işlevi, adlandırılmış işlevi kullanılarak oluşturulur.  
   
  App.h içinde:  
   
@@ -104,7 +105,7 @@ event PrimeFoundHandler^ primeFoundEvent;
   
 -   üye işaretçileri  
   
--   Std::Function  
+-   std::function  
   
  Aşağıdaki örnek, bu nesnelerin her biri bir temsilciyi oluşturmak gösterilmiştir. Tam olarak aynı şekilde, oluşturmak için kullanılan nesne türüne bakılmaksızın temsilcisi tüketebilir.  
   

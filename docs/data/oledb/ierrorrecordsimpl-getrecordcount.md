@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,32 +13,31 @@ f1_keywords:
 - ATL::IErrorRecordsImpl::GetRecordCount
 - IErrorRecordsImpl.GetRecordCount
 - ATL.IErrorRecordsImpl.GetRecordCount
-dev_langs: C++
-helpviewer_keywords: GetRecordCount method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetRecordCount method
 ms.assetid: 44388bc3-1c64-4491-a1c5-28f3497ef040
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2683e250b24ef5856d1f36d4d36623bb2555ce79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dde5fa301fec0a8a11fcea6c38eab1adfd32e97d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ierrorrecordsimplgetrecordcount"></a>IErrorRecordsImpl::GetRecordCount
 OLE DB kayıt nesnesinde kayıt sayısını döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD( GetRecordCount )(  
-   ULONG *pcRecords   
-);  
+```cpp
+      STDMETHOD(GetRecordCount )(ULONG *pcRecords);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

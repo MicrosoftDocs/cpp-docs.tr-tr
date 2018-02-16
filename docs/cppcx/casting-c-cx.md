@@ -6,21 +6,22 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 18963860b1f9398343370378140ebee7314690b3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5e16aacdf713d1f9ff2b40532abfd2b5d6316f7a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="casting-ccx"></a>Atama (C + +/ CX)
-Dört farklı atama işleçleri uygulamak için Windows çalışma zamanı türleri: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). `safe_cast`ve `static_cast` dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) ayrıca derleme zamanı tür denetimi gerçekleştirir. `dynamic_cast`döndürür `nullptr` türü dönüştürme işlemi başarısız olursa. Ancak `reinterpret_cast` boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz `reinterpret_cast` dönüştürme başarılı olur bilmiyorsanız. Ayrıca, C türü Atamalar, C + kullanmamanızı öneririz +/ CX kod özdeş olduğundan `reinterpret_cast`.  
+Dört farklı atama işleçleri uygulamak için Windows çalışma zamanı türleri: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). `safe_cast` ve `static_cast` dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) ayrıca derleme zamanı tür denetimi gerçekleştirir. `dynamic_cast` döndürür `nullptr` türü dönüştürme işlemi başarısız olursa. Ancak `reinterpret_cast` boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz `reinterpret_cast` dönüştürme başarılı olur bilmiyorsanız. Ayrıca, C türü Atamalar, C + kullanmamanızı öneririz +/ CX kod özdeş olduğundan `reinterpret_cast`.  
   
  Derleyici ve çalışma zamanı örtük atamalar da gerçekleştirmek — Örneğin, bir değer veya yerleşik türü geçirildiğinde bağımsız değişken olarak bir yöntem parametresi işlemleri kutulama türüdür `Object^`. Örtük bir dönüştürme işlemi, teorik olarak hiçbir zaman bu çalışma zamanında bir özel durum neden olmalıdır; Derleyici örtük bir dönüştürme gerçekleştirilemiyor, derleme sırasında bir hata oluşturur.  
   
@@ -61,7 +62,7 @@ Windows çalışma zamanı özel durumları yerine HRESULT hata kodlarını kull
 ```  
   
 ## <a name="dynamiccast"></a>dynamic_cast  
- Kullanım `dynamic_cast` cast ne zaman bir nesne (daha açık belirtmek gerekirse bir hat `^`) fazla türetilmiş bir tür için iki, hedef beklediğiniz nesne bazen olabilir `nullptr` veya dönüştürme başarısız olabilir ve bu koşulun normal kod olarak ele almak istediğiniz yolu yerine bir özel durum. Örneğin, **Windows mağazası boş uygulaması** proje şablonu, `OnLaunched` yönteminde `app.xamp.cpp` kullanan `dynamic_cast` uygulaması penceresini içerik olup olmadığını sınamak için. İçerik yoksa, bir hata değildir; Bu beklenen bir durumdur. `Windows::Current::Content`olan bir `Windows::UI::XAML::UIElement` ve dönüştürme için bir `Windows::UI.XAML::Controls::Frame`, devralma hiyerarşisinde daha türetilmiş bir tür değil.  
+ Kullanım `dynamic_cast` cast ne zaman bir nesne (daha açık belirtmek gerekirse bir hat `^`) fazla türetilmiş bir tür için iki, hedef beklediğiniz nesne bazen olabilir `nullptr` veya dönüştürme başarısız olabilir ve bu koşulun normal kod olarak ele almak istediğiniz yolu yerine bir özel durum. Örneğin, **boş uygulama (Evrensel Windows)** proje şablonu, `OnLaunched` yönteminde `app.xamp.cpp` kullanan `dynamic_cast` uygulaması penceresini içerik olup olmadığını sınamak için. İçerik yoksa, bir hata değildir; Bu beklenen bir durumdur. `Windows::Current::Content` olan bir `Windows::UI::XAML::UIElement` ve dönüştürme için bir `Windows::UI.XAML::Controls::Frame`, devralma hiyerarşisinde daha türetilmiş bir tür değil.  
 ```
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)  
 {  
@@ -112,13 +113,13 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 |||  
 |-|-|  
 |HSTRING|Dize ^|  
-|HSTRING *|Dize ^ *|  
-|Iınspectable *|Nesne ^|  
-|Iınspectable **|Nesne ^ *|  
-|Iınspectable-türetilen-türü *|aynı-arabirimi-gelen-winmd ^|  
-|Iınspectable-türetilen-türü **|aynı-arabirimi-gelen-winmd ^ *|  
-|IDefault-arabirimi-in-RuntimeClass *|aynı-RefClass-gelen-winmd ^|  
-|IDefault-arabirimi-in-RuntimeClass **|aynı-RefClass-gelen-winmd ^ *|  
+|HSTRING *|String^*|  
+|Iınspectable *|Object^|  
+|Iınspectable **|Object^*|  
+|Iınspectable-türetilen-türü *|same-interface-from-winmd^|  
+|Iınspectable-türetilen-türü **|same-interface-from-winmd^*|  
+|IDefault-interface-of-RuntimeClass*|aynı-RefClass-gelen-winmd ^|  
+|IDefault-interface-of-RuntimeClass**|same-RefClass-from-winmd^*|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür sistemi](../cppcx/type-system-c-cx.md)   

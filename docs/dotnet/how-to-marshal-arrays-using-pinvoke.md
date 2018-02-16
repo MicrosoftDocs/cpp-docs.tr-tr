@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - marshaling [C++], arrays
 - platform invoke [C++], arrays
 - interop [C++], arrays
 - data marshaling [C++], arrays
 ms.assetid: a1237797-a2da-4df4-984a-6333ed3af406
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3694d6628005c49cc824e52d710e64e060822f96
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 50ff0e0a6e61b3c2c691296f92f6ad471a3007e9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-marshal-arrays-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizileri Sıralama
 Bu konuda, C stilinde dizeleri CLR dize türü kullanılarak çağrılabilir kabul nasıl yerel işlevler açıklanmaktadır <xref:System.String> desteği .NET Framework Platform çağırma kullanma. P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir (Aksi takdirde bkz [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)).  
@@ -37,7 +39,7 @@ Bu konuda, C stilinde dizeleri CLR dize türü kullanılarak çağrılabilir kab
   
  Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen modül dizisi kabul eden bir işlev tanımlayan bir DLL'dir. İkinci modül bu işlevi alır ancak yönetilen bir dizi açısından tanımlar ve kullanan bir yönetilen komut satırı uygulamasıdır <xref:System.Runtime.InteropServices.MarshalAsAttribute> dizi çağrıldığında yerel bir dizeye dönüştürülür olduğunu belirtmek için özniteliği.  
   
- / CLR, ancak/CLR ile yönetilen modül derlenmiş: pure de çalışır. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+ Yönetilen modül/CLR ile derlenir.  
   
 ```cpp  
 // TraditionalDll4.cpp  

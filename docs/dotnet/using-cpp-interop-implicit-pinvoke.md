@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - blittable types [C++]
 - platform invoke [C++], implicit
@@ -27,18 +29,18 @@ helpviewer_keywords:
 - C++ COM Interop
 - .NET [C++], porting C++ native to
 ms.assetid: 5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3a5f6b6cd68906753bc4f9a5fbc1d9e00bad02f8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 78d104a41f052f994a19ebe359c8d3e557274783
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="using-c-interop-implicit-pinvoke"></a>C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)
 Diğer .NET dilleri, Visual C++ yönetilen ve yönetilmeyen kodu aynı uygulama ve hatta aynı dosyada verir bir birlikte çalışabilirlik desteğe sahiptir (ile [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) pragmaları). Bu uygulamanın geri kalanına etkilemeden uygulamalarınız Visual C++ .NET işlevselliği tümleştirmek Visual C++ geliştiriciler sağlar.  
@@ -54,7 +56,7 @@ Diğer .NET dilleri, Visual C++ yönetilen ve yönetilmeyen kodu aynı uygulama 
  Açık PInvoke .NET Framework tarafından desteklenir ve çoğu .NET dillerinde kullanılabilir. Ancak adından da anlaşılacağı gibi C++ birlikte çalışabilirliği Visual C++'a özeldir.  
   
 ## <a name="c-interop"></a>C++ Birlikte Çalışma  
- C++ birlikte çalışması üzerinde açık PInvoke önerilir, bu, daha iyi tür güvenliği sağlar, uygulama genellikle daha az sıkıcı, yönetilmeyen API değiştirilir ve ile mümkün olmayan performans geliştirmeleri olası açık hale getirir daha forgiving değil çünkü PInvoke. Ancak, C++ birlikte çalışabilirliği yönetilmeyen kaynak kod kullanılabilir değilse veya ile derleme yapılırken mümkün değildir **/CLR: safe**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı. Bilgi için bkz: [saf ve doğrulanabilen kod (C + +/ CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md).  
+ C++ birlikte çalışması üzerinde açık PInvoke önerilir, bu, daha iyi tür güvenliği sağlar, uygulama genellikle daha az sıkıcı, yönetilmeyen API değiştirilir ve ile mümkün olmayan performans geliştirmeleri olası açık hale getirir daha forgiving değil çünkü PInvoke. Ancak, C++ birlikte çalışabilirliği yönetilmeyen kaynak kod kullanılabilir değilse mümkün değildir.  
   
 ## <a name="c-com-interop"></a>C++ COM Birlikte Çalışma  
  COM bileşenleriyle birlikte çalışmaya geldiğinde Visual C++'ın desteklediği birlikte çalışabilirlik özelliklerini diğer .NET dilleri göre belirgin bir avantaj sunar. .NET Framework'ün kısıtlamaları sınırlı olmak yerine [Tlbimp.exe (tür kitaplığı içeri Aktarıcı)](/dotnet/framework/tools/tlbimp-exe-type-library-importer), veri türleri ve her COM arabirimi her üyesinin zorunlu Etkilenme için sınırlı destek gibi C++ birlikte çalışabilirliği COM sağlar. konumundaki erişilecek bileşenleri olur ve ayrı birlikte çalışma derlemeleri gerektirmez. Daha fazla bilgi için bkz: [kullanarak COM .NET gelen](http://msdn.microsoft.com/en-us/03976661-6278-4227-a6c1-3b3315502c15).  

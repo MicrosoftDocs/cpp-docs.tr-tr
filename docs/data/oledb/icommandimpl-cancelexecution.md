@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,30 +14,31 @@ f1_keywords:
 - ATL.ICommandImpl.CancelExecution
 - CancelExecution
 - ICommandImpl.CancelExecution
-dev_langs: C++
-helpviewer_keywords: CancelExecution method
+dev_langs:
+- C++
+helpviewer_keywords:
+- CancelExecution method
 ms.assetid: ffd86b47-1a04-4460-86b2-b478455c3391
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 73bdf26a107dfd70f5506f27a76d146a354e7107
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0ef760e64e4c5076de855d5acc1235280d0bee91
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="icommandimplcancelexecution"></a>ICommandImpl::CancelExecution
 Geçerli komut yürütme iptal eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-HRESULT CancelExecution( );  
+```cpp
+HRESULT CancelExecution();  
   
 ```  
   

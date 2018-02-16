@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wstat64
 - _stati64
@@ -80,7 +81,8 @@ f1_keywords:
 - stat/_wstati64
 - stat/_wstat32i64
 - stat/_wstat64i32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - files [C++], status information
 - _stat function
@@ -113,16 +115,17 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ed4a232cc5d563a724adf29500e70aa28cf36432
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2c84ed9e6ad7edab34dc80a4d2b446b7333f95c2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="stat-stat32-stat64-stati64-stat32i64-stat64i32-wstat-wstat32-wstat64-wstati64-wstat32i64-wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 Durum bilgileri, bir dosyada alın.  
@@ -195,16 +198,16 @@ int _wstat64i32(
  Kullanmadığınız sürece, 1 Ocak 1970 yarısı daha ve 23:59:59 31 Aralık 3000 UTC, önce sonraki ise, bir dosyada tarih damgası temsil edilebilir `_stat32` veya `_wstat32`, veya tanımlamış olduğunuz `_USE_32BIT_TIME_T`, yalnızca kadar tarihi bu durumda gösterilebilir 23:59:59 18 Ocak 2038, UTC.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_stat` İşlevi dosya veya dizin tarafından belirtilen hakkında bilgi edinir `path` ve gösterdiği yapısı depolar `buffer`. `_stat`çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir.  
+ `_stat` İşlevi dosya veya dizin tarafından belirtilen hakkında bilgi edinir `path` ve gösterdiği yapısı depolar `buffer`. `_stat` çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir.  
   
- `_wstat`bir joker karakter sürümü `_stat`; `path` bağımsız değişkeni `_wstat` bir joker karakter dizesidir. `_wstat`ve `_stat` durumlar dışında aynı şekilde davranır `_wstat` çok baytlı karakter dizeleri işlemez.  
+ `_wstat` bir joker karakter sürümü `_stat`; `path` bağımsız değişkeni `_wstat` bir joker karakter dizesidir. `_wstat` ve `_stat` durumlar dışında aynı şekilde davranır `_wstat` çok baytlı karakter dizeleri işlemez.  
   
  Bu işlevlerin Çeşitlemeler 32 veya 64 bit saat türleri ve 32 veya 64 bit dosya uzunlukları destekler. İlk sayısal son ekten (`32` veya `64`) zaman boyutu gösteren türü; kullanılan ikinci soneki ya da `i32` veya `i64`, belirten olup dosya boyutu 32 bit veya 64 bit tamsayı olarak temsil edilir.  
   
- `_stat`eşdeğer olan `_stat64i32`, ve `struct _stat` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_stat` 32-bit zamanını kullanır ve `struct _stat` 32-bit saati içerir. Aynı için doğrudur `_stati64`.  
+ `_stat` eşdeğer olan `_stat64i32`, ve `struct _stat` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_stat` 32-bit zamanını kullanır ve `struct _stat` 32-bit saati içerir. Aynı için doğrudur `_stati64`.  
   
 > [!NOTE]
->  `_wstat`ile çalışmaz [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] sembolik bağlantılar. Bu durumda, `_wstat` her zaman bir dosya boyutu 0 rapor eder. `_stat`sembolik bağlantılar ile düzgün çalışır.  
+>  `_wstat` ile çalışmaz [!INCLUDE[wiprlhext](../../c-runtime-library/reference/includes/wiprlhext_md.md)] sembolik bağlantılar. Bu durumda, `_wstat` her zaman bir dosya boyutu 0 rapor eder. `_stat` sembolik bağlantılar ile düzgün çalışır.  
   
  Bu işlev parametrelerini doğrular. Her iki `path` veya `buffer` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   

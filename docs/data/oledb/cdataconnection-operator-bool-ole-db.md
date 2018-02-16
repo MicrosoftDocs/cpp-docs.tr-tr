@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,32 +13,32 @@ f1_keywords:
 - ATL::CDataConnection::operatorBOOL
 - CDataConnection.operatorBOOL
 - ATL.CDataConnection.operatorBOOL
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - BOOL operator
 - operator bool
 ms.assetid: e0791faf-2ed2-4dbb-9e68-3b9b5da2b7a7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d446e0082381a927e139fc803a0c5ee17ce610f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5a3d8317df5d7ed4d034b2d16b9d282aab08f848
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdataconnectionoperator-bool-ole-db"></a>CDataConnection::operator bool (OLE DB)
 Geçerli oturumu açık olup olmadığını belirler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-operator bool( ) throw( );  
+```cpp
+operator bool() throw();  
   
 ```  
   

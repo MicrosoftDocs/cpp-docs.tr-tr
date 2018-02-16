@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: realloc
+ms.topic: reference
+apiname:
+- realloc
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -26,7 +28,8 @@ f1_keywords:
 - _nrealloc
 - realloc
 - _frealloc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _brealloc function
 - realloc function
@@ -38,16 +41,17 @@ helpviewer_keywords:
 - _frealloc function
 - reallocate memory blocks
 ms.assetid: 2b2239de-810b-4b11-9438-32ab0a244185
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 525b0f0877471b5bfd6d9fa16551b21908f229a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e378f907c864f534173f746404f853ffa415c70c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="realloc"></a>realloc
 Bellek bloklarını yeniden ayırma.  
@@ -69,7 +73,7 @@ void *realloc(
  Yeni boyutunu bayt cinsinden.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `realloc`döndüren bir `void` bırakılan (ve muhtemelen taşınan) bellek bloğu işaretçi.  
+ `realloc` döndüren bir `void` bırakılan (ve muhtemelen taşınan) bellek bloğu işaretçi.  
   
  Blok verilen boyuta genişletmek için yeterli kullanılabilir bellek yoksa, özgün blok değiştirilmeden olduğundan, ve `NULL` döndürülür.  
   
@@ -80,11 +84,11 @@ void *realloc(
 ## <a name="remarks"></a>Açıklamalar  
  `realloc` İşlevi bir ayrılmış bellek bloğu boyutu değişir. `memblock` Bağımsız değişkeni bellek bloğu başlangıcına işaret eder. Varsa `memblock` olan `NULL`, `realloc` aynı şekilde davranır `malloc` ve yeni bir blok ayırır `size` bayt sayısı. Varsa `memblock` değil `NULL`, önceki bir çağrı tarafından döndürülen bir işaretçi olmalıdır `calloc`, `malloc`, veya `realloc`.  
   
- `size` Bağımsız değişkeni yeni blok boyutunu bayt cinsinden verir. Yeni blok farklı bir konumda olabilir ancak blok içeriğini kadar kısa yeni ve eski boyutlarının değiştirilmemiştir. Yeni bir bellek konumda yeni blok olabileceğinden, işaretçi tarafından döndürülen `realloc` geçtiğini işaretçi olması garanti edilmemiştir `memblock` bağımsız değişkeni. `realloc`sıfır olmayan yeni ayrılan bellek arabellek büyüme söz konusu olduğunda yapar.  
+ `size` Bağımsız değişkeni yeni blok boyutunu bayt cinsinden verir. Yeni blok farklı bir konumda olabilir ancak blok içeriğini kadar kısa yeni ve eski boyutlarının değiştirilmemiştir. Yeni bir bellek konumda yeni blok olabileceğinden, işaretçi tarafından döndürülen `realloc` geçtiğini işaretçi olması garanti edilmemiştir `memblock` bağımsız değişkeni. `realloc` sıfır olmayan yeni ayrılan bellek arabellek büyüme söz konusu olduğunda yapar.  
   
- `realloc`Ayarlar `errno` için `ENOMEM` bellek ayırma başarısız olursa veya bellek miktarını aşıyor istediyseniz `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ `realloc` Ayarlar `errno` için `ENOMEM` bellek ayırma başarısız olursa veya bellek miktarını aşıyor istediyseniz `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- `realloc`çağrıları `malloc` C++ kullanmak için [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir, hatasında kullanılıp `malloc` belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). Varsayılan olarak, `malloc` yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, `realloc` bellek ayırmak başarısız `malloc` yeni işleyici yordamını aynı çağırıyor biçimi `new` işleci mu aynı nedenden dolayı başarısız olduğunda. Varsayılan değer geçersiz kılmak için arama  
+ `realloc` çağrıları `malloc` C++ kullanmak için [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir, hatasında kullanılıp `malloc` belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). Varsayılan olarak, `malloc` yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, `realloc` bellek ayırmak başarısız `malloc` yeni işleyici yordamını aynı çağırıyor biçimi `new` işleci mu aynı nedenden dolayı başarısız olduğunda. Varsayılan değer geçersiz kılmak için arama  
   
 ```  
 _set_new_mode(1)  
@@ -94,7 +98,7 @@ _set_new_mode(1)
   
  Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında `realloc` çözümler [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).  
   
- `realloc`işaretli `__declspec(noalias)` ve `__declspec(restrict)`, işlev genel değişkenler değiştirmemeniz garanti ve işaretçi döndürdü diğer adı değil anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md) ve [kısıtlamak](../../cpp/restrict.md).  
+ `realloc` işaretli `__declspec(noalias)` ve `__declspec(restrict)`, işlev genel değişkenler değiştirmemeniz garanti ve işaretçi döndürdü diğer adı değil anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md) ve [kısıtlamak](../../cpp/restrict.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -154,5 +158,5 @@ Size of block after realloc of 1000 more longs: 8000
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
- [boş](../../c-runtime-library/reference/free.md)   
+ [Boş](../../c-runtime-library/reference/free.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)

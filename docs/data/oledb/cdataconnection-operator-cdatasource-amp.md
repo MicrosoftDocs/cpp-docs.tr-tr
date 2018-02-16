@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,32 +13,32 @@ f1_keywords:
 - CDataConnection.operatorCDataSource&
 - operatorCDataSource&
 - CDataConnection::operatorCDataSource&
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDataSource& operator
 - operator & (CDataSource)
 ms.assetid: 852faeee-f1b1-4465-9828-b261d1edf022
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5cd6c1821f49ba56b8d6ca27932b6cd7f0e17bf6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c52610d947d60fa7ea1be9b764fd09ae0e777a3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdataconnectionoperator-cdatasourceamp"></a>CDataConnection::operator CDataSource&amp;
 Kapsanan bir başvuru döndürür `CDataSource` nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-operator const CDataSource&() throw( );  
+```cpp
+operator const CDataSource&() throw();  
   
 ```  
   

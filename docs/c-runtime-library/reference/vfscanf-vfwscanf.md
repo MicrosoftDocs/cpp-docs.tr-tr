@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - vfwscanf
 - vfscanf
@@ -26,18 +27,20 @@ f1_keywords:
 - vfwscanf
 - _vftscanf
 - vfscanf
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: c06450ef-03f1-4d24-a8ac-d2dd98847918
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8abe9916aa7b64663edcf05a400dd5cb0107c482
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8e3cbf345f686a08fbcd7e3ead6ebcd24d9cd803
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vfscanf-vfwscanf"></a>vfscanf, vfwscanf
 Okuma akışı verilerden biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [vfscanf_s, vfwscanf_s](../../c-runtime-library/reference/vfscanf-s-vfwscanf-s.md).  
@@ -73,9 +76,9 @@ int vfwscanf(
  Bu işlevler kendi parametreleri doğrulayın. Varsa `stream` veya `format` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `EOF` ve `errno` için `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `vfscanf` İşlevi geçerli konumunu veri okuyan `stream` tarafından verilen konumları içine `arglist` bağımsız değişken listesi. Listedeki her bir bağımsız değişkeni bir tür belirteci karşılık gelen bir türde bir değişken için bir işaretçi olmalıdır `format`. `format`giriş yorumu alanları ve aynı denetimleri form ve olarak işlev `format` bağımsız değişkeni için `scanf`; bkz [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) bir açıklaması için `format`.  
+ `vfscanf` İşlevi geçerli konumunu veri okuyan `stream` tarafından verilen konumları içine `arglist` bağımsız değişken listesi. Listedeki her bir bağımsız değişkeni bir tür belirteci karşılık gelen bir türde bir değişken için bir işaretçi olmalıdır `format`. `format` giriş yorumu alanları ve aynı denetimleri form ve olarak işlev `format` bağımsız değişkeni için `scanf`; bkz [scanf](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) bir açıklaması için `format`.  
   
- `vfwscanf`bir joker karakter sürümü `vfscanf`; biçim bağımsız değişkeni `vfwscanf` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı aynı şekilde davranır. `vfscanf`UNICODE akışı girişten desteklemiyor.  
+ `vfwscanf` bir joker karakter sürümü `vfscanf`; biçim bağımsız değişkeni `vfwscanf` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı aynı şekilde davranır. `vfscanf` UNICODE akışı girişten desteklemiyor.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

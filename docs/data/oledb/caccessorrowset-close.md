@@ -4,36 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CAccessorRowset.Close
 - CAccessorRowset::Close
-dev_langs: C++
-helpviewer_keywords: Close method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Close method
 ms.assetid: f5de9124-eb3c-4b78-b97a-f4f7bcd86c3b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 66e8d1fc23c6c669d1521820e456b86f5b76e3e4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: bfec7ca7dce2e5e88ff295f9d96a8e37a5079566
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="caccessorrowsetclose"></a>CAccessorRowset::Close
 Tüm etkin erişimciler ve satır serbest bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-void Close( );  
+```cpp
+void Close();  
   
 ```  
   

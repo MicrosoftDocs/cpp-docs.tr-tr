@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,81 +13,67 @@ f1_keywords:
 - ATL.CDataSource.Open
 - CDataSource::Open
 - CDataSource.Open
-dev_langs: C++
-helpviewer_keywords: Open method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Open method
 ms.assetid: a6d28bd1-799a-48ed-8993-5f82d1705b77
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3f2215b84600e2691f6b3aeb0407c5c6b96ebd00
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 438ed0d649319830201883421f7c2191b361b529
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdatasourceopen"></a>CDataSource::Open
 Kullanarak bir veri kaynağı için bir bağlantı açar bir **CLSID**, **ProgID**, veya `CEnumerator` ad veya bir Bulucu iletişim kutusu ile kullanıcıya sorar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Open(  
-   const CLSID& clsid,  
+```cpp
+HRESULT Open(const CLSID& clsid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CLSID& clsid,  
+   ULONG nPropertySets = 1) throw();  
+
+
+HRESULT Open(const CLSID& clsid,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   long nInitMode = 0) throw();HRESULT Open(LPCTSTR szProgID,  
+  DBPROPSET* pPropSet = NULL,  
+   ULONG nPropertySets = 1) throw();HRESULT Open(LPCTSTR szProgID,  
+   LPCTSTR pName,  LPCTSTR pUserName = NULL,  
+   LPCTSTR pPassword = NULL,  
+   long nInitMode = 0) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   LPCTSTR szProgID,  
+   ULONG nPropertySets = 1) throw();  
+
+HRESULT Open(const CEnumerator& enumerator,  
    LPCTSTR pName,  
    LPCTSTR pUserName = NULL,  
    LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   DBPROPSET* pPropSet = NULL,  
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(  
-   const CEnumerator& enumerator,  
-   LPCTSTR pName,  
-   LPCTSTR pUserName = NULL,  
-   LPCTSTR pPassword = NULL,  
-   long nInitMode = 0   
-) throw( );  
-HRESULT Open(  
-   HWND hWnd = GetActiveWindow( ),  
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET   
-) throw( );  
-HRESULT Open(   
-   LPCWSTR szProgID,   
-   DBPROPSET* pPropSet = NULL,   
-   ULONG nPropertySets = 1   
-) throw( );  
-HRESULT Open(   
-   LPCSTR szProgID,   
-   LPCTSTR pName,   
-   LPCTSTR pUserName = NULL,   
+   long nInitMode = 0) throw();  
+
+HRESULT Open(HWND hWnd = GetActiveWindow(),  
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
+
+HRESULT Open(LPCWSTR szProgID,   
+  DBPROPSET* pPropSet = NULL,   
+   ULONG nPropertySets = 1) throw();
+
+HRESULT Open(LPCSTR szProgID,   
+   LPCTSTR pName,LPCTSTR pUserName = NULL,   
    LPCTSTR pPassword = NULL,   
-   long nInitMode = 0   
-) throw( );  
+   long nInitMode = 0) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

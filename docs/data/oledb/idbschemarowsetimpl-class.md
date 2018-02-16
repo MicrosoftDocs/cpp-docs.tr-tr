@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IDBSchemaRowsetImpl
-dev_langs: C++
-helpviewer_keywords: IDBSchemaRowsetImpl class
+f1_keywords:
+- IDBSchemaRowsetImpl
+dev_langs:
+- C++
+helpviewer_keywords:
+- IDBSchemaRowsetImpl class
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6b4f451fa408f2f6470281206e5de3670d069b6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db5af177ead206c6546b5377ac7f94fdc331f53a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 Şema satır kümeleri uygulamasını sağlar.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class SessionClass>  
 class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset  
 ```  

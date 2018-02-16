@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - OpenAll method
 - attribute-injected classes and methods
@@ -21,38 +23,39 @@ helpviewer_keywords:
 - OpenRowset method
 - GetRowsetProperties method
 ms.assetid: d80ee51c-8bb3-4dca-8760-5808e0fb47b4
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2578de53cfab40ee779f0d0444b227b214e3caa9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1d41ae6c6ca32819faa498d5a9b37ce4b4008a05
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="consumer-wizard-generated-methods"></a>Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler
 ATL OLE DB Tüketici Sihirbazı ve MFC Uygulama Sihirbazı'nı hangisinin bilmeniz gereken bazı işlevler üret. Not birkaç uyarılar olduklarından bazı yöntemler farklı öznitelikli projelerinde uygulanır; her durumda, aşağıda ele alınmıştır. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kod hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  
   
--   `OpenAll`veri kaynağı, satır kümeleri, açılır ve varsa yer işaretlerini açar.  
+-   `OpenAll` veri kaynağı, satır kümeleri, açılır ve varsa yer işaretlerini açar.  
   
--   `CloseAll`Tüm açık satır kümeleri kapatır ve tüm komut yürütmeleri serbest bırakır.  
+-   `CloseAll` Tüm açık satır kümeleri kapatır ve tüm komut yürütmeleri serbest bırakır.  
   
--   `OpenRowset`tüketicinin satır kümesi veya satır kümeleri açmak için OpenAll tarafından çağrılır.  
+-   `OpenRowset` tüketicinin satır kümesi veya satır kümeleri açmak için OpenAll tarafından çağrılır.  
   
--   `GetRowsetProperties`satır kümesinin özellik hangi özelliklerin ayarlanabileceği ayarlamak için bir işaretçi alır.  
+-   `GetRowsetProperties` satır kümesinin özellik hangi özelliklerin ayarlanabileceği ayarlamak için bir işaretçi alır.  
   
--   `OpenDataSource`içinde belirtilen başlatma dizesi kullanarak veri kaynağına açılır **veri bağlantısı özelliklerini** iletişim kutusu.  
+-   `OpenDataSource` içinde belirtilen başlatma dizesi kullanarak veri kaynağına açılır **veri bağlantısı özelliklerini** iletişim kutusu.  
   
--   `CloseDataSource`veri kaynağı uygun bir şekilde kapatır.  
+-   `CloseDataSource` veri kaynağı uygun bir şekilde kapatır.  
   
 ## <a name="openall-and-closeall"></a>OpenAll ve CloseAll  
   
 ```  
 HRESULT OpenAll();   
+
 void CloseAll();  
 ```  
   
@@ -101,7 +104,7 @@ HRESULT OpenRowset(DBPROPSET* pPropSet = NULL)
 HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);  
 ```  
   
- **OpenAll** satır kümesi veya satır kümeleri tüketicideki açmak için bu yöntemi çağırır. Genellikle, arama gerekmez `OpenRowset` birden çok veri kaynakları/oturumları/satır kümeleri ile çalışma istemiyorsanız. `OpenRowset`komut veya tablo sınıfı üstbilgi dosyasında bildirilen:  
+ **OpenAll** satır kümesi veya satır kümeleri tüketicideki açmak için bu yöntemi çağırır. Genellikle, arama gerekmez `OpenRowset` birden çok veri kaynakları/oturumları/satır kümeleri ile çalışma istemiyorsanız. `OpenRowset` komut veya tablo sınıfı üstbilgi dosyasında bildirilen:  
   
 ```  
 // OLE DB Template version:  
@@ -141,7 +144,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)
 void GetRowsetProperties(CDBPropSet* pPropSet);  
 ```  
   
- Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin DBPROP_IRowsetChange gibi özelliklerini ayarlamak için kullanabilirsiniz. `GetRowsetProperties`Kullanıcı kayıt sınıfında aşağıdaki gibi kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
+ Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin DBPROP_IRowsetChange gibi özelliklerini ayarlamak için kullanabilirsiniz. `GetRowsetProperties` Kullanıcı kayıt sınıfında aşağıdaki gibi kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
   
 ```  
 void GetRowsetProperties(CDBPropSet* pPropSet)  
@@ -160,6 +163,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
   
 ```  
 HRESULT OpenDataSource();   
+
 void CloseDataSource();  
 ```  
   

@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Concurrency Runtime, getting started
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-caps.latest.revision: "40"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e3adff365269ad9dae2d6b850470a869250e3dd8
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3d7822c552345f9492dcca6822a133290c2a82be
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 Eşzamanlılık Çalışma zamanı c++ yazma güçlü, ölçeklenebilir ve esnek paralel uygulamalar yardımcı olur. Böylece eşzamanlılık için ilgili altyapı ayrıntıları yönetmek zorunda değilsiniz soyutlama düzeyinde başlatır. Hizmet taleplerini uygulamalarınızın kalitesini karşılayan zamanlama ilkeleri belirtmek için de kullanabilirsiniz. Eşzamanlılık Çalışma zamanı ile çalışmaya başlamanıza yardımcı olması için bu kaynakları kullanın.  
@@ -67,13 +70,13 @@ Eşzamanlılık Çalışma zamanı c++ yazma güçlü, ölçeklenebilir ve esnek
 |[PPL'de İptal](cancellation-in-the-ppl.md)|Başlatmak ve iptal isteklerini yanıtlamak nasıl dahil olmak üzere PPL'de iptal rolü açıklanmaktadır.|  
 |[Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için İptal](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br /><br /> [Nasıl yapılır: Paralel Bir Döngüden Kurtulmak için Özel Durum İşlemeyi Kullanma](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|Veri paralel iş iptal etmek için iki yol gösterir.|  
   
-## <a name="windows-store-apps"></a>Windows Mağazası Uygulamaları  
+## <a name="universal-windows-platform-apps"></a>Evrensel Windows platformu uygulamaları  
   
 |||  
 |-|-|  
-|[Windows Mağazası Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Zaman uyumsuz işlemleri üretmek için eşzamanlılık çalışma zamanı kullanırken dikkate alınması gereken önemli noktaları bazıları açıklanmaktadır bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama.|  
-|[İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|PPL görevlerle birleştirmek gösterilmiştir `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir web hizmeti için HTTP GET ve POST istekleri göndermek için arabirimleri bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama.|  
-|[Windows mağazası uygulama örnekleri](http://code.msdn.microsoft.com/windowsapps)|İndirilebilir kod örnekleri ve tanıtım içeren uygulamalar için [!INCLUDE[win8](../../build/reference/includes/win8_md.md)]. C++ örnekleri verileri işlemek için PPL görevler gibi eşzamanlılık çalışma zamanı özellikleri arka planda UX yanıt verebilir durumda tutmak için kullanın.|  
+|[UWP Uygulamaları için C++ Uygulamasında Zaman Uyumsuz İşlemler Oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)|Bir UWP uygulamasında zaman uyumsuz işlemler oluşturmak için eşzamanlılık çalışma zamanı kullanırken dikkate alınması gereken önemli noktaları bazıları açıklanmaktadır.|  
+|[İzlenecek Yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)|PPL görevlerle birleştirmek gösterilmiştir `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir UWP uygulamasında bir web hizmeti için HTTP GET ve POST istekleri göndermek için arabirim.|  
+|[Windows çalışma zamanı uygulama örnekleri](http://code.msdn.microsoft.com/windowsapps)|İndirilebilir kod örnekleri ve tanıtım içeren uygulamalar için Windows 8.x. C++ örnekleri verileri işlemek için PPL görevler gibi eşzamanlılık çalışma zamanı özellikleri arka planda UX yanıt verebilir durumda tutmak için kullanın.|  
   
 ## <a name="dataflow-programming-in-the-asynchronous-agents-library"></a>Zaman Uyumsuz Aracılar Kitaplığı'nda Veri Akışı Programlama  
   
@@ -108,7 +111,7 @@ Eşzamanlılık Çalışma zamanı c++ yazma güçlü, ölçeklenebilir ve esnek
   
 |||  
 |-|-|  
-|[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanarak Windows mağazası uygulamaları) ipuçları](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Biz eşzamanlılık çalışma zamanı Hilo içinde zaman uyumsuz işlemleri uygulamak için nasıl kullanılacağını öğrenin bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] C++ ve XAML kullanarak uygulama.|  
+|[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanarak Windows mağazası uygulamaları) ipuçları](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Nasıl biz eşzamanlılık çalışma zamanı zaman uyumsuz işlemleri Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullanılan öğrenin.|  
 |[Eşzamanlılık Çalışma zamanı ve paralel Desen kitaplığı Visual Studio 2010 için kod örnekleri](http://go.microsoft.com/fwlink/p/?linkid=183875)|Örnek uygulamalar ve Eşzamanlılık Çalışma zamanı göstermek yardımcı programlarını sağlar.|  
 |[Yerel kod günlüğündeki paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleleri sağlar.|  
 |[C++ ve yerel kodu Forumunda paralel Computing](http://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmalar katılma olanak tanır.|  

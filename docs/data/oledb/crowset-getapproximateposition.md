@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,34 +16,33 @@ f1_keywords:
 - GetApproximatePosition
 - ATL.CRowset.GetApproximatePosition
 - CRowset<TAccessor>::GetApproximatePosition
-dev_langs: C++
-helpviewer_keywords: GetApproximatePosition method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetApproximatePosition method
 ms.assetid: 8f9ccd41-0590-468e-b202-6731d0f99d21
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 86d6e17c3bfe01cc579e9a0afab8f555419e5116
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 07d0f816579fb7097389d676e241143d4891677d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetgetapproximateposition"></a>CRowset::GetApproximatePosition
 Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT GetApproximatePosition(   
-   const CBookmarkBase* pBookmark,   
+```cpp
+HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,   
    DBCOUNTITEM* pPosition,   
-   DBCOUNTITEM* pcRows    
-) throw( );  
+   DBCOUNTITEM* pcRows) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: ICommandText
-dev_langs: C++
-helpviewer_keywords: ICommandText class
+f1_keywords:
+- ICommandText
+dev_langs:
+- C++
+helpviewer_keywords:
+- ICommandText class
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 53b5e19fbeaccfb61380054426315ad9b92f624a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 397f7b26d9f75813897309c99c40d5db94f06c53
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl Sınıfı
 Bir uygulamasını sağlar [ICommandText](https://msdn.microsoft.com/en-us/library/ms714914.aspx) arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class T >  
 class ATL_NO_VTABLE ICommandTextImpl   
    : public ICommandImpl<T, ICommandText>  

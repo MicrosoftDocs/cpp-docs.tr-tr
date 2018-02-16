@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,33 +14,32 @@ f1_keywords:
 - ATL.CDynamicAccessor.GetColumnFlags
 - CDynamicAccessor::GetColumnFlags
 - GetColumnFlags
-dev_langs: C++
-helpviewer_keywords: GetColumnFlags method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetColumnFlags method
 ms.assetid: b2ba2f3a-2c61-4a49-abfb-75823908ccf4
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: da04aa98fabab36cc455dfdff2d90d8da59f6886
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 59ccf83160538c06f766fbe227149d299fddb476
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicaccessorgetcolumnflags"></a>CDynamicAccessor::GetColumnFlags
 Sütun özelliklerini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      bool GetColumnFlags(   
-   DBORDINAL nColumn,   
-   DBCOLUMNFLAGS* pFlags    
-) const throw( );  
+```
+bool GetColumnFlags(DBORDINAL nColumn,   
+  DBCOLUMNFLAGS* pFlags) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

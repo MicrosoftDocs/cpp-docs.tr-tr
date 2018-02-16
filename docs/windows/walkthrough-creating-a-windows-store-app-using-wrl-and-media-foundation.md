@@ -1,29 +1,31 @@
 ---
-title: "İzlenecek yol: WRL ve medya altyapısı kullanarak bir Windows mağazası uygulaması oluşturma | Microsoft Docs"
+title: "İzlenecek yol: WRL ve medya altyapısı kullanarak bir UWP uygulaması oluşturma | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 0336c550-fbeb-4dc4-aa9b-660f9fc45382
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 25cc08c22ac0d33945a73744a0be6045971d9330
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a104cab9ec15872fe9e1b1c7a1eaf7ccd705f7d2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve Medya Altyapısı kullanarak Windows Mağazası uygulaması oluşturma
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platform uygulaması oluşturmak için nasıl kullanılacağını öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
+# <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak bir UWP uygulaması oluşturma
+Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için nasıl kullanılacağını öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
   
  Bu örnek bir Web kamerası yakalanan görüntüleri gri tonlamalı etkisi uygulandığı özel bir Media Foundation dönüştürme oluşturur. Uygulamanın C++ özel dönüştürme ve yakalanan görüntülerin dönüştürmek için bileşen kullanmak için C# tanımlamak için kullanır.  
   
@@ -59,13 +61,13 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel 
   
 -   Bileşeniniz DLL için runtimeobject.lib bağlayın. Ayrıca belirtin [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) bağlayıcı satırındaki Windows meta verileri oluşturun.  
   
--   WRL bileşenlerinin Evrensel Windows platformu uygulamaları için erişilebilir hale getirmek için proje başvuruları kullanın.  
+-   WRL bileşenlerinin UWP uygulamaları için erişilebilir hale getirmek için proje başvuruları kullanın.  
   
 ### <a name="to-use-the-wrl-to-create-the-media-foundation-grayscale-transform-component"></a>WRL Media Foundation gri tonlamalı oluşturmak için kullanılacak bileşen dönüştürme  
   
 1.  Visual Studio'da oluşturma bir **boş çözüm** projesi. Örneğin, proje adı `MediaCapture`.  
   
-2.  Ekleme bir **DLL (Windows mağazası uygulamaları)** çözüme proje. Örneğin, proje adı `GrayscaleTransform`.  
+2.  Ekleme bir **DLL (Evrensel Windows)** çözüme proje. Örneğin, proje adı `GrayscaleTransform`.  
   
 3.  Ekleme bir **MIDL dosya (.idl)** projesine dosyasını. Örneğin, dosya adı `GrayscaleTransform.idl`.  
   

@@ -1,10 +1,11 @@
 ---
-title: "Icommandımpl::m_bcancelwhenexecuting | Microsoft Docs"
+title: ICommandImpl::m_bCancelWhenExecuting | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +14,30 @@ f1_keywords:
 - ATL::ICommandImpl::m_bCancelWhenExecuting
 - m_bCancelWhenExecuting
 - ATL.ICommandImpl.m_bCancelWhenExecuting
-dev_langs: C++
-helpviewer_keywords: m_bCancelWhenExecuting
+dev_langs:
+- C++
+helpviewer_keywords:
+- m_bCancelWhenExecuting
 ms.assetid: d7d33e4c-a862-4e6d-a9a1-4400bfe45b88
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d84c61241f426d190c4e85ced7c56c57a5611498
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 30faa50739d5546c6204322f6aa5bd19da1033d1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="icommandimplmbcancelwhenexecuting"></a>ICommandImpl::m_bCancelWhenExecuting
 Komut yürütülürken iptal edilebilir olup olmadığını gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
 unsigned m_bCancelWhenExecuting:1;  
   
 ```  

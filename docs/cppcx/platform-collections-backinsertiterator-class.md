@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator
-dev_langs: C++
-helpviewer_keywords: BackInsertIterator Class
+ms.topic: reference
+f1_keywords:
+- COLLECTION/Platform::Collections::BackInsertIterator::BackInsertIterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- BackInsertIterator Class
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 057aebfcba1936bc2a59fbb8b9fb51bff3197b6f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 23c8b657a6cafb720cf0be07e2e67b5af0d7767d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformcollectionsbackinsertiterator-class"></a>Platform::Collections::BackInsertIterator sınıfı
 Geçersiz kılar, sıralı bir koleksiyonu arka ucunu elemanlara yerine ekler yineleyici temsil eder.  
@@ -52,9 +56,9 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[BackInsertIterator::operator * işleci](#operator-dereference)|Geçerli BackInsertIterator bir başvuru alır.|  
-|[BackInsertIterator::operator ++ işleci](#operator-increment)|Geçerli BackInsertIterator bir başvuru döndürür. Yineleyici değiştirilmez.|  
-|[BackInsertIterator::operator = işleci](#operator-assign)|Belirtilen nesne geçerli sıralı koleksiyonun sonuna ekler.|  
+|[BackInsertIterator::operator* Operator](#operator-dereference)|Geçerli BackInsertIterator bir başvuru alır.|  
+|[BackInsertIterator::operator++ Operator](#operator-increment)|Geçerli BackInsertIterator bir başvuru döndürür. Yineleyici değiştirilmez.|  
+|[BackInsertIterator::operator= Operator](#operator-assign)|Belirtilen nesne geçerli sıralı koleksiyonun sonuna ekler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `BackInsertIterator`  
@@ -65,7 +69,7 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
  **Namespace:** Platform::Collections  
   
 ---
-## <a name="ctor"></a>BackInsertIterator::BackInsertIterator Oluşturucusu
+## <a name="ctor"></a>  BackInsertIterator::BackInsertIterator Oluşturucusu
 Yeni bir örneğini başlatır `BackInsertIterator` sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -83,7 +87,7 @@ explicit BackInsertIterator(
 ### <a name="remarks"></a>Açıklamalar  
  A `BackInsertIterator` parametresi tarafından belirtilen nesnesinin son öğesinden sonra öğeleri ekler `v`.  
  
-## <a name="operator-assign"></a>BackInsertIterator::operator = işleci
+## <a name="operator-assign"></a>  BackInsertIterator::operator= Operator
 Belirtilen nesne geçerli sıralı koleksiyonun sonuna ekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -99,7 +103,7 @@ BackInsertIterator& operator=( const T& t);
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli BackInsertIterator referansı.  
 
-## <a name="operator-dereference"></a>BackInsertIterator::operator * işleci
+## <a name="operator-dereference"></a>  BackInsertIterator::operator * işleci
 Geçerli BackInsertIterator bir başvuru alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -114,7 +118,7 @@ BackInsertIterator& operator*();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç geçerli BackInsertIterator bir başvuru döndürür; olmayan herhangi bir öğeye geçerli koleksiyonunda.  
  
-## <a name="operator-increment"></a>BackInsertIterator::operator ++ işleci
+## <a name="operator-increment"></a>  BackInsertIterator::operator++ Operator
 Geçerli BackInsertIterator bir başvuru döndürür. Yineleyici değiştirilmez.  
   
 ## <a name="syntax"></a>Sözdizimi  

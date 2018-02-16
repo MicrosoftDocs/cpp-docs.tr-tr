@@ -4,33 +4,35 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - bookmarks [C++], dynamically determining columns
 - dynamically determining columns [C++]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2827747d91bd1c26e173b6f0bdb44d54c3d0f8e3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ed7ad9ab7b28758419c2b7c848852678f69bc3e2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 PROVIDER_COLUMN_ENTRY normalde işlemek **IColumnsInfo::GetColumnsInfo** çağırın. Ancak, bir tüketici yer işaretleri kullanmayı tercih edebilirsiniz çünkü sağlayıcı için bir yer işareti ister bağlı olarak Tüketiciye döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  
   
  İşlenecek **IColumnsInfo::GetColumnsInfo** çağrı, bir işlevi tanımlayan PROVIDER_COLUMN_MAP silme `GetColumnInfo`, gelen `CAgentMan` kullanıcı kaydı MyProviderRS.h öğesinde ve kendi tanımıyla değiştirin `GetColumnInfo` işlevi:  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
 class CAgentMan  
@@ -53,11 +55,11 @@ public:
   
  Ardından, uygulama `GetColumnInfo` aşağıdaki kodda gösterildiği gibi MyProviderRS.cpp içinde işlev.  
   
- `GetColumnInfo`ilk denetler OLE DB özelliği **DBPROP_BOOKMARKS** ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) satır kümesi nesnesi için. `pThis` İşaretçi özellik eşlemesi depolandığı sınıfı olduğu satır kümesi oluşturulan sınıfı temsil eder. `GetColumnInfo`işaretçisine tür olarak atar `pThis` işaretçi bir `RMyProviderRowset` işaretçi.  
+ `GetColumnInfo` ilk denetler OLE DB özelliği **DBPROP_BOOKMARKS** ayarlanır. Özellik get yapılmaya `GetColumnInfo` bir işaretçi kullanır (`pRowset`) satır kümesi nesnesi için. `pThis` İşaretçi özellik eşlemesi depolandığı sınıfı olduğu satır kümesi oluşturulan sınıfı temsil eder. `GetColumnInfo` işaretçisine tür olarak atar `pThis` işaretçi bir `RMyProviderRowset` işaretçi.  
   
  Denetlenecek **DBPROP_BOOKMARKS** özelliği, `GetColumnInfo` kullanan `IRowsetInfo` çağırarak elde edebileceğiniz arabirimi `QueryInterface` üzerinde `pRowset` arabirimi. Alternatif olarak, bir ATL kullanabilirsiniz [CComQIPtr](../../atl/reference/ccomqiptr-class.md) yöntemi yerine.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////  
 // MyProviderRS.cpp  
 ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)  
@@ -118,12 +120,11 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(void* pThis, ULONG* pcCols)
   
  Bu örnek, sütun bilgileri saklamak için statik bir dizi kullanır. Tüketici yer işareti sütunu istemezse dizisinde bulunan bir giriş kullanılmıyor. Bilgileri işlemek için iki dizi makrosu oluşturun: ADD_COLUMN_ENTRY ve ADD_COLUMN_ENTRY_EX. ADD_COLUMN_ENTRY_EX ek bir parametre alan `flags`, yani bir yer işareti sütunu tanımlarsanız gerekli.  
   
-```  
+```cpp
 ////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
   
-#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision,   
-scale, guid, dataClass, member) \  
+#define ADD_COLUMN_ENTRY(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  
@@ -134,8 +135,7 @@ scale, guid, dataClass, member) \
    _rgColumns[ulCols].bScale = (BYTE)scale; \  
    _rgColumns[ulCols].cbOffset = offsetof(dataClass, member);  
   
-#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type,   
-precision, scale, guid, dataClass, member, flags) \  
+#define ADD_COLUMN_ENTRY_EX(ulCols, name, ordinal, colSize, type, precision, scale, guid, dataClass, member, flags) \  
    _rgColumns[ulCols].pwszName = (LPOLESTR)name; \  
    _rgColumns[ulCols].pTypeInfo = (ITypeInfo*)NULL; \  
    _rgColumns[ulCols].iOrdinal = (ULONG)ordinal; \  

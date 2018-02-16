@@ -1,12 +1,13 @@
 ---
-title: _strdec, _wcsdec, _mbsdec, mbsdec_l | Microsoft Docs
+title: _strdec, _wcsdec, _mbsdec, _mbsdec_l | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wcsdec
 - _strdec
@@ -34,7 +35,8 @@ f1_keywords:
 - mbsdec
 - wcsdec
 - _wcsdec
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - mbsdec_l function
 - mbsdec function
@@ -47,22 +49,23 @@ helpviewer_keywords:
 - wcsdec function
 - _mbsdec function
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 46e905408faed138b1509362a1ec56e727742ce9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 824e7a8c18d53438cdf77fba9449d8139217543e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strdec-wcsdec-mbsdec-mbsdecl"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 Bir dize işaretçi bir karakter geriye taşır.  
   
 > [!IMPORTANT]
->  `mbsdec`ve `mbsdec_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `mbsdec` ve `mbsdec_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -97,12 +100,12 @@ unsigned char *_mbsdec_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mbsdec`, `_mbsdec_l`, `_strdec`, ve `_wcsdec` hemen önce gelen karakter her iade bir işaretçi `current`; `_mbsdec` döndürür `NULL` varsa değerini `start` büyük veya eşit `current`. `_tcsdec`Bu işlevler ve dönüş değerini birine eşlemeleri eşlemesini bağlıdır.  
+ `_mbsdec`, `_mbsdec_l`, `_strdec`, ve `_wcsdec` hemen önce gelen karakter her iade bir işaretçi `current`; `_mbsdec` döndürür `NULL` varsa değerini `start` büyük veya eşit `current`. `_tcsdec` Bu işlevler ve dönüş değerini birine eşlemeleri eşlemesini bağlıdır.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_mbsdec` Ve `_mbsdec_l` işlevler hemen önce gelen birden çok baytlı karakter ilk bayta kalan için bir işaretçi döndürür `current` içeren dizesindeki `start`.  
   
- Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için.  `_mbsdec`çok baytlı karakter sıralarının şu anda kullanımda olan yerel göre tanıdığı sırada `_mbsdec_l` yerine geçirilen yerel ayar parametresi kullanır dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için.  `_mbsdec` çok baytlı karakter sıralarının şu anda kullanımda olan yerel göre tanıdığı sırada `_mbsdec_l` yerine geçirilen yerel ayar parametresi kullanır dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  Varsa `start` veya `current` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür `EINVAL` ve ayarlar `errno` için `EINVAL`.  
   
@@ -115,7 +118,7 @@ unsigned char *_mbsdec_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|  
 |`_tcsdec`|`_strdec`|`_mbsdec`|`_wcsdec`|  
   
- `_strdec`ve `_wcsdec` tek bayt karakter ve joker karakter sürümleri `_mbsdec` ve `_mbsdec_l`. `_strdec`ve `_wcsdec` yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır.  
+ `_strdec` ve `_wcsdec` tek bayt karakter ve joker karakter sürümleri `_mbsdec` ve `_mbsdec_l`. `_strdec` ve `_wcsdec` yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır.  
   
  Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).  
   
@@ -125,8 +128,8 @@ unsigned char *_mbsdec_l(
 |-------------|---------------------|---------------------|  
 |`_mbsdec`|\<Mbstring.h >|\<Mbctype.h >|  
 |`_mbsdec_l`|\<Mbstring.h >|\<Mbctype.h >|  
-|`_strdec`|\<Tchar.h >||  
-|`_wcsdec`|\<Tchar.h >||  
+|`_strdec`|\<tchar.h>||  
+|`_wcsdec`|\<tchar.h>||  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _utime64
 - _utime
@@ -42,7 +43,8 @@ f1_keywords:
 - _utime32
 - _tutime64
 - _wutime32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tutime function
 - utime32 function
@@ -65,16 +67,17 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d65be96e49d5f6cceeb6b61259cb790d4265978d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f94c67fe75f5675192dbd0f306d8eef0aace70f5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="utime-utime32-utime64-wutime-wutime32-wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 Dosya değişikliği zamanı ayarlayın.  
@@ -132,7 +135,7 @@ int _wutime64(
   
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.  
   
- Değişiklik tarihi yarısından, 1 Ocak 1970 ve kullanılan işlev bitiş tarihinden önce ise, bir dosya için tarih değiştirilebilir. `_utime`ve `_wutime` 23:59:59, 31 Aralık 3000 UTC bitiş tarihi olacak şekilde bir 64-bit saat değeri kullanın. Varsa `_USE_32BIT_TIME_T` tanımlanan eski davranışı zorlamak için bitiş tarihi 23:59:59 18 Ocak 2038, UTC değil. `_utime32`veya `_wutime32` 32-bit zamanı tür bağımsız olarak mı kullanmak `_USE_32BIT_TIME_T` tanımlanmış ve her zaman önceki bir son tarihe sahip. `_utime64`veya `_wutime64` bu işlevlerin her zaman daha sonra bitiş tarihini destekleyecek biçimde 64-bit zamanı tür her zaman kullanın.  
+ Değişiklik tarihi yarısından, 1 Ocak 1970 ve kullanılan işlev bitiş tarihinden önce ise, bir dosya için tarih değiştirilebilir. `_utime` ve `_wutime` 23:59:59, 31 Aralık 3000 UTC bitiş tarihi olacak şekilde bir 64-bit saat değeri kullanın. Varsa `_USE_32BIT_TIME_T` tanımlanan eski davranışı zorlamak için bitiş tarihi 23:59:59 18 Ocak 2038, UTC değil. `_utime32` veya `_wutime32` 32-bit zamanı tür bağımsız olarak mı kullanmak `_USE_32BIT_TIME_T` tanımlanmış ve her zaman önceki bir son tarihe sahip. `_utime64` veya `_wutime64` bu işlevlerin her zaman daha sonra bitiş tarihini destekleyecek biçimde 64-bit zamanı tür her zaman kullanın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_utime` İşlevi tarafından belirtilen dosyayı değiştirme saati ayarlar `filename` *.* İşlem Saati değiştirmek için dosyaya yazma erişimi olmalıdır. Windows işletim sisteminde, erişim zamanı ve değiştirme saati değiştirebilirsiniz `_utimbuf` yapısı. Varsa `times` olan bir `NULL` işaretçisi değiştirme saati geçerli yerel saat olarak ayarlanır. Aksi takdirde, `times` türü yapısına işaret etmelidir `_utimbuf`, SYS\UTIME içinde tanımlı. H.  
@@ -145,11 +148,11 @@ int _wutime64(
  `modtime`  
  Dosya değişikliği zamanı  
   
- Belirli sürümlerini `_utimbuf` yapısı (`_utimebuf32` ve `__utimbuf64`) zamanı tür 32-bit ve 64 bit sürümleri kullanılarak tanımlanır. Bunlar, 32 bit ve 64-bit belirli sürümlerinde bu işlevi kullanılır. `_utimbuf`Varsayılan tek başına sürece bir 64-bit süre türünü kullanan `_USE_32BIT_TIME_T` tanımlanır.  
+ Belirli sürümlerini `_utimbuf` yapısı (`_utimebuf32` ve `__utimbuf64`) zamanı tür 32-bit ve 64 bit sürümleri kullanılarak tanımlanır. Bunlar, 32 bit ve 64-bit belirli sürümlerinde bu işlevi kullanılır. `_utimbuf` Varsayılan tek başına sürece bir 64-bit süre türünü kullanan `_USE_32BIT_TIME_T` tanımlanır.  
   
- `_utime`aynıdır `_futime` dışında `filename` bağımsız değişkeni `_utime` bir dosya adı veya açık bir dosyanın dosya tanımlayıcısı yerine bir dosya yolu.  
+ `_utime` aynıdır `_futime` dışında `filename` bağımsız değişkeni `_utime` bir dosya adı veya açık bir dosyanın dosya tanımlayıcısı yerine bir dosya yolu.  
   
- `_wutime`bir joker karakter sürümü `_utime`; `filename` bağımsız değişkeni `_wutime` bir joker karakter dizesidir. Bu işlevler aynı şekilde aksi davranır.  
+ `_wutime` bir joker karakter sürümü `_utime`; `filename` bağımsız değişkeni `_wutime` bir joker karakter dizesidir. Bu işlevler aynı şekilde aksi davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -242,7 +245,7 @@ File time modified
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime, _wasctime](../../c-runtime-library/reference/asctime-wasctime.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [_futime, _futime32, _futime64](../../c-runtime-library/reference/futime-futime32-futime64.md)   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vscprintf
 - _vscprintf_l
@@ -33,7 +34,8 @@ f1_keywords:
 - vscwprintf_l
 - vscprintf
 - _vscwprintf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vsctprintf function
 - _vscprintf_l function
@@ -49,16 +51,17 @@ helpviewer_keywords:
 - vscprintf function
 - vscprintf_l function
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a52c7643a465bfaf24db6988d531943284e6416
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e0ba44a2e23baf8d901cb6bf5d9abd8306c32527
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vscprintf-vscprintfl-vscwprintf-vscwprintfl"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 Bağımsız değişkenlerinin listesi için bir işaretçi kullanarak biçimlendirilmiş dizesindeki karakterlerin sayısını döndürür.  
@@ -99,7 +102,7 @@ int _vscwprintf_l(
  Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_vscprintf`dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_vscwprintf`geniş karakterler için aynı işlevi gerçekleştirir.  
+ `_vscprintf` dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_vscwprintf` geniş karakterler için aynı işlevi gerçekleştirir.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

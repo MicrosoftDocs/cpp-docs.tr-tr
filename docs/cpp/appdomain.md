@@ -4,34 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: appdomain_cpp
-dev_langs: C++
+f1_keywords:
+- appdomain_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - appdomain __declspec keyword
 - __declspec keyword [C++], appdomain
 ms.assetid: 29d843cb-cb6b-4d1b-a48d-d928a877234d
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 677206e37cb4761112f66dc59dc44b2eccbabaf5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 36df0066d3e460efceb130d257a1b6f87231dd4a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="appdomain"></a>appdomain
 Her uygulama etki alanı, yönetilen uygulamanızın belirli genel değişkeni ya da statik üye değişkeni kopyasını sahip olması gerektiğini belirtir. Bkz: [uygulama etki alanları ve Visual C++](../dotnet/application-domains-and-visual-cpp.md) daha fazla bilgi için.  
   
  Her uygulama etki alanı başına appdomain değişkeni kopyasını sahiptir. Bir appdomain değişkenin bir oluşturucu bütünleştirilmiş uygulama etki alanına yüklü olduğunda ve uygulama etki alanı kaldırıldığında yıkıcı yürütülür yürütülür.  
   
- Genel değişkeni paylaşmak için ortak dil çalışma zamanında bir işlemdeki tüm uygulama etki alanları istiyorsanız kullanın `__declspec(process)` değiştiricisi. `__declspec(process)`Varsayılan olarak altında yürürlükte olan [/CLR](../build/reference/clr-common-language-runtime-compilation.md) ve `__declspec(appdomain)` altında varsayılan olarak etkindir **/CLR: pure**. `__declspec(appdomain)`altında zorlanan **/CLR: safe**. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
+ Genel değişkeni paylaşmak için ortak dil çalışma zamanında bir işlemdeki tüm uygulama etki alanları istiyorsanız kullanın `__declspec(process)` değiştiricisi. `__declspec(process)` Varsayılan olarak altında yürürlükte olan [/CLR](../build/reference/clr-common-language-runtime-compilation.md). **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
- `__declspec(appdomain)`yalnızca geçerli olduğunda birini **/CLR** derleyici seçenekleri kullanılır. Yalnızca genel değişkeni, statik üye değişkeni veya statik yerel değişkeni ile işaretlenebilir `__declspec(appdomain)`. Uygulamak için bir hata olduğunu `__declspec(appdomain)` statik üyeleri için her zaman bu davranış olduğundan yönetilen türleri.  
+ `__declspec(appdomain)` yalnızca geçerli olduğunda birini **/CLR** derleyici seçenekleri kullanılır. Yalnızca genel değişkeni, statik üye değişkeni veya statik yerel değişkeni ile işaretlenebilir `__declspec(appdomain)`. Uygulamak için bir hata olduğunu `__declspec(appdomain)` statik üyeleri için her zaman bu davranış olduğundan yönetilen türleri.  
   
  Kullanarak `__declspec(appdomain)` kullanmaya benzer [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md). Uygulama etki alanları gibi iş parçacıkları kendi depolama alanına sahip. Kullanarak `__declspec(appdomain)` genel değişkeni, bu uygulama için oluşturulan her bir uygulama etki alanında kendi depolama alanını sahip sağlar.  
   

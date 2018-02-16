@@ -4,39 +4,39 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - ATL.AtlTraceErrorRecords
 - ATL::AtlTraceErrorRecords
 - AtlTraceErrorRecords
-dev_langs: C++
-helpviewer_keywords: AtlTraceErrorRecords function
+dev_langs:
+- C++
+helpviewer_keywords:
+- AtlTraceErrorRecords function
 ms.assetid: b83970b3-dc2a-445c-9142-f52218719905
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4a3f8542f2c897f45916ac62fbac147259b2362d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 95b743d9785d083b670be28e274b6f46acdea2ce
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atltraceerrorrecords"></a>AtlTraceErrorRecords
 Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm aygıta dökümünü yapar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      inline void AtlTraceErrorRecords(   
-   HRESULT hrErr = S_OK    
-);  
+```cpp
+      inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -44,7 +44,7 @@ Bir hata döndürülürse, OLE DB hata kaydı bilgi döküm aygıta dökümünü
  [in] Bir `HRESULT` bir OLE DB tüketici şablonu üye işlevi tarafından döndürülen.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsa `hErr` değil `S_OK`, `AtlTraceErrorRecords` OLE DB hata kaydı bilgi döküm aygıta dökümleri ( **hata ayıklama** çıktı penceresi veya bir dosya sekmesinde). Sağlayıcısı'ndan alınan, hata kaydı bilgileri, her hata kayıt girişi için satır numarası, kaynak, açıklama, Yardım dosyası, içerik ve GUID içerir. `AtlTraceErrorRecords`Bu bilgileri yalnızca hata ayıklama yapıları dökümünü yapar. Yayın derlemelerde çıkışı iyileştirilmiş bir boş stub'dır.  
+ Varsa `hErr` değil `S_OK`, `AtlTraceErrorRecords` OLE DB hata kaydı bilgi döküm aygıta dökümleri ( **hata ayıklama** çıktı penceresi veya bir dosya sekmesinde). Sağlayıcısı'ndan alınan, hata kaydı bilgileri, her hata kayıt girişi için satır numarası, kaynak, açıklama, Yardım dosyası, içerik ve GUID içerir. `AtlTraceErrorRecords` Bu bilgileri yalnızca hata ayıklama yapıları dökümünü yapar. Yayın derlemelerde çıkışı iyileştirilmiş bir boş stub'dır.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

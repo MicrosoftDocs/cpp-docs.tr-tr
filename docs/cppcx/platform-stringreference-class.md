@@ -6,25 +6,27 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::StringReference::StringReference
 - VCCORLIB/Platform::StringReference::Data
 - VCCORLIB/Platform::StringReference::Length
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3617f4e9209a9726fcf4801e803259ef921c7b60
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c23960e392f39c44a57176e4afb81999783bad6c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference sınıfı
 Dize verilerini geçirmek için kullanabileceğiniz bir en iyi duruma getirme türü `Platform::String^` giriş parametreleri kopyalama işlemleri en az diğer yöntemleri.  
@@ -58,7 +60,7 @@ class StringReference
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[StringReference::operator =](#operator-assign)|Atayan bir `StringReference` yeni bir `StringReference` örneği.|  
+|[StringReference::operator=](#operator-assign)|Atayan bir `StringReference` yeni bir `StringReference` örneği.|  
 |[StringReference::operator()](#operator-call)|Dönüştüren bir `StringReference` için bir `Platform::String^`.|  
   
 ### <a name="requirements"></a>Gereksinimler  
@@ -70,7 +72,7 @@ class StringReference
   
  **Başlık:** vccorlib.h  
 
-## <a name="data"></a>StringReference::Data yöntemi
+## <a name="data"></a>  StringReference::Data yöntemi
 Bu içeriğini döndürür `StringReference` char16 değerleri dizisi olarak.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -84,7 +86,7 @@ const ::default::char16 * Data() const
   
 
 
-## <a name="gethstring"></a>StringReference::GetHSTRING yöntemi
+## <a name="gethstring"></a>  StringReference::GetHSTRING yöntemi
 Dize olarak içeriğini döndürür bir `__abi_HSTRING`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -101,7 +103,7 @@ __abi_HSTRING GetHSTRING() const
   
 
 
-## <a name="getstring"></a>StringReference::GetString yöntemi
+## <a name="getstring"></a>  StringReference::GetString yöntemi
 Dize olarak içeriğini döndürür bir `Platform::String^`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -114,7 +116,7 @@ __declspec(no_release_return) __declspec(no_refcount)
 ### <a name="return-value"></a>Dönüş Değeri  
  A `Platform::String^` dize verilerini içerir.  
 
-## <a name="length"></a>StringReference::Length yöntemi
+## <a name="length"></a>  StringReference::Length yöntemi
 Dizesindeki karakterlerin sayısını döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -130,7 +132,7 @@ unsigned int Length() const
   
 
 
-## <a name="operator-assign"></a>StringReference::operator = işleci
+## <a name="operator-assign"></a>  StringReference::operator = işleci
 Belirtilen nesne geçerli atar `StringReference` nesnesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -155,7 +157,7 @@ StringReference& operator=(const ::default::char16* __strArg);
   
 
 
-## <a name="operator-call"></a>StringReference::operator() işleci
+## <a name="operator-call"></a>  StringReference::operator() işleci
 Dönüştüren bir `StringReference` nesnesine bir `Platform::String^` nesnesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -170,7 +172,7 @@ __declspec(no_release_return) __declspec(no_refcount)
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir nesne türü için bir tanıtıcı `Platform::String`.  
 
-## <a name="ctor"></a>StringReference::StringReference Oluşturucusu
+## <a name="ctor"></a>  StringReference::StringReference Oluşturucusu
 Yeni bir örneğini başlatır `StringReference` sınıfı.  
   
 ### <a name="syntax"></a>Sözdizimi  

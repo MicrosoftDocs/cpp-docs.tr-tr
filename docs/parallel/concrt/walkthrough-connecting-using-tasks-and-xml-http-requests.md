@@ -4,40 +4,43 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
-- connecting to web services, Windows Store apps [C++]
+- connecting to web services, UWP apps [C++]
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fef2e682f8e2036eb2919c20879c60e879ec845
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e778c03368a634c349ec7c3ef241a29314cac4ea
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
-Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) arabirimleri bir web hizmeti için HTTP GET ve POST istekleri göndermek için görevleri ile birlikte bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte, diğer görevlerle oluşturur kod yazabilirsiniz. Örneğin, indirme görevinin görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal ettiğinizde indirme görev ayrıca yanıt verebilir.  
+Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.microsoft.com/en-us/bbc11c4a-aecf-4d6d-8275-3e852e309908) ve [Ixmlhttprequest2callback](http://msdn.microsoft.com/en-us/aa4b3f4c-6e28-458b-be25-6cce8865fc71) bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler birlikte arabirimleri ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte, diğer görevlerle oluşturur kod yazabilirsiniz. Örneğin, indirme görevinin görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal ettiğinizde indirme görev ayrıca yanıt verebilir.  
   
 > [!TIP]
->  C++ REST SDK alınan HTTP isteklerini gerçekleştirmek için de kullanabilirsiniz bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] C++ uygulamasını kullanarak uygulama veya Masaüstü C++ uygulamadan. Daha fazla bilgi için bkz: [C++ REST SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk).  
+>  C++ REST SDK, C++ uygulamasını kullanarak bir UWP uygulaması veya bir masaüstü C++ uygulaması HTTP isteklerini gerçekleştirmek için de kullanabilirsiniz. Daha fazla bilgi için bkz: [C++ REST SDK (kod adı "Casablanca")](https://github.com/Microsoft/cpprestsdk).  
   
- Görevler hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Görevler kullanma hakkında daha fazla bilgi için bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama, bkz: [c++ zaman uyumsuz programlama](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31) ve [Windows mağazası uygulamalarında C++ zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+ Görevler hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). UWP uygulamasında görevler kullanma hakkında daha fazla bilgi için bkz: [c++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) ve [oluşturma zaman uyumsuz işlemleri c++ UWP uygulamalar için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
   
- Bu belge ilk nasıl oluşturulacağını gösterir `HttpRequest` ve bunun destekleyici sınıfları. Ardından bu sınıftan kullanmayı gösterir bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] C++ ve XAML kullanan uygulama.  
+ Bu belge ilk nasıl oluşturulacağını gösterir `HttpRequest` ve bunun destekleyici sınıfları. Ardından, C++ ve XAML kullanan bir UWP uygulaması'ndan bu sınıfının nasıl kullanılacağını gösterir.  
   
  Kullanır daha eksiksiz bir örnek için `HttpReader` sınıfı bu belgede açıklanan bkz [geliştirme, Bing Haritalar seyahat iyileştirici, bir Windows mağazası uygulaması JavaScript ve C++](http://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30). Kullanan başka bir örnek için `IXMLHTTPRequest2` ancak yok görevleri kullanın, bkz: [hızlı başlangıç: XML HTTP istek (Ixmlhttprequest2) kullanarak bağlanma](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35).  
   
 > [!TIP]
->  `IXMLHTTPRequest2`ve `IXMLHTTPRequest2Callback` kullanılmak üzere öneririz arabirimlerdir bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama. Bu örnek bir masaüstü uygulamasının kullanmak için de uyarlayabilirsiniz.  
+>  `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir UWP uygulamasında kullanmak için önerdiğimiz arabirimlerdir. Bu örnek bir masaüstü uygulamasının kullanmak için de uyarlayabilirsiniz.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
   
@@ -68,8 +71,8 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.mi
   
      [!code-cpp[concrt-using-ixhr2#3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_3.cpp)]  
   
-## <a name="using-the-httprequest-class-in-a-includewin8appnamelongbuildincludeswin8appnamelongmdmd-app"></a>HttpRequest sınıfında kullanarak bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama  
- Bu bölümde nasıl kullanılacağı ortaya `HttpRequest` sınıfını bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama. Uygulama, bir URL kaynağı tanımlayan bir giriş kutusu ve GET ve POST işlemleri düğme komutları ve geçerli işlemi iptal düğmesi komutu sağlar.  
+## <a name="using-the-httprequest-class-in-a-uwp-app"></a>UWP uygulamasında HttpRequest sınıfını kullanma  
+ Bu bölümde nasıl kullanılacağı ortaya `HttpRequest` bir UWP uygulamasında sınıfı. Uygulama, bir URL kaynağı tanımlayan bir giriş kutusu ve GET ve POST işlemleri düğme komutları ve geçerli işlemi iptal düğmesi komutu sağlar.  
   
 #### <a name="to-use-the-httprequest-class"></a>HttpRequest Sınıfını kullanmak için  
   
@@ -112,7 +115,7 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.mi
   
  Çalışan uygulamanın şöyledir:  
   
- ![Çalışan Windows mağazası uygulaması](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
+ ![Çalışan Windows çalışma zamanı uygulamanın](../../parallel/concrt/media/concrt_usingixhr2.png "concrt_usingixhr2")  
   
 ## <a name="next-steps"></a>Sonraki Adımlar  
  [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)  
@@ -120,8 +123,8 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](http://msdn.mi
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md)   
  [PPL'de iptal](cancellation-in-the-ppl.md)   
- [C++ zaman uyumsuz programlama](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31)   
- [Windows mağazası uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
+ [C++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)   
+ [UWP uygulamaları için C++ içinde zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
  [Hızlı Başlangıç: XML HTTP istek (Ixmlhttprequest2) kullanarak bağlanma](http://msdn.microsoft.com/en-us/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
  [task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)   
  [task_completion_event Sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)

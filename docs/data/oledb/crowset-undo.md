@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,34 +18,33 @@ f1_keywords:
 - ATL::CRowset::Undo
 - CRowset::Undo
 - Undo
-dev_langs: C++
-helpviewer_keywords: Undo method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Undo method
 ms.assetid: 1ccd70e2-3931-41c4-893e-a05d0e295410
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d56be5cbaf5f8c3393527c59319cdda4aca124e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 505efd2ede7a436d56f32fcc1915f8c18b9a8b55
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetundo"></a>CRowset::Undo
 Bir satır için son fetch itibaren yapılan tüm değişiklikler geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Undo(   
-   DBCOUNTITEM* pcRows = NULL,   
+```cpp
+HRESULT Undo(DBCOUNTITEM* pcRows = NULL,   
    HROW* phRow = NULL,   
-   DBROWSTATUS* pStatus = NULL    
-) throw( );  
+   DBROWSTATUS* pStatus = NULL) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

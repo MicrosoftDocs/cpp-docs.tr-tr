@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,32 +13,31 @@ f1_keywords:
 - ATL::CEnumerator::Find
 - ATL.CEnumerator.Find
 - CEnumerator.Find
-dev_langs: C++
-helpviewer_keywords: Find method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Find method
 ms.assetid: 69a153af-d6c3-40fd-9018-27c7d2f344c6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1d7c2deef184ef9e56dffcfba52ba2cbb2947519
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 863832f41c866764883336c7de76fa343eb1cbac
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cenumeratorfind"></a>CEnumerator::Find
 Kullanılabilir sağlayıcılar arasında belirli bir ad arar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      bool Find(   
-   TCHAR* szSearchName    
-) throw( );  
+```cpp
+      bool Find(TCHAR* szSearchName) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

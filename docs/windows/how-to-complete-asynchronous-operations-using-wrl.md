@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 02173eae-731b-49bc-b412-f1f69388b99d
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8c505c44fe18f75eeb64c6b31ca222405f570761
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3b5ff1f5bd36c2cf834375ac0999db835b731284
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-complete-asynchronous-operations-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Zaman Uyumsuz İşlemleri Tamamlama
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz işlemleri başlatmak ve işlemlerini tamamladıktan sonra iş gerçekleştirmek için nasıl kullanılacağını gösterir.  
@@ -36,7 +38,7 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz
  Aşağıdaki adımlarda zaman uyumsuz bir süreölçeri başlatmak ve Zamanlayıcı süresi dolacak şekilde bekleyin. Tam bir örnek aşağıda verilmiştir.  
   
 > [!WARNING]
->  Genellikle bir evrensel Windows platformu uygulamasında Windows çalışma zamanı C++ Şablon kitaplığı kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir evrensel Windows platformu uygulamadan kullanılabilir değil. Türler ve evrensel Windows platformu uygulamasında kullanabileceğiniz işlevler hakkında daha fazla bilgi için bkz: [/ZW tarafından desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) ve [Win32 ve COM için Windows mağazası uygulamaları](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Genellikle Windows çalışma zamanı C++ Şablon Kitaplığı'ndaki bir evrensel Windows Platformu (UWP) uygulamasını kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir UWP uygulamasını kullanılabilir değil. UWP uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamalar için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 1.  İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ya da C++ Standart Kitaplığı üstbilgilerini gerekli.  
   
@@ -78,7 +80,7 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) zaman uyumsuz
 ### <a name="compiling-the-code"></a>Kod Derleniyor  
  Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-async.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl tüketen async.cpp runtimeobject.lib**  
+ **cl.exe wrl-consume-async.cpp runtimeobject.lib**  
   
 ## <a name="example-working-with-a-background-thread"></a>Örnek: arka plan iş parçacığı ile çalışma  
  Aşağıdaki adımlar bir çalışan iş parçacığı Başlat ve bu iş parçacığı tarafından gerçekleştirilen eylem tanımlayın. Tam bir örnek aşağıda verilmiştir.  

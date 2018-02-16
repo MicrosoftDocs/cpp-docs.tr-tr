@@ -6,7 +6,7 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::Vector::Vector
 - COLLECTION/Platform::Collections::Vector::Append
@@ -23,19 +23,22 @@ f1_keywords:
 - COLLECTION/Platform::Collections::Vector::SetAt
 - COLLECTION/Platform::Collections::Vector::Size
 - COLLECTION/Platform::Collections::Vector::VectorChanged
-dev_langs: C++
-helpviewer_keywords: Vector Class (C++/Cx)
+dev_langs:
+- C++
+helpviewer_keywords:
+- Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8f77962a6ba1eeb86abf4d91b3a308b4fb0d65ef
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 00bf369942289752f7043ce5070618260a90c7ff
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 
@@ -117,7 +120,7 @@ Kullanmayı denerseniz, bir **vektör** türü ortak dönüş değeri veya param
 
 **Namespace:** Platform::Collections
 
-## <a name="append"></a>Vector::Append yöntemi
+## <a name="append"></a>  Vector::Append yöntemi
 
 Geçerli vektör son öğeden sonra belirtilen öğeyi ekler.
 
@@ -132,7 +135,7 @@ virtual void Append(T item);
 *index*  
 Vektör eklenecek öğe. Türü *öğesi* tarafından tanımlanan *T* typename.
 
-## <a name="clear"></a>Vector::Clear yöntemi
+## <a name="clear"></a>  Vector::Clear yöntemi
 
 Geçerli vektör tüm öğeler siler.
 
@@ -142,7 +145,7 @@ Geçerli vektör tüm öğeler siler.
 virtual void Clear();
 ```
 
-## <a name="first"></a>Vector::First yöntemi
+## <a name="first"></a>  Vector::First yöntemi
 
 Yineleyici işaret vektör ilk öğe döndürür.
 
@@ -162,7 +165,7 @@ Dönüş değeri ile bildirilen bir değişken atamak için First() tarafından 
 
 Bir STL işleve yineleyiciler çifti gerektiğinde boş işlevleri kullanın [Windows::Foundation::Collections:: başlamak](../cppcx/begin-function.md) ve [Windows::Foundation::Collections::end](../cppcx/end-function.md)
 
-## <a name="getat"></a>Vector::GetAt yöntemi
+## <a name="getat"></a>  Vector::GetAt yöntemi
 
 Belirtilen dizin tarafından identifed olan geçerli vektör öğesi alır.
 
@@ -181,7 +184,7 @@ Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamı�
 
 Tarafından belirtilen öğenin *dizin* parametresi. Öğe türü tarafından tanımlanan *T* typename.
 
-## <a name="getmany"></a>Vector::GetMany yöntemi
+## <a name="getmany"></a>  Vector::GetMany yöntemi
 
 Belirtilen dizinden başlayarak geçerli vektör öğelerinin bir dizisini alır ve bunları arayana ayrılan diziye kopyalar.
 
@@ -209,7 +212,7 @@ Belirtilen öğede başlayan öğeleri çağıran tarafından ayrılmış bir di
 
 Bu işlev, doğrudan istemci kodu tarafından kullanılmak üzere tasarlanmamıştır. Dahili olarak kullanılan [to_vector işlevi](../cppcx/to-vector-function.md) std::vector örnekleri Platform::Vector intances verimli dönüşümünü etkinleştirmek için.
 
-## <a name="getview"></a>Vector::GetView yöntemi
+## <a name="getview"></a>  Vector::GetView yöntemi
 
 Vektör salt okunur bir görünümünü verir; diğer bir deyişle, bir IVectorView.
 
@@ -223,7 +226,7 @@ Windows::Foundation::Collections::IVectorView<T>^ GetView();
 
 IVectorView nesne.
 
-## <a name="indexof"></a>Vector::IndexOf yöntemi
+## <a name="indexof"></a>  Vector::IndexOf yöntemi
 
 Geçerli vektör belirtilen öğeyi arar ve bulundu, döndürür öğenin dizini.
 
@@ -245,13 +248,13 @@ Bulunacak öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true`Belirtilen öğe bulunursa; Aksi takdirde `false`.
+`true` Belirtilen öğe bulunursa; Aksi takdirde `false`.
 
 ### <a name="remarks"></a>Açıklamalar
 
 IndexOf std::find_if öğesini bulmak için kullanır. Özel öğe türü == bu nedenle tekrar ve! = işleci eşitlik etkinleştirmek için bu find_if karşılaştırmaları gerektirir.
 
-##  <a name="insertat"></a>Vector::InsertAt yöntemi
+##  <a name="insertat"></a>  Vector::InsertAt yöntemi
 
 Belirtilen öğe belirtilen dizin tarafından tanımlanan öğesinden sonra geçerli vektör ekler.
 
@@ -269,7 +272,7 @@ Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamı�
 *item*  
 Tarafından belirtilen öğesinden sonra vektör eklemek için bir öğe *dizin*. Türü *öğesi* tarafından tanımlanan *T* typename.
 
-## <a name="removeat"></a>Vector::RemoveAt yöntemi
+## <a name="removeat"></a>  Vector::RemoveAt yöntemi
 
 Geçerli vektör belirtilen dizinden tarafından tanımlanan öğesini siler.
 
@@ -284,7 +287,7 @@ virtual void RemoveAt(unsigned int index);
 *index*  
 Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.
 
-## <a name="removeatend"></a>Vector::RemoveAtEnd yöntemi
+## <a name="removeatend"></a>  Vector::RemoveAtEnd yöntemi
 
 Geçerli vektör ucundaki öğe siler.
 
@@ -294,7 +297,7 @@ Geçerli vektör ucundaki öğe siler.
 virtual void RemoveAtEnd();
 ```
 
-## <a name="replaceall"></a>Vector::ReplaceAll yöntemi
+## <a name="replaceall"></a>  Vector::ReplaceAll yöntemi
 
 Geçerli vektör öğelerinde siler ve sonra belirtilen dizisinden öğeleri ekler.
 
@@ -309,7 +312,7 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 *arr*  
 Türü tarafından tanımlanan nesneleri içeren bir dizi *T* typename.
 
-## <a name="setat"></a>Vector::SetAt yöntemi
+## <a name="setat"></a>  Vector::SetAt yöntemi
 
 Belirtilen dizini tarafından tanımlanan geçerli vektör öğesinde belirtilen değeri atar.
 
@@ -327,7 +330,7 @@ Belirli bir öğeyle vektör nesnesinde belirtir sıfır tabanlı, imzalanmamı�
 *item*  
 Belirtilen öğe atanacak değer. Türü *öğesi* tarafından tanımlanan *T* typename.
 
-## <a name="size"></a>Vector::size yöntemi
+## <a name="size"></a>  Vector::size yöntemi
 
 Geçerli vektör nesnesinde öğe sayısını döndürür.
 
@@ -381,7 +384,7 @@ A [std::initializer_list](../standard-library/initializer-list-class.md) nesne t
 *N*  
 Geçerli vektör başlatmak için kullanılan nesneleri koleksiyonu öğe sayısı.
 
-*boyutu*  
+*Boyutu*  
 Vektör öğe sayısı.
 
 *value*  

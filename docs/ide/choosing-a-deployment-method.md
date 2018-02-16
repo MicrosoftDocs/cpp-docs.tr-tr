@@ -27,11 +27,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e4336f200f736ea7656af11c7c7c43ca32f27f9
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 9b30bea93163549373759ea8980650717d49bbac
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="choosing-a-deployment-method"></a>Dağıtım Yöntemi Seçme
 Visual C++ uygulamanız kendi içinde yer alan ve bir kopya komutu kullanılarak dağıtılabilir sürece, Windows Installer dağıtımı için kullanmanızı öneririz. Windows Installer yükleme, onarım ve kaldırma işlemlerini ve ayrıca uygulama dosyalarının, bağımlılıkların ve kayıt defteri girişlerinin atomik güncelleştirilmesini destekler.   
@@ -45,7 +45,7 @@ Visual C++ uygulamanız kendi içinde yer alan ve bir kopya komutu kullanılarak
 ## <a name="redistributing-visual-c-libraries"></a>Visual C++ Kitaplıklarını Yeniden Dağıtma  
  Dağıtımlarınızda, yeniden dağıtım için lisanslı herhangi bir Visual C++ kitaplığı sürümünü yeniden dağıtabilirsiniz. Bunları dağıtmanın üç yolu vardır:  
   
--   Visual C++ kitaplıkları paylaşılan DLL'ler %windir%\system32 olarak yükleyen yeniden dağıtılabilir paketleri kullanılarak merkezi dağıtım\\. (Bu klasöre yüklemek için yönetici hakları gerekir.) Uygulamanızı hedef bilgisayara yüklemeden önce yeniden dağıtılabilir paketi çalıştıran bir komut dosyası veya kurulum programı oluşturabilirsiniz. Yeniden dağıtılabilir paketler x 86, x 64 ve ARM platformları (VCRedist_x86.exe, VCRedist_x64.exe veya VCRedist_arm.exe) için kullanılabilir. Visual Studio % ProgramFiles (x86) %\Microsoft Visual Studio bu paketleri içerir `version`\VC\Redist\\`locale ID`\\. Ayrıca bunları indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=132793). (İndirme Merkezi'nde, arama "Visual C++ yeniden dağıtılabilir paketi *Visual Studio sürümü ve güncelleştirme*" uygulamanızı eşleşir. Örneğin, uygulamanızı derlemek için Visual Studio 2012 güncelleştirmesi 4'ü kullandıysanız, "Visual C++ Yeniden Dağıtılabilir Paketi 2012 güncelleştirme 4" öğesini arayın.) Yeniden dağıtılabilir paketi kullanma hakkında daha fazla bilgi için bkz: [izlenecek yol: Visual C++ uygulaması tarafından kullanarak bir Visual C++ yeniden dağıtılabilir paketi dağıtma](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).  
+-   Visual C++ kitaplıkları paylaşılan DLL'ler %windir%\system32 olarak yükleyen yeniden dağıtılabilir paketleri kullanılarak merkezi dağıtım\\. (Bu klasöre yüklemek için yönetici hakları gerekir.) Uygulamanızı hedef bilgisayara yüklemeden önce yeniden dağıtılabilir paketi çalıştıran bir komut dosyası veya kurulum programı oluşturabilirsiniz. Yeniden dağıtılabilir paketler x 86, x 64 ve ARM platformları (VCRedist_x86.exe, VCRedist_x64.exe veya VCRedist_arm.exe) için kullanılabilir. Visual Studio % ProgramFiles (x86) %\Microsoft Visual Studio bu paketleri içerir `version`\VC\Redist\\`locale ID`\\. Ayrıca bunları indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=132793). (Aramak için arama kutusunu İndirme Merkezi'nde kullanın "Visual C++ yeniden dağıtılabilir paketi *Visual Studio sürümü ve güncelleştirme*" uygulamanızı eşleşir. Uygulamanızı oluşturmak için Visual Studio 2015 güncelleştirme 3 kullandıysanız, for example, ardından arama "Visual C++ yeniden dağıtılabilir paketi 2015 güncelleştirme 3".) Yeniden dağıtılabilir paketi kullanma hakkında daha fazla bilgi için bkz: [izlenecek yol: Visual C++ uygulaması tarafından kullanarak bir Visual C++ yeniden dağıtılabilir paketi dağıtma](../ide/deploying-visual-cpp-application-by-using-the-vcpp-redistributable-package.md).  
   
 -   Her biri belirli bir Visual C++ Kitaplık olarak yükler %windir%\system32 paylaşılan DLL'de birleştirme modüllerini kullanarak merkezi dağıtım\\. (Bu klasöre yüklemek için yönetici hakları gerekir.) Birleştirme modülleri uygulamanız için .msi yükleyicisinin bir parçası haline gelir. Visual C++ yeniden dağıtılabilir birleştirme modülleri yer alan Visual Studio'da \Program dosyaları (x86) \Common Files\Merge modülleri\\. Daha fazla bilgi için bkz: [yeniden dağıtma tarafından kullanarak birleştirme modülleri](../ide/redistributing-components-by-using-merge-modules.md).  
   

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,41 +13,38 @@ f1_keywords:
 - CDynamicAccessor.GetStatus
 - ATL.CDynamicAccessor.GetStatus
 - CDynamicAccessor::GetStatus
-dev_langs: C++
-helpviewer_keywords: GetStatus method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetStatus method
 ms.assetid: 8f1aba69-5c2c-4ca7-ad84-7b4b27995eb8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1b6e2316c3dfc02c841e893a1426f35f509b808a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 31b25161617d36424804ee5c9a325d59f5fcae41
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicaccessorgetstatus"></a>CDynamicAccessor::GetStatus
 Belirtilen sütun durumunu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      bool GetStatus(   
-   DBORDINAL nColumn,   
-   DBSTATUS* pStatus    
-) const throw( );  
-bool GetStatus(  
-   const CHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
-bool GetStatus(  
-   const WCHAR* pColumnName,  
-   DBSTATUS* pStatus   
-) const throw( );  
+```
+bool GetStatus(DBORDINAL nColumn,   
+  DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const CHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
+
+bool GetStatus(const WCHAR* pColumnName,  
+   DBSTATUS* pStatus) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

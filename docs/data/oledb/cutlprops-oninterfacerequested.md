@@ -4,36 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: CUtlProps
-dev_langs: C++
-helpviewer_keywords: OnInterfaceRequested method
+f1_keywords:
+- CUtlProps
+dev_langs:
+- C++
+helpviewer_keywords:
+- OnInterfaceRequested method
 ms.assetid: a5e1a879-cff3-4e01-b902-2249a152984f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c458eaf7c1e41ade5d29fa020bacfebb2b278e82
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eb15d2574ba60dcec9c0638ca10a465db5813709
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cutlpropsoninterfacerequested"></a>CUtlProps::OnInterfaceRequested
 Bir tüketici bir yöntem bir nesne oluşturma arabirimleri çağırdığında isteğe bağlı bir arabirim için isteklerini işler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(  
-   REFIID riid  
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::InvalidCastException::InvalidCastException
 - VCCORLIB/Platform::InvalidCastException
-dev_langs: C++
-helpviewer_keywords: Platform::InvalidCastException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::InvalidCastException
 ms.assetid: 0215131d-1251-4913-9561-824410e045b6
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 084e7536f787fb162491c2e3b33620c3e4014dd6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 91224dcf2884faf194cf450a4b158a71c295b3ea
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platforminvalidcastexception-class"></a>Platform::InvalidCastException sınıfı
 Cast veya açık dönüştürme geçersiz olduğunda oluşturulur.  

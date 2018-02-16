@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,34 +14,33 @@ f1_keywords:
 - ATL.CManualAccessor.CreateAccessor
 - CManualAccessor.CreateAccessor
 - CManualAccessor::CreateAccessor
-dev_langs: C++
-helpviewer_keywords: CreateAccessor method
+dev_langs:
+- C++
+helpviewer_keywords:
+- CreateAccessor method
 ms.assetid: 594c8d6d-b49a-4818-a9a5-81c8115d4e42
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f313e6d2b13a03a91295c75d52e4e77d5dfda22b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7d066bec37955d39ecee1fdca5522df843c84442
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cmanualaccessorcreateaccessor"></a>CManualAccessor::CreateAccessor
 Bağ yapıları sütunu için bellek ayırır ve sütun veri üyelerine başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT CreateAccessor(   
-   int nBindEntries,   
-   void* pBuffer,   
-   DBLENGTH nBufferSize    
-) throw( );  
+```
+HRESULT CreateAccessor(int nBindEntries,   
+  void* pBuffer,   
+   DBLENGTH nBufferSize) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

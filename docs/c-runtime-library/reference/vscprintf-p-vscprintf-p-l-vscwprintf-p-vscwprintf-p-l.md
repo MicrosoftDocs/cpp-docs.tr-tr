@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vscprintf_p_l
 - _vscprintf_p
@@ -33,7 +34,8 @@ f1_keywords:
 - _vscwprintf_p_l
 - vscprintf_p_l
 - _vscwprintf_p
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vscprintf_p function
 - _vsctprintf_p_l function
@@ -48,16 +50,17 @@ helpviewer_keywords:
 - _vsctprintf_p function
 - vscprintf_p_l function
 ms.assetid: 5da920b3-8652-4ee9-b19e-5aac3ace9d03
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b920931cf524ef44d1c09814576dbf22e54a640b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 50db038122dde42d8707f46be7f16f876e1807f1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vscprintfp-vscprintfpl-vscwprintfp-vscwprintfpl"></a>_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 Bağımsız değişkenler kullanılan order belirtme olanağı bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş dizesindeki karakterlerin sayısını döndürür.  
@@ -98,7 +101,7 @@ int _vscwprintf_p _l(
  Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_vscprintf_p`dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_vscwprintf_p`geniş karakterler için aynı işlevi gerçekleştirir.  
+ `_vscprintf_p` dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_vscwprintf_p` geniş karakterler için aynı işlevi gerçekleştirir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevler farklı `_vscprintf` ve `_vscwprintf` bağımsız değişkenleri kullanıldığı sırayı belirtme olanağı yalnızca destekledikleri olmasıdır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  

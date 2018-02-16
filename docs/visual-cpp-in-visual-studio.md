@@ -21,11 +21,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a1cfde0baec56931f7b3a5603d8166df6067eb5
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: f6e62c477ee6332515ac32de6a9ada6f7c7a99d6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual C++ in Visual Studio
 
@@ -75,7 +75,7 @@ Visual Studio hakkında yardım almayı, hataları dosyalamayı ve öneride bulu
 ## <a name="writing-applications-in-c"></a>C++ uygulamaları yazma
 
 [Evrensel Windows uygulamaları](windows/universal-windows-apps-cpp.md)  
-Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. Windows mağazası uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Visual Studio kullanarak geliştirme Windows mağazası uygulamaları](http://go.microsoft.com/fwlink/p/?LinkId=248364) ve [C++ kullanarak Yol Haritası Windows mağazası uygulamaları için](http://go.microsoft.com/fwlink/p/?LinkId=244654).
+Kılavuzları ve referans içeriği Windows Geliştirici Merkezi'nde bulabilirsiniz. UWP uygulamaları geliştirme hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu giriş](/windows/uwp/get-started/universal-application-platform-guide) ve [C++ kullanarak ilk UWP uygulamanızı oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
 [Masaüstü uygulamaları (C++)](windows/desktop-applications-visual-cpp.md)  
 İleti döngüsü ve geri aramalar içeren masaüstü uygulamaları oluşturmayı öğrenin.
@@ -131,7 +131,7 @@ CPU üzerinde yürütülen zaman uyumsuz ve paralel algoritmalar.
 GPU üzerinde yürütülen yoğun paralel algoritmalar.
 
 [Windows çalışma zamanı Şablon kitaplığı (WRL)](http://msdn.microsoft.com/library/windows/apps/hh438466.aspx)  
-[!INCLUDE[win8_appname_long](build/includes/win8_appname_long_md.md)] uygulamaları ve bileşenleri.
+Evrensel Windows Platformu (UWP) uygulamaları ve bileşenleri.
 
 [.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)  
 Ortak dil çalışma zamanı (CLR) için programlama.

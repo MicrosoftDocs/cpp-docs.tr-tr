@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 03e86a7cbb36a0cfdf0ad2d32d625eae0102b25a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f3a489935b72b570f18f6fd75170f215ed751e23
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>Ad alanları ve tür görünürlüğü (C + +/ CX)
 Bir ad alanı bir standart C++ ilgili işlevleri türlerini gruplama için ve ad çakışmaları kitaplıklarında engellemek için yapıdır. Windows çalışma zamanı tür sistemi kendi kodunuzu de dahil, tüm genel Windows çalışma zamanı tür ad alanı kapsamında bir ad alanındaki bildirilmelidir gerektirir. Genel kapsamda bildirilen veya başka bir sınıf içinde iç içe geçmiş genel türler, derleme zamanı hataya neden olur.  
@@ -41,9 +42,9 @@ Bir ad alanı bir standart C++ ilgili işlevleri türlerini gruplama için ve ad
 |private|Varsayılan erişilebilirlik. Standart C++ olduğu gibi ile aynı anlamı.|Hayır|  
 |protected|Standart C++, uygulama veya bileşen içinde hem meta verilerde olduğu gibi ile aynı anlamı.|Evet|  
 |public|Standart C++ olduğu gibi ile aynı anlamı.|Evet|  
-|`public protected`- veya -`protected public`|Erişilebilirlik meta verileri, uygulama veya bileşen içinde genel korumalı.|Evet|  
-|`protected private`veya`private protected`|Meta verilerde görünmez; Erişilebilirlik uygulama veya bileşenin içinde korumalı.||  
-|`internal`veya`private public`|Üye uygulama veya bileşen içinde genel olan, ancak meta verilerde görünür değil.|Hayır|  
+|`public protected` - veya - `protected public`|Erişilebilirlik meta verileri, uygulama veya bileşen içinde genel korumalı.|Evet|  
+|`protected private` Veya `private protected`|Meta verilerde görünmez; Erişilebilirlik uygulama veya bileşenin içinde korumalı.||  
+|`internal` Veya `private public`|Üye uygulama veya bileşen içinde genel olan, ancak meta verilerde görünür değil.|Hayır|  
   
 ## <a name="windows-runtime-namespaces"></a>Windows çalışma zamanı ad alanları  
  Windows API Windows belirtilen türlerine oluşur::\* ad alanları. Bu ad alanları Windows için ayrılmıştır ve türleri kendisine eklenemez. İçinde **Nesne Tarayıcısı**, bu ad alanları windows.winmd dosyasında görüntüleyebilirsiniz. Bu ad alanları hakkında daha fazla belgeler için bkz: [Windows API](http://msdn.microsoft.com/library/windows/apps/br211377).  

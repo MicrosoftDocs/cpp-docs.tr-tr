@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,34 +13,33 @@ f1_keywords:
 - ATL::IRowsetImpl::GetData
 - IRowsetImpl::GetData
 - IRowsetImpl.GetData
-dev_langs: C++
-helpviewer_keywords: GetData method [OLE DB]
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetData method [OLE DB]
 ms.assetid: cb15f1cc-bd25-4b74-93c3-db71aa93829c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c666644c9ac102a0b65f78af0954ca247d672bae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4c8238fba101efe81219bc332e050d7fd0ed8165
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetimplgetdata"></a>IRowsetImpl::GetData
 Satır satır kümesinin kopyadan verileri alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD( GetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD(GetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pDstData   
-);  
+   void* pDstData);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

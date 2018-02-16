@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,21 +14,23 @@ f1_keywords:
 - CAccessor
 - ATL::CAccessor<T>
 - ATL.CAccessor
-dev_langs: C++
-helpviewer_keywords: CAccessor class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAccessor class
 ms.assetid: b2ba959f-a686-46f3-8837-176248aef748
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f3f92d86ff67cc4ebfa752e84373c4f77bf3dc55
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c5e203b27cdc61354f0d81f34cc6bc410fbfb6c2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="caccessor-class"></a>CAccessor Sınıfı
 Erişimci türleri birini temsil eder.  
@@ -36,9 +39,7 @@ Erişimci türleri birini temsil eder.
   
 ```  
   
-      template < class   
-      T  
-       >  
+template <class T>  
 class CAccessor : public CAccessorBase, public T  
 ```  
   

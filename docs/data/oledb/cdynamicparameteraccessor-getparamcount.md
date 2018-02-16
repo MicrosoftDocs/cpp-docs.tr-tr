@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,30 +14,31 @@ f1_keywords:
 - CDynamicParameterAccessor.GetParamCount
 - GetParamCount
 - ATL.CDynamicParameterAccessor.GetParamCount
-dev_langs: C++
-helpviewer_keywords: GetParamCount method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetParamCount method
 ms.assetid: 2a9bb734-a90c-4f89-aef6-8cbb41fce814
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c1d9e555f20af030076ee1345bf9374dc15f9fc9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ae16a49ad4e0757d5572572af9b2313d4a29b62c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamcount"></a>CDynamicParameterAccessor::GetParamCount
 Arabellekte saklanan parametreleri sayısını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-DB_UPARAMS GetParamCount( ) const throw( );  
+```cpp
+DB_UPARAMS GetParamCount() const throw();  
   
 ```  
   

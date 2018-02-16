@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,30 +18,31 @@ f1_keywords:
 - ATL.CBulkRowset<TAccessor>.MoveLast
 - CBulkRowset<TAccessor>::MoveLast
 - MoveLast
-dev_langs: C++
-helpviewer_keywords: MoveLast method
+dev_langs:
+- C++
+helpviewer_keywords:
+- MoveLast method
 ms.assetid: c880f8b4-9ab6-49ee-8c2d-72d240782514
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 94fa007a7a28107446c34be96a58f03f029f66b5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 062763ea11b45bd9b3d2404533acce1bab7f8987
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cbulkrowsetmovelast"></a>CBulkRowset::MoveLast
 Son satır taşır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-HRESULT MoveLast( ) throw( );  
+```cpp
+HRESULT MoveLast() throw();  
   
 ```  
   

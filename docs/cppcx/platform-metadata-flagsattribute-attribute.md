@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::Metadata::FlagsAttribute
-dev_langs: C++
-helpviewer_keywords: Platform::Metadata::FlagsAttribute Attribute
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::Metadata::FlagsAttribute
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::Metadata::FlagsAttribute Attribute
 ms.assetid: 56f4a191-cc81-4742-aff8-bd2219c0735c
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d6679fbf59c279fe7abd4bffb8fca9fcde0b8867
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8ce558d7534d99d1755bf9005f5e62cee35a5727
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformmetadataflagsattribute-attribute"></a>Platform::metadata::FlagsAttribute özniteliği
 Numaralandırma bit alan olarak kabul olduğunu gösterir; diğer bir deyişle, bayrakları kümesi.  
@@ -35,7 +39,7 @@ public ref class Flags abstract : Attribute
 ## <a name="inheritance"></a>Devralma  
  [Platform::Object](../cppcx/platform-object-class.md)   
   
- [Platform::metadata::attribute](../cppcx/platform-metadata-attribute-attribute.md)  
+ [Platform::Metadata::Attribute](../cppcx/platform-metadata-attribute-attribute.md)  
   
 ### <a name="remarks"></a>Açıklamalar  
   

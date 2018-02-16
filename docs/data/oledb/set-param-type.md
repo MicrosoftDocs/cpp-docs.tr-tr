@@ -4,36 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SET_PARAM_TYPE
-dev_langs: C++
-helpviewer_keywords: SET_PARAM_TYPE macro
+f1_keywords:
+- SET_PARAM_TYPE
+dev_langs:
+- C++
+helpviewer_keywords:
+- SET_PARAM_TYPE macro
 ms.assetid: 85979070-2d55-4c67-94b1-9b9058babc59
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 024cf67033cdc35917f37c2e6183e60042c40d45
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9cf1ffdc9201a55fcba2cf334c350e924fda113
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setparamtype"></a>SET_PARAM_TYPE
 Belirtir `COLUMN_ENTRY` izleyin makroları `SET_PARAM_TYPE` makrosu giriş, çıkış veya giriş/çıkış.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-SET_PARAM_TYPE(  
-type  
- )  
+```cpp
+SET_PARAM_TYPE(type)  
   
 ```  
   
@@ -53,7 +54,8 @@ type
 -   **DBPARAMIO_INPUT &#124; DBPARAMIO_OUTPUT** bir girdi ve çıktı parametresi parametresidir.  
   
 ## <a name="example"></a>Örnek  
-```cpp  
+```
+cpp  
 class CArtistsProperty
 {
 public:

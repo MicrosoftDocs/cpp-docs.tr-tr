@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b2206151f68e02ebadbfab5785a7a1e90be67468
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.openlocfilehash: b204783e3b2c418e5e719ca5c6efcf9c2d31c6df
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -28,7 +30,7 @@ Bulut veya Xbox, Windows Server, Windows PC (x86, x64 veya ARM) üzerinde çalı
 
 Visual C++ ile geliştirebilirsiniz Windows uygulamaları birkaç geniş kategorisi vardır. Bu kategoriler farklı programlama modelleri ya da farklı kitaplıkları ve platform erişim sağlar ve kullanıcı arabirimi API'lerini kullandığını anlamına gelir uygulama modelleri vardır.
 
-- [Windows Evrensel uygulamaları](#BK_WindowsUniversal). Windows uygulamaları üçüncü kategorisini Windows 8 ile sunulan ve uygulamaların bu kategori için destek Windows 10'da devam eder. Bu uygulamaları sık "Windows uygulamalar" olarak adlandırılır ve çeşitli aygıtlardan hedef Masaüstü ve mobil uygulamaları içerir. Bu uygulamaları C + yazabileceğiniz +/ CX, Windows çalışma zamanı geliştirme ya da Windows çalışma zamanı kitaplığı (WRL) kullanarak COM ile standart c++ desteğiyle C++ diyalekti. Bu uygulamaları, ilk olarak Windows 10 masaüstü penceresinde çalıştırma seçeneğini kullanıcınız rağmen tam ekran çalıştırmak için tasarlanmıştır. Bu uygulamaları dokunmalı, ancak kullanıcıların tercih ederseniz veya dokunmatik ekran kullanılamıyorsa çalışmak üzere fareyi kullanmasını kolaydır. Bu uygulamaları "Windows mağazası uygulamaları" çağrılan bunları sonuçlanan bir olgu Windows Mağazası'ndan dağıtılır
+- [Windows Evrensel uygulamaları](#BK_WindowsUniversal). Windows uygulamaları üçüncü kategorisini Windows 8 ile sunulan ve uygulamaların bu kategori için destek Windows 10'da devam eder. Bu uygulamaları sık "Windows uygulamalar" olarak adlandırılır ve çeşitli aygıtlardan hedef Masaüstü ve mobil uygulamaları içerir. Bu uygulamaları C + yazabileceğiniz +/ CX, Windows çalışma zamanı geliştirme ya da Windows çalışma zamanı kitaplığı (WRL) kullanarak COM ile standart c++ desteğiyle C++ diyalekti. Bu uygulamaları, ilk olarak Windows 10 masaüstü penceresinde çalıştırma seçeneğini kullanıcınız rağmen tam ekran çalıştırmak için tasarlanmıştır. Bu uygulamaları dokunmalı, ancak kullanıcıların tercih ederseniz veya dokunmatik ekran kullanılamıyorsa çalışmak üzere fareyi kullanmasını kolaydır. Bu uygulamalar, "Depo" uygulamaları çağrılan bunları sonuçlanan bir olgu Microsoft Store aracılığıyla dağıtılır.
 
 - [Masaüstü, sunucu ve bulut uygulamaları ve oyunları](#BK_Native). Bu kategorideki tüm Windows uygulamalarını olan, Windows Masaüstü uygulamaları, Win32 uygulamaları olarak da adlandırılan bu uygulamaları Win32 API önce Windows 8 kullanarak sonra bu kategorisi içerir. Bu kategorideki uygulamalar, bir kullanıcı arabirimi için MFC ve ATL COM nesneleri genellikle olan Windows bileşenleri ile etkileşim kurmak için kullanabilirsiniz.
 
@@ -38,12 +40,12 @@ Visual C++ ile geliştirebilirsiniz Windows uygulamaları birkaç geniş kategor
 
 - **.NET framework uygulamaları**. Çoğu .NET Framework uygulamaları C# veya Visual Basic ile yazılmış, ancak aşağıdakileri de yapabilirsiniz C + +/ CLI (Visual c++/CLR derleyici seçeneği). Öneririz kullanarak C + +/ CLI yönetilen ve yerel kodu içeren daha büyük bir uygulamanın en az bir birlikte çalışma katmanda için.
 
-##  <a name="BK_WindowsUniversal"></a>Windows Evrensel uygulamaları
+##  <a name="BK_WindowsUniversal"></a> Windows Evrensel uygulamaları
 
 Windows 10 ile uygulamaları tabletleri ve telefonları gibi tüm Windows 10 cihazlarda yanı sıra masaüstünde çalıştırabilir. Masaüstü bir pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki aygıtlarda de çalıştırabilirsiniz.  İki tür uygulamaları için programlama modelini Win32 Masaüstü uygulamalardan farklıdır. Bu Windows uygulamaları Windows kullanıcı arabirimi öğeleri, bu uygulamalar için temel hizmetleri sağlayan ve sağlar, çalışma zamanı ve bir arabirim desteklenen farklı donanım aygıtları için çalışır. Bu uygulamaları için yerel kodu derleme ve XAML kullanıcı arabirimi olan ya da DirectX kullanın. Windows çalışma zamanı bileşenleri diğer Windows uygulamalarını tüketebileceği yerel kodda yazabilirsiniz — bunlar, C#, Visual Basic veya JavaScript içinde yazılmış uygulamalar içerir. Daha fazla bilgi için bkz: [C++'da bir UWP "Hello world" uygulaması oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp), [DirectX ile basit UWP oyun oluşturmak](/windows/uwp/gaming/tutorial--create-your-first-uwp-directx-game), ve [oluşturma Windows çalışma zamanı bileşenleri c++](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 > [!TIP]
-> Windows 10 için varolan Masaüstü uygulamanızı Windows mağazası yoluyla dağıtılmak paketlemek için masaüstü uygulaması dönüştürücü kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
+> Windows 10 için Microsoft Store aracılığıyla dağıtımı için varolan Masaüstü uygulamanız paketlemek için masaüstü uygulaması dönüştürücü kullanabilirsiniz. Daha fazla bilgi için bkz: [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü uygulamanız için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile Getir](https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root).
 
 Evrensel Windows platformu örnekler için bkz: [github'da Windows Evrensel örnekleri](https://github.com/Microsoft/Windows-universal-samples)
 
@@ -59,7 +61,7 @@ Windows API sözleşmeleri adlı 10'da sunulan yeni bir kavram, belirli Windows 
 
 Tüm bu kavramları daha fazla bilgi için bkz: [Windows Evrensel uygulamaları için kılavuz](http://go.microsoft.com/fwlink/p/?linkid=534605).
 
-##  <a name="BK_Native"></a>Masaüstü, sunucu ve bulut uygulamaları ve oyunları
+##  <a name="BK_Native"></a> Masaüstü, sunucu ve bulut uygulamaları ve oyunları
 
 Bulutta Azure yerel kod derlemeleri C++ ile yazma ve bunlara C# ' de oluşturulan Web rollerden çağırın. Daha fazla bilgi için bkz: [Azure SDK'sı](http://go.microsoft.com/fwlink/p/?LinkId=256416).
 

@@ -4,46 +4,47 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CDynamicStringAccessor::SetString
 - CDynamicStringAccessor.SetString
-dev_langs: C++
-helpviewer_keywords: SetString method
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetString method
 ms.assetid: 94846d8b-4c1b-47fe-acdc-1752981cee25
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7c05186d8ea7f62ad07cae9a4b4689083543e485
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 43956a0bb9ce673e96c4a8c06194a6ef48a56495
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicstringaccessorsetstring"></a>CDynamicStringAccessor::SetString
 Belirtilen sütun veri dize olarak ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-HRESULT SetString(  
-   DBORDINAL nColumn,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const CHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
-HRESULT SetString(  
-   const WCHAR* pColumnName,  
-   BaseType* data  
-) throw( );  
+```
+HRESULT SetString(DBORDINAL nColumn,  
+  BaseType* data) throw();  
+
+
+HRESULT SetString(const CHAR* pColumnName,  
+   BaseType* data) throw();  
+
+
+HRESULT SetString(const WCHAR* pColumnName,  
+   BaseType* data) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

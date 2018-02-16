@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,37 +13,36 @@ f1_keywords:
 - ATL::IRowsetUpdateImpl::Undo
 - IRowsetUpdateImpl::Undo
 - IRowsetUpdateImpl.Undo
-dev_langs: C++
-helpviewer_keywords: Undo method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Undo method
 ms.assetid: f3dc7764-050c-4322-9b2f-9ca772a0fb88
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 329a6141ca01678c341ef3890fb0e563a7299915
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6127e1039b98847f3095e28a66ddd303fce56e76
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetupdateimplundo"></a>IRowsetUpdateImpl::Undo
 Son getirme veya güncelleştirme satır değişiklikleri geri alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD ( Undo )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (Undo )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[ ],  
    DBCOUNTITEM* pcRowsUndone,  
    HROW** prgRowsUndone,  
-   DBROWSTATUS** prgRowStatus   
-);  
+   DBROWSTATUS** prgRowStatus);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

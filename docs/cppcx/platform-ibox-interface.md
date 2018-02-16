@@ -6,22 +6,24 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Namespace not found::Platform
 - VCCORLIB/Namespace not found::Platform::Value
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 774df45d-f8a7-45a3-ae24-eecc3c681040
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8a86eca75bb5470585ba68fe3b7fcdb55c861434
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2ed15a372fcb8cc72d2ad9aa1ce856470da0126b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformibox-interface"></a>Platform::IBox arabirimi
 [Platform::IBox](../cppcx/platform-ibox-interface.md) arabirimi için C++ adıdır `Windows::Foundation::IReference` arabirimi.  
@@ -43,7 +45,7 @@ interface class IBox
 ### <a name="requirements"></a>Gereksinimler  
   
 ### <a name="members"></a>Üyeler  
- `Platform::IBox` Arabirimi devraldığı [Platform::IValueType](../cppcx/platform-ivaluetype-interface.md) arabirimi. `IBox`Bu üyeler vardır:  
+ `Platform::IBox` Arabirimi devraldığı [Platform::IValueType](../cppcx/platform-ivaluetype-interface.md) arabirimi. `IBox` Bu üyeler vardır:  
   
  **Özellikler**  
   
@@ -51,7 +53,7 @@ interface class IBox
 |------------|-----------------|  
 |[Değer](#value)|Bu konuda daha önce depolanan sarmalanmamış değeri döndürür `IBox` örneği.|  
 
-## <a name="value"></a>IBox::Value özelliği
+## <a name="value"></a> IBox::Value özelliği
 Bu nesne depolanan değeri döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  

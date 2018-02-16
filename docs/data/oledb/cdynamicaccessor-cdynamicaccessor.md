@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,33 +13,32 @@ f1_keywords:
 - ATL::CDynamicAccessor::CDynamicAccessor
 - ATL.CDynamicAccessor.CDynamicAccessor
 - CDynamicAccessor.CDynamicAccessor
-dev_langs: C++
-helpviewer_keywords: CDynamicAccessor class, constructor
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDynamicAccessor class, constructor
 ms.assetid: bf40fe81-2c85-473e-9075-51ad9b060b39
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3f063652b95cc5e778d7e1ffcbc809b9425f5425
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce33fd4aa64114a0b4465bb3272f74ef2ccf8258
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicaccessorcdynamicaccessor"></a>CDynamicAccessor::CDynamicAccessor
 Oluşturur ve başlatır `CDynamicAccessor` nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      CDynamicAccessor(   
-   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
-   DBLENGTH nBlobSize = 8000   
-);  
+```cpp
+      CDynamicAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,   
+   DBLENGTH nBlobSize = 8000);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - data marshaling [C++], callbacks and delegates
 - interop [C++], callbacks and delegates
 - platform invoke [C++], callbacks and delegates
 - marshaling [C++], callbacks and delegates
 ms.assetid: dcf396fd-a91d-49c0-ab0b-1ea160668a89
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: cf7f23ea9337b499d4ec80b19e3104074429cc71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 38854e3debbaf34c9068ed9fbc22e34274512687
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-marshal-function-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak İşlev İşaretçilerini Sıralama
 Bu konuda nasıl yönetilen temsilciler açıklanmaktadır P/Invoke .NET Framework özelliklerini kullanarak işlevleri ile birlikte yönetilmeyen işlev işaretçileri yerine kullanılabilir. Ancak, P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından Visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kodu kullanılabilir değilse, P/Invoke tek seçenektir. Aksi takdirde, aşağıdaki konulara bakın:  
@@ -42,8 +44,6 @@ Bu konuda nasıl yönetilen temsilciler açıklanmaktadır P/Invoke .NET Framewo
  Yönetilen modül bir işlev işaretçisi olarak yerel kod için sıralanmış ve kullandığı bir temsilci tanımlar <xref:System.Runtime.InteropServices.DllImportAttribute> yerel TakesCallback işlevini yönetilen koda kullanıma sunmak için öznitelik. Main işlevi temsilci örneği oluşturulur ve TakesCallback işlevine geçirilir. Program çıktısı, bu işlev yerel TakesCallback işlevi tarafından yürütülen gösterir.  
   
  Çöp toplama yerel işlev yürütürken temsilci yerini değiştirme alanından .NET Framework atık toplama önlemek yönetilen temsilci için Yönetilen işlev göstermez.  
-  
- / CLR, ancak/CLR ile yönetilen modül derlenmiş: pure de çalışır. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
 ```cpp  
 // TraditionalDll5.cpp  

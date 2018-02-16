@@ -4,41 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BLOB_NAME
-dev_langs: C++
-helpviewer_keywords: BLOB_NAME macro
+f1_keywords:
+- BLOB_NAME
+dev_langs:
+- C++
+helpviewer_keywords:
+- BLOB_NAME macro
 ms.assetid: 757acd0d-946d-447d-937e-94ecd700ba38
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d15a0eb22f2b5234d01b8de07479691258d4d500
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 488c2f9cc2570ea5b512d0cf245902793d408dc5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="blobname"></a>BLOB_NAME
 İle kullanılan `BEGIN_COLUMN_MAP` ve `END_COLUMN_MAP` ikili büyük nesne bağlamak için ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makrosu sütun numarası yerine sütun adını alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-BLOB_NAME(  
-pszName  
-,   
-IID  
-,   
-flags  
-,   
-data )  
+```cpp
+BLOB_NAME(pszName, IID, flags, data )  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

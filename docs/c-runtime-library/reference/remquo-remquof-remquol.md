@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - remquof
 - remquo
@@ -28,22 +29,24 @@ f1_keywords:
 - remquof
 - remquol
 - remquo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - remquol function
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5acba997b40f35d6769bd9dc9cb07e15df7eb549
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: deb68c536acab80077870bbc0b16ef171edb1d87
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 İki tamsayı değerleri geri kalanı hesaplar ve bir tamsayı değeri oturum ve sayının yaklaşık büyüklüğünü ile bir parametresinde belirtilen bir konumda saklar.  
@@ -90,7 +93,7 @@ long double remquol(
  Tamsayı oturum ve sayının yaklaşık büyüklüğünü olan bir değeri depolamak için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `remquo`kayan nokta geri kalanı döndürür `x`  /  `y`. Varsa değerini `y` 0.0, olan `remquo` sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için `printf` ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
+ `remquo` kayan nokta geri kalanı döndürür `x`  /  `y`. Varsa değerini `y` 0.0, olan `remquo` sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için `printf` ailesi, bkz: [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  `remquo` İşlevi kayan nokta kalanı hesaplar `f` , `x`  /  `y` şekilde `x`  =  `i` `*` `y`  +  `f`, burada `i` bir tamsayıdır `f` aynı işarete sahip `x`ve mutlak değerini `f` mutlak değerini'dan küçük `y`.  

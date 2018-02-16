@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - embedded pointers [C++]
 - interop [C++], embedded pointers
@@ -15,18 +17,18 @@ helpviewer_keywords:
 - marshaling [C++], embedded pointers
 - data marshaling [C++], embedded pointers
 ms.assetid: f12c1b9a-4f82-45f8-83c8-3fc9321dbb98
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c8ae331bb6bb6b35fc4353ad08240fd3d23136a3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cd2717e5ffc5dc25f7a98f679a23d6f97fd335a5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-marshal-embedded-pointers-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Katıştırılmış İşaretçileri Sıralama
 Platform Çağırma (P/Invoke) işlevselliği kullanılarak yönetilen koddan yönetilmeyen DLL'lere uygulanan işlevler çağrılabilir. DLL için kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte için tek seçenektir. Ancak, diğer .NET dilleri, Visual C++ alternatif P/Invoke sağlar. Daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md) ve [nasıl yapılır: sıralama katıştırılmış işaretçileri C++ Çalışabilirliği kullanarak](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
@@ -35,8 +37,6 @@ Platform Çağırma (P/Invoke) işlevselliği kullanılarak yönetilen koddan y�
  Yerel kod yapıları geçirme yerel yapısı için veri düzeni bakımından eşdeğer bir gruba bir yönetilen yapının oluşturduğunuz gerektirir. Ancak, işaretçiler içeren yapılar özel işleme gerektirir. Yerel yapısındaki her katıştırılmış işaretçi için yönetilen sürümün yapısı örneği içermelidir <xref:System.IntPtr> türü. Ayrıca, bellek açıkça bu örnekler tahsis edilen için başlatıldı ve kullanılarak serbest <xref:System.Runtime.InteropServices.Marshal.AllocCoTaskMem%2A>, <xref:System.Runtime.InteropServices.Marshal.StructureToPtr%2A>, ve <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> yöntemleri.  
   
  Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen modül bir işaretçi içeriyor ListString olarak adlandırılan bir yapıyı kabul eden bir işlev ve TakesListStruct adlı bir işlev tanımlayan bir DLL'dir. Yönetilen modül TakesListStruct işlevini alır ve çift * ile temsil edilen ancak bu, yerel ListStruct ile eşdeğer olan MListStruct olarak adlandırılan bir yapıyı tanımlayan bir komut satırı uygulamasıdır bir <xref:System.IntPtr> örneği. TakesListStruct öğesini çağırmadan önce main işlevi ayırır ve bu alana başvuran bellek başlatır.  
-  
- / CLR, ancak/CLR ile yönetilen modül derlenmiş: pure de çalışır. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
 ```cpp  
 // TraditionalDll6.cpp  

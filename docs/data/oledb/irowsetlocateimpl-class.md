@@ -1,38 +1,41 @@
 ---
-title: "IRowsetLocateImpl sınıfı | Microsoft Docs"
+title: IRowsetLocateImpl Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IRowsetLocateImpl
-dev_langs: C++
+f1_keywords:
+- IRowsetLocateImpl
+dev_langs:
+- C++
 helpviewer_keywords:
 - providers, bookmarks
 - IRowsetLocateImpl class
 - bookmarks, OLE DB
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: da010f02ec29b4882ffeb1bdf1c5fa7fd67c8615
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e2a43df3d8732734ed79aae4c56a891bd20bbebe
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetlocateimpl-class"></a>IRowsetLocateImpl Sınıfı
 OLE DB uygulayan [IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx) rasgele satır satır kümesinden getirir arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <  
    class T,   
    class RowsetInterface,   
@@ -40,14 +43,12 @@ template <
    class MapClass = CAtlMap < RowClass::KeyType, RowClass* >,   
    class BookmarkKeyType = LONG,   
    class BookmarkType = LONG,   
-   class BookmarkMapClass = CAtlMap < RowClass::KeyType, RowClass* >  
->  
+   class BookmarkMapClass = CAtlMap < RowClass::KeyType, RowClass* >>  
 class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<  
-   T,   
-   RowsetInterface,   
-   RowClass,   
-   MapClass  
->  
+       T,   
+       RowsetInterface,   
+       RowClass,   
+       MapClass>  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -90,9 +91,9 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 |[m_rgBookmarks](../../data/oledb/irowsetlocateimpl-m-rgbookmarks.md)|Yer işaretleri dizisi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `IRowsetLocateImpl`OLE DB Şablonları uygulamasıdır [IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx) arabirimi. `IRowsetLocate`bir satır kümesinden rasgele satırlarını alması için kullanılır. Bu arabirimini uygulamayan bir satır kümesi bir `sequential` satır kümesi. Zaman `IRowsetLocate` var olan bir satır kümesinde sütun 0 satırların yer işareti; bu sütun okuma aynı satır yeniden konumlandırmak için kullanılan bir yer işareti değeri edineceği.  
+ `IRowsetLocateImpl` OLE DB Şablonları uygulamasıdır [IRowsetLocate](https://msdn.microsoft.com/en-us/library/ms721190.aspx) arabirimi. `IRowsetLocate` bir satır kümesinden rasgele satırlarını alması için kullanılır. Bu arabirimini uygulamayan bir satır kümesi bir `sequential` satır kümesi. Zaman `IRowsetLocate` var olan bir satır kümesinde sütun 0 satırların yer işareti; bu sütun okuma aynı satır yeniden konumlandırmak için kullanılan bir yer işareti değeri edineceği.  
   
- `IRowsetLocateImpl`yer işareti desteği sağlayıcıları uygulamak için kullanılır. Yer işaretleri yüksek hızlı veri izin veren bir satır için hızlı bir şekilde döndürülecek tüketici sağlayan yer tutucuları (bir satır kümesi dizinlerini) var. Ne benzersiz olarak yer işaretleri için sağlayıcı belirleyen bir satır tanımlayın. Kullanarak `IRowsetLocateImpl` yöntemleri yer işaretleri karşılaştırabilirsiniz, fetch satır göre uzaklığı, yer işareti, fetch satırlar ve yer işaretleri için karma değerleri döndürür.  
+ `IRowsetLocateImpl` yer işareti desteği sağlayıcıları uygulamak için kullanılır. Yer işaretleri yüksek hızlı veri izin veren bir satır için hızlı bir şekilde döndürülecek tüketici sağlayan yer tutucuları (bir satır kümesi dizinlerini) var. Ne benzersiz olarak yer işaretleri için sağlayıcı belirleyen bir satır tanımlayın. Kullanarak `IRowsetLocateImpl` yöntemleri yer işaretleri karşılaştırabilirsiniz, fetch satır göre uzaklığı, yer işareti, fetch satırlar ve yer işaretleri için karma değerleri döndürür.  
   
  OLE DB yer işaretleri bir satır kümesinde desteklemek için bu sınıftan devralınan satır kümesi olun.  
   

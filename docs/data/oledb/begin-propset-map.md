@@ -4,41 +4,42 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BEGIN_PROPSET_MAP
-dev_langs: C++
-helpviewer_keywords: BEGIN_PROPSET_MAP macro
+f1_keywords:
+- BEGIN_PROPSET_MAP
+dev_langs:
+- C++
+helpviewer_keywords:
+- BEGIN_PROPSET_MAP macro
 ms.assetid: c3a30618-6025-4d49-8688-a171294d2e93
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 24fe8ed41888ab2b3d303a29cd9d004f26b6c6b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 41a19fb9104c5756693e8120f38d36ec882e43d4
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="beginpropsetmap"></a>BEGIN_PROPSET_MAP
 İşaretleri özelliğin başına eşleme girdilerini ayarlayın.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-BEGIN_PROPSET_MAP(  
-Class   
-)  
+```cpp
+BEGIN_PROPSET_MAP(Class)  
   
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Sınıfı*  
+ *sınıfı*  
  [in] Bu özellik kümesinin belirtilen sınıf. Bir özellik kümesi şu OLE DB nesneleri belirtilebilir:  
   
 -   [Veri kaynağı nesneleri](https://msdn.microsoft.com/en-us/library/ms721278.aspx)  

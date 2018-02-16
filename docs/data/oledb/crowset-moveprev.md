@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,30 +18,31 @@ f1_keywords:
 - ATL::CRowset::MovePrev
 - ATL.CRowset<TAccessor>.MovePrev
 - CRowset<TAccessor>::MovePrev
-dev_langs: C++
-helpviewer_keywords: MovePrev method
+dev_langs:
+- C++
+helpviewer_keywords:
+- MovePrev method
 ms.assetid: 7ced2bfb-f556-40fc-97ea-0d4e7213e114
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0dc22504efde2b32311dea998f2ed5d157ea9122
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 056e09ecf7ede2d74586aa7044d327ef23d42ca9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetmoveprev"></a>CRowset::MovePrev
 İmleci önceki kayda taşır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-HRESULT MovePrev( ) throw( );  
+```cpp
+HRESULT MovePrev() throw();  
   
 ```  
   

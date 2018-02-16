@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,19 +24,22 @@ f1_keywords:
 - std.xor_eq
 - xor_eq
 - std::xor_eq
-dev_langs: C++
-helpviewer_keywords: xor_eq function
+dev_langs:
+- C++
+helpviewer_keywords:
+- xor_eq function
 ms.assetid: eca4b6b4-b77a-4d44-a09a-5a7e69fdb56c
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 56a07d8ba30981e4a8e5051ed723ce0967cd3627
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a830922b82d0d42fa43341b850a3e1199c2bea5d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="xoreq"></a>xor_eq
 ^= işleci alternatifi.  

@@ -6,24 +6,27 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/PlatformIntPtr::IntPtr
 - VCCORLIB/PlatformIntPtr::op_explicit Operator
 - VCCORLIB/PlatformIntPtr::ToInt32
-dev_langs: C++
-helpviewer_keywords: Platform::IntPtr Struct
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 787e8aaa0dc46a651fc4d0ac8b16d9521aebd010
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 93263e1347857b9c78a62852bea96e10c8d68fac
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 İmzalı bir işaretçi veya tanıtıcısı ve özelliği temsil eden platforma özgü boyutudur (32 bit veya 64 bit).  
@@ -40,7 +43,7 @@ public value struct IntPtr
 |Üye|Açıklama|  
 |------------|-----------------|  
 |[IntPtr::IntPtr](#ctor)|IntPtr yeni bir örneğini başlatır.|  
-|[IntPtr::op_Explicit işleci](#op-explicit)|Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.|  
+|[IntPtr::op_explicit Operator](#op-explicit)|Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.|  
 |[IntPtr::ToInt32](#toint32)|Geçerli IntPtr 32-bit tamsayıya dönüştürür.|  
   
 ### <a name="requirements"></a>Gereksinimler  
@@ -52,7 +55,7 @@ public value struct IntPtr
   
  **Meta veriler:** platform.winmd  
 
-## <a name="ctor"></a> IntPtr::IntPtr Oluşturucusu
+## <a name="ctor"> </a> IntPtr::IntPtr Oluşturucusu
 Belirtilen değerle IntPtr yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -67,7 +70,7 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
   
 
 
-## <a name="op-explicit"></a> IntPtr::op_Explicit işleci
+## <a name="op-explicit"> </a> IntPtr::op_explicit Operator
 Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -84,14 +87,14 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
  Bir IntPtr dönüştürülebilir bir 32 bit tam sayı.  
   
  Değer3  
- IntPtr.  
+ An IntPtr.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Birinci ve ikinci işleçleri IntPtr döndür. Üçüncü işleci geçerli IntPtr tarafından temsil edilen değer için bir işaretçi döndürür.  
   
 
 
-## <a name="toint32"></a> IntPtr::ToInt32 yöntemi
+## <a name="toint32"> </a> IntPtr::ToInt32 yöntemi
 Geçerli IntPtr değer 32-bit tamsayıya dönüştürür.  
   
 ### <a name="syntax"></a>Sözdizimi  

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,35 +14,34 @@ f1_keywords:
 - CDataSource.GetProperties
 - ATL::CDataSource::GetProperties
 - GetProperties
-dev_langs: C++
-helpviewer_keywords: GetProperties method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetProperties method
 ms.assetid: ffaecc17-9fe7-449e-94d6-43d31ad06cfc
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9b8460aaabf94562e686f87ff15a072702dd2ecb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c7466d083b584069ec6381cc511ff6d6814c3250
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdatasourcegetproperties"></a>CDataSource::GetProperties
 Bağlı veri kaynağı nesnesi için istenen özellik bilgilerini döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT GetProperties(   
-   ULONG ulPropIDSets,   
-   const DBPROPIDSET* pPropIDSet,   
+```
+HRESULT GetProperties(ULONG ulPropIDSets,   
+   constDBPROPIDSET* pPropIDSet,   
    ULONG* pulPropertySets,   
-   DBPROPSET** ppPropsets    
-) const throw( );  
+   DBPROPSET** ppPropsets) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

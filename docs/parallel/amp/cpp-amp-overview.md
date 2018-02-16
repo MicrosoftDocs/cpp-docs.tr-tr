@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, requirements
 - C++ Accelerated Massive Parallelism, architecture
@@ -15,23 +17,24 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-caps.latest.revision: "60"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 96c794ee66f658ca211dfa5d95525e72daf296c8
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c0ee5b9c04794c531e2fa16cee72d6eee607dfbd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 C++ hızlandırılmış yoğun paralellik (C++ AMP), bir grafik işlemci birimi (GPU) gibi veri paralel donanım üzerinde ayrı ekran kartı yararlanarak C++ kod yürütmeyi hızlandırır. C++ AMP kullanarak, böylece heterojen donanımda paralellik kullanarak yürütme hızlandırılabilir çok boyutlu veri algoritmaları kodlayabilirsiniz. Çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve matematiksel işlev kitaplığının C++ AMP programlama modeli içerir. C++ AMP dil uzantıları, böylece performansı artırabilir nasıl veriler CPU'su tarafından GPU ve geri taşınır denetlemek için kullanabilirsiniz.  
   
 ## <a name="system-requirements"></a>Sistem Gereksinimleri  
   
-- [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], veya[!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
+- [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], veya [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
   
 -   DirectX 11 özelliği düzeyi 11.0 veya üstü donanım  
   
@@ -236,7 +239,7 @@ for (int i = 0; i < 5; i++)
 ### <a name="shared-memory-with-array-and-arrayview"></a>Dizi ve array_view içeren paylaşılan bellek  
  Paylaşılan bellek hem CPU hem de Hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımını ortadan kaldırır veya CPU ve Hızlandırıcı arasında veri kopyalama yükünü önemli ölçüde azaltır. Bellek paylaşılmasına karşın, hem CPU hem de Hızlandırıcı tarafından eşzamanlı olarak erişilemez ve bunun nedenle tanımsız davranışlara neden olur.  
   
- `array`nesneleri ilişkili Hızlandırıcı destekliyorsa, paylaşılan bellek kullanımı üzerinde ayrıntılı denetim belirtmek için kullanılabilir. Hızlandırıcı paylaşılan bellek destekleyip desteklemediğini Hızlandırıcı tarafından 's belirlenir [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndürür özelliği `true` paylaşılan bellek olduğunda desteklenir. Paylaşılan bellek destekleniyorsa, varsayılan [access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) için bellek ayırma Hızlandırıcı üzerinde tarafından belirlenir `default_cpu_access_type` özelliği. Varsayılan olarak, `array` ve `array_view` nesneleri almak için aynı `access_type` ilişkili birincil olarak `accelerator`.  
+ `array` nesneleri ilişkili Hızlandırıcı destekliyorsa, paylaşılan bellek kullanımı üzerinde ayrıntılı denetim belirtmek için kullanılabilir. Hızlandırıcı paylaşılan bellek destekleyip desteklemediğini Hızlandırıcı tarafından 's belirlenir [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndürür özelliği `true` paylaşılan bellek olduğunda desteklenir. Paylaşılan bellek destekleniyorsa, varsayılan [access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) için bellek ayırma Hızlandırıcı üzerinde tarafından belirlenir `default_cpu_access_type` özelliği. Varsayılan olarak, `array` ve `array_view` nesneleri almak için aynı `access_type` ilişkili birincil olarak `accelerator`.  
   
  Ayarlayarak [array::cpu_access_type veri üyesi](reference/array-class.md#cpu_access_type) özelliği bir `array` açıkça, böylece uygulama donanım performansı için en iyi duruma getirebilirsiniz alıştırma hassas nasıl paylaşılan bellek kullanılır, kontrol edebilirsiniz Hesaplama tekrar bellek erişim düzenlerini esas alarak özellikleri. Bir `array_view` aynı yansıtır `cpu_access_type` olarak `array` ; ile ilişkili veya array_view bir veri kaynağı oluşturulursa, `access_type` ilk depolama alanı ayırmak neden ortamı yansıtır. İlk (CPU) ana bilgisayar tarafından erişilen, CPU veri kaynağı ve paylaşımlar oluşturulan gibi diğer bir deyişle, sonra da davranır `access_type` , `accelerator_view` ilk varsa ancak tarafından erişilen; yakalama ile ilişkili bir `accelerator_view`, onu değilmiş gibi davranır sonra üzerinde oluşturulan bir `array` üzerinde oluşturulan `accelerator_view` ve paylaşımları `array`'s `access_type`.  
   
@@ -465,10 +468,10 @@ void MathExample() {
   
 - [Kısa vektör Kitaplığı](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve temel alan 4 kısa vektör türleri kümesini tanımlayan `int`, `uint`, `float`, `double`, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
   
-## <a name="includewin8appnamelongbuildincludeswin8appnamelongmdmd-apps"></a>[!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)]Uygulamaları  
- Diğer C++ kitaplıkları gibi C++ AMP kullanabilirsiniz, [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Bu makaleler C++, C#, Visual Basic veya JavaScript kullanılarak oluşturulan C++ AMP kodunu uygulamalarında nasıl ekleneceğini açıklar:  
+## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları  
+ Diğer C++ kitaplıkları gibi UWP uygulamalarında C++ AMP kullanabilirsiniz. Bu makaleler C++, C#, Visual Basic veya JavaScript kullanılarak oluşturulan C++ AMP kodunu uygulamalarında nasıl ekleneceğini açıklar:  
   
-- [Windows Mağazası Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
+- [UWP Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
 - [İzlenecek yol: C++ ve JavaScript'ten çağırma temel Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249077)  
   

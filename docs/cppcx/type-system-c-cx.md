@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f5c0db625db458bf4fb530ba4b07e742b1aad964
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1f7c34e5c48e264c1a3c9ab3bd8cba7c896e1962
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="type-system-ccx"></a>Sistem türü (C + +/ CX)
 Windows çalışma zamanı mimarisi kullanarak, C + kullanabileceğiniz +/ CX, Visual Basic, Visual C# ve JavaScript uygulamaları ve doğrudan Windows API'sine erişim ve diğer Windows çalışma zamanı uygulamaları ve bileşenleri ile birlikte çalışmak bileşenler yazmak için. C++ ile yazılmış Evrensel Windows platformu uygulamaları CPU doğrudan yürütür yerel koda derleyin. C# veya Visual Basic ile yazılmış Evrensel Windows platformu uygulamaları Microsoft Ara dili (MSIL) derleyip ortak dil çalışma zamanında (CLR) çalıştırın. JavaScript'te yazılmış Evrensel Windows platformu uygulamaları bir çalışma zamanı ortamında yürütün. Windows çalışma zamanı işletim sistemi bileşenleri kendilerini C++ ile yazılmış ve yerel kodu olarak çalıştırın. Tüm bu bileşenleri ve evrensel Windows platformu uygulamaları doğrudan Windows çalışma zamanı uygulama ikili arabirimi aracılığıyla (ABI) iletişim kurar.  

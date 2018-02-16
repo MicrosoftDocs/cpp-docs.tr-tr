@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,34 +17,33 @@ f1_keywords:
 - ATL::CRowset::Compare
 - ATL.CRowset.Compare
 - CRowset::Compare
-dev_langs: C++
-helpviewer_keywords: Compare method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Compare method
 ms.assetid: a8117b40-7abd-4867-b0ba-eb9e9808204e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9d7e69c168489fcfe71c14fbbfe2b2aca8e28f62
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 820e89a30e7ae4b183e206614bac8fd2816ec690
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetcompare"></a>CRowset::Compare
 Karşılaştırır iki yer işaret kullanarak [IRowsetLocate::Compare](https://msdn.microsoft.com/en-us/library/ms709539.aspx).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Compare(   
-   const CBookmarkBase& bookmark1,   
+```cpp
+HRESULT Compare(const CBookmarkBase& bookmark1,   
    const CBookmarkBase& bookmark2,   
-   DBCOMPARE* pComparison    
-) const throw( );  
+   DBCOMPARE* pComparison) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: unexpected
+ms.topic: reference
+apiname:
+- unexpected
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,20 +22,24 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: unexpected
-dev_langs: C++
-helpviewer_keywords: unexpected function
+f1_keywords:
+- unexpected
+dev_langs:
+- C++
+helpviewer_keywords:
+- unexpected function
 ms.assetid: 2f873763-15ad-4556-a924-dcf28f2b52b4
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 923c3599d2dc3b1dc5b0787669ade4ea14cd2086
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b86200fc9501b9a543bae3ebc19f5069e49859bb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="unexpected-crt"></a>beklenmeyen (CRT)
 Çağrıları `terminate` veya kullanarak belirttiğiniz işlevi `set_unexpected`.  
@@ -45,7 +51,7 @@ void unexpected( void );
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- `unexpected` Yordamı C++ özel durum işleme geçerli uygulamasıyla kullanılmaz. `unexpected`çağrıları `terminate` varsayılan olarak. Özel sonlandırma işlevi yazma ve arama bu varsayılan davranışı değiştirebilirsiniz `set_unexpected` işlevinizi bağımsız değişkeni olarak adı. `unexpected`bağımsız değişken olarak verilen son işlevi çağırır `set_unexpected`.  
+ `unexpected` Yordamı C++ özel durum işleme geçerli uygulamasıyla kullanılmaz. `unexpected` çağrıları `terminate` varsayılan olarak. Özel sonlandırma işlevi yazma ve arama bu varsayılan davranışı değiştirebilirsiniz `set_unexpected` işlevinizi bağımsız değişkeni olarak adı. `unexpected` bağımsız değişken olarak verilen son işlevi çağırır `set_unexpected`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -57,8 +63,8 @@ void unexpected( void );
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özel durum işleme rutinleri](../../c-runtime-library/exception-handling-routines.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [_set_se_translator](../../c-runtime-library/reference/set-se-translator.md)   
  [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   
  [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)   
- [sonlandırma](../../c-runtime-library/reference/terminate-crt.md)
+ [Sonlandırma](../../c-runtime-library/reference/terminate-crt.md)

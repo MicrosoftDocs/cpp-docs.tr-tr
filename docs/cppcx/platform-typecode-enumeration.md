@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::TypeCode
-dev_langs: C++
-helpviewer_keywords: Platform::TypeCode Enumeration
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::TypeCode
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::TypeCode Enumeration
 ms.assetid: 93c1305f-eb16-4bec-aead-f88d9518b4cf
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 353649f63a8e5522329459b1c9f740450818a3af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 27a6fdccff8806779100fb7d1a4bd6cb23647211
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformtypecode-enumeration"></a>Platform::TypeCode numaralandırması
 Yerleşik türünü temsil eden bir sayısal kategorisini belirtir.  
@@ -44,7 +48,7 @@ enum class TypeCode {};
 |Int16|Default::int16 türü.|  
 |Int32|Default::int32 türü.|  
 |Int64|Default::int64 türü.|  
-|int8|Default::int8 türü.|  
+|Int8|Default::int8 türü.|  
 |Nesne|Platform::Object türü.|  
 |Tek|Default::float32 türü.|  
 |Dize|Platform::String türü.|  

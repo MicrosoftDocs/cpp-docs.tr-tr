@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - vswscanf_s
 - vsscanf_s
@@ -26,18 +27,20 @@ f1_keywords:
 - vsscanf_s
 - vswscanf_s
 - _vstscanf_s
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 7b732e68-c6f4-4579-8917-122f5a7876e1
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b041da3df2b745f1764440ed5afafa2cd7690b68
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f956e20ecfd694666cacd1eae2071526cf71ec50
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vsscanfs-vswscanfs"></a>vsscanf_s, vswscanf_s
 Bir dizeden veri okuma biçimlendirilmiş. Bu sürümleri [vsscanf, vswscanf](../../c-runtime-library/reference/vsscanf-vswscanf.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -70,7 +73,7 @@ int vswscanf_s(
 ## <a name="return-value"></a>Dönüş Değeri  
  Bu işlevlerin her biri başarıyla dönüştürülür ve atanmış olan alan sayısını döndürür; dönüş değerini okumak ancak atanmamış alanları içermez. Dönüş değeri 0, hiçbir alan atandığını belirtir. Dönüş değeri `EOF` bir hata için veya dize sonu ilk dönüştürmeden önce ulaşılırsa.  
   
- Varsa `buffer` veya `format` olan bir `NULL` işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için`EINVAL`  
+ Varsa `buffer` veya `format` olan bir `NULL` işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`  
   
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -86,7 +89,7 @@ int vswscanf_s(
   
  `format` Giriş yorumu alanları ve aynı bağımsız değişkeni denetimleri form ve olarak işlev `format` bağımsız değişkeni için `scanf_s` işlevi. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.  
   
- `vswscanf_s`bir joker karakter sürümü `vsscanf_s`; bağımsız değişkenleri `vswscanf_s` joker karakter dizelerdir. `vsscanf_s`birden çok baytlı onaltılık karakterler işlemez. `vswscanf_s`Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `vswscanf_s` ve `vsscanf_s` aynı şekilde davranır.  
+ `vswscanf_s` bir joker karakter sürümü `vsscanf_s`; bağımsız değişkenleri `vswscanf_s` joker karakter dizelerdir. `vsscanf_s` birden çok baytlı onaltılık karakterler işlemez. `vswscanf_s` Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `vswscanf_s` ve `vsscanf_s` aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

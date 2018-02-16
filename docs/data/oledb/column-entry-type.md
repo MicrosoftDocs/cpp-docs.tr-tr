@@ -4,40 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COLUMN_ENTRY_TYPE
-dev_langs: C++
-helpviewer_keywords: COLUMN_ENTRY_TYPE macro
+f1_keywords:
+- COLUMN_ENTRY_TYPE
+dev_langs:
+- C++
+helpviewer_keywords:
+- COLUMN_ENTRY_TYPE macro
 ms.assetid: ac424261-ff6c-443b-a197-2cec8d78d738
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cc2501f38ca93192bd0d74a3d49ca829b19cc1ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2a653e863e8965efda55837124e93454820449de
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="columnentrytype"></a>COLUMN_ENTRY_TYPE
 Veritabanındaki belirli sütunu için bir bağlama temsil eder. Destekler `type` parametresi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-COLUMN_ENTRY_TYPE (  
-nOrdinal  
-,   
-wType  
-,   
-data  
- )  
+```cpp
+COLUMN_ENTRY_TYPE (nOrdinal, wType, data)  
   
 ```  
   

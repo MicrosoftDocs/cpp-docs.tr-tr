@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,31 +14,34 @@ f1_keywords:
 - CBookmark
 - ATL.CBookmark<nSize>
 - ATL::CBookmark
-dev_langs: C++
-helpviewer_keywords: CBookmark class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CBookmark class
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dba5f98912fc69bac5554a4c6231f77e17e99d98
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 08ab7ca180433861be2dc9081dd991dbeb89642d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cbookmark-class"></a>CBookmark Sınıfı
 Bir yer işareti değeri kendi arabellekte tutar.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template < DBLENGTH nSize = 0 >  
-class CBookmark : public CBookmarkBase  
-template < >  
+class CBookmark : public CBookmarkBase
+  
+template <>  
 class CBookmark< 0 > : public CBookmarkBase  
 ```  
   

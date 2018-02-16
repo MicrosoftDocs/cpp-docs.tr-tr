@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,30 +13,31 @@ f1_keywords:
 - ATL.CDynamicAccessor.Close
 - CDynamicAccessor.Close
 - CDynamicAccessor::Close
-dev_langs: C++
-helpviewer_keywords: Close method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Close method
 ms.assetid: 2a28ded2-d7ed-4e80-90bf-143133c93feb
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7a7bf70a00ee989364f83564286cddb27e5b4cec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7fb83230b3dda03ee179872d34cf2515ac5d1f2a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicaccessorclose"></a>CDynamicAccessor::Close
 Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) sınıfında arabirim işaretçisi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-void Close( ) throw( );  
+```cpp
+void Close() throw();  
   
 ```  
   

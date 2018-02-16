@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: OLE DB providers, reading strings into
+dev_langs:
+- C++
+helpviewer_keywords:
+- OLE DB providers, reading strings into
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e798b3e85bbb5d6b362900c25d4c3414458ea63d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b57c9e9a71e8a0b603207a095e2bede333ed6ed6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
-`RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute`dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  
+`RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute` dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  
   
  Dosya açılamıyor, `Execute` döndürmelidir **DB_E_NOTABLE**. Döndürürse **E_FAIL** bunun yerine, sağlayıcı birçok tüketici ile çalışmaz ve OLE DB geçmez [uygunluk testleri](../../data/oledb/testing-your-provider.md).  
   
@@ -35,7 +38,7 @@ ms.lasthandoff: 12/21/2017
   
 ### <a name="code"></a>Kod  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // MyProviderRS.h  
 class RMyProviderRowset : public CRowsetImpl< RMyProviderRowset, CAgentMan, CRMyProviderCommand>  

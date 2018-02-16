@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::Details::IPrintable
-dev_langs: C++
-helpviewer_keywords: Platform::Details::IPrintable Interface
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::Details::IPrintable
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::Details::IPrintable Interface
 ms.assetid: b863a872-2563-4d90-88e0-c5a0bdde83f4
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 92b7a4ce126a5260b55d8a3cbaeb2bee36f4a27a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4b1520f3c6448d4c018f0e0e54457ed2bfe0636e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformdetailsiprintable-interface"></a>Platform::details::IPrintable arabirimi
 Bu arabirim, yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  

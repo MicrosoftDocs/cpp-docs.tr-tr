@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vcprintf_p
 - _vcwprintf_p_l
@@ -33,7 +34,8 @@ f1_keywords:
 - vcprintf_p
 - _vcwprintf_p
 - _vcwprintf_p_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _vtcprintf_p_l function
 - vcprintf_p_l function
@@ -48,22 +50,23 @@ helpviewer_keywords:
 - _vcwprintf_p_l function
 - _vtcprintf_p function
 ms.assetid: 611024cc-90e7-41db-8e85-145ca95012b1
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0909838cb526212d52d156f9af0366bcdcb7f4f2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 86e4966b7e8d693037e6038a06820894c3c64204
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vcprintfp-vcprintfpl-vcwprintfp-vcwprintfpl"></a>_vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıkışı konsola yazar ve Biçim dizesinde konumsal parametreler destekler.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -104,7 +107,7 @@ int _vcwprintf_p_l(
  Yazılan karakter sayısını veya bir çıktı hatası oluşursa negatif bir değer. Varsa `format` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve -1 döndürülür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından kullanır `_putch` biçimlendirmek ve konsola verilen veri yazmak için işlevi. (`_vcwprintf_p` kullanan `_putwch` yerine `_putch`. `_vcwprintf_p`joker karakter sürümü `_vcprintf_p`. İşlem bir joker karakter dizesi bağımsız değişken olarak alır.)  
+ Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından kullanır `_putch` biçimlendirmek ve konsola verilen veri yazmak için işlevi. (`_vcwprintf_p` kullanan `_putwch` yerine `_putch`. `_vcwprintf_p` joker karakter sürümü `_vcprintf_p`. İşlem bir joker karakter dizesi bağımsız değişken olarak alır.)  
   
  Bu işlevleri sürümlerini `_l` soneki, bunların yerine geçerli yerel geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

@@ -4,44 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BLOB_ENTRY_STATUS
-dev_langs: C++
-helpviewer_keywords: BLOB_ENTRY_STATUS macro
+f1_keywords:
+- BLOB_ENTRY_STATUS
+dev_langs:
+- C++
+helpviewer_keywords:
+- BLOB_ENTRY_STATUS macro
 ms.assetid: 191007f4-dfcc-4ae2-a7fc-6f7899accc9f
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 61bbc537f74813c266cd3a5652251005818516df
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 465d8ab8ddfce53131307ca4910a89882142c687
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="blobentrystatus"></a>BLOB_ENTRY_STATUS
 İle kullanılan `BEGIN_COLUMN_MAP` veya `BEGIN_ACCESSOR_MAP` ikili büyük nesne bağlamak için ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makrosu BLOB sütun durumunu da alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-BLOB_ENTRY_STATUS(  
-nOrdinal  
-,   
-IID  
-,   
-flags  
-,   
-data  
-,   
-status  
- )  
+```cpp
+BLOB_ENTRY_STATUS(nOrdinal, IID, flags, data, status)  
   
 ```  
   
@@ -58,7 +51,7 @@ status
  `data`  
  [in] Kullanıcı kaydındaki karşılık gelen veri üyesi.  
   
- *durumu*  
+ *Durumu*  
  [out] BLOB alanı durumu.  
   
 ## <a name="example"></a>Örnek  

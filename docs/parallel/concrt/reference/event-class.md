@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,19 +16,22 @@ f1_keywords:
 - CONCRT/concurrency::event::wait
 - CONCRT/concurrency::event::wait_for_multiple
 - CONCRT/concurrency::event::timeout_infinite
-dev_langs: C++
-helpviewer_keywords: event class
+dev_langs:
+- C++
+helpviewer_keywords:
+- event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 550cbdda0468db969ffe3c7d3412789c1f0e5976
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a8c14cce1f34e4957b8c22bdbb8eab82fb4c0c58
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="event-class"></a>event Sınıfı
 Eşzamanlılık Çalışma zamanı açıkça farkındadır elle sıfırlama olayı.  
@@ -50,7 +54,7 @@ class event;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Sıfırla](#reset)|Olay işaret olmayan bir durumuna sıfırlar.|  
+|[reset](#reset)|Olay işaret olmayan bir durumuna sıfırlar.|  
 |[set](#set)|Olay işaret eder.|  
 |[bekleme](#wait)|Olay işaret hale bekler.|  
 |[wait_for_multiple](#wait_for_multiple)|Birden çok olay işaret hale bekler.|  
@@ -72,7 +76,7 @@ class event;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>Olay 
+##  <a name="ctor"></a> Olay 
 
  Yeni bir olay oluşturur.  
   
@@ -82,7 +86,7 @@ _CRTIMP event();
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="dtor"></a>~ Olay 
+##  <a name="dtor"></a> ~ Olay 
 
  Bir olay yok eder.  
   
@@ -93,7 +97,7 @@ _CRTIMP event();
 ### <a name="remarks"></a>Açıklamalar  
  Yıkıcı çalıştığında olay üzerinde bekleyen iş parçacığı vardır beklenir. Olay tanımsız davranışa neden olur hala üzerinde bekleyen iş parçacığı ile destruct izin verme.  
   
-##  <a name="reset"></a>Sıfırla 
+##  <a name="reset"></a> Sıfırla 
 
  Olay işaret olmayan bir durumuna sıfırlar.  
   
@@ -101,7 +105,7 @@ _CRTIMP event();
 void reset();
 ```  
   
-##  <a name="set"></a>ayarlama 
+##  <a name="set"></a> set 
 
  Olay işaret eder.  
   
@@ -112,7 +116,7 @@ void set();
 ### <a name="remarks"></a>Açıklamalar  
  Olayı sinyali runnable olmasını olayında beklerken bağlamları rastgele sayıda neden olabilir.  
   
-##  <a name="timeout_infinite"></a>timeout_infinite 
+##  <a name="timeout_infinite"></a> timeout_infinite 
 
  Bekleme zaman aşımı hiçbir zaman gerektiğini belirten değer.  
   
@@ -120,7 +124,7 @@ void set();
 static const unsigned int timeout_infinite = COOPERATIVE_TIMEOUT_INFINITE;
 ```  
   
-##  <a name="wait"></a>bekleme 
+##  <a name="wait">bekleme</a> 
 
  Olay işaret hale bekler.  
   
@@ -136,9 +140,9 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
  Bekleme memnun, değer `0` döndürülen; Aksi takdirde, değer `COOPERATIVE_WAIT_TIMEOUT` bekleme işaret olma olay zaman aşımına uğradı olduğunu belirtmek için.  
   
 > [!IMPORTANT]
->  İçinde bir [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] uygulama, çağırmayın `wait` üzerinde ASTA iş parçacığı çünkü bu çağrıyı geçerli iş parçacığının engelleyebilir ve uygulama yanıt veremez duruma neden olabilir.  
+>  Bir evrensel Windows Platformu (UWP) uygulamasını çağırmayın `wait` üzerinde ASTA iş parçacığı çünkü bu çağrıyı geçerli iş parçacığının engelleyebilir ve uygulama yanıt veremez duruma neden olabilir.  
   
-##  <a name="wait_for_multiple"></a>wait_for_multiple 
+##  <a name="wait_for_multiple"></a> wait_for_multiple 
 
  Birden çok olay işaret hale bekler.  
   
@@ -170,7 +174,7 @@ static size_t __cdecl wait_for_multiple(
  Varsa parametresi `_FWaitAll` değerine ayarlayın `true` tüm olayları, bekleme karşılamak için sinyal hale olduğunu belirtmek için işlev tarafından döndürülen dizin değeri olmadığını olgu dışında özel bir önemi taşır `COOPERATIVE_WAIT_TIMEOUT`.  
   
 > [!IMPORTANT]
->  İçinde bir [!INCLUDE[win8_appname_long](../../../build/includes/win8_appname_long_md.md)] uygulama, çağırmayın `wait_for_multiple` üzerinde ASTA iş parçacığı çünkü bu çağrıyı geçerli iş parçacığının engelleyebilir ve uygulama yanıt veremez duruma neden olabilir.  
+>  Bir evrensel Windows Platformu (UWP) uygulamasını çağırmayın `wait_for_multiple` üzerinde ASTA iş parçacığı çünkü bu çağrıyı geçerli iş parçacığının engelleyebilir ve uygulama yanıt veremez duruma neden olabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

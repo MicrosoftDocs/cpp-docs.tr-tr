@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::ChangedStateException
 - VCCORLIB/Platform::ChangedStateException::ChangedStateException
-dev_langs: C++
-helpviewer_keywords: Platform::ChangedStateException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e874cb1ca3db5741d2974499c53e23816e204186
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0910500c24a4e7ca574ac2eebc6264148d14a410
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException sınıfı
 Bir nesnenin iç durumu değiştiğinde, böylece yöntemi sonuçlarını geçersiz kılmalarını oluşturulur.  

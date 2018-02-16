@@ -4,40 +4,42 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: PROVIDER_COLUMN_ENTRY_WSTR
-dev_langs: C++
-helpviewer_keywords: PROVIDER_COLUMN_ENTRY_WSTR macro
+f1_keywords:
+- PROVIDER_COLUMN_ENTRY_WSTR
+dev_langs:
+- C++
+helpviewer_keywords:
+- PROVIDER_COLUMN_ENTRY_WSTR macro
 ms.assetid: 70630bd5-d782-473b-9777-aebbbf5321c5
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4c3d080707ebe1eb9ecfd76189b1d76be76c9c71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1fbcb2c7ac4284cd473133cf24277e6e6ea4b546
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="providercolumnentrywstr"></a>PROVIDER_COLUMN_ENTRY_WSTR
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-PROVIDER_COLUMN_ENTRY_WSTR(  
-name  
+```cpp
+PROVIDER_COLUMN_ENTRY_WSTR(name  
 , ordinal, member )  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *adı*  
+ *Adı*  
  [in] Sütun adı.  
   
  `ordinal`  

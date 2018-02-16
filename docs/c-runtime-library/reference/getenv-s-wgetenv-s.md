@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - getenv_s
 - _wgetenv_s
@@ -27,7 +28,8 @@ f1_keywords:
 - getenv_s
 - _tgetenv_s
 - _wgetenv_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tgetenv_s function
 - wgetenv_s function
@@ -36,22 +38,23 @@ helpviewer_keywords:
 - environment variables
 - tgetenv_s function
 ms.assetid: c3ae1ffe-d4cd-4bae-bcb1-3afa754c613a
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0b714d1643ae929245f93f770fe67a87b0c75b54
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 34ba832030e3ad5580dd46deb39c1cbe62738ee9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getenvs-wgetenvs"></a>getenv_s, _wgetenv_s
 Geçerli ortamından bir değer alır. Bu sürümleri [getenv, _wgetenv](../../c-runtime-library/reference/getenv-wgetenv.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -111,9 +114,9 @@ errno_t _wgetenv_s(
  Arabellek çok küçük ise, bu işlevler aynı zamanda, sonuç `ERANGE`. Geçersiz parametre işleyicisi çağırma kullanılamaz. Bunlar gerekli arabellek boyutu çıkışı yazma `pReturnValue`ve böylelikle daha büyük bir arabellek işleviyle tekrar çağırmak programları etkinleştirin.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `getenv_s` İşlevi için ortam değişkenleri listesi arar `varname`. `getenv_s`Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `getenv_s`ve `_putenv_s` genel değişkeni tarafından işaret ortam kopyasını kullanmak `_environ` ortama erişmek için. `getenv_s`Çalışma Zamanı Kitaplığı'na erişilebilen veri yapılarını ve değil "işlem için işletim sistemi tarafından oluşturulan segment" ortam çalışır. Bu nedenle, kullanan programlar `envp` bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler almak.  
+ `getenv_s` İşlevi için ortam değişkenleri listesi arar `varname`. `getenv_s` Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `getenv_s` ve `_putenv_s` genel değişkeni tarafından işaret ortam kopyasını kullanmak `_environ` ortama erişmek için. `getenv_s` Çalışma Zamanı Kitaplığı'na erişilebilen veri yapılarını ve değil "işlem için işletim sistemi tarafından oluşturulan segment" ortam çalışır. Bu nedenle, kullanan programlar `envp` bağımsız değişkeni [ana](../../cpp/main-program-startup.md) veya [wmain](../../cpp/main-program-startup.md) geçersiz bilgiler almak.  
   
- `_wgetenv_s`bir joker karakter sürümü `getenv_s`; bağımsız değişkeni ve dönüş değeri `_wgetenv_s` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`.  
+ `_wgetenv_s` bir joker karakter sürümü `getenv_s`; bağımsız değişkeni ve dönüş değeri `_wgetenv_s` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`.  
   
  MBCS programında (örneğin, bir programında SBCS ASCII), `_wenviron` başlangıçta `NULL` çok baytlı karakter dizeleri oluşturulan ortam olduğundan. Ardından, ilk çağrıda `_wputenv`, ya da ilk çağrıda `_wgetenv_s`, karşılık gelen bir joker karakter dizesi ortamı (MBCS) ortam zaten yoksa, oluşturulur ve ardından işaret ediyor `_wenviron`.  
   
@@ -125,7 +128,7 @@ errno_t _wgetenv_s(
 >  Çalışma zamanı sistem Unicode sürümü ve ortam, birden çok baytlı sürümü korurken nadir durumlarda, iki ortam sürümleri tam olarak karşılık gelmeyebilir. Benzersiz bir UNICODE dizesi herhangi bir benzersiz çok baytlı karakter dizesini eşleştirir ancak çok baytlı karakter dizesi için benzersiz bir UNICODE dizesi eşlemesinden mutlaka benzersiz olmadığından bu gerçekleşir. Daha fazla bilgi için bkz: [_environ, _wenviron](../../c-runtime-library/environ-wenviron.md).  
   
 > [!NOTE]
->  `_putenv_s` Ve `_getenv_s` işlevleri aileleri iş parçacığı açısından güvenli değildir. `_getenv_s`dize işaretçisi sırasında döndürebilirsiniz `_putenv_s` dizesini değiştirmeyi ve böylece rastgele hatalara neden. Bu işlevler çağrıları eşitlendiğinden emin olun.  
+>  `_putenv_s` Ve `_getenv_s` işlevleri aileleri iş parçacığı açısından güvenli değildir. `_getenv_s` dize işaretçisi sırasında döndürebilirsiniz `_putenv_s` dizesini değiştirmeyi ve böylece rastgele hatalara neden. Bu işlevler çağrıları eşitlendiğinden emin olun.  
   
  C++'da, Bu işlevlerden birinin kullanımını şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer ve böylece boyutu bağımsız değişkeniyle belirtmek için gereksinimini ortadan kaldırır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -141,7 +144,7 @@ errno_t _wgetenv_s(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`getenv_s`|\<stdlib.h >|  
+|`getenv_s`|\<stdlib.h>|  
 |`_wgetenv_s`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

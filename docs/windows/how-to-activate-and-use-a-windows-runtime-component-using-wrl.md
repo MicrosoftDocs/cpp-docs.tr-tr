@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 54828f02-6af3-45d1-b965-d0104442f8d5
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9179b701506da7a714569a940543a95634439583
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dbdc9b583501bb0de08139acc78943c8c4d88a91
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Windows Çalışma Zamanı Bileşenini Etkinleştirme ve Kullanma
 Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çalışma zamanı başlatmak için nasıl kullanılacağı ve bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma nasıl gösterir.  
@@ -39,7 +41,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çal
  Aşağıdaki adımları kullanın `Windows::Foundation::IUriRuntimeClass` etkinleştirme Fabrika Windows çalışma zamanı bileşeni oluşturma, bu bileşen örneği oluşturun ve özellik değeri göstermek için arabirim. Bunlar ayrıca Windows çalışma zamanı başlatılamıyor gösterilmektedir. Tam bir örnek aşağıda verilmiştir.  
   
 > [!IMPORTANT]
->  Genellikle bir evrensel Windows platformu uygulamasında Windows çalışma zamanı C++ Şablon kitaplığı kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir evrensel Windows platformu uygulamadan kullanılabilir değil. Türler ve evrensel Windows platformu uygulamasında kullanabileceğiniz işlevler hakkında daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) ve [Win32 ve COM için Windows mağazası uygulamaları](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Genellikle Windows çalışma zamanı C++ Şablon Kitaplığı'ndaki bir evrensel Windows Platformu (UWP) uygulamasını kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir UWP uygulamasını kullanılabilir değil. UWP uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamalar için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 #### <a name="to-activate-and-use-a-windows-runtime-component"></a>Windows çalışma zamanı bileşenini etkinleştirme ve kullanma için  
   
@@ -88,7 +90,7 @@ Bu belge, Windows çalışma zamanı C++ Şablon kitaplığı (WRL) Windows çal
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
  Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-component.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl tüketen component.cpp runtimeobject.lib**  
+ **cl.exe wrl-consume-component.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

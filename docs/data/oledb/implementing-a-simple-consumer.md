@@ -4,26 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - clients, creating
 - OLE DB consumers, implementing
 ms.assetid: 13828167-23a4-4e94-8b6c-878262fda464
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 43ebcd38a3125db7373755b1ebf5366cae8af56b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9c09d663adcc9d5040164925cf04cb5886b4b80e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="implementing-a-simple-consumer"></a>Basit Tüketici Uygulama
 Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Bu örnekte, aşağıdaki bölümleri içerir:  
@@ -57,7 +59,7 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
     ...  
     int main(int argc, char* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   CProducts rs;   hr = rs.OpenAll();   ATLASSERT( SUCCEEDED( hr ) );   hr = rs.MoveFirst();   // Iterate through the rowset   while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      hr = rs.MoveNext();   }   rs.Close();   rs.ReleaseCommand();   CoUninitialize();  
+ HRESULT hr = CoInitialize(NULL);   // Instantiate rowset   CProducts rs;   hr = rs.OpenAll();   ATLASSERT(SUCCEEDED(hr ) );   hr = rs.MoveFirst();   // Iterate through the rowset   while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )   {      // Print out the column information for each row      printf("Product ID: %d, Name: %s, Unit Price: %d, Quantity per Unit: %d, Units in Stock %d, Reorder Level %d\n",             rs.m_ProductID, rs.m_ProductName, rs.m_UnitPrice, rs.m_QuantityPerUnit, rs.m_UnitsInStock, rs.m_ReorderLevel );      hr = rs.MoveNext();   }   rs.Close();   rs.ReleaseCommand();   CoUninitialize();  
   
        return 0;  
     }  
@@ -145,7 +147,7 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);  
+ HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -169,10 +171,10 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
        // Iterate through the rowset and output column data to output.txt row by row  
        // In the file, mark the beginning of this set of data:  
        outfile << "initial row dump" << endl;  
-       while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+       while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
        {  
           nCounter++;  
-          if( nCounter == 5 )  
+          if(nCounter == 5 )  
              myBookmark = rs.bookmark;  
           // Output the column information for each row:  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
@@ -185,7 +187,7 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
        // Iterate through the rowset and output column data to output.txt row by row  
        // In the file, mark the beginning of this set of data:  
        outfile << "row dump starting from bookmarked row" << endl;  
-       while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+       while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
        {  
           // Output the column information for each row  
           outfile << rs.m_ProductID << rs.m_ProductName << lPrice << rs.m_QuantityPerUnit << rs.m_UnitsInStock << rs.m_ReorderLevel << endl;  
@@ -229,7 +231,7 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
   
     int _tmain(int argc, _TCHAR* argv[])  
     {  
-       HRESULT hr = CoInitialize(NULL);  
+ HRESULT hr = CoInitialize(NULL);  
   
        // Instantiate rowset  
        CProducts rs;  
@@ -251,7 +253,7 @@ Aşağıdaki konular, basit bir tüketici oluşturmak için MFC Uygulama Sihirba
        for (;;)  
        {  
           // Read sequential stream data into buffer  
-          HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
+    HRESULT hr = rs.m_spStream->Read(buffer, 1000, &cbRead);  
           if (FAILED (hr))  
              break;  
           // Output buffer to file  

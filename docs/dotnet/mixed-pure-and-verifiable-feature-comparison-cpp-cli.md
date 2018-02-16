@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - safe assemblies [C++], vs. pure
 - mixed assemblies [C++], vs. pure
@@ -24,18 +26,18 @@ helpviewer_keywords:
 - safe assemblies [C++]
 - mixed assemblies [C++]
 ms.assetid: 3f7a82ba-0e69-4927-ba0c-fbc3160e4394
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3ee9fbed3fd82fd450fd179683fd119cb1630034
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac5e094dd252ec908f352bcc1b19c923513debfb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mixed-pure-and-verifiable-feature-comparison-ccli"></a>Karışık, Saf ve Doğrulanabilen Özellik Karşılaştırması (C++/CLI)
 Bu konuda farklı arasında özellikleri karşılaştırılır **/CLR** derleme modları. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).  
@@ -44,15 +46,15 @@ Bu konuda farklı arasında özellikleri karşılaştırılır **/CLR** derleme 
   
 ## <a name="feature-comparison"></a>Özellik karşılaştırması  
   
-|Özellik|Karma (/ clr)|Saf (/ clr: pure)|Güvenli (/ CLR: safe)|İlgili bilgiler|  
+|Özellik|Karma (/ clr)|Saf (/ clr: pure)|Safe (/clr:safe)|İlgili bilgiler|  
 |-------------|---------------------|-------------------------|-------------------------|-------------------------|  
-|CRT kitaplık|Desteklenen|Desteklenen||[Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)|  
-|ATL/MFC|Desteklenen|||[MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md) &#124; [Sınıfı genel bakış](../atl/atl-class-overview.md)|  
+|CRT kitaplık|Desteklenen|deprecated||[Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)|  
+|MFC/ATL|Desteklenen|||[MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md) &#124; [Sınıfı genel bakış](../atl/atl-class-overview.md)|  
 |Yönetilmeyen İşlevler|Desteklenen|||[Karışık (Yerel ve Yönetilen) Derlemeler](../dotnet/mixed-native-and-managed-assemblies.md)|  
-|Yönetilmeyen veri|Desteklenen|Desteklenen||[Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)|  
-|Yönetilmeyen işlevlerden çağrılabilir|Desteklenen|||[Nasıl yapılır: pure'a Geçiş: Saf (C + +/ CLI)](../dotnet/how-to-migrate-to-clr-pure-cpp-cli.md)|  
-|Yönetilmeyen işlevleri çağırma destekler|Desteklenen|Yalnızca C stili işlevleri|P/Invoke yalnızca|[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)|  
-|Yansıma destekler|Sadece DLL'ler|Desteklenen|Desteklenen|[Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)|  
+|Yönetilmeyen veri|Desteklenen|deprecated||[Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)|  
+|Yönetilmeyen işlevlerden çağrılabilir|Desteklenen||||  
+|Yönetilmeyen işlevleri çağırma destekler|Desteklenen|deprecated|deprecated|[C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)|  
+|Yansıma destekler|Sadece DLL'ler|deprecated|deprecated|[Yansıma (C++/CLI)](../dotnet/reflection-cpp-cli.md)|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Saf ve Doğrulanabilen Kod (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md)

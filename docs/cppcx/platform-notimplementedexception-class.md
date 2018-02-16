@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::NotImplementedException
 - VCCORLIB/Platform::NotImplementedException::NotImplementedException
-dev_langs: C++
-helpviewer_keywords: Platform::NotImplementedException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::NotImplementedException
 ms.assetid: 6da26cc2-dde8-4aea-aa85-67aac55cf97b
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b1c4053f31da7324ebe418e8603f788a52cbed63
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 90733284c44dd99d1687d47493ebbf3959aa3b62
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformnotimplementedexception-class"></a>Platform::NotImplementedException sınıfı
 Arabirim üyesini türetilmiş bir tür uygulanmadı zaman oluşturulur.  

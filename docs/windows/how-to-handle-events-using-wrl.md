@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 1c77543f-7b0c-4a94-93bf-e3225885ed76
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a3341992ce2b10897fca165a787e568b5e0bc660
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f79d35267750c42466a0b2448f9b10c37fe81f05
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-handle-events-using-wrl"></a>Nasıl Yapılır: WRL Kullanarak Olayları İşleme
 Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve Windows çalışma zamanı nesne olayları işlemek için nasıl kullanılacağını gösterir.  
@@ -31,7 +33,7 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve
  Aşağıdaki adımlar başlangıç bir `ABI::Windows::System::Threading::IDeviceWatcher` nesne ve olay işleyicileri ilerleme durumunu izlemek için kullanabilirsiniz. `IDeviceWatcher` Arabirimi zaman uyumsuz olarak veya arka planda cihazlar numaralandırır ve aygıtlar eklendiğinde, kaldırıldı veya değiştirildi bildirimi olanak sağlar. [Geri çağırma](../windows/callback-function-windows-runtime-cpp-template-library.md) işlevi olduğundan bu örnek önemli bir kısmını bu arka plan işlemi sonuçlarını işlem olay işleyicileri belirtmenizi sağlar. Tam bir örnek aşağıda verilmiştir.  
   
 > [!WARNING]
->  Genellikle bir evrensel Windows platformu uygulamasında Windows çalışma zamanı C++ Şablon kitaplığı kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir evrensel Windows platformu uygulamadan kullanılabilir değil. Türler ve evrensel Windows platformu uygulamasında kullanabileceğiniz işlevler hakkında daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx) ve [Win32 ve COM için Windows mağazası uygulamaları](http://msdn.microsoft.com/library/windows/apps/br205757.aspx).  
+>  Genellikle bir evrensel Windows platformu uygulamasında Windows çalışma zamanı C++ Şablon kitaplığı kullanmasına karşın, bu örnek bir konsol uygulaması çizim için kullanır. Gibi işlevleri `wprintf_s` bir evrensel Windows platformu uygulamadan kullanılabilir değil. Türler ve evrensel Windows platformu uygulamasında kullanabileceğiniz işlevler hakkında daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamalar için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
   
 1.  İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ya da C++ Standart Kitaplığı üstbilgilerini gerekli.  
   
@@ -94,7 +96,7 @@ Bu belge Windows çalışma zamanı C++ Şablon kitaplığı (WRL) abone olma ve
 ## <a name="compiling-the-code"></a>Kod Derleniyor  
  Kodu derlemek için kopyalayın ve ardından bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-events.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe wrl tüketen events.cpp runtimeobject.lib**  
+ **cl.exe wrl-consume-events.cpp runtimeobject.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

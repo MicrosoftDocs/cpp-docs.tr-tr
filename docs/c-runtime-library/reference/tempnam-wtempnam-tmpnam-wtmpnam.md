@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wtempnam
 - _wtmpnam
@@ -32,7 +33,8 @@ f1_keywords:
 - tmpnam
 - _wtempnam
 - _tempnam
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wtempnam function
 - file names [C++], creating temporary
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - _wtmpnam function
 - _wtempnam function
 ms.assetid: 3ce75f0f-5e30-42a6-9791-8d7cbfe70fca
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9708c23fc76095a591a2eceafcb875ce173383ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 29b0f7f645bd23c04e9d9f31dc914e29f7a048cb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="tempnam-wtempnam-tmpnam-wtmpnam"></a>_tempnam, _wtempnam, tmpnam, _wtmpnam
 Geçici dosyaları oluşturmak için kullanabileceğiniz adları oluşturun. Bu işlevlerin bazıları daha güvenli sürümleri kullanılabilir; bkz: [tmpnam_s, _wtmpnam_s](../../c-runtime-library/reference/tmpnam-s-wtmpnam-s.md).  
@@ -94,14 +97,14 @@ wchar_t *_wtmpnam(
  Bu işlevlerin her biri bir işaretçi oluşturulan adı döndürür veya `NULL` bir hata olduğunda. Hata meydana gelebilir dener birden fazla `TMP_MAX` (STDIO bakın. H) aramaları `tmpnam` veya kullanıyorsanız `_tempnam` ve TMP ortam değişkeni hem de belirtilen geçersiz dizin adı `dir` parametresi.  
   
 > [!NOTE]
->  Tarafından döndürülen işaretçileri `tmpnam` ve `_wtmpnam` noktası için statik iç arabellek. [Ücretsiz](../../c-runtime-library/reference/free.md) bu işaretçileri ayırması için çağrılmamalıdır. `free`işaretçiler tarafından ayrılmış için çağrılması gereken `_tempnam` ve `_wtempnam`.  
+>  Tarafından döndürülen işaretçileri `tmpnam` ve `_wtmpnam` noktası için statik iç arabellek. [Ücretsiz](../../c-runtime-library/reference/free.md) bu işaretçileri ayırması için çağrılmamalıdır. `free` işaretçiler tarafından ayrılmış için çağrılması gereken `_tempnam` ve `_wtempnam`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlevlerin her biri şu anda var olmayan bir dosya adını döndürür. `tmpnam`Geçerli çalışma dizini içinde benzersiz bir ad döndürür ve `_tempnam` geçerli dışında bir dizinde benzersiz bir ad oluşturmanıza olanak sağlar. Bir dosya adı bekletilen bir ters eğik çizgi ve \fname21 gibi hiçbir yol bilgileriyle olduğunda bu adın geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.  
+ Bu işlevlerin her biri şu anda var olmayan bir dosya adını döndürür. `tmpnam` Geçerli çalışma dizini içinde benzersiz bir ad döndürür ve `_tempnam` geçerli dışında bir dizinde benzersiz bir ad oluşturmanıza olanak sağlar. Bir dosya adı bekletilen bir ters eğik çizgi ve \fname21 gibi hiçbir yol bilgileriyle olduğunda bu adın geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.  
   
  İçin `tmpnam`, bu oluşturulan dosya adı depolayabilir `str`. Varsa `str` olan `NULL`, ardından `tmpnam` sonucu bir iç statik arabellek bırakır. Bu nedenle yapılan sonraki çağrılar bu değer yok. Tarafından oluşturulan adı `tmpnam` bir program tarafından oluşturulan dosya adının ve ilk çağrısından sonra oluşan `tmpnam`, temel 32 sıralı numaraları için bir dosya uzantısı (.1-.vvu olduğunda `TMP_MAX` STDIO içinde. H 32.767 ise).  
   
- `_tempnam`benzersiz bir dosya adı aşağıdaki kurallara göre seçilen bir dizin oluşturur:  
+ `_tempnam` benzersiz bir dosya adı aşağıdaki kurallara göre seçilen bir dizin oluşturur:  
   
 -   TMP ortam değişkeni tanımlı ve geçerli dizin adına ayarlayın, benzersiz dosya adları TMP tarafından belirtilen dizin için oluşturulur.  
   
@@ -109,9 +112,9 @@ wchar_t *_wtmpnam(
   
 -   TMP ortam değişkeni tanımlanmamışsa veya var olmayan bir dizin adı için ayarlandıysa ve varsa `dir` ya `NULL` veya var olmayan bir dizin adını ayarlamak `_tempnam` gene için geçerli çalışma dizini kullanır benzersiz adlar oranı. Şu anda, her iki TMP ve `dir` var olmadığından, dizin adlarını belirtin `_tempnam` işlev çağrısı başarısız olur.  
   
- Tarafından döndürülen adı `_tempnam` bir birleşimi olacaktır `prefix` ve benzersiz bir dosya adı için belirtilen dizin oluşturmak için birleştirir bir sıra numarası. `_tempnam`hiçbir uzantılı dosya adları oluşturur. `_tempnam`kullanan [malloc](../../c-runtime-library/reference/malloc.md) filename; alan ayırmak için artık gerekli olmadığında bu alanı boşaltma için sorumlu bir programdır.  
+ Tarafından döndürülen adı `_tempnam` bir birleşimi olacaktır `prefix` ve benzersiz bir dosya adı için belirtilen dizin oluşturmak için birleştirir bir sıra numarası. `_tempnam` hiçbir uzantılı dosya adları oluşturur. `_tempnam` kullanan [malloc](../../c-runtime-library/reference/malloc.md) filename; alan ayırmak için artık gerekli olmadığında bu alanı boşaltma için sorumlu bir programdır.  
   
- `_tempnam`ve `tmpnam` otomatik olarak çok baytlı karakter sıralarının OEM kod sayfasına göre algılamayı tanıtıcı çok baytlı karakter dizesi bağımsız değişken olarak uygun alınan işletim sisteminden. `_wtempnam`bir joker karakter sürümü `_tempnam`; değişkenler ve dönüş değerini `_wtempnam` joker karakter dizelerdir. `_wtempnam`ve `_tempnam` durumlar dışında aynı şekilde davranır `_wtempnam` çok baytlı karakter dizeleri işlemez. `_wtmpnam`bir joker karakter sürümü `tmpnam`; bağımsız değişkeni ve dönüş değeri `_wtmpnam` joker karakter dizelerdir. `_wtmpnam`ve `tmpnam` durumlar dışında aynı şekilde davranır `_wtmpnam` çok baytlı karakter dizeleri işlemez.  
+ `_tempnam` ve `tmpnam` otomatik olarak çok baytlı karakter sıralarının OEM kod sayfasına göre algılamayı tanıtıcı çok baytlı karakter dizesi bağımsız değişken olarak uygun alınan işletim sisteminden. `_wtempnam` bir joker karakter sürümü `_tempnam`; değişkenler ve dönüş değerini `_wtempnam` joker karakter dizelerdir. `_wtempnam` ve `_tempnam` durumlar dışında aynı şekilde davranır `_wtempnam` çok baytlı karakter dizeleri işlemez. `_wtmpnam` bir joker karakter sürümü `tmpnam`; bağımsız değişkeni ve dönüş değeri `_wtmpnam` joker karakter dizelerdir. `_wtmpnam` ve `tmpnam` durumlar dışında aynı şekilde davranır `_wtmpnam` çok baytlı karakter dizeleri işlemez.  
   
  Varsa `_DEBUG` ve `_CRTDBG_MAP_ALLOC` tanımlanan `_tempnam` ve `_wtempnam` yapılan çağrılar tarafından değiştirilen [_tempnam_dbg ve _wtempnam_dbg](../../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md).  
   

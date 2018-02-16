@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,34 +14,33 @@ f1_keywords:
 - ATL.IRowsetChangeImpl.SetData
 - IRowsetChangeImpl.SetData
 - ATL::IRowsetChangeImpl::SetData
-dev_langs: C++
-helpviewer_keywords: SetData method
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetData method
 ms.assetid: 81e1dd0a-0518-440c-8808-cee76e4929c7
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c515891f34b858bebb57716eba8299a8c1e64b15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: cc6757fde591e3108ac02da00793406f0eb28165
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetchangeimplsetdata"></a>IRowsetChangeImpl::SetData
 Bir veya daha fazla sütun veri değerlerini ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD ( SetData )(  
-   HROW hRow,  
+```cpp
+      STDMETHOD (SetData )(HROW hRow,  
    HACCESSOR hAccessor,  
-   void* pSrcData   
-);  
+   void* pSrcData);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

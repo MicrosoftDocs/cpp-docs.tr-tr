@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,34 +13,33 @@ f1_keywords:
 - CSession::Open
 - CSession.Open
 - ATL.CSession.Open
-dev_langs: C++
-helpviewer_keywords: Open method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Open method
 ms.assetid: c2050c2c-9817-4857-be49-189f346968f6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b3aa0f6b694bc594ec00511ce39b7887bf26ecae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 919e87efcf38442954544c0471698fcbe5d563c9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="csessionopen"></a>CSession::Open
 Veri kaynağı nesnesi için yeni bir oturum açar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Open(  
-   const CDataSource& ds,  
+```cpp
+HRESULT Open(const CDataSource& ds,  
    DBPROPSET *pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw( );  
+   ULONG ulPropSets = 0) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

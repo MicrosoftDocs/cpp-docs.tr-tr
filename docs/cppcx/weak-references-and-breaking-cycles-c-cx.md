@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5adb4f2376213d2c297b40f82382261fcf961349
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3a98dc4dd43b40f378a91713770c4c5500c790d0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve kesme döngüleri (C + +/ CX)
 Başvuru sayım dayalı herhangi türü sistemde, tür başvuruları kurabilir *döngüleri*— diğer bir deyişle, bir nesne ikinci bir nesneye başvuruyor, bazı son nesnenin geri başvurduğu kadar üçüncü, vb. nesne ikinci nesneden başvuruyor ilk nesne. Bir nesnenin başvuru sayısı sıfır olduğunda bir döngüsünde doğru nesneleri silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [gidermek](../cppcx/platform-weakreference-class.md#resolve) nesne artık var veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne Canlı ancak türündedeğil`T`.  

@@ -4,40 +4,40 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CUtlProps::IsValidValue
 - CUtlProps.IsValidValue
 - IsValidValue
-dev_langs: C++
-helpviewer_keywords: IsValidValue method
+dev_langs:
+- C++
+helpviewer_keywords:
+- IsValidValue method
 ms.assetid: 1164556e-8d98-429c-a396-fc9a699e0e97
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 06193b8c560c5ac6006698813222e698a98bccc3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c806b7fdeae18f53d9f8fd5d012bf67ce8b1ef6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cutlpropsisvalidvalue"></a>CUtlProps::IsValidValue
 Bir özelliğini ayarlamadan önce bir değer doğrulamak için kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      virtual HRESULT CUtlPropsBase::IsValidValue(  
-   ULONG /* iCurSet */,  
-   DBPROP* pDBProp   
-);  
+```cpp
+      virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,  
+   DBPROP* pDBProp);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

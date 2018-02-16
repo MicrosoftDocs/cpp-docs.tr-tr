@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - data marshaling [C++], structures
 - platform invoke [C++], structures
 - interop [C++], structures
 - marshaling [C++], structures
 ms.assetid: 35997e6f-9251-4af3-8c6e-0712d64d6a5d
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5bfca720a97ac8462afa970e54f13e0bd74a7808
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2ebda5f17b94fa28a5eb5222ccc991119ec4f81a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama
 Bu belgede C stilinde dizeleri örneği sağlayan yönetilen işlevler çağrılabilir kabul nasıl yerel işlevler açıklanmaktadır <xref:System.String> P/Invoke kullanarak. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz rağmen P/Invoke P/Invoke çok az derleme zamanı hata raporlama, sağladığından tür kullanımı uyumlu değil ve yönetilmeyen API DLL olarak paketlenir ve kaynak kodu değilse uygulaması can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:  
@@ -48,8 +50,6 @@ Bu belgede C stilinde dizeleri örneği sağlayan yönetilen işlevler çağrıl
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen modül konumu ve konum yapısını iki örneğini kabul GetDistance adında bir işlevi olarak adlandırılan bir yapıyı tanımlayan bir DLL'dir. İkinci modül GetDistance işlevi alır, ancak konum yapısının MLocation yönetilen eşdeğer açısından tanımlayan bir yönetilen komut satırı uygulamasıdır. Uygulamada aynı adı her iki sürümünün de yapısı için büyük olasılıkla kullanılacak; Ancak, farklı bir ad, burada DllImport prototip bakımından yönetilen sürümün tanımlanır göstermek için kullanılır.  
-  
- / CLR, ancak/CLR ile yönetilen modül derlenmiş: pure de çalışır. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı.  
   
  DLL hiçbir bölümünün geleneksel kullanarak yönetilen kod açıktır Not #include yönergesi. Aslında, DLL işlevleri DllImport ile alınan sorun derleme zamanında algılanmaz şekilde yalnızca çalışma zamanında erişilir.  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _strdate_s
 - _wstrdate_s
@@ -29,7 +30,8 @@ f1_keywords:
 - _wstrdate_s
 - strdate_s
 - _tstrdate_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - dates, copying
 - tstrdate_s function
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _strdate_s function
 - _wstrdate_s function
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 71117aed66d83c2c2ae1651c4de9c91e06a43653
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e71476fbb1810505f0b50a04d20f6235ff727c92
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strdates-wstrdates"></a>_strdate_s, _wstrdate_s
 Geçerli sistem tarihi bir arabellek kopyalayın. Sürümleri bunlar [_strdate, _wstrdate](../../c-runtime-library/reference/strdate-wstrdate.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -76,18 +79,18 @@ errno_t _wstrdate_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`buffer`  
+ [out] `buffer`  
  Biçimlendirilmiş tarih dizesi bilgileriyle doldurulan bir arabellek için bir işaretçi.  
   
- [in]`numberOfElements`  
+ [in] `numberOfElements`  
  Arabellek boyutu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H; Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz: [errno](../../c-runtime-library/errno-constants.md).  
+ Zero if successful. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H; Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz: [errno](../../c-runtime-library/errno-constants.md).  
   
 ## <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`numberOfElements`|Döndür|İçeriği`buffer`|  
+|`buffer`|`numberOfElements`|Döndür|İçeriği `buffer`|  
 |--------------|------------------------|------------|--------------------------|  
 |`NULL`|(any)|`EINVAL`|değiştirilmedi|  
 |Değil `NULL` (geçerli arabelleğe işaret eden)|0|`EINVAL`|değiştirilmedi|  
@@ -102,7 +105,7 @@ errno_t _wstrdate_s(
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevler daha güvenli sürümlerini sağlamak `_strdate` ve `_wstrdate`. `_strdate_s` İşlevi gösterdiği arabellek geçerli sistem tarihi kopyalar `buffer`biçimlendirilmiş `mm` / `dd` / `yy`, burada `mm` olan iki basamak temsil eden ay `dd` olan gününü temsil eden iki basamaklı ve `yy` yılın son iki basamaktan oluşur. Örneğin, dize `12/05/99` 5 Aralık 1999 temsil eder. Arabellek en az 9 karakter uzunluğunda olmalıdır.  
   
- `_wstrdate_s`bir joker karakter sürümü `_strdate_s`; bağımsız değişkeni ve dönüş değeri `_wstrdate_s` joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.  
+ `_wstrdate_s` bir joker karakter sürümü `_strdate_s`; bağımsız değişkeni ve dönüş değeri `_wstrdate_s` joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.  
   
  Varsa `buffer` olan bir `NULL` işaretçisi veya `numberOfElements` 9'dan az karakter, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL` arabellek ise `NULL` veya `numberOfElements` küçük veya eşit 0 veya kümesi `errno` için `ERANGE` varsa `numberOfElements` değerinden 9'dur.  
   
@@ -132,5 +135,5 @@ errno_t _wstrdate_s(
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
  [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_tzset](../../c-runtime-library/reference/tzset.md)

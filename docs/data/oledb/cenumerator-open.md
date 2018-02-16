@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,38 +13,37 @@ f1_keywords:
 - CEnumerator::Open
 - ATL::CEnumerator::Open
 - CEnumerator.Open
-dev_langs: C++
-helpviewer_keywords: Open method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Open method
 ms.assetid: b22821a0-257a-4543-ad0c-2649d4ac092e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3a5c35b3806e04f20417c7053248d1a098456403
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8a572c94c3071468e861c8143a904a18cd98763b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cenumeratoropen"></a>CEnumerator::Open
 Bir belirtilen sonra çağırarak satır kümesi için Numaralandırıcı alır Numaralandırıcı için ad bağlar [ISourcesRowset::GetSourcesRowset](https://msdn.microsoft.com/en-us/library/ms711200.aspx).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Open(   
-   LPMONIKER pMoniker    
-) throw( );  
-HRESULT Open(   
-   const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR    
-) throw( );  
-HRESULT Open(   
-   const CEnumerator& enumerator    
-) throw( );  
+```cpp
+HRESULT Open(LPMONIKER pMoniker) throw();  
+
+
+HRESULT Open(const CLSID* pClsid = & CLSID_OLEDB_ENUMERATOR) throw();  
+
+
+HRESULT Open(const CEnumerator& enumerator) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

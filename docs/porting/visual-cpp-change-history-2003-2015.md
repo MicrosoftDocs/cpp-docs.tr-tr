@@ -19,11 +19,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 271831fb4dd946739414fb40b00fadf83b5e0ed1
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: c1541029a8164e1c70e5599f20512dbecde543dc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişini 2003 2015
 
@@ -51,9 +51,9 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 4.  [Eşzamanlılık Çalışma zamanı önemli değişiklikler](#BK_ConcRT)  
   
-## <a name="VC_2015"></a>Visual C++ 2015 uyumluluğu değişiklikleri  
+## <a name="VC_2015"></a> Visual C++ 2015 uyumluluğu değişiklikleri  
   
-###  <a name="BK_CRT"></a>C çalışma zamanı kitaplığı (CRT)  
+###  <a name="BK_CRT"></a> C çalışma zamanı kitaplığı (CRT)  
   
 #### <a name="general-changes"></a>Genel değişiklikler  
   
@@ -97,7 +97,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **Yeni ve silme** kitaplığı önceki sürümlerinde, uygulama tanımlı new işleci ve silme işlevleri Çalışma Zamanı Kitaplığı'ndan DLL (örneğin, msvcr120.dll) verildi. Bu işleç işlevler şimdi her zaman statik olarak ikili dosyalar içinde çalışma zamanı kitaplığı DLL'leri kullanırken bile bağlanır.  
   
-     Bu yerel ya da karma kodu için önemli bir değişiklik değil (/ clr), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu kodunuzu derlemek başarısız olmasına neden olabilir. / CLR olarak kod derleme yaparsanız: Saf, size eklemeniz gerekebilir #include \<yeni > veya #include \<new.h > derleme hataları bu değişikliği nedeniyle geçici olarak çözmek için. Unutmayın, / CLR: pure olan Visual Studio 2015'te kullanım dışıdır ve gelecek sürümlerde kaldırılabilir.  
+     Bu yerel ya da karma kodu için önemli bir değişiklik değil (/ clr), ancak olarak derlenmiş kod [/CLR: pure](../build/reference/clr-common-language-runtime-compilation.md), bu kodunuzu derlemek başarısız olmasına neden olabilir. / CLR olarak kod derleme yaparsanız: Saf, size eklemeniz gerekebilir #include \<yeni > veya #include \<new.h > derleme hataları bu değişikliği nedeniyle geçici olarak çözmek için. Unutmayın, / CLR: pure olan Visual Studio 2015'te kullanım dışıdır ve gelecek sürümlerde kaldırılabilir. "Saf" olması gereken kod C# için bağlantı noktası kurulmuş.  
   
 #### <a name="processh"></a>\<Process.h >  
   
@@ -129,9 +129,9 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **Sonsuzluk ve NaN biçimlendirme** önceki sürümlerde, sonsuz ve NaN MSVC özgü sentinel dizeler kümesi kullanılarak biçimlendirilmiş.  
   
-    -   Sonsuz: 1. #INF  
+    -   Infinity: 1.#INF  
   
-    -   Sessiz NaN: 1. #QNAN  
+    -   Quiet NaN: 1.#QNAN  
   
     -   Sinyal NaN: 1. #SNAN  
   
@@ -244,7 +244,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **CLOCKS_PER_SEC** CLOCKS_PER_SEC makrosu C dil gerektirdiği türü clock_t tamsayıya şimdi genişletir.  
   
-####  <a name="BK_STL"></a>C++ Standart Kitaplığı  
+####  <a name="BK_STL"></a> C++ Standart Kitaplığı  
  Yeni iyileştirmeleri ve hata ayıklama denetimlerini etkinleştirmek için, C++ Standart Kitaplığı'nın Visual Studio uygulaması bir sürümden sonraki bir sürüme ikili uyumluluğu kasıtlı olarak bozar. Bu nedenle, C++ Standart Kitaplığı kullanıldığında, farklı sürümlerin kullanımıyla derlenmiş nesne dosyaları ve statik kitaplıklar tek bir ikili dosya (EXE veya DLL) halinde karma yapılabilir ve C++ Standart Kitaplığı nesneleri, farklı sürümler kullanılarak derlenmiş ikili dosyalar arasında geçirilemez. Bu tür karmalar, _MSC_VER uyuşmazlıklarıyla ilgili bağlayıcı hataları verir. (_MSC_VER olduğu derleyicinin ana sürüm içeren makrosu — Örneğin, Visual Studio 2013 için 1800.) Bu onay DLL karıştırma algılayamaz ve Visual Studio 2008 veya önceki bir sürümü içeren karıştırma algılayamıyor.  
   
 -   **C++ Standart Kitaplığı dosyaları** C++ Standart Kitaplığı üstbilgilerini INCLUDE yapısında bazı değişiklikler yapılmıştır. C++ Standart Kitaplığı üstbilgilerini birbirine belirtilmeyen şekillerde dahil izin verilmez. Genel olarak, kodunuzu yazma, böylece tüm C++ Standart göre gerektiğini ve hangi C++ Standart Kitaplığı üstbilgilerini hangi bir C++ Standart Kitaplığı üstbilgileri dahil kullanmaz üstbilgileri dikkatle içerir. Bu kod taşınabilir sürümleri ve platformda hale getirir. En az iki üstbilgi değişiklikler Visual Studio 2015'te kullanıcı kodu etkiler. İlk olarak, \<dize > artık içeren \<yineleyici >. İkinci, \<tanımlama grubu > şimdi tüm eklemeden std::array bildirir \<dizi >, hangi kod yapıları aşağıdaki bileşimi kodda kesme: kodunuzu "dizi" adlı bir değişken varsa ve kullanma yönergesi "kullanma ad alanı std; ", ve C++ Standart Kitaplığı üstbilgisini (gibi \<işlevsel >) içeren \<tanımlama grubu >, şimdi std::array bildirir.  
@@ -265,7 +265,7 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **const öğeleri** C++ Standart const öğelerin kapsayıcıları her zaman Yasak (vektör gibi\<const T > veya\<const T >). Visual Studio 2013 ve önceki gibi kapsayıcıları kabul edildi. Geçerli sürümde, bu tür kapsayıcıları derlemek başarısız.  
   
--   **Std::Allocator:: ayırması** Visual Studio 2013 ve önceki n geçirilen bağımsız değişken std::allocator::deallocate(p, n) yoksayıldı.  C++ Standart n çağrılmasını ilk bağımsız değişken tahsis gibi p döndürülen geçirilen değerine eşit her zaman gereklidir. Ancak, geçerli sürümde değerindeki bir n sahip olduğunu denetlenir. Hangi standart gerektirir farklı bağımsız değişkenleri n geçirir kodu çalışma zamanında kilitlenmesine neden olabilir.  
+-   **std::allocator::deallocate** In Visual Studio 2013 and earlier, std::allocator::deallocate(p, n) ignored the argument passed in for n.  C++ Standart n çağrılmasını ilk bağımsız değişken tahsis gibi p döndürülen geçirilen değerine eşit her zaman gereklidir. Ancak, geçerli sürümde değerindeki bir n sahip olduğunu denetlenir. Hangi standart gerektirir farklı bağımsız değişkenleri n geçirir kodu çalışma zamanında kilitlenmesine neden olabilir.  
   
 -   **hash_map ve hash_set** hash_set ve standart üstbilgi dosyaları hash_map Visual Studio 2015'te kullanım dışı bırakılmış ve bir sonraki sürümde kaldırılacak. Unordered_map ve unordered_set kullanın.  
   
@@ -307,13 +307,13 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   **Launch::ANY ve launch::sync ilkeleri** standart olmayan launch::any ve launch::sync ilkeleri kaldırıldı. Bunun yerine, launch::any için başlatma: zaman uyumsuz &#124; kullanın başlatma: ertelenmiş. Launch::Sync için launch::deferred kullanın. Bkz: [launch numaralandırması](../standard-library/future-enums.md#launch).  
   
-####  <a name="BK_MFC"></a>MFC ve ATL  
+####  <a name="BK_MFC"></a> MFC ve ATL  
   
 -   **Microsoft Foundation sınıfları (MFC)** Visual Studio içinde bir "Tipik" yükleme büyük boyutuna nedeniyle artık eklenmiştir. MFC yüklemek için Visual Studio 2015 kurulumunda özel yükleme seçeneğini seçin. Visual Studio 2015 yüklü zaten varsa, Visual Studio Kurulumu yeniden çalıştırmayı özel yükleme seçeneği seçerek ve Microsoft temel sınıfları seçme MFC yükleyebilirsiniz. Visual Studio Kurulumu Denetim Masası, programlar ve özellikler veya yükleme medyasından yeniden çalıştırabilirsiniz.  
   
      Visual C++ Yeniden Dağıtılabilir Paketi'nde bu kitaplık halen yer almaktadır.  
   
-####  <a name="BK_ConcRT"></a>Eşzamanlılık Çalışma zamanı  
+####  <a name="BK_ConcRT"></a> Eşzamanlılık Çalışma zamanı  
   
 -   **Windows.h concurrency::Context::Yield ile çakışan gelen makrosu verim** eşzamanlılık çalışma zamanı önceden #undef Windows.h h ve concurrency::Context tanımlanan verim makrosu arasındaki çakışmaları önleme verim makrosu tanımsız için kullanılır: : Ödeme işlevi. Bu #undef kaldırıldı ve yeni bir çakışmayan eşdeğer API çağrısı [concurrency::Context::YieldExecution](../parallel/concrt/reference/context-class.md#yieldexecution) eklendi. Verim çakışıyor geçici olarak çözmek için bunun yerine YieldExecution işlevi çağırmak için kodunuzu güncelleştirin veya verim işlev adı aşağıdaki örnekteki gibi çağrısı sitelerdeki parantez ile çevrelendiğinden:  
   
@@ -338,9 +338,9 @@ Visual Studio'nun yeni bir sürüme yükselttiğinizde, derleme ve/veya önceden
   
 -   [Güncelleştirme 3 uygunluk yenilikleri](#VS_Update3)  
   
-###  <a name="VS_RTM"></a>Visual Studio 2015'te uygunluk geliştirmeleri  
+###  <a name="VS_RTM">Visual Studio 2015'te uygunluk geliştirmeleri</a>  
   
--   /ZC:forScope-seçeneği  
+-   /Zc:forScope- option  
   
      Derleyici seçeneği **/Zc:forScope-** kullanım dışıdır ve gelecek sürümde kaldırılacak.  
   
@@ -1435,7 +1435,7 @@ struct S {
     A(); // error
 };
 ```
-Sorunu gidermek için üst çizgi değiştirin`#define A();`
+Sorunu gidermek için üst çizgi değiştirin `#define A();`
 
 Aşağıdaki kod hatası C2059 oluşturur: sözdizimi hatası: ')'
 ```cpp
@@ -1599,7 +1599,7 @@ C c;
 
 
   
-###  <a name="VS_Update1"></a>Güncelleştirme 1 uygunluk yenilikleri  
+###  <a name="VS_Update1"></a> Güncelleştirme 1 uygunluk yenilikleri  
   
 -   **Özel sanal taban sınıflar ve dolaylı devralma**  
   
@@ -2144,7 +2144,7 @@ C c;
     }  
     ```  
   
-###  <a name="VS_Update2"></a>Güncelleştirme 2 uygunluk yenilikleri  
+###  <a name="VS_Update2"></a> Güncelleştirme 2 uygunluk yenilikleri  
   
 -   **Kısmi ifade SFINAE desteği sonucunda ek uyarıları ve hataları verilebilecek**  
   
@@ -2243,7 +2243,7 @@ C c;
   
     ```  
   
--   `volatile`**üye değişkenleri önlemek örtük olarak tanımlanan oluşturucuları ve atama işleçleri**  
+-   `volatile` **üye değişkenleri örtük olarak tanımlanan oluşturucuları ve atama işleçleri engelle**  
   
      Derleyici önceki sürümlerini izin olan bir sınıfı `volatile` varsayılan üye değişkenleri copy/move oluşturucular ve kopyalama/taşıma atama işleçleri otomatik olarak oluşturulan varsayılan. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici artık otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerinin önleyen volatile üye değişkenleri Önemsiz olmayan yapım ve atama işleçleri sahip olan bir sınıfı göz önünde bulundurur.  Böyle bir sınıfın UNION (veya bir sınıf içinde anonim bir birleşimi) bir üyesi olduğunda, copy/move oluşturucuları ve kopya/taşıma atama işleçleri UNION (veya unonymous UNION içeren sınıf) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim UNION içeren sınıf) kopyalamak çalışırken bir hata derleyici sorunları derleyici hatası C2280 sonucunda ise.  
   
@@ -2429,7 +2429,7 @@ C c;
   
      Bu şekilde yazılan kod çözme işleç tanımları üstbilgi dosyası dışında ve karşılık gelen bir kaynak dosyasına taşınmasına gerektirebilir.  
   
-###  <a name="VS_Update3"></a>Güncelleştirme 3 uygunluk yenilikleri  
+###  <a name="VS_Update3"></a> Güncelleştirme 3 uygunluk yenilikleri  
   
 -   **Std::is_convertable otomatik atanmasını artık algılar** (standart kitaplığı)  
   
@@ -3202,13 +3202,13 @@ C c;
   
     -   GetWriteFactory  
   
-    -   Getwıcfactory  
+    -   GetWICFactory  
   
-    -   Initd2d  
+    -   InitD2D  
   
     -   ReleaseD2DRefs  
   
-    -   Isd2dınitialized  
+    -   IsD2DInitialized  
   
     -   D2D1MakeRotateMatrix  
   
@@ -3324,7 +3324,7 @@ C c;
   
     -   perf_object  
   
-    -   Perfmon  
+    -   perfmon  
   
     -   request_handler  
   

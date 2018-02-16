@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: ICommandImpl
-dev_langs: C++
-helpviewer_keywords: ICommandImpl class
+f1_keywords:
+- ICommandImpl
+dev_langs:
+- C++
+helpviewer_keywords:
+- ICommandImpl class
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c553effb6ad6a4aa9571eed62f30e4e83910afbd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 80cc82023131a23ebfea33c5264cf83fdafb1b36
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl Sınıfı
 Uygulamasını sağlar [ICommand](https://msdn.microsoft.com/en-us/library/ms709737.aspx) arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class T, class CommandBase = ICommand>   
 class ATL_NO_VTABLE ICommandImpl : public CommandBase  
 ```  
@@ -50,9 +54,9 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 |[CancelExecution](../../data/oledb/icommandimpl-cancelexecution.md)|Geçerli komut yürütme iptal eder.|  
 |[İptal](../../data/oledb/icommandimpl-cancel.md)|Geçerli komut yürütme iptal eder.|  
 |[CreateRowset](../../data/oledb/icommandimpl-createrowset.md)|Bir satır kümesi nesnesi oluşturur.|  
-|[Yürütme](../../data/oledb/icommandimpl-execute.md)|Komut yürütür.|  
+|[Execute](../../data/oledb/icommandimpl-execute.md)|Komut yürütür.|  
 |[GetDBSession](../../data/oledb/icommandimpl-getdbsession.md)|Arabirim işaretçisi komutu oluşturulan oturumuna döndürür.|  
-|[Icommandımpl](../../data/oledb/icommandimpl-icommandimpl.md)|Oluşturucu.|  
+|[ICommandImpl](../../data/oledb/icommandimpl-icommandimpl.md)|Oluşturucu.|  
   
 ### <a name="data-members"></a>Veri üyeleri  
   

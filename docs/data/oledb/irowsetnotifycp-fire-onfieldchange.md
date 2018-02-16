@@ -1,10 +1,11 @@
 ---
-title: IRowsetNotifyCP::fire_onfieldchange | Microsoft Docs
+title: IRowsetNotifyCP::Fire_OnFieldChange | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,38 +14,37 @@ f1_keywords:
 - ATL.IRowsetNotifyCP.Fire_OnFieldChange
 - IRowsetNotifyCP.Fire_OnFieldChange
 - IRowsetNotifyCP::Fire_OnFieldChange
-dev_langs: C++
-helpviewer_keywords: Fire_OnFieldChange method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Fire_OnFieldChange method
 ms.assetid: 03dad058-8d4f-4113-aea4-ef7764eab9ec
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 602ce97c5e23827d08df0ab6ad152acdce8de1a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0b62dfc1e2ffac89237abe22dce9b6d976342a9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetnotifycpfireonfieldchange"></a>IRowsetNotifyCP::Fire_OnFieldChange
 Yayınlar bir [OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.aspx) tüketicilere bir sütunun değeri bir değişiklik, olay.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Fire_OnFieldChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnFieldChange(IRowset* pRowset,  
    HROW hRow,  
    DBORDINAL cColumns,  
    DBORDINAL* rgColumns,  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

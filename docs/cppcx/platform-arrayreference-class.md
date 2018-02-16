@@ -6,24 +6,28 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::ArrayReference::ArrayReference
-dev_langs: C++
-helpviewer_keywords: Platform::ArrayReference Class
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::ArrayReference::ArrayReference
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7d624422fd7dc1fcdb5e96f0995e8beef5fb8239
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0987511b6653bee85b6cc5c4c680331d12519450
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference sınıfı
-`ArrayReference`için alternatif bir en iyi duruma getirme türü [Platform::Array ^](../cppcx/platform-array-class.md) C stili dizi giriş verilerle doldurmak istediğiniz zaman giriş parametrelerinde.  
+`ArrayReference` için alternatif bir en iyi duruma getirme türü [Platform::Array ^](../cppcx/platform-array-class.md) C stili dizi giriş verilerle doldurmak istediğiniz zaman giriş parametrelerinde.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,7 +47,7 @@ class ArrayReference
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ArrayReference::operator() işleci](#operator-call)|Bu dönüştürür `ArrayReference` için bir `Platform::Array<T>^*`.|  
+|[ArrayReference::operator() Operator](#operator-call)|Bu dönüştürür `ArrayReference` için bir `Platform::Array<T>^*`.|  
 |[ArrayReference::operator = işleci](#operator-assign)|İçeriği başka bir atar `ArrayReference` Bu örnek için.|  
   
 ## <a name="exceptions"></a>Özel Durumlar  
@@ -60,7 +64,7 @@ class ArrayReference
   
  **Başlık:** vccorlib.h  
   
-## <a name="ctor"></a>ArrayReference::ArrayReference Oluşturucusu
+## <a name="ctor"></a>  ArrayReference::ArrayReference Oluşturucusu
 Yeni bir örneğini başlatır [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) sınıfı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -85,7 +89,7 @@ ArrayReference(ArrayReference&& otherArg)
   
 
 
-## <a name="operator-assign"></a>ArrayReference::operator = işleci
+## <a name="operator-assign">ArrayReference::operator = işleci</a>
 Belirtilen nesne geçerli atar [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) taşıma semantiği kullanarak nesne.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -104,11 +108,11 @@ ArrayReference& operator=(ArrayReference&& otherArg);
  Bir başvuru türünde bir nesne `ArrayReference`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Platform::ArrayReference`bir standart C++ sınıfı, ref sınıfı şablonudur.  
+ `Platform::ArrayReference` bir standart C++ sınıfı, ref sınıfı şablonudur.  
   
 
 
-## <a name="operator-call"></a>ArrayReference::operator() işleci
+## <a name="operator-call"></a>  ArrayReference::operator() işleci
 Geçerli dönüştürür [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) geri nesnesini bir [Platform::Array](../cppcx/platform-array-class.md) sınıfı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -120,7 +124,7 @@ Array<TArg>^ operator ();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir tanıtıcı için-nesne türü`Array<TArg>^`  
+ Bir tanıtıcı için-nesne türü `Array<TArg>^`  
   
 ### <a name="remarks"></a>Açıklamalar  
  [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) ve [Platform::Array](../cppcx/platform-array-class.md) standart C++ sınıf şablonları, değil ref sınıflarıdır.  

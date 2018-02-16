@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 69d93575-636c-4564-8cca-6dfba0c7e328
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e122f84bff2b815a00e50950b90230a9d50907a1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7d6cd93a8f4d82bb5ecdc94c701d346f1331558c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="partial-classes-ccx"></a>Kısmi sınıflar (C + +/ CX)
 Bir parçalı sınıf içinde değişiklik bir sınıf tanımı ve otomatik kod oluşturma yazılım bir bölümünü senaryoları destekleyen bir yapıdır — Örneğin, XAML Tasarımcısı — aynı sınıf kodunda da değiştiriyor. Kısmi bir sınıf kullanarak kodunuzu üzerine yazılmasını Tasarımcı engelleyebilir. Visual Studio Proje `partial` değiştiricisi oluşturulan dosya otomatik olarak uygulanır.  
@@ -25,15 +26,15 @@ Bir parçalı sınıf içinde değişiklik bir sınıf tanımı ve otomatik kod 
 ## <a name="syntax"></a>Sözdizimi  
  Bir parçalı sınıf tanımlamak için `partial` anahtar sözcüğü hemen önce ne normal sınıf tanımını Aksi durumda olacak, sınıf anahtarı. Bir anahtar sözcük gibi `partial ref class` boşluk karakterleri içeren bağlamsal bir anahtardır. Kısmi tanımları aşağıdaki yapılardan desteklenir.  
   
--   `class`veya`struct`  
+-   `class` Veya `struct`  
   
--   `ref class`veya`ref struct`  
+-   `ref class` Veya `ref struct`  
   
--   `value class`veya`value struct`  
+-   `value class` Veya `value struct`  
   
--   `enum`veya`enum class`  
+-   `enum` Veya `enum class`  
   
--   `ref interface`, `interface class`, `interface struct`, veya`__interface`  
+-   `ref interface`, `interface class`, `interface struct`, veya `__interface`  
   
 -   `union`  
   

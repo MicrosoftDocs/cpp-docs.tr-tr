@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _umask_s
+ms.topic: reference
+apiname:
+- _umask_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - unmask_s
 - _umask_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - masks, file-permission-setting
 - _umask_s function
@@ -33,16 +36,17 @@ helpviewer_keywords:
 - umask_s function
 - files [C++], permission settings for
 ms.assetid: 70898f61-bf2b-4d8d-8291-0ccaa6d33145
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 71279b111e50c40bb974d9a5da68b575aecc1ebc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 315473748d64e572c73746ce6f6fc97ccc912bb0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="umasks"></a>_umask_s
 Varsayılan dosya izni maskesi ayarlar. Bir sürümünü [_umask](../../c-runtime-library/reference/umask.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -57,10 +61,10 @@ errno_t _umask_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`mode`  
+ [in] `mode`  
  Varsayılan izni ayarı.  
   
- [out]`oldMode`  
+ [out] `oldMode`  
  İzni ayarı önceki değeri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

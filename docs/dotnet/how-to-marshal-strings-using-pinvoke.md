@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - interop [C++], strings
 - marshaling [C++], strings
 - data marshaling [C++], strings
 - platform invoke [C++], strings
 ms.assetid: bcc75733-7337-4d9b-b1e9-b95a98256088
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 86f51c31cb329b05f58452818b7a9292d7699273
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1887a88bcfcdec9daf2661eca56a0adcf59ba08
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-marshal-strings-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Dizeleri Sıralama
 Bu konuda, C stilinde dizeleri CLR dizesi kullanılarak çağrılabilir kabul nasıl yerel işlevler açıklanmaktadır .NET Framework Platform çağırma desteğini kullanan System::String yazın. P/Invoke çok az derleme zamanı hata raporlama, tür kullanımı uyumlu değildir ve uygulaması can sıkıcı olabilir sağladığından visual C++ programcıları (uygunsa) C++ birlikte çalışabilirlik özellikleri kullanmaları önerilir. Yönetilmeyen API DLL olarak paketlenir ve kaynak kod kullanılabilir değilse, P/Invoke tek seçenektir ancak Aksi takdirde bkz [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
@@ -36,8 +38,6 @@ Bu konuda, C stilinde dizeleri CLR dizesi kullanılarak çağrılabilir kabul na
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen modül char * biçiminde C türü ANSI dizesini kabul eder TakesAString adlı bir işlev tanımlayan bir DLL'dir. Yönetilen modül TakesAString işlevini alır, ancak bir char yerine yönetilen System.String olarak tanımlayan bir komut satırı uygulamasıdır\*. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Özniteliği yönetilen dize TakesAString çağrıldığında nasıl gerektiğini belirtmek için kullanılır.  
-  
- / CLR, ancak/CLR ile yönetilen modül derlenmiş: pure de çalışır.  
   
 ```  
 // TraditionalDll2.cpp  

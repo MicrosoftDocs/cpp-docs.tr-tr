@@ -4,45 +4,45 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CCommand.Create
 - CCommand::Create
-dev_langs: C++
-helpviewer_keywords: Create method [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- Create method [C++]
 ms.assetid: e4bede7a-68bd-491a-97f4-89b03d45cd24
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f4bbd236c2ec7ae6857ede1ac64f738ca8600774
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e84809d24479d85b01441c67b467102936b7f1aa
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ccommandcreate"></a>CCommand::Create
 Çağrıları [CCommand::CreateCommand](../../data/oledb/ccommand-createcommand.md) belirtilen oturum için bir komut oluşturmak için daha sonra çağırır [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709825.aspx) komut metnini belirtmek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT CCommandBase::Create(  
-   const CSession& session,   
+```cpp
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCWSTR wszCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
-HRESULT CCommandBase::Create(  
-   const CSession& session,   
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
+
+
+HRESULT CCommandBase::Create(const CSession& session,   
    LPCSTR szCommand,   
-   REFGUID guidCommand = DBGUID_DEFAULT  
-) throw ( );  
+   REFGUID guidCommand = DBGUID_DEFAULT) throw ();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -6,25 +6,28 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Exception::Exception
 - VCCORLIB/Platform::Exception::CreateException
 - VCCORLIB/Platform::Exception::HResult
 - VCCORLIB/Platform::Exception::Message
-dev_langs: C++
-helpviewer_keywords: Platform::Exception Class
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 70d497275a0af7cfec12123f169240ced47fa958
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 51df721524fa871b28cc7e4bcb088d4a82a0d1ad
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformexception-class"></a>Platform::Exception sınıfı
 Uygulama yürütmesi sırasında oluşan hataları temsil eder. Özel durum sınıfları türetilen olamaz `Platform::Exception`. Bir özel durum gerektiriyorsa, kullanabileceğiniz `Platform::COMException` ve uygulamaya özgü HRESULT belirtin.  
@@ -70,7 +73,7 @@ public ref class Exception : Object,    IException,    IPrintable,    IEquatable
   
  **Meta veriler:** platform.winmd  
 
-## <a name="createexception"></a>Exception::CreateException yöntemi
+## <a name="createexception"></a> Exception::CreateException yöntemi
 Bir Platform::Exception oluşturur ^ belirtilen HRESULT değerinden.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -97,7 +100,7 @@ Exception^ CreateException(int32 hr, Platform::String^ message)
   
 
 
-## <a name="ctor"></a>Exception::Exception Oluşturucusu
+## <a name="ctor"></a>  Exception::Exception Oluşturucusu
 Özel durum sınıfının yeni bir örneğini intializes.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -117,7 +120,7 @@ Exception(int32 hresult, ::Platform::String^ message)
   
 
 
-## <a name="hresult"></a>Exception::HResult özelliği
+## <a name="hresult"></a>  Exception::HResult özelliği
 Özel durumu karşılık gelen HRESULT.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -134,7 +137,7 @@ public:property int HResult {    int get();}
   
 
 
-## <a name="message"></a>Exception::Message özelliği
+## <a name="message"></a> Exception::Message özelliği
 Hatayı açıklayan ileti.  
   
 ### <a name="syntax"></a>Sözdizimi  

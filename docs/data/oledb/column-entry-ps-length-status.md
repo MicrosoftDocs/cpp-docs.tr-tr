@@ -4,46 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COLUMN_ENTRY_PS_LENGTH_STATUS
-dev_langs: C++
-helpviewer_keywords: COLUMN_ENTRY_PS_LENGTH_STATUS macro
+f1_keywords:
+- COLUMN_ENTRY_PS_LENGTH_STATUS
+dev_langs:
+- C++
+helpviewer_keywords:
+- COLUMN_ENTRY_PS_LENGTH_STATUS macro
 ms.assetid: 04291671-329d-4974-b04e-36ef3f037787
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 057ff3f0ff621c70331f5baf43b141e50aa1156d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7a8974ed315a653916b90d4edab7ba6cda06eaa4
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="columnentrypslengthstatus"></a>COLUMN_ENTRY_PS_LENGTH_STATUS
 Satır kümesi bağlamada veritabanındaki belirli sütunu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-COLUMN_ENTRY_PS_LENGTH_STATUS(  
-nOrdinal  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status  
- )  
+```cpp
+COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status)  
   
 ```  
   
@@ -65,7 +56,7 @@ status
  *uzunluğu*  
  [in] Sütun uzunluğu bağlanması için değişken.  
   
- *durumu*  
+ *Durumu*  
  [in] Sütun durumuna bağlı olmasını değişkeni.  
   
 ## <a name="remarks"></a>Açıklamalar  

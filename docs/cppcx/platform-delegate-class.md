@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::Delegate
-dev_langs: C++
-helpviewer_keywords: Platform::Delegate Class
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::Delegate
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::Delegate Class
 ms.assetid: 82b21271-768f-4193-9ca2-be68ddfd546e
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 661e96cd2455610e6a7f669928d49c915b7d7575
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 603d159572ac998f1ad04ed3558b1f2d88457708
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformdelegate-class"></a>Platform::delegate sınıfı
 İşlev nesnesi temsil eder.  

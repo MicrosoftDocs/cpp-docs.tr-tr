@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vswprintf_l
 - _vsprintf_l
@@ -34,7 +35,8 @@ f1_keywords:
 - _vsprintf_l
 - _vswprintf_l
 - vswprintf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __vswprintf_l function
 - _vstprintf_l function
@@ -52,16 +54,17 @@ helpviewer_keywords:
 - vsprintf function
 - _vstprintf function
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 10f318d1b6c43f6666030ff3ea90811c2e13f97f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a96bcc3de4b59601e18043bb18fb82802abd4c8f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vsprintf-vsprintfl-vswprintf-vswprintfl-vswprintfl"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md).  
@@ -144,7 +147,7 @@ int _vswprintf_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `vsprintf`ve `vswprintf` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. Varsa `buffer` veya `format` null işaretçi açıklandığı gibi bu işlevleri geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
+ `vsprintf` ve `vswprintf` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. Varsa `buffer` veya `format` null işaretçi açıklandığı gibi bu işlevleri geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
   
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -156,7 +159,7 @@ int _vswprintf_l(
 > [!IMPORTANT]
 >  Kullanarak `vsprintf`, burada karakter sayısını sınırlamak için hiçbir şekilde yazılır, bu işlevi kullanarak kod arabellek taşmaları açıktır anlamına gelir. Kullanım [_vsnprintf](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) bunun yerine, veya arama [_vscprintf](../../c-runtime-library/reference/vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md) ne kadar büyük bir arabellek gerekli belirlemek için. Ayrıca, emin `format` kullanıcı tanımlı bir dize değil. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
- `vswprintf`ISO C ikinci parametre gerektiren standart, uyumlu `count`, türü `size_t`. Eski standart olmayan davranış zorlamak için tanımlamak `_CRT_NON_CONFORMING_SWPRINTFS.` eski davranışı sonraki bir sürümde olabilir, bu kod yeni uyumluluğunu davranışı kullanmak için değiştirilmesi gereken biçimde değil.  
+ `vswprintf` ISO C ikinci parametre gerektiren standart, uyumlu `count`, türü `size_t`. Eski standart olmayan davranış zorlamak için tanımlamak `_CRT_NON_CONFORMING_SWPRINTFS.` eski davranışı sonraki bir sürümde olabilir, bu kod yeni uyumluluğunu davranışı kullanmak için değiştirilmesi gereken biçimde değil.  
   
  C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -171,10 +174,10 @@ int _vswprintf_l(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`vsprintf`, `_vsprintf_l`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`vswprintf`, `_vswprintf_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`vsprintf`, `_vsprintf_l`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`vswprintf`, `_vswprintf_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

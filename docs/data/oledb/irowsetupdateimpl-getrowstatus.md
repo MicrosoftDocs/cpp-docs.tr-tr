@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,35 +14,34 @@ f1_keywords:
 - IRowsetUpdateImpl.GetRowStatus
 - ATL::IRowsetUpdateImpl::GetRowStatus
 - GetRowStatus
-dev_langs: C++
-helpviewer_keywords: GetRowStatus method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetRowStatus method
 ms.assetid: ce57e8be-5891-44d9-b3c5-59ffd3913678
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5d5802f1870f2e8be42669d5dc53ea5e55531258
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fcd0dbafc4c3681394ce58c5fd3c01c6d8c0b6d1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetupdateimplgetrowstatus"></a>IRowsetUpdateImpl::GetRowStatus
 Belirtilen satır durumunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD ( GetRowStatus )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (GetRowStatus )(HCHAPTER /* hReserved */,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
-   DBPENDINGSTATUS rgPendingStatus[]   
-);  
+   DBPENDINGSTATUS rgPendingStatus[]);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

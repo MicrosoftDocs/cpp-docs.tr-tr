@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wsplitpath_s
 - _splitpath_s
@@ -28,7 +29,8 @@ f1_keywords:
 - splitpath_s
 - _splitpath_s
 - wsplitpath_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - splitpath_s function
 - pathnames
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - path names
 - wsplitpath_s function
 ms.assetid: 30fff3e2-cd00-4eb6-b5a2-65db79cb688b
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6cfb2d72b728b64aeb00c3b8437f9c47e02fb813
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9baa71ca1a3d624c08df8ff1cbd14a9386e1b83d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="splitpaths-wsplitpaths"></a>_splitpath_s, _wsplitpath_s
 Bir yol adı bileşenlerine keser. Sürümleri bunlar [_splitpath, _wsplitpath](../../c-runtime-library/reference/splitpath-wsplitpath.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -95,31 +98,31 @@ errno_t _wsplitpath_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`path`  
+ [in] `path`  
  Tam yolu.  
   
- [out]`drive`  
+ [out] `drive`  
  Sürücü harfini izleyen iki nokta ile (`:`). Geçirebilirsiniz `NULL` sürücü harfi gerekmiyorsa, bu parametre için.  
   
- [in]`driveNumberOfElements`  
+ [in] `driveNumberOfElements`  
  Boyutunu `drive` tek baytlı veya uluslararası karakter arabellek. Varsa `drive` olan `NULL`, bu değerin 0 olması gerekir.  
   
- [out]`dir`  
+ [out] `dir`  
  Sondaki eğik çizgi dahil olmak üzere dizin yolu. Eğik ( `/` ), ters eğik çizgi ( `\` ), ya da her ikisini de kullanılabilir. Geçirebilirsiniz `NULL` dizin yolu gerekmiyorsa, bu parametre için.  
   
- [in]`dirNumberOfElements`  
+ [in] `dirNumberOfElements`  
  Boyutunu `dir` tek baytlı veya uluslararası karakter arabellek. Varsa `dir` olan `NULL`, bu değerin 0 olması gerekir.  
   
- [out]`fname`  
+ [out] `fname`  
  Temel dosya adı (uzantısı olmadan). Geçirebilirsiniz `NULL` filename gerekmiyorsa, bu parametre için.  
   
- [in]`nameNumberOfElements`  
+ [in] `nameNumberOfElements`  
  Boyutunu `fname` tek baytlı veya uluslararası karakter arabellek. Varsa `fname` olan `NULL`, bu değerin 0 olması gerekir.  
   
- [out]`ext`  
+ [out] `ext`  
  Dosya adı uzantısı, dönem baştaki dahil olmak üzere (**.**). Geçirebilirsiniz `NULL` dosya adı uzantısı gerekmez, bu parametre için.  
   
- [in]`extNumberOfElements`  
+ [in] `extNumberOfElements`  
  Boyutunu `ext` tek baytlı veya uluslararası karakter arabellek. Varsa `ext` olan `NULL`, bu değerin 0 olması gerekir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -129,22 +132,22 @@ errno_t _wsplitpath_s(
   
 |Koşul|Dönüş Değeri|  
 |---------------|------------------|  
-|`path`değil`NULL`|`EINVAL`|  
-|`drive`olan `NULL`, `driveNumberOfElements` sıfır değil|`EINVAL`|  
-|`drive`olmayan olan`NULL`, `driveNumberOfElements` sıfır|`EINVAL`|  
-|`dir`olan `NULL`, `dirNumberOfElements` sıfır değil|`EINVAL`|  
-|`dir`olmayan olan`NULL`, `dirNumberOfElements` sıfır|`EINVAL`|  
-|`fname`olan `NULL`, `nameNumberOfElements` sıfır değil|`EINVAL`|  
-|`fname`olmayan olan`NULL`, `nameNumberOfElements` sıfır|`EINVAL`|  
-|`ext`olan `NULL`, `extNumberOfElements` sıfır değil|`EINVAL`|  
-|`ext`olmayan olan`NULL`, `extNumberOfElements` sıfır|`EINVAL`|  
+|`path` değil `NULL`|`EINVAL`|  
+|`drive` olan `NULL`, `driveNumberOfElements` sıfır değil|`EINVAL`|  
+|`drive` olmayan olan`NULL`, `driveNumberOfElements` sıfır|`EINVAL`|  
+|`dir` olan `NULL`, `dirNumberOfElements` sıfır değil|`EINVAL`|  
+|`dir` olmayan olan`NULL`, `dirNumberOfElements` sıfır|`EINVAL`|  
+|`fname` olan `NULL`, `nameNumberOfElements` sıfır değil|`EINVAL`|  
+|`fname` olmayan olan`NULL`, `nameNumberOfElements` sıfır|`EINVAL`|  
+|`ext` olan `NULL`, `extNumberOfElements` sıfır değil|`EINVAL`|  
+|`ext` olmayan olan`NULL`, `extNumberOfElements` sıfır|`EINVAL`|  
   
  Yukarıdaki koşullardan herhangi biri meydana gelirse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   
  Herhangi bir arabellek ise sonucu tutmak için çok kısa, bu işlevler dizeleri boş, ayarlamak için tüm arabellekler temizleyin `errno` için `ERANGE`ve geri dönüp `ERANGE`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_splitpath_s` İşlevi dört bileşenlerine yolunu keser. `_splitpath_s`çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wsplitpath_s`bir joker karakter sürümü `_splitpath_s`; bağımsız değişkenleri `_wsplitpath_s` joker karakter dizelerdir. Aksi takdirde bu işlevler aynı şekilde davranır  
+ `_splitpath_s` İşlevi dört bileşenlerine yolunu keser. `_splitpath_s` çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wsplitpath_s` bir joker karakter sürümü `_splitpath_s`; bağımsız değişkenleri `_wsplitpath_s` joker karakter dizelerdir. Aksi takdirde bu işlevler aynı şekilde davranır  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -173,7 +176,7 @@ errno_t _wsplitpath_s(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_splitpath_s`|\<stdlib.h >|  
+|`_splitpath_s`|\<stdlib.h>|  
 |`_wsplitpath_s`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

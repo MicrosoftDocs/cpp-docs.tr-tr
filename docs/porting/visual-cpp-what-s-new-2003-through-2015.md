@@ -18,11 +18,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e730d7d47a8742d3c4f1f7c4636aabd8785cc93
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: e0e5090bc914648e527f335b261ad7838ad3d0bc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ &#39; teki 2015 aracılığıyla yeni 2003
 
@@ -46,7 +46,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
 - [Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri](#VS_Update3)
 
-### <a name="VS_RTM"></a>Visual Studio 2015'te uygunluk geliştirmeleri
+### <a name="VS_RTM">Visual Studio 2015'te uygunluk geliştirmeleri</a>
 
 - **/ZC:forScope-seçeneği** derleyici seçeneği **/Zc:forScope-** kullanım dışıdır ve gelecek sürümde kaldırılacak.
 
@@ -503,7 +503,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
 - **Kopyalama oluşturucular** hem de [!INCLUDE[vs_dev12](../atl-mfc-shared/includes/vs_dev12_md.md)] ve Visual Studio 2015 derleyici oluşturan bir sınıf için bir kopya Oluşturucu bu sınıfın bir kullanıcı tarafından tanımlanan taşıma oluşturucusuna ancak hiçbir kullanıcı tarafından tanımlanan kopya Oluşturucu varsa. Dev14 içinde bu örtük olarak oluşturulmuş kopya Oluşturucu de işaretlenmiş "delete =".
 
-### <a name="VS_Update1"></a>Visual Studio 2015 güncelleştirme 1 uygunluk yenilikleri
+### <a name="VS_Update1">Visual Studio 2015 güncelleştirme 1 uygunluk yenilikleri</a>
 
 - **Özel sanal taban sınıflar ve dolaylı devralma** Derleyici önceki sürümlerinden izin üye işlevlerini çağırın türetilmiş bir sınıf kendi *dolaylı olarak türetilmiş* `private virtual` temel sınıflar. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici artık bu şekilde yazılan kod kabul eder ve derleyici hatası C2280 sonuç olarak verir.
 
@@ -577,7 +577,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
       Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
 
-- **Çağırma ' işleci *türü*() ' (kullanıcı tanımlı dönüştürme) sınıfı olmayan türlerinde** izin Derleyici önceki sürümlerinde ' işleci *türü*() ' sırasında sınıfı olmayan türlerinde çağrılacak sessizce yok sayılıyor. Bu eski davranış sessiz hatalı kod oluşturmasına, öngörülemeyen çalışma zamanı davranışını kaynaklanan riski oluşturulmuş. Derleyici artık bu şekilde yazılan kod kabul eder ve bunun yerine derleyici hatası C2228 sorunları.
+- **Çağırma ' işleci *türü*() ' (kullanıcı tanımlı dönüştürme) sınıfı olmayan türlerinde** izin Derleyici önceki sürümlerini ' işleci *türü*() ' sınıfı olmayan türlerinde sessizce sırasında çağrılabilir Bunu yoksayılıyor. Bu eski davranış sessiz hatalı kod oluşturmasına, öngörülemeyen çalışma zamanı davranışını kaynaklanan riski oluşturulmuş. Derleyici artık bu şekilde yazılan kod kabul eder ve bunun yerine derleyici hatası C2228 sorunları.
 
    ```Output
     error C2228: left of '.operator type' must have class/struct/union
@@ -996,7 +996,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     }
    ```
 
-### <a name="VS_Update2"></a>Visual Studio 2015 güncelleştirme 2 uygunluk yenilikleri
+### <a name="VS_Update2">Visual Studio 2015 güncelleştirme 2 uygunluk yenilikleri</a>
 
 - **Ek uyarıları ve hataları verilen kısmi ifade SFINAE desteği sonucunda** Derleyici önceki sürümlerinden ifadelerinin içinde belirli bir türde değil ayrıştırma `decltype` tanımlayıcıları ifade için destek eksikliği nedeniyle SFINAE. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici şimdi bu deyimler ayrıştırır ve kısmi ifade SFINAE devam eden uygunluk geliştirmeleri nedeniyle desteği sahiptir. Sonuç olarak, derleyici uyarıları şimdi sorunları ve derleyici önceki sürümleri olmayan incelenemedi ifadelerinde hatalar bulundu.
 
@@ -1085,7 +1085,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
     };
    ```
 
-- `volatile`**üye değişkenleri önlemek örtük olarak tanımlanan oluşturucuları ve atama işleçleri** Derleyici önceki sürümlerinden izin olan bir sınıfı `volatile` varsayılan üye değişkenleri copy/move oluşturucular ve varsayılan Atama İşleçleri otomatik olarak oluşturulan kopyalama veya taşıma. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici artık otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerinin önleyen volatile üye değişkenleri Önemsiz olmayan yapım ve atama işleçleri sahip olan bir sınıfı göz önünde bulundurur.  Böyle bir sınıfın UNION (veya bir sınıf içinde anonim bir birleşimi) bir üyesi olduğunda, copy/move oluşturucuları ve kopya/taşıma atama işleçleri UNION (veya unonymous UNION içeren sınıf) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim UNION içeren sınıf) kopyalamak çalışırken bir hata derleyici sorunları derleyici hatası C2280 sonucunda ise.
+- `volatile` **üye değişkenleri önlemek örtük olarak tanımlanan oluşturucuları ve atama işleçleri** Derleyici önceki sürümlerinden izin olan bir sınıfı `volatile` varsayılan üye değişkenleri copy/move oluşturucular ve copy/move varsayılan Atama İşleçleri otomatik olarak oluşturulur. Bu eski davranış yanlış ve C++ Standart uygun değil. Derleyici artık otomatik olarak oluşturulan varsayılan uygulamaları bu işleçlerinin önleyen volatile üye değişkenleri Önemsiz olmayan yapım ve atama işleçleri sahip olan bir sınıfı göz önünde bulundurur.  Böyle bir sınıfın UNION (veya bir sınıf içinde anonim bir birleşimi) bir üyesi olduğunda, copy/move oluşturucuları ve kopya/taşıma atama işleçleri UNION (veya unonymous UNION içeren sınıf) örtük olarak silindi olarak tanımlanır. Oluşturmak veya bunları açıkça tanımlamadan UNION (veya anonim UNION içeren sınıf) kopyalamak çalışırken bir hata derleyici sorunları derleyici hatası C2280 sonucunda ise.
 
    ```Output
     error C2280: 'B::B(const B &)': attempting to reference a deleted function
@@ -1251,7 +1251,7 @@ Visual Studio 2015 ve daha sonra devam eden iyileştirmeler derleyici uyumluluğ
 
    Bu şekilde yazılan kod çözme işleç tanımları üstbilgi dosyası dışında ve karşılık gelen bir kaynak dosyasına taşınmasına gerektirebilir.
 
-### <a name="VS_Update3"></a>Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri
+### <a name="VS_Update3">Visual Studio 2015 güncelleştirme 3 uygunluk yenilikleri</a>
 
 - **Std::is_convertable otomatik atanmasını artık algılar** (standart kitaplığı) önceki sürümlerini `std::is_convertable` türü ayırdedici nitelik kopya kurucusu silindiğinde bir sınıf türünün otomatik atanmasını veya özel doğru algılamadı. Şimdi, `std::is_convertable<>::value` doğru bir şekilde ayarlamak `false` bir sınıf türü silindiğinde veya özel kopya Oluşturucu ile uygulandığında.
 
@@ -1545,16 +1545,16 @@ Böylece C ++ 11'e uyan ve Visual Studio 2013'te Visual C++'ta doğru derler Bu 
 ### <a name="profile-guided-optimization-pgo-enhancements"></a>Profil temelli iyileştirme (PGO) geliştirmeleri
 
 - PGO kullanarak iyileştirilmiş uygulamalar çalışma kümesi azalmasına gelen performans geliştirmeleri.
-- Yeni PGO için Windows mağazası uygulaması geliştirme.
+- Yeni PGO için Windows çalışma zamanı uygulama geliştirme.
 
-### <a name="windows-store-app-development-support"></a>Windows mağazası uygulaması geliştirme desteği
+### <a name="windows-runtime-app-development-support"></a>Windows çalışma zamanı uygulama geliştirme desteği
 
-- **Destek için Kutulu türleri içinde değerini yapılar.** Null olabilir alanlarını kullanarak değer türleri artık tanımlayabilirsiniz — Örneğin, IBox<int>^ int aksine Bu alanların bir değere sahip veya nullptr eşit olduğunu anlamına gelir.
+- **Destek için Kutulu türleri içinde değerini yapılar.** Null olabilir alanlarını kullanarak değer türleri artık tanımlayabilirsiniz — Örneğin, IBox\<int > ^ int aksine Bu alanların bir değere sahip veya nullptr eşit olduğunu anlamına gelir.
 - **Daha zengin özel durum bilgileri.** C + +/ CX yakalanmasını ve zengin özel durum bilgilerini yayılmasını uygulama ikili arabirimi (ABI); sağlayan yeni Windows hata modelini destekler Bu çağrı yığınları ve özel ileti dizeleri içerir.
 - **Nesne:: ToString() sanal sunulmuştur.** Kullanıcı tanımlı Windows çalışma zamanı ref türlerinde ToString artık geçersiz kılabilirsiniz.
 - **Kullanım dışı API'leri için destek.** Genel Windows çalışma zamanı API'leri artık kullanım dışı ve yapı uyarı olarak görünen özel bir ileti verilen işaretlenebilir ve Geçiş Kılavuzu sağlayabilir.
-- **Hata ayıklayıcı geliştirmeleri.** Yerel/JavaScript birlikte çalışma hata ayıklama, Windows çalışma zamanı özel durumu tanı ve zaman uyumsuz kod (Windows çalışma zamanı ve PPL) hata ayıklama desteği.
-  - Not: C++ özgü özellikler ve bu bölümde açıklanan geliştirmelerin yanı sıra diğer geliştirmeler Visual Studio'da de daha iyi Windows mağazası uygulamaları yazmanıza yardımcı olabilir.
+- Hata ayıklayıcı geliştirmeleri. Yerel/JavaScript birlikte çalışma hata ayıklama, Windows çalışma zamanı özel durumu tanı ve zaman uyumsuz kod (Windows çalışma zamanı ve PPL) hata ayıklama desteği.
+  - Not: C++ özgü özellikler ve bu bölümde açıklanan geliştirmelerin yanı sıra diğer geliştirmeler Visual Studio'da de daha iyi Windows çalışma zamanı uygulamaları yazmanıza yardımcı olabilir.
 
 ### <a name="diagnostics-enhancements"></a>Tanılama geliştirmeleri
 
@@ -1632,12 +1632,12 @@ func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
 func1(Element::Helium); // OK
    ```
 
-### <a name="windows-store-app-development-support"></a>Windows mağazası uygulaması geliştirme desteği
+### <a name="windows-runtime-app-development-support"></a>Windows çalışma zamanı uygulama geliştirme desteği
 
-- **Yerel XAML tabanlı UI modeli**. Windows mağazası uygulamaları için yeni yerel XAML tabanlı UI modelini kullanabilirsiniz.
-- **Visual C++ bileşen uzantıları**. Bu uzantılar, Windows mağazası uygulamalarını gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketim basitleştirin. C++ ve Visual C++ dil başvurusu kullanarak Yol Haritası Windows mağazası uygulamaları için daha fazla bilgi için bkz: (C + +/ CX)
-- **DirectX oyunlar**. Windows mağazası uygulamaları için yeni DirectX desteğini kullanarak kurmadığını oyunlar geliştirebilirsiniz.
-- **XAML/DirectX birlikte çalışabilirliği**. XAML ve DirectX şimdi kullanan Windows mağazası uygulamaları verimli bir şekilde onunla birlikte çalışamaz.
+- **Yerel XAML tabanlı UI modeli**. Windows çalışma zamanı uygulamaları için yeni yerel XAML tabanlı UI modelini kullanabilirsiniz.
+- **Visual C++ bileşen uzantıları**. Bu uzantılar Windows çalışma zamanı uygulamaları gerekli bir parçası olan Windows çalışma zamanı nesnelerinin tüketim basitleştirin. Daha fazla bilgi için bkz: [C++ kullanarak yol haritası için Windows çalışma zamanı uygulamaları](../windows/universal-windows-apps-cpp.md) ve [Visual C++ Dil Başvurusu (C + +/ CX)](../cppcx/visual-c-language-reference-c-cx.md)
+- **DirectX oyunlar**. Windows çalışma zamanı uygulamaları için yeni DirectX desteğini kullanarak kurmadığını oyunlar geliştirebilirsiniz.
+- **XAML/DirectX birlikte çalışabilirliği**. XAML ve DirectX şimdi kullanan Windows çalışma zamanı uygulamaları verimli bir şekilde onunla birlikte çalışamaz.
 - **Windows çalışma zamanı bileşeni DLL geliştirme**. Bileşen DLL geliştirme Windows çalışma zamanı ortamı Genişletilebilir hale getirir.
 
 ### <a name="compiler-and-linker"></a>Derleyici ve bağlayıcı
@@ -1730,21 +1730,21 @@ Kod kapsamı, çalışma zamanında dinamik olarak gereç ikili için güncelle�
 
 ### <a name="c-compiler-and-linker"></a>C++ derleyicisi ve bağlayıcı
 
-**Auto anahtar sözcüğü.** Auto anahtar sözcüğü yeni bir amacı vardır. Auto anahtar sözcüğü varsayılan anlamını türü değişken bildirimi başlatma ifadesinden anlaşılabilen bir değişken bildirmek için kullanın. Yeni veya auto anahtar sözcüğü önceki anlamını /Zc:auto derleyici seçeneği çağırır.
+**auto Keyword.** Auto anahtar sözcüğü yeni bir amacı vardır. Auto anahtar sözcüğü varsayılan anlamını türü değişken bildirimi başlatma ifadesinden anlaşılabilen bir değişken bildirmek için kullanın. Yeni veya auto anahtar sözcüğü önceki anlamını /Zc:auto derleyici seçeneği çağırır.
 
 **decltype tür belirteci.** Decltype tür belirteci belirtilen ifade türü döndürür. Decltype tür belirteci karmaşık ya da yalnızca derleyici için bilinen bir türe bildirmek için auto anahtar sözcüğü ile birlikte kullanın. Örneğin, bir şablon işlevi, dönüş türü, şablon bağımsız değişken türlerine bağlıdır bildirmek için birlikte kullanın. Ya da başka bir işlevi çağırır ve sonra çağrılan işlev dönüş türü döndüren bir şablon işlevi bildirin.
 
-**Lambda ifadeleri.** Lambda işlevleri işlev gövdesi ancak ad var. Lambda işlevleri işlev işaretçileri ve işlev nesneleri en iyi özelliklerini birleştirin.
+**Lambda Expressions.** Lambda işlevleri işlev gövdesi ancak ad var. Lambda işlevleri işlev işaretçileri ve işlev nesneleri en iyi özelliklerini birleştirin.
 Bir şablon işlevi parametresi bir işlev nesnesi yerine ya da bir değişken, türü bildirmek için auto anahtar sözcüğü ile birlikte bir lambda olduğu gibi tek başına bir lambda işlevini kullanın.
 
 **Rvalue başvuru.** Rvalue başvuru bildirimcisi (& &) bir rvalue başvuru bildirir. Kullandığınız bir rvalue başvuru sağlar, semantik ve daha verimli Oluşturucular, İşlevler ve şablonları yazmak için kusursuz iletme taşıyın.
 
-**static_assert bildirimi.** Bir static_assert bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine yazılım onaylama sınar. Onaylama başarısız olursa, derleme başarısız oluyor ve belirtilen hata iletisi görüntülenir.
+**static_assert Declaration.** Bir static_assert bildirimi derleme zamanında çalışma zamanında test diğer onaylama mekanizmaları aksine yazılım onaylama sınar. Onaylama başarısız olursa, derleme başarısız oluyor ve belirtilen hata iletisi görüntülenir.
 
 **nullptr ve __nullptr anahtar sözcükler.** Visual C++ derleyicisi nullptr anahtar sözcüğü yönetilen kod veya yerel kod ile kullanmanıza olanak sağlar. Nullptr anahtar sözcüğü bir nesneye bir nesne tanıtıcısı, iç işaretçi veya yerel işaretçi türü göstermiyor gösterir. / CLR seçeneği kullanmadığınızda/CLR derleyici seçeneği kullandığınızda, yönetilen kod ve yerel kodu olacak şekilde nullptr derleyici yorumlar.
 Microsoft'a özgü __nullptr anahtar sözcüğü nullptr ile aynı anlamı taşır, ancak yalnızca yerel koda uygular. / CLR derleyici seçeneği kullanarak yerel C/C++ kod derleme yaparsanız derleyici nullptr anahtar sözcüğü bir yerel veya yönetilen bir terim olup olmadığını belirleyemiyor. Derleyicinin temizleyin, amacınız yapmak için nullptr anahtar sözcüğü Yönetilen terim ve yerel terim belirtmek için __nullptr belirtmek için kullanın.
 
-**/ ZC: trigraphs derleyici seçeneği.** Varsayılan olarak, desteği trigrafları devre dışı. / ZC: trigraphs derleyici seçeneği trigrafları desteğini etkinleştirmek için kullanın.
+**/Zc:trigraphs Compiler Option.** Varsayılan olarak, desteği trigrafları devre dışı. / ZC: trigraphs derleyici seçeneği trigrafları desteğini etkinleştirmek için kullanın.
 İki ardışık soru benzersiz üçüncü bir karakterin ardından işareti (?), bir trigrafı oluşur. Derleyici bir trigrafı karşılık gelen bir noktalama karakteri ile değiştirir. Örneğin, derleyici değiştirir?? # (sayı işareti) karakteri ile trigrafı =. Trigrafları belirli noktalama karakterleri içermeyen bir karakter kümesi kullanan C kaynak dosyalarında kullanın.
 
 **Yeni profil temelli iyileştirme seçeneği.** PogoSafeMode uygulamanızı en iyi duruma getirdiğinizde güvenli mod veya hızlı mod kullanılıp kullanılmayacağını belirlemenize olanak sağlayan yeni bir profil temelli iyileştirme seçenektir. İş parçacığı güvenli mod, ancak hızlı mod yavaştır. Hızlı mod varsayılan davranıştır.
@@ -1941,7 +1941,7 @@ Derleyici önemli değişiklikler bu sürümde sahiptir.
 - ' 64-bit yerel ve çapraz derleyicileri.
 - / analyze (Kurumsal kod çözümleme) derleyici seçeneği eklenmiştir.
 - / bigobj derleyici seçeneği eklenmiştir.
-- / CLR: pure, / CLR: safe ve /clr:oldSyntax eklenmiştir.
+- /clr:pure, /clr:safe, and /clr:oldSyntax have been added. (Daha sonra Visual Studio 2015'te kullanım dışı.)
 - Derleyici seçenekleri kullanım: Bu sürümde; birçok derleyici seçenekleri kullanım dışı bırakıldı kullanım dışı derleyici seçenekleri daha fazla bilgi için bkz.
 - / CLR kodda çift dönüştürme azalır; Çift dönüştürme (C++) daha fazla bilgi için bkz.
 - /EH (özel durum işleme modeli) veya /EHs artık bir throw dışında bir şey ile gerçekleştirilen bir özel durum yakalamak için kullanılabilir; /EHa kullanın.
@@ -2170,18 +2170,18 @@ Derleyici önemli değişiklikler bu sürümde sahiptir.
 
 ### <a name="attributes"></a>Öznitelikler
 
-- `implements`öznitelik şimdi belgelenmiştir.
+- `implements` öznitelik şimdi belgelenmiştir.
 
 ### <a name="linker-features"></a>Bağlayıcı özellikleri
 
 Aşağıdaki bağlayıcı anahtarlarını eklenmiştir:
 
-- / ASSEMBLYDEBUG
-- / ASSEMBLYLINKRESOURCE
+- /ASSEMBLYDEBUG
+- /ASSEMBLYLINKRESOURCE
 - DELAYSIGN
 - / KEYFILE
 - / KEYCONTAINER
-- / SAFESEH
+- /SAFESEH
 
 ### <a name="masm"></a>MASM
 

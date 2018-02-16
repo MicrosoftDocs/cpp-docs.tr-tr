@@ -4,33 +4,35 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - schema rowsets
 - OLE DB consumer templates, schema rowsets
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b981af06f48834eef59103b872b8b07e75cd0065
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 39b969349ee09e5882677b701030ef9c0792522a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 Şema satır kümeleri kendi yapılarını veya şema bilmeden bir veri deposu hakkında bilgi edinmek tüketicilere izin verir. Örneğin, bir veri deposu olurdu şekilde okuma tarafından şemanın bilgi sağlamak için hiçbir şekilde bir kullanıcı tarafından tanımlanan hiyerarşide düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları tüketici erişimcileri oluşturmak için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak izin vermek üzere üzerinde yöntemlerini sağlayıcının oturum nesnesi gösterir [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıf **IDBSchemaRowset**.  
   
- `IDBSchemaRowsetImpl`Aşağıdaki yöntemlerden destekler:  
+ `IDBSchemaRowsetImpl` Aşağıdaki yöntemlerden destekler:  
   
 -   [CheckRestrictions](../../data/oledb/idbschemarowsetimpl-checkrestrictions.md) bir şema satır kümesi karşı kısıtlamaların geçerliliğini denetler.  
   
@@ -47,23 +49,23 @@ ms.lasthandoff: 12/21/2017
   
 -   **C** *kısaad* **SessionTRSchemaRowset**  
   
--   **C** *kısaad* **SessionColSchemaRowset**  
+-   **C** *ShortName* **SessionColSchemaRowset**  
   
--   **C** *kısaad* **SessionPTSchemaRowset**  
+-   **C** *ShortName* **SessionPTSchemaRowset**  
   
  Bu sınıfları, şema bilgileri tüketici isteklere yanıt verir; OLE DB belirtiminin bu üç şema satır kümeleri desteklenmesi gerektirdiğini unutmayın:  
   
 -   **C** *kısaad* **SessionTRSchemaRowset** tablo bilgilerine yönelik istekleri işleyen ( `DBSCHEMA_TABLES` şeması satır kümesi).  
   
--   **C** *kısaad* **SessionColSchemaRowset** sütun bilgisi isteklerini işleme ( **DBSCHEMA_COLUMNS** şeması satır kümesi). Sihirbazın bu sınıfların DOS sağlayıcı için şema bilgileri döndürmek için örnek uygulamaları sağlar.  
+-   **C** *ShortName* **SessionColSchemaRowset** handles requests for column information (the **DBSCHEMA_COLUMNS** schema rowset). Sihirbazın bu sınıfların DOS sağlayıcı için şema bilgileri döndürmek için örnek uygulamaları sağlar.  
   
--   **C** *kısaad* **SessionPTSchemaRowset** sağlayıcı türü hakkındaki şema bilgilerine yönelik istekleri işleyen ( **DBSCHEMA_PROVIDER_TYPES** Şema satır kümesi). Sihirbaz tarafından sağlanan varsayılan uygulama döndürür `S_OK`.  
+-   **C** *ShortName* **SessionPTSchemaRowset** handles requests for schema information about the provider type (the **DBSCHEMA_PROVIDER_TYPES** schema rowset). Sihirbaz tarafından sağlanan varsayılan uygulama döndürür `S_OK`.  
   
  Sağlayıcınıza uygun şema bilgileri işlemek için bu sınıfların özelleştirebilirsiniz:  
   
--   İçinde **C***kısaad***SessionTRSchemaRowset**, katalog, tablo ve açıklama alanları doldurun gerekir (**trData.m_szType**, **trData.m_szTable**, ve **trData.m_szDesc**). Sihirbaz tarafından oluşturulan örnek, yalnızca bir satır (tablo) kullanır. Diğer sağlayıcıları birden fazla tablo döndürebilir.  
+-   İçinde **C***kısaad***SessionTRSchemaRowset**, katalog, tablo ve açıklama alanları doldurun gerekir (**trData.m_szType**, **trData.m_szTable** , ve **trData.m_szDesc**). Sihirbaz tarafından oluşturulan örnek, yalnızca bir satır (tablo) kullanır. Diğer sağlayıcıları birden fazla tablo döndürebilir.  
   
--   İçinde **C***kısaad***SessionColSchemaRowset**, tablo olarak adını geçirmek bir **DBID**.  
+-   In **C***ShortName***SessionColSchemaRowset**, you pass the name of the table as a **DBID**.  
   
 ## <a name="setting-restrictions"></a>Kısıtlamalarını ayarlama  
  Şema satır kümesi desteği de önemli bir kavram kullanarak bunu kısıtlamaları ayarı `SetRestrictions`. Kısıtlamalar yalnızca eşleşen satırları getirmeye tüketicileri izin ver (örneğin, tüm sütunlara "MyTable" tablosunda Bul). Kısıtlamaları isteğe bağlıdır ve durumda hiçbirinin desteklenir (varsayılan), tüm veriler her zaman döndürülür. Kısıtlamaları destekleyen bir sağlayıcı örneği için bkz: [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek.  
@@ -216,7 +218,9 @@ if (cRestrictions >=4 && rgRestrictions[3].vt != VT_EMPTY)
 ```  
 // Bring over the data:  
 wcspy_s(trData.m_szType, OLESTR("TABLE"), 5);  
+
 wcspy_s(trData.m_szDesc, OLESTR("The Directory Table"), 19);  
+
 wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());  
 ```  
   

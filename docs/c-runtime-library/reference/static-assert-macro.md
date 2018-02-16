@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -19,20 +20,24 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: _STATIC_ASSERT
-dev_langs: C++
-helpviewer_keywords: _STATIC_ASSERT macro
+f1_keywords:
+- _STATIC_ASSERT
+dev_langs:
+- C++
+helpviewer_keywords:
+- _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ec3d90f9bfcf51b3a5f48baea1c6e3cf06e7d72f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f62f2f2f5a0d78a0b77cb21d869be209d9293bd0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="staticassert-macro"></a>_STATIC_ASSERT Makrosu
 Derleme zamanında bir ifade değerlendirme ve sonuç olduğunda bir hata oluştur `FALSE`.  
@@ -77,7 +82,7 @@ int main()
   
 |Makrosu|Gerekli başlık|  
 |-----------|---------------------|  
-|`_STATIC_ASSERT`|\<crtdbg.h >|  
+|`_STATIC_ASSERT`|\<crtdbg.h>|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   

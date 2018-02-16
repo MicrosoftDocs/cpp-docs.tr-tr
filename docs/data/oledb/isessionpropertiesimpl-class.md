@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: ISessionPropertiesImpl
-dev_langs: C++
-helpviewer_keywords: ISessionPropertiesImpl class
+f1_keywords:
+- ISessionPropertiesImpl
+dev_langs:
+- C++
+helpviewer_keywords:
+- ISessionPropertiesImpl class
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9ff8eda4d593ff0c6064313a7be243ec498b15c4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fafd303e6b03d5a78b11d9c6deb95233b082fd28
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl Sınıfı
 Bir uygulamasını sağlar [ISessionProperties](https://msdn.microsoft.com/en-us/library/ms713721.aspx) arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE ISessionPropertiesImpl :  
    public ISessionProperties,    

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,33 +13,33 @@ f1_keywords:
 - ATL.CDataConnection.CDataConnection
 - CDataConnection::CDataConnection
 - ATL::CDataConnection::CDataConnection
-dev_langs: C++
-helpviewer_keywords: CDataConnection class, constructor
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDataConnection class, constructor
 ms.assetid: ac25c9a0-44d3-4083-b13f-76c07772e12d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fd2deb3978ef3c01d5d70297599be54aabb90cb6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d0437f0280578f9e3e2b652e9d4ed01c59ba3ab6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdataconnectioncdataconnection"></a>CDataConnection::CDataConnection
 Oluşturur ve başlatır bir `CDataConnection` nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
       CDataConnection();   
-CDataConnection(  
-   const CDataConnection &ds  
-);  
+
+CDataConnection(const CDataConnection &ds);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

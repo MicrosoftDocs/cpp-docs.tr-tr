@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - timespec_get
 - _timespec32_get
@@ -36,22 +36,24 @@ f1_keywords:
 - timespec
 - _timespec32
 - _timespec64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - timespec_get function
 - _timespec32_get function
 - _timespec64_get function
 ms.assetid: ed757258-b4f2-4c1d-a91b-22ea6ffce4ab
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 681f9d125a7f45dae2a8e604df655facdd246067
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 13b85eef72ed1a2180af1b41bf93eefe499967bd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="timespecget-timespec32get-timespec64get"></a>timespec_get, _timespec32_get, _timespec64_get
 Aralığı geçerli Takvim zaman için ilk bağımsız değişken gösterdiği kümeleri temel belirtilen süreye dayalı.  
@@ -87,7 +89,7 @@ int _timespec64_get(
 ## <a name="remarks"></a>Açıklamalar  
  `timespec_get` İşlevleri gösterdiği yapısı geçerli saati kümesinde `time_spec` bağımsız değişkeni. Bu yapı'nin tüm sürümleri iki üyelere sahip `tv_sec` ve `tv_nsec`. `tv_sec` Değeri saniye tam sayıya ayarlanır ve `tv_nsec` nanosaniye tam sayı sayıya yuvarlanan sistem saati, çözümleme için tarafından belirtilen dönem başladığından bu yana `base`.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Bu işlevler yalnızca Destek `TIME_UTC` olarak `base` değeri. Bu ayarlar `time_spec` değerine ve Dönem başlangıç olduğundan, gece yarısı, 1 Ocak 1970 Eşgüdümlü Evrensel Saat (UTC) nanosaniye saniye sayısı. İçinde bir `struct _timespec32`, `tv_sec` olan bir `__time32_t` değeri. İçinde bir `struct _timespec64`, `tv_sec` olan bir `__time64_t` değeri. İçinde bir `struct timespec`, `tv_sec` olan bir `time_t` 32 bit veya 64 bit uzunluğunda önişlemci makrosu _USE_32BIT_TIME_T olup tanımlanan bağlı olarak türü. `timespec_get` İşlevidir çağıran bir satır içi işlev `_timespec32_get` _USE_32BIT_TIME_T tanımlanmışsa; Aksi takdirde çağırır `_timespec64_get`.  
   
@@ -110,5 +112,5 @@ int _timespec64_get(
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)

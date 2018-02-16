@@ -4,41 +4,43 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IRowsetImpl
-dev_langs: C++
-helpviewer_keywords: IRowsetImpl class
+f1_keywords:
+- IRowsetImpl
+dev_langs:
+- C++
+helpviewer_keywords:
+- IRowsetImpl class
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7b4d8dd6f6dced2b4847939b0d7ed560f1d59479
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 54b9fd321c4240e9ba02cc63d809a492ffa4d439
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl Sınıfı
 Bir uygulamasını sağlar `IRowset` arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <  
    class T,   
    class RowsetInterface,  
    class RowClass = CSimpleRow,  
    class MapClass = CAtlMap <  
       RowClass::KeyType,  
-      RowClass*   
-   >  
->  
+      RowClass*>>  
 class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface  
 ```  
   
@@ -66,7 +68,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 |[GetData](../../data/oledb/irowsetimpl-getdata.md)|Satır satır kümesinin kopyadan verileri alır.|  
 |[GetDBStatus](../../data/oledb/irowsetimpl-getdbstatus.md)|Belirtilen alan durumunu döndürür.|  
 |[GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md)|Satırları ardışık olarak önceki konumdan hatırlamak getirir.|  
-|[Irowsetımpl](../../data/oledb/irowsetimpl-class.md)|Oluşturucu. Doğrudan kullanıcı tarafından adı değil.|  
+|[IRowsetImpl](../../data/oledb/irowsetimpl-class.md)|Oluşturucu. Doğrudan kullanıcı tarafından adı değil.|  
 |[RefRows](../../data/oledb/irowsetimpl-refrows.md)|Tarafından çağrılır [AddRefRows](../../data/oledb/irowsetimpl-addrefrows.md) ve [ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md). Doğrudan kullanıcı tarafından adı değil.|  
 |[ReleaseRows](../../data/oledb/irowsetimpl-releaserows.md)|Satır serbest bırakır.|  
 |[RestartPosition](../../data/oledb/irowsetimpl-restartposition.md)|Sonraki getirme konumunu ilk konumuna yeniden konumlandırır; diğer bir deyişle, satır ilk kez yüklendiğinde konumuna oluşturulur.|  

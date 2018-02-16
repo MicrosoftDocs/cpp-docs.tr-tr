@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::DisconnectedException
 - VCCORLIB/Platform::DisconnectedException::DisconnectedException
-dev_langs: C++
-helpviewer_keywords: Platform::DisconnectedException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::DisconnectedException
 ms.assetid: c25e0d64-5bff-4c21-88e5-c4ec2776fa7f
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e9ce20c019c022ed62c2be888617b387315731b8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 175d132f2c6734f5f8328baee8cbdc4ea7e1b4c3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformdisconnectedexception-class"></a>Platform::DisconnectedException sınıfı
 Bir COM proxy nesnesi artık mevcut bir COM sunucusu başvuru girişiminde bulunduğunda oluşur  

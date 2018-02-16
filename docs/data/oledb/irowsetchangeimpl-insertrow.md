@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,35 +14,34 @@ f1_keywords:
 - IRowsetChangeImpl.InsertRow
 - ATL::IRowsetChangeImpl::InsertRow
 - IRowsetChangeImpl::InsertRow
-dev_langs: C++
-helpviewer_keywords: InsertRow method
+dev_langs:
+- C++
+helpviewer_keywords:
+- InsertRow method
 ms.assetid: 93027be3-921e-438e-a19a-6e5aadb813eb
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f434468580d37fd9a05b659b59d320199f366c84
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4700e5d3bdc46c3e62022fe5838c084f043ba1a3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetchangeimplinsertrow"></a>IRowsetChangeImpl::InsertRow
 Oluşturur ve yeni bir satır kümesinde başlatır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      STDMETHOD ( InsertRow )(  
-   HCHAPTER /* hReserved */,  
+```cpp
+      STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,  
    HACCESSOR hAccessor,  
    void* pData,  
-   HROW* phRow   
-);  
+   HROW* phRow);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

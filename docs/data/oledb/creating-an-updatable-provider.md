@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - OLE DB providers, updatable
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a57a54ac330e191961715440d652b9f084006b29
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d65bce2b262b7582f9194eb8047d71ce06f3ca16
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz sağlayıcılarını destekler (yazma) veri deposu. Bu konuda, OLE DB Şablonları kullanarak güncelleştirilebilir sağlayıcı oluşturma açıklanmaktadır.  
@@ -36,7 +38,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
 > [!NOTE]
 >  UpdatePV güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv olarak ancak güncelleştirilebilir desteği ile aynıdır.  
   
-##  <a name="vchowmakingprovidersupdatable"></a>Sağlayıcıları güncelleştirilebilir hale getirme  
+##  <a name="vchowmakingprovidersupdatable"></a> Sağlayıcıları güncelleştirilebilir hale getirme  
  Bir sağlayıcı güncelleştirilebilir hale getirme anahtarını sağlayıcınız veri deposu ve bu işlemleri gerçekleştirmek için sağlayıcı istediğiniz gerçekleştirmek istediğiniz hangi işlemlerin anlamaktır. Özellikle büyük veri deposu güncelleştirmeleri hemen Bitti veya ertelenmiş olup sorundur (toplu) bir güncelleştirme komutu verilene kadar.  
   
  İlk devralınacak karar vermeniz gerekir `IRowsetChangeImpl` veya `IRowsetUpdateImpl` satır kümesi sınıfınızda. Bunlardan hangilerini uygulamak istediğinize bağlı olarak, üç yöntem işlevselliğini etkilenecek: `SetData`, **InsertRows**, ve `DeleteRows`.  
@@ -146,7 +148,7 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
   
      Örneğin özellikleri nasıl ayarlanır özellik eşlemesi bkz **CUpdateCommand** (içinde satır) içinde [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f).  
   
-##  <a name="vchowwritingtothedatasource"></a>Veri kaynağına yazma  
+##  <a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma  
  Veri kaynağından okumak için çağırın **yürütme** işlevi. Veri kaynağına yazmak için arama `FlushData` işlevi. (Genel olarak, bir tablo veya dizini diske yaptığınız değişiklikleri kaydetmek için yollar temizlenir.)  
   
 ```  
@@ -217,7 +219,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  Aşağıdaki örnekte gösterildiği nasıl `FlushData` uygulanan `RUpdateRowset` sınıfını [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örneği (örnek kodda satır bakın):  
   
-```  
+```cpp
 ///////////////////////////////////////////////////////////////////////////  
 // class RUpdateRowset (in rowset.h)  
 ...  
@@ -308,7 +310,7 @@ HRESULT FlushData(HROW, HACCESSOR)
  Kodda bakabilir [UpdatePV](http://msdn.microsoft.com/en-us/c8bed873-223c-4a7d-af55-f90138c6f38f) örnek; gösterilmektedir sağlayıcı nasıl işleyebilir **NULL** veri. Sağlayıcı UpdatePV öğesinde depolar **NULL** veri deposunda dizesi "NULL" yazarak veri. Ne zaman okur **NULL** verisini veri deposuna, bu dizeyi görür ve arabellek boşaltır oluşturma bir **NULL** dize. Ayrıca, bir geçersiz kılma sahip `IRowsetImpl::GetDBStatus` hangi döndürür, **DBSTATUS_S_ISNULL** , veri değeri boş ise.  
   
 ### <a name="marking-nullable-columns"></a>Boş değer atanabilir sütunları işaretleme  
- Şema satır kümeleri de uygularsanız (bkz `IDBSchemaRowsetImpl`), uygulamanızı belirtmeniz gerekir **DBSCHEMA_COLUMNS** satır kümesi (genellikle sağlayıcınız tarafından olarak işaretlenmiş **C***xxx* **SchemaColSchemaRowset**) sütunu null olabilir.  
+ Şema satır kümeleri de uygularsanız (bkz `IDBSchemaRowsetImpl`), uygulamanızı belirtmeniz gerekir **DBSCHEMA_COLUMNS** satır kümesi (genellikle sağlayıcınız tarafından olarak işaretlenmiş **C***xxx*** SchemaColSchemaRowset**) sütunu null olabilir.  
   
  Ayrıca tüm boş değer atanabilir sütun içermesi belirtmek zorunda **DBCOLUMNFLAGS_ISNULLABLE** sürümünüz değerinde `GetColumnInfo`.  
   
@@ -316,7 +318,7 @@ HRESULT FlushData(HROW, HACCESSOR)
   
  Aşağıdaki örnekte gösterildiği nasıl **CommonGetColInfo** işlevi uygulandığına **CUpdateCommand** (öğesinde bakın) UpdatePV. Sütunları bu şeklinize Not **DBCOLUMNFLAGS_ISNULLABLE** boş değer atanabilir sütunlar için.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////////  
 // CUpdateCommand (in UpProvRS.cpp)  
   
@@ -412,7 +414,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* pdbStatus, CSimpleRow* pRow,
 ```  
   
 ### <a name="column-flags"></a>Sütun bayrakları  
- Varsayılan değerler sütunlar üzerinde destekliyorsa, meta verileri kullanarak ayarlamanız gerekir  **\<**  *sağlayıcı sınıfı***> SchemaRowset** sınıfı. Ayarlama *m_bColumnHasDefault* = `VARIANT_TRUE`.  
+ Varsayılan değerler sütunlar üzerinde destekliyorsa, meta verileri kullanarak ayarlamanız gerekir  **\< ***sağlayıcı sınıfı***> SchemaRowset** sınıfı. Ayarlama *m_bColumnHasDefault* = `VARIANT_TRUE`.  
   
  Kullanılarak belirtilen sütun bayraklarını ayarlayın sorumluluğu de **DBCOLUMNFLAGS** numaralandırılmış türü. Sütun bayrakları sütun özelliklerini açıklar.  
   
@@ -428,6 +430,7 @@ trData[0].m_nNumericPrecision = 10;
 trData[0].m_ulColumnFlags = DBCOLUMNFLAGS_WRITE |  
                             DBCOLUMNFLAGS_ISFIXEDLENGTH;  
 lstrcpyW(trData[0].m_szColumnDefault, OLESTR("0"));  
+
 m_rgRowData.Add(trData[0]);  
 ```  
   

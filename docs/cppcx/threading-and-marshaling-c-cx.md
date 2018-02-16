@@ -7,23 +7,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: C4451
+ms.topic: language-reference
+f1_keywords:
+- C4451
 helpviewer_keywords:
 - threading issues, C++/CX
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 74a00ece1e1853346b88c0340b32911618a9ff24
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0d62da6fafccecc8099e3f9611946d1c89a40389
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
 Durumları büyük çoğunluğu herhangi bir iş parçacığından standart C++ nesneleri gibi Windows çalışma zamanı sınıfların örneklerini erişilebilir. Bu tür sınıflar olarak "Çevik" denir. Ancak, Windows ile birlikte Windows çalışma zamanı sınıfları az sayıda Çevik olmayan ve daha fazla standart C++ nesneleri daha COM nesneleri gibi kullanılması gerekir. Çevik olmayan sınıflarını kullanmak için bir COM uzman olması gerekmez, ancak sınıfın iş parçacığı modelini ve hazırlama davranışını dikkate gerekir. Bu makale, arka plan ve Çevik olmayan sınıfının bir örneğini kullanmak gereken bu nadir senaryoları için yönergeler sağlar.  
@@ -31,9 +33,9 @@ Durumları büyük çoğunluğu herhangi bir iş parçacığından standart C++ 
 ## <a name="threading-model-and-marshaling-behavior"></a>Modeli iş parçacığı oluşturma ve hazırlama davranışı  
  Windows çalışma zamanı sınıfı eşzamanlı iş parçacığı erişim uygulanmış iki öznitelik belirtildiği gibi çeşitli şekillerde destekleyebilirsiniz:  
   
--   `ThreadingModel`öznitelik değerlerden biri olabilir — STA, MTA, ya da her ikisini tarafından tanımlanan `ThreadingModel` numaralandırması.  
+-   `ThreadingModel` öznitelik değerlerden biri olabilir — STA, MTA, ya da her ikisini tarafından tanımlanan `ThreadingModel` numaralandırması.  
   
--   `MarshallingBehavior`öznitelik değerlerden biri olabilir: None, Çevik veya tarafından tanımlanan standart `MarshallingType` numaralandırması.  
+-   `MarshallingBehavior` öznitelik değerlerden biri olabilir: None, Çevik veya tarafından tanımlanan standart `MarshallingType` numaralandırması.  
   
  `ThreadingModel` Özniteliği, sınıf etkinleştirildiğinde yüklendiği belirtir: yalnızca bir kullanıcı arabirimi iş parçacığı (STA) bağlamında, yalnızca bir arka plan iş parçacığı (MTA) içerik veya iş parçacığının bağlamında nesne (her ikisi de) oluşturur. `MarshallingBehavior` Öznitelik değerleri başvurmak nesne çeşitli iş parçacığı bağlamlarda biçimini; çoğu durumda, bu değerleri ayrıntılı anlamak zorunda değilsiniz.  Windows API tarafından sağlanan sınıflarını yaklaşık yüzde 90'ından sahip `ThreadingModel`her ikisi de = ve `MarshallingType`Çevik =. Bu, alt düzey iş parçacığı ayrıntıları saydam ve verimli bir şekilde işleyebileceğini anlamına gelir.   Kullandığınızda `ref new` "Çevik" bir sınıf oluşturmak için yöntemleri üzerinde ana uygulama iş parçacığı ya da bir veya daha fazla çalışan iş parçacığı çağırabilirsiniz.  Diğer bir deyişle, Çevik sınıfı kullanabilirsiniz — olup, Windows veya bir üçüncü taraf tarafından sağlanan olsun — her yerden, kodunuzda. Sınıfın iş parçacığı modeli veya hazırlama davranışı ile endişelenmeniz gerekmez.  
   

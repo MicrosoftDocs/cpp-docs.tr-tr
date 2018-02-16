@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wcscmp
 - _mbscmp
@@ -32,7 +33,8 @@ f1_keywords:
 - strcmp
 - _tcscmp
 - _ftcscmp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tcscmp function
 - strcmp function
@@ -45,22 +47,23 @@ helpviewer_keywords:
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f133027b2f1e7dfef494baeed9df6e9e56447889
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5ced77db630f0cffede96192dbb9fc69ec0061db
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strcmp-wcscmp-mbscmp"></a>strcmp, wcscmp, _mbscmp
 Dizeleri karşılaştırın.  
   
 > [!IMPORTANT]
->  `_mbscmp`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbscmp`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -88,14 +91,14 @@ int _mbscmp(
   
 |Değer|Dize2 Dize1 ilişkisi|  
 |-----------|----------------------------------------|  
-|< 0|`string1`olan küçüktür`string2`|  
-|0|`string1`aynıdır`string2`|  
-|> 0|`string1`değerinden büyük`string2`|  
+|< 0|`string1` Olan küçüktür `string2`|  
+|0|`string1` aynıdır `string2`|  
+|> 0|`string1` Değerinden büyük `string2`|  
   
  Parametre doğrulama hata `_mbscmp` döndürür `_NLSCMPERROR`, içinde tanımlanan \<string.h > ve \<mbstring.h >.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strcmp` İşlevi gerçekleştiren bir sıra karşılaştırması `string1` ve `string2` ve ilişkilerini gösteren bir değer döndürür. `wcscmp`ve `_mbscmp` , sırasıyla, joker karakter ve çok baytlı karakter sürümleridir `strcmp`. `_mbscmp`çok baytlı karakter sıralarının geçerli birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, varsa `string1` veya `string2` null işaretçi `_mbscmp` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbscmp` döndürür `_NLSCMPERROR` ve ayarlar `errno` için `EINVAL`. `strcmp`ve `wcscmp` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
+ `strcmp` İşlevi gerçekleştiren bir sıra karşılaştırması `string1` ve `string2` ve ilişkilerini gösteren bir değer döndürür. `wcscmp` ve `_mbscmp` , sırasıyla, joker karakter ve çok baytlı karakter sürümleridir `strcmp`. `_mbscmp` çok baytlı karakter sıralarının geçerli birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, varsa `string1` veya `string2` null işaretçi `_mbscmp` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbscmp` döndürür `_NLSCMPERROR` ve ayarlar `errno` için `EINVAL`. `strcmp` ve `wcscmp` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -103,7 +106,7 @@ int _mbscmp(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tcscmp`|`strcmp`|`_mbscmp`|`wcscmp`|  
   
- `strcmp` İşlevler farklı `strcoll` , işlevlerde `strcmp` karşılaştırmaları sıralı ve yerel ayar tarafından etkilenmez. `strcoll`kullanarak dizeleri lexicographically karşılaştırır `LC_COLLATE` geçerli yerel ayar kategorisi. Hakkında daha fazla bilgi için `LC_COLLATE` kategorisi, bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).  
+ `strcmp` İşlevler farklı `strcoll` , işlevlerde `strcmp` karşılaştırmaları sıralı ve yerel ayar tarafından etkilenmez. `strcoll` kullanarak dizeleri lexicographically karşılaştırır `LC_COLLATE` geçerli yerel ayar kategorisi. Hakkında daha fazla bilgi için `LC_COLLATE` kategorisi, bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md).  
   
  "C" yerel karakter kümesi (ASCII karakter kümesi) karakter sırasını lexicographic karakter sırası ile aynıdır. Ancak, diğer yerlerde karakter kümesinden karakter sırasını lexicographic siparişte farklı olabilir. Örneğin, Avrupa belirli yerlerde karakter 'a' (değer 0x61) karakterinin önünde 'ä' (değer 0xE4) karakter kümesi, ancak 'ä' gelen önünde karakter karakter gelir 'bir' lexicographically.  
   

@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::NullReferenceException
 - VCCORLIB/Platform::NullReferenceException::NullReferenceException
-dev_langs: C++
-helpviewer_keywords: Platform::NullReferenceException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::NullReferenceException
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4a44d0f79f0584fab38a1a4c095b1f032c1baeb7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e79b6e14408cc2a014e761c0030edb21cc942a0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformnullreferenceexception-class"></a>Platform::NullReferenceException sınıfı
 Null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.  

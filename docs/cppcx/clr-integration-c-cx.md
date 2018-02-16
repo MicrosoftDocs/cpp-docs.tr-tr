@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 76e213cf-2f3d-4181-b35b-9fd25d5b307c
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f9851a7aa0d1dad84a37504b479c551ffa63bcf9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d832e3856d7df444663e0b99b759e2ea620b27ed
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="clr-integration-ccx"></a>CLR tümleştirme (C + +/ CX)
 Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) ortak dil çalışma zamanı tabanlı diller. Bu makalede, başka bir dil için bir dil nasıl birkaç türü harita anlatılmaktadır. Örneğin, CLR Windows.Foundation.IVector eşlendiğini System.Collections.IList, Windows.Foundation.IMap System.Collections.IDictionary ve benzeri. Benzer şekilde, C + +/ CX özel türleri Platform::Delegate ve Platform::String gibi eşler.  
@@ -43,7 +44,7 @@ Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) 
   
 -   Renk  
   
- **Windows::UI::XAML**  
+ **Windows::UI::Xaml**  
   
 -   CornerRadius  
   
@@ -53,21 +54,21 @@ Bazı Windows çalışma zamanı türleri özel işleme C + alma +/ CX ve (CLR) 
   
 -   Kalınlığı  
   
- **Windows::UI::XAML::Interop**  
+ **Windows::UI::Xaml::Interop**  
   
 1.  TypeName  
   
- **Windows::UI::XAML::Media**  
+ **Windows::UI::Xaml::Media**  
   
 -   Matris  
   
- **Windows::UI::XAML::Media::Animation**  
+ **Windows::UI::Xaml::Media::Animation**  
   
 -   KeyTime  
   
 -   RepeatBehavior  
   
- **Windows::UI::XAML::Media::Media3D**  
+ **Windows::UI::Xaml::Media::Media3D**  
   
 -   Matrix3D  
   

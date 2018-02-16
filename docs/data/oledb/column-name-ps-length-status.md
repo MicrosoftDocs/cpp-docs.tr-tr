@@ -4,45 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COLUMN_NAME_PS_LENGTH_STATUS
-dev_langs: C++
-helpviewer_keywords: COLUMN_NAME_PS_LENGTH_STATUS macro
+f1_keywords:
+- COLUMN_NAME_PS_LENGTH_STATUS
+dev_langs:
+- C++
+helpviewer_keywords:
+- COLUMN_NAME_PS_LENGTH_STATUS macro
 ms.assetid: a1a2e2ca-f0ae-4896-8aa3-67a96c270b05
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d6d0d34d473810f58da16e0ed59843ba99f85115
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fbaad78bfcbd33d0f4c4c99f8848fc6c6bab01be
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="columnnamepslengthstatus"></a>COLUMN_NAME_PS_LENGTH_STATUS
 Satır kümesi bağlamada satır kümesindeki belirli sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makrosu duyarlık, Ölçek, sütun uzunluğu ve sütun durumunu da alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-COLUMN_NAME_PS_LENGTH_STATUS(  
-pszName  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length  
-,   
-status )  
+```cpp
+COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -61,7 +53,7 @@ status )
  *uzunluğu*  
  [in] Sütun uzunluğu bağlanması için değişken.  
   
- *durumu*  
+ *Durumu*  
  [in] Sütun durumuna bağlı olmasını değişkeni.  
   
 ## <a name="remarks"></a>Açıklamalar  

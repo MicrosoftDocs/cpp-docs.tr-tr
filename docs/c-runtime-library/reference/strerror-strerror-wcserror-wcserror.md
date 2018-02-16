@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strerror
 - _strerror
@@ -35,7 +36,8 @@ f1_keywords:
 - _tcserror
 - _wcserror
 - tcserror
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strerror function
 - _strerror function
@@ -50,16 +52,17 @@ helpviewer_keywords:
 - __wcserror function
 - error messages, getting
 ms.assetid: 27b72255-f627-43c0-8836-bcda8b003e14
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a268830c14025f3a9581a4ad28481a54fa9f4f71
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 85fee7ce2b3c4264e8593082640489aae01cb9e0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strerror-strerror-wcserror-wcserror"></a>strerror, _strerror, _wcserror, __wcserror
 Bir sistem hata ileti dizesi alır (`strerror`, `_wcserror`) veya bir kullanıcı tarafından sağlanan hata ileti dizesi biçimleri (`_strerror`, `__wcserror`). Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md).  
@@ -103,7 +106,7 @@ if (( _access( "datafile",2 )) == -1 )
   
  Gerçek hata numarası `_strerror` değişkeninde depolanan [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Doğru sonuçlar üretmek için çağrı `_strerror` hemen bir hata ile kitaplığı yordamı döndükten sonra. Aksi takdirde, sonraki çağrılar `strerror` veya `_strerror` kılabilirsiniz `errno` değeri.  
   
- `_wcserror`ve `__wcserror` joker karakter sürümleri `strerror` ve `_strerror`sırasıyla.  
+ `_wcserror` ve `__wcserror` joker karakter sürümleri `strerror` ve `_strerror`sırasıyla.  
   
  `_strerror`, `_wcserror`, ve `__wcserror` ANSI tanımının bir parçası değildir; Microsoft uzantıları ve, bunları taşınabilir kod istediğiniz kullanmamanızı öneririz. ANSI uyumluluğu için kullanmanız `strerror` yerine.  
   

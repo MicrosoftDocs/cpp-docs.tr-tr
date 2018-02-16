@@ -1,10 +1,11 @@
 ---
-title: "Cdberrorınfo::getallerrorınfo | Microsoft Docs"
+title: CDBErrorInfo::GetAllErrorInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,38 +14,36 @@ f1_keywords:
 - ATL::CDBErrorInfo::GetAllErrorInfo
 - GetAllErrorInfo
 - CDBErrorInfo.GetAllErrorInfo
-dev_langs: C++
-helpviewer_keywords: GetAllErrorInfo method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetAllErrorInfo method
 ms.assetid: 630049fa-d296-497a-bbf6-f5d3d71d271d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 46e233800f814b39e4e14f0b357c381a3e71311e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 90086d0760e477ef41c4d6b59505ff90115f964b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdberrorinfogetallerrorinfo"></a>CDBErrorInfo::GetAllErrorInfo
 Bir hata kaydında bulunan hata bilgilerinin tüm türleri döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT GetAllErrorInfo(  
-   ULONG ulRecordNum,  
-   LCID lcid,  
-   BSTR* pbstrDescription,  
+```
+HRESULT GetAllErrorInfo(ULONG ulRecordNum,  
+   LCID lcid,  BSTR* pbstrDescription,  
    BSTR* pbstrSource = NULL,  
    GUID* pguid = NULL,  
    DWORD* pdwHelpContext = NULL,  
-   BSTR* pbstrHelpFile = NULL  
-) const throw( );  
+   BSTR* pbstrHelpFile = NULL) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -70,7 +69,7 @@ Bir hata kaydında bulunan hata bilgilerinin tüm türleri döndürür.
  [out] Hatayı açıklayan Yardım dosyasının yolunu içeren bir dize için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `S_OK`başarılı olursa. Bkz: [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms711230.aspx) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
+ `S_OK` başarılı olursa. Bkz: [IErrorRecords::GetErrorInfo](https://msdn.microsoft.com/en-us/library/ms711230.aspx) içinde *OLE DB Programcının Başvurusu* diğer dönüş değerleri için.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldbcli.h  

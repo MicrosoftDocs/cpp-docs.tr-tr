@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::Guid
-dev_langs: C++
-helpviewer_keywords: Platform::Guid Struct
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::Guid
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e65f4d046f35656cb91374c085ef2a6e4a507302
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5323c934efb7d9416d1016f355390288885cb0c9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 Temsil eden bir [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) Windows çalışma zamanı tür sistemi türü.  
@@ -37,7 +41,7 @@ public value struct Guid
 |Üye|Açıklama|  
 |------------|-----------------|  
 |[GUID](#ctor)|GUID yapısı yeni bir örneğini başlatır.|  
-|[operator ==](#operator-equality)|Eşittir işleci.|  
+|[operator==](#operator-equality)|Eşittir işleci.|  
 |[operator!=](#operator-not-equal)|Eşit değil işleci.|  
 |[operator()](#operator-call)|Bir GUID bir GUID olarak dönüştürür.|  
   
@@ -54,7 +58,7 @@ public value struct Guid
  **Meta veriler:** platform.winmd  
 
  
-## <a name="ctor"></a>Guid::guid oluşturucular
+## <a name="ctor"></a> Guid::guid oluşturucular
 GUID yapı yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -124,7 +128,7 @@ GUID yapı yeni bir örneğini başlatır.
  GUID kalan 8 bayt.  
   
 
-## <a name="operator-equality"></a>Guid::operator == işleci
+## <a name="operator-equality"></a> Guid::operator== Operator
 İki GUID karşılaştırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -136,7 +140,7 @@ Platform::Guid::operator==
 ### <a name="return-value"></a>Dönüş Değeri  
  İki GUID eşitse TRUE.
 
-## <a name="operator-inequality"></a>Guid::operator! = işleci
+## <a name="operator-inequality"></a> Guid::operator!= Operator
 İki GUID karşılaştırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -150,7 +154,7 @@ Platform::Guid::operator!=
 
 
 
-## <a name="operator-call"></a>Guid::operator() işleci
+## <a name="operator-call"></a> Guid::operator() Operator
 Örtük olarak dönüştürür bir [GUID yapısı](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)bir Platform::Guid için GUID.  
   
 ### <a name="syntax"></a>Sözdizimi  

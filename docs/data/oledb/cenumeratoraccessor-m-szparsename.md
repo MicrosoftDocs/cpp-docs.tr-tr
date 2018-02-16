@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +14,30 @@ f1_keywords:
 - m_szParseName
 - CEnumeratorAccessor.m_szParseName
 - ATL.CEnumeratorAccessor.m_szParseName
-dev_langs: C++
-helpviewer_keywords: m_szParseName
+dev_langs:
+- C++
+helpviewer_keywords:
+- m_szParseName
 ms.assetid: 32e826b6-0890-4db4-aa92-fc1ea3f528b2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 18959d3743cf10c262aee583a0527cc5c067a806
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5089ff7531c349afc8a8f7991cfcb0ff97c4bd52
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cenumeratoraccessormszparsename"></a>CEnumeratorAccessor::m_szParseName
 Geçirilecek dize [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) Numaralandırıcı ve veri kaynağı için bir ad elde edilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
 WCHAR m_szParseName[129];  
   
 ```  

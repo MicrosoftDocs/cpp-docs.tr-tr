@@ -7,20 +7,24 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: collection/Windows::Foundation::Collections
-dev_langs: C++
-helpviewer_keywords: Windows::Foundation::Collections Namespace (C++/CX)
+f1_keywords:
+- collection/Windows::Foundation::Collections
+dev_langs:
+- C++
+helpviewer_keywords:
+- Windows::Foundation::Collections Namespace (C++/CX)
 ms.assetid: 04bd3543-e30f-4fd2-95ee-272a3fcd0158
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cd6a2440ea5f3ad708fcd6f569e701e2f47f74a0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e07315091c0241744deae93e12d48513f8297dc0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections Namespace (C + +/ CX)
 C + +/ CX Windows::Foundation::Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanarak basitleştirmek işlevlerle tamamlar.  

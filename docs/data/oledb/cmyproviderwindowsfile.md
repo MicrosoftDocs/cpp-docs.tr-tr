@@ -4,32 +4,35 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cmyproviderwindowsfile
-dev_langs: C++
+f1_keywords:
+- cmyproviderwindowsfile
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMyProviderWindowsFile class
 - OLE DB providers, wizard-generated files
 ms.assetid: 0e9e72ac-1e1e-445f-a7ac-690c20031f9d
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fef6896df77ff3bcbf9251e2aabba0f810b7f4db
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e0ac247c418efa7800eeef469ecf54da75f5b15c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cmyproviderwindowsfile"></a>CMyProviderWindowsFile
-Sihirbaz, bir satır veri içeren sınıf oluşturur; Bu durumda, adlı `CMyProviderWindowsFile`. Aşağıdaki kod `CMyProviderWindowsFile` oluşturulan Sihirbazı'nı ve bir dizindeki tüm dosyaları kullanarak listeleri **WIN32_FIND_DATA** yapısı. `CMyProviderWindowsFile`öğesinden devralınan **WIN32_FIND_DATA** yapısı:  
+Sihirbaz, bir satır veri içeren sınıf oluşturur; Bu durumda, adlı `CMyProviderWindowsFile`. Aşağıdaki kod `CMyProviderWindowsFile` oluşturulan Sihirbazı'nı ve bir dizindeki tüm dosyaları kullanarak listeleri **WIN32_FIND_DATA** yapısı. `CMyProviderWindowsFile` öğesinden devralınan **WIN32_FIND_DATA** yapısı:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
   
@@ -47,11 +50,11 @@ END_PROVIDER_COLUMN_MAP()
 };  
 ```  
   
- `CMyProviderWindowsFile`adlandırılır [kullanıcı kayıt sınıfı](../../data/oledb/user-record.md) de sağlayıcının satır kümesi sütunları tanımlayan bir eşleme içerdiğinden. Sağlayıcı sütun eşlemesi PROVIDER_COLUMN_ENTRY kullanarak satır kümesindeki her bir alan için bir giriş içerir. Makrolar sütun adı, sıra ve girdi yapısına uzaklık belirtin. Yukarıdaki koddaki sağlayıcı sütun girdileri içine uzaklıkları içeren **WIN32_FIND_DATA** yapısı. Tüketici çağırdığında **'yı**, veriler, bir sürekli arabelleğe aktarılır. İşaretçi aritmetiği yapmanıza yapmak yerine, harita, bir veri üyesi belirtmenizi sağlar.  
+ `CMyProviderWindowsFile` adlandırılır [kullanıcı kayıt sınıfı](../../data/oledb/user-record.md) de sağlayıcının satır kümesi sütunları tanımlayan bir eşleme içerdiğinden. Sağlayıcı sütun eşlemesi PROVIDER_COLUMN_ENTRY kullanarak satır kümesindeki her bir alan için bir giriş içerir. Makrolar sütun adı, sıra ve girdi yapısına uzaklık belirtin. Yukarıdaki koddaki sağlayıcı sütun girdileri içine uzaklıkları içeren **WIN32_FIND_DATA** yapısı. Tüketici çağırdığında **'yı**, veriler, bir sürekli arabelleğe aktarılır. İşaretçi aritmetiği yapmanıza yapmak yerine, harita, bir veri üyesi belirtmenizi sağlar.  
   
- `CMyProviderRowset` Sınıfı ayrıca içerir `Execute` yöntemi. `Execute`hangi verileri yerel kaynaktan okuyan yöntemdir. Aşağıdaki kod sihirbaz tarafından oluşturulan gösterir `Execute` yöntemi. Win32 işlevini kullanıyor **FindFirstFile** ve `FindNextFile` dizinindeki dosyaları hakkında bilgi almak ve bunları örneklerine yerleştirmek için API'ler `CMyProviderWindowsFile` sınıfı.  
+ `CMyProviderRowset` Sınıfı ayrıca içerir `Execute` yöntemi. `Execute` hangi verileri yerel kaynaktan okuyan yöntemdir. Aşağıdaki kod sihirbaz tarafından oluşturulan gösterir `Execute` yöntemi. Win32 işlevini kullanıyor **FindFirstFile** ve `FindNextFile` dizinindeki dosyaları hakkında bilgi almak ve bunları örneklerine yerleştirmek için API'ler `CMyProviderWindowsFile` sınıfı.  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////  
 // MyProviderRS.H  
   

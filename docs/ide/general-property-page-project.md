@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - VC.Project.VCConfiguration.AppSupport
 - VC.Project.VCConfiguration.ToolFiles
 - VC.Project.VCConfiguration.useOfATL
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
@@ -35,12 +37,13 @@ helpviewer_keywords:
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bbe19414dbbe664f15ea2bbbc35a26827ac5b831
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 772192a4b367760e85bb1631f1ef7b50650af0c1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="general-property-page-project"></a>Genel Özellik Sayfası (Proje)
 
@@ -56,7 +59,7 @@ Windows olmayan projeleri için bkz: [Linux C++ özellik sayfası başvurusu](..
 
 Genel bölümünde özellikleri yapı işleminde oluşturulur ve ne zaman silineceğini dosyaları dosyalarının konumunu etkileyen **temiz** seçeneği (**yapı** menüsü) seçilidir.
 
-**Hedef platformu**  
+Hedef platformu  
 Proje üzerinde çalışacağı platformu belirtir. Örneğin, Windows, Android veya iOS. Değer **Windows 10** Proje hedefleri Evrensel Windows platformu anlamına gelir. Windows'un önceki sürümlerini hedefleyen, sürüm listelenmeyen ve bu alan değeri olarak yalnızca görünüyorsa **Windows**. Bu bir proje oluşturduğunuzda, ayarlanmış salt okunur bir alandır.
 
 **Windows SDK sürümü**  
@@ -71,12 +74,12 @@ Proje üzerinde çalışabilir platform en düşük sürümünü belirtir. Bu ö
 
 Visual C++ bu seçenek zorlamaz unutmayın. Projenizi kullanan herkes için bir kılavuz olarak ve C# ve JavaScript gibi diğer dilleri ile tutarlılık için dahil edilmiştir. En düşük sürüm kullanılabilir olmayan bir özelliğini kullanırsanız, visual C++ hataya neden olmaz.
 
-**Çıktı dizini**  
+Çıktı dizini  
 Bağlayıcı gibi araçlar oluşturma işlemi sırasında oluşturulan tüm son çıktı dosyaları nerede yerleştirir dizini belirtir. Genellikle, bu bağlayıcı, kitaplığı veya BSCMake gibi araçlar çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makroları (SolutionDir) $ tarafından (yapılandırma) dizindir \.
 
 Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>.
 
-**Ara dizini**  
+Ara dizini  
 Derleyici gibi araçlar oluşturma işlemi sırasında oluşturulan tüm ara dosyaları nerede yerleştirir dizini belirtir. Genellikle, bu C/C++ derleyicisi, MIDL ve kaynak derleyicisi gibi araçları çıktısını içerir. Varsayılan olarak, bu özellik, belirtilen makrosu $(yapılandırma) göre dizindir \.
 
 Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>.
@@ -84,20 +87,20 @@ Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.Visua
 **Hedef adı**  
 Bu proje oluşturur dosya adını belirtir. Varsayılan olarak, bu özellik makrosu $(ProjectName) tarafından belirtilen dosya adıdır.
 
-**Hedef uzantısı**  
+Hedef uzantısı  
 Bu proje oluşturur dosya adı uzantısını belirtir; Örneğin, .exe veya .dll.
 
-**Temiz üzerinde silme uzantıları**  
+Temiz üzerinde silme uzantıları  
 **Temiz** seçeneği (**yapı** menüsü) bir projenin yapılandırma oluşturulan Burada Ara dizinden dosyaları siler. Bu özellik ile belirtilen uzantılara sahip dosyaları olacaktır ne zaman silinmiş **temiz** çalıştırıldığında veya bir yeniden oluşturma gerçekleştirdiğinizde. Bu uzantılar Ara dizindeki dosyaların yanı sıra, yapı sistem yapı (de dahil olmak üzere ara çıktıların .obj dosyaları gibi) bulunduğu bağımsız olarak bilinen herhangi bir çıktı de silinecek. Joker karakterler belirtebilirsiniz unutmayın.
 
 Program aracılığıyla bu özelliğe erişmek için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>.
 
-**Günlük dosyası oluşturma**  
+Günlük dosyası oluşturma  
 Bir projeyi derleme her oluşturulan günlük dosyası için bir varsayılan olmayan konum belirtmenize olanak tanır. Varsayılan konumu makroları (IntDir) $$ (MSBuildProjectName) .log tarafından belirtilir.
 
 Proje makroları dizin konumunu değiştirmek için kullanabilirsiniz. Bkz: [derleme komutları ve özellikler için ortak makrolar](../ide/common-macros-for-build-commands-and-properties.md).
 
-**Platform araç takımı**  
+Platform araç takımı  
 Visual C++ kitaplıkları ve derleyici farklı bir sürümünü hedeflemek için projeyi sağlar. Visual C++ projeleri, Visual Studio veya Visual Studio, Windowx XP'de çalıştırabilirsiniz yürütülebilir dosyalar oluşturma toolsets dahil olmak üzere birkaç önceki sürümlerini tarafından yüklenen toolsets biri tarafından yüklenen varsayılan toolset hedefleyebilirsiniz. Platform araç kümesini değiştirme hakkında daha fazla bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
 **Yönetilen Artımlı derleme etkinleştir**  
@@ -107,7 +110,7 @@ Derlemeleri oluşturduğunuzda yönetilen projeleri için bu algılama dış gö
 
 Proje varsayılan Bölümü özelliklerinde değiştirebileceğiniz varsayılan özelliklerini temsil eder. Bu özellikleri tanımı .props dosyalarında bulunabilir *yükleme dizini*\VC\VCProjectDefaults.
 
-**Yapılandırma türü**  
+Yapılandırma türü  
 Aralarından seçim yapabileceğiniz çeşitli yapılandırma türleri şunlardır:
 
 - **Uygulama (.exe)**, bağlayıcı araç takımı (C/C++ derleyicisi MIDL, kaynak derleyici, bağlayıcı, BSCMake, XML Web Hizmeti Proxy üreticisi, özel derleme, prebuild, prelink, postbuild olayları) görüntüler.
@@ -149,7 +152,7 @@ Yönetilen projelerinde hedef .NET framework sürümünü belirtir.
 Belirtir [/GL](../build/reference/gl-whole-program-optimization.md) derleyici seçeneği ve [/LTCG](../build/reference/ltcg-link-time-code-generation.md) bağlayıcı seçeneği. Varsayılan olarak, bu hata ayıklama yapılandırmaları için devre dışı ve perakende yapılandırmaları için etkinleştirilmiş.
 
 **Windows mağazası uygulama desteği**  
-Bu proje Windows mağazası uygulamaları destekleyip desteklemediğini belirtir. Daha fazla bilgi için bkz: [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md)ve Windows Developer Center'da.
+Bu proje Windows çalışma zamanı (Evrensel Windows platformu) uygulamaları destekleyip desteklemediğini belirtir. Daha fazla bilgi için bkz: [/ZW (Windows çalışma zamanı derlemesi)](../build/reference/zw-windows-runtime-compilation.md)ve Windows Developer Center'da.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

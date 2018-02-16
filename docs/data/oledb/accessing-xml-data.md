@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - data access [C++], XML data
 - XML [C++], accessing data
@@ -16,18 +18,18 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 654fab0aa5a5bf96e145f37ae4855f556f79bebf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9379abfd27f4dd8297864160f35367da0727935
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="accessing-xml-data"></a>XML Verilerine Erişme
 XML verilerini bir veri kaynağından veri almak için iki ayrı yöntem vardır: biri kullanır [CStreamRowset](../../data/oledb/cstreamrowset-class.md) ve diğer kullanımlar [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).  
@@ -53,7 +55,7 @@ CCommand<CAccessor<CMyAccessor>, CStreamRowset> myCmd;
 CCommand<CNoAccessor, CStreamRowset> myCmd;  
 ```  
   
- Çağırdığınızda normalde `CCommand::Open` (belirtme, örneğin, `CRowset` olarak `TRowset` sınıfı), alır bir `IRowset` işaretçi. `ICommand::Execute`döndüren bir `IRowset` depolanan işaretçi `m_spRowset` üyesi `CRowset` nesnesi. Gibi yöntemler `MoveFirst`, `MoveNext`, ve `GetData` verileri almak için bu işaretçiyi kullanın.  
+ Çağırdığınızda normalde `CCommand::Open` (belirtme, örneğin, `CRowset` olarak `TRowset` sınıfı), alır bir `IRowset` işaretçi. `ICommand::Execute` döndüren bir `IRowset` depolanan işaretçi `m_spRowset` üyesi `CRowset` nesnesi. Gibi yöntemler `MoveFirst`, `MoveNext`, ve `GetData` verileri almak için bu işaretçiyi kullanın.  
   
  Çağırdığınızda aksine, `CCommand::Open` (ancak belirtin `CStreamRowset` olarak `TRowset` sınıfı), `ICommand::Execute` döndüren bir `ISequentialStream` depolanan işaretçi `m_spStream` veri üyesi [CStreamRowset](../../data/oledb/cstreamrowset-class.md). Daha sonra `Read` XML biçiminde (UNICODE dizesi) verileri almak üzere yöntemi. Örneğin:  
   
@@ -69,7 +71,7 @@ myCmd.m_spStream->Read()
 >  XML desteği kullanarak `CStreamRowset` yalnızca SQL Server 2000 ile çalışır ve SQL Server 2000 (MDAC ile yüklenmiş) için bir OLE DB sağlayıcısı sahip olmasını gerektirir.  
   
 ## <a name="retrieving-xml-data-using-cxmlaccessor"></a>CXMLAccessor kullanarak XML verilerini alma  
- [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md) veri deposunun şeması hiçbir bilgiye sahip olduğunda veri dize verilerini bir veri kaynağından erişmenize olanak tanır. `CXMLAccessor`gibi çalışır `CDynamicStringAccessorW` dışında eski veri deposu XML biçimli (etiketli) veri olarak erişilen tüm verileri dönüştürür. XML etiket adları mümkün olduğunca yakın veri deposunun sütun adlarının eşleşmesi.  
+ [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md) veri deposunun şeması hiçbir bilgiye sahip olduğunda veri dize verilerini bir veri kaynağından erişmenize olanak tanır. `CXMLAccessor` gibi çalışır `CDynamicStringAccessorW` dışında eski veri deposu XML biçimli (etiketli) veri olarak erişilen tüm verileri dönüştürür. XML etiket adları mümkün olduğunca yakın veri deposunun sütun adlarının eşleşmesi.  
   
  Kullanım `CXMLAccessor` diğer bir erişimci sınıfı gibi bir şablon parametresi olarak geçirme `CCommand` veya `CTable`:  
   
@@ -82,7 +84,8 @@ CTable<CXMLAccessor, CRowset> rs;
 ```  
 // Open data source, session, and rowset  
 hr = rs.MoveFirst();  
-while( SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
+
+while(SUCCEEDED(hr) && hr != DB_S_ENDOFROWSET )  
 {  
     CStringW strRowData;  
     myCmd.GetXMLRowData(strRowData);  

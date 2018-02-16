@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - swscanf
 - sscanf
@@ -31,7 +32,8 @@ f1_keywords:
 - _stscanf_l
 - sscanf
 - _swscanf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - swscanf function
 - _stscanf function
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - sscanf_l function
 - stscanf_l function
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2143605464eafb569fae003a6e574c51be4e2453
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 486b9be37f52210ae77eb5cef17dce3304d8adde
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sscanf-sscanfl-swscanf-swscanfl"></a>sscanf, _sscanf_l, swscanf, _swscanf_l
 Bir dizeden veri okuma biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](../../c-runtime-library/reference/sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).  
@@ -114,7 +117,7 @@ int _swscanf_l(
 > [!IMPORTANT]
 >  Bir dizeyle'ne zaman okuma `sscanf`, her zaman için bir genişliği belirtmeniz `%s` biçimi (örneğin, `"%32s"` yerine `"%s"`); Aksi halde, düzgün biçimlendirilmemiş giriş kolayca arabellek taşmasına neden.  
   
- `swscanf`bir joker karakter sürümü `sscanf`; bağımsız değişkenleri `swscanf` joker karakter dizelerdir. `sscanf`birden çok baytlı onaltılık karakterler işlemez. `swscanf`Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `swscanf` ve `sscanf` aynı şekilde davranır.  
+ `swscanf` bir joker karakter sürümü `sscanf`; bağımsız değişkenleri `swscanf` joker karakter dizelerdir. `sscanf` birden çok baytlı onaltılık karakterler işlemez. `swscanf` Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `swscanf` ve `sscanf` aynı şekilde davranır.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

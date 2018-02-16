@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vswprintf_s_l
 - vsprintf_s
@@ -28,7 +29,8 @@ f1_keywords:
 - vswprintf_s
 - vsprintf_s
 - _vstprintf_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _vstprintf_s_l function
 - vsprintf_s_l function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - formatted text [C++]
 - _vswprintf_s_l function
 ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6acda8e5197a1522196f2e42874a0fd420ebd8bc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 190a43e013e166c234aa3ef1dac43c726a2a239b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vsprintfs-vsprintfsl-vswprintfs-vswprintfsl"></a>vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma. Sürümleri bunlar [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \__vswprintf_l](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -116,14 +119,14 @@ int vswprintf_s(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `vsprintf_s`ve `vswprintf_s` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. Varsa `buffer` veya `format` sayısı sıfır ise null işaretçinin ya da biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve `errno` için `EINVAL`.  
+ `vsprintf_s` ve `vswprintf_s` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. Varsa `buffer` veya `format` sayısı sıfır ise null işaretçinin ya da biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve `errno` için `EINVAL`.  
   
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından biçimlendirir ve gösterdiği bellek için belirtilen veri Yazar `buffer`.  
   
- `vswprintf_s`ISO C standardı uyan `vswprintf`, ikinci parametre gerektiren `count`, türü `size_t`.  
+ `vswprintf_s` ISO C standardı uyan `vswprintf`, ikinci parametre gerektiren `count`, türü `size_t`.  
   
  Yalnızca güvenli sürümleri konumsal parametreler destekler, bu işlevler güvenli olmayan sürümlerinden farklı. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  
   
@@ -142,10 +145,10 @@ int vswprintf_s(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`vsprintf_s`, `_vsprintf_s_l`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`vswprintf_s`, `_vswprintf_s_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`vsprintf_s`, `_vsprintf_s_l`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`vswprintf_s`, `_vswprintf_s_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

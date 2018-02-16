@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: srand
+ms.topic: reference
+apiname:
+- srand
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: srand
-dev_langs: C++
+f1_keywords:
+- srand
+dev_langs:
+- C++
 helpviewer_keywords:
 - random starting point
 - random starting point, setting
@@ -36,12 +40,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 205dcb2ba7d61dff1286fd926e3f10cf2a162e9a
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4cc76b80ca6c01d6512c69cc13fb0934e79b6ae5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="srand"></a>srand
 
@@ -68,7 +73,7 @@ Sözde rastgele sayı üretimi için çekirdek
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`srand`|\<stdlib.h >|
+|`srand`|\<stdlib.h>|
 
 Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.
 

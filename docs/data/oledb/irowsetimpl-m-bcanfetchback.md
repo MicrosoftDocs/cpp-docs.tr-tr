@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +14,30 @@ f1_keywords:
 - IRowsetImpl.m_bCanFetchBack
 - IRowsetImpl::m_bCanFetchBack
 - m_bCanFetchBack
-dev_langs: C++
-helpviewer_keywords: m_bCanFetchBack
+dev_langs:
+- C++
+helpviewer_keywords:
+- m_bCanFetchBack
 ms.assetid: cfa007b0-7ba5-48a3-9d05-9f1916305fb7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7ba8cacdb172158f2afdb5574dd58e2db7e922bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2ea9d8a6f5e36c0ff22dfb01341377658a38e04e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetimplmbcanfetchback"></a>IRowsetImpl::m_bCanFetchBack
 Bir sağlayıcı geri getirme destekleyip desteklemediğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
 unsigned m_bCanFetchBack:1;  
   
 ```  

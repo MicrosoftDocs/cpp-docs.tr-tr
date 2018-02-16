@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - rowsets, updating data
 - updating data, rowsets
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5d0d34b3dee1fb4983f60c7e437c14025b4e3022
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4a06cd7d4f9e62bb40c24be67eb7b356906b4069
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 Bir çok basit bir veritabanı güncelleştirmek veya veri deposuna veri yazmak için bir işlemdir. OLE DB'de güncelleme mekanizması basittir: tüketici uygulamanız bağlı veri üyelerinin değerlerini ayarlar ve ardından bu değerleri satır kümesine yazar; Tüketici sonra sağlayıcının veri deposunu güncelleştirmek ister.  
@@ -51,6 +53,7 @@ Bir çok basit bir veritabanı güncelleştirmek veya veri deposuna veri yazmak 
   
 ```  
 CDBPropSet ps(DBPROPSET_ROWSET);  
+
 ps.AddProperty(DBPROP_IRowsetChange, true)  
 ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | DBPROPVAL_UP_DELETE)  
 ```  
@@ -62,7 +65,7 @@ ps.AddProperty(DBPROP_UPDATABILITY, DBPROPVAL_UP_CHANGE | DBPROPVAL_UP_INSERT | 
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -70,12 +73,13 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the current row of the Product table  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Candle" ) );  
+
 product.m_UnitsInStock = 10000;  
   
 // Set the data  
-HRESULT hr = product.SetData( );  
+HRESULT hr = product.SetData();  
 ```  
   
 ## <a name="inserting-rows-into-rowsets"></a>Satır kümelerine ekleme  
@@ -93,7 +97,7 @@ HRESULT Insert(int nAccessor = 0, bool bGetRow = false)
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -102,12 +106,14 @@ product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100
   
 // Set the column values for a row of the Product table, then insert the row  
 product.m_ProductID = 101;  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Candle" ) );  
+
 product.m_SupplierID = 27857;  
 product.m_CategoryID = 372;  
-_tcscpy_s( product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit,  
+_tcscpy_s(product.m_QuantityPerUnit, product.m_sizeOfQuantityPerUnit,  
            _T( "Pack of 10" ) );  
+
 product.m_UnitPrice = 20;  
 product.m_UnitsInStock = 10000;  
 product.m_UnitsOnOrder = 5201;  
@@ -133,7 +139,7 @@ m_dwProductNameLength = 6;             // "Candle" has 6 characters
 m_dwQuantityPerUnitLength = 10;        // "Pack of 10" has 10 characters  
   
 // Insert the data  
-HRESULT hr = product.Insert( );  
+HRESULT hr = product.Insert();  
 ```  
   
  Daha ayrıntılı bir örnek için bkz: [CRowset::INSERT](../../data/oledb/crowset-insert.md).  
@@ -145,7 +151,7 @@ HRESULT hr = product.Insert( );
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -153,7 +159,7 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Delete the row  
-HRESULT hr = product.Delete( );  
+HRESULT hr = product.Delete();  
 ```  
   
 ## <a name="immediate-and-deferred-updates"></a>Anında ve Ertelenmiş Güncelleştirmeler  
@@ -177,7 +183,7 @@ pPropSet->AddProperty(DBPROP_IRowsetUpdate, true);
   
 ```  
 // Instantiate a rowset based on the user record class  
-CTable<CAccessor<CProductAccessor> > product;  
+CTable<CAccessor<CProductAccessor>> product;  
 CSession session;  
   
 // Open the rowset and move to the 100th row  
@@ -185,18 +191,23 @@ product.Open(session, "Product", &ps, 1);  // ps is the property set
 product.MoveToBookmark(&bookmark, 0);      // Assume that bookmark is set to 100th row  
   
 // Change the values of columns "Name" and "Units in Stock" in the 100th row of the Product table  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName,  
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName,  
            _T( "Wick" ) );  
+
 product.m_UnitsInStock = 10000;  
-HRESULT hr = product.SetData( );  // No changes made to row 100 yet  
+
+HRESULT hr = product.SetData();  // No changes made to row 100 yet  
 product.Update();                 // Update row 100 now  
   
 // Change the values of columns "Name" and "Units in Stock" in the 101st row of the Product table  
-product.MoveNext( );  
-_tcscpy_s( product.m_ProductName, product.m_sizeOfProductName  
+product.MoveNext();  
+
+_tcscpy_s(product.m_ProductName, product.m_sizeOfProductName  
            _T( "Wax" ) );  
+
 product.m_UnitsInStock = 500;  
-HRESULT hr = product.SetData( );  // No changes made to row 101 yet  
+
+HRESULT hr = product.SetData();  // No changes made to row 101 yet  
 product.Update();                 // Update row 101 now  
 ```  
   

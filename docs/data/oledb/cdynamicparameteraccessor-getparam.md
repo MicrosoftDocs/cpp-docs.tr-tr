@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,43 +16,39 @@ f1_keywords:
 - GetParam
 - ATL::CDynamicParameterAccessor::GetParam<ctype>
 - ATL::CDynamicParameterAccessor::GetParam
-dev_langs: C++
-helpviewer_keywords: GetParam method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetParam method
 ms.assetid: 893a6bf8-7b55-4f6d-8a10-a43b13be7f56
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7cdd27cfdd173e556bb9d4c6fd27a9d801a7f8c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a54da47714be4f0230145b3aa5d8b66df44e3679
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicparameteraccessorgetparam"></a>CDynamicParameterAccessor::GetParam
 Belirtilen parametre dize olmayan verileri parametresi arabelleğinden alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      template < class ctype > bool GetParam(   
-   DBORDINAL nParam,   
-   ctype* pData    
-) const throw( );  
-template < class ctype > bool GetParam(   
-   TCHAR* pParamName,   
-   ctype* pData    
-) const throw( );  
-void* GetParam(   
-   DBORDINAL nParam    
-) const throw( );  
-void* GetParam(   
-   TCHAR* pParamName    
-) const throw( );  
+```cpp
+template <class ctype>bool GetParam(DBORDINAL nParam,   
+  ctype* pData) const throw();  
+
+template <class ctype> bool GetParam(TCHAR* pParamName,   
+   ctype* pData) const throw();  
+
+void* GetParam(DBORDINAL nParam) const throw();  
+
+void* GetParam(TCHAR* pParamName) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

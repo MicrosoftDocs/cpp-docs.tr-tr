@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,34 +17,32 @@ f1_keywords:
 - CRowset<TAccessor>::MoveNext
 - CRowset::MoveNext
 - ATL::CRowset::MoveNext
-dev_langs: C++
-helpviewer_keywords: MoveNext method
+dev_langs:
+- C++
+helpviewer_keywords:
+- MoveNext method
 ms.assetid: 0df3288c-2bce-494f-99c0-6344b54a4adf
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bd997b25125a48dd6103629e6957843295532901
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 981b17597fa8c5c13b528b71f9f26bc4f03a6a02
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetmovenext"></a>CRowset::MoveNext
 İmleci sonraki kayda taşır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT MoveNext( ) throw( );   
-HRESULT MoveNext(   
-   LONG lSkip,   
-   bool bForward = true    
-) throw( );  
+```cpp
+HRESULT MoveNext() throw();HRESULT MoveNext(LONG lSkip,   
+   bool bForward= true) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - vsscanf
 - vswscanf
@@ -26,21 +27,23 @@ f1_keywords:
 - _vstscanf
 - vsscanf
 - vswscanf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vswscanf function
 - vsscanf function
 ms.assetid: e96180f2-df46-423d-b4eb-0a49ab819bde
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6b0da3f3578e1ee2176ffca8358d5f5276732cf4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e44deb1faee27ea571151c45945b44dac647c2d3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vsscanf-vswscanf"></a>vsscanf, vswscanf
 Bir dizeden veri okuma biçimlendirilmiş. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [vsscanf_s, vswscanf_s](../../c-runtime-library/reference/vsscanf-s-vswscanf-s.md).  
@@ -83,7 +86,7 @@ int vswscanf(
 > [!IMPORTANT]
 >  Kullandığınızda `vsscanf` bir dize okumak için her zaman için bir genişliği belirtmeniz `%s` biçimi (örneğin, `"%32s"` yerine `"%s"`); Aksi halde, hatalı biçimlendirilmiş giriş arabellek taşmasına neden olabilir.  
   
- `vswscanf`bir joker karakter sürümü `vsscanf`; bağımsız değişkenleri `vswscanf` joker karakter dizelerdir. `vsscanf`birden çok baytlı onaltılık karakterler işlemez. `vswscanf`Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `vswscanf` ve `vsscanf` aynı şekilde davranır.  
+ `vswscanf` bir joker karakter sürümü `vsscanf`; bağımsız değişkenleri `vswscanf` joker karakter dizelerdir. `vsscanf` birden çok baytlı onaltılık karakterler işlemez. `vswscanf` Unicode tam genişlikli onaltılık veya "uyumluluk bölge" karakterleri işlemez. Aksi takdirde, `vswscanf` ve `vsscanf` aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

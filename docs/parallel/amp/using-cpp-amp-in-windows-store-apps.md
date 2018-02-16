@@ -1,30 +1,33 @@
 ---
-title: "Windows mağazası uygulamalarında C++ AMP kullanma | Microsoft Docs"
+title: "UWP uygulamalarında C++ AMP kullanma | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 85577298-2c28-4209-9470-eb21048615db
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 39414e5b74dec15cade249bce1fb4ffe2f22edd0
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 481ea5918e7572375fdafd9ba489da34730fef84
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="using-c-amp-in-windows-store-apps"></a>Windows Mağazası Uygulamalarında C++ AMP Kullanma
-C++ AMP (C++ hızlandırılmış yoğun paralellik) kullanabileceğiniz, [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] (grafik işlem birimi) GPU veya diğer hesaplama Hızlandırıcıları hesaplamalar için uygulama. Ancak, C++ AMP API'lerini doğrudan Windows çalışma zamanı türleri ile çalışmak için sağlamaz ve Windows çalışma zamanı C++ AMP için sarmalayıcı sağlamaz. Windows çalışma zamanı türleri kodunuzda kullandığınızda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlerine dönüştürmeniz gerekir.  
+# <a name="using-c-amp-in-uwp-apps"></a>UWP uygulamalarında C++ AMP kullanma
+GPU (grafik işlem birimi) veya diğer hesaplama Hızlandırıcıları hesaplamalar için evrensel Windows Platformu (UWP) uygulamanızda C++ AMP (C++ hızlandırılmış yoğun paralellik) kullanabilirsiniz. Ancak, C++ AMP API'lerini doğrudan Windows çalışma zamanı türleri ile çalışmak için sağlamaz ve Windows çalışma zamanı C++ AMP için sarmalayıcı sağlamaz. Windows çalışma zamanı türleri kodunuzda kullandığınızda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlerine dönüştürmeniz gerekir.  
   
 ## <a name="performance-considerations"></a>Performans değerlendirmeleri  
- Kullanıyorsanız, [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) oluşturmak için [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamasını öneririz düz eski veri (POD) türleri bitişik depolama ile birlikte kullanmak — Örneğin, `std::vector` veya C tarzı dizileri — C++ AMP ile kullanılacak veri. Bu, hiçbir hazırlama oluşmasına olduğundan POD olmayan türleri veya Windows RT kapsayıcıları kullanarak daha yüksek performans elde yardımcı olabilir.  
+ Kullanıyorsanız, [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) Evrensel Windows Platformu (UWP) uygulamanızı oluşturmak için düz eski veri (POD) türleri bitişik depolama ile birlikte kullanmanız önerilir — Örneğin, `std::vector` veya C tarzı dizileri — kullanılacak veriler için C++ AMP ile. Bu, hiçbir hazırlama oluşmasına olduğundan POD olmayan türleri veya Windows RT kapsayıcıları kullanarak daha yüksek performans elde yardımcı olabilir.  
   
  Bu şekilde, depolanan verilere erişmek için bir C++ AMP Çekirdeği'nde yalnızca kaydırma `std::vector` veya depolama dizisi bir `concurrency::array_view` ve dizi görünümünde kullanmak bir `concurrency::parallel_for_each` döngü:  
   
@@ -120,6 +123,6 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ kullanarak ilk Windows mağazası uygulamanızı oluşturma](http://go.microsoft.com/fwlink/p/linkid=249073)   
+ [C++ kullanarak ilk UWP uygulamanızı oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
  [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
 

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vfprintf_p
 - _vfwprintf_p
@@ -34,7 +35,8 @@ f1_keywords:
 - _vftprintf_p
 - _vfprintf_p_l
 - vfprintf_p
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vfprintf_p_l function
 - _vftprintf_p_l function
@@ -50,16 +52,17 @@ helpviewer_keywords:
 - formatted text [C++]
 - vfwprintf_p function
 ms.assetid: 4d4a0914-4175-4b65-9ca1-037c4ef29147
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 49684bcb7f1022bad7a0f3dad3a0ec5692373996
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bdbb916ef756d3437c8d4df1af725fc49fdfff6d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vfprintfp-vfprintfpl-vfwprintfp-vfwprintfpl"></a>_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 Biçim dizesi bağımsız değişkenleri kullanılır order belirtme olanağı bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıkışı yazma.  
@@ -107,12 +110,12 @@ int _vfwprintf_p_l(
  Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_vfprintf_p`ve `_vfwprintf_p` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür.  
+ `_vfprintf_p` ve `_vfwprintf_p` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve belirtilen verileri Yazar `stream`. Bu işlevler farklı `_vfprint_s` ve `_vfwprint_s` sürümleri konumsal Parametreler yalnızca destekledikleri olmasıdır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- `_vfwprintf_p`joker karakter sürümü `_vprintf_p`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_vprintf_p`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `_vfwprintf_p` joker karakter sürümü `_vprintf_p`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_vprintf_p` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -132,10 +135,10 @@ int _vfwprintf_p_l(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`_vfprintf_p`, `_vfprintf_p_l`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`_vfwprintf_p`, `_vfwprintf_p_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`_vfprintf_p`, `_vfprintf_p_l`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`_vfwprintf_p`, `_vfwprintf_p_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

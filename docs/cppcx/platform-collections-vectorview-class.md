@@ -6,7 +6,7 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - COLLECTION/Platform::Collections::VectorView::VectorView
 - COLLECTION/Platform::Collections::VectorView::First
@@ -14,19 +14,22 @@ f1_keywords:
 - COLLECTION/Platform::Collections::VectorView::GetMany
 - COLLECTION/Platform::Collections::VectorView::IndexOf
 - COLLECTION/Platform::Collections::VectorView::Size
-dev_langs: C++
-helpviewer_keywords: VectorView Class
+dev_langs:
+- C++
+helpviewer_keywords:
+- VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 10619437ad7be96edb6ed2a0c4eb86c4f10580ca
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5f196a1f58e5c480ef09d13a72f1c8ac3a0a50db
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView sınıfı
 Sıralı bir koleksiyonu dizini tarafından erişilebilecek nesnelerin salt okunur bir görünümünü temsil eder. Koleksiyondaki her nesne türü şablon parametresi tarafından belirtilir.  
@@ -74,7 +77,7 @@ template <typename T, typename E>
   
  **Namespace:** Platform::Collections  
 
-## <a name="first"></a>VectorView::First yöntemi
+## <a name="first"></a>  VectorView::First yöntemi
 İlk öğe VectorView belirten yineleyici döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -93,7 +96,7 @@ virtual Windows::Foundation::Collections::IIterator<T>^
   
 
 
-## <a name="getat"></a>VectorView::GetAt yöntemi
+## <a name="getat"></a>  VectorView::GetAt yöntemi
 Belirtilen dizini tarafından belirtilen geçerli VectorView öğesi alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -114,7 +117,7 @@ T GetAt(
   
 
 
-## <a name="getmany"></a>VectorView::GetMany yöntemi
+## <a name="getmany"></a>  VectorView::GetMany yöntemi
 Belirtilen dizinden başlayarak geçerli VectorView öğelerinin bir dizisini alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -139,7 +142,7 @@ virtual unsigned int GetMany(
   
 
 
-## <a name="indexof"></a>VectorView::IndexOf yöntemi
+## <a name="indexof"></a>  VectorView::IndexOf yöntemi
 Geçerli VectorView belirtilen öğeyi arar ve bulundu, döndürür öğenin dizini.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -162,11 +165,11 @@ virtual bool IndexOf(
  `index` Parametresi ise 0 öğe VectorView ilk öğedir veya öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi halde, öğe bulunamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Belirtilen öğe bulunursa; Aksi takdirde `false`.  
+ `true` Belirtilen öğe bulunursa; Aksi takdirde `false`.  
   
 
 
-## <a name="size"></a>VectorView::Size yöntemi
+## <a name="size"></a>  VectorView::Size yöntemi
 Geçerli VectorView nesnesinde öğe sayısını döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -181,7 +184,7 @@ virtual property unsigned int Size;
   
 
 
-## <a name="ctor"></a>VectorView::VectorView Oluşturucusu
+## <a name="ctor"></a>  VectorView::VectorView Oluşturucusu
 VectorView sınıfının yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  

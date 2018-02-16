@@ -4,41 +4,41 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - IDBSchemaRowsetImpl::SetRestrictions
 - SetRestrictions
 - IDBSchemaRowsetImpl.SetRestrictions
-dev_langs: C++
-helpviewer_keywords: SetRestrictions method
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetRestrictions method
 ms.assetid: 707d5065-b853-4d38-9b67-3066b4d3b279
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 23d4932508d8abeb96dad1dd0f70e396c7240168
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5e1720fac25f68ae7c46e6ce758e0c0de0fe28b6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="idbschemarowsetimplsetrestrictions"></a>IDBSchemaRowsetImpl::SetRestrictions
 Belirli şema satır kümesinde destek hangi kısıtlamaları belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      void SetRestrictions(  
-   ULONG cRestrictions,  
-   GUID* /* rguidSchema */,  
-   ULONG* rgRestrictions   
-);  
+```
+void SetRestrictions(ULONG cRestrictions,  
+  GUID* /* rguidSchema */,  
+   ULONG* rgRestrictions);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - tmpnam_s
 - _wtmpnam_s
@@ -27,7 +28,8 @@ f1_keywords:
 - tmpnam_s
 - _wtmpnam_s
 - L_tmpnam_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tmpnam_s function
 - file names [C++], creating temporary
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - file names [C++], temporary
 - wtmpnam_s function
 ms.assetid: e70d76dc-49f5-4aee-bfa2-f1baa2bcd29f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e7846d9169db45f4176ad97dfc3c0b9d5a3c346c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 844da11b981b99d5fe69861c3198d0508857a1a5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="tmpnams-wtmpnams"></a>tmpnam_s, _wtmpnam_s
 Geçici dosyaları oluşturmak için kullanabileceğiniz adları oluşturun. Sürümleri bunlar [tmpnam ve _wtmpnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -73,10 +76,10 @@ errno_t _wtmpnam_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`str`  
+ [out] `str`  
  Oluşturulan ad tutacak işaretçi.  
   
- [in]`sizeInChars`  
+ [in] `sizeInChars`  
  Karakter cinsinden arabellek boyutu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -93,11 +96,11 @@ errno_t _wtmpnam_s(
  Varsa `str` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlevlerin her biri şu anda var olmayan bir dosya adını döndürür. `tmpnam_s`Geçerli çalışma dizini içinde benzersiz adını döndürür. Bir dosya adı bekletilen bir ters eğik çizgi ve \fname21 gibi hiçbir yol bilgileriyle olduğunda bu adın geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.  
+ Bu işlevlerin her biri şu anda var olmayan bir dosya adını döndürür. `tmpnam_s` Geçerli çalışma dizini içinde benzersiz adını döndürür. Bir dosya adı bekletilen bir ters eğik çizgi ve \fname21 gibi hiçbir yol bilgileriyle olduğunda bu adın geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.  
   
  İçin `tmpnam_s`, bu oluşturulan dosya adı depolayabilir `str`. Tarafından döndürülen dize uzunluğu en fazla `tmpnam_s` olan `L_tmpnam_s`, STDIO tanımlı. H. Varsa `str` olan `NULL`, ardından `tmpnam_s` sonucu bir iç statik arabellek bırakır. Bu nedenle yapılan sonraki çağrılar bu değer yok. Tarafından oluşturulan adı `tmpnam_s` bir program tarafından oluşturulan dosya adının ve ilk çağrısından sonra oluşan `tmpnam_s`, temel 32 sıralı numaraları için bir dosya uzantısı (.1-.1vvvvvu olduğunda `TMP_MAX_S` STDIO içinde. H INT_MAX ise).  
   
- `tmpnam_s`çok baytlı karakter sıralarının işletim sisteminden alınan OEM kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wtmpnam_s`bir joker karakter sürümü `tmpnam_s`; bağımsız değişkeni ve dönüş değeri `_wtmpnam_s` joker karakter dizelerdir. `_wtmpnam_s`ve `tmpnam_s` durumlar dışında aynı şekilde davranır `_wtmpnam_s` çok baytlı karakter dizeleri işlemez.  
+ `tmpnam_s` çok baytlı karakter sıralarının işletim sisteminden alınan OEM kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wtmpnam_s` bir joker karakter sürümü `tmpnam_s`; bağımsız değişkeni ve dönüş değeri `_wtmpnam_s` joker karakter dizelerdir. `_wtmpnam_s` ve `tmpnam_s` durumlar dışında aynı şekilde davranır `_wtmpnam_s` çok baytlı karakter dizeleri işlemez.  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

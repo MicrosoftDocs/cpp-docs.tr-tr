@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,47 +14,37 @@ f1_keywords:
 - CDynamicParameterAccessor::GetParamString
 - ATL.CDynamicParameterAccessor.GetParamString
 - ATL::CDynamicParameterAccessor::GetParamString
-dev_langs: C++
-helpviewer_keywords: GetParamString method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetParamString method
 ms.assetid: 078c2b1c-7072-47c1-a203-f47e75363f91
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ed04d3258ad5f4d5ed68a32b32923432577453ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5ee0bb1dce2206902f6ccf1ed331d5c843690ce0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamstring"></a>CDynamicParameterAccessor::GetParamString
 Arabellekte depolanan belirtilen parametresinin dize verilerini alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringA& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CSimpleStringW& strOutput  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   CHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
-bool GetParamString(  
-   DBORDINAL nParam,  
-   WCHAR* pBuffer,  
-   size_t* pMaxLen  
-) throw( );  
+```
+bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringA& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CSimpleStringW& strOutput) throw();bool GetParamString(DBORDINAL nParam,  
+  CHAR* pBuffer,  
+   size_t* pMaxLen) throw();bool GetParamString(DBORDINAL nParam,  
+  WCHAR* pBuffer,  
+   size_t* pMaxLen) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

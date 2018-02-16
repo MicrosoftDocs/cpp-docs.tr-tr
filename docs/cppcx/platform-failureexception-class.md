@@ -6,23 +6,26 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::FailureException::FailureException
 - VCCORLIB/Platform::FailureException
-dev_langs: C++
-helpviewer_keywords: Platform::FailureException
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::FailureException
 ms.assetid: 1729cd07-bfc2-448e-9db5-185d5cbf5b81
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c9b5e641b0a7519ac49a04c8769439858f3d697b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f7cf6691f7f591f15660a8d8bfc5e4ebfc4a12ec
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformfailureexception-class"></a>Platform::FailureException sınıfı
 İşlemi başarısız olduğunda oluşturulur. E_FAIL HRESULT eşdeğeridir.  

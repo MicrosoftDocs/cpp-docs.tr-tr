@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,29 +14,30 @@ f1_keywords:
 - m_bReset
 - IRowsetImpl::m_bReset
 - ATL::IRowsetImpl::m_bReset
-dev_langs: C++
-helpviewer_keywords: m_bReset
+dev_langs:
+- C++
+helpviewer_keywords:
+- m_bReset
 ms.assetid: d423f9f3-4d48-4d0c-b152-684c81a0b34e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4cd9840b37157aed050bb71d48a275efd2849035
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1ca38b0fa56f901d18e90d3305c92cc097452369
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetimplmbreset"></a>IRowsetImpl::m_bReset
 İmleç konumu satır kümesinde tanımlı olup olmadığını belirlemek için kullanılan bit bayrağı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
+```cpp
 unsigned m_bReset:1;  
   
 ```  
