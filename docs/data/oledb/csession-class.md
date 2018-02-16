@@ -4,35 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CSession
 - ATL::CSession
 - ATL.CSession
-dev_langs: C++
-helpviewer_keywords: CSession class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSession class
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d8b6bb75d12b4ab96c3a44c74f4487eb8a70efc6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3402255bbbfc8e66a55654d91434fa60680a80a3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="csession-class"></a>CSession Sınıfı
 Tek veritabanı erişim oturumu temsil eder.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 class CSession  
 ```  
   
@@ -45,7 +48,7 @@ class CSession
 |[Durdurma](../../data/oledb/csession-abort.md)|İptal eder (sonlandırır) işlem.|  
 |[Kapat](../../data/oledb/csession-close.md)|Oturumunu kapatır.|  
 |[Tamamlama](../../data/oledb/csession-commit.md)|İşlem kaydeder.|  
-|[Gettransactionınfo](../../data/oledb/csession-gettransactioninfo.md)|Bir işlem ile ilgili bilgiler döndürür.|  
+|[GetTransactionInfo](../../data/oledb/csession-gettransactioninfo.md)|Bir işlem ile ilgili bilgiler döndürür.|  
 |[Açık](../../data/oledb/csession-open.md)|Veri kaynağı nesnesi için yeni bir oturum açar.|  
 |[StartTransaction](../../data/oledb/csession-starttransaction.md)|Bu oturum için yeni bir işlem başlatır.|  
   

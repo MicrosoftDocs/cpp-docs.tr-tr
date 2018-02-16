@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _gcvt_s
+ms.topic: reference
+apiname:
+- _gcvt_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - _gcvt_s
 - gcvt_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _gcvt_s function
 - _CVTBUFSIZE
@@ -35,16 +38,17 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8a028431bb324fe634ee30ae81eec6c2d3371441
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 567738b488ae648dbd67ea1d2b5cdf34b649170c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="gcvts"></a>_gcvt_s
 Kayan nokta değeri dizeye dönüştürür. Bu bir sürümüdür [_gcvt](../../c-runtime-library/reference/gcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -67,24 +71,24 @@ errno_t _gcvt_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`buffer`  
+ [out] `buffer`  
  Dönüştürme işleminin sonucu depolamak için bir arabellek.  
   
- [in]`sizeInBytes`  
+ [in] `sizeInBytes`  
  Arabellek boyutu.  
   
- [in]`value`  
+ [in] `value`  
  Dönüştürülecek değer.  
   
- [in]`digits`  
+ [in] `digits`  
  Depolanan basamak sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata nedeniyle geçersiz bir parametre oluşursa (geçersiz değerler için aşağıdaki tabloya bakın), geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu döndürdü. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ Zero if successful. Bir hata nedeniyle geçersiz bir parametre oluşursa (geçersiz değerler için aşağıdaki tabloya bakın), geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu döndürdü. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`sizeInBytes`|`value`|`digits`|Döndür|Değer`buffer`|  
+|`buffer`|`sizeInBytes`|`value`|`digits`|Döndür|Değer `buffer`|  
 |--------------|-------------------|-------------|--------------|------------|-----------------------|  
 |`NULL`|tüm|tüm|tüm|`EINVAL`|Değiştirilmedi.|  
 |Değil `NULL` (noktaları için geçerli bellek)|sıfır|tüm|tüm|`EINVAL`|Değiştirilmedi.|  
@@ -92,10 +96,10 @@ errno_t _gcvt_s(
   
  **Güvenlik Sorunları**  
   
- `_gcvt_s`erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
+ `_gcvt_s` erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_gcvt_s` İşlevin bir kayan nokta dönüştürür `value` (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar `buffer`. `buffer`Dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek uzunluğu `_CVTBUFSIZE` herhangi bir değişken için yeterliyse noktası değeri. Arabellek boyutu, `digits` + 1 kullanılır, işlevi son üzerine yazmaz arabelleği, bu nedenle bu işlem için yeterli arabellek sağladığınızdan emin olun. `_gcvt_s`üretmek çalışır `digits` onlu basamak. Başaramazsa üreten `digits` üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede gizlenebilir.  
+ `_gcvt_s` İşlevin bir kayan nokta dönüştürür `value` (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar `buffer`. `buffer` Dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek uzunluğu `_CVTBUFSIZE` herhangi bir değişken için yeterliyse noktası değeri. Arabellek boyutu, `digits` + 1 kullanılır, işlevi son üzerine yazmaz arabelleği, bu nedenle bu işlem için yeterli arabellek sağladığınızdan emin olun. `_gcvt_s` üretmek çalışır `digits` onlu basamak. Başaramazsa üreten `digits` üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede gizlenebilir.  
   
  C++'da, bu işlev tarafından bir şablon aşırı basitleştirilmiştir; aşırı yük, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -105,7 +109,7 @@ errno_t _gcvt_s(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_gcvt_s`|\<stdlib.h >|\<Error.h >|  
+|`_gcvt_s`|\<stdlib.h>|\<Error.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

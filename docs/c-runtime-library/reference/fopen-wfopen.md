@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wfopen
 - fopen
@@ -29,7 +30,8 @@ f1_keywords:
 - _tfopen
 - corecrt_wstdio/_wfopen
 - stdio/fopen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - opening files, for file I/O
 - wfopen function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-caps.latest.revision: "56"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 01558dfa6b28f10746c1487384bad44768b5877e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5619aa0db0c7905ec62fef31f5aa0cc25fae8924
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 Bir dosyayı açar. Ek parametre doğrulama ve return hata kodları gerçekleştirmek bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [fopen_s, _wfopen_s](../../c-runtime-library/reference/fopen-s-wfopen-s.md).  
@@ -79,14 +82,14 @@ FILE *_wfopen(
  Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `fopen` İşlev tarafından belirtilen dosyayı açar `filename`. Varsayılan olarak, bir dar `filename` dize ANSI kod sayfası (CP_ACP) kullanarak yorumlanır. Windows masaüstü uygulamalarında bu OEM codepage (CP_OEMCP) kullanarak değiştirilebilir [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) işlevi. Kullanabileceğiniz [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) belirlemek için işlev olup olmadığını `filename` ANSI ya da sistem varsayılan OEM kod sayfası kullanılarak yorumlanır. `_wfopen`bir joker karakter sürümü `fopen`; bağımsız değişkenleri `_wfopen` joker karakter dizelerdir. Aksi takdirde, `_wfopen` ve `fopen` aynı şekilde davranır. Yalnızca kullanmak `_wfopen` dosya akışı kullanılan kodlanmış karakter kümesi etkilemez.  
+ `fopen` İşlev tarafından belirtilen dosyayı açar `filename`. Varsayılan olarak, bir dar `filename` dize ANSI kod sayfası (CP_ACP) kullanarak yorumlanır. Windows masaüstü uygulamalarında bu OEM codepage (CP_OEMCP) kullanarak değiştirilebilir [SetFileApisToOEM](https://msdn.microsoft.com/library/windows/desktop/aa365534\(v=vs.85\).aspx) işlevi. Kullanabileceğiniz [AreFileApisANSI](https://msdn.microsoft.com/library/windows/desktop/aa363781\(v=vs.85\).aspx) belirlemek için işlev olup olmadığını `filename` ANSI ya da sistem varsayılan OEM kod sayfası kullanılarak yorumlanır. `_wfopen` bir joker karakter sürümü `fopen`; bağımsız değişkenleri `_wfopen` joker karakter dizelerdir. Aksi takdirde, `_wfopen` ve `fopen` aynı şekilde davranır. Yalnızca kullanmak `_wfopen` dosya akışı kullanılan kodlanmış karakter kümesi etkilemez.  
   
- `fopen`Geçerli yürütme noktasında dosya sistemi yolları kabul eder; `fopen` UNC yollarını ve ilgili yolları kodu yürütür sistem paylaşımına erişimi olduğu sürece eşlenen ağ sürücülerini veya sürücü, yürütme sırasında eşlenmiş kabul eder. İçin yollar oluşturmak zaman `fopen`, sürücüler, yolları veya ağ paylaşımlarına yürütme ortamında kullanılabilir olacağından emin olun. Eğik çizgi (/) veya ters eğik çizgi kullanabilirsiniz (\\) yolu dizin ayırıcı olarak.  
+ `fopen` Geçerli yürütme noktasında dosya sistemi yolları kabul eder; `fopen` UNC yollarını ve ilgili yolları kodu yürütür sistem paylaşımına erişimi olduğu sürece eşlenen ağ sürücülerini veya sürücü, yürütme sırasında eşlenmiş kabul eder. İçin yollar oluşturmak zaman `fopen`, sürücüler, yolları veya ağ paylaşımlarına yürütme ortamında kullanılabilir olacağından emin olun. Eğik çizgi (/) veya ters eğik çizgi kullanabilirsiniz (\\) yolu dizin ayırıcı olarak.  
   
  Her zaman dosyanın herhangi bir ek işlemi gerçekleştirmeden önce işaretçisi NULL olup olmadığını görmek için dönüş değerini denetleyin. Bir hata oluşursa, genel değişkeni `errno` ayarlanır ve belirli hata bilgilerini elde etmek için kullanılabilir. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="unicode-support"></a>Unicode Desteği  
- `fopen`Unicode dosya akışları destekler. Geçişi bir Unicode dosyası açmak için bir `ccs` için istenen kodlamayı belirten bayrak `fopen`aşağıdaki gibi.  
+ `fopen` Unicode dosya akışları destekler. Geçişi bir Unicode dosyası açmak için bir `ccs` için istenen kodlamayı belirten bayrak `fopen`aşağıdaki gibi.  
   
  `FILE *fp = fopen("newfile.txt", "rt+, ccs=encoding");`  
   
@@ -103,7 +106,7 @@ FILE *_wfopen(
   
 ### <a name="encodings-used-based-on-ccs-flag-and-bom"></a>Kodlamalar kullanılan temel alarak bayrağı ve ürün reçetesi ccs  
   
-|`ccs`bayrağı|Hiçbir ürün reçetesi (veya yeni dosyası)|ÜRÜN REÇETESİ: UTF-8|ÜRÜN REÇETESİ: UTF-16|  
+|`ccs` Bayrağı|Hiçbir ürün reçetesi (veya yeni dosyası)|BOM: UTF-8|BOM: UTF-16|  
 |----------------|----------------------------|-----------------|------------------|  
 |`UNICODE`|`UTF-16LE`|`UTF-8`|`UTF-16LE`|  
 |`UTF-8`|`UTF-8`|`UTF-8`|`UTF-16LE`|  
@@ -185,14 +188,14 @@ FILE *_wfopen(
   
  Geçerli karakterleri `mode` kullanılan dize `fopen` ve `_fdopen` karşılık `oflag` kullanılan bağımsız değişkenler [_kurulum Aç](../../c-runtime-library/reference/open-wopen.md) ve [_sopen](../../c-runtime-library/reference/sopen-wsopen.md)gibi.  
   
-|Mod dizedeki karakter|Eşdeğer `oflag` değeri`_open`/`_sopen`|  
+|Mod dizedeki karakter|Eşdeğer `oflag` değeri `_open`/`_sopen`|  
 |-------------------------------|----------------------------------------------------|  
-|`a`|`_O_WRONLY &#124; _O_APPEND`(genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
-|`a+`|`_O_RDWR &#124; _O_APPEND`(genellikle `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  
+|`a`|`_O_WRONLY &#124; _O_APPEND` (genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
+|`a+`|`_O_RDWR &#124; _O_APPEND` (genellikle `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  
 |`r`|`_O_RDONLY`|  
 |`r+`|`_O_RDWR`|  
-|`w`|`_O_WRONLY`(genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|  
-|`w+`|`_O_RDWR`(genellikle `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|  
+|`w`|`_O_WRONLY` (genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|  
+|`w+`|`_O_RDWR` (genellikle `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|  
 |`b`|`_O_BINARY`|  
 |`t`|`_O_TEXT`|  
 |`c`|Yok.|  
@@ -214,7 +217,7 @@ FILE *_wfopen(
 |`fopen`|\<stdio.h >|  
 |`_wfopen`|\<stdio.h > veya \<wchar.h >|  
   
- `_wfopen`bir Microsoft uzantısıdır. Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ `_wfopen` bir Microsoft uzantısıdır. Uyumluluğu hakkında daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
  `c`, `n`, `t`, `S`, `R`, `T`, Ve `D` `mode` seçenekleri için Microsoft uzantıları olan `fopen` ve `_fdopen` ve burada kullanılmamalıdır ANSI taşınabilirlik istenen.  
   

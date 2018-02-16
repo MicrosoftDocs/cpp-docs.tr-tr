@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _tzset
+ms.topic: reference
+apiname:
+- _tzset
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,29 +23,32 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-time-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _tzset
-dev_langs: C++
+f1_keywords:
+- _tzset
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tzset function
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f103da7ca67721f6c654c593746b9427954c6930
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4f364d1af095e8fb793c2cd01a5b12ce62b9029a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="tzset"></a>_tzset
 Ayarlar, ortam değişkenleri zaman.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -91,7 +96,7 @@ set TZ=GST-1GDT
 |`_daylight`|Bir gün ışığından yararlanma saati bölge belirtilmişse sıfır olmayan bir değer `TZ` ayarlama; Aksi takdirde, 0.|1.|  
 |`_timezone`|Yerel saat ile UTC arasındaki farkı saniye cinsinden.|28800 (28800 saniye eşittir 8 saat)|  
 |`_tzname`[0]|Saat dilimi adı değeri dize `TZ` ortam değişkeni; boş ise `TZ` ayarlanmadı.|PST|  
-|`_tzname`[1]|Dize değeri gün ışığından yararlanma saati bölgenin; gelen gün ışığından yararlanma saati dilimi atlanırsa boş `TZ` ortam değişkeni.|SAATİ|  
+|`_tzname`[1]|Dize değeri gün ışığından yararlanma saati bölgenin; gelen gün ışığından yararlanma saati dilimi atlanırsa boş `TZ` ortam değişkeni.|PDT|  
   
  Önceki tabloda gösterilen varsayılan değerler `_daylight` ve `_tzname` dizi karşılık gelen "PST8PDT." Gelen DST bölge atlanırsa `TZ` ortam değişkeni, değeri `_daylight` 0'dır ve `_ftime`, `gmtime`, ve `localtime` işlevleri için kendi DST bayraklar 0 döndürür.  
   
@@ -144,5 +149,5 @@ _tzname[0] = Pacific Standard Time
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime, _gmtime32, _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md)   
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md)

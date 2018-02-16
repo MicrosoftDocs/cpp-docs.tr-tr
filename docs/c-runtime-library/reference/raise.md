@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: raise
+ms.topic: reference
+apiname:
+- raise
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-runtime-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: Raise
-dev_langs: C++
+f1_keywords:
+- Raise
+dev_langs:
+- C++
 helpviewer_keywords:
 - signals, sending to executing programs
 - raise function
@@ -31,12 +35,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1b7ec6c886c96bae93f511e54119500d58d6fea5
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5a116bfab72222bcf3ee3357c77759960f838cb9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="raise"></a>tetikle
 
@@ -55,7 +60,7 @@ int raise(
 
 ### <a name="parameters"></a>Parametreler
 
-*SIG*  
+*sig*  
 Çıkarılmasına sinyal.
 
 ## <a name="return-value"></a>Dönüş Değeri

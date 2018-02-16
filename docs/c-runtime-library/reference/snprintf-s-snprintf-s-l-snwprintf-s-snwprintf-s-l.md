@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _snprintf_s
 - _snprintf_s_l
@@ -37,7 +38,8 @@ f1_keywords:
 - snwprintf_s
 - sntprintf_s
 - sntprintf_s_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _snprintf_s_l function
 - _snwprintf_s_l function
@@ -53,16 +55,17 @@ helpviewer_keywords:
 - _snwprintf_s function
 - formatted text [C++]
 ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b0af77da88c86cdd42dabd10dd3228a5da405aae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5f164afa6a4eef0544482192ec69a47c56164d68
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="snprintfs-snprintfsl-snwprintfs-snwprintfsl"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 Biçimlendirilmiş verileri bir dizeye yazar. Sürümleri bunlar [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -136,7 +139,7 @@ int _snwprintf_s(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_snprintf_s`depolanan karakterlerin sayısını döndürür `buffer`, sonlandırma null karakteri sayım değil. `_snwprintf_s`depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
+ `_snprintf_s` depolanan karakterlerin sayısını döndürür `buffer`, sonlandırma null karakteri sayım değil. `_snwprintf_s` depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
   
  Veri ve bir sonlandırma null depolamak için gerekli depolama aşarsa `sizeOfBuffer`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Geçersiz parametre işleyicisi sonra yürütme devam ederse, bu işlevler kümesi `buffer` boş bir dize olarak ayarlayın `errno` için `ERANGE`ve -1 döndürür.  
   
@@ -152,7 +155,7 @@ int _snwprintf_s(
 > [!IMPORTANT]
 >  Emin `format` kullanıcı tanımlı bir dize değil.  
   
- `_snwprintf_s`bir joker karakter sürümü `_snprintf_s`; işaretçi bağımsız değişkenleri `_snwprintf_s` joker karakter dizelerdir. Kodlama hataları algılama `_snwprintf_s` uygulamasında farklılık gösterebilir `_snprintf_s`. `_snwprintf_s`, gibi `swprintf_s`, bir dize yerine bir hedef türü çıktısı Yazar `FILE`.  
+ `_snwprintf_s` bir joker karakter sürümü `_snprintf_s`; işaretçi bağımsız değişkenleri `_snwprintf_s` joker karakter dizelerdir. Kodlama hataları algılama `_snwprintf_s` uygulamasında farklılık gösterebilir `_snprintf_s`. `_snwprintf_s`, gibi `swprintf_s`, bir dize yerine bir hedef türü çıktısı Yazar `FILE`.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

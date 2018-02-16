@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - getchar
 - getwchar
@@ -26,7 +27,8 @@ apitype: DLLExport
 f1_keywords:
 - getwchar
 - GetChar
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - gettchar function
 - characters, reading
@@ -34,16 +36,17 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bc45c7d367008745b7cfa7e933ec65909c37fde8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2e3af8fbc613a3c1634e24011e22283dd8520f7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 Bir karakter standart girişten okur.  
@@ -59,7 +62,7 @@ wint_t getwchar();
  Okuma karakteri döndürür. Bir okuma hatası ya da dosya sonu koşulu belirtmek üzere `getchar` döndürür `EOF`, ve `getwchar` döndürür `WEOF`. İçin `getchar`, kullanın `ferror` veya `feof` bir hata ya da dosya sonu denetlemek için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her yordam tek karakteri okur `stdin` ve sonraki karaktere işaret edecek şekilde ilişkili dosya işaretçisini artırır. `getchar`aynı [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), ancak bir makrosu ve bir işlevi olarak uygulanır.  
+ Her yordam tek karakteri okur `stdin` ve sonraki karaktere işaret edecek şekilde ilişkili dosya işaretçisini artırır. `getchar` aynı [_fgetchar](../../c-runtime-library/reference/fgetc-fgetwc.md), ancak bir makrosu ve bir işlevi olarak uygulanır.  
   
  Bu işlevler çağıran iş parçacığı Kilitle ve bu nedenle iş parçacığı güvenlidir. Kilitleme olmayan bir sürümü için bkz: [_getchar_nolock, _getwchar_nolock](../../c-runtime-library/reference/getchar-nolock-getwchar-nolock.md).  
   
@@ -76,7 +79,7 @@ wint_t getwchar();
 |`getchar`|\<stdio.h >|  
 |`getwchar`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="example"></a>Örnek  
   

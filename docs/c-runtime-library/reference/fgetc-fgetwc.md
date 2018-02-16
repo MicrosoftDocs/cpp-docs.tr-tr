@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fgetwc
 - fgetc
@@ -27,7 +28,8 @@ f1_keywords:
 - _fgettc
 - fgetwc
 - fgetc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fgettc function
 - characters, reading
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - reading characters from streams
 - fgetwc function
 ms.assetid: 13348b7b-dc86-421c-9d6c-611ca79c8338
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: de0b211c15077f62ecd3af0f774125e91f53017a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 39149a3963e6950e708499d64efe3c412df96fb5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fgetc-fgetwc"></a>fgetc, fgetwc
 Bir karakterin üzerinden bir akış okuyun.  
@@ -67,14 +70,14 @@ wint_t fgetwc(
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fgetc`olarak okuma karakteri döndürür bir `int` veya verir `EOF` bir hata veya dosya sonu belirtmek için. `fgetwc`döndürür, olarak bir [wint_t](../../c-runtime-library/standard-types.md), okuma karakterine karşılık gelen veya verir geniş karakter `WEOF` bir hata veya dosya sonu belirtmek için. Her iki işlevlerini kullanmak `feof` veya `ferror` hata bir dosya sonu durumu arasında ayrım yapmak için. Okuma hatası oluşursa, akış için hata göstergesi ayarlanır. Varsa `stream` olan `NULL`, `fgetc` ve `fgetwc` açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EOF`.  
+ `fgetc` olarak okuma karakteri döndürür bir `int` veya verir `EOF` bir hata veya dosya sonu belirtmek için. `fgetwc` döndürür, olarak bir [wint_t](../../c-runtime-library/standard-types.md), okuma karakterine karşılık gelen veya verir geniş karakter `WEOF` bir hata veya dosya sonu belirtmek için. Her iki işlevlerini kullanmak `feof` veya `ferror` hata bir dosya sonu durumu arasında ayrım yapmak için. Okuma hatası oluşursa, akış için hata göstergesi ayarlanır. Varsa `stream` olan `NULL`, `fgetc` ve `fgetwc` açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EOF`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri tek bir karakter ile ilişkili dosya geçerli konumunu okur `stream`. İşlev sonra ilişkili dosya işaretçisini (tanımlıysa) sonraki karaktere işaret edecek şekilde artırır. Akış dosya sonu ise dosya sonu gösterge akış için ayarlanır.  
   
- `fgetc`eşdeğer olan `getc`, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır.  
+ `fgetc` eşdeğer olan `getc`, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır.  
   
- `fgetwc`joker karakter sürümü `fgetc`; bunu okuyan `c` birden çok baytlı karakter veya mi göre geniş karakter olarak `stream` metin modunda veya ikili modunda açılır.  
+ `fgetwc` joker karakter sürümü `fgetc`; bunu okuyan `c` birden çok baytlı karakter veya mi göre geniş karakter olarak `stream` metin modunda veya ikili modunda açılır.  
   
  Sürümleriyle `_nolock` soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır.  
   
@@ -132,7 +135,7 @@ int main( void )
 }  
 ```  
   
-## <a name="input-crtfgetctxt"></a>Giriş: crt_fgetc.txt  
+## <a name="input-crtfgetctxt"></a>Input: crt_fgetc.txt  
   
 ```  
 Line one.  

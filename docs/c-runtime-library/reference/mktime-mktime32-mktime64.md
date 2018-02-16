@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mktime32
 - mktime
@@ -27,7 +28,8 @@ apitype: DLLExport
 f1_keywords:
 - mktime
 - _mktime64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _mktime32 function
 - mktime function
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - _mktime64 function
 - time, converting
 ms.assetid: 284ed5d4-7064-48a2-bd50-15effdae32cf
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 33ab39945526ac2f53eab653ec374856953fc27e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ee2673f98f219559fd42d192dd934c8fe3eaed8c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mktime-mktime32-mktime64"></a>mktime, _mktime32, _mktime64
 Yerel saat Takvim değerine dönüştürür.  
@@ -71,16 +74,16 @@ __time64_t _mktime64(
  Zaman yapısına yönelik işaretçinin; bkz: [asctime](../../c-runtime-library/reference/asctime-wasctime.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mktime32`türünde bir değer kodlanmış belirtilen takvim saati döndürür [time_t](../../c-runtime-library/standard-types.md). Varsa *timeptr* gece, 1 Ocak 1970'ten, önceki bir tarihi başvuruyor veya Takvim zaman gösterilemezse `_mktime32` yazmak için cast -1 döndürür `time_t`. Kullanırken `_mktime32` ve *timeptr* başvurular bir tarih 23:59:59 18 Ocak 2038, Eşgüdümlü Evrensel Saat (UTC), sonra da yazmak için cast -1 döndürecektir `time_t`.  
+ `_mktime32` türünde bir değer kodlanmış belirtilen takvim saati döndürür [time_t](../../c-runtime-library/standard-types.md). Varsa *timeptr* gece, 1 Ocak 1970'ten, önceki bir tarihi başvuruyor veya Takvim zaman gösterilemezse `_mktime32` yazmak için cast -1 döndürür `time_t`. Kullanırken `_mktime32` ve *timeptr* başvurular bir tarih 23:59:59 18 Ocak 2038, Eşgüdümlü Evrensel Saat (UTC), sonra da yazmak için cast -1 döndürecektir `time_t`.  
   
- `_mktime64`türü için cast -1 döner `__time64_t` varsa *timeptr* 23:59:59 31 Aralık 3000 UTC tarihinden başvuruyor.  
+ `_mktime64` türü için cast -1 döner `__time64_t` varsa *timeptr* 23:59:59 31 Aralık 3000 UTC tarihinden başvuruyor.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `mktime`, `_mktime32` Ve `_mktime64` işlevleri Dönüştür gösterdiği sağlanan zaman yapısı (büyük olasılıkla tamamlanmamış) *timeptr* ile tam olarak tanımlanmış bir yapı içinde normalleştirilmiş değerleri ve kendisine dönüştüren bir `time_t` takvim saat değeri. Aynı kodlama tarafından döndürülen değer olarak dönüştürülen süresi olan [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi. Özgün değerlerini `tm_wday` ve `tm_yday` bileşenlerinin *timeptr* yapısı yok sayılır ve diğer bileşenleri özgün değerlerini kendi normal aralıklarına sınırlı değildir.  
   
- `mktime`eşdeğer olan bir satır içi işlev `_mktime64`sürece `_USE_32BIT_TIME_T` tanımlanır ve bu durumda eşdeğer olan `_mktime32`.  
+ `mktime` eşdeğer olan bir satır içi işlev `_mktime64`sürece `_USE_32BIT_TIME_T` tanımlanır ve bu durumda eşdeğer olan `_mktime32`.  
   
- Sonra UTC ayarlama `_mktime32` tanıtıcıları 23:59:59 18 Ocak 2038, 1 Ocak 1970 yarısı UTC tarihleri. `_mktime64`gece yarısından, 1 Ocak 1970'ten ile 23:59:59, 31 Aralık 3000 tarihlerden işler. Bu düzeltme -1 döndürmek bu işlevler neden olabilir (için cast `time_t`, `__time32_t` veya `__time64_t`) belirttiğiniz tarih aralığı içinde olsa bile. Kahire, UTC öncesinde iki saat olan Mısır içinde varsa örneğin, iki saat önce belirttiğiniz tarih çıkarılacak *timeptr*; bu artık Tarih aralık dışında bırakabilir.  
+ Sonra UTC ayarlama `_mktime32` tanıtıcıları 23:59:59 18 Ocak 2038, 1 Ocak 1970 yarısı UTC tarihleri. `_mktime64` gece yarısından, 1 Ocak 1970'ten ile 23:59:59, 31 Aralık 3000 tarihlerden işler. Bu düzeltme -1 döndürmek bu işlevler neden olabilir (için cast `time_t`, `__time32_t` veya `__time64_t`) belirttiğiniz tarih aralığı içinde olsa bile. Kahire, UTC öncesinde iki saat olan Mısır içinde varsa örneğin, iki saat önce belirttiğiniz tarih çıkarılacak *timeptr*; bu artık Tarih aralık dışında bırakabilir.  
   
  Bu işlevler doğrulamak ve tm yapısında doldurmak için kullanılabilir. Başarılı, bu işlevlerin değerini ayarlarsanız `tm_wday` ve `tm_yday` olarak uygun ve belirtilen Takvim zaman temsil etmek için diğer bileşenleri ayarlanmış, ancak değerlerinde normal aralıklarına zorlandı. Son değerini `tm_mday` kadar ayarlanmadı `tm_mon` ve `tm_year` belirlenir. Belirtirken bir `tm` yapısı zaman, Ayarla `tm_isdst` alanı:  
   
@@ -90,7 +93,7 @@ __time64_t _mktime64(
   
 -   Bir değer sıfırdan C çalışma zamanı kitaplığı kodu sağlamak için standart saati gün ışığından yararlanma saati etkin olup işlem.  
   
- C çalışma zamanı kitaplığı gün ışığından yararlanma tasarrufları zamanı davranışından belirleyecek [TZ](../../c-runtime-library/reference/tzset.md) ortam değişkeni. Varsa `TZ` ayarlı değil, Win32 API çağrısı [GetTimeZoneInformation](http://msdn.microsoft.com/library/windows/desktop/ms724421.aspx) gün ışığından yararlanma işletim sisteminden saat bilgisi almak için kullanılır. Bu başarısız olursa, Amerika Birleşik Devletleri kurallar gün ışığından yararlanma saati hesaplama uygulamak için kullanılan kitaplık varsayar. `tm_isdst`gerekli bir alandır. Yoksa değerini ayarlamak, tanımlı değil ve bu işlevlerin dönüş değerini tahmin edilemez. Varsa *timeptr* işaret eden bir `tm` önceki bir çağrı tarafından döndürülen yapısı `asctime`, `gmtime`, veya `localtime` (veya bu işlevler çeşitlemelerini) `tm_isdst` alan doğru değeri içerir.  
+ C çalışma zamanı kitaplığı gün ışığından yararlanma tasarrufları zamanı davranışından belirleyecek [TZ](../../c-runtime-library/reference/tzset.md) ortam değişkeni. Varsa `TZ` ayarlı değil, Win32 API çağrısı [GetTimeZoneInformation](http://msdn.microsoft.com/library/windows/desktop/ms724421.aspx) gün ışığından yararlanma işletim sisteminden saat bilgisi almak için kullanılır. Bu başarısız olursa, Amerika Birleşik Devletleri kurallar gün ışığından yararlanma saati hesaplama uygulamak için kullanılan kitaplık varsayar. `tm_isdst` gerekli bir alandır. Yoksa değerini ayarlamak, tanımlı değil ve bu işlevlerin dönüş değerini tahmin edilemez. Varsa *timeptr* işaret eden bir `tm` önceki bir çağrı tarafından döndürülen yapısı `asctime`, `gmtime`, veya `localtime` (veya bu işlevler çeşitlemelerini) `tm_isdst` alan doğru değeri içerir.  
   
  Unutmayın `gmtime` ve `localtime` (ve `_gmtime32`, `_gmtime64`, `_localtime32`, ve `_localtime64`) dönüştürme için iş parçacığı başına tek bir arabellek kullanın. Bu arabelleğin sağlarsanız `mktime`, `_mktime32` veya `_mktime64`, önceki içeriği yok.  
   

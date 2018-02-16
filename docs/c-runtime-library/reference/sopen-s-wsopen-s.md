@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _sopen_s
 - _wsopen_s
@@ -28,7 +29,8 @@ f1_keywords:
 - wsopen_s
 - _wsopen_s
 - sopen_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sopen_s function
 - _wsopen_s function
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - _sopen_s function
 - files [C++], sharing
 ms.assetid: 059a0084-d08c-4973-9174-55e391b72aa2
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 403fc7f285aeebf5fc7b6d4ebb39d1e922d8edc0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 67bc88f047806e21245389837b9f712d3491033a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sopens-wsopens"></a>_sopen_s, _wsopen_s
 Bir dosya paylaşımı için açılır. Bu sürümleri [_sopen ve _wsopen](../../c-runtime-library/reference/sopen-wsopen.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -72,19 +75,19 @@ errno_t _wsopen_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pfh`  
+ [out] `pfh`  
  Dosya tanıtıcısı veya -1 hata durumunda.  
   
- [in]`filename`  
+ [in] `filename`  
  Dosya adı.  
   
- [in]`oflag`  
+ [in] `oflag`  
  İzin verilen işlem türü.  
   
- [in]`shflag`  
+ [in] `shflag`  
  İzin verilen paylaşım türü.  
   
- [in]`pmode`  
+ [in] `pmode`  
  İzni ayarı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -94,7 +97,7 @@ errno_t _wsopen_s(
  Belirtilen yol bir dizin olduğundan veya dosya salt okunur durumdadır, ancak yazma için açık işlem yapılmaya çalışıldı.  
   
  `EEXIST`  
- `_O_CREAT`ve `_O_EXCL` bayrakları belirtildi, ancak `filename` zaten mevcut.  
+ `_O_CREAT` ve `_O_EXCL` bayrakları belirtildi, ancak `filename` zaten mevcut.  
   
  `EINVAL`  
  Geçersiz `oflag`, `shflag`, veya `pmode` bağımsız değişken veya `pfh` veya `filename` null işaretçi oluştu.  
@@ -112,7 +115,7 @@ errno_t _wsopen_s(
  Bir hata olması durumunda, aracılığıyla -1 döndürülür `pfh` (sürece `pfh` null işaretçi).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_sopen_s` İşlev tarafından belirtilen dosyayı açar `filename` tarafından tanımlanan dosya paylaşılan okuma veya yazma için hazırlar `oflag` ve `shflag`. `_wsopen_s`bir joker karakter sürümü `_sopen_s`; `filename` bağımsız değişkeni `_wsopen_s` bir joker karakter dizesidir. `_wsopen_s`ve `_sopen_s` Aksi takdirde aynı şekilde davranır.  
+ `_sopen_s` İşlev tarafından belirtilen dosyayı açar `filename` tarafından tanımlanan dosya paylaşılan okuma veya yazma için hazırlar `oflag` ve `shflag`. `_wsopen_s` bir joker karakter sürümü `_sopen_s`; `filename` bağımsız değişkeni `_wsopen_s` bir joker karakter dizesidir. `_wsopen_s` ve `_sopen_s` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -159,7 +162,7 @@ errno_t _wsopen_s(
  Bir dosya (çevrilmiş) metin modunda açılır. (Daha fazla bilgi için bkz: [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md) ve [fopen](../../c-runtime-library/reference/fopen-wfopen.md).)  
   
  `_O_TRUNC`  
- Bir dosyayı açar ve onu uzunluğu sıfır olarak keser; Dosya yazma iznine sahip olmalıdır. İle belirtilemez `_O_RDONLY`. `_O_TRUNC`ile kullanılan `_O_CREAT` varolan bir dosyayı açar veya bir dosya oluşturur.  
+ Bir dosyayı açar ve onu uzunluğu sıfır olarak keser; Dosya yazma iznine sahip olmalıdır. İle belirtilemez `_O_RDONLY`. `_O_TRUNC` ile kullanılan `_O_CREAT` varolan bir dosyayı açar veya bir dosya oluşturur.  
   
 > [!NOTE]
 >  `_O_TRUNC` Bayrağı belirtilen dosyanın içeriğini yok eder.  
@@ -196,7 +199,7 @@ errno_t _wsopen_s(
  `_SH_DENYNO`  
  İzinleri okuma ve yazma erişimi.  
   
- `pmode` Bağımsız değişkeni gereklidir her zaman, aksine, `_sopen`. Belirttiğinizde `_O_CREAT`, dosyanın mevcut değilse `pmode` yeni dosya ilk kez kapatıldığında ayarlanan dosyanın izin ayarları, belirtir. Aksi takdirde `pmode` göz ardı edilir. `pmode`birini veya her ikisini bildirim sabitleri içeren bir tamsayı ifade `_S_IWRITE` ve `_S_IREAD`, içinde tanımlanan \<sys\stat.h >. Her iki sabitleri verildiğinde, bunlar bit düzeyinde OR işleci ile birleştirilir. Anlamını `pmode` aşağıdaki gibidir.  
+ `pmode` Bağımsız değişkeni gereklidir her zaman, aksine, `_sopen`. Belirttiğinizde `_O_CREAT`, dosyanın mevcut değilse `pmode` yeni dosya ilk kez kapatıldığında ayarlanan dosyanın izin ayarları, belirtir. Aksi takdirde `pmode` göz ardı edilir. `pmode` birini veya her ikisini bildirim sabitleri içeren bir tamsayı ifade `_S_IWRITE` ve `_S_IREAD`, içinde tanımlanan \<sys\stat.h >. Her iki sabitleri verildiğinde, bunlar bit düzeyinde OR işleci ile birleştirilir. Anlamını `pmode` aşağıdaki gibidir.  
   
  `_S_IWRITE`  
  Yazma izin verilir.  
@@ -209,7 +212,7 @@ errno_t _wsopen_s(
   
  Yazma izni verilmedi, dosya salt okunurdur. Windows işletim sisteminde, tüm dosyaları okunabilir; salt yazılır izin vermek mümkün değildir. Bu nedenle, modları `_S_IWRITE` ve `_S_IREAD | _S_IWRITE` eşdeğerdir.  
   
- `_sopen_s`Geçerli dosya izni maskesi uygular `pmode` önce izinleri ayarlayın. (Bkz [_umask](../../c-runtime-library/reference/umask.md).)  
+ `_sopen_s` Geçerli dosya izni maskesi uygular `pmode` önce izinleri ayarlayın. (Bkz [_umask](../../c-runtime-library/reference/umask.md).)  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -218,7 +221,7 @@ errno_t _wsopen_s(
 |`_sopen_s`|\<io.h >|\<fcntl.h >, \<sys\types.h >, \<sys\stat.h >, \<share.h >|  
 |`_wsopen_s`|\<io.h > veya \<wchar.h >|\<fcntl.h >, \<sys/types.h >, \<sys/stat.h >, \<share.h >|  
   
- `_sopen_s`ve `_wsopen_s` Microsoft uzantıları. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ `_sopen_s` ve `_wsopen_s` Microsoft uzantıları. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="example"></a>Örnek  
  Örneğin bkz [_locking](../../c-runtime-library/reference/locking.md).  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wfopen_s
 - fopen_s
@@ -27,7 +28,8 @@ f1_keywords:
 - fopen_s
 - _tfopen_s
 - _wfopen_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wfopen_s function
 - opening files, for file I/O
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - files [C++], opening
 - Unicode [C++], files
 ms.assetid: c534857e-39ee-4a3f-bd26-dfe551ac96c3
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3205577627967fa58c3fbc0d1318a48fc5525561
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 97221d04dcd93fbaa32a3562320d0c098fa001ae
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fopens-wfopens"></a>fopen_s, _wfopen_s
 Bir dosyayı açar. Bu sürümleri [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -70,13 +73,13 @@ errno_t _wfopen_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pFile`  
+ [out] `pFile`  
  Açılan dosyayı işaretçisine alacak dosya işaretçisini gösteren bir işaretçi.  
   
- [in]`filename`  
+ [in] `filename`  
  Dosya adı.  
   
- [in]`mode`  
+ [in] `mode`  
  İzin verilen erişim türü.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -84,7 +87,7 @@ errno_t _wfopen_s(
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`pFile`|`filename`|`mode`|Dönüş Değeri|İçeriği`pFile`|  
+|`pFile`|`filename`|`mode`|Dönüş Değeri|İçeriği `pFile`|  
 |-------------|----------------|------------|------------------|------------------------|  
 |`NULL`|tüm|tüm|`EINVAL`|Değişmedi|  
 |tüm|`NULL`|tüm|`EINVAL`|Değişmedi|  
@@ -93,18 +96,18 @@ errno_t _wfopen_s(
 ## <a name="remarks"></a>Açıklamalar  
  Tarafından açılan dosyaları `fopen_s` ve `_wfopen_s` paylaşılabilir değildir. Bir dosyanın paylaşılabilir olması gerekiyorsa kullanın [_fsopen, _wfsopen](../../c-runtime-library/reference/fsopen-wfsopen.md) uygun Paylaşım modu sabiti ile — Örneğin, `_SH_DENYNO` okuma/yazma paylaşım.  
   
- `fopen_s` İşlev tarafından belirtilen dosyayı açar `filename`. `_wfopen_s`bir joker karakter sürümü `fopen_s`; bağımsız değişkenleri `_wfopen_s` joker karakter dizelerdir. `_wfopen_s`ve `fopen_s` Aksi takdirde aynı şekilde davranır.  
+ `fopen_s` İşlev tarafından belirtilen dosyayı açar `filename`. `_wfopen_s` bir joker karakter sürümü `fopen_s`; bağımsız değişkenleri `_wfopen_s` joker karakter dizelerdir. `_wfopen_s` ve `fopen_s` Aksi takdirde aynı şekilde davranır.  
   
- `fopen_s`Geçerli yürütme noktasında dosya sistemi yolları kabul eder; UNC yollarını ve eşlenen ağ sürücülerini içeren yollar kabul edilir tarafından `fopen_s` kodu yürütmesini sistem paylaşımına erişimi olduğundan veya ağ sürücüsü, yürütme sırasında eşlenmiş sürece. İçin yollar oluşturmak zaman `fopen_s`, sürücüler, yollar, kullanılabilirliği hakkında özelliklerinin yapmayın veya ağ paylaşımları yürütme ortamında. Eğik çizgi (/) veya ters eğik çizgi kullanabilirsiniz (\\) yolu dizin ayırıcı olarak.  
+ `fopen_s` Geçerli yürütme noktasında dosya sistemi yolları kabul eder; UNC yollarını ve eşlenen ağ sürücülerini içeren yollar kabul edilir tarafından `fopen_s` kodu yürütmesini sistem paylaşımına erişimi olduğundan veya ağ sürücüsü, yürütme sırasında eşlenmiş sürece. İçin yollar oluşturmak zaman `fopen_s`, sürücüler, yollar, kullanılabilirliği hakkında özelliklerinin yapmayın veya ağ paylaşımları yürütme ortamında. Eğik çizgi (/) veya ters eğik çizgi kullanabilirsiniz (\\) yolu dizin ayırıcı olarak.  
   
  Bu işlevler kendi parametreleri doğrulayın. Varsa `pFile`, `filename`, veya `mode` null işaretçi açıklandığı gibi geçersiz bir parametre özel durum, bu işlevler üret [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   
  Her zaman dosyanın başka herhangi bir işlemi gerçekleştirmeden önce işlevi başarılı olup olmadığını görmek için dönüş değerini denetleyin. Bir hata oluşursa, döndürülen hata kodu ve genel değişkeni `errno` ayarlanır. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="unicode-support"></a>Unicode desteği  
- `fopen_s`Unicode dosya akışları destekler. Yeni veya varolan bir Unicode dosyası açmak için geçirmek bir `ccs` için istenen kodlamayı belirten bayrak `fopen_s`:  
+ `fopen_s` Unicode dosya akışları destekler. Yeni veya varolan bir Unicode dosyası açmak için geçirmek bir `ccs` için istenen kodlamayı belirten bayrak `fopen_s`:  
   
- `fopen_s(&fp, "newfile.txt", "rw, ccs=`*kodlama*`");`  
+ `fopen_s(&fp, "newfile.txt", "rw, ccs=`*Kodlama*`");`  
   
  İzin verilen değerler, *kodlama* olan `UNICODE`, `UTF-8`, ve `UTF-16LE`. İçin hiçbir değer var. belirtilmişse, *kodlama*, `fopen_s` ANSI kodlamasını kullanır.  
   
@@ -117,7 +120,7 @@ errno_t _wfopen_s(
   
 ### <a name="encodings-used-based-on-ccs-flag-and-bom"></a>Kodlamalar kullanılan temel alarak bayrağı ve ürün reçetesi ccs  
   
-|`ccs`bayrağı|Hiçbir ürün reçetesi (veya yeni dosyası)|ÜRÜN REÇETESİ: UTF-8|ÜRÜN REÇETESİ: UTF-16|  
+|`ccs` Bayrağı|Hiçbir ürün reçetesi (veya yeni dosyası)|BOM: UTF-8|BOM: UTF-16|  
 |----------------|----------------------------|-----------------|------------------|  
 |`UNICODE`|`UTF-16LE`|`UTF-8`|`UTF-16LE`|  
 |`UTF-8`|`UTF-8`|`UTF-8`|`UTF-16LE`|  
@@ -199,14 +202,14 @@ errno_t _wfopen_s(
   
  Geçerli karakterleri `mode` kullanılan dize `fopen_s` ve `_fdopen` karşılık `oflag` kullanılan bağımsız değişkenler [_kurulum Aç](../../c-runtime-library/reference/open-wopen.md) ve [_sopen](../../c-runtime-library/reference/sopen-wsopen.md)gibi.  
   
-|Mod dizedeki karakter|Eşdeğer `oflag` değeri`_open`/`_sopen`|  
+|Mod dizedeki karakter|Eşdeğer `oflag` değeri `_open`/`_sopen`|  
 |-------------------------------|----------------------------------------------------|  
-|`a`|`_O_WRONLY &#124; _O_APPEND`(genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
-|`a+`|`_O_RDWR &#124; _O_APPEND`(genellikle `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  
+|`a`|`_O_WRONLY &#124; _O_APPEND` (genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_APPEND`)|  
+|`a+`|`_O_RDWR &#124; _O_APPEND` (genellikle `_O_RDWR &#124; _O_APPEND &#124; _O_CREAT` )|  
 |`r`|`_O_RDONLY`|  
 |`r+`|`_O_RDWR`|  
-|`w`|`_O_WRONLY`(genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|  
-|`w+`|`_O_RDWR`(genellikle `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|  
+|`w`|`_O_WRONLY` (genellikle `_O_WRONLY &#124; _O_CREAT &#124; _O_TRUNC`)|  
+|`w+`|`_O_RDWR` (genellikle `_O_RDWR &#124; _O_CREAT &#124; _O_TRUNC`)|  
 |`b`|`_O_BINARY`|  
 |`t`|`_O_TEXT`|  
 |`c`|Yok.|  

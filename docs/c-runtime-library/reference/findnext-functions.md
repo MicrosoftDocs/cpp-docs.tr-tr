@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wfindnext
 - _findnext
@@ -60,7 +61,8 @@ f1_keywords:
 - _wfindnexti64
 - _tfindnext
 - _findnext32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wfindnexti64 function
 - _tfindnext32 function
@@ -99,16 +101,17 @@ helpviewer_keywords:
 - tfindnext32i64 function
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6fbb76781c04afb1de970cde3d233d54909b64a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 79f6d41be7de31e6dd3889eae712a47394858b3e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="findnext-findnext32-findnext32i64-findnext64-findnext64i32-findnexti64-wfindnext-wfindnext32-wfindnext32i64-wfindnext64-wfindnext64i32-wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 Sonraki adı varsa, eşleşen bulma `filespec` önceki çağrı değişkeninde [_findfirst](../../c-runtime-library/reference/findfirst-functions.md)ve ardından alter `fileinfo` yapısı içeriği uygun şekilde.  
@@ -198,7 +201,7 @@ int _wfindnext64i32(
   
 ### <a name="time-type-and-file-length-type-variations-of-findnext"></a>Saat türü ve dosya uzunluğu türü _findnext varyasyonları  
   
-|İşlevler|`_USE_32BIT_TIME_T`tanımlanan?|Zaman türü|Dosya uzunluğu türü|  
+|İşlevler|`_USE_32BIT_TIME_T` tanımlanan?|Zaman türü|Dosya uzunluğu türü|  
 |---------------|----------------------------------|---------------|----------------------|  
 |`_findnext`, `_wfindnext`|Tanımlı değil|64 bit|32 bit:|  
 |`_findnext`, `_wfindnext`|Tanımlı|32 bit:|32 bit:|  

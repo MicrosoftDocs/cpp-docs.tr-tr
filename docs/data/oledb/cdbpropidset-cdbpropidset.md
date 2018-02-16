@@ -1,10 +1,11 @@
 ---
-title: "Cdbpropıdset::cdbpropıdset | Microsoft Docs"
+title: CDBPropIDSet::CDBPropIDSet | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,36 +14,35 @@ f1_keywords:
 - CDBPropIDSet.CDBPropIDSet
 - CDBPropIDSet::CDBPropIDSet
 - ATL.CDBPropIDSet.CDBPropIDSet
-dev_langs: C++
-helpviewer_keywords: CDBPropIDSet class, constructor
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDBPropIDSet class, constructor
 ms.assetid: e68cc20e-fce2-4cc1-9e9d-05c542334cc8
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e3967acbc41098df0278c56a71d2b077c322b9af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 19fc024fc0edb11f5211ba51469adb622524454f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdbpropidsetcdbpropidset"></a>CDBPropIDSet::CDBPropIDSet
 Oluşturucu. Başlatır **rgProperties**, **cProperties**ve (isteğe bağlı) **guidPropertySet** alanlarının [DBPROPIDSET](https://msdn.microsoft.com/en-us/library/ms717981.aspx) yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      CDBPropIDSet(  
-   const GUID& guid   
-);  
-CDBPropIDSet(   
-   const CDBPropIDSet& propidset    
-);  
-CDBPropIDSet( );  
+```cpp
+      CDBPropIDSet(const GUID& guid);  
+
+CDBPropIDSet(const CDBPropIDSet& propidset);  
+
+CDBPropIDSet();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -56,5 +56,5 @@ CDBPropIDSet( );
  **Başlık:** atldbcli.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Cdbpropıdset sınıfı](../../data/oledb/cdbpropidset-class.md)   
+ [CDBPropIDSet Class](../../data/oledb/cdbpropidset-class.md)   
  [CDBPropIDSet::SetGUID](../../data/oledb/cdbpropidset-setguid.md)

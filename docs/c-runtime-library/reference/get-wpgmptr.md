@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _get_wpgmptr
 apilocation:
@@ -40,11 +40,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d80fddf79be3c94eda07958919a886735666dc0d
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: d8e272573db55e413d9654f1968f535b44dd5a7c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getwpgmptr"></a>_get_wpgmptr
 Geçerli değerini alır `_wpgmptr` genel değişkeni.  
@@ -58,7 +58,7 @@ errno_t _get_wpgmptr(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pValue`  
+ [out] `pValue`  
  Geçerli değeri ile doldurulması için bir dize için bir işaretçi `_wpgmptr` değişkeni.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

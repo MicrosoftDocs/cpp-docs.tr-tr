@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vc.tables.runtime
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- vc.tables.runtime
+dev_langs:
+- C++
 ms.assetid: c2169b0e-cd86-489a-a2fa-2ee15c03b5c2
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6149962694f9ff60a27645d014389d5b3467b7b6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8dd4e811bd164fc44fe0c159218807594994b273
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crt-alphabetical-function-reference"></a>CRT Alfabetik İşlev Başvurusu
 C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yordamı tarafından düzenlenir. İşlevselliğine bağlı CRT yordamı bulmak için bkz: [kategorilere göre çalışma zamanı yordamları](../../c-runtime-library/run-time-routines-by-category.md).  
@@ -27,17 +31,17 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [abort](../../c-runtime-library/reference/abort.md)  
   
- [Abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
+ [abs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
  [_abs64](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
- [erişim](../../c-runtime-library/reference/access-crt.md)  
+ [access](../../c-runtime-library/reference/access-crt.md)  
   
  [_access](../../c-runtime-library/reference/access-waccess.md)  
   
  [_access_s](../../c-runtime-library/reference/access-s-waccess-s.md)  
   
- [ACOS](../../c-runtime-library/reference/acos-acosf-acosl.md)  
+ [acos](../../c-runtime-library/reference/acos-acosf-acosl.md)  
   
  [acosf](../../c-runtime-library/reference/acos-acosf-acosl.md)  
   
@@ -97,7 +101,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [asinf](../../c-runtime-library/reference/asin-asinf-asinl.md)  
   
- [ASİNH](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)  
+ [asinh](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)  
   
  [asinhf](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)  
   
@@ -105,7 +109,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)  
   
- [Assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)  
+ [assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)  
   
  [_assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)  
   
@@ -117,7 +121,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [atan](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
   
- [ATAN2](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
+ [atan2](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
   
  [atan2f](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
   
@@ -125,7 +129,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [atanf](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)  
   
- [ATANH](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)  
+ [atanh](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)  
   
  [atanhf](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)  
   
@@ -649,7 +653,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_execvpe](../../c-runtime-library/reference/execvpe-wexecvpe.md)  
   
- [Çıkış](../../c-runtime-library/reference/exit-exit-exit.md)  
+ [exit](../../c-runtime-library/reference/exit-exit-exit.md)  
   
  [_Exit](../../c-runtime-library/reference/exit-exit-exit.md)  
   
@@ -805,7 +809,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_flushall](../../c-runtime-library/reference/flushall.md)  
   
- [FMA](../../c-runtime-library/reference/fma-fmaf-fmal.md)  
+ [fma](../../c-runtime-library/reference/fma-fmaf-fmal.md)  
   
  [fmaf](../../c-runtime-library/reference/fma-fmaf-fmal.md)  
   
@@ -1063,7 +1067,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_getdrives](../../c-runtime-library/reference/getdrives.md)  
   
- [GETENV](../../c-runtime-library/reference/getenv-wgetenv.md)  
+ [getenv](../../c-runtime-library/reference/getenv-wgetenv.md)  
   
  [getenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)  
   
@@ -1131,7 +1135,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_hypotl](../../c-runtime-library/reference/hypot-hypotf-hypotl-hypot-hypotf-hypotl.md)  
   
- **T**  
+ **I**  
   
  [_i64toa](../../c-runtime-library/reference/itoa-i64toa-ui64toa-itow-i64tow-ui64tow.md)  
   
@@ -1179,7 +1183,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [isatty](../../c-runtime-library/reference/posix-isatty.md)  
   
- [EBOŞSA](../../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)  
+ [isblank](../../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)  
   
  [_isblank_l](../../c-runtime-library/reference/isblank-iswblank-isblank-l-iswblank-l.md)  
   
@@ -1343,7 +1347,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_ismbstrail_l](../../c-runtime-library/reference/ismbslead-ismbstrail-ismbslead-l-ismbstrail-l.md)  
   
- [isNaN](../../c-runtime-library/reference/isnan-isnan-isnanf.md)  
+ [isnan](../../c-runtime-library/reference/isnan-isnan-isnanf.md)  
   
  [_isnan](../../c-runtime-library/reference/isnan-isnan-isnanf.md)  
   
@@ -1449,11 +1453,11 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_j1](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
- [J1](../../c-runtime-library/reference/j0-j1-jn.md)  
+ [j1](../../c-runtime-library/reference/j0-j1-jn.md)  
   
  [_jn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
- [Jn](../../c-runtime-library/reference/j0-j1-jn.md)  
+ [jn](../../c-runtime-library/reference/j0-j1-jn.md)  
   
  **K**  
   
@@ -1461,7 +1465,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [kbhit](../../c-runtime-library/reference/posix-kbhit.md)  
   
- **M**  
+ **L**  
   
  [Labs](../../c-runtime-library/reference/abs-labs-llabs-abs64.md)  
   
@@ -1689,7 +1693,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_mbsdec](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)  
   
- [mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)  
+ [_mbsdec_l](../../c-runtime-library/reference/strdec-wcsdec-mbsdec-mbsdec-l.md)  
   
  [_mbsdup](../../c-runtime-library/reference/strdup-wcsdup-mbsdup.md)  
   
@@ -1949,7 +1953,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  **N**  
   
- [NaN](../../c-runtime-library/reference/nan-nanf-nanl.md)  
+ [nan](../../c-runtime-library/reference/nan-nanf-nanl.md)  
   
  [nanf](../../c-runtime-library/reference/nan-nanf-nanl.md)  
   
@@ -1977,7 +1981,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [nexttowardl](../../c-runtime-library/reference/nextafter-functions.md)  
   
- [Norm](../../c-runtime-library/reference/norm-normf-norml1.md)  
+ [norm](../../c-runtime-library/reference/norm-normf-norml1.md)  
   
  [normf](../../c-runtime-library/reference/norm-normf-norml1.md)  
   
@@ -1997,7 +2001,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [open](../../c-runtime-library/reference/open.md)  
   
- [_kurulum Aç](../../c-runtime-library/reference/open-wopen.md)  
+ [_open](../../c-runtime-library/reference/open-wopen.md)  
   
  [_open_osfhandle](../../c-runtime-library/reference/open-osfhandle.md)  
   
@@ -2021,7 +2025,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [powl](../../c-runtime-library/reference/pow-powf-powl.md)  
   
- [Printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
+ [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
   
  [_printf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)  
   
@@ -2107,7 +2111,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_recalloc_dbg](../../c-runtime-library/reference/recalloc-dbg.md)  
   
- [Kalan](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)  
+ [remainder](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)  
   
  [remainderf](../../c-runtime-library/reference/remainder-remainderf-remainderl.md)  
   
@@ -2279,7 +2283,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [sinf](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)  
   
- [SİNH](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)  
+ [sinh](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)  
   
  [sinhf](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)  
   
@@ -2375,7 +2379,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_sprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)  
   
- [Sqrt](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)  
+ [sqrt](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)  
   
  [sqrtf](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)  
   
@@ -2679,7 +2683,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_tempnam_dbg](../../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md)  
   
- [sonlandırma](../../c-runtime-library/reference/terminate-crt.md)  
+ [Sonlandırma](../../c-runtime-library/reference/terminate-crt.md)  
   
  [tgamma](../../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)  
   
@@ -2687,7 +2691,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [tgammal](../../c-runtime-library/reference/tgamma-tgammaf-tgammal.md)  
   
- [saat](../../c-runtime-library/reference/time-time32-time64.md)  
+ [Saat](../../c-runtime-library/reference/time-time32-time64.md)  
   
  [_time32](../../c-runtime-library/reference/time-time32-time64.md)  
   
@@ -2709,7 +2713,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [__toascii](../../c-runtime-library/reference/toascii-toascii.md)  
   
- [ToAscii](../../c-runtime-library/reference/toascii-toascii.md)  
+ [toascii](../../c-runtime-library/reference/toascii-toascii.md)  
   
  [tolower](../../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)  
   
@@ -2771,7 +2775,7 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [__uncaught_exception](../../c-runtime-library/reference/uncaught-exception.md)  
   
- [beklenmeyen](../../c-runtime-library/reference/unexpected-crt.md)  
+ [unexpected](../../c-runtime-library/reference/unexpected-crt.md)  
   
  [ungetc](../../c-runtime-library/reference/ungetc-ungetwc.md)  
   
@@ -3479,11 +3483,11 @@ C çalışma zamanı (CRT) kitaplığı başvuru belgeleri alfabetik olarak yord
   
  [_y1](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
- [Y1](../../c-runtime-library/reference/y0-y1-yn.md)  
+ [y1](../../c-runtime-library/reference/y0-y1-yn.md)  
   
  [_yn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)  
   
- [Yn](../../c-runtime-library/reference/y0-y1-yn.md)  
+ [yn](../../c-runtime-library/reference/y0-y1-yn.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C Çalışma Zamanı Kitaplığı Başvurusu](../../c-runtime-library/c-run-time-library-reference.md)

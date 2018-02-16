@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - sinl
 - sinf
@@ -35,7 +36,8 @@ f1_keywords:
 - sin
 - sinhf
 - _sinhl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sinh function
 - _sinl function
@@ -49,52 +51,43 @@ helpviewer_keywords:
 - sinhl function
 - hyperbolic functions
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: de4f4914589c5803733bdcd279b3d0a3fa00e360
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 54718553d71a498463dbc881da8ceb3401ff5b5b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sin-sinf-sinl-sinh-sinhf-sinhl"></a>sin, sinf, sinl, sinh, sinhf, sinhl
 Sinüsü ve hiperbolik sinüsü hesaplar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-double sin(  
-   double x   
-);  
-float sin(  
-   float x  
-);  // C++ only  
-long double sin(  
-   long double x  
-);  // C++ only  
-float sinf(  
-   float x   
-);  
-long double sinl(   long double x  
-);  
-double sinh(  
-   double x   
-);  
-float sinh(  
-   float x   
-);  // C++ only  
-long double sinh(  
-   long double x  
-);  // C++ only  
-float sinhf(  
-   float x  
-);  
-long double sinhl(  
-   long double x  
-);  
+```cpp  
+double sin(double x);
+  
+float sin(float x);  // C++ only 
+ 
+long double sin(long double x);  // C++ only  
+
+float sinf(float x);  
+
+long double sinl(long double x);  
+
+double sinh(double x);  
+
+float sinh(float x);  // C++ only  
+
+long double sinh(long double x);  // C++ only  
+
+float sinhf(float x);  
+
+long double sinhl(long double x);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -110,7 +103,7 @@ long double sinhl(
 |-----------|-------------------|-----------------------|  
 |± QNAN, UL|Yok.|_DOMAIN|  
 |± ∞ (sin, sinf, sinl)|GEÇERSİZ|_DOMAIN|  
-|&#124; x &#124; ≥ 7.104760e + 002 (sinh, sinhf, sinhl)|TAŞMA + FİLTRESİNİN|TAŞMA|  
+|&#124; x &#124; ≥ 7.104760e + 002 (sinh, sinhf, sinhl)|TAŞMA + FİLTRESİNİN|OVERFLOW|  
   
  Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -136,7 +129,7 @@ long double sinhl(
 #include <math.h>  
 #include <stdio.h>  
   
-int main( void )  
+int main( void)  
 {  
    double pi = 3.1415926535;  
    double x, y;  
@@ -162,9 +155,9 @@ cosh( 1.570796 ) = 2.509178
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [ACOS, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
+ [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
  [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)   
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
- [Tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
+ [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
  [_CIsin](../../c-runtime-library/cisin.md)

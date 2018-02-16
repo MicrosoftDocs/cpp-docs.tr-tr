@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _swprintf_s_l
 - _sprintf_s_l
@@ -33,7 +34,8 @@ f1_keywords:
 - stdio/_swprintf_s_l
 - _sprintf_s_l
 - _swprintf_s_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - stprintf_s function
 - stprintf_s_l function
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - _sprintf_s_l function
 - formatted text [C++]
 ms.assetid: 424f0a29-22ef-40e8-b565-969f5f57782f
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e1dda25ab045262dffb34085519f4cf8b8bf226c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e0ebdfb3745378088799883e1263686c44a8239f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sprintfs-sprintfsl-swprintfs-swprintfsl"></a>sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l
 Biçimlendirilmiş verileri dizeye yazma. Sürümleri bunlar [sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](../../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -125,7 +128,7 @@ int swprintf_s(
 ## <a name="return-value"></a>Dönüş Değeri  
  Yazılan karakter sayısını veya bir hata oluştuysa -1. Varsa `buffer` veya `format` null işaretçi `sprintf_s` ve `swprintf_s` -1 döndürür ve ayarlayın `errno` için `EINVAL`.  
   
- `sprintf_s`depolanan bayt sayısını verir `buffer`, sonlandırma null karakteri sayım değil. `swprintf_s`depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
+ `sprintf_s` depolanan bayt sayısını verir `buffer`, sonlandırma null karakteri sayım değil. `swprintf_s` depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `sprintf_s` İşlevi biçimlendirir ve bir dizi karakter ve değerleri depolar `buffer`. Her `argument` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev `format` bağımsız değişkeni için [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). Bir null karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.  
@@ -134,7 +137,7 @@ int swprintf_s(
   
  Diğer temel fark `sprintf_s` ve `sprintf` olan `sprintf_s` karakter çıkış arabelleğinin boyutunu belirtme uzunluk parametresi alır. Arabellek sonlandırma null dahil olmak üzere biçimlendirilmiş metin için çok küçük ardından arabellek boş bir dize olarak bir null karakter koyarak ayarlanır `buffer[0]`, ve geçersiz parametre işleyicisi çağrılır. Farklı `_snprintf`, `sprintf_s` arabellek arabellek boyutu sıfır değilse sonlandırılmış emin garanti eder.  
   
- `swprintf_s`bir joker karakter sürümü `sprintf_s`; işaretçi bağımsız değişkenleri `swprintf_s` joker karakter dizelerdir. Kodlama hataları algılama `swprintf_s` , farklı olabilir `sprintf_s`. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
+ `swprintf_s` bir joker karakter sürümü `sprintf_s`; işaretçi bağımsız değişkenleri `swprintf_s` joker karakter dizelerdir. Kodlama hataları algılama `swprintf_s` , farklı olabilir `sprintf_s`. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
  C++'da, Bu işlevlerden birinin kullanımını şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak bir boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan kaldırarak çıkarımını ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

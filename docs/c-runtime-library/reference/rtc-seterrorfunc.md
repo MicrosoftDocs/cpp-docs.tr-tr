@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _RTC_SetErrorFunc
+ms.topic: reference
+apiname:
+- _RTC_SetErrorFunc
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - RTC_SetErrorFunc
 - _RTC_SetErrorFunc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - RTC_SetErrorFunc function
 - _RTC_SetErrorFunc function
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: de71b832af9e6ed2f734f193e49a7c240193edce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 89d1ddf7b95b44c005d2e55f3813796fa21f716b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rtcseterrorfunc"></a>_RTC_SetErrorFunc
 Çalışma zamanı hata denetimleri (RTCs) raporlama için işleyici olarak bir işlev belirler. Bu işlev kullanım dışıdır; kullanmak `_RTC_SetErrorFuncW` yerine.  
@@ -52,7 +56,7 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *işlevi*  
+ *İşlevi*  
  Çalışma zamanı hata denetimleri işleyecek işlevi adresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -65,7 +69,7 @@ ms.lasthandoff: 12/21/2017
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_RTC_SetErrorFunc`|\<rtcapi.h >|  
+|`_RTC_SetErrorFunc`|\<rtcapi.h>|  
   
  Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

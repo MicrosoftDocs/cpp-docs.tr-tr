@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _fpieee_flt
+ms.topic: reference
+apiname:
+- _fpieee_flt
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,23 +26,25 @@ apitype: DLLExport
 f1_keywords:
 - fpieee_flt
 - _fpieee_flt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _fpieee_flt function
 - exception handling, floating-point
 - floating-point exception handling
 - fpieee_flt function
 ms.assetid: 2bc4801e-0eed-4e73-b518-215da8cc9740
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 63472ad24a981a39a20e6c0cabb82f7c96d1e59e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 88d05d4d8c7f403cc2702c5a0ec3b2af840bd320
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fpieeeflt"></a>_fpieee_flt
 IEEE kayan nokta özel durumlar için kullanıcı tanımlı tuzak işleyiciyi çağırır.  
@@ -73,12 +77,12 @@ int _fpieee_flt(
   
  `_FPIEEE_RECORD` Fpieee.h içinde tanımlanan yapısı, bir IEEE kayan nokta özel durum ilgili bilgiler içerir. Bu yapı kullanıcı tanımlı yakalama işleyicisi tarafından geçirilir `_fpieee_flt`.  
   
-|_Fpıeee_record alan|Açıklama|  
+|_FPIEEE_RECORD field|Açıklama|  
 |----------------------------|-----------------|  
 |`unsigned int RoundingMode`, `unsigned int Precision`|Bu alanların özel durum oluştu anda kayan nokta ortamı hakkında bilgi içerir.|  
 |`unsigned int Operation`|Yakalamanın neden işlemi türünü belirtir. Bir karşılaştırma türündeyse (`_FpCodeCompare`), özel birini sağlayabilir `_FPIEEE_COMPARE_RESULT` değerleri (Fpieee.h içinde tanımlanan) `Result.Value` alan. Dönüştürme türü (`_FpCodeConvert`) yakalama bir kayan nokta dönüştürme işlemi sırasında oluştuğunu gösterir. Bakabilirsiniz `Operand1` ve `Result` türleri dönüştürme yapılmaya çalışılan türü belirlenemedi.|  
-|`_FPIEEE_VALUE Operand1`, `_FPIEEE_VALUE Operand2`, `_FPIEEE_VALUE Result`|Bu yapıları türleri ve önerilen sonuç ve işlenen değerlerini belirtin:<br /><br /> `OperandValid`Yanıt veren değerinin geçerli olup olmadığını belirten bayrak.<br /><br /> `Format`Karşılık gelen değerin veri türü. Biçim türü, karşılık gelen değerle geçerli olmasa bile döndürdü.<br /><br /> `Value`Sonuç veya işlenen veri değeri.|  
-|`_FPIEEE_EXCEPTION_FLAGS Cause`, `_FPIEEE_EXCEPTION_FLAGS Enable`, `_FPIEEE_EXCEPTION_FLAGS Status`|Kayan nokta özel durum türünü her bir bit alan _FPIEEE_EXCEPTION_FLAGS içerir.<br /><br /> Bu alanlar ve için sağlanan özel durumlar maskelemek için kullanılan bağımsız değişkenler arasındaki ilişkiyi yoktur [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md).<br /><br /> Her bitin tam anlamını bağlama bağlıdır:<br /><br /> `Cause`Her bit ayarlamak gerçekleşmesine neden olan belirli bir özel durum belirtir.<br /><br /> `Enable`Her bit ayarlamak belirli özel durum şu anda maskelenmemiş olduğunu gösterir.<br /><br /> `Status`Her bit ayarlamak belirli özel durum şu anda beklemede olduğunu gösterir. Bu tarafından maskelenen çünkü oluşturuldu olmayan özel durumları içerir `_controlfp`.|  
+|`_FPIEEE_VALUE Operand1`, `_FPIEEE_VALUE Operand2`, `_FPIEEE_VALUE Result`|Bu yapıları türleri ve önerilen sonuç ve işlenen değerlerini belirtin:<br /><br /> `OperandValid` Yanıt veren değerinin geçerli olup olmadığını belirten bayrak.<br /><br /> `Format` Karşılık gelen değerin veri türü. Biçim türü, karşılık gelen değerle geçerli olmasa bile döndürdü.<br /><br /> `Value` Sonuç veya işlenen veri değeri.|  
+|`_FPIEEE_EXCEPTION_FLAGS Cause`, `_FPIEEE_EXCEPTION_FLAGS Enable`, `_FPIEEE_EXCEPTION_FLAGS Status`|Kayan nokta özel durum türünü her bir bit alan _FPIEEE_EXCEPTION_FLAGS içerir.<br /><br /> Bu alanlar ve için sağlanan özel durumlar maskelemek için kullanılan bağımsız değişkenler arasındaki ilişkiyi yoktur [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md).<br /><br /> Her bitin tam anlamını bağlama bağlıdır:<br /><br /> `Cause` Her bit ayarlamak gerçekleşmesine neden olan belirli bir özel durum belirtir.<br /><br /> `Enable` Her bit ayarlamak belirli özel durum şu anda maskelenmemiş olduğunu gösterir.<br /><br /> `Status` Her bit ayarlamak belirli özel durum şu anda beklemede olduğunu gösterir. Bu tarafından maskelenen çünkü oluşturuldu olmayan özel durumları içerir `_controlfp`.|  
   
  Bunları etkinleştirdiğinizde devre dışı bırakılmış özel durumları oluşturulur. Bu kullanırken tanımsız davranışlara neden olabilir `_fpieee_flt` bir özel durum filtresi olarak. Her zaman çağrısı [_clearfp](../../c-runtime-library/reference/clear87-clearfp.md) kayan nokta özel durumları etkinleştirmeden önce.  
   
@@ -86,7 +90,7 @@ int _fpieee_flt(
   
 |İşlev|Gerekli başlık|  
 |--------------|---------------------|  
-|`_fpieee_flt`|\<fpieee.h >|  
+|`_fpieee_flt`|\<fpieee.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

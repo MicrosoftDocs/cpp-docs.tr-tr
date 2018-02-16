@@ -1,10 +1,11 @@
 ---
-title: IRowsetNotifyCP::fire_onrowchange | Microsoft Docs
+title: IRowsetNotifyCP::Fire_OnRowChange | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,37 +14,36 @@ f1_keywords:
 - Fire_OnRowChange
 - ATL::IRowsetNotifyCP::Fire_OnRowChange
 - IRowsetNotifyCP::Fire_OnRowChange
-dev_langs: C++
-helpviewer_keywords: Fire_OnRowChange method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Fire_OnRowChange method
 ms.assetid: 6f9beed6-7a69-4c92-936f-422e98f3de5c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8a2530aa2496dca64f238c003ac6e25c9f80d6c5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a1b957ebf13dce0b276955bd9f089b461677b556
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="irowsetnotifycpfireonrowchange"></a>IRowsetNotifyCP::Fire_OnRowChange
 Yayınlar bir [OnRowChange](https://msdn.microsoft.com/en-us/library/ms722694.aspx) bağlantı noktasındaki tüm dinleyicileri olaya **IID_IRowsetNotify** tüketicilere satırları etkileyen bir değişiklik.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Fire_OnRowChange(  
-   IRowset* pRowset,  
+```cpp
+HRESULT Fire_OnRowChange(IRowset* pRowset,  
    DBCOUNTITEM cRows,  
    const HROW rghRows[],  
    DBREASON eReason,  
    DBEVENTPHASE ePhase,  
-   BOOL fCantDeny   
-);  
+   BOOL fCantDeny);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

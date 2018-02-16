@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e36360279adf22857cfdb5b2f79ffdd7486ca008
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f7e54d98ac4e1398753746dcac074de53ee2e7a0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="exceptions-ccx"></a>Özel durumlar (C + +/ CX)
 
@@ -27,7 +28,7 @@ Hata işleme C + +/ CX özel durumlarını temel alır. En temel düzeyde Window
 
 C++ programınız throw ve catch Windows çalışma zamanı işleminden gelen bir özel durum, türetilmiş bir özel durum `std::exception`, veya kullanıcı tanımlı tür. JavaScript'te, özel durum yakalar kod yazıldığında yalnızca, uygulama ikili arabirimi (ABI) sınır Örneğin, geçtiğinde Windows çalışma zamanı özel durum vardır. Windows çalışma zamanı C++ özel durum ABI sınırına ulaştığında, özel durum veri dönüştürülür bir `Platform::FailureException` özel durum E_FAIL HRESULT temsil eder. ABI hakkında daha fazla bilgi için bkz: [C++'da Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-Bildirebilirsiniz bir [Platform::Exception](platform-exception-class.md) HRESULT parametresini ya da bir HRESULT parametresi ele iki oluşturucular birini kullanarak ve [Platform::String](platform-string-class.md)^ arasında geçirilen parametre ABI, işleme tüm Windows mağazası uygulaması. Veya iki birini kullanarak bir özel durum bildirebilirsiniz [Exception::CreateException yöntemi](platform-exception-class.md#createexception) HRESULT parametresini ya da bir HRESULT parametre almayan aşırı ve `Platform::String^` parametresi.
+Bildirebilirsiniz bir [Platform::Exception](platform-exception-class.md) HRESULT parametresini ya da bir HRESULT parametresi ele iki oluşturucular birini kullanarak ve [Platform::String](platform-string-class.md)^ arasında geçirilen parametre ABI, işleme herhangi bir Windows çalışma zamanı uygulamaya. Veya iki birini kullanarak bir özel durum bildirebilirsiniz [Exception::CreateException yöntemi](platform-exception-class.md#createexception) HRESULT parametresini ya da bir HRESULT parametre almayan aşırı ve `Platform::String^` parametresi.
 
 ## <a name="standard-exceptions"></a>Standart özel durumlar
 

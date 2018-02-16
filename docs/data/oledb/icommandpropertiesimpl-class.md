@@ -4,35 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - ICommandPropertiesImpl
 - ATL.ICommandPropertiesImpl
 - ATL::ICommandPropertiesImpl
-dev_langs: C++
-helpviewer_keywords: ICommandPropertiesImpl class
+dev_langs:
+- C++
+helpviewer_keywords:
+- ICommandPropertiesImpl class
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5878e7fa6345e294025b45474b1b384d01283c49
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4fbcdd2647337b8e265d3d79e6c02c1698e54e33
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl Sınıfı
 Bir uygulamasını sağlar [ICommandProperties](https://msdn.microsoft.com/en-us/library/ms723044.aspx) arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class T, class PropClass = T>  
 class ATL_NO_VTABLE ICommandPropertiesImpl   
    : public ICommandProperties, public CUtlProps<PropClass>  

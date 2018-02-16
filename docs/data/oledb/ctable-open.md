@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,47 +13,46 @@ f1_keywords:
 - ATL::CTable::Open
 - CTable::Open
 - CTable.Open
-dev_langs: C++
-helpviewer_keywords: Open method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Open method
 ms.assetid: 5d006d95-74d7-4e2b-b243-a33bc53b5455
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e664ddb310892004b95c81c8c7d93d8035b82cd3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8f4e969e1ab8fd6e43a2a8c1d568974b41f3b692
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ctableopen"></a>CTable::Open
 Tablo açar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT Open(  
-   const CSession& session,  
+```cpp
+HRESULT Open(const CSession& session,  
    LPCWSTR wszTableName,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw ();  
+
+
+HRESULT Open(const CSession& session,  
    LPCSTR szTableName,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
-HRESULT Open(  
-   const CSession& session,  
+   ULONG ulPropSets = 0) throw ();  
+
+
+HRESULT Open(const CSession& session,  
    DBID& dbid,  
    DBPROPSET* pPropSet = NULL,  
-   ULONG ulPropSets = 0  
-) throw ( );  
+   ULONG ulPropSets = 0) throw ();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
@@ -65,7 +65,7 @@ HRESULT Open(
  *szTableName*  
  [in] Açmak için tablonun adını ANSI dize olarak geçirildi.  
   
- *DBID*  
+ *dbid*  
  [in] **DBID** açmak için tablonun.  
   
  *pPropSet*  

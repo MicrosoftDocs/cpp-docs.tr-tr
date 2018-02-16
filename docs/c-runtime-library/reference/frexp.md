@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: frexp
+ms.topic: reference
+apiname:
+- frexp
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - frexp
 - _frexpl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _frexpl function
 - mantissas, floating-point variables
@@ -33,16 +36,17 @@ helpviewer_keywords:
 - frexp function
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 86152082b081cb93ba264e607b256a2448874af2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 02eab6e7912a69a6189568d9a5530ace88d8430b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="frexp"></a>frexp
 Mantis ve üs bir kayan noktalı sayının alır.  
@@ -72,7 +76,7 @@ long double frexp(
  Saklı tamsayı üs işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `frexp`Mantis döndürür. Varsa `x` 0, 0 Mantis ve Üs işlevi döndürür. Varsa `expptr` olan `NULL`, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
+ `frexp` Mantis döndürür. Varsa `x` 0, 0 Mantis ve Üs işlevi döndürür. Varsa `expptr` olan `NULL`, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `frexp` İşlevi keser kayan nokta değeri (`x`) bir Mantis içine (`m`) ve bir üs (`n`), şekilde mutlak değerini `m` 0,5'den az 1.0, eşit veya daha büyük olduğundan ve `x`  =  `m`* 2<sup>n</sup>. Tamsayı üs `n` gösterdiği konumunda depolanan `expptr`.  

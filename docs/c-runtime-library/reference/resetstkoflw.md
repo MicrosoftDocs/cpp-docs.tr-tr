@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _resetstkoflw
+ms.topic: reference
+apiname:
+- _resetstkoflw
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,29 +25,31 @@ apitype: DLLExport
 f1_keywords:
 - resetstkoflw
 - _resetstkoflw
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - resetstkoflw function
 - stack overflow
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5bebef156656ba3618c216ad8266e1baf5dd7f9b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 89a62ddd07f21a89e8b34cb62f1a5e5147d92b06
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="resetstkoflw"></a>_resetstkoflw
 Yığın taşması kurtarır.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -83,7 +87,7 @@ int _resetstkoflw ( void );
   
  Bu noktada, yığın artık koruma sayfası sahip olduğunu unutmayın. Program yığının sonuna tüm büyür sonraki açışınızda koruma sayfası olması gerektiğini burada program yığının sonuna yazar ve erişim ihlaline neden oluyor.  
   
- Çağrı `_resetstkoflw` kurtarma yığın taşması özel durumdan sonra yapılır her koruma sayfası geri yüklemek için. Bu işlev ana gövdesi içinde çağrılabilir bir `__except` blok veya dış bir **__except** bloğu. Ancak, ne zaman kullanılmalı bazı kısıtlamalar vardır. `_resetstkoflw`hiçbir zaman öğesinden çağrılması:  
+ Çağrı `_resetstkoflw` kurtarma yığın taşması özel durumdan sonra yapılır her koruma sayfası geri yüklemek için. Bu işlev ana gövdesi içinde çağrılabilir bir `__except` blok veya dış bir **__except** bloğu. Ancak, ne zaman kullanılmalı bazı kısıtlamalar vardır. `_resetstkoflw` hiçbir zaman öğesinden çağrılması:  
   
 -   Bir filtre ifadesi.  
   

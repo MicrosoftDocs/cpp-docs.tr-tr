@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _RTC_SetErrorFuncW
+ms.topic: reference
+apiname:
+- _RTC_SetErrorFuncW
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,7 +25,8 @@ apitype: DLLExport
 f1_keywords:
 - _RTC_SetErrorFuncW
 - RTC_SetErrorFuncW
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - run-time errors
 - RTC_SetErrorFuncW function
@@ -31,16 +34,17 @@ helpviewer_keywords:
 - _RTC_SetErrorFuncW function
 - RTC_error_fnW typedef
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4cd751c88e5af3fde5c0f5415520a2c634a1958e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f586823ffcab1e8d602375c9d955c78ac64c043f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rtcseterrorfuncw"></a>_RTC_SetErrorFuncW
 Çalışma zamanı hata denetimleri (RTCs) raporlaması için işleyici olarak bir işlev belirler.  
@@ -62,7 +66,7 @@ ms.lasthandoff: 12/21/2017
  Önceden tanımlanmış hata işlevi; veya `NULL` önceden tanımlanmış bir işlev ise.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Yeni kod içinde yalnızca kullanmak `_RTC_SetErrorFuncW`. `_RTC_SetErrorFunc`yalnızca geriye dönük uyumluluk için kitaplığında dahil edilir.  
+ Yeni kod içinde yalnızca kullanmak `_RTC_SetErrorFuncW`. `_RTC_SetErrorFunc` yalnızca geriye dönük uyumluluk için kitaplığında dahil edilir.  
   
  `_RTC_SetErrorFuncW` Geri çağırma uygular, bağlı bileşenine ancak genel olarak değil.  
   
@@ -84,13 +88,13 @@ ms.lasthandoff: 12/21/2017
  *Dosya adı*  
  Hatanın oluştuğu kaynak dosyası ya da hiç hata ayıklama bilgileri kullanılabiliyorsa, null.  
   
- *LineNumber*  
+ *linenumber*  
  Satırda *filename* hatanın oluştuğu ya da 0 hata ayıklama bilgisi yok.  
   
  `moduleName`  
  DLL veya hatanın oluştuğu yürütülebilir dosya adı.  
   
- *biçimi*  
+ Biçimi  
  printf stili kalan parametrelerini kullanarak bir hata iletisi görüntülenecek dize. VA_ARGLIST ilk bağımsız değişkeni oluşan RTC hata sayısıdır.  
   
  Nasıl kullanılacağını gösteren bir örnek için **_RTC_error_fnW**, bkz: [yerel çalışma zamanı denetler özelleştirme](/visualstudio/debugger/native-run-time-checks-customization).  
@@ -99,7 +103,7 @@ ms.lasthandoff: 12/21/2017
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_RTC_SetErrorFuncW`|\<rtcapi.h >|  
+|`_RTC_SetErrorFuncW`|\<rtcapi.h>|  
   
  Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

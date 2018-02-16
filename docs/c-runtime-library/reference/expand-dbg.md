@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _expand_dbg
+ms.topic: reference
+apiname:
+- _expand_dbg
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - expand_dbg
 - _expand_dbg
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory blocks, changing size
 - expand_dbg function
 - _expand_dbg function
 ms.assetid: dc58c91f-72a8-48c6-b643-fe130fb6c1fd
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e2df087072d7f34123b00acafe52c130598592a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 41f3d59cec6ec4a064143e0211ebd956f30e16e5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="expanddbg"></a>_expand_dbg
 Belirtilen bir yığınındaki bellek bloğu genişletmeden veya (yalnızca hata ayıklama sürümü) blok daraltılırken göre yeniden boyutlandırır.  
@@ -79,7 +83,7 @@ void *_expand_dbg(
 ## <a name="remarks"></a>Açıklamalar  
  `_expand_dbg` İşlevidir _ hata ayıklama sürümü[genişletin](../../c-runtime-library/reference/expand.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_expand_dbg` yapılan bir çağrı için sınırlı `_expand`. Her ikisi de `_expand` ve `_expand_dbg` bir bellek bloğu temel yığınındaki yeniden boyutlandırma ancak `_expand_dbg` birkaç hata ayıklama özelliği düzenler: kullanıcı bölümünün belirli ayırma izlemek için bir blok türü parametresi bloğunun sızıntıları için test etmek için her iki tarafında arabellekler türleri ve `filename` / `linenumber` ayırma isteklerini kökenini belirlemek için bilgi.  
   
- `_expand_dbg`İstenen biraz daha fazla alan ile belirtilen bellek bloğu yeniden boyutlandırır `newSize`. `newSize`büyük veya ilk olarak ayrılmış bellek bloğu boyutundan küçük olabilir. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Yeniden boyutlandırma, genişletme veya özgün bellek bloğu daraltılırken gerçekleştirilir. `_expand_dbg`yaptığı gibi bellek bloğu taşımaz [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md) işlevi.  
+ `_expand_dbg` İstenen biraz daha fazla alan ile belirtilen bellek bloğu yeniden boyutlandırır `newSize`. `newSize` büyük veya ilk olarak ayrılmış bellek bloğu boyutundan küçük olabilir. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Yeniden boyutlandırma, genişletme veya özgün bellek bloğu daraltılırken gerçekleştirilir. `_expand_dbg` yaptığı gibi bellek bloğu taşımaz [_realloc_dbg](../../c-runtime-library/reference/realloc-dbg.md) işlevi.  
   
  Zaman `newSize` özgün blok boyutu, bellek bloğu genişletilmiş sayısından daha büyük. Bellek bloğu istenen boyutuna genişletilemiyor varsa bir genişletme sırasında `NULL` döndürülür. Zaman `newSize` yeni boyutu alınana kadar özgün blok boyutu, bellek bloğu sözleşme yapılan daha küçük.  
   
@@ -91,7 +95,7 @@ void *_expand_dbg(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_expand_dbg`|\<crtdbg.h >|  
+|`_expand_dbg`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

@@ -4,40 +4,39 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: IAccessorImpl
-dev_langs: C++
-helpviewer_keywords: IAccessorImpl class
+f1_keywords:
+- IAccessorImpl
+dev_langs:
+- C++
+helpviewer_keywords:
+- IAccessorImpl class
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fb76054313946df5b085081a3a619ae3fb3de2ec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7cfc33432d12ac00c834d16f83cc26404e92c63e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl Sınıfı
 Bir uygulamasını sağlar [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) arabirimi.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-template <  
-   class T,   
-   class BindType = ATLBINDINGS,   
-   class BindingVector = CAtlMap <   
-      HACCESSOR hAccessor,   
-      BindType* pBindingsStructure   
-   >   
->  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <class T, 
+          class BindType = ATLBINDINGS,
+          class BindingVector = CAtlMap <HACCESSOR hAccessor, BindType* pBindingsStructure>>  
 class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>  
 ```  
   
@@ -69,7 +68,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 |[ReleaseAccessor](../../data/oledb/iaccessorimpl-releaseaccessor.md)|Erişimci serbest bırakır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Satır kümeleri ve komutlar, bu zorunludur. OLE DB sağlayıcıları uygulamak gerektiren bir **HACCESSOR**, bir dizi etiket olduğu [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/en-us/library/ms716845.aspx) yapıları. **HACCESSOR**tarafından sağlanan s `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir **ATLBINDINGS** içinde `IAccessorImpl`'s şablon tanımı. `BindType`tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` öğe sayısı izlemek için kendi **IAccessor::CreateAccessor'ı** dizisi, başvuru sayımı ve erişimci bayrakları yanı sıra.  
+ Satır kümeleri ve komutlar, bu zorunludur. OLE DB sağlayıcıları uygulamak gerektiren bir **HACCESSOR**, bir dizi etiket olduğu [IAccessor::CreateAccessor'ı](https://msdn.microsoft.com/en-us/library/ms716845.aspx) yapıları. **HACCESSOR**tarafından sağlanan s `IAccessorImpl` adresleri olan `BindType` yapıları. Varsayılan olarak, `BindType` olarak tanımlanan bir **ATLBINDINGS** içinde `IAccessorImpl`'s şablon tanımı. `BindType` tarafından kullanılan bir mekanizma sağlar `IAccessorImpl` öğe sayısı izlemek için kendi **IAccessor::CreateAccessor'ı** dizisi, başvuru sayımı ve erişimci bayrakları yanı sıra.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atldb.h  

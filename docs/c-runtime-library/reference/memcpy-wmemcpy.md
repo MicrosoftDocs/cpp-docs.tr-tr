@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - memcpy
 - wmemcpy
@@ -25,21 +26,23 @@ apitype: DLLExport
 f1_keywords:
 - wmemcpy
 - memcpy
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wmemcpy function
 - memcpy function
 ms.assetid: 34abb90b-bffb-46dc-a2f3-a5e9940839d6
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 312e4a63803f3661799c6ad832fdfee22af876c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 415d8d4f604625b8bafbb953d381c2a43e394a3f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="memcpy-wmemcpy"></a>memcpy, wmemcpy
 Arabellekler arasında kopyaları bayt sayısı. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [memcpy_s, wmemcpy_s](../../c-runtime-library/reference/memcpy-s-wmemcpy-s.md).  
@@ -73,7 +76,7 @@ wchar_t *wmemcpy(
  Değeri `dest`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `memcpy`kopya `count` baytlar `src` için `dest`; `wmemcpy` kopyaları `count` geniş karakterler (iki bayt cinsinden). Kaynak ve hedef çakışma varsa, davranışını `memcpy` tanımlanmadı. Kullanım `memmove` çakışan bölgeler işlemek için.  
+ `memcpy` kopya `count` baytlar `src` için `dest`; `wmemcpy` kopyaları `count` geniş karakterler (iki bayt cinsinden). Kaynak ve hedef çakışma varsa, davranışını `memcpy` tanımlanmadı. Kullanım `memmove` çakışan bölgeler işlemek için.  
   
 > [!IMPORTANT]
 >  Kaynak arabelleği daha büyük veya boyut hedef arabelleği aynı olduğundan emin olun. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
@@ -81,7 +84,7 @@ wchar_t *wmemcpy(
 > [!IMPORTANT]
 >  Çok fazla sayıda arabellek taşmaları ve böylece olası güvenlik açıkları, yanlış kullanımı için izlenen olduğundan `memcpy`, bu işlev "Engellenenler" işlevleri arasında güvenlik geliştirme yaşam döngüsü (SDL) tarafından listelenir.  Bazı VC ++ kitaplığı sınıfları kullanmaya devam gözlemleyebilirsiniz `memcpy`.  Ayrıca, VC ++ derleyici iyileştirici bazen için çağrı yayar gözlemleyebilirsiniz `memcpy`.  Visual C++ ürün SDL işlem uygun olarak geliştirilen ve böylece bu Engellenenler işlevi kullanımını yakından değerlendirildikten.  Kitaplık durumunda çağrıları dikkatle arabellek taşmaları bu çağrılar izin verilmiyor emin olmak için scrutinized, bunu kullanın.  Derleyicinin söz konusu olduğunda, bazen belirli kod düzenleri desenini için aynı tanınır `memcpy`ve bu nedenle işlevi çağrısı ile değiştirilir.  Böyle durumlarda, kullanımını `memcpy` özgün daha fazla güvenli değildir yönergeleri olabilirdi; bunlar yalnızca performans olarak ayarlanmış bir çağrı için iyileştirilmiş `memcpy` işlevi.  "Safe" CRT işlevleri kullanımını (bunlar yalnızca yapın, güvenilmez olarak daha zor) güvenliği garanti etmez gibi "Engellenenler" işlevleri kullanımını (yalnızca ihtiyaç güvenliği sağlamak için büyük scrutiny) tehlike garanti etmez.  
 >   
->  Çünkü `memcpy` VC ++ derleyici ve kitaplıkları kullanımı bu nedenle dikkatli bir şekilde scrutinized, aksi takdirde SDL ile uyumlu olan kod içinde bu Çağrılara izin verilir.  `memcpy`uygulamanın kaynak kodunda sunulan çağrıları SDL ile uyumlu için kullanan güvenlik uzmanları tarafından gözden aynıdır.  
+>  Çünkü `memcpy` VC ++ derleyici ve kitaplıkları kullanımı bu nedenle dikkatli bir şekilde scrutinized, aksi takdirde SDL ile uyumlu olan kod içinde bu Çağrılara izin verilir.  `memcpy` uygulamanın kaynak kodunda sunulan çağrıları SDL ile uyumlu için kullanan güvenlik uzmanları tarafından gözden aynıdır.  
   
  `memcpy` Ve `wmemcpy` işlevleri yalnızca kullanım dışı varsa sabiti `_CRT_SECURE_DEPRECATE_MEMORY` olan işlevler de kullanım dışı sırayla ekleme deyimi önce tanımlanan, aşağıdaki örnekteki gibi:  
   

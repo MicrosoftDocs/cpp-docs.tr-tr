@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/02/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _set_abort_behavior
+ms.topic: reference
+apiname:
+- _set_abort_behavior
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - _set_abort_behavior
 - set_abort_behavior
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - aborting programs
 - _set_abort_behavior function
@@ -32,12 +35,13 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 965ff160fd8098c60f53f639cb95aedf890edd86
-ms.sourcegitcommit: a5d8f5b92cb5e984d5d6c9d67fe8a1241f3fe184
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d26f8339772854ab053c08deae3372ac567f9249
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setabortbehavior"></a>_set_abort_behavior
 
@@ -60,7 +64,7 @@ unsigned int _set_abort_behavior(
 [in] _bayrakları_  
 Yeni değeri `abort` bayrakları.
 
-[in] _maskesi_  
+[in] _mask_  
 İçin maske `abort` ayarlamak için BITS işaretler.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -69,13 +73,13 @@ Bayrakları eski değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Var olan iki `abort` bayrakları: `_WRITE_ABORT_MSG` ve `_CALL_REPORTFAULT`. `_WRITE_ABORT_MSG`bir program anormal olduğunda yararlı kısa mesaj yazdırılan olup olmadığını belirler. İleti durumları uygulama çağırdı `abort` işlevi. İleti yazdırmak için varsayılan davranıştır. `_CALL_REPORTFAULT`, varsa, otomatik olarak bir Watson kilitlenme döküm oluşturulur ve ne zaman rapor belirtir `abort` olarak adlandırılır. Varsayılan olarak, kilitlenme döküm raporlama olmayan hata ayıklama derlemelerinde etkindir.
+Var olan iki `abort` bayrakları: `_WRITE_ABORT_MSG` ve `_CALL_REPORTFAULT`. `_WRITE_ABORT_MSG` bir program anormal olduğunda yararlı kısa mesaj yazdırılan olup olmadığını belirler. İleti durumları uygulama çağırdı `abort` işlevi. İleti yazdırmak için varsayılan davranıştır. `_CALL_REPORTFAULT`, varsa, otomatik olarak bir Watson kilitlenme döküm oluşturulur ve ne zaman rapor belirtir `abort` olarak adlandırılır. Varsayılan olarak, kilitlenme döküm raporlama olmayan hata ayıklama derlemelerinde etkindir.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_set_abort_behavior`|\<stdlib.h >|
+|`_set_abort_behavior`|\<stdlib.h>|
 
 Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 

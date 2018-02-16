@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - __wcserror_s
 - _strerror_s
@@ -33,7 +34,8 @@ f1_keywords:
 - tcserror_s
 - strerror_s
 - _strerror_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __wcserror_s function
 - error messages, printing
@@ -46,16 +48,17 @@ helpviewer_keywords:
 - wcserror_s function
 - error messages, getting
 ms.assetid: 9e5b15a0-efe1-4586-b7e3-e1d7c31a03d6
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2733adb5cfc2328fdc0fb39650f6013c11960b3e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 791f9b7408fded070fe61206d4303c26c8926d3e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strerrors-strerrors-wcserrors-wcserrors"></a>strerror_s, _strerror_s, _wcserror_s, __wcserror_s
 Bir sistem hata iletisi alıyorum (`strerror_s`, `_wcserror_s`) veya bir kullanıcı tarafından sağlanan hata iletisini yazdırma (`_strerror_s`, `__wcserror_s`). Sürümleri bunlar [strerror, _strerror, _wcserror, \__wcserror](../../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -123,13 +126,13 @@ errno_t __wcserror_s(
   
 ### <a name="error-condtions"></a>Hata Condtions  
   
-|`buffer`|`numberOfElements`|`strErrMsg`|İçeriği`buffer`|  
+|`buffer`|`numberOfElements`|`strErrMsg`|İçeriği `buffer`|  
 |--------------|------------------------|-----------------|--------------------------|  
 |`NULL`|tüm|tüm|yok|  
 |tüm|0|tüm|değiştirilmedi|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strerror_s` İşlev eşlemeleri `errnum` dizesi içinde bir hata iletisi dizesi döndüren `buffer`. `_strerror_s`Hata numarası almaz; geçerli değeri kullanan `errno` uygun iletiyi belirlemek için. Ne `strerror_s` ya da `_strerror_s` gerçekten ileti yazdırır: bunun için bir çıktı işlevini gibi aramasına gerek [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
+ `strerror_s` İşlev eşlemeleri `errnum` dizesi içinde bir hata iletisi dizesi döndüren `buffer`. `_strerror_s` Hata numarası almaz; geçerli değeri kullanan `errno` uygun iletiyi belirlemek için. Ne `strerror_s` ya da `_strerror_s` gerçekten ileti yazdırır: bunun için bir çıktı işlevini gibi aramasına gerek [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md):  
   
 ```  
 if (( _access( "datafile",2 )) == -1 )  
@@ -143,9 +146,9 @@ if (( _access( "datafile",2 )) == -1 )
   
  Uzunluğu aşarsa, bu işlevler hata iletisi kesmek `numberOfElements` -1. Sonuç dizesini `buffer` her zaman null-sonlandırılır.  
   
- Gerçek hata numarası `_strerror_s` değişkeninde depolanan [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Sistem hata iletilerini değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), bir dizi hata numarasına göre sıralanmış iletileri olduğu. `_strerror_s`uygun hata iletisini kullanarak erişen `errno` değeri olarak değişken için bir dizin `_sys_errlist`. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) öğe maksimum sayısı olarak tanımlanan `_sys_errlist` dizi. Doğru sonuçlar üretmek için çağrı `_strerror_s` hemen bir hata ile kitaplığı yordamı döndükten sonra. Aksi takdirde, sonraki çağrılar `strerror_s` veya `_strerror_s` kılabilirsiniz `errno` değeri.  
+ Gerçek hata numarası `_strerror_s` değişkeninde depolanan [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Sistem hata iletilerini değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), bir dizi hata numarasına göre sıralanmış iletileri olduğu. `_strerror_s` uygun hata iletisini kullanarak erişen `errno` değeri olarak değişken için bir dizin `_sys_errlist`. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) öğe maksimum sayısı olarak tanımlanan `_sys_errlist` dizi. Doğru sonuçlar üretmek için çağrı `_strerror_s` hemen bir hata ile kitaplığı yordamı döndükten sonra. Aksi takdirde, sonraki çağrılar `strerror_s` veya `_strerror_s` kılabilirsiniz `errno` değeri.  
   
- `_wcserror_s`ve `__wcserror_s` joker karakter sürümleri `strerror_s` ve `_strerror_s`sırasıyla.  
+ `_wcserror_s` ve `__wcserror_s` joker karakter sürümleri `strerror_s` ve `_strerror_s`sırasıyla.  
   
  Bu işlevler kendi parametreleri doğrulayın. Arabellek ise `NULL` veya boyutu parametresi 0 ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmek için izin verilip verilmediğini, işlevlerin dönüş `EINVAL` ve `errno` için `EINVAL`.  
   

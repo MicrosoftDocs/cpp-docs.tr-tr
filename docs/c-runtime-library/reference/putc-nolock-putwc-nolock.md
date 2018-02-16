@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _putc_nolock
 - _putwc_nolock
@@ -30,7 +31,8 @@ f1_keywords:
 - _putwc_nolock
 - _putc_nolock
 - putc_nolock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - puttc_nolock function
 - putc_nolock function
@@ -41,16 +43,17 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ad994b11cecb304bd91d357516aa7c81a7351917
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 348141f4d096e22efc80ada84c31a7e10b96287a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
 Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.  
@@ -80,9 +83,9 @@ wint_t _putwc_nolock(
  Bkz: **putc, putwc**.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_putc_nolock`ve `_putwc_nolock` sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
+ `_putc_nolock` ve `_putwc_nolock` sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
   
- `_putwc_nolock`joker karakter sürümü `_putc_nolock`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_putc_nolock`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `_putwc_nolock` joker karakter sürümü `_putc_nolock`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_putc_nolock` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -97,7 +100,7 @@ wint_t _putwc_nolock(
 |`_putc_nolock`|\<stdio.h >|  
 |`_putwc_nolock`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="libraries"></a>Kitaplıklar  
  Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  

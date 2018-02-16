@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _pipe
+ms.topic: reference
+apiname:
+- _pipe
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,29 +26,31 @@ apitype: DLLExport
 f1_keywords:
 - pipe
 - _pipe
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pipes, creating
 - _pipe function
 - pipes
 - pipe function
 ms.assetid: 8d3e9800-4041-44b5-9e93-2df0b0354a75
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a14fa401b2a46bbfb3d5aafcda4d05c0167b3d9b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 95169aa5070493be76db6306f4d5863d6a2e654f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="pipe"></a>_pipe
 Okuma ve yazma için bir kanal oluşturur.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -82,7 +86,7 @@ int _pipe(
 ## <a name="remarks"></a>Açıklamalar  
  `_pipe` İşlev oluşturur bir *kanal*, diğer programlara bilgi aktarmak için bir program kullanan yapay bir g/ç kanaldan olduğu. Bir kanal dosya işaretçisini, bir dosya tanımlayıcısı veya her ikisini olmadığı ve okuma veya standart kitaplığını kullanarak giriş ve çıkış işlevler yazma için bir dosya benzer. Ancak, bir kanal belirli bir dosya veya aygıt göstermiyor. Bunun yerine, programın kendi bellek bağımsızdır ve tamamen işletim sistemi tarafından denetlenen bellekte geçici depolama temsil eder.  
   
- `_pipe`benzer `_open` ancak okumak ve yazmak için kanal açar ve iki dosya tanımlayıcıları biri yerine döndürür. Program, her iki tarafında kanal kullanın veya gerekli olmayan bir kapatın. Örneğin, bir komut gibi yürüttüğünde Windows Komut işlemcisi bir kanal oluşturur `PROGRAM1 | PROGRAM2`.  
+ `_pipe` benzer `_open` ancak okumak ve yazmak için kanal açar ve iki dosya tanımlayıcıları biri yerine döndürür. Program, her iki tarafında kanal kullanın veya gerekli olmayan bir kapatın. Örneğin, bir komut gibi yürüttüğünde Windows Komut işlemcisi bir kanal oluşturur `PROGRAM1 | PROGRAM2`.  
   
  Standart çıktı tanımlayıcısının `PROGRAM1` kanal 's yazma tanımlayıcısına eklenir. Standart giriş tanımlayıcısı `PROGRAM2` kanal 's okuma tanımlayıcısına eklenir. Bu bilgi diğer programlara geçirmek için geçici dosyalar oluşturma ihtiyacını ortadan kaldırır.  
   
@@ -100,7 +104,7 @@ int _pipe(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_pipe`|\<io.h >|\<fcntl.h >, 1 \<errno.h > 2|  
+|`_pipe`|\<io.h >|\<fcntl.h>,1 \<errno.h>2|  
   
  1 için `_O_BINARY` ve `_O_TEXT` tanımlar.  
   

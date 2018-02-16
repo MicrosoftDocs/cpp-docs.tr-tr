@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/16/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -74,7 +75,8 @@ f1_keywords:
 - _WIN64
 - _WINRT_DLL
 - __func__
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - timestamps, preprocessor macro
 - cl.exe compiler, version number
@@ -149,16 +151,17 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-caps.latest.revision: "75"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 86905a879abe9b81302a8f196e200c1d0c227bb7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 53acac18902e261eede565987d6b9c053a8f1707
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="predefined-macros"></a>Önceden Tanımlı Makrolar
 
@@ -286,7 +289,7 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
 - **&#95; CPPRTTI** 1 Eğer tanımlanan [/GR (çalışma zamanı türü bilgileri etkinleştir)](../build/reference/gr-enable-run-time-type-information.md) derleyici seçeneği ayarlanmış. Aksi takdirde, tanımlanmamış.
 
-- **&#95; CPPUNWIND** bir veya daha fazla ise 1 olarak tanımlanan [/GX (özel durum işlemeyi etkinleştir)](../build/reference/gx-enable-exception-handling.md), [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), veya [/EH (özel durum işleme modeli) ](../build/reference/eh-exception-handling-model.md) derleyici seçenekleri ayarlanır. Aksi takdirde, tanımlanmamış.
+- **&#95; CPPUNWIND** bir veya daha fazla ise 1 olarak tanımlanan [/GX (özel durum işlemeyi etkinleştir)](../build/reference/gx-enable-exception-handling.md), [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md), veya [/EH (özel durum işleme modeli)](../build/reference/eh-exception-handling-model.md) derleyici seçenekleri ayarlanır. Aksi takdirde, tanımlanmamış.
 
 - **&#95; hata ayıklama** 1 olduğunda tanımlanan [/LDd](../build/reference/md-mt-ld-use-run-time-library.md), [/MDd](../build/reference/md-mt-ld-use-run-time-library.md), veya [/MTd](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneği ayarlanmış. Aksi takdirde, tanımlanmamış.
 
@@ -372,7 +375,7 @@ Microsoft Visual C++ bu ek önceden tanımlı makrolar destekler.
 
 - **&#95; MSC &#95; VER** derleyicinin sürüm numarası birincil ve ikincil sayı öğelerini kodlar bir tamsayı değişmez değer tanımlı. Süre sınırlı sürüm numarasını ilk öğesi ana sayısıdır ve küçük numarası ikinci öğedir. Visual C++ derleyicisi sürüm numarasını 17.00.51106.1, örneğin, **&#95; MSC &#95; VER** makrosu 1700 için değerlendirir. Girin **cl /?** Derleyicinin sürüm numarasını görüntülemek için komut satırı. Bu makrosu her zaman tanımlanır.
 
-- **&#95; MSVC &#95; LANG** derleyici tarafından hedeflenen C++ dili standart belirten bir tamsayı sabit olarak tanımlanmış. C++ derlendiğinde makrosu tamsayı değişmez değeri 201402 ise [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanmış ya da varsayılan olarak; bunun için 201703 ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanmış; ve bunu ayarlamak bir Yüksek, belirtilmeyen değeri [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md). Aksi takdirde makrosu tanımlanmamıştır. **&#95; MSVC &#95; LANG** makrosu ve [/std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleridir Visual Studio 2015 güncelleştirme 3'te başlayarak bulunabilir.
+- **&#95; MSVC &#95; LANG** derleyici tarafından hedeflenen C++ dili standart belirten bir tamsayı sabit olarak tanımlanmış. C++ derlendiğinde makrosu tamsayı değişmez değer 201402 L ise [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanmış ya da varsayılan olarak; bu 201703 L ayarlanır [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md) derleyici seçeneği ayarlanmış; ve bunu ayarlamak bir Yüksek, belirtilmeyen değeri [/Std: c ++ Son](../build/reference/std-specify-language-standard-version.md). Aksi takdirde makrosu tanımlanmamıştır. **&#95; MSVC &#95; LANG** makrosu ve [/std (dil standart sürümünü belirtin)](../build/reference/std-specify-language-standard-version.md) derleyici seçenekleridir Visual Studio 2015 güncelleştirme 3'te başlayarak bulunabilir.
 
 - **&#95; &#95; MSVC &#95; Çalışma zamanı &#95; DENETLER** biri 1 tanımlanmış, [eş yordamlarla/RTC](../build/reference/rtc-run-time-error-checks.md) derleyici seçenekleri ayarlanır. Aksi takdirde, tanımlanmamış.
 

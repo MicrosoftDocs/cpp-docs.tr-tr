@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _lseeki64
 - _lseek
@@ -27,7 +28,8 @@ f1_keywords:
 - _lseeki64
 - _lseek
 - lseeki64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - lseek function
 - _lseek function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d4dad9abf8b82cc5c6e876af22a1a2f61a6216ed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e9b711af0b5f8c5aec24ccfa4e395951b1caf302
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="lseek-lseeki64"></a>_lseek, _lseeki64
 Dosya işaretçisini belirtilen konuma taşır.  
@@ -70,14 +73,14 @@ __int64 _lseeki64(
  `fd`  
  Açık olan bir dosyaya başvuruda bulunan dosya tanımlayıcısı.  
   
- *uzaklık*  
+ uzaklık  
  Bayt sayısı *kaynak*.  
   
  *Kaynak*  
  Başlangıç konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_lseek`uzaklık, dosyanın yeni konumunu başlangıçtan itibaren bayt cinsinden döndürür. `_lseeki64`uzaklık bir 64-bit tamsayı olarak döndürür. İşlev L hatayı belirtmek için-1 döndürür. Hatalı dosya tanımlayıcısı veya değeri gibi geçersiz bir parametre aktarılırsa *kaynak* geçersiz veya tarafından belirtilen konumdaki *uzaklık* olan dosya başlamadan önce geçersiz bir parametre işleyicidir bölümünde açıklandığı gibi çağrılan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EBADF` ve -1 M döndürür. Cihazlarda (Terminal ve yazıcılar gibi) aramayı kuramadığı dönüş değeri tanımlanmamıştır.  
+ `_lseek` uzaklık, dosyanın yeni konumunu başlangıçtan itibaren bayt cinsinden döndürür. `_lseeki64` uzaklık bir 64-bit tamsayı olarak döndürür. İşlev L hatayı belirtmek için-1 döndürür. Hatalı dosya tanımlayıcısı veya değeri gibi geçersiz bir parametre aktarılırsa *kaynak* geçersiz veya tarafından belirtilen konumdaki *uzaklık* olan dosya başlamadan önce geçersiz bir parametre işleyicidir bölümünde açıklandığı gibi çağrılan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EBADF` ve -1 M döndürür. Cihazlarda (Terminal ve yazıcılar gibi) aramayı kuramadığı dönüş değeri tanımlanmamıştır.  
   
  Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -159,7 +162,7 @@ int main( void )
 }  
 ```  
   
-## <a name="input-crtlseekcinput"></a>Giriş: crt_lseek.c_input  
+## <a name="input-crtlseekcinput"></a>Input: crt_lseek.c_input  
   
 ```  
 Line one.  

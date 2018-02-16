@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BEGIN_COLUMN_MAP
-dev_langs: C++
-helpviewer_keywords: BEGIN_COLUMN_MAP macro
+f1_keywords:
+- BEGIN_COLUMN_MAP
+dev_langs:
+- C++
+helpviewer_keywords:
+- BEGIN_COLUMN_MAP macro
 ms.assetid: d6ffe633-e0da-4e33-8faa-f7f259d05420
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9edcaa47bccf0665ddeabf4e65e16ab1642de885
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45d6415d9e5527314e8d0a55c023b53d868097c5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="begincolumnmap"></a>BEGIN_COLUMN_MAP
 Sütun eşleme girişi başlangıcını işaretler.  
@@ -30,11 +34,7 @@ Sütun eşleme girişi başlangıcını işaretler.
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-BEGIN_COLUMN_MAP(  
-x  
- )  
-  
+BEGIN_COLUMN_MAP(x)  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

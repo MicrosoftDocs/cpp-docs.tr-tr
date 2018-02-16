@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wstrtime_s
 - _strtime_s
@@ -28,7 +29,8 @@ f1_keywords:
 - strtime_s
 - wstrtime_s
 - _strtime_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wstrtime_s function
 - copying time to buffers
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - time, copying
 - _strtime_s function
 ms.assetid: 42acf013-c334-485d-b610-84c0af8a46ec
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3f7a2d8baac49543f09d3d2fa35764ae127f5507
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c93a98d7be13b19357b1308183519650411ec775
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtimes-wstrtimes"></a>_strtime_s, _wstrtime_s
 Geçerli saati bir arabellek kopyalayın. Sürümleri bunlar [_strtime, _wstrtime](../../c-runtime-library/reference/strtime-wstrtime.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -73,20 +76,20 @@ errno_t _wstrtime_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`buffer`  
+ [out] `buffer`  
  Zaman yazılacağı bir arabellek, en az 10 bayt uzun.  
   
- [in]`numberOfElements`  
+ [in] `numberOfElements`  
  Arabellek boyutu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır.  
+ Zero if successful.  
   
  Bir hata koşulu ortaya çıkarsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları ERRNO içinde tanımlanmıştır. H; Bu işlev tarafından oluşturulan tam hatalar için aşağıdaki tabloya bakın. Hata kodları hakkında daha fazla bilgi için bkz: [errno sabitleri](../../c-runtime-library/errno-constants.md).  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`numberOfElements`|Döndür|İçeriği`buffer`|  
+|`buffer`|`numberOfElements`|Döndür|İçeriği `buffer`|  
 |--------------|------------------------|------------|--------------------------|  
 |`NULL`|(any)|`EINVAL`|değiştirilmedi|  
 |Değil `NULL` (geçerli arabelleğe işaret eden)|0|`EINVAL`|değiştirilmedi|  
@@ -101,7 +104,7 @@ errno_t _wstrtime_s(
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevler daha güvenli sürümlerini sağlamak `_strtime` ve `_wstrtime`. `_strtime_s` İşlevi geçerli yerel saat gösterdiği arabellek kopyalar `timestr`. Saat olarak biçimlendirilmiş `hh:mm:ss` nerede `hh` olan 24 saatlik gösteriminde saati temsil eden iki basamak `mm` olan geçe temsil eden iki basamaklı ve `ss` olduğu saniye temsil eden iki basamak. Örneğin, dize `18:23:44` 23 dakika ve 44 aşan saniye 6'da temsil eder Arabellek en az 9 bayt uzun olmalıdır; Gerçek Boyut ikinci parametresi tarafından belirtilir.  
   
- `_wstrtime`bir joker karakter sürümü `_strtime`; bağımsız değişkeni ve dönüş değeri `_wstrtime` joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.  
+ `_wstrtime` bir joker karakter sürümü `_strtime`; bağımsız değişkeni ve dönüş değeri `_wstrtime` joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -170,5 +173,5 @@ OS date:            04/25/03
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [localtime_s, _localtime32_s, _localtime64_s](../../c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s.md)   
  [mktime, _mktime32, _mktime64](../../c-runtime-library/reference/mktime-mktime32-mktime64.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_tzset](../../c-runtime-library/reference/tzset.md)

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vwprintf_p
 - _vprintf_p
@@ -35,7 +36,8 @@ f1_keywords:
 - vtprintf_p
 - _vtprintf_p
 - _vprintf_p
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _vtprintf_p_l function
 - _vtprintf_p function
@@ -51,16 +53,17 @@ helpviewer_keywords:
 - vwprintf_p_l function
 - formatted text [C++]
 ms.assetid: 3f99bde3-c891-493d-908f-30559c421058
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a33f7c8f834e9e1e67a5322d15494423bf10190e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a18dedf361b3b6c83eb0f4e1a746bc90ca01fbc1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vprintfp-vprintfpl-vwprintfp-vwprintfpl"></a>_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıkışı yazar ve bağımsız değişkenler kullanılan order belirtimi sağlar.  
@@ -101,12 +104,12 @@ int _vwprintf_p_l(
  Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_vprintf_p`ve `_vwprintf_p` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür.  
+ `_vprintf_p` ve `_vwprintf_p` çıkış hata oluşursa sonlandırma null karakter veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve belirtilen verileri Yazar `stdout`. Bu işlevler farklı `vprintf_s` ve `vwprintf_s` bağımsız değişkenleri kullanıldığı sırayı belirtme olanağı yalnızca destekledikleri olmasıdır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- `_vwprintf_p`joker karakter sürümü `_vprintf_p`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_vprintf_p`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `_vwprintf_p` joker karakter sürümü `_vprintf_p`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_vprintf_p` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -126,12 +129,12 @@ int _vwprintf_p_l(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`_vprintf_p`, `_vprintf_p_l`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`_vwprintf_p`, `_vwprintf_p_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`_vprintf_p`, `_vprintf_p_l`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`_vwprintf_p`, `_vwprintf_p_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Akış g/ç](../../c-runtime-library/stream-i-o.md)   

@@ -4,43 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COLUMN_NAME_PS_LENGTH
-dev_langs: C++
-helpviewer_keywords: COLUMN_NAME_PS_LENGTH macro
+f1_keywords:
+- COLUMN_NAME_PS_LENGTH
+dev_langs:
+- C++
+helpviewer_keywords:
+- COLUMN_NAME_PS_LENGTH macro
 ms.assetid: 415a154b-cb7c-4072-9e7d-8cfa32a15d6e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 69a8165e9179685f62c4232ac3fbec3220d22d17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eaffe24bb5833b975e70e11f84c579a8b88718c6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="columnnamepslength"></a>COLUMN_NAME_PS_LENGTH
 Satır kümesi bağlamada satır kümesindeki belirli sütunu temsil eder. Benzer şekilde [COLUMN_NAME](../../data/oledb/column-name.md)dışında bu makrosu ayrıca duyarlık ve ölçek sütun uzunluğu alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-COLUMN_NAME_PS_LENGTH(  
-pszName  
-,   
-nPrecision  
-,   
-nScale  
-,   
-data  
-,   
-length )  
+```cpp
+COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -1,10 +1,11 @@
 ---
-title: "Cdbpropıdset::setguıd | Microsoft Docs"
+title: CDBPropIDSet::SetGUID | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,32 +14,31 @@ f1_keywords:
 - SetGUID
 - ATL.CDBPropIDSet.SetGUID
 - CDBPropIDSet::SetGUID
-dev_langs: C++
-helpviewer_keywords: SetGUID method
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetGUID method
 ms.assetid: 8dd0f3bf-1490-4d53-9063-322b8d821bbe
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa70e704cd8e132404442ef390ea5582155a76e2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 32f697e07c850ab71249614a0479aecca4f7caa2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cdbpropidsetsetguid"></a>CDBPropIDSet::SetGUID
 GUID alanı ayarlar **DBPROPIDSET** yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      void SetGUID(   
-   const GUID& guid    
-) throw( );  
+```cpp
+      void SetGUID(const GUID& guid) throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

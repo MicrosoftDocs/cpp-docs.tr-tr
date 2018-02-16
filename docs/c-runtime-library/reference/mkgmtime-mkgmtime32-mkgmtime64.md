@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mkgmtime32
 - _mkgmtime64
@@ -31,7 +32,8 @@ f1_keywords:
 - mkgmtime
 - mkgmtime64
 - _mkgmtime
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - mkgmtime32 function
 - time functions
@@ -43,16 +45,17 @@ helpviewer_keywords:
 - _mkgmtime32 function
 - time, converting
 ms.assetid: b4ca2b67-e198-4f43-b3e2-e8ad6bd01867
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0f99e367d263d3ba49837b269fd04159a70cf549
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7eec9b123c47b13c73836fd41a2c490951e4fecd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mkgmtime-mkgmtime32-mkgmtime64"></a>_mkgmtime, _mkgmtime32, _mkgmtime64
 Tarafından temsil edilen bir UTC saati dönüştüren bir `tm struct` UTC saati için temsil ettiği bir `time_t` türü.  
@@ -82,7 +85,7 @@ __time64_t _mkgmtime64(
 ## <a name="remarks"></a>Açıklamalar  
  `_mkgmtime32` Ve `_mkgmtime64` işlevleri dönüştürmek için UTC saati bir `__time32_t` veya `__time64_t` UTC saatini temsil eden tür. UTC saati yerel saate dönüştürmek için `mktime`, `_mktime32`, ve `_mktime64` yerine.  
   
- `_mkgmtime`değerlendiren bir satır içi işlev `_mkgmtime64`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Uygulamanızı 18 Ocak 2038 sonra başarısız olabilir çünkü bu önerilmez (en fazla 32-bit aralığını `time_t`), ve 64 bit platformlarda hiç verilmez.  
+ `_mkgmtime` değerlendiren bir satır içi işlev `_mkgmtime64`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Uygulamanızı 18 Ocak 2038 sonra başarısız olabilir çünkü bu önerilmez (en fazla 32-bit aralığını `time_t`), ve 64 bit platformlarda hiç verilmez.  
   
  İle değiştirilmiş olarak yapısı geçirilen süre aşağıdaki gibi aynı şekilde değiştirilecek `_mktime` işlevleri: `tm_wday` ve `tm_yday` alanların değerlerine dayalı yeni değerlere ayarlanır `tm_mday` ve `tm_year`. Belirtirken bir `tm` yapısı zaman, Ayarla `tm_isdst` alanı:  
   
@@ -92,7 +95,7 @@ __time64_t _mkgmtime64(
   
 -   Bir değer sıfırdan C çalışma zamanı kitaplığı kodu sağlamak için standart saati gün ışığından yararlanma saati etkin olup işlem.  
   
- C çalışma zamanı kitaplığı TZ ortam değişkeninin doğru günışığından belirlemek için kullanır. TZ ayarlanmamışsa, işletim sistemi doğru bölgesel gün ışığından yararlanma saati davranışı elde etmek üzere sorgulanır. `tm_isdst`gerekli bir alandır. Ayarlı değil, kendi değeri tanımsız ise ve dönüş değerini `mktime` tahmin edilemez.  
+ C çalışma zamanı kitaplığı TZ ortam değişkeninin doğru günışığından belirlemek için kullanır. TZ ayarlanmamışsa, işletim sistemi doğru bölgesel gün ışığından yararlanma saati davranışı elde etmek üzere sorgulanır. `tm_isdst` gerekli bir alandır. Ayarlı değil, kendi değeri tanımsız ise ve dönüş değerini `mktime` tahmin edilemez.  
   
  Aralığı `_mkgmtime32` işlevi, gece yarısıdır, 1 Ocak 1970'ten, 23:59:59 18 Ocak 2038, UTC UTC'ye. Aralığı `_mkgmtime64` gece, 1 Ocak 1970 UTC 23:59:59 arasında 31 Aralık 3000 UTC değil. Bir aralık dışı tarih -1 dönüş değeri sonuçlanır. Aralığı `_mkgmtime` bağlıdır `_USE_32BIT_TIME_T` tanımlanır. (Varsayılan) tanımlı değil ise, aralığı `_mkgmtime64`; Aksi halde, 32-bit aralığı için sınırlı bir aralığı `_mkgmtime32`.  
   

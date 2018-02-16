@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,33 +18,34 @@ f1_keywords:
 - CRowset.SetData
 - CRowset<TAccessor>::SetData
 - ATL::CRowset<TAccessor>::SetData
-dev_langs: C++
-helpviewer_keywords: SetData method
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetData method
 ms.assetid: 68125142-8510-4132-9393-e39efd39c784
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0aafc521e130a7f737083390fe5f825c88aa5844
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f9b619bbc62ac81c4d1c2cc8c27e4246c026ca23
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="crowsetsetdata"></a>CRowset::SetData
 Bir veya daha fazla satır sütunu veri değerlerini ayarlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-      HRESULT SetData( ) const throw( );   
-HRESULT SetData(  
-   int nAccessor   
-) const throw( );  
+```cpp
+HRESULT SetData() const throw();   
+
+
+HRESULT SetData(int nAccessor) const throw();  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _malloca
+ms.topic: reference
+apiname:
+- _malloca
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,22 +25,24 @@ apitype: DLLExport
 f1_keywords:
 - malloca
 - _malloca
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory allocation, stack
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fcdeab9e61eda17164be06498e9ce42695faf8ea
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d61874320712e6cef7f783bb1c4fb03f53ac40e9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="malloca"></a>_malloca
 Yığında bellek ayırır. Bu bir sürümüdür [_alloca](../../c-runtime-library/reference/alloca.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -61,7 +65,7 @@ void *_malloca(
  Bir yığın taşması özel durumu alanı ayrılamıyor ise oluşturulur. Yığın taşması özel durumu C++ özel durum değil; yapılandırılmış özel durum var. C++ özel durum işleme kullanmak yerine, kullanmalısınız [yapılandırılmış özel durum işleme](../../cpp/structured-exception-handling-c-cpp.md) (SEH).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_malloca`ayırır `size` program yığını ya da belirli bir boyuta tarafından verilen bayt cinsinden istek aşarsa, öbek bayt `_ALLOCA_S_THRESHOLD`. Arasındaki farkı `_malloca` ve `_alloca` olan `_alloca` yığında boyutuna bakılmaksızın her zaman ayırır. Farklı `_alloca`, hangi gerektirmez veya bir çağrısına izin `free` şekilde ayrılmış, belleği boşaltmak için `_malloca` kullanılmasını gerektiren [_freea](../../c-runtime-library/reference/freea.md) belleği boşaltmak için. Hata ayıklama modunda `_malloca` her zaman yığınından bellek ayırır.  
+ `_malloca` ayırır `size` program yığını ya da belirli bir boyuta tarafından verilen bayt cinsinden istek aşarsa, öbek bayt `_ALLOCA_S_THRESHOLD`. Arasındaki farkı `_malloca` ve `_alloca` olan `_alloca` yığında boyutuna bakılmaksızın her zaman ayırır. Farklı `_alloca`, hangi gerektirmez veya bir çağrısına izin `free` şekilde ayrılmış, belleği boşaltmak için `_malloca` kullanılmasını gerektiren [_freea](../../c-runtime-library/reference/freea.md) belleği boşaltmak için. Hata ayıklama modunda `_malloca` her zaman yığınından bellek ayırır.  
   
  Açıkça çağırmak için kısıtlamalar vardır `_malloca` bir özel durum işleyicisi (EH). X86 sınıfı işlemcilerde çalıştırmak EH yordamları çalışan kendi bellek çerçevede: yığın işaretçisi kapsayan işlevinin geçerli konumuna dayalı olmayan bellek alanında görevlerini gerçekleştirdikleri. En yaygın uygulamaları, Windows NT yapılandırılmış özel durum (SEH) işleme ve C++ catch yan tümcesi ifadeleri içerir. Bu nedenle, açıkça çağırma `_malloca` herhangi bir program hatası EH yordamı çağrılırken dönün sırasında aşağıdaki senaryoları sonuçlarında:  
   

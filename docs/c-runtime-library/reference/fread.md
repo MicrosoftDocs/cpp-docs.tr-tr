@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: fread
+ms.topic: reference
+apiname:
+- fread
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,24 +23,27 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: fread
-dev_langs: C++
+f1_keywords:
+- fread
+dev_langs:
+- C++
 helpviewer_keywords:
 - reading data [C++], from input streams
 - fread function
 - data [C++], reading from input stream
 - streams [C++], reading data from
 ms.assetid: 9a3c1538-93dd-455e-ae48-77c1e23c53f0
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e1230c3a309fc4fbbf382df4bb07ca2bebf0d5a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d01c3362c94b0c644cb53aec6e45ce83b98dbf07
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fread"></a>fread
 Verileri bir akıştan okur.  
@@ -68,7 +73,7 @@ size_t fread(
  İşaretçi `FILE` yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fread`olabilen tam öğe sayısı gerçekte okuma, döndürür değerinden `count` bir hata oluşursa veya dosyanın sonuna ulaşmadan önce karşılaşılırsa `count`. Kullanım `feof` veya `ferror` okuma hatası bir dosya sonu durumundan ayırt etmek için işlev. Varsa `size` veya `count` 0 ' dır `fread` 0 ve arabellek içeriği değişmeden döndürür. Varsa `stream` veya `buffer` null işaretçi `fread` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
+ `fread` olabilen tam öğe sayısı gerçekte okuma, döndürür değerinden `count` bir hata oluşursa veya dosyanın sonuna ulaşmadan önce karşılaşılırsa `count`. Kullanım `feof` veya `ferror` okuma hatası bir dosya sonu durumundan ayırt etmek için işlev. Varsa `size` veya `count` 0 ' dır `fread` 0 ve arabellek içeriği değişmeden döndürür. Varsa `stream` veya `buffer` null işaretçi `fread` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
   
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - time
 - _time64
@@ -31,7 +32,8 @@ f1_keywords:
 - time/_time32
 - time/_time64
 - _time32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - time32 function
 - _time32 function
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5f0e4cd78c6e4da47b7999e6a9dd6c95be93f557
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3490c7ac1425e2ea2e76943709dbeb5d43a4e151
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="time-time32-time64"></a>time, _time32, _time64
 Sistem saatini alır.  
@@ -78,7 +81,7 @@ __time64_t _time64(
 ## <a name="remarks"></a>Açıklamalar  
  `time` İşlevi döndürür gece yarısından beri geçen saniye sayısı (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC), sistem saatine göre. Dönüş değeri tarafından belirtilen konumda depolanır `timer`. Bu parametre olabilir `NULL`, dönüş değeri değil; Bu durumda depolanır.  
   
- `time`için sarmalayıcı olan `_time64` ve `time_t` , varsayılan olarak, eşdeğer ise `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Uygulamanızı 18 Ocak 2038 sonra başarısız olabileceği için bu önerilmez; 64 bit platformlarda bu makrosu kullanılmasına izin verilmiyor.  
+ `time` için sarmalayıcı olan `_time64` ve `time_t` , varsayılan olarak, eşdeğer ise `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Uygulamanızı 18 Ocak 2038 sonra başarısız olabileceği için bu önerilmez; 64 bit platformlarda bu makrosu kullanılmasına izin verilmiyor.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

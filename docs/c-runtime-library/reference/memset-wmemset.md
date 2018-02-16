@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wmemset
 - memset
@@ -27,21 +28,23 @@ apitype: DLLExport
 f1_keywords:
 - memset
 - wmemset
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wmemset function
 - memset function
 ms.assetid: e7ceb01b-df69-49c2-b294-a39358ad4699
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1b9f15d86f3ec64c0179f0401cd4deffa2e757ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f960dc71198d35ad162c38e5bca85a7d38312a01
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 Arabellekleri için belirtilen bir karakterin ayarlar.  
@@ -63,13 +66,13 @@ wchar_t *wmemset(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Hedef*  
+ *dest*  
  Hedef işaretçi.  
   
  `c`  
  Ayarlamak için karakter.  
   
- *sayısı*  
+ *Sayısı*  
  Karakter sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

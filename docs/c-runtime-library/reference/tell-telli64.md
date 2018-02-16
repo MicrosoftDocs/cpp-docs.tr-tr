@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _telli64
 - _tell
@@ -28,7 +29,8 @@ f1_keywords:
 - telli64
 - _telli64
 - _tell
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tell function
 - file pointers [C++], getting
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - telli64 function
 - _telli64 function
 ms.assetid: 1500e8f9-8fec-4253-9eec-ec66125dfc9b
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c65ed3f0829370c0fe7a9f9e6a12a57688a5ca1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6cfa9b6b3c03d0836ac4d68aa59f2be0c5fcfabc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="tell-telli64"></a>_tell, _telli64
 Dosya işaretçisini konumunu alın.  
@@ -117,7 +120,7 @@ int main( void )
 }  
 ```  
   
-## <a name="input-crttelltxt"></a>Giriş: crt_tell.txt  
+## <a name="input-crttelltxt"></a>Input: crt_tell.txt  
   
 ```  
 Line one.  

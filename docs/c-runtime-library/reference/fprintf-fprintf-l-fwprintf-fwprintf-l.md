@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fwprintf
 - fprintf
@@ -28,7 +29,8 @@ f1_keywords:
 - fprintf
 - fwprintf
 - _ftprintf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _fwprintf_l function
 - fprintf function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - print formatted data to streams
 - fwprintf_l function
 ms.assetid: 34a87e1c-6e4d-4d48-a611-58314dd4dc4b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 13f358548b7155b281ffd77821b9a413e1e6fb43
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5ed0a1d2d2368e99b6e920e5236de989afb97981
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fprintf-fprintfl-fwprintf-fwprintfl"></a>fprintf, _fprintf_l, fwprintf, _fwprintf_l
 Akış biçimlendirilmiş verileri yazdırma. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
@@ -97,14 +100,14 @@ int _fwprintf_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fprintf`yazılan bayt sayısını döndürür. `fwprintf`yazılan geniş karakter sayısını döndürür. Çıkış hata oluştuğunda bu işlevlerin her biri negatif bir değer yerine döndürür. Varsa `stream` veya `format` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve `errno` için `EINVAL`. Kullanırken olduğu gibi biçim dizesi geçerli biçimlendirme karakterleri işaretlenmemişse `fprintf_s` veya `fwprintf_s`.  
+ `fprintf` yazılan bayt sayısını döndürür. `fwprintf` yazılan geniş karakter sayısını döndürür. Çıkış hata oluştuğunda bu işlevlerin her biri negatif bir değer yerine döndürür. Varsa `stream` veya `format` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve `errno` için `EINVAL`. Kullanırken olduğu gibi biçim dizesi geçerli biçimlendirme karakterleri işaretlenmemişse `fprintf_s` veya `fwprintf_s`.  
   
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `fprintf`biçimlendirir ve bir dizi karakter ve değerlerini çıktıya yazdırır `stream`. Her işlev `argument` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. İçin `fprintf`, `format` bağımsız değişkenini içeriyor aynı sözdizimi ve sahip olarak kullanımı `printf`.  
+ `fprintf` biçimlendirir ve bir dizi karakter ve değerlerini çıktıya yazdırır `stream`. Her işlev `argument` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. İçin `fprintf`, `format` bağımsız değişkenini içeriyor aynı sözdizimi ve sahip olarak kullanımı `printf`.  
   
- `fwprintf`bir joker karakter sürümü `fprintf`; `fwprintf`, `format` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı şekilde davranır. `fprintf`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `fwprintf` bir joker karakter sürümü `fprintf`; `fwprintf`, `format` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı şekilde davranır. `fprintf` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

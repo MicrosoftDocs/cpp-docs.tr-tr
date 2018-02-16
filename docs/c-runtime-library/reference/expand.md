@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _expand
+ms.topic: reference
+apiname:
+- _expand
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -30,22 +32,24 @@ f1_keywords:
 - _nexpand
 - bexpand
 - _expand
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory blocks, changing size
 - _expand function
 - expand function
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 103ff4077bdc68b8886c5181ce317b5c0d0d2b79
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b6b2bf8ba3e30165f11e3392e04519a3d49cfd4a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="expand"></a>_expand
 Bellek blok boyutunu değiştirir.  
@@ -67,16 +71,16 @@ void *_expand(
  Yeni boyutunu bayt cinsinden.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_expand`void işaretçi ayrılabilecek bellek bloğuna döndürür. `_expand`, farklı `realloc`, bir blok boyutunu değiştirmek için taşıyamazsınız. Bu nedenle, blok, taşımadan genişletmek kullanılabilir yeterli bellek varsa `memblock` parametresi `_expand` dönüş değeri ile aynıdır.  
+ `_expand` void işaretçi ayrılabilecek bellek bloğuna döndürür. `_expand`, farklı `realloc`, bir blok boyutunu değiştirmek için taşıyamazsınız. Bu nedenle, blok, taşımadan genişletmek kullanılabilir yeterli bellek varsa `memblock` parametresi `_expand` dönüş değeri ile aynıdır.  
   
- `_expand`döndürür `NULL` ne zaman bir hata algılandığında, işlem sırasında. Örneğin, varsa `_expand` olan bir bellek bloğu daraltmak için kullanılan, küçük blok yığın veya geçersiz blok işaretçi Bozulması algılamak ve dönüş `NULL`.  
+ `_expand` döndürür `NULL` ne zaman bir hata algılandığında, işlem sırasında. Örneğin, varsa `_expand` olan bir bellek bloğu daraltmak için kullanılan, küçük blok yığın veya geçersiz blok işaretçi Bozulması algılamak ve dönüş `NULL`.  
   
- Olup olmadığını taşımadan blok verilen boyuta genişletmek kullanılabilir bellek yetersiz, işlevi döndürür `NULL`. `_expand`hiçbir zaman bir boyut istenen'den genişletilmiş bir blok döndürür. Bir hata oluşursa `errno` hatanın yapısını gösterir. Hakkında daha fazla bilgi için `errno`, bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ Olup olmadığını taşımadan blok verilen boyuta genişletmek kullanılabilir bellek yetersiz, işlevi döndürür `NULL`. `_expand` hiçbir zaman bir boyut istenen'den genişletilmiş bir blok döndürür. Bir hata oluşursa `errno` hatanın yapısını gösterir. Hakkında daha fazla bilgi için `errno`, bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
  Dönüş değeri, nesnenin herhangi bir türde bir depolama için uygun hizalanacak garanti bir depolama alanı işaret eder. Yeni öğe boyutunu denetlemek için kullanmak `_msize`. Bir işaretçi bir türe dışında almak için `void`, dönüş değerini cast türünü kullanın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_expand` İşlevi genişletin veya yığın konumunda taşımadan blok sözleşme çalışılırken tarafından önceden ayrılmış bellek bloğu boyutu değişir. `memblock` Parametresi blok başlangıcına işaret eder. `size` Parametresi yeni blok boyutunu bayt cinsinden verir. Blok içeriğini kadar kısa yeni ve eski boyutlarının değiştirilmemiştir. `memblock`serbest bırakılmış bir blok olmamalıdır.  
+ `_expand` İşlevi genişletin veya yığın konumunda taşımadan blok sözleşme çalışılırken tarafından önceden ayrılmış bellek bloğu boyutu değişir. `memblock` Parametresi blok başlangıcına işaret eder. `size` Parametresi yeni blok boyutunu bayt cinsinden verir. Blok içeriğini kadar kısa yeni ve eski boyutlarının değiştirilmemiştir. `memblock` serbest bırakılmış bir blok olmamalıdır.  
   
 > [!NOTE]
 >  64 bit platformlarda `_expand` blok boyutu 16 K'dan az ise ve bu nedenle Düşük Parçalanma Yığın ayrılan yeni boyutu geçerli boyutundan; özellikle, düşükse blok sözleşme değil `_expand` değişmeden blok bırakır ve döndürür `memblock`.  
@@ -130,7 +134,7 @@ Expanded block to 1024 bytes at 002C12BC
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
- [boş](../../c-runtime-library/reference/free.md)   
+ [Boş](../../c-runtime-library/reference/free.md)   
  [malloc](../../c-runtime-library/reference/malloc.md)   
  [_msize](../../c-runtime-library/reference/msize.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)

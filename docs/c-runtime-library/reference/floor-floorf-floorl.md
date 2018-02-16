@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - floorf
 - floorl
@@ -29,23 +30,25 @@ f1_keywords:
 - floorl
 - _floorl
 - floorf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - floor function
 - floorf function
 - calculating floors of values
 - floorl function
 ms.assetid: e9955f70-d659-414f-8050-132e13c8ff36
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a3bad88cdfbc9ee589a695de5da5f3bf722ace56
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c58979e8825c21a0e8023dec7ca3bf76964ff527
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="floor-floorf-floorl"></a>floor, floorf, floorl
 Bir değer kat hesaplar.  
@@ -81,7 +84,7 @@ long double floorl(
 |-----------|-------------------|-----------------------|  
 |± QNAN, UL|yok|_DOMAIN|  
   
- `floor`Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
+ `floor` Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  C++ verir aşırı yüklemesi, aşırı çağırması `floor` alın ve dönüş `float` ve `long double` değerleri. Bir C programı `floor` her zaman alan ve döndüren bir `double`.  

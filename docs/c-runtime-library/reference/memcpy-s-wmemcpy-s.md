@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - memcpy_s
 - wmemcpy_s
@@ -26,21 +27,23 @@ apitype: DLLExport
 f1_keywords:
 - wmemcpy_s
 - memcpy_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5748077731b07a0deeb4e601221b0ba412be391f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 16926cfb0f95911b3e272013167e7fa09b072b25
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="memcpys-wmemcpys"></a>memcpy_s, wmemcpy_s
 Arabellekler arasında kopyaları bayt sayısı. Sürümleri bunlar [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -80,15 +83,15 @@ errno_t wmemcpy_s(
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`dest`|`destSize`|`src`|`count`|Dönüş değeri|İçeriği`dest`|  
+|`dest`|`destSize`|`src`|`count`|Dönüş değeri|İçeriği `dest`|  
 |------------|----------------|-----------|---|------------------|------------------------|  
 |tüm|tüm|tüm|0|0|değiştirilmedi|  
-|`NULL`|tüm|tüm|sıfır olmayan|`EINVAL`|değiştirilmedi|  
-|tüm|tüm|`NULL`|sıfır olmayan|`EINVAL`|`dest`sıfırlanmasını|  
-|tüm|< `count`|tüm|sıfır olmayan|`ERANGE`|`dest`sıfırlanmasını|  
+|`NULL`|tüm|tüm|non-zero|`EINVAL`|değiştirilmedi|  
+|tüm|tüm|`NULL`|non-zero|`EINVAL`|`dest` sıfırlanmasını|  
+|tüm|< `count`|tüm|non-zero|`ERANGE`|`dest` sıfırlanmasını|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `memcpy_s`kopya `count` baytlar `src` için `dest`; `wmemcpy_s` kopyaları `count` geniş karakterler (iki bayt cinsinden). Kaynak ve hedef çakışma varsa, davranışını `memcpy_s` tanımlanmadı. Kullanım `memmove_s` çakışan bölgeler işlemek için.  
+ `memcpy_s` kopya `count` baytlar `src` için `dest`; `wmemcpy_s` kopyaları `count` geniş karakterler (iki bayt cinsinden). Kaynak ve hedef çakışma varsa, davranışını `memcpy_s` tanımlanmadı. Kullanım `memmove_s` çakışan bölgeler işlemek için.  
   
  Bu işlevler kendi parametreleri doğrulayın. Varsa `count` sıfır değil ve `dest` veya `src` null işaretçi veya `destSize` değerinden küçük `count`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `EINVAL` veya `ERANGE` ve `errno` dönüş değeri için.  
   

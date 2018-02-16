@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vsnwprintf_s
 - _vsnwprintf_s_l
@@ -30,7 +31,8 @@ f1_keywords:
 - _vsnprintf_s
 - _vsntprintf_s
 - _vsnwprintf_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vsnwprintf_s function
 - _vsntprintf_s function
@@ -46,16 +48,17 @@ helpviewer_keywords:
 - _vsnwprintf_s function
 - formatted text [C++]
 ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a8df40232ae7a6a92343e86fc00db5f4f0e571ee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6e908750b54778d4aad7affeb6bd748a84ab39bc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vsnprintfs-vsnprintfs-vsnprintfsl-vsnwprintfs-vsnwprintfsl"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma. Sürümleri bunlar [vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](../../c-runtime-library/reference/vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -138,7 +141,7 @@ int _vsnwprintf_s(
  Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `vsnprintf_s`,`_vsnprintf_s` ve `_vsnwprintf_s` çıkış hata oluşursa sonlandırma null veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. `vsnprintf_s`aynıdır `_vsnprintf_s`. `vsnprintf_s`ANSI standart uyumluluk açısından dahil edilmiştir. `_vnsprintf`Geriye dönük uyumluluk için tutulmaktadır.  
+ `vsnprintf_s`,`_vsnprintf_s` ve `_vsnwprintf_s` çıkış hata oluşursa sonlandırma null veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. `vsnprintf_s` aynıdır `_vsnprintf_s`. `vsnprintf_s` ANSI standart uyumluluk açısından dahil edilmiştir. `_vnsprintf` Geriye dönük uyumluluk için tutulmaktadır.  
   
  Veri ve bir sonlandırma null depolamak için gerekli depolama aşarsa `sizeOfBuffer`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md)sürece `count` olan [_TRUNCATE](../../c-runtime-library/truncate.md), bu durumda büyük bir dize olarak uygun `buffer` yazılır ve döndürülen -1. Geçersiz parametre işleyicisi sonra yürütme devam ederse, bu işlevler kümesi `buffer` boş bir dize olarak ayarlayın `errno` için `ERANGE`ve -1 döndürür.  
   
@@ -148,10 +151,10 @@ int _vsnwprintf_s(
   
 |`Condition`|Döndür|`errno`|  
 |-----------------|------------|-------------|  
-|`buffer`değil`NULL`|-1|`EINVAL`|  
-|`format`değil`NULL`|-1|`EINVAL`|  
+|`buffer` değil `NULL`|-1|`EINVAL`|  
+|`format` değil `NULL`|-1|`EINVAL`|  
 |`count` <= 0|-1|`EINVAL`|  
-|`sizeOfBuffer`çok küçük (ve `count` ! = `_TRUNCATE`)|-1 (ve `buffer` boş bir dize olarak ayarlayın)|`ERANGE`|  
+|`sizeOfBuffer` çok küçük (ve `count` ! = `_TRUNCATE`)|-1 (ve `buffer` boş bir dize olarak ayarlayın)|`ERANGE`|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve en fazla Yazar `count` tarafından verilen verileri belleğe karakterlerinden işaret için `buffer` ve bir sonlandırma null ekler.  
@@ -179,11 +182,11 @@ int _vsnwprintf_s(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`vsnprintf_s`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`_vsnprintf_s`, `_vsnprintf_s_l`|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`_vsnwprintf_s`, `_vsnwprintf_s_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`vsnprintf_s`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`_vsnprintf_s`, `_vsnprintf_s_l`|\<stdio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`_vsnwprintf_s`, `_vsnwprintf_s_l`|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

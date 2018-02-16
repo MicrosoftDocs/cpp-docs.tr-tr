@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - ldiv
 - lldiv
@@ -26,7 +27,8 @@ apitype: DLLExport
 f1_keywords:
 - ldiv
 - lldiv
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ldiv function
 - lldiv function
@@ -35,16 +37,17 @@ helpviewer_keywords:
 - remainder computing
 - computing quotients
 ms.assetid: 68ab5d83-27a4-479c-9d52-d055eb139eca
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0443ce4ec90a9c6aef8fb07854200341cc369cb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cdd241eca666570a47e1ce3ceb74730c6fe35de7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ldiv-lldiv"></a>ldiv, lldiv
 İki tamsayının geri kalanı ve sayının bir işlem olarak hesaplar.  
@@ -70,10 +73,10 @@ lldiv_t lldiv(
  Payda değeri.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `ldiv`bir yapı türü döndürür [ldiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur. `lldiv`bir yapı türü döndürür [lldiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur.  
+ `ldiv` bir yapı türü döndürür [ldiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur. `lldiv` bir yapı türü döndürür [lldiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ldiv` Ve `lldiv` işlevleri bölmek `numer` tarafından `denom`ve böylece sayının ve geri kalan işlem. Sayının işaretini, matematiksel sayının aynıdır. Sayının mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer. `ldiv`ve `lldiv` aynı `div`dışında bağımsız değişkenleri `ldiv` ve döndürülen yapısı üyeleri türü tümü `long`ve bağımsız değişkenleri `lldiv` ve döndürülen yapısı tür üyesi `long long`.  
+ `ldiv` Ve `lldiv` işlevleri bölmek `numer` tarafından `denom`ve böylece sayının ve geri kalan işlem. Sayının işaretini, matematiksel sayının aynıdır. Sayının mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer. `ldiv` ve `lldiv` aynı `div`dışında bağımsız değişkenleri `ldiv` ve döndürülen yapısı üyeleri türü tümü `long`ve bağımsız değişkenleri `lldiv` ve döndürülen yapısı türü üyesi`long long`.  
   
  `ldiv_t` Ve `lldiv_t` yapıları tanımlanmış \<stdlib.h >.  
   
@@ -81,7 +84,7 @@ lldiv_t lldiv(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`ldiv`, `lldiv`|\<stdlib.h >|  
+|`ldiv`, `lldiv`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

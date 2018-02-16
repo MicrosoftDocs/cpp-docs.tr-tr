@@ -7,20 +7,23 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::Box
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::Box
+dev_langs:
+- C++
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ac0940d9a7277b7b3f5b66e8d27750a593081471
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 813ba26333cb73212db966a0446d722eb4e0795d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformbox-class"></a>Platform::Box sınıfı
 Değer türü gibi etkinleştirir `Windows::Foundation::DateTime` veya skaler bir tür gibi `int` depolanması için bir `Platform::Object` türü. Genellikle kullanmak için gerekli değildir `Box` açıkça kutulama örtük olarak bir değer türüne dönüştürme ne zaman olacağını çünkü `Object^`.  
@@ -38,13 +41,13 @@ ref class Box abstract;
  **Namespace:** Platform
 |Üye|Açıklama|  
 |------------|-----------------|
-|[Kutusu](#ctor)|Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen.|
+|[Box](#ctor)|Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen.|
 |[işleç kutusunu&lt;const T&gt;^](#box-const-t)|Kutulama dönüşümleri gelen etkinleştirir bir `const` değer sınıfının `T` veya `enum` sınıfı `T` için `Box<T>`.|
 |[işleç kutusunu&lt;const volatile T&gt;^](#box-const-volatile-t)|Kutulama dönüşümleri gelen etkinleştirir bir `const volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`. |
 |[işleç kutusunu&lt;T&gt;^](#box-t)|Kutulama dönüşümleri değeri sınıfından etkinleştirir `T` için `Box<T>`.|
 |[işleç kutusunu&lt;volatile T&gt;^](#box-volatile-t)|Kutulama dönüşümleri gelen etkinleştirir bir `volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`.|
 |[Box::operator T](#t)|Kutulama dönüşümleri değeri sınıfından etkinleştirir `T` veya `enum` sınıfı `T` için `Box<T>`.| 
-## <a name="ctor"></a>Box::Box Oluşturucusu
+## <a name="ctor"></a> Box::Box Oluşturucusu
 Oluşturur bir `Box` belirtilen türde bir değer kapsülleyen. | |[ Özellik değeri](#value)| İçinde kapsüllenir değeri döndürür `Box` nesnesi. |  
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -57,7 +60,7 @@ Box(T valueArg);
  Kutulu değerinin türü — örneğin, `int`, `bool`, `float64`, `DateTime`.  
   
 
-## <a name="box-const-t"></a>Box::operator kutusunu&lt;const T&gt;^ işleci
+## <a name="box-const-t"></a> Box::operator kutusunu&lt;const T&gt;^ işleci
 Kutulama dönüşümleri gelen etkinleştirir bir `const` değer sınıfının `T` veya `enum` sınıfı `T` için `Box<T>`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -73,7 +76,7 @@ operator Box<const T>^(const T valueType);
 ### <a name="return-value"></a>Dönüş Değeri  
  A `Platform::Box<T>^` özgün değeri temsil eden örneği Kutulu ref sınıfta.  
   
-## <a name="box-const-volatile-t"></a>Box::operator kutusunu&lt;const volatile T&gt;^ işleci
+## <a name="box-const-volatile-t"></a> Box::operator kutusunu&lt;const volatile T&gt;^ işleci
 Kutulama dönüşümleri gelen etkinleştirir bir `const volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -89,7 +92,7 @@ operator Box<const volatile T>^(const volatile T valueType);
 ### <a name="return-value"></a>Dönüş Değeri  
  A `Platform::Box<T>^` özgün değeri temsil eden örneği Kutulu ref sınıfta.  
   
-## <a name="box-t"></a>Box::operator kutusunu&lt;T&gt;^ işleci
+## <a name="box-t"></a> Box::operator kutusunu&lt;T&gt;^ işleci
 Kutulama dönüşümleri değeri sınıfından etkinleştirir `T` için `Box<T>`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -105,7 +108,7 @@ operator Box<const T>^(const T valueType);
 ### <a name="return-value"></a>Dönüş Değeri  
  A `Platform::Box<T>^` özgün değeri temsil eden örneği Kutulu ref sınıfta.  
   
-## <a name="box-volatile-t"></a>Box::operator kutusunu&lt;volatile T&gt;^ işleci
+## <a name="box-volatile-t"></a> Box::operator kutusunu&lt;volatile T&gt;^ işleci
 Kutulama dönüşümleri gelen etkinleştirir bir `volatile` değer sınıfının `T` veya `enum` türü `T` için `Box<T>`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -121,7 +124,7 @@ operator Box<volatile T>^(volatile T valueType);
 ### <a name="return-value"></a>Dönüş Değeri  
  A `Platform::Box<T>^` özgün değeri temsil eden örneği Kutulu ref sınıfta.  
   
-## <a name="t"></a>Box::operator T işleci
+## <a name="t"></a>  Box::operator T işleci
 Kutulama dönüşümleri değeri sınıfından etkinleştirir `T` veya `enum` sınıfı `T` için `Box<T>`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -138,7 +141,7 @@ operator Box<T>^(T valueType);
  A `Platform::Box<T>^` özgün değeri temsil eden örneği Kutulu ref sınıfta.  
   
 
-## <a name="value"></a>Box::Value özelliği
+## <a name="value"></a> Box::Value özelliği
 İçinde kapsüllenir değeri döndürür `Box` nesnesi.  
   
 ### <a name="syntax"></a>Sözdizimi  

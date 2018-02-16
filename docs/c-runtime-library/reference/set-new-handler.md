@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _set_new_handler
+ms.topic: reference
+apiname:
+- _set_new_handler
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,23 +26,25 @@ apitype: DLLExport
 f1_keywords:
 - _set_new_handler
 - set_new_handler
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _set_new_handler function
 - set_new_handler function
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 581942f828bb666606b8f176ae3e2bb3454cbf98
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d82d37e13e941f98d51f2f171b9fb6f1b8071058
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setnewhandler"></a>_set_new_handler
 Varsa, hata işleme mekanizması aktarır denetim `new` işleci başarısız bellek ayıramadı.  
@@ -65,7 +69,7 @@ _PNH _set_new_handler(
   
  Hiçbir varsayılan işleyici yok.  
   
- `_set_new_handler`aslında bir atık toplama düzenidir. Çalışma zamanı sistem ayırma işlevinizi sıfır olmayan bir değer döndürür ve işlevinizi 0 döndürürse başarısız her zaman yeniden dener.  
+ `_set_new_handler` aslında bir atık toplama düzenidir. Çalışma zamanı sistem ayırma işlevinizi sıfır olmayan bir değer döndürür ve işlevinizi 0 döndürürse başarısız her zaman yeniden dener.  
   
  Bir örneğini `_set_new_handler` işlevi bir programı çalıştırma sistemiyle bağımsız değişken listesinde belirtilen özel durum işleme işlevi kaydeder:  
   
@@ -165,5 +169,5 @@ Please contact the application's support team for more information.
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
- [boş](../../c-runtime-library/reference/free.md)   
+ [Boş](../../c-runtime-library/reference/free.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)

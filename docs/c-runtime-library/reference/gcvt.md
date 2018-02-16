@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _gcvt
+ms.topic: reference
+apiname:
+- _gcvt
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _gcvt
-dev_langs: C++
+f1_keywords:
+- _gcvt
+dev_langs:
+- C++
 helpviewer_keywords:
 - _gcvt function
 - _CVTBUFSIZE
@@ -33,16 +37,17 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 22561495a972c7561f827c4b7f445bb3fa5c256f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 97f1487b770ac761a2555985a69069155e51cf74
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="gcvt"></a>_gcvt
 Kayan nokta değeri arabellekte depolayan bir dizeye dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_gcvt_s](../../c-runtime-library/reference/gcvt-s.md).  
@@ -68,10 +73,10 @@ char *_gcvt(
  Sonuç için depolama konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_gcvt`bir işaretçi basamak dizesi olarak döndürür.  
+ `_gcvt` bir işaretçi basamak dizesi olarak döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_gcvt` İşlevin bir kayan nokta dönüştürür `value` (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar `buffer`. `buffer` Dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek boyutu, `digits` + 1 kullanılır, işlevi arabelleğin sonuna üzerine yazar. Dönüştürülmüş dizeyi ondalık içerir ve oturum ve üs bilgileri içerebilir olmasıdır. Taşma desteği yoktur. `_gcvt`üretmek çalışır `digits` onlu basamak. Başaramazsa üreten `digits` üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede atlanması.  
+ `_gcvt` İşlevin bir kayan nokta dönüştürür `value` (, ondalık ayırıcıdan ve olası oturum bayt içeren) bir karakter dizesine ve dizesinde depolar `buffer`. `buffer` Dönüştürülen değer artı bir sonlandırma null otomatik olarak eklenir karakteri uyabilecek kadar büyük olmalıdır. Arabellek boyutu, `digits` + 1 kullanılır, işlevi arabelleğin sonuna üzerine yazar. Dönüştürülmüş dizeyi ondalık içerir ve oturum ve üs bilgileri içerebilir olmasıdır. Taşma desteği yoktur. `_gcvt` üretmek çalışır `digits` onlu basamak. Başaramazsa üreten `digits` üstel biçimdeki rakamları. Sondaki sıfırlar dönüştürmede atlanması.  
   
  A `buffer` uzunluğu `_CVTBUFSIZE` herhangi bir değişken için yeterliyse noktası değeri.  
   
@@ -81,7 +86,7 @@ char *_gcvt(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_gcvt`|\<stdlib.h >|  
+|`_gcvt`|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _recalloc_dbg
+ms.topic: reference
+apiname:
+- _recalloc_dbg
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -23,21 +25,23 @@ apitype: DLLExport
 f1_keywords:
 - recalloc_dbg
 - _recalloc_dbg
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _recalloc_dbg function
 - recalloc_dbg function
 ms.assetid: 43c3e9b2-be6d-4508-9b0f-3220c8a47ca3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dfd6489945ee4eb5ede32f010d474a2cb428ff97
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fabb666b72d175c3b08d9161749997c7648840e0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="recallocdbg"></a>_recalloc_dbg
 Bir dizi yeniden ayırır ve öğeleri 0 (yalnızca hata ayıklama sürümü) başlatır.  
@@ -82,11 +86,11 @@ void *_recalloc_dbg(
  Başarıyla tamamlandığında, bu işlev bir işaretçi ayrılabilecek bellek bloğu kullanıcı bölümünü döndürür, yeni işleyici işlevini çağırır ya da NULL döndürür. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [_recalloc](../../c-runtime-library/reference/recalloc.md) işlevi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_recalloc_dbg`bir hata ayıklama sürümü [_recalloc](../../c-runtime-library/reference/recalloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_recalloc_dbg` yapılan bir çağrı için sınırlı `_recalloc`. Her ikisi de `_recalloc` ve `_recalloc_dbg` bir bellek bloğu temel yığınındaki yeniden tahsis ancak `_recalloc_dbg` birkaç hata ayıklama özelliği düzenler: kullanıcı bölümünün belirli izlemek için bir blok türü parametresi bloğunun sızıntıları için test etmek için her iki tarafında arabellekler ayırma türleri ve `filename` / `linenumber` ayırma isteklerini kökenini belirlemek için bilgi.  
+ `_recalloc_dbg` bir hata ayıklama sürümü [_recalloc](../../c-runtime-library/reference/recalloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_recalloc_dbg` yapılan bir çağrı için sınırlı `_recalloc`. Her ikisi de `_recalloc` ve `_recalloc_dbg` bir bellek bloğu temel yığınındaki yeniden tahsis ancak `_recalloc_dbg` birkaç hata ayıklama özelliği düzenler: kullanıcı bölümünün belirli izlemek için bir blok türü parametresi bloğunun sızıntıları için test etmek için her iki tarafında arabellekler ayırma türleri ve `filename` / `linenumber` ayırma isteklerini kökenini belirlemek için bilgi.  
   
- `_recalloc_dbg`İstenen boyuttan biraz daha fazla alan ile belirtilen bellek bloğu yeniden ayırır (`num` * `size`) hangi olabilir veya büyük başlangıçta ayrılmış bellek bloğu boyutu küçüktür. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Yeniden ayırma özgün bellek bloğu yığınındaki farklı bir konuma taşıyarak, aynı zamanda bellek bloğu boyutunu değiştirme neden olabilir. Blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.  
+ `_recalloc_dbg` İstenen boyuttan biraz daha fazla alan ile belirtilen bellek bloğu yeniden ayırır (`num` * `size`) hangi olabilir veya büyük başlangıçta ayrılmış bellek bloğu boyutu küçüktür. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Yeniden ayırma özgün bellek bloğu yığınındaki farklı bir konuma taşıyarak, aynı zamanda bellek bloğu boyutunu değiştirme neden olabilir. Blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.  
   
- `_recalloc_dbg`Ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa; `EINVAL` (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşıyorsa döndürülen `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ `_recalloc_dbg` Ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa; `EINVAL` (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşıyorsa döndürülen `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
  Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemede çağırma arasındaki farklar hakkında daha fazla bilgi için bkz: [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).  
   
@@ -94,7 +98,7 @@ void *_recalloc_dbg(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_recalloc_dbg`|\<crtdbg.h >|  
+|`_recalloc_dbg`|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

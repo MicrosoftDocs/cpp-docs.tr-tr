@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: VCCORLIB/Platform::ValueType::ToString
-dev_langs: C++
-helpviewer_keywords: Platform::ValueType Class
+ms.topic: reference
+f1_keywords:
+- VCCORLIB/Platform::ValueType::ToString
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4dba418e74affb2531e3ebbd43d95c35601e9a26
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e4b6fd3ada45e810b95a88090bc98c9305013aaa
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType sınıfı
 Taban sınıfı için değer türleri örnekleri.  
@@ -49,7 +53,7 @@ public ref class ValueType : Object
   
  **Meta veriler:** platform.winmd  
 
-## <a name="tostring"></a>ValueType::ToString yöntemi
+## <a name="tostring"></a> ValueType::ToString yöntemi
 Nesnenin dize gösterimini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  

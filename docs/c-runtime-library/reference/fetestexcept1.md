@@ -8,8 +8,9 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: fetestexcept
+ms.topic: reference
+apiname:
+- fetestexcept
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -26,19 +27,22 @@ apitype: DLLExport
 f1_keywords:
 - fetestexcept
 - fenv/fetestexcept
-dev_langs: C++
-helpviewer_keywords: fetestexept function
+dev_langs:
+- C++
+helpviewer_keywords:
+- fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 78eb884950e2175815caf2ac645dc0e70c262566
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8f70e78e515e50b00992a22eb01988e09a5ccd42
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fetestexcept"></a>fetestexcept
 Belirtilen kayan nokta özel durumu bayrakları hangisinin şu anda ayarlanmış belirler.  
@@ -79,7 +83,7 @@ int fetestexcept(
   
 |İşlev|C üstbilgisi|C++ üstbilgi|  
 |--------------|--------------|------------------|  
-|`fetestexcept`|\<fenv.h >|\<cfenv >|  
+|`fetestexcept`|\<fenv.h >|\<cfenv>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

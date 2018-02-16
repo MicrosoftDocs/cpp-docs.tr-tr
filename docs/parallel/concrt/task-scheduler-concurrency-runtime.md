@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - oversubscription [Concurrency Runtime]
 - task scheduler [Concurrency Runtime], oversubscription
@@ -23,22 +25,23 @@ helpviewer_keywords:
 - scheduler policies [Concurrency Runtime]
 - task scheduler [Concurrency Runtime], wait function
 ms.assetid: 9aba278c-e0c9-4ede-b7c6-fedf7a365d90
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cf8577b9fcb5ac734ee9eb935688002dbfe162da
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d2d2d1fa21299867ba7a295ad9ef17759cab6c86
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="task-scheduler-concurrency-runtime"></a>Görev Zamanlayıcı (Eşzamanlılık Çalışma Zamanı)
 Belgelerin Bu kısımdaki konular eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nın önemli özelliklerini açıklar. Görev Zamanlayıcısı'nı eşzamanlılık çalışma zamanı kullanan mevcut kodunuzu performansını ince ayarını yapmak istediğinizde kullanışlıdır.  
   
 > [!IMPORTANT]
->  Görev Zamanlayıcısı'nı kullanılabilir olmayan bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama. Daha fazla bilgi için bkz: [Windows mağazası uygulamalarında C++ zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+>  Görev Zamanlayıcısı'nı bir evrensel Windows Platformu (UWP) uygulamasını kullanılabilir değil. Daha fazla bilgi için bkz: [oluşturma zaman uyumsuz işlemleri c++ UWP uygulamalar için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
 >   
 >  Visual Studio 2015 ve sonraki sürümlerinde, [concurrency::task](../../parallel/concrt/reference/task-class.md) sınıfı ve ppltasks.h ilgili türleri kendi Zamanlayıcı Windows iş parçacığı havuzu kullanın. Bu konu artık ppltasks.h içinde tanımlanan türler için de geçerlidir. Parallel_for gibi paralel algoritmalar eşzamanlılık çalışma zamanı varsayılan Zamanlayıcısı'nı kullanmaya devam edin.  
   

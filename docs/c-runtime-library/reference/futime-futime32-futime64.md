@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _futime64
 - _futime32
@@ -29,7 +30,8 @@ f1_keywords:
 - _futime
 - futime64
 - _futime64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _futime function
 - futime32 function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - futime function
 - _futime32 function
 ms.assetid: b942ce8f-5cc7-4fa8-ab47-de5965eded53
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 204e87183a8df076da8443ee4547825948fb5a2d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8caa47cd82f61c46ee10f03987bac9735ce506cc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="futime-futime32-futime64"></a>_futime, _futime32, _futime64
 Açık bir dosyada değişiklik zamanı ayarlar.  
@@ -81,7 +84,7 @@ int _futime64(
  Başarılı olursa 0 döndürür. Bir hata oluşursa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve `errno` ayarlanır `EBADF`, geçersiz bir dosya tanımlayıcısı belirten veya `EINVAL`, geçersiz bir parametre belirten.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_futime` İlişkili açık dosyada yordamı ayarlar değiştirme tarihi ve erişim zamanı `fd`. `_futime`aynıdır [_utime](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md), açık bir dosyanın dosya tanımlayıcısı yerine, bir dosya veya bir dosya için bir yol adı bağımsız değişkeni olması dışında. `_utimbuf` Yapısı yeni değiştirilme tarihi ve erişim saat için alanlar içeriyor. Her iki alan geçerli değerler içermelidir. `_utimbuf32`ve `_utimbuf64` özdeş `_utimbuf` dışındaki 32-bit ve 64-bit saat türleri kullanım için sırasıyla. `_futime`ve `_utimbuf` bir 64-bit time türü kullanın ve `_futime` için davranış aynıdır `_futime64`. Eski davranışı zorlamak gerekiyorsa, tanımlamak `_USE_32BIT_TIME_T`. Bu neden olur. Bunu yapmak `_futime` davranışı için aynı olacak şekilde `_futime32` ve neden `_utimbuf` eşdeğer yapmadan 32-bit zamanı tür yapısını `__utimbuf32`.  
+ `_futime` İlişkili açık dosyada yordamı ayarlar değiştirme tarihi ve erişim zamanı `fd`. `_futime` aynıdır [_utime](../../c-runtime-library/reference/utime-utime32-utime64-wutime-wutime32-wutime64.md), açık bir dosyanın dosya tanımlayıcısı yerine, bir dosya veya bir dosya için bir yol adı bağımsız değişkeni olması dışında. `_utimbuf` Yapısı yeni değiştirilme tarihi ve erişim saat için alanlar içeriyor. Her iki alan geçerli değerler içermelidir. `_utimbuf32` ve `_utimbuf64` özdeş `_utimbuf` dışındaki 32-bit ve 64-bit saat türleri kullanım için sırasıyla. `_futime` ve `_utimbuf` bir 64-bit time türü kullanın ve `_futime` için davranış aynıdır `_futime64`. Eski davranışı zorlamak gerekiyorsa, tanımlamak `_USE_32BIT_TIME_T`. Bu neden olur. Bunu yapmak `_futime` davranışı için aynı olacak şekilde `_futime32` ve neden `_utimbuf` eşdeğer yapmadan 32-bit zamanı tür yapısını `__utimbuf32`.  
   
  `_futime64`, kullanan `__utimbuf64` yapısı okuyabilir ve dosya tarihleri ile 23:59:59, 31 Aralık 3000 UTC; ancak değişiklik yapılan bir çağrı `_futime32` dosya tarihte 23:59:59 18 Ocak 2038, UTC sonraki başarısız olur. Gece yarısından, 1 Ocak 1970'ten, bu işlevler için tarih aralığını alt sınırdır.  
   
@@ -131,7 +134,7 @@ int main( void )
 }  
 ```  
   
-## <a name="input-crtfutimecinput"></a>Giriş: crt_futime.c_input  
+## <a name="input-crtfutimecinput"></a>Input: crt_futime.c_input  
   
 ```  
 Arbitrary file contents.  

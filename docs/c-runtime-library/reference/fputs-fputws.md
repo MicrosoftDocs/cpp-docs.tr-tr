@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fputs
 - fputws
@@ -27,7 +28,8 @@ f1_keywords:
 - fputs
 - fputws
 - _fputts
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - streams, writing strings to
 - fputws function
@@ -35,16 +37,17 @@ helpviewer_keywords:
 - fputs function
 - fputts function
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e4fcfe29abceb102534cd376c563917f3804d6df
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 31c559e49712fa74d5cd457b528266c4eaeaa17a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fputs-fputws"></a>fputs, fputws
 Bir dizeyi bir akışa yazar.  
@@ -75,9 +78,9 @@ int fputws(
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bunların her biri kopyaları işlevleri `str` çıktısına `stream` geçerli konumundaki. `fputws`joker karakter bağımsız değişkeni kopyalar `str` için `stream` çok baytlı karakter dizesi veya mi göre bir joker karakter dizesi olarak `stream` metin modunda veya ikili modunda sırasıyla açılır. Hiçbiri işlevi sonlandırma null karakter kopyalar.  
+ Bunların her biri kopyaları işlevleri `str` çıktısına `stream` geçerli konumundaki. `fputws` joker karakter bağımsız değişkeni kopyalar `str` için `stream` çok baytlı karakter dizesi veya mi göre bir joker karakter dizesi olarak `stream` metin modunda veya ikili modunda sırasıyla açılır. Hiçbiri işlevi sonlandırma null karakter kopyalar.  
   
- Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `fputs`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `fputs` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -92,7 +95,7 @@ int fputws(
 |`fputs`|\<stdio.h >|  
 |`fputws`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="example"></a>Örnek  
   

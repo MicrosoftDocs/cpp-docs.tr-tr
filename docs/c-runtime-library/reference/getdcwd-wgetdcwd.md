@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _getdcwd
 - _wgetdcwd
@@ -30,7 +31,8 @@ f1_keywords:
 - tgetdcwd
 - _wgetdcwd
 - _tgetdcwd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wgetdcwd function
 - working directory
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e314db740322fc3d5e7df5aeb6bd7de747e77695
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b74cc20c6f96381d445740db9d41828f28d5a53a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 Geçerli çalışma dizininin tam yolu belirtilen sürücü üzerindeki alır.  
@@ -93,7 +96,7 @@ wchar_t *_wgetdcwd(
 ## <a name="remarks"></a>Açıklamalar  
  `_getdcwd` İşlevi belirtilen sürücüde geçerli çalışma dizininin tam yolunu alır ve konumunda depolar `buffer`. Geçerli çalışma dizini köküne ayarlarsanız dizesi bir ters eğik (\\). Kök dışında başka bir dizin için geçerli çalışma dizini ayarlarsanız, dizesi bir ters eğik çizgi ile değil dizin adı ile sona erer.  
   
- `_wgetdcwd`bir joker karakter sürümü `_getdcwd`ve kendi `buffer` parametre ve dönüş değeri olan joker karakter dizeleri. Aksi takdirde, `_wgetdcwd` ve `_getdcwd` aynı şekilde davranır.  
+ `_wgetdcwd` bir joker karakter sürümü `_getdcwd`ve kendi `buffer` parametre ve dönüş değeri olan joker karakter dizeleri. Aksi takdirde, `_wgetdcwd` ve `_getdcwd` aynı şekilde davranır.  
   
  Bağımlı olsa da bu işlev iş parçacığı **GetFullPathName**, kendisini değil iş parçacığı güvenli olduğu. Ancak, birden çok iş parçacıklı uygulamanız bu iki işlevini çağırırsa iş parçacığı güvenliği ihlal edebilir ve **GetFullPathName**. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) arayın ve sonra **GetFullPathName**.  
   

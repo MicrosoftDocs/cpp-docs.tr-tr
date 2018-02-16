@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fstat32
 - _fstat64
@@ -40,7 +41,8 @@ f1_keywords:
 - _fstat
 - fstat32
 - _fstat64i32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _fstat64 function
 - fstati64 function
@@ -56,16 +58,17 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d2993016e9c6b3a4ea7d47ba8071fab1267e483f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c9518a0ea841a252717c225df7f07deba3a1ffbf
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 Açık bir dosyayı hakkındaki bilgileri alır.  
@@ -122,7 +125,7 @@ int _fstat64i32(
  Bir aygıt, `fd`; Aksi halde 0.  
   
  `st_mode`  
- Bit maskesi dosya modu bilgi. `_S_IFCHR` Bit ayarlanmışsa `fd` bir aygıta başvuruyor. `_S_IFREG` Bit ayarlanmışsa `fd` sıradan bir dosyaya başvuruyor. Okuma/yazma BITS dosyanın izin modunu göre ayarlanır. `_S_IFCHR`ve diğer sabitleri SYS\Stat.h tanımlanır.  
+ Bit maskesi dosya modu bilgi. `_S_IFCHR` Bit ayarlanmışsa `fd` bir aygıta başvuruyor. `_S_IFREG` Bit ayarlanmışsa `fd` sıradan bir dosyaya başvuruyor. Okuma/yazma BITS dosyanın izin modunu göre ayarlanır. `_S_IFCHR` ve diğer sabitleri SYS\Stat.h tanımlanır.  
   
  `st_mtime`  
  Dosyanın son değiştirilme zamanı.  
@@ -144,7 +147,7 @@ int _fstat64i32(
   
  Bu işlevler varyasyonları 32 bit veya 64-bit saat türleri ve 32 bit veya 64-bit dosya uzunlukları destekler. İlk sayısal son ekten (`32` veya `64`) zaman boyutu gösteren türü; kullanılan ikinci soneki ya da `i32` veya `i64`, belirten olup dosya boyutu 32 bit veya 64 bit tamsayı olarak temsil edilir.  
   
- `_fstat`eşdeğer olan `_fstat64i32`, ve `struct _stat` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_fstat` 32-bit zamanını kullanır ve `struct _stat` 32-bit saati içerir. Aynı için doğrudur `_fstati64`.  
+ `_fstat` eşdeğer olan `_fstat64i32`, ve `struct _stat` 64-bit saati içerir. Bu durum geçerlidir sürece `_USE_32BIT_TIME_T` , bu durumda eski yürürlükte; davranıştır tanımlanır `_fstat` 32-bit zamanını kullanır ve `struct _stat` 32-bit saati içerir. Aynı için doğrudur `_fstati64`.  
   
 ### <a name="time-type-and-file-length-type-variations-of-stat"></a>Saat türü ve dosya uzunluğu türü _stat varyasyonları  
   

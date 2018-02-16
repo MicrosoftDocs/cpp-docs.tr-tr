@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - putchar
 - putwchar
@@ -27,7 +28,8 @@ f1_keywords:
 - putchar
 - putwchar
 - _puttchar
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - putchar function
 - _puttchar function
@@ -35,16 +37,17 @@ helpviewer_keywords:
 - standard output, writing to
 - putwchar function
 ms.assetid: 93657c7f-cca1-4032-8e3a-cd6ab6193748
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f3320f40f822c9559b411144ecc621824eedbd3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 687cacfbf59f2d905de8f14bcebb6e7bbf68fb53
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="putchar-putwchar"></a>putchar, putwchar
 Bir karakter Yazar **stdout**.  
@@ -71,7 +74,7 @@ wint_t putwchar(
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `putc` Yordamı Yazar tek karakter `c` çıktısına `stream` geçerli konumundaki. Herhangi bir tamsayı için geçirilebilir `putc`, ancak yalnızca alt 8 bit yazılır. `putchar` Yordamdır aynı **putc (** `c` **, stdout)**. Okuma hatası oluşursa, her yordam için akış için hata göstergesi ayarlanır. `putc`ve `putchar` benzer `fputc` ve `_fputchar`, sırasıyla hem işlevleri de makroları olarak uygulanan ancak (bkz [seçme arasında işlevler ve makrolar](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). `putwc`ve `putwchar` joker karakter sürümleri `putc` ve `putchar`sırasıyla.  
+ `putc` Yordamı Yazar tek karakter `c` çıktısına `stream` geçerli konumundaki. Herhangi bir tamsayı için geçirilebilir `putc`, ancak yalnızca alt 8 bit yazılır. `putchar` Yordamdır aynı **putc (** `c` **, stdout)**. Okuma hatası oluşursa, her yordam için akış için hata göstergesi ayarlanır. `putc` ve `putchar` benzer `fputc` ve `_fputchar`, sırasıyla hem işlevleri de makroları olarak uygulanan ancak (bkz [seçme arasında işlevler ve makrolar](../../c-runtime-library/recommendations-for-choosing-between-functions-and-macros.md)). `putwc` ve `putwchar` joker karakter sürümleri `putc` ve `putchar`sırasıyla.  
   
  Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
   
@@ -88,7 +91,7 @@ wint_t putwchar(
 |`putchar`|\<stdio.h >|  
 |`putwchar`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="libraries"></a>Kitaplıklar  
  Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  

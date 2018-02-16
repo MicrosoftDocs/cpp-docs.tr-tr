@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fdopen
 - _wfdopen
@@ -28,7 +29,8 @@ f1_keywords:
 - _wfdopen
 - wfdopen
 - tfdopen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wfdopen function
 - _fdopen function
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - _tfdopen function
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7108fdedb2698e6065c22ebe6905d897ee389ece
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2474c25d30415d48252a2621ae5f7e69e5fed4d3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 
@@ -68,10 +71,10 @@ FILE *_wfdopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*FD*  
+*fd*  
 Açık dosyanın dosya tanımlayıcısı.
 
-*modu*  
+*mode*  
 Dosya erişimi türü.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -82,7 +85,7 @@ Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_fdopen` İşlevi tarafından tanımlanan dosyası içeren bir g/ç akışı ilişkilendirir *fd*ve bu nedenle arabelleğe ve biçimlendirilmiş düşük düzey g/ç için açılan bir dosya sağlar. `_wfdopen`bir joker karakter sürümü `_fdopen`; *modu* bağımsız değişkeni `_wfdopen` bir joker karakter dizesidir. `_wfdopen`ve `_fdopen` Aksi takdirde aynı şekilde davranır.
+`_fdopen` İşlevi tarafından tanımlanan dosyası içeren bir g/ç akışı ilişkilendirir *fd*ve bu nedenle arabelleğe ve biçimlendirilmiş düşük düzey g/ç için açılan bir dosya sağlar. `_wfdopen` bir joker karakter sürümü `_fdopen`; *modu* bağımsız değişkeni `_wfdopen` bir joker karakter dizesidir. `_wfdopen` ve `_fdopen` Aksi takdirde aynı şekilde davranır.
 
 Dosya tanımlayıcıları içine geçirilen `_fdopen` olunan tarafından döndürülen `FILE *` akış. Varsa `_fdopen` başarılı çağırmayın [ \_kapatmak](../../c-runtime-library/reference/close.md) üzerinde dosya tanımlayıcısı. Çağırma [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) döndürülen üzerinde `FILE *` ayrıca dosya tanımlayıcısı kapatır.
 
@@ -134,7 +137,7 @@ Varsa `t` veya `b` verilmemiştir *modu*, varsayılan çeviri modu genel değiş
 
 Geçerli karakterleri *modu* kullanılan dize `fopen` ve `_fdopen` karşılık *oflag* kullanılan bağımsız değişkenler [ \_açmak](../../c-runtime-library/reference/open-wopen.md) ve [ \_sopen](../../c-runtime-library/reference/sopen-wsopen.md)bu tabloda gösterildiği gibi:
 
-|İçindeki karakterleri *modu* dize|Eşdeğer *oflag* değerini `_open` ve`_sopen`|
+|İçindeki karakterleri *modu* dize|Eşdeğer *oflag* değerini `_open` ve `_sopen`|
 |---------------------------------|---------------------------------------------------|
 |`a`|**\_O\_WRONLY &#124; \_O\_APPEND** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
 |`a+`|**\_O\_RDWR &#124; \_O\_APPEND** (genellikle  **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|
@@ -143,7 +146,7 @@ Geçerli karakterleri *modu* kullanılan dize `fopen` ve `_fdopen` karşılık *
 |`w`|**\_O\_WRONLY** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
 |`w+`|**\_O\_RDWR** (genellikle  **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
 |`b`|**\_O\_İKİLİ**|
-|`t`|**\_O\_METİN**|
+|`t`|**\_O\_TEXT**|
 |`c`|Yok.|
 |`n`|Yok.|
 
@@ -193,7 +196,7 @@ int main( void )
 }
 ```
 
-### <a name="input-crtfdopentxt"></a>Giriş: crt_fdopen.txt
+### <a name="input-crtfdopentxt"></a>Input: crt_fdopen.txt
 
 ```
 Line one
@@ -209,7 +212,7 @@ Lines in file: 2
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
-[\_Dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)   
+[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)   
 [fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
 [fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
 [freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   

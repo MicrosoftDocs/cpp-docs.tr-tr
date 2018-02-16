@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _localtime64_s
 - _localtime32_s
@@ -30,7 +31,8 @@ f1_keywords:
 - localtime_s
 - localtime64_s
 - _localtime64_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _localtime64_s function
 - localtime32_s function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - time, converting values
 - localtime_s function
 ms.assetid: 842d1dc7-d6f8-41d3-b340-108d4b90df54
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ddce7d73919e7e7942d8ddd7954ce6cbec4789fe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e30705867a9114fd44b8850d5cf950c2c1d8c4ce
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="localtimes-localtime32s-localtime64s"></a>localtime_s, _localtime32_s, _localtime64_s
 Bir saat değeri dönüştürür ve yerel saat dilimini düzeltir. Sürümleri bunlar [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -78,29 +81,29 @@ errno_t _localtime64_s(
  Saklı zaman işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ Zero if successful. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`_tm`|`time`|Dönüş değeri|Değer`_tm`|Geçersiz parametre işleyiciyi çağırır|  
+|`_tm`|`time`|Dönüş değeri|Değer `_tm`|Geçersiz parametre işleyiciyi çağırır|  
 |-----------|------------|------------------|--------------------|---------------------------------------|  
 |`NULL`|tüm|`EINVAL`|değiştirilmedi|Evet|  
 |Değil `NULL` (noktaları için geçerli bellek)|`NULL`|`EINVAL`|Tüm alanları -1 olarak ayarlayın|Evet|  
-|Değil `NULL` (noktaları için geçerli bellek)|0'den küçük ya da daha büyük`_MAX__TIME64_T`|`EINVAL`|Tüm alanları -1 olarak ayarlayın|Hayır|  
+|Değil `NULL` (noktaları için geçerli bellek)|0'den küçük ya da daha büyük `_MAX__TIME64_T`|`EINVAL`|Tüm alanları -1 olarak ayarlayın|Hayır|  
   
  İlk iki hata koşulları söz konusu olduğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_localtime32_s` İşlevi dönüştürür olarak saklanan bir süre bir [time_t](../../c-runtime-library/standard-types.md) değer ve sonuç türü yapısında depolar `tm`. `long` Değeri `timer` gece yarısından beri geçen saniye temsil eder (00: 00:00), 1 Ocak 1970'den itibaren UTC. Bu değer genellikle alanından elde `time` işlevi.  
   
- `_localtime32_s`Kullanıcı ilk genel ortam değişkeni ayarlarsa için yerel saat dilimi düzeltir `TZ`. Zaman `TZ` ayarlandığında, diğer üç ortam değişkenlerini (`_timezone`, `_daylight`, ve `_tzname`) otomatik olarak da ayarlanır. Varsa `TZ` değişken ayarlanmazsa `localtime32_s` tarih uygulama Denetim Masası'nda belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyor, Pasifik saat diliminde güveninin, PST8PDT varsayılan olarak kullanılır. Bkz: [_tzset](../../c-runtime-library/reference/tzset.md) bu değişkenleri açıklaması. `TZ`bir Microsoft uzantısı ve ANSI standart tanımının parçası olmayan `localtime`.  
+ `_localtime32_s` Kullanıcı ilk genel ortam değişkeni ayarlarsa için yerel saat dilimi düzeltir `TZ`. Zaman `TZ` ayarlandığında, diğer üç ortam değişkenlerini (`_timezone`, `_daylight`, ve `_tzname`) otomatik olarak da ayarlanır. Varsa `TZ` değişken ayarlanmazsa `localtime32_s` tarih uygulama Denetim Masası'nda belirtilen saat dilimi bilgilerini kullanmaya çalışır. Bu bilgiler alınamıyor, Pasifik saat diliminde güveninin, PST8PDT varsayılan olarak kullanılır. Bkz: [_tzset](../../c-runtime-library/reference/tzset.md) bu değişkenleri açıklaması. `TZ` bir Microsoft uzantısı ve ANSI standart tanımının parçası olmayan `localtime`.  
   
 > [!NOTE]
 >  Hedef ortam gün ışığından yararlanma saati etkin olup olmadığını belirlemek denemelisiniz.  
   
  `_localtime64_s`, kullanan `__time64_t` yapısı, 23:59:59, Ocak 18 3001, Eşgüdümlü Evrensel Saat (UTC) ayarlama ifade tarihleri sağlarken `_localtime32_s` ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder.  
   
- `localtime_s`için değerlendiren bir satır içi işlev `_localtime64_s`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `localtime_s` için değerlendirilecek `_localtime32_s`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
+ `localtime_s` için değerlendiren bir satır içi işlev `_localtime64_s`, ve `time_t` eşdeğerdir `__time64_t`. Yorumlamaya derleyici zorlamak gerekiyorsa `time_t` eski 32 bit olarak `time_t`, tanımlayabileceğiniz `_USE_32BIT_TIME_T`. Bunun neden olacak `localtime_s` için değerlendirilecek `_localtime32_s`. Bu, uygulamanızın 18 Ocak 2038 sonra başarısız olabilir ve 64 bit platformlarda izin verilmiyor çünkü önerilmez.  
   
  Yapı türünde alanlar [tm](../../c-runtime-library/standard-types.md) , her biri aşağıdaki değerlerini depolayan bir `int`.  
   
@@ -200,9 +203,9 @@ Fri Apr 25 01:19:27 PM
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
  [asctime_s, _wasctime_s](../../c-runtime-library/reference/asctime-s-wasctime-s.md)   
- [CTime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
+ [ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md)   
  [_ftime, _ftime32, _ftime64](../../c-runtime-library/reference/ftime-ftime32-ftime64.md)   
  [gmtime_s, _gmtime32_s, _gmtime64_s](../../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)   
  [damgasını, _localtime32, _localtime64](../../c-runtime-library/reference/localtime-localtime32-localtime64.md)   
- [_time64 _time32, saat](../../c-runtime-library/reference/time-time32-time64.md)   
+ [time, _time32, _time64](../../c-runtime-library/reference/time-time32-time64.md)   
  [_tzset](../../c-runtime-library/reference/tzset.md)

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fprintf_s_l
 - fwprintf_s
@@ -28,7 +29,8 @@ f1_keywords:
 - _ftprintf_s
 - fprintf_s
 - fwprintf_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ftprintf_s_l function
 - ftprintf_s function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - _fwprintf_s_l function
 - print formatted data to streams
 ms.assetid: 16067c3c-69ce-472a-8272-9aadf1f5beed
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9fc74164b44b44e9f2ed56066d91f68e232fceb7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 85877d6bbab237c4c852ef7babce38b936e598fc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fprintfs-fprintfsl-fwprintfs-fwprintfsl"></a>fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 Akış biçimlendirilmiş verileri yazdırma. Sürümleri bunlar [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -97,12 +100,12 @@ int _fwprintf_s_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `fprintf_s`yazılan bayt sayısını döndürür. `fwprintf_s`yazılan geniş karakter sayısını döndürür. Çıkış hata oluştuğunda bu işlevlerin her biri negatif bir değer yerine döndürür.  
+ `fprintf_s` yazılan bayt sayısını döndürür. `fwprintf_s` yazılan geniş karakter sayısını döndürür. Çıkış hata oluştuğunda bu işlevlerin her biri negatif bir değer yerine döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `fprintf_s`biçimlendirir ve bir dizi karakter ve değerlerini çıktıya yazdırır `stream`. Her bağımsız değişkeninde `argument_list` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. `format` Bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
+ `fprintf_s` biçimlendirir ve bir dizi karakter ve değerlerini çıktıya yazdırır `stream`. Her bağımsız değişkeninde `argument_list` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. `format` Bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
   
- `fwprintf_s`bir joker karakter sürümü `fprintf_s`; `fwprintf_s`, `format` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı şekilde davranır. `fprintf_s`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `fwprintf_s` bir joker karakter sürümü `fprintf_s`; `fwprintf_s`, `format` bir joker karakter dizesidir. Akış ANSI modunda açtıysanız bu işlevler aynı şekilde davranır. `fprintf_s` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

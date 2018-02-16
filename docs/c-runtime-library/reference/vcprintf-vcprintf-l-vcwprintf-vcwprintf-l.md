@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _vcwprintf
 - _vcprintf_l
@@ -34,7 +35,8 @@ f1_keywords:
 - _vcprintf
 - vcprintf
 - vcwprintf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - vcwprintf function
 - _vcwprintf_l function
@@ -50,22 +52,23 @@ helpviewer_keywords:
 - vtcprintf function
 - formatted text [C++]
 ms.assetid: 4ef8d237-6200-4b66-8731-8c57e5624bb1
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6fd761e434b9fa9d9db694955d17cac0f33d84b6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fdf5292278e52f9f36858024db90071084f9b9a9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="vcprintf-vcprintfl-vcwprintf-vcwprintfl"></a>_vcprintf, _vcprintf_l, _vcwprintf, _vcwprintf_l
 Yazma bağımsız değişkenlerinin listesi için bir işaretçi kullanılarak konsola çıktı biçimlendirilmiş. Bu işlevlerin daha güvenli sürümü, bkz: [_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l](../../c-runtime-library/reference/vcprintf-s-vcprintf-s-l-vcwprintf-s-vcwprintf-s-l.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -106,7 +109,7 @@ int _vcwprintf_l(
  Yazılan karakter sayısını veya bir çıktı hatası oluşursa negatif bir değer. Varsa `format` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve -1 döndürülür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve verilen veri konsola yazar. `_vcwprintf`joker karakter sürümü `_vcprintf`. Bağımsız değişken olarak bir joker karakter dizesi sürer.  
+ Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve verilen veri konsola yazar. `_vcwprintf` joker karakter sürümü `_vcprintf`. Bağımsız değişken olarak bir joker karakter dizesi sürer.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -124,10 +127,10 @@ int _vcwprintf_l(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`_vcprintf`, `_vcprintf_l`|\<conio.h > ve \<stdarg.h >|\<VarArgs.h > *|  
-|`_vcwprintf`, `_vcwprintf_l`|\<conio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|  
+|`_vcprintf`, `_vcprintf_l`|\<conio.h > ve \<stdarg.h >|\<varargs.h>*|  
+|`_vcwprintf`, `_vcwprintf_l`|\<conio.h > veya \<wchar.h >, ve \<stdarg.h >|\<varargs.h>*|  
   
- \*UNIX V uyumluluk için gereklidir.  
+ \* UNIX V uyumluluk için gereklidir.  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

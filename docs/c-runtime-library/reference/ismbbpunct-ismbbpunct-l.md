@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ismbbpunct
 - _ismbbpunct_l
@@ -28,23 +29,25 @@ f1_keywords:
 - ismbbpunct_l
 - _ismbbpunct_l
 - _ismbbpunct
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ismbbpunct function
 - _ismbbpunct function
 - ismbbpunct_l function
 - _ismbbpunct_l function
 ms.assetid: 1976c9d3-7d1a-415f-ac52-2715c7bb56eb
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3b64f00a805fc54f295d4cf86df6c4a780bb7bdb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cd6e7eb83752a8848ba6ff0ffb39309cd01e8679
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ismbbpunct-ismbbpunctl"></a>_ismbbpunct, _ismbbpunct_l
 Belirli bir karakterin bir noktalama karakteri olup olmadığını belirler.  
@@ -69,7 +72,7 @@ int _ismbbpunct_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_ismbbpunct`sıfır olmayan bir değer döndürür tamsayı `c` ASCII olmayan noktalama simgesi. `_ismbbpunct`Geçerli yerel ayar için herhangi bir yerel ayara bağımlı karakter ayarı kullanır. `_ismbbpunct_l`geçirilen yerel kullanır ancak bu aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_ismbbpunct` sıfır olmayan bir değer döndürür tamsayı `c` ASCII olmayan noktalama simgesi. `_ismbbpunct` Geçerli yerel ayar için herhangi bir yerel ayara bağımlı karakter ayarı kullanır. `_ismbbpunct_l` geçirilen yerel kullanır ancak bu aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

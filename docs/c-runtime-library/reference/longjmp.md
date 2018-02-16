@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: longjmp
+ms.topic: reference
+apiname:
+- longjmp
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,22 +22,25 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: longjmp
-dev_langs: C++
+f1_keywords:
+- longjmp
+dev_langs:
+- C++
 helpviewer_keywords:
 - restoring stack environment and execution locale
 - longjmp function
 ms.assetid: 0e13670a-5130-45c1-ad69-6862505b7a2f
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 864aacbc30d9d50e1d0335d0d74c7ed63119d132
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f80495e9c3e9fa7ce39dac8811e474f68844d196
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="longjmp"></a>longjmp
 Geri Yükleme ortamını ve yürütme yerel yığın.  
@@ -58,7 +63,7 @@ Geri Yükleme ortamını ve yürütme yerel yığın.
  İçin döndürülecek değer `setjmp` çağırın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `longjmp` İşlevi bir yığın ortamı geri yükler ve yürütme yerel daha önce kaydettiğiniz `env` tarafından `setjmp`. `setjmp`ve `longjmp` bir yerel olmayan yürütmek için bir yol sağlamak `goto`; bunlar genellikle yürütme denetimi hata işleme geçirmek için kullanılan veya kurtarma kodu normal kullanmadan önce çağrılan bir yordam, arama ve dönüş kuralları.  
+ `longjmp` İşlevi bir yığın ortamı geri yükler ve yürütme yerel daha önce kaydettiğiniz `env` tarafından `setjmp`. `setjmp` ve `longjmp` bir yerel olmayan yürütmek için bir yol sağlamak `goto`; bunlar genellikle yürütme denetimi hata işleme geçirmek için kullanılan veya kurtarma kodu normal kullanmadan önce çağrılan bir yordam, arama ve dönüş kuralları.  
   
  Çağrı `setjmp` kaydedilmesi geçerli yığın ortamını neden `env`. Sonraki çağrı `longjmp` kaydedilmiş ortamı geri yükler ve karşılık gelen hemen ardından noktasına denetimini döndürür `setjmp` çağırın. Yürütme sürdürür gibi *değeri* tarafından yalnızca iade edildi `setjmp` çağırın. Denetim alma yordamı erişilebilir (yazmaç değişkenleri dışında) tüm değişkenlerin değerleri, sahip oldukları zaman değerleri içeren `longjmp` çağrıldı. YAZMAÇ değişkenlerin değerleri tahmin edilemez. Tarafından döndürülen değer `setjmp` sıfır olmalıdır. Varsa *değeri* geçirilen gerçek dönüş 1 değerini 0 değiştirilir.  
   
@@ -78,7 +83,7 @@ Geri Yükleme ortamını ve yürütme yerel yığın.
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`longjmp`|\<setjmp.h'ı >|  
+|`longjmp`|\<setjmp.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

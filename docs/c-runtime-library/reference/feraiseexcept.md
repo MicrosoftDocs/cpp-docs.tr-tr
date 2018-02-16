@@ -8,8 +8,9 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: feraiseexcept
+ms.topic: reference
+apiname:
+- feraiseexcept
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -25,19 +26,22 @@ apitype: HeaderDef
 f1_keywords:
 - feraiseexcept
 - fenv/feraiseexcept
-dev_langs: C++
-helpviewer_keywords: feraiseexcept function
+dev_langs:
+- C++
+helpviewer_keywords:
+- feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9ab77da8cee422bab618dc8737ad254b65301ffd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: aaaa1848af2c8a7831017f6332afa988c305fe05
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 Belirtilen kayan nokta özel durumları oluşturur.  
@@ -79,7 +83,7 @@ int feraiseexcept(
   
 |İşlev|C üstbilgisi|C++ üstbilgi|  
 |--------------|--------------|------------------|  
-|`feraiseexcept`|\<fenv.h >|\<cfenv >|  
+|`feraiseexcept`|\<fenv.h >|\<cfenv>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

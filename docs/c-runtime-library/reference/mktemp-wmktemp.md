@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wmktemp
 - _mktemp
@@ -29,7 +30,8 @@ f1_keywords:
 - tmktemp
 - _wmktemp
 - _mktemp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wmktemp function
 - _mktemp function
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - mktemp function
 - temporary files [C++]
 ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ac2fd19254cce03b7cd7efc4324f5dc03c608b7a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f87321b24e96ff00f54ecefbf67b5bd211595d71
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mktemp-wmktemp"></a>_mktemp, _wmktemp
 Benzersiz bir dosya adı oluşturur. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_mktemp_s, _wmktemp_s](../../c-runtime-library/reference/mktemp-s-wmktemp-s.md).  
@@ -81,7 +84,7 @@ wchar_t *_wmktemp(
  Bu işlevlerin her biri bir işaretçi değiştirilmiş şablonu döndürür. İşlevi döndürür `NULL` varsa `template` hatalı biçimlendirilmiş ya da daha fazla benzersiz adlar verilen şablonu oluşturulabilir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_mktemp` İşlev değiştirerek benzersiz bir dosya adı oluşturur `template` bağımsız değişkeni. `_mktemp`çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre çalışma zamanı sistem tarafından algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wmktemp`bir joker karakter sürümü `_mktemp`; bağımsız değişkeni ve dönüş değeri `_wmktemp` joker karakter dizelerdir. `_wmktemp`ve `_mktemp` aynı şekilde Aksi takdirde, dışında davranır `_wmktemp` çok baytlı karakter dizeleri işlemez.  
+ `_mktemp` İşlev değiştirerek benzersiz bir dosya adı oluşturur `template` bağımsız değişkeni. `_mktemp` çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre çalışma zamanı sistem tarafından algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wmktemp` bir joker karakter sürümü `_mktemp`; bağımsız değişkeni ve dönüş değeri `_wmktemp` joker karakter dizelerdir. `_wmktemp` ve `_mktemp` aynı şekilde Aksi takdirde, dışında davranır `_wmktemp` çok baytlı karakter dizeleri işlemez.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -89,7 +92,7 @@ wchar_t *_wmktemp(
 |---------------------|--------------------------------------|--------------------|-----------------------|  
 |`_tmktemp`|`_mktemp`|`_mktemp`|`_wmktemp`|  
   
- `template` Bağımsız değişkenini içeriyor formun `base` *XXXXXX*, burada `base` sağladığınız yeni dosya adı parçası ve her X tarafından sağlanan bir karakter için bir yer tutucudur `_mktemp`. Her yer tutucu karakter `template` bir büyük harf x olmalıdır `_mktemp` korur `base` ve ilk sonunda X alfabetik bir karakter ile değiştirir. `_mktemp`Aşağıdaki sondaki değiştirir X'lerin beş basamaklı değerle; Bu değer, işlem, veya birden çok iş parçacıklı programlar çağıran iş parçacığı arama tanımlayan benzersiz bir sayıdır.  
+ `template` Bağımsız değişkenini içeriyor formun `base` *XXXXXX*, burada `base` sağladığınız yeni dosya adı parçası ve her X tarafından sağlanan bir karakter için bir yer tutucudur `_mktemp`. Her yer tutucu karakter `template` bir büyük harf x olmalıdır `_mktemp` korur `base` ve ilk sonunda X alfabetik bir karakter ile değiştirir. `_mktemp` Aşağıdaki sondaki değiştirir X'lerin beş basamaklı değerle; Bu değer, işlem, veya birden çok iş parçacıklı programlar çağıran iş parçacığı arama tanımlayan benzersiz bir sayıdır.  
   
  Her başarılı çağrısı `_mktemp` değiştirir `template`. Aynı işlem ya da aynı iş parçacığı sonraki her çağrıda `template` bağımsız değişkeni, `_mktemp` tarafından döndürülen adlarıyla dosya adları için denetimleri `_mktemp` önceki çağrılarında. Bir verilen ad için hiçbir dosya varsa, `_mktemp` o adını döndürür. Tüm adlar, döndürülen için dosyalar varsa `_mktemp` kullanılan sonraki kullanılabilir küçük harf, sırayla 'a' ile 'z' ile daha önce döndürülen adı alfasayısal bir karakter değiştirerek yeni bir ad oluşturur. Örneğin, varsa `base` değil:  
   
@@ -115,7 +118,7 @@ fnb12345
 fna12345  
 ```  
   
- `_mktemp`en fazla 26 benzersiz dosya adları için temel ve şablon değerleri verilen herhangi bir bileşimini oluşturabilirsiniz. Bu nedenle, FNZ12345 son benzersiz dosya adıdır `_mktemp` için oluşturabilirsiniz `base` ve `template` Bu örnekte kullanılan değerler.  
+ `_mktemp` en fazla 26 benzersiz dosya adları için temel ve şablon değerleri verilen herhangi bir bileşimini oluşturabilirsiniz. Bu nedenle, FNZ12345 son benzersiz dosya adıdır `_mktemp` için oluşturabilirsiniz `base` ve `template` Bu örnekte kullanılan değerler.  
   
  Hata durumunda, `errno` ayarlanır. Varsa `template` biçimi geçersiz (örneğin, 6 daha az X'lerin), `errno` ayarlanır `EINVAL`. Varsa `_mktemp` tüm 26 olası dosya adları zaten var olduğundan, benzersiz bir ad oluşturamıyor `_mktemp` şablonu boş bir dize olarak ayarlar ve döndürür `EEXIST`.  
   

@@ -4,36 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: BEGIN_PARAM_MAP
-dev_langs: C++
-helpviewer_keywords: BEGIN_PARAM_MAP macro
+f1_keywords:
+- BEGIN_PARAM_MAP
+dev_langs:
+- C++
+helpviewer_keywords:
+- BEGIN_PARAM_MAP macro
 ms.assetid: 32f3f70e-c7c6-4b80-ab98-e02c8eb3a894
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 448558ad32bb558f9daa417b49ebc733664295d4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: a216a44248a3f1baa8e821e986706e717b9f82fb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="beginparammap"></a>BEGIN_PARAM_MAP
 Parametre eşleme girdilerini başlangıcını işaretler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-```  
-  
-BEGIN_PARAM_MAP(  
-x  
- )  
+```cpp
+BEGIN_PARAM_MAP(x)  
   
 ```  
   

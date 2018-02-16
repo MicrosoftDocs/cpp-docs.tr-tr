@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: mbrlen
+ms.topic: reference
+apiname:
+- mbrlen
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,20 +23,24 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-string-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: mbrlen
-dev_langs: C++
-helpviewer_keywords: mbrlen function
+f1_keywords:
+- mbrlen
+dev_langs:
+- C++
+helpviewer_keywords:
+- mbrlen function
 ms.assetid: dde8dee9-e091-4c4c-81b3-639808885ae1
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 58f94a79bb5304ed1ebfe9b7c2241b28497c8c4f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c5c110c1fc5917614514b4e4fd7e474569026207
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbrlen"></a>mbrlen
 Geçerli yerel birden çok baytlı karakter ortasında yeniden özelliği ile birden çok baytlı karakter tamamlamak için gereken bayt sayısını belirler.  
@@ -68,10 +74,10 @@ size_t mbrlen(
  1 `count`(dahil)  
  Sonraki `count` veya geçerli bir birden çok baytlı karakter daha az sayıda bayt tamamlayın. Döndürülen değer birden çok baytlı karakter tamamlamak bayt sayısıdır.  
   
- (size_t) (-2)  
+ (size_t)(-2)  
  Sonraki `count` bayt katkıda tamamlanmamış ancak büyük olasılıkla geçerli birden çok baytlı karakter ve tüm `count` bayt işlenir.  
   
- (size_t) (-1)  
+ (size_t)(-1)  
  Bir kodlama hatası oluştu. Sonraki `count` veya daha az sayıda bayt tam ve geçerli birden çok baytlı karakter katkıda bulunmamaktadır. Bu durumda, `errno` EILSEQ ve dönüştürme durumda ayarlanır `mbstate` belirtilmedi.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -79,7 +85,7 @@ size_t mbrlen(
   
  `mbrlen` İşlev kaydeder ve tamamlanmamış bir birden çok baytlı karakter shift durumunu kullanır `mbstate` parametresi. Bu verir `mbrlen` , birden çok baytlı karakter ortasında yeniden özelliği en fazla inceleniyor olması gerekir `count` bayt sayısı. Varsa `mbstate` null işaretçi `mbrlen` dahili, statik kullanan `mbstate_t` shift durumunu depolamak için nesne. Çünkü iç `mbstate_t` nesnesi iş parçacığı açısından güvenli değil, her zaman ayırın ve kendi geçirin öneririz `mbstate` parametresi.  
   
- `mbrlen` İşlevi farklı olarak [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md) kendi restartability tarafından. Shift durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanması gereken `wcsrlen` yerine `wcslen` sonraki çağrı, `wcsrtombs` yerine kullanılır`wcstombs.`  
+ `mbrlen` İşlevi farklı olarak [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md) kendi restartability tarafından. Shift durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanması gereken `wcsrlen` yerine `wcslen` sonraki çağrı, `wcsrtombs` yerine kullanılır `wcstombs.`  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

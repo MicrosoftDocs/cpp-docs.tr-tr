@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wgetcwd
 - _getcwd
@@ -30,7 +31,8 @@ f1_keywords:
 - _wgetcwd
 - tgetcwd
 - _tgetcwd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - getcwd function
 - working directory
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - wgetcwd function
 - directories [C++], current working
 ms.assetid: 888dc8c6-5595-4071-be55-816b38e3e739
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 14047c8143d982bc6b26bef6e46679341d9abd36
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 91e660f548fdb8814e521f9c63c58e1b965949d4
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getcwd-wgetcwd"></a>_getcwd, _wgetcwd
 Geçerli çalışma dizini alır.  
@@ -82,9 +85,9 @@ wchar_t *_wgetcwd(
 ## <a name="remarks"></a>Açıklamalar  
  `_getcwd` İşlevi varsayılan sürücüsü için geçerli çalışma dizininin tam yolunu alır ve konumunda depolar `buffer`. Tamsayı bağımsız değişkeni `maxlen` yolu için uzunluk üst sınırını belirtir. (Sonlandırma null karakteri dahil) yolunun uzunluğu aşması durumunda bir hata meydana `maxlen`. `buffer` Bağımsız değişkeni olabilir `NULL`; arabellek boyutu en az bir `maxlen` (daha fazla yalnızca gerekirse) otomatik olarak ayrılır, kullanarak `malloc`, yolun depolamak için. Bu arabelleğin daha sonra çağırarak serbest bırakılabilirler `free` ve onu `_getcwd` dönüş değeri (ayrılan arabellek için bir işaretçi).  
   
- `_getcwd`Geçerli çalışma dizini yolu temsil eden bir dize döndürür. Geçerli çalışma dizini kök ise dizesi bir ters eğik ( `\` ). Geçerli çalışma dizini kökü dışında bir dizin ise, dize olmayan bir ters eğik çizgi ile dizin adı ile sona erer.  
+ `_getcwd` Geçerli çalışma dizini yolu temsil eden bir dize döndürür. Geçerli çalışma dizini kök ise dizesi bir ters eğik ( `\` ). Geçerli çalışma dizini kökü dışında bir dizin ise, dize olmayan bir ters eğik çizgi ile dizin adı ile sona erer.  
   
- `_wgetcwd`bir joker karakter sürümü `_getcwd`; `buffer` yazmaç değerini `_wgetcwd` joker karakter dizelerdir. `_wgetcwd`ve `_getcwd` Aksi takdirde aynı şekilde davranır.  
+ `_wgetcwd` bir joker karakter sürümü `_getcwd`; `buffer` yazmaç değerini `_wgetcwd` joker karakter dizelerdir. `_wgetcwd` ve `_getcwd` Aksi takdirde aynı şekilde davranır.  
   
  Zaman `_DEBUG` ve `_CRTDBG_MAP_ALLOC` tanımlanır, çağrılar `_getcwd` ve `_wgetcwd` yapılan çağrılar tarafından değiştirilen `_getcwd_dbg` ve `_wgetcwd_dbg` bellek ayırmaları hata ayıklama için izin vermek için. Daha fazla bilgi için bkz: [_getcwd_dbg, _wgetcwd_dbg](../../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md).  
   

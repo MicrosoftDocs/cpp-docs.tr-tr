@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wperror
 - perror
@@ -27,7 +28,8 @@ f1_keywords:
 - _wperror
 - _tperror
 - perror
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tperror function
 - tperror function
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - _wperror function
 - perror function
 ms.assetid: 34fce792-16fd-4673-9849-cd88b54b6cd5
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bb8dc68154c9a1302fe69dd8416309bf377bdd3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3929d35ac258823a70bf063f2e90e3ce8f1dfb4a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="perror-wperror"></a>perror, _wperror
 Bir hata iletisi yazdırın.  
@@ -68,7 +71,7 @@ void _wperror(
  Yazdırmak için dize ileti.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `perror` İşlevi bir hata iletisi yazdırır `stderr`. `_wperror`bir joker karakter sürümü **_perror**; `string` bağımsız değişkeni `_wperror` bir joker karakter dizesidir. `_wperror`ve **_perror** Aksi takdirde aynı şekilde davranır.  
+ `perror` İşlevi bir hata iletisi yazdırır `stderr`. `_wperror` bir joker karakter sürümü **_perror**; `string` bağımsız değişkeni `_wperror` bir joker karakter dizesidir. `_wperror` ve **_perror** Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -76,13 +79,13 @@ void _wperror(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tperror`|`perror`|`perror`|`_wperror`|  
   
- `string`ilk olarak, bir iki nokta üst üste ve ardından bir hata üretilen son kitaplığı çağrı için sistem hata iletisini ve ardından yazdırılır ve son olarak yeni satır karakteri tarafından. Varsa `string` null işaretçi ya da boş bir dize için bir işaretçi `perror` yalnızca sistem hata iletisi yazdırır.  
+ `string` ilk olarak, bir iki nokta üst üste ve ardından bir hata üretilen son kitaplığı çağrı için sistem hata iletisini ve ardından yazdırılır ve son olarak yeni satır karakteri tarafından. Varsa `string` null işaretçi ya da boş bir dize için bir işaretçi `perror` yalnızca sistem hata iletisi yazdırır.  
   
- Hata numarası değişkende depolanır [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (ERRNO içinde tanımlanmıştır. H). Sistem hata iletilerini değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), bir dizi hata numarasına göre sıralanmış iletileri olduğu. `perror`uygun hata iletisini kullanarak yazdırır `errno` değeri için bir dizin olarak `_sys_errlist`. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) öğe maksimum sayısı olarak tanımlanan `_sys_errlist` dizi.  
+ Hata numarası değişkende depolanır [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (ERRNO içinde tanımlanmıştır. H). Sistem hata iletilerini değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), bir dizi hata numarasına göre sıralanmış iletileri olduğu. `perror` uygun hata iletisini kullanarak yazdırır `errno` değeri için bir dizin olarak `_sys_errlist`. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) öğe maksimum sayısı olarak tanımlanan `_sys_errlist` dizi.  
   
  Doğru sonuçlar için arama `perror` hemen bir hata ile kitaplığı yordamı döndükten sonra. Aksi halde, sonraki çağrılar kılabilirsiniz `errno` değeri.  
   
- Windows işletim sistemi, bazı `errno` değerleri ERRNO içinde listelenen. H kullanılmayan. Bu değerler UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) listesini `errno` Windows işletim sistemi tarafından kullanılan değerler. `perror`boş bir dize için yazdırır `errno` değeri bu platformlar tarafından kullanılmaz.  
+ Windows işletim sistemi, bazı `errno` değerleri ERRNO içinde listelenen. H kullanılmayan. Bu değerler UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) listesini `errno` Windows işletim sistemi tarafından kullanılan değerler. `perror` boş bir dize için yazdırır `errno` değeri bu platformlar tarafından kullanılmaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

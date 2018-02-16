@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _malloc_dbg
 apilocation:
@@ -38,11 +38,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6693b362bcc69b6ca8e8b97dc350eb57b802436f
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 616fd3b71cd97e6abffb7c8a06d30a0f69146408
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mallocdbg"></a>_malloc_dbg
 Ek alan yığınla bellek bloğu için hata ayıklama üstbilgi ayırır ve arabellekler (yalnızca hata ayıklama sürümü) üzerine yazılır.  
@@ -77,11 +77,11 @@ void *_malloc_dbg(
  Bu işlev bir işaretçi ayrılmış bellek bloğu kullanıcı bölümünü döndürür başarıyla tamamlandığında, yeni işleyici işlev çağrıları veya NULL döndürür. Dönüş davranışı tam bir açıklaması için aşağıdaki Açıklamalar bölümüne bakın. Yeni işleyici işlevi nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [malloc](../../c-runtime-library/reference/malloc.md) işlevi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_malloc_dbg`bir hata ayıklama sürümü [malloc](../../c-runtime-library/reference/malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_malloc_dbg` yapılan bir çağrı için sınırlı `malloc`. Her ikisi de `malloc` ve `_malloc_dbg` bir temel yığınındaki bellek bloğu tahsis ancak `_malloc_dbg` birkaç hata ayıklama özellikleri sunar: kullanıcı bölümünün belirli ayırma izlemek için bir blok türü parametresi bloğunun sızıntıları için test etmek için her iki tarafında arabellekler türleri ve `filename` / `linenumber` ayırma isteklerini kökenini belirlemek için bilgi.  
+ `_malloc_dbg` bir hata ayıklama sürümü [malloc](../../c-runtime-library/reference/malloc.md) işlevi. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, her çağrı `_malloc_dbg` yapılan bir çağrı için sınırlı `malloc`. Her ikisi de `malloc` ve `_malloc_dbg` bir temel yığınındaki bellek bloğu tahsis ancak `_malloc_dbg` birkaç hata ayıklama özellikleri sunar: kullanıcı bölümünün belirli ayırma izlemek için bir blok türü parametresi bloğunun sızıntıları için test etmek için her iki tarafında arabellekler türleri ve `filename` / `linenumber` ayırma isteklerini kökenini belirlemek için bilgi.  
   
- `_malloc_dbg`İstenen biraz daha fazla alan ile bellek bloğu ayırır `size`. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.  
+ `_malloc_dbg` İstenen biraz daha fazla alan ile bellek bloğu ayırır `size`. Ek alanı, hata ayıklama bellek blokları bağlantı ve uygulama ile hata ayıklama üst bilgileri sağlayın ve arabellek üzerine yazmak için hata ayıklama yığını Yöneticisi tarafından kullanılır. Blok atandığında, blok kullanıcı bölümünü 0xCD değeri ile doldurulur ve 0xFD ile doldurulmuş her üzerine yaz arabellek.  
   
- `_malloc_dbg`Ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa veya (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşarsa `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ `_malloc_dbg` Ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa veya (daha önce bahsedilen ek yük dahil) gerekli bellek miktarını aşarsa `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
  Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details). Ayırma blok türlerini ve bunların nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [hata ayıklama yığınındaki blokları türlerini](/visualstudio/debugger/crt-debug-heap-details). Standart yığın işlevi ve hata ayıklama sürümü, bir uygulamanın hata ayıklama derlemede çağırma arasındaki farklar hakkında daha fazla bilgi için bkz: [hata ayıklama sürümleri, yığın ayırma işlevleri](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).  
   

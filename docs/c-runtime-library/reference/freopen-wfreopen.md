@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - freopen
 - _wfreopen
@@ -27,7 +28,8 @@ f1_keywords:
 - _wfreopen
 - _tfreopen
 - freopen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wfreopen function
 - file pointers [C++], reassigning
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - tfreopen function
 - wfreopen function
 ms.assetid: de4b73f8-1043-4d62-98ee-30d2022da885
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d3eb18b70ea672b095dc6d24dfd45e1bdda8f88b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 49f1e2cd11606d2ebe53281a9d2f1d27533b4068
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="freopen-wfreopen"></a>freopen, _wfreopen
 Dosya işaretçisini yeniden atar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
@@ -83,7 +86,7 @@ FILE *_wfreopen(
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin daha güvenli sürümleri var, bkz: [freopen_s, _wfreopen_s](../../c-runtime-library/reference/freopen-s-wfreopen-s.md).  
   
- `freopen` İşlev ile ilişkilendirilmiş dosya kapatır `stream` ve yeniden atar `stream` tarafından belirtilen dosyaya `path`. `_wfreopen`bir joker karakter sürümü `_freopen`; `path` ve `mode` bağımsız değişkenleri `_wfreopen` joker karakter dizelerdir. `_wfreopen`ve `_freopen` Aksi takdirde aynı şekilde davranır.  
+ `freopen` İşlev ile ilişkilendirilmiş dosya kapatır `stream` ve yeniden atar `stream` tarafından belirtilen dosyaya `path`. `_wfreopen` bir joker karakter sürümü `_freopen`; `path` ve `mode` bağımsız değişkenleri `_wfreopen` joker karakter dizelerdir. `_wfreopen` ve `_freopen` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -91,7 +94,7 @@ FILE *_wfreopen(
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tfreopen`|`freopen`|`freopen`|`_wfreopen`|  
   
- `freopen`genellikle önceden açılan dosyaları yeniden yönlendirmek için kullanılan `stdin`, `stdout`, ve `stderr` kullanıcı tarafından belirtilen dosyaları. İle ilişkili yeni dosya `stream` açılmış `mode`, hangi olduğu gibi dosya için istenen erişim türünü belirten bir karakter dizesini:  
+ `freopen` genellikle önceden açılan dosyaları yeniden yönlendirmek için kullanılan `stdin`, `stdout`, ve `stderr` kullanıcı tarafından belirtilen dosyaları. İle ilişkili yeni dosya `stream` açılmış `mode`, hangi olduğu gibi dosya için istenen erişim türünü belirten bir karakter dizesini:  
   
  `"r"`  
  Okuma için açılır. Dosya yok veya bulunamadı, `freopen` çağrısı başarısız olur.  
@@ -136,7 +139,7 @@ FILE *_wfreopen(
 |`freopen`|\<stdio.h >|  
 |`_wfreopen`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="example"></a>Örnek  
   

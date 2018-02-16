@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _statusfp2
 - _statusfp
@@ -31,7 +32,8 @@ f1_keywords:
 - _status87
 - status87
 - statusfp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - floating-point functions, getting status word
 - floating-point numbers, status word
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - floating-point functions
 - status word
 ms.assetid: 7ef963fa-b1fb-429d-94d6-fbf282ab7432
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f7124b8236550f9e86e04ac56460426a080f137b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 13fb4af11e17dbd0303b435090661c1b73456479
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="status87-statusfp-statusfp2"></a>_status87, _statusfp, _statusfp2
 Kayan nokta durum sözcüğünü alır.  
@@ -80,7 +83,7 @@ void _statusfp2(unsigned int *px86, unsigned int *pSSE2)
 ## <a name="remarks"></a>Açıklamalar  
  `_statusfp` İşlevi kayan nokta durum sözcüğünü alır. Durum sözcüğünü kayan nokta işlemci durumu ve kayan nokta özel durum işleyici tarafından algılanan başka koşullar bir birleşimidir — Örneğin, kayan nokta yığın taşması ve yetersiz. Durum sözcüğünü içeriğini döndürmeden önce maskelenmemiş özel durumlar için denetlenir. Bu özel durumlar olan arayan, bilgilendirilir anlamına gelir. X86 üzerinde platformları, `_statusfp` x87 ve SSE2 kayan nokta durum birleşimini döndürür. X64 üzerinde platformları, döndürülen durum SSE'ın MXCSR durumuna dayanır. ARM platformlarda `_statusfp` FPSCR kasadan durumu döndürür.  
   
- `_statusfp`Bir platformdan bağımsız, taşınabilir sürümü `_status87`. Aynı `_status87` Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu tüm mimarileri taşınabilir olduğundan emin olmak için kullanmak `_statusfp`. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz `_status87` veya `_statusfp`.  
+ `_statusfp` Bir platformdan bağımsız, taşınabilir sürümü `_status87`. Aynı `_status87` Intel (x86) platformlarda ve ayrıca x64 ve ARM platformlar tarafından desteklenir. Kayan nokta kodunuzu tüm mimarileri taşınabilir olduğundan emin olmak için kullanmak `_statusfp`. X86 yalnızca hedefliyorsanız platformları, kullanabilirsiniz `_status87` veya `_statusfp`.  
   
  Öneririz `_statusfp2` bir x87 ve SSE2 kayan nokta işlemci yongaları (örneğin, Pentium IV) için. İçin `_statusfp2`, adresleri x87 veya SSE2 kayan nokta işlemci için kayan nokta durum sözcüğünü kullanarak doldurulur. X87 ve SSE2 kayan nokta işlemcileri destekleyen bir yonga EM_AMBIGUOUS 1 ise ayarlanır `_statusfp` veya `_controlfp` kullanılır ve x87 veya SSE2 kayan nokta durum sözcüğünü başvurduğundan eylemi belirsiz. `_statusfp2` İşlevi yalnızca x86 üzerinde desteklenen platformlar.  
   

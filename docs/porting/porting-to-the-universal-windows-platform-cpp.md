@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: f662d2e4-8940-418d-8109-cb76cb8f8569
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e6dd42eae54f61d03d4d490a17cf1282e2d2e51f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2ece050614481bdc0adbe417448711376666b2b9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="porting-to-the-universal-windows-platform-c"></a>Evrensel Windows Platformu’na bağlantı noktası oluşturma (C++)
 Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması platformunuz için bağlantı noktası hakkında bilgi bulabilirsiniz. Terim tarafından anlamına gelir *Evrensel* kodunuzu herhangi bir Windows 10 Masaüstü, telefon, Tablet ve Windows 10 çalıştıran gelecekteki cihazlar dahil olmak üzere, çalıştıran aygıtlar üzerinde çalıştırılabilir. Tek bir proje ve Windows 10 çalıştıran iyi herhangi bir cihazda çalışan tek bir XAML tabanlı kullanıcı arabirimi oluşturun. Farklı ekran boyutlarına uyarlamak uygulamanın UI izin vermek için XAML içinde dinamik düzen özelliklerini kullanabilirsiniz.  
@@ -33,7 +36,7 @@ Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması p
   
  Klasik Masaüstü Win32 DLL varsa ve bir UWP uygulamasından aramak istediğiniz, bu da yapabilirsiniz. Bu yordamları kullanarak, varolan Klasik Windows Masaüstü C++ uygulaması için bir UWP kullanıcı arabirimi katman ya da platformlar arası standart C++ kodunuzu oluşturabilirsiniz. Bkz: [nasıl yapılır: mevcut C++ kodunu Evrensel Windows platformu uygulamasında kullanma](../porting/how-to-use-existing-cpp-code-in-a-universal-windows-platform-app.md).  
   
-##  <a name="BK_81StoreApp"></a>Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma  
+##  <a name="BK_81StoreApp">Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası oluşturma</a>  
  Windows 8.1 mağazası uygulaması varsa, bunu UWP ve Windows 10 çalıştıran herhangi bir aygıt üzerinde çalıştırmak için bu yordamı kullanabilirsiniz.  İlk derleyici ve kitaplıkları yapılan değişiklikleri ortaya çıkabilecek sorunları ortadan kaldırmak için bir Windows 8.1 proje ilk yapı Visual Studio 2017 projeyle için iyi bir fikir gibidir. Bunu yaptıktan sonra bu bir Windows 10 UWP projesi dönüştürmek için iki yolu vardır. (Aşağıdaki yordamda açıklandığı gibi) en kolay yolu, bir evrensel Windows projesi oluşturun ve mevcut kodunuzu buraya kopyalayın olmaktır. Windows 8.1 Masaüstü ve Windows 8.1 Phone için evrensel projesi kullanıyorsanız, projeniz için görüntü boyutu ayarlar tek bir dinamik düzen XAML ancak son iki farklı düzenlerle ile başlar.  
   
 #### <a name="to-port-a-windows-81-store-app-to-the-uwp"></a>Bir Windows 8.1 mağazası uygulaması UWP için bağlantı noktası  
@@ -73,11 +76,11 @@ Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması p
     #if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_DESKTOP)  
     ```  
   
-     Bu deyimler sırasıyla Windows mağazası uygulamaları, Windows Phone mağazası uygulamaları, hem veya hiçbiri (Klasik Win32 yalnızca Masaüstü) geçerli. Bu makroları yalnızca Windows 8.1 SDK ve daha sonra de durum, bunların hiçbiri dikkate almalısınız sonra Windows SDK veya diğer platformlar yanı sıra Windows, önceki sürümleriyle derlemek kodunuzu gerekiyorsa tanımlanan şekilde kullanılabilir.  
+     Bu deyimler sırasıyla UWP uygulamaları, Windows Phone mağazası uygulamaları, hem veya hiçbiri (Klasik Win32 yalnızca Masaüstü) geçerli. Bu makroları yalnızca Windows 8.1 SDK ve daha sonra de durum, bunların hiçbiri dikkate almalısınız sonra Windows SDK veya diğer platformlar yanı sıra Windows, önceki sürümleriyle derlemek kodunuzu gerekiyorsa tanımlanan şekilde kullanılabilir.  
   
 11. Bir öykünücü veya uygulamanızın destekleyen aygıt her tür için fiziksel cihaz üzerindeki uygulama hata ayıklama ve çalıştırın. Bir öykünücü çalıştırmak için Visual Studio fiziksel bir bilgisayarda, sanal makine çalıştırmanız gerekir.  
   
-##  <a name="BK_81Component"></a>Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma  
+##  <a name="BK_81Component">Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası oluşturma</a>  
  DLL ya da Windows 8.1 mağazası uygulamaları ile zaten çalışan bir Windows çalışma zamanı bileşeni varsa, bileşen veya UWP ve Windows 10 Çalışma DLL almak için bu yordamı kullanabilirsiniz. Temel yordam, yeni bir proje oluşturun ve kodunuzu içine kopyalamak için kullanılır.  
   
 #### <a name="to-port-a-windows-81-runtime-component-to-the-uwp"></a>Bir Windows 8.1 çalışma zamanı bileşeni UWP için bağlantı noktası  
@@ -91,7 +94,7 @@ Bu konuda, mevcut C++ kodunu Evrensel Windows platformu Windows 10 uygulaması p
 4.  Derleme ve Windows SDK'sı farklı sürümleri arasında önemli değişiklikler nedeniyle varsa hataları çözümleyin.  
   
 ## <a name="troubleshooting"></a>Sorun giderme  
- Evrensel Windows platformu kodu bağlantı noktası oluşturma işlemi sırasında çeşitli hatalarla karşılaşabilirsiniz. Karşılaşabileceğiniz olası sorunlar bazıları aşağıda verilmiştir.  
+ UWP kodu bağlantı noktası oluşturma işlemi sırasında çeşitli hatalarla karşılaşabilirsiniz. Karşılaşabileceğiniz olası sorunlar bazıları aşağıda verilmiştir.  
   
  **Proje yapılandırma sorunları**  
   
@@ -111,7 +114,7 @@ could not find assembly 'platform.winmd': please specify the assembly search pat
 <ApplicationTypeRevision>10.0</ApplicationTypeRevision>  
 ```  
   
- Visual Studio kullanarak yeni bir evrensel Windows platformu proje oluşturduysanız, bu hata görülmemelidir.  
+ Visual Studio kullanarak yeni bir UWP projesini oluşturduysanız, bu hata görülmemelidir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ Taşıma Kılavuzu](../porting/porting-to-the-universal-windows-platform-cpp.md)   

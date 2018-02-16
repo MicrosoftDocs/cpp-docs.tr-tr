@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _fcvt_s
+ms.topic: reference
+apiname:
+- _fcvt_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,23 +26,25 @@ apitype: DLLExport
 f1_keywords:
 - fcvt_s
 - _fcvt_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fcvt_s function
 - converting floating point, to strings
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9bd77d18f63885aa29f49ce8bd497f935d292e0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ba668d9c5604ee07b2cafdc4a9b8f70ae1cc884e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fcvts"></a>_fcvt_s
 Kayan noktalı sayı bir dizeye dönüştürür. Bu bir sürümüdür [_fcvt](../../c-runtime-library/reference/fcvt.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -67,32 +71,32 @@ errno_t _fcvt_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`buffer`  
+ [out] `buffer`  
  Dönüştürme işleminin sonucu tutacak sağlanan arabellek.  
   
- [in]`sizeInBytes`  
+ [in] `sizeInBytes`  
  Arabelleğinin bayt cinsinden boyutu.  
   
- [in]`value`  
+ [in] `value`  
  Dönüştürülecek sayı.  
   
- [in]`count`  
+ [in] `count`  
  Ondalık basamak sayısı.  
   
- [out]`dec`  
+ [out] `dec`  
  Saklanan Ondalık ayırıcının konum işaretçi.  
   
- [out]`sign`  
+ [out] `sign`  
  Depolanan oturum göstergesi işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
+ Zero if successful. Bir hata olduğunda dönüş değeri bir hata kodudur. Hata kodları Errno.h içinde tanımlanmıştır. Bu hataların listesi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
  Geçersiz bir parametre söz konusu olduğunda aşağıdaki tabloda listelendiği gibi bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve döndürür `EINVAL`.  
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`buffer`|`sizeInBytes`|value|count|dec|Oturum|Döndür|Değer`buffer`|  
+|`buffer`|`sizeInBytes`|value|count|dec|Oturum|Döndür|Değer `buffer`|  
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|  
 |`NULL`|tüm|tüm|tüm|tüm|tüm|`EINVAL`|Değiştirilmedi.|  
 |Değil `NULL` (noktaları için geçerli bellek)|<=0|tüm|tüm|tüm|tüm|`EINVAL`|Değiştirilmedi.|  
@@ -101,16 +105,16 @@ errno_t _fcvt_s(
   
  **Güvenlik Sorunları**  
   
- `_fcvt_s`erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
+ `_fcvt_s` erişim ihlali durumunda oluşturabilir `buffer` geçerli bellek göstermiyor ve değil `NULL`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_fcvt_s` İşlevi kayan noktalı sayı null olarak sonlandırılan bir karakter dizeye dönüştürür. `value` Dönüştürülecek kayan noktalı sayı parametresidir. `_fcvt_s`rakamı depolar `value` dize olarak ve bir null karakter ('\0') ekler. `count` Parametresi, ondalık ayırıcıdan sonra depolanması için basamak sayısını belirtir. Aşırı basamak yuvarlanır için `count` yerleştirir. Varsa daha az `count` basamaklı duyarlık, dize sıfırlarla doldurulan.  
+ `_fcvt_s` İşlevi kayan noktalı sayı null olarak sonlandırılan bir karakter dizeye dönüştürür. `value` Dönüştürülecek kayan noktalı sayı parametresidir. `_fcvt_s` rakamı depolar `value` dize olarak ve bir null karakter ('\0') ekler. `count` Parametresi, ondalık ayırıcıdan sonra depolanması için basamak sayısını belirtir. Aşırı basamak yuvarlanır için `count` yerleştirir. Varsa daha az `count` basamaklı duyarlık, dize sıfırlarla doldurulan.  
   
  Yalnızca rakamlar dizesinde depolanır. Ondalık ayırıcının ve işaretini konumunu `value` yükseltebilmeniz `dec` ve `sign` çağrısından sonra. `dec` Parametresi tamsayı değerine; işaret bu tamsayı değeri ondalık dizenin başlangıcını göre konumunu sağlar. Sıfır veya negatif tamsayı değeri belirten Ondalık ayırıcının sol tarafında ilk rakam arasındadır. Parametre `sign` işaret işaretini gösteren tamsayı `value`. Tamsayı varsa 0 olarak ayarlanırsa `value` pozitif ve sıfır olmayan bir sayı ise ayarlanır `value` negatiftir.  
   
  Arabellek uzunluğu `_CVTBUFSIZE` herhangi bir değişken için yeterliyse noktası değeri.  
   
- Arasındaki farkı `_ecvt_s` ve `_fcvt_s` yorumu içinde olduğu `count` parametresi. `_ecvt_s`Yorumlar `count` toplam çıkış dizesi basamak sayısı arttıkça ve `_fcvt_s` yorumlar `count` ondalık basamak sayısı.  
+ Arasındaki farkı `_ecvt_s` ve `_fcvt_s` yorumu içinde olduğu `count` parametresi. `_ecvt_s` Yorumlar `count` toplam çıkış dizesi basamak sayısı arttıkça ve `_fcvt_s` yorumlar `count` ondalık basamak sayısı.  
   
  C++'da, bu işlev tarafından bir şablon aşırı basitleştirilmiştir; aşırı yük, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -120,7 +124,7 @@ errno_t _fcvt_s(
   
 |İşlev|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |--------------|---------------------|---------------------|  
-|`_fcvt_s`|\<stdlib.h >|\<errno.h >|  
+|`_fcvt_s`|\<stdlib.h>|\<errno.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

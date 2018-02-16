@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - getwc
 - getc
@@ -28,7 +29,8 @@ f1_keywords:
 - getwc
 - _gettchar
 - getc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - characters, reading
 - _gettc function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - getwc function
 - gettc function
 ms.assetid: 354ef514-d0c7-404b-92f5-995f6a834bb3
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 12ddc1fa68f1b27fa96ffb81ef24004fd1fb0a19
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fca8635d0597f1f48c16cac28410a62c7bc723ba
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getc-getwc"></a>getc, getwc
 Bir karakterin üzerinden bir akış okuyun.  
@@ -137,7 +140,7 @@ int main()
 }  
 ```  
   
-## <a name="input-crtgetctxt"></a>Giriş: crt_getc.txt  
+## <a name="input-crtgetctxt"></a>Input: crt_getc.txt  
   
 ```  
 Line one.  

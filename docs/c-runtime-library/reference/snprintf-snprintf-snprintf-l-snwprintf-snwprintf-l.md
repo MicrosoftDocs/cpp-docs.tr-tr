@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _snwprintf
 - _snprintf
@@ -38,7 +39,8 @@ f1_keywords:
 - _snprintf_l
 - _snwprintf
 - _snwprintf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - snwprintf_l function
 - sntprintf_l function
@@ -54,16 +56,17 @@ helpviewer_keywords:
 - sntprintf function
 - formatted text [C++]
 ms.assetid: 5976c9c8-876e-4ac9-a515-39f3f7fd0925
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0441f2debf2e030702727c92a6e27bea63cb0564
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0d235f1034d8e916ddcd9e268e72aadacaf90911
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="snprintf-snprintf-snprintfl-snwprintf-snwprintfl"></a>snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l
 Biçimlendirilmiş verileri bir dizeye yazar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l](../../c-runtime-library/reference/snprintf-s-snprintf-s-l-snwprintf-s-snwprintf-s-l.md).  
@@ -176,7 +179,7 @@ int _snwprintf_l(
   
  Visual Studio 2015 ve Windows 10 UCRT itibaren `snprintf` artık aynıdır `_snprintf`. `snprintf` İşlevi davranıştır şimdi C99 standart uyumlu.  
   
- `_snwprintf`bir joker karakter sürümü `_snprintf`; işaretçi bağımsız değişkenleri `_snwprintf` joker karakter dizelerdir. Kodlama hataları algılama `_snwprintf` uygulamasında farklılık gösterebilir `_snprintf`. `_snwprintf`, olduğu gibi `swprintf`, hedef türü yerine bir dizeye çıktısı Yazar `FILE`.  
+ `_snwprintf` bir joker karakter sürümü `_snprintf`; işaretçi bağımsız değişkenleri `_snwprintf` joker karakter dizelerdir. Kodlama hataları algılama `_snwprintf` uygulamasında farklılık gösterebilir `_snprintf`. `_snwprintf`, olduğu gibi `swprintf`, hedef türü yerine bir dizeye çıktısı Yazar `FILE`.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   

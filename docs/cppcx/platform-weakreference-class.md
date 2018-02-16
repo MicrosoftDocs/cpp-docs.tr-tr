@@ -6,19 +6,21 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: Platform::WeakReference
+ms.topic: reference
+f1_keywords:
+- Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8666896b0e3414dca8f4cd1f8c4e2f34e9b98050
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 59d87d2e00ef567c0273e71410ad58ebf0a5c061
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
 Ref sınıfının bir örneği zayıf başvuru temsil eder.  
@@ -49,13 +51,13 @@ class WeakReference
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[WeakReference::operator =](#operator-assign)|Yeni bir değer WeakReference nesneye atar.|  
+|[WeakReference::operator=](#operator-assign)|Yeni bir değer WeakReference nesneye atar.|  
 |[WeakReference::operator BoolType](#booltype)|Güvenli bool deseni uygular.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  WeakReference sınıfı ref sınıfı değil ve bu nedenle Platform::Object devralmıyor ^ ve bir genel yöntem imzada kullanılamaz.  
 
-## <a name="operator-assign"></a>WeakReference::operator =
+## <a name="operator-assign"></a> WeakReference::operator =
 Bir değer için bir WeakReference atar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -70,7 +72,7 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 ### <a name="remarks"></a>Açıklamalar  
  Yukarıdaki listede son aşırı WeakReference değişkenine ref sınıfı atamanızı sağlar. Bu durumda ref alta sınıftır [Platform::Object](../cppcx/platform-object-class.md)^. Özgün türü daha sonra tür parametresi için bağımsız değişken olarak belirterek geri [WeakReference::Resolve\<T >](#resolve) üye işlevi.  
   
-## <a name="booltype"></a>WeakReference::operator BoolType
+## <a name="booltype">WeakReference::operator BoolType</a>
 WeakReference sınıfı için güvenli bool deseni uygular. Açıkça kodunuzdan çağrılması değil.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -79,7 +81,7 @@ WeakReference sınıfı için güvenli bool deseni uygular. Açıkça kodunuzdan
 BoolType BoolType()  
 ```  
 
-## <a name="resolve"></a>WeakReference::Resolve yöntemi (Platform ad alanı)
+## <a name="resolve"></a> WeakReference::Resolve yöntemi (Platform ad alanı)
 Özgün ref sınıfı için bir işleyici döner veya `nullptr` nesne artık yoksa.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -113,7 +115,7 @@ if (bar != nullptr)
  Tür parametresi T, değil T olduğuna dikkat edin ^.  
   
  
-## <a name="ctor"></a>WeakReference::WeakReference Oluşturucusu
+## <a name="ctor"></a> WeakReference::WeakReference Oluşturucusu
 Bir WeakReference oluşturmak için çeşitli yöntemler sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi  

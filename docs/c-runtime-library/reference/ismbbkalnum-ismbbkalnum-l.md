@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _ismbbkalnum
 - _ismbbkalnum_l
@@ -28,23 +29,25 @@ f1_keywords:
 - ismbbkalnum
 - ismbbkalnum_l
 - _ismbbkalnum_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _ismbbkalnum_l function
 - ismbbkalnum_l function
 - _ismbbkalnum function
 - ismbbkalnum function
 ms.assetid: e1d70e7b-29d0-469c-9d93-442b99de22ac
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ef81f58fc2180fcc29e943d0a352d1e6301ca7a1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: de4a09460e5c9da6aef8a9b9564c3f193bfba719
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ismbbkalnum-ismbbkalnuml"></a>_ismbbkalnum, _ismbbkalnum_l
 Belirli bir birden çok baytlı karakter ASCII olmayan metin simge olup olmadığını belirler.  
@@ -69,7 +72,7 @@ int _ismbbkalnum_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_ismbbkalnum`sıfır olmayan bir değer döndürür tamsayı `c` değilse noktalama ya da 0 dışında bir ASCII olmayan metin simge olan. `_ismbbkalnum`Geçerli yerel ayar için yerel ayara bağımlı karakter bilgileri kullanır. `_ismbbkalnum_l`aynıdır `_ismbbkalnum` dışında yerel bir parametre olarak alır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_ismbbkalnum` sıfır olmayan bir değer döndürür tamsayı `c` değilse noktalama ya da 0 dışında bir ASCII olmayan metin simge olan. `_ismbbkalnum` Geçerli yerel ayar için yerel ayara bağımlı karakter bilgileri kullanır. `_ismbbkalnum_l` aynıdır `_ismbbkalnum` dışında yerel bir parametre olarak alır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

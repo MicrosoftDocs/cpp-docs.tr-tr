@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _sprintf_p
 - _swprintf_p_l
@@ -33,7 +34,8 @@ f1_keywords:
 - swprint_p_l
 - swprintf_p
 - swprintf_p_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sprintf_p_l function
 - swprintf_p function
@@ -49,16 +51,17 @@ helpviewer_keywords:
 - formatted text [C++]
 - _stprintf_p_l function
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5f5d2daf238a952eb7691257e1fab68cf16b969b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 46e82b8485458290629916a1eb9f44a2bf2f23ab
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sprintfp-sprintfpl-swprintfp-swprintfpl"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 Biçimlendirilmiş verileri parametreleri biçim dizesi kullanılır order belirtme olanağı ile bir dizeye yazma.  
@@ -118,9 +121,9 @@ int _swprintf_p_l(
 ## <a name="remarks"></a>Açıklamalar  
  `_sprintf_p` İşlevi biçimlendirir ve bir dizi karakter ve değerleri depolar `buffer`. Her bağımsız değişkeninde `argument_list` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. `format` Bağımsız değişkeni kullanır [biçim belirtim Sözdizimi printf ve wprintf işlevleri için](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). A `NULL` karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır. Arasındaki farkı `_sprintf_p` ve `sprintf_s` olan `_sprintf_p` biçim dizesi bağımsız değişkenleri kullanıldığı sırayı belirten verir destekler konumsal parametreler. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  
   
- `_swprintf_p`bir joker karakter sürümü `_sprintf_p`; işaretçi bağımsız değişkenleri `_swprintf_p` joker karakter dizelerdir. Kodlama hataları algılama `_swprintf_p` , farklı olabilir `_sprintf_p`. `_swprintf_p`ve `fwprintf_p` durumlar dışında aynı şekilde davranır `_swprintf_p` bir dize yerine bir hedef türü çıktısı Yazar `FILE`, ve `_swprintf_p` gerektirir `count` parametre olarak karakter sayısını belirtin yazılır. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
+ `_swprintf_p` bir joker karakter sürümü `_sprintf_p`; işaretçi bağımsız değişkenleri `_swprintf_p` joker karakter dizelerdir. Kodlama hataları algılama `_swprintf_p` , farklı olabilir `_sprintf_p`. `_swprintf_p` ve `fwprintf_p` durumlar dışında aynı şekilde davranır `_swprintf_p` bir dize yerine bir hedef türü çıktısı Yazar `FILE`, ve `_swprintf_p` gerektirir `count` parametresi yazılacak karakter sayısını belirtin. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
- `_sprintf_p`depolanan bayt sayısını verir `buffer`, sonlandırma saymaz `NULL` karakter. `_swprintf_p`depolanan geniş karakter sayısını verir `buffer`, sonlandırma saymaz `NULL` geniş karakter. Varsa `buffer` veya `format` null işaretçi veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
+ `_sprintf_p` depolanan bayt sayısını verir `buffer`, sonlandırma saymaz `NULL` karakter. `_swprintf_p` depolanan geniş karakter sayısını verir `buffer`, sonlandırma saymaz `NULL` geniş karakter. Varsa `buffer` veya `format` null işaretçi veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fseeki64
 - fseek
@@ -25,7 +26,8 @@ apitype: DLLExport
 f1_keywords:
 - fseek
 - _fseeki64
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _fseeki64 function
 - fseeki64 function
@@ -34,16 +36,17 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 90af1581910ceaadf814050be39bc537cfc3881c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4dd4c4e6550946bafdaf0ad8f521e1e942ae04c1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fseek-fseeki64"></a>fseek, _fseeki64
 Dosya işaretçisini belirtilen bir konuma taşır.  
@@ -88,7 +91,7 @@ int _fseeki64(
  `SEEK_SET`  
  Dosya başlangıcı.  
   
- Kullanabileceğiniz `fseek` ve `_fseeki64` işaretçi bir dosyada herhangi bir yere yeniden konumlandırmak için. İşaretçinin dosyanın sonunu aşan konumlandırılmış olabilir. `fseek`ve `_fseeki64` dosya sonu göstergesi temizler ve tüm önceki etkisini geçersiz hale getirir `ungetc` karşı çağırır `stream`.  
+ Kullanabileceğiniz `fseek` ve `_fseeki64` işaretçi bir dosyada herhangi bir yere yeniden konumlandırmak için. İşaretçinin dosyanın sonunu aşan konumlandırılmış olabilir. `fseek` ve `_fseeki64` dosya sonu göstergesi temizler ve tüm önceki etkisini geçersiz hale getirir `ungetc` karşı çağırır `stream`.  
   
  Veri ekleme için bir dosya açıldığında, geçerli dosya konumu değil burada sonraki yazma oluşacak tarafından son g/ç işlemi tarafından belirlenir. G/ç işlemi henüz ekleme için açılan bir dosyada oluştuysa, dosya konumu dosya sayısıdır.  
   

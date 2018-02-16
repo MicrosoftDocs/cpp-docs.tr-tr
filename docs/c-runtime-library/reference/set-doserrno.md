@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _set_doserrno
+ms.topic: reference
+apiname:
+- _set_doserrno
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,23 +26,25 @@ apitype: DLLExport
 f1_keywords:
 - _set_doserrno
 - set_doserrno
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _set_doserrno function
 - doserrno global variable
 - set_doserrno function
 - _doserrno global variable
 ms.assetid: 8686c159-3797-4705-a53e-7457869ca6f3
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f2105c6e3479b1d46e5f61687878190870a0e10e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1f31e353bc901a2a29d80f4c02ff9e860ed5f6fa
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setdoserrno"></a>_set_doserrno
 Değerini ayarlar [_doserrno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) genel değişkeni.  
@@ -54,7 +58,7 @@ errno_t _set_doserrno(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`value`  
+ [in] `value`  
  Yeni değeri `_doserrno`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -67,7 +71,7 @@ errno_t _set_doserrno(
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|---------------------|  
-|`_set_doserrno`|\<stdlib.h >|\<errno.h >|  
+|`_set_doserrno`|\<stdlib.h>|\<errno.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

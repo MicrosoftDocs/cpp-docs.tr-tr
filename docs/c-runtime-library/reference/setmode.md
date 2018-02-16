@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _setmode
+ms.topic: reference
+apiname:
+- _setmode
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _setmode
-dev_langs: C++
+f1_keywords:
+- _setmode
+dev_langs:
+- C++
 helpviewer_keywords:
 - Unicode [C++], console output
 - files [C++], modes
@@ -31,16 +35,17 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c01c76deb32962236673e7aa16c76fedc13cdc45
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1d98825dfa2cbe6a38fc945fa9cfaaca4679cdb8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setmode"></a>_setmode
 Dosya çevirisi modu ayarlar.  
@@ -71,7 +76,7 @@ int _setmode (
 ## <a name="remarks"></a>Açıklamalar  
  `_setmode` İşlevi ayarlar `mode` tarafından verilen dosya çevirisi modu `fd`. Geçirme `_O_TEXT` olarak `mode` (çevrilmiş) metin ayarlar modu. Satır başı satır besleme (CR-LF) birleşimleri besleme karakteri girişte tek bir satır halinde çevrilir. Satır akış karakterleri CR LF birleşimleri çıktıyı içine çevrilir. Geçirme `_O_BINARY` bu çevirileri gizlenir kümeleri ikili (untranslated) modu.  
   
- Ayrıca iletebilirsiniz `_O_U16TEXT`, `_O_U8TEXT`, veya `_O_WTEXT` bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modunu etkinleştirmek için. `_setmode`genellikle varsayılan çeviri modunu değiştirmek için kullanılan `stdin` ve `stdout`, ancak herhangi bir dosya kullanın. Uygularsanız `_setmode` bir akış için dosya tanımlayıcısı için çağrı `_setmode` akışta giriş veya çıkış işlemleri gerçekleştirmeden önce.  
+ Ayrıca iletebilirsiniz `_O_U16TEXT`, `_O_U8TEXT`, veya `_O_WTEXT` bu belgenin sonraki bölümlerinde ikinci örnekte gösterildiği gibi Unicode modunu etkinleştirmek için. `_setmode` genellikle varsayılan çeviri modunu değiştirmek için kullanılan `stdin` ve `stdout`, ancak herhangi bir dosya kullanın. Uygularsanız `_setmode` bir akış için dosya tanımlayıcısı için çağrı `_setmode` akışta giriş veya çıkış işlemleri gerçekleştirmeden önce.  
   
 > [!CAUTION]
 >  Verileri bir dosya akışı için temizleme açıkça kodu kullanarak yazarsanız [fflush](../../c-runtime-library/reference/fflush.md) kullanmadan önce `_setmode` modunu değiştirmek için. Kodu temizleme değil, beklenmeyen davranışları alabilirsiniz. Veri akışına yazdığınız değil, kod flush gerekmez.  
@@ -80,7 +85,7 @@ int _setmode (
   
 |Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
 |-------------|---------------------|----------------------|  
-|`_setmode`|\<io.h >|\<fcntl.h >|  
+|`_setmode`|\<io.h >|\<fcntl.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

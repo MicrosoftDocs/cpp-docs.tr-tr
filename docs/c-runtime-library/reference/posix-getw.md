@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: getw
+ms.topic: reference
+apiname:
+- getw
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,20 +22,24 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: getw
-dev_langs: C++
-helpviewer_keywords: getw function
+f1_keywords:
+- getw
+dev_langs:
+- C++
+helpviewer_keywords:
+- getw function
 ms.assetid: d3c347a4-3ff1-403b-8d02-2dd3b429bb5f
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 342a2686fb39f33a88ef81cc0f7088ce9bbbb799
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c221bcc2913a2025facbf961d663d25b52352c88
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="getw"></a>getw
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_getw](../../c-runtime-library/reference/getw.md) yerine.

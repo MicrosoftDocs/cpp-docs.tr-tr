@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - __swprintf_l
 - sprintf
@@ -35,7 +36,8 @@ f1_keywords:
 - sprintf
 - _stprintf
 - stprintf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _swprintf_l function
 - _stprintf function
@@ -52,16 +54,17 @@ helpviewer_keywords:
 - sprintf_l function
 - formatted text [C++]
 ms.assetid: f6efe66f-3563-4c74-9455-5411ed939b81
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f4b8b840e73665aa9c176daccf5c1bc712f4f2ce
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: be279979cdbdf9a4c0b814cc684464670cc1e867
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="sprintf-sprintfl-swprintf-swprintfl-swprintfl"></a>sprintf, _sprintf_l, swprintf, _swprintf_l, __swprintf_l
 Biçimlendirilmiş verileri dizeye yazma. Bu işlevlerin bazıları daha güvenli sürümleri kullanılabilir; bkz: [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md). Güvenli sürümlerini `swprintf` ve `_swprintf_l` yararlanabilir mi bir `count` parametresi.  
@@ -136,7 +139,7 @@ int _sprintf_l(
 ## <a name="return-value"></a>Dönüş Değeri  
  Yazılan karakter sayısını veya bir hata oluştuysa -1. Varsa `buffer` veya `format` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
   
- `sprintf`depolanan bayt sayısını verir `buffer`, sonlandırma null karakteri sayım değil. `swprintf`depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
+ `sprintf` depolanan bayt sayısını verir `buffer`, sonlandırma null karakteri sayım değil. `swprintf` depolanan geniş karakter sayısını verir `buffer`, sonlandırma null geniş karakter sayım değil.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `sprintf` İşlevi biçimlendirir ve bir dizi karakter ve değerleri depolar `buffer`. Her `argument` (varsa) dönüştürülür ve çıktı içinde karşılık gelen biçimi belirtimlerine göre `format`. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev `format` bağımsız değişkeni için [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). Bir null karakter yazılmış son karakter sonra eklenir. Çakışan dizeler arasında kopyalama olursa davranış tanımsızdır.  
@@ -144,9 +147,9 @@ int _sprintf_l(
 > [!IMPORTANT]
 >  Kullanarak `sprintf`, yazılan karakterleri kullanarak kod anlamına sayısını sınırlamak için bir yolu yoktur `sprintf` arabellek taşmaları açıktır. İlgili işlevi kullanmayı [_snprintf](../../c-runtime-library/reference/snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md), en fazla yazılması için karakter sayısını belirtir `buffer`, veya [_scprintf](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md) ne kadar büyük bir arabellek gerekli olduğunu belirlemek için. Ayrıca, emin `format` kullanıcı tanımlı bir dize değil.  
   
- `swprintf`bir joker karakter sürümü `sprintf`; işaretçi bağımsız değişkenleri `swprintf` joker karakter dizelerdir. Kodlama hataları algılama `swprintf` , farklı olabilir `sprintf`. `swprintf`ve `fwprintf` durumlar dışında aynı şekilde davranır `swprintf` bir dize yerine bir hedef türü çıktısı Yazar `FILE`, ve `swprintf` gerektirir `count` parametre olarak karakter sayısını belirtin yazılır. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
+ `swprintf` bir joker karakter sürümü `sprintf`; işaretçi bağımsız değişkenleri `swprintf` joker karakter dizelerdir. Kodlama hataları algılama `swprintf` , farklı olabilir `sprintf`. `swprintf` ve `fwprintf` durumlar dışında aynı şekilde davranır `swprintf` bir dize yerine bir hedef türü çıktısı Yazar `FILE`, ve `swprintf` gerektirir `count` parametresi yazılacak karakter sayısını belirtin. Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
- `swprintf`ISO C ikinci parametre gerektiren standart, uyumlu `count`, türü `size_t`. Eski standart olmayan davranış zorlamak için tanımlamak `_CRT_NON_CONFORMING_SWPRINTFS`. Kod yeni uyumluluğunu davranışı kullanmak için değiştirilmesi gereken şekilde sonraki bir sürümde eski davranışı, kaldırılmış olabilir.  
+ `swprintf` ISO C ikinci parametre gerektiren standart, uyumlu `count`, türü `size_t`. Eski standart olmayan davranış zorlamak için tanımlamak `_CRT_NON_CONFORMING_SWPRINTFS`. Kod yeni uyumluluğunu davranışı kullanmak için değiştirilmesi gereken şekilde sonraki bir sürümde eski davranışı, kaldırılmış olabilir.  
   
  C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

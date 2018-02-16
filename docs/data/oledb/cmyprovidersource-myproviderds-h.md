@@ -4,34 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - myproviderds.h
 - cmyprovidersource
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - OLE DB providers, wizard-generated files
 - CMyProviderSource class in MyProviderDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d59cdb44ca6832c255ce8d553159ad19580e6a30
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8704a4a0733ea8bf688378953af9ff01314271d1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cmyprovidersource-myproviderdsh"></a>CMyProviderSource (MyProviderDS.H)
 Sağlayıcı sınıflar birden çok devralma kullanın. Aşağıdaki kod, veri kaynağı nesnesi için devralma zincirini gösterir:  
   
-```  
+```cpp
 /////////////////////////////////////////////////////////////////////////  
 // CMyProviderSource  
 class ATL_NO_VTABLE CMyProviderSource :   
@@ -44,7 +46,7 @@ class ATL_NO_VTABLE CMyProviderSource :
    public IInternalConnectionImpl<CMyProviderSource>  
 ```  
   
- Tüm COM bileşenleri türetin `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx`Tüm uygulamasını sağlar **IUnknown** arabirimi. Herhangi bir iş parçacığı modelini işleyebilir. `CComCoClass`gerekli tüm hata desteğini işler. Daha zengin hata bilgisi istemciye göndermek istiyorsanız, bazı hata API'lerini kullanabilirsiniz, `CComCoClass`.  
+ Tüm COM bileşenleri türetin `CComObjectRootEx` ve `CComCoClass`. `CComObjectRootEx` Tüm uygulamasını sağlar **IUnknown** arabirimi. Herhangi bir iş parçacığı modelini işleyebilir. `CComCoClass` gerekli tüm hata desteğini işler. Daha zengin hata bilgisi istemciye göndermek istiyorsanız, bazı hata API'lerini kullanabilirsiniz, `CComCoClass`.  
   
  Veri kaynağı nesnesi de birkaç 'Impl' sınıflardan devralır. Her sınıf bir arabirim uygulamasını sağlar. Veri kaynağı nesnesi uygular `IPersist`, `IDBProperties`, **IDBInitialize**, ve **IDBCreateSession** arabirimleri. Her bir arabirime tarafından OLE DB veri kaynağı nesnesi uygulamak için gereklidir. Belirli işlevi devralarak veya bu 'Impl' sınıflarından birini devralarak desteklemiyor veya desteklemek üzere seçebilirsiniz. Desteklemek istiyorsanız **IDBDataSourceAdmin** , arabirim, devralınan **IDBDataSourceAdminImpl** gerekli işlevi almak için sınıf.  
   

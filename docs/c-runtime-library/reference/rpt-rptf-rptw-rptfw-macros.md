@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -39,7 +40,8 @@ f1_keywords:
 - _RPTF3
 - RPT2
 - _RPTF1
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - debugging [CRT], using macros
 - _RPTW3 macro
@@ -93,16 +95,17 @@ helpviewer_keywords:
 - RPTFW1 macro
 - RPTW1 macro
 ms.assetid: a5bf8b30-57f7-4971-8030-e773b7a1ae13
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 453b04174325a7c112105bdef1147e1b7909ccdb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 51668f9b286a6b438d7f7b686114b2fcf70c25ed
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="rpt-rptf-rptw-rptfw-macros"></a>_RPT, _RPTF, _RPTW, _RPTFW Makroları
 Hata ayıklama rapor (yalnızca hata ayıklama sürümü) oluşturarak uygulamanın ilerleme durumunu izler. Unutmayın  *n*  değişkenlerinde sayısını belirtir `args` ve 0, 1, 2, 3, 4 veya 5 olabilir.  
@@ -154,7 +157,7 @@ _RPTFWn(
   
  `_RPT` Makroları çağrısı [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) kullanıcı iletisi içeren bir hata ayıklama rapor oluşturmak için işlev. `_RPTW` Makroları çağrısı `_CrtDbgReportW` geniş karakterler ile aynı rapor oluşturmak için işlev. `_RPTF` Ve `_RPTFW` makroları nerede rapor makrosu çağrıldı, ayrıca kullanıcı iletisi kaynak dosyasının ve satır numarası ile hata ayıklama rapor oluşturun. Kullanıcı ileti getirilmesiyle oluşturulur `arg`[*n*] bağımsız değişkenleriyle `format` tarafından tanımlanan aynı kurallarını kullanarak, dize [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) işlevi.  
   
- `_CrtDbgReport`veya `_CrtDbgReportW` hata ayıklama rapor oluşturur ve onun geçerli rapor modlarını dayalı hedefleri ve dosyası için tanımlı belirler `reportType`. [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.  
+ `_CrtDbgReport` veya `_CrtDbgReportW` hata ayıklama rapor oluşturur ve onun geçerli rapor modlarını dayalı hedefleri ve dosyası için tanımlı belirler `reportType`. [_CrtSetReportMode](../../c-runtime-library/reference/crtsetreportmode.md) ve [_CrtSetReportFile](../../c-runtime-library/reference/crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.  
   
  Varsa bir `_RPT` makrosu çağrılır ve hiçbiri `_CrtSetReportMode` ya da `_CrtSetReportFile` bırakıldı olarak adlandırılan, iletileri gibi görüntülenir.  
   
@@ -172,10 +175,10 @@ _RPTFWn(
   
 |Makrosu|Gerekli başlık|  
 |-----------|---------------------|  
-|`_RPT`makroları|\<crtdbg.h >|  
-|`_RPTF`makroları|\<crtdbg.h >|  
-|`_RPTW`makroları|\<crtdbg.h >|  
-|`_RPTFW`makroları|\<crtdbg.h >|  
+|`_RPT` Makroları|\<crtdbg.h>|  
+|`_RPTF` Makroları|\<crtdbg.h>|  
+|`_RPTW` Makroları|\<crtdbg.h>|  
+|`_RPTFW` Makroları|\<crtdbg.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

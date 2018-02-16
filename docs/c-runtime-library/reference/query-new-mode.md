@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _query_new_mode
+ms.topic: reference
+apiname:
+- _query_new_mode
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,22 +26,24 @@ apitype: DLLExport
 f1_keywords:
 - query_new_mode
 - _query_new_mode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - query_new_mode function
 - handler modes
 - _query_new_mode function
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 385d6edc77387b724c4e121a9fc01cee1a4d8905
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cbbdec8c5a8cd9af5e6a17518cc40bca455b3f98
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="querynewmode"></a>_query_new_mode
 Tarafından belirlenen yeni işleyici modu belirten bir tamsayı döndürür `_set_new_mode` için `malloc`.  
@@ -73,6 +77,6 @@ Tarafından belirlenen yeni işleyici modu belirten bir tamsayı döndürür `_s
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
  [calloc](../../c-runtime-library/reference/calloc.md)   
- [boş](../../c-runtime-library/reference/free.md)   
+ [Boş](../../c-runtime-library/reference/free.md)   
  [realloc](../../c-runtime-library/reference/realloc.md)   
  [_query_new_handler](../../c-runtime-library/reference/query-new-handler.md)

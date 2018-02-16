@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _msize
+ms.topic: reference
+apiname:
+- _msize
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -24,22 +26,24 @@ apitype: DLLExport
 f1_keywords:
 - msize
 - _msize
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory blocks
 - msize function
 - _msize function
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ebc066e9ad01ff08014ed9174d0ca4915ea1868f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2fdf8e5b6c9b0f6b63ac14784a90a4dc94b6abdc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="msize"></a>_msize
 Yığın ayrılan bellek bloğu boyutu döndürür.  
@@ -58,7 +62,7 @@ Yığın ayrılan bellek bloğu boyutu döndürür.
  Bellek bloğu işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_msize`boyutu (bayt) imzalanmamış tamsayı olarak döndürür.  
+ `_msize` Boyutu (bayt) imzalanmamış tamsayı olarak döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_msize` İşlevi için bir çağrı tarafından ayrılan bellek bloğu bayt cinsinden boyutu döndürüyor `calloc`, `malloc`, veya `realloc`.  

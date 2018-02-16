@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fullpath
 - _wfullpath
@@ -28,7 +29,8 @@ f1_keywords:
 - fullpath
 - _wfullpath
 - _fullpath
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wfullpath function
 - relative file paths
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - _fullpath function
 - fullpath function
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c96e806615d165bcdc3b5a5b89e4b8a966d8b1e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a9874d4c0b3576f79880d95a04285be9ff299c7c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fullpath-wfullpath"></a>_fullpath, _wfullpath
 Belirtilen göreli yol adı için bir mutlak veya tam yol adı oluşturur.  
@@ -94,7 +97,7 @@ wchar_t *_wfullpath(
 \\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h  
 ```  
   
- `_fullpath`çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wfullpath`bir joker karakter sürümü `_fullpath`; dize bağımsız değişkenleri `_wfullpath` joker karakter dizelerdir. `_wfullpath`ve `_fullpath` durumlar dışında aynı şekilde davranır `_wfullpath` çok baytlı karakter dizeleri işlemez.  
+ `_fullpath` çok baytlı karakter sıralarının şu anda kullanımda birden çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. `_wfullpath` bir joker karakter sürümü `_fullpath`; dize bağımsız değişkenleri `_wfullpath` joker karakter dizelerdir. `_wfullpath` ve `_fullpath` durumlar dışında aynı şekilde davranır `_wfullpath` çok baytlı karakter dizeleri işlemez.  
   
  Varsa `_DEBUG` ve `_CRTDBG_MAP_ALLOC` tanımlanmış olan iki çağrıları `_fullpath` ve `_wfullpath` yapılan çağrılar tarafından değiştirilen `_fullpath_dbg` ve `_wfullpath_dbg` bellek ayırmaları hata ayıklama için izin vermek için. Daha fazla bilgi için bkz: [_wfullpath_dbg olan _fullpath_dbg](../../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md).  
   
@@ -112,7 +115,7 @@ wchar_t *_wfullpath(
   
 |İşlev|Gerekli başlık|  
 |--------------|---------------------|  
-|`_fullpath`|\<stdlib.h >|  
+|`_fullpath`|\<stdlib.h>|  
 |`_wfullpath`|\<stdlib.h > veya \<wchar.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

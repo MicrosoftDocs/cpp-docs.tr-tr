@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - fputc
 - fputwc
@@ -27,7 +28,8 @@ f1_keywords:
 - fputc
 - fputwc
 - _fputtc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - streams, writing characters to
 - fputtc function
@@ -35,16 +37,17 @@ helpviewer_keywords:
 - fputwc function
 - fputc function
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 06f9fb737ac57ad04a661eb0e8438b3d557c0e3c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: af95e4b11048ebda50ac4d73fc87b6b67903494b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fputc-fputwc"></a>fputc, fputwc
 Bir karakterin bir akışa yazar.  
@@ -77,7 +80,7 @@ wint_t fputwc(
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri tek karakter Yazar `c` için bir dosya konumunda belirtilen ilişkili dosya konumu göstergesi (tanımlıysa) ve uygun şekilde göstergesi ilerletir. Durumunda `fputc` ve `fputwc`, dosyanın ilişkilendirildiği `stream`. Dosya konumlandırma istekleri desteklemiyor veya içinde açılmış ekleme modu, karakteri akışın sonuna eklenir.  
   
- Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `fputc`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `fputc` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Sürümleriyle `_nolock` soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Daha fazla bilgi için bkz:[_fputc_nolock _fputwc_nolock](../../c-runtime-library/reference/fputc-nolock-fputwc-nolock.md).  
   
@@ -101,7 +104,7 @@ wint_t fputwc(
 |`fputc`|\<stdio.h >|  
 |`fputwc`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+ Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   
 ## <a name="example"></a>Örnek  
   

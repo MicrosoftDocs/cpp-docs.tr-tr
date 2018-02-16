@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsnbset
 - _mbsnbset_l
@@ -28,7 +29,8 @@ f1_keywords:
 - mbsnbset_l
 - _mbsnbset
 - _mbsnbset_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tcsnset function
 - _tcsnset_l function
@@ -39,22 +41,23 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9f868cdf5d0200df174c5df3629b5578dbf06d31
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c98745ae2d995dea5a65caab55cc7e45172a9f53
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbsnbset-mbsnbsetl"></a>_mbsnbset, _mbsnbset_l
 İlk Ayarlar `n` çok baytlı karakter dizesi belirtilen bir karakterin için bayt. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_mbsnbset_s, _mbsnbset_s_l](../../c-runtime-library/reference/mbsnbset-s-mbsnbset-s-l.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -86,12 +89,12 @@ unsigned char *_mbsnbset_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mbsnbset`bir işaretçi değiştirilmiş dizesi olarak döndürür.  
+ `_mbsnbset` Bir işaretçi değiştirilmiş dizesi olarak döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_mbsnbset` Ve `_mbsnbset_l` işlevleri ayarla, en fazla ilk `count` bayt `str` için `c`. Varsa `count` uzunluğundan daha büyük `str`, uzunluğu `str` yerine kullanılan `count`. Varsa `c` birden çok baytlı karakter ve tamamen tarafından belirtilen son bayt içine ayarlanamaz `count`, son bayta kalan boş bir karakter ile doldurulan. `_mbsnbset`ve `_mbsnbset_l` bir sonlandırma yerleştirmez sonunda null `str`.  
+ `_mbsnbset` Ve `_mbsnbset_l` işlevleri ayarla, en fazla ilk `count` bayt `str` için `c`. Varsa `count` uzunluğundan daha büyük `str`, uzunluğu `str` yerine kullanılan `count`. Varsa `c` birden çok baytlı karakter ve tamamen tarafından belirtilen son bayt içine ayarlanamaz `count`, son bayta kalan boş bir karakter ile doldurulan. `_mbsnbset` ve `_mbsnbset_l` bir sonlandırma yerleştirmez sonunda null `str`.  
   
- `_mbsnbset`ve `_mbsnbset_l` benzer `_mbsnset`ayarlar dışında `count` bayt yerine `count` karakterlerinden `c`.  
+ `_mbsnbset` ve `_mbsnbset_l` benzer `_mbsnset`ayarlar dışında `count` bayt yerine `count` karakterlerinden `c`.  
   
  Varsa `str` olan `NULL` veya `count` sıfır açıklandığı gibi bu işlev geçersiz bir parametre özel bir durum oluşturur [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`. Ayrıca, varsa `c` geçerli bir birden çok baytlı karakter değil `errno` ayarlanır `EINVAL` ve boşluk yerine kullanılır.  
   

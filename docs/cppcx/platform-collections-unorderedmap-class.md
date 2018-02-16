@@ -6,19 +6,21 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: collection/Platform::Collections::UnorderedMap
+ms.topic: reference
+f1_keywords:
+- collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b2266e43f3168fca823147f4c2c7e2c33513343
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 248b25e61af0ce766c81d480d7ebf39618a8dfec
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -102,7 +104,7 @@ Daha fazla bilgi için bkz: [koleksiyonları](../cppcx/collections-c-cx.md).
 
 **Namespace:** Platform::Collections
 
-## <a name="clear"></a>UnorderedMap::Clear yöntemi
+## <a name="clear"></a>  UnorderedMap::Clear yöntemi
 
 Tüm anahtar-değer çiftleri geçerli UnorderedMap nesnesinden kaldırır.
 
@@ -112,7 +114,7 @@ Tüm anahtar-değer çiftleri geçerli UnorderedMap nesnesinden kaldırır.
 virtual void Clear();
 ```
 
-## <a name="first"></a>UnorderedMap::First yöntemi
+## <a name="first"></a>  UnorderedMap::First yöntemi
 
 İlk belirtir yineleyici döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) sırasız eşlemesindeki öğesi.
 
@@ -132,7 +134,7 @@ virtual Windows::Foundation::Collections::IIterator<
 
 Dönüş değeri ile bildirilen bir değişken atamak için First() tarafından döndürülen yineleyici tutmak için kolay bir yol olduğu **otomatik** kesintisi anahtar sözcüğü yazın. Örneğin, `auto x = myUnorderedMap->First();`.
 
-## <a name="getview"></a>UnorderedMap::GetView yöntemi
+## <a name="getview"></a>  UnorderedMap::GetView yöntemi
 
 Geçerli UnorderedMap salt okunur bir görünümünü verir; diğer bir deyişle, bir [Platform::Collections:: unorderedmapview sınıfı](../cppcx/platform-collections-unorderedmapview-class.md) uygulayan [Windows::Foundation::Collections::IMapView::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) arabirimi.
 
@@ -146,7 +148,7 @@ Windows::Foundation::Collections::IMapView<K, V>^ GetView();
 
 Bir `UnorderedMapView` nesnesi.
 
-## <a name="haskey"></a>UnorderedMap::HasKey yöntemi
+## <a name="haskey"></a>  UnorderedMap::HasKey yöntemi
 
 Geçerli UnorderedMap belirtilen anahtarı içerip içermediğini belirler.
 
@@ -165,9 +167,9 @@ UnorderedMap öğesi bulmak için kullanılan anahtar. Türü *anahtar* TypeName
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true`anahtar bulunursa; Aksi takdirde `false`.
+`true` anahtar bulunursa; Aksi takdirde `false`.
 
-## <a name="insert"></a>Unorderedmap::INSERT yöntemi
+## <a name="insert"></a>  Unorderedmap::INSERT yöntemi
 
 Belirtilen anahtar-değer çifti geçerli UnorderedMap nesnesine ekler.
 
@@ -190,9 +192,9 @@ Anahtar-değer çiftinin değer bölümünü. Türü *değeri* TypeName *V*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-`true`Geçerli eşlemesindeki var olan bir öğe anahtarı eşleşip eşleşmediğini *anahtar* ve o öğenin değeri kısmı kümesine *değeri*. `false`Geçerli eşlemesindeki var olan bir öğe eşleşmiyorsa *anahtar* ve *anahtar* ve *değeri* parametreleri bir anahtar-değer çifti yapılan ve geçerli UnorderedMap eklendi.
+`true` Geçerli eşlemesindeki var olan bir öğe anahtarı eşleşip eşleşmediğini *anahtar* ve o öğenin değeri kısmı kümesine *değeri*. `false` Geçerli eşlemesindeki var olan bir öğe eşleşmiyorsa *anahtar* ve *anahtar* ve *değeri* parametreleri bir anahtar-değer çifti yapılan ve geçerli UnorderedMap eklendi.
 
-## <a name="lookup"></a>UnorderedMap::Lookup yöntemi
+## <a name="lookup"></a>  UnorderedMap::Lookup yöntemi
 
 V türü türü K. belirtilen anahtarla ilişkili değeri alır.
 
@@ -213,7 +215,7 @@ Bir öğenin UnorderedMap bulmak için kullanılan anahtar. Türü *anahtar* Typ
 
 İle eşleştirilmiş değeri *anahtar*. Dönüş değeri typename türüdür *V*.
 
-## <a name="mapchanged"></a>UnorderedMap::MapChanged
+## <a name="mapchanged"></a>  UnorderedMap::MapChanged
 
 Bir öğe eklenen veya eşleme kaldırılmış tetiklenir.
 
@@ -229,9 +231,9 @@ A [MapChangedEventHandler\<K, V >](http://msdn.microsoft.com/library/windows/app
 
 ## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
 
-Bize C# veya Visual Basic IMAP proje Windows mağazası uygulamaları\<K, V > IDictionary olarak\<K, V >.
+Windows çalışma zamanı uygulamaları bize C# veya Visual Basic IMAP proje\<K, V > IDictionary olarak\<K, V >.
 
-## <a name="remove"></a>UnorderedMap::Remove yöntemi
+## <a name="remove"></a>  UnorderedMap::Remove yöntemi
 
 Belirtilen anahtar-değer çifti UnorderedMap nesneyi siler.
 
@@ -247,7 +249,7 @@ virtual void Remove(
 *key*  
 Anahtar-değer çifti anahtar bölümünü. Türü *anahtar* TypeName *K*.
 
-## <a name="size"></a>UnorderedMap::Size yöntemi
+## <a name="size"></a>  UnorderedMap::Size yöntemi
 
 Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMap öğeler.
 
@@ -261,7 +263,7 @@ virtual property unsigned int Size;
 
 Sırasız eşlemesindeki öğe sayısı.
 
-## <a name="ctor"></a>UnorderedMap::UnorderedMap Oluşturucusu
+## <a name="ctor"></a>  UnorderedMap::UnorderedMap Oluşturucusu
 
 UnorderedMap sınıfının yeni bir örneğini başlatır.
 
