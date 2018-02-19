@@ -4,33 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - __popcnt64
 - __popcnt
 - __popcnt16
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - popcnt instruction
 - __popcnt16
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 45e60a412dc24f685fd375ebc19c109b2bee0e2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f88e15bb20caf7e32b54f544cd1240425f3c8e08
+ms.sourcegitcommit: ecf0177ae9d36b1f63c9673a9583e0359107a5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bir sayar 16-, 32 veya 64 baytlık bir işaretsiz tamsayı BITS (popülasyon sayısı).  
   
@@ -49,7 +52,7 @@ unsigned __int64 __popcnt64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`value`  
+ [in] `value`  
  16, 32 veya 64 bit işaretsiz tamsayıyı popülasyon sayısı istiyoruz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -103,7 +106,7 @@ __popcnt16(0xff) = 8
 __popcnt16(0xffff) = 16  
 __popcnt(0x0) = 0  
 __popcnt(0xff) = 8  
-__oopcnt(0xffff) = 16  
+__popcnt(0xffff) = 16  
 __popcnt(0xffffffff) = 32  
 ```  
   

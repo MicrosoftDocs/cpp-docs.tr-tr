@@ -15,15 +15,15 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c447389de1accfe95674855645fe044e1d3df41
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 030b1da3688e2c0524256f5128d5bb15f69b5070
+ms.sourcegitcommit: ecf0177ae9d36b1f63c9673a9583e0359107a5cb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan Olarak Kapalı Olan Derleyici Uyarıları
 
-Derleyici, çoğu kullanıcının bunları görmek istemediğinden, varsayılan olarak kapatılmış uyarılar içerir. Ancak, aşağıdaki seçeneklerden birini kullanarak bu uyarıları etkinleştirebilirsiniz.
+Derleyici Çoğu geliştirici görmesini istemiyorsanız, varsayılan olarak kapalı uyarıları içerir. Ancak, aşağıdaki seçeneklerden birini kullanarak bu uyarıları etkinleştirebilirsiniz.
 
 **#pragma Uyarısı (varsayılan:** *warning_number* **)**  
 Belirtilen uyarı (*warning_number*), varsayılan düzeyinde etkinleştirilir. Uyarılara yönelik belgeler varsayılan uyarı düzeyini içerir.
