@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbccpy_s
 - _mbccpy_s_l
@@ -28,7 +29,8 @@ f1_keywords:
 - mbccpy_s_l
 - mbccpy_s
 - _mbccpy_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tccpy_s_l function
 - _tccpy_s function
@@ -39,22 +41,23 @@ helpviewer_keywords:
 - _tccpy_s_l function
 - _mbccpy_s_l function
 ms.assetid: b6e965fa-53c1-4ec3-85ef-a1c4b4f2b2da
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 942267c2632e6ffafec3d2fa9308bfb3db69aa87
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 72b2e155dafe0b5fb5a83e5e62ea95fd2c3657e6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbccpys-mbccpysl"></a>_mbccpy_s, _mbccpy_s_l
 Tek baytlı karakter başka bir dizeye bir dizeden kopyalar. Bu sürümleri [_mbccpy, _mbccpy_l](../../c-runtime-library/reference/mbccpy-mbccpy-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -88,19 +91,19 @@ errno_t _mbccpy_s_l(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`dest`  
+ [out] `dest`  
  Hedef kopyalayın.  
   
- [in]`buffSizeInBytes`  
+ [in] `buffSizeInBytes`  
  Hedef arabellek boyutu.  
   
- [out]`pCopied`  
+ [out] `pCopied`  
  Bayt kopyalanan (1 veya 2 başarılı olursa) sayısı ile doldurulur. Geçirmek `NULL` numarası hakkında önemli değil durumunda.  
   
- [in]`src`  
+ [in] `src`  
  Kopyalamak için birden çok baytlı karakter.  
   
- [in]`locale`  
+ [in] `locale`  
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -109,11 +112,11 @@ errno_t _mbccpy_s_l(
 ## <a name="remarks"></a>Açıklamalar  
  `_mbccpy_s` İşlevi bir çok baytlı karakter kopyalar `src` için `dest`. Varsa `src` birden çok baytlı karakter örtük bir çağrı tarafından belirlendiği bayt göstermiyor [_ismbblead](../../c-runtime-library/reference/ismbblead-ismbblead-l.md), ardından tek bayt, `src` noktalarına kopyalanır. Varsa `src` baytı ancak aşağıdaki bayt noktalarına 0 ve böylece geçersiz sonra 0 kopyalanır `dest`, `errno` ayarlanır `EILSEQ`, ve işlevi döndürür `EILSEQ`.  
   
- `_mbccpy_s`null Sonlandırıcı append değil; Ancak, varsa `src` bu null kopyalanır sonra bir null karakter işaret `dest` (yalnızca normal tek baytlı kopyasını budur).  
+ `_mbccpy_s` null Sonlandırıcı append değil; Ancak, varsa `src` bu null kopyalanır sonra bir null karakter işaret `dest` (yalnızca normal tek baytlı kopyasını budur).  
   
  Değer `pCopied` kopyalanan bayt sayısı ile doldurulur. İşlem başarılı olursa olası değerler şunlardır: 1 ve 2. Varsa `NULL` geçirilir, bu parametre yoksayılır.  
   
-|`src`|kopyalanır`dest`|`pCopied`|Dönüş değeri|  
+|`src`|kopyalanır `dest`|`pCopied`|Dönüş değeri|  
 |-----------|----------------------|---------------|------------------|  
 |ön bayt|ön bayt|1.|0|  
 |0|0|1.|0|  
@@ -122,7 +125,7 @@ errno_t _mbccpy_s_l(
   
  İkinci satır bir özel durum ilk olduğuna dikkat edin. Ayrıca tablo varsayar Not `buffSizeInBytes`  >=  `pCopied`.  
   
- `_mbccpy_s`Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır. `_mbccpy_s_l`aynıdır `_mbccpy_s` dışında `_mbccpy_s_l` geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır.  
+ `_mbccpy_s` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır. `_mbccpy_s_l` aynıdır `_mbccpy_s` dışında `_mbccpy_s_l` geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır.  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - mbtowc
 - _mbtowc_l
@@ -24,23 +25,26 @@ apilocation:
 - api-ms-win-crt-convert-l1-1-0.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: mbtowc
-dev_langs: C++
+f1_keywords:
+- mbtowc
+dev_langs:
+- C++
 helpviewer_keywords:
 - mbtowc function
 - _mbtowc_l function
 - mbtowc_l function
 ms.assetid: dfd1c8a7-e73a-4307-9353-53b70b45d4d1
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 52f2c1d3defb822f00095a24bfcc87bd07fc8cc4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d6d8e50efb1e725b8063327ca03af2212733561d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
 Birden çok baytlı karakter karşılık gelen bir geniş karakter dönüştürün.  
@@ -68,24 +72,24 @@ int _mbtowc_l(
  `mbchar`  
  Adresi, bir dizi bayt (birden çok baytlı karakter).  
   
- *sayısı*  
+ *Sayısı*  
  Denetlenecek bayt sayısı.  
   
- *yerel ayar*  
+ *Yerel ayar*  
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Varsa **mbchar** değil **NULL** ve nesne, `mbchar` formları için geçerli bir birden çok baytlı karakter işaret `mbtowc` birden çok baytlı karakter bayt cinsinden uzunluğu döndürür. Varsa `mbchar` olan **NULL** veya işaret nesnesi bir joker karakter null karakter (M '\0'), işlevi 0 değerini döndürür. Nesne, `mbchar` noktalarına ilk içinde geçerli bir birden çok baytlı karakter form değil *sayısı* karakteri -1 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `mbtowc` İşlev dönüştürür *sayısı* veya daha az sayıda bayt gösterdiği `mbchar`, `mbchar` değil **NULL**, karşılık gelen bir geniş karakter. `mbtowc`Sonuçta elde edilen geniş karakter depolar *wchar,* varsa *wchar* değil **NULL**. `mbtowc`değil inceleyin birden fazla `MB_CUR_MAX` bayt sayısı. `mbtowc`Geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır; `_mbtowc_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `mbtowc` İşlev dönüştürür *sayısı* veya daha az sayıda bayt gösterdiği `mbchar`, `mbchar` değil **NULL**, karşılık gelen bir geniş karakter. `mbtowc` Sonuçta elde edilen geniş karakter depolar *wchar,* varsa *wchar* değil **NULL**. `mbtowc` değil inceleyin birden fazla `MB_CUR_MAX` bayt sayısı. `mbtowc` Geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır; `_mbtowc_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`mbtowc`|\<stdlib.h >|  
-|**_mbtowc_l**|\<stdlib.h >|  
+|`mbtowc`|\<stdlib.h>|  
+|**_mbtowc_l**|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

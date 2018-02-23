@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsicoll_l
 - _stricoll_l
@@ -39,7 +40,8 @@ f1_keywords:
 - _tcsicoll
 - mbsicoll
 - stricoll_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - code pages, using for string comparisons
 - _ftcsicoll function
@@ -58,22 +60,23 @@ helpviewer_keywords:
 - strings [C++], comparing by code page
 - ftcsicoll function
 ms.assetid: 8ec93016-5a49-49d2-930f-721566661d82
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 88464cd717b11591b22f50d3df50f72ebb5fee02
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 56f045d7f06740287f7e7e59efcf89db3fefeb59
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="stricoll-wcsicoll-mbsicoll-stricolll-wcsicolll-mbsicolll"></a>_stricoll, _wcsicoll, _mbsicoll, _stricoll_l, _wcsicoll_l, _mbsicoll_l
 Yerel ayarlara özgü bilgileri kullanarak dizeleri karşılaştırır.  
   
 > [!IMPORTANT]
->  `_mbsicoll`ve `_mbsicoll_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsicoll` ve `_mbsicoll_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -119,17 +122,17 @@ int _mbsicoll_l(
   
 |Dönüş değeri|Dize2 Dize1 ilişkisi|  
 |------------------|----------------------------------------|  
-|< 0|`string1`küçüktür`string2`|  
-|0|`string1`aynı`string2`|  
-|> 0|`string1`büyüktür`string2`|  
+|< 0|`string1` Küçüktür `string2`|  
+|0|`string1` aynı `string2`|  
+|> 0|`string1` Büyüktür `string2`|  
 |`_NLSCMPERROR`|Bir hata oluşmuştur.|  
   
- Bunların her biri döndürür işlevleri `_NLSCMPERROR`. Kullanılacak `_NLSCMPERROR`, ya da dahil `STRING.H` veya `MBSTRING.H`. `_wcsicoll`ya da başarısız `string1` veya `string2` harmanlama sırası etki alanı dışından joker karakter kodları içerir. Hata oluştuğunda `_wcsicoll` ayarlayabilir `errno` için `EINVAL`. Çağrı sırasında bir hata olup olmadığını denetlemek için `_wcsicoll`ayarlayın `errno` 0 ve denetleyin `errno` çağırdıktan sonra `_wcsicoll`.  
+ Bunların her biri döndürür işlevleri `_NLSCMPERROR`. Kullanılacak `_NLSCMPERROR`, ya da dahil `STRING.H` veya `MBSTRING.H`. `_wcsicoll` ya da başarısız `string1` veya `string2` harmanlama sırası etki alanı dışından joker karakter kodları içerir. Hata oluştuğunda `_wcsicoll` ayarlayabilir `errno` için `EINVAL`. Çağrı sırasında bir hata olup olmadığını denetlemek için `_wcsicoll`ayarlayın `errno` 0 ve denetleyin `errno` çağırdıktan sonra `_wcsicoll`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir `string1` ve `string2` şu anda kullanımda kod sayfasına göre. Bu işlevler yalnızca, geçerli kod sayfası karakter arasında bir fark sipariş ve lexicographic karakter sırası ayarlayabilir ve bu fark dize karşılaştırma için ilgilendirir olduğunda kullanılmalıdır.  
   
- `_stricmp`farklı `_stricoll` bakımından `_stricmp` karşılaştırma tarafından etkilenir `LC_CTYPE`, ancak `_stricoll` karşılaştırma göre yapılır `LC_CTYPE` ve `LC_COLLATE` yerel ayar kategorileri. Daha fazla bilgi için `LC_COLLATE` kategorisi, bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) ve [yerel ayar kategorileri](../../c-runtime-library/locale-categories.md). Bu işlevlerin sürümleri `_l` sonekini kullan geçerli yerel; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_stricmp` farklı `_stricoll` bakımından `_stricmp` karşılaştırma tarafından etkilenir `LC_CTYPE`, ancak `_stricoll` karşılaştırma göre yapılır `LC_CTYPE` ve `LC_COLLATE` yerel ayar kategorileri. Daha fazla bilgi için `LC_COLLATE` kategorisi, bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) ve [yerel ayar kategorileri](../../c-runtime-library/locale-categories.md). Bu işlevlerin sürümleri `_l` sonekini kullan geçerli yerel; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki `string1` veya `string2` olan `NULL` işaretçileri, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `_NLSCMPERROR` ve `errno` için `EINVAL`.  
   

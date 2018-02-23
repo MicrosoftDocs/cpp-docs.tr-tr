@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strncat
 - _strncat_l
@@ -40,7 +41,8 @@ f1_keywords:
 - _ftcsncat
 - wcsncat
 - _tcsncat
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - concatenating strings
 - ftcsncat function
@@ -64,22 +66,23 @@ helpviewer_keywords:
 - _mbsncat_l function
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 04c3e1979fa3eb7cc02a8be2236496fbdaaac83a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 411b480acde9a5fad1144a7ebf95cd23ee3b3fd6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strncat-strncatl-wcsncat-wcsncatl-mbsncat-mbsncatl"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 Bir dizenin karakterlerini ekler. Bu işlevlerin daha güvenli sürümü, bkz: [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) .  
   
 > [!IMPORTANT]
->  `_mbsncat`ve `_mbsncat_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncat` ve `_mbsncat_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -152,9 +155,9 @@ unsigned char *_mbsncat_l(
  `strncat` İşlevi ekler, en fazla ilk `count` karakterlerinden `strSource` için `strDest`. İlk karakteri `strSource` sonlandırma null karakterinin üzerine yazar `strDest`. İçinde bir null karakter görünürse `strSource` önce `count` karakter eklenmiş, `strncat` tüm karakterler ekler `strSource`, null karakteri kadar. Varsa `count` uzunluğundan daha büyük `strSource`, uzunluğu `strSource` yerine kullanılan `count`. Tüm durumlarda, sonuç dizesini bir null karakter ile sona erdi. Kopyalama çakışma dizeleri arasında yer alıyorsa, tanımlanmamış bir davranıştır.  
   
 > [!IMPORTANT]
->  `strncat`yeterli alana denetlemez `strDest`; bu nedenle arabellek taşmaları olası bir nedeni olan. Aklınızda `count` sayısını sınırlayan karakterler; bir sınır boyutu değil `strDest`. Aşağıdaki örnek bakın. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
+>  `strncat` yeterli alana denetlemez `strDest`; bu nedenle arabellek taşmaları olası bir nedeni olan. Aklınızda `count` sayısını sınırlayan karakterler; bir sınır boyutu değil `strDest`. Aşağıdaki örnek bakın. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
- `wcsncat`ve `_mbsncat` joker karakter ve çok baytlı karakter sürümleri `strncat`. Dize bağımsız değişkenleri ve dönüş değerini `wcsncat` joker karakter olan dizeleri; bu `_mbsncat` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
+ `wcsncat` ve `_mbsncat` joker karakter ve çok baytlı karakter sürümleri `strncat`. Dize bağımsız değişkenleri ve dönüş değerini `wcsncat` joker karakter olan dizeleri; bu `_mbsncat` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -168,7 +171,7 @@ unsigned char *_mbsncat_l(
 |`_tcsncat_l`|`_strncat_l`|`_mbsnbcat_l`|`_wcsncat_l`|  
   
 > [!NOTE]
->  `_strncat_l`ve `_wcsncat_l` hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan `_tcsncat_l`.  
+>  `_strncat_l` ve `_wcsncat_l` hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan `_tcsncat_l`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

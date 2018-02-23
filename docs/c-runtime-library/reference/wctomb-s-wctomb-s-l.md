@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wctomb_s_l
 - wctomb_s
@@ -26,7 +27,8 @@ apitype: DLLExport
 f1_keywords:
 - wctomb_s
 - _wctomb_s_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wctomb_s function
 - wctomb_s_l function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c819f62f36966363f32eb16b7af758de274d3d7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3025340d4af81f20fd086d07058ac820828dda75
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wctombs-wctombsl"></a>wctomb_s, _wctomb_s_l
 Geniş karakter karşılık gelen birden çok baytlı karakter dönüştürür. Bir sürümünü [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -69,19 +72,19 @@ errno_t _wctomb_s_l(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pRetValue`  
+ [out] `pRetValue`  
  Bayt veya sonucu gösteren bir kod sayısı.  
   
- [out]`mbchar`  
+ [out] `mbchar`  
  Birden çok baytlı karakter adresi.  
   
- [in]`sizeInBytes`  
+ [in] `sizeInBytes`  
  Arabellek boyutu `mbchar`.  
   
- [in]`wchar`  
+ [in] `wchar`  
  Geniş karakter.  
   
- [in]`locale`  
+ [in] `locale`  
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -102,14 +105,14 @@ errno_t _wctomb_s_l(
   
  Varsa `wctomb_s` geniş karakter dönüştürür isteğe bağlı olarak birden çok baytlı karakter bayt sayısı koyar (hangi asla büyük `MB_CUR_MAX`) gösterdiği değeri tamsayıya geniş karakter `pRetValue`. Varsa `wchar` joker karakter null karakteri (M '\0'), `wctomb_s` doldurur `pRetValue` 1. Varsa hedef işaretçi `mbchar` null, `wctomb_s` 0 koyar `pRetValue`. Dönüştürme geçerli yerel ayarda mümkün değilse, `wctomb_s` -1 koyar `pRetValue`.  
   
- `wctomb_s`Geçerli yerel ayar için yerel ayara bağımlı bilgileri kullanır; `_wctomb_s_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `wctomb_s` Geçerli yerel ayar için yerel ayara bağımlı bilgileri kullanır; `_wctomb_s_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`wctomb_s`|\<stdlib.h >|  
-|`_wctomb_s_l`|\<stdlib.h >|  
+|`wctomb_s`|\<stdlib.h>|  
+|`_wctomb_s_l`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

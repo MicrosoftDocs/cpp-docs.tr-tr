@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 10/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wcstod
 - _wcstod_l
@@ -35,7 +36,8 @@ f1_keywords:
 - corecrt_wstdlib/wcstod
 - stdlib/_strtod_l
 - corecrt_wstdlib/_wcstod_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcstod_l function
 - tcstod_l function
@@ -49,16 +51,17 @@ helpviewer_keywords:
 - _strtod_l function
 - string conversion, to floating point values
 ms.assetid: 0444f74a-ba2a-4973-b7f0-1d77ba88c6ed
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1d46e6402efe69a9099d53d9d93b5b367f6dd18c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fe18737b52ba2b04e3ee09813c6b48b6ebdf0363
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtod-strtodl-wcstod-wcstodl"></a>strtod, _strtod_l, wcstod, _wcstod_l
 
@@ -95,18 +98,18 @@ Dönüştürülecek null ile sonlandırılmış dize.
 *endptr*  
 Tarama durdurur karakter işaretçi.
 
-*yerel ayar*  
+*Yerel ayar*  
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`strtod`gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür`HUGE_VAL`. İşaretini `HUGE_VAL` gösterilemez değerini oturum eşleşir. `strtod`hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.
+`strtod` gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür`HUGE_VAL`. İşaretini `HUGE_VAL` gösterilemez değerini oturum eşleşir. `strtod` hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.
 
-`wcstod`değerleri analogously çok döndürür `strtod`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
+`wcstod` değerleri analogously çok döndürür `strtod`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Giriş dizesi her işlevi dönüştürür *nptr* için bir `double`. `strtod` İşlev dönüştürür *nptr* çift duyarlıklı değeri. `strtod`dize okumayı durdurur *nptr* ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. `wcstod`bir joker karakter sürümü `strtod`; kendi *nptr* bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.
+Giriş dizesi her işlevi dönüştürür *nptr* için bir `double`. `strtod` İşlev dönüştürür *nptr* çift duyarlıklı değeri. `strtod` dize okumayı durdurur *nptr* ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. `wcstod` bir joker karakter sürümü `strtod`; kendi *nptr* bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -119,7 +122,7 @@ Giriş dizesi her işlevi dönüştürür *nptr* için bir `double`. `strtod` İ
 
 Varsa *endptr* değil `NULL`, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan *endptr*. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri *nptr* gösterdiği konumunda depolanan *endptr*.
 
-`strtod`bekliyor *nptr* bir dizeye aşağıdaki biçimlerden birini işaret edecek şekilde:
+`strtod` bekliyor *nptr* bir dizeye aşağıdaki biçimlerden birini işaret edecek şekilde:
 
 [*boşluk*] [*oturum*] {*basamak* [*taban* *basamak*] &#124; *taban* *basamak*} [{**e** &#124; **E**} [*oturum*] *basamak*]  
 [*boşluk*] [*oturum*] {**0 x** &#124; **0 X**} {*hexdigits* [*taban* *hexdigits*] &#124; *taban* *hexdigits*} [{**p** &#124; **P**} [*oturum*] *hexdigits*]  

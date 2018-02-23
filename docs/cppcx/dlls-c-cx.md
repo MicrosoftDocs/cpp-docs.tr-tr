@@ -2,7 +2,6 @@
 title: DLL'ler (C + +/ CX) | Microsoft Docs
 ms.custom: 
 ms.date: 02/06/2018
-ms.prod: windows-client-threshold
 ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
@@ -15,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f483494d981a03816a8b2717b9ad5098a8a714c9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 16b7ed16ec128f1fbf67d1b62e974ccd7ea5213b
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="dlls-ccx"></a>DLL'ler (C + +/ CX)
 

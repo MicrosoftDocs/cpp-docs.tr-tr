@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _isctype_l
 - iswctype
@@ -34,7 +35,8 @@ f1_keywords:
 - iswctype_l
 - isctype_l
 - _iswctype_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - isctype_l function
 - iswctype_l function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1413430e9a5936a2339ccb9e8376e4134cfbdf04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fe43830894be3c004fb21598b0324b864fe5b9b0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isctype-iswctype-isctypel-iswctypel"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 Testleri `c` tarafından belirtilen özellik için `desc` bağımsız değişkeni. Her geçerli değeri için `desc`, bir eşdeğer joker karakter sınıflandırması yordamı yok.  
@@ -93,7 +96,7 @@ int _iswctype_l(
  Herhangi bir yerel ayara bağımlı test için kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_isctype`ve `iswctype` sıfır olmayan bir değer döndürür `c` tarafından belirtilen özelliği `desc` geçerli yerel ya da mevcut değilse 0. Bu işlevleri sürümlerini `_l` soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_isctype` ve `iswctype` sıfır olmayan bir değer döndürür `c` tarafından belirtilen özelliği `desc` geçerli yerel ya da mevcut değilse 0. Bu işlevleri sürümlerini `_l` soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  Davranışını `_isctype` ve `_isctype_l` tanımsız ise `c` EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve `c` işlevleri olursa bu değerleri onayı ifade değil.  
   
@@ -108,9 +111,9 @@ int _iswctype_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_isctype`|\<CType.h >|  
+|`_isctype`|\<ctype.h>|  
 |`iswctype`|\<CType.h > veya \<wchar.h >|  
-|`_isctype_l`|\<CType.h >|  
+|`_isctype_l`|\<ctype.h>|  
 |`_iswctype_l`|\<CType.h > veya \<wchar.h >|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

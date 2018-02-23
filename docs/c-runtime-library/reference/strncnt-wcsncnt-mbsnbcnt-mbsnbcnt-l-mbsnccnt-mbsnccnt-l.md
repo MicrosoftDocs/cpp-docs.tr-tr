@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsnbcnt_l
 - _mbsnccnt
@@ -40,7 +41,8 @@ f1_keywords:
 - mbsnccnt
 - _strncnt
 - _wcsncnt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _strncnt function
 - _mbsnbcnt function
@@ -57,22 +59,23 @@ helpviewer_keywords:
 - _mbsnccnt function
 - _wcsncnt function
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 27c2d107da6c937705cacac770a50d912cadda84
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bcc69e67058e782bd3ce43b835497dab756347a0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strncnt-wcsncnt-mbsnbcnt-mbsnbcntl-mbsnccnt-mbsnccntl"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 Karakter veya belirtilen sayı bayt sayısını döndürür.  
   
 > [!IMPORTANT]
->  `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, ve `_mbsnccnt_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnbcnt`, `_mbsnbcnt_l`, `_mbsnccnt`, ve `_mbsnccnt_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -117,14 +120,14 @@ size_t _mbsnccnt_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mbsnbcnt`ve `_mbsnbcnt_l` bulunan bayt sayısını döndürmek ilk `count` birden çok baytlı karakter sayısını `str`. `_mbsnccnt`ve `_mbsnccnt_l` bulunan karakter sayısını Döndür ilk `count` bayt sayısı `str`. Bir NULL karakter incelenmesi önce karşılaştı, `str` sahip tamamlandı, bunlar bayt veya önce NULL karakter bulundu karakter sayısını döndürür. Varsa `str` daha az oluşan `count` karakter veya bayt döndürmeleri karakter veya bayt sayısını dizesi içinde. Varsa `count` küçük sıfırdan, bunlar 0 döndürür. Önceki sürümlerde, bu işlevler bir dönüş değeri olan `int` yerine `size_t`.  
+ `_mbsnbcnt` ve `_mbsnbcnt_l` bulunan bayt sayısını döndürmek ilk `count` birden çok baytlı karakter sayısını `str`. `_mbsnccnt` ve `_mbsnccnt_l` bulunan karakter sayısını Döndür ilk `count` bayt sayısı `str`. Bir NULL karakter incelenmesi önce karşılaştı, `str` sahip tamamlandı, bunlar bayt veya önce NULL karakter bulundu karakter sayısını döndürür. Varsa `str` daha az oluşan `count` karakter veya bayt döndürmeleri karakter veya bayt sayısını dizesi içinde. Varsa `count` küçük sıfırdan, bunlar 0 döndürür. Önceki sürümlerde, bu işlevler bir dönüş değeri olan `int` yerine `size_t`.  
   
- `_strncnt`ilk karakter sayısını verir `count` tek baytlı dizesinin bayt `str`. `_wcsncnt`ilk karakter sayısını verir `count` geniş karakter dizesi geniş karakterler `str`.  
+ `_strncnt` ilk karakter sayısını verir `count` tek baytlı dizesinin bayt `str`. `_wcsncnt` ilk karakter sayısını verir `count` geniş karakter dizesi geniş karakterler `str`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_mbsnbcnt`ve `_mbsnbcnt_l` bulunan bayt sayısı ilk `count` birden çok baytlı karakter sayısını `str`. `_mbsnbcnt`ve `_mbsnbcnt_l` Değiştir `mtob` ve yerine kullanılmalıdır `mtob`.  
+ `_mbsnbcnt` ve `_mbsnbcnt_l` bulunan bayt sayısı ilk `count` birden çok baytlı karakter sayısını `str`. `_mbsnbcnt` ve `_mbsnbcnt_l` Değiştir `mtob` ve yerine kullanılmalıdır `mtob`.  
   
- `_mbsnccnt`ve `_mbsnccnt_l` bulunan karakterleri sayma ilk `count` bayt sayısı `str`. Varsa `_mbsnccnt` ve `_mbsnccnt_l` bir boş değer bir çift bayt karakter ikinci baytı karşılaşırsanız, ilk bayta kalan de NULL olarak kabul edilir ve döndürülen sayı değeri dahil edilmez. `_mbsnccnt`ve `_mbsnccnt_l` Değiştir `btom` ve yerine kullanılmalıdır `btom`.  
+ `_mbsnccnt` ve `_mbsnccnt_l` bulunan karakterleri sayma ilk `count` bayt sayısı `str`. Varsa `_mbsnccnt` ve `_mbsnccnt_l` bir boş değer bir çift bayt karakter ikinci baytı karşılaşırsanız, ilk bayta kalan de NULL olarak kabul edilir ve döndürülen sayı değeri dahil edilmez. `_mbsnccnt` ve `_mbsnccnt_l` Değiştir `btom` ve yerine kullanılmalıdır `btom`.  
   
  Varsa `str` null işaretçinin veya `count` 0'dır, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md), `errno` ayarlanır `EINVAL`, ve işlevi 0 değerini döndürür.  
   
@@ -148,8 +151,8 @@ size_t _mbsnccnt_l(
 |`_mbsnbcnt_l`|\<Mbstring.h >|  
 |`_mbsnccnt`|\<Mbstring.h >|  
 |`_mbsnccnt_l`|\<Mbstring.h >|  
-|`_strncnt`|\<Tchar.h >|  
-|`_wcsncnt`|\<Tchar.h >|  
+|`_strncnt`|\<tchar.h>|  
+|`_wcsncnt`|\<tchar.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

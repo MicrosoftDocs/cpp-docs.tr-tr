@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _printf_s_l
 - wprintf_s
@@ -27,7 +28,8 @@ apitype: DLLExport
 f1_keywords:
 - wprintf_s
 - printf_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wprintf_s function
 - tprintf_s function
@@ -43,16 +45,17 @@ helpviewer_keywords:
 - tprintf_s_l function
 - _wprintf_s_l function
 ms.assetid: 044ebb2e-5cc1-445d-bb4c-f084b405615b
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 26db1617206393b8a3756987233d1e38e8ea79c2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2929c79c9ab5cfa5e4455e8a75c76988a1f7cf86
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="printfs-printfsl-wprintfs-wprintfsl"></a>printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 Biçimlendirilmiş çıkışı için standart çıktı akışı yazdırır. Bu sürümleri [printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -100,9 +103,9 @@ int _wprintf_s_l(
   
  Hakkında bilgi için `errno` ve hata kodları bakın [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
- `printf_s`ve `fprintf_s` durumlar dışında aynı şekilde davranır `printf_s` Yazar çıkışı `stdout` yerine bir hedefe türü `FILE`. Daha fazla bilgi için bkz: [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
+ `printf_s` ve `fprintf_s` durumlar dışında aynı şekilde davranır `printf_s` Yazar çıkışı `stdout` yerine bir hedefe türü `FILE`. Daha fazla bilgi için bkz: [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).  
   
- `wprintf_s`bir joker karakter sürümü `printf_s`; `format` bir joker karakter dizesidir. `wprintf_s`ve `printf_s` akış ANSI modunda açılırsa aynı şekilde davranır. `printf_s`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `wprintf_s` bir joker karakter sürümü `printf_s`; `format` bir joker karakter dizesidir. `wprintf_s` ve `printf_s` akış ANSI modunda açılırsa aynı şekilde davranır. `printf_s` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -138,7 +141,7 @@ Line one
 |`printf_s`, `_printf_s_l`|\<stdio.h >|  
 |`wprintf_s`, `_wprintf_s_l`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="example"></a>Örnek  
   

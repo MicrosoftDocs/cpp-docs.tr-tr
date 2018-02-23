@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: wcrtomb
+ms.topic: reference
+apiname:
+- wcrtomb
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,24 +23,27 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: wcrtomb
-dev_langs: C++
+f1_keywords:
+- wcrtomb
+dev_langs:
+- C++
 helpviewer_keywords:
 - wide characters, converting
 - wcrtomb function
 - multibyte characters
 - characters, converting
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7c9dfe3b112754d573226fe992d346d57de56406
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 203b3ec1d72b7691aa8e46d60784100c0bf89a5e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wcrtomb"></a>wcrtomb
 Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md).  
@@ -60,13 +65,13 @@ size_t wcrtomb(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`mbchar`  
+ [out] `mbchar`  
  Sonuçta elde edilen çok baytlı karakter dönüştürülür.  
   
- [in]`wchar`  
+ [in] `wchar`  
  Dönüştürülecek geniş karakter.  
   
- [in]`mbstate`  
+ [in] `mbstate`  
  Bir işaretçi bir `mbstate_t` nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

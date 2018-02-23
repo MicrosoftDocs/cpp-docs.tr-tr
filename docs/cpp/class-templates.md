@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - classes [C++], operating on type
 - class templates
 - templates, class templates
 ms.assetid: 633a53c8-24ee-4c23-8c88-e7c3cb0b7ac3
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a53ed733bc710aa66061c40587e79f41e553b260
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0b14b45752559c80f4aafb60aa4ba23cb0d51b91
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="class-templates"></a>Sınıf Şablonları
 Bu konuda C++ sınıf şablonları için özel kurallar açıklanmaktadır.  
@@ -203,7 +206,7 @@ X<T>::Y<U>::~Y()
  Yerel sınıfların üye şablonlarına sahip olmasına izin verilmez.  
   
 ## <a name="template-friends"></a>Şablon arkadaşları  
- Sınıf şablonları olabilir [arkadaş](http://msdn.microsoft.com/en-us/bf412640-d857-4acb-b2b5-513131cb9681). Bir sınıf veya sınıf şablonu, işlev ya da işlev şablonu şablon sınıfının arkadaşı olabilir. Arkadaşlar, sınıf şablonunun veya işlev şablonunun da uzmanlıkları olabilir, ancak kısmi uzmanlıklar olamaz.  
+ Sınıf şablonları olabilir [arkadaş](friend-cpp.md). Bir sınıf veya sınıf şablonu, işlev ya da işlev şablonu şablon sınıfının arkadaşı olabilir. Arkadaşlar, sınıf şablonunun veya işlev şablonunun da uzmanlıkları olabilir, ancak kısmi uzmanlıklar olamaz.  
   
  Aşağıdaki örnekte, bir arkadaş işlevi sınıf şablonu içinde işlev şablonu olarak tanımlanır. Bu kod, şablonun her örneği için arkadaş işlevinin sürümünü oluşturur. Bu yapı, arkadaş işleviniz sınıfla aynı şablon parametrelerine bağlıysa yararlı olur.  
   

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: localeconv
+ms.topic: reference
+apiname:
+- localeconv
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -20,23 +22,26 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 apitype: DLLExport
-f1_keywords: localeconv
-dev_langs: C++
+f1_keywords:
+- localeconv
+dev_langs:
+- C++
 helpviewer_keywords:
 - lconv type
 - localeconv function
 - locales, getting information on
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2cbd897b353f8a915fb4a29d61d0954b9b5a7f53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9e93e21505a661deb470e4b31c8807ef5133a774
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="localeconv"></a>localeconv
 Yerel ayarlar hakkında ayrıntılı bilgi alır.  
@@ -48,7 +53,7 @@ struct lconv *localeconv( void );
 ```  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `localeconv`doldurulmuş türünde bir nesne için bir işaretçi döndüren [yapısı lconv](../../c-runtime-library/standard-types.md). Nesnesinde yer alan değerleri iş parçacığı yerel depolama alanında yerel ayarları kopyalanır ve sonraki çağrılar tarafından üzerine yazılabilir `localeconv`. Bu nesnenin değerleri yapılan değişiklikleri yerel ayarları değiştirmeyin. Çağrılar [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) ile `category` değerlerini `LC_ALL`, `LC_MONETARY`, veya `LC_NUMERIC` yapısı içeriğinin üzerine.  
+ `localeconv` doldurulmuş türünde bir nesne için bir işaretçi döndüren [yapısı lconv](../../c-runtime-library/standard-types.md). Nesnesinde yer alan değerleri iş parçacığı yerel depolama alanında yerel ayarları kopyalanır ve sonraki çağrılar tarafından üzerine yazılabilir `localeconv`. Bu nesnenin değerleri yapılan değişiklikleri yerel ayarları değiştirmeyin. Çağrılar [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) ile `category` değerlerini `LC_ALL`, `LC_MONETARY`, veya `LC_NUMERIC` yapısı içeriğinin üzerine.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `localeconv` İşlevi geçerli yerel sayısal biçimlendirme hakkında ayrıntılı bilgi alır. Bu bilgi türü yapısında depolanmış `lconv`. `lconv` Yapısı, yerel tanımlanmış. H, aşağıdaki üyeleri içerir:  
@@ -113,11 +118,11 @@ Belirtilen, üye olarak dışında `lconv` sahip yapısı `char *` ve `wchar_t *
   
 Değerlerini `grouping` ve `mon_grouping` aşağıdaki kurallara göre yorumlanır:  
   
-- `CHAR_MAX`-Tüm daha fazla gruplandırma gerçekleştirme.  
+- `CHAR_MAX` -Tüm daha fazla gruplandırma gerçekleştirme.  
   
 - 0 - her kalan basamak önceki öğesi kullanın.  
   
-- *n*-Geçerli grubu oluşturan basamak sayısı. Bir sonraki öğe basamak geçerli Grup önce sonraki grubunun boyutunu belirlemek için incelenir.  
+- *n* -Geçerli grubu oluşturan basamak sayısı. Bir sonraki öğe basamak geçerli Grup önce sonraki grubunun boyutunu belirlemek için incelenir.  
   
 Değerleri `int_curr_symbol` aşağıdaki kurallara göre yorumlanır:  
   

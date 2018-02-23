@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: wcsrtombs
+ms.topic: reference
+apiname:
+- wcsrtombs
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,23 +23,26 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: wcsrtombs
-dev_langs: C++
+f1_keywords:
+- wcsrtombs
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcsrtombs function
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7fb18e5f66f431afb86e86815f50217782902b8d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 45dd47ed3c6136c4aff860efd51de18e120803ec
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 Geniş karakter dizesi, birden çok baytlı karakter dizesi gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcsrtombs_s](../../c-runtime-library/reference/wcsrtombs-s.md).  
@@ -61,16 +66,16 @@ size_t wcsrtombs(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`mbstr`  
+ [out] `mbstr`  
  Elde edilen birden çok baytlı karakter dizesi'nın adres konumunu dönüştürülür.  
   
- [in]`wcstr`  
+ [in] `wcstr`  
  Dolaylı olarak noktalarına dönüştürülecek geniş karakter dizesi konumu.  
   
- [in]`count`  
+ [in] `count`  
  Dönüştürülecek karakter sayısı.  
   
- [in]`mbstate`  
+ [in] `mbstate`  
  Bir işaretçi bir `mbstate_t` dönüştürme durum nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -79,7 +84,7 @@ size_t wcsrtombs(
 ## <a name="remarks"></a>Açıklamalar  
  `wcsrtombs` İşlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak, geniş karakter dizesi `mbstate`, içinde işaret değerlerden dolaylı `wcstr`, adresini içine `mbstr`. Dönüştürme için her bir karakteri kadar devam eder: olmayan karşılık gelen bir karakter karşılaşıldığında geniş karakter sonlandırma null karşılaştı sonra veya bir sonraki karakteri yer alan sınırı aşabilir `count`. Varsa `wcsrtombs` joker karakter null karakteri (M '\0') önce veya ne zaman karşılaşırsa `count` oluşur, dönüştürür, 8 bit 0 ve durdurur.  
   
- Bu nedenle, birden çok baytlı karakter dizesi adresindeki `mbstr` null-yalnızca sonlandırılır `wcsrtombs` geniş karakter null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa `wcstr` ve `mbstr` üst üste, davranışını `wcsrtombs` tanımlanmadı. `wcsrtombs`Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
+ Bu nedenle, birden çok baytlı karakter dizesi adresindeki `mbstr` null-yalnızca sonlandırılır `wcsrtombs` geniş karakter null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa `wcstr` ve `mbstr` üst üste, davranışını `wcsrtombs` tanımlanmadı. `wcsrtombs` Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
   
  `wcsrtombs` İşlevi farklı olarak [wcstombs, _wcstombs_l](../../c-runtime-library/reference/wcstombs-wcstombs-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanırsınız `wcsrlen` yerine `wcsnlen`, bir sonraki çağrı, `wcsrtombs` yerine kullanılan `wcstombs`.  
   

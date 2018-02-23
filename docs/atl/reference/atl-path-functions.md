@@ -6,8 +6,8 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: reference
-keywords:
-- ATL, yol
+helpviewer_keywords:
+- ATL, path
 f1_keywords:
 - ATLPATH/ATL::ATLPath::AddBackslash
 - ATLPATH/ATL::ATLPath::AddExtension
@@ -51,11 +51,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0540fe70464e8c7997275d99d8242e62625bdec
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9fa9795af90e28b2c021b179876a9f69609c7884
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="atl-path-functions"></a>ATL yolu işlevleri
 

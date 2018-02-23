@@ -15,24 +15,29 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 030b1da3688e2c0524256f5128d5bb15f69b5070
-ms.sourcegitcommit: ecf0177ae9d36b1f63c9673a9583e0359107a5cb
-ms.translationtype: MT
+ms.openlocfilehash: ca1fdff6f5be88d7562f1735ea31323ca5a70360
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/21/2018
 ---
-# <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan Olarak Kapalı Olan Derleyici Uyarıları
+# <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
-Derleyici Çoğu geliştirici görmesini istemiyorsanız, varsayılan olarak kapalı uyarıları içerir. Ancak, aşağıdaki seçeneklerden birini kullanarak bu uyarıları etkinleştirebilirsiniz.
+Çoğu geliştirici bunları görmek istemediğiniz çünkü derleyici varsayılan olarak kapalı uyarıları içerir. Bazı durumlarda, bunlar bir stil seçim temsil eden ortak deyimleri eski koduna sahip olan veya dil için bir Microsoft uzantısı yararlanmak. Diğer durumlarda, bunlar burada programcıları beklenmeyen veya tanımsız davranışa neden olabilir yanlış varsayımlar genellikle olun bir alanı gösterir. Bu uyarıların bir kısmı, kitaplık üstbilgileri çok gürültülü olabilir.
 
-**#pragma Uyarısı (varsayılan:** *warning_number* **)**  
-Belirtilen uyarı (*warning_number*), varsayılan düzeyinde etkinleştirilir. Uyarılara yönelik belgeler varsayılan uyarı düzeyini içerir.
+Aşağıdaki seçeneklerden birini kullanarak bu uyarılar etkinleştirebilirsiniz:
 
-**#pragma Uyarısı (** *warning_level* **:** *warning_number* **)**  
-Belirtilen uyarı (*warning_number*) belirtilen düzeyinde etkinleştirilir (*warning_level*).
+- **#pragma Uyarısı (varsayılan:** *warning_number* **)**  
+   Belirtilen uyarı (*warning_number*), varsayılan düzeyinde etkinleştirilir. Uyarılara yönelik belgeler varsayılan uyarı düzeyini içerir.
 
-[/ Wall](../build/reference/compiler-option-warning-level.md)  
-**/ Duvar** varsayılan olarak kapalı olan tüm uyarıları sağlar.
+- **#pragma Uyarısı (** *warning_level* **:** *warning_number* **)**  
+   Belirtilen uyarı (*warning_number*) belirtilen düzeyinde etkinleştirilir (*warning_level*).
+
+- [/ Wall](../build/reference/compiler-option-warning-level.md)  
+   **/ Duvar** varsayılan olarak kapalı olan tüm uyarıları sağlar. Bu seçeneği kullanırsanız, kullanarak tek tek ayarları kapatabilirsiniz [/wd](../build/reference/compiler-option-warning-level.md) seçeneği.
+
+- [/w*lnnnn*](../build/reference/compiler-option-warning-level.md)  
+   Bu uyarı sağlar  *nnnn*  düzeyinde *l*.
 
 Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 
@@ -131,6 +136,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |C5032 (level 4)|#pragma warning(push) karşılık gelen hiçbir #pragma warning(pop) ile algılandı|
 |C5035|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek|
 |C5036 (level 1)|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*'|
+|[C5038](../error-messages/compiler-warnings/c5038.md)|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'|
 
 Bu uyarılar sürece kapalıdır [/ izin veren-](../build/reference/permissive-standards-conformance.md) derleyici seçeneği ayarlanır:
 

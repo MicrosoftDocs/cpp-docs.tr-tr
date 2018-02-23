@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - mbrtoc16
 - mbrtoc32
@@ -30,21 +30,23 @@ f1_keywords:
 - mbrtoc32
 - uchar/mbrtoc16
 - uchar/mbrtoc32
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - mbrtoc16 function
 - mbrtoc32 function
 ms.assetid: 099ade4d-56f7-4e61-8b45-493f1d7a64bd
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c24a7426c788ac7ecfc98f3e649397912960505a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7e686a39266587fdc214ddbb0757672a57b94314
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbrtoc16-mbrtoc32"></a>mbrtoc16, mbrtoc32
 İlk birden çok baytlı karakter dar bir dize, eşdeğer UTF-16 veya UTF-32 karakter çevirir.  
@@ -86,11 +88,11 @@ size_t mbrtoc32(
   
 |Değer|Koşul|  
 |-----------|---------------|  
-|0|Sonraki `max_bytes` veya daha az karakter gelen dönüştürülen `source` durumunda depolanan değeri olan null geniş karakter için karşılık gelen `destination` null değil.<br /><br /> `state`ilk kaydırma durumunu içerir.|  
+|0|Sonraki `max_bytes` veya daha az karakter gelen dönüştürülen `source` durumunda depolanan değeri olan null geniş karakter için karşılık gelen `destination` null değil.<br /><br /> `state` ilk kaydırma durumunu içerir.|  
 |1 arasında ve `max_bytes`(dahil)|Döndürülen değer bayt sayısıdır. `source` geçerli bir birden çok baytlı karakter tamamlayın. Dönüştürülen geniş karakter durumunda depolanan `destination` null değil.|  
 |-3|Bir önceki işlevi çağrısı kaynaklanan sonraki geniş karakter içinde depolanan `destination` varsa `destination` null değil. Hiçbir baytlar `source` işlev çağrısı tarafından kullanılır.<br /><br /> Zaman `source` işaret (örneğin, bir yedek çifti) göstermek için birden fazla geniş karakter gerektiriyorsa bir birden çok baytlı karakter sonra `state` değeri, böylece sonraki işlev çağrısı ek karakter Yazar güncelleştirilir.|  
 |-2|Sonraki `max_bytes` bayt temsil eden bir, ancak tamamlanmamış büyük olasılıkla geçerli, birden çok baytlı karakter. Hiçbir değer depolanan `destination`. Bu sonuç ortaya çıkabilir `max_bytes` sıfırdır.|  
-|-1|Bir kodlama hatası oluştu. Sonraki `max_bytes` veya daha az sayıda bayt tam ve geçerli birden çok baytlı karakter katkıda bulunmamaktadır. Hiçbir değer depolanan `destination`.<br /><br /> `EILSEQ`depolanan `errno` ve dönüştürme durumu `state` belirtilmedi.|  
+|-1|Bir kodlama hatası oluştu. Sonraki `max_bytes` veya daha az sayıda bayt tam ve geçerli birden çok baytlı karakter katkıda bulunmamaktadır. Hiçbir değer depolanan `destination`.<br /><br /> `EILSEQ` depolanan `errno` ve dönüştürme durumu `state` belirtilmedi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `mbrtoc16` İşlevi okur kadar `max_bytes` baytlar `source` ilk tam, geçerli birden çok baytlı karakter ve ardından depoları eşdeğer UTF-16 karakter bulmak için `destination`. Kaynak bayt geçerli iş parçacığı birden çok baytlı yerel ayar göre değerlendirilir. Birden çok baytlı karakter yedek çifti gibi birden fazla UTF-16 çıkış karakter gerektiriyorsa sonra `state` değeri sonraki UTF-16 karakteri depolamak için ayarlanır `destination` sonraki çağrıda `mbrtoc16`. `mbrtoc32` İşlevi ile aynıdır, ancak çıktı UTF-32 karakter olarak depolanır.  
@@ -103,7 +105,7 @@ size_t mbrtoc32(
   
 |İşlev|C üstbilgisi|C++ üstbilgi|  
 |--------------|--------------|------------------|  
-|`mbrtoc16`,                `mbrtoc32`|\<UCHAR.h >|\<cuchar >|  
+|`mbrtoc16`,                `mbrtoc32`|\<uchar.h>|\<cuchar >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

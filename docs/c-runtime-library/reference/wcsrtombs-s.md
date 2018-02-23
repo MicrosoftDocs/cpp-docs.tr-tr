@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: wcsrtombs_s
+ms.topic: reference
+apiname:
+- wcsrtombs_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,23 +23,26 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: wcsrtombs_s
-dev_langs: C++
+f1_keywords:
+- wcsrtombs_s
+dev_langs:
+- C++
 helpviewer_keywords:
 - string conversion, wide characters
 - wcsrtombs_s function
 - wide characters, strings
 ms.assetid: 9dccb766-113c-44bb-9b04-07a634dddec8
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 025acdf18d0e5322ef43de800e3577233a93cb86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0bb43cf628abfabe7b5900579ec6995c95c980b2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wcsrtombss"></a>wcsrtombs_s
 Geniş karakter dizesi, birden çok baytlı karakter dizesi gösterimine dönüştürür. Bir sürümünü [wcsrtombs](../../c-runtime-library/reference/wcsrtombs.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -64,31 +69,31 @@ errno_t wcsrtombs_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pReturnValue`  
+ [out] `pReturnValue`  
  Dönüştürülen karakter sayısı.  
   
- [out]`mbstr`  
+ [out] `mbstr`  
  Ortaya çıkan dönüştürülmüş birden çok baytlı karakter dizesi için bir arabellek adresi.  
   
- [out]`sizeInBytes`  
+ [out] `sizeInBytes`  
  Bayt cinsinden boyutu `mbstr` arabellek.  
   
- [in]`wcstr`  
+ [in] `wcstr`  
  Dönüştürülecek geniş karakter dizesi noktalarına.  
   
- [in]`count`  
+ [in] `count`  
  Depolanmasına bayt sayısını `mbstr` arabellek veya [_TRUNCATE](../../c-runtime-library/truncate.md).  
   
- [in]`mbstate`  
+ [in] `mbstate`  
  Bir işaretçi bir `mbstate_t` dönüştürme durum nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Sıfır başarılı olursa, hatasında bir hata kodu.  
   
-|Hata durumu|Dönüş değeri ve`errno`|  
+|Hata durumu|Dönüş değeri ve `errno`|  
 |---------------------|------------------------------|  
-|`mbstr`olan `NULL` ve `sizeInBytes` > 0|`EINVAL`|  
-|`wcstr`değil`NULL`|`EINVAL`|  
+|`mbstr` olan `NULL` ve `sizeInBytes` > 0|`EINVAL`|  
+|`wcstr` değil `NULL`|`EINVAL`|  
 |Hedef arabellek dönüştürülmüş dizeyi içeren için çok küçük. (sürece `count` olan `_TRUNCATE`; açıklamalar aşağıya bakın)|`ERANGE`|  
   
  Bu koşulların herhangi biri meydana gelirse, geçersiz bir parametre özel durum açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu işlevi döndürür ve ayarlar `errno` tabloda belirtildiği şekilde.  
@@ -110,12 +115,12 @@ errno_t wcsrtombs_s(
   
  Varsa `wcsrtombs_s` birden çok baytlı karakter dönüştüremiyor geniş karakter karşılaştığında -1 koyar `*pReturnValue`, hedef arabelleği boş bir dize olarak ayarlar, ayarlar `errno` için `EILSEQ`ve döndürür `EILSEQ`.  
   
- Dizileri gösterdiği varsa `wcstr` ve `mbstr` üst üste, davranışını `wcsrtombs_s` tanımlanmadı. `wcsrtombs_s`Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
+ Dizileri gösterdiği varsa `wcstr` ve `mbstr` üst üste, davranışını `wcsrtombs_s` tanımlanmadı. `wcsrtombs_s` Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
   
 > [!IMPORTANT]
 >  Emin `wcstr` ve `mbstr` çakışmaması ve `count` doğru şekilde dönüştürmek için geniş karakter sayısını yansıtır.  
   
- `wcsrtombs_s` İşlevi farklı olarak [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız `wcsrlen` yerine `wcslen`, bir sonraki çağrı, `wcsrtombs_s` yerine kullanıldı`wcstombs_s.`  
+ `wcsrtombs_s` İşlevi farklı olarak [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız `wcsrlen` yerine `wcslen`, bir sonraki çağrı, `wcsrtombs_s` yerine kullanıldı `wcstombs_s.`  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

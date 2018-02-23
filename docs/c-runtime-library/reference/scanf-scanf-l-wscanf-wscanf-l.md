@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wscanf_l
 - scanf
@@ -31,7 +32,8 @@ f1_keywords:
 - _wscanf_l
 - scanf
 - _tscanf_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tscanf_l function
 - _tscanf_l function
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - wscanf_l function
 - _wscanf_l function
 ms.assetid: 73eac607-117f-4be4-9ff0-4afd9cf3c848
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 36b82950361a236d8c2a5dc9db955aa108cf78b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 56b4c46c5b13ed5e1ca20c604fbc95168af1dfe5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="scanf-scanfl-wscanf-wscanfl"></a>scanf, _scanf_l, wscanf, _wscanf_l
 Standart giriş akışı verileri okuma biçimlendirilmiş. Bu işlev daha güvenli sürümlerinde kullanılabilir; bkz: [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md).  
@@ -107,7 +110,7 @@ int _wscanf_l(
 > [!IMPORTANT]
 >  Bir dizeyle'ne zaman okuma `scanf`, her zaman için bir genişliği belirtmeniz `%s` biçimi (örneğin, `"%32s"` yerine `"%s"`); Aksi halde, düzgün biçimlendirilmemiş giriş kolayca arabellek taşmasına neden. Alternatif olarak, kullanmayı [scanf_s, _scanf_s_l, wscanf_s, _wscanf_s_l](../../c-runtime-library/reference/scanf-s-scanf-s-l-wscanf-s-wscanf-s-l.md) veya [fgets](../../c-runtime-library/reference/fgets-fgetws.md).  
   
- `wscanf`bir joker karakter sürümü `scanf`; `format` bağımsız değişkeni `wscanf` bir joker karakter dizesidir. `wscanf`ve `scanf` akış ANSI modunda açılırsa aynı şekilde davranır. `scanf`UNICODE akışı girişten şu anda desteklemiyor.  
+ `wscanf` bir joker karakter sürümü `scanf`; `format` bağımsız değişkeni `wscanf` bir joker karakter dizesidir. `wscanf` ve `scanf` akış ANSI modunda açılırsa aynı şekilde davranır. `scanf` UNICODE akışı girişten şu anda desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -127,7 +130,7 @@ int _wscanf_l(
 |`scanf`, `_scanf_l`|\<stdio.h >|  
 |`wscanf`, `_wscanf_l`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="example"></a>Örnek  
   

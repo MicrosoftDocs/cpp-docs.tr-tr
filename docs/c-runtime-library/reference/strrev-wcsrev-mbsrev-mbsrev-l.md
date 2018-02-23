@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wcsrev
 - _mbsrev
@@ -34,7 +35,8 @@ f1_keywords:
 - mbsrev_l
 - _wcsrev_fstrrev
 - _mbsrev
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _mbsrev_l function
 - characters [C++], switching
@@ -53,22 +55,23 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b40acaa02a4907f0bcc49741312b55ea41224601
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1a0c70634dc0942004eb1045a72e0354e59526ab
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strrev-wcsrev-mbsrev-mbsrevl"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
 Bir dizenin karakter tersine çevirir.  
   
 > [!IMPORTANT]
->  `_mbsrev`ve `_mbsrev_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsrev` ve `_mbsrev_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -99,9 +102,9 @@ unsigned char *_mbsrev_l(
  Bir işaretçi değiştirilmiş dizesi olarak döndürür. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_strrev` İşlevi karakter sırasını tersine çevirir `string`. Sondaki boş karakter yerinde kalır. `_wcsrev`ve `_mbsrev` joker karakter ve çok baytlı karakter sürümleri `_strrev`. Bağımsız değişkenleri ve dönüş değerini `_wcsrev` joker karakter olan dizeleri; bu `_mbsrev` çok baytlı karakter dizeleri belirtilmiştir. İçin `_mbsrev`, her birden çok baytlı karakter bayt sırasını `string` değiştirilmez. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_strrev` İşlevi karakter sırasını tersine çevirir `string`. Sondaki boş karakter yerinde kalır. `_wcsrev` ve `_mbsrev` joker karakter ve çok baytlı karakter sürümleri `_strrev`. Bağımsız değişkenleri ve dönüş değerini `_wcsrev` joker karakter olan dizeleri; bu `_mbsrev` çok baytlı karakter dizeleri belirtilmiştir. İçin `_mbsrev`, her birden çok baytlı karakter bayt sırasını `string` değiştirilmez. Bu üç işlevler aynı şekilde aksi davranır.  
   
- `_mbsrev`parametreleri doğrular. Her iki `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsrev` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `_strrev`ve `_wcsrev` parametrelerini doğrulamaz.  
+ `_mbsrev` parametreleri doğrular. Her iki `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsrev` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `_strrev` ve `_wcsrev` parametrelerini doğrulamaz.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Dosyalardan yok dışında bu işlevler sürümleri özdeş sahip `_l` sonekini kullan geçerli yerel ayar ve sahip olanları `_l` soneki yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   

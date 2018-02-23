@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: mbsrtowcs
+ms.topic: reference
+apiname:
+- mbsrtowcs
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,20 +23,24 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: mbsrtowcs
-dev_langs: C++
-helpviewer_keywords: mbsrtowcs function
+f1_keywords:
+- mbsrtowcs
+dev_langs:
+- C++
+helpviewer_keywords:
+- mbsrtowcs function
 ms.assetid: f3a29de8-e36e-425b-a7fa-a258e6d7909d
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6b51f8ccbac43e30202598499613d3b1c7c6e0a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ff120fea2ec3f1ea659233ccee3f66514d0fd76b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbsrtowcs"></a>mbsrtowcs
 Çok baytlı karakter dizesi geçerli yerel birden çok baytlı karakter ortasında yeniden özelliği ile ilgili geniş karakter dizeye dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [mbsrtowcs_s](../../c-runtime-library/reference/mbsrtowcs-s.md).  
@@ -58,16 +64,16 @@ size_t mbsrtowcs(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`wcstr`  
+ [out] `wcstr`  
  Ortaya çıkan dönüştürülmüş geniş karakter dizesi depolamak için adres.  
   
- [içinde out]`mbstr`  
+ [içinde out] `mbstr`  
  Dönüştürme için birden çok baytlı karakter dizesi konuma dolaylı işaretçi.  
   
- [in]`count`  
+ [in] `count`  
  En fazla dönüştürmek ve depolamak için (bayt değil) karakter sayısını `wcstr`.  
   
- [içinde out]`mbstate`  
+ [içinde out] `mbstate`  
  Bir işaretçi bir `mbstate_t` dönüştürme durum nesnesi. Bu değer null işaretçi ise, bir statik iç dönüştürme durumu nesnesi kullanılır. Çünkü iç `mbstate_t` nesnesi iş parçacığı açısından güvenli değil, her zaman kendi geçirdiğiniz olmasını öneririz `mbstate` parametresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -76,9 +82,9 @@ size_t mbsrtowcs(
 ## <a name="remarks"></a>Açıklamalar  
  `mbsrtowcs` İşlevi dönüştürür dolaylı olarak gösterdiği birden çok baytlı karakter dizesi `mbstr`, geniş karakterler gösterdiği arabellek depolanan içine `wcstr`, bulunan dönüştürme durumunu kullanarak `mbstate`. Ya da bir sonlandırma null birden çok baytlı karakter karşılaşılana kadar dönüştürme her bir karakter için geçerli bir karakter geçerli yerel karşılık gelmiyor birden çok baytlı bir dizisi hatayla karşılaşıldı, devam veya kadar `count` karakter edilmiştir dönüştürülür. Varsa `mbsrtowcs` birden çok baytlı null karakteri ('\0') önce veya ne zaman karşılaşırsa `count` oluşur, dönüştürür, 16 bit sonlandırma null karakter ve durdurur.  
   
- Bu nedenle, geniş karakter dizesini `wcstr` null-yalnızca sonlandırılır `mbsrtowcs` birden çok baytlı bir null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa `mbstr` ve `wcstr` üst üste, davranışını `mbsrtowcs` tanımlanmadı. `mbsrtowcs`Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
+ Bu nedenle, geniş karakter dizesini `wcstr` null-yalnızca sonlandırılır `mbsrtowcs` birden çok baytlı bir null karakter dönüştürme sırasında karşılaşır. Dizileri gösterdiği varsa `mbstr` ve `wcstr` üst üste, davranışını `mbsrtowcs` tanımlanmadı. `mbsrtowcs` Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
   
- `mbsrtowcs` İşlevi farklı olarak [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanması gereken `mbsrlen` yerine `mbslen`, bir sonraki çağrı, `mbsrtowcs` yerine kullanılır`mbstowcs.`  
+ `mbsrtowcs` İşlevi farklı olarak [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış.  Örneğin, bir uygulama kullanması gereken `mbsrlen` yerine `mbslen`, bir sonraki çağrı, `mbsrtowcs` yerine kullanılır `mbstowcs.`  
   
  Varsa `wcstr` null işaretçinin değil tarafından işaretçi nesne işaret için `mbstr` sonlandırma bir null karakter ulaştığından dönüştürme durdurduysanız null işaretçi atanır. Aksi takdirde, varsa, son birden çok baytlı karakter dönüştürülür, adresi yalnızca geçmiş atanır. Bu, bir sonraki işlev çağrısı dönüştürme yeniden başlatmak bu çağrıyı durduğu sağlar.  
   

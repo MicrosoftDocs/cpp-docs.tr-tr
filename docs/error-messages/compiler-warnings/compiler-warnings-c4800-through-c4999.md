@@ -94,7 +94,6 @@ f1_keywords:
 - C5035
 - C5036
 - C5037
-- C5038
 - C5039
 - C5040
 - C5041
@@ -103,17 +102,16 @@ f1_keywords:
 - C5044
 dev_langs:
 - C++
-ms.assetid: c3182430-8b3b-4ab2-a532-5cd436707dc8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f31846158e8e1899c600ae7bf765d6594a8abca
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4ff52a747d15a3c223ef0510c9195b80c9f21647
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="compiler-warnings-c4800-through-c5999"></a>Derleyici uyarıları C4800 C5999 aracılığıyla
 
@@ -245,6 +243,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |C5035 uyarı derleyici|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek|
 |Derleyici Uyarısı (düzey 1) C5036|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*'|
 |Derleyici Uyarısı (hata) C5037|'*üye işlevi*': sınıf şablonu üyesi satır dışı tanımını varsayılan bağımsız değişkenler sahip olamaz|
+|[C5038 uyarı derleyici](c5038.md)|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'|
 |C5039 uyarı derleyici|'*işlevi*': - EHc altında extern C işlev işaretçisi veya potansiyel olarak işlevi atma başvuru geçirilen. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir.|
 |C5040 uyarı derleyici|dinamik özel durum belirtimleri yalnızca C ++ 14 ve daha önceki sürümlerde geçerli; noexcept(FALSE) değerlendirme|
 |C5041 uyarı derleyici|'*tanımı*': satır dışı tanım constexpr statik veri üyesi için gerekli değildir ve C ++ 17'de kullanım dışıdır|

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _printf_l
 - wprintf
@@ -28,7 +29,8 @@ f1_keywords:
 - printf
 - _tprintf
 - wprintf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - printf function
 - printf_l function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - printf function, using
 - formatted text [C++]
 ms.assetid: 77a854ae-5b48-4865-89f4-f2dc5cf80f52
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 60ac5a99e307e73569fe165d675e90c5da2af3a0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f2ebdd4061b50646f9450bfdfaf2ea4db90b5774
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="printf-printfl-wprintf-wprintfl"></a>printf, _printf_l, wprintf, _wprintf_l
 Biçimlendirilmiş çıkışı için standart çıktı akışı yazdırır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md).  
@@ -98,9 +101,9 @@ int _wprintf_l(
  Hakkında bilgi için `errno` ve hata kodları bakın [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `printf` İşlevi biçimlendirir ve bir dizi karakter ve standart çıktı akışı değerlere yazdırır `stdout`. Bağımsız değişkenler izlerseniz `format` dize `format` dize bağımsız değişkenleri için çıktı biçimi belirlemek belirtimleri içermesi gerekir. `printf`ve [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) durumlar dışında aynı şekilde davranır `printf` Yazar çıkışı `stdout` yerine bir hedefe türü `FILE`.  
+ `printf` İşlevi biçimlendirir ve bir dizi karakter ve standart çıktı akışı değerlere yazdırır `stdout`. Bağımsız değişkenler izlerseniz `format` dize `format` dize bağımsız değişkenleri için çıktı biçimi belirlemek belirtimleri içermesi gerekir. `printf` ve [fprintf](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md) durumlar dışında aynı şekilde davranır `printf` Yazar çıkışı `stdout` yerine bir hedefe türü `FILE`.  
   
- `wprintf`bir joker karakter sürümü `printf`; `format` bir joker karakter dizesidir. `wprintf`ve `printf` akış ANSI modunda açılırsa aynı şekilde davranır. `printf`şu anda çıktı bir UNICODE akışa desteklemiyor.  
+ `wprintf` bir joker karakter sürümü `printf`; `format` bir joker karakter dizesidir. `wprintf` ve `printf` akış ANSI modunda açılırsa aynı şekilde davranır. `printf` şu anda çıktı bir UNICODE akışa desteklemiyor.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
   
@@ -142,7 +145,7 @@ Line one
 |`printf`, `_printf_l`|\<stdio.h >|  
 |`wprintf`, `_wprintf_l`|\<stdio.h > veya \<wchar.h >|  
   
- Konsol desteklenmeyen [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   
 ## <a name="example"></a>Örnek  
   

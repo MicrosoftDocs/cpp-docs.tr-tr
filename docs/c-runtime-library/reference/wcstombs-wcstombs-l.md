@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wcstombs
 - _wcstombs_l
@@ -26,7 +27,8 @@ apitype: DLLExport
 f1_keywords:
 - wcstombs
 - _wcstombs_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wcstombs_l function
 - wcstombs function
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 91234252-9ea1-423a-af99-e9d0ce4a40e3
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4ee05d4e8c8b36d92794293679992cb2c5ad5c36
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a7d0a5fa1fd7eb869602d8428a7cc087174739a1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wcstombs-wcstombsl"></a>wcstombs, _wcstombs_l
 Geniş bir karakter dizisi birden çok baytlı karakterler karşılık gelen bir dizi dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [wcstombs_s, _wcstombs_s_l](../../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md).  
@@ -102,9 +105,9 @@ size_t _wcstombs_l(
   
  Varsa `mbstr` bağımsız değişkeni `NULL`, `wcstombs` gereken boyut hedef dizesi bayt cinsinden döndürür.  
   
- `wcstombs`parametreleri doğrular. Varsa `wcstr` olan `NULL`, veya `count` değerinden daha büyük `INT_MAX`, bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar `errno` için `EINVAL` ve -1 döndürür.  
+ `wcstombs` parametreleri doğrular. Varsa `wcstr` olan `NULL`, veya `count` değerinden daha büyük `INT_MAX`, bu işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar `errno` için `EINVAL` ve -1 döndürür.  
   
- `wcstombs`Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_wcstombs_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `wcstombs` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_wcstombs_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -112,8 +115,8 @@ size_t _wcstombs_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`wcstombs`|\<stdlib.h >|  
-|`_wcstombs_l`|\<stdlib.h >|  
+|`wcstombs`|\<stdlib.h>|  
+|`_wcstombs_l`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

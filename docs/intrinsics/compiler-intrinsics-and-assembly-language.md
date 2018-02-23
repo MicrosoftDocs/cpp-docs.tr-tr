@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: ddd51620-d01b-44cf-853b-e11420d13137
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e9f8c6db8b5359748f350d3c9da73fd0e527bf50
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
-ms.translationtype: MT
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d6a10201edd55c378d1df3a244b0732d64ecd08f
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="compiler-intrinsics-and-assembly-language"></a>Derleyici İç Bilgileri ve Derleme Dili
 Belgenin bu bölümünde, derleyici iç bilgilerine ve derleme diline yer verilmiştir.  
@@ -31,4 +34,4 @@ Belgenin bu bölümünde, derleyici iç bilgilerine ve derleme diline yer verilm
 |[Satır İçi Assembler](../assembler/inline/inline-assembler.md)|Visual C/C++ satır içi derleyici ile x86 işlemcilerin nasıl kullanıldığı açıklanmaktadır.|  
 |[ARM Assembler Başvurusu](../assembler/arm/arm-assembler-reference.md)|Microsoft ARM derleyicisi (armasm) ve ilgili araçlara yönelik başvuru materyali sağlamaktadır.|  
 |[Microsoft Macro Assembler Başvurusu](../assembler/masm/microsoft-macro-assembler-reference.md)|Microsoft Macro derleyicisi (masm) ve ilgili araçlara yönelik başvuru materyali sağlamaktadır.|  
-|[Visual C++](../top/visual-cpp-in-visual-studio.md)|Visual C++ belgeleri için üst düzey makale.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|Visual C++ belgeleri için üst düzey makale.|

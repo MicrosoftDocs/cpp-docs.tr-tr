@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbccpy
 - _mbccpy_l
@@ -30,7 +31,8 @@ f1_keywords:
 - mbccpy
 - _tccpy
 - _ftccpy
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tccpy function
 - _tccpy_l function
@@ -41,22 +43,23 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 96273d317409f8c79740b1c7200af1533467d9f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9ad2ff9b8d9b1369b009898ae9b78c34c3643f85
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
 Birden çok baytlı karakter başka bir dizeye bir dizeden kopyalar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_mbccpy_s, _mbccpy_s_l](../../c-runtime-library/reference/mbccpy-s-mbccpy-s-l.md).  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -87,7 +90,7 @@ void _mbccpy_l(
   
  Bu işlev parametrelerini doğrular. Varsa `_mbccpy` null işaretçi geçirilen `dest` veya `src`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL`.  
   
- `_mbccpy`Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır. `_mbccpy_l`aynıdır `_mbccpy` dışında `_mbccpy_l` geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_mbccpy` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır. `_mbccpy_l` aynıdır `_mbccpy` dışında `_mbccpy_l` geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  **Güvenlik Notu** null sonlandırılmış bir dize kullanın. Sonlandırılmış dize hedef arabellek boyutunu aşmamalıdır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795). Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır.  
   

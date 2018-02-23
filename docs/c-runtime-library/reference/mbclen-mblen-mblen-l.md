@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbclen
 - mblen
@@ -33,7 +34,8 @@ f1_keywords:
 - _ftclen
 - _tclen
 - mbclen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tclen function
 - _mblen_l function
@@ -43,22 +45,23 @@ helpviewer_keywords:
 - mbclen function
 - mblen function
 ms.assetid: d5eb92a0-b7a3-464a-aaf7-9890a8e3ed70
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dcd45f8ccd7147fae7036c88477722b77f150193
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 460de51d8f969f275ed392d293f90f517c168971
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbclen-mblen-mblenl"></a>_mbclen, mblen, _mblen_l
 Uzunluğunu alır ve çok baytlı karakter geçerliliğini belirler.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -91,12 +94,12 @@ int _mblen_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_mbclen`döndürür 1 veya 2 mi göre birden çok baytlı karakter `c` 1 veya 2 bayt uzunluğundadır. Herhangi bir hata için dönüş `_mbclen`. Varsa `mbstr` değil `NULL`, `mblen` birden çok baytlı karakter bayt cinsinden uzunluğu döndürür. Varsa `mbstr` olan `NULL` veya joker karakter null karakter işaret `mblen` 0 döndürür. Nesne, `mbstr` noktalarına ilk içinde geçerli bir birden çok baytlı karakter form değil `count` karakter `mblen` -1 döndürür.  
+ `_mbclen` döndürür 1 veya 2 mi göre birden çok baytlı karakter `c` 1 veya 2 bayt uzunluğundadır. Herhangi bir hata için dönüş `_mbclen`. Varsa `mbstr` değil `NULL`, `mblen` birden çok baytlı karakter bayt cinsinden uzunluğu döndürür. Varsa `mbstr` olan `NULL` veya joker karakter null karakter işaret `mblen` 0 döndürür. Nesne, `mbstr` noktalarına ilk içinde geçerli bir birden çok baytlı karakter form değil `count` karakter `mblen` -1 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_mbclen` İşlevi, birden çok baytlı karakter bayt cinsinden uzunluğu döndürür `c`. Varsa `c` birden çok baytlı karakter örtük bir çağrı tarafından belirlendiği bayt göstermiyor `_ismbblead`, sonucu `_mbclen` tahmin edilemez.  
   
- `mblen`bayt cinsinden uzunluğu döndürür `mbstr` geçerli bir birden çok baytlı karakter ise ve çok baytlı karakter geçerlilik kod sayfası ile ilişkili belirler. `mblen`inceler `count` veya içinde yer alan daha az sayıda bayt `mbstr`, ancak fazla `MB_CUR_MAX` bayt sayısı.  
+ `mblen` bayt cinsinden uzunluğu döndürür `mbstr` geçerli bir birden çok baytlı karakter ise ve çok baytlı karakter geçerlilik kod sayfası ile ilişkili belirler. `mblen` inceler `count` veya içinde yer alan daha az sayıda bayt `mbstr`, ancak fazla `MB_CUR_MAX` bayt sayısı.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -111,8 +114,8 @@ int _mblen_l(
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
 |`_mbclen`|\<Mbstring.h >|  
-|`mblen`|\<stdlib.h >|  
-|`_mblen_l`|\<stdlib.h >|  
+|`mblen`|\<stdlib.h>|  
+|`_mblen_l`|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

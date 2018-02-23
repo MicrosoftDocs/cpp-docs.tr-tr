@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wsetlocale
 - setlocale
@@ -27,7 +28,8 @@ f1_keywords:
 - _wsetlocale
 - _tsetlocale
 - setlocale
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wsetlocale function
 - setlocale function
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - defining locales
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0610dff5366f72010de965b7b9df0cd4e02c1e5d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 04a391a99f673d02f01d35681b1d375f5db09384
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
 Çalışma zamanı yerel ayarını ayarlar veya alır.  
@@ -85,9 +88,9 @@ wchar_t *_wsetlocale(
  Tarafından döndürülen dize kopyalayabilirsiniz `setlocale` programın yerel ayar bilgileri bu bölümü geri yüklemek için. Genel veya iş parçacığı yerel depolama tarafından döndürülen dize için kullanıldığından `setlocale`. Daha sonra çağrılar `setlocale` önceki çağrıları tarafından döndürülen dize işaretçileri geçersiz kılar dize üzerine yazın.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım `setlocale` ayarlamak, değiştirmek veya bazılarını veya tümünü tarafından belirlenen geçerli programı yerel ayar bilgileri sorgulamak için işlevi `locale` ve `category`. `locale`Programınız belirli yönlerini özelleştirebileceğiniz yerleşim için (ülke/bölge ve dil) ifade eder. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir. Ayarlarsanız `locale` bilgisayarınızda desteklenen birden çok form sahip bir dil için varsayılan dizeye denetlemelisiniz `setlocale` dönüş dili yürürlükte olduğunu görmek için değeri. Örneğin, ayarlarsanız `locale` "Çinceden" "Çince-Basitleştirilmiş" veya "Çince (Geleneksel)" dönüş değeri olabilir.  
+ Kullanım `setlocale` ayarlamak, değiştirmek veya bazılarını veya tümünü tarafından belirlenen geçerli programı yerel ayar bilgileri sorgulamak için işlevi `locale` ve `category`. `locale` Programınız belirli yönlerini özelleştirebileceğiniz yerleşim için (ülke/bölge ve dil) ifade eder. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir. Ayarlarsanız `locale` bilgisayarınızda desteklenen birden çok form sahip bir dil için varsayılan dizeye denetlemelisiniz `setlocale` dönüş dili yürürlükte olduğunu görmek için değeri. Örneğin, ayarlarsanız `locale` "Çinceden" "Çince-Basitleştirilmiş" veya "Çince (Geleneksel)" dönüş değeri olabilir.  
   
- `_wsetlocale`bir joker karakter sürümü `setlocale`; `locale` yazmaç değerini `_wsetlocale` joker karakter dizelerdir. `_wsetlocale`ve `setlocale` Aksi takdirde aynı şekilde davranır.  
+ `_wsetlocale` bir joker karakter sürümü `setlocale`; `locale` yazmaç değerini `_wsetlocale` joker karakter dizelerdir. `_wsetlocale` ve `setlocale` Aksi takdirde aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

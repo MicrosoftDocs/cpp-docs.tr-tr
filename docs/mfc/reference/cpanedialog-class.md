@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,22 +14,24 @@ f1_keywords:
 - AFXPANEDIALOG/CPaneDialog::Create
 - AFXPANEDIALOG/CPaneDialog::HandleInitDialog
 - AFXPANEDIALOG/CPaneDialog::SetOccDialogInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPaneDialog [MFC], Create
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4d292a8f3f8fafc88b23d9375d1894e47e1c0a90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3e247d1d824d710cfa9588a01d73e1ca611d77ed
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 `CPaneDialog` Sınıfı, bir dockable kalıcı olmayan iletişim kutusu destekler.  
@@ -64,7 +67,7 @@ class CPaneDialog : public CDockablePane
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|OLE denetim kapsayıcı bir iletişim kutusu için kullanılacak şablonu belirtir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CPaneDialog` iki adımda nesne. İlk olarak, kodunuzda nesnesi oluşturun. İkinci olarak, arama [CPaneDialog::Create](#create). Geçerli kaynak şablonu adı ya da şablon kimliği belirtin ve bir işaretçi üst penceresine geçmesi gerekir. Aksi takdirde oluşturma işlemi başarısız olur. İletişim kutusu WS_CHILD ve ws_vısıble stili belirtmeniz gerekir. Ws_clıpchıldren ve ws_clıpsıblıngs stilleri de belirtmeniz önerilir. Daha fazla bilgi için bkz: [pencere stilleri](window-styles.md).  
+ Oluşturmak bir `CPaneDialog` iki adımda nesne. İlk olarak, kodunuzda nesnesi oluşturun. İkinci olarak, arama [CPaneDialog::Create](#create). Geçerli kaynak şablonu adı ya da şablon kimliği belirtin ve bir işaretçi üst penceresine geçmesi gerekir. Aksi takdirde oluşturma işlemi başarısız olur. İletişim kutusu WS_CHILD ve ws_vısıble stili belirtmeniz gerekir. Ws_clıpchıldren ve ws_clıpsıblıngs stilleri de belirtmeniz önerilir. Daha fazla bilgi için bkz: [pencere stilleri](styles-used-by-mfc.md#window-styles).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -84,7 +87,7 @@ class CPaneDialog : public CDockablePane
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxpanedialog.h  
   
-##  <a name="create"></a>CPaneDialog::Create  
+##  <a name="create">CPaneDialog::Create</a>  
  Yerleşik bir iletişim kutusu oluşturur ve ona ekler bir `CPaneDialog` nesnesi.  
   
 ```  
@@ -123,35 +126,35 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszWindowName`  
+ [in] `lpszWindowName`  
  Yerleştirme iletişim kutusu adı.  
   
- [in]`pParentWnd`  
+ [in] `pParentWnd`  
  Üst pencere noktalarına.  
   
- [in]`bHasGripper`  
- `TRUE`bir resim yazısı (kavrayıcının); yerleştirme iletişim kutusu oluşturmak için Aksi takdirde `FALSE`.  
+ [in] `bHasGripper`  
+ `TRUE` bir resim yazısı (kavrayıcının); yerleştirme iletişim kutusu oluşturmak için Aksi takdirde `FALSE`.  
   
- [in]`lpszTemplateName`  
+ [in] `lpszTemplateName`  
  Kaynak iletişim şablonunun adı.  
   
- [in]`nStyle`  
+ [in] `nStyle`  
  Windows stili.  
   
- [in]`nID`  
+ [in] `nID`  
  Denetim kimliği.  
   
- [in]`nIDTemplate`  
+ [in] `nIDTemplate`  
  İletişim şablonu kaynak kimliği.  
   
- [in]`dwTabbedStyle`  
+ [in] `dwTabbedStyle`  
  Kullanıcı başka bir denetim bölmesinde bu denetim bölmesinde resim yazısı sürüklendiğinde sonuçları sekmeli pencere stili. Varsayılan değer `AFX_CBRS_REGULAR_TABS` şeklindedir. Daha fazla bilgi için Açıklamalar bölümüne bakın [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
- [in]`dwControlBarStyle`  
+ [in] `dwControlBarStyle`  
  Ek stil öznitelikleri. Varsayılan değer `AFX_DEFAULT_DOCKING_PANE_STYLE` şeklindedir. Daha fazla bilgi için Açıklamalar bölümüne bakın [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -161,7 +164,7 @@ BOOL Create(
  [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]  
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]  
   
-##  <a name="handleinitdialog"></a>CPaneDialog::HandleInitDialog  
+##  <a name="handleinitdialog">CPaneDialog::HandleInitDialog</a>  
  İşleme [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) ileti.  
   
 ```  
@@ -171,19 +174,19 @@ afx_msg LRESULT HandleInitDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`wParam`  
+ [in] `wParam`  
  Varsayılan klavye odağını alacak denetimi işleyin.  
   
- [in]`lParam`  
+ [in] `lParam`  
  Ek başlatma verilerini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`Bu yöntem başarılı olursa; Aksi takdirde `FALSE`. Ayrıca, `TRUE` tarafından belirtilen denetime klavye odağını ayarlar `wParam` parametresi; `FALSE` varsayılan klavye odağını ayarlamak engeller.  
+ `TRUE` Bu yöntem başarılı olursa; Aksi takdirde `FALSE`. Ayrıca, `TRUE` tarafından belirtilen denetime klavye odağını ayarlar `wParam` parametresi; `FALSE` varsayılan klavye odağını ayarlamak engeller.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çerçeve denetimleri ve bir iletişim kutusu görünümünü başlatmak için bu yöntemi kullanır. Framework'te iletişim kutusu görüntülenmeden önce bu yöntemi çağırır.  
   
-##  <a name="setoccdialoginfo"></a>CPaneDialog::SetOccDialogInfo  
+##  <a name="setoccdialoginfo">CPaneDialog::SetOccDialogInfo</a>  
  OLE denetim kapsayıcı bir iletişim kutusu için kullanılacak şablonu belirtir.  
   
 ```  
@@ -191,7 +194,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`pOccDialogInfo`  
+ [in] `pOccDialogInfo`  
  İletişim kutusu nesnesi oluşturmak için kullanılan bir iletişim kutusu şablon işaretçi. Bu parametrenin değerini daha sonra içine geçirilen [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  

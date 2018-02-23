@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: afxdll
-dev_langs: C++
+f1_keywords:
+- afxdll
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory [C++], DLLs
 - MFC extension DLLs [C++]
@@ -21,16 +24,17 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 45e94997dbeb2c6413ffcdc1272a3a46a7e220ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 36a57d47d32b4526ca6d383b67ca415f705dc982
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="mfc-extension-dlls"></a>MFC uzantı DLL'leri
 MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sınıflarından türetilmiş yeniden kullanılabilir sınıfları uygulayan bir DLL'dir.  
@@ -61,7 +65,7 @@ MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sı
   
  MFC 4.0 sürümünden önce bu tür DLL AFXDLL çağrıldı. AFXDLL başvurduğu `_AFXDLL` DLL oluşturulurken tanımlanan önişlemci sembolü.  
   
- MFC paylaşılan sürümü için içeri aktarma kitaplıkları açıklanan kurala göre adlandırılır [MFC DLL'leri için adlandırma kuralları](../build/naming-conventions-for-mfc-dlls.md). Visual C++ MFC DLL'leri yanı sıra, bir sayı, MFC dışı kullanan ve uygulamalarınızı dağıtma DLL'ler önceden oluşturulmuş sürümlerini sağlar. Bu Program Files\Microsoft Visual Studio klasörüne yüklenir Redist.txt'e belgelenmiştir.  
+ MFC paylaşılan sürümü için içeri aktarma kitaplıkları açıklanan kurala göre adlandırılır [MFC DLL'leri için adlandırma kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Visual C++ MFC DLL'leri yanı sıra, bir sayı, MFC dışı kullanan ve uygulamalarınızı dağıtma DLL'ler önceden oluşturulmuş sürümlerini sağlar. Bu Program Files\Microsoft Visual Studio klasörüne yüklenir Redist.txt'e belgelenmiştir.  
   
  .Def dosyası kullanarak dışa aktarıyorsanız, aşağıdaki kod, üstbilgi dosyası başında ve sonunda yerleştir:  
   
@@ -89,7 +93,7 @@ MFC uzantı DLL'si genellikle mevcut Microsoft Foundation Class Kitaplığı sı
 ## <a name="sharing-resources-and-classes"></a>Kaynakları ve sınıfları paylaşma  
  Kaynakları dışarı aktarma, bir kaynak listesi üzerinden yapılır. Her uygulama tek bağlı bir listesini içeren **CDynLinkLibrary** nesneleri. Bir kaynak ararken kaynakları yükleyen standart MFC uygulamalarının çoğunu geçerli kaynak modülüne bakar (`AfxGetResourceHandle`) ve kaynak bulunmazsa yol listesi **CDynLinkLibrary** nesneleri İstenen kaynak yüklenmeye çalışılıyor.  
   
- Listenin taramasını kısmen daha yavaştır ve kaynak kimlik aralıklarını yönetmeyi gerektirir dezavantajları vardır. Birkaç MFC uzantı DLL'leri bağlanan istemci uygulaması herhangi bir DLL tarafından sağlanan kaynak DLL örneği işleyicisi belirtmek zorunda kalmadan kullanabileceğiniz avantajına sahiptir. `AfxFindResourceHandle`bir API, belirli bir eşleşme için aranacak kaynak listesi taramasını için kullanılır. Bir kaynak türü ve adını alır ve ilk bulunduğu kaynak tanıtıcısı (veya NULL) döndürür.  
+ Listenin taramasını kısmen daha yavaştır ve kaynak kimlik aralıklarını yönetmeyi gerektirir dezavantajları vardır. Birkaç MFC uzantı DLL'leri bağlanan istemci uygulaması herhangi bir DLL tarafından sağlanan kaynak DLL örneği işleyicisi belirtmek zorunda kalmadan kullanabileceğiniz avantajına sahiptir. `AfxFindResourceHandle` bir API, belirli bir eşleşme için aranacak kaynak listesi taramasını için kullanılır. Bir kaynak türü ve adını alır ve ilk bulunduğu kaynak tanıtıcısı (veya NULL) döndürür.  
   
  Listeyi izlemek ve yalnızca belirli bir konumdan kaynakları yüklemek istemiyorsanız işlevleri kullanmak `AfxGetResourceHandle` ve `AfxSetResourceHandle` eski tutamacı kaydedip yeni tutamacı ayarlayın. İstemci uygulamasına geri dönmeden önce eski kaynak tanıtıcısını geri yüklediğinizden emin olun. MFC örnekteki Testdll2 .cpp açıkça bir menü yüklemek için bu yaklaşımı kullanarak, bir örnek için bkz: [DLLHUSK](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/dllhusk).  
   
@@ -129,7 +133,7 @@ head ->   DLLHUSK.EXE   - or -   DLLHUSK.EXE
   
 -   [Paylaşılan kaynak dosyalarını kullanma ile ilgili ipuçları](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)  
   
--   [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
+-   [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
   
 -   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
   

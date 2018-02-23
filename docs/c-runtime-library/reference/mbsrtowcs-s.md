@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: mbsrtowcs_s
+ms.topic: reference
+apiname:
+- mbsrtowcs_s
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,20 +23,24 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: mbsrtowcs_s
-dev_langs: C++
-helpviewer_keywords: mbsrtowcs_s function
+f1_keywords:
+- mbsrtowcs_s
+dev_langs:
+- C++
+helpviewer_keywords:
+- mbsrtowcs_s function
 ms.assetid: 4ee084ec-b15d-4e5a-921d-6584ec3b5a60
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b701362fd8ed19575f5de34f998bc8fd4f7e6de1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ef0b422fdc809d979fa64cf49e96e8991c4df0f6
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbsrtowcss"></a>mbsrtowcs_s
 Çok baytlı karakter dizesi geçerli yerel kendi geniş karakter dizesi gösterimine dönüştürür. Bir sürümünü [mbsrtowcs](../../c-runtime-library/reference/mbsrtowcs.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -61,31 +67,31 @@ errno_t mbsrtowcs_s(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pReturnValue`  
+ [out] `pReturnValue`  
  Dönüştürülen karakter sayısı.  
   
- [out]`wcstr`  
+ [out] `wcstr`  
  Elde edilen depolamak için arabellek adresini dönüştürülen geniş karakter dizesi.  
   
- [out]`sizeInWords`  
+ [out] `sizeInWords`  
  Boyutunu `wcstr` içinde sözcükleri (geniş karakter).  
   
- [içinde out]`mbstr`  
+ [içinde out] `mbstr`  
  Dönüştürülecek birden çok baytlı karakter dizesi konuma dolaylı işaretçi.  
   
- [in]`count`  
+ [in] `count`  
  En fazla depolamak üzere geniş karakter sayısını `wcstr` arabellek, sonlandırma null dahil değil veya [_TRUNCATE](../../c-runtime-library/truncate.md).  
   
- [içinde out]`mbstate`  
+ [içinde out] `mbstate`  
  Bir işaretçi bir `mbstate_t` dönüştürme durum nesnesi. Bu değer null işaretçi ise, bir statik iç dönüştürme durumu nesnesi kullanılır. Çünkü iç `mbstate_t` nesnesi iş parçacığı açısından güvenli değil, her zaman kendi geçirdiğiniz olmasını öneririz `mbstate` parametresi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Dönüştürme başarılı olduğunda sıfır veya hatasında bir hata kodu.  
   
-|Hata durumu|Dönüş değeri ve`errno`|  
+|Hata durumu|Dönüş değeri ve `errno`|  
 |---------------------|------------------------------|  
-|`wcstr`null işaretçi ve `sizeInWords` > 0|`EINVAL`|  
-|`mbstr`null işaretçi|`EINVAL`|  
+|`wcstr` null işaretçi ve `sizeInWords` > 0|`EINVAL`|  
+|`mbstr` null işaretçi|`EINVAL`|  
 |Dize dolaylı olarak işaret için tarafından `mbstr` geçerli yerel ayar için geçerli olmayan bir birden çok baytlı dizisi içerir.|`EILSEQ`|  
 |Hedef arabellek dönüştürülmüş dizeyi içeren için çok küçük. (sürece `count` olan `_TRUNCATE`; daha fazla bilgi için açıklamalar bakın)|`ERANGE`|  
   
@@ -112,12 +118,12 @@ errno_t mbsrtowcs_s(
   
  Varsa `mbsrtowcs_s` geçerli yerel ayarında geçersiz bir birden çok baytlı karakter karşılaştığında -1 koyar `*pReturnValue`, hedef arabelleği ayarlar `wcstr` boş bir dize olarak ayarlar `errno` için `EILSEQ`ve döndürür `EILSEQ`.  
   
- Dizileri gösterdiği varsa `mbstr` ve `wcstr` üst üste, davranışını `mbsrtowcs_s` tanımlanmadı. `mbsrtowcs_s`Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
+ Dizileri gösterdiği varsa `mbstr` ve `wcstr` üst üste, davranışını `mbsrtowcs_s` tanımlanmadı. `mbsrtowcs_s` Geçerli yerel LC_TYPE kategoriye göre etkilenir.  
   
 > [!IMPORTANT]
 >  Emin `wcstr` ve `mbstr` çakışmaması ve `count` doğru şekilde dönüştürmek için birden çok baytlı karakter sayısını yansıtır.  
   
- `mbsrtowcs_s` İşlevi farklı olarak [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanması gereken `mbsrlen` yerine `mbslen`, bir sonraki çağrı, `mbsrtowcs_s` yerine kullanılır`mbstowcs_s.`  
+ `mbsrtowcs_s` İşlevi farklı olarak [mbstowcs_s, _mbstowcs_s_l](../../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanması gereken `mbsrlen` yerine `mbslen`, bir sonraki çağrı, `mbsrtowcs_s` yerine kullanılır `mbstowcs_s.`  
   
  C++'da, bu işlevi kullanarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeni belirtmeniz gerekliliğini ortadan) ve yeni, güvenli dekiler kullanarak bunlar daha eski, güvenli olmayan işlevleri otomatik olarak değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   

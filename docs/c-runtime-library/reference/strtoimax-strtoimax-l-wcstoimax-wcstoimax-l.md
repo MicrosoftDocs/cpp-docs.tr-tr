@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wcstoimax
 - _wcstoimax_l
@@ -32,7 +33,8 @@ f1_keywords:
 - _wcstoimax_l
 - _strtoimax_l
 - _tcstoimax_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strtoimax funciton
 - conversion functions
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _wcstoimax_l function
 - wcstoimax function
 ms.assetid: 4530d3dc-aaac-4a76-b7cf-29ae3c98d0ae
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 14bbcfcdb96db3b64bd1cb06df999e0c64796773
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4125ebf922ed3525d5efd6a92b1273ca18d0fd7d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtoimax-strtoimaxl-wcstoimax-wcstoimaxl"></a>strtoimax, _strtoimax_l, wcstoimax, _wcstoimax_l
 Bir dizeyi büyük desteklenen imzalı Tamsayı türünde tamsayı değerine dönüştürür.  
@@ -95,9 +98,9 @@ intmax_t _wcstoimax_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strtoimax`dizeyi temsil edilen değeri döndürür `nptr`, temsili taşma zaman neden olacağından dışında — bu durumda, döndürür `INTMAX_MAX` veya `INTMAX_MIN`, ve `errno` ayarlanır `ERANGE`. Hiçbir dönüştürme gerçekleştirilebiliyorsa işlevi 0 değerini döndürür. `wcstoimax`değerleri analogously çok döndürür `strtoimax`.  
+ `strtoimax` dizeyi temsil edilen değeri döndürür `nptr`, temsili taşma zaman neden olacağından dışında — bu durumda, döndürür `INTMAX_MAX` veya `INTMAX_MIN`, ve `errno` ayarlanır `ERANGE`. Hiçbir dönüştürme gerçekleştirilebiliyorsa işlevi 0 değerini döndürür. `wcstoimax` değerleri analogously çok döndürür `strtoimax`.  
   
- `INTMAX_MAX`ve `INTMAX_MIN` stdint.h tanımlanır.  
+ `INTMAX_MAX` ve `INTMAX_MIN` stdint.h tanımlanır.  
   
  Varsa `nptr` olan `NULL` veya `base` sıfır dışında olan ve 2 veya 36, büyüktür ya da daha az `errno` ayarlanır `EINVAL`.  
   
@@ -117,7 +120,7 @@ intmax_t _wcstoimax_l(
 |`_tcstoimax`|`strtoimax`|`strtoimax`|`wcstoimax`|  
 |`_tcstoimax_l`|`strtoimax_l`|`_strtoimax_l`|`_wcstoimax_l`|  
   
- `strtoimax`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `strtoimax` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits` &#124; `letters`]  
   

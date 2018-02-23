@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wtoi
 - _wtoi_l
@@ -32,7 +33,8 @@ f1_keywords:
 - atoi
 - _atoi_l
 - _wtoi_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _atoi_l function
 - ttoi function
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1f3430389002b4b68d132b1b524b98cb1f7dea1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1482bbb10604b78874112b72f99b7ae18bab206e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 Bir dize tamsayıya dönüştürür.  
@@ -90,7 +93,7 @@ int _wtoi_l(
 ## <a name="return-value"></a>Dönüş Değeri  
  Her işlevi döndürür `int` değeri bir sayı olarak giriş karakter yorumlama tarafından üretilen. Dönüş değeri için 0'dır `atoi` ve `_wtoi`, giriş türü değerine dönüştürülemiyor.  
   
- Taşma büyük negatif tamsayı değer ile söz konusu olduğunda `LONG_MIN` döndürülür. `atoi`ve `_wtoi` dönmek `INT_MAX` ve `INT_MIN` bu koşullara. Tüm aralık dışı durumlarda `errno` ayarlanır `ERANGE`. Geçirilen parametre ise `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve 0 döndürür.  
+ Taşma büyük negatif tamsayı değer ile söz konusu olduğunda `LONG_MIN` döndürülür. `atoi` ve `_wtoi` dönmek `INT_MAX` ve `INT_MIN` bu koşullara. Tüm aralık dışı durumlarda `errno` ayarlanır `ERANGE`. Geçirilen parametre ise `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve 0 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin bir karakter dizesi tamsayı değerine dönüştürmek (`atoi` ve `_wtoi`). Giriş dizesi belirtilen türde bir sayısal değer yorumlanan karakterden oluşan bir dizidir. İşlevi, giriş dizesi bir sayı bir parçası olarak tanıyamıyor ilk karakterinde okuma durdurur. Bu karakteri ('\0' veya '\0' L) null karakter olabilir dize sonlandırılıyor.  
@@ -114,7 +117,7 @@ int _wtoi_l(
   
 |Yordamları|Gerekli başlık|  
 |--------------|---------------------|  
-|`atoi`|\<stdlib.h >|  
+|`atoi`|\<stdlib.h>|  
 |`_atoi_l`, `_wtoi`, `_wtoi_l`|\<stdlib.h > veya \<wchar.h >|  
   
 ## <a name="example"></a>Örnek  

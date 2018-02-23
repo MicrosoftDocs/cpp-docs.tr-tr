@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strxfrm
 - _wcsxfrm_l
@@ -29,7 +30,8 @@ f1_keywords:
 - strxfrm
 - _tcsxfrm
 - wcsxfrm
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strxfrm_l function
 - _tcsxfrm function
@@ -42,16 +44,17 @@ helpviewer_keywords:
 - strings [C++], comparing locale
 - _wcsxfrm_l function
 ms.assetid: 6ba8e1f6-4484-49aa-83b8-bc2373187d9e
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bc61e1f1dee03d0604b4a7fab97dc4236c1f705c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0545fd71f571caa2fbb12cefb010c274cbda9f28
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strxfrm-wcsxfrm-strxfrml-wcsxfrml"></a>strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l
 Yerel ayarlara özgü bilgilere dayalı bir dize dönüştürün.  
@@ -100,11 +103,11 @@ size_t wcsxfrm_l(
  Sondaki boş karakter saymaz dönüştürülmüş dize uzunluğunu döndürür. Dönüş değeri sıfırdan büyük veya eşit olup olmadığını `count`, içeriği `strDest` tahmin edilemez. Bir hata, her işlev ayarlar `errno` ve döndürür `INT_MAX`. Geçersiz bir karakter için `errno` ayarlanır `EILSEQ`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strxfrm` İşlevi dönüştüren gösterdiği dize `strSource` yeni dosyaya depolanır form Harmanlanmış `strDest`. En fazla `count` null karakteri gibi karakterler dönüştürülen ve sonuçta elde edilen dizeye yerleştirilir. Dönüştürme yerel kullanılarak yapılan `LC_COLLATE` kategori ayarı. Daha fazla bilgi için `LC_COLLATE`, bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strxfrm`Geçerli yerel ayar için yerel ayara bağımlı davranışını kullanır; `_strxfrm_l` geçerli yerel yerine geçilen yerel kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `strxfrm` İşlevi dönüştüren gösterdiği dize `strSource` yeni dosyaya depolanır form Harmanlanmış `strDest`. En fazla `count` null karakteri gibi karakterler dönüştürülen ve sonuçta elde edilen dizeye yerleştirilir. Dönüştürme yerel kullanılarak yapılan `LC_COLLATE` kategori ayarı. Daha fazla bilgi için `LC_COLLATE`, bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `strxfrm` Geçerli yerel ayar için yerel ayara bağımlı davranışını kullanır; `_strxfrm_l` geçerli yerel yerine geçilen yerel kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  Dönüştürme için bir çağrı sonra `strcmp` iki dönüştürülmüş dizeyi ile yapılan bir çağrı içeriğiyle aynı sonuçları verir `strcoll` özgün iki dizeyi uygulanır. İle `strcoll` ve `stricoll`, `strxfrm` çok baytlı karakter dizeleri uygun şekilde otomatik olarak yönetir.  
   
- `wcsxfrm`bir joker karakter sürümü `strxfrm`; dize bağımsız değişkenleri `wcsxfrm` joker karakter işaretçiler. İçin `wcsxfrm`, sonra dize dönüştürme, bir çağrı `wcscmp` iki dönüştürülmüş dizeyi ile yapılan bir çağrı içeriğiyle aynı sonuçları verir `wcscoll` özgün iki dizeyi uygulanır. `wcsxfrm`ve `strxfrm` Aksi takdirde aynı şekilde davranır. `wcsxfrm`Geçerli yerel ayar için yerel ayara bağımlı davranışını kullanır; `_wcsxfrm_l` geçerli yerel yerine geçilen yerel ayar kullanır.  
+ `wcsxfrm` bir joker karakter sürümü `strxfrm`; dize bağımsız değişkenleri `wcsxfrm` joker karakter işaretçiler. İçin `wcsxfrm`, sonra dize dönüştürme, bir çağrı `wcscmp` iki dönüştürülmüş dizeyi ile yapılan bir çağrı içeriğiyle aynı sonuçları verir `wcscoll` özgün iki dizeyi uygulanır. `wcsxfrm` ve `strxfrm` Aksi takdirde aynı şekilde davranır. `wcsxfrm` Geçerli yerel ayar için yerel ayara bağımlı davranışını kullanır; `_wcsxfrm_l` geçerli yerel yerine geçilen yerel ayar kullanır.  
   
  Bu işlevler kendi parametreleri doğrulayın. Varsa `strSource` null işaretçinin veya `strDest` (sayısı sıfır değilse), bir NULL işaretçinin olduğundan, veya `count` değerinden daha büyük `INT_MAX`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve geri dönüp `INT_MAX`.  
   
@@ -119,7 +122,7 @@ size_t wcsxfrm_l(
   
  Karakter kümesi ve lexicographic karakter sırası için farklı yerlerde kullanmak `strxfrm` özgün dizeler ve ardından `strcmp` geçerli yerel görelexicographicdizekarşılaştırmasınınüretmekiçinsonuçtaeldeedilendizeler`LC_COLLATE` kategori ayarı. Bu nedenle, iki dizelerde lexicographically yukarıdaki yerel karşılaştırmak için kullanın `strxfrm` özgün dizeler, ardından `strcmp` elde edilen dizelerde. Alternatif olarak, kullanabileceğiniz `strcoll` yerine `strcmp` özgün dizelerde.  
   
- `strxfrm`temel olarak çevresinde bir sarmalayıcı olan [LCMapString](http://msdn.microsoft.com/library/windows/desktop/dd318700) ile `LCMAP_SORTKEY`.  
+ `strxfrm` temel olarak çevresinde bir sarmalayıcı olan [LCMapString](http://msdn.microsoft.com/library/windows/desktop/dd318700) ile `LCMAP_SORTKEY`.  
   
  Tutmak için gerekli dizinin boyutu aşağıdaki ifade değeri `strxfrm` kaynak dizesi dönüşümü:  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _create_locale
 - __create_locale
@@ -28,23 +29,25 @@ f1_keywords:
 - create_locale
 - _create_locale
 - __create_locale
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - locales, creating
 - _create_locale function
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 73e89121dda53300b276b76f49625ad274df4519
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ff6254ecd33dfc844108b76fc1644eff2a373aed
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="createlocale-wcreatelocale"></a>_create_locale, _wcreate_locale
 Yerel ayar nesnesi oluşturur.  
@@ -75,7 +78,7 @@ _locale_t _wcreate_locale(
 ## <a name="remarks"></a>Açıklamalar  
  `_create_locale` İşlevi yerel ayarlara özgü sürümlerinde, birçok CRT işlevleri kullanmak için belirli bölgeye özgü ayarları temsil eden bir nesne oluşturmanıza olanak sağlar (ile işlevleri `_l` soneki). Benzer bir davranıştır `setlocale`, geçerli ortama belirtilen yerel ayarları uygulamak yerine kaydedilir ancak bu bir `_locale_t` döndürülen yapısı. `_locale_t` Yapısı serbest kullanarak [_free_locale](../../c-runtime-library/reference/free-locale.md) zaman artık gerekli.  
   
- `_wcreate_locale`bir joker karakter sürümü `_create_locale`; `locale` bağımsız değişkeni `_wcreate_locale` bir joker karakter dizesidir. `_wcreate_locale`ve `_create_locale` Aksi takdirde aynı şekilde davranır.  
+ `_wcreate_locale` bir joker karakter sürümü `_create_locale`; `locale` bağımsız değişkeni `_wcreate_locale` bir joker karakter dizesidir. `_wcreate_locale` ve `_create_locale` Aksi takdirde aynı şekilde davranır.  
   
  `category` Bağımsız değişkeni etkilenen yerel ayarlara özgü davranış bölümlerini belirtir. İçin kullanılan bayraklarını `category` ve etkilediklerini program aşağıdaki tabloda gösterildiği gibi bölümlerdir.  
   

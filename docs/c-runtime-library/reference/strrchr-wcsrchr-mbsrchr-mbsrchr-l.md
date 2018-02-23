@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strrchr
 - wcsrchr
@@ -32,7 +33,8 @@ f1_keywords:
 - strrchr
 - wcsrchr
 - _mbsrchr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _mbsrchr function
 - tcsrchr function
@@ -48,22 +50,23 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1a7f498dc526d6989e18aaf8aea916ad9fc602cb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2381a38dcf3532d50611068811e94101a3512746
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strrchr-wcsrchr-mbsrchr-mbsrchrl"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 Bir karakter son a geçişi için bir dize tarar.  
   
 > [!IMPORTANT]
->  `_mbsrchr`ve `_mbsrchr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsrchr` ve `_mbsrchr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -137,11 +140,11 @@ const unsigned char *_mbsrchr_l(
 ## <a name="remarks"></a>Açıklamalar  
  `strrchr` İşlev son bulur `c` (dönüştürülen `char`) içinde `str`. Arama sonlandırma null karakter içerir.  
   
- `wcsrchr`ve `_mbsrchr` joker karakter ve çok baytlı karakter sürümleri `strrchr`. Bağımsız değişkenleri ve dönüş değerini `wcsrchr` joker karakter olan dizeleri; bu `_mbsrchr` çok baytlı karakter dizeleri belirtilmiştir.  
+ `wcsrchr` ve `_mbsrchr` joker karakter ve çok baytlı karakter sürümleri `strrchr`. Bağımsız değişkenleri ve dönüş değerini `wcsrchr` joker karakter olan dizeleri; bu `_mbsrchr` çok baytlı karakter dizeleri belirtilmiştir.  
   
  C, bu işlevler ele bir `const` ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı `const` gösteren bir işaretçi döndürür `const`; bir işaretçi olmayan alır sürüm`const` gösteren bir işaretçi olmayan döndürür`const`. Makro `_CRT_CONST_CORRECT_OVERLOADS` her iki tanımlanan `const` ve olmayan-`const` bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa`const` hem C++ aşırı davranışını tanımlayın simgenin `_CONST_RETURN`.  
   
- `_mbsrchr`parametreleri doğrular. Varsa `str` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve `_mbsrchr` 0 döndürür. `strrchr`ve `wcsrchr` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_mbsrchr` parametreleri doğrular. Varsa `str` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve `_mbsrchr` 0 döndürür. `strrchr` ve `wcsrchr` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` kategori ayar yerel; daha fazla bilgi için bkz. [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   

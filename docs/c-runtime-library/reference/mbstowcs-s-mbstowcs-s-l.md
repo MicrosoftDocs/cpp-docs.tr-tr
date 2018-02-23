@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbstowcs_s_l
 - mbstowcs_s
@@ -26,22 +27,24 @@ apitype: DLLExport
 f1_keywords:
 - _mbstowcs_s_l
 - mbstowcs_s
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _mbstowcs_s_l function
 - mbstowcs_s function
 - mbstowcs_s_l function
 ms.assetid: 2fbda953-6918-498f-b440-3e7b21ed65a4
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 822a7058afd6588be6f953c5c2b89d41ec02c87f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 28f038c1529c2f7fb7bbc28127ee5b528474e0f0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mbstowcss-mbstowcssl"></a>mbstowcs_s, _mbstowcs_s_l
 Birden çok baytlı karakter dizisi geniş karakterler karşılık gelen bir dizi dönüştürür. Sürümleri [mbstowcs, _mbstowcs_l](../../c-runtime-library/reference/mbstowcs-mbstowcs-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -82,33 +85,33 @@ errno_t _mbstowcs_s_l(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`pReturnValue`  
+ [out] `pReturnValue`  
  Dönüştürülen karakter sayısı.  
   
- [out]`wcstr`  
+ [out] `wcstr`  
  Ortaya çıkan dönüştürülmüş geniş karakter dizesi için arabellek adresi.  
   
- [in]`sizeInWords`  
+ [in] `sizeInWords`  
  Boyutunu `wcstr` sözcükler arabellek.  
   
- [in]`mbstr`  
+ [in] `mbstr`  
  Boş bir dizi adresini birden çok baytlı karakterler sonlandırıldı.  
   
- [in]`count`  
+ [in] `count`  
  En fazla depolamak üzere geniş karakter sayısını `wcstr` arabellek, sonlandırma null dahil değil veya [_TRUNCATE](../../c-runtime-library/truncate.md).  
   
- [in]`locale`  
+ [in] `locale`  
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Sıfır başarılı olursa, hatasında bir hata kodu.  
   
-|Hata durumu|Dönüş değeri ve`errno`|  
+|Hata durumu|Dönüş değeri ve `errno`|  
 |---------------------|------------------------------|  
-|`wcstr`olan `NULL` ve `sizeInWords` > 0|`EINVAL`|  
-|`mbstr`değil`NULL`|`EINVAL`|  
+|`wcstr` olan `NULL` ve `sizeInWords` > 0|`EINVAL`|  
+|`mbstr` değil `NULL`|`EINVAL`|  
 |Hedef arabellek dönüştürülmüş dizeyi içeren için çok küçük. (sürece `count` olan `_TRUNCATE`; açıklamalar aşağıya bakın)|`ERANGE`|  
-|`wcstr`değil `NULL` ve `sizeInWords` == 0|`EINVAL`|  
+|`wcstr` değil `NULL` ve `sizeInWords` == 0|`EINVAL`|  
   
  Bu koşulların herhangi biri meydana gelirse, geçersiz bir parametre özel durum açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu işlevi döndürür ve ayarlar `errno` tabloda belirtildiği şekilde.  
   
@@ -134,7 +137,7 @@ errno_t _mbstowcs_s_l(
 > [!IMPORTANT]
 >  Emin `wcstr` ve `mbstr` çakışmaması ve `count` doğru şekilde dönüştürmek için birden çok baytlı karakter sayısını yansıtır.  
   
- `mbstowcs_s`Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_mbstowcs_s_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `mbstowcs_s` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_mbstowcs_s_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
   
@@ -142,8 +145,8 @@ errno_t _mbstowcs_s_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`mbstowcs_s`|\<stdlib.h >|  
-|`_mbstowcs_s_l`|\<stdlib.h >|  
+|`mbstowcs_s`|\<stdlib.h>|  
+|`_mbstowcs_s_l`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

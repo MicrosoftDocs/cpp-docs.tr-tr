@@ -2,7 +2,6 @@
 title: "İş parçacığı oluşturma ve sıralama (C + +/ CX) | Microsoft Docs"
 ms.custom: 
 ms.date: 12/30/2016
-ms.prod: windows-client-threshold
 ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
@@ -21,11 +20,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d62da6fafccecc8099e3f9611946d1c89a40389
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9b1544f18d0d5206e178cf42705d9567fad2423c
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
 Durumları büyük çoğunluğu herhangi bir iş parçacığından standart C++ nesneleri gibi Windows çalışma zamanı sınıfların örneklerini erişilebilir. Bu tür sınıflar olarak "Çevik" denir. Ancak, Windows ile birlikte Windows çalışma zamanı sınıfları az sayıda Çevik olmayan ve daha fazla standart C++ nesneleri daha COM nesneleri gibi kullanılması gerekir. Çevik olmayan sınıflarını kullanmak için bir COM uzman olması gerekmez, ancak sınıfın iş parçacığı modelini ve hazırlama davranışını dikkate gerekir. Bu makale, arka plan ve Çevik olmayan sınıfının bir örneğini kullanmak gereken bu nadir senaryoları için yönergeler sağlar.  

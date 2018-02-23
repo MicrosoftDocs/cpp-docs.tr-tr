@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _atoi64_l
 - _wtoi64
@@ -37,7 +38,8 @@ f1_keywords:
 - wtoi64_l
 - _atoi64_l
 - atoi64_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tstoi64 function
 - wtoi64 function
@@ -53,16 +55,17 @@ helpviewer_keywords:
 - _wtoi64 function
 - _atoi64 function
 ms.assetid: 2c3e30fd-545d-4222-8364-0c5905df9526
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 33337f0db51e81da06c193cc42cac1e5df085218
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8f643c2d62468669fdf91cf22eb07fb73b0e358d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atoi64-atoi64l-wtoi64-wtoi64l"></a>_atoi64, _atoi64_l, _wtoi64, _wtoi64_l
 Bir dizeyi bir 64-bit tamsayıya dönüştürür.  
@@ -113,7 +116,7 @@ __int64 _wtoi64_l(
   
  A `whitespace` , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşur `sign` da artı (+) veya eksi (-); ve `digits` bir veya daha fazla basamakların.  
   
- `_wtoi64`aynıdır `_atoi64` dışında geniş karakter dizesi bir parametre olarak alır.  
+ `_wtoi64` aynıdır `_atoi64` dışında geniş karakter dizesi bir parametre olarak alır.  
   
  Bu işlevleri sürümlerini `_l` soneki, geçerli yerel yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -128,7 +131,7 @@ __int64 _wtoi64_l(
   
 |Yordamları|Gerekli başlık|  
 |--------------|---------------------|  
-|`_atoi64`, `_atoi64_l`|\<stdlib.h >|  
+|`_atoi64`, `_atoi64_l`|\<stdlib.h>|  
 |`_wtoi64`, `_wtoi64_l`|\<stdlib.h > veya \<wchar.h >|  
   
 ## <a name="example"></a>Örnek  

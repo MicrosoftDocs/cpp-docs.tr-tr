@@ -2,7 +2,6 @@
 title: "JavaScript tümleştirme (C + +/ CX) | Microsoft Docs"
 ms.custom: 
 ms.date: 01/18/2018
-ms.prod: windows-client-threshold
 ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
@@ -15,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0881e736a65a04ca495351d23b060f15a24890e5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7b249bba4cdf409988431e48fd85d3d306c0f976
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="javascript-integration-ccx"></a>JavaScript tümleştirme (C + +/ CX)
 

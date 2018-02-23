@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wctomb_l
 - wctomb
@@ -23,8 +24,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: wctomb
-dev_langs: C++
+f1_keywords:
+- wctomb
+dev_langs:
+- C++
 helpviewer_keywords:
 - string conversion, wide characters
 - wide characters, converting
@@ -34,16 +37,17 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 462fecfcd9400d10dbc943fded0d04fb7a0cf010
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: adb05340bee89ff86c4ab30a61f32ca53c71519b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
 Geniş karakter karşılık gelen birden çok baytlı karakter dönüştürün. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md).  
@@ -73,15 +77,15 @@ int _wctomb_l(
  Varsa `wctomb` geniş karakter dönüştürür isteğe bağlı olarak birden çok baytlı karakter bayt sayısını döndürür (hangi asla büyük `MB_CUR_MAX`) geniş karakter. Varsa `wchar` joker karakter null karakteri (M '\0'), `wctomb` 1 döndürür. Varsa hedef işaretçi `mbchar` null, `wctomb` 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, `wctomb` -1 döndürür ve `errno` ayarlanır `EILSEQ`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `wctomb` İşlev dönüştürür kendi `wchar` karşılık gelen birden çok baytlı karakter bağımsız değişkeni ve sonucunda depolar `mbchar`. Herhangi bir noktadan herhangi bir programda işlevini çağırın. `wctomb`Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_wctomb_l` aynıdır `wctomb` yerine geçirilen yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `wctomb` İşlev dönüştürür kendi `wchar` karşılık gelen birden çok baytlı karakter bağımsız değişkeni ve sonucunda depolar `mbchar`. Herhangi bir noktadan herhangi bir programda işlevini çağırın. `wctomb` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır; `_wctomb_l` aynıdır `wctomb` yerine geçirilen yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
- `wctomb`parametreleri doğrular. Varsa `mbchar` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlev -1 döndürür.  
+ `wctomb` parametreleri doğrular. Varsa `mbchar` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlev -1 döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`wctomb`|\<stdlib.h >|  
+|`wctomb`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

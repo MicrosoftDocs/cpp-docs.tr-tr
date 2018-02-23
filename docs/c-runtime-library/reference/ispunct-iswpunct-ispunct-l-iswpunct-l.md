@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - ispunct
 - _iswpunct_l
@@ -29,7 +30,8 @@ f1_keywords:
 - iswpunct
 - _istpunct
 - ispunct
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _istpunct function
 - _ispunct_l function
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9856ed0cb5f4ea9a346f07c4ad98a8cf7c534f61
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fc86de73132dcefc57602586b679b95333c99c2e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ispunct-iswpunct-ispunctl-iswpunctl"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 Tamsayı bir noktalama karakteri temsil edip etmediğini belirler.  
@@ -81,7 +84,7 @@ int _iswpunct_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamları döndürür sıfır olmayan IF her `c` bir noktalama karakteri belirli bir gösterimidir. `ispunct`bir boşluk karakteri veya kendisi için bir karakter değil herhangi bir yazdırılabilir karakter için sıfır olmayan bir değer döndürür `isalnum` sıfır olmayan bir değer değil. `iswpunct`alan geniş karakter ne olduğu için geniş karakter olan herhangi bir yazdırılabilir geniş karakter için sıfır olmayan bir değer döndürür `iswalnum` sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
+ Bu yordamları döndürür sıfır olmayan IF her `c` bir noktalama karakteri belirli bir gösterimidir. `ispunct` bir boşluk karakteri veya kendisi için bir karakter değil herhangi bir yazdırılabilir karakter için sıfır olmayan bir değer döndürür `isalnum` sıfır olmayan bir değer değil. `iswpunct` alan geniş karakter ne olduğu için geniş karakter olan herhangi bir yazdırılabilir geniş karakter için sıfır olmayan bir değer döndürür `iswalnum` sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
   
  İçin test koşul sonucunu `ispunct` işlevi bağımlı `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin olmayan sürümleri `_l` tüm yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; olan sürümleri `_l` soneki, bunun yerine geçirilen yerel kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -97,9 +100,9 @@ int _iswpunct_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`ispunct`|\<CType.h >|  
+|`ispunct`|\<ctype.h>|  
 |`iswpunct`|\<CType.h > veya \<wchar.h >|  
-|`_ispunct_l`|\<CType.h >|  
+|`_ispunct_l`|\<ctype.h>|  
 |`_iswpunct_l`|\<CType.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

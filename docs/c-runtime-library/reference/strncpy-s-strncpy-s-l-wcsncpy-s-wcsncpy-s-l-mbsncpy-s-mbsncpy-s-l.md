@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsncpy_s_l
 - wcsncpy_s
@@ -35,7 +36,8 @@ f1_keywords:
 - _strncpy_s_l
 - wcsncpy_s
 - _tcsncpy_s_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wcsncpy_s_l function
 - _mbsnbcpy_s function
@@ -52,22 +54,23 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3d99dbf05d6ce70177b6ef3c5344e5f4059c0aac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b439ead7628366a358da5fadb354dbc9ca070074
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strncpys-strncpysl-wcsncpys-wcsncpysl-mbsncpys-mbsncpysl"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 Başka bir dizeye karakterlerinden kopyalar.  Bu sürümleri [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](../../c-runtime-library/reference/strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
   
 > [!IMPORTANT]
->  `_mbsncpy_s`ve `_mbsncpy_s_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncpy_s` ve `_mbsncpy_s_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -173,12 +176,12 @@ errno_t _mbsncpy_s_l(
   
 ### <a name="error-conditions"></a>Hata koşulları  
   
-|`strDest`|`numberOfElements`|`strSource`|Dönüş değeri|İçeriği`strDest`|  
+|`strDest`|`numberOfElements`|`strSource`|Dönüş değeri|İçeriği `strDest`|  
 |---------------|------------------------|-----------------|------------------|---------------------------|  
 |`NULL`|tüm|tüm|`EINVAL`|değiştirilmedi|  
 |tüm|tüm|`NULL`|`EINVAL`|`strDest`0 olarak ayarlanırsa [0]|  
 |tüm|0|tüm|`EINVAL`|değiştirilmedi|  
-|değil`NULL`|çok küçük|tüm|`ERANGE`|`strDest`0 olarak ayarlanırsa [0]|  
+|değil `NULL`|çok küçük|tüm|`ERANGE`|`strDest`0 olarak ayarlanırsa [0]|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevler ilk kopyalamayı deneyin `D` karakterlerinden `strSource` için `strDest`, burada `D` küçük olanı olan `count` ve uzunluğu `strSource`. Bu, `D` karakter sığacak içinde `strDest` (büyüklüğü olarak verilen `numberOfElements`) ve bu karakterleri kopyalanır ve bir sonlandırma NULL'dur eklenmiş; Aksi takdirde null Sonlandırıcı yer hala bırakın `strDest`[0] ayarlanır null karakter ve geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
@@ -205,7 +208,7 @@ errno_t _mbsncpy_s_l(
   
  Varsa `strDest` veya `strSource` olan `NULL`, veya `numberOfElements` 0'dır, geçersiz parametre işleyicisi çağrılır. Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür `EINVAL` ve ayarlar `errno` için `EINVAL`.  
   
- `wcsncpy_s`ve `_mbsncpy_s` joker karakter ve çok baytlı karakter sürümleri `strncpy_s`. Bağımsız değişkenleri ve dönüş değerini `wcsncpy_s` ve `mbsncpy_s` buna göre farklılık gösterir. Bu altı işlevler aynı şekilde aksi davranır.  
+ `wcsncpy_s` ve `_mbsncpy_s` joker karakter ve çok baytlı karakter sürümleri `strncpy_s`. Bağımsız değişkenleri ve dönüş değerini `wcsncpy_s` ve `mbsncpy_s` buna göre farklılık gösterir. Bu altı işlevler aynı şekilde aksi davranır.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   

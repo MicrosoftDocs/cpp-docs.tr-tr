@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strtoll
 - wcstoll
@@ -32,7 +33,8 @@ f1_keywords:
 - _wcstoll_l
 - strtoll
 - wcstoll
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tcstoll_l function
 - _wcstoll_l function
@@ -41,16 +43,17 @@ helpviewer_keywords:
 - _tcstoll function
 - _strtoll_l function
 ms.assetid: e2d05dcf-d3b2-4291-9e60-dee77e540fd7
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f449cd73a8536fb7dbdf46b7c7d1d45ad449cb10
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 954b529b894b61f2f4d8566f70145460656a702c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtoll-strtolll-wcstoll-wcstolll"></a>strtoll, _strtoll_l, wcstoll, _wcstoll_l
 Bir dizeye dönüştürür bir `long long` değeri.  
@@ -96,16 +99,16 @@ long long _wcstoll_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strtoll`dizeyi temsil edilen değeri döndürür `nptr`, temsili taşma zaman neden olacağından dışında — bu durumda, döndürür `LLONG_MAX` veya `LLONG_MIN`. Hiçbir dönüştürme gerçekleştirilebiliyorsa işlevi 0 değerini döndürür. `wcstoll`değerleri analogously çok döndürür `strtoll`.  
+ `strtoll` dizeyi temsil edilen değeri döndürür `nptr`, temsili taşma zaman neden olacağından dışında — bu durumda, döndürür `LLONG_MAX` veya `LLONG_MIN`. Hiçbir dönüştürme gerçekleştirilebiliyorsa işlevi 0 değerini döndürür. `wcstoll` değerleri analogously çok döndürür `strtoll`.  
   
- `LLONG_MAX`ve `LLONG_MIN` SINIRLARI tanımlanır. H.  
+ `LLONG_MAX` ve `LLONG_MIN` SINIRLARI tanımlanır. H.  
   
  Varsa `nptr` olan `NULL` veya `base` sıfır dışında olan ve 2 veya 36, büyüktür ya da daha az `errno` ayarlanır `EINVAL`.  
   
  Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strtoll` İşlev dönüştürür `nptr` için bir `long long`. Her iki işlevleri Durdur dize okuma `nptr` ilk karakterinde bunlar bir sayı bir parçası olarak tanımak olamaz. Bu sonlandırma null karakter olabilir veya büyük veya eşit ilk sayısal karakter olabilir `base`. `wcstoll`bir joker karakter sürümü `strtoll`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
+ `strtoll` İşlev dönüştürür `nptr` için bir `long long`. Her iki işlevleri Durdur dize okuma `nptr` ilk karakterinde bunlar bir sayı bir parçası olarak tanımak olamaz. Bu sonlandırma null karakter olabilir veya büyük veya eşit ilk sayısal karakter olabilir `base`. `wcstoll` bir joker karakter sürümü `strtoll`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -118,7 +121,7 @@ long long _wcstoll_l(
   
  Varsa `endptr` değil `NULL`, tarama durduruldu karakter işaretçisi işaret ediyor konumda depolanır `endptr`. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri `nptr` işaret ediyor konumunda depolanan `endptr`.  
   
- `strtoll`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `strtoll` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits` &#124; `letters`]  
   
@@ -128,7 +131,7 @@ long long _wcstoll_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`strtoll`, `_strtoll_l`|\<stdlib.h >|  
+|`strtoll`, `_strtoll_l`|\<stdlib.h>|  
 |`wcstoll`, `_wcstoll_l`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

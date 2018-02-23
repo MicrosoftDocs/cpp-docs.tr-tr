@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _isleadbyte_l
 - isleadbyte
@@ -27,7 +28,8 @@ f1_keywords:
 - _istleadbyte
 - _isleadbyte_l
 - isleadbyte
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - lead bytes
 - _isleadbyte_l function
@@ -35,22 +37,23 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e783413e207ff63f2b93b31af53b0b0a44ff68f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 82c8f6eb81e96527c0955d9b19fd8ce931e8d7fe
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isleadbyte-isleadbytel"></a>isleadbyte, _isleadbyte_l
 Bir karakter baytı birden çok baytlı karakter olup olmadığını belirler.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -68,10 +71,10 @@ int _isleadbyte_l(
  Test etmek için bir tamsayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `isleadbyte`bağımsız değişken test durumu ya da 0 uymazsa yoksa sıfır olmayan bir değer döndürür. "C" yerel ayarını ve tek baytlı karakter (SBCS) yerel kümesi `isleadbyte` her zaman 0 döndürür.  
+ `isleadbyte` bağımsız değişken test durumu ya da 0 uymazsa yoksa sıfır olmayan bir değer döndürür. "C" yerel ayarını ve tek baytlı karakter (SBCS) yerel kümesi `isleadbyte` her zaman 0 döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `isleadbyte` Makrosu bağımsız değişken birden çok baytlı karakter ilk baytını ise sıfır olmayan bir değer döndürür. `isleadbyte`Tüm tamsayı bağımsız değişkeni-1 için anlamlı bir sonuç üretir (`EOF`) için `UCHAR_MAX` (0xFF) (dahil) arasındadır.  
+ `isleadbyte` Makrosu bağımsız değişken birden çok baytlı karakter ilk baytını ise sıfır olmayan bir değer döndürür. `isleadbyte` Tüm tamsayı bağımsız değişkeni-1 için anlamlı bir sonuç üretir (`EOF`) için `UCHAR_MAX` (0xFF) (dahil) arasındadır.  
   
  Beklenen bağımsız değişken türü `isleadbyte` olan `int`; imzalı karakter aktarılırsa derleyici öngörülemeyen sonuçlara sağlayan oturum uzantısı tarafından bir tamsayıya dönüştürmek.  
   
@@ -87,8 +90,8 @@ int _isleadbyte_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`isleadbyte`|\<CType.h >|  
-|`_isleadbyte_l`|\<CType.h >|  
+|`isleadbyte`|\<ctype.h>|  
+|`_isleadbyte_l`|\<ctype.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

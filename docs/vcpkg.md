@@ -15,11 +15,11 @@ dev_langs:
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12a6edab46b223a1fa71094708de3ce8c9db5987
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: 07b7f4b3c5d77c7c31001a656667b7d2602a74b9
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="vcpkg-c-package-manager-for-windows"></a>vcpkg: Windows için C++ Paket Yöneticisi
 

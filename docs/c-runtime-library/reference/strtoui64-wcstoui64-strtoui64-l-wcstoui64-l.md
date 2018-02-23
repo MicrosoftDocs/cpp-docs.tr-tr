@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _strtoui64
 - _strtoui64_l
@@ -34,7 +35,8 @@ f1_keywords:
 - strtoui64
 - _strtoui64
 - wcstoui64_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _strtoui64_l function
 - _wcstoui64_l function
@@ -46,16 +48,17 @@ helpviewer_keywords:
 - strtoui64_l function
 - strtoui64 function
 ms.assetid: 7fcb537e-4554-4ceb-a5b6-bc09244e72ef
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 73f648d9b895c7947892fa91fa1efd5d45773a45
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2ad6ce06ef428005ea07214b426df0c61f623429
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtoui64-wcstoui64-strtoui64l-wcstoui64l"></a>_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l
 Bir dizeyi bir imzasız dönüştürme `__int64` değeri.  
@@ -101,16 +104,16 @@ unsigned __int64 _wcstoui64(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_strtoui64`dizede gösterilen değerini verir `nptr`, temsili taşma neden olacağından, içinde bu döndürür durumda dışında `_UI64_MAX`. `_strtoui64`hiçbir dönüştürme gerçekleştirilebiliyorsa 0 döndürür.  
+ `_strtoui64` dizede gösterilen değerini verir `nptr`, temsili taşma neden olacağından, içinde bu döndürür durumda dışında `_UI64_MAX`. `_strtoui64` hiçbir dönüştürme gerçekleştirilebiliyorsa 0 döndürür.  
   
- `_UI64_MAX`SINIRLARI tanımlanır. H.  
+ `_UI64_MAX` SINIRLARI tanımlanır. H.  
   
  Varsa `nptr` olan `NULL` veya `base` sıfır dışında olan ve 2 veya 36, büyüktür ya da daha az `errno` ayarlanır `EINVAL`.  
   
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hakkında daha fazla bilgi için dönüş kodları.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_strtoui64` İşlev dönüştürür `nptr` için bir `unsigned` `__int64`. `_wcstoui64`bir joker karakter sürümü `_strtoui64`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde bu işlevler aynı şekilde davranır.  
+ `_strtoui64` İşlev dönüştürür `nptr` için bir `unsigned` `__int64`. `_wcstoui64` bir joker karakter sürümü `_strtoui64`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde bu işlevler aynı şekilde davranır.  
   
  Her iki işlevleri Durdur dize okuma `nptr` ilk karakterinde bunlar bir sayı bir parçası olarak tanımak olamaz. Bu sonlandırma null karakter olabilir ya da sıfırdan büyük veya eşit ilk sayısal karakter olabilir `base`.  
   
@@ -125,7 +128,7 @@ unsigned __int64 _wcstoui64(
   
  Varsa `endptr` değil `NULL`, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan `endptr`. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri `nptr` gösterdiği konumunda depolanan `endptr`.  
   
- `_strtoui64`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `_strtoui64` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits`]  
   
@@ -135,9 +138,9 @@ unsigned __int64 _wcstoui64(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_strtoui64`|\<stdlib.h >|  
+|`_strtoui64`|\<stdlib.h>|  
 |`_wcstoui64`|\<stdlib.h > veya \<wchar.h >|  
-|`_strtoui64_l`|\<stdlib.h >|  
+|`_strtoui64_l`|\<stdlib.h>|  
 |`_wcstoui64_l`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  

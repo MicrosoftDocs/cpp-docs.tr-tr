@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - iswalpha
 - _iswalpha_l
@@ -33,7 +34,8 @@ f1_keywords:
 - iswalpha
 - _istalpha_l
 - _iswalpha_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _iswalpha_l function
 - _isalpha_l function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - istalpha function
 - _istalpha function
 ms.assetid: ed6cc2be-c4b0-4475-87ac-bc06d8c23064
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d7ef7443a37d8d68b40f47f3eacfee8bac2626a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 04f3d1720420ce7b32e9386ccd384de25c78ac79
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isalpha-iswalpha-isalphal-iswalphal"></a>isalpha, iswalpha, _isalpha_l, _iswalpha_l
 Tamsayı alfabetik bir karakter temsil edip etmediğini belirler.  
@@ -86,7 +89,7 @@ int _iswalpha_l(
  Geçerli yerel yerine kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamları döndürür sıfır olmayan IF her `c` alfabetik bir karakter belirli bir gösterimidir. `isalpha`sıfır olmayan bir değer döndürür `c` A - Z veya a - z aralıklarında değil. `iswalpha`geniş karakterler için yalnızca sıfır olmayan bir değer döndüren `iswupper` veya `iswlower` sıfır olmayan; diğer bir deyişle, tüm wide için diğer bir deyişle bir uygulama tanımlı bir kümesinin hangi hiçbiri için karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace` sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
+ Bu yordamları döndürür sıfır olmayan IF her `c` alfabetik bir karakter belirli bir gösterimidir. `isalpha` sıfır olmayan bir değer döndürür `c` A - Z veya a - z aralıklarında değil. `iswalpha` geniş karakterler için yalnızca sıfır olmayan bir değer döndüren `iswupper` veya `iswlower` sıfır olmayan; diğer bir deyişle, tüm wide için diğer bir deyişle bir uygulama tanımlı bir kümesinin hangi hiçbiri için karakter `iswcntrl`, `iswdigit`, `iswpunct`, veya `iswspace`sıfır olmayan bir değer değil. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
   
  Bu işlevleri sürümlerini `_l` soneki geçerli yerel yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -103,9 +106,9 @@ int _iswalpha_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`isalpha`|\<CType.h >|  
+|`isalpha`|\<ctype.h>|  
 |`iswalpha`|\<CType.h > veya \<wchar.h >|  
-|`_isalpha_l`|\<CType.h >|  
+|`_isalpha_l`|\<ctype.h>|  
 |`_iswalpha_l`|\<CType.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wcsset
 - _mbsset
@@ -43,7 +44,8 @@ f1_keywords:
 - _wcsset_l
 - _fstrset
 - _tcsset
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wcsset_l function
 - _tcsset function
@@ -66,22 +68,23 @@ helpviewer_keywords:
 - fstrset function
 - _tcsset_l function
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 58e3369ac57b5d7903bdd6f98f2197849b78a1fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fec05f650789581065357aa4ce90cfde121d99e7
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strset-strsetl-wcsset-wcssetl-mbsset-mbssetl"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 Bir dizenin karakterlerini karaktere ayarlar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l](../../c-runtime-library/reference/strset-s-strset-s-l-wcsset-s-wcsset-s-l-mbsset-s-mbsset-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbsset`ve `_mbsset_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsset` ve `_mbsset_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -129,9 +132,9 @@ unsigned char *_mbsset_l(
  Bir işaretçi değiştirilmiş dizesi olarak döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_strset` İşlevi (sonlandırma null karakter dışında) tüm karakterini ayarlar `str` için `c`, dönüştürülebilir `char`. `_wcsset`ve `_mbsset_l` joker karakter ve çok baytlı karakter sürümleri `_strset`, ve bağımsız değişkenleri ve dönüş değerleri veri türlerini buna göre farklılık gösterir. Bu işlevler aynı şekilde aksi davranır.  
+ `_strset` İşlevi (sonlandırma null karakter dışında) tüm karakterini ayarlar `str` için `c`, dönüştürülebilir `char`. `_wcsset` ve `_mbsset_l` joker karakter ve çok baytlı karakter sürümleri `_strset`, ve bağımsız değişkenleri ve dönüş değerleri veri türlerini buna göre farklılık gösterir. Bu işlevler aynı şekilde aksi davranır.  
   
- `_mbsset`parametreleri doğrular. Varsa `str` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsset` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `_strset`ve `_wcsset` parametrelerini doğrulamaz.  
+ `_mbsset` parametreleri doğrular. Varsa `str` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsset` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `_strset` ve `_wcsset` parametrelerini doğrulamaz.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Dosyalardan yok dışında bu işlevler sürümleri özdeş sahip `_l` sonekini kullan geçerli yerel ayar ve sahip olanları `_l` soneki yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -150,9 +153,9 @@ unsigned char *_mbsset_l(
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
 |`_strset`|\<String.h >|  
-|`_strset_l`|\<Tchar.h >|  
+|`_strset_l`|\<tchar.h>|  
 |`_wcsset`|\<String.h > veya \<wchar.h >|  
-|`_wcsset_l`|\<Tchar.h >|  
+|`_wcsset_l`|\<tchar.h>|  
 |`_mbsset`, `_mbsset_l`|\<Mbstring.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

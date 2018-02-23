@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _strtof_l
 - wcstof
@@ -36,7 +37,8 @@ f1_keywords:
 - wcstof
 - corecrt_wstdlib/_wcstof_l
 - _wcstof_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _strtof_l function
 - _tcstof function
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - _tcstof_l function
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0fdfe3a202d18aa1634a2ef692088264ff8fe188
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 35ee9dd81cb2509e161846870d23b7a995ac5807
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtof-strtofl-wcstof-wcstofl"></a>strtof, _strtof_l, wcstof, _wcstof_l
 Dizeleri tek duyarlıklı kayan noktalı değerine dönüştürür.  
@@ -93,14 +96,14 @@ float wcstof_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strtof`gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür`HUGE_VALF`. İşaretini `HUGE_VALF` gösterilemez değerini oturum eşleşir. `strtof`hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.  
+ `strtof` gösterimi, servis talebi işlevi döndürür +/-taşma, ne zaman neden olacağından dışında kayan noktalı sayı değerini döndürür`HUGE_VALF`. İşaretini `HUGE_VALF` gösterilemez değerini oturum eşleşir. `strtof` hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.  
   
- `wcstof`değerleri analogously çok döndürür `strtof`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
+ `wcstof` değerleri analogously çok döndürür `strtof`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   
  Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- Giriş dizesi her işlevi dönüştürür `nptr` için bir `float`. `strtof` İşlev dönüştürür `nptr` tek duyarlıklı değeri. `strtof`dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. `wcstof`bir joker karakter sürümü `strtof`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
+ Giriş dizesi her işlevi dönüştürür `nptr` için bir `float`. `strtof` İşlev dönüştürür `nptr` tek duyarlıklı değeri. `strtof` dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. `wcstof` bir joker karakter sürümü `strtof`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -113,7 +116,7 @@ float wcstof_l(
   
  Varsa `endptr` değil `NULL`, tarama durduruldu karakter işaretçisi işaret ediyor konumda depolanır `endptr`. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri `nptr` işaret ediyor konumunda depolanan `endptr`.  
   
- `strtof`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `strtof` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`e` &#124; `E`}[`sign`]`digits`]  
   

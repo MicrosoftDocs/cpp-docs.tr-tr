@@ -2,7 +2,6 @@
 title: "Türleri ve üyeleri onaysız kılınmadan (C + +/ CX) | Microsoft Docs"
 ms.custom: 
 ms.date: 12/30/2016
-ms.prod: windows-client-threshold
 ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
@@ -15,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1062a507d6281e003d9294de1c1cb39b7c01f9e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1cc0ef30006afb9fcad65bc64e3f12fe9586d920
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="deprecating-types-and-members-ccx"></a>Türleri ve üyeleri onaysız kılınmadan (C + +/ CX)
 C + +/ CX, üreticileri ve tüketicileri kullanarak Windows çalışma zamanı tür ve üyelerinin kullanımdan [kullanım dışı](http://msdn.microsoft.com/en-us/8b02ad36-3b5f-4361-888b-e6a99040e57c) özniteliği desteklenir. Bu öznitelik uygulanmış bir API kullanmak, API kullanım dışıdır ve ayrıca kullanmak için alternatif bir API önerir belirten bir derleme zamanı uyarı iletisi alırsınız. Kendi ortak türleri ve yöntemleri bu özniteliğini uygulayın ve kendi özel ileti sağlayın.  

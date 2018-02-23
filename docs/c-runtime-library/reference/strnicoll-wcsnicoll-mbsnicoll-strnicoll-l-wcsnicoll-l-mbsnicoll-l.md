@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsnicoll_l
 - _mbsnicoll
@@ -42,7 +43,8 @@ f1_keywords:
 - _mbsnicoll
 - strinicoll
 - _tcsncicoll
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - code pages, using for string comparisons
 - ftcsncicoll function
@@ -67,22 +69,23 @@ helpviewer_keywords:
 - tcsnicoll function
 - _strnicoll function
 ms.assetid: abf0c569-725b-428d-9ff2-924f430104b4
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2580ab455ead213edf21fa7f3e20307c8d2938b2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 37ce547f56ce635d7abb2577b1c8278783ba360d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strnicoll-wcsnicoll-mbsnicoll-strnicolll-wcsnicolll-mbsnicolll"></a>_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 Yerel ayarlara özgü bilgileri kullanarak dizeleri karşılaştırır.  
   
 > [!IMPORTANT]
->  `_mbsnicoll`ve `_mbsnicoll_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnicoll` ve `_mbsnicoll_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -137,11 +140,11 @@ int _mbsnicoll_l(
   
 |Dönüş değeri|Dize2 Dize1 ilişkisi|  
 |------------------|----------------------------------------|  
-|< 0|`string1`küçüktür`string2`|  
-|0|`string1`aynı`string2`|  
-|> 0|`string1`büyüktür`string2`|  
+|< 0|`string1` Küçüktür `string2`|  
+|0|`string1` aynı `string2`|  
+|> 0|`string1` Büyüktür `string2`|  
   
- Bunların her biri döndürür işlevleri `_NLSCMPERROR`. Kullanılacak `_NLSCMPERROR`, her iki dize içerir. H veya MBSTRING. H. `_wcsnicoll`ya da başarısız `string1` veya `string2` harmanlama sırası etki alanı dışından joker karakter kodları içerir. Hata oluştuğunda `_wcsnicoll` ayarlayabilir `errno` için `EINVAL`. Çağrı sırasında bir hata olup olmadığını denetlemek için `_wcsnicoll`ayarlayın `errno` 0 ve denetleyin `errno` çağırdıktan sonra `_wcsnicoll` **.**  
+ Bunların her biri döndürür işlevleri `_NLSCMPERROR`. Kullanılacak `_NLSCMPERROR`, her iki dize içerir. H veya MBSTRING. H. `_wcsnicoll` ya da başarısız `string1` veya `string2` harmanlama sırası etki alanı dışından joker karakter kodları içerir. Hata oluştuğunda `_wcsnicoll` ayarlayabilir `errno` için `EINVAL`. Çağrı sırasında bir hata olup olmadığını denetlemek için `_wcsnicoll`ayarlayın `errno` 0 ve denetleyin `errno` çağırdıktan sonra `_wcsnicoll` **.**  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu işlevlerin her biri ilk büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir `count` içinde karakterleri `string1` ve `string2` kod sayfasına göre. Bu işlevler yalnızca, kod sayfasında sipariş ve lexicographic karakter sırası karakter arasında bir fark ayarlayabilir ve bu fark dize karşılaştırma için ilgilendirir olduğunda kullanılmalıdır. Bu işlevlerin sürümleri `_l` soneki geçerli yerel ayar ve kod sayfasını kullanın. Sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  

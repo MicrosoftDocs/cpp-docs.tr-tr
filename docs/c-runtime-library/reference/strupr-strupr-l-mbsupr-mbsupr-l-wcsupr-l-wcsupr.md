@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsupr_l
 - _mbsupr
@@ -39,7 +40,8 @@ f1_keywords:
 - _strupr
 - mbsupr_l
 - _wcsupr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tcsupr_l function
 - mbsupr function
@@ -67,22 +69,23 @@ helpviewer_keywords:
 - _tcsupr function
 - strings [C++], converting case
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f211a64dca335433c8da779f6d3674f47ba33ce9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 904f897a36c3db24ce78983e3c02cc0f019bf16e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strupr-struprl-mbsupr-mbsuprl-wcsuprl-wcsupr"></a>_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 Bir dizeyi büyük harfe dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l](../../c-runtime-library/reference/strupr-s-strupr-s-l-mbsupr-s-mbsupr-s-l-wcsupr-s-wcsupr-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbsupr`ve `_mbsupr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsupr` ve `_mbsupr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -150,7 +153,7 @@ unsigned char *_mbsupr_l(
 ## <a name="remarks"></a>Açıklamalar  
  `_strupr` İşlev yerinde, her küçük harfe dönüştürür `str` büyük harfe. Dönüştürme tarafından belirlenen `LC_CTYPE` yerel kategori ayarı. Diğer karakterler etkilenmez. Daha fazla bilgi için `LC_CTYPE`, bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). Bu işlevlerin sürümleri `_l` sonekini kullan geçerli yerel; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
- `_wcsupr`ve `_mbsupr` joker karakter ve çok baytlı karakter sürümleri `_strupr`. YAZMAÇ değerini `_wcsupr` joker karakter olan dizeleri; bu `_mbsupr` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_wcsupr` ve `_mbsupr` joker karakter ve çok baytlı karakter sürümleri `_strupr`. YAZMAÇ değerini `_wcsupr` joker karakter olan dizeleri; bu `_mbsupr` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
   
  Varsa `str` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için bu işlevler dönüş özgün dizeye ve kümesi yürütülmesine izin veriliyorsa `errno` için `EINVAL`.  
   

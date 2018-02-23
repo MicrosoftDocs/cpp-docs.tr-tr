@@ -1,13 +1,15 @@
 ---
 title: "Yöneltmesi ve adresi işleçlerin | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - address-of operator (&)
 - '* operator'
@@ -22,77 +24,80 @@ helpviewer_keywords:
 - '* operator, address-of operator'
 - operators [C++], indirection
 ms.assetid: 10d62b00-12ba-4ea9-a2d5-09ac29ca2232
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 715221da8ea960f19e9c4ab0e386afc61c3439fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d65a380194e5634d5873e9b060c49096197e48f2
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="indirection-and-address-of-operators"></a>İşleçlerin Yöneltmesi ve Adresi
-İndirection işleci (**\***) bir değer bir işaretçi dolaylı olarak erişir. İşlenen, bir işaretçi değeri olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.  
-  
- İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir depolama konumuna işaret ediyorsa, sonuç depolama konumunu gösteren l değeridir.  
-  
- İşaretçi değeri geçersiz, tanımlanmamış bir sonucudur. Aşağıdaki liste, işaretçi değerini geçersiz kılan en yaygın koşulların bazılarını içermektedir.  
-  
--   İşaretçi, bir null işaretçidir.  
-  
--   İşaretçi, başvuru sırasında görünür olmayan yerel bir öğrenin adresini belirtir.  
-  
--   İşaretçi, işaret edilen nesnenin türü için uygun olmayan bir şekilde hizalanmış bir adresi belirtir.  
-  
--   İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.  
-  
- Address-of işleci (**&**), işlenen adresini verir. Address-of işleci işleneni işlevi Belirleyicisi ya da bir bit alanı değildir ve ile bildirilmemiş bir nesne atayan bir l-değeri olabilir **kaydetmek** depolama sınıfı tanımlayıcısı.  
-  
- Adres işleneninin sonucu, işlenenin işaretçisidir. İşaretçi tarafından ele alınan tür, işleneninin türüdür.  
-  
- Adres işleci, yalnızca temel, yapı veya birleşim türlerindeki dosya kapsamı düzeyinde bildirilen değişkenlere veya alt simgeli dizi başvurularına uygulanabilir. Bu ifadelerde, adres işlecini içermeyen sabit bir ifade adres ifadesine eklenebilir veya bu ifadeden çıkarılabilir.  
-  
-## <a name="examples"></a>Örnekler  
- Aşağıdaki örnekler bu bildirimleri kullanır:  
-  
+
+Birli indirection işleci (__&#42;__) bir değer bir işaretçi dolaylı olarak erişir. İşlenen bir işaretçi türü olmalıdır. İşlemin sonucu, işlenen tarafından ele alınan değerdir; yani işlenenin işaret ettiği adresteki değerdir. Sonucun türü, işlenenin ele aldığı türdür.
+
+İndirection işleci sonucu *türü* işlenenin türü ise *yazmak için işaretçi*. İşlenen bir işleve işaret ediyorsa, sonuç bir işlev göstergesidir. Bir nesneye işaret ediyorsa, nesne atayan bir lvalue sonucudur.
+
+İndirection işleci sonucunu işaretçi değeri geçerli değil, tanımlanmamıştır. Bu işaretçi değeri geçersiz kılmak en yaygın koşulların bazıları şunlardır:
+
+- İşaretçi, bir null işaretçidir.
+
+- İşaretçinin nesneyi adresini başvurusu aynı anda yaşam süresi (örneğin, bir nesne kapsam dışında gitti veya, serbest) bitişinden sonra belirtir.
+
+- İşaretçi, işaret edilen nesnenin türü için uygun olmayan bir şekilde hizalanmış bir adresi belirtir.
+
+- İşaretçi, yürütülen program tarafından kullanılmayan bir adresi belirtir.
+
+Address-of birli işleci (**&**), işlenen adresini verir. İşleneni, bildirilmemiş olan bir nesne atayan bir ya da lvalue olmalıdır __kaydetmek__ ve bit alanı ya da bir tekli sonucunu __&#42;__ işleci veya bir dizi başvuru ( __&#91; &#93;__ ) operatör ya da bir işlevi tanımlayıcı. Sonuç türü olan *yazmak için işaretçi* bir işlenen türü için *türü*.
+
+İşlenen bir tekli sonucunu ise __&#42;__ işleci, hiçbiri işleci değerlendirilir ve her ikisi de atlanmış gibi sonucudur. Sonuç bir lvalue değil ve işleçler kısıtlamalar hala geçerlidir. İşlenen sonucu ise bir __&#91; &#93;__ işleci, hiçbiri  __&__  ya da birli işleç __&#42;__ tarafından kapsanan  __&#91; &#93;__  işleci değerlendirildiği. Sonucu kaldırma aynı etkiye sahip  __&__  işleci ve değiştirme __&#91; &#93;__ işleci bir  __+__  işleci. Aksi takdirde, sonuç nesnesi veya işlenen tarafından belirlenen işlevi bir işaretçidir.
+
+
+## <a name="examples"></a>Örnekler
+
+Aşağıdaki örnekler, bu ortak bildirimleri kullanın:
+
+```C
+int *pa, x;
+int a[20];
+double d;
+```
+
+Address-of işleci bu bildirimi kullanır (**&**) dizisinin altıncı öğesi adresini yapılacak `a`. Sonuç işaretçi değişkende depolanır `pa`:
+
+```C  
+pa = &a[5];
+```
+
+İndirection işleci (__&#42;__) erişmek için bu örnekte kullanılan `int` depolanan adresi değerinde `pa`. Değer tamsayı değişkenine atanan `x`:
+
+```C
+x = *pa;
+```
+
+Bu örnekte gösterilmiştir adresine indirection işleci uygulanıyor sonucunu `x` aynı `x`:
+
+```C
+assert( x == *&x );
+```
+
+Bu örnek, bir işlev işaretçisi bildirme eşdeğer yollarını gösterir:
+
+```C
+int roundup( void );     /* Function declaration */
+
+int  *proundup  = roundup;
+int  *pround  = &roundup;
+assert( pround == proundup );
 ```  
-int *pa, x;  
-int a[20];  
-double d;  
-```  
-  
- Bu deyim, adres işlecini kullanır:  
-  
-```  
-pa = &a[5];  
-```  
-  
- Address-of işleci (**&**) dizisinin altıncı öğesi adresini alır `a`. Sonuç, `pa` işaretçi değişkeninde depolanır.  
-  
-```  
-x = *pa;  
-```  
-  
- İndirection işleci (**\***) erişmek için bu örnekte kullanılan `int` depolanan adresi değerinde `pa`. Değer, `x` tamsayı değişkenine atanır.  
-  
-```  
-if( x == *&x )  
-    printf( "True\n" );  
-```  
-  
- Bu örnekte, `True` sözcüğü yazdırılarak yöneltme işlecinin `x` adresine uygulanmasıyla elde edilen sonucun `x` ile aynı olduğu gösterilir.  
-  
-```  
-int roundup( void );     /* Function declaration */  
-  
-int  *proundup  = roundup;  
-int  *pround  = &roundup;  
-```  
-  
- `roundup` işlevi bildirildiğinde, iki `roundup` işaretçisi bildirilir ve başlatılır. İlk işaretçi `proundup` yalnızca işlevin adı kullanılarak başlatılır, ikinci işaretçi `pround` ise başlatma sırasında adres işlecini kullanır. Başlatma işlemleri eşdeğerdir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönlendirme işleci: *](../cpp/indirection-operator-star.md)   
- [Address-of İşleci: &](../cpp/address-of-operator-amp.md)
+
+`roundup` işlevi bildirildiğinde, iki `roundup` işaretçisi bildirilir ve başlatılır. İlk işaretçi `proundup` yalnızca işlevin adı kullanılarak başlatılır, ikinci işaretçi `pround` ise başlatma sırasında adres işlecini kullanır. Başlatma işlemleri eşdeğerdir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönlendirme işleci: &#42;](../cpp/indirection-operator-star.md)  
+[Address-of İşleci: &](../cpp/address-of-operator-amp.md)  

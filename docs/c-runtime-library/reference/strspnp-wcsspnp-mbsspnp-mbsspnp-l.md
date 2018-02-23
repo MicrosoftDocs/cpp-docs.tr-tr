@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsspnp
 - _wcsspnp
@@ -36,7 +37,8 @@ f1_keywords:
 - _wcsspnp
 - _strspnp
 - mbsspnp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _strspnp function
 - _wcsspnp function
@@ -49,22 +51,23 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 314adc5ad7011d715f0c49887761390994ebc45f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7379218425c640b9730d9b7d743163a5799f5b60
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strspnp-wcsspnp-mbsspnp-mbsspnpl"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 Bir işaretçi ilk karakter, içinde başka dize verilir verilen bir dize döndürür.  
   
 > [!IMPORTANT]
->  `_mbsspnp`ve `_mbsspnp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsspnp` ve `_mbsspnp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -103,7 +106,7 @@ unsigned char *_mbsspnp_l(
  `_strspnp`, `_wcsspnp`, ve `_mbsspnp` ilk karakteri bir işaretçi dönmek `str` ait olmayan karakter kümesine `charset`. Bunların her biri döndürür işlevleri `NULL` varsa `str` tamamen karakterlerinden oluşur `charset`. Hiçbir değer döndürmeyen her Bu yordamlar için bir hata göstermek için ayrılmış.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_mbsspnp` İşlevi bir işaretçi ilk karakter, birden çok baytlı karakter döndürür `str` ait olmayan karakter kümesine `charset`. `_mbsspnp`çok baytlı karakter sıralarının göre tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Arama null karakterlerini sonlandırma içermez.  
+ `_mbsspnp` İşlevi bir işaretçi ilk karakter, birden çok baytlı karakter döndürür `str` ait olmayan karakter kümesine `charset`. `_mbsspnp` çok baytlı karakter sıralarının göre tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Arama null karakterlerini sonlandırma içermez.  
   
  Her iki `str` veya `charset` null işaretçi açıklandığı gibi bu işlevi geçersiz parametre işleyicisi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür `NULL` ve ayarlar `errno` için `EINVAL`.  
   
@@ -113,17 +116,17 @@ unsigned char *_mbsspnp_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|  
 |`_tcsspnp`|`_strspnp`|`_mbsspnp`|`_wcsspnp`|  
   
- `_strspnp`ve `_wcsspnp` tek baytlı karakter ve joker karakter sürümleri `_mbsspnp`. `_strspnp`ve `_wcsspnp` aynı şekilde davranır `_mbsspnp` aksi; bunlar yalnızca bu eşleme için sağlanır ve herhangi bir nedenden dolayı kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).  
+ `_strspnp` ve `_wcsspnp` tek baytlı karakter ve joker karakter sürümleri `_mbsspnp`. `_strspnp` ve `_wcsspnp` aynı şekilde davranır `_mbsspnp` aksi; bunlar yalnızca bu eşleme için sağlanır ve herhangi bir nedenden dolayı kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).  
   
- `_mbsspnp_l`Bunun yerine geçirilen yerel ayar parametresi kullanır ancak bu aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_mbsspnp_l` Bunun yerine geçirilen yerel ayar parametresi kullanır ancak bu aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
 |`_mbsspnp`|\<Mbstring.h >|  
-|`_strspnp`|\<Tchar.h >|  
-|`_wcsspnp`|\<Tchar.h >|  
+|`_strspnp`|\<tchar.h>|  
+|`_wcsspnp`|\<tchar.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

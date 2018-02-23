@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbsnset
 - _strnset
@@ -45,7 +46,8 @@ f1_keywords:
 - _mbsnset
 - _wcsnset
 - _tcsncset
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wcsnset function
 - strnset_l function
@@ -72,22 +74,23 @@ helpviewer_keywords:
 - strings [C++], initializing
 - tcsnset_l function
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4de644a80f0c461788b8f4a501e23df8e58be9ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3dc658ef152eb6065f9b0a310468a6880d87ead5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strnset-strnsetl-wcsnset-wcsnsetl-mbsnset-mbsnsetl"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 Belirli bir karakter dizesine karakterlerinden başlatır. Bu işlevlerin daha güvenli sürümleri var; bkz: [_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l](../../c-runtime-library/reference/strnset-s-strnset-s-l-wcsnset-s-wcsnset-s-l-mbsnset-s-mbsnset-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbsnset`ve `_mbsnset_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnset` ve `_mbsnset_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -146,9 +149,9 @@ unsigned char *_mbsnset_l(
 ## <a name="remarks"></a>Açıklamalar  
  `_strnset` İşlevi ayarlar, en fazla ilk `count` karakterlerinden `str` için `c` (dönüştürülen `char`). Varsa `count` uzunluğundan daha büyük `str`, uzunluğu `str` yerine kullanılan `count`.  
   
- `_wcsnset`ve `_mbsnset` joker karakter ve çok baytlı karakter sürümleri `_strnset`. Dize bağımsız değişkenleri ve dönüş değerini `_wcsnset` joker karakter olan dizeleri; bu `_mbsnset` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_wcsnset` ve `_mbsnset` joker karakter ve çok baytlı karakter sürümleri `_strnset`. Dize bağımsız değişkenleri ve dönüş değerini `_wcsnset` joker karakter olan dizeleri; bu `_mbsnset` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
   
- `_mbsnset`parametreleri doğrular; varsa `str` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa `_mbsnset` NULL döndürür ve ayarlar `errno` için `EINVAL`. `_strnset`ve `_wcsnset` parametrelerini doğrulamaz.  
+ `_mbsnset` parametreleri doğrular; varsa `str` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa `_mbsnset` NULL döndürür ve ayarlar `errno` için `EINVAL`. `_strnset` ve `_wcsnset` parametrelerini doğrulamaz.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -164,9 +167,9 @@ unsigned char *_mbsnset_l(
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
 |`_strnset`|\<String.h >|  
-|`_strnset_l`|\<Tchar.h >|  
+|`_strnset_l`|\<tchar.h>|  
 |`_wcsnset`|\<String.h > veya \<wchar.h >|  
-|`_wcsnset_l`|\<Tchar.h >|  
+|`_wcsnset_l`|\<tchar.h>|  
 |`_mbsnset`, `_mbsnset_l`|\<Mbstring.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

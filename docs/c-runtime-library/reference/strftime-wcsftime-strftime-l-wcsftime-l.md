@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strftime
 - _wcsftime_l
@@ -29,7 +30,8 @@ f1_keywords:
 - _tcsftime
 - strftime
 - wcsftime
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _strftime_l function
 - strftime function
@@ -39,16 +41,17 @@ helpviewer_keywords:
 - _tcsftime function
 - time strings
 ms.assetid: 6330ff20-4729-4c4a-82af-932915d893ea
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 785ad16e8f86f74252c4391044d2def96091fe61
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 990dab2b4cedbdb464a2e546a4c83758cb46c89a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strftime-wcsftime-strftimel-wcsftimel"></a>strftime, wcsftime, _strftime_l, _wcsftime_l
 Bir saat dizesi biçimi.  
@@ -95,20 +98,20 @@ size_t _wcsftime_l(
  Biçim denetimi dizesi.  
   
  `timeptr`  
- `tm`veri yapısı.  
+ `tm` veri yapısı.  
   
  `locale`  
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strftime`sıraya alınan karakterlerin sayısını döndürür `strDest` ve `wcsftime` karşılık gelen geniş karakter sayısını verir.  
+ `strftime` sıraya alınan karakterlerin sayısını döndürür `strDest` ve `wcsftime` karşılık gelen geniş karakter sayısını verir.  
   
  Sonlandırma null gibi karakterler toplam sayısı ise birden fazla `maxsize`, her iki `strftime` ve `wcsftime` 0 ve içeriğini döndürmek `strDest` belirsiz olduğundan.  
   
  Karakter sayısını `strDest` değişmez değer karakter sayısına eşittir `format` eklenebilir herhangi bir karakteri yanı sıra `format` biçimlendirme kodları aracılığıyla. Bir dizenin sonlandırma null dönüş değeri sayılmaz.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strftime` Ve `wcsftime` işlevleri biçimi `tm` saat değerinde `timeptr` sağlanan göre `format` bağımsız değişkeni ve deposu sonuç arabelleği `strDest`. En fazla `maxsize` karakter dizesini yerleştirilir. Alanları açıklaması `timeptr` yapısı için bkz: [asctime](../../c-runtime-library/reference/asctime-wasctime.md). `wcsftime`joker karakter eşdeğerdir `strftime`; dize işaretçisi bağımsız değişkeni bir joker karakter dizesi işaret eder. Bu işlevler aynı şekilde aksi davranır.  
+ `strftime` Ve `wcsftime` işlevleri biçimi `tm` saat değerinde `timeptr` sağlanan göre `format` bağımsız değişkeni ve deposu sonuç arabelleği `strDest`. En fazla `maxsize` karakter dizesini yerleştirilir. Alanları açıklaması `timeptr` yapısı için bkz: [asctime](../../c-runtime-library/reference/asctime-wasctime.md). `wcsftime` joker karakter eşdeğerdir `strftime`; dize işaretçisi bağımsız değişkeni bir joker karakter dizesi işaret eder. Bu işlevler aynı şekilde aksi davranır.  
   
 > [!NOTE]
 >  Visual C++ 2005 önce sürümlerde belgelere açıklanan `format` parametresinin `wcsftime` veri türüne sahip olarak `const wchar_t *`, ancak gerçek uygulanması `format` veri türü `const char *`. Uygulaması `format` veri türü, geçerli ve önceki belgeleri, diğer bir deyişle, yansıtacak şekilde güncelleştirildi `const wchar_t *`.  
@@ -195,7 +198,7 @@ size_t _wcsftime_l(
   
 |Biçim Kodu|Açıklama|  
 |-----------------|-------------|  
-|`%#a, %#A, %#b, %#B, %#p, %#X, %#z, %#Z, %#%`|`#`Bayrak göz ardı edilir.|  
+|`%#a, %#A, %#b, %#B, %#p, %#X, %#z, %#Z, %#%`|`#` Bayrak göz ardı edilir.|  
 |`%#c`|Uzun tarih ve saat gösterimi, geçerli yerel ayar için uygun. Örneğin: "Salı, 14 Mart 1995, 12:41:29".|  
 |`%#x`|Uzun tarih gösterimi, geçerli yerel ayar için uygun. Örneğin: "Salı, 14 Mart 1995".|  
 |`%#d, %#H, %#I, %#j, %#m, %#M, %#S, %#U, %#w, %#W, %#y, %#Y`|Baştaki sıfırlar (varsa) kaldırın.|  

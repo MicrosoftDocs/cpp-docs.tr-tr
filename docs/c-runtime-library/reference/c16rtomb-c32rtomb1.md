@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - c16rtomb
 - c32rtomb
@@ -30,21 +30,23 @@ f1_keywords:
 - c32rtomb
 - uchar/c16rtomb
 - uchar/c32rtomb
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - c16rtomb function
 - c32rtomb function
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9eb43d6b225bce002eb2ce5293cb048d3062bcd5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2deca697a3dcb338ae9e9ea9e071c73979695ad8
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="c16rtomb-c32rtomb"></a>c16rtomb, c32rtomb
 Geçerli yerel birden çok baytlı karakter UTF-16 veya UTF-32 geniş karakter dönüştürün.  
@@ -65,13 +67,13 @@ size_t c32rtomb(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`mbchar`  
+ [out] `mbchar`  
  İşaretçi dönüştürülen birden çok baytlı karakter depolamak için bir dizi.  
   
- [in]`wchar`  
+ [in] `wchar`  
  Dönüştürülecek geniş karakter.  
   
- [içinde out]`state`  
+ [içinde out] `state`  
  Bir işaretçi bir `mbstate_t` nesnesi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -88,7 +90,7 @@ size_t c32rtomb(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`c16rtomb`, `c32rtomb`|C, C++: \<uchar.h >|  
+|`c16rtomb`, `c32rtomb`|C, C++: \<uchar.h>|  
   
  Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
   

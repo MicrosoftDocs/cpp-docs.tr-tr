@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wtoll
 - _atoll_l
@@ -33,23 +34,25 @@ f1_keywords:
 - _tstoll
 - _wtoll_l
 - atoll
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - atoll function
 - _wtoll_l function
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1b308c6a86fd4f60be19fd3a95d935e6932d0079
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 673e8aa823e8624dc70a06447db3da5c68617fc5
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atoll-atolll-wtoll-wtolll"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 Bir dizeye dönüştürür bir `long long` tamsayı.  
@@ -100,7 +103,7 @@ long long _wtoll_l(
   
  A `whitespace` , göz ardı edilir; boşluk veya sekmesinde karakterlerden oluşur `sign` da artı (+) veya eksi (-); ve `digits` bir veya daha fazla basamakların.  
   
- `_wtoll`aynıdır `atoll` dışında geniş karakter dizesi bir parametre olarak alır.  
+ `_wtoll` aynıdır `atoll` dışında geniş karakter dizesi bir parametre olarak alır.  
   
  Bu işlevleri sürümlerini `_l` soneki olduğunu, yoksa sürümleriyle aynı geçerli yerel yerine geçirilen yerel ayar parametresi kullandıkları dışında. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -116,7 +119,7 @@ long long _wtoll_l(
   
 |Yordamları|Gerekli başlık|  
 |--------------|---------------------|  
-|`atoll`, `_atoll_l`|\<stdlib.h >|  
+|`atoll`, `_atoll_l`|\<stdlib.h>|  
 |`_wtoll`, `_wtoll_l`|\<stdlib.h > veya \<wchar.h >|  
   
 ## <a name="example"></a>Örnek  

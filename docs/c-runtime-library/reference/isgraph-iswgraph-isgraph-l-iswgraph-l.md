@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - isgraph
 - iswgraph
@@ -33,7 +34,8 @@ f1_keywords:
 - _istgraph_l
 - _istgraph
 - iswgraph
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - isgraph function
 - _istgraph_l function
@@ -44,16 +46,17 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fc1dd32d2b427f6d22fad330cc25804ac528ea83
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c338e884906e7a172edc39f941a1bedcdee3b57f
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="isgraph-iswgraph-isgraphl-iswgraphl"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
 Tamsayı grafik bir karakteri temsil edip etmediğini belirler.  
@@ -82,7 +85,7 @@ int _iswgraph_l(
  Test etmek için bir tamsayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamları döndürür sıfır olmayan IF her `c` yazdırılabilir karakteri boşluk dışında belirli bir gösterimidir. `isgraph`sıfır olmayan bir değer döndürür `c` bir alanı dışında yazdırılabilir bir karakterdir. `iswgraph`sıfır olmayan bir değer döndürür `c` geniş karakter alanı dışında yazdırılabilir bir geniş karakter. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
+ Bu yordamları döndürür sıfır olmayan IF her `c` yazdırılabilir karakteri boşluk dışında belirli bir gösterimidir. `isgraph` sıfır olmayan bir değer döndürür `c` bir alanı dışında yazdırılabilir bir karakterdir. `iswgraph` sıfır olmayan bir değer döndürür `c` geniş karakter alanı dışında yazdırılabilir bir geniş karakter. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
   
  Bu işlevleri sürümlerini `_l` soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -99,9 +102,9 @@ int _iswgraph_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`isgraph`|\<CType.h >|  
+|`isgraph`|\<ctype.h>|  
 |`iswgraph`|\<CType.h > veya \<wchar.h >|  
-|`_isgraph_l`|\<CType.h >|  
+|`_isgraph_l`|\<ctype.h>|  
 |`_iswgraph_l`|\<CType.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

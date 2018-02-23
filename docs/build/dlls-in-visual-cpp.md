@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - executable files [C++]
 - dynamic linking [C++]
@@ -15,16 +17,17 @@ helpviewer_keywords:
 - DLLs [C++]
 - DLLs [C++], about DLLs
 ms.assetid: 5216bca4-51e2-466b-b221-0e3e776056f0
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ed3679d29b8d181e2cbd9896d0322fea634bfbf0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 14f8a0914b1bb7f2d3a16681a3a66091eda71d73
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="dlls-in-visual-c"></a>Visual C++'da DLL'ler  
   
@@ -124,7 +127,7 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  [DLL'de Otomasyon](../build/automation-in-a-dll.md)  
  MFC DLL Sihirbazı'ndaki Otomasyon seçeneğinin ne sağladığını açıklar.  
   
- [MFC DLL'leri İçin Adlandırma Kuralları](../build/naming-conventions-for-mfc-dlls.md)  
+ [MFC DLL'leri İçin Adlandırma Kuralları](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions)  
  MFC'de bulunan DLL dosyalarının ve kitaplıkların nasıl bir yapılandırılmış adlandırma kuralı izlediğini açıklar.  
   
  [Visual Basic uygulamasından DLL işlevi çağırma](../build/calling-dll-functions-from-visual-basic-applications.md)  
@@ -135,5 +138,5 @@ Aşağıdaki konular, Visual c++ programı DLL'leri hakkında ayrıntılı bilgi
  [Bir DLL'in bir parçası MFC kullanma](../mfc/tn011-using-mfc-as-part-of-a-dll.md)  
  MFC kitaplığını Windows dinamik bağlantı kitaplığı bir parçası olarak kullanmanıza olanak tanır Normal MFC DLL'leri açıklar.  
   
- [MFC'nin DLL sürümü](../mfc/tn033-dll-version-of-mfc.md)  
+ [DLL Version of MFC](../mfc/tn033-dll-version-of-mfc.md)  
  MFCxx.dll kullanabilirsiniz ve MFC uygulamaları ve MFC uzantı DLL'leri ile dinamik bağlantı kitaplıkları (x MFC sürüm numarası olduğu yer) MFCxxD.dll paylaşılan nasıl açıklanmaktadır.  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _atoldbl
 - _atoldbl_l
@@ -40,7 +41,8 @@ f1_keywords:
 - atoflt
 - atoldbl_l
 - _atodbl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _atodbl function
 - _atoldbl_l function
@@ -56,16 +58,17 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ea51455d2b02c651aeb8e7bb599cbc3133585c15
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e5cc49c513f72be5fa96cc8534f749d2ecbc01ec
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 Bir dizeyi bir double dönüştürür (`_atodbl`), uzun çift (`_atoldbl`), veya float (`_atoflt`).  
@@ -126,7 +129,7 @@ int _atoflt_l(
   
 |Yordamları|Gerekli başlık|  
 |--------------|---------------------|  
-|`_atodbl`, `_atoldbl`, `_atoflt`<br /><br /> `_atodbl_l`, `_atoldbl_l`, `_atoflt_l`|\<stdlib.h >|  
+|`_atodbl`, `_atoldbl`, `_atoflt`<br /><br /> `_atodbl_l`, `_atoldbl_l`, `_atoflt_l`|\<stdlib.h>|  
   
 ## <a name="example"></a>Örnek  
   

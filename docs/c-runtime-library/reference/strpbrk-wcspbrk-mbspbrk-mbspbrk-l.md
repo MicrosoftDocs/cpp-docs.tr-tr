@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbspbrk
 - wcspbrk
@@ -33,7 +34,8 @@ f1_keywords:
 - _tcspbrk
 - _ftcspbrk
 - wcspbrk
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fstrpbrk function
 - _ftcspbrk function
@@ -51,22 +53,23 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 323ee2842799cdfe948bdf0a8af7ec2bfad92439
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 360877af83694d969e07ff0a8933f1f6df64072a
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strpbrk-wcspbrk-mbspbrk-mbspbrkl"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 Belirtilen karakter kümelerini karakterler için dizeleri tarar.  
   
 > [!IMPORTANT]
->  `_mbspbrk`ve `_mbspbrk_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbspbrk` ve `_mbspbrk_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -140,11 +143,11 @@ const unsigned char *_mbspbrk_l(
 ## <a name="remarks"></a>Açıklamalar  
  `strpbrk` İşlevi bir işaretçi bir karakter ilk örneğini döndürür `str` ait olan karakter kümesinde `strCharSet`. Arama sonlandırma null karakteri içermez.  
   
- `wcspbrk`ve `_mbspbrk` joker karakter ve çok baytlı karakter sürümleri `strpbrk`. Bağımsız değişkenleri ve dönüş değerini `wcspbrk` joker karakter olan dizeleri; bu `_mbspbrk` çok baytlı karakter dizeleri belirtilmiştir.  
+ `wcspbrk` ve `_mbspbrk` joker karakter ve çok baytlı karakter sürümleri `strpbrk`. Bağımsız değişkenleri ve dönüş değerini `wcspbrk` joker karakter olan dizeleri; bu `_mbspbrk` çok baytlı karakter dizeleri belirtilmiştir.  
   
- `_mbspbrk`parametreleri doğrular. Varsa `str` veya `strCharSet` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbspbrk` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `strpbrk`ve `wcspbrk` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_mbspbrk` parametreleri doğrular. Varsa `str` veya `strCharSet` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbspbrk` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `strpbrk` ve `wcspbrk` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
   
- `_mbspbrk`benzer `_mbscspn` dışında `_mbspbrk` türünde bir değer yerine bir işaretçi döndürür [size_t](../../c-runtime-library/standard-types.md).  
+ `_mbspbrk` benzer `_mbscspn` dışında `_mbspbrk` türünde bir değer yerine bir işaretçi döndürür [size_t](../../c-runtime-library/standard-types.md).  
   
  C, bu işlevler ele bir `const` ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı kullanılabilir. Bir işaretçi alma aşırı `const` gösteren bir işaretçi döndürür `const`; bir işaretçi olmayan alır sürüm`const` gösteren bir işaretçi olmayan döndürür`const`. Makro `_CRT_CONST_CORRECT_OVERLOADS` her iki tanımlanan `const` ve olmayan-`const` bu işlevler sürümlerinde kullanılabilir. Olmayan gerektiriyorsa`const` hem C++ aşırı davranışını tanımlayın simgenin `_CONST_RETURN`.  
   

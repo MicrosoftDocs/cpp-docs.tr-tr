@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - wcstold
 - strtold
@@ -32,18 +33,20 @@ f1_keywords:
 - strtold
 - _strtold_l
 - wcstold
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 814145a5efade94da53830bf6448d7e5422027bc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a0e21329d29bcf65362d837697f2adfe00e27ce3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtold-strtoldl-wcstold-wcstoldl"></a>strtold, _strtold_l, wcstold, _wcstold_l
 Dizeleri uzun çift duyarlıklı kayan noktalı değerine dönüştürür.  
@@ -82,14 +85,14 @@ long double wcstold_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strtold`kayan noktalı sayı olarak değerini döndürür bir `long double`, temsili taşma zaman neden olacağından dışında — bu durumda, işlevi döndürür`HUGE_VALL`. İşaretini `HUGE_VALL` gösterilemez değerini oturum eşleşir. `strtold`hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.  
+ `strtold` kayan noktalı sayı olarak değerini döndürür bir `long double`, temsili taşma zaman neden olacağından dışında — bu durumda, işlevi döndürür`HUGE_VALL`. İşaretini `HUGE_VALL` gösterilemez değerini oturum eşleşir. `strtold` hiçbir dönüştürme gerçekleştirilebilir veya bir underflow oluştuğunda 0 döndürür.  
   
- `wcstold`değerleri analogously çok döndürür `strtold`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
+ `wcstold` değerleri analogously çok döndürür `strtold`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşması veya yetersiz olursa ve açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
   
  Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
- Giriş dizesi her işlevi dönüştürür `nptr` için bir `long double`. `strtold` İşlev dönüştürür `nptr` uzun çift duyarlıklı değeri. `strtold`dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. Joker karakter sürümü `strtold` olan `wcstold`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
+ Giriş dizesi her işlevi dönüştürür `nptr` için bir `long double`. `strtold` İşlev dönüştürür `nptr` uzun çift duyarlıklı değeri. `strtold` dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir. Joker karakter sürümü `strtold` olan `wcstold`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Aksi takdirde, bu işlevler aynı şekilde davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -102,7 +105,7 @@ long double wcstold_l(
   
  Varsa `endptr` değil `NULL`, tarama durduruldu karakter işaretçisi işaret ediyor konumda depolanır `endptr`. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri `nptr` işaret ediyor konumunda depolanan `endptr`.  
   
- `strtold`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `strtold` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [`sign`] [`digits`] [`.digits`] [ {`d` &#124; `D` &#124; `e` &#124; `E`}[`sign`]`digits`]  
   
@@ -112,7 +115,7 @@ long double wcstold_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`strtold`, `_strtold_l`|\<stdlib.h >|  
+|`strtold`, `_strtold_l`|\<stdlib.h>|  
 |`wcstold`, `_wcstold_l`|\<stdlib.h > veya \<wchar.h >|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  

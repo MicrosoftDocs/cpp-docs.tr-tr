@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strtol
 - wcstol
@@ -32,7 +33,8 @@ f1_keywords:
 - wcstol
 - _strtol_l
 - _tcstol_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcstol function
 - wcstol_l function
@@ -44,16 +46,17 @@ helpviewer_keywords:
 - _strtol_l function
 - strtol function
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 08a476172291c52865fe2abb9fb872e388078ac5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3fd2d3a78138ca4c6f94cf77bb33de9fda89743d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strtol-wcstol-strtoll-wcstoll"></a>strtol, wcstol, _strtol_l, _wcstol_l
 Dizeleri uzun tamsayı değerine dönüştürür.  
@@ -99,14 +102,14 @@ long _wcstol_l(
  Kullanılacak yerel ayar.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `strtol`dizede gösterilen değerini verir `nptr`, temsili taşma neden olacağından, içinde bu döndürür durumda dışında `LONG_MAX` veya `LONG_MIN`. `strtol`hiçbir dönüştürme gerçekleştirilebiliyorsa 0 döndürür. `wcstol`değerleri analogously çok döndürür `strtol`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşma veya yetersiz olduğunda.  
+ `strtol` dizede gösterilen değerini verir `nptr`, temsili taşma neden olacağından, içinde bu döndürür durumda dışında `LONG_MAX` veya `LONG_MIN`. `strtol` hiçbir dönüştürme gerçekleştirilebiliyorsa 0 döndürür. `wcstol` değerleri analogously çok döndürür `strtol`. Her iki işlevler için `errno` ayarlanır `ERANGE` taşma veya yetersiz olduğunda.  
   
  Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strtol` İşlev dönüştürür `nptr` için bir `long`. `strtol`dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir ya da sıfırdan büyük veya eşit ilk sayısal karakter olabilir `base`.  
+ `strtol` İşlev dönüştürür `nptr` için bir `long`. `strtol` dize okumayı durdurur `nptr` ilk karakterinde onu bir sayı bir parçası olarak tanıyabilmesi olamaz. Bu sonlandırma null karakter olabilir ya da sıfırdan büyük veya eşit ilk sayısal karakter olabilir `base`.  
   
- `wcstol`bir joker karakter sürümü `strtol`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.  
+ `wcstol` bir joker karakter sürümü `strtol`; kendi `nptr` bağımsız değişkeni olan bir joker karakter dizesi. Bu işlevler aynı şekilde aksi davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   
@@ -119,7 +122,7 @@ long _wcstol_l(
   
  Varsa `endptr` değil `NULL`, tarama durduruldu karakteri gösteren bir işaretçi işaret konumunda depolanan `endptr`. Hiçbir dönüştürme gerçekleştirilebiliyorsa (hiç geçerli basamak bulunamadı veya geçersiz taban belirtildi), değeri `nptr` gösterdiği konumunda depolanan `endptr`.  
   
- `strtol`bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
+ `strtol` bekliyor `nptr` aşağıdaki biçimde bir dizeye işaret etmek için:  
   
  [`whitespace`] [{`+` &#124; `-`}] [`0` [{ `x` &#124; `X` }]] [`digits`]  
   
@@ -129,9 +132,9 @@ long _wcstol_l(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`strtol`|\<stdlib.h >|  
+|`strtol`|\<stdlib.h>|  
 |`wcstol`|\<stdlib.h > veya \<wchar.h >|  
-|`_strtol_l`|\<stdlib.h >|  
+|`_strtol_l`|\<stdlib.h>|  
   
  Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

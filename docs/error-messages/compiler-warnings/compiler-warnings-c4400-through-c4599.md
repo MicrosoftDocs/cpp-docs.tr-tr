@@ -1,7 +1,8 @@
 ---
 title: "Derleyici uyarıları C4400 C4599 aracılığıyla | Microsoft Docs"
 ms.date: 11/17/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
 f1_keywords:
 - C4413
@@ -36,6 +37,10 @@ f1_keywords:
 - C4459
 - C4464
 - C4472
+- C4474
+- C4475
+- C4476
+- C4478
 - C4480
 - C4482
 - C4483
@@ -43,6 +48,10 @@ f1_keywords:
 - C4492
 - C4493
 - C4494
+- C4495
+- C4496
+- C4497
+- C4498
 - C4499
 - C4509
 - C4519
@@ -98,6 +107,10 @@ helpviewer_keywords:
 - C4459
 - C4464
 - C4472
+- C4474
+- C4475
+- C4476
+- C4478
 - C4480
 - C4482
 - C4483
@@ -105,6 +118,10 @@ helpviewer_keywords:
 - C4492
 - C4493
 - C4494
+- C4495
+- C4496
+- C4497
+- C4498
 - C4499
 - C4509
 - C4519
@@ -127,17 +144,19 @@ helpviewer_keywords:
 - C4593
 - C4594
 - C4595
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: b07850a5-ae89-48ea-bf9a-f0e30939f9b9
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 44b0c76c6aba144229923a969cf3da026de54201
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 750f0cdd1b22a1ed72d569a6bf85646ee34b2aea
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarıları C4400 C4599 aracılığıyla
 
@@ -165,7 +184,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 2) C4412](../../error-messages/compiler-warnings/compiler-warning-level-2-c4412.md)|'*işlevi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.|
 |C4413 uyarı derleyici|'classname::member': başvuru üyesi Oluşturucusu çıktıktan sonra kalmıyor geçici bir başlatıldı|
 |[Derleyici Uyarısı (düzey 3) C4414](../../error-messages/compiler-warnings/compiler-warning-level-3-c4414.md)|'*işlevi*': yakınında dönüştürülür kısa atlama işlevi|
-|Derleyici Uyarısı (düzey 1) C4415|Yinelenen __declspec (code_seg ('*adı*'))|
+|Derleyici Uyarısı (düzey 1) C4415|duplicate __declspec(code_seg('*name*'))|
 |Derleyici Uyarısı (düzey 1) C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4417|bir açık şablonu örneklemesi __declspec(code_seg(...)) olamaz: yoksayıldı|
 |Derleyici Uyarısı (düzey 1) C4418|bir enum göz ardı __declspec(code_seg(...))|
@@ -214,7 +233,13 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|/ CLR altında göz ardı kayan nokta denetim pragmaları|
 |[Derleyici Uyarısı (düzey 4) C4471](compiler-warning-level-4-c4471.md)|'*numaralandırma*': dizininden kapsam dışı numaralandırma ileriye dönük bildirimi bir temel alınan türü (int olduğu varsayılır) olması gerekir|
 |Derleyici Uyarısı (düzey 1) C4472|'*tanımlayıcısı*' yerel Enum: bildirmek için bir erişim belirteci (özel/ortak) eklemek bir ' WinRT &#124; yönetilen ' enum|
-|C4480 uyarı derleyici|kullanılan standart olmayan uzantısı: numaralandırma için temel alınan tür belirtme '*numaralandırma*'|
+|[Derleyici Uyarısı (düzey 1) C4473](c4473.md)|'*işlevi*': yeterli sayıda bağımsız değişken geçirildi için biçim dizesi|
+|Derleyici Uyarısı (Düzey 3) C4474|'*işlevi*': çok fazla bağımsız değişken geçirildi için biçim dizesi|
+|Derleyici Uyarısı (Düzey 3) C4475|'*işlevi*': uzunluğu değiştiricisi '*değiştiricisi*'türü alan karakteriyle kullanılamaz'*karakter*' biçim belirticisi içinde|
+|Derleyici Uyarısı (Düzey 3) C4476|'*işlevi*': bilinmeyen tür alan karakteri '*karakter*' biçim belirticisi içinde|
+|[Derleyici Uyarısı (düzey 1) C4477](c4477.md)|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak variadic bağımsız değişkeni *numarası* türüne sahip '*türü*'|
+|Derleyici Uyarısı (düzey 1) C4478|'*işlevi*': konumsal ve konumsal dışı yer tutucuları aynı biçim dizesi karıştırılamaz|
+|Derleyici Uyarısı (hata) C4480|kullanılan standart olmayan uzantısı: numaralandırma için temel alınan tür belirtme '*numaralandırma*'|
 |[Derleyici Uyarısı (düzey 4) C4481](../../error-messages/compiler-warnings/compiler-warning-level-4-c4481.md)|kullanılan standart olmayan uzantısı: override tanımlayıcısı '*anahtar sözcüğü*'|
 |C4482 uyarı derleyici|kullanılan standart olmayan uzantısı: enum '*numaralandırma*' tam adı kullanılan|
 |Derleyici Uyarısı (düzey 1, hata) C4483|sözdizimi hatası: C++ anahtar sözcüğü bekleniyor|
@@ -229,6 +254,10 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |Derleyici Uyarısı (düzey 1, hata) C4492|'*function1*': eşleşmeleri temel ref sınıf yöntemi '*function2*', 'override' işaretli değil ancak|
 |Derleyici Uyarısı (Düzey 3, hata) C4493|DELETE ifadesi hiçbir etkisi yıkıcısı '*türü*' 'genel' erişilebilirlik yok|
 |Derleyici Uyarısı (düzey 1) C4494|'*işlevi*': işlevi dönüş olduğundan türü __declspec(allocator) gözardı değil bir işaretçi veya başvuru|
+|C4495 uyarı derleyici|'__super' kullanılan standart olmayan uzantısı: açık temel sınıf adı ile değiştirin|
+|C4496 uyarı derleyici|Standart olmayan uzantı 'for each' kullanılan: aralıklı için deyimiyle değiştirin|
+|C4497 uyarı derleyici|'Kapalı' kullanılan standart olmayan uzantısı: 'Son' ile değiştir|
+|C4498 uyarı derleyici|kullanılan standart olmayan uzantısı: '*uzantısı*'|
 |Derleyici Uyarısı (düzey 4) C4499|"*işlevi*': açık uzmanlık (göz ardı) depolama sınıfı olamaz"|
 |[Derleyici Uyarısı (düzey 1) C4502](../../error-messages/compiler-warnings/compiler-warning-level-1-c4502.md)|'*bağlantı belirtimi*' anahtar sözcüğü 'extern' kullanılmasını gerektirir ve diğer tanımlayıcıları gelmelidir|
 |[Derleyici Uyarısı (düzey 1) C4503](../../error-messages/compiler-warnings/compiler-warning-level-1-c4503.md)|'*tanımlayıcısı*': ad uzunluğu aşıldı, donatılmış adı kesildi|

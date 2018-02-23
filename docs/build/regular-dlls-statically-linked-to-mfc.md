@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - regular MFC DLLs [C++]
 - DLLs [C++], regular
@@ -16,16 +18,17 @@ helpviewer_keywords:
 - statically linked DLLs [C++]
 - regular MFC DLLs [C++], statically linked to MFC
 ms.assetid: 2eed531c-726a-4b8a-b936-f721dc00a7fa
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0fd5eee67b48fd4895cc73adfb72d34f0bd24d2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5ef25785e3d1e37ee622572f03fce56b1fa236aa
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="regular-mfc-dlls-statically-linked-to-mfc"></a>Statik olarak MFC'ye bağlı normal MFC DLL'leri
 MFC DLL statik olarak MFC'ye bağlı normal MFC'yi dahili olarak kullanan DLL'dir ve MFC veya MFC dışı çalıştırılabilirler tarafından DLL dışarı aktarılan işlevler çağrılabilir. Adı açıklandığı gibi bu tür DLL MFC statik bağlantı kitaplık sürümü kullanılarak oluşturulur. İşlevler, genellikle bir normal standart C arabirimi kullanan MFC DLL dışarı aktarılır. Örnek örneği nasıl yazma, yapı ve normal bir MFC DLL kullanmak için bkz: [ile ilgili](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/advanced/DllScreenCap).  
@@ -72,7 +75,7 @@ extern "C" __declspec(dllexport) MyExportedFunction( );
   
  Statik olarak MFC'ye bağlı bir DLL da dinamik paylaşılan MFC DLL'leri bağlayamazsınız. Statik olarak MFC'ye bağlı bir DLL herhangi bir DLL gibi bir uygulama dinamik olarak bağlı; uygulamalar için diğer DLL gibi bağlayın.  
   
- Standart MFC statik bağlantı kitaplıkları açıklanan kurala göre adlandırılır [MFC DLL'leri için adlandırma kurallarını](../build/naming-conventions-for-mfc-dlls.md). Ancak, MFC sürüm 3.0 ve üstü ile artık bağlayıcıya sonrasıyla istediğiniz MFC kitaplık sürümünü el ile belirtmek gerekli değildir. Bunun yerine, MFC başlık dosyaları otomatik olarak gibi temel alınarak önişlemci içinde bağlamak için MFC Kitaplığı doğru sürümü tanımlar belirlemek  **\_hata ayıklama** veya **_UNICODE**. MFC başlık dosyaları, belirli bir MFC kitaplık sürümünü bağlamak için DEFAULTLIB ekleyin.  
+ Standart MFC statik bağlantı kitaplıkları açıklanan kurala göre adlandırılır [MFC DLL'leri için adlandırma kurallarını](../mfc/mfc-library-versions.md#mfc-static-library-naming-conventions). Ancak, MFC sürüm 3.0 ve üstü ile artık bağlayıcıya sonrasıyla istediğiniz MFC kitaplık sürümünü el ile belirtmek gerekli değildir. Bunun yerine, MFC başlık dosyaları otomatik olarak gibi temel alınarak önişlemci içinde bağlamak için MFC Kitaplığı doğru sürümü tanımlar belirlemek  **\_hata ayıklama** veya **_UNICODE**. MFC başlık dosyaları, belirli bir MFC kitaplık sürümünü bağlamak için DEFAULTLIB ekleyin.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   

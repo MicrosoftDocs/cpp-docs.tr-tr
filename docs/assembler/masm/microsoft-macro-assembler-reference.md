@@ -22,11 +22,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3cb156d4fb8f50c12c2fce172c65dc2b313a24e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4fa951c5386847f216eea8581865ff3ba03a9e05
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="microsoft-macro-assembler-reference"></a>Microsoft Macro Assembler Başvurusu
 Microsoft makro derleyici (MASM), satır içi derleme birkaç avantaj sağlar. MASM döngü, aritmetik ve metin dizesi işleme gibi özellikleri olan bir makro dili içerir. 386, 486 ve Pentium işlemcilerini yönerge kümesi desteklediğinden MASM, ayrıca donanım üzerinde daha fazla denetim sağlar. MASM kullanarak, aynı zamanda süresi ve bellek ek yükü azaltabilir.  
@@ -54,7 +54,7 @@ Microsoft makro derleyici (MASM), satır içi derleme birkaç avantaj sağlar. M
  Çıktı oluşturma hakkında bilgi dosyalarını [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)].  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
- [Visual C++](../../top/visual-cpp-in-visual-studio.md)  
+ [Visual C++](../../visual-cpp-in-visual-studio.md)  
  Visual Studio ve Visual C++ Belgeleri farklı bölümlerine ait bağlantılar sağlanmıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

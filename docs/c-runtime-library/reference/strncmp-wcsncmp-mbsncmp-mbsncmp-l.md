@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strncmp
 - _mbsncmp
@@ -35,7 +36,8 @@ f1_keywords:
 - strncmp
 - _mbsncmp
 - wcsncmp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _tcsnccmp function
 - ftcsncmp function
@@ -55,22 +57,23 @@ helpviewer_keywords:
 - characters [C++], comparing
 - _ftcsnccmp function
 ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1871879a1a2b3c5737fd44946c4b95c8b0777f41
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 92ec6c3c6a28258ffc953fc9c7f5a344e1f3d0f9
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strncmp-wcsncmp-mbsncmp-mbsncmpl"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 Belirtilen iki dize karakterlerini sayısı kadar karşılaştırır.  
   
 > [!IMPORTANT]
->  `_mbsncmp`ve `_mbsncmp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncmp` ve `_mbsncmp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -117,18 +120,18 @@ int _mbsncmp_l(
   
 |Dönüş değeri|Açıklama|  
 |------------------|-----------------|  
-|< 0|`string1`substring değerinden `string2` substring|  
-|0|`string1`substring aynı `string2` substring|  
-|> 0|`string1`substring büyük `string2` substring|  
+|< 0|`string1` substring değerinden `string2` substring|  
+|0|`string1` substring aynı `string2` substring|  
+|> 0|`string1` substring büyük `string2` substring|  
   
  Parametre doğrulama hata `_mbsncmp` ve `_mbsncmp_l` dönmek `_NLSCMPERROR`, içinde tanımlanan \<string.h > ve \<mbstring.h >.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `strncmp` İşlevi gerçekleştiren bir sıralı karşılaştırma en fazla ilk `count` içinde karakterleri `string1` ve `string2` ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. `strncmp`büyük küçük harfe duyarlı bir sürümü `_strnicmp`. `wcsncmp`ve `_mbsncmp` büyük küçük harfe duyarlı sürümleri `_wcsnicmp` ve `_mbsnicmp`.  
+ `strncmp` İşlevi gerçekleştiren bir sıralı karşılaştırma en fazla ilk `count` içinde karakterleri `string1` ve `string2` ve alt dizeler arasındaki ilişkiyi gösteren bir değer döndürür. `strncmp` büyük küçük harfe duyarlı bir sürümü `_strnicmp`. `wcsncmp` ve `_mbsncmp` büyük küçük harfe duyarlı sürümleri `_wcsnicmp` ve `_mbsnicmp`.  
   
- `wcsncmp`ve `_mbsncmp` joker karakter ve çok baytlı karakter sürümleri `strncmp`. Bağımsız değişkenleri `wcsncmp` joker karakter olan dizeleri; bu `_mbsncmp` çok baytlı karakter dizeleri belirtilmiştir. `_mbsncmp`çok baytlı karakter sıralarının birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata.  
+ `wcsncmp` ve `_mbsncmp` joker karakter ve çok baytlı karakter sürümleri `strncmp`. Bağımsız değişkenleri `wcsncmp` joker karakter olan dizeleri; bu `_mbsncmp` çok baytlı karakter dizeleri belirtilmiştir. `_mbsncmp` çok baytlı karakter sıralarının birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata.  
   
- Ayrıca, `_mbsncmp` ve `_mbsncmp_l` parametreleri doğrulayın. Varsa `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsncmp` ve `_mbsncmp_l` dönmek `_NLSCMPERROR` ve `errno` için `EINVAL`. `strncmp`ve `wcsncmp` parametrelerini doğrulamaz. Bu işlevler aynı şekilde aksi davranır.  
+ Ayrıca, `_mbsncmp` ve `_mbsncmp_l` parametreleri doğrulayın. Varsa `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsncmp` ve `_mbsncmp_l` dönmek `_NLSCMPERROR` ve `errno` için `EINVAL`. `strncmp` ve `wcsncmp` parametrelerini doğrulamaz. Bu işlevler aynı şekilde aksi davranır.  
   
  Karşılaştırma davranışını `_mbsncmp` ve `_mbsncmp_l` ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı. Bu, birden çok baytlı karakterler baştaki ve sondaki bayt algılanması denetler. Daha fazla bilgi için bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). `_mbsncmp` İşlevi için bu yerel ayara bağımlı davranış geçerli yerel ayarı kullanır. `_mbsncmp_l` Kullanır ancak bu işlevi aynı `locale` parametresi yerine. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md). Yerel bir tek baytlı yerel ise, bu işlevler davranışını aynıdır `strncmp`.  
   
@@ -139,7 +142,7 @@ int _mbsncmp_l(
 |`_tcsnccmp`|`strncmp`|`_mbsncmp`|`wcsncmp`|  
 |`_tcsncmp`|`strncmp`|`_mbsnbcmp`|`wcsncmp`|  
 |`_tccmp`|Makro veya satır içi işlev eşlemeleri|`_mbsncmp`|Makro veya satır içi işlev eşlemeleri|  
-|**geçerli değil**|**geçerli değil**|`_mbsncmp_l`|**geçerli değil**|  
+|Geçerli değil|Geçerli değil|`_mbsncmp_l`|Geçerli değil|  
   
 ## <a name="requirements"></a>Gereksinimler  
   
