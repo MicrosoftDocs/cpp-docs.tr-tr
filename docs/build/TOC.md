@@ -96,7 +96,6 @@
 ### [Satır İçi İşlevleri İçeri ve Dışarı Aktarma](importing-and-exporting-inline-functions.md)
 ## [Etkin Teknoloji ve DLL'ler](active-technology-and-dlls.md)
 ## [DLL'de Otomasyon](automation-in-a-dll.md)
-## [MFC DLL'leri İçin Adlandırma Kuralları](naming-conventions-for-mfc-dlls.md)
 ## [Visual Basic Uygulamalarından DLL İşlevleri Çağırma](calling-dll-functions-from-visual-basic-applications.md)
 # [Derleyici İç Bilgileri ve Derleme Dili](../intrinsics/TOC.md)
 # [Komut satırında C/C++ kodu derleme](building-on-the-command-line.md)
