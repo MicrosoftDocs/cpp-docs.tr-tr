@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IsSameRow
 - IRowsetIdentityImpl.IsSameRow
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 68f7b5add310765616146a05b377df58408a8e19
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 64422229b05867bcbf0a75e0c100b8428c9abd95
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetidentityimplissamerow"></a>IRowsetIdentityImpl::IsSameRow
 Aynı satır başvurursanız görmek için iki satır işleyicilerini karşılaştırır.  

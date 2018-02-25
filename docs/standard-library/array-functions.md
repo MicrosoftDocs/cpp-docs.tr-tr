@@ -5,14 +5,15 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - array/std::array::get
 - array/std::get
 - array/std::swap
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: e0700a33-a833-4655-8735-16e71175efc8
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -20,21 +21,22 @@ helpviewer_keywords:
 - std::array [C++], get
 - std::get [C++]
 - std::swap [C++]
-ms.workload: cplusplus
-ms.openlocfilehash: 7116d8bd3517bb412eecf4c0ba9040ce3fe0f7b5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 96c66e4a6cef556795cf9bee3ecabac6677ef9f3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 \<Dizi > Üstbilgi içeren iki üye olmayan işlevleri `get` ve `swap`, üzerinde çalışması `array` nesneleri.  
   
 |||  
 |-|-|  
-|[get](#get)|[değiştirme](#swap)|  
+|[get](#get)|[Değiştirme](#swap)|  
   
-##  <a name="get"></a>Al  
+##  <a name="get"></a>  get  
 Belirtilen öğe dizinin bir başvuru döndürür.  
   
 ```  
@@ -93,7 +95,7 @@ int main()
 1 3  
 ```  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
 Üye olmayan şablon uzmanlaşması `std::swap` iki değiştirir `array` nesneleri.  
   
 ```  

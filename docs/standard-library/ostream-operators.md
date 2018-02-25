@@ -5,27 +5,30 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: ostream/std::operator&lt;&lt;
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- ostream/std::operator&lt;&lt;
+dev_langs:
+- C++
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f78befe92263dd6b4ef666c865ef9dd65c7103db
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 34691953d5d0482b291f7c9cfba9f5f28fb27ddd
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; işleçleri
 ||  
 |-|  
 |[işleci&lt;&lt;](#op_lt_lt)|  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt">işleci</a>&lt;&lt;  
  Çeşitli türleri akışa yazar.  
   
 ```

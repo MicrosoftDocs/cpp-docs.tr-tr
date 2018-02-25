@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocnum/std::numpunct
 - xlocnum/std::numpunct::char_type
@@ -21,7 +22,8 @@ f1_keywords:
 - xlocnum/std::numpunct::grouping
 - xlocnum/std::numpunct::thousands_sep
 - xlocnum/std::numpunct::truename
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::numpunct [C++]
 - std::numpunct [C++], char_type
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - std::numpunct [C++], thousands_sep
 - std::numpunct [C++], truename
 ms.assetid: 73fb93cc-ac11-4c98-987c-bfa6267df596
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7cd59fec5d8b5b2a6a05634242e0506688422f81
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6c2613f3dd4aa03b591f1edcbb10576cd5e71fdc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="numpunct-class"></a>numpunct Sınıfı
 Türü dizilerini açıklamak için yerel bir model hizmet verebilir bir nesneyi tanımlayan bir şablon sınıfı `CharType` biçimlendirme ve noktalama sayısal ve Boole ifadelerin hakkında bilgi göstermek için kullanılır.  
@@ -76,7 +79,7 @@ class numpunct : public locale::facet;
 |||  
 |-|-|  
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|  
-|[STRING_TYPE](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
+|[string_type](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
@@ -98,7 +101,7 @@ class numpunct : public locale::facet;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>numpunct::char_type  
+##  <a name="char_type"></a>  numpunct::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -108,7 +111,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType.**  
   
-##  <a name="decimal_point"></a>numpunct::decimal_point  
+##  <a name="decimal_point"></a>  numpunct::decimal_point  
  Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.  
   
 ```  
@@ -148,7 +151,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .  
 ```  
   
-##  <a name="do_decimal_point"></a>numpunct::do_decimal_point  
+##  <a name="do_decimal_point"></a>  numpunct::do_decimal_point  
  Ondalık noktası olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -161,7 +164,7 @@ virtual CharType do_decimal_point() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [decimal_point](#decimal_point), sanal üye fonksiyonu tarafından çağrılır burada `decimal_point`.  
   
-##  <a name="do_falsename"></a>numpunct::do_falsename  
+##  <a name="do_falsename"></a>  numpunct::do_falsename  
  Korumalı sanal üye fonksiyonu değeri metin gösterimi olarak kullanmak için bir dizi döndürür **false**.  
   
 ```  
@@ -177,7 +180,7 @@ virtual string_type do_falsename() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [falsename](#falsename), sanal üye fonksiyonu tarafından çağrılır burada `falsename`.  
   
-##  <a name="do_grouping"></a>numpunct::do_grouping  
+##  <a name="do_grouping"></a>  numpunct::do_grouping  
  Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürmek için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -193,7 +196,7 @@ virtual string do_grouping() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [gruplandırma](#grouping), sanal üye fonksiyonu tarafından çağrılır burada **gruplandırma**.  
   
-##  <a name="do_thousands_sep"></a>numpunct::do_thousands_sep  
+##  <a name="do_thousands_sep"></a>  numpunct::do_thousands_sep  
  Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürmek için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -209,7 +212,7 @@ virtual CharType do_thousands_sep() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [thousands_sep](#thousands_sep), sanal üye fonksiyonu tarafından çağrılır burada `thousands_sep`.  
   
-##  <a name="do_truename"></a>numpunct::do_truename  
+##  <a name="do_truename"></a>  numpunct::do_truename  
  Bir korumalı metin gösterimini değeri kullanılacak bir dize döndürecek şekilde adlı sanal üye işlevi **doğru**.  
   
 ```  
@@ -224,7 +227,7 @@ virtual string_type do_truename() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [truename](#truename), sanal üye fonksiyonu tarafından çağrılır burada `truename`.  
   
-##  <a name="falsename"></a>numpunct::falsename  
+##  <a name="falsename"></a>  numpunct::falsename  
  Metin gösterimini değeri kullanılacak bir dize döndürür **false**.  
   
 ```  
@@ -270,7 +273,7 @@ French_France.1252 truename true
 French_France.1252 falsename false  
 ```  
   
-##  <a name="grouping"></a>numpunct::Grouping  
+##  <a name="grouping"></a>  numpunct::Grouping  
  Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.  
   
 ```  
@@ -313,7 +316,7 @@ German_Germany.1252 international grouping:
  the 0th group to the left of the radix character is of size 3  
 ```  
   
-##  <a name="numpunct"></a>numpunct::numpunct  
+##  <a name="numpunct"></a>  numpunct::numpunct  
  Nesne türü Oluşturucusu `numpunct`.  
   
 ```  
@@ -331,13 +334,13 @@ explicit numpunct(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="string_type"></a>numpunct::string_type  
+##  <a name="string_type"></a>  numpunct::string_type  
  Tür karakterleri içeren bir dize açıklayan türü **CharType**.  
   
 ```  
@@ -347,7 +350,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı uzmanlaşması türünü açıklayan [basic_string](../standard-library/basic-string-class.md) olan nesneleri noktalama sıraları kopyalarını depolayabilirsiniz.  
   
-##  <a name="thousands_sep"></a>numpunct::thousands_sep  
+##  <a name="thousands_sep"></a>  numpunct::thousands_sep  
  Binlik ayırıcı olarak kullanılacak yerel ayara özgü bir öğeyi döndürür.  
   
 ```  
@@ -387,7 +390,7 @@ German_Germany.1252 decimal point ,
 German_Germany.1252 thousands separator .  
 ```  
   
-##  <a name="truename"></a>numpunct::truename  
+##  <a name="truename"></a>  numpunct::truename  
  Metin gösterimini değeri kullanılacak bir dize döndürür **doğru**.  
   
 ```  

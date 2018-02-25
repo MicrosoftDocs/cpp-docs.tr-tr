@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: filesystem/std::experimental::filesystem::filesystem_error
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- filesystem/std::experimental::filesystem::filesystem_error
+dev_langs:
+- C++
 ms.assetid: c53aac27-c1fa-43e4-8967-48ea8ba1f172
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a70b489fa3e7a570cf4cd8ea4abf6af583e72a0a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 764be5467282b04e4cd7fa13ee44fddee7c0a51b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="filesystemerror-class"></a>filesystem_error Sınıfı
 Bir alt düzey sistem taşması bildirmek için oluşturulan tüm özel durumlar için temel sınıf.  
@@ -67,7 +71,7 @@ const path& path2() const noexcept;
   
  Üye işlevini mypval2 döndürür  
   
-## <a name="filesystemerrorwhat"></a>filesystem_error::What  
+## <a name="filesystemerrorwhat"></a>filesystem_error::what  
   
 ```  
 const char *what() const noexcept;  
@@ -83,6 +87,6 @@ const char *what() const noexcept;
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
  [system_error sınıfı](../standard-library/system-error-class.md)   
- [\<FileSystem >](../standard-library/filesystem.md)   
+ [\<filesystem>](../standard-library/filesystem.md)   
  [\<Özel Durum >](../standard-library/exception.md)
 

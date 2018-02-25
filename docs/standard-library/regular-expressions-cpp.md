@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - Visual C++, regular expressions
 - regular expressions, Visual C++
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 81eb92a93b60259abdb90020bb6e89cb0664eea5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ce781d026712a8c93df6e8d177417f170092bfd2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 C++ Standart Kitaplığı, birden çok normal ifade aynı destekler. Bu konu, normal ifadeler kullanırken kullanılabilir dilbilgisi farklılıkları açıklar.  
   
-##  <a name="regexgrammar"></a>Normal ifade dilbilgisi  
+##  <a name="regexgrammar"></a> Normal ifade dilbilgisi  
 Kullanılacak normal ifade dilbilgisi tarafından birini kullanarak belirtilen `std::regex_constants::syntax_option_type` numaralandırma değerleri. Bu normal ifade aynı std::regex_constants içinde tanımlanmıştır:
 
 -   `ECMAScript`: Bu, JavaScript ve .NET dilleri tarafından kullanılan dilbilgisi en yakın olur.
@@ -96,7 +99,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
 -   A *pozitif assert* biçiminde "(= *alt* )". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin dizisiyle eşleşir, ancak hedef dizideki eşleme konumunu değiştirmez.  
   
--   A *negatif assert* formun "(! *alt* ) ". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin bir dizisini eşlemez ve hedef dizideki eşleme konumunu değiştirmez.  
+-   A *negatif assert* formun "(! *subexpression* )". Sınırlayıcılar arasındaki desen tarafından eşleştirilen hedef dizinin karakterlerinin bir dizisini eşlemez ve hedef dizideki eşleme konumunu değiştirmez.  
   
 -   A *onaltılık çıkış dizisi* biçiminde "\x`hh`". Hedef sırasındaki iki onaltılık basamak tarafından temsil edilen bir karakterle eşleşir `hh`.  
   
@@ -174,7 +177,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 ### <a name="subexpression"></a>Subexpression  
  İçinde `basic` ve `grep`, bir alt bir yapıdır. Diğer normal ifade dilbilgisinde bir alt ifade bir değişimdir.  
   
-##  <a name="grammarsummary"></a>Dilbilgisi özeti  
+##  <a name="grammarsummary"></a> Dilbilgisi özeti  
  Çeşitli normal ifade dilbilgisi sistemlerinde kullanılabilen özellikler aşağıdaki tabloda özetlenmiştir:  
   
 |Öğe|Temel|genişletilmiş|ECMAScript|grep|egrep|awk|  
@@ -206,7 +209,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 |joker karakter|+|+|+|+|+|+|  
 |sözcük sınırı onayı|||+||||  
   
-##  <a name="semanticdetails"></a>Anlam ayrıntıları  
+##  <a name="semanticdetails"></a> Anlam ayrıntıları  
   
 ### <a name="anchor"></a>Yer işareti  
  Bir yer işareti hedef dizideki bir karakter ile değil, konumla eşleşir. Bir '^', hedef dizenin başlangıcıyla eşleşir; bir '$' hedef dizenin sonuyla eşleşir.  
@@ -323,7 +326,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 |-------------|----------------------------------------|  
 |`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '\*', '^', '$' }|  
 |`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '\*', '^', '$', '+', '?', '&#124;' }|  
-|`awk`|`extended`artı {' "', '/'}|  
+|`awk`|`extended` plus { '"', '/' }|  
 |`ECMAScript`|Bir tanımlayıcının parçası olabilenler dışındaki tüm karakterler. Genellikle, bu içerir harf, rakam, '$', '\_' ve unicode kaçış sıraları. Daha fazla bilgi için bkz. ECMAScript Dil Belirtimi.|  
   
 ### <a name="individual-character"></a>Tekil Karakter  
@@ -423,7 +426,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 ### <a name="word-boundary"></a>Sözcük Sınırı  
  Bir sözcük sınırı aşağıdaki durumlarda oluşur:  
   
--   Geçerli karakteri hedef sırası başındaki ve sözcük karakterlerini biridir`A-Za-z0-9_.`  
+-   Geçerli karakteri hedef sırası başındaki ve sözcük karakterlerini biridir `A-Za-z0-9_.`  
   
 -   Geçerli karakter konumu hedef dizinin sonunu aşar ve hedef dizideki son karakter sözcük karakterlerinden biridir.  
   
@@ -434,7 +437,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 ### <a name="word-boundary-assert"></a>Sözcük Sınırı Onayı  
  Hedef geçerli dizedeki hemen sonra olduğunda word sınır assert eşleşen bir *word sınır*.  
   
-##  <a name="matchingandsearching"></a>Eşleşen ve arama  
+##  <a name="matchingandsearching"></a> Eşleşen ve arama  
  Bir hedef dizisiyle eşleşecek bir normal ifade için, normal ifadenin tamamının hedef dizinin tamamıyla eşleşmesi gerekir. Örneğin, "bcd" normal ifadesi "bcd" hedef dizisiyle eşleşir, ancak "abcd" ya da "bcde" hedef dizisiyle eşleşmez.  
   
  Normal bir ifade aramasının başarılı olması için normal ifadeyle eşleşen hedef dizide herhangi bir yerde bir alt dizi olmalıdır. Arama genellikle en soldaki eşleşen alt diziyi bulur.  
@@ -449,7 +452,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
  Normal ifadenin sonuna ulaşılmamış olsa da, eşleşme başarısız olmadan hedef dizinin sonuna kadar gelirse kısmi eşleşme başarılı olur. Bu nedenle, kısmi eşleşmenin başarılı olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarısız olmasına neden olabilir. Ancak, kısmi eşleşmenin başarısız olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarılı olmasına neden olmayabilir. Örneğin, bir kısmi eşleşme ile "ab" "a" hedef dizisiyle eşleşir, ancak "ac" ile eşleşmez.  
   
-##  <a name="formatflags"></a>Biçim bayrakları  
+##  <a name="formatflags"></a> Biçim bayrakları  
   
 |ECMAScript Biçim Kuralları|sed Biçim Kuralları|Değiştirme Metni|  
 |-----------------------------|----------------------|----------------------|  

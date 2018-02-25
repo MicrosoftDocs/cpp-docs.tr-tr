@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::is_same
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- type_traits/std::is_same
+dev_langs:
+- C++
 helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a3714edaac63df8bf278706b41b1bb5472b817f7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a00f60ddaf50f1f175e48422c735e846b04b9d24
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="issame-class"></a>is_same Sınıfı
 İki tür aynıysa testleri.  
@@ -94,6 +98,6 @@ is_same<int, const int> == false
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)   
+ [<type_traits>](../standard-library/type-traits.md)   
  [is_convertible sınıfı](../standard-library/is-convertible-class.md)   
  [is_base_of Sınıfı](../standard-library/is-base-of-class.md)

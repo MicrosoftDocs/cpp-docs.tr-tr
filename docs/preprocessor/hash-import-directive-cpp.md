@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: '#import'
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- '#import'
+dev_langs:
+- C++
 helpviewer_keywords:
 - .tlh files
 - '#import directive'
@@ -18,16 +21,17 @@ helpviewer_keywords:
 - preprocessor, directives
 - COM, type library header file
 ms.assetid: 787d1112-e543-40d7-ab15-a63d43f4030a
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3d104f25dfc45a0d2b24650289b6ce49f8468c39
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cbf8a35022638884733f5151fffb2a3a0a2946c3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="import-directive-c"></a>#import Yönergesi (C++)
 **C++ özel**  
@@ -43,7 +47,7 @@ ms.lasthandoff: 12/21/2017
   
 #### <a name="parameters"></a>Parametreler  
  *Dosya adı*  
- İçeri aktarmak için tür kitaplığı belirtir. `filename`aşağıdakilerden biri olabilir:  
+ İçeri aktarmak için tür kitaplığı belirtir. `filename` Aşağıdakilerden biri olabilir:  
   
 -   Bir .olb, .tlb veya .dll dosyası gibi bir tür kitaplığı içeren bir dosya adı. Anahtar sözcüğü **dosya:**, her dosya koyun.  
   
@@ -88,7 +92,7 @@ ms.lasthandoff: 12/21/2017
   
 ## <a name="remarks"></a>Açıklamalar  
   
-##  <a name="_predir_the_23import_directive_searchorderforfilename"></a>Dosya adı için arama sırası  
+##  <a name="_predir_the_23import_directive_searchorderforfilename"></a> Dosya adı için arama sırası  
  *filename* isteğe bağlı olarak bir dizin belirtimine göre öncesinde. Dosya adı, varolan bir dosyanın adı olmalıdır. Yolun eksik olarak belirtildiğinde önişlemci için tür kitaplığı dosyaları, arama sırasını iki sözdizimi arasındaki farktır.  
   
 |Sözdizimi formu|Eylem|  
@@ -96,7 +100,7 @@ ms.lasthandoff: 12/21/2017
 |Tırnak işaretli formu|Tür kitaplığı dosyaları içeren dosyayı dizinin ilk olarak aramak için önişlemci bildirir `#import` deyimi ve ardından dahil hangi dosyaların dizinleri (`#include`) Bu dosya. Önişlemci sonra aşağıda gösterilen yolları boyunca arar.|  
 |Açılı ayraç formu|Tür kitaplığı dosya aşağıdaki yollardan boyunca aramak için önişlemci bildirir:<br /><br /> 1.  **Yolu** ortam değişkeni yol listesi<br />2.  **LIB** ortam değişkeni yol listesi<br />3.  /I tarafından belirtilen yol (ek içeren dizinler) derleyici seçeneği, onu derleyici ile başka bir tür kitaplığından başvuruldu bir tür kitaplığı aramada dışında [no_registry](../preprocessor/no-registry.md) özniteliği.|  
   
-##  <a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a>Yerelleştirme kimliği ve sürüm numarasını belirtme  
+##  <a name="_predir_the_23import_directive_specifyingthelocalizationidandversionnumber"></a> Yerelleştirme kimliği ve sürüm numarasını belirtme  
  Bir ProgID belirttiğinizde, yerelleştirme kimliği ve sürüm numarasını ProgID de belirtebilirsiniz. Örneğin:  
   
 ```  
@@ -113,8 +117,8 @@ ms.lasthandoff: 12/21/2017
   
 -   Bir sürüm numarası belirtmezseniz, en son sürümü kullanılır.  
   
-##  <a name="_predir_the_23import_directive_header_files_created_by_import"></a>Alma işlemi tarafından oluşturulan üstbilgi dosyaları  
- `#import`C++ kaynak kodu tür kitaplığı içeriğini yeniden iki üst bilgi dosyaları oluşturur. Birincil üst bilgi dosyasını Microsoft arabirimi tanım dili (MIDL) derleyici, ancak ek derleyici tarafından üretilen kod ve veri üreten benzer. [Birincil üstbilgi dosyası](#_predir_the_primary_type_library_header_file) tür kitaplığı aynı taban adına sahip artı bir. TLH uzantısı. İkincil üstbilgi dosyası aynı temel tür kitaplığı ile adda bir. TLI uzantısı. Derleyicinin ürettiği üye işlevleri için uygulamaları içerir ve yer alır (`#include`) birincil üstbilgi dosyasında.  
+##  <a name="_predir_the_23import_directive_header_files_created_by_import"></a> Alma işlemi tarafından oluşturulan üstbilgi dosyaları  
+ `#import` C++ kaynak kodu tür kitaplığı içeriğini yeniden iki üst bilgi dosyaları oluşturur. Birincil üst bilgi dosyasını Microsoft arabirimi tanım dili (MIDL) derleyici, ancak ek derleyici tarafından üretilen kod ve veri üreten benzer. [Birincil üstbilgi dosyası](#_predir_the_primary_type_library_header_file) tür kitaplığı aynı taban adına sahip artı bir. TLH uzantısı. İkincil üstbilgi dosyası aynı temel tür kitaplığı ile adda bir. TLI uzantısı. Derleyicinin ürettiği üye işlevleri için uygulamaları içerir ve yer alır (`#include`) birincil üstbilgi dosyasında.  
   
  Byref parametreleri kullanan bir görüntüleme arabirimi özellik alma işlemi, #import __declspec oluşturmaz ([özelliği](../cpp/property-cpp.md)) deyimi işlev için.  
   
@@ -128,7 +132,7 @@ ms.lasthandoff: 12/21/2017
   
  `#import` Yönergesi de içinde en az yeniden katılır ve önceden derlenmiş üstbilgi dosyasında yerleştirilebilir. Bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../build/reference/creating-precompiled-header-files.md) daha fazla bilgi için.  
   
-###  <a name="_predir_the_primary_type_library_header_file"></a>Birincil tür kitaplığı üstbilgi dosyası  
+###  <a name="_predir_the_primary_type_library_header_file"></a> Birincil tür kitaplığı üstbilgi dosyası  
  Birincil tür kitaplığı üstbilgi dosyası yedi bölümden oluşur:  
   
 -   Ortak başlık: Açıklamalar, içeren `#include` COMDEF bildirimi. (Bu, kullanılan bazı standart makrolar üstbilgisinde tanımlayan) H ve diğer çeşitli kurulum bilgileri.  
@@ -153,7 +157,7 @@ ms.lasthandoff: 12/21/2017
   
 -   İsteğe bağlı eski Tarz GUID tanımı: adlandırılmış GUID sabitleri oluşturucusundaki içerir. Bu form adlarıdır **CLSID_CoClass** ve **IID_Interface**, MIDL derleyici tarafından üretilen benzer.  
   
--   `#include`İkincil tür kitaplığı üstbilgi bildirimi.  
+-   `#include` İkincil tür kitaplığı üstbilgi bildirimi.  
   
 -   Altbilgi Demirbaş: şu anda içeren `#pragma pack(pop)`.  
   
@@ -185,8 +189,8 @@ using namespace MyLib;
   
  Daha fazla bilgi için Bilgi Bankası makalesine bakın "#import sarmalayıcı yöntemleri neden erişim ihlali" (Q242527) veya "kullandığınızda derleyici hataları XML ile #import" (Q269194). MSDN Kitaplığı medyada veya Bilgi Bankası makaleleri bulabilirsiniz [Microsoft Support](https://support.microsoft.com/).  
   
-##  <a name="_predir_the_23import_directive_import_attributes"></a>#import öznitelikleri  
- `#import`İsteğe bağlı olarak bir veya daha fazla öznitelik ekleyebilirsiniz. Bu öznitelikler tür kitaplığı üstbilgi içeriğini değiştirmek için derleyici söyleyin. Ters eğik çizgi (**\\**) simgesi, tek bir ek satır eklemek için kullanılabilir `#import` deyimi. Örneğin:  
+##  <a name="_predir_the_23import_directive_import_attributes"></a> #import öznitelikleri  
+ `#import` İsteğe bağlı olarak bir veya daha fazla öznitelik ekleyebilirsiniz. Bu öznitelikler tür kitaplığı üstbilgi içeriğini değiştirmek için derleyici söyleyin. Ters eğik çizgi (**\\**) simgesi, tek bir ek satır eklemek için kullanılabilir `#import` deyimi. Örneğin:  
   
 ```  
 #import "test.lib" no_namespace \  
@@ -195,7 +199,7 @@ using namespace MyLib;
   
  Daha fazla bilgi için bkz: [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md).  
   
- **Son C++ özel**  
+ Son C++ özel  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Önişlemci yönergeleri](../preprocessor/preprocessor-directives.md)   

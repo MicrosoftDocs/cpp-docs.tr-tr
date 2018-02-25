@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::add_cv
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- type_traits/std::add_cv
+dev_langs:
+- C++
 helpviewer_keywords:
 - add_cv class
 - add_cv
 ms.assetid: a5572c78-a097-45d7-b476-ed4876889dea
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ccea9fe28ab942341a431585b7d536687dd85345
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 24709bf7b14d398f55540dd65633785e536280e1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="addcv-class"></a>add_cv Sınıfı
 Const volatile türü türünden yapar.  
@@ -96,6 +100,6 @@ invoked const volatile S.f()
 **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[< type_traits >](../standard-library/type-traits.md)   
-[remove_const sınıfı](../standard-library/remove-const-class.md)   
+[<type_traits>](../standard-library/type-traits.md)   
+[remove_const Class](../standard-library/remove-const-class.md)   
 [remove_volatile Sınıfı](../standard-library/remove-volatile-class.md)

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - set/std::operator!=
 - set/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - set/std::operator&lt;
 - set/std::operator&lt;=
 - set/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: b4256ebc-c449-4688-95db-fced42d20d4d
-caps.latest.revision: "8"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (set)
@@ -24,11 +25,11 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: 5bae2e375833cae5d775085519e145a4dab69eab
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: d5058b75af8b26b6e7ddc9a8a7b487b0cd8b8e91
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltsetgt-operators"></a>&lt;ayarlama&gt; işleçleri
 ||||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/24/2017
 |[operator! = (multiset)](#op_neq_multiset)|[İşleç&gt; (multiset)](#op_gt_multiset)|[İşleç&gt;= (multiset)](#op_gt_eq_multiset)|  
 |[İşleç&lt; (multiset)](#op_lt_multiset)|[İşleç&lt;= (multiset)](#op_lt_eq_multiset)|[operator == (multiset)](#op_eq_eq_multiset)|  
   
-##  <a name="op_neq"></a>operator! = (set)  
+##  <a name="op_neq">operator! = (set)</a>  
  Testleri kümesi nesnesi işlecinin sol tarafındaki sağ tarafında kümesi nesnesine eşit değil.  
   
 ```
@@ -95,7 +96,7 @@ The sets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="op_lt"></a>İşleç&lt; (ayarlayın)  
+##  <a name="op_lt"></a>  İşleç&lt; (ayarlayın)  
  Testleri kümesi nesnesi işlecinin sol tarafındaki kümesi nesnesi sağ tarafındaki'dan küçük.  
   
 ```
@@ -152,7 +153,7 @@ The set s1 is not less than the set s3.
 *\  
 ```  
   
-##  <a name="op_lt_eq"></a>İşleç&lt;= (set)  
+##  <a name="op_lt_eq"></a>  İşleç&lt;= (set)  
  Belirlenen işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında kümesi nesnesi eşit veya daha az olur.  
   
 ```
@@ -216,7 +217,7 @@ Set s1 is less than or equal to the set s4.
 *\  
 ```  
   
-##  <a name="op_eq_eq"></a>operator == (set)  
+##  <a name="op_eq_eq">operator == (set)</a>  
  Sağ taraftaki kümesi nesnesi işlecinin sol tarafındaki kümesi nesnesi eşitse testleri.  
   
 ```
@@ -273,7 +274,7 @@ The sets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="op_gt"></a>İşleç&gt; (ayarlayın)  
+##  <a name="op_gt"></a>  İşleç&gt; (ayarlayın)  
  Testleri kümesi nesnesi işlecinin sol tarafındaki sağ tarafında kümesi nesnesi değerinden daha büyük.  
   
 ```
@@ -330,7 +331,7 @@ The set s1 is greater than the set s3.
 *\  
 ```  
   
-##  <a name="op_gt_eq"></a>İşleç&gt;= (set)  
+##  <a name="op_gt_eq"></a>  İşleç&gt;= (set)  
  Testleri kümesi nesnesi işlecinin sol tarafındaki sağ tarafında kümesi nesnesi eşit veya daha büyük.  
   
 ```
@@ -394,7 +395,7 @@ Set s1 is greater than or equal to set s4.
 *\  
 ```  
   
-##  <a name="op_neq_multiset"></a>operator! = (multiset)  
+##  <a name="op_neq_multiset">operator! = (multiset)</a>  
  Çok kümeli nesne işlecinin sol tarafındaki sağ tarafında multiset nesne eşit değilse testleri.  
   
 ```
@@ -451,7 +452,7 @@ The multisets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="op_lt_multiset"></a>İşleç&lt; (multiset)  
+##  <a name="op_lt_multiset"></a>  İşleç&lt; (multiset)  
  Çok kümeli nesne işlecinin sol tarafındaki sağ tarafında multiset nesne küçükse testleri.  
   
 ```
@@ -512,7 +513,7 @@ The multiset s1 is not less than the multiset s3.
 *\  
 ```  
   
-##  <a name="op_lt_eq_multiset"></a>İşleç&lt;= (multiset)  
+##  <a name="op_lt_eq_multiset"></a>  İşleç&lt;= (multiset)  
  Multiset işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında multiset nesnesine eşit veya daha az olur.  
   
 ```
@@ -582,7 +583,7 @@ The multiset s1 is less than or equal to the multiset s4.
 *\  
 ```  
   
-##  <a name="op_eq_eq_multiset"></a>operator == (multiset)  
+##  <a name="op_eq_eq_multiset">operator == (multiset)</a>  
  Çok kümeli nesnesine sağ tarafında işlecinin sol tarafındaki multiset nesne eşitse testleri.  
   
 ```
@@ -639,7 +640,7 @@ The multisets s1 and s3 are equal.
 *\  
 ```  
   
-##  <a name="op_gt_multiset"></a>İşleç&gt; (multiset)  
+##  <a name="op_gt_multiset"></a>  İşleç&gt; (multiset)  
  Çok kümeli nesne işlecinin sol tarafındaki sağ tarafında multiset nesne büyükse testleri.  
   
 ```
@@ -700,7 +701,7 @@ The multiset s1 is greater than the multiset s3.
 *\  
 ```  
   
-##  <a name="op_gt_eq_multiset"></a>İşleç&gt;= (multiset)  
+##  <a name="op_gt_eq_multiset"></a>  İşleç&gt;= (multiset)  
  Çok kümeli nesne işlecinin sol tarafındaki değerinden büyük veya çok kümeli nesnesine sağ tarafında eşit ise testleri.  
   
 ```

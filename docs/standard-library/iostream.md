@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 09/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <iostream>
 - iostream/std::cerr
@@ -17,19 +18,22 @@ f1_keywords:
 - iostream/std::wcin
 - iostream/std::wclog
 - iostream/std::wcout
-dev_langs: C++
-helpviewer_keywords: iostream header
+dev_langs:
+- C++
+helpviewer_keywords:
+- iostream header
 ms.assetid: de5d39e1-7e77-4b55-bcd1-7c77b41515c8
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 430981da5ec304bf832e759d40870ee88f3e6557
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 774e99f99e01c9eb0fbdcad0100d12212e19831e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltiostreamgt"></a>&lt;iostream&gt;
 Okuma ve standart akışlara yazma kontrol nesneleri bildirir. Bu genellikle, giriş ve çıkış bir C++ programı gerçekleştirmek için eklemeniz gerekir yalnızca başlığıdır.  
@@ -67,7 +71,7 @@ Okuma ve standart akışlara yazma kontrol nesneleri bildirir. Bu genellikle, gi
 |[wclog](#wclog)|Belirtir `wclog` genel akış.|  
 |[wcout](#wcout)|Belirtir `wcout` genel akış.|  
   
-###  <a name="cerr"></a>cerr  
+###  <a name="cerr"></a>  cerr  
  Nesne `cerr` nesnesiyle ilişkili bir Akış Arabellek çıktısına denetimleri `stderr`bildirilen \<cstdio >.  
   
 ```  
@@ -110,7 +114,7 @@ int main( )
 }  
 ```  
   
-###  <a name="cin"></a>cin  
+###  <a name="cin"></a>  cin  
  Belirtir `cin` genel akış.  
   
 ```  
@@ -159,7 +163,7 @@ int main()
   
 ```  
   
-###  <a name="clog"></a>clog  
+###  <a name="clog"></a>  clog  
  Belirtir `clog` genel akış.  
   
 ```  
@@ -175,7 +179,7 @@ extern ostream clog;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `clog`.  
   
-###  <a name="cout"></a>cout  
+###  <a name="cout">cout</a>  
  Belirtir `cout` genel akış.  
   
 ```  
@@ -191,7 +195,7 @@ extern ostream cout;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `cout`.  
   
-###  <a name="wcerr"></a>wcerr  
+###  <a name="wcerr"></a>  wcerr  
  Belirtir `wcerr` genel akış.  
   
 ```  
@@ -207,7 +211,7 @@ extern wostream wcerr;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `wcerr`.  
   
-###  <a name="wcin"></a>wcin  
+###  <a name="wcin"></a>  wcin  
  Belirtir `wcin` genel akış.  
   
 ```  
@@ -223,7 +227,7 @@ extern wistream wcin;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `wcin`.  
   
-###  <a name="wclog"></a>wclog  
+###  <a name="wclog"></a>  wclog  
  Belirtir `wclog` genel akış.  
   
 ```  
@@ -239,7 +243,7 @@ extern wostream wclog;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `wclog`.  
   
-###  <a name="wcout"></a>wcout  
+###  <a name="wcout">wcout</a>  
  Belirtir `wcout` genel akış.  
   
 ```  
@@ -255,7 +259,7 @@ extern wostream wcout;
 #### <a name="example"></a>Örnek  
   Bkz: [cerr](#cerr) kullanma örneği için `wcout`.  
   
- `CString`içinde örnekler bir `wcout` deyimi cast, için `const wchar_t*`, aşağıdaki örnekte gösterildiği gibi.  
+ `CString` içinde örnekler bir `wcout` deyimi cast, için `const wchar_t*`, aşağıdaki örnekte gösterildiği gibi.  
   
 ```  
  

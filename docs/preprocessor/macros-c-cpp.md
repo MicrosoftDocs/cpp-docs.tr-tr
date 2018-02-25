@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - preprocessor
 - preprocessor, macros
 - Visual C++, preprocessor macros
 ms.assetid: a7bfc5d4-2537-4fe0-bef0-70cec0b43388
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c6919f1e3670251b952ce797df5ad10b786b1bbd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a230abc768b23afd74d1af8a9c178d39d453536a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="macros-cc"></a>Makrolar (C/C++)
 Ön işleme genişletir önişlemci yönergeleri değil tüm satırlarda makroları (olmayan satırlar bir  **#**  ilk boşluk olmayan karakter olarak) ve bir parçası olarak atlandı olmayan bazı yönergeleri bölümlerinde bir Koşullu derleme. "Koşullu derleme" yönergeleri, sabit bir ifade test ederek, bir kaynak dosyanın parçalarını derlenmesini gizlemek izin vermek veya hangi metin blokları belirlemek için tanımlayıcı geçirilir derleyici ve hangi metin blokları sırasında kaynak dosyadan kaldırılır ön işleme.  

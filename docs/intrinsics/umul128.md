@@ -4,26 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __umul128
-dev_langs: C++
-helpviewer_keywords: __umul128 intrinsic
+ms.topic: reference
+f1_keywords:
+- __umul128
+dev_langs:
+- C++
+helpviewer_keywords:
+- __umul128 intrinsic
 ms.assetid: 13684df3-3ac7-467c-b258-a0e93bc490b5
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9853b7ac0f57a48341f1f301aa9a1276843a811d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 64e4658fbb92a9ae693aed7bb8c940230b11d88c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="umul128"></a>_umul128
-**Microsoft özel**  
+**Microsoft Specific**  
   
  İlk iki bağımsız değişken olarak geçirilen iki 64-bit işaretsiz tamsayı çarpar ve ürünün yüksek 64 bit gösterdiği 64 bit işaretsiz tamsayıyı koyan `HighProduct` ve ürünün düşük 64 bit döndürür.  
   
@@ -38,13 +43,13 @@ unsigned __int64 _umul128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Multiplier`  
+ [in] `Multiplier`  
  Çarpılacağı ilk 64-bit tam sayı.  
   
- [in]`Multiplicand`  
+ [in] `Multiplicand`  
  Çarpılacağı ikinci 64-bit tam sayı.  
   
- [out]`HighProduct`  
+ [out] `HighProduct`  
  Ürünün yüksek 64 bit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -54,7 +59,7 @@ unsigned __int64 _umul128(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_umul128`|ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_umul128`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
   
 ## <a name="example"></a>Örnek  
   

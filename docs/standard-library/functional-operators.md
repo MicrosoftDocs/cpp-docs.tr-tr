@@ -4,32 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - functional/std::operator!=
 - functional/std::operator==
-dev_langs: C++
-helpviewer_keywords: functional operators
+dev_langs:
+- C++
+helpviewer_keywords:
+- functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f820a75d7fbfbbc287ef7ade533be87d5d8f603f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cf3e013ade27636b8cba3e2eeb5473440f9e14eb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltfunctionalgt-operators"></a>&lt;işlev&gt; işleçleri
 |||  
 |-|-|  
-|[operator!=](#op_neq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Aranabilir nesne boşsa, testleri.  
   
 ```  
@@ -86,7 +90,7 @@ empty == true
 empty == false  
 ```  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri aranabilir nesnesi boş değil.  
   
 ```  

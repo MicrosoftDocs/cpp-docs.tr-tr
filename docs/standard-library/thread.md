@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <thread>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <thread>
+dev_langs:
+- C++
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0847d92d890026ce6cfb963b022a3859370877fe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fa16f2f06a55122619741c5889f41ce3d6b53c1e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread` ve çeşitli destekleyici işlevler.  
@@ -55,10 +59,10 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[get_ıd](../standard-library/thread-functions.md#get_id)|Geçerli yürütme iş parçacığı benzersiz olarak tanımlar.|  
+|[get_id](../standard-library/thread-functions.md#get_id)|Geçerli yürütme iş parçacığı benzersiz olarak tanımlar.|  
 |[sleep_for](../standard-library/thread-functions.md#sleep_for)|Çağıran iş parçacığı engeller.|  
 |[sleep_until](../standard-library/thread-functions.md#sleep_until)|Çağıran iş parçacığı en az belirtilen zamana kadar engeller.|  
-|[değiştirme](../standard-library/thread-functions.md#swap)|İki durumlarını alış verişleri `thread` nesneleri.|  
+|[Değiştirme](../standard-library/thread-functions.md#swap)|İki durumlarını alış verişleri `thread` nesneleri.|  
 |[yield](../standard-library/thread-functions.md#yield)|Geçerli iş parçacığının normal şekilde çalışmaya devam eder olsa bile diğer iş parçacıklarını çalıştırmak için işletim sistemi işaret eder.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
@@ -69,8 +73,8 @@ Standart üstbilgisini \<iş parçacığı > sınıfı tanımlamak için `thread
 |[operator > işleci](../standard-library/thread-operators.md#op_gt)|Bir olup olmadığını belirleyen `thread::id` nesnesidir diğerinden daha büyük.|  
 |[operator < = işleci](../standard-library/thread-operators.md#op_lt_eq)|Bir olup olmadığını belirleyen `thread::id` nesnesidir değerinden küçük veya eşit başka.|  
 |[operator < işleci](../standard-library/thread-operators.md#op_lt)|Bir olup olmadığını belirleyen `thread::id` nesnesi, başka değerinden.|  
-|[operator! = işleci](../standard-library/thread-operators.md#op_neq)|İki karşılaştırır `thread::id` eşitsizlik nesneleri.|  
-|[operator == işleci](../standard-library/thread-operators.md#op_eq_eq)|İki karşılaştırır `thread::id` nesneleri eşitlik için.|  
+|[operator!= Operator](../standard-library/thread-operators.md#op_neq)|İki karşılaştırır `thread::id` eşitsizlik nesneleri.|  
+|[operator== Operator](../standard-library/thread-operators.md#op_eq_eq)|İki karşılaştırır `thread::id` nesneleri eşitlik için.|  
 |[işleç << işleci](../standard-library/thread-operators.md#op_lt_lt)|Bir metin gösterimini ekler bir `thread::id` bir akış nesnesine.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

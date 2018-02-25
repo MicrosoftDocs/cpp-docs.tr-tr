@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: stdexcept/std::invalid_argument
-dev_langs: C++
-helpviewer_keywords: invalid_argument class
+ms.topic: reference
+f1_keywords:
+- stdexcept/std::invalid_argument
+dev_langs:
+- C++
+helpviewer_keywords:
+- invalid_argument class
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 11f8c6741359efec629cb9aa9f98c65dab8371eb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cbd5762478ed5ddab2694469e93b1c3445026727
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="invalidargument-class"></a>invalid_argument Sınıfı
 Sınıfı, geçersiz bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.  

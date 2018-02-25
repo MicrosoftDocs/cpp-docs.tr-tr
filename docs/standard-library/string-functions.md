@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - string/std::getline
 - string/std::stod
@@ -20,7 +20,7 @@ f1_keywords:
 - string/std::to_string
 - string/std::to_wstring
 ms.assetid: 1a4ffd11-dce5-4cc6-a043-b95de034c7c4
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -37,12 +37,13 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::to_string [C++]
 - std::to_wstring [C++]
-ms.workload: cplusplus
-ms.openlocfilehash: 9b1d77b464ea9e9ab4ca6e9511836c490c1c622a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5e40a0fb4c46a9be68893f16490e23ac4d5e5a7e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 ||||  
@@ -50,9 +51,9 @@ ms.lasthandoff: 12/21/2017
 |[getline](#getline)|[stod](#stod)|[stof](#stof)|  
 |[stoi](#stoi)|[stol](#stol)|[stold](#stold)|  
 |[stoll](#stoll)|[stoul](#stoul)|[stoull](#stoull)|  
-|[değiştirme](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|  
+|[Değiştirme](#swap)|[to_string](#to_string)|[to_wstring](#to_wstring)|  
   
-##  <a name="getline"></a>getline  
+##  <a name="getline"></a>  getline  
  Dizeleri Giriş akışı satır-tarafından-satırından ayıklayın.  
   
 ```  
@@ -112,7 +113,7 @@ basic_istream<Allocator, Traits>& getline(
   
 -   İşlev ayıklar sonra `str.` [max_size](../standard-library/basic-string-class.md#max_size) , öğeleri durumda iç durum bayrağı `is` ayarlanır `ios_base::failbit`.  
   
--   Başka bir hata olanlar dışındaki daha önce listelenen, iç durum bayrak; bu durumda `is` ayarlanır`ios_base::badbit`  
+-   Başka bir hata olanlar dışındaki daha önce listelenen, iç durum bayrak; bu durumda `is` ayarlanır `ios_base::badbit`  
   
  İç durumu bayrakları hakkında daha fazla bilgi için bkz: [ios_base::iostate](../standard-library/ios-base-class.md#iostate).  
   
@@ -163,7 +164,7 @@ int main()
   
 ```  
   
-##  <a name="stod"></a>stod  
+##  <a name="stod"></a>  stod  
  Bir karakter dizisi dönüştüren bir `double`.  
   
 ```  
@@ -190,7 +191,7 @@ double stod(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `double` göre çağırma sanki `strtod( str.c_str(), _Eptr)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stof"></a>stof  
+##  <a name="stof"></a>  stof  
  Bir karakter dizisi kayana dönüştürür.  
   
 ```  
@@ -216,7 +217,7 @@ float stof(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `float` göre çağırma sanki `strtof( str.c_str(), _Eptr)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stoi"></a>stoi  
+##  <a name="stoi"></a>  stoi  
  Bir karakter dizisi bir tamsayıya dönüştürür.  
   
 ```  
@@ -245,11 +246,11 @@ int stoi(
 ### <a name="remarks"></a>Açıklamalar  
  İşlev `stoi` karakter dizisi dönüştürür `str` türünde bir değer için `int` ve değeri döndürür. Örneğin, bir karakter dizisi "10" geçirildiğinde değeri döndürdü `stoi` 10 tamsayıdır.  
   
- `stoi`işlevine benzer şekilde davranır `strtol` şekilde çağrıldığında tek baytlı karakterler `strtol( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işleve; iç nesnedir veya `wcstol` benzer şekilde, çağrıldığında geniş karakterler `wcstol(Str.c_str(), _Eptr, idx)`. Daha fazla bilgi için bkz: [strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md).  
+ `stoi` işlevine benzer şekilde davranır `strtol` şekilde çağrıldığında tek baytlı karakterler `strtol( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işleve; iç nesnedir veya `wcstol` benzer şekilde, çağrıldığında geniş karakterler `wcstol(Str.c_str(), _Eptr, idx)`. Daha fazla bilgi için bkz: [strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md).  
   
  Varsa `str.c_str() == *_Eptr`, `stoi` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, veya döndürülen değer türünde bir nesne gösterilemezse `int`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr - str.c_str()` içinde `*idx`.  
   
-##  <a name="stol"></a>stol  
+##  <a name="stol"></a>  stol  
  Bir karakter dizisi dönüştüren bir `long`.  
   
 ```  
@@ -278,7 +279,7 @@ long stol(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `long` göre çağırma sanki `strtol( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stold"></a>stold  
+##  <a name="stold"></a>  stold  
  Bir karakter dizisi dönüştüren bir `long double`.  
   
 ```  
@@ -304,7 +305,7 @@ double stold(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `long double` göre çağırma sanki `strtold( str.c_str(), _Eptr)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stoll"></a>stoll  
+##  <a name="stoll"></a>  stoll  
  Bir karakter dizisi dönüştüren bir `long long`.  
   
 ```  
@@ -333,7 +334,7 @@ long long stoll(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `long long` göre çağırma sanki `strtoll( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stoul"></a>stoul  
+##  <a name="stoul">stoul</a>  
  Bir karakter dizisi imzasız bir dönüştürür uzun.  
   
 ```  
@@ -362,7 +363,7 @@ unsigned long stoul(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `unsigned long` göre çağırma sanki `strtoul( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="stoull"></a>stoull  
+##  <a name="stoull"></a>  stoull  
  Bir karakter dizisi dönüştüren bir `unsigned long long`.  
   
 ```  
@@ -391,7 +392,7 @@ unsigned long long stoull(
 ### <a name="remarks"></a>Açıklamalar  
  Öğelerin sırasını işlevi dönüştürür `str` bir değere `val` türü `unsigned long long` göre çağırma sanki `strtoull( str.c_str(), _Eptr, idx)`, burada `_Eptr` bir işlev için dahili bir nesnedir. Varsa ` str.c_str() == *_Eptr` türünde bir nesne oluşturur `invalid_argument`. Bu tür bir çağrı ayarlarsanız `errno`, türünde bir nesne oluşturur `out_of_range`. Aksi halde, eğer `idx` işlevi depoları null işaretçi değil `*_Eptr -  str.c_str()` içinde `*idx` ve döndürür `val`.  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
  İki dizeyi karakter dizilerine değiş tokuş eder.  
   
 ```  
@@ -444,7 +445,7 @@ The basic_string s1 = Tweedledum.
 The basic_string s2 = Tweedledee.  
 ```  
   
-##  <a name="to_string"></a>to_string  
+##  <a name="to_string"></a>  to_string  
  Bir değerine dönüştürür bir `string`.  
   
 ```  
@@ -471,25 +472,25 @@ string to_string(long double Val);
 ### <a name="remarks"></a>Açıklamalar  
  İşlev dönüştürür `Val` bir dizi nesnesindeki öğelerin sırasını `Buf` göre çağırma gibi iç işlevine `sprintf(Buf, Fmt, Val)`, burada `Fmt` olduğu  
   
-- `"%d"`varsa `Val` türüne sahip`int`  
+- `"%d"` varsa `Val` türüne sahip `int`  
   
-- `"%u"`varsa `Val` türüne sahip`unsigned int`  
+- `"%u"` varsa `Val` türüne sahip `unsigned int`  
   
-- `"%ld"`varsa `Val` türüne sahip`long`  
+- `"%ld"` varsa `Val` türüne sahip `long`  
   
-- `"%lu"`varsa `Val` türüne sahip`unsigned long`  
+- `"%lu"` varsa `Val` türüne sahip `unsigned long`  
   
-- `"%lld"`varsa `Val` türüne sahip`long long`  
+- `"%lld"` varsa `Val` türüne sahip `long long`  
   
-- `"%llu"`varsa `Val` türüne sahip`unsigned long long`  
+- `"%llu"` varsa `Val` türüne sahip `unsigned long long`  
   
-- `"%f"`varsa `Val` türüne sahip `float` veya`double`  
+- `"%f"` varsa `Val` türüne sahip `float` veya `double`  
   
-- `"%Lf"`varsa `Val` türüne sahip`long double`  
+- `"%Lf"` varsa `Val` türüne sahip `long double`  
   
  İşlevi döndürür `string(Buf)`.  
   
-##  <a name="to_wstring"></a>to_wstring  
+##  <a name="to_wstring"></a>  to_wstring  
  Bir değeri geniş dizeye dönüştürür.  
   
 ```  
@@ -516,21 +517,21 @@ wstring to_wstring(long double Val);
 ### <a name="remarks"></a>Açıklamalar  
  İşlev dönüştürür `Val` bir dizi nesnesindeki öğelerin sırasını `Buf` göre çağırma gibi iç işlevine `swprintf(Buf, Len, Fmt, Val)`, burada `Fmt` olduğu  
   
-- `L"%d"`varsa `Val` türüne sahip`int`  
+- `L"%d"` varsa `Val` türüne sahip `int`  
   
-- `L"%u"`varsa `Val` türüne sahip`unsigned int`  
+- `L"%u"` varsa `Val` türüne sahip `unsigned int`  
   
-- `L"%ld"`varsa `Val` türüne sahip`long`  
+- `L"%ld"` varsa `Val` türüne sahip `long`  
   
-- `L"%lu"`varsa `Val` türüne sahip`unsigned long`  
+- `L"%lu"` varsa `Val` türüne sahip `unsigned long`  
   
-- `L"%lld"`varsa `Val` türüne sahip`long long`  
+- `L"%lld"` varsa `Val` türüne sahip `long long`  
   
-- `L"%llu"`varsa `Val` türüne sahip`unsigned long long`  
+- `L"%llu"` varsa `Val` türüne sahip `unsigned long long`  
   
-- `L"%f"`varsa `Val` türüne sahip `float` veya`double`  
+- `L"%f"` varsa `Val` türüne sahip `float` veya `double`  
   
-- `L"%Lf"`varsa `Val` türüne sahip`long double`  
+- `L"%Lf"` varsa `Val` türüne sahip `long double`  
   
  İşlevi döndürür `wstring(Buf)`.  
   

@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - operation_timed_out
 - CONCRT/concurrency::operation_timed_out
 - CONCRT/concurrency::operation_timed_out::operation_timed_out
-dev_langs: C++
-helpviewer_keywords: operation_timed_out class
+dev_langs:
+- C++
+helpviewer_keywords:
+- operation_timed_out class
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c4f211248fd46abb5276f4108268f1dc5a56acd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f1376b04edbd2200c312f7b44b133306dff71486
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="operationtimedout-class"></a>operation_timed_out Sınıfı
 Bu sınıf, bir işlem zaman aşımına uğradı zaman oluşturulan bir özel açıklar.  
@@ -52,7 +56,7 @@ class operation_timed_out : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>operation_timed_out 
+##  <a name="ctor"></a> operation_timed_out 
 
  Oluşturan bir `operation_timed_out` nesnesi.  
   

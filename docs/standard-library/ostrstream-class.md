@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - strstream/std::ostrstream::freeze
 - strstream/std::ostrstream::pcount
 - strstream/std::ostrstream::rdbuf
 - strstream/std::ostrstream::str
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::ostrstream [C++], freeze
 - std::ostrstream [C++], pcount
 - std::ostrstream [C++], rdbuf
 - std::ostrstream [C++], str
 ms.assetid: e2e34679-b266-4728-a8e1-8eda5d400e46
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 33dfff06bdc9cd9005cb2fe8e04a3f8447cf1edc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 93407ae291956c53e4e105b1ffaf0d4eaf85f7b3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ostrstream-class"></a>ostrstream Sınıfı
 Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [strstreambuf](../standard-library/strstreambuf-class.md).  
@@ -55,7 +58,7 @@ class ostrstream : public ostream
   
 |||  
 |-|-|  
-|[Dondurma](#freeze)|Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.|  
+|[freeze](#freeze)|Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.|  
 |[pcount](#pcount)|Denetimli sıraya yazılan öğeleri sayısını döndürür.|  
 |[rdbuf](#rdbuf)|Bir işaretçi akışa ilişkili döndürür `strstreambuf` nesnesi.|  
 |[str](#str)|Çağrıları [Dondur](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçi denetimli sıranın başına döndürür.|  
@@ -65,7 +68,7 @@ class ostrstream : public ostream
   
  **Namespace:** std  
   
-##  <a name="freeze"></a>ostrstream::Freeze  
+##  <a name="freeze"></a>  ostrstream::Freeze  
  Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.  
   
 ```
@@ -82,7 +85,7 @@ void freeze(bool _Freezeit = true);
 ### <a name="example"></a>Örnek  
   Bkz: [strstream::freeze](../standard-library/strstreambuf-class.md#freeze) kullanan bir örnek **Dondur**.  
   
-##  <a name="ostrstream"></a>ostrstream::ostrstream  
+##  <a name="ostrstream"></a>  ostrstream::ostrstream  
  Türünde bir nesne oluşturur `ostrstream`.  
   
 ```
@@ -110,7 +113,7 @@ ostrstream(char* ptr,
   
 -   Aksi takdirde, `ptr` dizisinin ilk öğesi, ilk öğe olarak tasarlanmış bir C dize içeren bir sayım öğelerinin belirlemelisiniz `ptr`ve oluşturucu çağrıları `strstreambuf`( `ptr`, `count`, `ptr` + `strlen`( `ptr`) ).  
   
-##  <a name="pcount"></a>ostrstream::pcount  
+##  <a name="pcount"></a>  ostrstream::pcount  
  Denetimli sıraya yazılan öğeleri sayısını döndürür.  
   
 ```
@@ -126,7 +129,7 @@ streamsize pcount() const;
 ### <a name="example"></a>Örnek  
   Bkz: [strstream::pcount](../standard-library/strstreambuf-class.md#pcount) kullanan bir örnek için `pcount`.  
   
-##  <a name="rdbuf"></a>ostrstream::rdbuf  
+##  <a name="rdbuf"></a>  ostrstream::rdbuf  
  Bir işaretçi akışın ilişkili strstreambuf nesnesi döndürür.  
   
 ```
@@ -142,7 +145,7 @@ strstreambuf *rdbuf() const
 ### <a name="example"></a>Örnek  
   Bkz: [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount) kullanan bir örnek için `rdbuf`.  
   
-##  <a name="str"></a>ostrstream::Str  
+##  <a name="str"></a>  ostrstream::Str  
  Çağrıları [Dondur](../standard-library/strstreambuf-class.md#freeze)ve ardından bir işaretçi denetimli sıranın başına döndürür.  
   
 ```

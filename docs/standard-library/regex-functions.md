@@ -5,15 +5,16 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - regex/std::regex_match
 - regex/std::regex_replace
 - regex/std::regex_search
 - regex/std::swap
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 91a8314b-6f7c-4e33-b7d6-d8583dd75585
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::regex_match [C++]
@@ -21,19 +22,19 @@ helpviewer_keywords:
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: f9ac58b6022d1497f0f06ff08edd29f2e012000f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 66ad573f2025301a9ab05e798ba69c2e75a9830a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex&gt; işlevleri
 ||||  
 |-|-|-|  
 |[regex_match](#regex_match)|[regex_replace](#regex_replace)|[regex_search](#regex_search)|  
-|[değiştirme](#swap)|  
+|[Değiştirme](#swap)|  
   
-##  <a name="regex_match"></a>regex_match
+##  <a name="regex_match"></a>  regex_match
  Tüm hedef dize normal bir ifadeyle eşleşen olup olmadığını sınar.  
   
 ```  
@@ -193,7 +194,7 @@ int _tmain(int argc, _TCHAR* argv[])
   
 ```  
   
-##  <a name="regex_replace"></a>regex_replace
+##  <a name="regex_replace"></a>  regex_replace
  Normal ifadeler değiştirir eşleşmedi.  
   
 ```  
@@ -299,7 +300,7 @@ replacement == AdAeAf
 replacement == Adaeaf  
 ```  
   
-##  <a name="regex_search"></a>regex_search
+##  <a name="regex_search"></a>  regex_search
  Normal ifade eşleştirmesi arar.  
   
 ```  
@@ -448,7 +449,7 @@ search(string, "abc") == true
   matched: "abc"  
 ```  
   
-##  <a name="swap"></a>değiştirme
+##  <a name="swap">Değiştirme</a>
  İki basic_regex veya match_results nesneleri değiştirir.  
   
 ```  
@@ -510,12 +511,12 @@ string == aaa
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[\<Regex >](../standard-library/regex.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
-[regex_error sınıfı](../standard-library/regex-error-class.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
+[regex_error Sınıfı](../standard-library/regex-error-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
 [\<Regex > işleçleri](../standard-library/regex-operators.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
-[regex_traits sınıfı](../standard-library/regex-traits-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  
 

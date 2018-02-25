@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _rotr16
 - _rotr8
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _rotr8 intrinsic
 - _rotr16 intrinsic
 ms.assetid: dfbd2c82-82b4-427a-ad52-51609027ebff
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7a4205131ba5690f24216997fcfd8884077d0d9c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 726cee6f898af306b8d0743344228e7d11d344f1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rotr8-rotr16"></a>_rotr8, _rotr16
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Giriş değerleri bit konumları belirtilen sayıda tarafından (LSB'si) en az önemli bit sağa döndürün.  
   
@@ -45,10 +48,10 @@ unsigned short _rotr16(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`value`  
+ [in] `value`  
  Döndürülecek değer.  
   
- [in]`shift`  
+ [in] `shift`  
  Döndürmek için BITS sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -58,8 +61,8 @@ unsigned short _rotr16(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_rotr8`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`_rotr16`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotr8`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_rotr16`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

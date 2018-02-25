@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - std::operator<
 - operator<
@@ -14,23 +15,25 @@ f1_keywords:
 - <
 - std.operator<
 - std::<
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - < operator, comparing specific objects
 - operator<, valarrays
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 554ceba328a0688ab11e7d66ece26204aad598e3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0604668e3ed1c0891f51e7d84f481696caf5da4a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="operatorlt-ltsample-containergt"></a>İşleç&lt; (&lt;örnek kapsayıcı&gt;)
 > [!NOTE]
@@ -52,5 +55,5 @@ bool operator<(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 [\<Örnek kapsayıcı >](../standard-library/sample-container.md)  
-[başlayın](../standard-library/container-class-begin.md)  
+[Başlangıç](../standard-library/container-class-begin.md)  
 [Bitiş](../standard-library/container-class-end.md)  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - functional/std::function
 - functional/std::function::result_type
@@ -16,7 +17,8 @@ f1_keywords:
 - functional/std::function::target_type
 - functional/std::function::operator unspecified
 - functional/std::function::operator()
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::function [C++]
 - std::function [C++], result_type
@@ -25,16 +27,17 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a07538c7f3ddd58e45fc23a4fc2c9c13850f08a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f4dfc5366adece188fa80786ddee2dfb926ae5e3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="function-class"></a>function Sınıfı
 Aranabilir bir nesne için sarmalayıcı.  
@@ -99,13 +102,13 @@ public:
   
  Bazı üye işlevleri istenen hedef nesne adları bir işlenen alır. Bu tür işleneni çeşitli yollarla belirtebilirsiniz:  
   
- `fn`--aranabilir nesne `fn`; çağrısından sonra `function` nesnesi bir kopyasını tutar`fn`  
+ `fn` --aranabilir nesne `fn`; çağrısından sonra `function` nesnesi bir kopyasını tutar `fn`  
   
- `fnref`--tarafından adlı aranabilir nesne `fnref.get()`; çağrısından sonra `function` nesnesi bir başvuru tutar`fnref.get()`  
+ `fnref` --tarafından adlı aranabilir nesne `fnref.get()`; çağrısından sonra `function` nesnesi bir başvuru tutar `fnref.get()`  
   
- `right`--aranabilir nesne varsa, tutulan `function` nesnesi`right`  
+ `right` --aranabilir nesne varsa, tutulan `function` nesnesi `right`  
   
- `npc`--bir null işaretçinin; çağrısından sonra `function` nesnesidir boş  
+ `npc` --bir null işaretçinin; çağrısından sonra `function` nesnesidir boş  
   
  Tüm durumlarda `INVOKE(f, t1, t2, ..., tN)`, burada `f` aranabilir nesnedir ve `t1, t2, ..., tN` lvalues türleri olan `T1, T2, ..., TN` sırasıyla, doğru biçimlendirilmiş olması gerekir ve `Ret` void, dönüştürülebilir değil `Ret`.  
   
@@ -115,7 +118,7 @@ public:
   
 |||  
 |-|-|  
-|[işlevi](#function)|Boş veya sabit bir imza ile rastgele tür aranabilir bir nesne depolar bir sarmalayıcı oluşturur.|  
+|[İşlevi](#function)|Boş veya sabit bir imza ile rastgele tür aranabilir bir nesne depolar bir sarmalayıcı oluşturur.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -128,8 +131,8 @@ public:
 |||  
 |-|-|  
 |[Ata](#assign)|Aranabilir nesne bu işlev nesnesi atar.|  
-|[değiştirme](#swap)|İki aranabilir nesneleri değiştirme.|  
-|[Hedef](#target)|Aranabilir nesne depoladıysanız testleri belirtildiği şekilde çağrılabilir.|  
+|[Değiştirme](#swap)|İki aranabilir nesneleri değiştirme.|  
+|[target](#target)|Aranabilir nesne depoladıysanız testleri belirtildiği şekilde çağrılabilir.|  
 |[target_type](#target_type)|Alır aranabilir nesnede bilgileri yazın.|  
   
 ### <a name="operators"></a>İşleçler  
@@ -137,15 +140,15 @@ public:
 |||  
 |-|-|  
 |[function::operator belirtilmemiş](#op_unspecified)|Aranabilir nesne depoladıysanız testleri bulunmaktadır.|  
-|[işlev:: operator()](#op_call)|Aranabilir nesnesi çağırır.|  
-|[Function::operator =](#op_eq)|Depolanan aranabilir nesnesini değiştirir.|  
+|[function::operator()](#op_call)|Aranabilir nesnesi çağırır.|  
+|[function::operator=](#op_eq)|Depolanan aranabilir nesnesini değiştirir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<işlevsel >  
   
  **Namespace:** std  
   
-##  <a name="assign"></a>Function::Assign  
+##  <a name="assign"></a>  Function::Assign  
  Aranabilir nesne bu işlev nesnesi atar.  
   
 ```  
@@ -173,7 +176,7 @@ template <class Fx, class Alloc>
 ### <a name="remarks"></a>Açıklamalar  
  Her Değiştir üye işlevlerini `callable object` tutulan `*this` olarak geçirilen aranabilir nesnesi ile `operand`. Her ikisi de ayırıcısı nesnesiyle depolama alanı Ayır `Ax`.  
   
-##  <a name="function"></a>Function::Function  
+##  <a name="function"></a>  Function::Function  
  Boş veya sabit bir imza ile rastgele tür aranabilir bir nesne depolar bir sarmalayıcı oluşturur.  
   
 ```  
@@ -287,7 +290,7 @@ f is non-empty (correct).
 g is empty (correct).  
 ```  
   
-##  <a name="op_unspecified"></a>function::operator belirtilmemiş  
+##  <a name="op_unspecified">function::operator belirtilmemiş</a>  
  Aranabilir nesne depoladıysanız testleri bulunmaktadır.  
   
 ```  
@@ -327,7 +330,7 @@ not empty == false
 not empty == true  
 ```  
   
-##  <a name="op_call"></a>işlev:: operator()  
+##  <a name="op_call"></a>  function::operator()  
  Aranabilir nesnesi çağırır.  
   
 ```  
@@ -375,7 +378,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="op_eq"></a>Function::operator =  
+##  <a name="op_eq"></a>  function::operator=  
  Depolanan aranabilir nesnesini değiştirir.  
   
 ```  
@@ -454,7 +457,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="result_type"></a>Function::result_type  
+##  <a name="result_type"></a>  function::result_type  
  Saklanan aranabilir nesne dönüş türü.  
   
 ```  
@@ -494,7 +497,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="swap"></a>Function::Swap  
+##  <a name="swap"></a>  Function::Swap  
  İki aranabilir nesneleri değiştirme.  
   
 ```  
@@ -550,7 +553,7 @@ empty == false
 val == -3  
 ```  
   
-##  <a name="target"></a>Function::target  
+##  <a name="target"></a>  Function::target  
  Aranabilir nesne depoladıysanız testleri belirtildiği şekilde çağrılabilir.  
   
 ```  
@@ -609,7 +612,7 @@ empty == true
 no target == true  
 ```  
   
-##  <a name="target_type"></a>Function::target_type  
+##  <a name="target_type"></a>  Function::target_type  
  Alır aranabilir nesnede bilgileri yazın.  
   
 ```  

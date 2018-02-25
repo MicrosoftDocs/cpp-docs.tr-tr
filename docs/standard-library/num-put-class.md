@@ -4,16 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocnum/std::num_put
 - locale/std::num_put::char_type
 - locale/std::num_put::iter_type
 - locale/std::num_put::do_put
 - locale/std::num_put::put
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::num_put [C++]
 - std::num_put [C++], char_type
@@ -21,16 +23,17 @@ helpviewer_keywords:
 - std::num_put [C++], do_put
 - std::num_put [C++], put
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f93a5536b73c5d62a95ff076e40304204071d83f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f25ebb3cc763947ca0ee88d95d0b7a1d284d157f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="numput-class"></a>num_put Sınıfı
 Sayısal değerler Denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesneyi tanımlayan bir şablon sınıfı `CharType`.  
@@ -71,14 +74,14 @@ class num_put : public locale::facet;
 |||  
 |-|-|  
 |[do_put](#do_put)|Bir dizi sayıya dönüştürme için çağrılan bir sanal işlev `CharType`sayıyı temsil eden s biçimlendirilmiş belirtilen yerel ayar.|  
-|[yerleştirme](#put)|Bir sayıyı bir dizi dönüştürür `CharType`sayısını temsil eden s biçimlendirilmiş belirtilen yerel ayar.|  
+|[PUT](#put)|Bir sayıyı bir dizi dönüştürür `CharType`sayısını temsil eden s biçimlendirilmiş belirtilen yerel ayar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>num_put::char_type  
+##  <a name="char_type"></a>  num_put::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -88,7 +91,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="do_put"></a>num_put::do_put  
+##  <a name="do_put"></a>  num_put::do_put  
  Bir dizi sayıya dönüştürme için çağrılan bir sanal işlev **CharType**sayıyı temsil eden s biçimlendirilmiş belirtilen yerel ayar.  
   
 ```  
@@ -196,7 +199,7 @@ virtual iter_type do_put(
   
 - **Fac**. [thousands_sep](../standard-library/numpunct-class.md#thousands_sep) herhangi Ondalık ayırıcının sol tarafındaki basamak grupları ayıran sırası belirler  
   
- Hiçbir gruplandırma kısıtlamaları tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğe CHAR_MAX değeri varsa), ardından hiçbir örneği **fac**. `thousands_sep`Çıktı alanında oluşturulur. Aksi takdirde, yazdırma dönüştürme gerçekleştikten sonra ayırıcıları eklenir.  
+ Hiçbir gruplandırma kısıtlamaları tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğe CHAR_MAX değeri varsa), ardından hiçbir örneği **fac**. `thousands_sep` Çıktı alanında oluşturulur. Aksi takdirde, yazdırma dönüştürme gerçekleştikten sonra ayırıcıları eklenir.  
   
  İkinci sanal korumalı üye fonksiyonu:  
   
@@ -222,7 +225,7 @@ virtual iter_type do_put(iter_type next,
   
 -   Varsa **iosbase**. **bayrakları** & `ios_base::floatfield` == `ios_base::`[sabit](../standard-library/ios-functions.md#fixed), dönüştürme belirtimi **lf**.  
   
--   Varsa **iosbase**. **bayrakları** & **ios_base::floatfield** == `ios_base::`[bilimsel](../standard-library/ios-functions.md#scientific), dönüştürme belirtimi `le`. Varsa **iosbase**. **bayrakları** & `ios_base::`[büyük](../standard-library/ios-functions.md#uppercase) sıfır olmayan, olan **e** ile değiştirilir **E**.  
+-   Varsa **iosbase**. **flags** & **ios_base::floatfield** == `ios_base::`[scientific](../standard-library/ios-functions.md#scientific), the conversion specification is `le`. Varsa **iosbase**. **bayrakları** & `ios_base::`[büyük](../standard-library/ios-functions.md#uppercase) sıfır olmayan, olan **e** ile değiştirilir **E**.  
   
 -   Aksi takdirde, dönüştürme belirtimidir **lg**. Varsa **iosbase**. **bayrakları** & **ios_base::uppercase** sıfır olmayan, olan **g** ile değiştirilir **G**.  
   
@@ -265,7 +268,7 @@ virtual iter_type do_put(iter_type next,
   
  Boole çıkış alandan oluşturur dışında birinci ile aynı şekilde davranır `val`.  
   
- Boole çıktı alanı iki biçimlerden birini alır. Varsa **iosbase**. **bayrakları** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) olan **false**, üye işlevinin döndürdüğü `do_put`(_ *sonraki*, \_ *Iosbase*, \_ *doldurun*, ( **uzun**) `val`), hangi genellikle oluşturur ya da 0 ( oluşturulmuşbirdizi**false**) veya 1 (için **true**). Aksi takdirde, oluşturulan sıralı ya da değer **fac**. [falsename](../standard-library/numpunct-class.md#falsename) `)` (için **false**), veya **fac**. [truename](../standard-library/numpunct-class.md#truename) (için **true**).  
+ Boole çıktı alanı iki biçimlerden birini alır. Varsa **iosbase**. **bayrakları** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) olan **false**, üye işlevinin döndürdüğü `do_put`(_ *sonraki*, \_ *Iosbase*, \_ *doldurun*, ( **uzun**) `val`), hangi genellikle oluşturur ya da 0 oluşturulmuş bir dizi ( için**yanlış**) veya 1 (için **true**). Aksi takdirde, oluşturulan sıralı ya da değer **fac**. [falsename](../standard-library/numpunct-class.md#falsename) `)` (için **false**), veya **fac**. [truename](../standard-library/numpunct-class.md#truename) (için **true**).  
   
  Yedinci sanal korumalı üye fonksiyonu:  
   
@@ -292,7 +295,7 @@ virtual iter_type do_put(iter_type next,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [put](#put), çağıran `do_put`.  
   
-##  <a name="iter_type"></a>num_put::iter_type  
+##  <a name="iter_type"></a>  num_put::iter_type  
  Bir çıkış yineleyiciyi açıklayan tür.  
   
 ```  
@@ -302,7 +305,7 @@ typedef OutputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **OutputIterator.**  
   
-##  <a name="num_put"></a>num_put::num_put  
+##  <a name="num_put"></a>  num_put::num_put  
  Nesne türü Oluşturucusu `num_put`.  
   
 ```  
@@ -320,13 +323,13 @@ explicit num_put(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)(_ *Refs*).  
   
-##  <a name="put"></a>num_put::Put  
+##  <a name="put"></a>  num_put::Put  
  Bir sayıyı bir dizi dönüştürür **CharType**sayıyı temsil eden s biçimlendirilmiş belirtilen yerel ayar.  
   
 ```  

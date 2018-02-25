@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <cstring>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <cstring>
+dev_langs:
+- C++
 helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8b48e9b6576881d6ee480010c0871e6958b4f8c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b836171f555c3aaa66045a11871558a1ed556784
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltcstringgt"></a>&lt;CString&gt;
 Standart C Kitaplığı üstbilgi içeren \<string.h > ve ilişkili adlarıyla ekler `std` ad alanı.  

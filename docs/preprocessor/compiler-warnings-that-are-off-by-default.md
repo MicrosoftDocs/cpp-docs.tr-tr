@@ -3,7 +3,7 @@ title: "Varsayılan olarak kapalı olan derleyici uyarıları | Microsoft Docs"
 ms.date: 11/04/2016
 ms.technology:
 - cpp-tools
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,11 +15,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca1fdff6f5be88d7562f1735ea31323ca5a70360
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
-ms.translationtype: HT
+ms.openlocfilehash: 619e2c517305246937ed7428eadbcf40be31fe5b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 

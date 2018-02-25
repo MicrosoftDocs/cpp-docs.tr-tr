@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __vmx_on
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __vmx_on
+dev_langs:
+- C++
 helpviewer_keywords:
 - VMXON instruction
 - __vmx_on intrinsic
 ms.assetid: 16804991-6a75-4adf-8ec2-bc95acfa4801
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 457866d54fe3f290c40ca70b07e19ec3f337de41
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 06b29bae4744f067bd50400850bcb7af0dc6eb30
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="vmxon"></a>__vmx_on
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Sanal makine Uzantıları (VMX) işlemci işlemindeki etkinleştirir.  
   
@@ -38,7 +42,7 @@ unsigned char __vmx_on(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`VmsSupportPhysicalAddress`  
+ [in] `VmsSupportPhysicalAddress`  
  Bir sanal makine denetim yapısı (Windows VMCS) işaret eden bir 64 bit fiziksel adresi için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

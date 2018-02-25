@@ -1,21 +1,23 @@
 ---
-title: "recursive_mutex sınıfı | Microsoft Docs"
+title: recursive_mutex Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - mutex/std::recursive_mutex
 - mutex/std::recursive_mutex::recursive_mutex
 - mutex/std::recursive_mutex::lock
 - mutex/std::recursive_mutex::try_lock
 - mutex/std::recursive_mutex::unlock
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: eb5ffd1b-7e78-4559-8391-bb220ead42fc
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -25,12 +27,13 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], lock
 - std::recursive_mutex [C++], try_lock
 - std::recursive_mutex [C++], unlock
-ms.workload: cplusplus
-ms.openlocfilehash: d5eadeac762e894a409fb6c3d949e38aaeabdf04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d9215555d3c15c983165ba411e9fe30ce0ec27c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="recursivemutex-class"></a>recursive_mutex Sınıfı
 Temsil eden bir *mutex türü*. Tersine için [mutex](../standard-library/mutex-class-stl.md), zaten kilitli olan nesneler için kilitleme yöntemlerine çağrılarının iyi tanımlanmış bir davranıştır.  
@@ -48,7 +51,7 @@ class recursive_mutex;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[recursive_mutex](#recursive_mutex)|Oluşturan bir `recursive_mutex` nesnesi.|  
-|[~ recursive_mutex yıkıcısı](#dtorrecursive_mutex_destructor)|Tarafından kullanılan tüm kaynakları serbest `recursive_mutex` nesnesi.|  
+|[~recursive_mutex Destructor](#dtorrecursive_mutex_destructor)|Tarafından kullanılan tüm kaynakları serbest `recursive_mutex` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -63,7 +66,7 @@ class recursive_mutex;
   
  **Namespace:** std  
   
-##  <a name="lock"></a>kilitleme  
+##  <a name="lock"></a>  kilitleme  
  İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.  
   
 ```cpp  
@@ -73,14 +76,14 @@ void lock();
 ### <a name="remarks"></a>Açıklamalar  
  Çağıran iş parçacığı zaten sahipse `mutex`yöntemi hemen döndürür ve önceki kilit yürürlükte kalır.  
   
-##  <a name="recursive_mutex"></a>recursive_mutex  
+##  <a name="recursive_mutex"></a>  recursive_mutex  
  Oluşturan bir `recursive_mutex` nesnesi kilitli değil.  
   
 ```cpp  
 recursive_mutex();
 ```  
   
-##  <a name="dtorrecursive_mutex_destructor"></a>~ recursive_mutex  
+##  <a name="dtorrecursive_mutex_destructor"></a>  ~recursive_mutex  
  Nesne tarafından kullanılan tüm kaynakları serbest bırakır.  
   
 ```cpp  
@@ -90,7 +93,7 @@ recursive_mutex();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi çalıştığında nesne kilitliyse tanımlanmamış bir davranıştır.  
   
-##  <a name="try_lock"></a>try_lock  
+##  <a name="try_lock"></a>  try_lock  
  Sahipliğini almayı denediğinde `mutex` engelleme olmadan.  
   
 ```cpp  
@@ -98,12 +101,12 @@ bool try_lock() noexcept;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Yöntem başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi halde, `false`.  
+ `true` Yöntem başarıyla sahipliğini elde ederse `mutex` veya çağıran iş parçacığı zaten sahipse `mutex`; Aksi halde, `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağıran iş parçacığı zaten sahipse `mutex`, işlevi hemen döndürür `true`, ve önceki kilit yürürlükte kalır.  
   
-##  <a name="unlock"></a>kilidini aç  
+##  <a name="unlock">kilidini aç</a>  
  Mutex sahipliğini serbest bırakır.  
   
 ```cpp  
@@ -117,7 +120,7 @@ void unlock();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<Mutex >](../standard-library/mutex.md)
+ [\<mutex>](../standard-library/mutex.md)
 
 
 

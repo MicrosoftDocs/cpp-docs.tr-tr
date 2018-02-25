@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - SchedulerPolicy
 - concrt/concurrency::SchedulerPolicy
@@ -14,19 +15,22 @@ f1_keywords:
 - concrt/concurrency::SchedulerPolicy::GetPolicyValue
 - concrt/concurrency::SchedulerPolicy::SetConcurrencyLimits
 - concrt/concurrency::SchedulerPolicy::SetPolicyValue
-dev_langs: C++
-helpviewer_keywords: SchedulerPolicy class
+dev_langs:
+- C++
+helpviewer_keywords:
+- SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7ce629f81d952a274a86aafba71da126c65946f5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6fc8873fc4516b3c79685eacc91d3d4426b80901
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy Sınıfı
 `SchedulerPolicy` Sınıfı bir zamanlayıcı örneğini davranışını denetleyen anahtar/değer çifti kümesi, her ilke öğesi için bir tane içeriyor.  
@@ -44,7 +48,7 @@ class SchedulerPolicy;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[SchedulerPolicy](#ctor)|Fazla Yüklendi. Yeni bir zamanlayıcı ilkesi oluşturur ve için değerlerle doldurur [İlkesi anahtarları](concurrency-namespace-enums.md) eşzamanlılık çalışma zamanı zamanlayıcılar ve kaynak yöneticisi tarafından desteklenir.|  
-|[~ SchedulerPolicy yok Edicisi](#dtor)|Bir zamanlayıcı ilke yok eder.|  
+|[~SchedulerPolicy Destructor](#dtor)|Bir zamanlayıcı ilke yok eder.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -58,7 +62,7 @@ class SchedulerPolicy;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[işleç =](#operator_eq)|Zamanlayıcı İlkesi başka bir zamanlayıcı ilkesinden atar.|  
+|[operator=](#operator_eq)|Zamanlayıcı İlkesi başka bir zamanlayıcı ilkesinden atar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Kullanılarak denetlenebilir ilkeleri hakkında daha fazla bilgi için `SchedulerPolicy` sınıfı için bkz: [PolicyElementKey](concurrency-namespace-enums.md).  
@@ -71,7 +75,7 @@ class SchedulerPolicy;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="getpolicyvalue"></a>GetPolicyValue 
+##  <a name="getpolicyvalue"></a> GetPolicyValue 
 
  Sağlanan ilke anahtarının değeri olarak alır `key` parametresi.  
   
@@ -89,7 +93,7 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 ### <a name="remarks"></a>Açıklamalar  
  Yöntemi özel durum oluşturacak [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) geçersiz ilke anahtarı için.  
   
-##  <a name="operator_eq"></a>işleç = 
+##  <a name="operator_eq"></a> işleç = 
 
  Zamanlayıcı İlkesi başka bir zamanlayıcı ilkesinden atar.  
   
@@ -107,7 +111,7 @@ SchedulerPolicy& operator= (const SchedulerPolicy& _RhsPolicy);
 ### <a name="remarks"></a>Açıklamalar  
  Genellikle, yeni bir zamanlayıcı ilke tanımlamak için en uygun mevcut bir ilkeyi kopyalayın ve kullanarak değiştirmek için yoludur `SetPolicyValue` veya `SetConcurrencyLimits` yöntemleri.  
   
-##  <a name="ctor"></a>SchedulerPolicy 
+##  <a name="ctor"></a> SchedulerPolicy 
 
  Yeni bir zamanlayıcı ilkesi oluşturur ve için değerlerle doldurur [İlkesi anahtarları](concurrency-namespace-enums.md) eşzamanlılık çalışma zamanı zamanlayıcılar ve kaynak yöneticisi tarafından desteklenir.  
   
@@ -136,7 +140,7 @@ SchedulerPolicy(
   
  Üçüncü Oluşturucusu kopya Oluşturucu ' dir. Genellikle, yeni bir zamanlayıcı ilke tanımlamak için en uygun mevcut bir ilkeyi kopyalayın ve kullanarak değiştirmek için yoludur `SetPolicyValue` veya `SetConcurrencyLimits` yöntemleri.  
   
-##  <a name="dtor"></a>~ SchedulerPolicy 
+##  <a name="dtor"></a> ~ SchedulerPolicy 
 
  Bir zamanlayıcı ilke yok eder.  
   
@@ -144,7 +148,7 @@ SchedulerPolicy(
 ~SchedulerPolicy();
 ```  
   
-##  <a name="setconcurrencylimits"></a>SetConcurrencyLimits 
+##  <a name="setconcurrencylimits">SetConcurrencyLimits</a> 
 
  Aynı anda ayarlar `MinConcurrency` ve `MaxConcurrency` ilkeleri `SchedulerPolicy` nesnesi.  
   
@@ -166,7 +170,7 @@ void SetConcurrencyLimits(
   
  Yöntemi de atabilirsiniz [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md) diğer geçersiz değerler için.  
   
-##  <a name="setpolicyvalue"></a>SetPolicyValue 
+##  <a name="setpolicyvalue"></a> SetPolicyValue 
 
  Sağlanan ilke anahtarının değeri olarak ayarlar `key` parametre ve eski değer döndürür.  
   

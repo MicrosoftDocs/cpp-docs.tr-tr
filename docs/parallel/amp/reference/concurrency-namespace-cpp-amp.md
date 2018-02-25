@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: AMP/Concurrency
-dev_langs: C++
-helpviewer_keywords: Concurrency namespace
+ms.topic: reference
+f1_keywords:
+- AMP/Concurrency
+dev_langs:
+- C++
+helpviewer_keywords:
+- Concurrency namespace
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4c4dd1773e74334f342ebb7e3cd64b68e6bab2b0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1a9f82baade21cdbde41fc49fd0bfe6163c0f6af
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-c-amp"></a>Eşzamanlılık Ad Alanı (C++ AMP)
 Sınıfları ve verileri paralel donanımda C++ kod yürütmeyi hızlandırmak işlevleri sağlar. Daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](../cpp-amp-overview.md)  
@@ -68,19 +73,19 @@ namespace Concurrency;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[access_type numaralandırması](concurrency-namespace-enums-amp.md#access_type)|Veri erişim türünü belirtir.|  
-|[queuing_mode numaralandırması](concurrency-namespace-enums-amp.md#queuing_mode)|Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.|  
+|[queuing_mode Enumeration](concurrency-namespace-enums-amp.md#queuing_mode)|Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[operator == işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_eq_eq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
-|[operator! = işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_neq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
-|[operator + işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_add)|Belirtilen bağımsız değişkenler component-wise toplamını hesaplar.|  
+|[operator== Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_eq_eq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
+|[operator!= Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_neq)|Belirtilen veri yapılarını eşit olup olmadığını belirler.|  
+|[operator+ Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_add)|Belirtilen bağımsız değişkenler component-wise toplamını hesaplar.|  
 |[operator-işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator-)|Belirtilen bağımsız değişkenler arasındaki component-wise farkı hesaplar.|  
 |[operator * işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_star)|Belirtilen bağımsız değişkenler component-wise çarpımını hesaplar.|  
 |[operator / işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_div)|Belirtilen bağımsız değişkenler component-wise sayının hesaplar.|  
-|[operator % işleci (C++ AMP)](concurrency-namespace-operators-amp.md#operator_mod)|Modulus ilk belirtilen bağımsız değişkenin ikinci belirtilen bağımsız değişken olarak hesaplar.|  
+|[operator% Operator (C++ AMP)](concurrency-namespace-operators-amp.md#operator_mod)|Modulus ilk belirtilen bağımsız değişkenin ikinci belirtilen bağımsız değişken olarak hesaplar.|  
   
 ### <a name="functions"></a>İşlevler  
   
@@ -99,7 +104,7 @@ namespace Concurrency;
 |[atomic_fetch_or](concurrency-namespace-functions-amp.md#atomic_fetch_or)|Fazla Yüklendi. Bitsel belirtilen konumda saklanan değeri ayarlar `or` bu değeri ve atomik bir işlem olarak belirtilen değeri.|  
 |[atomic_fetch_sub](concurrency-namespace-functions-amp.md#atomic_fetch_sub)|Fazla Yüklendi. Bu değer ve belirtilen değeri fark atomik bir işlem olarak için belirtilen konumda saklanan değeri ayarlar.|  
 |[atomic_fetch_xor](concurrency-namespace-functions-amp.md#atomic_fetch_xor)|Fazla Yüklendi. Bitsel belirtilen konumda saklanan değeri ayarlar `xor` bu değeri ve atomik bir işlem olarak belirtilen değeri.|  
-|[kopyalama](concurrency-namespace-functions-amp.md#copy)|C++ AMP nesnesini kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılıyor. Kod üzerinde Hızlandırıcı kod çalıştırırken veriler kopyalanamaz. Bu işlevin genel form `copy(src, dest)`.|  
+|[Kopyalama](concurrency-namespace-functions-amp.md#copy)|C++ AMP nesnesini kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılıyor. Kod üzerinde Hızlandırıcı kod çalıştırırken veriler kopyalanamaz. Bu işlevin genel form `copy(src, dest)`.|  
 |[copy_async](concurrency-namespace-functions-amp.md#copy_async)|C++ AMP nesnesini kopyalar ve döndürür [completion_future](completion-future-class.md) , beklenen. Kod Hızlandırıcı üzerinde çalışırken, veriler kopyalanamaz. Bu işlevin genel form `copy(src, dest)`.|  
 |[direct3d_abort](concurrency-namespace-functions-amp.md#direct3d_abort)|Olan bir işlev yürütülmesini durdurur `restrict(amp)` kısıtlama yan tümcesi.|  
 |[direct3d_errorf](concurrency-namespace-functions-amp.md#direct3d_errorf)|Visual Studio biçimlendirilmiş bir dize yazdırır **çıkış** penceresini açın ve başlatır bir [runtime_exception](runtime-exception-class.md) aynı biçime sahip özel durum dize.|  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - future/std::shared_future
 - future/std::shared_future::shared_future
@@ -15,9 +16,10 @@ f1_keywords:
 - future/std::shared_future::wait
 - future/std::shared_future::wait_for
 - future/std::shared_future::wait_until
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 454ebedd-f42b-405f-99a5-a25cc9ad7c90
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -29,12 +31,13 @@ helpviewer_keywords:
 - std::shared_future [C++], wait
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
-ms.workload: cplusplus
-ms.openlocfilehash: c6d7946de6440ad33c844e140ca7cbcc2199a0b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1d008142b78bc7901ef67f66f4327ad9229688bf
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sharedfuture-class"></a>shared_future Sınıfı
 Açıklayan bir *zaman uyumsuz dönüş nesnesi*. Tersine ile bir [gelecekteki](../standard-library/future-class.md) nesne, bir *zaman uyumsuz sağlayıcısı* herhangi bir sayıda ile ilişkilendirilebilir `shared_future` nesneleri.  
@@ -49,7 +52,7 @@ class shared_future;
 ## <a name="remarks"></a>Açıklamalar  
  Herhangi bir yöntem dışında çağırmayın `valid`, `operator=`ve üzerinde yıkıcı bir `shared_future` nesne bu *boş*.  
   
- `shared_future`nesneleri eşitlenmez. Aynı nesne üzerinde birden çok iş parçacığından yöntemleri çağırma öngörülemeyen sonuçlara sahip bir veri yarış tanıtır.  
+ `shared_future` nesneleri eşitlenmez. Aynı nesne üzerinde birden çok iş parçacığından yöntemleri çağırma öngörülemeyen sonuçlara sahip bir veri yarış tanıtır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -64,7 +67,7 @@ class shared_future;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[get](#get)|Depolanan sonucu alır *zaman uyumsuz durum ilişkili*.|  
-|[Geçerli](#valid)|Nesne boş değil olup olmadığını belirtir.|  
+|[valid](#valid)|Nesne boş değil olup olmadığını belirtir.|  
 |[bekleme](#wait)|Zaman uyumsuz işlemin ilişkili durumu hazır olana kadar geçerli iş parçacığının engeller.|  
 |[wait_for](#wait_for)|İlişkili zaman uyumsuz durum kadar blokları hazır veya belirtilen zamana kadar geçen.|  
 |[wait_until](#wait_until)|Blokları ilişkili zaman uyumsuz durum kadar sürede hazır veya belirli bir noktaya kadar olur.|  
@@ -73,14 +76,14 @@ class shared_future;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[shared_future::operator =](#op_eq)|Yeni bir ilişkili zaman uyumsuz durum atar.|  
+|[shared_future::operator=](#op_eq)|Yeni bir ilişkili zaman uyumsuz durum atar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<gelecekteki >  
   
  **Namespace:** std  
   
-##  <a name="get"></a>shared_future::get
+##  <a name="get"></a>  shared_future::get
  Depolanan sonucu alır *zaman uyumsuz durum ilişkili*.  
   
 ```
@@ -100,7 +103,7 @@ void get() const;
   
  Özelleştirme için depolanan değer var olduğundan `shared_future<void>`, yöntem `void`.  
   
-##  <a name="op_eq"></a>shared_future::operator =  
+##  <a name="op_eq"></a>  shared_future::operator =  
  Aktarımları bir *zaman uyumsuz durum ilişkili* belirtilen bir nesneden.  
   
 ```
@@ -120,7 +123,7 @@ shared_future& operator=(const shared_future& Right);
   
  İkinci yöntem için `Right` ilişkili zaman uyumsuz durumunu korur.  
   
-##  <a name="shared_future"></a>shared_future::shared_future Oluşturucusu  
+##  <a name="shared_future"></a>  shared_future::shared_future Oluşturucusu  
  Oluşturan bir `shared_future` nesnesi.  
   
 ```
@@ -137,11 +140,11 @@ shared_future(const shared_future& Right);
 ### <a name="remarks"></a>Açıklamalar  
  İlk Oluşturucusu yapıları bir `shared_future` hiçbir nesne *zaman uyumsuz durum ilişkili*.  
   
- İkinci ve üçüncü oluşturucular oluşturmak bir `shared_future` nesne ve ilişkili zaman uyumsuz durumundan aktarım `Right`. `Right`artık ilişkili bir zaman uyumsuz durum yok.  
+ İkinci ve üçüncü oluşturucular oluşturmak bir `shared_future` nesne ve ilişkili zaman uyumsuz durumundan aktarım `Right`. `Right` artık ilişkili bir zaman uyumsuz durum yok.  
   
  Dördüncü Oluşturucusu yapıları bir `shared_future` aynı olan nesneyi ilişkili olarak zaman uyumsuz durum `Right`.  
   
-##  <a name="valid"></a>shared_future::valid
+##  <a name="valid"></a>  shared_future::valid
  Nesne sahip olup olmadığını belirten bir *zaman uyumsuz durum ilişkili*.  
   
 ```
@@ -149,9 +152,9 @@ bool valid() noexcept;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`nesnenin ilişkili bir zaman uyumsuz durum varsa; Aksi takdirde `false`.  
+ `true` nesnenin ilişkili bir zaman uyumsuz durum varsa; Aksi takdirde `false`.  
   
-##  <a name="wait"></a>shared_future::wait
+##  <a name="wait"></a>  shared_future::wait
  Geçerli iş parçacığının kadar engeller *zaman uyumsuz durum ilişkili* olan *hazır*.  
   
 ```
@@ -161,7 +164,7 @@ void wait() const;
 ### <a name="remarks"></a>Açıklamalar  
  Zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanan ilişkili bir zaman uyumsuz durum hazırdır.  
   
-##  <a name="wait_for"></a>shared_future::wait_for
+##  <a name="wait_for"></a>  shared_future::wait_for
  İlişkili zaman uyumsuz durum olana kadar geçerli iş parçacığının engeller *hazır* veya belirli bir süre geçti kadar.  
   
 ```
@@ -180,7 +183,7 @@ future_status wait_for(
 ### <a name="remarks"></a>Açıklamalar  
  İlişkili bir zaman uyumsuz durum *hazır* zaman uyumsuz sağlayıcısını yalnızca varsa veya dönüş değeri depolanan bir özel durum depolanır.  
   
-##  <a name="wait_until"></a>shared_future::wait_until
+##  <a name="wait_until"></a>  shared_future::wait_until
  İlişkili zaman uyumsuz durum olana kadar geçerli iş parçacığının engeller *hazır* veya belirtilen zaman noktası kadar sonra.  
   
 ```

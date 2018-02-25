@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - task_canceled
 - CONCRT/concurrency::task_canceled
 - CONCRT/concurrency::task_canceled::task_canceled
-dev_langs: C++
-helpviewer_keywords: task_canceled class
+dev_langs:
+- C++
+helpviewer_keywords:
+- task_canceled class
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 03b3948036393c6cc14ac58df8f289430042204f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b349bdd1a4bc646e513d69c9c9297e313eacd94d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="taskcanceled-class"></a>task_canceled Sınıfı
 Bu sınıf, iptal etmek için geçerli görev zorlamak için PPL görevleri katmanı tarafından oluşturulan bir özel açıklar. Tarafından da oluşturulan `get()` yöntemi [görev](/visualstudio/extensibility/debugger/task-class-internal-members), iptal edilen bir görev için.  
@@ -52,7 +56,7 @@ class task_canceled : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>task_canceled 
+##  <a name="ctor"></a> task_canceled 
 
  Oluşturan bir `task_canceled` nesnesi.  
   

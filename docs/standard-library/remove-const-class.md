@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::remove_const
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- type_traits/std::remove_const
+dev_langs:
+- C++
 helpviewer_keywords:
 - remove_const class
 - remove_const
 ms.assetid: feb76fb3-9228-41d6-80f6-2fbb04daec43
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4419fc7f08cd15dd36c51544472a43b4134826d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 759a6c99c29138ca39e60fd3462f02fbee0e3e8a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="removeconst-class"></a>remove_const Sınıfı
 Türden sabit olmayan bir tür yapar.  
@@ -74,6 +78,6 @@ remove_const_t<const int> == int
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)   
+ [<type_traits>](../standard-library/type-traits.md)   
  [add_const sınıfı](../standard-library/add-const-class.md)   
  [remove_cv Sınıfı](../standard-library/remove-cv-class.md)

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - target_block
 - AGENTS/concurrency::target_block
@@ -28,19 +29,22 @@ f1_keywords:
 - AGENTS/concurrency::target_block::unlink_source
 - AGENTS/concurrency::target_block::unlink_sources
 - AGENTS/concurrency::target_block::wait_for_async_sends
-dev_langs: C++
-helpviewer_keywords: target_block class
+dev_langs:
+- C++
+helpviewer_keywords:
+- target_block class
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 42bf40997bed7bcf7125397d4984b636f64f3a6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2827e7bbb9a2c23804d90ccb729e990b84f3a442
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="targetblock-class"></a>target_block Sınıfı
 `target_block` Sınıfı, temel bağlantı yönetim işlevleri sağlayan Özet temel sınıf ve hedef için hata denetimi yalnızca engeller.  
@@ -72,7 +76,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[target_block](#ctor)|Oluşturan bir `target_block` nesnesi.|  
-|[~ target_block yok Edicisi](#dtor)|Bozar `target_block` nesnesi.|  
+|[~target_block Destructor](#dtor)|Bozar `target_block` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -98,7 +102,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 |[send_message](#send_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `target_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[sync_send](#sync_send)|Eşzamanlı olarak işlemek için bir ileti gönderin.|  
 |[unlink_source](#unlink_source)|Belirtilen kaynak blok bu bağlantıyı keser `target_block` nesnesi.|  
-|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `target_block` nesnesi. (Geçersiz kılmaları [Itarget::unlink_sources](itarget-class.md#unlink_sources).)|  
+|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `target_block` nesnesi. (Overrides [ITarget::unlink_sources](itarget-class.md#unlink_sources).)|  
 |[wait_for_async_sends](#wait_for_async_sends)|Tamamlamak tüm zaman uyumsuz yayma bekler.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -111,7 +115,7 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="async_send"></a>async_send 
+##  <a name="async_send"></a> async_send 
 
  Zaman uyumsuz olarak işlemek için bir ileti gönderir.  
   
@@ -123,7 +127,7 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
  `_PMessage`  
  Gönderilen ileti için bir işaretçi.  
   
-##  <a name="decline_incoming_messages"></a>decline_incoming_messages 
+##  <a name="decline_incoming_messages">decline_incoming_messages</a> 
 
  Blok için yeni ileti reddedildi olduğunu gösterir.  
   
@@ -134,7 +138,7 @@ void decline_incoming_messages();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi yok etme işlemi devam ederken yeni iletiler reddetti emin olmak için yıkıcı tarafından çağrılır.  
   
-##  <a name="enable_batched_processing"></a>enable_batched_processing 
+##  <a name="enable_batched_processing">enable_batched_processing</a> 
 
  Bu bloğu için işleme toplu hale olanak tanır.  
   
@@ -142,7 +146,7 @@ void decline_incoming_messages();
 void enable_batched_processing();
 ```  
   
-##  <a name="initialize_target"></a>initialize_target 
+##  <a name="initialize_target"></a> initialize_target 
 
  Temel nesneyi başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.  
   
@@ -159,7 +163,7 @@ void initialize_target(
  `_PScheduleGroup`  
  Görevleri planlama için kullanılacak zamanlamayı grubu.  
   
-##  <a name="link_source"></a>link_source 
+##  <a name="link_source"></a> link_source 
 
  Belirtilen kaynak blok için bağlantılar `target_block` nesnesi.  
   
@@ -174,7 +178,7 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev doğrudan çağrılmamalıdır bir `target_block` nesnesi. Blokları birlikte kullanarak bağlanması `link_target` yöntemi `ISource` çağıracağı blokları `link_source` karşılık gelen hedef yöntemi.  
   
-##  <a name="process_input_messages"></a>process_input_messages 
+##  <a name="process_input_messages">process_input_messages</a> 
 
  Girdi olarak alınan iletileri işler.  
   
@@ -185,7 +189,7 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 ### <a name="parameters"></a>Parametreler  
  `_PMessage`  
   
-##  <a name="process_message"></a>process_message 
+##  <a name="process_message"></a> process_message 
 
  Türetilen bir sınıfta geçersiz kılındığında, bunu kabul edildi bir ileti işler `target_block` nesnesi.  
   
@@ -193,7 +197,7 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 virtual void process_message(message<_Source_type> *);
 ```  
   
-##  <a name="propagate"></a>Yayma 
+##  <a name="propagate">Yayma</a> 
 
  Zaman uyumsuz olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
   
@@ -216,7 +220,7 @@ virtual message_status propagate(
 ### <a name="remarks"></a>Açıklamalar  
  Yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
-##  <a name="propagate_message"></a>propagate_message 
+##  <a name="propagate_message"></a> propagate_message 
 
  Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu bloğuna `target_block` nesnesi. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -236,7 +240,7 @@ virtual message_status propagate_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="register_filter"></a>register_filter 
+##  <a name="register_filter"></a> register_filter 
 
  Alınan her ileti çağrılacak bir filtre yöntemi kaydeder.  
   
@@ -248,7 +252,7 @@ void register_filter(filter_method const& _Filter);
  `_Filter`  
  Filter yöntemi.  
   
-##  <a name="remove_sources"></a>remove_sources 
+##  <a name="remove_sources"></a> remove_sources 
 
  Tüm kaynakları bekleyen zaman uyumsuz gönderme işlemleri için bekledikten sonra bağlantıyı keser.  
   
@@ -259,7 +263,7 @@ void remove_sources();
 ### <a name="remarks"></a>Açıklamalar  
  Tüm hedef blokları kendi yıkıcı kaynakları kaldırmak için bu yordamı çağırmanız gerekir.  
   
-##  <a name="send"></a>Gönder 
+##  <a name="send">Gönder</a> 
 
  Zaman uyumlu olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
   
@@ -286,7 +290,7 @@ virtual message_status send(
   
  Zaman `send` döndürür, ileti algıladı ya da zaten kabul edildi ve hedef bloğu içine aktarılan ya da hedef tarafından reddedildi.  
   
-##  <a name="send_message"></a>send_message 
+##  <a name="send_message"></a> send_message 
 
  Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `target_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -302,7 +306,7 @@ virtual message_status send_message(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu bloğu döndüren `declined` türetilmiş sınıf tarafından geçersiz kılınmadığı sürece.  
   
-##  <a name="sync_send"></a>sync_send 
+##  <a name="sync_send"></a> sync_send 
 
  Eşzamanlı olarak işlemek için bir ileti gönderin.  
   
@@ -314,7 +318,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
  `_PMessage`  
  Gönderilen ileti için bir işaretçi.  
   
-##  <a name="ctor"></a>target_block 
+##  <a name="ctor"></a> target_block 
 
  Oluşturan bir `target_block` nesnesi.  
   
@@ -322,7 +326,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 target_block();
 ```  
   
-##  <a name="dtor"></a>~ target_block 
+##  <a name="dtor"></a> ~target_block 
 
  Bozar `target_block` nesnesi.  
   
@@ -330,7 +334,7 @@ target_block();
 virtual ~target_block();
 ```  
   
-##  <a name="unlink_source"></a>unlink_source 
+##  <a name="unlink_source"></a> unlink_source 
 
  Belirtilen kaynak blok bu bağlantıyı keser `target_block` nesnesi.  
   
@@ -342,7 +346,7 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  Bir işaretçi `ISource` bağlantısız olacak bloğu.  
   
-##  <a name="unlink_sources"></a>unlink_sources 
+##  <a name="unlink_sources"></a> unlink_sources 
 
  Tüm kaynak blokları bu bağlantıyı keser `target_block` nesnesi.  
   
@@ -350,7 +354,7 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 virtual void unlink_sources();
 ```  
   
-##  <a name="wait_for_async_sends"></a>wait_for_async_sends 
+##  <a name="wait_for_async_sends"></a> wait_for_async_sends 
 
  Tamamlamak tüm zaman uyumsuz yayma bekler.  
   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <utility>
-dev_langs: C++
-helpviewer_keywords: utility header
+ms.topic: reference
+f1_keywords:
+- <utility>
+dev_langs:
+- C++
+helpviewer_keywords:
+- utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4cbb348ec11c9c4f832c993ad1e4799c8a39aad2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 278ffaf44fa65d8a3545463ac64c22cb6994cca7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltutilitygt"></a>&lt;yardımcı programı&gt;
 C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir oldukları gibi kabul gerektiğinde yararlı olan nesneleri çiftlerini yönetmek için yardımcı işleçler tanımlar.  
@@ -46,28 +51,28 @@ C++ Standart Kitaplığı türleri, İşlevler ve oluşturmak ve iki nesne bir o
   
 |||  
 |-|-|  
-|[İlet](../standard-library/utility-functions.md#forward)|Başvuru türü korur (ya da `lvalue` veya `rvalue`) tarafından kusursuz iletme getirilmemeli gelen bağımsız değişken.|  
+|[forward](../standard-library/utility-functions.md#forward)|Başvuru türü korur (ya da `lvalue` veya `rvalue`) tarafından kusursuz iletme getirilmemeli gelen bağımsız değişken.|  
 |[get](../standard-library/utility-functions.md#get)|Bir öğeyi alır işlevi bir `pair` nesnesi.|  
 |[make_pair](../standard-library/utility-functions.md#make_pair)|Türündeki nesneleri oluşturmak için kullanılan bir şablon yardımcı işlevini `pair`, bileşen türleri parametre olarak geçirilen veri türleri burada dayanır.|  
-|[taşıma](../standard-library/utility-functions.md#move)|Bağımsız değişken olarak geçirilen döndürür bir `rvalue` başvuru.|  
-|[değiştirme](../standard-library/utility-functions.md#swap)|İki öğelerini alış verişleri `pair` nesneleri.|  
+|[move](../standard-library/utility-functions.md#move)|Bağımsız değişken olarak geçirilen döndürür bir `rvalue` başvuru.|  
+|[Değiştirme](../standard-library/utility-functions.md#swap)|İki öğelerini alış verişleri `pair` nesneleri.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
 |[operator!=](../standard-library/utility-operators.md#op_neq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit değil.|  
-|[operator ==](../standard-library/utility-operators.md#op_eq_eq)|Sağ taraftaki çifti nesnesi işlecinin sol tarafındaki çifti nesnesi eşitse testleri.|  
+|[operator==](../standard-library/utility-operators.md#op_eq_eq)|Sağ taraftaki çifti nesnesi işlecinin sol tarafındaki çifti nesnesi eşitse testleri.|  
 |[operator <](../standard-library/utility-operators.md#op_lt)|Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test azdır sağ tarafında çifti nesnesi.|  
 |[işleci\<=](../standard-library/utility-operators.md#op_gt_eq)|Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında çifti nesnesi eşit veya daha az olur.|  
-|[operator >](../standard-library/utility-operators.md#op_gt)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi değerinden daha büyük.|  
+|[operator>](../standard-library/utility-operators.md#op_gt)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi değerinden daha büyük.|  
 |[operator>=](../standard-library/utility-operators.md#op_gt_eq)|Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit veya daha büyük.|  
   
 ### <a name="structs"></a>Yapılar  
   
 |||  
 |-|-|  
-|[kimlik](../standard-library/identity-structure.md)||  
+|[identity](../standard-library/identity-structure.md)||  
 |[çifti](../standard-library/pair-structure.md)|İki nesne tek bir nesne olarak davran olanağı sağlayan bir türü.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

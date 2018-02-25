@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f4a6dc351d0184d43a1cf79f1cec9e9bae33aecf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 15625977ab5dd0c20238f52e84f4ecea443d01ed
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="pack"></a>pack
 Yapısı, union ve sınıf üyeleri için paket hizalamasını belirtir.  
@@ -37,7 +40,7 @@ Yapısı, union ve sınıf üyeleri için paket hizalamasını belirtir.
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir sınıf paketlemek için üyeleri doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari küçük bir sınırında hizalanabilir anlamına gelebilir bellekte sonra yerleştirmektir. `pack`veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneği farklıdır [/Zp](../build/reference/zp-struct-member-alignment.md), hangi yalnızca modülü düzey denetim sağlar. `pack`ilk başta etkisi alır `struct`, `union`, veya `class` pragma görülen sonra bildirimi. `pack`tanımları üzerinde hiçbir etkisi yoktur. Çağırma `pack` hiçbir bağımsız değişkenleri kümeleriyle `n` derleyici seçeneğinde ayarlı değerine **/Zp**. Derleyici seçeneği ayarlanmazsa, varsayılan değer 8'dir.  
+ Bir sınıf paketlemek için üyeleri doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari küçük bir sınırında hizalanabilir anlamına gelebilir bellekte sonra yerleştirmektir. `pack` veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneği farklıdır [/Zp](../build/reference/zp-struct-member-alignment.md), hangi yalnızca modülü düzey denetim sağlar. `pack` ilk başta etkisi alır `struct`, `union`, veya `class` pragma görülen sonra bildirimi. `pack` tanımları üzerinde hiçbir etkisi yoktur. Çağırma `pack` hiçbir bağımsız değişkenleri kümeleriyle `n` derleyici seçeneğinde ayarlı değerine **/Zp**. Derleyici seçeneği ayarlanmazsa, varsayılan değer 8'dir.  
   
  Bir yapı hizalama değiştirirseniz, bellek, ancak kadar alan performans düşüklüğü bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak olarak kullanamazsınız.  Kullanarak bu özel durum davranışını değiştirebilirsiniz [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621).  
   
@@ -50,19 +53,19 @@ Yapısı, union ve sınıf üyeleri için paket hizalamasını belirtir.
  **POP** (isteğe bağlı)  
  Derleyici iç yığını üstten kaydını kaldırır. Varsa `n` ile belirtilmemiş **pop**, sonuçta elde edilen kayıt yığının üst kısmında ilişkili paketleme değer yeni ise hizalama değeri paket. Varsa `n` , örneğin, belirtilen `#pragma pack(pop, 16)`, `n` yeni hale hizalama değeri paket. İle pop varsa `identifier`, örneğin, `#pragma pack(pop, r1)`, tüm kayıtları yığında olan kaydını kadar Sil'i sonra `identifier` bulunur. Kayıt Sil'i ve sonuç kaydının üzerinde üst ile ilişkili paketleme yeni paket yığını değerdir hizalama değeri. İle pop varsa bir `identifier` bulunmayan yığında herhangi bir kayıttaki sonra **pop** göz ardı edilir.  
   
- `identifier`(isteğe bağlı)  
+ `identifier` (isteğe bağlı)  
  İle kullanıldığında **itme**, iç derleyici yığında kaydı bir adı atar. İle kullanıldığında **pop**, POP kadar iç yığından kayıtları `identifier` ; kaldırılır `identifier` bulunamadı iç yığında bir şey Sil'i.  
   
- `n`(isteğe bağlı)  
+ `n` (isteğe bağlı)  
  Değer paketleme için kullanılacak bayt cinsinden belirtir. Varsa derleyici seçeneği [/Zp](../build/reference/zp-struct-member-alignment.md) modül için varsayılan değeri ayarlı değil `n` 8'dir. Geçerli değerler 1, 2, 4, 8 ve 16 ' dir. Üye hizalamasını olduğunu veya bir sınır birden fazla olacaktır `n` veya daha çok üye boyutunun hangisi daha küçüktür.  
   
- `#pragma pack(pop, identifier, n)`tanımlı değil.  
+ `#pragma pack(pop, identifier, n)` tanımlı değil.  
   
  Hizalama değiştirme hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
 -   [__alignof](../cpp/alignof-operator.md)  
   
--   [Hizalama](../cpp/align-cpp.md)  
+-   [align](../cpp/align-cpp.md)  
   
 -   [__unaligned](../cpp/unaligned.md)  
   

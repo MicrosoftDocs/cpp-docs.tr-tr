@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IExecutionResource
 - CONCRTRM/concurrency::IExecutionResource
@@ -14,19 +15,22 @@ f1_keywords:
 - CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetExecutionResourceId
 - CONCRTRM/concurrency::IExecutionResource::IExecutionResource::GetNodeId
 - CONCRTRM/concurrency::IExecutionResource::IExecutionResource::Remove
-dev_langs: C++
-helpviewer_keywords: IExecutionResource structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cd22fdb38b1828e1fa86ca79b9967a546ccb9456
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: eb4ad0b6f9038d78ae94b5ab1dcb148ebd628edc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource Yapısı
 Bir donanım iş parçacığı için bir Özet.  
@@ -43,10 +47,10 @@ struct IExecutionResource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Iexecutionresource::currentsubscriptionlevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.|  
-|[Iexecutionresource::getexecutionresourceıd](#getexecutionresourceid)|Bu yürütme kaynak temsil eden donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|  
-|[Iexecutionresource::getnodeıd](#getnodeid)|Bu yürütme kaynağa ait işlemci düğümü için benzersiz bir tanımlayıcı döndürür.|  
-|[Iexecutionresource::Remove](#remove)|Bu yürütme kaynak Resource Manager döndürür.|  
+|[IExecutionResource::CurrentSubscriptionLevel](#currentsubscriptionlevel)|Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.|  
+|[IExecutionResource::GetExecutionResourceId](#getexecutionresourceid)|Bu yürütme kaynak temsil eden donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.|  
+|[IExecutionResource::GetNodeId](#getnodeid)|Bu yürütme kaynağa ait işlemci düğümü için benzersiz bir tanımlayıcı döndürür.|  
+|[IExecutionResource::Remove](#remove)|Bu yürütme kaynak Resource Manager döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Yürütme kaynaklar sanal işlemci kökleri ile ilişkili veya tek başına olabilir. Bir iş parçacığı, uygulamanızdaki bir iş parçacığı abonelik oluşturduğunda, bir tek başına yürütme kaynak oluşturulur. Yöntemleri [ISchedulerProxy::SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) ve [Ischedulerproxy::requestınitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) iş parçacığı abonelikleri oluşturma ve geri dönüp bir `IExecutionResource` arabirimi temsil eden aboneliği. Bir iş parçacığı abonelik oluşturmak için Zamanlayıcı'yı Kaynak Yöneticisi'ni atar sanal işlemci kökleri birlikte bir zamanlayıcı için belirli bir iş parçacığı iş katılacak olan Kaynak Yöneticisi'ni bildirmek için bir yol sıraya olur. Resource Manager bunu yapabileceğiniz donanım iş parçacığı oversubscribing önlemek için bilgileri kullanır.  
@@ -59,7 +63,7 @@ struct IExecutionResource;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="currentsubscriptionlevel"></a>Iexecutionresource::currentsubscriptionlevel yöntemi  
+##  <a name="currentsubscriptionlevel"></a>  IExecutionResource::CurrentSubscriptionLevel Method  
  Etkinleştirilen sanal işlemci sayısı kökleri ve şu anda bu yürütme kaynak temsil eden temel alınan donanım iş parçacığı ile ilişkili dış iş parçacıkları abone döndürür.  
   
 ```
@@ -78,7 +82,7 @@ virtual unsigned int CurrentSubscriptionLevel() const = 0;
   
  Resource Manager kaynakları zamanlayıcılar arasında taşımak ne zaman belirlemek üzere yollarından biri olarak abonelik düzeyi bilgileri kullanır.  
   
-##  <a name="getexecutionresourceid"></a>Iexecutionresource::getexecutionresourceıd yöntemi  
+##  <a name="getexecutionresourceid"></a>  IExecutionResource::GetExecutionResourceId Method  
  Bu yürütme kaynak temsil eden donanım iş parçacığı için benzersiz bir tanımlayıcı döndürür.  
   
 ```
@@ -91,7 +95,7 @@ virtual unsigned int GetExecutionResourceId() const = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Her bir donanım iş parçacığı benzersiz bir tanımlayıcı eşzamanlılık çalışma zamanı tarafından atanır. Birden çok yürütme kaynakları ilişkili donanım varsa, iş parçacığı tüm aynı yürütme kaynak tanımlayıcısına sahip olacaktır.  
   
-##  <a name="getnodeid"></a>Iexecutionresource::getnodeıd yöntemi  
+##  <a name="getnodeid"></a>  Iexecutionresource::getnodeıd yöntemi  
  Bu yürütme kaynağa ait işlemci düğümü için benzersiz bir tanımlayıcı döndürür.  
   
 ```
@@ -106,7 +110,7 @@ virtual unsigned int GetNodeId() const = 0;
   
  Düğüm sayısı işlevinden elde edilebilir [GetProcessorNodeCount](concurrency-namespace-functions.md).  
   
-##  <a name="remove"></a>Iexecutionresource::Remove yöntemi  
+##  <a name="remove"></a>  Iexecutionresource::Remove yöntemi  
  Bu yürütme kaynak Resource Manager döndürür.  
   
 ```
@@ -124,9 +128,9 @@ virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
   
  Sanal işlemci kökleri de döndürülmesi için Kaynak Yöneticisi'ni çağırarak `Remove` yöntemi, çünkü arabirimi `IVirtualProcessorRoot` devraldığı `IExecutionResource` arabirimi. Yanıt için bir çağrı olarak ya da bir sanal işlemcinin kök döndürmesi gerekebilir [Ischeduler::removevirtualprocessors](ischeduler-structure.md#removevirtualprocessors) yöntemi, ya da aldığınız ve bir talep sanal işlemci kök ile bittiğinde [ Ischedulerproxy::createoversubscriber](ischedulerproxy-structure.md#createoversubscriber) yöntemi. Sanal işlemci kökler için bir kısıtlama yoktur hangi iş parçacığında çağırabileceği `Remove` yöntemi.  
   
- `invalid_argument`varsa durum parametresi `pScheduler` ayarlanır `NULL`.  
+ `invalid_argument` varsa durum parametresi `pScheduler` ayarlanır `NULL`.  
   
- `invalid_operation`varsa durum parametresi `pScheduler` geçerli iş parçacığının iş parçacığı abonelik oluşturulan iş parçacığından farklı olması durumunda bu yürütme kaynak için veya, bir tek başına yürütme kaynakla oluşturulmuş Zamanlayıcı farklıdır.  
+ `invalid_operation` varsa durum parametresi `pScheduler` geçerli iş parçacığının iş parçacığı abonelik oluşturulan iş parçacığından farklı olması durumunda bu yürütme kaynak için veya, bir tek başına yürütme kaynakla oluşturulmuş Zamanlayıcı farklıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

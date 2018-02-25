@@ -5,20 +5,20 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - istream/std::iostream
 - istream/std::istream
 - istream/std::wiostream
 - istream/std::wistream
 ms.assetid: 55bc1f84-53a7-46ca-a36f-ac6ef75d0374
-caps.latest.revision: "10"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: cc53eb1fed0dfc562ddb59ad239d716dd6057ebd
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 866950a000556392a9c44122c32775e0f9d59422
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltistreamgt-typedefs"></a>&lt;istream&gt; tür tanımları
 ||||  
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/24/2017
 |[iostream](#iostream)|[istream](#istream)|[wiostream](#wiostream)|  
 |[wistream](#wistream)|  
   
-##  <a name="iostream"></a>iostream  
+##  <a name="iostream"></a>  iostream  
  Bir tür `basic_iostream` üzerinde özel `char`.  
   
 ```  
@@ -36,7 +36,7 @@ typedef basic_iostream<char, char_traits<char>> iostream;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_iostream](../standard-library/basic-iostream-class.md), türündeki öğeler için özelleştirilmiş `char` varsayılan karakter nitelikler ile.  
   
-##  <a name="istream"></a>istream  
+##  <a name="istream"></a>  istream  
  Bir tür `basic_istream` üzerinde özel `char`.  
   
 ```  
@@ -46,7 +46,7 @@ typedef basic_istream<char, char_traits<char>> istream;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_istream](../standard-library/basic-istream-class.md), türündeki öğeler için özelleştirilmiş `char` varsayılan karakter nitelikler ile.  
   
-##  <a name="wiostream"></a>wiostream  
+##  <a name="wiostream"></a>  wiostream  
  Bir tür `basic_iostream` üzerinde özel `wchar_t`.  
   
 ```  
@@ -56,7 +56,7 @@ typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_iostream](../standard-library/basic-iostream-class.md), türündeki öğeler için özelleştirilmiş `wchar_t` varsayılan karakter nitelikler ile.  
   
-##  <a name="wistream"></a>wistream  
+##  <a name="wistream"></a>  wistream  
  Bir tür `basic_istream` üzerinde özel `wchar_t`.  
   
 ```  

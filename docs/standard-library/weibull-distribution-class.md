@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::weibull_distribution
 - random/std::weibull_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::weibull_distribution::param_type::b
 - random/std::weibull_distribution::param_type::operator==
 - random/std::weibull_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::weibull_distribution [C++]
 - std::weibull_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::weibull_distribution [C++], param_type
 - std::weibull_distribution [C++], param_type
 ms.assetid: f20b49d3-1b9a-41af-8db4-baf800eaa02b
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e08b64c18a44083f1af0fd899f71409c69473981
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 34d9877b820da9185c348e4590438ecdc30625d8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="weibulldistribution-class"></a>weibull_distribution Sınıfı
 WEIBULL dağıtım oluşturur.  
@@ -218,7 +221,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="weibull_distribution"></a>weibull_distribution::weibull_distribution  
+##  <a name="weibull_distribution"></a>  weibull_distribution::weibull_distribution  
   
 ```  
 explicit weibull_distribution(result_type a = 1.0, result_type b = 1.0);
@@ -226,7 +229,7 @@ explicit weibull_distribution(const param_type& parm);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-*bir*  
+*a*  
 `a` Dağıtım parametresi.  
   
 *b*  
@@ -236,13 +239,13 @@ explicit weibull_distribution(const param_type& parm);
 `param_type` Dağıtım oluşturmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:** `0.0 < a` ve`0.0 < b`  
+ **Önkoşul:** `0.0 < a` ve `0.0 < b`  
   
  İlk Oluşturucusu bir nesne oluşturur, depolanan `a` değeri tutan değeri *bir* ve, depolanan `b` değeri tutan değeri *b*.  
   
  İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>weibull_distribution::param_type  
+##  <a name="param_type"></a>  weibull_distribution::param_type  
  Dağıtım parametreleri depolar.  
 ```  
 struct param_type {  
@@ -256,17 +259,17 @@ struct param_type {
    };  
 ```
 ### <a name="parameters"></a>Parametreler  
-*bir*  
+*a*  
 `a` Dağıtım parametresi.  
   
 *b*  
 `b` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0.0 < a` ve`0.0 < b`  
+**Önkoşul:** `0.0 < a` ve `0.0 < b`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

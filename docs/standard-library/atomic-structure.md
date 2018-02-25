@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: atomic/std::atomic
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- atomic/std::atomic
+dev_langs:
+- C++
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b5525953e5f4ba68fdf1b84b02046d9ab4679abe
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e5e7de7a5098aec10618c961444eb73b4597d0fc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
 Türünde bir saklı değeri atomik işlemler gerçekleştiren bir nesneyi tanımlayan `Ty`.  
@@ -44,14 +48,14 @@ struct atomic;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[atomic::operator Ty işleci](http://msdn.microsoft.com/Library/a366c700-c7a0-4bcb-8eb4-4b57dfaea065)|Okur ve saklanan değeri döndürür. ([atomic::load](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1))|  
-|[atomic::operator = işleci](http://msdn.microsoft.com/Library/fe161d57-47ae-4bad-92bf-ce32ac8d5953)|Saklanan değeri değiştirmek için belirtilen değeri kullanır. ([atomic::store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b))|  
-|[atomic::operator ++ işleci](http://msdn.microsoft.com/Library/492959e9-1ea8-4e02-a031-82b1b92e91a0)|Depolanan değer artırır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator += işleci](http://msdn.microsoft.com/Library/9ec97aa2-c9d7-436b-943d-2989eb2617dd)|Belirtilen bir değeri saklı değerine ekler. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator--işleci](http://msdn.microsoft.com/Library/ad7c1ea7-1f6d-4a54-bf26-07630f749864)|Azaltır depolanan değer. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator-= işleci](http://msdn.microsoft.com/Library/902d0d9f-88fd-4500-aa2d-1e50f443e77c)|Saklanan değeri belirtilen değeri çıkarır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator & = işleci](http://msdn.microsoft.com/Library/90e730ac-12e1-4abb-98f5-4eadd6861a89)|Bit tabanlı gerçekleştirir `and` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator &#124; = işleci](http://msdn.microsoft.com/Library/f105eacc-31a6-4906-abba-f1cf013599b2)|Bit tabanlı gerçekleştirir `or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator ^ = işleci](http://msdn.microsoft.com/Library/f2a4da9d-67e8-4249-9161-9998e72a33c2)|Bit tabanlı gerçekleştirir `exclusive or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator= Operator](http://msdn.microsoft.com/Library/fe161d57-47ae-4bad-92bf-ce32ac8d5953)|Saklanan değeri değiştirmek için belirtilen değeri kullanır. ([atomic::store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b))|  
+|[atomic::operator++ Operator](http://msdn.microsoft.com/Library/492959e9-1ea8-4e02-a031-82b1b92e91a0)|Depolanan değer artırır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator+= Operator](http://msdn.microsoft.com/Library/9ec97aa2-c9d7-436b-943d-2989eb2617dd)|Belirtilen bir değeri saklı değerine ekler. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator-- Operator](http://msdn.microsoft.com/Library/ad7c1ea7-1f6d-4a54-bf26-07630f749864)|Azaltır depolanan değer. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator-= Operator](http://msdn.microsoft.com/Library/902d0d9f-88fd-4500-aa2d-1e50f443e77c)|Saklanan değeri belirtilen değeri çıkarır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator&= Operator](http://msdn.microsoft.com/Library/90e730ac-12e1-4abb-98f5-4eadd6861a89)|Bit tabanlı gerçekleştirir `and` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator&#124;= Operator](http://msdn.microsoft.com/Library/f105eacc-31a6-4906-abba-f1cf013599b2)|Bit tabanlı gerçekleştirir `or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
+|[atomic::operator^= Operator](http://msdn.microsoft.com/Library/f2a4da9d-67e8-4249-9161-9998e72a33c2)|Bit tabanlı gerçekleştirir `exclusive or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -66,7 +70,7 @@ struct atomic;
 |[fetch_xor](http://msdn.microsoft.com/Library/92bbaff8-ee29-4a1e-aee4-d9d405285bfe)|Bit tabanlı gerçekleştirir `exclusive or` belirtilen değere ve depolanan değer.|  
 |[is_lock_free](http://msdn.microsoft.com/Library/b99d5130-cdda-40a2-b14c-152b13a8ba45)|Belirtir olup olmadığını atomik işlemleri `this` olan *kilidi serbest*. Atomik bir tür olduğundan *kilidi serbest* ilgili türdeki atomik bir işlem kilitleri kullanıyorsanız.|  
 |[Yükleme](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1)|Okur ve saklanan değeri döndürür.|  
-|[Depolama](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b)|Saklanan değeri değiştirmek için belirtilen değeri kullanır.|  
+|[store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b)|Saklanan değeri değiştirmek için belirtilen değeri kullanır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Türü `Ty` olmalıdır *trivially copyable*. Diğer bir deyişle, kullanarak [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) kendi bayt kopyalamak için geçerli bir üretmek gerekir `Ty` özgün nesne eşit karşılaştırır nesnesi. `compare_exchange_weak` Ve `compare_exchange_strong` üye işlevlerini kullanmak [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) iki olup olmadığını belirlemek için `Ty` değerleri eşit. Bu işlevler kullanmaz bir `Ty`-tanımlı `operator==`. Üye işlevlerini `atomic` kullanmak `memcpy` türü değerleri kopyalamak için `Ty`.  

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_in_parallel
-dev_langs: C++
-helpviewer_keywords: omp_in_parallel OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_in_parallel
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_in_parallel OpenMP function
 ms.assetid: 1f01a1b4-78c5-496a-afb7-a43ecdad83d6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 29aff17bd8da79bcdac0b2f1f4a2544acf6dc600
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 57af15a05d104645de0c52465fa4e31c88466122
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompinparallel"></a>omp_in_parallel
 Paralel bir bölge içinde çağrıldıklarında sıfır olmayan bir değer döndürür.  

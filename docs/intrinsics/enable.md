@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _enable
 - _enable_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - enable intrinsic
 - _enable intrinsic
 - ssm instruction
 ms.assetid: 8bee669b-6bd8-4e25-9383-bb7d57295b4d
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2d8e0f6ac28bb24b81f396cac9251f9ffeccf157
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ab8aa486c946cba692a646b9aaaea63d84a5035c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="enable"></a>_enable
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Kesme sağlar.  
   
@@ -42,12 +45,12 @@ void _enable(void);
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_enable`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_enable`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_enable`İşlemci Kesme bayrağı ayarlanamadı bildirir. X86 üzerinde sistemleri, bu işlev Kesme bayrağı ayarlanmış oluşturur (`sti`) yönerge.  
+ `_enable` İşlemci Kesme bayrağı ayarlanamadı bildirir. X86 üzerinde sistemleri, bu işlev Kesme bayrağı ayarlanmış oluşturur (`sti`) yönerge.  
   
  Bu işlev yalnızca çekirdek modunda kullanılabilir. Kullanıcı modunda kullandıysanız, ayrıcalıklı yönerge özel durum oluşur.  
   

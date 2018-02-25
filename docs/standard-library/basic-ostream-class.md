@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ostream/std::basic_ostream
 - ostream/std::basic_ostream::flush
@@ -16,7 +17,8 @@ f1_keywords:
 - ostream/std::basic_ostream::swap
 - ostream/std::basic_ostream::tellp
 - ostream/std::basic_ostream::write
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::basic_ostream [C++]
 - std::basic_ostream [C++], flush
@@ -27,16 +29,17 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d08410c68a2cff5a1c85733c4a2a2ed1775754b0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6c9890fcbcebb86357d344b13c346a849cad4bcb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicostream-class"></a>basic_ostream Sınıfı
 Bu şablon sınıfı türündeki öğeler ile Akış Arabellek içine ekleme öğelerinin denetleyen bir nesne ve kodlanmış nesneleri açıklar **Elem**, olarak da bilinen [char_type](../standard-library/basic-ios-class.md#char_type), olan karakter nitelikler olan sınıfı tarafından belirlenen **Tr**, olarak da bilinen [traits_type](../standard-library/basic-ios-class.md#traits_type).  
@@ -126,10 +129,10 @@ return (*this);
 |||  
 |-|-|  
 |[Temizleme](#flush)|Arabelleği temizler.|  
-|[yerleştirme](#put)|Bir karakterin bir akışa koyar.|  
+|[PUT](#put)|Bir karakterin bir akışa koyar.|  
 |[seekp](#seekp)|Çıkış akışı konumu sıfırlar.|  
 |[sentry](#sentry)|İç içe geçmiş sınıf bir nesne, bildirim biçimlendirilmiş çıkış işlevleri ve biçimlendirilmemiş çıkış işlevleri yapıları açıklar.|  
-|[değiştirme](#op_eq)|Bu değerleri alış verişleri `basic_ostream` nesne için sağlanan içeriğiyle `basic_ostream` nesnesi.|  
+|[Değiştirme](#op_eq)|Bu değerleri alış verişleri `basic_ostream` nesne için sağlanan içeriğiyle `basic_ostream` nesnesi.|  
 |[tellp](#tellp)|Çıkış akışı konumu raporlar.|  
 |[write](#write)|Karakterini bir akışa yapar.|  
   
@@ -137,7 +140,7 @@ return (*this);
   
 |||  
 |-|-|  
-|[işleç =](#basic_ostream_operator_eq)|Sağlanan değeri atar `basic_ostream` parametresi bu nesneye nesne.|  
+|[operator=](#basic_ostream_operator_eq)|Sağlanan değeri atar `basic_ostream` parametresi bu nesneye nesne.|  
 |[işleç <<](#basic_ostream_operator_lt_lt)|Akışa yazar.|  
 
 ## <a name="requirements"></a>Gereksinimler  
@@ -145,7 +148,7 @@ return (*this);
   
  **Namespace:** std  
   
-##  <a name="basic_ostream"></a>basic_ostream::basic_ostream  
+##  <a name="basic_ostream"></a>  basic_ostream::basic_ostream  
  Oluşturan bir `basic_ostream` nesnesi.  
   
 ```  
@@ -161,7 +164,7 @@ basic_ostream(basic_ostream&& right);
  Türünde bir nesne [basic_streambuf](../standard-library/basic-streambuf-class.md).  
   
  `_Isstd`  
- `true`Bu standart bir akış ise; Aksi takdirde `false`.  
+ `true` Bu standart bir akış ise; Aksi takdirde `false`.  
   
  `right`  
  Rvalue başvuru türünde bir nesneye `basic_ostream`.  
@@ -172,7 +175,7 @@ basic_ostream(basic_ostream&& right);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [basic_ofstream::basic_ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream) çıkış akışları hakkında daha fazla bilgi edinmek için.  
   
-##  <a name="flush"></a>basic_ostream::flush  
+##  <a name="flush"></a>  basic_ostream::flush  
  Arabelleği temizler.  
   
 ```  
@@ -204,7 +207,7 @@ int main( )
 test  
 ```  
   
-##  <a name="basic_ostream_operator_lt_lt"></a>basic_ostream::operator&lt;&lt;  
+##  <a name="basic_ostream_operator_lt_lt"></a>  basic_ostream::operator&lt;&lt;  
  Akışa yazar.  
   
 ```  
@@ -343,7 +346,7 @@ int main()
 }
 ```  
   
-##  <a name="op_eq"></a>basic_ostream::operator =  
+##  <a name="op_eq"></a>  basic_ostream::operator=  
  Sağlanan için değerler atayan `basic_ostream` parametresi bu nesneye nesne.  
   
 ```  
@@ -357,7 +360,7 @@ basic_ostream& operator=(basic_ostream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci çağırır takas `(right)`.  
   
-##  <a name="put"></a>basic_ostream::Put  
+##  <a name="put"></a>  basic_ostream::put  
  Bir karakterin bir akışa koyar.  
   
 ```  
@@ -395,7 +398,7 @@ v
 l  
 ```  
   
-##  <a name="seekp"></a>basic_ostream::seekp  
+##  <a name="seekp"></a>  basic_ostream::seekp  
  Çıkış akışı konumda sıfırlayın.  
   
 ```  
@@ -450,7 +453,7 @@ int main()
 7  
 ```  
   
-##  <a name="sentry"></a>basic_ostream::sentry  
+##  <a name="sentry"></a>  basic_ostream::sentry  
  İç içe geçmiş sınıf bir nesne, bildirim biçimlendirilmiş çıkış işlevleri ve biçimlendirilmemiş çıkış işlevleri yapıları açıklar.  
   
 sınıf sentry {  
@@ -462,7 +465,7 @@ sınıf sentry {
   
  Varsa `uncaught_exception` döndürür **false** ve [bayrakları](../standard-library/ios-base-class.md#flags)  **&**  [unitbuf](../standard-library/ios-functions.md#unitbuf) sıfır olmayan, olan yıkıcı çağrıları [Temizleme](#flush).  
   
-##  <a name="swap"></a>basic_ostream::Swap  
+##  <a name="swap"></a>  basic_ostream::Swap  
  Bu değerleri alış verişleri `basic_ostream` sağlanan değerler için nesne `basic_ostream`.  
   
 ```  
@@ -476,7 +479,7 @@ void swap(basic_ostream& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlev çağrılarını [basic_ios::swap](../standard-library/basic-ios-class.md#swap) `(right)` bu nesne için içeriğini içeriğini Exchange `right`.  
   
-##  <a name="tellp"></a>basic_ostream::tellp  
+##  <a name="tellp"></a>  basic_ostream::tellp  
  Çıkış akışı rapor konumu.  
   
 ```  
@@ -492,7 +495,7 @@ pos_type tellp();
 ### <a name="example"></a>Örnek  
   Bkz: [seekp](#seekp) kullanarak bir örnek için `tellp`.  
   
-##  <a name="write"></a>basic_ostream::Write  
+##  <a name="write"></a>  basic_ostream::Write  
  Bir akış PUT karakter.  
   
 ```  

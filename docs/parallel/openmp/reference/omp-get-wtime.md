@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_get_wtime
-dev_langs: C++
-helpviewer_keywords: omp_get_wtime OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_get_wtime
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_get_wtime OpenMP function
 ms.assetid: c8dee105-ec1b-42e5-a6e3-edeedcf9854c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c9a4d66789a94e30c2562c5a6d071cab1012b32
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 57307df6a2e13c6bd3dbd90892669119f8526d70
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompgetwtime"></a>omp_get_wtime
 Bazı noktasından bir değer süreyi saniye cinsinden geçen döndürür.  

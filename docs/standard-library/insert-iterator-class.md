@@ -4,29 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - iterator/std::insert_iterator
 - iterator/std::insert_iterator::container_type
 - iterator/std::insert_iterator::reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::insert_iterator [C++]
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c5b893e3c1d30d457d479f5c2dcf42fb97bb978f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ef28da4fbfaccd49f5d74978e9898caa2532d9e5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="insertiterator-class"></a>insert_iterator Sınıfı
 Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin üzerine yazar ve bu nedenle C++ dizisi ve ilişkili kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `insert_iterator` Sınıfı şablonlaştırılmış uyarlanan kapsayıcı türüne bağlıdır.  
@@ -56,22 +59,22 @@ class insert_iterator;
 |||  
 |-|-|  
 |[container_type](#container_type)|Genel ekleme yapılacak kapsayıcıyı temsil eden bir tür.|  
-|[başvuru](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|  
+|[reference](#reference)|İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x` genel ekleme için.|  
-|[operator ++](#op_add_add)|Artışlarla `insert_iterator` içine bir değer depolanmış sonraki konuma.|  
-|[işleç =](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` genel ekleme için.|  
+|[operator*](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x` genel ekleme için.|  
+|[operator++](#op_add_add)|Artışlarla `insert_iterator` içine bir değer depolanmış sonraki konuma.|  
+|[operator=](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` genel ekleme için.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: \<yineleyici >  
   
  **Namespace:** std  
   
-##  <a name="container_type"></a>insert_iterator::container_type  
+##  <a name="container_type"></a>  insert_iterator::container_type  
  Genel ekleme yapılacak kapsayıcıyı temsil eden bir tür.  
   
 ```
@@ -111,7 +114,7 @@ The list L2 is: ( 40 20 10 ).
 *\  
 ```  
   
-##  <a name="insert_iterator"></a>insert_iterator::insert_iterator  
+##  <a name="insert_iterator"></a>  insert_iterator::insert_iterator  
  Oluşturan bir `insert_iterator` , bir kapsayıcı belirtilen konumda bir öğe ekler.  
   
 ```
@@ -174,7 +177,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="op_star"></a>insert_iterator::operator *  
+##  <a name="op_star"></a>  insert_iterator::operator*  
  Adresleri öğedir döndürme Ekle yineleyici dereferences.  
   
 ```
@@ -231,7 +234,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="op_add_add"></a>insert_iterator::operator ++  
+##  <a name="op_add_add"></a>  insert_iterator::operator++  
  Artışlarla **insert_iterator** içine bir değer depolanmış sonraki konuma.  
   
 ```
@@ -292,7 +295,7 @@ After the insertions, the vector vec becomes:
 *\  
 ```  
   
-##  <a name="op_eq"></a>insert_iterator::operator =  
+##  <a name="op_eq"></a>  insert_iterator::operator=  
  Kapsayıcıya bir değer ekler ve yeni öğesine işaret edecek şekilde güncelleştirilmiş yineleyici döndürür.  
   
 ```
@@ -371,7 +374,7 @@ After the insertions, the list L is:
 *\  
 ```  
   
-##  <a name="reference"></a>insert_iterator::Reference  
+##  <a name="reference"></a>  insert_iterator::reference  
  İlişkili kapsayıcı tarafından denetlenen bir dizi içindeki bir öğeye başvuru sağlayan bir tür.  
   
 ```
@@ -418,7 +421,7 @@ The first element in the list L is: 10.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Yineleyici >](../standard-library/iterator.md)   
+ [\<iterator>](../standard-library/iterator.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

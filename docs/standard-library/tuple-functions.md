@@ -5,14 +5,15 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - tuple/std::get
 - tuple/std::make_tuple
 - tuple/std::tie
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bc6be38f-5258-4c14-b81b-63caa335fd44
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::get [C++]
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: a81820c920339bb3e006af6df11bda855d4d33ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: ecc544c1f18e31a71d11a212fc9618a6b085f461
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lttuplegt-functions"></a>&lt;Tuple&gt; işlevleri
 ||||  
 |-|-|-|  
-|[Al](#get)|[make_tuple](#make_tuple)|[tie](#tie)|  
+|[get](#get)|[make_tuple](#make_tuple)|[tie](#tie)|  
   
-##  <a name="get"></a>Al
+##  <a name="get"></a>  get
  Bir öğeyi alır bir `tuple` nesnesi, dizine göre veya (C ++ 14) türüne göre.  
   
 ```  
@@ -110,7 +111,7 @@ int main() {
 0 1.42 Call me Tuple  
 ```  
   
-##  <a name="make_tuple"></a>make_tuple
+##  <a name="make_tuple"></a>  make_tuple
  Yapar bir `tuple` öğesi değerlerinden.  
   
 ```  
@@ -167,7 +168,7 @@ int main() {
  4 5 6 7  
 ```  
   
-##  <a name="tie"></a>tie
+##  <a name="tie"></a>  tie
  Yapar bir `tuple` öğesi başvuruları gelen.  
   
 ```  

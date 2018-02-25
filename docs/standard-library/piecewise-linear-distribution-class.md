@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::piecewise_linear_distribution
 - random/std::piecewise_linear_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::piecewise_linear_distribution::param_type::densities
 - random/std::piecewise_linear_distribution::param_type::operator==
 - random/std::piecewise_linear_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::piecewise_linear_distribution [C++]
 - std::piecewise_linear_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7764537c09b9e1d226e1a5d847f94d4825e50870
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bc1019aee3246051d90c9b493592d86289af9cb8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="piecewiselineardistribution-class"></a>piecewise_linear_distribution Sınıfı
 Bir piecewise oluşturur doğrusal olarak değişen olasılık değişen genişliği aralıklarıyla her aralığa sahip doğrusal dağıtım.  
@@ -224,7 +227,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="piecewise_linear_distribution"></a>piecewise_linear_distribution::piecewise_linear_distribution  
+##  <a name="piecewise_linear_distribution"></a>  piecewise_linear_distribution::piecewise_linear_distribution  
  Dağıtım oluşturur.  
   
 ```  
@@ -266,16 +269,16 @@ Giriş yineleyici dağıtım aralıktaki son öğesi.
 *firstW*  
 Giriş yineleyici ağırlıkları aralıktaki ilk öğesinin.  
   
-*aralıkları*  
+*intervals*  
 Bir [initializer_list](../cpp/initializers.md) dağıtım aralıkları ile.  
   
-*sayısı*  
+*Sayısı*  
 Dağıtım aralığında öğe sayısı.  
   
-*xMin*  
+*xmin*  
 Dağıtım aralığına en düşük değer.  
   
-*xMax*  
+*xmax*  
 Dağıtım aralığına en yüksek değer. Büyük olmalı *xmin*.  
   
 *weightfunc*  
@@ -329,7 +332,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 ```  
 dağıtım nesnesi kullanılarak yapıları `parm` depolanan parametrenin yapısı olarak.  
   
-##  <a name="param_type"></a>piecewise_linear_distribution::param_type  
+##  <a name="param_type"></a>  piecewise_linear_distribution::param_type  
 Dağıtım tüm parametreleri depolar.  
   
 ```  
@@ -354,7 +357,7 @@ struct param_type {
 Oluşturucu parametreleri için bkz: [piecewise_linear_distribution](#piecewise_linear_distribution).  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`xmin < xmax`  
+ **Önkoşul:** `xmin < xmax`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

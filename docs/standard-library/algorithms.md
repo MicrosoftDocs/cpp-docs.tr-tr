@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,11 +23,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bc9d57f93b5d3ee537330ab16c2c9a02b6beead
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 369479614174e1e66d91e39e3decacaf24268a08
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="algorithms"></a>Algoritmalar
 Algoritmalar, C++ Standart Kitaplığı, temel bir parçasıdır. Algoritmalar kapsayıcıları kendilerini ile ancak bunun yerine yineleyiciler çalışmaz. Bu nedenle, aynı algoritmayı çoğu değilse tarafından tüm C++ Standart Kitaplığı kapsayıcıları kullanılabilir. Bu bölüm, C++ Standart Kitaplığı algoritmalarının terminoloji ve kuralları açıklar.  

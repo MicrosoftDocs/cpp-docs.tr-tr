@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: rename_namespace
-dev_langs: C++
-helpviewer_keywords: rename_namespace attribute
+ms.topic: reference
+f1_keywords:
+- rename_namespace
+dev_langs:
+- C++
+helpviewer_keywords:
+- rename_namespace attribute
 ms.assetid: 45006d2b-36cd-4bec-98b9-3b8ec45299e3
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 856762f9582f4a91275c29d49c5065e8436cc719
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 37b2c01479cb489f7ed573f55a48f5807161bf63
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="renamenamespace"></a>rename_namespace
 **C++ özel**  
@@ -46,4 +51,4 @@ rename_namespace("NewName")
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

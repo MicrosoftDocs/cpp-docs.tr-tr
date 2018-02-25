@@ -5,26 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - exception/std::exception_ptr
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: e674e7ca53338b379ea029f5d9ad802443ccbb30
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 24f4fc5d30a95d55b5a4241d9c70eca31255fc18
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltexceptiongt-typedefs"></a>&lt;özel durum&gt; tür tanımları
 ||||  
 |-|-|-|  
 |[exception_ptr](#exception_ptr)|[terminate_handler](#terminate_handler)|[unexpected_handler](#unexpected_handler)|  
   
-##  <a name="exception_ptr"></a>exception_ptr  
+##  <a name="exception_ptr"></a>  exception_ptr  
  Bir özel duruma bir işaretçi tanımlayan tür.  
   
 ```cpp  
@@ -46,7 +46,7 @@ typedef unspecified exception_ptr;
   
  Eşittir kullanabilirsiniz ( `==`) ve eşit değil ( `!=`) iki Karşılaştırılacak işleçleri `exception_ptr` nesneleri. İşleçler ikili değeri (bit desenini) ile karşılaştırın değil `EXCEPTION_RECORD` özel durumları temsil eden yapılar. Bunun yerine, özel durum başvurusu alanına adresleri işleçleri karşılaştırmak `exception_ptr` nesneleri. Sonuç olarak, bir null `exception_ptr` ve eşit olarak karşılaştırmak NULL değer.  
   
-##  <a name="terminate_handler"></a>terminate_handler  
+##  <a name="terminate_handler"></a>  terminate_handler  
  Bir işlevi olarak kullanım için uygun bir işaretçi türü tanımlayan bir `terminate_handler`.  
   
 ```
@@ -59,7 +59,7 @@ typedef void (*terminate_handler)();
 ### <a name="example"></a>Örnek  
   Bkz: [set_terminate](../standard-library/exception-functions.md#set_terminate) kullanımına ilişkin bir örnek `terminate_handler`.  
   
-##  <a name="unexpected_handler"></a>unexpected_handler  
+##  <a name="unexpected_handler"></a>  unexpected_handler  
  Bir işlevi olarak kullanım için uygun bir işaretçi türü tanımlayan bir `unexpected_handler`.  
   
 ```

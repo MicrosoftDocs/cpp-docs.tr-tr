@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - mutex/std::lock_guard
 - mutex/std::lock_guard::lock_guard
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4c337d4188ccbc26280db59feab30ab7c11133bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 60643375742ef02ef1ba8ea08e614d12c504c573
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lockguard-class"></a>lock_guard Sınıfı
 Yıkıcı kilidini açarak nesne oluşturmak için örneği bir şablon temsil eden bir `mutex`.  
@@ -49,14 +52,14 @@ class lock_guard;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[lock_guard](#lock_guard)|Oluşturan bir `lock_guard` nesnesi.|  
-|[lock_guard:: ~ lock_guard yıkıcısı](#dtorlock_guard_destructor)|Kilidini açarak `mutex` oluşturucuya geçirildi.|  
+|[lock_guard::~lock_guard Destructor](#dtorlock_guard_destructor)|Kilidini açarak `mutex` oluşturucuya geçirildi.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<mutex >  
   
  **Namespace:** std  
   
-##  <a name="lock_guard"></a>lock_guard::lock_guard Oluşturucusu  
+##  <a name="lock_guard"></a>  lock_guard::lock_guard Oluşturucusu  
  Oluşturan bir `lock_guard` nesnesi.  
   
 ```cpp  
@@ -72,9 +75,9 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 ### <a name="remarks"></a>Açıklamalar  
  İlk Oluşturucusu türünde bir nesne oluşturur `lock_guard` ve kilitleri `Mtx`. Varsa `Mtx` özyinelemeli mutex değil Bu oluşturucu çağrıldığında kilidi olmalıdır.  
   
- İkinci oluşturucu kilit `Mtx`. `Mtx`Bu oluşturucu çağrıldığında kilitlenmiş olması gerekir. Oluşturucusu hiçbir özel durum oluşturur.  
+ İkinci oluşturucu kilit `Mtx`. `Mtx` Bu oluşturucu çağrıldığında kilitlenmiş olması gerekir. Oluşturucusu hiçbir özel durum oluşturur.  
   
-##  <a name="dtorlock_guard_destructor"></a>lock_guard:: ~ lock_guard yıkıcısı  
+##  <a name="dtorlock_guard_destructor"></a>  lock_guard:: ~ lock_guard yıkıcısı  
  Kilidini açarak `mutex` oluşturucuya geçirildi.  
   
 ```
@@ -86,7 +89,7 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<Mutex >](../standard-library/mutex.md)
+ [\<mutex>](../standard-library/mutex.md)
 
 
 

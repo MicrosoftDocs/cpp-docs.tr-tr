@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedCompareExchange128_cpp
 - _InterlockedCompareExchange128
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cmpxchg16b instruction
 - _InterlockedCompareExchange128 intrinsic
 ms.assetid: f05918fc-716a-4f6d-b746-1456d6b96c56
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0cbf4e29e02670b4532a4be82864cf3cf040df73
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2850be4b93738c61e22c5ca841e07f1901ec01e2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Exchange ve 128-bit ınterlocked karşılaştırmak gerçekleştirir.  
   
@@ -43,20 +46,20 @@ unsigned char _InterlockedCompareExchange128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`Destination`  
+ [içinde out] `Destination`  
  İşaretçi iki 64 bit tam sayı dizisidir hedef için 128-bit alan olarak kabul edilir. Hedef veri genel koruma hatası önlemek için hizalı 16 bayt olmalıdır.  
   
- [in]`ExchangeHigh`  
+ [in] `ExchangeHigh`  
  Hedef yüksek bölümüyle değiştirilen bir 64-bit tamsayı.  
   
- [in]`ExchangeLow`  
+ [in] `ExchangeLow`  
  Hedef düşük bölümüyle değiştirilen bir 64-bit tamsayı.  
   
- [içinde out]`ComparandResult`  
+ [içinde out] `ComparandResult`  
  İki 64-bit tamsayı (128-bit alan olarak kabul) dizisi işaretçisine hedef karşılaştırmak için.  Çıkışta bu hedef özgün değerle üzerine yazılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- 128-bit karşılaştırılan hedef özgün değeri eşitse 1. `ExchangeHigh`ve `ExchangeLow` 128-bit hedef üzerine yazın.  
+ 128-bit karşılaştırılan hedef özgün değeri eşitse 1. `ExchangeHigh` ve `ExchangeLow` 128-bit hedef üzerine yazın.  
   
  0 karşılaştırılan hedef özgün değeri eşit değil. Hedef değer değişmeden ve hedef değeri ile karşılaştırılan değerinin üzerine yazılır.  
   

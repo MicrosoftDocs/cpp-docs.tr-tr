@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - scoped_allocator/std::scoped_allocator_adaptor
 - scoped_allocator/std::scoped_allocator_adaptor::rebind Struct
@@ -18,7 +19,8 @@ f1_keywords:
 - scoped_allocator/std::scoped_allocator_adaptor::max_size
 - scoped_allocator/std::scoped_allocator_adaptor::outer_allocator
 - scoped_allocator/std::scoped_allocator_adaptor::select_on_container_copy_construction
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::scoped_allocator_adaptor
 - std::scoped_allocator_adaptor::allocate
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - std::scoped_allocator_adaptor::outer_allocator
 - std::scoped_allocator_adaptor::select_on_container_copy_construction
 ms.assetid: 0d9b06a1-9a4a-4669-9470-8805cae48e89
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 66c188c490861e0b632791755b2d9914a7919865
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fcfc9d5ca7b988be2dad0451aa2f58aacd15c789
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor Sınıfı
 Allocators, iç içe temsil eder.  
@@ -52,7 +55,7 @@ class scoped_allocator_adaptor;
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şablon sınıfı bir veya daha fazla allocators, iç içe yalıtır. Her bir sınıf türünün en dıştaki bir ayırıcı sahip `outer_allocator_type`, eşanlamlısı `Outer`, ortak bir temeli olduğu `scoped_allocator_adaptor` nesnesi. `Outer`kapsayıcı tarafından kullanılması için bellek tahsis etmek için kullanılır. Çağırarak bu ayırıcısı temel nesneye bir başvurusu elde edebileceğiniz `outer_allocator`.  
+ Şablon sınıfı bir veya daha fazla allocators, iç içe yalıtır. Her bir sınıf türünün en dıştaki bir ayırıcı sahip `outer_allocator_type`, eşanlamlısı `Outer`, ortak bir temeli olduğu `scoped_allocator_adaptor` nesnesi. `Outer` kapsayıcı tarafından kullanılması için bellek tahsis etmek için kullanılır. Çağırarak bu ayırıcısı temel nesneye bir başvurusu elde edebileceğiniz `outer_allocator`.  
   
  İç içe geri kalanı türüne sahip `inner_allocator_type`. Bir iç ayırıcısı bir kapsayıcıdaki öğeleri için bellek tahsis etmek için kullanılır. Çağırarak bu tür saklı nesneye bir başvurusu elde edebileceğiniz `inner_allocator`. Varsa `Inner...` boş değil `inner_allocator_type` türüne sahip `scoped_allocator_adaptor<Inner...>`, ve `inner_allocator` bir üye nesnesini belirtir. Aksi takdirde, `inner_allocator_type` türüne sahip `scoped_allocator_adaptor<Outer>`, ve `inner_allocator` nesnenin tamamı belirler.  
   
@@ -99,16 +102,16 @@ class scoped_allocator_adaptor;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[scoped_allocator_adaptor::rebind yapısı](#rebind_struct)|Türünü tanımlayan `Outer::rebind\<Other>::other` eşanlamlısı olarak `scoped_allocator_adaptor\<Other, Inner...>`.|  
+|[scoped_allocator_adaptor::rebind Struct](#rebind_struct)|Türünü tanımlayan `Outer::rebind\<Other>::other` eşanlamlısı olarak `scoped_allocator_adaptor\<Other, Inner...>`.|  
   
 ### <a name="methods"></a>Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[allocate](#allocate)|Kullanarak bellek ayırır `Outer` ayırıcısı.|  
-|[Yapı](#construct)|Bir nesne oluşturur.|  
-|[serbest bırakma](#deallocate)|Dış ayırıcısı kullanarak nesneleri kaldırır.|  
-|[yok](#destroy)|Belirtilen bir nesneyi yok eder.|  
+|[construct](#construct)|Bir nesne oluşturur.|  
+|[Serbest bırakma](#deallocate)|Dış ayırıcısı kullanarak nesneleri kaldırır.|  
+|[destroy](#destroy)|Belirtilen bir nesneyi yok eder.|  
 |[inner_allocator](#inner_allocator)|Saklı nesne türünün bir başvuru alır `inner_allocator_type`.|  
 |[max_size](#max_size)|Dış ayırıcı tarafından ayrılabilen nesneleri maksimum sayısını belirler.|  
 |[outer_allocator](#outer_allocator)|Saklı nesne türünün bir başvuru alır `outer_allocator_type`.|  
@@ -119,7 +122,7 @@ class scoped_allocator_adaptor;
   
  **Namespace:** std  
   
-##  <a name="allocate"></a>scoped_allocator_adaptor::allocate
+##  <a name="allocate"></a>  scoped_allocator_adaptor::allocate
  Kullanarak bellek ayırır `Outer` ayırıcısı.  
   
 ```cpp  
@@ -136,7 +139,7 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk üye işlevinin döndürdüğü `Outer_traits::allocate(outer_allocator(), count)`. İkinci üye işlevinin döndürdüğü `Outer_traits::allocate(outer_allocator(), count, hint)`.  
   
-##  <a name="construct"></a>scoped_allocator_adaptor::Construct
+##  <a name="construct"></a>  scoped_allocator_adaptor::Construct
  Bir nesne oluşturur.  
   
 ```cpp  
@@ -197,7 +200,7 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
   
  Altıncı yöntemi olarak aynı şekilde davranır `this->construct(ptr, piecewise_construct, forward_as_tuple(std::forward<Uy1>(right.first), forward_as_tuple(std::forward<Uy2>(right.second))`.  
   
-##  <a name="deallocate"></a>scoped_allocator_adaptor::deallocate
+##  <a name="deallocate"></a>  scoped_allocator_adaptor::deallocate
  Dış ayırıcısı kullanarak nesneleri kaldırır.  
   
 ```cpp  
@@ -211,7 +214,7 @@ void deallocate(pointer ptr, size_type count);
  `count`  
  Deallocate nesnelerin sayısı.  
   
-##  <a name="destroy"></a>scoped_allocator_adaptor::Destroy
+##  <a name="destroy"></a>  scoped_allocator_adaptor::destroy
  Belirtilen bir nesneyi yok eder.  
   
 ```cpp  
@@ -226,7 +229,7 @@ void destroy(Ty* ptr)
 ### <a name="return-value"></a>Dönüş Değeri  
  `Outermost_traits::destroy(OUTERMOST(*this), ptr)`  
   
-##  <a name="inner_allocator"></a>scoped_allocator_adaptor::inner_allocator
+##  <a name="inner_allocator"></a>  scoped_allocator_adaptor::inner_allocator
  Saklı nesne türünün bir başvuru alır `inner_allocator_type`.  
   
 ```cpp  
@@ -237,7 +240,7 @@ const inner_allocator_type& inner_allocator() const noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  Saklı nesne türünün referansı `inner_allocator_type`.  
   
-##  <a name="max_size"></a>scoped_allocator_adaptor::max_size
+##  <a name="max_size"></a>  scoped_allocator_adaptor::max_size
  Dış ayırıcı tarafından ayrılabilen nesneleri maksimum sayısını belirler.  
   
 ```cpp  
@@ -247,7 +250,7 @@ size_type max_size();
 ### <a name="return-value"></a>Dönüş Değeri  
  `Outer_traits::max_size(outer_allocator())`  
   
-##  <a name="outer_allocator"></a>scoped_allocator_adaptor::outer_allocator
+##  <a name="outer_allocator"></a>  scoped_allocator_adaptor::outer_allocator
  Saklı nesne türünün bir başvuru alır `outer_allocator_type`.  
   
 ```cpp  
@@ -258,16 +261,16 @@ const outer_allocator_type& outer_allocator() const noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  Saklı nesne türünün referansı `outer_allocator_type`.  
   
-##  <a name="rebind_struct"></a>scoped_allocator_adaptor::rebind yapısı  
+##  <a name="rebind_struct"></a>  scoped_allocator_adaptor::rebind yapısı  
  Türünü tanımlayan `Outer::rebind\<Other>::other` eşanlamlısı olarak `scoped_allocator_adaptor\<Other, Inner...>`.  
   
 Yapı yeniden bağlamasını {  
-   TypeDef Other_traits::rebind\<diğer >  
+   typedef Other_traits::rebind\<Other>  
    Other_alloc;  
    TypeDef scoped_allocator_adaptor\<Other_alloc, iç... > diğer;  
    };  
   
-##  <a name="scoped_allocator_adaptor"></a>scoped_allocator_adaptor::scoped_allocator_adaptor Oluşturucusu  
+##  <a name="scoped_allocator_adaptor"></a>  scoped_allocator_adaptor::scoped_allocator_adaptor Oluşturucusu  
  Oluşturan bir `scoped_allocator_adaptor` nesnesi.  
   
 ```cpp  
@@ -298,7 +301,7 @@ scoped_allocator_adaptor(Outer2&& al,
 ### <a name="remarks"></a>Açıklamalar  
  İlk Oluşturucusu varsayılan saklı ayırıcısı nesnelerini oluşturur. Her bir sonraki üç oluşturucular içinde karşılık gelen nesnelerinden saklı ayırıcısı nesnelerini oluşturur `right`. Son oluşturucu bağımsız değişken listesinde karşılık gelen bağımsız değişkenleri, depolanan ayırıcısı nesneleri oluşturur.  
   
-##  <a name="select_on_container_copy_construction"></a>scoped_allocator_adaptor::select_on_container_copy_construction
+##  <a name="select_on_container_copy_construction"></a>  scoped_allocator_adaptor::select_on_container_copy_construction
  Yeni bir `scoped_allocator_adaptor` nesne çağırarak başlatılan her saklı ayırıcısı nesne `select_on_container_copy_construction` karşılık gelen her ayırıcısı için.  
   
 ```cpp  

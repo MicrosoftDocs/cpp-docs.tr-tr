@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: amp/Concurrency::Reference (C++ AMP)
-dev_langs: C++
-helpviewer_keywords: C++ Accelerated Massive Parallelism, reference
+ms.topic: reference
+f1_keywords:
+- amp/Concurrency::Reference (C++ AMP)
+dev_langs:
+- C++
+helpviewer_keywords:
+- C++ Accelerated Massive Parallelism, reference
 ms.assetid: 372a8aed-8a53-48c9-996f-9c3cf09c9fa8
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ae039aec64d761a82ccf71ee12965c0deb9c7aed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 005b25fa44f229e9d9e2b59b0a20c41a661ed6c3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="reference-c-amp"></a>Başvuru (C++ AMP)
 Bu bölüm, C++ hızlandırılmış yoğun paralellik (C++ AMP) çalışma zamanı için başvuru bilgileri içerir.  

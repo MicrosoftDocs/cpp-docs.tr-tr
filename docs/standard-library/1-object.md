@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _1
 - std::_1
 - functional/std::_1
-dev_langs: C++
-helpviewer_keywords: _1 object
+dev_langs:
+- C++
+helpviewer_keywords:
+- _1 object
 ms.assetid: 30c3c480-ff31-4708-94be-7d0d65f243c9
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a28c730015f1c8005c71a7171a36b9bed9a71251
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1ee7d44e5c10b2e408b6afb7c566f8f25f687b38
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="1-object"></a>_1 Nesnesi
 Yer tutucuları değiştirebilen bağımsız değişkenler için.  
@@ -100,5 +104,5 @@ int main()
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [bağlama](../standard-library/functional-functions.md#bind)   
+ [Bağlama](../standard-library/functional-functions.md#bind)   
  [is_placeholder Sınıfı](../standard-library/is-placeholder-class.md)

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc-attr.db_param
 - vc-attr.db_column
@@ -15,21 +16,23 @@ f1_keywords:
 - vc-attr.db_table
 - vc.templates.ole
 - vc-attr.db_source
-dev_langs: C++
-helpviewer_keywords: OLE DB consumer templates, classes
+dev_langs:
+- C++
+helpviewer_keywords:
+- OLE DB consumer templates, classes
 ms.assetid: cfc7f698-1a0e-4a09-a4d3-ccb99e6654fe
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 681654f79f0cb3574b0893bb9f726bea78435e74
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29f833f6a598b9028506fb11d163be49212bd998
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ole-db-consumer-templates-reference"></a>OLE DB Tüketici Şablonları Başvurusu
 OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemesinde üzerinde konuları da içerir. [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
@@ -121,7 +124,7 @@ OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemes
  Şablon sınıfları için bir şablon bağımsız değişken olarak gibi kullanılan `CCommand` ve `CTable`, Süren erişimci sınıfı bağımsız değişken. Kullanım `CNoAccessor` parametrelerini desteklemek veya sütunların çıktısı için sınıf istemiyorsanız.  
   
  [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md)  
- Bir şablon bağımsız değişken olarak kullanılan `CCommand` tek bir satır kümesi işlemek için komutu istediğinizde şablonu. `CNoMultipleResults`Şablon bağımsız değişken için varsayılan değerdir.  
+ Bir şablon bağımsız değişken olarak kullanılan `CCommand` tek bir satır kümesi işlemek için komutu istediğinizde şablonu. `CNoMultipleResults` Şablon bağımsız değişken için varsayılan değerdir.  
   
  [CNoRowset](../../data/oledb/cnorowset-class.md)  
  Bir şablon bağımsız değişken olarak kullanılan `CCommand` veya `CTable` komut veya tablo bir satır kümesi döndürmezse.  
@@ -130,7 +133,7 @@ OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemes
  Hiçbir parametre basit bir satır kümesinde erişmek için kullanılır.  
   
 ## <a name="property-classes"></a>Özelliği sınıfları  
- [Cdbpropıdset](../../data/oledb/cdbpropidset-class.md)  
+ [CDBPropIDSet](../../data/oledb/cdbpropidset-class.md)  
  Bir dizi özellik kimlikleri için özellik bilgilerini tüketici istediği iletmek için kullanılır. Özellikler bir özellik kümesine ait.  
   
  [CDBPropSet](../../data/oledb/cdbpropset-class.md)  
@@ -141,7 +144,7 @@ OLE DB Tüketici şablonları aşağıdaki sınıflar içerir. Başvuru malzemes
  Bir dizini olarak bir satır kümesi veri erişimi için kullanılır.  
   
 ## <a name="error-class"></a>Hata sınıfı  
- [Cdberrorınfo](../../data/oledb/cdberrorinfo-class.md)  
+ [CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md)  
  OLE DB hata bilgilerini almak için kullanılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

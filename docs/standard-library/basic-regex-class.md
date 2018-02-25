@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: regex/std::basic_regex
-dev_langs: C++
-helpviewer_keywords: basic_regex class
+ms.topic: reference
+f1_keywords:
+- regex/std::basic_regex
+dev_langs:
+- C++
+helpviewer_keywords:
+- basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 27557cdbd251a123f914609ac81c1dc1834e44f5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 51d607151b31c196b8bcd756538e2afdeba7ffa2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicregex-class"></a>basic_regex Sınıfı
 Normal bir ifadeyi sarar.  
@@ -94,15 +99,15 @@ class basic_regex {
   
  Bazı işlevler, normal bir ifade tanımlayan bir bir işlenen dizisi alır. Böyle bir işleç sırasını birkaç şekilde belirtebilirsiniz:  
   
- `ptr`--bir null ile sonlandırılmış dizisi (C dize gibi için `Elem` türü `char`) Başlangıç `ptr` (olduğu bir null işaretçinin olmamalıdır), sonlandırma öğesi değeri olduğu `value_type()` ve işlenen dizisinin bir parçası değil  
+ `ptr` --bir null ile sonlandırılmış dizisi (C dize gibi için `Elem` türü `char`) Başlangıç `ptr` (olduğu bir null işaretçinin olmamalıdır), sonlandırma öğesi değeri olduğu `value_type()` ve işlenen dizisinin bir parçası değil  
   
  `ptr`, `count` --bir dizi `count` Başlangıç öğeleri `ptr` (hangi olmamalıdır null işaretçi)  
   
- `str`--tarafından belirtilen sıra `basic_string` nesnesi`str`  
+ `str` --tarafından belirtilen sıra `basic_string` nesnesi `str`  
   
- `first`, `last` --öğeleri yineleyiciler tarafından ayrılmış bir dizi `first` ve `last`, aralığında`[first, last)`  
+ `first`, `last` --öğeleri yineleyiciler tarafından ayrılmış bir dizi `first` ve `last`, aralığında `[first, last)`  
   
- `right`-- `basic_regex` nesnesi`right`  
+ `right` -- `basic_regex` nesnesi `right`  
   
  Bu üye işlevleri de bir bağımsız değişken alıp `flags` tarafından açıklanan ek olarak normal ifade yorumu için çeşitli seçenekler belirtir `RXtraits` türü.  
   
@@ -111,7 +116,7 @@ class basic_regex {
   
  **Namespace:** std  
   
-##  <a name="assign"></a>basic_regex::Assign  
+##  <a name="assign"></a>  basic_regex::assign  
  Bir değer normal expressoin nesneye atar.  
   
 ```  
@@ -261,7 +266,7 @@ int main()
 match("abc", "") == falsematch("abc", "abcd") == falsematch("abc", "abc") == truematch("abc", "abc") == truematch(string("abcd"), "abc") == falsematch(string("abc"), "abc") == true"abc" mark_count == 0"(abc)" mark_count == 1getloc == imbued == truematch("abc") == true  
 ```  
   
-##  <a name="basic_regex"></a>basic_regex::basic_regex  
+##  <a name="basic_regex"></a>  basic_regex::basic_regex  
  Normal ifade nesnesi oluşturun.  
   
 ```  
@@ -418,7 +423,7 @@ int main()
 match("abc", "") == falsematch("abc", "abcd") == falsematch("abc", "abc") == truematch("abc", "abc") == truematch(string("abcd"), "abc") == falsematch(string("abc"), "abc") == true"abc" mark_count == 0"(abc)" mark_count == 1getloc == imbued == truematch("abc", "abc") == true  
 ```  
   
-##  <a name="flag_type"></a>basic_regex::flag_type  
+##  <a name="flag_type"></a>  basic_regex::flag_type  
  Sözdizimi seçeneği bayrakları türü.  
   
 ```  
@@ -513,7 +518,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="flags"></a>basic_regex::Flags  
+##  <a name="flags"></a>  basic_regex::Flags  
  Sözdizimi seçeneği bayrakları döndürür.  
   
 ```  
@@ -608,7 +613,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="getloc"></a>basic_regex::getloc  
+##  <a name="getloc"></a>  basic_regex::getloc  
  Depolanan yerel ayar nesnesi döndürür.  
   
 ```  
@@ -703,7 +708,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="imbue"></a>basic_regex::imbue  
+##  <a name="imbue"></a>  basic_regex::imbue  
  Depolanan yerel ayar nesnesini değiştirir.  
   
 ```  
@@ -802,7 +807,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="locale_type"></a>basic_regex::locale_type  
+##  <a name="locale_type"></a>  basic_regex::locale_type  
  Depolanan yerel nesne türü.  
   
 ```  
@@ -897,7 +902,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="mark_count"></a>basic_regex::mark_count  
+##  <a name="mark_count"></a>  basic_regex::mark_count  
  Eşleşen alt ifadelerin sayısını döndürür.  
   
 ```  
@@ -992,7 +997,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="op_eq"></a>basic_regex::operator =  
+##  <a name="op_eq"></a>  basic_regex::operator=  
  Bir değeri normal ifade nesnesi atar.  
   
 ```  
@@ -1105,7 +1110,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="swap"></a>basic_regex::Swap  
+##  <a name="swap"></a>  basic_regex::Swap  
  İki normal ifade nesnesi değiştirir.  
   
 ```  
@@ -1204,7 +1209,7 @@ match(string("abc"), "abc") == true
 getloc == imbued == true  
 ```  
   
-##  <a name="value_type"></a>basic_regex::value_type  
+##  <a name="value_type"></a>  basic_regex::value_type  
  Öğe türü.  
   
 ```  
@@ -1300,11 +1305,11 @@ getloc == imbued == true
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Regex >](../standard-library/regex.md)   
+ [\<regex>](../standard-library/regex.md)   
  [regex_match](../standard-library/regex-functions.md#regex_match)   
  [regex_search](../standard-library/regex-functions.md#regex_search)   
  [regex_replace](../standard-library/regex-functions.md#regex_replace)   
- [Regex](../standard-library/regex-typedefs.md#regex)   
+ [regex](../standard-library/regex-typedefs.md#regex)   
  [wregex](../standard-library/regex-typedefs.md#wregex)   
  [regex_traits Sınıfı](../standard-library/regex-traits-class.md)
 

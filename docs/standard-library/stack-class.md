@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - stack/std::stack::container_type
 - stack/std::stack::size_type
@@ -16,7 +17,8 @@ f1_keywords:
 - stack/std::stack::push
 - stack/std::stack::size
 - stack/std::stack::top
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::stack [C++], container_type
 - std::stack [C++], size_type
@@ -27,16 +29,17 @@ helpviewer_keywords:
 - std::stack [C++], size
 - std::stack [C++], top
 ms.assetid: 02151c1e-eab0-41b8-be94-a839ead78ecf
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 824ca5e9726146323639974f9506d4efbf454d6a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 876b4614438e92b3f90482a91f13f33b78e8266a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="stack-class"></a>stack Sınıfı
 Bazı temel kapsayıcı türü eklenen en son öğesine erişimi sınırlandırma işlevlerin bir kısıtlama sağlayan bir şablon kapsayıcı bağdaştırıcısının sınıfı. Stack sınıfı yalnızca yığın işlemleri kapsayıcısında gerçekleştiriliyor açık bir şekilde anlaşılması önemlidir kullanılır.  
@@ -49,7 +52,7 @@ class stack
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Türü*  
+ Türü  
  Yığında depolanması için öğe veri türü.  
   
  `Container`  
@@ -72,7 +75,7 @@ class stack
   
 |||  
 |-|-|  
-|[yığını](#stack)|Oluşturan bir `stack` diğer bir deyişle boş ya da bir taban kapsayıcı nesnesinin kopyasıdır.|  
+|[stack](#stack)|Oluşturan bir `stack` diğer bir deyişle boş ya da bir taban kapsayıcı nesnesinin kopyasıdır.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -86,10 +89,10 @@ class stack
   
 |||  
 |-|-|  
-|[boş](#empty)|Varsa testleri `stack` boş.|  
+|[empty](#empty)|Varsa testleri `stack` boş.|  
 |[POP](#pop)|Öğe üst kısmından kaldırır `stack`.|  
 |[push](#push)|Bir öğenin üst kısmına ekler `stack`.|  
-|[boyutu](#size)|Öğelerin sayısını döndürür `stack`.|  
+|[Boyutu](#size)|Öğelerin sayısını döndürür `stack`.|  
 |[Sayfanın Üstü](#top)|Öğenin üst kısmında bir başvuru döndürür `stack`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -97,7 +100,7 @@ class stack
   
  **Namespace:** std  
   
-##  <a name="container_type"></a>Stack::container_type  
+##  <a name="container_type"></a>  stack::container_type  
  Temel uyarlanan kapsayıcıya sağlayan türü.  
   
 ```  
@@ -112,7 +115,7 @@ typedef Container container_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [stack::stack](#stack) bildirme ve kullanma konusunda bir örnek için `container_type`.  
   
-##  <a name="empty"></a>Stack::empty  
+##  <a name="empty"></a>  Stack::empty  
  Bir yığın boşsa, testleri.  
   
 ```  
@@ -155,7 +158,7 @@ The stack s1 is not empty.
 The stack s2 is empty.  
 ```  
   
-##  <a name="pop"></a>Stack::POP  
+##  <a name="pop"></a>  Stack::POP  
  Öğeyi yığın üst kısmından kaldırır.  
   
 ```  
@@ -209,7 +212,7 @@ After a pop, the stack length is 2.
 After a pop, the element at the top of the stack is 20.  
 ```  
   
-##  <a name="push"></a>Stack::push  
+##  <a name="push"></a>  Stack::push  
  Bir öğenin üst yığının sonuna ekler.  
   
 ```  
@@ -255,7 +258,7 @@ The stack length is 3.
 The element at the top of the stack is 30.  
 ```  
   
-##  <a name="size"></a>Stack::size  
+##  <a name="size"></a>  Stack::size  
  Yığında öğe sayısını döndürür.  
   
 ```  
@@ -294,7 +297,7 @@ The stack length is 1.
 The stack length is now 2.  
 ```  
   
-##  <a name="size_type"></a>Stack::size_type  
+##  <a name="size_type"></a>  stack::size_type  
  Bir yığın öğe sayısı gösterebilir bir işaretsiz tamsayı türü.  
   
 ```  
@@ -307,7 +310,7 @@ typedef typename Container::size_type size_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [boyutu](#size) bildirme ve kullanma konusunda bir örnek için `size_type`.  
   
-##  <a name="stack"></a>Stack::Stack  
+##  <a name="stack"></a>  Stack::Stack  
  Boş veya temel kapsayıcı sınıfı kopyası olan bir yığın oluşturur.  
   
 ```  
@@ -359,7 +362,7 @@ int main( )
 The element at the top of stack vsi2 is 1.  
 ```  
   
-##  <a name="top"></a>Stack::Top  
+##  <a name="top"></a>  Stack::Top  
  Yığının üst öğeye bir başvuru döndürür.  
   
 ```  
@@ -407,7 +410,7 @@ The top integer of the stack s1 is 2.
 The next integer down is 1.  
 ```  
   
-##  <a name="value_type"></a>Stack::value_type  
+##  <a name="value_type"></a>  stack::value_type  
  Bir yığın bir öğe olarak depolanan nesne türünü temsil eden tür.  
   
 ```  

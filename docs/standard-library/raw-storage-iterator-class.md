@@ -4,29 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::raw_storage_iterator
 - memory/std::raw_storage_iterator::element_type
 - memory/std::raw_storage_iterator::iter_type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::raw_storage_iterator [C++]
 - std::raw_storage_iterator [C++], element_type
 - std::raw_storage_iterator [C++], iter_type
 ms.assetid: 6f033f15-f48e-452a-a326-647ea2cf346f
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fd68bfc788231ddc954b1f6e8a70d63dbcf02592
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ad14448e9ff8928a2ce2807e302b13086199d11e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator Sınıfı
 Algoritmaların başlatılmamış belleğe sonuçları depolamasını sağlamak üzere oluşturulmuş bağdaştırıcı sınıfı.  
@@ -42,7 +45,7 @@ class raw_storage_iterator
  `OutputIterator`  
  Depolanmakta nesnesi için çıktı yineleyici belirtir.  
   
- *Türü*  
+ Türü  
  Depolama ayrılan nesnenin türü.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -62,23 +65,23 @@ class raw_storage_iterator
   
 |||  
 |-|-|  
-|[ELEMENT_TYPE](#element_type)|Ham depolama yineleyici olarak bir öğeyi açıklayan türü depolanan sağlar.|  
+|[element_type](#element_type)|Ham depolama yineleyici olarak bir öğeyi açıklayan türü depolanan sağlar.|  
 |[iter_type](#iter_type)|Ham depolama yineleyici altını çizen yineleyici açıklayan türü sağlar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `ii`  =  `x`.|  
-|[işleç =](#op_eq)|Ham depolama yineleyici ifade uygulamak için kullanılan bir atama işleci * `i`  =  `x` bellekte depolamak için.|  
-|[operator ++](#op_add_add)|Ham depolama yineleyiciler preincrement ve postincrement işleçler.|  
+|[operator*](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `ii`  =  `x`.|  
+|[operator=](#op_eq)|Ham depolama yineleyici ifade uygulamak için kullanılan bir atama işleci * `i`  =  `x` bellekte depolamak için.|  
+|[operator++](#op_add_add)|Ham depolama yineleyiciler preincrement ve postincrement işleçler.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<bellek >  
   
  **Namespace:** std  
   
-##  <a name="element_type"></a>raw_storage_iterator::ELEMENT_TYPE  
+##  <a name="element_type"></a>  raw_storage_iterator::element_type  
  Ham depolama yineleyici olarak bir öğeyi açıklayan türü depolanan sağlar.  
   
 ```
@@ -88,7 +91,7 @@ typedef Type element_type;
 ### <a name="remarks"></a>Açıklamalar  
  Raw_storage_iterator sınıfı şablon parametresi için bir eş anlamlı türüdür **türü**.  
   
-##  <a name="iter_type"></a>raw_storage_iterator::iter_type  
+##  <a name="iter_type"></a>  raw_storage_iterator::iter_type  
  Ham depolama yineleyici altını çizen yineleyici açıklayan türü sağlar.  
   
 ```
@@ -98,7 +101,7 @@ typedef ForwardIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **ForwardIterator**.  
   
-##  <a name="op_star"></a>raw_storage_iterator::operator *  
+##  <a name="op_star"></a>  raw_storage_iterator::operator*  
  Ham depolama yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci \* *II* = *x*.  
   
 ```
@@ -162,7 +165,7 @@ Constructing 5
 *\  
 ```  
   
-##  <a name="op_eq"></a>raw_storage_iterator::operator =  
+##  <a name="op_eq"></a>  raw_storage_iterator::operator=  
  Ham depolama yineleyici ifade uygulamak için kullanılan atama işleci \* *ı* = *x* bellekte depolamak için.  
   
 ```
@@ -231,7 +234,7 @@ Constructing 5
 *\  
 ```  
   
-##  <a name="op_add_add"></a>raw_storage_iterator::operator ++  
+##  <a name="op_add_add"></a>  raw_storage_iterator::operator++  
  Ham depolama yineleyiciler preincrement ve postincrement işleçler.  
   
 ```
@@ -284,7 +287,7 @@ array 4 = 8
 *\  
 ```  
   
-##  <a name="raw_storage_iterator"></a>raw_storage_iterator::raw_storage_iterator  
+##  <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator  
  Belirtilen temel alınan bir çıkış yineleyici ile ham depolama yineleyici oluşturur.  
   
 ```

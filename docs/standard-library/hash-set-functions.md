@@ -5,25 +5,25 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 4fcd6f0d72d31823a0d35108f087f2ad680e2f48
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.openlocfilehash: e9d6b5fa1588809b99b26d30234337a890b08157
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; işlevleri
 |||  
 |-|-|  
-|[değiştirme](#swap)|[Swap (hash_multiset)](#swap_hash_multiset)|  
+|[Değiştirme](#swap)|[swap (hash_multiset)](#swap_hash_multiset)|  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -55,7 +55,7 @@ void swap(
 ### <a name="example"></a>Örnek  
   Üye sınıfı kod örneğine bakın [hash_set::swap](../standard-library/hash-set-class.md#swap) şablonu sürümünü kullanan bir örnek `swap`.  
   
-##  <a name="swap_hash_multiset"></a>Swap (hash_multiset)  
+##  <a name="swap_hash_multiset"></a>  Swap (hash_multiset)  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -86,7 +86,7 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
   Üye sınıfı kod örneğine bakın [hash_multiset::swap](../standard-library/hash-multiset-class.md#swap) şablonu sürümünü kullanan bir örnek `swap`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< hash_set >](../standard-library/hash-set.md)
+ [<hash_set>](../standard-library/hash-set.md)
 
 
 

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - GetRowsAt
 - IRowsetLocateImpl.GetRowsAt
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c6af32ab24e34eb17570fe035ab024f0f1cbd1c3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 52bf9c4484e3266f234a51412da1d944b0798f6c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetlocateimplgetrowsat"></a>IRowsetLocateImpl::GetRowsAt
 Yer işareti uzaklık tarafından belirtilen satır ile başlayan satırlar getirir.  

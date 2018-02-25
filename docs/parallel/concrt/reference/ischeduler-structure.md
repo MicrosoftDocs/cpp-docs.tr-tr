@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IScheduler
 - CONCRTRM/concurrency::IScheduler
@@ -17,19 +18,22 @@ f1_keywords:
 - CONCRTRM/concurrency::IScheduler::IScheduler::NotifyResourcesExternallyIdle
 - CONCRTRM/concurrency::IScheduler::IScheduler::RemoveVirtualProcessors
 - CONCRTRM/concurrency::IScheduler::IScheduler::Statistics
-dev_langs: C++
-helpviewer_keywords: IScheduler structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- IScheduler structure
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c639bd760b837923f3011e9209d923fef31f8aee
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0a9a90a1d02090971ccb689204492b949f72323a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ischeduler-structure"></a>IScheduler Yapısı
 İş Zamanlayıcı bir soyutlamasını bir arabirim. Eşzamanlılık Çalışma zamanı Resource Manager, iş zamanlayıcılar ile iletişim kurmak için bu arabirimini kullanır.  
@@ -46,11 +50,11 @@ struct IScheduler;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Ischeduler::addvirtualprocessors](#addvirtualprocessors)|Bir zamanlayıcı kullanımı için sanal işlemci kökleri bir dizi sağlar. Her `IVirtualProcessorRoot` arabirimi iş Zamanlayıcı adına gerçekleştirebileceğiniz tek bir iş parçacığını yürütmek için sağa temsil eder.|  
-|[Ischeduler::GetID](#getid)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
-|[Ischeduler::getpolicy](#getpolicy)|Scheduler'ın ilke kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [SchedulerPolicy](schedulerpolicy-class.md).|  
-|[Ischeduler::notifyresourcesexternallybusy](#notifyresourcesexternallybusy)|Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` şimdi diğer zamanlayıcılar tarafından kullanılıyor.|  
-|[Ischeduler::notifyresourcesexternallyıdle](#notifyresourcesexternallyidle)|Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` diğer zamanlayıcılar tarafından kullanılmıyor.|  
+|[IScheduler::AddVirtualProcessors](#addvirtualprocessors)|Bir zamanlayıcı kullanımı için sanal işlemci kökleri bir dizi sağlar. Her `IVirtualProcessorRoot` arabirimi iş Zamanlayıcı adına gerçekleştirebileceğiniz tek bir iş parçacığını yürütmek için sağa temsil eder.|  
+|[IScheduler::GetId](#getid)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
+|[IScheduler::GetPolicy](#getpolicy)|Scheduler'ın ilke kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [SchedulerPolicy](schedulerpolicy-class.md).|  
+|[IScheduler::NotifyResourcesExternallyBusy](#notifyresourcesexternallybusy)|Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` şimdi diğer zamanlayıcılar tarafından kullanılıyor.|  
+|[IScheduler::NotifyResourcesExternallyIdle](#notifyresourcesexternallyidle)|Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` diğer zamanlayıcılar tarafından kullanılmıyor.|  
 |[Ischeduler::removevirtualprocessors](#removevirtualprocessors)|Daha önce bu Zamanlayıcı için ayrılan sanal işlemci kökleri kaldırılmasını başlatır.|  
 |[Ischeduler::Statistics](#statistics)|Görev varış ve tamamlama hızları ve kuyruk uzunluğu değişikliği bir zamanlayıcı için ilgili bilgiler sağlar.|  
   
@@ -65,7 +69,7 @@ struct IScheduler;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="addvirtualprocessors"></a>Ischeduler::addvirtualprocessors yöntemi  
+##  <a name="addvirtualprocessors"></a>  Ischeduler::addvirtualprocessors yöntemi  
  Bir zamanlayıcı kullanımı için sanal işlemci kökleri bir dizi sağlar. Her `IVirtualProcessorRoot` arabirimi iş Zamanlayıcı adına gerçekleştirebileceğiniz tek bir iş parçacığını yürütmek için sağa temsil eder.  
   
 ```
@@ -84,7 +88,7 @@ virtual void AddVirtualProcessors(
 ### <a name="remarks"></a>Açıklamalar  
  Kaynak Yöneticisi'ni çağırır `AddVirtualProcessor` sanal işlemci kökleri başlangıç kümesi için bir zamanlayıcı vermek için yöntem. Bu ayrıca kaynakları zamanlayıcılar arasında yeniden dengeler zaman sanal işlemci kökleri Zamanlayıcı eklemek için yöntemi çağıramadı.  
   
-##  <a name="getid"></a>Ischeduler::GetID yöntemi  
+##  <a name="getid"></a>  Ischeduler::GetID yöntemi  
  Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.  
   
 ```
@@ -99,7 +103,7 @@ virtual unsigned int GetId() const = 0;
   
  Farklı bir kaynaktan alınan tanımlayıcı tanımsız davranışlara neden.  
   
-##  <a name="getpolicy"></a>Ischeduler::getpolicy yöntemi  
+##  <a name="getpolicy"></a>  Ischeduler::getpolicy yöntemi  
  Scheduler'ın ilke kopyasını döndürür. Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [SchedulerPolicy](schedulerpolicy-class.md).  
   
 ```
@@ -109,7 +113,7 @@ virtual SchedulerPolicy GetPolicy() const = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  Scheduler'ın ilke kopyası.  
   
-##  <a name="notifyresourcesexternallybusy"></a>Ischeduler::notifyresourcesexternallybusy yöntemi  
+##  <a name="notifyresourcesexternallybusy"></a>  Ischeduler::notifyresourcesexternallybusy yöntemi  
  Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` şimdi diğer zamanlayıcılar tarafından kullanılıyor.  
   
 ```
@@ -134,7 +138,7 @@ virtual void NotifyResourcesExternallyBusy(
   
  Oluşturulduğunda, bildirimler için niteleyen bir zamanlayıcı yalnızca atanan kaynaklara dışarıdan meşgul ya da boş olup olmadığını bildiren bir ilk bildirimleri kümesini alır.  
   
-##  <a name="notifyresourcesexternallyidle"></a>Ischeduler::notifyresourcesexternallyıdle yöntemi  
+##  <a name="notifyresourcesexternallyidle"></a>  IScheduler::NotifyResourcesExternallyIdle Method  
  Donanım iş parçacıkları sanal işlemci kökleri dizideki kümesi tarafından temsil edilen Bu zamanlayıcı bildirir `ppVirtualProcessorRoots` diğer zamanlayıcılar tarafından kullanılmıyor.  
   
 ```
@@ -159,7 +163,7 @@ virtual void NotifyResourcesExternallyIdle(
   
  Oluşturulduğunda, bildirimler için niteleyen bir zamanlayıcı yalnızca atanan kaynaklara dışarıdan meşgul ya da boş olup olmadığını bildiren bir ilk bildirimleri kümesini alır.  
   
-##  <a name="removevirtualprocessors"></a>Ischeduler::removevirtualprocessors yöntemi  
+##  <a name="removevirtualprocessors"></a>  Ischeduler::removevirtualprocessors yöntemi  
  Daha önce bu Zamanlayıcı için ayrılan sanal işlemci kökleri kaldırılmasını başlatır.  
   
 ```
@@ -180,7 +184,7 @@ virtual void RemoveVirtualProcessors(
   
  Parametre `ppVirtualProcessorRoots` işaret arabirimleri bir dizi. Kaldırılacak sanal işlemci kökleri kümesi arasında kökleri hiçbir zaman etkinleştirilmiş kullanmaya hemen döndürülen `Remove` yöntemi. Etkinleştirilmiş ve yürütme ya da iş ya da devre dışı bırakıldı ve ulaşması, iş için bekleyen kökleri zaman uyumsuz olarak döndürülmelidir. Zamanlayıcı, tüm çabayı sanal işlemci kök mümkün olan en kısa sürede kaldırmak için gerekir. Sanal işlemci kökleri kaldırılmasını geciktirme Zamanlayıcı içinde istenmeyen aşırı abonelik neden olabilir.  
   
-##  <a name="statistics"></a>Ischeduler::Statistics yöntemi  
+##  <a name="statistics"></a>  Ischeduler::Statistics yöntemi  
  Görev varış ve tamamlama hızları ve kuyruk uzunluğu değişikliği bir zamanlayıcı için ilgili bilgiler sağlar.  
   
 ```

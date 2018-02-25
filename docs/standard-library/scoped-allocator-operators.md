@@ -5,26 +5,27 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - scoped_allocator/std::operator!=
 - scoped_allocator/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-caps.latest.revision: "10"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: d29a5a99f261776468364717a13b90a1ddde5216
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 2b4a7cd767385fd0eb3b7bfb0c98cd6bd3a411e6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 |||  
 |-|-|  
-|[operator! =](#op_neq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  İki testleri `scoped_allocator_adaptor` eşitsizlik nesneleri.  
   
 ```cpp  
@@ -44,7 +45,7 @@ bool operator!=(
 ### <a name="return-value"></a>Dönüş Değeri  
  `!(left == right)`  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  İki testleri `scoped_allocator_adaptor` nesneleri eşitlik için.  
   
 ```cpp  
@@ -65,5 +66,5 @@ bool operator==(
  `left.outer_allocator() == right.outer_allocator() && left.inner_allocator() == right.inner_allocator()`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< scoped_allocator >](../standard-library/scoped-allocator.md)
+ [<scoped_allocator>](../standard-library/scoped-allocator.md)
 

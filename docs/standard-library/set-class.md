@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - set/std::set
 - set/std::set::allocator_type
@@ -49,7 +50,8 @@ f1_keywords:
 - set/std::set::swap
 - set/std::set::upper_bound
 - set/std::set::value_comp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::set [C++]
 - std::set [C++], allocator_type
@@ -93,16 +95,17 @@ helpviewer_keywords:
 - std::set [C++], upper_bound
 - std::set [C++], value_comp
 ms.assetid: 8991f9aa-5509-4440-adc1-371512d32018
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7e9ec4f9c4b4f97b3a55102cb41d83e088d55e03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6c2eba982b48181dee284bed63d3bab978d624fc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-class"></a>set Sınıfı
 C++ Standart Kitaplığı kapsayıcı sınıfı kümesi depolanması ve alınması bulunan öğeleri değerlerini benzersiz ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hizmet veren bir koleksiyon verileri için kullanılır. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.  
@@ -126,7 +129,7 @@ class set
  C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` tür parametresi yok koşulu. Daha fazla bilgi için bkz: [ilişkilendirilebilir kapsayıcılarında heterojen arama](../standard-library/stl-containers.md#sequence_containers)  
   
  `Allocator`  
- Kümenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı***\<anahtar >.*  
+ Kümenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı ***\<anahtar >.*  
   
 ## <a name="remarks"></a>Açıklamalar  
  C++ Standart Kitaplığı kümesidir:  
@@ -167,11 +170,11 @@ class set
 |[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` okumak ve gerçekleştirmek için kümesinde depolanan öğesi `const` işlemleri.|  
 |[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` kümesindeki öğesi.|  
 |[difference_type](#difference_type)|Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki küme öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.|  
-|[Yineleyici](#iterator)|Küme içindeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler sağlayan tür.|  
+|[iterator](#iterator)|Küme içindeki herhangi bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler sağlayan tür.|  
 |[key_compare](#key_compare)|Küme içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.|  
 |[key_type](#key_type)|Bir sıralama anahtarı olarak kapasitesi dahilinde bir küme öğesi olarak depolanan nesneyi tanımlayan bir tür.|  
-|[İşaretçi](#pointer)|Bir küme içindeki öğeye işaretçi sağlayan bir tür.|  
-|[başvuru](#reference)|Küme içinde depolanan öğeye başvuru sağlayan bir tür.|  
+|[pointer](#pointer)|Bir küme içindeki öğeye işaretçi sağlayan bir tür.|  
+|[reference](#reference)|Küme içinde depolanan öğeye başvuru sağlayan bir tür.|  
 |[reverse_iterator](#reverse_iterator)|Ters döndürülmüş küme içindeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler sağlayan tür.|  
 |[size_type](#size_type)|Küme içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.|  
 |[value_compare](#value_compare)|Küme içindeki iki öğenin kendi göreli sıralarını belirlemek için iki öğeyi karşılaştıran bir işlev nesnesi sağlayan bir tür.|  
@@ -181,29 +184,29 @@ class set
   
 |||  
 |-|-|  
-|[başlayın](#begin)|Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|  
+|[Başlangıç](#begin)|Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|  
 |[cbegin](#cbegin)|Küme içindeki ilk öğeyi ele alan sabit bir yineleyici döndürür.|  
 |[cend](#cend)|Küme içindeki son öğeyi takip eden konumu ele alan sabit bir yineleyici döndürür.|  
 |[Temizle](#clear)|Bir kümenin tüm öğelerini siler.|  
-|[sayısı](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen küme içindeki öğelerin sayısını döndürür.|  
+|[Sayısı](#count)|Anahtarı parametre tarafından belirtilen anahtarla eşleşen küme içindeki öğelerin sayısını döndürür.|  
 |[crbegin](#rbegin)|Ters çevrilen kümedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.|  
 |[crend](#rend)|Ters çevrilen kümedeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.|  
 |[emplace](#emplace)|Bir küme içine yerinde oluşturulmuş bir öğe ekler.|  
 |[emplace_hint](#emplace_hint)|Bir küme içine, bir yerleşim ipucuyla birlikte yerinde oluşturulmuş bir öğe ekler.|  
-|[boş](#empty)|Kümenin boş olup olmadığını sınar.|  
+|[empty](#empty)|Kümenin boş olup olmadığını sınar.|  
 |[Bitiş](#end)|Küme içindeki son öğeyi takip eden konumu ele alan bir yineleyici döndürür.|  
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini, sırasıyla belirtilen anahtardan daha büyük olan bir anahtar ile küme içindeki ilk öğeye ve anahtardan büyük veya ona eşit bir anahtar ile kümedeki ilk öğeye döndürür.|  
 |[silme](#erase)|Küme içindeki bir öğeyi veya öğelerin aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.|  
-|[Bul](#find)|Belirtilen anahtara denk bir anahtara sahip bir küme içindeki öğenin konumunu ele alan bir yineleyici döndürür.|  
+|[find](#find)|Belirtilen anahtara denk bir anahtara sahip bir küme içindeki öğenin konumunu ele alan bir yineleyici döndürür.|  
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` kümesi oluşturmak için kullanılan nesne.|  
-|[Ekle](#insert)|Bir küme içine bir öğe veya öğe aralığı ekler.|  
+|[insert](#insert)|Bir küme içine bir öğe veya öğe aralığı ekler.|  
 |[key_comp](#key_comp)|Bir küme içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|  
 |[lower_bound](#lower_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla küme içindeki ilk öğeye döndürür.|  
 |[max_size](#max_size)|Küme öğesinin maksimum uzunluğunu döndürür.|  
 |[rbegin](#rbegin)|Ters çevrilen küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.|  
 |[rend](#rend)|Ters çevrilen küme içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.|  
-|[boyutu](#size)|Kümedeki öğelerin sayısını döndürür.|  
-|[değiştirme](#swap)|İki kümenin öğelerini birbiriyle değiştirir.|  
+|[Boyutu](#size)|Kümedeki öğelerin sayısını döndürür.|  
+|[Değiştirme](#swap)|İki kümenin öğelerini birbiriyle değiştirir.|  
 |[upper_bound](#upper_bound)|Bir yineleyiciyi belirtilen anahtardan daha büyük bir anahtarla küme içindeki ilk öğeye döndürür.|  
 |[value_comp](#value_comp)|Küme içindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.|  
   
@@ -211,14 +214,14 @@ class set
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Bir kümenin öğelerini başka bir küme kopyasıyla değiştirir.|  
+|[operator=](#op_eq)|Bir kümenin öğelerini başka bir küme kopyasıyla değiştirir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<ayarlamak >  
   
  **Namespace:** std  
   
-##  <a name="allocator_type"></a>set::allocator_type  
+##  <a name="allocator_type"></a>  set::allocator_type  
  Allocator sınıfı kümesi nesnesi için temsil eden tür.  
   
 ```  
@@ -235,7 +238,7 @@ typedef Allocator allocator_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_allocator](#get_allocator) kullanan bir örnek `allocator_type`.  
   
-##  <a name="begin"></a>set::Begin  
+##  <a name="begin"></a>  set::Begin  
  Küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.  
   
 ```  
@@ -289,7 +292,7 @@ The first element of s1 is 1
 The first element of s1 is now 2  
 ```  
   
-##  <a name="cbegin"></a>set::cbegin  
+##  <a name="cbegin"></a>  set::cbegin  
  Döndürür bir `const` aralığın ilk öğe adresleri yineleyici.  
   
 ```  
@@ -312,7 +315,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="cend"></a>set::cend  
+##  <a name="cend"></a>  set::cend  
  Döndürür bir `const` konumun yalnızca bir aralıkta son öğenin ötesinde adresleri yineleyici.  
   
 ```  
@@ -323,7 +326,7 @@ const_iterator cend() const;
  A `const` yalnızca aralığın sonunu aşan işaret çift yönlü erişim yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cend`Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
+ `cend` Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
   
  Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `end()` ve `cend()`.  
   
@@ -337,7 +340,7 @@ auto i2 = Container.cend();
   
  Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
   
-##  <a name="clear"></a>set::Clear  
+##  <a name="clear"></a>  set::Clear  
  Bir kümenin tüm öğelerini siler.  
   
 ```  
@@ -374,7 +377,7 @@ The size of the set is initially 2.
 The size of the set after clearing is 0.  
 ```  
   
-##  <a name="const_iterator"></a>set::const_iterator  
+##  <a name="const_iterator"></a>  set::const_iterator  
  Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** kümesindeki öğesi.  
   
 ```  
@@ -387,7 +390,7 @@ typedef implementation-defined const_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) kullanan bir örnek `const_iterator`.  
   
-##  <a name="const_pointer"></a>set::const_pointer  
+##  <a name="const_pointer"></a>  set::const_pointer  
  Bir işaretçi sağlayan bir türü bir **const** kümesinde öğesi.  
   
 ```  
@@ -399,7 +402,7 @@ typedef typename allocator_type::const_pointer const_pointer;
   
  Çoğu durumda, bir [const_iterator](#const_iterator) const kümesi nesnesi öğelerinde erişmek için kullanılmalıdır.  
   
-##  <a name="const_reference"></a>set::const_reference  
+##  <a name="const_reference"></a>  set::const_reference  
  Bir başvuru sağlayan bir türü bir **const** okumak ve gerçekleştirmek için kümesinde depolanan öğesi **const** işlemleri.  
   
 ```  
@@ -439,7 +442,7 @@ int main( )
 The first element in the set is 10.  
 ```  
   
-##  <a name="const_reverse_iterator"></a>set::const_reverse_iterator  
+##  <a name="const_reverse_iterator"></a>  set::const_reverse_iterator  
  Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** kümesindeki öğesi.  
   
 ```  
@@ -452,7 +455,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.  
   
-##  <a name="count"></a>set::Count  
+##  <a name="count"></a>  set::Count  
  Anahtarı parametre tarafından belirtilen anahtarla eşleşen küme içindeki öğelerin sayısını döndürür.  
   
 ```  
@@ -469,7 +472,7 @@ size_type count(const Key& key) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi aşağıdaki aralıkta öğe sayısını döndürür:  
   
- [ `lower_bound` (_ *Anahtar* ), `upper_bound` (\_ *anahtar* )).  
+ [ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).  
   
 ### <a name="example"></a>Örnek  
   Aşağıdaki örnek set::count üye fonksiyonu kullanımını göstermektedir.  
@@ -505,7 +508,7 @@ The number of elements in s1 with a sort key of 1 is: 1.
 The number of elements in s1 with a sort key of 2 is: 0.  
 ```  
   
-##  <a name="crbegin"></a>set::crbegin  
+##  <a name="crbegin"></a>  set::crbegin  
  Ters çevrilen kümedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.  
   
 ```  
@@ -516,7 +519,7 @@ const_reverse_iterator crbegin() const;
  Bir const ters kümesi ilk öğe adresleme veya ne unreversed kümesindeki son öğe olsaydı adresleme çift yönlü yineleyici ters çevrilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crbegin`Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.  
+ `crbegin` Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.  
   
  Dönüş değeri ile `crbegin`, kümesi nesnesi değiştirilemez.  
   
@@ -548,7 +551,7 @@ int main( )
 The first element in the reversed set is 30.  
 ```  
   
-##  <a name="crend"></a>set::crend  
+##  <a name="crend"></a>  set::crend  
  Ters çevrilen kümedeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.  
   
 ```  
@@ -559,11 +562,11 @@ const_reverse_iterator crend() const;
  Bir const ters kümesi (ilk öğe unreversed kümesinde öncesinde konum) son öğesi başarılı konumu adresleri çift yönlü yineleyici ters çevrilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crend`Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.  
+ `crend` Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.  
   
  Dönüş değeri ile `crend`, kümesi nesnesi değiştirilemez. Tarafından döndürülen değer `crend` değil başvuru yapıldı.  
   
- `crend`Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.  
+ `crend` Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -589,7 +592,7 @@ int main() {
 }  
 ```  
   
-##  <a name="difference_type"></a>set::difference_type  
+##  <a name="difference_type"></a>  set::difference_type  
  Yineleyiciler tarafından gösterilen öğeler arasındaki bir aralıktaki küme öğelerinin sayısını temsil etmek için kullanılabilen işaretli bir tamsayı türü.  
   
 ```  
@@ -660,7 +663,7 @@ The number '20' occurs 1 times in set s1.
 The number of elements in the set s1 is: 2.  
 ```  
   
-##  <a name="emplace"></a>set::emplace  
+##  <a name="emplace"></a>  set::emplace  
  (Hiçbir kopyalama veya taşıma işlemler gerçekleştirilir) yerinde oluşturulan bir öğe ekler.  
   
 ```  
@@ -740,7 +743,7 @@ int main()
   
 ```  
   
-##  <a name="emplace_hint"></a>set::emplace_hint  
+##  <a name="emplace_hint"></a>  set::emplace_hint  
  Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.  
   
 ```  
@@ -813,7 +816,7 @@ int main()
   
 ```  
   
-##  <a name="empty"></a>set::empty  
+##  <a name="empty"></a>  set::empty  
  Kümenin boş olup olmadığını sınar.  
   
 ```  
@@ -854,7 +857,7 @@ The set s1 is not empty.
 The set s2 is empty.  
 ```  
   
-##  <a name="end"></a>set::End  
+##  <a name="end"></a>  set::End  
  past-the-end yineleyici döndürür.  
   
 ```  
@@ -875,7 +878,7 @@ iterator end();
   
  Kod örneği için bkz: [set::find](#find).  
   
-##  <a name="equal_range"></a>set::equal_range  
+##  <a name="equal_range"></a>  set::equal_range  
  Yineleyiciler çifti sırasıyla kümesi ilk öğe büyük veya eşit belirtilen anahtar ve ilk öğe için anahtar daha büyük bir anahtarla kümesindeki bir anahtarla döndürür.  
   
 ```  
@@ -891,7 +894,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk olduğu yineleyiciler çifti [lower_bound](#lower_bound) anahtarı ve ikincisi [upper_bound](#upper_bound) anahtarı.  
   
- İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
+ İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **first**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
   
 ### <a name="example"></a>Örnek  
   
@@ -951,7 +954,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The set s1 doesn't have an element with a key less than 40.  
 ```  
   
-##  <a name="erase"></a>set::ERASE  
+##  <a name="erase"></a>  set::ERASE  
  Küme içindeki bir öğeyi veya öğelerin aralığını belirtilen konumlardan kaldırır veya belirtilen bir anahtarla eşleşen öğeleri kaldırır.  
   
 ```  
@@ -1065,7 +1068,7 @@ int main()
   
 ```  
   
-##  <a name="find"></a>set::Find  
+##  <a name="find"></a>  set::Find  
  Belirtilen anahtar için eşdeğer bir anahtara sahip bir küme içindeki bir öğe konumu başvurduğu yineleyici döndürür.  
   
 ```  
@@ -1149,7 +1152,7 @@ int main()
   
 ```  
   
-##  <a name="get_allocator"></a>set::get_allocator  
+##  <a name="get_allocator"></a>  set::get_allocator  
  Küme oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.  
   
 ```  
@@ -1220,7 +1223,7 @@ int main( )
 }  
 ```  
   
-##  <a name="insert"></a>set::insert  
+##  <a name="insert"></a>  set::insert  
  Bir küme içine bir öğe veya öğe aralığı ekler.  
   
 ```  
@@ -1394,7 +1397,7 @@ int main()
   
 ```  
   
-##  <a name="iterator"></a>set::iterator  
+##  <a name="iterator"></a>  set::iterator  
  Bir sabit sağlayan bir türü [çift yönlü yineleyici](../standard-library/bidirectional-iterator-tag-struct.md) kümesindeki herhangi bir öğe okuyabilir.  
   
 ```  
@@ -1404,7 +1407,7 @@ typedef implementation-defined iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için bir **yineleyici**.  
   
-##  <a name="key_comp"></a>set::key_comp  
+##  <a name="key_comp"></a>  set::key_comp  
  Bir küme içindeki anahtarları sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.  
   
 ```  
@@ -1476,7 +1479,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of s1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of s2.  
 ```  
   
-##  <a name="key_compare"></a>set::key_compare  
+##  <a name="key_compare"></a>  set::key_compare  
  Küme içindeki iki öğenin göreli sırasını belirlemek için iki sıralama anahtarını karşılaştıran bir işlev nesnesi sağlayan bir tür.  
   
 ```  
@@ -1484,7 +1487,7 @@ typedef Traits key_compare;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `key_compare`Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
+ `key_compare` Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
   
  Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.  
   
@@ -1493,7 +1496,7 @@ typedef Traits key_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.  
   
-##  <a name="key_type"></a>set::key_type  
+##  <a name="key_type"></a>  set::key_type  
  Sıralama anahtarı olarak kapasitesi kümesinde bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.  
   
 ```  
@@ -1501,7 +1504,7 @@ typedef Key key_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `key_type`Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
+ `key_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
   
  Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.  
   
@@ -1510,7 +1513,7 @@ typedef Key key_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.  
   
-##  <a name="lower_bound"></a>set::lower_bound  
+##  <a name="lower_bound"></a>  set::lower_bound  
  Bir yineleyiciyi belirtilen anahtardan daha büyük veya ona eşit bir anahtarla küme içindeki ilk öğeye döndürür.  
   
 ```  
@@ -1575,7 +1578,7 @@ The set s1 doesn't have an element with a key of 40.
 The element of s1 with a key matching that of the last element is: 30.  
 ```  
   
-##  <a name="max_size"></a>set::max_size  
+##  <a name="max_size"></a>  set::max_size  
  Küme öğesinin maksimum uzunluğunu döndürür.  
   
 ```  
@@ -1605,7 +1608,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_eq"></a>set::operator =  
+##  <a name="op_eq"></a>  set::operator=  
  Bu öğeleri değiştirir `set` kullanan başka bir öğeler `set`.  
   
 ```  
@@ -1665,7 +1668,7 @@ int main( )
    }  
 ```  
   
-##  <a name="pointer"></a>set::pointer  
+##  <a name="pointer"></a>  set::pointer  
  Bir küme içindeki öğeye işaretçi sağlayan bir tür.  
   
 ```  
@@ -1677,7 +1680,7 @@ typedef typename allocator_type::pointer pointer;
   
  Çoğu durumda, bir [yineleyici](#iterator) kümesi nesnesi öğelerinde erişmek için kullanılmalıdır.  
   
-##  <a name="rbegin"></a>set::rbegin  
+##  <a name="rbegin"></a>  set::rbegin  
  Ters çevrilen küme içindeki ilk öğeyi ele alan bir yineleyici döndürür.  
   
 ```  
@@ -1690,11 +1693,11 @@ reverse_iterator rbegin();
  Ters kümesi ilk öğe adresleme veya ne adresleme ters çift yönlü yineleyici unreversed kümesindeki son öğe eklenmiştir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rbegin`Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.  
+ `rbegin` Ters kümesiyle kullanılan gibi [başlamak](#begin) set ile kullanılır.  
   
  Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, sonra da kümesi nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atandığı bir `reverse_iterator`, sonra kümesi nesnesi değiştirilebilir.  
   
- `rbegin`aracılığıyla geriye doğru yinelemek için kullanılabilir.  
+ `rbegin` aracılığıyla geriye doğru yinelemek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1750,7 +1753,7 @@ The reversed set is: 30 20 10
 After the erasure, the first element in the reversed set is 20.  
 ```  
   
-##  <a name="reference"></a>set::Reference  
+##  <a name="reference"></a>  set::reference  
  Küme içinde depolanan öğeye başvuru sağlayan bir tür.  
   
 ```  
@@ -1785,7 +1788,7 @@ int main( )
 The first element in the set is 10.  
 ```  
   
-##  <a name="rend"></a>set::rend  
+##  <a name="rend"></a>  set::rend  
  Ters çevrilen küme içindeki son öğeden sonra gelen konumu ele alan bir yineleyici döndürür.  
   
 ```  
@@ -1798,11 +1801,11 @@ reverse_iterator rend();
  Ters kümesi (ilk öğe unreversed kümesinde öncesinde konum) son öğesi başarılı konumu adresleri ters çift yönlü yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rend`Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.  
+ `rend` Ters kümesiyle kullanılan gibi [son](#end) set ile kullanılır.  
   
  Varsa dönüş değerini `rend` atanmış bir `const_reverse_iterator`, sonra da kümesi nesnesi değiştirilemez. Varsa dönüş değerini `rend` atandığı bir `reverse_iterator`, sonra kümesi nesnesi değiştirilebilir. Tarafından döndürülen değer `rend` değil başvuru yapıldı.  
   
- `rend`Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.  
+ `rend` Ters yineleyici kendi kümesinin sonuna olup ulaştı için test etmek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1853,7 +1856,7 @@ int main() {
 }  
 ```  
   
-##  <a name="reverse_iterator"></a>set::reverse_iterator  
+##  <a name="reverse_iterator"></a>  set::reverse_iterator  
  Ters döndürülmüş küme içindeki bir öğeyi okuyabilen veya değiştirebilen çift yönlü yineleyiciler sağlayan tür.  
   
 ```  
@@ -1866,7 +1869,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.  
   
-##  <a name="set"></a>set::set  
+##  <a name="set"></a>  set::set  
  Boş veya küme öğesinin tümünün veya diğer bir kısmının kopyası olan bir küme oluşturur.  
   
 ```  
@@ -2059,7 +2062,7 @@ int main()
 s1 = 10 20 30 40s2 = 10 20s3 = 30s4 = 10 20 30 40s5 = 10 20s6 = 10s7 = 10 20s8 = 1 2 3 4s9 = 5 6 7 8s10 = 10 20 30 40  
 ```  
   
-##  <a name="size"></a>set::size  
+##  <a name="size"></a>  set::size  
  Kümedeki öğelerin sayısını döndürür.  
   
 ```  
@@ -2098,7 +2101,7 @@ The set length is 1.
 The set length is now 2.  
 ```  
   
-##  <a name="size_type"></a>set::size_type  
+##  <a name="size_type"></a>  set::size_type  
  Küme içindeki öğelerin sayısını temsil edebilen bir işaretsiz tamsayı türü.  
   
 ```  
@@ -2106,9 +2109,9 @@ typedef typename allocator_type::size_type size_type;
 ```  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği`size_type`  
+  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`  
   
-##  <a name="swap"></a>set::Swap  
+##  <a name="swap"></a>  set::Swap  
  İki kümenin öğelerini birbiriyle değiştirir.  
   
 ```  
@@ -2173,7 +2176,7 @@ After swapping with s2, list s1 is: 100 200.
 After swapping with s3, list s1 is: 300.  
 ```  
   
-##  <a name="upper_bound"></a>set::upper_bound  
+##  <a name="upper_bound"></a>  set::upper_bound  
  Yineleyici ilk öğeye bir kümede, belirtilen anahtar daha büyük bir anahtarla döndürür.  
   
 ```  
@@ -2238,7 +2241,7 @@ The first element of s1 with a key greater than
 that of the initial element of s1 is: 20.  
 ```  
   
-##  <a name="value_comp"></a>set::value_comp  
+##  <a name="value_comp"></a>  set::value_comp  
  Küme içindeki öğe değerlerini sıralamak için kullanılan karşılaştırma nesnesinin bir kopyasını alır.  
   
 ```  
@@ -2310,7 +2313,7 @@ vc1( 2,3 ) returns value of true, where vc1 is the function object of s1.
 vc2( 2,3 ) returns value of false, where vc2 is the function object of s2.  
 ```  
   
-##  <a name="value_compare"></a>set::value_compare  
+##  <a name="value_compare"></a>  set::value_compare  
  İşlev nesnesi sağlayan bir türü göreli sıralarına kümesindeki belirlemek için iki öğenin değerleri karşılaştırabilirsiniz.  
   
 ```  
@@ -2318,7 +2321,7 @@ typedef key_compare value_compare;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_compare`Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
+ `value_compare` Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
   
  Daha fazla bilgi için `Traits` bkz [set sınıfı](../standard-library/set-class.md) konu.  
   
@@ -2327,7 +2330,7 @@ typedef key_compare value_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.  
   
-##  <a name="value_type"></a>set::value_type  
+##  <a name="value_type"></a>  set::value_type  
  Değer olarak kapasitesi kümesinde bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.  
   
 ```  
@@ -2335,7 +2338,7 @@ typedef Key value_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_type`Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
+ `value_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
   
  Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [set sınıfı](../standard-library/set-class.md) konu.  
   

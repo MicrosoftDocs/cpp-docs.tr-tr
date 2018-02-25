@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_get_thread_num
-dev_langs: C++
-helpviewer_keywords: omp_get_thread_num OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_get_thread_num
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_get_thread_num OpenMP function
 ms.assetid: b9cd4f53-afc5-4980-85c4-e21c9cd378e3
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a51bb0a6b0f441e5bab22d50c25057f9448ccc3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6e6403aa99c45d21e32ec48d7268bf8fe43c6939
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompgetthreadnum"></a>omp_get_thread_num
 Kendi iş parçacığı ekibi içinde iş parçacığının iş parçacığı sayısını döndürür.  

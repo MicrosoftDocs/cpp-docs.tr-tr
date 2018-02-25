@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::negative_binomial_distribution
 - random/std::negative_binomial_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::negative_binomial_distribution::param_type::p
 - random/std::negative_binomial_distribution::param_type::operator==
 - random/std::negative_binomial_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::negative_binomial_distribution [C++]
 - std::negative_binomial_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ea765a3a6f0b7d713b0807129d04cc9b8653951b
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5c8bab02bc5a5561f296f3e7af8585e015af228f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="negativebinomialdistribution-class"></a>negative_binomial_distribution Sınıfı
 Negatif terimli dağıtım oluşturur.  
@@ -228,7 +231,7 @@ Histogram for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="negative_binomial_distribution"></a>negative_binomial_distribution::negative_binomial_distribution  
+##  <a name="negative_binomial_distribution"></a>  negative_binomial_distribution::negative_binomial_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -247,17 +250,17 @@ explicit negative_binomial_distribution(const param_type& parm);
 Dağıtım oluşturmak için kullanılan parametre yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0.0 < k` ve`0.0 < p ≤ 1.0`  
+**Önkoşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p* ve, depolanan `k` değeri tutan değeri *k*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>negative_binomial_distribution::param_type  
+##  <a name="param_type"></a>  negative_binomial_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
-Yapı param_type {  
-   TypeDef negative_binomial_distribution`<`result_type > distribution_type;  
+struct param_type {  
+   typedef negative_binomial_distribution`<`result_type> distribution_type;  
    param_type (result_type k = 1, çift p = 0,5); result_type k() const; const çift p();
 
    bool işleci (const param_type & sağa) == const; bool işleci! = (const param_type & sağa) const; };  
@@ -269,11 +272,11 @@ Yapı param_type {
 *p*  
 `p` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` Karşılaştırmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0.0 < k` ve`0.0 < p ≤ 1.0`  
+**Önkoşul:** `0.0 < k` ve `0.0 < p ≤ 1.0`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

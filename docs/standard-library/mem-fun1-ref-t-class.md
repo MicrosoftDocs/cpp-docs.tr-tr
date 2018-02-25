@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xfunctional/std::mem_fun1_ref_t
-dev_langs: C++
-helpviewer_keywords: mem_fun1_ref_t class
+ms.topic: reference
+f1_keywords:
+- xfunctional/std::mem_fun1_ref_t
+dev_langs:
+- C++
+helpviewer_keywords:
+- mem_fun1_ref_t class
 ms.assetid: 7d6742f6-19ba-4523-b3c8-0e5b8f11464f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e685960f026fb6ec88e6b64adf59eda1453ca3ed
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 35dd25e56ba838864eeeb64d43fc8c2d25cff803
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="memfun1reft-class"></a>mem_fun1_ref_t Sınıfı
 Sağlayan bir bağdaştırıcı sınıfı bir **non_const** bir başvuru bağımsız değişkeni ile hazırlarken ikili işlevi nesnesi olarak çağrılacak tek bir bağımsız değişken üye işlevi.  

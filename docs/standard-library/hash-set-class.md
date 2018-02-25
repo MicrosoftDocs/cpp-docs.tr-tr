@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - hash_set/stdext::hash_set
 - hash_set/stdext::hash_set::allocator_type
@@ -49,7 +50,8 @@ f1_keywords:
 - hash_set/stdext::hash_set::swap
 - hash_set/stdext::hash_set::upper_bound
 - hash_set/stdext::hash_set::value_comp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - stdext::hash_set
 - stdext::hash_set::allocator_type
@@ -93,16 +95,17 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3dd9f781b39db5e8c9df5e70a4a291db44e61cbc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 964e11310c6ae6a815c0b2ee97825aa35a6ae4b1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="hashset-class"></a>hash_set Sınıfı
 > [!NOTE]
@@ -124,10 +127,10 @@ class hash_set
  Hash_set depolanması için öğe veri türü.  
   
  `Traits`  
- İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü olan tekli bir koşul eşlemesi anahtar değerleri işaretsiz öğelere, bir karma işlevi ve göreli sıralarına belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırmak için bir ikili karşılaştırma Tamsayı türünde **size_t**. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az***\<anahtar >>* varsayılan değerdir.  
+ İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü olan tekli bir koşul eşlemesi anahtar değerleri işaretsiz öğelere, bir karma işlevi ve göreli sıralarına belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırmak için bir ikili karşılaştırma Tamsayı türünde **size_t**. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az ***\<anahtar >>* varsayılan değerdir.  
   
  `Allocator`  
- Hash_set's ayırma ve bellek ayırmayı kaldırma hakkında ayrıntılar yalıtan saklı ayırıcısı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı***\<anahtar >.*  
+ Hash_set's ayırma ve bellek ayırmayı kaldırma hakkında ayrıntılar yalıtan saklı ayırıcısı nesneyi temsil eden tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcısı ***\<anahtar >.*  
   
 ## <a name="remarks"></a>Açıklamalar  
  Hash_set aşağıdaki gibidir:  
@@ -174,11 +177,11 @@ class hash_set
 |[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` öğesi saklanan bir `hash_set` okumak ve gerçekleştirmek için `const` işlemleri.|  
 |[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` öğesinde `hash_set`.|  
 |[difference_type](#difference_type)|Öğelerinin sayısı temsil etmek için kullanılan bir imzalı tamsayı türü bir `hash_set` yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta.|  
-|[Yineleyici](#iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya herhangi bir öğe değiştirme bir `hash_set`.|  
+|[iterator](#iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya herhangi bir öğe değiştirme bir `hash_set`.|  
 |[key_compare](#key_compare)|Göreli içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz bir işlev nesnesi sağlayan bir türü `hash_set`.|  
 |[key_type](#key_type)|Bir öğe depolanan bir nesne açıklayan türü bir `hash_set` kapasitesi sıralama anahtarı olarak içinde.|  
-|[İşaretçi](#pointer)|Bir öğe için bir işaretçi sağlayan bir türü bir `hash_set`.|  
-|[başvuru](#reference)|Depolanmış bir öğe için bir başvuru sağlayan bir türü bir `hash_set`.|  
+|[pointer](#pointer)|Bir öğe için bir işaretçi sağlayan bir türü bir `hash_set`.|  
+|[reference](#reference)|Depolanmış bir öğe için bir başvuru sağlayan bir türü bir `hash_set`.|  
 |[reverse_iterator](#reverse_iterator)|Çift yönlü yineleyici sağlayan bir tür okuma veya bir öğedeki bir ters değiştirme `hash_set`.|  
 |[size_type](#size_type)|Öğe sayısı gösterebilir bir işaretsiz tamsayı türü bir `hash_set`.|  
 |[value_compare](#value_compare)|İki işlev nesneleri, iki öğenin değerleri karşılaştırabilirsiniz sınıfı karşılaştırma, ikili koşulu sağlayan bir türü bir `hash_set` göreli belirlemek için sırası ve bir birli öğeleri karmaları koşul.|  
@@ -188,29 +191,29 @@ class hash_set
   
 |||  
 |-|-|  
-|[başlayın](#begin)|İlk öğe adresleri yineleyici döndürür `hash_set`.|  
+|[Başlangıç](#begin)|İlk öğe adresleri yineleyici döndürür `hash_set`.|  
 |[cbegin](#cbegin)|İlk öğe adresleme const yineleyici döndürür `hash_set`.|  
 |[cend](#cend)|Son öğesi başarılı konumu adresleri const bir yineleyici döndüren bir `hash_set`.|  
 |[Temizle](#clear)|Tüm öğeleri sildiği bir `hash_set`.|  
-|[sayısı](#count)|Öğelerin sayısını döndürür bir `hash_set` parametresi belirtilen bir anahtarı olan anahtar eşleşir.|  
+|[Sayısı](#count)|Öğelerin sayısını döndürür bir `hash_set` parametresi belirtilen bir anahtarı olan anahtar eşleşir.|  
 |[crbegin](#crbegin)|İlk öğe bir ters adresleme const yineleyici döndürür `hash_set`.|  
 |[crend](#crend)|Son öğesi bir ters başarılı konumu adresleri const bir yineleyici döndürür `hash_set`.|  
 |[emplace](#emplace)|Yerinde oluşturulan bir öğe ekler bir `hash_set`.|  
 |[emplace_hint](#emplace_hint)|Yerinde oluşturulan bir öğe ekler bir `hash_set`, yerleştirme İpucu ile.|  
-|[boş](#empty)|Testleri bir `hash_set` boş.|  
+|[empty](#empty)|Testleri bir `hash_set` boş.|  
 |[Bitiş](#end)|Son öğesi başarılı konumu adresleri yineleyici döndüren bir `hash_set`.|  
 |[equal_range](#equal_range)|Yineleyiciler çifti sırasıyla ilk öğe döndürür bir `hash_set` ilk öğe için ve belirtilen anahtar daha büyük bir anahtarla `hash_set` eşit veya bundan büyük anahtarı bir anahtara sahip.|  
 |[silme](#erase)|Bir öğenin veya bir dizi öğeleri kaldırır bir `hash_set` belirtilen konumları veya belirtilen anahtar eşleşen kaldırır öğeleri.|  
-|[Bul](#find)|Bir öğedeki konumunu adresleme yineleyici döndüren bir `hash_set` , belirtilen anahtar için eşdeğer bir anahtara sahip.|  
+|[find](#find)|Bir öğedeki konumunu adresleme yineleyici döndüren bir `hash_set` , belirtilen anahtar için eşdeğer bir anahtara sahip.|  
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `hash_set`.|  
-|[Ekle](#insert)|Bir öğenin veya bir dizi elemanlara ekler bir `hash_set`.|  
+|[insert](#insert)|Bir öğenin veya bir dizi elemanlara ekler bir `hash_set`.|  
 |[key_comp](#key_comp)|Sipariş anahtarlarında kullanılacak karşılaştırma nesnesinin bir kopyasını alır bir `hash_set`.|  
 |[lower_bound](#lower_bound)|Yineleyici ilk öğe döndürür bir `hash_set` eşit veya bundan büyük belirtilen anahtar bir anahtara sahip.|  
 |[max_size](#max_size)|En büyük uzunluğunu döndürür `hash_set`.|  
 |[rbegin](#rbegin)|İlk öğe bir ters adresleme yineleyici döndürür `hash_set`.|  
 |[rend](#rend)|Son öğesi bir ters başarılı konumu adresleri yineleyici döndürür `hash_set`.|  
-|[boyutu](#size)|Öğelerin sayısını döndürür `hash_set`.|  
-|[değiştirme](#swap)|İki öğelerini alış verişleri `hash_set`s.|  
+|[Boyutu](#size)|Öğelerin sayısını döndürür `hash_set`.|  
+|[Değiştirme](#swap)|İki öğelerini alış verişleri `hash_set`s.|  
 |[upper_bound](#upper_bound)|Yineleyici ilk öğe döndürür bir `hash_set` eşit veya belirtilen anahtar daha büyük bir anahtar ile.|  
 |[value_comp](#value_comp)|Karma ve öğe anahtarı değerleri sıralamak için kullanılan karma nitelikler nesnesinin bir kopyasını alır bir `hash_set`.|  
   
@@ -218,14 +221,14 @@ class hash_set
   
 |||  
 |-|-|  
-|[hash_set::operator =](#op_eq)|Öğeleri değiştirir bir `hash_set` başka bir kopyasına sahip `hash_set`.|  
+|[hash_set::operator=](#op_eq)|Öğeleri değiştirir bir `hash_set` başka bir kopyasına sahip `hash_set`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<hash_set >  
   
  **Namespace:** stdext  
   
-##  <a name="allocator_type"></a>hash_set::allocator_type  
+##  <a name="allocator_type"></a>  hash_set::allocator_type  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -246,7 +249,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::allo
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_allocator](#get_allocator) kullanan bir örnek `allocator_type`.  
   
-##  <a name="begin"></a>hash_set::Begin  
+##  <a name="begin"></a>  hash_set::Begin  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -307,7 +310,7 @@ The first element of hs1 is 1
 The first element of hs1 is now 2  
 ```  
   
-##  <a name="cbegin"></a>hash_set::cbegin  
+##  <a name="cbegin"></a>  hash_set::cbegin  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -354,7 +357,7 @@ int main( )
 The first element of hs1 is 1  
 ```  
   
-##  <a name="cend"></a>hash_set::cend  
+##  <a name="cend"></a>  hash_set::cend  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -369,7 +372,7 @@ const_iterator cend() const;
  Son öğesi başarılı konumu adresleri const bir çift yönlü yineleyici bir [hash_set](../standard-library/hash-set-class.md). Varsa `hash_set` boş olduğundan `hash_set::cend == hash_set::begin`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cend`Yineleyici sonuna ulaştı olup olmadığını sınamak için kullanılan kendi `hash_set`. Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
+ `cend` Yineleyici sonuna ulaştı olup olmadığını sınamak için kullanılan kendi `hash_set`. Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
   
    
   
@@ -402,7 +405,7 @@ int main( )
 The last element of hs1 is 3  
 ```  
   
-##  <a name="clear"></a>hash_set::Clear  
+##  <a name="clear"></a>  hash_set::clear  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -447,7 +450,7 @@ The size of the hash_set is initially 2.
 The size of the hash_set after clearing is 0.  
 ```  
   
-##  <a name="const_iterator"></a>hash_set::const_iterator  
+##  <a name="const_iterator"></a>  hash_set::const_iterator  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -466,7 +469,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) kullanan bir örnek `const_iterator`.  
   
-##  <a name="const_pointer"></a>hash_set::const_pointer  
+##  <a name="const_pointer"></a>  hash_set::const_pointer  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -484,7 +487,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
   
    
   
-##  <a name="const_reference"></a>hash_set::const_reference  
+##  <a name="const_reference"></a>  hash_set::const_reference  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -532,7 +535,7 @@ int main( )
 The first element in the hash_set is 10.  
 ```  
   
-##  <a name="const_reverse_iterator"></a>hash_set::const_reverse_iterator  
+##  <a name="const_reverse_iterator"></a>  hash_set::const_reverse_iterator  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -549,9 +552,9 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
    
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [rend](#rend) bildirme ve kullanma örneği`const_reverse_iterator`  
+  Örneğin bkz [rend](#rend) bildirme ve kullanma örneği `const_reverse_iterator`  
   
-##  <a name="count"></a>hash_set::Count  
+##  <a name="count"></a>  hash_set::count  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -613,7 +616,7 @@ The number of elements in hs1 with a sort key of 1 is: 1.
 The number of elements in hs1 with a sort key of 2 is: 0.  
 ```  
   
-##  <a name="crbegin"></a>hash_set::crbegin  
+##  <a name="crbegin"></a>  hash_set::crbegin  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -628,11 +631,11 @@ const_reverse_iterator crbegin() const;
  Bir const ters ilk öğe bir ters adresleme çift yönlü yineleyici [hash_set](../standard-library/hash-set-class.md) veya ne son öğesi unreversed olsaydı adresleme `hash_set`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crbegin`Ters hash_set ile kullanılan gibi [hash_set::begin](#begin) hash_set ile kullanılır.  
+ `crbegin` Ters hash_set ile kullanılan gibi [hash_set::begin](#begin) hash_set ile kullanılır.  
   
  Dönüş değeri ile `crbegin`, `hash_set` nesnesi değiştirilemez.  
   
- `crbegin`yinelemek için kullanılabilecek bir `hash_set` geriye doğru.  
+ `crbegin` yinelemek için kullanılabilecek bir `hash_set` geriye doğru.  
   
    
   
@@ -665,7 +668,7 @@ int main( )
 The first element in the reversed hash_set is 30.  
 ```  
   
-##  <a name="crend"></a>hash_set::crend  
+##  <a name="crend"></a>  hash_set::crend  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -680,11 +683,11 @@ const_reverse_iterator crend() const;
  Bir const ters son öğesi bir ters başarılı konumu adresleri çift yönlü yineleyici [hash_set](../standard-library/hash-set-class.md) (ilk öğe unreversed öncesinde konumu `hash_set`).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crend`kullanılan bir ters ile `hash_set` gibi [hash_set::end](#end) ile kullanılan bir `hash_set`.  
+ `crend` kullanılan bir ters ile `hash_set` gibi [hash_set::end](#end) ile kullanılan bir `hash_set`.  
   
  Dönüş değeri ile `crend`, `hash_set` nesnesi değiştirilemez.  
   
- `crend`Ters yineleyici sonuna olup ulaştı için test etmek için kullanılan kendi `hash_set`.  
+ `crend` Ters yineleyici sonuna olup ulaştı için test etmek için kullanılan kendi `hash_set`.  
   
    
   
@@ -718,7 +721,7 @@ int main( )
 The last element in the reversed hash_set is 10.  
 ```  
   
-##  <a name="difference_type"></a>hash_set::difference_type  
+##  <a name="difference_type"></a>  hash_set::difference_type  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -796,7 +799,7 @@ The number '20' occurs 1 times in hash_set hs1.
 The number of elements in the hash_set hs1 is: 2.  
 ```  
   
-##  <a name="emplace"></a>hash_set::emplace  
+##  <a name="emplace"></a>  hash_set::emplace  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -849,7 +852,7 @@ int main( )
 After the emplace insertion, hs3 contains a.  
 ```  
   
-##  <a name="emplace_hint"></a>hash_set::emplace_hint  
+##  <a name="emplace_hint"></a>  hash_set::emplace_hint  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -905,7 +908,7 @@ int main( )
 After the emplace insertion, hs3 contains a.  
 ```  
   
-##  <a name="empty"></a>hash_set::empty  
+##  <a name="empty"></a>  hash_set::empty  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -954,7 +957,7 @@ The hash_set hs1 is not empty.
 The hash_set hs2 is empty.  
 ```  
   
-##  <a name="end"></a>hash_set::End  
+##  <a name="end"></a>  hash_set::End  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1017,7 +1020,7 @@ The last element of hs1 is 3
 The last element of hs1 is now 2  
 ```  
   
-##  <a name="equal_range"></a>hash_set::equal_range  
+##  <a name="equal_range"></a>  hash_set::equal_range  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1037,7 +1040,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk olduğu yineleyiciler çifti [lower_bound](../standard-library/set-class.md#lower_bound) anahtarı ve ikincisi [upper_bound](../standard-library/set-class.md#upper_bound) anahtarı.  
   
- Üye işlevi tarafından döndürülen çifti kolaylaştırılmıştır ilk yineleyici erişmek için `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
+ Üye işlevi tarafından döndürülen çifti kolaylaştırılmıştır ilk yineleyici erişmek için `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **first**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
   
 ### <a name="remarks"></a>Açıklamalar  
    
@@ -1101,7 +1104,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The hash_set hs1 doesn't have an element with a key greater than or equal to 40.  
 ```  
   
-##  <a name="erase"></a>hash_set::ERASE  
+##  <a name="erase"></a>  hash_set::erase  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1219,7 +1222,7 @@ After another element (unique for hash_set) with a key
 equal to that of the 2nd element is deleted, the hash_set hs3 is: 0 3.  
 ```  
   
-##  <a name="find"></a>hash_set::Find  
+##  <a name="find"></a>  hash_set::find  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1296,7 +1299,7 @@ The hash_set hs1 doesn't have an element with a key of 40.
 The element of hs1 with a key matching that of the last element is: 30.  
 ```  
   
-##  <a name="get_allocator"></a>hash_set::get_allocator  
+##  <a name="get_allocator"></a>  hash_set::get_allocator  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1372,7 +1375,7 @@ int main( )
 }  
 ```  
   
-##  <a name="hash_set"></a>hash_set::hash_set  
+##  <a name="hash_set"></a>  hash_set::hash_set  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1456,7 +1459,7 @@ hash_set(
   
  Öğelerin gerçek sırasını bir `hash_set` kapsayıcısı üzerinde karma işlevi bağlıdır, sıralama işlevi ve karma geçerli boyutu tablo ve burada belirlenmiştir sıralama kümesi kapsayıcısı ile verebilir gibi genel olarak, tahmin edilemez tek başına işlevi.  
   
-##  <a name="insert"></a>hash_set::insert  
+##  <a name="insert"></a>  hash_set::insert  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1502,7 +1505,7 @@ void insert(
   
  Üçüncü üye işlevi bir dizi öğesi değerlerini ekler bir `hash_set` yineleyici aralığında tarafından ele her öğesine karşılık gelen [ `First`, `Last`) bir belirtilen `hash_set`.  
   
-##  <a name="iterator"></a>hash_set::iterator  
+##  <a name="iterator"></a>  hash_set::iterator  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1521,7 +1524,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::iter
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için **yineleyici**.  
   
-##  <a name="key_comp"></a>hash_set::key_comp  
+##  <a name="key_comp"></a>  hash_set::key_comp  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1597,7 +1600,7 @@ int main( )
 }  
 ```  
   
-##  <a name="key_compare"></a>hash_set::key_compare  
+##  <a name="key_compare"></a>  hash_set::key_compare  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1609,7 +1612,7 @@ typedef Traits key_compare;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `key_compare`Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
+ `key_compare` Şablon parametresi için bir eş anlamlı olduğundan `Traits`.  
   
  Daha fazla bilgi için `Traits` bkz [hash_set sınıfı](../standard-library/hash-set-class.md) konu.  
   
@@ -1620,7 +1623,7 @@ typedef Traits key_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.  
   
-##  <a name="key_type"></a>hash_set::key_type  
+##  <a name="key_type"></a>  hash_set::key_type  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1643,7 +1646,7 @@ typedef Key key_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.  
   
-##  <a name="lower_bound"></a>hash_set::lower_bound  
+##  <a name="lower_bound"></a>  hash_set::lower_bound  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1716,7 +1719,7 @@ The hash_set hs1 doesn't have an element with a key of 40.
 The element of hs1 with a key matching that of the last element is: 30.  
 ```  
   
-##  <a name="max_size"></a>hash_set::max_size  
+##  <a name="max_size"></a>  hash_set::max_size  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1754,7 +1757,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_eq"></a>hash_set::operator =  
+##  <a name="op_eq"></a>  hash_set::operator=  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1815,7 +1818,7 @@ int main( )
 }  
 ```  
   
-##  <a name="pointer"></a>hash_set::pointer  
+##  <a name="pointer"></a>  hash_set::pointer  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1833,7 +1836,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::poin
   
    
   
-##  <a name="rbegin"></a>hash_set::rbegin  
+##  <a name="rbegin"></a>  hash_set::rbegin  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1850,11 +1853,11 @@ reverse_iterator rbegin();
  Ters hash_set ilk öğe adresleme veya ne adresleme ters çift yönlü yineleyici unreversed hash_set son öğesi eklenmiştir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rbegin`Ters hash_set ile kullanılan gibi [başlamak](#begin) hash_set ile kullanılır.  
+ `rbegin` Ters hash_set ile kullanılan gibi [başlamak](#begin) hash_set ile kullanılır.  
   
  Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, sonra da hash_set nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atandığı bir `reverse_iterator`, sonra hash_set nesne değiştirilebilir.  
   
- `rbegin`hash_set geriye doğru yinelemek için kullanılabilir.  
+ `rbegin` hash_set geriye doğru yinelemek için kullanılabilir.  
   
    
   
@@ -1916,7 +1919,7 @@ The reversed hash_set is: 30 20 10
 After the erasure, the first element in the reversed hash_set is 20.  
 ```  
   
-##  <a name="reference"></a>hash_set::Reference  
+##  <a name="reference"></a>  hash_set::reference  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1967,7 +1970,7 @@ The first element in the hash_set is 10.
 The first element in the hash_set is now 15.  
 ```  
   
-##  <a name="rend"></a>hash_set::rend  
+##  <a name="rend"></a>  hash_set::rend  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -1984,11 +1987,11 @@ reverse_iterator rend();
  Ters hash_set (ilk öğe unreversed hash_set öncesinde konum) son öğesi başarılı konumu adresleri ters çift yönlü yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rend`Ters hash_set ile kullanılan gibi [son](#end) hash_set ile kullanılır.  
+ `rend` Ters hash_set ile kullanılan gibi [son](#end) hash_set ile kullanılır.  
   
  Varsa dönüş değerini `rend` atanmış bir `const_reverse_iterator`, sonra da hash_set nesnesi değiştirilemez. Varsa dönüş değerini `rend` atandığı bir `reverse_iterator`, sonra hash_set nesne değiştirilebilir. Tarafından döndürülen değer `rend` değil başvuru yapıldı.  
   
- `rend`Ters yineleyici kendi hash_set sonuna olup ulaştı için test etmek için kullanılabilir.  
+ `rend` Ters yineleyici kendi hash_set sonuna olup ulaştı için test etmek için kullanılabilir.  
   
    
   
@@ -2053,7 +2056,7 @@ The reversed hash_set is: 30 20 10 .
 After the erasure, the last element in the reversed hash_set is 20.  
 ```  
   
-##  <a name="reverse_iterator"></a>hash_set::reverse_iterator  
+##  <a name="reverse_iterator"></a>  hash_set::reverse_iterator  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2072,7 +2075,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::reve
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.  
   
-##  <a name="size"></a>hash_set::size  
+##  <a name="size"></a>  hash_set::size  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2119,7 +2122,7 @@ The hash_set length is 1.
 The hash_set length is now 2.  
 ```  
   
-##  <a name="size_type"></a>hash_set::size_type  
+##  <a name="size_type"></a>  hash_set::size_type  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2134,9 +2137,9 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::size
    
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği`size_type`  
+  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`  
   
-##  <a name="swap"></a>hash_set::Swap  
+##  <a name="swap"></a>  hash_set::Swap  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2210,7 +2213,7 @@ After swapping with hs2, list hs1 is: 200 100.
 After swapping with hs3, list hs1 is: 300.  
 ```  
   
-##  <a name="upper_bound"></a>hash_set::upper_bound  
+##  <a name="upper_bound"></a>  hash_set::upper_bound  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2283,7 +2286,7 @@ The first element of hs1 with a key greater than
 that of the initial element of hs1 is: 20.  
 ```  
   
-##  <a name="value_comp"></a>hash_set::value_comp  
+##  <a name="value_comp"></a>  hash_set::value_comp  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2359,7 +2362,7 @@ int main( )
 }  
 ```  
   
-##  <a name="value_compare"></a>hash_set::value_compare  
+##  <a name="value_compare"></a>  hash_set::value_compare  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  
@@ -2382,7 +2385,7 @@ typedef key_compare value_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.  
   
-##  <a name="value_type"></a>hash_set::value_type  
+##  <a name="value_type"></a>  hash_set::value_type  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_set sınıfı](../standard-library/unordered-set-class.md).  

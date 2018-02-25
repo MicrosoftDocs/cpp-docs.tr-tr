@@ -4,16 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocnum/std::num_get
 - locale/std::num_get::char_type
 - locale/std::num_get::iter_type
 - locale/std::num_get::do_get
 - locale/std::num_get::get
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::num_get [C++]
 - std::num_get [C++], char_type
@@ -21,16 +23,17 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7437bfe26f95b57584f294a7280540014e4a1b85
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 205bd19d1c051f00a90b45d42997a5d8a1d5eb0f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="numget-class"></a>num_get Sınıfı
 Denetim dönüşümleri sıralarının türü için bir yerel ayar model olarak hizmet verebilir bir nesneyi tanımlayan bir şablon sınıfı `CharType` sayısal değerler için.  
@@ -77,7 +80,7 @@ class num_get : public locale::facet;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>num_get::char_type  
+##  <a name="char_type"></a>  num_get::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```
@@ -87,7 +90,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="do_get"></a>num_get::do_get  
+##  <a name="do_get"></a>  num_get::do_get  
  Bir karakter dizisinden sayısal veya Boolean değeri ayıklamak için çağrılan sanal işlev.  
   
 ```
@@ -214,9 +217,9 @@ virtual iter_type do_get(
   
  Tamsayı giriş alanını biçimi daha fazla tarafından belirlenen [yerel model](../standard-library/locale-class.md#facet_class) `fac` çağrı tarafından döndürülen [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base::getloc](../standard-library/ios-base-class.md#getloc)`())`. Özellikle:  
   
- `fac.`[numpunct::grouping](../standard-library/numpunct-class.md#grouping) `()` basamak herhangi Ondalık ayırıcının solundaki nasıl gruplandırılacağını belirler  
+ `fac.` [numpunct::Grouping](../standard-library/numpunct-class.md#grouping) `()` basamak herhangi Ondalık ayırıcının solundaki nasıl gruplandırılacağını belirler  
   
- `fac.`[numpunct::thousands_sep](../standard-library/numpunct-class.md#thousands_sep) `()` herhangi Ondalık ayırıcının sol tarafındaki basamak grupları ayıran sırası belirler.  
+ `fac.` [numpunct::thousands_sep](../standard-library/numpunct-class.md#thousands_sep) `()` herhangi Ondalık ayırıcının sol tarafındaki basamak grupları ayıran sırası belirler.  
   
  Hiçbir örneği varsa `fac.thousands_sep()` ortaya sayısal giriş alanı hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, gruplandırma kısıtlamalar uygulanan tarafından `fac.grouping()` uygulanır ve ayırıcılar tarama dönüştürme oluşmadan önce kaldırılır.  
   
@@ -270,7 +273,7 @@ virtual iter_type do_get(
     float& val) const;
 ```  
   
- bir tam, boş olmayan kayan nokta giriş alanını eşleşecek şekilde endeavors dışında birinci ile aynı şekilde davranır. `fac.`[numpunct::decimal_point](../standard-library/numpunct-class.md#decimal_point) `()` tamsayı basamak kesir rakamları ayıran sırası belirler. Eşdeğer tarama dönüştürme belirleyici olduğu `lf`.  
+ bir tam, boş olmayan kayan nokta giriş alanını eşleşecek şekilde endeavors dışında birinci ile aynı şekilde davranır. `fac.`[numpunct::decimal_point](../standard-library/numpunct-class.md#decimal_point)`()` determines the sequence that separates the integer digits from the fraction digits. Eşdeğer tarama dönüştürme belirleyici olduğu `lf`.  
   
  Sekizinci sanal korumalı üye fonksiyonu:  
   
@@ -283,7 +286,7 @@ virtual iter_type do_get(
     double& val) const;
 ```  
   
- bir tam, boş olmayan kayan nokta giriş alanını eşleşecek şekilde endeavors dışında birinci ile aynı şekilde davranır. `fac.`[numpunct::decimal_point](../standard-library/numpunct-class.md#decimal_point) `()` tamsayı basamak kesir rakamları ayıran sırası belirler. Eşdeğer tarama dönüştürme belirleyici olduğu `lf`.  
+ bir tam, boş olmayan kayan nokta giriş alanını eşleşecek şekilde endeavors dışında birinci ile aynı şekilde davranır. `fac.`[numpunct::decimal_point](../standard-library/numpunct-class.md#decimal_point)`()` determines the sequence that separates the integer digits from the fraction digits. Eşdeğer tarama dönüştürme belirleyici olduğu `lf`.  
   
  Dokuzuncu sanal korumalı üye fonksiyonu:  
   
@@ -329,7 +332,7 @@ virtual iter_type do_get(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [almak](#get), sanal üye fonksiyonu tarafından çağrılır burada `do_get`.  
   
-##  <a name="get"></a>num_get::get  
+##  <a name="get"></a>  num_get::get  
  Bir karakter dizisinden sayısal veya Boolean değeri ayıklar.  
   
 ```
@@ -451,7 +454,7 @@ iter_type get(
   
 - **Fac**. [thousands_sep](../standard-library/numpunct-class.md#thousands_sep) herhangi Ondalık ayırıcının sol tarafındaki basamak grupları ayıran sırası belirler.  
   
- Hiçbir örneği varsa **fac**. `thousands_sep`sayısal giriş alanı ortaya, hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, gruplandırma kısıtlamalar uygulanan tarafından **fac**. **Gruplandırma** zorlanır ve ayırıcılar tarama dönüştürme oluşmadan önce kaldırılır.  
+ Hiçbir örneği varsa **fac**. `thousands_sep` sayısal giriş alanı ortaya, hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, gruplandırma kısıtlamalar uygulanan tarafından **fac**. **Gruplandırma** zorlanır ve ayırıcılar tarama dönüştürme oluşmadan önce kaldırılır.  
   
  İkinci sanal korumalı üye fonksiyonu:  
   
@@ -513,7 +516,7 @@ virtual iter_type do_get(iter_type first,
   
  bir tam, boş olmayan Boole giriş alanı eşleştirmeye çalışır dışında birinci ile aynı şekilde davranır. Başarılı Boole giriş alanı türü değerine dönüştürür, `bool` ve bu değeri depolar `val`.  
   
- Bir Boole giriş alanı iki biçimlerden birini alır. Varsa **iosbase**. **bayrakları** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) olan **false**, dönüştürülen değer ya da 0 olmalı, dışında bir tamsayı giriş alanı ile aynı olduğundan (için  **yanlış**) veya 1 (için **true**). Sıra ya da aksi takdirde eşleşmelidir **fac**. [falsename](../standard-library/numpunct-class.md#falsename) (için **false**), veya **fac**. [truename](../standard-library/numpunct-class.md#truename) (için **true**).  
+ Bir Boole giriş alanı iki biçimlerden birini alır. Varsa **iosbase**. **bayrakları** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha) olan **false**, dönüştürülen değer ya da 0 olmalı, dışında bir tamsayı giriş alanı ile aynı olduğundan (için **false** ) veya 1 (için **true**). Sıra ya da aksi takdirde eşleşmelidir **fac**. [falsename](../standard-library/numpunct-class.md#falsename) (için **false**), veya **fac**. [truename](../standard-library/numpunct-class.md#truename) (için **true**).  
   
 ### <a name="example"></a>Örnek  
   
@@ -547,7 +550,7 @@ int main( )
 }  
 ```  
   
-##  <a name="iter_type"></a>num_get::iter_type  
+##  <a name="iter_type"></a>  num_get::iter_type  
  Bir giriş yineleyiciyi açıklayan tür.  
   
 ```
@@ -557,7 +560,7 @@ typedef InputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **InputIterator**.  
   
-##  <a name="num_get"></a>num_get::num_get  
+##  <a name="num_get"></a>  num_get::num_get  
  Nesne türü Oluşturucusu `num_get` serilerinden sayısal değerleri ayıklamak için kullanılır.  
   
 ```
@@ -575,7 +578,7 @@ explicit num_get(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   

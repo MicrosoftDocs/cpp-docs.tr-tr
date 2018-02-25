@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: codecvt/std::codecvt_utf16
-dev_langs: C++
-helpviewer_keywords: codecvt_utf16 class
+ms.topic: reference
+f1_keywords:
+- codecvt/std::codecvt_utf16
+dev_langs:
+- C++
+helpviewer_keywords:
+- codecvt_utf16 class
 ms.assetid: a9897f98-f84d-4db6-90ad-858b2727570c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e6d7746369c5ecb559cae3b787b8bbf2f475ba28
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d3d999ffc40241169dab6847e882b1994beccc1b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="codecvtutf16"></a>codecvt_utf16
 Temsil eden bir [yerel](../standard-library/locale-class.md) UCS-2 veya 4 UCS olarak kodlanmış uluslararası karakterler ve UTF-16LE veya UTF-16BE olarak kodlanmış bir bayt akış arasında dönüştürür modeli.

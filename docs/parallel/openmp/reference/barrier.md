@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: barrier
-dev_langs: C++
-helpviewer_keywords: barrier OpenMP directive
+ms.topic: reference
+f1_keywords:
+- barrier
+dev_langs:
+- C++
+helpviewer_keywords:
+- barrier OpenMP directive
 ms.assetid: 5c73ad4f-c768-443a-8f9e-4fd8bc2253c7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5d1e8076ecef41cf60bf34a0622ee53afb05910b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0008c343130bf47170957204793cf3c85b22f1e3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="barrier"></a>barrier
 Bir takım tüm iş parçacıkları eşitler; tüm iş parçacıklarının engel yürütme kadar tüm iş parçacıklarının engel duraklatın.  

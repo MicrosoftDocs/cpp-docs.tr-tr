@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <condition_variable>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <condition_variable>
+dev_langs:
+- C++
 ms.assetid: 8567f7cc-20bd-42a7-9137-87c46f878009
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: baabac0a4461c659a3e70c2c26bcb971f0e1c738
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5bd3d3bd6ef4976f5f9c55d1905b02314a88438d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltconditionvariablegt"></a>&lt;condition_variable&gt;
 Sınıflarını tanımlayan [condition_variable](../standard-library/condition-variable-class.md) ve [condition_variable_any](../standard-library/condition-variable-any-class.md) bir koşul doğru olmasını bekleyin nesneleri oluşturmak için kullanılır.  
@@ -51,19 +55,19 @@ while (condition is false)
   
  `condition_variable_any` Ve `condition_variable` sınıflarının her bekleme koşulu için üç yöntem vardır.  
   
-- `wait`sınırsız bir süre için bekler.  
+- `wait` sınırsız bir süre için bekler.  
   
-- `wait_until`Belirtilen bir kadar bekler `time`.  
+- `wait_until` Belirtilen bir kadar bekler `time`.  
   
-- `wait_for`Belirtilen bir bekler `time interval`.  
+- `wait_for` Belirtilen bir bekler `time interval`.  
   
  Bu yöntemlerin her biri iki aşırı yüklenmiş sürümlerini içerir. Yalnızca bekler ve spuriously uyandırmak. Diğer bir koşulu tanımlayan ek şablon bağımsız değişken alır. Koşul kadar yöntemi döndürmüyor `true`.  
   
  Her sınıf kendi koşulu olan bir koşul değişken bildirmek için kullanılan iki yöntem de sahiptir `true`.  
   
-- `notify_one`bir koşul değişken için bekleyen iş parçacıklarının uyandırır.  
+- `notify_one` bir koşul değişken için bekleyen iş parçacıklarının uyandırır.  
   
-- `notify_all`Koşul değişken için bekleyen iş parçacıklarının tümünü uyandırır.  
+- `notify_all` Koşul değişken için bekleyen iş parçacıklarının tümünü uyandırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

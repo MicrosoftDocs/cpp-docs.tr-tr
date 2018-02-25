@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __svm_vmrun
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __svm_vmrun
+dev_langs:
+- C++
 helpviewer_keywords:
 - __svm_vmrun intrinsic
 - VMRUN instruction
 ms.assetid: ae98a781-fc17-47b2-b40f-86fcebf1867b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 000e798dce3fba367a8666d4b5c97bd25fd53253
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 988a045bc957d5920fee7e3e659d7a0b4f02d8d2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Belirtilen sanal makine denetim bloğu (VMCB) karşılık gelen sanal makine Konuk kodunun yürütülmesini başlatır.  
   
@@ -41,7 +45,7 @@ void __svm_vmrun(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
+|[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `__svm_vmrun` İşlevi sanal makine Konuk kodu yürütülmeye başlamaya programlandığını VMCB en az miktarda bilgi kullanır. Kullanım [__svm_vmsave](../intrinsics/svm-vmsave.md) veya [__svm_vmload](../intrinsics/svm-vmload.md) karmaşık kesme işlemek için veya başka bir konuk geçiş yapmak için daha fazla bilgi gerekiyorsa işlev.  
@@ -52,7 +56,7 @@ void __svm_vmrun(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__svm_vmrun`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_vmrun`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

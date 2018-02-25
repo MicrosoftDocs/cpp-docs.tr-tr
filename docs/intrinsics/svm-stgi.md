@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __svm_stgi
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __svm_stgi
+dev_langs:
+- C++
 helpviewer_keywords:
 - __svm_stgi intrinsic
 - STGI instruction
 ms.assetid: 96488da4-5587-4e99-8674-627a9e51be84
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 94e386827ae747fb3289354ba380d390756359ff
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9346270c09a3174c2583d68cdfb62e11f5112144
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="svmstgi"></a>__svm_stgi
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Genel kesme bayrak ayarlar.  
   
@@ -44,7 +48,7 @@ void __svm_stgi(void);
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__svm_stgi`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__svm_stgi`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

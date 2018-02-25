@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - numeric/std::accumulate
 - numeric/std::adjacent_difference
@@ -13,7 +13,7 @@ f1_keywords:
 - numeric/std::iota
 - numeric/std::partial_sum
 ms.assetid: a4b0449a-c80c-4a1d-8d9f-d7fcd0058f8b
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::accumulate [C++]
@@ -21,11 +21,11 @@ helpviewer_keywords:
 - std::inner_product [C++]
 - std::iota [C++]
 - std::partial_sum [C++]
-ms.openlocfilehash: 9b1c992930fb6b35498f04357e783d01db3a229c
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: b0437225718e402ac2c8b9a22af5b4825128cbd6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltnumericgt-functions"></a>&lt;Sayısal&gt; işlevleri
 ||||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/24/2017
 |[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[inner_product](#inner_product)|  
 |[iota](#iota)|[partial_sum](#partial_sum)|  
   
-##  <a name="accumulate"></a>accumulate  
+##  <a name="accumulate">accumulate</a>  
  Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.  
   
 ```  
@@ -166,7 +166,7 @@ The vector of partial products is:
  ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).  
 ```  
   
-##  <a name="adjacent_difference"></a>adjacent_difference  
+##  <a name="adjacent_difference"></a>  adjacent_difference  
  Her bir öğe arasındaki art arda gelen farkları ve bir giriş aralığındaki kendi öncellerini hesaplar ve bir hedef aralığında sonuçların çıktısını alır veya fark işleminin başka bir belirtilen bir ikili işlem tarafından değiştirildiği genelleştirilmiş bir yordamın sonucunu hesaplar.  
   
 ```  
@@ -270,7 +270,7 @@ int main( )
 }  
 ```  
   
-##  <a name="inner_product"></a>inner_product  
+##  <a name="inner_product"></a>  inner_product  
  İki aralıklarının element-wise ürün toplamını hesaplar ve belirtilen ilk değerine ekler veya sum ve ürün ikili işlemleri tarafından belirtilen diğer ikili işlemlerin burada değiştirilir genelleştirilmiş bir yordamın sonuç hesaplar.  
   
 ```  
@@ -313,13 +313,13 @@ Type inner_product(
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk üye işlevi element-wise ürünleri toplamını döndürür ve belirtilen ilk değer ekler. Değerlerin aralıkları için bunu *bir*t ve *b*i döndürür:  
   
- `val`+ ( *bir*1 \* *b*1) + ( *bir*2 \* *b*2) +... + ( *bir* n  \* *b*n) 
+ `val` + ( *a*1 \* *b*1 ) + ( *a*2 \* *b*2 ) + ... + ( *a*n \* *b*n ) 
   
  yinelemeli olarak değiştirerek `val` ile `val` + ( *bir*ı \* *b*t).  
   
  İkinci üye işlevi döndürür:  
   
- `val`*binary_op1* ( *bir*1 *binary_op2* *b*1) *binary_op1* ( *bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* ( *bir*n *binary_op2* *b*n)  
+ `val` *binary_op1* ( *bir*1 *binary_op2* *b*1) *binary_op1* ( *bir*2 *binary_op2* *b*2) *binary_op1* ... *binary_op1* ( *bir*n *binary_op2* *b*n)  
   
  yinelemeli olarak değiştirerek `val` ile `val` *binary_op1* ( *bir*ı *binary_op2* *b*t).  
   
@@ -416,7 +416,7 @@ int main()
 }  
 ```  
   
-##  <a name="iota"></a>iota  
+##  <a name="iota"></a>  iota  
  Başlangıç değeri ilk öğe ile başlayan ve bu değeri art arda artışlarla ile doldurma depolar ( ` value++`) her zaman aralığını öğeleri `[ first,  last)`.  
   
 ```  
@@ -477,7 +477,7 @@ int main(void)
 }  
 ```  
   
-##  <a name="partial_sum"></a>partial_sum  
+##  <a name="partial_sum"></a>  partial_sum  
  SUM'ları ilk öğe ile bir giriş aralığında bir dizi hesaplar *ı*th öğesi ve her tür toplamda sonucunu depolar *ı*th öğesi bir hedef aralığının veya sonucu hesaplar bir Genelleştirilmiş yordam toplamı işlemi tarafından belirtilen bir ikili işlem nerede değiştirilir.  
   
 ```  

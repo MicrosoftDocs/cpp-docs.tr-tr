@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocale/std::codecvt
 - xlocale/std::codecvt::extern_type
@@ -26,7 +27,8 @@ f1_keywords:
 - xlocale/std::codecvt::max_length
 - xlocale/std::codecvt::out
 - xlocale/std::codecvt::unshift
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::codecvt [C++]
 - std::codecvt [C++], extern_type
@@ -47,16 +49,17 @@ helpviewer_keywords:
 - std::codecvt [C++], out
 - std::codecvt [C++], unshift
 ms.assetid: 37d3efa1-2b7f-42b6-b04f-7a972c8c2c86
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 36631c1a23c90b875d2a2fba8a1cec23b97c2400
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b456472fc28b473da29169acb899a1a8a142c095
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 Bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı. Programın içindeki karakterleri ve program dışındaki karakterleri kodlamak için kullanılan değerler dizisi arasındaki dönüştürmeleri denetleyebilir.  
@@ -133,7 +136,7 @@ class codecvt : public locale::facet, codecvt_base;
 |[do_max_length](#do_max_length)|Dış bayt sayısını bir üretmek gerekli iç döndüren bir sanal işlev `CharType`.|  
 |[do_out](#do_out)|Bir sanal işlev olarak adlandırılan bir dizi iç dönüştürmek için `CharType`s dış bayt dizisi.|  
 |[do_unshift](#do_unshift)|Bir sanal işlev adlı sağlamak için `Byte`durumu bağımlı dönüştürmede bir dizi son karakter tamamlamak için gereken s `Byte`s.|  
-|[kodlama](#encoding)|Varsa testleri kodlamasını `Byte` akışıdır durumu bağımlı olup arasındaki oran `Byte`kullanılan s ve `CharType`üretilen s sabittir ve, varsa, o oranı değeri belirler.|  
+|[encoding](#encoding)|Varsa testleri kodlamasını `Byte` akışıdır durumu bağımlı olup arasındaki oran `Byte`kullanılan s ve `CharType`üretilen s sabittir ve, varsa, o oranı değeri belirler.|  
 |[in](#in)|Bir dizi harici temsilini dönüştürür `Byte`bir dizi iç bir temsili s `CharType`s.|  
 |[uzunluğu](#length)|Belirler kaç `Byte`dış belirli bir dizi s'den `Byte`s ürettiği iç verilen sayıdan fazla `CharType`s ve o sayısını döndürür `Byte`s.|  
 |[max_length](#max_length)|Dış maksimum sayısını döndürür `Byte`s bir dahili üretmek için gerekli `CharType`.|  
@@ -145,7 +148,7 @@ class codecvt : public locale::facet, codecvt_base;
   
  **Namespace:** std  
   
-##  <a name="always_noconv"></a>codecvt::always_noconv  
+##  <a name="always_noconv"></a>  codecvt::always_noconv  
  Bir dönüştürme yapılıp yapılmayacağını sınar.  
   
 ```  
@@ -193,7 +196,7 @@ No conversion is needed.
 At least one conversion is required.  
 ```  
   
-##  <a name="codecvt"></a>codecvt::codecvt  
+##  <a name="codecvt"></a>  codecvt::codecvt  
  Dönüşümler işlemek için yerel ayar model hizmet veren sınıfı codecvt nesnelerin Oluşturucusu.  
   
 ```  
@@ -211,11 +214,11 @@ explicit codecvt(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Oluşturucu başlatır, `locale::facet` temel nesnesiyle **yerel ayar::**[modeli](../standard-library/locale-class.md#facet_class)(`_Refs`).  
   
-##  <a name="do_always_noconv"></a>codecvt::do_always_noconv  
+##  <a name="do_always_noconv"></a>  codecvt::do_always_noconv  
  Hiçbir dönüştürme yapılması gerekip gerekmediğini sınamak için çağrılan bir sanal işlev.  
   
 ```  
@@ -230,7 +233,7 @@ virtual bool do_always_noconv() const throw();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [always_noconv](#always_noconv), çağıran `do_always_noconv`.  
   
-##  <a name="do_encoding"></a>codecvt::do_encoding  
+##  <a name="do_encoding"></a>  codecvt::do_encoding  
  Testleri bir sanal işlev kodlamasını **bayt** akışıdır durumu bağımlı olup arasındaki oran **bayt**kullanılan s ve **CharType**üretilen s sabit ve, varsa, o oranı değeri belirler.  
   
 ```  
@@ -249,7 +252,7 @@ virtual int do_encoding() const throw();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [kodlama](#encoding), çağıran `do_encoding`.  
   
-##  <a name="do_in"></a>codecvt::do_in  
+##  <a name="do_in"></a>  codecvt::do_in  
  Bir sanal işlev adlı dış bir dizi dönüştürmek için **bayt**bir dizi iç s **CharType**s.  
   
 ```  
@@ -290,19 +293,19 @@ virtual result do_in(
   
 - **codecvt_base::Error** kaynak sırası hatalı olması durumunda oluşturulmuş.  
   
-- `codecvt_base::noconv`hiçbir dönüştürme işlevi uyguluyorsa.  
+- `codecvt_base::noconv` hiçbir dönüştürme işlevi uyguluyorsa.  
   
 - **codecvt_base::ok** dönüştürme başarılı olursa.  
   
 - **codecvt_base::partial** kaynak yetersiz olması veya hedef dönüştürme işleminin başarılı olması için yeterince büyük değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `_State`Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev depolanan değeri başarılı bir dönüştürme geçerli durumunu yansıtacak şekilde değiştirir. Saklı değerini, aksi takdirde belirtilmeyen olur.  
+ `_State` Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev depolanan değeri başarılı bir dönüştürme geçerli durumunu yansıtacak şekilde değiştirir. Saklı değerini, aksi takdirde belirtilmeyen olur.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [içinde](#in), çağıran `do_in`.  
   
-##  <a name="do_length"></a>codecvt::do_length  
+##  <a name="do_length"></a>  codecvt::do_length  
  Belirleyen sanal işlev kaç **bayt**dış belirli bir dizi s'den **bayt**s ürettiği iç verilen sayıdan fazla **CharType**s ve getirir sayısı **bayt**s.  
   
 ```  
@@ -339,7 +342,7 @@ virtual int do_length(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [uzunluğu](#length), çağıran **do_length**.  
   
-##  <a name="do_max_length"></a>codecvt::do_max_length  
+##  <a name="do_max_length"></a>  codecvt::do_max_length  
  Dış üst sınırını döndüren bir sanal işlev **bayt**s bir dahili üretmek için gerekli **CharType**.  
   
 ```  
@@ -355,7 +358,7 @@ virtual int do_max_length() const throw();
 ### <a name="example"></a>Örnek  
   Örneğin bkz [max_length](#max_length), çağıran `do_max_length`.  
   
-##  <a name="do_out"></a>codecvt::do_out  
+##  <a name="do_out"></a>  codecvt::do_out  
  Bir sanal işlev olarak adlandırılan bir dizi iç dönüştürmek için **CharType**harici bir dizi s **bayt**s.  
   
 ```  
@@ -396,19 +399,19 @@ virtual result do_out(
   
 - **codecvt_base::Error** kaynak sırası hatalı olması durumunda oluşturulmuş.  
   
-- `codecvt_base::noconv`hiçbir dönüştürme işlevi uyguluyorsa.  
+- `codecvt_base::noconv` hiçbir dönüştürme işlevi uyguluyorsa.  
   
 - **codecvt_base::ok** dönüştürme başarılı olursa.  
   
 - **codecvt_base::partial** kaynak yetersiz olması veya hedef dönüştürme işleminin başarılı olması için yeterince büyük değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `_State`Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev depolanan değeri başarılı bir dönüştürme geçerli durumunu yansıtacak şekilde değiştirir. Saklı değerini, aksi takdirde belirtilmeyen olur.  
+ `_State` Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev depolanan değeri başarılı bir dönüştürme geçerli durumunu yansıtacak şekilde değiştirir. Saklı değerini, aksi takdirde belirtilmeyen olur.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [çıkışı](#out), çağıran `do_out`.  
   
-##  <a name="do_unshift"></a>codecvt::do_unshift  
+##  <a name="do_unshift"></a>  codecvt::do_unshift  
  Bir sanal işlev adlı sağlamak için **bayt**durumu bağımlı dönüştürmede bir dizi son karakter tamamlamak için gereken s **bayt**s.  
   
 ```  
@@ -437,7 +440,7 @@ virtual result do_unshift(
   
 - **codecvt_base::Error** , _ *durumu* geçersiz bir durum temsil eder  
   
-- `codecvt_base::noconv`işlev dönüştürme gerçekleştirirse  
+- `codecvt_base::noconv` işlev dönüştürme gerçekleştirirse  
   
 - **codecvt_base::ok** dönüştürme başarılı olursa  
   
@@ -451,7 +454,7 @@ virtual result do_unshift(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [unshift](#unshift), çağıran `do_unshift`.  
   
-##  <a name="encoding"></a>codecvt::Encoding  
+##  <a name="encoding"></a>  codecvt::Encoding  
  Varsa testleri kodlamasını **bayt** akışıdır durumu bağımlı olup arasındaki oran **bayt**kullanılan s ve **CharType**üretilen s sabittir ve, varsa, belirler Bu oranı değeri.  
   
 ```  
@@ -499,7 +502,7 @@ int main( )
 1  
 ```  
   
-##  <a name="extern_type"></a>codecvt::extern_type  
+##  <a name="extern_type"></a>  codecvt::extern_type  
  Dış temsiller için kullanılan karakter türü.  
   
 ```  
@@ -509,7 +512,7 @@ typedef Byte extern_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **bayt**.  
   
-##  <a name="in"></a>codecvt::in  
+##  <a name="in"></a>  codecvt::in  
  Bir dizi harici temsilini dönüştürür **bayt**bir dizi iç bir temsili s **CharType**s.  
   
 ```  
@@ -550,14 +553,14 @@ result in(
   
 - **codecvt_base::Error** kaynak sırası hatalı olması durumunda oluşturulmuş.  
   
-- `codecvt_base::noconv`hiçbir dönüştürme işlevi uyguluyorsa.  
+- `codecvt_base::noconv` hiçbir dönüştürme işlevi uyguluyorsa.  
   
 - **codecvt_base::ok** dönüştürme başarılı olursa.  
   
 - **codecvt_base::partial** kaynak yetersiz olması veya hedef dönüştürme işleminin başarılı olması için yeterince büyük değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `_State`Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev saklı değerini gerektiğinde başarılı dönüştürme geçerli durumunu yansıtacak biçimde değiştirir. Kısmi dönüştürmeden sonra `_State` dönüştürme yeni karakterler geldiğinde sürdürmek için izin vermek amacıyla ayarlamanız gerekir.  
+ `_State` Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev saklı değerini gerektiğinde başarılı dönüştürme geçerli durumunu yansıtacak biçimde değiştirir. Kısmi dönüştürmeden sonra `_State` dönüştürme yeni karakterler geldiğinde sürdürmek için izin vermek amacıyla ayarlamanız gerekir.  
   
  Üye işlevi döndürür [do_in](#do_in)( `_State`, _ *First1, last1, next1, First2, _Llast2, next2*).  
   
@@ -598,7 +601,7 @@ It worked! The converted string is:
  [This is the string to be converted!]  
 ```  
   
-##  <a name="intern_type"></a>codecvt::intern_type  
+##  <a name="intern_type"></a>  codecvt::intern_type  
  İç temsiller için kullanılan karakter türü.  
   
 ```  
@@ -608,7 +611,7 @@ typedef CharType intern_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="length"></a>codecvt::length  
+##  <a name="length"></a>  codecvt::length  
  Belirler kaç **bayt**dış belirli bir dizi s'den **bayt**s ürettiği iç verilen sayıdan fazla **CharType**s ve o sayısınıdöndürür**Bayt**s.  
   
 ```  
@@ -667,7 +670,7 @@ int main( )
 The length of the string is: 50.  
 ```  
   
-##  <a name="max_length"></a>codecvt::max_length  
+##  <a name="max_length"></a>  codecvt::max_length  
  Dış maksimum sayısını döndürür **bayt**s bir dahili üretmek için gerekli **CharType**.  
   
 ```  
@@ -703,7 +706,7 @@ int main( )
 1  
 ```  
   
-##  <a name="out"></a>codecvt::out  
+##  <a name="out"></a>  codecvt::out  
  Bir dizi iç dönüştürür **CharType**harici bir dizi s **bayt**s.  
   
 ```  
@@ -782,7 +785,7 @@ It worked: The converted string is:
  [This is the wchar_t string to be converted.]  
 ```  
   
-##  <a name="state_type"></a>codecvt::state_type  
+##  <a name="state_type"></a>  codecvt::state_type  
  İç ve dış temsiller arasındaki dönüştürmeler sırasında ara durumları temsil etmek için kullanılan bir karakter türü.  
   
 ```  
@@ -792,7 +795,7 @@ typedef StateType state_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **StateType**.  
   
-##  <a name="unshift"></a>codecvt::unshift  
+##  <a name="unshift"></a>  codecvt::unshift  
  Sağlar **bayt**durumu bağımlı dönüştürmede bir dizi son karakter tamamlamak için gereken s **bayt**s.  
   
 ```  
@@ -821,7 +824,7 @@ result unshift(
   
 - **codecvt_base::Error** durumu geçersiz bir durum temsil ediyorsa.  
   
-- `codecvt_base::noconv`hiçbir dönüştürme işlevi uyguluyorsa.  
+- `codecvt_base::noconv` hiçbir dönüştürme işlevi uyguluyorsa.  
   
 - **codecvt_base::ok** dönüştürme başarılı olursa.  
   
@@ -830,7 +833,7 @@ result unshift(
 ### <a name="remarks"></a>Açıklamalar  
  Korumalı sanal üye fonksiyonu source öğesi değiştirmeye çalıştığında **CharType**(0) içinde depolayan bir hedef dizisine [ `first2`, `last2`), sonlandırma öğesi dışında **bayt** (0). Her zaman depolar `next2` hedef sırası ilk değiştirilmemiş öğe için bir işaretçi.  
   
- `_State`Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev saklı değerini gerektiğinde başarılı dönüştürme geçerli durumunu yansıtacak biçimde değiştirir. Genellikle, kaynak öğenin dönüştürme **CharType**(0) geçerli durumu ilk dönüştürme durumda bırakır.  
+ `_State` Yeni bir kaynak sırası ilk dönüştürme durumunu başında temsil etmesi gerekir. İşlev saklı değerini gerektiğinde başarılı dönüştürme geçerli durumunu yansıtacak biçimde değiştirir. Genellikle, kaynak öğenin dönüştürme **CharType**(0) geçerli durumu ilk dönüştürme durumda bırakır.  
   
  Üye işlevi döndürür [do_unshift](#do_unshift)( `_State`, `first2`, `last2`, `next2` ).  
   

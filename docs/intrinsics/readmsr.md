@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __readmsr
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __readmsr
+dev_langs:
+- C++
 helpviewer_keywords:
 - Read Model Specific Register
 - rdmsr instruction
 - __readmsr intrinsic
 ms.assetid: 7ab1f8e8-72cb-4ce4-817d-3e728a3c9716
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ec257195fafc6a63f6ac3cdc0b143643ae3ea9fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 24720a6a11809dfb47d8fd10a2f0efa4c2aa73ab
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="readmsr"></a>__readmsr
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturur `rdmsr` tarafından belirtilen modele özgü kaydı okur yönerge `register` ve değerini döndürür.  
   
@@ -39,7 +43,7 @@ __int64 __readmsr(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`register`  
+ [in] `register`  
  Okunacak modeli belirli kaydedin.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -49,7 +53,7 @@ __int64 __readmsr(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__readmsr`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__readmsr`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

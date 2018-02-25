@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::is_trivially_default_constructible
-dev_langs: C++
-helpviewer_keywords: is_trivially_default_constructible
+ms.topic: reference
+f1_keywords:
+- type_traits/std::is_trivially_default_constructible
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_trivially_default_constructible
 ms.assetid: 653ecd73-909f-4dd8-b95a-d1164d1c2da4
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6b936e6cfa3557591a5be9ec2cafda36920039c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dd0b63b1f088eadf2ba2a253083d0f2878c2b751
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="istriviallydefaultconstructible-class"></a>is_trivially_default_constructible Sınıfı
 Testleri Önemsiz varsayılan oluşturucu türüne sahip.  

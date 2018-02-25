@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <new>
-dev_langs: C++
-helpviewer_keywords: new header
+ms.topic: reference
+f1_keywords:
+- <new>
+dev_langs:
+- C++
+helpviewer_keywords:
+- new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 263c6ec455c55492425617d2ffee499655a727dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6f957322b385fc0156c25dede748540cec147375
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 Birkaç türler ve İşlevler, Denetim ayırma ve depolama program denetimindeki boşaltma tanımlar. Ayrıca, Depolama Yönetimi hatalarını raporlama bileşenleri tanımlar.  

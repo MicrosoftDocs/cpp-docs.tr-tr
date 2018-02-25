@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <set>
-dev_langs: C++
-helpviewer_keywords: set header
+ms.topic: reference
+f1_keywords:
+- <set>
+dev_langs:
+- C++
+helpviewer_keywords:
+- set header
 ms.assetid: 43cb1ab2-6383-48cf-8bdc-2b96d7203596
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 16338888d64155ddeab188159030ac060ebb2b17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 83a933c889ad89ed7b5361217608303a9b42f500
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltsetgt"></a>&lt;set&gt;
 Kapsayıcı şablon sınıfları kümesi ve multiset ve bunların destekleyen şablonları tanımlar.  
@@ -49,7 +54,7 @@ Kapsayıcı şablon sınıfları kümesi ve multiset ve bunların destekleyen ş
   
 |Kümesi sürümü|Çok kümeli sürümü|Açıklama|  
 |-----------------|----------------------|-----------------|  
-|[değiştirme](../standard-library/set-functions.md#swap)|[Swap (multiset)](../standard-library/set-functions.md#swap_multiset)|İki kümeleri veya multisets öğelerini değiş tokuş eder.|  
+|[Değiştirme](../standard-library/set-functions.md#swap)|[Swap (multiset)](../standard-library/set-functions.md#swap_multiset)|İki kümeleri veya multisets öğelerini değiş tokuş eder.|  
   
 ### <a name="classes"></a>Sınıflar  
   

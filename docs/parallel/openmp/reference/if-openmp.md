@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: if
-dev_langs: C++
-helpviewer_keywords: if OpenMP clause
+ms.topic: reference
+f1_keywords:
+- if
+dev_langs:
+- C++
+helpviewer_keywords:
+- if OpenMP clause
 ms.assetid: db5940b6-2414-4bf8-934d-3edd8393c0f8
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 81952612a80ac74cd4bfca62a1b2d62c910cb8f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f878a04a7db2243109d034ad93496e860ab1e3c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="if-openmp"></a>if (OpenMP)
 Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.  
@@ -38,13 +43,13 @@ if(expression)
  (Sıfır), true olarak değerlendirilirse, paralel olarak yürütmek için paralel bölgede kod neden bir tamsayı ifade. İfade (sıfır) false hesaplanırsa paralel bölge (tek bir iş parçacığı tarafından) seri olarak yürütülür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `if`Aşağıdaki yönergeleri için geçerlidir:  
+ `if` Aşağıdaki yönergeleri için geçerlidir:  
   
 -   [parallel](../../../parallel/openmp/reference/parallel.md)  
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
   
  Daha fazla bilgi için bkz: [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
   

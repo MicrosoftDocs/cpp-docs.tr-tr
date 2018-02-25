@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::scheduler_ptr
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdb47301f890cc96d21bf797444c44b48da3761b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 257dcae6df4deb0a52f7dee4db98adba2b2b4f29
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr yapısı
 Bir işaretçi bir zamanlayıcı temsil eder. Bu sınıf izin vermek için mevcut ham işaretçi kullanarak shared_ptr veya yalnızca düz başvurusu kullanarak paylaşılan bir yaşam süresi'nin belirtimine.  
@@ -64,7 +67,7 @@ struct scheduler_ptr;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="get"></a>scheduler_ptr::GET yöntemi  
+##  <a name="get"></a>  scheduler_ptr::GET yöntemi  
  Zamanlayıcı'ham işaretçi döndürür  
   
 ```
@@ -73,7 +76,7 @@ scheduler_interface* get() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="operator_bool"></a>scheduler_ptr::operator bool   
+##  <a name="operator_bool"></a>  scheduler_ptr::operator bool   
  Zamanlayıcı işaretçisi null olmayan olup olmadığını sınamak  
   
 ''' işleci bool() const;
@@ -83,7 +86,7 @@ scheduler_interface* get() const;
  Behave like a pointer  
   
 ```
-scheduler_interface * işleci () const ->;
+scheduler_interface* operator->() const;
 ```  
   
 ### Return Value  
@@ -92,7 +95,7 @@ scheduler_interface * işleci () const ->;
  Creates a scheduler pointer from shared_ptr to scheduler  
   
 ```
-Açık scheduler_ptr (std::shared_ptr < scheduler_interface > Zamanlayıcı);
+explicit scheduler_ptr(std::shared_ptr<scheduler_interface> scheduler);
 
 Açık scheduler_ptr (_In_opt_ scheduler_interface * pScheduler);
 ```  

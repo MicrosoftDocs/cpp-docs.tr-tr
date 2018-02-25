@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - critical_section
 - CONCRT/concurrency::critical_section
@@ -17,19 +18,22 @@ f1_keywords:
 - CONCRT/concurrency::critical_section::try_lock
 - CONCRT/concurrency::critical_section::try_lock_for
 - CONCRT/concurrency::critical_section::unlock
-dev_langs: C++
-helpviewer_keywords: critical_section class
+dev_langs:
+- C++
+helpviewer_keywords:
+- critical_section class
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5421cf47214d4ceeb7f8388835cb7a1cc57110ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c2b5bd48039cdf2cc477035abd2904387e194ee2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="criticalsection-class"></a>critical_section Sınıfı
 Eşzamanlılık Çalışma zamanı açıkça farkındadır yeniden girme olmayan mutex.  
@@ -59,7 +63,7 @@ class critical_section;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[critical_section](#ctor)|Yeni kritik bir bölüm oluşturur.|  
-|[~ critical_section yok Edicisi](#dtor)|Önemli bir bölümü yok eder.|  
+|[~critical_section Destructor](#dtor)|Önemli bir bölümü yok eder.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -82,7 +86,7 @@ class critical_section;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>critical_section 
+##  <a name="ctor"></a> critical_section 
 
  Yeni kritik bir bölüm oluşturur.  
   
@@ -90,7 +94,7 @@ class critical_section;
 critical_section();
 ```  
   
-##  <a name="dtor"></a>~ critical_section 
+##  <a name="dtor"></a> ~ critical_section 
 
  Önemli bir bölümü yok eder.  
   
@@ -101,7 +105,7 @@ critical_section();
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi çalıştığında kilidi artık tutulan beklenir. Kilidiyle destruct için önemli bir bölümü izin verme hala sonuçları tanımsız davranışını tutulur.  
   
-##  <a name="lock"></a>kilitleme 
+##  <a name="lock"></a> kilitleme 
 
  Bu kritik bölüm edinir.  
   
@@ -114,7 +118,7 @@ void lock();
   
  Kilit çağıran bağlamını tarafından zaten tutulursa bir [improper_lock](improper-lock-class.md) özel durum.  
   
-##  <a name="native_handle"></a>native_handle 
+##  <a name="native_handle"></a> native_handle 
 
  Varsa bir platform özel yerel tanıtıcı döndürür.  
   
@@ -128,14 +132,14 @@ native_handle_type native_handle();
 ### <a name="remarks"></a>Açıklamalar  
  A `critical_section` nesne platform belirli yerel işleyici Windows işletim sistemi ile ilişkili değil. Yöntem yalnızca nesnesine bir başvuru döndürür.  
   
-##  <a name="critical_section__scoped_lock_class"></a>critical_section::scoped_lock sınıfı  
+##  <a name="critical_section__scoped_lock_class">critical_section::scoped_lock sınıfı</a>  
  Bir özel durum güvenli RAII için sarmalayıcı bir `critical_section` nesnesi.  
   
 ```
 class scoped_lock;
 ```  
   
-##  <a name="critical_section__scoped_lock_ctor"></a>scoped_lock::scoped_lock 
+##  <a name="critical_section__scoped_lock_ctor"></a> scoped_lock::scoped_lock 
 
  Oluşturan bir `scoped_lock` nesne ve edinir `critical_section` nesnesi geçirildi `_Critical_section` parametresi. Kritik bölüm başka bir iş parçacığı tarafından tutulan bu çağrıyı engeller.  
   
@@ -147,7 +151,7 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
  `_Critical_section`  
  Kilitlemek için kritik bölüm.  
   
-##  <a name="critical_section__scoped_lock_dtor"></a>scoped_lock:: ~ scoped_lock 
+##  <a name="critical_section__scoped_lock_dtor"></a> scoped_lock:: ~ scoped_lock 
 
  Bozar bir `scoped_lock` nesne ve kurucusunda sağlanan kritik bölüm serbest bırakır.  
   
@@ -155,7 +159,7 @@ explicit _CRTIMP scoped_lock(critical_section& _Critical_section);
 ~scoped_lock();
 ```  
   
-##  <a name="try_lock"></a>try_lock 
+##  <a name="try_lock"></a> try_lock 
 
  Engellenmeden kilidi dener.  
   
@@ -166,7 +170,7 @@ bool try_lock();
 ### <a name="return-value"></a>Dönüş Değeri  
  Kilit aldıysanız değeri `true`; Aksi halde değer `false`.  
   
-##  <a name="try_lock_for"></a>try_lock_for 
+##  <a name="try_lock_for"></a> try_lock_for 
 
  Belirli bir milisaniye sayısı için engellenmeden kilidi dener.  
   
@@ -181,7 +185,7 @@ bool try_lock_for(unsigned int _Timeout);
 ### <a name="return-value"></a>Dönüş Değeri  
  Kilit aldıysanız değeri `true`; Aksi halde değer `false`.  
   
-##  <a name="unlock"></a>kilidini aç 
+##  <a name="unlock">kilidini aç</a> 
 
  Kritik bölüm kilidini açar.  
   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::aligned_union
-dev_langs: C++
-helpviewer_keywords: aligned_union
+ms.topic: reference
+f1_keywords:
+- type_traits/std::aligned_union
+dev_langs:
+- C++
+helpviewer_keywords:
+- aligned_union
 ms.assetid: 9931a44d-3a67-4f29-a0f6-d47a7cf560ac
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d217ee9687320e89f4c63469ab0dfff48e633ce9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 10f729463bca1325617831c3d558048416e105e2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="alignedunion-class"></a>aligned_union Sınıfı
 Bir birleşim türü ve gerekli boyutu depolamak için bir POD türü büyüklükte ve uygun hizalanmış sağlar.  
@@ -88,5 +93,5 @@ value of u->i is 1065353216
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)   
+ [<type_traits>](../standard-library/type-traits.md)   
  [alignment_of Sınıfı](../standard-library/alignment-of-class.md)

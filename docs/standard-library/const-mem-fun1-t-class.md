@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xfunctional/std::const_mem_fun1_t
-dev_langs: C++
-helpviewer_keywords: const_mem_fun1_t class
+ms.topic: reference
+f1_keywords:
+- xfunctional/std::const_mem_fun1_t
+dev_langs:
+- C++
+helpviewer_keywords:
+- const_mem_fun1_t class
 ms.assetid: 250fac30-9663-4133-9051-6303f76ea259
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 788f49d3aa4cefd46e5ea97517a02a35a9747403
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 187d564f83e63f712ad2aed88679607c212deafe
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="constmemfun1t-class"></a>const_mem_fun1_t Sınıfı
 Sağlayan bir bağdaştırıcı sınıfı bir **const** bir işaretçi bağımsız değişkeni ile hazırlarken ikili işlevi nesnesi olarak çağrılacak tek bir bağımsız değişken üye işlevi.  
@@ -51,7 +56,7 @@ class const_mem_fun1_t
  Uyarlanabilir bir ikili işlevi.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Şablon sınıfı, bir kopyasını depolar `_Pm`, sınıfının üye işlevi için bir işaretçi olmalıdır **türü**, bir özel üye nesnesinde. Üye işlevini tanımlar `operator()` döndürme olarak ( **_Pleft** -> \* *Pm) (***sağ**) **const**.  
+ Şablon sınıfı, bir kopyasını depolar `_Pm`, sınıfının üye işlevi için bir işaretçi olmalıdır **türü**, bir özel üye nesnesinde. Üye işlevini tanımlar `operator()` döndürme olarak ( **_Pleft** -> \* * Pm) (***sağ**) **const**.  
   
 ## <a name="example"></a>Örnek  
  Oluşturucusunun `const_mem_fun1_t` genellikle kullanılmaz doğrudan; yardımcı işlevini `mem_fun` üye işlevleri uyarlamak için kullanılır. Bkz: [mem_fun](../standard-library/functional-functions.md#mem_fun) üye fonksiyonu bağdaştırıcıları kullanma örneği.  

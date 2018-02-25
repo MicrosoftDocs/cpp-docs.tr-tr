@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::system_clock
 - chrono/std::chrono::system_clock::from_time_t
@@ -14,18 +15,20 @@ f1_keywords:
 - chrono/std::chrono::system_clock::to_time_t
 - chrono/std::chrono::system_clock::is_monotonic Constant
 - chrono/std::chrono::system_clock::is_steady Constant
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: a97bd46e-267a-4836-9f7d-af1f664e99ae
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 603415b438578258e982f0934161d2de436e2a3f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 757094f61d7f58de4f51da46b28dc90105968a99
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="systemclock-structure"></a>system_clock Yapısı
 Temsil eden bir *saat türü* sistem gerçek zamanlı saati dayanır.  
@@ -68,7 +71,7 @@ struct system_clock;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[system_clock::is_monotonic sabiti](#is_monotonic_constant)|Saat türü monoton olup olmadığını belirtir.|  
+|[system_clock::is_monotonic Constant](#is_monotonic_constant)|Saat türü monoton olup olmadığını belirtir.|  
 |[system_clock::is_steady sabiti](#is_steady_constant)|Saat türü sürekli olup olmadığını belirtir.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -76,7 +79,7 @@ struct system_clock;
   
  **Namespace:** std::chrono  
   
-##  <a name="from_time_t"></a>system_clock::from_time_t
+##  <a name="from_time_t"></a>  system_clock::from_time_t
  Döndüren statik yöntem bir [time_point](../standard-library/time-point-class.md) en yakından tarafından temsil edilen zaman yakın `Tm`.  
   
 ```  
@@ -85,9 +88,9 @@ static time_point from_time_t(time_t Tm) noexcept;
   
 ### <a name="parameters"></a>Parametreler  
  `Tm`  
- A [time_t](../c-runtime-library/standard-types.md) nesnesi.  
+ A [time_t](../c-runtime-library/standard-types.md) object.  
   
-##  <a name="is_monotonic_constant"></a>system_clock::is_monotonic sabiti  
+##  <a name="is_monotonic_constant"></a>  system_clock::is_monotonic sabiti  
  Saat türü monoton olup olmadığını belirtir, statik değer.  
   
 ```  
@@ -100,7 +103,7 @@ static const bool is_monotonic = false;
 ### <a name="remarks"></a>Açıklamalar  
  Bir saattir *monoton* durumunda ilk çağrı tarafından döndürülen değer `now()` her zaman bir sonraki çağrı tarafından döndürülen değer küçük veya buna eşit olan `now()`.  
   
-##  <a name="is_steady_constant"></a>system_clock::is_steady sabiti  
+##  <a name="is_steady_constant">system_clock::is_steady sabiti</a>  
  Saat türü olup olmadığını belirtir statik değer *sürekli*.  
   
 ```  
@@ -113,7 +116,7 @@ static const bool is_steady = false;
 ### <a name="remarks"></a>Açıklamalar  
  Bir saattir *sürekli* , [monoton](#is_monotonic_constant) ve saat saat dilimleri arasında sabit ise.  
   
-##  <a name="now"></a>system_clock::Now
+##  <a name="now"></a>  system_clock::Now
  Geçerli saati döndürür statik yöntem.  
   
 ```  
@@ -123,7 +126,7 @@ static time_point now() noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  A [time_point](../standard-library/time-point-class.md) geçerli saati temsil eden nesne.  
   
-##  <a name="to_time_t"></a>system_clock::to_time_t
+##  <a name="to_time_t"></a>  system_clock::to_time_t
  Döndüren statik yöntem bir [time_t](../c-runtime-library/standard-types.md) en yakından tarafından temsil edilen zaman yakın `Time`.  
   
 ```  
@@ -132,7 +135,7 @@ static time_t to_time_t(const time_point& Time) noexcept;
   
 ### <a name="parameters"></a>Parametreler  
  `Time`  
- A [time_point](../standard-library/time-point-class.md) nesnesi.  
+ A [time_point](../standard-library/time-point-class.md) object.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - structured_task_group
 - PPL/concurrency::structured_task_group
@@ -16,19 +17,22 @@ f1_keywords:
 - PPL/concurrency::structured_task_group::run
 - PPL/concurrency::structured_task_group::run_and_wait
 - PPL/concurrency::structured_task_group::wait
-dev_langs: C++
-helpviewer_keywords: structured_task_group class
+dev_langs:
+- C++
+helpviewer_keywords:
+- structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ae2e4648e94d05edc3ec787232bab7f1db8aea90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1f8d2b9cdc71b6e8a7a0fe9e3bf3d3d3306af1da
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="structuredtaskgroup-class"></a>structured_task_group Sınıfı
 `structured_task_group` Sınıfı paralel iş yüksek oranda yapılandırılmış koleksiyonunu temsil eder. Tek tek Paralel Görevler sıraya bir `structured_task_group` kullanarak `task_handle` nesnelerini ve tamamlanmalarını bekleyin veya yürütme başlamıştır olmayan herhangi bir görevi iptal edilecek yürütme tamamlandı önce görev grubu iptal.  
@@ -54,7 +58,7 @@ class structured_task_group;
 |----------|-----------------|  
 |[İptal](#cancel)|Alt ağaç görev grup kökü iş iptal edilmesi girişimi en iyi çaba yapar. Görev grubu olarak zamanlanan her görev geçişli mümkünse iptal.|  
 |[is_canceling](#is_canceling)|Arayan olsun veya olmasın görevi şu anda iptal ortasında grubudur bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (gibi kesinlikle döndürmek için bu yöntemi niteleyen rağmen `true`). Bu durumda olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu yukarı iş ağacında iptal edildi. Bu where gibi durumlarda çalışma zamanı iptal bu akar önceden belirleyebilirsiniz `structured_task_group` nesnesi `true` de döndürülür.|  
-|[çalıştırma](#run)|Fazla Yüklendi. Üzerinde bir görev zamanlar `structured_task_group` nesnesi. Arayan ömrü yönetir `task_handle` nesnesi geçirildi `_Task_handle` parametresi. Parametresi alan sürüm `_Placement` görev o parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.|  
+|[run](#run)|Fazla Yüklendi. Üzerinde bir görev zamanlar `structured_task_group` nesnesi. Arayan ömrü yönetir `task_handle` nesnesi geçirildi `_Task_handle` parametresi. Parametresi alan sürüm `_Placement` görev o parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.|  
 |[run_and_wait](#run_and_wait)|Fazla Yüklendi. Satır içi Yardımı ile arama bağlamda çalıştırılmak üzere bir görev zamanlar `structured_task_group` tam iptal desteği için nesne. Varsa bir `task_handle` nesnesini parametre olarak geçirilen `run_and_wait`, çağıran ömrü yönetilmesinden sorumludur `task_handle` nesnesi. İşlev, ardından tüm çalıştığı bekler `structured_task_group` nesne tamamlandı ya da iptal edildi.|  
 |[bekleme](#wait)|Tüm çalıştığı bekler `structured_task_group` tamamlanan veya iptal edildi.|  
   
@@ -79,7 +83,7 @@ class structured_task_group;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="cancel"></a>İptal 
+##  <a name="cancel">İptal</a> 
 
  Alt ağaç görev grup kökü iş iptal edilmesi girişimi en iyi çaba yapar. Görev grubu olarak zamanlanan her görev geçişli mümkünse iptal.  
   
@@ -90,7 +94,7 @@ void cancel();
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
-##  <a name="is_canceling"></a>is_canceling 
+##  <a name="is_canceling">is_canceling</a> 
 
  Arayan olsun veya olmasın görevi şu anda iptal ortasında grubudur bildirir. Bu, gelmeyebilir `cancel` yöntemi çağrıldı `structured_task_group` nesne (gibi kesinlikle döndürmek için bu yöntemi niteleyen rağmen `true`). Bu durumda olabilir, `structured_task_group` nesne satır içi yürütme ve başka bir görev grubu yukarı iş ağacında iptal edildi. Bu where gibi durumlarda çalışma zamanı iptal bu akar önceden belirleyebilirsiniz `structured_task_group` nesnesi `true` de döndürülür.  
   
@@ -104,7 +108,7 @@ bool is_canceling();
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [iptal](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).  
   
-##  <a name="run"></a>çalıştırma 
+##  <a name="run"></a> çalıştırma 
 
  Üzerinde bir görev zamanlar `structured_task_group` nesnesi. Arayan ömrü yönetir `task_handle` nesnesi geçirildi `_Task_handle` parametresi. Parametresi alan sürüm `_Placement` görev o parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.  
   
@@ -136,7 +140,7 @@ void run(
   
  Oluşturur bir [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) görev işlemek, özel durum tarafından verilen `_Task_handle` parametresi zaten zamanlandı görev grup nesnesi üzerine `run` yöntemi ve hiçbir müdahalede bulunan çağrısına açıldı ya da `wait` veya `run_and_wait` bu görev grubunda yöntemi.  
   
-##  <a name="run_and_wait"></a>run_and_wait 
+##  <a name="run_and_wait"></a> run_and_wait 
 
  Satır içi Yardımı ile arama bağlamda çalıştırılmak üzere bir görev zamanlar `structured_task_group` tam iptal desteği için nesne. Varsa bir `task_handle` nesnesini parametre olarak geçirilen `run_and_wait`, çağıran ömrü yönetilmesinden sorumludur `task_handle` nesnesi. İşlev, ardından tüm çalıştığı bekler `structured_task_group` nesne tamamlandı ya da iptal edildi.  
   
@@ -170,7 +174,7 @@ task_group_status run_and_wait(const _Function& _Func);
   
  Yürütme özel durumlu olmayan yolunda ya da bu yöntemi çağırmak için bir zorunluluğuna sahip veya `wait` yöntemi yıkıcısı önce `structured_task_group` yürütür.  
   
-##  <a name="ctor"></a>structured_task_group 
+##  <a name="ctor"></a> structured_task_group 
 
  Yeni bir oluşturur `structured_task_group` nesnesi.  
   
@@ -187,7 +191,7 @@ structured_task_group(cancellation_token _CancellationToken);
 ### <a name="remarks"></a>Açıklamalar  
  Bir iptal belirteci alan oluşturucu oluşturur bir `structured_task_group` , iptal edilecek belirteçle ilişkili kaynak iptal ettiğinizde. Bir açık iptal belirteci sağlama örtük bir iptal belirteci yok ya da farklı bir belirteci ile üst gruptan katılan bu yapılandırılmış görev grubunun yalıtır.  
   
-##  <a name="dtor"></a>~ structured_task_group 
+##  <a name="dtor"></a> ~ structured_task_group 
 
  Bozar bir `structured_task_group` nesnesi. Ya da çağrı beklenir `wait` veya `run_and_wait` yıkıcı yürütmeden önce nesnesi üzerinde yöntemi yıkıcı yürütülmekte olduğu sürece sonucu olarak yığın bir özel durum nedeniyle geriye doğru izleme.  
   
@@ -198,7 +202,7 @@ structured_task_group(cancellation_token _CancellationToken);
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi normal yürütme (bir özel durum nedeniyle yığını geriye doğru izleme gibi değil) ve, sonuç olarak çalışıyorsa `wait` ya da `run_and_wait` yöntemleri adlı, yıkıcı atabilir bir [missing_wait](missing-wait-class.md) özel durum.  
   
-##  <a name="wait"></a>bekleme 
+##  <a name="wait">bekleme</a> 
 
  Tüm çalıştığı bekler `structured_task_group` tamamlanan veya iptal edildi.  
   

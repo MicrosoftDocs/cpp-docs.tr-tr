@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - tiled_extent
 - AMP/tiled_extent
@@ -18,18 +19,20 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_dim1
 - AMP/Concurrency::tiled_extent::tile_dim2
 - AMP/Concurrency::tiled_extent::tile_extent
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8d2aa225c579eb5d9a1412218a287252c5f076dd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8370dbd381fa7005ea619ddb63b21bd227f68153
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tiledextent-class"></a>tiled_extent Sınıfı
 A `tiled_extent` nesne bir `extent` kapsamı alan bir, iki veya üç boyutlu döşeme subdivides nesne bir ile üç boyut.  
@@ -72,7 +75,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tiled_extent Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tiled_extent` sınıfı.|  
+|[tiled_extent Constructor](#ctor)|Yeni bir örneğini başlatır `tiled_extent` sınıfı.|  
 
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -80,23 +83,23 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[get_tile_extent](#get_tile_extent)|Döndürür bir `extent` değerlerini yakalar nesne `tiled_extent` bağımsız şablon `_Dim0`, `_Dim1`, ve `_Dim2`.|  
-|[paneli](#pad)|Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış yukarı döşeme boyutlara göre tam bölünebilir olmalıdır.|  
+|[pad](#pad)|Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış yukarı döşeme boyutlara göre tam bölünebilir olmalıdır.|  
 |[kesme](#truncate)|Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış aşağı döşeme boyutlara göre tam bölünebilir olmalıdır.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[işleç =](#operator_eq)|Belirtilen içeriğini kopyalar `tiled_index` bunu nesnesine.|  
+|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `tiled_index` bunu nesnesine.|  
 
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tile_dim0 sabiti](#tile_dim0)|En önemli boyutun uzunluğu depolar.|  
-|[tile_dim1 sabiti](#tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
-|[tile_dim2 sabiti](#tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
+|[tile_dim0 Constant](#tile_dim0)|En önemli boyutun uzunluğu depolar.|  
+|[tile_dim1 Constant](#tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
+|[tile_dim2 Constant](#tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
 
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
@@ -115,7 +118,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
  **Namespace:** eşzamanlılık  
 
-## <a name="ctor"></a> tiled_extent Oluşturucusu  
+## <a name="ctor"> </a>  tiled_extent Oluşturucusu  
 Yeni bir örneğini başlatır `tiled_extent` sınıfı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -137,7 +140,7 @@ tiled_extent(
 
   
 
-## <a name="get_tile_extent"></a> get_tile_extent   
+## <a name="get_tile_extent"> </a>  get_tile_extent   
 Döndürür bir `extent` değerlerini yakalar nesne `tiled_extent` bağımsız şablon `_Dim0`, `_Dim1`, ve `_Dim2`.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -150,7 +153,7 @@ Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);
  Bir `extent` bu boyutlarını yakalar nesne `tiled_extent` örneği.  
   
 
-## <a name="pad"></a> paneli   
+## <a name="pad"> </a>  paneli   
 Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış yukarı döşeme boyutlara göre tam bölünebilir olmalıdır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -161,7 +164,7 @@ tiled_extent pad() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni `tiled_extent` nesnesiyle değeri. 
-## <a name="truncate"></a> kesme   
+## <a name="truncate">kesme</a>   
 Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış aşağı döşeme boyutlara göre tam bölünebilir olmalıdır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -173,7 +176,7 @@ tiled_extent truncate() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış aşağı döşeme boyutlara göre tam bölünebilir olmalıdır.  
 
-## <a name="operator_eq"></a> işleç =   
+## <a name="operator_eq"> </a>  işleç =   
 Belirtilen içeriğini kopyalar `tiled_index` bunu nesnesine.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -190,7 +193,7 @@ tiled_extent&  operator= (
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `tiled_index` örneği.  
 
-## <a name="tile_dim0"></a> tile_dim0   
+## <a name="tile_dim0"> </a>  tile_dim0   
 En önemli boyutun uzunluğu depolar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -199,7 +202,7 @@ En önemli boyutun uzunluğu depolar.
 static const int tile_dim0 = _Dim0;  
 ```  
   
-## <a name="tile_dim1"></a> tile_dim1   
+## <a name="tile_dim1"> </a>  tile_dim1   
 Sonraki en önemli boyutun uzunluğu depolar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -207,7 +210,7 @@ Sonraki en önemli boyutun uzunluğu depolar.
 ```  
 static const int tile_dim1 = _Dim1;  
 ```  
-## <a name="tile_dim2"></a> tile_dim2   
+## <a name="tile_dim2"> </a>  tile_dim2   
 En az önemli boyutun uzunluğu depolar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -215,7 +218,7 @@ En az önemli boyutun uzunluğu depolar.
 ```  
 static const int tile_dim2 = _Dim2;  
 ```  
-## <a name="tile_extent"></a> tile_extent   
+## <a name="tile_extent"> </a>  tile_extent   
   Alır bir `extent` değerlerini yakalar nesne `tiled_extent` bağımsız şablon `_Dim0`, `_Dim1`, ve `_Dim2`.  
   
 ### <a name="syntax"></a>Sözdizimi  

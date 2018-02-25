@@ -1,12 +1,13 @@
 ---
-title: "_InterlockedCompareExchangePointer iç işlevler | Microsoft Docs"
+title: _InterlockedCompareExchangePointer Intrinsic Functions | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedCompareExchangePointer_HLERelease
 - _InterlockedCompareExchangePointer_rel
@@ -18,7 +19,8 @@ f1_keywords:
 - _InterlockedCompareExchangePointer_HLEAcquire
 - _InterlockedCompareExchangePointer_acq
 - _InterlockedCompareExchangePointer_nf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - InterlockedCompareExchangePointer_acq intrinsic
 - _InterlockedCompareExchangePointer_rel intrinsic
@@ -31,19 +33,20 @@ helpviewer_keywords:
 - _InterlockedCompareExchangePointer_nf intrinsic
 - _InterlockedCompareExchangePointer_np intrinsic
 ms.assetid: 97fde59d-2bf9-42aa-a0fe-a5b6befdd44b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9228422886c211bb6a7c153abdfd4d48ecca7f19
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a75c25caef43a0f1908cfe326b5b194480c3190c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer iç işlevler
-**Microsoft özel**  
+# <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_InterlockedCompareExchangePointer Intrinsic Functions
+**Microsoft Specific**  
   
  Depolar atomik bir işlem gerçekleştirir `Exchange` içinde adres `Destination` adres `Comparand` ve `Destination` adresi eşit.  
   
@@ -88,13 +91,13 @@ long _InterlockedCompareExchangePointer_rel (
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`Destination`  
+ [içinde out] `Destination`  
  Hedef değeri için bir işaretçi işaretçi. Oturum açma göz ardı edilir.  
   
- [in]`Exchange`  
+ [in] `Exchange`  
  Exchange işaretçi. Oturum açma göz ardı edilir.  
   
- [in]`Comparand`  
+ [in] `Comparand`  
  Hedefe Karşılaştırılacak işaretçi. Oturum açma göz ardı edilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -104,14 +107,14 @@ long _InterlockedCompareExchangePointer_rel (
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedCompareExchangePointer`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedCompareExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM|\<iiintrin.h >|  
-|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_InterlockedCompareExchangePointer`bir atomik karşılaştırması gerçekleştirir `Destination` ele `Comparand` adresi. Varsa `Destination` adresidir eşit `Comparand` adresi `Exchange` adresi tarafından belirtilen adresi depolanır `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.  
+ `_InterlockedCompareExchangePointer` bir atomik karşılaştırması gerçekleştirir `Destination` ele `Comparand` adresi. Varsa `Destination` adresidir eşit `Comparand` adresi `Exchange` adresi tarafından belirtilen adresi depolanır `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.  
   
- `_InterlockedCompareExchangePointer`derleyici iç Win32 desteği sağlar [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) işlevi.  
+ `_InterlockedCompareExchangePointer` derleyici iç Win32 desteği sağlar [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [_InterlockedCompareExchangePointer](http://msdn.microsoft.com/library/ff547863.aspx) işlevi.  
   
  Nasıl kullanılacağını gösteren bir örnek `_InterlockedCompareExchangePointer`, bkz: [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   

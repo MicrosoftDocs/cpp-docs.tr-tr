@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - future/std::async
 - future/std::future_category
@@ -13,7 +13,7 @@ f1_keywords:
 - future/std::make_error_condition
 - future/std::swap
 ms.assetid: 1e3acc1e-736a-42dc-ade2-b2fe69aa96bc
-caps.latest.revision: "11"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::async [C++]
@@ -21,19 +21,19 @@ helpviewer_keywords:
 - std::make_error_code [C++]
 - std::make_error_condition [C++]
 - std::swap [C++]
-ms.openlocfilehash: 6ce0ef5ebc19ed9861c4eeb3dd9b3605ff3383b3
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: d136f972786938e453d5a9116ea198ac2a5d8f46
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltfuturegt-functions"></a>&lt;Gelecekteki&gt; işlevleri
 ||||  
 |-|-|-|  
-|[zaman uyumsuz](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|  
-|[make_error_condition](#make_error_condition)|[değiştirme](#swap)|  
+|[async](#async)|[future_category](#future_category)|[make_error_code](#make_error_code)|  
+|[make_error_condition](#make_error_condition)|[Değiştirme](#swap)|  
   
-##  <a name="async"></a>zaman uyumsuz  
+##  <a name="async"></a>  Zaman uyumsuz  
  Temsil eden bir *zaman uyumsuz sağlayıcısı*.  
   
 ```
@@ -78,14 +78,14 @@ future<typename result_of<Fn(ArgTypes...)>::type>
   
  Sözde işlevi `INVOKE` tanımlanan [ \<işlevsel >](../standard-library/functional.md).  
   
-##  <a name="future_category"></a>future_category  
+##  <a name="future_category">future_category</a>  
  Bir başvuru döndürür [error_category](../standard-library/error-category-class.md) ilişkili hataları belirtir nesne `future` nesneleri.  
   
 ```
 const error_category& future_category() noexcept;
 ```  
   
-##  <a name="make_error_code"></a>make_error_code  
+##  <a name="make_error_code"></a>  make_error_code  
  Oluşturur bir [error_code](../standard-library/error-code-class.md) ile birlikte [error_category](../standard-library/error-category-class.md) belirtir nesne [gelecekteki](../standard-library/future-class.md) hataları.  
   
 ```
@@ -99,7 +99,7 @@ inline error_code make_error_code(future_errc Errno) noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  `error_code(static_cast<int>(Errno), future_category());`  
   
-##  <a name="make_error_condition"></a>make_error_condition  
+##  <a name="make_error_condition"></a>  make_error_condition  
  Oluşturur bir [error_condition](../standard-library/error-condition-class.md) ile birlikte [error_category](../standard-library/error-category-class.md) belirtir nesne [gelecekteki](../standard-library/future-class.md) hataları.  
   
 ```
@@ -113,7 +113,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  `error_condition(static_cast<int>(Errno), future_category());`  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
  Alışverişleri *zaman uyumsuz durum ilişkili* bir `promise` , başka bir nesne.  
   
 ```

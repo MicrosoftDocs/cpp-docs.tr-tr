@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - unsupported_feature
 - AMPRT/unsupported_feature
 - AMPRT/Concurrency::unsupported_feature
-dev_langs: C++
-helpviewer_keywords: unsupported_feature class
+dev_langs:
+- C++
+helpviewer_keywords:
+- unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 967e06e713235e45a018cc32898f3baebdae52d3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e4be595382436f26ed43215c86d3f350532c52af
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature Sınıfı
 Desteklenmeyen bir özellik kullanıldığında oluşan özel durum.  
@@ -40,7 +44,7 @@ class unsupported_feature : public runtime_exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[unsupported_feature Oluşturucusu](#ctor)|Yeni bir örneğini oluşturur `unsupported_feature` özel durum.|  
+|[unsupported_feature Constructor](#ctor)|Yeni bir örneğini oluşturur `unsupported_feature` özel durum.|  
 
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -50,7 +54,7 @@ class unsupported_feature : public runtime_exception;
   
  `unsupported_feature`  
   
-## <a name="unsupported_feature__ctor"></a>unsupported_feature 
+## <a name="unsupported_feature__ctor"></a> unsupported_feature 
 
   Unsupported_feature özel durum yeni bir örneğini oluşturur.  
   

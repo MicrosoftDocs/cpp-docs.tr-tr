@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4a06cd7d4f9e62bb40c24be67eb7b356906b4069
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fcb5794de2e0358e5c17cde5ac8e69fa9e3c08f6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="updating-rowsets"></a>Satır Kümelerini Güncelleştirme
 Bir çok basit bir veritabanı güncelleştirmek veya veri deposuna veri yazmak için bir işlemdir. OLE DB'de güncelleme mekanizması basittir: tüketici uygulamanız bağlı veri üyelerinin değerlerini ayarlar ve ardından bu değerleri satır kümesine yazar; Tüketici sonra sağlayıcının veri deposunu güncelleştirmek ister.  

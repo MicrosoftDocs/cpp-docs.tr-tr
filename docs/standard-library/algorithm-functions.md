@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - algorithm/std::adjacent_find
 - algorithm/std::all_of
@@ -105,9 +105,10 @@ f1_keywords:
 - algorithm/std::count_if
 - algorithm/std::partition_copy
 - algorithm/std::swap
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: c10b0c65-410c-4c83-abf8-8b7f61bba8d0
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -210,47 +211,48 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.workload: cplusplus
-ms.openlocfilehash: 4f19fcbd350ea13004df5298beb95f10661e1f61
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: eb5b068f30703119d0771725a9cb9980a1ca65ea
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 ||||  
 |-|-|-|  
-|[taşıma](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
-|[any_of](#any_of)|[binary_search](#binary_search)|[kopyalama](#copy)|  
+|[move](#alg_move)|[adjacent_find](#adjacent_find)|[all_of](#all_of)|  
+|[any_of](#any_of)|[binary_search](#binary_search)|[Kopyalama](#copy)|  
 |[copy_backward](#copy_backward)|[copy_if](#copy_if)|[copy_n](#copy_n)|  
-|[sayısı](#count)|[count_if](#count_if)|[eşit](#equal)|  
+|[Sayısı](#count)|[count_if](#count_if)|[Eşittir](#equal)|  
 |[equal_range](#equal_range)|[doldurma](#fill)|[fill_n](#fill_n)|  
-|[Bul](#find)|[find_end](#find_end)|[find_first_of](#find_first_of)|  
+|[find](#find)|[find_end](#find_end)|[find_first_of](#find_first_of)|  
 |[find_if](#find_if)|[find_if_not](#find_if_not)|[for_each](#for_each)|  
-|[Oluştur](#generate)|[generate_n](#generate_n)|[içerir](#includes)|  
+|[Oluştur](#generate)|[generate_n](#generate_n)|[İçerir](#includes)|  
 |[inplace_merge](#inplace_merge)|[is_heap](#is_heap)|[is_heap_until](#is_heap_until)|  
 |[is_partitioned](#is_partitioned)|[is_permutation](#is_permutation)|[is_sorted](#is_sorted)|  
 |[is_sorted_until](#is_sorted_until)|[iter_swap](#iter_swap)|[lexicographical_compare](#lexicographical_compare)|  
 |[lower_bound](#lower_bound)|[make_heap](#make_heap)|[max](#max)|  
-|[max_element](#max_element)|[Birleştirme](#merge)|[Min](#min)|  
+|[max_element](#max_element)|[merge](#merge)|[min](#min)|  
 |[min_element](#min_element)|[minmax](#minmax)|[minmax_element](#minmax_element)|  
-|[uyuşmazlığı](#mismatch)|[move_backward](#move_backward)|[next_permutation](#next_permutation)|  
+|[mismatch](#mismatch)|[move_backward](#move_backward)|[next_permutation](#next_permutation)|  
 |[none_of](#none_of)|[nth_element](#nth_element)|[partial_sort](#partial_sort)|  
 |[partial_sort_copy](#partial_sort_copy)|[Bölüm](#partition)|[partition_copy](#partition_copy)|  
 |[partition_point](#partition_point)|[pop_heap](#pop_heap)|[prev_permutation](#prev_permutation)|  
 |[push_heap](#push_heap)|[random_shuffle](#random_shuffle)|[remove](#remove)|  
 |[remove_copy](#remove_copy)|[remove_copy_if](#remove_copy_if)|[remove_if](#remove_if)|  
 |[Değiştir](#replace)|[replace_copy](#replace_copy)|[replace_copy_if](#replace_copy_if)|  
-|[replace_if](#replace_if)|[geriye doğru](#reverse)|[reverse_copy](#reverse_copy)|  
-|[döndürme](#rotate)|[rotate_copy](#rotate_copy)|[Arama](#search)|  
+|[replace_if](#replace_if)|[Ters Çevir](#reverse)|[reverse_copy](#reverse_copy)|  
+|[döndürme](#rotate)|[rotate_copy](#rotate_copy)|[search](#search)|  
 |[search_n](#search_n)|[set_difference](#set_difference)|[set_intersection](#set_intersection)|  
-|[set_symmetric_difference](#set_symmetric_difference)|[set_union](#set_union)|[Sıralama](#sort)|  
+|[set_symmetric_difference](#set_symmetric_difference)|[set_union](#set_union)|[sort](#sort)|  
 |[sort_heap](#sort_heap)|[stable_partition](#stable_partition)|[stable_sort](#stable_sort)|  
-|[karışık](#shuffle)|[değiştirme](#swap)|[swap_ranges](#swap_ranges)|  
-|[dönüştürme](#transform)|[benzersiz](#unique)|[unique_copy](#unique_copy)|  
+|[karışık](#shuffle)|[Değiştirme](#swap)|[swap_ranges](#swap_ranges)|  
+|[transform](#transform)|[Benzersiz](#unique)|[unique_copy](#unique_copy)|  
 |[upper_bound](#upper_bound)|  
   
-##  <a name="adjacent_find"></a>adjacent_find  
+##  <a name="adjacent_find"></a>  adjacent_find  
  Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.  
   
 ```  
@@ -346,7 +348,7 @@ There are two adjacent elements where the second is twice the first.
  They have values of 10 & 20.  
 ```  
   
-##  <a name="all_of"></a>all_of  
+##  <a name="all_of"></a>  all_of  
  Döndürür `true` bir koşul olduğunda verilen aralıktaki her öğede mevcut.  
   
 ```  
@@ -373,7 +375,7 @@ template<class InputIterator, class Predicate>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi döndürür `true` her biri için yalnızca IF `N` aralığında `[0,Last - first)`, koşul `comp(*(_First + N))` olan `true`.  
   
-##  <a name="any_of"></a>any_of  
+##  <a name="any_of"></a>  any_of  
  Döndürür `true` bir koşul olduğunda öğeleri belirtilen aralık içinde en az bir kez mevcut.  
   
 ```  
@@ -402,7 +404,7 @@ template<class InputIterator, class UnaryPredicate>
   
  `[0, last - first)`, koşul `comp(*(first + N))` doğrudur.  
   
-##  <a name="binary_search"></a>binary_search  
+##  <a name="binary_search"></a>  binary_search  
  Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığını ya da bir ikili koşula göre belirtilen anlamda ona eşdeğer bir öğe olup olmadığını sınar.  
   
 ```  
@@ -435,7 +437,7 @@ template<class ForwardIterator,  class Type,  class BinaryPredicate>
  Bir öğe başka bir değerden olduğu algılama tanımlayan kullanıcı tanımlı koşul işlev nesnesi. İkili karşılaştırma iki bağımsız değişken alıp döndüren `true` yerine getirdiğinizde ve `false` uyulmadığını olduğunda.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bir öğenin eşit veya belirtilen değere eşit aralıkta bulunursa; Aksi takdirde `false`.  
+ `true` bir öğenin eşit veya belirtilen değere eşit aralıkta bulunursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Başvurulan sıralanmış kaynak aralığı geçerli olmalıdır; Tüm İşaretçiler dereferenceable olmalıdır ve sıra içinde son konum birinciden erişilebilir olmalıdır artırılamadı tarafından.  
@@ -530,7 +532,7 @@ int main( )
 }   
 ```  
   
-##  <a name="copy"></a>kopyalama  
+##  <a name="copy">Kopyalama</a>  
  Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.  
   
 ```  
@@ -619,7 +621,7 @@ v2 with v1 insert = ( 0 3 6 9 0 10 20 21 24 27 30 )
 v2 with shifted insert = ( 0 3 0 10 20 10 20 21 24 27 30 )  
 ```  
   
-##  <a name="copy_backward"></a>copy_backward  
+##  <a name="copy_backward"></a>  copy_backward  
  Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına geri yönde atar.  
   
 ```  
@@ -650,7 +652,7 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
   
  `copy_backward` Ve [move_backward](../standard-library/algorithm-functions.md#move_backward) algoritmaları hedef aralığın sonuna işaret eden bir yineleyici ile çıkış aralığı belirleme yalnızca C++ Standart Kitaplığı algoritmaları şunlardır.  
   
- Algoritma kaynak öğelerin sırasını son öğesinden başlayarak kopyalar çünkü hedef aralık sağlanan kaynak aralığıyla binebilir `first` kaynak aralığı konumunu hedef aralıkta bulunan değil. `copy_backward`Kaynak ve hedef aralıkları arasında örtüşme olmadıkça öğeleri sağa ancak sola kaydırma için kullanılabilir. Herhangi bir sayıda konumlar sola kaydırma için kullanmak [kopyalama](../standard-library/algorithm-functions.md#copy) algoritması.  
+ Algoritma kaynak öğelerin sırasını son öğesinden başlayarak kopyalar çünkü hedef aralık sağlanan kaynak aralığıyla binebilir `first` kaynak aralığı konumunu hedef aralıkta bulunan değil. `copy_backward` Kaynak ve hedef aralıkları arasında örtüşme olmadıkça öğeleri sağa ancak sola kaydırma için kullanılabilir. Herhangi bir sayıda konumlar sola kaydırma için kullanmak [kopyalama](../standard-library/algorithm-functions.md#copy) algoritması.  
   
  `copy_backward` Algoritması yalnızca hedef aralık öğelerine yeni değerler atama yineleyiciler işaret değerleri değiştirir. Yeni öğe oluşturmak için kullanılamaz ve öğeleri boş bir kapsayıcıya doğrudan ekleyemez.  
   
@@ -705,7 +707,7 @@ int main() {
 }  
 ```  
   
-##  <a name="copy_if"></a>copy_if  
+##  <a name="copy_if"></a>  copy_if  
  Öğeleri aralığında olan öğeler kopyalar `true` belirtilen koşulu için.  
   
 ```  
@@ -740,7 +742,7 @@ template<class InputIterator, class OutputIterator, class BinaryPredicate>
   
  için bir kez her `N` aralığında `[0, last - first)`, kesinlikle değerini artırmak için `N` en düşük değer ile başlatılıyor. Varsa `dest` ve `first` depolama bölgeleri atamak `dest` aralığında olmamalıdır `[ first, last )`.  
   
-##  <a name="copy_n"></a>copy_n  
+##  <a name="copy_n"></a>  copy_n  
  Belirtilen sayıda öğeyi kopyalar.  
   
 ```  
@@ -767,7 +769,7 @@ template<class InputIterator, class Size, class OutputIterator>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi değerlendirir `*(dest + N) = *(first + N))` için bir kez her `N` aralığında `[0, count)`, kesinlikle değerini artırmak için `N` en düşük değer ile başlatılıyor. Daha sonra döndürür `dest + N`. Varsa `dest` ve `first` depolama bölgeleri atamak `dest` aralığında olmamalıdır `[first, last)`.  
   
-##  <a name="count"></a>sayısı  
+##  <a name="count">Sayısı</a>  
  Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.  
   
 ```  
@@ -833,7 +835,7 @@ v1 = ( 10 20 10 40 10 )
 The number of 10s in v2 is: 3.  
 ```  
   
-##  <a name="count_if"></a>count_if  
+##  <a name="count_if"></a>  count_if  
  Değerleri bir belirtilen koşulu karşılıyor bir aralık içinde öğe sayısını döndürür.  
   
 ```  
@@ -903,7 +905,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.  
 ```  
   
-##  <a name="equal"></a>eşit  
+##  <a name="equal">Eşittir</a>  
  İki aralıkları öğe eşitlik veya ikili koşul tarafından belirtilen bir fikir eşdeğer karşılaştırır.  
   
  Kullanım `std::equal` farklı kapsayıcı türleri öğelerinde karşılaştırılırken (örneğin `vector` ve `list`) veya farklı öğe türleri karşılaştırma veya alt aralıkları kapsayıcıların karşılaştırmanız gerekir. Aksi takdirde aynı kapsayıcı türü, aynı türdeki öğeleri karşılaştırıldığında, üye olmayan kullanın `operator==` her kapsayıcı için sağlanır.  
@@ -1000,7 +1002,7 @@ int main()
   
 ```  
   
-##  <a name="equal_range"></a>equal_range  
+##  <a name="equal_range"></a>  equal_range  
  Sıralı bir aralığı tüm öğeler için belirli bir değeri eşdeğer alt aralığı bulur.  
   
 ```  
@@ -1163,7 +1165,7 @@ int main()
   
 ```  
   
-##  <a name="fill"></a>doldurma  
+##  <a name="fill">doldurma</a>  
  Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.  
   
 ```  
@@ -1228,7 +1230,7 @@ Vector v1 = ( 0 5 10 15 20 25 30 35 40 45 )
 Modified v1 = ( 0 5 10 15 20 2 2 2 2 2 )  
 ```  
   
-##  <a name="fill_n"></a>fill_n  
+##  <a name="fill_n"></a>  fill_n  
  Yeni bir değer bir aralık başına öğeleri belirli bir öğesiyle belirtilen sayıda atar.  
   
 ```  
@@ -1304,7 +1306,7 @@ int main()
   
 ```  
   
-##  <a name="find"></a>Bul  
+##  <a name="find"></a>  Bul  
  Bir öğenin belirli bir değere sahip olan aralıktaki ilk geçtiği konumu bulur.  
   
 ```  
@@ -1333,7 +1335,7 @@ InputIterator find(
   
  Kod kullanarak örnek için `find()`, bkz: [find_if](../standard-library/algorithm-functions.md#find_if).  
   
-##  <a name="find_end"></a>find_end  
+##  <a name="find_end"></a>  find_end  
  Belirli bir diziye özdeş veya bir ikili koşula göre belirtildiği şekilde denk olan son dizi için bir aralık arar.  
   
 ```  
@@ -1473,7 +1475,7 @@ There is a sequence of elements in v1 that are equivalent to those
  in v2 under the binary predicate twice and that begins at position 8.  
 ```  
   
-##  <a name="find_first_of"></a>find_first_of  
+##  <a name="find_first_of"></a>  find_first_of  
  Bir hedef aralığındaki çeşitli değerlerden herhangi birinin ilk geçtiği yeri veya bir ikili koşula göre belirtilen bir öğeler kümesine belirtildiği şekilde denk olan çeşitli öğelerin geçtiği ilk yeri arar.  
   
 ```  
@@ -1616,7 +1618,7 @@ There is a sequence of elements in v1 that are equivalent
  and the first one begins at position 2.  
 ```  
   
-##  <a name="find_if"></a>find_if  
+##  <a name="find_if"></a>  find_if  
  Bir öğenin belirli bir koşulu karşıladığı aralıktaki ilk geçtiği konumu bulur.  
   
 ```  
@@ -1729,7 +1731,7 @@ int main()
   
 ```  
   
-##  <a name="find_if_not"></a>find_if_not  
+##  <a name="find_if_not"></a>  find_if_not  
  Bir koşulu karşılamayan belirtilen aralıktaki ilk öğeyi döndürür.  
   
 ```  
@@ -1758,7 +1760,7 @@ InputIterator find_if_not(
   
  Bir kod örneğidir yedeğe uyarlanabilir için `find_if_not()`, bkz: [find_if](../standard-library/algorithm-functions.md#find_if).  
   
-##  <a name="for_each"></a>for_each  
+##  <a name="for_each"></a>  for_each  
  Bir aralıktaki ileriye doğru sıradaki her öğeye belirli bir işlev uygular ve işlev nesnesini döndürür.  
   
 ```  
@@ -1902,7 +1904,7 @@ The average of the elements of v1 is:
  Average ( v1mod2 ) = 10.  
 ```  
   
-##  <a name="generate"></a>Oluştur  
+##  <a name="generate">Oluştur</a>  
  Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.  
   
 ```  
@@ -1973,7 +1975,7 @@ Vector v1 is ( 41 18467 6334 26500 19169 ).
 Deque deq1 is ( 15724 11478 29358 26962 24464 ).  
 ```  
   
-##  <a name="generate_n"></a>generate_n  
+##  <a name="generate_n"></a>  generate_n  
  Belirtilen sayıda öğeyi bir aralıkta bir işlev nesnesi tarafından üretilen değerler atar ve son atanan değer geçmiş konuma birini döndürür.  
   
 ```  
@@ -2045,7 +2047,7 @@ int main()
   
 ```  
   
-##  <a name="includes"></a>içerir  
+##  <a name="includes">İçerir</a>  
  Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.  
   
 ```  
@@ -2246,7 +2248,7 @@ At least one of the elements in vector v2b is not contained in vector v2a.
 At least one of the elements in vector v3b is  not contained under mod_lesser in vector v3a.  
 ```  
   
-##  <a name="inplace_merge"></a>inplace_merge  
+##  <a name="inplace_merge"></a>  inplace_merge  
  Ardışık iki sıralanmış aralıktaki öğeleri tek bir sıralanmış aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -2395,7 +2397,7 @@ Merged inplace with binary predicate mod_lesser specified,
  vector v3mod = ( 0 0 1 -1 2 -2 3 -3 4 -4 5 -5 )  
 ```  
   
-##  <a name="is_heap"></a>is_heap  
+##  <a name="is_heap"></a>  is_heap  
  Döndürür `true` yığın form Belirtilen aralıktaki öğelerinin durumunda.  
   
 ```  
@@ -2431,7 +2433,7 @@ bool is_heap(
   
  `is_heap_until` `(`  `first` `,`  `last` `,`  `comp` `) ==`  `last`.  
   
-##  <a name="is_heap_until"></a>is_heap_until  
+##  <a name="is_heap_until"></a>  is_heap_until  
  Yineleyici aralıktaki ilk öğede konumlandırıldı döndüren [ `begin`, `end`), uygun olmadığı koşul, sıralama yığın veya `end` aralığı yığın oluşturuyorsa.  
   
 ```  
@@ -2465,7 +2467,7 @@ RandomAccessIterator is_heap_until(
   
  Koşul kullanır ancak bu ikinci şablon işlevi, birinci ile aynı şekilde davranır `compare` yerine `std::less<>` koşul sıralama yığın olarak.  
   
-##  <a name="is_partitioned"></a>is_partitioned  
+##  <a name="is_partitioned"></a>  is_partitioned  
  Döndürür `true` verilen aralıktaki tüm öğeleri test durumunda `true` bir koşul gelen için test herhangi bir öğe önce `false`.  
   
 ```  
@@ -2492,7 +2494,7 @@ bool is_partitioned(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi döndürür `true` yalnızca tüm öğeler `[` `first ,` `last )` tarafından bölümlenmiş `comp`; diğer bir deyişle, tüm öğeleri `X` içinde `[` `first ,` `last )` için hangi `comp (X)` önce tüm öğeleri doğru ortaya olan `Y` kendisi için `comp (Y)` olan `false`.  
   
-##  <a name="is_permutation"></a>is_permutation  
+##  <a name="is_permutation"></a>  is_permutation  
  Öğeleri aynı sırada olup olmadığına hem aralıkları aynı öğeler içeriyorsa, true döndürür. İkinci aralık ilk aralığından daha uzun ve ikinci aralığı kısa ise tanımsız davranışlara neden, yalnızca tek bir yineleyici ikinci aralığı için ele alan aşırı farklar algılamaz çünkü çift aralıklı C ++ 14 kodda overloads kullanın ilk aralığından daha.  
   
 ```  
@@ -2543,10 +2545,10 @@ bool is_permutation(
  Testleri için eşdeğer ve döndüren bir koşul bir `bool`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`zaman aralıkları göre karşılaştırıcı koşulu özdeş olması amacıyla düzenlenmeyecek; Aksi takdirde `false`.  
+ `true` zaman aralıkları göre karşılaştırıcı koşulu özdeş olması amacıyla düzenlenmeyecek; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `is_permutation`İkinci derece karmaşıklık kötü durumda sahiptir.  
+ `is_permutation` İkinci derece karmaşıklık kötü durumda sahiptir.  
   
  İlk şablon işlevi olduğunu sayıda öğe aralığı başında içinde varsayar `First2` bulunduğundan belirlenen aralıkta [ `First1`, `Last1`). İkinci aralığı içinde daha fazla öğe varsa, bunlar yoksayılır; varsa daha az tanımsız davranış gerçekleşir. Üçüncü şablon işlevi (C ++ 14 ve üzeri) Bu varsayım yapmaz.  Her ikisi de dönmek `true` eksikse, her bir öğe için X belirlenen aralıkta [ `First1`, `Last1`) hangi X aynı aralığında sayıda öğe Y vardır aralığı başında vardır gibi Y == `First2` veya [ `First2, Last2).` Burada, `operator==` ikili karşılaştırma işlenenleri arasındaki gerçekleştirmeniz gerekir.  
   
@@ -2608,7 +2610,7 @@ int main()
   
 ```  
   
-##  <a name="is_sorted"></a>is_sorted  
+##  <a name="is_sorted"></a>  is_sorted  
  Döndürür `true` Belirtilen aralıktaki öğeleri sıralanmış olarak ise.  
   
 ```  
@@ -2639,7 +2641,7 @@ bool is_sorted(
   
  İkinci şablon işlevi döndürür `is_sorted_until( first, last , comp ) == last`. `comp` Koşul işlevinin order karşılaştırma gerçekleştirir.  
   
-##  <a name="is_sorted_until"></a>is_sorted_until  
+##  <a name="is_sorted_until"></a>  is_sorted_until  
  Döndürür bir `ForwardIterator` ayarlanan son belirtilen bir aralıktan sıralanmış olan öğeyi.  
   
  İkinci Sürüm sağlamanıza olanak tanır bir `BinaryPredicate` döndüren bir işlev `true` iki verilen öğeler sıralanmış olarak olduğunda ve `false` Aksi takdirde.  
@@ -2676,7 +2678,7 @@ template<class ForwardIterator, class BinaryPredicate>
   
  Yerini dışında ikinci şablon işlevi aynı şekilde davranır `operator<(X, Y)` ile `comp (X, Y)`.  
   
-##  <a name="iter_swap"></a>iter_swap  
+##  <a name="iter_swap"></a>  iter_swap  
  Belirtilen yineleyicilerin bir çifti tarafından başvurulan iki değeri birbiriyle değiştirir.  
   
 ```  
@@ -2693,7 +2695,7 @@ void iter_swap( ForwardIterator1 left, ForwardIterator2 right );
  Değiştirilebilmesi için değeri olan iletme yineleyiciler saniye.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `swap`preference için kullanılması gereken ı **ter_swap**, geriye dönük uyumluluk için C++ Standart dahil. Varsa `Fit1` ve `Fit2` iletme yineleyiciler sonra olan `iter_swap` ( `Fit1`, `Fit2` ), eşdeğer olan `swap` (* `Fit1`, \* `Fit2` ).  
+ `swap` preference için kullanılması gereken ı **ter_swap**, geriye dönük uyumluluk için C++ Standart dahil. Varsa `Fit1` ve `Fit2` iletme yineleyiciler sonra olan `iter_swap` ( `Fit1`, `Fit2` ), eşdeğer olan `swap` (* `Fit1`, \* `Fit2` ).  
   
  Giriş iletme yineleyiciler değer türlerinin aynı değere sahip olmalıdır.  
   
@@ -2830,7 +2832,7 @@ After exchanging first elements,
  & deque deq2 is: deq2 = ( 0 5 ).  
 ```  
   
-##  <a name="lexicographical_compare"></a>lexicographical_compare  
+##  <a name="lexicographical_compare"></a>  lexicographical_compare  
  Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.  
   
 ```  
@@ -2974,7 +2976,7 @@ Vector v1 is lexicographically_less than L1.
 Vector v1 is not lexicographically_less than v2 under twice.  
 ```  
   
-##  <a name="lower_bound"></a>lower_bound  
+##  <a name="lower_bound"></a>  lower_bound  
  Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere sahip ilk öğenin konumunu bulur, burada sıralama kriteri bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -3111,7 +3113,7 @@ int main( )
   
 ```  
   
-##  <a name="make_heap"></a>make_heap  
+##  <a name="make_heap"></a>  make_heap  
  Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun için bir ikili koşula sahip bir sıralama ölçütünün belirtilebildiği bir yığına dönüştürür.  
   
 ```  
@@ -3191,7 +3193,7 @@ int main() {
 }  
 ```  
   
-##  <a name="max"></a>max  
+##  <a name="max"></a>  max  
  İki nesneyi karşılaştırır ve ikisinden büyük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.  
   
 ```  
@@ -3404,7 +3406,7 @@ Vector v4 = max (v1,v2) is ( 0 1 2 ).
 Vector v5 = max (v1,v3) is ( 0 2 4 ).  
 ```  
   
-##  <a name="max_element"></a>max_element  
+##  <a name="max_element"></a>  max_element  
  Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -3534,7 +3536,7 @@ int main( )
 }  
 ```  
   
-##  <a name="merge"></a>Birleştirme  
+##  <a name="merge"></a>  Birleştirme  
  Tüm öğeleri iki sıralanmış kaynak aralıklarından sıralama ölçütü ikili koşul tarafından burada belirtilen bir tek, sıralanmış hedef aralığı birleştirir.  
   
 ```  
@@ -3704,7 +3706,7 @@ int main() {
 }  
 ```  
   
-##  <a name="min"></a>Min  
+##  <a name="min"></a>  Min  
  İki nesneyi karşılaştırır ve ikisinden küçük olanı döndürür, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.  
   
 ```  
@@ -3915,7 +3917,7 @@ Vector v4 = min ( v1,v2 ) is ( 0 1 2 ).
 Vector v5 = min ( v1,v3 ) is ( 0 1 2 ).  
 ```  
   
-##  <a name="min_element"></a>min_element  
+##  <a name="min_element"></a>  min_element  
  Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -4055,7 +4057,7 @@ The smallest element in v1 under the mod_lesser
  binary predicate is: 0  
 ```  
   
-##  <a name="minmax_element"></a>minmax_element  
+##  <a name="minmax_element"></a>  minmax_element  
  Tarafından gerçekleştirilen çalışma gerçekleştirir `min_element` ve `max_element` bir çağrısında.  
   
 ```  
@@ -4089,7 +4091,7 @@ template<class ForwardIterator, class BinaryPredicate>
   
  `pair<ForwardIterator, ForwardIterator>`  
   
- `(`[min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.  
+ `(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk şablon işlevi döndürür  
@@ -4102,7 +4104,7 @@ template<class ForwardIterator, class BinaryPredicate>
   
  Serisi boş ise, işlev en fazla gerçekleştirir `3 * (last - first - 1) / 2` karşılaştırmaları.  
   
-##  <a name="minmax"></a>minmax  
+##  <a name="minmax"></a>  minmax  
  İki giriş parametreleri karşılaştırır ve bunları sırasına göre bir çift olarak döndürür daha küçük.  
   
 ```  
@@ -4152,7 +4154,7 @@ template<class Type, class BinaryPredicate>
   
  Tam olarak bir karşılaştırma işlevi gerçekleştirir.  
   
-##  <a name="mismatch"></a>uyuşmazlığı  
+##  <a name="mismatch"></a>  uyuşmazlığı  
  İki aralıkları öğe karşılaştırır ve bir fark oluştuğu ilk konumu bulur.  
   
  İkinci aralık ilk aralığından daha uzun ve ikinci aralığı kısa ise tanımsız davranışlara neden, yalnızca tek bir yineleyici ikinci aralığı için ele alan aşırı farklar algılamaz çünkü çift aralıklı C ++ 14 kodda overloads kullanın ilk aralığından daha.  
@@ -4337,7 +4339,7 @@ template<class InputIterator, class OutputIterator>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi değerlendirir `*(dest + N) = move(*(first + N))` için bir kez her `N` aralığında `[0, last - first)`, kesinlikle değerini artırmak için `N` en düşük değer ile başlatılıyor. Daha sonra döndürür `dest + N`. Varsa `dest` ve `first` depolama bölgeleri atamak `dest` aralığında olmamalıdır `[first, last)`.  
   
-##  <a name="move_backward"></a>move_backward  
+##  <a name="move_backward"></a>  move_backward  
  Bir yineleyicinin öğelerini diğerine taşır. Hareket belirli bir aralıktaki son öğeyle başlar ve söz konusu aralıktaki ilk öğeyle biter.  
   
 ```  
@@ -4362,9 +4364,9 @@ template<class BidirectionalIterator1, class BidirectionalIterator2>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi değerlendirir `*(destEnd - N - 1) = move(*(last - N - 1))` için bir kez her `N` aralığında `[0, last - first)`, kesinlikle değerini artırmak için `N` en düşük değer ile başlatılıyor. Daha sonra döndürür `destEnd - (last - first)`. Varsa `destEnd` ve `first` depolama bölgeleri atamak `destEnd` aralığında olmamalıdır `[first, last)`.  
   
- `move`ve `move_backward` kullanmaya işlevsel olarak eşdeğerdir `copy` ve `copy_backward` taşıma yineleyici ile.  
+ `move` ve `move_backward` kullanmaya işlevsel olarak eşdeğerdir `copy` ve `copy_backward` taşıma yineleyici ile.  
   
-##  <a name="next_permutation"></a>next_permutation  
+##  <a name="next_permutation"></a>  next_permutation  
  Aralıktaki öğeleri yeniden sıralar, böylece özgün sıralama sözlüksel biçimde, varsa, bir sonraki permütasyon ile değiştirilir, burada sonraki bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -4535,7 +4537,7 @@ After another next_permutation of vector v1,
  v1 =   ( -3 -2 -1 1 0 2 3 ).  
 ```  
   
-##  <a name="nth_element"></a>nth_element  
+##  <a name="nth_element"></a>  nth_element  
  Öğeleri doğru bulma, çeşitli bölümlerini  *n* th öğesi aralığında sırasının küçük veya ona eşit ve sırayla izlenmesi tüm öğelerin önünde tüm öğeleri; böylece bir Şundan büyüktür veya ona eşittir.  
   
 ```  
@@ -4635,7 +4637,7 @@ int main() {
 }  
 ```  
   
-##  <a name="none_of"></a>none_of  
+##  <a name="none_of"></a>  none_of  
  Döndürür `true` bir koşul olduğunda hiçbir zaman belirtilen aralıkta öğeler arasında mevcut.  
   
 ```  
@@ -4659,7 +4661,7 @@ bool none_of(InputIterator first, InputIterator last, BinaryPredicate comp);
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi döndürür `true` bazı için yalnızca IF `N` aralığında `[0, last - first)`, koşul `comp(*(first + N))` her zaman `false`.  
   
-##  <a name="partial_sort"></a>partial_sort  
+##  <a name="partial_sort"></a>  partial_sort  
  Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.  
   
 ```  
@@ -4771,7 +4773,7 @@ Partially resorted (UDgreater) vector:
  v1 = ( 11 10 9 8 7 6 5 4 0 1 2 3 )  
 ```  
   
-##  <a name="partial_sort_copy"></a>partial_sort_copy  
+##  <a name="partial_sort_copy"></a>  partial_sort_copy  
  Öğeleri bir kaynak aralığından bir hedef aralığa kopyalar, burada kaynak öğeleri daha küçük olana ya da belirtilen başka bir ikili koşula göre sıralanır.  
   
 ```  
@@ -4892,7 +4894,7 @@ int main() {
 }  
 ```  
   
-##  <a name="partition"></a>Bölüm  
+##  <a name="partition"></a>  Bölüm  
  Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.  
   
 ```  
@@ -4963,7 +4965,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="partition_copy"></a>partition_copy  
+##  <a name="partition_copy"></a>  partition_copy  
  Bir koşul olduğu öğeleri kopyalar `true` bir hedefe ve koşul olan `false` başka bir. Öğeler belirtilen bir aralıktan gelmelidir.  
   
 ```  
@@ -4997,7 +4999,7 @@ template<class InputIterator, class OutputIterator1, class OutputIterator2, clas
 ### <a name="remarks"></a>Açıklamalar  
  Her öğe şablon işlevi kopyalar `X` içinde `[first,last)` için `*dest1++` varsa `_Pred(X)` doğrudur veya `*dest2++` değilse. Döndürdüğü `pair<OutputIterator1, OutputIterator2>(dest1, dest2)`.  
   
-##  <a name="partition_point"></a>partition_point  
+##  <a name="partition_point"></a>  partition_point  
  Koşulu karşılamayan verili aralıktaki ilk öğeyi döndürür. Öğeler koşulu karşılayanlar karşılamayanlardan önce gelecek şekilde sıralanır.  
   
 ```  
@@ -5025,7 +5027,7 @@ template<class ForwardIterator, class Predicate>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi ilk yineleyici bulur `it` içinde `[first, last)` kendisi için `comp(*it)` olan `false`. Tarafından dizisi sıralanmalıdır `comp`.  
   
-##  <a name="pop_heap"></a>pop_heap  
+##  <a name="pop_heap"></a>  pop_heap  
  En büyük öğeyi bir yığının önünden aralıktaki bir sonraki son konuma kaldırır ve ardından kalan öğelerden yeni bir yığın oluşturur.  
   
 ```  
@@ -5126,7 +5128,7 @@ int main( )  {
 }  
 ```  
   
-##  <a name="prev_permutation"></a>prev_permutation  
+##  <a name="prev_permutation"></a>  prev_permutation  
  Böylece, burada önceki duygusu ile ikili bir koşul belirtilebilir varsa özgün sıralama lexicographically önceki büyük nesne tarafından değiştirilir bir aralıkta öğeleri yeniden sıralar.  
   
 ```  
@@ -5154,7 +5156,7 @@ template<class BidirectionalIterator, class BinaryPredicate>
  Sıralama, art arda gelen öğeler tarafından karşılanması karşılaştırma ölçütü tanımlayan kullanıcı tanımlı koşul işlev nesnesi. İkili karşılaştırma iki bağımsız değişken alıp döndüren `true` yerine getirdiğinizde ve `false` uyulmadığını olduğunda.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`lexicographically önceki sıralamaya var ve özgün aralığını sıralama değiştirilmiştir Aksi takdirde `false`, sıralama lexicographically en büyük sıralamaya; bu durumda dönüştürülür.  
+ `true` lexicographically önceki sıralamaya var ve özgün aralığını sıralama değiştirilmiştir Aksi takdirde `false`, sıralama lexicographically en büyük sıralamaya; bu durumda dönüştürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Başvurulan aralığı geçerli olmalıdır; Tüm İşaretçiler dereferenceable olmalıdır ve sıra içinde son konum birinciden erişilebildiğinden artırılamadı tarafından.  
@@ -5297,7 +5299,7 @@ After another prev_permutation of vector v1,
  v1 =   ( -3 -2 0 2 -1 1 3 ).  
 ```  
   
-##  <a name="push_heap"></a>push_heap  
+##  <a name="push_heap"></a>  push_heap  
  Aralığın sonundaki bir öğeyi aralıktaki önceki öğeleri içeren mevcut yığına ekler.  
   
 ```  
@@ -5403,10 +5405,10 @@ int main( ) {
 }  
 ```  
   
-##  <a name="random_shuffle"></a>random_shuffle  
+##  <a name="random_shuffle"></a>  random_shuffle  
  Std::random_shuffle() işlevi değiştirilmiştir kullanım dışıdır [std::shuffle](../standard-library/algorithm-functions.md#shuffle). Kod örneği ve daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md) ve Stackoverflow nakil [neden std::random_shuffle yöntemleri kaldırılmış olan C ++ 14'te?](http://go.microsoft.com/fwlink/p/?linkid=397954).  
   
-##  <a name="remove"></a>Kaldır  
+##  <a name="remove"></a>  Kaldır  
  Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki belirtilen bir değeri ortadan kaldırır.  
   
 ```  
@@ -5485,7 +5487,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="remove_copy"></a>remove_copy  
+##  <a name="remove_copy"></a>  remove_copy  
  Öğeleri, belirtilen değerin kopyalanmayan öğeleri hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.  
   
 ```  
@@ -5564,7 +5566,7 @@ int main() {
 }  
 ```  
   
-##  <a name="remove_copy_if"></a>remove_copy_if  
+##  <a name="remove_copy_if"></a>  remove_copy_if  
  Öğeleri, bir koşulu karşılayan kopyalanmayan öğeler hariç, kalan öğelerin sırasını bozmadan ve yeni hedef aralığın sonuna döndürerek bir kaynak aralıktan bir hedef aralığa kopyalar.  
   
 ```  
@@ -5652,7 +5654,7 @@ int main() {
 }  
 ```  
   
-##  <a name="remove_if"></a>remove_if  
+##  <a name="remove_if"></a>  remove_if  
  Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının sonunu boş döndürerek verili aralıktaki bir koşulu karşılayan öğeleri ortadan kaldırır.  
   
 ```  
@@ -5735,7 +5737,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="replace"></a>Değiştir  
+##  <a name="replace"></a>  Değiştir  
  Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa değiştirir.  
   
 ```  
@@ -5803,7 +5805,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="replace_copy"></a>replace_copy  
+##  <a name="replace_copy"></a>  replace_copy  
  Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen değerle eşleşiyorsa, onu değiştirir.  
   
 ```  
@@ -5902,7 +5904,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="replace_copy_if"></a>replace_copy_if  
+##  <a name="replace_copy_if"></a>  replace_copy_if  
  Bir kaynak aralığındaki her öğeyi inceler ve sonuç yeni bir hedef aralığına kopyalanırken öğe belirtilen bir koşulu karşılıyorsa, onu değiştirir.  
   
 ```  
@@ -6008,7 +6010,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="replace_if"></a>replace_if  
+##  <a name="replace_if"></a>  replace_if  
  Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa değiştirir.  
   
 ```  
@@ -6085,7 +6087,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="reverse"></a>geriye doğru  
+##  <a name="reverse"></a>  Ters Çevir  
  Bir aralık içindeki öğelerin sırasını tersine çevirir.  
   
 ```  
@@ -6146,7 +6148,7 @@ The modified vector v1 with values reversed is:
  ( 9 8 7 6 5 4 3 2 1 0 ).  
 ```  
   
-##  <a name="reverse_copy"></a>reverse_copy  
+##  <a name="reverse_copy"></a>  reverse_copy  
  Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sırasını tersine çevirir  
   
 ```  
@@ -6214,7 +6216,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="rotate"></a>döndürme  
+##  <a name="rotate"></a>  döndürme  
  İki bitişik aralık içindeki öğeleri birbiriyle değiştirir.  
   
 ```  
@@ -6313,7 +6315,7 @@ After the rotation of a single deque element to the back,
  d1 is   ( 0 1 2 3 4 5 ).  
 ```  
   
-##  <a name="rotate_copy"></a>rotate_copy  
+##  <a name="rotate_copy"></a>  rotate_copy  
  Bir kaynak aralık içindeki iki bitişik aralıktaki öğeleri birbiriyle değiştirir ve sonucu bir hedef aralığına kopyalar.  
   
 ```  
@@ -6406,7 +6408,7 @@ int main() {
 }  
 ```  
   
-##  <a name="search"></a>Arama  
+##  <a name="search"></a>  Arama  
  Öğeleri verili bir öğe dizisi içindekilerle eşit olan veya öğeleri verili bir dizi öğe için ikili bir koşula göre belirtildiği şekilde denk olan bir hedef aralığındaki dizinin ilk geçtiği yeri arar.  
   
 ```  
@@ -6551,7 +6553,7 @@ There is a sequence of elements in v1 that are equivalent
  and the first one begins at position 2.  
 ```  
   
-##  <a name="search_n"></a>search_n  
+##  <a name="search_n"></a>  search_n  
  Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişkiye sahip olan öğelerin belirli bir sayısının aralığındaki ilk diziyi arar.  
   
 ```  
@@ -6681,7 +6683,7 @@ There is a match of a sequence ( 5 5 5 ) under the equivalence
  predicate one_half in v1 and the first one begins at position 15.  
 ```  
   
-##  <a name="set_difference"></a>set_difference  
+##  <a name="set_difference"></a>  set_difference  
  Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmış bir kaynak aralığına sahip öğelerin tümünü tek, sıralanmış bir hedef aralığı içinde birleştirir, burada sıralama ölçütü ikili bir koşula göre belirtilebilir.  
   
 ```  
@@ -6858,7 +6860,7 @@ int main( )
 }  
 ```  
   
-##  <a name="set_intersection"></a>set_intersection  
+##  <a name="set_intersection"></a>  set_intersection  
  Her iki sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -7029,7 +7031,7 @@ int main() {
 }  
 ```  
   
-##  <a name="set_symmetric_difference"></a>set_symmetric_difference  
+##  <a name="set_symmetric_difference"></a>  set_symmetric_difference  
  İki değil, tek bir sıralanmış kaynak aralığa sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -7206,7 +7208,7 @@ int main( )
 }  
 ```  
   
-##  <a name="set_union"></a>set_union  
+##  <a name="set_union"></a>  set_union  
  İki sıralanmış kaynak aralığından en az birine sahip öğelerin tümünü tek, sıralanmış bir aralıkta birleştirir, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  
@@ -7382,7 +7384,7 @@ int main( )
 }  
 ```  
   
-##  <a name="shuffle"></a>Std::Shuffle  
+##  <a name="shuffle"></a>  Std::Shuffle  
  Rastgele sayı üreticisinin kullanarak belirli bir aralık için seçeneği (yeniden düzenler) öğeleri.  
   
 ```  
@@ -7405,7 +7407,7 @@ void shuffle(RandomAccessIterator first,
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi ve kullandığı bir kod örneği `shuffle()`, bkz: [ \<rastgele >](../standard-library/random.md).  
   
-##  <a name="sort"></a>Sıralama  
+##  <a name="sort"></a>  Sıralama  
  Belirtilen bir aralıktaki öğeleri azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.  
   
 ```  
@@ -7507,7 +7509,7 @@ Resorted (greater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )
 Resorted (UDgreater) vector v1 = ( 11 10 9 8 7 6 5 4 3 2 1 0 )  
 ```  
   
-##  <a name="sort_heap"></a>sort_heap  
+##  <a name="sort_heap"></a>  sort_heap  
  Bir yığını sıralanmış bir aralığa dönüştürür.  
   
 ```  
@@ -7600,7 +7602,7 @@ int main() {
 }  
 ```  
   
-##  <a name="stable_partition"></a>stable_partition  
+##  <a name="stable_partition"></a>  stable_partition  
  Bir aralıktaki öğeleri, eşdeğer öğelerin göreli sırasını koruyaraktan, onları karşılamada yetersiz koşulu önceleyen birli koşulu sağlayan öğelerle iki ayrık kümede sınıflandırır.  
   
 ```  
@@ -7675,7 +7677,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="stable_sort"></a>stable_sort  
+##  <a name="stable_sort"></a>  stable_sort  
  Belirtilen bir aralıktaki öğeleri, eşdeğer öğelerin göreli sıralamasını koruyaraktan, azalmayan şekilde veya bir ikili koşul tarafından belirtilen bir sıralama ölçütüne göre düzenler.  
   
 ```  
@@ -7774,7 +7776,7 @@ Resorted (greater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )
 Resorted (UDgreater) vector v1 = ( 10 10 8 8 6 6 4 4 2 2 0 0 )  
 ```  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap"></a>  Değiştirme  
  İlk geçersiz kılma iki nesnenin değerlerini değiş tokuş eder. İkinci geçersiz kılma dizilerinin nesneleri arasındaki değerleri değiş tokuş eder.  
   
 ```  
@@ -7855,7 +7857,7 @@ Vector v1 is ( 5 5 5 5 5 ).
 Vector v2 is ( 0 1 2 3 4 5 6 7 8 9 10 ).  
 ```  
   
-##  <a name="swap_ranges"></a>swap_ranges  
+##  <a name="swap_ranges"></a>  swap_ranges  
  Bir aralığın öğelerini eşit büyüklükteki bir diğerinin öğeleriyle değiştirir.  
   
 ```  
@@ -7946,7 +7948,7 @@ After the swap_range, vector v1 is ( 6 6 6 6 6 6 ).
 After the swap_range deque d1 is   ( 0 1 2 3 4 5 ).  
 ```  
   
-##  <a name="transform"></a>dönüştürme  
+##  <a name="transform"></a>  transform  
  Belirtilen işlev nesnesini bir kaynak aralıktaki her bir öğeye veya iki kaynak aralıktaki bir öğe çiftine uygular ve işlev nesnenin dönüş değerlerini bir hedef aralığa kopyalar.  
   
 ```  
@@ -8080,7 +8082,7 @@ Multiplying elements of the vectors v1mod and v2 pairwise gives:
  v3 = ( 320 180 80 20 0 20 80 ).  
 ```  
   
-##  <a name="unique"></a>benzersiz  
+##  <a name="unique"></a>  Benzersiz  
  Belirli bir aralıktaki birbirine bitişik yinelenen öğeleri kaldırır.  
   
 ```  
@@ -8210,7 +8212,7 @@ Removing adjacent elements satisfying the binary
   predicate mod_equal from vector v1 gives ( 5 7 ).  
 ```  
   
-##  <a name="unique_copy"></a>unique_copy  
+##  <a name="unique_copy"></a>  unique_copy  
  Birbirine bitişik yinelenen öğeler hariç bir kaynak aralıktaki öğeleri hedef aralığa kopyalar.  
   
 ```  
@@ -8324,7 +8326,7 @@ int main() {
 }  
 ```  
   
-##  <a name="upper_bound"></a>upper_bound  
+##  <a name="upper_bound"></a>  upper_bound  
  Belirtilenden daha büyük bir değere sahip sıralı bir aralıktaki ilk öğenin konumunu bulur, burada sıralama ölçütü bir ikili koşula göre belirtilebilir.  
   
 ```  

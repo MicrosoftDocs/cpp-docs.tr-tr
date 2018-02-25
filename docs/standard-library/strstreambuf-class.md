@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - strstream/std::strstreambuf::freeze
 - strstream/std::strstreambuf::overflow
@@ -16,7 +17,8 @@ f1_keywords:
 - strstream/std::strstreambuf::seekpos
 - strstream/std::strstreambuf::str
 - strstream/std::strstreambuf::underflow
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::strstreambuf [C++], freeze
 - std::strstreambuf [C++], overflow
@@ -27,16 +29,17 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cb7d7c601ab2750e01202bba7dbefcb05673a025
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 702d5bfa1b01f0207b0745cec030723b25fcfe6f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 Öğeleri depolanan öğe dizisi gelen ve giden iletimini denetleyen bir Akış Arabellek açıklar bir `char` dizi nesnesi.  
@@ -77,8 +80,8 @@ class strstreambuf : public streambuf
   
 |||  
 |-|-|  
-|[Dondurma](#freeze)|Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.|  
-|[taşma](#overflow)|Yeni bir karakter tam arabelleğine takıldığında çağrılabilir korumalı sanal işlev.|  
+|[freeze](#freeze)|Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.|  
+|[Taşma](#overflow)|Yeni bir karakter tam arabelleğine takıldığında çağrılabilir korumalı sanal işlev.|  
 |[pbackfail](#pbackfail)|Almaya çalıştığında bir korumalı sanal üye işlevi bir öğenin Giriş akışı yedekleyin ve (tarafından sonraki işaretçisi işaret) geçerli öğe olun.|  
 |[pcount](#pcount)|Denetimli sıraya yazılan öğeleri sayısını döndürür.|  
 |[seekoff](#seekoff)|Geçerli konumlar denetimli akışlar için alter dener korumalı sanal üye işlevi.|  
@@ -91,7 +94,7 @@ class strstreambuf : public streambuf
   
  **Namespace:** std  
   
-##  <a name="freeze"></a>strstreambuf::Freeze  
+##  <a name="freeze"></a>  strstreambuf::Freeze  
  Bir Akış Arabellek Akış Arabellek işlemleri kullanılamaz hale gelmesine neden olur.  
   
 ```  
@@ -176,7 +179,7 @@ after clearing stream: stream good
 test1test3  
 ```  
   
-##  <a name="overflow"></a>strstreambuf::Overflow  
+##  <a name="overflow"></a>  strstreambuf::Overflow  
  Yeni bir karakter tam arabelleğine takıldığında çağrılabilir korumalı sanal işlev.  
   
 ```  
@@ -197,7 +200,7 @@ virtual int overflow(int _Meta = EOF);
   
 -   Saklı strstreambuf modu denetimli sırası değiştirilebilir, genişletilebilir ve değil dondurulmuş diyorsa işlevi yazma konumunu yeni için çıkış arabelleği ayırarak sunabilirsiniz. Çıkış arabelleği bu şekilde genişletme, ilişkili tüm giriş arabelleği genişletir.  
   
-##  <a name="pbackfail"></a>strstreambuf::pbackfail  
+##  <a name="pbackfail"></a>  strstreambuf::pbackfail  
  Bir öğenin Giriş akışı geri koymak dener ve (tarafından sonraki işaretçisi işaret) geçerli öğe yapar korumalı sanal üye işlevi.  
   
 ```  
@@ -220,7 +223,7 @@ virtual int pbackfail(int _Meta = EOF);
   
 -   Putback konumu varsa ve strstreambuf modu denetimli sırası değiştirilebilir diyorsa işlevi depolayabilir **ch** putback konumu ve azaltma giriş arabelleği için sonraki işaretçisi.  
   
-##  <a name="pcount"></a>strstreambuf::pcount  
+##  <a name="pcount"></a>  strstreambuf::pcount  
  Denetimli sıraya yazılan öğeleri sayısını döndürür.  
   
 ```  
@@ -252,7 +255,7 @@ int main( )
 }  
 ```  
   
-##  <a name="seekoff"></a>strstreambuf::seekoff  
+##  <a name="seekoff"></a>  strstreambuf::seekoff  
  Geçerli konumlar denetimli akışlar için alter dener korumalı sanal üye işlevi.  
   
 ```  
@@ -289,7 +292,7 @@ virtual streampos seekoff(streamoff _Off,
   
  Aksi halde, eğer `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği varsa, işlev çıkış arabelleğinin yazmak için bir sonraki konuma değiştirir. Aksi takdirde yerleştirme işlemi başarısız olur. Başarılı olması konumlandırma işlemi için sonuçta elde edilen akışı konumu denetimli sırası içinde yer almalıdır.  
   
-##  <a name="seekpos"></a>strstreambuf::seekpos  
+##  <a name="seekpos"></a>  strstreambuf::seekpos  
  Geçerli konumlar denetimli akışlar için alter dener korumalı sanal üye işlevi.  
   
 ```  
@@ -311,7 +314,7 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
   
  Varsa `_Which`  &  **ios_base::in** sıfır dışında olan ve giriş arabelleği varsa, işlev giriş önbelleğinde okumak için bir sonraki konuma değiştirir. Varsa `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği var, işlevi de okumak için bir sonraki konuma eşleşecek şekilde yazmak için sonraki konumunu ayarlar. Aksi halde, eğer `_Which`  &  `ios_base::out` sıfır dışında olan ve çıkış arabelleği varsa, işlev çıkış arabelleğinin yazmak için bir sonraki konuma değiştirir. Aksi takdirde yerleştirme işlemi başarısız olur. Başarılı olması konumlandırma işlemi için sonuçta elde edilen akışı konumu denetimli sırası içinde yer almalıdır.  
   
-##  <a name="str"></a>strstreambuf::Str  
+##  <a name="str"></a>  strstreambuf::Str  
  Çağrıları [Dondur](#freeze)ve ardından bir işaretçi denetimli sıranın başına döndürür.  
   
 ```  
@@ -327,7 +330,7 @@ char *str();
 ### <a name="example"></a>Örnek  
   Bkz: [strstreambuf::freeze](#freeze) kullanan bir örnek için **str**.  
   
-##  <a name="strstreambuf"></a>strstreambuf::strstreambuf  
+##  <a name="strstreambuf"></a>  strstreambuf::strstreambuf  
  Türünde bir nesne oluşturur `strstreambuf`.  
   
 ```  
@@ -445,7 +448,7 @@ streambuf((char *)_Getptr, count);
   
  Ancak bu saklı modu denetimli sırası değiştirilebilir ne Genişletilebilir yapar.  
   
-##  <a name="underflow"></a>strstreambuf::underflow  
+##  <a name="underflow"></a>  strstreambuf::underflow  
  Giriş akışından geçerli öğe ayıklamak için korumalı bir sanal işlev.  
   
 ```  

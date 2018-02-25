@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 39b969349ee09e5882677b701030ef9c0792522a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b4dc655710c9c9cc4bb9a2549136f772b192f739
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="supporting-schema-rowsets"></a>Şema Satır Kümelerini Destekleme
 Şema satır kümeleri kendi yapılarını veya şema bilmeden bir veri deposu hakkında bilgi edinmek tüketicilere izin verir. Örneğin, bir veri deposu olurdu şekilde okuma tarafından şemanın bilgi sağlamak için hiçbir şekilde bir kullanıcı tarafından tanımlanan hiyerarşide düzenlenmiş tablolar olabilir. (Başka bir örnek olarak, Visual C++ sihirbazları tüketici erişimcileri oluşturmak için şema satır kümeleri kullandığını unutmayın.) Bunu yapmak izin vermek üzere üzerinde yöntemlerini sağlayıcının oturum nesnesi gösterir [IDBSchemaRowset](https://msdn.microsoft.com/en-us/library/ms713686.aspx) arabirimi. Visual C++ uygulamalarında kullandığınız [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) uygulamak için sınıf **IDBSchemaRowset**.  
@@ -108,7 +108,7 @@ class CUpdateSessionTRSchemaRowset :
 |**TABLE_CATALOG**|0x1 (ikili 1)|  
 |**TABLE_SCHEMA**|0x2 (ikili 10)|  
 |**TABLE_NAME**|0x4 (ikili 100)|  
-|**TABLE_TYPE**|0x8 (ikili 1000)|  
+|TABLE_TYPE|0x8 (ikili 1000)|  
   
  Ardından, her kısıtlama için bir bit olduğuna dikkat edin. Desteklemek istediğiniz çünkü **TABLE_NAME** yalnızca 0x4 geri `rgRestrictions` öğesi. Desteklenen varsa **TABLE_CATALOG** ve **TABLE_NAME**, 0x5 (binary 101) döndürecektir.  
   

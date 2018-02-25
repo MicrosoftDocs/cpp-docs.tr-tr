@@ -5,22 +5,24 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vector/std::swap
+ms.topic: reference
+f1_keywords:
+- vector/std::swap
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
-helpviewer_keywords: std::swap [vector]
-caps.latest.revision: "10"
+helpviewer_keywords:
+- std::swap [vector]
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: e031d39204dd019281b52fd8d3a0127ecbc0424e
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: e752c3d39787466928b11ff8d644cf9a6558b656
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
 
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap"></a>  Değiştirme  
  İki vektör öğelerini değiş tokuş eder.  
   
 ```  

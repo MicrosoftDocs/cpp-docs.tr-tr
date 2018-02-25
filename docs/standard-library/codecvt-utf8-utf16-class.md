@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: codecvt/std::cvt_utf8_utf16
-dev_langs: C++
-helpviewer_keywords: codecvt_utf8_utf16 class
+ms.topic: reference
+f1_keywords:
+- codecvt/std::cvt_utf8_utf16
+dev_langs:
+- C++
+helpviewer_keywords:
+- codecvt_utf8_utf16 class
 ms.assetid: 4c12c881-5dba-4e39-b338-0b9caff5af29
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d16a5e316119470f96c115c4ba8cbe47fabd3831
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 83f67c9d410aeca92c343c8e598fa9db4b7c59ae
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="codecvtutf8utf16"></a>codecvt_utf8_utf16
 Temsil eden bir [yerel](../standard-library/locale-class.md) UTF-16 kodlanmış uluslararası karakterler ve UTF-8 olarak kodlanmış bir bayt akış arasında dönüştürür modeli.

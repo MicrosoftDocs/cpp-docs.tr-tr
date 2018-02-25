@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - tile_barrier
 - AMP/tile_barrier
@@ -15,19 +16,22 @@ f1_keywords:
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_all_memory_fence
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_global_memory_fence
 - AMP/Concurrency::tile_barrier::tile_barrier::wait_with_tile_static_memory_fence
-dev_langs: C++
-helpviewer_keywords: tile_barrier class
+dev_langs:
+- C++
+helpviewer_keywords:
+- tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1f6066422056efc17052afb11d01580abc340976
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e7d868b4bd677d207590de6449e3d5643001e857
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
 İş parçacığı grubu (döşeme) kullanarak çalışan iş parçacıklarının yürütülmesine eşitler `wait` yöntemleri. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilirsiniz.  
@@ -44,7 +48,7 @@ class tile_barrier;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tile_barrier Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tile_barrier` sınıfı.|  
+|[tile_barrier Constructor](#ctor)|Yeni bir örneğini başlatır `tile_barrier` sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -63,7 +67,7 @@ class tile_barrier;
   
  **Namespace:** eşzamanlılık  
 
-## <a name="tile_barrier__ctor"></a>tile_barrier Oluşturucusu  
+## <a name="tile_barrier__ctor"></a>  tile_barrier Oluşturucusu  
  Mevcut bir kopyalayarak sınıfının yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi 
@@ -77,7 +81,7 @@ tile_barrier(
  `_Other`  
  `tile_barrier` Kopyalamak için nesne.  
 
-## <a name="wait"></a>bekleme 
+## <a name="wait">bekleme</a> 
 Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütmeyi durdurmak için iş parçacığı (döşeme) bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi 
@@ -86,7 +90,7 @@ Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesin
 void wait() const restrict(amp);  
 ```    
 
-## <a name="wait_with_all_memory_fence"></a>wait_with_all_memory_fence   
+## <a name="wait_with_all_memory_fence"></a>  wait_with_all_memory_fence   
 Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu, tüm bellek erişimler iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi 
@@ -96,7 +100,7 @@ void wait_with_all_memory_fence() const restrict(amp);
 ```  
   
 
-## <a name="wait_with_global_memory_fence"></a>wait_with_global_memory_fence   
+## <a name="wait_with_global_memory_fence"></a>  wait_with_global_memory_fence   
 Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu, tüm genel bellek erişimler iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi 
@@ -105,7 +109,7 @@ Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıy�
 void wait_with_global_memory_fence() const  restrict(amp);  
 ```
 
-## <a name="wait_with_tile_static_memory_fence"></a>wait_with_tile_static_memory_fence   
+## <a name="wait_with_tile_static_memory_fence"></a>  wait_with_tile_static_memory_fence   
 Tüm iş parçacıklarının tüm iş parçacıkları bir kutucuk, bu çağrıyı ulaştınız kadar döşemesinin yürütülmesini engeller. Bu sağlar `tile_static` erişir iş parçacığı döşemesinin başka bir iş parçacığı görünür ve program sırayla yürütülen bellek.  
   
 ### <a name="syntax"></a>Sözdizimi 

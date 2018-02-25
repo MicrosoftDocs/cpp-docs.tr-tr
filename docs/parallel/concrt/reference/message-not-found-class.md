@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - message_not_found
 - CONCRT/concurrency::message_not_found
 - CONCRT/concurrency::message_not_found::message_not_found
-dev_langs: C++
-helpviewer_keywords: message_not_found class
+dev_langs:
+- C++
+helpviewer_keywords:
+- message_not_found class
 ms.assetid: a96b9995-5ad7-4600-83c8-c15e329ff10e
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 245f62879d1f44c7363b13f369b9f834231f6678
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fe9fe309a7fd80f564c5ea2e4600e135112c6aa2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="messagenotfound-class"></a>message_not_found Sınıfı
 Bu sınıf, bir ileti bloğu istenen ileti bulamıyor olduğunda oluşturulan bir özel açıklar.  
@@ -52,7 +56,7 @@ class message_not_found : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>message_not_found 
+##  <a name="ctor"></a> message_not_found 
 
  Oluşturan bir `message_not_found` nesnesi.  
   

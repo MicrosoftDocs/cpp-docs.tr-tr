@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc-pragma.vtordisp
 - vtordisp_CPP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pragmas, vtordisp
 - vtordisp pragma
 ms.assetid: 05b7d73c-43fa-4b62-8c8a-170a9e427391
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2b06584862e7aa09b7a271f1c999787eed84d7af
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3cdb90de659dfe0f366d6501bc18c18e0cf39fff
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="vtordisp"></a>vtordisp
 **C++ özel**  
@@ -63,7 +66,7 @@ ms.lasthandoff: 12/21/2017
   
  Varsayılan olan `1` veya `on` değerlerinin belirtilmesi, gizli `vtordisp` üyelerini gerektiklerinde etkinleştirir.  
   
- Belirtme `2` gizli etkinleştirir `vtordisp` sanal işlevlere sahip tüm sanal temelleri için üyeleri.  `vtordisp(2)`doğru performansını sağlamak gerekli olabilir `dynamic_cast` kısmen oluşturulan bir nesne üzerinde. Daha fazla bilgi için bkz: [Derleyici Uyarısı (düzey 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).  
+ Belirtme `2` gizli etkinleştirir `vtordisp` sanal işlevlere sahip tüm sanal temelleri için üyeleri.  `vtordisp(2)` doğru performansını sağlamak gerekli olabilir `dynamic_cast` kısmen oluşturulan bir nesne üzerinde. Daha fazla bilgi için bkz: [Derleyici Uyarısı (düzey 1) C4436](../error-messages/compiler-warnings/compiler-warning-level-1-c4436.md).  
   
  Bağımsız değişkeni olmayan `#pragma vtordisp()`, vtordisp ayarını başlangıç ayarına geri yükler.  
   

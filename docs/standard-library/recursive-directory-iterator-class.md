@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: filesystem/std::tr2::sys::recursive_directory_iterator
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- filesystem/std::tr2::sys::recursive_directory_iterator
+dev_langs:
+- C++
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 55e44e447ee8ad2e449c46acb5535a41346fd19f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c432cde8a4c565e6195658ab27ce5f2cb1838f6a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator Sınıfı
 büyük olasılıkla içinde alt dizinler yinelemeli olarak azalan bir dizin adlarında aracılığıyla dizilerinin bir giriş yineleyici açıklar. Yineleyici X, ifade için * X hesaplar için dosya adını ve durumunu hakkında bilinen herhangi bir şey sarmalar sınıfı directory_entry bir nesne.  
@@ -56,7 +60,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
   
 2.  Disable_recursion_pending çağırırsanız artışı sırasında karşılaşılan bir sonraki dizin taranan yinelemeli olmaz.  
   
-## <a name="recursivedirectoryiteratordepth"></a>recursive_directory_iterator::Depth  
+## <a name="recursivedirectoryiteratordepth"></a>recursive_directory_iterator::depth  
   
 ```  
 int depth() const;
@@ -72,7 +76,7 @@ void disable_recursion_pending();
   
  Üye işlevi true no_push içinde depolar.  
   
-## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator! =  
+## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator!=  
   
 ```  
 bool operator!=(const recursive_directory_iterator& right) const;
@@ -80,7 +84,7 @@ bool operator!=(const recursive_directory_iterator& right) const;
   
  Üye işleci verir! (* Bu sağ ==).  
   
-## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator =  
+## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator=  
   
 ```  
 recursive_directory_iterator& operator=(const recursive_directory_iterator&) = default;  
@@ -89,7 +93,7 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
   
  Varsayılan üye atama işleçleri beklendiği gibi davranır.  
   
-## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator ==  
+## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator==  
   
 ```  
 bool operator==(const recursive_directory_iterator& right) const;
@@ -97,7 +101,7 @@ bool operator==(const recursive_directory_iterator& right) const;
   
  Üye işleci yalnızca her iki, true döndürür * bu ve bitiş dizisi yineleyiciler veya her ikisini de doğru olan değil end-in-sırası-yineleyiciler.  
   
-## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator *  
+## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator*  
   
 ```  
 const directory_entry& operator*() const;
@@ -105,7 +109,7 @@ const directory_entry& operator*() const;
   
  Üye işleci myentry döndürür.  
   
-## <a name="recursivedirectoryiteratoroperator-"></a>recursive_directory_iterator::operator ->  
+## <a name="recursivedirectoryiteratoroperator-"></a>recursive_directory_iterator::operator->  
   
 ```  
 const directory_entry * operator->() const;
@@ -113,7 +117,7 @@ const directory_entry * operator->() const;
   
  Döndürür & ** Bu.  
   
-## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator ++  
+## <a name="recursivedirectoryiteratoroperator"></a>recursive_directory_iterator::operator++  
   
 ```  
 recursive_directory_iterator& operator++();
@@ -123,7 +127,7 @@ recursive_directory_iterator& operator++(int);
   
  İlk üye işlevi increment() çağırır ve ardından döndürür * bu. İkinci üye işlevi nesne bir kopyasını oluşturur, increment() çağırır ve ardından kopya döndürür.  
   
-## <a name="recursivedirectoryiteratoroptions"></a>recursive_directory_iterator::Options  
+## <a name="recursivedirectoryiteratoroptions"></a>recursive_directory_iterator::options  
   
 ```  
 directory_options options() const;
@@ -131,7 +135,7 @@ directory_options options() const;
   
  Myoptions döndürür.  
   
-## <a name="recursivedirectoryiteratorpop"></a>recursive_directory_iterator::POP  
+## <a name="recursivedirectoryiteratorpop"></a>recursive_directory_iterator::pop  
   
 ```  
 void pop();
@@ -184,6 +188,6 @@ recursive_directory_iterator& increment(error_code& ec) noexcept;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<FileSystem >](../standard-library/filesystem.md)   
+ [\<filesystem>](../standard-library/filesystem.md)   
  [Dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md)
 

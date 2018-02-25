@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedOr8_nf
 - _InterlockedOr_HLEAcquire
@@ -34,7 +35,8 @@ f1_keywords:
 - _InterlockedOr64_HLEAcquire
 - _InterlockedOr16
 - _InterlockedOr64_nf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _InterlockedOr_acq intrinsic
 - InterlockedOr64 intrinsic
@@ -63,19 +65,20 @@ helpviewer_keywords:
 - _InterlockedOr16_rel intrinsic
 - _InterlockedOr_HLEAcquire intrinsic
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5d00821b3698883933c464178a06ecffcb5b8fbd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 44949aad405fbfdad776548a73a3152595ffa158
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockedor-intrinsic-functions"></a>_InterlockedOr iç işlevler
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Veya bir değişken işlemi birden çok iş parçacığı tarafından paylaşılan bir atomik Bitsel gerçekleştirebilirsiniz.  
   
@@ -181,10 +184,10 @@ __int64 _InterlockedOr64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`Value`  
+ [içinde out] `Value`  
  Sonuç değiştirilecek ilk işlenen bir işaretçi.  
   
- [in]`Mask`  
+ [in] `Mask`  
  İkinci işlenen.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -194,10 +197,10 @@ __int64 _InterlockedOr64_rel(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`, `_InterlockedOr64`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`, `_InterlockedOr64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM|\<intrin.h >|  
 |`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`, `_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`, `_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Her işlev adına bağımsız bit boyutunu belirtir.  

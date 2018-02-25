@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::binomial_distribution
 - random/std::binomial_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::binomial_distribution::param_type::t
 - random/std::binomial_distribution::param_type::operator==
 - random/std::binomial_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::binomial_distribution [C++]
 - std::binomial_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 493d20359d5656f5e97e601d90e831f6a1d5b438
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0576050177fa7685f38265ba24f43dab01749b73
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="binomialdistribution-class"></a>binomial_distribution Sınıfı
 Terimli dağıtım oluşturur.  
@@ -236,7 +239,7 @@ Histogram for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="binomial_distribution"></a>binomial_distribution::binomial_distribution  
+##  <a name="binomial_distribution"></a>  binomial_distribution::binomial_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -255,13 +258,13 @@ explicit binomial_distribution(const param_type& parm);
 `param_type` Dağıtım oluşturmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0 ≤ t` ve`0.0 ≤ p ≤ 1.0`  
+**Önkoşul:** `0 ≤ t` ve `0.0 ≤ p ≤ 1.0`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p* ve, depolanan `t` değeri tutan değeri *t*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>binomial_distribution::param_type  
+##  <a name="param_type"></a>  binomial_distribution::param_type  
 Dağıtım tüm parametreleri depolar.  
   
 ```cpp  
@@ -283,11 +286,11 @@ struct param_type {
 *p*  
 `p` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
  `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0 ≤ t` ve`0.0 ≤ p ≤ 1.0`  
+**Önkoşul:** `0 ≤ t` ve `0.0 ≤ p ≤ 1.0`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

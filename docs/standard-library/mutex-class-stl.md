@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - mutex/std::mutex
 - mutex/std::mutex::mutex
@@ -14,9 +15,10 @@ f1_keywords:
 - mutex/std::mutex::native_handle
 - mutex/std::mutex::try_lock
 - mutex/std::mutex::unlock
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 7999d055-f74f-4303-810f-8d3c9cde2f69
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -27,12 +29,13 @@ helpviewer_keywords:
 - std::mutex [C++], native_handle
 - std::mutex [C++], try_lock
 - std::mutex [C++], unlock
-ms.workload: cplusplus
-ms.openlocfilehash: 1c1039ceae802984762dbb1aaf50c259bf8a2e95
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: acc1d6625bcf8d76f88e8571cba34ef974856177
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mutex-class-c-standard-library"></a>Mutex sınıfı (Standart C++ Kitaplığı)
 Temsil eden bir *mutex türü*. Bu tür nesneler bir programdan karşılıklı dışlama zorlamak için kullanılabilir.  
@@ -49,8 +52,8 @@ class mutex;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Mutex](#mutex)|Oluşturan bir `mutex` nesnesi.|  
-|[Mutex:: ~ mutex yok Edicisi](#dtormutex_destructor)|Tarafından kullanılan tüm kaynakları serbest `mutex` nesnesi.|  
+|[mutex](#mutex)|Oluşturan bir `mutex` nesnesi.|  
+|[mutex::~mutex Destructor](#dtormutex_destructor)|Tarafından kullanılan tüm kaynakları serbest `mutex` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -66,7 +69,7 @@ class mutex;
   
  **Namespace:** std  
   
-##  <a name="lock"></a>Mutex::LOCK
+##  <a name="lock"></a>  mutex::lock
  İş parçacığı sahipliğini alıncaya kadar çağıran iş parçacığı engeller `mutex`.  
   
 ```cpp  
@@ -76,14 +79,14 @@ void lock();
 ### <a name="remarks"></a>Açıklamalar  
  Çağıran iş parçacığı zaten sahipse `mutex`, tanımlanmamış bir davranıştır.  
   
-##  <a name="mutex"></a>Mutex::mutex Oluşturucusu  
+##  <a name="mutex"></a>  Mutex::mutex Oluşturucusu  
  Oluşturan bir `mutex` nesnesi kilitli değil.  
   
 ```cpp  
 constexpr mutex() noexcept;
 ```  
   
-##  <a name="dtormutex_destructor"></a>Mutex:: ~ mutex yok Edicisi  
+##  <a name="dtormutex_destructor"></a>  mutex::~mutex Destructor  
  Tarafından kullanılan tüm kaynakları serbest `mutex` nesnesi.  
   
 ```cpp  
@@ -93,7 +96,7 @@ constexpr mutex() noexcept;
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi çalıştığında nesne kilitliyse tanımlanmamış bir davranıştır.  
   
-##  <a name="native_handle"></a>Mutex::native_handle
+##  <a name="native_handle"></a>  mutex::native_handle
  Mutex tanıtıcı temsil eden uygulamaya özel tür döndürür. Mutex tanıtıcı uygulamaya özel yollarla kullanılabilir.  
   
 ```
@@ -101,9 +104,9 @@ native_handle_type native_handle();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `native_handle_type`olarak tanımlanan bir `Concurrency::critical_section *` olarak cast `void *`.  
+ `native_handle_type` olarak tanımlanan bir `Concurrency::critical_section *` olarak cast `void *`.  
   
-##  <a name="try_lock"></a>Mutex::try_lock
+##  <a name="try_lock"></a>  Mutex::try_lock
  Sahipliğini almayı denediğinde `mutex` engelleme olmadan.  
   
 ```cpp  
@@ -111,12 +114,12 @@ bool try_lock();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Yöntem başarıyla sahipliğini elde ederse `mutex`; Aksi halde, `false`.  
+ `true` Yöntem başarıyla sahipliğini elde ederse `mutex`; Aksi halde, `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağıran iş parçacığı zaten sahipse `mutex`, tanımlanmamış bir davranıştır.  
   
-##  <a name="unlock"></a>Mutex::Unlock
+##  <a name="unlock"></a>  mutex::unlock
  Serbest sahipliğini `mutex`.  
   
 ```cpp  
@@ -128,7 +131,7 @@ void unlock();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<Mutex >](../standard-library/mutex.md)
+ [\<mutex>](../standard-library/mutex.md)
 
 
 

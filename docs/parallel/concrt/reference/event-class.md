@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - event
 - CONCRT/concurrency::event
@@ -27,11 +27,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8c14cce1f34e4957b8c22bdbb8eab82fb4c0c58
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c2301e06554d99529c7d4e4e5215208dc4265970
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="event-class"></a>event Sınıfı
 Eşzamanlılık Çalışma zamanı açıkça farkındadır elle sıfırlama olayı.  

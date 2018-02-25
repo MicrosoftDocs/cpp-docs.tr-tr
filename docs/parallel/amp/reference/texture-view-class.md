@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - texture_view
 - AMP_GRAPHICS/texture_view
@@ -19,21 +20,23 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::sample
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7ed3f9adb564676d54e06152bfd7d277c4a5d952
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 72f88cc10da623cbda4f3426596fe07650bf4b46
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="textureview-class"></a>texture_view Sınıfı
-Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view`değer türü olan dokular okumak için yalnızca kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimleri okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
+Okuma erişimi ve bir doku yazma erişimi sağlar. `texture_view` değer türü olan dokular okumak için yalnızca kullanılabilir `int`, `unsigned int`, veya `float` varsayılan 32-bit bpse sahip. Diğer doku biçimleri okumak için kullandığınız `texture_view<const value_type, _Rank>`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -71,8 +74,8 @@ class texture_view<const value_type, _Rank>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[texture_view Oluşturucusu](#ctor)|Fazla Yüklendi. Oluşturan bir `texture_view` örneği.|  
-|[~ texture_view yok Edicisi](#ctor)|Bozar `texture_view` örneği.|  
+|[texture_view Constructor](#ctor)|Fazla Yüklendi. Oluşturan bir `texture_view` örneği.|  
+|[~texture_view Destructor](#ctor)|Bozar `texture_view` örneği.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -91,8 +94,8 @@ class texture_view<const value_type, _Rank>
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator()](#operator_call)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
-|[[] işleci](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
-|[işleç =](#operator_eq)|Fazla Yüklendi. Atama işleci.|  
+|[operator[]](#operator_at)|Fazla Yüklendi. Dizine göre öğe değerini alır.|  
+|[operator=](#operator_eq)|Fazla Yüklendi. Atama işleci.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
@@ -110,7 +113,7 @@ class texture_view<const value_type, _Rank>
   
  **Namespace:** concurrency::graphics  
   
-##  <a name="dtor"></a>~ texture_view 
+##  <a name="dtor"></a> ~ texture_view 
 
  Bozar `texture_view` örneği.  
   
@@ -118,7 +121,7 @@ class texture_view<const value_type, _Rank>
 ~texture_view() restrict(amp, cpu);
 ```  
   
-##  <a name="ctor"></a>texture_view 
+##  <a name="ctor"></a> texture_view 
 
  Oluşturan bir `texture_view` örneği.  
   
@@ -158,17 +161,17 @@ texture_view(// [7] copy constructor
   
 ### <a name="parameters"></a>Parametreler  
  `_Src`  
- [1, 2] Oluşturucusu  
+ [1, 2] Constructor  
  `texture` Üzerine yazılabilir `texture_view` oluşturulur.  
   
- [3, 4] Oluşturucusu  
+ [3, 4] Constructor  
  `texture` Üretileceği Paylaşımsız `texture_view` oluşturulur.  
   
  `_Other`  
  [5] kopya Oluşturucu  
  Yazılabilir kaynak `texture_view`.  
   
- [6, 7] Kopya Oluşturucu  
+ [6, 7] Copy Constructor  
  Yazılabilir olmayan kaynak `texture_view`.  
   
  `_Mipmap_level`  
@@ -180,7 +183,7 @@ texture_view(// [7] copy constructor
  `_Mip_levels`  
  Mipmap düzey üzerinden erişilebilir sayısını `texture_view`.  
   
-##  <a name="gather_red"></a>gather_red 
+##  <a name="gather_red"></a> gather_red 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels kırmızı (x) bileşenlerinin döndürür.  
   
@@ -210,7 +213,7 @@ const gather_return_type gather_red(
 ### <a name="return-value"></a>Dönüş Değeri  
  4 kırmızı (x) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
   
-##  <a name="gather_green"></a>gather_green 
+##  <a name="gather_green"></a> gather_green 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels yeşil (y) bileşenlerinin döndürür.  
   
@@ -240,7 +243,7 @@ const gather_return_type gather_green(
 ### <a name="return-value"></a>Dönüş Değeri  
  4 yeşil (y) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
   
-##  <a name="gather_blue"></a>gather_blue 
+##  <a name="gather_blue"></a> gather_blue 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels mavi (z) bileşenlerinin döndürür.  
   
@@ -270,7 +273,7 @@ const gather_return_type gather_blue(
 ### <a name="return-value"></a>Dönüş Değeri  
  4 kırmızı (x) bileşeni içeren bir derece 4 kısa vektör texel değerleri örneklenen.  
   
-##  <a name="gather_alpha"></a>gather_alpha 
+##  <a name="gather_alpha"></a> gather_alpha 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatlarının adresindeki doku örnekleri ve dört örneklenen texels alfa (w) bileşenlerinin döndürür.  
   
@@ -300,7 +303,7 @@ const gather_return_type gather_alpha(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir derece kısa 4 vektör alfa (4 bileşeninin texel değerleri örneklenen w) içeren.  
   
-##  <a name="get"></a>Al 
+##  <a name="get"></a> Al 
 
  Belirtilen dizindeki öğenin değerini alır.  
   
@@ -324,7 +327,7 @@ value_type get(
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğenin değeri.  
   
-##  <a name="operator_eq"></a>işleç = 
+##  <a name="operator_eq"></a> işleç = 
 
  Belirtildiği gibi aynı doku görünümünü atar `texture_view` bu `texture_view` örneği.  
   
@@ -343,7 +346,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
   
 ### <a name="parameters"></a>Parametreler  
  `_Other`  
- [1, 2] Kopya Oluşturucu  
+ [1, 2] Copy Constructor  
  Bir yazılabilir `texture_view` nesnesi.  
   
  [3] kopya Oluşturucu  
@@ -352,7 +355,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `texture_view` örneği.  
   
-##  <a name="operator_at"></a>[] işleci 
+##  <a name="operator_at"></a> [] işleci 
 
  Dizine göre öğe değerini döndürür.  
   
@@ -379,7 +382,7 @@ value_type operator[] (int _I0) const restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğesi değeri dizine göre `_Index`.  
   
-##  <a name="operator_call"></a>operator() 
+##  <a name="operator_call"></a> operator() 
 
  Dizine göre öğe değerini döndürür.  
   
@@ -437,7 +440,7 @@ value_type operator() (
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğesi değeri dizine göre `_Index`.  
   
-##  <a name="sample"></a>Örnek 
+##  <a name="sample">Örnek</a> 
 
  Belirtilen örnekleme yapılandırmayı kullanarak belirtilen koordinatları ve ayrıntı düzeyi doku örnekleri.  
   
@@ -476,7 +479,7 @@ value_type sample(
 ### <a name="return-value"></a>Dönüş Değeri  
  Ara değerli örnek değer.  
   
-##  <a name="set"></a>ayarlama 
+##  <a name="set"></a> set 
 
  Belirtilen değer için belirtilen dizindeki öğeyi değerini ayarlar.  
   
@@ -493,7 +496,7 @@ void set(
  `value`  
  Öğe ayarlanacak değer.  
   
-##  <a name="value_type"></a>value_type 
+##  <a name="value_type"></a> value_type 
 
  Texture_view öğelerinin değer türü.  
   

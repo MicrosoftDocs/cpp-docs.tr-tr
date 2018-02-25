@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedExchangePointer_cpp
 - _InterlockedExchangePointer_rel
@@ -16,7 +17,8 @@ f1_keywords:
 - _InterlockedExchangePointer
 - _InterlockedExchangePointer_acq_cpp
 - _InterlockedExchangePointer_HLEAcquire
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _InterlockedExchangePointer_rel intrinsic
 - _InterlockedExchangePointer_HLERelease intrinsic
@@ -27,19 +29,20 @@ helpviewer_keywords:
 - InterlockedExchangePointer_acq intrinsic
 - InterlockedExchangePointer intrinsic
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ba9b7ac5c20c7b4bd4c43db3d76fbb5cfcb331c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c02d81376a6f923e086933f619f6ef13fcfa5b0a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_InterlockedExchangePointer iç işlevler
-**Microsoft özel**  
+**Microsoft Specific**  
   
  İkinci bağımsız değişken olarak geçirilen ilk adresi kopyalar ve ilk özgün adresini döndüren bir atomik exchange işlemi gerçekleştirin.  
   
@@ -73,10 +76,10 @@ void * _InterlockedExchangePointer_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`Target`  
+ [içinde out] `Target`  
  Exchange için değeri işaretçisine işaretçi. İşlevin değeri ayarlar `Value` ve önceki değerine döndürür.  
   
- [in]`Value`  
+ [in] `Value`  
  Tarafından değeriyle değiştirilebilmesi için değer işaret için `Target`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -86,9 +89,9 @@ void * _InterlockedExchangePointer_HLERelease(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedExchangePointer`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedExchangePointer`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM|\<intrin.h >|  
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]HLE desteği|\<immintrin.h >|  
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)] HLE desteği|\<immintrin.h >|  
   
  X86 üzerinde mimarisi, `_InterlockedExchangePointer` çağıran makro `_InterlockedExchange`.  
   

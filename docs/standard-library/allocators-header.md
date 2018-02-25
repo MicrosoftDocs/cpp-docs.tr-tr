@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <allocators>
-dev_langs: C++
-helpviewer_keywords: allocators header
+ms.topic: reference
+f1_keywords:
+- <allocators>
+dev_langs:
+- C++
+helpviewer_keywords:
+- allocators header
 ms.assetid: 4393a607-4df8-4278-bbb2-c8ec52e60b83
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b87e52294ccd61cd349ed6a85eca6760ace2c473
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 386069d436c004dec19cd6edc7f5689971331227
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltallocatorsgt"></a>&lt;allocators&gt;
 Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş Yardım çeşitli şablonlar tanımlar.  
@@ -100,7 +105,7 @@ Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş 
   
 - [sync_none](../standard-library/sync-none-class.md)  
   
-- [sync_per_kapsayıcı](../standard-library/sync-per-container-class.md)  
+- [sync_per_container](../standard-library/sync-per-container-class.md)  
   
 - [sync_per_thread](../standard-library/sync-per-thread-class.md)  
   
@@ -155,14 +160,14 @@ Ayırın ve bellek blokları düğümünü tabanlı kapsayıcıları için boş 
 |[cache_chunklist](../standard-library/cache-chunklist-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|  
 |[cache_freelist](../standard-library/cache-freelist-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|  
 |[cache_suballoc](../standard-library/cache-suballoc-class.md)|Ayırır ve bellek blokları tek bir boyutta kaldırır bloğu ayırıcısı tanımlar.|  
-|[FreeList](../standard-library/freelist-class.md)|Bellek blokları bir listesini yönetir.|  
+|[freelist](../standard-library/freelist-class.md)|Bellek blokları bir listesini yönetir.|  
 |[max_fixed_size](../standard-library/max-fixed-size-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) sabit uzunluk nesnesine.|  
 |[max_none](../standard-library/max-none-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) sıfır en fazla nesne.|  
 |[max_unbounded](../standard-library/max-unbounded-class.md)|En büyük uzunluğu sınırlamaz max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesnesi.|  
 |[max_variable_size](../standard-library/max-variable-size-class.md)|Sınırlar max sınıfı nesneyi tanımlayan bir [freelist](../standard-library/freelist-class.md) nesne sayısı için kabaca orantılıdır bir maksimum uzunluğu için ayrılan bellek blokları.|  
 |[rts_alloc](../standard-library/rts-alloc-class.md)|Rts_alloc Şablon sınıfı açıklayan bir [filtre](../standard-library/allocators-header.md) tutan bir dizi önbelleği örnekleri ve ayırma ve ayırmayı kaldırma yerine çalışma zamanında derleme zamanında kullanmak için hangi örneğinin belirler.|  
 |[sync_none](../standard-library/sync-none-class.md)|Hiçbir eşitleme sağlayan eşitleme filtresi açıklar.|  
-|[sync_per_kapsayıcı](../standard-library/sync-per-container-class.md)|Her bir ayırıcı nesne için ayrı önbellek nesnesini sağlayan eşitleme filtresi açıklar.|  
+|[sync_per_container](../standard-library/sync-per-container-class.md)|Her bir ayırıcı nesne için ayrı önbellek nesnesini sağlayan eşitleme filtresi açıklar.|  
 |[sync_per_thread](../standard-library/sync-per-thread-class.md)|Her iş parçacığı için ayrı önbellek nesnesini sağlayan eşitleme filtresi açıklar.|  
 |[sync_shared](../standard-library/sync-shared-class.md)|Tüm allocators tarafından paylaşılan bir önbellek nesnesi erişimi denetlemek için bir mutex kullanan bir eşitleme filtresi açıklar.|  
   

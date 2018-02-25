@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,11 +19,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2794da411458ccdf83725b80a6b5ba8371e53248
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 6049d92ab2ca1f7f724f3e27037c5df5c4304ea6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>Ekleme İşleçlerini Kullanma ve Biçimi Denetleme
 Bu konuda biçimi denetleme ve ekleme işleçlerini kendi sınıfları için oluşturma gösterilmektedir. Ekleme (**<<**) tüm standart C++ veri türleri için önceden programlanmış, hangi işleci bir çıkış akışı nesneye bayt gönderir. Ekleme işleçlerini "tamsayı bağımsız değişkeni varsayılan biçimi değiştirme öğeleri olan önceden tanımlanmış manipülatörleri ile" çalışır.  
@@ -38,7 +38,7 @@ Bu konuda biçimi denetleme ve ekleme işleçlerini kendi sınıfları için olu
   
 - [Radix](#vclrfradixanchor6)  
   
-##  <a name="vclrfoutputwidthanchor3"></a>Çıktı genişliği  
+##  <a name="vclrfoutputwidthanchor3">Çıktı genişliği</a>  
  Çıkış hizalamak için her öğe için çıktı genişliği koyarak belirttiğiniz `setw` manipulator akış veya çağırarak **genişliği** üye işlevi. Bu örnek sağa geniş bir sütun en az 10 karakter değerleri hizalar:  
   
 ```  
@@ -122,7 +122,7 @@ Jimmy     35.36
   
  Ne `setw` ya da **genişliği** değerleri tamsayıya dönüştürür. Biçimlendirilmiş çıkışı varsa genişliği değerin tamamını yazdırır, akışın kesinlik ayarı tabi aşıyor. Her ikisi de `setw` ve **genişliği** yalnızca aşağıdaki alanı etkiler. Alan genişliği döner varsayılan davranışını (gerekli genişlik) bir alan yazdırılan sonra. Ancak, diğer akış biçimlendirme seçeneklerini yürürlükte değiştirilen kadar kalır.  
   
-##  <a name="vclrfalignmentanchor4"></a>Hizalama  
+##  <a name="vclrfalignmentanchor4">Hizalama</a>  
  Metni sağa hizalı varsayılan çıkış akışları. Önceki örnekte adları Sola Hizala ve sayıları sağa hizala için yerini **için** gibi döngü:  
   
 ```  
@@ -144,7 +144,7 @@ Stan     4358.24
   
  Left-align bayrağı kullanılarak ayarlanır [setiosflags](../standard-library/iomanip-functions.md#setiosflags) manipulator ile `left` Numaralandırıcı. Bu Numaralandırıcı tanımlanan [ios](../standard-library/basic-ios-class.md) kendi başvuru içermelidir nedenle **ios::** öneki. [Resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) manipulator left-align bayrağını devre dışı bırakır. Farklı **genişliği** ve `setw`, etkisini `setiosflags` ve `resetiosflags` kalıcıdır.  
   
-##  <a name="vclrfprecisionanchor5"></a>Duyarlılık  
+##  <a name="vclrfprecisionanchor5">Duyarlılık</a>  
  Kayan nokta duyarlık için varsayılan değer altı ' dir. Örneğin, 3466.9768 numarası 3466.98 yazdırır. Bu değer yazdırma şeklini değiştirmek için kullanın [setprecision](../standard-library/iomanip-functions.md#setprecision) manipulator. İki bayrak manipulator vardır: [sabit](../standard-library/ios-functions.md#fixed) ve [bilimsel](../standard-library/ios-functions.md#scientific). Varsa [sabit](../standard-library/ios-functions.md#fixed) ayarlandığında, 3466.976800 olarak numara yazdırır. Varsa **bilimsel** , bunu yazdırır 3.4669773 + 003 ayarlanmış.  
   
  Gösterilen kayan nokta sayıları görüntülemek için [hizalama](#vclrfalignmentanchor4) önemli bir rakam ile Değiştir **için** gibi döngü:  
@@ -196,7 +196,7 @@ Stan    4.4e+003
   
  Yeniden program bir rakam ondalık ayırıcıdan sonra yazdırır. Her iki **ios::fixed** veya **ios::scientific** , duyarlılık değeri ondalık ayırıcıdan sonra basamak sayısını belirler ayarlanmadı. Hiçbiri bayrağı ayarlarsanız, duyarlılık değeri toplam önemli basamak sayısını belirler. `resetiosflags` Manipulator bu bayrakları temizler.  
   
-##  <a name="vclrfradixanchor6"></a>Sayı tabanını  
+##  <a name="vclrfradixanchor6"></a> sayı tabanını  
  **Ara**, **Eki**, ve **onaltılık** manipülatörleri giriş ve çıkış için varsayılan taban ayarlayın. Örneğin, eklerseniz **onaltılık** çıkış akışa nesne manipulator doğru bir onaltılık çıkış biçimi tamsayıların iç veri gösterimine çevirir. Sayıları, a ile f basamağı küçük harf olarak görüntülenen [büyük](../standard-library/ios-functions.md#uppercase) bayrağı (varsayılan) temizleyin; Aksi durumda, büyük harfle görüntülenir. Varsayılan taban olan **Ara** (ondalık).  
   
 ## <a name="quoted-strings-c14"></a>Tırnak içine alınmış dizeler (C ++ 14)  

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - iosfwd/std::ios
 - iosfwd/std::streamoff
@@ -14,13 +14,13 @@ f1_keywords:
 - iosfwd/std::wios
 - iosfwd/std::wstreampos
 ms.assetid: 0b962632-3439-44de-bf26-20c67a7f0ff3
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 493850d78e72e6b95408964a5e28d090a1dc58f1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 6c94f157a28c606db6e7523b9af18e972f870c46
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltiosgt-typedefs"></a>&lt;iOS&gt; tür tanımları
 ||||  
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/24/2017
 |[iOS](#ios)|[streamoff](#streamoff)|[streampos](#streampos)|  
 |[streamsize](#streamsize)|[wios](#wios)|[wstreampos](#wstreampos)|  
   
-##  <a name="ios"></a>iOS  
+##  <a name="ios">iOS</a>  
  Eski iostream kitaplığı ios sınıfından destekler.  
   
 ```  
@@ -38,7 +38,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türündeki öğeler için özelleştirilmiş `char` varsayılan karakter nitelikler ile.  
   
-##  <a name="streamoff"></a>streamoff  
+##  <a name="streamoff"></a>  streamoff  
  İç işlemleri destekler.  
   
 ```  
@@ -52,7 +52,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 ### <a name="remarks"></a>Açıklamalar  
  Türü işlemleri konumlandırma çeşitli akışında katılan bir bayt uzaklığı depolayan bir nesneyi tanımlayan imzalı bir tamsayıdır. Kendi gösterimi en az 32 değeri BITS içeriyor. Bir akış içinde rastgele bayt konumunu göstermek için mutlaka yeterince büyük değil. Değer **streamoff(-1)** genellikle hatalı uzaklığı gösterir.  
   
-##  <a name="streampos"></a>streampos  
+##  <a name="streampos"></a>  streampos  
  Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.  
   
 ```  
@@ -85,7 +85,7 @@ int main( )
 7  
 ```  
   
-##  <a name="streamsize"></a>streamsize  
+##  <a name="streamsize"></a>  streamsize  
  Akış boyutunu gösterir.  
   
 ```  
@@ -118,7 +118,7 @@ int main( )
 }  
 ```  
   
-##  <a name="wios"></a>wios  
+##  <a name="wios">wios</a>  
  Eski iostream kitaplığı wios sınıfından destekler.  
   
 ```  
@@ -128,7 +128,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_ios](../standard-library/basic-ios-class.md), türündeki öğeler için özelleştirilmiş `wchar_t` varsayılan karakter nitelikler ile.  
   
-##  <a name="wstreampos"></a>wstreampos  
+##  <a name="wstreampos"></a>  wstreampos  
  Arabellek işaretçi veya dosya işaretçisini geçerli konumunu tutar.  
   
 ```  
@@ -161,5 +161,5 @@ int main( )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<iOS >](../standard-library/ios.md)
+ [\<ios>](../standard-library/ios.md)
 

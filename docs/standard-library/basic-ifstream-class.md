@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - fstream/std::basic_ifstream
 - fstream/std::basic_ifstream::close
@@ -14,7 +15,8 @@ f1_keywords:
 - fstream/std::basic_ifstream::open
 - fstream/std::basic_ifstream::rdbuf
 - fstream/std::basic_ifstream::swap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::basic_ifstream [C++]
 - std::basic_ifstream [C++], close
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::basic_ifstream [C++], rdbuf
 - std::basic_ifstream [C++], swap
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d300abc29a88c8beaa5e5992b4bca073732b0233
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a9c923d4c3de5410ac65f9706d875300b0d07cbb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicifstream-class"></a>basic_ifstream Sınıfı
 Ayıklama öğelerinin denetleyen bir nesne ve akış arabellek sınıfının kodlanmış nesnelerden açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, türündeki öğeler ile `Elem`, karakter nitelikler sınıfı tarafından belirlenir `Tr`.  
@@ -104,20 +107,20 @@ This is the contents of basic_ifstream_class.txt.
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|  
 |[open](#open)|Bir dosyayı açar.|  
 |[rdbuf](#rdbuf)|Saklı Akış Arabellek adresini döndürür.|  
-|[değiştirme](#swap)|Bu içeriği alış verişleri `basic_ifstream` sağlanan içeriğinin `basic_ifstream`.|  
+|[Değiştirme](#swap)|Bu içeriği alış verişleri `basic_ifstream` sağlanan içeriğinin `basic_ifstream`.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Bu akış nesnesine içeriğini atar. Bu taşıma atama ilgili olan bir `rvalue` , değil ardınızda bir kopyası.|  
+|[operator=](#op_eq)|Bu akış nesnesine içeriğini atar. Bu taşıma atama ilgili olan bir `rvalue` , değil ardınızda bir kopyası.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<fstream >  
   
  **Namespace:** std  
   
-##  <a name="basic_ifstream"></a>basic_ifstream::basic_ifstream  
+##  <a name="basic_ifstream"></a>  basic_ifstream::basic_ifstream  
  Türünde bir nesne oluşturur `basic_ifstream`.  
   
 ```  
@@ -149,7 +152,7 @@ basic_ifstream(basic_ifstream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  İlk Oluşturucu çağırarak temel sınıfı başlatır [basic_istream](../standard-library/basic-istream-class.md)( `sb`), burada `sb` saklı nesne sınıfının [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem`, `Tr`>. Ayrıca başlatır `sb` çağırarak `basic_filebuf` <  `Elem`, `Tr`>.  
   
- İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_istream`( `sb`). Ayrıca başlatır `sb` çağırarak [basic_filebuf](../standard-library/basic-filebuf-class.md#basic_filebuf)< `Elem`, `Tr`>, ardından `sb`. [Açık](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::in`). İkinci işlevi null işaretçi döndürürse, oluşturucuyu çağırır **setstate**( `failbit`).  
+ İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_istream`( `sb`). Ayrıca başlatır `sb` çağırarak [basic_filebuf](../standard-library/basic-filebuf-class.md#basic_filebuf)< `Elem`, `Tr`>, ardından `sb`. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::in`). İkinci işlevi null işaretçi döndürürse, oluşturucuyu çağırır **setstate**( `failbit`).  
   
  Dördüncü Oluşturucu içeriğini nesnesiyle başlatır `right`, rvalue başvuru olarak işlem görür.  
   
@@ -177,7 +180,7 @@ int main(int argc, char **argv)
 }  
 ```  
   
-##  <a name="close"></a>basic_ifstream::Close  
+##  <a name="close"></a>  basic_ifstream::Close  
  Bir dosyayı kapatır.  
   
 ```  
@@ -190,7 +193,7 @@ void close();
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek **kapatmak**.  
   
-##  <a name="is_open"></a>basic_ifstream::is_open  
+##  <a name="is_open"></a>  basic_ifstream::is_open  
  Bir dosyanın açık olup olmadığını belirler.  
   
 ```  
@@ -206,7 +209,7 @@ bool is_open() const;
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open) kullanan bir örnek `is_open`.  
   
-##  <a name="open"></a>basic_ifstream::Open  
+##  <a name="open"></a>  basic_ifstream::Open  
  Bir dosyayı açar.  
   
 ```  
@@ -245,7 +248,7 @@ void open(
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) kullanan bir örnek **açmak**.  
   
-##  <a name="op_eq"></a>basic_ifstream::operator =  
+##  <a name="op_eq"></a>  basic_ifstream::operator =  
  Bu akış nesnesine içeriğini atar. Bir kopyasını bırakmaz arkasındaki bir rvalue içeren bir taşıma atama budur.  
   
 ```  
@@ -262,7 +265,7 @@ basic_ifstream& operator=(basic_ifstream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci içeriğini kullanarak nesne içeriğini değiştirir `right`, rvalue başvuru olarak işlem görür. Daha fazla bilgi için bkz: [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md).  
   
-##  <a name="rdbuf"></a>basic_ifstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_ifstream::rdbuf  
  Saklı Akış Arabellek adresini döndürür.  
   
 ```  
@@ -275,7 +278,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek `rdbuf`.  
   
-##  <a name="swap"></a>basic_ifstream::Swap  
+##  <a name="swap"></a>  basic_ifstream::Swap  
  İki içeriğini alış verişleri `basic_ifstream` nesneleri.  
   
 ```  

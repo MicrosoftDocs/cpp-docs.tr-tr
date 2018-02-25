@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - iomanip/std::<iomanip>
 - <iomanip>
-dev_langs: C++
-helpviewer_keywords: iomanip header
+dev_langs:
+- C++
+helpviewer_keywords:
+- iomanip header
 ms.assetid: 3681c346-4763-4037-bba4-cf0dc3447974
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7c2f229f5706902eac1c0326cfb446b4dc650c54
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7c24e11e1bc147ead7b564adf1cb57f09f1ff853
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltiomanipgt"></a>&lt;iomanip&gt;
 Dahil `iostreams` standart üstbilgi `<iomanip>` , her birkaç manipülatörleri tanımlamak için tek bir bağımsız değişken alın.  

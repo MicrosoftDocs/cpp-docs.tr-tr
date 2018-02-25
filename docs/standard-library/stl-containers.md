@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - C++ Standard Library, template class containers
 - containers, C++ Standard Library
 ms.assetid: 8e915ca1-19ba-4f0d-93c8-e2c3bfd638eb
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 23979709bcc43074d6db2f042fdde850f6894e73
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a69230b190671fe768cdf4473b24d0c942743943
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="c-standard-library-containers"></a>C++ Standart Kitaplığı kapsayıcıları
 Standart Kitaplığı, ilgili nesne koleksiyonları depolamak için çeşitli tür kullanımı uyumlu kapsayıcıları sağlar. Sınıf şablonları kapsayıcılardır; bir kapsayıcı değişkeni bildirirken kapsayıcı tutacak öğelerin türünü belirtin. Başlatıcı Listeleri ile kapsayıcıları oluşturulabilir. Ekleme ve öğeleri kaldırma ve diğer işlemleri gerçekleştirmek için üye işlevleri sahiptirler.  
@@ -30,7 +33,7 @@ Standart Kitaplığı, ilgili nesne koleksiyonları depolamak için çeşitli t�
   
  Kapsayıcı üç kategoride bölünmüş: dizisi kapsayıcıları, ilişkilendirilebilir kapsayıcıları ve kapsayıcı bağdaştırıcıları.  
   
-##  <a name="sequence_containers"></a>Sıra kapsayıcıları  
+##  <a name="sequence_containers"></a> Sıra kapsayıcıları  
  Sıralı kapsayıcı, belirttiğiniz eklenen öğelerin sıralaması korur.  
   
  A `vector` kapsayıcı bir dizi gibi davranır, ancak otomatik olarak büyüyebilir gerektiği gibi. Rasgele erişim ve bitişik depolanır ve uzunluğu çok esnektir. Bu nedenle ve hakkında daha fazla bilgi için `vector` çoğu uygulama için tercih edilen dizisi kapsayıcıdır. Zaman şüpheli için ne tür bir sıralı kapsayıcı kullanmak için bir vektör kullanarak başlayın! Daha fazla bilgi için bkz: [vector sınıfı](../standard-library/vector-class.md).  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - queue/std::queue::container_type
 - queue/std::queue::size_type
@@ -17,7 +18,8 @@ f1_keywords:
 - queue/std::queue::pop
 - queue/std::queue::push
 - queue/std::queue::size
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::queue [C++], container_type
 - std::queue [C++], size_type
@@ -29,16 +31,17 @@ helpviewer_keywords:
 - std::queue [C++], push
 - std::queue [C++], size
 ms.assetid: 28c20ab0-3a72-4185-9e0f-5a44eea0e204
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9161a04f9007f660df7ea7293426e9a90ada20c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e7f8fe2594dcfe3d0535bf02470e76e8356ab20e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="queue-class"></a>queue Sınıfı
 Ön ve arka öğelere erişimi sınırlandırma bazı temel kapsayıcı türü için bir kısıtlama işlevselliği sağlayan bir şablon kapsayıcı bağdaştırıcısının sınıfı. Öğeleri geri eklenemez veya önden kaldırıldı ve öğeleri ya da sıra sonunda denetlenecek.  
@@ -51,7 +54,7 @@ class queue
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Türü*  
+ Türü  
  Kuyrukta depolanması için öğe veri türü  
   
  `Container`  
@@ -76,7 +79,7 @@ class queue
   
 |||  
 |-|-|  
-|[sırası](#queue)|Oluşturan bir `queue` diğer bir deyişle boş ya da bir taban kapsayıcı nesnesinin kopyasıdır.|  
+|[queue](#queue)|Oluşturan bir `queue` diğer bir deyişle boş ya da bir taban kapsayıcı nesnesinin kopyasıdır.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -91,18 +94,18 @@ class queue
 |||  
 |-|-|  
 |[Geri](#back)|Bir başvuru son en son eklenen ve öğenin adresindeki yedeklemesini döndürür `queue`.|  
-|[boş](#empty)|Varsa testleri `queue` boş.|  
+|[empty](#empty)|Varsa testleri `queue` boş.|  
 |[Ön](#front)|İlk öğe ön kısmında bir başvuru döndürür `queue`.|  
 |[POP](#pop)|Bir öğenin önüne kaldırır `queue`.|  
 |[push](#push)|Bir öğe için arkası ekler `queue`.|  
-|[boyutu](#size)|Öğelerin sayısını döndürür `queue`.|  
+|[Boyutu](#size)|Öğelerin sayısını döndürür `queue`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<sıra >  
   
  **Namespace:** std  
   
-##  <a name="back"></a>Queue::Back  
+##  <a name="back"></a>  Queue::Back  
  Eklenen son ve en son öğesi sıranın arkasındaki bir başvuru döndürür.  
   
 ```  
@@ -145,7 +148,7 @@ int main( )
 }  
 ```  
   
-##  <a name="container_type"></a>Queue::container_type  
+##  <a name="container_type"></a>  queue::container_type  
  Temel uyarlanan kapsayıcıya sağlayan türü.  
   
 ```  
@@ -160,7 +163,7 @@ typedef Container container_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [sıra](#queue) bildirme ve kullanma konusunda bir örnek için `container_type`.  
   
-##  <a name="empty"></a>Queue::empty  
+##  <a name="empty"></a>  queue::empty  
  Bir kuyruk boşsa, testleri.  
   
 ```  
@@ -204,7 +207,7 @@ The queue q1 is not empty.
 The queue q2 is empty.  
 ```  
   
-##  <a name="front"></a>Queue::Front  
+##  <a name="front"></a>  Queue::Front  
  Sıranın önünü konumundaki ilk öğe için bir başvuru döndürür.  
   
 ```  
@@ -253,7 +256,7 @@ int main() {
 }  
 ```  
   
-##  <a name="pop"></a>Queue::POP  
+##  <a name="pop"></a>  Queue::POP  
  Bir öğenin sıra Önden kaldırır.  
   
 ```  
@@ -307,7 +310,7 @@ After a pop the queue length is 2.
 After a pop, the element at the front of the queue is 20.  
 ```  
   
-##  <a name="push"></a>Queue::push  
+##  <a name="push"></a>  queue::push  
  Bir öğeyi sıranın arkasına ekler.  
   
 ```  
@@ -353,7 +356,7 @@ The queue length is 3.
 The element at the front of the queue is 10.  
 ```  
   
-##  <a name="queue"></a>Queue::Queue  
+##  <a name="queue"></a>  queue::queue  
  Boş veya temel kapsayıcı nesnesinin bir kopyasını olan bir sıra oluşturur.  
   
 ```  
@@ -417,7 +420,7 @@ The element at the front of queue q5 is 1.
 The element at the back of queue q5 is 2.  
 ```  
   
-##  <a name="size"></a>Queue::size  
+##  <a name="size"></a>  Queue::size  
  Sırasındaki öğelerin sayısını döndürür.  
   
 ```  
@@ -456,7 +459,7 @@ The queue length is 1.
 The queue length is now 2.  
 ```  
   
-##  <a name="size_type"></a>Queue::size_type  
+##  <a name="size_type"></a>  queue::size_type  
  Bir kuyruktaki öğelerin sayısı gösterebilir bir işaretsiz tamsayı türü.  
   
 ```  
@@ -469,7 +472,7 @@ typedef typename Container::size_type size_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [queue::front](#front) bildirme ve kullanma konusunda bir örnek için `size_type`.  
   
-##  <a name="value_type"></a>Queue::value_type  
+##  <a name="value_type"></a>  queue::value_type  
  Bir kuyruktaki bir öğe olarak depolanan nesne türünü temsil eden tür.  
   
 ```  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IExecutionContext
 - CONCRTRM/concurrency::IExecutionContext
@@ -15,19 +16,22 @@ f1_keywords:
 - CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetProxy
 - CONCRTRM/concurrency::IExecutionContext::IExecutionContext::GetScheduler
 - CONCRTRM/concurrency::IExecutionContext::IExecutionContext::SetProxy
-dev_langs: C++
-helpviewer_keywords: IExecutionContext structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- IExecutionContext structure
 ms.assetid: f3108089-ecda-4b07-86db-3efae60c31e0
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9e3edffb10aad7b5793907c8c95ad5028f4d1d23
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cd8b00f24970e6bbc7f582f795c26ccb96461028
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iexecutioncontext-structure"></a>IExecutionContext Yapısı
 Belirli bir sanal işlemcinin çalıştırabilir ve işbirliği ile anahtarlı bağlamının olması bir yürütme bağlamı için bir arabirim.  
@@ -44,11 +48,11 @@ struct IExecutionContext;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Iexecutioncontext::Dispatch](#dispatch)|Bir iş parçacığı proxy belirli yürütme bağlamı yürütme başlatıldığında çağrılan yöntem. Bu, scheduler ana çalışan yordamı olmalıdır.|  
-|[Iexecutioncontext::GetID](#getid)|Yürütme bağlamı için benzersiz bir tanımlayıcı döndürür.|  
-|[Iexecutioncontext::getproxy](#getproxy)|Arabirim bu bağlamda yürütme iş parçacığı proxy döndürür.|  
-|[Iexecutioncontext::getscheduler](#getscheduler)|Bu yürütme bağlamı ait olduğu bir arabirim Zamanlayıcı geri döner.|  
-|[Iexecutioncontext::setproxy](#setproxy)|Bir iş parçacığı proxy bu yürütme bağlamı ile ilişkilendirir. Bağlamın yürütülmeye başlamadan önce bu yöntemi hak ilişkili iş parçacığı proxy çağırır `Dispatch` yöntemi.|  
+|[IExecutionContext::Dispatch](#dispatch)|Bir iş parçacığı proxy belirli yürütme bağlamı yürütme başlatıldığında çağrılan yöntem. Bu, scheduler ana çalışan yordamı olmalıdır.|  
+|[IExecutionContext::GetId](#getid)|Yürütme bağlamı için benzersiz bir tanımlayıcı döndürür.|  
+|[IExecutionContext::GetProxy](#getproxy)|Arabirim bu bağlamda yürütme iş parçacığı proxy döndürür.|  
+|[IExecutionContext::GetScheduler](#getscheduler)|Bu yürütme bağlamı ait olduğu bir arabirim Zamanlayıcı geri döner.|  
+|[IExecutionContext::SetProxy](#setproxy)|Bir iş parçacığı proxy bu yürütme bağlamı ile ilişkilendirir. Bağlamın yürütülmeye başlamadan önce bu yöntemi hak ilişkili iş parçacığı proxy çağırır `Dispatch` yöntemi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Eşzamanlılık Çalışma zamanı Resource Manager ile arabirimleri özel bir zamanlayıcı uyguluyorsanız, uygulamak gerekir `IExecutionContext` arabirimi. Kaynak Yöneticisi tarafından oluşturulan iş parçacığı adına, Zamanlayıcı İş yürüterek gerçekleştirmek `IExecutionContext::Dispatch` yöntemi.  
@@ -61,7 +65,7 @@ struct IExecutionContext;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="dispatch"></a>Iexecutioncontext::Dispatch yöntemi  
+##  <a name="dispatch"></a>  Iexecutioncontext::Dispatch yöntemi  
  Bir iş parçacığı proxy belirli yürütme bağlamı yürütme başlatıldığında çağrılan yöntem. Bu, scheduler ana çalışan yordamı olmalıdır.  
   
 ```
@@ -72,7 +76,7 @@ virtual void Dispatch(_Inout_ DispatchState* pDispatchState) = 0;
  `pDispatchState`  
  Bu yürütme bağlamı altında dağıtıldığı durumunu gösteren bir işaretçi. Dağıtım durumu hakkında daha fazla bilgi için bkz: [DispatchState](dispatchstate-structure.md).  
   
-##  <a name="getid"></a>Iexecutioncontext::GetID yöntemi  
+##  <a name="getid"></a>  Iexecutioncontext::GetID yöntemi  
  Yürütme bağlamı için benzersiz bir tanımlayıcı döndürür.  
   
 ```
@@ -87,7 +91,7 @@ virtual unsigned int GetId() const = 0;
   
  Farklı bir kaynaktan alınan tanımlayıcı tanımsız davranışlara neden.  
   
-##  <a name="getproxy"></a>Iexecutioncontext::getproxy yöntemi  
+##  <a name="getproxy"></a>  Iexecutioncontext::getproxy yöntemi  
  Arabirim bu bağlamda yürütme iş parçacığı proxy döndürür.  
   
 ```
@@ -100,7 +104,7 @@ virtual IThreadProxy* GetProxy() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Resource Manager çağıracağı `SetProxy` bir yürütme bağlamı yöntemi ile bir `IThreadProxy` arabirimi girme önce bir parametre olarak `Dispatch` yöntemi içeriği üzerinde. Bu bağımsız değişken depolamak ve çağrıları üzerinde dönmek için beklenen `GetProxy()`.  
   
-##  <a name="getscheduler"></a>Iexecutioncontext::getscheduler yöntemi  
+##  <a name="getscheduler"></a>  Iexecutioncontext::getscheduler yöntemi  
  Bu yürütme bağlamı ait olduğu bir arabirim Zamanlayıcı geri döner.  
   
 ```
@@ -113,7 +117,7 @@ virtual IScheduler* GetScheduler() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli bir yürütme bağlamla başlatmak için gerekli `IScheduler` yöntem için parametre olarak kullanmadan önce arabirimi kaynak yöneticisi tarafından sağlanan.  
   
-##  <a name="setproxy"></a>Iexecutioncontext::setproxy yöntemi  
+##  <a name="setproxy"></a>  Iexecutioncontext::setproxy yöntemi  
  Bir iş parçacığı proxy bu yürütme bağlamı ile ilişkilendirir. Bağlamın yürütülmeye başlamadan önce bu yöntemi hak ilişkili iş parçacığı proxy çağırır `Dispatch` yöntemi.  
   
 ```

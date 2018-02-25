@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_get_nested
-dev_langs: C++
-helpviewer_keywords: omp_get_nested OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_get_nested
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_get_nested OpenMP function
 ms.assetid: e9784847-516e-40d3-89f7-b8b6898d8667
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 557625a40707119633adc1d73775b1e66f67efec
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: df6a3fafdb749031ae5e55a58e1e26ccad76985c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompgetnested"></a>omp_get_nested
 İç içe geçmiş paralellik etkin olup olmadığını belirten bir değer döndürür.  

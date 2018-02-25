@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xlocnum/std::numpunct_byname
-dev_langs: C++
-helpviewer_keywords: numpunct_byname class
+ms.topic: reference
+f1_keywords:
+- xlocnum/std::numpunct_byname
+dev_langs:
+- C++
+helpviewer_keywords:
+- numpunct_byname class
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 84f71302d43a983772890611e55c56af9b21e922
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f4ffc167ff6d3afc0dfb972c950a5171cbed20a5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="numpunctbyname-class"></a>numpunct_byname Sınıfı
 Türetilen Şablon sınıfı olarak hizmet verebilir bir nesneyi tanımlayan bir `numpunct` biçimlendirme ve noktalama sayısal ve Boole ifadelerin etkinleştirme belirli bir yerel ayar modeli.  

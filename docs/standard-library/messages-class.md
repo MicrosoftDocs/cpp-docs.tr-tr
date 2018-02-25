@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocmes/std::messages
 - xlocmes/std::messages::char_type
@@ -17,7 +18,8 @@ f1_keywords:
 - xlocmes/std::messages::do_open
 - xlocmes/std::messages::get
 - xlocmes/std::messages::open
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::messages [C++]
 - std::messages [C++], char_type
@@ -29,16 +31,17 @@ helpviewer_keywords:
 - std::messages [C++], get
 - std::messages [C++], open
 ms.assetid: c4c71f40-4f24-48ab-9f7c-daccd8d5bd83
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1bf1320e138224b36e0d73e1d2702b9cf85fb8c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 809a5fc0a74408c484948309a62096c2e89b7af5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="messages-class"></a>messages Sınıfı
 Verili bir yerel ayar için uluslararası iletilerin bir kataloğundan yerelleştirilmiş iletiler almak için bir yerel ayar olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı.  
@@ -65,14 +68,14 @@ class messages : public messages_base;
   
 |||  
 |-|-|  
-|[iletileri](#messages)|İleti modeli oluşturucu işlevi.|  
+|[İletileri](#messages)|İleti modeli oluşturucu işlevi.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
 |||  
 |-|-|  
 |[char_type](#char_type)|İletileri görüntülemek için kullanılan bir karakter türü.|  
-|[STRING_TYPE](#string_type)|Türü bir dize açıklayan türü `basic_string` türü karakterler içeren `CharType`.|  
+|[string_type](#string_type)|Türü bir dize açıklayan türü `basic_string` türü karakterler içeren `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
@@ -90,7 +93,7 @@ class messages : public messages_base;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>Messages::char_type  
+##  <a name="char_type"></a>  messages::char_type  
  İletileri görüntülemek için kullanılan bir karakter türü.  
   
 ```
@@ -100,7 +103,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="close"></a>Messages::Close  
+##  <a name="close"></a>  Messages::Close  
  İleti kataloğunu kapatır.  
   
 ```
@@ -114,7 +117,7 @@ void close(catalog _Catval) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlev çağrılarını [do_close](#do_close)(_ *Catval*).  
   
-##  <a name="do_close"></a>Messages::do_close  
+##  <a name="do_close"></a>  messages::do_close  
  İleti kataloğunu kapatmak için çağrılan sanal işlev.  
   
 ```
@@ -133,7 +136,7 @@ virtual void do_close(catalog _Catval) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [kapatmak](#close), çağıran `do_close`.  
   
-##  <a name="do_get"></a>Messages::do_get  
+##  <a name="do_get"></a>  messages::do_get  
  İleti kataloğunu almak için çağrılan sanal işlev.  
   
 ```
@@ -166,7 +169,7 @@ virtual string_type do_get(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [almak](#get), çağıran `do_get`.  
   
-##  <a name="do_open"></a>Messages::do_open  
+##  <a name="do_open"></a>  messages::do_open  
  İleti kataloğunu açmak için çağrılan sanal işlev.  
   
 ```
@@ -193,7 +196,7 @@ virtual catalog do_open(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [açmak](#open), çağıran `do_open`.  
   
-##  <a name="get"></a>Messages::get  
+##  <a name="get"></a>  Messages::get  
  İleti kataloğunu alır.  
   
 ```
@@ -223,7 +226,7 @@ string_type get(
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi döndürür [do_get](#do_get)( `_Catval`, `_Set`, `_Message`, `_Dfault`).  
   
-##  <a name="messages"></a>Messages::Messages  
+##  <a name="messages"></a>  Messages::Messages  
  İleti modeli oluşturucu işlevi.  
   
 ```
@@ -249,13 +252,13 @@ protected: messages(
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="open"></a>Messages::Open  
+##  <a name="open"></a>  Messages::Open  
  İleti kataloğunu açar.  
   
 ```
@@ -277,7 +280,7 @@ catalog open(
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi döndürür [do_open](#do_open)( `_Catname`, `_Loc`).  
   
-##  <a name="string_type"></a>Messages::string_type  
+##  <a name="string_type"></a>  Messages::string_type  
  Türü bir dize açıklayan türü `basic_string` türü karakterler içeren **CharType**.  
   
 ```

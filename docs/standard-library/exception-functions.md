@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - exception/std::current_exception
 - exception/std::get_terminate
@@ -18,7 +18,7 @@ f1_keywords:
 - exception/std::uncaught_exception
 - exception/std::unexpected
 ms.assetid: c09ac569-5e35-4fe8-872d-ca5810274dd7
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::current_exception [C++]
@@ -31,21 +31,21 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 616c8d4dd0982f0cd96a3678f6f8595b074f291f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: ea24d26ed840d1c7222abbbf9fce2bc18c2a7a5f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 ||||  
 |-|-|-|  
 |[current_exception](#current_exception)|[get_terminate](#get_terminate)|[get_unexpected](#get_unexpected)|  
 |[make_exception_ptr](#make_exception_ptr)|[rethrow_exception](#rethrow_exception)|[set_terminate](#set_terminate)|  
-|[set_unexpected](#set_unexpected)|[sonlandırma](#terminate)|[uncaught_exception](#uncaught_exception)|  
-|[beklenmeyen](#unexpected)|  
+|[set_unexpected](#set_unexpected)|[Sonlandırma](#terminate)|[uncaught_exception](#uncaught_exception)|  
+|[unexpected](#unexpected)|  
   
-##  <a name="current_exception"></a>current_exception  
+##  <a name="current_exception"></a>  current_exception  
  Geçerli özel durum için bir akıllı işaretçi alır.  
   
 ```cpp  
@@ -64,7 +64,7 @@ exception_ptr current_exception();
   
  Art arda çağrılar `current_exception` işlev dönüş `exception_ptr` geçerli özel durumun farklı kopyalarını başvuran nesneleri. Sonuç olarak, kopyalar aynı ikili değerde olsalar da farklı kopyalara başvurduklarından, nesneler eşit olmayarak karşılaştırılır.  
   
-##  <a name="make_exception_ptr"></a>make_exception_ptr  
+##  <a name="make_exception_ptr"></a>  make_exception_ptr  
  Oluşturur bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) bir özel durum bir kopyasını içeren nesne.  
   
 ```cpp  
@@ -84,7 +84,7 @@ exception_ptr make_exception_ptr(E Except);
   
  Bir uygulama tarafından genellikle gerektirmez `make_exception_ptr` işlevi ve biz kullanımı önerilmemektedir.  
   
-##  <a name="rethrow_exception"></a>rethrow_exception  
+##  <a name="rethrow_exception"></a>  rethrow_exception  
  Bir parametre olarak geçirilen bir özel durum oluşturur.  
   
 ```cpp  
@@ -98,14 +98,14 @@ void rethrow_exception(exception_ptr P);
 ### <a name="remarks"></a>Açıklamalar  
  Yakalanan bir özel durum depolamak sonra bir `exception_ptr` nesnesi, birincil iş parçacığı nesne işleyebilir. Birincil iş parçacığı arama `rethrow_exception` ile birlikte çalışması `exception_ptr` nesnesi bağımsız değişkeni olarak. `rethrow_exception` İşlevi ayıklar özel durumundan `exception_ptr` nesne ve ardından birincil iş parçacığının bağlamında özel durum oluşturur.  
   
-##  <a name="get_terminate"></a>get_terminate  
+##  <a name="get_terminate"></a>  get_terminate  
  Geçerli edinir `terminate_handler` işlevi.  
   
 ```cpp  
 terminate_handler get_terminate();
 ```  
   
-##  <a name="set_terminate"></a>set_terminate  
+##  <a name="set_terminate"></a>  set_terminate  
  Yeni bir kurar `terminate_handler` program sonlandırma sırasında çağrılabilir.  
   
 ```  
@@ -151,14 +151,14 @@ int main()
   
 ```  
   
-##  <a name="get_unexpected"></a>get_unexpected  
+##  <a name="get_unexpected"></a>  get_unexpected  
  Geçerli edinir `unexpected_handler` işlevi.  
   
 ```cpp  
 unexpected_handler get_unexpected();
 ```  
   
-##  <a name="set_unexpected"></a>set_unexpected  
+##  <a name="set_unexpected"></a>  set_unexpected  
  Yeni bir kurar `unexpected_handler` olması için ne zaman beklenmeyen bir özel durum karşılaştı.  
   
 ```  
@@ -173,7 +173,7 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
  Önceki adresini `unexpected_handler`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `fnew`null işaretçinin olması gerekir.  
+ `fnew` null işaretçinin olması gerekir.  
   
  C++ Standart gerektiren `unexpected` bir işlev kendi throw listesinde yer almayan bir özel durum oluşturduğunda olarak adlandırılır. Geçerli uygulama bu desteklemez. Aşağıdaki örnek çağrıları `unexpected` doğrudan sonra çağıran `unexpected_handler`.  
   
@@ -203,7 +203,7 @@ int main()
   
 ```  
   
-##  <a name="terminate"></a>sonlandırma  
+##  <a name="terminate">Sonlandırma</a>  
  Bir sonlandırıcı işleyici çağırır.  
   
 ```  
@@ -218,7 +218,7 @@ void terminate();
 ### <a name="example"></a>Örnek  
   Bkz: [set_unexpected](../standard-library/exception-functions.md#set_unexpected) kullanımına ilişkin bir örnek **sonlandırmak**.  
   
-##  <a name="uncaught_exception"></a>uncaught_exception  
+##  <a name="uncaught_exception"></a>  uncaught_exception  
  Döndürür `true` oluşturulan bir özel durum yalnızca şu anda işleniyor durumunda.  
   
 ```  
@@ -281,7 +281,7 @@ In Test::~Test("outside try block")
         std::uncaught_exception( ) = 0  
 ```  
   
-##  <a name="unexpected"></a>beklenmeyen  
+##  <a name="unexpected"></a>  beklenmeyen  
  Beklenmeyen işleyiciyi çağırır.  
   
 ```  

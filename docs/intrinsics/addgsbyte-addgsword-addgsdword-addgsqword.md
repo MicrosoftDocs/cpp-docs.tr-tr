@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __addgsdword
 - __addgsqword
@@ -16,26 +17,28 @@ f1_keywords:
 - __addgsqword_cpp
 - __addgsbyte
 - __addgsdword_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __addgsword intrinsic
 - __addgsqword intrinsic
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 340b1464983d46ea13f423ec7cf596e7c973f3a2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bc4d7e760d45efb9bff8073ea50f555417737cfb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bir uzaklık başlangıcı göre tarafından belirtilen bir bellek konumunu bir değer ekleyin `GS` kesimi.  
   
@@ -61,10 +64,10 @@ void __addgsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Offset`  
+ [in] `Offset`  
  Başından uzaklık `GS`.  
   
- [in]`Data`  
+ [in] `Data`  
  Bellek konumuna eklenecek değer.  
   
 ## <a name="requirements"></a>Gereksinimler  

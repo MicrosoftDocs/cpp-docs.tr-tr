@@ -4,33 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: output streams
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- output streams
 ms.assetid: b49410e3-5caa-4153-9d0d-c4266408dc83
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f8fee8ecffda86f306b44f0d5b873d5192d4d181
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ae5179ee14534ed0982f4b996c8f88f1cfc560a8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="output-streams"></a>Çıkış Akışları
 Bir çıkış akışı bayt için bir hedef nesnesidir. Üç en önemli çıkış akışı sınıflardır `ostream`, `ofstream`, ve `ostringstream`.  
   
  `ostream` Sınıfı, türetilmiş sınıf üzerinden `basic_ostream`, önceden tanımlanmış akışı nesneleri destekler:  
   
--   `cout`standart çıktı  
+-   `cout` Standart çıktı  
   
--   `cerr`Standart sınırlı arabelleğe alma ile hata  
+-   `cerr` Standart sınırlı arabelleğe alma ile hata  
   
--   `clog`benzer şekilde `cerr` ancak tam arabelleğe alma  
+-   `clog` benzer şekilde `cerr` ancak tam arabelleğe alma  
   
  Nesneleri gelen oluşturulur nadiren `ostream`; önceden tanımlanmış nesneleri genellikle kullanılır. Bazı durumlarda, önceden tanımlanmış nesneler program başlatma işleminden sonra atayabilirsiniz. `ostream` Arabelleğe alınan veya arabellekten çıkarılan işlemi için yapılandırılabilir, sınıf, sıralı metin modu çıktı için uygundur. Tüm temel sınıf işlevselliğini `ios`, yer aldığı `ostream`. Sınıfın bir nesnesi oluşturmak, `ostream`, belirtmeniz gerekir bir `streambuf` oluşturucuya nesnesi.  
   

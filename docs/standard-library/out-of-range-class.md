@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: stdexcept/std::out_of_range
-dev_langs: C++
-helpviewer_keywords: out_of_range class
+ms.topic: reference
+f1_keywords:
+- stdexcept/std::out_of_range
+dev_langs:
+- C++
+helpviewer_keywords:
+- out_of_range class
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2c92933e62f79b22b988099f0d7cbad1f3679888
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 758b9be05c1ed1e7f54e7de1c57634cf105d0cb8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="outofrange-class"></a>out_of_range Sınıfı
 Sınıfı, geçerli aralığın dışında bir bağımsız değişken bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.  

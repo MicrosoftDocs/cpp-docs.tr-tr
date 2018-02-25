@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::chi_squared_distribution
 - random/std::chi_squared_distribution::reset
@@ -19,7 +20,8 @@ f1_keywords:
 - random/std::chi_squared_distribution::param_type::n
 - random/std::chi_squared_distribution::param_type::operator==
 - random/std::chi_squared_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::chi_squared_distribution [C++]
 - std::chi_squared_distribution [C++], reset
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3d5ca4de3cd7192fa4847bf6090a02b156458340
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 34c474df717b255a5b8774602cd775c236dfb892
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
 Bir kikare dağılımı oluşturur.  
@@ -229,7 +232,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="chi_squared_distribution"></a>chi_squared_distribution::chi_squared_distribution  
+##  <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -245,13 +248,13 @@ explicit chi_squared_distribution(const param_type& parm);
  Dağıtım oluşturmak için kullanılan parametre yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 < n`  
+**Önkoşul:** `0.0 < n`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `n` değeri tutan değeri  *n* .  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>chi_squared_distribution::param_type  
+##  <a name="param_type"></a>  chi_squared_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
 ```cpp    
@@ -269,11 +272,11 @@ struct param_type {
 *n*  
 `n` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 < n`  
+**Önkoşul:** `0.0 < n`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

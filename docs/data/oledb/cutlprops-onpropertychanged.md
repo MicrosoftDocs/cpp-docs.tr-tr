@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - OnPropertyChanged
 - CUtlProps.OnPropertyChanged
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3117a22a2b08b95528692d88cfb6e136d209e346
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f87f6842f33bd58be9cde515396f495402235a77
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cutlpropsonpropertychanged"></a>CUtlProps::OnPropertyChanged
 Zincirleme özellikleri işlemek üzere bir özelliğe ayarladıktan sonra çağrılır.  

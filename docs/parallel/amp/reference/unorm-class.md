@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - unorm
 - AMP_SHORT_VECTORS/unorm
 - AMP_SHORT_VECTORS/Concurrency::graphics::unorm Constructor
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bc30bd20-6452-4d5f-9158-3b11c4c16ed2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffce416bebda4bcc1d5aa0078135aff27bdb7e3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cfd4ed2b4aad398e1206d0e3b786742841aa189b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="unorm-class"></a>unorm Sınıfı
 Unorm numarasını temsil eder. Her bir kayan bir öğedir [0.0f, 1.0f] aralığında nokta sayısı.  
@@ -47,11 +50,11 @@ class unorm;
 |----------|-----------------|  
 |unorm::operator--||  
 |unorm::operator float|Dönüşüm işleci. Kayan unorm sayıya dönüştürme noktası değeri.|  
-|unorm::operator * =||  
-|unorm::operator ve =||  
-|unorm::operator ++||  
-|unorm::operator +=||  
-|unorm::operator =||  
+|unorm::operator*=||  
+|unorm::operator/=||  
+|unorm::operator++||  
+|unorm::operator+=||  
+|unorm::operator=||  
 |unorm::operator-=||  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -62,7 +65,7 @@ class unorm;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>unorm 
+##  <a name="ctor"></a> unorm 
 
  Varsayılan Oluşturucu. İçin 0.0f başlatır.  
   

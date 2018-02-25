@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - tuple/std::tuple
 - tuple/std::tuple::operator=
-dev_langs: C++
-helpviewer_keywords: tuple class
+dev_langs:
+- C++
+helpviewer_keywords:
+- tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8c7776a19a934a03809bfeb9e1cad9d7cb572672
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fd3654b24e66f8ede9e8b091b3cef7dc9a0b5e2b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="tuple-class"></a>tuple Sınıfı
 Öğe sabit uzunluk dizisi sarmalar.  
@@ -127,7 +131,7 @@ The tuples in the vector are
   
  **Namespace:** std  
   
-##  <a name="op_eq"></a>Tuple::operator =  
+##  <a name="op_eq"></a>  tuple::operator=  
  Atayan bir `tuple` nesnesi.  
   
 ```  
@@ -207,7 +211,7 @@ int main()
 x 4  
 ```  
   
-##  <a name="tuple_swap"></a>Tuple:Swap  
+##  <a name="tuple_swap"></a>  tuple:swap  
  İki başlığın öğelerini değiş tokuş eder.  
   
 ```  
@@ -225,7 +229,7 @@ template <class... Types>
 ### <a name="remarks"></a>Açıklamalar  
  İşlev yürütür `left.swap(right)`.  
   
-##  <a name="tuple"></a>Tuple::Tuple  
+##  <a name="tuple"></a>  tuple::tuple  
  Oluşturan bir `tuple` nesnesi.  
   
 ```  

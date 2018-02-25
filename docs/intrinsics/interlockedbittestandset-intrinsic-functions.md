@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _interlockedbittestandset_cpp
 - _interlockedbittestandset_HLEAcquire
@@ -19,25 +20,27 @@ f1_keywords:
 - _interlockedbittestandset_nf
 - _interlockedbittestandset64_cpp
 - _interlockedbittestandset64_HLERelease
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _interlockedbittestandset intrinsic
 - _interlockedbittestandset64 intrinsic
 - lock_bts instruction
 ms.assetid: b1b7e334-53ea-48cf-ba60-5fa3ef51a1fc
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2b3538ffb330bc4e90bbd3a25b80e48d5b44855f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 98cb5e8abdb96451de9d6cd39d1659c49ef935b1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockedbittestandset-intrinsic-functions"></a>_interlockedbittestandset iç işlevler
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bit arabirimini inceleyen bir yönerge oluşturmak `b` adresinin `a` ve 1 olarak ayarlamadan önce geçerli değerini döndürür.  
   
@@ -83,10 +86,10 @@ unsigned char _interlockedbittestandset64_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`a`  
+ [in] `a`  
  İncelemek için bellek için bir işaretçi.  
   
- [in]`b`  
+ [in] `b`  
  Test etmek için bit konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -96,9 +99,9 @@ unsigned char _interlockedbittestandset64_HLERelease(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_interlockedbittestandset`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_interlockedbittestandset`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM|\<intrin.h >|  
-|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
 |`_interlockedbittestandset64`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
   

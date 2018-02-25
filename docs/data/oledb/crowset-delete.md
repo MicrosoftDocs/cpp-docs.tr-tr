@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CRowset::Delete
 - CRowset.Delete
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 05d503a4fb04fa50c6c91371a471c141e2cf2b50
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: abbb56f013a7366f27c0e0f46fc99bd451db079e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetdelete"></a>CRowset::Delete
 Çağrıları [IRowsetChange::DeleteRows](https://msdn.microsoft.com/en-us/library/ms724362.aspx) satır kümesinden geçerli satır silinemiyor.  

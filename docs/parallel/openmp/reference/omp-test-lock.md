@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_test_lock
-dev_langs: C++
-helpviewer_keywords: omp_test_lock OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_test_lock
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_test_lock OpenMP function
 ms.assetid: 314ca85e-0749-4c16-800f-b0f36fed256d
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 03637ea17ee93d9e593d332dac61a29901359520
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4acf73f72bde16d5bcc1dba47ab7958f9dc2b6d9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="omptestlock"></a>omp_test_lock
 Kilit ayarlamaya çalışır, ancak iş parçacığı engellemez.  

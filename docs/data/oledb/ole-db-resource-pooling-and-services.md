@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - resource pooling [OLE DB], provider requirements
 - OLE DB, resource pooling
@@ -16,18 +18,18 @@ helpviewer_keywords:
 - OLE DB services [OLE DB]
 - OLE DB providers, resource pooling
 ms.assetid: 360c36e2-25ae-4caf-8ee7-d4a6b6898f68
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5d3d9ddba2039c1b4445bdb8d4ee77e9a68d9796
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f1f97bde5c2922af3d6a5da5ca77fd270867ff21
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ole-db-resource-pooling-and-services"></a>OLE DB Kaynak Havuzu ve Hizmetleri
 OLE DB havuzu ile iyi veya herhangi bir OLE DB hizmeti ile çalışmak için sağlayıcınız toplama tüm nesnelerin desteklemesi gerekir. Bu, herhangi bir OLE DB 1.5 veya daha sonraki sağlayıcısı gerekli değildir. Hizmetleri yararlanmak için kritik öneme sahiptir. Toplama desteklemeyen sağlayıcılar havuza alınamaz ve herhangi bir ek hizmet sağlanır.  

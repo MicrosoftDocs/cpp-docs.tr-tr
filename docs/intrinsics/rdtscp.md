@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __rdtscp
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __rdtscp
+dev_langs:
+- C++
 helpviewer_keywords:
 - rdtscp intrinsic
 - __rdtscp intrinsic
 - rdtscp instruction
 ms.assetid: f17d9a9c-88bb-44e0-b69d-d516bc1c93ee
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 972c789e17b2b42e0df7229b94b4f10aaa5ff470
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ea7e8089f0678b89976a4c1e58ab6f3a364ac695
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rdtscp"></a>__rdtscp
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturur `rdtscp` yönerge Yazar `TSC_AUX[31:0`] bellek ve 64-bit zaman damgası sayacı döndürür (`TSC)` sonucu.  
   
@@ -39,7 +43,7 @@ unsigned __int64 __rdtscp(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`Aux`  
+ [out] `Aux`  
  İşaretçi makineye özgü kayıt içeriğini içeren bir konuma `TSC_AUX[31:0]`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

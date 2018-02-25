@@ -4,34 +4,37 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __readgsbyte
 - __readgsdword
 - __readgsqword
 - __readgsword
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __readgsword intrinsic
 - __readgsdword intrinsic
 - __readgsqword intrinsic
 - __readgsbyte intrinsic
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b8eb0cd893553e16bea326e4ccb81c2602fe352b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 806049d0ecf6e414be304d39f9355c236b472bbe
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="readgsbyte-readgsdword-readgsqword-readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
-**Microsoft özel**  
+**Microsoft Specific**  
   
  GS kesim başına göreli bir uzaklık tarafından belirtilen bir konumdan bellek okuyun.  
   
@@ -53,7 +56,7 @@ unsigned __int64 __readgsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Offset`  
+ [in] `Offset`  
  Başından uzaklık `GS` okuma.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

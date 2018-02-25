@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - task_completion_event
 - PPLTASKS/concurrency::task_completion_event
 - PPLTASKS/concurrency::task_completion_event::task_completion_event
 - PPLTASKS/concurrency::task_completion_event::set
 - PPLTASKS/concurrency::task_completion_event::set_exception
-dev_langs: C++
-helpviewer_keywords: task_completion_event class
+dev_langs:
+- C++
+helpviewer_keywords:
+- task_completion_event class
 ms.assetid: fb19ed98-f245-48dc-9ba5-487ba879b28a
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 48bf640d75a02b9033102b1c8fc7b824dc4a5be0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2ec810fdb897a9a80dc803cdcc3f229bab186f09
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="taskcompletionevent-class"></a>task_completion_event Sınıfı
 `task_completion_event` Sınıfı, bir koşul sağlanırsa kadar bir görevi yürütme gecikme veya dış bir olaya yanıt olarak bir görevi başlatmak olanak sağlar.  
@@ -66,7 +70,7 @@ class task_completion_event<void>;
   
  Görev tamamlama olayını hiçbir zaman işaret edildiyse, destructed olduğunda oluşturulan tüm görevler iptal edilir.  
   
- `task_completion_event`Akıllı bir işaretçi gibi davranır ve değere göre geçirilecek.  
+ `task_completion_event` Akıllı bir işaretçi gibi davranır ve değere göre geçirilecek.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `task_completion_event`  
@@ -76,7 +80,7 @@ class task_completion_event<void>;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="set"></a>ayarlama 
+##  <a name="set"></a> set 
 
  Görev tamamlama olayını ayarlar.  
   
@@ -96,7 +100,7 @@ bool set() const ;
 ### <a name="remarks"></a>Açıklamalar  
  Birden çok varlığında veya aynı anda yapılan `set`, sadece ilk çağrı başarısız olur ve sonuç (varsa) görev tamamlama olayı depolanır. Kalan ayarlar dikkate alınmaz ve yöntemi false döndürür. Bir görev tamamlama olayı ayarladığınızda, tüm görevler olay hemen tamamlanır ve varsa, kendi devamlılıklar zamanlanacak oluşturulduğu. Görev tamamlama nesneleri bir `_ResultType` dışında `void` değeri kendi devamlılıklar geçer.  
   
-##  <a name="set_exception"></a>set_exception 
+##  <a name="set_exception"></a> set_exception 
 
  Bu olayla ilişkili tüm görevler için bir özel durum yayar.  
   
@@ -114,7 +118,7 @@ __declspec(noinline) bool set_exception(std::exception_ptr _ExceptionPtr) const 
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="ctor"></a>task_completion_event 
+##  <a name="ctor"></a> task_completion_event 
 
  Oluşturan bir `task_completion_event` nesnesi.  
   

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,11 +20,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b57c9e9a71e8a0b603207a095e2bede333ed6ed6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4e2d01fb6610f9b5e8f1d1298aaa49de6a83b561
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
 `RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizeleri okur. Tüketici çağırarak dosya adını sağlayıcıya geçirir [ICommandText::SetCommandText](https://msdn.microsoft.com/en-us/library/ms709757.aspx). Sağlayıcı dosya adını alır ve üye değişkeninde depolar `m_szCommandText`. `Execute` dosya adını okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, dosya ve çağrıları açılır `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydı bir örneğini oluşturur (`CAgentMan`) ve bir dizi içine yerleştirir.  

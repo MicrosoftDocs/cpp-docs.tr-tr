@@ -5,25 +5,25 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-caps.latest.revision: "10"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 6ce4e11a41f199d4ec82a593b53c2f0b7f1c47e4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: b22177cf641fca8de8d6f6e59b5e7e25caea8b32
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltnewgt-functions"></a>&lt;Yeni&gt; işlevleri
 |||  
 |-|-|  
 |[nothrow](#nothrow)|[set_new_handler](#set_new_handler)|  
   
-##  <a name="nothrow"></a>nothrow  
+##  <a name="nothrow"></a>  nothrow  
  Bir bağımsız değişken olarak kullanılacak bir nesneyi sağlar `nothrow` sürümleri **yeni** ve **silmek**.  
   
 ```  
@@ -36,7 +36,7 @@ extern const std::nothrow_t nothrow;
 ### <a name="example"></a>Örnek  
   Bkz: [new işleci](../standard-library/new-operators.md#op_new) ve [new işleci &#91; &#93;](../standard-library/new-operators.md#op_new_arr) örnekleri için `std::nothrow_t` işlevi parametre olarak kullanılır.  
   
-##  <a name="set_new_handler"></a>set_new_handler  
+##  <a name="set_new_handler"></a>  set_new_handler  
  Ne zaman çağrılacak olan bir kullanıcı işlevi yükler `operator new` bellek ayıramadı, denemesi başarısız olur.  
   
 ```  

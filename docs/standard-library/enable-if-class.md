@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::enable_if
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- type_traits/std::enable_if
+dev_langs:
+- C++
 helpviewer_keywords:
 - enable_if class
 - enable_if
 ms.assetid: c6b8d41c-a18f-4e30-a39e-b3aa0e8fd926
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4df9da47925919a005d3c235d35f57f54a3568aa
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 627fd8fa2050141c570f6448bb3cf98142bb6ffc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 Koşullu SFINAE için bir tür örneği aşırı yükleme çözümü sağlar. İç içe geçmiş typedef `enable_if<Condition,Type>::type` var — ve eşanlamlısı `Type`— yalnızca ve yalnızca, `Condition` olan `true`.  
@@ -114,7 +118,7 @@ yourfunction(args, typename enable_if<your_condition, void **>::type = nullptr) 
   
  Senaryo 4 dönüş türleri yok kurucularda çalışır ve böylece kaydırma sınırlama senaryosu 1 çözer.  Bununla birlikte, her zaman kullanılabilir olmayan şablonlu olmayan işlevi bağımsız için Senaryo 4 sınırlıdır.  (Senaryo 4 bir şablonlu işlevi bağımsız değişken kullanarak şablon bağımsız değişken kesintisi üzerinde çalışmasını önler.)  
   
- `enable_if`güçlü, ancak bunu yanlış olmadığını da tehlikeli olur.  Amacı yanlış, aşırı yükleme çözünürlüğü önce kaybolur aday olun çünkü etkileri çok kafa karıştırıcı olabilir.  Bazı öneriler şunlardır:  
+ `enable_if` güçlü, ancak bunu yanlış olmadığını da tehlikeli olur.  Amacı yanlış, aşırı yükleme çözünürlüğü önce kaybolur aday olun çünkü etkileri çok kafa karıştırıcı olabilir.  Bazı öneriler şunlardır:  
   
 -   Kullanmayın `enable_if` derleme zamanında uygulamaları arasındaki seçin. Şimdiye kadar bir yazmayın `enable_if` için `CONDITION` için başka bir `!CONDITION`.  Bunun yerine, bir *etiketi gönderme* düzeni — yineleyiciler gücü bağlı olarak uygulamaları seçen bir algoritma, örneğin, verilir.  
   
@@ -133,7 +137,7 @@ void func(const pair<string, string>&);
 func(make_pair("foo", "bar"));
 ```  
   
-  Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>`. Aşırı yükleme çözümü vardır, belirlemek `func()` istiyor. `pair<A, B>`örtük dönüştürme oluşturucudan sahip `pair<X, Y>`.  Bu yeni değildir — C ++ 98 oluştu. Olsa bile ancak, C ++ 98/03, örtük dönüştürme Oluşturucusu ait imza her zaman, mevcut `pair<int, int>(const pair<const char *, const char *>&)`.  Aşırı yükleme çözümü değil verdiğiniz bu oluşturucu örneği girişimi nedeniyle horribly dağıtır `const char *` örtük olarak dönüştürülebilir değil `int`; imzaları yalnızca arıyor, önce işlev tanımları oluşturulur.  İmzaları dönüştürmek için olduğundan bu nedenle, örnek kod, belirsiz `pair<const char *, const char *>` her ikisine de `pair<int, int>` ve `pair<string, string>`.  
+  Bu örnekte, `make_pair("foo", "bar")` döndürür `pair<const char *, const char *>`. Aşırı yükleme çözümü vardır, belirlemek `func()` istiyor. `pair<A, B>` örtük dönüştürme oluşturucudan sahip `pair<X, Y>`.  Bu yeni değildir — C ++ 98 oluştu. Olsa bile ancak, C ++ 98/03, örtük dönüştürme Oluşturucusu ait imza her zaman, mevcut `pair<int, int>(const pair<const char *, const char *>&)`.  Aşırı yükleme çözümü değil verdiğiniz bu oluşturucu örneği girişimi nedeniyle horribly dağıtır `const char *` örtük olarak dönüştürülebilir değil `int`; imzaları yalnızca arıyor, önce işlev tanımları oluşturulur.  İmzaları dönüştürmek için olduğundan bu nedenle, örnek kod, belirsiz `pair<const char *, const char *>` her ikisine de `pair<int, int>` ve `pair<string, string>`.  
   
  C ++ 11 kullanarak bu belirsizlik Çözüldü `enable_if` emin olmak için `pair<A, B>(const pair<X, Y>&)` var. **yalnızca** zaman `const X&` örtük olarak parametresinin `A` ve `const Y&` içinörtükolarakparametresinin`B`.  Bu, belirlemek aşırı yükleme çözümü sağlar `pair<const char *, const char *>` parametresinin `pair<int, int>` ve aşırı alan `pair<string, string>` kurtarılamaz.  
   

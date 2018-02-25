@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xiosbase/std::ios_base
 - ios/std::ios_base::event_callback
@@ -60,7 +61,8 @@ f1_keywords:
 - xiosbase/std::ios_base::unsetf
 - xiosbase/std::ios_base::width
 - xiosbase/std::ios_base::xalloc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::ios_base [C++]
 - std::ios_base [C++], event_callback
@@ -115,16 +117,17 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 39098fc501ba94c4fa2cd6cf779e7c5c71cc2f1d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d1182cdbaf33b2ab09ecbf133df52186246fbf5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 Şablon parametreleri dayanmayan ortak giriş ve çıkış akışları üye işlevleri ve depolama sınıfı açıklanmaktadır. (Şablon sınıfı [basic_ios](../standard-library/basic-ios-class.md) ne yaygındır ve şablonun parametrelere bağlı olduğu açıklanmaktadır.)  
@@ -177,24 +180,24 @@ ms.lasthandoff: 12/21/2017
 |[badbit](#iostate)|Akışı arabelleğe bütünlüğünü kaybı kaydeder.|  
 |[basefield](#fmtflags)|Tanımlanan bir bit maskesi `dec` &#124; `hex` &#124; `oct`.|  
 |[beg](#seekdir)|Bir dizi başına göreli aramayı belirtir.|  
-|[ikili](#openmode)|Bir dosyayı bir metin akışı olarak değil, ikili akış olarak okunmalıdır belirtir.|  
+|[İkili](#openmode)|Bir dosyayı bir metin akışı olarak değil, ikili akış olarak okunmalıdır belirtir.|  
 |[boolalpha](#fmtflags)|Ekleme veya çıkarma nesne türü belirtir `bool` adları olarak (gibi `true` ve `false`) yerine sayısal değer olarak.|  
 |[Geçerli](#seekdir)|Bir dizi içindeki geçerli konumu göre aramayı belirtir.|  
 |[Ara](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri ondalık biçiminde belirtir.|  
 |[Bitiş](#seekdir)|Bir dizinin sonuna göre aramayı belirtir.|  
 |[eofbit](#iostate)|Kayıtları son bir akıştan ayıklanıyor sırasında dosya.|  
 |[failbit](#iostate)|Geçerli bir alan bir akıştan ayıklamak için bir hata kaydeder.|  
-|[Sabit](#fmtflags)|Kayan nokta değerlerinin ekleme sabit noktalı biçimiyle (üstel alan yok) belirtir.|  
-|[floatfield](#fmtflags)|Tanımlanan bir bit maskesi `fixed` &#124;`scientific`|  
+|[fixed](#fmtflags)|Kayan nokta değerlerinin ekleme sabit noktalı biçimiyle (üstel alan yok) belirtir.|  
+|[floatfield](#fmtflags)|Tanımlanan bir bit maskesi `fixed` &#124; `scientific`|  
 |[goodbit](#iostate)|Tüm durum bitleri temizleyin.|  
-|[onaltılık](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri onaltılık biçimde belirtir.|  
+|[hex](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri onaltılık biçimde belirtir.|  
 |[in](#openmode)|Akıştan ayıklama belirtir.|  
 |[internal](#fmtflags)|Klavye takımı ekleyerek bir alan genişliği için oluşturulan bir sayısal alana iç bir noktada karakterler doldurur.|  
-|[Sol](#fmtflags)|Sola yaslamayı belirtir.|  
+|[left](#fmtflags)|Sola yaslamayı belirtir.|  
 |[Eki](#fmtflags)|Ekleme veya çıkarma tamsayı değerleri sekizli biçiminde belirtir.|  
 |[out](#openmode)|Akış ekleme belirtir.|  
-|[sağ](#fmtflags)|Sağa yaslamayı belirtir.|  
-|[Bilimsel](#fmtflags)|Kayan nokta değerlerinin ekleme bilimsel biçimiyle (üstel alanı) belirtir.|  
+|[Sağ](#fmtflags)|Sağa yaslamayı belirtir.|  
+|[scientific](#fmtflags)|Kayan nokta değerlerinin ekleme bilimsel biçimiyle (üstel alanı) belirtir.|  
 |[showbase](#fmtflags)|Oluşturulan tamsayı alan tabanı ortaya çıkarır bir önek ekleme belirtir.|  
 |[showpoint](#fmtflags)|Ondalık noktasının koşulsuz ekleme oluşturulan bir kayan nokta alanını belirtir.|  
 |[showpos](#fmtflags)|Artı işareti ekleme negatif olmayan bir oluşturulmuş sayısal alana belirtir.|  
@@ -207,33 +210,33 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|[hata](#failure)|Üye işlevi tarafından oluşturulan tüm özel durumlar için temel sınıf üye sınıfı gören [temizleyin](../standard-library/basic-ios-class.md#clear) şablonu sınıfında [basic_ios](../standard-library/basic-ios-class.md).|  
-|[bayrakları](#flags)|Geçerli bayrağı ayarları döndürür veya ayarlar.|  
+|[Hata](#failure)|Üye işlevi tarafından oluşturulan tüm özel durumlar için temel sınıf üye sınıfı gören [temizleyin](../standard-library/basic-ios-class.md#clear) şablonu sınıfında [basic_ios](../standard-library/basic-ios-class.md).|  
+|[Bayrakları](#flags)|Geçerli bayrağı ayarları döndürür veya ayarlar.|  
 |[getloc](#getloc)|Depolanan yerel ayar nesnesi döndürür.|  
 |[imbue](#imbue)|Yerel olarak değiştirir.|  
 |[Init](#init)|Oluşturulan standart iostream nesneleri oluşturur.|  
 |[iword](#iword)|Olarak depolanması için bir değer atayan bir `iword`.|  
-|[Duyarlılık](#precision)|Bir kayan noktalı sayı görüntülenecek basamak sayısını belirtir.|  
+|[precision](#precision)|Bir kayan noktalı sayı görüntülenecek basamak sayısını belirtir.|  
 |[pword](#pword)|Olarak depolanması için bir değer atayan bir `pword`.|  
 |[register_callback](#register_callback)|Bir geri çağırma işlevini belirtir.|  
 |[setf](#setf)|Belirtilen bayrakları ayarlar.|  
 |[sync_with_stdio](#sync_with_stdio)|İostream ve C çalışma zamanı kitaplığı operations kaynak kodunda göründükleri sırada gerçekleşmesini sağlar.|  
 |[unsetf](#unsetf)|Belirtilen bayrakları kapalı olması neden olur.|  
-|[Genişlik](#width)|Çıkış akışı uzunluğunu belirler.|  
+|[width](#width)|Çıkış akışı uzunluğunu belirler.|  
 |[xalloc](#xalloc)|Bir değişken akış parçası tutulamaz belirtir.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Atama işleci için `ios_base` nesneleri.|  
+|[operator=](#op_eq)|Atama işleci için `ios_base` nesneleri.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<ios >  
   
  **Namespace:** std  
   
-##  <a name="event"></a>ios_base::Event  
+##  <a name="event"></a>  ios_base::event  
  Olay türlerini belirtir.  
   
 ```  
@@ -256,7 +259,7 @@ enum event {
   
   Bkz: [register_callback](#register_callback) bir örnek.  
   
-##  <a name="event_callback"></a>ios_base::event_callback  
+##  <a name="event_callback"></a>  ios_base::event_callback  
 
  Geçirilen bir işlev açıklar [register_call](#register_callback).  
   
@@ -268,13 +271,13 @@ typedef void (__cdecl *event_callback)(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *SP_CYCLE_ERRORLOG*  
+ *_E*  
  [Olay](#event).  
   
  `_Base`  
  Olay çağrıldı akış.  
   
- *_LİSANS*  
+ *_I*  
  Kullanıcı tanımlı bir sayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -285,7 +288,7 @@ typedef void (__cdecl *event_callback)(
   
   Bkz: [register_call](#register_callback) kullanan bir örnek `event_callback`.  
   
-##  <a name="failure"></a>ios_base::failure  
+##  <a name="failure"></a>  ios_base::failure  
   
  Sınıf `failure` özel durumlar olarak işlevler tarafından oluşturulan tüm nesne türleri için temel sınıf tanımlar `iostreams` kitaplığa rapor hata akışı arabellek işlemleri sırasında algılandı.  
   
@@ -337,7 +340,7 @@ int main ( )
 Caught an exception: ios_base::failbit set  
 ```  
   
-##  <a name="flags"></a>ios_base::Flags  
+##  <a name="flags"></a>  ios_base::flags  
   
  Geçerli bayrağı ayarları döndürür veya ayarlar.  
   
@@ -382,7 +385,7 @@ int main ( )
 16896  
 ```  
   
-##  <a name="fmtflags"></a>ios_base::fmtflags  
+##  <a name="fmtflags"></a>  ios_base::fmtflags  
   
  Çıktı görünümünü belirtmek için sabitleri.  
   
@@ -450,15 +453,15 @@ public:
   
  Ayrıca, çeşitli yararlı değerler şunlardır:  
   
-- `adjustfield`, olarak tanımlanan bir bit maskesi `internal` &#124; `left` &#124;`right`  
+- `adjustfield`, olarak tanımlanan bir bit maskesi `internal` &#124; `left` &#124; `right`  
   
-- `basefield`, olarak tanımlanan `dec` &#124; `hex` &#124;`oct`  
+- `basefield`, olarak tanımlanan `dec` &#124; `hex` &#124; `oct`  
   
-- `floatfield`, olarak tanımlanan `fixed` &#124;`scientific`  
+- `floatfield`, olarak tanımlanan `fixed` &#124; `scientific`  
   
  Bu değişiklik işlevleri örnekleri bayrakları biçimlendirmek için bkz: [ \<iomanip >](../standard-library/iomanip.md).  
   
-##  <a name="getloc"></a>ios_base::getloc  
+##  <a name="getloc"></a>  ios_base::getloc  
   
  Depolanan yerel ayar nesnesi döndürür.  
   
@@ -488,7 +491,7 @@ int main( )
 C  
 ```  
   
-##  <a name="imbue"></a>ios_base::imbue  
+##  <a name="imbue"></a>  ios_base::imbue  
 
  Yerel olarak değiştirir.  
   
@@ -512,7 +515,7 @@ locale imbue(const locale& _Loc);
   
   Bkz: [basic_ios::imbue](../standard-library/basic-ios-class.md#imbue) bir örnek için.  
   
-##  <a name="init"></a>ios_base::Init  
+##  <a name="init"></a>  ios_base::Init  
   
  Oluşturulan standart iostream nesneleri oluşturur.  
   
@@ -524,7 +527,7 @@ class Init { };
   
  İç içe geçmiş sınıf standart iostreams nesneleri düzgün, rasgele bir statik nesne için bir oluşturucu yürütülmesi daha önce oluşturulan emin olan yapım sağlar nesneyi açıklar.  
   
-##  <a name="ios_base"></a>ios_base::ios_base  
+##  <a name="ios_base"></a>  ios_base::ios_base  
   
  İos_base nesneleri oluşturur.  
   
@@ -536,7 +539,7 @@ ios_base();
   
  (Korumalı) Oluşturucu hiçbir şey yapmaz. Sonraki çağrı **basic_ios::**[init](../standard-library/basic-ios-class.md#init) güvenle yok önce nesne başlatması gerekir. Bu nedenle, yalnızca güvenli sınıfı ios_base Şablon sınıfı için temel sınıf olarak amaçlıdır [basic_ios](../standard-library/basic-ios-class.md).  
   
-##  <a name="iostate"></a>ios_base::iostate  
+##  <a name="iostate"></a>  ios_base::iostate  
   
  Bir akış durumunu açıklayan sabitleri türü.  
   
@@ -564,7 +567,7 @@ public:
   
  Ayrıca, yararlı bir değer olan `goodbit`, yukarıda açıklanan BITS hiçbiri nerede ayarlanır ( `goodbit` sıfır olması garanti).  
   
-##  <a name="iword"></a>ios_base::iword  
+##  <a name="iword"></a>  ios_base::iword  
   
  Olarak depolanması için bir değer atayan bir `iword`.  
   
@@ -588,7 +591,7 @@ long& iword(int idx);
   
   Bkz: [xalloc](#xalloc) nasıl kullanılacağına ilişkin bir örnek için `iword`.  
   
-##  <a name="openmode"></a>ios_base::Openmode  
+##  <a name="openmode"></a>  ios_base::Openmode  
   
  Bir akış ile etkileşim açıklar.  
   
@@ -638,7 +641,7 @@ int main ( )
 }    
 ```  
   
-##  <a name="op_eq"></a>ios_base::operator =  
+##  <a name="op_eq"></a>  ios_base::operator=  
 
  İos_base nesneleri atama işleci.  
   
@@ -660,7 +663,7 @@ ios_base& operator=(const ios_base& right);
   
  Bu işleç yalnızca türetilmiş sınıfları tarafından kullanılan `ios_base`.  
   
-##  <a name="precision"></a>ios_base::Precision  
+##  <a name="precision"></a>  ios_base::precision  
   
  Bir kayan noktalı sayı görüntülenecek basamak sayısını belirtir.  
   
@@ -705,7 +708,7 @@ int main( )
 31.312  
 ```  
   
-##  <a name="pword"></a>ios_base::pword  
+##  <a name="pword"></a>  ios_base::pword  
   
  Olarak depolanması için bir değer atayan bir `pword`.  
   
@@ -729,7 +732,7 @@ void *& pword(int _Idx);
   
   Bkz: [xalloc](#xalloc) kullanma örneği için `pword`.  
   
-##  <a name="register_callback"></a>ios_base::register_callback  
+##  <a name="register_callback"></a>  ios_base::register_callback  
   
  Bir geri çağırma işlevini belirtir.  
   
@@ -836,7 +839,7 @@ in callback2
 an erase event  
 ```  
  
-##  <a name="seekdir"></a>ios_base::seekdir  
+##  <a name="seekdir"></a> ios_base::seekdir  
   
 Uzaklık işlemleri için başlangıç noktası belirtir.  
   
@@ -885,7 +888,7 @@ int main ( )
 }  
 ```  
   
-##  <a name="setf"></a>ios_base::setf  
+##  <a name="setf"></a> ios_base::setf  
   
 Belirtilen bayrakları ayarlar.  
 
@@ -935,7 +938,7 @@ int main( )
 }  
 ```  
  
-##  <a name="sync_with_stdio"></a>ios_base::sync_with_stdio  
+##  <a name="sync_with_stdio"></a> ios_base::sync_with_stdio  
   
 İostream ve C çalışma zamanı kitaplığı operations kaynak kodunda göründükleri sırada gerçekleşmesini sağlar.  
   
@@ -955,7 +958,7 @@ static bool sync_with_stdio(
 ### <a name="remarks"></a>Açıklamalar  
     The static member function stores a **stdio** sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores `_Sync` in the **stdio** sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.  
  
-##  <a name="unsetf"></a>ios_base::unsetf  
+##  <a name="unsetf"></a> ios_base::unsetf  
   
 Belirtilen bayrakları kapalı olması neden olur.  
   
@@ -975,7 +978,7 @@ void unsetf(
 ### <a name="example"></a>Örnek  
     See [ios_base::setf](#setf) for a sample of using `unsetf`.  
  
-##  <a name="width"></a>ios_base::width  
+##  <a name="width"></a> ios_base::width  
   
 Çıkış akışı uzunluğunu belirler.  
   
@@ -1019,7 +1022,7 @@ int main( ) {
 0  
 ```  
  
-##  <a name="xalloc"></a>ios_base::xalloc  
+##  <a name="xalloc"></a> ios_base::xalloc  
   
     Specifies that a variable is part of the stream.  
   

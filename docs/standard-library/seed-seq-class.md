@@ -4,16 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::seed_seq
 - random/std::seed_seq::result_type
 - random/std::seed_seq::generate
 - random/std::seed_seq::size
 - random/std::seed_seq::param
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::seed_seq [C++]
 - std::seed_seq [C++], result_type
@@ -21,16 +23,17 @@ helpviewer_keywords:
 - std::seed_seq [C++], size
 - std::seed_seq [C++], param
 ms.assetid: cba114f7-9ac6-4f2f-b773-9c84805401d6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3eb5a5d383044e0e44a0913c06afa73c6fe2f0ac
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dc046735f1f04a605bccaee6dfc7ca3bdff2f272
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 Rastgele sayı altyapısı için rastgele çekirdek sağlayabilir imzasız tamsayı değerleri vektörü depolar.  
@@ -75,12 +78,12 @@ Varsayılan Oluşturucu, boş bir iç sıra olmasını başlatır.
  `template<class T>`   
  `seed_seq(initializer_list<T> initlist);`   
 Kullanan `initlist` iç sırasını ayarlamak için.                   
-`T`tamsayı türde olması gerekir.  
+`T` tamsayı türde olması gerekir.  
   
  `template<class InputIterator>`   
  `seed_seq(InputIterator begin, InputIterator end);`   
 Sağlanan giriş yineleyici aralığında kullanan tüm öğeler iç dizisini başlatır.                  
-`iterator_traits<InputIterator>::value_type`tamsayı türde olması gerekir.  
+`iterator_traits<InputIterator>::value_type` tamsayı türde olması gerekir.  
   
 ## <a name="members"></a>Üyeler  
   

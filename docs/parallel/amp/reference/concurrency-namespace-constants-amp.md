@@ -5,36 +5,38 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - amp/Concurrency::HLSL_MAX_NUM_BUFFERS
 - amp/Concurrency::MODULENAME_MAX_LENGTH
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 13a8e8cd-2eec-4e60-a91d-5d271072747b
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a28853f91c6d75a322d6edfd15b96f5589b74e0a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3f6893de5506d452cf4a2a60cf7b07ed03dfab18
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-constants-amp"></a>Eşzamanlılık ad alanı Sabitleri (AMP)
 |||  
 |-|-|  
 |[HLSL_MAX_NUM_BUFFERS](#hlsl_max_num_buffers)|[MODULENAME_MAX_LENGTH](#modulename_max_length)|  
   
-##  <a name="hlsl_max_num_buffers"></a>HLSL_MAX_NUM_BUFFERS sabiti  
+##  <a name="hlsl_max_num_buffers"></a>  HLSL_MAX_NUM_BUFFERS sabiti  
  Arabellek DirectX tarafından izin verilen maksimum sayısı.  
   
 ```  
 static const UINT HLSL_MAX_NUM_BUFFERS = 64 + 128;  
 ```  
   
-##  <a name="modulename_max_length"></a>MODULENAME_MAX_LENGTH sabiti  
+##  <a name="modulename_max_length"></a>  MODULENAME_MAX_LENGTH sabiti  
  Modül adının uzunluğu en fazla depolar. Bu değer, derleyici ve çalışma zamanı aynı olmalıdır.  
   
 ```  

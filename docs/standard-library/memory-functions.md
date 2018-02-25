@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::addressof
 - memory/std::align
@@ -32,9 +32,10 @@ f1_keywords:
 - memory/std::uninitialized_fill_n
 - memory/std::get_temporary_buffer
 - memory/std::return_temporary_buffer
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 3e1898c2-44b7-4626-87ce-84962e4c6f1a
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -84,17 +85,18 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.workload: cplusplus
-ms.openlocfilehash: c8b8b3f311861fe8a98d66cef02e3d1c2c11d787
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 070b6c9e532f1148484a3b7381c7ae13015b0a67
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 ||||  
 |-|-|-|  
-|[AddressOf](#addressof)|[Hizalama](#align)|[allocate_shared](#allocate_shared)|  
+|[addressof](#addressof)|[align](#align)|[allocate_shared](#allocate_shared)|  
 |[const_pointer_cast](#const_pointer_cast)|[declare_no_pointers](#declare_no_pointers)|[declare_reachable](#declare_reachable)|  
 |[default_delete](#default_delete)|[dynamic_pointer_cast](#dynamic_pointer_cast)|[get_deleter](#get_deleter)|  
 |[get_pointer_safety](#get_pointer_safety)|[get_temporary_buffer](#get_temporary_buffer)|[make_shared](#make_shared)|  
@@ -103,7 +105,7 @@ ms.lasthandoff: 12/21/2017
 |[undeclare_reachable](#undeclare_reachable)|[uninitialized_copy](#uninitialized_copy)|[uninitialized_copy_n](#uninitialized_copy_n)|  
 |[uninitialized_fill](#uninitialized_fill)|[uninitialized_fill_n](#uninitialized_fill_n)|  
   
-##  <a name="addressof"></a>AddressOf  
+##  <a name="addressof"></a>  AddressOf  
  Bir nesnenin doğru adresini alır.  
   
 ```  
@@ -120,7 +122,7 @@ T* addressof(T& Val);
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="align"></a>Hizalama  
+##  <a name="align"></a>  Hizalama  
  Verilen depolamanın ilk olası adresinde verilen, verilen hizalama belirtimine göre hizalanmış, boyutta depolamaya uyar.  
   
 ```  
@@ -179,7 +181,7 @@ while (std::align(alignment, sizeof(MyObj), ptr, space)) {
 // possible to allow more aligned storage in this buffer.   
 ```  
   
-##  <a name="allocate_shared"></a>allocate_shared  
+##  <a name="allocate_shared"></a>  allocate_shared  
  Oluşturur bir `shared_ptr` ayrılmış ve verilen bir tür için belirtilen ayırıcısı kullanılarak oluşturulan nesneler için. Döndürür `shared_ptr`.  
   
 ```  
@@ -198,7 +200,7 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 ### <a name="remarks"></a>Açıklamalar  
  İşlev nesnesi oluşturur `shared_ptr<Type>`, bir işaretçi `Type(Args...)` olarak ayrılmış ve tarafından oluşturulan `Alloc`.  
   
-##  <a name="const_pointer_cast"></a>const_pointer_cast  
+##  <a name="const_pointer_cast"></a>  const_pointer_cast  
  Shared_ptr const dönüştürme.  
   
 ```  
@@ -245,7 +247,7 @@ int main()
 sp1 == 3  
 ```  
   
-##  <a name="declare_no_pointers"></a>declare_no_pointers  
+##  <a name="declare_no_pointers"></a>  declare_no_pointers  
  Bellek bloğu karakterleri taban adresi işaretçi tarafından tanımlanan bir atık toplayıcı bildirir ve blok boyutu hiçbir izlenebilir işaretçileri içerir.  
   
 ```  
@@ -264,7 +266,7 @@ void declare_no_pointers(
 ### <a name="remarks"></a>Açıklamalar  
  Çöp toplayıcı işlevi bildirir, adres aralığını `[ ptr, ptr + _Size)` artık izlenebilir işaretçileri içerir. (Ayrılan depolama alanı için tüm işaretçiler ulaşılabilir kılmadığınız sürece başvuru yapıldı gereken değil.)  
   
-##  <a name="declare_reachable"></a>declare_reachable  
+##  <a name="declare_reachable"></a>  declare_reachable  
  Belirtilen adresin ayrılmış depolama alanını ve erişilebilir olduğunu atık toplamaya bildirir.  
   
 ```  
@@ -278,7 +280,7 @@ void declare_reachable(void* ptr);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `ptr` işlevi herhangi atık toplayıcı bildirir null değil, `ptr` bundan böyle erişilebilir (noktalarına geçerli ayrılan depolama alanı) değil.  
   
-##  <a name="default_delete"></a>default_delete  
+##  <a name="default_delete"></a>  default_delete  
 
 İle ayrılmış nesneleri siler `operator new`. İle kullanılmak üzere uygun `unique_ptr`.  
 
@@ -300,7 +302,7 @@ struct default_delete {
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı açıklayan bir `deleter` ile ayrılmış skaler nesneleri siler `operator new`, Şablon sınıfı ile kullanım için uygun `unique_ptr`. Ayrıca açık uzmanlık sahip `default_delete<Type[]>`.  
   
-##  <a name="dynamic_pointer_cast"></a>dynamic_pointer_cast  
+##  <a name="dynamic_pointer_cast"></a>  dynamic_pointer_cast  
  Dinamik atama shared_ptr için.  
   
 ```  
@@ -358,7 +360,7 @@ int main()
 sp1->val == 3  
 ```  
   
-##  <a name="get_deleter"></a>get_deleter
+##  <a name="get_deleter"></a>  get_deleter
  Silici shared_ptr alın.  
   
 ```  
@@ -424,7 +426,7 @@ get_deleter(sp0) != 0 == false
 get_deleter(sp1) != 0 == true  
 ```  
   
-##  <a name="get_pointer_safety"></a>get_pointer_safety  
+##  <a name="get_pointer_safety"></a>  get_pointer_safety  
  Herhangi bir atık toplayıcısı tarafından kabul edilen işaretçi güvenlik türünü döndürür.  
   
 ```  
@@ -434,7 +436,7 @@ pointer_safety get_pointer_safety();
 ### <a name="remarks"></a>Açıklamalar  
  İşlev işaretçisi güvenliği herhangi otomatik atık toplayıcısı tarafından kabul türünü döndürür.  
   
-##  <a name="get_temporary_buffer"></a>get_temporary_buffer  
+##  <a name="get_temporary_buffer"></a>  get_temporary_buffer  
  Belirli sayıda öğeyi aşmayan öğe dizisi için geçici depolamayı ayırır.  
   
 ```  
@@ -487,7 +489,7 @@ The number of elements that the allocated memory
 could store is given by: resultPair.second = 9.  
 ```  
   
-##  <a name="make_shared"></a>make_shared  
+##  <a name="make_shared"></a>  make_shared  
  Oluşturur ve döndüren bir `shared_ptr` varsayılan ayırıcıyı kullanarak sıfır veya daha fazla bağımsız değişkenlerden oluşturulan ayrılmış nesneleri işaret. Ayırır ve her iki bir nesne belirtilen türe ait oluşturur ve bir `shared_ptr` nesne ve döndürür paylaşılan sahipliğini yönetmek için `shared_ptr`.  
   
 ```  
@@ -580,7 +582,7 @@ Playing Yesterday by The Beatles, use count: 3
 Playing Blackbird by The Beatles, use count: 3  
 ```  
   
-##  <a name="make_unique"></a>make_unique  
+##  <a name="make_unique"></a>  make_unique  
  Oluşturur ve döndüren bir [unique_ptr](../standard-library/unique-ptr-class.md) belirtilen türe ait bir nesneye hangi yapılandırılmıştır belirtilen bağımsız değişkenler kullanarak.  
   
 ```  
@@ -633,7 +635,7 @@ make_unique(Types&&...) = delete;
   
   Hata C2280 birlikte gördüğünüzde bir `unique_ptr`, neredeyse kesinlikle olduğu silinmiş bir işlevdir kopya kurucusu çağrılacak denediğinizden.  
   
-##  <a name="owner_less"></a>owner_less  
+##  <a name="owner_less">owner_less</a>  
  Paylaşılan ve zayıf işaretçilerin sahiplik temelli karışık karşılaştırmalarını sağlar. Döndürür `true` sol parametre üye işlevi tarafından önce sağ parametre sıralı varsa `owner_before`.  
   
 ```  
@@ -681,7 +683,7 @@ struct owner_less<weak_ptr<Type>>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfları döndürme olarak kendi üye işleçleri tanımlamak `left.owner_before(right)`.  
   
-##  <a name="return_temporary_buffer"></a>return_temporary_buffer  
+##  <a name="return_temporary_buffer"></a>  return_temporary_buffer  
  Kullanılarak ayrıldı geçici bellek kaldırır `get_temporary_buffer` şablon işlevi.  
   
 ```  
@@ -734,7 +736,7 @@ The number of elements that the allocated memory
  could store is given by: resultPair.second = 7.  
 ```  
   
-##  <a name="static_pointer_cast"></a>static_pointer_cast  
+##  <a name="static_pointer_cast"></a>  static_pointer_cast  
  Shared_ptr statik dönüştürme.  
   
 ```  
@@ -791,7 +793,7 @@ int main()
 sp1->val == 3  
 ```  
   
-##  <a name="swap"></a>Swap (C++ Standart Kitaplığı)  
+##  <a name="swap">Swap (C++ Standart Kitaplığı)</a>  
  İki shared_ptr veya weak_ptr nesneleri değiştirme.  
   
 ```  
@@ -871,7 +873,7 @@ int main()
 *wp1 == 5  
 ```  
   
-##  <a name="undeclare_no_pointers"></a>undeclare_no_pointers  
+##  <a name="undeclare_no_pointers"></a>  undeclare_no_pointers  
  Taban adresi işaretçisi ve blok boyutu tarafından bellek bloğuna tanımlanan Bellek bloğu karakterlerin artık izlenebilir işaretçileri içerebileceğini atık toplayıcıya bildirir.  
   
 ```  
@@ -883,7 +885,7 @@ void undeclare_no_pointers(
 ### <a name="remarks"></a>Açıklamalar  
  Çöp toplayıcı işlevi bildirir, adres aralığını `[ptr, ptr + _Size)` izlenebilir işaretçileri şimdi içerebilir.  
   
-##  <a name="undeclare_reachable"></a>undeclare_reachable  
+##  <a name="undeclare_reachable"></a>  undeclare_reachable  
  Belirtilen bellek konumu için ulaşılabilirlik bildirimini iptal eder.  
   
 ```  
@@ -900,7 +902,7 @@ Type *undeclare_reachable(Type* ptr);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `ptr` değil `nullptr`, tüm atık toplayıcı işlevi bildirir, `ptr` artık erişilebilir değil. Karşılaştırır güvenle türetilmiş bir işaretçi eşit döndüren `ptr`.  
   
-##  <a name="uninitialized_copy"></a>uninitialized_copy  
+##  <a name="uninitialized_copy"></a>  uninitialized_copy  
  Nesneleri belirli bir kaynak aralığından başlatılmamış hedef aralığına kopyalar.  
   
 ```  
@@ -1001,7 +1003,7 @@ int main()
 }
 ```  
   
-##  <a name="uninitialized_copy_n"></a>uninitialized_copy_n  
+##  <a name="uninitialized_copy_n"></a>  uninitialized_copy_n  
  Bir girdi yineleyicisinde belirtilen öğe sayısının bir kopyasını oluşturur. Kopyalar ileri doğru bir yineleyicinin içine yerleştirilir.  
   
 ```  
@@ -1037,7 +1039,7 @@ ForwardIterator uninitialized_copy_n(
   
  Kod bir özel durum oluşturmadıkça. Bu durumda, tüm oluşturulmuş nesneler yok edilir ve özel durum yeniden oluşur.  
   
-##  <a name="uninitialized_fill"></a>uninitialized_fill  
+##  <a name="uninitialized_fill"></a>  uninitialized_fill  
  Belirli bir değerin nesnelerini başlatılmamış hedef aralığına kopyalar.  
   
 ```  
@@ -1106,7 +1108,7 @@ int main( )
 The initialized Array contains: 25 25 25 25 25 25 25 25 25 25   
 ```  
   
-##  <a name="uninitialized_fill_n"></a>uninitialized_fill_n  
+##  <a name="uninitialized_fill_n"></a>  uninitialized_fill_n  
  Belirli bir değerin nesnelerini belirli sayıda öğenin başlatılmamış hedef aralığı içine kopyalar.  
   
 ```  

@@ -1,14 +1,17 @@
 ---
-title: "#<a name=\"define-directive-cc--microsoft-docs\"></a>define yönergesi (C/C++) | Microsoft Docs"
+title: "#define yönergesi (C/C++) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: '#define'
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- '#define'
+dev_langs:
+- C++
 helpviewer_keywords:
 - define directive (#define), syntax
 - preprocessor, directives
@@ -16,24 +19,25 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a42b1b823ac69ba9a92535076ba8ec45f6c9710d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d06a24d969f0ae7545f1b9ec0401e098a2bcf54
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="define-directive-cc"></a>#define Yönergesi (C/C++)
 `#define` Oluşturur bir *makrosu*, bir belirteç dizesi ilişkide bir tanımlayıcı veya parametreli tanımlayıcısı olduğu. Makro tanımlandıktan sonra kaynak dosya tanımlayıcıda her örneği için belirteç dizesini derleyici yerine kullanabilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
- `#define`*tanımlayıcısı* *belirteci dize*iptal et  
+ `#define` *tanımlayıcı* *belirteci dize*iptal et  
   
- `#define`*tanımlayıcısı* `(` *tanımlayıcısı*kabul`,`*...*  `,` *tanımlayıcısı*kabul`)`*belirteci dize*iptal et  
+ `#define` *tanımlayıcı* `(` *tanımlayıcısı*kabul`,`*...*  `,` *tanımlayıcısı*kabul`)`*belirteci dize*iptal et  
   
 ## <a name="remarks"></a>Açıklamalar  
  `#define` Yönergesi neden yerine derleyici *belirteci dize* her örneği için *tanımlayıcısı* kaynak dosyasında. *Tanımlayıcısı* yalnızca bir belirteç oluşturduğunda değiştirilir. Diğer bir deyişle, *tanımlayıcısı* dize ya da daha uzun bir tanımlayıcı bir parçası olarak bir açıklama görünüyorsa değiştirilmez. Daha fazla bilgi için bkz: [belirteçleri](../cpp/tokens-cpp.md).  
@@ -69,11 +73,11 @@ ms.lasthandoff: 12/21/2017
   
  İkinci bir `#define` ikinci belirteci sırası ilk aynı olmadığı sürece aynı ada sahip bir makro bir uyarı üretir.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Microsoft C/C++ yeni tanımı orijinal tanımına sözdizimsel olarak aynı ise makro yeniden tanımlamanız olanak sağlar. Diğer bir deyişle, iki tanımları farklı parametre adları olabilir. Bu davranış farklı [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] C iki tanımları sözcüksel olarak aynı olmasını gerektirir.  
   
- Örneğin, aşağıdaki iki makroları dışında parametre adları aynıdır. [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)]C böyle bir şemadaki izin vermez ancak isteğe bağlı olarak Microsoft C/C++ hatasız derler.  
+ Örneğin, aşağıdaki iki makroları dışında parametre adları aynıdır. [!INCLUDE[vcpransi](../atl-mfc-shared/reference/includes/vcpransi_md.md)] C böyle bir şemadaki izin vermez ancak isteğe bağlı olarak Microsoft C/C++ hatasız derler.  
   
 ```  
 #define multiply( f1, f2 ) ( f1 * f2 )  
@@ -116,7 +120,7 @@ var = 80 + 10 * 20;
   
  hangi 280 için değerlendirir.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Makrolar ve sabitler ile tanımlama [/D](../build/reference/d-preprocessor-definitions.md) derleyici seçeneği kullanarak aynı etkiye sahip bir `#define` dosyanızı başlangıcında önişlem yönergesi. En fazla 30 makroları /D seçeneği kullanılarak tanımlanabilir.  
   

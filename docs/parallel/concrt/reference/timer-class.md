@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - timer
 - AGENTS/concurrency::timer
@@ -21,19 +22,22 @@ f1_keywords:
 - AGENTS/concurrency::timer::release_message
 - AGENTS/concurrency::timer::reserve_message
 - AGENTS/concurrency::timer::resume_propagation
-dev_langs: C++
-helpviewer_keywords: timer class
+dev_langs:
+- C++
+helpviewer_keywords:
+- timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3ffc58ce0354b4a3226db82a95d5c0b4cc7bc09f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b5263c8bf156f190ba5572eacd8ff327be5e3f7a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="timer-class"></a>süreölçer Sınıfı
 A `timer` ileti bloğu tek hedef `source_block` hedefine belirtilen süre geçtikten sonra veya belirli aralıklarla ileti gönderme yapabilir.  
@@ -55,7 +59,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Zamanlayıcı](#ctor)|Fazla Yüklendi. Oluşturan bir `timer` belirli bir ileti belirtilen bir zaman aralığından sonra ateşlenir ileti bloğu.|  
+|[timer](#ctor)|Fazla Yüklendi. Oluşturan bir `timer` belirli bir ileti belirtilen bir zaman aralığından sonra ateşlenir ileti bloğu.|  
 |[~ timer yok Edicisi](#dtor)|Bozar bir `timer` ileti bloğu.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -63,8 +67,8 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Duraklat](#pause)|Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki yeniden başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcılar, bu etkisi aynı olarak bir `stop` çağırın.|  
-|[Başlat](#start)|Başlatır `timer` ileti bloğu. Bundan sonra milisaniye belirtilen sayıda çağrılır, belirtilen değer yayılır aşağı akış olarak bir `message`.|  
-|[Durdur](#stop)|Durakları `timer` ileti bloğu.|  
+|[start](#start)|Başlatır `timer` ileti bloğu. Bundan sonra milisaniye belirtilen sayıda çağrılır, belirtilen değer yayılır aşağı akış olarak bir `message`.|  
+|[stop](#stop)|Durakları `timer` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -74,9 +78,9 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |[consume_message](#consume_message)|Daha önce tarafından sunulan bir ileti tüketir `timer` ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
 |[link_target_notification](#link_target_notification)|Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `timer` ileti bloğu.|  
 |[propagate_to_any_targets](#propagate_to_any_targets)|Tarafından üretilen ileti sunmaya çalışır `timer` tüm bağlı hedef blok.|  
-|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Geçersiz kılmaları [source_block::release_message](source-block-class.md#release_message).)|  
-|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `timer` ileti bloğu. (Geçersiz kılmaları [source_block::reserve_message](source-block-class.md#reserve_message).)|  
-|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Geçersiz kılmaları [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
+|[release_message](#release_message)|Bir önceki iletiyi ayırma serbest bırakır. (Overrides [source_block::release_message](source-block-class.md#release_message).)|  
+|[reserve_message](#reserve_message)|Daha önce bu tarafından sunulan bir ileti ayırır `timer` ileti bloğu. (Overrides [source_block::reserve_message](source-block-class.md#reserve_message).)|  
+|[resume_propagation](#resume_propagation)|Bir ayırma serbest bırakıldıktan sonra yayma sürdürür. (Overrides [source_block::resume_propagation](source-block-class.md#resume_propagation).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
@@ -93,7 +97,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="accept_message"></a>accept_message 
+##  <a name="accept_message"></a> accept_message 
 
  Bu tarafından sunulan bir iletiyi kabul `timer` çağırana sahipliğini aktarma ileti bloğu.  
   
@@ -108,7 +112,7 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi `message` çağıran şimdi sahipliği var. nesne.  
   
-##  <a name="consume_message"></a>consume_message 
+##  <a name="consume_message"></a> consume_message 
 
  Daha önce tarafından sunulan bir ileti tüketir `timer` ve çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
   
@@ -126,7 +130,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 ### <a name="remarks"></a>Açıklamalar  
  Benzer şekilde `accept`, her zaman için yapılan bir çağrı tarafından öncesinde ancak `reserve`.  
   
-##  <a name="link_target_notification"></a>link_target_notification 
+##  <a name="link_target_notification"></a> link_target_notification 
 
  Yeni bir hedef için bağlayana olduğunu bildiren bir geri çağırma `timer` ileti bloğu.  
   
@@ -138,7 +142,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
  `_PTarget`  
  Yeni bağlantılı hedefi için bir işaretçi.  
   
-##  <a name="pause"></a>Duraklat 
+##  <a name="pause">Duraklat</a> 
 
  Durakları `timer` ileti bloğu. Yinelenen ise `timer` blok Mesajlaşma, bir sonraki yeniden başlatılmadan `start()` çağırın. Yinelenmeyen için zamanlayıcılar, bu etkisi aynı olarak bir `stop` çağırın.  
   
@@ -146,7 +150,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 void pause();
 ```  
   
-##  <a name="propagate_to_any_targets"></a>propagate_to_any_targets 
+##  <a name="propagate_to_any_targets"></a> propagate_to_any_targets 
 
  Tarafından üretilen ileti sunmaya çalışır `timer` tüm bağlı hedef blok.  
   
@@ -154,7 +158,7 @@ void pause();
 virtual void propagate_to_any_targets(_Inout_opt_ message<T> *);
 ```  
   
-##  <a name="release_message"></a>release_message 
+##  <a name="release_message"></a> release_message 
 
  Bir önceki iletiyi ayırma serbest bırakır.  
   
@@ -166,7 +170,7 @@ virtual void release_message(runtime_object_identity _MsgId);
  `_MsgId`  
  `runtime_object_identity` , `message` Yayımlanan nesne.  
   
-##  <a name="reserve_message"></a>reserve_message 
+##  <a name="reserve_message"></a> reserve_message 
 
  Daha önce bu tarafından sunulan bir ileti ayırır `timer` ileti bloğu.  
   
@@ -179,12 +183,12 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
  `runtime_object_identity` , `message` Ayrılan nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`İletiyi başarıyla ayrıldı, `false` Aksi takdirde.  
+ `true` İletiyi başarıyla ayrıldı, `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sonra `reserve` çağrılır, döndürürse `true`, her iki `consume` veya `release` alın veya iletinin sahipliğini serbest bırakmak için çağrılmalıdır.  
   
-##  <a name="resume_propagation"></a>resume_propagation 
+##  <a name="resume_propagation"></a> resume_propagation 
 
  Bir ayırma serbest bırakıldıktan sonra yayma sürdürür.  
   
@@ -192,7 +196,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 virtual void resume_propagation();
 ```  
   
-##  <a name="start"></a>Başlat 
+##  <a name="start"></a> Başlat 
 
  Başlatır `timer` ileti bloğu. Bundan sonra milisaniye belirtilen sayıda çağrılır, belirtilen değer yayılır aşağı akış olarak bir `message`.  
   
@@ -200,7 +204,7 @@ virtual void resume_propagation();
 void start();
 ```  
   
-##  <a name="stop"></a>Durdur 
+##  <a name="stop"></a> Durdur 
 
  Durakları `timer` ileti bloğu.  
   
@@ -208,7 +212,7 @@ void start();
 void stop();
 ```  
   
-##  <a name="ctor"></a>Zamanlayıcı 
+##  <a name="ctor"></a> Zamanlayıcı 
 
  Oluşturan bir `timer` belirli bir ileti belirtilen bir zaman aralığından sonra ateşlenir ileti bloğu.  
   
@@ -256,7 +260,7 @@ timer(
 ### <a name="remarks"></a>Açıklamalar  
  Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_Scheduler` veya `_ScheduleGroup` parametreleri.  
   
-##  <a name="dtor"></a>~ timer 
+##  <a name="dtor"></a> ~ timer 
 
  Bozar bir `timer` ileti bloğu.  
   

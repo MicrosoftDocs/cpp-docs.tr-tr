@@ -4,31 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: functional/std::is_bind_expression
-dev_langs: C++
-helpviewer_keywords: is_bind_expression class
+ms.topic: reference
+f1_keywords:
+- functional/std::is_bind_expression
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_bind_expression class
 ms.assetid: 0715f9e9-2239-4778-a1cf-2c21f49dfd47
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4968a82385cf822a20ff761dd8f4e87998784084
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e3abf76e76bfe125ff371817fcdb02533a596b90
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="isbindexpression-class"></a>is_bind_expression Sınıfı
 Türü çağırarak oluşturursa testleri `bind`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-şablonu<class Ty>  
-Yapı is_bind_expression {  
+Şablonu<class Ty>  
+struct is_bind_expression {  
    statik const bool değeri;  
    };  
   
@@ -74,5 +79,5 @@ int main()
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [bağlama](../standard-library/functional-functions.md#bind)
+ [Bağlama](../standard-library/functional-functions.md#bind)
 

@@ -1,34 +1,37 @@
 ---
-title: "vektör&lt;bool&gt;:: reference::operator = | Microsoft Docs"
+title: vector&lt;bool&gt;::reference::operator= | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - =
 - operator=
 - vector<bool>::reference::operator=
 - std::vector<bool>::reference::operator=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - = operator, with specific C++ Standard Library objects
 - reference::operator=
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 067a351fee066612f09d44938c8a627797447402
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9fd4d6f86f25735ed0d4b2e84bd90faa63402573
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="vectorltboolgtreferenceoperator"></a>vektör&lt;bool&gt;:: reference::operator =
+# <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
 Bir bite bir Boolean değeri, veya başvurulan bir öğenin tuttuğu değeri atar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -126,6 +129,6 @@ The original value of the 3rd element still stored in a bool: false
  **Namespace:** std  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [vektör\<bool >:: sınıfı başvurusu](../standard-library/vector-bool-reference-class.md)   
+ [vector\<bool>::reference Class](../standard-library/vector-bool-reference-class.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

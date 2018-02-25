@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <csignal>
-dev_langs: C++
-helpviewer_keywords: csignal header
+ms.topic: reference
+f1_keywords:
+- <csignal>
+dev_langs:
+- C++
+helpviewer_keywords:
+- csignal header
 ms.assetid: d18bcf82-a89a-476c-a6bf-726af956f7c0
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0885aa2b65011cc74c2022b831fc35da31e9848d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 52d6f1043f55c9c610467f9e820e34f5ee874970
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltcsignalgt"></a>&lt;csignal&gt;
 Standart C Kitaplığı üstbilgi içeren \<signal.h > ve ilişkili adlarıyla ekler `std` ad alanı.  

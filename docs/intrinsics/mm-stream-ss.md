@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: _mm_stream_ss
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- _mm_stream_ss
+dev_langs:
+- C++
 helpviewer_keywords:
 - movntss instruction
 - _mm_stream_ss intrinsic
 ms.assetid: c53dffe9-0dfe-4063-85d3-e8987b870fce
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b4b9f4f8334552acde7b8a18fa3d3b6110183234
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 420952d58bb46012741ee95ced4cf39c12d381cd
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mmstreamss"></a>_mm_stream_ss  
   
-**Microsoft özel**  
+**Microsoft Specific**  
   
  32-bit veri önbellekleri kirletmesini olmadan bir bellek konumuna yazar.  
   
@@ -41,10 +45,10 @@ void _mm_stream_ss(
   
 #### <a name="parameters"></a>Parametreler  
   
- [out]`Dest`  
+ [out] `Dest`  
  Kaynak veri yazıldığı konuma bir işaretçi.  
   
- [in]`Source`  
+ [in] `Source`  
  İçeren 128 bitlik bir sayı `float` 32 bit kendi alt yazılacak değer...  
   
 ## <a name="return-value"></a>Dönüş Değeri  

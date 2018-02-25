@@ -5,24 +5,27 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: istream/std::operator&gt;&gt;
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- istream/std::operator&gt;&gt;
+dev_langs:
+- C++
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a33a333cc9e70ee57cd1d5612e6de008d49b1d72
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dc68ed6c0122fbe1176bfda1d446421677902e6c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; işleçleri
  
-##  <a name="op_gt_gt"></a>işleci&gt;&gt;  
+##  <a name="op_gt_gt"></a>  işleci&gt;&gt;  
  Karakterler ve dizeleri akıştan ayıklar.  
   
 ```  
@@ -70,7 +73,7 @@ basic_istream<Elem, Tr>& operator>>(
  Bir akış.  
   
  `str`  
- Bir dize.  
+ A string.  
   
  `val`  
  Bir tür.  

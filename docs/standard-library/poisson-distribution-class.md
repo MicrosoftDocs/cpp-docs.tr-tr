@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::poisson_distribution
 - random/std::poisson_distribution::reset
@@ -19,7 +20,8 @@ f1_keywords:
 - random/std::poisson_distribution::param_type::mean
 - random/std::poisson_distribution::param_type::operator==
 - random/std::poisson_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::poisson_distribution [C++]
 - std::poisson_distribution [C++], reset
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e9ebeb453aefee8310e45779f1fd60c7bd207771
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c75f25652ff71b6466dfc259318c20bdc3352ec1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="poissondistribution-class"></a>poisson_distribution Sınıfı
 Poisson dağılımı oluşturur.  
@@ -204,7 +207,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="poisson_distribution"></a>poisson_distribution::poisson_distribution  
+##  <a name="poisson_distribution"></a>  poisson_distribution::poisson_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -220,13 +223,13 @@ explicit binomial_distribution(const param_type& parm);
 Dağıtım oluşturmak için kullanılan parametre yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`0.0 < mean`  
+ **Önkoşul:** `0.0 < mean`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `mean` değeri tutan değeri *anlamına*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>poisson_distribution::param_type  
+##  <a name="param_type"></a>  poisson_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
 ```    
@@ -244,7 +247,7 @@ struct param_type {
 Oluşturucu parametreleri için bkz: [poisson_distribution](#poisson_distribution).  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`0.0 < mean`  
+ **Önkoşul:** `0.0 < mean`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: cl.exe compiler, intrinsics
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- cl.exe compiler, intrinsics
 ms.assetid: 1fe3958e-d2fe-4188-8e34-5896738246eb
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a97d2469fdec35c73e830d4a616a9e4487ffef86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c1cf9854229e6451a31f62b3df6e6d3babda011e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>İç bilgiler kullanılabilir tüm mimarileri hakkında
 Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:  
@@ -60,10 +64,10 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_InterlockedExchange16](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedExchange64](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedExchange8](../intrinsics/interlockedexchange-intrinsic-functions.md)|intrin.h|  
-|[_Interlockedexchangeadd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_Interlockedexchangeadd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_Interlockedexchangeadd64](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
-|[_Interlockedexchangeadd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd16](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd64](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
+|[_InterlockedExchangeAdd8](../intrinsics/interlockedexchangeadd-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedExchangePointer](../intrinsics/interlockedexchangepointer-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedIncrement](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|  
 |[_InterlockedIncrement16](../intrinsics/interlockedincrement-intrinsic-functions.md)|intrin.h|  
@@ -96,9 +100,9 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
   
 |İç|Üstbilgi|  
 |---------------|------------|  
-|[Abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
+|[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
 |[_abs64](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|stdlib.h|  
-|[ACOS](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|  
+|[acos](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|  
 |[acosf](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|  
 |[acosl](../c-runtime-library/reference/acos-acosf-acosl.md)|Math.h|  
 |[_alloca](../c-runtime-library/reference/alloca.md)|malloc.h|  
@@ -106,7 +110,7 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[asinf](../c-runtime-library/reference/asin-asinf-asinl.md)|Math.h|  
 |[asinl](../c-runtime-library/reference/asin-asinf-asinl.md)|Math.h|  
 |[atan](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
-|[ATAN2](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
+|[atan2](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
 |[atan2f](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
 |[atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
 |[atanf](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)|Math.h|  
@@ -156,11 +160,11 @@ Aşağıdaki ön tanımlı x86, AMD64 kullanılabilir ve mimarileri ARM:
 |[_rotr64](../c-runtime-library/reference/rotl-rotl64-rotr-rotr64.md)|stdlib.h|  
 |[sin](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
 |[sinf](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
-|[SİNH](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
+|[sinh](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
 |[sinhf](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
 |[sinhl](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
 |[sinl](../c-runtime-library/reference/pow-powf-powl.md)|Math.h|  
-|[Sqrt](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Math.h|  
+|[sqrt](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Math.h|  
 |[sqrtf](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Math.h|  
 |[sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|Math.h|  
 |[strcat](../c-runtime-library/reference/strcat-wcscat-mbscat.md)|String.h|  

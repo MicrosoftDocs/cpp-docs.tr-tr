@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 08/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: CMake in Visual C++
+dev_langs:
+- C++
+helpviewer_keywords:
+- CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 33c768d419215d6bee6d5d8acff707ec129b7cd5
-ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8b9f00e511be43e5a6b77abae6394013e4e33a34
+ms.sourcegitcommit: 2cca90d965f76ebf1d741ab901693a15d5b8a4df
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++ projelerinde CMake
 
@@ -161,7 +165,7 @@ Dosyayı kaydettikten hemen yapılandırma adımı otomatik olarak yeniden çal�
 
    ![CMakeLists.txt dosya hataları](media/cmake-cmakelists-error.png "CMakeLists.txt dosya hataları")
 
-## <a name="cmake_settings"></a>CMake ayarları ve özel yapılandırmalar
+## <a name="cmake_settings"></a> CMake ayarları ve özel yapılandırmalar
 
 Varsayılan olarak, Visual Studio altı varsayılan CMake yapılandırmaları ("x86-Debug", "x86-sürüm", "x64-Debug", "x64-sürüm", "Linux-Debug" ve "Linux-sürüm") sağlar. Bu yapılandırmalar CMake.exe belirli bir projenin CMake önbelleği oluşturmak için nasıl çağrıldığını tanımlayın. Bu yapılandırmaları değiştirmeniz veya yeni bir özel yapılandırma oluşturmak için Seç **CMake | CMake Ayarları Değiştir**ve ardından ayarları uygulamak CMakeLists.txt dosyası seçin. **CMake ayarlarını değiştir** komutu dosyanın bağlam menüsünde kullanılabilir de **Çözüm Gezgini**. Bu komutu proje klasöründe bir CMakeSettings.json dosyası oluşturur. Bu dosya CMake önbellek dosyası örneğin sonra yeniden oluşturmak için kullanılan bir **temiz** işlemi. 
 
@@ -215,13 +219,13 @@ Visual Studio Oluşturucu CMakeSettings.json ana menüden seçerek açın **CMak
 CMakeSettings.json tüketim ortam değişkenleri herhangi bir yukarıda belirtilen özellikleri de destekler. Kullanmak için söz dizimi `${env.FOO}` % % ortam değişkeniyle FOO genişletin.
 Ayrıca bu dosya içinde yerleşik makroları erişim sahibi:
 
-- `${workspaceRoot}`– Çalışma klasörün tam yolunu sağlar
-- `${workspaceHash}`– karma çalışma konumunun; yararlı (örneğin, klasör yollarında kullanmak için) geçerli çalışma alanı için benzersiz bir tanımlayıcı oluşturmak için
-- `${projectFile}`– kök CMakeLists.txt dosyasının tam yolu
-- `${projectDir}`– klasörünün kök CMakeLists.txt dosyasının tam yolu
-- `${thisFile}`– CMakeSettings.json dosyasının tam yolu
-- `${name}`– yapılandırmasının adı
-- `${generator}`– Bu yapılandırmada kullanılan CMake oluşturucu adı
+- `${workspaceRoot}` – Çalışma klasörün tam yolunu sağlar
+- `${workspaceHash}` – karma çalışma konumunun; yararlı (örneğin, klasör yollarında kullanmak için) geçerli çalışma alanı için benzersiz bir tanımlayıcı oluşturmak için
+- `${projectFile}` – kök CMakeLists.txt dosyasının tam yolu
+- `${projectDir}` – klasörünün kök CMakeLists.txt dosyasının tam yolu
+- `${thisFile}` – CMakeSettings.json dosyasının tam yolu
+- `${name}` – yapılandırmasının adı
+- `${generator}` – Bu yapılandırmada kullanılan CMake oluşturucu adı
 
 ### <a name="ninja-command-line-arguments"></a>Ninja komut satırı bağımsız değişkenleri
 
@@ -248,8 +252,7 @@ usage: ninja [options] [targets...]
 |   -w FLAG  | Uyarılar (kullanın -w listesini uyarıları) ayarla|
 
 ### <a name="inherited-environments-visual-studio-2017-version-155"></a>Devralınan ortamları (Visual Studio 2017 sürüm 15,5)
-
-CmakeSettings.json artık devralınan ortamları destekler. Bu özellik (1) varsayılan ortamları devralır ve (2) çalıştırıldığında CMake.exe için geçirilen özel ortam değişkenleri oluşturmanıza olanak sağlar.
+CMakeSettings.json artık devralınan ortamları destekler. Bu özellik (1) varsayılan ortamları devralır ve (2) çalıştırıldığında CMake.exe için geçirilen özel ortam değişkenleri oluşturmanıza olanak sağlar.
 
 ```json
   "inheritEnvironments": [ "msvc_x64_x64" ]
@@ -271,7 +274,7 @@ Aşağıdaki tabloda, varsayılan değerleri ve komut satırı eşdeğerleri gö
 |msvc_arm64_x64|Derleme ARM64 için 64-bit araçlarını kullanma|
 
 ### <a name="custom-environment-variables"></a>Özel ortam değişkenleri
-CmakeSettings.json içinde özel ortam değişkenleri genel tanımlayabilirsiniz veya her yapılandırmada **ortamları** özelliği. Aşağıdaki örnek, bir genel değişkeni tanımlar **BuildDir**, x86 hata ayıklama ve x64-Debug yapılandırmalarını devralındı. Her yapılandırma değişkeni için değer belirtmek için kullanır. **buildRoot** bu yapılandırma için özellik. Ayrıca her yapılandırma nasıl kullandığını unutmayın **inheritEnvironments** özelliği yalnızca bu yapılandırma için geçerli bir değişken belirtin.
+CMakeSettings.json içinde özel ortam değişkenleri genel tanımlayabilirsiniz veya her yapılandırmada **ortamları** özelliği. Aşağıdaki örnek, bir genel değişkeni tanımlar **BuildDir**, x86 hata ayıklama ve x64-Debug yapılandırmalarını devralındı. Her yapılandırma değişkeni için değer belirtmek için kullanır. **buildRoot** bu yapılandırma için özellik. Ayrıca her yapılandırma nasıl kullandığını unutmayın **inheritEnvironments** özelliği yalnızca bu yapılandırma için geçerli bir değişken belirtin.
 
 ```json
 {
@@ -290,8 +293,7 @@ CmakeSettings.json içinde özel ortam değişkenleri genel tanımlayabilirsiniz
       "configurationType": "Debug",
       // Inherit the defaults for using the MSVC x86 compiler.
       "inheritEnvironments": [ "msvc_x86" ],
-      "buildRoot": "${env.BuildDir}\\${name}"
-    },
+      "buildRoot": "${env.BuildDir}\\${name}"    },
     {
       "name": "x64-Debug",
       "generator": "Ninja",
@@ -346,7 +348,7 @@ Sonraki örnekte kendi değerini x86 hata ayıklama yapılandırmasını tanıml
 }
 ```
 
-## <a name="cmake-configure-step"></a>Cmake yapılandırma adımı
+## <a name="cmake-configure-step"></a>CMake yapılandırma adımı
 
 Önemli değişiklikler CMakeSettings.json veya CMakeLists.txt dosyalar, Visual Studio için otomatik olarak yapıldığında yeniden CMake'ı çalıştıran adım yapılandırın. Yapılandırma adımı hatasız tamamlanırsa, toplanan bilgileri de yapı C++ IntelliSense ve dil Hizmetleri'nde kullanılabilir ve işlemleri hata ayıklama.
 

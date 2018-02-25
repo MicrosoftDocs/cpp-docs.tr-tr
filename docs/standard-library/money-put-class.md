@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_put
 - xlocmon/std::money_put::char_type
@@ -14,7 +15,8 @@ f1_keywords:
 - xlocmon/std::money_put::string_type
 - xlocmon/std::money_put::do_put
 - xlocmon/std::money_put::put
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::money_put [C++]
 - std::money_put [C++], char_type
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bd47afe55f1e2625dfe216afd6ef98cbcba7b21f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 33554a3c3422a06693a7daee60c1ccaa47bd00c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 Şablon sınıfı parasal değerleri denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesneyi tanımlayan `CharType`.  
@@ -67,21 +70,21 @@ class money_put : public locale::facet;
 |-|-|  
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|  
 |[iter_type](#iter_type)|Bir çıkış yineleyiciyi açıklayan tür.|  
-|[STRING_TYPE](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
+|[string_type](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
 |||  
 |-|-|  
 |[do_put](#do_put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürmek için çağrılan bir sanal işlev.|  
-|[yerleştirme](#put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürür.|  
+|[PUT](#put)|Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>money_put::char_type  
+##  <a name="char_type"></a>  money_put::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -91,7 +94,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="do_put"></a>money_put::do_put  
+##  <a name="do_put"></a>  money_put::do_put  
  Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürmek için çağrılan bir sanal işlev.  
   
 ```  
@@ -157,11 +160,11 @@ virtual iter_type do_put(
   
 - **Fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) herhangi bir ondalık ayırıcısı sağındaki önemli kesir basamak sayısını belirler.  
   
- Varsa oturum dize ( **fac**. `negative_sign`veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi oluşturulduğu eşit öğesi **money_base::sign** biçimi desende görüntülenir ( **fac**. `neg_format`veya **fac**. `pos_format`). Kalan öğeler para çıktı alanı sonunda üretilir.  
+ Varsa oturum dize ( **fac**. `negative_sign` veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi oluşturulduğu eşit öğesi **money_base::sign** biçimi desende görüntülenir ( **fac**. `neg_format` veya **fac**. `pos_format`). Kalan öğeler para çıktı alanı sonunda üretilir.  
   
- Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır olmayan, olan dize **fac**. `curr_symbol`oluşturulduğu eşit öğesi **money_base::symbol** biçimi desende görüntülenir. Aksi takdirde, para birimi simgesini oluşturulur.  
+ Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır olmayan, olan dize **fac**. `curr_symbol` oluşturulduğu eşit öğesi **money_base::symbol** biçimi desende görüntülenir. Aksi takdirde, para birimi simgesini oluşturulur.  
   
- Hiçbir gruplandırma kısıtlamaları tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğe CHAR_MAX değeri varsa), ardından hiçbir örneği **fac**. `thousands_sep`para çıktı alanı değeri bölümünde oluşturulan (burada eşit öğesi **money_base::value** biçimi desende görünür). Varsa **fac**. `frac_digits`sıfır, sonra hiçbir örneğinin **fac**. `decimal_point`ondalık basamak oluşturulur. Aksi takdirde, sonuçta elde edilen para çıktı alanı düşük düzey yerleştirir **fac**. `frac_digits`ondalık konumun sağında ondalık basamağa.  
+ Hiçbir gruplandırma kısıtlamaları tarafından uygulanan varsa **fac**. **Gruplandırma** (ilk öğe CHAR_MAX değeri varsa), ardından hiçbir örneği **fac**. `thousands_sep` para çıktı alanı değeri bölümünde oluşturulan (burada eşit öğesi **money_base::value** biçimi desende görünür). Varsa **fac**. `frac_digits` sıfır, sonra hiçbir örneğinin **fac**. `decimal_point` ondalık basamak oluşturulur. Aksi takdirde, sonuçta elde edilen para çıktı alanı düşük düzey yerleştirir **fac**. `frac_digits` ondalık konumun sağında ondalık basamağa.  
   
  Doldurma oluşur olması durumunda dışında herhangi bir sayısal çıktı alan ettirilmesi **iosbase**. **bayrakları** & **iosbase**. [iç](../standard-library/ios-functions.md#internal) sıfır dışında her iç doldurma olduğu oluşturulduğu eşit öğesi **money_base::space** görünüyorsa biçimi desende görüntülenir. Aksi halde, iç doldurma önce oluşturulan sıralı oluşur. Doldurma karakteri **dolgu**.  
   
@@ -170,7 +173,7 @@ virtual iter_type do_put(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [put](#put), sanal üye fonksiyonu tarafından çağrılır burada **put**.  
   
-##  <a name="iter_type"></a>money_put::iter_type  
+##  <a name="iter_type"></a>  money_put::iter_type  
  Bir çıkış yineleyiciyi açıklayan tür.  
   
 ```  
@@ -180,7 +183,7 @@ typedef OutputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **OutputIterator.**  
   
-##  <a name="money_put"></a>money_put::money_put  
+##  <a name="money_put"></a>  money_put::money_put  
  Nesne türü Oluşturucusu `money_put`.  
   
 ```  
@@ -198,13 +201,13 @@ explicit money_put(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="put"></a>money_put::Put  
+##  <a name="put"></a>  money_put::Put  
  Bir sayı ya da dizeyi parasal bir değeri temsil eden bir karakter dizisine dönüştürür.  
   
 ```  
@@ -278,7 +281,7 @@ int main( )
 money_put( ) = "CAD1,000.12"  
 ```  
   
-##  <a name="string_type"></a>money_put::string_type  
+##  <a name="string_type"></a>  money_put::string_type  
  Tür karakterleri içeren bir dize açıklayan türü **CharType**.  
   
 ```  

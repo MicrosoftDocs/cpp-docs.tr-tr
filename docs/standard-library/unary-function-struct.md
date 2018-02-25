@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: functional/std::unary
-dev_langs: C++
-helpviewer_keywords: unary_function class
+ms.topic: reference
+f1_keywords:
+- functional/std::unary
+dev_langs:
+- C++
+helpviewer_keywords:
+- unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 41bcddd062c37dee8f92b1e16e4fe89e55a0c427
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: de8b13b1aa1e0f8d8ab25c1d1ed4a2177249aa51
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="unaryfunction-struct"></a>unary_function Yapısı
 Birli işlev nesnesi sağlayan türetilmiş sınıflar tarafından devralınır türlerini tanımlayan bir boş temel yapı.  

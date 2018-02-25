@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __vmx_vmresume
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __vmx_vmresume
+dev_langs:
+- C++
 helpviewer_keywords:
 - __vmx_vmresume intrinsic
 - VMRESUME instruction
 ms.assetid: 233fe1b6-c727-493a-a484-1b2363732281
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ace3bfcc5063c705346543ad3d72e96e74dd6778
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8f7c35842c0e51b519e474378436c66a406ff80b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="vmxvmresume"></a>__vmx_vmresume
-**Microsoft özel**  
+**Microsoft Specific**  
   
  VMX kök olmayan işlemi, geçerli sanal makine denetim yapısı (Windows VMCS) kullanarak devam eder.  
   

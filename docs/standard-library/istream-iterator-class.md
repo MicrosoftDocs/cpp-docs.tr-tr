@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - iterator/std::istream_iterator
 - iterator/std::istream_iterator::char_type
 - iterator/std::istream_iterator::istream_type
 - iterator/std::istream_iterator::traits_type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::istream_iterator [C++]
 - std::istream_iterator [C++], char_type
 - std::istream_iterator [C++], istream_type
 - std::istream_iterator [C++], traits_type
 ms.assetid: fb52a8cd-7f71-48d1-b73e-4b064e2a8d16
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ef5ba7c445325131ad620efcbb6061a0fa49039a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f8e2e368adae0d4a995521da65021a4193ec28a1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="istreamiterator-class"></a>istream_iterator Sınıfı
 Bir giriş yineleyici nesnesi tanımlar. Sınıfın nesnelerini ayıklar `Type` bir giriş akışından hangi BT bir nesne türü depoları eriştiği `pointer` için `basic_istream` <  `CharType`, `Traits`>.  
@@ -77,16 +80,16 @@ class istream_iterator
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Saklı nesne türünün bilgileri başvuru kaldırma işleci döndürür `Type` tarafından ele `istream_iterator`.|  
-|[-> işleci](#operator-_gt)|Varsa, bir üyenin değerini döndürür.|  
-|[operator ++](#op_add_add)|Giriş akışındaki artırılmış nesneyi ayıklar ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|  
+|[operator*](#op_star)|Saklı nesne türünün bilgileri başvuru kaldırma işleci döndürür `Type` tarafından ele `istream_iterator`.|  
+|[operator->](#operator-_gt)|Varsa, bir üyenin değerini döndürür.|  
+|[operator++](#op_add_add)|Giriş akışındaki artırılmış nesneyi ayıklar ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yineleyici >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>istream_iterator::char_type  
+##  <a name="char_type"></a>  istream_iterator::char_type  
  Karakter türü için sağlayan bir türü `istream_iterator`.  
   
 ```
@@ -132,7 +135,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator"></a>istream_iterator::istream_iterator  
+##  <a name="istream_iterator"></a>  istream_iterator::istream_iterator  
  Varsayılan olarak bir akış uç yineleyici yapıları `istream_iterator` veya `istream_iterator` yineleyici'nın akış türü için hangi okur başlatıldı.  
   
 ```
@@ -184,7 +187,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_type"></a>istream_iterator::istream_type  
+##  <a name="istream_type"></a>  istream_iterator::istream_type  
  Akış türü için sağlayan bir türü `istream_iterator`.  
   
 ```
@@ -197,7 +200,7 @@ typedef basic_istream<CharType, Traits> istream_type;
 ### <a name="example"></a>Örnek  
   Bkz: [istream_iterator](#istream_iterator) bildirme ve kullanma konusunda bir örnek için `istream_type`.  
   
-##  <a name="op_star"></a>istream_iterator::operator *  
+##  <a name="op_star"></a>  istream_iterator::operator*  
  Saklı nesne türünün bilgileri başvuru kaldırma işleci döndürür **türü** tarafından ele `istream_iterator`.  
   
 ```
@@ -239,7 +242,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istream_iterator__operator-_gt"></a>istream_iterator::operator-&gt;  
+##  <a name="istream_iterator__operator-_gt"></a>  istream_iterator::operator-&gt;  
  Varsa, bir üyenin değerini döndürür.  
   
 ```
@@ -286,7 +289,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_add_add"></a>istream_iterator::operator ++  
+##  <a name="op_add_add"></a>  istream_iterator::operator++  
  Giriş akışındaki artırılmış nesneyi ayıklar ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.  
   
 ```
@@ -330,7 +333,7 @@ int main( )
 }  
 ```  
   
-##  <a name="traits_type"></a>istream_iterator::traits_type  
+##  <a name="traits_type"></a>  istream_iterator::traits_type  
  Karakter nitelikler tür sağlayan bir tür `istream_iterator`.  
   
 ```
@@ -378,7 +381,7 @@ int main( )
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [input_iterator_tag yapısı](../standard-library/input-iterator-tag-struct.md)   
  [iterator yapısı](../standard-library/iterator-struct.md)   
- [\<Yineleyici >](../standard-library/iterator.md)   
+ [\<iterator>](../standard-library/iterator.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

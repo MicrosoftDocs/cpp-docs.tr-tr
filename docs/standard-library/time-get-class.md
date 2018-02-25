@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xloctime/std::time_get
 - locale/std::time_get::char_type
@@ -25,7 +26,8 @@ f1_keywords:
 - locale/std::time_get::get_time
 - locale/std::time_get::get_weekday
 - locale/std::time_get::get_year
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::time_get [C++]
 - std::time_get [C++], char_type
@@ -45,16 +47,17 @@ helpviewer_keywords:
 - std::time_get [C++], get_weekday
 - std::time_get [C++], get_year
 ms.assetid: 869d5f5b-dbab-4628-8333-bdea7e272023
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2bc6d855b1ff1776cdbb1777a4250317accac68a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b1c682110c032150c8406d93c83b89efbc5bc802
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="timeget-class"></a>time_get Sınıfı
 Şablon sınıfı türü sıralarının denetim dönüştürmeleri için yerel ayar modeli olarak hizmet verebilir bir nesneyi tanımlayan `CharType` saat değerleri için.  
@@ -114,7 +117,7 @@ class time_get : public time_base;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>time_get::char_type  
+##  <a name="char_type"></a>  time_get::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -124,7 +127,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="date_order"></a>time_get::date_order  
+##  <a name="date_order"></a>  time_get::date_order  
  Bir model tarafından kullanılan tarih düzenini döndürür.  
   
 ```  
@@ -181,7 +184,7 @@ German_Germany.1252(day, month, year)
 English_United Kingdom.1252(day, month, year)  
 ```  
   
-##  <a name="do_date_order"></a>time_get::do_date_order  
+##  <a name="do_date_order"></a>  time_get::do_date_order  
  Bir model tarafından kullanılan tarih düzenini döndürmek için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -197,7 +200,7 @@ virtual dateorder do_date_order() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [date_order](#date_order), çağıran `do_date_order`.  
   
-##  <a name="do_get"></a>time_get::do_get  
+##  <a name="do_get"></a>  time_get::do_get  
  Karakter verilerini okur ve bir saat değerine dönüştürür. Bir dönüştürme belirticisi ve değiştirici kabul eder.  
   
 ```  
@@ -242,55 +245,55 @@ virtual iter_type
   
  Dönüştürme tanımlayıcıları şunlardır:  
   
- `'a'`veya `'A'` --aynı şekilde davranır [time_get::get_weekday](#get_weekday).  
+ `'a'` veya `'A'` --aynı şekilde davranır [time_get::get_weekday](#get_weekday).  
   
  `'b'`, `'B'`, veya `'h'` --aynı şekilde davranır [time_get::get_monthname](#get_monthname).  
   
- `'c'`--aynı şekilde davranır `"%b %d %H : %M : %S %Y"`.  
+ `'c'` --aynı şekilde davranır `"%b %d %H : %M : %S %Y"`.  
   
- `'C'`--[0, 99] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val * 100 - 1900` içinde `pt-&tm_year`.  
+ `'C'` --[0, 99] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val * 100 - 1900` içinde `pt-&tm_year`.  
   
- `'d'`veya `'e'` --[1, 31] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_mday`.  
+ `'d'` veya `'e'` --[1, 31] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_mday`.  
   
- `'D'`--aynı şekilde davranır `"%m / %d / %y"`.  
+ `'D'` --aynı şekilde davranır `"%m / %d / %y"`.  
   
- `'H'`--[0, 23] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_hour`.  
+ `'H'` --[0, 23] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_hour`.  
   
- `'I'`--[0, 11] aralığındaki bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_hour`.  
+ `'I'` --[0, 11] aralığındaki bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_hour`.  
   
- `'j'`--[1, 366] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
+ `'j'` --[1, 366] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
   
- `'m'`--[1, 12] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val - 1` içinde ve değeriyle depolar `pt-&tm_mon`.  
+ `'m'` --[1, 12] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val - 1` içinde ve değeriyle depolar `pt-&tm_mon`.  
   
- `'M'`--[0, 59] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_min`.  
+ `'M'` --[0, 59] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_min`.  
   
- `'n'`veya `'t'` --aynı şekilde davranır `" "`.  
+ `'n'` veya `'t'` --aynı şekilde davranır `" "`.  
   
- `'p'`--"AM" veya "am" sıfır ve "PM" veya "PM" 12 dönüştürür ve bu değer ekler `pt-&tm_hour`.  
+ `'p'` --"AM" veya "am" sıfır ve "PM" veya "PM" 12 dönüştürür ve bu değer ekler `pt-&tm_hour`.  
   
- `'r'`--aynı şekilde davranır `"%I : %M : %S %p"`.  
+ `'r'` --aynı şekilde davranır `"%I : %M : %S %p"`.  
   
- `'R'`--aynı şekilde davranır `"%H %M"`.  
+ `'R'` --aynı şekilde davranır `"%H %M"`.  
   
- `'S'`--[0, 59] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_sec`.  
+ `'S'` --[0, 59] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_sec`.  
   
- `'T'`veya `'X'` --aynı şekilde davranır `"%H : %M : S"`.  
+ `'T'` veya `'X'` --aynı şekilde davranır `"%H : %M : S"`.  
   
- `'U'`--[0, 53] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
+ `'U'` --[0, 53] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
   
- `'w'`--[0, 6] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_wday`.  
+ `'w'` --[0, 6] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_wday`.  
   
- `'W'`--[0, 53] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
+ `'W'` --[0, 53] aralığında bir ondalık giriş alanı dönüştürür ve değeriyle depolar `pt-&tm_yday`.  
   
- `'x'`--aynı şekilde davranır `"%d / %m / %y"`.  
+ `'x'` --aynı şekilde davranır `"%d / %m / %y"`.  
   
- `'y'`--[0, 99] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val < 69  val + 100 : val` içinde `pt-&tm_year`.  
+ `'y'` --[0, 99] aralığında bir ondalık giriş alan değerine dönüştürür `val` ve depolar `val < 69  val + 100 : val` içinde `pt-&tm_year`.  
   
- `'Y'`--aynı şekilde davranır [time_get::get_year](#get_year).  
+ `'Y'` --aynı şekilde davranır [time_get::get_year](#get_year).  
   
  Diğer bir dönüştürme belirleyici kümeleri `ios_base::failbit` içinde `state` ve döndürür. Bu uygulama, tüm değiştiricisi etkisi yoktur.  
   
-##  <a name="do_get_date"></a>time_get::do_get_date  
+##  <a name="do_get_date"></a>  time_get::do_get_date  
  Bir korumalı bir dize tarafından üretilen tarih olarak ayrıştırılacak adlı sanal üye işlevi *x* tanımlayıcısı için `strftime`.  
   
 ```  
@@ -336,7 +339,7 @@ virtual iter_type do_get_date(iter_type first,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_date](#get_date), çağıran `do_get_date`.  
   
-##  <a name="do_get_monthname"></a>time_get::do_get_monthname  
+##  <a name="do_get_monthname"></a>  time_get::do_get_monthname  
  Bir dizeyi ayın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -374,7 +377,7 @@ virtual iter_type do_get_monthname(iter_type first,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_monthname](#get_monthname), çağıran `do_get_monthname`.  
   
-##  <a name="do_get_time"></a>time_get::do_get_time  
+##  <a name="do_get_time"></a>  time_get::do_get_time  
  Bir korumalı bir dize tarafından üretilen tarih olarak ayrıştırılacak adlı sanal üye işlevi *X* tanımlayıcısı için `strftime`.  
   
 ```  
@@ -420,7 +423,7 @@ virtual iter_type do_get_time(iter_type first,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_time](#get_time), çağıran `do_get_time`.  
   
-##  <a name="do_get_weekday"></a>time_get::do_get_weekday  
+##  <a name="do_get_weekday"></a>  time_get::do_get_weekday  
  Bir dizeyi haftanın günü adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -458,7 +461,7 @@ virtual iter_type do_get_weekday(iter_type first,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_weekday](#get_weekday), çağıran `do_get_weekday`.  
   
-##  <a name="do_get_year"></a>time_get::do_get_year  
+##  <a name="do_get_year"></a>  time_get::do_get_year  
  Bir dizeyi yılın adı olarak ayrıştırmak için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -496,7 +499,7 @@ virtual iter_type do_get_year(iter_type first,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_year](#get_year), çağıran `do_get_year`.  
   
-##  <a name="get"></a>time_get::get  
+##  <a name="get"></a>  time_get::get  
  Karakter verilerinin bir kaynağından okur ve bu verileri saat yapı biriminde depolanan bir saate dönüştürür. Bir dönüştürme belirticisi ve değiştirici ilk işlev kabul eder, ikinci birkaç kabul eder.  
   
 ```  
@@ -561,7 +564,7 @@ iter_type get(
   
  Başka bir öğenin biçimde atlanır sonraki input öğesi eşleşmesi gerekir. Bir eşleşme hatası ayarlar `ios_base::failbit` içinde `state` ve döndürür.  
   
-##  <a name="get_date"></a>time_get::get_date  
+##  <a name="get_date"></a>  time_get::get_date  
  Tarafından üretilen tarih olarak bir dize ayrıştırır *x* tanımlayıcısı için `strftime`.  
   
 ```  
@@ -651,7 +654,7 @@ tm_yday: 0
 tm_isdst: 0  
 ```  
   
-##  <a name="get_monthname"></a>time_get::get_monthname  
+##  <a name="get_monthname"></a>  time_get::get_monthname  
  Bir dizeyi ayın adı olarak ayrıştırır.  
   
 ```  
@@ -739,7 +742,7 @@ tm_yday: 0
 tm_isdst: 0  
 ```  
   
-##  <a name="get_time"></a>time_get::get_time  
+##  <a name="get_time"></a>  time_get::get_time  
  Tarafından üretilen tarih olarak bir dize ayrıştırır *X* tanımlayıcısı için `strftime`.  
   
 ```  
@@ -816,7 +819,7 @@ tm_min: 13
 tm_hour: 11  
 ```  
   
-##  <a name="get_weekday"></a>time_get::get_weekday  
+##  <a name="get_weekday"></a>  time_get::get_weekday  
  Bir dizeyi haftanın gününün adı olarak ayrıştırır.  
   
 ```  
@@ -889,7 +892,7 @@ time_get::get_time(mercredi) =
 tm_wday: 3  
 ```  
   
-##  <a name="get_year"></a>time_get::get_year  
+##  <a name="get_year"></a>  time_get::get_year  
  Bir dizeyi yılın adı olarak ayrıştırır.  
   
 ```  
@@ -963,7 +966,7 @@ time_get::get_year(1928) =
 tm_year: 28  
 ```  
   
-##  <a name="iter_type"></a>time_get::iter_type  
+##  <a name="iter_type"></a>  time_get::iter_type  
  Bir giriş yineleyiciyi açıklayan tür.  
   
 ```  
@@ -973,7 +976,7 @@ typedef InputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **InputIterator**.  
   
-##  <a name="time_get"></a>time_get::time_get  
+##  <a name="time_get"></a>  time_get::time_get  
  Nesne türü Oluşturucusu `time_get`.  
   
 ```  
@@ -991,7 +994,7 @@ explicit time_get(size_t refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   

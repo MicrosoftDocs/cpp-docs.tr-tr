@@ -4,29 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - iterator/std::back_insert_iterator
 - iterator/std::back_insert_iterator::container_type
 - iterator/std::back_insert_iterator::reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::back_insert_iterator [C++]
 - std::back_insert_iterator [C++], container_type
 - std::back_insert_iterator [C++], reference
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bc2cde9149a1b1871a88c193ebd5730f76dc7224
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7646b26c1651ccf93fcc3bcb6828ae402ea5ca07
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="backinsertiterator-class"></a>back_insert_iterator Sınıfı
 Çıkış yineleyici gereksinimlerini karşılayan bir yineleyici bağdaştırıcısını açıklar. Bu öğeleri eklemek yerine bir dizinin arka ucunun üzerine yazar ve bu nedenle C++ dizi kapsayıcılarının yineleyiciler tarafından sağlanan üzerine yazma semantiklerinden farklı semantikler sağlar. `back_insert_iterator` Sınıfı şablonlaştırılmış kapsayıcı türü.  
@@ -56,22 +59,22 @@ class back_insert_iterator;
 |||  
 |-|-|  
 |[container_type](#container_type)|İçin bir kapsayıcı sağlayan bir türü `back_insert_iterator`.|  
-|[başvuru](#reference)|İçin bir başvuru sağlayan bir türü `back_insert_iterator`.|  
+|[reference](#reference)|İçin bir başvuru sağlayan bir türü `back_insert_iterator`.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x` geri eklemek için.|  
-|[operator ++](#op_add_add)|Artışlarla `back_insert_iterator` içine bir değer depolanmış sonraki konuma.|  
-|[işleç =](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` geri eklemek için.|  
+|[operator*](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x` geri eklemek için.|  
+|[operator++](#op_add_add)|Artışlarla `back_insert_iterator` içine bir değer depolanmış sonraki konuma.|  
+|[operator=](#op_eq)|Çıktı yineleyici ifade uygulamak için kullanılan atama işleci * `i`  =  `x` geri eklemek için.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: \<yineleyici >  
   
  **Namespace:** std  
   
-##  <a name="back_insert_iterator"></a>back_insert_iterator::back_insert_iterator  
+##  <a name="back_insert_iterator"></a>  back_insert_iterator::back_insert_iterator  
  Oluşturan bir `back_insert_iterator` bir kapsayıcıda son öğesinden sonra öğeleri ekler.  
   
 ```   
@@ -133,7 +136,7 @@ The initial vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).  
 ```  
   
-##  <a name="container_type"></a>back_insert_iterator::container_type  
+##  <a name="container_type"></a>  back_insert_iterator::container_type  
  İçin bir kapsayıcı sağlayan bir türü `back_insert_iterator`.  
   
 ```   
@@ -185,7 +188,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).  
 ```  
   
-##  <a name="op_star"></a>back_insert_iterator::operator *  
+##  <a name="op_star"></a>  back_insert_iterator::operator*  
  Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci \* *ı* = *x*.  
   
 ```  
@@ -242,7 +245,7 @@ The vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).  
 ```  
   
-##  <a name="op_add_add"></a>back_insert_iterator::operator ++  
+##  <a name="op_add_add"></a>  back_insert_iterator::operator++  
  Artışlarla `back_insert_iterator` içine bir değer depolanmış sonraki konuma.  
   
 ```  
@@ -300,7 +303,7 @@ The vector vec is: ( 10 20 ).
 After the insertions, the vector vec becomes: ( 10 20 30 40 ).  
 ```  
   
-##  <a name="op_eq"></a>back_insert_iterator::operator =  
+##  <a name="op_eq"></a>  back_insert_iterator::operator=  
  Ekler veya arka uç kapsayıcı üzerine bir değer iter.  
   
 ```  
@@ -363,7 +366,7 @@ int main( )
 }  
 ```  
   
-##  <a name="reference"></a>back_insert_iterator::Reference  
+##  <a name="reference"></a>  back_insert_iterator::reference  
  İçin bir başvuru sağlayan bir türü `back_insert_iterator`.  
   
 ```  
@@ -412,7 +415,7 @@ The last element in the vector vec is: 3.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Yineleyici >](../standard-library/iterator.md)   
+ [\<iterator>](../standard-library/iterator.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

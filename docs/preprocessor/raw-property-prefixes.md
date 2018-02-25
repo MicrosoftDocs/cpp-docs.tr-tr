@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: raw_property_prefixes
-dev_langs: C++
-helpviewer_keywords: raw_property_prefixes attribute
+ms.topic: reference
+f1_keywords:
+- raw_property_prefixes
+dev_langs:
+- C++
+helpviewer_keywords:
+- raw_property_prefixes attribute
 ms.assetid: 03a0f48c-c460-4175-a762-9f7f8d84b12f
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 190a7ce7fbca4fea477771b5c125c96ecc187216
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9c38541d720a9b2bc857a4121c2d0e33ec4fc5b9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rawpropertyprefixes"></a>raw_property_prefixes
 **C++ özel**  
@@ -50,4 +55,4 @@ raw_property_prefixes("GetPrefix","PutPrefix","PutRefPrefix")
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

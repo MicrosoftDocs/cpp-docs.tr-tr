@@ -5,23 +5,24 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sstream/std::swap
+ms.topic: reference
+f1_keywords:
+- sstream/std::swap
 ms.assetid: bc9607e8-7c6b-44ef-949b-19e917b450ad
-caps.latest.revision: "10"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: dfa71e79d801fbe48f55b81ae4189cdd6d977afe
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 1c186910203df481bef047f2d1813097590c7508
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltsstreamgt-functions"></a>&lt;sstream&gt; işlevleri
 ||  
 |-|  
-|[değiştirme](#sstream_swap)|  
+|[Değiştirme](#sstream_swap)|  
   
-##  <a name="sstream_swap"></a>değiştirme  
+##  <a name="sstream_swap">Değiştirme</a>  
  İkisi arasındaki değerleri alış verişleri `sstream` nesneleri.  
   
 ```  

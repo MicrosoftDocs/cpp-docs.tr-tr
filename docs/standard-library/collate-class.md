@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - locale/std::collate
 - locale/std::collate::char_type
@@ -17,7 +18,8 @@ f1_keywords:
 - locale/std::collate::do_transform
 - locale/std::collate::hash
 - locale/std::collate::transform
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::collate [C++]
 - std::collate [C++], char_type
@@ -29,16 +31,17 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9cce595095600769743a1320d75b00ec1109275c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 015bfd9a97299bc8fde0817aedb0b686e0dec72a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="collate-class"></a>collate Sınıfı
 Bir dize içindeki karakterlerin sıralamasını ve gruplamasını denetlemek için bir yerel ayar modeli olarak hizmet verebilen bir nesneyi tanımlayan şablon sınıfı, aralarında karşılaştırma yapar ve dizelerin karmasını oluşturur.  
@@ -68,7 +71,7 @@ class collate : public locale::facet;
 |||  
 |-|-|  
 |[char_type](#char_type)|Bir karakter türü açıklayan türü `CharType`.|  
-|[STRING_TYPE](#string_type)|Türü bir dize açıklayan türü `basic_string` türü karakterler içeren `CharType`.|  
+|[string_type](#string_type)|Türü bir dize açıklayan türü `basic_string` türü karakterler içeren `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
@@ -78,15 +81,15 @@ class collate : public locale::facet;
 |[do_compare](#do_compare)|Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırmak için çağrılan sanal işlev.|  
 |[do_hash](#do_hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirlemek için çağrılan sanal işlev.|  
 |[do_transform](#do_transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürmek için çağrılan bir sanal işlev.|  
-|[karma](#hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.|  
-|[dönüştürme](#transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.|  
+|[Karma](#hash)|Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.|  
+|[transform](#transform)|Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>COLLATE::char_type  
+##  <a name="char_type"></a>  collate::char_type  
  Bir karakter türü açıklayan türü **CharType**.  
   
 ```  
@@ -96,7 +99,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="collate"></a>COLLATE::COLLATE  
+##  <a name="collate"></a>  COLLATE::COLLATE  
  Sınıfının nesneleri için oluşturucu kuralları sıralama dize işlemek için yerel ayar model hizmet veren collate.  
   
 ```  
@@ -124,11 +127,11 @@ protected:
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)(`_Refs`).  
   
-##  <a name="compare"></a>COLLATE::COMPARE  
+##  <a name="compare"></a>  COLLATE::COMPARE  
  Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırır.  
   
 ```  
@@ -190,7 +193,7 @@ int main() {
 }  
 ```  
   
-##  <a name="do_compare"></a>COLLATE::do_compare  
+##  <a name="do_compare"></a>  collate::do_compare  
  Eşitlik ve eşitsizlik için kendi modeline özgü kurallara göre iki karakterli dizileri karşılaştırmak için çağrılan sanal işlev.  
   
 ```  
@@ -228,7 +231,7 @@ virtual int do_compare(const CharType* first1,
 ### <a name="example"></a>Örnek  
   Örneğin bkz [collate::compare](#compare), çağıran `do_compare`.  
   
-##  <a name="do_hash"></a>COLLATE::do_hash  
+##  <a name="do_hash"></a>  COLLATE::do_hash  
  Kendi modeline özgü kurallara göre dizilerin karma değerini belirlemek için çağrılan sanal işlev.  
   
 ```  
@@ -251,7 +254,7 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [karma](#hash), çağıran `do_hash`.  
   
-##  <a name="do_transform"></a>COLLATE::do_transform  
+##  <a name="do_transform"></a>  collate::do_transform  
  Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürmek için çağrılan bir sanal işlev.  
   
 ```  
@@ -274,7 +277,7 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 ### <a name="example"></a>Örnek  
   Örneğin bkz [dönüştürme](#transform), çağıran `do_transform`.  
   
-##  <a name="hash"></a>COLLATE::hash  
+##  <a name="hash"></a>  COLLATE::hash  
  Kendi modeline özgü kurallara göre dizilerin karma değerini belirler.  
   
 ```  
@@ -324,7 +327,7 @@ int main( )
 541187293 551279837  
 ```  
   
-##  <a name="string_type"></a>COLLATE::string_type  
+##  <a name="string_type"></a>  collate::string_type  
  Türü bir dize açıklayan türü `basic_string` türü karakterler içeren **CharType**.  
   
 ```  
@@ -337,7 +340,7 @@ typedef basic_string<CharType> string_type;
 ### <a name="example"></a>Örnek  
   Bildirme ve kullanma konusunda bir örnek için `string_type`, bkz: [dönüştürme](#transform).  
   
-##  <a name="transform"></a>COLLATE::Transform  
+##  <a name="transform"></a>  collate::transform  
  Yerel ayarındaki karakter dizisini lexicographical karşılaştırmasına benzer şekilde aynı yerel ayardan dönüştürülen diğer karakter dizileri ile kullanılabilecek bir dize dönüştürür.  
   
 ```  

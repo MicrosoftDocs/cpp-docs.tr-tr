@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - valarray/std::gslice
 - valarray/std::gslice::size
 - valarray/std::gslice::start
 - valarray/std::gslice::stride
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::gslice [C++]
 - std::gslice [C++], size
 - std::gslice [C++], start
 - std::gslice [C++], stride
 ms.assetid: f47cffd0-ea59-4b13-848b-7a5ce1d7e2a3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 52170e08d3118b5eb0ef7bb1e34edbe29b3d38f7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 75dd4e6b4745bbf710541ecc423c3a01b46fc119
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="gslice-class"></a>gslice Sınıfı
 Çok boyutlu bir valarray kümelerine tanımlamak için kullanılan valarray için yardımcı sınıfı. Bir dizinin tüm öğeleri çok boyutlu bir matris bir valarray kabul, dilim boyutlu bir diziye dışında bir vektör ayıklar.  
@@ -58,16 +61,16 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|[boyutu](#size)|İçinde bir genel dilimin öğeleri numaralarını belirtme dizi değerleri bulur bir `valarray`.|  
-|[Başlat](#start)|Bir genel dilimin başlangıç dizinini bulur bir `valarray`.|  
-|[STRIDE](#stride)|Bir genel dilimin öğeler arasındaki mesafeyi bulur bir `valarray`.|  
+|[Boyutu](#size)|İçinde bir genel dilimin öğeleri numaralarını belirtme dizi değerleri bulur bir `valarray`.|  
+|[start](#start)|Bir genel dilimin başlangıç dizinini bulur bir `valarray`.|  
+|[stride](#stride)|Bir genel dilimin öğeler arasındaki mesafeyi bulur bir `valarray`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<valarray >  
   
  **Namespace:** std  
   
-##  <a name="gslice"></a>gslice::gslice  
+##  <a name="gslice"></a>  gslice::gslice  
  Çok boyutlu bir valarray dilimleri tanımlamak için kullanılan valarray için yardımcı sınıfı.  
   
 ```  
@@ -142,7 +145,7 @@ The valarray for vaGSlice is vaResult:
 va[vaGSlice] = ( 0 4 8 12 7 11 15 19)  
 ```  
   
-##  <a name="size"></a>gslice::size  
+##  <a name="size"></a>  gslice::size  
  Bir valarray genel bir dilimi öğeleri numaralarını belirtme dizi değerlerini bulur.  
   
 ```  
@@ -217,7 +220,7 @@ The size of vaResult is:
  vaGSlice.size ( ) = ( 4 4 ).  
 ```  
   
-##  <a name="start"></a>gslice::Start  
+##  <a name="start"></a>  gslice::Start  
  Bir valarray genel bir dilimin başlangıç dizinini bulur.  
   
 ```  
@@ -278,7 +281,7 @@ The valarray for vaGSlice is vaResult:
 The index of the first element of vaResult is: 0.  
 ```  
   
-##  <a name="stride"></a>gslice::stride  
+##  <a name="stride"></a>  gslice::stride  
  Bir valarray, genel bir dilim öğeler arasındaki mesafeyi bulur.  
   
 ```  

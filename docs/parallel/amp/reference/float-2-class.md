@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::yx
 - amp_short_vectors/Concurrency::graphics::float_2::operator-=
@@ -33,18 +34,20 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::set_y
 - amp_short_vectors/Concurrency::graphics::float_2::y
 - amp_short_vectors/Concurrency::graphics::float_2::g
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c963d55bd87dc84d48f8aafedbd6ba8cfa54d3a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e45a4388b1dcdfd0409b09c0fa50a1d4353a441f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="float2-class"></a>float_2 Sınıfı
 İki float kısa bir vektör temsil eder.  
@@ -67,7 +70,7 @@ class float_2;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[float_2 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[float_2 Constructor](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -92,11 +95,11 @@ class float_2;
 |----------|-----------------|  
 |float_2::operator-||  
 |float_2::operator--||  
-|float_2::operator * =||  
-|float_2::operator ve =||  
-|float_2::operator ++||  
-|float_2::operator +=||  
-|float_2::operator =||  
+|float_2::operator*=||  
+|float_2::operator/=||  
+|float_2::operator++||  
+|float_2::operator+=||  
+|float_2::operator=||  
 |float_2::operator-=||  
   
 ### <a name="public-constants"></a>Genel sabitler  
@@ -110,7 +113,7 @@ class float_2;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |float_2::g||  
-|float_2::Gr||  
+|float_2::gr||  
 |float_2::r||  
 |float_2::rg||  
 |float_2::x||  
@@ -126,7 +129,7 @@ class float_2;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>float_2 
+##  <a name="ctor"></a> float_2 
 
  Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
   
@@ -189,7 +192,7 @@ explicit inline float_2(
  `_Other`  
  Başlatmak için kullanılan nesne.  
   
-##  <a name="float_2__size"></a>boyutu 
+##  <a name="float_2__size"></a> Boyutu 
 
 ```  
 static const int size = 2;  

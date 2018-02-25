@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - regex/std::regex_constants
 - regex/std::regex_constants::error_collate
@@ -47,7 +48,8 @@ f1_keywords:
 - regex/std::regex_constants::nosubs
 - regex/std::regex_constants::optimize
 - regex/std::regex_constants::collate
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::regex_constants [C++]
 - std::regex_constants [C++], error_collate
@@ -89,16 +91,17 @@ helpviewer_keywords:
 - std::regex_constants [C++], optimize
 - std::regex_constants [C++], collate
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: df0e2b795b7ba19b4981ae3caecd1d14f36e11e0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4b14c219f755e50e1ede0e8fd58d9a5158283235
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="regexconstants-class"></a>regex_constants Sınıfı
 Normal ifade bayrakları için ad alanı.  
@@ -121,7 +124,7 @@ namespace regex_constants {
   
  **Namespace:** std  
   
-##  <a name="error_type"></a>regex_constants::error_type  
+##  <a name="error_type"></a>  regex_constants::error_type  
  Normal ifade sözdizimi hataları raporlama için işaretler.  
   
 ```  
@@ -148,39 +151,39 @@ enum error_type
 ### <a name="remarks"></a>Açıklamalar  
  Hata bayrakları tutabilen bir nesneyi tanımlayan bir enum türü türüdür. Ayrı bayrak değerleri şunlardır:  
   
- `error_backref`--İfade geçersiz arka başvuru içeriyor  
+ `error_backref` --İfade geçersiz arka başvuru içeriyor  
   
- `error_badbrace`--İfade geçersiz bir sayı {} ifadesinde bulunan  
+ `error_badbrace` --İfade geçersiz bir sayı {} ifadesinde bulunan  
   
- `error_badrepeat`--bir yineleme ifadesi (biri ' *', '', '+', ' {' çoğu bağlamlarda) bir ifade tarafından öncesinde değil  
+ `error_badrepeat` --bir yineleme ifadesi (biri ' *', '', '+', ' {' çoğu bağlamlarda) bir ifade tarafından öncesinde değil  
   
- `error_brace`--ifade eşleşmeyen bulunan ' {' veya '}'  
+ `error_brace` --ifade eşleşmeyen bulunan ' {' veya '}'  
   
- `error_brack`--ifade eşleşmeyen bulunan ' [' veya ']'  
+ `error_brack` --ifade eşleşmeyen bulunan ' [' veya ']'  
   
- `error_collate`--İfade geçersiz bir harmanlama öğe adı yer alan  
+ `error_collate` --İfade geçersiz bir harmanlama öğe adı yer alan  
   
- `error_complexity`--Denenen bir eşleşme çok karmaşık olduğundan başarısız oldu  
+ `error_complexity` --Denenen bir eşleşme çok karmaşık olduğundan başarısız oldu  
   
- `error_ctype`--İfade geçersiz karakter sınıf adı içeriyor  
+ `error_ctype` --İfade geçersiz karakter sınıf adı içeriyor  
   
- `error_escape`--İfade geçersiz kaçış dizisi içeriyor  
+ `error_escape` --İfade geçersiz kaçış dizisi içeriyor  
   
- `error_paren`--ifade eşleşmeyen bulunan '(' veya')'  
+ `error_paren` --ifade eşleşmeyen bulunan '(' veya')'  
   
- `error_parse`--ifadesi ayrıştırılamadı  
+ `error_parse` --ifadesi ayrıştırılamadı  
   
- `error_range`--bir geçersiz karakter aralığı belirticisi ifade içeriyor  
+ `error_range` --bir geçersiz karakter aralığı belirticisi ifade içeriyor  
   
- `error_space`--bir normal ifade ayrıştırma başarısız oldu kullanılabilir yeterli kaynak yok  
+ `error_space` --bir normal ifade ayrıştırma başarısız oldu kullanılabilir yeterli kaynak yok  
   
- `error_stack`--Denenen bir eşleşme başarısız oldu çünkü kullanılabilir yeterli bellek yoktu  
+ `error_stack` --Denenen bir eşleşme başarısız oldu çünkü kullanılabilir yeterli bellek yoktu  
   
- `error_syntax`--bir sözdizimi hatası ayrıştırılamadı  
+ `error_syntax` --bir sözdizimi hatası ayrıştırılamadı  
   
- `error_backref`--İfade geçersiz arka başvuru içeriyor  
+ `error_backref` --İfade geçersiz arka başvuru içeriyor  
   
-##  <a name="match_flag_type"></a>regex_constants::match_flag_type  
+##  <a name="match_flag_type"></a>  regex_constants::match_flag_type  
  Normal ifade seçenekleri eşleşen bayrakları.  
   
 ```  
@@ -210,33 +213,33 @@ enum match_flag_type
   
  `match_default`  
   
- `match_not_bol`--hedef sırası ilk konumda bir satır başına olarak görmeyin  
+ `match_not_bol` --hedef sırası ilk konumda bir satır başına olarak görmeyin  
   
- `match_not_eol`--hedef sırası geçmiş--end konumda bir satır sonu olarak görmeyin  
+ `match_not_eol` --hedef sırası geçmiş--end konumda bir satır sonu olarak görmeyin  
   
- `match_not_bow`--hedef sırası ilk konumda bir sözcüğün başlangıcına olarak görmeyin  
+ `match_not_bow` --hedef sırası ilk konumda bir sözcüğün başlangıcına olarak görmeyin  
   
- `match_not_eow`--hedef sırası geçmiş--end konumda bir sözcüğün sonuna görmeyin  
+ `match_not_eow` --hedef sırası geçmiş--end konumda bir sözcüğün sonuna görmeyin  
   
- `match_any`--birden fazla eşleşme mümkün ise eşleşme kabul edilebilir.  
+ `match_any` --birden fazla eşleşme mümkün ise eşleşme kabul edilebilir.  
   
- `match_not_null`--boş bir değişkene bir eşleşme olarak görmeyin  
+ `match_not_null` --boş bir değişkene bir eşleşme olarak görmeyin  
   
- `match_continuous`--hedef sırası başındaki dışında eşleşmeler arama değil  
+ `match_continuous` --hedef sırası başındaki dışında eşleşmeler arama değil  
   
- `match_prev_avail` -- `--first`Geçerli bir yineleyici olan; Yoksay `match_not_bol` ve `match_not_bow` varsa Ayarla  
+ `match_prev_avail` -- `--first` Geçerli bir yineleyici olan; Yoksay `match_not_bol` ve `match_not_bow` varsa Ayarla  
   
  Biçim bayraklar şunlardır:  
   
- `format_default`--ECMAScript biçimi kurallarını kullan  
+ `format_default` --ECMAScript biçimi kurallarını kullan  
   
- `format_sed`--azaltılabilir biçimi kurallarını kullan  
+ `format_sed` --azaltılabilir biçimi kurallarını kullan  
   
- `format_no_copy`--normal ifadeyle eşleşmez metin kopyalamayın  
+ `format_no_copy` --normal ifadeyle eşleşmez metin kopyalamayın  
   
- `format_first_only`--için eşleşen birinci sonra arama  
+ `format_first_only` --için eşleşen birinci sonra arama  
   
-##  <a name="syntax_option_type"></a>regex_constants::syntax_option_type  
+##  <a name="syntax_option_type"></a>  regex_constants::syntax_option_type  
  Sözdizimi seçenekleri seçmek için işaretler.  
   
 ```  
@@ -262,30 +265,30 @@ enum syntax_option_type
   
  Dil tanımlayıcıları şunlardır:  
   
- `ECMAScript`--ECMAScript derleme  
+ `ECMAScript` --ECMAScript derleme  
   
- `basic`--BRE derleme  
+ `basic` --BRE derleme  
   
- `extended`--ERE derleme  
+ `extended` --ERE derleme  
   
- `awk`--awk derleme  
+ `awk` --awk derleme  
   
- `grep`--grep derleme  
+ `grep` --grep derleme  
   
- `egrep`--egrep derleme  
+ `egrep` --egrep derleme  
   
  Sözdizimi değiştiricileri şunlardır:  
   
- `icase`--eşleşmeleri büyük küçük harf duyarsız olun  
+ `icase` --eşleşmeleri büyük küçük harf duyarsız olun  
   
- `nosubs`--implementaton yakalama grupları içeriğini izlemenize yok  
+ `nosubs` --implementaton yakalama grupları içeriğini izlemenize yok  
   
- `optimize`--Uygulama normal ifade derleme hızına yerine eşleşen hızı vurgulamak  
+ `optimize` --Uygulama normal ifade derleme hızına yerine eşleşen hızı vurgulamak  
   
- `collate`--yapma yerel ayara duyarlı eşleşir  
+ `collate` --yapma yerel ayara duyarlı eşleşir  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[\<Regex >](../standard-library/regex.md)  
+[\<regex>](../standard-library/regex.md)  
 [regex_error Sınıfı](../standard-library/regex-error-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
 [regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  

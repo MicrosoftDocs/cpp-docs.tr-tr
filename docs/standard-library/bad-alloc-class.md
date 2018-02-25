@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: new/std::bad_alloc
-dev_langs: C++
-helpviewer_keywords: bad_alloc class
+ms.topic: reference
+f1_keywords:
+- new/std::bad_alloc
+dev_langs:
+- C++
+helpviewer_keywords:
+- bad_alloc class
 ms.assetid: 6429a8e6-5a49-4907-8d56-f4a4ec8131d0
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fc136f33d3653aef1e325a97f6e47ff3742b0182
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d338b155eaebd7678e611dd38b8e1ef230545eb5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="badalloc-class"></a>bad_alloc Sınıfı
 Ayırma isteği başarılı olmadı belirtmek için bir özel durum sınıfı tanımlar.  

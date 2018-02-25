@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - list/std::list
 - list/std::list::allocator_type
@@ -55,7 +56,8 @@ f1_keywords:
 - list/std::list::splice
 - list/std::list::swap
 - list/std::list::unique
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::list [C++]
 - std::list [C++], allocator_type
@@ -105,16 +107,17 @@ helpviewer_keywords:
 - std::list [C++], swap
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ca9848ba0ad3f5be1584e299a8a2d2b69f472425
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bd49b0ce1ca80c1a006975df085c332f0ef99ad2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="list-class"></a>list Sınıfı
 C++ Standart Kitaplığı liste öğelerini doğrusal bir düzende korumak ve verimli eklemeler ve silmeler dizisi içindeki herhangi bir konumdaki izin veren dizisi kapsayıcıların bir şablon sınıfı sınıftır. Sıralı her bazı türünün bir üyesi içeren öğe, çift yönlü bağlantılı liste olarak depolanan *türü*.  
@@ -127,7 +130,7 @@ class list
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Türü*  
+ Türü  
  Listede depolanması için öğe veri türü.  
   
  `Allocator`  
@@ -158,9 +161,9 @@ class list
 |[const_reference](#const_reference)|Bir başvuru sağlayan bir türü bir `const` okuma ve gerçekleştirmek için bir liste depolanan öğesi `const` işlemleri.|  
 |[const_reverse_iterator](#const_reverse_iterator)|Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma `const` bir liste öğesi.|  
 |[difference_type](#difference_type)|Aynı liste içinde öğelerin başvurmak iki yineleyiciler arasındaki farkı sağlayan türü.|  
-|[Yineleyici](#iterator)|Okuma veya herhangi bir öğe listesini değiştirmek için bir çift yönlü yineleyici sağlayan türü.|  
-|[İşaretçi](#pointer)|Bir listedeki bir öğe için bir işaretçi sağlayan türü.|  
-|[başvuru](#reference)|Bir başvuru sağlayan bir türü bir `const` okuma ve gerçekleştirmek için bir liste depolanan öğesi `const` işlemleri.|  
+|[iterator](#iterator)|Okuma veya herhangi bir öğe listesini değiştirmek için bir çift yönlü yineleyici sağlayan türü.|  
+|[pointer](#pointer)|Bir listedeki bir öğe için bir işaretçi sağlayan türü.|  
+|[reference](#reference)|Bir başvuru sağlayan bir türü bir `const` okuma ve gerçekleştirmek için bir liste depolanan öğesi `const` işlemleri.|  
 |[reverse_iterator](#reverse_iterator)|Okuma veya ters listesindeki bir öğeyi değiştirmek için bir çift yönlü yineleyici sağlayan türü.|  
 |[size_type](#size_type)|Listedeki öğeleri sayar türü.|  
 |[value_type](#value_type)|Bir listede depolanan veri türünü temsil eden tür.|  
@@ -171,7 +174,7 @@ class list
 |-|-|  
 |[Ata](#assign)|Öğeleri bir listeden siler ve yeni bir öğe kümesi hedef listeye kopyalar.|  
 |[Geri](#back)|Son öğe listesinin bir başvuru döndürür.|  
-|[başlayın](#begin)|Yineleyici listesindeki ilk öğeyi adresleme döndürür.|  
+|[Başlangıç](#begin)|Yineleyici listesindeki ilk öğeyi adresleme döndürür.|  
 |[cbegin](#cbegin)|Listesindeki ilk öğeyi adresleme const yineleyici döndürür.|  
 |[cend](#cend)|Listesindeki son öğeyi başarılı konumu adresleri const bir yineleyici döndürür.|  
 |[Temizle](#clear)|Tüm öğeleri listesini siler.|  
@@ -180,14 +183,14 @@ class list
 |[emplace](#emplace)|Belirtilen konumda Listeye yerinde oluşturulan bir öğe ekler.|  
 |[emplace_back](#emplace_back)|Bir liste sonuna yerinde oluşturulan bir öğe ekler.|  
 |[emplace_front](#emplace_front)|Bir liste başlangıcına yerinde oluşturulan bir öğe ekler.|  
-|[boş](#empty)|Liste boşsa, testleri.|  
+|[empty](#empty)|Liste boşsa, testleri.|  
 |[Bitiş](#end)|Listesindeki son öğeyi başarılı konumu adresleri yineleyici döndürür.|  
 |[silme](#erase)|Bir öğenin veya öğe aralığını belirtilen konumları listesinden kaldırır.|  
 |[Ön](#front)|Bir listedeki ilk öğeye bir başvuru döndürür.|  
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` listesini oluşturmak için kullanılan nesne.|  
-|[Ekle](#insert)|Bir öğenin veya öğe sayısı veya bir dizi öğeleri listesini belirtilen konumda ekler.|  
+|[insert](#insert)|Bir öğenin veya öğe sayısı veya bir dizi öğeleri listesini belirtilen konumda ekler.|  
 |[max_size](#max_size)|Uzunluk listesini döndürür.|  
-|[Birleştirme](#merge)|Öğeleri bağımsız değişkeni listeden kaldırır, bunları hedef listesine ekler ve öğeleri artan düzende veya başka bir belirtilen sırayla yeni, birleştirilmiş kümesini sıralar.|  
+|[merge](#merge)|Öğeleri bağımsız değişkeni listeden kaldırır, bunları hedef listesine ekler ve öğeleri artan düzende veya başka bir belirtilen sırayla yeni, birleştirilmiş kümesini sıralar.|  
 |[pop_back](#pop_back)|Öğe listesinin sonunda siler.|  
 |[pop_front](#pop_front)|Öğe listesinin başında siler.|  
 |[push_back](#push_back)|Bir öğe listesinin sonuna ekler.|  
@@ -196,24 +199,24 @@ class list
 |[remove](#remove)|Belirtilen değerle eşleşen listedeki öğeleri siler.|  
 |[remove_if](#remove_if)|Öğeleri belirtilen bir koşulu karşılanıp listeden siler.|  
 |[rend](#rend)|Ters listesindeki son öğeyi başarılı konumu adresleri yineleyici döndürür.|  
-|[yeniden boyutlandırma](#resize)|Bir liste için yeni bir boyutunu belirtir.|  
-|[geriye doğru](#reverse)|Öğeleri listede ortaya sırasını tersine çevirir.|  
-|[boyutu](#size)|Bir listedeki öğe sayısını döndürür.|  
-|[Sıralama](#sort)|Öğeleri listesini artan düzende veya başka bir sipariş ilişkisi göre düzenler.|  
+|[resize](#resize)|Bir liste için yeni bir boyutunu belirtir.|  
+|[Ters Çevir](#reverse)|Öğeleri listede ortaya sırasını tersine çevirir.|  
+|[Boyutu](#size)|Bir listedeki öğe sayısını döndürür.|  
+|[sort](#sort)|Öğeleri listesini artan düzende veya başka bir sipariş ilişkisi göre düzenler.|  
 |[splice](#splice)|Öğeleri bağımsız değişkeni listeden kaldırır ve hedef listesine ekler.|  
-|[değiştirme](#swap)|İki liste öğelerini değiş tokuş eder.|  
-|[benzersiz](#unique)|Bitişik yinelenen öğeler veya listeden bazı diğer ikili koşulu karşılayan bitişik öğeleri kaldırır.|  
+|[Değiştirme](#swap)|İki liste öğelerini değiş tokuş eder.|  
+|[Benzersiz](#unique)|Bitişik yinelenen öğeler veya listeden bazı diğer ikili koşulu karşılayan bitişik öğeleri kaldırır.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[List::operator =](#op_eq)|Liste öğelerini, başka bir listesinin bir kopyasını yerini alır.|  
+|[list::operator=](#op_eq)|Liste öğelerini, başka bir listesinin bir kopyasını yerini alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: \<listesi >  
   
-##  <a name="allocator_type"></a>List::allocator_type  
+##  <a name="allocator_type"></a>  list::allocator_type  
  Allocator sınıfı bir liste nesnesi için temsil eden tür.  
   
 ```  
@@ -221,12 +224,12 @@ typedef Allocator allocator_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `allocator_type`Şablon parametresi için bir eş anlamlı olduğundan **ayırıcısı.**  
+ `allocator_type` Şablon parametresi için bir eş anlamlı olduğundan **ayırıcısı.**  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [get_allocator](#get_allocator).  
   
-##  <a name="assign"></a>List::Assign  
+##  <a name="assign"></a>  List::Assign  
  Öğeleri bir listeden siler ve bir hedef listesine yeni bir öğeleri kümesini kopyalar.  
   
 ```  
@@ -312,7 +315,7 @@ int main()
 c1 = 10 20 30c1 = 50 60c1 = 4 4 4 4 4 4 4c1 = 10 20 30 40  
 ```  
   
-##  <a name="back"></a>List::Back  
+##  <a name="back"></a>  List::Back  
  Son öğe listesinin bir başvuru döndürür.  
   
 ```  
@@ -359,7 +362,7 @@ The last integer of c1 is 11
 The next-to-last integer of c1 is 10  
 ```  
   
-##  <a name="begin"></a>List::Begin  
+##  <a name="begin"></a>  List::Begin  
  Yineleyici listesindeki ilk öğeyi adresleme döndürür.  
   
 ```  
@@ -409,7 +412,7 @@ The first element of c1 is 1
 The first element of c1 is now 20  
 ```  
   
-##  <a name="cbegin"></a>List::cbegin  
+##  <a name="cbegin"></a>  List::cbegin  
  Döndürür bir `const` aralığın ilk öğe adresleri yineleyici.  
   
 ```  
@@ -432,7 +435,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="cend"></a>List::cend  
+##  <a name="cend"></a>  List::cend  
  Döndürür bir `const` konumun yalnızca bir aralıkta son öğenin ötesinde adresleri yineleyici.  
   
 ```  
@@ -443,7 +446,7 @@ const_iterator cend() const;
  A `const` yalnızca aralığın sonunu aşan işaret çift yönlü erişim yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cend`Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
+ `cend` Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
   
  Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `end()` ve `cend()`.  
   
@@ -457,7 +460,7 @@ auto i2 = Container.cend();
   
  Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
   
-##  <a name="clear"></a>List::Clear  
+##  <a name="clear"></a>  List::Clear  
  Tüm öğeleri listesini siler.  
   
 ```  
@@ -491,7 +494,7 @@ The size of the list is initially 3
 The size of list after clearing is 0  
 ```  
   
-##  <a name="const_iterator"></a>List::const_iterator  
+##  <a name="const_iterator"></a>  list::const_iterator  
  Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** bir liste öğesi.  
   
 ```  
@@ -504,7 +507,7 @@ typedef implementation-defined const_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [geri](#back).  
   
-##  <a name="const_pointer"></a>List::const_pointer  
+##  <a name="const_pointer"></a>  list::const_pointer  
  Bir işaretçi sağlayan bir `const` bir liste öğesi.  
   
 ``` 
@@ -516,7 +519,7 @@ typedef typename Allocator::const_pointer const_pointer;
   
  Çoğu durumda, bir [yineleyici](#iterator) bir liste nesnesi öğelerinde erişmek için kullanılmalıdır.  
   
-##  <a name="const_reference"></a>List::const_reference  
+##  <a name="const_reference"></a>  list::const_reference  
  Bir başvuru sağlayan bir türü bir **const** okuma ve gerçekleştirmek için bir liste depolanan öğesi **const** işlemleri.  
   
 ```  
@@ -558,7 +561,7 @@ The first element is 10
 The second element is 20  
 ```  
   
-##  <a name="const_reverse_iterator"></a>List::const_reverse_iterator  
+##  <a name="const_reverse_iterator"></a>  list::const_reverse_iterator  
  Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** bir liste öğesi.  
   
 ```  
@@ -571,7 +574,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rbegin](#rbegin).  
   
-##  <a name="crbegin"></a>List::crbegin  
+##  <a name="crbegin"></a>  List::crbegin  
  Ters listesindeki ilk öğeyi adresleme const yineleyici döndürür.  
   
 ```  
@@ -582,7 +585,7 @@ const_reverse_iterator rbegin() const;
  Bir const ters ters listesindeki ilk öğeyi adresleme çift yönlü yineleyici (veya ne son öğesi unreversed olsaydı adresleme `list`).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crbegin`Ters listesiyle kullanılan gibi [list::begin](#begin) ile kullanılan bir `list`.  
+ `crbegin` Ters listesiyle kullanılan gibi [list::begin](#begin) ile kullanılan bir `list`.  
   
  Dönüş değeri ile `crbegin`, liste nesnesi değiştirilemez. [List::rbegin](#rbegin) listesini geriye doğru yinelemek için kullanılabilecek.  
   
@@ -612,7 +615,7 @@ int main( )
 The last element in the list is 30.  
 ```  
   
-##  <a name="crend"></a>List::crend  
+##  <a name="crend"></a>  list::crend  
  Ters listesindeki son öğeyi başarılı konumu adresleri const bir yineleyici döndürür.  
   
 ```  
@@ -623,11 +626,11 @@ const_reverse_iterator rend() const;
  Bir const ters son öğesi bir ters başarılı konumu adresleri çift yönlü yineleyici [listesi](../standard-library/list-class.md) (ilk öğe unreversed öncesinde konumu `list`).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crend`Ters listesiyle kullanılan gibi [list::end](#end) ile kullanılan bir `list`.  
+ `crend` Ters listesiyle kullanılan gibi [list::end](#end) ile kullanılan bir `list`.  
   
  Dönüş değeri ile `crend`, `list` nesnesi değiştirilemez.  
   
- `crend`Ters yineleyici sonuna olup ulaştı için test etmek için kullanılan kendi `list`.  
+ `crend` Ters yineleyici sonuna olup ulaştı için test etmek için kullanılan kendi `list`.  
   
  Tarafından döndürülen değer `crend` değil başvuru yapıldı.  
   
@@ -660,7 +663,7 @@ int main( )
 The first element in the list is: 10  
 ```  
   
-##  <a name="difference_type"></a>List::difference_type  
+##  <a name="difference_type"></a>  list::difference_type  
  Yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta bir liste öğelerinin sayısını temsil etmek için kullanılan bir imzalı tamsayı türü.  
   
 ```  
@@ -715,7 +718,7 @@ The number '20' is in c1 collection 2 times.
 The number '30' is in c1 collection 3 times.  
 ```  
   
-##  <a name="emplace"></a>List::emplace  
+##  <a name="emplace"></a>  List::emplace  
  Belirtilen konumda Listeye yerinde oluşturulan bir öğe ekler.  
   
 ```  
@@ -757,7 +760,7 @@ int main( )
 Moved first element: a  
 ```  
   
-##  <a name="emplace_back"></a>List::emplace_back  
+##  <a name="emplace_back"></a>  list::emplace_back  
  Bir liste sonuna yerinde oluşturulan bir öğe ekler.  
   
 ```  
@@ -798,7 +801,7 @@ int main( )
 Moved first element: a  
 ```  
   
-##  <a name="emplace_front"></a>List::emplace_front  
+##  <a name="emplace_front"></a>  list::emplace_front  
  Bir liste başlangıcına yerinde oluşturulan bir öğe ekler.  
   
 ```  
@@ -839,7 +842,7 @@ int main( )
 Moved first element: a  
 ```  
   
-##  <a name="empty"></a>List::empty  
+##  <a name="empty"></a>  list::empty  
  Liste boşsa, testleri.  
   
 ```  
@@ -874,7 +877,7 @@ int main( )
 The list is not empty.  
 ```  
   
-##  <a name="end"></a>List::End  
+##  <a name="end"></a>  List::End  
  Listesindeki son öğeyi başarılı konumu adresleri yineleyici döndürür.  
   
 ```  
@@ -931,7 +934,7 @@ The new next-to-last integer of c1 is 400
 The list is now: 10 400 30  
 ```  
   
-##  <a name="erase"></a>List::ERASE  
+##  <a name="erase"></a>  List::ERASE  
  Bir öğenin veya öğe aralığını belirtilen konumları listesinden kaldırır.  
   
 ```  
@@ -1002,7 +1005,7 @@ After erasing the first element, the list becomes: 20 30 40 50
 After erasing all elements but the first, the list becomes:  20  
 ```  
   
-##  <a name="front"></a>List::Front  
+##  <a name="front"></a>  List::Front  
  Bir listedeki ilk öğeye bir başvuru döndürür.  
   
 ```  
@@ -1046,7 +1049,7 @@ The first integer of c1 is 10
 The first integer of c1 is 11  
 ```  
   
-##  <a name="get_allocator"></a>List::get_allocator  
+##  <a name="get_allocator"></a>  list::get_allocator  
  Bir liste oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.  
   
 ```  
@@ -1083,7 +1086,7 @@ int main( )
 }  
 ```  
   
-##  <a name="insert"></a>List::insert  
+##  <a name="insert"></a>  List::insert  
  Bir öğenin veya öğe sayısı veya bir dizi öğeleri listesini belirtilen konumda ekler.  
   
 ```  
@@ -1181,7 +1184,7 @@ int main()
 }  
 ```  
   
-##  <a name="iterator"></a>List::iterator  
+##  <a name="iterator"></a>  List::iterator  
  Okuma veya herhangi bir öğe listesini değiştirmek için bir çift yönlü yineleyici sağlayan türü.  
   
 ```  
@@ -1194,7 +1197,7 @@ typedef implementation-defined iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin).  
   
-##  <a name="list"></a>List::List  
+##  <a name="list"></a>  List::List  
  Belirli bir boyuta veya belirli bir değerin veya belirli bir ayırıcı veya tüm kopyasını veya başka bir liste parçası olarak öğelerle bir liste oluşturur.  
   
 ```  
@@ -1340,7 +1343,7 @@ int main()
 c1 = 0 0 0c2 = 2 2 2 2 2c3 = 1 1 1c4 = 2 2 2 2 2c5 = 2 2c6 = 2 2 2c7 = 2 2 2c8 = 1 2 3 4  
 ```  
   
-##  <a name="max_size"></a>List::max_size  
+##  <a name="max_size"></a>  list::max_size  
  Uzunluk listesini döndürür.  
   
 ```
@@ -1369,7 +1372,7 @@ int main( )
 }  
 ```  
   
-##  <a name="merge"></a>List::Merge  
+##  <a name="merge"></a>  List::Merge  
  Öğeleri bağımsız değişkeni listeden kaldırır, bunları hedef listesine ekler ve öğeleri artan düzende veya başka bir belirtilen sırayla yeni, birleştirilmiş kümesini sıralar.  
   
 ```  
@@ -1450,7 +1453,7 @@ c3 = 5 1
 After merging c3 with c2 according to the '>' comparison relation: c2 = 6 5 4 3 2 1  
 ```  
   
-##  <a name="op_eq"></a>List::operator =  
+##  <a name="op_eq"></a>  list::operator=  
  Liste öğelerini, başka bir listesinin bir kopyasını yerini alır.  
   
 ```  
@@ -1509,7 +1512,7 @@ int main( )
 }  
 ```  
   
-##  <a name="pointer"></a>List::pointer  
+##  <a name="pointer"></a>  List::pointer  
  Bir listedeki bir öğe için bir işaretçi sağlar.  
   
 ```
@@ -1521,7 +1524,7 @@ typedef typename Allocator::pointer pointer;
   
  Çoğu durumda, bir [yineleyici](#iterator) bir liste nesnesi öğelerinde erişmek için kullanılmalıdır.  
   
-##  <a name="pop_back"></a>List::pop_back  
+##  <a name="pop_back"></a>  List::pop_back  
  Öğe listesinin sonunda siler.  
   
 ``` 
@@ -1529,7 +1532,7 @@ void pop_back();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Son öğe boş olmamalıdır. `pop_back`hiçbir zaman bir özel durum oluşturur.  
+ Son öğe boş olmamalıdır. `pop_back` hiçbir zaman bir özel durum oluşturur.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1561,7 +1564,7 @@ The last element is: 2
 After deleting the element at the end of the list, the last element is: 1  
 ```  
   
-##  <a name="pop_front"></a>List::pop_front  
+##  <a name="pop_front"></a>  List::pop_front  
  Öğe listesinin başında siler.  
   
 ``` 
@@ -1569,7 +1572,7 @@ void pop_front();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk öğe boş olmamalıdır. `pop_front`hiçbir zaman bir özel durum oluşturur.  
+ İlk öğe boş olmamalıdır. `pop_front` hiçbir zaman bir özel durum oluşturur.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1601,7 +1604,7 @@ The second element is: 2
 After deleting the element at the beginning of the list, the first element is: 2  
 ```  
   
-##  <a name="push_back"></a>List::push_back  
+##  <a name="push_back"></a>  List::push_back  
  Bir öğe listesinin sonuna ekler.  
   
 ```  
@@ -1655,7 +1658,7 @@ New last element: 2
 Moved first element: a  
 ```  
   
-##  <a name="push_front"></a>List::push_front  
+##  <a name="push_front"></a>  list::push_front  
  Bir öğe listesini başlangıcına ekler.  
   
 ```  
@@ -1710,7 +1713,7 @@ New first element: 2
 Moved first element: a  
 ```  
   
-##  <a name="rbegin"></a>List::rbegin  
+##  <a name="rbegin"></a>  List::rbegin  
  Ters listesindeki ilk öğeyi adresleri yineleyici döndürür.  
   
 ``` 
@@ -1722,11 +1725,11 @@ reverse_iterator rbegin();
  Bir ters çift yönlü yineleyici ters listesindeki ilk öğeyi Adresleme (veya ne unreversed listenin son öğesi olsaydı adresleme).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rbegin`Ters listesiyle kullanılan gibi [başlamak](#begin) bir listesiyle kullanılır.  
+ `rbegin` Ters listesiyle kullanılan gibi [başlamak](#begin) bir listesiyle kullanılır.  
   
  Varsa dönüş değerini `rbegin` atanmış bir `const_reverse_iterator`, liste nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atanmış bir `reverse_iterator`, liste nesnesi değiştirilebilir.  
   
- `rbegin`bir liste geriye doğru yinelemek için kullanılabilir.  
+ `rbegin` bir liste geriye doğru yinelemek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1778,7 +1781,7 @@ The reversed list is: 30 20 10
 The last element in the list is now 40.  
 ```  
   
-##  <a name="reference"></a>List::Reference  
+##  <a name="reference"></a>  List::Reference  
  Listede depolanmış bir öğe için bir başvuru sağlar türü.  
   
 ```  
@@ -1813,7 +1816,7 @@ The first element is 10
 The second element is 20  
 ```  
   
-##  <a name="remove"></a>List::Remove  
+##  <a name="remove"></a>  list::remove  
  Belirtilen değerle eşleşen listedeki öğeleri siler.  
   
 ``` 
@@ -1867,7 +1870,7 @@ The initial list is c1 = 5 100 5 200 5 300
 After removing elements with value 5, the list becomes c2 = 100 200 300  
 ```  
   
-##  <a name="remove_if"></a>List::remove_if  
+##  <a name="remove_if"></a>  list::remove_if  
  Öğeleri belirtilen bir koşulu karşılanıp listeden siler.  
   
 ``` 
@@ -1930,7 +1933,7 @@ The initial list is c1 = 3 4 5 6 7 8
 After removing the odd elements, the list becomes c2 = 4 6 8  
 ```  
   
-##  <a name="rend"></a>List::rend  
+##  <a name="rend"></a>  list::rend  
  Ters listesindeki son öğeyi izleyen konumu adresleri yineleyici döndürür.  
   
 ``` 
@@ -1942,11 +1945,11 @@ reverse_iterator rend();
  (İlk öğe unreversed listesinde öncesinde konum) ters listesindeki son öğeyi başarılı konumu adresleri ters çift yönlü yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rend`Ters listesiyle kullanılan gibi [son](#end) bir listesiyle kullanılır.  
+ `rend` Ters listesiyle kullanılan gibi [son](#end) bir listesiyle kullanılır.  
   
  Varsa dönüş değerini `rend` atanmış bir `const_reverse_iterator`, liste nesnesi değiştirilemez. Varsa dönüş değerini `rend` atanmış bir `reverse_iterator`, liste nesnesi değiştirilebilir.  
   
- `rend`Ters yineleyici olup, listenin sonuna sınırına için test etmek için kullanılabilir.  
+ `rend` Ters yineleyici olup, listenin sonuna sınırına için test etmek için kullanılabilir.  
   
  Tarafından döndürülen değer `rend` değil başvuru yapıldı.  
   
@@ -2013,7 +2016,7 @@ The reversed list is: 30 20 10
 The modified reversed list is: 30 20 40  
 ```  
   
-##  <a name="resize"></a>List::Resize  
+##  <a name="resize"></a>  List::Resize  
  Bir liste için yeni bir boyutunu belirtir.  
   
 ``` 
@@ -2077,7 +2080,7 @@ The reduced size of c1 is: 2
 The value of the last element is now 20  
 ```  
   
-##  <a name="reverse"></a>List::reverse  
+##  <a name="reverse"></a>  List::reverse  
  Öğeleri listede ortaya sırasını tersine çevirir.  
   
 ``` 
@@ -2120,7 +2123,7 @@ c1 = 10 20 30
 Reversed c1 = 30 20 10  
 ```  
   
-##  <a name="reverse_iterator"></a>List::reverse_iterator  
+##  <a name="reverse_iterator"></a>  list::reverse_iterator  
  Okuma veya ters listesindeki bir öğeyi değiştirmek için bir çift yönlü yineleyici sağlayan türü.  
   
 ```  
@@ -2133,7 +2136,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rbegin](#rbegin).  
   
-##  <a name="size"></a>List::size  
+##  <a name="size"></a>  List::size  
  Bir listedeki öğe sayısını döndürür.  
   
 ``` 
@@ -2172,7 +2175,7 @@ List length is 1.
 List length is now 2.  
 ```  
   
-##  <a name="size_type"></a>List::size_type  
+##  <a name="size_type"></a>  list::size_type  
  Listedeki öğeleri sayar türü.  
   
 ```  
@@ -2182,7 +2185,7 @@ typedef typename Allocator::size_type size_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [boyutu](#size).  
   
-##  <a name="sort"></a>List::sort  
+##  <a name="sort"></a>  List::sort  
  Öğeleri listesini artan düzende veya başka bir kullanıcı tarafından belirtilen sipariş göre düzenler.  
   
 ``` 
@@ -2244,7 +2247,7 @@ After sorting c1 = 10 20 30
 After sorting with 'greater than' operation, c1 = 30 20 10  
 ```  
   
-##  <a name="splice"></a>List::splice  
+##  <a name="splice"></a>  List::splice  
  Öğeleri kaynak listeden kaldırır ve hedef listesine ekler.  
   
 ```  
@@ -2365,7 +2368,7 @@ int main()
 Beginning state of lists:c1 = 2 elements: (10) (11)c2 = 3 elements: (20) (21) (22)c3 = 2 elements: (30) (31)c4 = 4 elements: (40) (41) (42) (43)After splicing c1 into c2:c1 = 0 elements:c2 = 5 elements: (20) (10) (11) (21) (22)After splicing the first element of c3 into c2:c3 = 1 elements: (31)c2 = 6 elements: (20) (10) (11) (30) (21) (22)After splicing a range of c4 into c2:c4 = 2 elements: (40) (43)c2 = 8 elements: (20) (10) (11) (30) (41) (42) (21) (22)  
 ```  
   
-##  <a name="swap"></a>List::Swap  
+##  <a name="swap"></a>  List::Swap  
  İki liste öğelerini değiş tokuş eder.  
   
 ``` 
@@ -2428,7 +2431,7 @@ After swapping with c2, list c1 is: 10 20
 After swapping with c3, list c1 is: 100  
 ```  
   
-##  <a name="unique"></a>List::Unique  
+##  <a name="unique"></a>  List::Unique  
  Bitişik yinelenen öğeler veya bir listeden bazı diğer ikili koşulu karşılayan bitişik öğeleri kaldırır.  
   
 ```  
@@ -2498,7 +2501,7 @@ After removing successive duplicate elements, c2 = -10 10 20 -10
 After removing successive unequal elements, c3 = -10 -10  
 ```  
   
-##  <a name="value_type"></a>List::value_type  
+##  <a name="value_type"></a>  list::value_type  
  Bir listede depolanan veri türünü temsil eden tür.  
   
 ```  
@@ -2506,7 +2509,7 @@ typedef typename Allocator::value_type value_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_type`Şablon parametresi için bir eş anlamlı olduğundan **türü**.  
+ `value_type` Şablon parametresi için bir eş anlamlı olduğundan **türü**.  
   
 ### <a name="example"></a>Örnek  
   
@@ -2530,7 +2533,7 @@ int main( )
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Liste >](../standard-library/list.md)   
+ [\<list>](../standard-library/list.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

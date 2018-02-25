@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - unsupported_os
 - CONCRT/concurrency::unsupported_os
 - CONCRT/concurrency::unsupported_os::unsupported_os
-dev_langs: C++
-helpviewer_keywords: unsupported_os class
+dev_langs:
+- C++
+helpviewer_keywords:
+- unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1f98d0c85a3149e4d865ec8bdfb82bfd032eb9c7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a147bc429268c7342667e770de083dc6660fa955
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="unsupportedos-class"></a>unsupported_os Sınıfı
 Bu sınıf, desteklenmeyen bir işletim sistemi kullanıldığında, bir özel durum açıklar.  
@@ -52,7 +56,7 @@ class unsupported_os : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>unsupported_os 
+##  <a name="ctor"></a> unsupported_os 
 
  Oluşturan bir `unsupported_os` nesnesi.  
   

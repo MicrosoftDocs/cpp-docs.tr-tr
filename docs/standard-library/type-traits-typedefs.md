@@ -5,28 +5,29 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - type_traits/std::false_type
 - xtr1common/std::false_type
 - type_traits/std::true_type
 - xtr1common/std::true_type
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8ac040ca-ed2d-4570-adc9-cb5626530053
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: edd81913357c8402d93f2712ef0120179a22968f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 2c66e7420a06c7af41b42ceb6f3b8c91c4aaa4eb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lttypetraitsgt-typedefs"></a>&lt;type_traits&gt; tür tanımları
 |||  
 |-|-|  
 |[false_type](#false_type)|[true_type](#true_type)|  
   
-##  <a name="false_type"></a>false_type Typedef  
+##  <a name="false_type"></a>  false_type Typedef  
  Tam sayı sabit yanlış değer ile tutar.  
   
 ```  
@@ -57,7 +58,7 @@ false_type == false
 true_type == true  
 ```  
   
-##  <a name="true_type"></a>true_type Typedef  
+##  <a name="true_type"></a>  true_type Typedef  
  Tam sayı sabit true değeri ile tutar.  
   
 ```  
@@ -91,5 +92,5 @@ true_type == true
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< type_traits >](../standard-library/type-traits.md)
+ [<type_traits>](../standard-library/type-traits.md)
 

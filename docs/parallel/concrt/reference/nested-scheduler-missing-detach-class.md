@@ -1,29 +1,33 @@
 ---
-title: "nested_scheduler_missing_detach sınıfı | Microsoft Docs"
+title: nested_scheduler_missing_detach Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - nested_scheduler_missing_detach
 - CONCRT/concurrency::nested_scheduler_missing_detach
 - CONCRT/concurrency::nested_scheduler_missing_detach::nested_scheduler_missing_detach
-dev_langs: C++
-helpviewer_keywords: nested_scheduler_missing_detach class
+dev_langs:
+- C++
+helpviewer_keywords:
+- nested_scheduler_missing_detach class
 ms.assetid: 65d3f277-6d43-4160-97ef-caf8b26c1641
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5a499467962c8393cc8fe64136fea422a85ef8aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b0fdcc96de9e691d71a2ceaf36c87f843e5b4276
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="nestedschedulermissingdetach-class"></a>nested_scheduler_missing_detach Sınıfı
 Bu sınıf eşzamanlılık çalışma zamanı çağırmak ihmal algıladığında oluşturulan bir özel tanımlar `CurrentScheduler::Detach` yöntemi kullanarak ikinci bir zamanlayıcı bağlı bir bağlamda `Attach` yöntemi `Scheduler` nesnesi.  
@@ -55,7 +59,7 @@ class nested_scheduler_missing_detach : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>nested_scheduler_missing_detach 
+##  <a name="ctor"></a> nested_scheduler_missing_detach 
 
  Oluşturan bir `nested_scheduler_missing_detach` nesnesi.  
   

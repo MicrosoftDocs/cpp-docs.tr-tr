@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::<memory>
 - <memory>
 - std::<memory>
-dev_langs: C++
-helpviewer_keywords: memory header
+dev_langs:
+- C++
+helpviewer_keywords:
+- memory header
 ms.assetid: ef8e38da-7c9d-4037-9ad1-20c99febf5dc
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6133b5a2f60cba4554ac4a0f1a358380df0dc7c4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d99e75c452e5739515fb00497ec3635b349ae827
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltmemorygt"></a>&lt;bellek&gt;
+# <a name="ltmemorygt"></a>&lt;Bellek&gt;
 Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı çeşitli şablonları tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -41,8 +45,8 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
   
 |||  
 |-|-|  
-|[AddressOf](../standard-library/memory-functions.md#addressof)|Bir nesnenin doğru adresini alır.|  
-|[Hizalama](../standard-library/memory-functions.md#align)|Sağlanan hizalama ve başlangıç adresini temel alarak belirli bir boyut aralığı için bir işaretçi döndürür.|  
+|[addressof](../standard-library/memory-functions.md#addressof)|Bir nesnenin doğru adresini alır.|  
+|[align](../standard-library/memory-functions.md#align)|Sağlanan hizalama ve başlangıç adresini temel alarak belirli bir boyut aralığı için bir işaretçi döndürür.|  
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|Oluşturur bir `shared_ptr` ayrılmış ve verilen bir tür için belirtilen ayırıcısı ile oluşturulan nesneleri.|  
 |[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|Const dönüştürme `shared_ptr`.|  
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|Belirli bir adreste başlayan ve belirtilen blok boyutu içinde kalan karakterlerin izlenebilir işaretçi içermediğini atık toplayıcıya bildirir.|  
@@ -58,7 +62,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|Tüm olası dönüş değerleri numaralandırması `get_pointer_safety`.|  
 |[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Kullanılarak ayrıldı geçici bellek kaldırır `get_temporary_buffer` şablon işlevi.|  
 |[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Statik atama için `shared_ptr`.|  
-|[değiştirme](../standard-library/memory-functions.md#swap)|İki takas `shared_ptr` veya `weak_ptr` nesneleri.|  
+|[Değiştirme](../standard-library/memory-functions.md#swap)|İki takas `shared_ptr` veya `weak_ptr` nesneleri.|  
 |[undeclare_no_pointers](../standard-library/memory-functions.md#undeclare_no_pointers)|Taban adresi işaretçisi ve blok boyutu tarafından bellek bloğuna tanımlanan Bellek bloğu karakterlerin artık izlenebilir işaretçileri içerebileceğini atık toplayıcıya bildirir.|  
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Bildiren bir `garbage_collector` belirtilen bellek konumuna erişilemiyor.|  
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Nesneleri belirli bir girdi aralığından başlatılmamış hedef aralığına kopyalar.|  
@@ -71,18 +75,18 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
 |||  
 |-|-|  
 |[operator!=](../standard-library/memory-operators.md#op_neq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.|  
-|[operator ==](../standard-library/memory-operators.md#op_eq_eq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.|  
+|[operator==](../standard-library/memory-operators.md#op_eq_eq)|Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.|  
 |[operator>=](../standard-library/memory-operators.md#op_gt_eq)|Belirtilen sınıfın, bir ayırıcı nesnesinin ikinci bir ayırıcı nesnesinin değerinden büyük veya eşit olmasını sınar.|  
 |[operator <](../standard-library/memory-operators.md#op_lt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden küçük olmasını sınar.|  
 |[işleci\<=](../standard-library/memory-operators.md#op_gt_eq)|Belirtilen sınıfın, bir ayırıcı nesnesinin ikinci bir ayırıcı nesnesinin değerinden küçük veya eşit olmasını sınar.|  
-|[operator >](../standard-library/memory-operators.md#op_gt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden büyük olmasını sınar.|  
-|[işleç <<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr`ekleyici.|  
+|[operator>](../standard-library/memory-operators.md#op_gt)|Belirtilen sınıfın bir nesnesinin ikinci bir nesnesinin değerinden büyük olmasını sınar.|  
+|[işleç <<](../standard-library/memory-operators.md#op_lt_lt)|`shared_ptr` ekleyici.|  
   
 ### <a name="classes"></a>Sınıflar  
   
 |||  
 |-|-|  
-|[ayırıcısı](../standard-library/allocator-class.md)|Depolama ayırma ve nesne türü diziler için boşaltma yöneten bir nesne şablonu sınıf tanımlar **türü**.|  
+|[allocator](../standard-library/allocator-class.md)|Depolama ayırma ve nesne türü diziler için boşaltma yöneten bir nesne şablonu sınıf tanımlar **türü**.|  
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Ayırıcı tarafından etkinleştirilen kapsayıcı tarafından gerek duyulan bilgilerin tamamını belirleyen nesneyi tanımlar.|  
 |[auto_ptr](../standard-library/auto-ptr-class.md)|Ayrılmış bir nesne türü için bir işaretçi depolayan bir nesne şablonu sınıf tanımlar **türü \***  hangi BT noktaları silinmiş kapsayan auto_ptr yok, nesne sağlar.|  
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|Bozuk weak_ptr özel durumunu raporlar.|  
@@ -97,7 +101,7 @@ Bir sınıfı, işleci ve nesneleri ayırmaya ve serbest bırakmaya yardımcı �
   
 |||  
 |-|-|  
-|[Ayırıcı\<void >](../standard-library/allocator-void-class.md)|Yalnızca bu özelleştirilen içerikte anlamlı üye türleri tanımlayarak void türüne şablon sınıf ayırıcı uzmanlığı.|  
+|[allocator\<void>](../standard-library/allocator-void-class.md)|Yalnızca bu özelleştirilen içerikte anlamlı üye türleri tanımlayarak void türüne şablon sınıf ayırıcı uzmanlığı.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <map>
-dev_langs: C++
-helpviewer_keywords: map header
+ms.topic: reference
+f1_keywords:
+- <map>
+dev_langs:
+- C++
+helpviewer_keywords:
+- map header
 ms.assetid: bbf76680-7362-456e-88fa-ecda93561b6a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6256f5a900872f967c8ea4c069098bd8eeeb733d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c91e321573782a4173033d586b2211870dc05f33
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltmapgt"></a>&lt;eşleme&gt;
 Kapsayıcı şablon sınıfları harita ve multimap ve bunların destekleyen şablonları tanımlar.  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - condition_variable/std::condition_variable_any
 - condition_variable/std::condition_variable_any::condition_variable_any
@@ -15,9 +16,10 @@ f1_keywords:
 - condition_variable/std::condition_variable_any::wait
 - condition_variable/std::condition_variable_any::wait_for
 - condition_variable/std::condition_variable_any::wait_until
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: d8afe5db-1561-4ec2-8e85-21ea03ee4321
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -29,12 +31,13 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.workload: cplusplus
-ms.openlocfilehash: c3acad50f9dec8e3384d0b811045f95843f40b92
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 26572eed562150baff68f124fea7255283d0c133
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 Bir sınıf kullanma `condition_variable_any` içeren bir olay için beklemeye `mutex` türü.  
@@ -68,7 +71,7 @@ class condition_variable_any;
   
  **Namespace:** std  
   
-##  <a name="condition_variable_any"></a>condition_variable_any::condition_variable_any Oluşturucusu  
+##  <a name="condition_variable_any"></a>  condition_variable_any::condition_variable_any Oluşturucusu  
  Oluşturan bir `condition_variable_any` nesnesi.  
   
 ```
@@ -78,21 +81,21 @@ condition_variable_any();
 ### <a name="remarks"></a>Açıklamalar  
  Yeterli bellek varsa, Oluşturucusu oluşturur bir [system_error](../standard-library/system-error-class.md) olan nesneyi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucusu döndürürse bir `system_error` olan nesneyi bir `resource_unavailable_try_again` hata kodu.  
   
-##  <a name="notify_all"></a>condition_variable_any::notify_all  
+##  <a name="notify_all"></a>  condition_variable_any::notify_all  
  Bekleyen tüm iş parçacıklarının engelini kaldırır `condition_variable_any` nesnesi.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="notify_one"></a>condition_variable_any::notify_one  
+##  <a name="notify_one"></a>  condition_variable_any::notify_one  
  Üzerinde bekleyen iş parçacığı birini engelini kaldırır `condition_variable_any` nesnesi.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="wait"></a>condition_variable_any::wait  
+##  <a name="wait"></a>  condition_variable_any::wait  
  Bir iş parçacığı engeller.  
   
 ```
@@ -120,7 +123,7 @@ while (!Pred())
     wait(Lck);
 ```    
   
-##  <a name="wait_for"></a>condition_variable_any::wait_for  
+##  <a name="wait_for"></a>  condition_variable_any::wait_for  
  Bir iş parçacığı engeller ve daha sonra iş parçacığı engelini kaldırır bir zaman aralığı ayarlar.  
   
 ```
@@ -159,7 +162,7 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="wait_until"></a>condition_variable_any::wait_until  
+##  <a name="wait_until"></a>  condition_variable_any::wait_until  
  Bir iş parçacığı engeller ve hangi iş parçacığı engelini kaldırır zamanında maksimum noktasını ayarlar.  
   
 ```

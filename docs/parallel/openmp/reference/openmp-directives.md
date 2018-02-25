@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 51d501139d0610d670f7d646dc985a694a5b741c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2e8d47e6376b3786b27305e65bdb55f0c292995d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="openmp-directives"></a>OpenMP Yönergeleri
 OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.  
@@ -35,7 +38,7 @@ OpenMP API çağrısında kullanılan yönergeleri bağlantılar sağlar.
 |[master](../../../parallel/openmp/reference/master.md)|Yalnızca ana threadshould bir bölümünü program yürütme belirtir.|  
 |[sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)|Döngü gibi sıralı bir döngü yürütülmesi için bu kodu bir parallelized altında belirtir.|  
 |[parallel](../../../parallel/openmp/reference/parallel.md)|Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir paralel bölge tanımlar.|  
-|[bölümler](../../../parallel/openmp/reference/sections-openmp.md)|Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.|  
+|[Bölümler](../../../parallel/openmp/reference/sections-openmp.md)|Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.|  
 |[single](../../../parallel/openmp/reference/single.md)|Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde yürütülmesi gereken belirtmenize olanak sağlar.|  
 |[threadprivate](../../../parallel/openmp/reference/threadprivate.md)|Bir değişken için bir iş parçacığı özel olduğunu belirtir.|  
   

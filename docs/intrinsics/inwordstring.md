@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __inwordstring
 - __inwordstring_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __inwordstring intrinsic
 - rep insw instruction
 ms.assetid: 6de37939-017a-4740-9e3d-7de78a30daba
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e8e788020ddb88f2bd95674b723a44686ec8bd05
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7690ae817961e268ee004d03beef453502880009
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="inwordstring"></a>__inwordstring
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Belirtilen bağlantı noktası kullanımından veri okuyan `rep insw` yönergesi.  
   
@@ -42,20 +45,20 @@ void __inwordstring(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Port`  
+ [in] `Port`  
  Okunacak bağlantı noktası.  
   
- [out]`Buffer`  
+ [out] `Buffer`  
  Bağlantı noktasından okunan veriler burada yazılır.  
   
- [in]`Count`  
+ [in] `Count`  
  Okunacak veri sözcükleri sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__inwordstring`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__inwordstring`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

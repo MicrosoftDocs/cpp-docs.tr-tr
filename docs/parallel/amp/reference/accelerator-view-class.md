@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - accelerator_view
 - AMPRT/accelerator_view
@@ -24,19 +25,22 @@ f1_keywords:
 - AMPRT/Concurrency::accelerator_view:is_debug
 - AMPRT/Concurrency::accelerator_view:queuing_mode
 - AMPRT/Concurrency::accelerator_view:version
-dev_langs: C++
-helpviewer_keywords: accelerator_view class
+dev_langs:
+- C++
+helpviewer_keywords:
+- accelerator_view class
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9fd05acc351a23cc088c6491a76ecfb91583b16b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5160e0fa37ed8c1c40a3cdfd6ca63d3b76e2d980
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="acceleratorview-class"></a>accelerator_view Sınıfı
 C++ AMP verileri paralel Hızlandırıcı üzerinde bir sanal cihaz soyutlama temsil eder.  
@@ -53,8 +57,8 @@ class accelerator_view;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[accelerator_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `accelerator_view` sınıfı.|  
-|[~ accelerator_view yok Edicisi](#dtor)|Bozar `accelerator_view` nesnesi.|  
+|[accelerator_view Constructor](#ctor)|Yeni bir örneğini başlatır `accelerator_view` sınıfı.|  
+|[~accelerator_view Destructor](#dtor)|Bozar `accelerator_view` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -74,18 +78,18 @@ class accelerator_view;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator!=](#operator_neq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `false` aynı; olmaları durumunda hata verir `true`.|  
-|[işleç =](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator_view` bunu nesnesine.|  
-|[operator ==](#operator_eq_eq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `true` aynı; olmaları durumunda hata verir `false`.|  
+|[operator=](#operator_eq)|Belirtilen içeriğini kopyalar `accelerator_view` bunu nesnesine.|  
+|[operator==](#operator_eq_eq)|Bu karşılaştırır `accelerator_view` başka bir nesneyle ve döndürür `true` aynı; olmaları durumunda hata verir `false`.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Hızlandırıcı](#accelerator)|Alır `accelerator` için nesne `accelerator_view` nesne.|  
+|[accelerator](#accelerator)|Alır `accelerator` için nesne `accelerator_view` nesne.|  
 |[is_auto_selection](#is_auto_selection)|Çalışma zamanı uygun Hızlandırıcı otomatik olarak seçer olup olmadığını gösteren bir Boole değeri alır, `accelerator_view` nesne geçirilen bir [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).|  
 |[is_debug](#is_debug)|Gösteren bir Boole değeri alır olup olmadığını `accelerator_view` nesnenin kapsamlı hata bildirimi için etkin hata ayıklama katman vardır.|  
 |[queuing_mode](#queuing_mode)|Sıraya alma modunu alır `accelerator_view` nesnesi.|  
-|[Sürüm](#version)|Hızlandırıcı sürümünü alır.|  
+|[version](#version)|Hızlandırıcı sürümünü alır.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `accelerator_view`  
@@ -102,7 +106,7 @@ class accelerator_view;
   
  **Namespace:** eşzamanlılık  
 
-## <a name="accelerator"></a>Hızlandırıcı 
+## <a name="accelerator"></a> Hızlandırıcı 
 
 Hızlandırıcı nesne için accelerator_view nesnesini alır.  
   
@@ -112,7 +116,7 @@ Hızlandırıcı nesne için accelerator_view nesnesini alır.
 __declspec(property(get= get_accelerator)) Concurrency::accelerator accelerator;  
 ```  
   
-## <a name="ctor"></a>accelerator_view 
+## <a name="ctor"></a> accelerator_view 
 
 Var olan kopyalayarak accelerator_view sınıfının yeni bir örneğini başlatır `accelerator_view` nesnesi.  
   
@@ -126,7 +130,7 @@ accelerator_view( const accelerator_view & _Other );
  `_Other`  
  `accelerator_view` Kopyalamak için nesne.  
   
-## <a name="accelerator_view__create_marker"></a>create_marker 
+## <a name="accelerator_view__create_marker"></a> create_marker 
 
 Tamamlandığında şu ana kadar bu için gönderilen tüm komutlar, izlemek için gelecek döndürür `accelerator_view` nesnesi.  
   
@@ -139,7 +143,7 @@ concurrency::completion_future create_marker();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tamamlandığında şu ana kadar bu için gönderilen tüm komutlar, izlemek için gelecek `accelerator_view` nesnesi.  
   
-## <a name="flush"></a>Temizleme 
+## <a name="flush">Temizleme</a> 
 
 Tüm bekleyen komutları yürütme için Hızlandırıcı accelerator_view nesnesine kuyruğa alınan gönderir.  
   
@@ -152,7 +156,7 @@ void flush();
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür `void`.  
 
-## <a name="accelerator_view__get_accelerator"></a>get_accelerator 
+## <a name="accelerator_view__get_accelerator"></a> get_accelerator 
 
 Accelerator_view nesnesi için Hızlandırıcı nesnesi döndürür.
 ### <a name="syntax"></a>Sözdizimi
@@ -162,7 +166,7 @@ accelerator get_accelerator() const;
 ### <a name="return-value"></a>Dönüş Değeri
 Accelerator_view nesnesi için Hızlandırıcı nesnesi.
 
-## <a name="accelerator_view__get_is_auto_selection"></a>get_is_auto_selection 
+## <a name="accelerator_view__get_is_auto_selection"></a> get_is_auto_selection 
 
 Accelerator_view geçirildiğinde çalışma zamanı otomatik olarak uygun Hızlandırıcı seçip olup olmadığını gösteren bir Boole değeri döndürür bir [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).  
   
@@ -173,9 +177,9 @@ bool get_is_auto_selection() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`çalışma zamanı uygun Hızlandırıcı otomatik olarak seçer Aksi takdirde `false`.  
+ `true` çalışma zamanı uygun Hızlandırıcı otomatik olarak seçer Aksi takdirde `false`.  
   
-## <a name="accelerator_view__get_is_debug"></a>get_is_debug 
+## <a name="accelerator_view__get_is_debug"></a> get_is_debug 
 
 Accelerator_view nesne kapsamlı hata bildirimi için etkin hata ayıklama katman olup olmadığını gösteren bir Boole değeri döndürür.  
   
@@ -188,7 +192,7 @@ bool get_is_debug() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Gösteren bir Boole değeri olup olmadığını `accelerator_view` nesnenin kapsamlı hata bildirimi için etkin hata ayıklama katman vardır.  
 
-## <a name="accelerator_view__get_queuing_mode"></a>get_queuing_mode 
+## <a name="accelerator_view__get_queuing_mode"></a> get_queuing_mode 
 
 Accelerator_view nesnesi için sıraya alma modunu döndürür.  
   
@@ -201,7 +205,7 @@ queuing_mode get_queuing_mode() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıralama modu için `accelerator_view` nesnesi.  
   
-## <a name="accelerator_view__get_version"></a>get_version 
+## <a name="accelerator_view__get_version"></a> get_version 
 
 Accelerator_view sürümünü döndürür.  
   
@@ -214,7 +218,7 @@ unsigned int get_version() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Sürümü `accelerator_view`.  
   
-## <a name="accelerator_view__is_auto_selection"></a>is_auto_selection 
+## <a name="accelerator_view__is_auto_selection"></a> is_auto_selection 
 
 Accelerator_view geçirildiğinde çalışma zamanı otomatik olarak uygun Hızlandırıcı seçip olup olmadığını gösteren bir Boole değeri alır bir [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each).  
   
@@ -224,7 +228,7 @@ Accelerator_view geçirildiğinde çalışma zamanı otomatik olarak uygun Hızl
 __declspec(property(get= get_is_auto_selection)) bool is_auto_selection;  
 ```  
   
-## <a name="accelerator_view__is_debug"></a>is_debug 
+## <a name="accelerator_view__is_debug"></a> is_debug 
 
 Accelerator_view nesne kapsamlı hata bildirimi için etkin hata ayıklama katman olup olmadığını gösteren bir Boole değeri alır.  
   
@@ -234,7 +238,7 @@ Accelerator_view nesne kapsamlı hata bildirimi için etkin hata ayıklama katma
 __declspec(property(get= get_is_debug)) bool is_debug;  
 ```  
   
-## <a name="accelerator_view__operator_neq"></a>operator! = 
+## <a name="accelerator_view__operator_neq"></a> operator! = 
 
 Bu accelerator_view nesnesiyle başka karşılaştırır ve verir `false` aynı; olmaları durumunda hata verir `true`.  
   
@@ -249,9 +253,9 @@ bool operator!= (    const accelerator_view & _Other ) const;
  `accelerator_view` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `false`iki nesnenin aynı olup olmadığını; Aksi takdirde `true`.  
+ `false` iki nesnenin aynı olup olmadığını; Aksi takdirde `true`.  
   
-## <a name="accelerator_view__operator_eq"></a>işleç = 
+## <a name="accelerator_view__operator_eq"></a> işleç = 
 
 Belirtilen accelerator_view nesnesinin içeriğini bunu kopyalar.  
   
@@ -268,7 +272,7 @@ accelerator_view & operator= (    const accelerator_view & _Other );
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir başvuru değiştirilmiş `accelerator_view` nesnesi.  
   
-## <a name="accelerator_view__operator_eq_eq"></a>operator == 
+## <a name="accelerator_view__operator_eq_eq"></a> operator == 
 
 Bu accelerator_view nesnesiyle başka karşılaştırır ve verir `true` aynı; olmaları durumunda hata verir `false`.  
   
@@ -283,9 +287,9 @@ bool operator= = (    const accelerator_view & _Other ) const;
  `accelerator_view` İle Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`iki nesnenin aynı olup olmadığını; Aksi takdirde `false`.  
+ `true` iki nesnenin aynı olup olmadığını; Aksi takdirde `false`.  
   
-## <a name="accelerator_view__queuing_mode"></a>queuing_mode 
+## <a name="accelerator_view__queuing_mode"></a> queuing_mode 
 
 Sıralama modu için accelerator_view nesnesini alır.  
   
@@ -295,7 +299,7 @@ Sıralama modu için accelerator_view nesnesini alır.
 __declspec(property(get= get_queuing_mode)) Concurrency::queuing_mode queuing_mode;  
 ```  
   
-## <a name="accelerator_view__version"></a>Sürüm 
+## <a name="accelerator_view__version"></a> Sürüm 
 
 Accelerator_view sürümünü alır.  
   
@@ -305,7 +309,7 @@ Accelerator_view sürümünü alır.
 __declspec(property(get= get_version)) unsigned int version;  
 ```  
   
-## <a name="accelerator_view__wait"></a>bekleme 
+## <a name="accelerator_view__wait">bekleme</a> 
 
 Tamamlanması accelerator_view nesnesine gönderilen tüm komutlar için bekler.  
   
@@ -321,7 +325,7 @@ void wait();
 #### <a name="remarks"></a>Açıklamalar  
  Varsa [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) olan `immediate`, bu yöntem, hemen engellenmeden döndürür.  
   
-##  <a name="dtor"></a>~ accelerator_view 
+##  <a name="dtor"></a> ~ accelerator_view 
 
  Accelerator_view nesnesini yok eder.  
   

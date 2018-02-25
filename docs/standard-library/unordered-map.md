@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <unordered_map>
-dev_langs: C++
-helpviewer_keywords: unordered_map header
+ms.topic: reference
+f1_keywords:
+- <unordered_map>
+dev_langs:
+- C++
+helpviewer_keywords:
+- unordered_map header
 ms.assetid: eb90ecb2-250a-4be1-83d2-f66b2917edde
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 35f3e632488f8cceee9de9fe069825b1a1204944
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cb66a96b17b3abe37a3b4d0015aebd0c8d73f56b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltunorderedmapgt"></a>&lt;unordered_map&gt;
 Kapsayıcı şablon sınıfları tanımlar [unordered_map](../standard-library/unordered-map-class.md) ve [unordered_multimap](../standard-library/unordered-multimap-class.md) ve bunların destekleyen şablonlar.  
@@ -43,10 +48,10 @@ Kapsayıcı şablon sınıfları tanımlar [unordered_map](../standard-library/u
 |||  
 |-|-|  
 |[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Testleri işlecinin sol tarafındaki unordered_map nesnesi sağ tarafında unordered_map nesnesine eşit değil.|  
-|[operator ==](../standard-library/unordered-map-operators.md#op_eq_eq)|Unordered_map nesne işlecinin sol tarafındaki sağ tarafında unordered_map nesnesine eşitse testleri.|  
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Unordered_map nesne işlecinin sol tarafındaki sağ tarafında unordered_map nesnesine eşitse testleri.|  
 |[swap işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki eşlemeleri değiştirir.|  
 |[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Testleri işlecinin sol tarafındaki unordered_multimap nesnesi sağ tarafında unordered_multimap nesnesine eşit değil.|  
-|[operator ==](../standard-library/unordered-map-operators.md#op_eq_eq)|Unordered_multimap nesne işlecinin sol tarafındaki sağ tarafında unordered_multimap nesnesine eşitse testleri.|  
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Unordered_multimap nesne işlecinin sol tarafındaki sağ tarafında unordered_multimap nesnesine eşitse testleri.|  
 |[swap işlevi (unordered_map)](../standard-library/unordered-map-functions.md#swap)|İki multimaps değiştirir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

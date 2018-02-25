@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - functors
 - C++ Standard Library, functors
 - C++ Standard Library, function objects
 - function objects
 ms.assetid: 85f8a735-2c7b-4f10-9c4d-95c666ec4192
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2ba5024590a0682f8d65c7d21ca2cb15d2f481b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4f426145418dab9c393e3e587939fa3e0fb5488d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="function-objects-in-the-c-standard-library"></a>C++ Standart Kitaplığı'nda işlev nesneleri
 A *işlev nesnesi*, veya *functor*, operator() uygulayan herhangi bir tür. Bu işleç olarak adlandırılır *çağırma işleci* veya bazen *uygulama işleci*. C++ Standart Kitaplığı, öncelikle sıralama ölçütü kapsayıcıları ve algoritmaları olarak işlev nesneleri kullanır.  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __incgsdword
 - __incgsqword_cpp
@@ -16,26 +17,28 @@ f1_keywords:
 - __incgsbyte_cpp
 - __incgsqword
 - __incgsdword_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __incgsbyte intrinsic
 - __incgsword intrinsic
 - __incgsqword intrinsic
 - __incgsdword intrinsic
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7540219843a3a01968f62c58370cb979e5572943
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 80eb7ef4aff0ea8984e8dfa704cb4133718d8e88
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="incgsbyte-incgsword-incgsdword-incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bir değere bir uzaklık başlangıcı göre tarafından belirtilen bir bellek konumuna eklemek `GS` kesimi.  
   
@@ -57,7 +60,7 @@ void __incgsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Offset`  
+ [in] `Offset`  
  Başından uzaklık `GS`.  
   
 ## <a name="requirements"></a>Gereksinimler  

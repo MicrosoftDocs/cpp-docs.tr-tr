@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - single_link_registry
 - AGENTS/concurrency::single_link_registry
@@ -16,19 +17,22 @@ f1_keywords:
 - AGENTS/concurrency::single_link_registry::contains
 - AGENTS/concurrency::single_link_registry::count
 - AGENTS/concurrency::single_link_registry::remove
-dev_langs: C++
-helpviewer_keywords: single_link_registry class
+dev_langs:
+- C++
+helpviewer_keywords:
+- single_link_registry class
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 11e02e4adb2e2bdb79f275537047199f434a57c2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 74167dcc03754c7f25d83058ec814798d40931a2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="singlelinkregistry-class"></a>single_link_registry Sınıfı
 `single_link_registry` Nesne bir `network_link_registry` yalnızca tek bir kaynak veya hedef blok yönetir.  
@@ -51,17 +55,17 @@ class single_link_registry : public network_link_registry<_Block>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[single_link_registry](#ctor)|Oluşturan bir `single_link_registry` nesnesi.|  
-|[~ single_link_registry yok Edicisi](#dtor)|Bozar `single_link_registry` nesnesi.|  
+|[~single_link_registry Destructor](#dtor)|Bozar `single_link_registry` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[add](#add)|Bir bağlantı ekler `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::add](network-link-registry-class.md#add).)|  
-|[başlayın](#begin)|Yineleyici ilk öğe döndürür `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
-|[içerir](#contains)|Aramaları `single_link_registry` belirtilen bloğu için nesnesi. (Geçersiz kılmaları [network_link_registry::contains](network-link-registry-class.md#contains).)|  
-|[sayısı](#count)|Öğeleri sayar `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::count](network-link-registry-class.md#count).)|  
-|[remove](#remove)|Bir bağlantıdan kaldırır `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::remove](network-link-registry-class.md#remove).)|  
+|[add](#add)|Bir bağlantı ekler `single_link_registry` nesnesi. (Overrides [network_link_registry::add](network-link-registry-class.md#add).)|  
+|[Başlangıç](#begin)|Yineleyici ilk öğe döndürür `single_link_registry` nesnesi. (Geçersiz kılmaları [network_link_registry::begin](network-link-registry-class.md#begin).)|  
+|[içerir](#contains)|Aramaları `single_link_registry` belirtilen bloğu için nesnesi. (Overrides [network_link_registry::contains](network-link-registry-class.md#contains).)|  
+|[Sayısı](#count)|Öğeleri sayar `single_link_registry` nesnesi. (Overrides [network_link_registry::count](network-link-registry-class.md#count).)|  
+|[remove](#remove)|Bir bağlantıdan kaldırır `single_link_registry` nesnesi. (Overrides [network_link_registry::remove](network-link-registry-class.md#remove).)|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [network_link_registry](network-link-registry-class.md)  
@@ -73,7 +77,7 @@ class single_link_registry : public network_link_registry<_Block>;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="add"></a>ekleme 
+##  <a name="add"></a> Ekleme 
 
  Bir bağlantı ekler `single_link_registry` nesnesi.  
   
@@ -88,7 +92,7 @@ virtual void add(_EType _Link);
 ### <a name="remarks"></a>Açıklamalar  
  Yöntem oluşturulur bir [invalid_link_target](invalid-link-target-class.md) zaten varsa bir bağlantıyı bu kayıt defterinde özel durum.  
   
-##  <a name="begin"></a>başlayın 
+##  <a name="begin">Başlangıç</a> 
 
  Yineleyici ilk öğe döndürür `single_link_registry` nesnesi.  
   
@@ -102,7 +106,7 @@ virtual iterator begin();
 ### <a name="remarks"></a>Açıklamalar  
  Son durum belirtilir bir `NULL` bağlantı.  
   
-##  <a name="contains"></a>içerir 
+##  <a name="contains">içerir</a> 
 
  Aramaları `single_link_registry` belirtilen bloğu için nesnesi.  
   
@@ -115,9 +119,9 @@ virtual bool contains(_EType _Link);
  İçinde aranacak bir bloğu için bir işaretçi `single_link_registry` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bağlantıyı bulunduysa `false` Aksi takdirde.  
+ `true` bağlantıyı bulunduysa `false` Aksi takdirde.  
   
-##  <a name="count"></a>sayısı 
+##  <a name="count">Sayısı</a> 
 
  Öğeleri sayar `single_link_registry` nesnesi.  
   
@@ -128,7 +132,7 @@ virtual size_t count();
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğelerin sayısı `single_link_registry` nesnesi.  
   
-##  <a name="remove"></a>Kaldır 
+##  <a name="remove"></a> Kaldır 
 
  Bir bağlantıdan kaldırır `single_link_registry` nesnesi.  
   
@@ -141,9 +145,9 @@ virtual bool remove(_EType _Link);
  Bir blok, kaldırılması için bir işaretçi bulundu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
+ `true` bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
   
-##  <a name="ctor"></a>single_link_registry 
+##  <a name="ctor"></a> single_link_registry 
 
  Oluşturan bir `single_link_registry` nesnesi.  
   
@@ -151,7 +155,7 @@ virtual bool remove(_EType _Link);
 single_link_registry();
 ```  
   
-##  <a name="dtor"></a>~ single_link_registry 
+##  <a name="dtor"></a> ~single_link_registry 
 
  Bozar `single_link_registry` nesnesi.  
   

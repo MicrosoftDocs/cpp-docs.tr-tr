@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __rdtsc
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __rdtsc
+dev_langs:
+- C++
 helpviewer_keywords:
 - __rdtsc intrinsic
 - rdtsc instruction
 - Read Time Stamp Counter instruction
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bd108c36dc60f6186d247cd3cf61d27d1dad3239
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dcf10bebb17096f29e2c96c9d66c631598d023aa
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rdtsc"></a>__rdtsc
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturur `rdtsc` işlemci zaman damgasını döndürür yönerge. İşlemci zaman damgası, son sıfırlamadan sonraki saat döngüsü sayısını kaydeder.  
   
@@ -43,7 +47,7 @@ unsigned __int64 __rdtsc();
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__rdtsc`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__rdtsc`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: random/std::linear_congruential_engine
-dev_langs: C++
-helpviewer_keywords: linear_congruential_engine class
+ms.topic: reference
+f1_keywords:
+- random/std::linear_congruential_engine
+dev_langs:
+- C++
+helpviewer_keywords:
+- linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4624046c2810f3c23807aab8824d5a0ab62fdcc3
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 1f1e7b2362802ff72a029e7ffe91ed792eb056b7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 Rastgele bir dizisi doğrusal congruential algoritması tarafından oluşturur.  
@@ -69,7 +74,7 @@ class linear_congruential_engine{
 |`linear_congruential_engine::linear_congruential_engine`|`linear_congruential_engine::min`|`linear_congruential_engine::discard`|  
 |`linear_congruential_engine::operator()`|`linear_congruential_engine::max`|`linear_congruential_engine::seed`|  
   
- `default_seed`üye sabit, tanımlanmış olarak `1u`, varsayılan parametre değeri olarak kullanılan `linear_congruential_engine::seed` ve tek değer Oluşturucusu.  
+ `default_seed` üye sabit, tanımlanmış olarak `1u`, varsayılan parametre değeri olarak kullanılan `linear_congruential_engine::seed` ve tek değer Oluşturucusu.  
   
  Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
   

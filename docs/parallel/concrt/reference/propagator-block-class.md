@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - propagator_block
 - AGENTS/concurrency::propagator_block
@@ -23,19 +24,22 @@ f1_keywords:
 - AGENTS/concurrency::propagator_block::send_message
 - AGENTS/concurrency::propagator_block::unlink_source
 - AGENTS/concurrency::propagator_block::unlink_sources
-dev_langs: C++
-helpviewer_keywords: propagator_block class
+dev_langs:
+- C++
+helpviewer_keywords:
+- propagator_block class
 ms.assetid: 86aa75fd-eda5-42aa-aadf-25c0c1c9742d
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ff31849020c9daed7999ae1569e8c12249a4b834
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3ff6e543702fc366e72f1473f0f70608a1daabc6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="propagatorblock-class"></a>propagator_block Sınıfı
 `propagator_block` Sınıfı, hem kaynak hem de hedef ileti blokları için Özet temel sınıf. Her ikisi de işlevlerini birleştiren `source_block` ve `target_block` sınıfları.  
@@ -72,7 +76,7 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[propagator_block](#ctor)|Oluşturan bir `propagator_block` nesnesi.|  
-|[~ propagator_block yok Edicisi](#dtor)|Bozar bir `propagator_block` nesnesi.|  
+|[~propagator_block Destructor](#dtor)|Bozar bir `propagator_block` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -94,7 +98,7 @@ class propagator_block : public source_block<_TargetLinkRegistry,
 |[remove_network_links](#remove_network_links)|Tüm kaynak ve hedef ağ bağlantıları öğesinden kaldırır `propagator_block` nesnesi.|  
 |[send_message](#send_message)|Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.|  
 |[unlink_source](#unlink_source)|Belirtilen kaynak blok bu bağlantıyı keser `propagator_block` nesnesi.|  
-|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `propagator_block` nesnesi. (Geçersiz kılmaları [Itarget::unlink_sources](itarget-class.md#unlink_sources).)|  
+|[unlink_sources](#unlink_sources)|Tüm kaynak blokları bu bağlantıyı keser `propagator_block` nesnesi. (Overrides [ITarget::unlink_sources](itarget-class.md#unlink_sources).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Birden çok devralma önlemek için `propagator_block` sınıfının devraldığı `source_block` sınıfı ve `ITarget` soyut sınıf. Uygulamasındaki işlevselliğin çoğu `target_block` sınıfı burada çoğaltılır.  
@@ -113,7 +117,7 @@ class propagator_block : public source_block<_TargetLinkRegistry,
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="decline_incoming_messages"></a>decline_incoming_messages 
+##  <a name="decline_incoming_messages">decline_incoming_messages</a> 
 
  Blok için yeni ileti reddedildi olduğunu gösterir.  
   
@@ -124,7 +128,7 @@ void decline_incoming_messages();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi yok etme işlemi devam ederken yeni iletiler reddetti emin olmak için yıkıcı tarafından çağrılır.  
   
-##  <a name="initialize_source_and_target"></a>initialize_source_and_target 
+##  <a name="initialize_source_and_target"></a> initialize_source_and_target 
 
  Temel nesneyi başlatır. Özellikle, `message_processor` nesnenin başlatılması gerekiyor.  
   
@@ -141,7 +145,7 @@ void initialize_source_and_target(
  `_PScheduleGroup`  
  Görevleri planlama için kullanılacak zamanlamayı grubu.  
   
-##  <a name="link_source"></a>link_source 
+##  <a name="link_source"></a> link_source 
 
  Belirtilen kaynak blok için bağlantılar `propagator_block` nesnesi.  
   
@@ -153,7 +157,7 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  Bir işaretçi `ISource` bağlanacağı bloğu.  
   
-##  <a name="process_input_messages"></a>process_input_messages 
+##  <a name="process_input_messages">process_input_messages</a> 
 
  İşlem iletileri girin. Bu yalnızca source_block türetilen yayılması blokları kullanışlıdır  
   
@@ -164,7 +168,7 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 ### <a name="parameters"></a>Parametreler  
  `_PMessage`  
   
-##  <a name="propagate"></a>Yayma 
+##  <a name="propagate">Yayma</a> 
 
  Zaman uyumsuz olarak bir ileti bu hedef blok kaynak bloğundan geçirir.  
   
@@ -189,7 +193,7 @@ virtual message_status propagate(
   
  Yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
-##  <a name="propagate_message"></a>propagate_message 
+##  <a name="propagate_message"></a> propagate_message 
 
  Türetilen bir sınıfta geçersiz kılındığında, bu yöntem bir iletiden zaman uyumsuz olarak aktarır. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -209,7 +213,7 @@ virtual message_status propagate_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="ctor"></a>propagator_block 
+##  <a name="ctor"></a> propagator_block 
 
  Oluşturan bir `propagator_block` nesnesi.  
   
@@ -217,7 +221,7 @@ virtual message_status propagate_message(
 propagator_block();
 ```  
   
-##  <a name="dtor"></a>~ propagator_block 
+##  <a name="dtor"></a> ~propagator_block 
 
  Bozar bir `propagator_block` nesnesi.  
   
@@ -225,7 +229,7 @@ propagator_block();
 virtual ~propagator_block();
 ```  
   
-##  <a name="register_filter"></a>register_filter 
+##  <a name="register_filter"></a> register_filter 
 
  Her alınan iletide çağrılacak bir filtre yöntemi kaydeder.  
   
@@ -237,7 +241,7 @@ void register_filter(filter_method const& _Filter);
  `_Filter`  
  Filter yöntemi.  
   
-##  <a name="remove_network_links"></a>remove_network_links 
+##  <a name="remove_network_links"></a> remove_network_links 
 
  Tüm kaynak ve hedef ağ bağlantıları öğesinden kaldırır `propagator_block` nesnesi.  
   
@@ -245,7 +249,7 @@ void register_filter(filter_method const& _Filter);
 void remove_network_links();
 ```  
   
-##  <a name="send"></a>Gönder 
+##  <a name="send">Gönder</a> 
 
  Zaman uyumlu olarak bu bloğu için bir ileti başlatır. Çağıran bir `ISource` bloğu. Bu işlev tamamlandığında, ileti zaten bloğuna yayılan.  
   
@@ -268,7 +272,7 @@ virtual message_status send(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
-##  <a name="send_message"></a>send_message 
+##  <a name="send_message"></a> send_message 
 
  Türetilen bir sınıfta geçersiz kılındığında, bu yöntem gelen iletiyi zaman uyumlu olarak geçirir. bir `ISource` bu bloğuna `propagator_block` nesnesi. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -284,7 +288,7 @@ virtual message_status send_message(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu bloğu döndüren `declined` türetilmiş sınıf tarafından geçersiz kılınmadığı sürece.  
   
-##  <a name="unlink_source"></a>unlink_source 
+##  <a name="unlink_source"></a> unlink_source 
 
  Belirtilen kaynak blok bu bağlantıyı keser `propagator_block` nesnesi.  
   
@@ -296,7 +300,7 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
  `_PSource`  
  Bir işaretçi `ISource` bağlantısız olacak bloğu.  
   
-##  <a name="unlink_sources"></a>unlink_sources 
+##  <a name="unlink_sources"></a> unlink_sources 
 
  Tüm kaynak blokları bu bağlantıyı keser `propagator_block` nesnesi.  
   

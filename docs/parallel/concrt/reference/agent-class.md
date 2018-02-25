@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - agent
 - AGENTS/concurrency::agent
@@ -20,19 +21,22 @@ f1_keywords:
 - AGENTS/concurrency::agent::wait_for_one
 - AGENTS/concurrency::agent::done
 - AGENTS/concurrency::agent::run
-dev_langs: C++
-helpviewer_keywords: agent class
+dev_langs:
+- C++
+helpviewer_keywords:
+- agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cc83001328f346aa33d15b0ea6fcfb26eb444ec4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4a4617007525fdd924dce7b09f1d351c7c18cc96
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="agent-class"></a>agent Sınıfı
 Tüm bağımsız aracılar için temel sınıf olarak kullanılmak üzere bir sınıf. Diğer aracıları durumundan gizleme ve ileti geçirme kullanarak etkileşim kurmak için kullanılır.  
@@ -57,8 +61,8 @@ class agent;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[İptal](#cancel)|Bir aracı üzerinden taşır `agent_created` veya `agent_runnable` için durumları `agent_canceled` durumu.|  
-|[Başlat](#start)|Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlar.|  
-|[durumu](#status)|Aracı durumu bilgileri, zaman uyumlu bir kaynağı.|  
+|[start](#start)|Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlar.|  
+|[Durumu](#status)|Aracı durumu bilgileri, zaman uyumlu bir kaynağı.|  
 |[status_port](#status_port)|Zaman uyumsuz bir kaynağı aracısından durum bilgilerinin.|  
 |[bekleme](#wait)|Bir aracı, görevini tamamlamak üzere bekler.|  
 |[wait_for_all](#wait_for_all)|Tüm kullanıcıların görevleri tamamlamasını belirtilen aracılar için bekler.|  
@@ -69,7 +73,7 @@ class agent;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Bitti](#done)|Bir aracı halinde taşır `agent_done` aracı tamamlandığını gösteren durum.|  
-|[çalıştırma](#run)|Bir aracının ana görev temsil eder. `run`türetilen bir sınıfta geçersiz kılınmalıdır ve aracı ne yapması gerektiğini belirten, başlatıldıktan sonra.|  
+|[run](#run)|Bir aracının ana görev temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracı ne yapması gerektiğini belirten, başlatıldıktan sonra.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [zaman uyumsuz aracılar](../../../parallel/concrt/asynchronous-agents.md).  
@@ -82,7 +86,7 @@ class agent;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>Aracı 
+##  <a name="ctor">Aracı</a> 
 
  Bir aracı oluşturur.  
   
@@ -104,7 +108,7 @@ agent(ScheduleGroup& _PGroup);
 ### <a name="remarks"></a>Açıklamalar  
  Çalışma zamanı belirtmezseniz varsayılan Zamanlayıcısı'nı kullanıyorsa `_PScheduler` veya `_PGroup` parametreleri.  
   
-##  <a name="dtor"></a>~ Aracısı 
+##  <a name="dtor"></a> ~ Aracısı 
 
  Aracı yok eder.  
   
@@ -115,7 +119,7 @@ virtual ~agent();
 ### <a name="remarks"></a>Açıklamalar  
  Bir terminal durumda olmayan bir aracı yok etmek için bir hata olduğunu (ya da `agent_done` veya `agent_canceled`). Bu terminal durumda yıkıcı öğesinden devralınan bir sınıf ulaşmak aracı için bekleyen tarafından önlenebilir `agent` sınıfı.  
   
-##  <a name="cancel"></a>İptal 
+##  <a name="cancel">İptal</a> 
 
  Bir aracı üzerinden taşır `agent_created` veya `agent_runnable` için durumları `agent_canceled` durumu.  
   
@@ -124,9 +128,9 @@ bool cancel();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Aracı iptal edilirse `false` Aksi takdirde. Zaten çalışan başlatıldı veya zaten tamamlanmış olan bir aracı iptal edilemez.  
+ `true` Aracı iptal edilirse `false` Aksi takdirde. Zaten çalışan başlatıldı veya zaten tamamlanmış olan bir aracı iptal edilemez.  
   
-##  <a name="done"></a>Bitti 
+##  <a name="done">Bitti</a> 
 
  Bir aracı halinde taşır `agent_done` aracı tamamlandığını gösteren durum.  
   
@@ -135,14 +139,14 @@ bool done();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Aracı için taşınırsa `agent_done` durumunu `false` Aksi takdirde. İptal edilmiş bir aracı taşınamıyor `agent_done` durumu.  
+ `true` Aracı için taşınırsa `agent_done` durumunu `false` Aksi takdirde. İptal edilmiş bir aracı taşınamıyor `agent_done` durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem sonunda çağrılmalıdır `run` aracınızı yürütülmesi bildiğinizde yöntemi tamamlandı.  
   
-##  <a name="run"></a>çalıştırma 
+##  <a name="run"></a> çalıştırma 
 
- Bir aracının ana görev temsil eder. `run`türetilen bir sınıfta geçersiz kılınmalıdır ve aracı ne yapması gerektiğini belirten, başlatıldıktan sonra.  
+ Bir aracının ana görev temsil eder. `run` türetilen bir sınıfta geçersiz kılınmalıdır ve aracı ne yapması gerektiğini belirten, başlatıldıktan sonra.  
   
 ```
 virtual void run() = 0;
@@ -151,7 +155,7 @@ virtual void run() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Aracı durumu olarak değiştirildiğinde `agent_started` bu yöntemi çağrılmadan önce sağ. Invoke yöntemi `done` dönmeden önce uygun bir durum ile aracısında ve özel durumlar atabilir değil.  
   
-##  <a name="start"></a>Başlat 
+##  <a name="start"></a> Başlat 
 
  Bir Aracıdan taşır `agent_created` durumunu `agent_runnable` belirtin ve yürütme için zamanlar.  
   
@@ -160,9 +164,9 @@ bool start();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Aracı, doğru başlattıysanız `false` Aksi takdirde. İptal edilmiş bir aracı başlatılamıyor.  
+ `true` Aracı, doğru başlattıysanız `false` Aksi takdirde. İptal edilmiş bir aracı başlatılamıyor.  
   
-##  <a name="status"></a>durumu 
+##  <a name="status">Durumu</a> 
 
  Aracı durumu bilgileri, zaman uyumlu bir kaynağı.  
   
@@ -173,7 +177,7 @@ agent_status status();
 ### <a name="return-value"></a>Dönüş Değeri  
  Aracının geçerli durumunu döndürür. Bu döndürülen durum hemen döndürülmesini sonra değişebilir unutmayın.  
   
-##  <a name="status_port"></a>status_port 
+##  <a name="status_port"></a> status_port 
 
  Zaman uyumsuz bir kaynağı aracısından durum bilgilerinin.  
   
@@ -184,7 +188,7 @@ ISource<agent_status>* status_port();
 ### <a name="return-value"></a>Dönüş Değeri  
  İleti Aracısı'nın geçerli durumu hakkında bir ileti kaynağı döndürür.  
   
-##  <a name="wait"></a>bekleme 
+##  <a name="wait">bekleme</a> 
 
  Bir aracı, görevini tamamlamak üzere bekler.  
   
@@ -209,7 +213,7 @@ static agent_status __cdecl wait(
   
  Varsa parametresi `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı kendi görev tamamlanmadan önce belirtilen sürede sona ererse atılır.  
   
-##  <a name="wait_for_all"></a>wait_for_all 
+##  <a name="wait_for_all"></a> wait_for_all 
 
  Tüm kullanıcıların görevleri tamamlamasını belirtilen aracılar için bekler.  
   
@@ -239,7 +243,7 @@ static void __cdecl wait_for_all(
   
  Varsa parametresi `_Timeout` sabiti dışında bir değere sahip `COOPERATIVE_TIMEOUT_INFINITE`, özel durum [operation_timed_out](operation-timed-out-class.md) aracı kendi görev tamamlanmadan önce belirtilen sürede sona ererse atılır.  
   
-##  <a name="wait_for_one"></a>wait_for_one 
+##  <a name="wait_for_one"></a> wait_for_one 
 
  Görevini tamamlamak üzere belirtilen aracıları herhangi biri için bekler.  
   

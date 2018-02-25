@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - future/std::promise
 - future/std::promise::promise
@@ -16,9 +17,10 @@ f1_keywords:
 - future/std::promise::set_value
 - future/std::promise::set_value_at_thread_exit
 - future/std::promise::swap
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 2931558c-d94a-4ba1-ac4f-20bf7b6e23f9
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -31,12 +33,13 @@ helpviewer_keywords:
 - std::promise [C++], set_value
 - std::promise [C++], set_value_at_thread_exit
 - std::promise [C++], swap
-ms.workload: cplusplus
-ms.openlocfilehash: 12941d9fcfc1aa7123bcd68291b86c9ec3e046e9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6673483beb2552ba1b3a11b76d65e9be484c2a39
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="promise-class"></a>promise Sınıfı
 Açıklayan bir *zaman uyumsuz sağlayıcısı*.  
@@ -54,7 +57,7 @@ class promise;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Promise](#promise)|Oluşturan bir `promise` nesnesi.|  
+|[promise](#promise)|Oluşturan bir `promise` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -65,13 +68,13 @@ class promise;
 |[set_exception_at_thread_exit](#set_exception_at_thread_exit)|Otomatik olarak bir özel durum belirtmek için bu promise sonuç kümeleri ve tüm iş parçacığı yerel nesneler yalnızca geçerli iş parçacığı içinde (genellikle iş parçacığı Çıkışta) yok edildi bildirim sunar.|  
 |[set_value](#set_value)|Otomatik olarak bir değer belirtmek için bu promise sonucunu ayarlar.|  
 |[set_value_at_thread_exit](#set_value_at_thread_exit)|Otomatik olarak bir değer belirtmek için bu promise sonuç kümeleri ve tüm iş parçacığı yerel nesneler yalnızca geçerli iş parçacığı içinde (genellikle iş parçacığı Çıkışta) yok edildi bildirim sunar.|  
-|[değiştirme](#swap)|Alışverişleri *zaman uyumsuz durum ilişkili* , bu promise değeriyle belirtilen promise nesnesi.|  
+|[Değiştirme](#swap)|Alışverişleri *zaman uyumsuz durum ilişkili* , bu promise değeriyle belirtilen promise nesnesi.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Promise::operator =](#op_eq)|Bu promise nesnesi paylaşılan durumu atama.|  
+|[promise::operator=](#op_eq)|Bu promise nesnesi paylaşılan durumu atama.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `promise`  
@@ -81,7 +84,7 @@ class promise;
   
  **Namespace:** std  
   
-##  <a name="get_future"></a>Promise::get_future  
+##  <a name="get_future"></a>  Promise::get_future  
  Döndürür bir [gelecekteki](../standard-library/future-class.md) aynı olan nesneyi *zaman uyumsuz durum ilişkili* bu promise olarak.  
   
 ```
@@ -93,7 +96,7 @@ future<Ty> get_future();
   
  Bu yöntem için aynı ilişkili zaman uyumsuz durumuna sahip bir promise nesnesi adında, yöntemi döndürürse bir `future_error` olan bir `error_code` , `future_already_retrieved`.  
   
-##  <a name="op_eq"></a>Promise::operator =  
+##  <a name="op_eq"></a>  promise::operator=  
  Aktarımları *zaman uyumsuz durum ilişkili* belirtilen bir gelen `promise` nesnesi.  
   
 ```
@@ -110,7 +113,7 @@ promise& operator=(promise&& Other) noexcept;
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç ilişkili zaman uyumsuz durumundan aktarır `Other`. Aktarım sonra `Other` olan *boş*.  
   
-##  <a name="promise"></a>Promise::Promise Oluşturucusu  
+##  <a name="promise"></a>  Promise::Promise Oluşturucusu  
  Oluşturan bir `promise` nesnesi.  
   
 ```
@@ -134,7 +137,7 @@ promise(promise&& Other) noexcept;
   
  Üçüncü Oluşturucusu yapıları bir `promise` nesne ve ilişkili zaman uyumsuz durumundan aktarımı `Other`ve bırakır `Other` boş.  
   
-##  <a name="set_exception"></a>Promise::set_exception  
+##  <a name="set_exception"></a>  Promise::set_exception  
  Otomatik olarak bir özel durum Bunun sonucu olarak depolar `promise` nesne ve ayarlar *zaman uyumsuz durum ilişkili* için *hazır*.  
   
 ```
@@ -148,11 +151,11 @@ void set_exception(exception_ptr Exc);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `promise` nesnesi ilişkili hiçbir zaman uyumsuz durumuna sahiptir, bu yöntem oluşturulur bir [future_error](../standard-library/future-error-class.md) hata kodunu olan `no_state`.  
   
- Varsa `set_exception`, [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), veya [set_value_at_thread_exit](#set_value_at_thread_exit) için zaten çağrılmış bir `promise` nesnesinin sahip aynı zaman uyumsuz durum ilişkilendirilmiş, bu yöntem oluşturulur bir `future_error` hata kodunu olan `promise_already_satisfied`.  
+ If `set_exception`, [set_exception_at_thread_exit](#set_exception_at_thread_exit), [set_value](#set_value), or [set_value_at_thread_exit](#set_value_at_thread_exit) has already been called for a `promise` object that has the same associated asynchronous state, this method throws a `future_error` that has an error code of `promise_already_satisfied`.  
   
  Bu yöntem sonucunda ilişkili zaman uyumsuz durumunu engellenmiş iş parçacığı sayısı engeli haline gelir.  
   
-##  <a name="set_exception_at_thread_exit"></a>Promise::set_exception_at_thread_exit  
+##  <a name="set_exception_at_thread_exit"></a>  Promise::set_exception_at_thread_exit  
  Bunun sonucunda, otomatik olarak ayarlar `promise` bir özel durum belirtmek için bildirim yalnızca tüm iş parçacığı yerel nesneleri geçerli iş parçacığında teslim edildi (genellikle iş parçacığı Çıkışta).  
   
 ```
@@ -170,7 +173,7 @@ void set_exception_at_thread_exit(exception_ptr Exc);
   
  Tersine için [set_exception](#set_exception), bu yöntem, geçerli iş parçacığının tüm iş parçacığı yerel nesneleri yok kadar hazır ilişkili zaman uyumsuz durum ayarlı değil. Genellikle, geçerli iş parçacığının çıkar kadar ilişkili zaman uyumsuz durumunu engellenmiş iş parçacıklarının engeli değildir.  
   
-##  <a name="set_value"></a>Promise::set_value  
+##  <a name="set_value"></a>  Promise::set_value  
  Otomatik olarak bir değer Bunun sonucu olarak depolar `promise` nesne ve ayarlar *zaman uyumsuz durum ilişkili* için *hazır*.  
   
 ```
@@ -199,7 +202,7 @@ void promise<void>::set_value();
   
  Özelleştirme için `promise<void>`, depolanan bir değeri yok.  
   
-##  <a name="set_value_at_thread_exit"></a>Promise::set_value_at_thread_exit  
+##  <a name="set_value_at_thread_exit"></a>  Promise::set_value_at_thread_exit  
  Otomatik olarak bir değer Bunun sonucu olarak depolar `promise` nesnesi.  
   
 ```
@@ -228,7 +231,7 @@ void promise<void>::set_value_at_thread_exit();
   
  Özelleştirme için `promise<void>`, depolanan bir değeri yok.  
   
-##  <a name="swap"></a>Promise::Swap  
+##  <a name="swap"></a>  Promise::Swap  
  Alışverişleri *zaman uyumsuz durum ilişkili* , belirtilen bir nesne ile bu promise nesnesi.  
   
 ```

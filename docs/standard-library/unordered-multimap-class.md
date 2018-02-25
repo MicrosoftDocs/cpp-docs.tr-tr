@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - unordered_map/std::unordered_multimap
 - unordered_map/std::unordered_multimap::allocator_type
@@ -54,7 +55,8 @@ f1_keywords:
 - unordered_map/std::unordered_multimap::unordered_multimap
 - unordered_map/std::unordered_multimap::operator=
 - unordered_map/std::unordered_multimap::hash_function
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::unordered_multimap
 - std::unordered_multimap::allocator_type
@@ -144,16 +146,17 @@ helpviewer_keywords:
 - std::unordered_multimap::size
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a0fa73588a2ee2b593e12f98cac387d9d4323ad9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c13e19d920b0b8ae61d3f3bd0ba2ae77cc3477bd
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="unorderedmultimap-class"></a>unordered_multimap Sınıfı
 Şablon sınıfı türündeki öğeler değişen uzunluk dizisi denetleyen bir nesneyi tanımlayan `std::pair<const Key, Ty>`. Dizi çağrılan demetlerin sıralı bir dizi kümesini bölümleyen bir karma işlev tarafından zayıf bir şekilde sıralanır. Her bir demette herhangi bir öğe çiftinin eşdeğer sıralamaya sahip olup olmadığını belirleyen bir karşılaştırma işlevi vardır. Her bir öğe iki nesne, bir sıralama anahtarı ve bir değer depolar. Dizi, en azından tüm demetleri kabaca eşit uzunlukta olduğunda, dizideki (sabit zaman) öğe sayısından bağımsız olabilen işlem sayısına sahip rastgele bir öğenin aranması, eklenmesi ve kaldırılmasına izin verecek şekilde temsil edilir. En kötü durumda, tüm öğeler tek bir demet içinde olduğunda işlem sayısı dizideki (doğrusal zaman) öğelerin sayısıyla orantılıdır. Ayrıca, bir öğe eklenmesi hiçbir yineleyiciyi geçersiz kılmaz; bir öğenin kaldırılması yalnızca bu kaldırılan öğeyi gösteren yineleyicileri geçersiz kılar.  
@@ -192,51 +195,51 @@ class unordered_multimap;
 |[const_reference](#const_reference)|Bir öğe için sabit bir başvuru türü.|  
 |[difference_type](#difference_type)|İki öğe arasındaki işaretli mesafenin türü.|  
 |[hasher](#hasher)|Karma işlevin türü.|  
-|[Yineleyici](#iterator)|Denetlenen dizi için bir yineleyici türü.|  
+|[iterator](#iterator)|Denetlenen dizi için bir yineleyici türü.|  
 |[key_equal](#key_equal)|Karşılaştırma işlevinin türü.|  
 |[key_type](#key_type)|Bir sıralama anahtarının türü.|  
 |[local_iterator](#local_iterator)|Denetlenen dizi için bir demet yineleyici türü.|  
 |[mapped_type](#mapped_type)|Her bir anahtar ile ilişkili bir eşlenen değer türü.|  
-|[İşaretçi](#pointer)|Bir öğe için bir işaretçi türü.|  
-|[başvuru](#reference)|Bir öğe için bir başvuru türü.|  
+|[pointer](#pointer)|Bir öğe için bir işaretçi türü.|  
+|[reference](#reference)|Bir öğe için bir başvuru türü.|  
 |[size_type](#size_type)|İki öğe arasındaki işaretsiz bir mesafenin türü.|  
 |[value_type](#value_type)|Öğenin türü.|  
   
 |||  
 |-|-|  
 |Üye İşlevi|Açıklama|  
-|[başlayın](#begin)|Denetlenen dizinin başlangıcını belirtir.|  
+|[Başlangıç](#begin)|Denetlenen dizinin başlangıcını belirtir.|  
 |[Demet](#bucket)|Bir anahtar değeri için demet numarasını alır.|  
 |[bucket_count](#bucket_count)|Demet sayısını alır.|  
 |[bucket_size](#bucket_size)|Demet boyutunu alır.|  
 |[cbegin](#cbegin)|Denetlenen dizinin başlangıcını belirtir.|  
 |[cend](#cend)|Denetlenen dizinin bitişini belirtir.|  
 |[Temizle](#clear)|Tüm öğeleri kaldırır.|  
-|[sayısı](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|  
+|[Sayısı](#count)|Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.|  
 |[emplace](#emplace)|Yerinde oluşturulmuş bir öğe ekler.|  
 |[emplace_hint](#emplace_hint)|Göstergeyle birlikte, yerinde oluşturulmuş bir öğe ekler.|  
-|[boş](#empty)|Bir öğe olup olmadığını sınar.|  
+|[empty](#empty)|Bir öğe olup olmadığını sınar.|  
 |[Bitiş](#end)|Denetlenen dizinin bitişini belirtir.|  
 |[equal_range](#equal_range)|Belirtilen bir anahtarla eşleşen aralığı bulur.|  
 |[silme](#erase)|Belirtilen konumlardaki öğeleri kaldırır.|  
-|[Bul](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
+|[find](#find)|Belirtilen bir anahtarla eşleşen bir öğeyi bulur.|  
 |[get_allocator](#get_allocator)|Depolanan ayırıcı nesnesini alır.|  
 |[hash_function](#hash)|Depolanan karma işlevi nesnesini alır.|  
-|[Ekle](#insert)|Öğeleri ekler.|  
+|[insert](#insert)|Öğeleri ekler.|  
 |[key_eq](#key_eq)|Depolanan karşılaştırma işlevi nesnesini alır.|  
 |[load_factor](#load_factor)|Demet başına ortalama öğeyi sayar.|  
 |[max_bucket_count](#max_bucket_count)|En yüksek demet sayısını alır.|  
 |[max_load_factor](#max_load_factor)|Demet başına en yüksek öğe sayısını alır veya ayarlar.|  
 |[max_size](#max_size)|Denetlenen dizinin en büyük boyutunu alır.|  
 |[rehash](#rehash)|Karma tabloyu yeniden oluşturur.|  
-|[boyutu](#size)|Öğe sayısını sayar.|  
-|[değiştirme](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|  
+|[Boyutu](#size)|Öğe sayısını sayar.|  
+|[Değiştirme](#swap)|İki kapsayıcının içeriğinin yerini değiştirir.|  
 |[unordered_multimap](#unordered_multimap)|Bir kapsayıcı nesnesi oluşturur.|  
   
 |||  
 |-|-|  
 |İşleç|Açıklama|  
-|[unordered_multimap::operator =](#op_eq)|Bir karma tabloya kopyalar.|  
+|[unordered_multimap::operator=](#op_eq)|Bir karma tabloya kopyalar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Nesne denetlediği iki depolanan nesneler, bir karşılaştırma işlevi nesne türü çağırarak dizisi siparişleri [unordered_multimap::key_equal](#key_equal) ve karma işlevini nesne türü [unordered_multimap::hasher](#hasher). Üye işlevini çağırarak ilk saklı nesneye erişim [unordered_multimap::key_eq](#key_eq)`()`; ve üye işlevini çağırarak ikinci saklı nesneye erişim [unordered_multimap::hash_ işlev](#hash)`()`. Özellikle, tüm değerler için `X` ve `Y` türü `Key`, çağrı `key_eq()(X, Y)` yalnızca iki bağımsız değişken değerleri eşdeğer sıralama varsa true değerini döndürür; çağrı `hash_function()(keyval)` bir dağıtım türü değerlerinverir`size_t`. Şablon sınıfı aksine [unordered_map sınıfı](../standard-library/unordered-map-class.md), şablon sınıfın bir nesnesi `unordered_multimap` emin olun değil `key_eq()(X, Y)` her zaman denetimli dizisi için herhangi iki öğeleri false olur. (Anahtarlarının benzersiz olması gerekmez.)  
@@ -252,7 +255,7 @@ class unordered_multimap;
   
  **Namespace:** std  
   
-##  <a name="allocator_type"></a>unordered_multimap::allocator_type  
+##  <a name="allocator_type"></a>  unordered_multimap::allocator_type  
  Depolamayı yönetmek için bir ayırıcı türü.  
   
 ```  
@@ -289,7 +292,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="begin"></a>unordered_multimap::Begin  
+##  <a name="begin"></a>  unordered_multimap::Begin  
  Denetimli dizisi veya bir demet başlangıcını belirtir.  
   
 ```  
@@ -358,7 +361,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="bucket"></a>unordered_multimap::Bucket  
+##  <a name="bucket"></a>  unordered_multimap::Bucket  
  Bir anahtar değeri için demet numarasını alır.  
   
 ```  
@@ -412,7 +415,7 @@ bucket('a') == 7
 bucket_size(7) == 1  
 ```  
   
-##  <a name="bucket_count"></a>unordered_multimap::bucket_count  
+##  <a name="bucket_count"></a>  unordered_multimap::bucket_count  
  Demet sayısını alır.  
   
 ```  
@@ -498,7 +501,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="bucket_size"></a>unordered_multimap::bucket_size  
+##  <a name="bucket_size"></a>  unordered_multimap::bucket_size  
  Bir demet boyutunu alır  
   
 ```  
@@ -552,7 +555,7 @@ bucket('a') == 7
 bucket_size(7) == 1  
 ```  
   
-##  <a name="cbegin"></a>unordered_multimap::cbegin  
+##  <a name="cbegin"></a>  unordered_multimap::cbegin  
  Döndürür bir `const` aralığın ilk öğe adresleri yineleyici.  
   
 ```  
@@ -575,7 +578,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="cend"></a>unordered_multimap::cend  
+##  <a name="cend"></a>  unordered_multimap::cend  
  Döndürür bir `const` konumun yalnızca bir aralıkta son öğenin ötesinde adresleri yineleyici.  
   
 ```  
@@ -586,7 +589,7 @@ const_iterator cend() const;
  A `const` yalnızca aralığın sonunu aşan işaret İleri erişim yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cend`Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
+ `cend` Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
   
  Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `end()` ve `cend()`.  
   
@@ -600,7 +603,7 @@ auto i2 = Container.cend();
   
  Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
   
-##  <a name="clear"></a>unordered_multimap::Clear  
+##  <a name="clear"></a>  unordered_multimap::Clear  
  Tüm öğeleri kaldırır.  
   
 ```  
@@ -666,7 +669,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="const_iterator"></a>unordered_multimap::const_iterator  
+##  <a name="const_iterator"></a>  unordered_multimap::const_iterator  
  Denetlenen dizi için bir sabit yineleyici türü.  
   
 ```  
@@ -708,7 +711,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="const_local_iterator"></a>unordered_multimap::const_local_iterator  
+##  <a name="const_local_iterator"></a>  unordered_multimap::const_local_iterator  
  Denetlenen dizi için bir sabit demet yineleyici türü.  
   
 ```  
@@ -755,7 +758,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="const_pointer"></a>unordered_multimap::const_pointer  
+##  <a name="const_pointer"></a>  unordered_multimap::const_pointer  
  Bir öğe için sabit bir işaretçi türü.  
   
 ```  
@@ -800,7 +803,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="const_reference"></a>unordered_multimap::const_reference  
+##  <a name="const_reference"></a>  unordered_multimap::const_reference  
  Bir öğe için sabit bir başvuru türü.  
   
 ```  
@@ -845,7 +848,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="count"></a>unordered_multimap::Count  
+##  <a name="count"></a>  unordered_multimap::Count  
  Belirtilen bir anahtar ile eşleşen öğe sayısını bulur.  
   
 ```  
@@ -898,7 +901,7 @@ count('b') == 1
 count('C') == 0  
 ```  
   
-##  <a name="difference_type"></a>unordered_multimap::difference_type  
+##  <a name="difference_type"></a>  unordered_multimap::difference_type  
  İki öğe arasındaki işaretli mesafenin türü.  
   
 ```  
@@ -956,7 +959,7 @@ end()-begin() == 3
 begin()-end() == -3  
 ```  
   
-##  <a name="emplace"></a>unordered_multimap::emplace  
+##  <a name="emplace"></a>  unordered_multimap::emplace  
  Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.  
   
 ```  
@@ -983,7 +986,7 @@ iterator emplace(Args&&... args);
   
  Kod örneği için bkz: [multimap::emplace](../standard-library/multimap-class.md#emplace).  
   
-##  <a name="emplace_hint"></a>unordered_multimap::emplace_hint  
+##  <a name="emplace_hint"></a>  unordered_multimap::emplace_hint  
  Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.  
   
 ```  
@@ -1013,7 +1016,7 @@ iterator emplace_hint(
   
  Kod örneği için bkz: [map::emplace_hint](../standard-library/map-class.md#emplace_hint).  
   
-##  <a name="empty"></a>unordered_multimap::empty  
+##  <a name="empty"></a>  unordered_multimap::empty  
  Bir öğe olup olmadığını sınar.  
   
 ```  
@@ -1079,7 +1082,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="end"></a>unordered_multimap::End  
+##  <a name="end"></a>  unordered_multimap::End  
  Denetlenen dizinin bitişini belirtir.  
   
 ```  
@@ -1150,7 +1153,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="equal_range"></a>unordered_multimap::equal_range  
+##  <a name="equal_range"></a>  unordered_multimap::equal_range  
  Belirtilen bir anahtarla eşleşen aralığı bulur.  
   
 ```  
@@ -1219,7 +1222,7 @@ equal_range('x'):
 equal_range('b'): [b, 2]  
 ```  
   
-##  <a name="erase"></a>unordered_multimap::ERASE  
+##  <a name="erase"></a>  unordered_multimap::ERASE  
  Bir öğenin veya bir dizi öğeleri unordered_multimap belirtilen konumlardan kaldırır veya belirtilen anahtar eşleşen öğeleri kaldırır.  
   
 ```  
@@ -1255,7 +1258,7 @@ size_type erase(
 ### <a name="remarks"></a>Açıklamalar  
  Kod örneği için bkz: [map::erase](../standard-library/map-class.md#erase).  
   
-##  <a name="find"></a>unordered_multimap::Find  
+##  <a name="find"></a>  unordered_multimap::Find  
  Belirtilen bir anahtarla eşleşen bir öğeyi bulur.  
   
 ```  
@@ -1313,7 +1316,7 @@ find('A') == false
 find('b') == true: [b, 2]  
 ```  
   
-##  <a name="get_allocator"></a>unordered_multimap::get_allocator  
+##  <a name="get_allocator"></a>  unordered_multimap::get_allocator  
  Depolanan ayırıcı nesnesini alır.  
   
 ```  
@@ -1350,7 +1353,7 @@ int main()
 al == std::allocator() is true  
 ```  
   
-##  <a name="hash"></a>unordered_multimap::hash_function  
+##  <a name="hash"></a>  unordered_multimap::hash_function  
  Depolanan karma işlevi nesnesini alır.  
   
 ```  
@@ -1387,7 +1390,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086  
 ```  
   
-##  <a name="hasher"></a>unordered_multimap::hasher  
+##  <a name="hasher"></a>  unordered_multimap::hasher  
  Karma işlevin türü.  
   
 ```  
@@ -1424,7 +1427,7 @@ hfn('a') == 1630279
 hfn('b') == 1647086  
 ```  
   
-##  <a name="insert"></a>unordered_multimap::insert  
+##  <a name="insert"></a>  unordered_multimap::insert  
  Bir öğenin veya öğe aralığı bir unordered_multimap ekler.  
   
 ```  
@@ -1499,7 +1502,7 @@ IList);
   
  Kod örneği için bkz: [multimap::insert](../standard-library/multiset-class.md#insert).  
   
-##  <a name="iterator"></a>unordered_multimap::iterator  
+##  <a name="iterator"></a>  unordered_multimap::iterator  
  Denetlenen dizi için bir yineleyici türü.  
   
 ```  
@@ -1541,7 +1544,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="key_eq"></a>unordered_multimap::key_eq  
+##  <a name="key_eq"></a>  unordered_multimap::key_eq  
  Depolanan karşılaştırma işlevi nesnesini alır.  
   
 ```  
@@ -1580,7 +1583,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false  
 ```  
   
-##  <a name="key_equal"></a>unordered_multimap::key_equal  
+##  <a name="key_equal"></a>  unordered_multimap::key_equal  
  Karşılaştırma işlevinin türü.  
   
 ```  
@@ -1619,7 +1622,7 @@ cmpfn('a', 'a') == true
 cmpfn('a', 'b') == false  
 ```  
   
-##  <a name="key_type"></a>unordered_multimap::key_type  
+##  <a name="key_type"></a>  unordered_multimap::key_type  
  Bir sıralama anahtarının türü.  
   
 ```  
@@ -1673,7 +1676,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="load_factor"></a>unordered_multimap::load_factor  
+##  <a name="load_factor"></a>  unordered_multimap::load_factor  
  Demet başına ortalama öğeyi sayar.  
   
 ```  
@@ -1740,7 +1743,7 @@ int main()
   
 ```  
   
-##  <a name="local_iterator"></a>unordered_multimap::local_iterator  
+##  <a name="local_iterator"></a>  unordered_multimap::local_iterator  
  Bir demet yineleyici türü.  
   
 ```  
@@ -1787,7 +1790,7 @@ int main()
 [a, 1]  
 ```  
   
-##  <a name="mapped_type"></a>unordered_multimap::mapped_type  
+##  <a name="mapped_type"></a>  unordered_multimap::mapped_type  
  Her bir anahtar ile ilişkili bir eşlenen değer türü.  
   
 ```  
@@ -1841,7 +1844,7 @@ int main()
 [d, 4] [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="max_bucket_count"></a>unordered_multimap::max_bucket_count  
+##  <a name="max_bucket_count"></a>  unordered_multimap::max_bucket_count  
  En yüksek demet sayısını alır.  
   
 ```  
@@ -1927,7 +1930,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="max_load_factor"></a>unordered_multimap::max_load_factor  
+##  <a name="max_load_factor"></a>  unordered_multimap::max_load_factor  
  Demet başına en yüksek öğe sayısını alır veya ayarlar.  
   
 ```  
@@ -2020,7 +2023,7 @@ max_load_factor() == 0.1
   
 ```  
   
-##  <a name="max_size"></a>unordered_multimap::max_size  
+##  <a name="max_size"></a>  unordered_multimap::max_size  
  Denetlenen dizinin en büyük boyutunu alır.  
   
 ```  
@@ -2054,7 +2057,7 @@ int main()
 max_size() == 536870911  
 ```  
   
-##  <a name="op_eq"></a>unordered_multimap::operator =  
+##  <a name="op_eq"></a>  unordered_multimap::operator =  
  Bir karma tabloya kopyalar.  
   
 ```  
@@ -2110,7 +2113,7 @@ int main( )
    }  
 ```  
   
-##  <a name="pointer"></a>unordered_multimap::pointer  
+##  <a name="pointer"></a>  unordered_multimap::pointer  
  Bir öğe için bir işaretçi türü.  
   
 ```  
@@ -2155,7 +2158,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="reference"></a>unordered_multimap::Reference  
+##  <a name="reference"></a>  unordered_multimap::Reference  
  Bir öğe için bir başvuru türü.  
   
 ```  
@@ -2200,7 +2203,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="rehash"></a>unordered_multimap::rehash  
+##  <a name="rehash"></a>  unordered_multimap::rehash  
  Karma tabloyu yeniden oluşturur.  
   
 ```  
@@ -2276,7 +2279,7 @@ load_factor() == 0.0234375
 max_load_factor() == 0.1  
 ```  
   
-##  <a name="size"></a>unordered_multimap::size  
+##  <a name="size"></a>  unordered_multimap::size  
  Öğe sayısını sayar.  
   
 ```  
@@ -2342,7 +2345,7 @@ size == 2
 empty() == false  
 ```  
   
-##  <a name="size_type"></a>unordered_multimap::size_type  
+##  <a name="size_type"></a>  unordered_multimap::size_type  
  İki öğe arasındaki işaretsiz bir mesafenin türü.  
   
 ```  
@@ -2377,7 +2380,7 @@ int main()
 size == 0  
 ```  
   
-##  <a name="swap"></a>unordered_multimap::Swap  
+##  <a name="swap"></a>  unordered_multimap::Swap  
  İki kapsayıcının içeriğinin yerini değiştirir.  
   
 ```  
@@ -2447,7 +2450,7 @@ int main()
 [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="unordered_multimap"></a>unordered_multimap::unordered_multimap  
+##  <a name="unordered_multimap"></a>  unordered_multimap::unordered_multimap  
  Bir kapsayıcı nesnesi oluşturur.  
   
 ```  
@@ -2647,7 +2650,7 @@ int main()
  [c, 3] [b, 2] [a, 1]  
 ```  
   
-##  <a name="value_type"></a>unordered_multimap::value_type  
+##  <a name="value_type"></a>  unordered_multimap::value_type  
  Öğenin türü.  
   
 ```  
@@ -2702,7 +2705,7 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< unordered_map >](../standard-library/unordered-map.md)   
+ [<unordered_map>](../standard-library/unordered-map.md)   
  [Kapsayıcıları](../cpp/containers-modern-cpp.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)

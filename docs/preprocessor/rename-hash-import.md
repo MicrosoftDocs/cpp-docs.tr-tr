@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: Rename
-dev_langs: C++
-helpviewer_keywords: rename attribute
+ms.topic: reference
+f1_keywords:
+- Rename
+dev_langs:
+- C++
+helpviewer_keywords:
+- rename attribute
 ms.assetid: 5c5c6153-1087-4b7b-87fb-fc59b90b9975
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fe5efd48867d5911a6512c32c3e91d80201d03ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6391f3d88a081da6e01b115389b1a9b986ae6c0f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rename-import"></a>rename (#import)
 **C++ özel**  
@@ -62,8 +67,8 @@ rename("GetMyParent","GetMyParentX")
   
  Bunun nedeni, ad `GetMyParent` elde edilen tür kitaplığı üstbilgi dosyası, yalnızca oluşur.  
   
- **Son C++ özel**  
+ Son C++ özel  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - streambuf/std::ostreambuf_iterator
 - iterator/std::ostreambuf_iterator::char_type
@@ -14,7 +15,8 @@ f1_keywords:
 - iterator/std::ostreambuf_iterator::streambuf_type
 - iterator/std::ostreambuf_iterator::traits_type
 - iterator/std::ostreambuf_iterator::failed
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::ostreambuf_iterator [C++]
 - std::ostreambuf_iterator [C++], char_type
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::ostreambuf_iterator [C++], traits_type
 - std::ostreambuf_iterator [C++], failed
 ms.assetid: dad1e624-2f45-4e94-8887-a885e95f9071
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c94ed10a0b97820c5a787e4350d39dcf6286fee7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 695b8415cd5958d200ba9120e28bebd543614f24
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ostreambufiterator-class"></a>ostreambuf_iterator Sınıfı
 Şablon sınıfı ostreambuf_iterator ardışık karakteri öğeleri ile ayıklama çıktı akışı üzerine yazar bir çıktı yineleyici nesneyi tanımlayan **işleci >>**. `ostreambuf_iterator`s olanlardan farklı [ostream_iterator sınıfı](../standard-library/ostream-iterator-class.md) çıkış akışı eklenen nesne türü, genel bir tür yerine karaktere sahip içinde.  
@@ -72,22 +75,22 @@ template <class CharType = char class Traits = char_traits <CharType>>
   
 |||  
 |-|-|  
-|[başarısız oldu](#failed)|Çıkış akışı arabelleğine ekleme hatasını sınar.|  
+|[Başarısız oldu](#failed)|Çıkış akışı arabelleğine ekleme hatasını sınar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x`.|  
-|[operator ++](#op_add_add)|Döndüren bir işlevsel artış işleci bir `ostreambuf_iterator` işlemi çağrılmadan önce de aynı nesneye onu ele.|  
-|[işleç =](#op_eq)|İşleç, ilişkili akış ara belleğine bir karakter ekler.|  
+|[operator*](#op_star)|Çıktı yineleyici ifade uygulamak için kullanılan bilgileri başvuru kaldırma işleci * `i`  =  `x`.|  
+|[operator++](#op_add_add)|Döndüren bir işlevsel artış işleci bir `ostreambuf_iterator` işlemi çağrılmadan önce de aynı nesneye onu ele.|  
+|[operator=](#op_eq)|İşleç, ilişkili akış ara belleğine bir karakter ekler.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yineleyici >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>ostreambuf_iterator::char_type  
+##  <a name="char_type"></a>  ostreambuf_iterator::char_type  
  Karakter türü için sağlayan bir türü `ostreambuf_iterator`.  
   
 ```
@@ -135,7 +138,7 @@ The characters written to the output stream
 *\  
 ```  
   
-##  <a name="failed"></a>ostreambuf_iterator::Failed  
+##  <a name="failed"></a>  ostreambuf_iterator::failed  
  Çıkış akışı arabelleğine ekleme hatasını sınar.  
   
 ```
@@ -183,7 +186,7 @@ No insertions failed.
 *\  
 ```  
   
-##  <a name="op_star"></a>ostreambuf_iterator::operator *  
+##  <a name="op_star"></a>  ostreambuf_iterator::operator*  
  Çıktı yineleyici ifade uygulamak için kullanılan bir işlevsel bilgileri başvuru kaldırma işleci \* *ı* = *x*.  
   
 ```
@@ -227,7 +230,7 @@ OUT
 *\  
 ```  
   
-##  <a name="op_add_add"></a>ostreambuf_iterator::operator ++  
+##  <a name="op_add_add"></a>  ostreambuf_iterator::operator++  
  Ostream yineleyici işlemi önce ele aynı karakter döndürür işlevsel artış işleci çağrıldı.  
   
 ```
@@ -272,7 +275,7 @@ OUT
 *\  
 ```  
   
-##  <a name="op_eq"></a>ostreambuf_iterator::operator =  
+##  <a name="op_eq"></a>  ostreambuf_iterator::operator=  
  İşleç, ilişkili akış ara belleğine bir karakter ekler.  
   
 ```
@@ -320,7 +323,7 @@ OUT
 *\  
 ```  
   
-##  <a name="ostreambuf_iterator_ostreambuf_iterator"></a>ostreambuf_iterator::ostreambuf_iterator  
+##  <a name="ostreambuf_iterator_ostreambuf_iterator"></a>  ostreambuf_iterator::ostreambuf_iterator  
  Oluşturan bir `ostreambuf_iterator` karakter çıkış akışına yazmak için başlatıldı.  
   
 ```
@@ -373,7 +376,7 @@ These characters are being written to the output stream.
 *\  
 ```  
   
-##  <a name="ostreambuf_iterator_ostream_type"></a>ostreambuf_iterator::ostream_type  
+##  <a name="ostreambuf_iterator_ostream_type"></a>  ostreambuf_iterator::ostream_type  
  Akış türü için sağlayan bir türü `ostream_iterator`.  
   
 ```
@@ -386,7 +389,7 @@ typedef basicOstream<CharType, Traits> ostream_type;
 ### <a name="example"></a>Örnek  
   Bkz: [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator) bildirme ve kullanma konusunda bir örnek için `ostream_type`.  
   
-##  <a name="streambuf_type"></a>ostreambuf_iterator::streambuf_type  
+##  <a name="streambuf_type"></a>  ostreambuf_iterator::streambuf_type  
  Akış türü için sağlayan bir türü `ostreambuf_iterator`.  
   
 ```
@@ -399,7 +402,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 ### <a name="example"></a>Örnek  
   Bkz: [ostreambuf_iterator](#ostreambuf_iterator_ostreambuf_iterator) bildirme ve kullanma konusunda bir örnek için `streambuf_type`.  
   
-##  <a name="traits_type"></a>ostreambuf_iterator::traits_type  
+##  <a name="traits_type"></a>  ostreambuf_iterator::traits_type  
  Karakter nitelikler tür sağlayan bir tür `ostream_iterator`.  
   
 ```
@@ -448,7 +451,7 @@ The characters written to the output stream
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Yineleyici >](../standard-library/iterator.md)   
+ [\<iterator>](../standard-library/iterator.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

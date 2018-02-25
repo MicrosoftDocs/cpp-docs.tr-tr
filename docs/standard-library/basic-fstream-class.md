@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - fstream/std::basic_fstream
 - fstream/std::basic_fstream::close
@@ -14,7 +15,8 @@ f1_keywords:
 - fstream/std::basic_fstream::open
 - fstream/std::basic_fstream::rdbuf
 - fstream/std::basic_fstream::swap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::basic_fstream [C++]
 - std::basic_fstream [C++], close
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::basic_fstream [C++], rdbuf
 - std::basic_fstream [C++], swap
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fc53ce776dd494c4af312c16d751f883afecc69d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a518b3c39b2f61563a4f16079fb803815ee62793
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicfstream-class"></a>basic_fstream Sınıfı
 Ekleme ve çıkarma öğelerinin denetleyen bir nesne sınıfının bir Akış Arabellek kullanarak ve kodlanmış nesneleri açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, türündekiöğelerile`Elem`, olan karakter nitelikler sınıfı tarafından belirlenir `Tr`.  
@@ -104,14 +107,14 @@ Writing to a basic_fstream object...
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|  
 |[open](#open)|Bir dosyayı açar.|  
 |[rdbuf](#rdbuf)|Saklı Akış Arabellek türü işaretçinin adresini döndürür [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>.|  
-|[değiştirme](#swap)|Bu nesne içeriği başka bir içerikle alış verişleri `basic_fstream` nesnesi.|  
+|[Değiştirme](#swap)|Bu nesne içeriği başka bir içerikle alış verişleri `basic_fstream` nesnesi.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<fstream >  
   
  **Namespace:** std  
   
-##  <a name="basic_fstream"></a>basic_fstream::basic_fstream  
+##  <a name="basic_fstream"></a>  basic_fstream::basic_fstream  
  Türünde bir nesne oluşturur `basic_fstream`.  
   
 ```  
@@ -150,7 +153,7 @@ basic_fstream(basic_fstream&& right);
 ### <a name="example"></a>Örnek  
   Bkz: [streampos](../standard-library/ios-typedefs.md#streampos) kullanan bir örnek `basic_fstream`.  
   
-##  <a name="close"></a>basic_fstream::Close  
+##  <a name="close"></a>  basic_fstream::close  
  Bir dosyayı kapatır.  
   
 ```  
@@ -163,7 +166,7 @@ void close();
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) nasıl kullanılacağına ilişkin bir örnek **kapatmak**.  
   
-##  <a name="is_open"></a>basic_fstream::is_open  
+##  <a name="is_open"></a>  basic_fstream::is_open  
  Bir dosyanın açık olup olmadığını belirler.  
   
 ```  
@@ -179,7 +182,7 @@ bool is_open() const;
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open) nasıl kullanılacağına ilişkin bir örnek `is_open`.  
   
-##  <a name="open"></a>basic_fstream::Open  
+##  <a name="open"></a>  basic_fstream::open  
  Bir dosyayı açar.  
   
 ```  
@@ -218,7 +221,7 @@ void open(
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) nasıl kullanılacağına ilişkin bir örnek **açmak**.  
   
-##  <a name="op_eq"></a>basic_fstream::operator =  
+##  <a name="op_eq"></a>  basic_fstream::operator=  
  Bu nesne için bir belirtilen stream nesnesi içerik atar. Bir kopyasını bırakmaz arkasındaki bir rvalue içerir taşıma atama budur.  
   
 ```  
@@ -235,7 +238,7 @@ basic_fstream& operator=(basic_fstream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci içeriğini kullanarak nesne içeriğini değiştirir `right`, rvalue başvuru olarak işlem görür.  
   
-##  <a name="rdbuf"></a>basic_fstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_fstream::rdbuf  
  Saklı Akış Arabellek türü işaretçinin adresini döndürür [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**>.  
   
 ```  
@@ -248,7 +251,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) nasıl kullanılacağına ilişkin bir örnek `rdbuf`.  
   
-##  <a name="swap"></a>basic_fstream::Swap  
+##  <a name="swap"></a>  basic_fstream::Swap  
  İki içeriğini alış verişleri `basic_fstream` nesneleri.  
   
 ```  

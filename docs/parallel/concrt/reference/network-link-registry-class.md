@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - network_link_registry
 - AGENTS/concurrency::network_link_registry
@@ -15,19 +16,22 @@ f1_keywords:
 - AGENTS/concurrency::network_link_registry::contains
 - AGENTS/concurrency::network_link_registry::count
 - AGENTS/concurrency::network_link_registry::remove
-dev_langs: C++
-helpviewer_keywords: network_link_registry class
+dev_langs:
+- C++
+helpviewer_keywords:
+- network_link_registry class
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 116c36b5c0b990672a455e1419c92d60ec992845
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4a029d02e5c40ff38a837ab8096a8b4713007ed5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry Sınıfı
 `network_link_registry` Özet temel sınıf kaynak ve hedef blokları arasındaki bağlantıları yönetir.  
@@ -59,9 +63,9 @@ class network_link_registry;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[add](#add)|Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.|  
-|[başlayın](#begin)|Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.|  
+|[Başlangıç](#begin)|Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.|  
 |[içerir](#contains)|Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesnesi.|  
-|[sayısı](#count)|Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.|  
+|[Sayısı](#count)|Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.|  
 |[remove](#remove)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -75,7 +79,7 @@ class network_link_registry;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="add"></a>ekleme 
+##  <a name="add"></a> Ekleme 
 
  Türetilen bir sınıfta geçersiz kılındığında, bir bağlantı ekler `network_link_registry` nesnesi.  
   
@@ -87,7 +91,7 @@ virtual void add(_EType _Link) = 0;
  `_Link`  
  Eklenecek bir bloğu için bir işaretçi.  
   
-##  <a name="begin"></a>başlayın 
+##  <a name="begin">Başlangıç</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, yineleyici ilk öğe döndürür `network_link_registry` nesnesi.  
   
@@ -101,7 +105,7 @@ virtual iterator begin() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Yineleyici son durumu tarafından belirtilen bir `NULL` bağlantı.  
   
-##  <a name="contains"></a>içerir 
+##  <a name="contains">içerir</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, arar `network_link_registry` belirtilen bloğu için nesnesi.  
   
@@ -114,9 +118,9 @@ virtual bool contains(_EType _Link) = 0;
  İçin de Aranmakta olan bloğu için bir işaretçi `network_link_registry` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Blok bulunduysa `false` Aksi takdirde.  
+ `true` Blok bulunduysa `false` Aksi takdirde.  
   
-##  <a name="count"></a>sayısı 
+##  <a name="count">Sayısı</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, öğelerin sayısını döndürür `network_link_registry` nesnesi.  
   
@@ -127,7 +131,7 @@ virtual size_t count() = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğelerin sayısı `network_link_registry` nesnesi.  
   
-##  <a name="remove"></a>Kaldır 
+##  <a name="remove"></a> Kaldır 
 
  Türetilen bir sınıfta geçersiz kılındığında, belirtilen bloğundan kaldırır `network_link_registry` nesnesi.  
   
@@ -140,7 +144,7 @@ virtual bool remove(_EType _Link) = 0;
  Bir blok, kaldırılması için bir işaretçi bulundu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
+ `true` bağlantı bulundu ve kaldırıldı, `false` Aksi takdirde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

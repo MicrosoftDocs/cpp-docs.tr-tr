@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __vmx_vmclear
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __vmx_vmclear
+dev_langs:
+- C++
 helpviewer_keywords:
 - VMCLEAR instruction
 - __vmx_vmclear intrinsic
 ms.assetid: e3eb98e4-50fc-4c93-9bac-340fd1f0a466
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: af15108bfa2bce0af3f442d5fdd6dceddbd6cca9
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 323fcf37ee9ecc9e62abe5d6fdc30944e58862f8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Belirtilen sanal makine denetim yapısı (Windows VMCS) başlatır ve başlatma durumuna ayarlar `Clear`.  
   
@@ -41,7 +45,7 @@ unsigned char __vmx_vmclear(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`VmcsPhysicalAddress`|Bir işaretçi bir 64-bit bellek konumuna temizlemek için Windows VMCS fiziksel adresini içerir.|  
+|[in] `VmcsPhysicalAddress`|Bir işaretçi bir 64-bit bellek konumuna temizlemek için Windows VMCS fiziksel adresini içerir.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - concrt/concurrency::AgentEventGuid
 - concrt/concurrency::COOPERATIVE_TIMEOUT_INFINITE
@@ -19,18 +19,20 @@ f1_keywords:
 - concrt/concurrency::ResourceManagerEventGuid
 - concrt/concurrency::ScheduleGroupEventGuid
 - concrt/concurrency::VirtualProcessorEventGuid
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ae7ceb640e7b92829e4134350a6e6c97747bfd77
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 83c9629feed07cee5bd13138f3def89251c081cb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-constants"></a>Eşzamanlılık ad alanı sabitleri
 ||||  
@@ -39,17 +41,17 @@ ms.lasthandoff: 12/21/2017
 |[COOPERATIVE_WAIT_TIMEOUT](#cooperative_wait_timeout)|[ChoreEventGuid](#choreeventguid)|[ConcRTEventGuid](#concrteventguid)|  
 |[ConcRT_ProviderGuid](#concrt_providerguid)|[ContextEventGuid](#contexteventguid)|[INHERIT_THREAD_PRIORITY](#inherit_thread_priority)|  
 |[LockEventGuid](#lockeventguid)|[MaxExecutionResources](#maxexecutionresources)|[PPLParallelForEventGuid](#pplparallelforeventguid)|  
-|[PPLParallelForeachEventGuid](#pplparallelforeacheventguid)|[Pplparallelınvokeeventguid](#pplparallelinvokeeventguid)|[ResourceManagerEventGuid](#resourcemanagereventguid)|  
+|[PPLParallelForeachEventGuid](#pplparallelforeacheventguid)|[PPLParallelInvokeEventGuid](#pplparallelinvokeeventguid)|[ResourceManagerEventGuid](#resourcemanagereventguid)|  
 |[ScheduleGroupEventGuid](#schedulegroupeventguid)|[SchedulerEventGuid](#schedulereventguid)|[VirtualProcessorEventGuid](#virtualprocessoreventguid)|  
   
-##  <a name="agenteventguid"></a>AgentEventGuid  
+##  <a name="agenteventguid"></a>  AgentEventGuid  
  Bir kategori açıklayan ETW olayları Aracılar Kitaplığı'nda eşzamanlılık çalışma zamanı tarafından tetiklenen GUID ({B9B5B78C-0713-4898-A21A-C67949DCED07}).  
   
 ```
 const __declspec(selectany) GUID AgentEventGuid = {0xb9b5b78c, 0x713, 0x4898, { 0xa2, 0x1a, 0xc6, 0x79, 0x49, 0xdc, 0xed, 0x7 } };
 ```  
   
-##  <a name="choreeventguid"></a>ChoreEventGuid  
+##  <a name="choreeventguid"></a>  ChoreEventGuid  
  Bir kategori ETW olayları tanımlayan GUID işlerinden veya görevler doğrudan ilgili eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -60,7 +62,7 @@ const __declspec(selectany) GUID ChoreEventGuid =
 ### <a name="remarks"></a>Açıklamalar  
  Bu kategori olayların eşzamanlılık çalışma zamanı tarafından tetiklenen değil.  
   
-##  <a name="concrt_providerguid"></a>ConcRT_ProviderGuid  
+##  <a name="concrt_providerguid"></a>  ConcRT_ProviderGuid  
  ETW sağlayıcı eşzamanlılık çalışma zamanı için GUID.  
   
 ```
@@ -68,14 +70,14 @@ const __declspec(selectany) GUID ConcRT_ProviderGuid =
     { 0xF7B697A3, 0x4DB5, 0x4d3b, { 0xBE, 0x71, 0xC4, 0xD2, 0x84, 0xE6, 0x59, 0x2F } };
 ```  
   
-##  <a name="concrt_rm_version_1"></a>CONCRT_RM_VERSION_1  
+##  <a name="concrt_rm_version_1"></a>  CONCRT_RM_VERSION_1  
  Visual Studio 2010'da tanımlanan Resource Manager arabirimi desteği gösterir.  
   
 ```
 const unsigned int CONCRT_RM_VERSION_1 = 0x00010000;
 ```  
   
-##  <a name="concrteventguid"></a>ConcRTEventGuid  
+##  <a name="concrteventguid"></a>  ConcRTEventGuid  
  Bir kategori ETW olayları tanımlayan GUID başka bir kategoriye göre daha açık belirtmek gerekirse açıklanmayan eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -86,21 +88,21 @@ const __declspec(selectany) GUID ConcRTEventGuid =
 ### <a name="remarks"></a>Açıklamalar  
  Bu kategori olayların eşzamanlılık çalışma zamanı tarafından tetiklenen değil.  
   
-##  <a name="cooperative_timeout_infinite"></a>COOPERATIVE_TIMEOUT_INFINITE  
+##  <a name="cooperative_timeout_infinite"></a>  COOPERATIVE_TIMEOUT_INFINITE  
  Bekleme zaman aşımı hiçbir zaman gerektiğini belirten değer.  
   
 ```
 const unsigned int COOPERATIVE_TIMEOUT_INFINITE = (unsigned int)-1;
 ```  
   
-##  <a name="cooperative_wait_timeout"></a>COOPERATIVE_WAIT_TIMEOUT  
+##  <a name="cooperative_wait_timeout"></a>  COOPERATIVE_WAIT_TIMEOUT  
  Bekleme zaman aşımına uğradığını belirten değer.  
   
 ```
 const size_t COOPERATIVE_WAIT_TIMEOUT = SIZE_MAX;
 ```  
   
-##  <a name="contexteventguid"></a>ContextEventGuid  
+##  <a name="contexteventguid"></a>  ContextEventGuid  
  Bir kategori ETW olayları tanımlayan GUID içerikleri doğrudan ilgili eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -108,14 +110,14 @@ const __declspec(selectany) GUID ContextEventGuid =
     { 0x5727A00F, 0x50BE, 0x4519, { 0x82, 0x56, 0xF7, 0x69, 0x98, 0x71, 0xFE, 0xCB } };
 ```  
   
-##  <a name="inherit_thread_priority"></a>INHERIT_THREAD_PRIORITY  
+##  <a name="inherit_thread_priority"></a>  INHERIT_THREAD_PRIORITY  
  Özel ilke anahtar değeri `ContextPriority` gösteren tüm bağlamlarda Zamanlayıcı iş parçacığı önceliği Zamanlayıcı oluşturulan iş parçacığının aynı olmalıdır.  
   
 ```
 const unsigned int INHERIT_THREAD_PRIORITY = 0x0000F000;
 ```  
   
-##  <a name="lockeventguid"></a>LockEventGuid  
+##  <a name="lockeventguid"></a>  LockEventGuid  
  Bir kategori ETW olayları tanımlayan GUID kilitleri doğrudan ilgili eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -126,14 +128,14 @@ const __declspec(selectany) GUID LockEventGuid =
 ### <a name="remarks"></a>Açıklamalar  
  Bu kategori olayların eşzamanlılık çalışma zamanı tarafından tetiklenen değil.  
   
-##  <a name="maxexecutionresources"></a>MaxExecutionResources  
+##  <a name="maxexecutionresources"></a>  MaxExecutionResources  
  İlke anahtarları için özel değeri `MinConcurrency` ve `MaxConcurrency`. Varsayılan olarak diğer kısıtlamaları olmadığında makinede donanım iş parçacığı sayısı.  
   
 ```
 const unsigned int MaxExecutionResources = 0xFFFFFFFF;
 ```  
   
-##  <a name="pplparallelforeventguid"></a>PPLParallelForEventGuid  
+##  <a name="pplparallelforeventguid"></a>  PPLParallelForEventGuid  
  Bir kategori kullanımı için doğrudan ilgili eşzamanlılık çalışma zamanı tarafından ETW olayları tanımlayan GUID harekete `parallel_for` işlevi.  
   
 ```
@@ -141,7 +143,7 @@ const __declspec(selectany) GUID PPLParallelForEventGuid =
     { 0x31c8da6b, 0x6165, 0x4042, { 0x8b, 0x92, 0x94, 0x9e, 0x31, 0x5f, 0x4d, 0x84 } };
 ```  
   
-##  <a name="pplparallelforeacheventguid"></a>PPLParallelForeachEventGuid  
+##  <a name="pplparallelforeacheventguid"></a>  PPLParallelForeachEventGuid  
  Bir kategori kullanımı için doğrudan ilgili eşzamanlılık çalışma zamanı tarafından ETW olayları tanımlayan GUID harekete `parallel_for_each` işlevi.  
   
 ```
@@ -149,7 +151,7 @@ const __declspec(selectany) GUID PPLParallelForeachEventGuid =
     { 0x5cb7d785, 0x9d66, 0x465d, { 0xba, 0xe1, 0x46, 0x11, 0x6, 0x1b, 0x54, 0x34 } };
 ```  
   
-##  <a name="pplparallelinvokeeventguid"></a>Pplparallelınvokeeventguid  
+##  <a name="pplparallelinvokeeventguid"></a>  Pplparallelınvokeeventguid  
  Bir kategori kullanımı için doğrudan ilgili eşzamanlılık çalışma zamanı tarafından ETW olayları tanımlayan GUID harekete `parallel_invoke` işlevi.  
   
 ```
@@ -157,7 +159,7 @@ const __declspec(selectany) GUID PPLParallelInvokeEventGuid =
     { 0xd1b5b133, 0xec3d, 0x49f4, { 0x98, 0xa3, 0x46, 0x4d, 0x1a, 0x9e, 0x46, 0x82 } };
 ```  
   
-##  <a name="resourcemanagereventguid"></a>ResourceManagerEventGuid  
+##  <a name="resourcemanagereventguid"></a>  ResourceManagerEventGuid  
  Bir kategori GUID ETW olayları tanımlayan kaynak yöneticisi ile doğrudan ilişkilidir eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -168,7 +170,7 @@ const __declspec(selectany) GUID ResourceManagerEventGuid =
 ### <a name="remarks"></a>Açıklamalar  
  Bu kategori olayların eşzamanlılık çalışma zamanı tarafından tetiklenen değil.  
   
-##  <a name="schedulegroupeventguid"></a>ScheduleGroupEventGuid  
+##  <a name="schedulegroupeventguid"></a>  ScheduleGroupEventGuid  
  Bir kategori ETW olayları tanımlayan GUID grupları zamanlamak için doğrudan ilgili eşzamanlılık çalışma tarafından tetiklenir.  
   
 ```
@@ -179,7 +181,7 @@ const __declspec(selectany) GUID ScheduleGroupEventGuid =
 ### <a name="remarks"></a>Açıklamalar  
  Bu kategori olayların eşzamanlılık çalışma zamanı tarafından tetiklenen değil.  
   
-##  <a name="schedulereventguid"></a>SchedulerEventGuid  
+##  <a name="schedulereventguid"></a>  SchedulerEventGuid  
  Bir kategori ETW olayları tanımlayan GUID Zamanlayıcı etkinliğe doğrudan ilgili eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```
@@ -187,7 +189,7 @@ const __declspec(selectany) GUID SchedulerEventGuid =
     { 0xE2091F8A, 0x1E0A, 0x4731, { 0x84, 0xA2, 0x0D, 0xD5, 0x7C, 0x8A, 0x52, 0x61 } };
 ```  
   
-##  <a name="virtualprocessoreventguid"></a>VirtualProcessorEventGuid  
+##  <a name="virtualprocessoreventguid"></a>  VirtualProcessorEventGuid  
  Bir kategori ETW olayları tanımlayan GUID sanal işlemciye doğrudan ilgili eşzamanlılık çalışma zamanı tarafından tetiklenir.  
   
 ```

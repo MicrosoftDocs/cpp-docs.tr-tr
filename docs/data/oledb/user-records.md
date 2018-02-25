@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: COLUMN_ENTRY_MAP
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- COLUMN_ENTRY_MAP
+dev_langs:
+- C++
 helpviewer_keywords:
 - rowsets [C++], accessors
 - COLUMN_ENTRY macro
@@ -21,23 +24,23 @@ helpviewer_keywords:
 - accessors [C++], static
 - BEGIN_ACCESSOR macro, example
 ms.assetid: 2de9e5eb-53ce-42b1-80fa-57d46600a80c
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8db24d5162aba3ba5f0f1e01b3b1da9c8d6ab99f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: faead3ec85fc799abd26613979f7611c9159cc9b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="user-records"></a>Kullanıcı Kayıtları
 Statik erişimci kullanmak için (öğesinden türetilen bir erişimci **CAccessor)**, bir kullanıcı kaydı, tüketici olmalıdır. Kullanıcı kaydını tanıtıcı giriş veya çıkış veri öğeleri içeren bir C++ sınıfıdır. ATL OLE DB Tüketici Sihirbazı tüketici için bir kullanıcı kaydı oluşturur. Komutları işleme gibi isteğe bağlı görevleri için kullanıcı kayıt yöntemleri ekleyebilirsiniz.  
   
- Aşağıdaki kod komutları işleyen bir kayıt örneği gösterir. Kullanıcı kaydındaki `BEGIN_COLUMN_MAP` sağlayıcıdan tüketiciye geçen veri satır kümesini temsil eder. `BEGIN_PARAM_MAP`Komut parametreleri kümesini temsil eder. Bu örnekte bir [CCommand](../../data/oledb/ccommand-class.md) komut parametrelerini işlemek için sınıf. Eşleme girdilerini veri üyeleri sınıfın her örneği için bellek bir bitişik bloğuna uzaklıkları temsil eder. `COLUMN_ENTRY` Makroları karşılık `PROVIDER_COLUMN_ENTRY` makroları sağlayıcı tarafındaki.  
+ Aşağıdaki kod komutları işleyen bir kayıt örneği gösterir. Kullanıcı kaydındaki `BEGIN_COLUMN_MAP` sağlayıcıdan tüketiciye geçen veri satır kümesini temsil eder. `BEGIN_PARAM_MAP` Komut parametreleri kümesini temsil eder. Bu örnekte bir [CCommand](../../data/oledb/ccommand-class.md) komut parametrelerini işlemek için sınıf. Eşleme girdilerini veri üyeleri sınıfın her örneği için bellek bir bitişik bloğuna uzaklıkları temsil eder. `COLUMN_ENTRY` Makroları karşılık `PROVIDER_COLUMN_ENTRY` makroları sağlayıcı tarafındaki.  
   
  Hakkında daha fazla bilgi için **COLUMN_MAP** ve **PARAM_MAP** makrolar bkz [OLE DB Tüketici Şablonları için makrolar](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md).  
   

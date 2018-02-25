@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: exception/std::bad_exception
-dev_langs: C++
-helpviewer_keywords: bad_exception class
+ms.topic: reference
+f1_keywords:
+- exception/std::bad_exception
+dev_langs:
+- C++
+helpviewer_keywords:
+- bad_exception class
 ms.assetid: 5ae2c4ef-c7ad-4469-8a9e-a773e86bb000
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b5b91f3019a46aa011f95ae26434456d1e41de08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 44c42ece609f971910ac8f13f96416626a6c74f9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="badexception-class"></a>bad_exception Class
 Beklenmeyen bir işleyicisinden oluşturulan bir özel durum sınıfı tanımlar.  

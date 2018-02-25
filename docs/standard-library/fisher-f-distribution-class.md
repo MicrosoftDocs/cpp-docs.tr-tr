@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::fisher_f_distribution
 - random/std::fisher_f_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::fisher_f_distribution::param_type::n
 - random/std::fisher_f_distribution::param_type::operator==
 - random/std::fisher_f_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::fisher_f_distribution [C++]
 - std::fisher_f_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: da8fba1e5be97c692b08b8e89cf36b4ae6f5ddab
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 232edd9e13d0a58f42a11d1450383adb0f7e8fb2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="fisherfdistribution-class"></a>fisher_f_distribution Sınıfı
 Fisher F dağıtım oluşturur.  
@@ -241,7 +244,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="fisher_f_distribution"></a>fisher_f_distribution::fisher_f_distribution  
+##  <a name="fisher_f_distribution"></a>  fisher_f_distribution::fisher_f_distribution  
  Dağıtım oluşturur.  
   
 ```  
@@ -260,13 +263,13 @@ explicit fisher_f_distribution(const param_type& parm);
  `param_type` Dağıtım oluşturmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:** `0.0 < m` ve`0.0 < n`  
+ **Önkoşul:** `0.0 < m` ve `0.0 < n`  
   
  İlk Oluşturucusu bir nesne oluşturur, depolanan `m` değeri tutan değeri *m* ve, depolanan `n` değeri tutan değeri  *n* .  
   
  İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>fisher_f_distribution::param_type  
+##  <a name="param_type"></a>  fisher_f_distribution::param_type  
  Dağıtım parametreleri depolar.  
   
 ```cpp  
@@ -287,11 +290,11 @@ struct param_type {
 *n*  
  `n` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:** `0.0 < m` ve`0.0 < n`  
+ **Önkoşul:** `0.0 < m` ve `0.0 < n`  
   
  Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

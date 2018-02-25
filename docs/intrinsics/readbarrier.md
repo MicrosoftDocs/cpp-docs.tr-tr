@@ -4,27 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: _ReadBarrier
-dev_langs: C++
-helpviewer_keywords: _ReadBarrier intrinsic
+ms.topic: reference
+f1_keywords:
+- _ReadBarrier
+dev_langs:
+- C++
+helpviewer_keywords:
+- _ReadBarrier intrinsic
 ms.assetid: f9e54a92-61bc-4f55-8195-b8932065a796
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c0ce47629dc26371a896085bf3094f186fd80ee1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d76238ed0c3ae66dc153a0a2066d5463a130b859
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="readbarrier"></a>_ReadBarrier  
   
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bellek erişim işlemleri çağrı noktası üzerinden sıralayabilirsiniz derleyici iyileştirmelerini sınırlar.  
   
@@ -41,7 +46,7 @@ void _ReadBarrier(void);
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_ReadBarrier`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_ReadBarrier`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

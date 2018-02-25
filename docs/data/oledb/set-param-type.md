@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - SET_PARAM_TYPE
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d9cf1ffdc9201a55fcba2cf334c350e924fda113
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0c2355b69be471f2f644a0126533bf17c4702cdc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="setparamtype"></a>SET_PARAM_TYPE
 Belirtir `COLUMN_ENTRY` izleyin makroları `SET_PARAM_TYPE` makrosu giriş, çıkış veya giriş/çıkış.  

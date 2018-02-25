@@ -4,28 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <functional>
 - functional/std::<functional>
 - std::<functional>
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 036da9664c7b61e55e1322f12de3d9c8f72c3f53
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8c50997750c58730fa870d59c913c1c06721f4da
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltfunctionalgt"></a>&lt;işlev&gt;
 Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *işlev nesneleri*— olarak da bilinen functors — ve bunların bağlayıcıları. Nesneyi tanımlayan bir türde bir işlev nesnesidir `operator()`. İşlev nesnesi bir işlev işaretçisi olabilir, ancak nesne daha tipik olarak, bir işlev çağrısı sırasında erişilebilir ek bilgi depolamak için kullanılır.  
@@ -58,15 +61,15 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
   
  Sözde işlevi `INVOKE(f, t1, t2, ..., tN)` aşağıdakilerden birini anlamına gelir:  
   
-- `(t1.*f)(t2, ..., tN)`zaman `f` gösteren bir işaretçidir sınıfının üye işlevini `T` ve `t1` türünde bir nesne `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türün bir nesneye bir başvurusu `T`.  
+- `(t1.*f)(t2, ..., tN)` zaman `f` gösteren bir işaretçidir sınıfının üye işlevini `T` ve `t1` türünde bir nesne `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türün bir nesneye bir başvurusu `T`.  
   
-- `((*t1).*f)(t2, ..., tN)`zaman `f` gösteren bir işaretçidir sınıfının üye işlevini `T` ve `t1` önceki öğede açıklanan türlerinden biri değil.  
+- `((*t1).*f)(t2, ..., tN)` zaman `f` gösteren bir işaretçidir sınıfının üye işlevini `T` ve `t1` önceki öğede açıklanan türlerinden biri değil.  
   
-- `t1.*f`zaman N 1 == ve `f` gösteren bir işaretçidir bir sınıf üyesi verilerinin `T` ve `t1` türünde bir nesne `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türün bir nesneye bir başvurusu `T`.  
+- `t1.*f` zaman N 1 == ve `f` gösteren bir işaretçidir bir sınıf üyesi verilerinin `T` ve `t1` türünde bir nesne `T` veya türünde bir nesne başvurusu `T` veya türetilmiş bir türün bir nesneye bir başvurusu `T`.  
   
-- `(*t1).*f`zaman N 1 == ve `f` gösteren bir işaretçidir bir sınıf üyesi verilerinin `T` ve `t1` önceki öğede açıklanan türlerinden biri değil.  
+- `(*t1).*f` zaman N 1 == ve `f` gösteren bir işaretçidir bir sınıf üyesi verilerinin `T` ve `t1` önceki öğede açıklanan türlerinden biri değil.  
   
-- `f(t1, t2, ..., tN)`Diğer durumlarda.  
+- `f(t1, t2, ..., tN)` Diğer durumlarda.  
   
  Sözde işlevi `INVOKE(f, t1, t2, ..., tN, R)` anlamına gelir `INVOKE(f, t1, t2, ..., tN)` örtük olarak dönüştürülebilir `R`.  
   
@@ -94,8 +97,8 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |[const_mem_fun_t](../standard-library/const-mem-fun-t-class.md)|Bir işaretçi bağımsız değişkeni ile hazırlarken birli işlevi nesnesi olarak çağrılacak bağımsız değişken almayan const bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.|  
 |[const_mem_fun1_ref_t](../standard-library/const-mem-fun1-ref-t-class.md)|Bir başvuru bağımsız değişkeni ile hazırlarken ikili işlevi nesnesi olarak çağrılacak tek bir bağımsız değişken const bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.|  
 |[const_mem_fun1_t](../standard-library/const-mem-fun1-t-class.md)|Bir işaretçi bağımsız değişkeni ile hazırlarken ikili işlevi nesnesi olarak çağrılacak tek bir bağımsız değişken const bir üye işlevi sağlayan bir bağdaştırıcı sınıfı.|  
-|[işlevi](../standard-library/function-class.md)|Aranabilir nesne saran bir sınıf.|  
-|[karma](../standard-library/hash-class.md)|Bir değer için bir karma kod hesaplar bir sınıf.|  
+|[İşlevi](../standard-library/function-class.md)|Aranabilir nesne saran bir sınıf.|  
+|[Karma](../standard-library/hash-class.md)|Bir değer için bir karma kod hesaplar bir sınıf.|  
 |[is_bind_expression](../standard-library/is-bind-expression-class.md)|Belirli bir tür çağırarak oluşturulursa, testleri bir sınıf `bind`.|  
 |[is_placeholder](../standard-library/is-placeholder-class.md)|Belirli bir türün bir yer tutucu ise testleri bir sınıf.|  
 |[mem_fun_ref_t](../standard-library/mem-fun-ref-t-class.md)|Sağlayan bir bağdaştırıcı sınıfı bir **non_const** bir başvuru bağımsız değişkeni ile hazırlarken birli işlevi nesnesi olarak çağrılacak bağımsız değişken almayan üye işlevi.|  
@@ -111,7 +114,7 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
   
 |||  
 |-|-|  
-|[bağlama](../standard-library/functional-functions.md#bind)|Bağımsız değişkenler aranabilir nesnesine bağlar.|  
+|[Bağlama](../standard-library/functional-functions.md#bind)|Bağımsız değişkenler aranabilir nesnesine bağlar.|  
 |[bind1st](../standard-library/functional-functions.md#bind1st)|İkili işlevinin ilk bağımsız değişken belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.|  
 |[bind2nd](../standard-library/functional-functions.md#bind2nd)|İkili işlevinin ikinci bağımsız değişkeni belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.|  
 |[bit_and](../standard-library/functional-functions.md#bit_and)|Bit düzeyinde mantıksal AND döndürür (ikili işleç &) iki parametre.|  
@@ -122,11 +125,11 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |[mem_fn](../standard-library/functional-functions.md#mem_fn)|Basit Arama sarmalayıcı oluşturur.|  
 |[mem_fun](../standard-library/functional-functions.md#mem_fun)|İşlev nesnesi bağdaştırıcıları işaretçi bağımsız değişkenlerle hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablon işlevleri.|  
 |[mem_fun_ref](../standard-library/functional-functions.md#mem_fun_ref)|İşlev nesnesi bağdaştırıcıları başvuru bağımsız değişkenlerle hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablonu bir işlev.|  
-|[Not1](../standard-library/functional-functions.md#not1)|Birli koşul tamamlama döndürür.|  
+|[not1](../standard-library/functional-functions.md#not1)|Birli koşul tamamlama döndürür.|  
 |[not2](../standard-library/functional-functions.md#not2)|İkili karşılaştırma tamamlama döndürür.|  
 |[ptr_fun](../standard-library/functional-functions.md#ptr_fun)|Bir yardımcı şablon işlevi birli ve ikili uyarlanabilir işlevleri, işaretçileri, sırasıyla dönüştürme birli ve ikili işlevi için kullanılır.|  
 |[ref](../standard-library/functional-functions.md#ref)|Oluşturan bir `reference_wrapper` gelen bir bağımsız değişken.|  
-|[değiştirme](../standard-library/functional-functions.md#swap)|İki değiştirir `function` nesneleri.|  
+|[Değiştirme](../standard-library/functional-functions.md#swap)|İki değiştirir `function` nesneleri.|  
   
 ### <a name="structs"></a>Yapılar  
   
@@ -135,7 +138,7 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |[binary_function](../standard-library/binary-function-struct.md)|Bir ikili işlevi nesnesi sağlar türetilmiş sınıf tarafından devralınan türlerini tanımlar boş bir temel sınıf.|  
 |[böler](../standard-library/divides-struct.md)|Sınıf belirtilen değer türü öğelerde bölümünün aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi sağlar.|  
 |[equal_to](../standard-library/equal-to-struct.md)|Belirtilen türde bir değer türü başka bir değere eşit olup olmadığını sınar ikili koşulu.|  
-|[büyük](../standard-library/greater-struct.md)|Belirtilen türde bir değer olup olmadığını sınar ikili bir koşul türü başka bir değerden daha büyük.|  
+|[greater](../standard-library/greater-struct.md)|Belirtilen türde bir değer olup olmadığını sınar ikili bir koşul türü başka bir değerden daha büyük.|  
 |[greater_equal](../standard-library/greater-equal-struct.md)|Belirtilen türde bir değer sıfırdan büyük veya bu türdeki başka bir değere eşit olup olmadığını sınar ikili koşulu.|  
 |[daha az](../standard-library/less-struct.md)|Belirtilen türde bir değer olup olmadığını sınar ikili bir koşul türü başka bir değerden küçüktür.|  
 |[less_equal](../standard-library/less-equal-struct.md)|Belirtilen türde bir değer küçük veya bu türdeki başka bir değere eşit olup olmadığını sınar ikili koşulu.|  
@@ -145,9 +148,9 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
 |[eksi](../standard-library/minus-struct.md)|Sınıfı, belirtilen değer türü öğelerde çıkarma aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlevi nesnesi sağlar.|  
 |[modulus](../standard-library/modulus-struct.md)|Sınıf belirtilen değer türü öğelerde modulus aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi sağlar.|  
 |[çarpar](../standard-library/multiplies-struct.md)|Sınıf belirtilen değer türü öğelerde çarpma aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi sağlar.|  
-|[negate](../standard-library/negate-struct.md)|Sınıfı bir öğe değerini negatif döndürür önceden tanımlanmış işlevi nesnesi sağlar.|  
+|[Negate](../standard-library/negate-struct.md)|Sınıfı bir öğe değerini negatif döndürür önceden tanımlanmış işlevi nesnesi sağlar.|  
 |[not_equal_to](../standard-library/not-equal-to-struct.md)|Belirtilen türde bir değer olup olmadığını sınar ikili bir koşul türü başka bir değere eşit değil.|  
-|[artı](../standard-library/plus-struct.md)|Sınıf belirtilen değer türü öğelerde toplama aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi sağlar.|  
+|[plus](../standard-library/plus-struct.md)|Sınıf belirtilen değer türü öğelerde toplama aritmetik işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi sağlar.|  
 |[unary_function](../standard-library/unary-function-struct.md)|Birli işlev nesnesi sağlar türetilmiş sınıf tarafından devralınan türlerini tanımlar boş bir temel sınıf.|  
   
 ### <a name="objects"></a>Nesneler  
@@ -160,7 +163,7 @@ Oluşturmaya yardımcı olması C++ Standart Kitaplığı işlevleri tanımlar *
   
 |||  
 |-|-|  
-|[operator ==](../standard-library/functional-operators.md#op_eq_eq)|Eşitlik karşılaştırması aranabilir nesnelerin izin vermez.|  
+|[operator==](../standard-library/functional-operators.md#op_eq_eq)|Eşitlik karşılaştırması aranabilir nesnelerin izin vermez.|  
 |[operator!=](../standard-library/functional-operators.md#op_neq)|Eşitsizlik karşılaştırma aranabilir nesnelerin izin vermez.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

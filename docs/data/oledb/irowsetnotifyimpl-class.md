@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.IRowsetNotifyImpl
 - ATL::IRowsetNotifyImpl
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8e23103cf4505ffb2bc683c69d22628fa15b861d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 43a71127512f679131cf767cfdc5147efe23e2ef
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetnotifyimpl-class"></a>IRowsetNotifyImpl Sınıfı
 Uygular ve kaydeder [IRowsetNotify](https://msdn.microsoft.com/en-us/library/ms712959.aspx) (olarak da bilinen "havuz") tüketici böylece bildirimleri işleyebilir.  

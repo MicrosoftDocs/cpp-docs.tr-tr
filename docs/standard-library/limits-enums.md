@@ -5,25 +5,25 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-caps.latest.revision: "11"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 1b69623aa9eccfca57667d4f33546512799b172f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: a776ccd0299c3acc43763a381ce337c67bc6c134
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;sınırları&gt; numaralandırmaları
 |||  
 |-|-|  
 |[float_denorm_style](#float_denorm_style)|[float_round_style](#float_round_style)|  
   
-##  <a name="float_denorm_style"></a>float_denorm_style numaralandırması  
+##  <a name="float_denorm_style"></a>  float_denorm_style numaralandırması  
  Numaralandırma Normalleştirilmemiş kayan noktalı bir sayıyı temsil eden bir uygulama seçebileceğiniz çeşitli yöntemlerini açıklar — normalleştirilmiş değeri olarak göstermek için çok küçük bir:  
   
 ```
@@ -45,7 +45,7 @@ enum float_denorm_style {
 ### <a name="example"></a>Örnek  
   Bkz: [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm) içinde bu numaralandırma değerlerini erişilebilir bir örnek.  
   
-##  <a name="float_round_style"></a>float_round_style numaralandırması  
+##  <a name="float_round_style"></a>  float_round_style numaralandırması  
  Numaralandırma bir tamsayı değeri kayan noktalı bir sayıyı yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklar.  
   
 ```

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - header files, C++ Standard Library
 - wrappers
@@ -16,47 +18,48 @@ helpviewer_keywords:
 - C++ Standard Library, header files
 - Visual C++, header files
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8fca748d3192fcecbec5194822cd302ad78a296e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 20e03c52147fddd6ac15de88df7f051109005cb2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="c-standard-library-header-files"></a>C++ Standart Kitaplık Üstbilgi Dosyaları
 C++ Standart Kitaplığı ve kategoriye göre uzantıları için üstbilgi dosyaları.  
   
- `Algorithms`[[daha fazla bilgi](../cpp/algorithms-modern-cpp.md)]  
+ `Algorithms` [[daha fazla bilgi](../cpp/algorithms-modern-cpp.md)]  
  [\<algoritma >](../standard-library/algorithm.md)  
   
  `C Library Wrappers`  
  [\<cassert >](../standard-library/cassert.md), [ \<cctype >](../standard-library/cctype.md), [ \<cerrno >](../standard-library/cerrno.md), [ \<cfenv >](../standard-library/cfenv.md), [ \<cfloat >](../standard-library/cfloat.md), [ \<cinttypes >](../standard-library/cinttypes.md), [ \<ciso646 >](../standard-library/ciso646.md), [ \<climits >](../standard-library/climits.md), [ \<clocale >](../standard-library/clocale.md), [ \<cmath >](../standard-library/cmath.md), [ \<csetjmp >](../standard-library/csetjmp.md), [ \<csignal >](../standard-library/csignal.md), [ \<cstdarg >](../standard-library/cstdarg.md), [ \<cstdbool >](../standard-library/cstdbool.md), [ \<cstddef >](../standard-library/cstddef.md), [ \<cstdint >](../standard-library/cstdint.md), [ \<cstdio >](../standard-library/cstdio.md), [ \<cstdlib >](../standard-library/cstdlib.md), [ \<cstring >](../standard-library/cstring.md), [ \<ctgmath >](../standard-library/ctgmath.md), [ \<ctime >](../standard-library/ctime.md), [ \<cwchar >](../standard-library/cwchar.md), [ \<cwctype >](../standard-library/cwctype.md)  
   
- `Containers`[[daha fazla bilgi](../cpp/containers-modern-cpp.md)]  
+ `Containers` [[daha fazla bilgi](../cpp/containers-modern-cpp.md)]  
  `Sequence`  
- [\<dizi >](../standard-library/array.md), [ \<deque >](../standard-library/deque.md), [< forward_list >](../standard-library/forward-list.md), [ \<listesi >](../standard-library/list.md), [ \<vektör >](../standard-library/vector.md)  
+ [\<dizi >](../standard-library/array.md), [ \<deque >](../standard-library/deque.md), [< forward_list >](../standard-library/forward-list.md), [ \<listesi >](../standard-library/list.md), [ \< vektör >](../standard-library/vector.md)  
   
  `Ordered Associative`  
  [\<Harita >](../standard-library/map.md), [ \<ayarlamak >](../standard-library/set.md)  
   
  `Unordered Associative`  
- [< unordered_map >](../standard-library/unordered-map.md), [< unordered_set >](../standard-library/unordered-set.md)  
+ [<unordered_map>](../standard-library/unordered-map.md), [<unordered_set>](../standard-library/unordered-set.md)  
   
  `Adaptor`  
  [\<sıra >](../standard-library/queue.md), [ \<yığın >](../standard-library/stack.md)  
   
- `Error Handling`[[daha fazla bilgi](../cpp/errors-and-exception-handling-modern-cpp.md)]  
+ `Error Handling` [[daha fazla bilgi](../cpp/errors-and-exception-handling-modern-cpp.md)]  
  [\<Özel Durum >](../standard-library/exception.md), [ \<stdexcept >](../standard-library/stdexcept.md), [< system_error >](../standard-library/system-error.md)  
   
- `Input/Output`[[daha fazla bilgi](../cpp/string-and-i-o-formatting-modern-cpp.md)]  
+ `Input/Output` [[daha fazla bilgi](../cpp/string-and-i-o-formatting-modern-cpp.md)]  
  [\<FileSystem >](../standard-library/filesystem.md), [ \<fstream >](../standard-library/fstream.md), [ \<iomanip >](../standard-library/iomanip.md), [ \<ios >](../standard-library/ios.md), [ \<iosfwd >](../standard-library/iosfwd.md), [ \<iostream >](../standard-library/iostream.md), [ \<IStream >](../standard-library/istream.md), [ \<ostream >](../standard-library/ostream.md), [ \<sstream >](../standard-library/sstream.md), [ \<streambuf >](../standard-library/streambuf.md), [ \<strstream >](../standard-library/strstream.md)  
   
  `Iterators Library`  
- [\<Yineleyici >](../standard-library/iterator.md)  
+ [\<iterator>](../standard-library/iterator.md)  
   
  `Localization`  
  [\<codecvt >](../standard-library/codecvt.md), [ \<cvt/wbuffer >](../standard-library/cvt-wbuffer.md), [ \<cvt/wstring >](../standard-library/cvt-wstring.md), [ \<yerel ayar >](../standard-library/locale.md)  
@@ -64,11 +67,11 @@ C++ Standart Kitaplığı ve kategoriye göre uzantıları için üstbilgi dosya
  `Math and Numerics`  
  [\<karmaşık >](../standard-library/complex.md), [ \<sınırları >](../standard-library/limits.md), [ \<sayısal >](../standard-library/numeric.md), [ \<rastgele >](../standard-library/random.md), [ \<oranı >](../standard-library/ratio.md), [ \<valarray >](../standard-library/valarray.md)  
   
- `Memory Management`[[daha fazla bilgi](../cpp/smart-pointers-modern-cpp.md)]  
+ `Memory Management` [[daha fazla bilgi](../cpp/smart-pointers-modern-cpp.md)]  
  [\<allocators >](../standard-library/allocators-header.md), [ \<bellek >](../standard-library/memory.md), [ \<yeni >](../standard-library/new.md), [< scoped_allocator >](../standard-library/scoped-allocator.md)  
   
  `Multithreading`  
- [\<atomik >](../standard-library/atomic.md), [< condition_variable >](../standard-library/condition-variable.md), [ \<gelecekteki >](../standard-library/future.md), [ \<mutex >](../standard-library/mutex.md), [< shared_mutex >](../standard-library/shared-mutex.md), [ \<iş parçacığı >](../standard-library/thread.md)  
+ [\<atomic>](../standard-library/atomic.md), [<condition_variable>](../standard-library/condition-variable.md), [\<future>](../standard-library/future.md), [\<mutex>](../standard-library/mutex.md), [<shared_mutex>](../standard-library/shared-mutex.md), [\<thread>](../standard-library/thread.md)  
   
  `Other Utilities`  
  [\<bitset >](../standard-library/bitset.md), [ \<chrono >](../standard-library/chrono.md), [ \<işlevsel >](../standard-library/functional.md), [< initializer_list >](../standard-library/initializer-list.md), [ \<tanımlama grubu >](../standard-library/tuple.md), [< type_traits >](../standard-library/type-traits.md), [ \<TypeInfo >](../standard-library/typeinfo.md), [ \<typeindex >](../standard-library/typeindex.md), [ \<yardımcı programı >](../standard-library/utility.md)  

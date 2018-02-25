@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __indword_cpp
 - __indword
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fcd6b2483a89aeae0cb5622619e892913a4d5cb6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 529d83982b1797678b421fbacb4ad6c69cad030d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="indword"></a>__indword
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Belirtilen bağlantı noktası kullanımından bir çift sözcük veri okuyan `in` yönergesi.  
   
@@ -40,7 +43,7 @@ unsigned long __indword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Port`  
+ [in] `Port`  
  Okunacak bağlantı noktası.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -50,7 +53,7 @@ unsigned long __indword(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__indword`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__indword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

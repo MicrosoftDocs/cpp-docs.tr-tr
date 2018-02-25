@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <mutex>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <mutex>
+dev_langs:
+- C++
 ms.assetid: efb60c89-687a-4e38-8fe4-694e11c4e8a3
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9da491492437f5bf8ed245c84a33f44174ac44ba
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 50fb9ab17a82703f34dab0744499e2afdbdd61eb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltmutexgt"></a>&lt;Mutex&gt;
+# <a name="ltmutexgt"></a>&lt;mutex&gt;
 Standart üstbilgisini \<mutex > sınıflarını tanımlamak için `mutex`, `recursive_mutex`, `timed_mutex`, ve `recursive_timed_mutex`; şablonları `lock_guard` ve `unique_lock`; destekleyici türler ve İşlevler tanımlayın karşılıklı dışlama kod bölgeleri.  
   
 > [!WARNING]

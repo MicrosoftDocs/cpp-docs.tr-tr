@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CSQLLanguageInfo
 - m_szProgrammingLanguage
@@ -17,7 +18,8 @@ f1_keywords:
 - m_szSource
 - m_szYear
 - CSQLLanguages
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - m_szBindingStyle
 - m_szProgrammingLanguage
@@ -29,18 +31,18 @@ helpviewer_keywords:
 - CSQLLanguageInfo parameter class
 - m_szIntegrity
 ms.assetid: 9c36c5bb-6917-49c3-9ac3-942339893f19
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f3bbd06f4ae6ab0b6a53007abd933017fa662d7e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: effac49070d5c3498f57ceade738b353c86c85c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="csqllanguages-csqllanguageinfo"></a>CSQLLanguages, CSQLLanguageInfo
 Çağrı typedef sınıfı **CSQLLanguages** parametre sınıfı uygulamak için **Csqllanguageınfo**.  

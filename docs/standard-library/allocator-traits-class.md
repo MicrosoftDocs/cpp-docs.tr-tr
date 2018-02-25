@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::allocator_traits
 - memory/std::allocator_traits::propagate_on_container_move_assignment
@@ -26,9 +27,10 @@ f1_keywords:
 - memory/std::allocator_traits::destroy
 - memory/std::allocator_traits::max_size
 - memory/std::allocator_traits::select_on_container_copy_construction
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 612974b8-b5d4-4668-82fb-824bff6821d6
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -51,12 +53,13 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.workload: cplusplus
-ms.openlocfilehash: 7d96b4a03085a2a6486fa2f2fe0d7050323682c0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d732b91a1c7a288cf22fea61e9565a794bb3380d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="allocatortraits-class"></a>allocator_traits Sınıfı
 Şablon sınıfı tamamlayan bir nesneyi tanımlayan bir *ayırıcısı türü*. Depolama tahsis yönetmek için kullanılan bir ayırıcı nesneyi tanımlayan herhangi bir türü bir ayırıcı türüdür. Özellikle, herhangi bir ayırıcı türü için `Alloc`, kullanabileceğiniz `allocator_traits<Alloc>` ayırıcısı etkin bir kapsayıcı tarafından gerekli tüm bilgileri belirlemek için. Daha fazla bilgi için bkz: varsayılan [allocator sınıfı](../standard-library/allocator-class.md).  
@@ -90,9 +93,9 @@ class allocator_traits;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[allocate](#allocate)|Verilen ayırıcısı parametresini kullanarak bellek ayırır statik yöntem.|  
-|[Yapı](#construct)|Bir nesne oluşturmak için belirtilen ayırıcısı kullanan statik yöntem.|  
-|[serbest bırakma](#deallocate)|Belirtilen sayıda nesneleri serbest bırakma için belirtilen ayırıcısı kullanır statik yöntem.|  
-|[yok](#destroy)|Kendi bellek ayırmayı kaldırma olmadan yıkıcı bir nesne üzerinde çağırmak için belirtilen ayırıcısı kullanan statik yöntem.|  
+|[construct](#construct)|Bir nesne oluşturmak için belirtilen ayırıcısı kullanan statik yöntem.|  
+|[Serbest bırakma](#deallocate)|Belirtilen sayıda nesneleri serbest bırakma için belirtilen ayırıcısı kullanır statik yöntem.|  
+|[destroy](#destroy)|Kendi bellek ayırmayı kaldırma olmadan yıkıcı bir nesne üzerinde çağırmak için belirtilen ayırıcısı kullanan statik yöntem.|  
 |[max_size](#max_size)|Belirtilen bir ayırıcı ayrılabilen nesneleri sayısını belirlemek için kullanır statik yöntem.|  
 |[select_on_container_copy_construction](#select_on_container_copy_construction)|Çağıran statik yöntemi `select_on_container_copy_construction` belirtilen ayırıcısı üzerinde.|  
   
@@ -101,7 +104,7 @@ class allocator_traits;
   
  **Namespace:** std  
   
-##  <a name="allocate"></a>allocator_traits::allocate
+##  <a name="allocate"></a>  allocator_traits::allocate
  Verilen ayırıcısı parametresini kullanarak bellek ayırır statik yöntem.  
   
 ```cpp  
@@ -128,7 +131,7 @@ static pointer allocate(Alloc& al, size_type count,
   
  İkinci yöntem döndürür `al.allocate(count, hint)`, ifade iyi biçimlendirilmiş; Aksi halde döndürür `al.allocate(count)`.  
   
-##  <a name="construct"></a>allocator_traits::Construct
+##  <a name="construct"></a>  allocator_traits::construct
  Bir nesne oluşturmak için belirtilen ayırıcısı kullanan statik yöntem.  
   
 ```cpp  
@@ -149,7 +152,7 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 ### <a name="remarks"></a>Açıklamalar  
  Statik üye işlev çağrılarını `al.construct(ptr, args...)`, ifade iyi biçimlendirilmiş; Aksi takdirde değerlendirir `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.  
   
-##  <a name="deallocate"></a>allocator_traits::deallocate
+##  <a name="deallocate"></a>  allocator_traits::deallocate
  Belirtilen sayıda nesneleri serbest bırakma için belirtilen ayırıcısı kullanır statik yöntem.  
   
 ```cpp  
@@ -173,7 +176,7 @@ static void deallocate(Alloc al,
   
  Bu yöntem hiçbir şey oluşturulur.  
   
-##  <a name="destroy"></a>allocator_traits::Destroy
+##  <a name="destroy"></a>  allocator_traits::destroy
  Kendi bellek ayırmayı kaldırma olmadan yıkıcı bir nesne üzerinde çağırmak için belirtilen ayırıcısı kullanan statik yöntem.  
   
 ```cpp  
@@ -191,7 +194,7 @@ static void destroy(Alloc& al, Uty* ptr);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırır `al.destroy(ptr)`, ifade iyi biçimlendirilmiş; Aksi takdirde değerlendirir `ptr->~Uty()`.  
   
-##  <a name="max_size"></a>allocator_traits::max_size
+##  <a name="max_size"></a>  allocator_traits::max_size
  Belirtilen bir ayırıcı ayrılabilen nesneleri sayısını belirlemek için kullanır statik yöntem.  
   
 ```cpp  
@@ -205,7 +208,7 @@ static size_type max_size(const Alloc& al);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem `al.max_size()`, ifade iyi biçimlendirilmiş; Aksi halde döndürür `numeric_limits<size_type>::max()`.  
   
-##  <a name="select_on_container_copy_construction"></a>allocator_traits::select_on_container_copy_construction
+##  <a name="select_on_container_copy_construction"></a>  allocator_traits::select_on_container_copy_construction
  Çağıran statik yöntemi `select_on_container_copy_construction` belirtilen ayırıcısı üzerinde.  
   
 ```cpp  
@@ -224,5 +227,5 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<bellek >](../standard-library/memory.md)   
- [pointer_traits yapısı](../standard-library/pointer-traits-struct.md)   
+ [pointer_traits Struct](../standard-library/pointer-traits-struct.md)   
  [scoped_allocator_adaptor Sınıfı](../standard-library/scoped-allocator-adaptor-class.md)

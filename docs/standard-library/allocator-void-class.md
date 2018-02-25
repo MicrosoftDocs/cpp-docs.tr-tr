@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::allocator<void>
 - allocator<void>
-dev_langs: C++
-helpviewer_keywords: allocator<void> class
+dev_langs:
+- C++
+helpviewer_keywords:
+- allocator<void> class
 ms.assetid: abfb40f5-c600-46a6-b130-f42c6535b2bd
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9e6a457323d99ec36c019e099ebcd5fef4ab2f0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cef6f292938ea503ec50fd72e6b7a710d9a40951
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="allocatorltvoidgt-class"></a>Allocator&lt;void&gt; sınıfı
 Türü için Şablon sınıfı ayırıcısı uzmanlaşması `void`, bu bağlamda anlamlı türleri tanımlama.  

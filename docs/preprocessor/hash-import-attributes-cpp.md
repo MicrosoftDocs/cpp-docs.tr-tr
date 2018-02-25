@@ -4,27 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: '#import directive, attributes'
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- '#import directive, attributes'
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d5c2da30fd2b92ea302c40dc7dbef71499fdecdf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 76507ef9d840b9d3544442af2881810d715bd4ca
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="import-attributes-c"></a>#import Öznitelikleri (C++)
 #İmport yönergesi ile kullanılan öznitelikler için bağlantılar sağlar.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Aşağıdaki öznitelikler #import yönergesi için kullanılabilir.  
   
@@ -33,7 +37,7 @@ ms.lasthandoff: 12/21/2017
 |[auto_rename](../preprocessor/auto-rename.md)|Olası ad çakışmalarını çözmek için değişken adına iki alt çizgi (__) ekleyerek C++ ayrılmış sözcüklerini yeniden adlandırır.|  
 |[auto_search](../preprocessor/auto-search.md)|Tür kitaplığına #import ile başvurulduğunda ve kitaplığın kendisi başka bir tür kitaplığına başvurduğunda, derleyicinin diğer tür kitaplığı için örtük bir #import yapabileceğini belirtir.|  
 |[embedded_idl](../preprocessor/embedded-idl.md)|Tür kitaplığı, öznitelik oluşturulan kod korunur .tlh dosyasına yazılır belirtir.|  
-|[hariç tutma](../preprocessor/exclude-hash-import.md)|Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.|  
+|[exclude](../preprocessor/exclude-hash-import.md)|Öğeleri, oluşturulan tür kitaplığı üstbilgi dosyalarından çıkarır.|  
 |[high_method_prefix](../preprocessor/high-method-prefix.md)|Üst düzey özellikleri ve yöntemleri adlandırmada kullanılacak öneki belirtir.|  
 |[high_property_prefixes](../preprocessor/high-property-prefixes.md)|Diğer özellik yöntemi için alternatif önekler belirtir.|  
 |[implementation_only](../preprocessor/implementation-only.md)|.Tlh üstbilgi dosyası (birincil üstbilgi dosyası) oluşturulmasını engeller.|  
@@ -60,4 +64,4 @@ ms.lasthandoff: 12/21/2017
  **SON Microsoft özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

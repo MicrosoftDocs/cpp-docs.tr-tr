@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc.templates.ole
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3078fa97d298856e302b1f835fdbec2f3d489b63
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.openlocfilehash: 037cb338db89e03b4e9457c5a0abc72c33c0ba57
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ole-db-templates"></a>OLE DB Şablonları
 OLE DB Şablonları OLE DB veri erişimi kolaylaştırır. Visual C++ birçok yaygın olarak kullanılan OLE DB arabirimlerini uygulayan şablon sınıfları sağlar. OLE DB istemci (tüketici) uygulama yazmak için Visual C++ Tüketici Şablonları ve bir sunucu (sağlayıcı) uygulama yazmak için sağlayıcı şablonları kullanabilirsiniz.  

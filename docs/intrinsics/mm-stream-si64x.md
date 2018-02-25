@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: _mm_stream_si64x
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- _mm_stream_si64x
+dev_langs:
+- C++
 helpviewer_keywords:
 - movnti instruction
 - _mm_stream_si64x intrinsic
 ms.assetid: 114c2cd0-085f-41aa-846e-87bdd56c9ee7
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 00d3420fc070eaaecfd368ef27a33915f3dbfa2c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2d70999ad56cd84b2b55b5064235a25e14a04dbc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mmstreamsi64x"></a>_mm_stream_si64x  
   
-**Microsoft özel**  
+**Microsoft Specific**  
   
  MOVNTI yönergesi oluşturur. Verileri Yazar `Source` tarafından belirtilen bir bellek konumuna `Dest`, önbellekleri kirletmesini olmadan.  
   
@@ -41,10 +45,10 @@ void _mm_stream_si64x(
   
 #### <a name="parameters"></a>Parametreler  
   
- [out]`Dest`  
+ [out] `Dest`  
  Kaynak veri yazmak için konumu için bir işaretçi.  
   
- [in]`Source`  
+ [in] `Source`  
  Yazılacak veriler.  
   
 ## <a name="requirements"></a>Gereksinimler  

@@ -4,33 +4,36 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _bittest64
 - _bittest_cpp
 - _bittest64_cpp
 - _bittest
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _bittest intrinsic
 - _bittest64 intrinsic
 - bt instruction
 ms.assetid: 15e62afb-abea-4ee7-a6b1-13efa2034937
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 93567b942306b70a34bd3bd7b2d99675b4ddbd51
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 62fb7d0f89a795956c55aa9ead4d2347ba93500c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="bittest-bittest64"></a>_bittest, _bittest64
-**Microsoft özel**  
+**Microsoft Specific**  
   
 Oluşturur `bt` konumda bit inceler yönerge `b` adresinin `a`ve bu bit değerini döndürür.  
   
@@ -48,10 +51,10 @@ unsigned char _bittest64(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-[in]`a`  
+[in] `a`  
 İncelemek için bellek için bir işaretçi.  
   
-[in]`b`  
+[in] `b`  
 Test etmek için bit konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -61,8 +64,8 @@ Belirtilen konumdaki bit.
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_bittest`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_bittest64`|ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_bittest`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_bittest64`|ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
 Bu yordam yalnızca bir iç kullanılabilir.  

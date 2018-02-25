@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_get_num_procs
-dev_langs: C++
-helpviewer_keywords: omp_get_num_procs OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_get_num_procs
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_get_num_procs OpenMP function
 ms.assetid: 14a10b8f-e59b-4211-a292-687648c9f760
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e9870659ef399f53394fd1002c0f5ea4bc946752
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2a183b6c7b1d2a53e4cfc9b4cc6fa11b5a2177d5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompgetnumprocs"></a>omp_get_num_procs
 İşlevi çağrıldığında kullanılabilir işlemci sayısını döndürür.  

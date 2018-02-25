@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: stdexcept/std::range_error
-dev_langs: C++
-helpviewer_keywords: range_error class
+ms.topic: reference
+f1_keywords:
+- stdexcept/std::range_error
+dev_langs:
+- C++
+helpviewer_keywords:
+- range_error class
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7a54ef4a6cb7898fe057de31c822cb02a3ed54c9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 084878c6708ddb33196c01b90e23ccc9adba65a3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rangeerror-class"></a>range_error Sınıfı
 Sınıfı, bir aralık hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.  

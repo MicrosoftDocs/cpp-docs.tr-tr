@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __movsw
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __movsw
+dev_langs:
+- C++
 helpviewer_keywords:
 - movsw instruction
 - rep movsw instruction
 - __movsw intrinsic
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7a5660a72eaa612721c956e68ae829148d353dc9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4256d137843f5d0c19470c008bca5bbd3ead4e03
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="movsw"></a>__movsw
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Taşıma bir dize oluşturur (`rep movsw`) yönerge.  
   
@@ -41,20 +45,20 @@ void __movsw(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`Dest`  
+ [out] `Dest`  
  İşlemin hedefi.  
   
- [in]`Source`  
+ [in] `Source`  
  İşlemi kaynak.  
   
- [in]`Count`  
+ [in] `Count`  
  Kopyalamak için sözcükler sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__movsw`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__movsw`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::shuffle_order_engine
 - random/std::shuffle_order_engine::base
@@ -14,7 +15,8 @@ f1_keywords:
 - random/std::shuffle_order_engine::operator()
 - random/std::shuffle_order_engine::base_type
 - random/std::shuffle_order_engine::seed
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::shuffle_order_engine [C++]
 - std::shuffle_order_engine [C++], base
@@ -22,16 +24,17 @@ helpviewer_keywords:
 - std::shuffle_order_engine [C++], base_type
 - std::shuffle_order_engine [C++], seed
 ms.assetid: 0bcd1fb0-44d7-4e59-bb1b-4a9b673a960d
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 43de5df2afa0aca7e1634eac0338ae1b49ea9372
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b5916ace0b29ae29beb05448e493e90d9f7df877
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="shuffleorderengine-class"></a>shuffle_order_engine Sınıfı
 Kendi temel altyapısı döndürdüğü değer sıralayarak rastgele bir sıra oluşturur.  
@@ -48,7 +51,7 @@ class shuffle_order_engine;
  Temel altyapısı türü.  
   
  `K`  
- **Tablo boyutunu**. Arabellek (tablo) öğe sayısı. **Önkoşul**:`0 < K`  
+ **Tablo boyutunu**. Arabellek (tablo) öğe sayısı. **Önkoşul**: `0 < K`  
   
 ## <a name="members"></a>Üyeler  
   

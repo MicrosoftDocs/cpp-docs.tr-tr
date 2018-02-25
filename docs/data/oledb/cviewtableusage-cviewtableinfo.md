@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szTableSchema
 - m_szCatalog
@@ -16,7 +17,8 @@ f1_keywords:
 - m_szTableName
 - m_szName
 - CViewTableUsage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CViewTableInfo parameter class
 - CViewTableUsage typedef class
@@ -30,18 +32,18 @@ helpviewer_keywords:
 - m_szTableCatalog
 - m_szTableName
 ms.assetid: 10b74f2a-8010-4f97-acc2-ffce07349981
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6839893f0beffa13ee2c2688d465369688627ca0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 470a7be46c5afbae5f6d3a1fb88377e56ea0e1fa
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cviewtableusage-cviewtableinfo"></a>CViewTableUsage, CViewTableInfo
 Çağrı typedef sınıfı **CViewTableUsage** parametre sınıfı uygulamak için **Cviewtableınfo**.  

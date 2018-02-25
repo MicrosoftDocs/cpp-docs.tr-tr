@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __ull_rshift
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __ull_rshift
+dev_langs:
+- C++
 helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c0951a930ad5baec5b293aee0fe8e70c0a38a12f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f0193bad5b9184e3168c618b9bc4e3afc5e27abc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ullrshift"></a>__ull_rshift
-**Microsoft özel**  
+**Microsoft Specific**  
   
  x64 üzerinde sağındaki ilk parametresi tarafından belirtilen bir 64-bit değeri ikinci parametresi tarafından belirtilen bit sayısı tarafından kaydırır.  
   
@@ -39,10 +43,10 @@ unsigned __int64 __ull_rshift(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`mask`  
+ [in] `mask`  
  Sağa kaydırma için 64-bit tamsayı değeri.  
   
- [in]`nBit`  
+ [in] `nBit`  
  BITS, 32 x86 üzerinde modulo ve x64 64 modulo kaydırma sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -52,7 +56,7 @@ unsigned __int64 __ull_rshift(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__ull_rshift`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__ull_rshift`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

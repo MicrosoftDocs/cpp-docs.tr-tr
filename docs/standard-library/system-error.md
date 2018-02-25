@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <system_error>
 - system_error
-dev_langs: C++
-helpviewer_keywords: system_error header
+dev_langs:
+- C++
+helpviewer_keywords:
+- system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 68bfea40f926ed74afd6fd246b57d39b7225cdf9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: efd25be1567909effaa25f984acb29bd3f52c529
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 Üstbilgisini `<system_error>` özel durum sınıfı tanımlamak için `system_error` ve ilgili alt düzey sistem hataları işlemek için şablonlar.  
@@ -57,7 +61,7 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|[operator ==](../standard-library/system-error-operators.md#op_eq_eq)|Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.|  
+|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.|  
 |[operator!=](../standard-library/system-error-operators.md#op_neq)|Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.|  
 |[operator <](../standard-library/system-error-operators.md#op_lt)|Bir nesnenin karşılaştırma için içeri geçirilen nesneden küçük olup olmadığını sınar.|  
   

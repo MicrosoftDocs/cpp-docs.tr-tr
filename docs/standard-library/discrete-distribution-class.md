@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::discrete_distribution
 - random/std::discrete_distribution::reset
@@ -19,7 +20,8 @@ f1_keywords:
 - random/std::discrete_distribution::param_type::probabilities
 - random/std::discrete_distribution::param_type::operator==
 - random/std::discrete_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::discrete_distribution [C++]
 - std::discrete_distribution [C++], reset
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dbd82957b213a88792d7dba8a7e7dc17b8b28bb6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b8cadc9a0dafcf4c97cd7c8381c5f4ee76fee915
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution Sınıfı
 Tekdüzen olasılık Tekdüzen genişlikli aralıklarıyla her aralığa sahip bir ayrık tamsayı dağıtım oluşturur.  
@@ -181,7 +184,7 @@ Distribution for 100 samples:
   
  **Namespace:** std  
   
-##  <a name="discrete_distribution"></a>discrete_distribution::discrete_distribution  
+##  <a name="discrete_distribution"></a>  discrete_distribution::discrete_distribution  
  Dağıtım oluşturur.  
   
 ```  
@@ -213,13 +216,13 @@ explicit discrete_distribution(const param_type& parm);
 *weightlist*  
  [İnitializer_list](../cpp/initializers.md) içinden dağıtım oluşturulamadı.  
   
-*sayısı*  
+*Sayısı*  
  Dağıtım aralığında öğe sayısı. Varsa `count==0`, varsayılan oluşturucu eşdeğer (her zaman sıfır oluşturur).  
   
-*düşük*  
+*Düşük*  
  Dağıtım aralığına en düşük değer.  
   
-*yüksek*  
+*Yüksek*  
  Dağıtım aralığına en yüksek değer.  
   
 *weightfunc*  
@@ -241,7 +244,7 @@ Var Oluşturucusu *sayısı*, *düşük*, *yüksek*, ve *weightfunc* tabanlı bi
   
 Var Oluşturucusu bir `param_type` parametresi *parametresi* kullanarak bir dağıtım nesnesi oluşturur *parametresi* depolanan parametrenin yapısı olarak.  
   
-##  <a name="param_type"></a>discrete_distribution::param_type  
+##  <a name="param_type"></a>  discrete_distribution::param_type  
  Dağıtım tüm parametreleri depolar.  
   
 ```  
@@ -276,19 +279,19 @@ struct param_type {
 *weightlist*  
  [İnitializer_list](../cpp/initializers.md) içinden dağıtım oluşturulamadı.  
   
-*sayısı*  
+*Sayısı*  
  Dağıtım aralığında öğe sayısı. Varsa *sayısı* 0'dır, bu varsayılan oluşturucu eşdeğerdir (her zaman sıfır oluşturur).  
   
-*düşük*  
+*Düşük*  
  Dağıtım aralığına en düşük değer.  
   
-*yüksek*  
+*Yüksek*  
  Dağıtım aralığına en yüksek değer.  
   
 *weightfunc*  
  Dağıtım için olasılık işlevi temsil eden nesne. Parametre ve dönüş değeri dönüştürülebilir `double`.  
   
-*sağ*  
+*Sağ*  
  `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  

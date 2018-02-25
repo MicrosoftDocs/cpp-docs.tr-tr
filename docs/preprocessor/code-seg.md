@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - code_seg_CPP
 - vc-pragma.code_seg
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 35ead52e9e084eb1770e3532d15848e168d8af90
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 57511efccff22a1f1d6e7dcd957d75066b072c55
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="codeseg"></a>code_seg
 İşlevlerin .obj dosyasında saklandığı metin segmentini belirtir.  
@@ -44,16 +47,16 @@ ms.lasthandoff: 12/21/2017
   
  A `code_seg` parametresiz pragma yönergesi için .text sonraki nesne kodu metin segment adını sıfırlar.  
   
- **Anında iletme** (isteğe bağlı)  
+ **anında iletme** (isteğe bağlı)  
  İç derleyici yığınına bir kayıt yerleştirir. A **itme** olabilir bir `identifier` ve `segment-name`.  
   
  **POP** (isteğe bağlı)  
  Derleyici iç yığının en üstünden bir kayıt kaldırır.  
   
- `identifier`(isteğe bağlı)  
+ `identifier` (isteğe bağlı)  
  İle kullanıldığında **itme**, iç derleyici yığında kaydı bir adı atar. İle kullanıldığında **pop**, POP kadar iç yığından kayıtları `identifier` ; kaldırılır `identifier` bulunamadı iç yığında bir şey Sil'i.  
   
- `identifier`yalnızca biriyle Sil'i birden çok kayıt etkinleştirir **pop** komutu.  
+ `identifier` yalnızca biriyle Sil'i birden çok kayıt etkinleştirir **pop** komutu.  
   
  "`segment-name`" (isteğe bağlı)  
  Bir segmentin adı. İle kullanıldığında **pop**, yığın Sil'i ve `segment-name` etkin metin segment adı olur.  

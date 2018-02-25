@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - sstream/std::basic_ostringstream
 - sstream/std::basic_ostringstream::allocator_type
 - sstream/std::basic_ostringstream::rdbuf
 - sstream/std::basic_ostringstream::str
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::basic_ostringstream [C++]
 - std::basic_ostringstream [C++], allocator_type
 - std::basic_ostringstream [C++], rdbuf
 - std::basic_ostringstream [C++], str
 ms.assetid: aea699f7-350f-432a-acca-adbae7b483fb
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6338ed2bbaa7d16dc2723f4bdcaa93ea0a3f3e31
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bc793d723498149e714221beafb94f661cd09020
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  
@@ -47,7 +50,7 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
  `Elem`  
  Dizenin temel öğe türü.  
   
- *Tr*  
+ *tr*  
  Karakter nitelikler dize temel öğede özelleştirilmiş.  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -77,14 +80,14 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
   
  **Namespace:** std  
   
-##  <a name="allocator_type"></a>basic_ostringstream::allocator_type  
+##  <a name="allocator_type"></a>  basic_ostringstream::allocator_type  
  Şablon parametresi için bir eş anlamlı türüdür `Alloc`.  
   
 ```  
 typedef Alloc allocator_type;  
 ```  
   
-##  <a name="basic_ostringstream"></a>basic_ostringstream::basic_ostringstream  
+##  <a name="basic_ostringstream"></a>  basic_ostringstream::basic_ostringstream  
  Bir nesne türü basic_ostringstream oluşturur.  
   
 ```  
@@ -105,7 +108,7 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
   
  İkinci Oluşturucu, arama basic_ostream tarafından temel sınıfı başlatır ( **sb**). Ayrıca başlatır **sb** arama basic_stringbuf tarafından < **Elem**, **Tr**, `Alloc`> (_ *Str*, `_Mode` &#124; `ios_base::out`).  
   
-##  <a name="rdbuf"></a>basic_ostringstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_ostringstream::rdbuf  
  Tür saklı Akış Arabellek adresini döndürür **işaretçi** için [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem**, **Tr**, `Alloc`>.  
   
 ```  
@@ -121,7 +124,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek `rdbuf`.  
   
-##  <a name="str"></a>basic_ostringstream::Str  
+##  <a name="str"></a>  basic_ostringstream::str  
  Yazma konumunu değiştirmeden dize arabellekte metni alır veya ayarlar.  
   
 ```  

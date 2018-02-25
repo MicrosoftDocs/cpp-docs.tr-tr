@@ -4,28 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - conform_CPP
 - vc-pragma.conform
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - conform pragma
 - forScope conform pragma
 - pragmas, conform
 ms.assetid: 71b3e174-c53c-4bfc-adf3-af39b1554191
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5f876c1b921a00c251010d22e2cdd000a405a651
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 476228dc1331d005e4886c905256fad23353874c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="conform"></a>conform
 **C++ özel**  
@@ -39,7 +42,7 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *adı*  
+ *Adı*  
  Değiştirilecek derleyici seçeneği adını belirtir. Yalnızca geçerli *adı* olan `forScope`.  
   
  **Göster** (isteğe bağlı)  

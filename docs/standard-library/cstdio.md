@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <cstdio>
-dev_langs: C++
-helpviewer_keywords: cstdio header
+ms.topic: reference
+f1_keywords:
+- <cstdio>
+dev_langs:
+- C++
+helpviewer_keywords:
+- cstdio header
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 35d6072cd69360236f66d6d85a6c3ded640b58b1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b5152ac63d4bdb92c9ee04ec009af20bbf19ae35
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltcstdiogt"></a>&lt;cstdio&gt;
 Standart C Kitaplığı üstbilgi içeren \<stdio.h > ve ilişkili adlarıyla ekler `std` ad alanı.  

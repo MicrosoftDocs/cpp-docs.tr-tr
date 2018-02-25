@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: valarray/std::gslice_array
-dev_langs: C++
-helpviewer_keywords: gslice_array class
+ms.topic: reference
+f1_keywords:
+- valarray/std::gslice_array
+dev_langs:
+- C++
+helpviewer_keywords:
+- gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0c030885dd0ab6b9c102167e9702dce02589973b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f47b1ce767a2090e718406585d2c40db2c4c8bcb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="gslicearray-class"></a>gslice_array Sınıfı
 Bir valarray genel dilim tarafından tanımlanan alt diziler arasındaki işlemleri sağlayarak genel dilim nesneleri destekleyen bir yardımcı, iç Şablon sınıfı.  
@@ -91,7 +96,7 @@ public:
   
  Şablon sınıfı belirli valarray işlemleri tarafından dolaylı olarak oluşturulur ve doğrudan programında kullanılamaz. Bir iç yardımcı Şablon sınıfı, bunun yerine dilim alt simge işleci tarafından kullanılır:  
   
- `gslice_array`\<**Türü** >  `valarray` \< **türü**>:: `operator[]` ( **constgslice &**).  
+ `gslice_array`\< **Tür** >  `valarray` \< **türü**>:: `operator[]` ( **constgslice &**).  
   
  Oluşturmak bir **gslice_array\<türü >** biçiminde bir ifade yazarak yalnızca nesne **va [gsl]**, bir dilim için **gsl** valarray,  **Va**. Karşılık gelen işlevi imzalar için tanımlanan gibi sınıfı gslice_array üye işlevlerini sonra davranır **valarray\<türü >**, yalnızca seçilen öğelerin sırasını etkilenen dışında. Gslice_array tarafından denetlenen dizisi dilim oluşturucusu, her dilimi ve her dilim öğeleri arasındaki uzaklığı öğe sayısı ilk dilim ilk öğe dizini üç parametre tarafından tanımlanır.  
   

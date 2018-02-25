@@ -4,28 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc-pragma.init_seg
 - init_seg_CPP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pragmas, init_seg
 - init_seg pragma
 - data segment initializing [C++]
 ms.assetid: 40a5898a-5c85-4aa9-8d73-3d967eb13610
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 69036ffba2143d166c9ac5c55a5b3ec9008b75bf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a092ed554af1b078772d53fd0cc663e250a6ea3c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="initseg"></a>init_seg
 **C++ özel**  
@@ -46,10 +49,10 @@ ms.lasthandoff: 12/21/2017
   
  Seçenekler **init_seg** pragma şunlardır:  
   
- **Derleyici**  
+ **compiler**  
  Microsoft C çalışma zamanı kitaplığı başlatma için ayrılmış. Bu gruptaki nesneleri ilk oluşturulur.  
   
- **LIB**  
+ **lib**  
  Üçüncü taraf sınıf kitaplığı satıcıların başlatmaları için kullanılabilir. Bu gruptaki nesneleri olanlar olarak işaretlenmiş sonra oluşturulan **derleyici** ancak tüm diğerlerinden önce.  
   
  **Kullanıcı**  

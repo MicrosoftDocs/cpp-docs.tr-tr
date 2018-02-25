@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - functional/std::bind
 - xfunctional/std::bind1st
@@ -24,7 +25,8 @@ f1_keywords:
 - xfunctional/std::ptr_fun
 - functional/std::ref
 - functional/std::swap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::bind [C++]
 - std::bind1st
@@ -35,28 +37,29 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cce36b764002232f89c5cbcf09e7a6a8e8a8107f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0401f97cbaa30cd0489227008195568748d24b80
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlev&gt; işlevleri
 ||||  
 |-|-|-|  
-|[bağlama](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|  
+|[Bağlama](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|  
 |[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|  
 |[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|  
-|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[Not1](#not1)|  
+|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|  
 |[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|  
-|[değiştirme](#swap)|  
+|[Değiştirme](#swap)|  
   
-##  <a name="bind"></a>bağlama  
+##  <a name="bind">Bağlama</a>  
  Bağımsız değişkenler aranabilir nesnesine bağlar.  
   
 ```  
@@ -155,7 +158,7 @@ int main()
 3^2 == 9  
 ```  
   
-##  <a name="bind1st"></a>bind1st  
+##  <a name="bind1st"></a>  bind1st  
  İkili işlevinin ilk bağımsız değişken belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.  
   
 ```  
@@ -245,7 +248,7 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.  
 ```  
   
-##  <a name="bind2nd"></a>bind2nd  
+##  <a name="bind2nd"></a>  bind2nd  
  İkili işlevinin ikinci bağımsız değişkeni belirtilen değere bağlama tarafından ikili işlev nesnesi bir birli işlevi nesnesine dönüştürmek için bir bağdaştırıcı oluşturur Yardımcısı şablon işlevi.  
   
 ```  
@@ -335,7 +338,7 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.  
 ```  
   
-##  <a name="bit_and"></a>bit_and  
+##  <a name="bit_and"></a>  bit_and  
  Bit düzeyinde AND işlemi gerçekleştiren bir önceden tanımlanmış işlev nesnesi (ikili `operator&`) bağımsız değişkenlerini üzerinde.  
   
 ```  
@@ -372,7 +375,7 @@ struct bit_and<void>
 ### <a name="remarks"></a>Açıklamalar  
  `bit_and` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator&`.  
   
-##  <a name="bit_not"></a>bit_not  
+##  <a name="bit_not"></a>  bit_not  
  Bit düzeyinde tamamlama (değil) işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (birli `operator~`) bağımsız değişkeni üzerinde.  
   
 ```  
@@ -404,7 +407,7 @@ struct bit_not<void>
 ### <a name="remarks"></a>Açıklamalar  
  `bit_not` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator~`.  
   
-##  <a name="bit_or"></a>bit_or  
+##  <a name="bit_or"></a>  bit_or  
  Bit düzeyinde OR işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi ( `operator|`) bağımsız değişkenlerini üzerinde.  
   
 ```  
@@ -441,7 +444,7 @@ struct bit_or<void>
 ### <a name="remarks"></a>Açıklamalar  
  `bit_or` Functor temel veri türleri için tam sayı türleri için sınırlı veya çok kullanıcı tarafından tanımlanan uygulayan türleri `operator|`.  
   
-##  <a name="bit_xor"></a>bit_xor  
+##  <a name="bit_xor"></a>  bit_xor  
  Bit düzeyinde XOR işlemi gerçekleştiren bir önceden tanımlı işlev nesnesi (ikili `operator^`) bağımsız değişkenlerini üzerinde.  
   
 ```  
@@ -478,7 +481,7 @@ struct bit_xor<void>
 ### <a name="remarks"></a>Açıklamalar  
  `bit_xor` Functor temel veri türleri için tam sayı türleri için kısıtlanmış, ya da bu uygulama ikili dosya türleri için kullanıcı tanımlı `operator^`.  
   
-##  <a name="cref"></a>cref  
+##  <a name="cref">cref</a>  
  Bir const yapıları `reference_wrapper` gelen bir bağımsız değişken.  
   
 ```  
@@ -532,7 +535,7 @@ cref(i) = 1
 cref(neg)(i) = -1  
 ```  
   
-##  <a name="mem_fn"></a>mem_fn  
+##  <a name="mem_fn"></a>  mem_fn  
  Basit Arama sarmalayıcı oluşturur.  
   
 ```  
@@ -593,7 +596,7 @@ int main()
 3*2 == 6  
 ```  
   
-##  <a name="mem_fun"></a>mem_fun  
+##  <a name="mem_fun"></a>  mem_fun  
  İşlev nesnesi bağdaştırıcıları işaretçi bağımsız değişkenlerle hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablon işlevleri.  
   
 ```  
@@ -677,7 +680,7 @@ int main( )
 }  
 ```  
   
-##  <a name="mem_fun_ref"></a>mem_fun_ref  
+##  <a name="mem_fun_ref"></a>  mem_fun_ref  
  İşlev nesnesi bağdaştırıcıları başvuru bağımsız değişkenler kullanarak hazırlarken üye işlevleri için oluşturmak için kullanılan yardımcı şablon işlevleri.  
   
 ```  
@@ -779,7 +782,7 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13   
 ```  
   
-##  <a name="not1"></a>Not1  
+##  <a name="not1"></a>  Not1  
  Birli koşul tamamlama döndürür.  
   
 ```  
@@ -847,7 +850,7 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.  
 ```  
   
-##  <a name="not2"></a>not2  
+##  <a name="not2"></a>  not2  
  İkili karşılaştırma tamamlama döndürür.  
   
 ```  
@@ -919,7 +922,7 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )  
 ```  
   
-##  <a name="ptr_fun"></a>ptr_fun  
+##  <a name="ptr_fun"></a>  ptr_fun  
  Birli ve ikili işlev işaretçileri birli ve ikili uyarlanabilir işlevleri sırasıyla dönüştürmek için kullanılan yardımcı şablon işlevleri.  
   
 ```  
@@ -945,7 +948,7 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 ### <a name="example"></a>Örnek  
  [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]  
   
-##  <a name="ref"></a>Ref  
+##  <a name="ref"></a>  Ref  
  Oluşturan bir `reference_wrapper` gelen bir bağımsız değişken.  
   
 ```  
@@ -1034,7 +1037,7 @@ tiger lion cougar
 tiger cougar  
 ```  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
  İki değiştirir `function` nesneleri.  
   
 ```  

@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <type_traits>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <type_traits>
+dev_langs:
+- C++
 helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7e0032070e20749a55a34218f7341914bc47501b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 932c30ade2e6aaf1f07c878a0f6ee8960e9c83d8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 Tür bağımsız değişkenleri özellikleri hakkında bilgi verin veya üretmek derleme zamanı sabitleri türleri dönüştürülmüş sağlamak şablonları tanımlar.  
@@ -145,8 +149,8 @@ using add_const_t = typename add_const<T>::type;
 |||  
 |-|-|  
 |[alignment_of](../standard-library/alignment-of-class.md)|Bir tür hizalamasını alır.|  
-|[RANK](../standard-library/rank-class.md)|Dizi boyutları sayısını alır.|  
-|[Kapsam](../standard-library/extent-class.md)|Belirtilen dizinin boyut öğe sayısını alır.|  
+|[rank](../standard-library/rank-class.md)|Dizi boyutları sayısını alır.|  
+|[extent](../standard-library/extent-class.md)|Belirtilen dizinin boyut öğe sayısını alır.|  
   
  Tür ilişkileri  
   

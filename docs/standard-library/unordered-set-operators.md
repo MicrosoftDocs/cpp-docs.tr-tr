@@ -5,26 +5,27 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - unordered_set/std::operator!=
 - unordered_set/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 615e2f69a45a17b34b38190ac1c7def1de09d8c8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 96f04fc312f718bae28576a5e248823a45950e03
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltunorderedsetgt-operators"></a>&lt;unordered_set&gt; işleçleri
+# <a name="ltunorderedsetgt-operators"></a>&lt;unordered_set&gt; operators
 |||||  
 |-|-|-|-|  
-|[operator! =](#op_neq)|[operator ==](#op_eq_eq)|[operator! =](#op_neq_unordered_multiset)|[operator ==](#op_eq_eq_unordered_multiset)|  
+|[operator!=](#op_neq)|[operator==](#op_eq_eq)|[operator!=](#op_neq_unordered_multiset)|[operator==](#op_eq_eq_unordered_multiset)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri olup olmadığını [unordered_set](../standard-library/unordered-set-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_set nesnesine eşit değil.  
   
 ```
@@ -39,7 +40,7 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
  Türünde bir nesne `unordered_set`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`unordered_sets eşit değilse; `false` eşit olup olmadıkları.  
+ `true` unordered_sets eşit değilse; `false` eşit olup olmadıkları.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Unordered_set nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_sets aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.  
@@ -81,7 +82,7 @@ int main()
   
 ```  
   
- **Çıktı:**  
+ Çıktı:  
   
  `c1 != c2: true`  
   
@@ -89,7 +90,7 @@ int main()
   
  `c2 != c3: true`  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Testleri olup olmadığını [unordered_set](../standard-library/unordered-set-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_set nesnesine eşit değil.  
   
 ```
@@ -104,7 +105,7 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
  Türünde bir nesne `unordered_set`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`unordered_sets eşitse; `false` eşit değillerse.  
+ `true` unordered_sets eşitse; `false` eşit değillerse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Unordered_set nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_sets aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.  
@@ -146,7 +147,7 @@ int main()
   
 ```  
   
- **Çıktı:**  
+ Çıktı:  
   
  `c1 == c2: false`  
   
@@ -154,7 +155,7 @@ int main()
   
  `c2 == c3: false`  
   
-##  <a name="op_neq_unordered_multiset"></a>operator! =  
+##  <a name="op_neq_unordered_multiset"></a>  operator! =  
  Testleri olup olmadığını [unordered_multiset](../standard-library/unordered-multiset-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_multiset nesnesine eşit değil.  
   
 ```
@@ -169,7 +170,7 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
  Türünde bir nesne `unordered_multiset`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`unordered_multisets eşit değilse; `false` eşit olup olmadıkları.  
+ `true` unordered_multisets eşit değilse; `false` eşit olup olmadıkları.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Unordered_multiset nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_multisets aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.  
@@ -214,7 +215,7 @@ int main()
   
 ```  
   
- **Çıktı:**  
+ Çıktı:  
   
  `c1 != c2: true`  
   
@@ -222,7 +223,7 @@ int main()
   
  `c2 != c3: true`  
   
-##  <a name="op_eq_eq_unordered_multiset"></a>operator ==  
+##  <a name="op_eq_eq_unordered_multiset"></a>  operator ==  
  Testleri olup olmadığını [unordered_multiset](../standard-library/unordered-multiset-class.md) nesne işlecinin sol tarafındaki sağ tarafında unordered_multiset nesnesine eşit değil.  
   
 ```
@@ -237,7 +238,7 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
  Türünde bir nesne `unordered_multiset`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`unordered_multisets eşitse; `false` eşit değillerse.  
+ `true` unordered_multisets eşitse; `false` eşit değillerse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Unordered_multiset nesneleri arasındaki karşılaştırma öğelerini depoladıkları rastgele sıralama ölçütü etkilenmez. İki unordered_multisets aynı sayıda öğe varsa ve diğer kapsayıcı öğeleri sıralamaya öğeleridir bir kapsayıcıdaki eşit. Aksi takdirde, bunlar eşit.  
@@ -282,7 +283,7 @@ int main()
   
 ```  
   
- **Çıktı:**  
+ Çıktı:  
   
  `c1 == c2: false`  
   
@@ -291,7 +292,7 @@ int main()
  `c2 == c3: false`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< unordered_set >](../standard-library/unordered-set.md)
+ [<unordered_set>](../standard-library/unordered-set.md)
 
 
 

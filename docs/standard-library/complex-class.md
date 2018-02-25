@@ -4,29 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - complex/std::complex::value_type
 - complex/std::complex::imag
 - complex/std::complex::real
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::complex [C++], value_type
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: a4fe9411d306e08f16df138786d6d55e4ea1647c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dc697726709f0c5dd7640af0b52b3f8176538267
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="complex-class"></a>complex Sınıfı
 Şablon sınıfı türünde iki nesnelerini depolayan bir nesne tanımlar **türü**, bir karmaşık sayı ve bir sanal bölümünü temsil eden gerçek bölümünü temsil eder.  
@@ -70,24 +73,24 @@ class complex
 |||  
 |-|-|  
 |[imag](#imag)|Karmaşık bir sayının sanal bileşeni ayıklar.|  
-|[Gerçek](#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
+|[real](#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç * =](#op_star_eq)|Bir hedef karmaşık sayı karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması veya karmaşık olabilir bir faktörüyle tarafından çarpar.|  
-|[+= işleci](#op_add_eq)|Bir hedef karmaşık sayıya bir numara ekler, eklenen sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.|  
-|[-= işleci](#operator-_eq)|Bir hedef karmaşık sayı arasında bir sayı çıkarır, çıkarılır sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.|  
-|[/ = işleci](#op_div_eq)|Bir hedef karmaşık sayı, karmaşık olabilir veya karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması bölen tarafından böler.|  
-|[işleç =](#op_eq)|Burada atanmış numarası karmaşık olabilir bir hedef karmaşık sayı veya aynı türde bir sayı, atandığı karmaşık sayı gerçek ve sanal bölümlerini atar.|  
+|[operator*=](#op_star_eq)|Bir hedef karmaşık sayı karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması veya karmaşık olabilir bir faktörüyle tarafından çarpar.|  
+|[operator+=](#op_add_eq)|Bir hedef karmaşık sayıya bir numara ekler, eklenen sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.|  
+|[operator-=](#operator-_eq)|Bir hedef karmaşık sayı arasında bir sayı çıkarır, çıkarılır sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.|  
+|[operator/=](#op_div_eq)|Bir hedef karmaşık sayı, karmaşık olabilir veya karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması bölen tarafından böler.|  
+|[operator=](#op_eq)|Burada atanmış numarası karmaşık olabilir bir hedef karmaşık sayı veya aynı türde bir sayı, atandığı karmaşık sayı gerçek ve sanal bölümlerini atar.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Üstbilgi**: \<karmaşık >  
   
  **Namespace:** std  
   
-##  <a name="complex"></a>Complex::Complex  
+##  <a name="complex"></a>  Complex::Complex  
  Karmaşık sayıyı belirtilen gerçek ve sanal bölümleri içeren veya başka bir karmaşık sayıyı bir kopyasını oluşturur.  
   
 ```  
@@ -172,7 +175,7 @@ int main( )
 }  
 ```  
   
-##  <a name="imag"></a>Complex::imag  
+##  <a name="imag"></a>  Complex::imag  
  Karmaşık bir sayının sanal bileşeni ayıklar.  
   
 ```  
@@ -223,7 +226,7 @@ The real part of c1 is c1.real ( ) = 4.
 The imaginary part of c1 is c1.imag ( ) = 3.  
 ```  
   
-##  <a name="op_star_eq"></a>Complex::operator * =  
+##  <a name="op_star_eq"></a>  Complex::operator * =  
  Bir hedef karmaşık sayı karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması veya karmaşık olabilir bir faktörüyle tarafından çarpar.  
   
 ```  
@@ -303,7 +306,7 @@ int main() {
 }  
 ```  
   
-##  <a name="op_add_eq"></a>Complex::operator +=  
+##  <a name="op_add_eq"></a>  Complex::operator +=  
  Bir hedef karmaşık sayıya bir numara ekler, eklenen sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.  
   
 ```  
@@ -402,7 +405,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 0.927295 radians, which is 53.1301 degrees.  
 ```  
   
-##  <a name="complex__operator-_eq"></a>Complex::operator-=  
+##  <a name="complex__operator-_eq"></a>  Complex::operator-=  
  Bir hedef karmaşık sayı arasında bir sayı çıkarır, çıkarılır sayı karmaşık olabilir veya aynı türde gerçek ve sanal için bunu eklendiği karmaşık sayı bölümlerdir.  
   
 ```  
@@ -506,7 +509,7 @@ The modulus of cl2 is: 5
 The argument of cl2 is: 2.2143 radians, which is 126.87 degrees.  
 ```  
   
-##  <a name="op_div_eq"></a>Complex::operator / =  
+##  <a name="op_div_eq"></a>  Complex::operator / =  
  Bir hedef karmaşık sayı, karmaşık olabilir veya karmaşık sayıyı gerçek ve sanal bölümlerini olduğu gibi aynı türden olması bölen tarafından böler.  
   
 ```  
@@ -606,7 +609,7 @@ The modulus of cl2 is: 0.6
 The argument of cl2 is: 0.523599 radians, which is 30 degrees.  
 ```  
   
-##  <a name="op_eq"></a>Complex::operator =  
+##  <a name="op_eq"></a>  Complex::operator =  
  Burada atanmış numarası karmaşık olabilir bir hedef karmaşık sayı veya aynı türde bir sayı, atandığı karmaşık sayı gerçek ve sanal bölümlerini atar.  
   
 ```  
@@ -680,7 +683,7 @@ The complex number (3, 4) assigned to the complex number cl2 is:
  cl2 = (3,4)  
 ```  
   
-##  <a name="real"></a>Complex::Real  
+##  <a name="real"></a>  Complex::Real  
  Alır veya karmaşık bir sayının gerçek bileşen ayarlar.  
   
 ```  
@@ -731,7 +734,7 @@ The real part of c1 is c1.real ( ) = 4.
 The imaginary part of c1 is c1.imag ( ) = 3.  
 ```  
   
-##  <a name="value_type"></a>Complex::value_type  
+##  <a name="value_type"></a>  Complex::value_type  
  Karmaşık bir sayının gerçek ve sanal bölümleri göstermek için kullanılan veri türünü temsil eden tür.  
   
 ```  
@@ -740,7 +743,7 @@ typedef Type value_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_type`sınıfı için eş anlamlı karmaşıktır **türü** şablon parametresi.  
+ `value_type` sınıfı için eş anlamlı karmaşıktır **türü** şablon parametresi.  
   
 ### <a name="example"></a>Örnek  
   

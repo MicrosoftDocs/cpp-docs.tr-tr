@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - message_processor
 - AGENTS/concurrency::message_processor
@@ -14,19 +15,22 @@ f1_keywords:
 - AGENTS/concurrency::message_processor::sync_send
 - AGENTS/concurrency::message_processor::wait
 - AGENTS/concurrency::message_processor::process_incoming_message
-dev_langs: C++
-helpviewer_keywords: message_processor class
+dev_langs:
+- C++
+helpviewer_keywords:
+- message_processor class
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b8c2f30bbab85760020c19a25b098b31eb0a8893
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a7646020bd30b817957cea87dad8ec5c7f3aa8ed
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="messageprocessor-class"></a>message_processor Sınıfı
 `message_processor` Sınıftır işlenmesi için Özet temel sınıf `message` nesneleri. İletilerin sıralama üzerinde garantisi yoktur.  
@@ -72,7 +76,7 @@ class message_processor;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="async_send"></a>async_send 
+##  <a name="async_send"></a> async_send 
 
  Türetilen bir sınıfta geçersiz kılındığında, iletileri bloğuna zaman uyumsuz olarak yerleştirir.  
   
@@ -87,7 +91,7 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İşlemci uygulamaları bu yöntemin üzerine yazması gerekir.  
   
-##  <a name="process_incoming_message"></a>process_incoming_message 
+##  <a name="process_incoming_message">process_incoming_message</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, iletme iletilerinin işlenmesini bloğuna gerçekleştirir. Yeni bir ileti eklenir ve sıranın boş olmasını bulunan her zaman bir kez çağrılır.  
   
@@ -98,7 +102,7 @@ virtual void process_incoming_message() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İleti bloğu uygulamalarında bu yöntemin üzerine yazması gerekir.  
   
-##  <a name="sync_send"></a>sync_send 
+##  <a name="sync_send"></a> sync_send 
 
  Türetilen bir sınıfta geçersiz kılındığında, iletileri bloğuna zaman uyumlu olarak yerleştirir.  
   
@@ -113,7 +117,7 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  İşlemci uygulamaları bu yöntemin üzerine yazması gerekir.  
   
-##  <a name="wait"></a>bekleme 
+##  <a name="wait">bekleme</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, tamamlamak tüm zaman uyumsuz işlemleri için bekler.  
   

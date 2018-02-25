@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xlocmes/std::messages_byname
-dev_langs: C++
-helpviewer_keywords: messages_byname class
+ms.topic: reference
+f1_keywords:
+- xlocmes/std::messages_byname
+dev_langs:
+- C++
+helpviewer_keywords:
+- messages_byname class
 ms.assetid: c6c64841-3e80-43c8-b54c-fed41833ad6b
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b5d7bc352f536f427d14e495d8a218f27aceb102
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0f8aebacee06decfefcbfa81b93f7773e99e7f5e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="messagesbyname-class"></a>messages_byname Sınıfı
 Türetilen Şablon sınıfı yerelleştirilmiş iletileri alma etkinleştirme belirli bir yerel bir ileti modeli kullanılabileceği bir nesne tanımlar.  

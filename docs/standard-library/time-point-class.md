@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::time_point
 - chrono/std::chrono::time_point::time_point
 - chrono/std::chrono::time_point::max
 - chrono/std::chrono::time_point::min
 - chrono/std::chrono::time_point::time_since_epoch
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-helpviewer_keywords: std::chrono [C++], time_point
-ms.workload: cplusplus
-ms.openlocfilehash: 4b8f6880968b899bcf28b60fa69edf1e4250d4d5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+helpviewer_keywords:
+- std::chrono [C++], time_point
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 4d81f49fd94dcedacfe33de75e307a441f74a94e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="timepoint-class"></a>time_point Sınıfı
 A `time_point` bir noktası zamanında temsil eden bir tür açıklar. Türünde bir nesne tutan [süresi](../standard-library/duration-class.md) , depolar geçen süre Şablon değişkeni tarafından temsil edilen dönem itibaren `Clock`.  
@@ -60,14 +64,14 @@ class time_point;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[max](#max)|Üst sınırını belirtir `time_point::ref`.|  
-|[Min](#min)|Alt sınırını belirtir `time_point::ref`.|  
+|[min](#min)|Alt sınırını belirtir `time_point::ref`.|  
 |[time_since_epoch](#time_since_epoch)|Saklı döndürür `duration` değeri.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[time_point::operator +=](#op_add_eq)|Belirtilen bir değeri saklanan süresi ekler.|  
+|[time_point::operator+=](#op_add_eq)|Belirtilen bir değeri saklanan süresi ekler.|  
 |[time_point::operator-=](#operator-_eq)|Saklanan süresi belirtilen değeri çıkarır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -75,7 +79,7 @@ class time_point;
   
  **Namespace:** std::chrono  
   
-##  <a name="max"></a>time_point::Max
+##  <a name="max"></a>  time_point::max
  Türü değerleri için üst sınır döndüren statik yöntem `time_point::ref`.  
   
 ```  
@@ -85,7 +89,7 @@ static constexpr time_point max();
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygulamada döndürür `time_point(duration::max())`.  
   
-##  <a name="min"></a>time_point::Min
+##  <a name="min"></a>  time_point::Min
  Alt sınır türü değerleri için döndüren statik yöntem `time_point::ref`.  
   
 ```  
@@ -95,7 +99,7 @@ static constexpr time_point min();
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygulamada döndürür `time_point(duration::min())`.  
   
-##  <a name="op_add_eq"></a>time_point::operator +=  
+##  <a name="op_add_eq"></a>  time_point::operator+=  
  Belirtilen bir değeri saklı ekler [süresi](../standard-library/duration-class.md) değeri.  
   
 ```  
@@ -109,7 +113,7 @@ time_point& operator+=(const duration& Dur);
 ### <a name="return-value"></a>Dönüş Değeri  
  `time_point` Eklenmesi gerçekleştirildikten sonra nesnesi.  
   
-##  <a name="time_point__operator-_eq"></a>time_point::operator-=  
+##  <a name="time_point__operator-_eq"></a>  time_point::operator-=  
  Saklı belirtilen değeri çıkarır [süresi](../standard-library/duration-class.md) değeri.  
   
 ```  
@@ -123,7 +127,7 @@ time_point& operator-=(const duration& Dur);
 ### <a name="return-value"></a>Dönüş Değeri  
  `time_point` Çıkarma işlemi yapıldıktan sonra nesnesi.  
   
-##  <a name="time_point"></a>time_point::time_point Oluşturucusu  
+##  <a name="time_point"></a>  time_point::time_point Constructor  
  Oluşturan bir `time_point` nesnesi.  
   
 ```  
@@ -149,7 +153,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
   
  Üçüncü Oluşturucu başlatır, `duration` kullanarak değer `Tp.time_since_epoch()`.  
   
-##  <a name="time_since_epoch"></a>time_point::time_since_epoch
+##  <a name="time_since_epoch"></a>  time_point::time_since_epoch
  Saklı alır [süresi](../standard-library/duration-class.md) değeri.  
   
 ```  

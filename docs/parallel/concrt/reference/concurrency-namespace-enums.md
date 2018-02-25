@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CONCRT/concurrency::Agents_EventType
 - CONCRT/concurrency::Concrt_TraceFlags
@@ -16,18 +16,20 @@ f1_keywords:
 - CONCRT/concurrency::WinRTInitializationType
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5092c61860b4d7308ef6d1762363ee905b56b10b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: def29c9253071bb13b2c128a0e581c14328bfa4a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-enums"></a>Eşzamanlılık ad alanı numaralandırmaları
 ||||  
@@ -38,7 +40,7 @@ ms.lasthandoff: 12/21/2017
 |[Winrtınitializationtype](#winrtinitializationtype)|[agent_status](#agent_status)|[join_type](#join_type)|  
 |[message_status](#message_status)|[task_group_status](#task_group_status)|  
   
-##  <a name="agent_status"></a>agent_status numaralandırması  
+##  <a name="agent_status"></a>  agent_status numaralandırması  
  Geçerli durumunu bir `agent`.  
   
 ```
@@ -60,7 +62,7 @@ enum agent_status;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h
 
-##  <a name="agents_eventtype"></a>Agents_EventType numaralandırması  
+##  <a name="agents_eventtype"></a>  Agents_EventType numaralandırması  
  Aracılar Kitaplığı tarafından sunulan izleme işlevselliği kullanılarak izlenebilir olay türleri  
   
 ```
@@ -83,7 +85,7 @@ enum Agents_EventType;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h
 
-##  <a name="concrt_eventtype"></a>ConcRT_EventType numaralandırması  
+##  <a name="concrt_eventtype"></a>  ConcRT_EventType numaralandırması  
  Eşzamanlılık Çalışma zamanı tarafından sunulan izleme işlevselliği kullanılarak izlenebilir olay türleri.  
   
 ```
@@ -106,7 +108,7 @@ enum ConcRT_EventType;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h **Namespace:** eşzamanlılık
 
-##  <a name="concrt_traceflags"></a>Concrt_TraceFlags numaralandırması  
+##  <a name="concrt_traceflags"></a>  Concrt_TraceFlags numaralandırması  
  Olay türleri için izleme bayrakları  
   
 ```
@@ -127,7 +129,7 @@ enum Concrt_TraceFlags;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h
 
-##  <a name="criticalregiontype"></a>CriticalRegionType numaralandırması  
+##  <a name="criticalregiontype"></a>  CriticalRegionType numaralandırması  
  Kritik bölgesinin bir bağlam türünü içindedir.  
   
 ```
@@ -144,7 +146,7 @@ enum CriticalRegionType;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrtrm.h 
 
-##  <a name="dynamicprogressfeedbacktype"></a>DynamicProgressFeedbackType numaralandırması  
+##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType numaralandırması  
  Tarafından kullanılan `DynamicProgressFeedback` kaynakları Zamanlayıcı için istatistiksel bilgileri göre Zamanlayıcı'dan toplanan ya da yalnızca yeniden dengelenir olup olmadığını açıklamak için ilke temel alarak çağrılarıaracılığıylaboştadurumundakivegidensanalişlemciler`Activate` ve `Deactivate` yöntemlere `IVirtualProcessorRoot` arabirimi. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
@@ -156,7 +158,7 @@ enum DynamicProgressFeedbackType;
 |----------|-----------------|  
 |`ProgressFeedbackDisabled`|Zamanlayıcı ilerleme durumu bilgileri toplayın değil. Dengelenmesi tabanlı yalnızca abonelik düzeyi temel alınan donanım iş parçacığı üzerinde gerçekleştirilir. Abonelik düzeyleri hakkında daha fazla bilgi için bkz: [Iexecutionresource::currentsubscriptionlevel](IExecutionResource-structure.md).<br /><br /> Bu değer çalışma zamanı tarafından kullanılmak üzere ayrılmış.|  
 |`ProgressFeedbackEnabled`|Zamanlayıcı ilerleme durumu bilgilerini toplar ve kaynak yöneticisine geçirir. Kaynak Yöneticisi'ni Zamanlayıcı yanı sıra temel alınan donanım iş parçacığı abonelik düzeyi adına kaynakları yeniden dengelemeniz bu istatistik bilgileri yararlanacak olan. Abonelik düzeyleri hakkında daha fazla bilgi için bkz: [Iexecutionresource::currentsubscriptionlevel](IExecutionResource-structure.md).|  
-##  <a name="join_type"></a>join_type numaralandırması  
+##  <a name="join_type"></a>  join_type numaralandırması  
  Türü bir `join` ileti bloğu.  
   
 ```
@@ -172,7 +174,7 @@ enum join_type;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** agents.h  
 
-##  <a name="message_status"></a>message_status numaralandırması  
+##  <a name="message_status"></a>  message_status numaralandırması  
  Geçerli yanıtlar bir teklifi için bir `message` bloğu için nesne.  
   
 ```
@@ -190,7 +192,7 @@ enum message_status;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** agents.h  
 
-##  <a name="policyelementkey"></a>PolicyElementKey numaralandırması  
+##  <a name="policyelementkey"></a>  PolicyElementKey numaralandırması  
  İlke Zamanlayıcı davranışının açıklayan yönlerini anahtarları. Her ilke öğesi bir anahtar-değer çifti tarafından tanımlanır. Zamanlayıcılar Zamanlayıcı ilkeleri ve bunların etkisi hakkında daha fazla bilgi için bkz: [Görev Zamanlayıcı](../../../parallel/concrt/task-scheduler-concurrency-runtime.md).  
   
 ```
@@ -200,22 +202,22 @@ enum PolicyElementKey;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`ContextPriority`|Zamanlayıcı her bağlamda işletim sistemi iş parçacığı önceliği. Bu anahtar için değeri ayarlarsanız `INHERIT_THREAD_PRIORITY` Zamanlayıcı bağlamlarda Zamanlayıcı oluşturulan iş parçacığının önceliğini devralır.<br /><br /> Geçerli değerler: Windows için geçerli değerleri `SetThreadPriority` işlev ve özel değer`INHERIT_THREAD_PRIORITY`<br /><br /> Varsayılan değer:`THREAD_PRIORITY_NORMAL`|  
+|`ContextPriority`|Zamanlayıcı her bağlamda işletim sistemi iş parçacığı önceliği. Bu anahtar için değeri ayarlarsanız `INHERIT_THREAD_PRIORITY` Zamanlayıcı bağlamlarda Zamanlayıcı oluşturulan iş parçacığının önceliğini devralır.<br /><br /> Geçerli değerler: Windows için geçerli değerleri `SetThreadPriority` işlev ve özel değer `INHERIT_THREAD_PRIORITY`<br /><br /> Varsayılan değer: `THREAD_PRIORITY_NORMAL`|  
 |`ContextStackSize`|Zamanlayıcı kilobayt cinsinden her bağlamda ayrılmış yığın boyutu.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer: `0`, işlem varsayılan değer yığın boyutu için kullanılması gerektiğini belirten.|  
-|`DynamicProgressFeedback`|Zamanlayıcı için kaynakları Zamanlayıcısı'ndan toplanmaz veya yalnızca temel alınan donanım iş parçacığı abonelik düzeyini temel istatistiksel bilgileri göre yeniden dengelenir olup olmadığını belirler. Daha fazla bilgi için bkz: [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype).<br /><br /> Geçerli değerler: üye `DynamicProgressFeedbackType` numaralandırma, ya da `ProgressFeedbackEnabled` veya`ProgressFeedbackDisabled`<br /><br /> Varsayılan değer:`ProgressFeedbackEnabled`|  
-|`LocalContextCacheSize`|Zaman `SchedulingProtocol` ilke anahtarı değerine ayarlanmış `EnhanceScheduleGroupLocality`, bu runnable bağlamları içinde sanal işlemci başına yerel kuyruğu önbelleğe alınmasına izin verilen en fazla sayısını belirtir. Bu tür bağlamları genellikle bunları runnable hale gelmesine neden sanal işlemci son-giren ilk çıkar (LIFO) sırayla çalışır. Bu ilke anahtar hiçbir zaman anlamına gelen sahip olduğuna dikkat edin `SchedulingProtocol` anahtarı değerine ayarlanmış `EnhanceForwardProgress`.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar<br /><br /> Varsayılan değer:`8`|  
-|`MaxConcurrency`|Düzey Zamanlayıcı tarafından istenen en fazla eşzamanlı. Kaynak Yöneticisi, başlangıçta bu kadar sanal işlemciye ayırmak çalışacaktır. Özel değerini [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) istenen eşzamanlılık düzeyi makinedeki donanım iş parçacığı sayısı ile aynı olduğunu gösterir. İçin belirtilen değer, `MinConcurrency` makinedeki donanım iş parçacığı sayısını değerinden daha büyük ve `MaxConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MaxConcurrency` için ayarlanmış eşleşecek şekilde tetiklenir `MinConcurrency`.<br /><br /> Geçerli değerler: pozitif tamsayılar ve özel değer`MaxExecutionResources`<br /><br /> Varsayılan değer:`MaxExecutionResources`|  
+|`DynamicProgressFeedback`|Zamanlayıcı için kaynakları Zamanlayıcısı'ndan toplanmaz veya yalnızca temel alınan donanım iş parçacığı abonelik düzeyini temel istatistiksel bilgileri göre yeniden dengelenir olup olmadığını belirler. Daha fazla bilgi için bkz: [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype).<br /><br /> Geçerli değerler: üye `DynamicProgressFeedbackType` numaralandırma, ya da `ProgressFeedbackEnabled` veya `ProgressFeedbackDisabled`<br /><br /> Varsayılan değer: `ProgressFeedbackEnabled`|  
+|`LocalContextCacheSize`|Zaman `SchedulingProtocol` ilke anahtarı değerine ayarlanmış `EnhanceScheduleGroupLocality`, bu runnable bağlamları içinde sanal işlemci başına yerel kuyruğu önbelleğe alınmasına izin verilen en fazla sayısını belirtir. Bu tür bağlamları genellikle bunları runnable hale gelmesine neden sanal işlemci son-giren ilk çıkar (LIFO) sırayla çalışır. Bu ilke anahtar hiçbir zaman anlamına gelen sahip olduğuna dikkat edin `SchedulingProtocol` anahtarı değerine ayarlanmış `EnhanceForwardProgress`.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar<br /><br /> Varsayılan değer: `8`|  
+|`MaxConcurrency`|Düzey Zamanlayıcı tarafından istenen en fazla eşzamanlı. Kaynak Yöneticisi, başlangıçta bu kadar sanal işlemciye ayırmak çalışacaktır. Özel değerini [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) istenen eşzamanlılık düzeyi makinedeki donanım iş parçacığı sayısı ile aynı olduğunu gösterir. İçin belirtilen değer, `MinConcurrency` makinedeki donanım iş parçacığı sayısını değerinden daha büyük ve `MaxConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MaxConcurrency` için ayarlanmış eşleşecek şekilde tetiklenir `MinConcurrency`.<br /><br /> Geçerli değerler: pozitif tamsayılar ve özel değer `MaxExecutionResources`<br /><br /> Varsayılan değer: `MaxExecutionResources`|  
 |`MaxPolicyElementKey`|En fazla ilke öğe anahtarı. Geçerli öğe anahtarı değil.|  
-|`MinConcurrency`|Zamanlayıcı için kaynak yöneticisi tarafından sağlanmalıdır minimum eşzamanlılık düzeyi. Bir zamanlayıcı atanan sanal işlemcilerin sayısı, en hiçbir zaman geçer. Özel değerini [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) minimum eşzamanlılık düzeyi makinedeki donanım iş parçacığı sayısı ile aynı olduğunu gösterir. İçin belirtilen değer, `MaxConcurrency` makinedeki donanım iş parçacığı sayısını küçüktür ve `MinConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MinConcurrency` için ayarlanmış eşleşecek şekilde azaltıldığı `MaxConcurrency`.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar ve özel değerini `MaxExecutionResources`. Eşzamanlılık Çalışma zamanı zamanlayıcılar, değer yapımı için kullanılan Zamanlayıcı ilkeleri için unutmayın `0` geçersiz.<br /><br /> Varsayılan değer:`1`|  
-|`SchedulerKind`|Zamanlayıcı için temel alınan yürütme bağlamı yararlanacak olan iş parçacıkları türü. Daha fazla bilgi için bkz: [SchedulerType](#schedulertype).<br /><br /> Geçerli değerler: üye `SchedulerType` numaralandırma, örneğin,`ThreadScheduler`<br /><br /> Varsayılan değer: `ThreadScheduler`. Bu, Win32 parçacıkları tüm işletim sistemlerinde dönüşür.|  
-|`SchedulingProtocol`|Zamanlama algoritmayı Zamanlayıcı tarafından kullanılacak açıklar. Daha fazla bilgi için bkz: [SchedulingProtocolType](#schedulingprotocoltype).<br /><br /> Geçerli değerler: üye `SchedulingProtocolType` numaralandırma, ya da `EnhanceScheduleGroupLocality` veya`EnhanceForwardProgress`<br /><br /> Varsayılan değer:`EnhanceScheduleGroupLocality`|  
-|`TargetOversubscriptionFactor`|Donanım iş parçacığı başına sanal işlemciler belirsiz sayısı. Gerekirse, karşılamak kaynak yöneticisi tarafından hedef aşırı abonelik faktörü artırılabilir `MaxConcurrency` makine üzerinde donanım iş parçacığı ile.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer:`1`|  
+|`MinConcurrency`|Zamanlayıcı için kaynak yöneticisi tarafından sağlanmalıdır minimum eşzamanlılık düzeyi. Bir zamanlayıcı atanan sanal işlemcilerin sayısı, en hiçbir zaman geçer. Özel değerini [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) minimum eşzamanlılık düzeyi makinedeki donanım iş parçacığı sayısı ile aynı olduğunu gösterir. İçin belirtilen değer, `MaxConcurrency` makinedeki donanım iş parçacığı sayısını küçüktür ve `MinConcurrency` olarak belirtilen `MaxExecutionResources`, değeri `MinConcurrency` için ayarlanmış eşleşecek şekilde azaltıldığı `MaxConcurrency`.<br /><br /> Geçerli değerler: negatif olmayan tamsayılar ve özel değerini `MaxExecutionResources`. Eşzamanlılık Çalışma zamanı zamanlayıcılar, değer yapımı için kullanılan Zamanlayıcı ilkeleri için unutmayın `0` geçersiz.<br /><br /> Varsayılan değer: `1`|  
+|`SchedulerKind`|Zamanlayıcı için temel alınan yürütme bağlamı yararlanacak olan iş parçacıkları türü. Daha fazla bilgi için bkz: [SchedulerType](#schedulertype).<br /><br /> Geçerli değerler: üye `SchedulerType` numaralandırma, örneğin, `ThreadScheduler`<br /><br /> Varsayılan değer: `ThreadScheduler`. Bu, Win32 parçacıkları tüm işletim sistemlerinde dönüşür.|  
+|`SchedulingProtocol`|Zamanlama algoritmayı Zamanlayıcı tarafından kullanılacak açıklar. Daha fazla bilgi için bkz: [SchedulingProtocolType](#schedulingprotocoltype).<br /><br /> Geçerli değerler: üye `SchedulingProtocolType` numaralandırma, ya da `EnhanceScheduleGroupLocality` veya `EnhanceForwardProgress`<br /><br /> Varsayılan değer: `EnhanceScheduleGroupLocality`|  
+|`TargetOversubscriptionFactor`|Donanım iş parçacığı başına sanal işlemciler belirsiz sayısı. Gerekirse, karşılamak kaynak yöneticisi tarafından hedef aşırı abonelik faktörü artırılabilir `MaxConcurrency` makine üzerinde donanım iş parçacığı ile.<br /><br /> Geçerli değerler: pozitif tamsayılar<br /><br /> Varsayılan değer: `1`|  
 |`WinRTInitialization`||  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h  
 
-##  <a name="schedulertype"></a>SchedulerType numaralandırması  
+##  <a name="schedulertype"></a>  SchedulerType numaralandırması  
  Tarafından kullanılan `SchedulerKind` Zamanlayıcı için temel alınan yürütme bağlamı kullanmalıdır iş parçacığı türünü tanımlamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
@@ -232,7 +234,7 @@ enum SchedulerType;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h  
   
-##  <a name="schedulingprotocoltype"></a>SchedulingProtocolType numaralandırması  
+##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType numaralandırması  
  Tarafından kullanılan `SchedulingProtocol` zamanlama algoritmayı Zamanlayıcı için yararlı olabilir açıklamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```
@@ -248,7 +250,7 @@ enum SchedulingProtocolType;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** concrt.h  
  
-##  <a name="switchingproxystate"></a>SwitchingProxyState numaralandırması  
+##  <a name="switchingproxystate"></a>  SwitchingProxyState numaralandırması  
  Bir iş parçacığı proxy bulunduğu durumu belirtmek için kullanılan, ne zaman, farklı iş parçacığı proxy işbirlikçi içerik anahtarına yürütüyor.  
   
 ```
@@ -267,7 +269,7 @@ enum SwitchingProxyState;
   
  Bu tür nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [Ithreadproxy::switchto](ithreadproxy-structure.md#switchto).  
   
-##  <a name="task_group_status"></a>task_group_status numaralandırması  
+##  <a name="task_group_status"></a>  task_group_status numaralandırması  
  Yürütme durumu açıklayan bir `task_group` veya `structured_task_group` nesnesi. Görevin tamamlanması için bir görev grubuna zamanlanmış bekleme çeşitli yöntemlerle bu türde bir değer döndürdü.  
   
 ```
@@ -284,7 +286,7 @@ enum task_group_status;
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** pplinterface.h  
 
-##  <a name="winrtinitializationtype"></a>Winrtınitializationtype numaralandırması  
+##  <a name="winrtinitializationtype"></a>  Winrtınitializationtype numaralandırması  
  Tarafından kullanılan `WinRTInitialization` olup olmadığını ve nasıl Windows çalışma zamanı sürümü Windows 8 işletim sistemlerinde çalışan bir uygulama için Zamanlayıcı iş parçacığı üzerinde başlatılmış veya daha yüksek olacak açıklamak için ilke. Kullanılabilir Zamanlayıcı ilkeleri hakkında daha fazla bilgi için bkz: [PolicyElementKey](concurrency-namespace-enums.md).  
   
 ```

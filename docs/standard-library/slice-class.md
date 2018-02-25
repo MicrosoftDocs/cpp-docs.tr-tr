@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - valarray/std::slice
 - valarray/std::slice::size
 - valarray/std::slice::start
 - valarray/std::slice::stride
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::slice [C++]
 - std::slice [C++], size
 - std::slice [C++], start
 - std::slice [C++], stride
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c49abb87a3a1b9c480c9267f21f6fc9d3de55b9b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e770372fa2c38f0f0e24104dd3313d227c1252af
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="slice-class"></a>slice Sınıfı
 Tek boyutlu bir üst valarray kümelerine tanımlamak için kullanılan valarray için yardımcı sınıfı. Bir valarray iki boyutlu bir matris bir dizinin tüm öğeleri olarak kabul edilir, dilim iki boyutlu dizi dışında bir boyuttaki bir vektör ayıklar.  
@@ -50,22 +53,22 @@ Tek boyutlu bir üst valarray kümelerine tanımlamak için kullanılan valarray
   
 |||  
 |-|-|  
-|[Dilim](#slice)|Bir alt kümesini tanımlar bir `valarray` bir eşit uzaklıkta olan ve belirtilen bir öğede Başlat öğeleri sayısının oluşur.|  
+|[slice](#slice)|Bir alt kümesini tanımlar bir `valarray` bir eşit uzaklıkta olan ve belirtilen bir öğede Başlat öğeleri sayısının oluşur.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
 |||  
 |-|-|  
-|[boyutu](#size)|Dilimin öğe sayısını bulur bir `valarray`.|  
-|[Başlat](#start)|Bir dilimin başlangıç dizinini bulur bir `valarray`.|  
-|[STRIDE](#stride)|Bir dilimin öğeler arasındaki mesafeyi bulur bir `valarray`.|  
+|[Boyutu](#size)|Dilimin öğe sayısını bulur bir `valarray`.|  
+|[start](#start)|Bir dilimin başlangıç dizinini bulur bir `valarray`.|  
+|[stride](#stride)|Bir dilimin öğeler arasındaki mesafeyi bulur bir `valarray`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<valarray >  
   
  **Namespace:** std  
   
-##  <a name="size"></a>Slice::size  
+##  <a name="size"></a>  Slice::size  
  Dilimi bir valarray öğe sayısını bulur.  
   
 ```  
@@ -127,7 +130,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The size of slice vaSlice is: 6.  
 ```  
   
-##  <a name="slice"></a>Slice::slice  
+##  <a name="slice"></a>  Slice::slice  
  Bir eşit uzaklıkta olan ve belirtilen bir öğede Başlat öğe sayısı oluşan bir valarray kümesini tanımlar.  
   
 ```  
@@ -196,7 +199,7 @@ The slice of valarray va is vaResult:
 va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).  
 ```  
   
-##  <a name="start"></a>Slice::Start  
+##  <a name="start"></a>  Slice::Start  
  Bir valarray dilimin başlangıç dizinini bulur.  
   
 ```  
@@ -252,7 +255,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The start index of slice vaSlice is: 3.  
 ```  
   
-##  <a name="stride"></a>Slice::stride  
+##  <a name="stride"></a>  Slice::stride  
  Bir valarray dilimin öğeler arasındaki mesafeyi bulur.  
   
 ```  

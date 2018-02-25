@@ -4,27 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - std::value_compare
 - std.value_compare
 - map/std::value_compare
 - value_compare
-dev_langs: C++
-helpviewer_keywords: std::value_compare
+dev_langs:
+- C++
+helpviewer_keywords:
+- std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1e05f4e0f4431ac9911f98c10540b7aa03a3f486
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: fbb0f651c22702fdad7ca392fa76e4827c6c2e25
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
 Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.  

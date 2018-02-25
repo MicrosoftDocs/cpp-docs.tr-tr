@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xfunctional/std::binary_negate
-dev_langs: C++
-helpviewer_keywords: binary_negate class
+ms.topic: reference
+f1_keywords:
+- xfunctional/std::binary_negate
+dev_langs:
+- C++
+helpviewer_keywords:
+- binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 458dfaaed7b9f3b9dff1d969f127e8369ec72b47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5b645d0bb6e4efc4fe3cc2850a318ddea994306b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="binarynegate-class"></a>binary_negate Sınıfı
 Belirtilen ikili işlevinin dönüş değeri üzerindeki geçersiz kılar üye işlevi sağlayan bir şablon sınıfı.  

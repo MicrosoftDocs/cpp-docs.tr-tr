@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IUMSScheduler
 - CONCRTRM/concurrency::IUMSScheduler
 - CONCRTRM/concurrency::IUMSScheduler::IUMSScheduler::SetCompletionList
-dev_langs: C++
-helpviewer_keywords: IUMSScheduler structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- IUMSScheduler structure
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f45f8f2f152cdbfee1ee1ca3c3acfdb93a249d7a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: da35fe5ae8d00ee537674fd689fd7f27074b0355
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler Yapısı
 Kullanıcı modu zamanlanabilir (UMS) iş parçacıklarının el için Kaynak Yöneticisi'ni eşzamanlılık çalışma zamanı istediği bir iş Zamanlayıcı bir soyutlamasını bir arabirim. Kaynak Yöneticisi bu arabirimi UMS iş parçacığı zamanlayıcılar ile iletişim kurmak için kullanır. `IUMSScheduler` Arabirimi devraldığı `IScheduler` arabirimi.  
@@ -40,7 +44,7 @@ struct IUMSScheduler : public IScheduler;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Iumsscheduler::setcompletionlist](#setcompletionlist)|Atayan bir `IUMSCompletionList` UMS iş parçacığı Zamanlayıcı arabirimi.|  
+|[IUMSScheduler::SetCompletionList](#setcompletionlist)|Atayan bir `IUMSCompletionList` UMS iş parçacığı Zamanlayıcı arabirimi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Resource Manager ile iletişim kuran özel Zamanlayıcısı'nı uygulama ve sıradan Win32 iş parçacığı yerine, Zamanlayıcı verilmesini UMS iş parçacığı istiyorsanız uygulaması sağlamalıdır `IUMSScheduler` arabirimi. Ayrıca, Zamanlayıcı İlkesi anahtarı için ilke değeri ayarlamalısınız `SchedulerKind` olmasını `UmsThreadDefault`. İlke UMS iş parçacığı, belirtiyorsa `IScheduler` bir parametre olarak geçirilen arabirimi [Iresourcemanager::registerscheduler](iresourcemanager-structure.md#registerscheduler) yöntemi olmalıdır bir `IUMSScheduler` arabirimi.  
@@ -50,7 +54,7 @@ struct IUMSScheduler : public IScheduler;
  `IUMSScheduler` Bir Zamanlayıcı ve kaynak yöneticisi arasındaki iletişim çift yönlü bir kanal ucunu bir arabirimdir. Diğer uçtaki tarafından temsil edilen `IResourceManager` ve `ISchedulerProxy` kaynak yöneticisi tarafından uygulanan arabirimler.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [Ischeduler](ischeduler-structure.md)  
+ [IScheduler](ischeduler-structure.md)  
   
  `IUMSScheduler`  
   
@@ -59,7 +63,7 @@ struct IUMSScheduler : public IScheduler;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="setcompletionlist"></a>Iumsscheduler::setcompletionlist yöntemi  
+##  <a name="setcompletionlist"></a>  Iumsscheduler::setcompletionlist yöntemi  
  Atayan bir `IUMSCompletionList` UMS iş parçacığı Zamanlayıcı arabirimi.  
   
 ```

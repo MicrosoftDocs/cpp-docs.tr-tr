@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - concurrent_priority_queue
 - CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue
@@ -18,19 +19,22 @@ f1_keywords:
 - CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::size
 - CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::swap
 - CONCURRENT_PRIORITY_QUEUE/concurrency::concurrent_priority_queue::try_pop
-dev_langs: C++
-helpviewer_keywords: concurrent_priority_queue class
+dev_langs:
+- C++
+helpviewer_keywords:
+- concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1796351dc594712ef69ec5562f85501b30997104
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 16a9114278cd9559a0a21191faeb87ee34b5a5df
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue Sınıfı
 `concurrent_priority_queue` Sınıfı eş zamanlı gönderme ve pop öğeleri için birden çok iş parçacığı sağlayan bir kapsayıcıdır. Öğeleri, öncelik şablon bağımsız değişken sağlanan bir functor tarafından belirlendiği öncelik sırasına Sil'i.  
@@ -78,18 +82,18 @@ template <typename T,
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Temizle](#clear)|Tüm öğeleri eşzamanlı öncelik siler. Bu yöntem eşzamanlılık uyumlu değil.|  
-|[boş](#empty)|Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
+|[empty](#empty)|Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.|  
 |[get_allocator](#get_allocator)|Eş zamanlı öncelik sırası oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
 |[push](#push)|Fazla Yüklendi. Bir öğenin eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlılık güvenlidir.|  
-|[boyutu](#size)|Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
-|[değiştirme](#swap)|İki eşzamanlı öncelik sırası içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.|  
+|[Boyutu](#size)|Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
+|[Değiştirme](#swap)|İki eşzamanlı öncelik sırası içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.|  
 |[try_pop](#try_pop)|Kaldırır ve sıranın boş ise sıradan en yüksek öncelik öğeyi döndürür. Bu yöntem eşzamanlılık güvenlidir.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[işleç =](#operator_eq)|Fazla Yüklendi. İçeriği başka bir atar `concurrent_priority_queue` bu bir nesne. Bu yöntem eşzamanlılık uyumlu değil.|  
+|[operator=](#operator_eq)|Fazla Yüklendi. İçeriği başka bir atar `concurrent_priority_queue` bu bir nesne. Bu yöntem eşzamanlılık uyumlu değil.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Ayrıntılı bilgi için `concurrent_priority_queue` sınıfı için bkz: [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).  
@@ -102,7 +106,7 @@ template <typename T,
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="clear"></a>Temizle 
+##  <a name="clear">Temizle</a> 
 
  Tüm öğeleri eşzamanlı öncelik siler. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -111,9 +115,9 @@ void clear();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `clear`Eşzamanlılık uyumlu değil. Bu yöntemi çağırdığınızda başka bir iş parçacığı eşzamanlı öncelik sırasına yöntemleri çağırma emin olmalısınız. `clear`bellek boş değil.  
+ `clear` Eşzamanlılık uyumlu değil. Bu yöntemi çağırdığınızda başka bir iş parçacığı eşzamanlı öncelik sırasına yöntemleri çağırma emin olmalısınız. `clear` bellek boş değil.  
   
-##  <a name="ctor"></a>concurrent_priority_queue 
+##  <a name="ctor"></a> concurrent_priority_queue 
 
  Eş zamanlı öncelik sırası oluşturur.  
   
@@ -177,7 +181,7 @@ concurrent_priority_queue(
   
  Altıncı ve yedinci oluşturucular taşıma öncelik sırası belirtin `_Src`.  
   
-##  <a name="empty"></a>boş 
+##  <a name="empty"></a> boş 
 
  Eş zamanlı öncelik sırası aynı anda boşsa, testleri, bu yöntem çağrılır. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -186,9 +190,9 @@ bool empty() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`öncelik sırası boşsa, işlev çağrıldı, şu anda `false` Aksi takdirde.  
+ `true` öncelik sırası boşsa, işlev çağrıldı, şu anda `false` Aksi takdirde.  
   
-##  <a name="get_allocator"></a>get_allocator 
+##  <a name="get_allocator"></a> get_allocator 
 
  Eş zamanlı öncelik sırası oluşturmak için kullanılan ayırıcısı kopyasını döndürür. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -199,7 +203,7 @@ allocator_type get_allocator() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir kopyasını oluşturmak için kullanılan ayırıcısı `concurrent_priority_queue` nesnesi.  
   
-##  <a name="operator_eq"></a>işleç = 
+##  <a name="operator_eq"></a> işleç = 
 
  İçeriği başka bir atar `concurrent_priority_queue` bu bir nesne. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -216,7 +220,7 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `concurrent_priority_queue` nesnesi.  
   
-##  <a name="push"></a>anında iletme 
+##  <a name="push"></a> Anında iletme 
 
  Bir öğenin eşzamanlı öncelik sırasına ekler. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -230,7 +234,7 @@ void push(value_type&& _Elem);
  `_Elem`  
  Eş zamanlı öncelik sırasına eklenecek öğe.  
   
-##  <a name="size"></a>boyutu 
+##  <a name="size">Boyutu</a> 
 
  Eşzamanlı öncelik sırasındaki öğe sayısını döndürür. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -244,7 +248,7 @@ size_type size() const;
 ### <a name="remarks"></a>Açıklamalar  
  İşlev çağrıları tarafından eklenen tüm öğeleri dahil etmek için döndürülen boyutu garanti `push`. Ancak, sonuçlarını eşzamanlı işlem bekleyen yansıtmayabilir.  
   
-##  <a name="swap"></a>değiştirme 
+##  <a name="swap">Değiştirme</a> 
 
  İki eşzamanlı öncelik sırası içeriğini değiştirir. Bu yöntem eşzamanlılık uyumlu değil.  
   
@@ -256,7 +260,7 @@ void swap(concurrent_priority_queue& _Queue);
  `_Queue`  
  `concurrent_priority_queue` İçeriğiyle değiştirilecek nesne.  
   
-##  <a name="try_pop"></a>try_pop 
+##  <a name="try_pop"></a> try_pop 
 
  Kaldırır ve sıranın boş ise sıradan en yüksek öncelik öğeyi döndürür. Bu yöntem eşzamanlılık güvenlidir.  
   
@@ -269,7 +273,7 @@ bool try_pop(reference _Elem);
  Sıranın boş ise en yüksek öncelik öğesi ile doldurulur değişken başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`bir değer Sil'i, `false` Aksi takdirde.  
+ `true` bir değer Sil'i, `false` Aksi takdirde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

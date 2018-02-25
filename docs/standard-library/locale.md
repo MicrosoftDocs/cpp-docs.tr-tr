@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <locale>
 - locale/std::<locale>
 - std::<locale>
-dev_langs: C++
-helpviewer_keywords: locale header
+dev_langs:
+- C++
+helpviewer_keywords:
+- locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b2b617870bdeec43dcdc9bf5d9031c0c4d78d0aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6ac044246cf9dea3d5760d60453182b2ec5711d0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltlocalegt"></a>&lt;yerel ayar&gt;
+# <a name="ltlocalegt"></a>&lt;Yerel ayar&gt;
 C++ programlarının, karakter sınıflandırması ve dize harmanlama için uluslararası desteğin dahil olduğu sayısal, parasal ve takvimle ilgili verileri göz önüne alarak farklı kültürel dönüştürmeleri kapsüllemek ve yönetmek için kullanabildiği şablon sınıflarını ve işlevleri tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -68,8 +72,8 @@ C++ programlarının, karakter sınıflandırması ve dize harmanlama için ulus
 |[CType\<char >](../standard-library/ctype-char-class.md)|Bir şablon sınıfı açık alt uzmanlaşması bir sınıfı **ctype\<CharType**> yazmak için `char`, çeşitli özelliklerini bir karakter türü nitelemek için yerel ayar model hizmet verebilir nesneyi açıklayan `char`.|  
 |[ctype_base](../standard-library/ctype-base-class.md)|Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.|  
 |[ctype_byname](../standard-library/ctype-byname-class.md)|Bir nesneyi tanımlayan türetilmiş bir şablon sınıfı, durum ve yerel ayara özgü karakter kümeleri arasında karakterlerin sınıflandırılmasını ve karakterlerin dönüşümünü sağlayarak verili bir yerel ayarın ctype modeli olarak hizmet verebilir.|  
-|[yerel ayar](../standard-library/locale-class.md)|Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.|  
-|[iletileri](../standard-library/messages-class.md)|Verili bir yerel ayar için uluslararası iletilerin bir kataloğundan yerelleştirilmiş iletiler almak için bir yerel ayar olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı.|  
+|[Yerel ayar](../standard-library/locale-class.md)|Kültüre özgü bilgileri depolayan bir yerel ayar nesnesini belirli bir yerelleştirilmiş ortamı toplu olarak kapsülleyen bir modeller kümesi olarak tanımlayan sınıf.|  
+|[İletileri](../standard-library/messages-class.md)|Verili bir yerel ayar için uluslararası iletilerin bir kataloğundan yerelleştirilmiş iletiler almak için bir yerel ayar olarak hizmet verebilen bir nesneyi tanımlayan bir şablon sınıfı.|  
 |[messages_base](../standard-library/messages-base-class.md)|Açıklayan bir taban sınıf bir `int` türü kataloğun iletileri.|  
 |[messages_byname](../standard-library/messages-byname-class.md)|Yerelleştirilmiş iletilerin alınmasını sağlayarak verili bir ileti modeli olarak hizmet verebilen bir nesne tanımlayan türetilmiş bir şablon sınıfı.|  
 |[money_base](../standard-library/money-base-class.md)|Karakterleri tek tek veya aralığın tamamında sınıflandırmak veya sınamak için kullanılan numaralandırma türleri tanımlamak için kullanılan ctype sınıfı için temel sınıf.|  

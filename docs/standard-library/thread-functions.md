@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - thread/std::get_id
 - thread/std::sleep_for
@@ -13,7 +13,7 @@ f1_keywords:
 - thread/std::swap
 - thread/std::yield
 ms.assetid: bb1aa1ef-fe3f-4e2c-8b6e-e22dbf2f5a19
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::get_id [C++]
@@ -21,19 +21,19 @@ helpviewer_keywords:
 - std::sleep_until [C++]
 - std::swap [C++]
 - std::yield [C++]
-ms.openlocfilehash: dd073f48eb926e8fec0017f63ab77a91eb65acff
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 54e4c09c7db5fb29cdfb067b47d8584451277d4a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltthreadgt-functions"></a>&lt;iş parçacığı&gt; işlevleri
 ||||  
 |-|-|-|  
-|[get_ıd](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|  
-|[değiştirme](#swap)|[uyarı simgesi](#yield)|  
+|[get_id](#get_id)|[sleep_for](#sleep_for)|[sleep_until](#sleep_until)|  
+|[Değiştirme](#swap)|[yield](#yield)|  
   
-##  <a name="get_id"></a>get_ıd  
+##  <a name="get_id"></a>  get_id  
  Geçerli yürütme iş parçacığı benzersiz olarak tanımlar.  
   
 ```  
@@ -43,7 +43,7 @@ thread::id this_thread::get_id() noexcept;
 ### <a name="return-value"></a>Dönüş Değeri  
  Türünde bir nesne [thread::id](../standard-library/thread-class.md) , geçerli yürütme iş parçacığı benzersiz şekilde tanımlar.  
   
-##  <a name="sleep_for"></a>sleep_for  
+##  <a name="sleep_for"></a>  sleep_for  
  Çağıran iş parçacığı engeller.  
   
 ```  
@@ -59,7 +59,7 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 ### <a name="remarks"></a>Açıklamalar  
  İşlevi çağıran iş parçacığı için en az tarafından belirtilen zaman blokları `Rel_time`. Bu işlev, tüm özel durumlar oluşturmadığını.  
   
-##  <a name="sleep_until"></a>sleep_until  
+##  <a name="sleep_until"></a>  sleep_until  
  Çağıran iş parçacığı en az belirtilen zamana kadar engeller.  
   
 ```  
@@ -76,7 +76,7 @@ void sleep_until(const xtime *Abs_time);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, tüm özel durumlar oluşturmadığını.  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
  İki durumunu değiştirir `thread` nesneleri.  
   
 ```  
@@ -93,7 +93,7 @@ void swap(thread& Left, thread& Right) noexcept;
 ### <a name="remarks"></a>Açıklamalar  
  İşlev çağrıları `Left.swap(Right)`.  
   
-##  <a name="yield"></a>uyarı simgesi  
+##  <a name="yield"></a>  uyarı simgesi  
  Geçerli iş parçacığının normal şekilde çalışmaya devam eder olsa bile diğer iş parçacıklarını çalıştırmak için işletim sistemi işaret eder.  
   
 ```  

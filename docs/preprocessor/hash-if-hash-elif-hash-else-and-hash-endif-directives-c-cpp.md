@@ -1,12 +1,13 @@
 ---
-title: "#<a name=\"if-elif-else-and-endif-directives-cc--microsoft-docs\"></a>Eğer, #elif, #else ve #endif yönergeleri (C/C++) | Microsoft Docs"
+title: "#Eğer, #elif, #else ve #endif yönergeleri (C/C++) | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - '#else'
 - '#endif'
@@ -14,7 +15,8 @@ f1_keywords:
 - '#elif'
 - defined
 - __has_include
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - '#elif directive'
 - conditional compilation, directives
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - elif directive (#elif)
 - defined directive
 ms.assetid: c77a175f-6ca8-47d4-8df9-7bac5943d01b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8acd8444295175e6aa9fe329e7851456fcd5f7c4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 13a684412b0b0b24cbb9067ef6ea4cf78810c37f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="if-elif-else-and-endif-directives-cc"></a>#if, #elif, #else ve #endif Yönergeleri (C/C++)
 `#if` İle yönerge `#elif`, `#else`, ve `#endif` yönergeleri, denetimleri derleme kaynak dosyası kısımlarının. İfade yazma (sonra `#if`) hemen ardından satır grubu sıfır olmayan bir değere sahip `#if` yönergesi çevirisi biriminde tutulur.  
@@ -50,11 +53,11 @@ ms.lasthandoff: 12/21/2017
  *Eğer satırlı metin*  
   
  *IF-line* :  
- **#if***sabit ifadesi*   
+ **#if**  *constant-expression*  
   
- **#ifdef***tanımlayıcısı*   
+ **#ifdef**  *identifier*  
   
- **#ifndef***tanımlayıcısı*   
+ **#ifndef**  *identifier*  
   
  *elif bölümleri* :  
  *elif satırlı metin*  
@@ -62,9 +65,9 @@ ms.lasthandoff: 12/21/2017
  *elif bölümleri elif satırlı metin*  
   
  *elif satır* :  
- **#elif***sabit ifadesi*   
+ **#elif**  *constant-expression*  
   
- *else bölümünü* :  
+ *else-part* :  
  *satırı başka metin*  
   
  *satırı başka* :  
@@ -108,7 +111,7 @@ ms.lasthandoff: 12/21/2017
   
  tanımlı ( `identifier` )  
   
- tanımlı`identifier`  
+ Tanımlı `identifier`  
   
  Bu sabit bir ifade olarak kabul true (sıfır) varsa *tanımlayıcısı* şu anda tanımlı; Aksi halde, koşul yanlış olduğunda (0). Tanımlı boş metin olarak kabul edilir olarak tanımlanan bir tanımlayıcı. **Tanımlanan** yönergesi olarak kullanılabilir bir `#if` ve bir `#elif` yönergesi, ancak başka saklanıyorsa.  
   

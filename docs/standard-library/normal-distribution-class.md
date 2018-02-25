@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::normal_distribution
 - random/std::normal_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::normal_distribution::param_type::stddev
 - random/std::normal_distribution::param_type::operator==
 - random/std::normal_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::normal_distribution [C++]
 - std::normal_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bd2fcbd4b607df958aba3c1e3635b7a48f3837d8
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3a3d4de1e2316c2a406d6e2a3278c60c214201aa
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 Normal dağıtım oluşturur.  
@@ -194,7 +197,7 @@ Distribution for 10 samples:
   
 **Namespace:** std  
   
-##  <a name="normal_distribution"></a>normal_distribution::normal_distribution  
+##  <a name="normal_distribution"></a>  normal_distribution::normal_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -213,13 +216,13 @@ explicit normal_distribution(const param_type& parm);
 Dağıtım oluşturmak için kullanılan parametre yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 ≤ stddev`  
+**Önkoşul:** `0.0 ≤ stddev`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `mean` değeri tutan değeri *anlamına* ve, depolanan `stddev` değeri tutan değeri *stddev*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>normal_distribution::param_type  
+##  <a name="param_type"></a>  normal_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
 ```cpp  
@@ -240,11 +243,11 @@ struct param_type {
 *stddev*  
 `stddev` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` Karşılaştırmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 ≤ stddev`  
+**Önkoşul:** `0.0 ≤ stddev`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

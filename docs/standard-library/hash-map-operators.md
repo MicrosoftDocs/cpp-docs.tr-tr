@@ -5,27 +5,28 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 5322bdb23a40cb5ffea74a6c772245bdf8cdb05a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 9a1d27828908faa779101be4727e50d46a059fc2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
 |||  
 |-|-|  
-|[operator! =](#op_neq)|[operator! = (multimap)](#op_neq_mm)|
-|[operator ==](#op_eq_eq)|[operator == (multimap)](#op_eq_eq_mm)|
+|[operator!=](#op_neq)|[operator! = (multimap)](#op_neq_mm)|
+|[operator==](#op_eq_eq)|[operator == (multimap)](#op_eq_eq_mm)|
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](unordered-map-class.md).  
@@ -91,7 +92,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator == 
+##  <a name="op_eq_eq"></a>  operator == 
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_map sınıfı](unordered-map-class.md).  
@@ -155,7 +156,7 @@ The hash_maps hm1 and hm2 are not equal.
 The hash_maps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="op_neq_mm"></a>operator! = (hash_multimap) 
+##  <a name="op_neq_mm"></a>  operator! = (hash_multimap) 
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](unordered-multimap-class.md).  
@@ -219,7 +220,7 @@ The hash_multimaps hm1 and hm2 are not equal.
 The hash_multimaps hm1 and hm3 are equal.  
 ```  
   
-##  <a name="op_eq_eq_mm"></a>operator == (hash_multimap)
+##  <a name="op_eq_eq_mm"></a>  operator == (hash_multimap)
   
 > [!NOTE]
 >  Bu, API artık kullanılmıyor. Alternatif [unordered_multimap sınıfı](unordered-multimap-class.md).  
@@ -284,5 +285,5 @@ The hash_multimaps hm1 and hm3 are equal.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< hash_map >](hash-map.md)
+ [<hash_map>](hash-map.md)
 

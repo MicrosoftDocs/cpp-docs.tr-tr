@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::shared_ptr
 - memory/std::shared_ptr::element_type
@@ -20,7 +21,8 @@ f1_keywords:
 - memory/std::shared_ptr::operator*
 - memory/std::shared_ptr::operator=
 - memory/std::shared_ptr::operator->
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::shared_ptr [C++]
 - std::shared_ptr [C++], element_type
@@ -38,16 +40,17 @@ helpviewer_keywords:
 - std::shared_ptr [C++], unique
 - std::shared_ptr [C++], use_count
 ms.assetid: 1469fc51-c658-43f1-886c-f4530dd84860
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 03876821780ec2f4e2258b9553e936bfdda13c17
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0ef826862d49b5661b57faf3db1322cd91b273f9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sharedptr-class"></a>shared_ptr Sınıfı
 Dinamik olarak tahsis edilen bir nesnenin çevresine bir başvuru sayılan akıllı işaretçi sarar.  
@@ -115,17 +118,17 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
   
  bağımsız değişkenler--elde edilen nesnenin boş olduğundan `shared_ptr` nesne ya da boş bir `weak_ptr` nesnesi.  
   
- `ptr`--bir işaretçi türü `Other*` yönetilecek kaynağa. `T`tam bir tür olması gerekir. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa ifadeyi hesaplar `delete ptr`.  
+ `ptr` --bir işaretçi türü `Other*` yönetilecek kaynağa. `T` tam bir tür olması gerekir. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa ifadeyi hesaplar `delete ptr`.  
   
- `ptr, dtor`--bir işaretçi türü `Other*` yönetilmek üzere kaynak ve bu kaynak için bir Silici. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa, çağıran `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.  
+ `ptr, dtor` --bir işaretçi türü `Other*` yönetilmek üzere kaynak ve bu kaynak için bir Silici. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa, çağıran `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.  
   
- `ptr, dtor, alloc`--bir işaretçi türü `Other*` yönetilecek olan kaynak, bir Silici ayrılmış ve serbest gereken herhangi bir depolama alanı yönetmek için bir ayırıcı ve bu kaynak için. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa çağırır `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.  
+ `ptr, dtor, alloc` --bir işaretçi türü `Other*` yönetilecek olan kaynak, bir Silici ayrılmış ve serbest gereken herhangi bir depolama alanı yönetmek için bir ayırıcı ve bu kaynak için. (Denetim bloğu ayrılamıyor çünkü) işlevi başarısız olursa çağırır `dtor(ptr)`, hangi olmalıdır iyi tanımlanmış.  
   
- `sp`--bir `shared_ptr<Other>` yönetilecek kaynağına sahip bir nesne.  
+ `sp` --bir `shared_ptr<Other>` yönetilecek kaynağına sahip bir nesne.  
   
- `wp`--bir `weak_ptr<Other>` yönetilecek kaynağa işaret eden nesne.  
+ `wp` --bir `weak_ptr<Other>` yönetilecek kaynağa işaret eden nesne.  
   
- `ap`--bir `auto_ptr<Other>` yönetilecek kaynak için bir işaretçi tutan nesne. İşlev çağrıları başarılı olursa `ap.release()`; Aksi halde bırakır `ap` değişmez.  
+ `ap` --bir `auto_ptr<Other>` yönetilecek kaynak için bir işaretçi tutan nesne. İşlev çağrıları başarılı olursa `ap.release()`; Aksi halde bırakır `ap` değişmez.  
   
  Tüm durumlarda işaretçi türü `Other*` dönüştürülebilir olmalıdır `T*`.  
   
@@ -139,27 +142,27 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
 |||  
 |-|-|  
 |[shared_ptr](#shared_ptr)|Oluşturan bir `shared_ptr`.|  
-|[shared_ptr:: ~ shared_ptr](#dtorshared_ptr)|Bozar bir `shared_ptr`.|  
+|[shared_ptr::~shared_ptr](#dtorshared_ptr)|Bozar bir `shared_ptr`.|  
   
 ### <a name="methods"></a>Yöntemler  
   
 |||  
 |-|-|  
-|[ELEMENT_TYPE](#element_type)|Öğenin türü.|  
+|[element_type](#element_type)|Öğenin türü.|  
 |[get](#get)|Ait kaynak adresi alır.|  
 |[owner_before](#owner_before)|Bu, true döndürür `shared_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.|  
-|[Sıfırla](#reset)|Ait kaynak değiştirin.|  
-|[değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|  
-|[benzersiz](#unique)|Kaynak sahibi testleri benzersizdir.|  
+|[reset](#reset)|Ait kaynak değiştirin.|  
+|[Değiştirme](#swap)|İki değiştirir `shared_ptr` nesneleri.|  
+|[Benzersiz](#unique)|Kaynak sahibi testleri benzersizdir.|  
 |[use_count](#use_count)|Kaynak sahiplerine sayısını sayar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[shared_ptr::operator Boole türü](#op_boolean-type)|Testleri ait kaynak varsa.|  
-|[shared_ptr::operator *](#op_star)|Belirlenen değer alır.|  
-|[shared_ptr::operator =](#op_eq)|Ait kaynak yerini alır.|  
+|[shared_ptr::operator boolean-type](#op_boolean-type)|Testleri ait kaynak varsa.|  
+|[shared_ptr::operator*](#op_star)|Belirlenen değer alır.|  
+|[shared_ptr::operator=](#op_eq)|Ait kaynak yerini alır.|  
 |[shared_ptr::operator-&gt;](#operator-_gt)|Bir işaretçi için belirlenen değer alır.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -167,7 +170,7 @@ shared_ptr<int> sp6(sp2);   // error, template parameter int and argument shared
   
  **Namespace:** std  
   
-##  <a name="element_type"></a>shared_ptr::ELEMENT_TYPE  
+##  <a name="element_type"></a>  shared_ptr::element_type  
  Öğenin türü.  
   
 ```  
@@ -201,7 +204,7 @@ int main()
 *sp0 == 5  
 ```  
   
-##  <a name="get"></a>shared_ptr::get  
+##  <a name="get"></a>  shared_ptr::get  
  Ait kaynak adresi alır.  
   
 ```  
@@ -238,7 +241,7 @@ sp0.get() == 0 == true
 *sp1.get() == 5  
 ```  
   
-##  <a name="shared_ptr__operator_boolean-type"></a>shared_ptr::operator Boole türü  
+##  <a name="shared_ptr__operator_boolean-type"></a>  shared_ptr::operator Boole türü  
  Testleri ait kaynak varsa.  
   
 ```  
@@ -276,7 +279,7 @@ int main()
 (bool)sp1 == true  
 ```  
   
-##  <a name="op_star"></a>shared_ptr::operator *  
+##  <a name="op_star"></a>  shared_ptr::operator*  
  Belirlenen değer alır.  
   
 ```  
@@ -309,7 +312,7 @@ int main()
 *sp0 == 5  
 ```  
   
-##  <a name="op_eq"></a>shared_ptr::operator =  
+##  <a name="op_eq"></a>  shared_ptr::operator=  
  Ait kaynak yerini alır.  
   
 ```  
@@ -371,7 +374,7 @@ int main()
 *sp0 == 10  
 ```  
   
-##  <a name="shared_ptr__operator-_gt"></a>shared_ptr::operator-&gt;  
+##  <a name="shared_ptr__operator-_gt"></a>  shared_ptr::operator-&gt;  
  Bir işaretçi için belirlenen değer alır.  
   
 ```  
@@ -407,7 +410,7 @@ sp0->first == 1
 sp0->second == 2  
 ```  
   
-##  <a name="owner_before"></a>shared_ptr::owner_before  
+##  <a name="owner_before"></a>  shared_ptr::owner_before  
  Bu, true döndürür `shared_ptr` önce sıralanır (veya küçüktür) sağlanan işaretçi.  
   
 ```  
@@ -425,7 +428,7 @@ bool owner_before(const weak_ptr<Other>& ptr);
 ### <a name="remarks"></a>Açıklamalar  
  Şablon üye işlevi varsa true değerini döndürür `*this` olan `ordered before` `ptr`.  
   
-##  <a name="reset"></a>shared_ptr::reset  
+##  <a name="reset"></a>  shared_ptr::reset  
  Ait kaynak değiştirin.  
   
 ```  
@@ -510,7 +513,7 @@ int main()
 *sp == 15  
 ```  
   
-##  <a name="shared_ptr"></a>shared_ptr::shared_ptr  
+##  <a name="shared_ptr"></a>  shared_ptr::shared_ptr  
  Oluşturan bir `shared_ptr`.  
   
 ```  
@@ -643,7 +646,7 @@ int main()
 *sp5 == 15  
 ```  
   
-##  <a name="dtorshared_ptr"></a>shared_ptr:: ~ shared_ptr  
+##  <a name="dtorshared_ptr"></a>  shared_ptr:: ~ shared_ptr  
  Bozar bir `shared_ptr`.  
   
 ```  
@@ -697,7 +700,7 @@ use count == 2
 use count == 1  
 ```  
   
-##  <a name="swap"></a>shared_ptr::Swap  
+##  <a name="swap"></a>  shared_ptr::Swap  
  İki değiştirir `shared_ptr` nesneleri.  
   
 ```  
@@ -765,7 +768,7 @@ int main()
 *wp1 == 5  
 ```  
   
-##  <a name="unique"></a>shared_ptr::Unique  
+##  <a name="unique"></a>  shared_ptr::Unique  
  Kaynak sahibi testleri benzersizdir.  
   
 ```  
@@ -811,7 +814,7 @@ sp1.unique() == true
 sp1.unique() == false  
 ```  
   
-##  <a name="use_count"></a>shared_ptr::use_count  
+##  <a name="use_count"></a>  shared_ptr::use_count  
  Kaynak sahiplerine sayısını sayar.  
   
 ```  

@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: xutility/std::input_iterator_tag
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- xutility/std::input_iterator_tag
+dev_langs:
+- C++
 helpviewer_keywords:
 - input_iterator_tag class
 - input_iterator_tag struct
 ms.assetid: ad68a4c6-f315-4ce1-8b74-c1fc71bd1577
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 267e4109f5a1b0447dd1c7b2b61796a2346694f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: cd73fd177c43d8720bf341014a61930afcfc07c1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="inputiteratortag-struct"></a>input_iterator_tag Yapısı
 Dönüş türü için sağlayan bir sınıf **iterator_category** giriş yineleyici temsil eden bir işlev.  

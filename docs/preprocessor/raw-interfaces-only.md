@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: raw_interfaces_only
-dev_langs: C++
-helpviewer_keywords: raw_interfaces_only attribute
+ms.topic: reference
+f1_keywords:
+- raw_interfaces_only
+dev_langs:
+- C++
+helpviewer_keywords:
+- raw_interfaces_only attribute
 ms.assetid: 87056c6d-3f34-4248-af58-f5775a35bfb7
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5d7790601a3eec16cae67542ac2d8d622b71df2d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: eff60ded57ae66b43dee4b3b95699ad498fa0358
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="rawinterfacesonly"></a>raw_interfaces_only
 **C++ özel**  
@@ -38,8 +43,8 @@ raw_interfaces_only
   
  Bu öznitelik, yalnızca alt düzey içeriği tür kitaplığı kullanıma olanak tanır.  
   
- **Son C++ özel**  
+ Son C++ özel  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

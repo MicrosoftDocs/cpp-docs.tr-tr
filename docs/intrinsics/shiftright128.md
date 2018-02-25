@@ -4,26 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __shiftright128
-dev_langs: C++
-helpviewer_keywords: __shiftright128 intrinsic
+ms.topic: reference
+f1_keywords:
+- __shiftright128
+dev_langs:
+- C++
+helpviewer_keywords:
+- __shiftright128 intrinsic
 ms.assetid: 5419a6c4-0de1-43fb-b314-4faa5b2d051f
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 228c624c5c752a7c61178b60f8e75817fff62505
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 56fbd52709addbba414d6c6fc839baf96f0b2c02
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="shiftright128"></a>__shiftright128
-**Microsoft özel**  
+**Microsoft Specific**  
   
  İki 64-bit miktarlar olarak temsil 128 bitlik bir miktar, kaydırır `LowPart` ve `HighPart`, sağ tarafından belirtilen bit sayısı tarafından `Shift` ve düşük 64 bit sonucunun döndürür.  
   
@@ -38,13 +43,13 @@ unsigned __int64 __shiftright128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`LowPart`  
+ [in] `LowPart`  
  Düşük 64 bit kaydırmak için 128-bit miktarı.  
   
- [in]`HighPart`  
+ [in] `HighPart`  
  Yüksek 64 bit kaydırmak için 128-bit miktarı.  
   
- [in]`Shift`  
+ [in] `Shift`  
  Kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

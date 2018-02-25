@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ISource
 - AGENTS/concurrency::ISource
@@ -19,19 +20,22 @@ f1_keywords:
 - AGENTS/concurrency::ISource::reserve
 - AGENTS/concurrency::ISource::unlink_target
 - AGENTS/concurrency::ISource::unlink_targets
-dev_langs: C++
-helpviewer_keywords: ISource class
+dev_langs:
+- C++
+helpviewer_keywords:
+- ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6db1fe614de8a3f47bae989ccb26512c375cec50
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 147623329d71da704529c12e27ce3c768c1b8145
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="isource-class"></a>ISource Sınıfı
 `ISource` Sınıftır arabirimi tüm blokları kaynağı için. Kaynak blokları yayılması iletileri `ITarget` engeller.  
@@ -59,19 +63,19 @@ class ISource;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[~ Isource yok Edicisi](#dtor)|Bozar `ISource` nesnesi.|  
+|[~ISource Destructor](#dtor)|Bozar `ISource` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[kabul et](#accept)|Türetilen bir sınıfta geçersiz kılındığında, bu tarafından sunulan bir iletiyi kabul `ISource` çağırana sahipliğini aktarma bloğu.|  
+|[accept](#accept)|Türetilen bir sınıfta geçersiz kılındığında, bu tarafından sunulan bir iletiyi kabul `ISource` çağırana sahipliğini aktarma bloğu.|  
 |[acquire_ref](#acquire_ref)|Türetilen bir sınıfta geçersiz kılındığında, bir başvuru sayısı bu edinir `ISource` silinmesini önlemek için blok.|  
-|[kullanma](#consume)|Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti tüketir `ISource` engelleme ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
+|[Kullanma](#consume)|Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti tüketir `ISource` engelleme ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.|  
 |[link_target](#link_target)|Türetilen bir sınıfta geçersiz kılındığında, bir hedef blok için bağlantılar `ISource` bloğu.|  
-|[Sürüm](#release)|Türetilen bir sınıfta geçersiz kılındığında, bir önceki başarılı ileti ayırma serbest bırakır.|  
+|[release](#release)|Türetilen bir sınıfta geçersiz kılındığında, bir önceki başarılı ileti ayırma serbest bırakır.|  
 |[release_ref](#release_ref)|Türetilen bir sınıfta geçersiz kılındığında, serbest başvuru sayısı bu `ISource` bloğu.|  
-|[ayırma](#reserve)|Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti ayırır `ISource` bloğu.|  
+|[reserve](#reserve)|Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti ayırır `ISource` bloğu.|  
 |[unlink_target](#unlink_target)|Türetilen bir sınıfta geçersiz kılındığında, bir hedef blok bu bağlantıyı keser `ISource` , bloke önceden bağlanması bulundu.|  
 |[unlink_targets](#unlink_targets)|Türetilen bir sınıfta geçersiz kılındığında, tüm hedef blokları bu bağlantıyı keser `ISource` bloğu.|  
   
@@ -86,7 +90,7 @@ class ISource;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="accept"></a>kabul et 
+##  <a name="accept"></a> Kabul et 
 
  Türetilen bir sınıfta geçersiz kılındığında, bu tarafından sunulan bir iletiyi kabul `ISource` çağırana sahipliğini aktarma bloğu.  
   
@@ -109,7 +113,7 @@ virtual message<T>* accept(
 ### <a name="remarks"></a>Açıklamalar  
  `accept` Yöntemi, hedef tarafından çağrıldığında, bir ileti bu tarafından sunulan sırada `ISource` bloğu. İleti işaretçi döndürdü içine geçirilen olandan farklı olabilir `propagate` yöntemi `ITarget` iletinin bir kopyasını oluşturmak bu kaynak karar verirse, engelleyin.  
   
-##  <a name="acquire_ref"></a>acquire_ref 
+##  <a name="acquire_ref"></a> acquire_ref 
 
  Türetilen bir sınıfta geçersiz kılındığında, bir başvuru sayısı bu edinir `ISource` silinmesini önlemek için blok.  
   
@@ -124,7 +128,7 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından çağrılır bir `ITarget` sırasında bu kaynak için bağlantılı nesne `link_target` yöntemi.  
   
-##  <a name="consume"></a>kullanma 
+##  <a name="consume">Kullanma</a> 
 
  Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti tüketir `ISource` engelleme ve başarıyla çağırana sahipliğini aktarma hedef tarafından ayrılmış.  
   
@@ -147,7 +151,7 @@ virtual message<T>* consume(
 ### <a name="remarks"></a>Açıklamalar  
  `consume` Yöntemi benzer `accept`, her zaman için yapılan bir çağrı tarafından gelmelidir ancak `reserve` döndürülen `true`.  
   
-##  <a name="dtor"></a>~ Isource 
+##  <a name="dtor"></a> ~ Isource 
 
  Bozar `ISource` nesnesi.  
   
@@ -155,7 +159,7 @@ virtual message<T>* consume(
 virtual ~ISource();
 ```  
   
-##  <a name="link_target"></a>link_target 
+##  <a name="link_target"></a> link_target 
 
  Türetilen bir sınıfta geçersiz kılındığında, bir hedef blok için bağlantılar `ISource` bloğu.  
   
@@ -167,7 +171,7 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
  `_PTarget`  
  Bunun için bağlantı kurulan hedef blok gösteren bir işaretçi `ISource` bloğu.  
   
-##  <a name="release"></a>Sürüm 
+##  <a name="release"></a> Sürüm 
 
  Türetilen bir sınıfta geçersiz kılındığında, bir önceki başarılı ileti ayırma serbest bırakır.  
   
@@ -184,7 +188,7 @@ virtual void release(
  `_PTarget`  
  Çağırma hedef blok gösteren bir işaretçi `release` yöntemi.  
   
-##  <a name="release_ref"></a>release_ref 
+##  <a name="release_ref"></a> release_ref 
 
  Türetilen bir sınıfta geçersiz kılındığında, serbest başvuru sayısı bu `ISource` bloğu.  
   
@@ -199,7 +203,7 @@ virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından çağrılır bir `ITarget` bu kaynaktan bağlantısız nesnesi. Kaynak blok için hedef blok ayrılan tüm kaynakları serbest bırakmak izin verilmez.  
   
-##  <a name="reserve"></a>ayırma 
+##  <a name="reserve"></a> ayırma 
 
  Türetilen bir sınıfta geçersiz kılındığında, daha önce bu tarafından sunulan bir ileti ayırır `ISource` bloğu.  
   
@@ -217,12 +221,12 @@ virtual bool reserve(
  Çağırma hedef blok gösteren bir işaretçi `reserve` yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`İletiyi başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak sağlanamadı ayırmaları Reddet ve benzeri başka bir hedef tarafından kabul.  
+ `true` İletiyi başarıyla ayrıldı, `false` Aksi takdirde. Ayırmalar dahil olmak üzere çeşitli nedenlerle başarısız olabilir: ileti zaten ayrılmış veya kaynak sağlanamadı ayırmaları Reddet ve benzeri başka bir hedef tarafından kabul.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırdıktan sonra `reserve`, başarılı olursa ya da çağırmalıdır `consume` veya `release` alın veya ileti elinde sırasıyla vermek için.  
   
-##  <a name="unlink_target"></a>unlink_target 
+##  <a name="unlink_target"></a> unlink_target 
 
  Türetilen bir sınıfta geçersiz kılındığında, bir hedef blok bu bağlantıyı keser `ISource` , bloke önceden bağlanması bulundu.  
   
@@ -234,7 +238,7 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
  `_PTarget`  
  Bu ayrılmış hedef blok gösteren bir işaretçi `ISource` bloğu.  
   
-##  <a name="unlink_targets"></a>unlink_targets 
+##  <a name="unlink_targets"></a> unlink_targets 
 
  Türetilen bir sınıfta geçersiz kılındığında, tüm hedef blokları bu bağlantıyı keser `ISource` bloğu.  
   

@@ -4,31 +4,34 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __cpuid_cpp
 - __cpuid
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __cpuid intrinsic
 - cpuid instruction
 - cpuid intrinsic
 ms.assetid: f8c344d3-91bf-405f-8622-cb0e337a6bdc
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: cc20732fa9a79765f4cd56e53ddd990a4d1ea1a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d7e63f8259d9fb01729252a7d33342296fa1d6c3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cpuid-cpuidex"></a>__cpuid, __cpuidex
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturur `cpuid` x86 üzerinde kullanılabilir yönerge ve [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]. Bu yönerge, desteklenen özellikler hakkında bilgi için işlemci ve CPU türünü sorgular.  
   
@@ -48,21 +51,21 @@ void __cpuidex(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`cpuInfo`  
+ [out] `cpuInfo`  
  EAX, EBX, ECX ve EDX döndürülen CPU desteklenen özellikler hakkında bilgiler içeren bir dizi dört tamsayı.  
   
- [in]`function_id`  
+ [in] `function_id`  
  Bilgi almak için belirten bir kod içinde EAX geçirildi.  
   
- [in]`subfunction_id`  
+ [in] `subfunction_id`  
  Bilgi almak için belirten bir ek kod içinde ECX geçirildi.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__cpuid`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
-|`__cpuidex`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__cpuid`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__cpuidex`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

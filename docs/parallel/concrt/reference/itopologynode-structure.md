@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ITopologyNode
 - CONCRTRM/concurrency::ITopologyNode
@@ -15,19 +16,22 @@ f1_keywords:
 - CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetId
 - CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNext
 - CONCRTRM/concurrency::ITopologyNode::ITopologyNode::GetNumaNode
-dev_langs: C++
-helpviewer_keywords: ITopologyNode structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- ITopologyNode structure
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9c2e989dca783e90d975bd46a6f5f44cdfa469ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6fcab5f66af46989e0487657e018531423fd5f48
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="itopologynode-structure"></a>ITopologyNode Yapısı
 Kaynak Yöneticisi tarafından tanımlanan bir topoloji düğüme bir arabirim. Bir düğüm bir veya daha fazla yürütme kaynakları içerir.  
@@ -44,10 +48,10 @@ struct ITopologyNode;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Itopologynode::getexecutionresourcecount](#getexecutionresourcecount)|Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.|  
+|[ITopologyNode::GetExecutionResourceCount](#getexecutionresourcecount)|Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.|  
 |[Itopologynode::getfirstexecutionresource](#getfirstexecutionresource)|Numaralandırma sırasında bu düğüm altında gruplanmış ilk yürütme kaynak döndürür.|  
-|[Itopologynode::GetID](#getid)|Bu düğüm için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
-|[Itopologynode::GetNext](#getnext)|Sonraki topoloji düğümü numaralandırma sırasında bir arabirim döndürür.|  
+|[ITopologyNode::GetId](#getid)|Bu düğüm için Resource Manager'ın benzersiz tanımlayıcısını döndürür.|  
+|[ITopologyNode::GetNext](#getnext)|Sonraki topoloji düğümü numaralandırma sırasında bir arabirim döndürür.|  
 |[Itopologynode::getnumanode](#getnumanode)|Bu kaynak Maanger düğüm ait olduğu NUMA düğüm numarasını döndürür Windows atanır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -61,7 +65,7 @@ struct ITopologyNode;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="getexecutionresourcecount"></a>Itopologynode::getexecutionresourcecount yöntemi  
+##  <a name="getexecutionresourcecount"></a>  ITopologyNode::GetExecutionResourceCount Method  
  Bu düğüm altında gruplanmış yürütme kaynakların sayısını döndürür.  
   
 ```
@@ -71,7 +75,7 @@ virtual unsigned int GetExecutionResourceCount() const = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  Yürütme kaynak sayısı bu düğüm altında gruplanmış.  
   
-##  <a name="getfirstexecutionresource"></a>Itopologynode::getfirstexecutionresource yöntemi  
+##  <a name="getfirstexecutionresource"></a>  Itopologynode::getfirstexecutionresource yöntemi  
  Numaralandırma sırasında bu düğüm altında gruplanmış ilk yürütme kaynak döndürür.  
   
 ```
@@ -81,7 +85,7 @@ virtual ITopologyExecutionResource *GetFirstExecutionResource() const = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk yürütme kaynak numaralandırma sırasında bu düğüm altında gruplanmış olarak.  
   
-##  <a name="getid"></a>Itopologynode::GetID yöntemi  
+##  <a name="getid"></a>  Itopologynode::GetID yöntemi  
  Bu düğüm için Resource Manager'ın benzersiz tanımlayıcısını döndürür.  
   
 ```
@@ -96,7 +100,7 @@ virtual unsigned int GetId() const = 0;
   
  Düğüm sayısı işlevinden elde edilebilir [GetProcessorNodeCount](concurrency-namespace-functions.md).  
   
-##  <a name="getnext"></a>Itopologynode::GetNext yöntemi  
+##  <a name="getnext"></a>  Itopologynode::GetNext yöntemi  
  Sonraki topoloji düğümü numaralandırma sırasında bir arabirim döndürür.  
   
 ```
@@ -106,7 +110,7 @@ virtual ITopologyNode *GetNext() const = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  Numaralandırma sırasında bir sonraki düğüme bir arabirim. Sistem topoloji numaralandırması sırasına göre daha fazla düğüm varsa, bu yöntem değeri döndürür `NULL`.  
   
-##  <a name="getnumanode"></a>Itopologynode::getnumanode yöntemi  
+##  <a name="getnumanode"></a>  Itopologynode::getnumanode yöntemi  
  Bu kaynak Maanger düğüm ait olduğu NUMA düğüm numarasını döndürür Windows atanır.  
   
 ```

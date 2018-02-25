@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
-helpviewer_keywords: read-only provider
+ms.topic: reference
+dev_langs:
+- C++
+helpviewer_keywords:
+- read-only provider
 ms.assetid: 22a8adb5-19da-43b5-9733-0ea72bb8684c
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 354d1f64c2236706a977b8a9093e99f7b2013b22
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 53284e4c19c4f3a9c40556e88a24c1fd78e31e4d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="implementing-the-simple-read-only-provider"></a>Basit Salt Okunur Sağlayıcıyı Uygulama
 Bu konudaki genişletilmiş örnek bir metin dosyasından iki dize kümesi okuyan basit bir salt okunur sağlayıcıyı oluşturmak için sihirbaz tarafından oluşturulan dosyaların nasıl düzenleneceğini gösterir. Sihirbaz dosyalarından bu sağlayıcısı oluşturmak için aşağıdaki görevleri tamamlamak için kodu ekleyin:  

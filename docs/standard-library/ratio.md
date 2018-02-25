@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ratio/std::mega
 - ratio/std::peta
@@ -36,20 +37,22 @@ f1_keywords:
 - ratio/std::exa
 - ratio/std::deci
 - ratio/std::deca
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 20331a08a781937eadbe8984b4f920362efc0961
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 415c91f79102103fe71e21384b16d691779e6a2d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltratiogt"></a>&lt;oranı&gt;
+# <a name="ltratiogt"></a>&lt;ratio&gt;
 
 Standart üstbilgisini \<oranı > sabitleri ve depolamak ve derleme zamanında rasyonel sayılar işlemek için kullanılan şablonları tanımlamak için.  
   
@@ -71,7 +74,7 @@ template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
 }
 ```  
 
-Şablon `ratio` statik sabitleri tanımlar `num` ve `den` şekilde `num`  /  `den` pay == / payda ve `num` ve `den` hiçbir ortak faktörde sahip. `num` / `den`Şablon sınıfı tarafından temsil edilen değerdir. Bu nedenle, `type` örneklemesi atar `ratio<num, den>`.  
+Şablon `ratio` statik sabitleri tanımlar `num` ve `den` şekilde `num`  /  `den` pay == / payda ve `num` ve `den` hiçbir ortak faktörde sahip. `num` / `den` Şablon sınıfı tarafından temsil edilen değerdir. Bu nedenle, `type` örneklemesi atar `ratio<num, den>`.  
   
 ### <a name="specializations"></a>Uzmanlıklar
 
@@ -81,7 +84,7 @@ template<std::intmax_t Numerator, std::intmax_t Denominator = 1>
   
 Ayrıca, özelleştirmeleri olmalıdır iki şablon parametresi her uzmanlık alır `ratio`. Değeri `type` ilişkili bir mantıksal işlem tarafından belirlenir.  
   
-|Ad|`type`Değer|  
+|Ad|`type` Değer|  
 |----------|------------------|  
 |`ratio_add`|`R1 + R2`|  
 |`ratio_divide`|`R1 / R2`|  

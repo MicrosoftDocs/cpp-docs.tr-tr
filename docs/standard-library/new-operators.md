@@ -5,26 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-caps.latest.revision: "8"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 32707847948c32f671e7ebd7def23165b59a63a8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: a5bd2224f65db9ac376d04beed52217c1a0c4ec1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 ||||  
 |-|-|-|  
-|[delete işleci](#op_delete)|[delete [] işleci](#op_delete_arr)|[new işleci](#op_new)|  
-|[new [] işleci](#op_new_arr)|  
+|[delete işleci](#op_delete)|[operator delete[]](#op_delete_arr)|[new işleci](#op_new)|  
+|[operator new[]](#op_new_arr)|  
   
-##  <a name="op_delete"></a>delete işleci  
+##  <a name="op_delete">delete işleci</a>  
  Tek tek nesnelerin için depolama alanı ayırması için bir silme ifadesi tarafından çağrılan işlev.  
   
 ```
@@ -53,7 +53,7 @@ void operator delete(void* ptr,
 ### <a name="example"></a>Örnek  
   Bkz: [new işleci](../standard-library/new-operators.md#op_new) kullanan bir örnek `operator delete`.  
   
-##  <a name="op_delete_arr"></a>delete [] işleci  
+##  <a name="op_delete_arr"></a>  delete [] işleci  
  Nesne dizisi için depolama alanı ayırması için bir silme ifadesi tarafından çağrılan işlev.  
   
 ```
@@ -80,7 +80,7 @@ void operator delete[](void* ptr,
 ### <a name="example"></a>Örnek  
   Bkz: [new işleci &#91; &#93;](../standard-library/new-operators.md#op_new_arr) kullanımını örnekleri için `operator delete[]`.  
   
-##  <a name="op_new"></a>new işleci  
+##  <a name="op_new">new işleci</a>  
  Yeni-ayrı ayrı nesneleri için depolama alanı ayırmak için ifadesi tarafından çağrılan işlev.  
   
 ```
@@ -101,7 +101,7 @@ void* operator new(std::size_t count,
  Döndürülecek işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya`ptr.`  
+ Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya `ptr.`  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk işlev ayırmak için yeni bir ifade tarafından çağrılır `count` uygun depolama bayt hizalı bu boyut herhangi bir nesne temsil etmek için. Program bir alternatif işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir ve bu nedenle değiştirebilen bu işlev imzası ile tanımlayabilirsiniz.  
@@ -175,7 +175,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_new_arr"></a>new [] işleci  
+##  <a name="op_new_arr"></a>  new [] işleci  
  Ayırma işlevi nesnelerinin bir dizisi için depolama alanı ayırmak için yeni bir ifade tarafından çağrılır.  
   
 ```
@@ -196,7 +196,7 @@ void* operator new[](std::size_t count,
  Döndürülecek işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya`ptr.`  
+ Yeni ayrılmış depolama en düşük bayt adresini gösteren bir işaretçi. Veya `ptr.`  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk işlev tarafından çağrılır bir `new[]` ayırmak için ifade `count` bayt depolama uygun o boyuttaki tüm dizi nesnesini temsil eden hizalanmış ya da daha küçük. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Gerekli aynı davranıştır [new işleci](../standard-library/new-operators.md#op_new)( **size_t**). Döndürülecek varsayılan davranıştır `operator new`( `count`).  

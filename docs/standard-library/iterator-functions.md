@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xutility/std::advance
 - xutility/std::back_inserter
@@ -22,7 +22,7 @@ f1_keywords:
 - xutility/std::next
 - xutility/std::prev
 ms.assetid: 4a57c9a3-7e36-411f-8655-e0be2eec88e7
-caps.latest.revision: "16"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::advance [C++]
@@ -39,22 +39,22 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: 0474e52f9d5f0f68ec4a404ebe9c60d9e48f64d2
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 48b07418520402f4765c2f7cd3488dde112e192d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
 ||||  
 |-|-|-|  
-|[Gelişmiş](#advance)|[back_inserter](#back_inserter)|[başlayın](#begin)|  
-|[cbegin](#cbegin)|[cend](#cend)|[uzaklık](#distance)|  
-|[Bitiş](#end)|[front_inserter](#front_inserter)|[ekleyici](#inserter)|  
+|[advance](#advance)|[back_inserter](#back_inserter)|[Başlangıç](#begin)|  
+|[cbegin](#cbegin)|[cend](#cend)|[distance](#distance)|  
+|[Bitiş](#end)|[front_inserter](#front_inserter)|[inserter](#inserter)|  
 |[make_checked_array_iterator](#make_checked_array_iterator)|[make_move_iterator](#make_move_iterator)|[make_unchecked_array_iterator](#make_unchecked_array_iterator)|  
-|[sonraki](#next)|[önceki](#prev)|  
+|[next](#next)|[prev](#prev)|  
   
-##  <a name="advance"></a>Gelişmiş  
+##  <a name="advance"></a>  Gelişmiş  
  Belirtilen bir konum sayısıyla yineleyiciyi artırır.  
   
 ```  
@@ -125,7 +125,7 @@ LPOS is advanced 4 steps forward to point to the fifth element: 5.
 LPOS is moved 3 steps back to point to the 2nd element: 2.  
 ```  
   
-##  <a name="back_inserter"></a>back_inserter  
+##  <a name="back_inserter"></a>  back_inserter  
  Belirtilen kapsayıcının arkasında öğeler ekleyebilen bir yineleyici oluşturur.  
   
 ```  
@@ -192,7 +192,7 @@ The initial vector vec is: ( 0 1 2 ).
 After the insertions, the vector vec is: ( 0 1 2 30 40 500 600 ).  
 ```  
   
-##  <a name="begin"></a>başlayın  
+##  <a name="begin">Başlangıç</a>  
  Belirtilen bir kapsayıcıdaki ilk öğe için bir yineleyici alır.  
   
 ```  
@@ -292,7 +292,7 @@ void reverse_sort(C& c) {
 error C2228: left of '.begin' must have class/struct/union  
 ```  
   
-##  <a name="cbegin"></a>cbegin  
+##  <a name="cbegin">cbegin</a>  
  Belirtilen kapsayıcıdaki ilk öğeyi izleyen öğeye sabit bir yineleyici alır.  
   
 ```  
@@ -321,7 +321,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="cend"></a>cend  
+##  <a name="cend">cend</a>  
  Belirtilen kapsayıcıdaki son öğeyi izleyen öğe için sabit bir yineleyici alır.  
   
 ```  
@@ -350,7 +350,7 @@ auto i2 = Container.cend();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="distance"></a>uzaklık  
+##  <a name="distance"></a>  uzaklık  
  İki yineleyici tarafından ele alınan konumlar arasındaki artış sayısını belirler.  
   
 ```  
@@ -419,7 +419,7 @@ LPOS is advanced 7 steps forward to point  to the eighth element: 12.
 The distance from L.begin( ) to LPOS is: 7.  
 ```  
   
-##  <a name="end"></a>Bitiş  
+##  <a name="end">Bitiş</a>  
  Belirtilen kapsayıcıdaki son öğeyi izleyen öğeye bir yineleyici alır.  
   
 ```  
@@ -450,7 +450,7 @@ Ty *end(Ty (& array)[Size]);
 ### <a name="remarks"></a>Açıklamalar  
  Kod örneği için bkz: [başlamak](../standard-library/iterator-functions.md#begin).  
   
-##  <a name="front_inserter"></a>front_inserter  
+##  <a name="front_inserter"></a>  front_inserter  
  Belirtilen kapsayıcının önünde öğeler ekleyebilen bir yineleyici oluşturur.  
   
 ```  
@@ -517,7 +517,7 @@ After the front insertions, the list L is:
  ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).  
 ```  
   
-##  <a name="inserter"></a>ekleyici  
+##  <a name="inserter"></a>  ekleyici  
  Kullanmanıza olanak sağlayan bir yardımcı şablon işlevi `inserter(_Cont, _Where)` yerine `insert_iterator<Container>(_Cont, _Where)`.  
   
 ```  
@@ -585,7 +585,7 @@ After the insertions, the list L is:
  ( 1 20 30 40 500 ).  
 ```  
   
-##  <a name="make_checked_array_iterator"></a>make_checked_array_iterator  
+##  <a name="make_checked_array_iterator"></a>  make_checked_array_iterator  
  Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterator-class.md) diğer algoritmalar tarafından kullanılabilir.  
   
 > [!NOTE]
@@ -675,7 +675,7 @@ int main()
   
 ```  
   
-##  <a name="make_move_iterator"></a>make_move_iterator  
+##  <a name="make_move_iterator"></a>  make_move_iterator  
  Oluşturur bir `move iterator` olarak sağlanan yineleyici içeren `stored` yineleyici.  
   
 ```  
@@ -691,7 +691,7 @@ make_move_iterator(const Iterator& _It);
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi döndürür `move_iterator` `<Iterator>(_It)`.  
   
-##  <a name="make_unchecked_array_iterator"></a>make_unchecked_array_iterator  
+##  <a name="make_unchecked_array_iterator"></a>  make_unchecked_array_iterator  
  Oluşturur bir [unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md) diğer algoritmalar tarafından kullanılabilir.  
   
 > [!NOTE]
@@ -766,7 +766,7 @@ int main()
   
 ```  
   
-##  <a name="next"></a>sonraki  
+##  <a name="next"></a>  Sonraki  
  Belirtilen sayıda yineler ve yeni yineleyici konumunu döndürür.  
   
 ```  
@@ -789,7 +789,7 @@ InputIterator next(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi döndürür `next` artırılır `_Off` saatleri  
   
-##  <a name="prev"></a>önceki  
+##  <a name="prev"></a>  Önceki  
  Belirtilen sayıda geri yineler ve yeni yineleyici konumunu döndürür.  
   
 ```  
@@ -810,5 +810,5 @@ BidirectionalIterator prev(
  Şablon işlevi döndürür `next` indirildiği `off` kez.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Yineleyici >](../standard-library/iterator.md)
+ [\<iterator>](../standard-library/iterator.md)
 

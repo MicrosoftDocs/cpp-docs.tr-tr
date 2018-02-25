@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - call
 - AGENTS/concurrency::call
@@ -16,19 +17,22 @@ f1_keywords:
 - AGENTS/concurrency::call::propagate_message
 - AGENTS/concurrency::call::send_message
 - AGENTS/concurrency::call::supports_anonymous_source
-dev_langs: C++
-helpviewer_keywords: call class
+dev_langs:
+- C++
+helpviewer_keywords:
+- call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2d575aaa01a3668925c6a81eda7d8d99cc591180
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9a63873b7666e4f75ddd39fbf684ebb80c1f85e8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="call-class"></a>çağrı Sınıfı
 A `call` ileti bloğu, birden çok kaynak sıralı `target_block` , çağırır belirtilen işlevi bir ileti alırken.  
@@ -54,7 +58,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Arama](#ctor)|Fazla Yüklendi. Oluşturan bir `call` ileti bloğu.|  
-|[~ call yok Edicisi](#dtor)|Bozar `call` ileti bloğu.|  
+|[~call Destructor](#dtor)|Bozar `call` ileti bloğu.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
@@ -81,7 +85,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>Arama 
+##  <a name="ctor">Arama</a> 
 
  Oluşturan bir `call` ileti bloğu.  
   
@@ -132,7 +136,7 @@ call(
   
  Türü `filter_method` functor imzaya sahip olduğu `bool (T const &)` hangi çağrılır bu tarafından `call` sunulan iletisine kabul etmelidir olup olmadığını belirlemek için ileti bloğu.  
   
-##  <a name="dtor"></a>~ çağırın 
+##  <a name="dtor"></a> ~ çağırın 
 
  Bozar `call` ileti bloğu.  
   
@@ -140,7 +144,7 @@ call(
 ~call();
 ```  
   
-##  <a name="process_input_messages"></a>process_input_messages 
+##  <a name="process_input_messages">process_input_messages</a> 
 
  Çağrı işlevi, giriş iletilerde yürütür.  
   
@@ -151,7 +155,7 @@ virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 ### <a name="parameters"></a>Parametreler  
  `_PMessage`  
   
-##  <a name="process_message"></a>process_message 
+##  <a name="process_message"></a> process_message 
 
  Bunu kabul edildi iletisini işler `call` ileti bloğu.  
   
@@ -163,7 +167,7 @@ virtual void process_message(_Inout_ message<T>* _PMessage);
  `_PMessage`  
  Bir işaretçi işlenecek iletisi.  
   
-##  <a name="propagate_message"></a>propagate_message 
+##  <a name="propagate_message"></a> propagate_message 
 
  Zaman uyumsuz olarak bir iletiden geçirmeden bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `propagate` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -183,7 +187,7 @@ virtual message_status propagate_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="send_message"></a>send_message 
+##  <a name="send_message"></a> send_message 
 
  İletiyi zaman uyumlu olarak geçirir bir `ISource` bu bloğuna `call` ileti bloğu. Tarafından çağrılan `send` kaynak bloğu tarafından çağrıldığında yöntemi.  
   
@@ -203,7 +207,7 @@ virtual message_status send_message(
 ### <a name="return-value"></a>Dönüş Değeri  
  A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
   
-##  <a name="supports_anonymous_source"></a>supports_anonymous_source 
+##  <a name="supports_anonymous_source">supports_anonymous_source</a> 
 
  Geçersiz kılmaları `supports_anonymous_source` bu bloğu için bağlantılı olmayan bir kaynak tarafından sunulan iletileri kabul ettiğinizi belirtmek için yöntem.  
   
@@ -212,7 +216,7 @@ virtual bool supports_anonymous_source();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Blok sunulan iletiler erteleyin değil çünkü.  
+ `true` Blok sunulan iletiler erteleyin değil çünkü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

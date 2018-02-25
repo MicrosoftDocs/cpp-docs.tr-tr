@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - regex/std::sub_match
 - regex/std::sub_match::matched
@@ -16,7 +17,8 @@ f1_keywords:
 - regex/std::sub_match::difference_type
 - regex/std::sub_match::iterator
 - regex/std::sub_match::value_type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::sub_match [C++]
 - std::sub_match [C++], matched
@@ -27,16 +29,17 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0d26e17fd496507f6985f7896eb01f7a79c900e1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 87b955ace021b87351d499b8dcce100d1b2dec91
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="submatch-class"></a>sub_match Sınıfı
 Bir submatch açıklar.  
@@ -83,7 +86,7 @@ public:
   
  **Namespace:** std  
   
-##  <a name="compare"></a>sub_match::COMPARE  
+##  <a name="compare"></a>  sub_match::compare  
  Bir dizi karşı submatch karşılaştırın.  
   
 ```  
@@ -166,7 +169,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="difference_type"></a>sub_match::difference_type  
+##  <a name="difference_type"></a>  sub_match::difference_type  
  Yineleyici fark türü.  
   
 ```  
@@ -229,7 +232,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="iterator"></a>sub_match::iterator  
+##  <a name="iterator"></a>  sub_match::iterator  
  Yineleyici türü.  
   
 ```  
@@ -292,7 +295,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="length"></a>sub_match::length  
+##  <a name="length"></a>  sub_match::length  
  Bir submatch uzunluğunu döndürür.  
   
 ```  
@@ -355,7 +358,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="matched"></a>sub_match::matched  
+##  <a name="matched"></a>  sub_match::matched  
  Eşleşme başarılı olup olmadığını gösterir.  
   
 ```  
@@ -418,7 +421,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="op_basic_string_lt_value_type_gt"></a>sub_match::operator basic_string&lt;value_type&gt;  
+##  <a name="op_basic_string_lt_value_type_gt"></a>  sub_match::operator basic_string&lt;value_type&gt;  
  Bir dize submatch atamaları.  
   
 ```  
@@ -481,7 +484,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="str"></a>sub_match::Str  
+##  <a name="str"></a>  sub_match::str  
  Bir dize submatch dönüştürür.  
   
 ```  
@@ -544,7 +547,7 @@ compare(string) == 1
 compare(sub) == 0  
 ```  
   
-##  <a name="value_type"></a>sub_match::value_type  
+##  <a name="value_type"></a>  sub_match::value_type  
  Öğenin türü.  
   
 ```  
@@ -608,5 +611,5 @@ compare(sub) == 0
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Regex >](../standard-library/regex.md)   
+ [\<regex>](../standard-library/regex.md)   
  [sub_match](../standard-library/sub-match-class.md)

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,11 +21,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ed7ad9ab7b28758419c2b7c848852678f69bc3e2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: da3d6e700ef69bda084a6bc5c010957c7fddd0c4
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Tüketiciye Döndürülecek Olan Sütunları Dinamik Olarak Belirleme
 PROVIDER_COLUMN_ENTRY normalde işlemek **IColumnsInfo::GetColumnsInfo** çağırın. Ancak, bir tüketici yer işaretleri kullanmayı tercih edebilirsiniz çünkü sağlayıcı için bir yer işareti ister bağlı olarak Tüketiciye döndürülecek olan sütunları değiştirmek mümkün olması gerekir.  

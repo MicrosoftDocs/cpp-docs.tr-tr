@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - DispatchState
 - CONCRTRM/concurrency::DispatchState
@@ -14,19 +15,22 @@ f1_keywords:
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_dispatchStateSize
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_fIsPreviousContextAsynchronouslyBlocked
 - CONCRTRM/concurrency::DispatchState::DispatchState::m_reserved
-dev_langs: C++
-helpviewer_keywords: DispatchState structure
+dev_langs:
+- C++
+helpviewer_keywords:
+- DispatchState structure
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d58fc12aa31c9d6a72acac6287a425044d42777c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 76deac0daa3a8bce2880b2cc9afda0faae263558
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="dispatchstate-structure"></a>DispatchState Yapısı
 `DispatchState` Yapısı durumuna aktarmak için kullanılır `IExecutionContext::Dispatch` yöntemi. Hangi koşullarda açıklar `Dispatch` yöntemi çağrıldığında bir `IExecutionContext` arabirimi.  
@@ -61,28 +65,28 @@ struct DispatchState;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>DispatchState::DispatchState Oluşturucusu  
+##  <a name="ctor"></a>  DispatchState::DispatchState Oluşturucusu  
  Yeni bir oluşturur `DispatchState` nesnesi.  
   
 ```
 DispatchState();
 ```  
   
-##  <a name="m_dispatchstatesize"></a>DispatchState::m_dispatchStateSize veri üyesi  
+##  <a name="m_dispatchstatesize"></a>  DispatchState::m_dispatchStateSize veri üyesi  
  Sürüm oluşturma için kullanılan bu yapı boyutu.  
   
 ```
 unsigned long m_dispatchStateSize;
 ```  
   
-##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>Dispatchstate::m_fıspreviouscontextasynchronouslyblocked veri üyesi  
+##  <a name="m_fispreviouscontextasynchronouslyblocked"></a>  Dispatchstate::m_fıspreviouscontextasynchronouslyblocked veri üyesi  
  Bu bağlamda geçtiğini olup olmadığını söyler `Dispatch` yöntemi önceki bağlam zaman uyumsuz olarak engellenmiş nedeniyle. Bu yalnızca UMS zamanlama bağlamda kullanılır ve değerine ayarlayın `0` için diğer tüm yürütme bağlamı.  
   
 ```
 unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
 ```  
   
-##  <a name="m_reserved"></a>DispatchState::m_reserved veri üyesi  
+##  <a name="m_reserved"></a>  DispatchState::m_reserved veri üyesi  
  BITS gelecekteki bilgi geçirme için ayrılmış.  
   
 ```

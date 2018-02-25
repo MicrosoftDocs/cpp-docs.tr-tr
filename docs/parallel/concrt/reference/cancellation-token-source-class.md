@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - cancellation_token_source
 - PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source
@@ -14,19 +15,22 @@ f1_keywords:
 - PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::cancel
 - PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::create_linked_source
 - PPLCANCELLATION_TOKEN/concurrency::cancellation_token_source::get_token
-dev_langs: C++
-helpviewer_keywords: cancellation_token_source class
+dev_langs:
+- C++
+helpviewer_keywords:
+- cancellation_token_source class
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 02669609e25fc772f1efa49f55045eaddbaad6b9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8512ee42a86ec706626dac765a725dfb994eb3d0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cancellationtokensource-class"></a>cancellation_token_source Sınıfı
 `cancellation_token_source` Sınıfı, bazı İptal işlemi iptal etme yeteneğini temsil eder.  
@@ -44,7 +48,7 @@ class cancellation_token_source;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[cancellation_token_source](#ctor)|Fazla Yüklendi. Yeni bir oluşturur `cancellation_token_source`. Kaynak başka bir iptal edilebilen işlem iptaline bayrak için kullanılabilir.|  
-|[~ cancellation_token_source yok Edicisi](#dtor)||  
+|[~cancellation_token_source Destructor](#dtor)||  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -59,8 +63,8 @@ class cancellation_token_source;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[operator!=](#operator_neq)||  
-|[işleç =](#operator_eq)||  
-|[operator ==](#operator_eq_eq)||  
+|[operator=](#operator_eq)||  
+|[operator==](#operator_eq_eq)||  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `cancellation_token_source`  
@@ -70,13 +74,13 @@ class cancellation_token_source;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="dtor"></a>~ cancellation_token_source 
+##  <a name="dtor"></a> ~ cancellation_token_source 
 
 ```
 ~cancellation_token_source();
 ```  
   
-##  <a name="cancel"></a>İptal 
+##  <a name="cancel">İptal</a> 
 
  Belirteç iptal eder. Tüm `task_group`, `structured_task_group`, veya `task` hangi belirteç kullanır, bu çağrı sırasında iptal edilir ve sonraki kesinti noktada bir özel durum.  
   
@@ -84,7 +88,7 @@ class cancellation_token_source;
 void cancel() const;
 ```  
   
-##  <a name="ctor"></a>cancellation_token_source 
+##  <a name="ctor"></a> cancellation_token_source 
 
  Yeni bir oluşturur `cancellation_token_source`. Kaynak başka bir iptal edilebilen işlem iptaline bayrak için kullanılabilir.  
   
@@ -99,7 +103,7 @@ cancellation_token_source(cancellation_token_source&& _Src);
 ### <a name="parameters"></a>Parametreler  
  `_Src`  
   
-##  <a name="create_linked_source"></a>create_linked_source 
+##  <a name="create_linked_source"></a> create_linked_source 
 
  Oluşturur bir `cancellation_token_source` sağlanan belirteci iptal edildiğinde İptal.  
   
@@ -125,7 +129,7 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 ### <a name="return-value"></a>Dönüş Değeri  
  A `cancellation_token_source` belirteç tarafından sağlandığında iptal `_Src` parametresi iptal edilir.  
   
-##  <a name="get_token"></a>get_token 
+##  <a name="get_token"></a> get_token 
 
  Bu kaynağı ile ilişkili iptal belirtecini döndürür. Döndürülen belirteç iptalleri sorgulanan veya iptal gerçekleşir açmadıklarını ve ne zaman bir geri çağırma sağlayın.  
   
@@ -136,7 +140,7 @@ cancellation_token get_token() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu kaynağı ile ilişkili iptal belirteci.  
   
-##  <a name="operator_neq"></a>operator! = 
+##  <a name="operator_neq"></a> operator! = 
 
 ```
 bool operator!= (const cancellation_token_source& _Src) const;
@@ -147,7 +151,7 @@ bool operator!= (const cancellation_token_source& _Src) const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="operator_eq"></a>işleç = 
+##  <a name="operator_eq"></a> işleç = 
 
 ```
 cancellation_token_source& operator= (const cancellation_token_source& _Src);
@@ -160,7 +164,7 @@ cancellation_token_source& operator= (cancellation_token_source&& _Src);
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="operator_eq_eq"></a>operator == 
+##  <a name="operator_eq_eq"></a> operator == 
 
 ```
 bool operator== (const cancellation_token_source& _Src) const;

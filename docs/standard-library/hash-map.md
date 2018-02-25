@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <hash_map>
 - std::<hash_map>
-dev_langs: C++
-helpviewer_keywords: hash_map header
+dev_langs:
+- C++
+helpviewer_keywords:
+- hash_map header
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 41a8d8fd7c1f501401096d069c7dac097693f522
-ms.sourcegitcommit: 6f40bba1772a09ff0e3843d5f70b553e1a15ab50
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c50716912b42aace87b1132672331c86d9eae162
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
 

@@ -4,28 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __outword
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __outword
+dev_langs:
+- C++
 helpviewer_keywords:
 - __outword intrinsic
 - out instruction
 ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: eced2be2f5ccc29be5f9ac936dfeae9f4cdb03a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6f85550516167b155f2ec6e871ea17c9e249e746
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="outword"></a>__outword
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturur `out` word gönderir yönerge `Data` tarafından belirtilen g/ç bağlantı noktası çıkışı `Port`.  
   
@@ -39,17 +43,17 @@ void __outword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Port`  
+ [in] `Port`  
  Veri göndermek için bağlantı noktası.  
   
- [in]`Data`  
+ [in] `Data`  
  Gönderilecek veri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__outword`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__outword`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

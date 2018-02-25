@@ -4,16 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xloctime/std::time_put
 - locale/std::time_put::char_type
 - locale/std::time_put::iter_type
 - locale/std::time_put::do_put
 - locale/std::time_put::put
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::time_put [C++]
 - std::time_put [C++], char_type
@@ -21,16 +23,17 @@ helpviewer_keywords:
 - std::time_put [C++], do_put
 - std::time_put [C++], put
 ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d27cb58766e019d26e3cfc3d99b4d719be701f37
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b926fce11dcb7f2a18cc29a6dd653d1fb061bc20
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="timeput-class"></a>time_put Sınıfı
 Saat değerleri denetim dönüşümleri dizilerini türü için bir yerel ayar model olarak hizmet verebilir bir nesne şablonu sınıf tanımlar `CharType`.  
@@ -71,14 +74,14 @@ class time_put : public locale::facet;
 |||  
 |-|-|  
 |[do_put](#do_put)|Bir dizi olarak saat ve tarih bilgilerini çıkarır sanal bir işlev `CharType`s.|  
-|[yerleştirme](#put)|Bir dizi olarak saat ve tarih bilgilerini çıkarır `CharType`s.|  
+|[PUT](#put)|Bir dizi olarak saat ve tarih bilgilerini çıkarır `CharType`s.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>time_put::char_type  
+##  <a name="char_type"></a>  time_put::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -88,7 +91,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="do_put"></a>time_put::do_put  
+##  <a name="do_put"></a>  time_put::do_put  
  Bir dizi olarak saat ve tarih bilgilerini çıkarır sanal bir işlev **CharType**s.  
   
 ```  
@@ -127,7 +130,7 @@ virtual iter_type do_put(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [put](#put), çağıran `do_put`.  
   
-##  <a name="iter_type"></a>time_put::iter_type  
+##  <a name="iter_type"></a>  time_put::iter_type  
  Bir çıkış yineleyiciyi açıklayan tür.  
   
 ```  
@@ -137,7 +140,7 @@ typedef OutputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **OutputIterator**.  
   
-##  <a name="put"></a>time_put::Put  
+##  <a name="put"></a>  time_put::Put  
  Bir dizi olarak saat ve tarih bilgilerini çıkarır **CharType**s.  
   
 ```  
@@ -231,7 +234,7 @@ num_put( ) = x: 05:30:40 07/04/00
 strftime( ) = x: 05:30:40 07/04/00  
 ```  
   
-##  <a name="time_put"></a>time_put::time_put  
+##  <a name="time_put"></a>  time_put::time_put  
  Nesne türü için oluşturucu `time_put`.  
   
 ```  
@@ -249,7 +252,7 @@ explicit time_put(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Oluşturucu temel nesnesiyle başlatır [locale::facet](../standard-library/locale-class.md#facet_class)(*_Refs*).  
   

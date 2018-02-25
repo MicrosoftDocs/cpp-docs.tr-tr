@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocale/std::ctype
 - xlocale/std::ctype::char_type
@@ -24,7 +25,8 @@ f1_keywords:
 - xlocale/std::ctype::tolower
 - xlocale/std::ctype::toupper
 - xlocale/std::ctype::widen
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::ctype [C++]
 - std::ctype [C++], char_type
@@ -43,16 +45,17 @@ helpviewer_keywords:
 - std::ctype [C++], toupper
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 866ec8b37852f6c4fea6fdeeefa5eb9fdf21d819
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0403dd297d726f0d0ef1ab7794d37b05c46967b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 Büyük küçük harflerden ve yerel karakter kümesiyle yerel ayar tarafından kullanılan küme arasında dönüştürme yapan, karakterleri sınıflandırmak için kullanılan model sağlayan bir sınıf.  
@@ -121,7 +124,7 @@ class ctype : public ctype_base;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>CType::char_type  
+##  <a name="char_type"></a>  ctype::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlayan tür.  
   
 ```  
@@ -134,7 +137,7 @@ typedef CharType char_type;
 ### <a name="example"></a>Örnek  
   Üye işlevine bakın [widen](#widen) kullanan bir örnek `char_type` dönüş değeri olarak.  
   
-##  <a name="ctype"></a>CType::CType  
+##  <a name="ctype"></a>  CType::CType  
  Yerel ayar model karakter olarak hizmet sınıfı ctype nesnelerin Oluşturucusu.  
   
 ```  
@@ -152,13 +155,13 @@ explicit ctype(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu başlatır, `locale::facet` temel nesnesiyle **yerel ayar::**[modeli](../standard-library/locale-class.md#facet_class)( `_Refs`).  
   
-##  <a name="do_is"></a>CType::do_is  
+##  <a name="do_is"></a>  ctype::do_is  
  Tek bir karakterin belirli bir özniteliği olup olmadığını sınamak veya bir aralıktaki her bir karakter özniteliğini sınıflandırmak ve bunları bir dizide saklamak için çağrılan bir sanal işlev.  
   
 ```  
@@ -200,7 +203,7 @@ virtual const CharType *do_is(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [olan](#is), çağıran `do_is`.  
   
-##  <a name="do_narrow"></a>CType::do_narrow  
+##  <a name="do_narrow"></a>  ctype::do_narrow  
  Bir sanal işlev olarak adlandırılan bir karakter türü dönüştürmek için `CharType` karşılık gelen karakter türü için bir yerel tarafından kullanılan `char` yerel karakter kümesi.  
   
 ```  
@@ -243,7 +246,7 @@ virtual const CharType* do_narrow(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [daraltmak](#narrow), çağıran `do_narrow`.  
   
-##  <a name="do_scan_is"></a>CType::do_scan_is  
+##  <a name="do_scan_is"></a>  ctype::do_scan_is  
  Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.  
   
 ```  
@@ -264,7 +267,7 @@ virtual const CharType *do_scan_is(
  Taranacak aralıktaki son karakter hemen ardından karakteri gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen kodla eşleşmiyor bir aralıktaki ilk karakteri bir işaretçi. Böyle bir değeri var olup olmadığını işlevi döndürür`last.`  
+ Belirtilen kodla eşleşmiyor bir aralıktaki ilk karakteri bir işaretçi. Böyle bir değeri var olup olmadığını işlevi döndürür `last.`  
   
 ### <a name="remarks"></a>Açıklamalar  
  Korumalı üye fonksiyonu en küçük işaretçi döndüren `ptr` aralığında [ `first`, `last`) kendisi için [do_is](#do_is)( `maskVal`, * `ptr`) geçerlidir.  
@@ -272,7 +275,7 @@ virtual const CharType *do_scan_is(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [scan_is](#scan_is), çağıran `do_scan_is`.  
   
-##  <a name="do_scan_not"></a>CType::do_scan_not  
+##  <a name="do_scan_not"></a>  ctype::do_scan_not  
  Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulmak için çağrılan sanal bir işlev.  
   
 ```  
@@ -301,7 +304,7 @@ virtual const CharType *do_scan_not(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [scan_not](#scan_not), çağıran `do_scan_not`.  
   
-##  <a name="do_tolower"></a>CType::do_tolower  
+##  <a name="do_tolower"></a>  ctype::do_tolower  
  Bir karakter ya da bir aralıktaki karakterleri küçük harfe dönüştürmek için adlı bir sanal işlev.  
   
 ```  
@@ -332,7 +335,7 @@ virtual const CharType *do_tolower(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [tolower](#tolower), çağıran `do_tolower`.  
   
-##  <a name="do_toupper"></a>CType::do_toupper  
+##  <a name="do_toupper"></a>  ctype::do_toupper  
  Bir karakteri ya da karakter aralığını kendi büyük harflerine dönüştürmek için çağrılan bir sanal işlev.  
   
 ```  
@@ -363,7 +366,7 @@ virtual const CharType *do_toupper(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [toupper](#toupper), çağıran `do_toupper`.  
   
-##  <a name="do_widen"></a>CType::do_widen  
+##  <a name="do_widen"></a>  ctype::do_widen  
  Adlı bir sanal işleve bir karakter türü dönüştürür `char` yerel karakter türüne karşılık gelen karakter kümesinde `CharType` yerel ayarı tarafından kullanılır.  
   
 ```  
@@ -400,7 +403,7 @@ virtual const char *do_widen(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [widen](#widen), çağıran `do_widen`.  
   
-##  <a name="is"></a>CType::is  
+##  <a name="is"></a>  CType::is  
  Tek bir karakter belirli bir özniteliği var veya bir aralıktaki her karakter özniteliklerini sınıflandırır ve bunları bir dizide depolar olup olmadığını sınar.  
   
 ```  
@@ -476,7 +479,7 @@ int main() {
 }  
 ```  
   
-##  <a name="narrow"></a>CType::Narrow  
+##  <a name="narrow"></a>  CType::Narrow  
  Tür karakterleri dönüştürür `CharType` yerel ayar karşılık gelen karakter türü tarafından kullanılan `char` yerel karakter kümesi.  
   
 ```  
@@ -540,7 +543,7 @@ int main( )
 Xhello everyone  
 ```  
   
-##  <a name="scan_is"></a>CType::scan_is  
+##  <a name="scan_is"></a>  CType::scan_is  
  Belirtilen bir maskeyle eşleşen bir aralıktaki ilk karakteri bulur.  
   
 ```  
@@ -561,7 +564,7 @@ const CharType *scan_is(
  Taranacak aralıktaki son karakter hemen ardından karakteri gösteren bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen kodla eşleşmiyor bir aralıktaki ilk karakteri bir işaretçi. Böyle bir değeri var olup olmadığını işlevi döndürür`last.`  
+ Belirtilen kodla eşleşmiyor bir aralıktaki ilk karakteri bir işaretçi. Böyle bir değeri var olup olmadığını işlevi döndürür `last.`  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi döndürür [do_scan_is](#do_scan_is)( `maskVal`, `first`, `last`).  
@@ -592,7 +595,7 @@ int main( )
 The first punctuation is "," at position: 5  
 ```  
   
-##  <a name="scan_not"></a>CType::scan_not  
+##  <a name="scan_not"></a>  ctype::scan_not  
  Belirtilen bir maskeyle eşleşmeyen bir aralıktaki ilk karakteri bulur.  
   
 ```  
@@ -644,7 +647,7 @@ int main( )
 First nonalpha character is "," at position: 5  
 ```  
   
-##  <a name="tolower"></a>CType::tolower  
+##  <a name="tolower"></a>  CType::tolower  
  Bir karakteri ya da karakter aralığını küçük harflere dönüştürür.  
   
 ```  
@@ -697,7 +700,7 @@ int main( )
 The lowercase string is: hello, my name is john  
 ```  
   
-##  <a name="toupper"></a>CType::toupper  
+##  <a name="toupper"></a>  CType::toupper  
  Bir karakteri ya da karakter aralığını büyük harflere dönüştürür.  
   
 ```  
@@ -748,7 +751,7 @@ int main( )
 The uppercase string is: HELLO, MY NAME IS JOHN  
 ```  
   
-##  <a name="widen"></a>CType::widen  
+##  <a name="widen"></a>  CType::widen  
  Bir karakter türü dönüştürür `char` yerel karakter türüne karşılık gelen karakter kümesinde `CharType` yerel ayarı tarafından kullanılır.  
   
 ```  

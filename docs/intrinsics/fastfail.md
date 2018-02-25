@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: efdd067376d8e1430ed8636c0a77afe950858e9a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3669170bf888cc41fa7706aac6af3a9c3fb08bcb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="fastfail"></a>__fastfail
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Hemen en az yük ile arama işlemi sonlandırır.  
   
@@ -32,7 +35,7 @@ void __fastfail(unsigned int code);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`code`  
+ [in] `code`  
  A `FAST_FAIL_<description>` winnt.h veya işlem sonlandırma nedeni gösterir wdm.h sembolik sabiti.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -46,7 +49,7 @@ void __fastfail(unsigned int code);
 |Mimari|Yönergesi|Kod bağımsız değişkeni konumu|  
 |------------------|-----------------|-------------------------------|  
 |x86|int 0x29|ecx|  
-|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|int 0x29|RCX|  
+|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|int 0x29|rcx|  
 |ARM|Opcode 0xDEFB|r0|  
   
  Bir hızlı başarısız istek birbirinden bağımsızdır ve genellikle yürütmek için yalnızca iki yönergeleri gerektirir. Hızlı başarısız istek yürütüldükten sonra çekirdek sonra uygun tedbiri alır. Kullanıcı modu kodda bellek bağımlılıklar yoktur yönerge işaretçisi ötesinde hızlı başarısız olay oluşturulduğunda. Ciddi Bellek Bozulması olsa bile bu ve güvenilirliği en üst düzeye çıkarır.  
@@ -57,7 +60,7 @@ void __fastfail(unsigned int code);
   
  Yerel hızlı başarısız mekanizması desteği, Windows 8'de başlamıştır. Hızlı başarısız yönerge yerel olarak desteklemeyen bir Windows işletim sistemleri genellikle kabul hızlı başarısız istek bir erişim ihlali olarak veya bir `UNEXPECTED_KERNEL_MODE_TRAP` hata denetimi. Bu durumlarda, hala sonlandırılan olmasa da hızlı bir şekilde programdır.  
   
- `__fastfail`yalnızca bir iç kullanılabilir.  
+ `__fastfail` yalnızca bir iç kullanılabilir.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

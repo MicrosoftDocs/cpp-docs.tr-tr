@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - fstream/std::basic_ofstream
 - fstream/std::basic_ofstream::close
@@ -14,7 +15,8 @@ f1_keywords:
 - fstream/std::basic_ofstream::open
 - fstream/std::basic_ofstream::rdbuf
 - fstream/std::basic_ofstream::swap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::basic_ofstream [C++]
 - std::basic_ofstream [C++], close
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], rdbuf
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 235bf7fc118f8752adefc61f5ed18ea01caec727
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a85ff0d2b4aa59e956015478c1fc3eee77294fc8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basicofstream-class"></a>basic_ofstream Sınıfı
 Öğeler ekleme denetimlerini bir nesne ve kodlanmış nesneleri bir sınıf akışı arabelleğe açıklar [basic_filebuf](../standard-library/basic-filebuf-class.md)< `Elem`, `Tr`>, türündeki öğeler ile `Elem`, karakter nitelikler sınıfı tarafından belirlenir `Tr`.  
@@ -91,20 +94,20 @@ int main(int argc, char **argv)
 |[is_open](#is_open)|Bir dosyanın açık olup olmadığını belirler.|  
 |[open](#open)|Bir dosyayı açar.|  
 |[rdbuf](#rdbuf)|Saklı Akış Arabellek adresini döndürür.|  
-|[değiştirme](#swap)|Bu içeriği exchange `basic_ofstream` sağlanan içeriklerinin `basic_ofstream`.|  
+|[Değiştirme](#swap)|Bu içeriği exchange `basic_ofstream` sağlanan içeriklerinin `basic_ofstream`.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Bu akış nesnesine içeriğini atar. Bu taşıma atama ilgili olan bir `rvalue reference` , değil ardınızda bir kopyası.|  
+|[operator=](#op_eq)|Bu akış nesnesine içeriğini atar. Bu taşıma atama ilgili olan bir `rvalue reference` , değil ardınızda bir kopyası.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<fstream >  
   
  **Namespace:** std  
   
-##  <a name="basic_ofstream"></a>basic_ofstream::basic_ofstream  
+##  <a name="basic_ofstream"></a>  basic_ofstream::basic_ofstream  
  Türünde bir nesne oluşturur `basic_ofstream`.  
   
 ```
@@ -140,7 +143,7 @@ basic_ofstream(
 ### <a name="remarks"></a>Açıklamalar  
  İlk Oluşturucu çağırarak temel sınıfı başlatır [basic_ostream](../standard-library/basic-ostream-class.md)( **sb**), burada **sb** saklı nesne sınıfının [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem`, `Tr`>. Ayrıca başlatır **sb** çağırarak `basic_filebuf` <  `Elem`, `Tr`>.  
   
- İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_ostream`( **sb**). Ayrıca başlatır **sb** çağırarak `basic_filebuf` <  `Elem`, `Tr`> ve ardından **sb**. [Açık](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlevi null işaretçi döndürürse, oluşturucuyu çağırır [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).  
+ İkinci ve üçüncü oluşturucular çağırarak temel sınıfı başlatır `basic_ostream`( **sb**). Ayrıca başlatır **sb** çağırarak `basic_filebuf` <  `Elem`, `Tr`> ve ardından **sb**. [open](../standard-library/basic-filebuf-class.md#open)( `_Filename`, `_Mode` &#124; `ios_base::out`). İkinci işlevi null işaretçi döndürürse, oluşturucuyu çağırır [setstate](../standard-library/basic-ios-class.md#setstate)( **failbit**).  
   
  Dördüncü Oluşturucusu bir kopya işlevdir. Nesne içeriğini başlatır `right`, rvalue başvuru olarak işlem görür.  
   
@@ -165,7 +168,7 @@ int main(int argc, char **argv)
 }  
 ```  
   
-##  <a name="close"></a>basic_ofstream::Close  
+##  <a name="close"></a>  basic_ofstream::Close  
  Bir dosyayı kapatır.  
   
 ```
@@ -178,7 +181,7 @@ void close();
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek **kapatmak**.  
   
-##  <a name="is_open"></a>basic_ofstream::is_open  
+##  <a name="is_open"></a>  basic_ofstream::is_open  
  Bir dosyanın açık olup olmadığını gösterir.  
   
 ```
@@ -186,7 +189,7 @@ bool is_open() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`dosya açıksa `false` Aksi takdirde.  
+ `true` dosya açıksa `false` Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi döndürür [rdbuf](#rdbuf)  **->**  [is_open](../standard-library/basic-filebuf-class.md#is_open).  
@@ -213,7 +216,7 @@ int main( )
 }  
 ```  
   
-##  <a name="open"></a>basic_ofstream::Open  
+##  <a name="open"></a>  basic_ofstream::Open  
  Bir dosyayı açar.  
   
 ```
@@ -252,7 +255,7 @@ void open(
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::open](../standard-library/basic-filebuf-class.md#open) kullanan bir örnek **açmak**.  
   
-##  <a name="op_eq"></a>basic_ofstream::operator =  
+##  <a name="op_eq"></a>  basic_ofstream::operator=  
  Bu akış nesnesine içeriğini atar. Bu taşıma atama ilgili olan bir `rvalue reference` , değil ardınızda bir kopyası.  
   
 ```
@@ -269,7 +272,7 @@ basic_ofstream& operator=(basic_ofstream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci içeriğini kullanarak nesne içeriğini değiştirir `right`, rvalue başvuru olarak işlem görür.  
   
-##  <a name="rdbuf"></a>basic_ofstream::rdbuf  
+##  <a name="rdbuf"></a>  basic_ofstream::rdbuf  
  Saklı Akış Arabellek adresini döndürür.  
   
 ```
@@ -282,7 +285,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 ### <a name="example"></a>Örnek  
   Bkz: [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close) kullanan bir örnek `rdbuf`.  
   
-##  <a name="swap"></a>basic_ofstream::Swap  
+##  <a name="swap"></a>  basic_ofstream::Swap  
  İki içeriğini alış verişleri `basic_ofstream` nesneleri.  
   
 ```

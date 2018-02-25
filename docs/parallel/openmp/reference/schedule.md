@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: schedule
-dev_langs: C++
-helpviewer_keywords: schedule OpenMP clause
+ms.topic: reference
+f1_keywords:
+- schedule
+dev_langs:
+- C++
+helpviewer_keywords:
+- schedule OpenMP clause
 ms.assetid: 286f1fc3-6598-4837-b4c8-8b1fa3193965
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b83c5e6541cbbdfe64b5f2b7731f7a77832f7293
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bc2a91a87504b72ddbd296e31516608451286b04
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="schedule"></a>zamanlama
 Uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  
@@ -43,8 +48,8 @@ schedule(type[,size])
   
 -   `static`  
   
- `size`(isteğe bağlı)  
- Yineleme boyutunu belirtir. `size`bir tamsayı olmalıdır. Geçersiz olduğunda `type` olan `runtime`.  
+ `size` (isteğe bağlı)  
+ Yineleme boyutunu belirtir. `size` bir tamsayı olmalıdır. Geçersiz olduğunda `type` olan `runtime`.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Daha fazla bilgi için bkz: [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator
 - filesystem/std::experimental::filesystem::_Directory_iterator::_Directory_iterator
@@ -18,9 +19,10 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_iterator::operator*
 - filesystem/std::experimental::filesystem::directory_iterator::operator-&gt;
 - filesystem/std::experimental::filesystem::directory_iterator::operator++
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: dca2ecf8-3e69-4644-a83d-705061e10cc8
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -36,12 +38,13 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator*
 - std::experimental::filesystem::directory_iterator::operator-&gt;
 - std::experimental::filesystem::directory_iterator::operator++
-ms.workload: cplusplus
-ms.openlocfilehash: 2c490c3a56cfcff17d965a9cd635a92fff7f5a95
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 27152fc2ebc7944e4b96dce75937ac3c3b04616d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 Bir dizin adlarında aracılığıyla dizilerinin giriş yineleyici açıklar. Yineleyici X, ifade için * X hesaplar için dosya adını ve durumunu hakkında bilinen herhangi bir şey sarmalar sınıfı directory_entry bir nesne.  
@@ -85,7 +88,7 @@ directory_iterator& increment(error_code& ec) noexcept;
   
  Sonraki filename dizininde ilerletmek işlevi çalışır. Başarılı olursa, o filename myentry içinde depolar; Aksi takdirde bitiş dizisi yineleyici üretir.  
   
-## <a name="directoryiteratoroperator"></a>directory_iterator::operator! =  
+## <a name="directoryiteratoroperator"></a>directory_iterator::operator!=  
   
 ```  
 bool operator!=(const directory_iterator& right) const;
@@ -93,7 +96,7 @@ bool operator!=(const directory_iterator& right) const;
   
  Üye işleci verir! (* Bu sağ ==).  
   
-## <a name="directoryiteratoroperator"></a>directory_iterator::operator =  
+## <a name="directoryiteratoroperator"></a>directory_iterator::operator=  
   
 ```  
 directory_iterator& operator=(const directory_iterator&) = default;  
@@ -102,7 +105,7 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
   
  Varsayılan üye atama işleçleri beklendiği gibi davranır.  
   
-## <a name="directoryiteratoroperator"></a>directory_iterator::operator ==  
+## <a name="directoryiteratoroperator"></a>directory_iterator::operator==  
   
 ```  
 bool operator==(const directory_iterator& right) const;
@@ -110,7 +113,7 @@ bool operator==(const directory_iterator& right) const;
   
  Üye işleci yalnızca her iki, true döndürür * bu ve bitiş dizisi yineleyiciler veya her ikisini de doğru olan değil end-in-sırası-yineleyiciler.  
   
-## <a name="directoryiteratoroperator"></a>directory_iterator::operator *  
+## <a name="directoryiteratoroperator"></a>directory_iterator::operator*  
   
 ```  
 const directory_entry& operator*() const;
@@ -118,7 +121,7 @@ const directory_entry& operator*() const;
   
  Üye işleci myentry döndürür.  
   
-## <a name="directoryiteratoroperator-"></a>directory_iterator::operator ->  
+## <a name="directoryiteratoroperator-"></a>directory_iterator::operator->  
   
 ```  
 const directory_entry * operator->() const;
@@ -126,7 +129,7 @@ const directory_entry * operator->() const;
   
  Üye işlevi döndürür & ** Bu.  
   
-## <a name="directoryiteratoroperator"></a>directory_iterator::operator ++  
+## <a name="directoryiteratoroperator"></a>directory_iterator::operator++  
   
 ```  
 directory_iterator& operator++();
@@ -142,6 +145,6 @@ directory_iterator& operator++(int);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<FileSystem >](../standard-library/filesystem.md)   
+ [\<filesystem>](../standard-library/filesystem.md)   
  [Dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md)
 

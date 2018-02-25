@@ -5,29 +5,31 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8979ab026d5bf6aef9d0dd8677bf2ec47a8c6142
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d17378a34698cc80d356983898e0023b76877140
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Eşzamanlılık ad alanı numaralandırmalar (AMP)
 |||  
 |-|-|  
-|[access_type numaralandırması](#access_type)|[queuing_mode numaralandırması](#queuing_mode)|  
+|[access_type numaralandırması](#access_type)|[queuing_mode Enumeration](#queuing_mode)|  
   
-##  <a name="access_type"></a>access_type numaralandırması  
+##  <a name="access_type">access_type numaralandırması</a>  
  Veri erişimi çeşitli türlerde belirtmek için kullanılan numaralandırma türü.  
   
 ```  
@@ -44,7 +46,7 @@ enum access_type;
 |`access_type_write`|Paylaşılan. Ayırma Hızlandırıcı üzerinde erişilebilir olduğundan ve okunabilir ve yazılabilir CPU üzerinde.|  
 
   
-##  <a name="queuing_mode"></a>queuing_mode numaralandırması  
+##  <a name="queuing_mode"></a>  queuing_mode numaralandırması  
  Hızlandırıcı üzerinde desteklenen sıralama modları belirtir.  
   
 ```  

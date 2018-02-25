@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: _SCL_SECURE_NO_DEPRECATE
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- _SCL_SECURE_NO_DEPRECATE
+dev_langs:
+- C++
 helpviewer_keywords:
 - Safe Libraries
 - Safe Libraries, C++ Standard Library
 - Safe C++ Standard Library
 ms.assetid: 3993340f-1f29-4d81-b3f5-52a52bc8e148
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 20b68338dd15eaea0d74af9299da5ce8657f65f9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6e53abd44312ea40eef68c39450ba63746f9c42e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="safe-libraries-c-standard-library"></a>Güvenli Kitaplıklar: C++ Standart Kitaplık
 Visual C++ Standart daha güvenli hale getirmek için kitaplığı dahil olmak üzere C++ ile gönderilen kitaplıkları bazı geliştirmeler yapılmıştır.  
@@ -37,8 +41,8 @@ Visual C++ Standart daha güvenli hale getirmek için kitaplığı dahil olmak �
   
 |Olmayabilecek yöntemi|Daha güvenli eşdeğeri|  
 |-------------------------------|----------------------|  
-|[kopyalama](../standard-library/basic-string-class.md#copy)|[basic_string::_Copy_s](../standard-library/basic-string-class.md#copy_s)|  
-|[kopyalama](../standard-library/char-traits-struct.md#copy)|[char_traits::_Copy_s](../standard-library/char-traits-struct.md#copy_s)|  
+|[Kopyalama](../standard-library/basic-string-class.md#copy)|[basic_string::_Copy_s](../standard-library/basic-string-class.md#copy_s)|  
+|[Kopyalama](../standard-library/char-traits-struct.md#copy)|[char_traits::_Copy_s](../standard-library/char-traits-struct.md#copy_s)|  
   
  Yukarıdaki olmayabilecek yöntemlerden birini arayın veya yineleyiciler yanlış kullanırsanız, derleyici oluşturacak [Derleyici Uyarısı (Düzey 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Bu uyarıların devre dışı bırakma hakkında daha fazla bilgi için bkz: [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).  
   

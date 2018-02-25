@@ -4,26 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: '#undef'
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- '#undef'
+dev_langs:
+- C++
 helpviewer_keywords:
 - '#undef directive'
 - undef directive (#undef)
 - preprocessor, directives
 ms.assetid: 88900e0e-2c19-4a63-b681-f3d3133c24ca
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: aee7babf895b72a5ff4f5fb1485e4bb118e95889
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 428831b2718009fc0b471d238cff965f74528a2f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="undef-directive-cc"></a>#undef Yönergesi (C/C++)
 Daha önce `#define` ile oluşturulmuş bir adı kaldırır (tanımsız hale getirir).  
@@ -56,7 +60,7 @@ identifier
 #undef ADD  
 ```  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Makroların tanımlarını kaldırmak için komut satırında /U seçeneğini kullanın ve ardından tanımı kaldırılacak makro adlarını belirtin. Bu komutu gönderdikten etkisini için bir dizi eşdeğerdir `#undef` *makro adını* dosyasının başında deyimleri.  
   

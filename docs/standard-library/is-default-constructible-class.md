@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::is_default_constructible
-dev_langs: C++
-helpviewer_keywords: is_default_constructible
+ms.topic: reference
+f1_keywords:
+- type_traits/std::is_default_constructible
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_default_constructible
 ms.assetid: dd8f1c44-dae5-4258-891f-c5e048d94092
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 031eaf0a1de86f354b89152c0ea48b2852de3f86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b5585ed53f6401056221dd22bd945cd0219de394
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="isdefaultconstructible-class"></a>is_default_constructible sınıfı
 Bir türü varsayılan bir oluşturucu varsa testleri.  

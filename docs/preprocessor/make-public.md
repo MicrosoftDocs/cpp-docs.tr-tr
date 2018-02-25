@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vc-pragma.make_public
 - make_public_CPP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b28c6cd71e8d8ac1165ff6e3afe95ab1f6d4de0f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 484462d5a705297f65e82f70fccc23a81eeb719e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="makepublic"></a>make_public
 Yerel tür genel birleştirme erişilebilirlik olması gerektiğini gösterir.  
@@ -36,12 +39,12 @@ Yerel tür genel birleştirme erişilebilirlik olması gerektiğini gösterir.
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `type`genel derleme erişilebilirlik sahip yapmak istediğiniz kaynak türünü adıdır.  
+ `type` genel derleme erişilebilirlik sahip yapmak istediğiniz kaynak türünü adıdır.  
   
 ## <a name="remarks"></a>Açıklamalar  
-`make_public`başvuru yapmak istediğinizi yerel tür değiştiremezsiniz .h dosyasından olduğunda için yararlıdır. Genel derleme bir görünürlük türü ortak bir işlevde imzada yerel tür kullanmak istiyorsanız, derleyici bir uyarı verecek veya yerel tür ayrıca genel derleme erişilebilirlik olmalıdır.  
+`make_public` başvuru yapmak istediğinizi yerel tür değiştiremezsiniz .h dosyasından olduğunda için yararlıdır. Genel derleme bir görünürlük türü ortak bir işlevde imzada yerel tür kullanmak istiyorsanız, derleyici bir uyarı verecek veya yerel tür ayrıca genel derleme erişilebilirlik olmalıdır.  
   
-`make_public`Genel kapsamda belirtilmeli ve yalnızca noktasından etkisi hangi BT aracılığıyla kaynak kodu dosyasının sonuna bildirilmiş bulunmaktadır.  
+`make_public` Genel kapsamda belirtilmeli ve yalnızca noktasından etkisi hangi BT aracılığıyla kaynak kodu dosyasının sonuna bildirilmiş bulunmaktadır.  
   
 Yerel türü örtük veya açık olarak özel olabilir; bkz: [tür görünürlüğü](../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Type_visibility) daha fazla bilgi için.  
   

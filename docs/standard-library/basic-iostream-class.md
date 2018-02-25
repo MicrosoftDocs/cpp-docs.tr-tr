@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - istream/std::basic_iostream
 - istream/std::basic_iostream::swap
-dev_langs: C++
-helpviewer_keywords: basic_iostream class
+dev_langs:
+- C++
+helpviewer_keywords:
+- basic_iostream class
 ms.assetid: 294b680b-eb49-4066-8db2-6d52dac9d6e3
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d415afefbde1f3903450a7c5e9f8f14e5cb78a7f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 95912a24f3283e66a7f50c06999cf410f428defc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="basiciostream-class"></a>basic_iostream Sınıfı
 Hem giriş ve çıkış yapmak için bir akış sınıfı.  
@@ -55,20 +59,20 @@ public:
   
 |||  
 |-|-|  
-|[değiştirme](#swap)|Sağlanan içeriğini alış verişleri `basic_iostream` bu nesnenin içeriği için nesne.|  
+|[Değiştirme](#swap)|Sağlanan içeriğini alış verişleri `basic_iostream` bu nesnenin içeriği için nesne.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Belirtilen bir değeri atar `basic_iostream` bu nesnesini. Bu taşıma atama ilgili olan bir `rvalue` , değil ardınızda bir kopyası.|  
+|[operator=](#op_eq)|Belirtilen bir değeri atar `basic_iostream` bu nesnesini. Bu taşıma atama ilgili olan bir `rvalue` , değil ardınızda bir kopyası.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<IStream >  
   
  **Namespace:** std  
   
-##  <a name="basic_iostream"></a>basic_iostream::basic_iostream  
+##  <a name="basic_iostream"></a>  basic_iostream::basic_iostream  
  Oluşturma bir `basic_iostream` nesnesi.  
   
 ```  
@@ -91,7 +95,7 @@ basic_iostream();
   
  İkinci oluşturucu çağırarak temel nesnelere başlatır `move(right)`.  
   
-##  <a name="op_eq"></a>basic_iostream::operator =  
+##  <a name="op_eq"></a>  basic_iostream::operator=  
  Belirtilen bir değeri atamak `basic_iostream` bu nesnesini. Bir kopyasını bırakmaz arkasındaki bir rvalue içeren bir taşıma atama budur.  
   
 ```  
@@ -105,7 +109,7 @@ basic_iostream& operator=(basic_iostream&& right);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci çağrıları `swap(right)`.  
   
-##  <a name="swap"></a>basic_iostream::Swap  
+##  <a name="swap"></a>  basic_iostream::Swap  
  Sağlanan içeriğini alış verişleri `basic_iostream` bu nesnenin içeriği için nesne.  
   
 ```  

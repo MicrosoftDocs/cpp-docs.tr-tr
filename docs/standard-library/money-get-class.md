@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocmon/std::money_get
 - xlocmon/std::money_get::char_type
@@ -14,7 +15,8 @@ f1_keywords:
 - xlocmon/std::money_get::string_type
 - xlocmon/std::money_get::do_get
 - xlocmon/std::money_get::get
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::money_get [C++]
 - std::money_get [C++], char_type
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9c823f6ddc688a697d82835995b2fda86a2feb44
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c4566a9b640a73687b3bf48c1346af711d450b73
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="moneyget-class"></a>money_get Sınıfı
 Şablon sınıfı türü sıralarının denetim dönüştürmeleri için yerel ayar modeli olarak hizmet verebilir bir nesneyi tanımlayan `CharType` parasal değerleri için.  
@@ -66,7 +69,7 @@ class money_get : public locale::facet;
 |-|-|  
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|  
 |[iter_type](#iter_type)|Bir giriş yineleyiciyi açıklayan tür.|  
-|[STRING_TYPE](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
+|[string_type](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
@@ -80,7 +83,7 @@ class money_get : public locale::facet;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>money_get::char_type  
+##  <a name="char_type"></a>  money_get::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```
@@ -90,7 +93,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="do_get"></a>money_get::do_get  
+##  <a name="do_get"></a>  money_get::do_get  
  Adlı sanal işlev para değerini temsil eden bir karakter dizisi bir sayısal değer ayıklar.  
   
 ```
@@ -154,18 +157,18 @@ virtual iter_type do_get(iter_type first,
   
 - **Fac**. [frac_digits](../standard-library/moneypunct-class.md#frac_digits) herhangi bir ondalık ayırıcısı sağındaki önemli kesir basamak sayısını belirler. İçin denir daha fazla kesir basamak ile para miktarını ayrıştırılırken `frac_digits`, `do_get` en fazla tükettikten sonra ayrıştırma durdurur `frac_digits` karakter.  
   
- Varsa oturum dize ( **fac**. `negative_sign`veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi burada eşleşen eşit öğesi **money_base::sign** biçimi desende görüntülenir ( **fac**. `neg_format`). Kalan öğeler para giriş alanını sonunda eşleştirilir. Hiçbiri dize para giriş alanını sonraki öğe eşleşen ilk bir öğe varsa, oturum dize boş olarak alınır ve pozitif bir işaretidir.  
+ Varsa oturum dize ( **fac**. `negative_sign` veya **fac**. `positive_sign`) sahip birden fazla öğesi, yalnızca ilk öğesi burada eşleşen eşit öğesi **money_base::sign** biçimi desende görüntülenir ( **fac**. `neg_format`). Kalan öğeler para giriş alanını sonunda eşleştirilir. Hiçbiri dize para giriş alanını sonraki öğe eşleşen ilk bir öğe varsa, oturum dize boş olarak alınır ve pozitif bir işaretidir.  
   
- Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır olmayan, olan dize **fac**. `curr_symbol`WHERE eşleşmelidir eşit öğesi **money_base::symbol** biçimi desende görüntülenir. Aksi halde, eğer **money_base::symbol** biçimi düzeni sonunda gerçekleşir ve oturum dizesinin öğe eşleştirilmesini kalırsa, para birimi simgesini eşlenemiyor. Aksi takdirde, para birimi simgesini isteğe bağlı olarak eşleştirilir.  
+ Varsa **iosbase**. [bayrakları](../standard-library/ios-base-class.md#flags) & [showbase](../standard-library/ios-functions.md#showbase) sıfır olmayan, olan dize **fac**. `curr_symbol` WHERE eşleşmelidir eşit öğesi **money_base::symbol** biçimi desende görüntülenir. Aksi halde, eğer **money_base::symbol** biçimi düzeni sonunda gerçekleşir ve oturum dizesinin öğe eşleştirilmesini kalırsa, para birimi simgesini eşlenemiyor. Aksi takdirde, para birimi simgesini isteğe bağlı olarak eşleştirilir.  
   
- Hiçbir örneği varsa **fac**. `thousands_sep`para giriş alanı değeri kısmı ortaya (burada eşit öğesi **money_base::value** biçimi desende görünür), hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, gruplandırma kısıtlamalar uygulanan tarafından **fac**. **Gruplandırma** zorlanır. Oluşturulan basamak dizisi düşük düzey tamsayı temsil Not **fac**. `frac_digits`ondalık basamak ondalık konumun sağında olarak kabul edilir.  
+ Hiçbir örneği varsa **fac**. `thousands_sep` para giriş alanı değeri kısmı ortaya (burada eşit öğesi **money_base::value** biçimi desende görünür), hiçbir gruplandırma kısıtlaması uygulanmaz. Aksi takdirde, gruplandırma kısıtlamalar uygulanan tarafından **fac**. **Gruplandırma** zorlanır. Oluşturulan basamak dizisi düşük düzey tamsayı temsil Not **fac**. `frac_digits` ondalık basamak ondalık konumun sağında olarak kabul edilir.  
   
  Rastgele boşluk eşleşir burada eşit öğesi **money_base::space** biçimi düzeni sonunda göründüğü dışında biçimi desende görüntülenir. Aksi takdirde hiçbir iç boşluk eşleştirilir. Bir öğenin *ch* boşluk varsa kabul [use_facet](../standard-library/locale-functions.md#use_facet) < [ctype](../standard-library/ctype-class.md) \< **CharType**>> () **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)). [olan](../standard-library/ctype-class.md#is)( **ctype_base::space**, *ch*) olan **doğru**.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [almak](#get), çağıran `do_get`.  
   
-##  <a name="get"></a>money_get::get  
+##  <a name="get"></a>  money_get::get  
  Parasal bir değeri temsil eden bir karakter dizisinden sayısal değeri ayıklar.  
   
 ```
@@ -258,7 +261,7 @@ int main( )
 };  
 ```  
   
-##  <a name="iter_type"></a>money_get::iter_type  
+##  <a name="iter_type"></a>  money_get::iter_type  
  Bir giriş yineleyiciyi açıklayan tür.  
   
 ```
@@ -268,7 +271,7 @@ typedef InputIterator iter_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **InputIterator**.  
   
-##  <a name="money_get"></a>money_get::money_get  
+##  <a name="money_get"></a>  money_get::money_get  
  Nesne türü Oluşturucusu `money_get` parasal değerleri temsil eden serilerinden sayısal değerleri ayıklamak için kullanılır.  
   
 ```
@@ -286,13 +289,13 @@ explicit money_get(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
- Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)( **_***Refs*).  
+ Oluşturucu temel nesnesiyle başlatır **locale::**[modeli](../standard-library/locale-class.md#facet_class)(**_ *** Refs*).  
   
-##  <a name="string_type"></a>money_get::string_type  
+##  <a name="string_type"></a>  money_get::string_type  
  Tür karakterleri içeren bir dize açıklayan türü **CharType**.  
   
 ```

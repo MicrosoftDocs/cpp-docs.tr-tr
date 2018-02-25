@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - condition_variable/std::condition
 - condition_variable/std::condition_variable::condition_variable
@@ -16,9 +17,10 @@ f1_keywords:
 - condition_variable/std::condition_variable::wait
 - condition_variable/std::condition_variable::wait_for
 - condition_variable/std::condition_variable::wait_until
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 80b1295c-b73d-4d46-b664-6e183f2eec1b
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -31,12 +33,13 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.workload: cplusplus
-ms.openlocfilehash: 3b51ec2810ddb982d53c3073bdf860b26100859d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d3d4f917bd9057eed6dfcd2b480bbb8afb2f7ccf
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="conditionvariable-class"></a>condition_variable Sınıfı
 Kullanım `condition_variable` varsa bir olay için beklemeye sınıfı bir `mutex` türü `unique_lock<mutex>`. Bu tür nesneler türündeki nesneleri daha iyi performans olabilir [condition_variable_any < unique_lock\<mutex >>](../standard-library/condition-variable-any-class.md).  
@@ -71,7 +74,7 @@ class condition_variable;
   
  **Namespace:** std  
   
-##  <a name="condition_variable"></a>condition_variable::condition_variable Oluşturucusu  
+##  <a name="condition_variable"></a>  condition_variable::condition_variable Constructor  
  Oluşturan bir `condition_variable` nesnesi.  
   
 ```
@@ -81,7 +84,7 @@ condition_variable();
 ### <a name="remarks"></a>Açıklamalar  
  Yeterli bellek varsa, Oluşturucusu oluşturur bir [system_error](../standard-library/system-error-class.md) olan nesneyi bir `not_enough_memory` hata kodu. Başka bir kaynak kullanılabilir olmadığından nesne oluşturulamıyor, Oluşturucusu döndürürse bir `system_error` olan nesneyi bir `resource_unavailable_try_again` hata kodu.  
   
-##  <a name="native_handle"></a>condition_variable::native_handle  
+##  <a name="native_handle"></a>  condition_variable::native_handle  
  Condition_variable tanıtıcısı temsil eden uygulamaya özel tür döndürür.  
   
 ```
@@ -89,23 +92,23 @@ native_handle_type native_handle();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `native_handle_type`Eşzamanlılık Çalışma zamanı iç veri yapılarını gösteren bir işaretçi olarak tanımlanır.  
+ `native_handle_type` Eşzamanlılık Çalışma zamanı iç veri yapılarını gösteren bir işaretçi olarak tanımlanır.  
   
-##  <a name="notify_all"></a>condition_variable::notify_all  
+##  <a name="notify_all"></a>  condition_variable::notify_all  
  Bekleyen tüm iş parçacıklarının engelini kaldırır `condition_variable` nesnesi.  
   
 ```
 void notify_all() noexcept;
 ```  
   
-##  <a name="notify_one"></a>condition_variable::notify_one  
+##  <a name="notify_one"></a>  condition_variable::notify_one  
  Üzerinde bekleyen iş parçacığı birini engelini kaldırır `condition_variable` nesnesi.  
   
 ```
 void notify_one() noexcept;
 ```  
   
-##  <a name="wait"></a>condition_variable::wait  
+##  <a name="wait"></a>  condition_variable::wait  
  Bir iş parçacığı engeller.  
   
 ```
@@ -132,7 +135,7 @@ while(!Pred())
     wait(Lck);
 ```    
   
-##  <a name="wait_for"></a>condition_variable::wait_for  
+##  <a name="wait_for"></a>  condition_variable::wait_for  
  Bir iş parçacığı engeller ve daha sonra iş parçacığı engelini kaldırır bir zaman aralığı ayarlar.  
   
 ```
@@ -176,7 +179,7 @@ while(!Pred())
 return true;
 ```  
   
-##  <a name="wait_until"></a>condition_variable::wait_until  
+##  <a name="wait_until"></a>  condition_variable::wait_until  
  Bir iş parçacığı engeller ve hangi iş parçacığı engelini kaldırır zamanında maksimum noktasını ayarlar.  
   
 ```

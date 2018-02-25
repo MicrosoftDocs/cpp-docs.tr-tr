@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_4::get_ywxz
 - amp_short_vectors/Concurrency::graphics::int_4::xzyw
@@ -273,18 +274,20 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_4::abrg
 - amp_short_vectors/Concurrency::graphics::int_4::bg
 - amp_short_vectors/Concurrency::graphics::int_4::yxz
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 01768c28-23a8-4965-8267-96834864f4eb
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fa890cf7fc41160b91d77a564328f8f674a11c32
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 947ed0a89e4b940a9c35e2b87eeeb860f71a7ab9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="int4-class"></a>int_4 Sınıfı
 Kısa bir vektör dört tamsayıların temsil eder.  
@@ -307,7 +310,7 @@ class int_4;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[int_4 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[int_4 Constructor](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -456,19 +459,19 @@ class int_4;
 |----------|-----------------|  
 |int_4::operator-||  
 |int_4::operator--||  
-|int_4::operator % =||  
-|int_4::operator & =||  
-|int_4::operator * =||  
-|int_4::operator ve =||  
-|int_4::operator ^ =||  
-|int_4::operator &#124; =||  
-|int_4::operator ~||  
-|int_4::operator ++||  
-|int_4::operator +=||  
+|int_4::operator%=||  
+|int_4::operator&=||  
+|int_4::operator*=||  
+|int_4::operator/=||  
+|int_4::operator^=||  
+|int_4::operator&#124;=||  
+|int_4::operator~||  
+|int_4::operator++||  
+|int_4::operator+=||  
 |int_4::operator <\<=||  
-|int_4::operator =||  
+|int_4::operator=||  
 |int_4::operator-=||  
-|int_4::operator >> =||  
+|int_4::operator>>=||  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
@@ -481,12 +484,12 @@ class int_4;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |int_4::a||  
-|int_4::AB||  
+|int_4::ab||  
 |int_4::abg||  
 |int_4::abgr||  
-|int_4::ABR||  
+|int_4::abr||  
 |int_4::abrg||  
-|int_4::AG||  
+|int_4::ag||  
 |int_4::agb||  
 |int_4::agbr||  
 |int_4::agr||  
@@ -495,38 +498,38 @@ class int_4;
 |int_4::arb||  
 |int_4::arbg||  
 |int_4::arg||  
-|int_4::ARGB||  
+|int_4::argb||  
 |int_4::b||  
-|int_4::BA||  
-|int_4::BAG||  
+|int_4::ba||  
+|int_4::bag||  
 |int_4::bagr||  
 |int_4::bar||  
 |int_4::barg||  
-|int_4::BG||  
-|int_4::BGA||  
+|int_4::bg||  
+|int_4::bga||  
 |int_4::bgar||  
-|int_4::BGR||  
+|int_4::bgr||  
 |int_4::bgra||  
 |int_4::br||  
-|int_4::BRA||  
+|int_4::bra||  
 |int_4::brag||  
 |int_4::brg||  
 |int_4::brga||  
 |int_4::g||  
-|int_4::GA||  
+|int_4::ga||  
 |int_4::gab||  
 |int_4::gabr||  
 |int_4::gar||  
 |int_4::garb||  
-|int_4::GB||  
-|int_4::Gba||  
+|int_4::gb||  
+|int_4::gba||  
 |int_4::gbar||  
-|int_4::GBR||  
+|int_4::gbr||  
 |int_4::gbra||  
-|int_4::Gr||  
-|int_4::Gra||  
-|int_4::Grab||  
-|int_4::Grb||  
+|int_4::gr||  
+|int_4::gra||  
+|int_4::grab||  
+|int_4::grb||  
 |int_4::grba||  
 |int_4::r||  
 |int_4::ra||  
@@ -534,7 +537,7 @@ class int_4;
 |int_4::rabg||  
 |int_4::rag||  
 |int_4::ragb||  
-|int_4::RB||  
+|int_4::rb||  
 |int_4::rba||  
 |int_4::rbag||  
 |int_4::rbg||  
@@ -542,20 +545,20 @@ class int_4;
 |int_4::rg||  
 |int_4::rga||  
 |int_4::rgab||  
-|int_4::RGB||  
+|int_4::rgb||  
 |int_4::rgba||  
 |int_4::w||  
 |int_4::wx||  
-|int_4::WXY||  
+|int_4::wxy||  
 |int_4::wxyz||  
 |int_4::wxz||  
 |int_4::wxzy||  
 |int_4::wy||  
 |int_4::wyx||  
 |int_4::wyxz||  
-|int_4::WYZ||  
+|int_4::wyz||  
 |int_4::wyzx||  
-|int_4::wZ||  
+|int_4::wz||  
 |int_4::wzx||  
 |int_4::wzxy||  
 |int_4::wzy||  
@@ -587,23 +590,23 @@ class int_4;
 |int_4::yxwz||  
 |int_4::yxz||  
 |int_4::yxzw||  
-|int_4::YZ||  
+|int_4::yz||  
 |int_4::yzw||  
 |int_4::yzwx||  
 |int_4::yzx||  
 |int_4::yzxw||  
 |int_4::z||  
-|int_4::ZW||  
+|int_4::zw||  
 |int_4::zwx||  
 |int_4::zwxy||  
 |int_4::zwy||  
 |int_4::zwyx||  
-|int_4::ZX||  
+|int_4::zx||  
 |int_4::zxw||  
 |int_4::zxwy||  
 |int_4::zxy||  
 |int_4::zxyw||  
-|int_4::ZY||  
+|int_4::zy||  
 |int_4::zyw||  
 |int_4::zywx||  
 |int_4::zyx||  
@@ -617,7 +620,7 @@ class int_4;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>int_4 
+##  <a name="ctor"></a> int_4 
 
  Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
   
@@ -688,7 +691,7 @@ explicit inline int_4(
  `_Other`  
  Başlatmak için kullanılan nesne.  
   
-##  <a name="int_4__size"></a>boyutu 
+##  <a name="int_4__size"></a> Boyutu 
 
 ```  
 static const int size = 4;  

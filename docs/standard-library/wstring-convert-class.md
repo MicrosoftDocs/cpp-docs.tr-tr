@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - wstring/stdext::cvt::wstring_convert
 - locale/std::wstring_convert::byte_string
@@ -17,7 +18,8 @@ f1_keywords:
 - locale/std::wstring_convert::to_bytes
 - locale/std::wstring_convert::converted
 - locale/std::wstring_convert::state
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - stdext::cvt [C++], wstring_convert
 - std::wstring_convert [C++], byte_string
@@ -29,16 +31,17 @@ helpviewer_keywords:
 - std::wstring_convert [C++], converted
 - std::wstring_convert [C++], state
 ms.assetid: e34f5b65-d572-4bdc-ac69-20778712e376
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7753e2be6699bc789417d8afe9e9f49e55af7010
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 01a19779e8c99287e353aa04246b7d90a6f3f218
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="wstringconvert-class"></a>wstring_convert Sınıfı
 Şablon sınıfı `wstring_convert` geniş bir dize ve bir bayt dizesini arasında dönüştürmeler gerçekleştirir.  
@@ -94,14 +97,14 @@ class wstring_convert
 |[from_bytes](#from_bytes)|Bir bayt dizesini geniş bir dizeye dönüştürür.|  
 |[to_bytes](#to_bytes)|Geniş bir dize bayt dizeye dönüştürür.|  
 |[Dönüştürülen](#converted)|Başarılı dönüşümleri sayısını döndürür.|  
-|[durumu](#state)|Dönüştürme durumunu temsil eden bir nesne döndürür.|  
+|[Durumu](#state)|Dönüştürme durumunu temsil eden bir nesne döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yerel ayar >  
   
  **Namespace:** std  
   
-##  <a name="byte_string"></a>wstring_convert::byte_string  
+##  <a name="byte_string"></a>  wstring_convert::byte_string  
  Bir bayt dizesini temsil eden tür.  
   
 ```
@@ -111,7 +114,7 @@ typedef std::basic_string<char> byte_string;
 ### <a name="remarks"></a>Açıklamalar  
  Eşanlamlısı türüdür `std::basic_string<char>`.  
   
-##  <a name="converted"></a>wstring_convert::Converted  
+##  <a name="converted"></a>  wstring_convert::Converted  
  Başarılı dönüşümleri sayısını döndürür.  
   
 ```
@@ -124,7 +127,7 @@ size_t converted() const;
 ### <a name="remarks"></a>Açıklamalar  
  Başarılı dönüştürülme sayısı dönüştürme sayısı nesnesinde depolanır.  
   
-##  <a name="from_bytes"></a>wstring_convert::from_bytes  
+##  <a name="from_bytes"></a>  wstring_convert::from_bytes  
  Bir bayt dizesini geniş bir dizeye dönüştürür.  
   
 ```
@@ -152,7 +155,7 @@ wide_string from_bytes(const char* first, const char* last);
   
  Başarıyla dönüştürüldü giriş öğe sayısını dönüştürme sayısı nesnesinde depolanır. Hiçbir dönüştürme hatası oluşursa, üye fonksiyonu dönüştürülen geniş dize döndürür. Aksi takdirde, nesne wide dize hata iletisi için bir başlatıcı örnekleriyle kurulduğundan, üye işlevi wide dize hata iletisi nesnesi döndürür. Aksi takdirde, üye fonksiyonu sınıfın bir nesnesi oluşturur [range_error](../standard-library/range-error-class.md).  
   
-##  <a name="int_type"></a>wstring_convert::int_type  
+##  <a name="int_type"></a>  wstring_convert::int_type  
  Tamsayı temsil eden tür.  
   
 ```
@@ -162,7 +165,7 @@ typedef typename wide_string::traits_type::int_type int_type;
 ### <a name="remarks"></a>Açıklamalar  
  Eşanlamlısı türüdür `wide_string::traits_type::int_type`.  
   
-##  <a name="state"></a>wstring_convert::State  
+##  <a name="state"></a>  wstring_convert::State  
  Dönüştürme durumunu temsil eden bir nesne döndürür.  
   
 ```
@@ -174,7 +177,7 @@ state_type state() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="state_type"></a>wstring_convert::state_type  
+##  <a name="state_type"></a>  wstring_convert::state_type  
  Dönüştürme durumu temsil eden tür.  
   
 ```
@@ -184,7 +187,7 @@ typedef typename Codecvt::state_type state_type;
 ### <a name="remarks"></a>Açıklamalar  
  Tür dönüştürme durumu temsil eden bir nesne açıklar. Eşanlamlısı türüdür `Codecvt::state_type`.  
   
-##  <a name="to_bytes"></a>wstring_convert::to_bytes  
+##  <a name="to_bytes"></a>  wstring_convert::to_bytes  
  Geniş bir dize bayt dizeye dönüştürür.  
   
 ```
@@ -209,7 +212,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
   
  Başarıyla dönüştürüldü giriş öğe sayısını dönüştürme sayısı nesnesinde depolanır. Hiçbir dönüştürme hatası oluşursa, üye fonksiyonu dönüştürülen bayt dizesi döndürür. Aksi takdirde, nesne bayt dizesi hata iletisi için bir başlatıcı örnekleriyle kurulduğundan, üye işlevi bayt dizesi hata iletisi nesnesi döndürür. Aksi takdirde, üye fonksiyonu sınıfın bir nesnesi oluşturur [range_error](../standard-library/range-error-class.md).  
   
-##  <a name="wide_string"></a>wstring_convert::wide_string  
+##  <a name="wide_string"></a>  wstring_convert::wide_string  
  Geniş bir dizeyi temsil eden tür.  
   
 ```
@@ -219,7 +222,7 @@ typedef std::basic_string<Elem> wide_string;
 ### <a name="remarks"></a>Açıklamalar  
  Eşanlamlısı türüdür `std::basic_string<Elem>`.  
   
-##  <a name="wstring_convert"></a>wstring_convert::wstring_convert  
+##  <a name="wstring_convert"></a>  wstring_convert::wstring_convert  
  Türünde bir nesne oluşturur `wstring_convert`.  
   
 ```

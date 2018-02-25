@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: omp_get_num_threads
-dev_langs: C++
-helpviewer_keywords: omp_get_num_threads OpenMP function
+ms.topic: reference
+f1_keywords:
+- omp_get_num_threads
+dev_langs:
+- C++
+helpviewer_keywords:
+- omp_get_num_threads OpenMP function
 ms.assetid: e7c3cea1-44ac-435d-866e-2b7bc477e807
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c3c7a8fcb18766346b454eb2e627f674078f92fd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e89c922d0382a3f795f061f61cd6bbee0fc35f53
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ompgetnumthreads"></a>omp_get_num_threads
 İş parçacığı sayısını paralel bölgede döndürür.  

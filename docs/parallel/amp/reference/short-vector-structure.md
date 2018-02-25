@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - short_vector
 - AMP_SHORT_VECTORS/short_vector
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: e18b22bdc70accae1edae7159fafa3e9d679905c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d71ef4577845319bf66ef51e92afae7907526008
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="shortvector-structure"></a>short_vector Yapısı
 short_vector kısa vektörlerinin genel programlama için yararlı olan meta tanımları sağlar.  
@@ -101,7 +104,7 @@ struct short_vector<double, 4>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[short_vector::short_vector Oluşturucusu](#ctor)||  
+|[short_vector::short_vector Constructor](#ctor)||  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `short_vector`  
@@ -111,7 +114,7 @@ struct short_vector<double, 4>;
   
  **Namespace:** Concurrency::graphics  
   
-##  <a name="ctor"></a>short_vector::short_vector Oluşturucusu  
+##  <a name="ctor"></a>  short_vector::short_vector Oluşturucusu  
   
 ```  
 short_vector();

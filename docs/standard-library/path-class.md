@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: filesystem/std::experimental::filesystem::path
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- filesystem/std::experimental::filesystem::path
+dev_langs:
+- C++
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 05acbc14af8daec265cf705ac4605e9606cb0696
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 9e91ee287b1403b49f7a70ab3d96686650d6b2f0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="path-class"></a>path Sınıfı
 **Yolu** sınıfı dize türünde bir nesne depolar\_exposition, uygun bir yol adı olarak kullanılması amacıyla burada myname adlı türü. dize\_türüdür basic eşanlamlısı\_dize\<value_type >, burada değer\_Windows altında char veya wchar_t POSIX altında eşanlamlısı türüdür.  
@@ -32,7 +36,7 @@ ms.lasthandoff: 12/21/2017
 class path;  
 ```  
   
-## <a name="pathappend"></a>PATH::Append  
+## <a name="pathappend"></a>path::append  
   
 ```cpp  
 template <class Source>  
@@ -64,7 +68,7 @@ iterator begin() const;
   
  İlk yol öğe pathname belirleme path::iterator varsa döndürür.  
   
-## <a name="pathcstr"></a>PATH::c_str  
+## <a name="pathcstr"></a>path::c_str  
   
 ```cpp  
 const value_type& *c_str() const noexcept;  
@@ -102,7 +106,7 @@ path& concat(InIt first, InIt last);
   
  Üye işlevleri dönüştürülen YOLUM (ancak bir ayırıcı ekleme değil) belirtilen sırası sona gerektiğinde.  
   
-## <a name="pathconstiterator"></a>PATH::const_iterator  
+## <a name="pathconstiterator"></a>path::const_iterator  
   
 ```cpp  
 typedef iterator const_iterator;  
@@ -126,7 +130,7 @@ iterator end() const;
   
  Bitiş dizisi yineleyici türü yineleyici birini döndürür.  
   
-## <a name="pathextension"></a>PATH::Extension  
+## <a name="pathextension"></a>path::extension  
   
 ```cpp  
 path extension() const;
@@ -168,7 +172,7 @@ u16string generic_u16string() const;
   
  Tüm ters eğik çizgi ile u16string() (Windows altında) döndürür bir eğik dönüştürülür.  
   
-## <a name="pathgenericu32string"></a>PATH::generic_u32string  
+## <a name="pathgenericu32string"></a>path::generic_u32string  
   
 ```cpp  
 u32string generic_u32string() const;
@@ -176,7 +180,7 @@ u32string generic_u32string() const;
   
  Tüm ters eğik çizgi ile u32string() (Windows altında) döndürür bir eğik dönüştürülür.  
   
-## <a name="pathgenericu8string"></a>PATH::generic_u8string  
+## <a name="pathgenericu8string"></a>path::generic_u8string  
   
 ```cpp  
 string generic_u8string() const;
@@ -192,13 +196,13 @@ wstring generic_wstring() const;
   
  Tüm ters eğik çizgi ile wstring() (Windows altında) döndürür bir eğik dönüştürülür.  
   
-## <a name="pathhasextension"></a>PATH::has_extension  
+## <a name="pathhasextension"></a>path::has_extension  
   
 ```cpp  
 bool has_extension() const;
 ```  
   
- Verir! extension().empty().  
+ Returns !extension().empty().  
   
 ## <a name="pathhasfilename"></a>PATH::has_filename  
   
@@ -206,55 +210,55 @@ bool has_extension() const;
 bool has_filename() const;
 ```  
   
- Verir! filename().empty().  
+ Returns !filename().empty().  
   
-## <a name="pathhasparentpath"></a>PATH::has_parent_path  
+## <a name="pathhasparentpath"></a>path::has_parent_path  
   
 ```cpp  
 bool has_parent_path() const;
 ```  
   
- Verir! parent_path().empty().  
+ Returns !parent_path().empty().  
   
-## <a name="pathhasrelativepath"></a>PATH::has_relative_path  
+## <a name="pathhasrelativepath"></a>path::has_relative_path  
   
 ```cpp  
 bool has_relative_path() const;
 ```  
   
- Verir! relative_path().empty().  
+ Returns !relative_path().empty().  
   
-## <a name="pathhasrootdirectory"></a>PATH::has_root_directory  
+## <a name="pathhasrootdirectory"></a>path::has_root_directory  
   
 ```cpp  
 bool has_root_directory() const;
 ```  
   
- Verir! root_directory().empty().  
+ Returns !root_directory().empty().  
   
-## <a name="pathhasrootname"></a>PATH::has_root_name  
+## <a name="pathhasrootname"></a>path::has_root_name  
   
 ```cpp  
 bool has_root_name() const;
 ```  
   
- Verir! root_name().empty().  
+ Returns !root_name().empty().  
   
-## <a name="pathhasrootpath"></a>PATH::has_root_path  
+## <a name="pathhasrootpath"></a>path::has_root_path  
   
 ```cpp  
 bool has_root_path() const;
 ```  
   
- Verir! root_path().empty().  
+ Returns !root_path().empty().  
   
-## <a name="pathhasstem"></a>PATH::has_stem  
+## <a name="pathhasstem"></a>path::has_stem  
   
 ```cpp  
 bool has_stem() const;
 ```  
   
- Verir! stem().empty().  
+ Returns !stem().empty().  
   
 ## <a name="pathisabsolute"></a>PATH::is_absolute  
   
@@ -264,15 +268,15 @@ bool is_absolute() const;
   
  Windows için işlevi has_root_name() döndürür & & has_root_directory(). POSIX için has_root_directory() işlevi döndürür.  
   
-## <a name="pathisrelative"></a>PATH::is_relative  
+## <a name="pathisrelative"></a>path::is_relative  
   
 ```cpp  
 bool is_relative() const;
 ```  
   
- Verir! is_absolute().  
+ Returns !is_absolute().  
   
-## <a name="pathiterator"></a>PATH::iterator  
+## <a name="pathiterator"></a>path::iterator  
   
 ```cpp  
 class iterator  
@@ -309,7 +313,7 @@ class iterator
   
 6.  Myname değiştirilmesine myname öğelerinde belirleme tüm yineleyiciler geçersiz kılar.  
   
-## <a name="pathmakepreferred"></a>PATH::make_preferred  
+## <a name="pathmakepreferred"></a>path::make_preferred  
   
 ```cpp  
 path& make_preferred();
@@ -325,7 +329,7 @@ const string_type& native() const noexcept;
   
  Myname döndürür.  
   
-## <a name="pathoperator"></a>PATH::operator =  
+## <a name="pathoperator"></a>path::operator=  
   
 ```cpp  
 path& operator=(const path& right);
@@ -337,7 +341,7 @@ path& operator=(const Source& source);
   
  İlk üye işleci için myname right.myname kopyalar. İkinci üye işleci için myname right.myname taşır. Üçüncü üye işleci aynı şekilde davranır * bu path(source) =.  
   
-## <a name="pathoperator"></a>PATH::operator +=  
+## <a name="pathoperator"></a>path::operator+=  
   
 ```cpp  
 path& operator+=(const path& right);
@@ -360,13 +364,13 @@ path& operator+=(Elem elem);
   
 3.  concat(PTR);  
   
-4.  concat (STRING_TYPE (1, elem));  
+4.  concat(string_type(1, elem));  
   
 5.  concat(Source);  
   
 6.  concat (yolu (basic_string\<Elem >(1, elem)));  
   
-## <a name="pathoperator"></a>PATH::operator / =  
+## <a name="pathoperator"></a>path::operator/=  
   
 ```cpp  
 path& operator/=(const path& right);  
@@ -381,7 +385,7 @@ path& operator/=(const Source& source);
   
 2.  Append(Source);  
   
-## <a name="pathoperator-stringtype"></a>PATH::operator STRING_TYPE  
+## <a name="pathoperator-stringtype"></a>path::operator string_type  
   
 ```cpp  
 operator string_type() const;
@@ -389,7 +393,7 @@ operator string_type() const;
   
  Üye işleci myname döndürür.  
   
-## <a name="pathparentpath"></a>PATH::parent_path  
+## <a name="pathparentpath"></a>path::parent_path  
   
 ```cpp  
 path parent_path() const;
@@ -434,7 +438,7 @@ path(InIt first, InIt last, const locale& loc);
   
  Şablon için\<InIt sınıfı > yolu (Init ilk, Init son, const yerel ayar & loc) myname olduğu (ilk, son), gerekli codecvt modelleri loc gelen herhangi alma  
   
-## <a name="pathpreferredseparator"></a>PATH::preferred_separator  
+## <a name="pathpreferredseparator"></a>path::preferred_separator  
   
 ```cpp  
 #if _WIN32_C_LIB  
@@ -446,7 +450,7 @@ static constexpr value_type preferred_separator == '/';
   
  Sabit nesnesi, konak işletim sistemine bağlı olarak yol bileşenlerini ayırmak için tercih edilen karakter sağlar. Onun yerine '/' L kullanmak için Windows altında çoğu bağlamlarda eşit bulunmadığı olduğuna dikkat edin.  
   
-## <a name="pathrelativepath"></a>PATH::relative_path  
+## <a name="pathrelativepath"></a>path::relative_path  
   
 ```cpp  
 path relative_path() const;
@@ -454,13 +458,13 @@ path relative_path() const;
   
  Myname, özellikle root_path().native() ve hemen sonraki yedekli dizin ayırıcı kaldırdıktan sonra myname soneki göreli yol bileşenini döndürür. Bileşen boş olabilir.  
   
-## <a name="pathremovefilename"></a>PATH::remove_filename  
+## <a name="pathremovefilename"></a>path::remove_filename  
   
 ```cpp  
 path& remove_filename();
 ```  
   
-## <a name="pathreplaceextension"></a>PATH::replace_extension  
+## <a name="pathreplaceextension"></a>path::replace_extension  
   
 ```cpp  
 path& replace_extension(const path& newext = path());
@@ -468,7 +472,7 @@ path& replace_extension(const path& newext = path());
   
  Üye işlevini soneki extension().native() myname ilk kaldırır. Ardından IF! newext.empty() & & newext [0]! nokta = (nokta olduğu * path("."). c_str()) sonra nokta için myname eklenir. Ardından newext için myname eklenir.  
   
-## <a name="pathreplacefilename"></a>PATH::replace_filename  
+## <a name="pathreplacefilename"></a>path::replace_filename  
   
 ```cpp  
 path& replace_filename(const path& pval);
@@ -483,7 +487,7 @@ remove_filename();
 return (*this);
 ```  
   
-## <a name="pathrootdirectory"></a>PATH::root_directory  
+## <a name="pathrootdirectory"></a>path::root_directory  
   
 ```cpp  
 path root_directory() const;
@@ -491,7 +495,7 @@ path root_directory() const;
   
  Myname kök dizin bileşenini döndürür. Bileşen boş olabilir.  
   
-## <a name="pathrootname"></a>PATH::root_name  
+## <a name="pathrootname"></a>path::root_name  
   
 ```cpp  
 path root_name() const;
@@ -499,7 +503,7 @@ path root_name() const;
   
  Myname kök adı bileşenini döndürür. Bileşen boş olabilir.  
   
-## <a name="pathrootpath"></a>PATH::root_path  
+## <a name="pathrootpath"></a>path::root_path  
   
 ```cpp  
 path root_path() const;
@@ -535,7 +539,7 @@ string string() const;
   
  İkinci üye işlevi bir karakter dizisi için ana bilgisayar sistemi tarafından avantajlı kodlama için YOLUM depolanan dizisi dönüştürür ve dize türünde bir nesnede depolanan döndürür.  
   
-## <a name="pathstringtype"></a>PATH::string_type  
+## <a name="pathstringtype"></a>path::string_type  
   
 ```cpp  
 typedef basic_string<value_type> string_type;  
@@ -575,7 +579,7 @@ string u8string() const;
   
  Üye işlevini UTF-8 YOLUM depolanan dizisi dönüştürür ve bir türü u8string nesnesinde depolanan döndürür.  
   
-## <a name="pathvaluetype"></a>PATH::value_type  
+## <a name="pathvaluetype"></a>path::value_type  
   
 ```cpp  
 #if _WIN32_C_LIB  

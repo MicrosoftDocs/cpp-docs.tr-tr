@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - set/std::multiset
 - set/std::multiset::allocator_type
@@ -49,7 +50,8 @@ f1_keywords:
 - set/std::multiset::swap
 - set/std::multiset::upper_bound
 - set/std::multiset::value_comp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::multiset [C++]
 - std::multiset [C++], allocator_type
@@ -93,16 +95,17 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 84fae58f0a1f57ca18fa053607c9d5bf60c068aa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a8953fd24b62784e36f12fb96e3005e21a86bc62
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 C++ Standart multiset sınıfı, içerdiği öğelerin değerleri benzersiz olması gerekmez ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hangi verdikleri koleksiyondan verilerinin alınması ve depolama için kullanılan kitaplığı. Çoklu kümedeki bir öğenin anahtar değeri doğrudan değiştirilemez. Bunun yerine, eski değerlerin silinmesi ve yeni değerlerle sahip öğelerin eklenmesi gerekir.  
@@ -124,7 +127,7 @@ class multiset
  C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` tür parametresi yok koşulu. Daha fazla bilgi için bkz: [ilişkilendirilebilir kapsayıcılarında heterojen arama](../standard-library/stl-containers.md#sequence_containers)  
   
  `Allocator`  
- Çoklu küme için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer **ayırıcısı***\<anahtar >.*  
+ Çoklu küme için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer **ayırıcısı ***\<anahtar >.*  
   
 ## <a name="remarks"></a>Açıklamalar  
  C++ Standart multiset sınıf kitaplığı:  
@@ -155,7 +158,7 @@ class multiset
   
 |||  
 |-|-|  
-|[multiset](#multiset)|Oluşturan bir `multiset` diğer bir deyişle boş veya diğer bir deyişle tüm kopyasını veya belirtilen bir parçası `multiset`.|  
+|[Multiset](#multiset)|Oluşturan bir `multiset` diğer bir deyişle boş veya diğer bir deyişle tüm kopyasını veya belirtilen bir parçası `multiset`.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -167,11 +170,11 @@ class multiset
 |[const_reference](#const_reference)|Typedef başvuru için bir `const` öğesi saklanan bir `multiset` okumak ve gerçekleştirmek için `const` işlemleri.|  
 |[const_reverse_iterator](#const_reverse_iterator)|Typedef herhangi okuyabilir çift yönlü yineleyici için `const` öğesinde `multiset`.|  
 |[difference_type](#difference_type)|İmzalı tamsayı typedef öğelerinin sayısı için bir `multiset` yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta.|  
-|[Yineleyici](#iterator)|Typedef okumak veya herhangi bir öğeyi değiştirmek için bir çift yönlü yineleyici için bir `multiset`.|  
+|[iterator](#iterator)|Typedef okumak veya herhangi bir öğeyi değiştirmek için bir çift yönlü yineleyici için bir `multiset`.|  
 |[key_compare](#key_compare)|Typedef göreli içinde iki öğe sırasını belirlemek için iki anahtar karşılaştırabilirsiniz bir işlev nesnesi için `multiset`.|  
 |[key_type](#key_type)|Typedef göreli içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz bir işlev nesnesi için `multiset`.|  
-|[İşaretçi](#pointer)|Typedef bir işaretçi bir öğe için bir `multiset`.|  
-|[başvuru](#reference)|Typedef depolanan bir öğe başvurusu için bir `multiset`.|  
+|[pointer](#pointer)|Typedef bir işaretçi bir öğe için bir `multiset`.|  
+|[reference](#reference)|Typedef depolanan bir öğe başvurusu için bir `multiset`.|  
 |[reverse_iterator](#reverse_iterator)|Typedef okuma veya bir öğedeki bir ters değiştirmek için bir çift yönlü yineleyici için `multiset`.|  
 |[size_type](#size_type)|Öğe sayısı gösterebilir bir işaretsiz tamsayı türü bir `multiset`.|  
 |[value_compare](#value_compare)|İki öğe içindeki göreli sıralarına belirlemek için sıralama anahtarları olarak karşılaştırabilirsiniz bir işlev nesnesi typedef `multiset`.|  
@@ -181,29 +184,29 @@ class multiset
   
 |||  
 |-|-|  
-|[başlayın](#begin)|İlk öğe işaret yineleyici döndürür `multiset`.|  
+|[Başlangıç](#begin)|İlk öğe işaret yineleyici döndürür `multiset`.|  
 |[cbegin](#cbegin)|İlk öğe adresleri const bir yineleyici döndürür `multiset`.|  
 |[cend](#cend)|Son öğesi başarılı konumu adresleri const bir yineleyici döndüren bir `multiset`.|  
 |[Temizle](#clear)|Tüm öğeleri sildiği bir `multiset`.|  
-|[sayısı](#count)|Öğelerin sayısını döndürür bir `multiset` olan anahtarıyla eşleşen bir parametre olarak belirtilen anahtar.|  
+|[Sayısı](#count)|Öğelerin sayısını döndürür bir `multiset` olan anahtarıyla eşleşen bir parametre olarak belirtilen anahtar.|  
 |[crbegin](#crbegin)|Ters çevrilen kümedeki ilk öğeyi ele alan bir sabit yineleyici döndürür.|  
 |[crend](#crend)|Ters çevrilen kümedeki son öğeden sonra gelen konumu ele alan bir sabit yineleyici döndürür.|  
 |[emplace](#emplace)|Yerinde oluşturulan bir öğe ekler bir `multiset`.|  
 |[emplace_hint](#emplace_hint)|Yerinde oluşturulan bir öğe ekler bir `multiset`, yerleştirme İpucu ile.|  
-|[boş](#empty)|Testleri bir `multiset` boş.|  
+|[empty](#empty)|Testleri bir `multiset` boş.|  
 |[Bitiş](#end)|Son öğesi sonra konumuna işaret yineleyici döndüren bir `multiset`.|  
 |[equal_range](#equal_range)|Yineleyicilerin bir çiftini döndürür. İlk öğe çifti işaret ilk yineleyici bir `multiset` belirtilen anahtar daha büyük bir anahtar. İlk öğe çifti işaret ikinci yineleyici `multiset` eşit veya bundan büyük anahtarı bir anahtara sahip.|  
 |[silme](#erase)|Bir öğenin veya bir dizi öğeleri kaldırır bir `multiset` belirtilen konumları veya belirtilen anahtar eşleşen kaldırır öğeleri.|  
-|[Bul](#find)|Bir öğenin ilk konumuna işaret eden bir yineleyici döndüren bir `multiset` anahtarın belirtilen anahtara sahip.|  
+|[find](#find)|Bir öğenin ilk konumuna işaret eden bir yineleyici döndüren bir `multiset` anahtarın belirtilen anahtara sahip.|  
 |[get_allocator](#get_allocator)|Bir kopyasını döndürür `allocator` oluşturmak için kullanılan nesne `multiset`.|  
-|[Ekle](#insert)|Bir öğenin veya bir dizi elemanlara ekler bir `multiset`.|  
+|[insert](#insert)|Bir öğenin veya bir dizi elemanlara ekler bir `multiset`.|  
 |[key_comp](#key_comp)|Göreli içinde iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz bir işlev nesnesi sağlar `multiset`.|  
 |[lower_bound](#lower_bound)|Yineleyici ilk öğe döndürür bir `multiset` eşit veya bundan büyük belirtilen anahtar bir anahtara sahip.|  
 |[max_size](#max_size)|En büyük uzunluğunu döndürür `multiset`.|  
 |[rbegin](#rbegin)|İlk öğe bir ters işaret yineleyici döndürür `multiset`.|  
 |[rend](#rend)|Son öğesi bir ters başarılı konumuna işaret eden bir yineleyici döndürür `multiset`.|  
-|[boyutu](#size)|Öğelerin sayısını döndürür bir `multiset`.|  
-|[değiştirme](#swap)|İki öğelerini alış verişleri `multiset`s.|  
+|[Boyutu](#size)|Öğelerin sayısını döndürür bir `multiset`.|  
+|[Değiştirme](#swap)|İki öğelerini alış verişleri `multiset`s.|  
 |[upper_bound](#upper_bound)|Yineleyici ilk öğe döndürür bir `multiset` belirtilen anahtar daha büyük bir anahtar.|  
 |[value_comp](#value_comp)|Sipariş öğesi değerleri için kullanılan karşılaştırma nesnesinin bir kopyasını alır bir `multiset`.|  
   
@@ -211,14 +214,14 @@ class multiset
   
 |||  
 |-|-|  
-|[işleç =](#op_eq)|Öğeleri değiştirir bir `multiset` başka bir kopyasına sahip `multiset`.|  
+|[operator=](#op_eq)|Öğeleri değiştirir bir `multiset` başka bir kopyasına sahip `multiset`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<ayarlamak >  
   
  **Namespace:** std  
   
-##  <a name="allocator_type"></a>multiset::allocator_type  
+##  <a name="allocator_type"></a>  multiset::allocator_type  
  Allocator sınıfı multiset nesnesinin temsil eden bir tür  
   
 ```  
@@ -226,14 +229,14 @@ typedef Allocator allocator_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `allocator_type`Şablon parametresi için bir eş anlamlı olduğundan `Allocator`.  
+ `allocator_type` Şablon parametresi için bir eş anlamlı olduğundan `Allocator`.  
   
  Daha fazla bilgi için `Allocator`, Açıklamalar bölümüne bakın [multiset sınıfı](../standard-library/multiset-class.md) konu.  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [get_allocator](#get_allocator) bir örnek kullanmak için`allocator_type`  
+  Örneğin bkz [get_allocator](#get_allocator) bir örnek kullanmak için `allocator_type`  
   
-##  <a name="begin"></a>multiset::Begin  
+##  <a name="begin"></a>  multiset::Begin  
  Multiset ilk öğe adresleme yineleyici döndürür.  
   
 ```  
@@ -284,7 +287,7 @@ The first element of ms1 is 1
 The first element of ms1 is now 2  
 ```  
   
-##  <a name="cbegin"></a>multiset::cbegin  
+##  <a name="cbegin"></a>  multiset::cbegin  
  Döndürür bir `const` aralığın ilk öğe adresleri yineleyici.  
   
 ```  
@@ -307,7 +310,7 @@ auto i2 = Container.cbegin();
 // i2 is Container<T>::const_iterator  
 ```  
   
-##  <a name="cend"></a>multiset::cend  
+##  <a name="cend"></a>  multiset::cend  
  Döndürür bir `const` konumun yalnızca bir aralıkta son öğenin ötesinde adresleri yineleyici.  
   
 ```  
@@ -318,7 +321,7 @@ const_iterator cend() const;
  A `const` yalnızca aralığın sonunu aşan işaret çift yönlü erişim yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `cend`Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
+ `cend` Yineleyici kendi aralığının sonunu geçti olup olmadığını test etmek için kullanılır.  
   
  Bu üye işlevi yerine kullanabileceğiniz `end()` üye işlevi dönüş değeri garanti `const_iterator`. Genellikle, ile birlikte kullanılır [otomatik](../cpp/auto-cpp.md) kesintisi anahtar sözcüğü, aşağıdaki örnekte gösterildiği gibi yazın. Örnekte, göz önünde bulundurun `Container` bir değiştirilebilir için (olmayan `const`) destekleyen herhangi bir türde kapsayıcı `end()` ve `cend()`.  
   
@@ -332,7 +335,7 @@ auto i2 = Container.cend();
   
  Tarafından döndürülen değer `cend` değil başvuru yapıldı.  
   
-##  <a name="clear"></a>multiset::Clear  
+##  <a name="clear"></a>  multiset::Clear  
  Bir çoklu küme tüm öğeleri siler.  
   
 ```  
@@ -369,7 +372,7 @@ The size of the multiset is initially 2.
 The size of the multiset after clearing is 0.  
 ```  
   
-##  <a name="const_iterator"></a>multiset::const_iterator  
+##  <a name="const_iterator"></a>  multiset::const_iterator  
  Çift yönlü yineleyici bu can sağlayan bir türü okuma bir **const** multiset öğe.  
   
 ```  
@@ -382,7 +385,7 @@ typedef implementation-defined const_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) kullanarak bir örnek için `const_iterator`.  
   
-##  <a name="const_pointer"></a>multiset::const_pointer  
+##  <a name="const_pointer"></a>  multiset::const_pointer  
  Bir işaretçi sağlayan bir türü bir **const** bir multiset öğe.  
   
 ```  
@@ -394,7 +397,7 @@ typedef typename allocator_type::const_pointer const_pointer;
   
  Çoğu durumda, bir [yineleyici](#iterator) çok kümeli nesnesindeki öğelerin erişmek için kullanılmalıdır.  
   
-##  <a name="const_reference"></a>multiset::const_reference  
+##  <a name="const_reference"></a>  multiset::const_reference  
  Bir başvuru sağlayan bir türü bir **const** okumak ve gerçekleştirmek için bir çoklu küme depolanan öğesi **const** işlemleri.  
   
 ```  
@@ -434,7 +437,7 @@ int main( )
 The first element in the multiset is 10.  
 ```  
   
-##  <a name="const_reverse_iterator"></a>multiset::const_reverse_iterator  
+##  <a name="const_reverse_iterator"></a>  multiset::const_reverse_iterator  
  Herhangi bir çift yönlü yineleyici bu can sağlayan bir türü okuma **const** multiset öğe.  
   
 ```  
@@ -447,7 +450,7 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rend](#rend) bildirme ve kullanma konusunda bir örnek için `const_reverse_iterator`.  
   
-##  <a name="count"></a>multiset::Count  
+##  <a name="count"></a>  multiset::Count  
  Parametresi belirtilen bir anahtarı olan anahtarla eşleşen bir multiset öğe sayısını döndürür.  
   
 ```  
@@ -464,7 +467,7 @@ size_type count(const Key& key) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevini öğe sayısını döndürür *x* aralığında  
   
- [ `lower_bound` (_ *Anahtar* ), `upper_bound` (\_ *anahtar* )).  
+ [ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) ).  
   
 ### <a name="example"></a>Örnek  
   Aşağıdaki örnek multiset::count üye fonksiyonu kullanımını göstermektedir.  
@@ -507,7 +510,7 @@ The number of elements in ms1 with a sort key of 2 is: 1.
 The number of elements in ms1 with a sort key of 3 is: 0.  
 ```  
   
-##  <a name="crbegin"></a>multiset::crbegin  
+##  <a name="crbegin"></a>  multiset::crbegin  
  İlk öğe ters multiset adresleme const yineleyici döndürür.  
   
 ```  
@@ -518,11 +521,11 @@ const_reverse_iterator crbegin() const;
  Bir const ilk öğe ters multiset adresleme veya ne son öğe içinde unreversed multiset olsaydı adresleme çift yönlü yineleyici ters çevrilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crbegin`ile birlikte kullanılan ters multiset başlatmak gibi bir çoklu küme ile kullanılır.  
+ `crbegin` ile birlikte kullanılan ters multiset başlatmak gibi bir çoklu küme ile kullanılır.  
   
  Dönüş değeri ile `crbegin`, birden çok küme nesnesi değiştirilemez.  
   
- `crbegin`multiset geriye doğru yinelemek için kullanılabilir.  
+ `crbegin` multiset geriye doğru yinelemek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -552,7 +555,7 @@ int main( )
 The first element in the reversed multiset is 30.  
 ```  
   
-##  <a name="crend"></a>multiset::crend  
+##  <a name="crend"></a>  multiset::crend  
  Son öğe ters bir çoklu küme içinde başarılı konumu adresleri const bir yineleyici döndürür.  
   
 ```  
@@ -563,11 +566,11 @@ const_reverse_iterator crend() const;
  Bir const ters multiset (ilk öğe unreversed multiset öncesinde konum), son öğe başarılı konumu adresleri çift yönlü yineleyici ters çevrilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `crend`Ters multiset ile kullanılan gibi [son](#end) multiset ile kullanılır.  
+ `crend` Ters multiset ile kullanılan gibi [son](#end) multiset ile kullanılır.  
   
  Dönüş değeri ile `crend`, birden çok küme nesnesi değiştirilemez.  
   
- `crend`Ters yineleyici kendi multiset sonuna olup ulaştı için test etmek için kullanılabilir.  
+ `crend` Ters yineleyici kendi multiset sonuna olup ulaştı için test etmek için kullanılabilir.  
   
  Tarafından döndürülen değer `crend` değil başvuru yapıldı.  
   
@@ -595,7 +598,7 @@ int main() {
 }  
 ```  
   
-##  <a name="difference_type"></a>multiset::difference_type  
+##  <a name="difference_type"></a>  multiset::difference_type  
  Yineleyiciler tarafından işaret öğeler arasındaki bir aralıkta multiset öğe sayısını temsil etmek için kullanılan bir imzalı tamsayı türü.  
   
 ```  
@@ -665,7 +668,7 @@ The number '20' occurs 2 times in multiset ms1.
 The number of elements in the multiset ms1 is: 3.  
 ```  
   
-##  <a name="emplace"></a>multiset::emplace  
+##  <a name="emplace"></a>  multiset::emplace  
  Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.  
   
 ```  
@@ -730,7 +733,7 @@ int main()
   
 ```  
   
-##  <a name="emplace_hint"></a>multiset::emplace_hint  
+##  <a name="emplace_hint"></a>  multiset::emplace_hint  
  Yerinde (hiçbir kopyalama veya taşıma işlemler gerçekleştirilir), yerleştirme İpucu ile oluşturulan bir öğe ekler.  
   
 ```  
@@ -758,7 +761,7 @@ iterator emplace_hint(
   
  Kod örneği için bkz: [set::emplace_hint](../standard-library/set-class.md#emplace_hint).  
   
-##  <a name="empty"></a>multiset::empty  
+##  <a name="empty"></a>  multiset::empty  
  Bir çoklu küme boşsa, testleri.  
   
 ```  
@@ -799,7 +802,7 @@ The multiset ms1 is not empty.
 The multiset ms2 is empty.  
 ```  
   
-##  <a name="end"></a>multiset::End  
+##  <a name="end"></a>  multiset::End  
  past-the-end yineleyici döndürür.  
   
 ```  
@@ -820,7 +823,7 @@ iterator end();
   
  Kod örneği için bkz: [multiset::find](#find).  
   
-##  <a name="equal_range"></a>multiset::equal_range  
+##  <a name="equal_range"></a>  multiset::equal_range  
  Yineleyiciler çifti sırasıyla multiset belirtilen anahtar daha büyük bir anahtarla ilk öğe ve eşit veya bundan büyük anahtarı bir anahtarla multiset ilk öğe döndürür.  
   
 ```  
@@ -836,7 +839,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="return-value"></a>Dönüş Değeri  
  Yineleyiciler çifti ilk olacak şekilde, [lower_bound](#lower_bound) anahtarı ve ikincisi [upper_bound](#upper_bound) anahtarı.  
   
- İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **İlk**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
+ İlk yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İlk**ve alt sınır yineleyici başvurulacak kullanmak \*( `pr`. **first**). İkinci yineleyici çiftinin erişmek için `pr` üye işlevi tarafından döndürülen, kullanmak `pr`. **İkinci**ve üst sınır yineleyici başvurulacak kullanmak \*( `pr`. **İkinci**).  
   
 ### <a name="example"></a>Örnek  
   
@@ -896,7 +899,7 @@ matching the 2nd element of the pair returned by equal_range( 20 ).
 The multiset ms1 doesn't have an element with a key less than 40.  
 ```  
   
-##  <a name="erase"></a>multiset::ERASE  
+##  <a name="erase"></a>  multiset::ERASE  
  Bir öğenin veya öğe aralığını belirtilen konumdan bir multiset kaldırır veya belirtilen anahtar eşleşen öğeleri kaldırır.  
   
 ```  
@@ -932,7 +935,7 @@ size_type erase(
 ### <a name="remarks"></a>Açıklamalar  
  Kod örneği için bkz: [set::erase](../standard-library/set-class.md#erase).  
   
-##  <a name="find"></a>multiset::Find  
+##  <a name="find"></a>  multiset::Find  
  Belirtilen anahtar için eşdeğer bir anahtara sahip bir çoklu küme içinde bir öğe konuma başvuruyor yineleyici döndürür.  
   
 ```  
@@ -1015,7 +1018,7 @@ int main()
 }  
 ```  
   
-##  <a name="get_allocator"></a>multiset::get_allocator  
+##  <a name="get_allocator"></a>  multiset::get_allocator  
  Multiset oluşturmak için kullanılan ayırıcısı nesnesinin bir kopyasını döndürür.  
   
 ```  
@@ -1080,7 +1083,7 @@ int main( )
 }  
 ```  
   
-##  <a name="insert"></a>multiset::insert  
+##  <a name="insert"></a>  multiset::insert  
  Bir öğenin veya bir dizi öğeleri multiset ekler.  
   
 ```  
@@ -1244,7 +1247,7 @@ int main()
   
 ```  
   
-##  <a name="iterator"></a>multiset::iterator  
+##  <a name="iterator"></a>  multiset::iterator  
  Bir sabit sağlayan bir türü [çift yönlü yineleyici](../standard-library/bidirectional-iterator-tag-struct.md) okuyabilen herhangi bir öğe bir multiset.  
   
 ```  
@@ -1254,7 +1257,7 @@ typedef implementation-defined iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [başlamak](#begin) bildirme ve kullanma konusunda bir örnek için bir **yineleyici**.  
   
-##  <a name="key_comp"></a>multiset::key_comp  
+##  <a name="key_comp"></a>  multiset::key_comp  
  Bir multiset sipariş anahtarları için kullanılan karşılaştırma nesnesinin bir kopyasını alır.  
   
 ```  
@@ -1326,7 +1329,7 @@ kc1( 2,3 ) returns value of true, where kc1 is the function object of s1.
 kc2( 2,3 ) returns value of false, where kc2 is the function object of ms2.  
 ```  
   
-##  <a name="key_compare"></a>multiset::key_compare  
+##  <a name="key_compare"></a>  multiset::key_compare  
  İşlev nesnesi sağlayan bir tür multiset göreli iki öğe sırasını belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz.  
   
 ```  
@@ -1341,7 +1344,7 @@ typedef Compare key_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [key_comp](#key_comp) bildirme ve kullanma konusunda bir örnek için `key_compare`.  
   
-##  <a name="key_type"></a>multiset::key_type  
+##  <a name="key_type"></a>  multiset::key_type  
  İşlev nesnesi sağlayan bir tür multiset göreli iki öğe sırasını belirlemek için sıralama anahtarları karşılaştırabilirsiniz.  
   
 ```  
@@ -1349,14 +1352,14 @@ typedef Key key_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `key_type`Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
+ `key_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
   
  Daha fazla bilgi için `Key`, Açıklamalar bölümüne bakın [multiset sınıfı](../standard-library/multiset-class.md) konu.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_type](#value_type) bildirme ve kullanma konusunda bir örnek için `key_type`.  
   
-##  <a name="lower_bound"></a>multiset::lower_bound  
+##  <a name="lower_bound"></a>  multiset::lower_bound  
  Yineleyici ilk öğesine eşit veya bundan büyük belirtilen anahtar bir anahtarı olan bir multiset döndürür.  
   
 ```  
@@ -1421,7 +1424,7 @@ The multiset ms1 doesn't have an element with a key of 40.
 The element of ms1 with a key matching that of the last element is: 30.  
 ```  
   
-##  <a name="max_size"></a>multiset::max_size  
+##  <a name="max_size"></a>  multiset::max_size  
  Multiset en büyük uzunluğunu döndürür.  
   
 ```  
@@ -1451,7 +1454,7 @@ int main( )
 }  
 ```  
   
-##  <a name="multiset"></a>multiset::multiset  
+##  <a name="multiset"></a>  multiset::multiset  
  Boş veya tüm kopyalama veya başka bir multiset parçası olan bir çoklu küme oluşturur.  
   
 ```  
@@ -1632,7 +1635,7 @@ int main()
 }  
 ```  
   
-##  <a name="op_eq"></a>multiset::operator =  
+##  <a name="op_eq"></a>  multiset::operator=  
  Bu öğeleri değiştirir `multiset` kullanan başka bir öğeler `multiset`.  
   
 ```  
@@ -1649,7 +1652,7 @@ multiset& operator=(multiset&& right);
 |`right`|`multiset` Hangi öğelerin kopyaladığınız veya taşındı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- `operator=`kopyalar veya öğeleri taşır `right` kopyalayıp bu `multiset`bağlı olarak kullanılan bir başvuru türü (lvalue veya rvalue). Bu öğeleri `multiset` önce `operator=` yürütür atılır.  
+ `operator=` kopyalar veya öğeleri taşır `right` kopyalayıp bu `multiset`bağlı olarak kullanılan bir başvuru türü (lvalue veya rvalue). Bu öğeleri `multiset` önce `operator=` yürütür atılır.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1688,7 +1691,7 @@ int main( )
    }  
 ```  
   
-##  <a name="pointer"></a>multiset::pointer  
+##  <a name="pointer"></a>  multiset::pointer  
  Bir öğe için bir işaretçi bir multiset sağlayan türü.  
   
 ```  
@@ -1700,7 +1703,7 @@ typedef typename allocator_type::pointer pointer;
   
  Çoğu durumda, bir [yineleyici](#iterator) çok kümeli nesnesindeki öğelerin erişmek için kullanılmalıdır.  
   
-##  <a name="rbegin"></a>multiset::rbegin  
+##  <a name="rbegin"></a>  multiset::rbegin  
  İlk öğe ters multiset adresleme yineleyici döndürür.  
   
 ```  
@@ -1713,11 +1716,11 @@ reverse_iterator rbegin();
  İlk öğe ters multiset adresleme veya ne adresleme ters çift yönlü yineleyici son öğe içinde unreversed multiset eklenmiştir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rbegin`rbegin multiset ile yalnızca kullanılan ters multiset ile kullanılır.  
+ `rbegin` rbegin multiset ile yalnızca kullanılan ters multiset ile kullanılır.  
   
  Varsa dönüş değerini `rbegin` atandığı bir `const_reverse_iterator`, sonra da multiset nesnesi değiştirilemez. Varsa dönüş değerini `rbegin` atanmış bir `reverse_iterator`, birden çok küme nesnesi değiştirilebilir sonra.  
   
- `rbegin`multiset geriye doğru yinelemek için kullanılabilir.  
+ `rbegin` multiset geriye doğru yinelemek için kullanılabilir.  
   
 ### <a name="example"></a>Örnek  
   
@@ -1774,7 +1777,7 @@ The reversed multiset is: 30 20 10
 After the erasure, the first element in the reversed multiset is 20.  
 ```  
   
-##  <a name="reference"></a>multiset::Reference  
+##  <a name="reference"></a>  multiset::reference  
  Bir çoklu küme içinde depolanan bir öğe için bir başvuru sağlar türü.  
   
 ```  
@@ -1809,7 +1812,7 @@ int main( )
 The first element in the multiset is 10.  
 ```  
   
-##  <a name="rend"></a>multiset::rend  
+##  <a name="rend"></a>  multiset::rend  
  Son öğe ters bir çoklu küme içinde başarılı konumu adresleri yineleyici döndürür.  
   
 ```  
@@ -1822,11 +1825,11 @@ reverse_iterator rend();
  Ters multiset (ilk öğe unreversed multiset öncesinde konum), son öğe başarılı konumu adresleri ters çift yönlü yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `rend`Ters multiset ile kullanılan gibi [son](#end) multiset ile kullanılır.  
+ `rend` Ters multiset ile kullanılan gibi [son](#end) multiset ile kullanılır.  
   
  Varsa dönüş değerini `rend` atandığı bir `const_reverse_iterator`, sonra da multiset nesnesi değiştirilemez. Varsa dönüş değerini `rend` atanmış bir `reverse_iterator`, birden çok küme nesnesi değiştirilebilir sonra.  
   
- `rend`Ters yineleyici kendi multiset sonuna olup ulaştı için test etmek için kullanılabilir.  
+ `rend` Ters yineleyici kendi multiset sonuna olup ulaştı için test etmek için kullanılabilir.  
   
  Tarafından döndürülen değer `rend` değil başvuru yapıldı.  
   
@@ -1879,7 +1882,7 @@ int main() {
 }  
 ```  
   
-##  <a name="reverse_iterator"></a>multiset::reverse_iterator  
+##  <a name="reverse_iterator"></a>  multiset::reverse_iterator  
  Okuma veya bir öğenin içinde ters multiset değiştirmek için bir çift yönlü yineleyici sağlayan türü.  
   
 ```  
@@ -1892,7 +1895,7 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [rbegin](#rbegin) bildirme ve kullanma konusunda bir örnek için `reverse_iterator`.  
   
-##  <a name="size"></a>multiset::size  
+##  <a name="size"></a>  multiset::size  
  Multiset öğe sayısını döndürür.  
   
 ```  
@@ -1931,7 +1934,7 @@ The multiset length is 1.
 The multiset length is now 2.  
 ```  
   
-##  <a name="size_type"></a>multiset::size_type  
+##  <a name="size_type"></a>  multiset::size_type  
  Bir multiset öğe sayısını gösterebilir bir işaretsiz tamsayı türü.  
   
 ```  
@@ -1939,9 +1942,9 @@ typedef typename allocator_type::size_type size_type;
 ```  
   
 ### <a name="example"></a>Örnek  
-  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği`size_type`  
+  Örneğin bkz [boyutu](#size) bildirme ve kullanma örneği `size_type`  
   
-##  <a name="swap"></a>multiset::Swap  
+##  <a name="swap"></a>  multiset::Swap  
  İki multisets öğelerini değiş tokuş eder.  
   
 ```  
@@ -2006,7 +2009,7 @@ After swapping with ms2, list ms1 is: 100 200.
 After swapping with ms3, list ms1 is: 300.  
 ```  
   
-##  <a name="upper_bound"></a>multiset::upper_bound  
+##  <a name="upper_bound"></a>  multiset::upper_bound  
  Yineleyici ilk öğe belirtilen anahtar daha büyük bir anahtara sahip bir multiset döndürür.  
   
 ```  
@@ -2071,7 +2074,7 @@ The first element of ms1 with a key greater than
 that of the initial element of ms1 is: 20.  
 ```  
   
-##  <a name="value_comp"></a>multiset::value_comp  
+##  <a name="value_comp"></a>  multiset::value_comp  
  Sipariş öğesi değerleri için bir çoklu küme içinde kullanılan karşılaştırma nesnesinin bir kopyasını alır.  
   
 ```  
@@ -2143,7 +2146,7 @@ vc1( 2,3 ) returns value of true, where vc1 is the function object of ms1.
 vc2( 2,3 ) returns value of false, where vc2 is the function object of ms2.  
 ```  
   
-##  <a name="value_compare"></a>multiset::value_compare  
+##  <a name="value_compare"></a>  multiset::value_compare  
  İşlev nesnesi sağlayan türü göreli sıralarına multiset belirlemek için iki sıralama anahtarları karşılaştırabilirsiniz.  
   
 ```  
@@ -2151,7 +2154,7 @@ typedef key_compare value_compare;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_compare`Şablon parametresi için bir eş anlamlı olduğundan `Compare`.  
+ `value_compare` Şablon parametresi için bir eş anlamlı olduğundan `Compare`.  
   
  Unutmayın her ikisi de [key_compare](#key_compare) ve **value_compare** şablon parametresi için eş anlamlı sözcükleri olan `Compare`. Her iki tür sınıfları harita ve burada ayrı multimap ile uyumluluk için aynı oldukları, multiset ve sınıfları kümesi için sağlanır.  
   
@@ -2160,7 +2163,7 @@ typedef key_compare value_compare;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [value_comp](#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.  
   
-##  <a name="value_type"></a>multiset::value_type  
+##  <a name="value_type"></a>  multiset::value_type  
  Kapasitesi değer olarak, çoklu küme olarak bir öğe olarak saklanan bir nesneyi tanımlayan bir türü.  
   
 ```  
@@ -2168,7 +2171,7 @@ typedef Key value_type;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `value_type`Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
+ `value_type` Şablon parametresi için bir eş anlamlı olduğundan `Key`.  
   
  Unutmayın her ikisi de [key_type](#key_type) ve `value_type` şablon parametresi için eş anlamlı sözcükleri olan **anahtar**. Her iki tür sınıfları harita ve burada ayrı multimap ile uyumluluk için aynı oldukları, multiset ve sınıfları kümesi için sağlanır.  
   

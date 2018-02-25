@@ -4,29 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: __stosb
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- __stosb
+dev_langs:
+- C++
 helpviewer_keywords:
 - rep stosb instruction
 - __stosb intrinsic
 - stosb instruction
 ms.assetid: 634589ed-2da3-439b-a381-a214d89bf10c
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9e86154a3d56d7ef9a27640dfe70f739c630de91
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7c4041ad4d5642d01289cfb1f259952ba4fbecc9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="stosb"></a>__stosb
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Bir depolama dize yönergesi oluşturur (`rep stosb`).  
   
@@ -41,20 +45,20 @@ void __stosb(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out]`Dest`  
+ [out] `Dest`  
  İşlemin hedefi.  
   
- [in]`Data`  
+ [in] `Data`  
  Depolamak için veriler.  
   
- [in]`Count`  
+ [in] `Count`  
  Yazılacak bayt Blok uzunluğu.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__stosb`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__stosb`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

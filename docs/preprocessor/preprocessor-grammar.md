@@ -4,59 +4,62 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - preprocessor
 - grammar, preprocessor
 - preprocessor, grammar
 ms.assetid: 6cd33fad-0b08-4592-9be8-7359c43e24e9
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 797d4bf4274a92ca4f265d01579698c0f9c6a4a3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 02b3597b035e3ea4bfa1670aa405109f4c01a077
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="preprocessor-grammar"></a>Ön işlemci Dil Bilgisi
-**#define***tanımlayıcısı* *belirteci dize*iptal et  
+**#define***tanımlayıcısı* *belirteci dize*iptal et    
   
- *#***tanımlamak***tanımlayıcısı*[**(** *tanımlayıcısı*kabul**,** *...*  **,** *tanımlayıcısı*kabul **)**] *belirteci dize*iptal et  
+ *#* **tanımlamak***tanımlayıcısı*[**(** *tanımlayıcısı*kabul**,** *...*  **,** *tanımlayıcısı*kabul **)**] *belirteci dize*iptal et    
   
  **tanımlı (***tanımlayıcısı* **)**   
   
  **tanımlanan***tanımlayıcısı*   
   
- `#include`**"***yolu spec***"**  
+ `#include` **"***yolu spec***"**  
   
- `#include` **\<**  *yol belirtimi***>**  
+ `#include` **\<***yol belirtimi***>**  
   
- **#line***basamak dizisi***"** *filename* **"**iptal et  
+ **#line**  *digit-sequence*  **"** *filename* **"**opt  
   
- *#***undef***tanımlayıcısı*   
+ *#* **undef***tanımlayıcısı*   
   
  **#error***belirteci dize*   
   
- **#pragma***belirteci dize*   
+ **#pragma**  *token-string*  
   
  *Koşullu* :  
  *IF-bölümü elif parçaları*kabul*else bölümünü*kabul*endif satır*  
   
  *IF-bölümü* :  
- *IF-linetext*  
+ *if-linetext*  
   
  *IF-line* :  
- **#if***sabit ifadesi*   
+ **#if**  *constant-expression*  
   
- **#ifdef***tanımlayıcısı*   
+ **#ifdef**  *identifier*  
   
- **#ifndef***tanımlayıcısı*   
+ **#ifndef**  *identifier*  
   
  *elif bölümleri* :  
  *elif satırlı metin*  
@@ -64,10 +67,10 @@ ms.lasthandoff: 12/21/2017
  *elif bölümleri elif satırlı metin*  
   
  *elif satır* :  
- **#elif***sabit ifadesi*   
+ **#elif**  *constant-expression*  
   
- *else bölümünü* :  
- *linetext başka*  
+ *else-part* :  
+ *else-linetext*  
   
  *satırı başka* :  
  `#else`  
@@ -76,7 +79,7 @@ ms.lasthandoff: 12/21/2017
  `#endif`  
   
  *basamak dizisi* :  
- *basamak*  
+ *Basamak*  
   
  *basamak dizisi basamak*  
   
@@ -87,11 +90,11 @@ ms.lasthandoff: 12/21/2017
  Belirteçleri dizesi  
   
  *belirteç* :  
- *anahtar sözcüğü*  
+ *keyword*  
   
- *tanımlayıcı*  
+ *identifier*  
   
- *sabiti*  
+ *constant*  
   
  *operator*  
   

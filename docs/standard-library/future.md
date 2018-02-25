@@ -4,24 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <future>
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- <future>
+dev_langs:
+- C++
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7894e47b14dffc1685fbce8194f0fc45ed6b5d1c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f52f0e08d5612f5230f859c034825591af5ebd79
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltfuturegt"></a>&lt;Gelecekteki&gt;
+# <a name="ltfuturegt"></a>&lt;Gelecek&gt;
 Standart üstbilgisini \<gelecekteki > şablon sınıfları ve bir işlev çalıştıran basitleştirmek destekleyen şablonları tanımlamak için — büyük olasılıkla ayrı bir iş parçacığı içinde — ve sonucu alınıyor. , İşlev tarafından döndürülen değer veya işlev tarafından gösterilen ancak işlevinde yakalandı bir özel durum oluşur.  
   
  Bu üst eşzamanlılık çalışma zamanı (ConcRT) kullanır, böylece diğer ConcRT mekanizmaları ile birlikte kullanabilirsiniz. ConcRT hakkında daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).  
@@ -78,7 +82,7 @@ Standart üstbilgisini \<gelecekteki > şablon sınıfları ve bir işlev çalı
 |[future_category](../standard-library/future-functions.md#future_category)|Bir başvuru döndürür `error_category` ilişkili hataları belirtir nesne `future` nesneleri.|  
 |[make_error_code](../standard-library/future-functions.md#make_error_code)|Oluşturur bir `error_code` olan `error_category` belirtir nesne `future` hataları.|  
 |[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Oluşturur bir `error_condition` olan `error_category` belirtir nesne `future` hataları.|  
-|[değiştirme](../standard-library/future-functions.md#swap)|Bir ilişkili zaman uyumsuz durumu alış verişleri `promise` , başka bir nesne.|  
+|[Değiştirme](../standard-library/future-functions.md#swap)|Bir ilişkili zaman uyumsuz durumu alış verişleri `promise` , başka bir nesne.|  
   
 ### <a name="enumerations"></a>Numaralandırmalar  
   

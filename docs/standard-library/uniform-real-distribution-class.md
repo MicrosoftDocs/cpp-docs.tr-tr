@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::uniform_real_distribution
 - random/std::uniform_real_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::uniform_real_distribution::param_type::b
 - random/std::uniform_real_distribution::param_type::operator==
 - random/std::uniform_real_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::uniform_real_distribution [C++]
 - std::uniform_real_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 484997806cadb75b0322e9d194fe37ab30dae3b5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: be2205fc4795320c3d3998de7ff5324a23af00d1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="uniformrealdistribution-class"></a>uniform_real_distribution Sınıfı
 (Her değere eşit olası) Tekdüzen oluşturur (bunlar dahil) özel bir çıktı aralıkta kayan nokta dağıtım.  
@@ -184,7 +187,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="uniform_real_distribution"></a>uniform_real_distribution::uniform_real_distribution  
+##  <a name="uniform_real_distribution"></a>  uniform_real_distribution::uniform_real_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -193,7 +196,7 @@ explicit uniform_real_distribution(const param_type& parm);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-*bir*  
+*a*  
 Rastgele değerler, her ikisi de dahil olan alt sınır.  
   
 *b*  
@@ -203,13 +206,13 @@ Rastgele değerler, her ikisi de dahil olan alt sınır.
 `param_type` Dağıtım oluşturmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`a < b`  
+ **Önkoşul:** `a < b`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `a` değeri tutan değeri *bir* ve, depolanan `b` değeri tutan değeri *b*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>uniform_real_distribution::param_type  
+##  <a name="param_type"></a>  uniform_real_distribution::param_type  
  Dağıtım tüm parametreleri depolar.  
   
 ```  
@@ -224,17 +227,17 @@ struct param_type {
    };  
 ```  
 ### <a name="parameters"></a>Parametreler  
-*bir*  
+*a*  
 Rastgele değerler, her ikisi de dahil olan alt sınır.  
   
 *b*  
 Özel rastgele değerler için üst sınır.  
   
-*sağ*  
+*Sağ*  
 `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`a < b`  
+ **Önkoşul:** `a < b`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

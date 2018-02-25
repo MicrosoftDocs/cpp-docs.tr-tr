@@ -1,29 +1,33 @@
 ---
-title: "improper_scheduler_detach sınıfı | Microsoft Docs"
+title: improper_scheduler_detach Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - improper_scheduler_detach
 - CONCRT/concurrency::improper_scheduler_detach
 - CONCRT/concurrency::improper_scheduler_detach::improper_scheduler_detach
-dev_langs: C++
-helpviewer_keywords: improper_scheduler_detach class
+dev_langs:
+- C++
+helpviewer_keywords:
+- improper_scheduler_detach class
 ms.assetid: 30132102-c900-4951-a470-b63b4e3aa2d2
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 787d038c65eb6bec2813e30e9bef412205565190
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7b0a11ed3d65403444c62147091f443d3f102676
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="improperschedulerdetach-class"></a>improper_scheduler_detach Sınıfı
 Bu sınıf ne zaman oluşturulan bir özel tanımlar `CurrentScheduler::Detach` yöntemi kullanarak tüm Zamanlayıcı bağlı olmayan bir bağlamda çağrılır `Attach` yöntemi bir `Scheduler` nesnesi.  
@@ -52,7 +56,7 @@ class improper_scheduler_detach : public std::exception;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="ctor"></a>improper_scheduler_detach 
+##  <a name="ctor"></a> improper_scheduler_detach 
 
  Oluşturan bir `improper_scheduler_detach` nesnesi.  
   

@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: system_error/std::system_error
-dev_langs: C++
-helpviewer_keywords: system_error class
+ms.topic: reference
+f1_keywords:
+- system_error/std::system_error
+dev_langs:
+- C++
+helpviewer_keywords:
+- system_error class
 ms.assetid: 2eeaacbb-8a4a-4ad7-943a-997901a77f32
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3795f289a454503e80aa06d281543cd94aaa0a55
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dfa7927cf8039397f62b7510cdc4a0c84af66cf0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="systemerror-class"></a>system_error Sınıfı
 Bir alt düzey sistem hatası rapor için oluşturulan tüm özel durumlar için temel sınıfı temsil eder.  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::extreme_value_distribution
 - random/std::extreme_value_distribution::reset
@@ -21,7 +22,8 @@ f1_keywords:
 - random/std::extreme_value_distribution::param_type::b
 - random/std::extreme_value_distribution::param_type::operator==
 - random/std::extreme_value_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::extreme_value_distribution [C++]
 - std::extreme_value_distribution [C++], reset
@@ -33,16 +35,17 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b0825641039828073da4520c2f0704f50e0e6f21
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 93bf21b8dd17ddff4bf3de56417c85c6b415cb5e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
 Extreme değer dağıtımı oluşturur.  
@@ -185,7 +188,7 @@ Distribution for 10 samples:
   
  **Namespace:** std  
   
-##  <a name="extreme_value_distribution"></a>extreme_value_distribution::extreme_value_distribution  
+##  <a name="extreme_value_distribution"></a>  extreme_value_distribution::extreme_value_distribution  
  Dağıtım oluşturur.  
   
 ```  
@@ -204,13 +207,13 @@ explicit extreme_value_distribution(const param_type& parm);
  `param_type` Dağıtım oluşturmak için kullanılan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`0.0 < b`  
+ **Önkoşul:** `0.0 < b`  
   
  İlk Oluşturucusu bir nesne oluşturur, depolanan `a` değeri tutan değeri *a_value* ve, depolanan `b` değeri tutan değeri *b_value*.  
   
  İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>extreme_value_distribution::param_type  
+##  <a name="param_type"></a>  extreme_value_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
 ```cpp  
@@ -232,11 +235,11 @@ struct param_type {
 *b_value*  
  `b` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
  `param_type` İçin karşılaştırılacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- **Önkoşul:**`0.0 < b`  
+ **Önkoşul:** `0.0 < b`  
   
  Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

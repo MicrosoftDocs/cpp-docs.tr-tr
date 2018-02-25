@@ -4,30 +4,33 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - __invlpg
 - __invlpg_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - invlpg instruction
 - __invlpg intrinsic
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 919e1ff5d01dca587eff255f5a7164c41d2f04b6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e6977d9a8cb21cf1eeefb404ddbff263643189d9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="invlpg"></a>__invlpg
-**Microsoft özel**  
+**Microsoft Specific**  
   
  X86 oluşturur `invlpg` çeviri arabelleğinde arabelleği (TLB) gösterdiği bellek ile ilgili sayfa için geçersiz kılar yönerge `Address`.  
   
@@ -40,14 +43,14 @@ void __invlpg(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in]`Address`  
+ [in]  `Address`  
  64 bitlik bir adres.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__invlpg`|x86,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`__invlpg`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
   
  **Üstbilgi dosyası** \<intrin.h >  
   

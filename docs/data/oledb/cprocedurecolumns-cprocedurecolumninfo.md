@@ -1,12 +1,13 @@
 ---
-title: "CProcedureColumns, Cprocedurecolumnınfo | Microsoft Docs"
+title: CProcedureColumns, CProcedureColumnInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_guidType
 - CProcedureColumnInfo
@@ -34,7 +35,8 @@ f1_keywords:
 - m_nOctetLength
 - m_bIsNullable
 - m_nScale
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - NUMERIC_PRECISION
 - COLUMN_PROPID
@@ -66,18 +68,18 @@ helpviewer_keywords:
 - m_guidColumn
 - CProcedureColumnInfo parameter class
 ms.assetid: c82626c4-8047-4b9c-b342-e35bf37b7611
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b11e91c450e082cbb46e2f17975ff98a95f8d25d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 79b782a97ac96f54d951836662b69d06e097123c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cprocedurecolumns-cprocedurecolumninfo"></a>CProcedureColumns, CProcedureColumnInfo
 Çağrı typedef sınıfı **CProcedureColumns** parametre sınıfı uygulamak için **Cprocedurecolumnınfo**.  

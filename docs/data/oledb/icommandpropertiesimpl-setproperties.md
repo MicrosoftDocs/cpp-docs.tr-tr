@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ICommandPropertiesImpl.SetProperties
 - ICommandPropertiesImpl::SetProperties
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8e717c1243ef0c1feea90fe70a6f1157794c0f9a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 03f8c15b9319b4ef64dfd9d45e589b7e8c1fd1d9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="icommandpropertiesimplsetproperties"></a>ICommandPropertiesImpl::SetProperties
 Komut nesnesi için özellikleri ayarlar.  

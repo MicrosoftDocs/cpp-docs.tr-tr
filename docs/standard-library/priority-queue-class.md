@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - queue/std::priority_queue::container_type
 - queue/std::priority_queue::size_type
@@ -16,7 +17,8 @@ f1_keywords:
 - queue/std::priority_queue::push
 - queue/std::priority_queue::size
 - queue/std::priority_queue::top
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::priority_queue [C++], container_type
 - std::priority_queue [C++], size_type
@@ -27,16 +29,17 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2e8768fa138da74761bc581f8b9f54a2fe432776
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2d3c103673029f33d1d7eb36cce431c9b46d0270
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 Üst öğe her zaman en büyük olan bazı temel kapsayıcı türü veya en yüksek öncelikli erişimi sınırlayan işlevlerin bir kısıtlama sağlayan bir şablon kapsayıcı bağdaştırıcısının sınıfı. Yeni öğeler priority_queue eklenebilir ve priority_queue üst öğenin Denetlenmekte veya kaldırılabilir.  
@@ -49,14 +52,14 @@ class priority_queue
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Türü*  
+ Türü  
  Priority_queue depolanması için öğe veri türü.  
   
  `Container`  
  Priority_queue uygulamak için kullanılan temel kapsayıcı türü.  
   
  *Karşılaştırma*  
- İşlev nesnesi sağlayan türü priority_queue içindeki göreli sıralarına belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırabilirsiniz. Bu bağımsız değişken isteğe bağlıdır ve ikili karşılaştırma **daha az***\<***typename** *kapsayıcı***:: value_type**  *>*  varsayılan değerdir.  
+ İşlev nesnesi sağlayan türü priority_queue içindeki göreli sıralarına belirlemek için sıralama anahtarları olarak iki öğenin değerleri karşılaştırabilirsiniz. Bu bağımsız değişken isteğe bağlıdır ve ikili karşılaştırma **daha az***\<***typename** *kapsayıcı***:: value_type*** >* varsayılan değerdir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfının öğeleri **türü** ilk şablon, belirlenen bir sıra nesnesi parametresi ile eşanlamlı [value_type](#value_type) ve arka plandaki kapsayıcı sınıfı öğetürüeşleşmelidir**Kapsayıcı** ikinci şablon parametresi tarafından belirlenen. **Türü** böylece bu tür nesneleri kopyalayın ve bu tür değişkenlere değerler atayın olası atanabilir, olması gerekir.  
@@ -93,10 +96,10 @@ class priority_queue
   
 |||  
 |-|-|  
-|[boş](#empty)|Varsa testleri `priority_queue` boş.|  
+|[empty](#empty)|Varsa testleri `priority_queue` boş.|  
 |[POP](#pop)|En büyük öğesinin kaldırır `priority_queue` üst konumdan.|  
 |[push](#push)|İşleç öğesinden önceliğini göre öncelik sırasına bir öğe ekler <.|  
-|[boyutu](#size)|Öğelerin sayısını döndürür `priority_queue`.|  
+|[Boyutu](#size)|Öğelerin sayısını döndürür `priority_queue`.|  
 |[Sayfanın Üstü](#top)|Bir const döndürür başvuru en üstündeki en büyük öğesine `priority_queue`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -104,7 +107,7 @@ class priority_queue
   
  **Namespace:** std  
   
-##  <a name="container_type"></a>priority_queue::container_type  
+##  <a name="container_type"></a>  priority_queue::container_type  
  Temel uyarlanan kapsayıcıya sağlayan türü.  
   
 ```  
@@ -119,7 +122,7 @@ typedef Container container_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [priority_queue](#priority_queue) bildirme ve kullanma konusunda bir örnek için `container_type`.  
   
-##  <a name="empty"></a>priority_queue::empty  
+##  <a name="empty"></a>  priority_queue::empty  
  Bir priority_queue boşsa, testleri.  
   
 ```  
@@ -163,7 +166,7 @@ The priority_queue q1 is not empty.
 The priority_queue s2 is empty.  
 ```  
   
-##  <a name="pop"></a>priority_queue::POP  
+##  <a name="pop"></a>  priority_queue::POP  
  Priority_queue en büyük öğe üst konumu kaldırır.  
   
 ```  
@@ -217,7 +220,7 @@ After a pop, the priority_queue length is 2.
 After a pop, the element at the top of the priority_queue is 20.  
 ```  
   
-##  <a name="priority_queue"></a>priority_queue::priority_queue  
+##  <a name="priority_queue"></a>  priority_queue::priority_queue  
  Boş veya bir aralığı temel kapsayıcı nesnesinin veya başka bir priority_queue kopyası olan bir priority_queue oluşturur.  
   
 ```  
@@ -373,7 +376,7 @@ int main( )
 }  
 ```  
   
-##  <a name="push"></a>priority_queue::push  
+##  <a name="push"></a>  priority_queue::push  
  İşleç öğesinden önceliğini göre öncelik sırasına bir öğe ekler <.  
   
 ```  
@@ -419,7 +422,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.  
 ```  
   
-##  <a name="size"></a>priority_queue::size  
+##  <a name="size"></a>  priority_queue::size  
  Priority_queue öğe sayısını döndürür.  
   
 ```  
@@ -458,7 +461,7 @@ The priority_queue length is 1.
 The priority_queue length is now 2.  
 ```  
   
-##  <a name="size_type"></a>priority_queue::size_type  
+##  <a name="size_type"></a>  priority_queue::size_type  
  Bir priority_queue öğe sayısı gösterebilir bir işaretsiz tamsayı türü.  
   
 ```  
@@ -471,7 +474,7 @@ typedef typename Container::size_type size_type;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [boyutu](#size) bildirme ve kullanma konusunda bir örnek için `size_type`.  
   
-##  <a name="top"></a>priority_queue::Top  
+##  <a name="top"></a>  priority_queue::Top  
  Priority_queue üstündeki en büyük öğeye const bir başvuru döndürür.  
   
 ```  
@@ -516,7 +519,7 @@ The priority_queue length is 3.
 The element at the top of the priority_queue is 30.  
 ```  
   
-##  <a name="value_type"></a>priority_queue::value_type  
+##  <a name="value_type"></a>  priority_queue::value_type  
  Bir priority_queue bir öğe olarak depolanan nesne türünü temsil eden tür.  
   
 ```  

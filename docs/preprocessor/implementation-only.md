@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: implementation_only
-dev_langs: C++
-helpviewer_keywords: implementation_only attribute
+ms.topic: reference
+f1_keywords:
+- implementation_only
+dev_langs:
+- C++
+helpviewer_keywords:
+- implementation_only attribute
 ms.assetid: d8cabc86-4425-45a0-9587-d57536980088
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7a033cd4b1618c2da106bb641f55c9ae967cd53a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: aa9fe0e8bf3cdecbdf118219cfe91be03a85a51f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="implementationonly"></a>implementation_only
 **C++ özel**  
@@ -43,8 +48,8 @@ implementation_only
 > [!NOTE]
 >  `implementation_only` Bir öznitelik `#import` deyimi başka ile birlikte olmalıdır `#import` aynı deyimi türünü Kitaplığı `no_implementation` özniteliği. Aksi takdirde derleyici hataları oluşturulur. Sarmalayıcı sınıf tanımları tarafından oluşturulan olmasıdır `#import` deyimiyle `no_implementation` özniteliği tarafından oluşturulan uygulamaları derlemek için gerekli `implementation_only` özniteliği.  
   
- **Son C++ özel**  
+ Son C++ özel  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [#import öznitelikleri](../preprocessor/hash-import-attributes-cpp.md)   
- [#import yönergesi](../preprocessor/hash-import-directive-cpp.md)
+ [#import Directive](../preprocessor/hash-import-directive-cpp.md)

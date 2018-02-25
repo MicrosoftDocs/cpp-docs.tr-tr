@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - system_error/std::error_category
 - system_error/std::error_category::value_type
@@ -14,7 +15,8 @@ f1_keywords:
 - system_error/std::error_category::equivalent
 - system_error/std::error_category::message
 - system_error/std::error_category::name
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::error_category
 - std::error_category::value_type
@@ -23,16 +25,17 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 927711e5ad87be2a8c4683cb960cc02015de2316
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3befee5318756471e0eee6b975bdfb65f61c0391
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="errorcategory-class"></a>error_category Sınıfı
 Nesneler için hata kodları kategorisini tanımlayan soyut, ortak tabanı temsil eder.  
@@ -59,13 +62,13 @@ class error_category;
 |[default_error_condition](#default_error_condition)|Bir hata koşulu nesne için hata kodu değerini depolar.|  
 |[eşdeğer](#equivalent)|Hata nesneleri eşdeğer olup olmadığını belirten bir değer döndürür.|  
 |[message](#message)|Belirtilen hata kodu adını döndürür.|  
-|[adı](#name)|Kategorinin adını döndürür.|  
+|[Adı](#name)|Kategorinin adını döndürür.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[operator ==](#op_eq_eq)|Testler arasında eşitliği `error_category` nesneleri.|  
+|[operator==](#op_eq_eq)|Testler arasında eşitliği `error_category` nesneleri.|  
 |[operator!=](#op_neq)|Testler arasında eşitsizlik için `error_category` nesneleri.|  
 |[operator <](#op_lt)|Varsa testleri [error_category](../standard-library/error-category-class.md) nesne küçük `error_category` nesne geçirilen karşılaştırma için.|  
   
@@ -74,7 +77,7 @@ class error_category;
   
  **Namespace:** std  
   
-##  <a name="default_error_condition"></a>error_category::default_error_condition  
+##  <a name="default_error_condition"></a>  error_category::default_error_condition  
  Bir hata koşulu nesne için hata kodu değerini depolar.  
   
 ```
@@ -92,7 +95,7 @@ virtual error_condition default_error_condition(int _Errval) const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="equivalent"></a>error_category::equivalent  
+##  <a name="equivalent"></a>  error_category::equivalent  
  Hata nesneleri eşdeğer olup olmadığını belirten bir değer döndürür.  
   
 ```
@@ -112,14 +115,14 @@ virtual bool equivalent(const error_code& _Code,
 |`_Code`|[Error_code](../standard-library/error-code-class.md) Karşılaştırılacak nesne.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Kategori ve değer eşitse; Aksi takdirde `false`.  
+ `true` Kategori ve değer eşitse; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk üye işlevinin döndürdüğü `*this == _Cond.category() && _Cond.value() == _Errval`.  
   
  İkinci üye işlevinin döndürdüğü `*this == _Code.category() && _Code.value() == _Errval`.  
   
-##  <a name="message"></a>error_category::Message  
+##  <a name="message"></a>  error_category::Message  
  Belirtilen hata kodu adını döndürür.  
   
 ```
@@ -137,7 +140,7 @@ virtual string message(error_code::value_type val) const = 0;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="name"></a>error_category::Name  
+##  <a name="name"></a>  error_category::name  
  Kategorinin adını döndürür.  
   
 ```
@@ -149,7 +152,7 @@ virtual const char *name() const = 0;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="op_eq_eq"></a>error_category::operator ==  
+##  <a name="op_eq_eq"></a>  error_category::operator==  
  Testler arasında eşitliği `error_category` nesneleri.  
   
 ```
@@ -168,7 +171,7 @@ bool operator==(const error_category& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işleci döndürür `this == &right`.  
   
-##  <a name="op_neq"></a>error_category::operator! =  
+##  <a name="op_neq"></a>  error_category::operator!=  
  Testler arasında eşitsizlik için `error_category` nesneleri.  
   
 ```
@@ -187,7 +190,7 @@ bool operator!=(const error_category& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `(!*this == right)`.  
   
-##  <a name="op_lt"></a>error_category::operator&lt;  
+##  <a name="op_lt"></a>  error_category::operator&lt;  
  Varsa testleri [error_category](../standard-library/error-category-class.md) nesne küçük `error_category` nesne geçirilen karşılaştırma için.  
   
 ```
@@ -206,7 +209,7 @@ bool operator<(const error_category& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `this < &right`.  
   
-##  <a name="value_type"></a>error_category::value_type  
+##  <a name="value_type"></a>  error_category::value_type  
  Saklı hata kodu değerini temsil eden tür.  
   
 ```

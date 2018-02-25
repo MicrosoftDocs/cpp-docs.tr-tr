@@ -5,23 +5,24 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: forward_list/std::swap
+ms.topic: reference
+f1_keywords:
+- forward_list/std::swap
 ms.assetid: 0d6bc656-7049-4651-a4bd-c9a805e47756
-caps.latest.revision: "11"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 6696f42d2ba7cb6daabb8f2ff38093911838c1ca
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: ce66354d2377e52043830925c3f4f880de996663
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltforwardlistgt-functions"></a>&lt;forward_list&gt; işlevleri
 ||  
 |-|  
-|[değiştirme](#swap)|  
+|[Değiştirme](#swap)|  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap">Değiştirme</a>  
  İki iletme liste öğelerini değiş tokuş eder.  
   
 ```
@@ -41,7 +42,7 @@ void swap(
  Bu şablon işlevi yürütür `left.swap(right)`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [< forward_list >](../standard-library/forward-list.md)
+ [<forward_list>](../standard-library/forward-list.md)
 
 
 

@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: amp_math/Concurrency::fast_math
-dev_langs: C++
+ms.topic: reference
+f1_keywords:
+- amp_math/Concurrency::fast_math
+dev_langs:
+- C++
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 047eee60eb409e86d77faf6f637a88a56f271094
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 11c6f990cdcc4dab0a3526d338333183a0f5e889
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrencyfastmath-namespace"></a>Concurrency::fast_math Ad Alanı
 İşlevlerini `fast_math` ad alanına sahip alt doğruluğu, tek tek duyarlıklı desteği (`float`) ve DirectX iç bilgileri çağırın. İki sürümü vardır her işlev örneğin `cos` ve `cosf`. Her iki sürümünü alın ve dönüş bir `float`, ancak her aynı DirectX iç çağırır.  
@@ -41,7 +45,7 @@ namespace fast_math;
 |[asin](concurrency-fast-math-namespace-functions.md#asin)|Bağımsız değişken arksinüsünü hesaplar|  
 |[asinf](concurrency-fast-math-namespace-functions.md#asinf)|Bağımsız değişken arksinüsünü hesaplar|  
 |[atan](concurrency-fast-math-namespace-functions.md#atan)|Bağımsız değişken tanjantını hesaplar|  
-|[ATAN2](concurrency-fast-math-namespace-functions.md#atan2)|_Y/_X tanjantını hesaplar|  
+|[atan2](concurrency-fast-math-namespace-functions.md#atan2)|_Y/_X tanjantını hesaplar|  
 |[atan2f](concurrency-fast-math-namespace-functions.md#atan2f)|_Y/_X tanjantını hesaplar|  
 |[atanf](concurrency-fast-math-namespace-functions.md#atanf)|Bağımsız değişken tanjantını hesaplar|  
 |[ceil](concurrency-fast-math-namespace-functions.md#ceil)|Bağımsız değişken tavan hesaplar|  
@@ -68,7 +72,7 @@ namespace fast_math;
 |[frexpf](concurrency-fast-math-namespace-functions.md#frexpf)|Mantis ve üs _X, alır|  
 |[isfinite](concurrency-fast-math-namespace-functions.md#isfinite)|Bağımsız değişken sınırlı bir değere sahip olup olmadığını belirler|  
 |[isinf](concurrency-fast-math-namespace-functions.md#isinf)|Bağımsız değişkeni bir sonsuzluk olup olmadığını belirler|  
-|[isNaN](concurrency-fast-math-namespace-functions.md#isnan)|Bağımsız değişkeni bir NaN olup olmadığını belirler|  
+|[isnan](concurrency-fast-math-namespace-functions.md#isnan)|Bağımsız değişkeni bir NaN olup olmadığını belirler|  
 |[ldexp](concurrency-fast-math-namespace-functions.md#ldexp)|Mantis ve üs arasında bir gerçek sayı hesaplar|  
 |[ldexpf](concurrency-fast-math-namespace-functions.md#ldexpf)|Mantis ve üs arasında bir gerçek sayı hesaplar|  
 |[Günlük](concurrency-fast-math-namespace-functions.md#log)|Bağımsız değişken e tabanında logaritmasını hesaplar|  
@@ -91,9 +95,9 @@ namespace fast_math;
 |[sincos](concurrency-fast-math-namespace-functions.md#sincos)|_X Sinüs ve Kosinüs değerini hesaplar|  
 |[sincosf](concurrency-fast-math-namespace-functions.md#sincosf)|_X Sinüs ve Kosinüs değerini hesaplar|  
 |[sinf](concurrency-fast-math-namespace-functions.md#sinf)|Bağımsız değişkenin sinüsünü değeri hesaplar|  
-|[SİNH](concurrency-fast-math-namespace-functions.md#sinh)|Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
+|[sinh](concurrency-fast-math-namespace-functions.md#sinh)|Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
 |[sinhf](concurrency-fast-math-namespace-functions.md#sinhf)|Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
-|[Sqrt](concurrency-fast-math-namespace-functions.md#sqrt)|Bağımsız değişken'in kare kökünü hesaplar|  
+|[sqrt](concurrency-fast-math-namespace-functions.md#sqrt)|Bağımsız değişken'in kare kökünü hesaplar|  
 |[sqrtf](concurrency-fast-math-namespace-functions.md#sqrtf)|Bağımsız değişken'in kare kökünü hesaplar|  
 |[tan](concurrency-fast-math-namespace-functions.md#tan)|Bağımsız değişkenin Eğim değeri hesaplar|  
 |[tanf](concurrency-fast-math-namespace-functions.md#tanf)|Bağımsız değişkenin Eğim değeri hesaplar|  

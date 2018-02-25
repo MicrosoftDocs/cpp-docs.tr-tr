@@ -4,25 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <regex>
-dev_langs: C++
-helpviewer_keywords: regex header
+ms.topic: reference
+f1_keywords:
+- <regex>
+dev_langs:
+- C++
+helpviewer_keywords:
+- regex header
 ms.assetid: 5dd4ef74-6063-4dbc-b692-1960bb736f0b
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7da90e13c325380cb8aad54d1af712c1567e0420
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c586cf909ce07f17dfdba08005d1efd8489db869
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltregexgt"></a>&lt;Regex&gt;
+# <a name="ltregexgt"></a>&lt;regex&gt;
 Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../standard-library/regular-expressions-cpp.md)ve birkaç şablon sınıfları ve işlevleri metin bir normal ifade nesnesi için eşleşme aramak için.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -52,8 +57,8 @@ Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../
 |[regex_error](../standard-library/regex-error-class.md)|Bozuk bir normal ifade bildirir.|  
 |[regex_iterator](../standard-library/regex-iterator-class.md)|Eşleşme sonuçları arasında yineler.|  
 |[regex_traits](../standard-library/regex-traits-class.md)|Eşleşen öğelerin özelliklerini açıklar.|  
-|[regex_traits\<char >](../standard-library/regex-traits-char-class.md)|Özelliklerini açıklayan `char` eşleme.|  
-|[regex_traits < wchar_t >](../standard-library/regex-traits-wchar-t-class.md)|Özelliklerini açıklayan `wchar_t` eşleme.|  
+|[regex_traits\<char>](../standard-library/regex-traits-char-class.md)|Özelliklerini açıklayan `char` eşleme.|  
+|[regex_traits<wchar_t>](../standard-library/regex-traits-wchar-t-class.md)|Özelliklerini açıklayan `wchar_t` eşleme.|  
 |[regex_token_iterator](../standard-library/regex-token-iterator-class.md)|Submatches yineler.|  
 |[sub_match](../standard-library/sub-match-class.md)|Bir submatch açıklar.|  
   
@@ -65,7 +70,7 @@ Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../
 |[cregex_iterator](../standard-library/regex-typedefs.md#cregex_iterator)|Tür tanımı için `char` `regex_iterator`.|  
 |[cregex_token_iterator](../standard-library/regex-typedefs.md#cregex_token_iterator)|Tür tanımı için `char` `regex_token_iterator`.|  
 |[csub_match](../standard-library/regex-typedefs.md#csub_match)|Tür tanımı için `char` `sub_match`.|  
-|[Regex](../standard-library/regex-typedefs.md#regex)|Tür tanımı için `char` `basic_regex`.|  
+|[regex](../standard-library/regex-typedefs.md#regex)|Tür tanımı için `char` `basic_regex`.|  
 |[smatch](../standard-library/regex-typedefs.md#smatch)|Tür tanımı için `string` `match_results`.|  
 |[sregex_iterator](../standard-library/regex-typedefs.md#sregex_iterator)|Tür tanımı için `string` `regex_iterator`.|  
 |[sregex_token_iterator](../standard-library/regex-typedefs.md#sregex_token_iterator)|Tür tanımı için `string` `regex_token_iterator`.|  
@@ -87,17 +92,17 @@ Ayrıştırmak için bir şablon sınıfı tanımlar [normal ifadeler (C++)](../
 |[regex_match](../standard-library/regex-functions.md#regex_match)|Tam olarak normal ifadeyle eşleşir.|  
 |[regex_replace](../standard-library/regex-functions.md#regex_replace)|Normal ifadeler değiştirir eşleşmedi.|  
 |[regex_search](../standard-library/regex-functions.md#regex_search)|Normal ifade eşleştirmesi arar.|  
-|[değiştirme](../standard-library/regex-functions.md#swap)|Değiştirir `basic_regex` veya `match_results` nesneleri.|  
+|[Değiştirme](../standard-library/regex-functions.md#swap)|Değiştirir `basic_regex` veya `match_results` nesneleri.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[operator ==](../standard-library/regex-operators.md#op_eq_eq)|Çeşitli nesneleri, eşit karşılaştırması.|  
+|[operator==](../standard-library/regex-operators.md#op_eq_eq)|Çeşitli nesneleri, eşit karşılaştırması.|  
 |[operator!=](../standard-library/regex-operators.md#op_neq)|Karşılaştırma nesnelerin çeşitli eşit değil.|  
 |[operator <](../standard-library/regex-operators.md#op_lt)|Çeşitli nesnelerin karşılaştırma küçüktür.|  
 |[işleci\<=](../standard-library/regex-operators.md#op_gt_eq)|Karşılaştırma çeşitli nesnelerin küçüktür veya eşittir.|  
-|[operator >](../standard-library/regex-operators.md#op_gt)|Karşılaştırma nesnelerin çeşitli büyüktür.|  
+|[operator>](../standard-library/regex-operators.md#op_gt)|Karşılaştırma nesnelerin çeşitli büyüktür.|  
 |[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Büyük veya ona eşit olmak üzere çeşitli nesneleri karşılaştırması.|  
 |[işleç <<](../standard-library/regex-operators.md#op_lt_lt)|Ekler bir `sub_match` bir akış.|  
   

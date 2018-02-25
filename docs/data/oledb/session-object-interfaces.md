@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - session objects [OLE DB]
 - session objects [OLE DB], interfaces
@@ -15,18 +17,18 @@ helpviewer_keywords:
 - interfaces, session object
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: abb869becff4f2a4af9d489736c21b66674cc112
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 71ac196508fc5b5054015bdc161476b75af2a598
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="session-object-interfaces"></a>Oturum Nesnesi Arabirimleri
 Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zorunlu ve isteğe bağlı arabirimler gösterilir.  
@@ -48,7 +50,7 @@ Aşağıdaki tabloda, bir oturum nesnesi için OLE DB tarafından tanımlanan zo
 |[ITableDefinition](https://msdn.microsoft.com/en-us/library/ms714277.aspx)|İsteğe Bağlı|Hayır|  
 |[ITableDefinitionWithConstraints](https://msdn.microsoft.com/en-us/library/ms720947.aspx)|İsteğe Bağlı|Hayır|  
 |[ITransaction](https://msdn.microsoft.com/en-us/library/ms723053.aspx)|İsteğe Bağlı|Hayır|  
-|[ITransactionJoin'i](https://msdn.microsoft.com/en-us/library/ms718071.aspx)|İsteğe Bağlı|Hayır|  
+|[ITransactionJoin](https://msdn.microsoft.com/en-us/library/ms718071.aspx)|İsteğe Bağlı|Hayır|  
 |[ITransactionLocal](https://msdn.microsoft.com/en-us/library/ms714893.aspx)|İsteğe Bağlı|Hayır|  
 |[ITransactionObject](https://msdn.microsoft.com/en-us/library/ms713659.aspx)|İsteğe Bağlı|Hayır|  
   

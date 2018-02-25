@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: random/std::independent_bits_engine
-dev_langs: C++
-helpviewer_keywords: independent_bits_engine class
+ms.topic: reference
+f1_keywords:
+- random/std::independent_bits_engine
+dev_langs:
+- C++
+helpviewer_keywords:
+- independent_bits_engine class
 ms.assetid: 889e9a82-f457-49a7-9d2e-26e0fc3cd907
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8ec9a4b9beac581df0060f239916c06b8b6191de
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d2f5b064b91aa6df766ff4ca460a6096f984ab8b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="independentbitsengine-class"></a>independent_bits_engine Sınıfı
 BITS repacking BITS tarafından belirtilen sayıda numaralarıyla rastgele bir dizi kendi temel altyapı tarafından döndürülen değer oluşturur.  
@@ -37,7 +42,7 @@ class independent_bits_engine;
  Temel altyapısı türü.  
   
  `W`  
- **Word boyutu**. Oluşturulan her sayının bit cinsinden boyutu. **Önkoşul**:`0 < W ≤ numeric_limits<UIntType>::digits`  
+ **Word boyutu**. Oluşturulan her sayının bit cinsinden boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`  
   
  `UIntType`  
  İşaretsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).  

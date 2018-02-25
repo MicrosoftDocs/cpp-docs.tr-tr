@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - random/std::geometric_distribution
 - random/std::geometric_distribution::reset
@@ -19,7 +20,8 @@ f1_keywords:
 - random/std::geometric_distribution::param_type::p
 - random/std::geometric_distribution::param_type::operator==
 - random/std::geometric_distribution::param_type::operator!=
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::geometric_distribution [C++]
 - std::geometric_distribution [C++], reset
@@ -30,16 +32,17 @@ helpviewer_keywords:
 - std::geometric_distribution [C++], param_type
 - std::geometric_distribution [C++], param_type
 ms.assetid: 38f933af-3b49-492e-9d26-b6b272a60013
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 23ab208a32b193c8cf30eefd9382ac253e2518d8
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8b5ba4bf2a5a7bf4f9ae180a36aa63135bd73f42
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution Sınıfı
 Geometrik dağıtım oluşturur.  
@@ -214,7 +217,7 @@ Distribution for 100 samples:
   
 **Namespace:** std  
   
-##  <a name="geometric_distribution"></a>geometric_distribution::geometric_distribution  
+##  <a name="geometric_distribution"></a>  geometric_distribution::geometric_distribution  
 Dağıtım oluşturur.  
   
 ```  
@@ -230,13 +233,13 @@ explicit geometric_distribution(const param_type& parm);
 Dağıtım oluşturmak için kullanılan parametre yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 < p && p < 1.0`  
+**Önkoşul:** `0.0 < p && p < 1.0`  
   
 İlk Oluşturucusu bir nesne oluşturur, depolanan `p` değeri tutan değeri *p*.  
   
 İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
   
-##  <a name="param_type"></a>geometric_distribution::param_type  
+##  <a name="param_type"></a>  geometric_distribution::param_type  
 Dağıtım parametreleri depolar.  
   
 ```  
@@ -254,11 +257,11 @@ struct param_type {
 *p*  
 `p` Dağıtım parametresi.  
   
-*sağ*  
+*Sağ*  
 `param_type` İçin karşılaştırılacak örnek.  
   
 ### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:**`0.0 < p && p < 1.0`  
+**Önkoşul:** `0.0 < p && p < 1.0`  
   
 Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
   

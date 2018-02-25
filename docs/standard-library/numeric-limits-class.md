@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - limits/std::numeric_limits
 - limits/std::numeric_limits::denorm_min
@@ -41,7 +42,8 @@ f1_keywords:
 - limits/std::numeric_limits::signaling_NaN
 - limits/std::numeric_limits::tinyness_before
 - limits/std::numeric_limits::traps
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::numeric_limits [C++]
 - std::numeric_limits [C++], denorm_min
@@ -77,16 +79,17 @@ helpviewer_keywords:
 - std::numeric_limits [C++], tinyness_before
 - std::numeric_limits [C++], traps
 ms.assetid: 9e817177-0e91-48e6-b680-0531c4b26625
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ccd200c1ee710100bbf3390033ca97381b5dddf2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2aa716b9c052611aceb0c4677457fbce91bb743d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="numericlimits-class"></a>numeric_limits Sınıfı
 Şablon sınıfı yerleşik sayısal türler aritmetik özelliklerini açıklar.  
@@ -114,13 +117,13 @@ class numeric_limits
 |[denorm_min](#denorm_min)|En küçük sıfır olmayan döndürür değeri normal dışı.|  
 |[basamak](#digits)|Türü duyarlık kaybı olmadan gösterebilir taban basamak sayısını döndürür.|  
 |[digits10](#digits10)|Türü duyarlık kaybı olmadan gösterebilir ondalık basamak sayısını döndürür.|  
-|[Epsilon](#epsilon)|1 ve en küçük değeri arasındaki farkı veri türünü temsil eden 1'den büyük döndürür.|  
+|[epsilon](#epsilon)|1 ve en küçük değeri arasındaki farkı veri türünü temsil eden 1'den büyük döndürür.|  
 |[has_denorm](#has_denorm)|Testleri bir türü izin verip değerleri normal dışı.|  
 |[has_denorm_loss](#has_denorm_loss)|Doğruluk kaybı denormalization kaybı olarak yerine kesin olmayan bir sonucu olarak algılanır olup olmadığını sınar.|  
 |[has_infinity](#has_infinity)|Pozitif sonsuzluk temsili bir türe sahip olup olmadığını sınar.|  
 |[has_quiet_NaN](#has_quiet_nan)|Nonsignaling olan bir sayı değil (NAN) bir sessiz temsili bir türe sahip olup olmadığını sınar.|  
 |[has_signaling_NaN](#has_signaling_nan)|Sayı olmayan (NAN) sinyal temsili bir türe sahip olup olmadığını sınar.|  
-|[sonsuz](#infinity)|Varsa bir tür için pozitif sonsuzluk gösterimi.|  
+|[infinity](#infinity)|Varsa bir tür için pozitif sonsuzluk gösterimi.|  
 |[is_bounded](#is_bounded)|Testleri bir türü temsil değerleri kümesi sınırlıdır.|  
 |[is_exact](#is_exact)|Bir tür üzerinde yapılan hesaplamaları olduğunda yuvarlama hatalarının testleri boş.|  
 |[is_iec559](#is_iec559)|Bir tür IEC 559 standartlara uygun sağlayıp sağlamadığını test.|  
@@ -128,16 +131,16 @@ class numeric_limits
 |[is_modulo](#is_modulo)|Bir türü varsa testleri bir gösterimi modül.|  
 |[is_signed](#is_signed)|Testleri imzalı temsili bir türe sahip.|  
 |[is_specialized](#is_specialized)|Bir şablon sınıfında tanımlanan bir açık uzmanlık türündeyse testleri `numeric_limits`.|  
-|[en düşük](#lowest)|En negatif sonlu değeri döndürür.|  
+|[En düşük](#lowest)|En negatif sonlu değeri döndürür.|  
 |[max](#max)|Bir türe ilişkin maksimum sınırlı değeri döndürür.|  
 |[max_digits10](#max_digits10)|İki ayrı türü değerleri ayrı ondalık Beyanları olmasını sağlamak için gereken ondalık basamak sayısını döndürür.|  
 |[max_exponent](#max_exponent)|Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.|  
 |[max_exponent10](#max_exponent10)|On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.|  
-|[Min](#min)|Bir türe ilişkin minimum normalleştirilmiş değeri döndürür.|  
+|[min](#min)|Bir türe ilişkin minimum normalleştirilmiş değeri döndürür.|  
 |[min_exponent](#min_exponent)|Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.|  
 |[min_exponent10](#min_exponent10)|On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.|  
 |[quiet_NaN](#quiet_nan)|Bir sessiz gösterimini sayı olmayan (NAN) türü döndürür.|  
-|[sayı tabanını](#radix)|İntegral taban döndürür taban bir türü gösterimi için kullanılan, olarak adlandırılır.|  
+|[radix](#radix)|İntegral taban döndürür taban bir türü gösterimi için kullanılan, olarak adlandırılır.|  
 |[round_error](#round_error)|Hata türü için izin verilecek en fazla döndürür.|  
 |[round_style](#round_style)|Kayan nokta değer bir tamsayı değerine yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklayan bir değer döndürür.|  
 |[signaling_NaN](#signaling_nan)|Sayı olmayan (NAN) sinyal temsilini türü döndürür.|  
@@ -149,7 +152,7 @@ class numeric_limits
   
  **Namespace:** std  
   
-##  <a name="denorm_min"></a>numeric_limits::denorm_min  
+##  <a name="denorm_min"></a>  numeric_limits::denorm_min  
  En küçük sıfır olmayan döndürür değeri normal dışı.  
   
 ```  
@@ -160,7 +163,7 @@ static Type denorm_min() throw();
  En küçük sıfır olmayan Normalleştirilmemiş değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `long double`aynı **çift** C++ derleyicisi'ne yönelik.  
+ `long double` aynı **çift** C++ derleyicisi'ne yönelik.  
   
  Aynı tür için en düşük değer işlevi döndürür olarak [min](#min) varsa [has_denorm](#has_denorm) eşit değil **denorm_present**.  
   
@@ -205,7 +208,7 @@ The smallest nonzero denormalized value
 0  
 ```  
   
-##  <a name="digits"></a>numeric_limits::Digits  
+##  <a name="digits"></a>  numeric_limits::digits  
  Türü duyarlık kaybı olmadan gösterebilir taban basamak sayısını döndürür.  
   
 ```  
@@ -246,7 +249,7 @@ int main( )
 63  
 ```  
   
-##  <a name="digits10"></a>numeric_limits::digits10  
+##  <a name="digits10"></a>  numeric_limits::digits10  
  Türü duyarlık kaybı olmadan gösterebilir ondalık basamak sayısını döndürür.  
   
 ```  
@@ -288,7 +291,7 @@ int main( )
 The float is; 100000000  
 ```  
   
-##  <a name="epsilon"></a>numeric_limits::Epsilon  
+##  <a name="epsilon"></a>  numeric_limits::epsilon  
  İşlevi 1 ve en küçük değeri arasındaki farkı veri türü için gösterilebilir 1'den büyük olarak döndürür.  
   
 ```  
@@ -299,7 +302,7 @@ static Type epsilon() throw();
  1 ve veri türü için gösterilebilir 1'den büyük en küçük değeri arasındaki fark.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değer türü için flt_epsılon **float**. `epsilon`en küçük pozitif kayan noktalı sayı türüdür için *N* şekilde *N* + `epsilon` + *N* gösterilebilir değil.  
+ Değer türü için flt_epsılon **float**. `epsilon` en küçük pozitif kayan noktalı sayı türüdür için *N* şekilde *N* + `epsilon` + *N* gösterilebilir değil.  
   
 ### <a name="example"></a>Örnek  
   
@@ -337,7 +340,7 @@ The difference between 1 and the smallest value greater than 1
  for long double objects is: 2.22045e-016  
 ```  
   
-##  <a name="has_denorm"></a>numeric_limits::has_denorm  
+##  <a name="has_denorm"></a>  numeric_limits::has_denorm  
  Testleri bir türü izin verip değerleri normal dışı.  
   
 ```  
@@ -380,7 +383,7 @@ Whether double objects allow denormalized values: 1
 Whether long int objects allow denormalized values: 0  
 ```  
   
-##  <a name="has_denorm_loss"></a>numeric_limits::has_denorm_loss  
+##  <a name="has_denorm_loss"></a>  numeric_limits::has_denorm_loss  
  Doğruluk kaybı denormalization kaybı olarak yerine kesin olmayan bir sonucu olarak algılanır olup olmadığını sınar.  
   
 ```  
@@ -423,7 +426,7 @@ Whether double objects can detect denormalized loss: 1
 Whether long int objects can detect denormalized loss: 0  
 ```  
   
-##  <a name="has_infinity"></a>numeric_limits::has_infinity  
+##  <a name="has_infinity"></a>  numeric_limits::has_infinity  
  Pozitif sonsuzluk temsili bir türe sahip olup olmadığını sınar.  
   
 ```  
@@ -466,7 +469,7 @@ Whether double objects have infinity: 1
 Whether long int objects have infinity: 0  
 ```  
   
-##  <a name="has_quiet_nan"></a>numeric_limits::has_quiet_NaN  
+##  <a name="has_quiet_nan"></a>  numeric_limits::has_quiet_NaN  
  Nonsignaling olan bir sayı değil (NAN) bir sessiz temsili bir türe sahip olup olmadığını sınar.  
   
 ```  
@@ -509,7 +512,7 @@ Whether double objects have quiet_NaN: 1
 Whether long int objects have quiet_NaN: 0  
 ```  
   
-##  <a name="has_signaling_nan"></a>numeric_limits::has_signaling_NaN  
+##  <a name="has_signaling_nan"></a>  numeric_limits::has_signaling_NaN  
  Sayı olmayan (NAN) sinyal temsili bir türe sahip olup olmadığını sınar.  
   
 ```  
@@ -552,7 +555,7 @@ Whether double objects have a signaling_NaN: 1
 Whether long int objects have a signaling_NaN: 0  
 ```  
   
-##  <a name="infinity"></a>numeric_limits::infinity  
+##  <a name="infinity"></a>  numeric_limits::infinity  
  Varsa bir tür için pozitif sonsuzluk gösterimi.  
   
 ```  
@@ -603,7 +606,7 @@ The representation of infinity for type double is: 1.#INF
 The representation of infinity for type long double is: 1.#INF  
 ```  
   
-##  <a name="is_bounded"></a>numeric_limits::is_bounded  
+##  <a name="is_bounded"></a>  numeric_limits::is_bounded  
  Testleri bir türü temsil değerleri kümesi sınırlıdır.  
   
 ```  
@@ -654,7 +657,7 @@ Whether long int objects have bounded set of representable values: 1
 Whether unsigned char objects have bounded set of representable values: 1  
 ```  
   
-##  <a name="is_exact"></a>numeric_limits::is_exact  
+##  <a name="is_exact"></a>  numeric_limits::is_exact  
  Bir tür üzerinde yapılan hesaplamaları olduğunda yuvarlama hatalarının testleri boş.  
   
 ```  
@@ -705,7 +708,7 @@ Whether long int objects have calculations free of rounding errors: 1
 Whether unsigned char objects have calculations free of rounding errors: 1  
 ```  
   
-##  <a name="is_iec559"></a>numeric_limits::is_iec559  
+##  <a name="is_iec559"></a>  numeric_limits::is_iec559  
  Bir tür IEC 559 standartlara uygun sağlayıp sağlamadığını test.  
   
 ```  
@@ -752,7 +755,7 @@ Whether int objects conform to iec559 standards: 0
 Whether unsigned char objects conform to iec559 standards: 0  
 ```  
   
-##  <a name="is_integer"></a>numeric_limits::is_integer  
+##  <a name="is_integer"></a>  numeric_limits::is_integer  
  Testleri bir tamsayı temsili bir türe sahip.  
   
 ```  
@@ -799,7 +802,7 @@ Whether int objects have an integral representation: 1
 Whether unsigned char objects have an integral representation: 1  
 ```  
   
-##  <a name="is_modulo"></a>numeric_limits::is_modulo  
+##  <a name="is_modulo"></a>  numeric_limits::is_modulo  
  Testleri bir **türü** sahip bir modül gösterimi.  
   
 ```  
@@ -846,7 +849,7 @@ Whether signed char objects have a modulo representation: 1
 Whether unsigned char objects have a modulo representation: 1  
 ```  
   
-##  <a name="is_signed"></a>numeric_limits::is_signed  
+##  <a name="is_signed"></a>  numeric_limits::is_signed  
  Testleri imzalı temsili bir türe sahip.  
   
 ```  
@@ -893,7 +896,7 @@ Whether signed char objects have a signed representation: 1
 Whether unsigned char objects have a signed representation: 0  
 ```  
   
-##  <a name="is_specialized"></a>numeric_limits::is_specialized  
+##  <a name="is_specialized"></a>  numeric_limits::is_specialized  
  Bir şablon sınıfında tanımlanan bir açık uzmanlık türündeyse testleri `numeric_limits`.  
   
 ```  
@@ -944,7 +947,7 @@ Whether int objects have an explicit specialization in the class: 1
 Whether int* objects have an explicit specialization in the class: 0  
 ```  
   
-##  <a name="lowest"></a>numeric_limits::lowest  
+##  <a name="lowest"></a>  numeric_limits::lowest  
  En negatif sonlu değeri döndürür.  
   
 ```  
@@ -957,7 +960,7 @@ static Type lowest() throw();
 ### <a name="remarks"></a>Açıklamalar  
  Türü için en negatif sınırlı değeri döndürür (normalde `min()` tamsayı türleri ve `-max()` kayan nokta türleri için). Dönüş değeri anlamlıdır varsa `is_bounded` olan `true`.  
   
-##  <a name="max"></a>numeric_limits::Max  
+##  <a name="max"></a>  numeric_limits::max  
  Bir türe ilişkin maksimum sınırlı değeri döndürür.  
   
 ```  
@@ -996,7 +999,7 @@ int main() {
 }  
 ```  
   
-##  <a name="max_digits10"></a>numeric_limits::max_digits10  
+##  <a name="max_digits10"></a>  numeric_limits::max_digits10  
  Türünde iki farklı değerler ayrı ondalık Beyanları sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısını döndürür.  
   
 ```  
@@ -1009,7 +1012,7 @@ static int max_digits10 = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Üye türü iki farklı değerleri ayrı ondalık Beyanları sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısı depolar.  
   
-##  <a name="max_exponent"></a>numeric_limits::max_exponent  
+##  <a name="max_exponent"></a>  numeric_limits::max_exponent  
  Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.  
   
 ```  
@@ -1052,7 +1055,7 @@ The maximum radix-based exponent for type double is:  1024
 The maximum radix-based exponent for type long double is:  1024  
 ```  
   
-##  <a name="max_exponent10"></a>numeric_limits::max_exponent10  
+##  <a name="max_exponent10"></a>  numeric_limits::max_exponent10  
  On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir en büyük pozitif tam sayı üs döndürür.  
   
 ```  
@@ -1095,7 +1098,7 @@ The maximum base 10 exponent for type double is:  308
 The maximum base 10 exponent for type long double is:  308  
 ```  
   
-##  <a name="min"></a>numeric_limits::Min  
+##  <a name="min"></a>  numeric_limits::Min  
  Bir türe ilişkin minimum normalleştirilmiş değeri döndürür.  
   
 ```  
@@ -1142,7 +1145,7 @@ The minimum value for type int is:  -2147483648
 The minimum value for type short int is:  -32768  
 ```  
   
-##  <a name="min_exponent"></a>numeric_limits::min_exponent  
+##  <a name="min_exponent"></a>  numeric_limits::min_exponent  
  Sayı tabanını tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.  
   
 ```  
@@ -1185,7 +1188,7 @@ The minimum radix-based exponent for type double is:  -1021
 The minimum radix-based exponent for type long double is:  -1021  
 ```  
   
-##  <a name="min_exponent10"></a>numeric_limits::min_exponent10  
+##  <a name="min_exponent10"></a>  numeric_limits::min_exponent10  
  On tabanının, güç oluştuğunda kayan nokta türü sınırlı bir değer olarak gösterebilir maksimum negatif tam sayı üs döndürür.  
   
 ```  
@@ -1228,7 +1231,7 @@ The minimum base 10 exponent for type double is:  -307
 The minimum base 10 exponent for type long double is:  -307  
 ```  
   
-##  <a name="quiet_nan"></a>numeric_limits::quiet_NaN  
+##  <a name="quiet_nan"></a>  numeric_limits::quiet_NaN  
  Bir sessiz gösterimini sayı olmayan (NAN) türü döndürür.  
   
 ```  
@@ -1271,7 +1274,7 @@ The quiet NaN for type int is:  0
 The quiet NaN for type long double is:  1.#QNAN  
 ```  
   
-##  <a name="radix"></a>numeric_limits::radix  
+##  <a name="radix"></a>  numeric_limits::radix  
  İntegral taban döndürür taban bir türü gösterimi için kullanılan, olarak adlandırılır.  
   
 ```  
@@ -1314,7 +1317,7 @@ The base for type int is:  2
 The base for type long double is:  2  
 ```  
   
-##  <a name="round_error"></a>numeric_limits::round_error  
+##  <a name="round_error"></a>  numeric_limits::round_error  
  Hata türü için izin verilecek en fazla döndürür.  
   
 ```  
@@ -1354,7 +1357,7 @@ The maximum rounding error for type int is:  0
 The maximum rounding error for type long double is:  0.5  
 ```  
   
-##  <a name="round_style"></a>numeric_limits::round_style  
+##  <a name="round_style"></a>  numeric_limits::round_style  
  Kayan nokta değer bir tamsayı değerine yuvarlama uygulaması seçebileceğiniz çeşitli yöntemleri açıklayan bir değer döndürür.  
   
 ```  
@@ -1398,7 +1401,7 @@ The rounding style for a double type is now: 1
 The rounding style for an int type is: 0  
 ```  
   
-##  <a name="signaling_nan"></a>numeric_limits::signaling_NaN  
+##  <a name="signaling_nan"></a>  numeric_limits::signaling_NaN  
  Sayı olmayan (NAN) sinyal temsilini türü döndürür.  
   
 ```  
@@ -1435,7 +1438,7 @@ int main( )
 }  
 ```  
   
-##  <a name="tinyness_before"></a>numeric_limits::tinyness_before  
+##  <a name="tinyness_before"></a>  numeric_limits::tinyness_before  
  Bir tür değeri yuvarlama önce normalleştirilmiş değeri olarak göstermek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.  
   
 ```  
@@ -1443,7 +1446,7 @@ static const bool tinyness_before = false;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Yuvarlama önce küçük değerleri türü tespit edebilirsiniz `false` başaramazsa.  
+ `true` Yuvarlama önce küçük değerleri türü tespit edebilirsiniz `false` başaramazsa.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Tinyness algılayabilir türleri IEC 559 kayan nokta temsili bir seçenek olarak dahil ve kendi uygulama bazı sonuçları etkileyebilir.  
@@ -1482,7 +1485,7 @@ Whether long int types can detect tinyness before rounding: 0
 Whether unsigned char types can detect tinyness before rounding: 0  
 ```  
   
-##  <a name="traps"></a>numeric_limits::traps  
+##  <a name="traps"></a>  numeric_limits::traps  
  Testleri olup, yakalama aritmetik özel durumları raporları için bir tür uygulanır.  
   
 ```  

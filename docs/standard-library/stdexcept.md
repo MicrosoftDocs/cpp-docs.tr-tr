@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <stdexcept>
-dev_langs: C++
-helpviewer_keywords: stdexcept header
+ms.topic: reference
+f1_keywords:
+- <stdexcept>
+dev_langs:
+- C++
+helpviewer_keywords:
+- stdexcept header
 ms.assetid: 495c10b1-1e60-4514-9f8f-7fda11a2f522
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b67e1bdd9377c81965dd212836e0f224ff618788
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 26cc6c5811819ffcb909e2e27ab90e7dad1f19fc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltstdexceptgt"></a>&lt;stdexcept&gt;
 Raporlama özel durumlar için kullanılan birkaç standart sınıfları tanımlar. Türetme hiyerarşi tüm sınıfından türetilen sınıflar form [özel durum](../standard-library/exception-class.md) ve özel durumları iki genel türleri şunlardır: mantıksal hataları ve çalışma zamanı hataları. Mantıksal hataları Programcı hatalar nedeniyle oluşur. Bunlar, temel sınıf logic_error türetilen ve şunları içerir:  

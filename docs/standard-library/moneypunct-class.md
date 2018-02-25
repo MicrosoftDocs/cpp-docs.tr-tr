@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xlocmon/std::moneypunct
 - xlocmon/std::moneypunct::char_type
@@ -29,7 +30,8 @@ f1_keywords:
 - xlocmon/std::moneypunct::pos_format
 - xlocmon/std::moneypunct::positive_sign
 - xlocmon/std::moneypunct::thousands_sep
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::moneypunct [C++]
 - std::moneypunct [C++], char_type
@@ -53,16 +55,17 @@ helpviewer_keywords:
 - std::moneypunct [C++], positive_sign
 - std::moneypunct [C++], thousands_sep
 ms.assetid: cf2650da-3e6f-491c-95d5-23e57f582ee6
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 569aa946ac324c833e651e6b9b74b8cc402a4d04
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8a9d1d621d9969d47976911bf52724c29888594d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="moneypunct-class"></a>moneypunct Sınıfı
 Şablon sınıfı türü dizilerini açıklamak için yerel ayar model hizmet verebilir bir nesneyi tanımlayan `CharType` para giriş alanı veya parasal çıkış alanı göstermek için kullanılır. Varsa şablon parametresi `Intl` olan `true`, uluslararası kuralları gözlenen.  
@@ -97,7 +100,7 @@ class moneypunct;
 |||  
 |-|-|  
 |[char_type](#char_type)|Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.|  
-|[STRING_TYPE](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
+|[string_type](#string_type)|Tür karakterleri içeren bir dize açıklayan türü `CharType`.|  
   
 ### <a name="member-functions"></a>Üye İşlevleri  
   
@@ -127,7 +130,7 @@ class moneypunct;
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>moneypunct::char_type  
+##  <a name="char_type"></a>  moneypunct::char_type  
  Bir yerel ayar tarafından kullanılan bir karakteri tanımlamak için kullanılan tür.  
   
 ```  
@@ -137,7 +140,7 @@ typedef CharType char_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon parametresi için bir eş anlamlı türüdür **CharType**.  
   
-##  <a name="curr_symbol"></a>moneypunct::curr_symbol  
+##  <a name="curr_symbol"></a>  moneypunct::curr_symbol  
  Para birimi simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürür.  
   
 ```  
@@ -171,7 +174,7 @@ int main( )
 };  
 ```  
   
-##  <a name="decimal_point"></a>moneypunct::decimal_point  
+##  <a name="decimal_point"></a>  moneypunct::decimal_point  
  Ondalık noktası simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürür.  
   
 ```  
@@ -214,7 +217,7 @@ German_Germany.1252 international decimal point ,
 German_Germany.1252 domestic decimal point ,  
 ```  
   
-##  <a name="do_curr_symbol"></a>moneypunct::do_curr_symbol  
+##  <a name="do_curr_symbol"></a>  moneypunct::do_curr_symbol  
  Para birimi simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndüren korumalı sanal üye işlevi.  
   
 ```  
@@ -227,7 +230,7 @@ virtual string_type do_curr_symbol() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [curr_symbol](#curr_symbol), sanal üye fonksiyonu tarafından çağrılır burada `curr_symbol`.  
   
-##  <a name="do_decimal_point"></a>moneypunct::do_decimal_point  
+##  <a name="do_decimal_point"></a>  moneypunct::do_decimal_point  
  Ondalık simgesi olarak kullanılacak öğeleri yerel ayarlara özgü bir dizi döndüren bir korumalı sanal üye işlev.  
   
 ```  
@@ -240,7 +243,7 @@ virtual CharType do_decimal_point() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [decimal_point](#decimal_point), sanal üye fonksiyonu tarafından çağrılır burada `decimal_point`.  
   
-##  <a name="do_frac_digits"></a>moneypunct::do_frac_digits  
+##  <a name="do_frac_digits"></a>  moneypunct::do_frac_digits  
  Herhangi bir ondalık ayırıcısı sağındaki görüntülenecek basamak sayısı yerel ayarlara özgü sayımını döndürür korumalı sanal üye işlevi.  
   
 ```  
@@ -253,7 +256,7 @@ virtual int do_frac_digits() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [frac_digits](#frac_digits), sanal üye fonksiyonu tarafından çağrılır burada `frac_digits`.  
   
-##  <a name="do_grouping"></a>moneypunct::do_grouping  
+##  <a name="do_grouping"></a>  moneypunct::do_grouping  
  Sayı Ondalık ayırıcının solundaki nasıl gruplandırılacağını belirlemek için bir yerel ayarlara özgü kural döndüren bir korumalı sanal üye işlev.  
   
 ```  
@@ -266,7 +269,7 @@ virtual string do_grouping() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [gruplandırma](#grouping), sanal üye fonksiyonu tarafından çağrılır burada **gruplandırma**.  
   
-##  <a name="do_neg_format"></a>moneypunct::do_neg_format  
+##  <a name="do_neg_format"></a>  moneypunct::do_neg_format  
  Negatif tutarlara sahip çıkışları biçimlendirmek için bir yerel ayara özgü kural döndürmek için çağrılan korumalı bir sanal üye işlevi.  
   
 ```  
@@ -293,7 +296,7 @@ virtual pattern do_neg_format() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [neg_format](#neg_format), sanal üye fonksiyonu tarafından çağrılır burada `neg_format`.  
   
-##  <a name="do_negative_sign"></a>moneypunct::do_negative_sign  
+##  <a name="do_negative_sign"></a>  moneypunct::do_negative_sign  
  Negatif işareti simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürmek için çağrılan korumalı sanal üye işlevi.  
   
 ```  
@@ -306,7 +309,7 @@ virtual string_type do_negative_sign() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [negative_sign](#negative_sign), sanal üye fonksiyonu tarafından çağrılır burada `negative_sign`.  
   
-##  <a name="do_pos_format"></a>moneypunct::do_pos_format  
+##  <a name="do_pos_format"></a>  moneypunct::do_pos_format  
  Pozitif tutarlara sahip çıkışları biçimlendirmek için bir yerel ayara özgü kural döndürmek için çağrılan korumalı bir sanal üye işlevi.  
   
 ```  
@@ -321,7 +324,7 @@ virtual pattern do_pos_format() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [pos_format](#pos_format), sanal üye fonksiyonu tarafından çağrılır burada `pos_format`.  
   
-##  <a name="do_positive_sign"></a>moneypunct::do_positive_sign  
+##  <a name="do_positive_sign"></a>  moneypunct::do_positive_sign  
  Artı işareti kullanmak için öğeleri yerel ayarlara özgü bir dizi döndüren bir korumalı sanal üye işlev.  
   
 ```  
@@ -334,7 +337,7 @@ virtual string_type do_positive_sign() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [positive_sign](#positive_sign), sanal üye fonksiyonu tarafından çağrılır burada `positive_sign`.  
   
-##  <a name="do_thousands_sep"></a>moneypunct::do_thousands_sep  
+##  <a name="do_thousands_sep"></a>  moneypunct::do_thousands_sep  
  Ondalık ayırıcının solundaki Grup ayırıcı olarak kullanmak için bir yerel ayarlara özgü öğesi döndürür korumalı sanal üye işlevi.  
   
 ```  
@@ -347,7 +350,7 @@ virtual CharType do_thousands_sep() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [thousands_sep](#thousands_sep), sanal üye fonksiyonu tarafından çağrılır burada `thousands_sep`.  
   
-##  <a name="frac_digits"></a>moneypunct::frac_digits  
+##  <a name="frac_digits"></a>  moneypunct::frac_digits  
  Herhangi bir ondalık noktasının sağında görüntülenecek basamak sayısının yerel ayara özgü bir sayısını döndürür.  
   
 ```  
@@ -413,7 +416,7 @@ German_Germany.1252 domestic frac_digits
  to the right of the radix character: 2  
 ```  
   
-##  <a name="grouping"></a>moneypunct::Grouping  
+##  <a name="grouping"></a>  moneypunct::Grouping  
  Herhangi bir ondalık noktasının solunda gruplanacak basamakların nasıl belirleneceğine yönelik yerel ayara özgü bir kural döndürür.  
   
 ```  
@@ -479,7 +482,7 @@ German_Germany.1252 domestic frac_digits
  to the right of the radix character: 2  
 ```  
   
-##  <a name="moneypunct"></a>moneypunct::moneypunct  
+##  <a name="moneypunct"></a>  moneypunct::moneypunct  
  Nesne türü Oluşturucusu `moneypunct`.  
   
 ```  
@@ -497,13 +500,13 @@ explicit moneypunct(size_t _Refs = 0);
   
 -   1: nesne ömrü el ile yönetilmesi gerekir.  
   
--   \>1: Bu değerleri tanımlanmamış.  
+-   \> 1: Bu değerleri tanımlanmamış.  
   
  Yok Edicisi korunduğu için hiçbir doğrudan örnekler mümkündür.  
   
  Oluşturucu temel nesnesiyle başlatır [locale::facet](../standard-library/locale-class.md#facet_class)(_ *Refs*).  
   
-##  <a name="neg_format"></a>moneypunct::neg_format  
+##  <a name="neg_format"></a>  moneypunct::neg_format  
  Negatif tutarlara sahip çıkışları biçimlendirmek için bir yerel ayara özgü kural döndürür.  
   
 ```  
@@ -548,7 +551,7 @@ int main( ) {
 }  
 ```  
   
-##  <a name="negative_sign"></a>moneypunct::negative_sign  
+##  <a name="negative_sign"></a>  moneypunct::negative_sign  
  Negatif işareti simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürür.  
   
 ```  
@@ -607,7 +610,7 @@ French_France.1252 international negative sign: -
 French_France.1252 domestic negative sign: -  
 ```  
   
-##  <a name="pos_format"></a>moneypunct::pos_format  
+##  <a name="pos_format"></a>  moneypunct::pos_format  
  Pozitif tutarlara sahip çıkışları biçimlendirmek için bir yerel ayara özgü kural döndürür.  
   
 ```  
@@ -652,7 +655,7 @@ int main() {
 }  
 ```  
   
-##  <a name="positive_sign"></a>moneypunct::positive_sign  
+##  <a name="positive_sign"></a>  moneypunct::positive_sign  
  Pozitif işareti simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürür.  
   
 ```  
@@ -711,7 +714,7 @@ French_France.1252 international positive sign:
 French_France.1252 domestic positive sign:  
 ```  
   
-##  <a name="string_type"></a>moneypunct::string_type  
+##  <a name="string_type"></a>  moneypunct::string_type  
  Tür karakterleri içeren bir dize açıklayan türü **CharType**.  
   
 ```  
@@ -721,7 +724,7 @@ typedef basic_string<CharType, Traits, Allocator> string_type;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı uzmanlaşması türünü açıklayan [basic_string](../standard-library/basic-string-class.md) olan nesneleri noktalama sıraları kopyalarını depolayabilirsiniz.  
   
-##  <a name="thousands_sep"></a>moneypunct::thousands_sep  
+##  <a name="thousands_sep"></a>  moneypunct::thousands_sep  
  Binlik ayırıcı simgesi olarak kullanılacak öğelerin yerel ayara özgü bir dizisini döndürür.  
   
 ```  

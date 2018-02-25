@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: random/std::mersenne_twister_engine
-dev_langs: C++
-helpviewer_keywords: mersenne_twister_engine class
+ms.topic: reference
+f1_keywords:
+- random/std::mersenne_twister_engine
+dev_langs:
+- C++
+helpviewer_keywords:
+- mersenne_twister_engine class
 ms.assetid: 7ee968fa-a1cc-450f-890f-7305de062685
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 9db5fd19c480ac7dfa6f647a1e1bf4beec5609d1
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 15294f0372a21c3ce8efe1626c30d1a3d6db23be
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine Sınıfı
 Mersenne twister algoritmadan yola çıkılarak tamsayılar yüksek kaliteli rastgele dizisini oluşturur.  
@@ -40,28 +45,28 @@ class mersenne_twister_engine;
  İşaretsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).  
   
  `W`  
- **Word boyutu**. Her sözcüğün durumu dizisi bit cinsinden boyutu. **Önkoşul**:`2u < W ≤ numeric_limits<UIntType>::digits`  
+ **Word boyutu**. Her sözcüğün durumu dizisi bit cinsinden boyutu. **Önkoşul**: `2u < W ≤ numeric_limits<UIntType>::digits`  
   
  `N`  
  **Durum boyutu**. Durum dizisi (değerler) öğe sayısı.  
   
  `M`  
- **Kaydırma boyutu**. Her geçiş sırasında atlamak için öğe sayısı. **Önkoşul**:`0 < M ≤ N`  
+ **Kaydırma boyutu**. Her geçiş sırasında atlamak için öğe sayısı. **Önkoşul**: `0 < M ≤ N`  
   
  `R`  
- **Bit maskesi**. **Önkoşul**:`R ≤ W`  
+ **Bit maskesi**. **Önkoşul**: `R ≤ W`  
   
  `A`  
- **XOR maskesi**. **Önkoşul**:`A ≤ (1u<<W) - 1u`  
+ **XOR maskesi**. **Önkoşul**: `A ≤ (1u<<W) - 1u`  
   
  `U`, `S`, `T`, `L`  
- **Shift parametreleri tempering**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul:`U,S,T,L ≤ W`  
+ **Shift parametreleri tempering**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul: `U,S,T,L ≤ W`  
   
  `D`, `B`, `C`  
- **Bit maskesi parametreleri tempering**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul:`D,B,C ≤ (1u<<W) - 1u`  
+ **Bit maskesi parametreleri tempering**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul: `D,B,C ≤ (1u<<W) - 1u`  
   
  `F`  
- **Başlatma çarpanı**. İle dizisi başlatma yardımcı olmak için kullanılır. Önkoşul:`F ≤ (1u<<W) - 1u`  
+ **Başlatma çarpanı**. İle dizisi başlatma yardımcı olmak için kullanılır. Önkoşul: `F ≤ (1u<<W) - 1u`  
   
 ## <a name="members"></a>Üyeler  
   
@@ -70,7 +75,7 @@ class mersenne_twister_engine;
 |`mersenne_twister_engine::mersenne_twister_engine`|`mersenne_twister_engine::min`|`mersenne_twister_engine::discard`|  
 |`mersenne_twister_engine::operator()`|`mersenne_twister_engine::max`|`mersenne_twister_engine::seed`|  
   
- `default_seed`üye sabit, tanımlanmış olarak `5489u`, varsayılan parametre değeri olarak kullanılan `mersenne_twister_engine::seed` ve tek değer Oluşturucusu.  
+ `default_seed` üye sabit, tanımlanmış olarak `5489u`, varsayılan parametre değeri olarak kullanılan `mersenne_twister_engine::seed` ve tek değer Oluşturucusu.  
   
  Altyapısı üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
   

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - AMP_MATH/Concurrency::acos
 - AMP_MATH/Concurrency::acosf
@@ -138,18 +139,20 @@ f1_keywords:
 - AMP_MATH/Concurrency::tgammaf
 - AMP_MATH/Concurrency::trunc
 - AMP_MATH/Concurrency::truncf
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: edcce2cd9f21766065cbc43f7059c638a302abd2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 7016b2b9ff925164510644b743e0459a3011b5dc
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math Ad Alanı
 İşlevlerini `precise_math` ad alanı olan C99 uyumlu. Her ikisi de duyarlık tek ve çift duyarlık sürümleri her işlevi bulunmaktadır. Örneğin, `acos` çift duyarlıklı sürümüdür ve `acosf` tek duyarlıklı sürümüdür. Tek duyarlıklı işlevleri dahil olmak üzere, bu işlevler Hızlandırıcı genişletilmiş çift duyarlıklı desteğini gerektirir. Kullanabileceğiniz [accelerator::supports_double_precision](accelerator-class.md#supports_double_precision) bu işlevler üzerinde belirli bir kısayol çalıştırıp çalıştıramayacağını belirlemek için. 
@@ -169,19 +172,19 @@ namespace precise_math;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[ACOS](concurrency-precise-math-namespace-functions.md#acos)|Fazla Yüklendi. Bağımsız değişken arkkosinüsünü hesaplar|  
+|[acos](concurrency-precise-math-namespace-functions.md#acos)|Fazla Yüklendi. Bağımsız değişken arkkosinüsünü hesaplar|  
 |[acosf](concurrency-precise-math-namespace-functions.md#acosf)|Bağımsız değişken arkkosinüsünü hesaplar|  
 |[ACOSH](concurrency-precise-math-namespace-functions.md#acosh)|Fazla Yüklendi. Ters hiperbolik Kosinüs bağımsız değişkenin hesaplar|  
 |[acoshf](concurrency-precise-math-namespace-functions.md#acoshf)|Ters hiperbolik Kosinüs bağımsız değişkenin hesaplar|  
 |[asin](concurrency-precise-math-namespace-functions.md#asin)|Fazla Yüklendi. Bağımsız değişken arksinüsünü hesaplar|  
 |[asinf](concurrency-precise-math-namespace-functions.md#asinf)|Bağımsız değişken arksinüsünü hesaplar|  
-|[ASİNH](concurrency-precise-math-namespace-functions.md#asinh)|Fazla Yüklendi. Ters hiperbolik sinüs bağımsız değişkenin hesaplar|  
+|[asinh](concurrency-precise-math-namespace-functions.md#asinh)|Fazla Yüklendi. Ters hiperbolik sinüs bağımsız değişkenin hesaplar|  
 |[asinhf](concurrency-precise-math-namespace-functions.md#asinhf)|Ters hiperbolik sinüs bağımsız değişkenin hesaplar|  
 |[atan](concurrency-precise-math-namespace-functions.md#atan)|Fazla Yüklendi. Bağımsız değişken tanjantını hesaplar|  
-|[ATAN2](concurrency-precise-math-namespace-functions.md#atan2)|Fazla Yüklendi. _Y/_X tanjantını hesaplar|  
+|[atan2](concurrency-precise-math-namespace-functions.md#atan2)|Fazla Yüklendi. _Y/_X tanjantını hesaplar|  
 |[atan2f](concurrency-precise-math-namespace-functions.md#atan2f)|_Y/_X tanjantını hesaplar|  
 |[atanf](concurrency-precise-math-namespace-functions.md#atanf)|Bağımsız değişken tanjantını hesaplar|  
-|[ATANH](concurrency-precise-math-namespace-functions.md#atanh)|Fazla Yüklendi. Ters hiperbolik tanjant bağımsız değişkenin hesaplar|  
+|[atanh](concurrency-precise-math-namespace-functions.md#atanh)|Fazla Yüklendi. Ters hiperbolik tanjant bağımsız değişkenin hesaplar|  
 |[atanhf](concurrency-precise-math-namespace-functions.md#atanhf)|Ters hiperbolik tanjant bağımsız değişkenin hesaplar|  
 |[cbrt](concurrency-precise-math-namespace-functions.md#cbrt)|Fazla Yüklendi. Bağımsız değişken gerçek küp kökündeki hesaplar|  
 |[cbrtf](concurrency-precise-math-namespace-functions.md#cbrtf)|Bağımsız değişken gerçek küp kökündeki hesaplar|  
@@ -217,7 +220,7 @@ namespace precise_math;
 |[fdimf](concurrency-precise-math-namespace-functions.md#fdimf)|Bağımsız değişkenler arasındaki pozitif fark belirler|  
 |[Kat](concurrency-precise-math-namespace-functions.md#floor)|Fazla Yüklendi. Bağımsız değişken kat hesaplar|  
 |[floorf](concurrency-precise-math-namespace-functions.md#floorf)|Bağımsız değişken kat hesaplar|  
-|[FMA](concurrency-precise-math-namespace-functions.md#fma)|Fazla Yüklendi. İşlem (_X * _Y) + üçlü bir işlem olarak yuvarlanmış _Z|  
+|[fma](concurrency-precise-math-namespace-functions.md#fma)|Fazla Yüklendi. İşlem (_X * _Y) + üçlü bir işlem olarak yuvarlanmış _Z|  
 |[fmaf](concurrency-precise-math-namespace-functions.md#fmaf)|İşlem (_X * _Y) + üçlü bir işlem olarak yuvarlanmış _Z|  
 |[fmax](concurrency-precise-math-namespace-functions.md#fmax)|Fazla Yüklendi. Bağımsız değişkenler en büyük sayısal değerini belirleme|  
 |[fmaxf](concurrency-precise-math-namespace-functions.md#fmaxf)|Bağımsız değişkenler en büyük sayısal değerini belirleme|  
@@ -234,7 +237,7 @@ namespace precise_math;
 |[ilogbf](concurrency-precise-math-namespace-functions.md#ilogbf)|İmzalı bir tamsayı _X üs Ayıkla|  
 |[isfinite](concurrency-precise-math-namespace-functions.md#isfinite)|Fazla Yüklendi. Bağımsız değişken sınırlı bir değere sahip olup olmadığını belirler|  
 |[isinf](concurrency-precise-math-namespace-functions.md#isinf)|Fazla Yüklendi. Bağımsız değişkeni bir sonsuzluk olup olmadığını belirler|  
-|[isNaN](concurrency-precise-math-namespace-functions.md#isnan)|Fazla Yüklendi. Bağımsız değişkeni bir NaN olup olmadığını belirler|  
+|[isnan](concurrency-precise-math-namespace-functions.md#isnan)|Fazla Yüklendi. Bağımsız değişkeni bir NaN olup olmadığını belirler|  
 |[isnormal](concurrency-precise-math-namespace-functions.md#isnormal)|Fazla Yüklendi. Bağımsız değişken normal olup olmadığını belirler|  
 |[ldexp](concurrency-precise-math-namespace-functions.md#ldexp)|Fazla Yüklendi. Mantis ve üs arasında bir gerçek sayı hesaplar|  
 |[ldexpf](concurrency-precise-math-namespace-functions.md#ldexpf)|Mantis ve üs arasında bir gerçek sayı hesaplar|  
@@ -252,13 +255,13 @@ namespace precise_math;
 |[logf](concurrency-precise-math-namespace-functions.md#logf)|Bağımsız değişken e tabanında logaritmasını hesaplar|  
 |[modf](concurrency-precise-math-namespace-functions.md#modf)|Fazla Yüklendi. Kesirli içine _X ve tamsayı bölümleri böler.|  
 |[modff](concurrency-precise-math-namespace-functions.md#modff)|Kesirli içine _X ve tamsayı bölümleri böler.|  
-|[NaN](concurrency-precise-math-namespace-functions.md#nan)|Sessiz NaN döndürür|  
+|[nan](concurrency-precise-math-namespace-functions.md#nan)|Sessiz NaN döndürür|  
 |[nanf](concurrency-precise-math-namespace-functions.md#nanf)|Sessiz NaN döndürür|  
 |[nearbyint](concurrency-precise-math-namespace-functions.md#nearbyint)|Fazla Yüklendi. Bağımsız değişkeni bir tamsayı değeri geçerli yuvarlama yönünü kullanarak kayan nokta biçiminde yuvarlar.|  
 |[nearbyintf](concurrency-precise-math-namespace-functions.md#nearbyintf)|Bağımsız değişkeni bir tamsayı değeri geçerli yuvarlama yönünü kullanarak kayan nokta biçiminde yuvarlar.|  
 |[nextafter](concurrency-precise-math-namespace-functions.md#nextafter)|Fazla Yüklendi. _X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri belirlemek|  
 |[nextafterf](concurrency-precise-math-namespace-functions.md#nextafterf)|_X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri belirlemek|  
-|[Phi](concurrency-precise-math-namespace-functions.md#phi)|Fazla Yüklendi. Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür|  
+|[phi](concurrency-precise-math-namespace-functions.md#phi)|Fazla Yüklendi. Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür|  
 |[phif](concurrency-precise-math-namespace-functions.md#phif)|Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür|  
 |[POW](concurrency-precise-math-namespace-functions.md#pow)|Fazla Yüklendi. Üssü _Y _X hesaplar|  
 |[powf](concurrency-precise-math-namespace-functions.md#powf)|Üssü _Y _X hesaplar|  
@@ -266,7 +269,7 @@ namespace precise_math;
 |[probitf](concurrency-precise-math-namespace-functions.md#probitf)|Bağımsız değişkenin ters kümülatif dağılım fonksiyonunu döndürür|  
 |[rcbrt](concurrency-precise-math-namespace-functions.md#rcbrt)|Fazla Yüklendi. Bağımsız değişken küp kökündeki devrik döndürür|  
 |[rcbrtf](concurrency-precise-math-namespace-functions.md#rcbrtf)|Bağımsız değişken küp kökündeki devrik döndürür|  
-|[Kalan](concurrency-precise-math-namespace-functions.md#remainder)|Fazla Yüklendi. Kalanı hesaplar: _X REM _Y|  
+|[remainder](concurrency-precise-math-namespace-functions.md#remainder)|Fazla Yüklendi. Kalanı hesaplar: _X REM _Y|  
 |[remainderf](concurrency-precise-math-namespace-functions.md#remainderf)|Kalanı hesaplar: _X REM _Y|  
 |[remquo](concurrency-precise-math-namespace-functions.md#remquo)|Fazla Yüklendi. Aynı kalan _X REM _Y olarak hesaplar. Ayrıca daha düşük 23 bit tam sayı sayının _X/_Y düzeyi hesaplar ve _X/_Y aynı işarete bu değeri verir. Bu imzalı değer tarafından _Quo işaret tamsayı depolar.|  
 |[remquof](concurrency-precise-math-namespace-functions.md#remquof)|Aynı kalan _X REM _Y olarak hesaplar. Ayrıca daha düşük 23 bit tam sayı sayının _X/_Y düzeyi hesaplar ve _X/_Y aynı işarete bu değeri verir. Bu imzalı değer tarafından _Quo işaret tamsayı depolar.|  
@@ -284,11 +287,11 @@ namespace precise_math;
 |[sincos](concurrency-precise-math-namespace-functions.md#sincos)|Fazla Yüklendi. _X Sinüs ve Kosinüs değerini hesaplar|  
 |[sincosf](concurrency-precise-math-namespace-functions.md#sincosf)|_X Sinüs ve Kosinüs değerini hesaplar|  
 |[sinf](concurrency-precise-math-namespace-functions.md#sinf)|Bağımsız değişkenin sinüsünü değeri hesaplar|  
-|[SİNH](concurrency-precise-math-namespace-functions.md#sinh)|Fazla Yüklendi. Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
+|[sinh](concurrency-precise-math-namespace-functions.md#sinh)|Fazla Yüklendi. Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
 |[sinhf](concurrency-precise-math-namespace-functions.md#sinhf)|Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar|  
 |[sinpi](concurrency-precise-math-namespace-functions.md#sinpi)|Fazla Yüklendi. Pi sinüsünü değerini hesaplar * _X|  
 |[sinpif](concurrency-precise-math-namespace-functions.md#sinpif)|Pi sinüsünü değerini hesaplar * _X|  
-|[Sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|Fazla Yüklendi. Bağımsız değişken squre kökündeki hesaplar|  
+|[sqrt](concurrency-precise-math-namespace-functions.md#sqrt)|Fazla Yüklendi. Bağımsız değişken squre kökündeki hesaplar|  
 |[sqrtf](concurrency-precise-math-namespace-functions.md#sqrtf)|Bağımsız değişken squre kökündeki hesaplar|  
 |[tan](concurrency-precise-math-namespace-functions.md#tan)|Fazla Yüklendi. Bağımsız değişkenin Eğim değeri hesaplar|  
 |[tanf](concurrency-precise-math-namespace-functions.md#tanf)|Bağımsız değişkenin Eğim değeri hesaplar|  

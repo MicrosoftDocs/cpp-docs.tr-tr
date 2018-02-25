@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - streambuf/std::istreambuf_iterator
 - iterator/std::istreambuf_iterator::char_type
@@ -15,7 +16,8 @@ f1_keywords:
 - iterator/std::istreambuf_iterator::streambuf_type
 - iterator/std::istreambuf_iterator::traits_type
 - iterator/std::istreambuf_iterator::equal
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::istreambuf_iterator [C++]
 - std::istreambuf_iterator [C++], char_type
@@ -25,16 +27,17 @@ helpviewer_keywords:
 - std::istreambuf_iterator [C++], traits_type
 - std::istreambuf_iterator [C++], equal
 ms.assetid: 39002da2-61a6-48a5-9d0c-5df8271f6038
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2334ebd75d3a941c453950a6a99adfd99e6b1555
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dc69f36b5dae84775025b2e7e8086321dfe55fd5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator Sınıfı
 Şablon sınıfı istreambuf_iterator depoladığı, türü işaretçinin nesnesi aracılığıyla erişen bir giriş akışı arabellek gelen karakter öğeleri ayıklar bir giriş yineleyici nesneyi tanımlayan `basic_streambuf` \< **CharType** , **Nitelikler**>.  
@@ -79,22 +82,22 @@ class istreambuf_iterator
   
 |||  
 |-|-|  
-|[eşit](#equal)|İki giriş akışı önbelleği yineleyicisi arasındaki eşitliği sınar.|  
+|[Eşittir](#equal)|İki giriş akışı önbelleği yineleyicisi arasındaki eşitliği sınar.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |||  
 |-|-|  
-|[işleç *](#op_star)|Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.|  
-|[operator ++](#op_add_add)|Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|  
-|[-> işleci](#operator-_gt)|Varsa, bir üyenin değerini döndürür.|  
+|[operator*](#op_star)|Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.|  
+|[operator++](#op_add_add)|Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.|  
+|[operator->](#operator-_gt)|Varsa, bir üyenin değerini döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** \<yineleyici >  
   
  **Namespace:** std  
   
-##  <a name="char_type"></a>istreambuf_iterator::char_type  
+##  <a name="char_type"></a>  istreambuf_iterator::char_type  
  Karakter türü için sağlayan bir türü `ostreambuf_iterator`.  
   
 ```
@@ -137,7 +140,7 @@ int main( )
 }  
 ```  
   
-##  <a name="equal"></a>istreambuf_iterator::Equal  
+##  <a name="equal"></a>  istreambuf_iterator::Equal  
  İki giriş akışı arabellek yineleyiciler arasında eşdeğer için testleri.  
   
 ```
@@ -182,7 +185,7 @@ int main( )
 }  
 ```  
   
-##  <a name="int_type"></a>istreambuf_iterator::int_type  
+##  <a name="int_type"></a>  istreambuf_iterator::int_type  
  Bir tamsayı türü için sağlayan bir türü bir `istreambuf_iterator`.  
   
 ```
@@ -211,7 +214,7 @@ The inttype1 = 100.
 *\  
 ```  
   
-##  <a name="istream_type"></a>istreambuf_iterator::istream_type  
+##  <a name="istream_type"></a>  istreambuf_iterator::istream_type  
  Akış türü için sağlayan bir türü `istreambuf_iterator`.  
   
 ```
@@ -224,7 +227,7 @@ typedef basic_istream<CharType, Traits> istream_type;
 ### <a name="example"></a>Örnek  
   Bkz: [istreambuf_iterator](#istreambuf_iterator) bildirme ve kullanma konusunda bir örnek için `istream_type`.  
   
-##  <a name="istreambuf_iterator"></a>istreambuf_iterator::istreambuf_iterator  
+##  <a name="istreambuf_iterator"></a>  istreambuf_iterator::istreambuf_iterator  
  Karakter giriş akışından okuma için başlatılan bir istreambuf_iterator oluşturur.  
   
 ```
@@ -274,7 +277,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_star"></a>istreambuf_iterator::operator *  
+##  <a name="op_star"></a>  istreambuf_iterator::operator*  
  Başvuru kaldırma işleci akıştaki sonraki karakteri döndürür.  
   
 ```
@@ -312,7 +315,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_add_add"></a>istreambuf_iterator::operator ++  
+##  <a name="op_add_add"></a>  istreambuf_iterator::operator++  
  Giriş akışındaki sonraki öğeyi döndürür ya da artırmadan önce nesneyi kopyalar ve kopyayı döndürür.  
   
 ```
@@ -354,7 +357,7 @@ int main( )
 }  
 ```  
   
-##  <a name="istreambuf_iterator__operator-_gt"></a>istreambuf_iterator::operator-&gt;  
+##  <a name="istreambuf_iterator__operator-_gt"></a>  istreambuf_iterator::operator-&gt;  
  Varsa, bir üyenin değerini döndürür.  
   
 ```
@@ -364,7 +367,7 @@ const Elem* operator->() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  İşleç döndürür  **& \* \*bu**.  
   
-##  <a name="streambuf_type"></a>istreambuf_iterator::streambuf_type  
+##  <a name="streambuf_type"></a>  istreambuf_iterator::streambuf_type  
  İstreambuf_iterator akışı türü için sağlayan türü.  
   
 ```
@@ -377,7 +380,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 ### <a name="example"></a>Örnek  
   Bkz: [istreambuf_iterator](#istreambuf_iterator) bildirme ve kullanma konusunda bir örnek için **istreambuf_type**.  
   
-##  <a name="traits_type"></a>istreambuf_iterator::traits_type  
+##  <a name="traits_type"></a>  istreambuf_iterator::traits_type  
  Karakter nitelikler tür sağlayan bir tür `istream_iterator`.  
   
 ```
@@ -422,7 +425,7 @@ int main( )
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [iterator yapısı](../standard-library/iterator-struct.md)   
- [\<Yineleyici >](../standard-library/iterator.md)   
+ [\<iterator>](../standard-library/iterator.md)   
  [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
  [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
 

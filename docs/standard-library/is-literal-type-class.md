@@ -8,23 +8,27 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: type_traits/std::is_literal_type
-dev_langs: C++
-helpviewer_keywords: is_literal_type
+ms.topic: reference
+f1_keywords:
+- type_traits/std::is_literal_type
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_literal_type
 ms.assetid: a03a4ebb-ee66-48d6-91bb-41cf72b2401f
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: aabb7d1c6e0c194f5d031e62d84753dfc0ded3d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 09a1531458df692be2b78a97a1723366f912d087
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="isliteraltype-class"></a>is_literal_type sınıfı
+# <a name="isliteraltype-class"></a>is_literal_type Class
 Bir tür olarak kullanılabilir olup olmadığını sınar bir `constexpr` değişkeni veya oluşturulan, tarafından kullanılan veya döndürülen `constexpr` işlevleri.  
   
 ## <a name="syntax"></a>Sözdizimi  

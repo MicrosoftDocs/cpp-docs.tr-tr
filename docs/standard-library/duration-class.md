@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::duration
 - chrono/std::chrono::duration::duration
@@ -14,19 +15,22 @@ f1_keywords:
 - chrono/std::chrono::duration::max
 - chrono/std::chrono::duration::min
 - chrono/std::chrono::duration::zero
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-helpviewer_keywords: std::chrono [C++], duration
-ms.workload: cplusplus
-ms.openlocfilehash: e25b632554f56054793f60f3fe058791798894d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+helpviewer_keywords:
+- std::chrono [C++], duration
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 742c6acf9f404275fbf9c74a55abd661224d5bc6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="duration-class"></a>duration Sınıfı
 Tutan bir türünü açıklayan bir *zaman aralığı*, iki zaman noktası arasında geçen süre olduğu.  
@@ -58,29 +62,29 @@ class duration <duration<Rep, Period1>, Period2>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[süre](#duration)|Oluşturan bir `duration` nesnesi.|  
+|[Süre](#duration)|Oluşturan bir `duration` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[sayısı](#count)|Zaman aralığı içinde saat vuruşlarını sayısını döndürür.|  
+|[Sayısı](#count)|Zaman aralığı içinde saat vuruşlarını sayısını döndürür.|  
 |[max](#max)|Statik. Şablon parametresi izin verilen en büyük değerini döndürür `Ref`.|  
-|[Min](#min)|Statik. Şablon parametresi izin verilen en düşük değer döndürür `Ref`.|  
-|[sıfır](#zero)|Statik. Uygulamada döndürür `Rep`(0).|  
+|[min](#min)|Statik. Şablon parametresi izin verilen en düşük değer döndürür `Ref`.|  
+|[Sıfır](#zero)|Statik. Uygulamada döndürür `Rep`(0).|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Duration::operator-](#operator-)|Bir kopyasını döndürür `duration` çevrilerek tık sayısı ile birlikte nesnesi.|  
-|[Duration::operator--](#operator--)|Azaltır depolanan değer çizgilerinin sayısı.|  
-|[Duration::operator =](#op_eq)|Belirtilen bir değeri modulo depolanan değer çizgisi sayısını indirir.|  
-|[Duration::operator * =](#op_star_eq)|Saklı tık sayısı belirtilen bir değerle çarpar.|  
+|[duration::operator--](#operator--)|Azaltır depolanan değer çizgilerinin sayısı.|  
+|[duration::operator=](#op_eq)|Belirtilen bir değeri modulo depolanan değer çizgisi sayısını indirir.|  
+|[duration::operator*=](#op_star_eq)|Saklı tık sayısı belirtilen bir değerle çarpar.|  
 |[Duration::operator / =](#op_div_eq)|Belirtilen değer çizgisi sayısını tarafından depolanan değer sayısı böler `duration` nesnesi.|  
-|[Duration::operator +](#op_add)|Döndürür `*this`.|  
-|[Duration::operator ++](#op_add_add)|Depolanan değer çizgisi sayısını artırır.|  
-|[Duration::operator +=](#op_add_eq)|Belirtilen değer çizgisi sayısını ekler `duration` saklı tık sayısı nesnesine.|  
+|[duration::operator+](#op_add)|Döndürür `*this`.|  
+|[duration::operator++](#op_add_add)|Depolanan değer çizgisi sayısını artırır.|  
+|[duration::operator+=](#op_add_eq)|Belirtilen değer çizgisi sayısını ekler `duration` saklı tık sayısı nesnesine.|  
 |[Duration::operator-=](#operator-_eq)|Belirtilen değer çizgisi sayısını çıkartır `duration` saklı tık sayısı nesnesinden.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -88,7 +92,7 @@ class duration <duration<Rep, Period1>, Period2>;
   
  **Namespace:** std::chrono  
   
-##  <a name="count"></a>Duration::Count  
+##  <a name="count"></a>  Duration::Count  
  Zaman aralığı içinde saat vuruşlarını sayısını alır.  
   
 ```  
@@ -98,7 +102,7 @@ constexpr Rep count() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  Zaman aralığı içinde saat vuruşlarını sayısı.  
   
-##  <a name="duration"></a>Duration::Duration Oluşturucusu  
+##  <a name="duration"></a>  Duration::Duration Oluşturucusu  
  Oluşturan bir `duration` nesnesi.  
   
 ```  
@@ -138,7 +142,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
   
  Taşma dönüştürme işleminden sürece ve `treat_as_floating_point<rep>` *geçerlidir*, veya her ikisini de `ratio_divide<Period2, period>::den` 1'e eşittir ve `treat_as_floating_point<Rep2>` *false tutan*, üçüncü oluşturucusu içinde katılmıyor aşırı yükleme çözümü. Daha fazla bilgi için bkz: [< type_traits >](../standard-library/type-traits.md).  
   
-##  <a name="max"></a>Duration::Max  
+##  <a name="max"></a>  Duration::Max  
  Şablon parametresi türü değerleri için üst sınır döndüren statik yöntem `Ref`.  
   
 ```  
@@ -148,7 +152,7 @@ static constexpr duration max();
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygulamada döndürür `duration(duration_values<rep>::max())`.  
   
-##  <a name="min"></a>Duration::Min  
+##  <a name="min"></a>  Duration::Min  
  Şablon parametresi türü değerleri için alt sınır döndüren statik yöntem `Ref`.  
   
 ```  
@@ -158,14 +162,14 @@ static constexpr duration min();
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygulamada döndürür `duration(duration_values<rep>::min())`.  
   
-##  <a name="duration__operator-"></a>Duration::operator-  
+##  <a name="duration__operator-">Duration::operator-</a>  
  Bir kopyasını döndürür `duration` çevrilerek tık sayısı ile birlikte nesnesi.  
   
 ```  
 constexpr duration operator-() const;
 ```  
   
-##  <a name="duration__operator--"></a>Duration::operator--  
+##  <a name="duration__operator--"></a>  duration::operator--  
  Azaltır depolanan değer çizgilerinin sayısı.  
   
 ```  
@@ -179,7 +183,7 @@ duration operator--(int);
   
  İkinci yöntem kopyasını döndürür `*this` önce azaltma yapılır.  
   
-##  <a name="op_eq"></a>Duration::operator =  
+##  <a name="op_eq"></a>  duration::operator=  
  Belirtilen bir değeri modulo depolanan değer çizgisi sayısını indirir.  
   
 ```  
@@ -195,7 +199,7 @@ duration& operator%=(const duration& Div);
 ### <a name="return-value"></a>Dönüş Değeri  
  `duration` Sonra nesne işlemi gerçekleştirilir.  
   
-##  <a name="op_star_eq"></a>Duration::operator * =  
+##  <a name="op_star_eq"></a>  duration::operator*=  
  Saklı tık sayısı belirtilen bir değerle çarpar.  
   
 ```  
@@ -209,7 +213,7 @@ duration& operator*=(const rep& Mult);
 ### <a name="return-value"></a>Dönüş Değeri  
  `duration` Çarpma gerçekleştirildikten sonra nesnesi.  
   
-##  <a name="op_div_eq"></a>Duration::operator / =  
+##  <a name="op_div_eq">Duration::operator / =</a>  
  Depolanan değer çizgisi sayısını belirtilen değere böler.  
   
 ```  
@@ -223,14 +227,14 @@ duration& operator/=(const rep& Div);
 ### <a name="return-value"></a>Dönüş Değeri  
  `duration` Bölme işlemi yapıldıktan sonra nesnesi.  
   
-##  <a name="op_add"></a>Duration::operator +  
+##  <a name="op_add"></a>  duration::operator+  
  Döndürür `*this`.  
   
 ```  
 constexpr duration operator+() const;
 ```  
   
-##  <a name="op_add_add"></a>Duration::operator ++  
+##  <a name="op_add_add"></a>  duration::operator++  
  Depolanan değer çizgisi sayısını artırır.  
   
 ```  
@@ -244,7 +248,7 @@ duration operator++(int);
   
  İkinci yöntem kopyasını döndürür `*this` önce artışı yapılan.  
   
-##  <a name="op_add_eq"></a>Duration::operator +=  
+##  <a name="op_add_eq"></a>  duration::operator+=  
  Belirtilen değer çizgisi sayısını ekler `duration` saklı tık sayısı nesnesine.  
   
 ```  
@@ -258,7 +262,7 @@ duration& operator+=(const duration& Dur);
 ### <a name="return-value"></a>Dönüş Değeri  
  `duration` Eklenmesi gerçekleştirildikten sonra nesnesi.  
   
-##  <a name="duration__operator-_eq"></a>Duration::operator-=  
+##  <a name="duration__operator-_eq"></a>  duration::operator-=  
  Belirtilen değer çizgisi sayısını çıkartır `duration` saklı tık sayısı nesnesinden.  
   
 ```  
@@ -272,14 +276,14 @@ duration& operator-=(const duration& Dur);
 ### <a name="return-value"></a>Dönüş Değeri  
  `duration` Çıkarma işlemi yapıldıktan sonra nesnesi.  
   
-##  <a name="zero"></a>Duration::Zero  
+##  <a name="zero"></a>  Duration::Zero  
  Döndürür `duration(duration_values<rep>::zero())`.  
   
 ```  
 static constexpr duration zero();
 ```  
   
-##  <a name="op_mod_eq"></a>Duration::operator mod =  
+##  <a name="op_mod_eq"></a>  Duration::operator mod =  
  Div veya Div.count() modulo depolanan değer çizgisi sayısını indirir.  
   
 ```  
