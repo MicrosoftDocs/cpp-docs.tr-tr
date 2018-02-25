@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataConnection::operatorBOOL
 - ATL::CDataConnection::operatorBOOL
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ae1aea9ed45a8ff9254952f0b820a66b792085c8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a29d4a3878750f2ca7e70eff032ac9d2cb6b986c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdataconnectionoperator-bool"></a>CDataConnection::operator BOOL
 Geçerli oturumu açık olup olmadığını belirler.  

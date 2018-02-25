@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CDynamicAccessor::GetStatus
 - CDynamicAccessor.GetStatus
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 31b25161617d36424804ee5c9a325d59f5fcae41
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: db78ecf633e3f69e24f1684949bddc0e0c21ce2c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessorgetstatus"></a>CDynamicAccessor::GetStatus
 Belirtilen sütun durumunu alır.  

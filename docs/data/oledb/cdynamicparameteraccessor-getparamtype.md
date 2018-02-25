@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDynamicParameterAccessor.GetParamType
 - CDynamicParameterAccessor:GetParamType
@@ -27,11 +27,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2df37a426876217ce024e77cb9be4e4abcf52bd5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7bdda452004333874525367a4dd0770f654f83c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicparameteraccessorgetparamtype"></a>CDynamicParameterAccessor::GetParamType
 Belirtilen parametre veri türünü alır.  

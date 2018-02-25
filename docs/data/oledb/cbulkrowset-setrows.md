@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset.SetRows
 - CBulkRowset::SetRows
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8cfbe5abc559291978bb54fe0d30ea0c081cdf82
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fa6305139e554c164f01acf74b78c069e1d030db
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cbulkrowsetsetrows"></a>CBulkRowset::SetRows
 Her çağrısı tarafından alınan satır işleyicilerini sayısını ayarlar.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.IAccessorImpl.IAccessorImpl
 - ATL::IAccessorImpl::IAccessorImpl
@@ -27,11 +27,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3c9b56cadc594605f521bdabc256d0fdb789226c
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3f7284b056fe730ce1840251524016658d66e5d4
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iaccessorimpliaccessorimpl"></a>IAccessorImpl::IAccessorImpl
 Oluşturucu.  

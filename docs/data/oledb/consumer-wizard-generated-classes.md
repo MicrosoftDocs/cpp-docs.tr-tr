@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ca753008e1a976daf2cda187c05607b718966c31
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 194c71fda245663e648298af17a6ceb874aef4d5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="consumer-wizard-generated-classes"></a>Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar
 Tüketici oluşturmak için ATL OLE DB Tüketici Sihirbazı'nı kullandığınızda, OLE DB Şablonları veya OLE DB öznitelikleri kullanma seçeneğiniz vardır. Her iki durumda da sihirbaz komut sınıfı ve kullanıcı kayıt sınıfı oluşturur. Komut sınıfı Sihirbazı'nda belirtilen satır kümesi ve veri kaynağı açmak için kullanılan kodu içerir. Kullanıcı kayıt sınıfı seçtiğiniz veritabanı tablosu için sütun eşlemesi içerir. Bununla birlikte, her durumda oluşturulan kod farklıdır:  

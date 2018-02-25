@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDynamicParameterAccessor::GetParam
 - ATL.CDynamicParameterAccessor.GetParam
@@ -28,11 +28,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a54da47714be4f0230145b3aa5d8b66df44e3679
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 61d1a15cd148120914e22a566da45f579fdd72ae
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicparameteraccessorgetparam"></a>CDynamicParameterAccessor::GetParam
 Belirtilen parametre dize olmayan verileri parametresi arabelleğinden alır.  

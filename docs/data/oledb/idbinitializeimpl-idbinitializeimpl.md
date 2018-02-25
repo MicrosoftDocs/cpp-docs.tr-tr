@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IDBInitializeImpl.IDBInitializeImpl
 - IDBInitializeImpl
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7c1e9e151b770fd9f3a86ca4d5732812ebbdbfe0
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 726e6d3ff6a7874f01469d16d1c9cd57516de37d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="idbinitializeimplidbinitializeimpl"></a>IDBInitializeImpl::IDBInitializeImpl
 Oluşturucu.  

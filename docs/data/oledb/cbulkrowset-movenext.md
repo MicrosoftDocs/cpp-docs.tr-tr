@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset<TAccessor>.MoveNext
 - ATL::CBulkRowset::MoveNext
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 051213aa34520adf20ef593cb4e6e9bb19e73162
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e03a1449ec448d6c06dc90f3a18594bad97cfb95
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cbulkrowsetmovenext"></a>CBulkRowset::MoveNext
 Sonraki satıra veri alır.  

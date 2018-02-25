@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - PROVIDER_COLUMN_ENTRY_STR
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9e5f4d21d0ffae232a3e4b313c4156ed18311288
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 40f6b44ad4a3154dbcdcfc1d3daca6e9c37cb63d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="providercolumnentrystr"></a>PROVIDER_COLUMN_ENTRY_STR
 Sağlayıcı tarafından desteklenen belirli bir sütunu temsil eder.  

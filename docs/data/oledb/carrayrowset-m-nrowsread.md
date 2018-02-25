@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CArrayRowset::m_nRowsRead
 - ATL::CArrayRowset<TAccessor>::m_nRowsRead
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d1cee65d3d5ed3c25aeaefa45491bbf1eebf5e62
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 160725919a8ce4c86bc12c6b002b3ab7a393ceb9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="carrayrowsetmnrowsread"></a>CArrayRowset::m_nRowsRead
 Zaten okuma satır kümesinde satır sayısını içerir.  

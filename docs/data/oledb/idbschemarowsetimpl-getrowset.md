@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::IDBSchemaRowsetImpl::GetRowset
 - ATL.IDBSchemaRowsetImpl.GetRowset
@@ -28,11 +28,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fb3e1460b4eee2de030397e05d527c219acb2bb9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 143bec7cf78f039ccb4cad69c154764608376693
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="idbschemarowsetimplgetrowset"></a>IDBSchemaRowsetImpl::GetRowset
 Bir şema satır kümesi döndürür.  

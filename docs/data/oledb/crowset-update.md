@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CRowset.Update
 - ATL.CRowset.Update
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ac465bdb5cfa228e5621a3ccf0d791f5f5271421
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5b9acbe5df9d0ccf1a1798f19e41ea9fd1cc0ada
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetupdate"></a>CRowset::Update
 Bekleyen tüm geçerli satırda son fetch itibaren yaptığınız değişiklikleri iletir veya **güncelleştirme** üzerinde çağırın.  

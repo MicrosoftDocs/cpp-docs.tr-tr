@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CRowset<TAccessor>.SetData
 - SetData
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f9b619bbc62ac81c4d1c2cc8c27e4246c026ca23
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 2d9f42397ffaa186bfd96db454251c687b634d69
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetsetdata"></a>CRowset::SetData
 Bir veya daha fazla satır sütunu veri değerlerini ayarlar.  

@@ -1,12 +1,13 @@
 ---
-title: "CConstraintColumnUsage, Cconstraintcolumnusageınfo | Microsoft Docs"
+title: CConstraintColumnUsage, CConstraintColumnUsageInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szTableSchema
 - m_szConstraintCatalog
@@ -25,7 +26,8 @@ f1_keywords:
 - CONSTRAINT_SCHEMA
 - CConstraintColumnUsageInfo
 - m_szConstraintName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COLUMN_PROPID
 - m_szConstraintCatalog
@@ -49,18 +51,18 @@ helpviewer_keywords:
 - COLUMN_GUID
 - m_guidColumn
 ms.assetid: 7d4d94e8-2025-4fcc-a176-c9b231eca77b
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d73239fbd3cab69d722f9d3c9546295685a6bd81
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7e7d76c426ff203d989250832231db1783562948
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cconstraintcolumnusage-cconstraintcolumnusageinfo"></a>CConstraintColumnUsage, CConstraintColumnUsageInfo
 Çağrı typedef sınıfı **CConstraintColumnUsage** parametre sınıfı uygulamak için **Cconstraintcolumnusageınfo**.  

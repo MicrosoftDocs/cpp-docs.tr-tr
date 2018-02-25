@@ -1,12 +1,13 @@
 ---
-title: "CColumnPrivileges, Ccolumnprivilegeınfo | Microsoft Docs"
+title: CColumnPrivileges, CColumnPrivilegeInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szTableSchema
 - CColumnPrivileges
@@ -26,7 +27,8 @@ f1_keywords:
 - m_szTableName
 - CColumnPrivilegeInfo
 - m_szGrantee
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COLUMN_PROPID
 - GRANTOR
@@ -51,18 +53,18 @@ helpviewer_keywords:
 - CColumnPrivilegeInfo parameter class
 - m_bIsGrantable
 ms.assetid: 245df365-421f-43c6-9fcd-fb2197c871c6
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1ae6f0d10b3c7dca22ded5a65ac5930258c89ca2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7595d0f945744804b91a62ecfd41c5d2f3d9b165
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccolumnprivileges-ccolumnprivilegeinfo"></a>CColumnPrivileges, CColumnPrivilegeInfo
 Çağrı typedef sınıfı **CColumnPrivileges** parametre sınıfı uygulamak için **Ccolumnprivilegeınfo**.  

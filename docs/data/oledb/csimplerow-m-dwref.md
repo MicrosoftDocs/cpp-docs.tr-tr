@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CSimpleRow.m_dwRef
 - CSimpleRow::m_dwRef
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c115d9366c80dbed27dfd71b8bf808aea4b1c74d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c606621594fd97d1553a46961e5723ede426503b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="csimplerowmdwref"></a>CSimpleRow::m_dwRef
 Varolan bir satır işlemek için başvuru sayısı.  

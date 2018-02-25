@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDynamicStringAccessor.GetString
 - CDynamicStringAccessor::GetString
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9c3ccef4046928be7ce62c845c99538f894bd1b3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7c6a2340ddd0e123720cd59bb2ee0bf8ca58504f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicstringaccessorgetstring"></a>CDynamicStringAccessor::GetString
 Belirtilen sütun verileri dize olarak alır.  

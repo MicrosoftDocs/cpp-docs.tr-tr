@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IOpenRowsetImpl
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: aa59f1a4f8b599cc74cbe824815c65b60e7b6af1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 67f457b4a56d57f33a18473e987fa00b6c10b0df
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl Sınıfı
 Uygulamasını sağlar `IOpenRowset` arabirimi.  

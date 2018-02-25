@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CUtlProps
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: eb15d2574ba60dcec9c0638ca10a465db5813709
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: cdac2b6069e5f72534a304794b65723bef8ceb47
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cutlpropsoninterfacerequested"></a>CUtlProps::OnInterfaceRequested
 Bir tüketici bir yöntem bir nesne oluşturma arabirimleri çağırdığında isteğe bağlı bir arabirim için isteklerini işler.  

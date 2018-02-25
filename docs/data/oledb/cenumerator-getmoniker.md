@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - GetMoniker
 - CEnumerator.GetMoniker
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2c3d845b807de3037c7731174708064939b21b37
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6049dfc14bb6ebe46f173ec07e536102acdebb3c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cenumeratorgetmoniker"></a>CEnumerator::GetMoniker
 Bir bilinen ad dönüştürülebilir dize bileşeninin ayıklamak için görünen ad ayrıştırır.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CRowsetImpl::m_strCommandText
 - CRowsetImpl.m_strCommandText
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7d9aa8ed77a777380d09d96c6bdca503201fe322
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ab527f3473e0df5a3294eb16f77c784f6d1244d6
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetimplmstrcommandtext"></a>CRowsetImpl::m_strCommandText
 Satır kümesinin ilk komut içerir.  

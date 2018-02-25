@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CCommand.ReleaseCommand
 - ReleaseCommand
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8ae8035d25247fc640961f4ce7b5df62467fdf58
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4fdfe9e901b81ee535522f42a54b91393df82af3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccommandreleasecommand"></a>CCommand::ReleaseCommand
 Parametre erişimcisi serbest bırakır ve sonra komut serbest bırakır.  

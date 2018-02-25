@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDBPropIDSet.operator=
 - ATL.CDBPropIDSet.operator=
@@ -27,11 +27,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c79151341fde92ad9335c15b87626ddaf57a56c5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 89ee1bb2007efb4e874672aedeca0c34ad217e85
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdbpropidsetoperator-"></a>CDBPropIDSet::operator =
 Bir özellik kimliği başka bir kimlik özelliği için set içeriğini atar.  

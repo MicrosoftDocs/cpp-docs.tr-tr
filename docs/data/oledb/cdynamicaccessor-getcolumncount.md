@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CDynamicAccessor.GetColumnCount
 - ATL::CDynamicAccessor::GetColumnCount
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 58a8c4c194a9f7de7f487f74eeed5349866b8a52
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: dc6d405a3e2df07f0eb1e74a5d428c49e33e551a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessorgetcolumncount"></a>CDynamicAccessor::GetColumnCount
 Sütun sayısını alır.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDynamicAccessor.GetOrdinal
 - ATL::CDynamicAccessor::GetOrdinal
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2e95532fcf200d92135e1e52a20c5929922e52d4
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 423dd0757123f6c62a3a8f794e04772e370716b7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessorgetordinal"></a>CDynamicAccessor::GetOrdinal
 Bir sütun adı verilen sütun sayısını alır.  

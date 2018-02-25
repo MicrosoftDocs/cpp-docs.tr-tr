@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IDBCreateCommandImpl.CreateCommand
 - CreateCommand
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 38b9c3963c3e491412de85e7c4f72f2e4525c406
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 83566713a42de25fb2c0e515daa94ee61eed53ed
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="idbcreatecommandimplcreatecommand"></a>IDBCreateCommandImpl::CreateCommand
 Yeni bir komut oluşturur ve istenen arabirimi döndürür.  

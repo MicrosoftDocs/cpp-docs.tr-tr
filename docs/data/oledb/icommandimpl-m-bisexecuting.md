@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ICommandImpl.m_bIsExecuting
 - ATL::ICommandImpl::m_bIsExecuting
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fca5bb140d76c6c1dce730539d099d0c2f89443d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fccd78da21233a8b5b033d5b2b6d0e568a1aefb4
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="icommandimplmbisexecuting"></a>ICommandImpl::m_bIsExecuting
 Komut şu anda yürütülmekte olup olmadığını gösterir.  

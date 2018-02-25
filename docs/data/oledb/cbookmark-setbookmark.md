@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CBookmark<0>::SetBookmark
 - ATL.CBookmark<0>.SetBookmark
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b90c99cb1d50c4b5544d47d4a5ea926e53ac2fd5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f6b1f74cc1a7648ac20b3873f69faca8b1707f36
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cbookmarksetbookmark"></a>CBookmark::SetBookmark
 Tarafından başvurulan yer işareti değeri kopyalar `pBuffer` için `CBookmark` arabellek ve arabellek boyutu ayarlar `nSize`.  

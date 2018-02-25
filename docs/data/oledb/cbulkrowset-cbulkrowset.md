@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CBulkRowset<TAccessor>.CBulkRowset
 - ATL::CBulkRowset::CBulkRowset
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 72357f926c9d0eb7902542a75b6d9f42ac3de018
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f174dbcf8be45927eab6821cbd42cced0248b56e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cbulkrowsetcbulkrowset"></a>CBulkRowset::CBulkRowset
 Yeni bir `CBulkRowset` nesne ve varsayılan satır sayısı 10'a ayarlar.  

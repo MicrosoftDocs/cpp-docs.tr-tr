@@ -1,12 +1,13 @@
 ---
-title: "CTableConstraints, Ctableconstraintınfo | Microsoft Docs"
+title: CTableConstraints, CTableConstraintInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szTableSchema
 - CONSTRAINT_TYPE
@@ -25,7 +26,8 @@ f1_keywords:
 - CONSTRAINT_CATALOG
 - CONSTRAINT_SCHEMA
 - IS_DEFERRABLE
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DESCRIPTION class data member
 - CTableConstraints typedef class
@@ -50,18 +52,18 @@ helpviewer_keywords:
 - INITIALLY_DEFERRED
 - m_bIsDeferrable
 ms.assetid: aaa07ade-0bfa-41d0-94df-8342152a4ff0
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 12645df8ba7bf53d562b91917e85797681120f86
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d90307bfea01f203ad61180b87aed418769c3162
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ctableconstraints-ctableconstraintinfo"></a>CTableConstraints, CTableConstraintInfo
 Çağrı typedef sınıfı **CTableConstraints** parametre sınıfı uygulamak için **Ctableconstraintınfo**.  

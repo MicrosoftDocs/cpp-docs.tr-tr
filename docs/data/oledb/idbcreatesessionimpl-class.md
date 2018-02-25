@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IDBCreateSessionImpl
 - ATL.IDBCreateSessionImpl
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 07504eeaa9f46e4618b08be4a572d62a9ecdecef
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4cd7abcc35a7e3bff95c0945069689750c4d55ac
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
 Bir uygulamasını sağlar [IDBCreateSession](https://msdn.microsoft.com/en-us/library/ms724076.aspx) arabirimi.  

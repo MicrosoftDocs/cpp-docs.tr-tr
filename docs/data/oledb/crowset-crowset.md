@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CRowset<TAccessor>::CRowset
 - CRowset.CRowset
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1038ff5de27dd7ba17c48fc2a4159cb33d56022c
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 31f0663b34564a0e69851903a6f519ff99445249
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetcrowset"></a>CRowset::CRowset
 Yeni bir `CRowset` nesne ve (isteğe bağlı olarak) ile ilişkilendirir bir [IRowset](https://msdn.microsoft.com/en-us/library/ms720986.aspx) parametre olarak sağlanan arabirim.  

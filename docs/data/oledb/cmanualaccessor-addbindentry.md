@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CManualAccessor::AddBindEntry
 - ATL.CManualAccessor.AddBindEntry
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5809773a6bcf8523f4b2cce07ca638c57e7c59bc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1e99e9822b60152fc8daa6f101bcca2ea7e60c25
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cmanualaccessoraddbindentry"></a>CManualAccessor::AddBindEntry
 Çıkış sütunlarında bir BIND girdisi ekler.  

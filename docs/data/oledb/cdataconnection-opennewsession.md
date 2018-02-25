@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataConnection.OpenNewSession
 - ATL.CDataConnection.OpenNewSession
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ee1d92178d0bb00e6ef3a760a4f775b7854696d2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 65b20285bc46fddb8002a95ff77ce21c7a1018e5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdataconnectionopennewsession"></a>CDataConnection::OpenNewSession
 Geçerli bağlantı nesnesinin veri kaynağı kullanarak yeni bir oturum açar.  
@@ -45,7 +45,7 @@ HRESULT OpenNewSession(CSession & session) throw();
  `session`  
  [Giriş/Çıkış] Yeni bir oturum nesnesi referansı.  
   
- Açıklamalar  
+ **Açıklamalar**  
  Yeni oturum kendi üst öğesi olarak geçerli bağlantı nesnesinin içerdiği veri kaynağı nesnesi kullanır ve tüm veri kaynağını aynı bilgilerine erişebilir.  
   
 ## <a name="return-value"></a>Dönüş Değeri  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CDynamicParameterAccessor::SetParam
 - ATL::CDynamicParameterAccessor::SetParam<ctype>
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1c6868c9ced5524dcd218d61206c3993ccadd7f8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3fcedc0d54e5b25eb4490425253f6c1bfd139a85
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicparameteraccessorsetparam"></a>CDynamicParameterAccessor::SetParam
 Belirtilen (dize olmayan) verileri kullanarak parametre arabelleği ayarlar.  

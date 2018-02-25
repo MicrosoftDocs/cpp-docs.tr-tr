@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CCatalogs
 - m_szName
 - CCatalogInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DESCRIPTION class data member
 - CCatalogInfo parameter class
@@ -19,18 +21,18 @@ helpviewer_keywords:
 - m_szName
 - m_szDescription
 ms.assetid: 8362cbbd-2f00-4272-8518-fc235c4de193
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9e7a07dedbed853c270f10ddfbbe7f956f8f702b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1d08f384e29399e1f244595088c5b1cbda249138
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccatalogs-ccataloginfo"></a>CCatalogs, CCatalogInfo
 Çağrı typedef sınıfı **CCatalogs** parametre sınıfı uygulamak için **Ccatalogınfo**.  

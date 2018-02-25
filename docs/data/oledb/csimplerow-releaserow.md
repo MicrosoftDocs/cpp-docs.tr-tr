@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CSimpleRow::ReleaseRow
 - CSimpleRow::ReleaseRow
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 38f39c0e08f66d1902950bf0e001c1b7fbd43c89
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ddc11dc0fbdbec917a706f6c1785bc220d4a0db9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="csimplerowreleaserow"></a>CSimpleRow::ReleaseRow
 Satır bir iş parçacığı açısından güvenli şekilde serbest bırakır.  

@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - columns [C++], dynamic column binding
 - dynamic column binding
 - providers [C++], dynamic column binding
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f95dde27d6958bd9f1ad40bc411c7c434634879b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6dbb189e1eb08616c12e927f9247bb1199f269a4
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>Sağlayıcınızdaki Sütunları Dinamik Olarak Bağlama
 Dinamik sütun bağlama gerçekten emin olun. Çünkü gerekebilir:  

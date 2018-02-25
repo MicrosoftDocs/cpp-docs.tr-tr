@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - DEFAULT_CHARACTER_SET_CATALOG
 - DEFAULT_CHARACTER_SET_SCHEMA
@@ -19,7 +20,8 @@ f1_keywords:
 - CSchemata
 - m_szName
 - DEFAULT_CHARACTER_SET_NAME
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - m_szCharName
 - CSchemata typedef class
@@ -33,18 +35,18 @@ helpviewer_keywords:
 - m_szCharCatalog
 - DEFAULT_CHARACTER_SET_SCHEMA
 ms.assetid: 9d06d65a-c27b-446d-bc42-c7e487b0d9c5
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d4f8fe97c1d315ff247ef2799120801995a20cbc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c5bcd0477fe2285f5009aeb04c871f72c564365e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cschemata-cschematainfo"></a>CSchemata, CSchemataInfo
 Çağrı typedef sınıfı **CSchemata** parametre sınıfı uygulamak için **Cschemataınfo**.  

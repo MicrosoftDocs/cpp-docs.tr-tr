@@ -1,12 +1,13 @@
 ---
-title: "CColumns, Ccolumnsınfo | Microsoft Docs"
+title: CColumns, CColumnsInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szDomainSchema
 - CColumns
@@ -59,7 +60,8 @@ f1_keywords:
 - m_bIsNullable
 - COLUMN_HASDEFAULT
 - DATETIME_PRECISION
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - NUMERIC_PRECISION
 - COLUMN_PROPID
@@ -119,18 +121,18 @@ helpviewer_keywords:
 - m_szCharSetSchema
 - COLUMN_DEFAULT
 ms.assetid: 7a4ca8e8-e041-4def-8c1a-00c211f7da0b
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 90ec0d78dc9a95f80dec04141184f5376d0e6556
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 712bfbbcd3fd5440e3e27cdf7d21709c914d7b74
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccolumns-ccolumnsinfo"></a>CColumns, CColumnsInfo
 Çağrı typedef sınıfı **CColumns** parametre sınıfı uygulamak için **Ccolumnsınfo**.  

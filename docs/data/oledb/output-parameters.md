@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - OLE DB, stored procedures
 - stored procedures, calling
@@ -15,18 +17,18 @@ helpviewer_keywords:
 - procedure calls
 - procedure calls, stored procedures
 ms.assetid: 4f7c2700-1c2d-42f3-8c9f-7e83962b2442
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 061766f73b554895f8d7ad8952dc6172fd381169
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 663ff735eea34c53ea56c2cc4f24b4aedf2a3434
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="output-parameters"></a>Çıktı Parametreleri
 Saklı yordam çağırma SQL komutunu çağırmaya benzerdir. Ana saklı yordamlar çıktı parametreleri (veya "outparameters") kullanın ve dönüş değerleri farktır.  

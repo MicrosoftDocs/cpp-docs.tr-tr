@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::IRowsetUpdateImpl::Update
 - IRowsetUpdateImpl::Update
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 98d0fde6c4fddf43cf353018ca7fcafea82a6f6e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b398bcc4d522fdb682778de1088c60c5b3ac63f3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetupdateimplupdate"></a>IRowsetUpdateImpl::Update
 Satırın son getirme veya güncelleştirme yapılan değişiklikler iletir.  

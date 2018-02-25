@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CStatistics
 - m_szTableSchema
@@ -14,7 +15,8 @@ f1_keywords:
 - m_szTableCatalog
 - m_nCardinality
 - m_szTableName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - m_nCardinality
 - m_szTableSchema
@@ -26,18 +28,18 @@ helpviewer_keywords:
 - m_szTableName
 - CStatisticInfo parameter class
 ms.assetid: 5822231c-6963-44a6-ae2f-29aca76e1600
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 57c965c39903d6b089ce19e1f421036c6a5fd042
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d267bbedf1663f7dfc5f31cd102a45c121c77af8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cstatistics-cstatisticinfo"></a>CStatistics, CStatisticInfo
 Çağrı typedef sınıfı **CStatistics** parametre sınıfı uygulamak için **Cstatisticınfo**.  

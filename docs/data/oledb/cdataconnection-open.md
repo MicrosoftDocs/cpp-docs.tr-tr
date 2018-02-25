@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataConnection.Open
 - ATL.CDataConnection.Open
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e7ec082739c132aa881fbfd1818f00f1529e1ed4
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e4b7c7e7efb72f67bf7112848572701e5fee0156
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdataconnectionopen"></a>CDataConnection::Open
 Başlatma dizesi kullanarak bir veri kaynağı için bir bağlantı açar.  

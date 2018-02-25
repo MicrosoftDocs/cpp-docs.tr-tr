@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CSimpleRow::m_iRowset
 - CSimpleRow.m_iRowset
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: adab4f3aa94045e71b91c2254f1b7ef5353afe86
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 2fdeb6c93037a1649132366e3b63b89d0cbb7990
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="csimplerowmirowset"></a>CSimpleRow::m_iRowset
 İmleç temsil eden satır dizini.  

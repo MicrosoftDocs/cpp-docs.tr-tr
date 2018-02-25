@@ -1,12 +1,13 @@
 ---
-title: "CUsagePrivileges, Cusageprivilegeınfo | Microsoft Docs"
+title: CUsagePrivileges, CUsagePrivilegeInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szObjectCatalog
 - CUsagePrivilegeInfo
@@ -25,7 +26,8 @@ f1_keywords:
 - m_szObjectName
 - m_szGrantee
 - OBJECT_TYPE
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - OBJECT_NAME
 - GRANTOR
@@ -45,18 +47,18 @@ helpviewer_keywords:
 - m_bIsGrantable
 - m_szObjectName
 ms.assetid: 09460e7f-3947-4837-ad1e-407b94acedb8
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ae759b77aa5e95eda7334cea1357e8882667aba9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: b5db871447d6de6554d7f7e6a555c195edc97498
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cusageprivileges-cusageprivilegeinfo"></a>CUsagePrivileges, CUsagePrivilegeInfo
 Çağrı typedef sınıfı **CUsagePrivileges** parametre sınıfı uygulamak için **Cusageprivilegeınfo**.  

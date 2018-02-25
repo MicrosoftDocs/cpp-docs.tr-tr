@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szTableSchema
 - m_szConstraintCatalog
@@ -26,7 +27,8 @@ f1_keywords:
 - CONSTRAINT_CATALOG
 - CONSTRAINT_SCHEMA
 - m_szConstraintName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COLUMN_PROPID
 - ORDINAL_POSITION
@@ -51,18 +53,18 @@ helpviewer_keywords:
 - COLUMN_GUID
 - m_guidColumn
 ms.assetid: 40525a4f-a9cf-4e9f-886d-8a6ddd18a3d6
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e9322a43ba183f9c7378633cca089eb498476d28
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ab29aa12a38058611af3b593393e908cdc9a4ea5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ckeycolumns-ckeycolumninfo"></a>CKeyColumns, CKeyColumnInfo
 Çağrı typedef sınıfı **CKeyColumns** parametre sınıfı uygulamak için **Ckeycolumnınfo**.  

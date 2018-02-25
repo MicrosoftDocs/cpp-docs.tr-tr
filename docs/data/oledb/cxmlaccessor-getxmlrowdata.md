@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CXMLAccessor::GetXMLRowData
 - ATL.CXMLAccessor.GetXMLRowData
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b4b0307b649b702ad78ddb90d9985e14df2331b1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 2e356be7a5ab7c125dc92a822384a3e6b02b8f8e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cxmlaccessorgetxmlrowdata"></a>CXMLAccessor::GetXMLRowData
 Bir tablonun tüm içeriği satır XML biçimli dize verilerini alır.  

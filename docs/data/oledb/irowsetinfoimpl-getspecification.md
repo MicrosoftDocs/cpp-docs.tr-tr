@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IRowsetInfoImpl::GetSpecification
 - ATL.IRowsetInfoImpl.GetSpecification
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2be1e3d6d787995b12954bb66665f6918e667569
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0d740431452dd37de9cd361e524b45d99a6325f3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetinfoimplgetspecification"></a>IRowsetInfoImpl::GetSpecification
 Arabirim işaretçisi bu satır kümesini oluşturan nesnede (komut veya oturum) döndürür.  

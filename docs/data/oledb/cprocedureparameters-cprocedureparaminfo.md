@@ -1,12 +1,13 @@
 ---
-title: "CProcedureParameters Cprocedureparamınfo | Microsoft Docs"
+title: CProcedureParameters CProcedureParamInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szDefault
 - CProcedureParameters
@@ -31,7 +32,8 @@ f1_keywords:
 - m_nType
 - m_bIsNullable
 - m_nScale
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - NUMERIC_PRECISION
 - DATA_TYPE
@@ -59,18 +61,18 @@ helpviewer_keywords:
 - m_nScale
 - CHARACTER_MAXIMUM_LENGTH
 ms.assetid: 61f8d55a-684a-47a3-b102-068cc3f52d84
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d3f4a28a882a9de9bdb3630ebc2bb7d2adda48c7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1040f3a02af60afda8796ba241922d691068a5ea
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cprocedureparameters-cprocedureparaminfo"></a>CProcedureParameters CProcedureParamInfo
 Çağrı typedef sınıfı **CProcedureParameters** parametre sınıfı uygulamak için **Cprocedureparamınfo**.  
@@ -87,7 +89,7 @@ ms.lasthandoff: 12/21/2017
 |m_szCatalog|PROCEDURE_CATALOG|  
 |m_szSchema|PROCEDURE_SCHEMA|  
 |m_szName|PROCEDURE_NAME|  
-|m_szParameterName|PARAMETRE_ADÝ|  
+|m_szParameterName|PARAMETER_NAME|  
 |m_nOrdinalPosition|ORDINAL_POSITION|  
 |m_nType|PARAMETER_TYPE|  
 |m_bHasDefault|PARAMETER_HASDEFAULT|  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataSource::OpenFromFileName
 - ATL::CDataSource::OpenFromFileName
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f2d46bbec50bd221115f5645a7dec867900a006a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a5ff7df5d0490910a7198fa8a1f2560b98a8570d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdatasourceopenfromfilename"></a>CDataSource::OpenFromFileName
 Kullanıcı tarafından sağlanan dosya adıyla belirtilen dosyadan bir veri kaynağı açar.  

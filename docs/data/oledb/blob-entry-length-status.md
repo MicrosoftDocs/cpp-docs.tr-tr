@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - BLOB_ENTRY_LENGTH_STATUS
 dev_langs:
@@ -22,11 +22,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b3170371682471204fd3c59997d630642bf3cd6b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6fe176d984937a39a3f76981f57388a69f21c0f9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="blobentrylengthstatus"></a>BLOB_ENTRY_LENGTH_STATUS
 İle kullanılan `BEGIN_COLUMN_MAP` ve `END_COLUMN_MAP` ikili büyük nesne bağlamak için ([BLOB](https://msdn.microsoft.com/en-us/library/ms711511.aspx)). Benzer şekilde [BLOB_ENTRY](../../data/oledb/blob-entry.md)dışında bu makrosu uzunluğu ve BLOB sütun durumunu alır.  

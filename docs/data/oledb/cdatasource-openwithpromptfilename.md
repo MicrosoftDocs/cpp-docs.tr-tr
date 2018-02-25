@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataSource.OpenWithPromptFileName
 - OpenWithPromptFileName
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: abaf78245dabff8349795fbd8cb7ab38b32c4978
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 32ced33ad4fd0cd7be99502594720949c4e08310
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdatasourceopenwithpromptfilename"></a>CDataSource::OpenWithPromptFileName
 Bu yöntem kullanıcıdan bir iletişim kutusu, sonra kullanıcı tarafından belirtilen dosyası kullanarak bir veri kaynağı açar.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CBulkRowset.MoveToRatio
 - ATL::CBulkRowset::MoveToRatio
@@ -29,11 +29,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e680a7e562aaf3e0b1fcb1ee33ea0eb558f62069
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 675d2ec6c9a43e7f5b17acdb0c546e003fd5e986
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cbulkrowsetmovetoratio"></a>CBulkRowset::MoveToRatio
 Satır satır kümesindeki bir kesir konumundan başlayarak getirir.  

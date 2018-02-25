@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - GetNextRows
 - ATL.IRowsetImpl.GetNextRows
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 241a54bebd049122a04dbd07d9c0e69be26103b0
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fee6e2a1b6b7111d193f4a22c9d70bd0beb5df37
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetimplgetnextrows"></a>IRowsetImpl::GetNextRows
 Satırları ardışık olarak önceki konumdan hatırlamak getirir.  

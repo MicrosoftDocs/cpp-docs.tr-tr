@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - INITIAL_SIZE
 - NULL_COLLATION
@@ -47,7 +48,8 @@ f1_keywords:
 - CIndexes
 - INDEX_SCHEMA
 - CIndexInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COLUMN_PROPID
 - ORDINAL_POSITION
@@ -92,18 +94,18 @@ helpviewer_keywords:
 - m_nFillFactor
 - m_szIndexSchema
 ms.assetid: 592fa773-fd23-4332-8d47-d76101f9ddd7
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c051e233c15959f71d57fa6eef1e398257b6d51f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45dfe5a5267926214f98bba643775e93f4a2d7fb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cindexes-cindexinfo"></a>CIndexes, CIndexInfo
 Çağrı typedef sınıfı **Cındexes** parametre sınıfı uygulamak için **Cındexınfo**.  
@@ -124,7 +126,7 @@ ms.lasthandoff: 12/21/2017
 |m_szIndexSchema|INDEX_SCHEMA|  
 |m_szIndexName|INDEX_NAME|  
 |m_bPrimaryKey|PRIMARY_KEY|  
-|m_bUnique|BENZERSİZ|  
+|m_bUnique|UNIQUE|  
 |m_bClustered|CLUSTERED|  
 |m_nType|TÜRÜ|  
 |m_nFillFactor|FILL_FACTOR|  

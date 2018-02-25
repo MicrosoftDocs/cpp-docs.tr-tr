@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CDynamicAccessor.SetValue
 - ATL::CDynamicAccessor::SetValue
@@ -28,11 +28,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2227564d321ca3c5c590c11fca52b906ebc911ca
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c919c5ec9605f65df9a20bf5ccad03ae2bf2761c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessorsetvalue"></a>CDynamicAccessor::SetValue
 Belirtilen sütun için veri depolar.  

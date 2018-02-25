@@ -1,12 +1,13 @@
 ---
-title: "CCheckConstraints, Ccheckconstraintınfo | Microsoft Docs"
+title: CCheckConstraints, CCheckConstraintInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CCheckConstraintInfo
 - CHECK_CONSTRAINTS
@@ -19,7 +20,8 @@ f1_keywords:
 - m_szName
 - CONSTRAINT_CATALOG
 - CONSTRAINT_SCHEMA
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DESCRIPTION class data member
 - m_szSchema
@@ -35,18 +37,18 @@ helpviewer_keywords:
 - m_szCheckClause
 - CHECK_CONSTRAINTS
 ms.assetid: e53e79a5-01e5-42b7-aa8c-164aec94b011
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0741db31ba0b509a1ed2788bace5d99f8eed4faf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: eda7e2c7f07a0d61c3a7add9ebf7f8f5f03e5bbf
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccheckconstraints-ccheckconstraintinfo"></a>CCheckConstraints, CCheckConstraintInfo
 Çağrı typedef sınıfı **CCheckConstraints** parametre sınıfı uygulamak için **Ccheckconstraintınfo**.  

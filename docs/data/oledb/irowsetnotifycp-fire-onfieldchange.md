@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - Fire_OnFieldChange
 - ATL::IRowsetNotifyCP::Fire_OnFieldChange
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d0b62dfc1e2ffac89237abe22dce9b6d976342a9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3d6cfdfdc17a795f25685504dab0e23ee11b164f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetnotifycpfireonfieldchange"></a>IRowsetNotifyCP::Fire_OnFieldChange
 Yayınlar bir [OnFieldChange](https://msdn.microsoft.com/en-us/library/ms715961.aspx) tüketicilere bir sütunun değeri bir değişiklik, olay.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CEnumeratorAccessor::m_szDescription
 - CEnumeratorAccessor.m_szDescription
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5032e813beffb226d9b896b028e7ce4d8e253ea7
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ea32afd60fbcad2735381f78082342bad2d8be95
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cenumeratoraccessormszdescription"></a>CEnumeratorAccessor::m_szDescription
 Veri kaynağı veya numaralandırıcı açıklaması.  

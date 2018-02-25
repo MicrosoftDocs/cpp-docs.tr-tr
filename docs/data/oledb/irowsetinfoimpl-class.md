@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.IRowsetInfoImpl
 - IRowsetInfoImpl
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 659d3d55635f957ffab2893f2a042564d62abad1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a451302920fa94d8bc1224df4c9ad432ed9dc896
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl Sınıfı
 Bir uygulamasını sağlar [IRowsetInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx) arabirimi.  

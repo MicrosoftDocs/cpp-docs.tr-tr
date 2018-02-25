@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::IDBCreateCommandImpl
 - IDBCreateCommandImpl
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fef39ffcb674141795ad927267fb45743ffb6e5e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3a4e5d676c004c7439b58631e87fbe0ac1e1af22
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="idbcreatecommandimpl-class"></a>IDBCreateCommandImpl Sınıfı
 Bir uygulamasını sağlar [IDBCreateCommand](https://msdn.microsoft.com/en-us/library/ms711625.aspx) arabirimi.  

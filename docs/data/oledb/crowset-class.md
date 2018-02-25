@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CRowset<TAccessor>
 - CRowset
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ef4ec2851365d9fbabab6819a0883b6a9b660f28
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0774c82715ab2fd85098147ebe1697daf7d2d2fa
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowset-class"></a>CRowset Sınıfı
 OLE DB satır kümesi nesnesi ve birkaç ilgili yalıtır arabirimleri ve satır kümesi veri işleme yöntemlerini sağlar.  

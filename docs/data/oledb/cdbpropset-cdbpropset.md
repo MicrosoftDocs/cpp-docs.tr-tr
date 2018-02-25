@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDBPropSet.CDBPropSet
 - CDBPropSet::CDBPropSet
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b497d7cea1ec7052bb20463f40d466300a9b7ab6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: db118c9c814d957c43f11414ee583a2ccc7a416b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdbpropsetcdbpropset"></a>CDBPropSet::CDBPropSet
 Oluşturucu. Başlatır **rgProperties**, **cProperties**, ve **guidPropertySet** alanlarının [DBPROPSET](https://msdn.microsoft.com/en-us/library/ms714367.aspx) yapısı.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDBPropIDSet.AddPropertyID
 - CDBPropIDSet::AddPropertyID
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 72638eba17be85fe444bcb6874fe42e527074fd2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 30e4d3c77f97b4e680e4cdd5291639b69a3cd363
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdbpropidsetaddpropertyid"></a>CDBPropIDSet::AddPropertyID
 Özellik kimliği özellik kimliği kümesine ekler.  

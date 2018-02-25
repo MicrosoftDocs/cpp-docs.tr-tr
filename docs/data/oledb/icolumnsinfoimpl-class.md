@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.IColumnsInfoImpl<T>
 - ATL::IColumnsInfoImpl
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e1bdb33ce62e45ba2f18f7eac2b501d4120ca9a6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e775e0836d27cf055990a2e9bc3bf2f07e61225e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl Sınıfı
 Bir uygulamasını sağlar [IColumnsInfo](https://msdn.microsoft.com/en-us/library/ms724541.aspx) arabirimi.  

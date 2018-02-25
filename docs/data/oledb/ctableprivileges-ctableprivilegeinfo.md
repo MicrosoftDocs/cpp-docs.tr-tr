@@ -1,12 +1,13 @@
 ---
-title: "CTablePrivileges, Ctableprivilegeınfo | Microsoft Docs"
+title: CTablePrivileges, CTablePrivilegeInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szCatalog
 - m_bIsGrantable
@@ -20,7 +21,8 @@ f1_keywords:
 - CTablePrivilegeInfo
 - m_szName
 - m_szGrantee
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - GRANTOR
 - CTablePrivilegeInfo parameter class
@@ -38,18 +40,18 @@ helpviewer_keywords:
 - GRANTEE
 - m_bIsGrantable
 ms.assetid: ffcd6f73-022e-452a-8342-f2b9362d256b
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4af4debc152e2c1c84dcfd1fbd7f4950922fa7df
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 89ff02138ae85bebbc9b6f7a1a32ef449c8ad0a8
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ctableprivileges-ctableprivilegeinfo"></a>CTablePrivileges, CTablePrivilegeInfo
 Çağrı typedef sınıfı **CTablePrivileges** parametre sınıfı uygulamak için **Ctableprivilegeınfo**.  

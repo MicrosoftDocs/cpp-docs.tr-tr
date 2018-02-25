@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_nOrdinal
 - m_szPKColumnName
@@ -33,7 +34,8 @@ f1_keywords:
 - FK_COLUMN_GUID
 - m_szFKTableName
 - CForeignKeys
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - m_szPKTableCatalog
 - FK_COLUMN_GUID
@@ -61,18 +63,18 @@ helpviewer_keywords:
 - m_guidPKColumn
 - FK_TABLE_NAME
 ms.assetid: 1c401a4a-0827-4255-9214-bc893e1cd79d
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 04023bbc7e8871b9b2c43b63171fd42ec90d1340
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e31251156e84a6befec036f9e27c45f3aba1d895
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cforeignkeys-cforeignkeysinfo"></a>CForeignKeys, CForeignKeysInfo
 Çağrı typedef sınıfı **CForeignKeys** parametre sınıfı uygulamak için **Cforeignkeysınfo**.  

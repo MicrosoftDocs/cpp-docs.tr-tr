@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - GetDataSource
 - IGetDataSourceImpl.GetDataSource
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7a41d6600fc48c530e79a7a2632752e35211becc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a30f2030dc6a1e45836d0a50aebf7a722f950bf3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="igetdatasourceimplgetdatasource"></a>IGetDataSourceImpl::GetDataSource
 Arabirim işaretçisi oturum oluşturduğunuz veri kaynağı nesnesi döndürür.  

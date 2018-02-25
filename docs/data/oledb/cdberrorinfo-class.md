@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDBErrorInfo
 - ATL::CDBErrorInfo
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 26ed1bdaff6746e74029111dae0ce1abc0ea7493
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ae65a1a04d5befdfcd22327def8f60d96c9d4cff
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo Sınıfı
 OLE DB kullanarak OLE DB hata işleme için destek sağlar [IErrorRecords](https://msdn.microsoft.com/en-us/library/ms718112.aspx) arabirimi.  

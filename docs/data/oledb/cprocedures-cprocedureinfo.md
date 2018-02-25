@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CProcedures
 - m_szCatalog
@@ -15,7 +16,8 @@ f1_keywords:
 - m_szDefinition
 - m_szName
 - m_nType
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DESCRIPTION class data member
 - m_szSchema
@@ -27,18 +29,18 @@ helpviewer_keywords:
 - m_szDefinition
 - CProcedures typedef class
 ms.assetid: d0c7375e-ee0c-441d-aae6-6108150860a0
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 66cf60f5697c9fea951dd167256cab83e71ce003
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ac55323f3c3ed22c1cb90fdd2c2eb848b0fb9cd1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cprocedures-cprocedureinfo"></a>CProcedures, CProcedureInfo
 Çağrı typedef sınıfı **CProcedures** parametre sınıfı uygulamak için **Cprocedureınfo**.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CSimpleRow::AddRefRow
 - AddRefRow
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: be6eee2307cecb9ff5fd34c883a6d3921db69238
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e7be4877ea67fe9aa55488eea6e0bf1f1809a4db
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="csimplerowaddrefrow"></a>CSimpleRow::AddRefRow
 Bir başvuru sayısı bir iş parçacığı açısından güvenli şekilde var olan bir satır tanıtıcı ekler.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CRowset::GetApproximatePosition
 - ATL::CRowset<TAccessor>::GetApproximatePosition
@@ -28,11 +28,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 07d0f816579fb7097389d676e241143d4891677d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ae92a7734c3b6f763ab4d6731e1cb8ff5222c676
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetgetapproximateposition"></a>CRowset::GetApproximatePosition
 Yaklaşık bir yer işaretine karşılık gelen bir satır konumunu döndürür.  

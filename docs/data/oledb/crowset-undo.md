@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CRowset.Undo
 - ATL::CRowset<TAccessor>::Undo
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 505efd2ede7a436d56f32fcc1915f8c18b9a8b55
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a9a6f8879982d36728dbeea3437cd2800afc53b5
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetundo"></a>CRowset::Undo
 Bir satır için son fetch itibaren yapılan tüm değişiklikler geri alır veya [güncelleştirme](../../data/oledb/crowset-update.md).  

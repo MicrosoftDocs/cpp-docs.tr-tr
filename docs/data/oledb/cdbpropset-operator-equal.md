@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDBPropSet.operator=
 - ATL::CDBPropSet::operator=
@@ -27,11 +27,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 69c88258cd1d38798277f44786e8b873a3f50c1b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ea8f4543ccd90167abd21ce85669bda947bd961d
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdbpropsetoperator-"></a>CDBPropSet::operator =
 Bir özellik için başka bir özellik kümesi içeriğini atar.  

@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.IRowsetInfoImpl.GetProperties
 - IRowsetInfoImpl.GetProperties
@@ -26,11 +26,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dabc35cbf7a711285ce1ff19a2d32999564dc663
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5d403a999c9882087f61dede2c648c6501ba4161
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="irowsetinfoimplgetproperties"></a>IRowsetInfoImpl::GetProperties
 Özellikler için geçerli ayarları döndürür **DBPROPSET_ROWSET** grubu.  

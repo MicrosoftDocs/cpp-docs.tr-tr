@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CDynamicAccessor
 - ATL::CDynamicAccessor
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: eb9bd08cb51a90f2bd616efcace8a66625e66827
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1f07ceae02c9c243f59f37ea49e77ef3113b5a54
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor Sınıfı
 Veritabanı şeması (veritabanının temel yapısı) olanağıyla varsa, bir veri kaynağına erişim sağlar.  

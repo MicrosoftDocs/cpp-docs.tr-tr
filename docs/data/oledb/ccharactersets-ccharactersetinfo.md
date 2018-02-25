@@ -1,12 +1,13 @@
 ---
-title: "CCharacterSets, Ccharactersetınfo | Microsoft Docs"
+title: CCharacterSets, CCharacterSetInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - m_szCollateName
 - m_szCatalog
@@ -26,7 +27,8 @@ f1_keywords:
 - CCharacterSetInfo
 - m_nNumCharacters
 - m_szName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DEFAULT_COLLATE_SCHEMA
 - m_nNumCharacters
@@ -47,18 +49,18 @@ helpviewer_keywords:
 - CHARACTER_SET_SCHEMA
 - CHARACTER_SET_CATALOG
 ms.assetid: 029d068c-8bb2-4fc0-8709-78ce7f74446e
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 41945cbb34c8e984922d46671b591426d94067cd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 532e988be4a76784a2b81e8b96c302dfb9d7e98c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccharactersets-ccharactersetinfo"></a>CCharacterSets, CCharacterSetInfo
 Çağrı typedef sınıfı **CCharacterSets** parametre sınıfı uygulamak için **Ccharactersetınfo**.  

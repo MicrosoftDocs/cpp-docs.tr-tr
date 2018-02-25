@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CCommand
 - CCommand
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5ec786bff30745a986ecc643cd42f0d8975b0ccf
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
-ms.translationtype: HT
+ms.openlocfilehash: f4c53d7b27c98e0509cd434bf6eac2412b9c1a1a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ccommand-class"></a>CCommand Sınıfı
 Ayarlama ve bir komut yürütmek için yöntemler sağlar.  

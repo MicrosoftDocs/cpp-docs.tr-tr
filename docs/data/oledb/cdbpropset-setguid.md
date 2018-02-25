@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL.CDBPropSet.SetGUID
 - CDBPropSet.SetGUID
@@ -27,11 +27,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: eb5cc212cde26481c8bdc08da660a25d8dea7a79
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: edf9720e0f116060a06ffa56bf5c3e6c4c8691e1
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdbpropsetsetguid"></a>CDBPropSet::SetGUID
 Ayarlar **guidPropertySet** alanındaki **DBPROPSET** yapısı.  

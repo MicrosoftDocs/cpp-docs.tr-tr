@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,11 +21,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 89f67a5be8ba68ef75a2c13fdbfb8c812812fcb3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f63e13b36f723decab9c5886b0523454d7c26fd7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="modifying-the-inheritance-of-rmyproviderrowset"></a>RMyProviderRowset Devralmayı Değiştirme
 Eklemek için `IRowsetLocate` arabirim basit salt okunur sağlayıcı örneği, devralma Değiştir **RMyProviderRowset**. Başlangıçta, **RMyProviderRowset** devraldığı `CRowsetImpl`. Devralınan şekilde değiştirmenize gerek **CRowsetBaseImpl**.  

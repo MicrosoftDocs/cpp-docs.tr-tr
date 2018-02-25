@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CRowsetImpl.m_rgRowData
 - CRowsetImpl::m_rgRowData
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 66cc8b01d67b6a5193cd94be74425e66a3f352d6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ecb6cb3b8bb840cb75a91f0e5674e4bab5c0dc67
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="crowsetimplmrgrowdata"></a>CRowsetImpl::m_rgRowData
 Varsayılan olarak, bir `CAtlArray` kullanıcı kayıt şablonu bağımsız değişkeni üzerinde templatizes `CRowsetImpl`.  

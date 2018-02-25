@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CDynamicAccessor::Close
 - ATL.CDynamicAccessor.Close
@@ -25,11 +25,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7fb83230b3dda03ee179872d34cf2515ac5d1f2a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 667a9193107f288e91c2fb7a54c7b35e8aa38c96
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdynamicaccessorclose"></a>CDynamicAccessor::Close
 Tüm sütunları bağlantısını keser, ayrılan belleği serbest bırakır ve serbest [IAccessor](https://msdn.microsoft.com/en-us/library/ms719672.aspx) sınıfında arabirim işaretçisi.  

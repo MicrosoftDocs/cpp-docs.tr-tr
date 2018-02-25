@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CArrayRowset<TAccessor>.Snapshot
 - ATL::CArrayRowset::Snapshot
@@ -30,11 +30,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c816010cb85c841ccc757059849b8e097b7deb93
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6ff3c12563ea3b7d3fd3c86e549686e36c818591
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="carrayrowsetsnapshot"></a>CArrayRowset::Snapshot
 Tüm satır bir görüntü veya bunu anlık görüntü oluşturma belleğe okur.  

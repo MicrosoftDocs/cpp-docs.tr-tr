@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - data [C++], fetching
 - rowsets [C++], fetching
 - fetching
 - OLE DB consumer templates [C++], fetching data
 ms.assetid: b07f747f-9855-4f27-a03d-b1d5b10fa284
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: b18847666d4f0f57d23e9b179e3e186a1b3ff736
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1741f761db47154e6b1e151c6a4a3fa9788e7ad2
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="fetching-data"></a>Veri Getirme
 Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Kullanmakta olduğunuz erişimcisi türüne bağlı olarak, sütunları bağlamak gerekebilir.  

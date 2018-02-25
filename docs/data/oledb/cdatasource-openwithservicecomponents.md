@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CDataSource::OpenWithServiceComponents
 - OpenWithServiceComponents
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 54cc2c2b39a661f024c60e90dbf3a33aaa179e9f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0967888557d1a62952e0d1f0c23ee83b7d03550b
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdatasourceopenwithservicecomponents"></a>CDataSource::OpenWithServiceComponents
 Hizmet bileşenleri oledb32.dll kullanarak bir veri kaynağı nesnesi açar.  

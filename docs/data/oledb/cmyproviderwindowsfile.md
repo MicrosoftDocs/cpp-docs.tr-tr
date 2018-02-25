@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - cmyproviderwindowsfile
 dev_langs:
@@ -23,11 +23,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e0ac247c418efa7800eeef469ecf54da75f5b15c
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5f9549dc81529f4c045a0f27a169516070a09900
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cmyproviderwindowsfile"></a>CMyProviderWindowsFile
 Sihirbaz, bir satır veri içeren sınıf oluşturur; Bu durumda, adlı `CMyProviderWindowsFile`. Aşağıdaki kod `CMyProviderWindowsFile` oluşturulan Sihirbazı'nı ve bir dizindeki tüm dosyaları kullanarak listeleri **WIN32_FIND_DATA** yapısı. `CMyProviderWindowsFile` öğesinden devralınan **WIN32_FIND_DATA** yapısı:  

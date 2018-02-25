@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,11 +20,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: a61de0a4621f6f9387da23093f9f450749129ac3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ffc6a92f8fc4e4223e83c3270e28ae68ddc1829a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="creating-a-consumer-without-using-a-wizard"></a>Sihirbaz Kullanmadan bir Tüketici Oluşturma
 Aşağıdaki örnek, varolan bir ATL projesine OLE DB tüketici desteği ekleme varsayar. OLE DB tüketici desteği, MFC Uygulama eklemek istiyorsanız, tüm destek gerekli oluşturan ve MFC yordamları uygulamasını çalıştırmak gerekli çağırır MFC Uygulama Sihirbazı çalıştırmanız gerekir.  

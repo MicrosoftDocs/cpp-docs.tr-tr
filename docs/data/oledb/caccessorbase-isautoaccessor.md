@@ -7,7 +7,7 @@ ms.suite:
 ms.technology:
 - cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - IsAutoAccessor
 - CAccessorBase.IsAutoAccessor
@@ -24,11 +24,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 168956019b419f80e8d630e58960b9ba2d07a761
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 304727142b6a3afb293b33c01746743118fa3a64
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="caccessorbaseisautoaccessor"></a>CAccessorBase::IsAutoAccessor
 Veri taşıma işlemi sırasında otomatik olarak için erişimci alınır, true döndürür.  

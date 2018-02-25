@@ -1,12 +1,13 @@
 ---
-title: "CConstraintTableUsage, Cconstrainttableusageınfo | Microsoft Docs"
+title: CConstraintTableUsage, CConstraintTableUsageInfo | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - CConstraintTableUsageInfo
 - CONSTRAINT_TABLE_USAGE
@@ -20,7 +21,8 @@ f1_keywords:
 - CONSTRAINT_SCHEMA
 - CConstraintTableUsage
 - m_szConstraintName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CConstraintTableUsage typedef class
 - m_szConstraintCatalog
@@ -38,18 +40,18 @@ helpviewer_keywords:
 - m_szTableName
 - m_szConstraintSchema
 ms.assetid: 666b44de-3922-4c5e-ad17-d5ea27120174
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bf806ac79d74a3ce0ba265722a1633854d925778
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 463feaa2507e4ba3dbed8de6106091d1ea02d74e
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cconstrainttableusage-cconstrainttableusageinfo"></a>CConstraintTableUsage, CConstraintTableUsageInfo
 Çağrı typedef sınıfı **CConstraintTableUsage** parametre sınıfı uygulamak için **Cconstrainttableusageınfo**.  
