@@ -4,35 +4,38 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ATL::CDataConnection
 - ATL.CDataConnection
 - CDataConnection
-dev_langs: C++
-helpviewer_keywords: CDataConnection class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDataConnection class
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 65e147366ecb7120a9dd2a98cde0c812d02582da
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2c8e405b95543d170a4e94e39626e9b9793791c7
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="cdataconnection-class"></a>CDataConnection Sınıfı
 Veri kaynağı ile bağlantı yönetir.  
   
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 class CDataConnection  
 ```  
   
@@ -59,7 +62,7 @@ class CDataConnection
 |[işleç CSession *](../../data/oledb/cdataconnection-operator-csession-star.md)|İşaretçi içerdiği için döndüren `CSession` nesnesi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDataConnection`gerekli nesneleri (veri kaynağı ve oturum) ve bir veri kaynağına bağlanırken gerçekleştirmeniz gereken iş bazıları yalıtır çünkü istemciler oluşturmak için yararlı bir sınıf  
+ `CDataConnection` gerekli nesneleri (veri kaynağı ve oturum) ve bir veri kaynağına bağlanırken gerçekleştirmeniz gereken iş bazıları yalıtır çünkü istemciler oluşturmak için yararlı bir sınıf  
   
  Olmadan `CDataConnection`, oluşturmak zorunda bir `CDataSource` nesne, çağrı kendi [OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md) yöntemi, bir örneğini oluşturmak bir [CSession](../../data/oledb/csession-class.md) nesne, çağrı kendi [ Açık](../../data/oledb/csession-open.md) yöntemi, ardından oluşturun bir [CCommand](../../data/oledb/ccommand-class.md) nesne ve çağrı kendi **açık*** yöntemleri.  
   
