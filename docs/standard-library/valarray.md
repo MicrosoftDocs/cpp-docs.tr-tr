@@ -4,23 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: <valarray>
-dev_langs: C++
-helpviewer_keywords: valarray header
+ms.topic: reference
+f1_keywords:
+- <valarray>
+dev_langs:
+- C++
+helpviewer_keywords:
+- valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 917dfbf870959b6934eaa49cbaab05e27304fb77
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 18cc075c2acb4b15c4131aa1926775d63d34928f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 Şablon sınıfı valarray ve çok sayıda destekleyici şablon sınıfları ve işlevleri tanımlar.  
@@ -39,11 +44,11 @@ ms.lasthandoff: 12/21/2017
   
 |||  
 |-|-|  
-|[Abs](../standard-library/valarray-functions.md#abs)|Öğeleri girdi valarray öğelerini mutlak değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
-|[ACOS](../standard-library/valarray-functions.md#acos)|Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
+|[abs](../standard-library/valarray-functions.md#abs)|Öğeleri girdi valarray öğelerini mutlak değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
+|[acos](../standard-library/valarray-functions.md#acos)|Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[asin](../standard-library/valarray-functions.md#asin)|Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[atan](../standard-library/valarray-functions.md#atan)|Öğeleri girdi valarray öğelerini arktanjantını asıl değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
-|[ATAN2](../standard-library/valarray-functions.md#atan2)|Öğeleri arktanjantını Kartezyen için eşit olan bir valarray sabitler birleşimi ve valarrays öğeleri tarafından belirtilen bileşenleri döndürür.|  
+|[atan2](../standard-library/valarray-functions.md#atan2)|Öğeleri arktanjantını Kartezyen için eşit olan bir valarray sabitler birleşimi ve valarrays öğeleri tarafından belirtilen bileşenleri döndürür.|  
 |[cos](../standard-library/valarray-functions.md#cos)|Öğeleri girdi valarray öğelerini kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[COSH](../standard-library/valarray-functions.md#cosh)|Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[exp](../standard-library/valarray-functions.md#exp)|Öğeleri girdi valarray öğelerinin üstel doğal eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
@@ -51,9 +56,9 @@ ms.lasthandoff: 12/21/2017
 |[log10](../standard-library/valarray-functions.md#log10)|Öğeleri temel 10 veya ortak logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[POW](../standard-library/valarray-functions.md#pow)|Giriş valarrays ve öğeleri bir temel eşit olan bir valarray herhangi bir giriş valarray öğeler tarafından belirtilen veya bir üssü bir sabit ya da bir giriş valarray öğeler tarafından belirtilen döndürme sabitleri öğelerde çalışır veya sabiti.|  
 |[sin](../standard-library/valarray-functions.md#sin)|Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
-|[SİNH](../standard-library/valarray-functions.md#sinh)|Öğeleri girdi valarray öğelerini hiperbolik sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
-|[Sqrt](../standard-library/valarray-functions.md#sqrt)|Öğeleri karekökünü giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
-|[değiştirme](../standard-library/valarray-functions.md#swap)||  
+|[sinh](../standard-library/valarray-functions.md#sinh)|Öğeleri girdi valarray öğelerini hiperbolik sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
+|[sqrt](../standard-library/valarray-functions.md#sqrt)|Öğeleri karekökünü giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
+|[Değiştirme](../standard-library/valarray-functions.md#swap)||  
 |[tan](../standard-library/valarray-functions.md#tan)|Öğeleri girdi valarray öğelerini tanjantını eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
 |[TANH](../standard-library/valarray-functions.md#tanh)|Öğeleri girdi valarray öğelerini hiperbolik tanjantını eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.|  
   
@@ -62,23 +67,23 @@ ms.lasthandoff: 12/21/2017
 |||  
 |-|-|  
 |[operator!=](../standard-library/valarray-operators.md#op_neq)|İki eşit boyutta valarrays karşılık gelen öğelerini eşit olmayan veya olup olmadığını bir valarray tüm öğeleri eşit olup olmadığını sınar valarray's öğe türü belirtilen değeri.|  
-|[operator %](../standard-library/valarray-operators.md#op_mod)|Karşılık gelen öğeleri iki eşit boyutta valarrays veya belirtilen bir değerle valarray's öğesi türünde veya valarray tarafından belirtilen değere bölerek bir valarray ayırma ayırma kalan alır.|  
+|[operator%](../standard-library/valarray-operators.md#op_mod)|Karşılık gelen öğeleri iki eşit boyutta valarrays veya belirtilen bir değerle valarray's öğesi türünde veya valarray tarafından belirtilen değere bölerek bir valarray ayırma ayırma kalan alır.|  
 |[operator &](../standard-library/valarray-operators.md#op_amp)|Bit düzeyinde edinir **ve** veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
 |[operator & &](../standard-library/valarray-operators.md#op_amp_amp)|Mantıksal edinir **ve** bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.|  
-|[operator >](../standard-library/valarray-operators.md#op_gt)|Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri sıfırdan büyük veya valarray's öğe türünün belirtilen değerden daha az olup öğelerini büyük olup olmadığını sınar.|  
+|[operator>](../standard-library/valarray-operators.md#op_gt)|Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri sıfırdan büyük veya valarray's öğe türünün belirtilen değerden daha az olup öğelerini büyük olup olmadığını sınar.|  
 |[operator>=](../standard-library/valarray-operators.md#op_gt_eq)|Bir valarray öğelerini değerinden büyük veya eşit boyutta bir valarray veya olup bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit öğelerini eşit olup olmadığını sınar.|  
 |[İşleç >>](../standard-library/valarray-operators.md#op_gt_gt)|Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS sağa kaydırır.|  
 |[operator <](../standard-library/valarray-operators.md#op_lt)|Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup öğelerini değerinden olup olmadığını sınar.|  
-|[operator < =](../standard-library/valarray-operators.md#op_lt_eq)|Bir valarray öğelerini küçük veya buna eşit boyutta bir valarray öğelerini eşit olup olmadığına veya bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını sınar.|  
+|[operator<=](../standard-library/valarray-operators.md#op_lt_eq)|Bir valarray öğelerini küçük veya buna eşit boyutta bir valarray öğelerini eşit olup olmadığına veya bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını sınar.|  
 |[işleç <<](../standard-library/valarray-operators.md#op_lt_lt)|Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS Sola kaydırır.|  
-|[işleç *](../standard-library/valarray-operators.md#op_star)|İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise ürün edinir valarray valarray's öğe türü belirtilen değeri arasında.|  
-|[operator +](../standard-library/valarray-operators.md#op_add)|İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise toplam alacağı valarray valarray's öğe türü belirtilen değeri arasında.|  
+|[operator*](../standard-library/valarray-operators.md#op_star)|İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise ürün edinir valarray valarray's öğe türü belirtilen değeri arasında.|  
+|[operator+](../standard-library/valarray-operators.md#op_add)|İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise toplam alacağı valarray valarray's öğe türü belirtilen değeri arasında.|  
 |[operator-](../standard-library/valarray-operators.md#operator-)|Karşılık gelen öğeleri iki eşit boyutta valarrays veya, element-wise birbirinden edinir valarray valarray's öğe türü belirtilen değeri arasında.|  
 |[operator /](../standard-library/valarray-operators.md#op_div)|İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise sayının edinir valarray valarray's öğe türü belirtilen değeri arasında.|  
-|[operator ==](../standard-library/valarray-operators.md#op_eq_eq)|İki eşit boyutta valarrays karşılık gelen öğelerini eşittir veya bir valarray tüm öğeleri olup olup testleri valarray's öğe türünün belirtilen değere eşit.|  
-|[operator ^](../standard-library/valarray-operators.md#op_xor)|Bit düzeyinde özel edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
-|[operator &#124;](../standard-library/valarray-operators.md#op_or)|Bit düzeyinde edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
-|[operator &#124; &#124;](../standard-library/valarray-operators.md#op_lor)|Mantıksal edinir `OR` bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.|  
+|[operator==](../standard-library/valarray-operators.md#op_eq_eq)|İki eşit boyutta valarrays karşılık gelen öğelerini eşittir veya bir valarray tüm öğeleri olup olup testleri valarray's öğe türünün belirtilen değere eşit.|  
+|[operator^](../standard-library/valarray-operators.md#op_xor)|Bit düzeyinde özel edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
+|[operator&#124;](../standard-library/valarray-operators.md#op_or)|Bit düzeyinde edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.|  
+|[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor)|Mantıksal edinir `OR` bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.|  
   
 ### <a name="classes"></a>Sınıflar  
   

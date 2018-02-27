@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - ctanh
 - ctahf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/ctanh
 - complex/ctanhf
 - complex/ctanhl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ctanh function
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 868c05475de663aa4e82d8f1ad39c621438b2103
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ae85904fac6b68dfc04559dfe94c640477d12fb2
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 Karmaşık bir sayının hiperbolik tanjantını karmaşık hesaplar.  
@@ -80,9 +82,9 @@ _Lcomplex ctanhl(
 ## <a name="return-value"></a>Dönüş Değeri  
  Karmaşık hiperbolik tanjantını `z`.  
   
-|Giriş|SEH özel durumu|`_matherr`Özel durumu|  
+|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
 |-----------|-------------------|--------------------------|  
-|± ∞, QNAN, UL|yok|_DOMAIN|  
+|± ∞, QNAN, IND|yok|_DOMAIN|  
 |± ∞ (tan, tanf)|GEÇERSİZ|_DOMAIN|  
   
 ## <a name="remarks"></a>Açıklamalar  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _wcsnicmp
 - _strnicmp_l
@@ -45,7 +46,8 @@ f1_keywords:
 - CORECRT_WSTRING/_wcsnicmp_l
 - string/_strnicmp
 - string/_strnicmp_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tcsnicmp function
 - _tcsncicmp function
@@ -72,22 +74,23 @@ helpviewer_keywords:
 - mbsnicmp function
 - _wcsnicmp function
 ms.assetid: df6e5037-4039-4c85-a0a6-21d4ef513966
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c926c23553545a76bc8e1d0a0427c20ea65f3156
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 828abae53d664fe5214b6fcf112e27f674c51cfc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strnicmp-wcsnicmp-mbsnicmp-strnicmpl-wcsnicmpl-mbsnicmpl"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
 Belirtilen sayıda servis talebi dikkate almaksızın iki dize karakterlerini karşılaştırır.  
   
 > [!IMPORTANT]
->  `_mbsnicmp`ve `_mbsnicmp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsnicmp` ve `_mbsnicmp_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -142,18 +145,18 @@ int _mbsnicmp_l(
   
 |Dönüş değeri|Açıklama|  
 |------------------|-----------------|  
-|< 0|`string1`alt dizesidir değerinden `string2` substring.|  
-|0|`string1`alt dizesidir aynı `string2` substring.|  
-|> 0|`string1`alt dizesidir büyük `string2` substring.|  
+|< 0|`string1` alt dizesidir değerinden `string2` substring.|  
+|0|`string1` alt dizesidir aynı `string2` substring.|  
+|> 0|`string1` alt dizesidir büyük `string2` substring.|  
   
  Üzerinde bir parametre doğrulama hatası, bu işlevlerin dönüş `_NLSCMPERROR`, içinde tanımlanan \<string.h > ve \<mbstring.h >.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_strnicmp` İşlevi ordinally karşılaştırır, en fazla ilk `count` karakterlerinden `string1` ve `string2`. Karşılaştırma durum dikkate almaksızın küçük her karakter dönüştürme tarafından gerçekleştirilir. `_strnicmp`büyük küçük harf duyarsız bir sürümü `strncmp`. Karşılaştırma sonlandırma bir null karakter önce ya da dizesinde ulaşıldığında sona `count` karakter karşılaştırılır. Dizeleri eşitse, ne zaman bir sonlandırma null karakter ulaşıldığında önce ya da dizesinde `count` karakter karşılaştırılır, kısa daha düşük bir dizedir.  
+ `_strnicmp` İşlevi ordinally karşılaştırır, en fazla ilk `count` karakterlerinden `string1` ve `string2`. Karşılaştırma durum dikkate almaksızın küçük her karakter dönüştürme tarafından gerçekleştirilir. `_strnicmp` büyük küçük harf duyarsız bir sürümü `strncmp`. Karşılaştırma sonlandırma bir null karakter önce ya da dizesinde ulaşıldığında sona `count` karakter karşılaştırılır. Dizeleri eşitse, ne zaman bir sonlandırma null karakter ulaşıldığında önce ya da dizesinde `count` karakter karşılaştırılır, kısa daha düşük bir dizedir.  
   
  ASCII tablosundaki 96 91 karakterleri ('[','\\', ']', ' ^', '_' ve '\`') olarak değerinden alfabetik bir karakterle değerlendirin. Bu sıralama aynı `stricmp`.  
   
- `_wcsnicmp`ve `_mbsnicmp` joker karakter ve çok baytlı karakter sürümleri `_strnicmp`. Bağımsız değişkenleri `_wcsnicmp` joker karakter olan dizeleri; bu `_mbsnicmp` çok baytlı karakter dizeleri belirtilmiştir. `_mbsnicmp`çok baytlı karakter sıralarının geçerli birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlevler aynı şekilde aksi davranır. Bu işlevler yerel ayardan etkilenir — olmayan sürümleri `_l` yerel ayara bağımlı davranışlarını geçerli yerel kullanılmak soneki; olan sürümleri `_l` kullanmak yerine soneki `locale` o geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
+ `_wcsnicmp` ve `_mbsnicmp` joker karakter ve çok baytlı karakter sürümleri `_strnicmp`. Bağımsız değişkenleri `_wcsnicmp` joker karakter olan dizeleri; bu `_mbsnicmp` çok baytlı karakter dizeleri belirtilmiştir. `_mbsnicmp` çok baytlı karakter sıralarının geçerli birden çok baytlı kod sayfasına göre tanır ve döndürür `_NLSCMPERROR` bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlevler aynı şekilde aksi davranır. Bu işlevler yerel ayardan etkilenir — olmayan sürümleri `_l` yerel ayara bağımlı davranışlarını geçerli yerel kullanılmak soneki; olan sürümleri `_l` kullanmak yerine soneki `locale` o geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
  Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `_NLSCMPERROR` ve `errno` için `EINVAL`.  
   

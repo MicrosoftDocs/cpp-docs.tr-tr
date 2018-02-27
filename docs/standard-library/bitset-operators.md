@@ -5,16 +5,17 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - bitset/std::operator&amp;
 - bitset/std::operator&gt;&gt;
 - bitset/std::operator&lt;&lt;
 - bitset/std::operator^
 - bitset/std::operator|
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 84fe6a13-6f6e-4cdc-bf8f-6f65ab1134d4
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -22,20 +23,21 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.workload: cplusplus
-ms.openlocfilehash: aca0affd587eb0d90b312e13687d138300f94570
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 45dab1512054f80d5cec309ca4637b4972d8b555
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 ||||  
 |-|-|-|  
 |[işleci&amp;](#op_amp)|[işleci&gt;&gt;](#op_gt_gt)|[işleci&lt;&lt;](#op_lt_lt)|  
-|[operator ^](#op_xor)|[işleci|](#op_or)|  
+|[operator^](#op_xor)|[işleci|](#op_or)|  
   
-##  <a name="op_amp"></a>işleci&amp;  
+##  <a name="op_amp"></a>  işleci&amp;  
  Bit tabanlı gerçekleştirir `AND` iki bit kümeleri arasında.  
   
 ```  
@@ -84,7 +86,7 @@ bitset 2: 0011
 bitset 3: 0001  
 ```  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt"></a>  işleci&lt;&lt;  
  Bit sırası metin gösterimini çıkış akışına ekler.  
   
 ```  
@@ -105,7 +107,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlev aşırı yüklemelerinin **işleci <<**, ilk dizeye dönüştürmeden yazılmalıdır bitset izin verme. Şablon işlevi etkin şekilde şunları yürütür:  
   
- **ostr** << _ *sağ*. [to_string](bitset-class.md) < **CharType**, **nitelikler**, **ayırıcısı** \< **CharType**>> ( )  
+ **ostr** << _ *sağ*. [to_string](bitset-class.md) < **CharType**, **nitelikler**, **ayırıcısı** \< **CharType**>>)  
   
 ### <a name="example"></a>Örnek  
   
@@ -138,7 +140,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_gt_gt"></a>işleci&gt;&gt;  
+##  <a name="op_gt_gt"></a>  işleci&gt;&gt;  
  Bit karakter dizesi bitset okur.  
   
 ```  
@@ -221,7 +223,7 @@ int main()
 }  
 ```  
   
-##  <a name="op_xor"></a>operator ^  
+##  <a name="op_xor"></a>  operator ^  
  Bit tabanlı gerçekleştirir `EXCLUSIVE-OR` iki bit kümeleri arasında.  
   
 ```  
@@ -270,7 +272,7 @@ bitset 2: 0011
 bitset 3: 0110  
 ```  
   
-##  <a name="op_or"></a>operator |  
+##  <a name="op_or"></a>  operator |  
  Bit tabanlı gerçekleştirir `OR` iki bit kümeleri arasında.  
   
 ```  
@@ -320,5 +322,5 @@ bitset 3: 0111
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<bitset >](../standard-library/bitset.md)
+ [\<bitset>](../standard-library/bitset.md)
 

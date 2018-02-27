@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xcomplex/std::abs
 - xcomplex/std::acos
@@ -28,7 +28,7 @@ f1_keywords:
 - xcomplex/std::tan
 - xcomplex/std::tanh
 ms.assetid: 58b14e94-0e0c-493e-8237-8b4d685904a2
-caps.latest.revision: "14"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::abs [C++]
@@ -49,23 +49,23 @@ helpviewer_keywords:
 - std::sqrt [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 14fed0ac2d0714989e78459a74b48fd8173c7632
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: aee4e410bae6ea3fc3726ac29c250e2339e0fcb0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltcomplexgt-functions"></a>&lt;karmaşık&gt; işlevleri
 ||||  
 |-|-|-|  
-|[Abs](#abs)|[arg](#arg)|[conj](#conj)|
+|[abs](#abs)|[Arg](#arg)|[conj](#conj)|
 |[cos](#cos)|[COSH](#cosh)|[exp](#exp)|
 |[imag](#imag)|[Günlük](#log)|[log10](#log10)|
-|[Norm](#norm)|[Kutupsal](#polar)|[POW](#pow)|
-|[Gerçek](#real)|[sin](#sin)|[SİNH](#sinh)|
-|[Sqrt](#sqrt)|[tan](#tan)|[TANH](#tanh)|  
+|[norm](#norm)|[polar](#polar)|[POW](#pow)|
+|[real](#real)|[sin](#sin)|[sinh](#sinh)|
+|[sqrt](#sqrt)|[tan](#tan)|[TANH](#tanh)|  
   
-##  <a name="abs"></a>Abs  
+##  <a name="abs"></a>  Abs  
  Karmaşık bir sayının modulus hesaplar.  
   
 ```  
@@ -148,7 +148,7 @@ Argument of c2 is recovered from c2 using:
 The complex numbers c2 & c3 have the same principal arguments.  
 ```  
   
-##  <a name="arg"></a>arg  
+##  <a name="arg"></a>  Arg  
  Bağımsız değişkeni bir karmaşık numarasından ayıklar.  
   
 ```  
@@ -231,7 +231,7 @@ Argument of c2 is recovered from c2 using:
 The complex numbers c2 & c3 have the same principal arguments.  
 ```  
   
-##  <a name="conj"></a>conj  
+##  <a name="conj"></a>  conj  
  Karmaşık bir sayının karmaşık çiftini döndürür.  
   
 ```  
@@ -302,7 +302,7 @@ The imaginary part of c2 is imag ( c2 ) = -3.
 The norm of (c1 * conj (c1) ) is c1 * c2 = 25  
 ```  
   
-##  <a name="cos"></a>cos  
+##  <a name="cos"></a>  cos  
  Karmaşık bir sayının kosinüsünü döndürür.  
   
 ```  
@@ -320,9 +320,9 @@ complex<Type> cos(const complex<Type>& complexNum);
 ### <a name="remarks"></a>Açıklamalar  
  Karmaşık Kosinüs kuralı tanımlama kimlikleri:  
   
- cos ( *z*) (1/2) =\*(exp ( *IZ*) + exp (- *IZ*))  
+ cos ( *z*) = (1/2)\*( exp ( *iz*) + exp (- *iz*) )  
   
- cos ( *z*) cos = ( *bir* + *BI*) cos = ( *bir*) cosh ( *b*)-isin ( *bir* ) sinh ( *b*)  
+ cos ( *z*) = cos ( *a* + *bi*) = cos ( *a*) cosh ( *b*) - isin ( *a*) sinh ( *b*)  
   
 ### <a name="example"></a>Örnek  
   
@@ -389,7 +389,7 @@ The complex components cos (vci), where abs (vci) = 1
 (0.540302,-1.74036e-013)  
 ```  
   
-##  <a name="cosh"></a>COSH  
+##  <a name="cosh"></a>  COSH  
  Karmaşık bir sayının hiperbolik kosinüsünü döndürür.  
   
 ```  
@@ -409,7 +409,7 @@ complex<Type> cosh(const complex<Type>& complexNum);
   
  cos ( *z*) (1/2) =\*(exp ( *z*) + exp (- *z*))  
   
- cos ( *z*) cosh = ( *+ bi*) cosh = ( *bir*) cos ( *b*) + isinh ( *bir*) sin ( *b*)  
+ cos ( *z*) = cosh ( *a + bi*) = cosh ( *a*) cos ( *b*) + isinh ( *a*) sin ( *b*)  
   
 ### <a name="example"></a>Örnek  
   
@@ -476,7 +476,7 @@ The complex components cosh (vci), where abs (vci) = 1
 (1.54308,2.43059e-013)  
 ```  
   
-##  <a name="exp"></a>exp  
+##  <a name="exp"></a>  exp  
  Karmaşık bir sayının üstel işlevi döndürür.  
   
 ```  
@@ -544,7 +544,7 @@ int main() {
 }  
 ```  
   
-##  <a name="imag"></a>imag  
+##  <a name="imag"></a>  imag  
  Karmaşık bir sayının sanal bileşeni ayıklar.  
   
 ```  
@@ -592,7 +592,7 @@ The real part of c1 is real ( c1 ) = 4.
 The imaginary part of c1 is imag ( c1 ) = 3.  
 ```  
   
-##  <a name="log"></a>Günlük  
+##  <a name="log"></a>  Günlük  
  Karmaşık bir sayının doğal logaritmasını döndürür.  
   
 ```  
@@ -658,7 +658,7 @@ int main() {
 }  
 ```  
   
-##  <a name="log10"></a>log10  
+##  <a name="log10"></a>  log10  
  Karmaşık bir sayının 10 tabanında logaritmasını döndürür.  
   
 ```  
@@ -724,7 +724,7 @@ int main() {
 }  
 ```  
   
-##  <a name="norm"></a>Norm  
+##  <a name="norm"></a>  Norm  
  Karmaşık bir sayının norm ayıklar.  
   
 ```  
@@ -803,7 +803,7 @@ The norm of c2 given by: norm ( c2 ) = 25
 The modulus of c2 is the square root of the norm: sqrt ( normc2 ) = 5.  
 ```  
   
-##  <a name="polar"></a>Kutupsal  
+##  <a name="polar"></a>  Kutupsal  
  Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayı Kartezyen biçiminde döndürür.  
   
 ```  
@@ -876,7 +876,7 @@ Argument of c2 is recovered from c2 using:
  arg ( c2 ) = 0.523599 radians, which is 30 degrees.  
 ```  
   
-##  <a name="pow"></a>POW  
+##  <a name="pow"></a>  POW  
  Karmaşık sayıyı diğer bir karmaşık sayının kuvvetine bir tabanı yükselterek elde karmaşık sayı değerlendirir.  
   
 ```  
@@ -897,7 +897,7 @@ complex<Type> pow(const Type& _Base, const complex<Type>& _Power);
  `_Base`  
  Karmaşık sayı veya üye işlevi tarafından üssü için temel karmaşık numarası için parametre türü numarası.  
   
- *_Güç*  
+ *_Power*  
  Tamsayı veya karmaşık sayı veya üye işlevi tarafından çıkarılmasına tabanıdır güç karmaşık sayıyı için parametre türü numarası.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1017,7 +1017,7 @@ The modulus of ce4 is: 9.8696
 The argument of ce4 is: -1.14473 radians, which is -65.5882 degrees.  
 ```  
   
-##  <a name="real"></a>Gerçek  
+##  <a name="real"></a>  Gerçek  
  Karmaşık bir sayının gerçek bileşen ayıklar.  
   
 ```  
@@ -1065,7 +1065,7 @@ The real part of c1 is real ( c1 ) = 4.
 The imaginary part of c1 is imag ( c1 ) = 3.  
 ```  
   
-##  <a name="sin"></a>sin  
+##  <a name="sin"></a>  sin  
  Karmaşık bir sayının sinüsünü döndürür.  
   
 ```  
@@ -1085,7 +1085,7 @@ complex<Type> sin(const complex<Type>& complexNum);
   
  sin ( *z*) = (1/2 *ı*)\*(exp ( *IZ*)-exp (- *IZ*))  
   
- sin ( *z*) sin = ( *+ bi*) sin = ( *bir*) cosh ( *b*) + icos ( *bir*) sinh ( *b*)  
+ sin ( *z*) = sin ( *a + bi*) = sin ( *a*) cosh ( *b*) + icos ( *a*) sinh ( *b*)  
   
 ### <a name="example"></a>Örnek  
   
@@ -1152,7 +1152,7 @@ The complex components sin (vci), where abs (vci) = 1
 (-0.841471,-1.11747e-013)  
 ```  
   
-##  <a name="sinh"></a>SİNH  
+##  <a name="sinh"></a>  SİNH  
  Karmaşık bir sayının hiperbolik sinüsünü döndürür.  
   
 ```  
@@ -1170,9 +1170,9 @@ complex<Type> sinh(const complex<Type>& complexNum);
 ### <a name="remarks"></a>Açıklamalar  
  Karmaşık hiperbolik sinüsü tanımlama kimlikleri:  
   
- SİNH ( *z*) (1/2) =\*(exp ( *z*)-exp (- *z*))  
+ sinh ( *z*) = (1/2)\*( exp ( *z*) - exp (- *z*) )  
   
- SİNH ( *z*) sinh = ( *+ bi*) sinh = ( *bir*) cos ( *b*) + *ı*cosh ( *bir*) sin ( *b*)  
+ sinh ( *z*) = sinh ( *a + bi*) = sinh ( *a*) cos ( *b*) + *i*cosh ( *a*) sin ( *b*)  
   
 ### <a name="example"></a>Örnek  
   
@@ -1239,7 +1239,7 @@ The complex components sinh (vci), where abs (vci) = 1
 (-1.1752,-3.19145e-013)  
 ```  
   
-##  <a name="sqrt"></a>Sqrt  
+##  <a name="sqrt"></a>  Sqrt  
  Karmaşık bir sayının karekökünü hesaplar.  
   
 ```  
@@ -1312,7 +1312,7 @@ The argument of c2 = ( 1 / 2 ) * arg ( c1 ) =0.785398 radians,
  which is 45 degrees.  
 ```  
   
-##  <a name="tan"></a>tan  
+##  <a name="tan"></a> tan  
  Karmaşık bir sayının tanjantını döndürür.  
   
 ```  
@@ -1330,7 +1330,7 @@ complex<Type> tan(const complex<Type>& complexNum);
 ### <a name="remarks"></a>Açıklamalar  
  Karmaşık Kotanjant tanımlama kimlikleri:  
   
- tan ( *z*) sin = ( *z*) / cos ( *z*) = (exp ( *IZ*)-exp (- *IZ*)) / *i*(exp ( *IZ*) + exp (- *IZ*))  
+ tan ( *z*) = sin ( *z*) / cos ( *z*) = ( exp ( *iz*) - exp (- *iz*) ) / *i*( exp ( *iz*) + exp (- *iz*) )  
   
 ### <a name="example"></a>Örnek  
   
@@ -1397,7 +1397,7 @@ The complex components tan (vci), where abs (vci) = 1
 (-1.55741,-7.08476e-013)  
 ```  
   
-##  <a name="tanh"></a>TANH  
+##  <a name="tanh"></a>  TANH  
  Karmaşık bir sayının hiperbolik tanjantını döndürür.  
   
 ```  

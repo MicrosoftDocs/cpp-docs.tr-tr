@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Concurrency Runtime, requirements
 - Concurrency Runtime, architecture
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ce1967b04770f53c2e1acbd49342f9080a7e3c12
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5c604ebc03204ca0dff24e2ceccdf6bb6dd543df
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanına Genel Bakış
 Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanlılık Çalışma zamanı yararlarını açıklar ne zaman kullanılmalı ve bileşenlerinin birbirleriyle ve işletim sistemi ve uygulamalar ile nasıl etkileşime.  
@@ -31,7 +34,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
 > [!IMPORTANT]
 >  Visual Studio 2015 ve sonraki sürümlerinde, eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nı artık Zamanlayıcı görevi sınıfı ve ppltasks.h ilgili türleri için değil. Bu türlerde artık Windows iş parçacığı havuzu daha iyi performans ve birlikte çalışabilirlik için Windows eşitleme temelleri ile kullanın. Parallel_for gibi paralel algoritmalar eşzamanlılık çalışma zamanı Görev Zamanlayıcısı'nı kullanmaya devam edin.  
   
-##  <a name="top"></a>Bölümler  
+##  <a name="top"></a> Bölümler  
  Bu belgede aşağıdaki bölümler yer alır:  
   
 -   [Eşzamanlılık Çalışma Zamanı Modülü önemli neden olduğunu](#runtime)  
@@ -42,7 +45,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
   
 -   [Gereksinimler](#requirements)  
   
-##  <a name="runtime"></a>Eşzamanlılık Çalışma Zamanı Modülü önemli neden olduğunu  
+##  <a name="runtime"></a> Eşzamanlılık Çalışma Zamanı Modülü önemli neden olduğunu  
  Eşzamanlılık Çalışma Zamanı Modülü bütünlüğünü ve öngörülebilirlik uygulamaları ve aynı anda çalışmasına uygulama bileşenleri için sağlar. Eşzamanlılık Çalışma zamanı avantajları iki örnek verilmiştir *işbirlikçi görev zamanlama* ve *işbirlikçi engelleme*.  
   
  Eşzamanlılık Çalışma Zamanı İş bilgi işlem kaynakları arasında verimli bir şekilde dağıtmak için bir iş çalarak algoritması uygulayan bir işbirlikçi Görev Zamanlayıcısı'nı kullanır. Örneğin, her ikisi de aynı çalışma zamanı tarafından yönetilen iki iş parçacığı olan bir uygulama göz önünde bulundurun. Bir iş parçacığı, zamanlanmış görevini tamamlanırsa başka bir iş parçacığı işten boşaltabilir. Bu mekanizma uygulama genel iş yükünü dengeler.  
@@ -51,7 +54,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
   
  [[Üst](#top)]  
   
-##  <a name="architecture"></a>Mimarisi  
+##  <a name="architecture"></a> Mimarisi  
  Eşzamanlılık Çalışma zamanı dört bileşenlerine ayrılır: paralel Desen kitaplığı (PPL), zaman uyumsuz aracılar kitaplığı, Görev Zamanlayıcısı'nı ve Resource Manager. Bu bileşenler işletim sistemi ve uygulamalar arasında bulunur. Aşağıdaki çizimde eşzamanlılık çalışma zamanı bileşenleri işletim sistemi ve uygulamalar arasında nasıl etkileşim kurduğu gösterilmektedir:  
   
  **Eşzamanlılık Çalışma zamanı mimarisi**  
@@ -59,7 +62,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
  ![Eşzamanlılık Çalışma zamanı mimarisi](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")  
   
 > [!IMPORTANT]
->  Görev Zamanlayıcı ve Resource Manager bileşenleri kullanılabilir olmayan bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulama veya görev sınıfı veya diğer türleri içinde ppltasks.h kullandığınızda.  
+>  Görev Zamanlayıcı ve Resource Manager bileşenleri, bir evrensel Windows Platformu (UWP) uygulaması veya ppltasks.h içinde görevi sınıfı veya diğer türleri kullandığınızda kullanılamaz.  
   
  Eşzamanlılık Çalışma zamanı yüksek olan *birleştirilebilir*, diğer bir deyişle, daha fazla yapmak için var olan işlevselliği birleştirebilirsiniz. Eşzamanlılık Çalışma zamanı, alt düzey bileşenlerden paralel algoritmalar gibi birçok özellik oluşturur.  
   
@@ -95,7 +98,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
   
  [[Üst](#top)]  
   
-##  <a name="lambda"></a>C++ Lambda ifadeleri  
+##  <a name="lambda"></a> C++ Lambda ifadeleri  
  Eşzamanlılık Çalışma zamanı tarafından tanımlanan algoritmaları ve türleri çoğunu C++ şablonları uygulanır. Bu türleri ve algoritmaları bazıları çalışma gerçekleştirir bir yordama parametre olarak alın. Bu parametre bir lambda işlevi, bir işlev nesnesi veya bir işlev işaretçisi olabilir. Bu varlıklar olarak da adlandırılan *iş işlevleri* veya *çalışma yordamları*.  
   
  Lambda ifadeleri önemli bir yeni Visual C++ dili özelliği olduklarından paralel işleme iş işlevleri tanımlamak için kısa bir yol sağlar. İşlev nesneleri ve işlev işaretçileri eşzamanlılık çalışma zamanı ile varolan kodunuzu kullanmanıza olanak sağlar. Ancak, sağladıkları güvenliği ve üretkenlik avantajları nedeniyle yeni kodu yazarken lambda ifadeleri kullanmanızı öneririz.  
@@ -118,7 +121,7 @@ Bu belge eşzamanlılık çalışma zamanı genel bir bakış sağlar. Eşzamanl
   
  [[Üst](#top)]  
   
-##  <a name="requirements"></a>Gereksinimleri  
+##  <a name="requirements"></a> Gereksinimleri  
  Aşağıdaki tabloda her eşzamanlılık çalışma zamanı bileşeni ile ilişkili olan üstbilgi dosyaları gösterilmektedir:  
   
 |Bileşen|Üstbilgi Dosyaları|  

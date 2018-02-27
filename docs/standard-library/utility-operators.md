@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - utility/std::operator!=
 - utility/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - utility/std::operator&lt;
 - utility/std::operator&lt;=
 - utility/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: a6617109-2cec-4a69-948f-6c87116eda5f
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (utility)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (utility)
 - std::operator&lt;= (utility)
 - std::operator== (utility)
-ms.openlocfilehash: 9f9290b171a74098af5186c17f027fcf6e34c78f
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 407e08934c4469776feb34d0f18b20b457d208d9
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltutilitygt-operators"></a>&lt;yardımcı programı&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit değil.  
   
 ```  
@@ -107,7 +108,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Sağ taraftaki çifti nesnesi işlecinin sol tarafındaki çifti nesnesi eşitse testleri.  
   
 ```  
@@ -166,7 +167,7 @@ int main( )
 }  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test azdır sağ tarafında çifti nesnesi.  
   
 ```  
@@ -236,7 +237,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Çift işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında çifti nesnesi eşit veya daha az olur.  
   
 ```  
@@ -317,7 +318,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi değerinden daha büyük.  
   
 ```  
@@ -400,7 +401,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Testleri işlecinin sol tarafındaki çifti nesnesi sağ tarafında çifti nesnesi eşit veya daha büyük.  
   
 ```  

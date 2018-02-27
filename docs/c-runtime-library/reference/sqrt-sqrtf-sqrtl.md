@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - sqrtl
 - sqrtf
@@ -28,7 +29,8 @@ f1_keywords:
 - sqrt
 - sqrtf
 - _sqrtl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sqrtf function
 - sqrt function
@@ -37,18 +39,19 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 972d3057990a5cab21f6e5b05159f9f67a8bdf98
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 525e2414dd92ed486506fceedc6fb550b4a7a569
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="sqrt-sqrtf-sqrtl"></a>Sqrt, sqrtf, sqrtl
+# <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
 Kare kökünü hesaplar.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -81,11 +84,11 @@ long double sqrtl(
 ## <a name="return-value"></a>Dönüş Değeri  
  `sqrt` İşlevler kare kökünü döndürür `x`. Varsayılan olarak, varsa `x` negatif `sqrt` belirsiz NaN döndürür.  
   
-|Giriş|SEH özel durumu|`_matherr`Özel durumu|  
+|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
 |-----------|-------------------|--------------------------|  
 |± QNAN, UL|yok|_DOMAIN|  
 |- ∞|yok|_DOMAIN|  
-|x < 0|yok|_DOMAIN|  
+|x<0|yok|_DOMAIN|  
   
 ## <a name="requirements"></a>Gereksinimler  
   

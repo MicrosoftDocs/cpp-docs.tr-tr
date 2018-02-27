@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _strdup
 - _mbsdup
@@ -32,7 +33,8 @@ f1_keywords:
 - _strdup
 - _ftcsdup
 - _wcsdup
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcsdup function
 - ftcsdup function
@@ -49,22 +51,23 @@ helpviewer_keywords:
 - tcsdup function
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: da8d1341e9ce46e2ab2040812622a78d3bd3830d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 476ffad002353cf2c4048e5138e6972c5c304983
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strdup-wcsdup-mbsdup"></a>_strdup, _wcsdup, _mbsdup
 Dizeleri çoğaltır.  
   
 > [!IMPORTANT]
->  `_mbsdup`Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsdup` Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -90,7 +93,7 @@ unsigned char *_mbsdup(
 ## <a name="remarks"></a>Açıklamalar  
  `_strdup` İşlev çağrıları [malloc](../../c-runtime-library/reference/malloc.md) kopyası için depolama alanı ayırmak için `strSource` ve ardından kopyalar `strSource` için ayrılan alanı.  
   
- `_wcsdup`ve `_mbsdup` joker karakter ve çok baytlı karakter sürümleri `_strdup`. Bağımsız değişkenleri ve dönüş değerini `_wcsdup` joker karakter olan dizeleri; bu `_mbsdup` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_wcsdup` ve `_mbsdup` joker karakter ve çok baytlı karakter sürümleri `_strdup`. Bağımsız değişkenleri ve dönüş değerini `_wcsdup` joker karakter olan dizeleri; bu `_mbsdup` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
   
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
   

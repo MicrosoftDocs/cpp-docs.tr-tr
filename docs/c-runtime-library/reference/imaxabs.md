@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: imaxabs
+ms.topic: reference
+apiname:
+- imaxabs
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,20 +23,24 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-utility-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: imaxabs
-dev_langs: C++
-helpviewer_keywords: imaxabs function
+f1_keywords:
+- imaxabs
+dev_langs:
+- C++
+helpviewer_keywords:
+- imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 15bd5e6a83449e161a2756ffcc22e60e1c0eebab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ff253849a185b61a9bea98d280cb8f8fdbe112e3
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="imaxabs"></a>imaxabs
 Herhangi bir boyuttaki bir tamsayı mutlak değerini hesaplar.  

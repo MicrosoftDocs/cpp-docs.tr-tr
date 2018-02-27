@@ -6,21 +6,25 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: Platform/Platform
-dev_langs: C++
-helpviewer_keywords: Platform Namespace (C++/CX)
+ms.topic: reference
+f1_keywords:
+- Platform/Platform
+dev_langs:
+- C++
+helpviewer_keywords:
+- Platform Namespace (C++/CX)
 ms.assetid: b160e822-d424-43d2-ba60-57b0e81f259c
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d434d687eca53deb4cad41615fcfd676836dda5e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 08045758313274a3be5626a7c4f2fa5bd54ae891
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platform-namespace-ccx"></a>Platform ad alanı (C + +/ CX)
 Windows çalışma zamanı ile uyumlu olan yerleşik türler içerir.  

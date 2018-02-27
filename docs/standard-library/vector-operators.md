@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vector/std::operator!=
 - vector/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - vector/std::operator&lt;
 - vector/std::operator&lt;=
 - vector/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 1d14f312-6f59-4ec7-88ae-95f89a558823
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (vector)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (vector)
 - std::operator&lt;= (vector)
 - std::operator== (vector)
-ms.openlocfilehash: 310bf81e6dd20440c57ce5a0c73da7a6919f0015
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 297fb5bf602d8cc7d2f90e66fbb47dd433e90b86
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltvectorgt-operators"></a>&lt;vektör&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri işlecinin sol tarafındaki nesnesi sağ tarafında nesnede eşit değil.  
   
 ```  
@@ -83,7 +84,7 @@ int main( )
 Vectors not equal.  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Nesne işlecinin sol tarafındaki sağ tarafında nesnede küçükse testleri.  
   
 ```  
@@ -131,7 +132,7 @@ int main( )
 Vector v1 is less than vector v2.  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Testleri işlecinin sol tarafındaki küçük veya eşit nesneye sağ tarafında nesnesidir.  
   
 ```  
@@ -179,7 +180,7 @@ int main( )
 Vector v1 is less than or equal to vector v2.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Nesne işlecinin sol tarafındaki sağ tarafında nesnesine eşitse testleri.  
   
 ```  
@@ -226,7 +227,7 @@ int main( )
 Vectors equal.  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri işlecinin sol tarafındaki nesneyi sağ tarafında nesnede değerinden daha büyük.  
   
 ```  
@@ -275,7 +276,7 @@ int main( )
 Vector v1 is greater than vector v2.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Büyük veya ona eşit nesnesine sağ tarafında işlecinin sol tarafındaki nesnedir sağlayıp sağlamadığını test.  
   
 ```  

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - regex/std::operator!=
 - regex/std::operator>
@@ -14,24 +14,25 @@ f1_keywords:
 - regex/std::operator<=
 - regex/std::operator==
 - regex/std::operator<<
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: ec623e65-c186-491f-aa18-6b12b47e1127
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: 7c37cc1a2708346ed8af0fd8b5df9a91a625feb6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 40dd9bb9a674542d216ced2bb53b65efeb5d34a0
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="ltregexgt-operators"></a>&lt;Regex&gt; işleçleri
+# <a name="ltregexgt-operators"></a>&lt;regex&gt; operators
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
 |[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|[işleci&lt;=](#op_lt_eq)|  
-|[operator ==](#op_eq_eq)|  
+|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Eşit değildir karşılaştırma çeşitli nesneleri için.  
   
 ```  
@@ -148,7 +149,7 @@ sub != "aab" == true
 sub != 'a' == true  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Karşılaştırma için çeşitli nesneleri küçüktür.  
   
 ```  
@@ -256,7 +257,7 @@ sub < "aab" == true
 sub < 'a' == false  
 ```  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt"></a>  işleci&lt;&lt;  
  Bir sub_match bir akışı ekler.  
   
 ```  
@@ -314,7 +315,7 @@ int main()
 whole match: caaa  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Küçüktür veya eşittir karşılaştırma çeşitli nesneleri için.  
   
 ```  
@@ -422,7 +423,7 @@ sub <= "aab" == true
 sub <= 'a' == false  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Eşit karşılaştırma çeşitli nesneleri için.  
   
 ```  
@@ -547,7 +548,7 @@ sub == "aab" == false
 sub == 'a' == false  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Karşılaştırma için çeşitli nesneleri büyüktür.  
   
 ```  
@@ -655,7 +656,7 @@ sub > "aab" == false
 sub > 'a' == true  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Büyük veya ona eşit karşılaştırma çeşitli nesneleri için.  
   
 ```  
@@ -763,13 +764,13 @@ sub >= 'a' == true
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-[\<Regex >](../standard-library/regex.md)  
-[regex_constants sınıfı](../standard-library/regex-constants-class.md)  
-[regex_error sınıfı](../standard-library/regex-error-class.md)  
+[\<regex>](../standard-library/regex.md)  
+[regex_constants Sınıfı](../standard-library/regex-constants-class.md)  
+[regex_error Sınıfı](../standard-library/regex-error-class.md)  
 [\<Regex > işlevleri](../standard-library/regex-functions.md)  
-[regex_iterator sınıfı](../standard-library/regex-iterator-class.md)  
-[regex_token_iterator sınıfı](../standard-library/regex-token-iterator-class.md)  
-[regex_traits sınıfı](../standard-library/regex-traits-class.md)  
+[regex_iterator Sınıfı](../standard-library/regex-iterator-class.md)  
+[regex_token_iterator Sınıfı](../standard-library/regex-token-iterator-class.md)  
+[regex_traits Sınıfı](../standard-library/regex-traits-class.md)  
 [\<Regex > tür tanımları](../standard-library/regex-typedefs.md)  
 
 

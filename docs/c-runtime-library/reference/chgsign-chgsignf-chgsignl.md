@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _chgsignl
 - _chgsign
@@ -29,23 +30,25 @@ f1_keywords:
 - chgsign
 - _chgsignl
 - _chgsign
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _chgsignl function
 - _chgsignf function
 - chgsign function
 - _chgsign function
 ms.assetid: a6646f8e-213d-4564-8617-f43bc66f989f
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6d21b7904bdd048a87f699a6999e79c407f15ec1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3c5e9a1f7f85e2583a1dc07cb85b6a20535f5c0e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="chgsign-chgsignf-chgsignl"></a>_chgsign, _chgsignf, _chgsignl
 Kayan nokta bağımsız değişkeni oturum tersine çevirir.  

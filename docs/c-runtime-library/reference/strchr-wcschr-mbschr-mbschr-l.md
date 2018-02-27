@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strchr
 - wcschr
@@ -32,7 +33,8 @@ f1_keywords:
 - wcschr
 - _tcschr
 - _mbschr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strings [C++], searching
 - mbschr function
@@ -47,22 +49,23 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 593b4ab918a40f5388d6d0de2eb8d52e0995a476
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a1cea5b46c48f0660062736f4ffb8bd8999b8c70
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strchr-wcschr-mbschr-mbschrl"></a>strchr, wcschr, _mbschr, _mbschr_l
 Bir karakter dizesi içinde geçerli yerel veya belirtilen LC_CTYPE dönüştürme durumu kategorisinin kullanarak bulur.  
   
 > [!IMPORTANT]
->  `_mbschr`ve `_mbschr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbschr` ve `_mbschr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -136,7 +139,7 @@ const unsigned char *_mbschr_l(
 ## <a name="remarks"></a>Açıklamalar  
  `strchr` İşlev ilk örneğini bulur `c` içinde `str`, veya döndürdüğü `NULL` varsa `c` bulunamadı. Null sonlandırma karakter aramada dahil edilir.  
   
- `wcschr`, `_mbschr` ve `_mbschr_l` joker karakter ve çok baytlı karakter sürümleri `strchr`. Bağımsız değişkenleri ve dönüş değerini `wcschr` joker karakter olan dizeleri; bu `_mbschr` çok baytlı karakter dizeleri belirtilmiştir. `_mbschr`çok baytlı karakter sıralarının tanır. Ayrıca, dize null işaretçinin ise `_mbschr` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbschr` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `strchr`ve `wcschr` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
+ `wcschr`, `_mbschr` ve `_mbschr_l` joker karakter ve çok baytlı karakter sürümleri `strchr`. Bağımsız değişkenleri ve dönüş değerini `wcschr` joker karakter olan dizeleri; bu `_mbschr` çok baytlı karakter dizeleri belirtilmiştir. `_mbschr` çok baytlı karakter sıralarının tanır. Ayrıca, dize null işaretçinin ise `_mbschr` açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbschr` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `strchr` ve `wcschr` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` kategori ayar yerel; daha fazla bilgi için bkz. [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md). Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -147,7 +150,7 @@ const unsigned char *_mbschr_l(
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
 |---------------------|------------------------------------|--------------------|-----------------------|  
 |`_tcschr`|`strchr`|`_mbschr`|`wcschr`|  
-|**_ yok**|**yok**|`_mbschr_l`|**yok**|  
+|**_n/a**|**yok**|`_mbschr_l`|**yok**|  
   
 ## <a name="requirements"></a>Gereksinimler  
   

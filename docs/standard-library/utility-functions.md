@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - utility/std::exchange
 - utility/std::forward
@@ -13,7 +13,7 @@ f1_keywords:
 - utility/std::move
 - utility/std::swap
 ms.assetid: b1df38cd-3a59-4098-9c81-83342eb719a4
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::exchange [C++]
@@ -21,19 +21,19 @@ helpviewer_keywords:
 - std::make_pair [C++]
 - std::move [C++]
 - std::swap [C++]
-ms.openlocfilehash: d2b444c2de41651ac74047717ed54a7059866f86
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: a442f3a4b03a62363d465107b7e2ae5f3e975249
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltutilitygt-functions"></a>&lt;yardımcı programı&gt; işlevleri
 ||||  
 |-|-|-|  
-|[Exchange](#exchange)|[İlet](#forward)|[get işlevi &lt;yardımcı programı&gt;](#get)|  
-|[make_pair](#make_pair)|[taşıma](#move)|[değiştirme](#swap)|  
+|[exchange](#exchange)|[forward](#forward)|[get işlevi &lt;yardımcı programı&gt;](#get)|  
+|[make_pair](#make_pair)|[move](#move)|[Değiştirme](#swap)|  
   
-##  <a name="exchange"></a>Exchange  
+##  <a name="exchange"></a>  Exchange  
  **(C ++ 14)**  Bir nesne için yeni bir değer atar ve eski değerini döndürür.  
   
 ```cpp  
@@ -82,7 +82,7 @@ The new value of c1 after exchange is: 2
 */  
 ```  
   
-##  <a name="forward"></a>İlet  
+##  <a name="forward"></a>  İlet  
  Bağımsız değişken bir rvalue'da veya rvalue başvurusundaysa, bağımsız değişkenini bir rvalue başvurusuna koşullu olarak yayınlar. Bu, bir bağımsız değişkenin rvalue olma durumunu mükemmel iletim desteği sunarak iletim işlevine geri yükler.  
   
 ```
@@ -106,11 +106,11 @@ constexpr Type&& forward(typename remove_reference<Type>::type&& Arg) noexcept
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmak için bir açık şablon bağımsız değişken belirtmelisiniz `forward`.  
   
- `forward`bağımsız değişkeni iletin değil. İlk olarak bir rvalue veya rvalue başvuru ise, bunun yerine, tarafından bağımsız değişkeni bir rvalue başvuru için koşullu atama `forward` aşırı çözümlemesi bilgi iletilen bağımsız değişkeninin özgün türü ile derleyici sağlar. Bir iletme işlevi bağımsız değişken görünen türü özgün türünden farklı olabilir — örneğin, ne zaman bir rvalue bir işleve bağımsız değişken olarak kullanılan ve bir parametre adı için; bağlı bir ad sağlar, değeri gerçekte bir rvalue varolup bakılmaksızın bir lvalue — `forward` bağımsız değişkenin rvalue şahit geri yükler.  
+ `forward` bağımsız değişkeni iletin değil. İlk olarak bir rvalue veya rvalue başvuru ise, bunun yerine, tarafından bağımsız değişkeni bir rvalue başvuru için koşullu atama `forward` aşırı çözümlemesi bilgi iletilen bağımsız değişkeninin özgün türü ile derleyici sağlar. Bir iletme işlevi bağımsız değişken görünen türü özgün türünden farklı olabilir — örneğin, ne zaman bir rvalue bir işleve bağımsız değişken olarak kullanılan ve bir parametre adı için; bağlı bir ad sağlar, değeri gerçekte bir rvalue varolup bakılmaksızın bir lvalue — `forward` bağımsız değişkenin rvalue şahit geri yükler.  
   
  Aşırı yükleme çözünürlüğü gerçekleştirmek için bir bağımsız değişken özgün değerinin rvalue şahit geri yükleme olarak bilinir *kusursuz iletme*. Kusursuz iletme bir şablon işlevinin her iki başvuru türünün bağımsız değişkenini kabul etmesini ve aşırı yük çözümlemeleri yapılması gerektiğinde rvalue durumunu geri yüklemesini sağlar. Kusursuz iletme kullanarak, rvalues için taşıma semantiğini koruyabilir ve bağımsız değişkenlerinin yalnızca başvuru türüne göre çeşitlenen işlevler için aşırı yük sağlanmasını önleyebilirsiniz.  
   
-##  <a name="get"></a>Al  
+##  <a name="get"></a>  get  
  Bir öğeyi alır bir `pair` dizin konumu veya türüne göre bir nesne.  
   
 ```
@@ -205,7 +205,7 @@ int main()
 }
 ```  
   
-##  <a name="make_pair"></a>make_pair  
+##  <a name="make_pair"></a>  make_pair  
  Türündeki nesneleri oluşturmak için kullanabileceğiniz bir şablon işlevi `pair`, burada parametre olarak geçirilen veri türleri temel bileşen türleri otomatik olarak seçilir.  
   
 ```
@@ -233,7 +233,7 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
  Oluşturulan çifti nesnesi: `pair` <  `T`, `U`> ( `Val1`, `Val2`).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `make_pair`dönüştürür Nesne türü [reference_wrapper sınıfı](../standard-library/reference-wrapper-class.md) başvuru türleri ve diziler ve işaretçiler işlevlere küçülen dönüştürür.  
+ `make_pair` dönüştürür Nesne türü [reference_wrapper sınıfı](../standard-library/reference-wrapper-class.md) başvuru türleri ve diziler ve işaretçiler işlevlere küçülen dönüştürür.  
   
  Döndürülen içinde `pair` nesnesi `T` şu şekilde belirlenir:  
   
@@ -243,14 +243,14 @@ pair<T, U> make_pair(T&& Val1, U&& Val2);
   
  Döndürülen tür `U` giriş türünden benzer şekilde belirlenir `U`.  
   
- Bir avantajı `make_pair` depolanmakta nesne türlerini derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenler gibi kullanmayan `make_pair<int, int>(1, 2)` kullandığınızda `make_pair` gereksiz yere ayrıntılı olduğundan ve derleme hatasına neden olabilen karmaşık rvalue başvuru sorunlarını ekler. Bu örnekte, doğru sözdizimi olacaktır`make_pair(1, 2)`  
+ Bir avantajı `make_pair` depolanmakta nesne türlerini derleyici tarafından otomatik olarak belirlenir ve açıkça belirtilmesi gerekmez. Açık şablon bağımsız değişkenler gibi kullanmayan `make_pair<int, int>(1, 2)` kullandığınızda `make_pair` gereksiz yere ayrıntılı olduğundan ve derleme hatasına neden olabilen karmaşık rvalue başvuru sorunlarını ekler. Bu örnekte, doğru sözdizimi olacaktır `make_pair(1, 2)`  
   
  `make_pair` Yardımcı işlevini de iki değer çifti giriş parametresi olarak gerektiren bir işlev geçirilecek mümkün kılar.  
   
 ### <a name="example"></a>Örnek  
   Yardımcı işlevini kullanma hakkında bir örnek `make_pair` bildirme ve bir çift başlatmak için bkz: [pair yapısı](../standard-library/pair-structure.md).  
   
-##  <a name="move"></a>taşıma  
+##  <a name="move"></a>  Taşıma  
  Kendi bağımsız değişkenini koşulsuz olarak bir rvalue başvurusuna yayınlar ve böylece kendi türünün taşınması etkinse, taşınabileceğini belirtir.  
   
 ```
@@ -266,16 +266,16 @@ constexpr typename remove_reference<Type>::type&& move(Type&& Arg) noexcept;
 |`Arg`|Yayınlama için bağımsız değişkeni. Ancak türünü `Arg` bir rvalue başvuru belirtilmesi için görünür `move` lvalue başvuru rvalue başvuru bağlayabilirsiniz çünkü lvalue bağımsız değişkenler de kabul eder.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `Arg`bir rvalue başvuru olup olmadığına, bir başvuru türü türüdür.  
+ `Arg` bir rvalue başvuru olup olmadığına, bir başvuru türü türüdür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şablon bağımsız değişken `Type` açıkça belirtilmesi, ancak geçirilen değerin türü anlaşılan amaçlanmamıştır `Arg`. Türü `Type` daha ayrıntılı kurallar daraltma başvuru göre ayarlanır.  
   
- `move`bağımsız değişkeni taşımaz. Bunun yerine, bağımsız değişkeni koşulsuz olarak atama tarafından — bir lvalue olabilir — kopyalama, geçirilen değer yerine isteğe bağlı olarak bir rvalue başvuru sonradan taşımak derleyici etkinleştirir `Arg` türü taşıma etkinse. Türü taşıma etkin değilse, bunun yerine kopyalanır.  
+ `move` bağımsız değişkeni taşımaz. Bunun yerine, bağımsız değişkeni koşulsuz olarak atama tarafından — bir lvalue olabilir — kopyalama, geçirilen değer yerine isteğe bağlı olarak bir rvalue başvuru sonradan taşımak derleyici etkinleştirir `Arg` türü taşıma etkinse. Türü taşıma etkin değilse, bunun yerine kopyalanır.  
   
  Değer aktarılırsa `Arg` bir lvalue olan — diğer bir deyişle, bir ada sahip veya adresini alınabilir — taşıma oluştuğunda geçersiz. Geçirilen değerine karşılık gelmiyorsa `Arg` adıyla veya taşınmış sonra adresiyle tarafından.  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap"></a>  Değiştirme  
  İki öğelerini alış verişleri [pair yapısı](../standard-library/pair-structure.md) nesneleri.  
   
 ```

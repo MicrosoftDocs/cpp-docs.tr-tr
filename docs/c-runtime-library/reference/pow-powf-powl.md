@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - powl
 - pow
@@ -29,7 +30,8 @@ f1_keywords:
 - pow
 - _powl
 - powf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - exponential calculations
 - powl function
@@ -40,16 +42,17 @@ helpviewer_keywords:
 - powf function
 - pow function
 ms.assetid: e75c33ed-2e59-48b1-be40-81da917324f1
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 16a0d7beefff97eca04e5f94ab720cda4728935f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 09b618e557fffadd3bfffb431fc7e89458c4f420
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="pow-powf-powl"></a>pow, powf, powl
 Hesaplar `x` üssünü `y`.  
@@ -103,14 +106,14 @@ long double powl(
   
 |X değerleri ve y|Pow dönüş değeri|  
 |-----------------------|-------------------------|  
-|`x`\< > 0 ve `y` 0,0 =|1.|  
-|`x`0,0 = ve `y` 0,0 =|1.|  
-|`x`0,0 = ve `y` < 0|INF|  
+|`x` \< > 0 ve `y` 0,0 =|1.|  
+|`x` 0,0 = ve `y` 0,0 =|1.|  
+|`x` 0,0 = ve `y` < 0|INF|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `pow`2'den büyük tam sayı kayan nokta değerlerine tanımıyor<sup>64</sup> (örneğin, `1.0E100`).  
+ `pow` 2'den büyük tam sayı kayan nokta değerlerine tanımıyor<sup>64</sup> (örneğin, `1.0E100`).  
   
- `pow`Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
+ `pow` Streaming SIMD Extensions 2 (SSE2) kullanan bir uygulama vardır. Bilgi ve kısıtlamaları SSE2 uygulama kullanımı hakkında bkz [_set_SSE2_enable](../../c-runtime-library/reference/set-sse2-enable.md).  
   
  Aşırı yükleme C++ izin verdiğinden, çeşitli aşırı hiçbirini çağırabilirsiniz `pow`. Bir C programı `pow` her zaman iki çift değerlerini alır ve bir double değeri döndürür.  
   
@@ -154,5 +157,5 @@ int main( void )
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
  [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
  [Günlük, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
- [Sqrt, sqrtf, sqrtl](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)   
+ [sqrt, sqrtf, sqrtl](../../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)   
  [_CIpow](../../c-runtime-library/cipow.md)

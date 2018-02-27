@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _execvpe
 - _wexecvpe
@@ -28,29 +29,31 @@ f1_keywords:
 - execvpe
 - _wexecvpe
 - _execvpe
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wexecvpe function
 - execvpe function
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 3c51e9c4247a77d16fe8621ff98b7f3a50f571e7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 44622de8446228e543eccab0d8191845e76551dd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="execvpe-wexecvpe"></a>_execvpe, _wexecvpe
 Yükler ve yeni alt işlemleri çalıştırır.  
   
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -80,7 +83,7 @@ intptr_t _wexecvpe(
 ## <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, bu işlevler için arama işlemi döndürmeyin. Dönüş değeri-1, bu durumda bir hata gösterir `errno` genel değişkeni ayarlanır.  
   
-|`errno`değer|Açıklama|  
+|`errno` Değer|Açıklama|  
 |-------------------|-----------------|  
 |`E2BIG`|Ortam ayarları ve bağımsız değişkenler için gerekli alanı 32 KB'yi aşıyor.|  
 |`EACCES`|Belirtilen dosya kilitleme veya paylaşım ihlali var.|  
@@ -111,7 +114,7 @@ intptr_t _wexecvpe(
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
  [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [_onexit, _onexit_m](../../c-runtime-library/reference/onexit-onexit-m.md)   

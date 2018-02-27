@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <atomic>
 - atomic/std::atomic_int_least32_t
@@ -53,18 +54,20 @@ f1_keywords:
 - atomic/std::atomic_int8_t
 - atomic/std::atomic_int64_t
 - atomic/std::atomic_uint_least64_t
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: e79a6b9f-52ff-48da-9554-654c4e1999f6
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2c7eb0c56b34232725cdb7268ed09477063b1a1b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dd543003e7edba4e1766efc11670fd6e505820bb
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltatomicgt"></a>&lt;atomic&gt;
 Atomik işlemleri destekleyen türler oluşturmak için kullanılacak şablonu sınıfları tanımlar.  
@@ -106,7 +109,7 @@ Atomik işlemleri destekleyen türler oluşturmak için kullanılacak şablonu s
   
  Her tam sayı türleri için bu Tamsayı türünde bir nesne yöneten karşılık gelen bir adlandırılmış atomik türü yok. Her `atomic_integral` türü karşılık gelen örnek oluşturma aynı sayıda üye işlevi `atomic<T>` ve herhangi bir üye olmayan atomik işlevleri için geçirilebilir.  
   
-|`atomic_integral`Türü|Tam sayı türü|`atomic_is_lock_free`Makrosu|  
+|`atomic_integral` Türü|Tam sayı türü|`atomic_is_lock_free` Macro|  
 |----------------------------|-------------------|---------------------------------|  
 |`atomic_char`|`char`|`ATOMIC_CHAR_LOCK_FREE`|  
 |`atomic_schar`|`signed char`|`ATOMIC_CHAR_LOCK_FREE`|  

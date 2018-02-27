@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _eof
+ms.topic: reference
+apiname:
+- _eof
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,8 +23,10 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: _eof
-dev_langs: C++
+f1_keywords:
+- _eof
+dev_langs:
+- C++
 helpviewer_keywords:
 - eof function
 - end of file, testing for
@@ -31,16 +35,17 @@ helpviewer_keywords:
 - testing, for end-of-file
 - end of file
 ms.assetid: 265703f4-d07e-4005-abf3-b1d0cdd9e0b0
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d4e53bbed704b0acb1ad613bb05a0653ea305ba2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 106f673f5058043dfe0443970e9d946315c91d6d
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="eof"></a>_eof
 Dosya sonu (EOF) için testleri.  
@@ -58,7 +63,7 @@ int _eof(
  Açık olan dosyaya başvuran dosya tanımlayıcısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_eof`geçerli konumu dosya sonu veya 0 ise değilse 1 döndürür. Dönüş değeri -1, bir hata gösterir; Bu durumda, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EBADF`, geçersiz bir dosya tanımlayıcısı gösterir.  
+ `_eof` geçerli konumu dosya sonu veya 0 ise değilse 1 döndürür. Dönüş değeri -1, bir hata gösterir; Bu durumda, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EBADF`, geçersiz bir dosya tanımlayıcısı gösterir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_eof` İşlevi belirler dosyasının sonuna ile ilişkili olup olmadığını `fd` üst sınırına ulaşıldı.  

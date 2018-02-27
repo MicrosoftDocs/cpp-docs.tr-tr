@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - <complex>
 - std::<complex>
-dev_langs: C++
-helpviewer_keywords: complex header
+dev_langs:
+- C++
+helpviewer_keywords:
+- complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 178318ba212665e9157d1c49289d3167056b0e83
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e23707a342e666e49a15c47e0dc82c4e882176cd
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltcomplexgt"></a>&lt;karmaşık&gt;
 Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablonları.  
@@ -48,15 +52,15 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
   
 -   Karmaşık sayıyı ADDITIVE ters (*bir*, *b*) olan (-*bir*, -*b*) ve multiplicative ters tüm karmaşık numaralar dışında (0, 0) değil  
   
-     (*bir*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>), -*b*/ (*bir*<sup>2</sup> + *b*<sup>2</sup>))  
+     (*a*/(*a*<sup>2</sup> + *b*<sup>2</sup>), -*b*/(*a*<sup>2</sup> + *b*<sup>2</sup>))  
   
  Karmaşık bir sayıyı temsil eden tarafından *z* = (*bir*, *b*) biçiminde *z* = *bir*  +  *BI*, burada *ı*<sup>2</sup> gerçek sayı kümesi cebiri karmaşık sayı kümesi ve bileşenleri için uygulanabilir için = -1, kuralları. Örneğin:  
   
-  (1 + 2*ı*) \* (2 + 3*ı*)  
-  = 1 \* (2 + 3*ı*) + 2*ı* \* (2 + 3*ı*)  
-  = (2 + 3*ı*) + (4*ı* + 6*ı*<sup>2</sup>)  
-  = (2 - 6) + (3 + 4)*t*  
-  = -4 + 7*t*  
+  (1 + 2*i*) \* (2 + 3*i*)  
+  = 1 \* (2 + 3*i*) + 2*i* \* (2 + 3*i*)  
+  = (2 + 3*i*) + (4*i* + 6*i*<sup>2</sup>)  
+  = (2 - 6) + (3 + 4)*i*  
+  = -4 + 7*i*  
   
  Karmaşık numaralar sistem alanıdır ancak sıralı bir alan değil. Olduğundan gerçek sayılar ve onun alt kümeler, alan için gerçek sayılar için oldukları gibi karmaşık numaralar inequalities uygulanamaz karmaşık numaralarını sıralamaya yoktur.  
   
@@ -84,8 +88,8 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
   
 |||  
 |-|-|  
-|[Abs](../standard-library/complex-functions.md#abs)|Karmaşık bir sayının modulus hesaplar.|  
-|[arg](../standard-library/complex-functions.md#arg)|Bağımsız değişkeni bir karmaşık numarasından ayıklar.|  
+|[abs](../standard-library/complex-functions.md#abs)|Karmaşık bir sayının modulus hesaplar.|  
+|[Arg](../standard-library/complex-functions.md#arg)|Bağımsız değişkeni bir karmaşık numarasından ayıklar.|  
 |[conj](../standard-library/complex-functions.md#conj)|Karmaşık bir sayının karmaşık çiftini döndürür.|  
 |[cos](../standard-library/complex-functions.md#cos)|Karmaşık bir sayının kosinüsünü döndürür.|  
 |[COSH](../standard-library/complex-functions.md#cosh)|Karmaşık bir sayının hiperbolik kosinüsünü döndürür.|  
@@ -93,13 +97,13 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
 |[imag](../standard-library/complex-functions.md#imag)|Karmaşık bir sayının sanal bileşeni ayıklar.|  
 |[Günlük](../standard-library/complex-functions.md#log)|Karmaşık bir sayının doğal logaritmasını döndürür.|  
 |[log10](../standard-library/complex-functions.md#log10)|Karmaşık bir sayının 10 tabanında logaritmasını döndürür.|  
-|[Norm](../standard-library/complex-functions.md#norm)|Karmaşık bir sayının norm ayıklar.|  
-|[Kutupsal](../standard-library/complex-functions.md#polar)|Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayı Kartezyen biçiminde döndürür.|  
+|[norm](../standard-library/complex-functions.md#norm)|Karmaşık bir sayının norm ayıklar.|  
+|[polar](../standard-library/complex-functions.md#polar)|Belirtilen modül ve bağımsız değişken için karşılık gelen, karmaşık sayı Kartezyen biçiminde döndürür.|  
 |[POW](../standard-library/complex-functions.md#pow)|Karmaşık sayıyı diğer bir karmaşık sayının kuvvetine bir tabanı yükselterek elde karmaşık sayı değerlendirir.|  
-|[Gerçek](../standard-library/complex-functions.md#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
+|[real](../standard-library/complex-functions.md#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
 |[sin](../standard-library/complex-functions.md#sin)|Karmaşık bir sayının sinüsünü döndürür.|  
-|[SİNH](../standard-library/complex-functions.md#sinh)|Karmaşık bir sayının hiperbolik sinüsünü döndürür.|  
-|[Sqrt](../standard-library/complex-functions.md#sqrt)|Karmaşık bir sayının kare kökünü döndürür.|  
+|[sinh](../standard-library/complex-functions.md#sinh)|Karmaşık bir sayının hiperbolik sinüsünü döndürür.|  
+|[sqrt](../standard-library/complex-functions.md#sqrt)|Karmaşık bir sayının kare kökünü döndürür.|  
 |[tan](../standard-library/complex-functions.md#tan)|Karmaşık bir sayının tanjantını döndürür.|  
 |[TANH](../standard-library/complex-functions.md#tanh)|Karmaşık bir sayının hiperbolik tanjantını döndürür.|  
   
@@ -108,12 +112,12 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
 |||  
 |-|-|  
 |[operator!=](../standard-library/complex-operators.md#op_neq)|Testleri eşitsizlik açısından iki karmaşık numaralar, biri veya her ikisi de arasındaki bir tür gerçek ve sanal bölümleri için alt ait olabilir.|  
-|[işleç *](../standard-library/complex-operators.md#op_star)|İki çarpar karmaşık numaralar, biri veya her ikisi de ait alt gerçek ve sanal bölümleri için türü.|  
-|[operator +](../standard-library/complex-operators.md#op_add)|İki karmaşık numaralar, biri veya her ikisi de alt gerçek ve sanal bölümleri için türü ait ekler.|  
+|[operator*](../standard-library/complex-operators.md#op_star)|İki çarpar karmaşık numaralar, biri veya her ikisi de ait alt gerçek ve sanal bölümleri için türü.|  
+|[operator+](../standard-library/complex-operators.md#op_add)|İki karmaşık numaralar, biri veya her ikisi de alt gerçek ve sanal bölümleri için türü ait ekler.|  
 |[operator-](../standard-library/complex-operators.md#operator-)|İki çıkarır karmaşık numaralar, biri veya her ikisi de ait alt gerçek ve sanal bölümleri için türü.|  
 |[operator /](../standard-library/complex-operators.md#op_div)|Böler iki karmaşık numaralar, biri veya her ikisi de alt gerçek ve sanal bölümleri için türü ait.|  
 |[operator <\<](../standard-library/complex-operators.md#op_lt_lt)|Çıkış akışı bir karmaşık numara ekler şablon işlevi.|  
-|[operator ==](../standard-library/complex-operators.md#op_eq_eq)|İki karmaşık numaralar, biri veya her ikisi de arasında eşitlik için test türü gerçek ve sanal bölümleri için alt ait olabilir.|  
+|[operator==](../standard-library/complex-operators.md#op_eq_eq)|İki karmaşık numaralar, biri veya her ikisi de arasında eşitlik için test türü gerçek ve sanal bölümleri için alt ait olabilir.|  
 |[İşleç >>](../standard-library/complex-operators.md#op_gt_gt)|Giriş akışından karmaşık değer ayıklar şablon işlevi.|  
   
 ### <a name="classes"></a>Sınıflar  
@@ -130,7 +134,7 @@ Kapsayıcı Şablon sınıfı tanımlayan **karmaşık** ve destekleyici şablon
   
 |||  
 |-|-|  
-|`constexpr complex<long double> operator""il(long double d)`<br /><br /> `constexpr complex<long double> operator""il(unsigned long long d)`|Döndürür:`complex<long double>{0.0L, static_cast<long double>(d)}`|  
+|`constexpr complex<long double> operator""il(long double d)`<br /><br /> `constexpr complex<long double> operator""il(unsigned long long d)`|döndürür: `complex<long double>{0.0L, static_cast<long double>(d)}`|  
 |`constexpr complex<double> operator""i(long double d)`<br /><br /> `constexpr complex<double> operator""i(unsigned long long d)`|Döndürür: `complex<double>{0.0, static_cast<double>(d)}`.|  
 |`constexpr complex<float> operator""if(long double d)`<br /><br /> `constexpr complex<float> operator""if(unsigned long long d)`|Döndürür: `complex<float>{0.0f, static_cast<float>(d)}`.|  
   

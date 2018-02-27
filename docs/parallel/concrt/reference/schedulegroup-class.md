@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - ScheduleGroup
 - CONCRT/concurrency::ScheduleGroup
@@ -14,19 +15,22 @@ f1_keywords:
 - CONCRT/concurrency::ScheduleGroup::Reference
 - CONCRT/concurrency::ScheduleGroup::Release
 - CONCRT/concurrency::ScheduleGroup::ScheduleTask
-dev_langs: C++
-helpviewer_keywords: ScheduleGroup class
+dev_langs:
+- C++
+helpviewer_keywords:
+- ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: f1ca427842245701c1d8dfbcef946ef1586acbf0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2ba16ff0e17a0a6e8cc63cefaebe1e66a93af7c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
 Bir zamanlama grubu için bir Özet temsil eder. Zamanlama grupları bir dizi ilgili iş geçici olarak, başka bir gruba geçmeden önce aynı gruptaki başka bir görev yürütme ya da dağınık şekilde, aynı aynı grubu içindeki birden çok öğe çalıştırarak birbirine yakın zamanlanma gelen o avantajları düzenleyin. NUMA düğümü veya fiziksel yuva.  
@@ -49,7 +53,7 @@ class ScheduleGroup;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Kimliği](#id)|Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı döndürür.|  
+|[Id](#id)|Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı döndürür.|  
 |[Başvuru](#reference)|Zamanlama Grup başvurusu sayısını artırır.|  
 |[Sürüm](#release)|Azaltır Zamanlayıcı Grup başvurusu sayısı.|  
 |[ScheduleTask](#scheduletask)|Hafif görev zamanlama grubundaki zamanlar.|  
@@ -62,7 +66,7 @@ class ScheduleGroup;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="id"></a>Kimliği 
+##  <a name="id"></a> Kimliği 
 
  Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı döndürür.  
   
@@ -73,7 +77,7 @@ virtual unsigned int Id() const = 0;
 ### <a name="return-value"></a>Dönüş Değeri  
  Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı.  
   
-##  <a name="operator_delete"></a>delete işleci 
+##  <a name="operator_delete"></a> delete işleci 
 
  A `ScheduleGroup` nesne bozulur dahili olarak çalışma zamanı tarafından tüm dış başvuruları yayımlandığında. Açıkça silinemiyor.  
   
@@ -92,7 +96,7 @@ void operator delete(
  `_PObject`  
  Silinecek nesne için bir işaretçi.  
   
-##  <a name="reference"></a>Başvuru 
+##  <a name="reference"></a> Başvuru 
 
  Zamanlama Grup başvurusu sayısını artırır.  
   
@@ -106,7 +110,7 @@ virtual unsigned int Reference() = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Bu, genellikle zamanlama Grup birleşim için kullanım ömrünü yönetmek için kullanılır. Bir zamanlama grubu başvuru sayısı sıfıra düşerse, zamanlama Grup çalışma zamanı tarafından silindi. Ya da kullanılarak oluşturulan bir zamanlama grubu [CurrentScheduler::CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) yöntemini veya [Scheduler::CreateScheduleGroup](scheduler-class.md#createschedulegroup) yöntemi başlar bir başvuru sayısına.  
   
-##  <a name="release"></a>Sürüm 
+##  <a name="release"></a> Sürüm 
 
  Azaltır Zamanlayıcı Grup başvurusu sayısı.  
   
@@ -122,13 +126,13 @@ virtual unsigned int Release() = 0;
   
  Belirli Zamanlayıcı örneği ile ilişkili bir zamanlama grubudur. Zamanlayıcı tüm başvurularını serbest önce ikinci yok zamanlayıcıda neden olabilir çünkü zamanlama Grup yapılan tüm başvuruları yayımlanan emin olmanız gerekir. Tanımsız davranış aksi sonuçlarında yapılıyor.  
   
-##  <a name="dtor"></a>~ ScheduleGroup 
+##  <a name="dtor"></a> ~ScheduleGroup 
 
 ```
 virtual ~ScheduleGroup();
 ```  
   
-##  <a name="scheduletask"></a>ScheduleTask 
+##  <a name="scheduletask"></a> ScheduleTask 
 
  Hafif görev zamanlama grubundaki zamanlar.  
   

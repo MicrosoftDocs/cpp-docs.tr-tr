@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - string/std::<string>
 - <string>
-dev_langs: C++
-helpviewer_keywords: string header
+dev_langs:
+- C++
+helpviewer_keywords:
+- string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 14442f2de89c055b35614951a277366616e00250
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 20447d439f0db2d49fe0d9c168a01ee1ca613c79
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 Kapsayıcı Şablon sınıfı tanımlayan `basic_string` ve çeşitli destekleyici şablonları.  
@@ -55,13 +59,13 @@ Kapsayıcı Şablon sınıfı tanımlayan `basic_string` ve çeşitli destekleyi
   
 |||  
 |-|-|  
-|[operator +](../standard-library/string-operators.md#op_add)|İki dize nesnelerini art arda ekler.|  
+|[operator+](../standard-library/string-operators.md#op_add)|İki dize nesnelerini art arda ekler.|  
 |[operator!=](../standard-library/string-operators.md#op_neq)|Dize nesnesi işlecinin sol tarafındaki sağ tarafında dize nesnesi eşit değilse, testleri.|  
-|[operator ==](../standard-library/string-operators.md#op_eq_eq)|Dize nesnesi sağ tarafında işlecinin sol tarafındaki dize nesnesi eşitse testleri.|  
+|[operator==](../standard-library/string-operators.md#op_eq_eq)|Dize nesnesi sağ tarafında işlecinin sol tarafındaki dize nesnesi eşitse testleri.|  
 |[operator <](../standard-library/string-operators.md#op_lt)|Dize nesnesi işlecinin sol tarafındaki çok kısa ise test sağ tarafında dize nesnesi.|  
-|[operator < =](../standard-library/string-operators.md#op_lt_eq)|Dize işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında dize nesnesine eşit veya daha az olur.|  
+|[operator<=](../standard-library/string-operators.md#op_lt_eq)|Dize işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında dize nesnesine eşit veya daha az olur.|  
 |[operator <\<](../standard-library/string-operators.md#op_lt_lt)|Çıkış akışı bir dize ekler şablon işlevi.|  
-|[operator >](../standard-library/string-operators.md#op_gt)|Dize nesnesi işlecinin sol tarafındaki dize nesnesine sağ tarafında büyükse testleri.|  
+|[operator>](../standard-library/string-operators.md#op_gt)|Dize nesnesi işlecinin sol tarafındaki dize nesnesine sağ tarafında büyükse testleri.|  
 |[operator>=](../standard-library/string-operators.md#op_gt_eq)|Dize nesnesi işlecinin sol tarafındaki büyük veya ona eşit dize nesnesine sağ tarafında ise testleri.|  
 |[İşleç >>](../standard-library/string-operators.md#op_gt_gt)|Giriş akışından bir dize ayıklar şablon işlevi.|  
   
@@ -69,8 +73,8 @@ Kapsayıcı Şablon sınıfı tanımlayan `basic_string` ve çeşitli destekleyi
   
 |||  
 |-|-|  
-|[değiştirme](../standard-library/string-functions.md#swap)|İki dizeyi karakter dizilerine değiş tokuş eder.|  
-|[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisi dönüştüren bir`double.`|  
+|[Değiştirme](../standard-library/string-functions.md#swap)|İki dizeyi karakter dizilerine değiş tokuş eder.|  
+|[stod](../standard-library/string-functions.md#stod)|Bir karakter dizisi dönüştüren bir `double.`|  
 |[stof](../standard-library/string-functions.md#stof)|Bir karakter dizisi dönüştüren bir `float`.|  
 |[stoi](../standard-library/string-functions.md#stoi)|Bir karakter dizisi bir tamsayıya dönüştürür.|  
 |[stold](../standard-library/string-functions.md#stold)|Bir karakter dizisi dönüştüren bir `long double`.|  

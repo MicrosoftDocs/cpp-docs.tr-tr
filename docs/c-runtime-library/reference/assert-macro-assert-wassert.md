@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - assert
 - _assert
@@ -29,22 +30,24 @@ f1_keywords:
 - _assert
 - _wassert
 - assert/_wassert
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - aborting programs
 - assert function
 - assert macro
 ms.assetid: a9ca031a-648b-47a6-bdf1-65fc7399dd40
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5a0fe8083cfc131f7e8b1f2133943a1c91f614a6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 757571b9de1dbf86040ecd83ae86c4038207798e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="assert-macro-assert-wassert"></a>Assert makrosu, _assert, _wassert
 İfade bir ve sonucu olduğunda değerlendirir `false`, bir tanılama iletisi yazdırır ve programı durdurur.  
@@ -101,7 +104,7 @@ void _wassert(
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`assert`, `_wassert`|\<Assert.h >|  
+|`assert`, `_wassert`|\<assert.h>|  
   
  İmzası `_assert` işlevi kullanılamaz bir üstbilgi dosyası. İmzası `_wassert` işlevi yalnızca kullanılabilir olduğunda `NDEBUG` makrosu tanımlı değil.  
   
@@ -158,7 +161,7 @@ A problem caused the program to stop working correctly. Windows will close the p
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hata işleme](../../c-runtime-library/error-handling-crt.md)   
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [Yükselt](../../c-runtime-library/reference/raise.md)   
  [Sinyal](../../c-runtime-library/reference/signal.md)   
  [_ASSERT, _ASSERTE, _ASSERT_EXPR makroları](../../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)   

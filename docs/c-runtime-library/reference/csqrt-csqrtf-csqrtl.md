@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - csqrt
 - csqrtf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/csqrt
 - complex/csqrtf
 - complex/csqrtl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - csqrt function
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 0c8f28a0979c5942765c5292fb56af6e4ba25aab
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 65c295031e2b7d4119c988e4253f34dd7897d30c
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 Negatif gerçek ekseni boyunca kesin bir dal ile karmaşık bir sayının kare kökünü alır.  
@@ -80,9 +82,9 @@ _Lcomplex csqrtl(
 ## <a name="return-value"></a>Dönüş Değeri  
  Kare kökünü `z`. Sağ Yarı-düzlemi sonucudur.  
   
-|Giriş|SEH özel durumu|`_matherr`Özel durumu|  
+|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
 |-----------|-------------------|--------------------------|  
-|± QNAN, UL|yok|_DOMAIN|  
+|± QNAN, IND|yok|_DOMAIN|  
 |- ∞|yok|_DOMAIN|  
   
 ## <a name="remarks"></a>Açıklamalar  

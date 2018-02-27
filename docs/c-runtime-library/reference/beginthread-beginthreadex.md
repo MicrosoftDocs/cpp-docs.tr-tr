@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _beginthread
 - _beginthreadex
@@ -28,7 +29,8 @@ f1_keywords:
 - _beginthread
 - beginthreadex
 - _beginthreadex
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _beginthread function
 - threading [C++], creating threads
@@ -36,16 +38,17 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 71d47e67d56da59093db99b5da28daa6f1c18db2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f39ca2a386e605911f01ffe40cf23032d7ca7cb0
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 Bir iş parçacığı oluşturur.  
@@ -112,13 +115,13 @@ uintptr_t _beginthreadex( // MANAGED CODE
 ## <a name="remarks"></a>Açıklamalar  
  `_beginthread` İşlev oluşturur yordamının yürütülmeye bir iş parçacığı `start_address`. Yordam sırasında `start_address` kullanmalısınız `__cdecl` (için yerel kodu) veya `__clrcall` (yönetilen kod için) çağırma ve bir dönüş değerine sahip olmalıdır. İş parçacığı bu yordamından geri döndüğünde, otomatik olarak sonlandırılır. İş parçacıkları hakkında daha fazla bilgi için bkz: [eski kod (Visual C++) için çoklu iş parçacığı desteği](../../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
- `_beginthreadex`Win32 benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453.aspx) API daha fazla daha yakından `_beginthread` yapar. `_beginthreadex`farklı `_beginthread` aşağıdaki yollarla:  
+ `_beginthreadex` Win32 benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453.aspx) API daha fazla daha yakından `_beginthread` yapar. `_beginthreadex` farklı `_beginthread` aşağıdaki yollarla:  
   
--   `_beginthreadex`üç ek parametrelere sahip: `initflag`, `security`, ve `threadaddr`. Yeni bir iş parçacığı askıya alınmış durumda, belirtilen bir güvenlik ile oluşturulan ve kullanarak erişilebilir `thrdaddr`, iş parçacığı tanımlayıcısı olduğu.  
+-   `_beginthreadex` üç ek parametrelere sahip: `initflag`, `security`, ve `threadaddr`. Yeni bir iş parçacığı askıya alınmış durumda, belirtilen bir güvenlik ile oluşturulan ve kullanarak erişilebilir `thrdaddr`, iş parçacığı tanımlayıcısı olduğu.  
   
 -   Yordam sırasında `start_address` için geçirilen `_beginthreadex` kullanmalısınız `__stdcall` (için yerel kodu) veya `__clrcall` (yönetilen kod için) çağırma ve bir iş parçacığı çıkış kodu döndürmesi gerekir.  
   
--   `_beginthreadex`0-1 M yerine hatası döndürür.  
+-   `_beginthreadex` 0-1 M yerine hatası döndürür.  
   
 -   Kullanılarak oluşturulan bir iş parçacığı `_beginthreadex` için yapılan bir çağrı tarafından sonlandırıldı [_endthreadex](../../c-runtime-library/reference/endthread-endthreadex.md).  
   
@@ -128,14 +131,14 @@ uintptr_t _beginthreadex( // MANAGED CODE
   
  Çağırabilirsiniz [_endthread](../../c-runtime-library/reference/endthread-endthreadex.md) veya `_endthreadex` açıkça bir iş parçacığı; sonlandırmak için ancak `_endthread` veya `_endthreadex` iş parçacığı bir parametre olarak geçirilen yordamı döndüğünde otomatik olarak çağrılır. Bir iş parçacığı çağrısıyla sonlandırma `_endthread` veya `_endthreadex` iş parçacığı için ayrılan kaynakların doğru kurtarma sağlamaya yardımcı olur.  
   
- `_endthread`iş parçacığı tutamacı ancak otomatik olarak kapanır `_endthreadex` desteklemez. Bu nedenle, kullandığınızda `_beginthread` ve `_endthread`, açıkça iş parçacığı tutamacı Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. Bu davranış Win32 farklıdır [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API.  
+ `_endthread` iş parçacığı tutamacı ancak otomatik olarak kapanır `_endthreadex` desteklemez. Bu nedenle, kullandığınızda `_beginthread` ve `_endthread`, açıkça iş parçacığı tutamacı Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. Bu davranış Win32 farklıdır [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659.aspx) API.  
   
 > [!NOTE]
->  Libcmt.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın `ExitThread` API çalışma zamanı sistem geri kazanma gelen önlemez böylece ayrılan kaynakları. `_endthread`ve `_endthreadex` ayrılmış iş parçacığı kaynaklarını geri kazanmak ve ardından arama `ExitThread`.  
+>  Libcmt.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın `ExitThread` API çalışma zamanı sistem geri kazanma gelen önlemez böylece ayrılan kaynakları. `_endthread` ve `_endthreadex` ayrılmış iş parçacığı kaynaklarını geri kazanmak ve ardından arama `ExitThread`.  
   
  Yığın ayırma işletim sistemi işleme olduğunda da `_beginthread` veya `_beginthreadex` olarak adlandırılır; iş parçacığı yığınının adresini ya da bu işlevlerin geçirmek zorunda değilsiniz. Ayrıca, `stack_size` bağımsız değişkeni, 0, içinde durum işletim sistemi kullanan aynı değeri belirtilen yığın ana iş parçacığı olabilir.  
   
- `arglist`Yeni oluşturulan iş parçacığına geçirilecek bir parametredir. Genellikle, bu karakter dizesi gibi bir veri öğesi adresidir. `arglist`gerekmiyorsa, boş olabilir ancak `_beginthread` ve `_beginthreadex` için yeni bir iş parçacığı geçirmek için bir değer verilmesi gerekir. Tüm iş parçacıklarının tüm çağrıları uzatırsanız sonlandırılır `abort`, `exit`, `_exit`, veya `ExitProcess`.  
+ `arglist` Yeni oluşturulan iş parçacığına geçirilecek bir parametredir. Genellikle, bu karakter dizesi gibi bir veri öğesi adresidir. `arglist` gerekmiyorsa, boş olabilir ancak `_beginthread` ve `_beginthreadex` için yeni bir iş parçacığı geçirmek için bir değer verilmesi gerekir. Tüm iş parçacıklarının tüm çağrıları uzatırsanız sonlandırılır `abort`, `exit`, `_exit`, veya `ExitProcess`.  
   
  Yeni bir iş parçacığı yerel kendi üst iş parçacığından devralınır. İş parçacığı başına yerel ayar için bir çağrı tarafından etkin olup olmadığını [_configthreadlocale](../../c-runtime-library/reference/configthreadlocale.md) (genel olarak veya yeni iş parçacıklarının yalnızca), iş parçacığının kendi yerel bağımsız olarak, üst öğeden çağırarak değiştirebilirsiniz `setlocale` veya `_wsetlocale`. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -326,6 +329,6 @@ Counter should be 1000000; it is-> 1000000
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
  [_endthread, _endthreadex](../../c-runtime-library/reference/endthread-endthreadex.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   
  [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)

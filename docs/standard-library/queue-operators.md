@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - queue/std::operator!=
 - queue/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - queue/std::operator&lt;
 - queue/std::operator&lt;=
 - queue/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 7c435b48-175c-45b0-88eb-24561044019c
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (queue)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: c3d30f04ad3b8f330c70b75ca21bdab44913f336
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 3590d1421364179a57fc72bee93939e4871ae24c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltqueuegt-operators"></a>&lt;sıra&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit değilse, testleri.  
   
 ```  
@@ -99,7 +100,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi küçükse testleri.  
   
 ```  
@@ -158,7 +159,7 @@ The queue q1 is less than the queue q2.
 The queue q1 is not less than the queue q3.  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Sıranın işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında sıra nesnesinin eşit veya daha az olur.  
   
 ```  
@@ -219,7 +220,7 @@ The queue q1 is greater than the queue q2.
 The queue q1 is less than or equal to the queue q3.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Sıra nesnesinin sağ taraftaki işlecinin sol tarafındaki sıra nesnesi eşitse testleri.  
   
 ```  
@@ -281,7 +282,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi büyükse testleri.  
   
 ```  
@@ -343,7 +344,7 @@ The queue q1 is not greater than the queue q2.
 The queue q1 is greater than the queue q3.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Sıra nesnesinin işlecinin sol tarafındaki sağ tarafında sıra nesnesi eşit veya daha büyük ise testleri.  
   
 ```  
@@ -405,5 +406,5 @@ The queue q1 is greater than or equal to the queue q3.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<sıra >](../standard-library/queue.md)
+ [\<queue>](../standard-library/queue.md)
 

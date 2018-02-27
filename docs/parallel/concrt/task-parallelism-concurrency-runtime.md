@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - structured task groups [Concurrency Runtime]
 - structured tasks [Concurrency Runtime]
@@ -15,16 +17,17 @@ helpviewer_keywords:
 - task parallelism
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-caps.latest.revision: "56"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d2a177f30829719022afdedd810ecc265c94130d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3e4b96228ac867781b00be7ca92a9debcad3f9eb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>Görev Parallelliği (Eşzamanlılık Çalışma Zamanı)
 Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleştirir ve genellikle diğer görevlerle Paralel çalışan iş birimidir. Bir görev halinde düzenlenmiştir ek, daha ayrıntılı görevleri ayrılmış bir *görev grubu*.  
@@ -81,7 +84,7 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
 - [Güçlü programlama](#robust)  
   
-##  <a name="lambdas"></a>Lambda ifadeleri kullanma  
+##  <a name="lambdas"></a> Lambda ifadeleri kullanma  
  Bunların kısa sözdizimi nedeniyle lambda ifadeleri görevleri ve görev grupları tarafından gerçekleştirilen işi tanımlamak için ortak bir yol sağlar. Bazı kullanım ipuçları şunlardır:  
   
 -   Görevler genellikle arka plan iş parçacığı üzerinde çalıştığından, lambda ifadeleri değişkenlerde yakalama zaman nesne ömrü farkında olması. Bir değişken değerle yakaladığınızda, bu değişken bir kopyasını lambda gövdesinde yapılır. Başvuruya göre yakaladığınızda, bir kopya bırakılmaz. Bu nedenle, başvuruya göre yakalama herhangi bir değişken ömrü kullandığı görev outlives emin olun.  
@@ -98,10 +101,10 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
  Lambda ifadeleri hakkında daha fazla bilgi için bkz: [Lambda ifadeleri](../../cpp/lambda-expressions-in-cpp.md).  
   
-##  <a name="task-class"></a>Görev sınıfı  
+##  <a name="task-class"></a> Görev sınıfı  
  Kullanabileceğiniz [concurrency::task](../../parallel/concrt/reference/task-class.md) görevleri bağımlı işlemler kümesine oluşturmak için sınıfı. Bu birleşim model kavramı tarafından desteklenen *devamlılıklar*. Ne zaman yürütülecek bir devamlılık etkinleştirir kod önceki, veya *antecedent*, görev tamamlar. Öncül görev sonucu, bir veya daha fazla devamlılık görevlerini girdisi olarak geçirilir. Öncül bir görev tamamlandığında üzerinde bekleyen herhangi bir devamlılık görevi çalıştırılmak üzere zamanlanmış. Her devamlılık görevi öncül görev sonucunu bir kopyasını alır. Buna karşılık, bu devamlılık görevlerini böylece görevleri zinciri oluşturma diğer devamlılıklar öncül görevlerde de olabilir. Devamlılıklar aralarında belirli bağımlılıkları olan görevler, rastgele uzunlukta zincirleri oluşturmanıza yardımcı olur. Ayrıca, çalışırken bir görevi iptal etme ya da bir görevleri önce başlatır veya İşbirlikçi bir şekilde katılabilir. Bu iptal modeli hakkında daha fazla bilgi için bkz: [PPL'de iptal](cancellation-in-the-ppl.md).  
   
- `task`bir şablon sınıfıdır. Tür parametresi `T` görev tarafından üretilen sonuç türü. Bu tür olabilir `void` görev bir değer döndürmezse. `T`kullanamazsınız `const` değiştiricisi.  
+ `task` bir şablon sınıfıdır. Tür parametresi `T` görev tarafından üretilen sonuç türü. Bu tür olabilir `void` görev bir değer döndürmezse. `T` kullanamazsınız `const` değiştiricisi.  
   
  Bir görev oluşturduğunuzda, sağladığınız bir *iş işlevi* görev gövde gerçekleştirir. Bu çalışma işlevi bir lambda işlev, işlev işaretçisi veya işlev nesnesi biçiminde gelir. Bir görevi sonucu elde etmeden tamamlamak için beklemek için çağrı [concurrency::task::wait](reference/task-class.md#wait) yöntemi. `task::wait` Yöntemi döndürür bir [concurrency::task_status](reference/concurrency-namespace-enums.md#task_group_status) görev tamamlandı veya iptal edildiğini tanımlayan değer. Görev sonucu almak için arama [CONCURRENCY::Task](reference/task-class.md#get) yöntemi. Bu yöntemi çağırır `task::wait` bitiş ve bu nedenle blokları yürütme geçerli iş parçacığının görevi için sonuç kullanılabilir olana kadar beklenecek.  
   
@@ -124,9 +127,9 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
  Kullanan bir örnek `task`, [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md), iptal, bkz: [izlenecek yol: bağlanma kullanarak görevleri ve XML HTTP isteklerini](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md). ( `task_completion_event` Sınıfı bu belgenin sonraki bölümlerinde açıklanan.)  
   
 > [!TIP]
->  Görevler için özel ayrıntıları öğrenmek için [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamaları bkz [c++ zaman uyumsuz programlama](http://msdn.microsoft.com/en-us/512700b7-7863-44cc-93a2-366938052f31) ve [Windows mağazası uygulamalarında C++ zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
+>  UWP uygulamalarında görevlere özgü daha ayrıntılı bilgi için bkz: [c++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) ve [oluşturma zaman uyumsuz işlemleri c++ UWP uygulamalar için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).  
   
-##  <a name="continuations"></a>Devamlılık görevlerini  
+##  <a name="continuations"></a> Devamlılık görevlerini  
  Zaman uyumsuz programlama, ikinci bir işlem çağırma ve veri iletmektir tamamlandığında, bir zaman uyumsuz işlemi çok yaygın bir sorundur. Geleneksel olarak, bu geri çağırma yöntemlerini kullanarak gerçekleştirilir. Eşzamanlılık Çalışma Zamanı'nda aynı işlevselliği tarafından sağlanan *devamlılık görevlerini*. (Yalnızca devamlılığı olarak da bilinir) bir devamlılık görevi olarak bilinen başka bir görev tarafından çağrılan bir zaman uyumsuz bir görevdir *antecedent*, antecedent tamamlandığında. Devamlılıklar kullanarak şunları yapabilirsiniz:  
   
 -   Verileri antecedent devamlılık geçirir.  
@@ -135,7 +138,7 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
 -   Bir devamlılık başlatılmadan önce ya da işbirliği ile çalışırken iptal edin.  
   
--   Devamlılık nasıl zamanlanmalıdır hakkında ipuçları sağlar. (Bu uygulandığı [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] yalnızca uygulamaları. Daha fazla bilgi için bkz: [Windows mağazası uygulamalarında C++ zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)  
+-   Devamlılık nasıl zamanlanmalıdır hakkında ipuçları sağlar. (Yalnızca evrensel Windows Platformu (UWP) uygulamaları için geçerlidir. Daha fazla bilgi için bkz: [oluşturma zaman uyumsuz işlemleri c++ UWP uygulamalar için](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md).)  
   
 -   Aynı antecedent gelen birden çok devamlılıklar çağırır.  
   
@@ -159,21 +162,21 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
  [!code-cpp[concrt-continuation-chain#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_6.cpp)]  
   
- Bir devamlılık de başka bir görev döndürebilir. Hiçbir iptal varsa, bu görevi sonraki devamlılık önce yürütülür. Bu teknik olarak bilinen *zaman uyumsuz açmak*. Zaman uyumsuz açmak ek iş arka planda gerçekleştirmek istiyorsanız, ancak geçerli iş parçacığının engellemek için geçerli görev istemediğiniz durumlarda faydalıdır. (Bu yaygın olan [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] uygulamalar, nerede devamlılıklar çalıştırabilir kullanıcı Arabirimi iş parçacığı üzerinde). Aşağıdaki örnekte, üç görevler gösterilmektedir. İlk görev önce devamlılık görevi çalıştırma başka bir görev döndürür.  
+ Bir devamlılık de başka bir görev döndürebilir. Hiçbir iptal varsa, bu görevi sonraki devamlılık önce yürütülür. Bu teknik olarak bilinen *zaman uyumsuz açmak*. Zaman uyumsuz açmak ek iş arka planda gerçekleştirmek istiyorsanız, ancak geçerli iş parçacığının engellemek için geçerli görev istemediğiniz durumlarda faydalıdır. (Burada devamlılıklar kullanıcı Arabirimi iş parçacığı üzerinde çalıştırabilirsiniz UWP uygulamalarında ortak budur). Aşağıdaki örnekte, üç görevler gösterilmektedir. İlk görev önce devamlılık görevi çalıştırma başka bir görev döndürür.  
   
  [!code-cpp[concrt-async-unwrapping#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_7.cpp)]  
   
 > [!IMPORTANT]
 >  Bir görev devamlılığı türünde iç içe geçmiş bir görevi döndüğünde `N`, sonuçta elde edilen görev türüne sahip `N`değil `task<N>`ve iç içe geçmiş görev tamamlandığında tamamlar. Diğer bir deyişle, devamlılık açmak iç içe geçmiş görevi gerçekleştirir.  
   
-##  <a name="value-versus-task"></a>Değer tabanlı görev tabanlı devamlılıklar karşılaştırması  
+##  <a name="value-versus-task"></a> Değer tabanlı görev tabanlı devamlılıklar karşılaştırması  
  Verilen bir `task` dönüş türü olan nesne `T`, türünde bir değer sağlayabilir `T` veya `task<T>` devamlılık görevlerinin için. Türü sürer devamı `T` olarak bilinen bir *değeri tabanlı devamlılık*. Öncül görev hatasız tamamlayıp iptal değeri tabanlı devamlılık çalıştırılmak üzere zamanlandı. Türü sürer devamı `task<T>` onun parametresi olarak bilinen bir *görev tabanlı devamlılık*. Öncül görev tamamlandığında, hatta zaman öncül görev iptal edildi veya bir özel durum oluşturur görev tabanlı bir devamlılık her zaman çalıştırılmak üzere zamanlandı. Ardından çağırabilirsiniz `task::get` öncül görev sonucu elde etmek için. Öncül görevi iptal edildiğinden, `task::get` oluşturur [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). Öncül görev bir özel durum oluşturduysa `task::get` bu özel durumu yeniden oluşturur. Görev tabanlı bir devamlılık öncül görevini iptal edildiğinde İptal olarak işaretlenmemiş.  
   
-##  <a name="composing-tasks"></a>Görevler oluşturma  
+##  <a name="composing-tasks"></a> Görevler oluşturma  
  Bu bölümde açıklanmıştır [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) ve [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) yardımcı olan İşlevler, ortak desenler uygulamak için birden çok görev oluşturun.  
 
   
-###  <a name="when-all"></a>When_all işlevi  
+###  <a name="when-all"></a> When_all işlevi  
  `when_all` İşlevi bir dizi görevi tamamlandıktan sonra tamamlanan bir görev oluşturur. Bu işlev bir std döndürür::[vektör](../../standard-library/vector-class.md) kümesindeki her görev sonucunu içeren nesne. Aşağıdaki temel örnek kullanır `when_all` üç diğer görevlerin temsil eden bir görev oluşturmak için.  
   
  [!code-cpp[concrt-join-tasks#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_8.cpp)]  
@@ -197,7 +200,7 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
  [!code-cpp[concrt-eh-when_all#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_10.cpp)]  
   
- Göz önünde bulundurun bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] C++ ve XAML kullanır ve bu dosyaları diske yazan uygulama. Aşağıdaki örnekte nasıl kullanılacağını gösterir `when_all` ve `observe_all_exceptions` program tüm özel durumları gözlemleyen emin olmak için.  
+ C++ ve XAML kullanır ve bu dosyaları diske yazan bir UWP uygulaması göz önünde bulundurun. Aşağıdaki örnekte nasıl kullanılacağını gösterir `when_all` ve `observe_all_exceptions` program tüm özel durumları gözlemleyen emin olmak için.  
   
  [!code-cpp[concrt-eh-when_all#2](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_11.cpp)]  
   
@@ -219,10 +222,10 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
 > [!TIP]
 
-> `when_all`üreten engelleyici olmayan bir işlev bir `task` sonuç olarak. Farklı [task::wait](reference/task-class.md#wait), bu işlevi çağırmak güvenli bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] ASTA (uygulama STA) iş parçacığı üzerinde uygulama.  
+> `when_all` üreten engelleyici olmayan bir işlev bir `task` sonuç olarak. Farklı [task::wait](reference/task-class.md#wait), ASTA (uygulama STA) iş parçacığı üzerinde bir UWP uygulamasında bu işlevi çağırmak güvenlidir.  
 
   
-###  <a name="when-any"></a>When_any işlevi  
+###  <a name="when-any"></a> When_any işlevi  
  `when_any` İşlevi bir dizi görevi ilk görevde tamamlandığında tamamlanan bir görev oluşturur. Bu işlev döndüren bir [std::pair](../../standard-library/pair-structure.md) Tamamlanan görevin sonucu ve bu görev kümedeki dizinini içeren nesne.  
   
  `when_any` İşlevi özellikle aşağıdaki senaryolarda kullanışlıdır:  
@@ -249,18 +252,18 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
  `auto t = t1 || t2; // same as when_any`  
   
 > [!TIP]
->  İle `when_all`, `when_any` engellemeyen ve çağırmak güvenli bir [!INCLUDE[win8_appname_long](../../build/includes/win8_appname_long_md.md)] ASTA iş parçacığı üzerinde uygulama.  
+>  İle `when_all`, `when_any` engellemeyen ve ASTA iş parçacığı üzerinde bir UWP uygulamasında çağrılması güvenlidir.  
   
-##  <a name="delayed-tasks"></a>Gecikmeli görev yürütme  
+##  <a name="delayed-tasks"></a> Gecikmeli görev yürütme  
  Bazen, bir koşul sağlanırsa kadar bir görevi yürütme gecikme ya da dış bir olaya yanıt olarak bir görevi başlatmak için gerekli değildir. Örneğin, zaman uyumsuz programlama içinde bir g/ç tamamlama olaya yanıt olarak bir görevi başlatmak gerekebilir.  
   
  Bunu yapmanın iki yolu, bir devamlılık kullanın veya bir görevi başlatmak ve görevin çalışma işlevi içinde bir olayı beklemesi üzeresiniz. Ancak, durumlar vardır, bu teknikler birini kullanmak mümkün değil. Örneğin, bir devamlılık oluşturmak için öncül görev olması gerekir. Ancak, öncül görev yoksa oluşturabileceğiniz bir *görev tamamlama olayı* ve daha sonra kullanılabilir hale geldiğinde öncül görev tamamlama olayı zincirine bağlı. Ayrıca, bir bekletme görevi de bir iş parçacığı engellediğinden, görev tamamlama olaylarının zaman uyumsuz bir işlem tamamlandığında iş gerçekleştirmek için kullanın ve böylece bir iş parçacığı boş.  
   
- [Concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) sınıfı, bu tür birleşim görevleri basitleştirmek yardımcı olur. Gibi `task` sınıfı, tür parametresi `T` görev tarafından üretilen sonuç türü. Bu tür olabilir `void` görev bir değer döndürmezse. `T`kullanamazsınız `const` değiştiricisi. Genellikle, bir `task_completion_event` nesnesi, bir iş parçacığı ya da bu değeri kullanılabilir olduğunda, sinyal görev için sağlanır. Aynı anda bir veya daha fazla görev olay dinleyicileri olarak ayarlanır. Olay ayarladığınızda, dinleyicisi görevleri tamamlamak ve bunların devamlılıklar çalışacak şekilde zamanlanır.  
+ [Concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) sınıfı, bu tür birleşim görevleri basitleştirmek yardımcı olur. Gibi `task` sınıfı, tür parametresi `T` görev tarafından üretilen sonuç türü. Bu tür olabilir `void` görev bir değer döndürmezse. `T` kullanamazsınız `const` değiştiricisi. Genellikle, bir `task_completion_event` nesnesi, bir iş parçacığı ya da bu değeri kullanılabilir olduğunda, sinyal görev için sağlanır. Aynı anda bir veya daha fazla görev olay dinleyicileri olarak ayarlanır. Olay ayarladığınızda, dinleyicisi görevleri tamamlamak ve bunların devamlılıklar çalışacak şekilde zamanlanır.  
   
  Kullanan bir örnek `task_completion_event` bir gecikmeden sonra tamamlanan bir görev uygulamak için bkz: [nasıl yapılır: bir görev bu tamamlandıktan sonra bir gecikme oluşturma](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md).  
   
-##  <a name="task-groups"></a>Görev grupları  
+##  <a name="task-groups"></a> Görev grupları  
  A *görev grubu* görevleri koleksiyonu düzenler. Görev grupları görevleri iş çalarak bir sıra açın iletin. Zamanlayıcı görevleri bu kuyruktan kaldırır ve kullanılabilir bilgi işlem kaynaklarına yürütür. Görevler bir görev grubuna ekledikten sonra son ya da henüz başlatılmamış görevleri iptal etmek tüm görevler için bekleyebilirsiniz.  
   
  PPL'de kullanan [concurrency::task_group](reference/task-group-class.md) ve [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) görev grupları temsil eden sınıfları ve [concurrency::task_handle](../../parallel/concrt/reference/task-handle-class.md) sınıfı Bu gruplar halinde çalışan görevleri göstermek için. `task_handle` Sınıfı çalışma gerçekleştirir kod yalıtır. Gibi `task` sınıfı, iş işlevi lambda işlevi, işlev işaretçisi ya da işlev nesnesi biçiminde gelir. Genellikle çalışmak gerekmez `task_handle` nesnelerini doğrudan. Bunun yerine, bir görev grubuna iş işlevleri geçirdiğiniz ve görev grubu oluşturur ve yönetir `task_handle` nesneleri.  
@@ -277,7 +280,7 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
  Çalışma zamanı görevden bir özel durum ve tamamlamak ilişkili görev grubu için bekleyin, bu özel durum işleme olanak tanıyan bir özel durum işleme modeli de sağlar. Bu özel durum işleme modeli hakkında daha fazla bilgi için bkz: [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
-##  <a name="comparing-groups"></a>Structured_task_group task_group karşılaştırma  
+##  <a name="comparing-groups"></a> Structured_task_group task_group karşılaştırma  
  Kullanmanızı öneririz, ancak `task_group` veya `parallel_invoke` yerine `structured_task_group` sınıfı, kullanmak istediğiniz durumlarda `structured_task_group`, örneğin, ne zaman yazdığınız değişken bir dizi görevi gerçekleştirir veya gerektiren bir paralel algoritması iptal etme desteği. Bu bölümde arasındaki farklar açıklanmaktadır `task_group` ve `structured_task_group` sınıfları.  
   
  `task_group` İş parçacığı bir sınıftır. Bu nedenle, görevlere ekleyebilirsiniz bir `task_group` nesne birden çok iş parçacığından ve beklemesi veya iptal bir `task_group` birden çok iş parçacığı nesnesinden. Oluşturma ve yok etme bir `structured_task_group` nesnesi aynı sözcük kapsam içinde gerçekleşmesi gerekir. Buna ek olarak, tüm işlemler bir `structured_task_group` nesnesi aynı iş parçacığı üzerinde gerçekleşmesi gerekir. Bu kural için özel durum [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) ve [concurrency::structured_task_group::is_canceling](reference/structured-task-group-class.md#is_canceling) yöntemleri. Alt görevin üst görev grubu iptal edin veya herhangi bir zamanda iptali denetlemek için bu yöntemleri çağırabilirsiniz.  
@@ -296,7 +299,7 @@ Eşzamanlılık Çalışma zamanında bir *görev* belirli bir iş gerçekleşti
   
  Her ikisi de `task_group` ve `structured_task_group` iptal destekler. İptal etme hakkında daha fazla bilgi için bkz: [PPL'de iptal](cancellation-in-the-ppl.md).  
   
-##  <a name="example"></a>Örnek  
+##  <a name="example"></a> Örnek  
  Aşağıdaki temel örnek görev gruplarıyla çalışma gösterilmektedir. Bu örnekte `parallel_invoke` iki gerçekleştirmek için algoritma görevler eşzamanlı olarak. Her görev için alt görevler ekler bir `task_group` nesnesi. Unutmayın `task_group` sınıfı görevler eşzamanlı olarak eklemek birden çok görev için izin verir.  
   
  [!code-cpp[concrt-using-task-groups#1](../../parallel/concrt/codesnippet/cpp/task-parallelism-concurrency-runtime_17.cpp)]  
@@ -313,7 +316,7 @@ Message from task: 42
   
  Nasıl kullanılacağını gösteren tam örnekleri için `parallel_invoke` algoritması bkz [nasıl yapılır: paralel sıralama rutini yazmak için parallel_invoke kullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md) ve [nasıl yapılır: paralel işlemleri yürütmekiçinparallel_invokekullanma](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md). Kullanan tam bir örnek için `task_group` sınıfı zaman uyumsuz vadeli uygulamak için bkz: [izlenecek yol: vadeli uygulama](../../parallel/concrt/walkthrough-implementing-futures.md).  
   
-##  <a name="robust"></a>Güçlü programlama  
+##  <a name="robust"></a> Güçlü programlama  
  Rolü iptali ve görevler, görev grupları ve paralel algoritmalar kullandığınızda özel durum işleme anladığınızdan emin olun. Örneğin, paralel iş ağacında iptal bir görev alt görevler çalışmasını engeller. Alt görevler birini uygulamanıza bir kaynak boşaltma gibi önemli bir işlem gerçekleştirdiğinde bu sorunlara neden olabilir. Ayrıca, alt görevin bir özel durum oluşturursa, başka bir özel durum nesnesi yıkıcı yayar ve uygulamanızda tanımsız davranışlara neden. Bu noktalarını gösteren örnek için bkz: [anlayın nasıl iptali ve özel durum işleme etkileyen nesne yok etme](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) en iyi uygulamaları paralel Desen kitaplığı belgedeki bölümünde. Özel durum işleme modeli ppl'de ve iptal etme hakkında daha fazla bilgi için bkz: [iptal](../../parallel/concrt/cancellation-in-the-ppl.md) ve [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
 ## <a name="related-topics"></a>İlgili Konular  

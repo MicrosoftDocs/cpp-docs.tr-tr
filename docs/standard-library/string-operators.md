@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - string/std::operator!=
 - string/std::operator&gt;
@@ -16,9 +16,10 @@ f1_keywords:
 - string/std::operator&lt;=
 - string/std::operator+
 - string/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 33ce8f05-06c7-45d3-a0cb-bcd27cf93910
-caps.latest.revision: "11"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (string)
@@ -28,20 +29,20 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: caa6cad7f0801b5459bd2999ae38a3da52c00469
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: e3aa2d80c41ebf7efe1bab42219cdbbb281c0122
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;&gt;](#op_gt_gt)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;&gt;](#op_gt_gt)|  
 |[işleci&gt;=](#op_gt_eq)|[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|  
-|[işleci&lt;=](#op_lt_eq)|[operator +](#op_add)|[operator ==](#op_eq_eq)|  
+|[işleci&lt;=](#op_lt_eq)|[operator+](#op_add)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_add"></a>operator +  
+##  <a name="op_add"></a>  operator +  
  İki dize nesnelerini art arda ekler.  
   
 ```  
@@ -171,7 +172,7 @@ The string concatenating s1 & s3 is: antiheroine
 The string concatenating s1 & s3 is: antiheroine!  
 ```  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Dize nesnesi işlecinin sol tarafındaki sağ tarafında dize nesnesi eşit değilse, testleri.  
   
 ```  
@@ -258,7 +259,7 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Dize nesnesi sağ tarafında işlecinin sol tarafındaki dize nesnesi eşitse testleri.  
   
 ```  
@@ -345,7 +346,7 @@ The strings s1 & s3 are equal.
 The strings s3 & s2 are not equal.  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Dize nesnesi işlecinin sol tarafındaki çok kısa ise test sağ tarafında dize nesnesi.  
   
 ```  
@@ -437,7 +438,7 @@ The string s1 is not less than the string s3.
 The string s3 is less than the string s2.  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Dize işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında dize nesnesine eşit veya daha az olur.  
   
 ```  
@@ -536,7 +537,7 @@ The string s1 is less than or equal to the string s3.
 The string s2 is greater than the string s3.  
 ```  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt"></a>  işleci&lt;&lt;  
  Bir dize çıkış akışına Yazar şablon işlevi.  
   
 ```  
@@ -559,7 +560,7 @@ basic_ostream<CharType, Traits>& operator<<(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlev aşırı yüklemelerinin **işleci <<** eklemek için bir nesne _ *Str* şablon sınıfının [basic_string](../standard-library/basic-string-class.md) akışa \_  *Ostr.* İşlev etkili bir şekilde döndürür \_ *Ostr*. **Yazma**( \_ *Str*. [c_str](../standard-library/basic-string-class.md#c_str), \_ *Str*. [boyutu](../standard-library/basic-string-class.md#size)).  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Dize nesnesi işlecinin sol tarafındaki dize nesnesine sağ tarafında büyükse testleri.  
   
 ```  
@@ -658,7 +659,7 @@ The string s3 is greater than the string s1.
 The string s2 is greater than the string s3.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Dize nesnesi işlecinin sol tarafındaki büyük veya ona eşit dize nesnesine sağ tarafında ise testleri.  
   
 ```  
@@ -757,7 +758,7 @@ The string s3 is greater than or equal to the string s1.
 The string s2 is greater than or equal to the string s3.  
 ```  
   
-##  <a name="op_gt_gt"></a>işleci&gt;&gt;  
+##  <a name="op_gt_gt"></a>  işleci&gt;&gt;  
  Bir dizeyi bir giriş akışından okuma şablon işlevi.  
   
 ```  
@@ -788,7 +789,7 @@ basic_istream<CharType, Traits>& operator>>(
   
  İşlev ayıklar sonra `_Istr`. [max_size](../standard-library/basic-string-class.md#max_size) öğeleri.  
   
--   Bir öğenin işlevi ayıklar sonra *ch* kendisi için [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **CharType**> > ( `getloc`). **olan**( **ctype** \< **CharType**>:: **alanı**, *ch*) karakteri put; bu durumda true Geri.  
+-   Bir öğenin işlevi ayıklar sonra *ch* kendisi için [use_facet](../standard-library/basic-filebuf-class.md#open)< **ctype** \< **CharType**> > ( `getloc`). **olan**( **ctype** \< **CharType**>:: **alanı**, *ch*) karakteri geri alın; bu durumda true .  
   
  Öğe işlevi ayıklar, çağıran [setstate](../standard-library/basic-ios-class.md#setstate)( `ios_base::failbit`). Herhangi bir durumda, çağıran **istr**. **Genişlik**(0) ve döndürür \* **bu**.  
   

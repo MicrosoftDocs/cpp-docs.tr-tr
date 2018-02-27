@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
-ms.topic: 'index-page '
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - classes [C++], ATL
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: ab3e57cc5ccaedb5ad75ffa601f1d6c679c0ea6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: bc8f03660742f0e752bb9ef12043af841797d0ab
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atl-classes"></a>ATL sınıfları
 Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir sınıfın kategoriye göre bulmak için bkz: [ATL sınıfına genel bakış](../../atl/atl-class-overview.md).  
@@ -99,7 +102,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md)|Bu sınıf modül bulunduğu bir başvuru sayısı yönetir, `Base` nesnesi.|atlcom.h|  
 |[CComObjectNoLock](../../atl/reference/ccomobjectnolock-class.md)|Bu sınıf uygulayan **IUnknown** toplanmayan nesne ancak mu modülü kilit sayısı oluşturucuda artırma.|atlcom.h|  
 |[CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)|Bu typedef, [in uygulamasına](../../atl/reference/ccomobjectrootex-class.md) iş parçacığı modeli sunucusunun varsayılan şablonlaştırılmış.|atlcom.h|  
-|[İn uygulamasına](../../atl/reference/ccomobjectrootex-class.md)|Bu sınıf, nesne başvuru sayısı Yönetimi toplanmayan ve toplanan nesneleri işlemek için yöntemleri sağlar.|atlcom.h|  
+|[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)|Bu sınıf, nesne başvuru sayısı Yönetimi toplanmayan ve toplanan nesneleri işlemek için yöntemleri sağlar.|atlcom.h|  
 |[CComObjectStack](../../atl/reference/ccomobjectstack-class.md)|Bu sınıf geçici bir COM nesnesi oluşturur ve bir iskelet uygulamasıyla sağlar **IUnknown**.|atlcom.h|  
 |[CComPolyObject](../../atl/reference/ccompolyobject-class.md)|Bu sınıf uygulayan **IUnknown** bir toplanmış veya toplanmayan nesnesi.|atlcom.h|  
 |[CComPtr](../../atl/reference/ccomptr-class.md)|COM arabirimi işaretçileri yönetmek için bir akıllı işaretçi sınıfı.|atlcomcli.h|  
@@ -122,7 +125,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)|Bu sınıf varsayılan öğesi karşılaştırma işlevleri sağlar.|atlcoll.h|  
 |[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)|Bu sınıf, bir koleksiyon sınıfı için varsayılan yöntemleri ve işlevler sağlar.|atlcoll.h|  
 |[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)|Bu sınıf, karma değerleri hesaplamak için statik bir işlev sağlar.|atlcoll.h|  
-|[Cdialogımpl](../../atl/reference/cdialogimpl-class.md)|Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.|atlwin.h|  
+|[CDialogImpl](../../atl/reference/cdialogimpl-class.md)|Bu sınıf kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemler sağlar.|atlwin.h|  
 |[CDynamicChain](../../atl/reference/cdynamicchain-class.md)|Bu sınıf ileti eşlemeleri dinamik zincirleme destekleyen yöntemler sağlar.|atlwin.h|  
 |[CElementTraits](../../atl/reference/celementtraits-class.md)|Bu sınıf tarafından koleksiyon sınıfları, yöntemleri ve işlevleri taşıma, kopyalama, karşılaştırma ve karma işlemleri için sağlamak için kullanılır.|atlcoll.h|  
 |[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)|Bu sınıf, varsayılan copy sağlar ve koleksiyon sınıfı yöntemleri taşıyın.|atlcoll.h|  
@@ -151,7 +154,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[CSacl](../../atl/reference/csacl-class.md)|SACL (sistem erişim denetim listesi) yapısı için bir sarmalayıcı sınıftır.|atlsecurity.h|  
 |[CSecurityAttributes](../../atl/reference/csecurityattributes-class.md)|Bu sınıf için ince sarmalayıcı, **SECURITY_ATTRIBUTES** yapısı.|atlsecurity.h|  
 |[CSecurityDesc](../../atl/reference/csecuritydesc-class.md)|Bu sınıf için sarmalayıcı, **SECURITY_DESCRIPTOR** yapısı.|atlsecurity.h|  
-|[CSID](../../atl/reference/csid-class.md)|Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.|atlsecurity.h|  
+|[CSid](../../atl/reference/csid-class.md)|Bu sınıf için sarmalayıcı, bir `SID` (güvenlik tanımlayıcısı) yapısı.|atlsecurity.h|  
 |[CSimpleArray](../../atl/reference/csimplearray-class.md)|Bu sınıf, basit bir dizi yönetme için yöntemleri sağlar.|atlsimpcoll.h|  
 |[CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md)|Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.|atlsimpcoll.h|  
 |[CSimpleArrayEqualHelperFalse](../../atl/reference/csimplearrayequalhelperfalse-class.md)|Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.|atlsimpcoll.h|  
@@ -216,7 +219,7 @@ Etkin Şablon kitaplığı (ATL) aşağıdaki sınıflar içerir. Belirli bir s�
 |[ISupportErrorInfoImpl](../../atl/reference/isupporterrorinfoimpl-class.md)|Bu sınıf, bir varsayılan uygulamasını sağlar `ISupportErrorInfo Interface` arabirim ve tek bir arabirim bir nesne üzerinde hataları oluşturduğunda kullanılabilir.|atlcom.h|  
 |[IThreadPoolConfig Arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)|Bu arabirim, bir iş parçacığı havuzu yapılandırmak için yöntemleri sağlar.|atlutil.h|  
 |[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|Bu sınıf uygulayan **IUnknown** ve varsayılan uygulamalarını sağlar [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375)arabirimleri.|atlctl.h|  
-|[IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient`istemcileri tarafından uygulanan arabirimi [CWorkerThread](../../atl/reference/cworkerthread-class.md) sınıfı.|atlutil.h|  
+|[IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` istemcileri tarafından uygulanan arabirimi [CWorkerThread](../../atl/reference/cworkerthread-class.md) sınıfı.|atlutil.h|  
 |[_U_MENUorID](../../atl/reference/u-menuorid-class.md)|Bu sınıf için sarmalayıcıları sağlar **CreateWindow'u** ve **CreateWindowEx**.|atlwin.h|  
 |[_U_RECT](../../atl/reference/u-rect-class.md)|Bu bağımsız değişken bağdaştırıcı sınıfı ya da verir `RECT` işaretçileri veya bakımından işaretçileri uygulanan bir işlev geçirilmesi başvuruları.|atlwin.h|  
 |[_U_STRINGorID](../../atl/reference/u-stringorid-class.md)|Bu bağımsız değişken bağdaştırıcı sınıfı ya da kaynak adları verir (`LPCTSTR`s) veya kaynak kimlikleri (**UINT**s) kullanarak bir dize kimliği dönüştürmek arayan gerek kalmadan bir işleve iletilecek **MAKEINTRESOURCE** makrosu.|atlwin.h|  

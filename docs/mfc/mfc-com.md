@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: MFC COM (MFC)
-dev_langs: C++
+f1_keywords:
+- MFC COM (MFC)
+dev_langs:
+- C++
 helpviewer_keywords:
 - MFC, COM support
 - MFC ActiveX controls [MFC], COM support in MFC
@@ -17,16 +20,17 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 827bef034eeb7fc46b397c50f5ddf0c4cb6e48fc
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dd9035c7b80b36e8124c827c0b3d1b76c59deb52
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="mfc-com"></a>MFC COM
 Çoğu Etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır ancak bir alt kümesini MFC COM, desteklemek için tasarlanmıştır COM programlama için. MFC'nin COM desteği konu bu bölümde açıklanmaktadır  
@@ -53,7 +57,7 @@ ms.lasthandoff: 12/21/2017
   
 -   [Otomasyon](../mfc/automation.md) (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek için ya da "bunlar işlenebilir nesnelerini ortaya çıkarmak için" mümkün kılar.  
   
-     Otomatik nesne yerel olabilir veya [uzak](../mfc/remote-automation.md) (başka bir makinede bir ağ üzerinden erişilebilir). Otomasyon OLE ve COM nesneleri için kullanılabilir.  
+     Otomatik nesne yerel veya uzak (başka bir makine bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE ve COM nesneleri için kullanılabilir.  
   
 -   Bu bölümde MFC, örneğin, kullanarak COM bileşenlerini yazma konusunda bilgi de sağlanır. [bağlantı noktaları](../mfc/connection-points.md).  
   
@@ -65,8 +69,6 @@ ms.lasthandoff: 12/21/2017
  [Etkin Belge Kapsaması](../mfc/active-document-containment.md)  
   
  [Otomatikleştirme](../mfc/automation.md)  
-  
- [Uzak Otomasyon](../mfc/remote-automation.md)  
   
  [Bağlantı Noktaları](../mfc/connection-points.md)  
   

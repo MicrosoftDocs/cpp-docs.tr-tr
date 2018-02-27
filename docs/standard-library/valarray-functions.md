@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - valarray/std::abs
 - valarray/std::acos
@@ -25,7 +25,7 @@ f1_keywords:
 - valarray/std::tan
 - valarray/std::tanh
 ms.assetid: 109778fc-440e-4239-b23e-bafda2b165c2
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::abs [C++]
@@ -45,23 +45,23 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: b15c90c9346ae490e51f6b28cc508164ead395b4
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 0c6734e0c776a27057ef9f3bbe8c5be1ae0c7990
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltvalarraygt-functions"></a>&lt;valarray&gt; işlevleri
 ||||  
 |-|-|-|  
-|[Abs](#abs)|[ACOS](#acos)|[asin](#asin)|  
-|[atan](#atan)|[ATAN2](#atan2)|[cos](#cos)|  
+|[abs](#abs)|[acos](#acos)|[asin](#asin)|  
+|[atan](#atan)|[atan2](#atan2)|[cos](#cos)|  
 |[COSH](#cosh)|[exp](#exp)|[Günlük](#log)|  
 |[log10](#log10)|[POW](#pow)|[sin](#sin)|  
-|[SİNH](#sinh)|[Sqrt](#sqrt)|[değiştirme](#swap)|  
+|[sinh](#sinh)|[sqrt](#sqrt)|[Değiştirme](#swap)|  
 |[tan](#tan)|[TANH](#tanh)|  
   
-##  <a name="abs"></a>Abs  
+##  <a name="abs"></a>  Abs  
  Öğeleri girdi valarray öğelerini mutlak değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -113,7 +113,7 @@ The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .
 The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .  
 ```  
   
-##  <a name="acos"></a>ACOS  
+##  <a name="acos"></a>  ACOS  
  Öğeleri girdi valarray öğelerini arkkosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -182,7 +182,7 @@ The arccosine of the initial valarray is:
          0  radians, which is            0  degrees  
 ```  
   
-##  <a name="asin"></a>asin  
+##  <a name="asin"></a>  asin  
  Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -251,7 +251,7 @@ The arcsine of the initial valarray is:
     1.5708  radians, which is           90  degrees  
 ```  
   
-##  <a name="atan"></a>atan  
+##  <a name="atan"></a>  atan  
  Öğeleri girdi valarray öğelerini arktanjantını asıl değerine eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -323,7 +323,7 @@ The arcsine of the initial valarray is:
     1.5608  radians, which is      89.4271  degrees  
 ```  
   
-##  <a name="atan2"></a>ATAN2  
+##  <a name="atan2"></a>  ATAN2  
  Öğeleri arktanjantını Kartezyen için eşit olan bir valarray sabitler birleşimi ve valarrays öğeleri tarafından belirtilen bileşenleri döndürür.  
   
 ```  
@@ -347,11 +347,11 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir valarray öğeleri `I` arktanjantını için eşit:  
   
-- `left`[ *I* ] / *_Righ*t [ *ı* ] ilk şablon işlevi için.  
+- `left` [ *I* ] / *_Righ*t [ *ı* ] ilk şablon işlevi için.  
   
-- `left`[ *I* ] / `right` ikinci şablon işlevi için.  
+- `left` [ *I* ] / `right` ikinci şablon işlevi için.  
   
-- `left` / `right`[ *I* ] üçüncü şablon işlevi için.  
+- `left` / `right` [ *I* ] üçüncü şablon işlevi için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Radyan cinsinden döndürülen öğeler birimleridir.  
@@ -413,7 +413,7 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees  
 ```  
   
-##  <a name="cos"></a>cos  
+##  <a name="cos"></a>  cos  
  Öğeleri girdi valarray öğelerini kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -487,7 +487,7 @@ The cosine of the initial valarray is:
 -1  
 ```  
   
-##  <a name="cosh"></a>COSH  
+##  <a name="cosh"></a>  COSH  
  Öğeleri girdi valarray öğelerini hiperbolik kosinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -566,7 +566,7 @@ The hyperbolic cosine of the initial valarray is:
 11.592  
 ```  
   
-##  <a name="exp"></a>exp  
+##  <a name="exp"></a>  exp  
  Öğeleri girdi valarray öğelerinin üstel doğal eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -626,7 +626,7 @@ The natural exponential of the initial valarray is:
 22026.5  
 ```  
   
-##  <a name="log"></a>Günlük  
+##  <a name="log"></a>  Günlük  
  Öğeleri için doğal logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -686,7 +686,7 @@ The natural logarithm of the initial valarray is:
 4.38203  
 ```  
   
-##  <a name="log10"></a>log10  
+##  <a name="log10"></a>  log10  
  Öğeleri temel 10 veya ortak logaritmasını giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -748,7 +748,7 @@ The common logarithm of the initial valarray is:
 2  
 ```  
   
-##  <a name="pow"></a>POW  
+##  <a name="pow"></a>  POW  
  Giriş valarrays ve öğeleri bir temel eşit olan bir valarray herhangi bir giriş valarray öğeler tarafından belirtilen veya bir üssü bir sabit ya da bir giriş valarray öğeler tarafından belirtilen döndürme sabitleri öğelerde çalışır veya sabiti.  
   
 ```  
@@ -781,11 +781,11 @@ pow(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir valarray öğeleri `I` eşittir:  
   
-- `left`[ *I* ] üssünün `right` [ *ı* ] ilk şablon işlevi için.  
+- `left` [ *I* ] üssünün `right` [ *ı* ] ilk şablon işlevi için.  
   
-- `left`[ *I* ] üssünün `right` ikinci şablon işlevi için.  
+- `left` [ *I* ] üssünün `right` ikinci şablon işlevi için.  
   
-- `left`üssünün `right` [ *ı* ] üçüncü şablon işlevi için.  
+- `left` üssünün `right` [ *ı* ] üçüncü şablon işlevi için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa `left` ve `right` farklı sayıda öğe olması, sonuç tanımlanmadı.  
@@ -841,7 +841,7 @@ n = 4   gives 256
 n = 5   gives 1024  
 ```  
   
-##  <a name="sin"></a>sin  
+##  <a name="sin"></a>  sin  
  Öğeleri girdi valarray öğelerini sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -915,7 +915,7 @@ The sine of the initial valarray is:
 -2.06823e-013  
 ```  
   
-##  <a name="sinh"></a>SİNH  
+##  <a name="sinh"></a>  SİNH  
  Öğeleri girdi valarray öğelerini hiperbolik sinüsünü eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -933,7 +933,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 ### <a name="remarks"></a>Açıklamalar  
  Üstel işlev açısından hiperbolik sinüsünü tanımlama kimlikleri:  
   
- SİNH ( *z* ) = (exp ( *z* )-exp (- *z* )) / 2  
+ sinh ( *z* ) = ( exp ( *z* ) - exp ( - *z* ) ) / 2  
   
 ### <a name="example"></a>Örnek  
   
@@ -994,7 +994,7 @@ The hyperbolic sine of the initial valarray is:
 11.5487  
 ```  
   
-##  <a name="sqrt"></a>Sqrt  
+##  <a name="sqrt"></a>  Sqrt  
  Öğeleri karekökünü giriş valarray öğelerinin eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -1045,7 +1045,7 @@ The initial valarray is: ( 0 1 4 9 16 ).
 The square root of the initial valarray is: ( 0 1 2 3 4 ).  
 ```  
   
-##  <a name="swap"></a>değiştirme  
+##  <a name="swap"></a>  Değiştirme  
  İki valarrays öğelerini değiş tokuş eder.  
   
 ```  
@@ -1065,7 +1065,7 @@ void swap(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi yürütür ` left.swap( right)`.  
   
-##  <a name="tan"></a>tan  
+##  <a name="tan"></a>  tan  
  Öğeleri girdi valarray öğelerini tanjantını eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  
@@ -1139,7 +1139,7 @@ The tangent of the initial valarray is:
 -9.6701e+012  
 ```  
   
-##  <a name="tanh"></a>TANH  
+##  <a name="tanh"></a>  TANH  
  Öğeleri girdi valarray öğelerini hiperbolik tanjantını eşit olan bir valarray döndüren bir giriş valarray öğeler üzerinde çalışır.  
   
 ```  

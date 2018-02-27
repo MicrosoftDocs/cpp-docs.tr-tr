@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - catanh
 - catanhf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/catanh
 - complex/catanhf
 - complex/catanhl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - catanh function
 - catanhf function
 - catanhl function
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 1f670a916af4aa347bcc6249e397cfdf004b54b3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: abce100af16bff2ec7fd2de82d66ec3a7e59604e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 Dal keser gerçek ekseni boyunca [-1; + 1] aralığı dışında ile karmaşık bir sayının ters hiperbolik tanjant alır.  

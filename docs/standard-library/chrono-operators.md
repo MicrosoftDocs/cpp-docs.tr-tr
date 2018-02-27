@@ -5,26 +5,27 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: chrono/std::operator modulo
+ms.topic: reference
+f1_keywords:
+- chrono/std::operator modulo
 ms.assetid: c5a19267-4684-40c1-b7a9-cc1012b058f3
-caps.latest.revision: "8"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: bcd1813ec127b7b5243d61e015bb8bec444cf9cb
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 27e47127369c78c331cc052d934f4d62d6d00707
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltchronogt-operators"></a>&lt;chrono&gt; işleçleri
 ||||  
 |-|-|-|  
-|[mod işleci](#op_modulo)|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|  
+|[mod işleci](#op_modulo)|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|  
 |[işleci&gt;=](#op_gt_eq)|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|  
-|[işleç *](#op_star)|[operator +](#op_add)|[operator-](#operator-)|  
-|[operator /](#op_div)|[operator ==](#op_eq_eq)|  
+|[operator*](#op_star)|[operator+](#op_add)|[operator-](#operator-)|  
+|[operator /](#op_div)|[operator==](#op_eq_eq)|  
   
-##  <a name="operator-"></a>operator-  
+##  <a name="operator-"></a>  operator-  
  İşleç çıkarması veya değilleme işlemi için [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.  
   
 ```  
@@ -68,7 +69,7 @@ constexpr typename common_type<Duration1, Duration2>::type
   
  Üçüncü işlevi döndürür bir `duration` arasındaki zaman aralığını gösteren nesne `Left` ve `Right`.  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Eşitsizlik işleci için [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesneleri.  
   
 ```  
@@ -94,7 +95,7 @@ constexpr bool operator!=(
 ### <a name="return-value"></a>Dönüş Değeri  
  Her işlevi döndürür `!(Left == Right)`.  
   
-##  <a name="op_star"></a>işleç *  
+##  <a name="op_star"></a>  işleç *  
  Çarpma işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.  
   
 ```  
@@ -127,7 +128,7 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
   
  Sürece `is_convertible<Rep1, common_type<Rep1, Rep2>>` *doğru kalıp*, ikinci işlev aşırı yük çözüm katılmıyor. Daha fazla bilgi için bkz: [< type_traits >](../standard-library/type-traits.md).  
   
-##  <a name="op_div"></a>operator /  
+##  <a name="op_div"></a>  operator /  
  Bölme işleci için [süresi](../standard-library/chrono-operators.md#op_star) nesneleri.  
   
 ```  
@@ -165,7 +166,7 @@ constexpr typename common_type<Rep1, Rep2>::type
   
  Sürece `is_convertible<Rep2, common_type<Rep1, Rep2>>` *doğru kalıp*, ve `Rep2` sayısı örneklemesi değil `duration`, ilk işleci aşırı yük çözüm katılmıyor. Daha fazla bilgi için bkz: [< type_traits >](../standard-library/type-traits.md).  
   
-##  <a name="op_add"></a>operator +  
+##  <a name="op_add"></a>  operator +  
  Ekler [süresi](../standard-library/duration-class.md) ve [time_point](../standard-library/time-point-class.md) nesneleri.  
   
 ```  
@@ -208,7 +209,7 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
   
  İkinci ve üçüncü işlevler döndürür bir `time_point` bir nokta, aralığa göre hatalı yerleştirilen süreyi temsil eder nesne `Dur`, zaman içinde noktasından `Time`.  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Bir olup olmadığını belirleyen [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesi, başka değerinden `duration` veya `time_point` nesnesi.  
   
 ```  
@@ -236,7 +237,7 @@ constexpr bool operator<(
   
  İkinci işlevi döndürür `true` varsa `Left` önündeki `Right`. Aksi takdirde işlevi döndürür `false`.  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Bir olup olmadığını belirleyen [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesidir değerinden küçük veya eşit başka `duration` veya `time_point` nesnesi.  
   
 ```  
@@ -261,7 +262,7 @@ constexpr bool operator<=(
 ### <a name="return-value"></a>Dönüş Değeri  
  Her işlevi döndürür `!(Right < Left)`.  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  İki olup olmadığını belirleyen `duration` nesneleri temsil aynı uzunlukta olan zaman aralıkları mı iki `time_point` nesneleri zamanında aynı noktasını temsil eder.  
   
 ```  
@@ -288,7 +289,7 @@ constexpr bool operator==(
   
  İkinci işlevi döndürür `true` varsa `Left` ve `Right` zamanında aynı noktasını temsil eder. Aksi takdirde işlevi döndürür `false`.  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Bir olup olmadığını belirleyen [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesidir diğerinden daha büyük `duration` veya `time_point` nesnesi.  
   
 ```  
@@ -313,7 +314,7 @@ constexpr bool operator>(
 ### <a name="return-value"></a>Dönüş Değeri  
  Her işlevi döndürür `Right < Left`.  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Bir olup olmadığını belirleyen [süresi](../standard-library/duration-class.md) veya [time_point](../standard-library/time-point-class.md) nesnesidir büyük veya ona eşit başka bir `duration` veya `time_point` nesnesi.  
   
 ```  
@@ -338,7 +339,7 @@ constexpr bool operator>=(
 ### <a name="return-value"></a>Dönüş Değeri  
  Her işlevi döndürür `!(Left < Right)`.  
   
-##  <a name="op_modulo"></a>mod işleci  
+##  <a name="op_modulo"></a>  mod işleci  
  İşlemler modulo işleci için [süresi](../standard-library/duration-class.md) nesneleri.  
   
 ```  

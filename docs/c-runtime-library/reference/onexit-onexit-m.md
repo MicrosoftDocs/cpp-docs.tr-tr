@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _onexit
 - _onexit_m
@@ -27,7 +28,8 @@ f1_keywords:
 - onexit_m
 - onexit
 - _onexit_m
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - onexit function
 - registry, registering exit routines
@@ -37,16 +39,17 @@ helpviewer_keywords:
 - registering exit routines
 - registering to be called on exit
 ms.assetid: 45743298-0e2f-46cf-966d-1ca44babb443
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 476df668657739c9f67ca1323c2c0ce630260110
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: caa4c732449864c4803a25f3bb123c43495f5fc1
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="onexit-onexitm"></a>_onexit, _onexit_m
 Çıkış zaman çağrılacak bir yordam kaydeder.  
@@ -67,20 +70,20 @@ _onexit_t_m _onexit_m(
  Çıkışta çağrılacak işlev işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_onexit`başarılı olursa işlevi için bir işaretçi döndürür veya `NULL` işlev işaretçisi depolamak için hiçbir alan yoksa.  
+ `_onexit` başarılı olursa işlevi için bir işaretçi döndürür veya `NULL` işlev işaretçisi depolamak için hiçbir alan yoksa.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_onexit` İşlevi bir işlevin adresini geçirilen (`function`) programı normal şekilde sonlandırıldığında çağrılabilir. Art arda çağrılar `_onexit` LIFO (son-giren ilk çıkar) sırayla yürütülen işlevlerin bir kayıt oluşturun. İşlevler geçirilen `_onexit` parametreleri alamıyor.  
   
  Durumda olduğunda `_onexit` kayıtlı yordamları bir DLL içinde çağrılır `_onexit` DLL çalıştırılmasında sonra yüklemeyi kaldırma `DllMain` DLL_PROCESS_DETACH ile adlandırılır.  
   
- `_onexit`bir Microsoft uzantısıdır. ANSI taşınabilirlik için kullanmak [atexit](../../c-runtime-library/reference/atexit.md). `_onexit_m` İşlevi sürümüdür için karma mod kullanın.  
+ `_onexit` bir Microsoft uzantısıdır. ANSI taşınabilirlik için kullanmak [atexit](../../c-runtime-library/reference/atexit.md). `_onexit_m` İşlevi sürümüdür için karma mod kullanın.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
-|`_onexit`|\<stdlib.h >|  
+|`_onexit`|\<stdlib.h>|  
   
  Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
   

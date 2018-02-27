@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - map/std::operator!=
 - map/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - map/std::operator&lt;
 - map/std::operator&lt;=
 - map/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (map)
@@ -24,21 +25,21 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 6b2eb6b5ab3a8b08af5375b7767328289c68a744
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: d98e67ea5a65279a5bb618552bec4358bc48a445
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltmapgt-operators"></a>&lt;Harita&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
 |[operator! = (multimap)](#op_neq_multimap)|[işleci&gt;](#op_gt_multimap)|[işleci&gt;=](#op_gt_eq_multimap)|  
-|[işleci&lt;](#op_lt_multimap)|[işleci&lt;=](#op_lt_eq_multimap)|[operator ==](#op_eq_eq_multimap)|  
+|[işleci&lt;](#op_lt_multimap)|[işleci&lt;=](#op_lt_eq_multimap)|[operator==](#op_eq_eq_multimap)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri işlecinin sol tarafındaki harita nesnesi sağ tarafta eşleme nesnesine eşit değil.  
   
 ```
@@ -98,7 +99,7 @@ The maps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Harita nesnesi işlecinin sol tarafındaki sağ tarafta eşleme nesnesi küçükse testleri.  
   
 ```
@@ -158,7 +159,7 @@ The map m1 is not less than the map m3.
 *\  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Harita işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında harita nesnesi eşit veya daha az olur.  
   
 ```
@@ -222,7 +223,7 @@ The map m1 is less than or equal to the map m4.
 *\  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Harita nesnesi işlecinin sol tarafındaki sağ tarafta eşleme nesnesine eşitse testleri.  
   
 ```
@@ -282,7 +283,7 @@ The maps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri işlecinin sol tarafındaki harita nesnesi sağ tarafta eşleme nesnesi değerinden daha büyük.  
   
 ```
@@ -342,7 +343,7 @@ The map m1 is greater than the map m3.
 *\  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Harita nesnesi işlecinin sol tarafındaki sağ tarafta eşleme nesnesine eşit veya daha büyük ise testleri.  
   
 ```
@@ -406,7 +407,7 @@ Map m1 is greater than or equal to map m4.
 *\  
 ```  
   
-##  <a name="op_neq_multimap"></a>operator! = (multimap)  
+##  <a name="op_neq_multimap"></a>  operator! = (multimap)  
  Multimap nesne işlecinin sol tarafındaki sağ tarafında multimap nesne eşit değilse testleri.  
   
 ```
@@ -466,7 +467,7 @@ The multimaps m1 and m3 are equal.
 *\  
 ```  
   
-##  <a name="op_lt_multimap"></a>işleci&lt;  
+##  <a name="op_lt_multimap"></a>  işleci&lt;  
  Multimap nesne işlecinin sol tarafındaki sağ tarafında multimap nesne küçükse testleri.  
   
 ```
@@ -526,7 +527,7 @@ The multimap m1 is not less than the multimap m3.
 *\  
 ```  
   
-##  <a name="eq_multimap"></a>işleci&lt;=  
+##  <a name="eq_multimap"></a>  işleci&lt;=  
  Multimap işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında multimap nesnesine eşit veya daha az olur.  
   
 ```
@@ -590,7 +591,7 @@ m1 is less than or equal to m4
 *\  
 ```  
   
-##  <a name="op_eq_eq_multimap"></a>operator ==  
+##  <a name="op_eq_eq_multimap"></a>  operator ==  
  Multimap nesne işlecinin sol tarafındaki sağ tarafında multimap nesnesine eşitse testleri.  
   
 ```
@@ -650,7 +651,7 @@ m1 and m3 are equal
 *\  
 ```  
   
-##  <a name="op_gt_multimap"></a>işleci&gt;  
+##  <a name="op_gt_multimap"></a>  işleci&gt;  
  Multimap nesne işlecinin sol tarafındaki sağ tarafında multimap nesne büyükse testleri.  
   
 ```
@@ -710,7 +711,7 @@ The multimap m1 is greater than the multimap m3.
 *\  
 ```  
   
-##  <a name="op_gt_eq_multimap"></a>işleci&gt;=  
+##  <a name="op_gt_eq_multimap"></a>  işleci&gt;=  
  Multimap işlecinin sol tarafındaki sağ tarafında multimap nesnesine eşit veya daha büyük bir nesneyse testleri.  
   
 ```

@@ -4,26 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: C++
+ms.topic: reference
+dev_langs:
+- C++
 helpviewer_keywords:
 - intrinsics, compiler
 - compiler intrinsics
 - cl.exe compiler, performance
 - cl.exe compiler, intrinsics
 ms.assetid: 48bb9929-7d78-4fd8-a092-ae3c9f971858
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4ffbe20fb6c2b35cef46f975e99191bf96fdc6b8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 20b1416eacc6fa31c5e41b4a0539ce9ccbd99f88
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="compiler-intrinsics"></a>Derleyici İç Bilgileri
 Çoğu işlevleri kitaplıklarında yer alır, ancak bazı işlevler yerleşiktir (diğer bir deyişle, iç) derleyici. Bunlar, iç işlevler veya iç bilgileri olarak adlandırılır.  

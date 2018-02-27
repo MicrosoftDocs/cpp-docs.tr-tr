@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - system_error/std::error_condition
 - system_error/std::error_condition::value_type
@@ -15,7 +16,8 @@ f1_keywords:
 - system_error/std::error_condition::clear
 - system_error/std::error_condition::message
 - system_error/std::error_condition::operator bool
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::error_condition
 - std::error_condition::value_type
@@ -24,16 +26,17 @@ helpviewer_keywords:
 - std::error_condition::clear
 - std::error_condition::message
 ms.assetid: 6690f481-97c9-4554-a0ff-851dc96b7a06
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: eaf36a6f078fd41eee75788a2adbbb5efed7f5d7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0af9f7fe79cd9e7db76b42a287c25f5a1b45d80c
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="errorcondition-class"></a>error_condition Sınıfı
 Kullanıcı tanımlı hata kodları temsil eder.  
@@ -72,10 +75,10 @@ class error_condition;
   
 |||  
 |-|-|  
-|[operator ==](#op_eq_eq)|Testler arasında eşitliği `error_condition` nesneleri.|  
+|[operator==](#op_eq_eq)|Testler arasında eşitliği `error_condition` nesneleri.|  
 |[operator!=](#op_neq)|Testler arasında eşitsizlik için `error_condition` nesneleri.|  
 |[operator <](#op_lt)|Varsa testleri `error_condition` nesne küçük `error_code` nesne geçirilen karşılaştırma için.|  
-|[işleç =](#op_eq)|Yeni bir numaralandırma değeri atar `error_condition` nesnesi.|  
+|[operator=](#op_eq)|Yeni bir numaralandırma değeri atar `error_condition` nesnesi.|  
 |[işleç bool değeri](#op_bool)|Türünde bir değişken bıraktığı `error_condition`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -83,7 +86,7 @@ class error_condition;
   
  **Namespace:** std  
   
-##  <a name="assign"></a>error_condition::Assign  
+##  <a name="assign"></a>  error_condition::assign  
  Bir hata kodu değerini ve kategoriyi bir hata koşuluna atar.  
   
 ```
@@ -100,7 +103,7 @@ void assign(value_type val, const error_category& _Cat);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi depoları `val` hata kodu değerini gösteren bir işaretçi olarak `_Cat`.  
   
-##  <a name="category"></a>error_condition::category  
+##  <a name="category"></a>  error_condition::category  
  Hata kategorisi döndürür.  
   
 ```
@@ -112,7 +115,7 @@ const error_category& category() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="clear"></a>error_condition::Clear  
+##  <a name="clear"></a>  error_condition::clear  
  Hata kodu değerini ve kategori temizler.  
   
 ```
@@ -122,7 +125,7 @@ clear();
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category) nesnesi.  
   
-##  <a name="error_condition"></a>error_condition::error_condition  
+##  <a name="error_condition"></a>  error_condition::error_condition  
  Türünde bir nesne oluşturur `error_condition`.  
   
 ```
@@ -151,7 +154,7 @@ error_condition(_Enum _Errcode,
   
  Üçüncü Oluşturucusu depoları `(value_type)_Errcode` hata kodu değerini gösteren bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category).  
   
-##  <a name="message"></a>error_condition::Message  
+##  <a name="message"></a>  error_condition::Message  
  Hata kodu adını döndürür.  
   
 ```
@@ -164,7 +167,7 @@ string message() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevinin döndürdüğü `category().message(value())`.  
   
-##  <a name="op_eq_eq"></a>error_condition::operator ==  
+##  <a name="op_eq_eq"></a>  error_condition::operator==  
  Testler arasında eşitliği `error_condition` nesneleri.  
   
 ```
@@ -183,7 +186,7 @@ bool operator==(const error_condition& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `category() == right.category() && value == right.value()`.  
   
-##  <a name="op_neq"></a>error_condition::operator! =  
+##  <a name="op_neq"></a>  error_condition::operator!=  
  Testler arasında eşitsizlik için `error_condition` nesneleri.  
   
 ```
@@ -202,7 +205,7 @@ bool operator!=(const error_condition& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `!(*this == right)`.  
   
-##  <a name="op_lt"></a>error_condition::operator&lt;  
+##  <a name="op_lt"></a>  error_condition::operator&lt;  
  Varsa testleri `error_condition` nesne küçük `error_code` nesne geçirilen karşılaştırma için.  
   
 ```
@@ -221,7 +224,7 @@ bool operator<(const error_condition& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()`.  
   
-##  <a name="op_eq"></a>error_condition::operator =  
+##  <a name="op_eq"></a>  error_condition::operator=  
  Yeni bir numaralandırma değeri atar `error_condition` nesnesi.  
   
 ```
@@ -244,7 +247,7 @@ error_condition(_Enum error,
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci depoları `(value_type)error` hata kodu değerini gösteren bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category). Döndürdüğü `*this`.  
   
-##  <a name="op_bool"></a>error_condition::operator bool  
+##  <a name="op_bool"></a>  error_condition::operator bool  
  Türünde bir değişken bıraktığı `error_condition`.  
   
 ```
@@ -257,7 +260,7 @@ explicit operator bool() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bir değer dönüştürülebilir işleci döndürür `true` yalnızca [değeri](#value) sıfıra eşit değil. Dönüş türü yalnızca dönüştürülebilir `bool`, değil `void *` veya diğer bilinen skaler türler.  
   
-##  <a name="value"></a>error_condition::Value  
+##  <a name="value"></a>  error_condition::value  
  Saklı hata kodu değerini döndürür.  
   
 ```
@@ -269,7 +272,7 @@ value_type value() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="value_type"></a>error_condition::value_type  
+##  <a name="value_type"></a>  error_condition::value_type  
  Saklı hata kodu değerini temsil eden tür.  
   
 ```

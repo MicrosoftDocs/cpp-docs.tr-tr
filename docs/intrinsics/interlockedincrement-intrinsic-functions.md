@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedIncrement_acq
 - _InterlockedIncrement16_rel_cpp
@@ -29,7 +30,8 @@ f1_keywords:
 - _InterlockedIncrement_cpp
 - _InterlockedIncrement64_acq
 - _InterlockedIncrement16
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _InterlockedIncrement64_rel intrinsic
 - _InterlockedIncrement16_rel intrinsic
@@ -51,19 +53,20 @@ helpviewer_keywords:
 - _InterlockedIncrement_acq intrinsic
 - InterlockedIncrement intrinsic
 ms.assetid: 37700615-f372-438b-bcef-d76e11839482
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 64866df8d2c0927e35a62b188e1f320cdd0bb2e6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 6d07341e9b3580bc82f85adff68a817d7db7193f
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockedincrement-intrinsic-functions"></a>_InterlockedIncrement iç işlevler
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Derleyici iç Win32 desteği sağlamak [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedIncrement](http://msdn.microsoft.com/library/ms683614.aspx) işlevi.  
   
@@ -109,7 +112,7 @@ __int64 _InterlockedIncrement64_nf(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`lpAddend`  
+ [içinde out] `lpAddend`  
  İşaretçi artırılması değişken.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -119,7 +122,7 @@ __int64 _InterlockedIncrement64_nf(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedIncrement`, `_InterlockedIncrement16`, `_InterlockedIncrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
 |`_InterlockedIncrement_acq`, `_InterlockedIncrement_rel`, `_InterlockedIncrement_nf`, `_InterlockedIncrement16_acq`, `_InterlockedIncrement16_rel`, `_InterlockedIncrement16_nf`, `_InterlockedIncrement64_acq`, `_InterlockedIncrement64_rel`, `_InterlockedIncrement64_nf`|ARM|\<intrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  

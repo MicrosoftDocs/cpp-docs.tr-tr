@@ -5,17 +5,18 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-ms.workload: cplusplus
-ms.openlocfilehash: 51c76e48023363fc7737aa690351801eceb3abf6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 88bae92c568285e44965d6bfaca399709105d323
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 
@@ -35,7 +36,7 @@ Bu işlevler URL'leri işlenmesini destekler.
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlutil.h  
 
-## <a name="atlcanonicalizeurl"></a>AtlCanonicalizeUrl
+## <a name="atlcanonicalizeurl"></a> AtlCanonicalizeUrl
 Güvenli olmayan karakterleri ve boşlukları kaçış sıralarına dönüştürme içeren bir URL'yi kurallı hale getirmek için bu işlevi çağırın.  
   
 ```    
@@ -59,13 +60,13 @@ inline BOOL AtlCanonicalizeUrl(
  `dwFlags`  
  Bu işlev davranışını denetleme ATL_URL bayraklar. 
 
-- `ATL_URL_BROWSER_MODE`Değil kodlamak veya karakter kodunu çözmek sonra "#" veya "?" ve sonunda boşluk sonra kaldırmaz "?". Bu değer belirtilmezse, tüm URL kodlanmış ve sonunda boşluk kaldırılır.
-- `ATL_URL_DECODE`Tüm % XX sıralarının URL ayrıştırılır önce kaçış sıraları dahil olmak üzere karaktere dönüştürür.
-- `ATL_URL_ENCODE_PERCENT`Karşılaştı herhangi yüzde işaretleri kodlar. Varsayılan olarak, yüzde işaretleri kodlanmış değil.
-- `ATL_URL_ENCODE_SPACES_ONLY`Yalnızca boşluk kodlar.
-- `ATL_URL_ESCAPE`Tüm kaçış sıraları (% XX) kendi ilgili karakterlere dönüştürür.
-- `ATL_URL_NO_ENCODE`Güvenli olmayan karakterleri kaçış dizilerine dönüştürmez.
-- `ATL_URL_NO_META`Meta sıraları kaldırmaz (gibi "."ve"...") URL'den. 
+- `ATL_URL_BROWSER_MODE` Değil kodlamak veya karakter kodunu çözmek sonra "#" veya "?" ve sonunda boşluk sonra kaldırmaz "?". Bu değer belirtilmezse, tüm URL kodlanmış ve sonunda boşluk kaldırılır.
+- `ATL_URL_DECODE` Tüm % XX sıralarının URL ayrıştırılır önce kaçış sıraları dahil olmak üzere karaktere dönüştürür.
+- `ATL_URL_ENCODE_PERCENT` Karşılaştı herhangi yüzde işaretleri kodlar. Varsayılan olarak, yüzde işaretleri kodlanmış değil.
+- `ATL_URL_ENCODE_SPACES_ONLY` Yalnızca boşluk kodlar.
+- `ATL_URL_ESCAPE` Tüm kaçış sıraları (% XX) kendi ilgili karakterlere dönüştürür.
+- `ATL_URL_NO_ENCODE` Güvenli olmayan karakterleri kaçış dizilerine dönüştürmez.
+- `ATL_URL_NO_META` Meta sıraları kaldırmaz (gibi "."ve"...") URL'den. 
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür **TRUE** başarılı, **FALSE** hatasında.  
@@ -76,7 +77,7 @@ inline BOOL AtlCanonicalizeUrl(
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342)
 
- ## <a name="atlcombineurl"></a>AtlCombineUrl
+ ## <a name="atlcombineurl"></a> AtlCombineUrl
  Temel URL ile göreli bir URL'yi, kurallı tek bir URL'de birleştirmek için bu işlevi çağırın.  
   
 ```    
@@ -110,7 +111,7 @@ inline BOOL AtlCombineUrl(
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli sürümü gibi davranır [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) WinINet veya Internet Explorer yüklü olmasını gerektirmez, ancak.  
   
-## <a name="atlescapeurl"></a>AtlEscapeUrl
+## <a name="atlescapeurl"></a> AtlEscapeUrl
  Tüm güvenli olmayan karakterleri kaçış sıralarına dönüştürmek için bu işlevi çağırın.  
   
 ```    
@@ -162,7 +163,7 @@ inline ATL_URL_PORT AtlGetDefaultUrlPort(ATL_URL_SCHEME m_nScheme) throw();
 ### <a name="return-value"></a>Dönüş Değeri  
  [ATL_URL_PORT](atl-typedefs.md#atl_url_port) düzeni tanınmıyor belirtilen düzeni veya ATL_URL_INVALID_PORT_NUMBER ile ilişkili.  
 
-## <a name="atlisunsafeurlchar"></a>AtlIsUnsafeUrlChar
+## <a name="atlisunsafeurlchar"></a> AtlIsUnsafeUrlChar
  Bir karakterin URL'de kullanılmak üzere güvenli olup olmadığını öğrenmek için bu işlevi çağırın.  
   
 ```  
@@ -179,7 +180,7 @@ inline BOOL AtlIsUnsafeUrlChar(char chIn) throw();
 ### <a name="remarks"></a>Açıklamalar  
  URL'ler kullanılmamalıdır karakterleri bu işlevi kullanılarak sınanabilir ve kullanılarak dönüştürülen [AtlCanonicalizeUrl](#atlcanonicalizeurl).  
   
-## <a name="atlunescapeurl"></a>AtlUnescapeUrl
+## <a name="atlunescapeurl"></a> AtlUnescapeUrl
  Kaçış karakterlerini orijinal değerlerine döndürmek için bu işlevi çağırın.  
   
 ```    
@@ -215,7 +216,7 @@ inline BOOL AtlUnescapeUrl(
 ### <a name="remarks"></a>Açıklamalar  
  Tarafından uygulanan dönüştürme işlemi ters çevirir [AtlEscapeUrl](#atlescapeurl).  
   
-## <a name="rgbtohtml"></a>RGBToHtml
+## <a name="rgbtohtml"></a> RGBToHtml
 Dönüştüren bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bu renk değerine karşılık gelen HTML metin değeri.  
   
 ```  
@@ -241,7 +242,7 @@ bool inline RGBToHtml(
 ### <a name="remarks"></a>Açıklamalar  
  2 basamak her rengi kırmızı, yeşil ve mavi bileşenlerden biri kullanılarak 6 rakamlı onaltılık değeri arkasından pound işareti HTML renk değeridir (örneğin, #FFFFFF beyaz).  
   
-## <a name="systemtimetohttpdate"></a>SystemTimeToHttpDate
+## <a name="systemtimetohttpdate"></a> SystemTimeToHttpDate
 Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.  
   
 ```  

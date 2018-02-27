@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - _InterlockedDecrement16_rel_cpp
 - _InterlockedDecrement16_acq_cpp
@@ -29,7 +30,8 @@ f1_keywords:
 - _InterlockedDecrement64_cpp
 - _InterlockedDecrement_acq
 - _InterlockedDecrement_acq_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - InterlockedDecrement64_rel intrinsic
 - InterlockedDecrement64 intrinsic
@@ -51,19 +53,20 @@ helpviewer_keywords:
 - _InterlockedDecrement64_nf intrinsic
 - InterlockedDecrement_rel intrinsic
 ms.assetid: 5268fce3-86b5-4b2b-b96c-2e531a3fb9b5
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 8e1ade673c13ed69912ddadc5f6a4d75e7a8e0a9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2be4a72bfdcb0b952e3fcd1fa3c7e8b3bff8d532
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="interlockeddecrement-intrinsic-functions"></a>_InterlockedDecrement iç işlevler
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Derleyici iç Win32 desteği sağlar [!INCLUDE[winSDK](../atl/includes/winsdk_md.md)] [InterlockedDecrement](http://msdn.microsoft.com/library/ms683580.aspx) işlevi.  
   
@@ -109,7 +112,7 @@ __int64 _InterlockedDecrement64_nf(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out]`lpAddend`  
+ [içinde out] `lpAddend`  
  İşaretçi değişken azaltılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
@@ -119,7 +122,7 @@ __int64 _InterlockedDecrement64_nf(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM,[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
+|`_InterlockedDecrement`, `_InterlockedDecrement16`, `_InterlockedDecrement64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|  
 |`_InterlockedDecrement_acq`, `_InterlockedDecrement_rel`, `_InterlockedDecrement_nf`, `_InterlockedDecrement16_acq`, `_InterlockedDecrement16_rel`, `_InterlockedDecrement16_nf`, `_InterlockedDecrement64_acq`, `_InterlockedDecrement64_rel`, `_InterlockedDecrement64_nf`,|ARM|  
   
  **Üstbilgi dosyası** \<intrin.h >  

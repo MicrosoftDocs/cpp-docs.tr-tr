@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - norm
 - normf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/norm
 - complex/normf
 - complex/norml
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - norm function
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c4bd4fa2b595148350b071f9718d8376f51962a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3a694d2a8660a591265e0270ada5c3b87c07f308
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="norm-normf-norml"></a>Norm, normf, norml
 Karmaşık bir sayının kare büyüklük alır.  

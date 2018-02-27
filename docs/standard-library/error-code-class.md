@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - system_error/std::error_code
 - system_error/std::error_code::value_type
@@ -16,7 +17,8 @@ f1_keywords:
 - system_error/std::error_code::default_error_condition
 - system_error/std::error_code::message
 - system_error/std::error_code::operator bool
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::error_code
 - std::error_code::value_type
@@ -26,16 +28,17 @@ helpviewer_keywords:
 - std::error_code::default_error_condition
 - std::error_code::message
 ms.assetid: c09b4a96-cb14-4281-a319-63543f9b2b4a
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b2d451de1cacbb9654d7aafeb59cb1c23006dce9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b9521790906c591c3b459cc5efd70fe0ba021ccf
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="errorcode-class"></a>error_code Sınıfı
 Uygulamaya özel alt düzey sistem hataları temsil eder.  
@@ -75,10 +78,10 @@ class error_code;
   
 |||  
 |-|-|  
-|[operator ==](#op_eq_eq)|Testler arasında eşitliği `error_code` nesneleri.|  
+|[operator==](#op_eq_eq)|Testler arasında eşitliği `error_code` nesneleri.|  
 |[operator!=](#op_neq)|Testler arasında eşitsizlik için `error_code` nesneleri.|  
 |[operator <](#op_lt)|Varsa testleri `error_code` nesne küçük `error_code` nesne geçirilen karşılaştırma için.|  
-|[işleç =](#op_eq)|Yeni bir numaralandırma değeri atar `error_code` nesnesi.|  
+|[operator=](#op_eq)|Yeni bir numaralandırma değeri atar `error_code` nesnesi.|  
 |[işleç bool değeri](#op_bool)|Türünde bir değişken bıraktığı `error_code`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -86,7 +89,7 @@ class error_code;
   
  **Namespace:** std  
   
-##  <a name="assign"></a>error_code::Assign  
+##  <a name="assign"></a>  error_code::assign  
  Bir hata kodu değerini ve kategori için hata kodunu atar.  
   
 ```
@@ -103,7 +106,7 @@ void assign(value_type val, const error_category& _Cat);
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi depoları `val` hata kodu değerini gösteren bir işaretçi olarak `_Cat`.  
   
-##  <a name="category"></a>error_code::category  
+##  <a name="category"></a>  error_code::category  
  Hata kategorisi döndürür.  
   
 ```
@@ -112,7 +115,7 @@ const error_category& category() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="clear"></a>error_code::Clear  
+##  <a name="clear"></a>  error_code::clear  
  Hata kodu değerini ve kategori temizler.  
   
 ```
@@ -122,7 +125,7 @@ clear();
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category) nesnesi.  
   
-##  <a name="default_error_condition"></a>error_code::default_error_condition  
+##  <a name="default_error_condition"></a>  error_code::default_error_condition  
  Varsayılan hata koşulu döndürür.  
   
 ```
@@ -135,7 +138,7 @@ error_condition default_error_condition() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevinin döndürdüğü `category().default_error_condition(value())`.  
   
-##  <a name="error_code"></a>error_code::error_code  
+##  <a name="error_code"></a>  error_code::error_code  
  Türünde bir nesne oluşturur `error_code`.  
   
 ```
@@ -164,7 +167,7 @@ error_code(_Enum _Errcode,
   
  Üçüncü Oluşturucusu depoları `(value_type)_Errcode` hata kodu değerini gösteren bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category).  
   
-##  <a name="message"></a>error_code::Message  
+##  <a name="message"></a>  error_code::message  
  Hata kodu adını döndürür.  
   
 ```
@@ -177,7 +180,7 @@ string message() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevinin döndürdüğü `category().message(value())`.  
   
-##  <a name="op_eq_eq"></a>error_code::operator ==  
+##  <a name="op_eq_eq"></a>  error_code::operator==  
  Testler arasında eşitliği `error_code` nesneleri.  
   
 ```
@@ -196,7 +199,7 @@ bool operator==(const error_code& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `category() == right.category() && value == right.value()`.  
   
-##  <a name="op_neq"></a>error_code::operator! =  
+##  <a name="op_neq"></a>  error_code::operator!=  
  Testler arasında eşitsizlik için `error_code` nesneleri.  
   
 ```
@@ -215,7 +218,7 @@ bool operator!=(const error_code& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `!(*this == right)`.  
   
-##  <a name="op_lt"></a>error_code::operator&lt;  
+##  <a name="op_lt"></a>  error_code::operator&lt;  
  Varsa testleri [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) nesne küçük `error_code` nesne geçirilen karşılaştırma için.  
   
 ```
@@ -234,7 +237,7 @@ bool operator<(const error_code& right) const;
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci döndürür `category() < right.category() || category() == right.category() && value < right.value()`.  
   
-##  <a name="op_eq"></a>error_code::operator =  
+##  <a name="op_eq"></a>  error_code::operator=  
  Yeni bir numaralandırma değeri atar [error_code](http://msdn.microsoft.com/en-us/09c6ef90-b6f8-430a-b584-e168716c7e31) nesnesi.  
   
 ```
@@ -256,7 +259,7 @@ typename enable_if<is_error_code_enum<_Enum>::value,
 ### <a name="remarks"></a>Açıklamalar  
  Üye işleci depoları `(value_type)_Errcode` hata kodu değerini gösteren bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category). Döndürdüğü `*this`.  
   
-##  <a name="op_bool"></a>error_code::operator bool  
+##  <a name="op_bool"></a>  error_code::operator bool  
  Türünde bir değişken bıraktığı `error_code`.  
   
 ```
@@ -269,7 +272,7 @@ explicit operator bool() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bir değer dönüştürülebilir işleci döndürür `true` yalnızca [değeri](#value) sıfıra eşit değil. Dönüş türü yalnızca dönüştürülebilir `bool`, değil `void *` veya diğer bilinen skaler türler.  
   
-##  <a name="value"></a>error_code::Value  
+##  <a name="value"></a>  error_code::Value  
  Saklı hata kodu değerini döndürür.  
   
 ```
@@ -281,7 +284,7 @@ value_type value() const;
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="value_type"></a>error_code::value_type  
+##  <a name="value_type"></a>  error_code::value_type  
  Saklı hata kodu değerini temsil eden tür.  
   
 ```

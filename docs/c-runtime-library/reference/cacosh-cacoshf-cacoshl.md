@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - cacosh
 - cacoshf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/cacosh
 - complex/cacoshf
 - complex/cacoshl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cacosh function
 - cacoshf function
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dd38830687af7f51329f67b3c886dff7863348b4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ee72bfe40719b5a6c4c753c2b7de1ec9ef6bb468
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 Karmaşık bir sayının ters hiperbolik Kosinüs değerleri gerçek ekseni boyunca 1'den daha az kesin bir dal ile alır. biçimindeki telefon numarasıdır.  

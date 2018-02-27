@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _fpclass
 - _fpclassf
@@ -30,23 +31,25 @@ f1_keywords:
 - math/_fpclass
 - float/_fpclass
 - math/_fpclassf
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - fpclass function
 - floating-point numbers, IEEE representation
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 92501f119d0f0222de0ffeca0611e5fd6c96b697
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: a13abc84cf3e28f6282bf5c160d118d019334cfd
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="fpclass-fpclassf"></a>_fpclass, _fpclassf
 Kayan nokta sınıflandırma bağımsız değişkenin belirten bir değer döndürür.  

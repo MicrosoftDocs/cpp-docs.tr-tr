@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - list/std::operator!=
 - list/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - list/std::operator&lt;
 - list/std::operator&lt;=
 - list/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8103d8f2-c30f-49ad-ac50-b3ba6a907ebe
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (list)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: f3834fcb728d8faf0a2148a5a0c9449fef7e41c8
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: a45d6e168378ea9a46d7dbaf926f431df0625f10
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltlistgt-operators"></a>&lt;Liste&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri işlecinin sol tarafındaki liste nesnesi sağ tarafında listesi nesnesine eşit değil.  
   
 ```
@@ -83,7 +84,7 @@ Lists not equal.
 *\  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Liste nesnesi işlecinin sol tarafındaki liste nesnesi sağ tarafında küçükse testleri.  
   
 ```
@@ -134,7 +135,7 @@ List c1 is less than list c2.
 *\   
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Listenin işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında liste nesnesi eşit veya daha az olur.  
   
 ```
@@ -185,7 +186,7 @@ List c1 is less than or equal to list c2.
 *\  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Liste nesnesi işlecinin sol tarafındaki sağ tarafında listesi nesnesine eşitse testleri.  
   
 ```
@@ -232,7 +233,7 @@ The lists are equal.
 *\  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri işlecinin sol tarafındaki liste nesnesi sağ taraftaki liste nesnesi değerinden daha büyük.  
   
 ```
@@ -283,7 +284,7 @@ List c1 is greater than list c2.
 *\  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Testleri listesi işlecinin sol tarafındaki büyük veya ona eşit listesi nesnesine sağ tarafında nesnesidir.  
   
 ```
@@ -336,7 +337,7 @@ List c1 is greater than or equal to list c2.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Liste >](../standard-library/list.md)
+ [\<list>](../standard-library/list.md)
 
 
 

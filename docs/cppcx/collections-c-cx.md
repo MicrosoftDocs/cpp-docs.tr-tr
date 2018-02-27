@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5c97a264488e8b382091b24cdef8faae4c7bbfc0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3b4f98b17ceb7e7ccde15d2b7def17ee1e57b5ff
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
 C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı koleksiyon türü boş kullanımını yapabilir. Ancak, geçirdiğiniz zaman koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabirimi (ABI) — Örneğin, bir XAML denetimi veya bir JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  
@@ -49,7 +50,7 @@ C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya he
 >   
 >  Windows çalışma zamanı tür sistemi basit diziler kavramını desteklemez ve bu nedenle bir IVector geçiremezsiniz < Platform::Array\<T >> bir dönüş değeri veya yöntem parametresi olarak. Basit bir dizi veya bir dizi sıraları ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
   
- `Vector<T>`ekleme, kaldırma ve erişme öğelerini koleksiyonda ve örtük olarak dönüştürülebilir için gerekli olan yöntemleri sağlayan `IVector<T>`. STL algoritmaları örneklerinde kullanabilirsiniz `Vector<T>`. Aşağıdaki örnek, bazı temel kullanım gösterir. [İşlevi başlamak](../cppcx/begin-function.md) ve [bitiş işlevi](../cppcx/end-function.md) aşağıda verilmiştir `Platform::Collections` ad alanı, değil `std` ad alanı.  
+ `Vector<T>` ekleme, kaldırma ve erişme öğelerini koleksiyonda ve örtük olarak dönüştürülebilir için gerekli olan yöntemleri sağlayan `IVector<T>`. STL algoritmaları örneklerinde kullanabilirsiniz `Vector<T>`. Aşağıdaki örnek, bazı temel kullanım gösterir. [İşlevi başlamak](../cppcx/begin-function.md) ve [bitiş işlevi](../cppcx/end-function.md) aşağıda verilmiştir `Platform::Collections` ad alanı, değil `std` ad alanı.  
   
  [!code-cpp[cx_collections#01](../cppcx/codesnippet/CPP/collections/class1.cpp#01)]  
   
@@ -63,8 +64,8 @@ C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya he
  Depolanması için herhangi bir öğe bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) eşitlik karşılaştırması örtük veya özel bir kullanarak desteklemelidir [std::equal_to](../standard-library/equal-to-struct.md) sağladığınız karşılaştırıcı. Tüm başvuru türleri ve örtük olarak eşitlik karşılaştırmaları destekleyen tüm skaler türler. Skaler olmayan için değer türleri gibi [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx), veya özel karşılaştırmaları — Örneğin, `objA->UniqueID == objB->UniqueID`— özel işlev nesnesi sağlamanız gerekir.  
    
   
-## <a name="vectorproxy-elements"></a>VectorProxy öğeleri  
- [Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmalar gibi [std::sort](../standard-library/algorithm-functions.md#sort) ile bir [IVector\<T >](http://msdn.microsoft.com/en-us/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemiyor işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](http://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](http://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu yineleyiciler proxy sınıfları kullanan `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` ayrı ayrı öğeler erişim sağlamak için `*`, `->`, ve `[]` STL gerektirdiği işleçler. NET olarak söylemek verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olan `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuzu saydam nesnesidir. Bu proxy nesneleri, çünkü bunlar yalnızca yineleyiciler tarafından dahili kullanım içindir, ancak mekanizması nasıl çalıştığını anlamak kullanışlıdır açıklanmamıştır.  
+## <a name="vectorproxy-elements"></a>VectorProxy elements  
+ [Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmalar gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ IVector\<T >](http://msdn.microsoft.com/en-us/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemiyor işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](http://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](http://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu yineleyiciler proxy sınıfları kullanan `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` ayrı ayrı öğeler erişim sağlamak için `*`, `->`, ve `[]` STL gerektirdiği işleçler. NET olarak söylemek verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olan `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuzu saydam nesnesidir. Bu proxy nesneleri, çünkü bunlar yalnızca yineleyiciler tarafından dahili kullanım içindir, ancak mekanizması nasıl çalıştığını anlamak kullanışlıdır açıklanmamıştır.  
   
  Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılar, kullanma `auto&&` doğru olarak bağlamak için yineleyici değişken etkinleştirmek için `VectorProxy` öğeleri. Kullanırsanız `auto` veya `auto&`, derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` uyarı metni belirtiliyor.  
   
@@ -108,13 +109,13 @@ void FindButton(UIElementCollection^ col)
  [Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)  
  Değiştirilebilir, ilişkilendirilebilir koleksiyonu. Harita, anahtar-değer çiftleri öğelerdir. İlişkili değerini ve tüm anahtar-değer çiftleri yineleme almak için bir anahtar bakarak, her ikisi de desteklenir.  
   
- `Map`ve `MapView` üzerinde şablonlu olan `<K, V, C = std::less<K>>`; bu nedenle, karşılaştırıcı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` üzerinde şablonlu olan `<T, E = std::equal_to<T>>` davranışını özelleştirebilirsiniz böylece `IndexOf()`. Bu çoğunlukla önemlidir `Vector` ve `VectorView` değeri yapılar. Örneğin, bir vektör oluşturmak için\<Windows::Foundation::DateTime >, DateTime aşırı değil çünkü özel bir karşılaştırıcı sağlamalısınız == işleci.  
+ `Map` ve `MapView` üzerinde şablonlu olan `<K, V, C = std::less<K>>`; bu nedenle, karşılaştırıcı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` üzerinde şablonlu olan `<T, E = std::equal_to<T>>` davranışını özelleştirebilirsiniz böylece `IndexOf()`. Bu çoğunlukla önemlidir `Vector` ve `VectorView` değeri yapılar. Örneğin, bir vektör oluşturmak için\<Windows::Foundation::DateTime >, DateTime aşırı değil çünkü özel bir karşılaştırıcı sağlamalısınız == işleci.  
   
  [Platform::Collections::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)  
  Bir salt okunur sürümünü bir `Map`.  
   
  [Platform::Collections::Vector Sınıfı](../cppcx/platform-collections-vector-class.md)  
- Değiştirilebilir dizisi koleksiyonu. `Vector<T>`sabiti zamanı rasgele erişim ve amortized-sabiti-time destekler [Append](../cppcx/platform-collections-vector-class.md#append) işlemleri...  
+ Değiştirilebilir dizisi koleksiyonu. `Vector<T>` sabiti zamanı rasgele erişim ve amortized-sabiti-time destekler [Append](../cppcx/platform-collections-vector-class.md#append) işlemleri...  
   
  [Platform::Collections::VectorView Sınıfı](../cppcx/platform-collections-vectorview-class.md)  
  Bir salt okunur sürümünü bir `Vector`.  
@@ -142,7 +143,7 @@ void FindButton(UIElementCollection^ col)
 |[Platform::Collections::InputIterator < IKeyValuePair\<K, V > ^ >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolar [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([Windows::Foundation::Collections::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx))|  
   
 ### <a name="collection-change-events"></a>Koleksiyon değişikliği olayları  
- `Vector`ve `Map` bir koleksiyon nesnesi değiştirildiğinde meydana gelen olayları veya sıfırlama uygulayarak XAML koleksiyonları veri bağlamasını destekleyen veya bir koleksiyonun herhangi bir öğe eklendiğinde, kaldırıldı veya değiştirildi. Devralınan olamaz rağmen bu destek databinding kendi türlerine yazabilirsiniz `Map` veya `Vector` bu türlerde korumalı için.  
+ `Vector` ve `Map` bir koleksiyon nesnesi değiştirildiğinde meydana gelen olayları veya sıfırlama uygulayarak XAML koleksiyonları veri bağlamasını destekleyen veya bir koleksiyonun herhangi bir öğe eklendiğinde, kaldırıldı veya değiştirildi. Devralınan olamaz rağmen bu destek databinding kendi türlerine yazabilirsiniz `Map` veya `Vector` bu türlerde korumalı için.  
   
  [Windows::Foundation::Collections::VectorChangedEventHandler](http://msdn.microsoft.com/library/windows/apps/br206656.aspx) ve [Windows::Foundation::Collections::MapChangedEventHandler](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) temsilcileri belirtmek için olay işleyicileri imzaları Koleksiyon olayları değiştirin. [Windows::Foundation::Collections::CollectionChange](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) ortak enum sınıfı ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` ref sınıfları depolamak olay neyin neden olduğunu belirlemek için olay bağımsız değişkenler. *`EventArgs` Türleri tanımlanmış `Details` ad alanı oluşturmak veya bunları açıkça kullandığınızda tüketen gerekmez çünkü `Map` veya `Vector`.  
   

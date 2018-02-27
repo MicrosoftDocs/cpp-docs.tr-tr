@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MFC, OLE and
 - OLE items
@@ -17,16 +19,17 @@ helpviewer_keywords:
 - applications [OLE], about OLE
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 38b2f6c936ff314f56e4b1868837729ad00efce4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d13baf7960b329e56cfce24011f4c15599cdda8b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ole-in-mfc"></a>MFC'de OLE
 Bu makaleler MFC kullanma OLE Programlama temelleri açıklanır. MFC OLE kullanan programlar yazmak için en kolay yolu sağlar:  
@@ -41,7 +44,7 @@ Bu makaleler MFC kullanma OLE Programlama temelleri açıklanır. MFC OLE kullan
   
 -   MFC durumu verileri yönetmek için DLL işlev giriş noktaları, OLE/COM arabirimi giriş noktaları ve pencere yordamı giriş noktaları dahil olmak üzere modüllerdeki dışarı.  
   
- Aynı zamanda [Otomasyon](../mfc/automation.md) veya [uzaktan Otomasyon](../mfc/remote-automation.md) programınızdan başka bir programın çalışması için.  
+ Aynı zamanda [Otomasyon](../mfc/automation.md).  
   
 > [!NOTE]
 >  OLE kapsayıcıları, OLE sunucuları, OLE öğeleri, yerinde etkinleştirme (veya görsel düzenleme), bağlama ve katıştırma, ilişkili teknolojilerini izleyicileri, sürükle ve bırak OLE gösterir terim ve menü birleştirme. ActiveX denetimleri gibi terimi etkin Bileşen Nesne Modeli (COM) ve COM tabanlı nesneleri için geçerlidir. OLE Otomasyon şimdi Otomasyon adı verilir.  

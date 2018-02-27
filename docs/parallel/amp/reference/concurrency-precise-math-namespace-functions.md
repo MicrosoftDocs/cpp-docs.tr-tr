@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - amp_math/Concurrency::precise_math::acos
 - amp_math/Concurrency::precise_math::acosh
@@ -94,27 +94,29 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::tgamma
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 02a792717690215c572089f11525f1f92c0e90e6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: c1d329e13d686e7f378646105b4bcaed2dbb3a3a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>CONCURRENCY::precise_math ad alanı işlevleri
 ||||  
 |-|-|-|  
-|[ACOS](#acos)|[acosf](#acosf)|[ACOSH](#acosh)|  
+|[acos](#acos)|[acosf](#acosf)|[ACOSH](#acosh)|  
 |[acoshf](#acoshf)|[asin](#asin)|[asinf](#asinf)|  
-|[ASİNH](#asinh)|[asinhf](#asinhf)|[atan](#atan)|  
-|[ATAN2](#atan2)|[atan2f](#atan2f)|[atanf](#atanf)|  
-|[ATANH](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|  
+|[asinh](#asinh)|[asinhf](#asinhf)|[atan](#atan)|  
+|[atan2](#atan2)|[atan2f](#atan2f)|[atanf](#atanf)|  
+|[atanh](#atanh)|[atanhf](#atanhf)|[cbrt](#cbrt)|  
 |[cbrtf](#cbrtf)|[ceil](#ceil)|[ceilf](#ceilf)|  
 |[copysign](#copysign)|[copysignf](#copysignf)|[cos](#cos)|  
 |[cosf](#cosf)|[COSH](#cosh)|[coshf](#coshf)|  
@@ -126,37 +128,37 @@ ms.lasthandoff: 12/21/2017
 |[expf](#expf)|[expm1](#expm1)|[expm1f](#expm1f)|  
 |[fabs](#fabs)|[fabsf](#fabsf)|[Kat](#floor)| 
 |[fdim](#fdim)|[fdimf](#fdimf)|| 
-|[floorf](#floorf)|[FMA](#fma)|[fmaf](#fmaf)|
+|[floorf](#floorf)|[fma](#fma)|[fmaf](#fmaf)|
 [fmax](#fmax)|[fmaxf](#fmaxf)|| 
 |[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|  
 |[fmodf](#fmodf)|[fpclassify](#fpclassify)|[frexp](#frexp)|  
 |[frexpf](#frexpf)|[hypot](#hypot)|[hypotf](#hypotf)|  
 |[ilogb](#ilogb)|[ilogbf](#ilogbf)|[isfinite](#isfinite)|  
-|[isinf](#isinf)|[isNaN](#isnan)|[isnormal](#isnormal)|  
+|[isinf](#isinf)|[isnan](#isnan)|[isnormal](#isnormal)|  
 |[ldexp](#ldexp)|[ldexpf](#ldexpf)|[lgamma](#lgamma)|  
 |[lgammaf](#lgammaf)|[Günlük](#log)|[log10](#log10)|  
 |[log10f](#log10f)|[log1p](#log1p)|[log1pf](#log1pf)|  
 |[log2](#log2)|[log2f](#log2f)|[logb](#logb)|  
 |[logbf](#logbf)|[logf](#logf)|[modf](#modf)|  
-|[modff](#modff)|[NaN](#nan)|[nanf](#nanf)|  
+|[modff](#modff)|[nan](#nan)|[nanf](#nanf)|  
 |[nearbyint](#nearbyint)|[nearbyintf](#nearbyintf)|[nextafter](#nextafter)|  
-|[nextafterf](#nextafterf)|[Phi](#phi)|[phif](#phif)|  
+|[nextafterf](#nextafterf)|[phi](#phi)|[phif](#phif)|  
 |[POW](#pow)|[powf](#powf)|[probit](#probit)|  
 |[probitf](#probitf)|[rcbrt](#rcbrt)|[rcbrtf](#rcbrtf)|  
-|[Kalan](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|  
+|[remainder](#remainder)|[remainderf](#remainderf)|[remquo](#remquo)|  
 |[remquof](#remquof)|[yuvarlamak](#round)|[roundf](#roundf)|  
 |[rsqrt](#rsqrt)|[rsqrtf](#rsqrtf)|[scalb](#scalb)|  
 |[scalbf](#scalbf)|[scalbn](#scalbn)|[scalbnf](#scalbnf)|  
 |[signbit](#signbit)|[signbitf](#signbitf)|[sin](#sin)|  
 |[sincos](#sincos)|[sincosf](#sincosf)|[sinf](#sinf)|  
-|[SİNH](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|  
-|[sinpif](#sinpif)|[Sqrt](#sqrt)|[sqrtf](#sqrtf)|  
+|[sinh](#sinh)|[sinhf](#sinhf)|[sinpi](#sinpi)|  
+|[sinpif](#sinpif)|[sqrt](#sqrt)|[sqrtf](#sqrtf)|  
 |[tan](#tan)|[tanf](#tanf)|[TANH](#tanh)|  
 |[tanhf](#tanhf)|[tanpi](#tanpi)|[tanpif](#tanpif)|  
 |[tgamma](#tgamma)|[tgammaf](#tgammaf)|[trunc](#trunc)|  
 |[truncf](#truncf)|  
   
-##  <a name="acos"></a>ACOS  
+##  <a name="acos"></a>  ACOS  
  Bağımsız değişken arkkosinüsünü hesaplar  
   
 ```  
@@ -173,7 +175,7 @@ inline double acos(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arkkosinüsünü değerini döndürür  
   
-##  <a name="acosf"></a>acosf  
+##  <a name="acosf"></a>  acosf  
  Bağımsız değişken arkkosinüsünü hesaplar  
   
 ```  
@@ -187,7 +189,7 @@ inline float acosf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arkkosinüsünü değerini döndürür  
   
-##  <a name="acosh"></a>ACOSH  
+##  <a name="acosh"></a>  ACOSH  
  Ters hiperbolik Kosinüs bağımsız değişkenin hesaplar  
   
 ```  
@@ -204,7 +206,7 @@ inline double acosh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken ters hiperbolik Kosinüs değerini döndürür  
   
-##  <a name="acoshf"></a>acoshf  
+##  <a name="acoshf"></a>  acoshf  
  Ters hiperbolik Kosinüs bağımsız değişkenin hesaplar  
   
 ```  
@@ -218,7 +220,7 @@ inline float acoshf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken ters hiperbolik Kosinüs değerini döndürür  
   
-##  <a name="asin"></a>asin  
+##  <a name="asin"></a>  asin  
  Bağımsız değişken arksinüsünü hesaplar  
   
 ```  
@@ -235,7 +237,7 @@ inline double asin(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arksinüsünü değerini döndürür  
   
-##  <a name="asinf"></a>asinf  
+##  <a name="asinf"></a>  asinf  
  Bağımsız değişken arksinüsünü hesaplar  
   
 ```  
@@ -249,7 +251,7 @@ inline float asinf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arksinüsünü değerini döndürür  
   
-##  <a name="asinh"></a>ASİNH  
+##  <a name="asinh"></a>  ASİNH  
  Ters hiperbolik sinüs bağımsız değişkenin hesaplar  
   
 ```  
@@ -266,7 +268,7 @@ inline double asinh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken ters hiperbolik sinüs değerini döndürür  
   
-##  <a name="asinhf"></a>asinhf  
+##  <a name="asinhf"></a>  asinhf  
  Ters hiperbolik sinüs bağımsız değişkenin hesaplar  
   
 ```  
@@ -280,7 +282,7 @@ inline float asinhf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken ters hiperbolik sinüs değerini döndürür  
   
-##  <a name="atan"></a>atan  
+##  <a name="atan"></a>  atan  
  Bağımsız değişken tanjantını hesaplar  
   
 ```  
@@ -297,7 +299,7 @@ inline double atan(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arktanjantını değerini döndürür  
   
-##  <a name="atan2"></a>ATAN2  
+##  <a name="atan2"></a>  ATAN2  
  _Y/_X tanjantını hesaplar  
   
 ```  
@@ -321,7 +323,7 @@ inline double atan2(
 ### <a name="return-value"></a>Dönüş Değeri  
  _Y/_X arktanjantını değerini döndürür  
   
-##  <a name="atan2f"></a>atan2f  
+##  <a name="atan2f"></a>  atan2f  
  _Y/_X tanjantını hesaplar  
   
 ```  
@@ -340,7 +342,7 @@ inline float atan2f(
 ### <a name="return-value"></a>Dönüş Değeri  
  _Y/_X arktanjantını değerini döndürür  
   
-##  <a name="atanf"></a>atanf  
+##  <a name="atanf"></a>  atanf  
  Bağımsız değişken tanjantını hesaplar  
   
 ```  
@@ -354,7 +356,7 @@ inline float atanf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken arktanjantını değerini döndürür  
   
-##  <a name="atanh"></a>ATANH  
+##  <a name="atanh"></a>  ATANH  
  Ters hiperbolik tanjant bağımsız değişkenin hesaplar  
   
 ```  
@@ -371,7 +373,7 @@ inline double atanh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Ters hiperbolik tanjant bağımsız değişkeninin değerini döndürür  
   
-##  <a name="atanhf"></a>atanhf  
+##  <a name="atanhf"></a>  atanhf  
  Ters hiperbolik tanjant bağımsız değişkenin hesaplar  
   
 ```  
@@ -385,7 +387,7 @@ inline float atanhf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Ters hiperbolik tanjant bağımsız değişkeninin değerini döndürür  
   
-##  <a name="cbrt"></a>cbrt  
+##  <a name="cbrt"></a>  cbrt  
  Bağımsız değişken gerçek küp kökündeki hesaplar  
   
 ```  
@@ -402,7 +404,7 @@ inline double cbrt(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken gerçek Küp kökünü döndürür  
   
-##  <a name="cbrtf"></a>cbrtf  
+##  <a name="cbrtf"></a>  cbrtf  
  Bağımsız değişken gerçek küp kökündeki hesaplar  
   
 ```  
@@ -416,7 +418,7 @@ inline float cbrtf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken gerçek Küp kökünü döndürür  
   
-##  <a name="ceil"></a>ceil  
+##  <a name="ceil"></a>  ceil  
  Bağımsız değişken tavan hesaplar  
   
 ```  
@@ -433,7 +435,7 @@ inline double ceil(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken tavan döndürür  
   
-##  <a name="ceilf"></a>ceilf  
+##  <a name="ceilf"></a>  ceilf  
  Bağımsız değişken tavan hesaplar  
   
 ```  
@@ -447,7 +449,7 @@ inline float ceilf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken tavan döndürür  
   
-##  <a name="copysign"></a>copysign  
+##  <a name="copysign"></a>  copysign  
  Bir değerle _X büyüklük ve _Y oturum oluşturur  
   
 ```  
@@ -471,7 +473,7 @@ inline double copysign(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X büyüklük ve _Y oturum ile bir değer döndürür  
   
-##  <a name="copysignf"></a>copysignf  
+##  <a name="copysignf"></a>  copysignf  
  Bir değerle _X büyüklük ve _Y oturum oluşturur  
   
 ```  
@@ -490,7 +492,7 @@ inline float copysignf(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X büyüklük ve _Y oturum ile bir değer döndürür  
   
-##  <a name="cos"></a>cos  
+##  <a name="cos"></a>  cos  
  Bağımsız değişken kosinüsünü hesaplar  
   
 ```  
@@ -507,7 +509,7 @@ inline double cos(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken kosinüsünü değerini döndürür  
   
-##  <a name="cosf"></a>cosf  
+##  <a name="cosf"></a>  cosf  
  Bağımsız değişken kosinüsünü hesaplar  
   
 ```  
@@ -521,7 +523,7 @@ inline float cosf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken kosinüsünü değerini döndürür  
   
-##  <a name="cosh"></a>COSH  
+##  <a name="cosh"></a>  COSH  
  Bağımsız değişkenin hiperbolik kosinüsünü değeri hesaplar  
   
 ```  
@@ -538,7 +540,7 @@ inline double cosh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik kosinüsünü değerini döndürür  
   
-##  <a name="coshf"></a>coshf  
+##  <a name="coshf"></a>  coshf  
  Bağımsız değişkenin hiperbolik kosinüsünü değeri hesaplar  
   
 ```  
@@ -552,7 +554,7 @@ inline float coshf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik kosinüsünü değerini döndürür  
   
-##  <a name="cospi"></a>cospi  
+##  <a name="cospi"></a>  cospi  
  Pi kosinüsünü değerini hesaplar * _X  
   
 ```  
@@ -569,7 +571,7 @@ inline double cospi(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının kosinüsünü değerini döndürür * _X  
   
-##  <a name="cospif"></a>cospif  
+##  <a name="cospif"></a>  cospif  
  Pi kosinüsünü değerini hesaplar * _X  
   
 ```  
@@ -583,7 +585,7 @@ inline float cospif(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının kosinüsünü değerini döndürür * _X  
   
-##  <a name="erf"></a>erf  
+##  <a name="erf"></a>  erf  
  _X hata işlevinin hesaplar  
   
 ```  
@@ -600,7 +602,7 @@ inline double erf(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X hata işlevini döndürür  
   
-##  <a name="erfc"></a>erfc  
+##  <a name="erfc"></a>  erfc  
  _X Tamamlayıcı hata işlevinin hesaplar  
   
 ```  
@@ -617,7 +619,7 @@ inline double erfc(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X Tamamlayıcı hata işlevini döndürür  
   
-##  <a name="erfcf"></a>erfcf  
+##  <a name="erfcf"></a>  erfcf  
  _X Tamamlayıcı hata işlevinin hesaplar  
   
 ```  
@@ -631,7 +633,7 @@ inline float erfcf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X Tamamlayıcı hata işlevini döndürür  
   
-##  <a name="erfcinv"></a>erfcinv  
+##  <a name="erfcinv"></a>  erfcinv  
  _X ters Tamamlayıcı hata işlevinin hesaplar  
   
 ```  
@@ -648,7 +650,7 @@ inline double erfcinv(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ters Tamamlayıcı hata işlevini döndürür  
   
-##  <a name="erfcinvf"></a>erfcinvf  
+##  <a name="erfcinvf"></a>  erfcinvf  
  _X ters Tamamlayıcı hata işlevinin hesaplar  
   
 ```  
@@ -662,7 +664,7 @@ inline float erfcinvf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ters Tamamlayıcı hata işlevini döndürür  
   
-##  <a name="erff"></a>erff  
+##  <a name="erff"></a>  erff  
  _X hata işlevinin hesaplar  
   
 ```  
@@ -676,7 +678,7 @@ inline float erff(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X hata işlevini döndürür  
   
-##  <a name="erfinv"></a>erfinv  
+##  <a name="erfinv"></a>  erfinv  
  _X ters hata işlevinin hesaplar  
   
 ```  
@@ -693,7 +695,7 @@ inline double erfinv(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ters hata işlevini döndürür  
   
-##  <a name="erfinvf"></a>erfinvf  
+##  <a name="erfinvf"></a>  erfinvf  
  _X ters hata işlevinin hesaplar  
   
 ```  
@@ -707,7 +709,7 @@ inline float erfinvf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ters hata işlevini döndürür  
   
-##  <a name="exp10"></a>exp10  
+##  <a name="exp10"></a>  exp10  
  10 tabanında bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -724,7 +726,7 @@ inline double exp10(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  10 tabanında bağımsız değişkenin üstel döndürür  
   
-##  <a name="exp10f"></a>exp10f  
+##  <a name="exp10f"></a>  exp10f  
  10 tabanında bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -738,7 +740,7 @@ inline float exp10f(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  10 tabanında bağımsız değişkenin üstel döndürür  
   
-##  <a name="expm1"></a>expm1  
+##  <a name="expm1"></a>  expm1  
  Bağımsız değişkenin e tabanında üssü eksi 1 hesaplar.  
   
 ```  
@@ -755,7 +757,7 @@ inline double expm1(double exponent) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin e tabanında üssü eksi 1 döndürür.  
   
-##  <a name="expm1f"></a>expm1f  
+##  <a name="expm1f"></a>  expm1f  
  Bağımsız değişkenin e tabanında üssü eksi 1 hesaplar.  
   
 ```  
@@ -769,7 +771,7 @@ inline float expm1f(float exponent) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin e tabanında üssü eksi 1 döndürür.  
   
-##  <a name="exp"></a>exp  
+##  <a name="exp"></a>  exp  
  E tabanında bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -786,7 +788,7 @@ inline double exp(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  E tabanında bağımsız değişkenin üstel döndürür  
   
-##  <a name="expf"></a>expf  
+##  <a name="expf"></a>  expf  
  E tabanında bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -800,7 +802,7 @@ inline float expf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  E tabanında bağımsız değişkenin üstel döndürür  
   
-##  <a name="exp2"></a>exp2  
+##  <a name="exp2"></a>  exp2  
  Base-2 bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -817,7 +819,7 @@ inline double exp2(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Base-2 bağımsız değişkeni üstel döndürür  
   
-##  <a name="exp2f"></a>exp2f  
+##  <a name="exp2f"></a>  exp2f  
  Base-2 bağımsız değişkeni üstel hesaplar  
   
 ```  
@@ -831,7 +833,7 @@ inline float exp2f(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Base-2 bağımsız değişkeni üstel döndürür  
   
-##  <a name="fabs"></a>fabs  
+##  <a name="fabs"></a>  fabs  
  Bağımsız değişken mutlak değerini döndürür  
   
 ```  
@@ -848,7 +850,7 @@ inline double fabs(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken mutlak değerini döndürür  
   
-##  <a name="fabsf"></a>fabsf  
+##  <a name="fabsf"></a>  fabsf  
  Bağımsız değişken mutlak değerini döndürür  
   
 ```  
@@ -862,7 +864,7 @@ inline float fabsf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken mutlak değerini döndürür  
 
-## <a name="fdim"></a>fdim  
+## <a name="fdim"></a> fdim  
 Bağımsız değişkenler arasındaki pozitif fark hesaplar.
 ```  
 inline float fdim(
@@ -875,13 +877,13 @@ inline double fdim(
 ) restrict(amp);
 ``` 
 ### <a name="parameters"></a>Parametreler
-`_X`Kayan nokta değeri `_Y` kayan nokta değeri
+`_X` Kayan nokta değeri `_Y` kayan nokta değeri
 
 
 ### <a name="return-value"></a>Dönüş Değeri
 _X _X _Y büyükse, _Y arasındaki fark; Aksi takdirde, + 0.
  
-## <a name="fdimf"></a>fdimf  
+## <a name="fdimf"></a> fdimf  
 Bağımsız değişkenler arasındaki pozitif fark hesaplar.
 ```
 inline float fdimf(
@@ -890,12 +892,12 @@ inline float fdimf(
 ) restrict(amp);
 ```
 ### <a name="parameters"></a>Parametreler
-`_X`Kayan nokta değeri `_Y` kayan nokta değeri
+`_X` Kayan nokta değeri `_Y` kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
 _X _X _Y büyükse, _Y arasındaki fark; Aksi takdirde, + 0. 
   
-##  <a name="floor"></a>Kat  
+##  <a name="floor"></a>  Kat  
  Bağımsız değişken kat hesaplar  
   
 ```  
@@ -912,7 +914,7 @@ inline double floor(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken kat döndürür  
   
-##  <a name="floorf"></a>floorf  
+##  <a name="floorf"></a>  floorf  
  Bağımsız değişken kat hesaplar  
   
 ```  
@@ -926,7 +928,7 @@ inline float floorf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken kat döndürür  
 
-## <a name="a-namefma-fma"></a><a name="fma">FMA  
+## <a name="a-namefma-fma"></a><a name="fma"> FMA  
 Birinci ve ikinci belirtilen bağımsız değişkenler çarpımını hesaplar, sonra sonuca üçüncü belirtilen bağımsız değişken ekler; tüm hesaplama tek bir işlem olarak gerçekleştirilir.
 ```
 inline float fma(
@@ -942,14 +944,14 @@ inline double fma(
 ) restrict(amp);
 ```
 ### <a name="parameters"></a>Parametreler
-`_X`İlk kayan nokta bağımsız değişken.
-`_Y`İkinci kayan nokta bağımsız değişkeni.
-`_Z`Üçüncü kayan nokta bağımsız değişken.
+`_X` İlk kayan nokta bağımsız değişken.
+`_Y` İkinci kayan nokta bağımsız değişkeni.
+`_Z` Üçüncü kayan nokta bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 İfadenin sonucu (_X * _Y) + _Z. Tüm hesaplama tek bir işlem olarak gerçekleştirilir; diğer bir deyişle, alt ifadelerin sonsuz duyarlık hesaplandığı ve yalnızca son sonucu yuvarlanır. 
 
-## <a name="fmaf"></a>fmaf  
+## <a name="fmaf"></a> fmaf  
 Birinci ve ikinci belirtilen bağımsız değişkenler çarpımını hesaplar, sonra sonuca üçüncü belirtilen bağımsız değişken ekler; tüm hesaplama tek bir işlem olarak gerçekleştirilir.
 ```
 inline float fmaf(
@@ -959,14 +961,14 @@ inline float fmaf(
 ) restrict(amp);
 ```  
 ### <a name="parameters"></a>Parametreler
-`_X`İlk kayan nokta bağımsız değişken.
-`_Y`İkinci kayan nokta bağımsız değişkeni.
-`_Z`Üçüncü kayan nokta bağımsız değişken.
+`_X` İlk kayan nokta bağımsız değişken.
+`_Y` İkinci kayan nokta bağımsız değişkeni.
+`_Z` Üçüncü kayan nokta bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
 İfadenin sonucu (_X * _Y) + _Z. Tüm hesaplama tek bir işlem olarak gerçekleştirilir; diğer bir deyişle, alt ifadelerin sonsuz duyarlık hesaplandığı ve yalnızca son sonucu yuvarlanır.
   
-##  <a name="fmax"></a>fmax  
+##  <a name="fmax"></a>  fmax  
  Bağımsız değişkenler en büyük sayısal değerini belirleme  
   
 ```  
@@ -990,7 +992,7 @@ inline double fmax(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenler en büyük sayısal değeri döndürür  
   
-##  <a name="fmaxf"></a>fmaxf  
+##  <a name="fmaxf"></a>  fmaxf  
  Bağımsız değişkenler en büyük sayısal değerini belirleme  
   
 ```  
@@ -1009,7 +1011,7 @@ inline float fmaxf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenler en büyük sayısal değeri döndürür  
   
-##  <a name="fmin"></a>fmin  
+##  <a name="fmin"></a>  fmin  
  Bağımsız değişkenler en küçük sayısal değeri belirleme  
   
 ```  
@@ -1033,7 +1035,7 @@ inline double fmin(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenler en küçük sayısal değeri döndürür  
   
-##  <a name="fminf"></a>fminf  
+##  <a name="fminf"></a>  fminf  
  Bağımsız değişkenler en küçük sayısal değeri belirleme  
   
 ```  
@@ -1052,7 +1054,7 @@ inline float fminf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenler en küçük sayısal değeri döndürür  
   
-##  <a name="fmod"></a>fmod işlevi (C++ AMP)  
+##  <a name="fmod"></a>  fmod işlevi (C++ AMP)  
  Belirtilen ikinci bağımsız değişkeni tarafından bölünmüş ilk belirtilen bağımsız değişken kalanı hesaplar.  
   
 ```  
@@ -1076,7 +1078,7 @@ inline double fmod(
 ### <a name="return-value"></a>Dönüş Değeri  
  Geri kalan `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y`  *n* , burada  *n*  olan bir tamsayı şekilde büyüklüğünü `_X`  -  `_Y`  *n*  büyüklüğünü'dan küçük `_Y`.  
   
-##  <a name="fmodf"></a>fmodf  
+##  <a name="fmodf"></a>  fmodf  
  Belirtilen ikinci bağımsız değişkeni tarafından bölünmüş ilk belirtilen bağımsız değişken kalanı hesaplar.  
   
 ```  
@@ -1095,7 +1097,7 @@ inline float fmodf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Geri kalan `_X` bölü `_Y`; diğer bir deyişle, değeri `_X`  -  `_Y`  *n* , burada  *n*  olan bir tamsayı şekilde büyüklüğünü `_X`  -  `_Y`  *n*  büyüklüğünü'dan küçük `_Y`.  
   
-##  <a name="fpclassify"></a>fpclassify  
+##  <a name="fpclassify"></a>  fpclassify  
  Bağımsız değişken değeri NaN, sonsuz, normal, subnormal, sıfır olarak sınıflandırır  
   
 ```  
@@ -1112,7 +1114,7 @@ inline int fpclassify(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Sayı sınıflandırma makrosu değerini uygun bağımsız değişkenin değeri olarak döndürür.  
   
-##  <a name="frexp"></a>frexp  
+##  <a name="frexp"></a>  frexp  
  Mantis ve üs _X, alır  
   
 ```  
@@ -1136,7 +1138,7 @@ inline double frexp(
 ### <a name="return-value"></a>Dönüş Değeri  
  Mantis _X döndürür  
   
-##  <a name="frexpf"></a>frexpf  
+##  <a name="frexpf"></a>  frexpf  
  Mantis ve üs _X, alır  
   
 ```  
@@ -1155,7 +1157,7 @@ inline float frexpf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Mantis _X döndürür  
   
-##  <a name="hypot"></a>hypot  
+##  <a name="hypot"></a>  hypot  
  _X ve _Y kareler toplamı kare kökünü hesaplar  
   
 ```  
@@ -1179,7 +1181,7 @@ inline double hypot(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ve _Y kareler toplamı kare kökünü döndürür  
   
-##  <a name="hypotf"></a>hypotf  
+##  <a name="hypotf"></a>  hypotf  
  _X ve _Y kareler toplamı kare kökünü hesaplar  
   
 ```  
@@ -1198,7 +1200,7 @@ inline float hypotf(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X ve _Y kareler toplamı kare kökünü döndürür  
   
-##  <a name="ilogb"></a>ilogb  
+##  <a name="ilogb"></a>  ilogb  
  İmzalı bir tamsayı _X üs Ayıkla  
   
 ```  
@@ -1215,7 +1217,7 @@ inline int ilogb(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X üs imzalı bir tamsayı döndürür  
   
-##  <a name="ilogbf"></a>ilogbf  
+##  <a name="ilogbf"></a>  ilogbf  
  İmzalı bir tamsayı _X üs Ayıkla  
   
 ```  
@@ -1229,7 +1231,7 @@ inline int ilogbf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X üs imzalı bir tamsayı döndürür  
   
-##  <a name="isfinite"></a>isfinite  
+##  <a name="isfinite"></a>  isfinite  
  Bağımsız değişken sınırlı bir değere sahip olup olmadığını belirler  
   
 ```  
@@ -1246,7 +1248,7 @@ inline int isfinite(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken sınırlı bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür  
   
-##  <a name="isinf"></a>isinf  
+##  <a name="isinf"></a>  isinf  
  Bağımsız değişkeni bir sonsuzluk olup olmadığını belirler  
   
 ```  
@@ -1263,7 +1265,7 @@ inline int isinf(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken sonsuz bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür  
   
-##  <a name="isnan"></a>isNaN  
+##  <a name="isnan"></a>  isNaN  
  Bağımsız değişkeni bir NaN olup olmadığını belirler  
   
 ```  
@@ -1280,7 +1282,7 @@ inline int isnan(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken NaN değerine sahip ve yalnızca, sıfır olmayan bir değer döndürür  
   
-##  <a name="isnormal"></a>isnormal  
+##  <a name="isnormal"></a>  isnormal  
  Bağımsız değişken normal olup olmadığını belirler  
   
 ```  
@@ -1297,7 +1299,7 @@ inline int isnormal(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken normal bir değere sahip ve yalnızca, sıfır olmayan bir değer döndürür  
   
-##  <a name="ldexp"></a>ldexp  
+##  <a name="ldexp"></a>  ldexp  
  Belirtilen Mantis ve üs arasında bir gerçek sayı hesaplar.  
   
 ```  
@@ -1319,9 +1321,9 @@ inline double ldexp(
  Tamsayı değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür _X * 2 ^ _Exp  
+ Returns _X * 2^_Exp  
   
-##  <a name="ldexpf"></a>ldexpf  
+##  <a name="ldexpf"></a>  ldexpf  
  Belirtilen Mantis ve üs arasında bir gerçek sayı hesaplar.  
   
 ```  
@@ -1338,9 +1340,9 @@ inline float ldexpf(
  Tamsayı değeri, üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür _X * 2 ^ _Exp  
+ Returns _X * 2^_Exp  
   
-##  <a name="lgamma"></a>lgamma  
+##  <a name="lgamma"></a>  lgamma  
  Bağımsız değişkenin gama mutlak değerini doğal logaritmasını hesaplar  
   
 ```  
@@ -1364,7 +1366,7 @@ inline double lgamma(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin gama mutlak değerini doğal logaritmasını döndürür  
   
-##  <a name="lgammaf"></a>lgammaf  
+##  <a name="lgammaf"></a>  lgammaf  
  Bağımsız değişkenin gama mutlak değerini doğal logaritmasını hesaplar  
   
 ```  
@@ -1383,7 +1385,7 @@ inline float lgammaf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin gama mutlak değerini doğal logaritmasını döndürür  
   
-##  <a name="log"></a>Günlük  
+##  <a name="log"></a>  Günlük  
  Bağımsız değişken e tabanında logaritmasını hesaplar  
   
 ```  
@@ -1400,7 +1402,7 @@ inline double log(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken e tabanında logaritmasını döndürür  
   
-##  <a name="log10"></a>log10  
+##  <a name="log10"></a>  log10  
  Bağımsız değişken 10 tabanında logaritmasını hesaplar  
   
 ```  
@@ -1417,7 +1419,7 @@ inline double log10(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken 10 tabanında logaritmasını döndürür  
   
-##  <a name="log10f"></a>log10f  
+##  <a name="log10f"></a>  log10f  
  Bağımsız değişken 10 tabanında logaritmasını hesaplar  
   
 ```  
@@ -1431,7 +1433,7 @@ inline float log10f(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken 10 tabanında logaritmasını döndürür  
   
-##  <a name="log1p"></a>log1p  
+##  <a name="log1p"></a>  log1p  
  1 artı bağımsız değişkeni e tabanında logaritmasını hesaplar  
   
 ```  
@@ -1448,7 +1450,7 @@ inline double log1p(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  1 artı bağımsız değişkeni e tabanında logaritmasını döndürür  
   
-##  <a name="log1pf"></a>log1pf  
+##  <a name="log1pf"></a>  log1pf  
  1 artı bağımsız değişkeni e tabanında logaritmasını hesaplar  
   
 ```  
@@ -1462,7 +1464,7 @@ inline float log1pf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  1 artı bağımsız değişkeni e tabanında logaritmasını döndürür  
   
-##  <a name="log2"></a>log2  
+##  <a name="log2"></a>  log2  
  Bağımsız değişken 2 tabanındaki logaritmasını hesaplar  
   
 ```  
@@ -1479,7 +1481,7 @@ inline double log2(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken 10 tabanında logaritmasını döndürür  
   
-##  <a name="log2f"></a>log2f  
+##  <a name="log2f"></a>  log2f  
  Bağımsız değişken 2 tabanındaki logaritmasını hesaplar  
   
 ```  
@@ -1493,7 +1495,7 @@ inline float log2f(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken 10 tabanında logaritmasını döndürür  
   
-##  <a name="logb"></a>logb  
+##  <a name="logb"></a>  logb  
  Kayan nokta biçiminde imzalı bir tamsayı olarak _X, üs ayıklar  
   
 ```  
@@ -1510,7 +1512,7 @@ inline double logb(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X imzalı üs döndürür  
   
-##  <a name="logbf"></a>logbf  
+##  <a name="logbf"></a>  logbf  
  Kayan nokta biçiminde imzalı bir tamsayı olarak _X, üs ayıklar  
   
 ```  
@@ -1524,7 +1526,7 @@ inline float logbf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X imzalı üs döndürür  
   
-##  <a name="logf"></a>logf  
+##  <a name="logf"></a>  logf  
  Bağımsız değişken e tabanında logaritmasını hesaplar  
   
 ```  
@@ -1538,7 +1540,7 @@ inline float logf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken e tabanında logaritmasını döndürür  
   
-##  <a name="modf"></a>modf  
+##  <a name="modf"></a>  modf  
  Belirtilen bağımsız değişken kesirli içine ve tamsayı bölümleri böler.  
   
 ```  
@@ -1556,13 +1558,13 @@ inline double modf(
  `_X`  
  Kayan nokta değeri  
   
- `_Iptr`out (parametre)  
+ `_Iptr` out (parametre)  
  Tamsayı kısmını `_X`, kayan nokta değeri olarak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İmzalı kesirli kısmı `_X`.  
   
-##  <a name="modff"></a>modff  
+##  <a name="modff"></a>  modff  
  Belirtilen bağımsız değişken kesirli içine ve tamsayı bölümleri böler.  
   
 ```  
@@ -1581,7 +1583,7 @@ inline float modff(
 ### <a name="return-value"></a>Dönüş Değeri  
  İmzalı kesirli kısmını döndürür `_X`.  
   
-##  <a name="nan"></a>NaN  
+##  <a name="nan"></a>  NaN  
  Sessiz NaN döndürür  
   
 ```  
@@ -1595,7 +1597,7 @@ inline double nan(int _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  İçeriğe sahip kullanılabilir _X içinde belirtilmişse sessiz NaN döndürür  
   
-##  <a name="nanf"></a>nanf  
+##  <a name="nanf"></a>  nanf  
  Sessiz NaN döndürür  
   
 ```  
@@ -1609,7 +1611,7 @@ inline float nanf(int _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  İçeriğe sahip kullanılabilir _X içinde belirtilmişse sessiz NaN döndürür  
   
-##  <a name="nearbyint"></a>nearbyint  
+##  <a name="nearbyint"></a>  nearbyint  
  Bağımsız değişkeni bir tamsayı değeri geçerli yuvarlama yönünü kullanarak kayan nokta biçiminde yuvarlar.  
   
 ```  
@@ -1626,7 +1628,7 @@ inline double nearbyint(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Yuvarlak Integer değeri döndürür.  
   
-##  <a name="nearbyintf"></a>nearbyintf  
+##  <a name="nearbyintf"></a>  nearbyintf  
  Bağımsız değişkeni bir tamsayı değeri geçerli yuvarlama yönünü kullanarak kayan nokta biçiminde yuvarlar.  
   
 ```  
@@ -1640,7 +1642,7 @@ inline float nearbyintf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Yuvarlak Integer değeri döndürür.  
   
-##  <a name="nextafter"></a>nextafter  
+##  <a name="nextafter"></a>  nextafter  
  _X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri belirlemek  
   
 ```  
@@ -1664,7 +1666,7 @@ inline double nextafter(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri döndürür  
   
-##  <a name="nextafterf"></a>nextafterf  
+##  <a name="nextafterf"></a>  nextafterf  
  _X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri belirlemek  
   
 ```  
@@ -1683,7 +1685,7 @@ inline float nextafterf(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X _Y yönünde sonra işlevi türünde sonraki gösterilebilir değeri döndürür  
   
-##  <a name="phi"></a>Phi  
+##  <a name="phi"></a>  Phi  
  Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür  
   
 ```  
@@ -1700,7 +1702,7 @@ inline double phi(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür  
   
-##  <a name="phif"></a>phif  
+##  <a name="phif"></a>  phif  
  Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür  
   
 ```  
@@ -1714,7 +1716,7 @@ inline float phif(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin kümülatif dağılım fonksiyonunu döndürür  
   
-##  <a name="pow"></a>POW  
+##  <a name="pow"></a>  POW  
  Üssü _Y _X hesaplar  
   
 ```  
@@ -1737,7 +1739,7 @@ inline double pow(
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="powf"></a>powf  
+##  <a name="powf"></a>  powf  
  Üssü _Y _X hesaplar  
   
 ```  
@@ -1755,7 +1757,7 @@ inline float powf(
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="probit"></a>probit  
+##  <a name="probit"></a>  probit  
  Bağımsız değişkenin ters kümülatif dağılım fonksiyonunu döndürür  
   
 ```  
@@ -1772,7 +1774,7 @@ inline double probit(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin ters kümülatif dağılım fonksiyonunu döndürür  
   
-##  <a name="probitf"></a>probitf  
+##  <a name="probitf"></a>  probitf  
  Bağımsız değişkenin ters kümülatif dağılım fonksiyonunu döndürür  
   
 ```  
@@ -1786,7 +1788,7 @@ inline float probitf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişkenin ters kümülatif dağılım fonksiyonunu döndürür  
   
-##  <a name="rcbrt"></a>rcbrt  
+##  <a name="rcbrt"></a>  rcbrt  
  Bağımsız değişken küp kökündeki devrik döndürür  
   
 ```  
@@ -1803,7 +1805,7 @@ inline double rcbrt(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken küp kökündeki devrik döndürür  
   
-##  <a name="rcbrtf"></a>rcbrtf  
+##  <a name="rcbrtf"></a>  rcbrtf  
  Bağımsız değişken küp kökündeki devrik döndürür  
   
 ```  
@@ -1817,7 +1819,7 @@ inline float rcbrtf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken küp kökündeki devrik döndürür  
   
-##  <a name="remainder"></a>Kalan  
+##  <a name="remainder"></a>  Kalan  
  Kalanı hesaplar: _X REM _Y  
   
 ```  
@@ -1841,7 +1843,7 @@ inline double remainder(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X REM _Y döndürür  
   
-##  <a name="remainderf"></a>remainderf  
+##  <a name="remainderf"></a>  remainderf  
  Kalanı hesaplar: _X REM _Y  
   
 ```  
@@ -1860,7 +1862,7 @@ inline float remainderf(
 ### <a name="return-value"></a>Dönüş Değeri  
  _X REM _Y döndürür  
   
-##  <a name="remquo"></a>remquo  
+##  <a name="remquo"></a>  remquo  
  Belirtilen ikinci bağımsız değişkeni tarafından bölünmüş ilk belirtilen bağımsız değişken kalanı hesaplar. Ayrıca bölünme significand ikinci belirtilen bağımsız değişken significand tarafından bölünür ilk belirtilen bağımsız değişkenin değerini hesaplar ve üçüncü bağımsız değişkeninde belirtilen konuma kullanarak sayının döndürür.  
   
 ```  
@@ -1883,13 +1885,13 @@ inline double remquo(
  `_Y`  
  İkinci kayan nokta bağımsız değişkeni.  
   
- `_Quo`out (parametre)  
+ `_Quo` out (parametre)  
  Sayının kesirli bit sayısı döndürmek için kullanılan bir tamsayı adresini `_X` tarafından kesirli bitleri bölünmüş `_Y`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kalanı döndürür `_X` bölü `_Y`.  
   
-##  <a name="remquof"></a>remquof  
+##  <a name="remquof"></a>  remquof  
  Belirtilen ikinci bağımsız değişkeni tarafından bölünmüş ilk belirtilen bağımsız değişken kalanı hesaplar. Ayrıca bölünme significand ikinci belirtilen bağımsız değişken significand tarafından bölünür ilk belirtilen bağımsız değişkenin değerini hesaplar ve üçüncü bağımsız değişkeninde belirtilen konuma kullanarak sayının döndürür.  
   
 ```  
@@ -1906,13 +1908,13 @@ inline float remquof(
  `_Y`  
  İkinci kayan nokta bağımsız değişkeni.  
   
- `_Quo`out (parametre)  
+ `_Quo` out (parametre)  
  Sayının kesirli bit sayısı döndürmek için kullanılan bir tamsayı adresini `_X` tarafından kesirli bitleri bölünmüş `_Y`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kalanı döndürür `_X` bölü `_Y`.  
   
-##  <a name="round"></a>yuvarlamak  
+##  <a name="round"></a>  yuvarlamak  
  _X en yakın tamsayıya yuvarlar  
   
 ```  
@@ -1929,7 +1931,7 @@ inline double round(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X'en yakın tamsayıya döndürür  
   
-##  <a name="roundf"></a>roundf  
+##  <a name="roundf"></a>  roundf  
  _X en yakın tamsayıya yuvarlar  
   
 ```  
@@ -1943,7 +1945,7 @@ inline float roundf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X'en yakın tamsayıya döndürür  
   
-##  <a name="rsqrt"></a>rsqrt  
+##  <a name="rsqrt"></a>  rsqrt  
  Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
   
 ```  
@@ -1960,7 +1962,7 @@ inline double rsqrt(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
   
-##  <a name="rsqrtf"></a>rsqrtf  
+##  <a name="rsqrtf"></a>  rsqrtf  
  Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
   
 ```  
@@ -1974,7 +1976,7 @@ inline float rsqrtf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Devrik değerlerin bağımsız değişkeni'nin kare kökünü döndürür  
   
-##  <a name="scalb"></a>scalb  
+##  <a name="scalb"></a>  scalb  
  Flt_radıx tarafından _X güç _Y için çarpar  
   
 ```  
@@ -1998,7 +2000,7 @@ inline double scalb(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür _X * (flt_radıx ^ _Y)  
   
-##  <a name="scalbf"></a>scalbf  
+##  <a name="scalbf"></a>  scalbf  
  Flt_radıx tarafından _X güç _Y için çarpar  
   
 ```  
@@ -2017,7 +2019,7 @@ inline float scalbf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür _X * (flt_radıx ^ _Y)  
   
-##  <a name="scalbn"></a>scalbn  
+##  <a name="scalbn"></a>  scalbn  
  Flt_radıx tarafından _X güç _Y için çarpar  
   
 ```  
@@ -2041,7 +2043,7 @@ inline double scalbn(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür _X * (flt_radıx ^ _Y)  
   
-##  <a name="scalbnf"></a>scalbnf  
+##  <a name="scalbnf"></a>  scalbnf  
  Flt_radıx tarafından _X güç _Y için çarpar  
   
 ```  
@@ -2060,7 +2062,7 @@ inline float scalbnf(
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür _X * (flt_radıx ^ _Y)  
   
-##  <a name="signbit"></a>signbit  
+##  <a name="signbit"></a>  signbit  
  _X oturum negatif olup olmadığını belirler  
   
 ```  
@@ -2077,7 +2079,7 @@ inline int signbit(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X oturum varsa ve yalnızca negatifse sıfır olmayan bir değer döndürür  
   
-##  <a name="signbitf"></a>signbitf  
+##  <a name="signbitf"></a>  signbitf  
  _X oturum negatif olup olmadığını belirler  
   
 ```  
@@ -2091,7 +2093,7 @@ inline int signbitf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  _X oturum varsa ve yalnızca negatifse sıfır olmayan bir değer döndürür  
   
-##  <a name="sin"></a>sin  
+##  <a name="sin"></a>  sin  
  Bağımsız değişkenin sinüsünü değeri hesaplar  
   
 ```  
@@ -2108,7 +2110,7 @@ inline double sin(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken sinüsünü değerini döndürür  
   
-##  <a name="sinf"></a>sinf  
+##  <a name="sinf"></a>  sinf  
  Bağımsız değişkenin sinüsünü değeri hesaplar  
   
 ```  
@@ -2122,7 +2124,7 @@ inline float sinf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken sinüsünü değerini döndürür  
   
-##  <a name="sincos"></a>sincos  
+##  <a name="sincos"></a>  sincos  
  _X Sinüs ve Kosinüs değerini hesaplar  
   
 ```  
@@ -2148,7 +2150,7 @@ inline void sincos(
  `_C`  
  _X kosinüsünü değerini döndürür  
   
-##  <a name="sincosf"></a>sincosf  
+##  <a name="sincosf"></a>  sincosf  
  _X Sinüs ve Kosinüs değerini hesaplar  
   
 ```  
@@ -2168,7 +2170,7 @@ inline void sincosf(
  `_C`  
  _X kosinüsünü değerini döndürür  
   
-##  <a name="sinh"></a>SİNH  
+##  <a name="sinh"></a>  SİNH  
  Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar  
   
 ```  
@@ -2185,7 +2187,7 @@ inline double sinh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik sinüsünü değerini döndürür  
   
-##  <a name="sinhf"></a>sinhf  
+##  <a name="sinhf"></a>  sinhf  
  Bağımsız değişkenin hiperbolik sinüsünü değeri hesaplar  
   
 ```  
@@ -2199,7 +2201,7 @@ inline float sinhf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik sinüsünü değerini döndürür  
   
-##  <a name="sinpi"></a>sinpi  
+##  <a name="sinpi"></a>  sinpi  
  Pi sinüsünü değerini hesaplar * _X  
   
 ```  
@@ -2216,7 +2218,7 @@ inline double sinpi(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının sinüsünü değerini döndürür * _X  
   
-##  <a name="sinpif"></a>sinpif  
+##  <a name="sinpif"></a>  sinpif  
  Pi sinüsünü değerini hesaplar * _X  
   
 ```  
@@ -2230,7 +2232,7 @@ inline float sinpif(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının sinüsünü değerini döndürür * _X  
   
-##  <a name="sqrt"></a>Sqrt  
+##  <a name="sqrt"></a>  Sqrt  
  Bağımsız değişken squre kökündeki hesaplar  
   
 ```  
@@ -2247,7 +2249,7 @@ inline double sqrt(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken squre kökünü döndürür  
   
-##  <a name="sqrtf"></a>sqrtf  
+##  <a name="sqrtf"></a>  sqrtf  
  Bağımsız değişken squre kökündeki hesaplar  
   
 ```  
@@ -2261,7 +2263,7 @@ inline float sqrtf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken squre kökünü döndürür  
   
-##  <a name="tan"></a>tan  
+##  <a name="tan"></a>  tan  
  Bağımsız değişkenin Eğim değeri hesaplar  
   
 ```  
@@ -2278,7 +2280,7 @@ inline double tan(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken Eğim değerini döndürür  
   
-##  <a name="tanf"></a>tanf  
+##  <a name="tanf"></a>  tanf  
  Bağımsız değişkenin Eğim değeri hesaplar  
   
 ```  
@@ -2292,7 +2294,7 @@ inline float tanf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken Eğim değerini döndürür  
   
-##  <a name="tanh"></a>TANH  
+##  <a name="tanh"></a>  TANH  
  Bağımsız değişkenin hiperbolik tanjant değeri hesaplar  
   
 ```  
@@ -2309,7 +2311,7 @@ inline double tanh(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik tanjant değerini döndürür  
   
-##  <a name="tanhf"></a>tanhf  
+##  <a name="tanhf"></a>  tanhf  
  Bağımsız değişkenin hiperbolik tanjant değeri hesaplar  
   
 ```  
@@ -2323,7 +2325,7 @@ inline float tanhf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken hiperbolik tanjant değerini döndürür  
   
-##  <a name="tanpi"></a>tanpi  
+##  <a name="tanpi"></a>  tanpi  
  Pi Eğim değerini hesaplar * _X  
   
 ```  
@@ -2340,7 +2342,7 @@ inline double tanpi(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının Eğim değerini döndürür * _X  
   
-##  <a name="tanpif"></a>tanpif  
+##  <a name="tanpif"></a>  tanpif  
  Pi Eğim değerini hesaplar * _X  
   
 ```  
@@ -2354,7 +2356,7 @@ inline float tanpif(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Pi sayısının Eğim değerini döndürür * _X  
   
-##  <a name="tgamma"></a>tgamma  
+##  <a name="tgamma"></a>  tgamma  
  _X Gama işlevinin hesaplar  
   
 ```  
@@ -2371,7 +2373,7 @@ inline double tgamma(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Gama işlevinin _X sonucunu döndürür  
   
-##  <a name="tgammaf"></a>tgammaf  
+##  <a name="tgammaf"></a>  tgammaf  
  _X Gama işlevinin hesaplar  
   
 ```  
@@ -2385,7 +2387,7 @@ inline float tgammaf(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Gama işlevinin _X sonucunu döndürür  
   
-##  <a name="trunc"></a>trunc  
+##  <a name="trunc"></a>  trunc  
  Tamsayı bileşen bağımsız değişkeni tamsayıya dönüştürür  
   
 ```  
@@ -2402,7 +2404,7 @@ inline double trunc(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağımsız değişken tamsayı bileşenini döndürür  
   
-##  <a name="truncf"></a>truncf  
+##  <a name="truncf"></a>  truncf  
  Tamsayı bileşen bağımsız değişkeni tamsayıya dönüştürür  
   
 ```  

@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
@@ -15,23 +16,25 @@ f1_keywords:
 - chrono/std::chrono::hours
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 46500f4f1658c613ee8422791e46015b0e129532
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 255c70eeb29e8bedaeec43d9844ca41b42fb470a
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zaman instants değiştirmek işlevleri tanımlamak için.  
   
- Visual Studio 2015'te, uygulanması başlayarak `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılamak üzere değişti. `steady_clock`artık QueryPerformanceCounter() üzerinde temel ve `high_resolution_clock` typedef için sunulmuştur `steady_clock`. Sonuç olarak, Visual C++'ta `steady_clock::time_point` typedef için sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu mutlaka diğer uygulamaları için geçerli değildir.  
+ Visual Studio 2015'te, uygulanması başlayarak `steady_clock` steadiness ve monotonicity C++ Standart gereksinimlerini karşılamak üzere değişti. `steady_clock` artık QueryPerformanceCounter() üzerinde temel ve `high_resolution_clock` typedef için sunulmuştur `steady_clock`. Sonuç olarak, Visual C++'ta `steady_clock::time_point` typedef için sunulmuştur `chrono::time_point<steady_clock>`; ancak, bu mutlaka diğer uygulamaları için geçerli değildir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -70,12 +73,12 @@ Standart üstbilgisini \<chrono > sınıfları ve temsil eder ve süreler ve zam
 |[operator-](../standard-library/chrono-operators.md#operator-)|İşleç çıkarması veya değilleme işlemi için `duration` ve `time_point` nesneleri.|  
 |[operator!=](../standard-library/chrono-operators.md#op_neq)|İle birlikte kullanılan eşitsizlik işleci `duration` veya `time_point` nesneleri.|  
 |[mod işleci](../standard-library/chrono-operators.md#op_modulo)|İşlemler modulo işleci için `duration` nesneleri.|  
-|[işleç *](../standard-library/chrono-operators.md#op_star)|Çarpma işleci için `duration` nesneleri.|  
+|[operator*](../standard-library/chrono-operators.md#op_star)|Çarpma işleci için `duration` nesneleri.|  
 |[operator /](../standard-library/chrono-operators.md#op_div)|Bölme işleci için `duration` nesneleri.|  
-|[operator +](../standard-library/chrono-operators.md#op_add)|Ekler `duration` ve `time_point` nesneleri.|  
+|[operator+](../standard-library/chrono-operators.md#op_add)|Ekler `duration` ve `time_point` nesneleri.|  
 |[işleci&lt;](../standard-library/chrono-operators.md#op_lt)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesi, başka değerinden `duration` veya `time_point` nesnesi.|  
 |[işleci&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir değerinden küçük veya eşit başka `duration` veya `time_point` nesnesi.|  
-|[operator ==](../standard-library/chrono-operators.md#op_eq_eq)|İki olup olmadığını belirleyen `duration` nesneleri temsil aynı uzunlukta olan zaman aralıkları mı iki `time_point` nesneleri zamanında aynı noktasını temsil eder.|  
+|[operator==](../standard-library/chrono-operators.md#op_eq_eq)|İki olup olmadığını belirleyen `duration` nesneleri temsil aynı uzunlukta olan zaman aralıkları mı iki `time_point` nesneleri zamanında aynı noktasını temsil eder.|  
 |[işleci&gt;](../standard-library/chrono-operators.md#op_gt)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir diğerinden daha büyük `duration` veya `time_point` nesnesi.|  
 |[işleci&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|Bir olup olmadığını belirleyen `duration` veya `time_point` nesnesidir büyük veya ona eşit başka bir `duration` veya `time_point` nesnesi.|  
   

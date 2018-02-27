@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - deque/std::operator!=
 - deque/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - deque/std::operator&lt;
 - deque/std::operator&lt;=
 - deque/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 482d7c92-54c7-493b-99e6-2a73617481a5
-caps.latest.revision: "7"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (deque)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: 81645c8f645a3c3a09ef641b2fce003260bcd5f6
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: dfceefe986ae065b6ef85abe7ebd4c5d908f3d46
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesnesine eşit değilse testleri.  
   
 ```
@@ -82,7 +83,7 @@ The deques are not equal.
 *\  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesne küçükse testleri.  
   
 ```
@@ -132,7 +133,7 @@ Deque c1 is less than deque c2.
 *\   
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Deque işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında deque nesnesine eşit veya daha az olur.  
   
 ```
@@ -183,7 +184,7 @@ Deque c1 is less than or equal to deque c2.
   
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesnesine eşitse testleri.  
   
 ```
@@ -237,7 +238,7 @@ The deques are not equal.
   
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Deque nesne işlecinin sol tarafındaki sağ tarafında deque nesne büyükse testleri.  
   
 ```
@@ -289,7 +290,7 @@ Deque c1 is greater than deque c2.
   
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Deque işlecinin sol tarafındaki sağ tarafında deque nesnesine eşit veya daha büyük bir nesneyse testleri.  
   
 ```

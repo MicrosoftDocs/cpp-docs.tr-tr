@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - _mbscspn_l
 - wcscspn
@@ -32,7 +33,8 @@ f1_keywords:
 - wcscspn
 - _ftcscspn
 - _tcscspn
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strings [C++], searching
 - ftcscspn function
@@ -46,22 +48,23 @@ helpviewer_keywords:
 - mbscspn function
 - _tcscspn function
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 83f11196d55392a776a0270032894ce9f486b7a5
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 459eaaaa914161fdd2dd8d27876b2972fe1e6618
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strcspn-wcscspn-mbscspn-mbscspnl"></a>strcspn, wcscspn, _mbscspn, _mbscspn_l
 Birinci dizinini karakter kümesine ait olan bir karakterlik bir dize döndürür.  
   
 > [!IMPORTANT]
->  `_mbschr`ve `_mbschr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbschr` ve `_mbschr_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -101,9 +104,9 @@ size_t _mbscspn_l(
  Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `wcscspn`ve `_mbscspn` joker karakter ve çok baytlı karakter sürümleri `strcspn`. Bağımsız değişkenleri `wcscspn` joker karakter olan dizeleri; bu `_mbscspn` çok baytlı karakter dizeleri belirtilmiştir.  
+ `wcscspn` ve `_mbscspn` joker karakter ve çok baytlı karakter sürümleri `strcspn`. Bağımsız değişkenleri `wcscspn` joker karakter olan dizeleri; bu `_mbscspn` çok baytlı karakter dizeleri belirtilmiştir.  
   
- `_mbscspn`parametreleri doğrular. Her iki `str` veya `strCharSet` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için 0 işlevi döndürür ve kümelerini yürütülmesine izin veriliyorsa `errno` için `EINVAL`. `strcspn`ve `wcscspn` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
+ `_mbscspn` parametreleri doğrular. Her iki `str` veya `strCharSet` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için 0 işlevi döndürür ve kümelerini yürütülmesine izin veriliyorsa `errno` için `EINVAL`. `strcspn` ve `wcscspn` parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.  
   
  Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri `_l` bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle `_l` soneki, bunun yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   

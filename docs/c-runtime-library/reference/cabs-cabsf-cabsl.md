@@ -8,7 +8,7 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - cabs
 - cabsf
@@ -33,22 +33,24 @@ f1_keywords:
 - complex/cabs
 - complex/cabsf
 - complex/cabsl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cabs function
 - cabsf function
 - cabsl function
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 130a629aa6eefb84430843f665afae2033498d69
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f5e2a256b0120a42ef5963b3989b64edd5d95fca
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cabs-cabsf-cabsl"></a>CAB dosyaları, cabsf, cabsl
 Karmaşık bir sayının mutlak değerini alır.  

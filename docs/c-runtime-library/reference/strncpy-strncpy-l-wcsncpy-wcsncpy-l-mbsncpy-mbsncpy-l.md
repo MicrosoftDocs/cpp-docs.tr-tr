@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 apiname:
 - strncpy
 - _strncpy_l
@@ -40,7 +41,8 @@ f1_keywords:
 - _strncpy_l
 - _mbsncpy_l
 - _wcsncpy_l
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - wcsncpy_l function
 - characters [C++], copying
@@ -68,22 +70,23 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: dd0bd262dea70d7d78e90b4b0433166a763e4290
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: f881508cfa72686a791dae61af44c615e72cbfdc
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="strncpy-strncpyl-wcsncpy-wcsncpyl-mbsncpy-mbsncpyl"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 Bir dizenin karakter diğerine kopyalayın. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md).  
   
 > [!IMPORTANT]
->  `_mbsncpy`ve `_mbsncpy_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [/ZW ile desteklenmeyen CRT işlevleri](http://msdn.microsoft.com/library/windows/apps/jj606124.aspx).  
+>  `_mbsncpy` ve `_mbsncpy_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -182,11 +185,11 @@ unsigned char *_mbsncpy_l(
  `strncpy` İşlevi kopyalar ilk `count` karakterlerinden `strSource` için `strDest` ve döndürür `strDest`. Varsa `count` uzunluğu küçük veya ona eşit `strSource`, bir null karakter kopyalanan dizeye otomatik olarak eklenmez. Varsa `count` uzunluğundan daha büyük `strSource`, hedef dizesi null karakter uzunluğu en fazla ile doldurulan `count`. Davranışını `strncpy` kaynak ve hedef dizeleri çakışırsa tanımlanmadı.  
   
 > [!IMPORTANT]
->  `strncpy`yeterli alana denetlemez `strDest`; bu arabellek taşmaları olası bir nedeni sağlar. `count` Bağımsız değişkeni kopyalanan karakter sayısını kısıtlar; bir sınır boyutu değil `strDest`. Aşağıdaki örnekte bakın. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
+>  `strncpy` yeterli alana denetlemez `strDest`; bu arabellek taşmaları olası bir nedeni sağlar. `count` Bağımsız değişkeni kopyalanan karakter sayısını kısıtlar; bir sınır boyutu değil `strDest`. Aşağıdaki örnekte bakın. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
   
- Varsa `strDest` veya `strSource` olan bir `NULL` işaretçisi veya `count` küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için`EINVAL`  
+ Varsa `strDest` veya `strSource` olan bir `NULL` işaretçisi veya `count` küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`  
   
- `wcsncpy`ve `_mbsncpy` joker karakter ve çok baytlı karakter sürümleri `strncpy`. Bağımsız değişkenleri ve dönüş değerini `wcsncpy` ve `_mbsncpy` buna göre değişir. Bu altı işlevler aynı şekilde aksi davranır.  
+ `wcsncpy` ve `_mbsncpy` joker karakter ve çok baytlı karakter sürümleri `strncpy`. Bağımsız değişkenleri ve dönüş değerini `wcsncpy` ve `_mbsncpy` buna göre değişir. Bu altı işlevler aynı şekilde aksi davranır.  
   
  Bu işlevleri sürümlerini `_l` soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
   
@@ -200,7 +203,7 @@ unsigned char *_mbsncpy_l(
 |`_tcsncpy_l`|`_strncpy_l`|`_mbsnbcpy_l`|`_wcsncpy_l`|  
   
 > [!NOTE]
->  `_strncpy_l`ve `_wcsncpy_l` hiçbir yerel ayar bağımlılığı yoktur; yalnızca için sağlanan `_tcsncpy_l` ve doğrudan çağrılması amaçlanmaz.  
+>  `_strncpy_l` ve `_wcsncpy_l` hiçbir yerel ayar bağımlılığı yoktur; yalnızca için sağlanan `_tcsncpy_l` ve doğrudan çağrılması amaçlanmaz.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

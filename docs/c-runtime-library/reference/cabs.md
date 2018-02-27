@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: _cabs
+ms.topic: reference
+apiname:
+- _cabs
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -25,7 +27,8 @@ f1_keywords:
 - cabsl
 - _cabs
 - _cabsl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cabs function
 - cabsl function
@@ -34,16 +37,17 @@ helpviewer_keywords:
 - _cabs function
 - calculating absolute values
 ms.assetid: fea292ee-1a39-4a0a-b416-4a189346ff26
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2bdb5dacebcaae6e91c5ab87cfeb4446d0a2b9cf
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ff48005643d5880e557dbbdcfc9f6f1c30fe68eb
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="cabs"></a>_cabs
 Karmaşık bir sayının mutlak değerini hesaplar.  
@@ -61,7 +65,7 @@ double _cabs(
  Karmaşık sayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- `_cabs`başarılı olursa, bağımsız değişkeni mutlak değerini döndürür. Taşma, `_cabs` döndürür `HUGE_VAL` ve ayarlar `errno` için `ERANGE`. Hata ile işleme değiştirebileceğiniz [_matherr](../../c-runtime-library/reference/matherr.md).  
+ `_cabs` başarılı olursa, bağımsız değişkeni mutlak değerini döndürür. Taşma, `_cabs` döndürür `HUGE_VAL` ve ayarlar `errno` için `ERANGE`. Hata ile işleme değiştirebileceğiniz [_matherr](../../c-runtime-library/reference/matherr.md).  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_cabs` İşlevi karmaşık türü yapısını olması gereken sayının mutlak değerini hesaplar [_complex](../../c-runtime-library/standard-types.md). Yapı `z` gerçek bir bileşeninin oluşur `x` ve sanal bir bileşeni `y`. Çağrı `_cabs` , ifade için eşdeğer bir değer üreten `sqrt( z.x * z.x + z.y * z.y )`.  

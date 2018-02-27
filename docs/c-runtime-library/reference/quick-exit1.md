@@ -8,8 +8,9 @@ ms.technology:
 - cpp
 - devlang-cpp
 ms.tgt_pltfrm: 
-ms.topic: article
-apiname: quick_exit
+ms.topic: reference
+apiname:
+- quick_exit
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -27,19 +28,22 @@ f1_keywords:
 - quick_exit
 - process/quick_exit
 - stdlib/quick_exit
-dev_langs: C++
-helpviewer_keywords: quick_exit function
+dev_langs:
+- C++
+helpviewer_keywords:
+- quick_exit function
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fb6a8bdea6cb37bd70d6aeda490e2470aa74e999
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 30c8ae3290ac4b15247b88b0b2201634e42b560b
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="quickexit"></a>quick_exit
 Normal program sonlandırma oluşmasına neden olur.  
@@ -76,7 +80,7 @@ __declspec(noreturn) void quick_exit(
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
- [durdurma](../../c-runtime-library/reference/abort.md)   
+ [Durdurma](../../c-runtime-library/reference/abort.md)   
  [atexit](../../c-runtime-library/reference/atexit.md)   
  [_exec, _wexec işlevleri](../../c-runtime-library/exec-wexec-functions.md)   
  [Çıkış, _Exit, _exit](../../c-runtime-library/reference/exit-exit-exit.md)   

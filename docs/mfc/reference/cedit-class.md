@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -54,7 +55,8 @@ f1_keywords:
 - AFXWIN/CEdit::SetTabStops
 - AFXWIN/CEdit::ShowBalloonTip
 - AFXWIN/CEdit::Undo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CEdit [MFC], CEdit
 - CEdit [MFC], CanUndo
@@ -101,16 +103,17 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 4418f20b267218b761dd6637762df1b420e9ac6d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 3e14a675f3dac5f2431622f0dfd6002228abe4d2
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Bir Windows düzenleme denetimi işlevselliğini sağlar.  
@@ -184,19 +187,19 @@ class CEdit : public CWnd
   
  Yapım tek adımlı işlem türetilen bir sınıfta olabilir `CEdit`. Çağrı ve türetilmiş sınıf oluşturucu yazma **oluşturma** gelen oluşturucusu içinde.  
   
- `CEdit`önemli işlevsellik devralır `CWnd`. Ayarlamak ve metinden almak için bir `CEdit` nesne, kullanın `CWnd` üye işlevleri [SetWindowText](cwnd-class.md#setwindowtext) ve [GetWindowText](cwnd-class.md#getwindowtext), hangi kümesi veya get bir düzen tüm içeriğini denetlemek, olsa bile, çok satırlı bir denetimdir. Çok satırlı denetiminde metin satırlarını '\r\n' karakter sıraları ile ayrılır. Ayrıca, bir düzenleme denetimi çok satırlı ise, almak ve ayarlamak denetimin metnin bir bölümünü çağırarak `CEdit` üye işlevleri [GetLine](#getline), [SetSel](#setsel), [GetSel](#getsel)ve [ ReplaceSel](#replacesel).  
+ `CEdit` önemli işlevsellik devralır `CWnd`. Ayarlamak ve metinden almak için bir `CEdit` nesne, kullanın `CWnd` üye işlevleri [SetWindowText](cwnd-class.md#setwindowtext) ve [GetWindowText](cwnd-class.md#getwindowtext), hangi kümesi veya get bir düzen tüm içeriğini denetlemek, olsa bile, çok satırlı bir denetimdir. Çok satırlı denetiminde metin satırlarını '\r\n' karakter sıraları ile ayrılır. Ayrıca, bir düzenleme denetimi çok satırlı ise, almak ve ayarlamak denetimin metnin bir bölümünü çağırarak `CEdit` üye işlevleri [GetLine](#getline), [SetSel](#setsel), [GetSel](#getsel)ve [ ReplaceSel](#replacesel).  
   
  Üst için bir düzen denetimi tarafından gönderilen Windows bildirim iletilerini işlemek istiyorsanız (öğesinden türetilmiş bir sınıf genellikle `CDialog`), her ileti için üst sınıfı için ileti eşleme girişi ve ileti işleyicisi üye işlevi ekleme.  
   
  Her ileti eşleme girişi aşağıdaki biçimdedir:  
   
- **ON_**bildirim **(** *kimliği, memberFxn***)**  
+ **ON_**bildirim **(** *kimliği, memberFxn ***)**  
   
  Burada `id` bildirim göndererek düzenleme denetimi alt pencere Kimliğini belirtir ve `memberFxn` bildirimini işlemek için yazılmış üst üye işlevi adıdır.  
   
  Üst öğenin işlev prototipi aşağıdaki gibidir:  
   
- **afx_msg** void memberFxn **();**  
+ **afx_msg** void memberFxn **( );**  
   
  Olası ileti eşleme girişleri ve açıklamasını, bunlar üst gönderilecek örneklerinin listesi aşağıdadır:  
   
@@ -242,7 +245,7 @@ class CEdit : public CWnd
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxwin.h  
   
-##  <a name="canundo"></a>CEdit::CanUndo  
+##  <a name="canundo"></a>  CEdit::CanUndo  
  Son düzenleme işlemi geri olup olmadığını belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -258,7 +261,7 @@ BOOL CanUndo() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::Undo](#undo).  
   
-##  <a name="cedit"></a>CEdit::CEdit  
+##  <a name="cedit"></a>  CEdit::CEdit  
  Oluşturan bir `CEdit` nesnesi.  
   
 ```  
@@ -271,7 +274,7 @@ CEdit();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#1](../../mfc/reference/codesnippet/cpp/cedit-class_1.cpp)]  
   
-##  <a name="charfrompos"></a>CEdit::CharFromPos  
+##  <a name="charfrompos"></a>  CEdit::CharFromPos  
  Sıfır tabanlı satır ve bu belirtilen noktasında en yakın bir karakterin karakter dizinlerini almak için bu işlevi çağırmak `CEdit` denetimi  
   
 ```  
@@ -295,7 +298,7 @@ int CharFromPos(CPoint pt) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#3](../../mfc/reference/codesnippet/cpp/cedit-class_2.cpp)]  
   
-##  <a name="clear"></a>CEdit::Clear  
+##  <a name="clear"></a>  CEdit::Clear  
  (Temizle) geçerli seçim düzenleme denetimine (varsa) silmek için bu işlevini çağırın.  
   
 ```  
@@ -312,7 +315,7 @@ void Clear();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#4](../../mfc/reference/codesnippet/cpp/cedit-class_3.cpp)]  
   
-##  <a name="copy"></a>CEdit::Copy  
+##  <a name="copy"></a>  CEdit::Copy  
  Bu işleve coy Pano'ya düzenleme denetimindeki (varsa) geçerli seçim çağrısı **CF_TEXT** biçimi.  
   
 ```  
@@ -325,7 +328,7 @@ void Copy();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#5](../../mfc/reference/codesnippet/cpp/cedit-class_4.cpp)]  
   
-##  <a name="create"></a>CEdit::Create  
+##  <a name="create"></a>  CEdit::Create  
  Windows düzenleme denetimi oluşturur ve ona ekler `CEdit` nesnesi.  
   
 ```  
@@ -338,7 +341,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  `dwStyle`  
- Düzenle denetim stilini belirtir. Herhangi bir bileşimini uygulamak [düzenleme stilleri](edit-styles.md) denetlemek için.  
+ Düzenle denetim stilini belirtir. Herhangi bir bileşimini uygulamak [düzenleme stilleri](styles-used-by-mfc.md#edit-styles) denetlemek için.  
   
  `rect`  
  Düzenle denetim boyutunu ve konumunu belirtir. Olabilir bir `CRect` nesne veya `RECT` yapısı.  
@@ -359,7 +362,7 @@ virtual BOOL Create(
   
  Bu iletiler, varsayılan olarak tarafından işlenen [OnNcCreate](cwnd-class.md#onnccreate), [OnNcCalcSize](cwnd-class.md#onnccalcsize), [OnCreate](cwnd-class.md#oncreate), ve [Ongetminmaxınfo](cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CEdit`ileti eşlemesi için yeni sınıf ekleyin ve yukarıdaki ileti işleyicisi üye işlevlerini geçersiz kılma. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
- Aşağıdaki uygulama [pencere stilleri](window-styles.md) bir düzenleme denetimine.  
+ Aşağıdaki uygulama [pencere stilleri](styles-used-by-mfc.md#window-styles) bir düzenleme denetimine.  
   
 - **WS_CHILD** her zaman  
   
@@ -374,7 +377,7 @@ virtual BOOL Create(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#2](../../mfc/reference/codesnippet/cpp/cedit-class_5.cpp)]  
   
-##  <a name="cut"></a>CEdit::Cut  
+##  <a name="cut"></a>  CEdit::Cut  
  Düzenleme denetimine (varsa) geçerli seçim (kesme) silmek için bu işlevi çağırmak ve silinen metni panoya kopyalamak **CF_TEXT** biçimi.  
   
 ```  
@@ -391,7 +394,7 @@ void Cut();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#6](../../mfc/reference/codesnippet/cpp/cedit-class_6.cpp)]  
   
-##  <a name="emptyundobuffer"></a>CEdit::EmptyUndoBuffer  
+##  <a name="emptyundobuffer"></a>  CEdit::EmptyUndoBuffer  
  (Sil) sıfırlamak için bu işlev bir düzenleme denetimi geri bayrağı çağırın.  
   
 ```  
@@ -408,7 +411,7 @@ void EmptyUndoBuffer();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#7](../../mfc/reference/codesnippet/cpp/cedit-class_7.cpp)]  
   
-##  <a name="fmtlines"></a>CEdit::FmtLines  
+##  <a name="fmtlines"></a>  CEdit::FmtLines  
  Birden çok satırlı düzenleme denetimi içinde yumuşak satır sonu karakterleri dahil edilmesi açmak veya kapatmak ayarlamak için bu işlevini çağırın.  
   
 ```  
@@ -427,14 +430,14 @@ BOOL FmtLines(BOOL bAddEOL);
   
  Windows, yanıt yalnızca `CEdit` birden çok satırlı düzenleme denetimi nesnesidir.  
   
- `FmtLines`yalnızca tarafından döndürülen arabellek etkiler [GetHandle](#gethandle) ve tarafından döndürülen metin [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627). Düzenle denetim içindeki metnin görüntülenmesi üzerinde hiçbir etkisi olmaz.  
+ `FmtLines` yalnızca tarafından döndürülen arabellek etkiler [GetHandle](#gethandle) ve tarafından döndürülen metin [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627). Düzenle denetim içindeki metnin görüntülenmesi üzerinde hiçbir etkisi olmaz.  
   
  Daha fazla bilgi için bkz: [EM_FMTLINES](http://msdn.microsoft.com/library/windows/desktop/bb761570) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#8](../../mfc/reference/codesnippet/cpp/cedit-class_8.cpp)]  
   
-##  <a name="getcuebanner"></a>CEdit::GetCueBanner  
+##  <a name="getcuebanner"></a>  CEdit::GetCueBanner  
  Metin işaret ya da Denetim boş olduğunda bir düzenleme denetimindeki ipucu olarak görüntülenen metni alır.  
   
 ```  
@@ -446,10 +449,10 @@ CString GetCueBanner() const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out]`lpszText`  
+ [out] `lpszText`  
  İşaret metin içeren bir dize için bir işaretçi.  
   
- [in]`cchText`  
+ [in] `cchText`  
  Alınabilir karakter sayısı. Bu sayı sonlandırma içerir `NULL` karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -460,7 +463,7 @@ CString GetCueBanner() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_GETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb761572) Windows SDK'ın açıklanan ileti. Daha fazla bilgi için bkz: [Edit_GetCueBannerText](http://msdn.microsoft.com/library/windows/desktop/bb761695) makrosu.  
   
-##  <a name="getfirstvisibleline"></a>CEdit::GetFirstVisibleLine  
+##  <a name="getfirstvisibleline"></a>  CEdit::GetFirstVisibleLine  
  Bir düzen denetimi en üstteki görünür satırında belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -476,7 +479,7 @@ int GetFirstVisibleLine() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#9](../../mfc/reference/codesnippet/cpp/cedit-class_9.cpp)]  
   
-##  <a name="gethandle"></a>CEdit::GetHandle  
+##  <a name="gethandle"></a>  CEdit::GetHandle  
  Şu anda birden çok satırlı düzenleme denetimi için ayrılan bellek için bir tanıtıcı almak için bu işlevini çağırın.  
   
 ```  
@@ -501,7 +504,7 @@ HLOCAL GetHandle() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#10](../../mfc/reference/codesnippet/cpp/cedit-class_10.cpp)]  
   
-##  <a name="gethighlight"></a>CEdit::GetHighlight  
+##  <a name="gethighlight"></a>  CEdit::GetHighlight  
  İlk ve son karakterler dizinleri geçerli düzenleme denetimine vurgulanmış metin aralığını alır.  
   
 ```  
@@ -514,16 +517,16 @@ BOOL GetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out]`pichStart`|İlk karakter vurgulanır metin aralığını, sıfır tabanlı dizini.|  
-|[out]`pichEnd`|Vurgulanan metin aralığını son karakter sıfır tabanlı dizini.|  
+|[out] `pichStart`|İlk karakter vurgulanır metin aralığını, sıfır tabanlı dizini.|  
+|[out] `pichEnd`|Vurgulanan metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_GETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761578) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="getlimittext"></a>CEdit::GetLimitText  
+##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  Bu metin sınırını almak için bu üye işlevini çağırın `CEdit` nesnesi.  
   
 ```  
@@ -544,7 +547,7 @@ UINT GetLimitText() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#11](../../mfc/reference/codesnippet/cpp/cedit-class_11.cpp)]  
   
-##  <a name="getline"></a>CEdit::GetLine  
+##  <a name="getline"></a>  CEdit::GetLine  
  Metin satırının bir düzenleme denetiminden almak için bu işlevi çağırmak ve yerleştirir `lpszBuffer`.  
   
 ```  
@@ -566,7 +569,7 @@ int GetLine(
  Satır kopyasını alan arabellek noktalarına. Arabellek ilk sözcüğün arabelleğe kopyalanabilmesi için karakter üst sınırını belirtmeniz gerekir.  
   
  `nMaxLength`  
- Arabelleğe kopyalanabilir bayt sayısını belirtir. `GetLine`Bu değer ilk Word'de yerleştirir `lpszBuffer` Windows çağrısı yapmadan önce.  
+ Arabelleğe kopyalanabilir bayt sayısını belirtir. `GetLine` Bu değer ilk Word'de yerleştirir `lpszBuffer` Windows çağrısı yapmadan önce.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Gerçekte kopyalanan bayt sayısı. Dönüş değeri satır numarası tarafından belirtilen 0 ise `nIndex` düzenleme denetimindeki satırları sayısından büyük.  
@@ -579,7 +582,7 @@ int GetLine(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::GetLineCount](#getlinecount).  
   
-##  <a name="getlinecount"></a>CEdit::GetLineCount  
+##  <a name="getlinecount"></a>  CEdit::GetLineCount  
  Birden çok satırlı düzenleme denetimindeki satırları sayısını almak üzere bu işlevini çağırın.  
   
 ```  
@@ -590,14 +593,14 @@ int GetLineCount() const;
  Birden çok satırlı satır sayısını içeren bir tamsayı denetim düzenleyin. Metin düzenleme denetimine girilmemişse dönüş değeri 1'dir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetLineCount`yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
+ `GetLineCount` yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
  Daha fazla bilgi için bkz: [EM_GETLINECOUNT](http://msdn.microsoft.com/library/windows/desktop/bb761586) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#12](../../mfc/reference/codesnippet/cpp/cedit-class_12.cpp)]  
   
-##  <a name="getmargins"></a>CEdit::GetMargins  
+##  <a name="getmargins"></a>  CEdit::GetMargins  
  Sol ve sağ kenar boşluklarının bu düzenleme denetimini almak için bu üye işlevini çağırın.  
   
 ```  
@@ -618,7 +621,7 @@ DWORD GetMargins() const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
   
-##  <a name="getmodify"></a>CEdit::GetModify  
+##  <a name="getmodify"></a>  CEdit::GetModify  
  Bir düzen denetimi içeriğini değiştirilmiş olup olmadığını belirlemek için bu işlevini çağırın.  
   
 ```  
@@ -636,7 +639,7 @@ BOOL GetModify() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#13](../../mfc/reference/codesnippet/cpp/cedit-class_13.cpp)]  
   
-##  <a name="getpasswordchar"></a>CEdit::GetPasswordChar  
+##  <a name="getpasswordchar"></a>  CEdit::GetPasswordChar  
  Kullanıcı metin girdiğinde, bir düzenleme denetiminde gösterilen parola karakter almak için bu işlevini çağırın.  
   
 ```  
@@ -654,7 +657,7 @@ TCHAR GetPasswordChar() const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#14](../../mfc/reference/codesnippet/cpp/cedit-class_14.cpp)]  
   
-##  <a name="getrect"></a>CEdit::GetRect  
+##  <a name="getrect"></a>  CEdit::GetRect  
  Bir düzen denetimi biçimlendirme dikdörtgen almak için bu işlevini çağırın.  
   
 ```  
@@ -675,7 +678,7 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::LimitText](#limittext).  
   
-##  <a name="getsel"></a>CEdit::GetSel  
+##  <a name="getsel"></a>  CEdit::GetSel  
  Başlangıç ve bitiş dönüş değeri veya parametrelerini kullanarak bir düzenleme denetimindeki geçerli bölüm (varsa) karakter konumlarını almak için bu işlevini çağırın.  
   
 ```  
@@ -702,7 +705,7 @@ void GetSel(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#15](../../mfc/reference/codesnippet/cpp/cedit-class_15.cpp)]  
   
-##  <a name="hideballoontip"></a>CEdit::HideBalloonTip  
+##  <a name="hideballoontip"></a>  CEdit::HideBalloonTip  
  Geçerli düzenleme denetimi ile ilişkilendirilmiş tüm balon ipucu gizler.  
   
 ```  
@@ -710,12 +713,12 @@ BOOL HideBalloonTip();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev gönderir [EM_HIDEBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761604) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="limittext"></a>CEdit::LimitText  
+##  <a name="limittext"></a>  CEdit::LimitText  
  Kullanıcı bir Düzenle denetime girebilirsiniz metnin uzunluğunu sınırlamak için bu işlevini çağırın.  
   
 ```  
@@ -737,7 +740,7 @@ void LimitText(int nChars = 0);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#17](../../mfc/reference/codesnippet/cpp/cedit-class_16.cpp)]  
   
-##  <a name="linefromchar"></a>CEdit::LineFromChar  
+##  <a name="linefromchar"></a>  CEdit::LineFromChar  
  Belirtilen karakter dizinini içeren satırının satır numarasını almak için bu işlevini çağırın.  
   
 ```  
@@ -761,7 +764,7 @@ int LineFromChar(int nIndex = -1) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#18](../../mfc/reference/codesnippet/cpp/cedit-class_17.cpp)]  
   
-##  <a name="lineindex"></a>CEdit::LineIndex  
+##  <a name="lineindex"></a>  CEdit::LineIndex  
  Birden çok satırlı düzenleme denetimi içinde bir satır karakter dizinini almak için bu işlevini çağırın.  
   
 ```  
@@ -785,7 +788,7 @@ int LineIndex(int nLine = -1) const;
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#19](../../mfc/reference/codesnippet/cpp/cedit-class_18.cpp)]  
   
-##  <a name="linelength"></a>CEdit::LineLength  
+##  <a name="linelength"></a>  CEdit::LineLength  
  Bir düzenleme denetimindeki bir satır uzunluğunu alır.  
   
 ```  
@@ -813,7 +816,7 @@ int LineLength(int nLine = -1) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::LineIndex](#lineindex).  
   
-##  <a name="linescroll"></a>CEdit::LineScroll  
+##  <a name="linescroll"></a>  CEdit::LineScroll  
  Birden çok satırlı metin kaydırma için bu işlevi düzenleme denetimi çağrısı.  
   
 ```  
@@ -834,14 +837,14 @@ void LineScroll(
   
  Düzenleme denetimi dikey metin düzenleme denetimindeki son satırının kaydırarak değil. Tarafından belirtilen satır sayısı artı geçerli satır varsa `nLines` düzenleme denetimindeki satırları toplam sayısını aşıyor, böylece düzenleme denetimi son satırının düzenleme denetimi pencerenin üstündeki kaydırılan değere ayarlanır.  
   
- `LineScroll`her satırın son karakter yatay kaydırma için kullanılabilir.  
+ `LineScroll` her satırın son karakter yatay kaydırma için kullanılabilir.  
   
  Daha fazla bilgi için bkz: [EM_LINESCROLL](http://msdn.microsoft.com/library/windows/desktop/bb761615) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::GetFirstVisibleLine](#getfirstvisibleline).  
   
-##  <a name="paste"></a>CEdit::Paste  
+##  <a name="paste"></a>  CEdit::Paste  
  Panodan veri eklemek için bu işlevi çağırmak `CEdit` ekleme noktasına.  
   
 ```  
@@ -856,7 +859,7 @@ void Paste();
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#20](../../mfc/reference/codesnippet/cpp/cedit-class_19.cpp)]  
   
-##  <a name="posfromchar"></a>CEdit::PosFromChar  
+##  <a name="posfromchar"></a>  CEdit::PosFromChar  
  Bu içinde belirli bir karakter (sol üst köşesinde) konumunu almak için bu işlevi çağırmak `CEdit` nesnesi.  
   
 ```  
@@ -881,7 +884,7 @@ CPoint PosFromChar(UINT nChar) const;
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::LineFromChar](#linefromchar).  
   
-##  <a name="replacesel"></a>CEdit::ReplaceSel  
+##  <a name="replacesel"></a>  CEdit::ReplaceSel  
  Bir düzenleme denetimindeki geçerli bölüm tarafından belirtilen metin değiştirmek için bu işlevi çağırmak `lpszNewText`.  
   
 ```  
@@ -905,7 +908,7 @@ void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::LineIndex](#lineindex).  
   
-##  <a name="setcuebanner"></a>CEdit::SetCueBanner  
+##  <a name="setcuebanner"></a>  CEdit::SetCueBanner  
  Metin ipucu olarak görüntülenir veya ipucu, Denetim boş olduğunda bir düzen denetim metin ayarlar.  
   
 ```  
@@ -918,10 +921,10 @@ BOOL SetCueBanner(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in]`lpszText`  
+ [in] `lpszText`  
  Düzenleme denetimine görüntülenecek ipucu içeren bir dize işaretçi.  
   
- [in]`fDrawWhenFocused`  
+ [in] `fDrawWhenFocused`  
  Varsa `false`, kullanıcı düzenleme denetimine tıkladığında ve denetim odağı işaret başlık çizilir değil.  
   
  Varsa `true`, hatta denetimi odağa sahip olduğunda işaret başlık çizilir. Kullanıcı denetim türü başladığında işaret başlık kaybolur.  
@@ -929,7 +932,7 @@ BOOL SetCueBanner(
  Varsayılan değer `false` şeklindedir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb761639) Windows SDK'ın açıklanan ileti. Daha fazla bilgi için bkz: [Edit_SetCueBannerTextFocused](http://msdn.microsoft.com/library/windows/desktop/bb761703) makrosu.  
@@ -939,7 +942,7 @@ BOOL SetCueBanner(
   
  [!code-cpp[NVC_MFC_CEdit_s1#2](../../mfc/reference/codesnippet/cpp/cedit-class_20.cpp)]  
   
-##  <a name="sethandle"></a>CEdit::SetHandle  
+##  <a name="sethandle"></a>  CEdit::SetHandle  
  Birden çok satırlı düzenleme denetimi tarafından kullanılan yerel belleğe tanıtıcı ayarlamak için bu işlevini çağırın.  
   
 ```  
@@ -957,7 +960,7 @@ void SetHandle(HLOCAL hBuffer);
   
  Bir uygulamanın yeni bir bellek tanıtıcısı ayarlamadan önce kullanması gereken [GetHandle](#gethandle) tanıtıcı geçerli ara belleğe alma ve o belleğini kullanan boş üye işlevi **LocalFree** Windows işlevi.  
   
- `SetHandle`geri alma arabelleği temizler ( [CanUndo](#canundo) üye işlevi sonra 0 döndürür) ve iç değişikliği bayrağı ( [GetModify](#getmodify) üye işlevi sonra 0 döndürür). Düzenleme denetimi penceresi çizilir.  
+ `SetHandle` geri alma arabelleği temizler ( [CanUndo](#canundo) üye işlevi sonra 0 döndürür) ve iç değişikliği bayrağı ( [GetModify](#getmodify) üye işlevi sonra 0 döndürür). Düzenleme denetimi penceresi çizilir.  
   
  Yalnızca iletişim kutusuyla oluşturduysanız bu üye işlevi birden çok satırlı düzenleme denetimindeki bir iletişim kutusunda kullanabilirsiniz **DS_LOCALEDIT** stil bayrağı ayarlanmış.  
   
@@ -969,7 +972,7 @@ void SetHandle(HLOCAL hBuffer);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#22](../../mfc/reference/codesnippet/cpp/cedit-class_21.cpp)]  
   
-##  <a name="sethighlight"></a>CEdit::SetHighlight  
+##  <a name="sethighlight"></a>  CEdit::SetHighlight  
  Düzen denetimi geçerli görüntülenen metin aralığını bir vurgular.  
   
 ```  
@@ -982,13 +985,13 @@ void SetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`ichStart`|İlk karakter vurgulamak için metin aralığını, sıfır tabanlı dizini.|  
-|[in]`ichEnd`|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
+|[in] `ichStart`|İlk karakter vurgulamak için metin aralığını, sıfır tabanlı dizini.|  
+|[in] `ichEnd`|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_SETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761643) Windows SDK'ın açıklanan ileti.  
   
-##  <a name="setlimittext"></a>CEdit::SetLimitText  
+##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  Bu metin sınırlamak için bu üye işlevini çağırın `CEdit` nesnesi.  
   
 ```  
@@ -1011,7 +1014,7 @@ void SetLimitText(UINT nMax);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
   
-##  <a name="setmargins"></a>CEdit::SetMargins  
+##  <a name="setmargins"></a>  CEdit::SetMargins  
  Sol ve sağ kenar boşluklarının bu düzenleme denetimi ayarlamak için bu yöntemi çağırın.  
   
 ```  
@@ -1037,7 +1040,7 @@ void SetMargins(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
   
-##  <a name="setmodify"></a>CEdit::SetModify  
+##  <a name="setmodify"></a>  CEdit::SetModify  
  Ayarlayın veya bir düzenleme denetimi için değiştirilmiş bayrağı temizlemek için bu işlevini çağırın.  
   
 ```  
@@ -1056,7 +1059,7 @@ void SetModify(BOOL bModified = TRUE);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::GetModify](#getmodify).  
   
-##  <a name="setpasswordchar"></a>CEdit::SetPasswordChar  
+##  <a name="setpasswordchar"></a>  CEdit::SetPasswordChar  
  Ayarlamak veya kullanıcı metin yazdığında bir düzen denetiminde gösterilen bir parola karakteri kaldırmak için bu işlevini çağırın.  
   
 ```  
@@ -1064,7 +1067,7 @@ void SetPasswordChar(TCHAR ch);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Ch*  
+ *ch*  
  Kullanıcı tarafından yazılan karakter yerine görüntülenecek karakteri belirtir. Varsa *ch* 0 ise, kullanıcı tarafından yazılan gerçek karakterler görüntülenir.  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1074,14 +1077,14 @@ void SetPasswordChar(TCHAR ch);
   
  Zaman `SetPasswordChar` üye işlevi çağrıldığında `CEdit` tarafından belirlenen karakteri kullanarak tüm görünür karakterleri yeniden çizer *ch*.  
   
- Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](edit-styles.md) stili, varsayılan parola karakteri olarak ayarlanmış bir yıldız işareti (  **\*** ). Bu stili kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
+ Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stili, varsayılan parola karakteri olarak ayarlanmış bir yıldız işareti (  **\*** ). Bu stili kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
   
  Daha fazla bilgi için bkz: [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#16](../../mfc/reference/codesnippet/cpp/cedit-class_22.cpp)]  
   
-##  <a name="setreadonly"></a>CEdit::SetReadOnly  
+##  <a name="setreadonly"></a>  CEdit::SetReadOnly  
  Bir düzen denetimi salt okunur durumunu ayarlamak için bu işlevi çağırır.  
   
 ```  
@@ -1096,14 +1099,14 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
  İşlemi ise sıfır olmayan başarılı ya da 0 ise bir hata oluşur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli ayarı test ederek bulunabilir [ES_READONLY](edit-styles.md) dönüş değerini bayrağı [CWnd::GetStyle](cwnd-class.md#getstyle).  
+ Geçerli ayarı test ederek bulunabilir [ES_READONLY](styles-used-by-mfc.md#edit-styles) dönüş değerini bayrağı [CWnd::GetStyle](cwnd-class.md#getstyle).  
   
  Daha fazla bilgi için bkz: [EM_SETREADONLY](http://msdn.microsoft.com/library/windows/desktop/bb761655) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#23](../../mfc/reference/codesnippet/cpp/cedit-class_23.cpp)]  
   
-##  <a name="setrect"></a>CEdit::SetRect  
+##  <a name="setrect"></a>  CEdit::SetRect  
  Belirtilen koordinatları kullanarak dikdörtgen boyutlarını ayarlamak için bu işlevini çağırın.  
   
 ```  
@@ -1128,7 +1131,7 @@ void SetRect(LPCRECT lpRect);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#24](../../mfc/reference/codesnippet/cpp/cedit-class_24.cpp)]  
   
-##  <a name="setrectnp"></a>CEdit::SetRectNP  
+##  <a name="setrectnp"></a>  CEdit::SetRectNP  
  Birden çok satırlı düzenleme denetimi biçimlendirme dikdörtgen ayarlamak için bu işlevini çağırın.  
   
 ```  
@@ -1142,7 +1145,7 @@ void SetRectNP(LPCRECT lpRect);
 ### <a name="remarks"></a>Açıklamalar  
  Biçimlendirme dikdörtgen düzenleme denetimi penceresi boyutunu bağımsızdır metin sınırlayan dikdörtgen ' dir.  
   
- `SetRectNP`aynıdır `SetRect` üye gördüğünü düzenleme denetimi penceresi değil çizilme dışında.  
+ `SetRectNP` aynıdır `SetRect` üye gördüğünü düzenleme denetimi penceresi değil çizilme dışında.  
   
  Düzenleme denetimi ilk oluşturulduğunda biçimlendirme dikdörtgen istemci alanını düzenleme denetimi penceresi ile aynıdır. Çağırarak `SetRectNP` üye işlevi, bir uygulama yapabilir biçimlendirme dikdörtgen düzenleme denetimi penceresi daha büyük veya küçük.  
   
@@ -1155,7 +1158,7 @@ void SetRectNP(LPCRECT lpRect);
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::SetRect](#setrect).  
   
-##  <a name="setsel"></a>CEdit::SetSel  
+##  <a name="setsel"></a>  CEdit::SetSel  
  Bir düzen denetiminde bir aralıktaki karakterleri seçmek için bu işlevini çağırın.  
   
 ```  
@@ -1189,7 +1192,7 @@ void SetSel(
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEdit::GetSel](#getsel).  
   
-##  <a name="settabstops"></a>CEdit::SetTabStops  
+##  <a name="settabstops"></a>  CEdit::SetTabStops  
  Birden çok satırlı düzenleme denetiminde sekme durakları ayarlamak için bu işlevini çağırın.  
   
 ```  
@@ -1222,14 +1225,14 @@ BOOL SetTabStops(
   
  Bu üye işlevi yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
- `SetTabStops`otomatik olarak düzenleme penceresi çizmez. Düzenleme denetimi zaten metinde sekme durakları değiştirirseniz, çağrı [CWnd::InvalidateRect](cwnd-class.md#invalidaterect) düzenleme penceresini yeniden boyutlandırmaya için.  
+ `SetTabStops` otomatik olarak düzenleme penceresi çizmez. Düzenleme denetimi zaten metinde sekme durakları değiştirirseniz, çağrı [CWnd::InvalidateRect](cwnd-class.md#invalidaterect) düzenleme penceresini yeniden boyutlandırmaya için.  
   
  Daha fazla bilgi için bkz: [EM_SETTABSTOPS](http://msdn.microsoft.com/library/windows/desktop/bb761663) ve [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows SDK'sındaki.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bkz [CEditView::SetTabStops](ceditview-class.md#settabstops).  
   
-##  <a name="showballoontip"></a>CEdit::ShowBalloonTip  
+##  <a name="showballoontip"></a>  CEdit::ShowBalloonTip  
  Geçerli düzenleme denetimi ile ilişkili bir balon ipucu görüntüler.  
   
 ```  
@@ -1246,13 +1249,13 @@ BOOL ShowBalloonTip(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in]`pEditBalloonTip`|İşaretçi bir [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) balon ipucu açıklar yapısı.|  
-|[in]`lpszTitle`|Balon ipucu başlığını içeren bir UNICODE dizesi işaretçi.|  
-|[in]`lpszText`|Balon ipucu metnini içeren bir UNICODE dizesi işaretçi.|  
-|[in]`ttiIcon`|Bir `INT` balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. Varsayılan değer `TTI_NONE` şeklindedir. Daha fazla bilgi için bkz: `ttiIcon` üyesi [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) yapısı.|  
+|[in] `pEditBalloonTip`|İşaretçi bir [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) balon ipucu açıklar yapısı.|  
+|[in] `lpszTitle`|Balon ipucu başlığını içeren bir UNICODE dizesi işaretçi.|  
+|[in] `lpszText`|Balon ipucu metnini içeren bir UNICODE dizesi işaretçi.|  
+|[in] `ttiIcon`|Bir `INT` balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. Varsayılan değer `TTI_NONE` şeklindedir. Daha fazla bilgi için bkz: `ttiIcon` üyesi [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Bu yöntem başarılı olursa; Aksi takdirde `false`.  
+ `true` Bu yöntem başarılı olursa; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev gönderir [EM_SHOWBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761668) Windows SDK'ın açıklanan ileti. Daha fazla bilgi için bkz: [Edit_ShowBalloonTip](http://msdn.microsoft.com/library/windows/desktop/bb761707) makrosu.  
@@ -1267,7 +1270,7 @@ BOOL ShowBalloonTip(
   
  [!code-cpp[NVC_MFC_CEdit_s1#3](../../mfc/reference/codesnippet/cpp/cedit-class_26.cpp)]  
   
-##  <a name="undo"></a>CEdit::Undo  
+##  <a name="undo"></a>  CEdit::Undo  
  Son düzenleme denetimi işlemi geri almak için bu işlevini çağırın.  
   
 ```  

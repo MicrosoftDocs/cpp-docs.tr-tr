@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - xutility/std::operator!=
 - xutility/std::operator&gt;
@@ -15,9 +15,10 @@ f1_keywords:
 - xutility/std::operator+
 - xutility/std::operator-
 - xutility/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: b7c664f0-49d4-4993-b5d1-9ac4859fdddc
-caps.latest.revision: "10"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (iterator)
@@ -25,20 +26,20 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: a6e5d30b970c3887c9ac7641ec39275acd9cd79d
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 8d045aa1f32d3613eb4ed11af63a29e80e37b738
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltiteratorgt-operators"></a>&lt;Yineleyici&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator +](#op_add)|  
-|[operator-](#operator-)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator+](#op_add)|  
+|[operator-](#operator-)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden farklı olup olmadığını sınar.  
   
 ```  
@@ -127,7 +128,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit olup olmadığını sınar.  
   
 ```  
@@ -160,7 +161,7 @@ bool operator==(
  Türü yineleyici bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Yineleyici nesneleri eşitse; `false` yineleyici nesneleri eşit değilse.  
+ `true` Yineleyici nesneleri eşitse; `false` yineleyici nesneleri eşit değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kapsayıcıda aynı öğeleri adresi bir yineleyici nesne diğerine eşittir. Bir kapsayıcıda farklı öğeler için iki yineleyiciler noktası ise, ardından bunlar eşit değildir.  
@@ -229,7 +230,7 @@ The iterator rVPOS1 now points to the second element
 The iterators are not equal.  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden küçük olup olmadığını sınar.  
   
 ```  
@@ -316,7 +317,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than the iterator rVPOS2.  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan küçük olup olmadığını sınar.  
   
 ```  
@@ -407,7 +408,7 @@ The iterator rVPOS2 now points to the second element
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesinden büyük olup olmadığını sınar.  
   
 ```  
@@ -492,7 +493,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than the iterator rVPOS2.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  İşlecin sol tarafındaki yineleyici nesnesinin işlecin sağ tarafındaki yineleyici nesnesine eşit veya ondan büyük olup olmadığını sınar.  
   
 ```  
@@ -583,7 +584,7 @@ The iterator rVPOS1 now points to the second element
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.  
 ```  
   
-##  <a name="op_add"></a>operator +  
+##  <a name="op_add"></a>  operator +  
  Yineleyici için uzaklık ekler ve döndürür bir `move_iterator` veya `reverse_iterator` yeni uzaklık konumunda eklenen öğesi adresleme.  
   
 ```  
@@ -659,7 +660,7 @@ The iterator rVPOS1 now points to the fifth element
  in the reversed sequence: 2.  
 ```  
   
-##  <a name="operator-"></a>operator-  
+##  <a name="operator-"></a>  operator-  
  Bir yineleyiciyi bir başkasından çıkarır ve farkı döndürür.  
   
 ```  
@@ -682,14 +683,14 @@ Tdiff operator-(
  Yineleyici.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İki yineleyiciler arasındaki fark`.`  
+ İki yineleyiciler arasındaki fark `.`  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk şablon işleci döndürür `left.base() - right.base()`.  
   
  İkinci şablon işleci döndürür `right.current - left.current`.  
   
- `Tdiff`döndürülen ifade türü tarafından belirlenir. Aksi takdirde, değer `RandomIterator1::difference_type`.  
+ `Tdiff` döndürülen ifade türü tarafından belirlenir. Aksi takdirde, değer `RandomIterator1::difference_type`.  
   
 ### <a name="example"></a>Örnek  
   
@@ -749,5 +750,5 @@ The difference: rVPOS2 - rVPOS1= 4.
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [\<Yineleyici >](../standard-library/iterator.md)
+ [\<iterator>](../standard-library/iterator.md)
 

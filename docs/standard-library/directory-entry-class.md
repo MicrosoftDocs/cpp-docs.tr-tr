@@ -4,9 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::directory_entry
 - filesystem/std::experimental::filesystem::directory_entry::operator const std::experimental::filesystem::path &
@@ -23,9 +24,10 @@ f1_keywords:
 - filesystem/std::experimental::filesystem::directory_entry::operator&lt;=
 - filesystem/std::experimental::filesystem::directory_entry::operator&gt;
 - filesystem/std::experimental::filesystem::directory_entry::operator&gt;=
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 1827c67b-4137-4548-adb0-f955f7acaf08
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
@@ -45,12 +47,13 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&lt;=
 - std::experimental::filesystem::directory_entry::operator&gt;
 - std::experimental::filesystem::directory_entry::operator&gt;=
-ms.workload: cplusplus
-ms.openlocfilehash: 9f052d7f9991c88389bc2cb0c221a3c01d2fc529
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d47120c49f63339f0b7eea5be109a3b52d627d72
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 Tarafından döndürülen bir nesneyi tanımlayan `*X`, burada *X* olan bir [directory_iterator](../standard-library/directory-iterator-class.md) veya [recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md).  
@@ -202,5 +205,5 @@ file_status symlink_status(error_code& ec) const noexcept;
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<dosya sistemi&gt;](../standard-library/filesystem.md)
+ [\<filesystem&gt;](../standard-library/filesystem.md)
 

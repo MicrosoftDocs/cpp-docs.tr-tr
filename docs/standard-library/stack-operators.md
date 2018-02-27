@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - stack/std::operator!=
 - stack/std::operator&gt;
@@ -13,9 +13,10 @@ f1_keywords:
 - stack/std::operator&lt;
 - stack/std::operator&lt;=
 - stack/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 9c1fc282-2f61-4727-9e80-84ea5d4934a2
-caps.latest.revision: "13"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (stack)
@@ -24,19 +25,19 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: a64d5b127b0c6bc32c2f5649db93cc4d04ddaa99
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 04bdcf5e9ecbc0b5dbbe59c680629d144720e174
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltstackgt-operators"></a>&lt;yığın&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Stack nesnesi işlecinin sol tarafındaki yığın eşit değilse testleri sağ tarafta nesne.  
   
 ```  
@@ -97,7 +98,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Stack nesnesi işlecinin sol tarafındaki sağ tarafında stack nesnesi küçükse testleri.  
   
 ```  
@@ -177,7 +178,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Yığın işlecinin sol tarafında nesne sağlayıp sağlamadığını test sağ tarafında stack nesnesi eşit veya daha az olur.  
   
 ```  
@@ -240,7 +241,7 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Stack nesnesi işlecinin sol tarafındaki yığın eşitse testleri sağ tarafta nesne.  
   
 ```  
@@ -301,7 +302,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri işlecinin sol tarafındaki stack nesnesi sağ tarafında stack nesnesi değerinden daha büyük.  
   
 ```  
@@ -366,7 +367,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Yığın işlecinin sol tarafındaki sağ tarafında yığını nesnesine eşit veya daha büyük bir nesneyse testleri.  
   
 ```  

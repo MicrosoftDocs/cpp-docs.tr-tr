@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - concrt/concurrency::Alloc
 - concrt/concurrency::DisableTracing
@@ -46,11 +46,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db8dd57c912c62dab895d613c5d7bbe0d5c3cd9a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 66cf776e02d286b04c4fe9338d74d6a9db196a68
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
@@ -128,7 +128,7 @@ bool asend(
 inline __declspec(noreturn) void __cdecl cancel_current_task();
 ```  
   
-##  <a name="clear">Temizle</a>  
+##  <a name="clear"></a>  Temizle  
  Herhangi bir yok etme sıranın eşzamanlı temizler şu anda sıradaki öğeleri. Bu yöntem eşzamanlılık uyumlu değil.  
   
 ```
@@ -1330,7 +1330,7 @@ void run_with_cancellation_token(
 ### <a name="remarks"></a>Açıklamalar  
  İşlev nesnesi herhangi kesinti noktaları olacaktır ayarlandığında tetiklenen `cancellation_token` iptal edilir. Açık belirteci `_Ct` bu yalıtmak `_Func` üst belirteci yok ya da farklı bir belirteci varsa üst iptal gelen.  
   
-##  <a name="send">Gönder</a>  
+##  <a name="send"></a>  Gönder  
  Zaman uyumlu bir hedef kabul eder ya da ileti reddettiğinde kadar bekler işlemi gönderin.  
   
 ```
@@ -1399,7 +1399,7 @@ void __cdecl set_task_execution_resources(
   
  Bu yöntemi çağrıldıktan sonra işlem benzeşimi programlı şekilde değiştirmek için sınırlı benzeşim yeniden değerlendirmek için Kaynak Yöneticisi'ni neden olmaz. Bu nedenle, bu yöntemi çağırmadan önce benzeşim işlemek için tüm değişiklikler yapılmalıdır.  
   
-##  <a name="swap">Değiştirme</a>  
+##  <a name="swap"></a>  Değiştirme  
  İki öğelerini alış verişleri `concurrent_vector` nesneleri.  
   
 ```

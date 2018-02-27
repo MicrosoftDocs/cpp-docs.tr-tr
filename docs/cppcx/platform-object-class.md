@@ -6,7 +6,7 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Object::Object
 - VCCORLIB/Platform::Object::Equals
@@ -14,22 +14,25 @@ f1_keywords:
 - VCCORLIB/Platform::Object::ReferenceEquals
 - VCCORLIB/Platform::ToString
 - VCCORLIB/Platform::GetType
-dev_langs: C++
-helpviewer_keywords: Object class
+dev_langs:
+- C++
+helpviewer_keywords:
+- Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 2ee718205aa235ee2d93183f131f06ba9f01e40e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: aa882c22aab21fe82abb2884305bc314997f36a4
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
-Ref sınıfları ve ref yapılar için Windows mağazası uygulamaları için ortak davranış sağlar. Tüm ref sınıfı ve ref yapısı örnekleri için Platform::Object örtük olarak dönüştürülebilir ^ ve kendi sanal ToString yöntemini geçersiz kılabilirsiniz.  
+Ref sınıfları ve ref yapılar Windows çalışma zamanı uygulamaları için ortak davranış sağlar. Tüm ref sınıfı ve ref yapısı örnekleri için Platform::Object örtük olarak dönüştürülebilir ^ ve kendi sanal ToString yöntemini geçersiz kılabilirsiniz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -66,7 +69,7 @@ public ref class Object : Object
  **Namespace:** Platform  
 
   
-## <a name="equals"></a>Object::Equals yöntemi
+## <a name="equals"></a> Object::Equals yöntemi
 Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -79,15 +82,15 @@ bool Equals(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Obj  
+ obj  
  Karşılaştırma yapılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`Aksi takdirde nesneleri eşitse, `false`.  
+ `true` Aksi takdirde nesneleri eşitse, `false`.  
   
 
 
-## <a name="gethashcode"></a>Object::GetHashCode Yöntemi
+## <a name="gethashcode"></a>  Object::GetHashCode Yöntemi
 Döndürür `IUnknown`* kimlik değeri COM nesnesi ise, bu örnek için veya bir COM nesnesi değilse hesaplanan karma değeri.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -104,7 +107,7 @@ public:int GetHashCode()
   
 
 
-## <a name="gettype"></a>Object::GetType yöntemi
+## <a name="gettype"></a>  Object::GetType yöntemi
 Döndürür bir [Platform::Type](../cppcx/platform-type-class.md) nesneyi çalışma zamanı türünü tanımlayan nesne.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -133,7 +136,7 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)   
  [Türü System] (.. /cppcx/Type-System-c-CX.MD
   
-## <a name="ctor"></a>Object::Object Oluşturucusu
+## <a name="ctor"></a>  Object::Object Oluşturucusu
 Nesne sınıfının yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -142,7 +145,7 @@ Nesne sınıfının yeni bir örneğini başlatır.
 public:Object()  
 ```  
 
-## <a name="referenceequals"></a>Object::ReferenceEquals yöntemi
+## <a name="referenceequals"></a>  Object::ReferenceEquals yöntemi
 Belirtilen nesne örnekleri aynı örneği olup olmadığını belirler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -159,9 +162,9 @@ public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2)
  Karşılaştırılacak ikinci nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`iki nesnenin aynı olup olmadığını; Aksi takdirde `false`.  
+ `true` iki nesnenin aynı olup olmadığını; Aksi takdirde `false`.  
  
-## <a name="tostring"></a>Object::ToString yöntemi (C + +/ CX)
+## <a name="tostring"></a>  Object::ToString yöntemi (C + +/ CX)
 Geçerli nesneyi temsil eden bir dize döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  

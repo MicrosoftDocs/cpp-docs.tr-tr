@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - array/std::array::operator!=
 - array/std::array::operator<
@@ -13,25 +13,26 @@ f1_keywords:
 - array/std::array::operator>
 - array/std::array::operator>=
 - array/std::array::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: c8f46282-f179-4909-9a01-639cb8e18c27
-caps.latest.revision: "12"
+caps.latest.revision: 
 manager: ghogen
-ms.openlocfilehash: e4854303bc80603ccbdf908aefc31f304487fb1a
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 4a42ddf39044e97ca6297cfbc5a55810981f7778
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltarraygt-operators"></a>&lt;dizi&gt; işleçleri
 \<Dizi > başlığını içerdiğinden bu `array` üyesi olmayan karşılaştırma şablon işlevleri.  
   
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
-|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator ==](#op_eq_eq)|  
+|[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
+|[işleci&lt;](#op_lt)|[işleci&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Dizi karşılaştırma, eşit değil.  
   
 ```  
@@ -101,7 +102,7 @@ false
 true  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Dizi karşılaştırma, küçüktür.  
   
 ```  
@@ -172,7 +173,7 @@ false
 true  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Dizi karşılaştırma, küçük veya buna eşit.  
   
 ```  
@@ -243,7 +244,7 @@ true
 false  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Dizi karşılaştırma, eşit.  
   
 ```  
@@ -314,7 +315,7 @@ true
 false  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Dizi karşılaştırma, daha büyük.  
   
 ```  
@@ -385,7 +386,7 @@ false
 true  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Dizi karşılaştırma, büyüktür veya eşittir.  
   
 ```  

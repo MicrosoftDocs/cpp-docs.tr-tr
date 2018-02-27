@@ -6,18 +6,19 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: language-reference
 ms.assetid: 3d736b82-0bf0-48cf-bac1-cc9d110b70d1
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 405f1890dc99e5a20102b7602ac83534cb5ded8f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5d8b7717c98ebd4bab8c0d3d8c20a594a3f4d58e
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Ref sınıflar ve yapılar (C + +/ CX)
 C + +/ CX destekler kullanıcı tanımlı *ref sınıfları* ve *ref yapılar*ve kullanıcı tanımlı *değer sınıfları* ve *değer yapılar*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçerikleri belirli belirli kurallarına göre meta verilerine yayılan ve bu bunları Windows çalışma zamanı bileşenleri ve C++ veya diğer dillerde yazılmış Evrensel Windows platformu uygulamaları arasındaki geçirilmesini sağlar.  
@@ -100,7 +101,7 @@ C + +/ CX destekler kullanıcı tanımlı *ref sınıfları* ve *ref yapılar*ve
   
  Çalıştırma kendi yıkıcı zaten olan bir sınıf üyeleri erişmeye çalışırsa tanımlanmamış bir davranıştır; büyük olasılıkla programın çökmesine neden olur. Çağırma `delete t` hiçbir ortak yıkıcı olan bir türü üzerinde etkisi yoktur. Çağırma `delete this` bilinen bir sahip bir türü veya temel sınıfını `private` veya `protected private` yok Edicisi türü hiyerarşi içinde de etkisi yoktur.  
   
- Bir ortak yıkıcı bildirirken ref sınıfı uygulayan böylece derleyici kod oluşturur `Platform::IDisposable` ve yıkıcı uygulayan `Dispose` yöntemi. `Platform::IDisposable`olan C + +/ CX projeksiyon çekirdeğinin `Windows::Foundation::IClosable`. Asla açıkça bu arabirimlerini uygular.  
+ Bir ortak yıkıcı bildirirken ref sınıfı uygulayan böylece derleyici kod oluşturur `Platform::IDisposable` ve yıkıcı uygulayan `Dispose` yöntemi. `Platform::IDisposable` olan C + +/ CX projeksiyon çekirdeğinin `Windows::Foundation::IClosable`. Asla açıkça bu arabirimlerini uygular.  
   
 ## <a name="inheritance"></a>Devralma  
  Platform::Object tüm ref sınıfları için evrensel temel sınıftır. Tüm ref sınıflar için Platform::Object örtük olarak dönüştürülebilir ve kılabilirsiniz [Object::ToString](../cppcx/platform-object-class.md#tostring). Ancak, Windows çalışma zamanı devralma modeli genel devralma modeli tasarlanmamıştır; C + +/ CX yani bir kullanıcı tarafından tanımlanan ortak ref sınıfın temel sınıf olarak sunulamıyor.  

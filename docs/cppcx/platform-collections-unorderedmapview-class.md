@@ -6,19 +6,21 @@ ms.technology: cpp-windows
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: collection/Platform::Collections::UnorderedMapView
+ms.topic: reference
+f1_keywords:
+- collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: c172246bc0e8fd7acb1661a9547fee3bf6c24421
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: e1bb555cc804069aed3c778acf1ac71e795a11ff
+ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView Sınıfı
 Salt okunur bir görünüme temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  
@@ -72,7 +74,7 @@ ref class UnorderedMapView sealed;
   
  **Namespace:** Platform::Collections  
 
-## <a name="first"></a>UnorderedMapView::First yöntemi
+## <a name="first"></a>  UnorderedMapView::First yöntemi
 İlk belirtir yineleyici döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) sırasız eşlemesindeki öğesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -91,7 +93,7 @@ virtual Windows::Foundation::Collections::IIterator<
   
 
 
-## <a name="haskey"></a>UnorderedMapView::HasKey yöntemi
+## <a name="haskey"></a>  UnorderedMapView::HasKey yöntemi
 Geçerli UnorderedMap belirtilen anahtarı içerip içermediğini belirler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -105,11 +107,11 @@ bool HasKey(K key);
  Öğeyi bulmak için kullanılan anahtar. Türü `key` TypeName *K*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`anahtar bulunursa; Aksi takdirde `false`.  
+ `true` anahtar bulunursa; Aksi takdirde `false`.  
   
 
 
-## <a name="lookup"></a>UnorderedMapView::Lookup yöntemi
+## <a name="lookup"></a>  UnorderedMapView::Lookup yöntemi
 V türü türü K. belirtilen anahtarla ilişkili değeri alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -127,7 +129,7 @@ V Lookup(K key);
   
 
 
-## <a name="size"></a>UnorderedMapView::Size yöntemi
+## <a name="size"></a>  UnorderedMapView::Size yöntemi
 Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView öğeler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -141,7 +143,7 @@ virtual property unsigned int Size;
   
 
 
-## <a name="split"></a>UnorderedMapView::Split yöntemi
+## <a name="split"></a>  UnorderedMapView::Split yöntemi
 Geçerli UnorderedMapView nesne iki UnorderedMapView nesnelerine böler. Bu yöntem çalışmaz.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -166,7 +168,7 @@ void Split(
   
 
 
-## <a name="ctor"></a>UnorderedMapView::UnorderedMapView Oluşturucusu
+## <a name="ctor"></a>  UnorderedMapView::UnorderedMapView Oluşturucusu
 UnorderedMapView sınıfının yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - memory/std::operator!=
 - memory/std::operator>
@@ -14,27 +14,29 @@ f1_keywords:
 - memory/std::operator<=
 - memory/std::operator<<
 - memory/std::operator==
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 957be55cd6f38f6ff1ea271b09dcdaa1a241c945
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: dd02495ab42fd758cca28cfc5670ea1a1e7a2a83
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 ||||  
 |-|-|-|  
 |[operator!=](#op_neq)|[işleci&gt;](#op_gt)|[işleci&gt;=](#op_gt_eq)|  
 |[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|[işleci&lt;=](#op_lt_eq)|  
-|[operator ==](#op_eq_eq)|  
+|[operator==](#op_eq_eq)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  Testleri eşitsizlik açısından nesneler arasında.  
   
 ```  
@@ -132,7 +134,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  Nesneler arasındaki eşitlik için test.  
   
 ```  
@@ -166,7 +168,7 @@ bool operator==(
  Sağ paylaşılan işaretçiyi tarafından denetlenen türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true`nesneleri eşitse `false` nesneleri eşit değilse.  
+ `true` nesneleri eşitse `false` nesneleri eşit değilse.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlk şablon işleci true değerini döndürür. (Tüm varsayılan allocators eşit.)  
@@ -241,7 +243,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Testler için ikinci bir nesneye eşit veya daha büyük olan bir nesne.  
   
 ```  
@@ -272,7 +274,7 @@ bool operator>=(
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işleçleri dönmek `left.get() >= right.get()`.  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Testler için bir nesne olma ikinci nesneden küçüktür.  
   
 ```  
@@ -300,7 +302,7 @@ bool operator<(
  `Ty2`  
  Sağ işaretçiyi tarafından denetlenen türü.  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Testler için ikinci bir nesneye eşit veya daha az olan bir nesne.  
   
 ```  
@@ -329,9 +331,9 @@ bool operator<=(
  Sağ paylaşılan işaretçiyi tarafından denetlenen türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon işleçleri Döndür`left.get() <= right.get()`  
+ Şablon işleçleri Döndür `left.get() <= right.get()`  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Testleri bir ikinci nesneden büyük olan bir nesne için.  
   
 ```  
@@ -359,7 +361,7 @@ bool operator>(
  `Ty2`  
  Sağ paylaşılan işaretçiyi tarafından denetlenen türü.  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt"></a>  işleci&lt;&lt;  
 Paylaşılan işaretçi akışa yazar.  
   
 ```  

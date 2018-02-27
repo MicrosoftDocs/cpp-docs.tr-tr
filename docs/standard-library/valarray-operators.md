@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - valarray/std::operator!=
 - valarray/std::operator%
@@ -25,9 +25,10 @@ f1_keywords:
 - valarray/std::operator^
 - valarray/std::operator|
 - valarray/std::operator||
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 8a53562c-90ab-4eb3-85d3-ada5259d90b0
-caps.latest.revision: "8"
+caps.latest.revision: 
 manager: ghogen
 helpviewer_keywords:
 - std::operator!= (valarray), std::operator&amp; (valarray)
@@ -38,23 +39,23 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: b422f33addb61eed4ce04eeef74a76a597f799ee
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: 25b2ed8601e2b83adfec8eae3146ef986a2929a3
+ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 ||||  
 |-|-|-|  
-|[operator! =](#op_neq)|[operator %](#op_mod)|[işleci&amp;](#op_amp)|  
+|[operator!=](#op_neq)|[operator%](#op_mod)|[işleci&amp;](#op_amp)|  
 |[işleci&amp;&amp;](#op_amp_amp)|[işleci&gt;](#op_gt)|[işleci&gt;&gt;](#op_gt_gt)|  
 |[işleci&gt;=](#op_gt_eq)|[işleci&lt;](#op_lt)|[işleci&lt;&lt;](#op_lt_lt)|  
-|[işleci&lt;=](#op_lt_eq)|[işleç *](#op_star)|[operator +](#op_add)|  
-|[operator-](#operator-)|[operator /](#op_div)|[operator ==](#op_eq_eq)|  
-|[operator ^](#op_xor)|[işleci|](#op_or)|[işleci||](#op_lor)|  
+|[işleci&lt;=](#op_lt_eq)|[operator*](#op_star)|[operator+](#op_add)|  
+|[operator-](#operator-)|[operator /](#op_div)|[operator==](#op_eq_eq)|  
+|[operator^](#op_xor)|[işleci|](#op_or)|[işleci||](#op_lor)|  
   
-##  <a name="op_neq"></a>operator! =  
+##  <a name="op_neq"></a>  operator! =  
  İki eşit boyutta valarrays karşılık gelen öğelerini eşit olmayan veya olup olmadığını bir valarray tüm öğeleri eşit olup olmadığını sınar belirtilen bir değeri.  
   
 ```  
@@ -145,7 +146,7 @@ The element-by-element result of the not equal comparison test is the
 *\  
 ```  
   
-##  <a name="op_mod"></a>operator %  
+##  <a name="op_mod"></a>  operator %  
  İki eşit boyutta valarrays veya bir valarray bir belirtilen değere bölünmesinden veya valarray tarafından belirtilen değere bölerek öğelere karşılık gelir ayırma kalan alır.  
   
 ```  
@@ -225,7 +226,7 @@ The remainders from the element-by-element division is the
 *\  
 ```  
   
-##  <a name="op_amp"></a>işleci&amp;  
+##  <a name="op_amp"></a>  işleci&amp;  
  Bit düzeyinde edinir **ve** veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.  
   
 ```  
@@ -310,7 +311,7 @@ The element-by-element result of the bitwise operator & is the
 *\  
 ```  
   
-##  <a name="op_amp_amp"></a>işleci&amp;&amp;  
+##  <a name="op_amp_amp"></a>  işleci&amp;&amp;  
  Mantıksal edinir **ve** bir valarray ve valarray's öğe türü belirtilen değeri veya iki eşit boyutta valarrays karşılık gelen öğeleri arasında.  
   
 ```  
@@ -393,7 +394,7 @@ The element-by-element result of the logical AND operator&& is the
 *\  
 ```  
   
-##  <a name="op_gt"></a>işleci&gt;  
+##  <a name="op_gt"></a>  işleci&gt;  
  Bir valarray öğelerini daha büyük bir eşit boyutta valarray öğelerini veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup olmadığını test eder.  
   
 ```  
@@ -480,7 +481,7 @@ The element-by-element result of the greater than comparison test is the
 *\  
 ```  
   
-##  <a name="op_gt_eq"></a>işleci&gt;=  
+##  <a name="op_gt_eq"></a>  işleci&gt;=  
  Bir valarray öğelerini değerinden büyük veya eşit boyutta bir valarray veya olup bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit öğelerini eşit olup olmadığını sınar.  
   
 ```  
@@ -567,7 +568,7 @@ The element-by-element result of the greater than or equal test is the
 *\  
 ```  
   
-##  <a name="op_gt_gt"></a>işleci&gt;&gt;  
+##  <a name="op_gt_gt"></a>  işleci&gt;&gt;  
  Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS sağa kaydırır.  
   
 ```  
@@ -650,7 +651,7 @@ The element-by-element result of the right shift is the
 *\  
 ```  
   
-##  <a name="op_lt"></a>işleci&lt;  
+##  <a name="op_lt"></a>  işleci&lt;  
  Bir valarray öğelerini eşit boyutta bir valarray veya bir valarray tüm öğeleri büyük ya da belirtilen değerden daha az olup öğelerini değerinden olup olmadığını sınar.  
   
 ```  
@@ -737,7 +738,7 @@ The element-by-element result of the less-than comparson test is the
 *\  
 ```  
   
-##  <a name="op_lt_eq"></a>işleci&lt;=  
+##  <a name="op_lt_eq"></a>  işleci&lt;=  
  Bir valarray öğelerini küçük veya buna eşit boyutta bir valarray öğelerini eşit olup olmadığına veya bir valarray tüm öğeleri daha büyük veya eşit veya daha az veya belirtilen değere eşit olup olmadığını sınar.  
   
 ```  
@@ -824,7 +825,7 @@ The element-by-element result of the less than or equal test is the
 *\  
 ```  
   
-##  <a name="op_lt_lt"></a>işleci&lt;&lt;  
+##  <a name="op_lt_lt"></a>  işleci&lt;&lt;  
  Valarray belirtilen sayıda konumlar veya ikinci valarray tarafından belirtilen bir element-wise miktar, her bir öğe için BITS Sola kaydırır.  
   
 ```  
@@ -907,7 +908,7 @@ The element-by-element result of the left shift is the
 *\  
 ```  
   
-##  <a name="op_star"></a>işleç *  
+##  <a name="op_star"></a>  işleç *  
  İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise ürün edinir valarray belirtilen değer arasında.  
   
 ```  
@@ -987,7 +988,7 @@ The element-by-element result of the multiplication is the
 *\  
 ```  
   
-##  <a name="op_add"></a>operator +  
+##  <a name="op_add"></a>  operator +  
  İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise toplam alacağı valarray belirtilen değer arasında.  
   
 ```  
@@ -1067,7 +1068,7 @@ The element-by-element result of the sum is the
 *\  
 ```  
   
-##  <a name="operator-"></a>operator-  
+##  <a name="operator-"></a>  operator-  
  Karşılık gelen öğeleri iki eşit boyutta valarrays veya, element-wise birbirinden edinir valarray belirtilen değer arasında.  
   
 ```  
@@ -1152,7 +1153,7 @@ The element-by-element result of the difference is the
 *\  
 ```  
   
-##  <a name="op_div"></a>operator /  
+##  <a name="op_div"></a>  operator /  
  İki eşit boyutta valarrays ya da, ilgili öğeler arasında element-wise sayının edinir valarray belirtilen değer arasında.  
   
 ```  
@@ -1237,7 +1238,7 @@ The element-by-element result of the quotient is the
 *\  
 ```  
   
-##  <a name="op_eq_eq"></a>operator ==  
+##  <a name="op_eq_eq"></a>  operator ==  
  İki eşit boyutta valarrays karşılık gelen öğelerini eşittir veya bir valarray tüm öğeleri olup olup testleri belirtilen değere eşit.  
   
 ```  
@@ -1324,7 +1325,7 @@ The element-by-element result of the equality comparison test is the
 *\  
 ```  
   
-##  <a name="op_xor"></a>operator ^  
+##  <a name="op_xor"></a>  operator ^  
  Bit düzeyinde özel edinir `OR` ( **XOR**) veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.  
   
 ```  
@@ -1413,7 +1414,7 @@ The element-by-element result of the bitwise XOR operator^ is the
 *\  
 ```  
   
-##  <a name="op_or"></a>operator &#124;  
+##  <a name="op_or"></a>  operator &#124;  
  Bit düzeyinde edinir `OR` veya bir valarray ile öğe türü belirtilen değeri arasında iki eşit boyutta valarrays öğelere karşılık gelir.  
   
 ```  
@@ -1502,7 +1503,7 @@ The element-by-element result of the bitwise OR operator| is the
 *\  
 ```  
   
-##  <a name="op_lor"></a>operator &#124; &#124;  
+##  <a name="op_lor"></a>  operator &#124; &#124;  
  Mantıksal edinir `OR` veya bir valarray ile valarray öğesi türünde belirtilen değer arasında iki eşit boyutta valarrays öğelere karşılık gelir.  
   
 ```  
