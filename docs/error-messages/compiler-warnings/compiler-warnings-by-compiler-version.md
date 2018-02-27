@@ -1,124 +1,150 @@
 ---
 title: "Derleyici Uyarısı derleyici sürümüne göre | Microsoft Docs"
 ms.custom: 
-ms.date: 05/16/2017
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-cpp
+ms.technology:
+- devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - warnings, by compiler version
 - cl.exe compiler, setting warning options
-ms.assetid: 886c5a66-088c-4a4b-908b-aa3ec189e595
-caps.latest.revision: "0"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 52513b156ee8c86d8358be84a27c28d15eb86641
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 5f6ee65b1001f0cf651fcbbd68170484cd134aa4
+ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 02/21/2018
 ---
-# <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları  
-  
-Derleyici kullanarak belirtebilirsiniz sürüm sonra sunulan uyarıları gizleyebilirsiniz [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırma istediğinizde yapı işleminizin yönetmek için kullanışlıdır. Bu seçenek, yeni hata iletileri bastırmak değil. Tüm yeni uyarıları bastırma önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derleme öneririz __/W4__, kaldırıp __/Wv__ yapınızın mümkün olan en kısa sürede seçeneği.  
-  
+# <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
+
+Derleyici kullanarak belirttiğiniz bir sürüm sonra sunulan uyarıları gizleyebilirsiniz [/Wv](../../build/reference/compiler-option-warning-level.md) derleyici seçeneği. Bu, yeni bir araç takımının sürüm tanıtır ve geçici olarak yeni uyarıları bastırma istediğinizde yapı işleminizin yönetmek için kullanışlıdır. Bu seçenek, yeni hata iletileri bastırmak değil. Tüm yeni uyarıları bastırma önermiyoruz kalıcı olarak! En yüksek normal uyarı düzeyinde, her zaman derleme öneririz __/W4__, kaldırıp __/Wv__ yapınızın mümkün olan en kısa sürede seçeneği. 
+
 Yeni uyarılar derleyici bu sürümlerinde sunulur:
 
-| Ürün | Derleme sürüm numarası |  
-|-|-|  
-| Visual C++ 2002 | 13.00.9466 |  
-| Visual C++ 2003 | 13.10.3077 |  
-| Visual C++ 2005 | 14.00.50727.762 |  
-| Visual C++ 2008 | 15.00.21022.08 |  
-| Visual C++ 2010 | 16.00.40219.01 |  
-| Visual C++ 2012 | 17.00.51106.1 |  
-| Visual C++ 2013 | 18.00.21005.1 |  
-| Visual C++ 2015 RTM | 19.00.23026.0 |  
-| Visual C++ 2015 güncelleştirme 1 | 19.00.23506.0 |  
-| Visual C++ 2015 güncelleştirme 2 | 19.00.23918.0 |  
-| Visual C++ 2015 güncelleştirme 3 | 19.00.24215.1 |  
-| Visual C++ 2017 RTM | 19.10.24903.0 |  
-| Visual C++ 2017 Güncelleştirmesi 1 | 19.10.25017.0 |  
-  
-Yalnızca birincil numarasını, birincil ve ikincil sayılar veya ana, ikincil, belirtin ve yapı numaralarını için __/Wv__ belirtilen sayıdan büyük sürümleri için tüm uyarıları bastırır seçeneği. Örneğin, Visual C++ 2015 güncelleştirme 2 ve daha sonra kullanılmaya uyarıları gizlemek için kullanabileceğiniz __/Wv:19.00.23900__. Visual C++ 2013 ve üzeri tüm uyarıları gizlemek için kullanabileceğiniz __/Wv:18__.  
-  
+| Ürün | Derleme sürüm numarası |
+|-|-|
+| Visual C++ 2002 | 13.00.9466 |
+| Visual C++ 2003 | 13.10.3077 |
+| Visual C++ 2005 | 14.00.50727.762 |
+| Visual C++ 2008 | 15.00.21022.08 |
+| Visual C++ 2010 | 16.00.40219.01 |
+| Visual C++ 2012 | 17.00.51106.1 |
+| Visual C++ 2013 | 18.00.21005.1 |
+| Visual C++ 2015 RTM | 19.00.23026.0 |
+| Visual C++ 2015 güncelleştirme 1 | 19.00.23506.0 |
+| Visual C++ 2015 güncelleştirme 2 | 19.00.23918.0 |
+| Visual C++ 2015 güncelleştirme 3 | 19.00.24215.1 |
+| Visual C++ 2017 RTM | 19.10.24903.0 |
+| Visual C++ 2017 sürüm 15.1 | 19.10.25017.0 |
+| Visual C++ 2017 sürüm 15.3 | 19.11.25506.0 |
+| Visual C++ 2017 sürüm 15,5 | 19.12.25827.0 |
+
+Yalnızca birincil numarasını, birincil ve ikincil sayılar veya ana, ikincil, belirtin ve yapı numaralarını için __/Wv__ seçeneği. Derleyici belirtilen rakamla başlayamaz sürümleri eşleşen tüm uyarıları raporlar ve belirtilen sayıdan büyük sürümleri için tüm uyarıları bastırır. Örneğin, __/Wv:17__ içinde ya da Visual Studio 2012'in herhangi bir sürümü önce sunulan tüm uyarıları raporlar ve Visual Studio 2013 (sürüm 18) veya daha sonra tüm derleyici tarafından sunulan tüm uyarıları bastırır. Gizlemek için Visual Studio 2015'te tanıtılan uyarıları güncelleştirme 2 ve daha sonra kullanabileceğiniz __/Wv:19.00.23506__. Kullanım __/Wv:19.11__ tüm uyarıları herhangi bir Visual Studio 2017 sürüm 15,5 önce Visual Studio sürümünde sunulan ancak Visual Studio 2017 15,5 ve sonraki sürümleri sunulan uyarıları bastırır bildirilecek.
+
 Aşağıdaki bölümlerde her kullanarak gizleyebilirsiniz Visual C++ sürümü tarafından sunulan Uyarılar listesinde __/Wv__ derleyici seçeneği. __/Wv__ seçeneği derleyici belirtilen sürümleri geçerler listelenmeyen, uyarıları bastırma olamaz.
-  
-## <a name="warnings-introduced-in-visual-c-2017-update-1"></a>Visual C++ 2017 güncelleştirme 1'de sunulan uyarıları
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10.25000__.  
-  
-|||  
-|-|-|  
-C4597|Tanımsız davranış: *açıklaması*  
-C4604|'*türü*': bağımsız değişkeni değere göre yerel ve yönetilen sınırından geçirme geçerli kopya Oluşturucu gerektirir. Aksi halde çalışma zamanı davranışı tanımlı değil  
-C4749|Koşullu desteklenen: *açıklaması*  
-C4768|bağlantı belirtimi önce __declspec öznitelikleri göz ardı edilir  
-C4834|'nodiscard' özniteliğine sahip işlevinin dönüş değeri atılıyor  
+
+## <a name="warnings-introduced-in-visual-c-2017-version-155-compiler-version-1912258270"></a>Visual C++ 2017 sürüm 15,5 (derleyici sürüm 19.12.25827.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.11__.
+
+|||
+|-|-|
+C5044|Komut satırı seçeneğiyle bir bağımsız değişken *seçeneği* bir yola işaret eden '*yolu*' varolmayan
+
+## <a name="warnings-introduced-in-visual-c-2017-version-153-compiler-version-1911255060"></a>Visual C++ 2017 sürüm 15.3 (derleyici sürüm 19.11.25506.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10__.
+
+|||
+|-|-|
+C4843|'*type1*': başvuru dizi veya işlev türü için bir özel durum işleyici erişilemiyor, kullanın '*type2*' yerine
+C4844|' modülü dışarı *module_name*;' bir modül arabirimi bildirmek için tercih edilen sözdizimi sunulmuştur
+C5039|'*işlevi*': - EHc altında extern C işlev işaretçisi veya potansiyel olarak işlevi atma başvuru geçirilen. Bu işlev bir özel durum oluşturursa tanımsız davranış ortaya çıkabilir.
+C5040|dinamik özel durum belirtimleri yalnızca C ++ 14 ve daha önceki sürümlerde geçerli; noexcept(FALSE) değerlendirme
+C5041|'*tanımı*': satır dışı tanım constexpr statik veri üyesi için gerekli değildir ve C ++ 17'de kullanım dışıdır
+C5042|'*bildirimi*': blok kapsamında işlev bildirimleri standart C++'da belirtilen 'satır içi' olamaz; 'inline' tanımlayıcısı kaldırın
+C5043|'*belirtimi*': özel durum belirtimi önceki bildirimi eşleşmiyor
+
+## <a name="warnings-introduced-in-visual-c-2017-version-151-compiler-version-1910250170"></a>Visual C++ 2017 sürüm 15.1 (derleyici sürüm 19.10.25017.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10.24903__.
+
+|||
+|-|-|
+C4597|Tanımsız davranış: *açıklaması*
+C4604|'*türü*': bağımsız değişkeni değere göre yerel ve yönetilen sınırından geçirme geçerli kopya Oluşturucu gerektirir. Aksi halde çalışma zamanı davranışı tanımlı değil
+C4749|Koşullu desteklenen: *açıklaması*
+C4768|bağlantı belirtimi önce __declspec öznitelikleri göz ardı edilir
+C4834|'nodiscard' özniteliğine sahip işlevinin dönüş değeri atılıyor
 C4841|kullanılan standart uzantısı: *uzantısı*
-C4842|'birden çok devralmayı kullanma türüne uygulanacağını offsetof' sonucunu derleyici sürümler arasında tutarlı olması garanti edilmez  
-C4869|'nodiscard' yalnızca sınıflar, numaralandırmalar ve dönüş türü void olmayan işlevleriyle uygulanabilir  
-C5033|'*depolama sınıfı*' artık desteklenen depolama sınıfı değil  
-C5034|biri iç kullanmak '*iç*' neden işlevi *işlevi* Konuk kodu olarak derlenecek  
-C5035|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek  
-C5036|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*'  
-C5037|'*üye işlevi*': sınıf şablonu üyesi satır dışı tanımını varsayılan bağımsız değişkenler sahip olamaz  
-  
-## <a name="warnings-introduced-in-visual-c-2017-rtm"></a>Visual C++ 2017 RTM ile sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.10__.  
-  
-|||  
-|-|-|  
+C4842|'birden çok devralmayı kullanma türüne uygulanacağını offsetof' sonucunu derleyici sürümler arasında tutarlı olması garanti edilmez
+C4869|'nodiscard' yalnızca sınıflar, numaralandırmalar ve dönüş türü void olmayan işlevleriyle uygulanabilir
+C5033|'*depolama sınıfı*' artık desteklenen depolama sınıfı değil
+C5034|biri iç kullanmak '*iç*' neden işlevi *işlevi* Konuk kodu olarak derlenecek
+C5035|özelliğini kullanın '*özelliği*' neden işlevi *işlevi* Konuk kodu olarak derlenecek
+C5036|VarArgs işlev işaretçisi dönüştürme /hybrid:x86arm64 ile derleme yapılırken '*type1*'to'*type2*'
+C5037|'*üye işlevi*': sınıf şablonu üyesi satır dışı tanımını varsayılan bağımsız değişkenler sahip olamaz
+C5038|veri üyesi '*Üye1*'veri üyesi sonra başlatılacak'*üye2*'
+
+## <a name="warnings-introduced-in-visual-c-2017-rtm-compiler-version-191024903"></a>Visual C++ 2017 RTM'de (derleyici sürüm 19.10.24903) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00__.
+
+|||
+|-|-|
 C4468|'fallthrough': durum etiketi veya varsayılan bir etiket özniteliği gelmelidir
 C4698|'*özelliği*' değerlendirme yalnızca amacıyla ve değiştirilebilir veya gelecekte kaldırma güncelleştirir.
 C4839|sınıfı standart kullanımını*sınıfı*' variadic işlevi bağımsız değişken olarak
 C4840|sınıfı taşınabilir olmayan kullanımını*sınıfı*' variadic işlevi bağımsız değişken olarak
-  
-## <a name="warnings-introduced-in-visual-c-2015-update-3"></a>Visual C++ 2015 güncelleştirme 3'te tanıtılan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.24000__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2015-update-3-compiler-version-1900242151"></a>Visual C++ 2015 güncelleştirme 3'te (derleyici sürüm 19.00.24215.1) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.23918__.
+
+|||
+|-|-|
 C4467|ATL özniteliklerin kullanım dışı bırakılmıştır
 C4596|'*adı*': üye bildiriminde geçersiz tam ad
 C4598|' #include \< *üstbilgi*\>': üstbilgi numarası *numarası* içinde *kaynak* eşleşmiyor *kaynak* , adresindeki konumu
 C4599|'*bağımsız değişkeni*': *kaynak* bağımsız değişken numarası *numarası* eşleşmiyor *kaynağı*
-  
-## <a name="warnings-introduced-in-visual-c-2015-update-2"></a>Visual C++ 2015 güncelleştirme 2'de sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.23900__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2015-update-2-compiler-version-1900239180"></a>Visual C++ 2015 güncelleştirme 2'de (derleyici sürüm 19.00.23918.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.23506__.
+
+|||
+|-|-|
 C4466|Coroutine yığın elision gerçekleştirilemedi
 C4595|'*sınıfı*': üye olmayan işleci yeni ya da silme işlevleri bildirilmemiş satır içi
 C4828|Dosya Kaydır 0'dan başlayarak bir karakter içeriyor x*değeri* geçerli kaynak karakter kümesi geçersiz olan (codepage *numarası*).
 C4868|Derleyici soldan sağa değerlendirme sırası küme ayracı içine alınan Başlatıcı listesindeki zorunlu değil
-  
-## <a name="warnings-introduced-in-visual-c-2015-update-1"></a>Visual C++ 2015 güncelleştirme 1'de sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.23500__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2015-update-1-compiler-version-1900235060"></a>Visual C++ 2015 güncelleştirme 1'de (derleyici sürüm 19.00.23506.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19.00.23026__.
+
+|||
+|-|-|
 C4426|en iyi duruma getirme bayrakları üstbilgisi de dahil olmak sonra değiştirilen #pragma optimize() nedeniyle olabilir
 C4654|Kod önce yerleştirilmiş dahil önceden derlenmiş başlık satırı yok sayılacak. Kodu önceden derlenmiş üstbilgi ekleyin.
 C5031|#pragma warning(pop): farklı bir dosya gönderilen uyarı durumuna pencerelerinin büyük olasılıkla uyuşmazlığı
 C5032|#pragma warning(push) karşılık gelen hiçbir #pragma warning(pop) ile algılandı
-  
-## <a name="warnings-introduced-in-visual-c-2015-rtm"></a>Visual C++ 2015 RTM ile sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:19__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2015-rtm-compiler-version-1900230260"></a>Visual C++ 2015 RTM ile (derleyici sürüm 19.00.23026.0) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:18__.
+
+|||
+|-|-|
 C4427|'*hata*': sabit bölümdeki tanımsız davranış taşması
 C4438|'*türü*': güvenle çağrılamaz / await: clrcompat modu. Varsa '*türü*' CLR çağrılar, CLR baş bozulmasına neden olabilir
 C4455|' işleci *adı*': alt çizgi ile başlamıyor değişmez değer soneki tanımlayıcıları ayrılmıştır
@@ -128,12 +154,12 @@ C4458|bildirimi '*adı*' gizler üye sınıfı
 C4459|bildirimi '*adı*' genel bildirim gizler
 C4462|'*türü*': GUID türü belirlenemiyor. Program çalışma zamanında başarısız olabilir.
 C4463|taşma; atama *değeri* değerleri yalnızca tutabileceği bit alanına *değeri* için *değeri*
-C4473|'*açıklama*': yeterli sayıda bağımsız değişken geçirildi için biçim dizesi
-C4474|'*açıklama*': çok fazla bağımsız değişken geçirildi için biçim dizesi
-C4475|'*açıklama*': uzunluğu değiştiricisi '*değiştiricisi*'türü alan karakteriyle kullanılamaz'*karakter*' biçim belirticisi içinde
-C4476|'*açıklama*': bilinmeyen tür alan karakteri '*karakter*' biçim belirticisi içinde
-C4477|'*açıklama*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak variadic bağımsız değişkeni *numarası* türüne sahip '*türü*'
-C4478|'*açıklama*': konumsal ve konumsal dışı yer tutucuları aynı biçim dizesi karıştırılamaz
+C4473|'*işlevi*': yeterli sayıda bağımsız değişken geçirildi için biçim dizesi
+C4474|'*işlevi*': çok fazla bağımsız değişken geçirildi için biçim dizesi
+C4475|'*işlevi*': uzunluğu değiştiricisi '*değiştiricisi*'türü alan karakteriyle kullanılamaz'*karakter*' biçim belirticisi içinde
+C4476|'*işlevi*': bilinmeyen tür alan karakteri '*karakter*' biçim belirticisi içinde
+C4477|'*işlevi*': biçim dizesi '*dize*'türünde bir bağımsız değişken gerektirir'*türü*', ancak variadic bağımsız değişkeni *numarası* türüne sahip '*türü*'
+C4478|'*işlevi*': konumsal ve konumsal dışı yer tutucuları aynı biçim dizesi karıştırılamaz
 C4494|'*türü*': işlevi dönüş olduğundan türü __declspec(allocator) gözardı değil bir işaretçi veya başvuru
 C4495|'__super' kullanılan standart olmayan uzantısı: açık temel sınıf adı ile değiştirin
 C4496|Standart olmayan uzantı 'for each' kullanılan: aralıklı için deyimiyle değiştirin
@@ -171,13 +197,13 @@ C5027|'*türü*': atama işleci silindi olarak örtük olarak tanımlanmıştı 
 C5028|'*adı*': hizalama önceki bildiriminde belirtilen (*numarası*) tanımı'nda belirtilmedi
 C5029|kullanılan standart olmayan uzantısı: C++ hizalama öznitelikleri değişkenleri, veri üyeleri ve yalnızca etiket türleri için geçerlidir
 C5030|öznitelik '*özniteliği*' tanınmıyor
-  
-## <a name="warnings-introduced-in-visual-c-2013"></a>Visual C++ 2013'te tanıtılan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:18__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2013-compiler-version-1800210051"></a>Visual C++ 2013 (derleyici sürüm 18.00.21005.1) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:17__.
+
+|||
+|-|-|
 C4301|'*türü*': yalnızca sanal işlevi geçersiz kılma farklı olarak '*bildirimi*' const/volatile niteleyicisi tarafından
 C4316|'*türü*': yığında ayrılmış nesne hizalı değil *numarası*
 C4380|'*türü*': varsayılan bir oluşturucu kullanım
@@ -200,15 +226,15 @@ C4981|Warbird: işlev '*bildirimi*' __forceinline değil, özel durum semantiği
 C4990|Warbird: *iletisi*
 C4991|Warbird: işlev '*bildirimi*' koruma düzeyini inlinee üst büyük olduğu için __forceinline içermesinden işaretlenmemiş
 C4992|Warbird: işlev '*bildirimi*' korunamıyor satır içi derleme içerdiğinden __forceinline içermesinden işaretlenmemiş
-  
-## <a name="warnings-introduced-in-visual-c-2012"></a>Visual C++ 2012'de sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:17__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2012-compiler-version-1700511061"></a>Visual C++ 2012 (derleyici sürüm 17.00.51106.1) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:16__.
+
+|||
+|-|-|
 C4330|öznitelik '*özniteliği*'için bölüm'*bölüm*' yoksayıldı
-C4415|Yinelenen __declspec (code_seg ('*adı*'))
+C4415|duplicate __declspec(code_seg('*name*'))
 C4416|__declspec(code_seg(...)) boş dize içeriyor: yoksayıldı
 C4417|bir açık şablonu örneklemesi __declspec(code_seg(...)) olamaz: yoksayıldı
 C4418|bir enum göz ardı __declspec(code_seg(...))
@@ -232,24 +258,24 @@ C4492|'*türü*': eşleşmeleri temel ref sınıf yöntemi '*türü*', 'override
 C4493|DELETE ifadesi hiçbir etkisi yıkıcısı '*türü*' 'genel' erişilebilirlik yok
 C4585|'*türü*': A 'ortak ref class' ya da korumalı olmalıdır veya mevcut bir türetilen WinRT korumasız sınıfı
 C4586|'*türü*': 'Windows' adlı üst düzey bir ad alanında bir ortak türü bildirilemez
-C4695|#pragma execution_character_set: '*bağımsız değişkeni*' desteklenen bir bağımsız değişken değil: şu anda yalnızca 'UTF-8' desteklenir
+C4695|#pragma execution_character_set: '*argument*' is not a supported argument: currently only 'UTF-8' is supported
 C4703|Potansiyel olarak başlatılmamış yerel işaretçi değişkeninin '*adı*' kullanılan
 C4728|/ Yl-PCH başvurusu gerekli olduğundan yoksayıldı seçeneği
 C4745|volatile erişimini '*adı*' boyutuna nedeniyle kabul edilemez
-C4746|volatile erişimini '*adı*' / volatile tabi olan:\<iso\|MS > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün
+C4746|volatile erişimini '*adı*' / volatile tabi olan:\<ISO\|ms > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün
 C4872|Çağrı grafik concurrency::parallel_for_each için derleme sırasında algılanan sıfıra noktası bölme kayan: '*açıklama*'
 C4880|gelen atama '*türü*'to'*türü*': hemen bir işaretçi veya reference constness atama sonuçlanabilir bir kısıtlanmış amp işlevinde tanımsız davranış
 C4881|yapıcı ve/veya yıkıcı tile_static değişken için çağrılan değil '*türü*'
 C4966|'*açıklama*' __code_seg ek açıklama desteklenmeyen segment adı, göz ardı ek açıklama sahip
 C4988|'*türü*': değişken bildirilen dış sınıfı ya da işlevin kapsamı
 C4989|'*açıklama*': çakışan tanımları türüne sahip.
-  
-## <a name="warnings-introduced-in-visual-c-2010"></a>Visual C++ 2010'da sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:16__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2010-compiler-version-16004021901"></a>Visual C++ 2010 (derleyici sürüm 16.00.40219.01) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:15__.
+
+|||
+|-|-|
 C4352|'*adı*': önceden tanımlanmış iç işlevi
 C4573|kullanımını '*türü*' 'this' ancak yakalamak için derleyici gerektirir geçerli varsayılan yakalama modu izin vermediğinden
 C4574|'*adı*'0 ' olarak tanımlanan': kullanılacak mu demek istediniz ' #if *adı*'?
@@ -259,13 +285,13 @@ C4752|Intel(r) Gelişmiş vektör uzantıları bulundu; uygun/arch AVX bayrağı
 C4837|trigrafı algılandı: '?? *karakter*'yerine'*karakter*'
 C4986|'*bildirimi*': özel durum belirtimi önceki bildirimi eşleşmiyor
 C4987|standart olmayan uzantı kullanıldı: 'throw (...)'
-  
-## <a name="warnings-introduced-in-visual-c-2008"></a>Visual C++ 2008'de sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:15__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2008-compiler-version-15002102208"></a>Visual C++ 2008 (derleyici sürüm 15.00.21022.08) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:14__.
+
+|||
+|-|-|
 C4396|'*türü*': bir arkadaş bildirimi işlevi şablonu özelleştirmesi için başvurduğunda satır içi belirticisi kullanılamaz
 C4413|'*bildirimi*': başvuru üyesi Oluşturucusu çıktıktan sonra kalmıyor geçici bir başlatıldı
 C4491|'*açıklama*': Geçersiz IDL sürüm biçimi
@@ -274,13 +300,13 @@ C4627|'*açıklama*': önceden derlenmiş üstbilgi kullanım aramakta zaman atl
 C4750|'*açıklama*': _alloca() bir döngüye içermesinden ile işlevi
 C4910|'*türü*': '__declspec(dllexport)' ve 'extern' üzerinde bir açık örnekleme uyumsuz
 C4985|'*bildirimi*': öznitelikler önceki bildiriminde yok.
-  
-## <a name="warnings-introduced-in-visual-c-2005"></a>Visual C++ 2005'te tanıtılan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:14__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2005-compiler-version-140050727762"></a>Visual C++ 2005'te (derleyici sürüm 14.00.50727.762) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:13__.
+
+|||
+|-|-|
 C4000|Lütfen bilinmeyen uyarı Visual C++ Yardım menüsünden teknik destek komut seçin veya daha fazla bilgi için teknik destek Yardım dosyasını açın
 C4272|'*türü*': __declspec(dllimport) işaretlenmiş; yerel çağırma bir işlev içeri aktarırken belirtmeniz gerekir.
 C4333|'*ifade*': çok büyük bir miktarını, veri kaybı tarafından sağa kaydırma
@@ -315,7 +341,7 @@ C4397|DefaultCharSetAttribute göz ardı edilir
 C4398|'*türü*': işlem içi genel nesne ile birden çok appdomains oluşturuyor doğru çalışmayabilir; __declspec(appdomain) kullanmayı düşünün
 C4399|'*türü*': işlem içi simgesi işaretlenmemiş ile __declspec (*değeri*) / CLR ile derlendiğinde: Saf
 C4400|'*türü*': const/volatile niteleyicileri bu türü desteklenmiyor
-C4412'Yİ|'*bildirimi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.
+C4412|'*bildirimi*': işlev imzası içeren türü '*türü*'; Saf kod arasında geçirmek için güvenli ve karma veya yerel C++ nesneleri.
 C4429|Olası eksik veya hatalı oluşturulmuş evrensel karakter-adı
 C4430|tür belirticisi eksik - int varsayıldı. Not: Varsayılan int C++ desteklemiyor
 C4431|tür belirticisi eksik - int varsayıldı. Not: C artık varsayılan int desteği içermiyor
@@ -417,13 +443,13 @@ C4965|örtük kutusu tamsayı 0; nullptr veya açık atama kullanın
 C4970|Oluşturucu temsilci: hedef nesne göz ardı itibaren '*bildirimi*' statik
 C4971|Bağımsız değişken sipariş: \<hedef nesnesi >, \<hedef işlevi > temsilci Oluşturucu kullanım için kullanmak \<hedef işlevi >, \<hedef nesnesi >
 C4972|Doğrudan değiştirerek veya bir unbox işleminin sonucu bir lvalue değerlendirmesini doğrulanamaz
-  
-## <a name="warnings-introduced-in-visual-c-2003"></a>Visual C++ 2003'te tanıtılan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:13.10__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2003-compiler-version-13103077"></a>Visual C++ 2003'te (derleyici sürüm 13.10.3077) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:13.00.9466__.
+
+|||
+|-|-|
 C4343|#pragma en iyi duruma getirme (*açıklama*, kapalı) /Og seçeneğini geçersiz kılar
 C4344|davranış değişikliği: açık şablon bağımsız değişken sonuçları çağrıda kullanımını '*bildirimi*'
 C4346|'*türü*': bağımlı adı bir tür değil
@@ -453,13 +479,13 @@ C4951|'*açıklama*' profili itibaren kullanılmıyor işlevi profil verileri, v
 C4952|'*açıklama*': hiçbir profil verileri program veritabanında bulunan '*açıklama*'
 C4953|Inlinee '*açıklama*' profili itibaren kullanılmıyor profil verileri, veri toplanmıştır düzenlenebilir
 C4954|'*açıklama*': değil profili (__int64 anahtar ifadesi içerir)
-  
-## <a name="warnings-introduced-in-visual-c-2002"></a>Visual C++ 2002'de sunulan uyarıları  
-  
-Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:13__.  
-  
-|||  
-|-|-|  
+
+## <a name="warnings-introduced-in-visual-c-2002-compiler-version-13009466"></a>Visual C++ 2002 (derleyici sürüm 13.00.9466) sunulan uyarıları
+
+Bu uyarılar ve sonraki sürümlerinde tüm uyarıları derleyici seçeneği kullanılarak bastırılan __/Wv:12__.
+
+|||
+|-|-|
 C4096|'*türü*': arabirim için IDL yayılan değil; bir COM arabirimi değil
 C4097|Beklenen 'geri' olacak şekilde pragma parametresi veya 'off'
 C4165|'Bool'; 'HRESULT' dönüştürülüyor Bu istediğinize emin misiniz?
@@ -507,7 +533,7 @@ C4338|#pragma *açıklama*: standart bölüm '*bölüm*' kullanılır
 C4339|'*türü*': Tanımsız Tür kullanımını algılandı CLR/WinRT meta veri - bu türün kullanımı, bir çalışma zamanı özel durumuna neden olabilir
 C4353|kullanılan standart olmayan uzantısı: sabit 0 olarak işlev ifadesi.  Bunun yerine '__noop' işlevini iç kullanın
 C4370|'*bildirimi*': sınıf yerleşimini daha iyi paketleme nedeniyle Derleyici önceki bir sürümünden değişti
-C4371|'*bildirimi*': sınıf yerleşimini üyesinin daha iyi paketleme nedeniyle Derleyici önceki bir sürümünden değişmiş olabilir '*türü*'
+C4371|'*bildirimi*': sınıf yerleşimini üyesinin daha iyi paketleme nedeniyle Derleyici önceki bir sürümünden değişmiş olabilir '*üye*'
 C4373|'*türü*': sanal işlevi geçersiz kılma işlemleri*bildirimi*', önceki sürümlerini derleyici parametreleri yalnızca const/volatile niteleyicileri tarafından farklıydı olduğunda geçersiz
 C4387|'*açıklama*': olarak kabul edildi
 C4389|'*ifade*': İmzalı ve imzasız uyuşmazlığı
@@ -534,7 +560,7 @@ C4558|işlenen değerini '*numarası*'aralık dışında olduğundan'*numarası*
 C4561|'__fastcall' ile uyumsuz ' / clr' seçeneği: '__stdcall' dönüştürme
 C4562|ile tam olarak örneklenmiş işlevler gereklidir ' / clr' seçeneği: dönüştürme '(void)' için ' (')
 C4564|yöntemi '*adı*' ın *sınıfı* '*türü*'desteklenmeyen varsayılan parametre tanımlar'*parametresi*'
-C4584 ARASINDAKİ|'*türü*': temel sınıf*bildirimi*'taban sınıfının zaten'*bildirimi*'
+C4584|'*türü*': temel sınıf*bildirimi*'taban sınıfının zaten'*bildirimi*'
 C4608|Birden çok üye birleşim başlatılıyor: '*türü*'ve'*türü*'
 C4619|#pragma uyarısı: uyarı numarası yok '*numarası*'
 C4623|'*türü*': varsayılan oluşturucu silindi olarak örtük olarak tanımlanmıştı
@@ -602,8 +628,8 @@ C4995|'*adı*': ad, kullanım dışı #pragma işaretlendi
 C4996|'*sorunu*': *açıklaması*
 C4997|'*türü*': COM arabirimi veya Sahte Arabirimi coclass'ı uygulamıyor
 C4998|BEKLENTİ başarısız oldu: *açıklama*(*numarası*)
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)  
-[Varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)  
-[warning](../../preprocessor/warning.md)  
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[/Wv derleyici seçeneği](../../build/reference/compiler-option-warning-level.md)
+[varsayılan olarak kapalı olan derleyici uyarıları](../../preprocessor/compiler-warnings-that-are-off-by-default.md)
+[uyarı](../../preprocessor/warning.md)
