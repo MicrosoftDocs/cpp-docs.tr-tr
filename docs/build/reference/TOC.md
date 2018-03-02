@@ -148,6 +148,7 @@
 ##### [/Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)](zc-throwingnew-assume-operator-new-throws.md)
 ##### [/Zc:trigraphs (Trigrafları Değiştirme)](zc-trigraphs-trigraphs-substitution.md)
 ##### [/Zc:wchar_t (wchar_t Yerel Tür)](zc-wchar-t-wchar-t-is-native-type.md)
+#### [/ZF (Daha hızlı PDB oluşturma)](zf.md)
 #### [/Zg (İşlev Prototipleri Üret)](zg-generate-function-prototypes.md)
 #### [/Zl (Varsayılan Kitaplık Adını Atla)](zl-omit-default-library-name.md)
 #### [/Zm (Önceden Derlenmiş Üst Bilgi Bellek Ayırma Sınırını Belirt)](zm-specify-precompiled-header-memory-allocation-limit.md)
