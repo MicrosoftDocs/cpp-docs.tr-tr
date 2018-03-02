@@ -1,7 +1,7 @@
 ---
 title: "C tamsayı sabitleri | Microsoft Docs"
 ms.custom: 
-ms.date: 02/01/2018
+ms.date: 02/27/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -19,90 +19,117 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c23e90d235e1ad2a8cca577c5cfbf2be55b52b6
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: e0f28b41c54b14c9e673d3fb8e7bb4947206cfd3
+ms.sourcegitcommit: d24de38f9da844f824acb9d200a3f263077145fc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="c-integer-constants"></a>C Tamsayı Sabitleri
 
-"Tamsayı sabiti" ondalık (10 tabanı), sekizli (8 tabanı) veya bir tam sayı değeri temsil eden onaltılı (16 tabanı) sayı olabilir. Tamsayı sabitleri değiştirilemez tamsayı değerlerini temsil edecek şekilde kullanın.
+Bir *tamsayı sabiti* ondalık (10 tabanı), sekizli (8 tabanı) ya da bir tam sayı değerini temsil eden onaltılı (16 tabanı) sayıdır. Tamsayı sabitleri değiştirilemez tamsayı değerlerini temsil edecek şekilde kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*integer-constant*:  
-&nbsp;&nbsp;*ondalık sabiti* *tamsayı sonek*<sub>iptal et</sub>  
-&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub>  
-&nbsp;&nbsp;*onaltılık sabiti* *tamsayı sonek*<sub>iptal et</sub>  
+*integer-constant*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabiti* *tamsayı sonek*<sub>iptal et</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*octal-constant* *integer-suffix*<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabiti* *tamsayı sonek*<sub>iptal et</sub><br/>
 
-*ondalık sabiti*:  
-&nbsp;&nbsp;*nonzero-digit*  
-&nbsp;&nbsp;*ondalık sabiti* *basamak*  
+*ondalık sabiti*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*nonzero-digit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabiti* *basamak*<br/>
 
-*sabiti sekizli*:  
-&nbsp;&nbsp;**0**  
-&nbsp;&nbsp;*octal-constant* *octal-digit*  
+*sabiti sekizli*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sabiti sekizli* *sekizli basamak*<br/>
 
-*hexadecimal-constant*:  
-&nbsp;&nbsp;**0x**  *hexadecimal-digit*  
-&nbsp;&nbsp;**0X**  *hexadecimal-digit*  
-&nbsp;&nbsp;*onaltılık sabiti* *onaltılık basamak*  
+*hexadecimal-constant*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık önek* *onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabiti* *onaltılık basamak*<br/>
 
-*sıfır olmayan basamaklı*: biri  
-&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**  
+*onaltılık önek*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0x**  **0X**<br/>
 
-*sekizli basamak*: biri  
-&nbsp;&nbsp;**0 1 2 3 4 5 6 7**  
+*sıfır olmayan basamaklı*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**<br/>
 
-*onaltılık basamaklı*: biri  
-&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**  
-&nbsp;&nbsp;**b c d e f**  
-&nbsp;&nbsp;**A B C D E F**  
-  
-*integer-suffix*:  
-&nbsp;&nbsp;*İmzasız soneki* *uzun soneki*<sub>iptal et</sub>  
-&nbsp;&nbsp;*uzun soneki* *imzasız soneki*<sub>iptal et</sub>  
-&nbsp;&nbsp;*İmzasız soneki* *64 bit tamsayı soneki*<sub>iptal et</sub>
+*sekizli basamak*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**<br/>
 
-*İmzasız soneki*: biri  
-&nbsp;&nbsp;**u U**  
+*onaltılık basamaklı*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**A B C D E F**<br/>
 
-*uzun soneki*: biri  
-&nbsp;&nbsp;**l L**  
-  
-*64 bit tamsayı soneki*: biri &nbsp; &nbsp; **I64 I64**  
+*integer-suffix*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İmzasız soneki* *uzun soneki*<sub>iptal et</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İmzasız soneki* *uzun uzun soneki*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İmzasız soneki* *64 bit tamsayı soneki*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*uzun soneki* *imzasız soneki*<sub>iptal et</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Long long soneki* *imzasız soneki*<sub>iptal et</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*64-bit-integer-suffix*<br/>
+
+*İmzasız soneki*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**u U**<br/>
+
+*uzun soneki*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**l L**<br/>
+
+*Long long soneki*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ll LL**<br/>
+
+*64 bit tamsayı soneki*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**i64 I64**<br/>
+
+**I64** ve **I64** birimlerdir Microsoft'a özgü.
 
 Bir eksi işareti koyarak sürece tamsayı sabitleri pozitif (**-**). Eksi işareti birli aritmetik değilleme işleci yorumlanır. (Bkz [birli aritmetik işleçler](../c-language/unary-arithmetic-operators.md) bu işleci hakkında bilgi için.)
 
 Tamsayı sabiti ile başlıyorsa **0 x** veya **0 X**, onaltılık. Basamaklı başlıyorsa **0**, sekizli. Aksi takdirde, ondalık olduğu varsayılır.
 
-Aşağıdaki satırları eşdeğerdir:
+Aşağıdaki tamsayı sabitleri eşdeğerdir:
 
 ```C
+28
 0x1C   /* = Hexadecimal representation for decimal 28 */
 034    /* = Octal representation for decimal 28 */
 ```
 
-Hiçbir boşluk karakterleri tamsayı sabiti basamak ayırabilirsiniz. Bu örnekler, geçerli ondalık, sekizlik ve onaltılık sabitleri gösterir.
+Hiçbir boşluk karakterleri tamsayı sabiti basamak ayırabilirsiniz. Bu örnekler, geçerli bazı ondalık, sekizlik ve onaltılık sabitleri gösterir.
 
 ```C
-/* Decimal Constants */
-10
-132
-32179
+    /* Decimal Constants */
+    int                 dec_int    = 28;
+    unsigned            dec_uint   = 4000000024u;
+    long                dec_long   = 2000000022l;
+    unsigned long       dec_ulong  = 4000000000ul;
+    long long           dec_llong  = 9000000000LL;
+    unsigned long long  dec_ullong = 900000000001ull;
+    __int64             dec_i64    = 9000000000002I64;
+    unsigned __int64    dec_ui64   = 90000000000004ui64;
 
-/* Octal Constants */
-012
-0204
-076663
+    /* Octal Constants */
+    int                 oct_int    = 024;
+    unsigned            oct_uint   = 04000000024u;
+    long                oct_long   = 02000000022l;
+    unsigned long       oct_ulong  = 04000000000UL;
+    long long           oct_llong  = 044000000000000ll;
+    unsigned long long  oct_ullong = 044400000000000001Ull;
+    __int64             oct_i64    = 04444000000000000002i64;
+    unsigned __int64    oct_ui64   = 04444000000000000004uI64;
 
-/* Hexadecimal Constants */
-0xa or 0xA
-0x84
-0x7dB3 or 0X7DB3
+    /* Hexadecimal Constants */
+    int                 hex_int    = 0x2a;
+    unsigned            hex_uint   = 0XA0000024u;
+    long                hex_long   = 0x20000022l;
+    unsigned long       hex_ulong  = 0XA0000021uL;
+    long long           hex_llong  = 0x8a000000000000ll;
+    unsigned long long  hex_ullong = 0x8A40000000000010uLL;
+    __int64             hex_i64    = 0x4a44000000000020I64;
+    unsigned __int64    hex_ui64   = 0x8a44000000000040Ui64;
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Sabitleri](../c-language/c-constants.md)  
+[C Sabitleri](../c-language/c-constants.md)<br/>
