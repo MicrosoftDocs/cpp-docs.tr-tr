@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,16 +17,18 @@ f1_keywords:
 - ATLCOM/ATL::IConnectionPointImpl::GetConnectionPointContainer
 - ATLCOM/ATL::IConnectionPointImpl::Unadvise
 - ATLCOM/ATL::IConnectionPointImpl::m_vec
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - connection points [C++], implementing
 - IConnectionPointImpl class
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6c49057153a23f0e17d09032df8781b64cef8677
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

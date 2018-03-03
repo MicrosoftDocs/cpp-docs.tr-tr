@@ -4,25 +4,28 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - CSimpleDialog
 - ATLWIN/ATL::CSimpleDialog
 - ATLWIN/ATL::CSimpleDialog::DoModal
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSimpleDialog class
 - CSimpleDialog class, modal dialog boxes in ATL
 - dialog boxes, modal
 - modal dialog boxes, ATL
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5e497d5f1646ab890b7dafa3e1fb7e1c711a8a09
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

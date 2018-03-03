@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -30,14 +31,17 @@ f1_keywords:
 - ATLCOLL/ATL::CRBTree::RemoveAll
 - ATLCOLL/ATL::CRBTree::RemoveAt
 - ATLCOLL/ATL::CRBTree::SetValueAt
-dev_langs: C++
-helpviewer_keywords: CRBTree class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8f436a3661f027ba1026a60982cb18b48a2c48cc
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

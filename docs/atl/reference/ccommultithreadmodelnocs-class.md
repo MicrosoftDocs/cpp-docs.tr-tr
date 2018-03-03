@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,17 +16,19 @@ f1_keywords:
 - ATLBASE/ATL::CComMultiThreadModelNoCS::ThreadModelNoCS
 - ATLBASE/ATL::CComMultiThreadModelNoCS::Decrement
 - ATLBASE/ATL::CComMultiThreadModelNoCS::Increment
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ATL, multithreading
 - CComMultiThreadModelNoCS class
 - threading [ATL]
 ms.assetid: 2b3f7a45-fd72-452c-aaf3-ccdaa621c821
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cc32ab53469b1f125b56343806c7920461c64bf2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

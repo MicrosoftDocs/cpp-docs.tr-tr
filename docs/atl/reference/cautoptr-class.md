@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,14 +16,17 @@ f1_keywords:
 - ATLBASE/ATL::CAutoPtr::Detach
 - ATLBASE/ATL::CAutoPtr::Free
 - ATLBASE/ATL::CAutoPtr::m_p
-dev_langs: C++
-helpviewer_keywords: CAutoPtr class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAutoPtr class
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2b8ded7bbf4dbe4e4f2ada7054cebab996934316
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

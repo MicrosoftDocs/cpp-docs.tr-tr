@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - ATLCOM/ATL::IObjectWithSiteImpl::SetChildSite
 - ATLCOM/ATL::IObjectWithSiteImpl::SetSite
 - ATLCOM/ATL::IObjectWithSiteImpl::m_spUnkSite
-dev_langs: C++
-helpviewer_keywords: IObjectWithSiteImpl class
+dev_langs:
+- C++
+helpviewer_keywords:
+- IObjectWithSiteImpl class
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 49574d31ef0c606528f29c0045506e5febe69b28
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,16 +20,18 @@ f1_keywords:
 - ATLWIN/ATL::CAxDialogImpl::GetIDD
 - ATLWIN/ATL::CAxDialogImpl::IsDialogMessage
 - ATLWIN/ATL::CAxDialogImpl::m_bModal
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2db97c0de9f262936212cf7f38abddf7c91eb5a6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

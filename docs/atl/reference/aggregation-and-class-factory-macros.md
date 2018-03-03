@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,16 +20,18 @@ f1_keywords:
 - atlcom/ATL::DECLARE_POLY_AGGREGATABLE
 - atlcom/ATL::DECLARE_PROTECT_FINAL_CONSTRUCT
 - atlcom/ATL::DECLARE_VIEW_STATUS
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - class factories, ATL macros
 - aggregation [C++], ATL macros
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8d18afdfe08a97a7a685b373b1f8951799836ab1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

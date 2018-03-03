@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - ATLUTIL/ATL::CDebugReportHook::SetHook
 - ATLUTIL/ATL::CDebugReportHook::SetPipeName
 - ATLUTIL/ATL::CDebugReportHook::SetTimeout
-dev_langs: C++
-helpviewer_keywords: CDebugReportHook class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: df098ee80bcd8fa81b5503cc21b08ded86945a72
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

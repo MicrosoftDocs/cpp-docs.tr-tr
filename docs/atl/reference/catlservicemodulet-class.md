@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -38,14 +39,17 @@ f1_keywords:
 - ATLBASE/ATL::CAtlServiceModuleT::m_hServiceStatus
 - ATLBASE/ATL::CAtlServiceModuleT::m_status
 - ATLBASE/ATL::CAtlServiceModuleT::m_szServiceName
-dev_langs: C++
-helpviewer_keywords: CAtlServiceModuleT class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c2d059a990b9b01cdfc959284d9fe20f3dfd12af
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - atlplus/ATL::RDX_CSTRING_TEXT
 - atlplus/ATL::RDX_DWORD
 - atlplus/ATL::RDX_TEXT
-dev_langs: C++
-helpviewer_keywords: RegistryDataExchange function, macros
+dev_langs:
+- C++
+helpviewer_keywords:
+- RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0bc12c48ef628a42c309c44ce0fc37abda9b6690
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

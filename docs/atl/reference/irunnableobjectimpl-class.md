@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - ATLCTL/ATL::IRunnableObjectImpl::LockRunning
 - ATLCTL/ATL::IRunnableObjectImpl::Run
 - ATLCTL/ATL::IRunnableObjectImpl::SetContainedObject
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - containers, running controls
 - IRunnableObjectImpl class
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - controls [ATL], running
 - controls [C++], container running in ATL
 ms.assetid: 305c7c3b-889e-49dd-aca1-34379c1b9931
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b1ac939d723596f4b0fc3f1013dd3f02cf2aa06b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

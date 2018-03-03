@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - afx/ATL::ATLENSURE
 - atltrace/ATL::ATLTRACENOTIMPL
 - atltrace/ATL::ATLTRACE
-dev_langs: C++
-helpviewer_keywords: macros, error reporting
+dev_langs:
+- C++
+helpviewer_keywords:
+- macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9098b944f70ab4e4448fe40aa2347b0128e6e1a7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

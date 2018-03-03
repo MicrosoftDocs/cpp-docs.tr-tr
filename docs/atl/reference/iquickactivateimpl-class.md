@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,18 +14,20 @@ f1_keywords:
 - ATLCTL/ATL::IQuickActivateImpl::GetContentExtent
 - ATLCTL/ATL::IQuickActivateImpl::QuickActivate
 - ATLCTL/ATL::IQuickActivateImpl::SetContentExtent
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - activating ATL controls
 - controls [ATL], activating
 - IQuickActivateImpl class
 - IQuickActivate ATL implementation
 ms.assetid: aa80c056-1041-494e-b21d-2acca7dc27ea
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7c6f5bc1798bc8ec40fb6f6d9d22f48c06b19745
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,18 +13,20 @@ f1_keywords:
 - ATLCOMCLI/ATL::CAdapt
 - ATLCOMCLI/ATL::CAdapt::CAdapt
 - ATLCOMCLI/ATL::CAdapt::m_T
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - address-of operator
 - adapter objects
 - '& operator, address-of operator'
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b4e565b1e2c20abf31919774d7bc6eb34f4c5f78
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

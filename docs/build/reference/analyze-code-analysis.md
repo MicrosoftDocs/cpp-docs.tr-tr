@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,17 +13,19 @@ f1_keywords:
 - /analyze
 - VC.Project.VCCLCompilerTool.PREfastAdditionalOptions
 - VC.Project.VCCLCompilerTool.PREfastAdditionalPlugins
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /analyze compiler option [C++]
 - -analyze compiler option [C++]
 - analyze compiler option [C++]
 ms.assetid: 81da536a-e030-4bd4-be18-383927597d08
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ba76ddd10866e414d9817f628c7a1aec019964de
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

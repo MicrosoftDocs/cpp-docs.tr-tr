@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,7 +13,8 @@ f1_keywords:
 - ATLWIN/ATL::CWinTraits
 - ATLWIN/ATL::CWinTraits::GetWndExStyle
 - ATLWIN/ATL::CWinTraits::GetWndStyle
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMDIChildWinTraits class
 - window styles, default values for ATL
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - CFrameWinTraits class
 - CControlWinTraits class
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5c5e71f969f86aee419a0ff9d3701f4d43be5c32
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

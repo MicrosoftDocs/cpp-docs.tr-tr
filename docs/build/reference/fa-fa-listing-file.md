@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - /fa
 - VC.Project.VCCLCompilerTool.AssemblerOutput
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - FA compiler option [C++]
 - /FA compiler option [C++]
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - listing file type
 - assembly-only listing
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e0cd569cf16e7b2a14faaa119eacaef0994d09dc
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

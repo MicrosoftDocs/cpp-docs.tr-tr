@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - ATLIFACE/ATL::IAxWinHostWindowLic
 - ATLIFACE/ATL::CreateControlLic
 - ATLIFACE/ATL::CreateControlLicEx
-dev_langs: C++
-helpviewer_keywords: IAxWinHostWindowLic interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 61bd50d5602812cc70ccc3201e9df255f469604a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

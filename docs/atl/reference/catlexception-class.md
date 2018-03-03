@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - ATLEXCEPT/ATL::CAtlException
 - ATLEXCEPT/ATL::CAtlException::CAtlException
 - ATLEXCEPT/ATL::CAtlException::m_hr
-dev_langs: C++
-helpviewer_keywords: CAtlException class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlException class
 ms.assetid: 3fd7b041-f70d-4292-b947-0d70781d95a8
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0af7fa5a0bc78043e0eac204255f30ab1b9672c5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

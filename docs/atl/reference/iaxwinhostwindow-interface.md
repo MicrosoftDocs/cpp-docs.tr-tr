@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - ATLIFACE/ATL::QueryControl
 - ATLIFACE/ATL::SetExternalDispatch
 - ATLIFACE/ATL::SetExternalUIHandler
-dev_langs: C++
-helpviewer_keywords: IAxWinHostWindow interface
+dev_langs:
+- C++
+helpviewer_keywords:
+- IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 791ef9de69646efc82361f8afbed3e17dbe56453
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - ATLCOLL/ATL::CPrimitiveElementTraits
 - ATLCOLL/ATL::CPrimitiveElementTraits::INARGTYPE
 - ATLCOLL/ATL::CPrimitiveElementTraits::OUTARGTYPE
-dev_langs: C++
-helpviewer_keywords: CPrimitiveElementTraits class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CPrimitiveElementTraits class
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 55255342f39ff80f5deb5378353529ef4d6934bb
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

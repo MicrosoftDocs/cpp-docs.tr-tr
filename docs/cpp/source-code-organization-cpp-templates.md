@@ -4,12 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 50569c5d-0219-4966-9bcf-a8689074ad1d
-caps.latest.revision: "5"
+caps.latest.revision: 
 manager: ghogen
 ms.openlocfilehash: 1b3b17c17bad3834774f747548dda6710e178cb4
 ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2

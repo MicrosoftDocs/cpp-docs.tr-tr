@@ -2,12 +2,14 @@
 title: "-NATVIS (Natvis eklemek için PDB) | Microsoft Docs"
 ms.date: 08/10/2017
 ms.tgt_pltfrm: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: article
 f1_keywords:
 - /natvis
 - VC.Project.VCLinkerTool.ImportLIbrary
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - NATVIS linker option
 - /NATVIS linker option
@@ -17,7 +19,8 @@ ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 20715b48413a705aa2338e7e37538171e4141cad
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

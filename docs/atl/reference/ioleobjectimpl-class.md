@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -50,17 +51,19 @@ f1_keywords:
 - ATLCTL/ATL::IOleObjectImpl::SetMoniker
 - ATLCTL/ATL::IOleObjectImpl::Unadvise
 - ATLCTL/ATL::IOleObjectImpl::Update
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ActiveX controls [C++], communication between container and control
 - IOleObject, ATL implementation
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f710953a32ccb32c63742ab28e84818f3a330336
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

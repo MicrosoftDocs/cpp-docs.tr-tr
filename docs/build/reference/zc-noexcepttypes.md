@@ -1,10 +1,13 @@
 ---
 title: '-Zc: noexceptTypes (C ++ 17 noexcept kurallar) | Microsoft Docs'
 ms.date: 11/14/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: article
-f1_keywords: /Zc:noexceptTypes
-dev_langs: C++
+f1_keywords:
+- /Zc:noexceptTypes
+dev_langs:
+- C++
 helpviewer_keywords:
 - /Zc:noexceptTypes
 - Zc:noexceptTypes
@@ -13,7 +16,8 @@ ms.assetid: 1cbf7e3c-0f82-4f91-84dd-612bcf26d2c6
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e1b0e209462295f907f5e518299d34fb18aade4d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

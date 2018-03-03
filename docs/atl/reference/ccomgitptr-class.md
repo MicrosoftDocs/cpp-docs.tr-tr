@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,14 +18,17 @@ f1_keywords:
 - ATLBASE/ATL::CComGITPtr::GetCookie
 - ATLBASE/ATL::CComGITPtr::Revoke
 - ATLBASE/ATL::CComGITPtr::m_dwCookie
-dev_langs: C++
-helpviewer_keywords: CComGITPtr class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CComGITPtr class
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c001d0d1ca8e756b24d97051d100e7d71723569c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

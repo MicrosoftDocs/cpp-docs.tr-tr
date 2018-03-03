@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CServiceModule.Start
 - CServiceModule::Start
-dev_langs: C++
-helpviewer_keywords: Start method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Start method
 ms.assetid: b5193a23-41bc-42d2-8d55-3eb43dc62238
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5d4ee7899cda213bf8d8cfd529fd7609976e20d4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

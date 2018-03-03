@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 08/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /constexpr
 - -constexpr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /constexpr control constexpr evaluation [C++]
 - -constexpr control constexpr evaluation [C++]
@@ -19,7 +21,8 @@ ms.assetid: 76d56784-f5ad-401d-841d-09d1059e8b8c
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7e594eb697c8972d28b513a3638d3eb704258b5e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

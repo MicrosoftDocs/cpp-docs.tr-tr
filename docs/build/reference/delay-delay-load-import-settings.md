@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,18 +13,20 @@ f1_keywords:
 - VC.Project.VCLinkerTool.DelayNoBind
 - VC.Project.VCLinkerTool.SupportUnloadOfDelayLoadedDLL
 - VC.Project.VCLinkerTool.DelayUnload
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - delayed loading of DLLs, /DELAY option
 - DELAY linker option
 - /DELAY linker option
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2b9fc1746ae6ac33e3b11c9f57cb83c821affd8a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

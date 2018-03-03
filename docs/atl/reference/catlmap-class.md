@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -40,14 +41,17 @@ f1_keywords:
 - ATLCOLL/ATL::CAtlMap::SetAt
 - ATLCOLL/ATL::CAtlMap::SetOptimalLoad
 - ATLCOLL/ATL::CAtlMap::SetValueAt
-dev_langs: C++
-helpviewer_keywords: CAtlMap class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9166e8f7804a3138d3e891fbe15b54cb0e270811
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

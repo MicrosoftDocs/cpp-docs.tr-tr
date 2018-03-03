@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - ATLCORE/ATL::CComFakeCriticalSection::Lock
 - ATLCORE/ATL::CComFakeCriticalSection::Term
 - ATLCORE/ATL::CComFakeCriticalSection::Unlock
-dev_langs: C++
-helpviewer_keywords: CComFakeCriticalSection class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CComFakeCriticalSection class
 ms.assetid: a4811b97-96bb-493b-ab9f-62822aeddb10
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8b9f7b3b56193100d21ef7aebaba0ab6d9ecfd5b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

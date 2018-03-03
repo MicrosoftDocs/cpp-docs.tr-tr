@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,17 +15,19 @@ f1_keywords:
 - ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedStrings
 - ATLCTL/ATL::IPerPropertyBrowsingImpl::GetPredefinedValue
 - ATLCTL/ATL::IPerPropertyBrowsingImpl::MapPropertyToPage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - IPerPropertyBrowsingImpl class
 - property pages, accessing information
 - IPerPropertyBrowsing, ATL implementation
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dca0c4e519703408af1ca5b6834e4b311c70bd21
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

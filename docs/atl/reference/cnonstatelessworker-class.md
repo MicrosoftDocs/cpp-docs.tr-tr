@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - ATLUTIL/ATL::CNonStatelessWorker::Execute
 - ATLUTIL/ATL::CNonStatelessWorker::Initialize
 - ATLUTIL/ATL::CNonStatelessWorker::Terminate
-dev_langs: C++
-helpviewer_keywords: CNonStatelessWorker class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CNonStatelessWorker class
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 565324b4853880f8dcfafd83f9ba03439b4a7efa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

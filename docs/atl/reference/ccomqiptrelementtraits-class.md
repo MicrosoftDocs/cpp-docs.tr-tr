@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - CComQIPtrElementTraits
 - ATLCOLL/ATL::CComQIPtrElementTraits
 - ATLCOLL/ATL::CComQIPtrElementTraits::INARGTYPE
-dev_langs: C++
-helpviewer_keywords: CComQIPtrElementTraits class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 30d4e73f3c1e4ad75b8b33442be4e64af1a11207
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

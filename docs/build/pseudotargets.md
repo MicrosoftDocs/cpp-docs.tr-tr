@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - makefiles, pseudotargets
 - pseudotargets and NMAKE
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - timestamps, makefile pseudotargets
 - NMAKE program, targets
 ms.assetid: c8c479dc-0129-4186-8366-bc6251f2b494
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 761b71f05840c86516563df79d45cc1bb018fbba
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

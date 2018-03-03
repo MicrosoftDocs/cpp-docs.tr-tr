@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,15 @@ f1_keywords:
 - AFXMT/CSingleLock::IsLocked
 - AFXMT/CSingleLock::Lock
 - AFXMT/CSingleLock::Unlock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSingleLock [MFC], CSingleLock
 - CSingleLock [MFC], IsLocked
 - CSingleLock [MFC], Lock
 - CSingleLock [MFC], Unlock
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

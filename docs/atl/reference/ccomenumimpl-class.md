@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,14 +22,17 @@ f1_keywords:
 - ATLCOM/ATL::CComEnumImpl::m_end
 - ATLCOM/ATL::CComEnumImpl::m_iter
 - ATLCOM/ATL::CComEnumImpl::m_spUnk
-dev_langs: C++
-helpviewer_keywords: CComEnumImpl class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CComEnumImpl class
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7cda4598f5d5b0e5b3dbca265066c8366cfd6d67
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

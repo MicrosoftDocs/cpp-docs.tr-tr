@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,14 +14,17 @@ f1_keywords:
 - ATLCORE/ATL::CCRTAllocator::Allocate
 - ATLCORE/ATL::CCRTAllocator::Free
 - ATLCORE/ATL::CCRTAllocator::Reallocate
-dev_langs: C++
-helpviewer_keywords: CCRTAllocator class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CCRTAllocator class
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 84c8f800e0b68e23fe33ca0a7e1c1d977bcc344e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

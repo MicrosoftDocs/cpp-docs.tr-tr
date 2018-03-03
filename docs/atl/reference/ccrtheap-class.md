@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,14 +15,17 @@ f1_keywords:
 - ATLMEM/ATL::CCRTHeap::Free
 - ATLMEM/ATL::CCRTHeap::GetSize
 - ATLMEM/ATL::CCRTHeap::Reallocate
-dev_langs: C++
-helpviewer_keywords: CCRTHeap class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CCRTHeap class
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9864ce3522cf33927a3f6d3572e9d2e12187f5d0
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

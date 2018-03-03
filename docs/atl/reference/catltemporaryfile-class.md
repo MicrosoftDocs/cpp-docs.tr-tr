@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,14 +26,17 @@ f1_keywords:
 - ATLFILE/ATL::CAtlTemporaryFile::TempFileName
 - ATLFILE/ATL::CAtlTemporaryFile::UnlockRange
 - ATLFILE/ATL::CAtlTemporaryFile::Write
-dev_langs: C++
-helpviewer_keywords: CAtlTemporaryFile class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlTemporaryFile class
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5911de856d13d9d66e8c950d446083a36811f535
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

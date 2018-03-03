@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - ServiceMain
 - CServiceModule::ServiceMain
 - CServiceModule.ServiceMain
-dev_langs: C++
-helpviewer_keywords: ServiceMain method
+dev_langs:
+- C++
+helpviewer_keywords:
+- ServiceMain method
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 633e9bc4689ced93e1c22151b32654f7ae9d7ece
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

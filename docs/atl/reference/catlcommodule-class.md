@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,14 +16,17 @@ f1_keywords:
 - ATLBASE/ATL::CAtlComModule::RegisterTypeLib
 - ATLBASE/ATL::CAtlComModule::UnregisterServer
 - ATLBASE/ATL::CAtlComModule::UnRegisterTypeLib
-dev_langs: C++
-helpviewer_keywords: CAtlComModule class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlComModule class
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 83dfbb1792a569e359692ba55fb23a8ebb580c37
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,14 +16,17 @@ f1_keywords:
 - ATLCOLL/ATL::CStringElementTraitsI::CompareElements
 - ATLCOLL/ATL::CStringElementTraitsI::CompareElementsOrdered
 - ATLCOLL/ATL::CStringElementTraitsI::Hash
-dev_langs: C++
-helpviewer_keywords: CStringElementTraitsI class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CStringElementTraitsI class
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7803d85c7adf346a06f87d35aba7f42e47f77b2a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

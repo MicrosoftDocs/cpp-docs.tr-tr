@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,14 +20,17 @@ f1_keywords:
 - ATLSIMPCOLL/ATL::CSimpleArray::RemoveAll
 - ATLSIMPCOLL/ATL::CSimpleArray::RemoveAt
 - ATLSIMPCOLL/ATL::CSimpleArray::SetAtIndex
-dev_langs: C++
-helpviewer_keywords: CSimpleArray class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9ea081d3868c1226638d01be9505eb9d0e01ed10
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

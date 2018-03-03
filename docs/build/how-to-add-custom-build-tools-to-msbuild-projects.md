@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msbuild.cpp.howto.addcustombuildtools
-dev_langs: C++
-helpviewer_keywords: 'msbuild (c++), howto: add custom build tools'
+f1_keywords:
+- msbuild.cpp.howto.addcustombuildtools
+dev_langs:
+- C++
+helpviewer_keywords:
+- 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: efa484e4ad57a3a1f27621e16dddcf90135b7057
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - CServiceModule::Handler
 - CServiceModule.Handler
 - Handler
-dev_langs: C++
-helpviewer_keywords: Handler method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Handler method
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 00158bbed5318d919c284b91cd651141a35bd441
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

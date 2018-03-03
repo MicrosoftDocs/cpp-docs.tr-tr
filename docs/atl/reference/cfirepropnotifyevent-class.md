@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,17 +13,19 @@ f1_keywords:
 - ATLCTL/ATL::CFirePropNotifyEvent
 - ATLCTL/ATL::CFirePropNotifyEvent::FireOnChanged
 - ATLCTL/ATL::CFirePropNotifyEvent::FireOnRequestEdit
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sinks, notifying of ATL events
 - CFirePropNotifyEvent class
 - connection points [C++], notifying of events
 ms.assetid: eb7a563e-6bce-4cdf-8d20-8c6a5307781b
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c9571ad4ba928c208c6c028f6e30cf7c27c196d4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

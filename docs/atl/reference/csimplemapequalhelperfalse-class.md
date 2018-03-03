@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualKey
 - ATLSIMPCOLL/ATL::CSimpleMapEqualHelperFalse::IsEqualValue
-dev_langs: C++
-helpviewer_keywords: CSimpleMapEqualHelperFalse class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSimpleMapEqualHelperFalse class
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c1418114233b59112fcffb58ef4ae7c437af5ab3
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

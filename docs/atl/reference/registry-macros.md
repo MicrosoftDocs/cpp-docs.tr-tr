@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,14 +16,17 @@ f1_keywords:
 - atlcom/ATL::DECLARE_REGISTRY_APPID_RESOURCEID
 - atlcom/ATL::DECLARE_REGISTRY_RESOURCE
 - atlcom/ATL::DECLARE_REGISTRY_RESOURCEID
-dev_langs: C++
-helpviewer_keywords: registry, ATL macros
+dev_langs:
+- C++
+helpviewer_keywords:
+- registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eada9ed75bd69122523350536d0757e98b31358d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

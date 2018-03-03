@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -40,14 +41,17 @@ f1_keywords:
 - ATLCOLL/ATL::CAtlList::RemoveTailNoReturn
 - ATLCOLL/ATL::CAtlList::SetAt
 - ATLCOLL/ATL::CAtlList::SwapElements
-dev_langs: C++
-helpviewer_keywords: CAtlList class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 13d26ba7107e21e64ad65ec53264b4f3740fd13a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

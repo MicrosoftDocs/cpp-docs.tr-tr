@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,14 +14,17 @@ f1_keywords:
 - ATLBASE/ATL::CComAllocator::Allocate
 - ATLBASE/ATL::CComAllocator::Free
 - ATLBASE/ATL::CComAllocator::Reallocate
-dev_langs: C++
-helpviewer_keywords: CComAllocator class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CComAllocator class
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 370a52e87bcbb4849883ea03016cc462030ad028
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

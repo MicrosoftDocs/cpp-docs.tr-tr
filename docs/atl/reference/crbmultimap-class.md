@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - ATLCOLL/ATL::CRBMultiMap::GetNextWithKey
 - ATLCOLL/ATL::CRBMultiMap::Insert
 - ATLCOLL/ATL::CRBMultiMap::RemoveKey
-dev_langs: C++
-helpviewer_keywords: CRBMultiMap class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 79ef7fdd5799b01ec115befcd50bbe4625d48bea
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

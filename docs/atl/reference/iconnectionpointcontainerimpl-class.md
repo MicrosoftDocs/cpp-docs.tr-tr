@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,17 +13,19 @@ f1_keywords:
 - ATLCOM/ATL::IConnectionPointContainerImpl
 - ATLCOM/ATL::IConnectionPointContainerImpl::EnumConnectionPoints
 - ATLCOM/ATL::IConnectionPointContainerImpl::FindConnectionPoint
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - connectable objects
 - connection points [C++], container
 - IConnectionPointContainerImpl class
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9f5e3a6ee6790c4fa0e93fe312d6a6b840b754a4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

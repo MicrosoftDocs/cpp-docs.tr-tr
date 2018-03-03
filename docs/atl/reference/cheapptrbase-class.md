@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - ATLCORE/ATL::CHeapPtrBase::Free
 - ATLCORE/ATL::CHeapPtrBase::ReallocateBytes
 - ATLCORE/ATL::CHeapPtrBase::m_pData
-dev_langs: C++
-helpviewer_keywords: CHeapPtrBase class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CHeapPtrBase class
 ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 59520211ae577c4ca4358874ef1d8ff71de59921
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
