@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - build events [C++], troubleshooting
 - builds [C++], build events
@@ -17,11 +19,12 @@ helpviewer_keywords:
 - builds [C++], troubleshooting
 - custom build steps [C++], troubleshooting
 ms.assetid: e4ceb177-fbee-4ed3-a7d7-80f0d78c1d07
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5fa3b2d3910a71d189f5177e13fbd91930e15ee8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

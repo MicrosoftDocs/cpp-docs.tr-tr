@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: U1033
-dev_langs: C++
-helpviewer_keywords: U1033
+f1_keywords:
+- U1033
+dev_langs:
+- C++
+helpviewer_keywords:
+- U1033
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 94f2626e1ce318d83d306595e386f880c62dec3e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

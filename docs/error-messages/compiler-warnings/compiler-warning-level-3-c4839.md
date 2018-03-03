@@ -1,16 +1,21 @@
 ---
 title: "Derleyici Uyarısı (Düzey 3) C4839 | Microsoft Docs"
 ms.date: 10/25/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
-f1_keywords: C4839
-dev_langs: C++
-helpviewer_keywords: C4839
+f1_keywords:
+- C4839
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4839
 ms.assetid: f4f99066-9258-4330-81a8-f4a75a1d95ee
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: aee1e564ffd72b9b08d883c94311c2bca72b5aef
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

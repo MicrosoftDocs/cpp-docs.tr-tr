@@ -1,17 +1,22 @@
 ---
 title: "Bağlayıcı araçları hatası LNK1211 | Microsoft Docs"
 ms.date: 12/05/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: LNK1211
-dev_langs: C++
-helpviewer_keywords: LNK1211
+f1_keywords:
+- LNK1211
+dev_langs:
+- C++
+helpviewer_keywords:
+- LNK1211
 ms.assetid: 607400eb-4180-4892-817f-eedfa628af61
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 51150fb2a57f48f04cca97e5f16fe1a28ead2c50
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

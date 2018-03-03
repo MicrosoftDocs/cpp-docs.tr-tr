@@ -6,15 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4838
-dev_langs: C++
-helpviewer_keywords: C4838
+f1_keywords:
+- C4838
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4838
 ms.assetid: fea07924-5feb-4ed4-99b5-1a8c41d28db6
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 76002ebf0a6ac6e610b1fcd10d02fab49287495b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

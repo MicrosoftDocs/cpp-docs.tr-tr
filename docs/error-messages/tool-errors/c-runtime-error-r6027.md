@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: R6027
-dev_langs: C++
-helpviewer_keywords: R6027
+f1_keywords:
+- R6027
+dev_langs:
+- C++
+helpviewer_keywords:
+- R6027
 ms.assetid: c06a62b3-08d9-4bf5-bcad-8340ec552f69
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 080b5cdf2e68889e7d11fe14f20524f9cced03c3
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

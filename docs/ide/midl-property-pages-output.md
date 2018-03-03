@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,14 +16,17 @@ f1_keywords:
 - VC.Project.VCMidlTool.OutputDirectory
 - VC.Project.VCMidlTool.DLLDataFileName
 - VC.Project.VCMidlTool.TypeLibraryName
-dev_langs: C++
-helpviewer_keywords: MIDL, property pages
+dev_langs:
+- C++
+helpviewer_keywords:
+- MIDL, property pages
 ms.assetid: b850b21b-ed38-46dd-a712-807e8eabd9aa
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a20bec69eac2ede5b1b3ae3b6ad60998c637609d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.codewiz.virtualfunc.override
-dev_langs: C++
+f1_keywords:
+- vc.codewiz.virtualfunc.override
+dev_langs:
+- C++
 helpviewer_keywords:
 - virtual functions, overriding
 - base classes, overriding virtual functions defined in
 - Properties window, overriding virtual functions in
 ms.assetid: 2d8c76f2-7a6b-4c9c-8de5-4282ce7755b6
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 98e77579d511f4c78f0f7835c0b3c1dcea632734
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

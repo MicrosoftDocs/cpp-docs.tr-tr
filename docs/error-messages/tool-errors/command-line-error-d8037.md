@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: D8037
-dev_langs: C++
-helpviewer_keywords: D8037
+f1_keywords:
+- D8037
+dev_langs:
+- C++
+helpviewer_keywords:
+- D8037
 ms.assetid: acddaaa0-bd84-426f-a37b-8f680b379c9d
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6cc19633528cddfdd18f8cb8bb17b150432462c4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

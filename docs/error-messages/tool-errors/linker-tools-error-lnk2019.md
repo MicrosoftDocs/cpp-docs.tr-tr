@@ -2,11 +2,14 @@
 title: "Bağlayıcı araçları hatası LNK2019 | Microsoft Docs"
 ms.custom: 
 ms.date: 12/15/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: LNK2019
-dev_langs: C++
+f1_keywords:
+- LNK2019
+dev_langs:
+- C++
 helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
@@ -14,7 +17,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 20f6fdad0d26d04c6e8022f7b29dbdd7f13ac874
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

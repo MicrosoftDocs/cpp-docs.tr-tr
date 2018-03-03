@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4727
-dev_langs: C++
-helpviewer_keywords: C4727
+f1_keywords:
+- C4727
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4727
 ms.assetid: 991b0087-3a50-40f5-9cdb-cdc367cd472c
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 813c2ab18cc81c4477ae094e6c2aa771e3135b7a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

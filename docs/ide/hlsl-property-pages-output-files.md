@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,13 +14,15 @@ f1_keywords:
 - VC.Project.FXCompilerTool.HeaderFileOutput
 - VC.Project.FXCompilerTool.VariableName
 - VC.Project.FXCompilerTool.AssemblerOutputFile
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: c5ba1e72-30de-43eb-a15a-5b0ae58e55c2
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 04f6ad8889c9a713b3b64284b329c21d5a2cd49e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

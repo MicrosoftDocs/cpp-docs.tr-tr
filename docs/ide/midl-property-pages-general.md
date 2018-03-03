@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,14 +19,17 @@ f1_keywords:
 - VC.Project.VCMidlTool.SuppressStartupBanner
 - VC.Project.VCMidlTool.TargetEnvironment
 - VC.Project.VCMidlTool.OVERWRITEStandardIncludePath
-dev_langs: C++
-helpviewer_keywords: MIDL, property pages
+dev_langs:
+- C++
+helpviewer_keywords:
+- MIDL, property pages
 ms.assetid: 0692484c-a7e6-4270-8df7-981589368399
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 58b88ec67a265cecac0f5ea2d9facd2170d5da01
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

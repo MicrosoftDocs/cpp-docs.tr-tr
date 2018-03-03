@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - VC.Project.VCNMakeTool.CleanCommandLine
 - VC.Project.VCNMakeTool.Output
 - VC.Project.VCNMakeTool.BuildCommandLine
-dev_langs: C++
-helpviewer_keywords: NMake property page
+dev_langs:
+- C++
+helpviewer_keywords:
+- NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7cc9f6dc7c5fec4a184ed189cfaae230df3f1e9e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

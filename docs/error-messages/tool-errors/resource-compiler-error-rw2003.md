@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: RW2003
-dev_langs: C++
-helpviewer_keywords: RW2003
+f1_keywords:
+- RW2003
+dev_langs:
+- C++
+helpviewer_keywords:
+- RW2003
 ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9f388ca21d95e7d675a6b9890a7368765b5c0d7e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

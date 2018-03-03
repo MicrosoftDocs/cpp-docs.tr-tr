@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4383
-dev_langs: C++
-helpviewer_keywords: C4383
+f1_keywords:
+- C4383
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4383
 ms.assetid: 96c0e52d-874e-4b57-a154-0e49b6a00fae
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1a7c478783c7f908125de7b97a1d21a9f1ece029
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

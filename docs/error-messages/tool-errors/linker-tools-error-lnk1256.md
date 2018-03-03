@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
 f1_keywords:
 - xml
 - LNK1256
-dev_langs: C++
-helpviewer_keywords: LNK1256
+dev_langs:
+- C++
+helpviewer_keywords:
+- LNK1256
 ms.assetid: 55b64b2b-a56b-436c-a55e-ec9c6dcb050e
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bbbb14e4f4fdef63b58bdef5ecafcfe0b045f412
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

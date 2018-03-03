@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.appwiz.makefile.overview
-dev_langs: C++
+f1_keywords:
+- vc.appwiz.makefile.overview
+dev_langs:
+- C++
 helpviewer_keywords:
 - Makefile projects, Makefile Project Wizard
 - MakeFile Project Wizard [Visual Studio]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 33e9245654f0ec2e9af65258eb5be7b4230ad6fb
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

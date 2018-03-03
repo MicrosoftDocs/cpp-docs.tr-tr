@@ -1,16 +1,21 @@
 ---
 title: "Derleyici Uyarısı (düzey 1) C4462 | Microsoft Docs"
 ms.date: 10/25/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
-f1_keywords: C4462
-dev_langs: C++
-helpviewer_keywords: C4462
+f1_keywords:
+- C4462
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 95fef51c6b96146842413cd52ab203b747247398
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

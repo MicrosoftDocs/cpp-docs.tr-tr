@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C3834
-dev_langs: C++
-helpviewer_keywords: C3834
+f1_keywords:
+- C3834
+dev_langs:
+- C++
+helpviewer_keywords:
+- C3834
 ms.assetid: 059e0dc4-300b-4e74-b6c2-41a57831fe2a
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e586de68a14044ac2907ebbd086bb7469e53a7d1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

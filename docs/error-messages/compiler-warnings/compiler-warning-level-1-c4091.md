@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4091
-dev_langs: C++
-helpviewer_keywords: C4091
+f1_keywords:
+- C4091
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9be40d65b657a7ac34fb105a2b1b16c702e4922c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

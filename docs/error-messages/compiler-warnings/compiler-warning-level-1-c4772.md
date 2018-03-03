@@ -1,16 +1,21 @@
 ---
 title: "Derleyici Uyarısı (düzey 1) C4772 | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
-f1_keywords: C4772
-dev_langs: C++
-helpviewer_keywords: C4772
+f1_keywords:
+- C4772
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 631cd4f872c7b8912b791417c04f6c6e9e056bdd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

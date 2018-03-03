@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,14 +13,17 @@ f1_keywords:
 - VC.Project.VCWebServiceProxyGeneratorTool.SuppressStartupBanner
 - VC.Project.VCWebServiceProxyGeneratorTool.Output
 - VC.Project.VCWebServiceProxyGeneratorTool.GeneratedProxyLanguage
-dev_langs: C++
-helpviewer_keywords: Web references, properties
+dev_langs:
+- C++
+helpviewer_keywords:
+- Web references, properties
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bc1692805c3e1bced7cb7662f0da8b7a1fea092c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -1,7 +1,8 @@
 ---
 title: "Derleyici hataları C3500 C3999 aracılığıyla | Microsoft Docs"
 ms.date: 11/17/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
 f1_keywords:
 - C3502
@@ -247,12 +248,14 @@ f1_keywords:
 - C3997
 - C3998
 - C3999
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: bd6f23ad-b300-4e07-8e35-9661cab1585f
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7a34b3f3fb635cc666b0e9cca079373bb7c5636e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

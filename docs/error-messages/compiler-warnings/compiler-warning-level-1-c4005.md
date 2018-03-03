@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4005
-dev_langs: C++
-helpviewer_keywords: C4005
+f1_keywords:
+- C4005
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4005
 ms.assetid: 7f2dc79a-9fcb-4d5b-be61-120d9cb487ad
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cf0c5777cecf89bb0723b30c87dc4c856de0a016
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

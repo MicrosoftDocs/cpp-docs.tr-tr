@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: LNK1188
-dev_langs: C++
-helpviewer_keywords: LNK1188
+f1_keywords:
+- LNK1188
+dev_langs:
+- C++
+helpviewer_keywords:
+- LNK1188
 ms.assetid: 4af574b0-5b41-4580-9a37-52a634add995
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 81d2988742eb9e8cd6aef134510ac8272d3dd27c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C4210
-dev_langs: C++
-helpviewer_keywords: C4210
+f1_keywords:
+- C4210
+dev_langs:
+- C++
+helpviewer_keywords:
+- C4210
 ms.assetid: f8600adf-dfe2-4022-a37a-3d4997641dfd
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f4c75203bdd821612a7cd289e52702e606c41344
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

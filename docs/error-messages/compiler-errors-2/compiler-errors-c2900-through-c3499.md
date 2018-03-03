@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
 f1_keywords:
@@ -77,13 +78,15 @@ helpviewer_keywords:
 - C2987
 - C2997
 - C2999
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: e3440738-e11b-4878-9ae3-6bc6c53ba461
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9b5e2711b8517a03792cdef312e8cd8ee3b4fe72
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,13 +15,15 @@ f1_keywords:
 - VC.Project.VCManifestTool.UseFAT32Workaround
 - VC.Project.VCManifestTool.VerboseOutput
 - VC.Project.VCManifestTool.AssemblyIdentity
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0e5e56c823a7a30850e24e393a545f0df6a6637a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

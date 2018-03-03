@@ -1,7 +1,8 @@
 ---
 title: "Derleyici uyarıları C4600 C4799 aracılığıyla | Microsoft Docs"
 ms.date: 11/17/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.topic: error-reference
 f1_keywords:
 - C4602
@@ -62,12 +63,14 @@ f1_keywords:
 - C4770
 - C4792
 - C4794
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 22bd4392-f3be-445c-9f23-6126aebac901
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f5d7121e01b651e87630fe18bec21e3d999ed0e7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
