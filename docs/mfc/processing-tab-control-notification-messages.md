@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - notifications [MFC], tab controls
 - CTabCtrl class [MFC], processing notifications
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - processing notifications [MFC]
 - tab controls [MFC], processing notifications
 ms.assetid: 758ccb7a-9e73-48f8-9073-23f7cb09918c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 840ff6fc5dd47a2059e62608b5a5d6f231f8f17c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

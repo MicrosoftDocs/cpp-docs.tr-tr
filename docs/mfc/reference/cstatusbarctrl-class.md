@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -29,7 +30,8 @@ f1_keywords:
 - AFXCMN/CStatusBarCtrl::SetSimple
 - AFXCMN/CStatusBarCtrl::SetText
 - AFXCMN/CStatusBarCtrl::SetTipText
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CStatusBarCtrl [MFC], CStatusBarCtrl
 - CStatusBarCtrl [MFC], Create
@@ -51,11 +53,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3ee095257ddf3fd322a7e42e3f6fff6ac7cec76a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

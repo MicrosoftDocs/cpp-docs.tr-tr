@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXCMN/CIPAddressCtrl::SetAddress
 - AFXCMN/CIPAddressCtrl::SetFieldFocus
 - AFXCMN/CIPAddressCtrl::SetFieldRange
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CIPAddressCtrl [MFC], CIPAddressCtrl
 - CIPAddressCtrl [MFC], ClearAddress
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 67c775f314cc70da1b662ca9b9c5f0a2e68eb2bc
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

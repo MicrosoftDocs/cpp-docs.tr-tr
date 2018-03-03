@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFX/CFileException::m_cause
 - AFX/CFileException::m_lOsError
 - AFX/CFileException::m_strFileName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFileException [MFC], CFileException
 - CFileException [MFC], ErrnoToException
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a46741e2f2896fbed16c052ff9fc340d9394a2e6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

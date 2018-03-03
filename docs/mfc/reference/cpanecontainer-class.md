@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -67,7 +68,8 @@ f1_keywords:
 - AFXPANECONTAINER/CPaneContainer::SetUpByID
 - AFXPANECONTAINER/CPaneContainer::StoreRecentDockSiteInfo
 - AFXPANECONTAINER/CPaneContainer::StretchPaneContainer
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPaneContainer [MFC], CPaneContainer
 - CPaneContainer [MFC], AddPane
@@ -127,11 +129,12 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 27193084f2232c17885d3a6ee54ea901764f3d93
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

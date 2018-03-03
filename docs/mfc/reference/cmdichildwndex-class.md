@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -63,7 +64,8 @@ f1_keywords:
 - AFXMDICHILDWNDEX/CMDIChildWndEx::ShowPane
 - AFXMDICHILDWNDEX/CMDIChildWndEx::UnregisterTaskbarTab
 - AFXMDICHILDWNDEX/CMDIChildWndEx::UpdateTaskbarTabIcon
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMDIChildWndEx [MFC], ActivateTopLevelFrame
 - CMDIChildWndEx [MFC], AddPane
@@ -119,11 +121,12 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 21b302c14d2b4aa17b2818e489a1400230332521
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawMenuImage
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::OnDrawOnList
 - AFXRIBBONCHECKBOX/CMFCRibbonCheckBox::SetACCData
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], CMFCRibbonCheckBox
 - CMFCRibbonCheckBox [MFC], GetCompactSize
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CMFCRibbonCheckBox [MFC], OnDrawOnList
 - CMFCRibbonCheckBox [MFC], SetACCData
 ms.assetid: 3a6c3891-c8d1-4af0-b954-7b9ab048782a
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bc46d934c99e24b63ef314ef1f63402893c6bb18
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

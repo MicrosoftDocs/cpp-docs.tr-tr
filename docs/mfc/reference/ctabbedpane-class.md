@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXTABBEDPANE/CTabbedPane::SetTabAutoColors
 - AFXTABBEDPANE/CTabbedPane::m_bTabsAlwaysTop
 - AFXTABBEDPANE/CTabbedPane::m_pTabWndRTC
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CTabbedPane [MFC], DetachPane
 - CTabbedPane [MFC], EnableTabAutoColor
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c18d8f5aed3a5adb66575dd05533aa19a1ba79b1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

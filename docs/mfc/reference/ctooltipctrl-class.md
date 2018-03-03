@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXCMN/CToolTipCtrl::SetWindowTheme
 - AFXCMN/CToolTipCtrl::Update
 - AFXCMN/CToolTipCtrl::UpdateTipText
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CToolTipCtrl [MFC], CToolTipCtrl
 - CToolTipCtrl [MFC], Activate
@@ -79,11 +81,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f67a9ccb25216c6f7546d9d906f91cfe5102bc4a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

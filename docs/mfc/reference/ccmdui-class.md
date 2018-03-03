@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXWIN/CCmdUI::m_pMenu
 - AFXWIN/CCmdUI::m_pOther
 - AFXWIN/CCmdUI::m_pSubMenu
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CCmdUI [MFC], ContinueRouting
 - CCmdUI [MFC], Enable
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CCmdUI [MFC], m_pOther
 - CCmdUI [MFC], m_pSubMenu
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 32413fe7939b5e5d5d3d41bf32a923dd308f0395
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

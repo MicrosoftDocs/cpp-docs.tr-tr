@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::RemoveAll
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetImages
 - AFXRIBBONBUTTONSGROUP/CMFCRibbonButtonsGroup::SetParentCategory
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], CMFCRibbonButtonsGroup
 - CMFCRibbonButtonsGroup [MFC], AddButton
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], SetImages
 - CMFCRibbonButtonsGroup [MFC], SetParentCategory
 ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 45851ea66e324f57cb7df3daaa99eb8a1b8b9311
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

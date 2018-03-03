@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - AFXCTL/CDataPathProperty::ResetData
 - AFXCTL/CDataPathProperty::SetControl
 - AFXCTL/CDataPathProperty::SetPath
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDataPathProperty [MFC], CDataPathProperty
 - CDataPathProperty [MFC], GetControl
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetControl
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e4f258f5872a68931a40d21f7079e4089678baac
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

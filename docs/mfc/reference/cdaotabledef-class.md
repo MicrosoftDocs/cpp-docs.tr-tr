@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXDAO/CDaoTableDef::SetValidationText
 - AFXDAO/CDaoTableDef::m_pDAOTableDef
 - AFXDAO/CDaoTableDef::m_pDatabase
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDaoTableDef [MFC], CDaoTableDef
 - CDaoTableDef [MFC], Append
@@ -79,11 +81,12 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7b140d61689672f9d27b8078ad7d2eab732c1582
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -58,7 +59,8 @@ f1_keywords:
 - AFXWIN/CListBox::SetTabStops
 - AFXWIN/CListBox::SetTopIndex
 - AFXWIN/CListBox::VKeyToItem
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CListBox [MFC], CListBox
 - CListBox [MFC], AddString
@@ -109,11 +111,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ecf574deed95fca6a96e8e5a5c1d1e0bebed1854
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

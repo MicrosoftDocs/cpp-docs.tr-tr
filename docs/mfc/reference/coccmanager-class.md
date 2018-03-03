@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXOCC/COccManager::PreCreateDialog
 - AFXOCC/COccManager::SetDefaultButton
 - AFXOCC/COccManager::SplitDialogTemplate
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COccManager [MFC], CreateContainer
 - COccManager [MFC], CreateDlgControls
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - COccManager [MFC], SetDefaultButton
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ffa16b7a210bc53f178e3ec437aefb6cede766a6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

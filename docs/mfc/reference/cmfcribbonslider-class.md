@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetRange
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomButtons
 - AFXRIBBONSLIDER/CMFCRibbonSlider::SetZoomIncrement
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonSlider [MFC], CMFCRibbonSlider
 - CMFCRibbonSlider [MFC], GetPos
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomButtons
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e485afac346be1f21a0b3088367be5b9bf02e2ab
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

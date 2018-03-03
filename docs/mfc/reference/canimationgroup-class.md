@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -30,7 +31,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_pStoryboard
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_nGroupID
 - AFXANIMATIONCONTROLLER/CAnimationGroup::m_pParentController
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimationGroup [MFC], CAnimationGroup
 - CAnimationGroup [MFC], Animate
@@ -53,11 +55,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2d047940ac1ef3103168aa40b53c726ce0767b52
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

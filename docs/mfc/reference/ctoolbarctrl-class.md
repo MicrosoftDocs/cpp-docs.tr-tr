@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -98,7 +99,8 @@ f1_keywords:
 - AFXCMN/CToolBarCtrl::SetStyle
 - AFXCMN/CToolBarCtrl::SetToolTips
 - AFXCMN/CToolBarCtrl::SetWindowTheme
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CToolBarCtrl [MFC], CToolBarCtrl
 - CToolBarCtrl [MFC], AddBitmap
@@ -189,11 +191,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 054e3de4daa7d5bd25583286e958c0c9b07c4090
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

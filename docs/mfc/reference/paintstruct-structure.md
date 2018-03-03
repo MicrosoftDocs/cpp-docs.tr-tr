@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: PAINTSTRUCT
-dev_langs: C++
-helpviewer_keywords: PAINTSTRUCT structure [MFC]
+f1_keywords:
+- PAINTSTRUCT
+dev_langs:
+- C++
+helpviewer_keywords:
+- PAINTSTRUCT structure [MFC]
 ms.assetid: 81ce4993-3e89-43b2-8c98-7946f1314d24
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 92583bba3dca60caa2895966a87571dc60805475
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

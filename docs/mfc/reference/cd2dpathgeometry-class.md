@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DPathGeometry::Open
 - AFXRENDERTARGET/CD2DPathGeometry::Stream
 - AFXRENDERTARGET/CD2DPathGeometry::m_pPathGeometry
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DPathGeometry [MFC], CD2DPathGeometry
 - CD2DPathGeometry [MFC], Attach
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CD2DPathGeometry [MFC], Stream
 - CD2DPathGeometry [MFC], m_pPathGeometry
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9142b268c5f09a88883d048c35287966d9ef8aab
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

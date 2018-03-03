@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CKeyFrame::m_offset
 - AFXANIMATIONCONTROLLER/CKeyFrame::m_pExistingKeyFrame
 - AFXANIMATIONCONTROLLER/CKeyFrame::m_pTransition
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CKeyFrame [MFC], CKeyFrame
 - CKeyFrame [MFC], AddToStoryboard
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CKeyFrame [MFC], m_pExistingKeyFrame
 - CKeyFrame [MFC], m_pTransition
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 03cfc0766dd15a2762612cf5f41e72ffb1c1885f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

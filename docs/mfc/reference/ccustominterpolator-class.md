@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,7 +26,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_finalValue
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialValue
 - AFXANIMATIONCONTROLLER/CCustomInterpolator::m_initialVelocity
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CCustomInterpolator [MFC], CCustomInterpolator
 - CCustomInterpolator [MFC], GetDependencies
@@ -43,11 +45,12 @@ helpviewer_keywords:
 - CCustomInterpolator [MFC], m_initialValue
 - CCustomInterpolator [MFC], m_initialVelocity
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 26763a16c4de59f33622ea904ea8aa132fe0d5f2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

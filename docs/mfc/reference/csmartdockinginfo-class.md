@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_sizeTotal
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerBmpResID
 - AFXDOCKINGMANAGER/CSmartDockingInfo::m_uiMarkerLightBmpResID
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSmartDockingInfo [MFC], CopyTo
 - CSmartDockingInfo [MFC], m_bUseThemeColorInShading
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2954e3fc6a0a8ee7265c5b2baa29d391aa52329c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

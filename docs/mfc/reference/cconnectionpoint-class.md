@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXDISP/CConnectionPoint::GetStartPosition
 - AFXDISP/CConnectionPoint::OnAdvise
 - AFXDISP/CConnectionPoint::QuerySinkInterface
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CConnectionPoint [MFC], CConnectionPoint
 - CConnectionPoint [MFC], GetConnections
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f6a9e9fafc2bbee9959a939815a92c9bc63a650f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

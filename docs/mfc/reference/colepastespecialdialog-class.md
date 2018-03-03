@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXODLGS/COlePasteSpecialDialog::GetPasteIndex
 - AFXODLGS/COlePasteSpecialDialog::GetSelectionType
 - AFXODLGS/COlePasteSpecialDialog::m_ps
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], COlePasteSpecialDialog
 - COlePasteSpecialDialog [MFC], AddFormat
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], GetSelectionType
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8680842f0aeeebf98eabc0f278089781290ad902
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,7 +27,8 @@ f1_keywords:
 - AFXGLOBALUTILS/CGlobalUtils::SetNewParent
 - AFXGLOBALUTILS/CGlobalUtils::StringFromCy
 - AFXGLOBALUTILS/CGlobalUtils::StringFromDecimal
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CGlobalUtils [MFC], AdjustRectToWorkArea
 - CGlobalUtils [MFC], CalcExpectedDockedRect
@@ -45,11 +47,12 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 26d8dd803daf1d3f56239f1f4cceed00650bb1a7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

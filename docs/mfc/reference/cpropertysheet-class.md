@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -33,7 +34,8 @@ f1_keywords:
 - AFXDLGS/CPropertySheet::SetWizardButtons
 - AFXDLGS/CPropertySheet::SetWizardMode
 - AFXDLGS/CPropertySheet::m_psh
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPropertySheet [MFC], CPropertySheet
 - CPropertySheet [MFC], AddPage
@@ -59,11 +61,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 52c5d167390826578c4e3a2380c885bf1d507d19
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

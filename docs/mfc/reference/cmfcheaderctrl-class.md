@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawItem
 - AFXHEADERCTRL/CMFCHeaderCtrl::OnDrawSortArrow
 - AFXHEADERCTRL/CMFCHeaderCtrl::OnFillBackground
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCHeaderCtrl [MFC], CMFCHeaderCtrl
 - CMFCHeaderCtrl [MFC], EnableMultipleSort
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - CMFCHeaderCtrl [MFC], OnDrawSortArrow
 - CMFCHeaderCtrl [MFC], OnFillBackground
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d3b8b95b161704d5d5b2ca56e22cfe818e4785d3
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

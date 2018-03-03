@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXADV/CDockState::LoadState
 - AFXADV/CDockState::SaveState
 - AFXADV/CDockState::m_arrBarInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDockState [MFC], Clear
 - CDockState [MFC], GetVersion
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CDockState [MFC], SaveState
 - CDockState [MFC], m_arrBarInfo
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6669f5a2b54c376e545b1ba6b9227d6137726256
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

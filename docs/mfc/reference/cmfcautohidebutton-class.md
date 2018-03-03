@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -32,7 +33,8 @@ f1_keywords:
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowAttachedWindow
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::ShowButton
 - AFXAUTOHIDEBUTTON/CMFCAutoHideButton::UnSetAutoHideMode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCAutoHideButton [MFC], BringToTop
 - CMFCAutoHideButton [MFC], Create
@@ -57,11 +59,12 @@ helpviewer_keywords:
 - CMFCAutoHideButton [MFC], ShowButton
 - CMFCAutoHideButton [MFC], UnSetAutoHideMode
 ms.assetid: c80e6b8b-25ca-4d12-9d27-457731028ab0
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 80f40b7ab03e79d38d36a1b25a4cd973a5077468
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

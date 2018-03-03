@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -73,7 +74,8 @@ f1_keywords:
 - AFXPANE/CPane::OnBeforeFloat
 - AFXPANE/CPane::m_bHandleMinSize
 - AFXPANE/CPane::m_recentDockInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPane [MFC], AdjustSizeImmediate
 - CPane [MFC], AllocElements
@@ -140,11 +142,12 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 56d3d30907a5001b95cdd55bd17fc86eaf5c078f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,7 +27,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGeometrySink::SetFillMode
 - AFXRENDERTARGET/CD2DGeometrySink::SetSegmentFlags
 - AFXRENDERTARGET/CD2DGeometrySink::m_pSink
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DGeometrySink [MFC], CD2DGeometrySink
 - CD2DGeometrySink [MFC], AddArc
@@ -45,11 +47,12 @@ helpviewer_keywords:
 - CD2DGeometrySink [MFC], SetSegmentFlags
 - CD2DGeometrySink [MFC], m_pSink
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 89286aaccd2c59efb2bac14978a2d8838af7a4e5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

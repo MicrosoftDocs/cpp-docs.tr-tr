@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,7 +26,8 @@ f1_keywords:
 - AFXOLE/COleDataSource::OnRenderGlobalData
 - AFXOLE/COleDataSource::OnSetData
 - AFXOLE/COleDataSource::SetClipboard
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleDataSource [MFC], COleDataSource
 - COleDataSource [MFC], CacheData
@@ -43,11 +45,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2ce9abdccba549e0b0fd3c55bfb7fbaee6a11e27
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

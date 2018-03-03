@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: NCCALCSIZE_PARAMS
-dev_langs: C++
-helpviewer_keywords: NCCALCSIZE_PARAMS structure [MFC]
+f1_keywords:
+- NCCALCSIZE_PARAMS
+dev_langs:
+- C++
+helpviewer_keywords:
+- NCCALCSIZE_PARAMS structure [MFC]
 ms.assetid: 3424cd9f-806a-4089-82fb-414187589edf
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 76a0a16ff0a2c90c6dd6060badc2c79dde1af231
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

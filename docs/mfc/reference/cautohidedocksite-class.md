@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::SetOffsetRight
 - AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::UnSetAutoHideMode
 - AFXAUTOHIDEDOCKSITE/CAutoHideDockSite::m_nExtraSpace
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAutoHideDockSite [MFC], CanAcceptPane
 - CAutoHideDockSite [MFC], DockPane
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CAutoHideDockSite [MFC], UnSetAutoHideMode
 - CAutoHideDockSite [MFC], m_nExtraSpace
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e8cc4e9158ae9ff2ef6fd4d48483aa5a75dd9617
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

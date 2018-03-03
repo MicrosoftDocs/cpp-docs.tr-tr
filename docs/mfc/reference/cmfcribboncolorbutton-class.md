@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetDocumentColors
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::SetPalette
 - AFXRIBBONCOLORBUTTON/CMFCRibbonColorButton::UpdateColor
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], CMFCRibbonColorButton
 - CMFCRibbonColorButton [MFC], AddColorsGroup
@@ -47,11 +49,12 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b8da5a7a05f1765fea840c579c91ddd9b3ef672b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

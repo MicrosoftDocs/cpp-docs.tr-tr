@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXACCELERATORKEY/CMFCAcceleratorKey::CMFCAcceleratorKey
 - AFXACCELERATORKEY/CMFCAcceleratorKey::Format
 - AFXACCELERATORKEY/CMFCAcceleratorKey::SetAccelerator
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCAcceleratorKey [MFC], CMFCAcceleratorKey
 - CMFCAcceleratorKey [MFC], Format
 - CMFCAcceleratorKey [MFC], SetAccelerator
 ms.assetid: d140fbf7-23db-45ea-a63e-414a5ec7b3d5
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3303be9f37749436d140028cd5fa45cd4454c8c8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

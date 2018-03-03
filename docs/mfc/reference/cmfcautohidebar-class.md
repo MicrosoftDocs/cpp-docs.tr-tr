@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,7 +27,8 @@ f1_keywords:
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::UnSetAutoHideMode
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::UpdateVisibleState
 - AFXAUTOHIDEBAR/CMFCAutoHideBar::m_nShowAHWndDelay
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCAutoHideBar [MFC], CMFCAutoHideBar
 - CMFCAutoHideBar [MFC], AddAutoHideWindow
@@ -45,11 +47,12 @@ helpviewer_keywords:
 - CMFCAutoHideBar [MFC], UpdateVisibleState
 - CMFCAutoHideBar [MFC], m_nShowAHWndDelay
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3fdf8ae6346335b54e22170d4397ac95e8918470
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

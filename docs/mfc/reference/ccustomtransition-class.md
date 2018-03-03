@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CCustomTransition::m_initialValue
 - AFXANIMATIONCONTROLLER/CCustomTransition::m_initialVelocity
 - AFXANIMATIONCONTROLLER/CCustomTransition::m_pInterpolator
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CCustomTransition [MFC], CCustomTransition
 - CCustomTransition [MFC], Create
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CCustomTransition [MFC], m_initialVelocity
 - CCustomTransition [MFC], m_pInterpolator
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b94fd32bd00a484c5f8e3ba9e86efc5a9637e4e2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

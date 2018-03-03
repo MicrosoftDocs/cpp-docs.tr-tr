@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFX/CArchiveException::CArchiveException
 - AFX/CArchiveException::m_cause
 - AFX/CArchiveException::m_strFileName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CArchiveException [MFC], CArchiveException
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1c2ca798bf3cac50e00627fc3986072af7b2ff94
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

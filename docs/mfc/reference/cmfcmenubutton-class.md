@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXMENUBUTTON/CMFCMenuButton::m_bStayPressed
 - AFXMENUBUTTON/CMFCMenuButton::m_hMenu
 - AFXMENUBUTTON/CMFCMenuButton::m_nMenuResult
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCMenuButton [MFC], CMFCMenuButton
 - CMFCMenuButton [MFC], PreTranslateMessage
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fac8fe59fe5dbfb101ec0881dbf17925cf048caa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

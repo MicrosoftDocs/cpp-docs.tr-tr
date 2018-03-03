@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -59,7 +60,8 @@ f1_keywords:
 - AFXTABCTRL/CMFCTabCtrl::StopResize
 - AFXTABCTRL/CMFCTabCtrl::SynchronizeScrollBar
 - AFXTABCTRL/CMFCTabCtrl::m_bEnableActivate
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCTabCtrl [MFC], ActivateMDITab
 - CMFCTabCtrl [MFC], AllowDestroyEmptyTabbedPane
@@ -111,11 +113,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1aa415846d8f504ef907bf4e9a041b86062853cd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

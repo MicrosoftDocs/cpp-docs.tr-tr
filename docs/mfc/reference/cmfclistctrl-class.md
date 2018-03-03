@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXLISTCTRL/CMFCListCtrl::RemoveSortColumn
 - AFXLISTCTRL/CMFCListCtrl::SetSortColumn
 - AFXLISTCTRL/CMFCListCtrl::Sort
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCListCtrl [MFC], EnableMarkSortedColumn
 - CMFCListCtrl [MFC], EnableMultipleSort
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CMFCListCtrl [MFC], SetSortColumn
 - CMFCListCtrl [MFC], Sort
 ms.assetid: 50d16aee-138c-4f34-8690-cb75d544ef2e
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 770a1cec528355d6f7be7800ba1f77f2394bef79
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

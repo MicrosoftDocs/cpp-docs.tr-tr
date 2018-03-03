@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXRIBBONEDIT/CMFCRibbonEdit::SetEditText
 - AFXRIBBONEDIT/CMFCRibbonEdit::SetTextAlign
 - AFXRIBBONEDIT/CMFCRibbonEdit::SetWidth
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonEdit [MFC], CMFCRibbonEdit
 - CMFCRibbonEdit [MFC], CanBeStretched
@@ -80,11 +82,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 43a497b3eeec48c22d688f4974efcb3d2f511446
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

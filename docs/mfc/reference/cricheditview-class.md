@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -57,7 +58,8 @@ f1_keywords:
 - AFXRICH/CRichEditView::WrapChanged
 - AFXRICH/CRichEditView::m_nBulletIndent
 - AFXRICH/CRichEditView::m_nWordWrap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CRichEditView [MFC], CRichEditView
 - CRichEditView [MFC], AdjustDialogPosition
@@ -107,11 +109,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c9062e9cf781363b482c5ee77238d315044be7df
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

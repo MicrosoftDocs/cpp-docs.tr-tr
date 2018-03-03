@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -90,7 +91,8 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatFloat
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatLong
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridProperty::m_strFormatShort
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], CMFCPropertyGridProperty
 - CMFCPropertyGridProperty [MFC], AddOption
@@ -173,11 +175,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b60e2355636ca0cf30ed0a0141ec07f1312f760f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationPoint::GetAnimationVariableList
 - AFXANIMATIONCONTROLLER/CAnimationPoint::m_xValue
 - AFXANIMATIONCONTROLLER/CAnimationPoint::m_yValue
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimationPoint [MFC], CAnimationPoint
 - CAnimationPoint [MFC], AddTransition
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CAnimationPoint [MFC], m_xValue
 - CAnimationPoint [MFC], m_yValue
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8ab685c223c4a86c35ba0feb578d93f58844734b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

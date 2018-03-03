@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -77,7 +78,8 @@ f1_keywords:
 - AFXTOOLBARIMAGES/CMFCToolBarImages::UpdateImage
 - AFXTOOLBARIMAGES/CMFCToolBarImages::PreMultiplyAlpha
 - AFXTOOLBARIMAGES/CMFCToolBarImages::m_bDisableTrueColorAlpha
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolBarImages [MFC], CMFCToolBarImages
 - CMFCToolBarImages [MFC], AdaptColors
@@ -147,11 +149,12 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b557a56b1d525941c96b9a6a96fd367b64afcaf0
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

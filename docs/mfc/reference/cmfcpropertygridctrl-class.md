@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -82,7 +83,8 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnPropertyChanged
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::OnSelectCombo
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl::ValidateItemData
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], CMFCPropertyGridCtrl
 - CMFCPropertyGridCtrl [MFC], accSelect
@@ -157,11 +159,12 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a07b8049f01d10556bded754ec2aae55581b7cb2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

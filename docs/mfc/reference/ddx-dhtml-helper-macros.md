@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,7 +17,8 @@ f1_keywords:
 - AFXDHTML/DDX_DHtml_Img_Src
 - AFXDHTML/DDX_DHtml_Frame_Src
 - AFXDHTML/DDX_DHtml_IFrame_Src
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - macros [MFC], exchanging data with HMTL pages
 - DDX macros [MFC]
@@ -24,11 +26,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3d5a69e08d06a53dcb2f3a4be58618e9829e8c8a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

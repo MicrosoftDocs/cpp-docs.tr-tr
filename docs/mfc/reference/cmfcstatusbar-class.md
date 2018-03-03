@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXSTATUSBAR/CMFCStatusBar::SetPaneWidth
 - AFXSTATUSBAR/CMFCStatusBar::SetTipText
 - AFXSTATUSBAR/CMFCStatusBar::OnDrawPane
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCStatusBar [MFC], CalcFixedLayout
 - CMFCStatusBar [MFC], CommandToIndex
@@ -79,11 +81,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a235b88b676f7cf643a878e9a06408c87b20bcba
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

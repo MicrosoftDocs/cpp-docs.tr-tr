@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXINET/CHttpFile::QueryInfoStatusCode
 - AFXINET/CHttpFile::SendRequest
 - AFXINET/CHttpFile::SendRequestEx
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CHttpFile [MFC], CHttpFile
 - CHttpFile [MFC], AddRequestHeaders
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0e9af23bb74ba8e96f29a5b7cc4139d2932df8c1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

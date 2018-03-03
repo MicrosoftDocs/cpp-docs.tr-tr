@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CReversalTransition::CReversalTransition
 - AFXANIMATIONCONTROLLER/CReversalTransition::Create
 - AFXANIMATIONCONTROLLER/CReversalTransition::m_duration
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CReversalTransition [MFC], CReversalTransition
 - CReversalTransition [MFC], Create
 - CReversalTransition [MFC], m_duration
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fdce13f41e95cda592fec03fcedb01984fb34ab9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

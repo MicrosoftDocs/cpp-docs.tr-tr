@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXMT/CMultiLock::IsLocked
 - AFXMT/CMultiLock::Lock
 - AFXMT/CMultiLock::Unlock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMultiLock [MFC], CMultiLock
 - CMultiLock [MFC], IsLocked
 - CMultiLock [MFC], Lock
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dc3c391c624351b2835e1ec497d78bc191eb1fe7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

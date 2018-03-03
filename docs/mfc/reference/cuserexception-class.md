@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: CUserException
-dev_langs: C++
+f1_keywords:
+- CUserException
+dev_langs:
+- C++
 helpviewer_keywords:
 - operations [MFC], stopping
 - exceptions [MFC], throwing
@@ -17,11 +20,12 @@ helpviewer_keywords:
 - operations [MFC]
 - throwing exceptions [MFC], stopping user operations
 ms.assetid: 2156ba6d-2cce-415a-9000-6f02c26fcd7d
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4613f2ba06ffa697df219172b98a5cf193c1f3b2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

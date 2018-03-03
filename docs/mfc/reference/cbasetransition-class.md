@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -29,7 +30,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CBaseTransition::m_pStartKeyframe
 - AFXANIMATIONCONTROLLER/CBaseTransition::m_transition
 - AFXANIMATIONCONTROLLER/CBaseTransition::m_type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CBaseTransition [MFC], CBaseTransition
 - CBaseTransition [MFC], AddToStoryboard
@@ -51,11 +53,12 @@ helpviewer_keywords:
 - CBaseTransition [MFC], m_transition
 - CBaseTransition [MFC], m_type
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a925de05d301d213d67bb699af47d0453478ffc2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

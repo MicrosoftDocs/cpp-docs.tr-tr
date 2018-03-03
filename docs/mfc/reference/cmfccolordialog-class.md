@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXCOLORDIALOG/CMFCColorDialog::SetNewColor
 - AFXCOLORDIALOG/CMFCColorDialog::SetPageOne
 - AFXCOLORDIALOG/CMFCColorDialog::SetPageTwo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCColorDialog [MFC], CMFCColorDialog
 - CMFCColorDialog [MFC], GetColor
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bc8b547b72a7094bb6337e9e412f8548a48820f8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

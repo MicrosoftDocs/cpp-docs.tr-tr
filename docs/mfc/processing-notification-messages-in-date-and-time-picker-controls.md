@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - DTN_CLOSEUP
 - DTN_DATETIMECHANGE
 - DTN_DROPDOWN
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DTN_DROPDOWN notification [MFC]
 - DTN_DATETIMECHANGE notification [MFC]
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - DTN_FORMAT notification [MFC]
 - DateTimePicker control [MFC]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 836714f7a7ca17d759d0d71a7cbb30d63fdfaf95
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

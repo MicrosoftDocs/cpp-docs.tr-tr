@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -30,7 +31,8 @@ f1_keywords:
 - AFXWIN/CMFCFilterChunkValueImpl::SetSystemTimeValue
 - AFXWIN/CMFCFilterChunkValueImpl::SetTextValue
 - AFXWIN/CMFCFilterChunkValueImpl::SetChunk
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], CMFCFilterChunkValueImpl
 - CMFCFilterChunkValueImpl [MFC], Clear
@@ -53,11 +55,12 @@ helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], SetTextValue
 - CMFCFilterChunkValueImpl [MFC], SetChunk
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b2f98125e8e84ec0271bb3dff2eab01e0cfef368
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

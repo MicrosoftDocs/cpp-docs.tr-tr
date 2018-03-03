@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -30,7 +31,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGeometry::Tessellate
 - AFXRENDERTARGET/CD2DGeometry::Widen
 - AFXRENDERTARGET/CD2DGeometry::m_pGeometry
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DGeometry [MFC], CD2DGeometry
 - CD2DGeometry [MFC], Attach
@@ -53,11 +55,12 @@ helpviewer_keywords:
 - CD2DGeometry [MFC], Widen
 - CD2DGeometry [MFC], m_pGeometry
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3b9d8373bdf1cba1c57936dfb4d98c5401c80476
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

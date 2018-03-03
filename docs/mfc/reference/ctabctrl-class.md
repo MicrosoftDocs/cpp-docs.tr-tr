@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXCMN/CTabCtrl::SetMinTabWidth
 - AFXCMN/CTabCtrl::SetPadding
 - AFXCMN/CTabCtrl::SetToolTips
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CTabCtrl [MFC], CTabCtrl
 - CTabCtrl [MFC], AdjustRect
@@ -79,11 +81,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ed981a2f7345a59f3df479bcd82b9326fd84de12
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

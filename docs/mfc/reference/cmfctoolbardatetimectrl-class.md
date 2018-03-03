@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -31,7 +32,8 @@ f1_keywords:
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::OnUpdateToolTip
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTime
 - AFXTOOLBARDATETIMECTRL/CMFCToolBarDateTimeCtrl::SetTimeAll
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], CMFCToolBarDateTimeCtrl
 - CMFCToolBarDateTimeCtrl [MFC], CanBeStretched
@@ -55,11 +57,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e4f7bdc964da8df8d8a402ae70b38eec1dbbf436
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

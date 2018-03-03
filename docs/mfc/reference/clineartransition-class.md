@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CLinearTransition::Create
 - AFXANIMATIONCONTROLLER/CLinearTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CLinearTransition::m_duration
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CLinearTransition [MFC], CLinearTransition
 - CLinearTransition [MFC], Create
 - CLinearTransition [MFC], m_dblFinalValue
 - CLinearTransition [MFC], m_duration
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7379c49ef54a86d68e5b9f47a35437befc53d8d8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

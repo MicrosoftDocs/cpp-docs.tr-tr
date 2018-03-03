@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,7 +25,8 @@ f1_keywords:
 - ON_WM_NCRBUTTONDOWN
 - ON_WM_NCRBUTTONUP
 - ON_WM_NCMBUTTONDOWN
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_WM_NCCALCSIZE [MFC]
 - ON_WM_NCMBUTTONDOWN [MFC]
@@ -44,11 +46,12 @@ helpviewer_keywords:
 - ON_WM_NCMBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 4efd1cda-b642-4e8b-89e8-73255fa70d77
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 108afac12d47c009b423e62321eb31a78e2c09d5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXOLEDB/COleDBRecordView::COleDBRecordView
 - AFXOLEDB/COleDBRecordView::OnGetRowset
 - AFXOLEDB/COleDBRecordView::OnMove
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleDBRecordView [MFC], COleDBRecordView
 - COleDBRecordView [MFC], OnGetRowset
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dd827d729af5186d6872536cdaa3d8863d1f8d10
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

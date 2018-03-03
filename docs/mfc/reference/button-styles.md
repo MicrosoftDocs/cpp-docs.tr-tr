@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -34,7 +35,8 @@ f1_keywords:
 - BS_VCENTER
 - BS_ICON
 - BS_CENTER
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - BS_NOTIFY constant [MFC]
 - BS_RIGHTBUTTON constant [MFC]
@@ -65,11 +67,12 @@ helpviewer_keywords:
 - BS_TOP constant [MFC]
 - BS_TEXT constant
 ms.assetid: 41206f72-2b92-4250-ae32-31184046402f
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b9ed2dcffbcd45215008b3d0caa802a5384367b9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

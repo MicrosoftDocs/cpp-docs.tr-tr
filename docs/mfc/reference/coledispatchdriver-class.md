@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXDISP/COleDispatchDriver::SetProperty
 - AFXDISP/COleDispatchDriver::m_bAutoRelease
 - AFXDISP/COleDispatchDriver::m_lpDispatch
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleDispatchDriver [MFC], COleDispatchDriver
 - COleDispatchDriver [MFC], AttachDispatch
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 059ff922689eaf354d4b4ae9b89fb49ab8c5a885
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

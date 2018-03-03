@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXEXT/CMetaFileDC::CloseEnhanced
 - AFXEXT/CMetaFileDC::Create
 - AFXEXT/CMetaFileDC::CreateEnhanced
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMetaFileDC [MFC], CMetaFileDC
 - CMetaFileDC [MFC], Close
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8bb903bb38194be5b6a72f27ed683e965d7605b4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

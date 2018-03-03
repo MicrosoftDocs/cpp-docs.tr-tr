@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - AFXDLGS/CColorDialog::SetCurrentColor
 - AFXDLGS/CColorDialog::OnColorOK
 - AFXDLGS/CColorDialog::m_cc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CColorDialog [MFC], CColorDialog
 - CColorDialog [MFC], DoModal
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 38fbca875847e557981c09dc418c8e0ef65bed6e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

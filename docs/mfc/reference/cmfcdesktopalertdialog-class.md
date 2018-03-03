@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::GetDlgSize
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::HasFocus
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertDialog::PreTranslateMessage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], CreateFromParams
 - CMFCDesktopAlertDialog [MFC], GetDlgSize
 - CMFCDesktopAlertDialog [MFC], HasFocus
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5d7bd9ee29f1657b26d830679ae44d6e37580f91
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

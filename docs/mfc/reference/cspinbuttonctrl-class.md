@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -23,7 +24,8 @@ f1_keywords:
 - AFXCMN/CSpinButtonCtrl::SetBuddy
 - AFXCMN/CSpinButtonCtrl::SetPos
 - AFXCMN/CSpinButtonCtrl::SetRange
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSpinButtonCtrl [MFC], CSpinButtonCtrl
 - CSpinButtonCtrl [MFC], Create
@@ -39,11 +41,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1b00fc554c6ca677756cf6a9a9c7fa83cd9d255f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

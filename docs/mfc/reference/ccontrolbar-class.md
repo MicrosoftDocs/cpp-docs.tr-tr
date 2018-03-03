@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -29,7 +30,8 @@ f1_keywords:
 - AFXEXT/CControlBar::SetInPlaceOwner
 - AFXEXT/CControlBar::m_bAutoDelete
 - AFXEXT/CControlBar::m_pInPlaceOwner
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CControlBar [MFC], CControlBar
 - CControlBar [MFC], CalcDynamicLayout
@@ -51,11 +53,12 @@ helpviewer_keywords:
 - CControlBar [MFC], m_bAutoDelete
 - CControlBar [MFC], m_pInPlaceOwner
 ms.assetid: 4d668c55-9b42-4838-97ac-cf2b3000b82c
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a911ff6251a6b34162377610ae139cfa3a7cefaa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

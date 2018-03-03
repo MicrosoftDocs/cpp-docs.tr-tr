@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXBASETABCTRL/CMFCTabDropTarget::OnDragOver
 - AFXBASETABCTRL/CMFCTabDropTarget::OnDropEx
 - AFXBASETABCTRL/CMFCTabDropTarget::Register
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDragEnter
 - CMFCTabDropTarget [MFC], OnDragLeave
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8ff17f7312f5e04b6ae900e792523155705a3b4a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - CMultiPageDHtmlDialog
 - AFXDHTML/CMultiPageDHtmlDialog
 - AFXDHTML/CMultiPageDHtmlDialog::CMultiPageDHtmlDialog
-dev_langs: C++
-helpviewer_keywords: CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog
+dev_langs:
+- C++
+helpviewer_keywords:
+- CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 26f7b2e504738839b965dcdbc9a2a9835250fa8b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

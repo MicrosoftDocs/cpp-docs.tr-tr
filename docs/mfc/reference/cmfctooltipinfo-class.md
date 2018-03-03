@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -23,7 +24,8 @@ f1_keywords:
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_clrText
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nGradientAngle
 - AFXTOOLTIPCTRL/CMFCToolTipInfo::m_nMaxDescrWidth
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_bBalloonTooltip
 - CMFCToolTipInfo [MFC], m_bBoldLabel
@@ -39,11 +41,12 @@ helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_nGradientAngle
 - CMFCToolTipInfo [MFC], m_nMaxDescrWidth
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cda5da1b989ccc41a2f3136473dbe08200e091bd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

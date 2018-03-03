@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,14 +14,17 @@ f1_keywords:
 - AFXDB_/CLongBinary::CLongBinary
 - AFXDB_/CLongBinary::m_dwDataLength
 - AFXDB_/CLongBinary::m_hData
-dev_langs: C++
-helpviewer_keywords: CLongBinary class [MFC]
+dev_langs:
+- C++
+helpviewer_keywords:
+- CLongBinary class [MFC]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 49661932192a32550d50edfbbc52d7967cb78dcd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

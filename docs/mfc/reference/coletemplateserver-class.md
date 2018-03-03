@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXDISP/COleTemplateServer::ConnectTemplate
 - AFXDISP/COleTemplateServer::Unregister
 - AFXDISP/COleTemplateServer::UpdateRegistry
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleTemplateServer [MFC], COleTemplateServer
 - COleTemplateServer [MFC], ConnectTemplate
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d4bf5f696eeff3e4e26a9d77714c0d5a6f093aaa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

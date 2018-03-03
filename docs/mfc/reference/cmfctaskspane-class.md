@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -104,7 +105,8 @@ f1_keywords:
 - AFXTASKSPANE/CMFCTasksPane::ShowTaskByCmdId
 - AFXTASKSPANE/CMFCTasksPane::Update
 - AFXTASKSPANE/CMFCTasksPane::OnActivateTasksPanePage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCTasksPane [MFC], CMFCTasksPane
 - CMFCTasksPane [MFC], AddGroup
@@ -201,11 +203,12 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cbf35669ba71c900a67f98fb9ee303c723546f94
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

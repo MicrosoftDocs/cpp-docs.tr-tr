@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,7 +17,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DGradientBrush::m_colorInterpolationGamma
 - AFXRENDERTARGET/CD2DGradientBrush::m_extendMode
 - AFXRENDERTARGET/CD2DGradientBrush::m_pGradientStops
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DGradientBrush [MFC], CD2DGradientBrush
 - CD2DGradientBrush [MFC], Destroy
@@ -25,11 +27,12 @@ helpviewer_keywords:
 - CD2DGradientBrush [MFC], m_extendMode
 - CD2DGradientBrush [MFC], m_pGradientStops
 ms.assetid: 5bf133e6-16b7-4e3a-845d-0ce63fafe5ec
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c03d489b3059ddadf5783719f297371433a599e6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

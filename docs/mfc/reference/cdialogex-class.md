@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXDIALOGEX/CDialogEx::CDialogEx
 - AFXDIALOGEX/CDialogEx::SetBackgroundColor
 - AFXDIALOGEX/CDialogEx::SetBackgroundImage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDialogEx [MFC], CDialogEx
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c22e258c8306eab1f55fa94f875dde5b68256c71
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

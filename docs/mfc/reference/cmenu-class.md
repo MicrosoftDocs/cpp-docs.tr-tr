@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -49,7 +50,8 @@ f1_keywords:
 - AFXWIN/CMenu::TrackPopupMenu
 - AFXWIN/CMenu::TrackPopupMenuEx
 - AFXWIN/CMenu::m_hMenu
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMenu [MFC], CMenu
 - CMenu [MFC], AppendMenu
@@ -91,11 +93,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 104c965da403040308386e019d56684577318eee
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

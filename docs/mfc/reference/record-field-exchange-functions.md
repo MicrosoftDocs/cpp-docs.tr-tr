@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -38,7 +39,8 @@ f1_keywords:
 - AFXDB/DFX_Short
 - AFXDB/DFX_Single
 - AFXDB/DFX_Text
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DAO (Data Access Objects), record field exchange (DFX)
 - ODBC, bulk RFX data exchange functions [MFC]
@@ -52,11 +54,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 94491a2df64017ea381377af8518414e80130d6a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

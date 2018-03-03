@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnDrawBrowseButton
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::OnIllegalFileName
 - AFXEDITBROWSECTRL/CMFCEditBrowseCtrl::SetBrowseButtonImage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], EnableBrowseButton
 - CMFCEditBrowseCtrl [MFC], EnableFileBrowseButton
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: de1e30e6ca9f404199c6db43837f35d612a02b69
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

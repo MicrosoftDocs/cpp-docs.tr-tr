@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXWIN/CScrollView::ScrollToPosition
 - AFXWIN/CScrollView::SetScaleToFitSize
 - AFXWIN/CScrollView::SetScrollSizes
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CScrollView [MFC], CScrollView
 - CScrollView [MFC], CheckScrollBars
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fc0ef44371a4ade68e80f3169778b9e867c15b17
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

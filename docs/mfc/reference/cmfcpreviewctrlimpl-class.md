@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,7 +26,8 @@ f1_keywords:
 - AFXWIN/CMFCPreviewCtrlImpl::m_clrTextColor
 - AFXWIN/CMFCPreviewCtrlImpl::m_font
 - AFXWIN/CMFCPreviewCtrlImpl::m_pDocument
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], CMFCPreviewCtrlImpl
 - CMFCPreviewCtrlImpl [MFC], Create
@@ -43,11 +45,12 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8def8a8085bebdd09ce58cb6d9abd026fe713fe8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

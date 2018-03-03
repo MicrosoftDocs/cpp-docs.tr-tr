@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - AFXCMN/CNetAddressCtrl::GetAddress
 - AFXCMN/CNetAddressCtrl::GetAllowType
 - AFXCMN/CNetAddressCtrl::SetAllowType
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CNetAddressCtrl [MFC], CNetAddressCtrl
 - CNetAddressCtrl [MFC], Create
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9a433d723e15d910674c129b1e62ca82c1de4bb0
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

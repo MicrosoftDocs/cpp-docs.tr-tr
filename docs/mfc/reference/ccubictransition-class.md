@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalValue
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_dblFinalVelocity
 - AFXANIMATIONCONTROLLER/CCubicTransition::m_duration
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CCubicTransition [MFC], CCubicTransition
 - CCubicTransition [MFC], Create
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CCubicTransition [MFC], m_dblFinalVelocity
 - CCubicTransition [MFC], m_duration
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 806a8b92867d120a9ae099b96ecaf6fecfca4ea6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

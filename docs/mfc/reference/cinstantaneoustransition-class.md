@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::CInstantaneousTransition
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::Create
 - AFXANIMATIONCONTROLLER/CInstantaneousTransition::m_dblFinalValue
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CInstantaneousTransition [MFC], CInstantaneousTransition
 - CInstantaneousTransition [MFC], Create
 - CInstantaneousTransition [MFC], m_dblFinalValue
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4ffd06fe8c9b6f10c853cbc407d6558b95934b1b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

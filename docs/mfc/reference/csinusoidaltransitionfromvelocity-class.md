@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::Create
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_duration
 - AFXANIMATIONCONTROLLER/CSinusoidalTransitionFromVelocity::m_period
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSinusoidalTransitionFromVelocity [MFC], CSinusoidalTransitionFromVelocity
 - CSinusoidalTransitionFromVelocity [MFC], Create
 - CSinusoidalTransitionFromVelocity [MFC], m_duration
 - CSinusoidalTransitionFromVelocity [MFC], m_period
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9189a7ea43591509767346737566a40f5961ec3b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

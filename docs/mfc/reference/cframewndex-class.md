@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -96,7 +97,8 @@ f1_keywords:
 - AFXFRAMEWNDEX/CFrameWndEx::ShowPane
 - AFXFRAMEWNDEX/CFrameWndEx::UpdateCaption
 - AFXFRAMEWNDEX/CFrameWndEx::WinHelp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFrameWndEx [MFC], ActiveItemRecalcLayout
 - CFrameWndEx [MFC], AddPane
@@ -185,11 +187,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b968985c598dafe2ed96295c7388d650dc18c636
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

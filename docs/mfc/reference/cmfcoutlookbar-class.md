@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,7 +27,8 @@ f1_keywords:
 - AFXOUTLOOKBAR/CMFCOutlookBar::RemoveCustomPage
 - AFXOUTLOOKBAR/CMFCOutlookBar::SetButtonsFont
 - AFXOUTLOOKBAR/CMFCOutlookBar::SetMode2003
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCOutlookBar [MFC], AllowDestroyEmptyTabbedPane
 - CMFCOutlookBar [MFC], CanAcceptPane
@@ -45,11 +47,12 @@ helpviewer_keywords:
 - CMFCOutlookBar [MFC], SetButtonsFont
 - CMFCOutlookBar [MFC], SetMode2003
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 257b9157059f20d9023abee092c38ad8c1a57167
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

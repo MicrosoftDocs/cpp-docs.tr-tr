@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXINET/CGopherFileFind::GetLocator
 - AFXINET/CGopherFileFind::GetScreenName
 - AFXINET/CGopherFileFind::IsDots
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CGopherFileFind [MFC], CGopherFileFind
 - CGopherFileFind [MFC], FindFile
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6133fc593cb2fc53dfb7b6498711ae32713a4731
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler
 - CAnimationManagerEventHandler [MFC], CreateInstance
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 388986aa3bf16a2863258981380f0f98c9f88afa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

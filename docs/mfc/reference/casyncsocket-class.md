@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -44,7 +45,8 @@ f1_keywords:
 - AFXSOCK/CAsyncSocket::OnReceive
 - AFXSOCK/CAsyncSocket::OnSend
 - AFXSOCK/CAsyncSocket::m_hSocket
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAsyncSocket [MFC], CAsyncSocket
 - CAsyncSocket [MFC], Accept
@@ -81,11 +83,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 24ef9c6e39d72e756b95472daee46b7d39503943
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

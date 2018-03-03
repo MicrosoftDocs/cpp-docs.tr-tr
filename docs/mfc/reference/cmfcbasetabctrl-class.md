@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -126,7 +127,8 @@ f1_keywords:
 - AFXBASETABCTRL/CMFCBaseTabCtrl::CreateWrapper
 - AFXBASETABCTRL/CMFCBaseTabCtrl::m_bActivateTabOnRightClick
 - AFXBASETABCTRL/CMFCBaseTabCtrl::m_bAutoDestroyWindow
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], AddIcon
 - CMFCBaseTabCtrl [MFC], AddTab
@@ -245,11 +247,12 @@ helpviewer_keywords:
 - CMFCBaseTabCtrl [MFC], m_bActivateTabOnRightClick
 - CMFCBaseTabCtrl [MFC], m_bAutoDestroyWindow
 ms.assetid: 7270c55f-6f6e-4dd2-b0d2-291afeac3882
-caps.latest.revision: "41"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8dd8f70ffd2568f509b8b12be2167579c4ec4475
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

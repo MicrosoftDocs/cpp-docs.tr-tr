@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -61,7 +62,8 @@ f1_keywords:
 - AFXWIN/CComboBox::SetMinVisibleItems
 - AFXWIN/CComboBox::SetTopIndex
 - AFXWIN/CComboBox::ShowDropDown
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CComboBox [MFC], CComboBox
 - CComboBox [MFC], AddString
@@ -115,11 +117,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fffa5c09f1572200ca7850c8870b7daee9e3e75f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::LoadState
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SaveState
 - AFXDOCKABLEPANEADAPTER/CDockablePaneAdapter::SetWrappedWnd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDockablePaneAdapter [MFC], GetWrappedWnd
 - CDockablePaneAdapter [MFC], LoadState
 - CDockablePaneAdapter [MFC], SaveState
 - CDockablePaneAdapter [MFC], SetWrappedWnd
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5bb0e10490a381784e40167e16d1c7ec4e7e1a19
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXUSERTOOL/CUserTool::m_strArguments
 - AFXUSERTOOL/CUserTool::m_strInitialDirectory
 - AFXUSERTOOL/CUserTool::m_strLabel
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CUserTool [MFC], CopyIconToClipboard
 - CUserTool [MFC], DrawToolIcon
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 38600b2e6eac6ad181baf1263d9e4d10295732b1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

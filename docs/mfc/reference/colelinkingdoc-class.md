@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXOLE/COleLinkingDoc::Revoke
 - AFXOLE/COleLinkingDoc::OnFindEmbeddedItem
 - AFXOLE/COleLinkingDoc::OnGetLinkedItem
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleLinkingDoc [MFC], COleLinkingDoc
 - COleLinkingDoc [MFC], Register
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 611d09a12da1d2ebf6fcae8d7573cc48a5318f97
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

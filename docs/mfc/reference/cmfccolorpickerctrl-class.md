@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetSaturation
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::SetType
 - AFXCOLORPICKERCTRL/CMFCColorPickerCtrl::DrawCursor
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], CMFCColorPickerCtrl
 - CMFCColorPickerCtrl [MFC], GetColor
@@ -47,11 +49,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 11c015df63d3032a8616f7f19614376aa966d89b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

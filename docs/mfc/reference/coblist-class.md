@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -32,7 +33,8 @@ f1_keywords:
 - AFXCOLL/CObList::RemoveHead
 - AFXCOLL/CObList::RemoveTail
 - AFXCOLL/CObList::SetAt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CObList [MFC], CObList
 - CObList [MFC], AddHead
@@ -57,11 +59,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dfcd79377eebbf36ec4dd4688dff8b33c112e451
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

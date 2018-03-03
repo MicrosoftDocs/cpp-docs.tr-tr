@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::OnSetColumns
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::PrintKeyMap
 - AFXKEYMAPDIALOG/CMFCKeyMapDialog::SetColumnsWidth
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], CMFCKeyMapDialog
 - CMFCKeyMapDialog [MFC], DoModal
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], PrintKeyMap
 - CMFCKeyMapDialog [MFC], SetColumnsWidth
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1965e5dd2d522175b3709449df9a0b8575e20c59
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

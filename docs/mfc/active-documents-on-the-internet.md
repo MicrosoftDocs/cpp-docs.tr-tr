@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - active documents [MFC], creating
 - application wizards [MFC], active documents
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - application wizards [MFC]
 - active documents [MFC], using application wizards
 ms.assetid: a46bd8a0-e27a-4116-b1bf-dacdb7ae78d1
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0980f048b9be411308b159dea0ceaa71f8eee563
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -64,7 +65,8 @@ f1_keywords:
 - AFXRIBBONBUTTON/CMFCRibbonButton::SetRightAlignMenu
 - AFXRIBBONBUTTON/CMFCRibbonButton::SetText
 - AFXRIBBONBUTTON/CMFCRibbonButton::OnClick
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonButton [MFC], CMFCRibbonButton
 - CMFCRibbonButton [MFC], AddSubItem
@@ -121,11 +123,12 @@ helpviewer_keywords:
 - CMFCRibbonButton [MFC], SetText
 - CMFCRibbonButton [MFC], OnClick
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 219d305b382d80e4015578b16531158c0f8d643d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

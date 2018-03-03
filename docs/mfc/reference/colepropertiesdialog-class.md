@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXODLGS/COlePropertiesDialog::m_op
 - AFXODLGS/COlePropertiesDialog::m_psh
 - AFXODLGS/COlePropertiesDialog::m_vp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COlePropertiesDialog [MFC], COlePropertiesDialog
 - COlePropertiesDialog [MFC], DoModal
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a5460926e1f58a557b26d8e5fa0a0ed763fc5de6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

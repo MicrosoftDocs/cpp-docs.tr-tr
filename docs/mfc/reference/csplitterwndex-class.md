@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - CSplitterWndEx
 - AFXSPLITTERWNDEX/CSplitterWndEx
 - AFXSPLITTERWNDEX/CSplitterWndEx::OnDrawSplitter
-dev_langs: C++
-helpviewer_keywords: CSplitterWndEx [MFC], OnDrawSplitter
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSplitterWndEx [MFC], OnDrawSplitter
 ms.assetid: 33e5eef3-05e1-4a07-a968-bf9207ce8598
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 94ec633718dda81a5183a59eb46387b361d0f004
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -31,7 +32,8 @@ f1_keywords:
 - AFXCMN/CPagerCtrl::SetButtonSize
 - AFXCMN/CPagerCtrl::SetChild
 - AFXCMN/CPagerCtrl::SetScrollPos
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPagerCtrl [MFC], CPagerCtrl
 - CPagerCtrl [MFC], Create
@@ -55,11 +57,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c79fa877023c7a01c4814f61d75a54cb0dd64b51
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

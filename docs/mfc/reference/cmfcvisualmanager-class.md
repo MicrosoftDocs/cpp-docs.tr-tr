@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -179,7 +180,8 @@ f1_keywords:
 - AFXVISUALMANAGER/CMFCVisualManager::SetMenuFlatLook
 - AFXVISUALMANAGER/CMFCVisualManager::SetMenuShadowDepth
 - AFXVISUALMANAGER/CMFCVisualManager::SetShadowHighlightedImage
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCVisualManager [MFC], AdjustFrames
 - CMFCVisualManager [MFC], AdjustToolbars
@@ -351,11 +353,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-caps.latest.revision: "58"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e51a6a630daa2d03ac9f251a3ba516c708ec6d37
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

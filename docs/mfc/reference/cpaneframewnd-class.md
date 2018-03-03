@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -73,7 +74,8 @@ f1_keywords:
 - AFXPANEFRAMEWND/CPaneFrameWnd::OnCheckRollState
 - AFXPANEFRAMEWND/CPaneFrameWnd::OnDrawBorder
 - AFXPANEFRAMEWND/CPaneFrameWnd::m_bUseSaveBits
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPaneFrameWnd [MFC], AddPane
 - CPaneFrameWnd [MFC], AddRemovePaneFromGlobalList
@@ -139,11 +141,12 @@ helpviewer_keywords:
 - CPaneFrameWnd [MFC], OnDrawBorder
 - CPaneFrameWnd [MFC], m_bUseSaveBits
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e93061da24ac148ac47d96f84d6dfcea67045235
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

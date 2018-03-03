@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,7 +26,8 @@ f1_keywords:
 - AFXCMN/CComboBoxEx::SetImageList
 - AFXCMN/CComboBoxEx::SetItem
 - AFXCMN/CComboBoxEx::SetWindowTheme
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CComboBoxEx [MFC], CComboBoxEx
 - CComboBoxEx [MFC], Create
@@ -43,11 +45,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3aecbb168316b3d6416d3a41a6f6a56b04aeb990
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

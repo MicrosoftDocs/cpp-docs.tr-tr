@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DResource::ReCreate
 - AFXRENDERTARGET/CD2DResource::m_bIsAutoDestroy
 - AFXRENDERTARGET/CD2DResource::m_pParentTarget
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DResource [MFC], CD2DResource
 - CD2DResource [MFC], Create
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CD2DResource [MFC], m_bIsAutoDestroy
 - CD2DResource [MFC], m_pParentTarget
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2cc6b80803cbddcbd05655a8f9620c102aef3e9c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

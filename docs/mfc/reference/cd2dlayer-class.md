@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DLayer::GetSize
 - AFXRENDERTARGET/CD2DLayer::IsValid
 - AFXRENDERTARGET/CD2DLayer::m_pLayer
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DLayer [MFC], CD2DLayer
 - CD2DLayer [MFC], Attach
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CD2DLayer [MFC], IsValid
 - CD2DLayer [MFC], m_pLayer
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 94345f4784254addce0deaf8bdb5061dbde6a8cb
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

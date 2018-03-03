@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Reset
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::Serialize
 - AFXCMDUSAGECOUNT/CMFCCmdUsageCount::SetOptions
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], AddCmd
 - CMFCCmdUsageCount [MFC], GetCount
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0db24894777170d2860ba8d1639fd44e3893732a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

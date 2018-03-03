@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - AFXPROPERTYSHEET/CMFCPropertySheet::RemovePage
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetIconsList
 - AFXPROPERTYSHEET/CMFCPropertySheet::SetLook
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCPropertySheet [MFC], CMFCPropertySheet
 - CMFCPropertySheet [MFC], AddPage
@@ -47,11 +49,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e2684de5c72dcc755c2a75e2553eed509ce76533
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -73,7 +74,8 @@ f1_keywords:
 - AFXDOCKABLEPANE/CDockablePane::m_bDisableAnimation
 - AFXDOCKABLEPANE/CDockablePane::m_bHideInAutoHideMode
 - AFXDOCKABLEPANE/CDockablePane::m_nSlideSteps
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDockablePane [MFC], CDockablePane
 - CDockablePane [MFC], AttachToTabWnd
@@ -139,11 +141,12 @@ helpviewer_keywords:
 - CDockablePane [MFC], m_bHideInAutoHideMode
 - CDockablePane [MFC], m_nSlideSteps
 ms.assetid: e2495f4c-765f-48f9-a2e2-e45e47608d91
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cb32fc827c576830def3901389d400450b79f5ad
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

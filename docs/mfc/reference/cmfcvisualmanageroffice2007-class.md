@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -122,7 +123,8 @@ f1_keywords:
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnSetWindowRegion
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::OnUpdateSystemColors
 - AFXVISUALMANAGEROFFICE2007/CMFCVisualManagerOffice2007::SetResourceHandle
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], AlwaysHighlight3DTabs
 - CMFCVisualManagerOffice2007 [MFC], CleanStyle
@@ -237,11 +239,12 @@ helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], OnUpdateSystemColors
 - CMFCVisualManagerOffice2007 [MFC], SetResourceHandle
 ms.assetid: fb687c74-6d08-4c72-8acf-27f75dda6d6b
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8b4661b1c70e033e081096f49e8b5edae7d4a255
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -35,7 +36,8 @@ f1_keywords:
 - AFX/CFileFind::MatchesMask
 - AFX/CFileFind::CloseContext
 - AFX/CFileFind::m_pTM
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFileFind [MFC], CFileFind
 - CFileFind [MFC], Close
@@ -63,11 +65,12 @@ helpviewer_keywords:
 - CFileFind [MFC], CloseContext
 - CFileFind [MFC], m_pTM
 ms.assetid: 9990068c-b023-4114-9580-a50182d15240
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e890e59896d1f69264ab479168385cf2a05d9fb7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

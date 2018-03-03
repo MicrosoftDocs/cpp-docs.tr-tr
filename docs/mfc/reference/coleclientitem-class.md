@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -89,7 +90,8 @@ f1_keywords:
 - AFXOLE/COleClientItem::OnGetWindowContext
 - AFXOLE/COleClientItem::OnScrollBy
 - AFXOLE/COleClientItem::OnShowItem
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleClientItem [MFC], COleClientItem
 - COleClientItem [MFC], Activate
@@ -171,11 +173,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3732f23c2af429d0b5fc965b7f961af8400e2e42
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

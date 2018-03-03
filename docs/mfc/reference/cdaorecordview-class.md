@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXDAO/CDaoRecordView::IsOnLastRecord
 - AFXDAO/CDaoRecordView::OnGetRecordset
 - AFXDAO/CDaoRecordView::OnMove
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDaoRecordView [MFC], CDaoRecordView
 - CDaoRecordView [MFC], IsOnFirstRecord
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2fffeed33d5b966faf511f60da740c39f2b91581
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

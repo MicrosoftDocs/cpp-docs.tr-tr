@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,7 +27,8 @@ f1_keywords:
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillHighlightedArea
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnFillMiniFrameCaption
 - AFXVISUALMANAGERVS2005/CMFCVisualManagerVS2005::OnUpdateSystemColors
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], GetDockingTabsBordersSize
 - CMFCVisualManagerVS2005 [MFC], GetMDITabsBordersSize
@@ -45,11 +47,12 @@ helpviewer_keywords:
 - CMFCVisualManagerVS2005 [MFC], OnFillMiniFrameCaption
 - CMFCVisualManagerVS2005 [MFC], OnUpdateSystemColors
 ms.assetid: ea39b9ae-327e-4a51-bce7-dc84c78f005b
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9678ef4472f2bcb44a04d3484988033542aae243
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

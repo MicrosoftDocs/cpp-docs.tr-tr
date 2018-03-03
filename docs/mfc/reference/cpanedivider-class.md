@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -49,7 +50,8 @@ f1_keywords:
 - AFXPANEDIVIDER/CPaneDivider::GetPaneDividers
 - AFXPANEDIVIDER/CPaneDivider::m_nDefaultWidth
 - AFXPANEDIVIDER/CPaneDivider::m_pSliderRTC
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CPaneDivider [MFC], CPaneDivider
 - CPaneDivider [MFC], AddPaneContainer
@@ -91,11 +93,12 @@ helpviewer_keywords:
 - CPaneDivider [MFC], m_nDefaultWidth
 - CPaneDivider [MFC], m_pSliderRTC
 ms.assetid: 8e828a5d-232f-4127-b8e3-7fa45a7a476e
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9bf7b8a7cae6a03906a1424b626bde19012dcbb9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

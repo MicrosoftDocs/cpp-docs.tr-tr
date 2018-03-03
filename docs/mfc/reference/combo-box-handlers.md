@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - ON_CBN_SELCHANGE
 - ON_CBN_SETFOCUS
 - ON_CBN_SELENDCANCEL
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_CBN_CLOSEUP
 - ON_CBN_SETFOCUS
@@ -34,11 +36,12 @@ helpviewer_keywords:
 - ON_CBN_SELENDOK
 - ON_CBN_SELCHANGE
 ms.assetid: 7f092412-01b7-4242-95ec-41ba506b9d71
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c6a61b1e3570f0e4cb5fea680eb1ff427676ddce
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

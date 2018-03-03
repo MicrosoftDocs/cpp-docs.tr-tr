@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -72,7 +73,8 @@ f1_keywords:
 - AFXDB/CRecordset::m_pDatabase
 - AFXDB/CRecordset::m_strFilter
 - AFXDB/CRecordset::m_strSort
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CRecordset [MFC], CRecordset
 - CRecordset [MFC], AddNew
@@ -137,11 +139,12 @@ helpviewer_keywords:
 - CRecordset [MFC], m_strFilter
 - CRecordset [MFC], m_strSort
 ms.assetid: dd89a21d-ef39-4aab-891b-1e373d67c855
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c2375739fe4d8442d4ecb7a1514641d45de4a8be
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

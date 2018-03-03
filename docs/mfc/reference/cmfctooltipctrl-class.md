@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -23,7 +24,8 @@ f1_keywords:
 - AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetHotRibbonButton
 - AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetLocation
 - AFXTOOLTIPCTRL/CMFCToolTipCtrl::SetParams
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], GetIconSize
 - CMFCToolTipCtrl [MFC], GetParams
@@ -39,11 +41,12 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetLocation
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ae37349599977b236f111530f170da746b44b425
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXBASETOOLBAR/CMFCBaseToolBar::GetDockingMode
 - AFXBASETOOLBAR/CMFCBaseToolBar::GetMinSize
 - AFXBASETOOLBAR/CMFCBaseToolBar::OnAfterChangeParent
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCBaseToolBar [MFC], GetDockingMode
 - CMFCBaseToolBar [MFC], GetMinSize
 - CMFCBaseToolBar [MFC], OnAfterChangeParent
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4c57a09465a342a74e69d199d725ec64e7c60ca2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::GetParentPopupMenu
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::RecalcLayout
 - AFXDROPDOWNTOOLBAR/CMFCDropDownFrame::SetAutoDestroy
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCDropDownFrame [MFC], Create
 - CMFCDropDownFrame [MFC], GetParentMenuBar
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CMFCDropDownFrame [MFC], RecalcLayout
 - CMFCDropDownFrame [MFC], SetAutoDestroy
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 01b3e5b56621d7bf8d42aad12e216208338bbacd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

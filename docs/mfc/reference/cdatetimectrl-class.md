@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -27,7 +28,8 @@ f1_keywords:
 - AFXDTCTL/CDateTimeCtrl::SetMonthCalStyle
 - AFXDTCTL/CDateTimeCtrl::SetRange
 - AFXDTCTL/CDateTimeCtrl::SetTime
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDateTimeCtrl [MFC], CDateTimeCtrl
 - CDateTimeCtrl [MFC], CloseMonthCal
@@ -47,11 +49,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3359b506217d2828207e06341fbf1fe53b3c0719
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

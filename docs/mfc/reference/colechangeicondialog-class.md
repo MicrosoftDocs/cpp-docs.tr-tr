@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXODLGS/COleChangeIconDialog::DoModal
 - AFXODLGS/COleChangeIconDialog::GetIconicMetafile
 - AFXODLGS/COleChangeIconDialog::m_ci
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleChangeIconDialog [MFC], COleChangeIconDialog
 - COleChangeIconDialog [MFC], DoChangeIcon
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - COleChangeIconDialog [MFC], GetIconicMetafile
 - COleChangeIconDialog [MFC], m_ci
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 14e6f43ce49c5e5b51a6f69a3a8952608f5bfe49
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

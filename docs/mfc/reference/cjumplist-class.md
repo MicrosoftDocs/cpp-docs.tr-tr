@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -25,7 +26,8 @@ f1_keywords:
 - AFXADV/CJumpList::GetRemovedItems
 - AFXADV/CJumpList::InitializeList
 - AFXADV/CJumpList::SetAppID
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CJumpList [MFC], CJumpList
 - CJumpList [MFC], AbortList
@@ -43,11 +45,12 @@ helpviewer_keywords:
 - CJumpList [MFC], InitializeList
 - CJumpList [MFC], SetAppID
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 11b28199155c0ac3bd90cda8fb830ea6f8894dde
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

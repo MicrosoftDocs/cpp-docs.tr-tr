@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -32,7 +33,8 @@ f1_keywords:
 - AFXTEMPL/CList::RemoveHead
 - AFXTEMPL/CList::RemoveTail
 - AFXTEMPL/CList::SetAt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CList [MFC], CList
 - CList [MFC], AddHead
@@ -57,11 +59,12 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7d96a9c1a1b91d7738f768387bf0c24abd01ba22
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

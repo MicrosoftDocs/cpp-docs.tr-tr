@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -32,7 +33,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DBitmap::m_sizeDest
 - AFXRENDERTARGET/CD2DBitmap::m_strPath
 - AFXRENDERTARGET/CD2DBitmap::m_uiResID
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DBitmap [MFC], CD2DBitmap
 - CD2DBitmap [MFC], CD2DBitmap
@@ -58,11 +60,12 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_strPath
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 967bad02cf92b0078d789e5c0b6b55f9644bb17b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

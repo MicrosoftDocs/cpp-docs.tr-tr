@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - ON_WM_HELPINFO
 - ON_WM_INITMENUPOPUP
 - ON_WM_INITMENU
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_WM_HELPINFO [MFC]
 - ON_WM_KILLFOCUS [MFC]
@@ -36,11 +38,12 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 - ON_WM_KEYDOWN [MFC]
 ms.assetid: 0e7de191-1499-499f-859c-62742797808e
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 974c8bf9f1100497752b4aa4b5f796440c75d08f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

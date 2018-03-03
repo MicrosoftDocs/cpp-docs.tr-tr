@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,7 +17,8 @@ f1_keywords:
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_nType
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strName
 - AFXTOOLBARFONTCOMBOBOX/CMFCFontInfo::m_strScript
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCFontInfo [MFC], GetFullName
 - CMFCFontInfo [MFC], m_nCharSet
@@ -25,11 +27,12 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d0ea0572667ef45264fd52934cd2d4ee750a6d4c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

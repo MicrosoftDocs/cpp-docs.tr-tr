@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -38,7 +39,8 @@ f1_keywords:
 - AFXDATARECOVERY/CDataRecoveryHandler::SetSaveDocumentInfoOnIdle
 - AFXDATARECOVERY/CDataRecoveryHandler::SetShutdownByRestartManager
 - AFXDATARECOVERY/CDataRecoveryHandler::UpdateDocumentInfo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDataRecoveryHandler [MFC], CDataRecoveryHandler
 - CDataRecoveryHandler [MFC], AutosaveAllDocumentInfo
@@ -69,11 +71,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 35ede62ddb5fcfbc32fec37322985d40fffbbe44
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

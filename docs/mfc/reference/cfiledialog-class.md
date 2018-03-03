@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -73,7 +74,8 @@ f1_keywords:
 - AFXDLGS/CFileDialog::OnShareViolation
 - AFXDLGS/CFileDialog::OnTypeChange
 - AFXDLGS/CFileDialog::m_ofn
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFileDialog [MFC], CFileDialog
 - CFileDialog [MFC], AddCheckButton
@@ -139,11 +141,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-caps.latest.revision: "47"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 611f26b07bc8ebd14fc394437ddda07cb65ab4e1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

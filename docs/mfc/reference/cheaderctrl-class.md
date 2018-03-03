@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -39,7 +40,8 @@ f1_keywords:
 - AFXCMN/CHeaderCtrl::SetImageList
 - AFXCMN/CHeaderCtrl::SetItem
 - AFXCMN/CHeaderCtrl::SetOrderArray
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CHeaderCtrl [MFC], CHeaderCtrl
 - CHeaderCtrl [MFC], ClearAllFilters
@@ -71,11 +73,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3731d6d7a1455dc51ee03ea942666cbfc0f48e27
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

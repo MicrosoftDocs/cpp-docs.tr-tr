@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetBitmap
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetColor
 - AFXIMAGEPAINTAREA/CMFCImagePaintArea::SetMode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCImagePaintArea [MFC], CMFCImagePaintArea
 - CMFCImagePaintArea [MFC], GetMode
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8f4af09ad1da91e3d59f82736ae9b240812069eb
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

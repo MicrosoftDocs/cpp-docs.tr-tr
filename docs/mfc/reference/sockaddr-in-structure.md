@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: SOCKADDR_IN
-dev_langs: C++
-helpviewer_keywords: SOCKADDR_IN structure [MFC]
+f1_keywords:
+- SOCKADDR_IN
+dev_langs:
+- C++
+helpviewer_keywords:
+- SOCKADDR_IN structure [MFC]
 ms.assetid: e8cd7c34-78bd-4e28-a990-eb3ca070b7a6
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9e5350e48570a564361328e7b666a1cbb976221a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

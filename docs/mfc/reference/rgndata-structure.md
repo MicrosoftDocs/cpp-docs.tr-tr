@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: RGNDATA
-dev_langs: C++
-helpviewer_keywords: RGNDATA structure [MFC]
+f1_keywords:
+- RGNDATA
+dev_langs:
+- C++
+helpviewer_keywords:
+- RGNDATA structure [MFC]
 ms.assetid: 72257c00-f440-4dca-979e-9b6b5b2d5f2f
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d4170b3590cc841f3edc10d4767045a4fede9782
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

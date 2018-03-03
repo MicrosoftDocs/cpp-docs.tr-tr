@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MFC dialog boxes [MFC], tabs
 - property pages [MFC], property sheets
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - CPropertySheet class [MFC], property sheets and pages
 - property sheets, propert pages
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 877d83a6833b9505c326bc5312d2f151add07cb8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

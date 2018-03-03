@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXVSLISTBOX/CVSListBox::SelectItem
 - AFXVSLISTBOX/CVSListBox::SetItemData
 - AFXVSLISTBOX/CVSListBox::GetListHwnd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CVSListBox [MFC], CVSListBox
 - CVSListBox [MFC], AddItem
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f97d55b0b23302920e71dfd35766bfa0a4294d97
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

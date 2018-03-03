@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -139,7 +140,8 @@ f1_keywords:
 - AFXCMN/CListCtrl::SortItemsEx
 - AFXCMN/CListCtrl::SubItemHitTest
 - AFXCMN/CListCtrl::Update
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CListCtrl [MFC], CListCtrl
 - CListCtrl [MFC], ApproximateViewRect
@@ -271,11 +273,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a4d11da722ee9c933e6fbded6d8724db3da47ff4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

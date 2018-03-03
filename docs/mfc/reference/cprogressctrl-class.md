@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -28,7 +29,8 @@ f1_keywords:
 - AFXCMN/CProgressCtrl::SetState
 - AFXCMN/CProgressCtrl::SetStep
 - AFXCMN/CProgressCtrl::StepIt
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CProgressCtrl [MFC], CProgressCtrl
 - CProgressCtrl [MFC], Create
@@ -49,11 +51,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b7def2d1a6b421259a2b0d5e8229165ea0593874
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXTEMPL/CTypedPtrArray::InsertAt
 - AFXTEMPL/CTypedPtrArray::SetAt
 - AFXTEMPL/CTypedPtrArray::SetAtGrow
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CTypedPtrArray [MFC], Add
 - CTypedPtrArray [MFC], Append
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6e08749341bd7865c89e397e36aeff3a6ccc0d71
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

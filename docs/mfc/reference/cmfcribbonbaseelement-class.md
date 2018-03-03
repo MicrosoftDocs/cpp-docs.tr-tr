@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -123,7 +124,8 @@ f1_keywords:
 - AFXBASERIBBONELEMENT/CMFCRibbonBaseElement::UpdateTooltipInfo
 - AFXBASERIBBONELEMENT/CMFCRibbonBaseElement::OnProcessKey
 - AFXBASERIBBONELEMENT/CMFCRibbonBaseElement::OnSetFocus
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], AddToKeyList
 - CMFCRibbonBaseElement [MFC], AddToListBox
@@ -239,11 +241,12 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 93db9b8d8c56a23254972af29c7381e368766381
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

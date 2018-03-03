@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -103,7 +104,8 @@ f1_keywords:
 - AFXWIN/CWinApp::m_dwRestartManagerSupportFlags
 - AFXWIN/CWinApp::m_nAutosaveInterval
 - AFXWIN/CWinApp::m_pDataRecoveryHandler
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CWinApp [MFC], CWinApp
 - CWinApp [MFC], AddDocTemplate
@@ -199,11 +201,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 99e773dc7c5039574901c2a13433615f8a0c0aad
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

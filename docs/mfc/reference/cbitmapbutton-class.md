@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXEXT/CBitmapButton::AutoLoad
 - AFXEXT/CBitmapButton::LoadBitmaps
 - AFXEXT/CBitmapButton::SizeToContent
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CBitmapButton [MFC], CBitmapButton
 - CBitmapButton [MFC], AutoLoad
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d926e538cf9f9f1cb4935a1d53ba6c1fd7f4696e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

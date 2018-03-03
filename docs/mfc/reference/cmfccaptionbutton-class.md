@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXCAPTIONBUTTON/CMFCCaptionButton::Move
 - AFXCAPTIONBUTTON/CMFCCaptionButton::OnDraw
 - AFXCAPTIONBUTTON/CMFCCaptionButton::SetMiniFrameButton
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCCaptionButton [MFC], CMFCCaptionButton
 - CMFCCaptionButton [MFC], GetHit
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 857054bd60e206cc3a563aa5f00b872f67c58d3f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

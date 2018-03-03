@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - AFXINET/CFtpConnection::RemoveDirectory
 - AFXINET/CFtpConnection::Rename
 - AFXINET/CFtpConnection::SetCurrentDirectory
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFtpConnection [MFC], CFtpConnection
 - CFtpConnection [MFC], Command
@@ -37,11 +39,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a20ee1e3de4d5c9f61437c79bd2eda4240947947
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

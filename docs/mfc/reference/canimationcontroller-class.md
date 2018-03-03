@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -58,7 +59,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pRelatedWnd
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionFactory
 - AFXANIMATIONCONTROLLER/CAnimationController::m_pTransitionLibrary
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimationController [MFC], CAnimationController
 - CAnimationController [MFC], AddAnimationObject
@@ -110,11 +112,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 79343615b633b583775a482f0a9d2155e79ede10
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

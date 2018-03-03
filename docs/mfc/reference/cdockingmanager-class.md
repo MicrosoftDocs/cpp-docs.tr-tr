@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -87,7 +88,8 @@ f1_keywords:
 - AFXDOCKINGMANAGER/CDockingManager::m_nDockSensitivity
 - AFXDOCKINGMANAGER/CDockingManager::m_nTimeOutBeforeDockingBarDock
 - AFXDOCKINGMANAGER/CDockingManager::m_nTimeOutBeforeToolBarDock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDockingManager [MFC], AddDockSite
 - CDockingManager [MFC], AddHiddenMDITabbedBar
@@ -167,11 +169,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2f1a436ab6bfbc5e21e43267d3992310ed6f6a20
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

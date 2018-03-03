@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -66,7 +67,8 @@ f1_keywords:
 - AFXWINAPPEX/CWinAppEx::SaveCustomState
 - AFXWINAPPEX/CWinAppEx::StoreWindowPlacement
 - AFXWINAPPEX/CWinAppEx::m_bForceImageReset
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CWinAppEx [MFC], CWinAppEx
 - CWinAppEx [MFC], CleanState
@@ -125,11 +127,12 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 941a496d52dbf38401484bd6ddcd857875849dc6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColor
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetColumnsNumber
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridColorProperty::SetOriginalValue
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], CMFCPropertyGridColorProperty
 - CMFCPropertyGridColorProperty [MFC], EnableAutomaticButton
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], SetColumnsNumber
 - CMFCPropertyGridColorProperty [MFC], SetOriginalValue
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 33c807343c29fca74168167ef5d784e056b350fa
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

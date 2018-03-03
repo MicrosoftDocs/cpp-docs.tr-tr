@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXHTML/CHtmlEditView::Create
 - AFXHTML/CHtmlEditView::GetDHtmlDocument
 - AFXHTML/CHtmlEditView::GetStartDocument
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CHtmlEditView [MFC], CHtmlEditView
 - CHtmlEditView [MFC], Create
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 98964a48be8b8c36a3d6d5bd708a51b9963ae105
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

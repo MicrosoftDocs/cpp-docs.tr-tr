@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DMesh::IsValid
 - AFXRENDERTARGET/CD2DMesh::Open
 - AFXRENDERTARGET/CD2DMesh::m_pMesh
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DMesh [MFC], CD2DMesh
 - CD2DMesh [MFC], Attach
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9b1a83fb222c1133e8ea59c7daf53a49b4472de2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

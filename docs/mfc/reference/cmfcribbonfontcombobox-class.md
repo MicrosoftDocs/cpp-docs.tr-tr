@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::GetPitchAndFamily
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::RebuildFonts
 - AFXRIBBONCOMBOBOX/CMFCRibbonFontComboBox::SetFont
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCRibbonFontComboBox [MFC], CMFCRibbonFontComboBox
 - CMFCRibbonFontComboBox [MFC], BuildFonts
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CMFCRibbonFontComboBox [MFC], RebuildFonts
 - CMFCRibbonFontComboBox [MFC], SetFont
 ms.assetid: 33b4db50-df4f-45fa-8f05-2e6e73c31435
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fab339300de907169ab7f4471d9892feadffad81
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

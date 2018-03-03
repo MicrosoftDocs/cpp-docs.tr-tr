@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -37,7 +38,8 @@ f1_keywords:
 - AFXDISP/COleSafeArray::ResizeOneDim
 - AFXDISP/COleSafeArray::UnaccessData
 - AFXDISP/COleSafeArray::Unlock
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleSafeArray [MFC], COleSafeArray
 - COleSafeArray [MFC], AccessData
@@ -67,11 +69,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 39c7a471b5c397c430f419514b9ebf1d4da62f62
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

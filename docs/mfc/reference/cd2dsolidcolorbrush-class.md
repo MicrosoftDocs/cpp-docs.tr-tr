@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -20,7 +21,8 @@ f1_keywords:
 - AFXRENDERTARGET/CD2DSolidColorBrush::SetColor
 - AFXRENDERTARGET/CD2DSolidColorBrush::m_colorSolid
 - AFXRENDERTARGET/CD2DSolidColorBrush::m_pSolidColorBrush
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], CD2DSolidColorBrush
 - CD2DSolidColorBrush [MFC], Attach
@@ -33,11 +35,12 @@ helpviewer_keywords:
 - CD2DSolidColorBrush [MFC], m_colorSolid
 - CD2DSolidColorBrush [MFC], m_pSolidColorBrush
 ms.assetid: d4506637-acce-4f74-8a9b-f0a45571a735
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dd1f4d6de1565ae4c457a562d9056c020d44f771
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

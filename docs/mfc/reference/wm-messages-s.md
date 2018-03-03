@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,7 +25,8 @@ f1_keywords:
 - ON_WM_SYSKEYUP
 - ON_WM_SIZECLIPBOARD
 - ON_WM_SYSCOLORCHANGE
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_WM_SIZE [MFC]
 - ON_WM_SETFOCUS [MFC]
@@ -44,11 +46,12 @@ helpviewer_keywords:
 - ON_WM_SYSKEYDOWN [MFC]
 - WM_ messages
 ms.assetid: 4b9aec79-a98f-4aa0-a3d9-110941b6dcbc
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2ddc99b2aa360e35224f24920d6a8ae3de920c6c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

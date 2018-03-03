@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -60,7 +61,8 @@ f1_keywords:
 - AFXMENUBAR/CMFCMenuBar::SetMenuFont
 - AFXMENUBAR/CMFCMenuBar::SetRecentlyUsedMenus
 - AFXMENUBAR/CMFCMenuBar::SetShowAllCommands
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCMenuBar [MFC], AdjustLocations
 - CMFCMenuBar [MFC], AllowChangeTextLabels
@@ -113,11 +115,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 56e8e97645d4baa74033af07ba08ab2eae0a3557
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

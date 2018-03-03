@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_nURLCmdID
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strText
 - AFXDESKTOPALERTDIALOG/CMFCDesktopAlertWndInfo::m_strURL
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCDesktopAlertWndInfo [MFC], m_hIcon
 - CMFCDesktopAlertWndInfo [MFC], m_nURLCmdID
 - CMFCDesktopAlertWndInfo [MFC], m_strText
 - CMFCDesktopAlertWndInfo [MFC], m_strURL
 ms.assetid: 5c9bb84e-6c96-4748-8e74-6951b6ae8e84
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2f257575abbf405177b2524c4c803c0b3d250187
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

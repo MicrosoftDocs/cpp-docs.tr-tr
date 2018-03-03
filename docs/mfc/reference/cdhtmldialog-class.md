@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -65,7 +66,8 @@ f1_keywords:
 - AFXDHTML/CDHtmlDialog::m_spHtmlDoc
 - AFXDHTML/CDHtmlDialog::m_strCurrentUrl
 - AFXDHTML/CDHtmlDialog::m_szHtmlResID
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDHtmlDialog [MFC], CDHtmlDialog
 - CDHtmlDialog [MFC], CanAccessExternal
@@ -123,11 +125,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eb546ffc35438e19bd5230d6e71db28061109bc0
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

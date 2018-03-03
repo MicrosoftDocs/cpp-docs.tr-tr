@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::Reset
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetInUse
 - AFXMENUTEAROFFMANAGER/CMenuTearOffManager::SetupTearOffMenus
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMenuTearOffManager [MFC], CMenuTearOffManager
 - CMenuTearOffManager [MFC], Build
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CMenuTearOffManager [MFC], SetInUse
 - CMenuTearOffManager [MFC], SetupTearOffMenus
 ms.assetid: ab7ca272-ce42-4678-95f7-6ad75038f5a0
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: efb1b7acc2f4eb779de49559b5b566e89d518a0e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

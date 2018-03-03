@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXCMN/CAnimateCtrl::Play
 - AFXCMN/CAnimateCtrl::Seek
 - AFXCMN/CAnimateCtrl::Stop
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimateCtrl [MFC], CAnimateCtrl
 - CAnimateCtrl [MFC], Close
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 58918a45daa1a6f64c160d79f52503e3a3c61cff
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

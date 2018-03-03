@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXSHELLMANAGER/CShellManager::GetNextItem
 - AFXSHELLMANAGER/CShellManager::GetParentItem
 - AFXSHELLMANAGER/CShellManager::ItemFromPath
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CShellManager [MFC], CShellManager
 - CShellManager [MFC], BrowseForFolder
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CShellManager [MFC], GetParentItem
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3e1e3fcff06b2937df8218ce1ab32b91ddf22a7d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

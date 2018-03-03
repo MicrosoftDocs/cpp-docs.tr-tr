@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -65,7 +66,8 @@ f1_keywords:
 - AFXTASKDIALOG/CTaskDialog::SetWindowTitle
 - AFXTASKDIALOG/CTaskDialog::ShowDialog
 - AFXTASKDIALOG/CTaskDialog::TaskDialogCallback
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CTaskDialog [MFC], CTaskDialog
 - CTaskDialog [MFC], AddCommandControl
@@ -123,11 +125,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4ecde926a27fbf4fa74cabdec6ff4d54f7d89216
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

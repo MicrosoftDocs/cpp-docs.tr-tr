@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,17 +14,19 @@ f1_keywords:
 - AFXSETTINGSSTORE/CSettingsStoreSP::CSettingsStoreSP
 - AFXSETTINGSSTORE/CSettingsStoreSP::Create
 - AFXSETTINGSSTORE/CSettingsStoreSP::SetRuntimeClass
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSettingsStoreSP [MFC], CSettingsStoreSP
 - CSettingsStoreSP [MFC], Create
 - CSettingsStoreSP [MFC], SetRuntimeClass
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7cf9659b6c367146a565834bd65fdfc9f28a9812
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

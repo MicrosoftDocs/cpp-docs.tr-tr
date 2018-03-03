@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -23,7 +24,8 @@ f1_keywords:
 - AFXDLGS/CFindReplaceDialog::ReplaceCurrent
 - AFXDLGS/CFindReplaceDialog::SearchDown
 - AFXDLGS/CFindReplaceDialog::m_fr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFindReplaceDialog [MFC], CFindReplaceDialog
 - CFindReplaceDialog [MFC], Create
@@ -39,11 +41,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ca1d0b5658da375c2202729e6888fa078063beb4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

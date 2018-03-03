@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -29,7 +30,8 @@ f1_keywords:
 - AFXCOLORBUTTON/CMFCColorButton::RebuildPalette
 - AFXCOLORBUTTON/CMFCColorButton::UpdateColor
 - AFXCOLORBUTTON/CMFCColorButton::m_bEnabledInCustomizeMode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCColorButton [MFC], CMFCColorButton
 - CMFCColorButton [MFC], EnableAutomaticButton
@@ -51,11 +53,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e49cec1c34af066d6f30cf70003252f28e2bb8dc
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

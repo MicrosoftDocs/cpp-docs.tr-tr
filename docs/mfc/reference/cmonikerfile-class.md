@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,7 +17,8 @@ f1_keywords:
 - AFXOLE/CMonikerFile::GetMoniker
 - AFXOLE/CMonikerFile::Open
 - AFXOLE/CMonikerFile::CreateBindContext
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMonikerFile [MFC], CMonikerFile
 - CMonikerFile [MFC], Close
@@ -25,11 +27,12 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3dfdf86a4375521d7db084b60c549b08a54dc992
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

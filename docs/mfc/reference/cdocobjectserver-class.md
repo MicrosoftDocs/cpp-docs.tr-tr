@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXDOCOB/CDocObjectServer::OnActivateView
 - AFXDOCOB/CDocObjectServer::OnApplyViewState
 - AFXDOCOB/CDocObjectServer::OnSaveViewState
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDocObjectServer [MFC], CDocObjectServer
 - CDocObjectServer [MFC], ActivateDocObject
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 912262c4f1ba85c181bb30ee5d6f38a0defe5d5d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

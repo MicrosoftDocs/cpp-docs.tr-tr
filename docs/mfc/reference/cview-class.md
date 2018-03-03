@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -33,7 +34,8 @@ f1_keywords:
 - AFXWIN/CView::OnPreparePrinting
 - AFXWIN/CView::OnPrint
 - AFXWIN/CView::OnUpdate
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CView [MFC], CView
 - CView [MFC], DoPreparePrinting
@@ -59,11 +61,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 843417508fc43f99b0027873988746d03a7863cd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

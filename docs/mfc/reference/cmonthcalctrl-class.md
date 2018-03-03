@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -52,7 +53,8 @@ f1_keywords:
 - AFXDTCTL/CMonthCalCtrl::SetYearView
 - AFXDTCTL/CMonthCalCtrl::SizeMinReq
 - AFXDTCTL/CMonthCalCtrl::SizeRectToMin
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMonthCalCtrl [MFC], CMonthCalCtrl
 - CMonthCalCtrl [MFC], Create
@@ -97,11 +99,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dad90540f74438ac17cfe1d5e14963492ee6d371
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

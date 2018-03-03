@@ -4,21 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - CMFCSpinButtonCtrl
 - AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl
 - AFXSPINBUTTONCTRL/CMFCSpinButtonCtrl::OnDraw
-dev_langs: C++
-helpviewer_keywords: CMFCSpinButtonCtrl [MFC], OnDraw
+dev_langs:
+- C++
+helpviewer_keywords:
+- CMFCSpinButtonCtrl [MFC], OnDraw
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bd6ef1957b1f4994bafa9546581e2588e33d11a7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

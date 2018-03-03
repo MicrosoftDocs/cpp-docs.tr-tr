@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -67,7 +68,8 @@ f1_keywords:
 - AFXWIN/CDocument::m_clrRichPreviewBackColor
 - AFXWIN/CDocument::m_clrRichPreviewTextColor
 - AFXWIN/CDocument::m_lfRichPreviewFont
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDocument [MFC], CDocument
 - CDocument [MFC], AddView
@@ -127,11 +129,12 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dad4a2bb3da49b0163367761aeefe85384ecdfb2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

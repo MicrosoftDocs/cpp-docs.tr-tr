@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -14,18 +15,20 @@ f1_keywords:
 - AFXDOCOBJ/COleCmdUI::Enable
 - AFXDOCOBJ/COleCmdUI::SetCheck
 - AFXDOCOBJ/COleCmdUI::SetText
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleCmdUI [MFC], COleCmdUI
 - COleCmdUI [MFC], Enable
 - COleCmdUI [MFC], SetCheck
 - COleCmdUI [MFC], SetText
 ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c9d26ce9e674168f3d3d1c67dc48bb16b1a87169
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bAdded
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_bIsKeyframeAtOffset
 - AFXANIMATIONCONTROLLER/CBaseKeyFrame::m_keyframe
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CBaseKeyFrame [MFC], CBaseKeyFrame
 - CBaseKeyFrame [MFC], AddToStoryboard
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: dba8ba22325d3ea9e68411f0372cfac4d6b0659d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

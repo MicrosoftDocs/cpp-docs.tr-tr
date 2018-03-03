@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rect
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_rectGroup
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup::m_strName
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], CMFCTasksPaneTaskGroup
 - CMFCTasksPaneTaskGroup [MFC], SetACCData
@@ -31,11 +33,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 34bd53dec328ebf94e8bb9eb6f72aae1e8a90bc4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

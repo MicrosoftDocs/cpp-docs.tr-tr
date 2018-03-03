@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -29,7 +30,8 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_lstTransitions
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_pParentObject
 - AFXANIMATIONCONTROLLER/CAnimationVariable::m_variable
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CAnimationVariable [MFC], CAnimationVariable
 - CAnimationVariable [MFC], AddTransition
@@ -51,11 +53,12 @@ helpviewer_keywords:
 - CAnimationVariable [MFC], m_pParentObject
 - CAnimationVariable [MFC], m_variable
 ms.assetid: 506e697e-31a8-4033-a27e-292f4d7b42d9
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a90db931ca53687c42263df6a4112eb478059227
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

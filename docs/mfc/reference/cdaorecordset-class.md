@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -90,7 +91,8 @@ f1_keywords:
 - AFXDAO/CDaoRecordset::m_pDatabase
 - AFXDAO/CDaoRecordset::m_strFilter
 - AFXDAO/CDaoRecordset::m_strSort
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDaoRecordset [MFC], CDaoRecordset
 - CDaoRecordset [MFC], AddNew
@@ -173,11 +175,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e50e83a2d52567d30901cea33cfccec3e236fe67
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

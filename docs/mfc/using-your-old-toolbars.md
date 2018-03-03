@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: COldToolBar
-dev_langs: C++
+f1_keywords:
+- COldToolBar
+dev_langs:
+- C++
 helpviewer_keywords:
 - toolbars [MFC], backward compatibility
 - COldToolBar class [MFC]
 ms.assetid: 3543257c-8547-43f0-a66a-ee641dc1cf89
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b64c1b9c5cf38337cd286a86275331f4f5f65daf
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

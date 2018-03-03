@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -77,7 +78,8 @@ f1_keywords:
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::OnUpdateSystemColors
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::SetOfficeStyleMenus
 - AFXVISUALMANAGERWINDOWS/CMFCVisualManagerWindows::m_b3DTabsXPTheme
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], AlwaysHighlight3DTabs
 - CMFCVisualManagerWindows [MFC], DrawComboBorderWinXP
@@ -147,11 +149,12 @@ helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], SetOfficeStyleMenus
 - CMFCVisualManagerWindows [MFC], m_b3DTabsXPTheme
 ms.assetid: 568b6e9e-8e67-4477-9a3d-2981cbd09861
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e9c0aea3837239e401592e907fd2049f231dbb74
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

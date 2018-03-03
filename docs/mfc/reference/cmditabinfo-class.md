@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_nTabBorderSize
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_style
 - AFXMDICLIENTAREAWND/CMDITabInfo::m_tabLocation
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMDITabInfo [MFC], Serialize
 - CMDITabInfo [MFC], m_bAutoColor
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-caps.latest.revision: "37"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2b670b26855f5edcfb955d3dd0f8150a999f3a8e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

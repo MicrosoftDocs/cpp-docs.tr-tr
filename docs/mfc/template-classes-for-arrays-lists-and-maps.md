@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.classes.template
-dev_langs: C++
+f1_keywords:
+- vc.classes.template
+dev_langs:
+- C++
 helpviewer_keywords:
 - arrays [MFC], classes
 - template classes [MFC], for arrays/lists and maps
@@ -16,11 +19,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - template classes [MFC]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f92790965ffb8cb96fd59c9333a1a99c9fcfbe5d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

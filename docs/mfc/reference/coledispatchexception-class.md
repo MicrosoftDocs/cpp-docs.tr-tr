@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - AFXDISP/COleDispatchException::m_strHelpFile
 - AFXDISP/COleDispatchException::m_strSource
 - AFXDISP/COleDispatchException::m_wCode
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleDispatchException [MFC], m_dwHelpContext
 - COleDispatchException [MFC], m_strDescription
@@ -23,11 +25,12 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d90c59e4f85c871c113e51063ef1d50997bb508b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

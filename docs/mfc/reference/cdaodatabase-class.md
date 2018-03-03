@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -36,7 +37,8 @@ f1_keywords:
 - AFXDAO/CDaoDatabase::SetQueryTimeout
 - AFXDAO/CDaoDatabase::m_pDAODatabase
 - AFXDAO/CDaoDatabase::m_pWorkspace
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDaoDatabase [MFC], CDaoDatabase
 - CDaoDatabase [MFC], CanTransact
@@ -65,11 +67,12 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 48646e0635098aceea957f93015a5de93515096d
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -43,7 +44,8 @@ f1_keywords:
 - AFXOCC/COleControlContainer::m_pSiteUIActive
 - AFXOCC/COleControlContainer::m_pWnd
 - AFXOCC/COleControlContainer::m_siteMap
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleControlContainer [MFC], COleControlContainer
 - COleControlContainer [MFC], AttachControlSite
@@ -79,11 +81,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c6d04faa904eba416b290515e5e6773ac6ef9837
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

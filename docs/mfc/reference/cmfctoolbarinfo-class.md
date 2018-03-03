@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiLargeHotResID
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuDisabledResID
 - AFXTOOLBAR/CMFCToolBarInfo::m_uiMenuResID
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolBarInfo [MFC], m_uiColdResID
 - CMFCToolBarInfo [MFC], m_uiDisabledResID
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CMFCToolBarInfo [MFC], m_uiMenuDisabledResID
 - CMFCToolBarInfo [MFC], m_uiMenuResID
 ms.assetid: 6dc84482-eaaa-491f-aa5d-dd7a57886b46
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c47be3ddb2302124b233c39aaf8bd829cd481d79
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

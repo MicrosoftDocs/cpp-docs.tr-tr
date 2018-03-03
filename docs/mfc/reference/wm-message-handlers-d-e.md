@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,7 +22,8 @@ f1_keywords:
 - ON_WM_ENABLE
 - ON_WM_DRAWITEM
 - ON_WM_DRAWCLIPBOARD
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_WM_ENTERIDLE [MFC]
 - ON_WM_DESTROYCLIPBOARD [MFC]
@@ -38,11 +40,12 @@ helpviewer_keywords:
 - ON_WM_DEVICECHANGE [MFC]
 - WM_ messages [MFC]
 ms.assetid: 56fb89c8-68a8-4adf-883e-a9f63bf677e9
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 68a11d88c4b6cb0c5235d54ac9d0333126f39765
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

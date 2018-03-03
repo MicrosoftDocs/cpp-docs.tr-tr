@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -54,7 +55,8 @@ f1_keywords:
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::ShowPane
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::WinHelpA
 - AFXOLEIPFRAMEWNDEX/COleIPFrameWndEx::InitUserToobars
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - COleIPFrameWndEx [MFC], AddDockSite
 - COleIPFrameWndEx [MFC], AddPane
@@ -101,11 +103,12 @@ helpviewer_keywords:
 - COleIPFrameWndEx [MFC], WinHelpA
 - COleIPFrameWndEx [MFC], InitUserToobars
 ms.assetid: ebff1560-a1eb-4854-af00-95d4a192bd55
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 44004262d9c009ee295404dd5c8781f795eb7bc2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

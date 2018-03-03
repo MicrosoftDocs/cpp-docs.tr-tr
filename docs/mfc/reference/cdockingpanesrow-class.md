@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -52,7 +53,8 @@ f1_keywords:
 - AFXDOCKINGPANESROW/CDockingPanesRow::ShowDockSiteRow
 - AFXDOCKINGPANESROW/CDockingPanesRow::ShowPane
 - AFXDOCKINGPANESROW/CDockingPanesRow::UpdateVisibleState
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CDockingPanesRow [MFC], AddPane
 - CDockingPanesRow [MFC], AddPaneFromRow
@@ -97,11 +99,12 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eb8cb38c8ad5f744cab49c25d8de9c7cea58959a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

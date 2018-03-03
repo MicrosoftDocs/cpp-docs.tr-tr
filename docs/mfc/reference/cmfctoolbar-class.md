@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -162,7 +163,8 @@ f1_keywords:
 - AFXTOOLBAR/CMFCToolBar::OnUserToolTip
 - AFXTOOLBAR/CMFCToolBar::m_bDontScaleImages
 - AFXTOOLBAR/CMFCToolBar::m_dblLargeImageRatio
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CMFCToolBar [MFC], AddBasicCommand
 - CMFCToolBar [MFC], AddCommandUsage
@@ -318,11 +320,12 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_bDontScaleImages
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
-caps.latest.revision: "48"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3d652be633adca3d21d3cee5b54350c34e691740
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

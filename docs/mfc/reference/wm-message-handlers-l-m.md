@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,7 +23,8 @@ f1_keywords:
 - ON_WM_MBUTTONDOWN
 - ON_WM_MENUCHAR
 - ON_WM_MBUTTONUP
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ON_WM_MENUSELECT [MFC]
 - ON_WM_MBUTTONDBLCLK [MFC]
@@ -40,11 +42,12 @@ helpviewer_keywords:
 - ON_WM_LBUTTONUP [MFC]
 - WM_ messages
 ms.assetid: 96ecaaf1-6d13-4e12-a454-535635967489
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ee350a2e6a7d2b0d48b57880623d2246044a23f7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

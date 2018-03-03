@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXCMN/CHotKeyCtrl::GetKeyName
 - AFXCMN/CHotKeyCtrl::SetHotKey
 - AFXCMN/CHotKeyCtrl::SetRules
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CHotKeyCtrl [MFC], CHotKeyCtrl
 - CHotKeyCtrl [MFC], Create
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 982d4dec9c00490248da0b0e0dec7fd44376c218
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
