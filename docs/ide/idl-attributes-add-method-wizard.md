@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.codewiz.method.idlattrib
-dev_langs: C++
+f1_keywords:
+- vc.codewiz.method.idlattrib
+dev_langs:
+- C++
 helpviewer_keywords:
 - Add Method Wizard [C++]
 - IDL attributes, Add Method Wizard
 ms.assetid: f80c3bc1-b515-4d6c-83ee-98c2c21ba902
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9792f8b7758ff5a1e5742b6643d9f73931bce6f9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

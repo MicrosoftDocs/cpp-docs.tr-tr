@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.codewiz.variable.overview
-dev_langs: C++
-helpviewer_keywords: Add Member Variable Wizard [C++]
+f1_keywords:
+- vc.codewiz.variable.overview
+dev_langs:
+- C++
+helpviewer_keywords:
+- Add Member Variable Wizard [C++]
 ms.assetid: 73e8fa99-ac1a-42e2-8fc2-4684b9eb6d4d
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b909ec7ccd830e088df81ca0b2db8cda133c7a20
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

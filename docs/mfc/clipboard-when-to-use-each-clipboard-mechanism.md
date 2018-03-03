@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - applications [OLE], Clipboard
 - OLE Clipboard, guidelines
@@ -16,11 +18,12 @@ helpviewer_keywords:
 - formats [MFC], Clipboard for OLE
 - Clipboard [MFC], formats
 ms.assetid: fd071996-ef8c-488b-81bd-89057095a201
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e690f3467edd99584137642db8d9c24964ffeb06
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

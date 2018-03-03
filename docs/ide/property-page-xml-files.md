@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 04/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: property page XML files
+dev_langs:
+- C++
+helpviewer_keywords:
+- property page XML files
 ms.assetid: dd9d9734-4387-4098-8ba6-85b93507731d
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b81e8965773c64144059fa433b54484c786159a5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

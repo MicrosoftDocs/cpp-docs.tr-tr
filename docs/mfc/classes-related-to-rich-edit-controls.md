@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - rich edit controls [MFC], and CRichEditItem
 - CRichEditCtrl class [MFC], related classes
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], and CRichEditDoc
 - CRichEditView class [MFC], and CRichEditCtrl
 ms.assetid: 4b31c2cc-6ea1-4146-b7c5-b0b5b419f14d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a8373435f1f97b6b2038e5769c853d521b906715
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

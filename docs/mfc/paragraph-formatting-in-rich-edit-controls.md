@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - rich edit controls [MFC], paragraph formatting in
 - paragraph formatting in CRichEditCtrl [MFC]
 - CRichEditCtrl class [MFC], paragraph formatting in
 - formatting [MFC], paragraphs
 ms.assetid: 0df2e4c9-2074-4e41-b913-87cb8c1b4d43
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0f0dc12d923f6f424fe84768b0d934d8dd7ff20b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

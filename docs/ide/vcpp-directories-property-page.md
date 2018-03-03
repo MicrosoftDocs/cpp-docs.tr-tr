@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - VC.Project.VCDirectories.LibraryPath
 - VS.ToolsOptionsPages.Projects.VCDirectories
 - VC.Project.VCDirectories.ExcludePath
-dev_langs: C++
-helpviewer_keywords: VC++ Directories Property Page
+dev_langs:
+- C++
+helpviewer_keywords:
+- VC++ Directories Property Page
 ms.assetid: 428eeef6-f127-4271-b3ea-0ae6f2c3d624
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2c92a97ccd28a1bc7d1fae518cf499b45d339dae
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,13 +16,15 @@ f1_keywords:
 - VC.Project.VCManifestTool.DependencyInformationFile
 - VC.Project.VCManifestTool.OutputResourceManifest
 - VC.Project.VCManifestTool.GenerateCatalogFiles
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 77137e9bc0a4af60080234aac85afa59034d2c6a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
