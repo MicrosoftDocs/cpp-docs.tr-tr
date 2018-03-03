@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C2385
-dev_langs: C++
-helpviewer_keywords: C2385
+f1_keywords:
+- C2385
+dev_langs:
+- C++
+helpviewer_keywords:
+- C2385
 ms.assetid: 6d3dd1f2-e56d-49d7-865c-6a9acdb17417
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6ff17f95ab213aa021948bd7cadf80db7f94cb75
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

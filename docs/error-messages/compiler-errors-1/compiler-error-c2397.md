@@ -6,14 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C2397
-dev_langs: C++
+f1_keywords:
+- C2397
+dev_langs:
+- C++
 ms.assetid: b418cf5a-d50d-4a6c-98a7-994ae35046d1
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 315d375524884ec987fea747b1d3c20f2ad56173
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

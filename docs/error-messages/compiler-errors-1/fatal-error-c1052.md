@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 05/08/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C1052
-dev_langs: C++
-helpviewer_keywords: C1052
+f1_keywords:
+- C1052
+dev_langs:
+- C++
+helpviewer_keywords:
+- C1052
 ms.assetid: f2c09a2f-d3c1-4420-9501-ffcb65caf87b
-caps.latest.revision: "0"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6b9d7cc04fa863d30829c5484b328effc55125e6
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

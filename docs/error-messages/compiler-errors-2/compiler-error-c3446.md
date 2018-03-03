@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 07/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: C3446
-dev_langs: C++
-helpviewer_keywords: C3445
+f1_keywords:
+- C3446
+dev_langs:
+- C++
+helpviewer_keywords:
+- C3445
 ms.assetid: 33064548-24e4-46f1-beb1-476e3c3b3fbf
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 590f9b4012c7a00cb73a61b0d275ff9c5ee9cf9e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

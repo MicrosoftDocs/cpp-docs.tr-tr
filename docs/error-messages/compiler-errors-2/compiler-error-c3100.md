@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C3100
-dev_langs: C++
-helpviewer_keywords: C3100
+f1_keywords:
+- C3100
+dev_langs:
+- C++
+helpviewer_keywords:
+- C3100
 ms.assetid: 7a9c9eaf-08ef-442d-94a0-e457beee8549
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fe266ac02839553c1f38ce13976f0e2f5548622e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C2603
-dev_langs: C++
-helpviewer_keywords: C2603
+f1_keywords:
+- C2603
+dev_langs:
+- C++
+helpviewer_keywords:
+- C2603
 ms.assetid: 9ca520d0-f082-4b65-933d-17c3bcf8b02c
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c06c5747a3d785242e8b926fe6e1eaa251a2d8b4
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

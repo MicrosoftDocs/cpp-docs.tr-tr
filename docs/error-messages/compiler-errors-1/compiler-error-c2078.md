@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C2078
-dev_langs: C++
-helpviewer_keywords: C2078
+f1_keywords:
+- C2078
+dev_langs:
+- C++
+helpviewer_keywords:
+- C2078
 ms.assetid: 9bead850-4123-46cf-a634-5c77ba974b2b
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f0547cac2c5468558f67aa52a1d59ec9589de86b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
