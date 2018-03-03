@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apilocation:
@@ -15,19 +16,22 @@ apilocation:
 - msvcr100.dll
 - msvcr110.dll
 apitype: DLLExport
-f1_keywords: strcoll
-dev_langs: C++
+f1_keywords:
+- strcoll
+dev_langs:
+- C++
 helpviewer_keywords:
 - code pages, using for string comparisons
 - string comparison [C++], culture-specific
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e5f025d90d4ffac5f9dc293f621023591b5eb4f7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

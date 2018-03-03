@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-cpp
+ms.technology:
+- devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,7 +14,8 @@ f1_keywords:
 - VC.Project.VCCLWCECompilerTool.PrecompiledHeaderThrough
 - VC.Project.VCCLWCECompilerTool.UsePrecompiledHeader
 - VC.Project.VCCLCompilerTool.PrecompiledHeaderThrough
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - precompiled header files, creating
 - PCH files, creating
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - /Yc compiler option [C++]
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 865b5e0fa7039a0b60f524c2f13a367569757d92
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

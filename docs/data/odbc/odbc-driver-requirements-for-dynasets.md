@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ODBC recordsets, dynasets
 - drivers, for dynasets
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - dynasets
 - ODBC drivers, dynasets
 ms.assetid: 585cc67b-4d92-404b-9903-d769cd17badc
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

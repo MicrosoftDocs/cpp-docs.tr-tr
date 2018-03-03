@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _CIsin
+apiname:
+- _CIsin
 apilocation:
 - msvcr80.dll
 - msvcr100.dll
@@ -20,16 +22,18 @@ apitype: DLLExport
 f1_keywords:
 - CIsin
 - _CIsin
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _CIsin intrinsic
 - CIsin intrinsic
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7e87589421c5a1e24c490a0f03928281bc7fb92b
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

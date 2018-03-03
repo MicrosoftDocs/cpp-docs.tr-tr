@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: typename_cpp
-dev_langs: C++
-helpviewer_keywords: typename template specifier
+f1_keywords:
+- typename_cpp
+dev_langs:
+- C++
+helpviewer_keywords:
+- typename template specifier
 ms.assetid: 52e1d901-220d-4f0d-ab43-dae7e05fb491
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a276d13172b675cc6856e726cd7139e36fa97d41
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

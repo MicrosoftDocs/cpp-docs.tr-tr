@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - virtual device drivers
 - VXD virtual device drivers
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - naked keyword [C++]
 - naked keyword [C++], storage-class attribute
 ms.assetid: 2a66847a-a43f-4541-a7be-c9f5f29b5fdb
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eed53718d211ac2152978c2a4d36e6a82c5c8024
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

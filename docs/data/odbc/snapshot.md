@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ODBC cursor library [ODBC], snapshots
 - cursors [ODBC], static
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - cursor library [ODBC], snapshots
 - snapshots
 ms.assetid: b5293a52-0657-43e9-bd71-fe3785b21c7e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

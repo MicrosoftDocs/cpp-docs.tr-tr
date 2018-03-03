@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _set_output_format
+apiname:
+- _set_output_format
 apilocation:
 - msvcrt.dll
 - msvcr120.dll
@@ -20,7 +22,8 @@ apitype: DLLExport
 f1_keywords:
 - set_output_format
 - _set_output_format
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _TWO_DIGIT_EXPONENT constant
 - output formatting
@@ -28,11 +31,12 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4a0ad6631d9171e8fcdc59e13e60eda2cc729c79
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

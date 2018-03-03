@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - database connections [C++], ODBC
 - ODBC connections [C++]
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - databases [C++], connecting to
 - ODBC connections [C++], databases
 ms.assetid: f41a67c7-168d-4657-9999-257535e44c87
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

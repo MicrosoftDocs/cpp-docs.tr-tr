@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: _com_error::Description
-dev_langs: C++
-helpviewer_keywords: Description method [C++]
+f1_keywords:
+- _com_error::Description
+dev_langs:
+- C++
+helpviewer_keywords:
+- Description method [C++]
 ms.assetid: 88191e24-4ee8-44a6-8c4c-3758e22e0548
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: f3ed306a8eba4e76c2eefc738b617117188e85c8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

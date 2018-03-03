@@ -10,7 +10,8 @@ apiname:
 - _execute_onexit_table
 - _initialize_onexit_table
 - _register_onexit_function
-apilocation: api-ms-win-crt-runtime-l1-1-0.dll
+apilocation:
+- api-ms-win-crt-runtime-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _execute_onexit_table
@@ -19,17 +20,19 @@ f1_keywords:
 - process/_initialize_onexit_table
 - _register_onexit_function
 - process/_register_onexit_function
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _execute_onexit_table function
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d2aa296c04d81fcdea2000ab8e2dbc1ae5523673
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

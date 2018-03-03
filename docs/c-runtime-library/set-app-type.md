@@ -6,19 +6,23 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _set_app_type
-apilocation: api-ms-win-crt-runtime-l1-1-0.dll
+apiname:
+- _set_app_type
+apilocation:
+- api-ms-win-crt-runtime-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _set_app_type
 - corecrt_startup/_set_app_type
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 1e7fe786-b587-4116-8c05-f7d762350100
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: adfd7344b01360df6af3ccf7a153eda3451d2482
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

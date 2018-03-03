@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _heapadd
+apiname:
+- _heapadd
 apilocation:
 - msvcr100.dll
 - msvcr110_clr0400.dll
@@ -20,18 +22,20 @@ apitype: DLLExport
 f1_keywords:
 - heapadd
 - _heapadd
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _heapadd function
 - memory, adding to heaps
 - heaps, adding memory
 - heapadd function
 ms.assetid: 4d691fe2-2763-49f4-afb1-62738b7cd3ff
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9c046f9e26848edbbc609b9f3c729a0654fe3718
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

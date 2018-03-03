@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -12,7 +13,8 @@ f1_keywords:
 - __int16_cpp
 - __int32_cpp
 - __int64_cpp
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __int16 keyword [C++]
 - integer data type [C++], integer types in C++
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - __int8 keyword [C++]
 - __int64 keyword [C++]
 ms.assetid: 8e384602-2578-4980-8cc8-da63842356b2
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 957e2483d61855c442780440ccf87441f00cb1c3
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

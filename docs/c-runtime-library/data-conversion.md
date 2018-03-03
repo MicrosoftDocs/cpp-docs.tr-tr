@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.conversions
-dev_langs: C++
+f1_keywords:
+- c.conversions
+dev_langs:
+- C++
 helpviewer_keywords:
 - data conversion routines [C++]
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 11b28793e5e659e3135061e3a6fd410d9b1c9f3c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

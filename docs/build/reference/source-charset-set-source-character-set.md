@@ -12,14 +12,17 @@ ms.topic: article
 f1_keywords:
 - source-charset
 - /source-charset
-dev_langs: C++
-helpviewer_keywords: /execution-charset compiler option
+dev_langs:
+- C++
+helpviewer_keywords:
+- /execution-charset compiler option
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a4aa81ba41587a183aca921177a62a45229810f1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

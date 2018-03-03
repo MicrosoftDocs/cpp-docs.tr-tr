@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -40,7 +41,8 @@ f1_keywords:
 - _variant_t::operatorfloat
 - _variant_t.operatorIDispatch
 - _variant_t.operatorshort
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - extractors, _variant_t class
 - operator CY
@@ -55,11 +57,12 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8876cd486662ec1c20aea7148563fd28e8790a47
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

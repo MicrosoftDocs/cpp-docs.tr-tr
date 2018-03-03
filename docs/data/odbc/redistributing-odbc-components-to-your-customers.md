@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ODBC components, redistributing
 - ODBC, distributing components
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - components [C++]
 - components [C++], redistributing
 ms.assetid: 17b065b4-a307-4b89-99ac-d05831cfab87
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

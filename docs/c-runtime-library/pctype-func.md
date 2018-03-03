@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: __pctype_func
+apiname:
+- __pctype_func
 apilocation:
 - msvcrt.dll
 - msvcr110_clr0400.dll
@@ -17,15 +19,19 @@ apilocation:
 - msvcr100.dll
 - msvcr80.dll
 apitype: DLLExport
-f1_keywords: __pctype_func
-dev_langs: C++
-helpviewer_keywords: __pctype_func
+f1_keywords:
+- __pctype_func
+dev_langs:
+- C++
+helpviewer_keywords:
+- __pctype_func
 ms.assetid: d52b8add-d07d-4516-a22f-e836cde0c57f
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 239779bf4515615f25ff83be9221b1040d936a7f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

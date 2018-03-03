@@ -4,18 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _errno
-apilocation: msvcrt.dll
+apiname:
+- _errno
+apilocation:
+- msvcrt.dll
 apitype: DLLExport
 f1_keywords:
 - _sys_errlist
 - errno
 - _sys_nerr
 - _doserrno
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - error codes, printing
 - sys_errlist global variable
@@ -26,11 +30,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 767b7623a231ad01b51bfc60212a23593544df8c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

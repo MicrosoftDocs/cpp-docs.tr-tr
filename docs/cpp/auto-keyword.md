@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: auto_cpp
-dev_langs: C++
+f1_keywords:
+- auto_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - automatic storage class [C++], auto keyword
 - auto keyword [C++]
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3508217e7dc333543fa2dbff9cf0643d6faff060
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

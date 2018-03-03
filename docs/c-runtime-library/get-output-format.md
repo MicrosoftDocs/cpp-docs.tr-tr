@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _get_output_format
+apiname:
+- _get_output_format
 apilocation:
 - msvcr110_clr0400.dll
 - msvcr100.dll
@@ -20,17 +22,19 @@ apitype: DLLExport
 f1_keywords:
 - get_output_format
 - _get_output_format
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - output formatting
 - get_output_format function
 - _get_output_format function
 ms.assetid: 0ce42f3b-3479-41c4-bcbf-1d21f7ee37e7
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 30ee8de9c39d2b7e1fc6f9cf0a717120c95e92c0
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

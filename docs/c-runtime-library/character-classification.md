@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.types.character
-dev_langs: C++
+f1_keywords:
+- c.types.character
+dev_langs:
+- C++
 helpviewer_keywords:
 - character classification routines
 - characters, testing
 ms.assetid: 3b6c8f0b-9701-407a-b384-9086698773f5
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4c43761189d9241e77faa67ad106f346fb8f92ae
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

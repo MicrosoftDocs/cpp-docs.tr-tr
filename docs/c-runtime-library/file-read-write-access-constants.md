@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.constants.file
-dev_langs: C++
+f1_keywords:
+- c.constants.file
+dev_langs:
+- C++
 helpviewer_keywords:
 - read/write access constants
 - write access constants
@@ -16,11 +19,12 @@ helpviewer_keywords:
 - constants [C++], file attributes
 - file read/write access constants
 ms.assetid: 56cd1d22-39a5-4fcf-bea2-7046d249e8ee
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 789d0ae6b0b9b38312896adf079e7c10dcde7556
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

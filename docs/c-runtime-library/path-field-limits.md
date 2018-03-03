@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,7 +14,8 @@ f1_keywords:
 - _MAX_PATH
 - _MAX_FNAME
 - _MAX_DRIVE
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - path field constants
 - MAX_FNAME constant
@@ -27,11 +29,12 @@ helpviewer_keywords:
 - MAX_DIR constant
 - MAX_EXT constant
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c585afee6bbea3d0cc48b696bc005b9a8d6c7992
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

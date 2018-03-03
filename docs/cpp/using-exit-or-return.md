@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: Exit
-dev_langs: C++
+f1_keywords:
+- Exit
+dev_langs:
+- C++
 helpviewer_keywords:
 - exit function
 - return keyword [C++], using for program termination
 ms.assetid: b5136c5c-2505-4229-8691-2a1d6a98760b
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2f5c9fdb17811206732811db4e27006dc5e0ed84
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

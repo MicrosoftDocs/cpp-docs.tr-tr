@@ -27,18 +27,20 @@ f1_keywords:
 - stdlib/_sleep
 - time/_getsystime
 - time/_setsystime
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - obsolete functions
 - _beep function
 - _sleep function
 - _seterrormode function
 ms.assetid: 8e14c2d4-1481-4240-8586-47eb43db02b0
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 195dc17d41c2c089600958976d37dd59f2d60232
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

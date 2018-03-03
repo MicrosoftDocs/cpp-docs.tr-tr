@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: wmain
-dev_langs: C++
+f1_keywords:
+- wmain
+dev_langs:
+- C++
 helpviewer_keywords:
 - main function, vs. wmain
 - wmain function
 ms.assetid: 7abb1257-b85c-413a-b913-d45b1582a71d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d43ab12c42315d735220af8f91c40d8b6a5cc4f9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

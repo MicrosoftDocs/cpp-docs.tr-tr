@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /stub
 - VC.Project.VCLinkerTool.DosStub
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Win32 [C++], attaching MS-DOS stub program
 - STUB linker option
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - Windows API [C++], attaching MS-DOS stub program
 - -STUB linker option
 ms.assetid: 65221ffe-4f9a-4a14-ac69-3cfb79b40b5f
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2bb7d1b9f56e7cea5d476d5ece6bdfab50fbe7a9
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

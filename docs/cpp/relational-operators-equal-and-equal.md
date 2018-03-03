@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - <
 - '>'
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - '> operator'
 - less than operator
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - less than or equal to operator
 - <= operator
 ms.assetid: d346b53d-f14d-4962-984f-89d39a17ca0f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 28d7cf77f9bea05a9220aea3d4006f64899b84ec
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

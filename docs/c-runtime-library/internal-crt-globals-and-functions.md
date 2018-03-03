@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
@@ -572,7 +573,8 @@ f1_keywords:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __acrt_iob_func
 - __AdjustPointer
@@ -851,7 +853,8 @@ ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bab5e5e8316ff181ce8b2a190c721336fb5032cd
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

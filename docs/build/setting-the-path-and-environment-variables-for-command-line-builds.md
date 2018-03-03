@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 f1_keywords:
 - include
 - Lib
 - Path
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - environment variables [C++]
 - VCVARS32.bat file
@@ -24,11 +26,12 @@ helpviewer_keywords:
 - compiling source code [C++], from command line
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 76fa1a14b4fd60f249ab015f6618e386bda7c86f
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

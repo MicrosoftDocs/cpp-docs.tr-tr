@@ -12,14 +12,17 @@ ms.topic: article
 f1_keywords:
 - /validate-charset
 - validate-charset
-dev_langs: C++
-helpviewer_keywords: /validate-charset compiler option
+dev_langs:
+- C++
+helpviewer_keywords:
+- /validate-charset compiler option
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7694eb94fe1b50d1892dab399b523a5b0e6deef7
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

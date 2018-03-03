@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: c.system
-dev_langs: C++
+f1_keywords:
+- c.system
+dev_langs:
+- C++
 helpviewer_keywords:
 - Windows [C++], system calls
 - system calls
 ms.assetid: 0255f2ec-a5a0-487e-8b09-9dad001d81ed
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: aee53285b2953ae5eac63737f1854f9b01dbd5b1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

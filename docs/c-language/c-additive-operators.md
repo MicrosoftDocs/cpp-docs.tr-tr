@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - usual arithmetic conversions
 - operators [C], addition
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - additive operators
 - arithmetic operators [C++], additive operators
 ms.assetid: bb8ac205-b061-41fc-8dd4-dab87c8b900c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 340aac3d3aab6951af43b824f1c8d0dd866f7a39
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

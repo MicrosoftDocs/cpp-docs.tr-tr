@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ODBC [C++], MFC
 - connections [C++], databases
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - MFC [C++], ODBC and
 - database connections [C++], MFC ODBC classes
 ms.assetid: 98f02fd7-1235-437b-89a9-edfd0fc797f7
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

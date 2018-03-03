@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,7 +14,8 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.UninitializedVariableCheck
 - VC.Project.VCCLCompilerTool.StackFrameCheck
 - VC.Project.VCCLCompilerTool.BasicRuntimeChecks
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /RTCs compiler option [C++]
 - -RTC1 compiler option [C++]
@@ -32,11 +34,12 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8699a96dcd7c04bc1b2707e964afb4b68068147e
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

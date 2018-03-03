@@ -9,15 +9,19 @@ ms.technology:
 - devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: /utf-8
-dev_langs: C++
-helpviewer_keywords: /utf-8 compiler option
+f1_keywords:
+- /utf-8
+dev_langs:
+- C++
+helpviewer_keywords:
+- /utf-8 compiler option
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 592cba779113a6658b40d0dc3f855f53fa3d170c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

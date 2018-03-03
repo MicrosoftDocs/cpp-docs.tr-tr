@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,7 +15,8 @@ f1_keywords:
 - SIGILL
 - SIGINT
 - SIGSEGV
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - SIGTERM constant
 - SIGABRT constant
@@ -24,11 +26,12 @@ helpviewer_keywords:
 - signal constants
 - SIGILL constant
 ms.assetid: a3b39281-dae7-4e44-8d68-e6a610c669dd
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4e47e3e7bce5a41e055f251d906ec72d98c5b285
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

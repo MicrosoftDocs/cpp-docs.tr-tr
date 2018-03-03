@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: record views [C++], customizing default code
+dev_langs:
+- C++
+helpviewer_keywords:
+- record views [C++], customizing default code
 ms.assetid: 9992ed37-a6bf-45a5-a572-5c14e42b6628
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

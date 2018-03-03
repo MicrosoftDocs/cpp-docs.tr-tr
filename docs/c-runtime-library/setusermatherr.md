@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: __setusermatherr
+apiname:
+- __setusermatherr
 apilocation:
 - msvcr80.dll
 - msvcr90.dll
@@ -18,15 +20,19 @@ apilocation:
 - msvcr100.dll
 - api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
-f1_keywords: __setusermatherr
-dev_langs: C++
-helpviewer_keywords: __setusermatherr
+f1_keywords:
+- __setusermatherr
+dev_langs:
+- C++
+helpviewer_keywords:
+- __setusermatherr
 ms.assetid: f306818d-381a-4d68-8739-71b92bacb5ea
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eefd80ae9eafd20615d90a259af247b4bcb7ce0a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

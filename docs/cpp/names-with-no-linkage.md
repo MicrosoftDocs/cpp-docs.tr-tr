@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - functions [C++], parameters
 - typedef names, linkage
@@ -15,11 +17,12 @@ helpviewer_keywords:
 - names [C++], with no linkage
 - function parameters [C++]
 ms.assetid: 7174c500-12d2-4572-8c16-63c27c758fb1
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 13acb94022caf7ad9ddbf2fe94ad2fa95a70dc80
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - structured exception handling [C++], termination handlers
 - exceptions [C++], terminating
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - exception handling [C++], termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b9d4099a7f40acf0b5bfcc89f1c95cb880683b86
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

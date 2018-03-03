@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - _crtDbgFlag
 - crtDbgFlag
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - memory allocation, tracking flag
 - crtDbgFlag constant
@@ -20,11 +22,12 @@ helpviewer_keywords:
 - enable memory allocation tracking flag
 - memory, tracking on the debug heap
 ms.assetid: 9e7adb47-8ab9-4e19-81d5-e2f237979973
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0b5169a9f5110e40e0d7ff7e9b036c2e28c98660
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - database classes [C++], ODBC
 - ODBC API functions [C++]
 - ODBC classes [C++], MFC database classes
 - MFC [C++], ODBC and
 ms.assetid: b166f82d-6f85-4556-aac8-fb851235d22c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

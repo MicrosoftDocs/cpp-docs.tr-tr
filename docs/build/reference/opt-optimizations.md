@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,7 +16,8 @@ f1_keywords:
 - VC.Project.VCLinkerTool.OptimizeFolding
 - VC.Project.VCLinkerTool.FoldingIterations
 - VC.Project.VCLinkerTool.OptimizeFoldingIterations
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - LINK tool [C++], controlling optimizations
 - -OPT linker option
@@ -24,11 +26,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 86427dbf1ac6c3404daa36d2e02786aa80ed6453
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

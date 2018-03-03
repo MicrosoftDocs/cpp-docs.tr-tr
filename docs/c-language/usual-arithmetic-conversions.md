@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - arithmetic conversions [C++]
 - type conversion [C++], arithmetic
@@ -16,11 +18,12 @@ helpviewer_keywords:
 - conversions [C++], arithmetic
 - arithmetic operators [C++], type conversions
 ms.assetid: bfa49803-0efd-45d0-b987-111412a140d7
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a73da6d96b0dc03fa3f4c4807d6a2dff4fef2879
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

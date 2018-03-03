@@ -2,7 +2,8 @@
 title: "Derleyicide ve bağlayıcıda Unicode desteği | Microsoft Docs"
 ms.custom: 
 ms.date: 12/15/2017
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -10,12 +11,15 @@ f1_keywords:
 - VC.Project.VCLibrarianTool.UseUnicodeResponseFiles
 - VC.Project.VCCLCompilerTool.UseUnicodeResponseFiles
 - VC.Project.VCXDCMakeTool.UseUnicodeResponseFiles
-dev_langs: C++
-helpviewer_keywords: Unicode, Visual C++
+dev_langs:
+- C++
+helpviewer_keywords:
+- Unicode, Visual C++
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fe775a53914089648a868a94aa2c863ee87790c5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

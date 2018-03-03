@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: _setargv
-dev_langs: C++
+f1_keywords:
+- _setargv
+dev_langs:
+- C++
 helpviewer_keywords:
 - asterisk wildcard
 - _setargv function
@@ -17,11 +20,12 @@ helpviewer_keywords:
 - command-line wildcards
 - question mark, wildcard
 ms.assetid: 1a543398-607b-4404-93d1-45d290bde638
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 2c9bbb5dcc706e08b2b985769248969f9bd23201
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

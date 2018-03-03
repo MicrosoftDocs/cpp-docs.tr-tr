@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: 'index-page '
-dev_langs: C++
-helpviewer_keywords: expressions [C++], types
+dev_langs:
+- C++
+helpviewer_keywords:
+- expressions [C++], types
 ms.assetid: 1e7540b0-8fdb-49ab-b3e1-6ec439ff473a
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 69ca4345d9cf4ed625533d799730808b18d297a8
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

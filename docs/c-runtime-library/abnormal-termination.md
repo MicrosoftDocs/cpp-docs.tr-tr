@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _abnormal_termination
+apiname:
+- _abnormal_termination
 apilocation:
 - msvcr110.dll
 - msvcr110_clr0400.dll
@@ -17,15 +19,19 @@ apilocation:
 - msvcr80.dll
 - msvcr100.dll
 apitype: DLLExport
-f1_keywords: _abnormal_termination
-dev_langs: C++
-helpviewer_keywords: _abnormal_termination
+f1_keywords:
+- _abnormal_termination
+dev_langs:
+- C++
+helpviewer_keywords:
+- _abnormal_termination
 ms.assetid: 952970a4-9586-4c3d-807a-db729448c91c
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fc205afd297c7cce87ae630369551e02f3109d88
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

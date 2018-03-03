@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apilocation:
@@ -15,15 +16,19 @@ apilocation:
 - msvcr110.dll
 - msvcr90.dll
 apitype: DLLExport
-f1_keywords: scanf
-dev_langs: C++
-helpviewer_keywords: scanf function, width specification
+f1_keywords:
+- scanf
+dev_langs:
+- C++
+helpviewer_keywords:
+- scanf function, width specification
 ms.assetid: 94b4e8fe-c4a2-4799-8b6c-a2cf28ffb09c
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ee2fa7f80f47e2d3379bc4e68aec4496e8f4f01a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

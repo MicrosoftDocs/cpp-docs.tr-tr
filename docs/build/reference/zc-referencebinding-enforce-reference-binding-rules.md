@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 12/13/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - referenceBinding
 - /Zc:referenceBinding
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - -Zc compiler options (C++)
 - referenceBinding
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 0c6cfaac-9c2a-41a3-aa94-64ca8ef261fc
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0d3d352394b61f95e083a2e6e6f0d888fe210b37
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

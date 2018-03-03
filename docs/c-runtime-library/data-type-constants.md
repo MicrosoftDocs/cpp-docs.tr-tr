@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -46,7 +47,8 @@ f1_keywords:
 - UCHAR_MAX
 - FLT_EPSILON
 - UINT_MAX
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DBL_MAX_EXP constant
 - _DBL_RADIX constant
@@ -93,11 +95,12 @@ helpviewer_keywords:
 - FLT_MANT_DIG constant
 - SCHAR_MIN constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1702065a8157596d4366af31fed3f2a80d53149c
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

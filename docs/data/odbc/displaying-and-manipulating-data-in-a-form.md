@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - forms [C++], displaying data
 - displaying data [C++], forms
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - data [MFC]
 - data [MFC], displaying in a form
 ms.assetid: c56185c4-12cb-40b1-b499-02b29ea83e3a
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

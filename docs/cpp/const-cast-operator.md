@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: const_cast_cpp
-dev_langs: C++
-helpviewer_keywords: const_cast keyword [C++]
+f1_keywords:
+- const_cast_cpp
+dev_langs:
+- C++
+helpviewer_keywords:
+- const_cast keyword [C++]
 ms.assetid: 4d8bb203-ef33-4a10-9f9f-c64d4fbc1687
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 79c4aa00038f2d4d7e5cc3d1c86d2e28c6d44229
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

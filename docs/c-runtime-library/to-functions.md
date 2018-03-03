@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 apilocation:
@@ -15,8 +16,10 @@ apilocation:
 - msvcr80.dll
 - msvcr100.dll
 apitype: DLLExport
-f1_keywords: To
-dev_langs: C++
+f1_keywords:
+- To
+dev_langs:
+- C++
 helpviewer_keywords:
 - to functions
 - string conversion, to different characters
@@ -26,11 +29,12 @@ helpviewer_keywords:
 - case, converting
 - characters, converting
 ms.assetid: f636a4c6-8c9f-4be2-baac-064f9dbae300
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ef97b5e5ab2c21b375814cf117d6155b4a502795
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

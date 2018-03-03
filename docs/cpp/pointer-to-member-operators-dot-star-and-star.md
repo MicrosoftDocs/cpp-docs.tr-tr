@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - .*
 - ->*
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - expressions [C++], pointer
 - pointer-to-member operators [C++]
@@ -18,11 +20,12 @@ helpviewer_keywords:
 - expressions [C++], operators
 - ->* operator
 ms.assetid: 2632be3f-1c81-4523-b56c-982a92a68688
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6db7b7190a1374564071775ce2ea6c0777bdf567
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

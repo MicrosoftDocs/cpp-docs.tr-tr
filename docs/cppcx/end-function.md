@@ -7,15 +7,19 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: collection/Windows::Foundation::Collections::end
-dev_langs: C++
-helpviewer_keywords: end Function
+f1_keywords:
+- collection/Windows::Foundation::Collections::end
+dev_langs:
+- C++
+helpviewer_keywords:
+- end Function
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 264ffdad3d55ae9d2df44646240d42ac02d5fcb1
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

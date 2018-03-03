@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: _setjmp3
+apiname:
+- _setjmp3
 apilocation:
 - msvcrt.dll
 - msvcr90.dll
@@ -20,16 +22,18 @@ apitype: DLLExport
 f1_keywords:
 - setjmp3
 - _setjmp3
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _setjmp3 function
 - setjmp3 function
 ms.assetid: 6129c2f3-8bac-4fdb-a827-44e1eebba500
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 72bc1e833ddaa72979e25274b7328d8987f62763
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

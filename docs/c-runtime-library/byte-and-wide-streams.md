@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Byte and Wide Streams
-dev_langs: C++
+f1_keywords:
+- Byte and Wide Streams
+dev_langs:
+- C++
 helpviewer_keywords:
 - byte streams
 - wide streams
 ms.assetid: 61ef0587-4cbc-4eb8-aae5-4c298dbbc6f9
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4d09e110fd428b13e501647d97a0878df0e9392a
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

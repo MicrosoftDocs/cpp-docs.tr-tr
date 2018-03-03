@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ODBC recordsets, dynasets
 - ODBC cursor library [ODBC], dynasets
@@ -17,7 +19,7 @@ helpviewer_keywords:
 - recordsets [C++], dynasets
 - dynasets
 ms.assetid: 2867e6be-208e-4fe7-8bbe-b8697cb1045c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

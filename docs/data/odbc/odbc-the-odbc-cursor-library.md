@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - cursor library [ODBC]
 - snapshots, support in ODBC
@@ -23,7 +25,7 @@ helpviewer_keywords:
 - ODBC, timestamp
 - positioning cursors
 ms.assetid: 6608db92-82b1-4164-bb08-78153c227be3
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

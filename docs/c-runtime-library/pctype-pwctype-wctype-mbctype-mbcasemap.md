@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - _pctype
 - _wctype
 - _pcwtype
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - _wctype function
 - _pwctype function
@@ -30,11 +32,12 @@ helpviewer_keywords:
 - mbctype function
 - _mbcasemap function
 ms.assetid: 7f5e1107-c43b-4b9b-b387-781e6d2373cb
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9ee32f7dbb637b312a199b40190d47872c996b85
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

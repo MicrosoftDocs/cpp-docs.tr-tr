@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.TreatWChar_tAsBuiltInType
 - VC.Project.VCCLCompilerTool.TreatWChar_tAsBuiltInType
 - /Zc:wchar_t
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - /Zc compiler options [C++]
 - -Zc compiler options [C++]
@@ -19,11 +21,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: b0de5a84-da72-4e5a-9a4e-541099f939e0
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 3375e39120fdc8f2b0d8d5502aa6def997511ff5
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
