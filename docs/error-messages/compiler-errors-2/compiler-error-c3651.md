@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C3651
-dev_langs: C++
-helpviewer_keywords: C3651
+f1_keywords:
+- C3651
+dev_langs:
+- C++
+helpviewer_keywords:
+- C3651
 ms.assetid: a03e692e-c219-4654-9827-8415cfa5a22d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: ec89bd879bb4e54ec55206e4decfc1ecfb067afb
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

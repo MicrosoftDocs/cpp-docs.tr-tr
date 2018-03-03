@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: C3731
-dev_langs: C++
-helpviewer_keywords: C3731
+f1_keywords:
+- C3731
+dev_langs:
+- C++
+helpviewer_keywords:
+- C3731
 ms.assetid: 45f89fcd-464c-4bc8-8a42-edcb5416d26c
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 8c285e8d63787bc69600784aede49fe93f4e4bb2
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT
