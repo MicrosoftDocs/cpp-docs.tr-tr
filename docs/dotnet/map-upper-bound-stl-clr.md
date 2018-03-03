@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::map::upper_bound
-dev_langs: C++
-helpviewer_keywords: upper_bound member [STL/CLR]
+f1_keywords:
+- cliext::map::upper_bound
+dev_langs:
+- C++
+helpviewer_keywords:
+- upper_bound member [STL/CLR]
 ms.assetid: d772b4a8-d0dc-439a-8b5b-3c91836d9256
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

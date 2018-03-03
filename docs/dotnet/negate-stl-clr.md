@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::negate
-dev_langs: C++
-helpviewer_keywords: negate function [STL/CLR]
+f1_keywords:
+- cliext::negate
+dev_langs:
+- C++
+helpviewer_keywords:
+- negate function [STL/CLR]
 ms.assetid: 58e4c339-0dee-4db8-b2cc-de8920977039
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

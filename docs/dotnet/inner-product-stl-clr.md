@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::inner_product
-dev_langs: C++
-helpviewer_keywords: inner_product function [STL/CLR]
+f1_keywords:
+- cliext::inner_product
+dev_langs:
+- C++
+helpviewer_keywords:
+- inner_product function [STL/CLR]
 ms.assetid: 97d7a507-7494-4216-aedf-0546ed0edb3f
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

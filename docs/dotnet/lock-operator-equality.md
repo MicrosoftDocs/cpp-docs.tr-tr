@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - msclr.lock.operator==
 - msclr::lock::operator==
 - lock.operator==
-dev_langs: C++
-helpviewer_keywords: lock::operator==
+dev_langs:
+- C++
+helpviewer_keywords:
+- lock::operator==
 ms.assetid: 3dcf1e5a-53fc-495d-9df5-d7849a41c36c
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

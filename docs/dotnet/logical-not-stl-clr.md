@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::logical_not
-dev_langs: C++
-helpviewer_keywords: logical_not function [STL/CLR]
+f1_keywords:
+- cliext::logical_not
+dev_langs:
+- C++
+helpviewer_keywords:
+- logical_not function [STL/CLR]
 ms.assetid: 32a2c6e2-1c58-41ac-8827-f3ee5adfe81d
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

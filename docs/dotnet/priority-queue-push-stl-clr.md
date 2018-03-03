@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::priority_queue::push
-dev_langs: C++
-helpviewer_keywords: push member [STL/CLR]
+f1_keywords:
+- cliext::priority_queue::push
+dev_langs:
+- C++
+helpviewer_keywords:
+- push member [STL/CLR]
 ms.assetid: 317d3feb-0688-4658-866b-a26cae060354
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

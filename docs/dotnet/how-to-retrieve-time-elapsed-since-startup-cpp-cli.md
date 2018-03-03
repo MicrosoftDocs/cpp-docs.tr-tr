@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - time, elapsed since startup
 - counters, elapsed time
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - tick counts
 - startup
 ms.assetid: a31fdecc-099e-4dd1-a176-f682289c5dd0
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

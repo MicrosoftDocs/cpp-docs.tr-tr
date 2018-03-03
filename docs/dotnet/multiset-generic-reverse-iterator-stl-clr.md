@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::multiset::generic_reverse_iterator
-dev_langs: C++
-helpviewer_keywords: generic_reverse_iterator member [STL/CLR]
+f1_keywords:
+- cliext::multiset::generic_reverse_iterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- generic_reverse_iterator member [STL/CLR]
 ms.assetid: 263808db-e25a-4092-8516-446a8821527e
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

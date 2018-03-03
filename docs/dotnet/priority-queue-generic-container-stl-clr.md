@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::priority_queue::generic_container
-dev_langs: C++
-helpviewer_keywords: generic_container member [STL/CLR]
+f1_keywords:
+- cliext::priority_queue::generic_container
+dev_langs:
+- C++
+helpviewer_keywords:
+- generic_container member [STL/CLR]
 ms.assetid: b938c433-7ef1-4077-93c2-2aee8ddf4d67
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

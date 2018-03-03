@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::range_adapter::range_adapter
-dev_langs: C++
-helpviewer_keywords: range_adapter member [STL/CLR]
+f1_keywords:
+- cliext::range_adapter::range_adapter
+dev_langs:
+- C++
+helpviewer_keywords:
+- range_adapter member [STL/CLR]
 ms.assetid: b16af13f-3358-4e82-927d-d0d4986bcb18
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

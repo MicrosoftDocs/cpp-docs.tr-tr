@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::set_intersection
-dev_langs: C++
-helpviewer_keywords: set_intersection function [STL/CLR]
+f1_keywords:
+- cliext::set_intersection
+dev_langs:
+- C++
+helpviewer_keywords:
+- set_intersection function [STL/CLR]
 ms.assetid: 8a799b20-55a5-4fba-a9c1-a48597cbdae6
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

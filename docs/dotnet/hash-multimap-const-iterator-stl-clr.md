@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_multimap::const_iterator
-dev_langs: C++
-helpviewer_keywords: const_iterator member [STL/CLR]
+f1_keywords:
+- cliext::hash_multimap::const_iterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- const_iterator member [STL/CLR]
 ms.assetid: 3d54185c-7d30-41e6-8837-92e62448bc8e
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

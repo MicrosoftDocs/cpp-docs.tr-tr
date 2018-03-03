@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::lexicographical_compare
-dev_langs: C++
-helpviewer_keywords: lexicographical_compare function [STL/CLR]
+f1_keywords:
+- cliext::lexicographical_compare
+dev_langs:
+- C++
+helpviewer_keywords:
+- lexicographical_compare function [STL/CLR]
 ms.assetid: 9ec217f3-5523-4f90-a0cc-8fb7dbe4946b
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

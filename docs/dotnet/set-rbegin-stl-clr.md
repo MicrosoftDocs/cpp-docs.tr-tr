@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::set::rbegin
-dev_langs: C++
-helpviewer_keywords: rbegin member [STL/CLR]
+f1_keywords:
+- cliext::set::rbegin
+dev_langs:
+- C++
+helpviewer_keywords:
+- rbegin member [STL/CLR]
 ms.assetid: b9da72dc-0b75-489e-b179-74c27a4bcfb7
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

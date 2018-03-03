@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::multimap::make_value
-dev_langs: C++
-helpviewer_keywords: make_value member [STL/CLR]
+f1_keywords:
+- cliext::multimap::make_value
+dev_langs:
+- C++
+helpviewer_keywords:
+- make_value member [STL/CLR]
 ms.assetid: 9ae5ace0-e529-4247-8cd6-4e96c0611a75
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

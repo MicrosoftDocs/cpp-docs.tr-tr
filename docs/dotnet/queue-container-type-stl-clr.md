@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::queue::container_type
-dev_langs: C++
-helpviewer_keywords: container_type member [STL/CLR]
+f1_keywords:
+- cliext::queue::container_type
+dev_langs:
+- C++
+helpviewer_keywords:
+- container_type member [STL/CLR]
 ms.assetid: 118168f9-e5ed-47e2-a4f5-26b0b56e41e1
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

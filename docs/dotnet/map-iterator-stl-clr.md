@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::map::iterator
-dev_langs: C++
-helpviewer_keywords: iterator member [STL/CLR]
+f1_keywords:
+- cliext::map::iterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- iterator member [STL/CLR]
 ms.assetid: b2953b9b-0e6d-49f3-a28f-47d04d16d5f6
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

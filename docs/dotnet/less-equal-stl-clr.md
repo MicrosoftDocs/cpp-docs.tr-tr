@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::less_equal
-dev_langs: C++
-helpviewer_keywords: less_equal function [STL/CLR]
+f1_keywords:
+- cliext::less_equal
+dev_langs:
+- C++
+helpviewer_keywords:
+- less_equal function [STL/CLR]
 ms.assetid: 87d5bebc-6e5a-4d70-b15c-7260d06d50f0
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

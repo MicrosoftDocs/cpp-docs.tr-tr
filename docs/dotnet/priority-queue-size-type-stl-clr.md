@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::priority_queue::size_type
-dev_langs: C++
-helpviewer_keywords: size_type member [STL/CLR]
+f1_keywords:
+- cliext::priority_queue::size_type
+dev_langs:
+- C++
+helpviewer_keywords:
+- size_type member [STL/CLR]
 ms.assetid: 0f38e670-4f61-474a-990c-0b8cd31ada5e
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

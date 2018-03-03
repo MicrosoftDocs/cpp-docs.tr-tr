@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - substrings, simple matches
 - searching, exact substring matches
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - regular expressions [C++], simple matching
 - IsMatch method
 ms.assetid: 4661f6f3-0f6d-48f2-abe4-cb4770bf9bd5
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_set::erase
-dev_langs: C++
-helpviewer_keywords: erase member [STL/CLR]
+f1_keywords:
+- cliext::hash_set::erase
+dev_langs:
+- C++
+helpviewer_keywords:
+- erase member [STL/CLR]
 ms.assetid: 620998a0-00c9-4be6-899b-2d71661375b6
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

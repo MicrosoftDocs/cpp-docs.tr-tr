@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::set_symmetric_difference
-dev_langs: C++
-helpviewer_keywords: set_symmetric_difference function [STL/CLR]
+f1_keywords:
+- cliext::set_symmetric_difference
+dev_langs:
+- C++
+helpviewer_keywords:
+- set_symmetric_difference function [STL/CLR]
 ms.assetid: 4d8997c7-038e-42a8-86d4-81d714ed3775
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

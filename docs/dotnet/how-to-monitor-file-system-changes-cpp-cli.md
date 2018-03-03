@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - monitoring file system events
 - FileSystemWatcher class, examples
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - events [C++], monitoring
 - file system events [C++]
 ms.assetid: 207a3069-e63d-417e-8b56-00ab44f29c52
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

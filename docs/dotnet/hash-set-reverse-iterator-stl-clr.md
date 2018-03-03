@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_set::reverse_iterator
-dev_langs: C++
-helpviewer_keywords: reverse_iterator member [STL/CLR]
+f1_keywords:
+- cliext::hash_set::reverse_iterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- reverse_iterator member [STL/CLR]
 ms.assetid: 24180a51-7426-4319-9e59-65a5957de54e
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

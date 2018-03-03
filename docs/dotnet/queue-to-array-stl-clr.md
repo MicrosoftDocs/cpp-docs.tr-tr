@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::queue::to_array
-dev_langs: C++
-helpviewer_keywords: to_array member [STL/CLR]
+f1_keywords:
+- cliext::queue::to_array
+dev_langs:
+- C++
+helpviewer_keywords:
+- to_array member [STL/CLR]
 ms.assetid: a76a9add-659c-4dcc-a342-de7263946496
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

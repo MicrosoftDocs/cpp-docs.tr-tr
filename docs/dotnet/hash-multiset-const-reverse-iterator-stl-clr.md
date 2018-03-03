@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_multiset::const_reverse_iterator
-dev_langs: C++
-helpviewer_keywords: const_reverse_iterator member [STL/CLR]
+f1_keywords:
+- cliext::hash_multiset::const_reverse_iterator
+dev_langs:
+- C++
+helpviewer_keywords:
+- const_reverse_iterator member [STL/CLR]
 ms.assetid: 55214d17-94c3-4517-8996-ae28ff37225b
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

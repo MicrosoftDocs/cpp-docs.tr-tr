@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::stack::top
-dev_langs: C++
-helpviewer_keywords: top member [STL/CLR]
+f1_keywords:
+- cliext::stack::top
+dev_langs:
+- C++
+helpviewer_keywords:
+- top member [STL/CLR]
 ms.assetid: 5d8b7b69-336e-4d01-8b91-413a17aa2533
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

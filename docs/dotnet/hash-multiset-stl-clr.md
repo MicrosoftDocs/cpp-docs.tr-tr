@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_multiset
-dev_langs: C++
+f1_keywords:
+- cliext::hash_multiset
+dev_langs:
+- C++
 helpviewer_keywords:
 - <cliext/hash_set> header [STL/CLR]
 - hash_multiset class [STL/CLR]
 - <hash_set> header [STL/CLR]
 ms.assetid: 8462bd21-6829-4dd3-ac81-c42d6fdf92f0
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

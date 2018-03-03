@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_map
-dev_langs: C++
+f1_keywords:
+- cliext::hash_map
+dev_langs:
+- C++
 helpviewer_keywords:
 - <cliext/hash_map> header [STL/CLR]
 - <hash_map> header [STL/CLR]
 - hash_map class [STL/CLR]
 ms.assetid: c3cfc69b-04c6-42ae-a30e-0eda953fe883
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

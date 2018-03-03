@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_set::hash_delegate
-dev_langs: C++
-helpviewer_keywords: hash_delegate member [STL/CLR]
+f1_keywords:
+- cliext::hash_set::hash_delegate
+dev_langs:
+- C++
+helpviewer_keywords:
+- hash_delegate member [STL/CLR]
 ms.assetid: 34e39d2d-f2ef-4755-9201-3cdb4e41ea56
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

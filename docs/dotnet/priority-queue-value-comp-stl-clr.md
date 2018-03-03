@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::priority_queue::value_comp
-dev_langs: C++
-helpviewer_keywords: value_comp member [STL/CLR]
+f1_keywords:
+- cliext::priority_queue::value_comp
+dev_langs:
+- C++
+helpviewer_keywords:
+- value_comp member [STL/CLR]
 ms.assetid: af28e541-087d-4837-9ff0-cd36d4cfc57a
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

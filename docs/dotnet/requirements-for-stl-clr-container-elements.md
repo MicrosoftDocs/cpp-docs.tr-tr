@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - C++ Standard Library, template class containers
 - STL/CLR, containers
 - containers, STL/CLR
 - containers, C++ Standard Library
 ms.assetid: 59ab240c-15bf-4701-a9f9-e7c56e5ab53f
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

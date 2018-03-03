@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::modulus
-dev_langs: C++
-helpviewer_keywords: modulus function [STL/CLR]
+f1_keywords:
+- cliext::modulus
+dev_langs:
+- C++
+helpviewer_keywords:
+- modulus function [STL/CLR]
 ms.assetid: 49907edd-6e32-4c81-8ef2-e9c6f512437f
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

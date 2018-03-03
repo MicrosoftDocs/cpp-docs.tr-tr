@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::stack::generic_container
-dev_langs: C++
-helpviewer_keywords: generic_container member [STL/CLR]
+f1_keywords:
+- cliext::stack::generic_container
+dev_langs:
+- C++
+helpviewer_keywords:
+- generic_container member [STL/CLR]
 ms.assetid: 00f106c4-2a02-41cd-80de-f413c9355c74
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

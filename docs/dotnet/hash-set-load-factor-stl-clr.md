@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_set::load_factor
-dev_langs: C++
-helpviewer_keywords: load_factor member [STL/CLR]
+f1_keywords:
+- cliext::hash_set::load_factor
+dev_langs:
+- C++
+helpviewer_keywords:
+- load_factor member [STL/CLR]
 ms.assetid: 84fbcdd8-0457-4a20-9f54-0a7c9612f4dd
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

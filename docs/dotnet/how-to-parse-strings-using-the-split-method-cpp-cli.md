@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - parsing strings [C++]
 - examples [C++], strings
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - Split method, parsing strings
 - strings [C++], parsing
 ms.assetid: d52d2539-5ebb-4716-86b3-07314dd7e4bd
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

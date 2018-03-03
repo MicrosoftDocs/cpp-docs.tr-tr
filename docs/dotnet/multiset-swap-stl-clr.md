@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::multiset::swap
-dev_langs: C++
-helpviewer_keywords: swap member [STL/CLR]
+f1_keywords:
+- cliext::multiset::swap
+dev_langs:
+- C++
+helpviewer_keywords:
+- swap member [STL/CLR]
 ms.assetid: 8a3023c7-e58b-4ffe-8fd5-2e0bf02cc291
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
-helpviewer_keywords: lock class
+dev_langs:
+- C++
+helpviewer_keywords:
+- lock class
 ms.assetid: 5d468122-875d-4e81-b5ba-c9486a873335
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

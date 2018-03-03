@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - migration [C++], verifiable assemblies
 - upgrading Visual C++ applications, verifiable assemblies
 - verifiable assemblies [C++], migrating to
 - /clr compiler option [C++], migrating to /clr:safe
 ms.assetid: 75f9aae9-1dcc-448a-aa11-2d96f972f9d2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

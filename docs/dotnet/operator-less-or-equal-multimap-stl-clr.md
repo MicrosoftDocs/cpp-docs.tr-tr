@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::multimap::operator<=
-dev_langs: C++
-helpviewer_keywords: operator<= member [STL/CLR]
+f1_keywords:
+- cliext::multimap::operator<=
+dev_langs:
+- C++
+helpviewer_keywords:
+- operator<= member [STL/CLR]
 ms.assetid: f23cdacd-fb1b-4e87-8e32-497226841871
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

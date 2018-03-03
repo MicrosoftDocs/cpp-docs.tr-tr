@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - msclr.com.ptr.Detach
 - ptr::Detach
 - msclr::com::ptr::Detach
-dev_langs: C++
-helpviewer_keywords: ptr::Detach
+dev_langs:
+- C++
+helpviewer_keywords:
+- ptr::Detach
 ms.assetid: 23370c8a-8f79-4880-9fa1-46e110c1a92c
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

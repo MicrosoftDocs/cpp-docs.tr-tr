@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - ptr::Attach
 - ptr.Attach
 - msclr.com.ptr.Attach
-dev_langs: C++
-helpviewer_keywords: Attach method
+dev_langs:
+- C++
+helpviewer_keywords:
+- Attach method
 ms.assetid: 81d930de-cb2a-4c30-9bd6-94d65942c47a
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

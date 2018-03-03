@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::logical_or
-dev_langs: C++
-helpviewer_keywords: logical_or function [STL/CLR]
+f1_keywords:
+- cliext::logical_or
+dev_langs:
+- C++
+helpviewer_keywords:
+- logical_or function [STL/CLR]
 ms.assetid: 3b5eac9b-4aaf-4395-8d76-49100487d85a
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

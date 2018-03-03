@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - initonly_cpp
 - initonly
-dev_langs: C++
-helpviewer_keywords: initonly attribute [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- initonly attribute [C++]
 ms.assetid: f745d7fa-dc08-46f1-9b97-0977be58a008
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

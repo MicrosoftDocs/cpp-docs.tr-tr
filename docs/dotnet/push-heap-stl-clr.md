@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::push_heap
-dev_langs: C++
-helpviewer_keywords: push_heap function [STL/CLR]
+f1_keywords:
+- cliext::push_heap
+dev_langs:
+- C++
+helpviewer_keywords:
+- push_heap function [STL/CLR]
 ms.assetid: 184fe1d9-5f75-4c11-adbb-84b6b5c8ecd3
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

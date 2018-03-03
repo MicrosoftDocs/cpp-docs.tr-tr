@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - msclr::com::ptr::CreateInstance
 - msclr.com.ptr.CreateInstance
 - ptr::CreateInstance
-dev_langs: C++
-helpviewer_keywords: ptr::CreateInstance
+dev_langs:
+- C++
+helpviewer_keywords:
+- ptr::CreateInstance
 ms.assetid: 9e8e4c4c-1651-4839-8829-5857d74470fe
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

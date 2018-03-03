@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::map::mapped_type
-dev_langs: C++
-helpviewer_keywords: mapped_type member [STL/CLR]
+f1_keywords:
+- cliext::map::mapped_type
+dev_langs:
+- C++
+helpviewer_keywords:
+- mapped_type member [STL/CLR]
 ms.assetid: 818ee40d-8355-446e-a7b2-eb5bf8cc689d
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

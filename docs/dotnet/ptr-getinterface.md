@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -13,10 +14,12 @@ f1_keywords:
 - GetInterface
 - msclr.com.ptr.GetInterface
 - ptr.GetInterface
-dev_langs: C++
-helpviewer_keywords: GetInterface method
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetInterface method
 ms.assetid: d85553ec-fb88-4fd6-9df2-ddcaa8b2dc70
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
