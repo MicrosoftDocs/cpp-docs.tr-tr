@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::get_Status
-dev_langs: C++
-helpviewer_keywords: get_Status method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::get_Status
+dev_langs:
+- C++
+helpviewer_keywords:
+- get_Status method
 ms.assetid: 9823ecb9-212e-471d-b76f-7b8f21208905
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

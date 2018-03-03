@@ -13,17 +13,19 @@ f1_keywords:
 - type_traits/std::result_of
 - type_traits/std::result_of_t
 - type_traits/std::result_of::type
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - std::result_of
 - std::result_of_t
 - std::result_of::type
 ms.assetid: 5374a096-4b4a-4712-aa97-6852c5cdd6be
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 256f24ad40234db2bbc191a50b0d7e05de39c073
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

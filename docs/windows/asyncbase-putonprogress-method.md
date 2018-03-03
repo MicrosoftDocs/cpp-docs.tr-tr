@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::PutOnProgress
-dev_langs: C++
-helpviewer_keywords: PutOnProgress method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::PutOnProgress
+dev_langs:
+- C++
+helpviewer_keywords:
+- PutOnProgress method
 ms.assetid: 1f5f180e-eb5a-4afe-ac16-69dbf36f0383
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

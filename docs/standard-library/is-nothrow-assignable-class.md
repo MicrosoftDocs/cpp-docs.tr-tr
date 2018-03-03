@@ -9,15 +9,19 @@ ms.technology:
 - devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: type_traits/std::is_nothrow_assignable
-dev_langs: C++
-helpviewer_keywords: is_nothrow_assignable
+f1_keywords:
+- type_traits/std::is_nothrow_assignable
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_nothrow_assignable
 ms.assetid: aa3aca92-308b-4b1d-b3f3-c54216c48fe7
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: fe32798dc98335dbada12e1914a77e89f0d78a25
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

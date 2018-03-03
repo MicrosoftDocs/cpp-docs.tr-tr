@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::TryTransitionToError
-dev_langs: C++
-helpviewer_keywords: TryTransitionToError method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::TryTransitionToError
+dev_langs:
+- C++
+helpviewer_keywords:
+- TryTransitionToError method
 ms.assetid: f6d11c25-1ce3-43f9-af1c-97c4dc0f6f0f
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

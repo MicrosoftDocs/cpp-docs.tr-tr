@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::GetOnComplete
-dev_langs: C++
-helpviewer_keywords: GetOnComplete method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::GetOnComplete
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetOnComplete method
 ms.assetid: f06ae02d-9a88-41d2-b749-bdc1a7ff8748
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

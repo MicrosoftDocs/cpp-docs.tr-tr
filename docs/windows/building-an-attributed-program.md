@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tlb files
 - MIDL
@@ -21,7 +23,7 @@ helpviewer_keywords:
 - .idl files, building
 - type libraries, linker options for building
 ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

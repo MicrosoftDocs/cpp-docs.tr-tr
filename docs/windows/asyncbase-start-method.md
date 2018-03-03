@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::Start
-dev_langs: C++
-helpviewer_keywords: Start method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::Start
+dev_langs:
+- C++
+helpviewer_keywords:
+- Start method
 ms.assetid: 67405c9d-0d1a-4c1e-8ea4-6ba01c1f90d9
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

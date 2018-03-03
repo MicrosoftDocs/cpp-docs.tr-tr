@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::Cancel
-dev_langs: C++
-helpviewer_keywords: Cancel method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::Cancel
+dev_langs:
+- C++
+helpviewer_keywords:
+- Cancel method
 ms.assetid: 8bfebc63-3848-4629-bc89-aa538ed7e7ad
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

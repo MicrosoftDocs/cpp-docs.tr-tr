@@ -9,15 +9,19 @@ ms.technology:
 - devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: type_traits/std::is_nothrow_constructible
-dev_langs: C++
-helpviewer_keywords: is_nothrow_constructible
+f1_keywords:
+- type_traits/std::is_nothrow_constructible
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_nothrow_constructible
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 02698c90714ae530e827d9bfbe6cdc7ce1fd0abf
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

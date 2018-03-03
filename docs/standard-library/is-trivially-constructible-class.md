@@ -9,15 +9,19 @@ ms.technology:
 - devlang-cpp
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: type_traits/std::is_trivially_constructible
-dev_langs: C++
-helpviewer_keywords: is_trivially_constructible
+f1_keywords:
+- type_traits/std::is_trivially_constructible
+dev_langs:
+- C++
+helpviewer_keywords:
+- is_trivially_constructible
 ms.assetid: 3fa918c1-e66f-4d0e-a11b-be1fb2c02e7b
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0a01ee89c1bb07ab0ca3c9c54161b7d9a3097be3
 ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
 ms.translationtype: MT

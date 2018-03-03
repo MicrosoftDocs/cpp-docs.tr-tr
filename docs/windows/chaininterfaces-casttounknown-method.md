@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::ChainInterfaces::CastToUnknown
-dev_langs: C++
-helpviewer_keywords: CastToUnknown method
+f1_keywords:
+- implements/Microsoft::WRL::ChainInterfaces::CastToUnknown
+dev_langs:
+- C++
+helpviewer_keywords:
+- CastToUnknown method
 ms.assetid: a6a58555-e5b0-4773-aba0-959d9d362c6b
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
