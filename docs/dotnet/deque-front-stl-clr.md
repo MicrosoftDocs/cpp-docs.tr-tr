@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::deque::front
-dev_langs: C++
-helpviewer_keywords: front member [STL/CLR]
+f1_keywords:
+- cliext::deque::front
+dev_langs:
+- C++
+helpviewer_keywords:
+- front member [STL/CLR]
 ms.assetid: eb8cb5f2-346d-4d7a-bb7b-cf67fe4318e8
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

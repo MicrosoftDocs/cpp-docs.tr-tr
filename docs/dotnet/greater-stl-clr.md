@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::greater
-dev_langs: C++
-helpviewer_keywords: greater function [STL/CLR]
+f1_keywords:
+- cliext::greater
+dev_langs:
+- C++
+helpviewer_keywords:
+- greater function [STL/CLR]
 ms.assetid: a6dfe5e3-b5a5-4ec4-8e53-8dd33a37d10d
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

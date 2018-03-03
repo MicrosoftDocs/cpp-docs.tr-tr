@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::deque::operator[]
-dev_langs: C++
-helpviewer_keywords: operatormember [] [STL/CLR]
+f1_keywords:
+- cliext::deque::operator[]
+dev_langs:
+- C++
+helpviewer_keywords:
+- operatormember [] [STL/CLR]
 ms.assetid: d7653bb5-db48-4637-a25c-e7303e5d28da
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::adjacent_difference
-dev_langs: C++
-helpviewer_keywords: adjacent_difference function
+f1_keywords:
+- cliext::adjacent_difference
+dev_langs:
+- C++
+helpviewer_keywords:
+- adjacent_difference function
 ms.assetid: 2b462e2e-b8f2-4b2e-9b87-5f688d8da9f4
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

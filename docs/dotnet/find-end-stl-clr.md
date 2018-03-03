@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::find_end
-dev_langs: C++
-helpviewer_keywords: find_end function [STL/CLR]
+f1_keywords:
+- cliext::find_end
+dev_langs:
+- C++
+helpviewer_keywords:
+- find_end function [STL/CLR]
 ms.assetid: a2008414-163a-4da2-9ac6-4e3c85a02d38
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

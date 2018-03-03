@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ADO.NET [C++]
 - .NET Framework [C++], data access
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - data access [C++], ADO.NET
 - data [C++], ADO.NET
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

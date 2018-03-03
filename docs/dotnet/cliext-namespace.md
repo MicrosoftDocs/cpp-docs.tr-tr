@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext
-dev_langs: C++
+f1_keywords:
+- cliext
+dev_langs:
+- C++
 helpviewer_keywords:
 - STL/CLR, namespace
 - namespaces [C++], C++
 - namespaces [C++], STL/CLR
 - cliext namespace
 ms.assetid: 75a0c1f8-6e21-46d5-adaf-899845c15b38
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

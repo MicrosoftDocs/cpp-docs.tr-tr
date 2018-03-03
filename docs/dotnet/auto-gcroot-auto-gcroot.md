@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - auto_gcroot::auto_gcroot
 - auto_gcroot.auto_gcroot
 - msclr.auto_gcroot.auto_gcroot
-dev_langs: C++
-helpviewer_keywords: auto_gcroot::auto_gcroot
+dev_langs:
+- C++
+helpviewer_keywords:
+- auto_gcroot::auto_gcroot
 ms.assetid: 27faa42a-64ea-4d31-836f-073a55145735
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

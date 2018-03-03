@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_map::generic_value
-dev_langs: C++
-helpviewer_keywords: generic_value member [STL/CLR]
+f1_keywords:
+- cliext::hash_map::generic_value
+dev_langs:
+- C++
+helpviewer_keywords:
+- generic_value member [STL/CLR]
 ms.assetid: e370feb3-3d2d-493e-b29d-4e97756c33b0
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

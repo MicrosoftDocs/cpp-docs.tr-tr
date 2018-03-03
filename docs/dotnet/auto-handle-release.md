@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -12,10 +13,12 @@ f1_keywords:
 - auto_handle.release
 - msclr.auto_handle.release
 - auto_handle::release
-dev_langs: C++
-helpviewer_keywords: auto_handle::release
+dev_langs:
+- C++
+helpviewer_keywords:
+- auto_handle::release
 ms.assetid: d4848150-859e-4c61-a946-09d24d3d6577
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
