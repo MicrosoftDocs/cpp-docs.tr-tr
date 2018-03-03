@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: cliext::hash_multimap::rbegin
-dev_langs: C++
-helpviewer_keywords: rbegin member [STL/CLR]
+f1_keywords:
+- cliext::hash_multimap::rbegin
+dev_langs:
+- C++
+helpviewer_keywords:
+- rbegin member [STL/CLR]
 ms.assetid: f5ce0614-3c73-4cec-9fa2-efadf0fd36c7
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

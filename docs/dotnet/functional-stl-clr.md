@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: <cliext/functional>
-dev_langs: C++
+f1_keywords:
+- <cliext/functional>
+dev_langs:
+- C++
 helpviewer_keywords:
 - <functional> header [STL/CLR]
 - <cliext/functional> header [STL/CLR]
 - functional functions [STL/CLR]
 ms.assetid: 88738b8c-5d37-4375-970e-a4442bf5efde
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
