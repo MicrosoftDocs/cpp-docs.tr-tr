@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.appwiz.mfc.ctl.settings
-dev_langs: C++
-helpviewer_keywords: MFC ActiveX Control Wizard, control settings
+f1_keywords:
+- vc.appwiz.mfc.ctl.settings
+dev_langs:
+- C++
+helpviewer_keywords:
+- MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 60828b7f40009a5fd88c7f0a7f820ede3de4aa93
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

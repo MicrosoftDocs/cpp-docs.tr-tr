@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.licensed
-dev_langs: C++
-helpviewer_keywords: licensed attribute
+f1_keywords:
+- vc-attr.licensed
+dev_langs:
+- C++
+helpviewer_keywords:
+- licensed attribute
 ms.assetid: 09cf3b4a-d3f2-43e3-9180-d420333b23bf
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

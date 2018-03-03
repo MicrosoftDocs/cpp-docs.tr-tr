@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.coclass
-dev_langs: C++
-helpviewer_keywords: coclass attribute
+f1_keywords:
+- vc-attr.coclass
+dev_langs:
+- C++
+helpviewer_keywords:
+- coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

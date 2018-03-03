@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.length_is
-dev_langs: C++
-helpviewer_keywords: length_is attribute
+f1_keywords:
+- vc-attr.length_is
+dev_langs:
+- C++
+helpviewer_keywords:
+- length_is attribute
 ms.assetid: 1d99b883-84bb-4b1e-b098-eb780fc94f40
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.defaultvtable
-dev_langs: C++
-helpviewer_keywords: defaultvtable attribute
+f1_keywords:
+- vc-attr.defaultvtable
+dev_langs:
+- C++
+helpviewer_keywords:
+- defaultvtable attribute
 ms.assetid: 5b3ed483-f69e-44dd-80fc-952028eb9d73
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

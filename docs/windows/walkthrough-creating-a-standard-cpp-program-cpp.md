@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 f1_keywords:
 - vcfirstapp
 - vccreatefirst
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - command-line applications [C++], standard
 - standard applications [C++]
 ms.assetid: 48217e35-d892-46b7-93e3-f6f0b7e2da35
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

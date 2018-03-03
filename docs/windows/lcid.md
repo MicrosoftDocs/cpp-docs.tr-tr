@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.lcid
-dev_langs: C++
-helpviewer_keywords: LCID attribute
+f1_keywords:
+- vc-attr.lcid
+dev_langs:
+- C++
+helpviewer_keywords:
+- LCID attribute
 ms.assetid: 7f248c69-ee1c-42c3-9411-39cf27c9f43d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

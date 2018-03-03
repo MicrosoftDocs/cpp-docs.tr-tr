@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 1/04/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MBCS
 - MFC
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: d6f134110ff95956cc37d6e038a680ff27cbc298
 ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
 ms.translationtype: MT

@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.toolbar
-dev_langs: C++
+f1_keywords:
+- vc.editors.toolbar
+dev_langs:
+- C++
 helpviewer_keywords:
 - Toolbar editor, creating buttons
 - toolbar buttons (in Toolbar editor), button image
 - toolbar buttons (in Toolbar editor), creating
 - toolbar buttons (in Toolbar editor)
 ms.assetid: 46c120fe-4f2a-4887-a08f-bd1fea04b3f4
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

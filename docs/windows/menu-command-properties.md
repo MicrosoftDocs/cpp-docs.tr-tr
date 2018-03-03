@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: menu items, properties
+dev_langs:
+- C++
+helpviewer_keywords:
+- menu items, properties
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::ComPtr::InternalAddRef
-dev_langs: C++
-helpviewer_keywords: InternalAddRef method
+f1_keywords:
+- client/Microsoft::WRL::ComPtr::InternalAddRef
+dev_langs:
+- C++
+helpviewer_keywords:
+- InternalAddRef method
 ms.assetid: f8e860ef-c56e-42a6-a712-77aaab1464ab
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

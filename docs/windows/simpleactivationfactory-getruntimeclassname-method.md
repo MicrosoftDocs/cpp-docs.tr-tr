@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName
-dev_langs: C++
+f1_keywords:
+- module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName
+dev_langs:
+- C++
 ms.assetid: 3aa07487-9a42-46f8-8893-37ba6315e50b
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

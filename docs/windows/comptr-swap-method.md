@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::ComPtr::Swap
-dev_langs: C++
-helpviewer_keywords: Swap method
+f1_keywords:
+- client/Microsoft::WRL::ComPtr::Swap
+dev_langs:
+- C++
+helpviewer_keywords:
+- Swap method
 ms.assetid: 74275f00-b24e-4b4c-b8b6-ac2aa2dd7ae9
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

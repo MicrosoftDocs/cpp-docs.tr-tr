@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::WeakRef::AsIID
-dev_langs: C++
-helpviewer_keywords: AsIID method
+f1_keywords:
+- client/Microsoft::WRL::WeakRef::AsIID
+dev_langs:
+- C++
+helpviewer_keywords:
+- AsIID method
 ms.assetid: 94e87309-32da-4dbb-8233-e77313a1f448
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

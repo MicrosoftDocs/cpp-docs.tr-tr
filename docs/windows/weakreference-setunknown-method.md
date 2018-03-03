@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::WeakReference::SetUnknown
-dev_langs: C++
-helpviewer_keywords: SetUnknown method
+f1_keywords:
+- implements/Microsoft::WRL::Details::WeakReference::SetUnknown
+dev_langs:
+- C++
+helpviewer_keywords:
+- SetUnknown method
 ms.assetid: 5dddb9e3-a7c1-4195-8166-97c5ab6e972f
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

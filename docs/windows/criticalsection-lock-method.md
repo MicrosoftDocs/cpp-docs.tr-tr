@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::CriticalSection::Lock
-dev_langs: C++
-helpviewer_keywords: Lock method
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::CriticalSection::Lock
+dev_langs:
+- C++
+helpviewer_keywords:
+- Lock method
 ms.assetid: 37cb184c-e13c-49ef-b6a0-13908a956414
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.customimage
-dev_langs: C++
-helpviewer_keywords: Custom Image dialog box
+f1_keywords:
+- vc.editors.customimage
+dev_langs:
+- C++
+helpviewer_keywords:
+- Custom Image dialog box
 ms.assetid: 68e2cc5c-19de-428e-bc25-ec6b260247d0
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

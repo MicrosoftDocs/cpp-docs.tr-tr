@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.drawing
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.drawing
+dev_langs:
+- C++
 helpviewer_keywords:
 - Image editor [C++], selecting drawing tools
 - Image editor [C++], toolbar
 - drawing tools
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

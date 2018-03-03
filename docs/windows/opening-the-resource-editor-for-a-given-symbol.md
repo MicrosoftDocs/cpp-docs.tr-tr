@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.resource
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.resource
+dev_langs:
+- C++
 helpviewer_keywords:
 - resource symbols
 - View Use button
 - resource editors, resource symbols
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

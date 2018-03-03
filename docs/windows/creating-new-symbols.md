@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.creating
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.creating
+dev_langs:
+- C++
 helpviewer_keywords:
 - New Symbol dialog box
 - symbols, creating
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

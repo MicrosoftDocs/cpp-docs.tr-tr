@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/08/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - interoperability [C++], Windows Forms in MFC
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - interop [C++], MFC
 - Windows Forms [C++], MFC support
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

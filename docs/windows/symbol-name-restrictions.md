@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.restrictions.name
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.restrictions.name
+dev_langs:
+- C++
 helpviewer_keywords:
 - symbol names
 - symbols, names
 - restrictions, symbol names
 ms.assetid: 4ae7f695-ca86-4f4b-989a-fe6f89650ff7
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

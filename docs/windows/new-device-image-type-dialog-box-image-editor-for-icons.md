@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.newimagetype
-dev_langs: C++
-helpviewer_keywords: New <Device> Image Type dialog box
+f1_keywords:
+- vc.editors.newimagetype
+dev_langs:
+- C++
+helpviewer_keywords:
+- New <Device> Image Type dialog box
 ms.assetid: 9c1344f5-dea0-42cd-9042-b13032f72be2
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

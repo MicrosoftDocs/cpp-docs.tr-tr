@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - safe_cast
 - safe_cast_cpp
 - stdcli::language::safe_cast
-dev_langs: C++
-helpviewer_keywords: safe_cast keyword [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

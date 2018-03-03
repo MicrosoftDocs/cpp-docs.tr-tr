@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Module::IncrementObjectCount
-dev_langs: C++
-helpviewer_keywords: IncrementObjectCount method
+f1_keywords:
+- module/Microsoft::WRL::Module::IncrementObjectCount
+dev_langs:
+- C++
+helpviewer_keywords:
+- IncrementObjectCount method
 ms.assetid: 268b79be-15c3-4b07-884e-18da2c7281f2
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

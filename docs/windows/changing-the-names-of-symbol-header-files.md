@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.changing.header
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.changing.header
+dev_langs:
+- C++
 helpviewer_keywords:
 - resource files, multiple
 - Resource Includes dialog box
@@ -19,7 +22,7 @@ helpviewer_keywords:
 - symbols, symbol header files
 - Resource.h
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

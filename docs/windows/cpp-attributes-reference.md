@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: 'index-page '
-dev_langs: C++
-helpviewer_keywords: attributes [C++], reference topics
+dev_langs:
+- C++
+helpviewer_keywords:
+- attributes [C++], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.range
-dev_langs: C++
-helpviewer_keywords: range attribute
+f1_keywords:
+- vc-attr.range
+dev_langs:
+- C++
+helpviewer_keywords:
+- range attribute
 ms.assetid: f352f79e-ecb3-4cdd-9cdd-8406ef473594
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

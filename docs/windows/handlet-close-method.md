@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::HandleT::Close
-dev_langs: C++
-helpviewer_keywords: Close method
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::HandleT::Close
+dev_langs:
+- C++
+helpviewer_keywords:
+- Close method
 ms.assetid: 1b9d597c-abcf-4028-a068-0344560009f6
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

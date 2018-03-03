@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Module::GetActivationFactory
-dev_langs: C++
-helpviewer_keywords: GetActivationFactory method
+f1_keywords:
+- module/Microsoft::WRL::Module::GetActivationFactory
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetActivationFactory method
 ms.assetid: 59da8844-072e-414b-b89c-1db1cc4fd81d
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

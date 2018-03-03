@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.version
-dev_langs: C++
+f1_keywords:
+- vc.editors.version
+dev_langs:
+- C++
 helpviewer_keywords:
 - languages, version information
 - New Version Info Block
@@ -16,7 +19,7 @@ helpviewer_keywords:
 - resources [Visual Studio], adding version information
 - version information, adding for languages
 ms.assetid: 17f6273c-e1cc-441a-a3d8-f564341cbf20
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

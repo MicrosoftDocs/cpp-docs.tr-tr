@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.resvw.add.MFC
-dev_langs: C++
+f1_keywords:
+- vc.resvw.add.MFC
+dev_langs:
+- C++
 helpviewer_keywords:
 - rc files, adding MFC support
 - .rc files, adding MFC support
 - MFC, adding support to resource scripts files
 - resource script files, adding MFC support
 ms.assetid: 599dfe9d-ad26-4e34-899c-49b56599e37f
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

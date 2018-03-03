@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -83,7 +84,8 @@ f1_keywords:
 - AFXCMN/CRichEditCtrl::StreamIn
 - AFXCMN/CRichEditCtrl::StreamOut
 - AFXCMN/CRichEditCtrl::Undo
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CRichEditCtrl [MFC], CRichEditCtrl
 - CRichEditCtrl [MFC], CanPaste
@@ -159,11 +161,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-caps.latest.revision: "26"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 03ef5135130590d142e9725e1d064b932cc7ff4d
 ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT

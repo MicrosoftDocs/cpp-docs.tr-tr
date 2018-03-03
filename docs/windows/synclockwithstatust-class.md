@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT
-dev_langs: C++
-helpviewer_keywords: SyncLockWithStatusT class
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT
+dev_langs:
+- C++
+helpviewer_keywords:
+- SyncLockWithStatusT class
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

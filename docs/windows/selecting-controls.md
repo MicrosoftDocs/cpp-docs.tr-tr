@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Dialog editor, selecting controls
 - dominant controls
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - size, controls
 - controls [C++], dominant
 ms.assetid: 27f05450-4550-4229-9f4c-2c9e06365596
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.changing
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.changing
+dev_langs:
+- C++
 helpviewer_keywords:
 - symbol names
 - symbols, names
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

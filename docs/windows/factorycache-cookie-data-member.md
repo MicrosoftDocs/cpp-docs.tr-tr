@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Details::FactoryCache::cookie
-dev_langs: C++
-helpviewer_keywords: cookie data member
+f1_keywords:
+- module/Microsoft::WRL::Details::FactoryCache::cookie
+dev_langs:
+- C++
+helpviewer_keywords:
+- cookie data member
 ms.assetid: b1bc79af-a896-4e3b-8afa-64733022eddf
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

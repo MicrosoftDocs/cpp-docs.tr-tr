@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Module::GetObjectCount
-dev_langs: C++
-helpviewer_keywords: GetObjectCount method
+f1_keywords:
+- module/Microsoft::WRL::Module::GetObjectCount
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetObjectCount method
 ms.assetid: 9fe29747-7e7f-40f2-9f6b-9a206b17fa8e
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

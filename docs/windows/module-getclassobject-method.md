@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Module::GetClassObject
-dev_langs: C++
-helpviewer_keywords: GetClassObject method
+f1_keywords:
+- module/Microsoft::WRL::Module::GetClassObject
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetClassObject method
 ms.assetid: 95b0de1b-f728-4f96-9f44-f6ea71ce56e4
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
-helpviewer_keywords: attributes [C++], contexts
+dev_langs:
+- C++
+helpviewer_keywords:
+- attributes [C++], contexts
 ms.assetid: 3086351f-77a8-4048-99e9-3b6b041b9437
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

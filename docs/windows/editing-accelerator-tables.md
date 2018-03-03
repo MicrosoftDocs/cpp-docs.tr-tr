@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.accelerator
-dev_langs: C++
+f1_keywords:
+- vc.editors.accelerator
+dev_langs:
+- C++
 helpviewer_keywords:
 - accelerator tables [C++], editing
 - keyboard shortcuts [C++], editing in an accelerator table
 ms.assetid: 56e24efb-d06b-4ed9-8915-1f99f725e247
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: SafeLessThanEquals
-dev_langs: C++
-helpviewer_keywords: SafeLessThanEquals function
+f1_keywords:
+- SafeLessThanEquals
+dev_langs:
+- C++
+helpviewer_keywords:
+- SafeLessThanEquals function
 ms.assetid: cbd70526-faf2-4fbc-96a0-b61e8cf5f04a
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen

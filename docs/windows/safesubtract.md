@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: SafeSubtract
-dev_langs: C++
-helpviewer_keywords: SafeSubtract function
+f1_keywords:
+- SafeSubtract
+dev_langs:
+- C++
+helpviewer_keywords:
+- SafeSubtract function
 ms.assetid: c2712ddc-173f-46a1-b09c-e7ebbd9e68b2
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen

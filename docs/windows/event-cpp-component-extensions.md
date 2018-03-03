@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - event
 - event_cpp
-dev_langs: C++
-helpviewer_keywords: event keyword [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- event keyword [C++]
 ms.assetid: c4998e42-883c-4419-bbf4-36cdc979dd27
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

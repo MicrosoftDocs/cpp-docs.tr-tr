@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.menu
-dev_langs: C++
+f1_keywords:
+- vc.editors.menu
+dev_langs:
+- C++
 helpviewer_keywords:
 - mnemonics, associating menu items
 - menus, associating commands with mnemonic keys
 - menus, creating
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::MakeAllocator::Allocate
-dev_langs: C++
-helpviewer_keywords: Allocate method
+f1_keywords:
+- implements/Microsoft::WRL::Details::MakeAllocator::Allocate
+dev_langs:
+- C++
+helpviewer_keywords:
+- Allocate method
 ms.assetid: a01997bc-4ff1-4ed0-9def-e4aaa15b0598
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

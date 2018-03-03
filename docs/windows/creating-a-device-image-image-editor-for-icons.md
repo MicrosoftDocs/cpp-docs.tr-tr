@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.icon
-dev_langs: C++
+f1_keywords:
+- vc.editors.icon
+dev_langs:
+- C++
 helpviewer_keywords:
 - cursors [C++], creating
 - icons [C++], creating
@@ -17,7 +20,7 @@ helpviewer_keywords:
 - images [C++], creating for display devices
 - icons [C++], inserting
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

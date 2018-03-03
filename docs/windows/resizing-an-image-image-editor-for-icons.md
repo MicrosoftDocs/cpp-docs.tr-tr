@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.editing
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.editing
+dev_langs:
+- C++
 helpviewer_keywords:
 - Image editor [C++], resizing images
 - graphics [C++], resizing
 - images [C++], resizing
 - resizing images
 ms.assetid: d83a02c4-4dfe-4586-a0df-51a50c2ba71d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

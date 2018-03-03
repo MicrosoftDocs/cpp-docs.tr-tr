@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Image editor [C++], editing images
 - Clipboard [C++], pasting
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - images [C++], pasting into
 - graphics [C++], editing
 ms.assetid: ff4f5fef-71a4-4fd8-825e-049399fed391
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

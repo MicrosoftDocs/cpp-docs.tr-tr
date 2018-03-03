@@ -4,12 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: cfba6521-fb30-4fb8-afb2-cfab1cb5e0b8
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

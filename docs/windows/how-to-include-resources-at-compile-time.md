@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.resvw.resource.including
 - vc.resvw.resource.including
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - compiling source code, including resources
 - comments [C++], compiled files
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - '#include directive'
 - include directive (#include)
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

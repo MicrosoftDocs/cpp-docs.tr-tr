@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID
-dev_langs: C++
-helpviewer_keywords: AsIID method
+f1_keywords:
+- implements/Microsoft::WRL::Details::RuntimeClassBaseT::AsIID
+dev_langs:
+- C++
+helpviewer_keywords:
+- AsIID method
 ms.assetid: 90d7df8a-cf9e-4eef-8837-bc1a25f3fa1a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

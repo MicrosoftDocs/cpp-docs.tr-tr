@@ -4,16 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - images [C++], magnification in Image editor
 - magnification, Image editor
 - Image editor [C++], magnification
 ms.assetid: d1b0c9e0-fe54-4b2a-b75e-ffa0fa7c8cd9
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

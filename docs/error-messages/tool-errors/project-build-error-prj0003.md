@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: PRJ0003
-dev_langs: C++
-helpviewer_keywords: PRJ0003
+f1_keywords:
+- PRJ0003
+dev_langs:
+- C++
+helpviewer_keywords:
+- PRJ0003
 ms.assetid: fc5a84bb-c6d3-41d6-8dd6-475455820778
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: bcf80eb4d45fe1ae163772b96339c123996ae377
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

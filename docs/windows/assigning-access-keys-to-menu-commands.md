@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - access keys [C++], checking
 - menus, shortcut keys
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - mnemonics, uniqueness checking
 - Check Mnemonics command
 ms.assetid: fbcf1a00-af6a-4171-805a-0ac01d4e8b0d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -28,14 +29,17 @@ f1_keywords:
 - ATLTRANSACTIONMANAGER/ATL::SetFileAttributes
 - ATLTRANSACTIONMANAGER/ATL::m_bFallback
 - ATLTRANSACTIONMANAGER/ATL::m_hTransaction
-dev_langs: C++
-helpviewer_keywords: CAtlTransactionManager class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 0def8aa809cd1ccc115ccc2a09b1ae752316098f
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

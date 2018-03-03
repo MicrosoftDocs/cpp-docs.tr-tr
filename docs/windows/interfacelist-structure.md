@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::InterfaceList
-dev_langs: C++
-helpviewer_keywords: InterfaceList structure
+f1_keywords:
+- implements/Microsoft::WRL::Details::InterfaceList
+dev_langs:
+- C++
+helpviewer_keywords:
+- InterfaceList structure
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

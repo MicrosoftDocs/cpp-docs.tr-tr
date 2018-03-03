@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper
-dev_langs: C++
-helpviewer_keywords: InvokeHelper, constructor
+f1_keywords:
+- event/Microsoft::WRL::Details::InvokeHelper::InvokeHelper
+dev_langs:
+- C++
+helpviewer_keywords:
+- InvokeHelper, constructor
 ms.assetid: 0223c574-abc3-4fc0-99e6-38626ba79243
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

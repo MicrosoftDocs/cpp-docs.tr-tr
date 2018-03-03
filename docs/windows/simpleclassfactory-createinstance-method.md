@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::SimpleClassFactory::CreateInstance
-dev_langs: C++
-helpviewer_keywords: CreateInstance method
+f1_keywords:
+- module/Microsoft::WRL::SimpleClassFactory::CreateInstance
+dev_langs:
+- C++
+helpviewer_keywords:
+- CreateInstance method
 ms.assetid: 17b7947a-2608-49d9-b730-fef76501c9bc
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

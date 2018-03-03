@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: '%'
-dev_langs: C++
+f1_keywords:
+- '%'
+dev_langs:
+- C++
 helpviewer_keywords:
 - tracking references
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
-caps.latest.revision: "31"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

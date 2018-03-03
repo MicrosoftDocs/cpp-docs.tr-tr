@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - access keys [C++], adding
 - keyboard shortcuts [C++], controls
@@ -21,7 +23,7 @@ helpviewer_keywords:
 - controls [C++], access keys
 - access keys [C++]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::InterfaceTraits::Verify
-dev_langs: C++
-helpviewer_keywords: Verify method
+f1_keywords:
+- implements/Microsoft::WRL::Details::InterfaceTraits::Verify
+dev_langs:
+- C++
+helpviewer_keywords:
+- Verify method
 ms.assetid: 46edd67f-7952-4552-a157-55e823f616c8
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

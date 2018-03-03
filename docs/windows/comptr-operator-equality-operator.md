@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::ComPtr::operator==
-dev_langs: C++
+f1_keywords:
+- client/Microsoft::WRL::ComPtr::operator==
+dev_langs:
+- C++
 ms.assetid: 6a26e936-29d4-4b7d-b44a-7c575ad07509
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

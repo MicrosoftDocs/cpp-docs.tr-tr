@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 01/03/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: nothrow_cpp
-dev_langs: C++
+f1_keywords:
+- nothrow_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - __declspec keyword [C++], nothrow
 - nothrow __declspec keyword
@@ -16,7 +19,8 @@ ms.assetid: 0a475139-459c-4ec6-99e8-7ecd0d7f44a3
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 5e0f5f40fbcfcb95952fd956060801e862e9cdaf
 ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
 ms.translationtype: MT

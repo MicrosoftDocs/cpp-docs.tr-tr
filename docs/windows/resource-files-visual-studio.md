@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - resources [Visual Studio]
 - .rc files
@@ -23,7 +25,7 @@ helpviewer_keywords:
 - .rct files
 - resource script files, unsupported types
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-caps.latest.revision: "18"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

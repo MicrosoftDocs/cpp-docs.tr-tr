@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.color
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.color
+dev_langs:
+- C++
 helpviewer_keywords:
 - color palettes [C++]
 - palettes
@@ -16,7 +19,7 @@ helpviewer_keywords:
 - colors [C++], Image editor
 - Image editor [C++], palettes
 ms.assetid: 694b6346-e606-4f19-aa01-9b4ceb47f423
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

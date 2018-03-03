@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
-f1_keywords: R6035
-dev_langs: C++
-helpviewer_keywords: R6035
+f1_keywords:
+- R6035
+dev_langs:
+- C++
+helpviewer_keywords:
+- R6035
 ms.assetid: f8fb50b8-18bf-4258-b96a-b0a9de468d16
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6b5f9fb1f7562b26382c6b36e3947367013631bf
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

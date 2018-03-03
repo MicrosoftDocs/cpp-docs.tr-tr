@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 12/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,7 +18,8 @@ f1_keywords:
 - VC.Project.VCCustomBuildTool.CustomBuildToolAfterTargets
 - VC.Project.VCCustomBuildTool.Description
 - VC.Project.VCCustomBuildTool.AdditionalInputs
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - build tools (C++), specifying
 - custom build tools (C++), specifying
@@ -25,7 +27,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4edd3b1fdb2b6d09be6f5fcd9a6c9d08ba7a6994
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

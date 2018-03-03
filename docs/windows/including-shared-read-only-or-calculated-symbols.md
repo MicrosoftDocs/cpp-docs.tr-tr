@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.symbol.shared.calculated
-dev_langs: C++
+f1_keywords:
+- vc.editors.symbol.shared.calculated
+dev_langs:
+- C++
 helpviewer_keywords:
 - symbols, read-only
 - symbols, shared
@@ -18,7 +21,7 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 32b77faf-a066-4371-a072-9a5b84c0766d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

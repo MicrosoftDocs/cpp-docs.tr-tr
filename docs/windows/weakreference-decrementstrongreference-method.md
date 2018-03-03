@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::WeakReference::DecrementStrongReference
-dev_langs: C++
-helpviewer_keywords: DecrementStrongReference method
+f1_keywords:
+- implements/Microsoft::WRL::Details::WeakReference::DecrementStrongReference
+dev_langs:
+- C++
+helpviewer_keywords:
+- DecrementStrongReference method
 ms.assetid: 97d70d9f-41b8-4f8d-a6fa-4137cc4f9029
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

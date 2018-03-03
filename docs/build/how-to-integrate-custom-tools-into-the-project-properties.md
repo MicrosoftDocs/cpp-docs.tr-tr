@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 04/27/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: msbuild.cpp.howto.integratecustomtools
-dev_langs: C++
-helpviewer_keywords: 'msbuild (c++), howto: integrate custom tools'
+f1_keywords:
+- msbuild.cpp.howto.integratecustomtools
+dev_langs:
+- C++
+helpviewer_keywords:
+- 'msbuild (c++), howto: integrate custom tools'
 ms.assetid: f32d91a4-44e9-4de3-aa9a-1c7f709ad2ee
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: a762fc573953bcfb09180b9b830b761448d87a0d
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

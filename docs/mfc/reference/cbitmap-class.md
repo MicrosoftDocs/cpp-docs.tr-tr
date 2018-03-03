@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -24,7 +25,8 @@ f1_keywords:
 - AFXWIN/CBitmap::LoadOEMBitmap
 - AFXWIN/CBitmap::SetBitmapBits
 - AFXWIN/CBitmap::SetBitmapDimension
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CBitmap [MFC], CBitmap
 - CBitmap [MFC], CreateBitmap
@@ -41,11 +43,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 22922d29c09ee97a8b2a292953b4bf903ab6649e
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

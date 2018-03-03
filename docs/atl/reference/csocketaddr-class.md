@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,14 +17,17 @@ f1_keywords:
 - ATLSOCKET/ATL::CSocketAddr::FindINET6Addr
 - ATLSOCKET/ATL::CSocketAddr::GetAddrInfo
 - ATLSOCKET/ATL::CSocketAddr::GetAddrInfoList
-dev_langs: C++
-helpviewer_keywords: CSocketAddr class
+dev_langs:
+- C++
+helpviewer_keywords:
+- CSocketAddr class
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: cadd771e6c3a9e7addb6893b4427183cfff293c9
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 1/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: /q
-dev_langs: C++
+f1_keywords:
+- /q
+dev_langs:
+- C++
 helpviewer_keywords:
 - Q compiler option [C++]
 - -Q compiler option [C++]
@@ -16,7 +19,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7636b042669c7f7b04d2bc662bcaa2fbe4bdc82a
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

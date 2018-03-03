@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::HandleTraits::EventTraits
-dev_langs: C++
-helpviewer_keywords: EventTraits structure
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits::EventTraits
+dev_langs:
+- C++
+helpviewer_keywords:
+- EventTraits structure
 ms.assetid: 2cf308a4-50e3-4321-bafc-4c7c0364e148
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

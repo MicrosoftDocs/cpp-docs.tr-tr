@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::ComPtr::GetAddressOf
-dev_langs: C++
-helpviewer_keywords: GetAddressOf method
+f1_keywords:
+- client/Microsoft::WRL::ComPtr::GetAddressOf
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetAddressOf method
 ms.assetid: 972a41d0-c2ef-4ae3-b2cd-77cc45156ac9
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

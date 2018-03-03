@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.dialog
-dev_langs: C++
+f1_keywords:
+- vc.editors.dialog
+dev_langs:
+- C++
 helpviewer_keywords:
 - dialog boxes, creating
 - Dialog editor, creating dialog boxes
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

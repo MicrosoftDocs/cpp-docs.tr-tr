@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.nonbrowsable
-dev_langs: C++
-helpviewer_keywords: nonbrowsable attribute
+f1_keywords:
+- vc-attr.nonbrowsable
+dev_langs:
+- C++
+helpviewer_keywords:
+- nonbrowsable attribute
 ms.assetid: e71a98e7-4b65-454a-9829-342b9f2a84be
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

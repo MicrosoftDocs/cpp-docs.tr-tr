@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.odl
-dev_langs: C++
-helpviewer_keywords: odl attribute
+f1_keywords:
+- vc-attr.odl
+dev_langs:
+- C++
+helpviewer_keywords:
+- odl attribute
 ms.assetid: 75dcb314-b50f-4a63-9180-507ac1bc78f3
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

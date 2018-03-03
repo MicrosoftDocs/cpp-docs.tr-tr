@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.dialog.combo
-dev_langs: C++
+f1_keywords:
+- vc.editors.dialog.combo
+dev_langs:
+- C++
 helpviewer_keywords:
 - combo boxes, sizing
 - controls [C++], sizing
 ms.assetid: 51fb53cf-9ddf-4a20-962e-8553938e55ee
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

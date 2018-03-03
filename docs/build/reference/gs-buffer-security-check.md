@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLWCECompilerTool.BufferSecurityCheck
 - VC.Project.VCCLCompilerTool.BufferSecurityCheck
 - /GS
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - buffers [C++], buffer overruns
 - buffer overruns, compiler /GS switch
@@ -21,11 +23,12 @@ helpviewer_keywords:
 - -GS compiler option [C++]
 - buffers [C++], avoiding overruns
 ms.assetid: 8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e
-caps.latest.revision: "40"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e5699830a090f42feb92b24ec43fbae36634c4df
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

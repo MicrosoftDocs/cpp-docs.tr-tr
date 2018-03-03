@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.oleautomation
-dev_langs: C++
-helpviewer_keywords: oleautomation attribute
+f1_keywords:
+- vc-attr.oleautomation
+dev_langs:
+- C++
+helpviewer_keywords:
+- oleautomation attribute
 ms.assetid: c1086c91-260b-4dc3-b244-662852d09906
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

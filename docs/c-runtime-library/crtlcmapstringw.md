@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-standard-libraries
+ms.technology:
+- cpp-standard-libraries
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname: __crtLCMapStringW
+apiname:
+- __crtLCMapStringW
 apilocation:
 - msvcr90.dll
 - msvcr110_clr0400.dll
@@ -17,15 +19,19 @@ apilocation:
 - msvcr110.dll
 - msvcr80.dll
 apitype: DLLExport
-f1_keywords: __crtLCMapStringW
-dev_langs: C++
-helpviewer_keywords: __crtLCMapStringW
+f1_keywords:
+- __crtLCMapStringW
+dev_langs:
+- C++
+helpviewer_keywords:
+- __crtLCMapStringW
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 261fb23c96bee0d646f64d587d9f7afecc59d4d2
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=
-dev_langs: C++
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::HStringReference::operator!=
+dev_langs:
+- C++
 ms.assetid: 01ab6691-1fc7-4feb-85f0-fe795593a160
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

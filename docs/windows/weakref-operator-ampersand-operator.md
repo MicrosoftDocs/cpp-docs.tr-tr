@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::WeakRef::operator&
-dev_langs: C++
-helpviewer_keywords: operator& operator
+f1_keywords:
+- client/Microsoft::WRL::WeakRef::operator&
+dev_langs:
+- C++
+helpviewer_keywords:
+- operator& operator
 ms.assetid: 900afb73-3801-4d08-9b41-2e6a62011ccd
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

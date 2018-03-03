@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::VerifyInterfaceHelper
-dev_langs: C++
-helpviewer_keywords: VerifyInterfaceHelper structure
+f1_keywords:
+- implements/Microsoft::WRL::Details::VerifyInterfaceHelper
+dev_langs:
+- C++
+helpviewer_keywords:
+- VerifyInterfaceHelper structure
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

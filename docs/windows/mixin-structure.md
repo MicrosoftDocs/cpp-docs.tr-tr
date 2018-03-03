@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::MixIn
-dev_langs: C++
-helpviewer_keywords: MixIn structure
+f1_keywords:
+- implements/Microsoft::WRL::MixIn
+dev_langs:
+- C++
+helpviewer_keywords:
+- MixIn structure
 ms.assetid: 47e2df9b-3a2e-4ae8-8ba3-b1fd3aa73566
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

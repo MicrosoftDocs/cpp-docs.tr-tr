@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::OnStart
-dev_langs: C++
-helpviewer_keywords: OnStart method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::OnStart
+dev_langs:
+- C++
+helpviewer_keywords:
+- OnStart method
 ms.assetid: 1e51f186-2918-4269-8e88-a7dfc3139c45
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

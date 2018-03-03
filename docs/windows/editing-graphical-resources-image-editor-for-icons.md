@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.bitmap
-dev_langs: C++
+f1_keywords:
+- vc.editors.bitmap
+dev_langs:
+- C++
 helpviewer_keywords:
 - images [C++], editing
 - graphics [C++]
@@ -17,7 +20,7 @@ helpviewer_keywords:
 - graphics [C++], Image editor
 - graphics [C++], editing
 ms.assetid: 09e422c5-f712-4378-b973-c7a3bbc92b9c
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

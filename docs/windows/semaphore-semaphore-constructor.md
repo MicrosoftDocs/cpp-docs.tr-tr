@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore
-dev_langs: C++
-helpviewer_keywords: Semaphore, constructor
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::Semaphore::Semaphore
+dev_langs:
+- C++
+helpviewer_keywords:
+- Semaphore, constructor
 ms.assetid: 91c22ae7-181e-460d-ad40-70c3a53b26fd
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

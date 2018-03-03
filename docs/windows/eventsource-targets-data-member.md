@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: event/Microsoft::WRL::EventSource::targets_
-dev_langs: C++
-helpviewer_keywords: targets_ data member
+f1_keywords:
+- event/Microsoft::WRL::EventSource::targets_
+dev_langs:
+- C++
+helpviewer_keywords:
+- targets_ data member
 ms.assetid: 5d5cee05-3315-4514-bce2-19173c923c7d
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

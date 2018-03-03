@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.emitidl
-dev_langs: C++
-helpviewer_keywords: emitidl attribute
+f1_keywords:
+- vc-attr.emitidl
+dev_langs:
+- C++
+helpviewer_keywords:
+- emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

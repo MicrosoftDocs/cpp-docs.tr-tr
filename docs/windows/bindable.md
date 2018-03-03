@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.bindable
-dev_langs: C++
-helpviewer_keywords: bindable attribute
+f1_keywords:
+- vc-attr.bindable
+dev_langs:
+- C++
+helpviewer_keywords:
+- bindable attribute
 ms.assetid: a2360f92-927b-4af8-98cc-6eca7f4ec954
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

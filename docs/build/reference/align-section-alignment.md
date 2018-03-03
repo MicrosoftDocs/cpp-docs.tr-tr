@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 12/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.Alignment
 - /align
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - sections, specifying alignment
 - ALIGN linker option
@@ -21,7 +23,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4ca4572e84c7ad32be2d03a312f7bb7d8a3f3f29
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

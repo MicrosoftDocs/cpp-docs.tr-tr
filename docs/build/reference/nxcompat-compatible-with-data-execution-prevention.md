@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 12/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: /NXCOMPAT
-dev_langs: C++
+f1_keywords:
+- /NXCOMPAT
+dev_langs:
+- C++
 helpviewer_keywords:
 - /NXCOMPAT linker option
 - -NXCOMPAT linker option
@@ -16,7 +19,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4669c24c3e15fc82f4ba81c83b8892ed18c24a5e
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

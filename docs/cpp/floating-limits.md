@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - ranges, floating-point constants
 - floating-point constants, limits
@@ -16,11 +18,12 @@ helpviewer_keywords:
 - floating-point numbers [C++]
 - floating limits
 ms.assetid: fc718652-1f4c-4ed8-af60-0e769637459c
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 6406d3d2d81fa3025a024606da68d61b5dcefdb7
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

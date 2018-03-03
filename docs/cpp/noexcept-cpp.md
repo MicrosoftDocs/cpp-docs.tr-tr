@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 01/12/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: noexcept_cpp
-dev_langs: C++
+f1_keywords:
+- noexcept_cpp
+dev_langs:
+- C++
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 9b78c19cb156312b6087b75e50c0e0fa28a00246
 ms.sourcegitcommit: c2e990450ccd528d85b2783fbc63042612987cfd
 ms.translationtype: MT

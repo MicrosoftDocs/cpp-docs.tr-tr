@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: SafeAdd
-dev_langs: C++
-helpviewer_keywords: SafeAdd function
+f1_keywords:
+- SafeAdd
+dev_langs:
+- C++
+helpviewer_keywords:
+- SafeAdd function
 ms.assetid: 3f82b91d-59fe-4ee1-873b-d056182fa8be
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/09/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - class libraries [MFC], building versions
 - version information [MFC], MFC library
@@ -19,7 +21,8 @@ helpviewer_keywords:
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7641a970c747576fa3cfd8cd1c00602edb3541e2
 ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
 ms.translationtype: MT

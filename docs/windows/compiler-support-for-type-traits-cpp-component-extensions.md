@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -36,7 +37,8 @@ f1_keywords:
 - __is_empty
 - __is_pod
 - __has_user_destructor
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __is_class keyword [C++]
 - __is_pod keyword [C++]
@@ -67,7 +69,7 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.accelerator
-dev_langs: C++
+f1_keywords:
+- vc.editors.accelerator
+dev_langs:
+- C++
 helpviewer_keywords:
 - accelerator keys
 - keyboard shortcuts
 - keyboard shortcuts, predefined
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

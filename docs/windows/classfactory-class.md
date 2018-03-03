@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::ClassFactory
-dev_langs: C++
-helpviewer_keywords: ClassFactory class
+f1_keywords:
+- module/Microsoft::WRL::ClassFactory
+dev_langs:
+- C++
+helpviewer_keywords:
+- ClassFactory class
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

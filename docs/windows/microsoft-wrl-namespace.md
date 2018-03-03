@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -16,10 +17,12 @@ f1_keywords:
 - ftm/Microsoft::WRL
 - client/Microsoft::WRL
 - corewrappers/Microsoft::WRL
-dev_langs: C++
-helpviewer_keywords: WRL namespace
+dev_langs:
+- C++
+helpviewer_keywords:
+- WRL namespace
 ms.assetid: 01118a8f-f564-4859-b87e-9444848585a1
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

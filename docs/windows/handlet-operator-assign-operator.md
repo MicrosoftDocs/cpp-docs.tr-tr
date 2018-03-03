@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::HandleT::operator=
-dev_langs: C++
-helpviewer_keywords: operator= operator
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::HandleT::operator=
+dev_langs:
+- C++
+helpviewer_keywords:
+- operator= operator
 ms.assetid: 9e42dcca-30fa-4e8b-8954-802fd64a5595
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT
-dev_langs: C++
-helpviewer_keywords: SyncLockT, constructor
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::Details::SyncLockT::SyncLockT
+dev_langs:
+- C++
+helpviewer_keywords:
+- SyncLockT, constructor
 ms.assetid: 713dfd9f-7369-4d86-b4a0-8b32c184d89b
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

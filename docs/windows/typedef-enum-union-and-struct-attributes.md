@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - union attributes
 - attributes [C++], reference topics
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - typedef attributes
 - enum attributes
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

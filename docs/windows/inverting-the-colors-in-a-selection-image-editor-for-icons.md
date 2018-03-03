@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.color
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.color
+dev_langs:
+- C++
 helpviewer_keywords:
 - colors [C++], image
 - Image editor [C++], color inversion
 - images [C++], colors
 - colors [C++], inverting
 ms.assetid: ec8c724c-6595-4ae8-8893-56e40c14033e
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

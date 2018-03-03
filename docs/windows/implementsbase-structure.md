@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::ImplementsBase
-dev_langs: C++
-helpviewer_keywords: ImplementsBase structure
+f1_keywords:
+- implements/Microsoft::WRL::Details::ImplementsBase
+dev_langs:
+- C++
+helpviewer_keywords:
+- ImplementsBase structure
 ms.assetid: f898eb17-136d-4c87-b3ea-771319314641
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

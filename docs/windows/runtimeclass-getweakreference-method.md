@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::RuntimeClass::GetWeakReference
-dev_langs: C++
-helpviewer_keywords: GetWeakReference method
+f1_keywords:
+- implements/Microsoft::WRL::RuntimeClass::GetWeakReference
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetWeakReference method
 ms.assetid: 26656ace-7f20-4364-87c9-4a75dd30912e
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

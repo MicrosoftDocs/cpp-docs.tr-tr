@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.control
-dev_langs: C++
-helpviewer_keywords: Control attribute
+f1_keywords:
+- vc-attr.control
+dev_langs:
+- C++
+helpviewer_keywords:
+- Control attribute
 ms.assetid: 3d046bb2-4afe-4cb8-a762-233b296e1975
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

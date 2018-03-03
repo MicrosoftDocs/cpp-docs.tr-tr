@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: async/Microsoft::WRL::AsyncBase::ErrorCode
-dev_langs: C++
-helpviewer_keywords: ErrorCode method
+f1_keywords:
+- async/Microsoft::WRL::AsyncBase::ErrorCode
+dev_langs:
+- C++
+helpviewer_keywords:
+- ErrorCode method
 ms.assetid: 3f5f0f69-d60a-4a67-8cc6-a55fdc89a192
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

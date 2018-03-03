@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::ActivationFactory::ActivationFactory
-dev_langs: C++
-helpviewer_keywords: ActivationFactory, constructor
+f1_keywords:
+- module/Microsoft::WRL::ActivationFactory::ActivationFactory
+dev_langs:
+- C++
+helpviewer_keywords:
+- ActivationFactory, constructor
 ms.assetid: 2a75cf88-9ba0-4cb7-9d58-24dd2daee9db
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

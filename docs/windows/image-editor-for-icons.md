@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -12,14 +13,15 @@ f1_keywords:
 - vc.editors.icon.F1
 - vc.editors.cursor
 - vc.editors.bitmap.F1
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - editors, images
 - resource editors, graphics
 - Image editor [C++]
 - resource editors, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

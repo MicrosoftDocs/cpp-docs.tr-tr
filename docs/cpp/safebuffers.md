@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: safebuffers_cpp
-dev_langs: C++
+f1_keywords:
+- safebuffers_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - __declspec keyword (C++), safebuffers
 - safebuffers __declspec keyword
 ms.assetid: 0b0dce14-4523-44d2-8070-5dd0fdabc618
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: eb9541bfc4a94253ac26e118e22c3abb2663a893
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 12/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - VC.Project.IVCEventTool.CommandLine
 - VC.Project.IVCEventTool.ExcludedFromBuild
 - VC.Project.IVCEventTool.Description
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Pre-Link event
 - build events [C++], specifying
@@ -22,11 +24,12 @@ helpviewer_keywords:
 - build events [C++]
 - post-build events
 ms.assetid: 788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 825eec000a2b08bd7a5a4d7769405df2f5570523
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

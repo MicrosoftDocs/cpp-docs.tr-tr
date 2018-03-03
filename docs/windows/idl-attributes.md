@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - attributes [C++], reference topics
 - IDL attributes
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - IDL files, attributes
 - .idl files
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

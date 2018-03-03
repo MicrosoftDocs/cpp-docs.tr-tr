@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex
-dev_langs: C++
-helpviewer_keywords: Mutex, constructor
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::Mutex::Mutex
+dev_langs:
+- C++
+helpviewer_keywords:
+- Mutex, constructor
 ms.assetid: 504afcdc-775a-4c98-a06f-4fb4663eba3f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

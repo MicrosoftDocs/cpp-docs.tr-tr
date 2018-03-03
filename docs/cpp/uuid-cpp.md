@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: uuid_cpp
-dev_langs: C++
+f1_keywords:
+- uuid_cpp
+dev_langs:
+- C++
 helpviewer_keywords:
 - __declspec keyword [C++], uuid
 - uuid __declspec keyword
 ms.assetid: 9d004621-09bc-4a8d-871b-648f5d5102d7
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: c999b429cb789167eeb754b6f11a8b3d90c28642
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

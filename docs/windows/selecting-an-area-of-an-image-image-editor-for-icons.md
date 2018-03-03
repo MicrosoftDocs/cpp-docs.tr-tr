@@ -4,18 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.editing
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.editing
+dev_langs:
+- C++
 helpviewer_keywords:
 - Image editor [C++], image selection
 - Image editor [C++], selecting images
 - images [C++], selecting
 - cursors [C++], selecting areas of
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

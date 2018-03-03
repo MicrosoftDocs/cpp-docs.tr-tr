@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.editing
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.editing
+dev_langs:
+- C++
 helpviewer_keywords:
 - .gif files, saving bitmaps as
 - jpg files, saving bitmaps as
@@ -21,7 +24,7 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 115df69f-10fb-4e6f-906b-853c1e4a54af
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,17 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.resourcesymbols
-dev_langs: C++
+f1_keywords:
+- vc.editors.resourcesymbols
+dev_langs:
+- C++
 helpviewer_keywords:
 - New Symbol dialog box
 - Resource Symbols dialog box
 - Change Symbol dialog box
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

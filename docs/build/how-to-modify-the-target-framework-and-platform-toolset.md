@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: msbuild.cpp.howto.modifytargetframeworkandplatformtoolset
-dev_langs: C++
-helpviewer_keywords: 'msbuild (c++), howto: modify target framework and platform toolset'
+f1_keywords:
+- msbuild.cpp.howto.modifytargetframeworkandplatformtoolset
+dev_langs:
+- C++
+helpviewer_keywords:
+- 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7ed85e0f1e1ce94401c505281c0e693a4904f92d
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

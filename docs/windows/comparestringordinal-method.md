@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal
-dev_langs: C++
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal
+dev_langs:
+- C++
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

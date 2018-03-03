@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DLUs (dialog units)
 - controls [C++], aligning
@@ -21,7 +23,7 @@ helpviewer_keywords:
 - tick mark interval in Dialog editor
 - controls [C++], snap to guides/grid
 ms.assetid: 17db84ba-5288-4478-be57-afa748aa6447
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

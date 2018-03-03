@@ -4,16 +4,20 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-ide
+ms.technology:
+- cpp-ide
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: Open Folder Projects in Visual C++
+dev_langs:
+- C++
+helpviewer_keywords:
+- Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 721dd39cf8cda6277eb129f259b7ede2d9f0da28
 ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
 ms.translationtype: MT

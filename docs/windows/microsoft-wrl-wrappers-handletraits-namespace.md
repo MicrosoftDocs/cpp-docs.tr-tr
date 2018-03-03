@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: corewrappers/Microsoft::WRL::Wrappers::HandleTraits
-dev_langs: C++
-helpviewer_keywords: HandleTraits namespace
+f1_keywords:
+- corewrappers/Microsoft::WRL::Wrappers::HandleTraits
+dev_langs:
+- C++
+helpviewer_keywords:
+- HandleTraits namespace
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

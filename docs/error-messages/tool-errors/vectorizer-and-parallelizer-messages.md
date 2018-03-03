@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: error-reference
 f1_keywords:
@@ -13,13 +14,15 @@ f1_keywords:
 - C5021
 - C5001
 - C5012
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 26d33c64fd57d9f0e9f9a33de6097601e65aa67d
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

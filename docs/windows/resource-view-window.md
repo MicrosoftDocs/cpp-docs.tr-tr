@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.resourceview.F1
-dev_langs: C++
+f1_keywords:
+- vs.resourceview.F1
+dev_langs:
+- C++
 helpviewer_keywords:
 - resources [Visual Studio], viewing
 - Resource View window
 ms.assetid: 10be7ff6-195f-4783-9ec5-87e5e06a7369
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

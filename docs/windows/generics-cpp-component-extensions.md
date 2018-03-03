@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - generic_cpp
 - generic
-dev_langs: C++
-helpviewer_keywords: generics [C++]
+dev_langs:
+- C++
+helpviewer_keywords:
+- generics [C++]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - DLUs (dialog units)
 - Dialog editor, snap to guides
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - controls [C++], snap to guides/grid
 - Guide Settings dialog box (Dialog editor)
 ms.assetid: 55381e1c-146a-4fa7-b1b3-b1492817615f
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

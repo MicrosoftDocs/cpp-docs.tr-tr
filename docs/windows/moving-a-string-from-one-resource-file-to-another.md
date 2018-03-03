@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - strings [C++], moving between files
 - resource script files, moving strings
 - string editing, moving strings between resources
 - String editor, moving strings between files
 ms.assetid: 94f8ee81-9b4c-4788-ba95-68c58db38029
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

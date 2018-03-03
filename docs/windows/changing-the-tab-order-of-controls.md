@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - controls [C++], tab order
 - focus, tab order
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - controls [C++], focus
 - dialog box controls, tab order
 ms.assetid: e2cee764-4367-42d7-9563-65a68f76f5ff
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

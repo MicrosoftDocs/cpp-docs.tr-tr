@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.resourceview
-dev_langs: C++
+f1_keywords:
+- vs.resourceview
+dev_langs:
+- C++
 helpviewer_keywords:
 - resources [Visual Studio], viewing
 - rc files, viewing resources
@@ -19,7 +22,7 @@ helpviewer_keywords:
 - .rc files, viewing resources
 - resources [Visual Studio], editing
 ms.assetid: ba8bdc07-3f60-43c7-aa5c-d5dd11f0966e
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

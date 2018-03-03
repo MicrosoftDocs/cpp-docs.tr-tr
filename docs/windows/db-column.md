@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.db_column
-dev_langs: C++
-helpviewer_keywords: db_column attribute
+f1_keywords:
+- vc-attr.db_column
+dev_langs:
+- C++
+helpviewer_keywords:
+- db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

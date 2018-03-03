@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.editors.resource
 - vc.resvw.resource.editors
 - vs.resvw.resource.editors
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - editors [C++], resource
 - editors [C++]
 - resource editors
 - Windows [C++], application resource editing
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

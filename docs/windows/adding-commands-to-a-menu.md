@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.menu
-dev_langs: C++
+f1_keywords:
+- vc.editors.menu
+dev_langs:
+- C++
 helpviewer_keywords:
 - menu items, adding to menus
 - menus, adding items
@@ -16,7 +19,7 @@ helpviewer_keywords:
 - commands
 - menu items
 ms.assetid: 1523a755-0ab5-42f8-9e98-bb9881564431
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

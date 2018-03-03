@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - tool tips [C++], adding to toolbar buttons
 - "\nin tool tip"
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor, creating tool tips
 ms.assetid: 0af65342-fd78-4e78-8d0d-dc68f7fc462e
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

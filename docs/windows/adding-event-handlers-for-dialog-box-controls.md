@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Dialog editor, adding event handlers to controls
 - controls [C++], event handlers
 - dialog box controls, events
 - event handlers, for dialog box controls
 ms.assetid: f9c70f24-ea6f-44df-82eb-78a2deaee769
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

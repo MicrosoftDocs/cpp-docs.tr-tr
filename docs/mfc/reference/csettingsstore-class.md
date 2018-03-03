@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,7 +19,8 @@ f1_keywords:
 - AFXSETTINGSSTORE/CSettingsStore::Open
 - AFXSETTINGSSTORE/CSettingsStore::Read
 - AFXSETTINGSSTORE/CSettingsStore::Write
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CSettingsStore [MFC], CSettingsStore
 - CSettingsStore [MFC], Close
@@ -29,11 +31,12 @@ helpviewer_keywords:
 - CSettingsStore [MFC], Read
 - CSettingsStore [MFC], Write
 ms.assetid: 0ea181de-a13e-4b29-b560-7c43838223ff
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: e8ed7cc6c6671e85c21379c4804df4d2f3e3d99d
 ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT

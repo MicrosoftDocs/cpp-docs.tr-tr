@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: SafeCast
-dev_langs: C++
-helpviewer_keywords: SafeCast function
+f1_keywords:
+- SafeCast
+dev_langs:
+- C++
+helpviewer_keywords:
+- SafeCast function
 ms.assetid: 55316729-8456-403a-9f96-59d4038f67af
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen

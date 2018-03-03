@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::DontUseNewUseMake
-dev_langs: C++
-helpviewer_keywords: DontUseNewUseMake class
+f1_keywords:
+- implements/Microsoft::WRL::Details::DontUseNewUseMake
+dev_langs:
+- C++
+helpviewer_keywords:
+- DontUseNewUseMake class
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

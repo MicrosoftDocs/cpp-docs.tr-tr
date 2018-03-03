@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - opaque backgrounds
 - background colors, images
@@ -20,7 +22,7 @@ helpviewer_keywords:
 - transparency, background
 - transparent backgrounds, images
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

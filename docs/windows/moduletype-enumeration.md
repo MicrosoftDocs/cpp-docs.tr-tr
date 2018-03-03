@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::ModuleType
-dev_langs: C++
-helpviewer_keywords: ModuleType enumeration
+f1_keywords:
+- module/Microsoft::WRL::ModuleType
+dev_langs:
+- C++
+helpviewer_keywords:
+- ModuleType enumeration
 ms.assetid: 61a763af-a5a4-451d-8b40-815af507fcde
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

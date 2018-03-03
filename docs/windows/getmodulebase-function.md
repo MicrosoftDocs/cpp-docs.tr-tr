@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::GetModuleBase
-dev_langs: C++
+f1_keywords:
+- implements/Microsoft::WRL::GetModuleBase
+dev_langs:
+- C++
 ms.assetid: 123d3b14-2eaf-4e02-8dcd-b6567917c6a6
-caps.latest.revision: "2"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

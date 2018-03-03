@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - controls [C++], troubleshooting
 - troubleshooting controls
@@ -15,7 +17,7 @@ helpviewer_keywords:
 - troubleshooting Dialog editor
 - dialog boxes, troubleshooting
 ms.assetid: 21882868-5ac4-4a41-a4a6-eaaa059402ea
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

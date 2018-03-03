@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.resvw.resource.importing
 - vc.resvw.resource.importing
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - resources [Visual Studio], exporting
 - graphics [C++], exporting
@@ -23,7 +25,7 @@ helpviewer_keywords:
 - cursors [C++], importing and exporting
 - images [C++], exporting
 ms.assetid: 3c9329dc-dcb8-4edd-a600-78e3e572bd89
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

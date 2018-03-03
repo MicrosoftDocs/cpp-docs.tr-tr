@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Implements::CanCastTo
-dev_langs: C++
-helpviewer_keywords: CanCastTo method
+f1_keywords:
+- implements/Microsoft::WRL::Implements::CanCastTo
+dev_langs:
+- C++
+helpviewer_keywords:
+- CanCastTo method
 ms.assetid: a8e85c7d-4dcd-446d-bebc-a97da46ce44a
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

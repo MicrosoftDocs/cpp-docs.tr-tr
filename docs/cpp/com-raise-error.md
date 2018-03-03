@@ -4,18 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: _com_raise_error
-dev_langs: C++
-helpviewer_keywords: _com_raise_error function
+f1_keywords:
+- _com_raise_error
+dev_langs:
+- C++
+helpviewer_keywords:
+- _com_raise_error function
 ms.assetid: a98226c2-c3fe-44f1-8ff5-85863de11cd6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 71a4be4ebf6029d0573aee71d74bf9faa241319f
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

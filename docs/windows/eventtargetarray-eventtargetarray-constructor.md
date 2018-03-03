@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray
-dev_langs: C++
-helpviewer_keywords: EventTargetArray, constructor
+f1_keywords:
+- event/Microsoft::WRL::Details::EventTargetArray::EventTargetArray
+dev_langs:
+- C++
+helpviewer_keywords:
+- EventTargetArray, constructor
 ms.assetid: 6c6d3737-3cd3-4515-a8f6-d27901bb8ed2
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

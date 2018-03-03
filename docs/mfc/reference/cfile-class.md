@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -37,7 +38,8 @@ f1_keywords:
 - AFX/CFile::hFileNull
 - AFX/CFile::m_hFile
 - AFX/CFile::m_pTM
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CFile [MFC], CFile
 - CFile [MFC], Abort
@@ -67,11 +69,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1f7a2b0e1dd95b460d6b6007e79378bc69f1b4ce
 ms.sourcegitcommit: 2aeb507a426fc7881ea59115b1d5139c0a30ba91
 ms.translationtype: MT

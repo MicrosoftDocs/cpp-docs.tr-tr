@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: _variant_t
-dev_langs: C++
+f1_keywords:
+- _variant_t
+dev_langs:
+- C++
 helpviewer_keywords:
 - _variant_t class [C++], operators
 - _variant_t class
@@ -16,11 +19,12 @@ helpviewer_keywords:
 - VARIANT object
 - VARIANT object [C++], COM encapsulation
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 57a4d7e4019e742ff8adc50bb78a926dff34d55a
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

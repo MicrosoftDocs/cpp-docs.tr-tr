@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - size, toolbar buttons
 - toolbar buttons (in Toolbar editor), setting properties
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - command IDs, toolbar buttons
 - width, toolbar buttons
 ms.assetid: b2705814-7c5d-4f24-8f77-07559b0cdda2
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Module::RegisterObjects
-dev_langs: C++
-helpviewer_keywords: RegisterObjects method
+f1_keywords:
+- module/Microsoft::WRL::Module::RegisterObjects
+dev_langs:
+- C++
+helpviewer_keywords:
+- RegisterObjects method
 ms.assetid: db4077b7-068d-4534-aaa5-41b5444ccb49
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

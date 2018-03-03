@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::ComPtr::~ComPtr
-dev_langs: C++
-helpviewer_keywords: ~ComPtr, destructor
+f1_keywords:
+- client/Microsoft::WRL::ComPtr::~ComPtr
+dev_langs:
+- C++
+helpviewer_keywords:
+- ~ComPtr, destructor
 ms.assetid: b5e92d05-5d96-4610-ae0b-efd93f759858
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

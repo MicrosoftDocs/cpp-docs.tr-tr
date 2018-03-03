@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,7 +25,8 @@ f1_keywords:
 - AFXWIN/ON_COMMAND_RANGE
 - AFXWIN/ON_UPDATE_COMMAND_UI_RANGE
 - AFXWIN/ON_CONTROL_RANGE
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - message map macros
 - Windows messages [MFC], declaration
@@ -35,11 +37,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 7bf56b243118ceb7fdd995fc6970f6c49e0a5499
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

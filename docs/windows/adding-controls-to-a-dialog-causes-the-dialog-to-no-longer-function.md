@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - controls [C++], troubleshooting
 - common controls, troubleshooting
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - dialog box controls, troubleshooting
 - InitCommonControls
 ms.assetid: b2dd4574-ea59-4343-8d65-b387cead5da6
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

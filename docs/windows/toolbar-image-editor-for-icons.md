@@ -4,13 +4,15 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Graphics toolbar
 - Image editor [C++], toolbar
@@ -18,7 +20,7 @@ helpviewer_keywords:
 - Properties window
 - Option selector, Image editor
 ms.assetid: a0af4209-6273-4106-a7c1-0edecc9b5755
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

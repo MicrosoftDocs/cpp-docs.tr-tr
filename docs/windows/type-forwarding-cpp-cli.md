@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
-helpviewer_keywords: type forwarding, Visual C++
+dev_langs:
+- C++
+helpviewer_keywords:
+- type forwarding, Visual C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

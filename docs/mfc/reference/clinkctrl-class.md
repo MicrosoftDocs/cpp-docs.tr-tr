@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -24,7 +25,8 @@ f1_keywords:
 - AFXCMN/CLinkCtrl::SetItemID
 - AFXCMN/CLinkCtrl::SetItemState
 - AFXCMN/CLinkCtrl::SetItemUrl
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CLinkCtrl [MFC], CLinkCtrl
 - CLinkCtrl [MFC], Create
@@ -41,11 +43,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 1e6834190d7693e60f80285b04a04c484313d3c2
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

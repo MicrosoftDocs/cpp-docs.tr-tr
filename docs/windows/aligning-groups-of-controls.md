@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
-helpviewer_keywords: controls [C++], aligning
+dev_langs:
+- C++
+helpviewer_keywords:
+- controls [C++], aligning
 ms.assetid: a4f49a73-4a17-44b3-8568-aa35f646b5cf
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

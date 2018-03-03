@@ -4,15 +4,19 @@ ms.custom:
 ms.date: 1/09/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Concepts
-dev_langs: C++
+f1_keywords:
+- Concepts
+dev_langs:
+- C++
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: abe9431f1641ff658e1000b4bf4399024138438d
 ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
 ms.translationtype: MT

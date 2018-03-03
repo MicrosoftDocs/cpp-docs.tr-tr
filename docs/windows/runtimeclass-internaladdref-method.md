@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::RuntimeClass::InternalAddRef
-dev_langs: C++
-helpviewer_keywords: InternalAddRef method
+f1_keywords:
+- implements/Microsoft::WRL::RuntimeClass::InternalAddRef
+dev_langs:
+- C++
+helpviewer_keywords:
+- InternalAddRef method
 ms.assetid: b8ed7f93-83d8-47ec-988c-98fe65104e7a
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

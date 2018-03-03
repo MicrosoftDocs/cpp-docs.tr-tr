@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - attributes [C++], database
 - attributes [C++], data access
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - database attributes [C++]
 - attributes [C++], OLE DB consumer
 ms.assetid: 017b591f-8f9a-42b4-84d5-cc42a21ab0cc
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

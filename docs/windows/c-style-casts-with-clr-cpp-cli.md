@@ -4,13 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-dev_langs: C++
-helpviewer_keywords: C-style casts and /clr
+dev_langs:
+- C++
+helpviewer_keywords:
+- C-style casts and /clr
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

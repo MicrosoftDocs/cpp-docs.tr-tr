@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.vararg
-dev_langs: C++
-helpviewer_keywords: vararg attribute
+f1_keywords:
+- vc-attr.vararg
+dev_langs:
+- C++
+helpviewer_keywords:
+- vararg attribute
 ms.assetid: 20fc3244-18e9-411c-990e-d5b4fa29a570
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

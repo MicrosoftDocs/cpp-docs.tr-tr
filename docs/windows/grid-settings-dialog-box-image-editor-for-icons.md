@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.editors.dialog.GridSettings
 - vc.editors.gridsettings
-dev_langs: C++
-helpviewer_keywords: Grid Settings dialog box
+dev_langs:
+- C++
+helpviewer_keywords:
+- Grid Settings dialog box
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

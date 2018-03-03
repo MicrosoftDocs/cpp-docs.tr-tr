@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - pin_ptr_cpp
 - stdcli::language::pin_ptr
 - pin_ptr
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - pinning pointers
 - pin_ptr keyword [C++]
 ms.assetid: 6c2e6c73-4ec2-4dce-8e1f-ccf3a9f9d0aa
-caps.latest.revision: "28"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

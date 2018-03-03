@@ -4,21 +4,24 @@ ms.custom:
 ms.date: 1/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - spectre_cpp
 - spectre
 - nomitigation
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __declspec keyword (C++), spectre
 - spectre __declspec keyword
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b515d25d4818cf8b6213a37f3fe78df4f3882a69
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

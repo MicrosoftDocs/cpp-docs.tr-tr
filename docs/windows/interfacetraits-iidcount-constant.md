@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::Details::InterfaceTraits::IidCount
-dev_langs: C++
-helpviewer_keywords: IidCount constant
+f1_keywords:
+- implements/Microsoft::WRL::Details::InterfaceTraits::IidCount
+dev_langs:
+- C++
+helpviewer_keywords:
+- IidCount constant
 ms.assetid: c4eab6e0-51f7-4b24-9137-cbcf58e0a9f4
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

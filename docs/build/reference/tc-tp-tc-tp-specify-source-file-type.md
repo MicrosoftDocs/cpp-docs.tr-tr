@@ -1,7 +1,8 @@
 ---
 title: "/ Tc, /Tp, TP, /TP (kaynak dosya türünü belirtin) | Microsoft Docs"
 ms.date: 1/11/2018
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -9,7 +10,8 @@ f1_keywords:
 - VC.Project.VCCLCompilerTool.CompileAs
 - /Tp
 - /tc
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Tp compiler option [C++]
 - /Tc compiler option [C++]
@@ -21,7 +23,8 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: b3d51e4c6bbf6a77f86be5cabde9b65f8e4f8c9f
 ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
 ms.translationtype: MT

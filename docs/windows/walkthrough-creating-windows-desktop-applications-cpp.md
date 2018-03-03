@@ -3,10 +3,12 @@ title: "İzlenecek yol: Geleneksel Windows Masaüstü uygulama (C++) oluşturma 
 ms.custom: 
 ms.date: 1/11/2018
 ms.reviewer: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]

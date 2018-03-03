@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - colors [C++], brush
 - brushes, colors
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 750881aa-6f47-4de9-8ca6-a7a12afc6383
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

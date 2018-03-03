@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 4e45c48671a0df62103a58a89d0c351209c71ed2
 ms.sourcegitcommit: ff9bf140b6874bc08718674c07312ecb5f996463
 ms.translationtype: MT

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: event/Microsoft::WRL::Details::ArgTraits
-dev_langs: C++
-helpviewer_keywords: ArgTraits structure
+f1_keywords:
+- event/Microsoft::WRL::Details::ArgTraits
+dev_langs:
+- C++
+helpviewer_keywords:
+- ArgTraits structure
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: event/Microsoft::WRL::Details::InvokeHelper::callback_
-dev_langs: C++
-helpviewer_keywords: callback_ data member
+f1_keywords:
+- event/Microsoft::WRL::Details::InvokeHelper::callback_
+dev_langs:
+- C++
+helpviewer_keywords:
+- callback_ data member
 ms.assetid: 6f0cbf6d-0448-46f8-ba71-bd6fd8702e3a
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: ftm/Microsoft::WRL::FtmBase::CreateGlobalInterfaceTable
-dev_langs: C++
-helpviewer_keywords: CreateGlobalInterfaceTable method
+f1_keywords:
+- ftm/Microsoft::WRL::FtmBase::CreateGlobalInterfaceTable
+dev_langs:
+- C++
+helpviewer_keywords:
+- CreateGlobalInterfaceTable method
 ms.assetid: bb82a0c5-22b9-4844-9204-7922033d8b07
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

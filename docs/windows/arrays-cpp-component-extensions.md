@@ -4,14 +4,16 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - cli::array
 - details::array
 - lang::array
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - array keyword [C++]
 - declaring arrays, about declaring arrays
@@ -19,7 +21,7 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

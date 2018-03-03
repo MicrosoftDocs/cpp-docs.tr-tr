@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.icon
-dev_langs: C++
+f1_keywords:
+- vc.editors.icon
+dev_langs:
+- C++
 helpviewer_keywords:
 - cursors [C++], creating
 - image resources, display devices
@@ -21,7 +24,7 @@ helpviewer_keywords:
 - cursors [C++], hot spots
 - icons [C++], types
 ms.assetid: 8f0809a8-0cf0-4da9-b23d-51f28bf15f5b
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: internal/Microsoft::WRL::Details::RaiseException
-dev_langs: C++
-helpviewer_keywords: RaiseException function
+f1_keywords:
+- internal/Microsoft::WRL::Details::RaiseException
+dev_langs:
+- C++
+helpviewer_keywords:
+- RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

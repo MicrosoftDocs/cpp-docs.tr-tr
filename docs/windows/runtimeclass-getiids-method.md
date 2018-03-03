@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: implements/Microsoft::WRL::RuntimeClass::GetIids
-dev_langs: C++
-helpviewer_keywords: GetIids method
+f1_keywords:
+- implements/Microsoft::WRL::RuntimeClass::GetIids
+dev_langs:
+- C++
+helpviewer_keywords:
+- GetIids method
 ms.assetid: 826a67d1-ebc4-4940-b5d5-7cd66885e4a1
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

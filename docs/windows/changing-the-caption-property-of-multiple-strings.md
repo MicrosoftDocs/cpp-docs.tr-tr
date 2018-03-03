@@ -4,17 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - String editor, changing properties of multiple strings
 - strings [C++], changing caption property of multiple
 - string editing, string tables
 - string tables, changing caption of multiple strings
 ms.assetid: 82ac4389-fd9c-4794-a18f-c6bf5b253bd7
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

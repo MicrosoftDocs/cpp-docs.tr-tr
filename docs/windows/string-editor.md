@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.string.F1
-dev_langs: C++
+f1_keywords:
+- vc.editors.string.F1
+dev_langs:
+- C++
 helpviewer_keywords:
 - String editor
 - string tables
@@ -18,7 +21,7 @@ helpviewer_keywords:
 - resource editors, String editor
 - strings [C++], editing
 ms.assetid: f71ab8de-3068-4e29-8e28-5a33d18dd416
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

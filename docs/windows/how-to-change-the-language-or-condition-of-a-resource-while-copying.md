@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.resvw.resource.changing
-dev_langs: C++
+f1_keywords:
+- vc.resvw.resource.changing
+dev_langs:
+- C++
 helpviewer_keywords:
 - Language property
 - condition property of resource
 ms.assetid: 8f622ab0-bac2-468f-ae70-78911afc4759
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

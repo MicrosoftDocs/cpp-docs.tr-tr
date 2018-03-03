@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.resourceincludes
-dev_langs: C++
+f1_keywords:
+- vc.editors.resourceincludes
+dev_langs:
+- C++
 helpviewer_keywords:
 - Resource Includes dialog box
 - rc files, changing storage
@@ -18,7 +21,7 @@ helpviewer_keywords:
 - symbol header files, read-only
 - symbols, symbol header files
 ms.assetid: 659a54e6-e416-4045-8411-798730ff4ce3
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

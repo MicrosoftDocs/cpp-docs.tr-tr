@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.version
-dev_langs: C++
+f1_keywords:
+- vc.editors.version
+dev_langs:
+- C++
 helpviewer_keywords:
 - version information resources
 - resources [Visual Studio], editing version information
 ms.assetid: d3a7d4e4-7d31-47c2-902c-f50b8404ba4f
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

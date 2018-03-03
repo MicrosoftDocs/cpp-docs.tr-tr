@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 1/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - MFC [C++], character set support
 - MBCS [C++], strings and MFC support
@@ -20,7 +22,8 @@ helpviewer_keywords:
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: adbe6ca25afd31c0aba853fde8b503dc333f63f4
 ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
 ms.translationtype: MT

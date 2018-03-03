@@ -4,16 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: interface_CPP
-dev_langs: C++
+f1_keywords:
+- interface_CPP
+dev_langs:
+- C++
 helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

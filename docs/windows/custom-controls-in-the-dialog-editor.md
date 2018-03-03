@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Custom Control
-dev_langs: C++
+f1_keywords:
+- Custom Control
+dev_langs:
+- C++
 helpviewer_keywords:
 - controls [C++], templates
 - custom controls [Visual Studio], dialog boxes
@@ -16,7 +19,7 @@ helpviewer_keywords:
 - dialog box controls, custom (user) controls
 - Dialog editor, custom controls
 ms.assetid: f494b314-4000-4bbe-bbd0-4b18fb71ede1
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

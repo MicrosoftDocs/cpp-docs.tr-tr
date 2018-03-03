@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Details::CreatorMap::serverName
-dev_langs: C++
-helpviewer_keywords: serverName data member
+f1_keywords:
+- module/Microsoft::WRL::Details::CreatorMap::serverName
+dev_langs:
+- C++
+helpviewer_keywords:
+- serverName data member
 ms.assetid: 07a853f7-98cd-47a1-a2ff-0db74dc4cb37
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

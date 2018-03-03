@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Details::ActivationFactoryCallback
-dev_langs: C++
-helpviewer_keywords: ActivationFactoryCallback function
+f1_keywords:
+- module/Microsoft::WRL::Details::ActivationFactoryCallback
+dev_langs:
+- C++
+helpviewer_keywords:
+- ActivationFactoryCallback function
 ms.assetid: dd40c79b-1273-4f2a-8c24-ae9926fb4fd9
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

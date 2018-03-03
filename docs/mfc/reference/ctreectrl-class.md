@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -88,7 +89,8 @@ f1_keywords:
 - AFXCMN/CTreeCtrl::ShowInfoTip
 - AFXCMN/CTreeCtrl::SortChildren
 - AFXCMN/CTreeCtrl::SortChildrenCB
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - CTreeCtrl [MFC], CTreeCtrl
 - CTreeCtrl [MFC], Create
@@ -169,11 +171,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 573b81ce8d78cde67b63579caa5ed96bbe557ae3
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

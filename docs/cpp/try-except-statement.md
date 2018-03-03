@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-language
+ms.technology:
+- cpp-language
 ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
@@ -19,7 +20,8 @@ f1_keywords:
 - _exception_info_cpp
 - EXCEPTION_EXECUTE_HANDLER
 - _abnormal_termination
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - __try keyword [C++]
 - EXCEPTION_CONTINUE_EXECUTION macro
@@ -32,11 +34,12 @@ helpviewer_keywords:
 - _exception_info keyword [C++]
 - _abnormal_termination keyword [C++]
 ms.assetid: 30d60071-ea49-4bfb-a8e6-7a420de66381
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 24be4e7fd6b4dc95d9964e69943a94ecad947a47
 ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
 ms.translationtype: MT

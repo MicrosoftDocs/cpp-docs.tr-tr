@@ -4,17 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-tools
+ms.technology:
+- cpp-tools
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
-dev_langs: C++
+f1_keywords:
+- VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
+dev_langs:
+- C++
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 ms.openlocfilehash: 073c906e7ecdfcf933e4b91cbcf8d6a77324df76
 ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
 ms.translationtype: MT

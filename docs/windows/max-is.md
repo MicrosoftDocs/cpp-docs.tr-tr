@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: vc-attr.max_is
-dev_langs: C++
-helpviewer_keywords: max_is attribute
+f1_keywords:
+- vc-attr.max_is
+dev_langs:
+- C++
+helpviewer_keywords:
+- max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

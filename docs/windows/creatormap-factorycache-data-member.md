@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: module/Microsoft::WRL::Details::CreatorMap::factoryCache
-dev_langs: C++
-helpviewer_keywords: factoryCache data member
+f1_keywords:
+- module/Microsoft::WRL::Details::CreatorMap::factoryCache
+dev_langs:
+- C++
+helpviewer_keywords:
+- factoryCache data member
 ms.assetid: 4301062f-9871-4d9f-8ca0-284d26443a97
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

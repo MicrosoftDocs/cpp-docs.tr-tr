@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - 256-color palette
 - colors, icons and cursors
@@ -16,7 +18,7 @@ helpviewer_keywords:
 - palettes, 256-color
 - icons, color
 ms.assetid: 1506ed00-669b-4a21-b1a4-39b6a84a78bb
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

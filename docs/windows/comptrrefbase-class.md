@@ -4,14 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: reference
-f1_keywords: client/Microsoft::WRL::Details::ComPtrRefBase
-dev_langs: C++
-helpviewer_keywords: ComPtrRefBase class
+f1_keywords:
+- client/Microsoft::WRL::Details::ComPtrRefBase
+dev_langs:
+- C++
+helpviewer_keywords:
+- ComPtrRefBase class
 ms.assetid: 6d344c1a-cc13-4a3f-8a0d-f167ccb9348f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

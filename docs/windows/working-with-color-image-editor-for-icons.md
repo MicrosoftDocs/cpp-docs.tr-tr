@@ -4,11 +4,14 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.editors.image.color
-dev_langs: C++
+f1_keywords:
+- vc.editors.image.color
+dev_langs:
+- C++
 helpviewer_keywords:
 - images [C++], background colors
 - Image editor [C++], Colors Palette
@@ -18,7 +21,7 @@ helpviewer_keywords:
 - foreground colors, Image editor
 - colors [C++]
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen

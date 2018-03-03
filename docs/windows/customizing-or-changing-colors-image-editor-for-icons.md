@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: cpp-windows
+ms.technology:
+- cpp-windows
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 helpviewer_keywords:
 - dithered color, Image editor
 - Custom Color Selector dialog box
@@ -22,7 +24,7 @@ helpviewer_keywords:
 - Adjust Colors command
 - Image editor [C++], dithered color
 ms.assetid: e58f6b32-f435-4d9a-a570-7569433661ae
-caps.latest.revision: "7"
+caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
 manager: ghogen
