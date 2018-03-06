@@ -10,6 +10,7 @@ ms.tgt_pltfrm:
 ms.topic: language-reference
 f1_keywords:
 - namespace_CPP
+- using_CPP
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -25,11 +26,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f7abecca114b30ddf57f8530b9fbef1bd7ce909
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 801bd8ee8e81c0126ae88c1fb9213b25b9f103dd
+ms.sourcegitcommit: 4e01d36ffa64ea11bacf589f79d2f1df947e2510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="namespaces-c"></a>Ad Alanları (C++)
 Bir ad alanı içindeki tanımlayıcıları (adları türleri, İşlevler, değişkenler vb.) için bir kapsam sağlayan bir bildirim temelli bölgedir. Ad alanları kod mantıksal gruplar halinde düzenlemek için ve özellikle kod temeliniz birden çok kitaplıklarını içerir yüklendiğinde oluşabilecek ad çakışmaları önlemek için kullanılır. Ad alanı kapsamındaki tüm tanımlayıcılar nitelemesiz birbirine görünür. Örneğin her tanımlayıcısı için tam adı kullanarak ad alanı dışında tanımlayıcıları üyeleri erişebilir `std::vector<std::string> vec;`, göre veya başka bir [bildirimi kullanarak](../cpp/using-declaration.md) tek bir tanımlayıcı için (`using std::string`), ya da bir [yönergesi kullanarak](../cpp/namespaces-cpp.md#using_directives) ad alanındaki tüm tanımlayıcılar için (`using namespace std;`). Üstbilgi dosyaları kodunda her zaman tam ad alanı adı kullanmanız gerekir.  
@@ -76,7 +77,7 @@ Func(mgr);
   
 ```  
   
-## <a id="using_directives"></a>using yönergelerini  
+## <a id="using_directives"></a> using yönergelerini  
  `using` Yönergesi verir tüm adlarının bir **ad alanı** olmadan kullanılacak *ad alanı adı* açık bir niteleyici olarak. Bir kullanarak birkaç farklı tanımlayıcı bir ad alanındaki; kullanıyorsanız yönerge bir uygulama dosyasında (yani *.cpp) bir veya iki tanımlayıcıları yeni kullanıyorsanız, kullanarak bir göz önünde bulundurun yalnızca bu tanımlayıcıları kapsamı ve tüm tanımlayıcılar ad alanında duruma getirmek için bildirimi. Yerel bir değişken adı ad alanı değişkeniyle aynı ada sahipse, ad alanı değişkeni gizlenir. Genel bir değişken olarak aynı ada sahip ad alanı değişkeninin bulundurulması bir hatadır.  
   
 > [!NOTE]
@@ -258,7 +259,7 @@ namespace Contoso
   
 ```  
   
-## <a id="namespace_aliases"></a>Namespace diğer adlar  
+## <a id="namespace_aliases"></a> Namespace diğer adlar  
  Namespace adlarının benzersiz olması genellikle bunlar çok kısa olmamalıdır, yani gerekir. Kod bir adının uzunluğu okumak zor yaparsa veya burada yönergeleri kullanarak kullanılamaz ve ardından gerçek adı için bir kısaltma olarak hizmet veren bir ad alanı diğer adı yapabileceğiniz bir üstbilgi dosyası yazmak yorucu olabilir. Örneğin:  
   
 ```cpp  
@@ -281,4 +282,4 @@ namespace
  Bu bir adlandırılmamış veya anonim ad alanı adı verilir ve değişken bildirimleri diğer dosyaları için kod görünmez olmasını istediğinizde yararlı olur (yani iç bağlantı vermediğiniz) adlı bir ad oluşturmak zorunda kalmadan. Aynı dosyada tüm kod adlandırılmamış ad alanındaki tanımlayıcıları görebilir, ancak ad alanı kendisiyle birlikte tanımlayıcıları dışında bu dosyayı görünür değildir — veya çeviri birim dışında daha kesin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)
+ [Bildirimler ve Tanımlar](declarations-and-definitions-cpp.md)

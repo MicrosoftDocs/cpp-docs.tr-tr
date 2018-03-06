@@ -10,6 +10,11 @@ ms.tgt_pltfrm:
 ms.topic: language-reference
 dev_langs:
 - C++
+f1_keywords:
+- auto_CPP
+- auto
+helpviewer_keywords:
+- auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
 caps.latest.revision: 
 author: mikeblome
@@ -17,11 +22,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6721aa5860f23025b8b6c762cc7e5f4d6178228d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 334006e8ad06bdc174922d57d97d2d0f0335cf34
+ms.sourcegitcommit: 4e01d36ffa64ea11bacf589f79d2f1df947e2510
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="auto-c"></a>Otomatik (C++)
 Kendi başlatma ifadesinden bildirilen değişkeninin türü deduces.  
@@ -226,7 +231,7 @@ int main()
  [Anahtar sözcükler](../cpp/keywords-cpp.md)   
  [/ZC:Auto (değişken türünü)](../build/reference/zc-auto-deduce-variable-type.md)   
  [sizeof işleci](../cpp/sizeof-operator.md)   
- [TypeId](../windows/typeid-cpp-component-extensions.md)   
+ [typeid](../windows/typeid-cpp-component-extensions.md)   
  [new işleci](new-operator-cpp.md)   
  [Bildirimler ve tanımlar](declarations-and-definitions-cpp.md)   
  [Lambda ifadeleri örnekleri](../cpp/examples-of-lambda-expressions.md)   
