@@ -149,7 +149,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından oluşturulan hata ile
 |[Derleyici Hatası C2491](compiler-error-c2491.md)|'*tanımlayıcısı*': dllimport tanımını *işlevi* izin verilmiyor|
 |[Derleyici Hatası C2492](compiler-error-c2492.md)|'*değişkeni*': iş parçacığı depolama süresi verilerle dll arabirimi olmayabilir|
 |[Derleyici Hatası C2493](compiler-error-c2493.md)|__based geçersiz biçimi|
-|[Derleyici Hatası C2494](compiler-error-c2494.md)|'*anahtar sözcüğü*' den bir filtre ifadesi çağrılamaz veya &#95; & # son/finally bloğunda 95;|
+|[Derleyici Hatası C2494](compiler-error-c2494.md)|'*anahtar sözcüğü*' den bir filtre ifadesi çağrılamaz veya &#95;&#95;son/finally bloğunda|
 |[Derleyici Hatası C2495](compiler-error-c2495.md)|'*tanımlayıcısı*': '__declspec(noexcept)', yalnızca işlev bildirimleri ya da tanımları uygulanabilir|
 |[Derleyici Hatası C2496](compiler-error-c2496.md)|'*tanımlayıcısı*': 'selectany' yalnızca uygulanabilir veri öğeleri ile dış bağlantı|
 |Derleyici Hatası C2497|'*tanımlayıcısı*': 'implementation_key' yalnızca işlevi bildirimlerine uygulanabilir|
