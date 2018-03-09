@@ -2,13 +2,14 @@
 layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
+ms.topic: landing-page
 title: "C++ belgeleri ile Linux geliştirme"
 description: "Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama."
-ms.openlocfilehash: 80dea4d1a963bd9c2f6f49dda3347529d51e8ce1
-ms.sourcegitcommit: ebec1d449f2bd98aa851667c2bfeb7e27ce657b2
+ms.openlocfilehash: c4794dbeb7e5a1d356e251686653c6c0aa0a023a
+ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/24/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 
@@ -66,7 +67,7 @@ Oluşturun ve Linux üzerinde çalışan uygulamalarda hata ayıklama.
                 <div class="card">
                     <div class="cardText">
                         <h3><a href="/cpp/visual-cpp-in-visual-studio">Visual C++</a></h3>
-                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">IDE ve Visual C++ geliştirme araçları</a></p>
+                        <p><a href="/cpp/ide/ide-and-tools-for-visual-cpp-development">Visual C++ Geliştirme Araçları ve IDE</a></p>
                     </div>
                 </div>
             </div>

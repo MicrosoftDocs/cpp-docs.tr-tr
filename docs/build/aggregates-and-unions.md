@@ -19,14 +19,14 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74ee1bbcf1a39171b18c09274543c72e0b844748
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: db5e8551adff9752cbcaca3f4dc7d3c4a7fca908
+ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="aggregates-and-unions"></a>Toplamlar ve Birleşimler
-Diziler, yapılar ve birleşimleri gibi diğer türleri tutarlı toplama ve birleşim depolama ve veri alma olun daha sıkı hizalama gereksinimleri vardır. Dizi, yapı ve birleşim tanımlarında şunlardır:  
+Diziler, yapılar ve birleşimleri, gibi diğer türleri tutarlı toplama ve birleşim depolama ve veri alma olun daha sıkı hizalama gereksinimleri vardır. Dizi, yapı ve birleşim tanımlarında şunlardır:  
   
  Dizi  
  Sıralı bir grup bitişik veri nesneleri içerir. Her nesne bir öğe adı verilir. Bir dizi içinde tüm öğeleri aynı boyut ve veri türüne sahip.  
@@ -54,7 +54,7 @@ Diziler, yapılar ve birleşimleri gibi diğer türleri tutarlı toplama ve birl
 |**FP64 (çift duyarlık)**|**double**|Quadword|  
 |**İŞARETÇİ**|**\***|Quadword|  
 |`__m64`|**Yapı __m64**|Quadword|  
-|`__m128`|**Yapı __m128**|Octaword|  
+|`__m128`|**struct __m128**|Octaword|  
   
  Aşağıdaki toplam hizalama kurallar geçerlidir:  
   

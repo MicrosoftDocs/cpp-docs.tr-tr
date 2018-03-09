@@ -19,11 +19,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d527a4e0647fe0e8471e168841a93512f4d1a9e8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f534432fbf7ff723cac1448bc3a26474f3b323bb
+ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015 ve Visual Studio 2017 C++ ikili uyumluluğu
 
@@ -34,7 +34,8 @@ Bu kural için iki özel durum vardır. Bu durumlarda ikili uyumluluğu garanti 
 
 1) Ne zaman statik kitaplıklar veya nesne dosyaları /GL derleyici anahtarıyla derlenir.  
 
-2) Ne zaman uygulama, sürüm numarasını uygulama derlemek için kullanılan araç takımı'dan küçük yeniden dağıtılabilir kitaplıkları tüketir. Diğer bir deyişle, platform araç takımı v141 sahip bir program derleme yaparsanız uygulama tüketir redistributable kitaplıkları v141 ile derlenmiş veya daha büyük olmalıdır.  
+2) Sürümü derlemek ve uygulama bağlamak için kullanılan araç takımı büyük bir araç takımı ile oluşturulan kitaplıkları kullanırken. Örneğin, derlenmiş ve araç takımı 19.12 ile ilişkili olan bir program ile 19,0 yukarı 19.12 derlenen kitaplıklarını kullanabilir. 19.x bağlama Visual Studio 2013 tarafından üretilen kitaplıklarla programları veya önceki sürümleri desteklenmez.
+
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

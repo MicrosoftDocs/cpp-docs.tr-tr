@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: e8817b72e5e6eb7ba808455113104e8fb5000505
-ms.sourcegitcommit: d24de38f9da844f824acb9d200a3f263077145fc
+ms.openlocfilehash: 7012777643f993c552f79b58a02d4806c0ce4caa
+ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="zf-faster-pdb-generation"></a>/ZF (daha hızlı PDB oluşturma)
 
@@ -32,7 +32,7 @@ Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en az
 
 **/Zf** seçeneğini kullanırken PDB dosyalarını daha hızlı oluşturulmasını için derleyici desteği etkinleştirir [/MP (birden çok süreçle derleme)](mp-build-with-multiple-processes.md) seçeneğini veya yapı sistem (örneğin, [MSBuild ](/visualstudio/msbuild/msbuild-reference) veya [CMake](../../ide/cmake-tools-for-visual-cpp.md)) birden çok cl.exe derleyici işlemler aynı anda çalışabilir. Bu seçenek türü dizinleri derleme sonuna kadar oluşturma PDB dosyasında her tür kaydı için gecikme derleyici ön uç neden olur ve ardından bunları her kayıt için bir RPC isteği yapan yerine mspdbsrv.exe, tek bir RPC çağrısı, tüm istekleri. Birden çok cl.exe derleyici işlemler aynı anda çalıştırdığı bir ortamda mspdbsrv.exe işlem RPC yükünü azaltarak bu yapı verimlilik önemli ölçüde artırabilir.
 
-Çünkü **/Zf** seçeneği yalnızca PDF oluşturma için geçerlidir, gerektirir [/zı](z7-zi-zi-debug-information-format.md) veya [/zı](z7-zi-zi-debug-information-format.md) seçeneği.
+Çünkü **/Zf** seçeneği yalnızca PDB oluşturma için geçerlidir, gerektirir [/zı](z7-zi-zi-debug-information-format.md) veya [/zı](z7-zi-zi-debug-information-format.md) seçeneği.
 
 **/Zf** seçeneği Visual Studio 2017 sürüm 15.1 başında olduğundan ve varsayılan olarak kapalıdır.
 
