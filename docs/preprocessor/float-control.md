@@ -23,11 +23,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1525b92b43a688cdec970c646613aa4474d44cc3
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: bf5c9d4e410c74957fad3816c6ba07ddcc724f37
+ms.sourcegitcommit: b597ef49b5b12fe2e54dc3d54619442879eca5a9
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="floatcontrol"></a>float_control
 Bir işlev için kayan nokta davranışını belirtir.  
@@ -59,8 +59,6 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(except, off)  
 #pragma fenv_access(off)  
 #pragma float_control(precise, off)  
-// The following line is needed on Itanium processors  
-#pragma fp_contract(on)  
 ```  
   
  Hızlı modelden ile sıkı bir model gitmek için `float_control` pragma, aşağıdaki kodu kullanın:  
@@ -69,8 +67,6 @@ float_control( value,setting [push] | push | pop )
 #pragma float_control(precise, on)  
 #pragma fenv_access(on)  
 #pragma float_control(except, on)  
-// The following line is needed on Itanium processors.  
-#pragma fp_contract(off)  
 ```  
   
  Diğer kayan nokta pragmaları şunlardır:  
