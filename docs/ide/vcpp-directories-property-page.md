@@ -1,7 +1,7 @@
 ---
 title: "VC ++ dizinleri özellik sayfası | Microsoft Docs"
 ms.custom: 
-ms.date: 11/28/2017
+ms.date: 03/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -28,11 +28,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c92a97ccd28a1bc7d1fae518cf499b45d339dae
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 1608bc5e78da98feb39be14d779677839f664058
+ms.sourcegitcommit: eb246547c7c9adc7d7ac4083ef09bf6e54dec914
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="vc-directories-property-page-windows"></a>VC ++ dizinleri özellik sayfası (Windows)
 
@@ -42,23 +42,25 @@ Bu sayfayı Linux sürümü için bkz: [VC ++ dizinleri (Linux C++)](../linux/pr
 
 Erişim için **VC ++ dizinleri** özellik sayfası:
 
-1. Ana menüden **View | Çözüm Gezgini**
-1. Proje düğümüne (üst düzey çözümü değil) sağ tıklatın ve seçin **özellikleri**
-1. sol bölmesinde **özellik sayfaları** iletişim kutusunda, genişletin **yapılandırma özellikleri** seçip **VC ++ dizinleri**.  
+1. Varsa **Çözüm Gezgini** pencere görünür değil, ana menüde seçin **Görünüm** > **Çözüm Gezgini**.
+1. Bir proje düğümüne (üst düzey çözümü değil) sağ tıklatın ve seçin **özellikleri**.
+1. Sol bölmesinde **özellik sayfaları** iletişim kutusunda **yapılandırma özellikleri** > **VC ++ dizinleri**.  
 
-VC ++ dizinleri özellikleri projeye, üst düzey çözüm düğümüne geçerlidir:
+VC ++ dizinleri özellikleri üst düzey çözüm düğümüne bir proje için geçerlidir. Görmüyorsanız, **VC ++ dizinleri** altında **yapılandırma özellikleri**, C++ projesi düğümü seçin **Çözüm Gezgini** penceresi: 
 
 ![Proje düğümünü seçin](media/vcppdir.png "VC ++ dizinleri özellik görmek için proje düğümünü seçin")
 
-Özellik sayfası görmüyorsanız, proje düğümüne seçili olduğundan emin olun **Çözüm Gezgini**. Unutmayın bir **VC ++ dizinleri** farklı platformlar arası projeleri için özellik sayfası görünür. Windows olmayan projeleri için bkz: [VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md) veya. 
+Unutmayın **VC ++ dizinleri** farklı platformlar arası projeleri için özellik sayfası görünür. Linux C++ projelerine özel bilgi için bkz: [VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md). 
  
 Alışık değilseniz *proje özellikleri* Visual Studio'da ilk okuma için yararlı [proje özellikleriyle çalışma](working-with-project-properties.md). 
  
-VC ++ dizinleri için varsayılan ayarları proje türüne bağlıdır. Masaüstü projeleri için belirli bir Platform araç takımı için VC ++ araçları konumlarını ve Windows SDK'sı konumu içerirler. Değiştirebileceğiniz **Platform araç takımı** ve **Windows SDK sürümü** üzerinde **yapılandırma özellikleri – genel** sayfası. Herhangi bir dizin için değerleri görüntülemek için:
+Varsayılan ayarları **VC ++ dizinleri** özellikleri proje türüne bağlıdır. Masaüstü projeleri için belirli bir Platform araç takımı C++ Araçları konumlarını ve Windows SDK'sı konumu içerirler. Değiştirebileceğiniz **Platform araç takımı** ve **Windows SDK sürümü** üzerinde **yapılandırma özellikleri** > **genel** Sayfa. 
 
-1. sağ bölmesinde **VC ++ dizinleri** sayfasında, bir satır seçin. Örneğin, **kitaplık dizinleri**
-1. Sağdaki aşağı ok düğmesini seçin
-1. Seçin **Düzenle**.
+Herhangi bir dizin için değerleri görüntülemek için:
+
+1. Özelliklerden birini **VC ++ dizinleri** sayfası. Örneğin, tercih **kitaplık dizinleri**.
+1. Özellik değeri alanı sonunda aşağı ok düğmesini seçin.
+1. Açılan menüde seçin **Düzenle**.
 
 ![Kitaplık dizinleri Düzenle](media/vcppdir_libdir_edit.png "kitaplık yolları Düzenle iletişim kutusu")
 
@@ -74,7 +76,7 @@ Düzenleme kutusuna kısmi veya tam eşleşme arayabilirsiniz. Aşağıdaki çiz
 
 ![Makro değerlerini görmek](media/vcppdir_libdir_macros.png "makroları Düzenle iletişim kutusu")
 
-Not: yazarken listesi doldurur. Basın yok **Enter**.
+Not: liste yazarken doldurulur. Basın yok **Enter**.
 
 Makrolar ve bunları neden sabit kodlanmış yolları mümkün olduğunda yerine kullanmanız hakkında daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md#bkmkPropertiesVersusMacros). 
 
@@ -90,22 +92,25 @@ Bu Web günlüğü postaları daha fazla bilgi için bkz: [VC ++ dizinleri](http
 
 Ayrıca, aşağıdaki gibi diğer dizinleri de belirtebilirsiniz.  
   
-**Yürütülebilir dosya dizinleri**  
+**Yürütülebilir dosya dizinleri**<br/>
 Yürütülebilir dosyaların aranacağı dizinler. Karşılık gelen **yolu** ortam değişkeni.
 
-**Yönergeleri dahil etme**  
+**Yönergeleri dahil etme**<br/>
 Kaynak kodda başvurulan ekleme kodu dosyalarının aranacağı dizinler. Karşılık gelen **INCLUDE** ortam değişkeni.
 
-**Başvuru dizinleri**  
+**Başvuru dizinleri**<br/>
  Derleme ve kaynak kodu tarafından başvurulan modül (meta verileri) dosyaları için aranacak dizinlerde [#using](../preprocessor/hash-using-directive-cpp.md) yönergesi. Karşılık gelen **LIBPATH** ortam değişkeni.
 
-**Kitaplık dizinleri**  
-Kitaplık (.lib) dosyalarının aranacağı dizinler; çalışma zamanı kitaplıkları da buna dahildir. Karşılık gelen **LIB** ortam değişkeni. Bu ayar .obj dosyaları için geçerli değildir; üzerinde bir .obj dosyasına bağlanmak için [bağlayıcı](../ide/linker-property-pages.md)**genel** özellik sayfasında, **ek kitaplık bağımlılıkları** ve ardından dosyanın göreli yolunu belirtin.
+**Kitaplık dizinleri**<br/>
+Kitaplık (.lib) dosyalarının aranacağı dizinler; çalışma zamanı kitaplıkları da buna dahildir. Karşılık gelen **LIB** ortam değişkeni. Bu ayar .obj dosyaları için geçerli değildir; üzerinde bir .obj dosyasına bağlanmak için **yapılandırma özellikleri** > **bağlayıcı** > **genel** özellik sayfasında,  **Ek Kitaplık bağımlılıkları** ve ardından dosyanın göreli yolunu belirtin. Daha fazla bilgi için bkz: [bağlayıcı özellik sayfaları](../ide/linker-property-pages.md).
 
-**Kaynak dizinler**  
+**Kitaplık WinRT dizinleri**<br/>
+Evrensel Windows Platformu (UWP) uygulamaları için WinRT kitaplık dosyalarını aramak için dizinler kullanır. 
+
+**Kaynak dizinler**<br/>
 IntelliSense için kullanılacak kaynak dosyaların aranacağı dizinler.
 
-**Dizinleri dışta tut**  
+**Dizinleri dışta tut**<br/>
 Yapı bağımlılıkları denetlenirken aranmayacak dizinler.
 
 ## <a name="sharing-the-settings"></a>Ayarları Paylaşma
