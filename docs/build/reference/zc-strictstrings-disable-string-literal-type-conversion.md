@@ -1,12 +1,9 @@
 ---
-title: "-Zc: strictStrings (dize değişmez değer türü dönüşümünü devre dışı bırakma) | Microsoft Docs"
+title: "/ ZC: strictstrings (dize değişmez değer türü dönüşümünü devre dışı bırakma) | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/06/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /Zc:strictStrings
@@ -20,69 +17,69 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f316c5fc9209f968219d770a15e6576880b69954
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61ae45d6a067b45d625055d92900b17e69a366e7
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>/Zc:strictStrings (Değişmez değer dize türü dönüşümünü devre dışı bırakma)
-Belirtildiğinde, derleyici katı gerektirir `const`-dize değişmez değerleri kullanarak tarafından başlatılan işaretçileri niteliğe uygunluk.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Zc:strictStrings[-]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa **/ZC: strictstrings** belirtilirse, standart C++ Derleyici zorlar `const` türü olarak dize değişmez değerleri nitelikleri ' dizisi `const char`' veya ' dizisi `const wchar_t`' bildirimi bağlı olarak. Dize değişmez değerleri sabittir ve bir içeriğini değiştirme girişimi çalışma zamanında bir erişim ihlali hata oluşur. Dize işaretçisi olarak bildirilmelidir `const` bir değişmez dize değeri kullanarak başlatmak veya açık bir kullanmak için `const_cast` olmayan bir başlatılamadı`const` işaretçi. Varsayılan olarak, veya **/Zc:strictStrings-** belirtilirse, derleyici, standart C++ zorlamaz `const` nitelikleri dize işaretçileri dize değişmez değerleri kullanarak başlatıldı.  
-  
- Kullanım **/ZC: strictstrings** hatalı kod derleme önlemek için seçeneği. Bu örnek nasıl basit bildirimi hata çökmeyle için çalışma zamanında müşteri adayları gösterir:  
-  
-```cpp  
-// strictStrings_off.cpp  
-// compile by using: cl /W4 strictStrings_off.cpp  
-int main() {  
-   wchar_t* str = L"hello";  
-   str[2] = L'a'; // run-time error: access violation  
-}  
-```  
-  
- Zaman **/ZC: strictstrings** olan etkinse, aynı kod bildirimi hata raporları `str`.  
-  
-```cpp  
-// strictStrings_on.cpp  
-// compile by using: cl /Zc:strictStrings /W4 strictStrings_on.cpp  
-int main() {  
-   wchar_t* str = L"hello"; // error: Conversion from string literal   
-   // loses const qualifier  
-   str[2] = L'a';   
-}  
-```  
-  
- Kullanırsanız `auto` dize işaretçisi bildirmek için derleyici doğru oluşturur `const` , işaretçi türü bildirimi. İçeriğini değiştirme girişimi bir `const` işaretçi hata olarak derleyici tarafından bildirilir.  
-  
+
+Belirtildiğinde, derleyici katı gerektirir `const`-dize değişmez değerleri kullanarak tarafından başlatılan işaretçileri niteliğe uygunluk.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/Zc:strictStrings**[**-**]
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsa **/ZC: strictstrings** belirtilirse, standart C++ Derleyici zorlar `const` türü olarak dize değişmez değerleri nitelikleri ' dizisi `const char`' veya ' dizisi `const wchar_t`' bildirimi bağlı olarak. Dize değişmez değerleri sabittir ve bir içeriğini değiştirme girişimi çalışma zamanında bir erişim ihlali hata oluşur. Dize işaretçisi olarak bildirilmelidir `const` bir değişmez dize değeri kullanarak başlatmak veya açık bir kullanmak için `const_cast` olmayan bir başlatılamadı`const` işaretçi. Varsayılan olarak, veya **/Zc:strictStrings-** belirtilirse, derleyici, standart C++ zorlamaz `const` nitelikleri dize işaretçileri dize değişmez değerleri kullanarak başlatıldı.
+
+**/ZC: strictstrings** seçeneği varsayılan olarak kapalıdır. [/ İzin veren-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:strictStrings-**.
+
+Kullanım **/ZC: strictstrings** hatalı kod derleme önlemek için seçeneği. Bu örnek nasıl basit bildirimi hata çökmeyle için çalışma zamanında müşteri adayları gösterir:
+
+```cpp
+// strictStrings_off.cpp
+// compile by using: cl /W4 strictStrings_off.cpp
+int main() {
+   wchar_t* str = L"hello";
+   str[2] = L'a'; // run-time error: access violation
+}
+```
+
+Zaman **/ZC: strictstrings** olan etkinse, aynı kod bildirimi hata raporları `str`.
+
+```cpp
+// strictStrings_on.cpp
+// compile by using: cl /Zc:strictStrings /W4 strictStrings_on.cpp
+int main() {
+   wchar_t* str = L"hello"; // error: Conversion from string literal
+   // loses const qualifier
+   str[2] = L'a';
+}
+```
+
+Kullanırsanız `auto` dize işaretçisi bildirmek için derleyici doğru oluşturur `const` , işaretçi türü bildirimi. İçeriğini değiştirme girişimi bir `const` işaretçi hata olarak derleyici tarafından bildirilir.
+
 > [!NOTE]
->  C++ Standart Kitaplığı'nda [!INCLUDE[cpp_dev12_long](../../build/reference/includes/cpp_dev12_long_md.md)] desteklemediği **/ZC: strictstrings** debug derleyici seçeneği oluşturur. Birkaç görürseniz [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) , yapı hataları çıkışı, bu neden olabilir.  
-  
- Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **C/C++** klasör.  
-  
-3.  Seçin **komut satırı** özellik sayfası.  
-  
-4.  Değiştirme **ek seçenekler** eklenecek özellik `/Zc:strictStrings` ve ardından **Tamam**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)
+> C++ Standart Kitaplığı'nda [!INCLUDE[cpp_dev12_long](../../build/reference/includes/cpp_dev12_long_md.md)] desteklemediği **/ZC: strictstrings** debug derleyici seçeneği oluşturur. Birkaç görürseniz [C2665](../../error-messages/compiler-errors-2/compiler-error-c2665.md) , yapı hataları çıkışı, bu neden olabilir.
+
+Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+
+1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: strictstrings** ve ardından **Tamam**.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>

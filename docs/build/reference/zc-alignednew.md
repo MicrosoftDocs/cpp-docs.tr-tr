@@ -1,6 +1,6 @@
 ---
 title: "/ZC:alignedNew (c ++ 17 aşırı hizalanmış ayırma) | Microsoft Docs"
-ms.date: 12/14/2017
+ms.date: 02/28/2018
 ms.technology:
 - cpp-tools
 ms.topic: article
@@ -15,11 +15,11 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 1a4d6e801b258697154a4b11c7b5e468c090cc94
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d645534c398628afa533770d44094d23ca0325a5
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zcalignednew-c17-over-aligned-allocation"></a>/ZC:alignedNew (c ++ 17 aşırı hizalanmış ayırma)
 
@@ -27,13 +27,13 @@ Aşırı hizalı C ++ 17 desteğini etkinleştirme **yeni**, dinamik bellek ayı
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ZC:alignedNew**[-]
+> **/Zc:alignedNew**[-]
 
 ## <a name="remarks"></a>Açıklamalar
 
 Visual Studio sürüm 15,5 derleyici ve C ++ 17 Standart aşırı hizalanmış dinamik bellek ayırma için kitaplık desteği sağlar. Zaman **/Zc:alignedNew** seçeneği belirtildiğinde, dinamik ayırma gibi `new Example;` hizalamasını uyar *örnek* bile, büyük olduğunda `max_align_t`, en büyük hizalama herhangi bir temel türü için gereklidir. Ayrılmış türü hizalamasını olduğunda, özgün işleciyle garanti en fazla **yeni**, önceden tanımlanmış makrosu değeri olarak kullanılabilir  **\_ \_STDCPP\_varsayılan \_Yeni\_hizalama\_\_**, deyim `new Example;` yapılan bir çağrı sonuçlanıyor `::operator new(size_t)` C ++ 14'te yaptığınız gibi. Hizalama olduğunda büyük  **\_ \_STDCPP\_varsayılan\_yeni\_hizalama\_\_**, bunun yerine uygulama alır kullanarak bellek `::operator new(size_t, align_val_t)`. Benzer şekilde, aşırı hizalanmış türleri silinmesini çağırır `::operator delete(void*, align_val_t)` veya boyutlu imzayı silme `::operator delete(void*, size_t, align_val_t)`.
 
-**/Zc:alignedNew** seçenek, yalnızca kullanılabilir olduğunda [/Std: c ++ 17](std-specify-language-standard-version.md) veya [/Std: c ++ Son](std-specify-language-standard-version.md) etkinleştirilir. Altında **/Std: c ++ 17** veya **/Std: c ++ Son**, **/Zc:alignedNew** C ++ 17 standart ISO için uygun olması için varsayılan olarak etkindir. Yalnızca neden olursa işleci uygulamak **yeni** ve **silmek** aşırı hizalanmış ayırmaları desteklemektir artık bu kodu C ++ 17 modunda gerekebilir. Bu seçeneği kapatmak ve C ++ 14 davranışını için geri döndürmek için **yeni** ve **silmek** zaman **/std::c ++ 17** veya **/Std: c ++ Son** belirtilirse, belirtin **/Zc:alignedNew-**. İşleç uygularsanız **yeni** ve **silmek** ancak aşırı hizalanmış işleci uygulamak hazır olmayan **yeni** ve **silme** sahip aşırı `align_val_t` parametresi, kullanım **/Zc:alignedNew-** derleyicisi ve standart kitaplığı oluşturulmasını önlemek için seçeneği aşırı hizalanmış aşırı çağırır.
+**/Zc:alignedNew** seçenek, yalnızca kullanılabilir olduğunda [/Std: c ++ 17](std-specify-language-standard-version.md) veya [/Std: c ++ Son](std-specify-language-standard-version.md) etkinleştirilir. Altında **/Std: c ++ 17** veya **/Std: c ++ Son**, **/Zc:alignedNew** C ++ 17 standart ISO için uygun olması için varsayılan olarak etkindir. Yalnızca neden olursa işleci uygulamak **yeni** ve **silmek** aşırı hizalanmış ayırmaları desteklemektir artık bu kodu C ++ 17 modunda gerekebilir. Bu seçeneği kapatmak ve C ++ 14 davranışını için geri döndürmek için **yeni** ve **silmek** zaman **/std::c ++ 17** veya **/Std: c ++ Son** belirtilirse, belirtin **/Zc:alignedNew-**. İşleç uygularsanız **yeni** ve **silmek** ancak aşırı hizalanmış işleci uygulamak hazır olmayan **yeni** ve **silme** sahip aşırı `align_val_t` parametresi, kullanım **/Zc:alignedNew-** derleyicisi ve standart kitaplığı oluşturulmasını önlemek için seçeneği aşırı hizalanmış aşırı çağırır. [/ İzin veren-](permissive-standards-conformance.md) seçenek varsayılan ayar değiştirmez **/Zc:alignedNew**.
 
 ## <a name="example"></a>Örnek
 
@@ -106,10 +106,10 @@ Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart 
 
 1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
 
-1. Seçin **komut satırı** özellik sayfasında **C/C++** klasör.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
 1. Değiştirme **ek seçenekler** eklenecek özellik **/Zc:alignedNew** veya **/Zc:alignedNew-** ve ardından **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)  
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)  

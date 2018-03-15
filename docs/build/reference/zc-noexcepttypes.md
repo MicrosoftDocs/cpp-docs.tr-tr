@@ -18,11 +18,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1b0e209462295f907f5e518299d34fb18aade4d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: af455b9a781295f3e6f446b7dc5c3d253fe2f4c5
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zcnoexcepttypes-c17-noexcept-rules"></a>/ZC:noexceptTypes (c ++ 17 noexcept kurallar)
 
@@ -30,11 +30,11 @@ C ++ 17 standart hale getirir `throw()` için diğer ad olarak `noexcept`, kald�
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ZC:noexceptTypes**[-]
+> **/Zc:noexceptTypes**[-]
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **/Zc:noexceptTypes** seçeneği belirtildiğinde, derleyicinin C ++ 17 için standart uyan ve değerlendirir [throw()](../../cpp/exception-specifications-throw-cpp.md) için diğer ad olarak [noexcept](../../cpp/noexcept-cpp.md), kaldırır`throw(<type list>)`ve `throw(...)`ve dahil etmek belirli türlerine izin verir `noexcept`. **/Zc:noexceptTypes** seçenek, yalnızca kullanılabilir olduğunda [/Std: c ++ 17](std-specify-language-standard-version.md) veya [/std:latest](std-specify-language-standard-version.md) etkinleştirilir. **/ZC:noexceptTypes** C ++ 17 standart ISO için uygun olması için varsayılan olarak etkindir. Bu seçeneği belirterek kapatmak **/Zc:noexceptTypes-** C ++ 14 davranışını için dönmek için `noexcept` zaman **/std::C ++ 17** veya **/std::latest** belirtilir.
+Zaman **/Zc:noexceptTypes** seçeneği belirtildiğinde, derleyicinin C ++ 17 için standart uyan ve değerlendirir [throw()](../../cpp/exception-specifications-throw-cpp.md) için diğer ad olarak [noexcept](../../cpp/noexcept-cpp.md), kaldırır`throw(<type list>)`ve `throw(...)`ve dahil etmek belirli türlerine izin verir `noexcept`. **/Zc:noexceptTypes** seçenek, yalnızca kullanılabilir olduğunda [/Std: c ++ 17](std-specify-language-standard-version.md) veya [/std:latest](std-specify-language-standard-version.md) etkinleştirilir. **/ZC:noexceptTypes** C ++ 17 standart ISO için uygun olması için varsayılan olarak etkindir. [/ İzin veren-](permissive-standards-conformance.md) seçeneği etkilemez **/Zc:noexceptTypes**. Bu seçeneği belirterek kapatmak **/Zc:noexceptTypes-** C ++ 14 davranışını için dönmek için `noexcept` zaman **/std::C ++ 17** veya **/std::latest** belirtilir.
 
 Visual Studio 2017 sürüm 15,5 başlayarak, C++ derleyicisi bildirimlerden C ++ 17 modunda daha fazla eşleşmeyen özel durum belirtimleri tanılar veya ne zaman [/ izin veren-](permissive-standards-conformance.md) seçeneği belirtildi.
 
@@ -84,12 +84,12 @@ Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart 
 
 1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
 
-1. Seçin **komut satırı** özellik sayfasında **C/C++** klasör.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
 1. Değiştirme **ek seçenekler** eklenecek özellik **/Zc:noexceptTypes** veya **/Zc:noexceptTypes-** ve ardından **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)  
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)  
 [noexcept](../../cpp/noexcept-cpp.md)  
-[Özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)  
+[Özel Durum Belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)  

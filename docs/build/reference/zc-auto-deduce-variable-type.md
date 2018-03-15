@@ -1,12 +1,9 @@
 ---
 title: "-Zc: auto (değişken türünü) | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.date: 02/28/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /Zc:auto
@@ -18,44 +15,40 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd2f0ff353e1243685c94da0c28f29e810b2a9ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 662095cdc1555891a543920a64cb7b31074914aa
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
-**/Zc:auto [-]** derleyici seçeneği derleyici nasıl kullanılacağını söyler [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md) değişkenleri bildirmek için. Varsayılan seçenek belirtirseniz, **/Zc:auto**, derleyici, başlatma ifadesinden bildirilen değişkeninin türü deduces. Belirtirseniz **/Zc:auto-**, otomatik depolama sınıfı değişkenine derleyici ayırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Zc:auto[-]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- C++ standart bir özgün ve için yeniden düzenlenen bir anlam tanımlar `auto` anahtar sözcüğü. Önce [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü otomatik depolama sınıfı bir değişkende bildirir; diğer bir deyişle, yerel bir yaşam süresi sahip bir değişken. İle başlayarak [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü bir değişken bildirimi 's başlatma ifadesinden türünü deduces. Kullanmak **/Zc:auto [-]** özgün ya da düzeltilmiş anlamını kullanmak için derleyicisi bildirmek için derleyici seçeneği `auto` anahtar sözcüğü.  
-  
- Derleyici, uygun bir tanılama iletisi verir kullanımınız `auto` anahtar sözcüğü geçerli derleyici seçeneği çelişir. Daha fazla bilgi için bkz: [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md). Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).  
-  
-### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio'da Bu derleyici seçeneği ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **yapılandırma özellikleri** düğümü.  
-  
-3.  Tıklatın **C/C++** düğümü.  
-  
-4.  Tıklatın **komut satırı** düğümü.  
-  
-5.  Ekleme **/Zc:auto** veya **/Zc:auto-** için **ek seçenekler:** bölmesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/ZC (Uyumluluk)](../../build/reference/zc-conformance.md)   
- [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+
+**/Zc:auto [-]** derleyici seçeneği derleyici nasıl kullanılacağını söyler [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md) değişkenleri bildirmek için. Varsayılan seçenek belirtirseniz, **/Zc:auto**, derleyici, başlatma ifadesinden bildirilen değişkeninin türü deduces. Belirtirseniz **/Zc:auto-**, otomatik depolama sınıfı değişkenine derleyici ayırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/Zc:auto**[**-**]  
+
+## <a name="remarks"></a>Açıklamalar
+
+C++ standart bir özgün ve için yeniden düzenlenen bir anlam tanımlar `auto` anahtar sözcüğü. Önce [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü otomatik depolama sınıfı bir değişkende bildirir; diğer bir deyişle, yerel bir yaşam süresi sahip bir değişken. İle başlayarak [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü bir değişken bildirimi 's başlatma ifadesinden türünü deduces. Kullanmak **/Zc:auto [-]** özgün ya da düzeltilmiş anlamını kullanmak için derleyicisi bildirmek için derleyici seçeneği `auto` anahtar sözcüğü. **/Zc:auto** seçeneği varsayılan olarak açıktır. [/ İzin veren-](permissive-standards-conformance.md) seçenek varsayılan ayar değiştirmez **/Zc:auto**.
+
+Derleyici, uygun bir tanılama iletisi verir kullanımınız `auto` anahtar sözcüğü çelişir geçerli **/Zc:auto** derleyici seçeneği. Daha fazla bilgi için bkz: [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md). Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+
+### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio'da Bu derleyici seçeneği ayarlamak için
+
+1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+
+1. Ekleme **/Zc:auto** veya **/Zc:auto-** için **ek seçenekler:** bölmesi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[/Zc (Uyumluluk)](../../build/reference/zc-conformance.md)<br/>
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

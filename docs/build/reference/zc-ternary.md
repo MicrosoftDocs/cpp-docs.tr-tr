@@ -1,6 +1,6 @@
 ---
 title: "/ZC:ternary (koşullu işleç kuralları zorla) | Microsoft Docs"
-ms.date: 1/12/2018
+ms.date: 3/06/2018
 ms.technology:
 - cpp-tools
 ms.topic: article
@@ -15,11 +15,11 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2c4f4e17d3cf72284ec68cf10e75824722d5440
-ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
+ms.openlocfilehash: 198da679e9d0d7bd58e034ca9c04c3102748af20
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zcternary-enforce-conditional-operator-rules"></a>/ZC:ternary (koşullu işleç kuralları zorla)
 
@@ -33,7 +33,7 @@ Uygulama türleri için C++ standart kurallar ve bir koşullu işleç ifadesinde
 
 Visual Studio sürümü 15.3 tanır C++ Standart koşullu (veya Üçlü) işleç için derleyici desteği (**?:**) davranışı. C++ Standart aynı türde ve MS-niteliğe veya aynı türde ve MS-nitelik halinde diğer belirsizliğe dönüştürülebilir olması yalnızca bir işlenen için veya bir throw deyimi olması bir veya iki işlenenler için iki işlenen gerekiyor. Visual Studio sürüm 15,5 önce sürümlerde, derleyici standardına göre belirsiz olarak kabul edilir dönüşümleri izin. Zaman **/Zc:ternary** seçeneği belirtildiğinde, derleyici standardına uygun ve eşleşen türleri ve MS-nitelikleri ikinci ve üçüncü işlenenler için kuralları karşılamadığı kod reddeder.
 
-**/Zc:ternary** seçeneği varsayılan olarak kapalıdır. Kullanım **/Zc:ternary** uyumlu davranışını etkinleştirmek için veya **/Zc:ternary-** önceki uyumsuz derleyici davranışı açıkça belirtmek için. [/ İzin veren-](permissive-standards-conformance.md) seçeneği belirlendiğinde **/Zc:ternary**. 
+**/Zc:ternary** seçeneği varsayılan olarak kapalıdır. Kullanım **/Zc:ternary** uyumlu davranışını etkinleştirmek için veya **/Zc:ternary-** önceki uyumsuz derleyici davranışı açıkça belirtmek için. [/ İzin veren-](permissive-standards-conformance.md) seçenek, bu seçenek örtük olarak etkinleştirir, ancak kullanarak kılınabilir **/Zc:ternary-**.
 
 ### <a name="examples"></a>Örnekler
 

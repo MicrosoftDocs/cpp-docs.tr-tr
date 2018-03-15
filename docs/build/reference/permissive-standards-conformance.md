@@ -21,11 +21,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da744d2a037d865ddd0028e59ef3ba3c56d3bdd7
-ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
+ms.openlocfilehash: 09b24e96752e61f4d09efc3780e0e60ffed8effd
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="permissive--standards-conformance"></a>/ izin veren-(standartları uyumluluğu)
 
@@ -37,7 +37,7 @@ Derleyici standartları uyumluluğu modu belirtin. Tanımlamak ve daha doğru ve
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanabileceğiniz **/ izin veren-** derleyici seçeneği standartları uyumsuz derleyici davranışı belirtin. Bu seçenek, izin veren davranışları devre dışı bırakır ve ayarlar [/Zc](../../build/reference/zc-conformance.md) katı uyumluluk derleyici seçenekleri. IDE içinde bu seçenek ayrıca IntelliSense altyapısı altı çizili uyumsuz kod kılar. 
+Kullanabileceğiniz **/ izin veren-** derleyici seçeneği standartları uyumsuz derleyici davranışı belirtin. Bu seçenek, izin veren davranışları devre dışı bırakır ve ayarlar [/Zc](../../build/reference/zc-conformance.md) katı uyumluluk derleyici seçenekleri. IDE içinde bu seçenek ayrıca IntelliSense altyapısı altı çizili uyumsuz kod kılar.
 
 Varsayılan olarak, **/ izin veren-** seçeneği, Visual Studio 2017 sürüm 15,5 ve sonraki sürümler tarafından oluşturulan yeni projeler ayarlanır. Önceki sürümlerde varsayılan olarak ayarlı değil. Seçeneğini belirleyerek, tanılama hataları derleyici oluşturur ya da standart olmayan dil yapılandırdığında uyarıları, kodunuzda algılanır bazı yaygın hatalar öncesi dahil olmak üzere-C ++ 11 kodu.
 
@@ -416,7 +416,7 @@ Visual Studio 2017 sürüm 15,5 önce sürümlerinde, bu yordamı kullanın:
 
 1. Projenizin açmak **özellik sayfaları** iletişim kutusu.
 
-1. Altında **yapılandırma özellikleri**, genişletin **C/C++** klasör ve **komut satırı** özellik sayfası.
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
 1. Girin **/ izin veren-** derleyici seçeneği **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.
 

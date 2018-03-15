@@ -1,12 +1,9 @@
 ---
 title: fenv_access | Microsoft Docs
 ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/12/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vc-pragma.fenv_access
@@ -17,131 +14,104 @@ helpviewer_keywords:
 - pragmas, fenv_access
 - fenv_access pragma
 ms.assetid: 2ccea292-0ae4-42ce-9c67-cc189299857b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f06c699ba20d09ec1d013f9464af02935da9f9c1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 0e19b4b3f1fd71d61609648f587dee9aac31e6f6
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="fenvaccess"></a>fenv_access
-(Açık) devre dışı bırakır veya bayrak testleri ve mod değişiklikleri değişebilir iyileştirmeler (Kapalı) etkinleştirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#pragma fenv_access [ON | OFF]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `fenv_access` Kapalı'dır.  
-  
- Kayan nokta davranışını hakkında daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../build/reference/fp-specify-floating-point-behavior.md).  
-  
- Tabi olan en iyi duruma getirme türlerini `fenv_access` şunlardır:  
-  
--   Genel Genel alt ifade ortadan kaldırma  
-  
--   Kod hareket  
-  
--   Sabit Katlama  
-  
- Diğer kayan nokta pragmaları şunlardır:  
-  
--   [float_control](../preprocessor/float-control.md)  
-  
--   [fp_contract](../preprocessor/fp-contract.md)  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// pragma_directive_fenv_access_x86.cpp  
-// compile with: /O2  
-// processor: x86  
-#include <stdio.h>  
-#include <float.h>   
-#include <errno.h>  
-#pragma fenv_access (on)  
-  
-int main() {  
-   double z, b = 0.1, t = 0.1;  
-   unsigned int currentControl;  
-   errno_t err;  
-  
-   err = _controlfp_s(&currentControl, _PC_24, _MCW_PC);  
-   if (err != 0) {  
-      printf_s("The function _controlfp_s failed!\n");  
-      return -1;  
-   }  
-   z = b * t;  
-   printf_s ("out=%.15e\n",z);  
-}  
-```  
-  
-```Output  
-out=9.999999776482582e-003  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, Itanium işlemcilere için çıktı dosyaları oluşturan derleyici içindir. **/FP: kesin** el ile hesaplanıyorsa gerektiği gibi ara sonuçların nereye büyük değerler FLT_MAX (3.402823466e + 38F) hesaplanabilir daha ve toplamı sonucunda olacaktır 1.0 sonuç genişletilmiş kesinlik tutar. **/FP: katı** ilk Toplama ifadesi tutulur sonsuz üreten şekilde tutar Ara kendi kaynak duyarlık (kayan nokta) sonuçlanır.  
-  
-```  
-// pragma_directive_fenv_access_IPF.cpp  
-// compile with: /O2 /fp:precise  
-// processor: IPF  
-// compiling with /fp:precise prints 1.0F  
-// compile with /fp:strict to print infinity  
-  
-#include <stdio.h>  
-float arr[5] = {3.402823465e+38F,   
-               3.402823462e+38F,  
-               3.402823464e+38F,  
-               3.402823463e+38F,  
-               1.0F};  
-  
-int main() {  
-   float sum = 0;  
-   sum = arr[0] + arr[1] - arr[2] - arr[3] + arr[4];  
-   printf_s("%f\n", sum);  
-}  
-```  
-  
-```Output  
-1.000000  
-```  
-  
-## <a name="example"></a>Örnek  
- Out yorum zaman `#pragma fenv_access (on)` önceki örnekten derleyici denetim modunu kullanmaz derleme zamanı değerlendirme yaptığından çıkış farklı olduğuna dikkat edin.  
-  
-```  
-// pragma_directive_fenv_access_2.cpp  
-// compile with: /O2  
-#include <stdio.h>  
-#include <float.h>   
-  
-int main() {  
-   double z, b = 0.1, t = 0.1;  
-   unsigned int currentControl;  
-   errno_t err;  
-  
-   err = _controlfp_s(&currentControl, _PC_24, _MCW_PC);  
-   if (err != 0) {  
-      printf_s("The function _controlfp_s failed!\n");  
-      return -1;  
-   }  
-   z = b * t;  
-   printf_s ("out=%.15e\n",z);  
-}  
-```  
-  
-```Output  
-out=1.000000000000000e-002  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+
+Devre dışı bırakır (**üzerinde**) veya sağlar (**kapalı*) kayan nokta ortamı değişebilir iyileştirmeler bayrak testleri ve mod değişiklikleri.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **#pragma fenv_access (** { **üzerinde** | **kapalı** } **)**  
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, **fenv_access** olan **devre dışı**. Derleyici varsayımında kodunuzu erişemedi veya kayan nokta ortamı işlemek, sonra birçok kayan nokta kodu en iyi duruma getirme işlemi gerçekleştirebilirsiniz. Ayarlama **fenv_access** için **üzerinde** kodunuzu durumu bayrakları, özel durumlar, test veya Denetim modu bayrakları ayarlamak için kayan nokta ortamı erişen derleyici bilgilendirmek için. Kodunuzu kayan nokta ortamı tutarlı bir şekilde erişebilmesi için bu iyileştirmeler derleyici devre dışı bırakır. 
+
+Kayan nokta davranışını hakkında daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../build/reference/fp-specify-floating-point-behavior.md).
+
+Tabi olan en iyi duruma getirme türlerini **fenv_access** şunlardır:
+
+- Genel Genel alt ifade ortadan kaldırma
+
+- Kod hareket
+
+- Sabit Katlama
+
+Diğer kayan nokta pragmaları şunlardır:
+
+- [float_control](../preprocessor/float-control.md)
+
+- [fp_contract](../preprocessor/fp-contract.md)
+
+## <a name="examples"></a>Örnekler
+
+Bu örnek ayarlar **fenv_access** için **üzerinde** 24 bit duyarlık kayan nokta denetim kaydolun ayarlamak için:
+
+```cpp
+// pragma_directive_fenv_access_x86.cpp
+// compile with: /O2
+// processor: x86
+#include <stdio.h>
+#include <float.h>
+#include <errno.h>
+#pragma fenv_access (on)
+
+int main() {
+   double z, b = 0.1, t = 0.1;
+   unsigned int currentControl;
+   errno_t err;
+
+   err = _controlfp_s(&currentControl, _PC_24, _MCW_PC);
+   if (err != 0) {
+      printf_s("The function _controlfp_s failed!\n");
+      return -1;
+   }
+   z = b * t;
+   printf_s ("out=%.15e\n",z);
+}
+```
+
+```Output
+out=9.999999776482582e-003
+```
+
+Çıkarırsanız `#pragma fenv_access (on)` önceki örnekten derleyici denetim modunu kullanmaz derleme zamanı değerlendirme yaptığından çıkış farklı olduğuna dikkat edin.
+
+```cpp
+// pragma_directive_fenv_access_2.cpp
+// compile with: /O2
+#include <stdio.h>
+#include <float.h>
+
+int main() {
+   double z, b = 0.1, t = 0.1;
+   unsigned int currentControl;
+   errno_t err;
+
+   err = _controlfp_s(&currentControl, _PC_24, _MCW_PC);
+   if (err != 0) {
+      printf_s("The function _controlfp_s failed!\n");
+      return -1;
+   }
+   z = b * t;
+   printf_s ("out=%.15e\n",z);
+}
+```
+
+```Output
+out=1.000000000000000e-002
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Pragma Yönergeleri ve __Pragma Anahtar Sözcüğü](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

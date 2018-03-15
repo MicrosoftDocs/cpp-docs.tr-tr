@@ -1,12 +1,9 @@
 ---
-title: -Zc (Uyumluluk) | Microsoft Docs
+title: /ZC (Uyumluluk) | Microsoft Docs
 ms.custom: 
-ms.date: 9/29/2017
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/06/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - /zc
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba64cf2e866579b3377e57445c98eb9a436a1edd
-ms.sourcegitcommit: ef2a263e193410782c6dfe47d00764263439537c
+ms.openlocfilehash: dda62dc6644fd49cf9213b176a4efe563474f740
+ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="zc-conformance"></a>/Zc (Uyumluluk)
 
@@ -36,11 +32,11 @@ Kullanabileceğiniz **/Zc** derleyici seçenekleri standart ya da Microsoft'a ö
 
 ## <a name="syntax"></a>Sözdizimi
 
-> / Zc:_seçeneği_{,_seçeneği_}
+> **/ Zc:**_seçeneği_{,_seçeneği_}
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio C veya C++ standart ile uyumlu olmayan bir uzantı uyguladığında kullanabileceğiniz bir `/Zc` standart uyumsuz veya Microsoft'a özgü davranışını belirtmek için Uyumluluk seçeneği. İçin bazı seçenekler, büyük ölçekli önemli değişiklikler için var olan kodu önlemek için varsayılan olarak Microsoft'a özgü davranıştır. Diğer durumlarda, standart davranış burada önemli değişiklikler maliyetlerini geliştirmeleri güvenlik, performans veya uyumluluk gereksinimlerine ağır bastığı varsayılandır. Varsayılan ayar, her uyumluluk seçeneğinin Visual Studio'nun daha yeni sürümlerinde değişebilir. Her uyumluluk seçenek hakkında daha fazla bilgi için belirli seçeneği için konusuna bakın.
+Visual Studio C veya C++ standart ile uyumlu olmayan bir uzantı uyguladığında kullanabileceğiniz bir `/Zc` standart uyumsuz veya Microsoft'a özgü davranışını belirtmek için Uyumluluk seçeneği. İçin bazı seçenekler, büyük ölçekli önemli değişiklikler için var olan kodu önlemek için varsayılan olarak Microsoft'a özgü davranıştır. Diğer durumlarda, standart davranış burada önemli değişiklikler maliyetlerini geliştirmeleri güvenlik, performans veya uyumluluk gereksinimlerine ağır bastığı varsayılandır. Varsayılan ayar, her uyumluluk seçeneğinin Visual Studio'nun daha yeni sürümlerinde değişebilir. Her uyumluluk seçenek hakkında daha fazla bilgi için belirli seçeneği için konusuna bakın. [/ İzin veren-](permissive-standards-conformance.md) derleyici seçeneği kendi uyumluluğunu ayarı varsayılan olarak ayarlı değil Uyumluluk seçenekleri örtük olarak ayarlar.
 
 Bunlar `/Zc` derleyici seçenekleri:
 
@@ -61,7 +57,8 @@ Bunlar `/Zc` derleyici seçenekleri:
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|İş parçacığı yerel statik başlatma etkinleştir (üzerinde varsayılan olarak).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|Varsayın `operator new` hatada oluşturur (varsayılan olarak kapalıdır).|
 |[trigrafları\[-\]](zc-trigraphs-trigraphs-substitution.md)|Trigrafları (varsayılan olarak geçersiz, kapalı) etkinleştirin.|
-|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t`yerel bir tür, bir typedef (üzerinde varsayılan olarak).|
+|[twoPhase-](zc-twophase.md)|Ayrıştırma (varsayılan olarak uyumsuz) davranışını uyumsuz şablonunu kullanın.|
+|[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` yerel bir tür, bir typedef (üzerinde varsayılan olarak).|
 
 Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
