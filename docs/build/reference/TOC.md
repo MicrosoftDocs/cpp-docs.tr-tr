@@ -147,6 +147,7 @@
 ##### [/Zc:threadSafeInit  (İş Parçacığı Güvenli Yerel Statik Başlatma)](zc-threadsafeinit-thread-safe-local-static-initialization.md)
 ##### [/Zc:throwingNew (Yeni işlecinin oluşturacağını varsay)](zc-throwingnew-assume-operator-new-throws.md)
 ##### [/Zc:trigraphs (Trigrafları Değiştirme)](zc-trigraphs-trigraphs-substitution.md)
+##### [/Zc:twoPhase- (iki aşamalı ad aramayı devre dışı bırak)](zc-twophase.md)
 ##### [/Zc:wchar_t (wchar_t Yerel Tür)](zc-wchar-t-wchar-t-is-native-type.md)
 #### [/ZF (Daha hızlı PDB oluşturma)](zf.md)
 #### [/Zg (İşlev Prototipleri Üret)](zg-generate-function-prototypes.md)
