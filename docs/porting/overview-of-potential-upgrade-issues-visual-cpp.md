@@ -13,11 +13,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccdd667898cf2043e10137fa301eb42ee3877fc8
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.openlocfilehash: c3c01256e852f179d9f9cb02b5658898f5a1c96d
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Olası yükseltme sorunlarını (Visual C++) genel bakış
 
@@ -37,9 +37,11 @@ Bir uygulama, Visual Studio'nun yeni bir sürüme yükseltme yaparken, kesinlikl
 
 C++ kararlı uygulama ikili arabirimi (ABI) sahip değil. Visual Studio bir yayın tüm ikincil sürümlerinin kararlı bir C++ ABI tutar. Örneğin, Visual Studio 2017 ve tüm güncelleştirmeleri ikili uyumludur. Ancak ABI önde gelen Visual Studio sürümleri arasında mutlaka uyumlu değil (2015 ve 2017, dışında _olan_ ikili uyumlu). Diğer bir deyişle, biz önemli değişiklikler C++ türü düzeni, ad düzenleme, özel durum işleme ve diğer bölümleri C++ ABI kalmasına neden olabilir. C++ bağlantı dış sembolleriyle sahip bir nesne dosyanız varsa, bu nedenle, bu nesne dosyası doğru bir araç takımı ana farklı sürümüyle üretilen nesne dosyalarla bağlamayan. Burada, "çalışmayabilir" Not sahip birçok sonuçtan: bağlantıyı tamamen başarısız olabilir (örneğin Adlandır değiştirdiyseniz), bağlantı başarılı olabilir ve şeyler çalışma zamanında çalışmayabilir (örn türü düzeni değişirse), veya olacaklar birçok durumda çalışmaya ve hiçbir şey wro gider NG. Ayrıca C++ ABI kararlı, C ABI ve C++ ABI kısmı için gerekli olmamasına karşın COM kararlı dikkat edin.
 
+Sonraki bir sürümünü Visual Studio yeniden dağıtılabilir kitaplıkların ABI uyumluluğu korumak için içeri aktarma kitaplığı bağlantı varsa, çalışma zamanında kullanılabilir. Örneğin, uygulamanızın derlenir ve Visual Studio 2015 güncelleştirme 3'ü araç takımı kullanılarak bağlanan, 2015 ve 2017 kitaplıkları ikili geriye dönük uyumluluk korunur olmadığından yeniden dağıtılabilir, tüm Visual Studio 2017 kullanabilirsiniz. Bu durumun tersi geçerli değildir; uyumlu ABI olsa bile, kodunuzu oluşturmak için kullanılan daha yeniden dağıtılabilir Araç Takımı'nın önceki bir sürümü için kullanamazsınız.
+
 ### <a name="libraries"></a>Kitaplıklar
 
-Visual Studio C++ kitaplıkları üstbilgi dosyaları belirli bir sürümünü kullanarak bir kaynak dosyası derleme yaparsanız (tarafından # üstbilgileri including), sonuçta elde edilen nesne dosyası kitaplıkları aynı sürümü ile bağlanması gerekir. Böylece, örneğin, kaynak dosyanızı ile Visual Studio 2017 derlenmiş ise \<immintrin.h >, Visual Studio 2017 vcruntime kitaplıkla bağlamanız gerekir. Benzer şekilde, kaynak dosyanızı ile Visual Studio 2017 derlenmiş varsa \<iostream >, Visual Studio 2017 standart C++ Kitaplığı, msvcprt bağlamanız gerekir. Karıştırma ve eşleşen desteklenmiyor.
+Visual Studio C++ kitaplıkları üstbilgi dosyaları belirli bir sürümünü kullanarak bir kaynak dosyası derleme yaparsanız (tarafından # üstbilgileri including), sonuçta elde edilen nesne dosyası kitaplıkları aynı sürümü ile bağlanması gerekir. Böylece, örneğin, kaynak dosyanızı Visual Studio 2015 güncelleştirme 3 ile derlenmiş ise \<immintrin.h >, Visual Studio 2015 güncelleştirme 3'ü vcruntime kitaplıkla bağlamanız gerekir. Benzer şekilde, kaynak dosyanızın bir Visual Studio 2017 ile sürüm 15,5 derlenir \<iostream >, Visual Studio 2017 sürüm 15,5 standart C++ kitaplığı ile msvcprt bağlamanız gerekir. Karıştırma ve eşleşen desteklenmiyor.
 
 C++ Standart Kitaplığı için karıştırma ve eşleşen açıkça kullanımı aracılığıyla verilmedi `#pragma detect_mismatch` Visual Studio 2010 itibaren standart üst bilgileri. Uyumsuz nesne dosyaları bağlamak deneyin ya da yanlış standart kitaplığı ile bağlantı çalışırsanız, bağlantı başarısız olur
 

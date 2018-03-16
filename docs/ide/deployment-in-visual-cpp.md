@@ -1,12 +1,9 @@
 ---
 title: "Visual C++ üzerinde dağıtım | Microsoft Docs"
 ms.custom: 
-ms.date: 9/21/2017
-ms.reviewer: 
-ms.suite: 
+ms.date: 03/13/2018
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - C++
@@ -14,17 +11,16 @@ helpviewer_keywords:
 - deploying applications [C++]
 - application deployment [C++]
 ms.assetid: d4b4ffc0-d2bd-4e4a-84a6-62f1c26f6a09
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eda9c4a1a173087688c1fd3182845d6517f27ba6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 2356e98e911978dcaef9471f2b474c2a2377716d
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++ üzerinde Dağıtım
 
@@ -49,6 +45,8 @@ Statik kitaplıklar yerine, uygulamanızda DLL'leri kitaplığını kullanma ve 
 ## <a name="local-deployment"></a>Yerel Dağıtım
 
 Yerel bir dağıtımda, kitaplık dosyaları, uygulama klasöründe yürütülebilir dosyası ile birlikte yüklenir. Her sürümün dosya adı, sürüm numarası içerdiği için Visual C++ yeniden dağıtılabilir kitaplıkları farklı sürümlerini aynı klasörde yüklenebilir. Örneğin, 12, C++ çalışma zamanı kitaplığı msvcp120.dll ve sürüm 14 msvcp140.dll sürümüdür.
+
+Bir kitaplık olarak bilinen birden çok ek DLL'leri üzerinden yayılan *nokta kitaplıkları*. Örneğin, bazı işlevler Visual Studio 2017 sürüm 15,6 yayımlanan standart Kitaplığı'nda msvcp140_1.dll preverve için msvcp140.dll ABI uyumluluğunu eklendi. Visual Studio 2017 sürüm 15,6 (14.13 araç takımı) ya da Visual Studio 2017'den sonraki bir araç takımı kullanırsanız, bu nokta kitaplıklar ve bunun yanı sıra ana kitaplığı yerel olarak dağıtmak gerekebilir. ABI değiştirdiğinde bu ayrı nokta kitaplıklar ardından sonraki ana sürümüne yönelik temel kitaplık alınır.
 
 Microsoft otomatik olarak yapılamıyor çünkü Visual C++ kitaplıkları güncelleştirme yerel olarak dağıtılan, bu kitaplıklar, yerel dağıtım önermiyoruz. Yeniden dağıtılabilir kitaplıkların yerel dağıtımını kullanmaya karar verirseniz, yerel olarak dağıtılan kitaplıkları otomatik olarak güncelleştirmeyle ilgili kendi yönteminizi uygulamanızı öneririz.
 

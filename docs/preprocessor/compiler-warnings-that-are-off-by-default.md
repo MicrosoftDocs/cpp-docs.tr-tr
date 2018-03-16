@@ -15,11 +15,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 619e2c517305246937ed7428eadbcf40be31fe5b
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3ef690e42088294ac0cebfa2d153f56ccca2cb5c
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="compiler-warnings-that-are-off-by-default"></a>Varsayılan olarak kapalı olan derleyici uyarıları
 
@@ -37,7 +37,7 @@ Aşağıdaki seçeneklerden birini kullanarak bu uyarılar etkinleştirebilirsin
    **/ Duvar** varsayılan olarak kapalı olan tüm uyarıları sağlar. Bu seçeneği kullanırsanız, kullanarak tek tek ayarları kapatabilirsiniz [/wd](../build/reference/compiler-option-warning-level.md) seçeneği.
 
 - [/w*lnnnn*](../build/reference/compiler-option-warning-level.md)  
-   Bu uyarı sağlar  *nnnn*  düzeyinde *l*.
+   Bu uyarı sağlar *nnnn* düzeyinde *l*.
 
 Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 
@@ -69,7 +69,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |[C4435](../error-messages/compiler-warnings/compiler-warning-level-4-c4435.md) (level 4)|'*class1*': nesne düzeni /vd2 altında nedeniyle sanal taban değiştirir '*Ders2*'|
 |[C4437](../error-messages/compiler-warnings/compiler-warning-level-4-c4437.md) (düzey 4)|Sanal Taban gelen dynamic_cast '*class1*'to'*Ders2*' bazı bağlamlarda başarısız olabilir|
 |C4444 (level 3)|en üst düzey '__unaligned' bu bağlamda uygulanmadı|
-|C4464 (level 4)|göreli yol dahil içeren '..'|
+|[C4464](../error-messages/compiler-warnings/c4464.md) (düzey 4)|göreli yol dahil içeren '..'|
 |C4472 (level 1)|'*tanımlayıcısı*' yerel Enum: yönetilen bir enum bildirmek için bir erişim belirteci (özel/ortak) Ekle|
 |[C4514](../error-messages/compiler-warnings/compiler-warning-level-4-c4514.md) (düzey 4)|'*işlevi*': başvurulmayan satır içi işlev kaldırıldı|
 |[C4536](../error-messages/compiler-warnings/compiler-warning-level-4-c4536.md) (düzey 4)|'tür adı': tür adı meta veri sınırını aşan '*sınırı*' karakter|
@@ -103,7 +103,7 @@ Aşağıdaki uyarılar varsayılan olarak kapalıdır.
 |[C4692](../error-messages/compiler-warnings/compiler-warning-level-1-c4692.md) (düzey 1)|'*işlevi*': İmza özel olmayan üye olarak içeren derleme özel yerel tür '*NATIVE_TYPE*'|
 |[C4710](../error-messages/compiler-warnings/compiler-warning-level-4-c4710.md) (level 4)|'*işlevi*': değil içermesinden işlevi|
 |[C4738](../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md) (Düzey 3)|32 bit kayan sonuç bellekte depolanıyor, olası performans kaybı|
-|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile erişimini '*ifade*' / volatile tabi olan:\<ISO &#124; ms > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün|
+|[C4746](../error-messages/compiler-warnings/compiler-warning-c4746.md)|volatile erişimini '*ifade*' / volatile tabi olan:\<ISO&#124;ms > ayarlama; __iso_volatile_load/deposu iç işlevler kullanmayı düşünün|
 |C4749 (level 4)|Koşullu desteklenen: non standard düzeni türüne uygulanacağını offsetof '*türü*'|
 |C4767 (level 4)|Bölüm adı '*sembol*' 8 karakterden uzun ve bağlayıcı tarafından kesilecek|
 |C4768 (level 3)|bağlantı belirtimi önce __declspec öznitelikleri göz ardı edilir|

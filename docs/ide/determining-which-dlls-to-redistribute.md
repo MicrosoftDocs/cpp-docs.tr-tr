@@ -1,7 +1,7 @@
 ---
 title: "Hangi DLL'lerin yeniden dağıtılacağını belirleme | Microsoft Docs"
 ms.custom: 
-ms.date: 09/21/2017
+ms.date: 03/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3cc7b80e16abeecc756e7fa480c7bfe71682382
-ms.sourcegitcommit: 54035dce0992ba5dce0323d67f86301f994ff3db
+ms.openlocfilehash: a6f942b01dd9379aea0c0ea2ab3751a6f140ef2a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="determining-which-dlls-to-redistribute"></a>Hangi DLL'lerin Yeniden Dağıtılacağını Belirleme
 
@@ -53,18 +53,18 @@ Aşağıdaki tabloda, uygulamanızın bağlı Visual C++ DLL'leri bazıları aç
 
 |Visual C++ Kitaplığı|Açıklama|Uygulandığı öğe:|
 |--------------------------|-----------------|----------------|
-|vcruntime*sürüm*.dll|Yerel kod için çalışma zamanı kitaplığı.|Normal C ve C++ dili başlatma ve sonlandırma hizmetleri kullanan uygulamalar.|
-|vccorlib*sürüm*.dll|Yönetilen kod için çalışma zamanı kitaplığı.|Yönetilen kod için C++ dili hizmetleri kullanan uygulamalar.|
-|msvcp*sürüm*.dll|Yerel kod için C++ Standart Kitaplığı.|Kullanan uygulamalar [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).|
-|concrt*sürüm*.dll|Yerel kod eşzamanlılık çalışma zamanı kitaplığı.|Kullanan uygulamalar [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).|
-|MFC*sürüm*.dll|Microsoft Foundation (MFC) kitaplığı sınıflarını kullanın.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md).|
+|vcruntime*version*.dll|Yerel kod için çalışma zamanı kitaplığı.|Normal C ve C++ dili başlatma ve sonlandırma hizmetleri kullanan uygulamalar.|
+|vccorlib*version*.dll|Yönetilen kod için çalışma zamanı kitaplığı.|Yönetilen kod için C++ dili hizmetleri kullanan uygulamalar.|
+|msvcp*sürüm*.dll ve msvcp*sürüm*_*dotnumber*.dll|Yerel kod için C++ Standart Kitaplığı.|Kullanan uygulamalar [C++ Standart Kitaplığı](../standard-library/cpp-standard-library-reference.md).|
+|concrt*version*.dll|Yerel kod eşzamanlılık çalışma zamanı kitaplığı.|Kullanan uygulamalar [eşzamanlılık çalışma zamanı](../parallel/concrt/concurrency-runtime.md).|
+|mfc*version*.dll|Microsoft Foundation (MFC) kitaplığı sınıflarını kullanın.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md).|
 |MFC*sürüm* *dil*.dll|Microsoft Foundation (MFC) kitaplık kaynaklarını sınıfları.|MFC için belirli bir dil kaynakları kullanan uygulamalar.|
-|MFC*sürüm*u.dll|MFC Kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ve Unicode desteği gerektirir.|
+|mfc*version*u.dll|MFC Kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ve Unicode desteği gerektirir.|
 |mfcmifc80.dll|MFC yönetilen arabirimler kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
-|mfcm*sürüm*.dll|MFC yönetilen kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
-|mfcm*sürüm*u.dll|MFC yönetilen kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index) ve Unicode desteği gerektirir.|
-|vcamp*sürüm*.dll|Yerel kod için AMP kitaplığı.|Kullanan uygulamalar [C++ AMP Kitaplığı](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md) kodu.|
-|vcomp*sürüm*.dll|Yerel kod OpenMP kitaplık.|Kullanan uygulamalar [C++ OpenMP kitaplık](../parallel/openmp/openmp-in-visual-cpp.md) kodu.|
+|mfcm*version*.dll|MFC yönetilen kitaplığı.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index).|
+|mfcm*version*u.dll|MFC yönetilen kitaplığı Unicode desteğine sahip.|Kullanan uygulamalar [MFC Kitaplığı](../mfc/mfc-desktop-applications.md) ile [Windows Forms denetimleri](/dotnet/framework/winforms/controls/index) ve Unicode desteği gerektirir.|
+|vcamp*version*.dll|Yerel kod için AMP kitaplığı.|Kullanan uygulamalar [C++ AMP Kitaplığı](../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md) kodu.|
+|vcomp*version*.dll|Yerel kod OpenMP kitaplık.|Kullanan uygulamalar [C++ OpenMP kitaplık](../parallel/openmp/openmp-in-visual-cpp.md) kodu.|
 
 > [!NOTE]
 > Artık etkin Şablon Kütüphanesi ayrı bir DLL olarak yeniden dağıtmanız gerekir. Üstbilgiler ve bir statik kitaplık işlevselliğini taşındı.

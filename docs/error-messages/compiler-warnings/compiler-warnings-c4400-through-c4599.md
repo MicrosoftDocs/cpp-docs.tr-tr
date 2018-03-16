@@ -35,7 +35,6 @@ f1_keywords:
 - C4457
 - C4458
 - C4459
-- C4464
 - C4472
 - C4474
 - C4475
@@ -105,7 +104,6 @@ helpviewer_keywords:
 - C4457
 - C4458
 - C4459
-- C4464
 - C4472
 - C4474
 - C4475
@@ -152,11 +150,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 750f0cdd1b22a1ed72d569a6bf85646ee34b2aea
-ms.sourcegitcommit: a5a69d2dc3513261e9e28320e4e067aaf40d2ef2
+ms.openlocfilehash: 9843c3725022ff500d31b90677192c4178c42596
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="compiler-warnings-c4400-through-c4599"></a>Derleyici uyarıları C4400 C4599 aracılığıyla
 
@@ -177,7 +175,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 1) C4405](../../error-messages/compiler-warnings/compiler-warning-level-1-c4405.md)|'*tanımlayıcısı*': tanımlayıcısıdır ayrılmış sözcük|
 |[Derleyici Uyarısı (düzey 1) C4406](../../error-messages/compiler-warnings/compiler-warning-level-1-c4406.md)|işlenen üzerinde göz ardı yönergesi|
 |[Derleyici Uyarısı (düzey 1) C4407](../../error-messages/compiler-warnings/compiler-warning-level-1-c4407.md)|üye Beyanları farklı işaretçi arasında cast, derleyici yanlış kod oluşturabilirsiniz|
-|[Derleyici Uyarısı (düzey 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|Anonim 'yapı &#124; UNION' hiçbir veri üyeleri bildirme değil|
+|[Derleyici Uyarısı (düzey 4) C4408](../../error-messages/compiler-warnings/compiler-warning-level-4-c4408.md)|Anonim ' yapısı&#124;Birliği ' hiçbir veri üyeleri bildirme değil|
 |[Derleyici Uyarısı (düzey 1) C4409](../../error-messages/compiler-warnings/compiler-warning-level-1-c4409.md)|Geçersiz yönerge boyutu|
 |[Derleyici Uyarısı (düzey 1) C4410](../../error-messages/compiler-warnings/compiler-warning-level-1-c4410.md)|işlenen geçersiz boyutu|
 |[Derleyici Uyarısı (düzey 1) C4411](../../error-messages/compiler-warnings/compiler-warning-level-1-c4411.md)|'*tanımlayıcısı*': sembol öteleme kasaya çözümler|
@@ -210,7 +208,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |Derleyici Uyarısı (düzey 1) C4442|null Sonlandırıcı __annotation değişkeninde katıştırılmış.  Değer kesilir.|
 |Derleyici Uyarısı (düzey 1) C4443|'0', '1' veya '2' olması beklenen pragma parametresi|
 |Derleyici Uyarısı (Düzey 3) C4444|'*tanımlayıcısı*': üst düzey '__unaligned' Bu bağlamda uygulanmadı|
-|[Derleyici Uyarısı (düzey 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*işlevi*': içinde bir ' WinRT &#124; yönetilen ' türü sanal bir yöntem özel olamaz|
+|[Derleyici Uyarısı (düzey 1) C4445](../../error-messages/compiler-warnings/compiler-warning-level-1-c4445.md)|'*işlevi*': içinde bir ' WinRT&#124;yönetilen ' türü sanal bir yöntem özel olamaz|
 |Derleyici Uyarısı (düzey 1) C4446|'*türü*': üye eşlenemiyor '*Ad1*' içinde bu tür, tür adı çakışması nedeniyle. Yöntemi, yeniden adlandırıldı '*ad2*'|
 |Derleyici Uyarısı (düzey 1) C4447|'ana' imzası iş parçacığı modeli olmadan bulundu. Kullanmayı ' int ana (Platform::Array\<Platform::String ^ > ^ args)'.|
 |C4448 uyarı derleyici|'*türü*1' meta verilerinde belirtilmiş bir varsayılan arabirimi yok. Çekme: '*type2*', hangi çalışma zamanında başarısız olabilir.|
@@ -225,14 +223,14 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |[Derleyici Uyarısı (düzey 4) C4457](compiler-warning-level-4-c4457.md)|bildirimi '*tanımlayıcısı*' gizler işlev parametresi|
 |[Derleyici Uyarısı (düzey 4) C4458](compiler-warning-level-4-c4458.md)|bildirimi '*tanımlayıcısı*' gizler üye sınıfı|
 |[Derleyici Uyarısı (düzey 4) C4459](compiler-warning-level-4-c4459.md)|bildirimi '*tanımlayıcısı*' genel bildirim gizler|
-|[Derleyici Uyarısı (düzey 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|' WinRT &#124; yönetilen ' işleci '*işleci*', parametre geçtikten başvuruya göre. ' WinRT &#124; yönetilen ' işleci '*işleci*'C++ işleci öğesinden farklı semantiklerine sahip'*cpp_operator*', değere göre geçirilecek istiyordunuz?|
+|[Derleyici Uyarısı (düzey 4) C4460](../../error-messages/compiler-warnings/compiler-warning-level-4-c4460.md)|' WinRT&#124;yönetilen ' işleci '*işleci*', parametre geçtikten başvuruya göre. ' WinRT&#124;yönetilen ' işleci '*işleci*'C++ işleci öğesinden farklı semantiklerine sahip'*cpp_operator*', değere göre geçirilecek istiyordunuz?|
 |[Derleyici Uyarısı (düzey 1) C4461](../../error-messages/compiler-warnings/compiler-warning-level-1-c4461.md)|'*classname*': Bu sınıf bir sonlandırıcı sahip '! *Sonlandırıcı*', ancak hiçbir yıkıcı ' ~*dtor*'|
 |[Derleyici Uyarısı (düzey 1, hata) C4462](../../error-messages/compiler-warnings/compiler-warning-level-1-c4462.md)|'*türü*': GUID türü belirlenemiyor. Program çalışma zamanında başarısız olabilir.|
 |[Derleyici Uyarısı (düzey 4) C4463](compiler-warning-level-4-c4463.md)|taşma; atama '*değeri*'için değerleri yalnızca tutabilir bit alanlı'*MIN_VALUE*'to'*max_value*'|
-|Derleyici Uyarısı (düzey 4) C4464|göreli yol dahil içeren '..'|
+|[Derleyici Uyarısı (düzey 4) C4464](../../error-messages/compiler-warnings/c4464.md)|göreli yol dahil içeren '..'|
 |[Derleyici Uyarısı (düzey 1) C4470](../../error-messages/compiler-warnings/compiler-warning-level-1-c4470.md)|/ CLR altında göz ardı kayan nokta denetim pragmaları|
 |[Derleyici Uyarısı (düzey 4) C4471](compiler-warning-level-4-c4471.md)|'*numaralandırma*': dizininden kapsam dışı numaralandırma ileriye dönük bildirimi bir temel alınan türü (int olduğu varsayılır) olması gerekir|
-|Derleyici Uyarısı (düzey 1) C4472|'*tanımlayıcısı*' yerel Enum: bildirmek için bir erişim belirteci (özel/ortak) eklemek bir ' WinRT &#124; yönetilen ' enum|
+|Derleyici Uyarısı (düzey 1) C4472|'*tanımlayıcısı*' yerel Enum: bildirmek için bir erişim belirteci (özel/ortak) eklemek bir ' WinRT&#124;yönetilen ' enum|
 |[Derleyici Uyarısı (düzey 1) C4473](c4473.md)|'*işlevi*': yeterli sayıda bağımsız değişken geçirildi için biçim dizesi|
 |Derleyici Uyarısı (Düzey 3) C4474|'*işlevi*': çok fazla bağımsız değişken geçirildi için biçim dizesi|
 |Derleyici Uyarısı (Düzey 3) C4475|'*işlevi*': uzunluğu değiştiricisi '*değiştiricisi*'türü alan karakteriyle kullanılamaz'*karakter*' biçim belirticisi içinde|

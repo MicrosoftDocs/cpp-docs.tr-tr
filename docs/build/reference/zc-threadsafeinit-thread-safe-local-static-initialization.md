@@ -1,7 +1,7 @@
 ---
 title: "/ZC:threadSafeInit (iş parçacığı yerel statik başlatma) | Microsoft Docs"
 ms.custom: 
-ms.date: 03/96/2018
+ms.date: 03/14/2018
 ms.technology:
 - cpp-tools
 ms.topic: article
@@ -22,11 +22,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0d44b807a244ea96a982dc2363f90beceb0806b
-ms.sourcegitcommit: eeb2b5ad8d3d22514a7b9bd7d756511b69ae0ccf
+ms.openlocfilehash: c0a809e0137ccdf03318eab64f5af1db542906c4
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="zcthreadsafeinit-thread-safe-local-static-initialization"></a>/ZC:threadSafeInit (iş parçacığı yerel statik başlatma)
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/15/2018
 
 ## <a name="syntax"></a>Sözdizimi
 
-**/Zc:threadSafeInit**[`-`]
+> **/Zc:threadSafeInit**[**-**]
 
 ## <a name="remarks"></a>Açıklamalar
 
