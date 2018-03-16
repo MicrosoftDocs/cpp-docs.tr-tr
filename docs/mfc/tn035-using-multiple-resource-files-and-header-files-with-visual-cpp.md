@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c8d641b94664292eac70e9eba40f994de26337e9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++'da Birden Fazla Kaynak Dosya ve Üstbilgi Dosyası Kullanma
 > [!NOTE]
@@ -104,7 +104,7 @@ RESOURCE.H     AFXRES.H
   
  Visual C++ dosyası/kümesi içerir komutunu kullanarak bu birden çok dosya ilişkileri görüntüleyebilirsiniz.  
   
- UYGULAMAM. RC  
+ MYAPP.RC  
  Visual C++ kullanarak Düzenle uygulama kaynak dosyası.  
   
  KAYNAK. H uygulamaya özgü üstbilgi dosyasıdır. Her zaman kaynak adı verilir. H AppWizard, Visual C++'ın varsayılan ile tutarlı olarak üstbilgi dosyası adlandırma. # Bu üstbilgi dosyası kaynak dosyasının (UYGULAMAM. işlemindeki ilk deyim için include RC):  
@@ -115,7 +115,7 @@ RESOURCE.H     AFXRES.H
 #include "resource.h"  
 ```  
   
- RES\MYAPP. RC2  
+ RES\MYAPP.RC2  
  Visual C++ tarafından düzenlenebilir değildir ama derlenmiş en son bulunan kaynaklar içeriyor. EXE dosyası. Visual C++ sürümü kaynak (Bu sürümdeki yeni bir özellik) dahil olmak üzere standart kaynakların tümünü düzenleyebilirsiniz beri AppWizard varsayılan olarak, bu tür bir kaynaklar oluşturur. Bu dosyayı kendi özel biçimlendirilmiş kaynakları eklemek istediğiniz durumda boş bir dosya AppWizard tarafından oluşturulur.  
   
  Özel biçimlendirilmiş kaynaklar kullanırsanız, bunları RES\MYAPP için ekleyebilirsiniz. RC2 ve onları Visual C++ metin düzenleyicisi kullanarak düzenleyebilirsiniz.  
@@ -124,7 +124,7 @@ RESOURCE.H     AFXRES.H
   
  AFXRES. H tanımlar standart simgeler gibi `ID_FILE_NEW`framework tarafından kullanıldı ve özellikle AFXRES kullanılır. RC. AFXRES. H ayrıca #include's WINRES. H WINDOWS kümesini içerir. Tarafından oluşturulan Visual C++ gerekli H. RC dosyaları yanı sıra AFXRES. RC. AFXRES içinde tanımlanan simgeler. H, uygulama kaynak dosyasının (UYGULAMAM. düzenlerken kullanılabilir RC). Örneğin, `ID_FILE_NEW` UYGULAMAM dosya yeni menü öğesi için kullanılır. RC'ın menü kaynağı. Değiştiremez veya bu framework tanımlı sembolleri silin.  
   
-## <a name="_mfcnotes_tn035_including"></a>Ek üstbilgi dosyaları dahil olmak üzere  
+## <a name="_mfcnotes_tn035_including"></a> Ek üstbilgi dosyaları dahil olmak üzere  
   
  Yalnızca iki üst bilgi dosyaları AppWizard oluşturulan uygulama içerir: kaynak. H ve AFXRES. H. Yalnızca kaynak. H uygulama özeldir. Aşağıdaki durumlarda ek salt okunur üstbilgi dosyaları eklemeniz gerekebilir:  
   
@@ -303,7 +303,7 @@ MYSTRS.H   / MYSHARED.H  \  MYMENUS.H
   
  Visual C++ her zaman ekler //{{NO_DEPENDENCIES}} açıklama satırı için bir. Dosya kaydettiğinde RC dosyası. Bazı durumlarda, kaynakta yapı bağımlılığın atlamak. H bağlantı zaman algılanamadı çalışma zamanı hataları neden olabilir. Örneğin, bir kaynak için bir simge atanan sayısal değerini değiştirmek için simge tarayıcısı kullanıyorsanız, kaynak değil doğru bulundu ve olması uygulama çalışma zamanı IF sırasında yüklenir. Kaynağa başvuran CPP dosya yeniden derlenmesi değil. Böyle durumlarda, açıkça herhangi yeniden derleyin. Bildiğiniz CPP dosyaları kaynak sembol yapılan değişiklikler etkilenir. Seçin veya H **yeniden tüm**. Sık kaynakların belirli bir grup için simge değerlerini değiştirmek için gereksiniminiz varsa, büyük olasılıkla bunu daha kolay ve güvenli bu simgeleri ayrı bir salt okunur üstbilgi dosyasına dışarı ayırmak yukarıdaki bölümde açıklandığı gibi bulacaksınız [dahil olmak üzere Ek üstbilgi dosyaları](#_mfcnotes_tn035_including).  
   
-## <a name="_mfcnotes_tn035_set_includes"></a>Visual C++ yönetir nasıl bilgi ** içerir  
+## <a name="_mfcnotes_tn035_set_includes"></a> Visual C++ yönetir nasıl bilgi ** içerir  
   
  Yukarıda açıklandığı gibi dosya menüsü Ayarla içerir komutu üç türde bilgileri belirtmenize olanak sağlar:  
   

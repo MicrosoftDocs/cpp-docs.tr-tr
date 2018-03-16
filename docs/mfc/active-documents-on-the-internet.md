@@ -24,10 +24,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0980f048b9be411308b159dea0ceaa71f8eee563
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="active-documents-on-the-internet"></a>Internet'te Etkin Belgeler
 Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Etkin belgeler sayfalı olabilir ve tüm istemci alanında görüntülenir. Bunlar geleneksel menü anlaşma yapın ve yerinde yanı sıra sunucu uygulaması açık bir pencerede düzenlenebilir. Taranmış bir kenarlığı küçük bir dikdörtgen olarak görüntülemek yerine, etkin tam çerçeve ve her zaman yerinde etkin belgelerdir.  
@@ -59,7 +59,7 @@ Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Et
 |-------------------------|---------------------------------|  
 |Kullanım dosyalar kendi depolama mekanizması olarak bileşik.|`IPersistStorage`.|  
 |Etkin belgeler, Dosyadan Oluştur dahil olmak üzere temel katıştırma özelliklerini destekler.|`IPersistFile`, `IOleObject`, ve `IDataObject`.|  
-|Destekler yerinde etkinleştirme.|`IOleInPlaceObject`ve `IOleInPlaceActiveObject` (kapsayıcının kullanarak `IOleInPlaceSite` ve **IOleInPlaceFrame** arabirimleri).|  
+|Destekler yerinde etkinleştirme.|`IOleInPlaceObject` ve `IOleInPlaceActiveObject` (kapsayıcının kullanarak `IOleInPlaceSite` ve **IOleInPlaceFrame** arabirimleri).|  
 |Bu yeni arabirimleri içeren etkin belgeyi uzantıları destekler. Bazı arabirimler isteğe bağlıdır.|`IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, ve `IPrint`.|  
   
  MFC etkin belgeler için varolan katıştırılmış sunucu desteği genişletmek için destek sağlar.  
@@ -67,7 +67,7 @@ Etkin belgeler geleneksel katıştırılmış nesneler için uzantı sağlar. Et
 ## <a name="add-active-document-support-to-a-new-application"></a>Etkin belge desteği için yeni bir uygulama ekleyin  
  Etkin belge desteği ile yeni bir uygulama oluşturmak için: MFC Uygulama Sihirbazı, **birleşik belge desteği** sayfasında, "Select birleşik belge desteği altında" **tam sunucu** veya  **Kapsayıcı/tam sunucu**ve "Ek seçenekleri belirleyin altında" onay kutusunu seçin **etkin belge sunucusu**.  
   
-##  <a name="_core_convert_an_existing_mfc_in.2d.process_server_to_an_activex_document_server"></a>Etkin belge sunucusu için varolan bir MFC işlemdeki sunucu Dönüştür  
+##  <a name="_core_convert_an_existing_mfc_in.2d.process_server_to_an_activex_document_server"></a> Etkin belge sunucusu için varolan bir MFC işlemdeki sunucu Dönüştür  
  Uygulamanızı sürüm 4.2 önce Visual C++ sürümüyle oluşturuldu ve zaten bir işlem sunucusu ise, aşağıdaki sınıflar değişiklikler yaparak etkin belgeyi destek ekleyebilirsiniz:  
   
 |Sınıf türü|Önceden türetilmiş|Öğesinden türetilen için Değiştir|  

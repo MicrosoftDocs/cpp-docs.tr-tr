@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2d9b7ce4895d51c50185c5262664dc478af62cfa
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="declarators-and-variable-declarations"></a>Bildirimler ve Değişken Bildirimleri
 Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildirimleri anlamını açıklar. Özellikle, kalan bölümleri aşağıdaki bildirme açıklamaktadır:  
@@ -41,7 +41,7 @@ Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildir
   
  Bir bildirimcisi programa sunulması adını belirten bir bildirim parçasıdır. Değiştiriciler gibi içerebilir  **\***  (işaretçi-için) ve Microsoft çağırma kuralı anahtar sözcükler.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Bildirimcisi  
   
@@ -49,7 +49,7 @@ Bu bölümde rest form ve bu listede özetlenen değişken türleri için bildir
 __declspec(thread) char *var;  
 ```  
   
- `char`tür belirleyici olduğu `__declspec(thread)` ve `*` değiştiricileri olan ve `var` Identifier'ın adı.  
+ `char` tür belirleyici olduğu `__declspec(thread)` ve `*` değiştiricileri olan ve `var` Identifier'ın adı.  
   
  **SON Microsoft özel**  
   
@@ -60,15 +60,15 @@ __declspec(thread) char *var;
  &nbsp;&nbsp;*İşaretçi*<sub>kabul</sub> *doğrudan bildirimcisi*  
   
  *doğrudan bildirimcisi*:  
- &nbsp;&nbsp;*tanımlayıcı*  
+ &nbsp;&nbsp;*Tanımlayıcı*  
  &nbsp;&nbsp;**(***bildirimcisi***)**   
  &nbsp;&nbsp;*doğrudan bildirimcisi***[***sabit ifadesi*<sub>kabul</sub> **]**   
  &nbsp;&nbsp;*doğrudan bildirimcisi***(***parametre türü listesi***)**   
  &nbsp;&nbsp;*doğrudan bildirimcisi***(***tanımlayıcı listesi*<sub>kabul</sub> **)**   
   
  *İşaretçi*:  
- &nbsp;&nbsp;**\****tür niteleyicisi listesi*<sub>iptal et</sub>  
- &nbsp;&nbsp;**\****tür niteleyicisi listesi*<sub>kabul</sub> *işaretçi*  
+ &nbsp;&nbsp;**\*** *tür niteleyicisi listesi*<sub>iptal et</sub>  
+ &nbsp;&nbsp;**\*** *tür niteleyicisi listesi*<sub>kabul</sub> *işaretçi*  
   
  *tür niteleyicisi listesi*:  
  &nbsp;&nbsp;*tür niteleyicisi*  
@@ -91,7 +91,7 @@ double func( void ); // Declares a function named func, with no
 int *aptr[10] // Declares an array of 10 pointers  
 ```  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Microsoft C Derleyici bir aritmetik, yapı ve birleşim türü değiştirebilirsiniz Bildirimciler sayısını sınırlamaz. Kullanılabilir bellek tarafından sınırlıdır.  
   

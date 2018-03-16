@@ -24,10 +24,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7641a970c747576fa3cfd8cd1c00602edb3541e2
-ms.sourcegitcommit: 56f6fce7d80e4f61d45752f4c8512e4ef0453e58
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="mfc-library-versions"></a>MFC Kitaplık Sürümleri
 
@@ -98,7 +98,7 @@ MFC projeleri kullanmak önişlemci sembolü  **\_UNICODE** UTF-16 joker karakte
 
 MFC için statik kitaplıklar aşağıdaki adlandırma kurallarını kullanın. Kitaplık adlarının biçimi şöyledir:
 
-> *u*AFX*c ** d*. LIB
+> *u*AFX*c**d*.LIB
 
 Burada italik olarak gösterilen küçük harfler, anlamları aşağıdaki tabloda gösterilen tanımlayıcıları için yer tutucuları şunlardır:
 
@@ -114,10 +114,10 @@ Aşağıdaki tabloda listelenen tüm kitaplıkları dahil desteklenen yapı mima
 |-------------|-----------------|
 |NAFXCW.LIB|MFC statik bağlantı kitaplığı, yayın sürümü|
 |NAFXCWD.LIB|MFC statik bağlantı kitaplığı, hata ayıklama sürümü|
-|UAFXCW. LIB|Unicode desteği, yayın sürümü ile MFC statik bağlantı kitaplığı|
-|UAFXCWD. LIB|Unicode desteği, hata ayıklama sürümü ile MFC statik bağlantı kitaplığı|
-|AFXNMCD. LIB|MFC iletişim kutusu denetimleri, yayın sürümü olmadan MFC statik bağlantı kitaplığı|
-|AFXNMCDD. LIB|MFC iletişim kutusu denetimleri, hata ayıklama sürümü olmadan MFC statik bağlantı kitaplığı|
+|UAFXCW.LIB|Unicode desteği, yayın sürümü ile MFC statik bağlantı kitaplığı|
+|UAFXCWD.LIB|Unicode desteği, hata ayıklama sürümü ile MFC statik bağlantı kitaplığı|
+|AFXNMCD.LIB|MFC iletişim kutusu denetimleri, yayın sürümü olmadan MFC statik bağlantı kitaplığı|
+|AFXNMCDD.LIB|MFC iletişim kutusu denetimleri, hata ayıklama sürümü olmadan MFC statik bağlantı kitaplığı|
 
 Aynı taban adına ve .pdb uzantısına sahip hata ayıklayıcı dosyaları de her statik kitaplıklar için kullanılabilir.
 
@@ -129,10 +129,10 @@ MFC DLL'leri sahip *sürüm* ikili uyumluluğu gösteren sayı. Diğer kitaplık
 
 |DLL|Açıklama|
 |---------|-----------------|
-|MFC*sürüm*. DLL|MFC DLL, ANSI veya MBCS yayın sürümü|
-|MFC*sürüm*U.DLL|MFC DLL, Unicode yayın sürümü|
-|MFC*sürüm*D.DLL|MFC DLL, ANSI veya MBCS hata ayıklama sürümü|
-|MFC*sürüm*UD. DLL|MFC DLL, Unicode hata ayıklama sürümü|
+|MFC*version*.DLL|MFC DLL, ANSI veya MBCS yayın sürümü|
+|MFC*version*U.DLL|MFC DLL, Unicode yayın sürümü|
+|MFC*version*D.DLL|MFC DLL, ANSI veya MBCS hata ayıklama sürümü|
+|MFC*version*UD.DLL|MFC DLL, Unicode hata ayıklama sürümü|
 |MFCM*sürüm*. DLL|Windows Forms denetimleri ile MFC DLL ANSI veya MBCS yayın sürümü|
 |MFCM*sürüm*U.DLL|Windows Forms denetimleri, Unicode yayın sürümü ile MFC DLL|
 |MFCM*sürüm*D.DLL|Windows Forms denetimleri ile MFC DLL ANSI veya MBCS hata ayıklama sürümü|

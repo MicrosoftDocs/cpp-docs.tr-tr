@@ -28,10 +28,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 28255b2e47c48b89b0bd6aea044fe0c15c1f2a08
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS Kodu ile TCHAR.H Veri Türlerini Kullanma
 Zaman Bildirim sabiti **_MBCS** olan tanımlı, belirli bir genel metin yordamı yordamları şu tür birine eşler:  

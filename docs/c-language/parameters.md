@@ -28,10 +28,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e73e7aa3ff62782c6ebd3b5a8728aa05e78b1784
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="parameters"></a>Parametreler
 Bağımsız değişkenler, bir işlev çağrısı tarafından bir işlevine geçirilen değerlerin adlardır. Parametreler işlev almak için bekliyor değerlerdir. Bir işlev prototipi işlevi adından parantez işlev parametrelerini ve türlerinin tam listesi içerir. Parametre bildirimleri türleri, boyutlar ve parametrelerinde depolanan değerlerin tanımlayıcıları belirtin.  
@@ -40,25 +40,25 @@ Bağımsız değişkenler, bir işlev çağrısı tarafından bir işlevine geç
  *işlev tanımı*:  
  *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
   
- /\**özniteliği seq* Microsoft Specific * /  
+ /\* *öznitelik seq* Microsoft Specific * /  
   
  *bildirimcisi* :  
- *İşaretçi* kabul*doğrudan bildirimcisi*  
+ *pointer* opt*direct-declarator*  
   
- *doğrudan bildirimcisi*:/\* işlevi bildirimcisi\*/  
- *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi      \*/  
+ *doğrudan bildirimcisi*:/\* işlevi bildirimcisi \*/  
+ *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi       \*/  
   
- *parametre türü listesi*: /\* parametre listesi\*/  
- *parametre listesi*  
+ *parametre türü listesi*: /\* parametre listesi \*/  
+ *parameter-list*  
   
  *parametre listesi***,...**   
   
- *parametre listesi*:  
- *parametre bildirimi*  
+ *parameter-list*:  
+ *parameter-declaration*  
   
- *parametre listesi***,***parametre bildirimi*   
+ *parameter-list*  **,**  *parameter-declaration*  
   
- *parametre bildirimi*:  
+ *parameter-declaration*:  
  *bildirim tanımlayıcıları bildirimcisi*  
   
  *bildirim tanımlayıcıları Özet-bildirimcisi* iptal et  

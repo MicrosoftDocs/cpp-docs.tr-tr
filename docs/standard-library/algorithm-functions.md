@@ -214,10 +214,10 @@ helpviewer_keywords:
 ms.workload:
 - cplusplus
 ms.openlocfilehash: eb5b068f30703119d0771725a9cb9980a1ca65ea
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 ||||  
@@ -532,7 +532,7 @@ int main( )
 }   
 ```  
   
-##  <a name="copy">Kopyalama</a>  
+##  <a name="copy"></a>  Kopyalama  
  Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, öğelerin kaynak sırası boyunca yineler ve bunları yeni konumlarına ileri yönde atar.  
   
 ```  
@@ -769,7 +769,7 @@ template<class InputIterator, class Size, class OutputIterator>
 ### <a name="remarks"></a>Açıklamalar  
  Şablon işlevi değerlendirir `*(dest + N) = *(first + N))` için bir kez her `N` aralığında `[0, count)`, kesinlikle değerini artırmak için `N` en düşük değer ile başlatılıyor. Daha sonra döndürür `dest + N`. Varsa `dest` ve `first` depolama bölgeleri atamak `dest` aralığında olmamalıdır `[first, last)`.  
   
-##  <a name="count">Sayısı</a>  
+##  <a name="count"></a>  Sayısı  
  Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısını döndürür.  
   
 ```  
@@ -905,7 +905,7 @@ v1 = ( 10 20 10 40 10 )
 The number of elements in v1 greater than 10 is: 2.  
 ```  
   
-##  <a name="equal">Eşittir</a>  
+##  <a name="equal"></a>  Eşittir  
  İki aralıkları öğe eşitlik veya ikili koşul tarafından belirtilen bir fikir eşdeğer karşılaştırır.  
   
  Kullanım `std::equal` farklı kapsayıcı türleri öğelerinde karşılaştırılırken (örneğin `vector` ve `list`) veya farklı öğe türleri karşılaştırma veya alt aralıkları kapsayıcıların karşılaştırmanız gerekir. Aksi takdirde aynı kapsayıcı türü, aynı türdeki öğeleri karşılaştırıldığında, üye olmayan kullanın `operator==` her kapsayıcı için sağlanır.  
@@ -1165,7 +1165,7 @@ int main()
   
 ```  
   
-##  <a name="fill">doldurma</a>  
+##  <a name="fill"></a>  doldurma  
  Aynı yeni değeri belirtilen bir aralıktaki her öğeye atar.  
   
 ```  
@@ -1904,7 +1904,7 @@ The average of the elements of v1 is:
  Average ( v1mod2 ) = 10.  
 ```  
   
-##  <a name="generate">Oluştur</a>  
+##  <a name="generate"></a>  Oluştur  
  Bir işlev nesnesi tarafından oluşturulan değerleri bir aralıktaki her öğeye atar.  
   
 ```  
@@ -2047,7 +2047,7 @@ int main()
   
 ```  
   
-##  <a name="includes">İçerir</a>  
+##  <a name="includes"></a>  İçerir  
  Sıralanmış bir aralığın ikinci bir sıralanmış aralıkta kapsanan tüm öğeleri içerip içermediğini sınar, burada öğeler arasındaki sıralama veya denklik ölçütü bir ikili koşula göre belirlenebilir.  
   
 ```  
@@ -4538,7 +4538,7 @@ After another next_permutation of vector v1,
 ```  
   
 ##  <a name="nth_element"></a>  nth_element  
- Öğeleri doğru bulma, çeşitli bölümlerini  *n* th öğesi aralığında sırasının küçük veya ona eşit ve sırayla izlenmesi tüm öğelerin önünde tüm öğeleri; böylece bir Şundan büyüktür veya ona eşittir.  
+ Öğeleri doğru bulma, çeşitli bölümlerini *n*th öğesi aralığında sırasının küçük veya ona eşit ve sırayla izlenmesi tüm öğelerin önünde tüm öğeleri; böylece büyük th olan bir ya da ona eşit.  
   
 ```  
 template<class RandomAccessIterator>  
@@ -4565,7 +4565,7 @@ void nth_element( RandomAccessIterator first, RandomAccessIterator _Nth, RandomA
 ### <a name="remarks"></a>Açıklamalar  
  Başvurulan aralığı geçerli olmalıdır; Tüm İşaretçiler dereferenceable olmalıdır ve sıra içinde son konum birinciden erişilebildiğinden artırılamadı tarafından.  
   
- `nth_element` Algoritması garanti etmez alt aralıklara öğeleri ya da yan,  *n* th öğesi sıralanır. Böylece daha az garanti kolaylaştırır `partial_sort`, bazı seçilen öğeyi altında aralıktaki öğeleri sıralar ve daha hızlı alternatif olarak kullanılabilir `partial_sort` zaman alt aralığı sıralama gerekli değildir.  
+ `nth_element` Algoritması garanti etmez alt aralıklara öğeleri ya da yan, *n*th öğesi sıralanır. Böylece daha az garanti kolaylaştırır `partial_sort`, bazı seçilen öğeyi altında aralıktaki öğeleri sıralar ve daha hızlı alternatif olarak kullanılabilir `partial_sort` zaman alt aralığı sıralama gerekli değildir.  
   
  Öğeleri eşdeğer olan ancak mutlaka eşittir, ne diğer değerinden küçük.  
   

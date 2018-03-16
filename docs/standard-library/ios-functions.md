@@ -58,10 +58,10 @@ helpviewer_keywords:
 - std::unitbuf [C++]
 - std::uppercase [C++]
 ms.openlocfilehash: 60bb8bac5ca2f961d6d2977dc84d0844dfd54b8c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ltiosgt-functions"></a>&lt;iOS&gt; işlevleri
 ||||  
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/23/2018
 |[showpoint](#showpoint)|[showpos](#showpos)|[skipws](#skipws)|  
 |[unitbuf](#unitbuf)|[büyük harf](#uppercase)|  
   
-##  <a name="boolalpha">boolalpha</a>  
+##  <a name="boolalpha"></a>  boolalpha  
  Belirtir türündeki bu değişkenler [bool](../cpp/bool-cpp.md) olarak görünür **true** veya **false** akış.  
   
 ```  
@@ -123,7 +123,7 @@ true
 true  
 ```  
   
-##  <a name="dec">Ara</a>  
+##  <a name="dec"></a>  Ara  
  Tamsayı değişkenleri temel 10 gösterimde görüntüleneceğini belirtir.  
   
 ```  
@@ -333,7 +333,7 @@ int main( )
 5  
 ```  
   
-##  <a name="noboolalpha">noboolalpha</a>  
+##  <a name="noboolalpha"></a>  noboolalpha  
  Belirtir türündeki bu değişkenler [bool](../cpp/bool-cpp.md) 1 veya 0'a akış olarak görünür.  
   
 ```  
@@ -357,7 +357,7 @@ ios_base& noboolalpha(ios_base& str);
 ### <a name="example"></a>Örnek  
   Bkz: [boolalpha](../standard-library/ios-functions.md#boolalpha) kullanma örneği için `noboolalpha`.  
   
-##  <a name="noshowbase">noshowbase</a>  
+##  <a name="noshowbase"></a>  noshowbase  
  Bir sayı görüntülendiği notational temel belirten devre dışı bırakır.  
   
 ```  
@@ -501,7 +501,7 @@ ios_base& nounitbuf(ios_base& str);
   
  Manipulator etkili bir şekilde çağırır `str`.[ unsetf](../standard-library/ios-base-class.md#unsetf)( `ios_base::unitbuf`) ve ardından döndürür `str`.  
   
-##  <a name="nouppercase">nouppercase</a>  
+##  <a name="nouppercase"></a>  nouppercase  
  Onaltılık basamak ve bilimsel gösterimde üs küçük harflerle görüntüleneceğini belirtir.  
   
 ```  
@@ -521,7 +521,7 @@ ios_base& nouppercase(ios_base& str);
 ### <a name="example"></a>Örnek  
   Bkz: [büyük](../standard-library/ios-functions.md#uppercase) kullanma örneği için `nouppercase`.  
   
-##  <a name="oct">Eki</a>  
+##  <a name="oct"></a>  Eki  
  Tamsayı değişkenleri temel 8 gösterimde görüntüleneceğini belirtir.  
   
 ```  
@@ -543,7 +543,7 @@ ios_base& oct(ios_base& str);
 ### <a name="example"></a>Örnek  
   Bkz: [Ara](../standard-library/ios-functions.md#dec) nasıl kullanılacağına ilişkin bir örnek **Eki**.  
   
-##  <a name="right">Sağ</a>  
+##  <a name="right"></a>  Sağ  
  Sağ kenar boşluğu ile akış temizleme görünmesi çıkış genişliği kadar geniş değil metin neden olur.  
   
 ```  
@@ -637,7 +637,7 @@ int main( )
 1.002300e+002  
 ```  
   
-##  <a name="showbase">showbase</a>  
+##  <a name="showbase"></a>  showbase  
  Bir sayı görüntülendiği notational temel gösterir.  
   
 ```  
@@ -821,7 +821,7 @@ ios_base& unitbuf(ios_base& str);
   
  Manipulator etkili bir şekilde çağırır `str`.[ setf](../standard-library/ios-base-class.md#setf)( [ios_base::unitbuf](../standard-library/ios-base-class.md#fmtflags)) ve ardından döndürür `str`.  
   
-##  <a name="uppercase">büyük harf</a>  
+##  <a name="uppercase"></a>  büyük harf  
  Onaltılık basamak ve bilimsel gösterimde üs büyük görüntüleneceğini belirtir.  
   
 ```  

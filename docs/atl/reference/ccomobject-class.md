@@ -1,5 +1,5 @@
 ---
-title: "CComObject sınıfı | Microsoft Docs"
+title: CComObject Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,12 +28,12 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 27da00e09ca88cc06b8bafed8f8601dac756fd34
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="ccomobject-class"></a>CComObject sınıfı
+# <a name="ccomobject-class"></a>CComObject Class
 Bu sınıf uygulayan **IUnknown** toplanmayan bir nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -54,7 +54,7 @@ class CComObject : public Base
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComObject::CComObject](#ccomobject)|Oluşturucu.|  
-|[CComObject:: ~ CComObject](#dtor)|Yok Edicisi.|  
+|[CComObject::~CComObject](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -66,7 +66,7 @@ class CComObject : public Base
 |[CComObject::Release](#release)|Başvuru sayım nesnede azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObject`uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmayan bir nesne. Ancak, çağrılar `QueryInterface`, `AddRef`, ve **sürüm** için temsilci `CComObjectRootEx`.  
+ `CComObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmayan bir nesne. Ancak, çağrılar `QueryInterface`, `AddRef`, ve **sürüm** için temsilci `CComObjectRootEx`.  
   
  Kullanma hakkında daha fazla bilgi için `CComObject`, makaleye bakın [ATL COM nesneleri Temelleri](../../atl/fundamentals-of-atl-com-objects.md).  
   
@@ -78,7 +78,7 @@ class CComObject : public Base
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComObject::AddRef  
+##  <a name="addref"></a>  CComObject::AddRef  
  Nesne üzerinde başvurusu sayısını artırır.  
   
 ```
@@ -88,7 +88,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu işlev bir nesne üzerinde yeni artırılır başvuru sayımını döndürür. Bu değer, tanılama veya sınama için yararlı olabilir.  
   
-##  <a name="ccomobject"></a>CComObject::CComObject  
+##  <a name="ccomobject"></a>  CComObject::CComObject  
  Oluşturucu modülü kilit sayısını artırır.  
   
 ```
@@ -97,14 +97,14 @@ CComObject(void* = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  **void\***  
- [in] Bu adlandırılmamış parametre kullanılmaz. Diğer simetrisi için mevcut **CCom***XXX*`Object`*XXX* oluşturucular.  
+ [in] Bu adlandırılmamış parametre kullanılmaz. Diğer simetrisi için mevcut **CCom *** XXX*`Object`*XXX* oluşturucular.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yok Edicisi azaltır.  
   
  Varsa bir `CComObject`-türetilen nesne, kullanarak başarılı bir şekilde yapılandırılmıştır **yeni** işleci, ilk başvuru sayısı: 0. Başvuru sayısı (1) doğru değerine ayarlamak için çağırmaya [AddRef](#addref) işlevi.  
   
-##  <a name="dtor"></a>CComObject:: ~ CComObject  
+##  <a name="dtor"></a>  CComObject::~CComObject  
  Yok Edicisi.  
   
 ```
@@ -115,7 +115,7 @@ CComObject();
  Çağrıları ayrılan tüm kaynakları serbest bırakır [FinalRelease](ccomobjectrootex-class.md#finalrelease), ve azaltır modülü kilit sayısı.  
 
   
-##  <a name="createinstance"></a>CComObject::CreateInstance  
+##  <a name="createinstance"></a>  CComObject::CreateInstance  
  Bu statik işlev yeni oluşturmanıza olanak tanıyan **CComObject <** `Base`  **>**  yükü olmadan nesne [CoCreateInstance](http://msdn.microsoft.com/library/windows/desktop/ms686615).  
   
 ```
@@ -139,7 +139,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
   
  [!code-cpp[NVC_ATL_COM#39](../../atl/codesnippet/cpp/ccomobject-class_2.cpp)]  
   
-##  <a name="queryinterface"></a>CComObject::QueryInterface  
+##  <a name="queryinterface"></a>  CComObject::QueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -161,7 +161,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="release"></a>CComObject::Release  
+##  <a name="release"></a>  CComObject::Release  
  Başvuru sayım nesnede azaltır.  
   
 ```

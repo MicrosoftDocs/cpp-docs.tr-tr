@@ -36,10 +36,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2d3c103673029f33d1d7eb36cce431c9b46d0270
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 Üst öğe her zaman en büyük olan bazı temel kapsayıcı türü veya en yüksek öncelikli erişimi sınırlayan işlevlerin bir kısıtlama sağlayan bir şablon kapsayıcı bağdaştırıcısının sınıfı. Yeni öğeler priority_queue eklenebilir ve priority_queue üst öğenin Denetlenmekte veya kaldırılabilir.  
@@ -52,7 +52,7 @@ class priority_queue
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Türü  
+ *Türü*  
  Priority_queue depolanması için öğe veri türü.  
   
  `Container`  

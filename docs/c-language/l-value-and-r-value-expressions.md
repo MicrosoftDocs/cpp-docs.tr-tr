@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6fb26b4488f6c75c0d9d7b70afb68c3c1b5e3178
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Değeri ve R-Değeri İfadeleri
 Bellek konumları ifadeleri "l-değeri" ifadeleri denir. L-değeri eşittir işaretinden sol tarafta görünebilir olduğunu belirtmek "sol" bir değer veya bir depolama bölgenin "Bulucusu" değerini temsil eder (**=**). L değerleri genellikle tanımlayıcılardır.  
@@ -51,7 +51,7 @@ Bellek konumları ifadeleri "l-değeri" ifadeleri denir. L-değeri eşittir işa
   
  "R" terimi, bazen bir ifadenin değerini açıklamak için ve bir m değerinden ayırt etmek için kullanılır. Tüm l-r değerleri değerlerdir ancak tüm r-l değerleri değerlerdir.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Microsoft C nesnenin boyutu cast uzatılmış değil sürece değerlerin l-m-değerler olarak kullanılacak atamaları sağlayan ANSI C standardı uzantısı içerir. (Bkz [tür atama dönüşümleri](../c-language/type-cast-conversions.md) daha fazla bilgi için.) Aşağıdaki örnekte, bu özelliği gösterilmektedir:  
   

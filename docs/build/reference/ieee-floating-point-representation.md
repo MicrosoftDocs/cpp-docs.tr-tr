@@ -27,10 +27,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 17fae0cbb16208d5c7e7346f354f3501e4803d96
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ieee-floating-point-representation"></a>IEEE Kayan Noktası Temsili
 Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Gerçek sayılar üç iç çeşitleri vardır. Gerçek\*4 ve gerçek\*8'de Visual C++ kullanılır. Gerçek\*4 word kullanılarak bildirilen **float**. Gerçek\*8 word kullanılarak bildirilen **çift**. Windows 32-bit programlama içinde `long double` veri türü eşlemeleri için **çift**. Yoktur, ancak gerçek kullanarak hesaplamalar için derleme dili desteği * 10 veri türü.  
@@ -61,13 +61,13 @@ Microsoft Visual C++ IEEE sayısal standartları ile uyumludur. Gerçek sayılar
   
  Biçim daha sonra çeşitli boyutları şu şekildedir:  
   
-|Biçimi|BYTE 1|BAYT 2|BAYT 3|BAYT 4|...|BAYT n|  
+|Biçimi|BYTE 1|BYTE 2|BYTE 3|BYTE 4|...|BAYT n|  
 |------------|------------|------------|------------|------------|---------|------------|  
 |Gerçek * 4|`SXXX XXXX`|`XMMM MMMM`|`MMMM MMMM`|`MMMM MMMM`|||  
 |Gerçek * 8|`SXXX XXXX`|`XXXX MMMM`|`MMMM MMMM`|`MMMM MMMM`|...|`MMMM MMMM`|  
 |Gerçek * 10|`SXXX XXXX`|`XXXX XXXX`|`1MMM MMMM`|`MMMM MMMM`|...|`MMMM MMMM`|  
   
- `S`oturum bit temsil eden `X`'s üs bitleri ve `M`'s Mantis bittir. Soldaki bit gerçek varsayılır Not * 4 ve gerçek\*8 biçimleri, ancak "1" mevcut gerçek, bayt 3'te\*10 biçimi.  
+ `S` oturum bit temsil eden `X`'s üs bitleri ve `M`'s Mantis bittir. Soldaki bit gerçek varsayılır Not * 4 ve gerçek\*8 biçimleri, ancak "1" mevcut gerçek, bayt 3'te\*10 biçimi.  
   
  İkili noktası doğru kaydırmak için ilk üs unbias ve ardından ikili noktasını sağa taşıyın veya uygun bit sayısı kadar sola.  
   

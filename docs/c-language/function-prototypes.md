@@ -24,10 +24,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ea02b5b3bb1517623a0c3fc67a752d203f81c5a8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="function-prototypes"></a>İşlev Prototipleri
 Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depolama sınıfı ve diğer bir işlev özniteliklerini belirtir. Bir prototip olması için işlev bildirimi de türleri ve işlev bağımsız değişkenleri için tanımlayıcıları oluşturmanız gerekir.  
@@ -36,7 +36,7 @@ Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depola
  `declaration`:  
  *bildirim tanımlayıcıları öznitelik-seq* kabul*init bildirimcisi listesi* kabul**;**  
   
- /\**özniteliği seq* opt Microsoft Specific * /  
+ /\* *öznitelik seq* opt Microsoft Specific * /  
   
  *bildirim tanımlayıcıları*:  
  *depolama sınıfı tanımlayıcısı bildirim tanımlayıcıları* iptal et  
@@ -45,23 +45,23 @@ Bir işlev bildirimi işlev tanımı önündeki ve adı, dönüş türü, depola
   
  *tür niteleyicisi bildirim tanımlayıcıları* iptal et  
   
- *Init bildirimcisi listesi*:  
- *Init bildirimcisi*  
+ *init-declarator-list*:  
+ *init-declarator*  
   
  *Init bildirimcisi listesi***,***init bildirimcisi*   
   
- *Init bildirimcisi*:  
+ *init-declarator*:  
  *bildirimcisi*  
   
  *bildirimcisi Başlatıcı =*  
   
  `declarator`:  
- *İşaretçi* kabul*doğrudan bildirimcisi*  
+ *pointer* opt*direct-declarator*  
   
- *doğrudan bildirimcisi*: /\* işlevi bildirimcisi\*/  
- *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi      \*/  
+ *doğrudan bildirimcisi*: /\* işlevi bildirimcisi \*/  
+ *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi       \*/  
   
- *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul**)** / * Kullanımdan kalktı stili bildirimcisi    \*/  
+ *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul**)** / * Kullanımdan kalktı stili bildirimcisi     \*/  
   
  Kapatma parantezi hemen ardından noktalı virgülle sonlandırılır ve bu nedenle hiçbir gövdesine sahip dışında prototip işlev tanımı olarak aynı biçime sahiptir. Her iki durumda da, dönüş türü bir işlev tanımında belirtilen dönüş türüyle kabul etmeniz gerekir.  
   

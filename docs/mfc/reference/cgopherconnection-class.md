@@ -30,10 +30,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d669ebc954b73d848e22dc373704ab3434074274
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection sınıfı
 Gopher Internet sunucusu bağlantınız yönetir.  
@@ -82,7 +82,7 @@ class CGopherConnection : public CInternetConnection
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxinet.h  
   
-##  <a name="cgopherconnection"></a>CGopherConnection::CGopherConnection  
+##  <a name="cgopherconnection"></a>  CGopherConnection::CGopherConnection  
  Bu üye işlevi oluşturmak için çağrılan bir `CGopherConnection` nesnesi.  
   
 ```  
@@ -113,7 +113,7 @@ CGopherConnection(
  FTP sunucusu adını içeren bir dize için bir işaretçi.  
   
  `dwContext`  
- İşlem bağlamı tanımlayıcısı. `dwContext`işlem durumu bilgileri tarafından döndürülen tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek  
+ İşlem bağlamı tanımlayıcısı. `dwContext` işlem durumu bilgileri tarafından döndürülen tanımlayan [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback). Varsayılan değer 1 olarak ayarlanır; Ancak, belirli bir bağlam kimliği işlemi için açıkça atayabilirsiniz. Nesne ve mevcut herhangi bir iş, içerik kimliği ile ilişkilendirilecek  
   
  `pstrUserName`  
  İşaretçi null ile sonlandırılmış dizeye oturum açmak için kullanıcı adını belirtir. Varsa **NULL**, anonim varsayılandır.  
@@ -134,7 +134,7 @@ CGopherConnection(
 ### <a name="remarks"></a>Açıklamalar  
  Hiçbir zaman oluşturduğunuz bir `CGopherConnection` doğrudan. Bunun yerine, çağrı [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection), oluşturan bir `CGopherConnection` nesne ve bir işaretçi döndürür.  
   
-##  <a name="createlocator"></a>CGopherConnection::CreateLocator  
+##  <a name="createlocator"></a>  CGopherConnection::CreateLocator  
  Bulunamadı veya bir dosyayı bir gopher sunucuda tanımlamak gopher Bulucusu oluşturmak için bu üye işlevini çağırın.  
   
 ```  
@@ -159,7 +159,7 @@ static CGopherLocator CreateLocator(
  Gopher belge ya da alınacak dizinin adını içeren bir dize için bir işaretçi. Varsa `pstrDisplayString` parametresi **NULL**, gopher sunucunun varsayılan dizini döndürülür.  
   
  `pstrSelectorString`  
- Bir öğeyi geri almak için gopher sunucuya gönderilecek Seçici dizesi için bir işaretçi. `pstrSelectorString`olabilir **NULL**.  
+ Bir öğeyi geri almak için gopher sunucuya gönderilecek Seçici dizesi için bir işaretçi. `pstrSelectorString` olabilir **NULL**.  
   
  *dwGopherType*  
  Bu belirtir olup olmadığını `pstrSelectorString` bir dizin veya belge başvuruyor ve istek gopher veya gopher + olup. Yapısı için öznitelik [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) Windows SDK'sındaki.  
@@ -181,7 +181,7 @@ static CGopherLocator CreateLocator(
   
  Gopher sunucudan bilgi almak için uygulamanın önce bir gopher Bulucu almanız gerekir. Uygulama sonra Konumlandırıcı opak belirteci olarak ele almanız gerekir (diğer bir deyişle, uygulama Bulucu ancak doğrudan yönetmek veya kullanabilirsiniz Bu karşılaştırın). Normalde, çağrılar için Bulucu uygulamanın kullandığı [CGopherFileFind::FindFile](../../mfc/reference/cgopherfilefind-class.md#findfile) belirli bir bilgiyi almak için üye işlevi.  
   
-##  <a name="getattribute"></a>CGopherConnection::GetAttribute  
+##  <a name="getattribute"></a>  CGopherConnection::GetAttribute  
  Gopher sunucudan bir öğesiyle ilgili belirli öznitelik bilgileri almak için bu üye işlevini çağırın.  
   
 ```  
@@ -203,7 +203,7 @@ BOOL GetAttribute(
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa sıfır olmayan; Aksi takdirde 0. Çağrı başarısız olursa, Win32 işlevi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
-##  <a name="openfile"></a>CGopherConnection::OpenFile  
+##  <a name="openfile"></a>  CGopherConnection::OpenFile  
  Gopher sunucusunda bir dosyayı açmak için bu üye işlevini çağırın.  
   
 ```  
@@ -234,11 +234,11 @@ CGopherFile* OpenFile(
  Geçersiz kılma `dwContext` varsayılan bağlam tanımlayıcı bir değerine ayarlayın. Bağlam tanıtıcısı belirli bu işlemle ilişkili `CGopherConnection` tarafından oluşturulan nesne kendi [CInternetSession](../../mfc/reference/cinternetsession-class.md) nesnesi. İçin döndürülen değer [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) sahip belirtilen işlem durumu sağlamak için. Makalesine bakın [Internet ilk adımlar: WinINet](../../mfc/wininet-basics.md) bağlamı tanımlayıcısı hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
+ [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [CFtpConnection sınıfı](../../mfc/reference/cftpconnection-class.md)   
  [CHttpConnection sınıfı](../../mfc/reference/chttpconnection-class.md)   
- [CInternetConnection sınıfı](../../mfc/reference/cinternetconnection-class.md)   
+ [CInternetConnection Class](../../mfc/reference/cinternetconnection-class.md)   
  [CGopherLocator sınıfı](../../mfc/reference/cgopherlocator-class.md)   
  [CGopherFile sınıfı](../../mfc/reference/cgopherfile-class.md)   
  [CInternetSession Sınıfı](../../mfc/reference/cinternetsession-class.md)

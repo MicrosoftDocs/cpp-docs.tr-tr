@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: efdf3f67e488af0e7c20c882552b18c533a031b7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="semantics-of-expressions"></a>İfade Semantikleri
 İfadeler, işleçlerinin önceliğine ve gruplandırılmasına göre değerlendirilir. ([İşleç önceliği ve birleşim](../cpp/cpp-built-in-operators-precedence-and-associativity.md) içinde [sözcük kuralları](../cpp/lexical-conventions.md), işleçler zorunlu tuttukları ifadeleri C++ ilişkileri gösterir.)  
@@ -80,10 +80,10 @@ Parantezli İfade-Değerlendirme Sırası
   
 |Türü bekleniyor|İzin verilen türleri|  
 |-------------------|-------------------|  
-|*türü*|`const`*türü*<br /> `volatile`*türü*<br /> *türü*&<br /> `const`*türü*&<br /> `volatile`*türü*&<br /> `volatile const`*türü*<br /> `volatile const`*türü*&|  
-|*türü*\*|*türü*\*<br /> `const`*türü*\*<br /> `volatile`*türü*\*<br /> `volatile const`*türü*\*|  
-|`const`*türü*|*türü*<br /> `const`*türü*<br />`const`*türü*&|  
-|`volatile`*türü*|*türü*<br /> `volatile`*türü*<br /> `volatile`*türü*&|  
+|*Türü*|`const` *Türü*<br /> `volatile` *Türü*<br /> *Türü*&<br /> `const` *Türü*&<br /> `volatile` *Türü*&<br /> `volatile const` *Türü*<br /> `volatile const` *Türü*&|  
+|*Türü*\*|*Türü*\*<br /> `const` *Türü*\*<br /> `volatile` *Türü*\*<br /> `volatile const` *Türü*\*|  
+|`const` *Türü*|*Türü*<br /> `const` *Türü*<br />`const` *Türü*&|  
+|`volatile` *Türü*|*Türü*<br /> `volatile` *Türü*<br /> `volatile` *Türü*&|  
   
  Önceki kuralları birlikte her zaman kullanılabilir olmadığından geçici bir nesne için sabit bir işaretçi bir işaretçi beklenirken sağlanabilir.  
   
@@ -105,7 +105,7 @@ func( i, ++i );
   
 -   Mantıksal AND işlecinin sol işleneni (&&). Mantıksal AND işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal AND işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
   
--   Mantıksal OR işleci (&#124; &#124;) sol işleneni. Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
+-   Sol işleneni mantıksal OR işleci (&#124;&#124;). Mantıksal OR işlecinin sol işleneni, tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Mantıksal OR işlecinin sağ işleneninin değerlendirileceği kesin değildir.  
   
 -   Virgül işlecinin sol işleneni. Virgül işlecinin sol işleneni tamamen değerlendirilir ve devam edilmeden önce tüm yan etkiler tamamlanır. Virgül işlecinin her iki işleneni de her zaman değerlendirilir.  
   

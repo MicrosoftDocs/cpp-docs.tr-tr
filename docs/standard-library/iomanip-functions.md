@@ -34,10 +34,10 @@ helpviewer_keywords:
 - std::setprecision [C++]
 - std::setw [C++]
 ms.openlocfilehash: 6d36261e237d2a9c4ee7afddd0cb57d60cb5e12c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; işlevleri
 ||||  
@@ -126,7 +126,7 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 ### <a name="remarks"></a>Açıklamalar  
  Manipulator nesneyi akışa eklendiğinde döner `str`, olarak davranan bir `formatted output function`. Çıktı işlevi üye işlevini çağırır `put` yerel ayar modelinin `time_put` ile ilişkili `str`. Çıktı işlevini kullanıyor `_Tptr` zaman yapısı göstermek için ve `_Fmt` NUL sonlandırılmış biçim dizesi başlangıcını belirtmek için. Başarılı olursa, arama metin zaman yapısı dönüştürülmüş değerleri ve biçim dizesi ekler. Manipulator sonra döndürür `str`.  
   
-##  <a name="quoted">tırnak içine alınmış</a>  
+##  <a name="quoted"></a>  tırnak içine alınmış  
  **(Yeni C ++ 14 inç)**  Uygun gidiş dizeleri içine ve işyeri dışında sağlayan bir iostream manipulator akışları kullanarak >> ve << işleçler.  
   
 ```  
@@ -383,7 +383,7 @@ T5 setprecision(streamsize Prec);
 ### <a name="example"></a>Örnek  
   Bkz: [setw](../standard-library/iomanip-functions.md#setw) kullanma örneği için `setprecision`.  
   
-##  <a name="setw">setw</a>  
+##  <a name="setw"></a>  setw  
  Akışta sonraki öğeye görüntü alanın genişliğini belirtir.  
   
 ```  

@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 073715c72dfad83490b377b5d55e1169297be1ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler
 Bu gelişmiş bir konudur.  
@@ -39,7 +39,7 @@ Bu gelişmiş bir konudur.
   
 -   [Yeniden özel durumları atma](#_core_re.2d.throwing_exceptions)  
   
-##  <a name="_core_exception_types_and_the_catch_macro"></a>Özel durum türleri ve CATCH makrosu  
+##  <a name="_core_exception_types_and_the_catch_macro"></a> Özel durum türleri ve CATCH makrosu  
  MFC, önceki sürümlerinde **CATCH** makrosu MFC çalışma zamanı türü bilgileri özel durum türü belirlemek için kullanılır; özel durum türü, diğer bir deyişle, yakalama sitede belirlenir. C++ özel durum dışında ancak, özel durumun türü her zaman throw sitede oluşturulan özel durum nesnesi türü tarafından belirlenir. Bu uyumsuzlukları burada atılmış nesnesine işaretçi türü atılmış nesne türünden farklı nadir durumda neden olur.  
   
  Aşağıdaki örnekte, MFC sürüm 3.0 ve önceki sürümleri arasındaki bu farklılık sonucu gösterilmektedir:  
@@ -60,7 +60,7 @@ Bu gelişmiş bir konudur.
   
  Bu sorunu geçici olarak çözmek için throw deyimi işlevinden çağıran kodu taşımak ve özel durum oluşturdu aynı anda derleyiciye bilinen gerçek türünde bir özel durum atar.  
   
-##  <a name="_core_re.2d.throwing_exceptions"></a>Yeniden özel durumları atma  
+##  <a name="_core_re.2d.throwing_exceptions"></a> Yeniden özel durumları atma  
  Catch bloğu, yakalanan aynı özel durum işaretçi oluşturulamıyor.  
   
  Örneğin, bu kod önceki sürümlerde geçerli, ancak sahip sürüm 3.0 ile beklenmeyen sonuçlar:  

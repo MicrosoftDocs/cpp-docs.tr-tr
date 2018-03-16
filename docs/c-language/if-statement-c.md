@@ -27,10 +27,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: cb0e4929b55d6cfc0ef01ee183b74b2439b85d10
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="if-statement-c"></a>if Deyimi (C)
 **Varsa** deyimi denetimleri koşullu dallanma. Gövdesi bir **varsa** deyimi ifade değeri sıfır değilse yürütüldü. Sözdizimi **varsa** deyimi iki tür vardır.  

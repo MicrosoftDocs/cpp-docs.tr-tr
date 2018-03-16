@@ -15,10 +15,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 45f22597944084ecd2d30fe29bf4e8ab3ef80201
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-and-155improvements155"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153) ve [15,5](#improvements_155)
 
@@ -48,7 +48,7 @@ C ++ 17 static_assert iletisi parametresi isteğe bağlıdır. Daha fazla bilgi 
 **Döngüler için aralık tabanlı genelleştirilmiş** (derleyici anahtar gerekli)  
 Aralık tabanlı için begin() ve end() aynı türde nesneler döndürmeye döngüler artık gerek yoktur. Bu aralıklardaki tarafından kullanılan bir sentinel döndürülecek end() sağlar [aralığı v3](https://github.com/ericniebler/range-v3) ve tamamlandı ancak-değil-sessiz-yayımlanmış aralıkları teknik belirtim. Daha fazla bilgi için bkz: [Range-Based genelleme For döngüsü](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0184r0.html).
 
-## <a name="improvements_153"></a>Visual Studio 2017 sürüm 15.3 yenilikleri
+## <a name="improvements_153"></a> Visual Studio 2017 sürüm 15.3 yenilikleri
 
 **constexpr lambdas**  
 Lambda ifadeleri şimdi sabit ifadeler kullanılabilir. Daha fazla bilgi için bkz: [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
@@ -75,14 +75,14 @@ Yapıldığında şimdi bir örtük/olmayan-daraltma kapsamlı bir numaralandır
 `*this` Lambda ifadesi nesnesinde şimdi yakalanıp değeri. Bu, özellikle yeni makine mimarileri üzerinde paralel ve zaman uyumsuz işlemleri lambda çağrılır senaryolara olanak sağlar. Daha fazla bilgi için bkz: [Lambda yakalamayı \*bu değere göre [=\*bu]](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0018r3.html).
 
 **Operator ++ bool için kaldırma**  
-`operator++`artık desteklenir `bool` türleri. Daha fazla bilgi için bkz: [kaldırmak kullanım dışı operator++(bool)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html).
+`operator++` artık desteklenir `bool` türleri. Daha fazla bilgi için bkz: [kaldırmak kullanım dışı operator++(bool)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0002r1.html).
 
 **Kaldırma "register anahtar sözcüğü" kullanım dışı**  
 `register` Anahtar sözcüğü, daha önce kullanım dışı (ve derleyici tarafından göz ardı) dilinden artık kaldırılmıştır. Daha fazla bilgi için bkz: [kullanım dışı kullanımı anahtar sözcük kaydı kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0001r1.html).
 
 Visual Studio 2015 güncelleştirme 3 ile uyum geliştirmeleri tam listesi için bkz: [Visual C++ ne ait yeni 2003 2015 aracılığıyla](https://msdn.microsoft.com/en-us/library/mt723604.aspx).
 
-## <a name="improvements_155"></a>Visual Studio 2017 sürüm 15,5 yenilikleri
+## <a name="improvements_155"></a>  Visual Studio 2017 sürüm 15,5 yenilikleri
 
 [14] ile işaretli özellikleri kullanılabilir koşulsuz olarak bile/Std: c içinde ++ 14 modu.
 
@@ -448,7 +448,7 @@ void f(ClassLibrary1::Class1 ^r1, ClassLibrary1::Class2 ^r2)
 }
 ```
 
-## <a name="update_153"></a>Visual Studio 2017 sürüm 15.3 hata düzeltmeleri
+## <a name="update_153"></a> Visual Studio 2017 sürüm 15.3 hata düzeltmeleri
 
 ### <a name="calls-to-deleted-member-templates"></a>Silinen üye şablonları çağrıları
 
@@ -642,7 +642,7 @@ constexpr auto off2 = offsetof(A, bar);
 
 Bu kod, hatalı biçimlendirilmiş ve çalışma zamanında bir kilitlenme neden olabilir. Hatayı düzeltmek için artık tanımsız davranışı çağırmak için kodu değiştirin. C++ Standart tarafından izin verilmeyen taşınabilir olmayan kodu budur.
 
-### <a name="declspec"></a>Yeni uyarı declspec öznitelikleri hakkında
+### <a name="declspec"></a> Yeni uyarı declspec öznitelikleri hakkında
 
 Visual Studio 2017 içinde sürüm 15.3, derleyici artık öznitelikleri yoksayar `__declspec(...)` önce uygulanan `extern "C"` bağlantı belirtimi. Daha önce derleyici, çalışma zamanı etkileri olabilir öznitelik göz ardı. Zaman **/duvar** ve **/WX** seçenekleri ayarlanır, aşağıdaki kod üretmez "C4768 Uyarı: bağlantı belirtimi önce __declspec öznitelikleri yok sayılır":
 
@@ -725,7 +725,7 @@ static_assert(std::is_convertible<Array&, Array>::value, "");
 static_assert(std::is_convertible<Array, Array&>::value, "");
 ```
 
-`std::is_convertible<From, To>`bir sanal işlev tanımı iyi biçimlendirilmiş olup olmadığını görmek için kontrol ederek hesaplanır:
+`std::is_convertible<From, To>` bir sanal işlev tanımı iyi biçimlendirilmiş olup olmadığını görmek için kontrol ederek hesaplanır:
 
 ```cpp 
    To test() { return std::declval<From>(); }
@@ -748,7 +748,7 @@ private:
 static_assert(std::is_constructible<PrivateDtor, int>::value);
 ```
 
-Özel Yıkıcılar oluşturulabilir olmayan olması için bir türü neden. `std::is_constructible<T, Args...>`Aşağıdaki bildirimi yazılmışsa gibi hesaplanır:
+Özel Yıkıcılar oluşturulabilir olmayan olması için bir türü neden. `std::is_constructible<T, Args...>` Aşağıdaki bildirimi yazılmışsa gibi hesaplanır:
 
 ```cpp
    T obj(std::declval<Args>()...)
@@ -820,7 +820,7 @@ Sorunu düzeltmek için bildirimler aynı sırada olmasını ıntializer listesi
 
 Uyarı-varsayılan olarak kapalı olduğunu ve yalnızca ile derlenmiş kod etkiler unutmayın **/duvar**.
 
-## <a name="update_155"></a>Hata düzeltmeleri ve diğer Visual Studio 2017 sürüm 15,5 davranış değişiklikleri
+## <a name="update_155"></a> Hata düzeltmeleri ve diğer Visual Studio 2017 sürüm 15,5 davranış değişiklikleri
 
 ### <a name="partial-ordering-change"></a>Kısmi sıralama Değiştir
 
@@ -1098,7 +1098,7 @@ error C2027: use of undefined type 'S'
 
 ### <a name="stdisconvertible-target-type"></a>Std::is_convertible hedef türü
 
-`std::is_convertible`Hedef türü geçerli bir dönüş türü olmasını gerektirir. Visual Studio'nun önceki sürümleri derleyici yanlış yanlış aşırı yükleme çözümü ve istenmeyen çalışma zamanı davranışını yol açabilecek soyut türler izin verilir.  Aşağıdaki kod artık doğru C2338 başlatır:
+`std::is_convertible` Hedef türü geçerli bir dönüş türü olmasını gerektirir. Visual Studio'nun önceki sürümleri derleyici yanlış yanlış aşırı yükleme çözümü ve istenmeyen çalışma zamanı davranışını yol açabilecek soyut türler izin verilir.  Aşağıdaki kod artık doğru C2338 başlatır:
 
 ```cpp
 #include <type_traits>
@@ -1120,7 +1120,7 @@ struct D : public B { virtual ~D(); };
 static_assert(std::is_convertible<D *, B *>::value, "fail");
 ```
 
-### <a name="noexcept_removal"></a>Dinamik özel durum belirtimi kaldırma ve noexcept
+### <a name="noexcept_removal"></a> Dinamik özel durum belirtimi kaldırma ve noexcept
 
 C ++ 17 ' de `throw()` için diğer ad olduğu `noexcept`, `throw(<type list>)` ve `throw(...)` kaldırılır ve belirli türleri içerebilir `noexcept`. Bu C ++ 14 veya önceki sürümleri uyumlu koduyla kaynak uyumluluk sorunlarına neden olabilir. **/Zc:noexceptTypes-** anahtar, C ++ 14 sürümüne geri dönmek için kullanılabilir `noexcept` genel C ++ 17 modu kullanırken. Bu, C ++ 17'ye tüm yeniden yazmaya gerek kalmadan uygun olması için kaynak kodu güncelleştirmenizi sağlar, `throw()` aynı anda kodu.
 

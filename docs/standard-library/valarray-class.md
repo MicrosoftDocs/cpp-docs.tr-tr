@@ -44,10 +44,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1325bcdbf00e217391ac7df4f583750b1fba4090
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 Şablon sınıfı türündeki öğeler bir dizi denetimleri bir nesneyi tanımlayan **türü** , bir dizi olarak depolanan, yüksek hızlı matematik işlemlerini gerçekleştirmek için tasarlanmış ve hesaplama performans için en iyi duruma getirilmiş.  
@@ -57,7 +57,7 @@ ms.lasthandoff: 02/23/2018
   
 -   Karşılık gelen öğeleri arasında çok sayıda aritmetik işlemler tanımlar **valarray\<türü >** aynı türde ve uzunluk nesneleri gibi *xarr* cos = ( *yarr*) + sin ( *zarr*).  
   
--   Çeşitli alt simge için ilginç şekillerde tanımlayan bir **valarray\<türü >** aşırı yüklemesi tarafından nesne [işleci &#91; &#93;](#op_at).  
+-   Çeşitli alt simge için ilginç şekillerde tanımlayan bir **valarray\<türü >** aşırı yüklemesi tarafından nesne [işleci&#91;&#93;](#op_at).  
   
  Sınıfın bir nesnesi **türü**:  
   
@@ -110,9 +110,9 @@ ms.lasthandoff: 02/23/2018
 |[operator-=](#operator-_eq)|Belirtilen bir öğelerini çıkarır `valarray` veya element-wise işleneni öğe türü değeri `valarray`.|  
 |[operator/=](#op_div_eq)|İşleneni böler `valarray` belirtilen öğelerini tarafından element-wise `valarray` veya öğesi türünde bir değer.|  
 |[operator=](#op_eq)|Öğelerine atar bir `valarray` değerleri doğrudan veya başka bir parçası olarak belirtilen `valarray` ya da bir `slice_array`, `gslice_array`, `mask_array`, veya `indirect_array`.|  
-|[Operator &#91; &#93;](#op_at)|Bir öğenin veya belirtilen dizin veya belirtilen bir alt değeri bir başvuru döndürür.|  
+|[işleci&#91;&#93;](#op_at)|Bir öğenin veya belirtilen dizin veya belirtilen bir alt değeri bir başvuru döndürür.|  
 |[operator^=](#op_xor_eq)|Element-wise özel mantıksal or işleci alır ( `XOR`) belirtilen valarray veya öğesi türünde bir değer içeren bir dizi.|  
-|[operator &#124; =](#op_or_eq)|Bit düzeyinde alır `OR` dizisindeki öğelerin ile ilgili öğeleri belirtilen bir ya da `valarray` veya öğesi türünde bir değer ile.|  
+|[İşleç&#124;=](#op_or_eq)|Bit düzeyinde alır `OR` dizisindeki öğelerin ile ilgili öğeleri belirtilen bir ya da `valarray` veya öğesi türünde bir değer ile.|  
 |[operator~](#op_dtor)|Bit düzeyinde edinir birli işleç `NOT` her bir öğe değerini bir `valarray`.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -1084,7 +1084,7 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
   
  Üçüncü üye işleci denetimli dizisinin her öğe bir kopyası ile değiştirir. `val`.  
   
- Bu öğeleri yalnızca oluşturulan kendi değişkenleriyle seçili denetimli dizisinin kalan üye işleçleri Değiştir [işleci &#91; &#93;](#op_at).  
+ Bu öğeleri yalnızca oluşturulan kendi değişkenleriyle seçili denetimli dizisinin kalan üye işleçleri Değiştir [işleci&#91;&#93;](#op_at).  
   
  İlk denetlenen sıradaki üye değiştirme denetlenen sıradaki üyenin değerini bağlıdır, tanımlanmamış bir sonucudur.  
   
@@ -1268,7 +1268,7 @@ The element-by-element result of the bitwise XOR operator^= is the
 *\  
 ```  
   
-##  <a name="op_or_eq"></a>  valarray::operator &#124; =  
+##  <a name="op_or_eq"></a>  valarray::operator&#124;=  
  Bit düzeyinde edinir `OR` öğelerin bir dizi belirtilen valarray karşılık gelen öğeleri veya öğe türünde bir değer.  
   
 ```  

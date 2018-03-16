@@ -104,10 +104,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: be1d2ddf9c80c2039608a3cf5f459284796b685d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="map-class"></a>map Sınıfı
 Her bir öğenin hem veri değerine hem de sıralama anahtarına sahip olduğu bir çift olan bir koleksiyondaki verileri alma ve depolama için kullanılır. Anahtarın değeri benzersizdir ve verileri otomatik olarak sıralamak için kullanılır.  
@@ -230,7 +230,7 @@ class map;
   
 |||  
 |-|-|  
-|[Operator &#91; &#93;](#op_at)|Belirtilen bir anahtar değere sahip bir eşleme bir öğe ekler.|  
+|[işleci&#91;&#93;](#op_at)|Belirtilen bir anahtar değere sahip bir eşleme bir öğe ekler.|  
 |[operator=](#op_eq)|Bir eşlemin öğelerini başka bir eşlem kopyasıyla değiştirir.|  
   
 ## <a name="requirements"></a>Gereksinimler  

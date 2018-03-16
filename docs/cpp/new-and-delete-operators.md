@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3af862988502ac0d1908c466aae5e62b753509c2
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -38,7 +38,7 @@ Dinamik ayırma ve ayırmayı kaldırma kullanarak nesnelerin C++ destekler [yen
   
  C çalışma zamanı kitaplığı ve C++ Standart Kitaplığı oluşturan kitaplığı dosyaların listesi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).  
   
-##  <a id="new_operator"></a> New işleci  
+##  <a id="new_operator"> </a> New işleci  
  Bir programda aşağıdaki gibi bir deyimle karşılaşıldığında, `operator new` işlevinin çağrısına çevrilir:  
   
 ```cpp  
@@ -144,7 +144,7 @@ int main() {
   
  Başarısız bellek ayırma isteklerini işlemek için başka bir yolu yoktur: Böyle bir hata işlemek için bir özel kurtarma yordamı yazma ve işlevinizi çağırarak kaydedin [_set_new_handler](../c-runtime-library/reference/set-new-handler.md) çalışma zamanı işlevi.  
   
-##  <a id="delete_operator"></a> Delete işleci  
+##  <a id="delete_operator"> </a> Delete işleci  
  Kullanarak dinamik olarak ayrılan bellek **yeni** işleci kullanılarak serbest bırakılmış **silmek** işleci. Delete işleci çağrıları **delete işleci** bellek kullanılabilir havuzuna serbest bırakma işlevi. Kullanarak **silmek** işleci ayrıca neden olur. sınıf yıkıcı (varsa) çağrılabilir.  
   
  Genel ve sınıf kapsamlı **delete işleci** işlevleri. Yalnızca bir **delete işleci** işlevi için belirli bir sınıfın tanımlanabilir; tanımlanmışsa, genel gizler **delete işleci** işlevi. Genel **delete işleci** işlevi herhangi bir tür diziler için her zaman çağrılır.  

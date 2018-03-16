@@ -28,29 +28,29 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a58adfefc5e2b3b5085a44c38dd392d3369421c8
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="c-function-definitions"></a>C İşlev Tanımları
 Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametreler ve dönüş türü adını belirtir. Bir işlev tanımı ayrıca, yerel değişkenleri ve işlev yaptığı belirlemek deyimleri bildirimleri ile işlev gövdesi içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
- *Çeviri birim*:  
- *Dış bildirimi*  
+ *translation-unit*:  
+ *external-declaration*  
   
- *Çeviri birim dış-bildirimi*  
+ *translation-unit external-declaration*  
   
- *Harici bildirim*: /\* yalnızca dış (dosya) kapsamında izin\*/  
- *işlev tanımı*  
+ *Harici bildirim*: /\* yalnızca dış (dosya) kapsamında izin \*/  
+ *function-definition*  
   
  `declaration`  
   
- *işlev tanımı*: /\* burada Bildirimcisi olduğu işlevi bildirimcisi\*/  
+ *işlev tanımı*: /\* burada Bildirimcisi olduğu işlevi bildirimcisi \*/  
  *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
   
- /\**özniteliği seq* Microsoft Specific * /  
+ /\* *öznitelik seq* Microsoft Specific * /  
   
  Prototip Parametreler şunlardır:  
   
@@ -67,40 +67,40 @@ Bir işlev tanımı işlevi, türü ve sayısı almak için bekliyor parametrele
  *bildirim listesi bildirimi*  
   
  `declarator`:  
- *İşaretçi* kabul*doğrudan bildirimcisi*  
+ *pointer* opt*direct-declarator*  
   
- *doğrudan bildirimcisi*: /\* işlevi bildirimcisi\*/  
- *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi      \*/  
+ *doğrudan bildirimcisi*: /\* işlevi bildirimcisi \*/  
+ *doğrudan bildirimcisi***(***parametre türü listesi***)** / * yeni stil bildirimcisi       \*/  
   
- *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul**)** / * Kullanımdan kalktı stili bildirimcisi    \*/  
+ *doğrudan bildirimcisi***(***tanımlayıcı listesi* kabul**)** / * Kullanımdan kalktı stili bildirimcisi     \*/  
   
  Parametre listesi tanımında bu söz dizimini kullanır:  
   
- *parametre türü listesi*: /\* parametre listesi\*/  
- *parametre listesi*  
+ *parametre türü listesi*: /\* parametre listesi \*/  
+ *parameter-list*  
   
- *parametre listesi* **,...**  
+ *parameter-list* **, ...**  
   
- *parametre listesi*:  
- *parametre bildirimi*  
+ *parameter-list*:  
+ *parameter-declaration*  
   
- *parametre listesi* **,***parametre bildirimi*   
+ *parameter-list* **,**  *parameter-declaration*  
   
- *parametre bildirimi*:  
+ *parameter-declaration*:  
  *bildirim tanımlayıcıları bildirimcisi*  
   
  *bildirim tanımlayıcıları soyut bildirimcisi* iptal et  
   
  Eski stil işlev tanımı parametre listesinde bu söz dizimini kullanır:  
   
- *tanımlayıcı listesi*: /\* kullanılan eski stil işlev tanımları ve bildirimleri\*/  
- *tanımlayıcı*  
+ *tanımlayıcı listesi*: /\* kullanılan eski stil işlev tanımları ve bildirimleri \*/  
+ *identifier*  
   
- *tanımlayıcı listesi* **,***tanımlayıcısı*   
+ *identifier-list* **,**  *identifier*  
   
  İşlev gövdesi sözdizimi aşağıdaki gibidir:  
   
- *Bileşik deyim*: /\* işlev gövdesi\*/  
+ *Bileşik deyim*: /\* işlev gövdesi \*/  
  **{**`declaration`-*listesi* kabul*deyimi listesi* kabul**}**   
   
  Bir işlev bildirimi değiştirebilirsiniz yalnızca depolama sınıfı tanımlayıcıları olan `extern` ve **statik**. `extern` Belirticisi güveninin işlevi diğer dosyalarından başvurulabilir; diğer bir deyişle, işlev adı için bağlayıcı dışarı aktarılır. **Statik** belirticisi güveninin işlevi diğer dosyalarından başvurulamaz; diğer bir deyişle, ad bağlayıcı tarafından verilebilir. Depolama sınıfı işlevi tanımında görünürse `extern` varsayılır. Herhangi bir durumda, işlevi her zaman tanımı noktasından dosyanın sonuna görülebilir.  

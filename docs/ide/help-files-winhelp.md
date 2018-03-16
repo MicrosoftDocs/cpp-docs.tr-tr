@@ -20,19 +20,19 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a5698f7001512c5a4f8c45b5c787f35c9ce0ca6c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="help-files-winhelp"></a>Yardım Dosyaları (WinHelp)
 Yardım desteği WinHelp türünü seçerek uygulamanızı eklediğinizde, aşağıdaki dosyalar oluşturulur **bağlama duyarlı Yardım** onay kutusunu ve ardından seçerek **WinHelp biçimi** içinde[Gelişmiş Özellikler](../mfc/reference/advanced-features-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.  
   
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|  
 |---------------|------------------------|--------------------------------|-----------------|  
-|*PROJNAME*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Yardım Derleyici tarafından programınız veya denetimin Yardım dosyası oluşturmak için kullanılan Yardım proje dosyası.|  
+|*Projname*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Yardım Derleyici tarafından programınız veya denetimin Yardım dosyası oluşturmak için kullanılan Yardım proje dosyası.|  
 |*PROJNAME*.rtf|*PROJNAME*\hlp|Yardım dosyaları|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|  
-|*PROJNAME*.cnt|*PROJNAME*\hlp|Yardım dosyaları|Yapısını sağlar **içeriği** Windows Yardım penceresinde.|  
+|*Projname*.cnt|*PROJNAME*\hlp|Yardım dosyaları|Yapısını sağlar **içeriği** Windows Yardım penceresinde.|  
 |Makehelp.bat|*PROJNAME*|Kaynak dosyaları|Projesi derlendiğinde Yardım Projeyi derlemek için sistem tarafından kullanılır.|  
 |Print.rtf|*PROJNAME*\hlp|Yardım dosyaları|Projenizi yazdırma desteği (varsayılan) içeriyorsa oluşturulur. Yazdırma komutlarını ve iletişim kutuları açıklar.|  
 |*.bmp|*PROJNAME*\hlp|Kaynak Dosyalar|Görüntüler için farklı oluşturulan Yardım dosyası konuları içerir.|  
@@ -41,7 +41,7 @@ Yardım desteği WinHelp türünü seçerek uygulamanızı eklediğinizde, aşa�
   
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|  
 |---------------|------------------------|--------------------------------|-----------------|  
-|*PROJNAME*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Yardım Derleyici tarafından programınızı veya denetimin Yardım dosyası oluşturmak için kullanılan proje dosyası.|  
+|*Projname*.hpj|*PROJNAME*\hlp|Kaynak dosyaları|Yardım Derleyici tarafından programınızı veya denetimin Yardım dosyası oluşturmak için kullanılan proje dosyası.|  
 |*PROJNAME*.rtf|*PROJNAME*\hlp|Proje|Düzenleyebileceğiniz şablonu konuları ve .hpj dosyanızı özelleştirme hakkında bilgi içerir.|  
 |Makehelp.bat|*PROJNAME*|Kaynak dosyaları|Projesi derlendiğinde Yardım Projeyi derlemek için sistem tarafından kullanılır.|  
 |Bullet.bmp|*PROJNAME*|Kaynak Dosyalar|Madde işaretli listeler göstermek için standart dosya Yardımı tarafından kullanılır.|  

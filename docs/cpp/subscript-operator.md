@@ -25,10 +25,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1fbcb3657af276cdfc9aa05d461c090b76f6de0b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="subscript-operator"></a>Alt simge işleci:
 ## <a name="syntax"></a>Sözdizimi  
@@ -51,9 +51,9 @@ cout << nArray[2] << endl;            // prints "2"
 cout << 2[nArray] << endl;            // prints "2"  
 ```  
   
- Önceki örnekte, ifade `nArray[2]` aynıdır `2[nArray]`. Bunun nedeni, bir alt simge ifadesi sonucudur *e1***[** *e2* **]** tarafından verilir:  
+ Önceki örnekte, ifade `nArray[2]` aynıdır `2[nArray]`. Bunun nedeni, bir alt simge ifadesi sonucudur *e1 *** [** *e2* **]** tarafından verilir:  
   
- **\*((** *e2* **)**  *+*  **(***e1***))**  
+ **\*( (** *e2* **)** *+* **(***e1***) )**  
   
  İfadeyle verdiğini adresi değil *e2* adresinden bayt *e1*. Bunun yerine, adres dizisindeki sonraki nesnesini verecek şekilde ölçeklendirilir *e2*. Örneğin:  
   
@@ -67,7 +67,7 @@ double aDbl[2];
   
  *İfade1* **[***İfade2***] [***deyim3***]**...  
   
- Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi *İfade1***[***İfade2***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi türü son işaretçi değeri adresleri sürece uygulanır.  
+ Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi * İfade1***[***İfade2 ***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi türü son işaretçi değeri adresleri sürece uygulanır.  
   
  Birden çok alt simgeler ifadelerle çok boyutlu diziler öğelerine bakın. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir. Aşağıdaki örnek bildirir ve basit iki boyutlu bir dizi karakter başlatır:  
   

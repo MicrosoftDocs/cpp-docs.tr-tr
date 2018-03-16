@@ -26,10 +26,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a4385515becbb32b256b2bf6562af941371ef47e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="storage-class"></a>Depolama Sınıfı
 Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `extern` veya **statik** depolama sınıfı.  
@@ -38,7 +38,7 @@ Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `ext
  *işlev tanımı*:  
  *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
   
- /\**özniteliği seq* Microsoft Specific * /  
+ /\* *öznitelik seq* Microsoft Specific * /  
   
  *bildirim tanımlayıcıları*:  
  *depolama sınıfı tanımlayıcısı bildirim tanımlayıcıları* iptal et  
@@ -47,7 +47,7 @@ Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `ext
   
  *tür niteleyicisi bildirim tanımlayıcıları* iptal et  
   
- *depolama sınıfı tanımlayıcısı*: /\* işlev tanımları\*/  
+ *depolama sınıfı tanımlayıcısı*: /\* işlev tanımları \*/  
  **extern**  
   
  **static**  
@@ -60,7 +60,7 @@ Depolama sınıfı tanımlayıcısı işlevi tanımında işlev ya da verir `ext
   
  Bir işlev **statik** depolama sınıfı tanımlanmış yalnızca kaynak dosyasında görülebilir. Diğer tüm işlevler, ister açıkça ister örtük olarak `extern` depolama sınıfı verilsin, programdaki tüm kaynak dosyalarında görülür. Varsa **statik** depolama sınıfı istenen, bu işlevin bildirimi (varsa) ilk örneğini ve işlevinin tanımı bildirilmelidir.  
   
- **Microsoft özel**  
+ **Microsoft Specific**  
   
  Microsoft uzantıları etkinleştirildiğinde, bir işlevi olarak bildirilen depolama sınıfı (veya ile `extern` depolama sınıfı) verilen **statik** işlev tanımı aynı kaynak dosyasına açıksa ve durumdaysa depolama sınıfı tanımını açıkça belirtir **statik** depolama sınıfı.  
   

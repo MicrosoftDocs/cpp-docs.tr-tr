@@ -21,10 +21,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aa6285504a194d909dec7a446437ca9f584272a9
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="overview-of-declarations"></a>Bildirimlere Genel Bakış
 "Bildirim" yorumunu ve tanımlayıcıları Kümesi özniteliklerini belirtir. Ayrıca nesne veya tanımlayıcısıyla adlı işlev için ayrılmış depolama neden olan bir bildirimi "tanımı." olarak adlandırılır Değişkenler, İşlevler ve türler için C bildirimleri bu sözdizimine sahip:  
@@ -33,7 +33,7 @@ ms.lasthandoff: 12/21/2017
  `declaration`:  
  *bildirim tanımlayıcıları* *özniteliği seq*kabul*init bildirimcisi listesi*kabul**;**  
   
- /\**özniteliği seq*opt Microsoft özeldir * /  
+ /\* *öznitelik seq*opt Microsoft özeldir * /  
   
  *bildirim tanımlayıcıları*:  
  *depolama sınıfı tanımlayıcısı bildirim tanımlayıcıları*iptal et  
@@ -42,12 +42,12 @@ ms.lasthandoff: 12/21/2017
   
  *tür niteleyicisi bildirim tanımlayıcıları*iptal et  
   
- *Init bildirimcisi listesi*:  
- *Init bildirimcisi*  
+ *init-declarator-list*:  
+ *init-declarator*  
   
  *Init bildirimcisi listesi* , *init bildirimcisi*  
   
- *Init bildirimcisi*:  
+ *init-declarator*:  
  *bildirimcisi*  
   
  *bildirimcisi***=***Başlatıcı*   

@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a0c85ecf0752ff34bf5b61e42309360f2bc4d448
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="function-body"></a>İşlev Gövdesi
 "İşlev gövdesi" işlevi ne yapacağını belirtin deyimleri içeren bileşik bir ifadedir.  
@@ -35,9 +35,9 @@ ms.lasthandoff: 12/21/2017
  *işlev tanımı*:  
  *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
   
- /\**özniteliği seq* Microsoft Specific * /  
+ /\* *öznitelik seq* Microsoft Specific * /  
   
- *Bileşik deyim*: /\* işlev gövdesi\*/  
+ *Bileşik deyim*: /\* işlev gövdesi \*/  
  **{***bildirimi listesi* kabul*deyimi listesi* kabul**}**   
   
  İşlev gövdesi içinde "yerel değişkenler," bildirilen değişkenleri **otomatik** depolama sınıfı aksi belirtilmediği sürece. İşlevi çağrıldığında, depolama için yerel değişkenleri oluşturulur ve yerel başlatmaları gerçekleştirilir. Yürütme denetimi geçirir ilk ifadesine *bileşik deyim* ve kadar devam eder bir `return` deyimi yürütüldüğünde veya işlev gövdesi sonu ile karşılaşıldı. Denetim ardından işlevi çağrıldı noktasına döndürür.  

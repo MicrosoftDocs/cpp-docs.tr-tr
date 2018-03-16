@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 253c3b389bd0411e6b5096e914b6a844c8f40805
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="segment"></a>SEGMENT
 Adlı bir programı segmenti tanımlar *adı* segment özniteliklere sahip  
@@ -50,7 +50,7 @@ name ENDS
 |**DWORD**|Sonraki kullanılabilir çift word adresi (çift sözcük başına 4 bayt).|  
 |**PARA**|Sonraki kullanılabilir paragraf adresi (paragraf başına 16 bayt).|  
 |**PAGE**|Sonraki kullanılabilir sayfa adresi (sayfa başına 256 bayt).|  
-|**ALIGN**(*n*)|Sonraki kullanılabilir  *n* th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
+|**ALIGN**(*n*)|Sonraki kullanılabilir *n*th bayt adresi. Daha fazla bilgi için Açıklamalar bölümüne bakın.|  
   
  Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.  
   

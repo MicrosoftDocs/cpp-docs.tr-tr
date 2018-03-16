@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d21ecfb649748c9bf7e190d4857ce93ebee61dd1
-ms.sourcegitcommit: 185e11ab93af56ffc650fe42fb5ccdf1683e3847
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş işlevlerin bir işlev bağımsız değişken sayısı ve türleri bağlı olarak farklı anlamları sağlamak etkinleştirin. 
@@ -44,7 +44,7 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 |Üç noktanın olması veya olmaması|Evet|  
 |`typedef` adlarının kullanımı|Hayır|  
 |Belirtilmemiş dizi sınırları|Hayır|  
-|**const** veya`volatile`|Evet, tüm işlevi uygulandığında|
+|**const** veya `volatile`|Evet, tüm işlevi uygulandığında|
 |[ref-qualifier](#ref-qualifier)|Evet|  
   
 ## <a name="example"></a>Örnek  
@@ -188,7 +188,7 @@ F1 = Add( 3, 6 );
   
  Bu iki kesişimi boş olduğunu unutmayın. Bu nedenle, derleyici bir hata iletisi oluşturur.  
   
- Bağımsız değişken eşleştirme, bir işlev için * n * varsayılan bağımsız değişkenler olarak değerlendirilir * n *+ 1 ayrı işlevleri, her biri farklı sayıda bağımsız değişken.  
+ Bağımsız değişken eşleştirme, bir işlev için *n* varsayılan bağımsız değişkenler olarak değerlendirilir *n*+ 1 ayrı işlevleri, her biri farklı sayıda bağımsız değişken.  
   
  Joker karakter üç nokta (...) görür; herhangi bir gerçek bağımsız değişken eşleşir. Aşırı yüklenmiş işlevi kümelerinizi onaylamadığından çok dikkatli tasarım değil, bu çok sayıda belirsiz kümelerine neden olabilir.  
   
@@ -261,32 +261,32 @@ volatile Over&
   
 |Türünden Dönüştür|Türüne dönüştürün|  
 |-----------------------|---------------------|  
-|*tür adı*|*tür adı***&**|  
-|*tür adı***&**|*tür adı*|  
+|*tür adı*|*tür adı* **&**|  
+|*tür adı* **&**|*tür adı*|  
 |*tür adı* **]**|*tür adı\**|  
-|*tür adı* **(** *bağımsız değişken listesi* **)**|**(** * \*türü adı* **) (** *bağımsız değişken listesi* **)**|  
+|*tür adı* **(** *bağımsız değişken listesi* **)**|**(**  *\*türü adı* **) (** *bağımsız değişken listesi* **)**|  
 |*tür adı*|**const** *türü adı*|  
-|*tür adı*|`volatile`*türü adı*|  
+|*tür adı*|`volatile` *tür adı*|  
 |*tür adı\**|**const** *türü adı\**|  
-|*tür adı\**|`volatile`*türü adı\**|  
+|*tür adı\**|`volatile` *tür adı\**|  
   
  Dönüşümler girişimine dizisi aşağıdaki gibidir:  
   
 1.  Tam eşleşme. Hangi işlev çağrılır ve işlev prototipi türleri bildirilen türler arasında tam bir eşleşme her zaman en iyi eşleşme olan. Önemsiz dönüşümleri dizilerini tam eşleşme sınıflandırılır. Ancak, bu dönüşümleri yapmayın sıraları Dönüştür sıraları iyi değerlendirilir:  
   
-    -   İşaretçi işaretçisine gelen **const** (`type` ** \* ** için **const** `type` ** \* ** ).  
+    -   İşaretçi işaretçisine gelen **const** (`type`  **\***  için **const** `type`  **\***  ).  
   
-    -   İşaretçi işaretçisine gelen `volatile` (`type` ** \* ** için `volatile` `type` ** \* **).  
+    -   İşaretçi işaretçisine gelen `volatile` (`type`  **\***  için `volatile` `type`  **\*** ).  
   
-    -   Başvuru için başvurusundan **const** (`type` ** & ** için **const** `type` ** & **).  
+    -   Başvuru için başvurusundan **const** (`type`  **&**  için **const** `type`  **&** ).  
   
-    -   Başvuru için başvurusundan `volatile` (`type` ** & ** için `volatile` `type` ** & **).  
+    -   Başvuru için başvurusundan `volatile` (`type`  **&**  için `volatile` `type`  **&** ).  
   
 2.  Promosyon kullanarak eşleşir. Yalnızca tamsayı yükseltmeleri, gelen dönüşümleri içeren tam bir eşleşme olarak sınıflandırılan değil dizisi **float** için **çift**, ve önemsiz dönüşümleri promosyonlar kullanarak bir eşleşme olarak sınıflandırılmış. Eşleşen ne kadar iyi bir tam bir eşleşme olarak promosyonlar kullanarak bir eşleşme standart dönüşümler kullanarak eşleşmeden daha iyi olsa da.  
   
 3.  Standart dönüşümler kullanarak eşleşir. Tam bir eşleşme veya yalnızca standart dönüşümler ve önemsiz dönüşümleri içeren promosyonlar kullanarak bir eşleşme olarak sınıflandırılan değil dizisi standart dönüşümler kullanarak bir eşleşme olarak sınıflandırılır. Bu kategoride aşağıdaki kurallar uygulanır:  
   
-    -   Bir işaretçi dönüştürmeye türetilmiş bir sınıf, doğrudan veya dolaylı bir taban sınıfı için bir işaretçi dönüştürme için tercih **void \* ** veya **const void \* **.  
+    -   Bir işaretçi dönüştürmeye türetilmiş bir sınıf, doğrudan veya dolaylı bir taban sınıfı için bir işaretçi dönüştürme için tercih **void \***  veya **const void \*** .  
   
     -   Bir işaretçi bir dönüştürme için bir taban sınıfı için bir işaretçi türetilmiş bir sınıf için temel sınıfı için doğrudan bir temel sınıf daha yakındır daha iyi bir eşleşme üretir. Aşağıdaki çizimde gösterildiği gibi sınıf hiyerarşisi olduğunu varsayın.  
   
@@ -301,7 +301,7 @@ Tercih edilen dönüşümleri gösteren grafik
   
  Önceki kural türetme yalnızca belirli bir yol geçerlidir. Aşağıdaki çizimde gösterilen grafik göz önünde bulundurun.  
   
- ![Çoklu & #45; tercih edilen dönüşümleri gösterir devralma](../cpp/media/vc391t2.gif "vc391T2")  
+ ![Çoklu&#45;tercih edilen dönüşümleri gösterir devralma](../cpp/media/vc391t2.gif "vc391T2")  
 Tercih edilen dönüşümleri gösteren birden çok devralma grafiği  
   
  Türüne dönüştürme `C*` yazmak için `B*` türüne dönüştürme için tercih edilir `C*` yazmak için `A*`. Aynı yolda oldukları nedeni ve `B*` daha yakındır. Ancak, türüne dönüştürme `C*` yazmak için `D*` türüne dönüştürme için tercih değil `A*`; tercih yoktur dönüşümleri farklı yollar izledikleri için.  
@@ -407,7 +407,7 @@ obj.name
   
  Sol işleneni `->*` ve `.*` (işaretçiden üyeye) işleçleri aynı şekilde ele `.` ve `->` bağımsız değişken eşleştirme göre (üye seçim) işleçleri.  
 
-## <a name="ref-qualifiers"></a>Ref niteleyicileri üzerinde üye işlevleri  
+## <a name="ref-qualifiers"></a> Ref niteleyicileri üzerinde üye işlevleri  
 Ref niteleyicileri olanaklı hale getirir olup nesne gösterdiği temel alarak üye işlevi aşırı yüklemeyi `this` bir rvalue ya da bir lvalue.  Bu özellik gereksiz kopyalama işlemleri senaryolarda önlemek için işaretçi veri erişebilmesi için değil seçtiğiniz kullanılabilir. Örneğin, sınıf varsayın **C** kurucusu bazı veriler başlatır ve bu verilerin bir kopyasını üye işlevinde döndürür **get_data()**. Türünde bir nesne, **C** derleyici seçecektir sonra yaklaşık yok edilmesi için bir rvalue olan **get_data() & &** kopyalamak yerine aşırı yükleme, hangi verileri taşır. 
 
 ```cpp
@@ -461,7 +461,7 @@ int main()
   
 -   Üye işlevleri yalnızca tek bir statik olmanın ve diğer statik olmayan temel alarak aşırı yüklenemez.  
   
--   `typedef`bildirimleri yeni türleri tanımlamaz; Bunlar, mevcut türleri için eş anlamlı sözcükleri tanıtır. Tekrar yüklemesi mekanizması etkilemez. Aşağıdaki kod göz önünde bulundurun:  
+-   `typedef` bildirimleri yeni türleri tanımlamaz; Bunlar, mevcut türleri için eş anlamlı sözcükleri tanıtır. Tekrar yüklemesi mekanizması etkilemez. Aşağıdaki kod göz önünde bulundurun:  
   
     ```  
     typedef char * PSTR;  
@@ -470,7 +470,7 @@ int main()
     void Print( PSTR szToPrint );  
     ```  
   
-     Önceki iki işlevleri aynı bağımsız değişken listeleri vardır. `PSTR`türü için eş anlamlı olduğundan **char \* **. Üye kapsamda bu kodu bir hata oluşturur.  
+     Önceki iki işlevleri aynı bağımsız değişken listeleri vardır. `PSTR` türü için eş anlamlı olduğundan **char \*** . Üye kapsamda bu kodu bir hata oluşturur.  
   
 -   Numaralandırılmış türler farklı türler ve Aşırı yüklenen işlevler arasında ayrım yapmak için kullanılır.  
   

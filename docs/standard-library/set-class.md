@@ -102,10 +102,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6c2eba982b48181dee284bed63d3bab978d624fc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="set-class"></a>set Sınıfı
 C++ Standart Kitaplığı kapsayıcı sınıfı kümesi depolanması ve alınması bulunan öğeleri değerlerini benzersiz ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hizmet veren bir koleksiyon verileri için kullanılır. Bir kümedeki bir öğenin değeri doğrudan değiştirilemez. Bunun yerine, eski değerleri silmeniz ve yeni değerlere sahip öğeler eklemeniz gerekir.  

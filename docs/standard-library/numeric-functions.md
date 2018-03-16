@@ -22,10 +22,10 @@ helpviewer_keywords:
 - std::iota [C++]
 - std::partial_sum [C++]
 ms.openlocfilehash: b0437225718e402ac2c8b9a22af5b4825128cbd6
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ltnumericgt-functions"></a>&lt;Sayısal&gt; işlevleri
 ||||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 02/23/2018
 |[accumulate](#accumulate)|[adjacent_difference](#adjacent_difference)|[inner_product](#inner_product)|  
 |[iota](#iota)|[partial_sum](#partial_sum)|  
   
-##  <a name="accumulate">accumulate</a>  
+##  <a name="accumulate"></a>  accumulate  
  Tüm öğelerin toplamı, art arda kısmi toplamlarını bilgi işlem tarafından bazı başlangıç değeri de dahil olmak üzere belirli bir aralık içinde hesaplar veya benzer şekilde toplam dışında belirtilen bir ikili işlem kullanılarak elde edilen art arda kısmi sonuçlar sonucunu hesaplar.  
   
 ```  

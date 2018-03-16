@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 324fa54362098e2b7ffae6fdf368bf590846f9c1
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 C++ dili temel türleri arasında dönüştürmeler tanımlar. İşaretçi, başvuru, dönüştürmelerde de tanımlar ve işaretçi-üye türetilmiş tür. Bu dönüşümleri "standart dönüşümler." olarak adlandırılır (Türleri, standart türler ve türetilmiş türler hakkında daha fazla bilgi için bkz: [türleri](http://msdn.microsoft.com/en-us/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
@@ -81,11 +81,11 @@ long_num2 = int_num * long_num2;
   
  Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normalde aynı sonuçları verir. Ancak, yükseltilen nesne aşağıdakilerden biri ise farklı sonuçlar üretebilirler:  
   
--   Bir işleneni  **/** , `%`, `/=`, `%=`,  **<** ,  **\< =** ,  **>** , veya**>=**  
+-   Bir işleneni  **/** , `%`, `/=`, `%=`,  **<** ,  **\< =** ,  **>** , veya **>=**  
   
      Bu işleçler sonucu belirlemek için işareti kullanırlar. Bu nedenle, değer korumalı ve işaret korumalı yükseltmeler bu işleçlere uygulandığında farklı sonuçlar verir.  
   
--   Sol işleneni  **>>**  veya**>>=**  
+-   Sol işleneni  **>>**  veya **>>=**  
   
      Bu işleçler, kaydırma işlemi yapılırken işaretli ve işaretsiz miktarları farklı şekilde ele alırlar. İşaretli miktarlar için, bir miktarı sağa kaydırmak işaret bitinin boşaltılmış bit konumlarına dağıtılmasına neden olur. İşaretsiz miktarlar için, boşaltılmış bit konumları sıfırla dolguludur.  
   
@@ -199,7 +199,7 @@ int main() {
   
  Bir taban sınıf erişilebilir olup türetme içinde kullanılan devralma tür bağlıdır. Aşağıdaki çizimde gösterilen devralma göz önünde bulundurun.  
   
- ![&#45;Devralma Grafiği gösteren temel; sınıfı erişilebilirlik](../cpp/media/vc38xa1.gif "vc38XA1")  
+ ![Temel gösteren Devralma Grafiği&#45;sınıf erişilebilirlik](../cpp/media/vc38xa1.gif "vc38XA1")  
 Devralma Grafiği için temel sınıf erişilebilirlik çizimi  
   
  Aşağıdaki tabloda görüldüğü durum için temel sınıf erişilebilirlik gösterir.  

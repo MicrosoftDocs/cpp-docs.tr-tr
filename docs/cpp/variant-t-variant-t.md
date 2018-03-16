@@ -23,13 +23,13 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: cd85a54e9f73352894f6575051fe1ea8be0698fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
-**Microsoft özel**  
+**Microsoft Specific**  
   
  Oluşturan bir `_variant_t` nesnesi.  
   
@@ -155,7 +155,7 @@ _variant_t(
  `fCopy`  
  False ise, sağlanan **değişken** nesne yeni bağlı `_variant_t` tarafından yeni bir kopya yapmadan nesne **VariantCopy**.  
   
- *ISRC, sSrc*  
+ *ISrc, sSrc*  
  Yeni içine kopyalanacak bir tamsayı değeri `_variant_t` nesnesi.  
   
  `vtSrc`  
@@ -213,39 +213,39 @@ _variant_t(
   
 -   **_variant_t ()** boş bir yapıları `_variant_t` nesnesi `VT_EMPTY`.  
   
--   **_variant_t (değişken &***varSrc***)** oluşturan bir `_variant_t` bir kopyasını nesnesinden **değişken** nesnesi. Değişken türü korunur.  
+-   **_variant_t (değişken &***varSrc***)** oluşturan bir `_variant_t` bir kopyasını nesnesinden **değişken** nesnesi.     Değişken türü korunur.  
   
--   **_variant_t (değişken\****pVarSrc***)** oluşturan bir `_variant_t` bir kopyasını nesnesinden **değişken** nesnesi. Değişken türü korunur.  
+-   **_variant_t( VARIANT\***  *pVarSrc*  **)** Constructs a `_variant_t` object from a copy of the **VARIANT** object. Değişken türü korunur.  
   
--   **_variant_t (_variant_t &***var_t_Src***)** oluşturan bir `_variant_t` başka bir nesne `_variant_t` nesne. Değişken türü korunur.  
+-   **_variant_t( _variant_t&**  *var_t_Src*  **)** Constructs a `_variant_t` object from another `_variant_t` object. Değişken türü korunur.  
   
--   **_variant_t (değişken &***varSrc* **, bool**`fCopy`**)** oluşturan bir `_variant_t` varolan bir nesne  **DEĞİŞKEN** nesnesi. Varsa `fCopy` olan **false**, **değişken** kopyasını yapmadan nesne yeni nesneye eklenir.  
+-   **_variant_t (değişken &***varSrc* **, bool**`fCopy`**)** oluşturan bir `_variant_t` varolan bir nesne  **DEĞİŞKEN** nesnesi.       Varsa `fCopy` olan **false**, **değişken** kopyasını yapmadan nesne yeni nesneye eklenir.  
   
--   **_variant_t (kısa***sSrc* **, VARTYPE**`vtSrc`**VT_I2 =)** oluşturan bir `_variant_t` nesne türü `VT_I2` veya `VT_BOOL` gelen bir **kısa** tamsayı değeri. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
+-   **_variant_t( short**  *sSrc* **, VARTYPE**  `vtSrc`  **= VT_I2 )** Constructs a `_variant_t` object of type `VT_I2` or `VT_BOOL` from a **short** integer value. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
   
--   **_variant_t (uzun** `lSrc` **, VARTYPE**`vtSrc`**VT_I4 =)** oluşturan bir `_variant_t` nesne türü `VT_I4`, `VT_BOOL`, veya `VT_ERROR` gelen bir **uzun** tamsayı değeri. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
+-   **_variant_t( long**  `lSrc` **, VARTYPE**  `vtSrc`  **= VT_I4 )** Constructs a `_variant_t` object of type `VT_I4`, `VT_BOOL`, or `VT_ERROR` from a **long** integer value. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
   
--   **_variant_t (float**`fltSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_R4` gelen bir **float** sayısal değer.  
+-   **_variant_t (float**`fltSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_R4` gelen bir **float** sayısal değer.      
   
--   **_variant_t (çift** `dblSrc` **, VARTYPE**`vtSrc`**VT_R8 =)** oluşturan bir `_variant_t` nesne türü `VT_R8` veya `VT_DATE` bir gelen**çift** sayısal değer. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
+-   **_variant_t( double**  `dblSrc` **, VARTYPE**  `vtSrc`  **= VT_R8 )** Constructs a `_variant_t` object of type `VT_R8` or `VT_DATE` from a **double** numerical value. Diğer **VARTYPE** sonuçlanan bir `E_INVALIDARG` hata.  
   
--   **_variant_t (CY &**`cySrc`**)** oluşturan bir `_variant_t` nesne türü `VT_CY` gelen bir **CY** nesnesi.  
+-   **_variant_t (CY &**`cySrc`**)** oluşturan bir `_variant_t` nesne türü `VT_CY` gelen bir **CY** nesnesi.      
   
--   **_variant_t (_bstr_t &**`bstrSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_BSTR` gelen bir `_bstr_t` nesnesi. Yeni bir `BSTR` ayrılır.  
+-   **_variant_t( _bstr_t&**  `bstrSrc`  **)** Constructs a `_variant_t` object of type `VT_BSTR` from a `_bstr_t` object. Yeni bir `BSTR` ayrılır.  
   
--   **_variant_t (wchar_t \***  *wstrSrc***)** oluşturan bir `_variant_t` nesne türü `VT_BSTR` bir Unicode dizeden. Yeni bir `BSTR` ayrılır.  
+-   **_variant_t( wchar_t \*** *wstrSrc*  **)** Constructs a `_variant_t` object of type `VT_BSTR` from a Unicode string. Yeni bir `BSTR` ayrılır.  
   
--   **_variant_t (char\***`strSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_BSTR` bir dizeden. Yeni bir `BSTR` ayrılır.  
+-   **_variant_t( char\***  `strSrc`  **)** Constructs a `_variant_t` object of type `VT_BSTR` from a string. Yeni bir `BSTR` ayrılır.  
   
--   **_variant_t (bool**`bSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_BOOL` gelen bir `bool` değeri.  
+-   **_variant_t (bool**`bSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_BOOL` gelen bir `bool` değeri.      
   
--   **_variant_t (IUnknown\***  `pIUknownSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü **VT_UNKNOWN**  gelen COM arabirimi işaretçisi. Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan **sürüm** , gerçekleşeceği zaman `_variant_t` nesne yok. Çağrı size olan **sürüm** sağlanan arabirim işaretçisi üzerinde. Varsa `fAddRef` olan **false**, sağlanan arabirim işaretçisi sahipliğini bu oluşturucuyu alır; çağırmayın **sürüm** sağlanan arabirim işaretçisi üzerinde.  
+-   **_variant_t (IUnknown\***  `pIUknownSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü **VT_UNKNOWN** gelen COM arabirimi işaretçisi.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan **sürüm** , gerçekleşeceği zaman `_variant_t` nesne yok. Çağrı size olan **sürüm** sağlanan arabirim işaretçisi üzerinde. Varsa `fAddRef` olan **false**, sağlanan arabirim işaretçisi sahipliğini bu oluşturucuyu alır; çağırmayın **sürüm** sağlanan arabirim işaretçisi üzerinde.  
   
--   **_variant_t (IDispatch\***  `pDispSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü **VT_DISPATCH**  gelen COM arabirimi işaretçisi. Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan **sürüm** , gerçekleşeceği zaman `_variant_t` nesne yok. Çağrı size olan **sürüm** sağlanan arabirim işaretçisi üzerinde. Varsa **fAddRef** olan false, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın **sürüm** sağlanan arabirim işaretçisi üzerinde.  
+-   **_variant_t (IDispatch\***  `pDispSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü **VT_DISPATCH** gelen COM arabirimi işaretçisi.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan **sürüm** , gerçekleşeceği zaman `_variant_t` nesne yok. Çağrı size olan **sürüm** sağlanan arabirim işaretçisi üzerinde. Varsa **fAddRef** olan false, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın **sürüm** sağlanan arabirim işaretçisi üzerinde.  
   
--   **_variant_t (ondalık &**`decSrc`**)** oluşturan bir `_variant_t` nesne türü **VT_DECIMAL** gelen bir **ondalık** değeri.  
+-   **_variant_t( DECIMAL&**  `decSrc`  **)** Constructs a `_variant_t` object of type **VT_DECIMAL** from a **DECIMAL** value.  
   
--   **_variant_t (bayt**`bSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_UI1` gelen bir **bayt** değeri.  
+-   **_variant_t (bayt**`bSrc`**)** oluşturan bir `_variant_t` nesne türü `VT_UI1` gelen bir **bayt** değeri.      
   
  **SON Microsoft özel**  
   

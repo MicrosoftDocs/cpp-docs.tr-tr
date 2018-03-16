@@ -13,10 +13,10 @@ ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 caps.latest.revision: 
 manager: ghogen
 ms.openlocfilehash: a5bd2224f65db9ac376d04beed52217c1a0c4ec1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 ||||  
@@ -24,7 +24,7 @@ ms.lasthandoff: 02/23/2018
 |[delete işleci](#op_delete)|[operator delete[]](#op_delete_arr)|[new işleci](#op_new)|  
 |[operator new[]](#op_new_arr)|  
   
-##  <a name="op_delete">delete işleci</a>  
+##  <a name="op_delete"></a>  delete işleci  
  Tek tek nesnelerin için depolama alanı ayırması için bir silme ifadesi tarafından çağrılan işlev.  
   
 ```
@@ -71,16 +71,16 @@ void operator delete[](void* ptr,
  Silme işlemi tarafından geçersiz işlenmek üzere, değeri olan işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk işlev tarafından çağrılır bir `delete[]` değerini işlemek için ifade `ptr` geçersiz. İşlev değiştirebilen çünkü programın işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası ile tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da, önceki bir çağrı tarafından döndürülen [new işleci &#91; &#93;](../standard-library/new-operators.md#op_new_arr) ( **size_t**). Null değeri için varsayılan davranış `ptr` hiçbir şey yapma sağlamaktır. Başka bir değer, `ptr` önceki daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Bu tür bir NULL olmayan değer için varsayılan davranış `ptr` önceki çağrı tarafından ayrılan depolama alanını geri kazanmak için. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını reclaimed gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)( **size_t**), ya da herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).  
+ İlk işlev tarafından çağrılır bir `delete[]` değerini işlemek için ifade `ptr` geçersiz. İşlev değiştirebilen çünkü programın işlevi C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası ile tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da, önceki bir çağrı tarafından döndürülen [new işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)( **size_t**). Null değeri için varsayılan davranış `ptr` hiçbir şey yapma sağlamaktır. Başka bir değer, `ptr` önceki daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Bu tür bir NULL olmayan değer için varsayılan davranış `ptr` önceki çağrı tarafından ayrılan depolama alanını geri kazanmak için. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını reclaimed gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)( **size_t**), ya da herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).  
   
  İkinci işlev yerleştirme tarafından çağrılır `delete[]` ifade ile eşleşen bir `new[]` biçiminde ifade `new[]`( **std::size_t**). Hiçbir şey yapmaz.  
   
  Üçüncü işlevi bir yerleştirme delete ifade ile eşleşen tarafından çağrılır bir `new[]` biçiminde ifade `new[]`( **std::size_t**, **const std::nothrow_t &**). Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir bu işlev imzası işleviyle tanımlayabilirsiniz. Değerini kabul etmek için gerekli davranıştır `ptr` yani null ya da işleç için önceki bir çağrı tarafından döndürülen `new[]`( **size_t**). Değerlendirmek için varsayılan davranıştır `delete[]`( `ptr`).  
   
 ### <a name="example"></a>Örnek  
-  Bkz: [new işleci &#91; &#93;](../standard-library/new-operators.md#op_new_arr) kullanımını örnekleri için `operator delete[]`.  
+  Bkz: [new işleci&#91; &#93; ](../standard-library/new-operators.md#op_new_arr) kullanımını örnekleri için `operator delete[]`.  
   
-##  <a name="op_new">new işleci</a>  
+##  <a name="op_new"></a>  new işleci  
  Yeni-ayrı ayrı nesneleri için depolama alanı ayırmak için ifadesi tarafından çağrılan işlev.  
   
 ```
@@ -205,7 +205,7 @@ void* operator new[](std::size_t count,
   
  Üçüncü işlev yerleştirme tarafından çağrılır `new[]` biçiminde ifade **yeni** ( *args*) **T**[ **N**]. Burada, *args* bir tek nesne işaretçisi oluşur. İşlevi döndürür `ptr`.  
   
- Tarafından ayrılan depolama alanını boşaltmak için `operator new[]`, çağrı [delete işleci &#91; &#93;](../standard-library/new-operators.md#op_delete_arr).  
+ Tarafından ayrılan depolama alanını boşaltmak için `operator new[]`, çağrı [delete işleci&#91;&#93;](../standard-library/new-operators.md#op_delete_arr).  
   
  Atma hakkında bilgi için veya yeni, bkz: nonthrowing davranışını [yeni ve delete işleçleri](../cpp/new-and-delete-operators.md).  
   

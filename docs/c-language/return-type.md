@@ -26,10 +26,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9768baa53e39f1b3243aba24385d592010c3d81a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="return-type"></a>Dönüş Türü
 Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve boyutunu belirler ve aşağıdaki sözdiziminde tür belirteci karşılık gelir:  
@@ -38,7 +38,7 @@ Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve
  *işlev tanımı*:  
  *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
   
- /\**özniteliği seq* Microsoft Specific * /  
+ /\* *öznitelik seq* Microsoft Specific * /  
   
  *bildirim tanımlayıcıları*:  
  *depolama sınıfı tanımlayıcısı bildirim tanımlayıcıları* iptal et  
@@ -47,7 +47,7 @@ Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve
   
  *tür niteleyicisi bildirim tanımlayıcıları* iptal et  
   
- *tür belirteci*:  
+ *type-specifier*:  
  **void**  
   
  **char**  
@@ -66,11 +66,11 @@ Bir işlevin dönüş türü işlev tarafından döndürülen değerin türü ve
   
  **İmzasız**  
   
- *yapı veya birleşim belirticisi*  
+ *struct-or-union-specifier*  
   
  *Liste belirticisi*  
   
- *TypeDef adı*  
+ *typedef-name*  
   
  *Tür belirteci* herhangi temel belirtebilirsiniz yapısı veya birleşim türü. Dahil etmezseniz *tür belirteci*, dönüş türü `int` varsayılır.  
   

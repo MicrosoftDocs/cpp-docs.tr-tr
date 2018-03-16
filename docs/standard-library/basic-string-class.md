@@ -132,10 +132,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 895b0921785e29a49bd367c2676995ba9af8e309
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 Şablon sınıfın bir nesnesi tarafından denetlenen sıraları `basic_string` standart C++ string sınıfı ve bu genellikle için dize olarak adlandırılır, ancak bunlar C++ Standart Kitaplığı kullanılan null ile sonlandırılmış C tarzı dizeler ile karıştırılmamalıdır. Standart C++ dize karşılaştırma ve birleştirme işlemlerinin, yineleyiciler, C++ Standart Kitaplığı algoritmaları ve kopyalama gibi normal türü olarak dizelerinin kullanılmasını sağlayan bir kapsayıcıdır ve bellek yönetilen sınıf ayırıcısı ile atama. Standart C++ dize null ile sonlandırılmış C stili dizeye dönüştürmek istiyorsanız, kullanmak [basic_string::c_str](#c_str) üyesi.  
@@ -234,7 +234,7 @@ class basic_string;
 |-|-|  
 |[operator+=](#op_add_eq)|Karakterleri dizeye ekler.|  
 |[operator=](#op_eq)|Yeni karakter değeri bir dize içeriğini atar.|  
-|[Operator &#91; &#93;](#op_at)|Belirtilen bir dizinden bir dizedeki karakter başvuru sağlar.|  
+|[işleci&#91;&#93;](#op_at)|Belirtilen bir dizinden bir dizedeki karakter başvuru sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bir işlev daha uzun bir sıra oluşturmak için sorular, [max_size](#max_size) öğeleri işlevi raporları uzunluğu hata türünde bir nesne atma tarafından [length_error](../standard-library/length-error-class.md).  
@@ -607,9 +607,9 @@ reference at(size_type _Off);
  Karakter dizesi parametresi dizini tarafından belirtilen konumdaki bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin sıfır dizenin ilk öğeye sahip olan ve aşağıdaki öğeleri art arda pozitif tamsayılar tarafından dizinlenen böylece bir dize uzunluğu  *n*  sahip bir  *n* th öğe sayısı ile dizine *n -* 1.  
+ Bir dizin sıfır dizenin ilk öğeye sahip olan ve aşağıdaki öğeleri art arda pozitif tamsayılar tarafından dizinlenen böylece bir dize uzunluğu *n* sahip bir *n*th öğesi dizine numarasınagöre*n -* 1.  
   
- Üye [işleci &#91; &#93;](#op_at) üye işlevi hızlıdır **adresindeki** okuma ve yazma erişimi dizesinin öğelerine sağlamak için.  
+ Üye [işleci&#91; &#93; ](#op_at) üye işlevi hızlıdır **adresindeki** okuma ve yazma erişimi dizesinin öğelerine sağlamak için.  
   
  Üye `operator[]` parametre olarak geçirilen dizini geçerli olup, ancak üye fonksiyonu denetlemez **adresindeki** yapar ve bu nedenle kullanılmalıdır geçerlilik belirli değilse. Sıfır bir dizin daha az olan geçersiz bir dizin ya da sıfırdan büyük veya eşit üye işlevine geçirilen dize boyutu **adresindeki** oluşturur bir [out_of_range sınıfı](../standard-library/out-of-range-class.md) özel durum. Geçersiz dizin geçirilen `operator[]` sonuçlarında tanımsız davranışı, ancak dizini dize uzunluğu eşit const dizeleri için geçerli bir dizin ve işleci bu dizini geçirildiğinde null-karakteri döndürür.  
   
@@ -3432,7 +3432,7 @@ reference operator[](size_type _Off);
  Karakter dizesi parametresi dizini tarafından belirtilen konumdaki bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dizin sıfır dizenin ilk öğeye sahip ve aşağıdaki öğeleri art arda pozitif tamsayılar tarafından dizinlenen böylece bir dize uzunluğu  *n*  sahip bir  *n*  TH öğesi dizine sayıyla  *n*  - 1.  
+ Bir dizin sıfır dizenin ilk öğeye sahip ve aşağıdaki öğeleri art arda pozitif tamsayılar tarafından dizinlenen böylece bir dize uzunluğu *n* sahip bir *n*th öğesi dizine sayısı ile *n* - 1.  
   
  `operator[]` üye işlevini hızlıdır [adresindeki](#at) okuma ve yazma erişimi dizesinin öğelerine sağlamak için.  
   

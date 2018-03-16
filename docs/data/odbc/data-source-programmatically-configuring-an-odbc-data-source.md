@@ -26,10 +26,10 @@ ms.workload:
 - cplusplus
 - data-storage
 ms.openlocfilehash: ac5756452a8b1c2d5dbf2f27ac7d3e1a8b069ca2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="data-source-programmatically-configuring-an-odbc-data-source"></a>Veri Kaynağı: Program Aracılığıyla ODBC Veri Kaynağını Yapılandırma
 Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları programlı olarak nasıl yapılandırabileceğiniz açıklanmaktadır. Bu size esneklik verilere erişmek için açıkça veri kaynakları adlarını belirtmek için ODBC Yöneticisi veya diğer programları kullanmak üzere kullanıcı zorlamadan sağlar.  
@@ -40,7 +40,7 @@ Bu konuda, açık veritabanı bağlantısı (ODBC) veri kaynağı adları progra
   
  Ancak, birçok DBMS programlı veri kaynağı oluşturulmasına izin verir. Bazı veri kaynakları veritabanları için dizin belirtimi korur. Diğer bir deyişle, veri kaynağı bir dizindir ve her tablo veri kaynağı içinde ayrı bir dosyada depolanır (dBASE söz konusu olduğunda, her bir .dbf dosyası tablodur). Microsoft Access ve SQL Server gibi diğer ODBC veritabanları için sürücüleri, bir veri kaynağı oluşturulmadan önce bazı belirli bir ölçüte karşılanması gerektirir. Örneğin, SQL Server ODBC sürücüsü kullanırken, bir SQL Server bilgisayarı oluşturulmuş gerekir.  
   
-##  <a name="_core_sqlconfigdatasource_example"></a>SQLConfigDataSource örneği  
+##  <a name="_core_sqlconfigdatasource_example"></a> SQLConfigDataSource örneği  
  Aşağıdaki örnek kullanır **:: SQLConfigDataSource** yeni bir Excel veri kaynağı oluşturmak için ODBC API işlevi adlı yeni bir Excel veri kaynağı:  
   
 ```  
@@ -64,10 +64,10 @@ SQLConfigDataSource(NULL,ODBC_ADD_DSN, "Excel Files (*.xls)",
   
  Bu bilgiler olmadan doğrudan kayıt defterine yazılabilir rağmen **:: SQLConfigDataSource**, bunu yapan herhangi bir uygulama verilerini korumak için Sürücü Yöneticisi'ni kullandığı geçerli tekniğe bağlı. Bu tekniği kullanan herhangi bir uygulama, daha sonraki bir düzeltmesi, farklı bir şekilde veri kaynakları hakkında tutma ODBC sürücü yöneticisini uygular kaydı bozuk. Genellikle sağlandığında bir API işlevi kullanmanız önerilir. Örneğin, kullanırsanız, kodu 32 bit 16 bit taşınabilir **:: SQLConfigDataSource** işlevi Odbc.ini dosyasına veya kayıt defteri yazdığından işlev.  
   
-##  <a name="_core_sqlconfigdatasource_parameters"></a>SQLConfigDataSource parametreleri  
+##  <a name="_core_sqlconfigdatasource_parameters"></a> SQLConfigDataSource parametreleri  
  Aşağıdaki parametreleri açıklar **:: SQLConfigDataSource** işlevi. Bilgilerin büyük bölümünü ODBC API öğesinden alınan *Programcının Başvurusu* Visual C++ sürüm 1.5 ve sonrası ile sağlanan.  
   
-###  <a name="_core_function_prototype"></a>İşlev prototipi  
+###  <a name="_core_function_prototype"></a> İşlev prototipi  
   
 ```  
 BOOL SQLConfigDataSource(HWND hwndParent,UINT fRequest, LPCSTR lpszDriver, LPCSTR lpszAttributes);  
@@ -75,7 +75,7 @@ BOOL SQLConfigDataSource(HWND hwndParent,UINT fRequest, LPCSTR lpszDriver, LPCST
   
 ### <a name="remarks"></a>Açıklamalar  
   
-####  <a name="_core_parameters_and_usage"></a>Parametreleri ve kullanım  
+####  <a name="_core_parameters_and_usage"></a> Parametreleri ve kullanım  
  *hwndParent*  
  Kullanıcı yeni veri kaynağı ile ilgili ek bilgi almak için ODBC Sürücü Yöneticisi veya belirli bir ODBC sürücüsüne oluşturur herhangi bir iletişim kutusu sahibi olarak belirtilen penceresini açın. Varsa `lpszAttributes` parametresi yeterli bilgi sağlamıyorsa, bir iletişim kutusu görüntülenir. *HwndParent* parametresi olabilir **NULL**.  
   

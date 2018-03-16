@@ -1,5 +1,5 @@
 ---
-title: "CComObjectNoLock sınıfı | Microsoft Docs"
+title: CComObjectNoLock Class | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,12 +27,12 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4a85a238d17fe279359a73d3c740406c15b92c34
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="ccomobjectnolock-class"></a>CComObjectNoLock sınıfı
+# <a name="ccomobjectnolock-class"></a>CComObjectNoLock Class
 Bu sınıf uygulayan **IUnknown** toplanmayan nesne ancak mu modülü kilit sayısı oluşturucuda artırma.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -53,7 +53,7 @@ class CComObjectNoLock : public Base
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComObjectNoLock::CComObjectNoLock](#ccomobjectnolock)|Oluşturucu.|  
-|[CComObjectNoLock:: ~ CComObjectNoLock](#dtor)|Yok Edicisi.|  
+|[CComObjectNoLock::~CComObjectNoLock](#dtor)|Yok Edicisi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -64,7 +64,7 @@ class CComObjectNoLock : public Base
 |[CComObjectNoLock::Release](#release)|Başvuru sayım nesnede azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectNoLock`benzer [CComObject](../../atl/reference/ccomobject-class.md) bunu uygulayan, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmayan nesne; ancak, `CComObjectNoLock` artırma modülü kilit oluşturucuda sayar.  
+ `CComObjectNoLock` benzer [CComObject](../../atl/reference/ccomobject-class.md) bunu uygulayan, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmayan nesne; ancak, `CComObjectNoLock` artırma modülü kilit oluşturucuda sayar.  
   
  ATL kullanan `CComObjectNoLock` sınıf oluşturucuları için dahili olarak. Genel olarak, size bu sınıf doğrudan kullanmaz.  
   
@@ -76,7 +76,7 @@ class CComObjectNoLock : public Base
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlcom.h  
   
-##  <a name="addref"></a>CComObjectNoLock::AddRef  
+##  <a name="addref"></a>  CComObjectNoLock::AddRef  
  Nesne üzerinde başvurusu sayısını artırır.  
   
 ```
@@ -86,7 +86,7 @@ STDMETHOD_(ULONG, AddRef)();
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanılama için kullanışlı veya test bir değer.  
   
-##  <a name="ccomobjectnolock"></a>CComObjectNoLock::CComObjectNoLock  
+##  <a name="ccomobjectnolock"></a>  CComObjectNoLock::CComObjectNoLock  
  Oluşturucu. Farklı [CComObject](../../atl/reference/ccomobject-class.md), modül kilit sayısı artırmaz.  
   
 ```
@@ -95,9 +95,9 @@ CComObjectNoLock(void* = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  **void\***  
- [in] Bu adlandırılmamış parametre kullanılmaz. Diğer simetrisi için mevcut **CCom***XXX*`Object`*XXX* oluşturucular.  
+ [in] Bu adlandırılmamış parametre kullanılmaz. Diğer simetrisi için mevcut **CCom *** XXX*`Object`*XXX* oluşturucular.  
   
-##  <a name="dtor"></a>CComObjectNoLock:: ~ CComObjectNoLock  
+##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock  
  Yok Edicisi.  
   
 ```
@@ -108,7 +108,7 @@ CComObjectNoLock(void* = NULL);
  Ayrılan tüm kaynakları ve çağrıları boşaltır [FinalRelease](ccomobjectrootex-class.md#finalrelease).  
 
   
-##  <a name="queryinterface"></a>CComObjectNoLock::QueryInterface  
+##  <a name="queryinterface"></a>  CComObjectNoLock::QueryInterface  
  İstenen arabirim için bir işaretçi alır.  
   
 ```
@@ -125,7 +125,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir `HRESULT` değeri.  
   
-##  <a name="release"></a>CComObjectNoLock::Release  
+##  <a name="release"></a>  CComObjectNoLock::Release  
  Başvuru sayım nesnede azaltır.  
   
 ```

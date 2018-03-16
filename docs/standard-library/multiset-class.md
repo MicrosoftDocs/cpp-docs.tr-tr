@@ -102,10 +102,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a8953fd24b62784e36f12fb96e3005e21a86bc62
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 C++ Standart multiset sınıfı, içerdiği öğelerin değerleri benzersiz olması gerekmez ve hangi göre verileri otomatik olarak sıralanır anahtar değerleri hangi verdikleri koleksiyondan verilerinin alınması ve depolama için kullanılan kitaplığı. Çoklu kümedeki bir öğenin anahtar değeri doğrudan değiştirilemez. Bunun yerine, eski değerlerin silinmesi ve yeni değerlerle sahip öğelerin eklenmesi gerekir.  

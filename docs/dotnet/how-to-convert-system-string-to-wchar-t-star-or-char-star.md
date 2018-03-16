@@ -25,10 +25,10 @@ ms.workload:
 - cplusplus
 - dotnet
 ms.openlocfilehash: c304b3d01fa8d1cdece410d70ebe437d41d72cd0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="how-to-convert-systemstring-to-wchart-or-char"></a>Nasıl yapılır: System::String'i wchar_t* veya char* olarak dönüştürme
 Kullanabileceğiniz `PtrToStringChars` dönüştürmek için Vcclr.h içinde <xref:System.String> için yerel `wchar_t *` veya `char *`.  CLR dizeleri dahili olarak Unicode olduğundan bu her zaman geniş bir Unicode dize işaretçisini döndürür. Aşağıdaki örnekte gösterildiği gibi daha sonra wide dönüştürebilirsiniz.  

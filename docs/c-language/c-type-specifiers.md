@@ -21,10 +21,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 00d91c2f790b93e70f21557d85f2cbb8216c8ed3
-ms.sourcegitcommit: 30ab99c775d99371ed22d1a46598e542012ed8c6
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="c-type-specifiers"></a>C Tür Tanımlayıcıları
 
@@ -36,10 +36,10 @@ Tür tanımlayıcıları bildirimlerden bir değişken veya işlev bildirimi tü
 &nbsp;&nbsp;**void**  
 &nbsp;&nbsp;**char**  
 &nbsp;&nbsp;**kısa**  
-&nbsp;&nbsp;**int**  
+&nbsp;&nbsp;**Int**  
 &nbsp;&nbsp;**long**  
-&nbsp;&nbsp;**kayan nokta**  
-&nbsp;&nbsp;**çift**  
+&nbsp;&nbsp;**Kayan nokta**  
+&nbsp;&nbsp;**Çift**  
 &nbsp;&nbsp;**İmzalı**  
 &nbsp;&nbsp;**İmzasız**  
 &nbsp;&nbsp;*struct-or-union-specifier*  

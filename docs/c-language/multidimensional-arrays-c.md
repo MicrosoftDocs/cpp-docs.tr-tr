@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7b3b067db3812fbe7e5db1d367635eedc5362527
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="multidimensional-arrays-c"></a>Çok Boyutlu Diziler (C)
 Bir alt simge ifadesinde de aşağıdaki gibi birden fazla alt simge olabilir:  
@@ -40,7 +40,7 @@ expression3
 ]...  
 ```  
   
- Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi *İfade1***[***İfade2***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi son işaretçi değeri adresleri (aşağıdaki örneklere bakın) yazın sürece uygulanır.  
+ Alt simge ifadeleri soldan sağa ilişkilendirilir. Soldaki alt simge ifadesi * İfade1***[***İfade2 ***]**, ilk olarak değerlendirilir. Eklemelerini sonuçları adresi *İfade1* ve *İfade2* bir işaretçi ifadesi; formları sonra *deyim3* yeni bir form için bu işaretçi ifadesi eklenir son alt simge ifadesi bir vb. eklenene kadar işaretçi ifade. İndirection işleci (**\***) son alt ifade değerlendirildikten sonra bir dizi son işaretçi değeri adresleri (aşağıdaki örneklere bakın) yazın sürece uygulanır.  
   
  Birden çok alt simgeye sahip ifadeler, "çok boyutlu dizilerin" öğelerine başvurur. Çok boyutlu bir dizi, öğeleri dizi olan bir dizidir. Örneğin, üç boyutlu bir dizinin ilk öğesi iki boyutlu bir dizidir.  
   

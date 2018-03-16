@@ -50,10 +50,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: abc205a0de58430ea70d843dd73c4bf7f0caaea0
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 Sabit sayıda bayrakları öğeler veya koşullar kümesi için koruma altında tutmada kısa bir yol sağlamak bitten oluşan bir dizi depolar nesnesi türünü açıklar. Bitset sınıfı her bit sabiti zamanı erişim sağlamak ve BITS koleksiyonunu içeren türü bitset nesnelerin işlemlerini destekler.  
@@ -120,9 +120,9 @@ class bitset
 |[operator==](#op_eq_eq)|Bir hedef testleri `bitset` belirtilen eşitliği `bitset`.|  
 |[İşleç >>](#op_rshift)|Bitleri kaydırır bir `bitset` konumlar belirtilen sayıda sağa ve yeni bir sonuç döndürür `bitset`.|  
 |[İşleç >> =](#op_rshift_eq)|Bitleri kaydırır bir `bitset` konumlar belirtilen sayıda sağa ve sonucu hedeflenen döndürür `bitset`.|  
-|[Operator &#91; &#93;](#op_at)|Belirtilen bir konumda bir bit bir başvuru döndürür bir `bitset` varsa `bitset` değiştirilebilir; Aksi takdirde, bu konumda bit değerini döndürür.|  
+|[işleci&#91;&#93;](#op_at)|Belirtilen bir konumda bir bit bir başvuru döndürür bir `bitset` varsa `bitset` değiştirilebilir; Aksi takdirde, bu konumda bit değerini döndürür.|  
 |[operator^=](#op_xor_eq)|Bit kümeleri özel ile Bitsel bir birleşimi gerçekleştirir `OR` işlemi.|  
-|[operator &#124; =](#op_or_eq')|Bit kümeleri dahil ile Bitsel bir birleşimi gerçekleştirir `OR` işlemi.|  
+|[İşleç&#124;=](#op_or_eq')|Bit kümeleri dahil ile Bitsel bir birleşimi gerçekleştirir `OR` işlemi.|  
 |[operator~](#op_dtor)|Bir hedef tüm bitleri tersine çevirir `bitset` ve sonucu döndürür.|  
   
 ## <a name="requirements"></a>Gereksinimler  
@@ -1044,7 +1044,7 @@ After bitwise exclusive OR combination,
 The parameter bitset b2 remains: ( 01011 ).  
 ```  
   
-##  <a name="op_or_eq"></a>  bitset::operator &#124; =  
+##  <a name="op_or_eq"></a>  bitset::operator&#124;=  
  Bit kümeleri dahil ile Bitsel bir birleşimi gerçekleştirir `OR` işlemi.  
   
 ```  
