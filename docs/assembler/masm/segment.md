@@ -55,7 +55,7 @@ name ENDS
  Bu parametre belirtilmezse, **PARA** varsayılan olarak kullanılır.  
   
  *combine*  
- **Ortak**, **yığın**, **ortak**, **bellek**, **ADRESİNDEKİ *** adresi*, **özel**  
+ **Ortak**, **yığın**, **ortak**, **bellek**, **ADRESİNDEKİ***adresi*, **özel**  
   
  *Kullanın*  
  **USE16**, **USE32**, **DÜZ**  

@@ -52,7 +52,7 @@ optionlist
 |**PROC**|**GİRİŞ**|**READONLY**|**NOREADONLY**|  
 |**KAPSAMLI**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|  
   
- DİLİ sözdizimi **seçeneği dil: *** x*, burada *x* C, SYSCALL, STDCALL, PASCAL, FORTRAN veya BASIC biridir.  SYSCALL, PASCAL, FORTRAN ve BASIC desteklenmez ile birlikte kullanılan [. MODEL](../../assembler/masm/dot-model.md) DÜZ.  
+ DİLİ sözdizimi **seçeneği dil:***x*, burada *x* C, SYSCALL, STDCALL, PASCAL, FORTRAN veya BASIC biridir.  SYSCALL, PASCAL, FORTRAN ve BASIC desteklenmez ile birlikte kullanılan [. MODEL](../../assembler/masm/dot-model.md) DÜZ.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
