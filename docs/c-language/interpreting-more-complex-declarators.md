@@ -20,11 +20,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67d66667d169a95ae4d62ccadd2b56a136cd0a76
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 82779e423a1958c0392aebb55d29e41bdd132cc1
+ms.sourcegitcommit: 6576d4d8a768279b4d340d036581e0f8a2974ea7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="interpreting-more-complex-declarators"></a>Daha Karmaşık Bildirimcileri Yorumlama
 Tüm bildirimcisi bir "karmaşık bildirimcisi." belirli yorumu belirtmek için parantez içine alın Karmaşık bildirimcisi birden fazla dizi, işaretçi veya işlevi belirleyici tam bir tanımlayıcıdır. Dizi, işaretçi ve işlev değiştiricileri çeşitli tek bir tanımlayıcı uygulayabilirsiniz. Genellikle `typedef` bildirimleri basitleştirmek için kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
@@ -47,7 +47,7 @@ Tüm bildirimcisi bir "karmaşık bildirimcisi." belirli yorumu belirtmek için 
      7   6  4 2 1   3    5  
     ```  
   
- Bu örnekte, adımları sırayla numaralandırılır ve şu şekilde yorumlanabilir:  
+Bu örnekte, adımları sırayla numaralandırılır ve şu şekilde yorumlanabilir:  
   
 1.  Tanımlayıcı `var` olarak bildirilir  
   
@@ -61,7 +61,7 @@ Tüm bildirimcisi bir "karmaşık bildirimcisi." belirli yorumu belirtmek için 
   
 6.  işaretçiler  
   
-7.  `char`değerler.  
+7.  `char` değerler.  
   
 ## <a name="examples"></a>Örnekler  
  Aşağıdaki örnekler diğer karmaşık bildirimleri göstermek ve parantez bir bildirimi anlamını nasıl etkileyebileceğini gösterir.  
