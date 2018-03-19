@@ -28,7 +28,7 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 03/16/2018
 ---
 # <a name="compiler-error-c2635"></a>Derleyici Hatası C2635
-bir 'identifier1 *' dönüştürülemiyor bir ' identifier2\*'; sanal bir temel sınıf dönüştürme kapsanan  
+bir 'identifier1*' dönüştürülemiyor bir ' identifier2\*'; sanal bir temel sınıf dönüştürme kapsanan  
   
  Bir dönüştürme dönüştürme gerektiren bir `virtual` temel sınıfı izin türetilmiş bir sınıf.  
   

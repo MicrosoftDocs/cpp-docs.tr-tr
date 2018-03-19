@@ -30,7 +30,7 @@ ms.lasthandoff: 03/16/2018
 # <a name="compiler-warning-level-1-c4138"></a>Derleyici Uyarısı (düzey 1) C4138
 ' * /' yorum dışında bulundu  
   
- Bir açma açıklama sınırlayıcısı açıklaması kapatma sınırlayıcısı öncesinde değil. Yıldız arasında bir boşluk derleyici varsayar (**\***) ve eğik çizgi (/).  
+ Bir açma açıklama sınırlayıcısı açıklaması kapatma sınırlayıcısı öncesinde değil. Yıldız arasında bir boşluk derleyici varsayar (**\****) ve eğik çizgi (/).  
   
 ## <a name="example"></a>Örnek  
   

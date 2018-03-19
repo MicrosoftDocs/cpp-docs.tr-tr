@@ -28,6 +28,6 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 03/16/2018
 ---
 # <a name="compiler-warning-level-1-c4179"></a>Derleyici Uyarısı (düzey 1) C4179
-' / / *': olarak ayrıştırılır '/' ve ' /\*': Karışıklığı önlemek için standart ' / /' yorum  
+'//*': olarak ayrıştırılır '/' ve ' /\*': Karışıklığı önlemek için standart ' / /' yorum  
   
  **//\*** yanlış açıklama sınırlayıcısı olur. Kullanım  **//**  veya  **/ \***  yerine.

@@ -249,7 +249,7 @@ Bu bölümdeki makaleleri belgelerin derleyici tarafından üretilen uyarı ilet
 |Derleyici Uyarısı (düzey 1) C4176|'alt': #pragma bileşen tarayıcı için bilinmeyen bir alt bileşen|
 |Derleyici Uyarısı (düzey 1) C4177|#pragma 'pragma' yalnızca genel kapsam veya ad alanı kapsamı kullanılmalıdır|
 |Derleyici Uyarısı (düzey 1) C4178|Servis talebi sabiti 'constant' türü için çok büyük anahtar ifadesinin|
-|Derleyici Uyarısı (düzey 4) C4179|' / / *': olarak ayrıştırılır '/' ve ' /\*': Karışıklığı önlemek için standart ' / /' yorum|
+|Derleyici Uyarısı (düzey 4) C4179|'//*': olarak ayrıştırılır '/' ve ' /\*': Karışıklığı önlemek için standart ' / /' yorum|
 |Derleyici Uyarısı (düzey 1) C4180|Niteleyici işlev türü için uygulanan bir anlamı yoktur; göz ardı|
 |C4181 uyarı derleyici|Niteleyici türü başvuru uygulanır; göz ardı|
 |Derleyici Uyarısı (düzey 1) C4182|#include iç içe geçmiş düzeyidir 'nest_count' derin; olası bir sonsuz özyineleme|
