@@ -1,12 +1,12 @@
 ---
 title: Genel temsilciler (Visual C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -14,18 +14,18 @@ helpviewer_keywords:
 - generic delegates
 - delegates, generic [C++]
 ms.assetid: 09d430b2-1aef-4fbc-87f9-9d7b8185d798
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2511034af4399c983b8114ec01a86e3290bd2a8c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f5e1635afb2c11dbb7835244eae776fabdaea9c0
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="generic-delegates-visual-c"></a>Genel Temsilciler (Visual C++)
 Genel tür parametreleri ile temsilcileri kullanabilirsiniz. Temsilciler üzerinde daha fazla bilgi için bkz: [temsilci (C++ bileşen uzantıları)](../windows/delegate-cpp-component-extensions.md).  
@@ -34,17 +34,17 @@ Genel tür parametreleri ile temsilcileri kullanabilirsiniz. Temsilciler üzerin
   
 ```  
 [attributes]   
-generic < [class | typename] type-parameter-identifiers >  
+generic < [class | typename] type-parameter-identifiers>  
 [type-parameter-constraints-clauses]  
 [accessibility-modifiers] delegate result-type identifier   
 ([formal-parameters]);  
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `attributes`(İsteğe bağlı)  
+ `attributes` (İsteğe bağlı)  
  Ek tanımlayıcı bilgiler. Öznitelikleri özniteliklerinin ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.  
   
- *tür-parametre-tanımlayıcıları*  
+ *type-parameter-identifier(s)*  
  Tür parametreleri için tanımlayıcıları virgülle ayrılmış listesi.  
   
  `type-parameter-constraints-clauses`  
@@ -56,7 +56,7 @@ generic < [class | typename] type-parameter-identifiers >
  *Sonuç türü*  
  Temsilci dönüş türü.  
   
- *tanımlayıcı*  
+ *identifier*  
  Temsilci adı.  
   
  *Resmi parametreleri* (isteğe bağlı)  
@@ -68,7 +68,7 @@ generic < [class | typename] type-parameter-identifiers >
 ```  
 // generics_generic_delegate1.cpp  
 // compile with: /clr /c  
-generic < class ItemType>  
+generic <class ItemType>  
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);  
 ```  
   
@@ -84,10 +84,10 @@ delegate ItemType GenDelegate(ItemType p1, ItemType% p2);
 ```  
 // generics_generic_delegate2.cpp  
 // compile with: /clr  
-generic < class ItemType>  
+generic <class ItemType>  
 delegate ItemType GenDelegate(ItemType p1, ItemType% p2);  
   
-generic < class ItemType>  
+generic <class ItemType>  
 ref struct MyGenClass {  
    ItemType MyMethod(ItemType i, ItemType % j) {  
       return ItemType();  
@@ -95,7 +95,7 @@ ref struct MyGenClass {
 };  
   
 ref struct MyClass {  
-   generic < class ItemType>  
+   generic <class ItemType>  
    static ItemType MyStaticMethod(ItemType i, ItemType % j) {  
       return ItemType();  
    }  

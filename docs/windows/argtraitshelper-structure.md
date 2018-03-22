@@ -1,12 +1,12 @@
 ---
-title: "ArgTraitsHelper yapısı | Microsoft Docs"
-ms.custom: 
+title: ArgTraitsHelper yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - event/Microsoft::WRL::Details::ArgTraitsHelper
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - ArgTraitsHelper structure
 ms.assetid: e3f798da-0aef-4a57-95d3-d38c34c47d72
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 31d9072ebf8c36453a74c75ff4a8997805d0973f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4df7e9fe3823e3dbb84b09863e6de5178ab44d18
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="argtraitshelper-structure"></a>ArgTraitsHelper Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -34,9 +34,7 @@ WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değ
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-template<  
-   typename TDelegateInterface  
->  
+template<typename TDelegateInterface>  
 struct ArgTraitsHelper;  
 ```  
   

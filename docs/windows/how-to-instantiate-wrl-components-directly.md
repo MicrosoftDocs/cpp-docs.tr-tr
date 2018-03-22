@@ -1,37 +1,37 @@
 ---
-title: "Nasıl yapılır: doğrudan WRL bileşenlerinin örneğini | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: doğrudan WRL bileşenlerinin örneğini | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 1a9fa011-0cee-4abf-bf83-49adf53ff906
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f2d307304c103b62ff5ba20e1af25797745bd035
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e8069ac8d079a879cb078d9e3e4b759b02817b5f
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-instantiate-wrl-components-directly"></a>Nasıl yapılır: Doğrudan WRL Bileşenlerinin Örneğini Oluşturma
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı öğrenin[Microsoft::WRL::Make](../windows/make-function.md) ve [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md) işlevleri modülden bir bileşen örneği oluşturmak için Bu tanımlar.  
   
  Sınıf oluşturucuları veya diğer mekanizmaları gerekmediğinde bileşenleri doğrudan oluşturarak, ek yükü azaltabilir. Bir bileşen doğrudan hem Evrensel Windows platformu uygulamaları ve Masaüstü uygulamaları örneğini oluşturabilirsiniz.  
   
- Windows çalışma zamanı C++ Şablon kitaplığı temel Windows çalışma zamanı bileşeni oluşturma ve dış bir evrensel Windows Platform uygulaması oluşturmak için nasıl kullanılacağını öğrenmek için bkz: [izlenecek yol: bir temel Windows çalışma zamanı bileşeni oluşturma](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md). Windows çalışma zamanı C++ Şablon kitaplığı klasik COM bileşeni oluşturma ve bir dış masaüstü uygulaması oluşturmak için nasıl kullanılacağını öğrenmek için bkz: [nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md).  
+Windows çalışma zamanı C++ Şablon kitaplığı klasik COM bileşeni oluşturma ve bir dış masaüstü uygulaması oluşturmak için nasıl kullanılacağını öğrenmek için bkz: [nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md).  
   
- Bu belge, iki örnek gösterilmektedir. İlk örnek kullanan `Make` işlevi bir bileşen oluşturur. İkinci örnek kullanan `MakeAndInitialize` işlevi oluşturma sırasında başarısız olabilir bir bileşen oluşturur. (COM genellikle kullandığından `HRESULT` değerleri, hatalar, belirtmek için özel durumlar, yerine bir COM türü genellikle değil throw kendi oluşturucudan. `MakeAndInitialize`Yapım değişkenlerinin aracılığıyla doğrulamak bir bileşeni `RuntimeClassInitialize` yöntemi.) Örneklerin her ikisi de temel Günlükçü arabirimi tanımlayın ve iletilerini konsola yazar sınıfı tanımlayarak bu arabirimi uygulamalıdır.  
+ Bu belge, iki örnek gösterilmektedir. İlk örnek kullanan `Make` işlevi bir bileşen oluşturur. İkinci örnek kullanan `MakeAndInitialize` işlevi oluşturma sırasında başarısız olabilir bir bileşen oluşturur. (COM genellikle kullandığından `HRESULT` değerleri, hatalar, belirtmek için özel durumlar, yerine bir COM türü genellikle değil throw kendi oluşturucudan. `MakeAndInitialize` Yapım değişkenlerinin aracılığıyla doğrulamak bir bileşeni `RuntimeClassInitialize` yöntemi.) Örneklerin her ikisi de temel Günlükçü arabirimi tanımlayın ve iletilerini konsola yazar sınıfı tanımlayarak bu arabirimi uygulamalıdır.  
   
 > [!IMPORTANT]
 >  Kullanamazsınız `new` Windows çalışma zamanı C++ Şablon Kitaplığı bileşenleri örneği oluşturmak için işleç. Bu nedenle, her zaman kullanmanızı öneririz `Make` veya `MakeAndInitialize` bir bileşen doğrudan örneği oluşturmak için.  
@@ -50,7 +50,7 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı öğrenin[
   
 ### <a name="to-handle-construction-failure-for-the-basic-logger-component"></a>Temel Günlükçü bileşeni için yapım hatası işlemek için  
   
-1.  Tanımını değiştirmek için aşağıdaki kodu kullanın `CConsoleWriter` sınıfı. Bu sürüm özel dize üye değişkeni ve geçersiz kılmalar tutan `RuntimeClass::RuntimeClassInitialize` yöntemi. `RuntimeClassInitialize`başarısız olur çağrısı `SHStrDup` başarısız olur.  
+1.  Tanımını değiştirmek için aşağıdaki kodu kullanın `CConsoleWriter` sınıfı. Bu sürüm özel dize üye değişkeni ve geçersiz kılmalar tutan `RuntimeClass::RuntimeClassInitialize` yöntemi. `RuntimeClassInitialize` başarısız olur çağrısı `SHStrDup` başarısız olur.  
   
      [!code-cpp[wrl-logger-makeandinitialize#1](../windows/codesnippet/CPP/how-to-instantiate-wrl-components-directly_3.cpp)]  
   
@@ -61,4 +61,4 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı öğrenin[
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)   
  [Microsoft::WRL::Make](../windows/make-function.md)   
- [Microsoft::WRL::details::MakeAndInitialize](../windows/makeandinitialize-function.md)
+ [Microsoft::WRL::Details::MakeAndInitialize](../windows/makeandinitialize-function.md)

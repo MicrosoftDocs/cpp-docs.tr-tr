@@ -1,12 +1,12 @@
 ---
-title: "ComPtr::As yöntemi | Microsoft Docs"
-ms.custom: 
+title: ComPtr::As yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::ComPtr::As
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - As method
 ms.assetid: 2ad6c262-9bdb-4c59-a330-1af8bcd445cc
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7edf8ebb089b3e39135edb14931197c984c6946c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8f3602e8be11fa1569117968848e60bd86f59acd
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="comptras-method"></a>ComPtr::As Yöntemi
 Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir ComPtr nesnesi döndürür.  
@@ -35,16 +35,12 @@ Belirtilen şablon parametresi tarafından tanımlanan arabirimi temsil eden bir
   
 ```  
   
-template<  
-   typename U  
->  
+template<typename U>  
 HRESULT As(  
    _Out_ ComPtr<U>* p  
 ) const;  
   
-template<  
-   typename U  
->  
+template<typename U>  
 HRESULT As(  
    _Out_ Details::ComPtrRef<ComPtr<U>> p  
 ) const;  

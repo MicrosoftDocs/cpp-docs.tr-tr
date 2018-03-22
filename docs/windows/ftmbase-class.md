@@ -1,12 +1,12 @@
 ---
-title: "FtmBase sınıfı | Microsoft Docs"
-ms.custom: 
+title: FtmBase sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - ftm/Microsoft::WRL::FtmBase
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - FtmBase class
 ms.assetid: 275f3b71-2975-4f92-89e7-d351e96496df
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f56321b71642f9d615c4d85fd66f878b19e44485
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 9499a5a30f99e639137532aad1763b434a196809
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
 Ücretsiz iş parçacıklı Sıralayıcı nesneyi temsil eder.  
@@ -36,8 +36,8 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags< WinRtClassicComMix >,   
-   Microsoft::WRL::CloakedIid< IMarshal > >;  
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
+   Microsoft::WRL::CloakedIid<IMarshal> >;  
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  

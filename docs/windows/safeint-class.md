@@ -1,12 +1,12 @@
 ---
-title: "SafeInt sınıfı | Microsoft Docs"
-ms.custom: 
+title: SafeInt sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SafeInt
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - SafeInt class
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-caps.latest.revision: 
+caps.latest.revision: ''
 author: ghogen
 ms.author: ghogen
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ea076ea092257fd5bf6acd6d597f79ef42dd96f2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 61b9ee9ca030d8661ce9c4cabf03e59c55ac88b1
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 Tamsayı taşma önlemeye yardımcı olmak için tamsayı temelleri genişletir ve tamsayılar farklı türlerde karşılaştırmanıza olanak tanır.  
@@ -178,9 +178,9 @@ class SafeInt;
   
  Bu konudaki işleçleri tablo tarafından desteklenen matematiksel ve Karşılaştırma işleçleri listeler `SafeInt` sınıfı. En matematik işleçleri dönüş bir `SafeInt` nesne türü `T`.  
   
- Karşılaştırma işlemleri arasında bir `SafeInt` ve tamsayı türü herhangi bir yönde gerçekleştirilebilir. Örneğin, her ikisi de `SafeInt<int>(x) < y` ve `y > SafeInt<int>(x)` geçerli olduğundan ve aynı sonucu döndürür.  
+ Karşılaştırma işlemleri arasında bir `SafeInt` ve tamsayı türü herhangi bir yönde gerçekleştirilebilir. Örneğin, her ikisi de `SafeInt<int>(x) < y` ve `y> SafeInt<int>(x)` geçerli olduğundan ve aynı sonucu döndürür.  
   
- Birçok ikili işleçler iki farklı kullanarak desteklemeyen `SafeInt` türleri. Bunun bir örneği `&` işleci. `SafeInt<T, E> & int`desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değil. İkinci örnekte derleyici döndürmek için parametre türünü bilmez. Bu sorun için bir çözüm için ikinci parametre temel türü geri dönüştürmek için ' dir. Aynı parametreleri kullanarak, bu, yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>`.  
+ Birçok ikili işleçler iki farklı kullanarak desteklemeyen `SafeInt` türleri. Bunun bir örneği `&` işleci. `SafeInt<T, E> & int` desteklenir, ancak `SafeInt<T, E> & SafeInt<U, E>` değil. İkinci örnekte derleyici döndürmek için parametre türünü bilmez. Bu sorun için bir çözüm için ikinci parametre temel türü geri dönüştürmek için ' dir. Aynı parametreleri kullanarak, bu, yapılabilir `SafeInt<T, E> & (U)SafeInt<U, E>`.  
   
 > [!NOTE]
 >  Bit düzeyinde herhangi bir işlem için iki farklı parametreler aynı boyutta olmalıdır. Boyutlar farklıysa, derleyici özel durum oluşturacak bir [ASSERT](../mfc/reference/diagnostic-services.md#assert) özel durum. Bu işlemin sonuçları doğru olmasını garanti edilemez. Bu sorunu çözmek için daha büyük parametre ile aynı boyutta oluncaya kadar küçük parametre dönüştürün.  
@@ -213,12 +213,12 @@ Int x = flag ? SafeInt<unsigned int>(y) : SafeInt<unsigned int>(-1);
 Int x = flag ? (int) SafeInt<unsigned int>(y) : -1;  
 ```  
   
- `T`ve `U` bir Boolean türü, karakter türü veya tamsayı türü atanabilir. Tamsayı türleri imzalı veya imzasız ve herhangi bir boyuta 8 bitten 64 bit.  
+ `T` ve `U` bir Boolean türü, karakter türü veya tamsayı türü atanabilir. Tamsayı türleri imzalı veya imzasız ve herhangi bir boyuta 8 bitten 64 bit.  
   
 > [!NOTE]
 >  Ancak `SafeInt` sınıfı kabul eden herhangi bir tür tamsayı, imzasız türleriyle daha verimli bir şekilde gerçekleştirir.  
   
- `E`hata işleme mekanizması, `SafeInt` kullanır. Hata işleme için iki mekanizma SafeInt Kitaplığı ile sağlanır. Varsayılan ilke `SafeIntErrorPolicy_SafeIntException`, hangi atar bir [Safeıntexception sınıfı](../windows/safeintexception-class.md) bir hata oluştuğunda özel durum. Diğer ilke `SafeIntErrorPolicy_InvalidParameter`, bir hata oluşursa programı durdurur.  
+ `E` hata işleme mekanizması, `SafeInt` kullanır. Hata işleme için iki mekanizma SafeInt Kitaplığı ile sağlanır. Varsayılan ilke `SafeIntErrorPolicy_SafeIntException`, hangi atar bir [Safeıntexception sınıfı](../windows/safeintexception-class.md) bir hata oluştuğunda özel durum. Diğer ilke `SafeIntErrorPolicy_InvalidParameter`, bir hata oluşursa programı durdurur.  
   
  Hata ilkesi özelleştirmek için iki seçenek vardır. İlk parametre kümesini seçenektir `E` oluştururken bir `SafeInt`. Hata ilkesi için yalnızca bir tane işleme değiştirmek istediğinizde bu seçeneği kullanın `SafeInt`. Diğer seçenek tanımlamaktır `_SAFEINT_DEFAULT_ERROR_POLICY` dahil önce özelleştirilmiş hata işleme sınıfınız olacak `SafeInt` kitaplığı. Varsayılan hata tüm örnekleri için ilke işleme değiştirmek istediğinizde bu seçeneği kullanın `SafeInt` kodunuzda sınıfı.  
   

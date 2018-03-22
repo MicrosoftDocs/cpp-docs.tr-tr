@@ -1,12 +1,12 @@
 ---
-title: "Module::Create yöntemi | Microsoft Docs"
-ms.custom: 
+title: Module::Create yöntemi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module::Create
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - Create method
 ms.assetid: bfa97fd7-5226-4604-92a5-3b9697053e64
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1f025c446dd6a7dab9b37d126d65e640a02b939b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e566b34140c0b82072c8469cd8d965f807e244ec
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="modulecreate-method"></a>Module::Create Yöntemi
 Bir modül bir örneğini oluşturur.  
@@ -35,15 +35,11 @@ Bir modül bir örneğini oluşturur.
   
 ```  
 WRL_NOTHROW static Module& Create();  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    T callback  
 );  
-template<  
-   typename T  
->  
+template<typename T>  
 WRL_NOTHROW static Module& Create(  
    _In_ T* object,  
    _In_ void (T::* method)()  

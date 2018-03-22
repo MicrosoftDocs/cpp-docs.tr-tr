@@ -1,12 +1,12 @@
 ---
-title: "İzleme başvurusu işleci (C++ bileşen uzantıları) | Microsoft Docs"
-ms.custom: 
+title: İzleme başvurusu işleci (C++ bileşen uzantıları) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '%'
@@ -16,18 +16,18 @@ helpviewer_keywords:
 - tracking references
 - '% tracking reference [C++]'
 ms.assetid: 142a7269-ab69-4b54-a6d7-833bef06228f
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 71389a622b02d5c0379b2be1a91783e8235077bb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 0cbf1483c66bd8472149539af84b83755cae43cf
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tracking-reference-operator-c-component-extensions"></a>İzleme Başvurusu İşleci (C++ Bileşen Uzantıları)
 A *izleme başvurusu* (`%`) normal bir C++ başvurusu gibi davranır (`&`) dışında bir nesne için izleme başvurusu atandığında, nesnenin başvuru sayısı artırılır.  
@@ -140,7 +140,7 @@ int main() {
 using namespace System;  
   
 int main() {  
-   array<int> ^ a = ref new array< Int32 >(5);  
+   array<int> ^ a = ref new array<Int32>(5);  
    a[0] = 21;  
    Console::WriteLine(a[0]);  
    array<int> ^% arr = a;  

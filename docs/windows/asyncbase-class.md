@@ -1,12 +1,12 @@
 ---
-title: "AsyncBase sınıfı | Microsoft Docs"
-ms.custom: 
+title: AsyncBase sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - async/Microsoft::WRL::AsyncBase
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - AsyncBase class
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c33d48c69852ab22cfa2bfb4f33d45edcc469662
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: da2feae0185bb24f2c1c20caafa69aedb2aa407a
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
 Windows çalışma zamanı zaman uyumsuz durum makinesinin uygular.  
@@ -40,13 +40,13 @@ template <
    typename TProgress = Details::Nil,  
    AsyncResultType resultType = SingleResult  
 >  
-class AsyncBase : public AsyncBase< TComplete, Details::Nil, resultType >;  
+class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;  
   
 template <  
    typename TComplete,  
    AsyncResultType resultType  
 >  
-class AsyncBase< TComplete, Details::Nil, resultType > : public Microsoft::WRL::Implements< IAsyncInfo >;  
+class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;  
 ```  
   
 #### <a name="parameters"></a>Parametreler  

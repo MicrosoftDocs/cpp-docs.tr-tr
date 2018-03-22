@@ -1,31 +1,36 @@
 ---
-title: "Windows çalışma zamanı C++ Şablon kitaplığı (WRL) | Microsoft Docs"
-ms.custom: 
+title: Windows çalışma zamanı C++ Şablon kitaplığı (WRL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 98b97098f397772026d0926c72ad83dadd5e59cb
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d362fdde185f5d9345977ca58d7679a448976555
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çalışma zamanı bileşenleri kullanmak için alt düzey bir yol sağlayan bir şablon kitaplıktır.  
+Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çalışma zamanı bileşenleri kullanmak için alt düzey bir yol sağlayan bir şablon kitaplıktır.
+
+> [!NOTE]
+> WRL şimdi kılınan tarafından C + +/ WinRT, bir standart C ++ 17 dil projeksiyon için Windows çalışma zamanı API'leri. C + +/ WinRT, Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlamak üzere tasarlanmıştır.
+
+> İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı herhangi standartlarıyla uyumlu C ++ 17 derleyici kullanarak API'leri yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için başka bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. C + desteklemek devam +/ CX ve WRL, ancak yüksek oranda yeni uygulamalar C + kullanmanızı öneririz +/ WinRT. Daha fazla bilgi için bkz: [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).   
   
 ## <a name="benefits"></a>Yararları  
  Windows çalışma zamanı C++ Şablon kitaplığı, daha kolay uygulama ve Bileşen Nesne Modeli (COM) bileşenlerini kullanmasına olanak sağlar. Nesneleri ve test ömrünü yönetmek için başvuru sayımı gibi temizlik teknikleri sağlar `HRESULT` bir işlem başarılı veya başarısız olup olmadığını belirlemek için değerleri. Windows çalışma zamanı C++ Şablon kitaplığı başarıyla kullanmak için dikkatle bu kuralları ve teknikleri izlemelisiniz.  
@@ -57,9 +62,6 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çal�
   
  [Nasıl yapılır: olayları işleme](../windows/how-to-handle-events-using-wrl.md)  
  Windows çalışma zamanı C++ Şablon kitaplığı abone olma ve Windows çalışma zamanı nesne olayları işlemek için nasıl kullanılacağını gösterir.  
-  
- [İzlenecek yol: temel Windows çalışma zamanı bileşeni oluşturma](../windows/walkthrough-creating-a-basic-windows-runtime-component-using-wrl.md)  
- Windows çalışma zamanı C++ Şablon kitaplığı iki sayı ekleyen bir temel Windows çalışma zamanı bileşeni oluşturma için nasıl kullanılacağını gösterir. Ayrıca, JavaScript kullanan bir UWP uygulaması bileşeninden olaylarını ve nasıl kullanılacağını gösterir.  
   
  [İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
  Kullanan bir UWP uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).  
@@ -144,7 +146,6 @@ Windows çalışma zamanı C++ Şablon kitaplığı (WRL) yazar ve Windows çal�
   
 |||  
 |-|-|  
-|[Sınıf kitaplığı proje şablonu](../windows/wrl-class-library-project-template.md)|WRL sınıf kitaplığı proje şablonu erişmek açıklar. Bu şablon, Windows çalışma zamanı bileşenleri oluşturmak için Visual Studio kullanarak görevini basitleştirmeye yardımcı olur.|  
 |[Kategoriye göre başlıca API'ler](../windows/key-wrl-apis-by-category.md)|Birincil Windows çalışma zamanı C++ Şablon kitaplığı türleri, İşlevler ve makrolar vurgular.|  
 |[Başvuru](../windows/wrl-reference.md)|Windows çalışma zamanı C++ Şablon kitaplığı için başvuru bilgileri içerir.|  
 |[Hızlı Başvuru (Windows çalışma zamanı ve Visual C++)](http://go.microsoft.com/fwlink/p/?linkid=229180)|Kısaca açıklanmaktadır C + +/ Windows çalışma zamanı desteği CX özellikleri.|  

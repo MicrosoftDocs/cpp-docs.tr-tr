@@ -1,12 +1,12 @@
 ---
-title: "Modül sınıfı | Microsoft Docs"
-ms.custom: 
+title: Modül sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::Module
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - Module class
 ms.assetid: dd67e3b8-c2e1-4f53-8c0f-565a140ba649
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d17e0dc79241fbd84e282b9cd8403259e34def0e
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d9911cdfc943243bd24d452139ef7452e693340f
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="module-class"></a>Modül Sınıfı
 İlgili nesneler koleksiyonunu temsil eder.  
@@ -35,9 +35,7 @@ ms.lasthandoff: 12/21/2017
   
 ```  
   
-template<  
-   ModuleType moduleType  
->  
+template<ModuleType moduleType>  
 class Module;  
   
 template<>  

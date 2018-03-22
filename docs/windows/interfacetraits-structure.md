@@ -1,12 +1,12 @@
 ---
-title: "Interfacetraits yapısı | Microsoft Docs"
-ms.custom: 
+title: Interfacetraits yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::InterfaceTraits
@@ -15,18 +15,18 @@ dev_langs:
 helpviewer_keywords:
 - InterfaceTraits structure
 ms.assetid: ede0c284-19a7-4892-9738-ff3da4923d0a
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c28c7c1eef2fc278a0667ec4b7c635005331467
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4b4b219091393b1195b60ae78347f952c2c9d37a
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="interfacetraits-structure"></a>InterfaceTraits Yapısı
 WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
@@ -38,9 +38,7 @@ template<
    typename I0  
 >  
 struct __declspec(novtable) InterfaceTraits;  
-template<  
-   typename CloakedType  
->  
+template<typename CloakedType>  
 struct __declspec(novtable) InterfaceTraits<CloakedIid<CloakedType>>;  
   
 template<>  
