@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b7b441f41106544633bd691c409fa04c989146f0
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 5cd2e3e51ecc8d9fc0d889555b4bfa193ba1d6a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="vcprofileallocscale"></a>VCPROFILE_ALLOC_SCALE
 Profil verileri tutmak için ayrılmış bellek miktarı değiştirin.  

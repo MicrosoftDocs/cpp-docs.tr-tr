@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fb8d4474b69d60b9ced342c478ec0f6ba4e1a933
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 5cd2e3e51ecc8d9fc0d889555b4bfa193ba1d6a5
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="tools-for-manual-profile-guided-optimization"></a>El ile profil temelli iyileştirme için araçları
 Aşağıdaki araçlar profil temelli iyileştirmeler destekler:  
