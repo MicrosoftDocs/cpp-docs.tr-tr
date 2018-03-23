@@ -1,15 +1,15 @@
 ---
-title: "Bir &#39; s tamamlama işleci: ~ | Microsoft Docs"
-ms.custom: 
+title: 'Bir &#39; s tamamlama işleci: ~ | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
-- ~
+- "~"
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - compl operator
 - ~ operator [C++], syntax
 ms.assetid: 4bf81967-34f7-4b4b-aade-fd03d5da0174
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
