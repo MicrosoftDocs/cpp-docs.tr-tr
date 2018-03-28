@@ -1,12 +1,9 @@
 ---
-title: "Yapı hizalama örnekleri | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Yapı hizalama örnekleri | Microsoft Docs
+ms.custom: ''
+ms.date: 03/26/2018
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
 - C++
@@ -14,32 +11,76 @@ helpviewer_keywords:
 - structure alignment
 - examples [C++], structure alignment
 ms.assetid: 03d137bf-5cc4-472e-9583-6498f2534199
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b65f17d1c433879ad7ea4f0a3af53d4ab740b8bd
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 29b7bac40d47c7ea69e936ea649fb519baac590b
+ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="examples-of-structure-alignment"></a>Yapı Hizalama Örnekleri
-Aşağıdaki dört örnekler her hizalanmış yapı veya birleşim ve karşılık gelen rakamları bu yapı veya birleşim bellek içinde düzenini göstermeye bildirin. Her sütun bir şekilde bir baytlık belleği temsil eder ve o bayt öteleme sütunundaki sayıyı gösterir. Her Şekil ikinci satırında adı bildiriminde değişkeninin adı karşılık gelir. Gölgeli sütun doldurmayı belirtilen hizalama ulaşmak için gerekli olan gösterir.  
-  
- ![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_1.png "vcAmd_conv_ex_1")  
-Örnek 1  
-  
- ![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_2.png "vcAmd_conv_ex_2")  
-Örnek 2  
-  
- ![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_3.png "vcAmd_conv_ex_3")  
-Örnek 3  
-  
- ![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_4.png "vcAmd_conv_ex_4")  
-Örnek 4  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Türler ve Depolama](../build/types-and-storage.md)
+
+Aşağıdaki dört örnekler her hizalanmış yapı veya birleşim ve karşılık gelen rakamları bu yapı veya birleşim bellek içinde düzenini göstermeye bildirin. Her sütun bir şekilde bir baytlık belleği temsil eder ve o bayt öteleme sütunundaki sayıyı gösterir. Her Şekil ikinci satırında adı bildiriminde değişkeninin adı karşılık gelir. Gölgeli sütun doldurmayı belirtilen hizalama ulaşmak için gerekli olan gösterir.
+
+## <a name="example-1"></a>Örnek 1
+
+```C
+// Total size = 2 bytes, alignment = 2 bytes (word).
+
+_declspec(align(2)) struct {
+    short a;      // +0; size = 2 bytes
+}
+```
+
+![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_1_block.png "vcAmd_conv_ex_1")
+
+## <a name="example-2"></a>Örnek 2
+
+```C
+// Total size = 24 bytes, alignment = 8 bytes (quadword).
+
+_declspec(align(8)) struct {
+    int a;       // +0; size = 4 bytes
+    double b;    // +8; size = 8 bytes
+    short c;     // +16; size = 2 bytes
+}
+```
+
+![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_2_block.png "vcAmd_conv_ex_2")
+
+## <a name="example-3"></a>Örnek 3
+
+```C
+// Total size = 22 bytes, alignment = 4 bytes (doubleword).
+
+_declspec(align(4)) struct {
+    char a;       // +0; size = 1 byte
+    short b;      // +2; size = 2 bytes
+    char c;       // +4; size = 1 byte
+    int d;        // +8; size = 4 bytes
+}
+```
+
+![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_3_block.png "vcAmd_conv_ex_3")
+
+## <a name="example-4"></a>Örnek 4
+
+```C
+// Total size = 8 bytes, alignment = 8 bytes (quadword).
+
+_declspec(align(8)) union {
+    char *p;      // +0; size = 8 bytes
+    short s;      // +0; size = 2 bytes
+    long l;       // +0; size = 4 bytes
+}
+```
+
+![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_4_block.png "vcAmd_conv_ex_4")
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Türler ve Depolama](../build/types-and-storage.md)<br/>

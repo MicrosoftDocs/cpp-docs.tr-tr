@@ -1,12 +1,12 @@
 ---
 title: gets_s, _getws_s | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _getws_s
@@ -40,17 +40,17 @@ helpviewer_keywords:
 - gets_s function
 - standard input, reading from
 ms.assetid: 5880c36f-122c-4061-a1a5-aeeced6fe58c
-caps.latest.revision: 
+caps.latest.revision: ''
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1cc1437d826584b89c7c4d9bb513f99af122ca0
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1596c7598565fe098313ab0fc65a2a3f3982afd2
+ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="getss-getwss"></a>gets_s, _getws_s
 Bir satırından alır `stdin` akış. Bu sürümleri [alır, _getws](../../c-runtime-library/gets-getws.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
@@ -91,7 +91,7 @@ wchar_t *_getws_s(
   
  Okuma ilk karakter dosya sonu karakteri ise, bir null karakter başında depolanan `buffer` ve `NULL` döndürülür.  
   
- `_getws` bir joker karakter sürümü `gets_s`; kendi bağımsız ve dönüş değeri joker karakter dizelerdir.  
+ `_getws_s` bir joker karakter sürümü `gets_s`; kendi bağımsız ve dönüş değeri joker karakter dizelerdir.  
   
  Varsa `buffer` olan `NULL` veya `sizeInCharacters` sıfırdan küçük veya ona eşit veya arabellek giriş satırı ve null Sonlandırıcı içermesi için çok küçük ise, bu işlevlerin bir geçersiz parametre işleyicisi açıklandığı gibi çağırma [parametresi Doğrulama](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `NULL` ve kümesine errno `ERANGE`.  
   
@@ -101,14 +101,14 @@ wchar_t *_getws_s(
   
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
 |---------------------|------------------------------------|--------------------|-----------------------|  
-|`_getts`|`gets_s`|`gets_s`|`_getws`|  
+|`_getts_s`|`gets_s`|`gets_s`|`_getws_s`|  
   
 ## <a name="requirements"></a>Gereksinimler  
   
 |Yordam|Gerekli başlık|  
 |-------------|---------------------|  
 |`gets_s`|\<stdio.h >|  
-|`_getws`|\<stdio.h > veya \<wchar.h >|  
+|`_getws_s`|\<stdio.h > veya \<wchar.h >|  
   
 Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
   

@@ -1,12 +1,9 @@
 ---
 title: strcpy_s, wcscpy_s, _mbscpy_s | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 03/22/2086
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
 ms.topic: reference
 apiname:
 - wcscpy_s
@@ -42,147 +39,187 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdb37fe985340d2126cfc6f8db90cc236a2d5870
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8820dbda16d95a201d666a0f25b4e06a6b79c941
+ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="strcpys-wcscpys-mbscpys"></a>strcpy_s, wcscpy_s, _mbscpy_s
-Bir dize kopyalar. Bu sürümleri [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
-  
+
+Bir dize kopyalar. Bu sürümleri [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+
 > [!IMPORTANT]
->  `_mbscpy_s`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t strcpy_s(  
-   char *strDestination,  
-   size_t numberOfElements,  
-   const char *strSource   
-);  
-errno_t wcscpy_s(  
-   wchar_t *strDestination,  
-   size_t numberOfElements,  
-   const wchar_t *strSource   
-);  
-errno_t _mbscpy_s(  
-   unsigned char *strDestination,  
-   size_t numberOfElements,  
-   const unsigned char *strSource   
-);  
-template <size_t size>  
-errno_t strcpy_s(  
-   char (&strDestination)[size],  
-   const char *strSource   
-); // C++ only  
-template <size_t size>  
-errno_t wcscpy_s(  
-   wchar_t (&strDestination)[size],  
-   const wchar_t *strSource   
-); // C++ only  
-template <size_t size>  
-errno_t _mbscpy_s(  
-   unsigned char (&strDestination)[size],  
-   const unsigned char *strSource   
-); // C++ only  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `strDestination`  
- Hedef dize arabellek konumu.  
-  
- `numberOfElements`  
- Hedef dize arabellek boyutunu `char` dar ve çok baytlı İşlevler, birimleri ve `wchar_t` geniş işlevleri için birim.  
-  
- `strSource`  
- Sonlandırılmış kaynak dizesi arabelleği.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır; Aksi takdirde bir hata oluştu.  
-  
-### <a name="error-conditions"></a>Hata koşulları  
-  
-|`strDestination`|`numberOfElements`|`strSource`|Dönüş değeri|İçeriği `strDestination`|  
-|----------------------|------------------------|-----------------|------------------|----------------------------------|  
-|`NULL`|tüm|tüm|`EINVAL`|değiştirilmedi|  
-|tüm|tüm|`NULL`|`EINVAL`|`strDestination`0 olarak ayarlanırsa [0]|  
-|tüm|0 veya çok küçük|tüm|`ERANGE`|`strDestination`0 olarak ayarlanırsa [0]|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `strcpy_s` İşlevi adresini içeriği kopyalar `strSource`, tarafından belirtilen konuma sonlandırma null karakteri de dahil olmak üzere `strDestination`. Hedef dize kaynak dizesi ve onun sonlandırma null karakter tutabilecek kadar büyük olmalıdır. Davranışını `strcpy_s` kaynak ve hedef dizeleri çakışırsa tanımlanmadı.  
-  
- `wcscpy_s` joker karakter sürümü `strcpy_s`, ve `_mbscpy_s` çok baytlı karakter sürümüdür. Bağımsız değişkenleri ve dönüş değerini `wcscpy_s` joker karakter olan dizeleri; bu `_mbscpy_s` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.  
-  
- Varsa `strDestination` veya `strSource` null işaretçi ya da hedef dize çok küçük ise, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş `EINVAL` ve `errno` için `EINVAL` zaman `strDestination` veya `strSource` null işaretçi ve döndürmeleri `ERANGE` ve ayarlayın `errno` için `ERANGE` Hedef dize çok küçük olduğunda olmadığı.  
-  
- Başarılı yürütme sırasında hedef her zaman null ile sonlandırılmış dizedir.  
-  
- C++'da, Bu işlevlerden birinin kullanımını arabellek uzunluğu otomatik olarak Infer ve böylece boyutu bağımsız değişkeni belirtmeniz gerekmez şablon aşırı yüklemeleri tarafından Basitleştirilmiş ve bunlar otomatik olarak işlevleri eski, daha az güvenli, daha yeni, değiştirebilirsiniz daha güvenli ortaklarınıza. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
-  
- Bu işlevler hata ayıklama sürümleri ilk 0xFE arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_tcscpy_s`|`strcpy_s`|`_mbscpy_s`|`wcscpy_s`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`strcpy_s`|\<String.h >|  
-|`wcscpy_s`|\<String.h > veya \<wchar.h >|  
-|`_mbscpy_s`|\<Mbstring.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_strcpy_s.cpp  
-// This program uses strcpy_s and strcat_s  
-// to build a phrase.  
-//  
-  
-#include <string.h>  
-#include <stdlib.h>  
-#include <stdio.h>  
-#include <errno.h>  
-  
-int main( void )  
-{  
-   char string[80];  
-   // using template versions of strcpy_s and strcat_s:  
-   strcpy_s( string, "Hello world from " );  
-   strcat_s( string, "strcpy_s " );  
-   strcat_s( string, "and " );  
-   // of course we can supply the size explicitly if we want to:  
-   strcat_s( string, _countof(string), "strcat_s!" );  
-  
-   printf( "String = %s\n", string );  
-}  
-```  
-  
-```Output  
-String = Hello world from strcpy_s and strcat_s!  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)   
- [strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md)   
- [strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md)   
- [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)   
- [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)   
- [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)   
- [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)   
- [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)   
- [strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)
+> `_mbscpy_s`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t strcpy_s(
+   char *dest,
+   rsize_t dest_size,
+   const char *src
+);
+errno_t wcscpy_s(
+   wchar_t *dest,
+   rsize_t dest_size,
+   const wchar_t *src
+);
+errno_t _mbscpy_s(
+   unsigned char *dest,
+   rsize_t dest_size,
+   const unsigned char *src
+);
+```
+
+```cpp
+// Template functions are C++ only:
+template <size_t size>
+errno_t strcpy_s(
+   char (&dest)[size],
+   const char *src
+); // C++ only
+template <size_t size>
+errno_t wcscpy_s(
+   wchar_t (&dest)[size],
+   const wchar_t *src
+); // C++ only
+template <size_t size>
+errno_t _mbscpy_s(
+   unsigned char (&dest)[size],
+   const unsigned char *src
+); // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*dest*<br/>
+Hedef dize arabellek konumu.
+
+*dest_size*<br/>
+Hedef dize arabellek boyutunu **char** dar ve çok baytlı İşlevler, birimleri ve **wchar_t** geniş işlevleri için birim. Bu değer sıfırdan büyük ve'den büyük olmalıdır **RSIZE_MAX**.
+
+*src*<br/>
+Sonlandırılmış kaynak dizesi arabelleği.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa sıfır; Aksi takdirde bir hata oluştu.
+
+### <a name="error-conditions"></a>Hata koşulları
+
+|*dest*|*dest_size*|*src*|Dönüş değeri|İçeriği *hedef*|
+|----------------------|------------------------|-----------------|------------------|----------------------------------|
+|**NULL**|tüm|tüm|**EINVAL**|değiştirilmedi|
+|tüm|tüm|**NULL**|**EINVAL**|*Hedef*0 olarak ayarlanırsa [0]|
+|tüm|0 veya çok küçük|tüm|**ERANGE**|*Hedef*0 olarak ayarlanırsa [0]|
+
+## <a name="remarks"></a>Açıklamalar
+
+`strcpy_s` İşlevi adresini içeriği kopyalar *src*, tarafından belirtilen konuma sonlandırma null karakteri de dahil olmak üzere *taşınmaya*. Hedef dize kaynak dizesi ve onun sonlandırma null karakter tutabilecek kadar büyük olmalıdır. Davranışını `strcpy_s` kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
+
+`wcscpy_s` joker karakter sürümü `strcpy_s`, ve `_mbscpy_s` çok baytlı karakter sürümüdür. Bağımsız değişkenleri `wcscpy_s` joker karakter olan dizeleri; bu `_mbscpy_s` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+
+Varsa *taşınmaya* veya *src* null işaretçinin veya hedef boyutu dize *dest_size* anlatıldığıgibigeçersizparametreişleyicisiçağrılır,çokküçük[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** ve **errno** için **EINVAL** zaman *taşınmaya* veya  *src* null işaretçi ve döndürmeleri **ERANGE** ve **errno** için **ERANGE** hedef dizesi olduğunda çok küçük.
+
+Başarılı yürütme sırasında hedef her zaman null ile sonlandırılmış dizedir.
+
+C++'da, Bu işlevlerden birinin kullanımını arabellek uzunluğu otomatik olarak Infer ve böylece boyutu bağımsız değişkeni belirtmeniz gerekmez şablon aşırı yüklemeleri tarafından Basitleştirilmiş ve bunlar otomatik olarak işlevleri eski, daha az güvenli, daha yeni, değiştirebilirsiniz daha güvenli ortaklarınıza. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+
+Bu işlevler hata ayıklama kitaplığı sürümleri ilk 0xFE arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|`_tcscpy_s`|`strcpy_s`|`_mbscpy_s`|`wcscpy_s`|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|`strcpy_s`|\<String.h >|
+|`wcscpy_s`|\<String.h > veya \<wchar.h >|
+|`_mbscpy_s`|\<Mbstring.h >|
+
+Bu işlevler Microsoft özgüdür. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Üretim kalite kod, hatalar için denetlemeden, güvenli dize işlevleri bu örneği çağırır:
+
+```C
+// crt_strcpy_s.c
+// Compile by using: cl /W4 crt_strcpy_s.c
+// This program uses strcpy_s and strcat_s
+// to build a phrase.
+
+#include <string.h>     // for strcpy_s, strcat_s
+#include <stdlib.h>     // for _countof
+#include <stdio.h>      // for printf
+#include <errno.h>      // for return values
+
+int main(void)
+{
+    char string[80];
+
+    strcpy_s(string, _countof(string), "Hello world from ");
+    strcat_s(string, _countof(string), "strcpy_s ");
+    strcat_s(string, _countof(string), "and ");
+    strcat_s(string, _countof(string), "strcat_s!");
+
+    printf("String = %s\n", string);
+}
+```
+
+```Output
+String = Hello world from strcpy_s and strcat_s!
+```
+
+C++ kodu oluştururken şablonu sürümleri kullanmak daha kolay olabilir.
+
+```cpp
+// crt_wcscpy_s.cpp
+// Compile by using: cl /EHsc /W4 crt_wcscpy_s.cpp
+// This program uses wcscpy_s and wcscat_s
+// to build a phrase.
+
+#include <cstring>  // for wcscpy_s, wcscat_s
+#include <cstdlib>  // for _countof
+#include <iostream> // for cout, includes <cstdlib>, <cstring>
+#include <errno.h>  // for return values
+
+int main(void)
+{
+    wchar_t string[80];
+    // using template versions of wcscpy_s and wcscat_s:
+    wcscpy_s(string, L"Hello world from ");
+    wcscat_s(string, L"wcscpy_s ");
+    wcscat_s(string, L"and ");
+    // of course we can supply the size explicitly if we want to:
+    wcscat_s(string, _countof(string), L"wcscat_s!");
+
+    std::wcout << L"String = " << string << std::endl;
+}
+```
+
+```Output
+String = Hello world from wcscpy_s and wcscat_s!
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
+[strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md) <br/>
+[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md) <br/>
+[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) <br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) <br/>
+[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md) <br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) <br/>
+[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md) <br/>
+[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

@@ -1,27 +1,27 @@
 ---
-title: "Denetim (ATL Eğitmeni, bölüm 2) ekleme | Microsoft Docs"
-ms.custom: 
+title: Denetim (ATL Eğitmeni, bölüm 2) ekleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 dev_langs:
 - C++
 ms.assetid: c9575a75-1064-41f1-9697-7aada560c669
-caps.latest.revision: 
+caps.latest.revision: ''
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aed69a5dd421e967e1da33bb3a2f2c41fa80698d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 6bedc0fbe4cd1e4a612bcb329071668e783b3de8
+ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="adding-a-control-atl-tutorial-part-2"></a>Denetim Ekleme (ATL Eğitmeni, Bölüm 2)
 Bu adımda, Denetim projenize ekleme, onu oluşturmak ve bir Web sayfasında test.  
@@ -32,9 +32,9 @@ Bu adımda, Denetim projenize ekleme, onu oluşturmak ve bir Web sayfasında tes
   
 1.  Sınıf Görünümü'nde Çokgen projesine sağ tıklayın.  
   
-2.  İşaret **Ekle** kısayol menüsüne ve ardından üzerinde **sınıfı** alt menüsünde.  
+2.  İşaret **Ekle** kısayol menüsüne ve ardından üzerinde **yeni öğe** alt menüsünde.  
   
-     **Sınıfı Ekle** iletişim kutusu görüntülenir. Farklı nesne kategoriler, soldaki ağaç yapısındaki listelenir.  
+     **Yeni Öğe Ekle** iletişim kutusu görüntülenir. Farklı nesne kategoriler, soldaki ağaç yapısındaki listelenir.  
   
 3.  Tıklatın **ATL** klasör.  
   
@@ -47,11 +47,11 @@ Bu adımda, Denetim projenize ekleme, onu oluşturmak ve bir Web sayfasında tes
 |Alan|İçindekiler|  
 |-----------|--------------|  
 |**Kısa ad**|Denetim için girdiğiniz adı.|  
-|**Sınıfı**|Denetimi için oluşturulan C++ sınıf adı.|  
+|**sınıfı**|Denetimi için oluşturulan C++ sınıf adı.|  
 |**.h dosyası**|C++ sınıfının tanımını içerecek şekilde oluşturulan dosya.|  
 |**.cpp dosyası**|C++ sınıfı uyarlamasını içeren için oluşturulan dosya.|  
-|**Coclass'ı**|Bu denetim için bileşen sınıfı adı.|  
-|**Arabirimi**|Denetim özel yöntemleri ve özellikleri gerçekleştireceksiniz arabirimi adı.|  
+|**CoClass**|Bu denetim için bileşen sınıfı adı.|  
+|**Interface**|Denetim özel yöntemleri ve özellikleri gerçekleştireceksiniz arabirimi adı.|  
 |**Türü**|Denetim için bir açıklama.|  
 |**ProgID**|Denetim CLSID aramak için kullanılan okunabilir adı.|  
   
@@ -113,7 +113,7 @@ Bu adımda, Denetim projenize ekleme, onu oluşturmak ve bir Web sayfasında tes
   
  Sonra denetim için bir özel özellik ekleyeceksiniz.  
   
- [1. adım dön](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [Adıma 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)  
+ [1. adım dön](../atl/creating-the-project-atl-tutorial-part-1.md) &#124; [adıma 3](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Öğretici](../atl/active-template-library-atl-tutorial.md)
