@@ -1,12 +1,12 @@
 ---
 title: ultoa | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ultoa
@@ -30,17 +30,17 @@ dev_langs:
 helpviewer_keywords:
 - ultoa function
 ms.assetid: 71acf6b6-a0dc-4442-b5ab-2456ae013f88
-caps.latest.revision: 
+caps.latest.revision: ''
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e78a2e6f096da054f603c5be279a80c3b92066ef
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="ultoa"></a>ultoa
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_ultoa](../../c-runtime-library/reference/ultoa-ultow.md) veya Gelişmiş Güvenlik [_ultoa_s](../../c-runtime-library/reference/ultoa-s-ultow-s.md) yerine.

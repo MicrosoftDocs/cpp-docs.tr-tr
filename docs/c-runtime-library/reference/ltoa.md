@@ -1,12 +1,12 @@
 ---
 title: ltoa | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ltoa
@@ -29,17 +29,17 @@ dev_langs:
 helpviewer_keywords:
 - ltoa function
 ms.assetid: dc8f0367-3670-4174-b646-ae93fd8b674d
-caps.latest.revision: 
+caps.latest.revision: ''
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: bf158a4b276c83b8988dc9bc8a9ffa0575dc15b8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.sourcegitcommit: 1d11412c8f5e6ddf4edded89e0ef5097cc89f812
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/27/2018
 ---
 # <a name="ltoa"></a>ltoa
 Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_ltoa](../../c-runtime-library/reference/ltoa-ltow.md) veya Gelişmiş Güvenlik [_ltoa_s](../../c-runtime-library/reference/ltoa-s-ltow-s.md) yerine.
