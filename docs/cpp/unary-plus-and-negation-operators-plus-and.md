@@ -1,12 +1,12 @@
 ---
-title: "Birli artı ve değilleme işleçleri: + ve - | Microsoft Docs"
-ms.custom: 
+title: 'Birli artı ve değilleme işleçleri: + ve - | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - +
@@ -20,17 +20,17 @@ helpviewer_keywords:
 - + operator [C++], unary operators
 - + operator
 ms.assetid: 2c58c4f4-0d92-4ae3-9d0c-1a6157875cc1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12aba6e13f10d05c8559439427d2d28bcdad089d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8211cf9ebef808ad428e4c94ba97c6bcd22897ea
+ms.sourcegitcommit: cdd4808dcb274bbb29618286df4d1d4acd35b9bc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="unary-plus-and-negation-operators--and--"></a>Birli Artı ve Değilleme işleçleri: + ve -
 ## <a name="syntax"></a>Sözdizimi  
@@ -56,7 +56,7 @@ ms.lasthandoff: 12/21/2017
  İntegral yükseltme, iç işlenenlerde gerçekleştirilir ve ortaya çıkan tür işlenenin yükseltildiği türdür. Bkz: [standart dönüşümler](standard-conversions.md) yükseltme nasıl gerçekleştirildiğini hakkında daha fazla bilgi.  
   
 ## <a name="microsoft-specific"></a>Belirli Microsoft  
- Tekli değilleme imzasız miktarlarının işleneni 2 değerini çıkarılmasıyla gerçekleştirilir ^ burada n verilen imzasız türünde bir nesne bit sayısını alır. (Microsoft C++ ikiye aritmetik kullanan işlemci çalışır. Diğer işlemcilerde değilleme algoritması farklı olabilir.)  
+ Tekli değilleme imzasız miktarlarının işleneni 2 değerini çıkarılmasıyla gerçekleştirilir ^ burada n verilen imzasız türünde bir nesne bit sayısını alır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Birli işleçli ifadeler](../cpp/expressions-with-unary-operators.md)   
