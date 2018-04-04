@@ -1,6 +1,6 @@
 ---
-title: "/ZF (daha hızlı PDB oluşturma) | Microsoft Docs"
-ms.date: 02/22/2018
+title: /ZF (daha hızlı PDB oluşturma) | Microsoft Docs
+ms.date: 03/29/2018
 ms.technology:
 - cpp-tools
 ms.topic: article
@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 7012777643f993c552f79b58a02d4806c0ce4caa
-ms.sourcegitcommit: c770a343def04ae77522708387c3f7c470e49969
+ms.openlocfilehash: 7ae27e08e79d19e58c8440a5d7e5161eac9c306f
+ms.sourcegitcommit: 78e5e5cdbafd29e2a6ccf68d4cce215136952907
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="zf-faster-pdb-generation"></a>/ZF (daha hızlı PDB oluşturma)
 
@@ -34,7 +34,7 @@ Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en az
 
 Çünkü **/Zf** seçeneği yalnızca PDB oluşturma için geçerlidir, gerektirir [/zı](z7-zi-zi-debug-information-format.md) veya [/zı](z7-zi-zi-debug-information-format.md) seçeneği.
 
-**/Zf** seçeneği Visual Studio 2017 sürüm 15.1 başında olduğundan ve varsayılan olarak kapalıdır.
+**/Zf** seçeneği olan Visual Studio 2017 sürüm 15.1, başında Burada, varsayılan olarak kapalıdır. Visual Studio 2017 sürüm 15.7 başlangıç Preview 3, bu seçenek varsayılan olarak açık olduğunda **/zı** veya **/zi** seçeneği etkinleşir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
@@ -46,5 +46,5 @@ Daha hızlı PDB nesil paralel derlemelerde mspdbsrv.exe RPC çağrıları en az
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alfabetik Listelenmiş Derleyici Seçenekleri](compiler-options-listed-alphabetically.md)  
-[/MP (Birden Çok Süreçle Derleme)](mp-build-with-multiple-processes.md)  
+[Alfabetik Listelenmiş Derleyici Seçenekleri](compiler-options-listed-alphabetically.md)<br/>
+[/MP (Birden Çok Süreçle Derleme)](mp-build-with-multiple-processes.md)<br/>
