@@ -62,17 +62,7 @@
         "master": "master",
         "live": "live"
       }
-    },
-    {
-      "path_to_root": "dotnet-xref",
-      "url": "https://github.com/MicrosoftDocs/dotnet-xref",
-      "branch": "live",
-      "branch_mapping": {
-        "master": "master",
-        "live": "live",
-        "live-sxs" : "live"
-      }
-}
+    }
   ],
   "need_generate_pdf_url_template": true,
   "enable_incremental_build": true
