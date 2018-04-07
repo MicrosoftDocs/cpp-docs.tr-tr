@@ -1,33 +1,33 @@
 ---
-title: "Akıllı işaretçiler (Modern C++) | Microsoft Docs"
-ms.custom: 
+title: Akıllı işaretçiler (Modern C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-caps.latest.revision: 
+caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e5883cc7f028c2d64c038a2cdbd9b8365b7e61d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c92a0a6030f8e46fb52beee0bf8fd661b47cdf95
+ms.sourcegitcommit: cff1a8a49f0cd50f315a250c5dd27e15c173845f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 Modern C++ programlama standart kitaplığı içerir *akıllı işaretçiler*, hangi programları sağlamaya yardımcı olmak için kullanılan bellek ücretsiz ve kaynak sızdırıyor ve özel durum güvenlidir.  
   
 ## <a name="uses-for-smart-pointers"></a>Akıllı işaretçiler için kullanım alanları  
- Akıllı işaretçiler tanımlanmış `std` ad alanında [ \<bellek >](../standard-library/memory.md) üstbilgi dosyası. İçin kritik önem taşıyan [RAII](../cpp/objects-own-resources-raii.md) veya *kaynak edinme olan Initialialization* programlama deyim. Bu deyimin ana amacı, kaynak alımının nesnenin başlatılmasıyla aynı anda gerçekleşmesini sağlamaktır; böylece nesne için tüm kaynaklar bir kod satırında oluşturulur ve hazır hale getirilir. Pratikte temel RAII prensibi, yığın tarafından ayrılan herhangi bir kaynağın sahipliğini örneğin, dinamik olarak ayrılan belek veya sistem nesnesi tanıtıcıları, yok edicisi kaynağı silmek veya boşaltmak için gereken kodu ve herhangi bir temizleme kodunu içeren ve yığın tarafından ayrılan bir nesneye vermektir.  
+ Akıllı işaretçiler tanımlanmış `std` ad alanında [ \<bellek >](../standard-library/memory.md) üstbilgi dosyası. İçin kritik önem taşıyan [RAII](../cpp/objects-own-resources-raii.md) veya *kaynak edinme olan başlatma* programlama deyim. Bu deyimin ana amacı, kaynak alımının nesnenin başlatılmasıyla aynı anda gerçekleşmesini sağlamaktır; böylece nesne için tüm kaynaklar bir kod satırında oluşturulur ve hazır hale getirilir. Pratikte temel RAII prensibi, yığın tarafından ayrılan herhangi bir kaynağın sahipliğini örneğin, dinamik olarak ayrılan belek veya sistem nesnesi tanıtıcıları, yok edicisi kaynağı silmek veya boşaltmak için gereken kodu ve herhangi bir temizleme kodunu içeren ve yığın tarafından ayrılan bir nesneye vermektir.  
   
  Çoğu durumda gerçek bir kaynağı işaret etmek ve işaretçiyi hemen bir akıllı işaretçiye dönüştürmek için bir ham işaretçi veya kaynak tanıtıcısı kullanırsınız. Modern C++ programlamada, ham işaretçiler yalnızca performansın önemli olduğu ve sahiplik konusunda karışıklık olma ihtimali bulunmayan kapsam, döngü veya yardımcı işlevler açısından sınırlı olan küçük kod engellerinde kullanılır.  
   
@@ -77,7 +77,7 @@ Modern C++ programlama standart kitaplığı içerir *akıllı işaretçiler*, h
  Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.  
   
 -   `unique_ptr`   
-     Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyaç duyduğunuz belirli bilmiyorsanız varsayılan seçim olarak POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr`küçük ve etkili değildir; bir işaretçi boyutudur ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonundan alımı için rvalue başvuru destekler. Üstbilgi dosyası: `<memory>`. Daha fazla bilgi için bkz: [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).  
+     Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyaç duyduğunuz belirli bilmiyorsanız varsayılan seçim olarak POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve etkili değildir; bir işaretçi boyutudur ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonundan alımı için rvalue başvuru destekler. Üstbilgi dosyası: `<memory>`. Daha fazla bilgi için bkz: [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).  
   
 -   `shared_ptr`   
      Başvuru sayımı olan akıllı işaretçi. Birden fazla sahibe tek bir ham işaretçi atamak istediğinizde kullanın, örnek olarak bir kapsayıcıdan işaretçi kopyası döndürüp orijinalini saklamak istediğinizde kullanın. Ham işaretçi tüm kadar silinmez `shared_ptr` sahipler fazlası kapsam dışında veya aksi halde sahipliği verdiğiniz. Boyut iki işaretçi kadardır; biri nesne için ve biri başvuru sayısını içeren paylaşılan denetim bloğu için. Üstbilgi dosyası: `<memory>`. Daha fazla bilgi için bkz: [nasıl yapılır: shared_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-shared-ptr-instances.md) ve [shared_ptr sınıfı](../standard-library/shared-ptr-class.md).  

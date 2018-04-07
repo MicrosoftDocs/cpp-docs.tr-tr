@@ -1,12 +1,12 @@
 ---
-title: "Address-of işleci: &amp; | Microsoft Docs"
-ms.custom: 
+title: 'Address-of işleci: &amp; | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '&'
@@ -17,19 +17,19 @@ helpviewer_keywords:
 - '& operator'
 - '& operator [C++], address-of operator'
 ms.assetid: 2828221a-15f6-4acc-87fe-25e34feebb88
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 814b21839ac851e942aaee34ed28fd43facb418a
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dcc5d08f75839f428b981136e4aed0402cd72868
+ms.sourcegitcommit: d9ee6f777974d031570f4260c9581ea2c81ad875
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="address-of-operator-amp"></a>Address-of işleci:&amp;
+# <a name="address-of-operator-amp"></a>Address-of işleci: &amp;
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
@@ -37,11 +37,11 @@ ms.lasthandoff: 12/21/2017
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Address-of birli işleci (**&**), işlenen adresini alır. Address-of işleci işleneni işlevi Belirleyicisi ya da bir bit alanı değildir ve ile bildirilmemiş bir nesne atayan bir l-değeri olabilir **kaydetmek** depolama sınıfı tanımlayıcısı.  
+ Address-of birli işleci (**&**), işlenen adresini alır. Address-of işleci işleneni işlevi Belirleyicisi ya da bir bit alan değil bir nesne atayan bir l-değeri olabilir.  
   
  Address-of işleci yalnızca temel, yapısı, sınıf, değişkenlerle uygulanabilir veya dizi başvuruları dosya kapsam düzeyinde veya çok bildirilen birleşim türlerini alt indisli bir dizi. Bu ifadelerde address-of işleci içermeyen bir sabit ifadesine eklenecek veya adres, ifadesinden çıkarılır.  
   
- Uygulandığında işlevler veya l değerleri, ifadenin sonucu için bir işaretçi türü (r) işleneni türünden türetilir. Örneğin, işlenen türü ise `char`, ifade türü işaretçinin sonucudur `char`. Uygulanan address-of işleci, **const** veya `volatile` nesneleri, değerlendiren **const** `type`  **\***  veya `volatile` `type`  **\*** , burada `type` özgün nesne türüdür.  
+ Uygulandığında işlevler veya l değerleri, ifadenin sonucu için bir işaretçi türü (r) işleneni türünden türetilir. Örneğin, işlenen türü ise `char`, ifade türü işaretçinin sonucudur `char`. Uygulanan address-of işleci, **const** veya `volatile` nesneleri, değerlendiren **const** `type` **\*** veya `volatile` `type` **\***, burada `type` özgün nesne türüdür.  
   
  Ne zaman address-of işleci uygulanan bir [tam adı](http://msdn.microsoft.com/en-us/3fefb16d-8120-4627-8b3f-3d90fbdcd1df), sonuç bağlıdır *tam adının* statik bir üyenin belirtir. Bu durumda, üye bildiriminde belirtilen tür için bir işaretçi sonucudur. Üye statik değilse sonucu gösteren bir işaretçidir üye *adı* tarafından gösterilen sınıfının *tam-sınıfı-adının*. (Bkz [birincil ifadeler](../cpp/primary-expressions.md) hakkında daha fazla bilgi için *tam-sınıfı-adının*.) Aşağıdaki kod parçası, nasıl sonucu, üye statik olmasına bağlı olarak farklılık gösterir:  
   

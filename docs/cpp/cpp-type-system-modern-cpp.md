@@ -1,27 +1,27 @@
 ---
-title: "C++ tür sistemi (Modern C++) | Microsoft Docs"
-ms.custom: 
+title: C++ tür sistemi (Modern C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-caps.latest.revision: 
+caps.latest.revision: 24
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c4e86ffe91c2c0bf6a914e8f735b5faca6ae45f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7abede5a7370461b0e77bd51ea12f7ab9b184e5c
+ms.sourcegitcommit: cff1a8a49f0cd50f315a250c5dd27e15c173845f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="c-type-system-modern-c"></a>C++ Tür Sistemi (Modern C++)
 Kavramı *türü* c++'ta çok önemlidir. Her değişken, işlev bağımsız değişkeni ve işlev dönüş değeri; derlenebilmeleri için bir türe sahip olmalıdır. Ayrıca, her ifadeye (değişmez değerler dahil), değerlendirilmeden önce derleyicisi tarafından dolaylı olarak bir tür tanımlanır. Bazı örnekler türlerinin `int` tam sayı değerlerini depolamak için `double` kayan nokta değerlerini depolamak için (olarak da bilinen *skaler* veri türleri), veya standart kitaplığı sınıfı [std::basic_string](../standard-library/basic-string-class.md) metin depolamak için. Kendi türü tanımlayarak oluşturabileceğiniz bir `class` veya `struct`. Tür, değişken (veya ifade sonucu) için atanacak bellek miktarını, bu değişkende depolanabilecek değer türlerini, bu değerlerin (bit modelleri olarak) nasıl yorumlanacağını ve gerçekleştirilebilecek işlemleri belirtir. Bu makale, C++ tür sistemiyle ilgili önemli özellikleri basit bir şekilde inceler.  
@@ -44,7 +44,7 @@ Kavramı *türü* c++'ta çok önemlidir. Her değişken, işlev bağımsız de�
   
  Aşağıdaki örnek, her biri için bazı açıklamalar ile birlikte bazı basit değişken bildirimlerini gösterir. Örnek ayrıca derleyicinin tür bilgisini değişkende bulunan belirli sonraki işlemlere izin vermek veya bunları yasaklamak için nasıl kullandığını gösterir.  
   
-```  
+```cpp  
   
 int result = 0;              // Declare and initialize an integer.  
 double coefficient = 10.8;   // Declare and initialize a floating   
@@ -70,7 +70,7 @@ int maxValue;                // Not recommended! maxValue contains
   
  Aşağıdaki çizim, yerleşik türlerin göreli boyutlarını gösterir:  
   
- ![Bayt cinsinden boyutu yerleşik &#45; türleri](../cpp/media/built-intypesizes.png "yerleşik inTYpeSizes")  
+ ![Bayt cinsinden boyutu yerleşik&#45;türlerinde](../cpp/media/built-intypesizes.png "yerleşik inTYpeSizes")  
   
  Aşağıdaki tablo en sık kullanılan temel türleri listeler:  
   
@@ -91,7 +91,7 @@ int maxValue;                // Not recommended! maxValue contains
 ## <a name="const-type-qualifier"></a>const türü niteleyici  
  Herhangi bir yerleşik veya kullanıcı tanımlı tür, const anahtar sözcük aracılığıyla nitelendirilebilir. Ek olarak, üye işlevleri olabilir `const`-tam ve hatta `const`-aşırı yüklendi. Değeri bir `const` türü başlatıldıktan sonra değiştirilemez.  
   
-```  
+```cpp  
   
 const double PI = 3.1415;  
 PI = .75 //Error. Cannot modify const variable.  
@@ -119,7 +119,7 @@ PI = .75 //Error. Cannot modify const variable.
   
  Bilmeniz gereken ilk şey, bir ham işaretçi değişkeni bildirmenin, yalnızca başvuru kaldırıldığında işaretçinin başvuracağı bellek konumunun adresini depolamak için gereken belleği ayıracağıdır. Veri değeri için bellek ayırma (olarak da bilinir *yedekleme deposu*) henüz ayrılmamış. Diğer bir deyişle, bir ham işaretçi değişkeni bildirerek gerçek bir veri değişkeni yerine bir bellek adresi değişkeni oluşturursunuz. Bir yedekleme belleğine geçerli bir adres içerdiğinden emin olmadan önce, bir işaretçi değişkeninin başvurusunun kaldırılması, programınızda tanımlanmamış bir davranışa (genellikle önemli bir hata) neden olabilir. Aşağıdaki örnek bu türde bir hata gösterir.  
   
-```  
+```cpp  
   
 int* pNumber;       // Declare a pointer-to-int variable.  
 *pNumber = 10;      // error. Although this may compile, it is  
@@ -131,7 +131,7 @@ int* pNumber;       // Declare a pointer-to-int variable.
   
  Örnek, gerçek tamsayı verisini depolamak için ayrılmış herhangi bir belleği veya atanmış geçerli bir bellek adresi olmayan bir işaretçi türünün başvurusunu kaldırır. Aşağıdaki kod bu hataları düzeltir:  
   
-```  
+```cpp  
   
     int number = 10;          // Declare and initialize a local integer  
                               // variable for data backing store.  
@@ -149,9 +149,9 @@ int* pNumber;       // Declare a pointer-to-int variable.
   
  Yedekleme oluşturmak için düzeltilen kod örneği kullanan yerel yığın belleği depolamak `pNumber` işaret eder. Kolaylık olması için bir temel türü kullanıyoruz. Uygulamada, yedekleme deposu için işaretçileri olan dinamik olarak ayrılan bellek adı verilen bir alanda çoğu genellikle kullanıcı tanımlı türler *yığın* (veya *ücretsiz deposu*) kullanarak bir `new` anahtar sözcüğü ifade (C-style programlamada eski `malloc()` C çalışma zamanı kitaplığı işlevi kullanıldı). Bir sınıf tanımı üzerinde özellikle temel alıyorsa ayrılan sonra bu değişkenler genellikle nesneler olarak bilinir. İle ayrılan bellek `new` karşılık gelen tarafından silinmelidir `delete` deyimi (veya kullandıysanız `malloc()` , C çalışma zamanı işlevi ayrılacak işlevi `free()`).  
   
- Ancak, bir dinamik olarak ayrılan nesnesi-adlı bir kaynak hataya neden olan özellikle karmaşık kodda silmeyi unutursanız kolay bir *bellek sızıntısı*. Bu nedenle, ham işaretçilerin modern C++'ta kullanılması önerilmez. Neredeyse her zaman bir ham işaretçi sarmalamak daha iyi bir [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md), hangi otomatik olarak yayın bellek (kod akıllı işaretçi için kapsam dışına çıktığında) kendi yıkıcı çağrıldığında; akıllı işaretçiler kullanarak, neredeyse C++ programlarında hataların tam bir sınıf ortadan kaldırır. Aşağıdaki örnekte, varsayalım `MyClass` genel yöntem kullanıcı tarafından tanımlanan bir türü`DoSomeWork();`  
+ Ancak, bir dinamik olarak ayrılan nesnesi-adlı bir kaynak hataya neden olan özellikle karmaşık kodda silmeyi unutursanız kolay bir *bellek sızıntısı*. Bu nedenle, ham işaretçilerin modern C++'ta kullanılması önerilmez. Neredeyse her zaman bir ham işaretçi sarmalamak daha iyi bir [akıllı işaretçi](../cpp/smart-pointers-modern-cpp.md), hangi otomatik olarak yayın bellek (kod akıllı işaretçi için kapsam dışına çıktığında) kendi yıkıcı çağrıldığında; akıllı işaretçiler kullanarak, neredeyse C++ programlarında hataların tam bir sınıf ortadan kaldırır. Aşağıdaki örnekte, varsayalım `MyClass` genel yöntem kullanıcı tarafından tanımlanan bir türü `DoSomeWork();`  
   
-```  
+```cpp  
   
 void someFunction() {  
     unique_ptr<MyClass> pMc(new MyClass);  
