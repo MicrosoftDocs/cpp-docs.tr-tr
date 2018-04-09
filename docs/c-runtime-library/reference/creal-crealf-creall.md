@@ -1,13 +1,10 @@
 ---
 title: creal, crealf, creall | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 03/30/2018
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
 ms.topic: reference
 apiname:
 - creal
@@ -40,64 +37,62 @@ helpviewer_keywords:
 - crealf function
 - creall function
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75e3ebc7a5f93084e925eece49adedf1b41df8ac
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: fc43c72c4fcbaf9d24c1a2c4cc7b7923d0c67878
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="creal-crealf-creall"></a>creal, crealf, creall
-Karmaşık bir sayının gerçek bölüm alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double creal(   
-   _Dcomplex z   
-);  
-float creal(   
-   _Fcomplex z   
-);  // C++ only  
-long double creal(   
-   _Lcomplex z   
-);  // C++ only  
-float crealf(   
-   _Fcomplex z   
-);  
-long double creall(   
-  _Lcomplex z   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `z`  
- Bir karmaşık sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Gerçek parçası `z`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `creal` Süren `_Fcomplex` veya `_Lcomplex` değerleri ve return `float` veya `long double` değerleri. Bir C programı `creal` her zaman alan bir `_Dcomplex` değeri ve döndürür bir `double` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`creal`,               `crealf`, `creall`|\<Complex.h >|\<ccomplex >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
- [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+
+Karmaşık bir sayının gerçek bölüm alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double creal( _Dcomplex z );
+float crealf( _Fcomplex z );
+long double creall( _Lcomplex z );
+```
+
+```cpp
+float creal( _Fcomplex z );  // C++ only
+long double creal( _Lcomplex z );  // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*z*<br/>
+Bir karmaşık sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Gerçek parçası *z*.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `creal` Süren **_Fcomplex** veya **_Lcomplex** değerleri ve return **float** veya **uzun çift** değerleri. Bir C programı `creal` her zaman alan bir **_Dcomplex** değeri ve döndürür bir **çift** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|`creal`, `crealf`, `creall`|\<Complex.h >|\<ccomplex >|
+
+**_Fcomplex**, **_Dcomplex**, ve **_Lcomplex** türleridir uygulanmayan yerel C99 türleri Microsoft'a özgü eşdeğerlerini **_Complex float** , **çift _Complex**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[_Cbuild, _FCbuild, _LCbuild](../../c-runtime-library/reference/cbuild-fcbuild-lcbuild.md)<br/>
+[Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
+[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
+[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)<br/>

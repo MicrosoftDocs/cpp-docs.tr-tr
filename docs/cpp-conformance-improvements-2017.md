@@ -14,11 +14,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6799b1b53366d342dc2dacec7bff756c7396d7cb
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: 018b4941171dd466cb8230f7e2614fda3b019752
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-and-157improvements157"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153), [15,5](#improvements_155), [15,6](#improvements_156), ve [15.7](#improvements_157)
 
@@ -1711,6 +1711,32 @@ int main() {
 }
 
 ```
+
+### <a name="variadic-template-constructor-base-class-initialization-list"></a>Variadic şablon Oluşturucusu temel sınıf başlatma listesi
+
+Visual Studio'nun önceki sürümleri, şablon bağımsız değişken eksik variadic şablon Oluşturucusu temel sınıf başlatma listesi yanlışlıkla hatasız izin. Visual Studio 2017 içinde sürüm 15.7, derleyici hatası oluştu.
+
+Visual Studio 2017 sürüm 15.7 başlatır aşağıdaki kod örneğinde *hata C2614: D\<int >: Geçersiz üye başlatma: 'B' bir temel veya üyesi değil*
+
+```cpp
+template<typename T>
+struct B {};
+
+template<typename T>
+struct D : B<T>
+{
+
+    template<typename ...C>
+    D() : B() {} // C2614. Missing template arguments to B.
+};
+
+D<int> d;
+
+```
+
+Hatayı düzeltmek için B B() ifade değiştirmek\<T > ().
+
+
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
