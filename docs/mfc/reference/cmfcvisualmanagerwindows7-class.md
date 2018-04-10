@@ -1,12 +1,12 @@
 ---
-title: "CMFCVisualManagerWindows7 sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCVisualManagerWindows7 sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CMFCVisualManagerWindows7
@@ -19,7 +19,7 @@ dev_langs:
 helpviewer_keywords:
 - CMFCVisualManagerWindows7 Class [MFC]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
 manager: ghogen

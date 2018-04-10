@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2106 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2106 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2106
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2106
 ms.assetid: d5c91a2e-04e4-4770-8478-788b98c52a53
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

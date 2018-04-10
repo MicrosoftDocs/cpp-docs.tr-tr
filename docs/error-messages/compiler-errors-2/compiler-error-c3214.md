@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3214 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3214 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C3214
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3214
 ms.assetid: 49ee4a9a-2549-4adb-9d3a-38e154303c2e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

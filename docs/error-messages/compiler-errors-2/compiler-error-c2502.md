@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2502 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2502 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2502
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2502
 ms.assetid: affa0b86-15fc-4e17-b7f2-6aad4a3771c4
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen

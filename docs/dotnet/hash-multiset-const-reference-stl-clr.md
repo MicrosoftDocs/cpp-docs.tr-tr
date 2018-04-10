@@ -1,12 +1,12 @@
 ---
 title: hash_multiset::const_reference (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::const_reference
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - const_reference member [STL/CLR]
 ms.assetid: 86d01c6b-0540-4ff9-bee6-cdf37bfc693e
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

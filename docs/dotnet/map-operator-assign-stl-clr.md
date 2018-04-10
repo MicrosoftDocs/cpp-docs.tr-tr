@@ -1,12 +1,12 @@
 ---
 title: Map::operator (STL/CLR) = | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::map::operator=
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - operator= member [STL/CLR]
 ms.assetid: d27d42c3-9910-407c-8b35-e09641345940
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

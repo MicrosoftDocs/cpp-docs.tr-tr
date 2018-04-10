@@ -1,12 +1,12 @@
 ---
 title: Abort kullanma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Abort
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - abort function
 ms.assetid: 3ba39b78-ef74-4a8d-8dee-2d62442de174
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

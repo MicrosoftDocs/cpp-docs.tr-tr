@@ -1,12 +1,12 @@
 ---
 title: hash_map::value_comp (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::value_comp
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - value_comp member [STL/CLR]
 ms.assetid: b11a2dee-07e8-450c-8f85-979c0a15ae64
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

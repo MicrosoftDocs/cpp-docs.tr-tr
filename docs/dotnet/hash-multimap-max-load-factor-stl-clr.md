@@ -1,12 +1,12 @@
 ---
 title: hash_multimap::max_load_factor (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap::max_load_factor
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - max_load_factor member [STL/CLR]
 ms.assetid: acea6293-9c6f-4c5e-a9a3-998e755ba1fd
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

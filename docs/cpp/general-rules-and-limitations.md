@@ -1,17 +1,17 @@
 ---
-title: "Genel kurallar ve sınırlamalar | Microsoft Docs"
-ms.custom: 
+title: Genel kurallar ve sınırlamalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 6c48902d-4259-4761-95d4-e421d69aa050
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "CMemoryState yapısı | Microsoft Docs"
-ms.custom: 
+title: CMemoryState yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CMemoryState
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
 manager: ghogen

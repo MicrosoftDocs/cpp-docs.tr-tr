@@ -1,12 +1,12 @@
 ---
-title: "Üye erişimi | Microsoft Docs"
-ms.custom: 
+title: Üye erişimi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - smart pointers, definition
 - smart pointers
 ms.assetid: 8c7b2c43-eb92-4d42-9a8e-61aa37d71333
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen

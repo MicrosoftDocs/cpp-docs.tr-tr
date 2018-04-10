@@ -1,12 +1,12 @@
 ---
 title: hash_map::generic_reverse_iterator (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::generic_reverse_iterator
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - generic_reverse_iterator member [STL/CLR]
 ms.assetid: fca8d882-8fb3-498b-85d1-6db160134564
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

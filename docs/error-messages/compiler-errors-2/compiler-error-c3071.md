@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3071 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3071 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3071
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3071
 ms.assetid: 69879e66-a60e-4058-9bbd-d5c5e2d8ee37
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "Yönetilen özel durumları kullanmaya ilişkin temel kavramlar | Microsoft Docs"
-ms.custom: 
+title: Yönetilen özel durumları kullanmaya ilişkin temel kavramlar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
 manager: ghogen

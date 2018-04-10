@@ -1,17 +1,17 @@
 ---
-title: "Belge görünüm örnek listesi | Microsoft Docs"
-ms.custom: 
+title: Belge görünüm örnek listesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: ghogen

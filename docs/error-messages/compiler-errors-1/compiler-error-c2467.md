@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2467 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2467 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2467
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2467
 ms.assetid: f9ead270-5d0b-41cc-bdcd-586a647c67a7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

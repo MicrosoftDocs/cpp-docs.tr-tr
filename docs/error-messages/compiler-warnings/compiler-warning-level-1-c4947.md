@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4947 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4947 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C4947
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C4947
 ms.assetid: 5a1d484e-b4c7-4de2-a145-d8dcfc2fc1d2
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen

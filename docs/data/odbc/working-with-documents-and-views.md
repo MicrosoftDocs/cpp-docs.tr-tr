@@ -1,12 +1,12 @@
 ---
-title: "Belgeler ve görünümler ile çalışma | Microsoft Docs"
-ms.custom: 
+title: Belgeler ve görünümler ile çalışma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - views [C++], MFC
 - documents [C++], MFC
 ms.assetid: 349b142d-1c5a-4b99-9de4-241e41d3d2f1
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen

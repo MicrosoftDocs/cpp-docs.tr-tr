@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3211 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3211 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C3211
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3211
 ms.assetid: 85e33fed-3b59-4315-97e6-20d31c6a985a
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

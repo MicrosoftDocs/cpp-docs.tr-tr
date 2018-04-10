@@ -1,12 +1,12 @@
 ---
-title: "İşleç&gt;= (set) (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: İşleç&gt;= (set) (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::set::operator>=
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - operator>= member [STL/CLR]
 ms.assetid: d08a0fc9-02e4-4e05-b469-bac325c38370
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

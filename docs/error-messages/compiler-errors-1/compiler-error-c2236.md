@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2236 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2236 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2236
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2236
 ms.assetid: 0b6771a7-a783-4729-9c3d-7a3339c432cc
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen

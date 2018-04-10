@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2749 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2749 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2749
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2749
 ms.assetid: a81aef36-cdca-4d78-89d5-b72eff2500b2
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

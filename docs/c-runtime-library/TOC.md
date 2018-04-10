@@ -29,6 +29,7 @@
 ## [Ara Bellek Düzenlemesi](buffer-manipulation.md)
 ## [Bayt Sınıflandırması](byte-classification.md)
 ## [Karakter Sınıflaması](character-classification.md)
+## [Karmaşık matematik desteği](complex-math-support.md)
 ## [Veri Hizalama](data-alignment.md)
 ## [Veri Dönüştürme](data-conversion.md)
 ## [Hata Ayıklama Yordamları](debug-routines.md)

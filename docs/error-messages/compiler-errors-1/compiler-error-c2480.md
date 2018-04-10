@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2480 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2480 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2480
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2480
 ms.assetid: 1a58d1c2-971b-4084-96fa-f94aa51c02f1
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen

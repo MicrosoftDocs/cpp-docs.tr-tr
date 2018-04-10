@@ -1,12 +1,12 @@
 ---
 title: Stack::Stack (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::stack::stack
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - stack member [STL/CLR]
 ms.assetid: f1cfb3fe-4d22-41e5-906b-e8faa0bcde9b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

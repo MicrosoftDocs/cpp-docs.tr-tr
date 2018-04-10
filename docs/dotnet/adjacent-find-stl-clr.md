@@ -1,12 +1,12 @@
 ---
 title: adjacent_find (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::adjacent_find
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - adjacent_find function
 ms.assetid: 48bf57ea-b128-4d16-97c5-01d8a378369f
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikeblome
 ms.author: mblome
 manager: ghogen

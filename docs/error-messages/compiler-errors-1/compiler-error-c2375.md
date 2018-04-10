@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2375 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2375 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C2375
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2375
 ms.assetid: 193c5e8b-1b20-4928-8a02-8c1cddaf2a26
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

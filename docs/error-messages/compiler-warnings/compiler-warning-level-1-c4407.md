@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4407 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4407 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C4407
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C4407
 ms.assetid: 32bc2c21-363a-4bb8-b486-725faeaededc
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen

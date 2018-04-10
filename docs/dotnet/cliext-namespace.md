@@ -1,12 +1,12 @@
 ---
 title: cliext Namespace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - namespaces [C++], STL/CLR
 - cliext namespace
 ms.assetid: 75a0c1f8-6e21-46d5-adaf-899845c15b38
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen

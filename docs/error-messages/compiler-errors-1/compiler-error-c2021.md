@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2021 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2021 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2021
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2021
 ms.assetid: 064f32e2-3794-48d5-9767-991003dcb36a
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
 title: hash_multiset::rend (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::rend
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - rend member [STL/CLR]
 ms.assetid: 6d007ac9-18cc-4b51-8384-a4ff65d23e97
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
 manager: ghogen

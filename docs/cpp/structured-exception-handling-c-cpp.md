@@ -1,12 +1,12 @@
 ---
-title: "Yapılandırılmış özel durum işleme (C/C++) | Microsoft Docs"
-ms.custom: 
+title: Yapılandırılmış özel durum işleme (C/C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - try-catch keyword [C++], termination handlers
 - C++ exception handling, exception handlers
 ms.assetid: dd3b647d-c269-43a8-aab9-ad1458712976
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
 manager: ghogen

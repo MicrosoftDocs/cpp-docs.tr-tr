@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3748 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3748 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3748
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3748
 ms.assetid: 6fe71a0a-dd93-4ce6-9729-b9616360cf34
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "İşleç&gt; (kuyruk) (STL/CLR) | Microsoft Docs"
-ms.custom: 
+title: İşleç&gt; (kuyruk) (STL/CLR) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::queue::operator>
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - operator> member [STL/CLR]
 ms.assetid: 40396a01-b2b6-4921-a1eb-f8704b015b75
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

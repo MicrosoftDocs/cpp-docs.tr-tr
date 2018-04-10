@@ -1,12 +1,12 @@
 ---
-title: "Seçim deyimleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Seçim deyimleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: 'index-page '
 dev_langs:
 - C++
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - selection statements [C++], syntax
 - selection statements
 ms.assetid: 2ce662fc-5e62-461b-ac31-2c159d8ef33b
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen

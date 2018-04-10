@@ -1,12 +1,12 @@
 ---
-title: "unordered_multimap sınıfı | Microsoft Docs"
-ms.custom: 
+title: unordered_multimap sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - unordered_map/std::unordered_multimap
@@ -146,7 +146,7 @@ helpviewer_keywords:
 - std::unordered_multimap::size
 - std::unordered_multimap::swap
 ms.assetid: 4baead6c-5870-4b85-940f-a47d6b891c27
-caps.latest.revision: 
+caps.latest.revision: 28
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "Dize değişmez değeri | Microsoft Docs"
-ms.custom: 
+title: Dize değişmez değeri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - string literals
 - strings [C++], string literals
 ms.assetid: 6d1fc3f8-0d58-4d68-9678-16b4f6dc4766
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

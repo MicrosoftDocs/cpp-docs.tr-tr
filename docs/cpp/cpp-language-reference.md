@@ -1,12 +1,12 @@
 ---
-title: "C++ Dil Başvurusu | Microsoft Docs"
-ms.custom: 
+title: C++ Dil Başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: 'index-page '
 dev_langs:
 - C++
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - language reference, Visual C++
 - Visual C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikeblome
 ms.author: mblome
 manager: ghogen

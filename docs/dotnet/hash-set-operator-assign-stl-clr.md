@@ -1,12 +1,12 @@
 ---
 title: hash_set::operator (STL/CLR) = | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set::operator=
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - operator= member [STL/CLR]
 ms.assetid: 25ee3afd-90cd-483f-ae03-b52ce1396090
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

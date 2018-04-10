@@ -1,12 +1,12 @@
 ---
-title: "Kaynak Derleyicisi hatası RW2002 | Microsoft Docs"
-ms.custom: 
+title: Kaynak Derleyicisi hatası RW2002 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - RW2002
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - RW2002
 ms.assetid: b1d1a49b-b50b-4b0b-9f09-c7762e2dbe8f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

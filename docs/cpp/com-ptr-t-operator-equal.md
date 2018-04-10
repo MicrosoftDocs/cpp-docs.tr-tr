@@ -1,12 +1,12 @@
 ---
 title: _com_ptr_t::operator = | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - _com_ptr_t.operator=
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - = operator [C++], with specific Visual C++ objects
 - operator= [C++], pointers
 ms.assetid: 46849455-371c-4d0f-bae4-c1f737d2ca4a
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "İfade değerlendirici hatası CXX0013 | Microsoft Docs"
-ms.custom: 
+title: İfade değerlendirici hatası CXX0013 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - CXX0013
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - CAN0013
 - CXX0013
 ms.assetid: cf571e37-008d-47cd-80fa-59e96b1146e1
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4028 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4028 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C4028
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C4028
 ms.assetid: c3e8b70b-e870-416c-a285-bba5f71dbfc6
-caps.latest.revision: 
+caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
 manager: ghogen

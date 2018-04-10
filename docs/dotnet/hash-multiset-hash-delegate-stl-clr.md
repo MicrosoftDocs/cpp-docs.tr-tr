@@ -1,12 +1,12 @@
 ---
 title: hash_multiset::hash_delegate (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multiset::hash_delegate
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - hash_delegate member [STL/CLR]
 ms.assetid: 61ccfdfb-6a3c-40aa-902f-49e004a31a75
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

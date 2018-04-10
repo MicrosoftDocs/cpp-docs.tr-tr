@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (düzey 4) C4725 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 4) C4725 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C4725
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C4725
 ms.assetid: effa0335-71c3-4b3b-8618-da4b9b46a95d
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

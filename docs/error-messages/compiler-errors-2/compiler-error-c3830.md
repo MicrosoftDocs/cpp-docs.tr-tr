@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3830 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3830 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3830
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3830
 ms.assetid: c9798f88-5001-4067-9fb1-09957ddc6fa8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

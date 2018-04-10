@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3825 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3825 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3825
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3825
 ms.assetid: 18e204a1-f26e-42c6-8d74-2b49cc95f940
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen

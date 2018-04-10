@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: derleme uyumluluk sorunlarını tanılama ve düzeltme (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: derleme uyumluluk sorunlarını tanılama ve düzeltme (C + +/ CLI) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 297c71e3-04a8-4d24-a5dc-b04a2c5cc6fb
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen

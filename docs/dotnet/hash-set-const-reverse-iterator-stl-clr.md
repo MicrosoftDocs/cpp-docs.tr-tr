@@ -1,12 +1,12 @@
 ---
 title: hash_set::const_reverse_iterator (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_set::const_reverse_iterator
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - const_reverse_iterator member [STL/CLR]
 ms.assetid: 26a58553-3c03-4ded-9d70-65dba6520184
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

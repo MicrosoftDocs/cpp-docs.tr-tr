@@ -1,12 +1,12 @@
 ---
-title: "CMFCShellListCtrl sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCShellListCtrl sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CMFCShellListCtrl
@@ -51,7 +51,7 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-caps.latest.revision: 
+caps.latest.revision: 30
 author: mikeblome
 ms.author: mblome
 manager: ghogen

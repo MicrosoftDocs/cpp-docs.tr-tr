@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2531 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2531 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2531
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2531
 ms.assetid: c49afe15-55f8-4dc8-ac01-bf653622a7db
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

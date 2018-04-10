@@ -1,12 +1,12 @@
 ---
-title: "Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC) | Microsoft Docs"
-ms.custom: 
+title: 'Kayıt kümesi: Yer işaretleri ve Mutlak Konumlar (ODBC) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - SetAbsolutePosition
@@ -30,7 +30,7 @@ helpviewer_keywords:
 - GetBookmark method
 - SetAbsolutePosition method, bookmarks
 ms.assetid: 189788d6-33c1-41c5-9265-97db2a5d43cc
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen

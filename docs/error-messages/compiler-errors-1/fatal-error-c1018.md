@@ -1,12 +1,12 @@
 ---
-title: "Önemli hata C1018 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1018 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C1018
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C1018
 ms.assetid: 2ceb8a99-30b2-4b80-bf42-e9f3305b3c52
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

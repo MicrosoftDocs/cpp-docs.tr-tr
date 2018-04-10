@@ -1,12 +1,12 @@
 ---
-title: "BSCMAKE hatası BK1514 | Microsoft Docs"
-ms.custom: 
+title: BSCMAKE hatası BK1514 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - BK1514
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - BK1514
 ms.assetid: 7c7e2504-a490-44ab-bb1f-47385ee2f4b0
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

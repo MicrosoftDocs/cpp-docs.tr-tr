@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2858 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2858 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2858
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2858
 ms.assetid: 1fb1d770-307e-476e-9984-a1d8f8ce2820
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

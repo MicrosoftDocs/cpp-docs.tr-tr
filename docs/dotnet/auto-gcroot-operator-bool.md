@@ -1,12 +1,12 @@
 ---
 title: auto_gcroot::operator bool | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - auto_gcroot.operator bool
@@ -19,7 +19,7 @@ dev_langs:
 helpviewer_keywords:
 - bool operator
 ms.assetid: 87d38498-4221-4de8-8d02-c2dd2e6274ec
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

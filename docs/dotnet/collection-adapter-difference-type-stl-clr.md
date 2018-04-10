@@ -1,12 +1,12 @@
 ---
 title: collection_adapter::difference_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::collection_adapter::difference_type
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - difference_type member [STL/CLR]
 ms.assetid: ef263e3f-f932-4d64-9d27-429c7b8ba279
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen

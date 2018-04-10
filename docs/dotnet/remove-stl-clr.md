@@ -1,12 +1,12 @@
 ---
-title: "(STL/CLR) kaldırma | Microsoft Docs"
-ms.custom: 
+title: (STL/CLR) kaldırma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::remove
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - remove function [STL/CLR]
 ms.assetid: 85a11883-3e25-49aa-b4a0-b2cffd6dc110
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikeblome
 ms.author: mblome
 manager: ghogen

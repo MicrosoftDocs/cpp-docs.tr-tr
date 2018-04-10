@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2675 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2675 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2675
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2675
 ms.assetid: 4b92a12b-bff8-4dd5-a109-620065fc146c
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen

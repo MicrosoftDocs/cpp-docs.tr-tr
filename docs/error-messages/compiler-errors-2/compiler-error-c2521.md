@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2521 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2521 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2521
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2521
 ms.assetid: 6042821b-e345-4a54-a7e9-a2c9019ea016
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen

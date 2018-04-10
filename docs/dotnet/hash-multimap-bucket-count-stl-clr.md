@@ -1,12 +1,12 @@
 ---
 title: hash_multimap::bucket_count (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap::bucket_count
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - bucket_count member [STL/CLR]
 ms.assetid: 63b7e08e-16fb-42e5-b592-d1fd29c47637
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

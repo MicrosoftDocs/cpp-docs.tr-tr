@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3192 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3192 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3192
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3192
 ms.assetid: 8b0083d4-706f-46f6-858a-e1d9af464cf8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

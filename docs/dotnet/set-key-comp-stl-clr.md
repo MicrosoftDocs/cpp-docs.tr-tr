@@ -1,12 +1,12 @@
 ---
 title: set::key_comp (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::set::key_comp
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - key_comp member [STL/CLR]
 ms.assetid: 245db5d0-0610-4c68-a708-9bb99e48325c
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

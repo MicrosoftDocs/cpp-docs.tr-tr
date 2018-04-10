@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: C++ birlikte çalışması kullanarak katıştırılmış işaretçileri sıralama | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 dev_langs:
 - C++
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - pointers [C++], marshaling
 - data marshaling [C++], embedded pointers
 ms.assetid: 05fb8858-97f2-47aa-86b2-2c0ad713bdb2
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: ghogen

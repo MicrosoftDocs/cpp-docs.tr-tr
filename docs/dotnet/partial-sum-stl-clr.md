@@ -1,12 +1,12 @@
 ---
 title: partial_sum (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::partial_sum
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - partial_sum function [STL/CLR]
 ms.assetid: 845badae-8519-4ac8-9ea7-2b921bac7c51
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
 title: hash_map::ERASE (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::erase
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - erase member [STL/CLR]
 ms.assetid: 1d2a79aa-62f7-461c-8f7c-7b660eb189be
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

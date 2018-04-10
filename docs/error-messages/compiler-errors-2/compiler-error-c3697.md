@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3697 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3697 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3697
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3697
 ms.assetid: 2d3f63c4-b7f8-421d-a7a5-2bf17fd054f9
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

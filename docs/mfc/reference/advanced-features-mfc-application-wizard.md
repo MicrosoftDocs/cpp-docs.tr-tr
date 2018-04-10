@@ -1,12 +1,12 @@
 ---
-title: "Gelişmiş Özellikler, MFC Uygulama Sihirbazı | Microsoft Docs"
-ms.custom: 
+title: Gelişmiş Özellikler, MFC Uygulama Sihirbazı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vc.appwiz.mfc.exe.advanced
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: ghogen

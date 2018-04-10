@@ -1,12 +1,12 @@
 ---
 title: hash_multimap (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_multimap
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - <cliext/hash_map> header [STL/CLR]
 - <hash_map> header [STL/CLR]
 ms.assetid: cd78687b-8a05-48e0-9d22-8b8194ae3b0b
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
 manager: ghogen

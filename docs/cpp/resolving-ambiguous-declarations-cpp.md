@@ -1,17 +1,17 @@
 ---
-title: "Belirsiz bildirimler (C++) çözme | Microsoft Docs"
-ms.custom: 
+title: Belirsiz bildirimler (C++) çözme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
 ms.assetid: 3d773ee7-bbea-47de-80c2-cb0a9d4ec0b9
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3498 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3498 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3498
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3498
 ms.assetid: 0a5a7817-0872-4119-83bf-980a19113374
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

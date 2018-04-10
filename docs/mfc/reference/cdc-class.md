@@ -1,12 +1,12 @@
 ---
-title: "CDC sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDC sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CDC
@@ -411,7 +411,7 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-caps.latest.revision: 
+caps.latest.revision: 21
 author: mikeblome
 ms.author: mblome
 manager: ghogen

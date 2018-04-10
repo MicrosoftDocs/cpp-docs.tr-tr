@@ -1,12 +1,12 @@
 ---
 title: priority_queue::container_type (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::priority_queue::container_type
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - container_type member [STL/CLR]
 ms.assetid: 97d79791-53cb-48f9-a139-69502517569f
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

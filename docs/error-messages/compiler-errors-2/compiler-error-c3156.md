@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3156 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3156 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3156
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3156
 ms.assetid: 1876da78-b94e-4af7-9795-28f72b209b3e
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen

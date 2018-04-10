@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2883 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2883 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C2883
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2883
 ms.assetid: 5c6d689d-ed42-41ad-b5c0-e9c2e0b8c356
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

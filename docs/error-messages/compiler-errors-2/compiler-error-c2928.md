@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2928 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2928 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C2928
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2928
 ms.assetid: 869e57f4-7024-4cbe-b47b-6e1e2a6005c5
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

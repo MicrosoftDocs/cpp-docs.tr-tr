@@ -1,12 +1,12 @@
 ---
-title: "Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;) | Microsoft Docs"
-ms.custom: 
+title: Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - <<
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikeblome
 ms.author: mblome
 manager: ghogen

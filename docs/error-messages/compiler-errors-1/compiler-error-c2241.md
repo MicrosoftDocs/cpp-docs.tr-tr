@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C2241 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C2241 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C2241
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C2241
 ms.assetid: 2f4e2c2c-b95c-4afe-bbe0-4214cd39d140
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

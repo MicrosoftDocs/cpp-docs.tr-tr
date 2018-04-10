@@ -1,12 +1,12 @@
 ---
-title: "CDockSite sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDockSite sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CDockSite
@@ -95,7 +95,7 @@ helpviewer_keywords:
 - CDockSite [MFC], ShowRow
 - CDockSite [MFC], SwapRows
 ms.assetid: 0fcfff79-5f50-4281-b2de-a55653bbea40
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikeblome
 ms.author: mblome
 manager: ghogen

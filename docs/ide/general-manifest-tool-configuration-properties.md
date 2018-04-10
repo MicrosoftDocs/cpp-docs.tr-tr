@@ -1,12 +1,12 @@
 ---
-title: "Aracı yapılandırma özellikleri (Visual C++) bildirim | Microsoft Docs"
-ms.custom: 
+title: Aracı yapılandırma özellikleri (Visual C++) bildirim | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-ide
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.MergeRulesFile
@@ -18,7 +18,7 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: b99368a5-6819-482c-a06e-f2409290cfd1
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
 manager: ghogen

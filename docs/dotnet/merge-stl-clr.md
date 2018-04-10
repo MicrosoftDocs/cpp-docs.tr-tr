@@ -1,12 +1,12 @@
 ---
 title: Merge (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::merge
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - merge function [STL/CLR]
 ms.assetid: e42d3396-63a4-438a-964d-83e90405102e
-caps.latest.revision: 
+caps.latest.revision: 4
 author: mikeblome
 ms.author: mblome
 manager: ghogen

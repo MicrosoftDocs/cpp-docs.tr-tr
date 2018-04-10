@@ -1,12 +1,12 @@
 ---
-title: "CRecentFileList sınıfı | Microsoft Docs"
-ms.custom: 
+title: CRecentFileList sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CRecentFileList
@@ -31,7 +31,7 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
 manager: ghogen

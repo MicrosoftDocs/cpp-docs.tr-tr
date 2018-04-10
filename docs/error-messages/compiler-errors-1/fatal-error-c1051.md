@@ -1,12 +1,12 @@
 ---
-title: "Önemli hata C1051 | Microsoft Docs"
-ms.custom: 
+title: Önemli hata C1051 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C1051
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C1051
 ms.assetid: 87dcbd3b-0952-499a-bd42-64f9e8de2605
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

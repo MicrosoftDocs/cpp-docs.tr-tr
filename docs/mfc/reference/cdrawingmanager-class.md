@@ -1,12 +1,12 @@
 ---
-title: "CDrawingManager sınıfı | Microsoft Docs"
-ms.custom: 
+title: CDrawingManager sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CDrawingManager
@@ -65,7 +65,7 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-caps.latest.revision: 
+caps.latest.revision: 30
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3703 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3703 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3703
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3703
 ms.assetid: 7e3677d9-f2be-4c26-998f-423564e9023c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

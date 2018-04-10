@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: ADO.NET için BSTR dizelerini sıralama (C + +/ CLI) | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: ADO.NET için BSTR dizelerini sıralama (C + +/ CLI) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 dev_langs:
 - C++
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - ADO.NET [C++], marshaling BSTR strings
 - strings [C++], marshaling BSTR strings
 ms.assetid: 5daf4d9e-6ae8-4604-908f-855e37c8d636
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: ghogen

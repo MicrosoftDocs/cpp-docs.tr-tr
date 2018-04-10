@@ -1,12 +1,12 @@
 ---
-title: "Olay işleme | Microsoft Docs"
-ms.custom: 
+title: Olay işleme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,7 +15,7 @@ helpviewer_keywords:
 - intrinsic functions [C++], event handling
 - event handling [C++], Visual C++
 ms.assetid: 82de3f9a-2d88-470c-9527-8a5b54c8ced4
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen

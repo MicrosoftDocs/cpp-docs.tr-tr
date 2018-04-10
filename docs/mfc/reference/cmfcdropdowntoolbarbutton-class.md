@@ -1,12 +1,12 @@
 ---
-title: "CMFCDropDownToolbarButton sınıfı | Microsoft Docs"
-ms.custom: 
+title: CMFCDropDownToolbarButton sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CMFCDropDownToolbarButton
@@ -51,7 +51,7 @@ helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], SetDefaultCommand
 - CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-caps.latest.revision: 
+caps.latest.revision: 31
 author: mikeblome
 ms.author: mblome
 manager: ghogen

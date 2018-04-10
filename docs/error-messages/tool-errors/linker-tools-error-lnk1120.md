@@ -1,12 +1,12 @@
 ---
-title: "Bağlayıcı araçları hatası LNK1120 | Microsoft Docs"
-ms.custom: 
+title: Bağlayıcı araçları hatası LNK1120 | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - LNK1120
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - LNK1120
 ms.assetid: 56aa7d36-921f-4daf-b44d-cca0d4fb1b51
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
 title: deque::push_back (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::deque::push_back
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - push_back member [STL/CLR]
 ms.assetid: dafd5a4d-1fc7-434c-b129-a523099f8701
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikeblome
 ms.author: mblome
 manager: ghogen

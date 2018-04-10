@@ -1,12 +1,12 @@
 ---
 title: hash_map::hasher (STL/CLR) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - cliext::hash_map::hasher
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - hasher member [STL/CLR]
 ms.assetid: 72e4c4c9-ea35-4f75-98bb-e53979706de1
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: ghogen

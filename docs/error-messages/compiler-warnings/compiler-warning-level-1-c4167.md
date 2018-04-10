@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (düzey 1) C4167 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (düzey 1) C4167 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C4167
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C4167
 ms.assetid: 74a420bd-9371-4167-b1ee-74dd8680f97b
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

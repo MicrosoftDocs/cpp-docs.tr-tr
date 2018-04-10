@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3057 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3057 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - C3057
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - C3057
 ms.assetid: b0b2ba88-9c74-4bec-bf60-8fc72eade34c
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
