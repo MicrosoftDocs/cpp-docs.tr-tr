@@ -1,12 +1,12 @@
 ---
-title: "Bileşik Denetim genel işlevler | Microsoft Docs"
-ms.custom: 
+title: Bileşik Denetim genel işlevler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atlhost/ATL::AtlAxDialogBox
@@ -27,17 +27,17 @@ dev_langs:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-caps.latest.revision: 
+caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d5a062ea9477df9db026c75bc775df804ed86da4
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevler
 Bu işlevler ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama iletişim kutuları oluşturma için destek sağlar.  
@@ -64,7 +64,7 @@ Bu işlevler ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama ile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlhost.h  
 
-##  <a name="atlaxdialogbox"></a>AtlAxDialogBox  
+##  <a name="atlaxdialogbox"></a>  AtlAxDialogBox  
  Kullanıcı tarafından sağlanan bir iletişim kutusu şablonundan kalıcı bir iletişim kutusu oluşturur.  
    
 ```
@@ -107,7 +107,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
   
  Genel iletişim kutularında üzerinde daha fazla bilgi için bkz [iletişim](http://msdn.microsoft.com/library/windows/desktop/ms645452) ve [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK'sındaki.  
   
-##  <a name="atlaxcreatedialog"></a>AtlAxCreateDialog  
+##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Kullanıcı tarafından sağlanan bir iletişim kutusu şablonundan modsuz bir iletişim kutusu oluşturur.  
   
 ```
@@ -143,7 +143,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
   
  Bkz: [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) ve [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK.  
   
-##  <a name="atlaxcreatecontrol"></a>AtlAxCreateControl  
+##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
   
 
@@ -163,7 +163,7 @@ ATLAPI AtlAxCreateControl(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -189,7 +189,7 @@ ATLAPI AtlAxCreateControl(
   
  Lisanslı bir ActiveX denetimi oluşturmak için bkz: [AtlAxCreateControlLic](#atlaxcreatecontrollic).  
   
-##  <a name="atlaxcreatecontrolex"></a>AtlAxCreateControlEx  
+##  <a name="atlaxcreatecontrolex"></a>  AtlAxCreateControlEx  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır. Yeni denetim için bir arabirim işaretçisi ve olay havuzu da oluşturulabilir.  
   
 ```
@@ -211,7 +211,7 @@ ATLAPI AtlAxCreateControlEx(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -242,11 +242,11 @@ ATLAPI AtlAxCreateControlEx(
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlAxCreateControlEx`benzer [AtlAxCreateControl](#atlaxcreatecontrol) ancak aynı zamanda yeni oluşturulan denetlemek için bir arabirim işaretçisi almak ve denetim tarafından tetiklenen olayları almak için bir olay iç havuz ayarlamanıza olanak verir.  
+ `AtlAxCreateControlEx` benzer [AtlAxCreateControl](#atlaxcreatecontrol) ancak aynı zamanda yeni oluşturulan denetlemek için bir arabirim işaretçisi almak ve denetim tarafından tetiklenen olayları almak için bir olay iç havuz ayarlamanıza olanak verir.  
   
  Lisanslı bir ActiveX denetimi oluşturmak için bkz: [AtlAxCreateControlLicEx](#atlaxcreatecontrollicex).  
   
-##  <a name="atlaxcreatecontrollic"></a>AtlAxCreateControlLic  
+##  <a name="atlaxcreatecontrollic"></a>  AtlAxCreateControlLic  
  Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
 
 ```
@@ -266,7 +266,7 @@ ATLAPI AtlAxCreateControlLic(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -293,7 +293,7 @@ ATLAPI AtlAxCreateControlLic(
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) nasıl kullanılacağına ilişkin bir örnek için `AtlAxCreateControlLic`.  
   
-##  <a name="atlaxcreatecontrollicex"></a>AtlAxCreateControlLicEx  
+##  <a name="atlaxcreatecontrollicex"></a>  AtlAxCreateControlLicEx  
  Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır. Yeni denetim için bir arabirim işaretçisi ve olay havuzu da oluşturulabilir.  
   
 ```
@@ -316,7 +316,7 @@ ATLAPI AtlAxCreateControlLicEx(
   
 -   "{8E27C92B-1264-101C-8A2F-040224009C02}" gibi bir CLSID  
   
--   "Http://www.microsoft.com" gibi bir URL  
+-   Gibi bir URL "http://www.microsoft.com"  
   
 -   Etkin belge gibi bir başvuru "file://\\\Documents\MyDoc.doc"  
   
@@ -350,12 +350,12 @@ ATLAPI AtlAxCreateControlLicEx(
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlAxCreateControlLicEx`benzer [AtlAxCreateControlLic](#atlaxcreatecontrollic) ancak aynı zamanda yeni oluşturulan denetlemek için bir arabirim işaretçisi almak ve denetim tarafından tetiklenen olayları almak için bir olay iç havuz ayarlamanıza olanak verir.  
+ `AtlAxCreateControlLicEx` benzer [AtlAxCreateControlLic](#atlaxcreatecontrollic) ancak aynı zamanda yeni oluşturulan denetlemek için bir arabirim işaretçisi almak ve denetim tarafından tetiklenen olayları almak için bir olay iç havuz ayarlamanıza olanak verir.  
   
 ### <a name="example"></a>Örnek  
  Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) nasıl kullanılacağına ilişkin bir örnek için `AtlAxCreateControlLicEx`.  
   
-##  <a name="atlaxattachcontrol"></a>AtlAxAttachControl  
+##  <a name="atlaxattachcontrol"></a>  AtlAxAttachControl  
  Önceden oluşturulmuş bir denetimi belirtilen pencereye ekler.  
   
 ```
@@ -384,7 +384,7 @@ ATLAPI AtlAxAttachControl(
 > [!NOTE]
 >  İliştirilmekte olan denetim nesne doğru çağırmadan önce başlatılmalıdır `AtlAxAttachControl`.  
   
-##  <a name="atlaxgethost"></a>AtlAxGetHost  
+##  <a name="atlaxgethost"></a>  AtlAxGetHost  
  Belirli bir pencere için (varsa), kapsayıcıya tanıtıcısını göz önünde bulundurarak doğrudan bir arabirim işaretçisi alır.  
   
 ```
@@ -401,7 +401,7 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  
   
-##  <a name="atlaxgetcontrol"></a>AtlAxGetControl  
+##  <a name="atlaxgetcontrol"></a>  AtlAxGetControl  
  Belirli bir pencere içinde yer alan denetim için, tanıcısını göz önünde bulundurarak doğrudan arabirim işaretçisi alır.  
   
 ```
@@ -418,7 +418,7 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  
   
-##  <a name="atlsetchildsite"></a>AtlSetChildSite  
+##  <a name="atlsetchildsite"></a>  AtlSetChildSite  
  Alt nesne için site ayarlamak için bu işlevi çağırmak **IUnknown** üst nesnenin.  
   
 ```
@@ -435,7 +435,7 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT değer.  
   
-##  <a name="atlaxwininit"></a>AtlAxWinInit  
+##  <a name="atlaxwininit"></a>  AtlAxWinInit  
  Bu işlev ATL'ın denetim kodu kaydederek barındırma başlatır **"AtlAxWin80"** ve **"AtlAxWinLic80"** penceresi özel pencere iletileri birkaç sınıfları.  
   
 ```
@@ -448,7 +448,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, API barındırma ATL Denetimi kullanmadan önce çağrılmalıdır. Bu işlev için bir çağrı aşağıdaki **"AtlAxWin"** pencere sınıfı çağrıları kullanılabilir [CreateWindow'u](http://msdn.microsoft.com/library/windows/desktop/ms632679) veya [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680), Windows SDK'ın açıklandığı gibi.  
 
-##  <a name="atlaxwinterm"></a>AtlAxWinTerm  
+##  <a name="atlaxwinterm"></a>  AtlAxWinTerm  
  Bu işlev ATL'ın denetim kodu kaydını kaldırarak barındırma uninitializes **"AtlAxWin80"** ve **"AtlAxWinLic80"** pencere sınıfları.  
   
 ```
@@ -463,7 +463,7 @@ inline BOOL AtlAxWinTerm();
   
  Aradığınız varsa var olan tüm ana bilgisayar windows yok sonra temizlemek için bu işlevi çağırmak [AtlAxWinInit](#atlaxwininit) ve artık ana bilgisayar windows oluşturmanız gerekir. Bu işlev çağrısı yok, işlem sonlandırıldığında pencere sınıfı otomatik olarak kaydı kaldırılacak.  
   
-##  <a name="atlgetobjectsourceinterface"></a>AtlGetObjectSourceInterface  
+##  <a name="atlgetobjectsourceinterface"></a>  AtlGetObjectSourceInterface  
  Bir nesnenin varsayılan kaynak arabirimi hakkında bilgi almak için bu işlevi çağırın.  
   
 ```
@@ -495,13 +495,13 @@ ATLAPI AtlGetObjectSourceInterface(
  Standart bir HRESULT değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `AtlGetObjectSourceInterface`Varsayılan kaynak arabirimi kitaplık kimliği ile birlikte ve ana arabirimi kimliği ve ikincil sürüm numaralarını arabirimi açıklayan tür kitaplığı sağlayabilir.  
+ `AtlGetObjectSourceInterface` Varsayılan kaynak arabirimi kitaplık kimliği ile birlikte ve ana arabirimi kimliği ve ikincil sürüm numaralarını arabirimi açıklayan tür kitaplığı sağlayabilir.  
   
 > [!NOTE]
 >  Bu işlev başarıyla istenen bilgileri almak, nesneyi temsil ettiği `punkObj` uygulamalıdır `IDispatch` (ve dönüş türü bilgileri aracılığıyla **IDispatch::GetTypeInfo**) artı ayrıca gerekir ya da uygulama `IProvideClassInfo2` veya `IPersist`. Kaynak arabirimi için tür bilgisi için tür bilgisi aynı tür kitaplığında olmalıdır `IDispatch`.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir olay havuz sınıfı nasıl tanımlayabilir gösterir `CEasySink`, için geçirebilir şablon bağımsız değişken sayısı azaltır `IDispEventImpl` tam essentials için. `EasyAdvise`ve `EasyUnadvise` kullanmak `AtlGetObjectSourceInterface` başlatmak için [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyeleri çağırmadan önce [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise).  
+ Aşağıdaki örnek, bir olay havuz sınıfı nasıl tanımlayabilir gösterir `CEasySink`, için geçirebilir şablon bağımsız değişken sayısı azaltır `IDispEventImpl` tam essentials için. `EasyAdvise` ve `EasyUnadvise` kullanmak `AtlGetObjectSourceInterface` başlatmak için [IDispEventImpl](../../atl/reference/idispeventimpl-class.md) üyeleri çağırmadan önce [DispEventAdvise](idispeventsimpleimpl-class.md#dispeventadvise) veya [DispEventUnadvise](idispeventsimpleimpl-class.md#dispeventunadvise).  
   
  [!code-cpp[NVC_ATL_Windowing#93](../../atl/codesnippet/cpp/composite-control-global-functions_1.h)]  
   

@@ -1,12 +1,12 @@
 ---
-title: "CStdioFile sınıfı | Microsoft Docs"
-ms.custom: 
+title: CStdioFile sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CStdioFile
@@ -27,19 +27,19 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-caps.latest.revision: 
+caps.latest.revision: 22
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 868442a2936781ed24588f47dcb591cadcc48f0d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="cstdiofile-class"></a>CStdioFile sınıfı
+# <a name="cstdiofile-class"></a>CStdioFile Class
 Çalışma zamanı işlevi tarafından açılan C çalışma zamanı akışı dosyasını temsil eder [fopen](../../c-runtime-library/reference/fopen-wfopen.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -92,7 +92,7 @@ class CStdioFile : public CFile
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afx.h  
   
-##  <a name="cstdiofile"></a>CStdioFile::CStdioFile  
+##  <a name="cstdiofile"></a>  CStdioFile::CStdioFile  
  Oluşturur ve başlatır bir `CStdioFile` nesnesi.  
   
 ```  
@@ -141,7 +141,7 @@ CStdioFile(
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#37](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_1.cpp)]  
   
-##  <a name="m_pstream"></a>CStdioFile::m_pStream  
+##  <a name="m_pstream"></a>  CStdioFile::m_pStream  
  `m_pStream` C çalışma zamanı işlevi tarafından döndürülen veri üyesi olduğu açık bir dosyayı işaretçisine `fopen`.  
   
 ```  
@@ -151,7 +151,7 @@ FILE* m_pStream;
 ### <a name="remarks"></a>Açıklamalar  
  Bu **NULL** dosya hiç açılmış veya kapatıldı.  
   
-##  <a name="open"></a>CStdioFile::Open  
+##  <a name="open"></a>  CStdioFile::Open  
  Fazla Yüklendi. Açık varsayılan ile kullanılmak üzere tasarlanmıştır `CStdioFile` Oluşturucusu.  
   
 ```  
@@ -173,7 +173,7 @@ virtual BOOL Open(
  İstenen dosyanın yolu olan bir dize. Yol, göreli veya mutlak olabilir.  
   
  `nOpenFlags`  
- Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. Bit düzeyinde-OR (&#124;) kullanarak Seçenekleri birleştirebilirsiniz işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; modeCreate ve modeNoInherit modları isteğe bağlıdır.  
+ Paylaşım ve erişim modu. Dosyayı açarken gerçekleştirilecek eylemi belirtir. Bit düzeyinde-OR kullanarak Seçenekleri birleştirebilirsiniz (&#124;) işleci. Bir erişim izni ve bir paylaşım seçeneği gereklidir; modeCreate ve modeNoInherit modları isteğe bağlıdır.  
   
  `pError`  
  Bir işaretçi var olan bir dosya özel durumu nesneye başarısız bir işlemin durumunu alacak.  
@@ -182,11 +182,11 @@ virtual BOOL Open(
  İşaretçi bir `CAtlTransactionManager` nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `TRUE`başarılı olursa; Aksi takdirde `FALSE`.  
+ `TRUE` başarılı olursa; Aksi takdirde `FALSE`.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
-##  <a name="readstring"></a>CStdioFile::ReadString  
+##  <a name="readstring"></a>  CStdioFile::ReadString  
  Bir sınırı kadar bir arabellek içine metin verileri okur `nMax`ilişkili dosyasından -1 karakter `CStdioFile` nesnesi.  
   
 ```  
@@ -221,7 +221,7 @@ virtual BOOL ReadString(CString& rString);
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCFiles#38](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_2.cpp)]  
   
-##  <a name="seek"></a>CStdioFile::Seek  
+##  <a name="seek"></a>  CStdioFile::Seek  
  İşaretçinin daha önce açılmış bir dosyada yeniden konumlandırır.  
   
 ```  
@@ -258,7 +258,7 @@ virtual ULONGLONG Seek(
   
  [!code-cpp[NVC_MFCFiles#39](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_3.cpp)]  
   
-##  <a name="writestring"></a>CStdioFile::WriteString  
+##  <a name="writestring"></a>  CStdioFile::WriteString  
  Verileri bir arabelleğinden ilişkili dosyaya yazar `CStdioFile` nesnesi.  
   
 ```  

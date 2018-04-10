@@ -1,12 +1,12 @@
 ---
-title: "task sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs"
-ms.custom: 
+title: task sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - task
@@ -23,17 +23,17 @@ dev_langs:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 80f56f02c8a26e87da3f402ecebf738304408eac
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="task-class-concurrency-runtime"></a>task Sınıfı (Eşzamanlılık Çalışma Zamanı)
 Paralel Desen kitaplığı (PPL) `task` sınıfı. A `task` nesnesi paralel eşzamanlılık çalışma zamanı'nda paralel algoritmaları tarafından üretilen iş ve zaman uyumsuz olarak ve diğer görevleri ile aynı anda yürütülebilecek iş temsil eder. Bir sonuç türü üretir `_ResultType` başarıyla tamamlandığında. Tür görevleri `task<void>` hiçbir sonucu. Bir görev sırasında beklenen ve diğer görevler bağımsız olarak iptal. Ayrıca devamlılıklar kullanarak diğer görevleri ile birleştirilebilen ( `then`) ve birleştirme ( `when_all`) ve seçim ( `when_any`) desenleri.  
@@ -80,7 +80,7 @@ class task;
 |[is_done](#is_done)|Görev tamamlandı, belirler.|  
 |[scheduler](#scheduler)|Bu Görev Zamanlayıcı'yı döndürür|  
 |[ardından](#then)|Fazla Yüklendi. Devamlılık görevi için bu görev ekler.|  
-|[bekleme](#wait)|Bu görev terminal durumuna ulaşmak bekler. Mümkündür `wait` tüm görevleri bağımlılıklarını karşılanır ve onu zaten yürütme için bir arka plan çalışanı tarafından çekilen değil görev satır içi yürütülecek.|  
+|[wait](#wait)|Bu görev terminal durumuna ulaşmak bekler. Mümkündür `wait` tüm görevleri bağımlılıklarını karşılanır ve onu zaten yürütme için bir arka plan çalışanı tarafından çekilen değil görev satır içi yürütülecek.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -101,7 +101,7 @@ class task;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="get"></a> Al 
+##  <a name="get"></a> get 
 
  Bu görev üretilen sonuç döndürür. Görev bir terminal değilse durumunda, bir çağrı `get` görevin tamamlanmasını bekler. Bu yöntem bir görevde çağrıldığında bir değer döndürmeyen bir `result_type` , `void`.  
   
@@ -255,7 +255,7 @@ task(
   
  Daha fazla bilgi için bkz: [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
-##  <a name="then">ardından</a> 
+##  <a name="then"></a> ardından 
 
  Devamlılık görevi için bu görev ekler.  
   
@@ -316,7 +316,7 @@ __declspec(
   
  Zaman uyumsuz iş oluşturmak için görev devamlılıklar kullanma hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
-##  <a name="wait">bekleme</a> 
+##  <a name="wait"></a> bekleme 
 
  Bu görev terminal durumuna ulaşmak bekler. Mümkündür `wait` tüm görevleri bağımlılıklarını karşılanır ve onu zaten yürütme için bir arka plan çalışanı tarafından çekilen değil görev satır içi yürütülecek.  
   

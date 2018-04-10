@@ -1,29 +1,29 @@
 ---
-title: "task_options sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs"
-ms.custom: 
+title: task_options sınıfı (eşzamanlılık çalışma zamanı) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - ppltasks/concurrency::task_options
 dev_langs:
 - C++
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6ad83e9e0a871ddc2d8f2c767cb0690da1e6f349
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="taskoptions-class-concurrency-runtime"></a>task_options Sınıfı (Eşzamanlılık Çalışma Zamanı)
 Bir görev oluşturmak için izin verilen seçeneklerini temsil eder  
@@ -46,13 +46,13 @@ class task_options;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[task_options::get_cancellation_token metodu (eşzamanlılık çalışma zamanı)](#get_cancellation_token)|İptal belirtecini döndürür|  
-|[task_options::get_continuation_context metodu (eşzamanlılık çalışma zamanı)](#get_continuation_context)|Devamlılık bağlamını döndürür|  
+|[task_options::get_cancellation_token Method (Concurrency Runtime)](#get_cancellation_token)|İptal belirtecini döndürür|  
+|[task_options::get_continuation_context Method (Concurrency Runtime)](#get_continuation_context)|Devamlılık bağlamını döndürür|  
 |[task_options::get_scheduler metodu (eşzamanlılık çalışma zamanı)](#get_scheduler)|Zamanlayıcı döndürür|  
 |[task_options::has_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)](#has_cancellation_token)|Bir iptal belirteci kullanıcı tarafından belirtilen olup olmadığını gösterir|  
 |[task_options::has_scheduler yöntemi (eşzamanlılık çalışma zamanı)](#has_scheduler)|Bir zamanlayıcı n kullanıcı tarafından belirtilen olup olmadığını gösterir|  
-|[task_options::set_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)](#set_cancellation_token)|Verilen belirteç seçeneklerinde ayarlar|  
-|[task_options::set_continuation_context yöntemi (eşzamanlılık çalışma zamanı)](#set_continuation_context)|Verilen devamlılık bağlamı seçeneklerinde ayarlar|  
+|[task_options::set_cancellation_token Method (Concurrency Runtime)](#set_cancellation_token)|Verilen belirteç seçeneklerinde ayarlar|  
+|[task_options::set_continuation_context Method (Concurrency Runtime)](#set_continuation_context)|Verilen devamlılık bağlamı seçeneklerinde ayarlar|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `task_options`  
@@ -62,7 +62,7 @@ class task_options;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="get_cancellation_token">task_options::get_cancellation_token metodu (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="get_cancellation_token"></a>  task_options::get_cancellation_token metodu (eşzamanlılık çalışma zamanı)  
  İptal belirtecini döndürür  
   
 ```
@@ -71,7 +71,7 @@ cancellation_token get_cancellation_token() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="get_continuation_context">task_options::get_continuation_context metodu (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="get_continuation_context"></a>  task_options::get_continuation_context metodu (eşzamanlılık çalışma zamanı)  
  Devamlılık bağlamını döndürür  
   
 ```
@@ -80,7 +80,7 @@ task_continuation_context get_continuation_context() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="get_scheduler">task_options::get_scheduler metodu (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="get_scheduler"></a>  task_options::get_scheduler metodu (eşzamanlılık çalışma zamanı)  
  Zamanlayıcı döndürür  
   
 ```
@@ -89,7 +89,7 @@ scheduler_ptr get_scheduler() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="has_cancellation_token">task_options::has_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="has_cancellation_token"></a>  task_options::has_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)  
  Bir iptal belirteci kullanıcı tarafından belirtilen olup olmadığını gösterir  
   
 ```
@@ -98,7 +98,7 @@ bool has_cancellation_token() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="has_scheduler">task_options::has_scheduler yöntemi (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="has_scheduler"></a>  task_options::has_scheduler yöntemi (eşzamanlılık çalışma zamanı)  
  Bir zamanlayıcı n kullanıcı tarafından belirtilen olup olmadığını gösterir  
   
 ```
@@ -107,7 +107,7 @@ bool has_scheduler() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="set_cancellation_token">task_options::set_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="set_cancellation_token"></a>  task_options::set_cancellation_token yöntemi (eşzamanlılık çalışma zamanı)  
  Verilen belirteç seçeneklerinde ayarlar  
   
 ```
@@ -117,7 +117,7 @@ void set_cancellation_token(cancellation_token _Token);
 ### <a name="parameters"></a>Parametreler  
  `_Token`  
   
-##  <a name="set_continuation_context">task_options::set_continuation_context yöntemi (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="set_continuation_context"></a>  task_options::set_continuation_context yöntemi (eşzamanlılık çalışma zamanı)  
  Verilen devamlılık bağlamı seçeneklerinde ayarlar  
   
 ```
@@ -127,7 +127,7 @@ void set_continuation_context(task_continuation_context _ContinuationContext);
 ### <a name="parameters"></a>Parametreler  
  `_ContinuationContext`  
   
-##  <a name="ctor">task_options::task_options Oluşturucusu (eşzamanlılık çalışma zamanı)</a>  
+##  <a name="ctor"></a>  task_options::task_options Oluşturucusu (eşzamanlılık çalışma zamanı)  
  Varsayılan görev oluşturma seçeneklerinin listesi  
   
 ```

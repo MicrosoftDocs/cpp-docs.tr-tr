@@ -34,22 +34,22 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: b200ce8329c10fe2257ca3ce9ca8cb61125390fc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 ||||  
 |-|-|-|  
-|[abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
+|[Abs](#abs)|[clamp](#clamp)|[countbits](#countbits)|
 |[create_accelerator_view](#create_accelerator_view)|||
 |[d3d_access_lock](#d3d_access_lock)|[d3d_access_try_lock](#d3d_access_try_lock)|[d3d_access_unlock](#d3d_access_unlock)|  
 |[firstbithigh](#firstbithigh)|[firstbitlow](#firstbitlow)|[get_buffer](#get_buffer)|  
 |[imax](#imax)|[imin](#imin)|[is_timeout_disabled](#is_timeout_disabled)|  
-|[mad](#mad)|[make_array](#make_array)|[gürültü](#noise)|  
+|[mad](#mad)|[make_array](#make_array)|[noise](#noise)|  
 |[radyan cinsinden](#radians)|[rcp](#rcp)|[reversebits](#reversebits)|  
-|[saturate](#saturate)|[Oturum](#sign)|[smoothstep](#smoothstep)|  
+|[saturate](#saturate)|[sign](#sign)|[smoothstep](#smoothstep)|  
 |[step](#step)|[umax](#umax)|[umin](#umin)|  
 
 ## <a name="requirements"></a>Gereksinimler
@@ -98,7 +98,7 @@ inline int clamp(
 ### <a name="return-value"></a>Dönüş Değeri  
  Clamped değeri `_X`.  
   
-##  <a name="countbits">countbits</a>  
+##  <a name="countbits"></a>  countbits  
  _X kümesi bit sayısını sayar  
   
 ```  
@@ -188,7 +188,7 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
  `_Av`  
  Kilidi serbest bırakılacak olduğu accelerator_view.  
   
-##  <a name="firstbithigh">firstbithigh</a>  
+##  <a name="firstbithigh"></a>  firstbithigh  
  İlk en üst sıradaki bit ile başlayan ve doğru sırada düşük bit taşıma _X kümesi bit konumunu alır.  
   
 ```  
@@ -293,7 +293,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ### <a name="return-value"></a>Dönüş Değeri  
  Zaman aşımı için belirtilen accelerator_view devre dışı olup olmadığını belirten bir boolean bayrak.  
   
-##  <a name="mad"></a>  MAD  
+##  <a name="mad"></a>  mad  
  Birinci ve ikinci belirtilen bağımsız değişken çarpımını hesaplar, sonra üçüncü belirtilen bağımsız değişken ekler.  
   
 ```  
@@ -367,7 +367,7 @@ array<value_type, _Rank> make_array(
 ### <a name="return-value"></a>Dönüş Değeri  
  Sağlanan Direct3D arabellek kullanılarak oluşturulmuş bir dizi.  
   
-##  <a name="noise">gürültü</a>  
+##  <a name="noise"></a>  gürültü  
  Perlin gürültü algoritmasını kullanarak rastgele bir değeri oluşturur  
   
 ```  
@@ -381,7 +381,7 @@ inline float noise(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  -1 ile 1 arasında bir aralık içinde Perlin gürültü değeri döndürür  
   
-##  <a name="radians">radyan cinsinden</a>  
+##  <a name="radians"></a>  radyan cinsinden  
  _X derece radyan için dönüştürür.  
   
 ```  
@@ -412,7 +412,7 @@ inline double rcp(double _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen bağımsız değişken devrik.  
   
-##  <a name="reversebits">reversebits</a>  
+##  <a name="reversebits"></a>  reversebits  
  _X bitleri sırasını tersine çevirir  
   
 ```  
@@ -426,7 +426,7 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  İçinde _X ters bit sırasına sahip değeri döndürür  
   
-##  <a name="saturate">saturate</a>  
+##  <a name="saturate"></a>  saturate  
  0 ve 1 aralığında _X clamps  
   
 ```  
@@ -440,7 +440,7 @@ inline float saturate(float _X) restrict(amp);
 ### <a name="return-value"></a>Dönüş Değeri  
  0 ve 1 aralığında clamped _X döndürür  
   
-##  <a name="sign">Oturum</a>  
+##  <a name="sign"></a>  Oturum  
  Belirtilen bağımsız değişkenin işaretini belirler.  
   
 ```  

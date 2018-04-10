@@ -1,12 +1,12 @@
 ---
-title: "completion_future sınıfı | Microsoft Docs"
-ms.custom: 
+title: completion_future sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - completion_future
@@ -22,17 +22,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 24f7012f7fdd9aaeb2443665187aba4eef483e0f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="completionfuture-class"></a>completion_future Sınıfı
 Gelecekteki karşılık gelen bir C++ AMP zaman uyumsuz işlemi temsil eder.  
@@ -50,7 +50,7 @@ class completion_future;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[completion_future Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `completion_future` sınıfı.|  
-|[~completion_future Destructor](#dtor)|Bozar `completion_future` nesnesi.|  
+|[~ completion_future yok Edicisi](#dtor)|Bozar `completion_future` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -60,7 +60,7 @@ class completion_future;
 |[ardından](#then)|Bir geri çağırma işlevi nesnesine zincir `completion_future` yürütme ilişkili zaman uyumsuz işlemi bittikten sonra yürütülecek nesne.|  
 |[to_task](#to_task)|Döndürür bir `task` ilişkili zaman uyumsuz işlemi karşılık gelen nesne.|  
 |[valid](#valid)|Nesne bir zaman uyumsuz işlemle ilişkili olup olmadığını belirten bir Boole değeri alır.|  
-|[bekleme](#wait)|İlişkili zaman uyumsuz işlemi tamamlanana kadar engeller.|  
+|[wait](#wait)|İlişkili zaman uyumsuz işlemi tamamlanana kadar engeller.|  
 |[wait_for](#wait_for)|İlişkili zaman uyumsuz işlemi tamamlanana kadar blokları veya tarafından belirtilen süre `_Rel_time` geçti.|  
 |[wait_until](#wait_until)|İlişkili zaman uyumsuz işlemi tamamlanana kadar veya geçerli saati tarafından belirtilen değeri aşarsa kadar engeller `_Abs_time`.|  
   
@@ -108,7 +108,7 @@ completion_future(
 |`completion_future(const completion_future& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu kopyalayarak sınıfı.|  
 |`completion_future(completion_future&& _Other);`|Yeni bir örneğini başlatır `completion_future` bir oluşturucu taşıyarak sınıfı.|  
   
-## <a name="get"></a> Al 
+## <a name="get"></a> get 
 
 İlişkili zaman uyumsuz işlemi tamamlanana kadar bekler. Bir zaman uyumsuz işlemi sırasında karşılaşılması durumunda depolanan özel durum oluşturur.  
   
@@ -156,7 +156,7 @@ completion_future&  operator= (completion_future&& _Other );
 |`completion_future& operator=(const completion_future& _Other);`|Belirtilen içeriğini kopyalar `completion_future` derin bir kopyasını kullanarak bunu nesnesine.|  
 |`completion_future& operator=(completion_future&& _Other);`|Belirtilen içeriğini kopyalar `completion_future` taşıma atama kullanarak bunu nesnesine.|  
   
-## <a name="then">ardından</a> 
+## <a name="then"></a> ardından 
 
 Bir geri çağırma işlevi nesnesine zincir `completion_future` yürütme ilişkili zaman uyumsuz işlemi bittikten sonra yürütülecek nesne.  
   
@@ -200,7 +200,7 @@ bool valid() const;
 ### <a name="return-value"></a>Dönüş Değeri  
  `true` Nesne zaman uyumsuz bir işlem ile ilişkili ise; Aksi takdirde `false`.  
   
-## <a name="wait">bekleme</a> 
+## <a name="wait"></a> bekleme 
 
 İlişkili zaman uyumsuz işlemi tamamlanana kadar engeller.  
   

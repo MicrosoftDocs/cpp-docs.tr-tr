@@ -1,10 +1,10 @@
 ---
-title: "CONCURRENCY::fast_math ad alanı işlevleri | Microsoft Docs"
-ms.custom: 
+title: CONCURRENCY::fast_math ad alanı işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - amp_math/Concurrency::fast_math::acos
@@ -53,17 +53,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 537e257ade021f8662d75b9316d60a16a4133831
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="concurrencyfastmath-namespace-functions"></a>CONCURRENCY::fast_math ad alanı işlevleri
 ||||  
@@ -72,14 +72,14 @@ ms.lasthandoff: 02/23/2018
 |[asinf](#asinf)|[atan](#atan)|[atan2](#atan2)|  
 |[atan2f](#atan2f)|[atanf](#atanf)|[ceil](#ceil)|  
 |[ceilf](#ceilf)|[cos](#cos)|[cosf](#cosf)|  
-|[COSH](#cosh)|[coshf](#coshf)|[exp](#exp)|  
+|[cosh](#cosh)|[coshf](#coshf)|[exp](#exp)|  
 |[exp2](#exp2)|[exp2f](#exp2f)|[expf](#expf)|  
 |[fabs](#fabs)|[fabsf](#fabsf)|[Kat](#floor)|  
 |[floorf](#floorf)|[fmax](#fmax)|[fmaxf](#fmaxf)|  
 |[fmin](#fmin)|[fminf](#fminf)|[fmod](#fmod)|  
 |[fmodf](#fmodf)|[frexp](#frexp)|[frexpf](#frexpf)|  
 |[isfinite](#isfinite)|[isinf](#isinf)|[isnan](#isnan)|  
-|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[Günlük](#log)|  
+|[ldexp](#ldexp)|[ldexpf](#ldexpf)|[log](#log)|  
 |[log10](#log10)|[log10f](#log10f)|[log2](#log2)|  
 |[log2f](#log2f)|[logf](#logf)|[modf](#modf)|  
 |[modff](#modff)|[POW](#pow)|[powf](#powf)|  
@@ -88,7 +88,7 @@ ms.lasthandoff: 02/23/2018
 |[sin](#sin)|[sincos](#sincos)|[sincosf](#sincosf)|  
 |[sinf](#sinf)|[sinh](#sinh)|[sinhf](#sinhf)|  
 |[sqrt](#sqrt)|[sqrtf](#sqrtf)|[tan](#tan)|  
-|[tanf](#tanf)|[TANH](#tanh)|[tanhf](#tanhf)|  
+|[tanf](#tanf)|[tanh](#tanh)|[tanhf](#tanhf)|  
 |[trunc](#trunc)|[truncf](#truncf)|  
   
 ##  <a name="acos"></a>  ACOS  
@@ -620,7 +620,7 @@ inline float ldexp(
  Tamsayı üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Returns _X * 2^_Exp  
+ Döndürür _X * 2 ^ _Exp  
   
 ##  <a name="ldexpf"></a>  ldexpf  
  Mantis ve üs arasında bir gerçek sayı hesaplar  
@@ -639,9 +639,9 @@ inline float ldexpf(
  Tamsayı üs  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Returns _X * 2^_Exp  
+ Döndürür _X * 2 ^ _Exp  
   
-##  <a name="log"></a>  Günlük  
+##  <a name="log"></a>  log  
  Bağımsız değişken e tabanında logaritmasını hesaplar  
   
 ```  

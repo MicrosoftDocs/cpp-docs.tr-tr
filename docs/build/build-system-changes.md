@@ -28,10 +28,10 @@ manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 59d30e2afd07c21cb42dbc2b9109d7547d6c5b9f
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
 MSBuild sistem Visual C++ projeleri oluşturmak üzere kullanılır. Ancak, Visual Studio 2008 ve önceki sürümleri, VCBuild sistem kullanıldı. Belirli dosya türleri ve üzerinde VCBuild bağımlı olduğu kavramları yok veya geçerli sistemde farklı şekilde gösterilir. Bu belge geçerli yapı sistemi farklılıkları açıklar.  
@@ -59,16 +59,16 @@ MSBuild sistem Visual C++ projeleri oluşturmak üzere kullanılır. Ancak, Visu
   
  Geçerli sürümde, bir veya daha fazla değişmez değerler ve özelliği makroları birleşimini bir özelliğin değerini belirterek devralma desteklenir. **$(Inherit)** ve **$(noınherit)** makroları desteklenmez.  
   
- Aşağıdaki örnekte, noktalı virgülle ayrılmış listesini özellik sayfasında bir özelliğe atanır. Liste birleşimini oluşur  *\<değeri >* hazır değer ve değeri `MyProperty` makrosu gösterimini kullanarak tarafından erişilen özellik **$(**  *MyProperty***)**.  
+ Aşağıdaki örnekte, noktalı virgülle ayrılmış listesini özellik sayfasında bir özelliğe atanır. Liste birleşimini oluşur  *\<değeri >* hazır değer ve değeri `MyProperty` makrosu gösterimini kullanarak tarafından erişilen özellik **$(***MyProperty***)** .  
   
 ```  
 Property=<value>;$(MyProperty)  
 ```  
   
-## <a name="vcxprojuser-files"></a>. vcxproj.user dosyaları  
+## <a name="vcxprojuser-files"></a>.vcxproj.user Files  
  Bir kullanıcı dosyası (. vcxproj.user) Örneğin, hata ayıklama ve dağıtım ayarları için kullanıcıya özgü özellikleri depolar. Belirli bir kullanıcı için tüm projeleri vcxproj.user dosya uygular.  
   
-## <a name="vcxprojfilters-file"></a>. vcxproj.filters dosyası  
+## <a name="vcxprojfilters-file"></a>.vcxproj.filters File  
  Zaman **Çözüm Gezgini** filtreleri dosyanın bir proje için bir dosya eklemek için kullanılan (. vcxproj.filters) where tanımlar **Çözüm Gezgini** ağaç görünümü, dosya adı uzantısına göre dosya eklenir.  
   
 ## <a name="vc-directories-settings"></a>VC ++ dizinleri ayarları  

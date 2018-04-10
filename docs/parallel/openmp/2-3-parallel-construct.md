@@ -1,27 +1,27 @@
 ---
-title: "2.3 parallel yapı | Microsoft Docs"
-ms.custom: 
+title: 2.3 parallel yapı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 ms.assetid: 190eacdf-2c16-4c06-8cb7-ac60eb211425
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 89167547085682a81cc1d281f4f32ab55022d27c
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="23-parallel-construct"></a>2.3 parallel Yapı
 Aşağıdaki komut paralel birden çok iş parçacığı tarafından yürütülür program bölgedir paralel bir bölge tanımlar. Bu paralel yürütme başlayan temel bir yapıdır.  
@@ -46,7 +46,7 @@ Aşağıdaki komut paralel birden çok iş parçacığı tarafından yürütül�
   
  **azaltma (** *işleci* **:***değişken listesi* **)**   
   
- **num_threads (** *tamsayı ifade* **)**  
+ **num_threads(** *integer-expression* **)**  
   
  Bir iş parçacığı paralel yapı karşılaştığında, aşağıdaki durumlardan biri doğruysa bir takım iş parçacığı oluşturulur:  
   

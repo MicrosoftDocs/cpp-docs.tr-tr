@@ -1,12 +1,12 @@
 ---
-title: "tiled_extent sınıfı | Microsoft Docs"
-ms.custom: 
+title: tiled_extent sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - tiled_extent
@@ -22,17 +22,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8370dbd381fa7005ea619ddb63b21bd227f68153
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="tiledextent-class"></a>tiled_extent Sınıfı
 A `tiled_extent` nesne bir `extent` kapsamı alan bir, iki veya üç boyutlu döşeme subdivides nesne bir ile üç boyut.  
@@ -75,7 +75,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tiled_extent Constructor](#ctor)|Yeni bir örneğini başlatır `tiled_extent` sınıfı.|  
+|[tiled_extent Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tiled_extent` sınıfı.|  
 
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
@@ -97,9 +97,9 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tile_dim0 Constant](#tile_dim0)|En önemli boyutun uzunluğu depolar.|  
-|[tile_dim1 Constant](#tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
-|[tile_dim2 Constant](#tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
+|[tile_dim0 sabiti](#tile_dim0)|En önemli boyutun uzunluğu depolar.|  
+|[tile_dim1 sabiti](#tile_dim1)|Sonraki en önemli boyutun uzunluğu depolar.|  
+|[tile_dim2 sabiti](#tile_dim2)|En az önemli boyutun uzunluğu depolar.|  
 
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
@@ -164,7 +164,7 @@ tiled_extent pad() const;
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni `tiled_extent` nesnesiyle değeri. 
-## <a name="truncate">kesme</a>   
+## <a name="truncate"> </a>  kesme   
 Yeni bir döndürür `tiled_extent` kapsam nesnesiyle göre ayarlanmış aşağı döşeme boyutlara göre tam bölünebilir olmalıdır.  
   
 ### <a name="syntax"></a>Sözdizimi  

@@ -1,27 +1,27 @@
 ---
-title: "2.4.2 sections yapı | Microsoft Docs"
-ms.custom: 
+title: 2.4.2 sections yapı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 ms.assetid: e9e6e3ea-7fc9-4925-8f68-92b8a5bb1e76
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e5b755e95e9bbbb78d6ab13cd09732f9c9aee3d
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="242-sections-construct"></a>2.4.2 sections Yapı
 **Bölümleri** yönergesi takım iş parçacıkları arasında bölünür üzeresiniz yapıları kümesini belirten bir noniterative iş paylaşım yapısını tanımlar. Her bölümü takım bir iş parçacığı tarafından bir kez çalıştırılır. Söz dizimi **bölümleri** yönergesi aşağıdaki gibidir:  

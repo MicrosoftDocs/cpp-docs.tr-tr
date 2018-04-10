@@ -1,12 +1,12 @@
 ---
-title: "Bağlam sınıfı | Microsoft Docs"
-ms.custom: 
+title: Bağlam sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - Context
@@ -29,17 +29,17 @@ dev_langs:
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-caps.latest.revision: 
+caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9195ec68a47e2ed528a42bb018cfba6316101a0c
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="context-class"></a>Bağlam Sınıfı
 Yürütme bağlamı için bir Özet temsil eder.  
@@ -74,7 +74,7 @@ class Context;
 |[ScheduleGroupId](#schedulegroupid)|Geçerli bağlam üzerinde çalıştığı zamanlama grubu için bir tanımlayıcı döndürür.|  
 |[Engellemeyi Kaldır](#unblock)|Bağlam engelini kaldırır ve runnable duruma neden olur.|  
 |[VirtualProcessorId](#virtualprocessorid)|Geçerli bağlam yürütülmekte olduğu sanal işlemci için bir tanımlayıcı döndürür.|  
-|[Yield](#yield)|Başka bir bağlam çalıştırabilmeniz için yürütmeyi verir. Diğer bir bağlam için elde etmek üzere kullanılabilir durumdaysa, Zamanlayıcı başka bir işletim sistemi iş parçacığına yol açabilir.|  
+|[uyarı simgesi](#yield)|Başka bir bağlam çalıştırabilmeniz için yürütmeyi verir. Diğer bir bağlam için elde etmek üzere kullanılabilir durumdaysa, Zamanlayıcı başka bir işletim sistemi iş parçacığına yol açabilir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Eşzamanlılık Çalışma zamanı Zamanlayıcısı'nı (bkz [Zamanlayıcı](scheduler-class.md)) çalışmayı yürütmek için kullandığı yürütme bağlamı için uygulamanız tarafından sıraya. Win32 iş parçacığı, bir Windows işletim sisteminde bir yürütme bağlamı örneğidir.  
@@ -178,7 +178,7 @@ static unsigned int __cdecl Id();
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bağlam için bir zamanlayıcı bağlıysa, geçerli bağlam için geçerli bağlam ait olduğu Zamanlayıcı içinde benzersiz tanımlayıcıdır; Aksi takdirde, değer `-1`.  
   
-##  <a name="iscurrenttaskcollectioncanceling"></a> IsCurrentTaskCollectionCanceling 
+##  <a name="iscurrenttaskcollectioncanceling"></a> Iscurrenttaskcollectioncanceling 
 
  Olup olmadığının göstergesi bir döndürür, satır içi geçerli bağlama göre şu anda yürütülmekte görev koleksiyonu etkin bir iptal ortasında (veya kısa bir süre içinde olacaktır).  
   
@@ -189,7 +189,7 @@ static bool __cdecl IsCurrentTaskCollectionCanceling();
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir zamanlayıcı arama bağlamına bağlı olduğu ve bir görev grubu bu bağlamda bir görev satır içi yürütüyor, göstergesidir olup, görev grubu ortasında etkin bir iptal (veya kısa bir süre içinde olacaktır); Aksi takdirde, değer `false`.  
   
-##  <a name="issynchronouslyblocked">Issynchronouslyblocked</a> 
+##  <a name="issynchronouslyblocked"></a> Issynchronouslyblocked 
 
  Bağlam zaman uyumlu olarak engellenmiş olup olmadığını belirler. Bir bağlam açıkça engellemek üzere sonuçlanan bir eylem gerçekleştirirse zaman uyumlu olarak engellenmesi olarak kabul edilir.  
   
@@ -217,7 +217,7 @@ void operator delete(void* _PObject);
  `_PObject`  
  Silinecek nesne için bir işaretçi.  
   
-##  <a name="oversubscribe">Oversubscribe</a> 
+##  <a name="oversubscribe"></a> Oversubscribe 
 
  Bir ek sanal işlemci bu Zamanlayıcı sanal işlemciler birinde yürütme bağlamı üzerinde çağrıldığında kod bloğu boyunca bir zamanlayıcı yerleştirir.  
   
@@ -240,7 +240,7 @@ static unsigned int __cdecl ScheduleGroupId();
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bağlam için bir zamanlayıcı bağlı olduğu ve bir zamanlama grup üzerinde çalışan, Zamanlayıcı için bir tanımlayıcı grubuna geçerli bağlamı üzerinde çalıştığı; Aksi takdirde, değer `-1`.  
   
-##  <a name="unblock">Engellemeyi Kaldır</a> 
+##  <a name="unblock"></a> Engellemeyi Kaldır 
 
  Bağlam engelini kaldırır ve runnable duruma neden olur.  
   
@@ -269,7 +269,7 @@ static unsigned int __cdecl VirtualProcessorId();
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemden dönüş değeri geçerli bağlamı yürütülmekte olduğu sanal işlemcinin bir anlık örnekleme değeridir. Bu değer döndürülür ve bağlı dayanıyordu olamaz şu anda eski olabilir. Genellikle, bu yöntem, hata ayıklama veya yalnızca izleme için kullanılır.  
   
-##  <a name="yield"></a> Yield 
+##  <a name="yield"></a> uyarı simgesi 
 
  Başka bir bağlam çalıştırabilmeniz için yürütmeyi verir. Diğer bir bağlam için elde etmek üzere kullanılabilir durumdaysa, Zamanlayıcı başka bir işletim sistemi iş parçacığına yol açabilir.  
   

@@ -1,12 +1,12 @@
 ---
-title: "ActiveX denetimi kapsayıcıları: ActiveX denetimindeki etkinlikleri işleme | Microsoft Docs"
-ms.custom: 
+title: 'ActiveX denetimi kapsayıcıları: ActiveX denetimindeki etkinlikleri işleme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -20,17 +20,17 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - BEGIN_EVENTSINK_MAP macro
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 84e1571f400297584e12a40dfd2bfcc3c0b525d2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
 Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak anlatılmaktadır. Olay işleyicileri belirli olaylar (denetiminden ek olarak) bildirimlerini almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olay tetikleme" adı verilir.  
@@ -42,7 +42,7 @@ Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay 
   
  Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz: [olay iç havuz eşlemeleri](../mfc/reference/event-sink-maps.md) içinde *sınıf kitaplığı başvurusu*.  
   
-##  <a name="_core_event_handler_modifications_to_the_project"></a>Olay işleyici değişiklikler projeye  
+##  <a name="_core_event_handler_modifications_to_the_project"></a> Olay işleyici değişiklikler projeye  
  Olay işleyicileri eklemek için Özellikler penceresini kullandığınızda, bir olay havuz eşlemesi bildirilen ve projenizde tanımlı. Aşağıdaki deyimleri denetimine eklenir. CPP dosya ilk kez bir olay işleyicisi eklenir. Bu kod, bir olay havuz eşlemesi iletişim kutusu sınıfı için bildirir (Bu durumda, `CContainerDlg`):  
   
  [!code-cpp[NVC_MFC_AxCont#8](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]  

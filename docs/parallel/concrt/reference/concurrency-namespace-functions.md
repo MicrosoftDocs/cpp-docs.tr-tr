@@ -1,10 +1,10 @@
 ---
-title: "Eşzamanlılık ad alanı işlevleri | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık ad alanı işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - concrt/concurrency::Alloc
@@ -40,22 +40,22 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 520a6dff-9324-4df2-990d-302e3050af6a
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66cf776e02d286b04c4fe9338d74d6a9db196a68
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
 |-|-|-|  
-|[Alloc](#alloc)|[CreateResourceManager](#createresourcemanager)|[DisableTracing](#disabletracing)|  
+|[Ayırma](#alloc)|[CreateResourceManager](#createresourcemanager)|[DisableTracing](#disabletracing)|  
 |[EnableTracing](#enabletracing)|[Boş](#free)|[GetExecutionContextId](#getexecutioncontextid)|  
 |[GetOSVersion](#getosversion)|[GetProcessorCount](#getprocessorcount)|[GetProcessorNodeCount](#getprocessornodecount)|  
 |[GetSchedulerId](#getschedulerid)|[Trace_agents_register_name](#trace_agents_register_name)|[asend](#asend)|  
@@ -66,9 +66,9 @@ ms.lasthandoff: 02/23/2018
 |[parallel_buffered_sort](#parallel_buffered_sort)|[parallel_for](#parallel_for)|[parallel_for_each](#parallel_for_each)|  
 |[parallel_invoke](#parallel_invoke)|[parallel_radixsort](#parallel_radixsort)|[parallel_reduce](#parallel_reduce)|  
 |[parallel_sort](#parallel_sort)|[parallel_transform](#parallel_transform)|[receive](#receive)|  
-|[run_with_cancellation_token](#run_with_cancellation_token)|[Gönder](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
-|[set_task_execution_resources](#set_task_execution_resources)|[Değiştirme](#swap)|[task_from_exception](#task_from_exception)|  
-|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[bekleme](#wait)|  
+|[run_with_cancellation_token](#run_with_cancellation_token)|[send](#send)|[set_ambient_scheduler](#set_ambient_scheduler)|  
+|[set_task_execution_resources](#set_task_execution_resources)|[swap](#swap)|[task_from_exception](#task_from_exception)|  
+|[task_from_result](#task_from_result)|[try_receive](#try_receive)|[wait](#wait)|  
 |[when_all](#when_all)|[when_any](#when_any)|  
   
 ##  <a name="alloc"></a>  Ayırma  
@@ -242,7 +242,7 @@ __declspec(deprecated("Concurrency::EnableTracing is a deprecated function.")) _
 ### <a name="return-value"></a>Dönüş Değeri  
  İzleme doğru başlatılmışsa `S_OK` döndürülen; Aksi takdirde, `E_NOT_STARTED` döndürülür.  
   
-##  <a name="free">Boş</a>  
+##  <a name="free"></a>  Boş  
  Tarafından önceden ayrılmış bellek bloğu serbest `Alloc` eşzamanlılık çalışma zamanı Suballocator önbelleğe alma yöntemi.  
   
 ```

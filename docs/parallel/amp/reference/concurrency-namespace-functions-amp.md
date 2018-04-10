@@ -1,10 +1,10 @@
 ---
-title: "Eşzamanlılık ad alanı işlevleri (AMP) | Microsoft Docs"
-ms.custom: 
+title: Eşzamanlılık ad alanı işlevleri (AMP) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - amp/Concurrency::all_memory_fence
@@ -20,17 +20,17 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 360c253860931f00e65575250d3944b05dc9c4a9
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Eşzamanlılık ad alanı işlevleri (AMP)
 ||||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 02/23/2018
 |[all_memory_fence](#all_memory_fence)|[amp_uninitialize](#amp_uninitialize)|[atomic_compare_exchange](#atomic_compare_exchange)|  
 |[atomic_exchange işlevi (C++ AMP)](#atomic_exchange)|[atomic_fetch_add işlevi (C++ AMP)](#atomic_fetch_add)|[atomic_fetch_and işlevi (C++ AMP)](#atomic_fetch_and)|  
 |[atomic_fetch_dec](#atomic_fetch_dec)|[atomic_fetch_inc](#atomic_fetch_inc)|[atomic_fetch_max](#atomic_fetch_max)|  
-|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or işlevi (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub işlevi (C++ AMP)](#atomic_fetch_sub)|  
+|[atomic_fetch_min](#atomic_fetch_min)|[atomic_fetch_or işlevi (C++ AMP)](#atomic_fetch_or)|[atomic_fetch_sub Function (C++ AMP)](#atomic_fetch_sub)|  
 |[atomic_fetch_xor işlevi (C++ AMP)](#atomic_fetch_xor)|[Kopyalama](#copy)|[copy_async](#copy_async)|  
 |[direct3d_abort](#direct3d_abort)|[direct3d_errorf](#direct3d_errorf)|[direct3d_printf](#direct3d_printf)|  
 |[global_memory_fence](#global_memory_fence)|[parallel_for_each işlevi (C++ AMP)](#parallel_for_each)|[tile_static_memory_fence](#tile_static_memory_fence)|  
@@ -93,7 +93,7 @@ inline bool atomic_compare_exchange(
  `true` İşlem başarılı olursa; Aksi takdirde `false`.  
   
 
-##  <a name="atomic_exchange">atomic_exchange işlevi (C++ AMP)</a>  
+##  <a name="atomic_exchange"></a>  atomic_exchange işlevi (C++ AMP)  
  Hedef konum değerini atomik bir işlem olarak ayarlar.  
   
 ```  
@@ -126,7 +126,7 @@ inline float atomic_exchange(
  Hedef konumu özgün değeri.  
   
 
-##  <a name="atomic_fetch_add">atomic_fetch_add işlevi (C++ AMP)</a>  
+##  <a name="atomic_fetch_add"></a>  atomic_fetch_add işlevi (C++ AMP)  
  Otomatik olarak bir bellek konumunu değer için bir değer ekleyin.  
   
 ```  
@@ -152,7 +152,7 @@ inline unsigned int atomic_fetch_add(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bellek konumuna özgün değeri.  
   
-##  <a name="atomic_fetch_and">atomic_fetch_and işlevi (C++ AMP)</a>  
+##  <a name="atomic_fetch_and"></a>  atomic_fetch_and işlevi (C++ AMP)  
  Otomatik olarak bir değer ve bir bellek konumunu değerini bit tabanlı ve işlemi gerçekleştirir.  
   
 ```  
@@ -265,7 +265,7 @@ inline unsigned int atomic_fetch_min(
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen konum konumunda depolanan özgün değer.  
   
-##  <a name="atomic_fetch_or">atomic_fetch_or işlevi (C++ AMP)</a>  
+##  <a name="atomic_fetch_or"></a>  atomic_fetch_or işlevi (C++ AMP)  
  Otomatik olarak bir değer ve bir bellek konumunu değeri ile bit tabanlı veya işlemi gerçekleştirir.  
   
 ```  
@@ -291,7 +291,7 @@ inline unsigned int atomic_fetch_or(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bellek konumuna özgün değeri.  
   
-##  <a name="atomic_fetch_sub">atomic_fetch_sub işlevi (C++ AMP)</a>  
+##  <a name="atomic_fetch_sub"></a>  atomic_fetch_sub işlevi (C++ AMP)  
  Otomatik olarak bir bellek konumundan bir değeri çıkarır.  
   
 ```  
@@ -317,7 +317,7 @@ inline unsigned int atomic_fetch_sub(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bellek konumuna özgün değeri.  
   
-##  <a name="atomic_fetch_xor">atomic_fetch_xor işlevi (C++ AMP)</a>  
+##  <a name="atomic_fetch_xor"></a>  atomic_fetch_xor işlevi (C++ AMP)  
  Otomatik olarak peforms bir değer ve bir bellek konumunu bit düzeyinde XOR işlemini.  
   
 ```  
@@ -343,7 +343,7 @@ inline unsigned int atomic_fetch_xor(
 ### <a name="return-value"></a>Dönüş Değeri  
  Bellek konumuna özgün değeri.  
   
-##  <a name="copy">Kopyalama</a>  
+##  <a name="copy"></a>  Kopyalama  
  C++ AMP nesnesini kopyalar. Tüm zaman uyumlu veri aktarımı gereksinimleri karşılıyor. Veri kodu Hızlandırıcı üzerinde çalışırken kopyalanamıyor. Bu işlevin genel form `copy(src, dest)`.  
   
 ```  
@@ -586,7 +586,7 @@ inline void global_memory_fence(const tile_barrier& _Barrier) restrict(amp);
  `_Barrier`  
  Tile_barrier nesnesi  
   
-##  <a name="parallel_for_each">parallel_for_each işlevi (C++ AMP)</a>  
+##  <a name="parallel_for_each"></a>  parallel_for_each işlevi (C++ AMP)  
  Bir işlev işlem etki alanı arasında çalışır. Daha fazla bilgi için bkz: [C++ AMP'ye genel bakış](../../../parallel/amp/cpp-amp-overview.md).  
   
 ```  

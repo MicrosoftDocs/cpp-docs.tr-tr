@@ -1,12 +1,12 @@
 ---
-title: "Complex sınıfı | Microsoft Docs"
-ms.custom: 
+title: Complex sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - complex/std::complex::value_type
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc697726709f0c5dd7640af0b52b3f8176538267
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="complex-class"></a>complex Sınıfı
 Şablon sınıfı türünde iki nesnelerini depolayan bir nesne tanımlar **türü**, bir karmaşık sayı ve bir sanal bölümünü temsil eden gerçek bölümünü temsil eder.  
@@ -60,7 +60,7 @@ class complex
   
 |||  
 |-|-|  
-|[karmaşık](#complex)|Karmaşık sayıyı belirtilen gerçek ve sanal bölümleri içeren veya başka bir karmaşık sayıyı bir kopyasını oluşturur.|  
+|[complex](#complex)|Karmaşık sayıyı belirtilen gerçek ve sanal bölümleri içeren veya başka bir karmaşık sayıyı bir kopyasını oluşturur.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -73,7 +73,7 @@ class complex
 |||  
 |-|-|  
 |[imag](#imag)|Karmaşık bir sayının sanal bileşeni ayıklar.|  
-|[real](#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
+|[Gerçek](#real)|Karmaşık bir sayının gerçek bileşen ayıklar.|  
   
 ### <a name="operators"></a>İşleçler  
   

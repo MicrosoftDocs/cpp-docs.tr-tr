@@ -1,12 +1,12 @@
 ---
-title: "tile_barrier sınıfı | Microsoft Docs"
-ms.custom: 
+title: tile_barrier sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - tile_barrier
@@ -21,17 +21,17 @@ dev_langs:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-caps.latest.revision: 
+caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e7d868b4bd677d207590de6449e3d5643001e857
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="tilebarrier-class"></a>tile_barrier Sınıfı
 İş parçacığı grubu (döşeme) kullanarak çalışan iş parçacıklarının yürütülmesine eşitler `wait` yöntemleri. Yalnızca çalışma zamanı bu sınıfın örneğini oluşturabilirsiniz.  
@@ -48,13 +48,13 @@ class tile_barrier;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[tile_barrier Constructor](#ctor)|Yeni bir örneğini başlatır `tile_barrier` sınıfı.|  
+|[tile_barrier Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `tile_barrier` sınıfı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[bekleme](#wait)|Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütme durdurmak için iş parçacığı (döşeme) bildirir.|  
+|[wait](#wait)|Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütme durdurmak için iş parçacığı (döşeme) bildirir.|  
 |[wait_with_all_memory_fence](#wait_with_all_memory_fence)|Tüm iş parçacıklarının tüm bellek erişimler tamamlanana kadar döşemesinin ve tüm iş parçacıklarının döşemesinin blokları yürütme bu çağrıyı ulaştı.|  
 |[wait_with_global_memory_fence](#wait_with_global_memory_fence)|Tüm iş parçacıklarının tüm genel bellek erişen kadar döşemesinin blokları yürütülmesi tamamlandı ve tüm iş parçacıklarının bölümünden bu çağrıyı üst sınırına ulaştınız.|  
 |[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|Engelleyen bir kutucukta tüm iş parçacıklarının yürütülmesine tüm kadar `tile_static` bellek erişimleri tamamlandı ve tüm iş parçacıklarının bölümünden bu çağrıyı üst sınırına ulaştınız.|  
@@ -81,7 +81,7 @@ tile_barrier(
  `_Other`  
  `tile_barrier` Kopyalamak için nesne.  
 
-## <a name="wait">bekleme</a> 
+## <a name="wait"></a>  bekleme 
 Tüm iş parçacıklarının grubundaki tüm iş parçacıklarının döşemesinin bekleme bitinceye kadar yürütmeyi durdurmak için iş parçacığı (döşeme) bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi 

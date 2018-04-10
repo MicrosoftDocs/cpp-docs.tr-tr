@@ -1,12 +1,12 @@
 ---
-title: "runtime_exception sınıfı | Microsoft Docs"
-ms.custom: 
+title: runtime_exception sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - runtime_exception
@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 678f0a93577a6e30afbc5e0c6d83aca6b6a7bedc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="runtimeexception-class"></a>runtime_exception Sınıfı
 C++ hızlandırılmış yoğun paralellik (AMP) Kitaplığı'nda özel durumlar için temel türü.  
@@ -45,8 +45,8 @@ class runtime_exception : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[runtime_exception Constructor](#ctor)|Yeni bir örneğini başlatır `runtime_exception` sınıfı.|  
-|[~runtime_exception Destructor](#dtor)|Bozar `runtime_exception` nesnesi.|  
+|[runtime_exception Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `runtime_exception` sınıfı.|  
+|[~ runtime_exception yok Edicisi](#dtor)|Bozar `runtime_exception` nesnesi.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   

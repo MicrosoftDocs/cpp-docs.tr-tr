@@ -1,12 +1,12 @@
 ---
-title: "Biçim belirtim Sözdizimi: printf ve wprintf işlevleri | Microsoft Docs"
-ms.custom: 
+title: 'Biçim belirtim Sözdizimi: printf ve wprintf işlevleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - width fields, printf function
 - precision fields, printf function
 ms.assetid: 664b1717-2760-4c61-bd9c-22eee618d825
-caps.latest.revision: 
+caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 437657857b87f2f7df140576d09467d6276549f6
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/21/2017
 
 Bu formdaki isteğe bağlıdır ve gerekli alanlara dönüştürme belirtimi oluşur:
 
-**%**[[*bayrakları*](#flags)] [[*genişliği*](#width)] [.[ *duyarlık*](#precision)] [[*boyutu*](#size)][*türü*](#type)
+**%**[[*flags*](#flags)][[*width*](#width)][.[*precision*](#precision)][[*size*](#size)][*type*](#type)
 
 Her alanı dönüştürme belirtimi, bir karakter ya da belirli biçim seçeneği veya dönüştürme belirticisi belirten bir sayı alır. Gerekli *türü* alan bir bağımsız değişken uygulanacak dönüştürme türünü belirtir. İsteğe bağlı *bayrakları*, *genişliği*, ve *duyarlık* alanları denetim öndeki boşlukları veya sıfır, düzeltme ve görüntülenen duyarlık gibi ek biçim Konular. *Boyutu* alan bağımsız değişkeni kullanılan ve dönüştürülen boyutunu belirler.
 
@@ -62,7 +62,7 @@ Biçim dizesi izleyin bağımsız değişkenleri karşılık gelen göre yorumla
 Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned` çeşitleri, belirtilen kullanarak **d**, **ı**, **o**, **u**, **x**, ve **X**. Kayan nokta türleri gibi `float`, `double`, ve `long double`, kullanılarak belirtilen **bir**, **A**, **e**, **E**, **f**, **F**, **g**, ve **G**. Varsayılan olarak, tarafından değiştirilmiş sürece bir *boyutu* tamsayı bağımsız değişkenlerini önek, yüklenen için `int` türü ve kayan nokta değişkenleri için yüklenen `double`. 64 bitlik sistemlerde bir `int` 32-bit değeri; sürece için çıktı biçimlendirildiğinden, bu nedenle, 64-bit tamsayı kesilecek bir *boyutu* öneki **üm** veya **I64**kullanılır. Tarafından belirtilen işaretçi türleri **p** platform için varsayılan işaretçi boyutu kullanabilirsiniz.
 
 > [!NOTE]
-> **Microsoft özel**  
+> **Microsoft Specific**  
 > **Z** karakter ve davranışını yazın **c**, **C**, **s**, ve **S** türü karakter bunlar ile kullanılan `printf` ve `wprintf` işlevlerdir, Microsoft uzantıları. ISO C standardı kullanır **c** ve **s** dar karakterler ve dizeler için tutarlı bir şekilde ve **C** ve **S** geniş karakterler ve dizeler için tüm biçimlendirme işlevleri.
 
 ### <a name="type-field-characters"></a>Tür alanı karakterleri
@@ -72,7 +72,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**c**|Karakter|İle kullanıldığında `printf` İşlevler, tek baytlı karakter; kullanıldığında belirtir `wprintf` İşlevler, geniş karakter belirtir.|
 |**C**|Karakter|İle kullanıldığında `printf` İşlevler, geniş karakter; kullanıldığında belirtir `wprintf` İşlevler, tek baytlı karakter belirtir.|
 |**d**|Tamsayı|İmzalanmış ondalık tamsayı.|
-|**t**|Tamsayı|İmzalanmış ondalık tamsayı.|
+|**i**|Tamsayı|İmzalanmış ondalık tamsayı.|
 |**o**|Tamsayı|İmzasız sekizlik tamsayı.|
 |**u**|Tamsayı|İmzasız ondalık tamsayı.|
 |**x**|Tamsayı|İşaretsiz onaltılık tamsayı; "abcdef" kullanır|
@@ -83,13 +83,13 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**F**|Kayan nokta|Aynı **f** sonsuzluk ve nan çıkış büyük harfli dışında biçimlendirin.|
 |**g**|Kayan nokta|İmzalı değerler görüntülenir **f** veya **e** biçimi, hangisi verilen değer ve duyarlık için daha kısadır. **e** biçimi değeri üs değerinden -4 olduğunda yalnızca ya da sıfırdan büyük veya eşit kullanılır *duyarlık* bağımsız değişkeni. Sondaki sıfırlar kesilir ve yalnızca bir ondalık ayırıcısı görüntülenir veya daha fazla basamak izleyerek.|
 |**G**|Kayan nokta|Aynı **g** , dışında biçiminde **E**, yerine **e**, üs (uygun olan yerlerde) sunar.|
-|**bir**|Kayan nokta|Formun [-] sahip onaltılık çift duyarlıklı kayan noktalı değeri imzalı 0 x*h.hhhh*__p±__*GG*, burada *h.hhhh* onaltılık olan Mantis rakamı (büyük küçük harf kullanarak) ve *GG* üs için bir veya daha fazla basamak şunlardır. Duyarlık noktadan sonra basamak sayısını belirtir.|
+|**a**|Kayan nokta|Formun [-] sahip onaltılık çift duyarlıklı kayan noktalı değeri imzalı 0 x*h.hhhh*__p±__*GG*, burada *h.hhhh* onaltılık olan Mantis rakamı (büyük küçük harf kullanarak) ve *GG* üs için bir veya daha fazla basamak şunlardır. Duyarlık noktadan sonra basamak sayısını belirtir.|
 |**A**|Kayan nokta|Formun [-] 0 X onaltılık çift duyarlıklı kayan noktalı değeri işaretli*h.hhhh*__P±__*GG*, burada *h.hhhh* onaltılık olan Mantis rakamı (büyük harf kullanarak) ve *GG* üs için bir veya daha fazla basamak şunlardır. Duyarlık noktadan sonra basamak sayısını belirtir.|
-|**n**|Tamsayı işaretçi|Başarıyla kadarki akış veya arabelleğe yazılan karakterlerin sayısı. Bu değer, adresi bağımsız değişken olarak verilen tamsayı depolanır. Bir bağımsız değişkeni boyut belirtimi önekiyle işaret tamsayı boyutunu denetlenebilir.  **n**  Belirticisi varsayılan olarak devre dışı; önemli güvenlik notu bilgi için bkz.|
+|**n**|Tamsayı işaretçi|Başarıyla kadarki akış veya arabelleğe yazılan karakterlerin sayısı. Bu değer, adresi bağımsız değişken olarak verilen tamsayı depolanır. Bir bağımsız değişkeni boyut belirtimi önekiyle işaret tamsayı boyutunu denetlenebilir. **n** belirticisi varsayılan olarak devre dışı; önemli güvenlik notu bilgi için bkz.|
 |**p**|İşaretçi türü|Bağımsız değişkeni bir adresi onaltılık basamak olarak görüntüler.|
 |**s**|Dize|İle kullanıldığında `printf` İşlevler, bir tek baytlı ve çok baytlı karakter dizesi; kullanıldığında belirtir `wprintf` İşlevler, bir joker karakter dizesini belirtir. Karakter ilk null karakter kadar veya kadar görüntülenir *duyarlık* değerine ulaşılmadan.|
 |**S**|Dize|İle kullanıldığında `printf` İşlevler, birlikte kullanıldığında bir joker karakter dizesi; belirtir `wprintf` İşlevler, bir tek baytlı ve çok baytlı karakter dizesi belirtir. Karakter ilk null karakter kadar veya kadar görüntülenir *duyarlık* değerine ulaşılmadan.|
-|**Z**|`ANSI_STRING`veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](http://msdn.microsoft.com/library/windows/hardware/ff540605.aspx) veya [UNICODE_STRING](http://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) yapısı bağımsız değişken olarak geçirilen, gösterdiği arabellek bulunan dizesini görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişkeni — Örneğin, `%wZ`. `Length` Yapısı alan uzunluğu dizesi için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanını uzunluğa arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakteri yalnızca hata ayıklama dönüştürme belirtimi gibi kullandığınız işlevleri sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
+|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](http://msdn.microsoft.com/library/windows/hardware/ff540605.aspx) veya [UNICODE_STRING](http://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) yapısı bağımsız değişken olarak geçirilen, gösterdiği arabellek bulunan dizesini görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişkeni — Örneğin, `%wZ`. `Length` Yapısı alan uzunluğu dizesi için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanını uzunluğa arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakteri yalnızca hata ayıklama dönüştürme belirtimi gibi kullandığınız işlevleri sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
 
 Visual Studio 2015'te ise başlangıç bir kayan nokta dönüşümü belirticisi karşılık gelen bağımsız değişkeni (**bir**, **A**, **e**, **E**, **f**, **F**, **g**, **G**) belirsiz, sonsuz veya NaN, biçimlendirilmiş çıkışı C99 standardına uygun. Bu tabloda biçimlendirilmiş çıkışı listelenmektedir:
 
@@ -106,8 +106,8 @@ Visual Studio 2015 önce CRT farklı, standart olmayan bir biçimde sonsuz belir
 
 |Değer|Çıkış|
 |-----------|------------|
-|+ sonsuz|`1.#INF`*rasgele basamak*|
-|-sonsuz|`-1.#INF`*rasgele basamak*|
+|+ sonsuz|`1.#INF` *rasgele basamak*|
+|-sonsuz|`-1.#INF` *rasgele basamak*|
 |Sonsuz (sessiz NaN ile aynı)|*basamak* `.#IND` *rasgele basamak*|
 |NaN|*basamak* `.#NAN` *rasgele basamak*|
 
@@ -134,11 +134,11 @@ Bir dönüştürme belirtimi ilk isteğe bağlı alanı içeren *bayrak yönerge
 |----------|-------------|-------------|
 |**-**|Verilen alan genişliği içinde sonuç Sola Hizala.|Sağa Hizala.|
 |**+**|Bir oturum kullanın (+ veya -) imzalı bir tür ise çıkış değerini ön eki.|Oturum, yalnızca imzalı için negatif değerler (-) görünür.|
-|**0**|Varsa *genişliği* tarafından önekli **0**başında en küçük genişliği ulaşılana kadar sıfır eklenir. Her iki **0** ve  **-**  görünen **0** göz ardı edilir. Varsa **0** bir tamsayı biçimi için belirtilen (**ı**, **u**, **x**, **X**, **o**, **d**) ve duyarlık belirtimi de varsa — örneğin, `%04.d`— **0** göz ardı edilir. Varsa **0** için belirtilen **bir** veya **A** kayan nokta biçimi, baştaki sıfırlar $a Mantis için sonra `0x` veya `0X` öneki.|Dolgu.|
-|**boş** (' ')|İmzalı ve pozitif ise önek çıktı değeri için boş bir kullanın. Boş, her iki göz ardı edilir boş ve + bayrakları görünür.|Hiçbir boş görünür.|
-|**#**|İle kullanıldığında **o**, **x**, veya **X** biçimi  **#**  bayrak kullandığı 0, 0 x, ya da 0 sırasıyla ön eki her sıfır olmayan X Çıkış değeri.|Hiçbir boş görünür.|
-||İle kullanıldığında **e**, **E**, **f**, **F**, **bir** veya **A** Biçim,  **#**  bayrak, ondalık ayırıcıdan içerecek şekilde çıkış değerini zorlar.|Yalnızca rakam izlerseniz, ondalık ayırıcıdan görüntülenir.|
-||İle kullanıldığında **g** veya **G** biçimi  **#**  bayrağı ondalık içerecek şekilde çıkış değerini zorlar ve sondaki sıfırlar kesme engeller.<br /><br /> İle kullanıldığında göz ardı **c**, **d**, **ı**, **u**, veya **s**.|Yalnızca rakam izlerseniz, ondalık ayırıcıdan görüntülenir. Sondaki sıfırlar kesilir.|
+|**0**|Varsa *genişliği* tarafından önekli **0**başında en küçük genişliği ulaşılana kadar sıfır eklenir. Her iki **0** ve **-** görünen **0** göz ardı edilir. Varsa **0** bir tamsayı biçimi için belirtilen (**ı**, **u**, **x**, **X**, **o**, **d**) ve duyarlık belirtimi de varsa — örneğin, `%04.d`— **0** göz ardı edilir. Varsa **0** için belirtilen **bir** veya **A** kayan nokta biçimi, baştaki sıfırlar $a Mantis için sonra `0x` veya `0X` öneki.|Dolgu.|
+|**blank** (' ')|İmzalı ve pozitif ise önek çıktı değeri için boş bir kullanın. Boş, her iki göz ardı edilir boş ve + bayrakları görünür.|Hiçbir boş görünür.|
+|**#**|İle kullanıldığında **o**, **x**, veya **X** biçimi **#** bayrak kullandığı 0, 0 x, ya da 0 sırasıyla ön eki her sıfır olmayan X Çıkış değeri.|Hiçbir boş görünür.|
+||İle kullanıldığında **e**, **E**, **f**, **F**, **bir** veya **A** Biçim, **#** bayrak, ondalık ayırıcıdan içerecek şekilde çıkış değerini zorlar.|Yalnızca rakam izlerseniz, ondalık ayırıcıdan görüntülenir.|
+||İle kullanıldığında **g** veya **G** biçimi **#** bayrağı ondalık içerecek şekilde çıkış değerini zorlar ve sondaki sıfırlar kesme engeller.<br /><br /> İle kullanıldığında göz ardı **c**, **d**, **ı**, **u**, veya **s**.|Yalnızca rakam izlerseniz, ondalık ayırıcıdan görüntülenir. Sondaki sıfırlar kesilir.|
 
 <a name="width"></a>
 
@@ -174,9 +174,9 @@ Duyarlık belirtimi yıldız ise (\*), bir `int` bağımsız değişken listesi 
 
 |Tür|Açıklama|Varsayılan|
 |----------|-------------|-------------|
-|**bir**, **A**|Duyarlık noktadan sonra basamak sayısını belirtir.|Varsayılan duyarlık 13'tür. Duyarlık 0 ise, ondalık ayırıcıdan sürece yazdırılır  **#**  bayrağı kullanılır.|
+|**a**, **A**|Duyarlık noktadan sonra basamak sayısını belirtir.|Varsayılan duyarlık 13'tür. Duyarlık 0 ise, ondalık ayırıcıdan sürece yazdırılır **#** bayrağı kullanılır.|
 |**c**, **C**|Duyarlık hiçbir etkisi olmaz.|Karakter yazdırılır.|
-|**d**, **ı**, **o**, **u**, **x**, **X**|Duyarlık yazdırılması basamak sayısı alt sınırını belirtir. Bağımsız değişken basamak sayısı ise değerinden *duyarlık*, çıkış değerini sıfırlarla soldaki doldurulan. Basamak sayısını aştığında değeri kesilmiş değil *duyarlık*.|Varsayılan duyarlık 1'dir.|
+|**d**, **i**, **o**, **u**, **x**, **X**|Duyarlık yazdırılması basamak sayısı alt sınırını belirtir. Bağımsız değişken basamak sayısı ise değerinden *duyarlık*, çıkış değerini sıfırlarla soldaki doldurulan. Basamak sayısını aştığında değeri kesilmiş değil *duyarlık*.|Varsayılan duyarlık 1'dir.|
 |**e**, **E**|Duyarlılık ondalık ayırıcıdan sonra yazdırılması basamak sayısını belirtir. Son yazdırılan basamaklı yuvarlanır.|Varsayılan duyarlık 6'dır. Varsa *duyarlık* 0 veya aşağıdaki içermeyen bir sayı nokta (.) görüntülenir, ondalık ayırıcıdan yazdırılır.|
 |**f**, **F**|Duyarlılık değeri ondalık ayırıcıdan sonra basamak sayısını belirtir. Ondalık görünürse, en az bir rakam önce görünür. Değer basamak uygun sayıya yuvarlanır.|Varsayılan duyarlık 6'dır. Varsa *duyarlık* 0 ise veya nokta (.) onu izleyen koymadan görünürse, ondalık ayırıcıdan yazdırılır.|
 |**g**, **G**|Duyarlık yazdırılan basamak sayısını belirtir.|Altı basamaktan yazdırılabilir ve sondaki sıfırları kesilir.|
@@ -194,7 +194,7 @@ Bazı türleri 32-bit ve 64 bit kodu farklı boyutlarda olabilir. Örneğin, `si
 
 |Belirtmek için|Ön ekini kullanın|Tür belirteci ile|
 |----------------|----------------|-------------------------|
-|`char`<br />`unsigned char`|**ss**|**d**, **ı**, **o**, **u**, **x**, veya **X**|
+|`char`<br />`unsigned char`|**hh**|**d**, **ı**, **o**, **u**, **x**, veya **X**|
 |`short int`<br />`short unsigned int`|**h**|**d**, **ı**, **o**, **u**, **x**, veya **X**|
 |`__int32`<br />`unsigned __int32`|**I32**|**d**, **ı**, **o**, **u**, **x**, veya **X**|
 |`__int64`<br />`unsigned __int64`|**I64**|**d**, **ı**, **o**, **u**, **x**, veya **X**|
@@ -216,7 +216,7 @@ Visual C++ ' ta rağmen `long double` farklı bir tür aynı iç gösterimi olar
 Bir **hc** veya **hC** tür belirteci ile eşanlamlı **c** içinde `printf` işlevleri ile **C** içinde `wprintf` işlevleri. Bir **lc**, **lC**, **wc** veya **wC** tür belirteci ile eşanlamlı **C** içinde `printf` İşlevler ile **c** içinde `wprintf` işlevleri. Bir **hs** veya **hS** tür belirteci ile eşanlamlı **s** içinde `printf` işlevleri ile **S** içinde `wprintf` işlevleri. Bir **ls**, **lS**, **ws** veya **wS** tür belirteci ile eşanlamlı **S** içinde `printf` İşlevler ile **s** içinde `wprintf` işlevleri.
 
 > [!NOTE]
-> **Microsoft özel**  
+> **Microsoft Specific**  
 > **I** (büyük harf i), **I32**, **I64**, ve **w** bağımsız değişkeni boyut değiştiricisi önekleri Microsoft uzantıları ve ISO C ile uyumlu değildir. **h** önek veri türü ile kullanıldığında `char` ve **l** (M küçük harf) veri türü ile kullanıldığında önek `double` Microsoft uzantıları.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
