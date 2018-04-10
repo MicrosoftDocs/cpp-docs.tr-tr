@@ -1,12 +1,12 @@
 ---
-title: "-GZ (etkinleştirmek yığın çerçevesi çalışma zamanı hata denetimini) | Microsoft Docs"
-ms.custom: 
+title: -GZ (etkinleştirmek yığın çerçevesi çalışma zamanı hata denetimini) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /gz
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - GZ compiler option [C++]
 - debug builds, catch release-build errors
 ms.assetid: b3efeeff-d5e3-4057-91c9-f6fc73d0270c
-caps.latest.revision: 
+caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
 manager: ghogen

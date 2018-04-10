@@ -1,13 +1,13 @@
 ---
-title: "-utf-8 (kaynağı Ayarla ve UTF-8 kümelerine karakter yürütülebilir) | Microsoft Docs"
-ms.custom: 
+title: -utf-8 (kaynağı Ayarla ve UTF-8 kümelerine karakter yürütülebilir) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /utf-8
@@ -16,7 +16,7 @@ dev_langs:
 helpviewer_keywords:
 - /utf-8 compiler option
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-caps.latest.revision: 
+caps.latest.revision: 3
 author: corob-msft
 ms.author: corob
 manager: ghogen

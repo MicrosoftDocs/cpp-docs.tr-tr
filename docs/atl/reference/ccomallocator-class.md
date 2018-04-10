@@ -1,12 +1,12 @@
 ---
-title: "CComAllocator sınıfı | Microsoft Docs"
-ms.custom: 
+title: CComAllocator sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CComAllocator
@@ -19,7 +19,7 @@ dev_langs:
 helpviewer_keywords:
 - CComAllocator class
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikeblome
 ms.author: mblome
 manager: ghogen

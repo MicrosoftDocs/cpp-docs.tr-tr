@@ -1,12 +1,12 @@
 ---
-title: "Kayıt defteri veri değişimi makroları | Microsoft Docs"
-ms.custom: 
+title: Kayıt defteri veri değişimi makroları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atlplus/ATL::BEGIN_RDX_MAP
@@ -20,7 +20,7 @@ dev_langs:
 helpviewer_keywords:
 - RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

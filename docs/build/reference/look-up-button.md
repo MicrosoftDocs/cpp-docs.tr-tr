@@ -1,19 +1,19 @@
 ---
-title: "Ara düğmesi | Microsoft Docs"
-ms.custom: 
+title: Ara düğmesi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
 helpviewer_keywords:
 - Look Up button
 ms.assetid: 61da61ec-5bb5-462a-85ef-501df5e93551
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

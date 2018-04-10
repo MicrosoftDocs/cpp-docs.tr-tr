@@ -1,12 +1,12 @@
 ---
-title: "Nesne makroları eklentisi | Microsoft Docs"
-ms.custom: 
+title: Nesne makroları eklentisi | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atlsnap/ATL::BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
@@ -20,7 +20,7 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikeblome
 ms.author: mblome
 manager: ghogen

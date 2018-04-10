@@ -1,12 +1,12 @@
 ---
 title: _com_error::HelpFile | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - _com_error::HelpFile
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - HelpFile method [C++]
 ms.assetid: d2d3a0a1-6b62-4d52-a818-3cfae545a4af
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikeblome
 ms.author: mblome
 manager: ghogen

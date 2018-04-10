@@ -1,12 +1,12 @@
 ---
-title: "-O1, - O2 (boyutu en aza indir, hızı en üst düzeye) | Microsoft Docs"
-ms.custom: 
+title: -O1, - O2 (boyutu en aza indir, hızı en üst düzeye) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /o2
@@ -25,7 +25,7 @@ helpviewer_keywords:
 - O1 compiler option [C++]
 - /O1 compiler option [C++]
 ms.assetid: 2d1423f5-53d9-44da-8908-b33a351656c2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
 manager: ghogen

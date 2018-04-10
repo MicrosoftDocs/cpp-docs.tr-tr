@@ -1,12 +1,12 @@
 ---
-title: "-Qfast_transcendentals (hızlı Soyutları zorla) | Microsoft Docs"
-ms.custom: 
+title: -Qfast_transcendentals (hızlı Soyutları zorla) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /Qfast_transcendentals
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - /Qfast_transcendentals
 - Force Fast Transcendentals
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen

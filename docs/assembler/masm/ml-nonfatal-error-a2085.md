@@ -1,12 +1,12 @@
 ---
-title: "ML önemli olmayan hatası A2085 | Microsoft Docs"
-ms.custom: 
+title: ML önemli olmayan hatası A2085 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - A2085
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - A2085
 ms.assetid: c2fef415-a32b-4249-896c-6d981fc6e327
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen

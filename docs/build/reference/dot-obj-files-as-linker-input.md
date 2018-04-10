@@ -1,12 +1,12 @@
 ---
-title: ". Bağlayıcı girişi olarak obj dosyaları | Microsoft Docs"
-ms.custom: 
+title: . Bağlayıcı girişi olarak obj dosyaları | Microsoft Docs
+ms.custom: ''
 ms.date: 12/29/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++

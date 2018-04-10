@@ -1,12 +1,12 @@
 ---
-title: "DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı | Microsoft Docs"
-ms.custom: 
+title: DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - _DllMainCRTStartup
@@ -24,7 +24,7 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen

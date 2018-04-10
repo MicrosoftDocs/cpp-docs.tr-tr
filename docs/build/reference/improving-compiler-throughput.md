@@ -1,12 +1,12 @@
 ---
-title: "Derleyici üretimini geliştirme | Microsoft Docs"
-ms.custom: 
+title: Derleyici üretimini geliştirme | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - performance, compiler
 - cl.exe compiler, throughput
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen

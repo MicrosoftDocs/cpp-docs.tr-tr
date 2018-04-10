@@ -1,12 +1,12 @@
 ---
-title: "-Og (Global iyileştirmeler) | Microsoft Docs"
-ms.custom: 
+title: -Og (Global iyileştirmeler) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GlobalOptimizations
@@ -22,7 +22,7 @@ helpviewer_keywords:
 - common subexpression elimination
 - Og compiler option [C++]
 ms.assetid: d10630cc-b9cf-4e97-bde3-8d7ee79e9435
-caps.latest.revision: 
+caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: ghogen

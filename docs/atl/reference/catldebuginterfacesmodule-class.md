@@ -1,12 +1,12 @@
 ---
-title: "CAtlDebugInterfacesModule sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlDebugInterfacesModule sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CAtlDebugInterfacesModule
@@ -17,7 +17,7 @@ helpviewer_keywords:
 - _ATL_DEBUG_QI macro
 - CAtlDebugInterfacesModule class
 ms.assetid: a193b567-8191-4115-a963-a10805972bac
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikeblome
 ms.author: mblome
 manager: ghogen

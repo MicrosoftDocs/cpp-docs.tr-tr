@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - msbuild.cpp.howto.modifytargetframeworkandplatformtoolset
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-caps.latest.revision: 
+caps.latest.revision: 32
 author: corob-msft
 ms.author: corob
 manager: ghogen

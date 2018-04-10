@@ -1,12 +1,12 @@
 ---
-title: "-KEYCONTAINER (derlemeyi imzalamak için anahtar kapsayıcısını belirt) | Microsoft Docs"
-ms.custom: 
+title: -KEYCONTAINER (derlemeyi imzalamak için anahtar kapsayıcısını belirt) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.KeyContainer
@@ -18,7 +18,7 @@ helpviewer_keywords:
 - /KEYCONTAINER linker option
 - -KEYCONTAINER linker option
 ms.assetid: 94882d12-b77a-49c7-96d0-18a31aee001e
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen

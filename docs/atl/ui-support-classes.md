@@ -1,12 +1,12 @@
 ---
-title: "Kullanıcı Arabirimi desteği sınıfları (ATL) | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı Arabirimi desteği sınıfları (ATL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vc.atl.ui
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - user interfaces, support classes
 - user interfaces, ATL classes
 ms.assetid: 313dfc95-308a-4118-b919-5a3c3673b865
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: ghogen

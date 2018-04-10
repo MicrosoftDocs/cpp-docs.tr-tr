@@ -1,12 +1,12 @@
 ---
-title: "Nasıl yapılır: yayın derlemesi oluşturma | Microsoft Docs"
-ms.custom: 
+title: 'Nasıl yapılır: yayın derlemesi oluşturma | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - C++
@@ -14,7 +14,7 @@ helpviewer_keywords:
 - Win32, release build
 - release builds, creating
 ms.assetid: 6a4c89b1-48f0-44d2-8703-ca0a4b0351bf
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen

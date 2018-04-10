@@ -1,12 +1,12 @@
 ---
-title: "CAtlTransactionManager sınıfı | Microsoft Docs"
-ms.custom: 
+title: CAtlTransactionManager sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-windows
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - CAtlTransactionManager
@@ -34,7 +34,7 @@ dev_langs:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-caps.latest.revision: 
+caps.latest.revision: 25
 author: mikeblome
 ms.author: mblome
 manager: ghogen

@@ -1,12 +1,12 @@
 ---
-title: "-MD, -MT, -LD (çalışma zamanı kitaplığını kullan) | Microsoft Docs"
-ms.custom: 
+title: -MD, -MT, -LD (çalışma zamanı kitaplığını kullan) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /ld
@@ -44,7 +44,7 @@ helpviewer_keywords:
 - LIBCMTD.lib
 - -MT compiler option [C++]
 ms.assetid: cf7ed652-dc3a-49b3-aab9-ad60e5395579
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen

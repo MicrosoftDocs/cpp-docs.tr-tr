@@ -1,12 +1,12 @@
 ---
-title: "-Yoksay (belirli uyarıları atla) | Microsoft Docs"
-ms.custom: 
+title: -Yoksay (belirli uyarıları atla) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - /OVERWRITE
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - /IGNORE linker option
 ms.assetid: 37e77387-8838-4697-898f-d376ac641124
-caps.latest.revision: 
+caps.latest.revision: 3
 author: corob-msft
 ms.author: corob
 manager: ghogen

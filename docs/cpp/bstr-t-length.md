@@ -1,12 +1,12 @@
 ---
 title: _bstr_t::length | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - _bstr_t::length
@@ -16,7 +16,7 @@ helpviewer_keywords:
 - length method [C++]
 - BSTR object [C++], length
 ms.assetid: 4f2e2c76-8894-4ef9-833f-4c6e796d0654
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen

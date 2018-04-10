@@ -1,12 +1,12 @@
 ---
-title: "CL seçenekleri sırası | Microsoft Docs"
-ms.custom: 
+title: CL seçenekleri sırası | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - cl
@@ -15,7 +15,7 @@ dev_langs:
 helpviewer_keywords:
 - cl.exe compiler, setting options
 ms.assetid: 300908ce-ae00-4b45-964b-e4e69ff6777b
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen
