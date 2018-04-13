@@ -40,7 +40,7 @@ ms.lasthandoff: 04/10/2018
   
 ||||  
 |-|-|-|  
-|[!](../../assembler/masm/operator-logical-not-masm.md)|[!=](../../assembler/masm/operator-not-equal-masm.md)|[&](../../assembler/masm/operator-logical-and-masm.md)|  
+|[\!](../../assembler/masm/operator-logical-not-masm.md)|[\!=](../../assembler/masm/operator-not-equal-masm.md)|[&](../../assembler/masm/operator-logical-and-masm.md)|  
 |[&&](../../assembler/masm/operator-logical-and-masm-run-time.md)|[<](../../assembler/masm/operator-less-than-masm-run-time.md)|[\<=](../../assembler/masm/operator-less-or-equal-masm-run-time.md)|  
 |[==](../../assembler/masm/operator-equal-masm-run-time.md)|[>](../../assembler/masm/operator-greater-than-masm-run-time.md)|[>=](../../assembler/masm/operator-greater-or-equal-masm-run-time.md)|  
 |[&#124;&#124;](../../assembler/masm/operator-logical-or.md)|||  
@@ -56,7 +56,7 @@ ms.lasthandoff: 04/10/2018
   
 ||||  
 |-|-|-|  
-|[!](../../assembler/masm/operator-logical-not-masm-run-time.md)|[%](../../assembler/masm/operator-percent.md)|[&](../../assembler/masm/operator-bitwise-and.md)|  
+|[\!](../../assembler/masm/operator-logical-not-masm-run-time.md)|[%](../../assembler/masm/operator-percent.md)|[&](../../assembler/masm/operator-bitwise-and.md)|  
 |[;;](../../assembler/masm/operator-semicolons.md)|[<>](../../assembler/masm/operator-literal.md)||  
   
 ## <a name="miscellaneous"></a>Çeşitli  
