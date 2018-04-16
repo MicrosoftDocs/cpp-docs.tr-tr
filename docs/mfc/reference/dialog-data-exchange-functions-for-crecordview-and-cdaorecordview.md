@@ -423,7 +423,7 @@ void AFXAPI DDX_FieldScroll(
  `pDX`  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *nIDC\**  
+ *nIDC\*\*  
  İlk Kimliğini gruptaki (stiliyle **WS_GROUP**) bitişik radyo düğmesi denetimlerin [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
  *value*  
