@@ -1,12 +1,12 @@
 ---
-title: "(C++) kullanım dışı | Microsoft Docs"
-ms.custom: 
+title: (C++) kullanım dışı | Microsoft Docs
+ms.custom: ''
 ms.date: 03/28/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - deprecated_cpp
@@ -16,20 +16,20 @@ helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb0dd0bd25f1e4f8d0fd3bc0f1bee19f34497fb2
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: ce1d98917609af0eeb42c197cd55bb2179039fe0
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
-Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman bu öznitelik Microsoft'a özgü declspec veya pragma, karşılaştırması kullanılacağı Kılavuzu bkz [C++ Standart öznitelikleri](attributes2.md).
+Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman bu öznitelik Microsoft'a özgü declspec veya pragma, karşılaştırması kullanılacağı Kılavuzu bkz [C++ Standart öznitelikleri](attributes.md).
 
  Aşağıda, belirtilen özel durumlarla birlikte **kullanım dışı** bildirimi ile aynı işlevselliği sunar [kullanım dışı](../preprocessor/deprecated-c-cpp.md) pragma:  
   
@@ -39,7 +39,7 @@ Bu konu hakkında Microsoft'a özgü olan declspec bildirimi kullanım dışı. 
   
 -   Makroları yalnızca ile kullanım dışı bırakıldı olarak işaretlenmelidir **kullanım dışı** pragması.  
   
- Derleyici kullanım dışı bırakılan bir tanımlayıcısı veya standart kullanılmasını karşılaştığı varsa [ `[[deprecated]]` ](attributes2.md) öznitelik, bir [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) uyarı oluşturulur.  
+ Derleyici kullanım dışı bırakılan bir tanımlayıcısı veya standart kullanılmasını karşılaştığı varsa [ `[[deprecated]]` ](attributes.md) öznitelik, bir [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) uyarı oluşturulur.  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, kullanım dışı işlev kullanıldığında derleme zamanında görüntülenen bir ileti belirtme ve İşlevler kullanım dışı olarak işaretlemek nasıl gösterir.  

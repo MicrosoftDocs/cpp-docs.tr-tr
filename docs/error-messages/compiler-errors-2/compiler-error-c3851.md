@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3851 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3851 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3851
@@ -15,22 +15,22 @@ dev_langs:
 helpviewer_keywords:
 - C3851
 ms.assetid: da30c21c-33aa-4439-8fb3-2f5021ea4985
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5f0cca8f3c1dfc4b3b35d494ebf73459a74d03
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 792d13ece8b864b3d8d7e251bf530f685a02ccf7
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiler-error-c3851"></a>Derleyici Hatası C3851
 'char': evrensel-karakter-name temel karakter kümesinde bir karakter belirtemezsiniz  
   
- C++ derlenmiş kod içinde bir dize dışında temel kaynak karakter kümesinde bir karakter veya karakter sabiti temsil eden bir evrensel karakter adı kullanamazsınız. Daha fazla bilgi için bkz: [karakter kümesi](../../cpp/character-sets2.md). C derlenmiş kod içinde bir evrensel karakter adını karakterler 0x20 0x7f, ('$'), 0x24 dışında (dahil) aralığında 0x40 kullanamazsınız (' @'), ya da 0x60 ('' ').  
+ C++ derlenmiş kod içinde bir dize dışında temel kaynak karakter kümesinde bir karakter veya karakter sabiti temsil eden bir evrensel karakter adı kullanamazsınız. Daha fazla bilgi için bkz: [karakter kümesi](../../cpp/character-sets.md). C derlenmiş kod içinde bir evrensel karakter adını karakterler 0x20 0x7f, ('$'), 0x24 dışında (dahil) aralığında 0x40 kullanamazsınız (' @'), ya da 0x60 ('' ').  
   
  Aşağıdaki örnekler C3851 oluşturmak ve nasıl düzeltileceği göster:  
   

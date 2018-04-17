@@ -1,12 +1,12 @@
 ---
-title: "Dize ve karakter değişmez değerleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Dize ve karakter değişmez değerleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - R
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - NULL, character constant
 - wide characters, strings
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-caps.latest.revision: 
+caps.latest.revision: 36
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37e5b86dfdef9c49e0e59c28d36ba4622238eced
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: 8714ff649471b0f84e11a65ae4100c8facb06c52
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++ çeşitli dize ve karakter türleri destekler ve bu türlerin her biri değişmez değerler express için yöntemler sağlar. Kaynak kodunuz bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanılarak herhangi bir dize express olanak sağlar. Ham dize sabit değeri kaçış karakterleri kullanmaktan kaçının olanak tanır ve dize değişmez değerleri tüm türleri ifade etmek için kullanılabilir. Ek yapım veya dönüştürme adımları gerçekleştirmek zorunda kalmadan std::string değişmez değerleri de oluşturabilirsiniz.  
@@ -83,7 +83,7 @@ int main()
 }  
 ```  
   
- Dize değişmez değerler, önek olabilir veya `u8`, `L`, `u`, ve `U` önekleri belirtmek için bir karakter (tek baytlı veya çok bayt), UTF-8, geniş karakter (UCS-2 veya UTF-16), UTF-16 ve UTF-32 kodlamaları sırasıyla daraltın. Ham dize sabit değeri olabilir `R`, `u8R`, `LR`, `uR` ve `UR` bu Kodlamalar ham sürüm eşdeğerlerini öneklerini.  Geçici veya statik std::string değerleri oluşturmak için dize değişmez değerleri veya ham dize değişmez değerleri ile kullanabilirsiniz bir `s` soneki. Daha fazla bilgi için aşağıdaki dize değişmez değerleri bölümüne bakın. Temel kaynak karakteri hakkında daha fazla bilgi için ayarlamak, evrensel karakter adları ve kaynak kodunuzu genişletilmiş kod sayfaları karakterler kullanarak görmek [karakter kümesi](../cpp/character-sets2.md).  
+ Dize değişmez değerler, önek olabilir veya `u8`, `L`, `u`, ve `U` önekleri belirtmek için bir karakter (tek baytlı veya çok bayt), UTF-8, geniş karakter (UCS-2 veya UTF-16), UTF-16 ve UTF-32 kodlamaları sırasıyla daraltın. Ham dize sabit değeri olabilir `R`, `u8R`, `LR`, `uR` ve `UR` bu Kodlamalar ham sürüm eşdeğerlerini öneklerini.  Geçici veya statik std::string değerleri oluşturmak için dize değişmez değerleri veya ham dize değişmez değerleri ile kullanabilirsiniz bir `s` soneki. Daha fazla bilgi için aşağıdaki dize değişmez değerleri bölümüne bakın. Temel kaynak karakteri hakkında daha fazla bilgi için ayarlamak, evrensel karakter adları ve kaynak kodunuzu genişletilmiş kod sayfaları karakterler kullanarak görmek [karakter kümesi](../cpp/character-sets.md).  
   
 ## <a name="character-literals"></a>Karakter değişmez değerleri  
  A *karakter sabit değeri* sabit bir karakteri oluşur. Tek tırnak işaretleri karakter ile temsil edilir. Karakter değişmez değerleri beş tür vardır:  
@@ -100,7 +100,7 @@ int main()
   
  Karakter sabit değeri için kullanılan karakter ayrılmış karakterleri ters eğik çizgi dışında herhangi bir karakter olabilir ('\\'), tek tırnak işareti (') ya da yeni satır. Ayrılmış karakterleri kaçış dizisi kullanılarak belirtilebilir. Türü karakter tutmak için yeterince büyük olduğu sürece karakter evrensel karakter adları kullanılarak belirtilebilir.  
   
-### <a name="encoding"></a>Encoding  
+### <a name="encoding"></a>Kodlama  
  Karakter değişmez değerleri farklı kodlanır kendi önekini temel alan.  
   
 -   Bir karakter öneki değişmez değer bir normal değişmez değer karakterdir. Değişmez değer bir normal karakter değeri tek bir karakter içeren çıkış sırasında veya kendi içinde yürütme karakter kümesi kodlaması sayısal değerine eşit bir değer yürütme karakter kümesinde temsil edilebilir evrensel karakter adı var. Birden fazla karakter, kaçış sırası veya evrensel karakter adını içeren bir sıradan karakter sabit değeri bir *multicharacter değişmez değer*. Koşullu-desteklenen, multicharacter bir hazır değer veya yürütme karakter kümesinde gösterilemez sıradan karakter sabit değeri int türü ve değeri uygulama tanımlı.  
@@ -148,7 +148,7 @@ int main() {
 }  
 ```  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Arasında bir değer normal bir karakter sabiti (bir önek olmayanlar) oluşturmak için derleyici karakteri veya tek tırnak içine bir 32 bit tamsayı içindeki 8 bit değerleri arasındaki bir karakter dizisi dönüştürür. Birden çok karakter sabit değeri içinde karşılık gelen bayt düşük düzey yüksek düzey gerektiği gibi doldurun. Oluşturmak için bir `char` değeri, derleyici, düşük düzey bayt alır. Oluşturmak için bir `wchar_t` veya `char16_t` değeri, derleyici, düşük düzey word alır. Derleyici hiçbir BITS atanmış bayt veya word ayarlanırsa, sonuç kesilmiş konusunda sizi uyarır.  
   
@@ -210,7 +210,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
   
  Evrensel karakter adları yedek kod noktası aralığındaki D800 DFFF değerleri kodlanamıyor. Unicode temsilci çiftleri için evrensel karakter adını kullanarak belirtin `\UNNNNNNNN`, burada NNNNNNNN sekiz basamaklı kodu karakter noktasıdır. Derleyici gerekiyorsa bir yedek çifti oluşturur.  
   
- C ++ 03, dil yalnızca bir alt evrensel karakter adları tarafından temsil edilebilir karakterlerin izin ve geçerli Unicode karakterlerin gerçekte sunmadı bazı evrensel karakter adları izin. Bu, C ++ 11'de standart giderilmiştir. C ++ 11'de, evrensel karakter adları karakter ve dize değişmez değerleri ve tanımlayıcıları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz: [karakter kümesi](../cpp/character-sets2.md). Unicode hakkında daha fazla bilgi için bkz: [Unicode](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). Temsilci çiftleri hakkında daha fazla bilgi için bkz: [temsilci çiftleri ve yardımcı karakterlerini](http://msdn.microsoft.com/library/dd374069\(v=vs.85\).aspx).  
+ C ++ 03, dil yalnızca bir alt evrensel karakter adları tarafından temsil edilebilir karakterlerin izin ve geçerli Unicode karakterlerin gerçekte sunmadı bazı evrensel karakter adları izin. Bu, C ++ 11'de standart giderilmiştir. C ++ 11'de, evrensel karakter adları karakter ve dize değişmez değerleri ve tanımlayıcıları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz: [karakter kümesi](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz: [Unicode](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). Temsilci çiftleri hakkında daha fazla bilgi için bkz: [temsilci çiftleri ve yardımcı karakterlerini](http://msdn.microsoft.com/library/dd374069\(v=vs.85\).aspx).  
   
 ## <a name="string-literals"></a>Dize sabit değerleri  
  Bir dize sabit değeri null sonlandırılmış bir dize birlikte form bir karakter dizisi temsil eder. Karakterleri çift tırnak içine alınması gerekir. Dize değişmez değerleri şu tür vardır:  
@@ -285,8 +285,8 @@ const wchar_t* newline = LR"(hello
 goodbye)";  
 ```  
   
-### <a name="stdstring-literals-c14"></a>std::string Literals (C++14)  
- Std::String değişmez değerleri olan "xyx" s olarak temsil kullanıcı tanımlı değişmez değerler (aşağıya bakın), standart kitaplığı uygulamalarını (ile bir `s` soneki). Bu tür bir dize değişmez değer türü std::string, std::wstring, std::u32string veya std::u16string Belirtilen önek bağlı olarak geçici bir nesne oluşturur. Önek kullanıldığında olarak yukarıda bir std::string oluşturulur. L"xyz"s produces a std::wstring. u "xyz" s oluşturan bir [std::u16string](../standard-library/string-typedefs.md#u16string), U "xyz" s üretir bir [std::u32string](../standard-library/string-typedefs.md#u32string).  
+### <a name="stdstring-literals-c14"></a>Std::String değişmez değerleri (C ++ 14)  
+ Std::String değişmez değerleri olan "xyx" s olarak temsil kullanıcı tanımlı değişmez değerler (aşağıya bakın), standart kitaplığı uygulamalarını (ile bir `s` soneki). Bu tür bir dize değişmez değer türü std::string, std::wstring, std::u32string veya std::u16string Belirtilen önek bağlı olarak geçici bir nesne oluşturur. Önek kullanıldığında olarak yukarıda bir std::string oluşturulur. L "xyz" s bir std::wstring üretir. u "xyz" s oluşturan bir [std::u16string](../standard-library/string-typedefs.md#u16string), U "xyz" s üretir bir [std::u32string](../standard-library/string-typedefs.md#u32string).  
   
 ```cpp  
 //#include <string>  
@@ -321,7 +321,7 @@ const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
 ### <a name="modifying-string-literals"></a>Dize değişmez değerleri değiştirme  
  Dize değişmez değerleri (std:string değişmez değerleri dahil değil) sabitleri olduğundan, bunları değiştirilmeye çalışılırken — Örneğin, str [2] 'A' = — derleyici hatasına neden olur.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Visual c++'ta const olmayan bir işaretçi başlatmak için bir değişmez dize değeri kullanabilirsiniz `char` veya `wchar_t`. Bu C99 kodda izin verilir ancak C ++ 98'de kullanım dışı ve C ++ 11 kaldırıldı. Dize değiştirme girişimi bu örnekte olduğu gibi bir erişim ihlali neden olur:  
   
@@ -404,6 +404,6 @@ const char32_t* s5 = U"😎 = \U0001F60E is B-)";
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakter kümeleri](../cpp/character-sets2.md)   
+ [Karakter kümeleri](../cpp/character-sets.md)   
  [Sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)   
  [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)

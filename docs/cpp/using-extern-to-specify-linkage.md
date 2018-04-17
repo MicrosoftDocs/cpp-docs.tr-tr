@@ -1,7 +1,7 @@
 ---
 title: Bağlantıyı belirtmek için extern kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 04/06/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -23,18 +23,17 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db93feb8c8fad13cf8de082858e68b89f93b5323
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 319ee69d30ad49ff745df05172db10503b3b42e0
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-extern-to-specify-linkage"></a>Bağlantıyı Belirtmek için extern Kullanma
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      extern string-literal { declaration-list }  
+extern string-literal { declaration-list }  
 extern string-literal declaration  
 ```  
   

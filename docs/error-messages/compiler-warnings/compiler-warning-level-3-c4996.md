@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Uyarısı (Düzey 3) C4996 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Uyarısı (Düzey 3) C4996 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C4996
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - C4996
 ms.assetid: 926c7cc2-921d-43ed-ae75-634f560dd317
-caps.latest.revision: 
+caps.latest.revision: 34
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5a4797b4ac5fabc31d747682579c3b3ae6ce900
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c0c41ce646f635e32f6e1e34d0361c738d0bb6b0
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiler-warning-level-3-c4996"></a>Derleyici Uyarısı (Düzey 3) C4996
 
@@ -37,13 +37,13 @@ C çalışma zamanı kitaplığı ve standart kitaplığı, ancak kapsamlı bir 
 
 - [Bu işlev veya değişken güvenli olmayabilir. Kullanmayı *safe_version* yerine. Kullanımdan kaldırma devre dışı bırakmak için \_CRT\_güvenli\_Hayır\_uyarıları.  Ayrıntılar için çevrimiçi yardıma bakın.](#unsafe-crt-library-functions)
 
-- [' std::*işlev_adı*::\_işaretlenmemiş\_yineleyiciler::\_Deprecate' çağrısı std::*işlev_adı*bu çağrıyı parametrelerle güvenli - olmayabilir geçirilen değerlerin doğru olduğunu kontrol etmek için arayan kullanır. Bu uyarıyı devre dışı bırakmak için -D_SCL_SECURE_NO_WARNINGS kullanın. Visual C++ 'İşaretli yineleyiciler' kullanımı konusunda belgelerine bakın](#unsafe-standard-library-functions)
+- [' std::*işlev_adı*::\_işaretlenmemiş\_yineleyiciler::\_Deprecate' çağrısı std::*işlev_adı*bu çağrıyı - olmayabilecek parametrelerle kullanır geçirilen değerlerin doğru olup olmadığını denetleyin çağırıcı. Bu uyarıyı devre dışı bırakmak için -D_SCL_SECURE_NO_WARNINGS kullanın. Visual C++ 'İşaretli yineleyiciler' kullanımı konusunda belgelerine bakın](#unsafe-standard-library-functions)
 
 - [Bu işlev veya değişken kitaplığı veya işletim sistemi daha yeni işlevselliğe göre kılınan. Kullanmayı *NEW_ITEM* yerine. Ayrıntılar için çevrimiçi yardıma bakın.](#obsolete-crt-functions-and-variables)
 
 ## <a name="cause"></a>Sebep
 
-C4996 derleyici bir işlevi veya olarak işaretlenmiş değişken karşılaştığında oluşur [kullanım dışı](../../cpp/deprecated-cpp.md) kullanarak bir `__declspec(deprecated)` değiştiricisi, veya bir işlev, sınıf üyesi veya C ++ 14 sahip typedef erişmeye çalıştığınızda [ \[ \[kullanım dışı\] \] ](../../cpp/attributes2.md) özniteliği. Kullanabileceğiniz `__declspec(deprecated)` değiştiricisi veya `[[deprecated]]` kendiniz kitaplıkları ya da istemcilerinizin kullanım dışı bırakılan İşlevler, değişkenleri, üyeleri veya tür tanımları hakkında uyarmak için üstbilgi dosyaları özniteliği.
+C4996 derleyici bir işlevi veya olarak işaretlenmiş değişken karşılaştığında oluşur [kullanım dışı](../../cpp/deprecated-cpp.md) kullanarak bir `__declspec(deprecated)` değiştiricisi, veya bir işlev, sınıf üyesi veya C ++ 14 sahip typedef erişmeye çalıştığınızda [ \[ \[kullanım dışı\] \] ](../../cpp/attributes.md) özniteliği. Kullanabileceğiniz `__declspec(deprecated)` değiştiricisi veya `[[deprecated]]` kendiniz kitaplıkları ya da istemcilerinizin kullanım dışı bırakılan İşlevler, değişkenleri, üyeleri veya tür tanımları hakkında uyarmak için üstbilgi dosyaları özniteliği.
 
 ## <a name="remarks"></a>Açıklamalar
 

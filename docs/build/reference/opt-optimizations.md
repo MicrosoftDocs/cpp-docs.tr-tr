@@ -1,12 +1,12 @@
 ---
-title: "-OPT (iyileştirmeler) | Microsoft Docs"
-ms.custom: 
+title: -OPT (iyileştirmeler) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.OptimizeReferences
@@ -26,17 +26,17 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-caps.latest.revision: 
+caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86427dbf1ac6c3404daa36d2e02786aa80ed6453
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 928968803dc008eb39b3d0c52152c1f3b631a852
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="opt-optimizations"></a>/OPT (İyileştirmeler)
 LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denetler.  
@@ -50,10 +50,10 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
 ```  
   
 ## <a name="arguments"></a>Arguments  
- **REF** &#124; **NOREF**  
+ **REF** &AMP;#124; **NOREF**  
  **/OPT:REF** işlevler ve hiçbir zaman başvurulan; veri ortadan kaldırır **/OPT:NOREF** işlevleri ve hiçbir zaman başvurulan verileri tutar.  
   
- /OFT:ref etkin olduğunda, LINK, başvurulmayan paketlenmiş işlevleri ve veri için başvuruyu kaldırır. Kullanarak derlenen nesne paketlenmiş işlevler ve verileri (COMDATs) varsa, [/Gy](../../build/reference/gy-enable-function-level-linking.md) seçeneği. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. Varsayılan olarak, **/OPT:REF** olmayan hata ayıklama derlemelerinde etkinleştirilir. Bu varsayılanı geçersiz kılabilir ve programa başvurulmayan COMDATs tutmak için belirtmeniz **/OPT:NOREF**. Kullanabileceğiniz [/dahil](../../build/reference/include-force-symbol-references.md) belirli bir sembol kaldırılmasını geçersiz kılmak için seçeneği.  
+ /OPT:ref etkinleştirildiğinde, bağlantı başvurulmayan paketlenmiş işlevler ve verileri kaldırır. Kullanarak derlenen nesne paketlenmiş işlevler ve verileri (COMDATs) varsa, [/Gy](../../build/reference/gy-enable-function-level-linking.md) seçeneği. Bu iyileştirme, geçişli COMDAT eleme olarak bilinir. Varsayılan olarak, **/OPT:REF** olmayan hata ayıklama derlemelerinde etkinleştirilir. Bu varsayılanı geçersiz kılabilir ve programa başvurulmayan COMDATs tutmak için belirtmeniz **/OPT:NOREF**. Kullanabileceğiniz [/dahil](../../build/reference/include-force-symbol-references.md) belirli bir sembol kaldırılmasını geçersiz kılmak için seçeneği.  
   
  Zaman **/OPT:REF** açıkça ya da varsayılan olarak, sınırlı bir biçimini etkin **/OPT:ICF** etkin, aynı işlevleri Katlama. İsterseniz **/OPT:REF** ama **/OPT:ICF**, ya da belirtmeniz gerekir **/OPT:REF, NOICF** veya **/OPT:NOICF**.  
   
@@ -63,7 +63,7 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
   
  Belirtme **/OPT:ICF** etkinleştirmemeniz **/OPT:REF** seçeneği.  
   
- **ICF [=** `iterations` **] &#124; NOICF**   
+ **ICF [=** `iterations` **] &AMP;#124; NOICF**   
  Kullanım **/OPT:ICF [=**`iterations`**]** aynı comdat'ı Katlama gerçekleştirmek için. Fazlalık COMDAT'lar bağlayıcı çıktısından kaldırılabilir. İsteğe bağlı `iterations` parametresi, yinelemeleri simgelerini çapraz geçiş sayısı belirtir. Varsayılan yineleme sayısı 2'dir. Ek yinelemeler, bir önceki yinelemede katlama sırasında kapsamda olmayan birden çok yineleme bulabilir.  
   
  Bağlayıcı farklı şekilde davranan zaman **/OPT:REF** belirtilen — ve **ICF** varsayılan olarak etkindir; ne zaman göründüğünden **/OPT:REF, ICF** açıkça belirtilen. Biçiminde **ICF** ile etkin **/OPT:REF** tek başına salt okunur verileri Katlama olmayan — bu .rdata, ve.xdata'yı ve sanal işlem bulunur içerir. Bu nedenle, daha az işlevleri için görüntüleri üretildiğinde Katlanmış [!INCLUDE[vcprx64](../../assembler/inline/includes/vcprx64_md.md)] bu modüllerdeki işlevlerin salt okunur verileri hakkında daha fazla bağımlı olduğundan — Örneğin, ve.xdata'yı ve sanal işlem bulunur. Tam almak için **ICF** davranışı Katlama açıkça belirtmek **/OPT:ICF**.  
@@ -75,7 +75,7 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
 > [!NOTE]
 >  Çünkü **/OPT:ICF** farklı işlevler veya salt okunur veri üyeleri için atanacak aynı adresini neden olabilir (`const` kullanarak derlenmiş değişkenleri **/Gy**), bağımlı program bölünebilir benzersiz adresler işlevleri veya salt okunur veri üyeleri için. Daha fazla bilgi için bkz: [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md).  
   
- **LBR** &#124; **NOLBR**  
+ **LBR** &AMP;#124; **NOLBR**  
  **/OPT:LBR** ve **/OPT:NOLBR** seçenekleri, yalnızca ARM ikili dosyaları için geçerlidir. Belirli ARM işlemci dal yönergeleri sınırlı aralığa sahip olduğundan bağlayıcı, aralık dışı bir adrese atlandığını algılarsa dal yönergesinin hedef adresini, gerçek hedefe giden dal yönergesinin bulunduğu "ada" kodu adresiyle değiştirir. Kullanabileceğiniz **/OPT:LBR** uzun şube yönergeleri algılanmasını ve genel kod boyutu en aza indirmek için Ara kod Adaları yerleştirilmesi en iyi duruma getirme. **/OPT:NOLBR** kod Adaları uzun şube yönergeler için en iyi duruma getirme karşılaşılan oluşturmak için bağlayıcıya bildirir.  
   
  Varsayılan olarak, **/OPT:LBR** artımlı bağlama etkinleştirilmediğinde seçeneğini ayarlayın. Artımlı olmayan bir bağlantı ancak değil uzun şube iyileştirmeler istiyorsanız belirtin **/OPT:NOLBR**. **/OPT:LBR** seçeneğini artımlı bağlantılandırma devre dışı bırakır.  
@@ -95,7 +95,7 @@ LINK öğesinin bir yapı sırasında gerçekleştirdiği iyileştirmeleri denet
   
     -   **Comdat'ı Katlama etkinleştir**  
   
-    -   **Başvuruları**  
+    -   **Başvurular**  
   
 ### <a name="to-set-the-optlbr-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki OPT:LBR bağlayıcı seçeneğini ayarlamak için  
   

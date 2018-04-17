@@ -1,19 +1,19 @@
 ---
-title: "C++ Standart öznitelikleri | Microsoft Docs"
-ms.custom: 
+title: C++ Standart öznitelikleri | Microsoft Docs
+ms.custom: ''
 ms.date: 03/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 manager: ghogen
 ms.openlocfilehash: d2dcce6b0e289588c426792a334ee4ec38d1ab5f
-ms.sourcegitcommit: ca2f94dfd015e0098a6eaf5c793ec532f1c97de1
+ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/13/2018
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
@@ -39,17 +39,17 @@ C ++ 11'de öznitelikleri olabilir veya satıcıya özgü olmayabilir ek bilgile
 void Foo(int);
 ```
 
-Öznitelikleri temsil #pragma yönergeleri, __declspec() (Visual C++) gibi satıcıya özel uzantıları için standartlaştırılmış bir alternatif veya &#95; &#95; öznitelik &#95; &#95; (GNU). Ancak, yine satıcıya özgü yapıları çoğu amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikler belirtir:
+Öznitelikleri temsil #pragma yönergeleri, __declspec() (Visual C++) gibi satıcıya özel uzantıları için standartlaştırılmış bir alternatif veya &#95; &#95;özniteliği&#95; &#95; (GNU). Ancak, yine satıcıya özgü yapıları çoğu amaç için kullanmanız gerekecektir. Standart şu anda uyumlu derleyici tanımalıdır aşağıdaki öznitelikler belirtir:
 
-- `[[noreturn]]`Bir işlev hiçbir zaman döndürür belirtir; diğer bir deyişle her zaman bir özel durum oluşturur. Derleyici için derleme kurallarını ayarlayabilirsiniz `[[noreturn]]` varlıklar.
+- `[[noreturn]]` Bir işlev hiçbir zaman döndürür belirtir; diğer bir deyişle her zaman bir özel durum oluşturur. Derleyici için derleme kurallarını ayarlayabilirsiniz `[[noreturn]]` varlıklar.
 
-- `[[carries_dependency]]`İşlev iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken bir bağımlılık işlev gövdesine taşır belirtmek üzere bir veya daha fazla parametreler için uygulanabilir. Öznitelik, işlevin dönüş değeri işlevi dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici daha verimli kodu oluşturmak için bu bilgileri kullanabilirsiniz.
+- `[[carries_dependency]]` İşlev iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken bir bağımlılık işlev gövdesine taşır belirtmek üzere bir veya daha fazla parametreler için uygulanabilir. Öznitelik, işlevin dönüş değeri işlevi dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici daha verimli kodu oluşturmak için bu bilgileri kullanabilirsiniz.
 
-- `[[deprecated]]`**Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecekte mevcut olmayabilir. Derleyici bu işlevi çağırmak istemci kodu denediğinde, bir bilgilendirme iletisi oluşturmak için kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkeni, statik olmayan veri üyesi, bir işlev, bir ad alanı, numaralandırma, bir numaralandırıcı veya şablon uzmanlık bildirimine uygulanabilir.  
+- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecekte mevcut olmayabilir. Derleyici bu işlevi çağırmak istemci kodu denediğinde, bir bilgilendirme iletisi oluşturmak için kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkeni, statik olmayan veri üyesi, bir işlev, bir ad alanı, numaralandırma, bir numaralandırıcı veya şablon uzmanlık bildirimine uygulanabilir.  
 
-- `[[fallthrough]]`**2017 ve daha sonra visual Studio:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) ipucu olarak deyimleri Derleyici (veya kod okuyan herkes), fallthrough bir davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı nedenle Visual C++ Derleyici fallthrough davranışı üzerinde şu anda uyarmaz.
+- `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya okuyan herkes ipucu olarak deyimleri kodu), fallthrough bir davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı nedenle Visual C++ Derleyici fallthrough davranışı üzerinde şu anda uyarmaz.
 
-- `[[nodiscard]]`**Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değeri atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834, uyarı oluşturur:
+- `[[nodiscard]]` **Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir işlevin dönüş değeri atılmak üzere tasarlanmamıştır belirtir. Bu örnekte gösterildiği gibi C4834, uyarı oluşturur:
 
    ```cpp
    [[nodiscard]]
@@ -62,11 +62,11 @@ void Foo(int);
    }
    ```
 
-- `[[maybe_unused]]`**Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir değişken işlevi, sınıf, belirtir typedef, statik olmayan veri üyesi, numaralandırma veya şablon uzmanlık olabilir kullanılmaması kasıtlı olarak. Bir varlık işaretlendiğinde derleyici uyarmaz `[[maybe_unused]]` kullanılmaz. Özniteliği olmadan bildirilen bir varlık daha sonra öznitelik ve tersi yönde yeniden bildirilen. Bir varlık olarak işaretlenmiş ilk bildiriminden analiz sonra ve geçerli çeviri birim çevrilmesi kalanı için işaretlenmiş olarak kabul edilir.
+- `[[maybe_unused]]` **Visual Studio 2017 15.3 ve sonraki sürümleri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) bir değişkeni, işlevi, sınıf, typedef, statik olmayan veri üyesi, enum veya şablon uzmanlık kasıtlı olarak kullanılamayabilir olduğunu belirtir. Bir varlık işaretlendiğinde derleyici uyarmaz `[[maybe_unused]]` kullanılmaz. Özniteliği olmadan bildirilen bir varlık daha sonra öznitelik ve tersi yönde yeniden bildirilen. Bir varlık olarak işaretlenmiş ilk bildiriminden analiz sonra ve geçerli çeviri birim çevrilmesi kalanı için işaretlenmiş olarak kabul edilir.
 
 ## <a name="microsoft-specific-attributes"></a>Microsoft'a özgü öznitelikleri
 
-- `[[gsl::suppress(rules)]]`Bu Microsoft özgü öznitelik zorunlu denetleyicileri gelen uyarıları gizleme için kullanılan [yönergeleri destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kod kuralları. Örneğin, bu kod parçacığını göz önünde bulundurun:
+- `[[gsl::suppress(rules)]]` Bu Microsoft özgü öznitelik zorunlu denetleyicileri gelen uyarıları gizleme için kullanılan [yönergeleri destek kitaplığı (GSL)](https://github.com/Microsoft/GSL) kod kuralları. Örneğin, bu kod parçacığını göz önünde bulundurun:
 
     ```cpp
     void main()

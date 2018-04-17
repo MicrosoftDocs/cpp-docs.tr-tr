@@ -24,11 +24,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cfb315c0dece0edc6228f70ed3900be80543cc7
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7294270778d0b9351d3e58e8afd285f021bb0066
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="execution-charset-set-execution-character-set"></a>/Execution-Charset (ayarlamak yürütme karakter kümesi)
 Yürütme karakter kümesi için yürütülebilir belirtmenize olanak sağlar.  
@@ -49,7 +49,7 @@ Yürütme karakter kümesi için yürütülebilir belirtmenize olanak sağlar.
 ## <a name="remarks"></a>Açıklamalar  
  Kullanabileceğiniz **/execution-charset** seçeneği bir yürütme karakter kümesi belirtin. Yürütme karakter kümesi kodlaması tüm adımları ön işleme derleme aşamasına giriş programınızı metni için kullanılan kümesidir. Bu karakter kümesi, bir dize veya karakter değişmez değerleri derlenmiş kod iç gösterimi için kullanılır. Kaynak dosyalarınız temel yürütme karakter kümesinde gösterilebilir olmayan karakterler içeren kullanmak için genişletilmiş yürütme karakter kümesini belirtmek için bu seçeneği ayarlayın. ISO karakter kümesi adı veya bir nokta (.) karakter kümesini belirtmek için bir 3 ile 5 rakamlı ondalık kod sayfası tanımlayıcısı tarafından izlenen ya da IANA kullanabilirsiniz veya. Desteklenen kod sayfası tanımlayıcıları listesini ve karakter kümesi adları için bkz: [kod sayfası tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/dd317756).  
   
- Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bir bayt sırası işareti algılar. Bayt sırası işareti bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak bir karakter kümesi adı veya kod sayfasını kullanarak belirtilmedikçe varsayar **/source-charset** seçeneği veya **/utf-8** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kodu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümesi hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets2.md) dil belgelerinde.  
+ Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bir bayt sırası işareti algılar. Bayt sırası işareti bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak bir karakter kümesi adı veya kod sayfasını kullanarak belirtilmedikçe varsayar **/source-charset** seçeneği veya **/utf-8** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kodu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümesi hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.  
   
  Kaynak karakter kümesi ve yürütme karakter kümesi UTF-8'e ayarlamak istiyorsanız kullanabileceğiniz **/utf-8** bir kısayol olarak derleyici seçeneği. Belirtmeye eşdeğer **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/validate-charset** varsayılan seçeneği.  
   
@@ -68,4 +68,4 @@ Yürütme karakter kümesi için yürütülebilir belirtmenize olanak sağlar.
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
  [/Source-Charset (ayarlamak kaynak karakter kümesi)](../../build/reference/source-charset-set-source-character-set.md)   
  [/UTF-8 (kaynağı Ayarla ve yürütülebilir karakter kümelerini UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)   
- [/Validate-Charset (uyumlu karakterler doğrula)](../../build/reference/validate-charset-validate-for-compatible-characters.md)
+ [/validate-charset (Uyumlu karakterler için doğrula)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

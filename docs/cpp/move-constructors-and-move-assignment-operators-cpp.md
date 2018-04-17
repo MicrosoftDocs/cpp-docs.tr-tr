@@ -1,32 +1,32 @@
 ---
-title: "Taşıma oluşturucuları ve taşıma atama işleçleri (C++) | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: 'Nasıl yapılır: taşıma oluşturucuları ve taşıma atama işleçleri (C++) tanımlama | Microsoft Docs'
+ms.custom: ''
+ms.date: 03/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- move constructor
+- move constructor [C++]
 ms.assetid: e75efe0e-4b74-47a9-96ed-4e83cfc4378d
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69280eff199b9c04b51bf9b7aa298a67bf31bd89
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 8bc9ce3d397b96ec45a0dbee5fefdb09d01b3f28
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="move-constructors-and-move-assignment-operators-c"></a>Taşıma Oluşturucuları ve Taşıma Atama İşleçleri (C++)
-Bu konuda nasıl yazılacağını açıklar bir *taşıma Oluşturucusu* ve C++ sınıf için bir taşıma atama işleci. Bir taşıma oluşturucusuna uygulamalarınızın performansını önemli ölçüde iyileştirebilen taşıma semantiği uygulanmasını sağlar. Taşıma semantiği hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+Bu konuda nasıl yazılacağını açıklar bir *taşıma Oluşturucusu* ve C++ sınıf için bir taşıma atama işleci. Bir taşıma oluşturucusuna kopyalamadan bir lvalue taşınacak rvalue nesne tarafından sahip olunan kaynaklar sağlar. Taşıma semantiği hakkında daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
  Bu konuda aşağıdaki C++ sınıfı derlemeler `MemoryBlock`, bellek arabelleği yönetir.  
   
@@ -135,7 +135,7 @@ private:
     ```  
   
 ### <a name="to-create-a-move-assignment-operator-for-a-c-class"></a>Bir C++ sınıf için bir taşıma atama işleci oluşturmak için  
-  
+
 1.  Rvalue başvuru sınıf türü, parametre olarak alıp bir başvuru sınıf türü döndüren bir boş atama işleci, aşağıdaki örnekte gösterildiği gibi tanımlayın:  
   
     ```cpp  
@@ -230,7 +230,7 @@ MemoryBlock& operator=(MemoryBlock&& other)
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl taşıma semantiği uygulamalarınızın performansını gösterir. Örnek bir vektör nesnesine iki öğe ekler ve ardından iki var olan öğeler arasında yeni bir öğe ekler. Visual C++ 2010 `vector` sınıfı kullanır kopyalayarak yerine vektör öğelerini taşıyarak ekleme işlemi verimli bir şekilde gerçekleştirmek için semantiği taşıyın.  
+ Aşağıdaki örnekte nasıl taşıma semantiği uygulamalarınızın performansını gösterir. Örnek bir vektör nesnesine iki öğe ekler ve ardından iki var olan öğeler arasında yeni bir öğe ekler. `vector` Sınıfı kullanır kopyalayarak yerine vektör öğelerini taşıyarak ekleme işlemi verimli bir şekilde gerçekleştirmek için semantiği taşıyın.  
   
 ```cpp  
 // rvalue-references-move-semantics.cpp  
@@ -275,7 +275,7 @@ In ~MemoryBlock(). length = 50. Deleting resource.
 In ~MemoryBlock(). length = 75. Deleting resource.  
 ```  
   
- Visual C++ 2010'dan önce bu örnek şu çıkışı üretir:  
+ Visual Studio 2010'dan önce bu örnekte aşağıdaki çıkış üretilen:  
   
 ```  
 In MemoryBlock(size_t). length = 25.  

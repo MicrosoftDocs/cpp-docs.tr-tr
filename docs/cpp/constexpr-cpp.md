@@ -19,11 +19,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fdf0a4794dd32208b08791d921f6d638873545a1
-ms.sourcegitcommit: d9ee6f777974d031570f4260c9581ea2c81ad875
+ms.openlocfilehash: 5218e576a1aa0436ccb7696d208b1ba2049263b0
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="constexpr-c"></a>constexpr (C++)
 
@@ -49,6 +49,7 @@ Değişmez değer türü olması gerekir ve kendisine gereken bir veya daha fazl
 
 ## <a name="return-value"></a>Dönüş Değeri
 
+
  Constexpr değişken veya işlev döndürmelidir bir [değişmez değer türü](trivial-standard-layout-and-pod-types.md#literal_types).
 
 ## <a name="constexpr-variables"></a>constexpr değişkenleri
@@ -70,7 +71,7 @@ int j = 0;
 constexpr int k = j + 1; //Error! j not a constant expression
 ```
 
-## <a name="constexpr-functions"></a>constexpr işlevleri
+## <a name="constexpr_functions"></a> constexpr işlevleri
 
 A **constexpr** işlevi bir dönüş değeri hesaplanan derleme kodu tüketen gerektirmesi durumunda olduğundan.  Bağımsız değişkenlerini olduğunda **constexpr** değerleri alabilir kod gerektirir ve dönüş değeri başlatmak örneğin derleme zamanında bir **constexpr** değişkeni ya da bir tür olmayan şablon bağımsız değişken sağlayın, derleme zamanı sabiti üretir. Olmayan ile çağrıldığında**constexpr** bağımsız değişken veya değerini derleme zamanında gerekli olmadığı durumlarda, bu değer normal bir işlev gibi çalışma zamanında üretir.  (Bu ikili davranış yazmak zorunda kalmaktan kaydeder **constexpr** ve olmayan-**constexpr** aynı işlevi sürümlerini.)
 

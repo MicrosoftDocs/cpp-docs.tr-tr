@@ -14,11 +14,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 018b4941171dd466cb8230f7e2614fda3b019752
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: ce15db75d4d08ef128e561fa9671b643946c71c3
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-and-157improvements157"></a>C++ uygunluk geliştirmeleri 15.0, Visual Studio 2017 sürümlerde [15.3](#improvements_153), [15,5](#improvements_155), [15,6](#improvements_156), ve [15.7](#improvements_157)
 
@@ -72,7 +72,7 @@ Bir varlık kullanılmadığı görünürken uyarıları Sessiz ya da bir işlev
 
 ### <a name="using-attribute-namespaces-without-repetition"></a>Yineleme olmadan özniteliği ad alanlarını kullanma
 
-Bir öznitelik listesinde yalnızca bir tek bir ad tanımlayıcısı etkinleştirmek için yeni söz dizimi'ı seçin. Daha fazla bilgi için bkz: [C++ öznitelikleri](cpp/attributes2.md).
+Bir öznitelik listesinde yalnızca bir tek bir ad tanımlayıcısı etkinleştirmek için yeni söz dizimi'ı seçin. Daha fazla bilgi için bkz: [C++ öznitelikleri](cpp/attributes.md).
 
 ### <a name="structured-bindings"></a>Yapılandırılmış bağlamaları
 

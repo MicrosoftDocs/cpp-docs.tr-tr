@@ -1,10 +1,10 @@
 ---
-title: "&lt;fstream&gt; tür tanımları | Microsoft Docs"
-ms.custom: 
+title: '&lt;fstream&gt; tür tanımları | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - fstream/std::filebuf
@@ -16,13 +16,13 @@ f1_keywords:
 - fstream/std::wifstream
 - fstream/std::wofstream
 ms.assetid: 8dddef2d-7f17-42a6-ba08-6f6f20597d23
-caps.latest.revision: 
+caps.latest.revision: 11
 manager: ghogen
-ms.openlocfilehash: 5e0c09cdef9a20d7614f26189f34a5302b46a3ff
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 613a96cb4d6ca174c7cf2d1bcfcf024dacf75980
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfstreamgt-typedefs"></a>&lt;fstream&gt; tür tanımları
 ||||  
@@ -61,7 +61,7 @@ typedef basic_ifstream<char, char_traits<char>> ifstream;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Şablon sınıfı için eş anlamlı türüdür `basic_ifstream`, tür char varsayılan karakter nitelikler ile öğeleri için özelleştirilmiş. Örneğidir  
+ Şablon sınıfı için eş anlamlı türüdür [basic_ifstream](../standard-library/basic-ifstream-class.md), tür char varsayılan karakter nitelikler ile öğeleri için özelleştirilmiş. Örneğidir  
   
  `using namespace std;`  
   
@@ -99,7 +99,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 ### <a name="remarks"></a>Açıklamalar  
  Şablon sınıfı için eş anlamlı türüdür [basic_fstream](../standard-library/basic-fstream-class.md), türündeki öğeler için özelleştirilmiş `wchar_t` varsayılan karakter nitelikler ile.  
   
-##  <a name="wifstream">wifstream</a>  
+##  <a name="wifstream"></a>  wifstream  
  Bir tür `basic_ifstream` üzerinde özel `wchar_t` şablon parametreleri.  
   
 ```

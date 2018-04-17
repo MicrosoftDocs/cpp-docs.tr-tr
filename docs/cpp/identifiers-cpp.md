@@ -1,12 +1,12 @@
 ---
-title: "Tanımlayıcılar (C++) | Microsoft Docs"
-ms.custom: 
+title: Tanımlayıcılar (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - white space, in C++ identifiers
 - identifiers [C++]
 ms.assetid: 03a0dfb1-4530-4cdf-8295-5ea4dca4c1b8
-caps.latest.revision: 
+caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2b2c3899076206d3ce3b0094f3d85426bd321c3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 118c18e413640509789d6a6c4a177371c9144c64
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 Aşağıdakilerden birini belirtmek için kullanılan bir karakter dizisi tanımlayıcısıdır:  
@@ -59,7 +59,7 @@ A B C D E F G H I J K L M
 N O P Q R S T U V W X Y Z  
 ```  
   
- Evrensel karakter adları belirli aralıklarına tanımlayıcıda de izin verilir.  Evrensel karakter adları bir tanımlayıcıda bir denetim karakteri veya temel kaynak karakter kümesinde bir karakter belirtemezsiniz. Daha fazla bilgi için bkz: [karakter kümesi](../cpp/character-sets2.md). Bu Unicode kod noktası numarası aralıkları bir tanımlayıcı olarak evrensel karakter adları herhangi bir karakter için izin verilir:  
+ Evrensel karakter adları belirli aralıklarına tanımlayıcıda de izin verilir.  Evrensel karakter adları bir tanımlayıcıda bir denetim karakteri veya temel kaynak karakter kümesinde bir karakter belirtemezsiniz. Daha fazla bilgi için bkz: [karakter kümesi](../cpp/character-sets.md). Bu Unicode kod noktası numarası aralıkları bir tanımlayıcı olarak evrensel karakter adları herhangi bir karakter için izin verilir:  
   
 -   00A8, 00AA, 00AD, 00AF, 00B2 00B5, 00B7 00BA, 00BC-00BE, 00C 0-00 D 6, 00D 8-00F6, 00F8 00FF, 0100 02FF, 0370 167F, 1681 180D, 180F 1DBF, 1E00 1FFF, 200B - 200D, 202A 202E, 203F 2040, 2054, 2060 206F, 2070 20CF, 2100 218F, 2460 24FF, 2776-2793, 2C 00-2DFF, 2E80 2FFF 3004 3007, 3021 302F, 3031 303F, 3040-D7FF F900 FD3D, FD40 FDCF, FDF0 FE1F, FE30 FE44, FE47-FFFD 10000 1FFFD, 20000 2FFFD, 30000 3FFFD, 40000 4FFFD, 50000 5FFFD, 60000 6FFFD, 70000 7FFFD, 80000 8FFFD, 90000 9FFFD, A0000 AFFFD, B0000 BFFFD, C0000-CFFFD D0000-DFFFD, E0000 EFFFD  
   

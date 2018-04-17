@@ -1,37 +1,35 @@
 ---
-title: "Atama İşleçleri | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Atama İşleçleri | Microsoft Docs
+ms.custom: ''
+ms.date: 03/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
-- '>>='
-- xor_eq
-- '&='
-- <<=
-- -=
-- and_eq
-- ^=
-- '|='
+- =
+- '*='
 - /=
 - '%='
-- or_eq
 - +=
-- '*='
+- -=
+- <<=
+- '>>='
+- '&='
+- ^=
+- '|='
+- '&&='
 dev_langs:
 - C++
 helpviewer_keywords:
-- or_eq operator
-- '&= operator'
 - operators [C++], assignment
 - assignment operators [C++], C++
-- xor_eq operator
+- '&= operator'
+- '&&= operator'
+- ^= operator
 - += operator
-- and_eq operator
 - '>>= operator'
 - '|= operator'
 - operator>>=
@@ -40,35 +38,39 @@ helpviewer_keywords:
 - ^= operator
 - operator >>=
 - = operator
-- assignment operators [C++]
 - -= operator
 - /= operator
 - <<= operator
 ms.assetid: b028cf35-2ff1-4f14-9027-fd53ebec8aa0
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c84244a619873dcd61b52dee317a751ff28ec3ef
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 4cc273b145aebab3c0a413efe74c29c39b3a6b88
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assignment-operators"></a>Atama İşleçleri
 ## <a name="syntax"></a>Sözdizimi  
   
 ```  
-  
-      expression assignment-operator expression   
+expression assignment-operator expression   
 assignment-operator : one of  
-   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  
+   =   *=   /=   %=   +=   -=   <<=   >>=   &=   ^=   |=  &&=
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Atama işleçleri, sol işlenen tarafından belirlenen nesnede bir değer depolar. İki tür arama işlemi vardır: İkinci işlenen değerinin ilk işlenen tarafından belirtilen nesne içinde depolandığı basit atama ve sonucu depolamadan önce içinde bir aritmetik, kaydırma veya bit düzeyinde işlemin yapıldığı birleşik atama. Aşağıdaki tabloda, = işleci hariç tüm atama işleçleri birleşik atama işleçleridir.  
+ Atama işleçleri, sol işlenen tarafından belirlenen nesnede bir değer depolar. Üç tür atama işlemleri şunlardır: 
+
+1. ikinci işlenen değeri ilk işlenen tarafından belirtilen nesnesindeki depolandığı basit atama. 1. Aritmetik, shift ya da Bitsel işlem sonucu depolamak önce gerçekleştirildiği bileşik atama.
+1. hangi kaynaklara kopyalamadan aktarılır atama (için sınıf türleri) taşıyın.
+
+
+Aşağıdaki tabloda tüm atama işleçleri hariç = ve & & = işleçler şunlardır: bileşik atama işleçleri.  
   
 ### <a name="assignment-operators"></a>Atama İşleçleri  
   
@@ -84,7 +86,8 @@ assignment-operator : one of
 |**>>=**|Birinci işlenenin değerini ikinci işlenenin değeri tarafından belirtilen bit sayısının sağına kaydırır; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |**&=**|Birinci ve ikinci işlenenden bit seviyesinde VE elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
 |`^=`|Birinci ve ikinci işlenenden bit seviyesinde dışlamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
-|`&#124;=`|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|  
+|`&#124;=`|Birinci ve ikinci işlenenden bit seviyesinde kapsamalı VEYA elde eder; sonucu ilk işlenen tarafından belirtilen nesnede depolar.|
+|**&&=**| Atama işleci (için yalnızca sınıf türleri) taşıyın. İkinci işlenen bir rvalue ise, kaynaklarını (kopyalayarak olmadan) ilk işlenen taşıyın. Bkz: [taşıma oluşturucuları ve taşıma atama işleçleri](move-constructors-and-move-assignment-operators-cpp.md) daha fazla bilgi için.|
   
  **İşleç Anahtar Sözcükleri**  
   

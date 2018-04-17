@@ -1,12 +1,12 @@
 ---
-title: "(C/C++) kullanım dışı | Microsoft Docs"
-ms.custom: 
+title: (C/C++) kullanım dışı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - vc-pragma.deprecated
@@ -17,22 +17,22 @@ helpviewer_keywords:
 - deprecated pragma
 - pragmas, deprecated
 ms.assetid: 9c046f12-7875-499a-8d5d-12f8642fed2d
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5df80fffb5b9cdeabfe19d5a5de6eb771d35d3d
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 65333f72f71ded1338956ab1a3c51c2be980cb1a
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deprecated-cc"></a>deprecated (C/C++)
 **Kullanım dışı** gösteren bir işlev, tür veya başka bir tanımlayıcı artık bir gelecekte desteklenebilir olduğunu pragma sağlar serbest bırakma veya artık kullanılmalıdır.  
 > [!NOTE]
-> C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman, kullanılacağı hakkında yönergeler vs Microsoft declspec veya pragma özniteliği için bkz: [C++ Standart öznitelikleri](../cpp/attributes2.md) özniteliği.
+> C ++ 14 hakkında bilgi için `[[deprecated]]` özniteliği ve ne zaman, kullanılacağı hakkında yönergeler vs Microsoft declspec veya pragma özniteliği için bkz: [C++ Standart öznitelikleri](../cpp/attributes.md) özniteliği.
   
 ## <a name="syntax"></a>Sözdizimi  
   

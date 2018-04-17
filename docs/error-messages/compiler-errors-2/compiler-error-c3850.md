@@ -1,12 +1,12 @@
 ---
-title: "Derleyici Hatası C3850 | Microsoft Docs"
-ms.custom: 
+title: Derleyici Hatası C3850 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: error-reference
 f1_keywords:
 - C3850
@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - C3850
 ms.assetid: 028f3a37-f3ad-4ebc-9168-3cdea47524d4
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe77bb54a72c340a2fbf2a986a4346397cff11fb
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: f5c79f1ab90348ea234e006ae6838d5e80e46c3e
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compiler-error-c3850"></a>Derleyici Hatası C3850
 'char': geçersiz bir karakter evrensel-karakter-name belirtir  
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/21/2017
   
  C derlenmiş kodda, evrensel karakter adları 0000-009F aralığında bir karakter olarak temsil edilmeyebilir dahil 0024 ('$'), özel durumları ile 0040 (' @') ve 0060 ('' ').  
   
- C++ derlenmiş kod içinde bir evrensel karakter adı bir dize veya karakter değişmez değer geçerli bir Unicode kod noktası kullanabilir. Bir hazır değer dışında evrensel karakter adları aralık 0000 001F ya da 007F-009F, her ikisi de dahil, bir denetim karakteri temsil etmiyor veya temel kaynak karakteri üyesi ayarlayın.  Daha fazla bilgi için bkz: [karakter kümesi](../../cpp/character-sets2.md).  
+ C++ derlenmiş kod içinde bir evrensel karakter adı bir dize veya karakter değişmez değer geçerli bir Unicode kod noktası kullanabilir. Bir hazır değer dışında evrensel karakter adları aralık 0000 001F ya da 007F-009F, her ikisi de dahil, bir denetim karakteri temsil etmiyor veya temel kaynak karakteri üyesi ayarlayın.  Daha fazla bilgi için bkz: [karakter kümesi](../../cpp/character-sets.md).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek C3850 oluşturur ve düzeltmek gösterilmektedir:  

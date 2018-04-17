@@ -1,12 +1,12 @@
 ---
 title: Normal ifadeler (C++) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - C++
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - regular expressions, Visual C++
 - regular expressions
 ms.assetid: aafe202a-1d96-4b36-a270-d676dfd3c51c
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce781d026712a8c93df6e8d177417f170092bfd2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: cf33b5be2556108f3caa2182bfcc5b5035b3a51e
+ms.sourcegitcommit: 770f6c4a57200aaa9e8ac6e08a3631a4b4bdca05
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="regular-expressions-c"></a>Normal İfadeler (C++)
 C++ Standart Kitaplığı, birden çok normal ifade aynı destekler. Bu konu, normal ifadeler kullanırken kullanılabilir dilbilgisi farklılıkları açıklar.  
@@ -93,7 +93,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
  İçinde `ECMAScript`, bir öğenin de aşağıdakilerden biri olabilir:  
   
--   A *yakalama olmayan grup* biçiminde "(: *alt* )". Sınırlayıcı arasındaki desen tarafından eşleştirilen hedef dizideki karakterlerin dizisiyle eşleşir.  
+-   A *yakalama olmayan grup* biçiminde "(?: *alt* )". Sınırlayıcı arasındaki desen tarafından eşleştirilen hedef dizideki karakterlerin dizisiyle eşleşir.  
   
 -   Sınırlı bir *dosya biçimi kaçış* form "\f", "\n", "\r", "\t" veya "\v". Bunlar hedef dizide sırasıyla bir form besleme, yeni satır, satır başı, yatay sekme ve dikey sekme ile eşleşir.  
   
@@ -115,7 +115,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
  Örnekler:  
   
--   "(:a)" hedef sırası eşleşen "a", ancak "(:a) \1" hiçbir yakalama grubu 1 olduğundan geçersiz.  
+-   "(?:a)", "a" hedef dizisiyle eşleşir, ancak yakalama grubu 1 olmadığından "(?:a)\1" geçersizdir.  
   
 -   "(=a) bir" hedef sırası eşleşen "a". Pozitif onay hedef dizideki ilk "a" dizileriyle eşleşir ve normal ifadedeki son "a" hedef dizideki ilk "a" dizileriyle eşleşir.  
   
@@ -162,15 +162,15 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
 -   "a+", "a" hedef dizisiyle, "aa" hedef dizisiyle vb. ile eşleşir ancak "" hedef dizisiyle eşleşmez.  
   
- İçinde `ECMAScript`, yineleme sayısı tüm formları karakteriyle izlenebilir '', hangi atayan bir *doyumsuz olmayan yineleme*.  
+ İçinde `ECMAScript`, yineleme sayısı tüm formları karakteriyle izlenebilir '?', hangi atayan bir *doyumsuz olmayan yineleme*.  
   
 ### <a name="concatenation"></a>Bitiştirme  
  İle veya olmadan normal ifade öğeleri *yineleme sayısı*, form uzun normal ifadeler için birleştirilmiş. Sonuçta elde edilen ifade tek tek öğeler tarafından eşleştirilen dizilerin bir bitiştirmesi olan bir hedef dizisiyle eşleşir. Örneğin, "a{2,3}b", "aab" hedef dizisini ve "aaab" hedef dizisiyle eşleşir, ancak "ab" ya da "aaaab" hedef dizisiyle eşleşmez.  
   
 ### <a name="alternation"></a>Değişim  
- Tüm normal ifade aynı içinde `basic` ve `grep`, birleştirilmiş bir normal ifade karakteriyle izlenebilir ' &#124;' ve başka bir normal ifade birleştirilmiş. Herhangi bir sayıdaki bitişik normal ifadeler bu şekilde birleştirilebilir. Sonuçta elde edilen ifade, bitişik normal ifadelerin bir veya daha fazlasını eşleyen herhangi bir hedef dizisiyle eşleşir.  
+ Tüm normal ifade aynı içinde `basic` ve `grep`, birleştirilmiş bir normal ifade karakteriyle izlenebilir '&#124;' ve başka bir normal ifade birleştirilmiş. Herhangi bir sayıdaki bitişik normal ifadeler bu şekilde birleştirilebilir. Sonuçta elde edilen ifade, bitişik normal ifadelerin bir veya daha fazlasını eşleyen herhangi bir hedef dizisiyle eşleşir.  
   
- Birden fazla birleştirilmiş normal ifadeler hedef sırası eşleştiğinde `ECMAScript` eşleşme olarak dizisi eşleşen ilk birleştirilmiş bir normal ifade seçer (*ilk eşleşen*); diğer Normal ifade aynı seçin başarır bir *uzun eşleşme*. Örneğin, "ab &#124; cd" eşleşmeleri hedef sırası "ab" ve "abd" hedef sırası eşleşmeyen hedef sırası "cd" ancak veya hedef sırası "acd".  
+ Birden fazla birleştirilmiş normal ifadeler hedef sırası eşleştiğinde `ECMAScript` eşleşme olarak dizisi eşleşen ilk birleştirilmiş bir normal ifade seçer (*ilk eşleşen*); diğer Normal ifade aynı seçin başarır bir *uzun eşleşme*. Örneğin, "ab&#124;cd" hedef sırası "ab" ve "cd" hedef sıra ile eşleşir, ancak hedef sırası "abd" veya "acd" hedef sırası eşleşmiyor.  
   
  İçinde `grep` ve `egrep`, yeni satır karakteri ('\n') alternations ayırmak için kullanılabilir.  
   
@@ -182,7 +182,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
 |Öğe|Temel|genişletilmiş|ECMAScript|grep|egrep|awk|  
 |-------------|---------|---------|----------|----------|-----------|---------|  
-|Değişim kullanarak ' &#124;'||+|+||+|+|  
+|Değişim kullanarak '&#124;'||+|+||+|+|  
 |'\n' kullanarak değişim||||+|+||  
 |yer işareti|+|+|+|+|+|+|  
 |yeniden başvuru|+||+|+|||  
@@ -326,7 +326,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
 |-------------|----------------------------------------|  
 |`basic`, `grep`|{ '(', ')', '{', '}', '.', '[', '\\', '\*', '^', '$' }|  
 |`extended`, `egrep`|{ '(', ')', '{', '.', '[', '\\', '\*', '^', '$', '+', '?', '&#124;' }|  
-|`awk`|`extended` plus { '"', '/' }|  
+|`awk`|`extended` artı {' "', '/'}|  
 |`ECMAScript`|Bir tanımlayıcının parçası olabilenler dışındaki tüm karakterler. Genellikle, bu içerir harf, rakam, '$', '\_' ve unicode kaçış sıraları. Daha fazla bilgi için bkz. ECMAScript Dil Belirtimi.|  
   
 ### <a name="individual-character"></a>Tekil Karakter  
@@ -365,7 +365,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
  Hedef geçerli dizedeki hemen sonra değilse negatif word sınır assert eşleşen bir *word sınır*.  
   
 ### <a name="non-capture-group"></a>Yakalama olmayan Grup  
- Bir yakalama olmayan grup kendi içeriğini normal ifade dilbilgisi içinde tek bir birim olarak işaretler ancak hedef metni etiketlemez. Örneğin, "(a)(:b)\*(c)" "abbc" hedef metinle eşleşen ve yakalama grubu 1 ile değişkene ilişkilendirir "bir"ve "c" değişkene Grup 2 yakalayın.  
+ Bir yakalama olmayan grup kendi içeriğini normal ifade dilbilgisi içinde tek bir birim olarak işaretler ancak hedef metni etiketlemez. Örneğin, "(a)(?:b)\*(c)" "abbc" hedef metinle eşleşen ve yakalama grubu 1 ile değişkene ilişkilendirir "bir"ve "c" değişkene Grup 2 yakalayın.  
   
 ### <a name="non-greedy-repetition"></a>Doyumsuz olmayan Yineleme  
  Doyumsuz olmayan bir yineleme, deseni eşleyen hedef dizinin en kısa alt dizisini tüketir. Doyumsuz bir yineleme en uzun olanı tüketir. Örneğin, "(a+) (bir\*b)" hedef sırası "aaab" ile eşleşir. Doyumsuz olmayan bir yineleme kullanıldığında, yakalama grubu 1'i hedef dizinin başındaki "a" alt dizisiyle ve yakalama grubu 2'yi hedef dizinin sonundaki "aab" alt dizisiyle ilişkilendirir. Doyumsuz eşleşme kullanıldığında, yakalama grubu 1'i "aaa" alt dizisiyle ve yakalama grubu 2'yi "b" alt dizisiyle ilişkilendirir.  
@@ -415,7 +415,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
 -   "(aa) (bir\*)" hedef sırası "aaaa" ile eşleşen ve yakalama Grup 1 değişkene hedef sırası ve yakalama grubun hedef dizinin sonuna "aa" değişkene 2 başında "aa" ile ilişkilendirir.  
   
--   "(=aa)(a) &#124;(a)" hedef sırası eşleşen "a" ve ilişkilendirilmiş bir yakalama boş bir dizi 1 grubuyla (pozitif assert başarısız olduğundan) ve Grup 2 ile değişkene yakala "a". Ayrıca, "aa" hedef dizisiyle eşleşir ve yakalama grubu 1'i "aa" alt dizisiyle ve yakalama grubu 2'yi boş bir diziyle ilişkilendirir.  
+-   "(=aa)(a)&#124;(a)" hedef sırası eşleşen "a" ve ilişkilendirilmiş bir yakalama boş bir dizi 1 grubuyla (pozitif assert başarısız olduğundan) ve Grup 2 ile değişkene yakala "a". Ayrıca, "aa" hedef dizisiyle eşleşir ve yakalama grubu 1'i "aa" alt dizisiyle ve yakalama grubu 2'yi boş bir diziyle ilişkilendirir.  
   
 ### <a name="unicode-escape-sequence"></a>Unicode Çıkış Dizisi  
  Unicode çıkış dizisi, ardından dört onaltılık basamağın (0-9a-fA-F) geldiği ve 'u' harfinin takip ettiği bir ters eğik çizgidir. Dört basamak tarafından belirtilen değere sahip hedef dizideki bir karakterle eşleşir. Örneğin, ASCII karakter kodlaması kullanıldığında "\u0041", "A" hedef dizisiyle eşleşir.  
@@ -448,7 +448,7 @@ Sıfır veya daha fazla bayrakları normal ifade altyapısı davranışı belirt
   
 -   Hedef dizideki "bcdbcd" içindeki bir normal ifade araması başarılı olur ve ilk üç karakter ile eşleşir.  
   
- Bazı konumlardaki hedef diziyle eşleşen birden fazla alt dizi varsa, eşleşen deseni seçmenin iki yolu vardır. *İlk eşleşen* normal ifadeyle eşleştiğinde, ilk bulundu değişkene seçer. *En uzun eşleşen* o konumda eşleşen gördüğünüzden uzun değişkene seçer. En yüksek uzunlukta birden fazla alt dizi varsa, en uzun eşleşme ilk bulunanı seçer. Örneğin, ilk eşleşmeyi kullanıldığında, normal ifade araması "b &#124; bc" değişim sol şartını o değişkene; eşleştiğinden hedef sırası "ABCD ifadesinin" değişkene "b" ile eşleşir. Bu nedenle, ilk eşleşmeyi değişim sağ şartını denemez. En uzun eşleşme kullanıldığında, aynı "bc" araması eşleşir, çünkü "bc" "b" dizisinden uzundur.  
+ Bazı konumlardaki hedef diziyle eşleşen birden fazla alt dizi varsa, eşleşen deseni seçmenin iki yolu vardır. *İlk eşleşen* normal ifadeyle eşleştiğinde, ilk bulundu değişkene seçer. *En uzun eşleşen* o konumda eşleşen gördüğünüzden uzun değişkene seçer. En yüksek uzunlukta birden fazla alt dizi varsa, en uzun eşleşme ilk bulunanı seçer. Örneğin, ilk eşleşmeyi kullanıldığında, normal ifade araması "b&#124;bc" değişim sol şartını o değişkene; eşleştiğinden hedef sırası "ABCD ifadesinin" değişkene "b" ile eşleşir. Bu nedenle, ilk eşleşmeyi değişim sağ şartını denemez. En uzun eşleşme kullanıldığında, aynı "bc" araması eşleşir, çünkü "bc" "b" dizisinden uzundur.  
   
  Normal ifadenin sonuna ulaşılmamış olsa da, eşleşme başarısız olmadan hedef dizinin sonuna kadar gelirse kısmi eşleşme başarılı olur. Bu nedenle, kısmi eşleşmenin başarılı olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarısız olmasına neden olabilir. Ancak, kısmi eşleşmenin başarısız olmasının ardından hedef dizine karakter eklenmesi sonraki bir kısmi eşleşmenin başarılı olmasına neden olmayabilir. Örneğin, bir kısmi eşleşme ile "ab" "a" hedef dizisiyle eşleşir, ancak "ac" ile eşleşmez.  
   
