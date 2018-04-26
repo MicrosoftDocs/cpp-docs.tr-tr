@@ -35,11 +35,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f58b7ba7ae51c4db065cd7b30cc233128f7b7c68
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 82585f9f2c727d7189633091429aef6742cdd00b
+ms.sourcegitcommit: 9a3a3d59176043ae60584482c2572c07f757b320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView ve CDaoRecordView için İletişim Kutusu Veri Değişimi İşlevleri
 Bu konu arasında veri değişimi için kullanılan DDX_Field işlevleri listeler bir [CRecordset](../../mfc/reference/crecordset-class.md) ve [CRecordView](../../mfc/reference/crecordview-class.md) form veya bir [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) ve [ CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) formu.  
@@ -147,7 +147,7 @@ void AFXAPI DDX_FieldCBString(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Örnek bir çağrı içerir `DDX_FieldCBString`.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ## <a name="ddx_fieldcbstringexact"></a>  DDX_FieldCBStringExact  
  `DDX_FieldCBStringExact` İşlevi aktarımını yönetir [CString](../../atl-mfc-shared/reference/cstringt-class.md) kayıt görünümü birleşik giriş kutusu denetiminde düzenleme denetimi arasında veri ve `CString` kayıt görünümü ile ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -190,7 +190,7 @@ void AFXAPI DDX_FieldCBStringExact(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Çağrılar `DDX_FieldCBStringExact` benzer olacaktır.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldcheck"></a>  DDX_FieldCheck  
  `DDX_FieldCheck` İşlevi aktarımını yönetir `int` iletişim kutusunda, onay kutusu denetimi arasında veri form görünümü ya da Denetim Görünüm nesnesi ve bir `int` veri üyesi iletişim kutusu, form görünümü ya da Denetim Görünüm nesnesi.  
@@ -228,7 +228,7 @@ void AFXAPI DDX_FieldCheck(
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldlbindex"></a>  DDX_FieldLBIndex  
  `DDX_FieldLBIndex` İşlevi bir liste kutusu denetimini kayıt görünümünde seçilen öğeyi dizinini eşitler ve bir `int` kayıt görünümü ile ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -271,7 +271,7 @@ void AFXAPI DDX_FieldLBIndex(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldlbstring"></a>  DDX_FieldLBString  
  `DDX_FieldLBString` Liste kutusu denetimi, geçerli seçim için kayıt görünümünde kopyalar bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) kayıt görünümü ile ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -314,7 +314,7 @@ void AFXAPI DDX_FieldLBString(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Çağrılar `DDX_FieldLBString` benzer olacaktır.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldlbstringexact"></a>  DDX_FieldLBStringExact  
  `DDX_FieldLBStringExact` İşlevi için bir kayıt görünümünde bir liste kutusu denetimini geçerli seçimi kopyalar bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) kayıt görünümü ile ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -357,7 +357,7 @@ void AFXAPI DDX_FieldLBStringExact(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Çağrılar `DDX_FieldLBStringExact` benzer olacaktır.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldradio"></a>  DDX_FieldRadio  
  `DDX_FieldRadio` İşlevi sıfır tabanlı bir ilişkilendirir `int` üye değişkeni şu anda seçili radyo düğmesi grubundaki kayıt görünümü radyo düğmeleri ile kayıt görünümünün kümesi.  
@@ -400,7 +400,7 @@ void AFXAPI DDX_FieldRadio(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Çağrılar `DDX_FieldRadio` benzer olacaktır.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
   
 ##  <a name="ddx_fieldscroll"></a>  DDX_FieldScroll  
  `DDX_FieldScroll` İşlevi kayıt görünümü kaydırma çubuğu denetimi kaydırma konumunu eşitler ve bir `int` kayıt görünümü ile (veya seçtiğiniz için eşlemek için hangi tamsayı değişken) ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -423,7 +423,7 @@ void AFXAPI DDX_FieldScroll(
  `pDX`  
  Bir işaretçi bir [CDataExchange](../../mfc/reference/cdataexchange-class.md) nesnesi. Framework yön dahil olmak üzere veri değişimi içeriği oluşturmak için bu nesneyi sağlar.  
   
- *nIDC\*\*  
+ `nIDC`  
  İlk Kimliğini gruptaki (stiliyle **WS_GROUP**) bitişik radyo düğmesi denetimlerin [CRecordView](../../mfc/reference/crecordview-class.md) veya [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) nesnesi.  
   
  *value*  
@@ -443,7 +443,7 @@ void AFXAPI DDX_FieldScroll(
  Bkz: [DDX_FieldText](#ddx_fieldtext) genel DDX_Field örneğin. Çağrılar `DDX_FieldScroll` benzer olacaktır.  
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
 
   ## <a name="nameddxfieldslidera--ddxfieldslider"></a>name="ddx_fieldslider"></a>  DDX_FieldSlider
 `DDX_FieldSlider` İşlevi kayıt görünümü kaydırıcı denetimi kaydırma konumunu eşitler ve bir `int` kayıt görünümü ile (veya seçtiğiniz için eşlemek için hangi tamsayı değişken) ilişkili bir kayıt kümesinin alan veri üyesi.  
@@ -633,7 +633,7 @@ void AFXAPI DDX_FieldText(
 
   
 ### <a name="requirements"></a>Gereksinimler  
-  **Header** afxdao.h  
+  **Üstbilgi** afxdao.h  
     
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](../../mfc/reference/mfc-macros-and-globals.md)

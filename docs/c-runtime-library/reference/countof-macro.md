@@ -31,11 +31,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 773cf37e3a9e3d7047f0de4cd489c0ae9f41f61d
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: e9e5dc49b59ac534d871d6b31efdeec0afef5c8d
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="countof-macro"></a>_countof Makrosu
 
@@ -58,15 +58,15 @@ Dizideki olarak ifade edilen öğelerin sayısı bir **size_t**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_countof` bir işlev benzeri önişlemci makrosu uygulanır. C++ sürümü bir işaretçi bir statik olarak bildirilen dizi yerine aktarılırsa derleme zamanında algılamak için ek şablon makineler içerir.
+**_countof** işlevi benzeri önişlemci makrosu uygulanır. C++ sürümü bir işaretçi bir statik olarak bildirilen dizi yerine aktarılırsa derleme zamanında algılamak için ek şablon makineler içerir.
 
-Emin *dizi* aslında bir dizi, işaretçisi değil. C, `_countof` , hatalı sonuçlar üretir *dizi* gösteren bir işaretçidir. C++ ' ta `_countof` derlemeniz başarısız *dizi* gösteren bir işaretçidir.  Bir dizi işlevi için parametre olarak geçirilen *işaretçisi decays*, yani işlevi içinde kullanamazsınız `_countof` dizi kapsamını belirlemek için.
+Emin *dizi* aslında bir dizi, işaretçisi değil. C, **_countof** , hatalı sonuçlar üretir *dizi* gösteren bir işaretçidir. C++ ' ta **_countof** derlemeniz başarısız *dizi* gösteren bir işaretçidir.  Bir dizi işlevi için parametre olarak geçirilen *işaretçisi decays*, yani işlevi içinde kullanamazsınız **_countof** dizi kapsamını belirlemek için.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Makrosu|Gerekli başlık|
 |-----------|---------------------|
-|`_countof`|\<stdlib.h>|
+|**_countof**|\<stdlib.h >|
 
 ## <a name="example"></a>Örnek
 
