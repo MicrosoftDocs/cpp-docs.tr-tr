@@ -24,7 +24,7 @@
 ## [Bağlantı Seçenekleri](link-options.md)
 ## [CRT Nesnelerini DLL Sınırlarından Geçirirken Olası Hatalar](potential-errors-passing-crt-objects-across-dll-boundaries.md)
 ## [CRT Başlatma](crt-initialization.md)
-# [Kategorilere Göre Çalışma Zamanı Yordamları](run-time-routines-by-category.md)
+# [Kategoriye göre Evrensel C çalışma zamanı yordamları](run-time-routines-by-category.md)
 ## [Bağımsız Değişken Erişimi](argument-access.md)
 ## [Ara Bellek Düzenlemesi](buffer-manipulation.md)
 ## [Bayt Sınıflandırması](byte-classification.md)
