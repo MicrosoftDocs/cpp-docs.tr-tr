@@ -1,12 +1,12 @@
 ---
 title: wcrtomb_s | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - wcrtomb_s
@@ -33,123 +33,129 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 9a8a1bd0-1d60-463d-a3a2-d83525eaf656
-caps.latest.revision: 
+caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb7ae5e3246d020844bdd31f970f9678fede78c2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3dddfa0d39f41b4763ec8b636fded99b78f0c296
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="wcrtombs"></a>wcrtomb_s
-Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bir sürümünü [wcrtomb](../../c-runtime-library/reference/wcrtomb.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t wcrtomb_s(  
-   size_t *pReturnValue,  
-   char *mbchar,  
-   size_t sizeOfmbchar,  
-   wchar_t *wchar,  
-   mbstate_t *mbstate  
-);  
-template <size_t size>  
-errno_t wcrtomb_s(  
-   size_t *pReturnValue,  
-   char (&mbchar)[size],  
-   wchar_t *wchar,  
-   mbstate_t *mbstate  
-); // C++ only  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `pReturnValue`  
- Bir hata oluştuğunda yazılan bayt sayısı veya -1 döndürür.  
-  
- [out] `mbchar`  
- Sonuçta elde edilen çok baytlı karakter dönüştürülür.  
-  
- [in] `sizeOfmbchar`  
- Boyutunu `mbchar` bayt değişken.  
-  
- [in] `wchar`  
- Dönüştürülecek geniş karakter.  
-  
- [in] `mbstate`  
- Bir işaretçi bir `mbstate_t` nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Döndürür sıfır veya bir `errno` bir hata oluşursa değeri.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `wcrtomb_s` İşlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak bir geniş karakter `mbstate`, içerdiği değerinden `wchar`, veri tarafından temsil edilen adresine `mbchar`. `pReturnValue` Değer dönüştürülen bayt ancak hiçbir sayısı olacak birden fazla `MB_CUR_MAX` bayt ya da bir hata oluştuysa -1.  
-  
- Varsa `mbstate` null, iç `mbstate_t` dönüştürme durumu kullanılır. Karakter içeriyorsa `wchar` bir karşılık gelen birden çok baytlı karakter değeri yok `pReturnValue` -1 olur ve işlev döndürülecek `errno` değerini `EILSEQ`.  
-  
- `wcrtomb_s` İşlevi farklı olarak [wctomb_s, _wctomb_s_l](../../c-runtime-library/reference/wctomb-s-wctomb-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız `wcsrlen` yerine `wcslen`, bir sonraki çağrı, `wcsrtombs_s` yerine kullanıldı `wcstombs_s.`  
-  
- C++'da, bu işlevi kullanarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
-  
-## <a name="exceptions"></a>Özel Durumlar  
- `wcrtomb_s` İşlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu `setlocale` bu işlev yürütülürken ve `mbstate` null.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_wcrtomb_s.c  
-// This program converts a wide character  
-// to its corresponding multibyte character.  
-//  
-  
-#include <string.h>  
-#include <stdio.h>  
-#include <wchar.h>  
-  
-int main( void )  
-{  
-    errno_t     returnValue;  
-    size_t      pReturnValue;  
-    mbstate_t   mbstate;  
-    size_t      sizeOfmbStr = 1;  
-    char        mbchar = 0;  
-    wchar_t*    wchar = L"Q\0";  
-  
-    // Reset to initial conversion state  
-    memset(&mbstate, 0, sizeof(mbstate));  
-  
-    returnValue = wcrtomb_s(&pReturnValue, &mbchar, sizeof(char),  
-                            *wchar, &mbstate);  
-    if (returnValue == 0) {  
-        printf("The corresponding wide character \"");  
-        wprintf(L"%s\"", wchar);  
-        printf(" was converted to a the \"%c\" ", mbchar);  
-        printf("multibyte character.\n");  
-    }  
-    else  
-    {  
-        printf("No corresponding multibyte character "  
-               "was found.\n");  
-    }  
-}  
-```  
-  
-```Output  
-The corresponding wide character "Q" was converted to a the "Q" multibyte character.  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`wcrtomb_s`|\<wchar.h >|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [mbsinit](../../c-runtime-library/reference/mbsinit.md)
+
+Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bir sürümünü [wcrtomb](wcrtomb.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t wcrtomb_s(
+   size_t *pReturnValue,
+   char *mbchar,
+   size_t sizeOfmbchar,
+   wchar_t *wchar,
+   mbstate_t *mbstate
+);
+template <size_t size>
+errno_t wcrtomb_s(
+   size_t *pReturnValue,
+   char (&mbchar)[size],
+   wchar_t *wchar,
+   mbstate_t *mbstate
+); // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pReturnValue*<br/>
+Bir hata oluştuğunda yazılan bayt sayısı veya -1 döndürür.
+
+*mbchar*<br/>
+Sonuçta elde edilen çok baytlı karakter dönüştürülür.
+
+*sizeOfmbchar*<br/>
+Boyutunu *mbchar* bayt değişken.
+
+*wchar*<br/>
+Dönüştürülecek geniş karakter.
+
+*mbstate*<br/>
+Bir işaretçi bir **mbstate_t** nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Döndürür sıfır veya bir **errno** bir hata oluşursa değeri.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Wcrtomb_s** işlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak bir geniş karakter *mbstate*, içerdiği değerinden *wchar*, içine Adres temsil ettiği *mbchar*. *PReturnValue* değer dönüştürülen bayt ancak hiçbir sayısı olacak birden fazla **MB_CUR_MAX** bayt ya da bir hata oluştuysa -1.
+
+Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumu kullanılır. Karakter içeriyorsa *wchar* bir karşılık gelen birden çok baytlı karakter değeri yok *pReturnValue* -1 olur ve işlev döndürülecek **errno** değeri **EILSEQ**.
+
+**Wcrtomb_s** işlevi farklı olarak [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan *mbstate* sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcslen**, bir sonraki çağrı, **wcsrtombs_s** yerine kullanılan **wcstombs_s**.
+
+C++'da, bu işlevi kullanarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+
+## <a name="exceptions"></a>Özel Durumlar
+
+**Wcrtomb_s** işlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve *mbstate* null.
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_wcrtomb_s.c
+// This program converts a wide character
+// to its corresponding multibyte character.
+//
+
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+
+int main( void )
+{
+    errno_t     returnValue;
+    size_t      pReturnValue;
+    mbstate_t   mbstate;
+    size_t      sizeOfmbStr = 1;
+    char        mbchar = 0;
+    wchar_t*    wchar = L"Q\0";
+
+    // Reset to initial conversion state
+    memset(&mbstate, 0, sizeof(mbstate));
+
+    returnValue = wcrtomb_s(&pReturnValue, &mbchar, sizeof(char),
+                            *wchar, &mbstate);
+    if (returnValue == 0) {
+        printf("The corresponding wide character \"");
+        wprintf(L"%s\"", wchar);
+        printf(" was converted to a the \"%c\" ", mbchar);
+        printf("multibyte character.\n");
+    }
+    else
+    {
+        printf("No corresponding multibyte character "
+               "was found.\n");
+    }
+}
+```
+
+```Output
+The corresponding wide character "Q" was converted to a the "Q" multibyte character.
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**wcrtomb_s**|\<wchar.h >|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[mbsinit](mbsinit.md)<br/>

@@ -1,13 +1,13 @@
 ---
 title: nearbyint, nearbyintf, nearbyintl | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - nearbyint
@@ -40,73 +40,69 @@ helpviewer_keywords:
 - nearbyintf function
 - nearbyintl function
 ms.assetid: dd39cb68-96b0-434b-820f-6ff2ea65584f
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6c4cce9fb5d95da5e65a064d622da22e4d0f0a8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0aacdeb67e7c467bf6f8719172dfd9771e0cec8d
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="nearbyint-nearbyintf-nearbyintl"></a>nearbyint, nearbyintf, nearbyintl
-Belirtilen kayan nokta değeri tamsayıya yuvarlar ve bu değer bir kayan nokta biçiminde döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double nearbyint(  
-   double x  
-);  
-  
-float nearbyint(  
-   float x  
-); //C++ only  
-  
-long double nearbyint(  
-   long double x  
-); //C++ only  
-  
-float nearbyintf(  
-   float x  
-);  
-  
-long double nearbyintl(  
-   long double x  
-);  
-  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `x`  
- Yuvarlanacak değer.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, döndürür `x`, fegetround tarafından tanımlanan geçerli yuvarlama biçimini kullanarak en yakın tamsayıya yuvarlanır. Aksi takdirde işlevi aşağıdaki değerlerden birini döndürebilir:  
-  
-|Sorun|Döndür|  
-|-----------|------------|  
-|`x` = ±INFINITY|Değiştirilmemiş ±INFINITY|  
-|`x` = ±0|değiştirilmemiş ±0|  
-|`x` = NaN|NaN|  
-  
- Hataları bildirilmedi aracılığıyla [_matherr](../../c-runtime-library/reference/matherr.md); özellikle, bu işlev FE_INEXACT özel durumlar bildirmiyor.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlev arasındaki birincil fark ve `rint` olduğundan bu işlevi kesin olmayan kayan nokta özel durumu oluşturmaz.  
-  
- En fazla kayan nokta değerlerine tam tamsayılar olduğundan, bu işlev hiçbir zaman tek başına taşması; Bunun yerine, çıkışı işlevi sürümüne bağlı olarak, kullandığınız dönüş değeri taşma.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|C üstbilgisi|C++ üstbilgi|  
-|--------------|--------------|------------------|  
-|`nearbyint`,                `nearbyintf`,  `nearbyintl`|\<Math.h >|\<cmath >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik İşlev Başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+
+Belirtilen kayan nokta değeri tamsayıya yuvarlar ve bu değer bir kayan nokta biçiminde döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double nearbyint( double x );
+float nearbyintf( float x );
+long double nearbyintl( long double x );
+```
+
+```cpp
+float nearbyint( float x ); //C++ only
+long double nearbyint( long double x ); //C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Yuvarlanacak değer.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, döndürür *x*, tarafından bildirilen geçerli yuvarlama biçimini kullanarak en yakın tamsayıya yuvarlanır [fegetround](fegetround-fesetround2.md). Aksi takdirde işlevi aşağıdaki değerlerden birini döndürebilir:
+
+|Sorun|Döndür|
+|-----------|------------|
+|*x* ±INFINITY =|Değiştirilmemiş ±INFINITY|
+|*x* ±0 =|değiştirilmemiş ±0|
+|*x* NaN =|NaN|
+
+Hataları bildirilmedi aracılığıyla [_matherr](matherr.md); özellikle, bu işlev herhangi bildirmez **FE_INEXACT** özel durumları.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlev arasındaki birincil fark ve [azdır](rint-rintf-rintl.md) olduğundan bu işlevi kesin olmayan kayan nokta özel durumu oluşturmaz.
+
+En fazla kayan nokta değerlerine tam tamsayılar olduğundan, bu işlev hiçbir zaman tek başına taşması; Bunun yerine, çıkışı işlevi sürümüne bağlı olarak, kullandığınız dönüş değeri taşma.
+
+C++ verir aşırı yüklemesi, aşırı çağırması **nearbyint** alın ve dönüş **float** veya **uzun** **çift** parametreleri. Bir C programı **nearbyint** her zaman iki çift değerlerini alır ve bir double değeri döndürür.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|C üstbilgisi|C++ üstbilgi|
+|--------------|--------------|------------------|
+|**nearbyint**, **nearbyintf**, **nearbyintl**|\<Math.h >|\<cmath > veya \<math.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[Matematik ve kayan nokta desteği](../floating-point-support.md)<br/>

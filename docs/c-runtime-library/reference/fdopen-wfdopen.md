@@ -1,12 +1,12 @@
 ---
 title: _fdopen, _wfdopen | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _fdopen
@@ -40,17 +40,17 @@ helpviewer_keywords:
 - _tfdopen function
 - streams, associating with files
 ms.assetid: 262757ff-1e09-4472-a5b6-4325fc28f971
-caps.latest.revision: 
+caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2474c25d30415d48252a2621ae5f7e69e5fed4d3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 03dd7c56c8b8249ddee09ed2ac5446f99484e671
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fdopen-wfdopen"></a>_fdopen, _wfdopen
 
@@ -58,7 +58,7 @@ Düşük düzey g/ç için daha önce açıldı bir dosya akışı ilişkilendir
 
 ## <a name="syntax"></a>Sözdizimi
 
-```c
+```C
 FILE *_fdopen(
    int fd,
    const char *mode
@@ -71,91 +71,75 @@ FILE *_wfdopen(
 
 ### <a name="parameters"></a>Parametreler
 
-*fd*  
-Açık dosyanın dosya tanımlayıcısı.
+*FD* açık dosyanın dosya tanımlayıcısı.
 
-*mode*  
-Dosya erişimi türü.
+*mod* dosya erişimi türü.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri bir işaretçi açık akışına döndürür. Null işaretçinin değeri bir hata gösterir. Hata oluştuğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini `errno` ya da ayarlamak `EBADF`, bozuk dosya tanımlayıcısı gösterir veya `EINVAL`, hangi gösterir `mode` null işaretçi oluştu.
+Bu işlevlerin her biri bir işaretçi açık akışına döndürür. Null işaretçinin değeri bir hata gösterir. Hata oluştuğunda geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ya da ayarlamak **EBADF**, bozuk dosya tanımlayıcısı gösterir veya **EINVAL**, hangi gösterir *modu*  null işaretçi oluştu.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_fdopen` İşlevi tarafından tanımlanan dosyası içeren bir g/ç akışı ilişkilendirir *fd*ve bu nedenle arabelleğe ve biçimlendirilmiş düşük düzey g/ç için açılan bir dosya sağlar. `_wfdopen` bir joker karakter sürümü `_fdopen`; *modu* bağımsız değişkeni `_wfdopen` bir joker karakter dizesidir. `_wfdopen` ve `_fdopen` Aksi takdirde aynı şekilde davranır.
+**_Fdopen** işlevi tarafından tanımlanan dosyası içeren bir g/ç akışı ilişkilendirir *fd*ve bu nedenle arabelleğe ve biçimlendirilmiş düşük düzey g/ç için açılan bir dosya sağlar. **_wfdopen** bir joker karakter sürümü **_fdopen**; *modu* bağımsız değişkeni **_wfdopen** bir joker karakter dizesidir. **_wfdopen** ve **_fdopen** Aksi takdirde aynı şekilde davranır.
 
-Dosya tanımlayıcıları içine geçirilen `_fdopen` olunan tarafından döndürülen `FILE *` akış. Varsa `_fdopen` başarılı çağırmayın [ \_kapatmak](../../c-runtime-library/reference/close.md) üzerinde dosya tanımlayıcısı. Çağırma [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) döndürülen üzerinde `FILE *` ayrıca dosya tanımlayıcısı kapatır.
+Dosya tanımlayıcıları içine geçirilen **_fdopen** olunan tarafından döndürülen **dosya &#42;**  akış. Varsa **_fdopen** başarılı çağırmayın [ \_kapatmak](close.md) üzerinde dosya tanımlayıcısı. Çağırma [fclose](fclose-fcloseall.md) döndürülen üzerinde **dosya &#42;**  ayrıca dosya tanımlayıcısı kapatır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|\_UNICODE ve \_MBCS tanımlı değil|\_Tanımlanan MBCS|\_Tanımlanan UNICODE|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|`_tfdopen`|`_fdopen`|`_fdopen`|`_wfdopen`|
+|**_tfdopen**|**_fdopen**|**_fdopen**|**_wfdopen**|
 
-*Modu* karakter dizesi dosya erişimi için dosyayı istenen türünü belirtir:  
+*Modu* karakter dizesi dosya erişimi için dosyayı istenen türünü belirtir:
 
-`"r"`  
-Okuma için açılır. Dosya yok veya bulunamadı, `fopen` çağrısı başarısız olur.
+|*Modu*|Access|
+|-|-|
+**"r"**|Okuma için açılır. Dosya yok veya bulunamadı, **fopen** çağrısı başarısız olur.
+**"w"**|Boş bir dosya yazma için açılır. Verilen dosya varsa, içeriği yok.
+**"a"**|Yazma (ekleme) dosya sonunda açar. Henüz yoksa dosyası oluşturur.
+**"r +"**|Hem okuma ve yazma için açılır. Dosyanın mevcut olması gerekir.
+**"w +"**|Hem okumak ve yazmak için boş bir dosya açar. Dosya varsa, içeriği yok.
+**"bir +"**|Okuma ve sonuna ekleme için açılır. Henüz yoksa dosyası oluşturur.
 
-`"w"`  
-Boş bir dosya yazma için açılır. Verilen dosya varsa, içeriği yok.
-
-`"a"`  
-Yazma (ekleme) dosya sonunda açar. Henüz yoksa dosyası oluşturur.
-
-`"r+"`  
-Hem okuma ve yazma için açılır. (Dosya var olmalıdır.)
-
-`"w+"`  
-Hem okumak ve yazmak için boş bir dosya açar. Verilen dosya varsa, içeriği yok.
-
-`"a+"`  
-Okuma ve sonuna ekleme için açılır. Henüz yoksa dosyası oluşturur.
-
-Ne zaman bir dosya açıldığında ile `"a"` veya `"a+"` erişim türüne, tüm işlemleri ortaya dosyanın sonunda yazma. Dosya işaretçisini kullanarak konumlandırılmasına `fseek` veya `rewind`, ancak herhangi bir işlemi gerçekleştirilir yazmadan önce her zaman geri dosyanın sonuna taşınır. Bu nedenle, varolan verilerin üzerine yazılamıyor. Zaman `"r+"`, `"w+"`, veya `"a+"` erişim türü belirtildi, hem okuma ve yazma izin verilir (dosya "güncelleştirmesi" açık olarak kabul edilir). Ancak, okuma ve yazma arasında geçiş yaptığınızda, olmalıdır bir araya giren `fflush`, `fsetpos`, `fseek`, veya `rewind` işlemi. Geçerli konumu için belirttiğiniz `fsetpos` veya `fseek` istiyorsanız işlemi.
+Ne zaman bir dosya açıldığında ile **"a"** veya **"bir +"** erişim türüne, tüm işlemleri ortaya dosyanın sonunda yazma. Dosya işaretçisini kullanarak konumlandırılmasına [fseek](fseek-fseeki64.md) veya [geri sarma](rewind.md), ancak herhangi bir işlemi gerçekleştirilir yazmadan önce her zaman geri dosyanın sonuna taşınır. Bu nedenle, varolan verilerin üzerine yazılamıyor. Zaman **"r +"**, **"w +"**, veya **"bir +"** erişim türü belirtildi, hem okuma ve yazma izin verilir (dosya "güncelleştirmesi" açık olarak kabul edilir). Ancak, okuma ve yazma arasında geçiş yaptığınızda, olmalıdır bir araya giren [fflush](fflush.md), [fsetpos](fsetpos.md), [fseek](fseek-fseeki64.md), veya [geri sarma](rewind.md) işlem. Geçerli konumu için belirttiğiniz [fsetpos](fsetpos.md) veya [fseek](fseek-fseeki64.md) istiyorsanız işlemi.
 
 Yukarıdaki değerleri ek olarak, aşağıdaki karakterleri da eklenebilir *modu* satırbaşı karakterlerini çeviri modu belirtmek için:
 
-`t`  
-Açık metin (modu çevrilmiş). Bu modda, satır başı satır besleme (CR-LF) birleşimleri tek satır akışlarına (LF) giriş uygulamasına dönüştürülür ve çıktıyı CR LF birleşimleri için LF karakterleri çevrilir. Ayrıca, Ctrl + Z giriş üzerinde bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılmış dosyalarında `fopen` Ctrl + Z dosya sonunda olup olmadığını denetler ve, mümkünse kaldırır. Bu kullanılarak yapılır, çünkü `fseek` ve `ftell` Ctrl + Z ile biten bir dosya içinde taşımak için işlevleri neden olabilecek `fseek` yanlış dosyanın sonuna yakın davranır.
+|*mod* değiştiricisi|Davranış|
+|-|-|
+**T**|Açık metin (modu çevrilmiş). Bu modda, satır başı satır besleme (CR-LF) birleşimleri tek satır akışlarına (LF) giriş uygulamasına dönüştürülür ve çıktıyı CR LF birleşimleri için LF karakterleri çevrilir. Ayrıca, Ctrl + Z giriş üzerinde bir dosya sonu karakteri olarak yorumlanır.
+**b**|İkili (untranslated) modunda açın. Gelen tüm çevirileri **t** modu gizlenir.
+**c**|İle ilişkili yürütme bayrağı etkinleştirmek *filename* böylece dosya arabellek içeriğini doğrudan ya da diske yazılan **fflush** veya **_flushall** olarak adlandırılır.
+**n**|İle ilişkili yürütme bayrağını sıfırlama *filename* "no-uygulanmak." Bu varsayılandır. Ayrıca Commode.obj programınızla bağlarsanız genel tamamlama bayrağı geçersiz kılar. Açıkça Commode.obj programınızla bağlantı sürece genel tamamlama bayrağı "no-commit" varsayılandır.
 
-`b`  
-İkili (untranslated) modunda açın. Gelen tüm çevirileri `t` modu gizlenir.
+**t**, **c**, ve **n** *modu* seçenekleri için Microsoft uzantıları olan **fopen** ve **_fdopen**. ANSI taşınabilirlik korumak istiyorsanız, bunları kullanmayın.
 
-`c`  
-İle ilişkili yürütme bayrağı etkinleştirmek `filename` böylece dosya arabellek içeriğini doğrudan ya da diske yazılan `fflush` veya `_flushall` olarak adlandırılır.
+Varsa **t** veya **b** verilmemiştir *modu*, varsayılan çeviri modu genel değişkeni tarafından tanımlanan [ \_fmode](../../c-runtime-library/fmode.md). Varsa **t** veya **b** bağımsız değişkenin işlevi başarısız öneki ve NULL döndürür. Metin ve ikili modlarda tartışma için bkz [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
 
-`n`  
-İle ilişkili yürütme bayrağını sıfırlama `filename` "no-uygulanmak." Bu varsayılandır. Ayrıca Commode.obj programınızla bağlarsanız genel tamamlama bayrağı geçersiz kılar. Açıkça Commode.obj programınızla bağlantı sürece genel tamamlama bayrağı "no-commit" varsayılandır.
+Geçerli karakterleri *modu* kullanılan dize **fopen** ve **_fdopen** karşılık *oflag* kullanılan bağımsız değişkenler [ \_açmak](open-wopen.md) ve [ \_sopen](sopen-wsopen.md)bu tabloda gösterildiği gibi:
 
-`t`, `c`, Ve `n` *modu* seçenekleri için Microsoft uzantıları olan `fopen` ve `_fdopen`. ANSI taşınabilirlik korumak istiyorsanız, bunları kullanmayın.
-
-Varsa `t` veya `b` verilmemiştir *modu*, varsayılan çeviri modu genel değişkeni tarafından tanımlanan [ \_fmode](../../c-runtime-library/fmode.md). Varsa `t` veya `b` bağımsız değişkenin işlevi başarısız öneki ve NULL döndürür. Metin ve ikili modlarda tartışma için bkz [metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md).
-
-Geçerli karakterleri *modu* kullanılan dize `fopen` ve `_fdopen` karşılık *oflag* kullanılan bağımsız değişkenler [ \_açmak](../../c-runtime-library/reference/open-wopen.md) ve [ \_sopen](../../c-runtime-library/reference/sopen-wsopen.md)bu tabloda gösterildiği gibi:
-
-|İçindeki karakterleri *modu* dize|Eşdeğer *oflag* değerini `_open` ve `_sopen`|
+|İçindeki karakterleri *modu* dize|Eşdeğer *oflag* değerini **_kurulum Aç** ve **_sopen**|
 |---------------------------------|---------------------------------------------------|
-|`a`|**\_O\_WRONLY &#124; \_O\_APPEND** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_APPEND**)|
-|`a+`|**\_O\_RDWR &#124; \_O\_APPEND** (genellikle  **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_CREAT** )|
-|`r`|**\_O\_RDONLY**|
-|`r+`|**\_O\_RDWR**|
-|`w`|**\_O\_WRONLY** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
-|`w+`|**\_O\_RDWR** (genellikle  **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
-|`b`|**\_O\_İKİLİ**|
-|`t`|**\_O\_TEXT**|
-|`c`|Yok.|
-|`n`|Yok.|
+|**a**|**\_O\_WRONLY &#124; \_O\_APPEND** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O \_APPEND**)|
+|**bir +**|**\_O\_RDWR &#124; \_O\_APPEND** (genellikle  **\_O\_RDWR &#124; \_O\_APPEND &#124; \_O\_ CREAT** )|
+|**r**|**\_O\_RDONLY**|
+|**r +**|**\_O\_RDWR**|
+|**W**|**\_O\_WRONLY** (genellikle  **\_O\_WRONLY &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|**w +**|**\_O\_RDWR** (genellikle  **\_O\_RDWR &#124; \_O\_CREAT &#124; \_O\_TRUNC**)|
+|**b**|**\_O\_İKİLİ**|
+|**T**|**\_O\_METİN**|
+|**c**|Yok.|
+|**n**|Yok.|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |İşlev|Gerekli başlık|
 |--------------|---------------------|
-|`_fdopen`|\<stdio.h >|
-|`_wfdopen`|\<stdio.h > veya \<wchar.h >|
+|**_fdopen**|\<stdio.h >|
+|**_wfdopen**|\<stdio.h > veya \<wchar.h >|
 
 Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -196,24 +180,24 @@ int main( void )
 }
 ```
 
-### <a name="input-crtfdopentxt"></a>Input: crt_fdopen.txt
+### <a name="input-crtfdopentxt"></a>Giriş: crt_fdopen.txt
 
-```
+```Input
 Line one
 Line two
 ```
 
 ### <a name="output"></a>Çıkış
 
-```
+```Output
 Lines in file: 2
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)   
-[\_dup, \_dup2](../../c-runtime-library/reference/dup-dup2.md)   
-[fclose, \_fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
-[fopen, \_wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
-[freopen, \_wfreopen](../../c-runtime-library/reference/freopen-wfreopen.md)   
-[\_açık, \_wopen](../../c-runtime-library/reference/open-wopen.md)
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[\_Dup, \_dup2](dup-dup2.md)<br/>
+[fclose, \_fcloseall](fclose-fcloseall.md)<br/>
+[fopen, \_wfopen](fopen-wfopen.md)<br/>
+[freopen, \_wfreopen](freopen-wfreopen.md)<br/>
+[\_açık, \_wopen](open-wopen.md)<br/>

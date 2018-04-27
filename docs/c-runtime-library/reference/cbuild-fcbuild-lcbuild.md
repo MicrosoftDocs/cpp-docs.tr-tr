@@ -41,11 +41,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d5a2a5f40266f490cc0d18614c63715192b0707
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 555cd1d9d8f22801b1d3f3341be9041b1dde548c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="cbuild-fcbuild-lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
@@ -61,10 +61,10 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 
 ### <a name="parameters"></a>Parametreler
 
-*real*<br/>
+*Gerçek*<br/>
 Karmaşık sayıyı oluşturmak için gerçek parçası.
 
-*imaginary*<br/>
+*sanal*<br/>
 Karmaşık sayıyı oluşturmak için sanal parçası.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -73,25 +73,25 @@ A **_Dcomplex**, **_Fcomplex**, veya **_Lcomplex** karmaşık sayıyı temsil ed
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Cbuild**, **_FCbuild**, ve **_LCbuild** işlevleri karmaşık türler oluşturulmasını basitleştirir. Kullanım [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md) ve [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md) gösterilen karmaşık numaralar gerçek ve sanal kısımları almak için işlevleri.
+**_Cbuild**, **_FCbuild**, ve **_LCbuild** işlevleri karmaşık türler oluşturulmasını basitleştirir. Kullanım [creal, crealf, creall](creal-crealf-creall.md) ve [cimag, cimagf, cimagl](cimag-cimagf-cimagl.md) gösterilen karmaşık numaralar gerçek ve sanal kısımları almak için işlevleri.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|C üstbilgisi|C++ üstbilgi|
 |-------------|--------------|------------------|
-|`_Cbuild`,`_FCbuild`, `_LCbuild`|\<Complex.h >|\<ccomplex >|
+|**_Cbuild**, **_FCbuild**, **_LCbuild**|\<Complex.h >|\<ccomplex >|
 
 Bu işlevler Microsoft özgüdür. Türleri **_Dcomplex**, **_Fcomplex**, ve **_Lcomplex** uygulanmayan C99 yerel türlerinin Microsoft'a özgü eşdeğerleri olan **çift _Complex** , **_Complex float**, ve **uzun çift _Complex**sırasıyla. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Alfabetik İşlev Başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
-[_Cmulcc, _FCmulcc, _LCmulcc](../../c-runtime-library/reference/cmulcc-fcmulcc-lcmulcc.md)<br/>
-[_Cmulcr, _FCmulcr, _LCmulcr](../../c-runtime-library/reference/cmulcr-fcmulcr-lcmulcr.md)<br/>
-[Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)<br/>
-[cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)<br/>
-[conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)<br/>
-[creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)<br/>
-[cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)<br/>
-[carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)<br/>
-[cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)<br/>
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[_Cmulcc, _FCmulcc, _LCmulcc](cmulcc-fcmulcc-lcmulcc.md)<br/>
+[_Cmulcr, _FCmulcr, _LCmulcr](cmulcr-fcmulcr-lcmulcr.md)<br/>
+[Norm, normf, norml](norm-normf-norml1.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

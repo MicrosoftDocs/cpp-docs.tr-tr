@@ -1,13 +1,13 @@
 ---
-title: "CAB dosyaları, cabsf, cabsl | Microsoft Docs"
-ms.custom: 
+title: CAB dosyaları, cabsf, cabsl | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - cabs
@@ -40,64 +40,69 @@ helpviewer_keywords:
 - cabsf function
 - cabsl function
 ms.assetid: 6b8eb453-cc8f-4972-bebf-351cbdfdfc15
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5e2a256b0120a42ef5963b3989b64edd5d95fca
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 233353d7af20a50ba7c55dbbe57fe8dde3373da5
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="cabs-cabsf-cabsl"></a>CAB dosyaları, cabsf, cabsl
-Karmaşık bir sayının mutlak değerini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double cabs(   
-   _Dcomplex z   
-);  
-float cabs(   
-   _Fcomplex z   
-);  // C++ only  
-long double cabs(   
-   _Lcomplex z   
-);  // C++ only  
-float cabsf(   
-   _Fcomplex z   
-);  
-long double cabsl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `z`  
- Bir karmaşık sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Mutlak değerini `z`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `cabs` Süren `_Fcomplex` veya `_Lcomplex` değerleri ve return `float` veya `long double` değerleri. Bir C programı `cabs` her zaman alan bir `_Dcomplex` değeri ve döndürür bir `double` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`cabs`,               `cabsf`, `cabsl`|\<Complex.h >|\<ccomplex >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [conj, conjf, conjl](../../c-runtime-library/reference/conj-conjf-conjl.md)   
- [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)
+
+Karmaşık bir sayının mutlak değerini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double cabs(
+   _Dcomplex z
+);
+float cabs(
+   _Fcomplex z
+);  // C++ only
+long double cabs(
+   _Lcomplex z
+);  // C++ only
+float cabsf(
+   _Fcomplex z
+);
+long double cabsl(
+   _Lcomplex z
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*z*<br/>
+Bir karmaşık sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Mutlak değerini *z*.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **kabinler** Süren **_Fcomplex** veya **_Lcomplex** değerleri ve return **float** veya **uzun** **çift** değerleri. Bir C programı **kabinler** her zaman alan bir **_Dcomplex** değeri ve döndürür bir **çift** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|**CAB dosyaları**, **cabsf**, **cabsl**|\<Complex.h >|\<ccomplex >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[Norm, normf, norml](norm-normf-norml1.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[conj, conjf, conjl](conj-conjf-conjl.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>

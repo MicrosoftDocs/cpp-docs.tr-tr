@@ -1,12 +1,12 @@
 ---
 title: ATANH, atanhf, atanhl | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - atanhl
@@ -36,98 +36,94 @@ helpviewer_keywords:
 - atanhl function
 - atanh funciton
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 043a08b2064efcd10a9d5165a6cff97118dc965d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5f56568fa4e38d68e45acf976a8802971e63ea66
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="atanh-atanhf-atanhl"></a>atanh, atanhf, atanhl
-Ters hiperbolik tanjant hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double atanh(  
-   double x   
-);  
-float atanh(  
-   float x   
-);  // C++ only  
-long double atanh(  
-   long double x  
-);  // C++ only  
-float atanhf(  
-   float x   
-);  
-long double atanhl(  
-   long double x  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `x`  
- Kayan nokta değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `atanh` İşlevler (Ark hiperbolik tanjantı) ters hyberbolic tanjantını döndürür `x`. Varsa `x` 1 veya daha az -1'den, büyük `errno` ayarlanır `EDOM` ve sessiz NaN sonucudur. Varsa `x` olan 1 veya -1 eşit, pozitif veya negatif sonsuz, sırasıyla döndürülür ve `errno` ayarlanır `ERANGE`.  
-  
-|Giriş|SEH özel durumu|`Matherr` Özel durumu|  
-|-----------|-------------------|-------------------------|  
-|± QNAN, UL|yok|yok|  
-|`X` ≥ 1; `x` ≤ -1|yok|yok|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `atanh` alın ve dönüş `float` veya `long double` değerleri. Bir C programı `atanh` her zaman alan ve döndüren `double`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|C üstbilgisi|C++ üstbilgi|  
-|--------------|--------------|------------------|  
-|`atanh`, `atanhf`, `atanhl`|\<Math.h >|\<cmath >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_atanh.c  
-// This program displays the hyperbolic tangent of pi / 4  
-// and the arc hyperbolic tangent of the result.  
-//  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double pi = 3.1415926535;  
-   double x, y;  
-  
-   x = tanh( pi / 4 );  
-   y = atanh( x );  
-   printf( "tanh( %f ) = %f\n", pi/4, x );  
-   printf( "atanh( %f ) = %f\n", x, y );  
-}  
-```  
-  
-```Output  
-tanh( 0.785398 ) = 0.655794  
-atanh( 0.655794 ) = 0.785398  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
- [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)   
- [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
- [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
- [_CItan](../../c-runtime-library/citan.md)
+
+Ters hiperbolik tanjant hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double atanh( double x );
+float atanhf( float x );
+long double atanhl( long double x );
+```
+
+```cpp
+float atanh( float x );  // C++ only
+long double atanh( long double x );  // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Kayan nokta değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**Atanh** işlevler (Ark hiperbolik tanjantı) ters hyberbolic tanjantını döndürür *x*. Varsa *x* 1 veya daha az -1'den, büyük **errno** ayarlanır **EDOM** ve sessiz NaN sonucudur. Varsa *x* olan 1 veya -1 eşit, pozitif veya negatif sonsuz, sırasıyla döndürülür ve **errno** ayarlanır **ERANGE**.
+
+|Giriş|SEH özel durumu|**Matherr** özel durumu|
+|-----------|-------------------|-------------------------|
+|± QNAN, UL|yok|yok|
+|*X* ≥ 1; *x* ≤ -1|yok|yok|
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **atanh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **atanh** her zaman alan ve döndüren **çift**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|C üstbilgisi|C++ üstbilgi|
+|--------------|--------------|------------------|
+|**ATANH**, **atanhf**, **atanhl**|\<Math.h >|\<cmath > veya \<math.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_atanh.c
+// This program displays the hyperbolic tangent of pi / 4
+// and the arc hyperbolic tangent of the result.
+//
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double pi = 3.1415926535;
+   double x, y;
+
+   x = tanh( pi / 4 );
+   y = atanh( x );
+   printf( "tanh( %f ) = %f\n", pi/4, x );
+   printf( "atanh( %f ) = %f\n", x, y );
+}
+```
+
+```Output
+tanh( 0.785398 ) = 0.655794
+atanh( 0.655794 ) = 0.785398
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
+[COSH, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[SİNH, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[TANH, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>

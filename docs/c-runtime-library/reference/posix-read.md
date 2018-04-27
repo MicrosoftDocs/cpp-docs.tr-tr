@@ -1,12 +1,12 @@
 ---
 title: Okuma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - read
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - read function
 ms.assetid: 9e0eead4-d38c-4f65-87f5-f6c12da40ead
-caps.latest.revision: 
+caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb417eb2cf162ea3a5fbfec06075ec87e7d3be35
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ec981e8732a1517185020ddf434374bf0f8eb957
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="read"></a>read
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_read](../../c-runtime-library/reference/read.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_read](read.md) yerine.

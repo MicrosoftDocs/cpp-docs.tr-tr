@@ -1,13 +1,13 @@
 ---
 title: cexp, cexpf, cexpl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - cexp
@@ -40,61 +40,59 @@ helpviewer_keywords:
 - cexpl function
 - cexpf function
 ms.assetid: f27fd5a9-70c7-4957-a7ee-5256d19bd1da
-caps.latest.revision: 
+caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce5f42c8a13db45e3f75345b873bc6ec76885052
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 85e46762b769bd4afcbfe9887d730faedfafa0f3
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="cexp-cexpf-cexpl"></a>cexp, cexpf, cexpl
-E tabanında karmaşık sayısı üstel işlem.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-_Dcomplex cexp(   
-   _Dcomplex z   
-);  
-_Fcomplex cexp(   
-   _Fcomplex z   
-);  // C++ only  
-_Lcomplex cexp(   
-   _Lcomplex z   
-);  // C++ only  
-_Fcomplex cexpf(   
-  _Fcomplex z   
-);  
-_Lcomplex cexpl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `z`  
- Üs temsil eden bir karmaşık sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Değeri `e` üssünü `z`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `cexp` alın ve dönüş `_Fcomplex` ve `_Lcomplex` değerleri. Bir C programı `cexp` her zaman alan ve döndüren bir `_Dcomplex` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`cexp`,               `cexpf`, `cexpl`|\<Complex.h >|\<Complex.h >|  
-  
- Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [cpow, cpowf, cpowl](../../c-runtime-library/reference/cpow-cpowf-cpowl.md)   
- [clog10, clog10f, clog10l](../../c-runtime-library/reference/clog10-clog10f-clog10l.md)   
- [clog, clogf, clogl](../../c-runtime-library/reference/clog-clogf-clogl.md)
+
+E tabanında karmaşık sayısı üstel işlem.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+_Dcomplex cexp( _Dcomplex z );
+_Fcomplex cexpf( _Fcomplex z );
+_Lcomplex cexpl( _Lcomplex z );
+```
+
+```cpp
+_Fcomplex cexp( _Fcomplex z );  // C++ only
+_Lcomplex cexp( _Lcomplex z );  // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*z*<br/>
+Üs temsil eden bir karmaşık sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Değeri **e** üssünü *z*.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **cexp** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **cexp** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|**cexp**, **cexpf**, **cexpl**|\<Complex.h >|\<Complex.h >|
+
+Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
+[clog10, clog10f, clog10l](clog10-clog10f-clog10l.md)<br/>
+[clog, clogf, clogl](clog-clogf-clogl.md)<br/>

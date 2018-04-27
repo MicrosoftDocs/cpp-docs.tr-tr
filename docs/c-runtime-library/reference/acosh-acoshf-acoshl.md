@@ -1,12 +1,12 @@
 ---
 title: ACOSH, acoshf, acoshl | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - acoshf
@@ -39,97 +39,94 @@ helpviewer_keywords:
 - acosh function
 - acoshl function
 ms.assetid: 6985c4d7-9e2a-44ce-9a9b-5a43015f15f7
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 460b6540a724cd7a67d1de22b67238800e5fd5ca
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: cde187ddcb082c468215c00294b08d183b73323a
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="acosh-acoshf-acoshl"></a>acosh, acoshf, acoshl
-Ters hiperbolik kosinüsünü hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double acosh(  
-   double x   
-);  
-float acosh(  
-   float x   
-);  // C++ only  
-long double acosh(  
-   long double x  
-);  // C++ only  
-float acoshf(  
-   float x   
-);  
-long double acoshl(  
-   long double x  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `x`  
- Kayan nokta değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `acosh` İşlevler (Ark hiperbolik kosinüsü) ters hyberbolic kosinüsünü döndürür `x`. Bu işlevler etki alanı üzerinde geçerli `x` ≥ 1. Varsa `x` 1'den, küçük `errno` ayarlanır `EDOM` ve sessiz NaN sonucudur. Varsa `x` sessiz NaN, belirsiz, ya da sonsuz, aynı değeri döndürülür.  
-  
-|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
-|-----------|-------------------|--------------------------|  
-|± QNAN, IND, INF|yok|yok|  
-|x < 1|yok|yok|  
-  
-## <a name="remarks"></a>Açıklamalar  
- C++ kullandığınızda, aşırı çağırabilirsiniz `acosh` alın ve dönüş `float` veya `long double` değerleri. Bir C programı `acosh` her zaman alan ve döndüren `double`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|C üstbilgisi|C++ üstbilgi|  
-|--------------|--------------|------------------|  
-|`acosh`, `acoshf`, `acoshl`|\<Math.h >|\<cmath >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```C  
-// crt_acosh.c  
-// Compile by using: cl /W4 crt_acosh.c  
-// This program displays the hyperbolic cosine of pi / 4  
-// and the arc hyperbolic cosine of the result.  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double pi = 3.1415926535;  
-   double x, y;  
-  
-   x = cosh( pi / 4 );  
-   y = acosh( x );  
-   printf( "cosh( %f ) = %f\n", pi/4, x );  
-   printf( "acosh( %f ) = %f\n", x, y );  
-}  
-```  
-  
-```Output  
-cosh( 0.785398 ) = 1.324609  
-acosh( 1.324609 ) = 0.785398  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
- [ASİNH, asinhf, asinhl](../../c-runtime-library/reference/asinh-asinhf-asinhl.md)   
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
- [ATANH, atanhf, atanhl](../../c-runtime-library/reference/atanh-atanhf-atanhl.md)   
- [_CItan](../../c-runtime-library/citan.md)
+
+Ters hiperbolik kosinüsünü hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double acosh( double x );
+float acoshf( float x );
+long double acoshl( long double x );
+```
+
+```cpp
+float acosh( float x );  // C++ only
+long double acosh( long double x );  // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Kayan nokta değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**Acosh** işlevler (Ark hiperbolik kosinüsü) ters hyberbolic kosinüsünü döndürür *x*. Bu işlevler etki alanı üzerinde geçerli *x* ≥ 1. Varsa *x* 1'den, küçük **errno** ayarlanır **EDOM** ve sessiz NaN sonucudur. Varsa *x* sessiz NaN, belirsiz, ya da sonsuz, aynı değeri döndürülür.
+
+|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|-----------|-------------------|--------------------------|
+|± QNAN, UL, INF|yok|yok|
+|*x* < 1|yok|yok|
+
+## <a name="remarks"></a>Açıklamalar
+
+C++ kullandığınızda, aşırı çağırabilirsiniz **acosh** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **acosh** her zaman alan ve döndüren **çift**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|C üstbilgisi|C++ üstbilgi|
+|--------------|--------------|------------------|
+|**ACOSH**, **acoshf**, **acoshl**|\<Math.h >|\<cmath >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_acosh.c
+// Compile by using: cl /W4 crt_acosh.c
+// This program displays the hyperbolic cosine of pi / 4
+// and the arc hyperbolic cosine of the result.
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double pi = 3.1415926535;
+   double x, y;
+
+   x = cosh( pi / 4 );
+   y = acosh( x );
+   printf( "cosh( %f ) = %f\n", pi/4, x );
+   printf( "acosh( %f ) = %f\n", x, y );
+}
+```
+
+```Output
+cosh( 0.785398 ) = 1.324609
+acosh( 1.324609 ) = 0.785398
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
+[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
+[COSH, coshf, coshl](cosh-coshf-coshl.md)<br/>
+[SİNH, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[TANH, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>

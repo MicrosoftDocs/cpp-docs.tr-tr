@@ -1,12 +1,12 @@
 ---
 title: srand | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - srand
@@ -42,15 +42,15 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4cc76b80ca6c01d6512c69cc13fb0934e79b6ae5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a01e56159bf4f04f2c8a53f39e3fcd1e7dd450b5
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="srand"></a>srand
 
-Tarafından kullanılan geçici rastgele sayı üreticisinin için başlangıç çekirdek değeri ayarlar `rand` işlevi.
+Tarafından kullanılan geçici rastgele sayı üreticisinin için başlangıç çekirdek değeri ayarlar **rand** işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,26 +62,25 @@ void srand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Çekirdek*  
-Sözde rastgele sayı üretimi için çekirdek
+*Çekirdek* geçici rastgele sayı oluşturma için çekirdek
 
 ## <a name="remarks"></a>Açıklamalar
 
-`srand` işlevi, geçerli iş parçacığında bir sözde rastgele tamsayı dizisi oluşturmak için başlangıç noktasını ayarlar. Sonuçların aynı dizisini oluşturmak için oluşturucunun yeniden başlatmak için arama `srand` işlev ve aynı *çekirdek* yeniden bağımsız değişkeni. Başka bir değer için *çekirdek* oluşturucunun geçici rastgele sırayla farklı bir başlangıç noktası olarak ayarlar. `rand`, oluşturulan sözde rastgele sayıları alır. Çağırma `rand` herhangi çağrıdan önce `srand` arama aynı sırada oluşturur `srand` ile *çekirdek* 1 olarak geçirildi.
+**Srand** işlevi, geçerli iş parçacığında geçici rastgele tamsayılar bir dizi oluşturmak için başlangıç noktası ayarlar. Sonuçların aynı dizisini oluşturmak için oluşturucunun yeniden başlatmak için arama **srand** işlev ve aynı *çekirdek* yeniden bağımsız değişkeni. Başka bir değer için *çekirdek* oluşturucunun geçici rastgele sırayla farklı bir başlangıç noktası olarak ayarlar. **rand** oluşturulan geçici rastgele sayılar alır. Çağırma **rand** herhangi çağrıdan önce **srand** arama aynı sırada oluşturur **srand** ile *çekirdek* 1 olarak geçirildi.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`srand`|\<stdlib.h>|
+|**srand**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [rand](../../c-runtime-library/reference/rand.md).
+Örneğin bkz [rand](rand.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
-[rand](../../c-runtime-library/reference/rand.md)  
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](rand.md)<br/>

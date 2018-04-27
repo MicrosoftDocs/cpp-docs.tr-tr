@@ -1,12 +1,12 @@
 ---
 title: Tan, tanf, tanl, tanh, tanhf, tanhl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - tanhf
@@ -53,17 +53,17 @@ helpviewer_keywords:
 - trigonometric functions
 - hyperbolic functions
 ms.assetid: 36cc0ce8-9c80-4653-b354-ddb3b378b6bd
-caps.latest.revision: 
+caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0c3391d07e78ba177a3ce31abb26bd5b6ef0449c
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.sourcegitcommit: 9a3a3d59176043ae60584482c2572c07f757b320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="tan-tanf-tanl-tanh-tanhf-tanhl"></a>Tan, tanf, tanl, tanh, tanhf, tanhl
 Tanjantını hesaplar (`tan`, `tanf`, veya `tanl`), ya da hiperbolik tanjantı (`tanh`, `tanhf`, veya `tanhl`).  
@@ -158,9 +158,9 @@ tanh( 1.000000 ) = 0.761594
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
+ [ACOS, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
  [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)   
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
- [sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
+ [Sin, sinf, sinl, sinh, sinhf, sinhl](../../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)   
  [_CItan](../../c-runtime-library/citan.md)

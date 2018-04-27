@@ -1,12 +1,12 @@
 ---
 title: _CrtMemCheckpoint | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _CrtMemCheckpoint
@@ -32,52 +32,55 @@ helpviewer_keywords:
 - CrtMemCheckpoint function
 - _CrtMemCheckpoint function
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37333b2b4621b9434a9fe1a924162957d5ea824f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 80f9d0b88e5bf1195ca8097e4cfbab5ba97942d7
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
-Hata ayıklama yığınını geçerli durumunu alır ve depolar bir uygulama tarafından sağlanan içinde `_CrtMemState` yapısı (yalnızca hata ayıklama sürümü).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void _CrtMemCheckpoint(  
-   _CrtMemState *state   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `state`  
- İşaretçi `_CrtMemState` bellek denetim noktası doldurmak için yapısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_CrtMemCheckpoint` İşlevi, belirli bir anda hata ayıklama yığınını geçerli durumunda bir görüntüsünü oluşturur. Bu anlık görüntü diğer yığın durumu işlevler tarafından gibi kullanılabilir [_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md) bellek sızıntıları ve diğer sorunları saptamaya yardımcı olmak üzere. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar `_CrtMemState` ön işleme sırasında kaldırılır.  
-  
- Uygulama, önceden ayrılmış bir örneği için bir işaretçi geçmelidir `_CrtMemState` Crtdbg.h içinde tanımlanan yapısı `state` parametresi. Varsa `_CrtMemCheckpoint` karşılaştığı bir kontrol noktası oluşturulması sırasında hata işlevi oluşturur bir `_CRT_WARN` debug sorunu açıklayan bir rapor.  
-  
- Yığın durumu İşlevler hakkında daha fazla bilgi ve `_CrtMemState` yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).  
-  
- Varsa `state` olan `NULL`, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ayarlanır `EINVAL` ve işlevi döndürür.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_CrtMemCheckpoint`|\<crtdbg.h >, \<errno.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
- **Kitaplıklar:** Debug UCRT yalnızca sürümleri.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama yordamları](../../c-runtime-library/debug-routines.md)   
- [_CrtMemDifference](../../c-runtime-library/reference/crtmemdifference.md)
+
+Hata ayıklama yığınını geçerli durumunu alır ve depolar bir uygulama tarafından sağlanan içinde **_CrtMemState** yapısı (yalnızca hata ayıklama sürümü).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void _CrtMemCheckpoint(
+   _CrtMemState *state
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*durumu* işaretçi **_CrtMemState** bellek denetim noktası doldurmak için yapısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_CrtMemCheckpoint** işlev belirli bir anda hata ayıklama yığınını geçerli durumunda bir görüntüsünü oluşturur. Bu anlık görüntü diğer yığın durumu işlevler tarafından gibi kullanılabilir [_CrtMemDifference](crtmemdifference.md) bellek sızıntıları ve diğer sorunları saptamaya yardımcı olmak üzere. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemState** ön işleme sırasında kaldırılır.
+
+Uygulama, önceden ayrılmış bir örneği için bir işaretçi geçmelidir **_CrtMemState** Crtdbg.h içinde tanımlanan yapısı *durumu* parametresi. Varsa **_CrtMemCheckpoint** karşılaştığı bir kontrol noktası oluşturulması sırasında hata işlevi oluşturur bir **_CRT_WARN** debug sorunu açıklayan bir rapor.
+
+Yığın durumu İşlevler hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+
+Varsa *durumu* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) ayarlanır **EINVAL** ve işlevi döndürür.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_CrtMemCheckpoint**|\<crtdbg.h >, \<errno.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+**Kitaplıklar:** Debug UCRT yalnızca sürümleri.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Hata Ayıklama Yordamları](../../c-runtime-library/debug-routines.md)<br/>
+[_CrtMemDifference](crtmemdifference.md)<br/>

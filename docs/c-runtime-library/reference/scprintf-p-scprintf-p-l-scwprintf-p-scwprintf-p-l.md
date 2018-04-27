@@ -1,12 +1,12 @@
 ---
 title: _scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _scwprintf_p
@@ -52,88 +52,93 @@ helpviewer_keywords:
 - scwprintf_p_l function
 - _sctprintf_p_l function
 ms.assetid: 8390d1e1-2826-47a4-851f-6635a88087cc
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 732b299eabffcea2b505921cf55fb23916063058
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 2d8f15036cc7e4ffeb2cd29388bff2c7e615bb59
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="scprintfp-scprintfpl-scwprintfp-scwprintfpl"></a>_scprintf_p, _scprintf_p_l, _scwprintf_p, _scwprintf_p_l
-Karakter sayısını biçimlendirilmiş dizisindeki parametreleri kullanılan biçim dizesi sırayı olanağı verir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _scprintf_p(  
-   const char *format [,  
-   argument] ...   
-);  
-int _scprintf_p_l(  
-   const char *format,  
-   locale_t locale [,  
-   argument] ...   
-);  
-int _scwprintf_p (  
-   const wchar_t *format [,  
-   argument] ...   
-);  
-int _scwprintf_p _l(  
-   const wchar_t *format,  
-   locale_t locale [,  
-   argument] ...   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `format`  
- Biçim denetimi dizesi.  
-  
- `argument`  
- İsteğe bağlı bağımsız değişkenler.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Dize yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen olsaydı, oluşturulacak karakterlerin sayısını döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_scwprintf_p` geniş karakterler için aynı işlevi gerçekleştirir.  
-  
- Arasındaki farkı `_scprintf_p` ve `_scprintf` olan `_scprintf_p` biçim dizesi bağımsız değişkenleri kullanıldığı sırayı belirten verir destekler konumsal parametreler. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).  
-  
- Varsa `format` olan bir `NULL` işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve `errno` için `EINVAL`.  
-  
- Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Her `argument` (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür `format`. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev `format` bağımsız değişkeni için [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
-  
- Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
-  
+
+Karakter sayısını biçimlendirilmiş dizisindeki parametreleri kullanılan biçim dizesi sırayı olanağı verir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _scprintf_p(
+   const char *format [,
+   argument] ...
+);
+int _scprintf_p_l(
+   const char *format,
+   locale_t locale [,
+   argument] ...
+);
+int _scwprintf_p (
+   const wchar_t *format [,
+   argument] ...
+);
+int _scwprintf_p _l(
+   const wchar_t *format,
+   locale_t locale [,
+   argument] ...
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Biçimi*<br/>
+Biçim denetimi dizesi.
+
+*Bağımsız değişken*<br/>
+İsteğe bağlı bağımsız değişkenler.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Dize yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen olsaydı, oluşturulacak karakterlerin sayısını döndürür. Döndürülen değer sonlandırma null karakteri içermez. **_scwprintf_p** geniş karakterler için aynı işlevi gerçekleştirir.
+
+Arasındaki farkı **_scprintf_p** ve **_scprintf** olan **_scprintf_p** sırayı içinde belirtme verir destekler konumsal parametreler bağımsız değişkenler Biçim dizesi kullanılır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+
+Varsa *biçimi* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+
+Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Her *bağımsız değişkeni* (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür *biçimi*. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](printf-printf-l-wprintf-wprintf-l.md).
+
+Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+
 > [!IMPORTANT]
->  Emin `format` kullanıcı tanımlı bir dize değil.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_sctprintf_p`|`_scprintf_p`|`_scprintf_p`|`_scwprintf_p`|  
-|`_sctprintf_p_l`|`_scprintf_p_l`|`_scprintf_p_l`|`_scwprintf_p_l`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_scprintf_p`, `_scprintf_p_l`|\<stdio.h >|  
-|`_scwprintf_p`, `_scwprintf_p_l`|\<stdio.h > veya \<wchar.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](../../c-runtime-library/reference/scprintf-scprintf-l-scwprintf-scwprintf-l.md)   
- [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](../../c-runtime-library/reference/printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)
+> Emin *biçimi* kullanıcı tanımlı bir dize değil.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_sctprintf_p**|**_scprintf_p**|**_scprintf_p**|**_scwprintf_p**|
+|**_sctprintf_p_l**|**_scprintf_p_l**|**_scprintf_p_l**|**_scwprintf_p_l**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_scprintf_p**, **_scprintf_p_l**|\<stdio.h >|
+|**_scwprintf_p**, **_scwprintf_p_l**|\<stdio.h > veya \<wchar.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[_scprintf, _scprintf_l, _scwprintf, _scwprintf_l](scprintf-scprintf-l-scwprintf-scwprintf-l.md)<br/>
+[_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>

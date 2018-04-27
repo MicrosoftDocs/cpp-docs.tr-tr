@@ -1,12 +1,12 @@
 ---
 title: _fputc_nolock _fputwc_nolock | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _fputwc_nolock
@@ -42,90 +42,95 @@ helpviewer_keywords:
 - _fputtc_nolock function
 - _fputwc_nolock function
 ms.assetid: c63eb3ad-58fa-46d0-9249-9c25f815eab9
-caps.latest.revision: 
+caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fec3b3497d58a4b08a46d569e9989bf4792544f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 83f79339b2c0335031b4a5eec13d4ccca1f12ace
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fputcnolock-fputwcnolock"></a>_fputc_nolock, _fputwc_nolock
-Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _fputc_nolock(  
-   int c,  
-   FILE *stream   
-);  
-wint_t _fputwc_nolock(  
-   wchar_t c,  
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Yazılacak karakter.  
-  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu işlevlerin her biri yazılmış karakteri döndürür. Hata bilgileri için bkz: [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_fputc_nolock` ve `_fputwc_nolock` özdeş `fputc` ve `fputwc`, sırasıyla dışında diğer iş parçacıkları tarafından girişime korunmaz. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
-  
- Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_fputc_nolock` şu anda çıktı bir UNICODE akışa desteklemiyor.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_fputtc_nolock`|`_fputc_nolock`|`_fputc_nolock`|`_fputwc_nolock`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`_fputc_nolock`|\<stdio.h >|  
-|`_fputwc_nolock`|\<stdio.h > veya \<wchar.h >|  
-  
- Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_fputc_nolock.c  
-// This program uses _fputc_nolock  
-// to send a character array to stdout.  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   char strptr1[] = "This is a test of _fputc_nolock!!\n";  
-   char *p;  
-  
-   // Print line to stream using fputc.   
-   p = strptr1;  
-   while( (*p != '\0') && _fputc_nolock( *(p++), stdout ) != EOF ) ;  
-  
-}  
-```  
-  
-```Output  
-This is a test of _fputc_nolock!!  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
- [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+
+Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _fputc_nolock(
+   int c,
+   FILE *stream
+);
+wint_t _fputwc_nolock(
+   wchar_t c,
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Yazılacak karakter.
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu işlevlerin her biri yazılmış karakteri döndürür. Hata bilgileri için bkz: [fputc, fputwc](fputc-fputwc.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+**_fputc_nolock** ve **_fputwc_nolock** özdeş **fputc** ve **fputwc**, sırasıyla girişim tarafından gelen korunmayan dışında diğer iş parçacığı sayısı. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+
+Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **_fputc_nolock** şu anda çıktı bir UNICODE akışa desteklemiyor.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_fputtc_nolock**|**_fputc_nolock**|**_fputc_nolock**|**_fputwc_nolock**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**_fputc_nolock**|\<stdio.h >|
+|**_fputwc_nolock**|\<stdio.h > veya \<wchar.h >|
+
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_fputc_nolock.c
+// This program uses _fputc_nolock
+// to send a character array to stdout.
+
+#include <stdio.h>
+
+int main( void )
+{
+   char strptr1[] = "This is a test of _fputc_nolock!!\n";
+   char *p;
+
+   // Print line to stream using fputc.
+   p = strptr1;
+   while( (*p != '\0') && _fputc_nolock( *(p++), stdout ) != EOF ) ;
+
+}
+```
+
+```Output
+This is a test of _fputc_nolock!!
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>

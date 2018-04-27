@@ -18,11 +18,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12574f9a8a2da2072d1196cbd769ac87cf31c2f7
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: f06153b4c4f037172e96e3ce1222311a82c71772
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="data-conversion"></a>Veri Dönüştürme
 
@@ -32,7 +32,7 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 
 |Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |-------------|---------|
-|[abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Tamsayı mutlak değerini bulur|
+|[Abs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Tamsayı mutlak değerini bulur|
 |[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Dizeye dönüştürme **float**|
 |[atoi, _atoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Dizeye dönüştürme **int**|
 |[_atoi64, _atoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Dizeye dönüştürme **__int64** veya **uzun uzun**|
@@ -45,7 +45,7 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 |[Labs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Mutlak değerini bulmak **uzun** tamsayı|
 |[llabs](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Mutlak değerini bulmak **uzun uzun** tamsayı|
 |[_mbbtombc, _mbbtombc_l](../c-runtime-library/reference/mbbtombc-mbbtombc-l.md)|1-bayt birden çok baytlı karakter karşılık gelen 2-bayt birden çok baytlı karakter dönüştürme|
-|[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)|Convert Japan Industry Standard (JIS) character to Japan Microsoft (JMS) character|
+|[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)|Japonya endüstri standardı (JIS) karakter Japonya Microsoft (JMS) karakter dönüştürme|
 |[_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l](../c-runtime-library/reference/mbcjistojms-mbcjistojms-l-mbcjmstojis-mbcjmstojis-l.md)|JIS karakter JMS karakter dönüştürme|
 |[_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l](../c-runtime-library/reference/mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)|1-bayt hiragana kodu birden çok baytlı karakter dönüştürme|
 |[_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l](../c-runtime-library/reference/mbctohira-mbctohira-l-mbctokata-mbctokata-l.md)|1-bayt katakana kodu birden çok baytlı karakter dönüştürme|
@@ -71,4 +71,4 @@ Bu yordamlar verileri bir biçimden diğerine dönüştürün. Genellikle bu yor
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

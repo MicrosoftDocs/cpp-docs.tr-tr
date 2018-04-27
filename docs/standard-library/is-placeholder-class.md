@@ -1,12 +1,12 @@
 ---
-title: "is_placeholder sınıfı | Microsoft Docs"
-ms.custom: 
+title: is_placeholder sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - functional/std::is_placeholder
@@ -15,40 +15,40 @@ dev_langs:
 helpviewer_keywords:
 - is_placeholder class
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
-caps.latest.revision: 
+caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5491f0a8c5ef0c6999680beb8b82cd6280f87af1
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 1dd65d50dd2a4b42b949c7ce649c2dcca71f4d72
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isplaceholder-class"></a>is_placeholder Sınıfı
-Test türü bir yer tutucudur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-Yapı is_placeholder {  
-   statik const Int değeri;  
-   };  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sabit değer `value` 0 ise türü `Ty` bir yer tutucu; değil Aksi takdirde değerini bağlandığı işlev çağrısı bağımsız değişkeni konumudur. Değeri belirlemek için kullandığınız `N` n. yer tutucunun `_N`.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// std__functional__is_placeholder.cpp   
-// compile with: /EHsc   
-#include <functional>   
-#include <iostream>   
-  
-using namespace std::placeholders;   
-  
+
+Test türü bir yer tutucudur.
+
+## <a name="syntax"></a>Sözdizimi
+
+Yapı is_placeholder {statik const Int değeri;};
+
+## <a name="remarks"></a>Açıklamalar
+
+Sabit değer `value` 0 ise türü `Ty` bir yer tutucu; değil Aksi takdirde değerini bağlandığı işlev çağrısı bağımsız değişkeni konumudur. Değeri belirlemek için kullandığınız `N` n. yer tutucunun `_N`.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// std__functional__is_placeholder.cpp
+// compile with: /EHsc
+#include <functional>
+#include <iostream>
+
+using namespace std::placeholders;
+
 template<class Expr>
 void test_for_placeholder(const Expr&)
 {
@@ -61,19 +61,20 @@ int main()
     test_for_placeholder(_3);
 
     return (0);
-}  
-```  
-  
-```Output  
-0  
-3  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<işlevsel >  
-  
- **Namespace:** std  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_1 Nesnesi](../standard-library/1-object.md)
+}
+```
 
+```Output
+0
+3
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<işlevsel >
+
+**Namespace:** std
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_1 Nesnesi](../standard-library/1-object.md)<br/>

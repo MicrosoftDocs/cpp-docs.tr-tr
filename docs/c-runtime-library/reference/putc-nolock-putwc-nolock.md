@@ -1,12 +1,12 @@
 ---
 title: _putc_nolock, _putwc_nolock | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _putc_nolock
@@ -43,100 +43,105 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-caps.latest.revision: 
+caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 348141f4d096e22efc80ada84c31a7e10b96287a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c52dcb390fac781018782f727fbc360d949770c1
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="putcnolock-putwcnolock"></a>_putc_nolock, _putwc_nolock
-Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      int _putc_nolock(  
-   int c,  
-   FILE *stream   
-);  
-wint_t _putwc_nolock(  
-   wchar_t c,  
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Yazılacak karakter.  
-  
- `stream`  
- İşaretçi **dosya** yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bkz: **putc, putwc**.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_putc_nolock` ve `_putwc_nolock` sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.  
-  
- `_putwc_nolock` joker karakter sürümü `_putc_nolock`; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `_putc_nolock` şu anda çıktı bir UNICODE akışa desteklemiyor.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_puttc_nolock`|`_putc_nolock`|`_putc_nolock`|**_putwc_nolock**|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_putc_nolock`|\<stdio.h >|  
-|`_putwc_nolock`|\<stdio.h > veya \<wchar.h >|  
-  
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları `stdin`, `stdout`, ve `stderr`, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
-  
-## <a name="libraries"></a>Kitaplıklar  
- Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_putc_nolock.c  
-/* This program uses putc to write buffer  
- * to a stream. If an error occurs, the program  
- * stops before writing the entire buffer.  
- */  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   FILE *stream;  
-   char *p, buffer[] = "This is the line of output\n";  
-   int  ch;  
-  
-   ch = 0;  
-   /* Make standard out the stream and write to it. */  
-   stream = stdout;  
-   for( p = buffer; (ch != EOF) && (*p != '\0'); p++ )  
-      ch = _putc_nolock( *p, stream );  
-}  
-```  
-  
-## <a name="output"></a>Çıkış  
-  
-```  
-This is the line of output  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fputc, fputwc](../../c-runtime-library/reference/fputc-fputwc.md)   
- [getc, getwc](../../c-runtime-library/reference/getc-getwc.md)
+
+Bir karakter, iş parçacığı kilitlemeden bir akışa yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _putc_nolock(
+   int c,
+   FILE *stream
+);
+wint_t _putwc_nolock(
+   wchar_t c,
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Yazılacak karakter.
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bkz: **putc, putwc**.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_putc_nolock** ve **_putwc_nolock** sürümleri için özdeş **_nolock** diğer iş parçacıkları tarafından girişime korunmayan dışında soneki. Bunlar başka bir iş parçacığı kilitleme zahmetine değil olduğundan daha hızlı olabilir. Bu işlevler yalnızca iş parçacığı bağlamları tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işleme olduğu gibi kullanın.
+
+**_putwc_nolock** geniş karakter sürümü **_putc_nolock**; akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **_putc_nolock** çıktı bir UNICODE akışa şu anda desteklemiyor.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_puttc_nolock**|**_putc_nolock**|**_putc_nolock**|**_putwc_nolock**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_putc_nolock**|\<stdio.h >|
+|**_putwc_nolock**|\<stdio.h > veya \<wchar.h >|
+
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_putc_nolock.c
+/* This program uses putc to write buffer
+* to a stream. If an error occurs, the program
+* stops before writing the entire buffer.
+*/
+
+#include <stdio.h>
+
+int main( void )
+{
+   FILE *stream;
+   char *p, buffer[] = "This is the line of output\n";
+   int  ch;
+
+   ch = 0;
+   /* Make standard out the stream and write to it. */
+   stream = stdout;
+   for( p = buffer; (ch != EOF) && (*p != '\0'); p++ )
+      ch = _putc_nolock( *p, stream );
+}
+```
+
+### <a name="output"></a>Çıkış
+
+```Output
+This is the line of output
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fputc, fputwc](fputc-fputwc.md)<br/>
+[getc, getwc](getc-getwc.md)<br/>

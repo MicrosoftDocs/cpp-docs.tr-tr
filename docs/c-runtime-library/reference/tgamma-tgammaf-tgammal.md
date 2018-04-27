@@ -1,13 +1,13 @@
 ---
 title: tgamma, tgammaf, tgammal | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - tgamma
@@ -40,82 +40,87 @@ helpviewer_keywords:
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-caps.latest.revision: 
+caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7525da71d114179d40b937816f9ebe08d5a892a9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 951e5635ae1e2b8ee22af7cb26902bd309d62b40
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
-Belirtilen değer Gama işlevinin belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double tgamma(  
-   double x  
-);  
-  
-float tgamma(  
-   float x  
-); //C++ only  
-  
-long double tgamma(  
-   long double x  
-); //C++ only  
-  
-float tgammaf(  
-   float x  
-);  
-  
-long double tgammal(  
-   long double x  
-);  
-  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `x`  
- Gama, bulunacak değer.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, gama döndürür `x`.  
-  
- Bir aralık hata oluşabilir büyüklüğünü `x` çok büyük ya da veri türü için çok küçük. Bir etki alanı hatası ya da aralık hatası ortaya çıkabilir `x` < = 0.  
-  
-|Sorun|Döndür|  
-|-----------|------------|  
-|x = ±0|±INFINITY|  
-|x = negatif tamsayı|NaN|  
-|x = - SONSUZ|NaN|  
-|x = +INFINITY|+ SONSUZ|  
-|x = NaN|NaN|  
-|etki alanı hatası|NaN|  
-|kutbu'na hata|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|  
-|taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|  
-|Underflow aralık hatası|doğru değeri, yuvarlama sonra.|  
-  
- Hataları raporlanır belirtilmiş [_matherr](../../c-runtime-library/reference/matherr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, yapan ve float ve uzun çift türleri dönüş tgamma aşırı çağırabilirsiniz. Bir C programı tgamma her zaman alır ve bir double döndürür.  
-  
- X doğal sayı ise, bu işlevi (x-1) çarpımını döndürür.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|C üstbilgisi|C++ üstbilgi|  
-|--------------|--------------|------------------|  
-|`tgamma`,                `tgammaf`,  `tgammal`|\<Math.h >|\<cmath >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [lgamma, lgammaf, lgammal](../../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)
+
+Belirtilen değer Gama işlevinin belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double tgamma(
+   double x
+);
+
+float tgamma(
+   float x
+); //C++ only
+
+long double tgamma(
+   long double x
+); //C++ only
+
+float tgammaf(
+   float x
+);
+
+long double tgammal(
+   long double x
+);
+
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Gama, bulunacak değer.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, gama döndürür *x*.
+
+Bir aralık hata oluşabilir büyüklüğünü *x* çok büyük ya da veri türü için çok küçük. Bir etki alanı hatası ya da aralık hatası ortaya çıkabilir *x* < = 0.
+
+|Sorun|Döndür|
+|-----------|------------|
+|x = ±0|±INFINITY|
+|x = negatif tamsayı|NaN|
+|x = - SONSUZ|NaN|
+|x = + SONSUZ|+ SONSUZ|
+|x NaN =|NaN|
+|etki alanı hatası|NaN|
+|kutbu'na hata|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|taşma aralık hatası|±HUGE_VAL, ±HUGE_VALF veya ±HUGE_VALL|
+|Underflow aralık hatası|doğru değeri, yuvarlama sonra.|
+
+Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **tgamma** alın ve dönüş **float** ve **uzun** **çift** türleri. Bir C programı **tgamma** her zaman alan ve döndüren bir **çift**.
+
+X doğal sayı ise, bu işlevi (x-1) çarpımını döndürür.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|C üstbilgisi|C++ üstbilgi|
+|--------------|--------------|------------------|
+|**tgamma**, **tgammaf**, **tgammal**|\<Math.h >|\<cmath >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[lgamma, lgammaf, lgammal](lgamma-lgammaf-lgammal.md)<br/>

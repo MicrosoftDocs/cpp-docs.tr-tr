@@ -52,84 +52,89 @@ helpviewer_keywords:
 - characters, converting
 - _towlower_l function
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
-caps.latest.revision: ''
+caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44c75ab979db21d72c682a3ba6f0da6947f22a4c
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: 23d03190ae47857a7b49f687d1f03e78c0dbc9e0
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="tolower-tolower-towlower-tolowerl-towlowerl"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
-Bir karakteri küçük harfe dönüştürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int tolower(  
-   int c   
-);  
-int _tolower(  
-   int c   
-);  
-int towlower(  
-   wint_t c   
-);  
-int _tolower_l(  
-   int c,  
-   _locale_t locale   
-);  
-int _towlower_l(  
-   wint_t c,  
-   _locale_t locale   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `c`  
- Dönüştürülecek karakter.  
-  
- [in] `locale`  
- Yerel ayarlara özgü çevirisi için kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamlar her bir kopyasını dönüştürür `c` alt örneğine dönüştürme mümkün ise ve sonucunu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Olası ve ilgili ise bu yordamlar her bir küçük harf belirli bir büyük harf dönüştürür. Büyük/küçük harfe dönüştürülmesini `towlower` yerel ayar özgüdür. Yalnızca geçerli yerel ilgili karakterleri durumda değiştirilir. Olmadan çalışır `_l` sonekini kullan ayarlanmış yerel ayar. Bu işlevleri sürümlerini `_l` soneki yerel bir parametre olarak geçirmesine ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
- Sırayla `_tolower` beklenen sonuçları elde etmek için [__isascii](../../c-runtime-library/reference/isascii-isascii-iswascii.md) ve [isupper](../../c-runtime-library/reference/isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan bir değer döndürmesi gerekir.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_totlower`|`tolower`|`_mbctolower`|`towlower`|  
-|`_totlower_l`|`_tolower_l`|`_mbctolower_l`|`_towlower_l`|  
-  
+Bir karakteri küçük harfe dönüştürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int tolower(
+   int c
+);
+int _tolower(
+   int c
+);
+int towlower(
+   wint_t c
+);
+int _tolower_l(
+   int c,
+   _locale_t locale
+);
+int _towlower_l(
+   wint_t c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Dönüştürülecek karakter.
+
+*Yerel ayar*<br/>
+Yerel ayarlara özgü çevirisi için kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu yordamlar her bir kopyasını dönüştürür *c* alt örneğine dönüştürme mümkün ise ve sonucunu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
+
+## <a name="remarks"></a>Açıklamalar
+
+Olası ve ilgili ise bu yordamlar her bir küçük harf belirli bir büyük harf dönüştürür. Büyük/küçük harfe dönüştürülmesini **towlower** yerel ayar özgüdür. Yalnızca geçerli yerel ilgili karakterleri durumda değiştirilir. Olmadan çalışır **_l** sonekini kullan ayarlanmış yerel ayar. Bu işlevleri sürümlerini **_l** soneki yerel bir parametre olarak geçirmesine ve ayarlanmış yerine kullanan yerel ayar. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+Sırayla **_tolower** beklenen sonuçları elde etmek için [__isascii](isascii-isascii-iswascii.md) ve [isupper](isupper-isupper-l-iswupper-iswupper-l.md) her ikisi de sıfır olmayan bir değer döndürmesi gerekir.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_totlower**|**tolower**|**_mbctolower**|**towlower**|
+|**_totlower_l**|**_tolower_l**|**_mbctolower_l**|**_towlower_l**|
+
 > [!NOTE]
->  `_tolower_l` ve `_towlower_l` hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan `_totlower_l`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`tolower`|\<ctype.h>|  
-|`_tolower`|\<ctype.h>|  
-|`towlower`|\<CType.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Örnekte bkz [işlevlere](../../c-runtime-library/to-functions.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)   
- [to işlevleri](../../c-runtime-library/to-functions.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)
+> **_tolower_l** ve **_towlower_l** hiçbir yerel ayar bağımlılığı olan ve doğrudan çağrılması amaçlanmamıştır. Tarafından iç kullanım için sağlanan **_totlower_l**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**tolower**|\<CType.h >|
+|**_tolower**|\<CType.h >|
+|**towlower**|\<CType.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Örnekte bkz [işlevlere](../../c-runtime-library/to-functions.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[to İşlevleri](../../c-runtime-library/to-functions.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

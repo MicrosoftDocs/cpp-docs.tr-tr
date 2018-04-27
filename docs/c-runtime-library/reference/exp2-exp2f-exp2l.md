@@ -1,13 +1,13 @@
 ---
 title: exp2, exp2f, exp2l | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - exp2
@@ -40,75 +40,80 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bf1eca51bbe7d5db5044e0c863f30a5af63f77d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 69b7deb8e6e43ded0a3545bc1b33961d977eeb1f
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
-Belirtilen değere yükseltilmiş 2 hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double exp2(  
-   double x  
-);  
-  
-float exp2(  
-   float x  
-);  // C++ only  
-  
-long double exp2(  
-   long double x  
-); // C++ only  
-  
-float exp2f(  
-   float x  
-);  
-  
-long double exp2l(  
-   long double x  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [in] `x`  
- Üs değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, temel 2 üs döndürür `x`, diğer bir deyişle, 2<sup>x</sup>. Aksi takdirde, aşağıdaki değerlerden birini döndürür:  
-  
-|Sorun|Döndür|  
-|-----------|------------|  
-|`x` = ±0|1.|  
-|`x` = - SONSUZ|+0|  
-|`x` = +INFINITY|+ SONSUZ|  
-|`x` = NaN|NaN|  
-|taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|  
-|Underflow aralık hatası|Yuvarlama sonra doğru sonucu|  
-  
- Hataları raporlanır belirtilmiş [_matherr](../../c-runtime-library/reference/matherr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `exp2` alın ve dönüş **float** ve **uzun çift** türleri. Bir C programı `exp2` her zaman alan ve döndüren bir **çift**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`exp`, `expf`, `expl`|\<Math.h >|\<cmath >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
- [log2, log2f, log2l](../../c-runtime-library/reference/log2-log2f-log2l.md)
+
+Belirtilen değere yükseltilmiş 2 hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double exp2(
+   double x
+);
+
+float exp2(
+   float x
+);  // C++ only
+
+long double exp2(
+   long double x
+); // C++ only
+
+float exp2f(
+   float x
+);
+
+long double exp2l(
+   long double x
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Üs değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, temel 2 üs döndürür *x*, diğer bir deyişle, 2<sup>x</sup>. Aksi takdirde, aşağıdaki değerlerden birini döndürür:
+
+|Sorun|Döndür|
+|-----------|------------|
+|*x* ±0 =|1.|
+|*x* = - SONSUZ|+0|
+|*x* = + SONSUZ|+ SONSUZ|
+|*x* NaN =|NaN|
+|taşma aralık hatası|+ HUGE_VAL + HUGE_VALF, veya + HUGE_VALL|
+|Underflow aralık hatası|Yuvarlama sonra doğru sonucu|
+
+Hataları raporlanır belirtilmiş [_matherr](matherr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **exp2** alın ve dönüş **float** ve **uzun çift** türleri. Bir C programı **exp2** her zaman alan ve döndüren bir **çift**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|**exp**, **expf**, **expl**|\<Math.h >|\<cmath >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[exp, expf, expl](exp-expf.md)<br/>
+[log2, log2f, log2l](log2-log2f-log2l.md)<br/>

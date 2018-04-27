@@ -1,12 +1,12 @@
 ---
 title: _memicmp, _memicmp_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _memicmp_l
@@ -36,117 +36,122 @@ helpviewer_keywords:
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b79c36bc665d1d7a32ef50984a75b48811985d1e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 25540061a3c7b405dcd173c6aa3d28678551c78d
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="memicmp-memicmpl"></a>_memicmp, _memicmp_l
-İki arabellekler (büyük küçük harf duyarsız) karakter karşılaştırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _memicmp(  
-   const void *buf1,  
-   const void *buf2,  
-   size_t count   
-);  
-int _memicmp_l(  
-   const void *buf1,  
-   const void *buf2,  
-   size_t count,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `buf1`  
- İlk arabelleği.  
-  
- `buf2`  
- İkinci bir arabellek.  
-  
- `count`  
- Karakter sayısı.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Dönüş değeri arabellek arasındaki ilişkiyi gösterir.  
-  
-|Dönüş değeri|İlk sayı bayt buf1 ve buf2 ilişkisi|  
-|------------------|--------------------------------------------------------|  
-|< 0|`buf1` küçüktür `buf2`.|  
-|0|`buf1` aynı `buf2`.|  
-|> 0|`buf1` büyük `buf2`.|  
-|`_NLSCMPERROR`|Bir hata oluşmuştur.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_memicmp` İşlevi karşılaştırır ilk `count` iki arabellekleri karakterlerden `buf1` ve `buf2` bayt. Karşılaştırma büyük küçük harfe duyarlı değildir.  
-  
- Her iki `buf1` veya `buf2` null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi bu işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür `_NLSCMPERROR` ve ayarlar `errno` için `EINVAL`.  
-  
- `_memicmp` Geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır; `_memicmp_l` yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_memicmp`|\<Memory.h > veya \<string.h >|  
-|`_memicmp_l`|\<Memory.h > veya \<string.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_memicmp.c  
-// This program uses _memicmp to compare  
-// the first 29 letters of the strings named first and  
-// second without regard to the case of the letters.  
-  
-#include <memory.h>  
-#include <stdio.h>  
-#include <string.h>  
-  
-int main( void )  
-{  
-   int result;  
-   char first[] = "Those Who Will Not Learn from History";  
-   char second[] = "THOSE WHO WILL NOT LEARN FROM their mistakes";  
-   // Note that the 29th character is right here ^  
-  
-   printf( "Compare '%.29s' to '%.29s'\n", first, second );  
-   result = _memicmp( first, second, 29 );  
-   if( result < 0 )  
-      printf( "First is less than second.\n" );  
-   else if( result == 0 )  
-      printf( "First is equal to second.\n" );  
-   else if( result > 0 )  
-      printf( "First is greater than second.\n" );  
-}  
-```  
-  
-```Output  
-Compare 'Those Who Will Not Learn from' to 'THOSE WHO WILL NOT LEARN FROM'  
-First is equal to second.  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ara bellek düzenlemesi](../../c-runtime-library/buffer-manipulation.md)   
- [_memccpy](../../c-runtime-library/reference/memccpy.md)   
- [memchr'e, wmemchr](../../c-runtime-library/reference/memchr-wmemchr.md)   
- [memcmp, wmemcmp](../../c-runtime-library/reference/memcmp-wmemcmp.md)   
- [memcpy, wmemcpy](../../c-runtime-library/reference/memcpy-wmemcpy.md)   
- [memset, wmemset](../../c-runtime-library/reference/memset-wmemset.md)   
- [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](../../c-runtime-library/reference/stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)   
- [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)
+
+İki arabellekler (büyük küçük harf duyarsız) karakter karşılaştırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _memicmp(
+   const void *buffer1,
+   const void *buffer2,
+   size_t count
+);
+int _memicmp_l(
+   const void *buffer1,
+   const void *buffer2,
+   size_t count,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*buffer1*<br/>
+İlk arabelleği.
+
+*buffer2*<br/>
+İkinci bir arabellek.
+
+*Sayısı*<br/>
+Karakter sayısı.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Dönüş değeri arabellek arasındaki ilişkiyi gösterir.
+
+|Dönüş değeri|İlk sayı bayt buf1 ve buf2 ilişkisi|
+|------------------|--------------------------------------------------------|
+|< 0|*buffer1* değerinden *buffer2*.|
+|0|*buffer1* aynı *buffer2*.|
+|> 0|*buffer1* büyük *buffer2*.|
+|**_NLSCMPERROR**|Bir hata oluşmuştur.|
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Memicmp** işlevi karşılaştırır ilk *sayısı* iki arabellekleri karakterlerden *buffer1* ve *buffer2* bayt. Karşılaştırma büyük küçük harfe duyarlı değildir.
+
+Her iki *buffer1* veya *buffer2* null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi bu işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
+
+**_memicmp** geçerli yerel ayar için yerel ayara bağımlı davranışı; kullanır **_memicmp_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_memicmp**|\<Memory.h > veya \<string.h >|
+|**_memicmp_l**|\<Memory.h > veya \<string.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_memicmp.c
+// This program uses _memicmp to compare
+// the first 29 letters of the strings named first and
+// second without regard to the case of the letters.
+
+#include <memory.h>
+#include <stdio.h>
+#include <string.h>
+
+int main( void )
+{
+   int result;
+   char first[] = "Those Who Will Not Learn from History";
+   char second[] = "THOSE WHO WILL NOT LEARN FROM their mistakes";
+   // Note that the 29th character is right here ^
+
+   printf( "Compare '%.29s' to '%.29s'\n", first, second );
+   result = _memicmp( first, second, 29 );
+   if( result < 0 )
+      printf( "First is less than second.\n" );
+   else if( result == 0 )
+      printf( "First is equal to second.\n" );
+   else if( result > 0 )
+      printf( "First is greater than second.\n" );
+}
+```
+
+```Output
+Compare 'Those Who Will Not Learn from' to 'THOSE WHO WILL NOT LEARN FROM'
+First is equal to second.
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Ara Bellek Düzenlemesi](../../c-runtime-library/buffer-manipulation.md)<br/>
+[_memccpy](memccpy.md)<br/>
+[memchr, wmemchr](memchr-wmemchr.md)<br/>
+[memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
+[memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
+[memset, wmemset](memset-wmemset.md)<br/>
+[_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

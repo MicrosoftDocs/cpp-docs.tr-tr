@@ -1,12 +1,12 @@
 ---
 title: rand | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - rand
@@ -39,15 +39,15 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5fecd9079de1ae846d83847eb299890d62c29d17
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b5d60cdedf69d03871be4c408241660ea726b5c5
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="rand"></a>rand
 
-Geçici rastgele bir sayı, iyi bilinen ve tam olarak yeniden üretilebilir bir algoritma kullanarak oluşturur. Bu işlev program aracılığıyla daha güvenli bir sürümü kullanılabilir; bkz: [rand_s](../../c-runtime-library/reference/rand-s.md). Sayı oluşturulan tarafından `rand` şifreleme açısından güvenli değildir. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak `rand_s` veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md).
+Geçici rastgele bir sayı, iyi bilinen ve tam olarak yeniden üretilebilir bir algoritma kullanarak oluşturur. Bu işlev program aracılığıyla daha güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Sayı oluşturulan tarafından **rand** şifreleme açısından güvenli değildir. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak [rand_s](rand-s.md) veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,21 +57,21 @@ int rand( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`rand` Yukarıda açıklanan geçici rastgele bir sayı döndürür. Döndürülen hata yoktur.
+**rand** yukarıda açıklanan geçici rastgele bir sayı döndürür. Döndürülen hata yoktur.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`rand` İşlevi aralıktaki 0 geçici rastgele bir tamsayı döndürür `RAND_MAX` (32767). Kullanım [srand](../../c-runtime-library/reference/srand.md) çağırmadan önce geçici rastgele sayı oluşturucu çekirdek işlevi `rand`.
+**Rand** işlevi aralıktaki 0 geçici rastgele bir tamsayı döndürür **RAND_MAX** (32767). Kullanım [srand](srand.md) çağırmadan önce geçici rastgele sayı oluşturucu çekirdek işlevi **rand**.
 
-`rand` İşlevi iyi bilinen bir sıra oluşturur ve bir şifreleme işlevi olarak kullanmak için uygun değil. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak `rand_s` veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için `rand()` ve nasıl `<random>` bu eksik adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/?LinkId=397615).
+**Rand** işlevi iyi bilinen bir sıra oluşturur ve bir şifreleme işlevi olarak kullanmak için uygun değil. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak [rand_s](rand-s.md) veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu eksik adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/?LinkId=397615).
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`rand`|\<stdlib.h>|
+|**rand**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -125,7 +125,7 @@ int main( void )
 11651
 27464
 18093
- 3284
+3284
 11785
 14686
 11447
@@ -145,6 +145,6 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
-[srand](../../c-runtime-library/reference/srand.md)  
-[rand_s](../../c-runtime-library/reference/rand-s.md)  
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[srand](srand.md)<br/>
+[rand_s](rand-s.md)<br/>

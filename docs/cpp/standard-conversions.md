@@ -1,12 +1,12 @@
 ---
-title: "Standart dönüşümler | Microsoft Docs"
-ms.custom: 
+title: Standart dönüşümler | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324fa54362098e2b7ffae6fdf368bf590846f9c1
-ms.sourcegitcommit: 9239c52c05e5cd19b6a72005372179587a47a8e4
+ms.openlocfilehash: bdb7477d0ea07803bf2219118e1fb530a889118c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 C++ dili temel türleri arasında dönüştürmeler tanımlar. İşaretçi, başvuru, dönüştürmelerde de tanımlar ve işaretçi-üye türetilmiş tür. Bu dönüşümleri "standart dönüşümler." olarak adlandırılır (Türleri, standart türler ve türetilmiş türler hakkında daha fazla bilgi için bkz: [türleri](http://msdn.microsoft.com/en-us/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
@@ -81,11 +81,11 @@ long_num2 = int_num * long_num2;
   
  Değer korumalı yükseltmeler ve işaretli durumu koruyan yükseltmeler normalde aynı sonuçları verir. Ancak, yükseltilen nesne aşağıdakilerden biri ise farklı sonuçlar üretebilirler:  
   
--   Bir işleneni  **/** , `%`, `/=`, `%=`,  **<** ,  **\< =** ,  **>** , veya **>=**  
+-   Bir işleneni **/**, `%`, `/=`, `%=`, **<**, **\< =**, **>**, veya **>=**  
   
      Bu işleçler sonucu belirlemek için işareti kullanırlar. Bu nedenle, değer korumalı ve işaret korumalı yükseltmeler bu işleçlere uygulandığında farklı sonuçlar verir.  
   
--   Sol işleneni  **>>**  veya **>>=**  
+-   Sol işleneni **>>** veya **>>=**  
   
      Bu işleçler, kaydırma işlemi yapılırken işaretli ve işaretsiz miktarları farklı şekilde ele alırlar. İşaretli miktarlar için, bir miktarı sağa kaydırmak işaret bitinin boşaltılmış bit konumlarına dağıtılmasına neden olur. İşaretsiz miktarlar için, boşaltılmış bit konumları sıfırla dolguludur.  
   
@@ -120,8 +120,7 @@ int main()
   
  İşaretsiz integral türlerindeki nesneler, ilgili işaretli türlere dönüştürülebilir. Ancak böyle bir dönüştürme, işaretsiz nesnenin değeri işaretli tür tarafından gösterilebilen aralığın dışındaysa aşağıdaki örnekte gösterildiği gibi verilerin yanlış yorumlanmasına neden olabilir:  
   
-```  
-  
+```cpp
 #include <iostream>  
   
 using namespace std;  
@@ -142,11 +141,11 @@ int main()
   
  Kayan türden bir nesne daha az kesin bir türe de dönüştürülebilir (o tür tarafından gösterilebilen bir aralıkta ise). (Bkz [kayan sınırları](../cpp/floating-limits.md) türleri kayan aralıkları için.) Özgün değer tam olarak gösterilebiliyorsa, bir sonraki daha yüksek veya daha düşük gösterilebilir değere dönüştürülebilir. Böyle bir değer yoksa, sonuç tanımsızdır. Aşağıdaki örnek göz önünde bulundurun:  
   
-```  
+```cpp
 cout << (float)1E300 << endl;  
 ```  
   
- Türe göre gösterilebilir maksimum değer **float** 3.402823466E38 olan — çok daha küçük bir sayı 1E300 daha. Bu nedenle, sayı sonsuza dönüştürülür ve sonuç &#1;INF olur.  
+ Türe göre gösterilebilir maksimum değer **float** 3.402823466E38 olan — çok daha küçük bir sayı 1E300 daha. Bu nedenle, sayı sonsuza kadar dönüştürülür ve "INF" sonucudur.  
   
 ## <a name="conversions-between-integral-and-floating-point-types"></a>Tam sayı ve kayan nokta türleri arasında dönüştürmeler  
  Belirli ifadeler, kayan türde nesneleri integral türlerine dönüştürebilirler veya tam tersi olabilir. İntegral türündeki bir nesne kayan bir türe dönüştürüldüğünde ve orijinal değeri tam olarak temsil edilemediğinde, sonuç ya bir sonraki daha yüksek ya da daha düşük temsil edilebilir değerdir.  

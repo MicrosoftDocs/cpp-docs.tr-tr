@@ -1,12 +1,12 @@
 ---
-title: "chi_squared_distribution sınıfı | Microsoft Docs"
-ms.custom: 
+title: chi_squared_distribution sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - random/std::chi_squared_distribution
@@ -32,256 +32,260 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-caps.latest.revision: 
+caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34c474df717b255a5b8774602cd775c236dfb892
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: e4690b3c8ea98d009abb0d7e380833e600137056
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
-Bir kikare dağılımı oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-template<class RealType = double>  
-class chi_squared_distribution {
-public:    
-    // types 
-    typedef RealType result_type;    
-    struct param_type;  
 
-    // constructor and reset functions 
+Bir kikare dağılımı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<class RealType = double>
+class chi_squared_distribution {
+public:
+    // types
+    typedef RealType result_type;
+    struct param_type;
+
+    // constructor and reset functions
     explicit chi_squared_distribution(RealType n = 1);
     explicit chi_squared_distribution(const param_type& parm);
-    void reset();  
+    void reset();
 
-    // generating functions 
-    template <class URNG>  
+    // generating functions
+    template <class URNG>
     result_type operator()(URNG& gen);
     template <class URNG>
     result_type operator()(URNG& gen, const param_type& parm);
-    
-    // property functions 
+
+    // property functions
     RealType n() const;
     param_type param() const;
     void param(const param_type& parm);
     result_type min() const;
     result_type max() const;
 };
-```  
-#### <a name="parameters"></a>Parametreler  
-*RealType*  
-Kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).  
-  
-*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
-Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` göre Chi-Squared dağıtım sağlanırsa, dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.  
-  
-||||  
-|-|-|-|  
-|[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|  
-|`chi_squared_distribution::operator()`||[param_type](#param_type)|  
-  
-Özellik işlevi `n()` depolanan dağıtım parametresinin değeri döndürür `n`.  
-  
-Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.  
+```
 
-`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.  
-  
-`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.  
-  
+### <a name="parameters"></a>Parametreler
+
+*RealType* kayan noktalı bir sonuç türü, varsayılan olarak `double`. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+
+*URNG* Tekdüzen rastgele sayı oluşturucu altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Kayan nokta değerleri, bir kullanıcı tarafından belirtilen üreten bir dağıtım şablonu sınıf tanımlar türü veya türü `double` göre Chi-Squared dağıtım sağlanırsa, dağıtılmış. Aşağıdaki tabloda ilgili makalelerin bağlantısı için tek tek üyeleri.
+
+||||
+|-|-|-|
+|[chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|`chi_squared_distribution::n`|`chi_squared_distribution::param`|
+|`chi_squared_distribution::operator()`||[param_type](#param_type)|
+
+Özellik işlevi `n()` depolanan dağıtım parametresinin değeri döndürür `n`.
+
+Özellik üyesi `param()` ayarlar veya döndürür `param_type` depolanan dağıtım parametresi paket.
+
+`min()` Ve `max()` üye işlevleri en küçük olası sonuç ve olası en büyük sonuç sırasıyla döndürür.
+
+`reset()` Üye işlevi herhangi bir önbelleğe alınan değeri atar böylece sonraki çağrı sonucunu `operator()` çağırmadan önce altyapısından alınan değerlere bağlı değildir.
+
 `operator()` Üye işlevleri URNG motoru, geçerli parametre paket veya belirtilen parametre paket göre sonraki oluşturulan değeri döndürür.
-  
-Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).  
-  
-Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [Chi-Squared dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400528).  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// compile with: /EHsc /W4  
-#include <random>   
-#include <iostream>  
-#include <iomanip>  
-#include <string>  
-#include <map>  
-  
-void test(const double n, const int s) {  
-  
-    // uncomment to use a non-deterministic generator  
-    //    std::random_device gen;  
-    std::mt19937 gen(1701);  
-  
-    std::chi_squared_distribution<> distr(n);  
-  
-    std::cout << std::endl;  
-    std::cout << "min() == " << distr.min() << std::endl;  
-    std::cout << "max() == " << distr.max() << std::endl;  
-    std::cout << "n() == " << std::fixed << std::setw(11) << std::setprecision(10) << distr.n() << std::endl;  
-  
-    // generate the distribution as a histogram  
-    std::map<double, int> histogram;  
-    for (int i = 0; i < s; ++i) {  
-        ++histogram[distr(gen)];  
-    }  
-  
-    // print results  
-    std::cout << "Distribution for " << s << " samples:" << std::endl;  
-    int counter = 0;  
-    for (const auto& elem : histogram) {  
-        std::cout << std::fixed << std::setw(11) << ++counter << ": "  
-            << std::setw(14) << std::setprecision(10) << elem.first << std::endl;  
-    }  
-    std::cout << std::endl;  
-}  
-  
-int main()  
-{  
-    double n_dist = 0.5;  
-    int samples = 10;  
-  
-    std::cout << "Use CTRL-Z to bypass data entry and run using default values." << std::endl;  
-    std::cout << "Enter a floating point value for the \'n\' distribution parameter (must be greater than zero): ";  
-    std::cin >> n_dist;  
-    std::cout << "Enter an integer value for the sample count: ";  
-    std::cin >> samples;  
-  
-    test(n_dist, samples);  
-}  
-```  
-  
-İlk çalıştırın:  
-  
-```Output  
-Use CTRL-Z to bypass data entry and run using default values.  
-Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .5  
-Enter an integer value for the sample count: 10  
- 
-min() == 4.94066e-324  
-max() == 1.79769e+308  
-n() == 0.5000000000  
-Distribution for 10 samples:  
-    1: 0.0007625595  
-    2: 0.0016895062  
-    3: 0.0058683478  
-    4: 0.0189647765  
-    5: 0.0556619371  
-    6: 0.1448191353  
-    7: 0.1448245325  
-    8: 0.1903494379  
-    9: 0.9267525768  
-    10: 1.5429743723  
-```  
-  
-İkinci çalıştırın:  
-  
-```Output  
-Use CTRL-Z to bypass data entry and run using default values.  
-Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .3333  
-Enter an integer value for the sample count: 10  
- 
-min() == 4.94066e-324  
-max() == 1.79769e+308  
-n() == 0.3333000000  
-Distribution for 10 samples:  
-    1: 0.0000148725  
-    2: 0.0000490528  
-    3: 0.0003175988  
-    4: 0.0018454535  
-    5: 0.0092808795  
-    6: 0.0389540735  
-    7: 0.0389562514  
-    8: 0.0587028468  
-    9: 0.6183666639  
-    10: 1.3552086624  
-```  
-  
-Üçüncü çalıştırın:  
-  
-```Output  
-Use CTRL-Z to bypass data entry and run using default values.  
-Enter a floating point value for the 'n' distribution parameter (must be greater than zero): 1000  
-Enter an integer value for the sample count: 10  
- 
-min() == 4.94066e-324  
-max() == 1.79769e+308  
-n() == 1000.0000000000  
-Distribution for 10 samples:  
-    1: 958.5284624473  
-    2: 958.7882787809  
-    3: 963.0667684792  
-    4: 987.9638091514  
-    5: 1016.2433493745  
-    6: 1021.9337111110  
-    7: 1021.9723046240  
-    8: 1035.7622110505  
-    9: 1043.8725156645  
-    10: 1054.7051509381  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-**Başlık:** \<rastgele >  
-  
-**Namespace:** std  
-  
-##  <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution  
-Dağıtım oluşturur.  
-  
-```  
-explicit chi_squared_distribution(result_type n = 1.0);  
+
+Dağıtım sınıflar ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
+
+Kikare dağılımı hakkında ayrıntılı bilgi için Wolfram MathWorld makalesine bakın [Chi-Squared dağıtım](http://go.microsoft.com/fwlink/p/?linkid=400528).
+
+## <a name="example"></a>Örnek
+
+```cpp
+// compile with: /EHsc /W4
+#include <random>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <map>
+
+void test(const double n, const int s) {
+
+    // uncomment to use a non-deterministic generator
+    //    std::random_device gen;
+    std::mt19937 gen(1701);
+
+    std::chi_squared_distribution<> distr(n);
+
+    std::cout << std::endl;
+    std::cout << "min() == " << distr.min() << std::endl;
+    std::cout << "max() == " << distr.max() << std::endl;
+    std::cout << "n() == " << std::fixed << std::setw(11) << std::setprecision(10) << distr.n() << std::endl;
+
+    // generate the distribution as a histogram
+    std::map<double, int> histogram;
+    for (int i = 0; i < s; ++i) {
+        ++histogram[distr(gen)];
+    }
+
+    // print results
+    std::cout << "Distribution for " << s << " samples:" << std::endl;
+    int counter = 0;
+    for (const auto& elem : histogram) {
+        std::cout << std::fixed << std::setw(11) << ++counter << ": "
+            << std::setw(14) << std::setprecision(10) << elem.first << std::endl;
+    }
+    std::cout << std::endl;
+}
+
+int main()
+{
+    double n_dist = 0.5;
+    int samples = 10;
+
+    std::cout << "Use CTRL-Z to bypass data entry and run using default values." << std::endl;
+    std::cout << "Enter a floating point value for the \'n\' distribution parameter (must be greater than zero): ";
+    std::cin >> n_dist;
+    std::cout << "Enter an integer value for the sample count: ";
+    std::cin >> samples;
+
+    test(n_dist, samples);
+}
+```
+
+İlk çalıştırın:
+
+```Output
+Use CTRL-Z to bypass data entry and run using default values.
+Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .5
+Enter an integer value for the sample count: 10
+
+min() == 4.94066e-324
+max() == 1.79769e+308
+n() == 0.5000000000
+Distribution for 10 samples:
+    1: 0.0007625595
+    2: 0.0016895062
+    3: 0.0058683478
+    4: 0.0189647765
+    5: 0.0556619371
+    6: 0.1448191353
+    7: 0.1448245325
+    8: 0.1903494379
+    9: 0.9267525768
+    10: 1.5429743723
+```
+
+İkinci çalıştırın:
+
+```Output
+Use CTRL-Z to bypass data entry and run using default values.
+Enter a floating point value for the 'n' distribution parameter (must be greater than zero): .3333
+Enter an integer value for the sample count: 10
+
+min() == 4.94066e-324
+max() == 1.79769e+308
+n() == 0.3333000000
+Distribution for 10 samples:
+    1: 0.0000148725
+    2: 0.0000490528
+    3: 0.0003175988
+    4: 0.0018454535
+    5: 0.0092808795
+    6: 0.0389540735
+    7: 0.0389562514
+    8: 0.0587028468
+    9: 0.6183666639
+    10: 1.3552086624
+```
+
+Üçüncü çalıştırın:
+
+```Output
+Use CTRL-Z to bypass data entry and run using default values.
+Enter a floating point value for the 'n' distribution parameter (must be greater than zero): 1000
+Enter an integer value for the sample count: 10
+
+min() == 4.94066e-324
+max() == 1.79769e+308
+n() == 1000.0000000000
+Distribution for 10 samples:
+    1: 958.5284624473
+    2: 958.7882787809
+    3: 963.0667684792
+    4: 987.9638091514
+    5: 1016.2433493745
+    6: 1021.9337111110
+    7: 1021.9723046240
+    8: 1035.7622110505
+    9: 1043.8725156645
+    10: 1054.7051509381
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<rastgele >
+
+**Namespace:** std
+
+## <a name="chi_squared_distribution"></a>  chi_squared_distribution::chi_squared_distribution
+
+Dağıtım oluşturur.
+
+```cpp
+explicit chi_squared_distribution(result_type n = 1.0);
 explicit chi_squared_distribution(const param_type& parm);
-```  
-  
-### <a name="parameters"></a>Parametreler  
-*n*  
-`n` Dağıtım parametresi.  
-  
-*parametre*  
- Dağıtım oluşturmak için kullanılan parametre yapısı.  
-  
-### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0.0 < n`  
-  
-İlk Oluşturucusu bir nesne oluşturur, depolanan `n` değeri tutan değeri  *n* .  
-  
-İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.  
-  
-##  <a name="param_type"></a>  chi_squared_distribution::param_type  
-Dağıtım parametreleri depolar.  
-  
-```cpp    
-struct param_type {  
-   typedef chi_squared_distribution<result_type> distribution_type;  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*n* `n` dağıtım parametresi.
+
+*parametre* dağıtım oluşturmak için kullanılan parametre yapısı.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Önkoşul:** `0.0 < n`
+
+İlk Oluşturucusu bir nesne oluşturur, depolanan `n` değeri tutan değeri *n*.
+
+İkinci oluşturucu saklı parametreleri başlatılan bir nesne oluşturur *parametresi*. Elde edilir ve geçerli parametrelerinin varolan bir dağıtımına aranarak `param()` üye işlevi.
+
+## <a name="param_type"></a>  chi_squared_distribution::param_type
+
+Dağıtım parametreleri depolar.
+
+```cpp
+struct param_type {
+   typedef chi_squared_distribution<result_type> distribution_type;
    param_type(result_type n = 1.0);
    result_type n() const;
-   
+
    bool operator==(const param_type& right) const;
    bool operator!=(const param_type& right) const;
-   };  
-```  
+   };
+```
 
-### <a name="parameters"></a>Parametreler  
-*n*  
-`n` Dağıtım parametresi.  
-  
-*Sağ*  
-`param_type` İçin karşılaştırılacak nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
-**Önkoşul:** `0.0 < n`  
-  
-Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [\<rastgele >](../standard-library/random.md)
+### <a name="parameters"></a>Parametreler
 
+*n* `n` dağıtım parametresi.
 
+*sağ* `param_type` için karşılaştırılacak nesne.
 
+### <a name="remarks"></a>Açıklamalar
+
+**Önkoşul:** `0.0 < n`
+
+Bu yapı dağıtım 's sınıfı oluşturucuya oluşturmada, en çok geçirilebilir `param()` var olan bir dağıtım ve için saklı parametrelerini ayarlamak için üye işlevi `operator()` saklı parametreleri yerine kullanılacak.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[\<rastgele >](../standard-library/random.md)<br/>

@@ -1,12 +1,12 @@
 ---
 title: fwrite | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fwrite
@@ -31,69 +31,75 @@ helpviewer_keywords:
 - streams, writing data to
 - fwrite function
 ms.assetid: 7afacf3a-72d7-4a50-ba2e-bea1ab9f4124
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73b5328ce6851ceb61ad3260760e95cd329ee064
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3b91ad6efe0573bc469e0752ed27978b12018ee7
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fwrite"></a>fwrite
-Verileri bir akışa yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-size_t fwrite(  
-   const void *buffer,  
-   size_t size,  
-   size_t count,  
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `buffer`  
- Yazılacak veriler işaretçi.  
-  
- `size`  
- Bayt olarak öğe boyutu.  
-  
- `count`  
- Yazılacak öğe maksimum sayısı.  
-  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `fwrite` tam sayı döndürür gerçekte yazılan öğeleri, hangi olabilir değerinden `count` bir hata oluşursa. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemiyor. Her iki `stream` veya `buffer` null işaretçi veya tek sayıda yazılacak bayt Unicode modda belirtilirse, işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `fwrite` İşlevi Yazar kadar `count` öğeleri, `size` uzunluğu her gelen `buffer` çıktısına `stream`. İle ilişkili dosya işaretçisini `stream` (varsa) tarafından gerçekten yazılan bayt sayısı artar. Varsa `stream` açıldığında metin modunda bir satır başı ile - satır besleme çifti her satır besleme değiştirilir. Değiştirme dönüş değeri üzerinde etkisi yoktur.  
-  
- Zaman `stream` Unicode çeviri modunda açılmış — Örneğin, varsa `stream` çağırarak açılan `fopen` ve içeren bir mod parametresini kullanarak `ccs=UNICODE`, `ccs=UTF-16LE`, veya `ccs=UTF-8`, veya bir Unicode modu değiştirilirse Çeviri modu kullanarak `_setmode` ve içeren bir mod parametresi `_O_WTEXT`, `_O_U16TEXT`, veya `_O_U8TEXT`—`buffer` bir dizi için bir işaretçi olarak yorumlanır `wchar_t` UTF-16 veri içeren. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.  
-  
- Bu işlev çağıran iş parçacığı kilitler, iş parçacığı demektir. Kilitleme olmayan bir sürümü için bkz: `_fwrite_nolock`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fwrite`|\<stdio.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
- Örneğin bkz [fread](../../c-runtime-library/reference/fread.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [_setmode](../../c-runtime-library/reference/setmode.md)   
- [fread](../../c-runtime-library/reference/fread.md)   
- [_fwrite_nolock](../../c-runtime-library/reference/fwrite-nolock.md)   
- [_write](../../c-runtime-library/reference/write.md)
+
+Verileri bir akışa yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+size_t fwrite(
+   const void *buffer,
+   size_t size,
+   size_t count,
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Arabellek*<br/>
+Yazılacak veriler işaretçi.
+
+*Boyutu*<br/>
+Bayt olarak öğe boyutu.
+
+*Sayısı*<br/>
+Yazılacak öğe maksimum sayısı.
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**fwrite** tam sayısını döndürür gerçekte yazılan öğeleri, hangi olabilir değerinden *sayısı* bir hata oluşursa. Ayrıca, bir hata oluşursa, dosya konumu göstergesi belirlenemiyor. Her iki *akış* veya *arabellek* null işaretçi veya tek sayıda yazılacak bayt Unicode modda belirtilirse, işlevi geçersiz parametre işleyicisi açıklandığı gibi çağırır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve 0 döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Fwrite** işlevi Yazar kadar *sayısı* öğeleri, *boyutu* uzunluğu her gelen *arabellek* çıktısına *akış*. İle ilişkili dosya işaretçisini *akış* (varsa) tarafından gerçekten yazılan bayt sayısı artar. Varsa *akış* açıldığında metin modunda bir satır başı ile - satır besleme çifti her satır besleme değiştirilir. Değiştirme dönüş değeri üzerinde etkisi yoktur.
+
+Zaman *akış* Unicode çeviri modunda açılmış — Örneğin, varsa *akış* çağırarak açılan **fopen** ve içeren bir mod parametresini kullanarak **ccs = UNICODE**, **ccs UTF-16LE =**, veya **ccs = UTF-8**, veya modunu kullanarak bir Unicode çeviri modu değiştirilirse **_setmode** ve modu içeren parametre **_O_WTEXT**, **_O_U16TEXT**, veya **_O_U8TEXT**—*arabellek* gösteren bir işaretçi olarak yorumlanır bir dizi **wchar_t** UTF-16 verileri içerir. Bu modda tek sayıda bayt yazma girişimi bir parametre doğrulama hatasına neden olur.
+
+Bu işlev çağıran iş parçacığı kilitler, iş parçacığı demektir. Kilitleme olmayan bir sürümü için bkz: **_fwrite_nolock**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fwrite**|\<stdio.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Örneğin bkz [fread](fread.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[_setmode](setmode.md)<br/>
+[fread](fread.md)<br/>
+[_fwrite_nolock](fwrite-nolock.md)<br/>
+[_write](write.md)<br/>

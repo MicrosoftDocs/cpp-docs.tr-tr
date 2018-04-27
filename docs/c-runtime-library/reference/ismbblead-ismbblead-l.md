@@ -1,12 +1,12 @@
 ---
 title: _ismbblead, _ismbblead_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _ismbblead_l
@@ -41,65 +41,70 @@ helpviewer_keywords:
 - ismbblead_l function
 - _istlead function
 ms.assetid: 2abc6f75-ed5c-472e-bfd0-e905a1835ccf
-caps.latest.revision: 
+caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4979e40aedc763ff9a058277a4c549fa76bdec0
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7833abbe4a13a2c5f012926ffcca6befdc8b52ff
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="ismbblead-ismbbleadl"></a>_ismbblead, _ismbblead_l
-Birden çok baytlı karakter baytı olup olmadığını belirlemek için bir karakter sınar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _ismbblead(  
-   unsigned int c   
-);  
-int _ismbblead_l(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Sınanacak tamsayı.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Sıfır olmayan bir değer döndürür tamsayı `c` birden çok baytlı karakter ilk olarak bayttır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Birden çok baytlı karakterler sondaki bayt tarafından izlenen baytı oluşur. Sağlama bayt belirli bir karakter kümesi için belirli bir aralıkta olma yoluyla ayırt edilir. Örneğin, kod sayfası 932 yalnızca, sağlama bayt cinsinden 0x81 - 0x9F ve 0xE0 - 0xFC aralığı.  
-  
- `_ismbblead` Geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır. `_ismbblead_l` Bunun yerine geçirilen yerel ayar kullanır ancak bu aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_istlead`|Her zaman false döndürür|`_ismbblead`|Her zaman false döndürür|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
-|-------------|---------------------|---------------------|  
-|`_ismbblead`|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|  
-|`_ismbblead_l`|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|  
-  
- \* İçin test durumları için bildirim sabitleri.  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)   
- [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)
+
+Birden çok baytlı karakter baytı olup olmadığını belirlemek için bir karakter sınar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _ismbblead(
+   unsigned int c
+);
+int _ismbblead_l(
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Sınanacak tamsayı.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Sıfır olmayan bir değer döndürür tamsayı *c* birden çok baytlı karakter ilk olarak bayttır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Birden çok baytlı karakterler sondaki bayt tarafından izlenen baytı oluşur. Sağlama bayt belirli bir karakter kümesi için belirli bir aralıkta olma yoluyla ayırt edilir. Örneğin, kod sayfası 932 yalnızca, sağlama bayt cinsinden 0x81 - 0x9F ve 0xE0 - 0xFC aralığı.
+
+**_ismbblead** geçerli yerel ayar için yerel ayara bağımlı davranışı kullanır. **_ismbblead_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_istlead**|Her zaman false döndürür|**_ismbblead**|Her zaman false döndürür|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|-------------|---------------------|---------------------|
+|**_ismbblead**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
+|**_ismbblead_l**|\<Mbctype.h > veya \<mbstring.h >|\<CType.h >, * \<lımıts.h >, \<stdlib.h >|
+
+\* İçin test durumları için bildirim sabitleri.
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)<br/>

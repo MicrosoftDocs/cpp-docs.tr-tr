@@ -1,12 +1,12 @@
 ---
 title: _open_osfhandle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _open_osfhandle
@@ -33,17 +33,17 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-caps.latest.revision: 
+caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34f60a327f3bc4c6a6ce1beb6d7b399faa393a70
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 270b17ce72ece85687c23678908e10bc1dcc3764
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -60,44 +60,40 @@ int _open_osfhandle (
 
 ### <a name="parameters"></a>Parametreler
 
-*osfhandle*  
+*osfhandle*<br/>
 İşletim sistemi dosya işleci.
 
-*Bayrakları*  
+*Bayrakları*<br/>
 İzin verilen işlem türleri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, `_open_osfhandle` C çalışma zamanı dosya tanımlayıcısı döndürür. Aksi takdirde, -1 döndürür.
+Başarılı olursa, **_open_osfhandle** C çalışma zamanı dosya tanımlayıcısı döndürür. Aksi takdirde, -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`_open_osfhandle` İşlevi C çalışma zamanı dosya tanımlayıcısı ayırır ve tarafından belirtilen işletim sistemi dosya işleci ile ilişkilendirir *osfhandle*. *Bayrakları* bağımsız değişkeni olan bir veya daha fazla Fcntl.h içinde tanımlanan bildirim sabitleri biçimlendirilmiş bir tamsayı ifade. İki veya daha fazla bildirim sabitleri forma kullanılan zaman *bayrakları* bağımsız değişkeni, sabitleri bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ).
+**_Open_osfhandle** işlevi C çalışma zamanı dosya tanımlayıcısı ayırır ve tarafından belirtilen işletim sistemi dosya işleci ile ilişkilendirir *osfhandle*. *Bayrakları* bağımsız değişkeni olan bir veya daha fazla Fcntl.h içinde tanımlanan bildirim sabitleri biçimlendirilmiş bir tamsayı ifade. İki veya daha fazla bildirim sabitleri forma kullanılan zaman *bayrakları* bağımsız değişkeni, sabitleri bit düzeyinde OR işleci ile birleştirilir ( **&#124;** ).
 
 Fcntl.h aşağıdaki bildirim sabitleri tanımlar:
 
-**\_O\_EKLEME**  
-Dosya işaretçisini her yazma işleminden önce dosyanın sonuna yerleştirir.
+**\_O\_APPEND** dosya işaretçisini her yazma işleminden önce dosyanın sonuna yerleştirir.
 
-**\_O\_RDONLY**  
-Yalnızca okuma dosyasını açar.
+**\_O\_RDONLY** yalnızca okumak için dosyayı açar.
 
-**\_O\_TEXT**  
-Dosya (çevrilmiş) metin modunda açılır.
+**\_O\_metin** dosya (çevrilmiş) metin modunda açılır.
 
-**\_O\_WTEXT**  
-Dosya Unicode (çevrilmiş UTF-16) modunda açılır.
+**\_O\_WTEXT** dosya Unicode (çevrilmiş UTF-16) modunda açılır.
 
-İle açılmış bir dosyada kapatmak için `_open_osfhandle`, çağrı [ \_kapatmak](../../c-runtime-library/reference/close.md). Temel işletim sistemi dosya işleci ayrıca bir çağrı tarafından kapatılan `_close`, Win32 işlevi çağırmak gerekli değildir `CloseHandle` özgün tutamacı. Dosya tanımlayıcısı aitse bir `FILE *` stream, ardından çağırma [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) üzerindeki `FILE *` akışı da kapatır dosya tanımlayıcısı ve temel işleyici. Bu durumda, çağırmayın `_close` üzerinde dosya tanımlayıcısı.
+İle açılmış bir dosyada kapatmak için **_open_osfhandle**, çağrı [ \_kapatmak](close.md). Temel işletim sistemi dosya işleci ayrıca bir çağrı tarafından kapatılan **_close**, Win32 işlevi çağırmak gerekli değildir **CloseHandle** özgün tutamacı. Dosya tanımlayıcısı aitse bir **dosya &#42;**  stream, ardından çağırma [fclose](fclose-fcloseall.md) üzerindeki **dosya &#42;**  akış de her iki dosya tanımlayıcısı kapatır ve temel alınan işleci. Bu durumda, çağırmayın **_close** üzerinde dosya tanımlayıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`_open_osfhandle`|\<io.h >|
+|**_open_osfhandle**|\<io.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)  
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>

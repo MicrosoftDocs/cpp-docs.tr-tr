@@ -1,12 +1,12 @@
 ---
 title: _get_tzname | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _get_tzname
@@ -33,85 +33,90 @@ helpviewer_keywords:
 - time zones
 - get_tzname function
 ms.assetid: df0065ff-095f-4237-832c-2fe9ab913875
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a44accc317bf387fcdd3ab7879020b13fba6858
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 2a3a9fc2b90ac9e52a78613bc8ccfcd24b9acb56
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="gettzname"></a>_get_tzname
-Saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) karakteri dize gösterimini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t _get_tzname(  
-    size_t* pReturnValue,  
-    char* timeZoneName,  
-    size_t sizeInBytes,  
-    int index      
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `pReturnValue`  
- Dize uzunluğu `timeZoneName` NULL Sonlandırıcı dahil olmak üzere.  
-  
- [out] `timeZoneName`  
- Bağlı olarak, saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) gösterimi için bir karakter dizesi adresini `index`.  
-  
- [in] `sizeInBytes`  
- Boyutunu `timeZoneName` karakter bayt dizesi.  
-  
- [in] `index`  
- Dizini almak için iki saat dilimi adlarından biri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, sıfır Aksi halde bir `errno` değeri yazın.  
-  
- Her iki `timeZoneName` olan `NULL`, veya `sizeInBytes` sıfır veya sıfır (ancak ikisi birden değil),'dan küçük bir geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve döndürür `EINVAL`.  
-  
-### <a name="error-conditions"></a>Hata koşulları  
-  
-|`pReturnValue`|`timeZoneName`|`sizeInBytes`|`index`|Dönüş değeri|İçeriği `timeZoneName`|  
-|--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|  
-|TZ adının boyutu|`NULL`|0|0 veya 1|0|değiştirilmedi|  
-|TZ adının boyutu|tüm|> 0|0 veya 1|0|TZ adı|  
-|değiştirilmedi|`NULL`|> 0|tüm|`EINVAL`|değiştirilmedi|  
-|değiştirilmedi|tüm|sıfır|tüm|`EINVAL`|değiştirilmedi|  
-|değiştirilmedi|tüm|> 0|> 1|`EINVAL`|değiştirilmedi|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_get_tzname` İşlevi alır karakteri dize gösterimini saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) adresini içine `timeZoneName` dizesinde boyutunu yanı sıra dizin değerine bağlı olarak `pReturnValue`. Varsa `timeZoneName` olan `NULL` ve `sizeInBytes` sıfır, yalnızca dize bayt bölgesinde döndürülür ya da zaman boyutu olduğu `pReturnValue`. Dizin değerleriyle standart saat dilimi için 0 veya 1 gün ışığından yararlanma standart saat dilimine yönelik olmalıdır; dizinin herhangi bir değere sahip belirlenmemiş sonuçları.  
-  
-### <a name="index-values"></a>Dizini değerleri  
-  
-|`index`|İçeriği `timeZoneName`|`timeZoneName` Varsayılan değer|  
-|-------------|--------------------------------|----------------------------------|  
-|0|Saat dilimi adı|"PST"|  
-|1.|Gün ışığından yararlanma standart saat dilimi adı|"PDT"|  
-|1 > veya < 0|`errno` ayarlamak `EINVAL`|değiştirilmedi|  
-  
- Değerleri açıkça çalışma zamanı sırasında değiştirilen sürece, varsayılan "PST" ve "Saati" sırasıyla değerlerdir.  Bu karakter dizileri boyutlarını tarafından yönetilir `TZNAME_MAX` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_get_tzname`|\<time.h >|  
-  
- Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Zaman Yönetimi](../../c-runtime-library/time-management.md)   
- [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)   
- [_get_daylight](../../c-runtime-library/reference/get-daylight.md)   
- [_get_dstbias](../../c-runtime-library/reference/get-dstbias.md)   
- [_get_timezone](../../c-runtime-library/reference/get-timezone.md)   
- [TZNAME_MAX](../../c-runtime-library/tzname-max.md)
+
+Saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) karakteri dize gösterimini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t _get_tzname(
+    size_t* pReturnValue,
+    char* timeZoneName,
+    size_t sizeInBytes,
+    int index
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pReturnValue*<br/>
+Dize uzunluğu *saatdilimi adı* NULL Sonlandırıcı dahil olmak üzere.
+
+*saatdilimi adı*<br/>
+Bağlı olarak, saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) gösterimi için bir karakter dizesi adresini *dizin*.
+
+*sizeInBytes*<br/>
+Boyutunu *saatdilimi adı* karakter bayt dizesi.
+
+*Dizin*<br/>
+Dizini almak için iki saat dilimi adlarından biri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, sıfır Aksi halde bir **errno** değeri yazın.
+
+Her iki *saatdilimi adı* olan **NULL**, veya *sizeInBytes* sıfır veya sıfır (ancak ikisi birden değil),'dan küçük bir geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür **EINVAL**.
+
+### <a name="error-conditions"></a>Hata koşulları
+
+|*pReturnValue*|*saatdilimi adı*|*sizeInBytes*|*Dizin*|Dönüş değeri|İçeriği *saatdilimi adı*|
+|--------------------|--------------------|-------------------|-------------|------------------|--------------------------------|
+|TZ adının boyutu|**NULL**|0|0 veya 1|0|değiştirilmedi|
+|TZ adının boyutu|tüm|> 0|0 veya 1|0|TZ adı|
+|değiştirilmedi|**NULL**|> 0|tüm|**EINVAL**|değiştirilmedi|
+|değiştirilmedi|tüm|sıfır|tüm|**EINVAL**|değiştirilmedi|
+|değiştirilmedi|tüm|> 0|> 1|**EINVAL**|değiştirilmedi|
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Get_tzname** işlevi alır karakteri dize gösterimini saat dilimi adı veya gün ışığından yararlanma standart saat dilimi adının (DST) adresini içine *saatdilimi adı* dizini bağlı olarak değer, dize boyutu birlikte *pReturnValue*. Varsa *saatdilimi adı* olan **NULL** ve *sizeInBytes* sıfır, yalnızca dize bayt bölgesinde döndürülür ya da zaman boyutu olduğu *pReturnValue*. Dizin değerleriyle standart saat dilimi için 0 veya 1 gün ışığından yararlanma standart saat dilimine yönelik olmalıdır; dizinin herhangi bir değere sahip belirlenmemiş sonuçları.
+
+### <a name="index-values"></a>Dizini değerleri
+
+|*Dizin*|İçeriği *saatdilimi adı*|*saatdilimi adı* varsayılan değer|
+|-------------|--------------------------------|----------------------------------|
+|0|Saat dilimi adı|"PST"|
+|1.|Gün ışığından yararlanma standart saat dilimi adı|"SAATİ"|
+|1 > veya < 0|**errno** kümesine **EINVAL**|değiştirilmedi|
+
+Değerleri açıkça çalışma zamanı sırasında değiştirilen sürece, varsayılan "PST" ve "Saati" sırasıyla değerlerdir.  Bu karakter dizileri boyutlarını tarafından yönetilir **TZNAME_MAX** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_get_tzname**|\<time.h >|
+
+Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Zaman Yönetimi](../../c-runtime-library/time-management.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[_get_daylight](get-daylight.md)<br/>
+[_get_dstbias](get-dstbias.md)<br/>
+[_get_timezone](get-timezone.md)<br/>
+[TZNAME_MAX](../../c-runtime-library/tzname-max.md)<br/>

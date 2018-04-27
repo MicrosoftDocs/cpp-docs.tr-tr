@@ -1,12 +1,12 @@
 ---
 title: fseek, _fseeki64 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _fseeki64
@@ -36,129 +36,131 @@ helpviewer_keywords:
 - file pointers [C++]
 - seek file pointers
 ms.assetid: f6bb1f8b-891c-426e-9e14-0e7e5c62df70
-caps.latest.revision: 
+caps.latest.revision: 23
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dd4c4e6550946bafdaf0ad8f521e1e942ae04c1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 266eb1589c97b177057e6a72874261c745acb475
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fseek-fseeki64"></a>fseek, _fseeki64
-Dosya işaretçisini belirtilen bir konuma taşır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int fseek(   
-   FILE *stream,  
-   long offset,  
-   int origin   
-);  
-int _fseeki64(   
-   FILE *stream,  
-   __int64 offset,  
-   int origin   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
- `offset`  
- Bayt sayısı `origin`.  
-  
- `origin`  
- Başlangıç konumu.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, `fseek` ve `_fseeki64` 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Cihazlarda aramayı kuramadığı dönüş değeri tanımlanmamıştır. Varsa `stream` null işaretçinin veya `origin` aşağıda açıklanan izin verilen değerlerden biri değil `fseek` ve `_fseeki64` açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi `errno` için `EINVAL` ve -1 döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `fseek` Ve `_fseeki64` taşır (varsa) dosya işaretçisini ilişkili işlevleri `stream` yeni bir konuma `offset` baytlar `origin`. Sonraki işlem akışını yeni konumda gerçekleşir. Güncelleştirme için açık bir akış üzerinde okuma veya yazma sonraki işlemi olabilir. Bağımsız değişken kaynak STDIO içinde tanımlanan sabitlerden biri olması gerekir. Y:  
-  
- `SEEK_CUR`  
- Dosya işaretçisini geçerli konumu.  
-  
- `SEEK_END`  
- Dosya sonu.  
-  
- `SEEK_SET`  
- Dosya başlangıcı.  
-  
- Kullanabileceğiniz `fseek` ve `_fseeki64` işaretçi bir dosyada herhangi bir yere yeniden konumlandırmak için. İşaretçinin dosyanın sonunu aşan konumlandırılmış olabilir. `fseek` ve `_fseeki64` dosya sonu göstergesi temizler ve tüm önceki etkisini geçersiz hale getirir `ungetc` karşı çağırır `stream`.  
-  
- Veri ekleme için bir dosya açıldığında, geçerli dosya konumu değil burada sonraki yazma oluşacak tarafından son g/ç işlemi tarafından belirlenir. G/ç işlemi henüz ekleme için açılan bir dosyada oluştuysa, dosya konumu dosya sayısıdır.  
-  
- Metin modunda açılmış akışlar için `fseek` ve `_fseeki64` kullanımı, satır başı satır besleme çevirileri neden olabileceği için sınırlı `fseek` ve `_fseeki64` beklenmeyen sonuçlar üretmek için. Yalnızca `fseek` ve `_fseeki64` metin modunda açılmış akışları üzerinde çalışmak için garanti işlemleri:  
-  
--   Uzaklığı 0 kaynak değerlerden herhangi birine göre ile aramayı.  
-  
--   Bir uzaklık değeri dosyasıyla başından itibaren aramayı döndürülen çağrısından `ftell` kullanırken `fseek` veya `_ftelli64` kullanırken `_fseeki64`.  
-  
- Ayrıca metin modunda, CTRL + Z giriş üzerinde bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılmış dosyalarında `fopen` ve tüm ilgili yordamlar için CTRL + Z dosyanın sonunda denetleyin ve mümkünse kaldırın. Bu birleşimini kullanarak yapılır, çünkü `fseek` ve `ftell` veya `_fseeki64` ve `_ftelli64`, CTRL + Z ile biter neden olabilecek bir dosyanın içinde taşımak için `fseek` veya `_fseeki64` dosyanın sonuna yakın yanlış bir şekilde davranır.  
-  
- CRT bir bayt sırası işareti (BOM) ile başlayan bir dosyayı açtığında dosya işaretçisini sonra AĞACI konumlandırılır (diğer bir deyişle, dosyanın gerçek içeriği başlangıcında). Gerekirse `fseek` dosyasının başlangıcına kullanmak `ftell` ilk konumunu almak için ve `fseek` ona yerine 0 konumuna.  
-  
- Bu işlev yürütülürken başka bir iş parçacığı kilitler ve bu nedenle iş parçacığı. Kilitleme olmayan bir sürümü için bkz: [_fseek_nolock, _fseeki64_nolock](../../c-runtime-library/reference/fseek-nolock-fseeki64-nolock.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fseek`|\<stdio.h >|  
-|`_fseeki64`|\<stdio.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_fseek.c  
-// This program opens the file FSEEK.OUT and  
-// moves the pointer to the file's beginning.  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   FILE *stream;  
-   char line[81];  
-   int  result;  
-  
-   if ( fopen_s( &stream, "fseek.out", "w+" ) != 0 )  
-   {  
-      printf( "The file fseek.out was not opened\n" );  
-      return -1;  
-   }  
-   fprintf( stream, "The fseek begins here: "  
-                    "This is the file 'fseek.out'.\n" );  
-   result = fseek( stream, 23L, SEEK_SET);  
-   if( result )  
-      perror( "Fseek failed" );  
-   else  
-   {  
-      printf( "File pointer is set to middle of first line.\n" );  
-      fgets( line, 80, stream );  
-      printf( "%s", line );  
-    }  
-   fclose( stream );  
-}  
-```  
-  
-```Output  
-File pointer is set to middle of first line.  
-This is the file 'fseek.out'.  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fopen, _wfopen](../../c-runtime-library/reference/fopen-wfopen.md)   
- [ftell, _ftelli64](../../c-runtime-library/reference/ftell-ftelli64.md)   
- [_lseek, _lseeki64](../../c-runtime-library/reference/lseek-lseeki64.md)   
- [rewind](../../c-runtime-library/reference/rewind.md)
+
+Dosya işaretçisini belirtilen bir konuma taşır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int fseek(
+   FILE *stream,
+   long offset,
+   int origin
+);
+int _fseeki64(
+   FILE *stream,
+   __int64 offset,
+   int origin
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+*uzaklık*<br/>
+Bayt sayısı *kaynak*.
+
+*Kaynak*<br/>
+Başlangıç konumu.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, **fseek** ve **_fseeki64** 0 döndürür. Aksi takdirde, sıfır olmayan bir değer döndürür. Cihazlarda aramayı kuramadığı dönüş değeri tanımlanmamıştır. Varsa *akış* null işaretçinin veya *kaynak* aşağıda açıklanan izin verilen değerlerden biri değil **fseek** ve **_fseeki64** geçersiz çağırma bölümünde açıklandığı gibi parametre işleyicisi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Fseek** ve **_fseeki64** taşır (varsa) dosya işaretçisini ilişkili işlevleri *akış* yeni bir konuma *uzaklık* bayt, kaynağı *kaynak*. Sonraki işlem akışını yeni konumda gerçekleşir. Güncelleştirme için açık bir akış üzerinde okuma veya yazma sonraki işlemi olabilir. Bağımsız değişken *kaynak* STDIO içinde tanımlanan sabitlerden biri olması gerekir. Y:
+
+|Kaynak değeri|Açıklama|
+|-|-|
+**SEEK_CUR**|Dosya işaretçisini geçerli konumu.
+**SEEK_END**|Dosya sonu.
+**SEEK_SET**|Dosya başlangıcı.
+
+Kullanabileceğiniz **fseek** ve **_fseeki64** işaretçi bir dosyada herhangi bir yere yeniden konumlandırmak için. İşaretçinin dosyanın sonunu aşan konumlandırılmış olabilir. **fseek** ve **_fseeki64** dosya sonu göstergesi temizler ve tüm önceki etkisini geçersiz hale getirir [ungetc](ungetc-ungetwc.md) karşı çağırır *akış*.
+
+Veri ekleme için bir dosya açıldığında, geçerli dosya konumu değil burada sonraki yazma oluşacak tarafından son g/ç işlemi tarafından belirlenir. G/ç işlemi henüz ekleme için açılan bir dosyada oluştuysa, dosya konumu dosya sayısıdır.
+
+Metin modunda açılmış akışlar için **fseek** ve **_fseeki64** kullanımı, satır başı satır besleme çevirileri neden olabileceği için sınırlı **fseek** ve **_ fseeki64** beklenmeyen sonuçlar üretmek için. Yalnızca **fseek** ve **_fseeki64** metin modunda açılmış akışları üzerinde çalışmak için garanti işlemleri:
+
+- Uzaklığı 0 kaynak değerlerden herhangi birine göre ile aramayı.
+
+- Bir uzaklık değeri dosyasıyla başından itibaren aramayı döndürülen çağrısından [ftell](ftell-ftelli64.md) kullanırken **fseek** veya [_ftelli64](ftell-ftelli64.md) kullanırken **_fseeki64**.
+
+Ayrıca metin modunda, CTRL + Z giriş üzerinde bir dosya sonu karakteri olarak yorumlanır. Okuma/yazma için açılmış dosyalarında [fopen](fopen-wfopen.md) ve tüm ilgili yordamlar için CTRL + Z dosyanın sonunda denetleyin ve mümkünse kaldırın. Bu birleşimini kullanarak yapılır, çünkü **fseek** ve [ftell](ftell-ftelli64.md) veya **_fseeki64** ve [_ftelli64](ftell-ftelli64.md)ile biten bir dosya içinde taşımak için CTRL + Z neden olabilecek **fseek** veya **_fseeki64** dosyanın sonuna yakın yanlış bir şekilde davranır.
+
+CRT bir bayt sırası işareti (BOM) ile başlayan bir dosyayı açtığında dosya işaretçisini sonra AĞACI konumlandırılır (diğer bir deyişle, dosyanın gerçek içeriği başlangıcında). Gerekirse **fseek** dosyasının başlangıcına kullanmak [ftell](ftell-ftelli64.md) ilk konumunu almak için ve **fseek** ona yerine 0 konumuna.
+
+Bu işlev yürütülürken başka bir iş parçacığı kilitler ve bu nedenle iş parçacığı. Kilitleme olmayan bir sürümü için bkz: [_fseek_nolock, _fseeki64_nolock](fseek-nolock-fseeki64-nolock.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fseek**|\<stdio.h >|
+|**_fseeki64**|\<stdio.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_fseek.c
+// This program opens the file FSEEK.OUT and
+// moves the pointer to the file's beginning.
+
+#include <stdio.h>
+
+int main( void )
+{
+   FILE *stream;
+   char line[81];
+   int  result;
+
+   if ( fopen_s( &stream, "fseek.out", "w+" ) != 0 )
+   {
+      printf( "The file fseek.out was not opened\n" );
+      return -1;
+   }
+   fprintf( stream, "The fseek begins here: "
+                    "This is the file 'fseek.out'.\n" );
+   result = fseek( stream, 23L, SEEK_SET);
+   if( result )
+      perror( "Fseek failed" );
+   else
+   {
+      printf( "File pointer is set to middle of first line.\n" );
+      fgets( line, 80, stream );
+      printf( "%s", line );
+    }
+   fclose( stream );
+}
+```
+
+```Output
+File pointer is set to middle of first line.
+This is the file 'fseek.out'.
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fopen, _wfopen](fopen-wfopen.md)<br/>
+[ftell, _ftelli64](ftell-ftelli64.md)<br/>
+[_lseek, _lseeki64](lseek-lseeki64.md)<br/>
+[rewind](rewind.md)<br/>

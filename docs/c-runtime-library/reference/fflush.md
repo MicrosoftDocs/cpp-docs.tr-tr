@@ -1,12 +1,12 @@
 ---
 title: fflush | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fflush
@@ -32,108 +32,113 @@ helpviewer_keywords:
 - flushing
 - fflush function
 ms.assetid: 8bbc753f-dc74-4e77-b563-74da2835e92b
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23d90b61862736fc97c18343fe82f8ccf3aa42b5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9a92affa1483c8dba9be0718acc00d4574eb44bb
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fflush"></a>fflush
-Bir akışa aktarır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int fflush(   
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `fflush` Arabellek başarıyla temizlendi 0 döndürür. 0 değeri, belirtilen stream hiçbir arabellek olan veya yalnızca okumak için açık durumda da döndürülür. Dönüş değeri `EOF` bir hata olduğunu gösterir.  
-  
+
+Bir akışa aktarır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int fflush(
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**fflush** arabellek başarıyla temizlendi 0 döndürür. 0 değeri, belirtilen stream hiçbir arabellek olan veya yalnızca okumak için açık durumda da döndürülür. Dönüş değeri **EOF** bir hata olduğunu gösterir.
+
 > [!NOTE]
->  Varsa `fflush` döndürür `EOF`, veriler kaybolmuş olabilir bir yazma hatası nedeniyle. Bir kritik hata işleyicisini ayarlarken, arabelleğe alma ile devre dışı bırakmak güvenli `setvbuf` işlevi veya düşük düzey g/ç yordamları gibi kullanmak için `_open`, `_close`, ve `_write` akış g/ç işlevleri yerine.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `fflush` İşlevi temizler akış `stream`. Akış açtıysanız yazma modu veya güncelleştirme modunda açılmış ve son işlemi bir yazma olduğu, Akış Arabellek içeriğini temel alınan dosya veya aygıt için yazılmıştır ve arabellek atılır. Akış Okuma modunda açılan veya akış hiçbir arabellek çağrısı varsa `fflush` hiçbir etkisi yoktur ve tüm arabellek korunur. Çağrı `fflush` üzerindeki herhangi bir önceki çağrısına etkisini geçersiz kılar `ungetc` akış için. Akış çağrısından sonra açık kalır.  
-  
- Varsa `stream` olan `NULL`, davranışı çağrısı ile aynıdır `fflush` açık her akış hakkındaki. Tüm akışlar yazma modunda açılmış ve son işlemi yazma bulunduğu tüm akışlar güncelleştirme modunda açılmış temizlenir. Çağrı diğer akışlar üzerinde etkisi yoktur.  
-  
- Arabellekler verileri otomatik olarak diske yazmak için en iyi zamanı belirler işletim sistemi tarafından normalde korunur: bir arabellek dolduğunda, bir akış kapalıyken veya ne zaman bir program akış kapatmadan sona erer. Çalışma Zamanı Kitaplığı commit-to-disk özellik kritik verileri doğrudan diske yerine işletim sistemi arabellekleri için yazılmış emin olun olanak sağlar. Varolan bir programı'nı yeniden yazma işlemi olmadan, programın nesne dosyaları COMMODE.OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Sonuçta elde edilen yürütülebilir dosyada çağrılar `_flushall` tüm arabelleklerinin içeriğini diske yazma. Yalnızca `_flushall` ve `fflush` COMMODE.OBJ tarafından etkilenir.  
-  
- Commit-to-disk özelliği denetleme hakkında daha fazla bilgi için bkz: [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](../../c-runtime-library/reference/fopen-wfopen.md), ve [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md).  
-  
- Bu işlev çağıran iş parçacığı kilitler ve bu nedenle iş parçacığı. Kilitleme olmayan bir sürümü için bkz: `_fflush_nolock`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fflush`|\<stdio.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_fflush.c  
-#include <stdio.h>  
-#include <conio.h>  
-  
-int main( void )  
-{  
-   int integer;  
-   char string[81];  
-  
-   // Read each word as a string.  
-   printf( "Enter a sentence of four words with scanf: " );  
-   for( integer = 0; integer < 4; integer++ )  
-   {  
-      scanf_s( "%s", string, sizeof(string) );        
-      printf( "%s\n", string );  
-   }  
-  
-   // You must flush the input buffer before using gets.   
-   // fflush on input stream is an extension to the C standard   
-   fflush( stdin );     
-   printf( "Enter the same sentence with gets: " );  
-   gets_s( string, sizeof(string) );  
-   printf( "%s\n", string );  
-}  
-```  
-  
-```Output  
-  
-      This is a test  
-This is a test  
-  
-```  
-  
-```Output  
-  
-      This is a test  
-This is a testEnter a sentence of four words with scanf: This is a test  
-This  
-is  
-a  
-test  
-Enter the same sentence with gets: This is a test  
-This is a test  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
- [_flushall](../../c-runtime-library/reference/flushall.md)   
- [setvbuf](../../c-runtime-library/reference/setvbuf.md)
+> Varsa **fflush** döndürür **EOF**, veriler kaybolmuş olabilir bir yazma hatası nedeniyle. Bir kritik hata işleyicisini ayarlarken, arabelleğe alma ile devre dışı bırakmak güvenli **setvbuf** işlevi veya düşük düzey g/ç yordamları gibi kullanmak için **_kurulum Aç**, **_close**, ve **_write** akış g/ç işlevleri yerine.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Fflush** işlevi temizler akış *akış*. Akış açtıysanız yazma modu veya güncelleştirme modunda açılmış ve son işlemi bir yazma olduğu, Akış Arabellek içeriğini temel alınan dosya veya aygıt için yazılmıştır ve arabellek atılır. Akış Okuma modunda açılan veya akış hiçbir arabellek çağrısı varsa **fflush** hiçbir etkisi yoktur ve tüm arabellek korunur. Çağrı **fflush** üzerindeki herhangi bir önceki çağrısına etkisini geçersiz kılar **ungetc** akış için. Akış çağrısından sonra açık kalır.
+
+Varsa *akış* olan **NULL**, davranışı çağrısı ile aynıdır **fflush** açık her akış hakkındaki. Tüm akışlar yazma modunda açılmış ve son işlemi yazma bulunduğu tüm akışlar güncelleştirme modunda açılmış temizlenir. Çağrı diğer akışlar üzerinde etkisi yoktur.
+
+Arabellekler verileri otomatik olarak diske yazmak için en iyi zamanı belirler işletim sistemi tarafından normalde korunur: bir arabellek dolduğunda, bir akış kapalıyken veya ne zaman bir program akış kapatmadan sona erer. Çalışma Zamanı Kitaplığı commit-to-disk özellik kritik verileri doğrudan diske yerine işletim sistemi arabellekleri için yazılmış emin olun olanak sağlar. Varolan bir programı'nı yeniden yazma işlemi olmadan, programın nesne dosyaları COMMODE.OBJ ile bağlayarak bu özelliği etkinleştirebilirsiniz. Sonuçta elde edilen yürütülebilir dosyada çağrılar **_flushall** tüm arabelleklerinin içeriğini diske yazma. Yalnızca **_flushall** ve **fflush** COMMODE.OBJ tarafından etkilenir.
+
+Commit-to-disk özelliği denetleme hakkında daha fazla bilgi için bkz: [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), ve [_fdopen](fdopen-wfdopen.md).
+
+Bu işlev çağıran iş parçacığı kilitler ve bu nedenle iş parçacığı. Kilitleme olmayan bir sürümü için bkz: **_fflush_nolock**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fflush**|\<stdio.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_fflush.c
+#include <stdio.h>
+#include <conio.h>
+
+int main( void )
+{
+   int integer;
+   char string[81];
+
+   // Read each word as a string.
+   printf( "Enter a sentence of four words with scanf: " );
+   for( integer = 0; integer < 4; integer++ )
+   {
+      scanf_s( "%s", string, sizeof(string) );
+      printf( "%s\n", string );
+   }
+
+   // You must flush the input buffer before using gets.
+   // fflush on input stream is an extension to the C standard
+   fflush( stdin );
+   printf( "Enter the same sentence with gets: " );
+   gets_s( string, sizeof(string) );
+   printf( "%s\n", string );
+}
+```
+
+```Output
+
+      This is a test
+This is a test
+
+```
+
+```Output
+
+      This is a test
+This is a testEnter a sentence of four words with scanf: This is a test
+This
+is
+a
+test
+Enter the same sentence with gets: This is a test
+This is a test
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_flushall](flushall.md)<br/>
+[setvbuf](setvbuf.md)<br/>

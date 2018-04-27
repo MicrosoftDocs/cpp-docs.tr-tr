@@ -1,12 +1,12 @@
 ---
-title: frexp | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: frexp, frexpf, frexpl | Microsoft Docs
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - frexp
@@ -36,87 +36,100 @@ helpviewer_keywords:
 - frexp function
 - floating-point functions, mantissa and exponent
 ms.assetid: 9b020f2e-3967-45ec-a6a8-d467a071aa55
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02eab6e7912a69a6189568d9a5530ace88d8430b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ed4f3096b52834b59250226d7857ed0069982749
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="frexp"></a>frexp
-Mantis ve üs bir kayan noktalı sayının alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double frexp(  
-   double x,  
-   int *expptr   
-);  
-float frexp(  
-   float x,  
-   int * expptr  
-);  // C++ only  
-long double frexp(  
-   long double x,  
-   int * expptr  
-);  // C++ only  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `x`  
- Kayan nokta değeri.  
-  
- `expptr`  
- Saklı tamsayı üs işaretçi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `frexp` Mantis döndürür. Varsa `x` 0, 0 Mantis ve Üs işlevi döndürür. Varsa `expptr` olan `NULL`, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar `errno` için `EINVAL` ve 0 döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `frexp` İşlevi keser kayan nokta değeri (`x`) bir Mantis içine (`m`) ve bir üs (`n`), şekilde mutlak değerini `m` 0,5'den az 1.0, eşit veya daha büyük olduğundan ve `x`  =  `m`* 2<sup>n</sup>. Tamsayı üs `n` gösterdiği konumunda depolanan `expptr`.  
-  
- C++ verir aşırı yüklemesi, aşırı çağırması `frexp`. Bir C programı `frexp` her zaman bir double ve tamsayı alır ve bir double döndürür.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`frexp`|\<Math.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_frexp.c  
-// This program calculates frexp( 16.4, &n )  
-// then displays y and n.  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double x, y;  
-   int n;  
-  
-   x = 16.4;  
-   y = frexp( x, &n );  
-   printf( "frexp( %f, &n ) = %f, n = %d\n", x, y, n );  
-}  
-```  
-  
-```Output  
-frexp( 16.400000, &n ) = 0.512500, n = 5  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [ldexp](../../c-runtime-library/reference/ldexp.md)   
- [modf, modff, modfl](../../c-runtime-library/reference/modf-modff-modfl.md)
+# <a name="frexp-frexpf-frexpl"></a>frexp, frexpf, frexpl
+
+Mantis ve üs bir kayan noktalı sayının alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double frexp(
+   double x,
+   int *expptr
+);
+float frexpf(
+   float x,
+   int * expptr
+);
+long double frexpl(
+   long double x,
+   int * expptr
+);
+float frexp(
+   float x,
+   int * expptr
+);  // C++ only
+long double frexp(
+   long double x,
+   int * expptr
+);  // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Kayan nokta değeri.
+
+*expptr*<br/>
+Saklı tamsayı üs işaretçi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**frexp** Mantis döndürür. Varsa *x* 0, 0 Mantis ve Üs işlevi döndürür. Varsa *expptr* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve 0 döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Frexp** işlevi keser kayan nokta değeri (*x*) bir Mantis içine (*m*) ve bir üs (*n*), şekilde mutlak değeri *m* büyük veya eşit 0,5 ve değerinden 1.0 ve *x* = *m* * 2<sup>*n*</sup>. Tamsayı üs *n* gösterdiği konumunda depolanan *expptr*.
+
+C++ verir aşırı yüklemesi, aşırı çağırması **frexp**. Bir C programı **frexp** her zaman alan bir **çift** ve bir **int** işaretçi ve döndürür bir **çift**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**frexp**, **frexpf**, **frexpl**|\<Math.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_frexp.c
+// This program calculates frexp( 16.4, &n )
+// then displays y and n.
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double x, y;
+   int n;
+
+   x = 16.4;
+   y = frexp( x, &n );
+   printf( "frexp( %f, &n ) = %f, n = %d\n", x, y, n );
+}
+```
+
+```Output
+frexp( 16.400000, &n ) = 0.512500, n = 5
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[ldexp](ldexp.md)<br/>
+[modf, modff, modfl](modf-modff-modfl.md)<br/>

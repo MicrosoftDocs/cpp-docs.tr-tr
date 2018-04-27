@@ -1,12 +1,12 @@
 ---
-title: "Kod sayfaları | Microsoft Docs"
-ms.custom: 
+title: Kod sayfaları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - c.international
@@ -21,39 +21,41 @@ helpviewer_keywords:
 - code pages [C++], types of
 - locale code pages [C++]
 ms.assetid: 4a26fc42-185a-4add-98bf-a7b314ae6186
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0899f5f617fd28d121b85183280bd28fe91ee46
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: fc272d02fee38b3a260a5b6bb6330f4f6a5eb362
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="code-pages"></a>Kod Sayfaları
-A `code page` sayı, noktalama işaretleri ve diğer karakterlerin içerebilen bir karakter kümesidir. Farklı diller ve yerel ayarlar farklı kod sayfaları kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve en Avrupa dilleri için kullanılır; OEM kod sayfası 932 Japonca Kanji için kullanılır.  
-  
- Kod sayfası bir tablodaki bir veya birden çok baytlı değerler tek baytlı değerler karakter eşlemesi olarak temsil edilebilir. Çok sayıda kod sayfaları ASCII karakter aralığı 0x00 - 0x7F karakter kümesini paylaşır.  
-  
- Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfaları türlerini kullanır:  
-  
--   Sistem varsayılan ANSI kod sayfası. Varsayılan olarak, başlangıçta çalışma zamanı sistem otomatik olarak birden çok baytlı kod sayfası işletim sisteminden alınan sistem varsayılan ANSI kod sayfası için ayarlar. Arayın:  
-  
-    ```  
-    setlocale ( LC_ALL, "" );  
-    ```  
-  
-     Ayrıca yerel sistem varsayılan ANSI kod sayfasına ayarlar.  
-  
--   Yerel ayar kod sayfası. Çalışma zamanı yordamları sayısı davranışını yerel ayar kod sayfası içerir geçerli yerel ayarda bağlıdır. (Daha fazla bilgi için bkz: [yerel ayara bağımlı yordamlar](../c-runtime-library/locale.md).) Varsayılan olarak, tüm yerel ayara bağımlı yordamlar Microsoft Çalışma Zamanı Kitaplığı'ndaki "C" yerel karşılık gelen kod sayfasını kullanın. Çalışma zamanında değiştirme veya yerel ayar kod sayfası çağrısıyla kullanımda sorgu [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).  
-  
--   Birden çok baytlı kod sayfası. Çok baytlı karakter yordamları Çalışma Zamanı Kitaplığı'nda çoğunu davranışını geçerli çok baytlı kod sayfası ayarına bağlıdır. Varsayılan olarak, bu yordamlar sistem varsayılan ANSI kod sayfasını kullanın. Çalışma zamanında sorgulamak ve çok baytlı kod sayfası ile değiştirmek [_getmbcp](../c-runtime-library/reference/getmbcp.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md)sırasıyla.  
-  
--   "C" yerel ayarını ANSI C programları geleneksel imzalayan yerel karşılık gelecek şekilde tanımlanır. ("C" kod sayfası) "C" yerel ayar kod sayfası ASCII karakter kümesi karşılık gelir. Örneğin, "C" yerel olarak `islower` değerlerini 0x61 - yalnızca 0x7A true değerini döndürür. Başka bir yerel olarak `islower` bu yerel ayara tarafından tanımlandığı şekilde bu yanı sıra diğer değerler doğru döndürebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uluslararası duruma getirme](../c-runtime-library/internationalization.md)   
- [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)
+
+A *kod sayfası* sayı, noktalama işaretleri ve diğer karakterlerin içerebilen bir karakter kümesidir. Farklı diller ve yerel ayarlar farklı kod sayfaları kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve en Avrupa dilleri için kullanılır; OEM kod sayfası 932 Japonca Kanji için kullanılır.
+
+ Kod sayfası bir tablodaki bir veya birden çok baytlı değerler tek baytlı değerler karakter eşlemesi olarak temsil edilebilir. Çok sayıda kod sayfaları ASCII karakter aralığı 0x00 - 0x7F karakter kümesini paylaşır.
+
+ Microsoft çalışma zamanı kitaplığı aşağıdaki kod sayfaları türlerini kullanır:
+
+- Sistem varsayılan ANSI kod sayfası. Varsayılan olarak, başlangıçta çalışma zamanı sistem otomatik olarak birden çok baytlı kod sayfası işletim sisteminden alınan sistem varsayılan ANSI kod sayfası için ayarlar. Arayın:
+
+    ```C
+    setlocale ( LC_ALL, "" );
+    ```
+
+     Ayrıca yerel sistem varsayılan ANSI kod sayfasına ayarlar.
+
+- Yerel ayar kod sayfası. Çalışma zamanı yordamları sayısı davranışını yerel ayar kod sayfası içerir geçerli yerel ayarda bağlıdır. (Daha fazla bilgi için bkz: [yerel ayara bağımlı yordamlar](../c-runtime-library/locale.md).) Varsayılan olarak, tüm yerel ayara bağımlı yordamlar Microsoft Çalışma Zamanı Kitaplığı'ndaki "C" yerel karşılık gelen kod sayfasını kullanın. Çalışma zamanında değiştirme veya yerel ayar kod sayfası çağrısıyla kullanımda sorgu [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
+
+- Birden çok baytlı kod sayfası. Çok baytlı karakter yordamları Çalışma Zamanı Kitaplığı'nda çoğunu davranışını geçerli çok baytlı kod sayfası ayarına bağlıdır. Varsayılan olarak, bu yordamlar sistem varsayılan ANSI kod sayfasını kullanın. Çalışma zamanında sorgulamak ve çok baytlı kod sayfası ile değiştirmek [_getmbcp](../c-runtime-library/reference/getmbcp.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md)sırasıyla.
+
+- "C" yerel ayarını ANSI C programları geleneksel imzalayan yerel karşılık gelecek şekilde tanımlanır. ("C" kod sayfası) "C" yerel ayar kod sayfası ASCII karakter kümesi karşılık gelir. Örneğin, "C" yerel olarak **islower** değerlerini 0x61 - yalnızca 0x7A true değerini döndürür. Başka bir yerel olarak **islower** bu yerel ayara tarafından tanımlandığı şekilde bu yanı sıra diğer değerler doğru döndürebilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Uluslararası duruma getirme](../c-runtime-library/internationalization.md)<br/>
+ [Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

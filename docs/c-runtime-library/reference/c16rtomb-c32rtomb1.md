@@ -1,13 +1,13 @@
 ---
 title: c16rtomb, c32rtomb1 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - c16rtomb
@@ -36,68 +36,73 @@ helpviewer_keywords:
 - c16rtomb function
 - c32rtomb function
 ms.assetid: 7f5743ca-a90e-4e3f-a310-c73e16f4e14d
-caps.latest.revision: 
+caps.latest.revision: 3
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2deca697a3dcb338ae9e9ea9e071c73979695ad8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e051fe8fdb0bfaad4d34ce50e91bf7611a47ee81
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="c16rtomb-c32rtomb"></a>c16rtomb, c32rtomb
-Geçerli yerel birden çok baytlı karakter UTF-16 veya UTF-32 geniş karakter dönüştürün.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-size_t c16rtomb(  
-    char *mbchar,   
-    char16_t wchar,  
-    mbstate_t *state  
-);  
-size_t c32rtomb(  
-    char *mbchar,   
-    char32_t wchar,  
-    mbstate_t *state  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `mbchar`  
- İşaretçi dönüştürülen birden çok baytlı karakter depolamak için bir dizi.  
-  
- [in] `wchar`  
- Dönüştürülecek geniş karakter.  
-  
- [içinde out] `state`  
- Bir işaretçi bir `mbstate_t` nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Dizi nesnesi içinde depolanan bayt sayısı `mbchar`, tüm üst karakter sıraları dahil olmak üzere. Varsa `wchar` geçerli bir uluslararası karakter, değeri değil (`size_t`)(-1) döndürülür, `errno` ayarlanır `EILSEQ`, değerini `state` belirtilmedi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `c16rtomb` İşlevi dönüştürür UTF-16 karakter `wchar` için geçerli yerel eşdeğer birden çok baytlı dar karakter dizisi. Varsa `mbchar` tarafından için dizi nesnesi dönüştürülen sırayla işaret işlevi depoları null işaretçi değil `mbchar`. En fazla `MB_CUR_MAX` bayt depolanır `mbchar`, ve `state` elde edilen birden çok baytlı shift durumuna ayarlanır.    Varsa `wchar` null geniş bir karakter olan bir sırası için gerekli olan ilk kaydırma durumu depolanır, gerekirse, geri yükleme ve ardından null karakteriyle ve `state` ilk dönüştürme durumuna ayarlanır. `c32rtomb` İşlevi aynıdır, ancak UTF-32 karakter dönüştürür.  
-  
- Varsa `mbchar` null işaretçi davranışı, bir iç arabellek için değiştirir işlevi çağrısı eşdeğerdir `mbchar` ve geniş bir null karakter için `wchar`.  
-  
- `state` Dönüştürme durumu nesne bu işlev ve çok baytlı çıkış karakterleri shift durumunu korumak yeniden başlatılabilir diğer işlevleri yapılan sonraki çağrılar yapmanızı sağlar. Yeniden başlatılabilir ve yeniden başlatılabilir olmayan işlevleri kullanımını karışık veya çağrı olsa sonuçları tanımsız `setlocale` yeniden başlatılabilir işlev çağrıları arasında yapılır.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`c16rtomb`, `c32rtomb`|C, C++: \<uchar.h>|  
-  
- Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [mbrtoc16, mbrtoc32](../../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)   
- [wcrtomb](../../c-runtime-library/reference/wcrtomb.md)   
- [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md)
+
+Geçerli yerel birden çok baytlı karakter UTF-16 veya UTF-32 geniş karakter dönüştürün.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+size_t c16rtomb(
+    char *mbchar,
+    char16_t wchar,
+    mbstate_t *state
+);
+size_t c32rtomb(
+    char *mbchar,
+    char32_t wchar,
+    mbstate_t *state
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*mbchar*<br/>
+İşaretçi dönüştürülen birden çok baytlı karakter depolamak için bir dizi.
+
+*wchar*<br/>
+Dönüştürülecek geniş karakter.
+
+*Durumu*<br/>
+Bir işaretçi bir **mbstate_t** nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Dizi nesnesi içinde depolanan bayt sayısı *mbchar*, tüm üst karakter sıraları dahil olmak üzere. Varsa *wchar* geçerli bir uluslararası karakter, değeri değil (**size_t**)(-1) döndürülür, **errno** ayarlanır **EILSEQ**, değeri*durumu* belirtilmedi.
+
+## <a name="remarks"></a>Açıklamalar
+
+**C16rtomb** işlevi dönüştürür UTF-16 karakter *wchar* için geçerli yerel eşdeğer birden çok baytlı dar karakter dizisi. Varsa *mbchar* tarafından için dizi nesnesi dönüştürülen sırayla işaret işlevi depoları null işaretçi değil *mbchar*. En fazla **MB_CUR_MAX** bayt depolanır *mbchar*, ve *durumu* elde edilen birden çok baytlı shift durumuna ayarlanır.    Varsa *wchar* null geniş bir karakter olan bir sırası için gerekli olan ilk kaydırma durumu depolanır, gerekirse, geri yükleme ve ardından null karakteriyle ve *durumu* ilk dönüştürme durumuna ayarlanır. **C32rtomb** işlevi aynıdır, ancak UTF-32 karakter dönüştürür.
+
+Varsa *mbchar* null işaretçi davranışı, bir iç arabellek için değiştirir işlevi çağrısı eşdeğerdir *mbchar* ve geniş bir null karakter için *wchar*.
+
+*Durumu* dönüştürme durumu nesne bu işlev ve çok baytlı çıkış karakterleri shift durumunu korumak yeniden başlatılabilir diğer işlevleri yapılan sonraki çağrılar yapmanızı sağlar. Yeniden başlatılabilir ve yeniden başlatılabilir olmayan işlevleri kullanımını karışık veya çağrı olsa sonuçları tanımsız **setlocale** yeniden başlatılabilir işlev çağrıları arasında yapılır.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**c16rtomb**, **c32rtomb**|C, C++: \<uchar.h >|
+
+Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[mbrtoc16, mbrtoc32](mbrtoc16-mbrtoc323.md)<br/>
+[wcrtomb](wcrtomb.md)<br/>
+[wcrtomb_s](wcrtomb-s.md)<br/>

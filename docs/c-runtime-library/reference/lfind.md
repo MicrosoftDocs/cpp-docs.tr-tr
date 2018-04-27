@@ -1,12 +1,12 @@
 ---
 title: _lfind | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _lfind
@@ -36,105 +36,110 @@ helpviewer_keywords:
 - finding keys in arrays
 - _lfind function
 ms.assetid: a40ece70-1674-4b75-94bd-9f57cfff18f2
-caps.latest.revision: 
+caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b6df994306ad9a7d51d619a9bd409c021386a11
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 488863a32319fac17f5d1c84f56edaeeb63ff0ce
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="lfind"></a>_lfind
-Belirtilen anahtar için doğrusal arama gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_lfind_s](../../c-runtime-library/reference/lfind-s.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void *_lfind(  
-   const void *key,  
-   const void *base,  
-   unsigned int *num,  
-   unsigned int width,  
-   int (__cdecl *compare)(const void *, const void *)  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `key`  
- Aranacak nesne.  
-  
- `base`  
- Arama veri tabanı işaretçi.  
-  
- `num`  
- Dizi öğe sayısı.  
-  
- `width`  
- Dizi öğeleri kalınlığı.  
-  
- `compare`  
- İşaretçi karşılaştırması yordama. İlk parametre arama için anahtar bir işaretçidir. İkinci parametre anahtarı ile Karşılaştırılacak dizi öğesi bir işaretçidir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Anahtar bulunursa, `_lfind` dizisi öğesine bir işaretçi döndüren `base` eşleşen `key`. Anahtar bulunamazsa `_lfind` döndürür `NULL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_lfind` İşlevi gerçekleştiren değeri için doğrusal arama `key` dizisindeki `num` öğeleri, her biri `width` bayt sayısı. Farklı `bsearch`, `_lfind` sıralanacak dizi gerektirmez. `base` Bağımsız değişkeni bir işaretçidir aranacağı dizinin tabanı. `compare` Bağımsız değişkeni bir işaretçidir iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam. `_lfind` çağrıları `compare` işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. `compare` Yordamı öğeleri karşılaştırır ve (öğeleri farklı olduğu anlamına gelir) sıfır olmayan bir değer döndürür veya 0 (öğeleri aynı olduğu anlamına gelir).  
-  
- Bu işlev parametrelerini doğrular. Varsa `compare`, `key` veya `num` olan `NULL`, veya `base` null ve *`num` sıfır olmayan, olduğundan veya `width` küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_lfind`|\<Search.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_lfind.c  
-// This program uses _lfind to search a string array  
-// for an occurrence of "hello".  
-  
-#include <search.h>  
-#include <string.h>  
-#include <stdio.h>  
-  
-int compare(const void *arg1, const void *arg2 )  
-{  
-   return( _stricmp( * (char**)arg1, * (char**)arg2 ) );  
-}  
-  
-int main( )  
-{  
-   char *arr[] = {"Hi", "Hello", "Bye"};  
-   int n = sizeof(arr) / sizeof(char*);  
-   char **result;  
-   char *key = "hello";  
-  
-   result = (char **)_lfind( &key, arr,   
-                      &n, sizeof(char *), compare );  
-  
-   if( result )  
-      printf( "%s found\n", *result );  
-   else  
-      printf( "hello not found!\n" );  
-}  
-```  
-  
-```Output  
-Hello found  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)   
- [_lfind_s](../../c-runtime-library/reference/lfind-s.md)   
- [bsearch](../../c-runtime-library/reference/bsearch.md)   
- [_lsearch](../../c-runtime-library/reference/lsearch.md)   
- [qsort](../../c-runtime-library/reference/qsort.md)
+
+Belirtilen anahtar için doğrusal arama gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_lfind_s](lfind-s.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void *_lfind(
+   const void *key,
+   const void *base,
+   unsigned int *num,
+   unsigned int width,
+   int (__cdecl *compare)(const void *, const void *)
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Anahtarı*<br/>
+Aranacak nesne.
+
+*base*<br/>
+Arama veri tabanı işaretçi.
+
+*Sayı*<br/>
+Dizi öğe sayısı.
+
+*Genişlik*<br/>
+Dizi öğeleri kalınlığı.
+
+*Karşılaştırma*<br/>
+İşaretçi karşılaştırması yordama. İlk parametre arama için anahtar bir işaretçidir. İkinci parametre anahtarı ile Karşılaştırılacak dizi öğesi bir işaretçidir.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Anahtar bulunursa, **_lfind** dizisi öğesine bir işaretçi döndüren *temel* eşleşen *anahtar*. Anahtar bulunamazsa **_lfind** döndürür **NULL**.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Lfind** işlevi gerçekleştiren değeri için doğrusal arama *anahtar* dizisindeki *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lfind** sıralanacak dizi gerektirmez. *Temel* bağımsız değişkeni bir işaretçidir aranacağı dizinin tabanı. *Karşılaştırmak* bağımsız değişkeni bir işaretçidir iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam. **_lfind** çağrıları *karşılaştırmak* işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. *Karşılaştırmak* yordamı öğeleri karşılaştırır ve (öğeleri farklı olduğu anlamına gelir) sıfır olmayan bir değer döndürür veya 0 (öğeleri aynı olduğu anlamına gelir).
+
+Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* null ve **numarası*  sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_lfind**|\<Search.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_lfind.c
+// This program uses _lfind to search a string array
+// for an occurrence of "hello".
+
+#include <search.h>
+#include <string.h>
+#include <stdio.h>
+
+int compare(const void *arg1, const void *arg2 )
+{
+   return( _stricmp( * (char**)arg1, * (char**)arg2 ) );
+}
+
+int main( )
+{
+   char *arr[] = {"Hi", "Hello", "Bye"};
+   int n = sizeof(arr) / sizeof(char*);
+   char **result;
+   char *key = "hello";
+
+   result = (char **)_lfind( &key, arr,
+                      &n, sizeof(char *), compare );
+
+   if( result )
+      printf( "%s found\n", *result );
+   else
+      printf( "hello not found!\n" );
+}
+```
+
+```Output
+Hello found
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
+[_lfind_s](lfind-s.md)<br/>
+[bsearch](bsearch.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

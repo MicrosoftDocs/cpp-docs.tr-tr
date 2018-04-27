@@ -24,11 +24,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd40617afecd0c9be03e3676ebe5f2fb8058312a
-ms.sourcegitcommit: ee7d74683af7631441c8c7f65ef5ceceaee4a5ee
+ms.openlocfilehash: a8ac39babea0c36e9d5d120e1f5ca89e3f3dc014
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="ltcg-link-time-code-generation"></a>/LTCG (Bağlama Zamanı Kodu Oluşturma)
 
@@ -51,7 +51,7 @@ Bağlayıcı yalnızca bütün program iyileştirmesi veya bağlama zamanı kodu
 Bağlayıcı bağlantıyı yüzdesini tamamlandıktan gösteren bir İlerleme göstergesi görüntülenip görüntülenmeyeceğini belirtir. Varsayılan olarak, bu durum bilgisi görüntülenmez.
 
 **Devre dışı** (isteğe bağlı)<br/>
-Bağlama zamanı kodu oluşturma devre dışı bırakır. Bu davranış zaman /LTCG komut satırında belirtilmemiş aynıdır.
+Bağlama zamanı kodu oluşturma devre dışı bırakır. Bu davranış ne zaman aynıdır **/LTCG** komut satırında belirtilmemiş.
 
 **PGINSTRUMENT** (isteğe bağlı)<br/>
 Bu seçenek, Visual Studio 2015'ten başlayarak kullanım dışı bırakılmıştır. Bunun yerine, kullanın **/LTCG** ve [/GENPROFILE veya /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) profil temelli iyileştirme için izleme eklenmiş bir yapı oluşturmak için. İzleme eklenmiş kaynak dosyadan toplanan veriler, en iyi duruma getirilmiş bir görüntü oluşturmak için kullanılır. Daha fazla bilgi için bkz: [profil temelli iyileştirme](profile-guided-optimizations.md). Bu seçeneğin kısa form **/LTCG:PGI**.
@@ -76,19 +76,19 @@ Aşağıdaki istisnalar PGO bileşimi için bağlayıcı seçenekleri ekleyemezs
 
 - [/MAP](../../build/reference/map-generate-mapfile.md)
 
-- [/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)
+- [/ MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)
 
-- [/NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)
+- [/ NOLOGO](../../build/reference/nologo-suppress-startup-banner-linker.md)
 
 - [/ OUT](../../build/reference/out-output-file-name.md)
 
-- [/PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)
+- [/ PGD](../../build/reference/pgd-specify-database-for-profile-guided-optimizations.md)
 
 - [/PDB](../../build/reference/pdb-use-program-database.md)
 
-- [/PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)
+- [/ PDBSTRIPPED](../../build/reference/pdbstripped-strip-private-symbols.md)
 
-- [/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)
+- [/ STUB](../../build/reference/stub-ms-dos-stub-file-name.md)
 
 - [/ VERBOSE](../../build/reference/verbose-print-progress-messages.md)
 
@@ -156,7 +156,7 @@ Kullanarak derlenmiş modüller [/GL](../../build/reference/gl-whole-program-opt
 
 Ayrıca uygulayabilirsiniz **/LTCG** seçerek belirli derlemeleri için **yapı** > **profil temelli iyileştirme** menü çubuğunda ya da bir profil seçme Projesi için kısayol menüsünde destekli en iyi duruma getirme seçenekleri.
 
-#### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
 - Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.LinkTimeCodeGeneration%2A>.
 

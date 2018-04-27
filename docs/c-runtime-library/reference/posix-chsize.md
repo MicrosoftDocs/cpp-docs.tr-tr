@@ -1,12 +1,12 @@
 ---
 title: chsize | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - chsize
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - chsize function
 ms.assetid: f94d62f6-b539-4cbf-bf99-b81d081b4216
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 215fdb31143f03e1a44643b8849ec7212cccab12
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: eccb6ff1fd309a9323b8baf79f0e5a9ecfeb8ffb
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="chsize"></a>chsize
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_chsize](../../c-runtime-library/reference/chsize.md) veya Gelişmiş Güvenlik [_chsize_s](../../c-runtime-library/reference/chsize-s.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_chsize](chsize.md) veya Gelişmiş Güvenlik [_chsize_s](chsize-s.md) yerine.

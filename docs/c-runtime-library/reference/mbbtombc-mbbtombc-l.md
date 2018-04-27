@@ -1,12 +1,12 @@
 ---
 title: _mbbtombc, _mbbtombc_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _mbbtombc_l
@@ -37,62 +37,67 @@ helpviewer_keywords:
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17f0cfa6c4162eee1422def2343f38745183e1b4
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e7fe46b278a93f1c6dedde28f74a270244ebc6ba
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="mbbtombc-mbbtombcl"></a>_mbbtombc, _mbbtombc_l
-Tek baytlı birden çok baytlı karakter karşılık gelen bir çift baytlık birden çok baytlı karakter dönüştürür.  
-  
+
+Tek baytlı birden çok baytlı karakter karşılık gelen bir çift baytlık birden çok baytlı karakter dönüştürür.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned int _mbbtombc(  
-   unsigned int c   
-);  
-unsigned int _mbbtombc_l(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Dönüştürülecek tek baytlı karakter.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Varsa `_mbbtombc` başarıyla dönüştürür `c`, birden çok baytlı karakter döndürür; Aksi takdirde, döndürür `c`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_mbbtombc` İşlevi, karşılık gelen bir çift baytlık birden çok baytlı karakter belirli bir tek baytlı birden çok baytlı karakter dönüştürür. Karakter dönüştürülecek 0xDF 0x20-0x7E veya 0xA1 - aralığında olması gerekir.  
-  
- Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev sürümleri özdeş dışında `_mbbtombc` geçerli yerel ayar için bu yerel ayara bağımlı davranışı kullanır ve `_mbbtombc_l` yerine geçirilen yerel ayar parametresi kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
- Önceki sürümlerde, `_mbbtombc` idi `hantozen`. Kullanmak için yeni kod, `_mbbtombc`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_mbbtombc`|\<Mbstring.h >|  
-|`_mbbtombc_l`|\<Mbstring.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [_mbctombb, _mbctombb_l](../../c-runtime-library/reference/mbctombb-mbctombb-l.md)
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+unsigned int _mbbtombc(
+   unsigned int c
+);
+unsigned int _mbbtombc_l(
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Dönüştürülecek tek baytlı karakter.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Varsa **_mbbtombc** başarıyla dönüştürür *c*, birden çok baytlı karakter döndürür; Aksi takdirde, döndürür *c*.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Mbbtombc** işlevi, karşılık gelen bir çift baytlık birden çok baytlı karakter belirli bir tek baytlı birden çok baytlı karakter dönüştürür. Karakter dönüştürülecek 0xDF 0x20-0x7E veya 0xA1 - aralığında olması gerekir.
+
+Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlev sürümleri özdeş dışında **_mbbtombc** geçerli yerel ayar için bu yerel ayara bağımlı davranışı kullanır ve **_mbbtombc_l** yerine geçirilen yerel ayar parametresi kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+Önceki sürümlerde, **_mbbtombc** idi **hantozen**. Kullanmak için yeni kod, **_mbbtombc**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_mbbtombc**|\<Mbstring.h >|
+|**_mbbtombc_l**|\<Mbstring.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[_mbctombb, _mbctombb_l](mbctombb-mbctombb-l.md)<br/>

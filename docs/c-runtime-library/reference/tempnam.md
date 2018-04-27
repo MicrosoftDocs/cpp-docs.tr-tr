@@ -1,12 +1,12 @@
 ---
 title: tempnam | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - tempnam
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - tempnam function
 ms.assetid: 42446733-f131-470f-b4d0-96918becab11
-caps.latest.revision: 
+caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a58d5cc938253cd9866b839ee66c086febb7eee9
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 309e389ede064437cba6405358e0ec4aae5bbe17
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="tempnam"></a>tempnam
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_tempnam](../../c-runtime-library/reference/tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) yerine.

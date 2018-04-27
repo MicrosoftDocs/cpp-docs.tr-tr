@@ -1,12 +1,12 @@
 ---
 title: not_eq | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apilocation:
 - msvcrt.dll
@@ -29,57 +29,60 @@ dev_langs:
 helpviewer_keywords:
 - not_eq function
 ms.assetid: d87ad299-8b50-4393-a57f-06f70e1f23fb
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8803fceb8e22daeea33445efac8921387df58e7b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 55fd452dd67d319e0cb2e6a3ffeafd56a9e16b7c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="noteq"></a>not_eq
-!= işleci alternatifi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#define not_eq !=  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Makro != işlecini verir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// iso646_not_eq.cpp  
-// compile with: /EHsc  
-#include <iostream>  
-#include <iso646.h>  
-  
-int main( )  
-{  
-   using namespace std;  
-   int a = 0, b = 1;  
-  
-   if (a != b)  
-      cout << "a is not equal to b" << endl;  
-  
-   if (a not_eq b)  
-      cout << "a is not equal to b" << endl;  
-}  
-```  
-  
-```Output  
-a is not equal to b  
-a is not equal to b  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<iso646.h >
+
+!= işleci alternatifi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+
+#define not_eq !=
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Makro != işlecini verir.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// iso646_not_eq.cpp
+// compile with: /EHsc
+#include <iostream>
+#include <iso646.h>
+
+int main( )
+{
+   using namespace std;
+   int a = 0, b = 1;
+
+   if (a != b)
+      cout << "a is not equal to b" << endl;
+
+   if (a not_eq b)
+      cout << "a is not equal to b" << endl;
+}
+```
+
+```Output
+a is not equal to b
+a is not equal to b
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<iso646.h >

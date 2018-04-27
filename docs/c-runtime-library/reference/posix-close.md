@@ -1,12 +1,12 @@
 ---
 title: Kapat | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - close
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - close function
 ms.assetid: c79689f4-9c86-4a4a-a256-d22e3498f55d
-caps.latest.revision: 
+caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82aa27b0a85697b9f3fb7ddbf6320cc94c59bee6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 918bf7b86a666acdfcf3e76d9a35acf760496010
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="close"></a>close
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_close](../../c-runtime-library/reference/close.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_close](close.md) yerine.

@@ -1,12 +1,12 @@
 ---
 title: bsearch_s | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - bsearch_s
@@ -31,174 +31,180 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-caps.latest.revision: 
+caps.latest.revision: 27
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c1ec2b76d64f9a65d19362f592483490c8b9bb3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ba025db097ffd9457024defa26fc29a5ae083e88
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="bsearchs"></a>bsearch_s
-İkili arama sıralanmış bir dizinin gerçekleştirir. Bu sürümüdür [bsearch](../../c-runtime-library/reference/bsearch.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void *bsearch_s(   
-   const void *key,  
-   const void *base,  
-   size_t num,  
-   size_t width,  
-   int ( __cdecl *compare ) ( void *, const void *key, const void *datum),  
-   void * context  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `key`  
- Aranacak nesne.  
-  
- `base`  
- Arama verilerini temel işaretçi.  
-  
- `num`  
- Öğe sayısı.  
-  
- `width`  
- Öğe genişliği.  
-  
- `compare`  
- İki öğe karşılaştırır geri çağırma işlevi. İlk bağımsız değişken `context` işaretçi. İkinci bağımsız değişkeni gösteren bir işaretçidir `key` arama için. Üçüncü bağımsız değişkeni bir dizi öğesi ile Karşılaştırılacak işaretçidir `key`.  
-  
- `context`  
- Karşılaştırma işlevinde erişilebilen bir nesne için bir işaretçi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `bsearch_s` İşaretçi için bir örneğini döndüren `key` gösterdiği dizideki `base`. Varsa `key` , işlevi döndürür bulunamadı `NULL`. Dizi artan sıralama değil veya yinelenen kayıtları aynı anahtarlarla içeriyorsa, öngörülemeyen bir sonucudur.  
-  
- İşlev için geçersiz parametreler aktarılırsa geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-### <a name="error-conditions"></a>Hata koşulları  
-  
-|||||||  
-|-|-|-|-|-|-|  
-|`key`|`base`|`compare`|`num`|`width`|`errno`|  
-|`NULL`|tüm|tüm|tüm|tüm|`EINVAL`|  
-|tüm|`NULL`|tüm|!= 0|tüm|`EINVAL`|  
-|tüm|tüm|tüm|tüm|= 0|`EINVAL`|  
-|tüm|tüm|`NULL`|bir|tüm|`EINVAL`|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `bsearch_s` İşlevi gerçekleştiren bir ikili arama sıralanmış bir dizi `num` öğeleri, her biri `width` bayt cinsinden boyutu. `base` Aranacak, dizi tabanı için bir işaretçi bir değerdir ve `key` Aranan değerdir. `compare` Parametresi, bir dizi öğesine istenen anahtarına karşılaştırır ve ilişkilerini belirterek aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir:  
-  
-|Tarafından döndürülen değer `compare` yordamı|Açıklama|  
-|-----------------------------------------|-----------------|  
-|\< 0|Dizi öğesi değerinden anahtardır.|  
-|0|Anahtar dizi öğesine eşittir.|  
-|> 0|Dizi öğesi büyük anahtardır.|  
-  
- `context` Aranan veri yapısı bir nesne bir parçasıdır ve karşılaştırma işlevi nesnenin üyelerine erişmesi durumunda işaretçi yararlı olabilir. `compare` İşlevi uygun nesne türüne ve erişim üyeleri bu nesnenin void işaretçi cast. Eklenmesi `context` parametreyi yapar `bsearch_s` ek bağlam verileri kullanılabilir hale getirmek için statik değişkenler kullanımıyla ilişkili yeniden giriş hataları önlemek için kullanılabilir olduğundan daha güvenli `compare` işlevi.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`bsearch_s`|\<stdlib.h > ve \<search.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Bu program bir dize dizisi ile sıralar [qsort_s](../../c-runtime-library/reference/qsort-s.md)ve "kat" word bulmak için bsearch_s kullanır.  
-  
-```  
-// crt_bsearch_s.cpp  
-// This program uses bsearch_s to search a string array,  
-// passing a locale as the context.  
-// compile with: /EHsc  
-#include <stdlib.h>  
-#include <stdio.h>  
-#include <search.h>  
-#include <process.h>  
-#include <locale.h>  
-#include <locale>  
-#include <windows.h>  
-using namespace std;  
-  
-// The sort order is dependent on the code page.  Use 'chcp' at the  
-// command line to change the codepage.  When executing this application,  
-// the command prompt codepage must match the codepage used here:  
-  
-#define CODEPAGE_850  
-  
-#ifdef CODEPAGE_850  
-#define ENGLISH_LOCALE "English_US.850"  
-#endif  
-  
-#ifdef CODEPAGE_1252  
-#define ENGLISH_LOCALE "English_US.1252"  
-#endif  
-  
-// The context parameter lets you create a more generic compare.  
-// Without this parameter, you would have stored the locale in a  
-// static variable, thus making it vulnerable to thread conflicts  
-// (if this were a multithreaded program).  
-  
-int compare( void *pvlocale, char **str1, char **str2)  
-{  
-    char *s1 = *str1;  
-    char *s2 = *str2;  
-  
-    locale& loc = *( reinterpret_cast< locale * > ( pvlocale));  
-  
-    return use_facet< collate<char> >(loc).compare(  
-       s1, s1+strlen(s1),  
-       s2, s2+strlen(s2) );  
-}  
-  
-int main( void )  
-{  
-   char *arr[] = {"dog", "pig", "horse", "cat", "human", "rat", "cow", "goat"};  
-  
-   char *key = "cat";  
-   char **result;  
-   int i;  
-  
-   /* Sort using Quicksort algorithm: */  
-   qsort_s( arr,  
-            sizeof(arr)/sizeof(arr[0]),  
-            sizeof( char * ),  
-            (int (*)(void*, const void*, const void*))compare,  
-            &locale(ENGLISH_LOCALE) );  
-  
-   for( i = 0; i < sizeof(arr)/sizeof(arr[0]); ++i )    /* Output sorted list */  
-      printf( "%s ", arr[i] );  
-  
-   /* Find the word "cat" using a binary search algorithm: */  
-   result = (char **)bsearch_s( &key,  
-                                arr,  
-                                sizeof(arr)/sizeof(arr[0]),  
-                                sizeof( char * ),  
-                                (int (*)(void*, const void*, const void*))compare,  
-                                &locale(ENGLISH_LOCALE) );  
-   if( result )  
-      printf( "\n%s found at %Fp\n", *result, result );  
-   else  
-      printf( "\nCat not found!\n" );  
-}  
-```  
-  
-```Output  
-cat cow dog goat horse human pig rat  
-cat found at 002F0F04  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)   
- [_lfind](../../c-runtime-library/reference/lfind.md)   
- [_lsearch](../../c-runtime-library/reference/lsearch.md)   
- [qsort](../../c-runtime-library/reference/qsort.md)
+
+İkili arama sıralanmış bir dizinin gerçekleştirir. Bu sürümüdür [bsearch](bsearch.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void *bsearch_s(
+   const void *key,
+   const void *base,
+   size_t number,
+   size_t width,
+   int ( __cdecl *compare ) ( void *, const void *key, const void *datum),
+   void * context
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Anahtarı*<br/>
+Aranacak nesne.
+
+*base*<br/>
+Arama verilerini temel işaretçi.
+
+*Sayı*<br/>
+Öğe sayısı.
+
+*Genişlik*<br/>
+Öğe genişliği.
+
+*Karşılaştırma*<br/>
+İki öğe karşılaştırır geri çağırma işlevi. İlk bağımsız değişken *bağlamı* işaretçi. İkinci bağımsız değişkeni gösteren bir işaretçidir *anahtar* arama için. Üçüncü bağımsız değişkeni bir dizi öğesi ile Karşılaştırılacak işaretçidir *anahtar*.
+
+*bağlam*<br/>
+Karşılaştırma işlevinde erişilebilen bir nesne için bir işaretçi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**bsearch_s** işaretçi için bir örneğini döndüren *anahtar* gösterdiği dizideki *temel*. Varsa *anahtar* , işlevi döndürür bulunamadı **NULL**. Dizi artan sıralama değil veya yinelenen kayıtları aynı anahtarlarla içeriyorsa, öngörülemeyen bir sonucudur.
+
+İşlev için geçersiz parametreler aktarılırsa geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+### <a name="error-conditions"></a>Hata koşulları
+
+|||||||
+|-|-|-|-|-|-|
+|*Anahtarı*|*base*|*Karşılaştırma*|*Sayı*|*Genişlik*|**errno**|
+|**NULL**|tüm|tüm|tüm|tüm|**EINVAL**|
+|tüm|**NULL**|tüm|!= 0|tüm|**EINVAL**|
+|tüm|tüm|tüm|tüm|= 0|**EINVAL**|
+|tüm|tüm|**NULL**|bir|tüm|**EINVAL**|
+
+## <a name="remarks"></a>Açıklamalar
+
+**Bsearch_s** işlevi gerçekleştiren bir ikili arama sıralanmış bir dizi *numarası* öğeleri, her biri *genişliği* bayt cinsinden boyutu. *Temel* aranacak, dizi tabanı için bir işaretçi bir değerdir ve *anahtar* Aranan değerdir. *Karşılaştırmak* parametredir bir işaretçi bir dizi öğesine istenen anahtarına karşılaştırır ve ilişkilerini belirterek aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama:
+
+|Tarafından döndürülen değer *karşılaştırmak* yordamı|Açıklama|
+|-----------------------------------------|-----------------|
+|\< 0|Dizi öğesi değerinden anahtardır.|
+|0|Anahtar dizi öğesine eşittir.|
+|> 0|Dizi öğesi büyük anahtardır.|
+
+*Bağlamı* Aranan veri yapısı bir nesne bir parçasıdır ve karşılaştırma işlevi nesnenin üyelerine erişmesi durumunda işaretçi yararlı olabilir. *Karşılaştırmak* işlevi uygun nesne türüne ve erişim üyeleri bu nesnenin void işaretçi cast. Eklenmesi *bağlamı* parametreyi yapar **bsearch_s** ek bağlam verileri kullanılabilir hale getirmek için statik değişkenler kullanımıyla ilişkili yeniden giriş hataları önlemek için kullanılabilir olduğundan daha güvenli *karşılaştırmak* işlevi.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**bsearch_s**|\<stdlib.h > ve \<search.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Bu program bir dize dizisi ile sıralar [qsort_s](qsort-s.md)ve "kat" word bulmak için bsearch_s kullanır.
+
+```cpp
+// crt_bsearch_s.cpp
+// This program uses bsearch_s to search a string array,
+// passing a locale as the context.
+// compile with: /EHsc
+#include <stdlib.h>
+#include <stdio.h>
+#include <search.h>
+#include <process.h>
+#include <locale.h>
+#include <locale>
+#include <windows.h>
+using namespace std;
+
+// The sort order is dependent on the code page.  Use 'chcp' at the
+// command line to change the codepage.  When executing this application,
+// the command prompt codepage must match the codepage used here:
+
+#define CODEPAGE_850
+
+#ifdef CODEPAGE_850
+#define ENGLISH_LOCALE "English_US.850"
+#endif
+
+#ifdef CODEPAGE_1252
+#define ENGLISH_LOCALE "English_US.1252"
+#endif
+
+// The context parameter lets you create a more generic compare.
+// Without this parameter, you would have stored the locale in a
+// static variable, thus making it vulnerable to thread conflicts
+// (if this were a multithreaded program).
+
+int compare( void *pvlocale, char **str1, char **str2)
+{
+    char *s1 = *str1;
+    char *s2 = *str2;
+
+    locale& loc = *( reinterpret_cast< locale * > ( pvlocale));
+
+    return use_facet< collate<char> >(loc).compare(
+       s1, s1+strlen(s1),
+       s2, s2+strlen(s2) );
+}
+
+int main( void )
+{
+   char *arr[] = {"dog", "pig", "horse", "cat", "human", "rat", "cow", "goat"};
+
+   char *key = "cat";
+   char **result;
+   int i;
+
+   /* Sort using Quicksort algorithm: */
+   qsort_s( arr,
+            sizeof(arr)/sizeof(arr[0]),
+            sizeof( char * ),
+            (int (*)(void*, const void*, const void*))compare,
+            &locale(ENGLISH_LOCALE) );
+
+   for( i = 0; i < sizeof(arr)/sizeof(arr[0]); ++i )    /* Output sorted list */
+      printf( "%s ", arr[i] );
+
+   /* Find the word "cat" using a binary search algorithm: */
+   result = (char **)bsearch_s( &key,
+                                arr,
+                                sizeof(arr)/sizeof(arr[0]),
+                                sizeof( char * ),
+                                (int (*)(void*, const void*, const void*))compare,
+                                &locale(ENGLISH_LOCALE) );
+   if( result )
+      printf( "\n%s found at %Fp\n", *result, result );
+   else
+      printf( "\nCat not found!\n" );
+}
+```
+
+```Output
+cat cow dog goat horse human pig rat
+cat found at 002F0F04
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

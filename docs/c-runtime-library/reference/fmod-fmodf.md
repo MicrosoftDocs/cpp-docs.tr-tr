@@ -1,16 +1,17 @@
 ---
-title: fmod, fmodf | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: fmod, fmodf, fmodl | Microsoft Docs
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fmod
 - fmodf
+- fmodl
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -33,90 +34,100 @@ dev_langs:
 helpviewer_keywords:
 - calculating floating-point remainders
 - fmodf function
+- fmodl function
 - fmod function
 - floating-point numbers, calculating remainders
 ms.assetid: 6962d369-d11f-40b1-a6d7-6f67239f8a23
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 042bf7fec2d8e05628f09297f4af92011237fc5f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c31ec67e3b5c75c334a985461365c7b139758427
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="fmod-fmodf"></a>fmod, fmodf
-Kayan nokta kalanı hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double fmod(   
-   double x,  
-   double y   
-);  
-float fmod(  
-   float x,  
-   float y   
-);  // C++ only  
-long double fmod(  
-   long double x,  
-   long double y  
-);  // C++ only  
-float fmodf(   
-   float x,  
-   float y   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `x`, `y`  
- Kayan nokta değerleri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `fmod` kayan nokta geri kalanı döndürür `x`  /  `y`. Varsa değerini `y` 0.0, olan `fmod` sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için `printf` ailesi, bkz: [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- `fmod` İşlevi kayan nokta kalanı hesaplar `f` , `x`  /  `y` şekilde `x`  =  `i` `*` `y`  +  `f`, burada `i` bir tamsayıdır `f` aynı işarete sahip `x`ve mutlak değerini `f` mutlak değerini'dan küçük `y`.  
-  
- C++ verir aşırı yüklemesi, aşırı çağırması `fmod`. Bir C programı `fmod` her zaman iki double alır ve bir double döndürür.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fmod`, `fmodf`|\<Math.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_fmod.c  
-// This program displays a floating-point remainder.  
-  
-#include <math.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   double w = -10.0, x = 3.0, z;  
-  
-   z = fmod( w, x );  
-   printf( "The remainder of %.2f / %.2f is %f\n", w, x, z );  
-}  
-```  
-  
-```Output  
-The remainder of -10.00 / 3.00 is -1.000000  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [ceil, ceilf, ceill](../../c-runtime-library/reference/ceil-ceilf-ceill.md)   
- [fabs, fabsf, fabsl](../../c-runtime-library/reference/fabs-fabsf-fabsl.md)   
- [floor, floorf, floorl](../../c-runtime-library/reference/floor-floorf-floorl.md)   
- [_CIfmod](../../c-runtime-library/cifmod.md)
+# <a name="fmod-fmodf-fmodl"></a>fmod, fmodf, fmodl
+
+Kayan nokta kalanı hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double fmod(
+   double x,
+   double y
+);
+float fmod(
+   float x,
+   float y
+);  // C++ only
+long double fmod(
+   long double x,
+   long double y
+);  // C++ only
+float fmodf(
+   float x,
+   float y
+);
+long double fmodl(
+   long double x,
+   long double y
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*, *y*<br/>
+Kayan nokta değerleri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**fmod** kayan nokta geri kalanı döndürür *x* / *y*. Varsa değerini *y* 0.0, olan **fmod** sessiz NaN döndürür. Sessiz NaN tarafından gösterimini hakkında bilgi için **printf** ailesi, bkz: [printf](printf-printf-l-wprintf-wprintf-l.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+**Fmod** işlevi kayan nokta kalanı hesaplar *f* , *x* / *y* şekilde *x*  =  *ı* * *y* + *f*, burada *ı* bir tamsayıdır *f* aynı işarete sahip *x*ve mutlak değerini *f* mutlak değerini'dan küçük *y*.
+
+C++ verir aşırı yüklemesi, aşırı çağırması **fmod** alın ve dönüş **float** ve **uzun** **çift** değerleri. Bir C programı **fmod** her zaman iki alan **çift** bağımsız değişkenleri ve döndürür bir **çift**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fmod**, **fmodf**, **fmodl**|\<Math.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_fmod.c
+// This program displays a floating-point remainder.
+
+#include <math.h>
+#include <stdio.h>
+
+int main( void )
+{
+   double w = -10.0, x = 3.0, z;
+
+   z = fmod( w, x );
+   printf( "The remainder of %.2f / %.2f is %f\n", w, x, z );
+}
+```
+
+```Output
+The remainder of -10.00 / 3.00 is -1.000000
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[ceil, ceilf, ceill](ceil-ceilf-ceill.md)<br/>
+[fabs, fabsf, fabsl](fabs-fabsf-fabsl.md)<br/>
+[floor, floorf, floorl](floor-floorf-floorl.md)<br/>
+[_CIfmod](../../c-runtime-library/cifmod.md)<br/>

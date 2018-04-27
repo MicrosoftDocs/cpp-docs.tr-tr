@@ -1,12 +1,12 @@
 ---
 title: j0, j1, jn | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - jn
@@ -35,17 +35,18 @@ helpviewer_keywords:
 - j1 function
 - j0 function
 ms.assetid: ec8a9512-aacb-423c-a845-fc8927e6e21d
-caps.latest.revision: 
+caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c5e77d2d4e62c3c54e2ca879b162075216680c
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: df2e35d000abc14f2da7b0264c2fc41ff06fdd12
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="j0-j1-jn"></a>j0, j1, jn
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_j0, _j1, _jn](../../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.
+
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_j0, _j1, _jn](bessel-functions-j0-j1-jn-y0-y1-yn.md) yerine.

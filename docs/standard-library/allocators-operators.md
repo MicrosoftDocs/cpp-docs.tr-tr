@@ -1,10 +1,10 @@
 ---
-title: "&lt;allocators&gt; işleçleri | Microsoft Docs"
-ms.custom: 
+title: '&lt;allocators&gt; işleçleri | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - allocators/std::operator!=
@@ -12,13 +12,13 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: b55d67cb-3c69-46bf-ad40-e845fb096c4e
-caps.latest.revision: 
+caps.latest.revision: 11
 manager: ghogen
-ms.openlocfilehash: e84f3c66adaf4d4d0cd5af68ee51841025bd89b2
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: d6d69d07c8b16d2749c7ac62eb290f180b1e1b09
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ltallocatorsgt-operators"></a>&lt;allocators&gt; işleçleri
 
@@ -28,7 +28,7 @@ Tanımlanan genel şablon işleci işlevleri bunlar &lt;allocators&gt;. Sınıf 
 |-|-|
 |[operator!=](#op_neq)|[operator==](#op_eq_eq)|
 
-##  <a name="op_neq"></a>  operator! =
+## <a name="op_neq"></a>  operator! =
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitsizliği sınar.
 
@@ -54,7 +54,7 @@ bool operator!=(
 
 Şablon işleci döndürür `!(left == right)`.
 
-##  <a name="op_eq_eq"></a>  operator ==
+## <a name="op_eq_eq"></a>  operator ==
 
 Belirtilen sınıfın ayırıcı nesneleri arasındaki eşitliği sınar.
 
@@ -82,4 +82,4 @@ Bu şablon işleci döndürür `left.equals(right)`.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<allocators >](../standard-library/allocators-header.md)  
+[\<allocators >](../standard-library/allocators-header.md)

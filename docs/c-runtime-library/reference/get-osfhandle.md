@@ -1,12 +1,12 @@
 ---
 title: _get_osfhandle | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/12/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _get_osfhandle
@@ -34,55 +34,55 @@ helpviewer_keywords:
 - _get_osfhandle function
 - file handles [C++], operating system
 ms.assetid: 0bdd728a-4fd8-410b-8c9f-01a121135196
-caps.latest.revision: 
+caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ffc65e12c4a9023d0ef649bbf2cb5e8f7e76808
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ef9481cb0ad962de96b710b31ac1460b9703ae6e
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getosfhandle"></a>_get_osfhandle
 
-Belirtilen dosya tanımlayıcısı ile ilişkili işletim sistemi dosya işleci alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-intptr_t _get_osfhandle(   
-   int fd   
-);  
-```  
-  
+Belirtilen dosya tanımlayıcısı ile ilişkili işletim sistemi dosya işleci alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+intptr_t _get_osfhandle(
+   int fd
+);
+```
+
 ### <a name="parameters"></a>Parametreler
 
-*fd*  
-Varolan bir dosya tanımlayıcısı.  
-  
+*FD*<br/>
+Varolan bir dosya tanımlayıcısı.
+
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür `INVALID_HANDLE_VALUE` (-1) ve ayarlar `errno` için `EBADF`, geçersiz bir dosya tanıtıcısı belirten.  
-  
+Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya tanıtıcısı belirten.
+
 ## <a name="remarks"></a>Açıklamalar
 
-İşletim sistemi (OS) dosya işleyici tarafından elde edilir bir dosyayı kapatmak için `_get_osfhandle`, çağrı [ \_kapatmak](../../c-runtime-library/reference/close.md) dosya tanımlayıcısı üzerinde *fd*. Çağırmayın `CloseHandle` bu işlevin dönüş değeri. Temel işletim sistemi dosya işleci tarafından sahip olunan *fd* tanımlayıcısı dosya ve ne zaman kapalı `_close` üzerinde adlı *fd*. Dosya tanımlayıcısı aitse bir `FILE *` stream, ardından çağırma [fclose](../../c-runtime-library/reference/fclose-fcloseall.md) üzerindeki `FILE *` akışı kapatır dosya tanımlayıcısı ve temel işletim sistemi dosya işleci. Bu durumda, çağırmayın `_close` üzerinde dosya tanımlayıcısı.
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_get_osfhandle`|\<io.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.
+İşletim sistemi (OS) dosya işleyici tarafından elde edilir bir dosyayı kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Çağırmayın **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya işleci tarafından sahip olunan *fd* tanımlayıcısı dosya ve ne zaman kapalı [_close](close.md) üzerinde adlı *fd*. Dosya tanımlayıcısı aitse bir **dosya \***  stream, ardından çağırma [fclose](fclose-fcloseall.md) üzerindeki **dosya \***  akış dosya tanımlayıcısı kapatır ve temel işletim sistemi dosya işleci. Bu durumda, çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
 
-[Dosya işleme](../../c-runtime-library/file-handling.md)   
-[_close](../../c-runtime-library/reference/close.md)   
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
-[_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md)   
-[_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_get_osfhandle**|\<io.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[_close](close.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_dup, _dup2](dup-dup2.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

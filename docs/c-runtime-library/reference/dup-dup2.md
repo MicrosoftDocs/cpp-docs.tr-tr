@@ -1,12 +1,12 @@
 ---
 title: _dup, _dup2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _dup
@@ -37,127 +37,126 @@ helpviewer_keywords:
 - dup2 function
 - _dup function
 ms.assetid: 4d07e92c-0d76-4832-a770-dfec0e7a0cfa
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 687c8e0d2f9f8f860e78a1c8e44cab6886e3cf04
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 73199b003191e6c954cb8d11965af73d987dd2f2
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="dup-dup2"></a>_dup, _dup2
-Açık bir dosya için ikinci bir dosya tanımlayıcısı oluşturur (`_dup`), veya bir dosya tanımlayıcısı yeniden atar (`_dup2`).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _dup(   
-   int fd   
-);  
-int _dup2(   
-   int fd1,  
-   int fd2   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `fd`, `fd1`  
- Dosyayı açmak için başvuran dosya tanımlayıcıları.  
-  
- `fd2`  
- Herhangi dosya tanımlayıcısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_dup` Yeni bir dosya tanımlayıcısı döndürür. `_dup2` başarılı olduğunu belirtmek için 0 değerini döndürür. Bir hata oluşursa, her işlev dönüşleri -1 ve kümelerini `errno` için `EBADF` dosya tanımlayıcısı geçersizse veya için `EMFILE` hiçbir daha fazla dosya tanımlayıcıları varsa. Geçersiz dosya tanımlayıcısı söz konusu olduğunda, işlevi de geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).  
-  
- Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_dup` Ve `_dup2` işlevler şu anda açık bir dosyayla ikinci bir dosya tanımlayıcısı ilişkilendirin. Bu işlevler için gibi bir önceden tanımlanmış dosya tanımlayıcısı ilişkilendirmek için kullanılan `stdout`, farklı bir dosya ile. Dosya işlemleri ya da dosya tanımlayıcısı kullanılarak gerçekleştirilen kullanılabilir. Dosya için izin verilen erişim türü yeni bir açıklayıcısı oluşturma işlemi etkilenmez. `_dup` verilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısı döndürür. `_dup2` zorlar `fd2` aynı dosyada başvurmak için `fd1`. Varsa `fd2` ilişkili açık bir dosyayı çağrısı zaman bu dosyayı kapalı.  
-  
- Her ikisi de `_dup` ve `_dup2` dosya tanımlayıcıları parametre olarak kabul edin. Bir akış geçirmek için `(FILE *)` kullanın ya da bu işlevler için [_fileno](../../c-runtime-library/reference/fileno.md). `fileno` Yordamı şu anda belirtilen akışa ile ilişkili dosya tanımlayıcısı döndürür. Aşağıdaki örnekte nasıl ilişkilendirileceğini gösterir `stderr` (olarak tanımlanan `FILE` `*` Stdio.h içinde) ile bir dosya tanımlayıcısı:  
-  
-```  
-int cstderr = _dup( _fileno( stderr ));  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_dup`|\<io.h >|  
-|`_dup2`|\<io.h >|  
-  
- Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri de kullanabilmek için önce yeniden yönlendirilmesi gerekiyor [! INCLUDEUWP uygulamalar. Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_dup.c  
-// This program uses the variable old to save  
-// the original stdout. It then opens a new file named  
-// DataFile and forces stdout to refer to it. Finally, it  
-// restores stdout to its original state.  
-//  
-  
-#include <io.h>  
-#include <stdlib.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   int old;  
-   FILE *DataFile;  
-  
-   old = _dup( 1 );   // "old" now refers to "stdout"   
-                      // Note:  file descriptor 1 == "stdout"   
-   if( old == -1 )  
-   {  
-      perror( "_dup( 1 ) failure" );  
-      exit( 1 );  
-   }  
-   _write( old, "This goes to stdout first\n", 26 );  
-   if( fopen_s( &DataFile, "data", "w" ) != 0 )  
-   {  
-      puts( "Can't open file 'data'\n" );  
-      exit( 1 );  
-   }  
-  
-   // stdout now refers to file "data"   
-   if( -1 == _dup2( _fileno( DataFile ), 1 ) )  
-   {  
-      perror( "Can't _dup2 stdout" );  
-      exit( 1 );  
-   }  
-   puts( "This goes to file 'data'\n" );  
-  
-   // Flush stdout stream buffer so it goes to correct file   
-   fflush( stdout );  
-   fclose( DataFile );  
-  
-   // Restore original stdout   
-   _dup2( old, 1 );  
-   puts( "This goes to stdout\n" );  
-   puts( "The file 'data' contains:" );  
-   _flushall();  
-   system( "type data" );  
-}  
-```  
-  
-```Output  
-This goes to stdout first  
-This goes to stdout  
-  
-The file 'data' contains:  
-This goes to file 'data'  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)   
- [_close](../../c-runtime-library/reference/close.md)   
- [_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
- [_open, _wopen](../../c-runtime-library/reference/open-wopen.md)
+
+Açık bir dosya için ikinci bir dosya tanımlayıcısı oluşturur (**_dup**), veya bir dosya tanımlayıcısı yeniden atar (**_dup2**).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _dup( int fd );
+int _dup2( int fd1, int fd2 );
+```
+
+### <a name="parameters"></a>Parametreler
+
+*FD*, *fd1*<br/>
+Dosyayı açmak için başvuran dosya tanımlayıcıları.
+
+*fd2*<br/>
+Herhangi dosya tanımlayıcısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_dup** yeni bir dosya tanımlayıcısı döndürür. **_dup2** başarılı olduğunu belirtmek için 0 değerini döndürür. Bir hata oluşursa, her işlev dönüşleri -1 ve kümelerini **errno** için **EBADF** dosya tanımlayıcısı geçersizse veya için **EMFILE** hiçbir daha fazla dosya tanımlayıcıları varsa. Geçersiz dosya tanımlayıcısı söz konusu olduğunda, işlevi de geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+
+Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Dup** ve **_dup2** işlevler şu anda açık bir dosyayla ikinci bir dosya tanımlayıcısı ilişkilendirin. Bu işlevler için gibi bir önceden tanımlanmış dosya tanımlayıcısı ilişkilendirmek için kullanılan **stdout**, farklı bir dosya ile. Dosya işlemleri ya da dosya tanımlayıcısı kullanılarak gerçekleştirilen kullanılabilir. Dosya için izin verilen erişim türü yeni bir açıklayıcısı oluşturma işlemi etkilenmez. **_dup** verilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısı döndürür. **_dup2** zorlar *fd2* aynı dosyada başvurmak için *fd1*. Varsa *fd2* ilişkili açık bir dosyayı çağrısı zaman bu dosyayı kapalı.
+
+Her ikisi de **_dup** ve **_dup2** dosya tanımlayıcıları parametre olarak kabul edin. Bir akış geçirmek için (**dosya \*** ) kullanın ya da bu işlevler için [_fileno](fileno.md). **Fileno** yordamı şu anda belirtilen akışa ile ilişkili dosya tanımlayıcısı döndürür. Aşağıdaki örnek ile nasıl ilişkilendirildiğini gösterir **stderr** (olarak tanımlanan **dosya \***  Stdio.h içinde) ile bir dosya tanımlayıcısı:
+
+```C
+int cstderr = _dup( _fileno( stderr ));
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_dup**|\<io.h >|
+|**_dup2**|\<io.h >|
+
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_dup.c
+// This program uses the variable old to save
+// the original stdout. It then opens a new file named
+// DataFile and forces stdout to refer to it. Finally, it
+// restores stdout to its original state.
+
+#include <io.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main( void )
+{
+   int old;
+   FILE *DataFile;
+
+   old = _dup( 1 );   // "old" now refers to "stdout"
+                      // Note:  file descriptor 1 == "stdout"
+   if( old == -1 )
+   {
+      perror( "_dup( 1 ) failure" );
+      exit( 1 );
+   }
+   _write( old, "This goes to stdout first\n", 26 );
+   if( fopen_s( &DataFile, "data", "w" ) != 0 )
+   {
+      puts( "Can't open file 'data'\n" );
+      exit( 1 );
+   }
+
+   // stdout now refers to file "data"
+   if( -1 == _dup2( _fileno( DataFile ), 1 ) )
+   {
+      perror( "Can't _dup2 stdout" );
+      exit( 1 );
+   }
+   puts( "This goes to file 'data'\n" );
+
+   // Flush stdout stream buffer so it goes to correct file
+   fflush( stdout );
+   fclose( DataFile );
+
+   // Restore original stdout
+   _dup2( old, 1 );
+   puts( "This goes to stdout\n" );
+   puts( "The file 'data' contains:" );
+   _flushall();
+   system( "type data" );
+}
+```
+
+```Output
+This goes to stdout first
+This goes to stdout
+
+The file 'data' contains:
+This goes to file 'data'
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[_close](close.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>

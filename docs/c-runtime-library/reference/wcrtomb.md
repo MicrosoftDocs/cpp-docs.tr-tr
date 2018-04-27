@@ -1,12 +1,12 @@
 ---
 title: wcrtomb | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - wcrtomb
@@ -33,113 +33,119 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
-caps.latest.revision: 
+caps.latest.revision: 26
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203b3ec1d72b7691aa8e46d60784100c0bf89a5e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7618900dd313a31f7d514698c0ac7a670446d96d
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="wcrtomb"></a>wcrtomb
-Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcrtomb_s](../../c-runtime-library/reference/wcrtomb-s.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-size_t wcrtomb(  
-   char *mbchar,  
-   wchar_t wchar,  
-   mbstate_t *mbstate  
-);  
-template <size_t size>  
-size_t wcrtomb(  
-   char (&mbchar)[size],  
-   wchar_t wchar,  
-   mbstate_t *mbstate  
-); // C++ only  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `mbchar`  
- Sonuçta elde edilen çok baytlı karakter dönüştürülür.  
-  
- [in] `wchar`  
- Dönüştürülecek geniş karakter.  
-  
- [in] `mbstate`  
- Bir işaretçi bir `mbstate_t` nesnesi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir hata oluşursa dönüştürülen birden çok baytlı karakter yoksa -1 göstermek için gereken bayt sayısını döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `wcrtomb` İşlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak bir geniş karakter `mbstate`, içerdiği değerinden `wchar`, veri tarafından temsil edilen adresine `mbchar`. Dönüş değeri karşılık gelen birden çok baytlı karakter temsil etmek için gereken bayt sayısıdır. ancak değil döndürülecek birden fazla `MB_CUR_MAX` bayt sayısı.  
-  
- Varsa `mbstate` null, iç `mbstate_t` dönüştürme durumunu içeren bir nesne `mbchar` kullanılır. Varsa bir karakter dizisi `wchar` karşılık gelen çok baytlı yok karakter gösterimi, -1 döndürülür ve `errno` ayarlanır `EILSEQ`.  
-  
- `wcrtomb` İşlevi farklı olarak [wctomb, _wctomb_l](../../c-runtime-library/reference/wctomb-wctomb-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan `mbstate` sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız `wcsrlen` yerine `wcsnlen`, bir sonraki çağrı, `wcsrtombs` yerine kullanılan `wcstombs`.  
-  
- C++'da, bu işlev bu işlevin yeni, güvenli ortaklarınıza çağıran bir şablon aşırı sahiptir. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
-  
-## <a name="exceptions"></a>Özel Durumlar  
- `wcrtomb` İşlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu `setlocale` bu işlev yürütülürken ve sırasında `mbstate` null.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_wcrtomb.c  
-// compile with: /W3  
-// This program converts a wide character  
-// to its corresponding multibyte character.  
-  
-#include <string.h>  
-#include <stdio.h>  
-#include <wchar.h>  
-  
-int main( void )  
-{  
-    size_t      sizeOfCovertion = 0;  
-    mbstate_t   mbstate;  
-    char        mbStr = 0;  
-    wchar_t*    wcStr = L"Q";  
-  
-    // Reset to initial conversion state  
-    memset(&mbstate, 0, sizeof(mbstate));  
-  
-    sizeOfCovertion = wcrtomb(&mbStr, *wcStr, &mbstate); // C4996  
-    // Note: wcrtomb is deprecated; consider using wcrtomb_s instead  
-    if (sizeOfCovertion > 0)  
-    {  
-        printf("The corresponding wide character \"");  
-        wprintf(L"%s\"", wcStr);  
-        printf(" was converted to the \"%c\" ", mbStr);  
-        printf("multibyte character.\n");  
-    }  
-    else  
-    {  
-        printf("No corresponding multibyte character "  
-               "was found.\n");  
-    }  
-}  
-```  
-  
-```Output  
-The corresponding wide character "Q" was converted to the "Q" multibyte character.  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`wcrtomb`|\<wchar.h >|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [mbsinit](../../c-runtime-library/reference/mbsinit.md)
+
+Geniş karakter, birden çok baytlı karakter gösterimine dönüştürür. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [wcrtomb_s](wcrtomb-s.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+size_t wcrtomb(
+   char *mbchar,
+   wchar_t wchar,
+   mbstate_t *mbstate
+);
+template <size_t size>
+size_t wcrtomb(
+   char (&mbchar)[size],
+   wchar_t wchar,
+   mbstate_t *mbstate
+); // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*mbchar*<br/>
+Sonuçta elde edilen çok baytlı karakter dönüştürülür.
+
+*wchar*<br/>
+Dönüştürülecek geniş karakter.
+
+*mbstate*<br/>
+Bir işaretçi bir **mbstate_t** nesnesi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir hata oluşursa dönüştürülen birden çok baytlı karakter yoksa -1 göstermek için gereken bayt sayısını döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Wcrtomb** işlevi dönüştürür bulunan belirtilen dönüşüm durumunu'den başlayarak bir geniş karakter *mbstate*, içerdiği değerinden *wchar*, içine Adres temsil ettiği *mbchar*. Dönüş değeri karşılık gelen birden çok baytlı karakter temsil etmek için gereken bayt sayısıdır. ancak değil döndürülecek birden fazla **MB_CUR_MAX** bayt sayısı.
+
+Varsa *mbstate* null, iç **mbstate_t** dönüştürme durumunu içeren bir nesne *mbchar* kullanılır. Varsa bir karakter dizisi *wchar* karşılık gelen çok baytlı yok karakter gösterimi, -1 döndürülür ve **errno** ayarlanır **EILSEQ**.
+
+**Wcrtomb** işlevi farklı olarak [wctomb, _wctomb_l](wctomb-wctomb-l.md) kendi restartability tarafından. Dönüştürme durumu depolanan *mbstate* sonraki çağrılar aynı ya da yeniden başlatılabilir diğer işlevleri için. Sonuçlar, yeniden başlatılabilir ve nonrestartable işlevleri kullanımını kullanırken tanımlanmamış. Örneğin, bir uygulama kullanırsınız **wcsrlen** yerine **wcsnlen**, bir sonraki çağrı, **wcsrtombs** yerine kullanılan **wcstombs**.
+
+C++'da, bu işlev bu işlevin yeni, güvenli ortaklarınıza çağıran bir şablon aşırı sahiptir. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+
+## <a name="exceptions"></a>Özel Durumlar
+
+**Wcrtomb** işlevi, geçerli iş parçacığının hiçbir işlev çağrıları sürece çoklu iş parçacığı güvenli olduğu **setlocale** bu işlev yürütülürken ve sırasında *mbstate* null.
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_wcrtomb.c
+// compile with: /W3
+// This program converts a wide character
+// to its corresponding multibyte character.
+
+#include <string.h>
+#include <stdio.h>
+#include <wchar.h>
+
+int main( void )
+{
+    size_t      sizeOfCovertion = 0;
+    mbstate_t   mbstate;
+    char        mbStr = 0;
+    wchar_t*    wcStr = L"Q";
+
+    // Reset to initial conversion state
+    memset(&mbstate, 0, sizeof(mbstate));
+
+    sizeOfCovertion = wcrtomb(&mbStr, *wcStr, &mbstate); // C4996
+    // Note: wcrtomb is deprecated; consider using wcrtomb_s instead
+    if (sizeOfCovertion > 0)
+    {
+        printf("The corresponding wide character \"");
+        wprintf(L"%s\"", wcStr);
+        printf(" was converted to the \"%c\" ", mbStr);
+        printf("multibyte character.\n");
+    }
+    else
+    {
+        printf("No corresponding multibyte character "
+               "was found.\n");
+    }
+}
+```
+
+```Output
+The corresponding wide character "Q" was converted to the "Q" multibyte character.
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**wcrtomb**|\<wchar.h >|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[mbsinit](mbsinit.md)<br/>

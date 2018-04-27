@@ -1,102 +1,678 @@
 ---
-title: "atomic yapısı | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: atomic yapısı | Microsoft Docs
+ms.custom: ''
+ms.date: 04/20/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - atomic/std::atomic
 dev_langs:
 - C++
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5e7de7a5098aec10618c961444eb73b4597d0fc
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: ae025dd124e8091994bea1d6a19a7b55d3984fed
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="atomic-structure"></a>atomic Yapısı
-Türünde bir saklı değeri atomik işlemler gerçekleştiren bir nesneyi tanımlayan `Ty`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```
+
+Türünde bir saklı değeri atomik işlemler gerçekleştiren bir nesneyi tanımlayan *Ty*.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class Ty>
 struct atomic;
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[atomic](http://msdn.microsoft.com/Library/a538c43f-4d48-4308-ae1b-bab1839bccb8)|Atomik bir nesne oluşturur.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[atomic::operator Ty işleci](http://msdn.microsoft.com/Library/a366c700-c7a0-4bcb-8eb4-4b57dfaea065)|Okur ve saklanan değeri döndürür. ([atomic::load](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1))|  
-|[atomic::operator= Operator](http://msdn.microsoft.com/Library/fe161d57-47ae-4bad-92bf-ce32ac8d5953)|Saklanan değeri değiştirmek için belirtilen değeri kullanır. ([atomic::store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b))|  
-|[atomic::operator++ Operator](http://msdn.microsoft.com/Library/492959e9-1ea8-4e02-a031-82b1b92e91a0)|Depolanan değer artırır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator+= Operator](http://msdn.microsoft.com/Library/9ec97aa2-c9d7-436b-943d-2989eb2617dd)|Belirtilen bir değeri saklı değerine ekler. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator-- Operator](http://msdn.microsoft.com/Library/ad7c1ea7-1f6d-4a54-bf26-07630f749864)|Azaltır depolanan değer. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator-= Operator](http://msdn.microsoft.com/Library/902d0d9f-88fd-4500-aa2d-1e50f443e77c)|Saklanan değeri belirtilen değeri çıkarır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator&= Operator](http://msdn.microsoft.com/Library/90e730ac-12e1-4abb-98f5-4eadd6861a89)|Bit tabanlı gerçekleştirir `and` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator&#124;= Operator](http://msdn.microsoft.com/Library/f105eacc-31a6-4906-abba-f1cf013599b2)|Bit tabanlı gerçekleştirir `or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
-|[atomic::operator^= Operator](http://msdn.microsoft.com/Library/f2a4da9d-67e8-4249-9161-9998e72a33c2)|Bit tabanlı gerçekleştirir `exclusive or` belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[compare_exchange_strong](http://msdn.microsoft.com/Library/47bbf894-b28c-4ece-959e-67b3863cf4ed)|Gerçekleştiren bir `atomic_compare_and_exchange` işlemi `this` ve sonucu döndürür.|  
-|[compare_exchange_weak](http://msdn.microsoft.com/Library/e15e421a-f7a3-4272-993a-f487d2242e4f)|Gerçekleştiren bir `weak_atomic_compare_and_exchange` işlemi `this` ve sonucu döndürür.|  
-|[fetch_add](http://msdn.microsoft.com/Library/c68b91f2-6e8a-4ffa-8991-6bb6d466e1f3)|Belirtilen bir değeri saklı değerine ekler.|  
-|[fetch_and](http://msdn.microsoft.com/Library/a9c83001-b72c-4085-9640-f63f866714b9)|Bit tabanlı gerçekleştirir `and` belirtilen değere ve depolanan değer.|  
-|[fetch_or](http://msdn.microsoft.com/Library/4c532f7f-80c5-432a-b34b-48feacab8dca)|Bit tabanlı gerçekleştirir `or` belirtilen değere ve depolanan değer.|  
-|[fetch_sub](http://msdn.microsoft.com/Library/8cc80d4b-0942-45a3-9db8-bbf339a903e4)|Saklanan değeri belirtilen değeri çıkarır.|  
-|[fetch_xor](http://msdn.microsoft.com/Library/92bbaff8-ee29-4a1e-aee4-d9d405285bfe)|Bit tabanlı gerçekleştirir `exclusive or` belirtilen değere ve depolanan değer.|  
-|[is_lock_free](http://msdn.microsoft.com/Library/b99d5130-cdda-40a2-b14c-152b13a8ba45)|Belirtir olup olmadığını atomik işlemleri `this` olan *kilidi serbest*. Atomik bir tür olduğundan *kilidi serbest* ilgili türdeki atomik bir işlem kilitleri kullanıyorsanız.|  
-|[Yükleme](http://msdn.microsoft.com/Library/05212726-cf8a-46fe-83d2-c16ac2abb7d1)|Okur ve saklanan değeri döndürür.|  
-|[store](http://msdn.microsoft.com/Library/84759413-d664-47ef-a1f3-a73c5a62007b)|Saklanan değeri değiştirmek için belirtilen değeri kullanır.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Türü `Ty` olmalıdır *trivially copyable*. Diğer bir deyişle, kullanarak [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) kendi bayt kopyalamak için geçerli bir üretmek gerekir `Ty` özgün nesne eşit karşılaştırır nesnesi. `compare_exchange_weak` Ve `compare_exchange_strong` üye işlevlerini kullanmak [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) iki olup olmadığını belirlemek için `Ty` değerleri eşit. Bu işlevler kullanmaz bir `Ty`-tanımlı `operator==`. Üye işlevlerini `atomic` kullanmak `memcpy` türü değerleri kopyalamak için `Ty`.  
-  
- Kısmi uzmanlığı `atomic<Ty *>`, tüm işaretçi türleri için bulunmaktadır. Yönetilen işaretçi değeri bir uzaklık eklenmesi veya bir uzaklığı çıkarma uzmanlık etkinleştirir. Aritmetik işlemler türünde bir bağımsız değişken Al `ptrdiff_t` ve boyutuna göre bu bağımsız değişken Ayarla `Ty` aritmetik sıradan adresi ile tutarlı olacak şekilde.  
-  
- Dışında tam sayı her türü için bir uzmanlık var. `bool`. Her uzmanlık zengin bir atomik aritmetik ve mantıksal işlemleri için yöntemleri sağlar.  
-  
-||||  
-|-|-|-|  
-|`atomic<char>`|`atomic<signed char>`|`atomic<unsigned char>`|  
-|`atomic<char16_t>`|`atomic<char32_t>`|`atomic<wchar_t>`|  
-|`atomic<short>`|`atomic<unsigned short>`|`atomic<int>`|  
-|`atomic<unsigned int>`|`atomic<long>`|`atomic<unsigned long>`|  
-|`atomic<long long>`|`atomic<unsigned long long>`|  
-  
- Tam sayı özelleştirmeleri karşılık gelen öğesinden türetilen `atomic_integral` türleri. Örneğin, `atomic<unsigned int>` türetildiği `atomic_uint`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<atomik >  
-  
- **Namespace:** std  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [\<atomik >](../standard-library/atomic.md)   
- [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)
+```
 
+## <a name="members"></a>Üyeler
 
+|Üye|Açıklama|
+|----------|-----------------|
+|**Oluşturucusu**||
+|[atomic](#atomic)|Atomik bir nesne oluşturur.|
+|**İşleçler**||
+|[atomic::operator Ty](#op_ty)|Okur ve saklanan değeri döndürür. ([atomic::load](#load))|
+|[atomic::operator =](#op_eq)|Saklanan değeri değiştirmek için belirtilen değeri kullanır. ([atomic::store](#store))|
+|[atomic::operator ++](#op_inc)|Depolanan değer artırır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator +=](#op_add_eq)|Belirtilen bir değeri saklı değerine ekler. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator--](#op_dec)|Azaltır depolanan değer. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator-=](#op_sub_eq)|Saklanan değeri belirtilen değeri çıkarır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator & =](#op_and_eq)|Bit tabanlı gerçekleştirir ve belirtilen bir değeri ile depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator&#124;=](#op_or_eq)|Bit tabanlı gerçekleştirir veya belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|
+|[atomic::operator ^ =](#op_xor_eq)|Bit düzeyinde özel gerçekleştirir veya belirtilen değere ve depolanan değer. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.|
+|**İşlevler**||
+|[compare_exchange_strong](#compare_exchange_strong)|Gerçekleştiren bir *atomic_compare_and_exchange* işlemi **bu** ve sonucu döndürür.|
+|[compare_exchange_weak](#compare_exchange_weak)|Gerçekleştiren bir *weak_atomic_compare_and_exchange* işlemi **bu** ve sonucu döndürür.|
+|[fetch_add](#fetch_add)|Belirtilen bir değeri saklı değerine ekler.|
+|[fetch_and](#fetch_and)|Bit tabanlı gerçekleştirir ve belirtilen bir değeri ile depolanan değer.|
+|[fetch_or](#fetch_or)|Bit tabanlı gerçekleştirir veya belirtilen değere ve depolanan değer.|
+|[fetch_sub](#fetch_sub)|Saklanan değeri belirtilen değeri çıkarır.|
+|[fetch_xor](#fetch_xor)|Bit düzeyinde özel gerçekleştirir veya belirtilen değere ve depolanan değer.|
+|[is_lock_free](#is_lock_free)|Belirtir olup olmadığını atomik işlemleri **bu** olan *kilidi serbest*. Atomik bir tür olduğundan *kilidi serbest* ilgili türdeki atomik bir işlem kilitleri kullanıyorsanız.|
+|[Yükleme](#load)|Okur ve saklanan değeri döndürür.|
+|[Depolama](#store)|Saklanan değeri değiştirmek için belirtilen değeri kullanır.|
 
+## <a name="remarks"></a>Açıklamalar
+
+Türü *Ty* olmalıdır *trivially copyable*. Diğer bir deyişle, kullanarak [memcpy](../c-runtime-library/reference/memcpy-wmemcpy.md) kendi bayt kopyalamak için geçerli bir üretmek gerekir *Ty* özgün nesne eşit karşılaştırır nesnesi. [Compare_exchange_weak](#compare_exchange_weak) ve [compare_exchange_strong](#compare_exchange_strong) üye işlevlerini kullanmak [memcmp](../c-runtime-library/reference/memcmp-wmemcmp.md) iki olup olmadığını belirlemek için *Ty* değerleri eşit olduğu. Bu işlevler kullanmaz bir *Ty*-tanımlı **işleç ==**. Üye işlevlerini **atomik** kullanmak **memcpy** türü değerleri kopyalamak için *Ty*.
+
+Kısmi uzmanlığı ** atomik\<Ty * > **, tüm işaretçi türleri için bulunmaktadır. Yönetilen işaretçi değeri bir uzaklık eklenmesi veya bir uzaklığı çıkarma uzmanlık etkinleştirir. Aritmetik işlemler türünde bir bağımsız değişken Al **ptrdiff_t** ve boyutuna göre bu bağımsız değişken Ayarla *Ty* aritmetik sıradan adresi ile tutarlı olacak şekilde.
+
+Dışında tam sayı her türü için bir uzmanlık var. **bool**. Her uzmanlık zengin bir atomik aritmetik ve mantıksal işlemleri için yöntemleri sağlar.
+
+||||
+|-|-|-|
+|**atomik\<char >**|**atomik\<char imzalı >**|**atomik\<imzasız char >**|
+|**atomik\<char16_t >**|**atomik\<char32_t >**|**atomik\<wchar_t >**|
+|**atomik\<kısa >**|**atomik\<kısa imzasız >**|**atomik\<int >**|
+|**atomik\<imzasız int >**|**atomik\<uzun >**|**atomik\<uzun imzasız >**|
+|**atomik\<uzun uzun >**|**atomik\<uzun uzun imzasız >**|
+
+Tam sayı özelleştirmeleri karşılık gelen öğesinden türetilen **atomic_integral** türleri. Örneğin, **atomik\<imzasız int >** türetildiği **atomic_uint**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<atomik >
+
+**Namespace:** std
+
+## <a name="atomic"></a> atomic::atomic
+
+Atomik bir nesne oluşturur.
+
+```cpp
+atomic();
+atomic( const atomic& );
+atomic( Ty Value ) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Başlatma değeri.
+
+### <a name="remarks"></a>Açıklamalar
+
+Atomik nesneleri kopyalanamaz veya taşınamaz.
+
+Atomik işlemlerinden olan nesneler\<*Ty*> yalnızca türünde bir bağımsız değişken alan Oluşturucu tarafından başlatılan *Ty* ve toplu başlatma kullanarak değil. Ancak, atomic_integral nesneleri yalnızca toplu başlatma kullanılarak başlatılabilir.
+
+```cpp
+atomic<int> ai0 = ATOMIC_VAR_INIT(0);
+atomic<int> ai1(0);
+```
+
+## <a name="op_ty"></a> atomic::operator *Ty*
+
+Şablon, atomik belirtilen tür için işleci\<*Ty*>. Saklı değerinde alır  **\*bu**.
+
+```cpp
+atomic<Ty>::operator Ty() const volatile noexcept;
+atomic<Ty>::operator Ty() const noexcept;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç geçerli **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_eq"></a> atomic::operator =
+
+Belirtilen bir değeri depolar.
+
+```cpp
+Ty operator=(
+   Ty Value
+) volatile noexcept;
+Ty operator=(
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+A *Ty* nesnesi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür *değeri*.
+
+## <a name="op_inc"></a> atomic::operator ++
+
+Depolanan değer artırır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.
+
+```cpp
+Ty atomic<Ty>::operator++(int) volatile noexcept;
+Ty atomic<Ty>::operator++(int) noexcept;
+Ty atomic<Ty>::operator++() volatile noexcept;
+Ty atomic<Ty>::operator++() noexcept;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk iki işleç artırılır değerini döndürür; Son iki işleç artışı önce değerini döndürür. İşleçler kullanan **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_add_eq"></a> atomic::operator +=
+
+Belirtilen bir değeri saklı değerine ekler. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.
+
+```cpp
+Ty atomic<Ty>::operator+=(
+   Ty Value
+) volatile noexcept;
+Ty atomic<Ty>::operator+=(
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Bir tamsayı veya işaretçi değeri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* eklenmesi sonucunu içeren nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç kullanan **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_dec"></a> atomic::operator--
+
+Azaltır depolanan değer. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.
+
+```cpp
+Ty atomic<Ty>::operator--(int) volatile noexcept;
+Ty atomic<Ty>::operator--(int) noexcept;
+Ty atomic<Ty>::operator--() volatile noexcept;
+Ty atomic<Ty>::operator--() noexcept;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk iki işleç indirildiği değerini döndürür; Son iki işleç azaltma önce değerini döndürür. İşleçler kullanan **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_sub_eq"></a> atomic::operator-=
+
+Saklanan değeri belirtilen değeri çıkarır. Yalnızca integral ve işaretçi özelleştirmeleri tarafından kullanılır.
+
+```cpp
+Ty atomic<Ty>::operator-=(
+   Ty Value
+) volatile noexcept;
+Ty atomic<Ty>::operator-=(
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Bir tamsayı veya işaretçi değeri.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* çıkarma sonucunu içeren nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç kullanan **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_and_eq"></a> atomic::operator & =
+
+Bit tabanlı gerçekleştirir ve belirtilen bir değeri ve üzerinde depolanan değeri  **\*bu**. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.
+
+```cpp
+atomic<Ty>::operator&= (
+   Ty Value
+) volatile noexcept;
+atomic<Ty>::operator&= (
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bit düzeyinde sonucunu ve.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit ile *değeri* ve içinde depolanan geçerli değeri  **\*bu**, kısıtlamaları dahilinde **memory_order_seq_cst** [memory_order](atomic-enums.md).
+
+## <a name="op_or_eq"></a> atomic::operator&#124;=
+
+Bit tabanlı gerçekleştirir veya belirtilen değere ve üzerinde depolanan değeri  **\*bu**. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.
+
+```cpp
+atomic<Ty>::operator|= (
+   Ty Value
+) volatile noexcept;
+atomic<Ty>::operator|= (
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bit düzeyinde sonucu veya.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit veya, *değeri* ve içinde depolanan geçerli değeri  **\*bu**, kısıtlamaları dahilinde **memory_order_seq_cst** [memory_order](atomic-enums.md) kısıtlamaları.
+
+## <a name="op_xor_eq"></a> atomic::operator ^ =
+
+Bit düzeyinde özel gerçekleştirir veya belirtilen değere ve üzerinde depolanan değeri  **\*bu**. Yalnızca tam sayı özelleştirmeleri tarafından kullanılır.
+
+```cpp
+atomic<Ty>::operator^= (
+   Ty Value
+) volatile noexcept;
+atomic<Ty>::operator^= (
+   Ty Value
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bit düzeyinde özel sonucunu veya.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işleç saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit düzeyinde özel veya, *değeri* ve içinde depolanan geçerli değeri  **\*bu**, kısıtlamaları dahilinde **memory_order_seq_cst** [memory_order](atomic-enums.md) kısıtlamaları.
+
+## <a name="compare_exchange_strong"></a> atomic::compare_exchange_strong
+
+Atomik Karşılaştır ve exchange işlemi gerçekleştirir.  **\*bu**.
+
+```cpp
+bool compare_exchange_strong(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1,
+   memory_order Order2
+) volatile noexcept;
+bool compare_exchange_strong(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1,
+   memory_order Order2
+) noexcept;
+bool compare_exchange_strong(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1 = memory_order_seq_cst
+) volatile noexcept;
+bool compare_exchange_strong(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1 = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*exp*<br/>
+Türünde bir değer *Ty*.
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Order1*<br/>
+İlk **memory_order** bağımsız değişkeni.
+
+*Order2*<br/>
+İkinci **memory_order** bağımsız değişkeni.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A **bool** değer karşılaştırması sonucunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu atomik Karşılaştır ve exchange işlem içinde saklanan değerle karşılaştırır  **\*bu** ile *Exp*. Değerlerin eşit olup olmadığını işlemi depolanan değeri değiştirir  **\*bu** ile *değeri* okuma-değiştirme-yazma işlemini kullanarak ve olan bellek sipariş kısıtlamalarını uygulama tarafından belirtilen *Order1*. Değerler eşit değilse, işlem depolanan değeri kullanan  **\*bu** değiştirmek için *Exp* ve tarafından belirtilen bellek sipariş kısıtlamaları geçerlidir *Order2* .
+
+İkinci bir olmayan aşırı **memory_order** örtülü kullanmak *Order2* değeri temel alarak *Order1*. Varsa *Order1* olan **memory_order_acq_rel**, *Order2* olan **memory_order_acquire**. Varsa *Order1* olan **memory_order_release**, *Order2* olan **memory_order_relaxed**. Diğer durumlarda *Order2* eşittir *Order1*.
+
+İki ele aşırı yüklemeleri için **memory_order** parametreleri, değeri *Order2* olmamalıdır **memory_order_release** veya **memory_order_acq_rel**, değerinden daha güçlü olamaz *Order1*.
+
+## <a name="compare_exchange_weak"></a> atomic::compare_exchange_weak
+
+Zayıf bir atomik Karşılaştır ve exchange işlemi gerçekleştirir.  **\*bu**.
+
+```cpp
+bool compare_exchange_weak(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1,
+   memory_order Order2
+) volatile noexcept;
+bool compare_exchange_weak(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1,
+   memory_order Order2
+) noexcept;
+bool compare_exchange_weak(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1 = memory_order_seq_cst
+) volatile noexcept;
+bool compare_exchange_weak(
+   Ty& Exp,
+   Ty Value,
+   memory_order Order1 = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*exp*<br/>
+Türünde bir değer *Ty*.
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Order1*<br/>
+İlk **memory_order** bağımsız değişkeni.
+
+*Order2*<br/>
+İkinci **memory_order** bağımsız değişkeni.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A **bool** değer karşılaştırması sonucunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu atomik Karşılaştır ve exchange işlem içinde saklanan değerle karşılaştırır  **\*bu** ile *Exp*. Değerlerin eşit olup olmadığını işlemi depolanan değeri değiştirir  **\*bu** ile*değeri* okuma-değiştirme-yazma işlemini kullanarak ve olan bellek sipariş kısıtlamalarını uygulama tarafından belirtilen *Order1*. Değerler eşit değilse, işlem depolanan değeri kullanan  **\*bu** değiştirmek için *Exp* ve tarafından belirtilen bellek sipariş kısıtlamaları geçerlidir *Order2* .
+
+Atomik bir zayıf karşılaştırın ve Karşılaştırılan değer eşitse, bir exchange exchange işlemi gerçekleştirir. Değerlerin eşit değilse, işlemi bir exchange gerçekleştirmek için kesin değildir.
+
+İkinci bir olmayan aşırı **memory_order** örtülü kullanmak *Order2* değeri temel alarak *Order1*. Varsa *Order1* olan **memory_order_acq_rel**, *Order2* olan **memory_order_acquire**. Varsa *Order1* olan **memory_order_release**, *Order2* olan **memory_order_relaxed**. Diğer durumlarda *Order2* eşittir *Order1*.
+
+İki ele aşırı yüklemeleri için **memory_order** parametreleri, değeri *Order2* olmamalıdır **memory_order_release** veya **memory_order_acq_rel**, değerinden daha güçlü olamaz *Order1*.
+
+## <a name="exchange"></a> atomic::Exchange
+
+Saklı değerini değiştirmek için belirtilen değer kullanan  **\*bu**.
+
+```cpp
+Ty atomic<Ty>::exchange(
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::exchange(
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Saklı değeri  **\*bu** exchange önce.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu işlemi kullanmak için okuma-değiştirme-yazma işlemi gerçekleştirir *değeri* depolanan değeri değiştirmek için  **\*bu**, tarafından belirtilen bellek kısıtlamaları içinde  *Sipariş*.
+
+## <a name="fetch_add"></a> atomic::fetch_add
+
+İçinde depolanan değeri getirir  **\*bu**ve ardından belirli bir değeri saklı değerine ekler.
+
+```cpp
+Ty atomic<Ty>::fetch_add (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::fetch_add (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* depolanan değeri içeren nesne  **\*bu** eklenmesi önce.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Fetch_add** yöntemi otomatik olarak eklemek için okuma-değiştirme-yazma işlemi gerçekleştirir *değeri* saklı değerine  **\*bu**ve bellek uygular tarafından belirlenen kısıtlamalar *sipariş*.
+
+## <a name="fetch_and"></a> atomic::fetch_and
+
+Bit tabanlı gerçekleştirir ve üzerinde bir ve depolanan mevcut değeri  **\*bu**.
+
+```cpp
+Ty atomic<Ty>::fetch_and (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::fetch_and (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* bitwise sonucunu içeren nesne ve.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Fetch_and** yöntemi saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit ile *değeri* ve geçerli depolanan değer  **\*bu**, tarafından belirtilen bellek kısıtlamaları içinde *sipariş*.
+
+## <a name="fetch_or"></a> atomic::fetch_or
+
+Bit tabanlı gerçekleştirir veya üzerinde bir ve depolanan mevcut değeri  **\*bu**.
+
+```cpp
+Ty atomic<Ty>::fetch_or (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::fetch_or (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* bitwise sonucunu içeren nesne veya.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Fetch_or** yöntemi saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit veya, *değeri* geçerli değeri içinde depolanan  **\*bu**, tarafından belirtilen bellek kısıtlamaları içinde *sipariş*.
+
+## <a name="fetch_sub"></a> atomic::fetch_sub
+
+Saklanan değeri belirtilen değeri çıkarır.
+
+```cpp
+Ty atomic<Ty>::fetch_sub (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::fetch_sub (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* çıkarma sonucunu içeren nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Fetch_sub** yöntemi otomatik olarak çıkarmak için okuma-değiştirme-yazma işlemi gerçekleştirir *değeri* saklı değerinden  **\*bu**, bellek içinde tarafından belirlenen kısıtlamalar *sipariş*.
+
+## <a name="fetch_xor"></a> atomic::fetch_xor
+
+Bit düzeyinde özel gerçekleştirir veya üzerinde bir ve depolanan mevcut değeri  **\*bu**.
+
+```cpp
+Ty atomic<Ty>::fetch_xor (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+Ty atomic<Ty>::fetch_xor (
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+Türünde bir değer *Ty*.
+
+*Sırası*<br/>
+A **memory_order**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+A *Ty* bit düzeyinde özel sonucunu içeren nesne veya.
+
+### <a name="remarks"></a>Açıklamalar
+
+**Fetch_xor** yöntemi saklı değerini değiştirmek için okuma-değiştirme-yazma işlemi gerçekleştirir  **\*bu** bit düzeyinde özel veya, *değeri* ve içinde depolanan geçerli değeri  **\*bu**ve tarafından belirtilen bellek kısıtlamaları geçerlidir *sipariş*.
+
+## <a name="is_lock_free"></a> atomic::is_lock_free
+
+Belirtir olup olmadığını atomik işlemleri  **\*bu** kilidi serbest şunlardır.
+
+```cpp
+bool is_lock_free() const volatile noexcept;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+TRUE atomik işlemleri  **\*bu** olan kilit boş, aksi takdirde false.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu tür hiçbir atomik işlemleri kilitleri kullanıyorsanız bir atomik kilidi serbest türüdür.
+
+## <a name="load"></a> atomic::Load
+
+Saklı değerinde alır  **\*bu**, belirtilen bellek kısıtlamaları içinde.
+
+```cpp
+Ty atomic::load(
+   memory_order Order = memory_order_seq_cst
+) const volatile noexcept;
+Ty atomic::load(
+   memory_order Order = memory_order_seq_cst
+) const noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Sırası*<br/>
+A **memory_order**. *Sipariş* olmamalıdır **memory_order_release** veya **memory_order_acq_rel**.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Depolanan alınan değerin  **\*bu**.
+
+## <a name="store"></a> atomic::store
+
+Belirtilen bir değeri depolar.
+
+```cpp
+void atomic<Ty>::store(
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) volatile noexcept;
+void atomic<Ty>::store(
+   Ty Value,
+   memory_order Order = memory_order_seq_cst
+) noexcept;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Değer*<br/>
+A *Ty* nesnesi.
+
+*Sırası*<br/>
+A **memory_order** kısıtlaması.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu üye işlevi otomatik olarak depolar *değeri* içinde `*this`, tarafından belirtilen bellek kısıtlamaları içinde *sipariş*.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[\<atomik >](../standard-library/atomic.md)<br/>
+[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>

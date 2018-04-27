@@ -1,13 +1,13 @@
 ---
 title: conj, conjf, conjl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - conj
@@ -40,64 +40,69 @@ helpviewer_keywords:
 - conjf function
 - conjl function
 ms.assetid: 792fccfa-19c6-4890-99f9-a3b89effccd6
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6b994d8c6afe416cd399c04d91fae422b217cf2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e01feb4b30305f915a91d104d9134018c3d5b24e
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="conj-conjf-conjl"></a>conj, conjf, conjl
-Karmaşık bir sayının karmaşık çiftini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-_Dcomplex conj(   
-   _Dcomplex z   
-);  
-_Fcomplex conj(   
-   _Fcomplex z   
-);  // C++ only  
-_Lcomplex conj(   
-   _Lcomplex z   
-);  // C++ only  
-_Fcomplex conjf(   
-   _Fcomplex z   
-);  
-_Lcomplex conjl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `z`  
- Bir karmaşık sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Karmaşık çiftini `z`.  Aynı gerçek ve sanal parçası olarak sonucu sahip `z`, ancak ters işaretle.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `conj` alın ve dönüş `_Fcomplex` ve `_Lcomplex` değerleri. Bir C programı `conj` her zaman alan ve döndüren bir `_Dcomplex` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`conj`,               `conjf`, `conjl`|\<Complex.h >|\<ccomplex >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [Norm, normf, norml](../../c-runtime-library/reference/norm-normf-norml1.md)   
- [creal, crealf, creall](../../c-runtime-library/reference/creal-crealf-creall.md)   
- [cproj, cprojf, cprojl](../../c-runtime-library/reference/cproj-cprojf-cprojl.md)   
- [cimag, cimagf, cimagl](../../c-runtime-library/reference/cimag-cimagf-cimagl.md)   
- [carg, cargf, cargl](../../c-runtime-library/reference/carg-cargf-cargl.md)   
- [cabs, cabsf, cabsl](../../c-runtime-library/reference/cabs-cabsf-cabsl.md)
+
+Karmaşık bir sayının karmaşık çiftini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+_Dcomplex conj(
+   _Dcomplex z
+);
+_Fcomplex conj(
+   _Fcomplex z
+);  // C++ only
+_Lcomplex conj(
+   _Lcomplex z
+);  // C++ only
+_Fcomplex conjf(
+   _Fcomplex z
+);
+_Lcomplex conjl(
+   _Lcomplex z
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*z*<br/>
+Bir karmaşık sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Karmaşık çiftini *z*.  Aynı gerçek ve sanal parçası olarak sonucu sahip *z*, ancak ters işaretle.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **conj** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **conj** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|**conj**, **conjf**, **conjl**|\<Complex.h >|\<ccomplex >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[Norm, normf, norml](norm-normf-norml1.md)<br/>
+[creal, crealf, creall](creal-crealf-creall.md)<br/>
+[cproj, cprojf, cprojl](cproj-cprojf-cprojl.md)<br/>
+[cimag, cimagf, cimagl](cimag-cimagf-cimagl.md)<br/>
+[carg, cargf, cargl](carg-cargf-cargl.md)<br/>
+[cabs, cabsf, cabsl](cabs-cabsf-cabsl.md)<br/>

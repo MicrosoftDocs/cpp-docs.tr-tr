@@ -1,12 +1,12 @@
 ---
 title: _getmaxstdio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _getmaxstdio
@@ -34,65 +34,69 @@ helpviewer_keywords:
 - getmaxstdio function
 - open files, getting number
 ms.assetid: 700ca8ce-4a8c-4e00-9467-dfa9d6b831a0
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89a7e989406e5726d0ad5a2a42eaa2198dee6b72
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7958c0363ac83d947b3df075b3ab0b0f4019a7f9
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getmaxstdio"></a>_getmaxstdio
-Akış g/ç düzeyi izin verilen eşzamanlı olarak açık dosyaların sayısını döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _getmaxstdio( void );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Şu anda, izin verilen eşzamanlı olarak açık dosya sayısı temsil eden bir sayı döndürür `stdio` düzeyi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım [_setmaxstdio](../../c-runtime-library/reference/setmaxstdio.md) sırasında izin verilen eşzamanlı olarak açık dosyaların sayısını yapılandırmak için `stdio` düzeyi.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_getmaxstdio`|\<stdio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_setmaxstdio.c  
-// The program retrieves the maximum number  
-// of open files and prints the results  
-// to the console.  
-  
-#include <stdio.h>  
-  
-int main()  
-{  
-   printf( "%d\n", _getmaxstdio());  
-  
-   _setmaxstdio(2048);  
-  
-   printf( "%d\n", _getmaxstdio());  
-}  
-```  
-  
-```Output  
-512  
-2048  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)
+
+Akış g/ç düzeyi izin verilen eşzamanlı olarak açık dosyaların sayısını döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _getmaxstdio( void );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Şu anda, izin verilen eşzamanlı olarak açık dosya sayısı temsil eden bir sayı döndürür **stdio** düzeyi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım [_setmaxstdio](setmaxstdio.md) sırasında izin verilen eşzamanlı olarak açık dosyaların sayısını yapılandırmak için **stdio** düzeyi.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_getmaxstdio**|\<stdio.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_setmaxstdio.c
+// The program retrieves the maximum number
+// of open files and prints the results
+// to the console.
+
+#include <stdio.h>
+
+int main()
+{
+   printf( "%d\n", _getmaxstdio());
+
+   _setmaxstdio(2048);
+
+   printf( "%d\n", _getmaxstdio());
+}
+```
+
+```Output
+512
+2048
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>

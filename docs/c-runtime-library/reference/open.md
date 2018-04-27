@@ -1,12 +1,12 @@
 ---
-title: "açık | Microsoft Docs"
-ms.custom: 
+title: açık | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - open
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - open function
 ms.assetid: e3139118-4da2-434b-a551-fcf3fccf49b5
-caps.latest.revision: 
+caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa5c695f776655cfdfa0cf1ed7816b0e4e7d6e3b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b7517f5ee5f5b6557471e73816d56d9f328d2703
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="open"></a>open
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_kurulum Aç](../../c-runtime-library/reference/open-wopen.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_kurulum Aç](open-wopen.md) yerine.

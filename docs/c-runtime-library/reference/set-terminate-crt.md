@@ -1,12 +1,12 @@
 ---
 title: set_terminate (CRT) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - set_terminate
@@ -32,67 +32,71 @@ helpviewer_keywords:
 - terminate function
 - exception handling, termination
 ms.assetid: 3ff1456a-7898-44bc-9266-a328a80b6006
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eba062bd1b791f055b2ae1c74c2a0107a4039d23
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 02c38d8c832c4b84725dc15c280c8b3f3fd27841
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setterminate-crt"></a>set_terminate (CRT)
-Kendi sonlandırma yordamı çağrılacak yükler `terminate`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-terminate_function set_terminate(  
-   terminate_function termFunction  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `termFunction`  
- Yazdığınız Sonlandır işlev işaretçisi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Tarafından kaydedilen önceki işlevi için bir işaretçi döndüren `set_terminate` böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız varsayılan davranışı geri dönüş değeri kullanılabilir; Bu değer NULL olabilir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `set_terminate` İşlev yükler `termFunction` çağrılan işlev olarak `terminate`. `set_terminate` C++ özel durum işleme ile kullanılır ve özel durum önce programınızdaki herhangi bir noktada çağrılabilir. `terminate` çağrıları `abort` varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılan ayarı değiştirebilirsiniz `set_terminate` işlevinizi bağımsız değişkeni olarak adı. `terminate` bağımsız değişken olarak verilen son işlevi çağırır `set_terminate`. Temizleme görevleri herhangi gerçekleştirme istenen sonra `termFunction` program çıkmalıdır. (Çağırıcısına döndürürse), mevcut değilse, `abort` olarak adlandırılır.  
-  
- Birden çok iş parçacıklı bir ortamda, sonlandırma işlevleri her iş parçacığı için ayrı olarak korunur. Her yeni bir iş parçacığı kendi Sonlandır işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi sonlandırma işleme sorumlu olduğu.  
-  
- `terminate_function` Türü EH içinde tanımlanmıştır. Bir sonlandırma kullanıcı tanımlı işlev işaretçisi olarak H `termFunction` döndüren `void`. Özel işlevinizi `termFunction` bağımsız değişkenler almayan ve çağırıcısına vermemelidir. Aşması durumunda `abort` olarak adlandırılır. Bir özel durum içinden durum oluşturulabilir değil `termFunction`.  
-  
-```  
-typedef void ( *terminate_function )( );  
-```  
-  
+
+Kendi sonlandırma yordamı çağrılacak yükler **sonlandırmak**.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+terminate_function set_terminate( terminate_function termFunction );
+```
+
+### <a name="parameters"></a>Parametreler
+
+*termFunction*<br/>
+Yazdığınız Sonlandır işlev işaretçisi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Tarafından kaydedilen önceki işlevi için bir işaretçi döndüren **set_terminate** böylece önceki işlevi daha sonra geri yüklenebilir. Önceki bir işlev ayarlarsanız varsayılan davranışı geri dönüş değeri kullanılabilir; Bu değer NULL olabilir.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Set_terminate** işlev yükler *termFunction* çağrılan işlev olarak **sonlandırmak**. **set_terminate** ile C++ özel durum işleme kullanılır ve özel durum önce programınızdaki herhangi bir noktada çağrılabilir. **sonlandırma** çağrıları [abort](abort.md) varsayılan olarak. Kendi sonlandırma işlevi yazma ve arama bu varsayılan ayarı değiştirebilirsiniz **set_terminate** işlevinizi bağımsız değişkeni olarak adı. **sonlandırma** bağımsız değişken olarak verilen son işlevi çağırır **set_terminate**. Temizleme görevleri herhangi gerçekleştirme istenen sonra *termFunction* program çıkmalıdır. (Çağırıcısına döndürürse), mevcut değilse, [abort](abort.md) olarak adlandırılır.
+
+Birden çok iş parçacıklı bir ortamda, sonlandırma işlevleri her iş parçacığı için ayrı olarak korunur. Her yeni bir iş parçacığı kendi Sonlandır işlevi yüklemeniz gerekir. Bu nedenle, her iş parçacığının kendi sonlandırma işleme sorumlu olduğu.
+
+**Terminate_function** türü EH içinde tanımlanmıştır. Bir sonlandırma kullanıcı tanımlı işlev işaretçisi olarak H *termFunction* döndüren **void**. Özel işlevinizi *termFunction* bağımsız değişkenler almayan ve çağırıcısına vermemelidir. Aşması durumunda [abort](abort.md) olarak adlandırılır. Bir özel durum içinden durum oluşturulabilir değil *termFunction*.
+
+```cpp
+typedef void ( *terminate_function )( );
+```
+
 > [!NOTE]
->  `set_terminate` İşlevi yalnızca hata ayıklayıcı dışında çalışır.  
-  
- Tek bir yoktur `set_terminate` işleyicisi tüm dinamik olarak bağlı dll veya exe; bile çağırırsanız `set_terminate` işleyiciniz başka tarafından değiştirilebilir veya başka bir DLL veya EXE tarafından ayarlanan bir işleyici değiştirme.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`set_terminate`|\<EH.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Örneğin bkz [sonlandırmak](../../c-runtime-library/reference/terminate-crt.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme rutinleri](../../c-runtime-library/exception-handling-routines.md)   
- [Durdurma](../../c-runtime-library/reference/abort.md)   
- [_get_terminate](../../c-runtime-library/reference/get-terminate.md)   
- [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md)   
- [Sonlandırma](../../c-runtime-library/reference/terminate-crt.md)   
- [unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+> **Set_terminate** işlevi yalnızca hata ayıklayıcı dışında çalışır.
+
+Tek bir yoktur **set_terminate** işleyicisi tüm dinamik olarak bağlı dll veya exe; bile çağırırsanız **set_terminate** işleyiciniz başka tarafından değiştirilebilir veya bir başkası tarafından ayarlanmış bir işleyici değiştirme DLL veya EXE.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**set_terminate**|\<EH.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Örneğin bkz [sonlandırmak](terminate-crt.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Özel Durum İşleme Rutinleri](../../c-runtime-library/exception-handling-routines.md)<br/>
+[abort](abort.md)<br/>
+[_get_terminate](get-terminate.md)<br/>
+[set_unexpected](set-unexpected-crt.md)<br/>
+[Sonlandırma](terminate-crt.md)<br/>
+[beklenmeyen](unexpected-crt.md)<br/>

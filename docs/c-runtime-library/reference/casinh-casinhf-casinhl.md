@@ -1,13 +1,13 @@
 ---
 title: casinh, casinhf, casinhl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - casinh
@@ -40,70 +40,75 @@ helpviewer_keywords:
 - casinhf function
 - casinhl function
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adddb62e9b16eb8506fc175a597629da7c14808e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 71f57f097ae66b6849bf3c2bd532c39d02aae2b3
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="casinh-casinhf-casinhl"></a>casinh, casinhf, casinhl
-Dal keser aralığı dışında ile karmaşık bir sayının ters hiperbolik sinüs alır [-i + ı] sanal ekseni boyunca.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-_Dcomplex casinh(   
-   _Dcomplex z   
-);  
-_Fcomplex casinh(   
-   _Fcomplex z   
-);  // C++ only  
-_Lcomplex casinh(   
-   _Lcomplex z   
-);  // C++ only  
-_Fcomplex casinhf(   
-   _Fcomplex z   
-);  
-_Lcomplex casinhl(   
-   _Lcomplex z   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `z`  
- Radyan cinsinden açı temsil eden bir karmaşık sayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Ters hiperbolik sinüs, `z`, radyan cinsinden açı. Sonuç gerçek ekseninde ve aralığında ilişkisiz [-iπ/2 + iπ/2] sanal ekseni boyunca.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `casinh` alın ve dönüş `_Fcomplex` ve `_Lcomplex` değerleri. Bir C programı `casinh` her zaman alan ve döndüren bir `_Dcomplex` değeri.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|C üstbilgisi|C++ üstbilgi|  
-|-------------|--------------|------------------|  
-|`casinh`,               `casinhf`, `casinhl`|\<Complex.h >|\<ccomplex >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [catanh, catanhf, catanhl](../../c-runtime-library/reference/catanh-catanhf-catanhl.md)   
- [ctanh, ctanhf, ctanhl](../../c-runtime-library/reference/ctanh-ctanhf-ctanhl.md)   
- [catan, catanf, catanl](../../c-runtime-library/reference/catan-catanf-catanl.md)   
- [csinh, csinhf, csinhl](../../c-runtime-library/reference/csinh-csinhf-csinhl.md)   
- [ccosh, ccoshf, ccoshl](../../c-runtime-library/reference/ccosh-ccoshf-ccoshl.md)   
- [cacosh, cacoshf, cacoshl](../../c-runtime-library/reference/cacosh-cacoshf-cacoshl.md)   
- [cacos, cacosf, cacosl](../../c-runtime-library/reference/cacos-cacosf-cacosl.md)   
- [ctan, ctanf, ctanl](../../c-runtime-library/reference/ctan-ctanf-ctanl.md)   
- [csin, csinf, csinl](../../c-runtime-library/reference/csin-csinf-csinl.md)   
- [casin, casinf, casinl](../../c-runtime-library/reference/casin-casinf-casinl.md)   
- [ccos, ccosf, ccosl](../../c-runtime-library/reference/ccos-ccosf-ccosl.md)   
- [csqrt, csqrtf, csqrtl](../../c-runtime-library/reference/csqrt-csqrtf-csqrtl.md)
+
+Dal keser aralığı dışında ile karmaşık bir sayının ters hiperbolik sinüs alır [-i + ı] sanal ekseni boyunca.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+_Dcomplex casinh(
+   _Dcomplex z
+);
+_Fcomplex casinh(
+   _Fcomplex z
+);  // C++ only
+_Lcomplex casinh(
+   _Lcomplex z
+);  // C++ only
+_Fcomplex casinhf(
+   _Fcomplex z
+);
+_Lcomplex casinhl(
+   _Lcomplex z
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*z*<br/>
+Radyan cinsinden açı temsil eden bir karmaşık sayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Ters hiperbolik sinüs, *z*, radyan cinsinden açı. Sonuç gerçek ekseninde ve aralığında ilişkisiz [-iπ/2 + iπ/2] sanal ekseni boyunca.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **casinh** alın ve dönüş **_Fcomplex** ve **_Lcomplex** değerleri. Bir C programı **casinh** her zaman alan ve döndüren bir **_Dcomplex** değeri.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|C üstbilgisi|C++ üstbilgi|
+|-------------|--------------|------------------|
+|**casinh**, **casinhf**, **casinhl**|\<Complex.h >|\<ccomplex >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](crt-alphabetical-function-reference.md)<br/>
+[catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
+[ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
+[catan, catanf, catanl](catan-catanf-catanl.md)<br/>
+[csinh, csinhf, csinhl](csinh-csinhf-csinhl.md)<br/>
+[ccosh, ccoshf, ccoshl](ccosh-ccoshf-ccoshl.md)<br/>
+[cacosh, cacoshf, cacoshl](cacosh-cacoshf-cacoshl.md)<br/>
+[cacos, cacosf, cacosl](cacos-cacosf-cacosl.md)<br/>
+[ctan, ctanf, ctanl](ctan-ctanf-ctanl.md)<br/>
+[csin, csinf, csinl](csin-csinf-csinl.md)<br/>
+[casin, casinf, casinl](casin-casinf-casinl.md)<br/>
+[ccos, ccosf, ccosl](ccos-ccosf-ccosl.md)<br/>
+[csqrt, csqrtf, csqrtl](csqrt-csqrtf-csqrtl.md)<br/>

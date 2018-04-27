@@ -1,12 +1,12 @@
 ---
 title: _mbccpy_s, _mbccpy_s_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _mbccpy_s
@@ -41,110 +41,115 @@ helpviewer_keywords:
 - _tccpy_s_l function
 - _mbccpy_s_l function
 ms.assetid: b6e965fa-53c1-4ec3-85ef-a1c4b4f2b2da
-caps.latest.revision: 
+caps.latest.revision: 30
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72b2e155dafe0b5fb5a83e5e62ea95fd2c3657e6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5c396422fefff8a7d7da49517ae2f8ea1a06e7fd
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="mbccpys-mbccpysl"></a>_mbccpy_s, _mbccpy_s_l
-Tek baytlı karakter başka bir dizeye bir dizeden kopyalar. Bu sürümleri [_mbccpy, _mbccpy_l](../../c-runtime-library/reference/mbccpy-mbccpy-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).  
-  
+
+Tek baytlı karakter başka bir dizeye bir dizeden kopyalar. Bu sürümleri [_mbccpy, _mbccpy_l](mbccpy-mbccpy-l.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t _mbccpy_s(  
-   unsigned char *dest,  
-   size_t buffSizeInBytes,  
-   int * pCopied,  
-   const unsigned char *src   
-);  
-errno_t _mbccpy_s_l(  
-   unsigned char *dest,  
-   size_t buffSizeInBytes,  
-   int * pCopied,  
-   const unsigned char *src,  
-   locale_t locale  
-);  
-template <size_t size>  
-errno_t _mbccpy_s(  
-   unsigned char (&dest)[size],  
-   int * pCopied,  
-   const unsigned char *src   
-); // C++ only  
-template <size_t size>  
-errno_t _mbccpy_s_l(  
-   unsigned char (&dest)[size],  
-   int * pCopied,  
-   const unsigned char *src,  
-   locale_t locale  
-); // C++ only  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `dest`  
- Hedef kopyalayın.  
-  
- [in] `buffSizeInBytes`  
- Hedef arabellek boyutu.  
-  
- [out] `pCopied`  
- Bayt kopyalanan (1 veya 2 başarılı olursa) sayısı ile doldurulur. Geçirmek `NULL` numarası hakkında önemli değil durumunda.  
-  
- [in] `src`  
- Kopyalamak için birden çok baytlı karakter.  
-  
- [in] `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır; hatasında bir hata kodu. Varsa `src` veya `dest` olan `NULL`, ya da birden fazla `buffSizeinBytes` bayt için kopyalanması `dest`, sonra da açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevlerin dönüş `EINVAL` ve `errno` ayarlanır `EINVAL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_mbccpy_s` İşlevi bir çok baytlı karakter kopyalar `src` için `dest`. Varsa `src` birden çok baytlı karakter örtük bir çağrı tarafından belirlendiği bayt göstermiyor [_ismbblead](../../c-runtime-library/reference/ismbblead-ismbblead-l.md), ardından tek bayt, `src` noktalarına kopyalanır. Varsa `src` baytı ancak aşağıdaki bayt noktalarına 0 ve böylece geçersiz sonra 0 kopyalanır `dest`, `errno` ayarlanır `EILSEQ`, ve işlevi döndürür `EILSEQ`.  
-  
- `_mbccpy_s` null Sonlandırıcı append değil; Ancak, varsa `src` bu null kopyalanır sonra bir null karakter işaret `dest` (yalnızca normal tek baytlı kopyasını budur).  
-  
- Değer `pCopied` kopyalanan bayt sayısı ile doldurulur. İşlem başarılı olursa olası değerler şunlardır: 1 ve 2. Varsa `NULL` geçirilir, bu parametre yoksayılır.  
-  
-|`src`|kopyalanır `dest`|`pCopied`|Dönüş değeri|  
-|-----------|----------------------|---------------|------------------|  
-|ön bayt|ön bayt|1.|0|  
-|0|0|1.|0|  
-|baytı-0 olmayan tarafından izlenen|baytı-0 olmayan tarafından izlenen|2|0|  
-|0 ve ardından ön bayt|0|1.|`EILSEQ`|  
-  
- İkinci satır bir özel durum ilk olduğuna dikkat edin. Ayrıca tablo varsayar Not `buffSizeInBytes`  >=  `pCopied`.  
-  
- `_mbccpy_s` Geçerli yerel ayar için tüm yerel ayara bağımlı davranışı kullanır. `_mbccpy_s_l` aynıdır `_mbccpy_s` dışında `_mbccpy_s_l` geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır.  
-  
- C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_tccpy_s`|Makro veya satır içi işlev eşlenir.|`_mbccpy_s`|Makro veya satır içi işlev eşlenir.|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_mbccpy_s`|\<Mbstring.h >|  
-|`_mbccpy_s_l`|\<Mbstring.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [_mbclen, mblen, _mblen_l](../../c-runtime-library/reference/mbclen-mblen-mblen-l.md)
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t _mbccpy_s(
+   unsigned char *dest,
+   size_t buffSizeInBytes,
+   int * pCopied,
+   const unsigned char *src
+);
+errno_t _mbccpy_s_l(
+   unsigned char *dest,
+   size_t buffSizeInBytes,
+   int * pCopied,
+   const unsigned char *src,
+   locale_t locale
+);
+template <size_t size>
+errno_t _mbccpy_s(
+   unsigned char (&dest)[size],
+   int * pCopied,
+   const unsigned char *src
+); // C++ only
+template <size_t size>
+errno_t _mbccpy_s_l(
+   unsigned char (&dest)[size],
+   int * pCopied,
+   const unsigned char *src,
+   locale_t locale
+); // C++ only
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Hedef*<br/>
+Hedef kopyalayın.
+
+*buffSizeInBytes*<br/>
+Hedef arabellek boyutu.
+
+*pCopied*<br/>
+Bayt kopyalanan (1 veya 2 başarılı olursa) sayısı ile doldurulur. Geçirmek **NULL** numarası hakkında önemli değil durumunda.
+
+*src*<br/>
+Kopyalamak için birden çok baytlı karakter.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa sıfır; hatasında bir hata kodu. Varsa *src* veya *taşınmaya* olan **NULL**, ya da birden fazla **buffSizeinBytes** bayt için kopyalanmasına *taşınmaya*, bölümünde açıklandığı gibi geçersiz parametre işleyicisi çağrılır sonra [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevlerin dönüş **EINVAL** ve **errno** ayarlanır **EINVAL**.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Mbccpy_s** işlevi bir çok baytlı karakter kopyalar *src* için *taşınmaya*. Varsa *src* birden çok baytlı karakter örtük bir çağrı tarafından belirlendiği bayt göstermiyor [_ismbblead](ismbblead-ismbblead-l.md), ardından tek bayt, *src* noktalarına kopyalanır. Varsa *src* baytı ancak aşağıdaki bayt noktalarına 0 ve böylece geçersiz sonra 0 kopyalanır *taşınmaya*, **errno** ayarlanır **EILSEQ**ve işlev döndürür **EILSEQ**.
+
+**_mbccpy_s** null Sonlandırıcı eklemediğinizden; ancak, varsa *src* bu null kopyalanır sonra bir null karakter işaret *taşınmaya* (yalnızca normal tek baytlı kopyasını budur).
+
+Değer *pCopied* kopyalanan bayt sayısı ile doldurulur. İşlem başarılı olursa olası değerler şunlardır: 1 ve 2. Varsa **NULL** geçirilir, bu parametre yoksayılır.
+
+|*src*|Kopyalanan *hedef*|*pCopied*|Dönüş değeri|
+|-----------|----------------------|---------------|------------------|
+|ön bayt|ön bayt|1.|0|
+|0|0|1.|0|
+|baytı-0 olmayan tarafından izlenen|baytı-0 olmayan tarafından izlenen|2|0|
+|0 ve ardından ön bayt|0|1.|**EILSEQ**|
+
+İkinci satır bir özel durum ilk olduğuna dikkat edin. Ayrıca tablo varsayar Not *buffSizeInBytes* >= *pCopied*.
+
+**_mbccpy_s** için tüm yerel ayara bağımlı davranış geçerli yerel ayarı kullanır. **_mbccpy_s_l** aynıdır **_mbccpy_s** dışında **_mbccpy_s_l** geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır.
+
+C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_tccpy_s**|Makro veya satır içi işlev eşlenir.|**_mbccpy_s**|Makro veya satır içi işlev eşlenir.|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_mbccpy_s**|\<Mbstring.h >|
+|**_mbccpy_s_l**|\<Mbstring.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

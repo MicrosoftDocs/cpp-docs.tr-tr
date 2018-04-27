@@ -1,12 +1,9 @@
 ---
-title: "_Cısin | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: _Cısin | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
 ms.topic: article
 apiname:
 - _CIsin
@@ -28,35 +25,38 @@ helpviewer_keywords:
 - _CIsin intrinsic
 - CIsin intrinsic
 ms.assetid: f215f39a-2341-4f1c-ba8e-cb522451ceb2
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e87589421c5a1e24c490a0f03928281bc7fb92b
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: e0b06cd381bd93befd8fade4816ca4ead6b3ef9d
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="cisin"></a>_CIsin
-Yığındaki üst değer sinüsünü hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __cdecl _CIsin();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sürümü `sin` işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.  
-  
- Sonuç değeri yığının en üst gönderilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Platform:** x86  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [sin, sinf, sinl, sinh, sinhf, sinhl](../c-runtime-library/reference/sin-sinf-sinl-sinh-sinhf-sinhl.md)
+
+Kayan nokta yığınında üst değer sinüsünü hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void __cdecl _CIsin();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+İç bu sürümü [sin](../c-runtime-library/reference/sin-sinf-sinl.md) işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+
+Sonuç değeri kayan nokta yığının en üst gönderilir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Platform:** x86
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)<br/>

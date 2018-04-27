@@ -1,5 +1,5 @@
 ---
-title: Kategorilere göre çalışma zamanı yordamları | Microsoft Docs
+title: Kategorilere göre Evrensel C çalışma zamanı yordamları | Microsoft Docs
 ms.custom: ''
 ms.date: 04/06/2018
 ms.technology:
@@ -20,17 +20,19 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ff178238e457d4a9346ba3659509c295bcf3794
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: 01bdb786c003894b4ab1bf6418aa9c492e909602
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="run-time-routines-by-category"></a>Kategorilere göre çalışma zamanı yordamları
+# <a name="universal-c-runtime-routines-by-category"></a>Kategorilere göre Evrensel C çalışma zamanı yordamları
 
-Bu bölümde, listeler ve kategoriye göre Microsoft çalışma zamanı kitaplığı yordamları açıklar. Başvuru kolaylık olması için bazı yordamları birden fazla kategorisinde listelenir. Çok baytlı karakter yordamları ve joker karakter düzenleri bunlar var olduğu tek baytlı karakter ortaklarınıza gruplandırılır.
+Bu bölümde, listeler ve kategoriye göre Evrensel C çalışma zamanı (UCRT) kitaplık yordamları açıklar. Başvuru kolaylık olması için bazı yordamları birden fazla kategorisinde listelenir. Çok baytlı karakter yordamları ve joker karakter düzenleri bunlar var olduğu tek baytlı karakter ortaklarınıza gruplandırılır.
 
-## <a name="routine-categories"></a>Rutin kategorileri
+## <a name="ucrt-library-routine-categories"></a>UCRT kitaplığı rutin kategorileri
+
+UCRT kitaplık yordamları, ana kategoriler şunlardır:
 
 |||
 |-|-|

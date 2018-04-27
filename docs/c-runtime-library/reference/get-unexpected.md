@@ -1,12 +1,12 @@
 ---
 title: _get_unexpected | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _get_unexpected
@@ -33,41 +33,44 @@ helpviewer_keywords:
 - get_unexpected function
 - _get_unexpected function
 ms.assetid: a5f7a7a0-18e0-485e-953d-db291068a1e8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 453711c21b63e292d1c4f8d4912c70122ed92ca5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: dd09620868f4a8a1c4f1511124dce9c871253e13
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getunexpected"></a>_get_unexpected
-Çağrılacak sonlandırma yordamı döndürür `unexpected`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unexpected_function _get_unexpected( void );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Tarafından kaydedilen işlevi için bir işaretçi döndüren [set_unexpected](../../c-runtime-library/reference/set-unexpected-crt.md). Hiçbir işlev ayarlarsanız dönüş değerini varsayılan davranışını geri yüklemek için kullanılabilir; Bu değer NULL olabilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_get_unexpected`|\<EH.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel durum işleme rutinleri](../../c-runtime-library/exception-handling-routines.md)   
- [Durdurma](../../c-runtime-library/reference/abort.md)   
- [set_terminate](../../c-runtime-library/reference/set-terminate-crt.md)   
- [Sonlandırma](../../c-runtime-library/reference/terminate-crt.md)   
- [unexpected](../../c-runtime-library/reference/unexpected-crt.md)
+
+Çağrılacak sonlandırma yordamı döndürür **beklenmeyen**.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+unexpected_function _get_unexpected( void );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Tarafından kaydedilen işlevi için bir işaretçi döndüren [set_unexpected](set-unexpected-crt.md). Hiçbir işlev ayarlarsanız dönüş değerini varsayılan davranışını geri yüklemek için kullanılabilir; Bu değer NULL olabilir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_get_unexpected**|\<EH.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Özel Durum İşleme Rutinleri](../../c-runtime-library/exception-handling-routines.md)<br/>
+[abort](abort.md)<br/>
+[set_terminate](set-terminate-crt.md)<br/>
+[Sonlandırma](terminate-crt.md)<br/>
+[beklenmeyen](unexpected-crt.md)<br/>

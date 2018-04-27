@@ -1,12 +1,12 @@
 ---
 title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _ismbcalpha
@@ -55,89 +55,94 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-caps.latest.revision: 
+caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02214850013233c616d2bd23970b8921f0ff5e86
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9ad7235ecfce6b9345764c6a8804f2981c0555cc
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="ismbcalnum-ismbcalnuml-ismbcalpha-ismbcalphal-ismbcdigit-ismbcdigitl"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
-Birden çok baytlı karakter alfasayısal bir olup, alfa veya basamaklı karakter denetler.  
-  
+
+Birden çok baytlı karakter alfasayısal bir olup, alfa veya basamaklı karakter denetler.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _ismbcalnum  
-(  
-   unsigned int c   
-);  
-int _ismbcalnum_l  
-(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-int _ismbcalpha  
-(  
-   unsigned int c   
-);  
-int _ismbcalpha_l  
-(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-int _ismbcdigit  
-(  
-   unsigned int c   
-);  
-int _ismbcdigit_l  
-(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Sınanacak karakter.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa `c`< = 255 ve karşılık gelen `_ismbb` yordamına (örneğin, `_ismbcalnum` karşılık gelen `_ismbbalnum`), buna karşılık gelen dönüş değeri sonucudur `_ismbb` yordamı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yordamlar her belirli bir birden çok baytlı karakter verilen bir koşul için sınar.  
-  
- Bu işlevleri sürümlerini `_l` soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
-|Yordam|Test durumu|Kod sayfası 932 örneği|  
-|-------------|--------------------|---------------------------|  
-|`_ismbcalnum,_ismbcalnum_l`|Alfasayısal|Sıfır olmayan ve yalnız döndürür `c` ASCII İngilizce harf tek baytlı gösterimidir: örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|  
-|`_ismbcalpha,_ismbcalpha_l`|Alfabetik|Sıfır olmayan ve yalnız döndürür `c` ASCII İngilizce harf tek baytlı gösterimidir: 0x41 < =`c`< 0x5A veya 0x61 = < =`c`< 0x7A; = veya katakana harf: 0xA6 < =`c`< 0xDF =.|  
-|`_ismbcdigit,_ismbcdigit`|Basamak|Sıfır olmayan ve yalnız döndürür `c` ASCII basamaklı tek baytlı gösterimidir: 0x30 < =`c`< 0x39 =.|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_ismbcalnum,_ismbcalnum_l`|\<Mbstring.h >|  
-|`_ismbcalpha,_ismbcalpha_l`|\<Mbstring.h >|  
-|`_ismbcdigit,_ismbcdigit_l`|\<Mbstring.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
- [_ismbc rutinleri](../../c-runtime-library/ismbc-routines.md)   
- [is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)   
- [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _ismbcalnum
+(
+   unsigned int c
+);
+int _ismbcalnum_l
+(
+   unsigned int c,
+   _locale_t locale
+);
+int _ismbcalpha
+(
+   unsigned int c
+);
+int _ismbcalpha_l
+(
+   unsigned int c,
+   _locale_t locale
+);
+int _ismbcdigit
+(
+   unsigned int c
+);
+int _ismbcdigit_l
+(
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Sınanacak karakter.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Karakter test durumu ya da 0 uymazsa mevcut değilse bu yordamlar her sıfır olmayan bir değer döndürür. Varsa *c*< = 255 ve karşılık gelen **_ismbb** yordamına (örneğin, **_ismbcalnum** karşılık gelen **_ismbbalnum**), Buna karşılık gelen dönüş değeri sonucudur **_ismbb** yordamı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yordamlar her belirli bir birden çok baytlı karakter verilen bir koşul için sınar.
+
+Bu işlevleri sürümlerini **_l** soneki, yerel ayara bağımlı davranışlarını geçerli yerel yerine geçirilen yerel ayar kullanmasını dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+|Yordam|Test durumu|Kod sayfası 932 örneği|
+|-------------|--------------------|---------------------------|
+|**_ismbcalnum**, **_ismbcalnum_l**|Alfasayısal|Sıfır olmayan ve yalnız döndürür *c* ASCII İngilizce harf tek baytlı gösterimidir: örnekler için bkz: **_ismbcdigit** ve **_ismbcalpha**.|
+|**_ismbcalpha**, **_ismbcalpha_l**|Alfabetik|Sıfır olmayan ve yalnız döndürür *c* ASCII İngilizce harf tek baytlı gösterimidir: 0x41 < =*c*< 0x5A veya 0x61 = < =*c*< 0x7A; = veya katakana harf: 0xA6 < =*c*< 0xDF =.|
+|**_ismbcdigit**, **_ismbcdigit**|Basamak|Sıfır olmayan ve yalnız döndürür *c* ASCII basamaklı tek baytlı gösterimidir: 0x30 < =*c*< 0x39 =.|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_ismbcalnum**, **_ismbcalnum_l**|\<Mbstring.h >|
+|**_ismbcalpha**, **_ismbcalpha_l**|\<Mbstring.h >|
+|**_ismbcdigit**, **_ismbcdigit_l**|\<Mbstring.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
+[_ismbc Yordamları](../../c-runtime-library/ismbc-routines.md)<br/>
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)<br/>

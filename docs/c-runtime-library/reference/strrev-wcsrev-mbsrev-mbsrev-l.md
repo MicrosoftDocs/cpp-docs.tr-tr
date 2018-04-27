@@ -1,12 +1,12 @@
 ---
 title: _strrev, _wcsrev, _mbsrev, _mbsrev_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _wcsrev
@@ -55,112 +55,117 @@ helpviewer_keywords:
 - tcsrev function
 - _tcsrev function
 ms.assetid: 87863e89-4fa0-421c-af48-25d8516fe72f
-caps.latest.revision: 
+caps.latest.revision: 25
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a0c70634dc0942004eb1045a72e0354e59526ab
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f8b925b3c67dda4d29208a7027bb7905502df432
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="strrev-wcsrev-mbsrev-mbsrevl"></a>_strrev, _wcsrev, _mbsrev, _mbsrev_l
-Bir dizenin karakter tersine çevirir.  
-  
+
+Bir dizenin karakter tersine çevirir.
+
 > [!IMPORTANT]
->  `_mbsrev` ve `_mbsrev_l` Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-char *_strrev(  
-   char *str   
-);  
-wchar_t *_wcsrev(  
-   wchar_t *str   
-);  
-unsigned char *_mbsrev(  
-   unsigned char *str   
-);  
-unsigned char *_mbsrev_l(  
-   unsigned char *str,  
-   _locale_t locale   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `str`  
- Tersine çevirmek için null ile sonlandırılmış dize.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi değiştirilmiş dizesi olarak döndürür. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_strrev` İşlevi karakter sırasını tersine çevirir `string`. Sondaki boş karakter yerinde kalır. `_wcsrev` ve `_mbsrev` joker karakter ve çok baytlı karakter sürümleri `_strrev`. Bağımsız değişkenleri ve dönüş değerini `_wcsrev` joker karakter olan dizeleri; bu `_mbsrev` çok baytlı karakter dizeleri belirtilmiştir. İçin `_mbsrev`, her birden çok baytlı karakter bayt sırasını `string` değiştirilmez. Bu üç işlevler aynı şekilde aksi davranır.  
-  
- `_mbsrev` parametreleri doğrular. Her iki `string1` veya `string2` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_mbsrev` döndürür `NULL` ve ayarlar `errno` için `EINVAL`. `_strrev` ve `_wcsrev` parametrelerini doğrulamaz.  
-  
- Çıkış değerini ayarı tarafından etkilenen `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale, _wsetlocale](../../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Dosyalardan yok dışında bu işlevler sürümleri özdeş sahip `_l` sonekini kullan geçerli yerel ayar ve sahip olanları `_l` soneki yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
+> **_mbsrev** ve **_mbsrev_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+char *_strrev(
+   char *str
+);
+wchar_t *_wcsrev(
+   wchar_t *str
+);
+unsigned char *_mbsrev(
+   unsigned char *str
+);
+unsigned char *_mbsrev_l(
+   unsigned char *str,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*str*<br/>
+Tersine çevirmek için null ile sonlandırılmış dize.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir işaretçi değiştirilmiş dizesi olarak döndürür. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Strrev** işlevi karakter sırasını tersine çevirir *str*. Sondaki boş karakter yerinde kalır. **_wcsrev** ve **_mbsrev** joker karakter ve çok baytlı karakter sürümleri **_strrev**. Bağımsız değişkenleri ve dönüş değerini **_wcsrev** joker karakter olan dizeleri; bu **_mbsrev** çok baytlı karakter dizeleri belirtilmiştir. İçin **_mbsrev**, her birden çok baytlı karakter bayt sırasını *str* değiştirilmez. Bu üç işlevler aynı şekilde aksi davranır.
+
+**_mbsrev** parametrelerini doğrular. Her iki *Dize1* veya *dize2* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_mbsrev** döndürür **NULL** ve ayarlar **errno** için **EINVAL**. **_strrev** ve **_wcsrev** parametrelerini doğrulamaz.
+
+Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Olanları yok dışında bu işlevler sürümleri özdeş sahip **_l** sonekini kullan geçerli yerel ayar ve sahip olanları **_l** soneki, bunun yerine yerel parametresini kullanın Bu geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
 > [!IMPORTANT]
->  Bu işlevler taşması tehditlerine karşı savunmasız olabilir. Arabellek aşırı çalıştırmaları unwarranted ayrıcalıkların nedeni sistem saldırıları için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_tcsrev`|`_strrev`|`_mbsrev`|`_wcsrev`|  
-|**yok**|**yok**|`_mbsrev_l`|**yok**|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_strrev`|\<String.h >|  
-|`_wcsrev`|\<String.h > veya \<wchar.h >|  
-|`_mbsrev`, `_mbsrev_l`|\<Mbstring.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_strrev.c  
-// This program checks a string to see  
-// whether it is a palindrome: that is, whether  
-// it reads the same forward and backward.  
-//  
-  
-#include <string.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   char* string = "Able was I ere I saw Elba";  
-   int result;  
-  
-   // Reverse string and compare (ignore case):  
-   result = _stricmp( string, _strrev( _strdup( string ) ) );  
-   if( result == 0 )  
-      printf( "The string \"%s\" is a palindrome\n", string );  
-   else  
-      printf( "The string \"%s\" is not a palindrome\n", string );  
-}  
-```  
-  
-```Output  
-The string "Able was I ere I saw Elba" is a palindrome  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [Çok baytlı karakter sıralarının yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)   
- [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md)   
- [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](../../c-runtime-library/reference/strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)
+> Bu işlevler taşması tehditlerine karşı savunmasız olabilir. Arabellek aşırı çalıştırmaları unwarranted ayrıcalıkların nedeni sistem saldırıları için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_tcsrev**|**_strrev**|**_mbsrev**|**_wcsrev**|
+|**yok**|**yok**|**_mbsrev_l**|**yok**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_strrev**|\<String.h >|
+|**_wcsrev**|\<String.h > veya \<wchar.h >|
+|**_mbsrev**, **_mbsrev_l**|\<Mbstring.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_strrev.c
+// This program checks a string to see
+// whether it is a palindrome: that is, whether
+// it reads the same forward and backward.
+//
+
+#include <string.h>
+#include <stdio.h>
+
+int main( void )
+{
+   char* string = "Able was I ere I saw Elba";
+   int result;
+
+   // Reverse string and compare (ignore case):
+   result = _stricmp( string, _strrev( _strdup( string ) ) );
+   if( result == 0 )
+      printf( "The string \"%s\" is a palindrome\n", string );
+   else
+      printf( "The string \"%s\" is not a palindrome\n", string );
+}
+```
+
+```Output
+The string "Able was I ere I saw Elba" is a palindrome
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
+[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

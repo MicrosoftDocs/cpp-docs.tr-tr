@@ -1,12 +1,12 @@
 ---
 title: logb, logbf, logbl, _logb, _logbf | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - logb
@@ -47,76 +47,82 @@ helpviewer_keywords:
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
 ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f2c1ad71f5f81b7e21e788e8cdbeb9edce60944
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5f279d2b31ba9a40dd3d5c0e5d3c50e5a9a4b170
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="logb-logbf-logbl-logb-logbf"></a>logb, logbf, logbl, _logb, _logbf
-Kayan nokta bağımsız değişkenin üs değeri ayıklar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double logb(  
-   double x   
-);  
-float logb(  
-   float x   
-); // C++ only  
-long double logb(  
-   long double x   
-); // C++ only   
-float logbf(  
-   float x   
-);  
-long double logbl(  
-   long double x   
-);  
-double _logb(  
-   double x   
-);  
-float _logbf(  
-   float x   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- x  
- Kayan nokta değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `logb` taraflı olmayan üs değerini döndürür `x` bir kayan nokta değeri olarak gösterilen imzalı bir tamsayı olarak.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `logb` İşlevleri üstel kayan nokta bağımsız değişkeninin değerini ayıklamak `x`, gibi `x` sonsuz aralığıyla temsil. Varsa bağımsız değişkeni `x` olan normalleştirilmiş gibi normal dışı, işlem görür.  
-  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `logb` alın ve dönüş `float` veya `long double` değerleri. Bir C programı `logb` her zaman alan ve döndüren bir `double`.  
-  
-|Giriş|SEH özel durumu|Matherr özel durumu|  
-|-----------|-------------------|-----------------------|  
-|± QNAN, UL|Yok.|_DOMAIN|  
-|± 0|ZERODIVIDE|_SING|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_logb`|\<float.h >|  
-|`logb`, `logbf`, `logbl`, `_logbf`|\<Math.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="libraries"></a>Kitaplıklar  
- Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [frexp](../../c-runtime-library/reference/frexp.md)
+
+Kayan nokta bağımsız değişkenin üs değeri ayıklar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double logb(
+   double x
+);
+float logb(
+   float x
+); // C++ only
+long double logb(
+   long double x
+); // C++ only
+float logbf(
+   float x
+);
+long double logbl(
+   long double x
+);
+double _logb(
+   double x
+);
+float _logbf(
+   float x
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Kayan nokta değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**logb** taraflı olmayan üs değerini döndürür *x* bir kayan nokta değeri olarak gösterilen imzalı bir tamsayı olarak.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Logb** işlevleri üstel kayan nokta bağımsız değişkeninin değerini ayıklamak *x*, gibi *x* sonsuz aralığıyla temsil. Varsa bağımsız değişkeni *x* olan normalleştirilmiş gibi normal dışı, işlem görür.
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **logb** alın ve dönüş **float** veya **uzun** **çift** değerleri. Bir C programı **logb** her zaman alan ve döndüren bir **çift**.
+
+|Giriş|SEH özel durumu|Matherr özel durumu|
+|-----------|-------------------|-----------------------|
+|± QNAN, UL|Yok.|_DOMAIN|
+|± 0|ZERODIVIDE|_SING|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_logb**|\<float.h >|
+|**logb**, **logbf**, **logbl**, **_logbf**|\<Math.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[frexp](frexp.md)<br/>

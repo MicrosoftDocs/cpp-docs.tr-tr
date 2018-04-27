@@ -1,12 +1,12 @@
 ---
 title: Geri Sar | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - rewind
@@ -33,97 +33,100 @@ helpviewer_keywords:
 - file pointers [C++], repositioning
 - file pointers [C++]
 ms.assetid: 1a460ce1-28d8-4b5e-83a6-633dca29c28a
-caps.latest.revision: 
+caps.latest.revision: 11
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04930e86395efdfe534e7d507c87baec48b16fed
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 48e3f54f20d763bb396db8671725b8f81ba654a8
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="rewind"></a>geri sar
-Dosya işaretçisini dosya başına yeniden konumlandırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      void rewind(  
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `stream`  
- İşaretçi **dosya** yapısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Geri sarma** işlevi ile ilişkili dosya işaretçisini yeniden konumlandırır `stream` dosya başına. Çağrı **geri sarma** benzer  
-  
- **(void) fseek (** `stream` **, 0L** `SEEK_SET` **);**  
-  
- Ancak, farklı `fseek`, **geri sarma** akış için hata göstergeleri yanı sıra dosya sonu göstergesi temizler. Ayrıca, farklı `fseek`, **geri sarma** işaretçinin başarıyla taşındı olup olmadığını belirten bir değer döndürmüyor.  
-  
- Klavye arabellek silmek için kullanın **geri sarma** akış ile `stdin`, klavye ile varsayılan olarak ilişkili olduğu.  
-  
- Akış ise bir `NULL` işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür ve `errno` ayarlanır `EINVAL`.  
-  
- Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|**rewind**|\<stdio.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="libraries"></a>Kitaplıklar  
- Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_rewind.c  
-/* This program first opens a file named  
- * crt_rewind.out for input and output and writes two  
- * integers to the file. Next, it uses rewind to  
- * reposition the file pointer to the beginning of  
- * the file and reads the data back in.  
- */  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   FILE *stream;  
-   int data1, data2;  
-  
-   data1 = 1;  
-   data2 = -37;  
-  
-   fopen_s( &stream, "crt_rewind.out", "w+" );  
-   if( stream != NULL )  
-   {  
-      fprintf( stream, "%d %d", data1, data2 );  
-      printf( "The values written are: %d and %d\n", data1, data2 );  
-      rewind( stream );  
-      fscanf_s( stream, "%d %d", &data1, &data2 );  
-      printf( "The values read are: %d and %d\n", data1, data2 );  
-      fclose( stream );  
-   }  
-}  
-```  
-  
-## <a name="output"></a>Çıkış  
-  
-```  
-The values written are: 1 and -37  
-The values read are: 1 and -37  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)
+
+Dosya işaretçisini dosya başına yeniden konumlandırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void rewind(
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Akış* işaretçi **dosya** yapısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Geri sarma** işlevi ile ilişkili dosya işaretçisini yeniden konumlandırır *akış* dosya başına. Çağrı **geri sarma** benzer
+
+**(void) fseek (** _akış_**, 0 L, SEEK_SET);**
+
+Ancak, farklı [fseek](fseek-fseeki64.md), **geri sarma** akış için hata göstergeleri yanı sıra dosya sonu göstergesi temizler. Ayrıca, farklı [fseek](fseek-fseeki64.md), **geri sarma** işaretçinin başarıyla taşındı olup olmadığını belirten bir değer döndürmüyor.
+
+Klavye arabellek silmek için kullanın **geri sarma** akış ile **stdin**, klavye ile varsayılan olarak ilişkili olduğu.
+
+Akış ise bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür ve **errno** ayarlanır **EINVAL**.
+
+Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**rewind**|\<stdio.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_rewind.c
+/* This program first opens a file named
+* crt_rewind.out for input and output and writes two
+* integers to the file. Next, it uses rewind to
+* reposition the file pointer to the beginning of
+* the file and reads the data back in.
+*/
+#include <stdio.h>
+
+int main( void )
+{
+   FILE *stream;
+   int data1, data2;
+
+   data1 = 1;
+   data2 = -37;
+
+   fopen_s( &stream, "crt_rewind.out", "w+" );
+   if( stream != NULL )
+   {
+      fprintf( stream, "%d %d", data1, data2 );
+      printf( "The values written are: %d and %d\n", data1, data2 );
+      rewind( stream );
+      fscanf_s( stream, "%d %d", &data1, &data2 );
+      printf( "The values read are: %d and %d\n", data1, data2 );
+      fclose( stream );
+   }
+}
+```
+
+### <a name="output"></a>Çıkış
+
+```Output
+The values written are: 1 and -37
+The values read are: 1 and -37
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>

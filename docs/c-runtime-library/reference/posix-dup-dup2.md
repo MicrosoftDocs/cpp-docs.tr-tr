@@ -1,12 +1,12 @@
 ---
 title: Dup, dup2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - dup2
@@ -32,17 +32,18 @@ helpviewer_keywords:
 - dup function
 - dup2 function
 ms.assetid: c7572170-47ff-4e0d-b9c3-10f0ab0ba40a
-caps.latest.revision: 
+caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ec5250b7ba775d8ba99df2eb39b634f6724772b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: deced755b0fa8b7f2917c29c11e81244b515bdb5
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="dup-dup2"></a>dup, dup2
-Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_dup, _dup2](../../c-runtime-library/reference/dup-dup2.md) yerine.
+
+Bu POSIX işlevler kullanım dışı bırakılmıştır. ISO C++ uyumluluğunu kullanmak [_dup, _dup2](dup-dup2.md) yerine.

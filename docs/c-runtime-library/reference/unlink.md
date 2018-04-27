@@ -1,12 +1,12 @@
 ---
-title: "bağlantısını | Microsoft Docs"
-ms.custom: 
+title: bağlantısını | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - unlink
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - unlink function
 ms.assetid: 2cd82055-5770-48be-88ee-4b2c70541c46
-caps.latest.revision: 
+caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edbc70c0ca1037a24ba397dfa342283ea981ac13
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4d0dc4a85a5ea719d93cc15a4a33f79859029a31
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="unlink"></a>bağlantıyı kaldır
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_unlink](../../c-runtime-library/reference/unlink-wunlink.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_unlink](unlink-wunlink.md) yerine.

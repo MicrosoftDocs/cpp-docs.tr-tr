@@ -1,12 +1,12 @@
 ---
-title: "value_compare sınıfı (&lt;harita&gt;) | Microsoft Docs"
-ms.custom: 
+title: value_compare sınıfı (&lt;harita&gt;) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - std::value_compare
@@ -18,24 +18,25 @@ dev_langs:
 helpviewer_keywords:
 - std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
-caps.latest.revision: 
+caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbb0f651c22702fdad7ca392fa76e4827c6c2e25
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 134d364c38b30584b2f8c242cd824ea522bc9259
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare sınıfı (&lt;harita&gt;)
-Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```
+
+Bir harita öğelerini göreli sıralarına eşlemesindeki belirlemek için kendi anahtarları değerleri karşılaştırarak karşılaştırabilirsiniz bir işlev nesnesi sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 class value_compare : public binary_function<value_type, value_type, bool>
 {
 public:
@@ -44,25 +45,26 @@ public:
 protected:
     key_compare comp;
 };
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tarafından sağlanan karşılaştırma ölçütü `value_compare` arasında **value_types** bir harita tarafından bulunan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarları arasında bir karşılaştırma gelen kopyaladığınızda. Üye işlevi işleci nesnenin kullandığı **comp** türü `key_compare` tarafından sağlanan işlev nesnesi depolanan `value_compare` iki öğeleri sıralama anahtarı bileşenlerinin karşılaştırmak için.  
-  
- Kümeleri ve anahtar değerlerinin olduğu öğesi değerlerin aynı basit kapsayıcılar olan, multisets `value_compare` eşdeğerdir `key_compare`; eşlemeleri ve bunlar değil, türü değeri multimaps `pair` öğeleri aynı değil öğenin anahtar değeri.  
-  
-## <a name="example"></a>Örnek  
-  Örneğin bkz [value_comp](../standard-library/map-class.md#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<harita >  
-  
- **Namespace:** std  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [binary_function yapısı](../standard-library/binary-function-struct.md)   
- [C++ Standart kitaplığında iş parçacığı güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)   
- [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)
+```
 
+## <a name="remarks"></a>Açıklamalar
 
+Tarafından sağlanan karşılaştırma ölçütü `value_compare` arasında **value_types** bir harita tarafından bulunan tüm öğelerin yardımcı sınıf oluşturma ile ilgili öğelerin anahtarları arasında bir karşılaştırma gelen kopyaladığınızda. Üye işlevi işleci nesnenin kullandığı **comp** türü `key_compare` tarafından sağlanan işlev nesnesi depolanan `value_compare` iki öğeleri sıralama anahtarı bileşenlerinin karşılaştırmak için.
 
+Kümeleri ve anahtar değerlerinin olduğu öğesi değerlerin aynı basit kapsayıcılar olan, multisets `value_compare` eşdeğerdir `key_compare`; eşlemeleri ve bunlar değil, türü değeri multimaps `pair` öğeleri aynı değil öğenin anahtar değeri.
+
+## <a name="example"></a>Örnek
+
+Örneğin bkz [value_comp](../standard-library/map-class.md#value_comp) bildirme ve kullanma konusunda bir örnek için `value_compare`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<harita >
+
+**Namespace:** std
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[binary_function Yapısı](../standard-library/binary-function-struct.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
+[C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

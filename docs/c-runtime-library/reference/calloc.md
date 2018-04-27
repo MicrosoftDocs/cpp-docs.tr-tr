@@ -1,12 +1,12 @@
 ---
 title: calloc | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - calloc
@@ -31,94 +31,99 @@ helpviewer_keywords:
 - memory allocation, arrays
 - calloc function
 ms.assetid: 17bb79a1-98cf-4096-90cb-1f9365cd6829
-caps.latest.revision: 
+caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f106ec1cd879282d557c492e4f19cdd01480575
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e755be214542dc4a601ad5e0f1d4aa02201dd552
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="calloc"></a>calloc
-0 olarak başlatılan öğelerle bir dizi bellek ayırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void *calloc(   
-   size_t num,  
-   size_t size   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `num`  
- Öğe sayısı.  
-  
- `size`  
- Her öğenin bayt cinsinden uzunluğu.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `calloc` bir işaretçi için ayrılan alanı döndürür. Dönüş değeri tarafından işaret depolama alanı nesnesinin herhangi bir türde bir depolama için uygun hizalanacak garanti edilmez. Bir işaretçi bir türe dışında almak için `void`, dönüş değerini cast türünü kullanın.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `calloc` İşlevi bir dizi için depolama alanı ayırır `num` öğeleri, her uzunlukta `size` bayt sayısı. Her öğe 0 olarak başlatılır.  
-  
- `calloc` Ayarlar `errno` için `ENOMEM` bir bellek ayırma başarısız olursa veya bellek miktarını aşıyor istediyseniz `_HEAP_MAXREQ`. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
- `calloc` çağrıları `malloc` C++ kullanılacak [_set_new_mode](../../c-runtime-library/reference/set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir, hatasında kullanılıp `malloc` belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](../../c-runtime-library/reference/set-new-handler.md). Varsayılan olarak, `malloc` yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, `calloc` bellek ayırmak başarısız `malloc` yeni işleyici yordamını aynı çağırıyor biçimi `new` işleci mu aynı nedenden dolayı başarısız olduğunda. Varsayılan değer geçersiz kılmak için arama  
-  
-```  
-_set_new_mode(1)  
-```  
-  
- program veya NEWMODE bağlantısıyla erken. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).  
-  
- Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında `calloc` çözümler [_calloc_dbg](../../c-runtime-library/reference/calloc-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).  
-  
- `calloc` işaretli `__declspec(noalias)` ve `__declspec(restrict)`, işlev genel değişkenler değiştirmemeniz garanti ve işaretçi döndürdü diğer adı değil anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md) ve [kısıtlamak](../../cpp/restrict.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`calloc`|\<stdlib.h > ve \<malloc.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_calloc.c  
-// This program uses calloc to allocate space for  
-// 40 long integers. It initializes each element to zero.  
-  
-#include <stdio.h>  
-#include <malloc.h>  
-  
-int main( void )  
-{  
-   long *buffer;  
-  
-   buffer = (long *)calloc( 40, sizeof( long ) );  
-   if( buffer != NULL )  
-      printf( "Allocated 40 long integers\n" );  
-   else  
-      printf( "Can't allocate memory\n" );  
-   free( buffer );  
-}  
-```  
-  
-```Output  
-Allocated 40 long integers  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
- [Boş](../../c-runtime-library/reference/free.md)   
- [malloc](../../c-runtime-library/reference/malloc.md)   
- [realloc](../../c-runtime-library/reference/realloc.md)
+
+0 olarak başlatılan öğelerle bir dizi bellek ayırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void *calloc(
+   size_t num,
+   size_t size
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Sayı*<br/>
+Öğe sayısı.
+
+*Boyutu*<br/>
+Her öğenin bayt cinsinden uzunluğu.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**calloc** ayrılan alanı için bir işaretçi döndürür. Dönüş değeri tarafından işaret depolama alanı nesnesinin herhangi bir türde bir depolama için uygun hizalanacak garanti edilmez. Bir işaretçi bir türe dışında almak için **void**, dönüş değerini cast türünü kullanın.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Calloc** işlevi bir dizi için depolama alanı ayırır *numarası* öğeleri, her uzunlukta *boyutu* bayt sayısı. Her öğe 0 olarak başlatılır.
+
+**calloc** ayarlar **errno** için **ENOMEM** bir bellek ayırma başarısız olursa veya bellek miktarını aşıyor istediyseniz **_HEAP_MAXREQ**. Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+**calloc** çağrıları **malloc** C++ kullanılacak [_set_new_mode](set-new-mode.md) yeni işleyici modu ayarlamak için işlevi. Yeni işleyici modunu gösterir, hatasında kullanılıp **malloc** belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **calloc** bellek ayırmak başarısız **malloc** yeni işleyici yordamını aynı çağırıyor biçimi **yeni** işleci mu aynı nedenden dolayı başarısız olduğunda. Varsayılan değer geçersiz kılmak için arama
+
+```C
+_set_new_mode(1);
+```
+
+program veya NEWMODE bağlantısıyla erken. OBJ (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+
+Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında **calloc** çözümler [_calloc_dbg](calloc-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
+
+**calloc** işaretlenmiş `__declspec(noalias)` ve `__declspec(restrict)`, işlev genel değişkenler değiştirmemeniz garanti ve işaretçi döndürdü diğer adı değil anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md) ve [kısıtlamak](../../cpp/restrict.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**calloc**|\<stdlib.h > ve \<malloc.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_calloc.c
+// This program uses calloc to allocate space for
+// 40 long integers. It initializes each element to zero.
+
+#include <stdio.h>
+#include <malloc.h>
+
+int main( void )
+{
+   long *buffer;
+
+   buffer = (long *)calloc( 40, sizeof( long ) );
+   if( buffer != NULL )
+      printf( "Allocated 40 long integers\n" );
+   else
+      printf( "Can't allocate memory\n" );
+   free( buffer );
+}
+```
+
+```Output
+Allocated 40 long integers
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[free](free.md)<br/>
+[malloc](malloc.md)<br/>
+[realloc](realloc.md)<br/>

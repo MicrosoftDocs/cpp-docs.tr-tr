@@ -1,12 +1,12 @@
 ---
-title: "Hata işleme (CRT) | Microsoft Docs"
-ms.custom: 
+title: Hata işleme (CRT) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - c.errors
@@ -18,34 +18,36 @@ helpviewer_keywords:
 - error handling, library routines
 - testing, for program errors
 ms.assetid: 125ac697-9eb0-4152-a440-b7842f23d97f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f40b2deb5c78667e5343bd2be0948252e2f2e154
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 5cb2c46318cc64403c51d5c6c751ec77897e97f2
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="error-handling-crt"></a>Hata İşleme (CRT)
-Program hataları işlemek için bu yordamları kullanın.  
-  
-### <a name="error-handling-routines"></a>Hata işleme rutinleri  
-  
-|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
-|-------------|---------|  
-|[Assert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu|Mantık hataları programlama için test; Çalışma Zamanı Kitaplığı sürüm ve hata ayıklama sürümlerinde kullanılabilir.|  
-|[_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makroları|Benzer şekilde `assert`, ancak yalnızca çalışma zamanı kitaplığı hata ayıklama sürümlerinde kullanılabilir.|  
-|[clearerr](../c-runtime-library/reference/clearerr.md)|Hata göstergesi sıfırlayın. Çağırma `rewind` veya bir akış kapatılırken de hata göstergesi sıfırlar.|  
-|[_eof](../c-runtime-library/reference/eof.md)|Dosya düşük düzey g/ç sonunda olup olmadığını denetleyin.|  
-|[feof](../c-runtime-library/reference/feof.md)|Dosya sonu için test edin. Dosya sonu olduğu da ne zaman gösterilen `_read` 0 döndürür.|  
-|[ferror](../c-runtime-library/reference/ferror.md)|Akış g/ç hataları için test edin.|  
-|[_RPT, _RPTF](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) makroları|Benzer şekilde bir raporu oluşturmak `printf`, ancak yalnızca çalışma zamanı kitaplığı hata ayıklama sürümlerinde kullanılabilir.|  
-|[_set_error_mode](../c-runtime-library/reference/set-error-mode.md)|Değiştirir `__error_mode` C çalışma zamanı hata iletisi büyük olasılıkla program sona erer bir hata için nereye yazdığını varsayılan olmayan bir konum belirlemek için.|  
-|[_set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)|Saf sanal işlev çağrısı için işleyici ayarlar.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kategorilere Göre Çalışma Zamanı Yordamları](../c-runtime-library/run-time-routines-by-category.md)
+
+Program hataları işlemek için bu yordamları kullanın.
+
+## <a name="error-handling-routines"></a>Hata işleme rutinleri
+
+|Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|-------------|---------|
+|[Assert](../c-runtime-library/reference/assert-macro-assert-wassert.md) makrosu|Mantık hataları programlama için test; Çalışma Zamanı Kitaplığı sürüm ve hata ayıklama sürümlerinde kullanılabilir.|
+|[_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md) makroları|Benzer şekilde **assert**, ancak yalnızca çalışma zamanı kitaplığı hata ayıklama sürümlerinde kullanılabilir.|
+|[clearerr](../c-runtime-library/reference/clearerr.md)|Hata göstergesi sıfırlayın. Çağırma **geri sarma** veya bir akış kapatılırken de hata göstergesi sıfırlar.|
+|[_eof](../c-runtime-library/reference/eof.md)|Dosya düşük düzey g/ç sonunda olup olmadığını denetleyin.|
+|[feof](../c-runtime-library/reference/feof.md)|Dosya sonu için test edin. Dosya sonu olduğu da ne zaman gösterilen **_read** 0 döndürür.|
+|[ferror](../c-runtime-library/reference/ferror.md)|Akış g/ç hataları için test edin.|
+|[_RPT, _RPTF](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md) makroları|Benzer şekilde bir raporu oluşturmak **printf**, ancak yalnızca çalışma zamanı kitaplığı hata ayıklama sürümlerinde kullanılabilir.|
+|[_set_error_mode](../c-runtime-library/reference/set-error-mode.md)|Değiştirir **__error_mode** C çalışma zamanı hata iletisi büyük olasılıkla program sona erer bir hata için nereye yazdığını varsayılan olmayan bir konum belirlemek için.|
+|[_set_purecall_handler](../c-runtime-library/reference/get-purecall-handler-set-purecall-handler.md)|Saf sanal işlev çağrısı için işleyici ayarlar.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

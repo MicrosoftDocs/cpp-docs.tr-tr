@@ -1,12 +1,12 @@
 ---
 title: lsearch | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - lsearch
@@ -29,17 +29,18 @@ dev_langs:
 helpviewer_keywords:
 - lsearch function
 ms.assetid: 130da3fc-904a-4375-b0ab-79bfea8a455f
-caps.latest.revision: 
+caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a328f89fd61d9b2bce9d5f5a886bd890a090fecd
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 03c91bcaf9a5b6971be827f134146d467b4d5b53
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="lsearch"></a>lsearch
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_lsearch](../../c-runtime-library/reference/lsearch.md) veya Gelişmiş Güvenlik [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md) yerine.
+
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_lsearch](lsearch.md) veya Gelişmiş Güvenlik [_lsearch_s](lsearch-s.md) yerine.

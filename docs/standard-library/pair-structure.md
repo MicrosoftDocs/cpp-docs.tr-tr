@@ -1,12 +1,12 @@
 ---
-title: "pair yapısı | Microsoft Docs"
-ms.custom: 
+title: pair yapısı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - utility/std::pair
@@ -15,23 +15,25 @@ dev_langs:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-caps.latest.revision: 
+caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd6eb47f2b82a2a7fe39465e196c5595f46d6568
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 85dba2dc464dbab383274c2d4e637e4c495bcc7d
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pair-structure"></a>pair Yapısı
-İki nesne tek bir nesne olarak davran olanağı sağlayan bir yapı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-```  
+
+İki nesne tek bir nesne olarak davran olanağı sağlayan bir yapı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 struct pair
 {
     typedef T1 first_type;
@@ -52,125 +54,125 @@ struct pair
     template <class Other1, class Other2>
     constexpr pair(Other1&& Val1, Other2&& Val2);
 };
-```  
-#### <a name="parameters"></a>Parametreler  
- `Val1`  
- İlk öğesi başlatma değeri `pair`.  
-  
- `Val2`  
- İkinci öğe olarak başlatılıyor değeri `pair`.  
-  
- `Right`  
- Başka bir çifti öğelerini başlatmak için kullanılacak değerleri olan çifti.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İlk (varsayılan) Oluşturucu ilk öğe türü için varsayılan çiftinin başlatır **T1** ve ikinci öğe türü varsayılan **T2**.  
-  
- İkinci oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2.*  
-  
- Üçüncü (şablonu) Oluşturucu çiftine ilk öğesi başlatır `Right`. **İlk** ve için ikinci `Right`. **İkinci**.  
-  
- Dördüncü Oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2* kullanarak [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Şablon yapısı türündeki nesneleri çifti depolar **T1** ve **T2**sırasıyla. Türü **first_type** şablon parametresi aynı **T1** ve türü **second_type** şablon parametresi aynı **T2** . **T1** ve **T2** her yalnızca varsayılan bir oluşturucu, tek bağımsız değişkenli yapıcı ve bir yıkıcı sağlamanız. Türdeki tüm üyelerin `pair` türü olarak bildirilmiş için ortaktır bir `struct` yerine bir **sınıfı**. Bir çift iki en yaygın kullanımları olarak dönüş iki değer döndüren işlevler için ve ilişkilendirilebilir kapsayıcı sınıfları için öğeleri olarak türleridir [map sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md) hem bir anahtara sahip ve bir her öğeyle ilişkili değer türü. İkinci bir çifti ilişkilendirilebilir kapsayıcı gereksinimlerini karşılayan ve form değer türüne sahip `pair` <  **const**`key_type`, `mapped_type`>.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// utility_pair.cpp  
-// compile with: /EHsc  
-#include <utility>  
-#include <map>  
-#include <iomanip>  
-#include <iostream>  
-  
-int main( )  
-{  
-   using namespace std;  
-  
-   // Using the constructor to declare and initialize a pair  
-   pair <int, double> p1 ( 10, 1.1e-2 );  
-  
-   // Compare using the helper function to declare and initialize a pair  
-   pair <int, double> p2;  
-   p2 = make_pair ( 10, 2.22e-1 );  
-  
-   // Making a copy of a pair  
-   pair <int, double> p3 ( p1 );  
-  
-   cout.precision ( 3 );  
-   cout << "The pair p1 is: ( " << p1.first << ", "   
-        << p1.second << " )." << endl;  
-   cout << "The pair p2 is: ( " << p2.first << ", "   
-        << p2.second << " )." << endl;  
-   cout << "The pair p3 is: ( " << p3.first << ", "   
-        << p3.second << " )." << endl;  
-  
-   // Using a pair for a map element  
-   map <int, int> m1;  
-   map <int, int>::iterator m1_Iter;  
-  
-   typedef pair <int, int> Map_Int_Pair;  
-  
-   m1.insert ( Map_Int_Pair ( 1, 10 ) );  
-   m1.insert ( Map_Int_Pair ( 2, 20 ) );  
-   m1.insert ( Map_Int_Pair ( 3, 30 ) );  
-  
-   cout << "The element pairs of the map m1 are:";  
-   for ( m1_Iter = m1.begin( ); m1_Iter != m1.end( ); m1_Iter++ )  
-      cout << " ( " << m1_Iter -> first << ", "  
-           << m1_Iter -> second << " )";  
-   cout   << "." << endl;  
-  
-   // Using pair as a return type for a function  
-   pair< map<int,int>::iterator, bool > pr1, pr2;  
-   pr1 = m1.insert ( Map_Int_Pair ( 4, 40 ) );  
-   pr2 = m1.insert ( Map_Int_Pair (1, 10 ) );  
-  
-   if( pr1.second == true )  
-   {  
-      cout << "The element (4,40) was inserted successfully in m1."  
-           << endl;  
-   }  
-   else     
-   {  
-      cout << "The element with a key value of\n"  
-           << " ( (pr1.first) -> first ) = " << ( pr1.first ) -> first   
-           << " is already in m1,\n so the insertion failed." << endl;  
-   }  
-  
-   if( pr2.second == true )  
-   {  
-      cout << "The element (1,10) was inserted successfully in m1."  
-           << endl;  
-   }  
-   else     
-   {  
-      cout << "The element with a key value of\n"  
-           << " ( (pr2.first) -> first ) = " << ( pr2.first ) -> first   
-           << " is already in m1,\n so the insertion failed." << endl;  
-   }  
-}  
-\* Output:   
-The pair p1 is: ( 10, 0.011 ).  
-The pair p2 is: ( 10, 0.222 ).  
-The pair p3 is: ( 10, 0.011 ).  
-The element pairs of the map m1 are: ( 1, 10 ) ( 2, 20 ) ( 3, 30 ).  
-The element (4,40) was inserted successfully in m1.  
-The element with a key value of  
- ( (pr2.first) -> first ) = 1 is already in m1,  
- so the insertion failed.  
-*\  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<yardımcı programı >  
-  
- **Namespace:** std  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+```
 
+### <a name="parameters"></a>Parametreler
 
+`Val1` İlk öğesi başlatma değeri `pair`.
 
+`Val2` İkinci öğe olarak başlatılıyor değeri `pair`.
+
+`Right` Başka bir çifti öğelerini başlatmak için kullanılacak değerleri olan çifti.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İlk (varsayılan) Oluşturucu ilk öğe türü için varsayılan çiftinin başlatır **T1** ve ikinci öğe türü varsayılan **T2**.
+
+İkinci oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2.*
+
+Üçüncü (şablonu) Oluşturucu çiftine ilk öğesi başlatır `Right`. **İlk** ve için ikinci `Right`. **İkinci**.
+
+Dördüncü Oluşturucu çiftine ilk öğesi başlatır `Val1` ve için ikinci *değer2* kullanarak [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Şablon yapısı türündeki nesneleri çifti depolar **T1** ve **T2**sırasıyla. Türü **first_type** şablon parametresi aynı **T1** ve türü **second_type** şablon parametresi aynı **T2** . **T1** ve **T2** her yalnızca varsayılan bir oluşturucu, tek bağımsız değişkenli yapıcı ve bir yıkıcı sağlamanız. Türdeki tüm üyelerin `pair` türü olarak bildirilmiş için ortaktır bir `struct` yerine bir **sınıfı**. Bir çift iki en yaygın kullanımları olarak dönüş iki değer döndüren işlevler için ve ilişkilendirilebilir kapsayıcı sınıfları için öğeleri olarak türleridir [map sınıfı](../standard-library/map-class.md) ve [multimap sınıfı](../standard-library/multimap-class.md) hem bir anahtara sahip ve bir her öğeyle ilişkili değer türü. İkinci bir çifti ilişkilendirilebilir kapsayıcı gereksinimlerini karşılayan ve form değer türüne sahip `pair` <  **const**`key_type`, `mapped_type`>.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// utility_pair.cpp
+// compile with: /EHsc
+#include <utility>
+#include <map>
+#include <iomanip>
+#include <iostream>
+
+int main( )
+{
+   using namespace std;
+
+   // Using the constructor to declare and initialize a pair
+   pair <int, double> p1 ( 10, 1.1e-2 );
+
+   // Compare using the helper function to declare and initialize a pair
+   pair <int, double> p2;
+   p2 = make_pair ( 10, 2.22e-1 );
+
+   // Making a copy of a pair
+   pair <int, double> p3 ( p1 );
+
+   cout.precision ( 3 );
+   cout << "The pair p1 is: ( " << p1.first << ", "
+        << p1.second << " )." << endl;
+   cout << "The pair p2 is: ( " << p2.first << ", "
+        << p2.second << " )." << endl;
+   cout << "The pair p3 is: ( " << p3.first << ", "
+        << p3.second << " )." << endl;
+
+   // Using a pair for a map element
+   map <int, int> m1;
+   map <int, int>::iterator m1_Iter;
+
+   typedef pair <int, int> Map_Int_Pair;
+
+   m1.insert ( Map_Int_Pair ( 1, 10 ) );
+   m1.insert ( Map_Int_Pair ( 2, 20 ) );
+   m1.insert ( Map_Int_Pair ( 3, 30 ) );
+
+   cout << "The element pairs of the map m1 are:";
+   for ( m1_Iter = m1.begin( ); m1_Iter != m1.end( ); m1_Iter++ )
+      cout << " ( " << m1_Iter -> first << ", "
+           << m1_Iter -> second << " )";
+   cout   << "." << endl;
+
+   // Using pair as a return type for a function
+   pair< map<int,int>::iterator, bool > pr1, pr2;
+   pr1 = m1.insert ( Map_Int_Pair ( 4, 40 ) );
+   pr2 = m1.insert ( Map_Int_Pair (1, 10 ) );
+
+   if( pr1.second == true )
+   {
+      cout << "The element (4,40) was inserted successfully in m1."
+           << endl;
+   }
+   else
+   {
+      cout << "The element with a key value of\n"
+           << " ( (pr1.first) -> first ) = " << ( pr1.first ) -> first
+           << " is already in m1,\n so the insertion failed." << endl;
+   }
+
+   if( pr2.second == true )
+   {
+      cout << "The element (1,10) was inserted successfully in m1."
+           << endl;
+   }
+   else
+   {
+      cout << "The element with a key value of\n"
+           << " ( (pr2.first) -> first ) = " << ( pr2.first ) -> first
+           << " is already in m1,\n so the insertion failed." << endl;
+   }
+}
+\* Output:
+The pair p1 is: ( 10, 0.011 ).
+The pair p2 is: ( 10, 0.222 ).
+The pair p3 is: ( 10, 0.011 ).
+The element pairs of the map m1 are: ( 1, 10 ) ( 2, 20 ) ( 3, 30 ).
+The element (4,40) was inserted successfully in m1.
+The element with a key value of
+ ( (pr2.first) -> first ) = 1 is already in m1,
+ so the insertion failed.
+*\
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<yardımcı programı >
+
+**Namespace:** std
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>

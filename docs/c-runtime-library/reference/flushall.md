@@ -1,12 +1,12 @@
 ---
 title: _flushall | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _flushall
@@ -33,72 +33,76 @@ helpviewer_keywords:
 - streams, flushing
 - _flushall function
 ms.assetid: 2cd73562-6d00-4ca2-b13c-80d0ae7870b5
-caps.latest.revision: 
+caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25e8a0045758d22a9b519cd1ffe4cc675a7674c2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 936a0c4c18b36c490f0edfeefa651e21c017e1fc
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="flushall"></a>_flushall
-Tüm akışlar aktarır; Tüm arabellekler temizler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _flushall( void );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_flushall` Açık akış (girdi ve çıktı) sayısını döndürür. Döndürülen hata yoktur.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `_flushall` için yazar uygun dosyaları açık çıkış akışları ile ilişkili tüm arabelleklerinin içeriğini işlevi. Açık giriş akışları ile ilişkili tüm arabellekler kendi geçerli içeriğini temizlenir. (Bu arabellekleri normalde verileri otomatik olarak diske yazmak için en iyi zamanı belirler işletim sistemi tarafından korunur: bir arabellek dolduğunda, bir akış kapalıyken veya ne zaman bir program akışları kapatmadan sona erer.)  
-  
- Okuma yapılan bir çağrı izliyorsa `_flushall`, yeni verileri arabellekleri giriş dosyalarından okuyun. Çağrısından sonra tüm akışlar açık kalmaya `_flushall`.  
-  
- Çalışma Zamanı Kitaplığı commit-to-disk özellik kritik verileri doğrudan diske yerine işletim sistemi arabellekleri için yazılmış emin olun olanak sağlar. Varolan bir programı'nı yeniden yazma işlemi olmadan, programın nesne dosyaları Commode.obj ile bağlayarak bu özelliği etkinleştirebilirsiniz. Sonuçta elde edilen yürütülebilir dosyada çağrılar `_flushall` tüm arabelleklerinin içeriğini diske yazma. Yalnızca `_flushall` ve `fflush` Commode.obj tarafından etkilenir.  
-  
- Commit-to-disk özelliği denetleme hakkında daha fazla bilgi için bkz: [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](../../c-runtime-library/reference/fopen-wfopen.md), ve [_fdopen](../../c-runtime-library/reference/fdopen-wfdopen.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`_flushall`|\<stdio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_flushall.c  
-// This program uses _flushall  
-// to flush all open buffers.  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   int numflushed;  
-  
-   numflushed = _flushall();  
-   printf( "There were %d streams flushed\n", numflushed );  
-}  
-```  
-  
-```Output  
-There were 3 streams flushed  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [_commit](../../c-runtime-library/reference/commit.md)   
- [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
- [fflush](../../c-runtime-library/reference/fflush.md)   
- [setvbuf](../../c-runtime-library/reference/setvbuf.md)
+
+Tüm akışlar aktarır; Tüm arabellekler temizler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _flushall( void );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_flushall** açık akış (girdi ve çıktı) sayısını döndürür. Döndürülen hata yoktur.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, **_flushall** için yazar uygun dosyaları açık çıkış akışları ile ilişkili tüm arabelleklerinin içeriğini işlevi. Açık giriş akışları ile ilişkili tüm arabellekler kendi geçerli içeriğini temizlenir. (Bu arabellekleri normalde verileri otomatik olarak diske yazmak için en iyi zamanı belirler işletim sistemi tarafından korunur: bir arabellek dolduğunda, bir akış kapalıyken veya ne zaman bir program akışları kapatmadan sona erer.)
+
+Okuma yapılan bir çağrı izliyorsa **_flushall**, yeni verileri arabellekleri giriş dosyalarından okuyun. Çağrısından sonra tüm akışlar açık kalmaya **_flushall**.
+
+Çalışma Zamanı Kitaplığı commit-to-disk özellik kritik verileri doğrudan diske yerine işletim sistemi arabellekleri için yazılmış emin olun olanak sağlar. Varolan bir programı'nı yeniden yazma işlemi olmadan, programın nesne dosyaları Commode.obj ile bağlayarak bu özelliği etkinleştirebilirsiniz. Sonuçta elde edilen yürütülebilir dosyada çağrılar **_flushall** tüm arabelleklerinin içeriğini diske yazma. Yalnızca **_flushall** ve [fflush](fflush.md) Commode.obj tarafından etkilenir.
+
+Commit-to-disk özelliği denetleme hakkında daha fazla bilgi için bkz: [akış g/ç](../../c-runtime-library/stream-i-o.md), [fopen](fopen-wfopen.md), ve [_fdopen](fdopen-wfdopen.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**_flushall**|\<stdio.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_flushall.c
+// This program uses _flushall
+// to flush all open buffers.
+
+#include <stdio.h>
+
+int main( void )
+{
+   int numflushed;
+
+   numflushed = _flushall();
+   printf( "There were %d streams flushed\n", numflushed );
+}
+```
+
+```Output
+There were 3 streams flushed
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[_commit](commit.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[fflush](fflush.md)<br/>
+[setvbuf](setvbuf.md)<br/>

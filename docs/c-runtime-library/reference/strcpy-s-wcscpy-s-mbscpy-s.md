@@ -44,18 +44,18 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8820dbda16d95a201d666a0f25b4e06a6b79c941
-ms.sourcegitcommit: 604907f77eb6c5b1899194a9877726f3e8c2dabc
+ms.openlocfilehash: 16dfe0f560097ab7a5a423f7730c215c2d05530f
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="strcpys-wcscpys-mbscpys"></a>strcpy_s, wcscpy_s, _mbscpy_s
 
-Bir dize kopyalar. Bu sürümleri [strcpy, wcscpy, _mbscpy](../../c-runtime-library/reference/strcpy-wcscpy-mbscpy.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bir dize kopyalar. Bu sürümleri [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md) açıklandığı gibi güvenlik geliştirmeleri sahip [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 > [!IMPORTANT]
-> `_mbscpy_s`, Windows Çalışma Zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscpy_s** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -98,7 +98,7 @@ errno_t _mbscpy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*dest*<br/>
+*Hedef*<br/>
 Hedef dize arabellek konumu.
 
 *dest_size*<br/>
@@ -113,7 +113,7 @@ Başarılıysa sıfır; Aksi takdirde bir hata oluştu.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|*dest*|*dest_size*|*src*|Dönüş değeri|İçeriği *hedef*|
+|*Hedef*|*dest_size*|*src*|Dönüş değeri|İçeriği *hedef*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**NULL**|tüm|tüm|**EINVAL**|değiştirilmedi|
 |tüm|tüm|**NULL**|**EINVAL**|*Hedef*0 olarak ayarlanırsa [0]|
@@ -121,9 +121,9 @@ Başarılıysa sıfır; Aksi takdirde bir hata oluştu.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`strcpy_s` İşlevi adresini içeriği kopyalar *src*, tarafından belirtilen konuma sonlandırma null karakteri de dahil olmak üzere *taşınmaya*. Hedef dize kaynak dizesi ve onun sonlandırma null karakter tutabilecek kadar büyük olmalıdır. Davranışını `strcpy_s` kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
+**Strcpy_s** işlevi adresini içeriği kopyalar *src*, tarafından belirtilen konuma sonlandırma null karakteri de dahil olmak üzere *taşınmaya*. Hedef dize kaynak dizesi ve onun sonlandırma null karakter tutabilecek kadar büyük olmalıdır. Davranışını **strcpy_s** kaynak ve hedef dizeleri çakışırsa tanımlanmadı.
 
-`wcscpy_s` joker karakter sürümü `strcpy_s`, ve `_mbscpy_s` çok baytlı karakter sürümüdür. Bağımsız değişkenleri `wcscpy_s` joker karakter olan dizeleri; bu `_mbscpy_s` çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**wcscpy_s** geniş karakter sürümü **strcpy_s**, ve **_mbscpy_s** çok baytlı karakter sürümüdür. Bağımsız değişkenleri **wcscpy_s** joker karakter olan dizeleri; bu **_mbscpy_s** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
 
 Varsa *taşınmaya* veya *src* null işaretçinin veya hedef boyutu dize *dest_size* anlatıldığıgibigeçersizparametreişleyicisiçağrılır,çokküçük[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **EINVAL** ve **errno** için **EINVAL** zaman *taşınmaya* veya  *src* null işaretçi ve döndürmeleri **ERANGE** ve **errno** için **ERANGE** hedef dizesi olduğunda çok küçük.
 
@@ -131,21 +131,21 @@ Başarılı yürütme sırasında hedef her zaman null ile sonlandırılmış di
 
 C++'da, Bu işlevlerden birinin kullanımını arabellek uzunluğu otomatik olarak Infer ve böylece boyutu bağımsız değişkeni belirtmeniz gerekmez şablon aşırı yüklemeleri tarafından Basitleştirilmiş ve bunlar otomatik olarak işlevleri eski, daha az güvenli, daha yeni, değiştirebilirsiniz daha güvenli ortaklarınıza. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
 
-Bu işlevler hata ayıklama kitaplığı sürümleri ilk 0xFE arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](../../c-runtime-library/reference/crtsetdebugfillthreshold.md).
+Bu işlevler hata ayıklama kitaplığı sürümleri ilk 0xFE arabellekle doldurun. Bu davranışı devre dışı bırakmak için [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|`_tcscpy_s`|`strcpy_s`|`_mbscpy_s`|`wcscpy_s`|
+|**_tcscpy_s**|**strcpy_s**|**_mbscpy_s**|**wcscpy_s**|
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`strcpy_s`|\<String.h >|
-|`wcscpy_s`|\<String.h > veya \<wchar.h >|
-|`_mbscpy_s`|\<Mbstring.h >|
+|**strcpy_s**|\<String.h >|
+|**wcscpy_s**|\<String.h > veya \<wchar.h >|
+|**_mbscpy_s**|\<Mbstring.h >|
 
 Bu işlevler Microsoft özgüdür. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -215,11 +215,11 @@ String = Hello world from wcscpy_s and wcscat_s!
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Dize düzenlemesi](../../c-runtime-library/string-manipulation-crt.md) <br/>
-[strcat, wcscat, _mbscat](../../c-runtime-library/reference/strcat-wcscat-mbscat.md) <br/>
-[strcmp, wcscmp, _mbscmp](../../c-runtime-library/reference/strcmp-wcscmp-mbscmp.md) <br/>
-[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](../../c-runtime-library/reference/strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) <br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](../../c-runtime-library/reference/strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) <br/>
-[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](../../c-runtime-library/reference/strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md) <br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](../../c-runtime-library/reference/strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) <br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](../../c-runtime-library/reference/strrchr-wcsrchr-mbsrchr-mbsrchr-l.md) <br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](../../c-runtime-library/reference/strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
+[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md) <br/>
+[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md) <br/>
+[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md) <br/>
+[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md) <br/>
+[strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md) <br/>
+[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md) <br/>
+[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md) <br/>
+[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>

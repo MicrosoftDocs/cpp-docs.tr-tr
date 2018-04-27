@@ -1,12 +1,12 @@
 ---
 title: _fflush_nolock | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _fflush_nolock
@@ -34,49 +34,54 @@ helpviewer_keywords:
 - streams, flushing
 - flushing
 ms.assetid: 5e33c4a1-b10c-4001-ad01-210757919291
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 091a32f7e5c16876378a147084a9ecdd06354243
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 125c20a53b605089a9b8b5eb83816b82bbf69f2c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fflushnolock"></a>_fflush_nolock
-İş parçacığı kilitlemeden bir akışa aktarır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _fflush_nolock(   
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bkz: [fflush](../../c-runtime-library/reference/fflush.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlev bir kilitleme sürümüdür `fflush`. Aynı `fflush` dışında girişime diğer iş parçacıkları tarafından korunmuyor. Başka bir iş parçacığı kilitleme yükünü artırmak değil olduğundan daha hızlı olabilir. Tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işler burada gibi iş parçacığı bağlamlarda yalnızca bu işlevi kullanın.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`_fflush_nolock`|\<stdio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fclose, _fcloseall](../../c-runtime-library/reference/fclose-fcloseall.md)   
- [_flushall](../../c-runtime-library/reference/flushall.md)   
- [setvbuf](../../c-runtime-library/reference/setvbuf.md)
+
+İş parçacığı kilitlemeden bir akışa aktarır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _fflush_nolock(
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bkz: [fflush](fflush.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlev bir kilitleme sürümüdür **fflush**. Aynı **fflush** dışında girişime diğer iş parçacıkları tarafından korunmuyor. Başka bir iş parçacığı kilitleme yükünü artırmak değil olduğundan daha hızlı olabilir. Tek iş parçacıklı uygulamalar veya arama kapsamı zaten iş parçacığı yalıtım işler burada gibi iş parçacığı bağlamlarda yalnızca bu işlevi kullanın.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**_fflush_nolock**|\<stdio.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fclose, _fcloseall](fclose-fcloseall.md)<br/>
+[_flushall](flushall.md)<br/>
+[setvbuf](setvbuf.md)<br/>

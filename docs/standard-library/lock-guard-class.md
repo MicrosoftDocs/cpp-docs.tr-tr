@@ -1,12 +1,12 @@
 ---
-title: "lock_guard sınıfı | Microsoft Docs"
-ms.custom: 
+title: lock_guard sınıfı | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - mutex/std::lock_guard
@@ -14,82 +14,87 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60643375742ef02ef1ba8ea08e614d12c504c573
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 3b36567eb9767d65847da8e6492ffd817322b458
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="lockguard-class"></a>lock_guard Sınıfı
-Yıkıcı kilidini açarak nesne oluşturmak için örneği bir şablon temsil eden bir `mutex`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```
+
+Yıkıcı kilidini açarak nesne oluşturmak için örneği bir şablon temsil eden bir `mutex`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 template <class Mutex>
 class lock_guard;
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Şablon bağımsız değişken `Mutex` adı olmalıdır bir *mutex türü*.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel tür tanımları  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`lock_guard::mutex_type`|Şablon bağımsız değişken için eş anlamlı `Mutex`.|  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[lock_guard](#lock_guard)|Oluşturan bir `lock_guard` nesnesi.|  
-|[lock_guard::~lock_guard Destructor](#dtorlock_guard_destructor)|Kilidini açarak `mutex` oluşturucuya geçirildi.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** \<mutex >  
-  
- **Namespace:** std  
-  
-##  <a name="lock_guard"></a>  lock_guard::lock_guard Oluşturucusu  
- Oluşturan bir `lock_guard` nesnesi.  
-  
-```cpp  
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Şablon bağımsız değişken `Mutex` adı olmalıdır bir *mutex türü*.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel tür tanımları
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`lock_guard::mutex_type`|Şablon bağımsız değişken için eş anlamlı `Mutex`.|
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[lock_guard](#lock_guard)|Oluşturan bir `lock_guard` nesnesi.|
+|[lock_guard:: ~ lock_guard yıkıcısı](#dtorlock_guard_destructor)|Kilidini açarak `mutex` oluşturucuya geçirildi.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<mutex >
+
+**Namespace:** std
+
+## <a name="lock_guard"></a>  lock_guard::lock_guard Oluşturucusu
+
+Oluşturan bir `lock_guard` nesnesi.
+
+```cpp
 explicit lock_guard(mutex_type& Mtx);
 
 lock_guard(mutex_type& Mtx, adopt_lock_t);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- `Mtx`  
- A *mutex türü* nesnesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucusu türünde bir nesne oluşturur `lock_guard` ve kilitleri `Mtx`. Varsa `Mtx` özyinelemeli mutex değil Bu oluşturucu çağrıldığında kilidi olmalıdır.  
-  
- İkinci oluşturucu kilit `Mtx`. `Mtx` Bu oluşturucu çağrıldığında kilitlenmiş olması gerekir. Oluşturucusu hiçbir özel durum oluşturur.  
-  
-##  <a name="dtorlock_guard_destructor"></a>  lock_guard:: ~ lock_guard yıkıcısı  
- Kilidini açarak `mutex` oluşturucuya geçirildi.  
-  
 ```
+
+### <a name="parameters"></a>Parametreler
+
+`Mtx` A *mutex türü* nesnesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+İlk Oluşturucusu türünde bir nesne oluşturur `lock_guard` ve kilitleri `Mtx`. Varsa `Mtx` özyinelemeli mutex değil Bu oluşturucu çağrıldığında kilidi olmalıdır.
+
+İkinci oluşturucu kilit `Mtx`. `Mtx` Bu oluşturucu çağrıldığında kilitlenmiş olması gerekir. Oluşturucusu hiçbir özel durum oluşturur.
+
+## <a name="dtorlock_guard_destructor"></a>  lock_guard:: ~ lock_guard yıkıcısı
+
+Kilidini açarak `mutex` oluşturucuya geçirildi.
+
+```cpp
 ~lock_guard() noexcept;
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Varsa `mutex` yıkıcı çalıştığında yok davranışı tanımlı değil.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)   
- [\<mutex>](../standard-library/mutex.md)
+```
 
+### <a name="remarks"></a>Açıklamalar
 
+Varsa `mutex` yıkıcı çalıştığında yok davranışı tanımlı değil.
 
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<Mutex >](../standard-library/mutex.md)<br/>

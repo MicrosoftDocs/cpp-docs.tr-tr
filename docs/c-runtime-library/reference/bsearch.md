@@ -1,12 +1,12 @@
 ---
 title: bsearch | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - bsearch
@@ -31,117 +31,123 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch function
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
-caps.latest.revision: 
+caps.latest.revision: 22
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6b855292a99313aad6b2431c7cecf77538b38d8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 85f9dc8bcaf44ade966ec76a57e34c5c06c4935e
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="bsearch"></a>bsearch
-İkili arama sıralanmış bir dizinin gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [bsearch_s](../../c-runtime-library/reference/bsearch-s.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void *bsearch(   
-   const void *key,  
-   const void *base,  
-   size_t num,  
-   size_t width,  
-   int ( __cdecl *compare ) (const void *key, const void *datum)   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `key`  
- Aranacak nesne.  
-  
- `base`  
- Arama verilerini temel işaretçi.  
-  
- `num`  
- Öğe sayısı.  
-  
- `width`  
- Öğe genişliği.  
-  
- `compare`  
- İki öğe karşılaştırır geri çağırma işlevi. İlk arama için anahtar için bir işaretçi ve ikinci anahtar ile Karşılaştırılacak dizi öğesi için bir işaretçi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `bsearch` İşaretçi için bir örneğini döndüren `key` gösterdiği dizideki `base`. Varsa `key` , işlevi döndürür bulunamadı `NULL`. Dizi artan sıralama değil veya yinelenen kayıtları aynı anahtarlarla içeriyorsa, öngörülemeyen bir sonucudur.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `bsearch` İşlevi gerçekleştiren bir ikili arama sıralanmış bir dizi `num` öğeleri, her biri `width` bayt cinsinden boyutu. `base` Aranacak, dizi tabanı için bir işaretçi bir değerdir ve `key` Aranan değerdir. `compare` Parametresi, bir dizi öğesine istenen anahtarına karşılaştırır ve ilişkilerini belirterek aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir:  
-  
-|Tarafından döndürülen değer `compare` yordamı|Açıklama|  
-|-----------------------------------------|-----------------|  
-|\< 0|Dizi öğesi değerinden anahtardır.|  
-|0|Anahtar dizi öğesine eşittir.|  
-|> 0|Dizi öğesi büyük anahtardır.|  
-  
- Bu işlev parametrelerini doğrular. Varsa `compare`, `key` veya `num` olan `NULL`, veya `base` olan `NULL` ve *`num` sıfır olmayan, olduğundan veya `width` sıfır anlatıldığıgibigeçersizparametreişleyicisiçağrılır[Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`bsearch`|\<stdlib.h > ve \<search.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Bu program bir dize dizisi qsort ile sıralar ve "kat" word bulmak için bsearch kullanır.  
-  
-```  
-// crt_bsearch.c  
-#include <search.h>  
-#include <string.h>  
-#include <stdio.h>  
-  
-int compare( char **arg1, char **arg2 )  
-{  
-   /* Compare all of both strings: */  
-   return _strcmpi( *arg1, *arg2 );  
-}  
-  
-int main( void )  
-{  
-   char *arr[] = {"dog", "pig", "horse", "cat", "human", "rat", "cow", "goat"};  
-   char **result;  
-   char *key = "cat";  
-   int i;  
-  
-   /* Sort using Quicksort algorithm: */  
-   qsort( (void *)arr, sizeof(arr)/sizeof(arr[0]), sizeof( char * ), (int (*)(const   
-   void*, const void*))compare );  
-  
-   for( i = 0; i < sizeof(arr)/sizeof(arr[0]); ++i )    /* Output sorted list */  
-      printf( "%s ", arr[i] );  
-  
-   /* Find the word "cat" using a binary search algorithm: */  
-   result = (char **)bsearch( (char *) &key, (char *)arr, sizeof(arr)/sizeof(arr[0]),  
-                              sizeof( char * ), (int (*)(const void*, const void*))compare );  
-   if( result )  
-      printf( "\n%s found at %Fp\n", *result, result );  
-   else  
-      printf( "\nCat not found!\n" );  
-}  
-```  
-  
-```Output  
-cat cow dog goat horse human pig rat  
-cat found at 002F0F04  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)   
- [_lfind](../../c-runtime-library/reference/lfind.md)   
- [_lsearch](../../c-runtime-library/reference/lsearch.md)   
- [qsort](../../c-runtime-library/reference/qsort.md)
+
+İkili arama sıralanmış bir dizinin gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [bsearch_s](bsearch-s.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void *bsearch(
+   const void *key,
+   const void *base,
+   size_t num,
+   size_t width,
+   int ( __cdecl *compare ) (const void *key, const void *datum)
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Anahtarı*<br/>
+Aranacak nesne.
+
+*base*<br/>
+Arama verilerini temel işaretçi.
+
+*Sayı*<br/>
+Öğe sayısı.
+
+*Genişlik*<br/>
+Öğe genişliği.
+
+*Karşılaştırma*<br/>
+İki öğe karşılaştırır geri çağırma işlevi. İlk arama için anahtar için bir işaretçi ve ikinci anahtar ile Karşılaştırılacak dizi öğesi için bir işaretçi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**bsearch** işaretçi için bir örneğini döndüren *anahtar* gösterdiği dizideki *temel*. Varsa *anahtar* , işlevi döndürür bulunamadı **NULL**. Dizi artan sıralama değil veya yinelenen kayıtları aynı anahtarlarla içeriyorsa, öngörülemeyen bir sonucudur.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Bsearch** işlevi gerçekleştiren bir ikili arama sıralanmış bir dizi *numarası* öğeleri, her biri *genişliği* bayt cinsinden boyutu. *Temel* aranacak, dizi tabanı için bir işaretçi bir değerdir ve *anahtar* Aranan değerdir. *Karşılaştırmak* parametredir bir işaretçi bir dizi öğesine istenen anahtarına karşılaştırır ve ilişkilerini belirterek aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama:
+
+|Tarafından döndürülen değer *karşılaştırmak* yordamı|Açıklama|
+|-----------------------------------------|-----------------|
+|\< 0|Dizi öğesi değerinden anahtardır.|
+|0|Anahtar dizi öğesine eşittir.|
+|> 0|Dizi öğesi büyük anahtardır.|
+
+Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* olan **NULL**ve **numarası* sıfır olmayan, olduğundan veya *genişliği* sıfır açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**bsearch**|\<stdlib.h > ve \<search.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Bu program bir dize dizisi qsort ile sıralar ve "kat" word bulmak için bsearch kullanır.
+
+```C
+// crt_bsearch.c
+#include <search.h>
+#include <string.h>
+#include <stdio.h>
+
+int compare( char **arg1, char **arg2 )
+{
+   /* Compare all of both strings: */
+   return _strcmpi( *arg1, *arg2 );
+}
+
+int main( void )
+{
+   char *arr[] = {"dog", "pig", "horse", "cat", "human", "rat", "cow", "goat"};
+   char **result;
+   char *key = "cat";
+   int i;
+
+   /* Sort using Quicksort algorithm: */
+   qsort( (void *)arr, sizeof(arr)/sizeof(arr[0]), sizeof( char * ), (int (*)(const
+   void*, const void*))compare );
+
+   for( i = 0; i < sizeof(arr)/sizeof(arr[0]); ++i )    /* Output sorted list */
+      printf( "%s ", arr[i] );
+
+   /* Find the word "cat" using a binary search algorithm: */
+   result = (char **)bsearch( (char *) &key, (char *)arr, sizeof(arr)/sizeof(arr[0]),
+                              sizeof( char * ), (int (*)(const void*, const void*))compare );
+   if( result )
+      printf( "\n%s found at %Fp\n", *result, result );
+   else
+      printf( "\nCat not found!\n" );
+}
+```
+
+```Output
+cat cow dog goat horse human pig rat
+cat found at 002F0F04
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch](lsearch.md)<br/>
+[qsort](qsort.md)<br/>

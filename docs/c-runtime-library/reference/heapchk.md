@@ -1,12 +1,12 @@
 ---
 title: _heapchk | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _heapchk
@@ -35,104 +35,101 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1656c488b722d2ed791da16db8a014e53568e82d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: bc4be6eca6f2c9a2849f0a9e6ebda67a021eb226
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="heapchk"></a>_heapchk
-Öbek üzerinde tutarlılık denetimleri çalıştırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _heapchk( void );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_heapchk` Malloc.h içinde tanımlanan tamsayı bildirim sabitlerden birini döndürür.  
-  
- `_HEAPBADBEGIN`  
- İlk üst bilgileri bozuk veya bulunamıyor.  
-  
- `_HEAPBADNODE`  
- Hatalı düğüm bulunamadı veya yığın bozulmuş.  
-  
- `_HEAPBADPTR`  
- İşaretçi öbek halinde geçerli değil.  
-  
- `_HEAPEMPTY`  
- Yığın başlatılmadı.  
-  
- `_HEAPOK`  
- Yığın tutarlı gibi görünüyor.  
-  
- Ayrıca, bir hata oluşursa, `_heapchk` ayarlar `errno` için `ENOSYS`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_heapchk` İşlevi yığın ile ilgili sorunlar için en az öbek tutarlılık denetimi tarafından hata ayıklama yardımcı olur. İşletim sistemini desteklemiyor, `_heapchk`işlevi (örneğin, Windows 98), döndürür `_HEAPOK` ve ayarlar `errno` için `ENOSYS`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
-|-------------|---------------------|---------------------|  
-|`_heapchk`|\<malloc.h >|\<errno.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_heapchk.c  
-// This program checks the heap for  
-// consistency and prints an appropriate message.  
-  
-#include <malloc.h>  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   int  heapstatus;  
-   char *buffer;  
-  
-   // Allocate and deallocate some memory  
-   if( (buffer = (char *)malloc( 100 )) != NULL )  
-      free( buffer );  
-  
-   // Check heap status  
-   heapstatus = _heapchk();  
-   switch( heapstatus )  
-   {  
-   case _HEAPOK:  
-      printf(" OK - heap is fine\n" );  
-      break;  
-   case _HEAPEMPTY:  
-      printf(" OK - heap is empty\n" );  
-      break;  
-   case _HEAPBADBEGIN:  
-      printf( "ERROR - bad start of heap\n" );  
-      break;  
-   case _HEAPBADNODE:  
-      printf( "ERROR - bad node in heap\n" );  
-      break;  
-   }  
-}  
-```  
-  
-```Output  
-OK - heap is fine  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bellek ayırma](../../c-runtime-library/memory-allocation.md)   
- [_heapadd](../../c-runtime-library/heapadd.md)   
- [_heapmin](../../c-runtime-library/reference/heapmin.md)   
- [_heapset](../../c-runtime-library/heapset.md)   
- [_heapwalk](../../c-runtime-library/reference/heapwalk.md)
+
+Öbek üzerinde tutarlılık denetimleri çalıştırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _heapchk( void );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_heapchk** Malloc.h içinde tanımlanan tamsayı bildirim sabitlerden birini döndürür.
+
+|Dönüş değeri|Koşul|
+|-|-|
+**_HEAPBADBEGIN**|İlk üst bilgileri bozuk veya bulunamıyor.
+**_HEAPBADNODE**|Hatalı düğüm bulunamadı veya yığın bozulmuş.
+**_HEAPBADPTR**|İşaretçi öbek halinde geçerli değil.
+**_HEAPEMPTY**|Yığın başlatılmadı.
+**_HEAPOK**|Yığın tutarlı gibi görünüyor.
+
+Ayrıca, bir hata oluşursa, **_heapchk** ayarlar **errno** için **ENOSYS**.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Heapchk** işlevi yığın ile ilgili sorunlar için en az öbek tutarlılık denetimi tarafından hata ayıklama yardımcı olur. İşletim sistemini desteklemiyor, **_heapchk**işlevi (örneğin, Windows 98), döndürür **_HEAPOK** ve ayarlar **errno** için **ENOSYS**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|-------------|---------------------|---------------------|
+|**_heapchk**|\<malloc.h >|\<errno.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_heapchk.c
+// This program checks the heap for
+// consistency and prints an appropriate message.
+
+#include <malloc.h>
+#include <stdio.h>
+
+int main( void )
+{
+   int  heapstatus;
+   char *buffer;
+
+   // Allocate and deallocate some memory
+   if( (buffer = (char *)malloc( 100 )) != NULL )
+      free( buffer );
+
+   // Check heap status
+   heapstatus = _heapchk();
+   switch( heapstatus )
+   {
+   case _HEAPOK:
+      printf(" OK - heap is fine\n" );
+      break;
+   case _HEAPEMPTY:
+      printf(" OK - heap is empty\n" );
+      break;
+   case _HEAPBADBEGIN:
+      printf( "ERROR - bad start of heap\n" );
+      break;
+   case _HEAPBADNODE:
+      printf( "ERROR - bad node in heap\n" );
+      break;
+   }
+}
+```
+
+```Output
+OK - heap is fine
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bellek Ayırma](../../c-runtime-library/memory-allocation.md)<br/>
+[_heapadd](../../c-runtime-library/heapadd.md)<br/>
+[_heapmin](heapmin.md)<br/>
+[_heapset](../../c-runtime-library/heapset.md)<br/>
+[_heapwalk](heapwalk.md)<br/>

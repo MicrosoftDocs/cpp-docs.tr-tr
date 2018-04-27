@@ -1,12 +1,12 @@
 ---
 title: fwide | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fwide
@@ -29,47 +29,51 @@ dev_langs:
 helpviewer_keywords:
 - fwide function
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
-caps.latest.revision: 
+caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e38bce95a26bd8b128a048768870c63f7de9da9f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a055df312215b5ff424aff54cfee54e0568ab307
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fwide"></a>fwide
-Uygulanmayan.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int fwide(  
-   FILE *stream,  
-   int mode;  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `stream`  
- İşaretçi `FILE` yapısı (yoksayıldı).  
-  
- `mode`  
- Akış yeni genişliğini: bırakmak için sıfır geniş karakter, bayt, negatif için pozitif bir farklılık göstermez. (Bu değer yoksayılır.)  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu işlev, şu anda yalnızca döndürür `mode`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlev geçerli sürümü standart ile uyumlu değil.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fwide`|\<wchar.h >|  
-  
- Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+Uygulanmayan.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int fwide(
+   FILE *stream,
+   int mode;
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı (yoksayıldı).
+
+*Modu*<br/>
+Akış yeni genişliğini: bırakmak için sıfır geniş karakter, bayt, negatif için pozitif bir farklılık göstermez. (Bu değer yoksayılır.)
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu işlev, şu anda yalnızca döndürür *modu*.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlev geçerli sürümü standart ile uyumlu değil.
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fwide**|\<wchar.h >|
+
+Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).

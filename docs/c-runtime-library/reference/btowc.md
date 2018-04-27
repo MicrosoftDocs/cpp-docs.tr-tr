@@ -1,12 +1,12 @@
 ---
 title: btowc | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - btowc
@@ -30,43 +30,47 @@ dev_langs:
 helpviewer_keywords:
 - btowc function
 ms.assetid: 99a46e02-6f86-4569-af79-5feca012add8
-caps.latest.revision: 
+caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec89bd89edb8fa178ec83d6a2e57fe1ba86da5d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8f6605184408b3a1548eeb8af469fc7df1a6407c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="btowc"></a>btowc
-Tamsayı ilk kaydırma durumda geçerli bir tek baytlı karakter temsil edip etmediğini belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-wint_t btowc(  
-   int c  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Test etmek için bir tamsayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir tek baytlı karakter ilk kaydırma durumda tamsayı temsil ediyorsa karakter joker karakter gösterimini döndürür. Tamsayı EOF ya da geçerli bir tek baytlı karakter ilk kaydırma durumda değil ise WEOF döndürür. Bu işlev çıktısını geçerli tarafından etkilenen `LC_TYPE` yerel ayar.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`btowc`|\<stdio.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [mbtowc, _mbtowc_l](../../c-runtime-library/reference/mbtowc-mbtowc-l.md)
+
+Tamsayı ilk kaydırma durumda geçerli bir tek baytlı karakter temsil edip etmediğini belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+wint_t btowc(
+   int character
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Karakter*<br/>
+Test etmek için bir tamsayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Geçerli bir tek baytlı karakter ilk kaydırma durumda tamsayı temsil ediyorsa karakter joker karakter gösterimini döndürür. Tamsayı EOF ya da geçerli bir tek baytlı karakter ilk kaydırma durumda değil ise WEOF döndürür. Bu işlev çıktısını geçerli tarafından etkilenen **LC_TYPE** yerel ayar.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**btowc**|\<stdio.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

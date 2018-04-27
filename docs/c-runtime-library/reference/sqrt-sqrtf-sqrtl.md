@@ -1,12 +1,12 @@
 ---
 title: Sqrt, sqrtf, sqrtl | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - sqrtl
@@ -39,93 +39,98 @@ helpviewer_keywords:
 - calculating square roots
 - square roots, calculating
 ms.assetid: 2ba9467b-f172-41dc-8f10-b86f68fa813c
-caps.latest.revision: 
+caps.latest.revision: 18
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 525e2414dd92ed486506fceedc6fb550b4a7a569
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7e02cd23aeabc54eb9c8e4d2823a33d9c20b563f
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="sqrt-sqrtf-sqrtl"></a>sqrt, sqrtf, sqrtl
-Kare kökünü hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-double sqrt(  
-   double x   
-);  
-float sqrt(  
-   float x   
-);  // C++ only  
-long double sqrt(  
-   long double x  
-);  // C++ only  
-float sqrtf(  
-   float x   
-);  
-long double sqrtl(  
-   long double x   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `x`  
- Kayan nokta negatif olmayan değer  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz `sqrt` Süren `float` veya `long double` türleri. Bir C programı `sqrt` her zaman alan ve döndüren `double`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `sqrt` İşlevler kare kökünü döndürür `x`. Varsayılan olarak, varsa `x` negatif `sqrt` belirsiz NaN döndürür.  
-  
-|Giriş|SEH özel durumu|`_matherr` Özel durumu|  
-|-----------|-------------------|--------------------------|  
-|± QNAN, UL|yok|_DOMAIN|  
-|- ∞|yok|_DOMAIN|  
-|x<0|yok|_DOMAIN|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|C üstbilgisi|C++ üstbilgi|  
-|--------------|--------------|------------------|  
-|`sqrt`, `sqrtf`, `sqrtl`|\<Math.h >|\<cmath >|  
-  
- Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```C  
-// crt_sqrt.c  
-// This program calculates a square root.  
-  
-#include <math.h>  
-#include <stdio.h>  
-#include <stdlib.h>  
-  
-int main( void )  
-{  
-   double question = 45.35, answer;  
-   answer = sqrt( question );  
-   if( question < 0 )  
-      printf( "Error: sqrt returns %f\n", answer );  
-   else  
-      printf( "The square root of %.2f is %.2f\n", question, answer );  
-}  
-```  
-  
-```Output  
-The square root of 45.35 is 6.73  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [exp, expf, expl](../../c-runtime-library/reference/exp-expf.md)   
- [Günlük, logf, log10, log10f](../../c-runtime-library/reference/log-logf-log10-log10f.md)   
- [POW, powf, powl](../../c-runtime-library/reference/pow-powf-powl.md)   
- [_CIsqrt](../../c-runtime-library/cisqrt.md)
+# <a name="sqrt-sqrtf-sqrtl"></a>Sqrt, sqrtf, sqrtl
+
+Kare kökünü hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+double sqrt(
+   double x
+);
+float sqrt(
+   float x
+);  // C++ only
+long double sqrt(
+   long double x
+);  // C++ only
+float sqrtf(
+   float x
+);
+long double sqrtl(
+   long double x
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*<br/>
+Kayan nokta negatif olmayan değer
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşırı yükleme C++ izin verdiğinden, aşırı çağırabilirsiniz **sqrt** Süren **float** veya **uzun** **çift** türleri. Bir C programı **sqrt** her zaman alan ve döndüren **çift**.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**Sqrt** işlevler kare kökünü döndürür *x*. Varsayılan olarak, varsa *x* negatif **sqrt** belirsiz NaN döndürür.
+
+|Giriş|SEH özel durumu|**_matherr** özel durumu|
+|-----------|-------------------|--------------------------|
+|± QNAN, UL|yok|_DOMAIN|
+|- ∞|yok|_DOMAIN|
+|x < 0|yok|_DOMAIN|
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|C üstbilgisi|C++ üstbilgi|
+|--------------|--------------|------------------|
+|**Sqrt**, **sqrtf**, **sqrtl**|\<Math.h >|\<cmath >|
+
+Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_sqrt.c
+// This program calculates a square root.
+
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( void )
+{
+   double question = 45.35, answer;
+   answer = sqrt( question );
+   if( question < 0 )
+      printf( "Error: sqrt returns %f\n", answer );
+   else
+      printf( "The square root of %.2f is %.2f\n", question, answer );
+}
+```
+
+```Output
+The square root of 45.35 is 6.73
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[exp, expf, expl](exp-expf.md)<br/>
+[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
+[pow, powf, powl](pow-powf-powl.md)<br/>
+[_CIsqrt](../../c-runtime-library/cisqrt.md)<br/>

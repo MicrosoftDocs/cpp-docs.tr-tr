@@ -1,12 +1,12 @@
 ---
 title: _ismbbkana, _ismbbkana_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _ismbbkana_l
@@ -37,52 +37,56 @@ helpviewer_keywords:
 - ismbbkana function
 - ismbbkana_l function
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34b79df529aacc0e1e4c4a0dcedfceb09912a8ed
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 35bc19b50f315987c1a0bb8d2871bd8cfebe9ab6
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="ismbbkana-ismbbkanal"></a>_ismbbkana, _ismbbkana_l
-Katakana simgesi sınar ve kod sayfası 932 özeldir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _ismbbkana(  
-   unsigned int c   
-);  
-int _ismbbkana_l(  
-   unsigned int c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Sınanacak tamsayı.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_ismbbkana` sıfır olmayan bir değer döndürür tamsayı `c` değilse katakana simge veya 0 değil. `_ismbbkana` Geçerli yerel ayar için yerel ayara bağımlı karakter bilgileri kullanır. `_ismbbkana_l` geçirilen yerel ayar nesnesini kullanan dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_ismbbkana`|\<Mbctype.h >|  
-|`_ismbbkana_l`|\<Mbctype.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bayt sınıflandırması](../../c-runtime-library/byte-classification.md)   
- [_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)
+
+Katakana simgesi sınar ve kod sayfası 932 özeldir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _ismbbkana(
+   unsigned int c
+);
+int _ismbbkana_l(
+   unsigned int c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Sınanacak tamsayı.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_ismbbkana** sıfır olmayan bir değer döndürür tamsayı *c* değilse katakana simge veya 0 değil. **_ismbbkana** geçerli yerel ayar için yerel ayara bağımlı karakter bilgileri kullanır. **_ismbbkana_l** geçirilen yerel ayar nesnesini kullanan dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_ismbbkana**|\<Mbctype.h >|
+|**_ismbbkana_l**|\<Mbctype.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bayt Sınıflandırması](../../c-runtime-library/byte-classification.md)<br/>
+[_ismbb Yordamları](../../c-runtime-library/ismbb-routines.md)<br/>

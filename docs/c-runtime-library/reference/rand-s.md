@@ -1,12 +1,12 @@
 ---
 title: rand_s | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 1/02/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - rand_s
@@ -41,15 +41,15 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2438b2ced054667a658f8f31a37c9a62112debc6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a0e548a4225a457f846d334768d981c924d41953
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="rands"></a>rand_s
 
-Geçici rastgele bir sayı oluşturur. Bu işlev daha güvenli bir sürümü olan [rand](../../c-runtime-library/reference/rand.md), açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md). 
+Geçici rastgele bir sayı oluşturur. Bu işlev daha güvenli bir sürümü olan [rand](rand.md), açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,31 +59,31 @@ errno_t rand_s(unsigned int* randomValue);
 
 ### <a name="parameters"></a>Parametreler
 
-*randomValue*  
+*randomValue*<br/>
 Tamsayı üretilen değer tutmak için bir işaretçi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, sıfır Aksi takdirde bir hata kodu. Varsa Giriş işaretçisi _randomValue_ null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür `EINVAL` ve ayarlar `errno` için `EINVAL`. İşlev diğer herhangi bir nedenden dolayı başarısız olursa *_randomValue_ 0 olarak ayarlayın.
+Başarılı olursa, sıfır Aksi takdirde bir hata kodu. Varsa Giriş işaretçisi _randomValue_ null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. İşlev diğer herhangi bir nedenden dolayı başarısız olursa *_randomValue_ 0 olarak ayarlayın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`rand_s` İşlevi aralıktaki 0 geçici rastgele bir tamsayı Yazar `UINT_MAX` Giriş işaretçisine. `rand_s` İşlevi şifreleme açısından güvenli rastgele sayılar oluşturmak için işletim sistemi kullanır. Tarafından oluşturulan çekirdek kullanmaz [srand](../../c-runtime-library/reference/srand.md) işlevi veya tarafından kullanılan rastgele sayı dizisi etkilemez `rand`.
+**Rand_s** işlevi aralıktaki 0 geçici rastgele bir tamsayı Yazar **uınt_max** Giriş işaretçisine. **Rand_s** işlevi şifreleme açısından güvenli rastgele sayılar oluşturmak için işletim sistemi kullanır. Tarafından oluşturulan çekirdek kullanmaz [srand](srand.md) işlevi veya tarafından kullanılan rastgele sayı dizisi etkilemez [rand](rand.md).
 
-`rand_s` İşlevi gerektiren bu sabiti `_CRT_RAND_S` tanımlanması ekleme deyimi aşağıdaki örnekteki bildirilmesi için işlev için önce:
+**Rand_s** işlevi gerektiren bu sabiti **_CRT_RAND_S** tanımlanması ekleme deyimi aşağıdaki örnekteki bildirilmesi için işlev için önce:
 
 ```C
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-`rand_s` bağımlı [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) kullanılabilir Windows XP ve üstü yalnızca API.
+**rand_s** bağlıdır [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) kullanılabilir Windows XP ve üstü yalnızca API.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`rand_s`|\<stdlib.h>|
+|**rand_s**|\<stdlib.h >|
 
 Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
@@ -131,7 +131,7 @@ int main( void )
         {
             printf_s("The rand_s function failed!\n");
         }
-        printf_s( "  %g\n", (double) number / 
+        printf_s( "  %g\n", (double) number /
                           ((double) UINT_MAX + 1) * max );
     }
 }
@@ -165,6 +165,6 @@ int main( void )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)  
-[rand](../../c-runtime-library/reference/rand.md)  
-[srand](../../c-runtime-library/reference/srand.md)  
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](rand.md)<br/>
+[srand](srand.md)<br/>

@@ -1,12 +1,12 @@
 ---
 title: Sin, sinf, sinl, sinh, sinhf, sinhl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - sinl
@@ -51,17 +51,17 @@ helpviewer_keywords:
 - sinhl function
 - hyperbolic functions
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-caps.latest.revision: 
+caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 54718553d71a498463dbc881da8ceb3401ff5b5b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.sourcegitcommit: 9a3a3d59176043ae60584482c2572c07f757b320
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="sin-sinf-sinl-sinh-sinhf-sinhl"></a>sin, sinf, sinl, sinh, sinhf, sinhl
 Sinüsü ve hiperbolik sinüsü hesaplar.  
@@ -103,7 +103,7 @@ long double sinhl(long double x);
 |-----------|-------------------|-----------------------|  
 |± QNAN, UL|Yok.|_DOMAIN|  
 |± ∞ (sin, sinf, sinl)|GEÇERSİZ|_DOMAIN|  
-|&#124; x &#124; ≥ 7.104760e + 002 (sinh, sinhf, sinhl)|TAŞMA + FİLTRESİNİN|OVERFLOW|  
+|&#124;x&#124; ≥ 7.104760e + 002 (sinh, sinhf, sinhl)|TAŞMA + FİLTRESİNİN|TAŞMA|  
   
  Dönüş kodları hakkında daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
   
@@ -155,9 +155,9 @@ cosh( 1.570796 ) = 2.509178
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [acos, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
+ [ACOS, acosf, acosl](../../c-runtime-library/reference/acos-acosf-acosl.md)   
  [asin, asinf, asinl](../../c-runtime-library/reference/asin-asinf-asinl.md)   
  [atan, atanf, atanl, atan2, atan2f, atan2l](../../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)   
  [cos, cosf, cosl, cosh, coshf, coshl](../../c-runtime-library/reference/cos-cosf-cosl-cosh-coshf-coshl.md)   
- [tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
+ [Tan, tanf, tanl, tanh, tanhf, tanhl](../../c-runtime-library/reference/tan-tanf-tanl-tanh-tanhf-tanhl.md)   
  [_CIsin](../../c-runtime-library/cisin.md)

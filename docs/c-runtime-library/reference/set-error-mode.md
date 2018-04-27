@@ -1,12 +1,12 @@
 ---
 title: _set_error_mode | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _set_error_mode
@@ -32,82 +32,87 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-caps.latest.revision: 
+caps.latest.revision: 21
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bae0e413e46776d9d0df0508a30905b9fdb09062
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 557af6f9fe37db1e0811508f247eadd0fcfa74a2
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="seterrormode"></a>_set_error_mode
-Değiştirir `__error_mode` C çalışma zamanı hata iletisi programın sonlandırılması bir hata için nereye yazdığını varsayılan olmayan konumunu belirlemek için.  
-  
+
+Değiştirir **__error_mode** C çalışma zamanı hata iletisi programın sonlandırılması bir hata için nereye yazdığını varsayılan olmayan konumunu belirlemek için.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _set_error_mode(  
-   int modeval   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `modeval`  
- Hata iletileri hedef.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir hata oluşursa eski ayarı veya -1 döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Hata çıkış havuzunun değerini ayarlayarak denetimleri `__error_mode`. Örneğin, doğrudan bir standart hata çıktısı veya kullanmak `MessageBox` API.  
-  
- `modeval` Parametresi şu değerlerden biri olarak ayarlanabilir.  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`_OUT_TO_DEFAULT`|Hata havuz tarafından belirlenir `__app_type`.|  
-|`_OUT_TO_STDERR`|Hata havuz standart bir hatadır.|  
-|`_OUT_TO_MSGBOX`|Hata havuz bir ileti kutusu ' dir.|  
-|`_REPORT_ERRMODE`|Geçerli rapor `__error_mode` değeri.|  
-  
- Bu listedeki dışında bir değer geçtiyse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `_set_error_mode` ayarlar `errno` için `EINVAL` ve -1 döndürür.  
-  
- İle kullanıldığında bir [assert](../../c-runtime-library/reference/assert-macro-assert-wassert.md), `_set_error_mode` seçme seçeneği sunar ve iletişim kutusunda başarısız deyimi görüntüler `Ignore` programı çalıştırmak devam edebilmesi için bu düğme.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_set_error_mode`|\<stdlib.h>|  
-  
-## <a name="example"></a>Örnek  
-  
-```C  
-// crt_set_error_mode.c  
-// compile with: /c  
-#include <stdlib.h>  
-#include <assert.h>  
-  
-int main()  
-{  
-   _set_error_mode(_OUT_TO_STDERR);  
-   assert(2+2==5);  
-}  
-```  
-  
-```Output  
-Assertion failed: 2+2==5, file crt_set_error_mode.c, line 8  
-  
-This application has requested the Runtime to terminate it in an unusual way.  
-Please contact the application's support team for more information.  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [assert Makrosu, _assert, _wassert](../../c-runtime-library/reference/assert-macro-assert-wassert.md)
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _set_error_mode(
+   int mode_val
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*mode_val*<br/>
+Hata iletileri hedef.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir hata oluşursa eski ayarı veya -1 döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+Hata çıkış havuzunun değerini ayarlayarak denetimleri **__error_mode**. Örneğin, doğrudan bir standart hata çıktısı veya kullanmak **MessageBox** API.
+
+*Mode_val* parametresi şu değerlerden biri olarak ayarlanabilir.
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|**_OUT_TO_DEFAULT**|Hata havuz tarafından belirlenir **__app_type**.|
+|**_OUT_TO_STDERR**|Hata havuz standart bir hatadır.|
+|**_OUT_TO_MSGBOX**|Hata havuz bir ileti kutusu ' dir.|
+|**_REPORT_ERRMODE**|Geçerli rapor **__error_mode** değeri.|
+
+Bu listedeki dışında bir değer geçtiyse, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_set_error_mode** ayarlar **errno** için **EINVAL** ve -1 döndürür.
+
+İle kullanıldığında bir [assert](assert-macro-assert-wassert.md), **_set_error_mode** seçme seçeneği sunar ve iletişim kutusunda başarısız deyimi görüntüler **Yoksay** yapabilmeniz düğmesi program çalışmaya devam eder.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_set_error_mode**|\<stdlib.h >|
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_set_error_mode.c
+// compile with: /c
+#include <stdlib.h>
+#include <assert.h>
+
+int main()
+{
+   _set_error_mode(_OUT_TO_STDERR);
+   assert(2+2==5);
+}
+```
+
+```Output
+Assertion failed: 2+2==5, file crt_set_error_mode.c, line 8
+
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[assert Makrosu, _assert, _wassert](assert-macro-assert-wassert.md)<br/>

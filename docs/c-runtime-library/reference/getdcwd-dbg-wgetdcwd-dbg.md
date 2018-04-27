@@ -1,12 +1,12 @@
 ---
 title: _getdcwd_dbg, _wgetdcwd_dbg | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _getdcwd_dbg
@@ -39,85 +39,90 @@ helpviewer_keywords:
 - _wgetdcwd_dbg function
 - directories [C++], current working
 ms.assetid: 266bf6f0-0417-497f-963d-2e0f306d9385
-caps.latest.revision: 
+caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 788ef0f0b745132c4b8d270129d8a182a2774361
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6b9709a5dad5bd83dc34c7e2aff7cc888b7b3451
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getdcwddbg-wgetdcwddbg"></a>_getdcwd_dbg, _wgetdcwd_dbg
-Hata ayıklama sürümleri [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md) işlevleri (yalnızca hata ayıklama sırasında kullanılabilir).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-char *_getdcwd_dbg(  
-   int drive,  
-   char *buffer,  
-   int maxlen,  
-   int blockType,  
-   const char *filename,  
-   int linenumber   
-);  
-wchar_t *_wgetdcwd_dbg(  
-   int drive,  
-   wchar_t *buffer,  
-   int maxlen,  
-   int blockType,  
-   const char *filename,  
-   int linenumber   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `drive`  
- Disk sürücüsünün adı.  
-  
- `buffer`  
- Yol için depolama konumu.  
-  
- `maxlen`  
- Yolun karakter cinsinden en büyük uzunluğu: `char` için `_getdcwd_dbg` ve `wchar_t` için `_wgetdcwd_dbg`.  
-  
- `blockType`  
- İstenen bellek bloğu türü: `_CLIENT_BLOCK` veya `_NORMAL_BLOCK`.  
-  
- `filename`  
- İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya `NULL`.  
-  
- `linenumber`  
- Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya `NULL`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi döndürür `buffer`. A `NULL` değeri belirten bir hata döndürür ve `errno` ya da ayarlamak `ENOMEM`, ayırmak için yeterli bellek olduğunu belirten `maxlen` bayt (olduğunda bir `NULL` bağımsız değişken olarak verilen `buffer`), veya `ERANGE`, yolun daha uzun olduğunu belirten `maxlen` karakter. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_getdcwd_dbg` Ve `_wgetdcwd_dbg` işlevleri aynı `_getdcwd` ve `_wgetdcwd` dışında `_DEBUG` olan tanımlı, bu işlevler hata ayıklama sürümünü kullanmanız `malloc` ve `_malloc_dbg` , bellek ayırmak için `NULL` olarak geçirilen `buffer` parametresi. Daha fazla bilgi için bkz: [_malloc_dbg](../../c-runtime-library/reference/malloc-dbg.md).  
-  
- Çoğu durumda bu işlevleri açıkça çağırmak gerekmez. Bunun yerine, tanımlayabilirsiniz `_CRTDBG_MAP_ALLOC` bayrağı. Zaman `_CRTDBG_MAP_ALLOC` tanımlanır, çağrılar `_getdcwd` ve `_wgetdcwd` için eşleştirilir `_getdcwd_dbg` ve `_wgetdcwd_dbg`, sırasıyla ile `blockType` kümesine `_NORMAL_BLOCK`. Bu nedenle, öbek taşı olarak işaretlemek istediğiniz sürece bu işlevleri açıkça çağırın gerekmez `_CLIENT_BLOCK`. Daha fazla bilgi için bkz: [hata ayıklama yığınındaki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|--------------------------------------|--------------------|-----------------------|  
-|`_tgetdcwd_dbg`|`_getdcwd_dbg`|`_getdcwd_dbg`|`_wgetdcwd_dbg`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_getdcwd_dbg`|\<crtdbg.h>|  
-|`_wgetdcwd_dbg`|\<crtdbg.h>|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_getdcwd, _wgetdcwd](../../c-runtime-library/reference/getdcwd-wgetdcwd.md)   
- [Dizin denetimi](../../c-runtime-library/directory-control.md)   
- [Yığın ayırma işlevleri sürümleri hata ayıklama](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)
+
+Hata ayıklama sürümleri [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md) işlevleri (yalnızca hata ayıklama sırasında kullanılabilir).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+char *_getdcwd_dbg(
+   int drive,
+   char *buffer,
+   int maxlen,
+   int blockType,
+   const char *filename,
+   int linenumber
+);
+wchar_t *_wgetdcwd_dbg(
+   int drive,
+   wchar_t *buffer,
+   int maxlen,
+   int blockType,
+   const char *filename,
+   int linenumber
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Sürücü*<br/>
+Disk sürücüsünün adı.
+
+*Arabellek*<br/>
+Yol için depolama konumu.
+
+*maxlen*<br/>
+Yolun karakter cinsinden en büyük uzunluğu: **char** için **_getdcwd_dbg** ve **wchar_t** için **_wgetdcwd_dbg**.
+
+*blockType*<br/>
+İstenen bellek bloğu türü: **_clıent_block** veya **_NORMAL_BLOCK**.
+
+*Dosya adı*<br/>
+İstenen ayırma işlemi kaynak dosyasının adını işaretçi veya **NULL**.
+
+*LineNumber*<br/>
+Satır numarası ayırma işlemi istenen burada kaynak dosyasında veya **NULL**.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir işaretçi döndürür *arabellek*. A **NULL** değeri belirten bir hata döndürür ve **errno** ya da ayarlamak **ENOMEM**, ayırmak için yeterli bellek olduğunu belirten *maxlen* bayt (olduğunda bir **NULL** bağımsız değişken olarak verilen *arabellek*), veya **ERANGE**, yolun daha uzun olduğunu belirten *maxlen*  karakter. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Getdcwd_dbg** ve **_wgetdcwd_dbg** işlevleri aynı **_getdcwd** ve **_wgetdcwd** dışında **_DEBUG** olan tanımlı, bu işlevleri hata ayıklama sürümü kullanma **malloc** ve **_malloc_dbg** , bellek ayırmak için **NULL** geçirilen olarak *arabellek* parametresi. Daha fazla bilgi için bkz: [_malloc_dbg](malloc-dbg.md).
+
+Çoğu durumda bu işlevleri açıkça çağırmak gerekmez. Bunun yerine, tanımlayabilirsiniz **_CRTDBG_MAP_ALLOC** bayrağı. Zaman **_CRTDBG_MAP_ALLOC** tanımlanır, çağrılar **_getdcwd** ve **_wgetdcwd** için eşleştirilir **_getdcwd_dbg** ve **_ wgetdcwd_dbg**, sırasıyla ile *blockType* kümesine **_NORMAL_BLOCK**. Bu nedenle, öbek taşı olarak işaretlemek istediğiniz sürece bu işlevleri açıkça çağırın gerekmez **_clıent_block**. Daha fazla bilgi için bkz: [hata ayıklama yığınındaki blokları türleri](/visualstudio/debugger/crt-debug-heap-details).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|--------------------------------------|--------------------|-----------------------|
+|**_tgetdcwd_dbg**|**_getdcwd_dbg**|**_getdcwd_dbg**|**_wgetdcwd_dbg**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_getdcwd_dbg**|\<crtdbg.h >|
+|**_wgetdcwd_dbg**|\<crtdbg.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
+[Dizin Denetimi](../../c-runtime-library/directory-control.md)<br/>
+[Yığın ayırma işlevleri sürümleri hata ayıklama](/visualstudio/debugger/debug-versions-of-heap-allocation-functions)<br/>

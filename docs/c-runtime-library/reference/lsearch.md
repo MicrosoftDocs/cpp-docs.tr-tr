@@ -1,12 +1,12 @@
 ---
 title: _lsearch | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _lsearch
@@ -37,111 +37,116 @@ helpviewer_keywords:
 - searching, linear
 - lsearch function
 ms.assetid: 8200f608-159a-46f0-923b-1a37ee1af7e0
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb4cb64b9287de11a894a8ca7c7cdd4490fcc446
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5f38dd8a23cce652b93794f62c775962482fe159
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="lsearch"></a>_lsearch
-Bir değer için doğrusal arama yapar; listenin sonuna ekler bulunamazsa. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void *_lsearch(  
-   const void *key,  
-   void *base,  
-   unsigned int *num,  
-   unsigned int width,  
-   int (__cdecl *compare)(const void *, const void *)   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `key`  
- Aranacak nesne.  
-  
- `base`  
- Aranacak dizi tabanı işaretçi.  
-  
- `num`  
- Öğe sayısı.  
-  
- `width`  
- Her dizi öğesi genişliği.  
-  
- `compare`  
- İşaretçi karşılaştırması yordama. İlk parametre anahtar arama için bir işaretçidir. İkinci parametre anahtarla karşılaştırılması gereken bir dizi öğesine bir işaretçidir.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Anahtar bulunursa, `_lsearch` dizisi öğesine bir işaretçi döndüren `base` eşleşen `key`. Anahtar bulunamazsa `_lsearch` dizinin sonuna en yeni eklenen öğesine bir işaretçi döndürür.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_lsearch` İşlevi gerçekleştiren değeri için doğrusal arama `key` dizisindeki `num` öğeleri, her biri `width` bayt sayısı. Farklı `bsearch`, `_lsearch` sıralanacak dizi gerektirmez. Varsa `key` bulunamadı, `_lsearch` artırır ve dizinin sonuna ekler `num`.  
-  
- `compare` Bağımsız değişkeni, iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir. `_lsearch` çağrıları `compare` işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. `compare` gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).  
-  
- Bu işlev parametrelerini doğrular. Varsa `compare`, `key` veya `num` olan `NULL`, veya `base` null ve *`num` sıfır olmayan, olduğundan veya `width` küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `NULL`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_lsearch`|\<Search.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_lsearch.c  
-#include <search.h>  
-#include <string.h>  
-#include <stdio.h>  
-  
-int compare( const void *arg1, const void *arg2 );  
-  
-int main(void)  
-{  
-   char * wordlist[4] = { "hello", "thanks", "bye" };  
-                            // leave room to grow...  
-   int n = 3;  
-   char **result;  
-   char *key = "extra";  
-   int i;  
-  
-   printf( "wordlist before _lsearch:" );  
-   for( i=0; i<n; ++i ) printf( " %s", wordlist[i] );  
-   printf( "\n" );  
-  
-   result = (char **)_lsearch( &key, wordlist,   
-                      &n, sizeof(char *), compare );  
-  
-   printf( "wordlist after _lsearch:" );  
-   for( i=0; i<n; ++i ) printf( " %s", wordlist[i] );  
-   printf( "\n" );  
-}  
-  
-int compare(const void *arg1, const void *arg2 )  
-{  
-   return( _stricmp( * (char**)arg1, * (char**)arg2 ) );  
-}  
-```  
-  
-```Output  
-wordlist before _lsearch: hello thanks bye  
-wordlist after _lsearch: hello thanks bye extra  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Arama ve sıralama](../../c-runtime-library/searching-and-sorting.md)   
- [bsearch](../../c-runtime-library/reference/bsearch.md)   
- [_lfind](../../c-runtime-library/reference/lfind.md)   
- [_lsearch_s](../../c-runtime-library/reference/lsearch-s.md)
+
+Bir değer için doğrusal arama yapar; listenin sonuna ekler bulunamazsa. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [_lsearch_s](lsearch-s.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+void *_lsearch(
+   const void *key,
+   void *base,
+   unsigned int *num,
+   unsigned int width,
+   int (__cdecl *compare)(const void *, const void *)
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Anahtarı*<br/>
+Aranacak nesne.
+
+*base*<br/>
+Aranacak dizi tabanı işaretçi.
+
+*Sayı*<br/>
+Öğe sayısı.
+
+*Genişlik*<br/>
+Her dizi öğesi genişliği.
+
+*Karşılaştırma*<br/>
+İşaretçi karşılaştırması yordama. İlk parametre anahtar arama için bir işaretçidir. İkinci parametre anahtarla karşılaştırılması gereken bir dizi öğesine bir işaretçidir.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Anahtar bulunursa, **_lsearch** dizisi öğesine bir işaretçi döndüren *temel* eşleşen *anahtar*. Anahtar bulunamazsa **_lsearch** dizinin sonuna en yeni eklenen öğesine bir işaretçi döndürür.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Lsearch** işlevi gerçekleştiren değeri için doğrusal arama *anahtar* dizisindeki *numarası* öğeleri, her biri *genişliği* bayt. Farklı **bsearch**, **_lsearch** sıralanacak dizi gerektirmez. Varsa *anahtar* bulunamadı, **_lsearch** artırır ve dizinin sonuna ekler *numarası*.
+
+*Karşılaştırmak* bağımsız değişkeni, iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndürür ve kullanıcı tarafından sağlanan bir yordama bir işaretçidir. **_lsearch** çağrıları *karşılaştırmak* işaretçileri iki dizi öğelerinin her çağrıda geçirme, arama sırasında rutin bir veya birden çok kez. *Karşılaştırma* gerekir ve öğeleri karşılaştırma ya da dönüş sıfır olmayan (öğeleri farklı olduğu anlamına gelir) veya 0 (öğeleri aynı olduğu anlamına gelir).
+
+Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* null ve **numarası*  sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_lsearch**|\<Search.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_lsearch.c
+#include <search.h>
+#include <string.h>
+#include <stdio.h>
+
+int compare( const void *arg1, const void *arg2 );
+
+int main(void)
+{
+   char * wordlist[4] = { "hello", "thanks", "bye" };
+                            // leave room to grow...
+   int n = 3;
+   char **result;
+   char *key = "extra";
+   int i;
+
+   printf( "wordlist before _lsearch:" );
+   for( i=0; i<n; ++i ) printf( " %s", wordlist[i] );
+   printf( "\n" );
+
+   result = (char **)_lsearch( &key, wordlist,
+                      &n, sizeof(char *), compare );
+
+   printf( "wordlist after _lsearch:" );
+   for( i=0; i<n; ++i ) printf( " %s", wordlist[i] );
+   printf( "\n" );
+}
+
+int compare(const void *arg1, const void *arg2 )
+{
+   return( _stricmp( * (char**)arg1, * (char**)arg2 ) );
+}
+```
+
+```Output
+wordlist before _lsearch: hello thanks bye
+wordlist after _lsearch: hello thanks bye extra
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Arama ve Sıralama](../../c-runtime-library/searching-and-sorting.md)<br/>
+[bsearch](bsearch.md)<br/>
+[_lfind](lfind.md)<br/>
+[_lsearch_s](lsearch-s.md)<br/>

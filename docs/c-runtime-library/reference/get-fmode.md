@@ -1,12 +1,12 @@
 ---
 title: _get_fmode | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _get_fmode
@@ -33,52 +33,58 @@ helpviewer_keywords:
 - file translation [C++], default mode
 - get_fmode function
 ms.assetid: 22ea70e2-b9b5-422d-b514-64f4beaea45c
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abfdd4d9b8838914a91b4db995fcaad573e80829
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3a3845de8feb36b995fec8d450bfc5a9656d429c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="getfmode"></a>_get_fmode
-Dosya g/ç işlemleri için varsayılan dosya çevirisi modu alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t _get_fmode(   
-   int * pmode   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- [out] `pmode`  
- Tamsayı geçerli varsayılan mod ile doldurulması için bir işaretçi: `_O_TEXT` veya `_O_BINARY`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır döndürür; hatasında bir hata kodu. Varsa `pmode` olan `NULL`, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa `errno` ayarlanır `EINVAL` ve işlevi döndürür `EINVAL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İşlev değerini alır [_fmode](../../c-runtime-library/fmode.md) genel değişkeni. Bu değişken alt düzey her ikisi için varsayılan dosya çevirisi modu belirtir ve dosya g/ç işlemleri gibi akışını `_open`, `_pipe`, `fopen`, ve `freopen`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|  
-|-------------|---------------------|---------------------|  
-|`_get_fmode`|\<stdlib.h>|\<fcntl.h>|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Örnekte bkz [_set_fmode](../../c-runtime-library/reference/set-fmode.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_fmode](../../c-runtime-library/fmode.md)   
- [_set_fmode](../../c-runtime-library/reference/set-fmode.md)   
- [_setmode](../../c-runtime-library/reference/setmode.md)   
- [Metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)
+
+Dosya g/ç işlemleri için varsayılan dosya çevirisi modu alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t _get_fmode( 
+   int * pmode 
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pmode*<br/>
+Tamsayı geçerli varsayılan mod ile doldurulması için bir işaretçi: **_O_TEXT** veya **_o_bınary**.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa sıfır döndürür; hatasında bir hata kodu. Varsa *pmode* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **EINVAL**.
+
+## <a name="remarks"></a>Açıklamalar
+
+İşlev değerini alır [_fmode](../../c-runtime-library/fmode.md) genel değişkeni. Bu değişken alt düzey her ikisi için varsayılan dosya çevirisi modu belirtir ve dosya g/ç işlemleri gibi akışını **_kurulum Aç**, **_pipe**, **fopen**, ve [ freopen](freopen-wfreopen.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|-------------|---------------------|---------------------|
+|**_get_fmode**|\<stdlib.h >|\<fcntl.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Örnekte bkz [_set_fmode](set-fmode.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_fmode](../../c-runtime-library/fmode.md)<br/>
+[_set_fmode](set-fmode.md)<br/>
+[_setmode](setmode.md)<br/>
+[Metin ve ikili mod dosyası g/ç](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>

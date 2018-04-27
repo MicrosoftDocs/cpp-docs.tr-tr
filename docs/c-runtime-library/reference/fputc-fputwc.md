@@ -1,12 +1,12 @@
 ---
 title: fputc, fputwc | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fputc
@@ -37,101 +37,106 @@ helpviewer_keywords:
 - fputwc function
 - fputc function
 ms.assetid: 5a0a593d-43f4-4fa2-a401-ec4e23de4d2f
-caps.latest.revision: 
+caps.latest.revision: 20
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af95e4b11048ebda50ac4d73fc87b6b67903494b
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 707c6d7fa2e45a4fb0c841015f59ef786e539168
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="fputc-fputwc"></a>fputc, fputwc
-Bir karakterin bir akışa yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int fputc(  
-   int c,  
-   FILE *stream   
-);  
-wint_t fputwc(  
-   wchar_t c,  
-   FILE *stream   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Yazılacak karakter.  
-  
- `stream`  
- İşaretçi `FILE` yapısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu işlevlerin her biri yazılmış karakteri döndürür. İçin `fputc`, dönüş değeri `EOF` bir hata olduğunu gösterir. İçin `fputwc`, dönüş değeri `WEOF` bir hata olduğunu gösterir. Varsa `stream` olan `NULL`, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, `EOF` ve `errno` için `EINVAL`.  
-  
- Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlevlerin her biri tek karakter Yazar `c` için bir dosya konumunda belirtilen ilişkili dosya konumu göstergesi (tanımlıysa) ve uygun şekilde göstergesi ilerletir. Durumunda `fputc` ve `fputwc`, dosyanın ilişkilendirildiği `stream`. Dosya konumlandırma istekleri desteklemiyor veya içinde açılmış ekleme modu, karakteri akışın sonuna eklenir.  
-  
- Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. `fputc` şu anda çıktı bir UNICODE akışa desteklemiyor.  
-  
- Sürümleriyle `_nolock` soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Daha fazla bilgi için bkz:[_fputc_nolock _fputwc_nolock](../../c-runtime-library/reference/fputc-nolock-fputwc-nolock.md).  
-  
- Yordamı özgü açıklamalar izleyin.  
-  
-|Yordam|Açıklamalar|  
-|-------------|-------------|  
-|`fputc`|Eşdeğer `putc`, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır.|  
-|`fputwc`|Joker karakter sürümü `fputc`. Yazar `c` birden çok baytlı karakter veya mi göre geniş karakter olarak `stream` metin modunda veya ikili modunda açılır.|  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_fputtc`|`fputc`|`fputc`|`fputwc`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|İşlev|Gerekli başlık|  
-|--------------|---------------------|  
-|`fputc`|\<stdio.h >|  
-|`fputwc`|\<stdio.h > veya \<wchar.h >|  
-  
- Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —`stdin`, `stdout`, ve `stderr`— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_fputc.c  
-// This program uses fputc  
-// to send a character array to stdout.  
-  
-#include <stdio.h>  
-  
-int main( void )  
-{  
-   char strptr1[] = "This is a test of fputc!!\n";  
-   char *p;  
-  
-   // Print line to stream using fputc.   
-   p = strptr1;  
-   while( (*p != '\0') && fputc( *(p++), stdout ) != EOF ) ;  
-  
-}  
-```  
-  
-```Output  
-This is a test of fputc!!  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fgetc, fgetwc](../../c-runtime-library/reference/fgetc-fgetwc.md)   
- [putc, putwc](../../c-runtime-library/reference/putc-putwc.md)
+
+Bir karakterin bir akışa yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int fputc(
+   int c,
+   FILE *stream
+);
+wint_t fputwc(
+   wchar_t c,
+   FILE *stream
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Yazılacak karakter.
+
+*Akış*<br/>
+İşaretçi **dosya** yapısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu işlevlerin her biri yazılmış karakteri döndürür. İçin **fputc**, dönüş değeri **EOF** bir hata olduğunu gösterir. İçin **fputwc**, dönüş değeri **WEOF** bir hata olduğunu gösterir. Varsa *akış* olan **NULL**, bu işlevler açıklandığı gibi geçersiz parametre işleyicisi çağırma [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Döndürmeleri yürütme devam etmek için izin verilip verilmediğini, **EOF** ve **errno** için **EINVAL**.
+
+Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer hata kodları hakkında daha fazla bilgi için.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlevlerin her biri tek karakter Yazar *c* için bir dosya konumunda belirtilen ilişkili dosya konumu göstergesi (tanımlıysa) ve uygun şekilde göstergesi ilerletir. Durumunda **fputc** ve **fputwc**, dosyanın ilişkilendirildiği *akış*. Dosya konumlandırma istekleri desteklemiyor veya içinde açılmış ekleme modu, karakteri akışın sonuna eklenir.
+
+Akış ANSI modunda açılırsa iki işlevleri aynı şekilde davranır. **fputc** şu anda çıktı bir UNICODE akışa desteklemiyor.
+
+Sürümleriyle **_nolock** soneki, diğer iş parçacıkları tarafından girişime korunmayan dışında aynıdır. Daha fazla bilgi için bkz:[_fputc_nolock _fputwc_nolock](fputc-nolock-fputwc-nolock.md).
+
+Yordamı özgü açıklamalar izleyin.
+
+|Yordam|Açıklamalar|
+|-------------|-------------|
+|**fputc**|Eşdeğer **putc**, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır.|
+|**fputwc**|Joker karakter sürümü **fputc**. Yazar *c* birden çok baytlı karakter veya mi göre geniş karakter olarak *akış* metin modunda veya ikili modunda açılır.|
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_fputtc**|**fputc**|**fputc**|**fputwc**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|İşlev|Gerekli başlık|
+|--------------|---------------------|
+|**fputc**|\<stdio.h >|
+|**fputwc**|\<stdio.h > veya \<wchar.h >|
+
+Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_fputc.c
+// This program uses fputc
+// to send a character array to stdout.
+
+#include <stdio.h>
+
+int main( void )
+{
+   char strptr1[] = "This is a test of fputc!!\n";
+   char *p;
+
+   // Print line to stream using fputc.
+   p = strptr1;
+   while( (*p != '\0') && fputc( *(p++), stdout ) != EOF ) ;
+
+}
+```
+
+```Output
+This is a test of fputc!!
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fgetc, fgetwc](fgetc-fgetwc.md)<br/>
+[putc, putwc](putc-putwc.md)<br/>

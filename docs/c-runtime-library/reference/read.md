@@ -1,12 +1,12 @@
 ---
 title: _microsoft | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _read
@@ -35,128 +35,128 @@ helpviewer_keywords:
 - reading data [C++]
 - files [C++], reading
 ms.assetid: 2ce9c433-57ad-47fe-9ac1-4a7d4c883d30
-caps.latest.revision: 
+caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ad5b18300ec36cc55a6eb02476b454829193cd8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 5c95bb13bc95b0c395e0af859e31e851e31a5527
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="read"></a>_read
 
-Bir dosyadan veri okur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _read(  
-   int fd,  
-   void *buffer,  
-   unsigned int count   
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
+Bir dosyadan veri okur.
 
-*fd*  
-Açık olan dosyaya başvuran dosya tanımlayıcısı.  
-  
-Arabellek  
-Verileri için depolama konumu.  
-  
-*Sayısı*  
-En fazla bayt sayısı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
+## <a name="syntax"></a>Sözdizimi
 
-`_read` hangi küçük olabilir, okunan bayt sayısını döndürür daha *sayısı* varsa daha az *sayısı* bayt sol dosyasında veya dosyayı metin modunda açtıysanız, bu durumda her satır başı satır çifti akış. `\r\n` tek satır besleme karakterle değiştirilir `\n`. Yalnızca tek satır besleme karakter dönüş değeri sayılır. Değiştirilen dosya işaretçisini etkilemez.  
-  
-Dosya sonu okumak işlevi çalışırsa, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosya okuma için açık değil veya dosyanın kilitli, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev dönüşleri -1 yürütülmesine izin veriliyorsa `errno` için `EBADF`.  
-  
-Varsa *arabellek* olan **NULL**, geçersiz parametre işleyicisi çağrılır. Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve `errno` ayarlanır `EINVAL`.  
-  
-Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
+```C
+int _read(
+   int fd,
+   void *buffer,
+   unsigned int count
+);
+```
 
-`_read` İşlevi okur en fazla *sayısı* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisini geçerli konumunu okuma işlemi başlar. Okuma işleminden sonra sonraki okunmamış karaktere dosya işaretçisi işaret eder.  
-  
-Dosya metin modunda açıldıysa, okuma ne zaman sona erer `_read` bir dosya sonu göstergesi olarak kabul edilir bir CTRL + Z karakter karşılaşır. Kullanım [_lseek](../../c-runtime-library/reference/lseek-lseeki64.md) dosya sonu göstergesi temizleyin.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_read`|\<io.h >|  
-  
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="libraries"></a>Kitaplıklar  
+### <a name="parameters"></a>Parametreler
 
-Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```C  
-// crt_read.c  
-/* This program opens a file named crt_read.txt  
- * and tries to read 60,000 bytes from  
- * that file using _read. It then displays the  
- * actual number of bytes read.  
- */  
-  
-#include <fcntl.h>      /* Needed only for _O_RDWR definition */  
-#include <io.h>  
-#include <stdlib.h>  
-#include <stdio.h>  
-#include <share.h>  
-  
-char buffer[60000];  
-  
-int main( void )  
-{  
-   int fh;  
-   unsigned int nbytes = 60000, bytesread;  
-  
-   /* Open file for input: */  
-   if( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ) )  
-   {  
-      perror( "open failed on input file" );  
-      exit( 1 );  
-   }  
-  
-   /* Read in input: */  
-   if( ( bytesread = _read( fh, buffer, nbytes ) ) <= 0 )  
-      perror( "Problem reading file" );  
-   else  
-      printf( "Read %u bytes from file\n", bytesread );  
-  
-   _close( fh );  
-}  
-```  
-  
-### <a name="input-crtreadtxt"></a>Input: crt_read.txt  
-  
-```  
-Line one.  
-Line two.  
-```  
-  
-### <a name="output"></a>Çıkış  
-  
-```  
-Read 19 bytes from file  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+*FD*<br/>
+Açık olan dosyaya başvuran dosya tanımlayıcısı.
 
-[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)   
-[_creat, _wcreat](../../c-runtime-library/reference/creat-wcreat.md)   
-[fread](../../c-runtime-library/reference/fread.md)   
-[_kurulum Aç, _wopen](../../c-runtime-library/reference/open-wopen.md)   
-[_write](../../c-runtime-library/reference/write.md)
+*Arabellek*<br/>
+Verileri için depolama konumu.
+
+*Sayısı*<br/>
+En fazla bayt sayısı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_microsoft** hangi küçük olabilir, okunan bayt sayısını döndürür daha *sayısı* varsa daha az *sayısı* bayt sol dosyasında veya dosyayı metin modunda açtıysanız, her satır durumda return satır çifti '\r\n' besleme tek satır besleme karakteri '\n' ile değiştirilir. Yalnızca tek satır besleme karakter dönüş değeri sayılır. Değiştirilen dosya işaretçisini etkilemez.
+
+Dosya sonu okumak işlevi çalışırsa, 0 döndürür. Varsa *fd* olduğundan geçerli değil, dosya okuma için açık değil veya dosyanın kilitli, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için ayarlar ve işlev dönüşleri -1 yürütülmesine izin veriliyorsa **errno** için **EBADF**.
+
+Varsa *arabellek* olan **NULL**, geçersiz parametre işleyicisi çağrılır. Devam etmek için yürütülmesine izin veriliyorsa, işlevi -1 döndürür ve **errno** ayarlanır **EINVAL**.
+
+Bu ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Read** işlevi okur en fazla *sayısı* baytlara *arabellek* ilişkili dosyasından *fd*. Belirtilen dosya ile ilişkili dosya işaretçisini geçerli konumunu okuma işlemi başlar. Okuma işleminden sonra sonraki okunmamış karaktere dosya işaretçisi işaret eder.
+
+Dosya metin modunda açıldıysa, okuma ne zaman sona erer **_read** bir dosya sonu göstergesi olarak kabul edilir bir CTRL + Z karakter karşılaşır. Kullanım [_lseek](lseek-lseeki64.md) dosya sonu göstergesi temizleyin.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_read**|\<io.h >|
+
+Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_read.c
+/* This program opens a file named crt_read.txt
+* and tries to read 60,000 bytes from
+* that file using _read. It then displays the
+* actual number of bytes read.
+*/
+
+#include <fcntl.h>      /* Needed only for _O_RDWR definition */
+#include <io.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <share.h>
+
+char buffer[60000];
+
+int main( void )
+{
+   int fh;
+   unsigned int nbytes = 60000, bytesread;
+
+   /* Open file for input: */
+   if( _sopen_s( &fh, "crt_read.txt", _O_RDONLY, _SH_DENYNO, 0 ) )
+   {
+      perror( "open failed on input file" );
+      exit( 1 );
+   }
+
+   /* Read in input: */
+   if( ( bytesread = _read( fh, buffer, nbytes ) ) <= 0 )
+      perror( "Problem reading file" );
+   else
+      printf( "Read %u bytes from file\n", bytesread );
+
+   _close( fh );
+}
+```
+
+### <a name="input-crtreadtxt"></a>Giriş: crt_read.txt
+
+```Input
+Line one.
+Line two.
+```
+
+### <a name="output"></a>Çıkış
+
+```Output
+Read 19 bytes from file
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Düşük düzey g/ç](../../c-runtime-library/low-level-i-o.md)<br/>
+[_creat, _wcreat](creat-wcreat.md)<br/>
+[fread](fread.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_write](write.md)<br/>

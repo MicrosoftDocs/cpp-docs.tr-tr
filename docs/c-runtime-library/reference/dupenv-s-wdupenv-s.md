@@ -1,12 +1,12 @@
 ---
 title: _dupenv_s, _wdupenv_s | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _dupenv_s
@@ -42,118 +42,121 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-caps.latest.revision: 
+caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ec5e7b80d7d3ff2c7f67ec66e4e3e454ea3f5aa
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 0e2a89679c8ca564236e1c9d1eccfee274eb4116
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="dupenvs-wdupenvs"></a>_dupenv_s, _wdupenv_s
-Geçerli ortamından bir değer alır.  
-  
+
+Geçerli ortamından bir değer alır.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-errno_t _dupenv_s(  
-   char **buffer,  
-   size_t *numberOfElements,  
-   const char *varname  
-);  
-errno_t _wdupenv_s(  
-   wchar_t **buffer,  
-   size_t *numberOfElements,  
-   const wchar_t *varname  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `buffer`  
- Değişken değeri depolamak için bir arabellek.  
-  
- `numberOfElements`  
- Boyutunu `buffer`.  
-  
- `varname`  
- Ortam değişkeni adı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı, başarısız olduğunda bir hata kodu sıfır.  
-  
- Bu işlevleri parametrelerini doğrulayın; varsa `buffer` veya `varname` olan `NULL`, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, İşlevler kümesi `errno` için `EINVAL` ve geri dönüp `EINVAL`.  
-  
- Bu işlevler için yeterli bellek ayıramıyor varsa, bunlar ayarlamak `buffer` için `NULL` ve `numberOfElements` 0 ve return `ENOMEM`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_dupenv_s` İşlevi için ortam değişkenleri listesi arar `varname`. Değişkeni bulunursa, `_dupenv_s` bir arabellek ayırır ve değişkenin değeri arabelleğe kopyalar. İçinde arabellek adresi ve uzunluğu döndürülen `buffer` ve `numberOfElements`. Arabellek kendisini ayırma tarafından `_dupenv_s` daha uygun bir alternatif sağlayan [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md).  
-  
+> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+errno_t _dupenv_s(
+   char **buffer,
+   size_t *numberOfElements,
+   const char *varname
+);
+errno_t _wdupenv_s(
+   wchar_t **buffer,
+   size_t *numberOfElements,
+   const wchar_t *varname
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Arabellek*<br/>
+Değişken değeri depolamak için bir arabellek.
+
+*numberOfElements*<br/>
+Boyutunu *arabellek*.
+
+*varName*<br/>
+Ortam değişkeni adı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı, başarısız olduğunda bir hata kodu sıfır.
+
+Bu işlevleri parametrelerini doğrulayın; varsa *arabellek* veya *varname* olan **NULL**, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, İşlevler kümesi **errno** için **EINVAL** ve geri dönüp **EINVAL**.
+
+Bu işlevler için yeterli bellek ayıramıyor varsa, bunlar ayarlamak *arabellek* için **NULL** ve *numberOfElements* 0 ve return **ENOMEM**.
+
+## <a name="remarks"></a>Açıklamalar
+
+**_Dupenv_s** işlevi için ortam değişkenleri listesi arar *varname*. Değişkeni bulunursa, **_dupenv_s** bir arabellek ayırır ve değişkenin değeri arabelleğe kopyalar. İçinde arabellek adresi ve uzunluğu döndürülen *arabellek* ve *numberOfElements*. Arabellek kendisini ayırma tarafından **_dupenv_s** daha uygun bir alternatif sağlayan [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md).
+
 > [!NOTE]
->  Çağırarak belleği boşaltmak için arama programın sorumluluğu olan [ücretsiz](../../c-runtime-library/reference/free.md).  
-  
- Değişken, ardından bulunmazsa `buffer` ayarlanır `NULL`, `numberOfElements` 0 olarak ayarlanır ve bu durum bir hata durumu olarak değerlendirilir değil çünkü dönüş değeri 0'dır.  
-  
- Arabellek boyutu değil ilgileniyorsanız geçirebilirsiniz `NULL` için `numberOfElements`.  
-  
- `_dupenv_s` Windows işletim sisteminde büyük küçük harfe duyarlı değildir. `_dupenv_s` genel değişkeni tarafından işaret ortam kopyasını kullanan `_environ` ortama erişmek için. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) bir irdelemesi `_environ`.  
-  
- Değer `buffer` ortam değişkeninin değeri; bir kopyası değiştirmeye ortam üzerinde hiçbir etkisi vardır. Kullanım [_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md) bir ortam değişkeninin değerini değiştirmek için işlevi.  
-  
- `_wdupenv_s` bir joker karakter sürümü `_dupenv_s`; bağımsız değişkenleri `_wdupenv_s` joker karakter dizelerdir. `_wenviron` Genel değişkeni, bir joker karakter sürümü `_environ`. Açıklamalar bkz [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md) hakkında daha fazla bilgi için `_wenviron`.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_tdupenv_s`|`_dupenv_s`|`_dupenv_s`|`_wdupenv_s`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_dupenv_s`|\<stdlib.h>|  
-|`_wdupenv_s`|\<stdlib.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_dupenv_s.c  
-#include  <stdlib.h>  
-  
-int main( void )  
-{  
-   char *pValue;  
-   size_t len;  
-   errno_t err = _dupenv_s( &pValue, &len, "pathext" );  
-   if ( err ) return -1;  
-   printf( "pathext = %s\n", pValue );  
-   free( pValue );  
-   err = _dupenv_s( &pValue, &len, "nonexistentvariable" );  
-   if ( err ) return -1;  
-   printf( "nonexistentvariable = %s\n", pValue );  
-   free( pValue ); // It's OK to call free with NULL  
-}  
-```  
-  
-## <a name="sample-output"></a>Örnek Çıktı  
-  
-```  
-pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl  
-nonexistentvariable = (null)  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Süreç ve ortam denetimi](../../c-runtime-library/process-and-environment-control.md)   
- [Ortam sabitleri](../../c-runtime-library/environmental-constants.md)   
- [_dupenv_s_dbg, _wdupenv_s_dbg](../../c-runtime-library/reference/dupenv-s-dbg-wdupenv-s-dbg.md)   
- [getenv_s, _wgetenv_s](../../c-runtime-library/reference/getenv-s-wgetenv-s.md)   
- [_putenv_s, _wputenv_s](../../c-runtime-library/reference/putenv-s-wputenv-s.md)
+> Çağırarak belleği boşaltmak için arama programın sorumluluğu olan [ücretsiz](free.md).
+
+Değişken, ardından bulunmazsa *arabellek* ayarlanır **NULL**, *numberOfElements* 0 olarak ayarlanır ve bu durum bir hata olarak kabul edilmez çünkü dönüş değeri 0'dır Koşul.
+
+Arabellek boyutu değil ilgileniyorsanız geçirebilirsiniz **NULL** için *numberOfElements*.
+
+**_dupenv_s** Windows işletim sisteminde büyük küçük harfe duyarlı değildir. **_dupenv_s** genel değişkeni tarafından işaret ortam kopyasını kullanan **_environ** ortama erişmek için. Açıklamalar bkz [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) bir irdelemesi **_environ**.
+
+Değer *arabellek* ortam değişkeninin değeri; bir kopyası değiştirmeye hiçbir etkisi ortamı. Kullanım [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) bir ortam değişkeninin değerini değiştirmek için işlevi.
+
+**_wdupenv_s** bir joker karakter sürümü **_dupenv_s**; bağımsız değişkenleri **_wdupenv_s** joker karakter dizelerdir. **_Wenviron** genel değişkeni sürümüdür bir joker karakter **_environ**. Açıklamalar bkz [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) hakkında daha fazla bilgi için **_wenviron**.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_tdupenv_s**|**_dupenv_s**|**_dupenv_s**|**_wdupenv_s**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_dupenv_s**|\<stdlib.h >|
+|**_wdupenv_s**|\<stdlib.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_dupenv_s.c
+#include  <stdlib.h>
+
+int main( void )
+{
+   char *pValue;
+   size_t len;
+   errno_t err = _dupenv_s( &pValue, &len, "pathext" );
+   if ( err ) return -1;
+   printf( "pathext = %s\n", pValue );
+   free( pValue );
+   err = _dupenv_s( &pValue, &len, "nonexistentvariable" );
+   if ( err ) return -1;
+   printf( "nonexistentvariable = %s\n", pValue );
+   free( pValue ); // It's OK to call free with NULL
+}
+```
+
+```Output
+pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl
+nonexistentvariable = (null)
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[Ortam Sabitleri](../../c-runtime-library/environmental-constants.md)<br/>
+[_dupenv_s_dbg, _wdupenv_s_dbg](dupenv-s-dbg-wdupenv-s-dbg.md)<br/>
+[getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)<br/>
+[_putenv_s, _wputenv_s](putenv-s-wputenv-s.md)<br/>

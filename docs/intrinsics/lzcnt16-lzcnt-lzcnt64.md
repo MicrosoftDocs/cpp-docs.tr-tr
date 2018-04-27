@@ -1,12 +1,12 @@
 ---
 title: __lzcnt16, __lzcnt, __lzcnt64 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - __lzcnt64
@@ -23,22 +23,22 @@ helpviewer_keywords:
 - lzcnt64 intrinsic
 - __lzcnt64 intrinsic
 ms.assetid: 412113e7-052e-46e5-8bfa-d5ad72abc10e
-caps.latest.revision: 
+caps.latest.revision: 14
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85af6534ccf578bccabcd0f7b517234b2b560b6f
-ms.sourcegitcommit: d51ed21ab2b434535f5c1d553b22e432073e1478
+ms.openlocfilehash: 8507dc567c92539baaf51abe8bd7a4644a405558
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
-**Microsoft Specific**  
+**Microsoft özel**  
   
- Sayıları başında sayısı 16-, 32 veya 64-bayt tamsayı sıfırlar.  
+ Sayıları başında sayısı 16-, 32 veya 64 bit tamsayı sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

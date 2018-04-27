@@ -1,12 +1,12 @@
 ---
 title: Tek devralma | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -19,22 +19,22 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-caps.latest.revision: 
+caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 003e407edfd50440a2bbeaf483c2fba94d178b57
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 3d005d4d973ca3ac1873b588975683b14624f21f
+ms.sourcegitcommit: dd1a509526fa8bb18e97ab7bc7b91cbdb3ec7059
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.  
   
- ![Temel tek &#45; Devralma Grafiği](../cpp/media/vc38xj1.gif "vc38XJ1")  
+ ![Temel tek&#45;Devralma Grafiği](../cpp/media/vc38xj1.gif "vc38XJ1")  
 Basit Tek Devralma Grafiği  
   
  Şekildeki ilerlemenin genelden özele olduğuna dikkat edin. Çoğu sınıf hiyerarşisinin tasarımında bulunan diğer bir genel öznitelik ise türetilen sınıfın temel sınıf ile bir "türü" ilişkisi olmasıdır. Şekilde, `Book` bir `PrintedDocument` türü, `PaperbackBook` ise bir `book` türüdür.  
@@ -155,8 +155,10 @@ class PaperbackBook : public Document {};
   
 int main() {  
    Document * DocLib[10];   // Library of ten documents.  
-   for (int i = 0 ; i < 10 ; i++)  
+   for (int i = 0 ; i < 5 ; i++)  
       DocLib[i] = new Document;  
+   for (int i = 5 ; i < 10 ; i++)  
+      DocLib[i] = new PaperbackBook;  
 }  
 ```  
   

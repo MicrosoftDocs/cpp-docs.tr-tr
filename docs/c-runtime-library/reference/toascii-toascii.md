@@ -1,12 +1,12 @@
 ---
 title: ToAscii, __toascii | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - __toascii
@@ -36,19 +36,19 @@ helpviewer_keywords:
 - __toascii function
 - ASCII characters, converting to
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
-caps.latest.revision: 
+caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf4c29934d22d3f20d79650faa406f217ffdd4c6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 62b94724e95738c424ee04b0fbccfad1fdf6951c
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="toascii-toascii"></a>toascii, __toascii
+# <a name="toascii-toascii"></a>ToAscii, __toascii
 
 Karakter 7 bitlik ASCII tarafından kesme dönüştürür.
 
@@ -63,29 +63,29 @@ int __toascii(
 
 ### <a name="parameters"></a>Parametreler
 
-*c*  
+*c*<br/>
 Dönüştürülecek karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-`__toascii` değerini dönüştürür *c* 7 bitlik ASCII aralığı ve sonucu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
+**__toascii** değerini dönüştürür *c* 7 bitlik ASCII aralığı ve sonucu döndürür. Hiçbir değer döndürmeyen bir hata belirtmek üzere ayrılmış.
 
 ## <a name="remarks"></a>Açıklamalar
 
-`__toascii` Yordamı dönüştürür belirli bir karakter bir ASCII karakter için düşük düzey 7 bit kesilmesiyle tarafından. Diğer bir dönüştürme uygulanır.
+**__Toascii** yordamı dönüştürür belirli bir karakter bir ASCII karakter için düşük düzey 7 bit kesilmesiyle tarafından. Diğer bir dönüştürme uygulanır.
 
-`__toascii` Önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece, yordamı makro olarak tanımlanır. Geriye dönük uyumluluk için `toascii` makro olarak tanımlanan yalnızca [&#95; &#95; STDC &#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil ya da 0; tanımlanan aksi tanımlı değil.
+**__Toascii** önişlemci makrosu _CTYPE_DISABLE_MACROS tanımlanmadığı sürece, yordamı makro olarak tanımlanır. Geriye dönük uyumluluk için **toascii** makro olarak tanımlanan yalnızca [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) tanımlı değil ya da 0; tanımlanan aksi tanımlı değil.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|`toascii`, `__toascii`|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
+|**ToAscii**, **__toascii**|C: \<ctype.h ><br /><br /> C++: \<cctype > veya \<ctype.h >|
 
-`toascii` Makrosu POSIX uzantısı olan ve `__toascii` POSIX uzantısı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.
+**Toascii** makrosu POSIX uzantısı olan ve **__toascii** POSIX uzantısı Microsoft'a özgü uygulamasıdır. Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
-[Veri dönüştürme](../../c-runtime-library/data-conversion.md)   
-[is, isw rutinleri](../../c-runtime-library/is-isw-routines.md)   
-[to İşlevleri](../../c-runtime-library/to-functions.md)
+[Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
+[to İşlevleri](../../c-runtime-library/to-functions.md)<br/>

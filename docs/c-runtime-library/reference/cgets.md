@@ -1,12 +1,12 @@
 ---
 title: cgets | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - cgets
@@ -29,21 +29,21 @@ dev_langs:
 helpviewer_keywords:
 - cgets function
 ms.assetid: 54faf257-5ed6-4301-be19-66d953e901fa
-caps.latest.revision: 
+caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d96e6699281e74d2ea11489f4541baf9b1d55953
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 33ad2fc2ccf2036aa16a6d4cfa3c2af7d8acd13b
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="cgets"></a>cgets
 
-Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_cgets](../../c-runtime-library/cgets-cgetws.md) veya Gelişmiş Güvenlik [_cgets_s](../../c-runtime-library/reference/cgets-s-cgetws-s.md) yerine.
+Bu POSIX işlevi kullanım dışıdır. ISO C++ uyumluluğunu kullanmak [_cgets](../../c-runtime-library/cgets-cgetws.md) veya Gelişmiş Güvenlik [_cgets_s](cgets-s-cgetws-s.md) yerine.
 
 > [!IMPORTANT]
 > Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).

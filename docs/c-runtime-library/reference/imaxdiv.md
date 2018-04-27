@@ -1,12 +1,12 @@
 ---
 title: imaxdiv | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - imaxdiv
@@ -30,87 +30,92 @@ dev_langs:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-caps.latest.revision: 
+caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93416cd105b90cd68ad9224a4726f507e2689c82
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ab39d68f733fdb7d078efdc058f09e30d0fd907b
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="imaxdiv"></a>imaxdiv
-Sayının ve herhangi bir boyuttaki iki tamsayı değerleri kalanını tek bir işlem olarak hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-imaxdiv_t imaxdiv(   
-   intmax_t numer,  
-   intmax_t denom   
-);   
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `numer`  
- Pay.  
-  
- `denom`  
- Payda değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `imaxdiv` tür bağımsız değişkenlerle çağrıldı [intmax_t](../../c-runtime-library/standard-types.md) türü yapısını döndürür [imaxdiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `imaxdiv` İşlev böler `numer` tarafından `denom` ve böylece sayının ve kalanı hesaplar. `imaxdiv_t` Yapısı içeren sayının `intmax_t quot`ve kalan `intmax_t rem`. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`imaxdiv`|\<inttypes.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_imaxdiv.c  
-// Build using: cl /W3 /Tc crt_imaxdiv.c  
-// This example takes two integers as command-line  
-// arguments and calls imaxdiv to divide the first   
-// argument by the second, then displays the results.  
-  
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <inttypes.h>  
-  
-int main(int argc, char *argv[])  
-{  
-   intmax_t x,y;  
-   imaxdiv_t div_result;  
-  
-   x = atoll(argv[1]);  
-   y = atoll(argv[2]);  
-  
-   printf("The call to imaxdiv(%lld, %lld)\n", x, y);  
-   div_result = imaxdiv(x, y);  
-   printf("results in a quotient of %lld, and a remainder of %lld\n\n",  
-          div_result.quot, div_result.rem);  
-}  
-```  
-  
- Yerleşik ve komut satırı parametreleri ile adlı `9460730470000000 8766`, bu çıkış kodu oluşturur:  
-  
-```Output  
-The call to imaxdiv(9460730470000000, 8766)  
-results in a quotient of 1079252848505, and a remainder of 5170  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [div](../../c-runtime-library/reference/div.md)   
- [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)
+
+Sayının ve herhangi bir boyuttaki iki tamsayı değerleri kalanını tek bir işlem olarak hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+imaxdiv_t imaxdiv(
+   intmax_t numer,
+   intmax_t denom
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*numarası*<br/>
+Pay.
+
+*denom*<br/>
+Payda değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**imaxdiv** türünde bir bağımsız değişkenlerle çağrıldı [intmax_t](../../c-runtime-library/standard-types.md) türü yapısını döndürür [imaxdiv_t](../../c-runtime-library/standard-types.md) sayının ve kalanı oluşur.
+
+## <a name="remarks"></a>Açıklamalar
+
+**İmaxdiv** işlev böler *numarası* tarafından *denom* ve böylece sayının ve kalanı hesaplar. **İmaxdiv_t** yapısı içeren sayının **intmax_t** **quot**ve kalan **intmax_t** **rem**. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**imaxdiv**|\<inttypes.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_imaxdiv.c
+// Build using: cl /W3 /Tc crt_imaxdiv.c
+// This example takes two integers as command-line
+// arguments and calls imaxdiv to divide the first
+// argument by the second, then displays the results.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <inttypes.h>
+
+int main(int argc, char *argv[])
+{
+   intmax_t x,y;
+   imaxdiv_t div_result;
+
+   x = atoll(argv[1]);
+   y = atoll(argv[2]);
+
+   printf("The call to imaxdiv(%lld, %lld)\n", x, y);
+   div_result = imaxdiv(x, y);
+   printf("results in a quotient of %lld, and a remainder of %lld\n\n",
+          div_result.quot, div_result.rem);
+}
+```
+
+Yerleşik ve komut satırı parametreleri ile adlı `9460730470000000 8766`, bu çıkış kodu oluşturur:
+
+```Output
+The call to imaxdiv(9460730470000000, 8766)
+results in a quotient of 1079252848505, and a remainder of 5170
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[div](div.md)<br/>
+[ldiv, lldiv](ldiv-lldiv.md)<br/>

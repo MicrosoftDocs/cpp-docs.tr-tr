@@ -1,12 +1,12 @@
 ---
-title: div | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: div, ldiv, lldiv | Microsoft Docs
+ms.custom: ''
+ms.date: 04/05/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - div
@@ -34,100 +34,116 @@ helpviewer_keywords:
 - dividing integers
 - remainder computing
 ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-caps.latest.revision: 
+caps.latest.revision: 15
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2090ca5e08af74854177f02d6313d6c1304ed2c6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b3a0e28030b62f68d478cb976b1f89d91904655a
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
-# <a name="div"></a>div
-Sayının ve iki tamsayı değerleri geri kalanı hesaplar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-div_t div(   
-   int numer,  
-   int denom   
-);  
-ldiv_t div(  
-   long numer,  
-   long denom  
-); /* C++ only */   
-lldiv_t div(  
-   long long numer,  
-   long long denom  
-); /* C++ only */  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `numer`  
- Pay.  
-  
- `denom`  
- Payda değeri.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `div` tür bağımsız değişkenleri kullanarak adında `int` türü yapısını döndürür `div_t`, sayının ve kalanı oluşur. Aşırı yükleme dönüş değeri türü bağımsız değişkenleri ile `long` olan `ldiv_t`. Her ikisi de `div_t` ve `ldiv_t` STDLIB tanımlanır. H.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `div` İşlev böler `numer` tarafından `denom` ve böylece sayının ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı içeren sayının `int quot`ve kalan `int rem`. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.  
-  
- Tür bağımsız değişkenler almayan aşırı `long` veya `long long` yalnızca C++ kodu için kullanılabilir. Dönüş türü [ldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren `long quot` ve `long rem`ve dönüş türü [lldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren `long long quot` ve `long long rem`, aynı olan üyeleri olarak anlamları `div_t`.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`div`|\<stdlib.h>|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// crt_div.c  
-// arguments: 876 13  
-  
-// This example takes two integers as command-line  
-// arguments and displays the results of the integer  
-// division. This program accepts two arguments on the  
-// command line following the program name, then calls  
-// div to divide the first argument by the second.  
-// Finally, it prints the structure members quot and rem.  
-//  
-  
-#include <stdlib.h>  
-#include <stdio.h>  
-#include <math.h>  
-  
-int main( int argc, char *argv[] )  
-{  
-   int x,y;  
-   div_t div_result;  
-  
-   x = atoi( argv[1] );  
-   y = atoi( argv[2] );  
-  
-   printf( "x is %d, y is %d\n", x, y );  
-   div_result = div( x, y );  
-   printf( "The quotient is %d, and the remainder is %d\n",  
-           div_result.quot, div_result.rem );  
-}  
-```  
-  
-```Output  
-x is 876, y is 13  
-The quotient is 67, and the remainder is 5  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayan nokta desteği](../../c-runtime-library/floating-point-support.md)   
- [ldiv, lldiv](../../c-runtime-library/reference/ldiv-lldiv.md)   
- [imaxdiv](../../c-runtime-library/reference/imaxdiv.md)
+# <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
+
+Sayının ve iki tamsayı değerleri geri kalanı hesaplar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+div_t div(
+   int numer,
+   int denom
+);
+ldiv_t ldiv(
+   long numer,
+   long denom
+);
+lldiv_t lldiv(
+   long long numer,
+   long long denom
+);
+```
+
+```cpp
+ldiv_t div(
+   long numer,
+   long denom
+); /* C++ only */
+lldiv_t div(
+   long long numer,
+   long long denom
+); /* C++ only */
+```
+
+### <a name="parameters"></a>Parametreler
+
+*numarası*<br/>
+Pay.
+
+*denom*<br/>
+Payda değeri.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**div** bağımsız değişken türü kullanarak adında **int** türü yapısını döndürür **div_t**, sayının ve kalanı oluşur. Dönüş değeri türü bağımsız değişkenleri ile **uzun** olan **ldiv_t**ve dönüş değeri türü bağımsız değişkenleri ile **uzun** **uzun** olan**lldiv_t**. **div_t**, **ldiv_t**, ve **lldiv_t** tanımlanan \<stdlib.h >.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Div** işlev böler *numarası* tarafından *denom* ve böylece sayının ve kalanı hesaplar. [Div_t](../../c-runtime-library/standard-types.md) yapısı içeren sayının **quot**ve kalan **rem**. Sayının işaretini, matematiksel sayının aynıdır. Mutlak değerini matematiksel sayının mutlak değerini değerinden en büyük tamsayıdır. Paydanın 0 ise, program bir hata iletisi ile sona erer.
+
+Aşırı **div** bağımsız değişken türü yararlanma **uzun** veya **uzun** **uzun** yalnızca C++ kodu için kullanılabilir. Dönüş türleri [ldiv_t](../../c-runtime-library/standard-types.md) ve [lldiv_t](../../c-runtime-library/standard-types.md) üyeleri içeren **quot** ve **rem**, üyeleriolarakaynıanlamasahip**div_t**.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**div**, **ldiv**, **lldiv**|\<stdlib.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+```C
+// crt_div.c
+// arguments: 876 13
+
+// This example takes two integers as command-line
+// arguments and displays the results of the integer
+// division. This program accepts two arguments on the
+// command line following the program name, then calls
+// div to divide the first argument by the second.
+// Finally, it prints the structure members quot and rem.
+//
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main( int argc, char *argv[] )
+{
+   int x,y;
+   div_t div_result;
+
+   x = atoi( argv[1] );
+   y = atoi( argv[2] );
+
+   printf( "x is %d, y is %d\n", x, y );
+   div_result = div( x, y );
+   printf( "The quotient is %d, and the remainder is %d\n",
+           div_result.quot, div_result.rem );
+}
+```
+
+```Output
+x is 876, y is 13
+The quotient is 67, and the remainder is 5
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kayan Nokta Desteği](../../c-runtime-library/floating-point-support.md)<br/>
+[ldiv, lldiv](ldiv-lldiv.md)<br/>
+[imaxdiv](imaxdiv.md)<br/>

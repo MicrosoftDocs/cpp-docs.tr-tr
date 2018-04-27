@@ -1,12 +1,12 @@
 ---
 title: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _vscprintf
@@ -51,92 +51,98 @@ helpviewer_keywords:
 - vscprintf function
 - vscprintf_l function
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-caps.latest.revision: 
+caps.latest.revision: 12
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0ba44a2e23baf8d901cb6bf5d9abd8306c32527
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 4a8cfdd7eded5956e9e34faed53e93e0ad029361
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="vscprintf-vscprintfl-vscwprintf-vscwprintfl"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
-Bağımsız değişkenlerinin listesi için bir işaretçi kullanarak biçimlendirilmiş dizesindeki karakterlerin sayısını döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _vscprintf(  
-   const char *format,  
-   va_list argptr   
-);  
-int _vscprintf_l(  
-   const char *format,  
-   locale_t locale,  
-   va_list argptr   
-);  
-int _vscwprintf(  
-   const wchar_t *format,  
-   va_list argptr   
-);  
-int _vscwprintf_l(  
-   const wchar_t *format,  
-   locale_t locale,  
-   va_list argptr   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `format`  
- Biçim denetimi dizesi.  
-  
- `argptr`  
- İşaretçi bağımsız değişken listesi.  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
- Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- `_vscprintf` dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyayı veya belirtilen biçimlendirme kodlarını kullanarak arabellek gönderilen döndürür. Döndürülen değer sonlandırma null karakteri içermez. `_vscwprintf` geniş karakterler için aynı işlevi gerçekleştirir.  
-  
- Bu işlevleri sürümlerini `_l` soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.  
-  
- Varsa `format` null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve `errno` için `EINVAL`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Her `argument` (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür `format`. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev `format` bağımsız değişkeni için [printf](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md).  
-  
+
+Bağımsız değişkenlerinin listesi için bir işaretçi kullanarak biçimlendirilmiş dizesindeki karakterlerin sayısını döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int _vscprintf(
+   const char *format,
+   va_list argptr
+);
+int _vscprintf_l(
+   const char *format,
+   locale_t locale,
+   va_list argptr
+);
+int _vscwprintf(
+   const wchar_t *format,
+   va_list argptr
+);
+int _vscwprintf_l(
+   const wchar_t *format,
+   locale_t locale,
+   va_list argptr
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Biçimi*<br/>
+Biçim denetimi dizesi.
+
+*argptr*<br/>
+İşaretçi bağımsız değişken listesi.
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**_vscprintf** dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyaya gönderilen veya belirtilen biçimlendirme kullanarak arabellek kodlarını döndürür. Döndürülen değer sonlandırma null karakteri içermez. **_vscwprintf** geniş karakterler için aynı işlevi gerçekleştirir.
+
+Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+
+Varsa *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve **errno** için **EINVAL**.
+
+## <a name="remarks"></a>Açıklamalar
+
+Her *bağımsız değişkeni* (varsa) karşılık gelen biçimi belirtiminde göre dönüştürülür *biçimi*. Biçim sıradan karakterden oluşan ve aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](printf-printf-l-wprintf-wprintf-l.md).
+
 > [!IMPORTANT]
->  Olması durumunda olun `format` kullanıcı tanımlı bir dize sonlandırıldı null olduğundan ve doğru sayısı ve parametre türü vardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_vsctprintf`|`_vscprintf`|`_vscprintf`|`_vscwprintf`|  
-|`_vsctprintf_l`|`_vscprintf_l`|`_vscprintf_l`|`_vscwprintf_l`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_vscprintf`, `_vscprintf_l`|\<stdio.h >|  
-|`_vscwprintf`, `_vscwprintf_l`|\<stdio.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="example"></a>Örnek  
- Örneğin bkz [vsprintf](../../c-runtime-library/reference/vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Akış g/ç](../../c-runtime-library/stream-i-o.md)   
- [fprintf, _fprintf_l, fwprintf, _fwprintf_l](../../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md)   
- [Printf, _printf_l, wprintf, _wprintf_l](../../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   
- [scanf, _scanf_l, wscanf, _wscanf_l](../../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)   
- [sscanf, _sscanf_l, swscanf, _swscanf_l](../../c-runtime-library/reference/sscanf-sscanf-l-swscanf-swscanf-l.md)   
- [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)
+> Olması durumunda olun *biçimi* kullanıcı tanımlı bir dize sonlandırıldı null olduğundan ve doğru sayısı ve parametre türü vardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_vsctprintf**|**_vscprintf**|**_vscprintf**|**_vscwprintf**|
+|**_vsctprintf_l**|**_vscprintf_l**|**_vscprintf_l**|**_vscwprintf_l**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**_vscprintf**, **_vscprintf_l**|\<stdio.h >|
+|**_vscwprintf**, **_vscwprintf_l**|\<stdio.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="example"></a>Örnek
+
+Örneğin bkz [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
+[scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
+[sscanf, _sscanf_l, swscanf, _swscanf_l](sscanf-sscanf-l-swscanf-swscanf-l.md)<br/>
+[vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>

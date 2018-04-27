@@ -1,12 +1,12 @@
 ---
 title: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - iscntrl
@@ -44,73 +44,77 @@ helpviewer_keywords:
 - iswcntrl function
 - _istcntrl_l function
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f56b4060f6b83aca11121ad6c40c22de64a24b8f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 7c0eecee5d33bd9e250e88021556625101202082
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="iscntrl-iswcntrl-iscntrll-iswcntrll"></a>iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
-Tamsayı bir denetim karakteri temsil edip etmediğini belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int iscntrl(   
-   int c   
-);  
-int iswcntrl(   
-   wint_t c   
-);  
-int _iscntrl_l(   
-   int c,  
-   _locale_t locale  
-);  
-int _iswcntrl_l(   
-   wint_t c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Test etmek için tamsayı  
-  
- `locale`  
- Kullanılacak yerel ayar.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamları döndürür sıfır olmayan IF her `c` bir denetim karakteri belirli bir gösterimidir. `iscntrl` sıfır olmayan bir değer döndürür `c` bir denetim karakteri (0x00-0x1F veya 0x7F). `iswcntrl` sıfır olmayan bir değer döndürür `c` geniş karakter denetimdir. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
-  
- Bu işlevleri sürümlerini `_l` soneki geçerli yerel yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
- Davranışını `iscntrl` ve `_iscntrl_l` tanımsız ise `c` EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve `c` işlevleri olursa bu değerleri onayı ifade değil.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_istcntrl`|`iscntrl`|`iscntrl`|`iswcntrl`|  
-|`_istcntrl_l`|`_iscntrl_l`|`_iscntrl_l`|`_iswcntrl_l`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`iscntrl`|\<ctype.h>|  
-|`iswcntrl`|\<CType.h > veya \<wchar.h >|  
-|`_iscntrl_l`|\<ctype.h>|  
-|`_iswcntrl_l`|\<CType.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)
+
+Tamsayı bir denetim karakteri temsil edip etmediğini belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int iscntrl(
+   int c
+);
+int iswcntrl(
+   wint_t c
+);
+int _iscntrl_l(
+   int c,
+   _locale_t locale
+);
+int _iswcntrl_l(
+   wint_t c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Test etmek için tamsayı
+
+*Yerel ayar*<br/>
+Kullanılacak yerel ayar.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu yordamları döndürür sıfır olmayan IF her *c* bir denetim karakteri belirli bir gösterimidir. **iscntrl** sıfır olmayan bir değer döndürür *c* bir denetim karakteri (0x00-0x1F veya 0x7F). **iswcntrl** sıfır olmayan bir değer döndürür *c* geniş karakter denetimdir. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+
+Bu işlevleri sürümlerini **_l** soneki geçerli yerel yerine geçirilen yerel ayar parametresini kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+Davranışını **iscntrl** ve **_iscntrl_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_istcntrl**|**iscntrl**|**iscntrl**|**iswcntrl**|
+|**_istcntrl_l**|**_iscntrl_l**|**_iscntrl_l**|**_iswcntrl_l**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**iscntrl**|\<CType.h >|
+|**iswcntrl**|\<CType.h > veya \<wchar.h >|
+|**_iscntrl_l**|\<CType.h >|
+|**_iswcntrl_l**|\<CType.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>

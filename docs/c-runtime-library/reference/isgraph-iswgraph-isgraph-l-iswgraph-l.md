@@ -1,12 +1,12 @@
 ---
 title: isgraph, iswgraph, _isgraph_l, _iswgraph_l | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - isgraph
@@ -46,70 +46,74 @@ helpviewer_keywords:
 - _istgraph function
 - _ismbcgraph_l function
 ms.assetid: 531a5f34-4302-4d0a-8a4f-b7ea150ad941
-caps.latest.revision: 
+caps.latest.revision: 19
 author: corob-msft
 ms.author: corob
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c338e884906e7a172edc39f941a1bedcdee3b57f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a7733a36c840805e3adfc2feea4f9db00e895a5e
+ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="isgraph-iswgraph-isgraphl-iswgraphl"></a>isgraph, iswgraph, _isgraph_l, _iswgraph_l
-Tamsayı grafik bir karakteri temsil edip etmediğini belirler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int isgraph(  
-   int c   
-);  
-int iswgraph(  
-   wint_t c   
-);  
-int _isgraph_l(  
-   int c,  
-   _locale_t locale  
-);  
-int _iswgraph_l(  
-   wint_t c,  
-   _locale_t locale  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `c`  
- Test etmek için bir tamsayı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bu yordamları döndürür sıfır olmayan IF her `c` yazdırılabilir karakteri boşluk dışında belirli bir gösterimidir. `isgraph` sıfır olmayan bir değer döndürür `c` bir alanı dışında yazdırılabilir bir karakterdir. `iswgraph` sıfır olmayan bir değer döndürür `c` geniş karakter alanı dışında yazdırılabilir bir geniş karakter. Bu yordamlar her 0 döndürür `c` test durumu uygun değil.  
-  
- Bu işlevleri sürümlerini `_l` soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).  
-  
- Davranışını `isgraph` ve `_isgraph_l` tanımsız ise `c` EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve `c` işlevleri olursa bu değerleri onayı ifade değil.  
-  
-### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri  
-  
-|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|  
-|---------------------|------------------------------------|--------------------|-----------------------|  
-|`_istgraph`|`isgraph`|[_ismbcgraph](../../c-runtime-library/reference/ismbcgraph-functions.md)|`iswgraph`|  
-|`_istgraph_l`|`_isgraph_l`|[_ismbcgraph_l](../../c-runtime-library/reference/ismbcgraph-functions.md)|`_iswgraph_l`|  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`isgraph`|\<ctype.h>|  
-|`iswgraph`|\<CType.h > veya \<wchar.h >|  
-|`_isgraph_l`|\<ctype.h>|  
-|`_iswgraph_l`|\<CType.h > veya \<wchar.h >|  
-  
- Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
- [Yerel ayar](../../c-runtime-library/locale.md)   
- [is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)
+
+Tamsayı grafik bir karakteri temsil edip etmediğini belirler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```C
+int isgraph(
+   int c
+);
+int iswgraph(
+   wint_t c
+);
+int _isgraph_l(
+   int c,
+   _locale_t locale
+);
+int _iswgraph_l(
+   wint_t c,
+   _locale_t locale
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*c*<br/>
+Test etmek için bir tamsayı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bu yordamları döndürür sıfır olmayan IF her *c* yazdırılabilir karakteri boşluk dışında belirli bir gösterimidir. **isgraph** sıfır olmayan bir değer döndürür *c* bir alanı dışında yazdırılabilir bir karakterdir. **iswgraph** sıfır olmayan bir değer döndürür *c* geniş karakter alanı dışında yazdırılabilir bir geniş karakter. Bu yordamlar her 0 döndürür *c* test durumu uygun değil.
+
+Bu işlevleri sürümlerini **_l** soneki yerine geçerli yerel geçirilen yerel ayar için yerel ayara bağımlı davranışlarını kullanın. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+
+Davranışını **isgraph** ve **_isgraph_l** tanımsız ise *c* EOF değil veya 0'dan 0xFF (bunlar dahil) aralığında. CRT hata ayıklama Kitaplığı kullanıldığında ve *c* bu değerleri işlevleri raise onayı ifade değil.
+
+### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
+
+|TCHAR.H yordamı|_UNICODE & _MBCS tanımlanmamış|_MBCS tanımlanmış|_UNICODE tanımlanmış|
+|---------------------|------------------------------------|--------------------|-----------------------|
+|**_istgraph**|**isgraph**|[_ismbcgraph](ismbcgraph-functions.md)|**iswgraph**|
+|**_istgraph_l**|**_isgraph_l**|[_ismbcgraph_l](ismbcgraph-functions.md)|**_iswgraph_l**|
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|**isgraph**|\<CType.h >|
+|**iswgraph**|\<CType.h > veya \<wchar.h >|
+|**_isgraph_l**|\<CType.h >|
+|**_iswgraph_l**|\<CType.h > veya \<wchar.h >|
+
+Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
+[locale](../../c-runtime-library/locale.md)<br/>
+[is, isw Yordamları](../../c-runtime-library/is-isw-routines.md)<br/>
