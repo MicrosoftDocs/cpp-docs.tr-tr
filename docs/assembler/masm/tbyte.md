@@ -1,12 +1,9 @@
 ---
 title: TBYTE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - TBYTE
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - TBYTE directive
 ms.assetid: d5f96bb0-403c-413e-9e3c-2af1ce528da7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ff6260244a31059ed1304e9d88d2c87be662da3
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 8b7c8b3f4cbe26eda9709f27a18ccb4a9cf2bbb1
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="tbyte"></a>TBYTE
 Ayırır ve isteğe bağlı olarak 10 bayt depolama her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  

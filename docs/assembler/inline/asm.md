@@ -1,13 +1,10 @@
 ---
 title: __asm | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-masm
+ms.topic: conceptual
 f1_keywords:
 - __asm
 - __asm_cpp
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - __asm keyword [C++], vs. asm blocks
 - __asm keyword [C++]
 ms.assetid: 77ff3bc9-a492-4b5e-85e1-fa4e414e79cd
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75a5d272e4ac26b87728506e45759733ffa26472
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 77e09f6af92839c6113c9c5ba375a1583bcf7149
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="asm"></a>__asm
 **Microsoft özel**  
@@ -49,9 +44,9 @@ ms.lasthandoff: 12/21/2017
  `__asm {`  `assembly-instruction-list`  `};`İptal Et  
   
  *derleme yönerge listesi*:  
- `assembly-instruction``;`iptal et  
+ `assembly-instruction` `;`İptal Et  
   
- `assembly-instruction``;` `assembly-instruction-list` `;`iptal et  
+ `assembly-instruction` `;` `assembly-instruction-list` `;`İptal Et  
   
  Köşeli parantez kullanılırsa `__asm` anahtar sözcüğü anlamına gelir satırın geri kalanı bir derleme dili ifadesi olur. Köşeli parantez ile kullandıysanız, ayraçlar arasında her satır bir derleme dili bildirimi olduğu anlamına gelir. Önceki sürümlerle uyumluluk için `_asm` eşanlamlısı olduğu `__asm`.  
   
@@ -65,7 +60,7 @@ __asm int 3
   
  Yerel kod ile derlendiğinde oluşturulmasına neden değil **/CLR**; bir CLR sonu yönergesi için yönerge derleyici çevrilir.  
   
- `__asm int 3`Yerel kod oluşturma işlevi için şimdi sonuçlanır. Bir işlevin kodunuzda bir kesme noktası neden ve MSIL için derlenmiş bu işlevin istiyorsanız kullanmak istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md).  
+ `__asm int 3` Yerel kod oluşturma işlevi için şimdi sonuçlanır. Bir işlevin kodunuzda bir kesme noktası neden ve MSIL için derlenmiş bu işlevin istiyorsanız kullanmak istiyorsanız [__debugbreak](../../intrinsics/debugbreak.md).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki kod parçası olan basit bir `__asm` ayraçlar içinde engelle:  

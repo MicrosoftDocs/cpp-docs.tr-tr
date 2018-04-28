@@ -1,12 +1,9 @@
 ---
-title: "THIS işleci | Microsoft Docs"
-ms.custom: 
+title: THIS işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - this
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - operator THIS
 - THIS operator
 ms.assetid: d795aa0e-6c01-49b7-8c64-8ab111fd82d3
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d344eb9c2ce86e141efa246f2703020d4153c8e6
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 37304563b1a986b81eec05778c420a002e75fa9f
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="operator-this"></a>THIS işleci
 Belirtilen bir işleneni döndürür `type` uzaklık ve segment değerleri geçerli konumu sayaç değerine eşit.  

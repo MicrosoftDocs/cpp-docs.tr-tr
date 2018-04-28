@@ -1,12 +1,9 @@
 ---
-title: "ML önemli hatası A1010 | Microsoft Docs"
-ms.custom: 
+title: ML önemli hatası A1010 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A1010
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - A1010
 ms.assetid: 9e0b5241-67f4-4740-8701-3b2d2d1ad9e4
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 553071ff10688f0b49909b16c8c60d95899247d1
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: b622595b6994c4c4eaa74ed8f824f28dffe89b1a
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-fatal-error-a1010"></a>ML Önemli Hatası A1010
 **eşleşmeyen blok iç içe geçme:**  

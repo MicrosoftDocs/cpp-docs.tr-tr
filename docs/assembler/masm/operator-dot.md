@@ -1,12 +1,9 @@
 ---
-title: "işleç nokta | Microsoft Docs"
-ms.custom: 
+title: işleç nokta | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - operator .
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - operator .
 - . operator
 ms.assetid: 468ea0c8-5b08-47be-991b-38abacb77611
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca9be1acbfe2396dcb32f462627dba75fa8c341e
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 84eb11751d82b72b903a8dfa8196292b001646f5
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="operator-"></a>. işleci
 İlk işleci döndürür *ifade* uzaklığı artı *alan* yapısı veya birleşim içinde. İkinci işleci gösterdiği konumda değeri döndürür *kaydetmek* uzaklığı artı *alan* yapısı veya birleşim içinde.  

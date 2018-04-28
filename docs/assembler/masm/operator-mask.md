@@ -1,12 +1,9 @@
 ---
-title: "MASK işleci | Microsoft Docs"
-ms.custom: 
+title: MASK işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - operator MASK
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - MASK operator
 - operator MASK
 ms.assetid: bf997f99-17c8-4230-ab69-7a9774a75d93
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fd488625102f85c00782cfcedfdfcf331bdb1ae
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: a6e7fe7b71fbb28be7cd99dc6fc7a6d437a4253c
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="operator-mask"></a>MASK işleci
 Döndürür bir bit maskesi içinde bitleri *recordfieldname* veya *kaydı* ayarlanır ve diğer tüm bitler temizlenir.  

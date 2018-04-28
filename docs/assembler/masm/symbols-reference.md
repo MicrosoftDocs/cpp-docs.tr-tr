@@ -1,29 +1,24 @@
 ---
-title: "Semboller başvurusu | Microsoft Docs"
-ms.custom: 
+title: Semboller başvurusu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), symbols reference
 ms.assetid: 96ed59cc-dafa-4299-bb2e-9c7c3f496491
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9e79e5d0e2dd1be2f98252fb86d650172740bc2
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 14c9f4e5098dd300566c714b2b16d1d327bb0615
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="symbols-reference"></a>Semboller Başvurusu
 **Tarih ve saat bilgilerini**  
