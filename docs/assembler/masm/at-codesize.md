@@ -2,11 +2,8 @@
 title: '@CodeSize | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - '@CodeSize'
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - '@CodeSize symbol'
 ms.assetid: 6e18d99f-9999-41fe-9330-b80de8f735d5
-caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ceb784bb819d1c4cf3e08975659c4c8ca92980
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e5fc47441079e05acc7a053cd5af78b5b5a096e1
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="codesize"></a>@CodeSize
 için 0 **çok küçük**, **küçük**, **COMPACT**, ve **DÜZ** modelleri ve 1 için **orta**,  **BÜYÜK**, ve **HUGE** modelleri (sayısal eşitlemek).  

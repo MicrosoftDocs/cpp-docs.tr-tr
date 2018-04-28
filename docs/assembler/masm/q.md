@@ -1,12 +1,9 @@
 ---
 title: '? | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - '?'
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - '? symbol, macro assembler character'
 ms.assetid: 0bea8cb1-9d69-4833-a62c-9e4d062cd551
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b63bb8406e767ad0fe9a0a8c7bafc28d75156347
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c5da9acac486af61393a33f99224f610ac6ee36b
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name=""></a>?
 Veri bildirimlerinde assembler ayırır ancak başlatılmaz bir değer.  

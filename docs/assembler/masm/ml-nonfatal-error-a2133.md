@@ -1,12 +1,9 @@
 ---
-title: "ML önemli olmayan hatası A2133 | Microsoft Docs"
-ms.custom: 
+title: ML önemli olmayan hatası A2133 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2133
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - A2133
 ms.assetid: 5ba50911-22c8-43b7-90e2-946fc612e05f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adc1929f14b5264717936f1a4aebb8dabd2e439d
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: f240ed6f2e8330017e56334dfcc41be478537c7b
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-nonfatal-error-a2133"></a>ML Önemli Olmayan Hatası A2133
 **INVOKE tarafından üzerine değeri kaydetme**  

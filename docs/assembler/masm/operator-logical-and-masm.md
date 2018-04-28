@@ -1,12 +1,9 @@
 ---
-title: "İşleç &amp; &amp; (MASM) | Microsoft Docs"
-ms.custom: 
+title: İşleç &amp; &amp; (MASM) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - operator &&
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - operator &&
 - '&& operator'
 ms.assetid: cab40336-02b2-48a1-a429-3782fc8e941d
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22092cfce3a7aefe834ef880a3671bf379604f3f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 03e285e5b691b2fdd24216a1156e8fe3708afe23
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="operator-ampamp-masm"></a>İşleç &amp; &amp; (MASM)
 Değiştirir `parameter` ile ilgili bağımsız değişken değeri.  

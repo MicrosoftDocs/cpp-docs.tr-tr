@@ -1,27 +1,22 @@
 ---
-title: "ML önemli olmayan hatalar | Microsoft Docs"
-ms.custom: 
+title: ML önemli olmayan hatalar | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: error-reference
 dev_langs:
 - C++
 ms.assetid: 321190db-7a39-4108-bac0-b7197ea899a5
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98f0ca3d810ac761c0d123f1f10431ef07972315
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 846d735ec8f29682934ced41f93d8c8dee864313
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-nonfatal-errors"></a>ML Önemli Olmayan Hatalar
 ML önemli olmayan hatalar hakkında daha fazla bilgi için bkz: [ML hata iletileri](../../assembler/masm/ml-error-messages.md).  

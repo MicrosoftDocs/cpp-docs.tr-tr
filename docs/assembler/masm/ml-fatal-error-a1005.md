@@ -1,12 +1,9 @@
 ---
-title: "ML önemli hatası A1005 | Microsoft Docs"
-ms.custom: 
+title: ML önemli hatası A1005 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A1005
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - A1005
 ms.assetid: 42c7a6c5-277d-417c-acc1-d84c370e8d24
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0df48ea20d442d16be244f80c8034b884128ccaf
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: e2ac16740ccd38a28d7039ec32bcc9dd713f5d3c
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-fatal-error-a1005"></a>ML Önemli Hatası A1005
 **Derleyici sınırı: makrosu parametre adı tablosu tam**  

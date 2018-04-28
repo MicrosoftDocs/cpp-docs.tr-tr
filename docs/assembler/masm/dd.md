@@ -1,12 +1,9 @@
 ---
 title: DD | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - dd
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - DD directive
 ms.assetid: 0c238628-2fe2-437e-979d-a90bdae7b478
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f252c1f67fec7a35ac7e5915aa0de621881d246
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: ff556b6ba25743df05073b56b57611346d316cb4
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="dd"></a>DD
 Ayırır ve isteğe bağlı olarak bir çift sözcük (4 bayt) depolama her biri için başlatır `initializer`. `DD` bir eş anlamlı olduğundan [DWORD](../../assembler/masm/dword.md).  

@@ -2,11 +2,8 @@
 title: ML önemli olmayan hatası A2096 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: ''
+- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2096
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - A2096
 ms.assetid: bab0b5ee-b39f-4e44-a41a-3f949fab4297
-caps.latest.revision: 6
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c19796f10f40b8705aca024be3131de2da56501
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 6e5d07afa864c9f6f4214de953aa9e03fe0e7e4f
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-nonfatal-error-a2096"></a>ML Önemli Olmayan Hatası A2096
 **Segment, Grup veya beklenen segment Kaydet**  

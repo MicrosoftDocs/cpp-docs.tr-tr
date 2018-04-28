@@ -1,12 +1,9 @@
 ---
 title: IFDEF | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - IFDEF
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - IFDEF directive
 ms.assetid: d8fadaa9-2b9c-44d7-a9e9-b103d16904f7
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3486ae4775dc4413bf3c171d6f53e020384e3eee
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 57cb3180b881e1e72fecd5e0baa8ea076b0c192e
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ifdef"></a>IFDEF
 Derleme verir *adı* önceden tanımlanmış etiketi, değişken veya simge.  

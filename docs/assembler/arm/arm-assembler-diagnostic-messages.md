@@ -1,27 +1,22 @@
 ---
-title: "ARM Assembler tanılama iletileri | Microsoft Docs"
-ms.custom: 
+title: ARM Assembler tanılama iletileri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 52b38267-6023-4bdc-a0ef-863362f48eec
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54dca3a864ca34107314ad33725793297fd93e4a
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 1616b4bd9c4b64e771ec537a1b8cd7b582702222
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="arm-assembler-diagnostic-messages"></a>ARM Assembler Tanılama İletileri
 Microsoft ARM assembler (*armasm*) bunları karşılaştığında tanılama uyarıları ve hataları yayar. Bu makalede, en sık karşılaşılan iletileri açıklanır.  

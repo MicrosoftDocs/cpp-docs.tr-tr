@@ -1,12 +1,9 @@
 ---
 title: . DOSSEG | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - .DOSSEG
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - .DOSSEG directive
 ms.assetid: 175ad470-0a2b-4e2b-b078-65e224fec040
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39f02937ed1613cbd759621b2a4e75f84db918cf
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 3817cfe98758faf86ea87d74e02657598c3e806b
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="dosseg"></a>.DOSSEG
 MS-DOS segment kurala göre kesimleri siparişleri: kod ilk olarak, ardından kesim değil DGROUP ve ardından kesim içinde DGROUP.  

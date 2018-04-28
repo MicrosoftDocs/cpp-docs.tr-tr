@@ -1,27 +1,22 @@
 ---
-title: "ARM Assembler yönergeleri | Microsoft Docs"
-ms.custom: 
+title: ARM Assembler yönergeleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 dev_langs:
 - C++
 ms.assetid: 9cfa8896-ec10-4e77-855a-3135c40d7d2a
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6d42e099ecf8d3630e54eeb629bb3f9f46fa363
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9f5ab97fb9ccdff19206b829383c622efd3f7921
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="arm-assembler-directives"></a>ARM Assembler Yönergeleri
 Çoğunlukla, Microsoft ARM assembler Bölüm 7'de belgelenen ARM assembler dili kullanan [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102). Ancak, bazı derleme yönergesi Microsoft uygulamaları ARM derleme yönergeleri farklı. Bu makalede farklar açıklanmaktadır.  
@@ -40,7 +35,7 @@ ms.lasthandoff: 02/14/2018
  KODU16  
  Microsoft ARM assembler izin verme öncesi UAL Flash sözdizimi gösterdiğinden desteklenmiyor.  Flash yönergesi, bunun yerine, UAL sözdizimi ile birlikte kullanın.  
   
- COMMON  
+ ORTAK  
  Ortak bölge için bir hizalama belirtimi desteklenmiyor.  
   
  DCDO  

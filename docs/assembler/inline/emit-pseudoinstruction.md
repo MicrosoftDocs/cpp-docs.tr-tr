@@ -1,13 +1,10 @@
 ---
-title: "_emit sözde yönerge | Microsoft Docs"
-ms.custom: 
+title: _emit sözde yönerge | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+- cpp-masm
+ms.topic: conceptual
 f1_keywords:
 - _emit
 dev_langs:
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - byte defining (inline assembly)
 - _emit pseudoinstruction
 ms.assetid: 004c48f3-364c-4e82-9a51-e326f9cc7b2b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c506c689b94a7f6f7fa51c4c456e20454b28df02
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7ad75f4abf2e86cb08ba646e50e9390650993d05
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="emit-pseudoinstruction"></a>_emit Sözde Yönerge
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  

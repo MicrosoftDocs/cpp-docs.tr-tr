@@ -1,12 +1,9 @@
 ---
 title: QWORD | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - QWORD
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - QWORD directive
 ms.assetid: 70fcad8f-db48-4cb0-9710-8feb58baab22
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5de9b6b681c7d6ef843eeddd2c106dd4805cb94f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 9888a6d7d918df1c9a5d83a28fca002d2ab59cf4
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="qword"></a>QWORD
 Ayırır ve isteğe bağlı olarak depolama 8 bayt her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  

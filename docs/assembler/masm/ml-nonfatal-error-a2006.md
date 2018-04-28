@@ -1,12 +1,9 @@
 ---
-title: "ML önemli olmayan hatası A2006 | Microsoft Docs"
-ms.custom: 
+title: ML önemli olmayan hatası A2006 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: error-reference
 f1_keywords:
 - A2006
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - A2006
 ms.assetid: b8a8f096-95df-42b5-85ed-d2530560a84c
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d758e612d9e072084498b55e4e8b700748af881f
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 31d2f7df00d1c0658ee8301fbde1efe2522b52fc
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ml-nonfatal-error-a2006"></a>ML Önemli Olmayan Hatası A2006
 **tanımlanmamış simge: tanımlayıcısı**  

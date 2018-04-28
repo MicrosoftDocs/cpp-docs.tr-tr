@@ -1,12 +1,9 @@
 ---
-title: "HİZALAMA (MASM) | Microsoft Docs"
-ms.custom: 
+title: HİZALAMA (MASM) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - align
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - ALIGN directive
 ms.assetid: 1c386b23-439f-4ec3-a6de-74427b25e47f
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90391f0cb12d268cfde6cb86a8dfc1a9a2903ad8
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: c66a9e29b99786cd83d8994ed2da77ac2f3e48ae
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="align-masm"></a>ALIGN (MASM)
 Sonraki değişkeni veya katı bir bayt yönerge hizalar `number`.  

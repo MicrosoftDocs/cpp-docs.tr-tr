@@ -1,12 +1,9 @@
 ---
 title: IF (MASM) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - if
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - IF directive
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74d9d223d12164de6a908159eb0d44ea271b0be5
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 76bf63b917a65a5a41fd261cfc861a77b0f0d16f
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="if-masm"></a>IF (MASM)
 Veren bütünleştirilmiş *if* varsa *İfade1* değeri true (sıfır) veya *elseifstatements* varsa *İfade1* false (0) ve *İfade2* doğrudur.  

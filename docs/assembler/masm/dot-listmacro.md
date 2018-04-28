@@ -1,12 +1,9 @@
 ---
-title: .LISTMACRO | Microsoft Docs
-ms.custom: 
+title: . LISTMACRO | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - .LISTMACRO
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - .LISTMACRO directive
 ms.assetid: f8dadf8c-ca6f-4bb9-a4f8-86a0e769a845
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3b6ddb02f9988b2c50733bd89222527f2a51d44
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: d74228abccf70b969c0d1feed6a987baf35c8171
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="listmacro"></a>.LISTMACRO
 Kod veya veri üreten makrosu genişletme bilgilerinin listeleme başlatır.  

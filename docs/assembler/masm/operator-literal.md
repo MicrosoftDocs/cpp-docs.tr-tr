@@ -1,12 +1,9 @@
 ---
-title: "İşleç &lt; &gt; | Microsoft Docs"
-ms.custom: 
+title: İşleç &lt; &gt; | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - <>
@@ -17,19 +14,17 @@ helpviewer_keywords:
 - operator <>
 - <> operator
 ms.assetid: bc5acf43-df3e-499b-a3ed-1672cfa0d1ed
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37bec3a8e0b2701965deb2e7caead7482530dbf
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 454eada609ba615398cb2ff992f2a78b0f2104de
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="operator-ltgt"></a>işleci
+# <a name="operator-ltgt"></a>işleci &lt;&gt;
 İşler *metin* tek bir değişmez değer öğesi olarak.  
   
 ## <a name="syntax"></a>Sözdizimi  

@@ -1,12 +1,9 @@
 ---
 title: . XMM | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
-- cpp-tools
-ms.tgt_pltfrm: 
+- cpp-masm
 ms.topic: reference
 f1_keywords:
 - .XMM
@@ -15,17 +12,15 @@ dev_langs:
 helpviewer_keywords:
 - .XMM directive
 ms.assetid: db3062b6-8b2f-469b-aa02-df6571eab3ba
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d642463c6f75363e594066b0728c52249bfd90cc
-ms.sourcegitcommit: 6002df0ac79bde5d5cab7bbeb9d8e0ef9920da4a
+ms.openlocfilehash: 896f4db1190f2ae2ad04e5fb491031fa58908acc
+ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="xmm"></a>.XMM
 Derleme Internet Streaming SIMD Uzantısı yönergeleri sağlar.  
