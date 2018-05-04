@@ -2,11 +2,8 @@
 title: flushall | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - flushall
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - flushall function
 ms.assetid: 481429ae-3980-4233-9495-a3ee56e7c838
-caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dea6ca28b14d7e073e76fce91eac3599ba5a0c1
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 7bb866f774495c1eb8ee1684d629918f9a711c35
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="flushall"></a>flushall
 

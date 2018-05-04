@@ -2,11 +2,8 @@
 title: Standart dönüşümler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -15,17 +12,15 @@ helpviewer_keywords:
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb7477d0ea07803bf2219118e1fb530a889118c
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 050f974fe7e74077b1a8dab5caf5160d518ca8b1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
 C++ dili temel türleri arasında dönüştürmeler tanımlar. İşaretçi, başvuru, dönüştürmelerde de tanımlar ve işaretçi-üye türetilmiş tür. Bu dönüşümleri "standart dönüşümler." olarak adlandırılır (Türleri, standart türler ve türetilmiş türler hakkında daha fazla bilgi için bkz: [türleri](http://msdn.microsoft.com/en-us/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  

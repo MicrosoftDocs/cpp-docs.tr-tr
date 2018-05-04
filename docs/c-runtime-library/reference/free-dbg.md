@@ -2,11 +2,8 @@
 title: _free_dbg | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - _free_dbg
@@ -33,17 +30,15 @@ helpviewer_keywords:
 - _free_dbg function
 - free_dbg function
 ms.assetid: fc5e8299-616d-48a0-b979-e037117278c6
-caps.latest.revision: 16
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01dfb441886b46a32a9b6605742b4cd14611b458
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: aa485eea6f0ffda05b0ef33a808d5ec837255514
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="freedbg"></a>_free_dbg
 

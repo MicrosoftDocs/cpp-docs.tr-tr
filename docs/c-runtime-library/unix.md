@@ -1,13 +1,10 @@
 ---
 title: UNIX | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - unix
 dev_langs:
@@ -18,17 +15,15 @@ helpviewer_keywords:
 - POSIX file names
 - UNIX, compatibility
 ms.assetid: 40792414-7a5b-415d-bfa8-2bfb1ebb3731
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5155791f4bf12f15fa0c2c53d27fbe515e5af3
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: c2403eb0fbe19f83df3909c9d8b765f00fed82c8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unix"></a>UNIX
 Programlarınıza UNIX bağlantı noktası planlıyorsanız, aşağıdaki yönergeleri izleyin:  

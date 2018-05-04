@@ -2,11 +2,8 @@
 title: C++ özel durum işlenmemiş | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - C++ exception handling, unhandled exceptions
 - unhandled exceptions [C++]
 ms.assetid: 13f09c53-9254-4407-9db9-14e730e047cc
-caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b7410d34b7b9f31c96cf7e991133770099735a4
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: db763ce602531b15e840013a6dd235b3fba4007e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unhandled-c-exceptions"></a>İşlenilmeyen C++ Özel Durumları
 Eşleşen bir işleyici varsa (veya üç nokta **catch** işleyici) geçerli özel durumu için önceden tanımlanmış bulunamıyor `terminate` çalışma zamanı işlevi çağrılır. (İşleyicilerinizden herhangi birinde `terminate`'i de açıkça çağırabilirsiniz.) Varsayılan `terminate` işlemi, `abort` çağırmaktır. `terminate`'in uygulamadan çıkmadan önce programınızda başka bir işlevi çağırmasını isterseniz, tek bağımsız değişkeni olarak çağrılacak işlevin adıyla birlikte `set_terminate`'i çağırın. Programınızın herhangi bir noktasında `set_terminate`'i çağırabilirsiniz. `terminate` Yordamı her zaman bir bağımsız değişken olarak verilen son işlevi çağırır `set_terminate`.  

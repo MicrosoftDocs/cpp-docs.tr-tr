@@ -2,11 +2,8 @@
 title: Bağımsız değişken tanımları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 6148cbf3-ebe8-44f2-b277-de4b723991c7
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d30dd0c58cd4967065ee3e3c3c4df9538ea194a0
-ms.sourcegitcommit: 0523c88b24d963c33af0529e6ba85ad2c6ee5afb
+ms.openlocfilehash: ca012d7b391e011d9658b0b74e0f4433d5dc9fd4
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 Prototipteki bağımsız değişkenler  
@@ -46,14 +41,14 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  `argv`  
  Programın kullanıcısı tarafından girilen komut satırı bağımsız değişkenlerini temsil eden boş sonlandırılmış bir dize dizisi. Kural tarafından `argv` **[0]** ile program çağrılır, komut `argv` **[1]** kadar ilk komut satırı bağımsız değişkeni vb. olan `argv`  **[**`argc`**]**, her zaman olduğu **NULL**. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) komut satırı işlemeyi gizleme hakkında bilgi için.  
   
- Her zaman ilk komut satırı bağımsız değişkeni olan `argv` **[1]** ve son `argv` **[** `argc` - 1**]**.  
+ Her zaman ilk komut satırı bağımsız değişkeni olan `argv` **[1]** ve son `argv` **[** `argc` - 1 **]**.  
   
 > [!NOTE]
 >  Kural tarafından `argv` **[0]** ile program çağrılır komutu.  Ancak, bir işlemi kullanarak oluşturma olası [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) ve birinci ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** olmayabilir yürütülebilir dosya adı; kullanmak [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir dosya adı ve tam yolu alınamadı.  
   
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  `envp`  
- Bir çok UNIX sisteminde yaygın bir uzantı olan `envp` dizisi Microsoft C++'da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi tarafından sonlandırılır bir **NULL** girişi. İşaretçiler dizisi olarak bildirilebilir **char (char** \*envp []**)** veya işaretçileri gösteren bir işaretçi olarak **char (char** \* \* envp**)**. Programınızı kullanıyorsa **wmain** yerine **ana**, kullanın `wchar_t` veri türü yerine `char`. Ortam bloğu geçirilen **ana** ve **wmain** geçerli ortamda "dondurulmuş" bir kopyasıdır. Ortam için bir çağrı aracılığıyla daha sonra değiştirirseniz **putenv** veya `_wputenv`, geçerli ortamı (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` /  `_wenviron` değişkeni) değişikliği ancak envp tarafından işaret blok değişmez. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) ortam işlemeyi gizleme hakkında bilgi için. Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.  
+ Bir çok UNIX sisteminde yaygın bir uzantı olan `envp` dizisi Microsoft C++'da kullanılır. Kullanıcının ortamında ayarlanmış değişkenleri temsil eden bir dize dizisidir. Bu dizi tarafından sonlandırılır bir **NULL** girişi. İşaretçiler dizisi olarak bildirilebilir **char (char** \*envp []**)** veya işaretçileri gösteren bir işaretçi olarak **char (char** \* \* envp **)**. Programınızı kullanıyorsa **wmain** yerine **ana**, kullanın `wchar_t` veri türü yerine `char`. Ortam bloğu geçirilen **ana** ve **wmain** geçerli ortamda "dondurulmuş" bir kopyasıdır. Ortam için bir çağrı aracılığıyla daha sonra değiştirirseniz **putenv** veya `_wputenv`, geçerli ortamı (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` /  `_wenviron` değişkeni) değişikliği ancak envp tarafından işaret blok değişmez. Bkz: [komut satırı işlemeyi özelleştirme](../cpp/customizing-cpp-command-line-processing.md) ortam işlemeyi gizleme hakkında bilgi için. Bu bağımsız değişken, C'de ANSI ile uyumludur, ancak C++'da değildir.  
   
 **SON Microsoft özel**  
   

@@ -1,12 +1,9 @@
 ---
-title: "bad_cast özel durumu | Microsoft Docs"
-ms.custom: 
+title: bad_cast özel durumu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - bad_cast
@@ -17,17 +14,15 @@ helpviewer_keywords:
 - exceptions [C++], bad_cast
 - bad_cast keyword [C++]
 ms.assetid: 31eae1e7-d8d5-40a0-9fef-64a6a4fc9021
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7880a01f247d5dc3cce5a6f247297ef65289367
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 7c09754e44b2cf1d7bda4bde35b8d76335d96711
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="badcast-exception"></a>bad_cast Özel Durumu
 `bad_cast` özel durumu, başvuru türüne yapılan başarısız atamanın sonucu olarak `dynamic_cast` işleci tarafından oluşturulur.  

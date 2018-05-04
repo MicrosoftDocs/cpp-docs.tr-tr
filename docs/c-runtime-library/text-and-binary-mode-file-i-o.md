@@ -2,12 +2,9 @@
 title: Metin ve ikili mod dosyası g/ç | Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - c.io
 dev_langs:
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - translation modes (file I/O)
 - binary access
 ms.assetid: 3196e321-8b87-4609-b302-cd6f3c516051
-caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 752d68972e52d46bd0ec6325144210e2603b495e
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 4be1a3619fcd441dbcca53b0a1c369e30f9fb678
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="text-and-binary-mode-file-io"></a>Metin ve İkili Mod Dosyası G/Ç
 
@@ -51,4 +46,4 @@ Dosya g/ç işlemleri sürer iki çeviri modlarından birini yerinde *metin* vey
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
- [Kategorilere göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+ [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -2,11 +2,8 @@
 title: ecvt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ecvt
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - ecvt function
 ms.assetid: a24fccea-033a-4cc7-b120-4fd0f525a7e3
-caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52447a2104b75dbddd6eca2fd35c359a3b88c48c
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 15d96ea7a6c29d594ca8e93fa45f7eb40a36c09e
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ecvt"></a>ecvt
 

@@ -33,14 +33,13 @@ helpviewer_keywords:
 ms.assetid: 6cb360e8-56ae-4248-b17f-e28aee3e0ed7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 350e05306d6addf583f55f60332ff58a7ad6a13b
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: c0980331389a36fa123c6ee64989296f5afec5c8
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="crtsetdebugfillthreshold"></a>_CrtSetDebugFillThreshold
 

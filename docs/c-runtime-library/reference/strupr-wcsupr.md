@@ -2,11 +2,8 @@
 title: strupr, wcsupr | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - strupr
@@ -32,17 +29,15 @@ helpviewer_keywords:
 - strupr function
 - wcsupr function
 ms.assetid: 17dfe1cd-3b09-4702-9f89-2207f44953e6
-caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e61a5af88ce63381cc510e1e35ad8315c30a129
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 373c63df7a0f446f7c57cf794f31a96339a58d58
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="strupr-wcsupr"></a>strupr, wcsupr
 

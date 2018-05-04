@@ -1,12 +1,9 @@
 ---
-title: "_variant_t ayıklayıcıları | Microsoft Docs"
-ms.custom: 
+title: _variant_t ayıklayıcıları | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - _variant_t.operatordouble
@@ -57,17 +54,15 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8876cd486662ec1c20aea7148563fd28e8790a47
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 65049a473f62e728fcb4d74b581a08c0f1723fc9
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="variantt-extractors"></a>_variant_t Ayıklayıcıları
 **Microsoft özel**  
@@ -119,9 +114,9 @@ operator unsigned __int64() const;
   
 -   **işleç _bstr_t (')** içinde kapsüllenir bir dize ayıklar bir `_bstr_t` nesnesi.  
   
--   **IDispatch işleci\*()** görüntüleme arabirimi işaretçisi bir kapsüllenmiş ayıklar **değişken**. `AddRef`Çağrı size olacak şekilde elde edilen işaretçisini adlı **sürüm** onu boşaltılacak.  
+-   **IDispatch işleci\*()** görüntüleme arabirimi işaretçisi bir kapsüllenmiş ayıklar **değişken**. `AddRef` Çağrı size olacak şekilde elde edilen işaretçisini adlı **sürüm** onu boşaltılacak.  
   
--   **IUnknown işleci\*()** COM arabirimi işaretçisi bir kapsüllenmiş ayıklar **değişken**. `AddRef`Çağrı size olacak şekilde elde edilen işaretçisini adlı **sürüm** onu boşaltılacak.  
+-   **IUnknown işleci\*()** COM arabirimi işaretçisi bir kapsüllenmiş ayıklar **değişken**. `AddRef` Çağrı size olacak şekilde elde edilen işaretçisini adlı **sürüm** onu boşaltılacak.  
   
  **SON Microsoft özel**  
   

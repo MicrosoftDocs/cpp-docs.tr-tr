@@ -1,13 +1,10 @@
 ---
-title: "vprintf işlevleri | Microsoft Docs"
-ms.custom: 
+title: vprintf işlevleri | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 apilocation:
 - msvcr110.dll
 - msvcr120.dll
@@ -24,17 +21,15 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9820836096cb173cae54de496b6d10de8fe48a48
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d63e5da79b0f78e701f3ababaf54bef41fbf88a1
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="vprintf-functions"></a>vprintf İşlevleri
 Her biri `vprintf` işlevleri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve belirli bir hedefe verilen veri yazar. Parametre doğrulaması, olup işlevleri geniş olması veya tek baytlı karakter dizeleri, Çıkış hedefini ve parametreleri kullanılan sırası biçim dizesini belirtmek için destek işlevler farklı.  
@@ -82,7 +77,7 @@ Her biri `vprintf` işlevleri bir bağımsız değişken listesi için bir işar
   
  `argptr` Türüne sahip bağımsız değişken `va_list`, VARARGS tanımlanmış. H ve STDARG. H. `argptr` Değişkeni başlatıldı, tarafından **va_start,** ve sonraki tarafından yeniden `va_arg` çağırır; `argptr` işaret dönüştürülür ve karşılık gelen belirtimlerine uygun çıktı için iletilen bağımsız değişkenlerin listesini başlangıcına *biçimi* bağımsız değişkeni. *Biçim* aynı form ve olarak işlev *biçimi* bağımsız değişkeni için [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md). Bu işlevler hiçbiri çağırır `va_end`. Her daha eksiksiz bir açıklaması için `vprintf` işlev, yukarıdaki tabloda listelendiği gibi karşılık gelen işlevi açıklamasına bakın.  
   
- `_vsnprintf`farklı **vsprintf** Hayır yazar, birden fazla *sayısı* bayt *arabellek*.  
+ `_vsnprintf` farklı **vsprintf** Hayır yazar, birden fazla *sayısı* bayt *arabellek*.  
   
  Bu işlevleri sürümlerini **w** iç adı karşılık gelen işlevlerinin joker karakter sürümleri olan **w** infix; Bu joker karakter işlevlerin her  *Arabellek* ve *biçimi* joker karakter dizelerdir. Aksi takdirde, her joker karakter işlevi aynı kendi SBCS karşılık gelen çalışmasına şekilde davranır.  
   

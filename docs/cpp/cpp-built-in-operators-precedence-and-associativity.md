@@ -2,11 +2,8 @@
 title: C++ yerleşik işleçleri, öncelik ve birleşim | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - C++
@@ -21,17 +18,15 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-caps.latest.revision: 13
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95cbb68740fe43fa8a76624abb57284cb68e7805
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: d4d2bb339d4147e6ea82c713d83a046e0e9780bb
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçleri, öncelik ve birleşim
 
@@ -61,7 +56,7 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 |[Önek artırma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|[++](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|
 |[Önek azaltma](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|[--](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md)|
 |[Birinin tamamlama](../cpp/one-s-complement-operator-tilde.md)|[~](../cpp/one-s-complement-operator-tilde.md)|
-|[Mantıksal değil](../cpp/logical-negation-operator-exclpt.md)|[!](../cpp/logical-negation-operator-exclpt.md)|
+|[Mantıksal değil](../cpp/logical-negation-operator-exclpt.md)|[\!](../cpp/logical-negation-operator-exclpt.md)|
 |[Tekli değilleme](../cpp/unary-plus-and-negation-operators-plus-and.md)|[-](../cpp/unary-plus-and-negation-operators-plus-and.md)|
 |[Birli artı](../cpp/unary-plus-and-negation-operators-plus-and.md)|[+](../cpp/unary-plus-and-negation-operators-plus-and.md)|
 |[Adres](../cpp/address-of-operator-amp.md)|[&amp;](../cpp/address-of-operator-amp.md)|
@@ -70,11 +65,11 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 |[Nesne yok](../cpp/delete-operator-cpp.md)|[delete](../cpp/delete-operator-cpp.md)|
 |[Atama](../cpp/cast-operator-parens.md)|[()](../cpp/cast-operator-parens.md)|
 |**Sağ birleşim sol Grup 4 önceliği**|
-|[İşaretçi-üye (nesneleri veya işaretçileri)](../cpp/pointer-to-member-operators-dot-star-and-star.md)|[. &#42; ya da -> &#42;](../cpp/pointer-to-member-operators-dot-star-and-star.md)|
+|[İşaretçi-üye (nesneleri veya işaretçileri)](../cpp/pointer-to-member-operators-dot-star-and-star.md)|[. &#42; veya ->&#42;](../cpp/pointer-to-member-operators-dot-star-and-star.md)|
 |**Sağ birleşim sol Grup 5 önceliği**|
 |[Çarpma](../cpp/multiplicative-operators-and-the-modulus-operator.md)|[&#42;](../cpp/multiplicative-operators-and-the-modulus-operator.md)|
-|[Bölme](../cpp/multiplicative-operators-and-the-modulus-operator.md)|[/](../cpp/multiplicative-operators-and-the-modulus-operator.md)|
-|[Modulus](../cpp/multiplicative-operators-and-the-modulus-operator.md)|[%](../cpp/multiplicative-operators-and-the-modulus-operator.md)|
+|[bölme](../cpp/multiplicative-operators-and-the-modulus-operator.md)|[/](../cpp/multiplicative-operators-and-the-modulus-operator.md)|
+|[modulus](../cpp/multiplicative-operators-and-the-modulus-operator.md)|[%](../cpp/multiplicative-operators-and-the-modulus-operator.md)|
 |**Sağ birleşim sol Grup 6 önceliği**|
 |[Toplama](../cpp/additive-operators-plus-and.md)|[+](../cpp/additive-operators-plus-and.md)|
 |[Çıkarma](../cpp/additive-operators-plus-and.md)|[-](../cpp/additive-operators-plus-and.md)|
@@ -88,7 +83,7 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 |[Büyüktür veya eşittir](../cpp/relational-operators-equal-and-equal.md)|[>=](../cpp/relational-operators-equal-and-equal.md)|
 |**Sağ birleşim sol Grup 9 önceliği**|
 |[Eşitlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|[==](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|
-|[Eşitsizlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|[!=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|
+|[Eşitsizlik](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|[\!=](../cpp/equality-operators-equal-equal-and-exclpt-equal.md)|
 |**Sağ birleşim sol Grup 10 önceliği**|
 |[Bit düzeyinde AND](../cpp/bitwise-and-operator-amp.md)|[&amp;](../cpp/bitwise-and-operator-amp.md)|
 |**Sağ birleşim sol Grup 11 önceliği**|

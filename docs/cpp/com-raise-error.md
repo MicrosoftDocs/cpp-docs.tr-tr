@@ -1,12 +1,9 @@
 ---
 title: _com_raise_error | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - _com_raise_error
@@ -15,20 +12,18 @@ dev_langs:
 helpviewer_keywords:
 - _com_raise_error function
 ms.assetid: a98226c2-c3fe-44f1-8ff5-85863de11cd6
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71a4be4ebf6029d0573aee71d74bf9faa241319f
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 4e7b28c9d48704eede883cbcd387d9e77798647f
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comraiseerror"></a>_com_raise_error
-**Microsoft Specific**  
+**Microsoft özel**  
   
  Atan bir [_com_error](../cpp/com-error-class.md) hatasına yanıt.  
   
@@ -47,7 +42,7 @@ ms.lasthandoff: 01/25/2018
  `HRESULT` bilgileri.  
   
  `perrinfo`  
- **IErrorInfo** object.  
+ **IErrorInfo** nesnesi.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `_com_raise_error`, içinde tanımlanan \<comdef.h >, bir kullanıcı tarafından yazılan aynı adı ve sürümünü prototip tarafından değiştirilebilir. Kullanmak istiyorsanız, bu yapılabilir `#import` ancak C++ özel durum işleme kullanmak istiyor musunuz. Bu durumda, kullanıcı sürümünde **_com_raise_error** yapmak karar verebilirsiniz bir `longjmp` veya bir ileti kutusu görüntüleme ve durdur. Derleyici COM destek kodu dönmek için beklemiyor çünkü kullanıcı sürümü, yine de vermemelidir.  

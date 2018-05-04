@@ -2,12 +2,9 @@
 title: exp2, exp2f, exp2l | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - exp2
@@ -40,17 +37,15 @@ helpviewer_keywords:
 - exp2f function
 - exp2l function
 ms.assetid: 526e3e10-201a-4610-a886-533f44ece344
-caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69b7deb8e6e43ded0a3545bc1b33961d977eeb1f
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: aea847d367200635c8fecbd694f8a50be859b3ea
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exp2-exp2f-exp2l"></a>exp2, exp2f, exp2l
 

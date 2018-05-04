@@ -1,12 +1,9 @@
 ---
-title: "__alignof işleci | Microsoft Docs"
-ms.custom: 
+title: __alignof işleci | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - alignas_cpp
@@ -21,22 +18,20 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faceca31928d9c49f3c1cf5b933a65767ece7453
-ms.sourcegitcommit: 9a0a287d6940591523af959ebdac5affa36220da
+ms.openlocfilehash: 061557b4d017254584e8ddc3da0127f02d352720
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alignof-operator"></a>__alignof İşleci
 C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürür işleci. En fazla taşınabilirlik için Microsoft'a özgü __alignof işleci yerine alignof işleci kullanmanız gerekir.  
   
- **Microsoft Specific**  
+ **Microsoft özel**  
   
  Türünde bir değer döndürür **size_t** diğer bir deyişle hizalama gereksinim türü.  
   
@@ -54,9 +49,9 @@ C ++ 11 tanıtır `alignof` uyumu, belirtilen türdeki bayt cinsinden döndürü
 |**__alignof (karakter)**|1.|  
 |**__alignof (kısa)**|2|  
 |**__alignof (int)**|4|  
-|**__alignof( \__int64 )**|8|  
+|**__alignof ( \__int64)**|8|  
 |**__alignof (kayan nokta)**|4|  
-|**__alignof( double )**|8|  
+|**__alignof (çift)**|8|  
 |**__alignof (char\* )**|4|  
   
  `__alignof` Değerdir değeri ile aynı `sizeof` temel türleri için. , Ancak bu örnek göz önünde bulundurun:  
@@ -74,7 +69,7 @@ typedef struct { int a; double b; } S;
 typedef __declspec(align(32)) struct { int a; } S;  
 ```  
   
- `__alignof(S)`eşittir `32`.  
+ `__alignof(S)` eşittir `32`.  
   
  Bir kullanım için `__alignof` kendi bellek ayırma yordamları birine bir parametre olarak olacaktır. Yapısı aşağıdaki ' Örneğin, tanımlı `S`, adlandırılmış bir bellek ayırma yordam çağırabilirsiniz `aligned_malloc` belirli hizalama sınırında bellek ayıramadı.  
   
@@ -88,7 +83,7 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
   
 -   [pack](../preprocessor/pack.md)  
   
--   [Hizalama](../cpp/align-cpp.md)  
+-   [align](../cpp/align-cpp.md)  
   
 -   [__unaligned](../cpp/unaligned.md)  
   

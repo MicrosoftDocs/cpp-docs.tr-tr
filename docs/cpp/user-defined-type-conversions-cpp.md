@@ -1,12 +1,9 @@
 ---
-title: "Kullanıcı tanımlı tür Dönüşümleri (C++) | Microsoft Docs"
-ms.custom: 
+title: Kullanıcı tanımlı tür Dönüşümleri (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - explicit_cpp
@@ -31,17 +28,15 @@ helpviewer_keywords:
 - conversions [C++], by constructors
 - data type conversion [C++], explicit
 ms.assetid: d40e4310-a190-4e95-a34c-22c5c20aa0b9
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 561730527a215d5314f7239affc764d9f5925f67
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: dfe76a74a46a6da48e22cc07232457f8c0957fbc
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="user-defined-type-conversions-c"></a>Kullanıcı tanımlı tür Dönüşümleri (C++)
 A *dönüştürme* farklı türde bir değerden bazı türünde yeni bir değer oluşturur. *Standart dönüşümler* yerleşik türlerinden ve oluşturabilirsiniz C++ dili ve Destek bölümüne yerleşik *kullanıcı tanımlı dönüşümler* için ya da kullanıcı tanımlı türler arasında dönüştürme gerçekleştirmek için.  
@@ -83,7 +78,7 @@ A *dönüştürme* farklı türde bir değerden bazı türünde yeni bir değer 
   
  `explicit` Anahtar sözcüğü, C ++ 98 itibaren dönüştürme oluşturucuları ve C ++ 11 itibaren dönüştürme işlevleri için uygulanabilir. Aşağıdaki bölümlerde nasıl kullanılacağı hakkında daha fazla bilgi içeren `explicit` anahtar sözcüğü.  
   
-##  <a name="ConvCTOR"></a>Dönüşüm oluşturucuları  
+##  <a name="ConvCTOR"></a> Dönüşüm oluşturucuları  
  Dönüştürme oluşturucuları kullanıcı tanımlı bir tür için kullanıcı tanımlı veya yerleşik türlerinden dönüştürmeler tanımlayın. Aşağıdaki örnek, yerleşik türünden dönüştüren bir dönüştürme Oluşturucu gösterir `double` kullanıcı tanımlı bir tür için `Money`.  
   
 ```  
@@ -164,7 +159,7 @@ int main(int argc, char* argv[])
   
  Örtük dönüşümler vermeyle kolaylık tempting olabilse de, bunun nedenle Bul sabit hatalar ortaya çıkarabilir. Altın kural tüm dönüştürme oluşturucuları örtük olarak gerçekleşmesi için belirli bir dönüştürme istediğinizden emin olduğunuzda dışında açık olmasını sağlamaktır.  
   
-##  <a name="ConvFunc"></a>Dönüşüm işlevleri  
+##  <a name="ConvFunc"></a> Dönüşüm işlevleri  
  Dönüşüm işlevleri diğer türleri için kullanıcı tanımlı bir türden dönüşümleri tanımlayın. Bir değer farklı bir türe dönüştürüldüğüne olduğunda bunlar, dönüştürme oluşturucuları birlikte çağrılır çünkü bu işlevler "atama işleçleri" adlandırılır. Aşağıdaki örnekte kullanıcı tanımlı türünden dönüştüren bir dönüştürme işlevi gösteren `Money`, yerleşik bir türe `double`:  
   
 ```  

@@ -2,12 +2,9 @@
 title: fesetexceptflag | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp
 - devlang-cpp
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - fesetexceptflag
@@ -32,17 +29,15 @@ dev_langs:
 helpviewer_keywords:
 - fesetexceptflag function
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
-caps.latest.revision: 7
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec9be76fd0d860385ac53cfc70ea89d00ae2b1ef
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: eef8ba1c91e6db4f0d620ef820a6487b3b17e649
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fesetexceptflag"></a>fesetexceptflag
 

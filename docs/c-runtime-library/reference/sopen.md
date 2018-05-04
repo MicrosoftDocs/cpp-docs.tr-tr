@@ -2,11 +2,8 @@
 title: sopen | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - sopen
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - sopen function
 ms.assetid: 1ce0b707-0c9e-4942-8467-ce7f6cd68acc
-caps.latest.revision: 4
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13e17eb5beaeba5daa937c0bcdccdc99b1d21039
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 5456d3c1e0f63fdc536a6c9fb17798f03282a080
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sopen"></a>sopen
 

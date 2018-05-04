@@ -1,12 +1,9 @@
 ---
-title: "Exit veya dönüş kullanarak | Microsoft Docs"
-ms.custom: 
+title: Exit veya dönüş kullanarak | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - cpp-language
-ms.tgt_pltfrm: 
 ms.topic: language-reference
 f1_keywords:
 - Exit
@@ -16,17 +13,15 @@ helpviewer_keywords:
 - exit function
 - return keyword [C++], using for program termination
 ms.assetid: b5136c5c-2505-4229-8691-2a1d6a98760b
-caps.latest.revision: 
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f5c9fdb17811206732811db4e27006dc5e0ed84
-ms.sourcegitcommit: 8fa8fdf0fbb4f57950f1e8f4f9b81b4d39ec7d7a
+ms.openlocfilehash: 45885cc6dbac50a693bb84abb797469d8aff93a3
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-exit-or-return"></a>exit veya return Kullanma
 Çağırdığınızda **çıkmak** veya yürütme bir `return` from deyimi **ana**, statik nesneler kendi başlatma ters sırada yok. Aşağıdaki örnek, başlatma ve temizleme gibi nasıl çalıştığını gösterir.  

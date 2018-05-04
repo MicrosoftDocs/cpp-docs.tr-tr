@@ -2,11 +2,8 @@
 title: getche | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - cpp-standard-libraries
-ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - getche
@@ -29,17 +26,15 @@ dev_langs:
 helpviewer_keywords:
 - getche function
 ms.assetid: 95e62bb8-eec0-4145-b2e8-f6406849af52
-caps.latest.revision: 9
 author: corob-msft
 ms.author: corob
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6002094088e2ccc190583d25731647d3bae1e155
-ms.sourcegitcommit: ef859ddf5afea903711e36bfd89a72389a12a8d6
+ms.openlocfilehash: 78a78d3a9e374118abe9bdd9230b9e06eac6259a
+ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getche"></a>getche
 
